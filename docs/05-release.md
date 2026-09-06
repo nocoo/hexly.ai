@@ -19,7 +19,7 @@ Run from a clean `main` checkout. The script rejects malformed versions, package
 
 1. Verify GitHub authentication and the expected origin, fetch remote refs, and require local `main` to contain `origin/main`.
 2. Select the version and generate grouped notes from commits since the preceding version tag.
-3. Update the package version, synchronize `bun.lock` with Bun, and insert or replace that version's `CHANGELOG.md` section.
+3. Update the package version, validate `bun.lock` with `bun install --lockfile-only --frozen-lockfile`, and insert or replace that version's `CHANGELOG.md` section. Bun does not store the root package version in this lockfile; frozen mode prevents a temporary local registry mirror from rewriting dependency sources.
 4. Commit only the manifest, lockfile, and changelog. Local Git hooks remain enabled.
 5. Push `main` and watch the matching `ci.yml` run for that exact commit. All six quality dimensions must pass before the Deploy job.
 6. Verify `https://hexly.ai/api/live`, the root document, compiled JavaScript/CSS, and the archived hexly.ai logo checksum.
