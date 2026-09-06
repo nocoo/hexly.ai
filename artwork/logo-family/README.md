@@ -16,6 +16,7 @@ firefly/2026-09-06-01/        Superseded smooth lantern study
 firefly/2026-09-06-02/        Rejected sparse firefly-and-flame composition
 firefly/2026-09-06-03/        Rejected enlarged insect character
 firefly/2026-09-06-04/        Rejected cute firefly character
+firefly/2026-09-06-05/        Dark campfire scene with small fireflies
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
@@ -38,6 +39,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png) |
 | Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png) |
 | Firefly | [2026-09-06-04](firefly/2026-09-06-04/notes.md) | Rejected: generic cute character; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-04/raw/generated-white.png) |
+| Firefly | [2026-09-06-05](firefly/2026-09-06-05/brief.md) | Owner-directed dark scene prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-05/brief.md) |
 
 ## Running a study
 
@@ -53,6 +55,8 @@ direnv exec ../workflow python3 artwork/logo-family/tools/generate_azure.py \
 ```
 
 `study_dir` is the new directory containing the reviewed prompt. The response archive includes actual PNG dimensions and source checksums, with no credential values. The requested endpoint is Azure's OpenAI v1 `/images/edits`; it uses `api-key` authentication and multipart references.
+
+New requests use the neutral filename `raw/generated.png`; the response records the actual source path. Earlier raw filenames remain unchanged. The owner-directed Firefly 05 scene includes its dark background and emitted light directly; its brief records this override to the usual isolated-white source. The raw checkpoint applies equally to complete scenes, which must not be treated as pre-separated foreground layers.
 
 Immediately show the untouched returned image and ask for confirmation. Save actual owner feedback in `raw-review.json`; a new generation requires a new decision. Do not make the raw handoff wait for finishing or review pages.
 
