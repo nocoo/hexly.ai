@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import projects from "../../src/data/projects.json" with { type: "json" };
 
 test("inspects an original at artwork, app, sidebar, and favicon sizes", async ({
 	page,
@@ -100,7 +101,7 @@ test("searches the gallery, labels emoji identities, and recovers from empty or 
 		page.getByRole("heading", { name: "Nothing here just yet." }),
 	).toBeVisible();
 	await page.getByRole("button", { name: "Reset filters" }).click();
-	await expect(page.locator(".picker-item")).toHaveCount(65);
+	await expect(page.locator(".picker-item")).toHaveCount(projects.length);
 	await page.locator(".picker-item").filter({ hasText: "Backy" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Backy");
 	await expect(page).toHaveURL(/project=backy/);
