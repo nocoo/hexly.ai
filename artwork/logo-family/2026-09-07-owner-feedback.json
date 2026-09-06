@@ -1,0 +1,61 @@
+{
+	"recordedAt": "2026-09-06T22:03:41.809816+00:00",
+	"ownerMessages": [
+		"先不要应用，我们改图。raven第二个版本看起来就可以，第三个版本左侧被切掉了。neo，lyre，bogo，dove我也看了，现在的做法是强行拉脖子，很丑，你需要自然补充，比如小狗可以补充一只搭载边缘的爪子，小鸟随着镜头拉大补出肩膀，水牛也是。你不必在prompt要求过死，允许image具备一定的空间。你先从bogo开始。回归一开始的做法，出了图先找我确认。",
+		"在prompt你需要给生图模型足够的自由。你来确定动物，基本动作，色彩，多彩兴趣点设计，和碎片化风格，然后应用决定性瞬间，引导生图模型，认为logo框是一个取景框，应当捕捉动物可爱的决定性瞬间，从而天然避免截断问题，并用摄影来类比焦段，确定景深而形成局部还是全局的隐喻。按照这个原则，继续尝试bogo。"
+	],
+	"currentScope": "Only a new Bogo drawing and immediate individual raw confirmation. No adoption, push, release, or deployment.",
+	"rawCheckpoint": "Required for each new output; earlier five-project delegation revoked.",
+	"artDirection": "Direct species, action, dominant colors, multicolored interest point, and connected fragments. Let the model capture a charming decisive moment inside a square viewfinder; use lens and depth-of-field analogies for composition and hierarchy, not literal blur.",
+	"raven": "Study 02 is the retained direction. Study 03 is withdrawn after the owner rejected its left-side crop. No adoption is authorized.",
+	"otherStudies": "Bogo, Neo, Dove, and Lyre anatomy revisions are withdrawn; artificial neck elongation was rejected.",
+	"sourceRestorations": [
+		{
+			"project": "bogo",
+			"adoptionCommit": "5ac5805d11c4885dc1599f4e471cb82823706765",
+			"restoredBaseline": "2e2d986edffd9d320a3e172f37affe5e3406cabe",
+			"restoredLogoSha256": "eeaf1c419feb02f3990451d642432dbf2fbda2c5ddd1d71269d804e3ce8dd3a1",
+			"contentRestoredAt": "2026-09-06T21:55:39.919453+00:00",
+			"commitExitCode": 0,
+			"withdrawalCommit": "f0c0c25ae2d8fb1f53936b16e85681ad480e56ce"
+		},
+		{
+			"project": "neo",
+			"adoptionCommit": "28bc2860bcef23893b9d82973ebb3994f8209e87",
+			"restoredBaseline": "3952de2c75142f0acc0ebd535020a64076e9defa",
+			"restoredLogoSha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+			"contentRestoredAt": "2026-09-06T21:55:39.964083+00:00",
+			"commitExitCode": 0,
+			"withdrawalCommit": "97907273ddd9e52efc4ee9d3d640a51871d81970"
+		},
+		{
+			"project": "dove",
+			"adoptionCommit": "06f347fe8491990b5f27be86ea4f778a6dd35fca",
+			"restoredBaseline": "cf62b6f2bc4c563eab271bf64fac4401ae4f918e",
+			"restoredLogoSha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+			"contentRestoredAt": "2026-09-06T21:55:40.007460+00:00",
+			"commitExitCode": 0,
+			"withdrawalCommit": "cb477a39d2fbb6bc561bcf5348cb5e830c83de29"
+		},
+		{
+			"project": "raven",
+			"adoptionCommit": "dc7b155fd3e6da627fed123014ba8222b6950b18",
+			"restoredBaseline": "3582a6309e18e7c30d6abcf25c1d9884d3852281",
+			"restoredLogoSha256": "4de4df89c83e1fe24a02c6446e158793ccef0edfb7e4ee953a538edcf2004bf8",
+			"contentRestoredAt": "2026-09-06T21:55:40.059953+00:00",
+			"commitExitCode": 0,
+			"withdrawalCommit": "d47240aad21131f74d6d7607fada76ad53a35baa"
+		},
+		{
+			"project": "lyre",
+			"adoptionCommit": "4e9f07b100f5be16f1bbf768ab84aaf71b41f64f",
+			"restoredBaseline": "6aaab8e30ef3de452a1cda42b08966f79573248f",
+			"restoredLogoSha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+			"contentRestoredAt": "2026-09-06T21:55:40.113549+00:00",
+			"commitExitCode": 0,
+			"withdrawalCommit": "f22d7fa974f0440477b148f1e22c42fc418caa51"
+		}
+	],
+	"published": false,
+	"catalogueIntegration": "Never performed for the withdrawn batch; source catalogue identities remain original."
+}

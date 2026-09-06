@@ -1,0 +1,96 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "5a3dbd374b77534ecd83307d6b9d02f6f81fdb360818b053b2ccde47357c574e",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels in visually selected animal/accessory regions. Samples are fully opaque and stable in their immediate neighborhood. Coordinates precede any documented integer placement. No generated palette values are substituted for sampled pixels.",
+	"foreground": [
+		{
+			"role": "Slate",
+			"label": {
+				"en": "Slate",
+				"zh": "灰蓝"
+			},
+			"x": 1288,
+			"y": 954,
+			"rgb": [100, 105, 148],
+			"hex": "#646994"
+		},
+		{
+			"role": "Teal",
+			"label": {
+				"en": "Teal",
+				"zh": "青绿"
+			},
+			"x": 780,
+			"y": 1100,
+			"rgb": [69, 158, 148],
+			"hex": "#459e94"
+		},
+		{
+			"role": "Violet",
+			"label": {
+				"en": "Violet",
+				"zh": "紫罗兰"
+			},
+			"x": 1058,
+			"y": 1068,
+			"rgb": [164, 118, 203],
+			"hex": "#a476cb"
+		},
+		{
+			"role": "Blossom",
+			"label": {
+				"en": "Blossom",
+				"zh": "花瓣粉"
+			},
+			"x": 1616,
+			"y": 1256,
+			"rgb": [243, 178, 200],
+			"hex": "#f3b2c8"
+		},
+		{
+			"role": "Ivory",
+			"label": {
+				"en": "Ivory",
+				"zh": "象牙白"
+			},
+			"x": 1402,
+			"y": 1426,
+			"rgb": [251, 244, 227],
+			"hex": "#fbf4e3"
+		},
+		{
+			"role": "Amber",
+			"label": {
+				"en": "Amber",
+				"zh": "琥珀色"
+			},
+			"x": 1126,
+			"y": 500,
+			"rgb": [219, 151, 100],
+			"hex": "#db9764"
+		}
+	],
+	"background": {
+		"role": "Blossom field",
+		"label": {
+			"en": "Blossom field",
+			"zh": "花粉底色"
+		},
+		"hex": "#c6a4b5",
+		"light": "#e4ced8",
+		"shade": "#a58096",
+		"motif": "#7e536e",
+		"motifOpacity": 0.14,
+		"pattern": "Petal branch relief",
+		"status": "Designed presentation for finishing 02; separate from the existing UI palette."
+	},
+	"existingSitePrimary": {
+		"hex": "#c65379",
+		"source": "src/client/styles/globals.css --primary",
+		"status": "Existing project UI token"
+	}
+}

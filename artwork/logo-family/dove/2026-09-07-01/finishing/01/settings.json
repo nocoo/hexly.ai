@@ -1,0 +1,91 @@
+{
+	"project": "dove",
+	"original": "../../../../public/logos/originals/dove.png",
+	"background": {
+		"base": "#c6a4b5",
+		"light": "#e4ced8",
+		"shade": "#a58096",
+		"motif": "#7e536e",
+		"grainAmplitude": 1,
+		"grainSeed": 609073,
+		"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+		"motifOpacity": 0.14,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Petal branch relief",
+			"description": "An off-center branch with paired pointed leaves and a few pressed petals crosses the upper-left field. The relief stays open, never a wreath.",
+			"layers": [
+				{
+					"d": "M-20 4C85 98 77 248 182 360C204 385 241 414 275 442",
+					"tone": "motif",
+					"strokeWidth": 7
+				},
+				{
+					"d": "M88 200C34 192 26 158 20 125C61 125 85 154 88 200Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M113 251C114 198 141 171 173 157C183 200 155 232 113 251Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M159 332C98 321 78 295 62 258C108 257 143 284 159 332Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M192 370C203 319 231 299 270 287C273 333 232 361 192 370Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M315 93C287 66 296 39 317 16C344 44 345 70 315 93Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M385 210C354 206 343 183 343 158C379 158 397 178 385 210Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-12 0C93 93 83 244 188 355C215 385 245 406 280 435",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 249,
+		"maximumChroma": 5,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 0,
+		"componentNote": "Preserve all detached identity decoration. Adjust only after examining the actual returned matte."
+	},
+	"shadows": [
+		{
+			"color": [126, 83, 110],
+			"opacity": 0.14,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 23]
+		},
+		{
+			"color": [126, 83, 110],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.84,
+		"anchor": [0.5, 0.5],
+		"intentionalEdges": ["bottom"],
+		"extendEdges": ["bottom"],
+		"note": "Uniform centered placement. Continue only the already-cut neck/shoulder outside the scaled native canvas by copying its edge RGBA samples. This fills the narrow presentation inset without an internal vertical/horizontal stump. No head, expression, accessory, or native interior pixel is independently altered. The raw and unscaled extraction remain intact; inspect each extended edge and final rounded corners."
+	}
+}

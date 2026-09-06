@@ -1,0 +1,392 @@
+{
+	"createdAt": "2026-09-06T20:28:09.550Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "176e095a3f7b986e463b1e6a979e64e59d500e51f68449fe96e96377832ca96d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "bfa00c38b80efda248072013854d4a812bc789098894c3f49dacafa8a3def8b4",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "raven",
+		"original": "../../../../public/logos/originals/raven.png",
+		"background": {
+			"base": "#969cbf",
+			"light": "#c8d0e3",
+			"shade": "#767fa4",
+			"motif": "#4a577e",
+			"grainAmplitude": 1,
+			"grainSeed": 609074,
+			"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Offset feather vanes",
+				"description": "Short paired diagonal vanes and separated angular cuts build an asymmetric feather rhythm outside the dark head.",
+				"layers": [
+					{
+						"d": "M17 128L118 71L192 127L172 145L115 109L29 160Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M11 256L128 190L214 254L193 273L124 229L21 290Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M9 394L133 324L207 378L188 398L131 363L15 430Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M38 542L143 484L212 533L194 552L139 521L47 576Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M760 9L842 72L1008 60L1013 94L831 109L735 34Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M18 295L129 236L195 279",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M12 437L133 370L189 404",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M738 42L829 117L1018 102",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 16,
+			"componentNote": "Only sub-16-pixel isolated matte residue may be removed, with component bounds and counts inspected. Every legitimate detached blossom petal is much larger and must remain."
+		},
+		"shadows": [
+			{
+				"color": [
+					74,
+					87,
+					126
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					74,
+					87,
+					126
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 1,
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"note": "The image model left a short vertical lower-neck cut about 106px inside the left frame. Translate the whole foreground 106px left, without resizing or pixel extension, so only that lower neck intersects the canvas. Expression and beak remain safe.",
+			"offsetAt2048": [
+				-106,
+				0
+			]
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2088558,
+		"foregroundPixels": 2105746,
+		"softEdgePixels": 8311,
+		"removedComponents": 16,
+		"removedComponentPixels": 60,
+		"bounds": {
+			"left": 106,
+			"top": 0,
+			"right": 1874,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			-106,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 1768,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 49766
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2536,
+			"sha256": "19a54f070850a6cecde6c91850f8d35d8e54b534ea3708a722b803a0646f7361"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1086,
+			"sha256": "0f7019d2de2f21a1a4c9d38ed50602f9fb79dbd252a7012a5f81e77c62a4fe0b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 19916,
+			"sha256": "176e095a3f7b986e463b1e6a979e64e59d500e51f68449fe96e96377832ca96d"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2902372,
+			"sha256": "53f537e40c94acd1846a3749403260f004aae845aaef474c0f280243510e4517"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 52237,
+			"sha256": "7debf55efaa4b2554b6a0b9b250c370bf9eae68eecf147e470ecbbe8a656829f"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1140,
+			"sha256": "076cbb1468f283faa27f5637f00a3520ce8714b5d348c53b0b0fa55058e64703"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2247634,
+			"sha256": "8b5ed8f0ce4d74357beeb321ef30c6f92a68828c37ef4a02ec7e38076fc28031"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2902882,
+			"sha256": "dcaf52952ad9d19f2c02a599f453706287386c88fb157797657454f57123b1a0"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 52531,
+			"sha256": "0b1bf27a977e890d579f3f93be2fec4c7c6c34737325e09feff17f3691ba3db4"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 187215,
+			"sha256": "84a325100b70429fcf25908afe9cc12570bb8c35f4528525407459caf2482fca"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 152652,
+			"sha256": "437555bd9f52a2a94ead5e5430b39f39b6895cc77f7dbb463a338f071dfb7fdb"
+		},
+		{
+			"path": "exports/raven-transparent-2048.png",
+			"bytes": 2902882,
+			"sha256": "dcaf52952ad9d19f2c02a599f453706287386c88fb157797657454f57123b1a0"
+		},
+		{
+			"path": "exports/raven-icon-2048.png",
+			"bytes": 4370987,
+			"sha256": "1f99b76d973f38cfa2025f9ca6d4aeffe88e3db67f8e4705edb840128e5e6c46"
+		},
+		{
+			"path": "exports/raven-rounded-2048.png",
+			"bytes": 4243046,
+			"sha256": "58592ddf209c90987bb1be1f9b9116d8360ac8a18031f4cd075337103b6d0ae6"
+		},
+		{
+			"path": "exports/raven-transparent-1024.png",
+			"bytes": 879555,
+			"sha256": "d3dc65ce934dcea5227c2ed517f53fe3e90a2581c12a3a4f1ca10bdcfc913a49"
+		},
+		{
+			"path": "exports/raven-icon-1024.png",
+			"bytes": 1214826,
+			"sha256": "2e5c30eba6103b85eb923aff534fabc365189542071e188451bfd1adeb28610a"
+		},
+		{
+			"path": "exports/raven-rounded-1024.png",
+			"bytes": 1195908,
+			"sha256": "333cb90585f0aca73299ca733334c4e7a3c84f398829561b38f9c913ad57a058"
+		},
+		{
+			"path": "exports/raven-transparent-512.png",
+			"bytes": 287346,
+			"sha256": "634bac70b89df011da663c935823eb804de222544ff17291f391644f7fd54900"
+		},
+		{
+			"path": "exports/raven-icon-512.png",
+			"bytes": 394612,
+			"sha256": "cff9c1b4cec136341f9e515112d691e061fdbc579d6e49c852fff27bb0a0e714"
+		},
+		{
+			"path": "exports/raven-rounded-512.png",
+			"bytes": 390436,
+			"sha256": "656e9c696b1da74d5d8723c9584259e217bd080f38707535b089fe20d7458e04"
+		},
+		{
+			"path": "exports/raven-transparent-256.png",
+			"bytes": 93527,
+			"sha256": "1bde0df99882c5853221139bd816954f2e361b6e7d02de0ddb014799e8d83b6e"
+		},
+		{
+			"path": "exports/raven-icon-256.png",
+			"bytes": 111972,
+			"sha256": "1d781bcc04542521db6b4663cba9b4953d886a888c31463c833a6ce2065af0fa"
+		},
+		{
+			"path": "exports/raven-rounded-256.png",
+			"bytes": 112806,
+			"sha256": "79fc10518214a7e2c116b5d037c7a17cd0eba1c4c05708552cc232d7beaf2fdd"
+		},
+		{
+			"path": "exports/raven-transparent-128.png",
+			"bytes": 28308,
+			"sha256": "dd17ff92343863e4f518f13b64bfd43c0a44a517ad6f0a78e04d8ddc7731b459"
+		},
+		{
+			"path": "exports/raven-icon-128.png",
+			"bytes": 34352,
+			"sha256": "42c3a2aa22b2efc21e85f389164b09b76c7f729fb0626a266bcadb37e79520a9"
+		},
+		{
+			"path": "exports/raven-rounded-128.png",
+			"bytes": 35192,
+			"sha256": "73d7cf1b616572e44d3b1580a1f4709f23c1b5b4d02cb9149ee1b6997507a65f"
+		},
+		{
+			"path": "exports/raven-transparent-64.png",
+			"bytes": 8119,
+			"sha256": "4e9a2d341f333b26514ef542d46860f64f1b9b0e6cb25f37c1c6014bdc4e5279"
+		},
+		{
+			"path": "exports/raven-icon-64.png",
+			"bytes": 10691,
+			"sha256": "e9e901d596638802f6ea68f0b6820f14088fdae8d480f6aba6b16ee8a7fca735"
+		},
+		{
+			"path": "exports/raven-rounded-64.png",
+			"bytes": 11052,
+			"sha256": "0d5e4148261aedf4383b59acdc81cea92a0256c931df69a0948e916f70cda31e"
+		},
+		{
+			"path": "exports/raven-transparent-48.png",
+			"bytes": 4905,
+			"sha256": "5cb10d6492791259d191d08146417b363d1cb948a9321603c12da634da4ad0d5"
+		},
+		{
+			"path": "exports/raven-icon-48.png",
+			"bytes": 6294,
+			"sha256": "6749dedaf2cababcaedb5d7f79880fc1087b6a51824b273b335b42d7b3ca3526"
+		},
+		{
+			"path": "exports/raven-rounded-48.png",
+			"bytes": 6576,
+			"sha256": "a3002f2f6659b82c4048793bfe1707503878a37b6ff838feb3effd3ea4aa295c"
+		},
+		{
+			"path": "exports/raven-transparent-32.png",
+			"bytes": 2421,
+			"sha256": "c8b352fa9e0fe70bd99d59799ff58459a155c196295476747adaa7b154d7c85b"
+		},
+		{
+			"path": "exports/raven-icon-32.png",
+			"bytes": 3216,
+			"sha256": "8bd01594d9187b0f58e551163e4d0ab76ddc5cfa46c9096fc959415b8678b887"
+		},
+		{
+			"path": "exports/raven-rounded-32.png",
+			"bytes": 3323,
+			"sha256": "485ad314a4effd37f6513387f09e97c5fffb47a7073810915b206a0110d1e863"
+		},
+		{
+			"path": "exports/raven-transparent-24.png",
+			"bytes": 1502,
+			"sha256": "bcb21b93c392f39dcd0c59d5016e7482ff82582d6862949ab579df10e0e03fc6"
+		},
+		{
+			"path": "exports/raven-icon-24.png",
+			"bytes": 1943,
+			"sha256": "04fbd9f6a719b8f730ceb43613dff6c86d7c51bfc738e7d9f57562abc73f1b0e"
+		},
+		{
+			"path": "exports/raven-rounded-24.png",
+			"bytes": 2054,
+			"sha256": "1c2feef3207a05019ffd83e7857b48c482debd174d294c14210d30bcc739aa47"
+		},
+		{
+			"path": "exports/raven-transparent-16.png",
+			"bytes": 810,
+			"sha256": "2e5272844d1c4b9a8ff1243744daebda25e25eb974a3843a66cd34d75d74cbc0"
+		},
+		{
+			"path": "exports/raven-icon-16.png",
+			"bytes": 979,
+			"sha256": "ffcee196761114bb1fe4543295c71956a39e3812421af697ac9f2f2b0a7edb5c"
+		},
+		{
+			"path": "exports/raven-rounded-16.png",
+			"bytes": 1020,
+			"sha256": "c2b4bcf68eba7d81de23e32ffd805637ec2b1dfd40e7d5eff9c6d073c4e0750c"
+		},
+		{
+			"path": "exports/raven-white-2048.png",
+			"bytes": 2725270,
+			"sha256": "f51bbd61bca5774d357c5982f5d3217980639a86c231092e24e6b332da190f53"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 835696,
+			"sha256": "42e04ff072b3e9dbbd760a2619cda685afb9f20d00ee65429197f6aff71e2401"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 834056,
+			"sha256": "131dbc099fafb67d37a2700c1adbfdaf8eb25a2c75988656b22b772049a41264"
+		}
+	]
+}
