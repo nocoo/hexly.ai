@@ -8,23 +8,25 @@ tools/                       Reproducible generation and image processing
 frogie/2026-09-06-01/         First Frogie study
   raw/                       Untouched native model output
   finishing/01/              First extraction and presentation
-  finishing/02/              Refined edges; current review exports
+  finishing/02/              Approved Frogie exports
   previews/                  Browser captures and review evidence
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
 
-The existing catalogue and `public/logos/originals/` remain the reference baseline. A study is a candidate until reviewed. Reference boards and intermediate artwork are outside Vite's production asset directory.
+Previous originals retain their filenames and checksums. A study stays a candidate until selected. Adopted identities publish a curated copy in `public/logos/family/`; the full workshop and intermediate artwork stay outside Vite's production asset directory.
 
 Generation uses the Azure Foundry endpoint and `api-key` authentication documented in `workflow/agents/skills/azure-gpt-image-cover/SKILL.md`. Credentials are supplied by workflow's direnv environment. No credentials or raw authenticated HTTP headers belong in this directory.
 
-For an approved existing identity, preserve its animal, camera, pose, expression, composition, and signature decoration. For an explicitly disliked identity, preserve the animal and redesign camera, pose, framing, and decoration. Large animals use head portraits; small animals may use compact full-body poses.
+The workflow skill `zhengli-project-logo` captures the family rules, prompt template, review requirements, and source/site promotion flow.
+
+For an approved existing identity, preserve its animal, camera, pose, expression, composition, and signature decoration unless the owner requests a specific change. For an explicitly disliked identity, preserve the animal and redesign camera, pose, framing, and decoration. Large animals use head portraits; small animals may use compact full-body poses.
 
 ## Studies
 
 | Project | Study | Status | Review |
 |---|---|---|---|
-| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Candidate; approved identity refinement | [Local review page](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
+| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Adopted on 2026-09-06 · finishing 02 | [Local review page](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
 
 ## Running a study
 
