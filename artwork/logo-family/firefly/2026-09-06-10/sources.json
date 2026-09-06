@@ -1,0 +1,115 @@
+{
+	"project": "firefly",
+	"sourceRepository": "https://github.com/nocoo/firefly",
+	"sourceRevision": "8093578e9960f36cd112b7c04a841e6d5e345aed",
+	"sourcePath": "logo.png",
+	"sourceSha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269",
+	"websiteColors": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
+		"status": "Existing Firefly UI tokens; unchanged"
+	},
+	"status": "prepared",
+	"preparedAt": "2026-09-06T12:33:58.781123+00:00",
+	"sourceMode": "isolated-white",
+	"rawSource": "raw/generated.png",
+	"supersedes": "firefly/2026-09-06-09",
+	"ownerDirection": "The proportions are unsatisfactory. The firefly must be the main subject rather than appearing equal to the fire. Use the proportions of the earlier owner-supplied JPEG for another version.",
+	"intent": "A dominant broad-winged fragmented firefly, with a much smaller tactile flame and two tiny logs in the lower-left foreground. The owner JPEG restores the animal proportions and subject hierarchy.",
+	"hierarchy": {
+		"primary": "Firefly, approximately 75-80% visual weight",
+		"secondary": "Small fire and wood, approximately 20-25% visual weight",
+		"depth": "Small fire in front; the primary insect diagonally behind",
+		"scaleEvidence": "Proposed layout constraints informed by the reference, not measured source ratios"
+	},
+	"overrides": [
+		"Restore animal dominance instead of equal subjects or a campfire-led scene",
+		"Owner JPEG becomes primary model input again",
+		"Keep the foreground fire tactile and three-dimensional",
+		"Keep connected facets across the insect",
+		"Preserve the white source and independent night/glow workflow"
+	],
+	"rawCheckpoint": "Immediately show the untouched result for confirmation before extraction, light layers, background composition, derivatives, or full review pages.",
+	"promptSha256": "9cb9a649c75b73ccc515463198142bf86f6fbd591bd16c7c68b82e843f9a0418",
+	"references": [
+		{
+			"index": 1,
+			"role": "Primary owner reference for animal dominance, broad-wing flight, and internal insect proportions; adapt depth order and replace pixels, outlines, sparks, and background",
+			"path": "artwork/logo-family/references/firefly-flight-flame.jpeg",
+			"sha256": "fe235f9268009834f1368dde909458667f19c9aa153f4b6eb6db0bd4eec02a1f",
+			"bytes": 357335,
+			"originalPath": "/Users/nocoo/Downloads/firefly.jpeg"
+		},
+		{
+			"index": 2,
+			"role": "Connected flat facet drawing for the insect only; not frog anatomy, colors, accessories, or fire rendering",
+			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e",
+			"bytes": 5418502
+		},
+		{
+			"index": 3,
+			"role": "Compact icon presence and tactile three-dimensional material for the small fire and wood",
+			"path": "artwork/logo-family/references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff",
+			"bytes": 370854
+		},
+		{
+			"index": 4,
+			"role": "Supporting material restraint and coherent depth; not animal identity or background colors",
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683
+		}
+	],
+	"priorStudies": [
+		{
+			"study": "firefly/2026-09-06-01",
+			"status": "rejected",
+			"rawSha256": "9af427620891806bdf952bf6369028232ef46c1a8f6ddb40dcd96c73e2b66a90"
+		},
+		{
+			"study": "firefly/2026-09-06-02",
+			"status": "rejected",
+			"rawSha256": "9b98ac629551a7065b7360f33a4b0b3ecd5052cc4a105850bf0c04a2368098d7"
+		},
+		{
+			"study": "firefly/2026-09-06-03",
+			"status": "rejected",
+			"rawSha256": "0f5bc23c389a2b90c86436926cd875a51aa21bf25c5bd951c1919c3f543534e8"
+		},
+		{
+			"study": "firefly/2026-09-06-04",
+			"status": "rejected",
+			"rawSha256": "ee53f18b46c419f13d8a3ba11f72bb92cf671791d8c8594e43afd875f4c6164b"
+		},
+		{
+			"study": "firefly/2026-09-06-05",
+			"status": "superseded-unselected",
+			"rawSha256": "793f16921b95b411de4ca1155169c053afc96b6ae11ad18ddd8e7e976d91a5f8"
+		},
+		{
+			"study": "firefly/2026-09-06-06",
+			"status": "direction-retained-new-source-requested",
+			"rawSha256": "0c3ac8c03e04ec6625f7a9c0c950e2da158457279fd9c719936dd3bec641c406"
+		},
+		{
+			"study": "firefly/2026-09-06-07",
+			"status": "rejected-for-missing-eye",
+			"rawSha256": "e80c96c5e5a6e0dfdd416799fed1def6632acebdbdaada6f62d00dea93212a41"
+		},
+		{
+			"study": "firefly/2026-09-06-08",
+			"status": "rejected-for-head-perspective",
+			"rawSha256": "d0bdde5d5c070111c142c42ea7d5ff902838871abe9802a2eebdaf477f70cdf7"
+		},
+		{
+			"study": "firefly/2026-09-06-09",
+			"status": "rejected-for-subject-hierarchy",
+			"rawSha256": "545b3927d4fa1598e46def36e134ff77faffc99d3aeacbf25a8bac1b3fa5b56f"
+		}
+	],
+	"presentationPlan": "presentation-plan.json",
+	"publication": "Local only; no source adoption, push, or deployment"
+}
