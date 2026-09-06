@@ -11,7 +11,7 @@
 - Chinese: AI 时代的贡献图，把不同编程工具的 Token 使用记录变成可见的轨迹。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `44351912506d0584bf59fdcefaec9b4e2be7eeef`
+- Repository revision inspected: `5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b`
 
 ## Current logo
 
@@ -19,11 +19,11 @@
 
 - Type: Original project artwork, copied without modification
 - Subject: Zebra portrait with a rainbow tongue
-- [Source](https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/pew.png)
+- [Source](https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png): `logo.png`
+- [Preserved asset](../../public/logos/originals/pew-2026-09-07.png)
 - Original dimensions: 2048 × 2048
-- Original size: 3835152 bytes
-- SHA-256: `2b94fa9b0b0521008a08caa3bae34552f68785fd591c8dc578ceee943addc35e`
+- Original size: 3043802 bytes
+- SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -33,9 +33,13 @@
 | --- | --- | --- |
 | primary | `#851ded` | packages/web/src/app/globals.css --primary: 270 85% 52% |
 | background | `#f1f0f5` | packages/web/src/app/globals.css --background: 260 20% 95% |
-| accent | `#b4b4b8` | Preserved project artwork, sampled pixel |
-| accent | `#252335` | Preserved project artwork, sampled pixel |
-| accent | `#ffffff` | Preserved project artwork, sampled pixel |
+| background | `#bfb2cf` | Selected Pew presentation, finishing 04; background.base in archived settings.json |
+| primary | `#fcf8f0` | Pew native generation efa6aff9f478, sampled sRGB pixel (1510, 1740); palette.json |
+| accent | `#232637` | Pew native generation efa6aff9f478, sampled sRGB pixel (1140, 415); palette.json |
+| accent | `#827f8e` | Pew native generation efa6aff9f478, sampled sRGB pixel (770, 334); palette.json |
+| accent | `#fb9383` | Pew native generation efa6aff9f478, sampled sRGB pixel (593, 1620); palette.json |
+| accent | `#73dce7` | Pew native generation efa6aff9f478, sampled sRGB pixel (589, 1759); palette.json |
+| accent | `#b97ce6` | Pew native generation efa6aff9f478, sampled sRGB pixel (631, 1806); palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
@@ -43,7 +47,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ![Pew refined preview](../../public/logos/family/pew/2026-09-06-01/04/icon-160.webp)
 
-- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-06.
+- Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-01`, finishing `04`
 - Site path: `/logos/pew`; [local gallery](https://index.dev.hexly.ai/logos/pew)
 - [Static review HTML](../../artwork/logo-family/pew/2026-09-06-01/review.html)
@@ -61,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#bfb2cf` | Local Pew stripe-motif study, finishing 04; background.base and unique background.pattern in archived settings.json |
+| background | `#bfb2cf` | Selected Pew presentation, finishing 04; background.base in archived settings.json |
 | primary | `#fcf8f0` | Pew native generation efa6aff9f478, sampled sRGB pixel (1510, 1740); palette.json |
 | accent | `#232637` | Pew native generation efa6aff9f478, sampled sRGB pixel (1140, 415); palette.json |
 | accent | `#827f8e` | Pew native generation efa6aff9f478, sampled sRGB pixel (770, 334); palette.json |

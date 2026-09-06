@@ -4,8 +4,8 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
-| [🐸 Frogie](01-frogie.md) | Refined preview | #21c45d | #eeeff2 |
-| [🦓 Pew](02-pew.md) | Refined preview | #851ded | #f1f0f5 |
+| [🐸 Frogie](01-frogie.md) | Adopted family | #21c45d | #eeeff2 |
+| [🦓 Pew](02-pew.md) | Adopted family | #851ded | #f1f0f5 |
 | [🔥 Firefly](03-firefly.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [📚 Bogo](04-bogo.md) | Adopted family | #0051bd | #e3edf2 |
 | [🐎 Steed](05-steed.md) | Original asset | #1da599 | #eef1f1 |

@@ -91,7 +91,7 @@ export function Gallery({
 							aria-pressed={project?.id === item.id}
 							onClick={() => onChange({ project: item.id })}
 						>
-							<Logo project={item} size={32} />
+							<Logo project={item} size={32} framed={false} />
 							<span>{item.title}</span>
 						</button>
 					))}

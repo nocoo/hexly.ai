@@ -11,7 +11,7 @@
 - Chinese: 把文档、人物与工作空间放在一起，整理个人知识和它们之间的联系。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `59e6a1656b3b5bfe99a6a54cc53da7458017b082`
+- Repository revision inspected: `77e211a294a885fff2830d0aba2e48a10299dff1`
 
 ## Current logo
 
@@ -19,7 +19,7 @@
 
 - Type: Original project artwork, copied without modification
 - Subject: Winking faceted buffalo with a plain muzzle and one rainbow flower sprig
-- [Source](https://github.com/nocoo/bogo/blob/59e6a1656b3b5bfe99a6a54cc53da7458017b082/logo.png): `logo.png`
+- [Source](https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/bogo-2026-09-07.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3637079 bytes
