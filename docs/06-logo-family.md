@@ -51,6 +51,8 @@ Local finishing 03 deepens the base to `#BBCB9E`, with light `#DCE6C6`, shade `#
 
 The raw checkpoint and complete finished review are separate handoffs. Do not delay the first handoff to produce the second. An already retained foreground may receive an explicitly requested background-only pass without another raw approval; record the existing selection or instruction rather than inventing a new confirmation.
 
+The owner may explicitly delegate raw acceptance for named projects. Save the exact instruction and scope before generation, inspect each returned image, and record approved processing authorization against its SHA-256 with `decisionSource: "owner-delegated batch acceptance"` and `ownerReviewedExactBytes: false`. Do not imply the owner viewed the new bytes. This exception applies to the 2026-09-07 Bogo, Neo, Dove, Raven, and Lyre framing batch; default checkpoints still apply elsewhere. Each project receives its own complete static and site review page.
+
 The [official image guide](https://developers.openai.com/api/docs/guides/image-generation), checked on 2026-09-06, allows 2048 × 2048 for `gpt-image-2`. It documents multiples of 16, a maximum edge of 3840, a maximum area of 8,294,400 pixels, and an aspect ratio up to 3:1. High input fidelity is automatic; native transparent output is not supported by this model. White-background extraction is therefore a separate finishing step.
 
 ## Pew study 01
