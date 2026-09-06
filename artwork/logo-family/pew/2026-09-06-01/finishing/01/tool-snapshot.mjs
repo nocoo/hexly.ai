@@ -44,29 +44,7 @@ function extractWhite(rgb, width, height, settings) {
 		visitWhite(y * width + width - 1);
 	}
 	while (head < tail) neighbors(queue[head++], visitWhite);
-	let backgroundPixels = tail;
-	let removedComponents = 0;
-	let removedComponentPixels = 0;
-	if (settings.minimumComponentPixels > 0) {
-		const seen = new Uint8Array(count);
-		for (let start = 0; start < count; start++) {
-			if (background[start] || seen[start]) continue;
-			head = 0;
-			tail = 0;
-			const visitForeground = (index) => {
-				if (background[index] || seen[index]) return;
-				seen[index] = 1;
-				queue[tail++] = index;
-			};
-			visitForeground(start);
-			while (head < tail) neighbors(queue[head++], visitForeground);
-			if (tail >= settings.minimumComponentPixels) continue;
-			for (let index = 0; index < tail; index++) background[queue[index]] = 1;
-			backgroundPixels += tail;
-			removedComponentPixels += tail;
-			removedComponents++;
-		}
-	}
+	const backgroundPixels = tail;
 	if (backgroundPixels < count * 0.1 || backgroundPixels > count * 0.95)
 		throw new Error("Unexpected foreground coverage; inspect the white matte.");
 
@@ -178,8 +156,6 @@ function extractWhite(rgb, width, height, settings) {
 			backgroundPixels,
 			foregroundPixels: count - backgroundPixels,
 			softEdgePixels: softPixels,
-			removedComponents,
-			removedComponentPixels,
 			bounds: { left, top, right, bottom },
 		},
 	};

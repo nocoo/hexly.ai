@@ -1,0 +1,302 @@
+{
+	"createdAt": "2026-09-06T08:34:03.936Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "bf6fd942fc84931a39b99e7bb55c9e87688f5538372150bd31585e1f0cc8f0b9",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; local two-pixel alpha matting and edge color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "pew",
+		"original": "../../../../public/logos/originals/pew.png",
+		"background": {
+			"base": "#e3deea",
+			"light": "#f4f1f7",
+			"shade": "#cac2d7",
+			"motif": "#9382a3",
+			"grainAmplitude": 1,
+			"grainSeed": 609062,
+			"status": "Proposed pearl-lilac presentation; existing Pew UI tokens stay separate."
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500
+		},
+		"shadows": [
+			{
+				"color": [
+					58,
+					43,
+					77
+				],
+				"opacity": 0.12,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					43,
+					34,
+					57
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "The native neck continues beyond the frame; no finishing crop or circular bust mask is applied. Eyes, ears, muzzle, and tongue remain inside the rounded-square safe area."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2068103,
+		"foregroundPixels": 2126201,
+		"softEdgePixels": 9118,
+		"bounds": {
+			"left": 436,
+			"top": 88,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1105,
+			"sha256": "3c7e4c5e0ed5d917e2b98e5509013717502a538747294b35d7c8a9cd589b5d24"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 11681,
+			"sha256": "bf6fd942fc84931a39b99e7bb55c9e87688f5538372150bd31585e1f0cc8f0b9"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61338,
+			"sha256": "1daf4753e5715405060bef8d3aa9ed032d18e13781131c322caaca7273237f68"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 807,
+			"sha256": "0264a0cbfc44710f3b56247e33663e3800db6f57228a73cdfc205b669735690b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1951313,
+			"sha256": "7cdf1f75fbf60b773f6dbeef7475a35b47896df239f37c8676d6aae1029c4b69"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 199402,
+			"sha256": "5bac9f286d978df2163a6ca2ef78562d87cb76bd90c5ad3e8d5e1013877bc81a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 154289,
+			"sha256": "8f07b0c0de15504ce57a210301ad4c140cea0287a36c5d997c86f453eadd90c1"
+		},
+		{
+			"path": "exports/pew-transparent-2048.png",
+			"bytes": 3043838,
+			"sha256": "167d80bf35cfe13060f4adb2a4a8a861a4bb1a3b9bb0b308ae4a430821db0e44"
+		},
+		{
+			"path": "exports/pew-icon-2048.png",
+			"bytes": 4298510,
+			"sha256": "6fab3e5c1872d0b987db3f830897dea9f3f99b35e483f5b227938dd8dd490439"
+		},
+		{
+			"path": "exports/pew-rounded-2048.png",
+			"bytes": 4209846,
+			"sha256": "13d2836560f22fe24f760a19994a0a4ba0b4ed59465eaa277dfdf9f17d7eccad"
+		},
+		{
+			"path": "exports/pew-transparent-1024.png",
+			"bytes": 974078,
+			"sha256": "78d83353ddec03694a9f0ff6eb8d4f57917a15243b9263d28324e0efa7af7dff"
+		},
+		{
+			"path": "exports/pew-icon-1024.png",
+			"bytes": 1233691,
+			"sha256": "8e278654014cfcfbe585098455f577b003c6d278cc6fd2d5416d979f9ad0b935"
+		},
+		{
+			"path": "exports/pew-rounded-1024.png",
+			"bytes": 1224243,
+			"sha256": "08758dea163ea140774fb5f5431b35d541918248279853a1fd826ed1f60a7547"
+		},
+		{
+			"path": "exports/pew-transparent-512.png",
+			"bytes": 318620,
+			"sha256": "d73dd0994fd58bcb05bc5d80ffff7d034646adb52ab11393c8d435e5e58e6fea"
+		},
+		{
+			"path": "exports/pew-icon-512.png",
+			"bytes": 401324,
+			"sha256": "ddb62c0e841019aa2043485da27f63f59fd7895b42daa46edf27db43632faca2"
+		},
+		{
+			"path": "exports/pew-rounded-512.png",
+			"bytes": 399597,
+			"sha256": "4f2d055369fe0c425ab31e62a2c5ae0e695452de02d2d0779fa4276e425c894c"
+		},
+		{
+			"path": "exports/pew-transparent-256.png",
+			"bytes": 99156,
+			"sha256": "b076c72ea17c6a00871db87b757e5cc11c1f393579b724db3c8e7320456a18cd"
+		},
+		{
+			"path": "exports/pew-icon-256.png",
+			"bytes": 111454,
+			"sha256": "877fa199c7f606156400d739831d342330ee31231943a7731c42bfa57a601cb7"
+		},
+		{
+			"path": "exports/pew-rounded-256.png",
+			"bytes": 113131,
+			"sha256": "c3c0cb2c8632f3e7c4dac66fffe198fa9fde1544ca12aa6406cdd6a948c7f141"
+		},
+		{
+			"path": "exports/pew-transparent-128.png",
+			"bytes": 29030,
+			"sha256": "73601817206c9cd4df9ddd1709b74ca686e92730ad09507d05779d71eccae079"
+		},
+		{
+			"path": "exports/pew-icon-128.png",
+			"bytes": 32282,
+			"sha256": "9ab0ebb36945cec826b8eb7feb26e3af06ae72fc1d0de5bb2ae45a1b714f3d5a"
+		},
+		{
+			"path": "exports/pew-rounded-128.png",
+			"bytes": 33513,
+			"sha256": "7a9fbe4eac3f4f814891fea681ecba1d89e9640738b03e67f66b0c1bb0593ed4"
+		},
+		{
+			"path": "exports/pew-transparent-64.png",
+			"bytes": 8317,
+			"sha256": "2fd65d60f01704ff2ee8f2627251403fbe15f22e0143fe3c4007e9c4af599e15"
+		},
+		{
+			"path": "exports/pew-icon-64.png",
+			"bytes": 9561,
+			"sha256": "cfac43951acf69d5ea9f4d67246d948f84cc7d029d261150a57f9014244a9c29"
+		},
+		{
+			"path": "exports/pew-rounded-64.png",
+			"bytes": 10102,
+			"sha256": "84bbae302e1df5589e4ee47fd48fde03e8ec92b6d3ce4696a7846cab042a5043"
+		},
+		{
+			"path": "exports/pew-transparent-48.png",
+			"bytes": 4997,
+			"sha256": "a5fb4306734d553c3e6722f82c130dbadea4bb99d1f0e314a980ce1b2cae9795"
+		},
+		{
+			"path": "exports/pew-icon-48.png",
+			"bytes": 5799,
+			"sha256": "68dbb4d5b348e4cd34bbd3a3fc9dbaeb5792079e44331e49ca514ce4bb8e34ec"
+		},
+		{
+			"path": "exports/pew-rounded-48.png",
+			"bytes": 6199,
+			"sha256": "1a7fecd4fe93ee7afd265f308ef1f9993adad8f82f52ba2701290af9757c3342"
+		},
+		{
+			"path": "exports/pew-transparent-32.png",
+			"bytes": 2499,
+			"sha256": "7fc3ecb16c23f88b23b0f544f7c6a917063d0fcbc0cf1a31d1d24e4b282b3fb8"
+		},
+		{
+			"path": "exports/pew-icon-32.png",
+			"bytes": 2947,
+			"sha256": "8d8911d3d34f8206bf3b4f979373c304dcd6016e87066cd9f996a114eb5d68a3"
+		},
+		{
+			"path": "exports/pew-rounded-32.png",
+			"bytes": 3116,
+			"sha256": "724379f71ca3cef7479c8a44414a787324f82face8f40f80915c95c7020b6e53"
+		},
+		{
+			"path": "exports/pew-transparent-24.png",
+			"bytes": 1528,
+			"sha256": "49ba6c34477b858d49be4e0a8369290180e69709b7a70d584e4a0692d7e3450e"
+		},
+		{
+			"path": "exports/pew-icon-24.png",
+			"bytes": 1797,
+			"sha256": "cb41661e298b2eff8d96ac64e0073d0b9a4e214c4928bfec0003953f40f38c02"
+		},
+		{
+			"path": "exports/pew-rounded-24.png",
+			"bytes": 1940,
+			"sha256": "d8039f7c776a74e6e66a4739e95bfa87143dab5975c0f6c19b36b897ae57a8b6"
+		},
+		{
+			"path": "exports/pew-transparent-16.png",
+			"bytes": 841,
+			"sha256": "7bea66ee0fb0186b43f558206015c2a0833d3a039dcdf02f840f2d5c9ea0a434"
+		},
+		{
+			"path": "exports/pew-icon-16.png",
+			"bytes": 931,
+			"sha256": "f4fd9d72377338db55934a94d5e9d3b6d401790f21287f781e12f4991da18669"
+		},
+		{
+			"path": "exports/pew-rounded-16.png",
+			"bytes": 986,
+			"sha256": "f3efeb7c912f6bb95845e12dd2301b20b5bf8ef83d213d71fa87d693abc9e360"
+		},
+		{
+			"path": "exports/pew-white-2048.png",
+			"bytes": 2854263,
+			"sha256": "000f35fe041b79487d2007ac235586b7cf0af7a8ca6adc481426a06f58a65483"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 922639,
+			"sha256": "1e436cd513bbe836608bcd341aa647565fcaf88c19d37c8d5d89ed4d880fa8d4"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 927835,
+			"sha256": "4b34ea0bf56e74705ff5f7473ae79aa8ef045800e2afd73050dc71ba5c554ce1"
+		}
+	]
+}

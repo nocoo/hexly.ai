@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
 import sharp from "sharp";
 import type { Project } from "../src/model/project";
 
@@ -58,4 +59,32 @@ for (const project of projects) {
 }
 console.info(
 	`Verified ${projects.length} source checksums, ${projects.length * 4} artwork derivatives, and all promoted family archives and previews.`,
+);
+
+let finishingPasses = 0;
+for await (const path of new Bun.Glob(
+	"artwork/logo-family/*/*/finishing/*/manifest.json",
+).scan(".")) {
+	const manifest: {
+		input: { path: string; sha256: string };
+		files: { path: string; bytes: number; sha256: string }[];
+	} = JSON.parse(await readFile(path, "utf8"));
+	const root = dirname(path);
+	const input = await readFile(resolve(root, manifest.input.path));
+	if (
+		createHash("sha256").update(input).digest("hex") !== manifest.input.sha256
+	)
+		throw new Error(`Study source changed: ${path}`);
+	for (const file of manifest.files) {
+		const data = await readFile(resolve(root, file.path));
+		if (
+			data.length !== file.bytes ||
+			createHash("sha256").update(data).digest("hex") !== file.sha256
+		)
+			throw new Error(`Finishing archive changed: ${path}/${file.path}`);
+	}
+	finishingPasses++;
+}
+console.info(
+	`Verified every recorded file in ${finishingPasses} finishing passes.`,
 );
