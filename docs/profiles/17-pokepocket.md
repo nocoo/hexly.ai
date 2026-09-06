@@ -6,10 +6,10 @@
 - Website: [https://pokepocket.hexly.ai](https://pokepocket.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: games
-- English: A pocket-sized collection of Game Boy adventures, with browser play and local saves.
-- Chinese: 把童年的 Game Boy 卡带装进口袋，在浏览器里游玩并保存进度。
+- English: GB / GBC / GBA collection with browser play and local saves
+- Chinese: GB / GBC / GBA 游戏收藏盘，支持浏览器游玩与本地存档。
 - Profile section: Games
-- Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
+- Profile revision: `bf9076bff46ea58fba5885a9185cce8b71f9b09a`
 - Repository revision inspected: `48894ea4a1712c755d1bb60a9766a5f67bf15221`
 
 ## Current logo
