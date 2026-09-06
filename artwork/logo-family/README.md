@@ -19,6 +19,7 @@ firefly/2026-09-06-04/        Rejected cute firefly character
 firefly/2026-09-06-05/        Unselected dark campfire scene
 firefly/2026-09-06-06/        Reference-guided flight and flame in a clean night field
 firefly/2026-09-06-07/        White foreground for separate night and glow layers
+firefly/2026-09-06-08/        Second-eye correction on the clean foreground
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
@@ -44,6 +45,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-05](firefly/2026-09-06-05/notes.md) | Superseded and unselected; untouched scene preserved without finishing | [Untouched raw](firefly/2026-09-06-05/raw/generated.png) |
 | Firefly | [2026-09-06-06](firefly/2026-09-06-06/notes.md) | Improved direction retained; clean foreground requested in study 07 | [Untouched raw](firefly/2026-09-06-06/raw/generated.png) |
 | Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye | [Untouched raw](firefly/2026-09-06-07/raw/generated.png) |
+| Firefly | [2026-09-06-08](firefly/2026-09-06-08/brief.md) | Targeted second-eye edit prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-08/brief.md) |
 
 ## Running a study
 
