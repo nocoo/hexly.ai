@@ -1,0 +1,88 @@
+{
+	"project": "bogo",
+	"original": "../../../../public/logos/originals/bogo.png",
+	"background": {
+		"base": "#b7a186",
+		"light": "#e0ccaf",
+		"shade": "#958370",
+		"motif": "#6d5843",
+		"grainAmplitude": 1,
+		"grainSeed": 609071,
+		"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+		"motifOpacity": 0.14,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Mineral horn arches",
+			"description": "Offset broken polygonal arches with blunt beveled ends, recalling the buffalo horns without framing the face.",
+			"layers": [
+				{
+					"d": "M-34 327L99 161L219 89L246 124L131 195L9 351Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M29 447L174 268L303 190L321 217L194 300L63 471Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M96 544L235 382L338 319L353 341L256 407L123 564Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M771-18L855 53L1062 144L1048 173L831 82L748 9Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M19 357L136 201L249 129",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M74 476L199 306L324 222",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1054 186L828 92L744 19",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 249,
+		"maximumChroma": 5,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 0,
+		"componentNote": "Preserve all detached identity decoration. Adjust only after examining the actual returned matte."
+	},
+	"shadows": [
+		{
+			"color": [109, 88, 67],
+			"opacity": 0.14,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 23]
+		},
+		{
+			"color": [109, 88, 67],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.84,
+		"anchor": [0.5, 0.5],
+		"intentionalEdges": ["bottom", "right"],
+		"extendEdges": ["bottom", "right"],
+		"note": "Uniform centered placement. Continue only the already-cut neck/shoulder outside the scaled native canvas by copying its edge RGBA samples. This fills the narrow presentation inset without an internal vertical/horizontal stump. No head, expression, accessory, or native interior pixel is independently altered. The raw and unscaled extraction remain intact; inspect each extended edge and final rounded corners."
+	}
+}

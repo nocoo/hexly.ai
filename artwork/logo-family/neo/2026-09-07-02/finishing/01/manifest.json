@@ -1,0 +1,377 @@
+{
+	"createdAt": "2026-09-06T20:28:09.557Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "176e095a3f7b986e463b1e6a979e64e59d500e51f68449fe96e96377832ca96d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "3450916bc2cea7cebb350e5e292d0c24245f4bf703affba2ae4db6b2092621ed",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "neo",
+		"original": "../../../../public/logos/originals/neo.png",
+		"background": {
+			"base": "#cba16f",
+			"light": "#f2d4a8",
+			"shade": "#aa7d51",
+			"motif": "#875a32",
+			"grainAmplitude": 1,
+			"grainSeed": 609072,
+			"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Golden lozenge impressions",
+				"description": "Loose alternating long and short rounded impressions rise through the left negative space like softened sunlit pebbles.",
+				"layers": [
+					{
+						"d": "M48 213L159 146Q176 136 186 153Q196 170 180 181L69 247Q51 258 41 241Q31 223 48 213Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M35 344L83 315Q101 305 111 322Q121 339 104 350L56 379Q38 389 28 371Q18 354 35 344Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M61 517L162 456Q179 446 189 463Q199 480 182 491L83 552Q65 562 54 545Q43 528 61 517Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M770 47L874-16Q891-25 901-9Q912 9 894 20L791 83Q773 93 763 75Q753 58 770 47Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M857 149L909 118Q926 107 936 124Q947 142 929 153L878 183Q860 194 850 176Q840 159 857 149Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M49 256L186 174",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M64 561L188 486",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M771 92L901 13",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 16,
+			"componentNote": "Only sub-16-pixel isolated matte residue may be removed, with component bounds and counts inspected. Every legitimate detached blossom petal is much larger and must remain."
+		},
+		"shadows": [
+			{
+				"color": [
+					135,
+					90,
+					50
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					135,
+					90,
+					50
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 1,
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Final positions supplied by the archived scale guide; the image model completes continuous lower anatomy. No finishing scale, crop, edge-copy extension or circular bust mask."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1760049,
+		"foregroundPixels": 2434255,
+		"softEdgePixels": 10684,
+		"removedComponents": 2,
+		"removedComponentPixels": 2,
+		"bounds": {
+			"left": 106,
+			"top": 0,
+			"right": 1951,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 106,
+			"top": 0,
+			"right": 1950,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -129.74284196538093,
+		"clippedPixels": 29788
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2585,
+			"sha256": "72e89cbc9f7590139452181522a232ccc922806292087da01d0f2b5e9823d317"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 954,
+			"sha256": "5b68011fc74abffdf5f606592fb60ed89b1c90a13059a33abb1ad5ee1a43b1e6"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 19916,
+			"sha256": "176e095a3f7b986e463b1e6a979e64e59d500e51f68449fe96e96377832ca96d"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3969871,
+			"sha256": "99998390beb05aefd07031dd284667f1d1f336315cd8f511a51237704c5adadc"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 60486,
+			"sha256": "5765eefddee758b1aeabf1f328d854fac89a1675deb6b84efd77a8912545e966"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1302,
+			"sha256": "78273d77301c3acecc6accf15cb99686e43ae4b135bdfc480c848fde22247140"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2291729,
+			"sha256": "079d9cfe36e14754a04901c3f828aba079e170fdf00956b3f1240b7e64ae8b3d"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 206247,
+			"sha256": "e0f96d6466345d6b8152fd82dad7ed3600417614977aeab6f26432a67827d98c"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 165274,
+			"sha256": "1a9013786f8aeb731fbe49d6bb377d0149f0d05e092c98c052ea2e7883ecd38e"
+		},
+		{
+			"path": "exports/neo-transparent-2048.png",
+			"bytes": 3969871,
+			"sha256": "99998390beb05aefd07031dd284667f1d1f336315cd8f511a51237704c5adadc"
+		},
+		{
+			"path": "exports/neo-icon-2048.png",
+			"bytes": 5250944,
+			"sha256": "e94be5825785bacde86653587c59a0ce853056664a1b0f5a2078a343b2f26b70"
+		},
+		{
+			"path": "exports/neo-rounded-2048.png",
+			"bytes": 5128435,
+			"sha256": "f2101aeba6071ec262eb15741bf79fc1335009790285b1eec42b2a288eea6985"
+		},
+		{
+			"path": "exports/neo-transparent-1024.png",
+			"bytes": 1140873,
+			"sha256": "4224714c606915ea3edeff93a6f248d233d2560b906cf863205888bc717f3710"
+		},
+		{
+			"path": "exports/neo-icon-1024.png",
+			"bytes": 1430340,
+			"sha256": "8db2df06cadc85c8e410f1d029636062309717f624324df866987278b4f8fefe"
+		},
+		{
+			"path": "exports/neo-rounded-1024.png",
+			"bytes": 1414005,
+			"sha256": "962f5ad8c67268e2866879de5f05d0fcdd1a272b1d7064e93b399a657d45e316"
+		},
+		{
+			"path": "exports/neo-transparent-512.png",
+			"bytes": 354462,
+			"sha256": "cf3e8dd6474547173b1056862db53c19f291778908aa6b3f0675ebabdad0ded8"
+		},
+		{
+			"path": "exports/neo-icon-512.png",
+			"bytes": 447865,
+			"sha256": "77f2cd9ecce827c0488a3db58a1e48d2ae891608c7fd2ab550c33e3a40b52b91"
+		},
+		{
+			"path": "exports/neo-rounded-512.png",
+			"bytes": 444912,
+			"sha256": "f63d268e963ef54488e4be0237868c873fa91447da436302a0f57c8f987dd844"
+		},
+		{
+			"path": "exports/neo-transparent-256.png",
+			"bytes": 110074,
+			"sha256": "9aa0147ea64205246405db5fb87b72c576a12dab36557891c3a29a2f86b82b5c"
+		},
+		{
+			"path": "exports/neo-icon-256.png",
+			"bytes": 126488,
+			"sha256": "fa2ff91194650d12000dfb2c2196a0f64e5ee01425e16a1d9e623aa6d29f4f4c"
+		},
+		{
+			"path": "exports/neo-rounded-256.png",
+			"bytes": 127988,
+			"sha256": "57adeb5b3bc07d343425d504a6120ddca392dcc1446aee6c1552cdee3b2cee6d"
+		},
+		{
+			"path": "exports/neo-transparent-128.png",
+			"bytes": 32209,
+			"sha256": "999fa7d129edc900d1311050fe3bff25f4626c2b456e6b9ea6ad59313c467ba0"
+		},
+		{
+			"path": "exports/neo-icon-128.png",
+			"bytes": 37537,
+			"sha256": "ebfe4235abb0168142f84b6e66f3c5abebe66ac7bbef2ea5d1d5c70e9f3c3028"
+		},
+		{
+			"path": "exports/neo-rounded-128.png",
+			"bytes": 38520,
+			"sha256": "ad0f5376a240b4c19f089c495ec4d72deb5a31e4655784685df4ca829e4b989d"
+		},
+		{
+			"path": "exports/neo-transparent-64.png",
+			"bytes": 9070,
+			"sha256": "4c33674cc101cdd7de1f2114c3f82bf0fd520fb3971f849ea7a950d71d6148d0"
+		},
+		{
+			"path": "exports/neo-icon-64.png",
+			"bytes": 11302,
+			"sha256": "a7532cdaa86a51a251b3600bd6c4296ef4eb533934454a699e4bba4ea28175b3"
+		},
+		{
+			"path": "exports/neo-rounded-64.png",
+			"bytes": 11667,
+			"sha256": "3e6cdd3938d128615adb3e3a7fd36d59ebf3b2240edf884c75743ab3ffb27845"
+		},
+		{
+			"path": "exports/neo-transparent-48.png",
+			"bytes": 5408,
+			"sha256": "58a658d9ce633b9d1951247b21e34886f04a1485a90393e606f90604bf6e1252"
+		},
+		{
+			"path": "exports/neo-icon-48.png",
+			"bytes": 6652,
+			"sha256": "8ba015d35ae1def7c8035c39c40ebbd38bb347f2b1116fe9b7ed3aeeb004f0f9"
+		},
+		{
+			"path": "exports/neo-rounded-48.png",
+			"bytes": 6923,
+			"sha256": "3f744a91fe96e90368aaf707e54410211a109f14ee5e06ac76e544eb2320d22a"
+		},
+		{
+			"path": "exports/neo-transparent-32.png",
+			"bytes": 2679,
+			"sha256": "7d07369f27f4ceab804e653ee440aff0f5c28759fb66d56273184a3a53fe518c"
+		},
+		{
+			"path": "exports/neo-icon-32.png",
+			"bytes": 3306,
+			"sha256": "527180d49e9ea86247a396c7e7016f734b1aed08549d6d83abc71b24bbb07fbf"
+		},
+		{
+			"path": "exports/neo-rounded-32.png",
+			"bytes": 3400,
+			"sha256": "55a6047e74e5ac0cd144cbe2d711ffc09171981b2d46be75be5e5d23e117e56a"
+		},
+		{
+			"path": "exports/neo-transparent-24.png",
+			"bytes": 1677,
+			"sha256": "9724aa89c503f450f6d25a4f9865077f7441d60792fbd29ba8125713c4ebc862"
+		},
+		{
+			"path": "exports/neo-icon-24.png",
+			"bytes": 1991,
+			"sha256": "6e448e15d98aac38d8184aae9c997bee0ed2683245061a080ce892d2f428471c"
+		},
+		{
+			"path": "exports/neo-rounded-24.png",
+			"bytes": 2078,
+			"sha256": "ec7a7f493be814e3c0661b51c750f44f870be87596c622df9497d59b018b359c"
+		},
+		{
+			"path": "exports/neo-transparent-16.png",
+			"bytes": 875,
+			"sha256": "488b114c2748fdb876a3f997968003bec0a38f1af01de037d5115368bb6b4599"
+		},
+		{
+			"path": "exports/neo-icon-16.png",
+			"bytes": 976,
+			"sha256": "47afd0c1d232330e797e2409cb29eb458323bc3a483b6793613eab3f75cd6c7c"
+		},
+		{
+			"path": "exports/neo-rounded-16.png",
+			"bytes": 1010,
+			"sha256": "43397f81b8bf37bd60285c35e5545b651c2e2b44b134b49024fd278db23f2ea5"
+		},
+		{
+			"path": "exports/neo-white-2048.png",
+			"bytes": 3758772,
+			"sha256": "17e059c00c3bf817ff0b2808bd6d909ae2f40f3565f20fc8e9576bd4a2a8ede4"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1088922,
+			"sha256": "1a3fd9b92a0a66293f29524df938dc331ec7f218f35ac3a54d6cf3c013bd6341"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1101783,
+			"sha256": "a3e6105394268f4621e56bbeaa635d8e7b84822b0ddad87ef382672ff18610bf"
+		}
+	]
+}

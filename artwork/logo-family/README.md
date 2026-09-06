@@ -53,6 +53,8 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 
 ## Running a study
 
+The active Bogo exploration is [study 03](bogo/2026-09-07-03/brief.md): a flower-chewing buffalo caught turning and winking, with an 85 mm portrait perspective. The model determines the natural pose and crop. This request stops at individual raw confirmation; no new finishing or adoption is authorized yet.
+
 Create a fresh project/date directory and write its `brief.md` and `prompt.txt` first. Supply reference images in the exact priority order described by the prompt. The generator refuses to overwrite any existing request; a retry needs a new study directory.
 
 ```bash
@@ -70,7 +72,7 @@ New requests use the neutral filename `raw/generated.png`; the response records 
 
 Immediately show the untouched returned image and ask for confirmation. Save actual owner feedback in `raw-review.json`; a new generation requires a new decision. Do not make the raw handoff wait for finishing or review pages.
 
-An explicit owner waiver can delegate this checkpoint for a named batch. Archive that instruction before requesting images, inspect every returned result, and record the exact SHA with `decisionSource: "owner-delegated batch acceptance"` and `ownerReviewedExactBytes: false`. The 2026-09-07 Bogo, Neo, Dove, Raven, and Lyre batch has this authorization. It still delivers five independent complete review pages and all normal provenance, finishing, adoption, and verification evidence.
+An explicit owner waiver can delegate this checkpoint for a named batch. Archive that instruction before requesting images, inspect every returned result, and record the exact SHA with `decisionSource: "owner-delegated batch acceptance"` and `ownerReviewedExactBytes: false`. The 2026-09-07 Bogo, Neo, Dove, Raven, and Lyre batch initially had this authorization; the owner has since revoked it and paused adoption and publication. The source repositories are restored through local revert commits. Bogo returns to its liked original for a fresh, naturally proportioned shoulder composition and individual raw confirmation. Raven study 02 is the retained direction; study 03 is withdrawn because the owner rejected its left-side crop. The other studies are deferred. See [the feedback and restoration record](2026-09-07-owner-feedback.json). Keep all existing studies; five independent finished pages remain the eventual delivery after approval.
 
 After the owner approves those exact bytes, create `presentation.json` with its project slug, evidence-backed/proposed colors, project-specific `background.pattern` geometry, matte settings, shadow settings, and export sizes. Each pattern has a name and SVG path layers in 1024-unit coordinates; a layer uses a `motif`, `highlight`, or `ribbon` tone and may have a `strokeWidth`. Omit `strokeWidth` for a filled shape. Each project supplies its own geometry, not a recolored shared stencil. Run a new numbered finishing pass:
 

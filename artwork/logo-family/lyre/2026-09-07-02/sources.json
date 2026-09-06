@@ -1,0 +1,40 @@
+{
+	"recordedAt": "2026-09-06T20:21:08.165Z",
+	"project": "lyre",
+	"sourceMode": "isolated-white",
+	"repository": "https://github.com/nocoo/lyre",
+	"repositoryRevision": "c2c5cf883fef4cf775c98eba6dce883c56653fe7",
+	"sourcePath": "logo.png",
+	"sourceSha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+	"originalBackup": "../../../../public/logos/originals/lyre.png",
+	"websiteThemeEvidence": {
+		"primary": {
+			"value": "13 62% 33%",
+			"source": "apps/web/src/styles.css --basalt-primary"
+		},
+		"background": {
+			"value": "220 14% 94%",
+			"source": "@nocoo/basalt/styles tokens --basalt-background"
+		}
+	},
+	"precedingStudy": "../2026-09-07-01",
+	"precedingRawSha256": "6c614f2a2483f670ca86eff9119da96090ed5d5601469b60be42f303b9f3ee14",
+	"referenceHierarchy": [
+		{
+			"index": 1,
+			"path": "input/framing-guide.png",
+			"sha256": "934eb2fb7a3e6a98f6c05d3082d4769013c645fe15b054add18d7936207699ca",
+			"role": "Exact desired composition: uniformly scaled preceding native drawing on a larger white field. Preserve head, expression and accessories at these exact positions; paint only natural neck/shoulder continuation through the remaining lower edge inset."
+		}
+	],
+	"guide": {
+		"source": "../2026-09-07-01/raw/generated.png",
+		"sourceSha256": "6c614f2a2483f670ca86eff9119da96090ed5d5601469b60be42f303b9f3ee14",
+		"nativeDimensions": [2048, 2048],
+		"scale": 0.84,
+		"resizedDimensions": [1720, 1720],
+		"offset": [164, 164],
+		"background": "#fbfcfc",
+		"method": "Uniform Lanczos resize of untouched opaque native source, centered on a near-white field; no edge extension, no retouch, no composite colored presentation."
+	}
+}
