@@ -35,11 +35,11 @@ for (const theme of ["light", "dark"] as const) {
 				).toBeLessThanOrEqual(0.001);
 				if (view === "gallery") {
 					for (const label of isMobile
-						? ["浅色", "深色", "透明"]
-						: ["Light", "Dark", "Transparent"]) {
+						? ["图标", "白底", "透明"]
+						: ["Icon", "White", "Transparent"]) {
 						await page
 							.getByRole("button", {
-								name: `${isMobile ? "预览背景" : "Preview background"}: ${label}`,
+								name: label,
 								exact: true,
 							})
 							.click();

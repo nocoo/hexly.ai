@@ -7,6 +7,7 @@
 - A project website must come from its repository metadata, README, or deployment configuration. Do not construct presumed live domains from repository names.
 - Prefer the repository's root `logo.png`, then its documented application logo, app icon, or favicon. Preserve the original bytes in `public/logos/originals/` with a normalized filename.
 - Record the source repository, source path, revision, file dimensions, and SHA-256. Record whether the source was a checked-out revision or a locally modified asset.
+- When an approved family replaces a logo, keep the previous original's filename and hash stable. Store the replacement with a versioned filename, record a source revision containing those exact bytes, and add its presentation/history metadata under `family`.
 - Derive display sizes without redrawing, recoloring, stretching, or cropping original artwork. Transparent padding and rounded-square presentation are display treatments.
 - If no independent image exists, preserve the profile emoji as the current identity. Clearly record that it is an emoji identity, not a recovered original logo.
 - Read colors from actual theme tokens where available. Otherwise sample the actual logo and record that method. Do not invent an unverified brand palette for a project with no source evidence.
@@ -28,6 +29,8 @@ Frogie and Pew are the reference identities: a recognizable animal, one dominant
 The later cleanup must preserve the original backup and provenance, create a separate version, and inspect the candidate at artwork, app icon, sidebar, and favicon sizes in both themes before replacing a live identity. Naming, animal choice, principal colors, and logo-generation prompts belong in the individual project profile.
 
 The active art direction and archive convention are in [the logo family guide](06-logo-family.md). Versioned candidates, raw generations, prompts, references, masks, and finishing passes live in `artwork/logo-family/` until reviewed for promotion.
+
+Approved application tiles include their own background and contact shadows. Display them at full size with one rounded-square boundary; do not pad them inside another colored tile. Preserve separate transparent foregrounds for artwork and edge review. A square source is used for operating-system icons; rounded transparent corners are used only where the application controls presentation.
 
 ## Profile maintenance reference
 

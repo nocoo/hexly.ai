@@ -27,6 +27,27 @@ for (const project of projects) {
 		thumbnail: `/logos/display/${project.id}-160.webp`,
 		display: `/logos/display/${project.id}-1024.webp`,
 	});
+	if (project.family) {
+		const root = `public${project.family.root}`;
+		for (const size of [32, 64, 160, 1024]) {
+			await sharp(`${root}/icon.png`)
+				.resize(size, size)
+				.webp({ quality: 88, effort: 5 })
+				.toFile(`${root}/icon-${size}.webp`);
+		}
+		for (const [name, path] of [
+			["background", `${root}/background.png`],
+			["previous", `public${project.family.previous.original}`],
+		]) {
+			await sharp(path)
+				.resize(1024, 1024, {
+					fit: "contain",
+					background: { r: 0, g: 0, b: 0, alpha: 0 },
+				})
+				.webp({ quality: 88, effort: 5 })
+				.toFile(`${root}/${name}-1024.webp`);
+		}
+	}
 }
 await writeFile(
 	"src/data/projects.json",

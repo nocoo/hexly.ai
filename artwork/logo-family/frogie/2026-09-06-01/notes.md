@@ -39,3 +39,7 @@ The main comparison places the unchanged original artwork on the same proposed s
 | Original Frogie backup | [frogie.png](../../../../public/logos/originals/frogie.png) |
 
 Exports include transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 pixels. Light/dark composites and browser captures support visual review. No production identity replacement, release, or catalogue synchronization is implied by this study.
+
+## Adoption — 2026-09-06
+
+The owner approved finishing 02. Its exact transparent, square, and rounded masters were promoted to Frogie and the hexly.ai catalogue without regeneration. The original remains at `public/logos/originals/frogie.png`; the new foreground uses `frogie-2026-09-06.png`. The production gallery now follows this full review layout. Context labels use Frogie’s actual AI-agent workspace purpose. Source revision and public checksums are recorded in the generated project profile.
