@@ -1,6 +1,10 @@
-# Firefly 04 — Raw character awaiting confirmation
+# Firefly 04 — Rejected: generic cute character
 
 One Azure Foundry `gpt-image-2` request returned a native 2048 × 2048 PNG in 144.03 seconds. The exact returned bytes are preserved in `raw/generated-white.png`. There was no retry or extra generation in this study.
+
+## Owner decision
+
+The owner rejected the character completely. The new direction is a tactile three-dimensional campfire surrounded by several small fireflies, with a darker background and physically plausible material colors. Insects should feel natural at a small scale, neither frightening nor mindlessly cute. Scene relationships and light should provide visual fullness. This supersedes the isolated smiling mascot direction.
 
 ## Observed character
 
@@ -15,8 +19,8 @@ Connected flat facets cover the main surfaces. Jade, mint, and yellow-green plan
 - Prompt SHA-256: `b3a957982532fafc26e5ab134cf9da25ce6f73c78ca699ca8a73d7e0e2fb5e31`.
 - Exact request and native response metadata: [request.json](request.json), [response.json](response.json).
 - Ordered reference roles and hashes: [sources.json](sources.json).
-- Owner decision: `pending` in [raw-review.json](raw-review.json), bound to these exact bytes.
+- Owner decision: `rejected` in [raw-review.json](raw-review.json), bound to these exact bytes.
 
-The untouched output was displayed immediately and opened in Chrome at [the local raw path](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-04/raw/generated-white.png). The owner was asked to confirm the fourth character direction before extraction or any other finishing. No extraction, cleanup, resize, background composite, full review page, or catalogue preview was created.
+The untouched output was displayed immediately and opened in Chrome at [the local raw path](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-04/raw/generated-white.png). The owner rejected the fourth character direction at the raw checkpoint. No extraction, cleanup, resize, background composite, full review page, or catalogue preview was created.
 
 All three rejected Firefly requests remain archived with their feedback. The proposed light-orbit background remains separate, Pew pass 04 is unchanged, and no source-project assets or deployment were modified. This round is local only.
