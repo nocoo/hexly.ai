@@ -1,0 +1,4784 @@
+[
+	{
+		"id": "frogie",
+		"repo": "frogie",
+		"title": "Frogie",
+		"emoji": "🐸",
+		"description": {
+			"en": "A local-first home for your AI agents. Chat, tools, and sessions in one place.",
+			"zh": "AI 智能体的本地工作台，把对话、工具与会话放在一起。"
+		},
+		"category": "ai",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/frogie",
+		"subject": "Full-body green frog with musical notes",
+		"reference": true,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/frogie.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/frogie/blob/3643e162ef3e3b784a1f8a7c88bd433fae0d5e45/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3135551,
+			"sha256": "cf53c0a17c5a025dcfa4b3b1eb50e1088a62aa89c1d51813881f8a751c61fbb6",
+			"thumbnail": "/logos/display/frogie-160.webp",
+			"display": "/logos/display/frogie-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "142 71% 45%",
+				"source": "packages/web/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Local-first web shell for an agent engine — chat, MCP, sessions on Bun + React",
+			"repositoryRevision": "3643e162ef3e3b784a1f8a7c88bd433fae0d5e45"
+		},
+		"colors": {
+			"primary": "#21c45d",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#21c45d",
+					"role": "primary",
+					"source": "packages/web/src/index.css --primary: 142 71% 45%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/web/src/index.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#ceb557",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#c3ee75",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#91d144",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "pew",
+		"repo": "pew",
+		"title": "Pew",
+		"emoji": "🦓",
+		"description": {
+			"en": "A contribution graph for the AI-native era. See your coding tokens tell a story.",
+			"zh": "AI 时代的贡献图，把不同编程工具的 Token 使用记录变成可见的轨迹。"
+		},
+		"category": "ai",
+		"website": "https://pew.md",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/pew",
+		"subject": "Zebra portrait with a rainbow tongue",
+		"reference": true,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/pew.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3835152,
+			"sha256": "2b94fa9b0b0521008a08caa3bae34552f68785fd591c8dc578ceee943addc35e",
+			"thumbnail": "/logos/display/pew-160.webp",
+			"display": "/logos/display/pew-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "260 20% 95%",
+				"source": "packages/web/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "260 10% 10%",
+				"source": "packages/web/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "270 85% 52%",
+				"source": "packages/web/src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Contribution graph for AI-native developers — track token usage across tools",
+			"repositoryRevision": "44351912506d0584bf59fdcefaec9b4e2be7eeef"
+		},
+		"colors": {
+			"primary": "#851ded",
+			"background": "#f1f0f5",
+			"ink": "#19171c",
+			"palette": [
+				{
+					"color": "#851ded",
+					"role": "primary",
+					"source": "packages/web/src/app/globals.css --primary: 270 85% 52%"
+				},
+				{
+					"color": "#f1f0f5",
+					"role": "background",
+					"source": "packages/web/src/app/globals.css --background: 260 20% 95%"
+				},
+				{
+					"color": "#b4b4b8",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#252335",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#ffffff",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "firefly",
+		"repo": "firefly",
+		"title": "Firefly",
+		"emoji": "🔥",
+		"description": {
+			"en": "A modern home for writing, publishing, and the ideas worth keeping.",
+			"zh": "写作、发布，也留住值得记录的想法。由 WordPress 迁移而来的博客平台。"
+		},
+		"category": "everyday",
+		"website": "https://lizheng.blog",
+		"websiteSource": "nocoo/nocoo README.md Writing link",
+		"repository": "https://github.com/nocoo/firefly",
+		"subject": "Multicolored prismatic flame",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/firefly.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/firefly/blob/94a16050f87867458d530e63442b99229603e72b/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3843600,
+			"sha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269",
+			"thumbnail": "/logos/display/firefly-160.webp",
+			"display": "/logos/display/firefly-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "src/app/styles/tokens.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "src/app/styles/tokens.css --foreground"
+			},
+			"primary": {
+				"value": "217 91% 60%",
+				"source": "src/app/styles/tokens.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Modern blog platform — Next.js 16 + Cloudflare D1 + R2, migrated from WordPress",
+			"repositoryRevision": "94a16050f87867458d530e63442b99229603e72b"
+		},
+		"colors": {
+			"primary": "#3c83f6",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#3c83f6",
+					"role": "primary",
+					"source": "src/app/styles/tokens.css --primary: 217 91% 60%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "src/app/styles/tokens.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#78d0cb",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#3c76b0",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#7598a5",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "bogo",
+		"repo": "bogo",
+		"title": "Bogo",
+		"emoji": "📚",
+		"description": {
+			"en": "A personal knowledge home for documents, people, and the connections between them.",
+			"zh": "把文档、人物与工作空间放在一起，整理个人知识和它们之间的联系。"
+		},
+		"category": "everyday",
+		"website": "https://bogo.hexly.ai",
+		"websiteSource": "CLAUDE.md Live-check",
+		"repository": "https://github.com/nocoo/bogo",
+		"subject": "Buffalo head with colorful geometric accents",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/bogo.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3562930,
+			"sha256": "eeaf1c419feb02f3990451d642432dbf2fbda2c5ddd1d71269d804e3ce8dd3a1",
+			"thumbnail": "/logos/display/bogo-160.webp",
+			"display": "/logos/display/bogo-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "oklch(0.94 0.012 230)",
+				"source": "packages/ui/src/index.css --background"
+			},
+			"ink": {
+				"value": "oklch(0.15 0.02 230)",
+				"source": "packages/ui/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "oklch(0.45 0.2 250)",
+				"source": "packages/ui/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Personal knowledge base for documents, people, and workspaces — React + Hono + Cloudflare D1",
+			"repositoryRevision": "2e2d986edffd9d320a3e172f37affe5e3406cabe"
+		},
+		"colors": {
+			"primary": "#0051bd",
+			"background": "#e3edf2",
+			"ink": "#030d12",
+			"palette": [
+				{
+					"color": "#0051bd",
+					"role": "primary",
+					"source": "packages/ui/src/index.css --primary: oklch(0.45 0.2 250)"
+				},
+				{
+					"color": "#e3edf2",
+					"role": "background",
+					"source": "packages/ui/src/index.css --background: oklch(0.94 0.012 230)"
+				},
+				{
+					"color": "#5a403b",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#95765d",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#c6ac76",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "steed",
+		"repo": "steed",
+		"title": "Steed",
+		"emoji": "🐎",
+		"description": {
+			"en": "A shared home for AI agents, their assets, and the relationships between them.",
+			"zh": "面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。"
+		},
+		"category": "ai",
+		"website": "https://steed.hexly.ai",
+		"websiteSource": "apps/web/wrangler.toml routes",
+		"repository": "https://github.com/nocoo/steed",
+		"subject": "Horse portrait with multicolored fragments",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/steed.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/steed/blob/1159f3769ec3c0a00a9a2bf32e914cf7cff00e33/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4168086,
+			"sha256": "9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719",
+			"thumbnail": "/logos/display/steed-160.webp",
+			"display": "/logos/display/steed-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "180 10% 94%",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "180 10% 10%",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "175 70% 38%",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "AI Hub for the multi-agent era — asset visibility and relationship management across agents",
+			"repositoryRevision": "1159f3769ec3c0a00a9a2bf32e914cf7cff00e33"
+		},
+		"colors": {
+			"primary": "#1da599",
+			"background": "#eef1f1",
+			"ink": "#171c1c",
+			"palette": [
+				{
+					"color": "#1da599",
+					"role": "primary",
+					"source": "apps/web/src/index.css --primary: 175 70% 38%"
+				},
+				{
+					"color": "#eef1f1",
+					"role": "background",
+					"source": "apps/web/src/index.css --background: 180 10% 94%"
+				},
+				{
+					"color": "#70b5a7",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f2cc9a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#7c60a5",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "ellie",
+		"repo": "ellie",
+		"title": "Ellie",
+		"emoji": "🐘",
+		"description": {
+			"en": "A modern forum for thoughtful conversations, with a companion terminal client.",
+			"zh": "为认真交流而做的现代论坛，也提供可以在终端里使用的客户端。"
+		},
+		"category": "everyday",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/ellie",
+		"subject": "Elephant portrait with colorful ornaments",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/ellie.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/ellie/blob/a53769b75c9220fc2ad02eb9cba5d8e342a6be3a/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4123134,
+			"sha256": "03f8da981d89188fdbeeec38dcd9e32a693960d5b8af2020b48beaaa86844a13",
+			"thumbnail": "/logos/display/ellie-160.webp",
+			"display": "/logos/display/ellie-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "0 0% 100%",
+				"source": "apps/web/src/app/tailwind.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/app/tailwind.css --foreground"
+			},
+			"primary": {
+				"value": "200 99% 30%",
+				"source": "apps/web/src/app/tailwind.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Modern forum platform on Next.js + Cloudflare Workers + D1, with a Rust TUI client",
+			"repositoryRevision": "a53769b75c9220fc2ad02eb9cba5d8e342a6be3a"
+		},
+		"colors": {
+			"primary": "#016698",
+			"background": "#ffffff",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#016698",
+					"role": "primary",
+					"source": "apps/web/src/app/tailwind.css --primary: 200 99% 30%"
+				},
+				{
+					"color": "#ffffff",
+					"role": "background",
+					"source": "apps/web/src/app/tailwind.css --background: 0 0% 100%"
+				},
+				{
+					"color": "#9f9bb1",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f6b8a8",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#b3e3ef",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "neo",
+		"repo": "neo",
+		"title": "Neo",
+		"emoji": "🔐",
+		"description": {
+			"en": "Your two-factor codes, together. Encrypted storage, easy imports, and offline access.",
+			"zh": "把双重验证口令放在一起，支持加密存储、多格式导入与离线访问。"
+		},
+		"category": "everyday",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/neo",
+		"subject": "Golden retriever portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/neo.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/neo/blob/856e487050327aa471ff9761c9d111822f2b46db/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+			"thumbnail": "/logos/display/neo-160.webp",
+			"display": "/logos/display/neo-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "217 91% 60%",
+				"source": "app/globals.css imports @nocoo/basalt/styles"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Modern TOTP/HOTP authenticator — encrypted storage, 18+ import formats, PWA",
+			"repositoryRevision": "856e487050327aa471ff9761c9d111822f2b46db"
+		},
+		"colors": {
+			"primary": "#3c83f6",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#3c83f6",
+					"role": "primary",
+					"source": "app/globals.css imports @nocoo/basalt/styles: 217 91% 60%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "app/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#ffdebc",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#b17157",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f3be7f",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "giraffe",
+		"repo": "giraffe",
+		"title": "Giraffe",
+		"emoji": "🦒",
+		"description": {
+			"en": "A personal GitHub observatory for repositories, workflows, and encrypted snapshots.",
+			"zh": "个人 GitHub 观察台，集中查看仓库、工作流与加密的访问令牌快照。"
+		},
+		"category": "tools",
+		"website": "https://giraffe.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/giraffe",
+		"subject": "Giraffe head with laurel leaves",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/giraffe.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/giraffe/blob/13083cd48ff37f4d47f1b5848d980eaa72fba80f/logo.png",
+			"modified": false,
+			"width": 1408,
+			"height": 1408,
+			"bytes": 1726680,
+			"sha256": "169ba1ff6951014dd9fdedb750bc4d65d7099c250eb1f941570bfb3c509db0fe",
+			"thumbnail": "/logos/display/giraffe-160.webp",
+			"display": "/logos/display/giraffe-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "87 53% 33%",
+				"source": "src/client/index.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "@nocoo/basalt/styles tokens --basalt-background"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Personal GitHub monitoring console with encrypted PAT snapshots",
+			"repositoryRevision": "13083cd48ff37f4d47f1b5848d980eaa72fba80f"
+		},
+		"colors": {
+			"primary": "#598128",
+			"background": "#eeeff2",
+			"ink": "#1f0b00",
+			"palette": [
+				{
+					"color": "#598128",
+					"role": "primary",
+					"source": "src/client/index.css --basalt-primary: 87 53% 33%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "@nocoo/basalt/styles tokens --basalt-background: 220 14% 94%"
+				},
+				{
+					"color": "#779c35",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#faac1c",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#ca7102",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "backy",
+		"repo": "backy",
+		"title": "Backy",
+		"emoji": "🐢",
+		"description": {
+			"en": "A dependable home for AI-agent backups. Store, inspect, and restore with confidence.",
+			"zh": "给 AI 智能体的备份服务，集中接收、存储、预览和恢复数据。"
+		},
+		"category": "tools",
+		"website": "https://backy.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/backy",
+		"subject": "Turtle portrait wearing a holiday hat",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/backy.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/backy/blob/8bf91fc7dcad5abe51323bdcc1e39f0906faa55a/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3736353,
+			"sha256": "297d5e88c91484612d1fc34aed41b01b872f1bd24fd92a8fcdd49d0eb7801ef0",
+			"thumbnail": "/logos/display/backy-160.webp",
+			"display": "/logos/display/backy-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "146 49% 35%",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "AI backup service for receiving, storing, previewing, and restoring backups",
+			"repositoryRevision": "8bf91fc7dcad5abe51323bdcc1e39f0906faa55a"
+		},
+		"colors": {
+			"primary": "#2e8553",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#2e8553",
+					"role": "primary",
+					"source": "apps/web/src/index.css --primary: 146 49% 35%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "apps/web/src/index.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#f5f8f5",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#779952",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#285f46",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "otter",
+		"repo": "otter",
+		"title": "Otter",
+		"emoji": "🦦",
+		"description": {
+			"en": "Keep your Mac development setup safe with snapshots, diffs, and cloud backups.",
+			"zh": "用快照、差异比较与云端备份，保存 Mac 开发环境的每一次变化。"
+		},
+		"category": "tools",
+		"website": "https://otter.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/otter",
+		"subject": "Full-body otter with colorful accents",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/otter.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/otter/blob/10f4b2d4d137a9afa79c61622afd68fa03fff80e/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3534582,
+			"sha256": "c811a8f167c11b250bd19b5cd569477e109ece11777cbf6d04c80de4be8eed78",
+			"thumbnail": "/logos/display/otter-160.webp",
+			"display": "/logos/display/otter-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/web/src/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/web/src/globals.css --foreground"
+			},
+			"primary": {
+				"value": "186 72% 38%",
+				"source": "packages/web/src/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "macOS dev environment backup with snapshot diffing, cloud sync, web dashboard",
+			"repositoryRevision": "10f4b2d4d137a9afa79c61622afd68fa03fff80e"
+		},
+		"colors": {
+			"primary": "#1b99a7",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#1b99a7",
+					"role": "primary",
+					"source": "packages/web/src/globals.css --primary: 186 72% 38%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/web/src/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#521d2d",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f4e2b7",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#a6553a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "gecko",
+		"repo": "gecko",
+		"title": "Gecko",
+		"emoji": "🦎",
+		"description": {
+			"en": "A little perspective on your screen time, with a Mac tracker and a synced dashboard.",
+			"zh": "用 Mac 时间追踪器和同步仪表盘，看看自己的时间花在了哪里。"
+		},
+		"category": "everyday",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/gecko",
+		"subject": "Full-body gecko",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/gecko.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/gecko/blob/db35d40b4c30e115914b591ac0475f2cc8961375/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 2799098,
+			"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+			"thumbnail": "/logos/display/gecko-160.webp",
+			"display": "/logos/display/gecko-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "140 14% 94%",
+				"source": "apps/web-dashboard/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web-dashboard/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "146 49% 35%",
+				"source": "apps/web-dashboard/src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "macOS menu bar screen time tracker with cloud-synced dashboard",
+			"repositoryRevision": "db35d40b4c30e115914b591ac0475f2cc8961375"
+		},
+		"colors": {
+			"primary": "#2e8553",
+			"background": "#eef2ef",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#2e8553",
+					"role": "primary",
+					"source": "apps/web-dashboard/src/app/globals.css --primary: 146 49% 35%"
+				},
+				{
+					"color": "#eef2ef",
+					"role": "background",
+					"source": "apps/web-dashboard/src/app/globals.css --background: 140 14% 94%"
+				},
+				{
+					"color": "#a8875e",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#cdb089",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#785347",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "dove",
+		"repo": "dove",
+		"title": "Dove",
+		"emoji": "🕊️",
+		"description": {
+			"en": "A self-hosted email relay with webhooks, reusable templates, and delivery insights.",
+			"zh": "可自行托管的邮件中继，支持 Webhook、邮件模板与用量查看。"
+		},
+		"category": "tools",
+		"website": "https://dove.hexly.ai",
+		"websiteSource": "wrangler.toml routes",
+		"repository": "https://github.com/nocoo/dove",
+		"subject": "Dove portrait with pink blossoms",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/dove.png",
+			"sourcePath": "src/client/public/logo.png",
+			"sourceUrl": "https://github.com/nocoo/dove/blob/2f7e96b0217a800f09c2685065024ae10c34918f/src/client/public/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+			"thumbnail": "/logos/display/dove-160.webp",
+			"display": "/logos/display/dove-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "330 20% 94%",
+				"source": "src/client/styles/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "src/client/styles/globals.css --foreground"
+			},
+			"primary": {
+				"value": "340 50% 55%",
+				"source": "src/client/styles/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Self-hosted email relay with webhook triggers, templates, and usage dashboard",
+			"repositoryRevision": "2f7e96b0217a800f09c2685065024ae10c34918f"
+		},
+		"colors": {
+			"primary": "#c65379",
+			"background": "#f3edf0",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#c65379",
+					"role": "primary",
+					"source": "src/client/styles/globals.css --primary: 340 50% 55%"
+				},
+				{
+					"color": "#f3edf0",
+					"role": "background",
+					"source": "src/client/styles/globals.css --background: 330 20% 94%"
+				},
+				{
+					"color": "#7f78a5",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#4c5778",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#fbcbc6",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "pika",
+		"repo": "pika",
+		"title": "Pika",
+		"emoji": "⚡",
+		"description": {
+			"en": "Replay, search, and rediscover your AI coding conversations.",
+			"zh": "回放、搜索和重新发现 AI 编程会话，让过去的思路更容易找回来。"
+		},
+		"category": "ai",
+		"website": "https://pika.hexly.ai",
+		"websiteSource": "packages/web-worker/wrangler.toml routes",
+		"repository": "https://github.com/nocoo/pika",
+		"subject": "Yellow electric mouse in motion",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/pika.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/pika/blob/d9b12caf26a4715aca440d8a6fe1ed929adcadb3/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+			"thumbnail": "/logos/display/pika-160.webp",
+			"display": "/logos/display/pika-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/web/src/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/web/src/globals.css --foreground"
+			},
+			"primary": {
+				"value": "42 82% 42%",
+				"source": "packages/web/src/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "AI coding session replay and search — parse, upload, and full-text search",
+			"repositoryRevision": "d9b12caf26a4715aca440d8a6fe1ed929adcadb3"
+		},
+		"colors": {
+			"primary": "#c38e13",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#c38e13",
+					"role": "primary",
+					"source": "packages/web/src/globals.css --primary: 42 82% 42%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/web/src/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#ffea02",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#ffab17",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#ffef66",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "raven",
+		"repo": "raven",
+		"title": "Raven",
+		"emoji": "🐦‍⬛",
+		"description": {
+			"en": "Connect GitHub Copilot to Anthropic- and OpenAI-compatible tools and track usage.",
+			"zh": "为 GitHub Copilot 提供兼容 Anthropic 与 OpenAI 的接口，并查看使用情况。"
+		},
+		"category": "ai",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/raven",
+		"subject": "Purple-indigo raven portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/raven.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/raven/blob/2e082931954fc48131177c57138c6956b1cd67c9/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3563221,
+			"sha256": "4de4df89c83e1fe24a02c6446e158793ccef0edfb7e4ee953a538edcf2004bf8",
+			"thumbnail": "/logos/display/raven-160.webp",
+			"display": "/logos/display/raven-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "255 55% 52%",
+				"source": "packages/dashboard/src/app/globals.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "@nocoo/basalt/styles tokens --basalt-background"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Copilot proxy for Anthropic/OpenAI APIs with usage dashboard",
+			"repositoryRevision": "2e082931954fc48131177c57138c6956b1cd67c9"
+		},
+		"colors": {
+			"primary": "#6341c8",
+			"background": "#eeeff2",
+			"ink": "#000020",
+			"palette": [
+				{
+					"color": "#6341c8",
+					"role": "primary",
+					"source": "packages/dashboard/src/app/globals.css --basalt-primary: 255 55% 52%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "@nocoo/basalt/styles tokens --basalt-background: 220 14% 94%"
+				},
+				{
+					"color": "#000020",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#2f2759",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#5b6496",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "bat",
+		"repo": "bat",
+		"title": "Bat",
+		"emoji": "🦇",
+		"description": {
+			"en": "A lightweight watchtower for your servers, with a Rust probe and a clear dashboard.",
+			"zh": "轻量的服务器观察台，用 Rust 探针采集状态，在仪表盘里集中查看。"
+		},
+		"category": "tools",
+		"website": "https://bat.hexly.ai",
+		"websiteSource": "CLAUDE.md Live-check",
+		"repository": "https://github.com/nocoo/bat",
+		"subject": "Hanging pink bat with sound waves",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/bat.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/bat/blob/99e48ef72afeaf178422c17875728128fe06615c/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 2747994,
+			"sha256": "24b80b738e8425f05eac0e83a9a78ece9d22c7390fc56a33d50c7fdc0a05ee62",
+			"thumbnail": "/logos/display/bat-160.webp",
+			"display": "/logos/display/bat-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/ui/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/ui/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "340 70% 58%",
+				"source": "packages/ui/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Lightweight VPS monitoring — Rust probe, Cloudflare Worker, Next.js dashboard",
+			"repositoryRevision": "99e48ef72afeaf178422c17875728128fe06615c"
+		},
+		"colors": {
+			"primary": "#df497b",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#df497b",
+					"role": "primary",
+					"source": "packages/ui/src/index.css --primary: 340 70% 58%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/ui/src/index.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#f991be",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#454757",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#c75f86",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "lyre",
+		"repo": "lyre",
+		"title": "Lyre",
+		"emoji": "🎶",
+		"description": {
+			"en": "Recordings, transcripts, and word-by-word playback, beautifully in sync.",
+			"zh": "整理录音和转写文本，让逐字高亮跟着声音一起播放。"
+		},
+		"category": "everyday",
+		"website": "https://lyre.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/lyre",
+		"subject": "Lyrebird portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/lyre.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/lyre/blob/c2c5cf883fef4cf775c98eba6dce883c56653fe7/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3656299,
+			"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+			"thumbnail": "/logos/display/lyre-160.webp",
+			"display": "/logos/display/lyre-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "13 62% 33%",
+				"source": "apps/web/src/styles.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "@nocoo/basalt/styles tokens --basalt-background"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Audio recording management and transcription with word-level karaoke playback",
+			"repositoryRevision": "c2c5cf883fef4cf775c98eba6dce883c56653fe7"
+		},
+		"colors": {
+			"primary": "#883720",
+			"background": "#eeeff2",
+			"ink": "#2a0f0f",
+			"palette": [
+				{
+					"color": "#883720",
+					"role": "primary",
+					"source": "apps/web/src/styles.css --basalt-primary: 13 62% 33%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "@nocoo/basalt/styles tokens --basalt-background: 220 14% 94%"
+				},
+				{
+					"color": "#5d2f24",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#a45d3b",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#dfc39e",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "pokepocket",
+		"repo": "pokepocket",
+		"title": "Poké Pocket",
+		"emoji": "🎮",
+		"description": {
+			"en": "A pocket-sized collection of Game Boy adventures, with browser play and local saves.",
+			"zh": "把童年的 Game Boy 卡带装进口袋，在浏览器里游玩并保存进度。"
+		},
+		"category": "games",
+		"website": "https://pokepocket.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/pokepocket",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/pokepocket.svg",
+			"sourcePath": "public/favicon.svg",
+			"sourceUrl": "https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg",
+			"modified": false,
+			"width": 64,
+			"height": 64,
+			"bytes": 352,
+			"sha256": "45996e3f23bd37f18ea26b35ee2dc3f13174da07a2aa7fcffbb1a17167d62e29",
+			"thumbnail": "/logos/display/pokepocket-160.webp",
+			"display": "/logos/display/pokepocket-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "#294138",
+				"source": "src/styles.css --ink"
+			},
+			"background": {
+				"value": "#f7f8f2",
+				"source": "src/styles.css :root background"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Games",
+			"description": "A nostalgic GB / GBC / GBA cartridge collection with browser emulation and local saves ([Play · Access sign-in](https://pokepocket.hexly.ai))",
+			"repositoryRevision": "48894ea4a1712c755d1bb60a9766a5f67bf15221"
+		},
+		"colors": {
+			"primary": "#294138",
+			"background": "#f7f8f2",
+			"ink": "#163e34",
+			"palette": [
+				{
+					"color": "#294138",
+					"role": "primary",
+					"source": "src/styles.css --ink: #294138"
+				},
+				{
+					"color": "#f7f8f2",
+					"role": "background",
+					"source": "src/styles.css :root background: #f7f8f2"
+				},
+				{
+					"color": "#163e34",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f7f8ee",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#bada88",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "dogfight",
+		"repo": "dogfight",
+		"title": "Dogfight",
+		"emoji": "✈️",
+		"description": {
+			"en": "An arcade dogfight in the browser. Take an F-22 into a sky full of Su-35s.",
+			"zh": "驾驶 F-22 迎战苏-35，在浏览器里体验街机风格的三维空战。"
+		},
+		"category": "games",
+		"website": "https://dogfight.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/dogfight",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/dogfight.svg",
+			"sourcePath": "public/favicon.svg",
+			"sourceUrl": "https://github.com/nocoo/dogfight/blob/9ec76522713a527bc831f8fa37ec7a50967e24e4/public/favicon.svg",
+			"modified": false,
+			"width": 64,
+			"height": 64,
+			"bytes": 224,
+			"sha256": "229e0e5757f8bddb9a9c2dce88b3a69b0e30640e6d4ecdf98c527d719f9d2080",
+			"thumbnail": "/logos/display/dogfight-160.webp",
+			"display": "/logos/display/dogfight-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "#c0e9dc",
+				"source": "src/styles.css --mint"
+			},
+			"background": {
+				"value": "#101c27",
+				"source": "src/styles.css :root background"
+			},
+			"ink": {
+				"value": "#e9eee9",
+				"source": "src/styles.css :root color"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Games",
+			"description": "Arcade 3D F-22 vs Su-35s dogfight in the browser ([Play](https://dogfight.hexly.ai))",
+			"repositoryRevision": "9ec76522713a527bc831f8fa37ec7a50967e24e4"
+		},
+		"colors": {
+			"primary": "#c0e9dc",
+			"background": "#101c27",
+			"ink": "#e9eee9",
+			"palette": [
+				{
+					"color": "#c0e9dc",
+					"role": "primary",
+					"source": "src/styles.css --mint: #c0e9dc"
+				},
+				{
+					"color": "#101c27",
+					"role": "background",
+					"source": "src/styles.css :root background: #101c27"
+				},
+				{
+					"color": "#13232e",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#b6e8dc",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#4b676a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "gaga",
+		"repo": "gaga",
+		"title": "Gaga",
+		"emoji": "🧸",
+		"description": {
+			"en": "A tiny 3D playroom where Taotao can explore, wander, and discover toys.",
+			"zh": "给陶陶的小小三维玩具房，自由走动，探索喜欢的玩具。"
+		},
+		"category": "games",
+		"website": "https://gaga.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/gaga",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/gaga.svg",
+			"sourcePath": "public/favicon.svg",
+			"sourceUrl": "https://github.com/nocoo/gaga/blob/b960a12ce78a579ac9e99c4b985aaf85d5b8c8aa/public/favicon.svg",
+			"modified": false,
+			"width": 64,
+			"height": 64,
+			"bytes": 465,
+			"sha256": "abfcdf4a83a692c90f0e3f9b40380fb3f3a701923291c7a45a71778386146995",
+			"thumbnail": "/logos/display/gaga-160.webp",
+			"display": "/logos/display/gaga-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "#4c5342",
+				"source": "src/style.css :root color"
+			},
+			"background": {
+				"value": "#f3f0e8",
+				"source": "src/style.css :root background"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Games",
+			"description": "Tiny 3D playroom where Taotao freely explores toys ([Play](https://gaga.hexly.ai))",
+			"repositoryRevision": "b960a12ce78a579ac9e99c4b985aaf85d5b8c8aa"
+		},
+		"colors": {
+			"primary": "#4c5342",
+			"background": "#f3f0e8",
+			"ink": "#7b8b6a",
+			"palette": [
+				{
+					"color": "#4c5342",
+					"role": "primary",
+					"source": "src/style.css :root color: #4c5342"
+				},
+				{
+					"color": "#f3f0e8",
+					"role": "background",
+					"source": "src/style.css :root background: #f3f0e8"
+				},
+				{
+					"color": "#e8ecd9",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#7b8b6a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#a8b397",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "pew-game",
+		"repo": "pew-game",
+		"title": "Pew Game",
+		"emoji": "🤠",
+		"description": {
+			"en": "A pixel-art prairie shooter with twin-stick action and a high-score leaderboard.",
+			"zh": "像素风格的草原双摇杆射击游戏，闯关、闪避，再挑战排行榜。"
+		},
+		"category": "games",
+		"website": "https://pew.hexly.ai",
+		"websiteSource": "nocoo/nocoo README.md Games section",
+		"repository": "https://github.com/nocoo/pew-game",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/pew-game.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 462436,
+			"sha256": "6ffd6aa8a203834dd8972fa0e8e2a520a2bdaf75f0519a585f6124212cfe4193",
+			"thumbnail": "/logos/display/pew-game-160.webp",
+			"display": "/logos/display/pew-game-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "#111111",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "#eeeeee",
+				"source": "src/app/globals.css --foreground"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Games",
+			"description": "Pixel art twin-stick prairie shooter with leaderboard ([Play](https://pew.hexly.ai))",
+			"repositoryRevision": "6617783cfe86efe490d32a5d8528efa9dd95f920"
+		},
+		"colors": {
+			"primary": "#755942",
+			"background": "#111111",
+			"ink": "#eeeeee",
+			"palette": [
+				{
+					"color": "#755942",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "#111111",
+					"role": "background",
+					"source": "src/app/globals.css --background: #111111"
+				},
+				{
+					"color": "#986605",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#ffdb47",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#e27c0b",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "rooster",
+		"repo": "rooster",
+		"title": "Rooster",
+		"emoji": "🐔",
+		"description": {
+			"en": "A web control panel for Hermes Agent, from conversations to models and profiles.",
+			"zh": "Hermes Agent 的网页控制台，管理对话、会话、模型与配置。"
+		},
+		"category": "ai",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/rooster",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/rooster.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 355436,
+			"sha256": "c622a972c61173d90608b6bdffd59b97ca69ceb82ccb4da59cabd8e58f0db918",
+			"thumbnail": "/logos/display/rooster-160.webp",
+			"display": "/logos/display/rooster-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Web management panel for Hermes Agent — chat, sessions, profile/model controls",
+			"repositoryRevision": "2dc5155c6dbffea67187266f5402733878ec3751"
+		},
+		"colors": {
+			"primary": "#e54745",
+			"background": "transparent",
+			"ink": "#150a0a",
+			"palette": [
+				{
+					"color": "#e54745",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#e3d8ca",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#c2b49e",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#e9c003",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "snaky",
+		"repo": "snaky",
+		"title": "Snaky",
+		"emoji": "🐍",
+		"description": {
+			"en": "Know where your traffic goes. Inspect VPN routes, exit IPs, latency, and proxy rules.",
+			"zh": "弄清网络流量去了哪里，检查 VPN 路由、出口 IP、延迟与分流规则。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/snaky",
+		"subject": "Green snake portrait in a circular frame",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/snaky.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/snaky/blob/a930a0e4883ee23e0eef0e7287d0efd06080533b/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3128322,
+			"sha256": "ab232e170e4c4d8da05a0b0851c5e6082adc679aede2481a3a99897956bb2e4b",
+			"thumbnail": "/logos/display/snaky-160.webp",
+			"display": "/logos/display/snaky-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "CLI to probe VPN/proxy routing — exit IPs, latency, and split-tunnel rule validation",
+			"repositoryRevision": "a930a0e4883ee23e0eef0e7287d0efd06080533b"
+		},
+		"colors": {
+			"primary": "#e2ecae",
+			"background": "transparent",
+			"ink": "#191417",
+			"palette": [
+				{
+					"color": "#e2ecae",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#65ac59",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#c4ea49",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#e1af8b",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "signoff-now",
+		"repo": "signoff.now",
+		"title": "signoff.now",
+		"emoji": "✍️",
+		"description": {
+			"en": "A desktop-first developer workspace for digital signoff and approval workflows.",
+			"zh": "以桌面为中心的开发者工作空间，管理数字签署和审批流程。"
+		},
+		"category": "tools",
+		"website": "https://signoff.hexly.ai",
+		"websiteSource": "wrangler.toml routes",
+		"repository": "https://github.com/nocoo/signoff.now",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/signoff-now.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 324001,
+			"sha256": "8337fbbe8569d7cc869b0e9e7c5dabae4f370963ccc2adc1621ef529f6639cb0",
+			"thumbnail": "/logos/display/signoff-now-160.webp",
+			"display": "/logos/display/signoff-now-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "210 16% 94%",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "199 100% 47%",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Desktop-first developer workspace for digital signoff and approval workflows",
+			"repositoryRevision": "92033c89d8074cda8ab848cb2faa20156da22d75"
+		},
+		"colors": {
+			"primary": "#00a4f0",
+			"background": "#edf0f2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#00a4f0",
+					"role": "primary",
+					"source": "apps/web/src/index.css --primary: 199 100% 47%"
+				},
+				{
+					"color": "#edf0f2",
+					"role": "background",
+					"source": "apps/web/src/index.css --background: 210 16% 94%"
+				},
+				{
+					"color": "#f6ba29",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#060606",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#783d0b",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "unseal",
+		"repo": "unseal",
+		"title": "Unseal",
+		"emoji": "🔓",
+		"description": {
+			"en": "Find quarantined macOS apps and interactively remove their quarantine flags.",
+			"zh": "扫描被 macOS 隔离的应用，交互式地批量解除隔离标记。"
+		},
+		"category": "tools",
+		"website": "https://www.npmjs.com/package/unseal",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/unseal",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/unseal.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 314450,
+			"sha256": "67157ad6394cd71c60b4b19632cfa0883c2159aeeb8ea6146f51330f42eb19f9",
+			"thumbnail": "/logos/display/unseal-160.webp",
+			"display": "/logos/display/unseal-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Scan macOS quarantined apps and batch-unseal them interactively",
+			"repositoryRevision": "ea82ce6bf69affc57e79a08a09a3e5aa648070bb"
+		},
+		"colors": {
+			"primary": "#94935f",
+			"background": "transparent",
+			"ink": "#51451f",
+			"palette": [
+				{
+					"color": "#94935f",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#c4c08f",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#abcaed",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#51451f",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "flow",
+		"repo": "flow",
+		"title": "Flow",
+		"emoji": "🌊",
+		"description": {
+			"en": "A Chinese pinyin input engine that brings language models into everyday typing.",
+			"zh": "把大语言模型带进日常输入的中文拼音引擎，支持智能分词与预测。"
+		},
+		"category": "everyday",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/flow",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/flow.svg",
+			"sourcePath": "apps/web/public/favicon.svg",
+			"sourceUrl": "https://github.com/nocoo/flow/blob/9c225d805a09ab5fdbe4fa65486821057231fdcd/apps/web/public/favicon.svg",
+			"modified": false,
+			"width": 48,
+			"height": 48,
+			"bytes": 527,
+			"sha256": "a03a03e3e685fdf4d87541f9e7e83ffdc910018d3782d67847d740fadeea7d6f",
+			"thumbnail": "/logos/display/flow-160.webp",
+			"display": "/logos/display/flow-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "oklch(1 0 0)",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "oklch(0.145 0 0)",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "oklch(0.205 0 0)",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "LLM-powered Chinese pinyin input method engine with DP segmentation",
+			"repositoryRevision": "9c225d805a09ab5fdbe4fa65486821057231fdcd"
+		},
+		"colors": {
+			"primary": "#171717",
+			"background": "#ffffff",
+			"ink": "#0a0a0a",
+			"palette": [
+				{
+					"color": "#171717",
+					"role": "primary",
+					"source": "apps/web/src/index.css --primary: oklch(0.205 0 0)"
+				},
+				{
+					"color": "#ffffff",
+					"role": "background",
+					"source": "apps/web/src/index.css --background: oklch(1 0 0)"
+				},
+				{
+					"color": "#18181b",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f2f2f3",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#a7a7a8",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "codo",
+		"repo": "codo",
+		"title": "Codo",
+		"emoji": "🔔",
+		"description": {
+			"en": "A quiet macOS notification bridge between your AI agents and your desktop.",
+			"zh": "连接 AI 智能体与桌面的 macOS 通知桥梁，支持菜单栏服务和命令行。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/codo",
+		"subject": "Full-body green hummingbird",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/codo.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/codo/blob/66df73c4141f3e01a89fd6693f574d1d75fc5e4a/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 1757813,
+			"sha256": "d078deff35f8dfc10b8b7192ab3ec8f6603de460ae1a3d3d632731281e62bc74",
+			"thumbnail": "/logos/display/codo-160.webp",
+			"display": "/logos/display/codo-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "macOS menubar notification daemon and CLI — bridge for Claude Code and AI agents",
+			"repositoryRevision": "66df73c4141f3e01a89fd6693f574d1d75fc5e4a"
+		},
+		"colors": {
+			"primary": "#0e413a",
+			"background": "transparent",
+			"ink": "#021716",
+			"palette": [
+				{
+					"color": "#0e413a",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#112f24",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#54765e",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#adab7e",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "arena",
+		"repo": "arena",
+		"title": "Arena",
+		"emoji": "🏟️",
+		"description": {
+			"en": "Let coding agents debate solutions while you review, compare, and decide.",
+			"zh": "让多个编程智能体提出方案、展开讨论，由你比较、审阅并做决定。"
+		},
+		"category": "ai",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/arena",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/arena.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 615119,
+			"sha256": "5654aa8fec9d7aa368c120d1ed58c5ae02d4ca6ef8cdd12b136324256acd3b57",
+			"thumbnail": "/logos/display/arena-160.webp",
+			"display": "/logos/display/arena-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/web/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/web/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "262 80% 55%",
+				"source": "packages/web/src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Local AI coding agent debate platform — agents push solutions, humans review",
+			"repositoryRevision": "9fa73e21c7d7260e4363bd4b9a27798e777e842c"
+		},
+		"colors": {
+			"primary": "#7430e8",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#7430e8",
+					"role": "primary",
+					"source": "packages/web/src/app/globals.css --primary: 262 80% 55%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/web/src/app/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#a59f9b",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#6f6977",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#413b41",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "owl",
+		"repo": "owl",
+		"title": "Owl",
+		"emoji": "🦉",
+		"description": {
+			"en": "A macOS menu bar lookout that spots unusual patterns in your system logs.",
+			"zh": "守在 macOS 菜单栏里的观察员，从系统日志中发现异常信号。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/owl",
+		"subject": "Multicolored owl portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/owl.png",
+			"sourcePath": "owl.png",
+			"sourceUrl": "https://github.com/nocoo/owl/blob/73c292ea59ed8ccaf8dfd1e6d1d57f80e8be7ed3/owl.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4831043,
+			"sha256": "f579214edd8876dacaa55d27c35c3598d3f809e651e4d3537d6d228823b5f413",
+			"thumbnail": "/logos/display/owl-160.webp",
+			"display": "/logos/display/owl-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "macOS menu bar system health monitor via unified log stream anomaly detection",
+			"repositoryRevision": "73c292ea59ed8ccaf8dfd1e6d1d57f80e8be7ed3"
+		},
+		"colors": {
+			"primary": "#1c6972",
+			"background": "transparent",
+			"ink": "#181344",
+			"palette": [
+				{
+					"color": "#1c6972",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#e3ab46",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#65418d",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#b18630",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "xray",
+		"repo": "xray",
+		"title": "Xray",
+		"emoji": "🦋",
+		"description": {
+			"en": "A closer look at your Twitter / X activity, with analytics and AI-powered reports.",
+			"zh": "深入查看 Twitter / X 动态，用数据分析与 AI 报告理解自己的内容。"
+		},
+		"category": "everyday",
+		"website": "https://xray.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/xray",
+		"subject": "Rainbow butterfly",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/xray.png",
+			"sourcePath": "packages/worker/static/logo.png",
+			"sourceUrl": "https://github.com/nocoo/xray/blob/c6653da2d564576c9fe85346477d2830ebeabdc0/packages/worker/static/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+			"thumbnail": "/logos/display/xray-160.webp",
+			"display": "/logos/display/xray-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/ui/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/ui/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "230 75% 55%",
+				"source": "packages/ui/src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Personal Twitter/X analytics dashboard with AI-powered reporting",
+			"repositoryRevision": "c6653da2d564576c9fe85346477d2830ebeabdc0"
+		},
+		"colors": {
+			"primary": "#3653e2",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#3653e2",
+					"role": "primary",
+					"source": "packages/ui/src/index.css --primary: 230 75% 55%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/ui/src/index.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#ff4c32",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#0080c1",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#fca127",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "r2shot",
+		"repo": "r2shot",
+		"title": "R2Shot",
+		"emoji": "🐬",
+		"description": {
+			"en": "Capture a screenshot, upload it to R2, and have a shareable link on your clipboard.",
+			"zh": "截图、上传到 R2，再把可分享的链接放进剪贴板，一次完成。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/r2shot",
+		"subject": "Blue dolphin",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/r2shot.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png",
+			"modified": false,
+			"width": 920,
+			"height": 920,
+			"bytes": 668704,
+			"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+			"thumbnail": "/logos/display/r2shot-160.webp",
+			"display": "/logos/display/r2shot-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "#24c4bd",
+				"source": "src/shared/index.css --color-primary"
+			},
+			"background": {
+				"value": "#ffffff",
+				"source": "src/shared/index.css --color-background"
+			},
+			"ink": {
+				"value": "#0f172a",
+				"source": "src/shared/index.css --color-foreground"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "One-click screenshot capture, upload to Cloudflare R2, CDN URL to clipboard",
+			"repositoryRevision": "761799416deb2a977eee92b2392746e16f6bc644"
+		},
+		"colors": {
+			"primary": "#24c4bd",
+			"background": "#ffffff",
+			"ink": "#0f172a",
+			"palette": [
+				{
+					"color": "#24c4bd",
+					"role": "primary",
+					"source": "src/shared/index.css --color-primary: #24c4bd"
+				},
+				{
+					"color": "#ffffff",
+					"role": "background",
+					"source": "src/shared/index.css --color-background: #ffffff"
+				},
+				{
+					"color": "#dbffff",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#3fc2cf",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#198cba",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "shrike",
+		"repo": "shrike",
+		"title": "Shrike",
+		"emoji": "🪶",
+		"description": {
+			"en": "A small macOS menu bar app that keeps your files in sync with Google Drive.",
+			"zh": "轻巧的 macOS 菜单栏工具，把文件和文件夹同步到 Google Drive。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/shrike",
+		"subject": "Shrike portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/shrike.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+			"thumbnail": "/logos/display/shrike-160.webp",
+			"display": "/logos/display/shrike-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "oklch(0.99 0.005 53)",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "oklch(0.25 0.04 53)",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "oklch(0.486 0.088 52.8)",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "macOS menu bar utility that syncs files and folders to Google Drive via rsync",
+			"repositoryRevision": "9ca43106ca79f35f7b0ad77198b82150a2307b44"
+		},
+		"colors": {
+			"primary": "#86502c",
+			"background": "#fffbf9",
+			"ink": "#311c0e",
+			"palette": [
+				{
+					"color": "#86502c",
+					"role": "primary",
+					"source": "src/app/globals.css --primary: oklch(0.486 0.088 52.8)"
+				},
+				{
+					"color": "#fffbf9",
+					"role": "background",
+					"source": "src/app/globals.css --background: oklch(0.99 0.005 53)"
+				},
+				{
+					"color": "#a0a2a6",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#1a1918",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#c5c7ce",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "hooky",
+		"repo": "hooky",
+		"title": "Hooky",
+		"emoji": "🐙",
+		"description": {
+			"en": "Send webhooks from your browser toolbar, context menu, or a quick message.",
+			"zh": "从浏览器工具栏、右键菜单或快捷消息中，随手触发 Webhook。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/hooky",
+		"subject": "Pink octopus",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/hooky.png",
+			"sourcePath": "assets/hooky-max.png",
+			"sourceUrl": "https://github.com/nocoo/hooky/blob/fadcde05a823356775a9c27005a701d6d107e955/assets/hooky-max.png",
+			"modified": false,
+			"width": 900,
+			"height": 900,
+			"bytes": 667627,
+			"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+			"thumbnail": "/logos/display/hooky-160.webp",
+			"display": "/logos/display/hooky-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Chrome extension to trigger webhooks from toolbar, context menu, or Quick Send",
+			"repositoryRevision": "fadcde05a823356775a9c27005a701d6d107e955"
+		},
+		"colors": {
+			"primary": "#e9a5bf",
+			"background": "transparent",
+			"ink": "#311a41",
+			"palette": [
+				{
+					"color": "#e9a5bf",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#b771af",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#ffdbee",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#42274d",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "dotty",
+		"repo": "dotty",
+		"title": "Dotty",
+		"emoji": "🔲",
+		"description": {
+			"en": "A pixel-brutalist dashboard kit with monochrome geometry and stacked charts.",
+			"zh": "像素与粗野主义风格的仪表盘模板，使用单色几何元素和堆叠图表。"
+		},
+		"category": "design",
+		"website": "https://dotty.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/dotty",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/dotty.svg",
+			"sourcePath": "public/logo.svg",
+			"sourceUrl": "https://github.com/nocoo/dotty/blob/33c0ffa370a7582d2655cac142e1e6bbff71e412/public/logo.svg",
+			"modified": false,
+			"width": 24,
+			"height": 24,
+			"bytes": 292,
+			"sha256": "33c046a7f6647bd2af6d6e47c1e3d9b439e9a0d78773c94c3e2fa3a0ba842d49",
+			"thumbnail": "/logos/display/dotty-160.webp",
+			"display": "/logos/display/dotty-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 96%",
+				"source": "src/index.css --background"
+			},
+			"ink": {
+				"value": "220 14% 10%",
+				"source": "src/index.css --foreground"
+			},
+			"primary": {
+				"value": "220 14% 10%",
+				"source": "src/index.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Pixel-brutalist dashboard template with monochrome geometry and stacked charts",
+			"repositoryRevision": "33c0ffa370a7582d2655cac142e1e6bbff71e412"
+		},
+		"colors": {
+			"primary": "#16181d",
+			"background": "#f3f4f6",
+			"ink": "#16181d",
+			"palette": [
+				{
+					"color": "#16181d",
+					"role": "primary",
+					"source": "src/index.css --primary: 220 14% 10%"
+				},
+				{
+					"color": "#f3f4f6",
+					"role": "background",
+					"source": "src/index.css --background: 220 14% 96%"
+				},
+				{
+					"color": "#191c23",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "wooly",
+		"repo": "wooly",
+		"title": "Wooly",
+		"emoji": "🐑",
+		"description": {
+			"en": "Keep family perks in sight: card rewards, memberships, insurance, and expiry dates.",
+			"zh": "把家庭的信用卡权益、会员、保险福利和到期时间放在眼前。"
+		},
+		"category": "everyday",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/wooly",
+		"subject": "Sheep portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/wooly.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/wooly/blob/348dac5c402063de8ef6cf69f8c93f8da43347bf/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4261802,
+			"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36",
+			"thumbnail": "/logos/display/wooly-160.webp",
+			"display": "/logos/display/wooly-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "320 70% 55%",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Family perks dashboard — credit card rewards, insurance benefits, expiry alerts",
+			"repositoryRevision": "348dac5c402063de8ef6cf69f8c93f8da43347bf"
+		},
+		"colors": {
+			"primary": "#dd3ca7",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#dd3ca7",
+					"role": "primary",
+					"source": "src/app/globals.css --primary: 320 70% 55%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "src/app/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#d4bc98",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#f3e5c4",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#ac806c",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "matrix",
+		"repo": "matrix",
+		"title": "Matrix",
+		"emoji": "🧩",
+		"description": {
+			"en": "A sci-fi dashboard kit for interfaces that feel like a glimpse into the digital world.",
+			"zh": "带有科幻气息的仪表盘组件，让界面像是数字世界的一扇窗口。"
+		},
+		"category": "design",
+		"website": "https://matrix.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/matrix",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/matrix.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 354520,
+			"sha256": "21d9c4ed49bedc6010a787ae1a16c2b7e982be264dc5c3e446a2fe9ad122e8b3",
+			"thumbnail": "/logos/display/matrix-160.webp",
+			"display": "/logos/display/matrix-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "#00ff41",
+				"source": "src/index.css --matrix-ink"
+			},
+			"background": {
+				"value": "#050505",
+				"source": "src/index.css --matrix-bg"
+			},
+			"ink": {
+				"value": "#e8ffe9",
+				"source": "src/index.css --matrix-ink-bright"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Sci-fi dashboard UI kit with React and Tailwind for digital reality interfaces",
+			"repositoryRevision": "91556a6510239e399de92770ed0bdc6bdee33a82"
+		},
+		"colors": {
+			"primary": "#00ff41",
+			"background": "#050505",
+			"ink": "#e8ffe9",
+			"palette": [
+				{
+					"color": "#00ff41",
+					"role": "primary",
+					"source": "src/index.css --matrix-ink: #00ff41"
+				},
+				{
+					"color": "#050505",
+					"role": "background",
+					"source": "src/index.css --matrix-bg: #050505"
+				},
+				{
+					"color": "#90dd7a",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#5bae64",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#3f3b28",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "basalt",
+		"repo": "basalt",
+		"title": "Basalt",
+		"emoji": "🎨",
+		"description": {
+			"en": "Dense, dark, durable. A matte design system for information-rich software.",
+			"zh": "沉稳、紧凑的哑光设计系统，为信息密集的软件界面而做。"
+		},
+		"category": "design",
+		"website": "https://basalt.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/basalt",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/basalt.svg",
+			"sourcePath": "public/favicon.svg",
+			"sourceUrl": "https://github.com/nocoo/basalt/blob/68a3b545d8dbcfb1968a3be8031d4710bfe3c10c/public/favicon.svg",
+			"modified": false,
+			"width": 32,
+			"height": 32,
+			"bytes": 364,
+			"sha256": "652ee2a1a62d12e0e9ae89b0a29381b5a03a91a80f75d3a07251fdef89bdb14a",
+			"thumbnail": "/logos/display/basalt-160.webp",
+			"display": "/logos/display/basalt-1024.webp"
+		},
+		"theme": {
+			"primary": {
+				"value": "217 91% 60%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-background"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Matte-dark design system engineered for high-density SaaS interfaces",
+			"repositoryRevision": "68a3b545d8dbcfb1968a3be8031d4710bfe3c10c"
+		},
+		"colors": {
+			"primary": "#3c83f6",
+			"background": "#eeeff2",
+			"ink": "#161616",
+			"palette": [
+				{
+					"color": "#3c83f6",
+					"role": "primary",
+					"source": "packages/basalt/src/styles/tokens.css --basalt-primary: 217 91% 60%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "packages/basalt/src/styles/tokens.css --basalt-background: 220 14% 94%"
+				},
+				{
+					"color": "#161616",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#3c84f6",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#233a60",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "surety",
+		"repo": "surety",
+		"title": "Surety",
+		"emoji": "🛡️",
+		"description": {
+			"en": "A private, local-first home for your family insurance policies.",
+			"zh": "以隐私和本地数据为先，为家庭保险保单建立一个清晰的档案。"
+		},
+		"category": "everyday",
+		"website": "https://surety.hexly.ai",
+		"websiteSource": "README.md browser access",
+		"repository": "https://github.com/nocoo/surety",
+		"subject": "Illustrated tiger portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/surety.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/surety/blob/aad7b0298935b71642e8d25abb125c0cb9cc0d22/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 6017598,
+			"sha256": "13b22815f3d07d56ee294f005db9638809e0329fedce51887dd55cba75b01dc6",
+			"thumbnail": "/logos/display/surety-160.webp",
+			"display": "/logos/display/surety-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "apps/web/src/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/globals.css --foreground"
+			},
+			"primary": {
+				"value": "15 85% 52%",
+				"source": "apps/web/src/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Privacy-first, local-first family insurance policy management with Next.js",
+			"repositoryRevision": "aad7b0298935b71642e8d25abb125c0cb9cc0d22"
+		},
+		"colors": {
+			"primary": "#ed511d",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#ed511d",
+					"role": "primary",
+					"source": "apps/web/src/globals.css --primary: 15 85% 52%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "apps/web/src/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#ece1b1",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#342917",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#e16d1f",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "life-ai",
+		"repo": "life.ai",
+		"title": "Life.ai",
+		"emoji": "🧬",
+		"description": {
+			"en": "Bring health, places, and spending into one personal picture.",
+			"zh": "把健康指标、位置足迹和消费记录，汇成一幅个人生活图景。"
+		},
+		"category": "everyday",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/life.ai",
+		"subject": "Capybara portrait with an apple",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/life-ai.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/life.ai/blob/4e23d62f401ba4aa2fab39956b49312e5818d50d/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4312191,
+			"sha256": "306b58b664359d913e95828db42a754cfc1dfa1b6b007db5b6ed33f3d63d726d",
+			"thumbnail": "/logos/display/life-ai-160.webp",
+			"display": "/logos/display/life-ai-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "dashboard/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "dashboard/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "217 91% 60%",
+				"source": "dashboard/src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Unified personal data hub for health metrics, location, and expense tracking",
+			"repositoryRevision": "4e23d62f401ba4aa2fab39956b49312e5818d50d"
+		},
+		"colors": {
+			"primary": "#3c83f6",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#3c83f6",
+					"role": "primary",
+					"source": "dashboard/src/app/globals.css --primary: 217 91% 60%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "dashboard/src/app/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#854e40",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#a87f5c",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#dcb281",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "echo",
+		"repo": "echo",
+		"title": "Echo",
+		"emoji": "🚀",
+		"description": {
+			"en": "A small, fast IP lookup service, built with Bun and TypeScript.",
+			"zh": "用 Bun 与 TypeScript 构建的轻量 IP 查询服务。"
+		},
+		"category": "tools",
+		"website": "https://echo.nocoo.cloud",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/echo",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/echo.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 452400,
+			"sha256": "b7a3eb2ada128f64271d7a91ceab4d58ff4589bdca20c07fb056270454dc68ca",
+			"thumbnail": "/logos/display/echo-160.webp",
+			"display": "/logos/display/echo-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "API-only IP lookup service built with Bun and TypeScript",
+			"repositoryRevision": "40cb327b07b74af915eaa3a6b27dcef9346671f9"
+		},
+		"colors": {
+			"primary": "#f01315",
+			"background": "transparent",
+			"ink": "#0b0e10",
+			"palette": [
+				{
+					"color": "#f01315",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#0b0e10",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#437baf",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#e7ebde",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "deca",
+		"repo": "deca",
+		"title": "Deca",
+		"emoji": "🧭",
+		"description": {
+			"en": "A local-first Mac gateway that brings AI agents to Discord, the terminal, and HTTP.",
+			"zh": "优先在本地运行的 Mac AI 智能体网关，连接 Discord、终端与 HTTP。"
+		},
+		"category": "ai",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/deca",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/deca.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 600109,
+			"sha256": "ef59f1bbd11d6a19cc223a6857ca5b4cb56567de1b225677f45331fb3895eb69",
+			"thumbnail": "/logos/display/deca-160.webp",
+			"display": "/logos/display/deca-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Local-first macOS AI agent gateway with multi-channel support",
+			"repositoryRevision": "682e948fb9f8bb3f21a43988304435ba1c991654"
+		},
+		"colors": {
+			"primary": "#d9060a",
+			"background": "transparent",
+			"ink": "#d60508",
+			"palette": [
+				{
+					"color": "#d9060a",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#ffffff",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#c0c5cd",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#9399a6",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "runner",
+		"repo": "runner",
+		"title": "Runner",
+		"emoji": "⏰",
+		"description": {
+			"en": "Declare a schedule and let your Mac run your AI jobs through launchd.",
+			"zh": "声明任务日程，交给 Mac 的 launchd 定时运行 AI 工作。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/runner",
+		"subject": "Green digital glyph",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/runner.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/runner/blob/3bd26f260c1dedf63faf4a616421b8592b975be0/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 7269302,
+			"sha256": "2f87f9f05f3f2fe6ca573cf0504a9414396b83f6bb675f4b547e8462cc50aa3b",
+			"thumbnail": "/logos/display/runner-160.webp",
+			"display": "/logos/display/runner-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Declarative task scheduler for macOS that runs AI jobs via launchd",
+			"repositoryRevision": "3bd26f260c1dedf63faf4a616421b8592b975be0"
+		},
+		"colors": {
+			"primary": "#14501f",
+			"background": "#020202",
+			"ink": "#020202",
+			"palette": [
+				{
+					"color": "#14501f",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "#020202",
+					"role": "background",
+					"source": "Preserved project artwork, border pixel"
+				},
+				{
+					"color": "#2b9946",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#3deb71",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "zhe",
+		"repo": "zhe",
+		"title": "Zhe",
+		"emoji": "🔗",
+		"description": {
+			"en": "Short links, clean URLs, and a little less friction when sharing things.",
+			"zh": "把长网址变成简洁的短链接，让分享少一点麻烦。"
+		},
+		"category": "tools",
+		"website": "https://zhe.to",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/zhe",
+		"subject": "Bee with colorful wings",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/zhe.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/zhe/blob/120a01207c1b978a081413e785099d3580890d80/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3100798,
+			"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+			"thumbnail": "/logos/display/zhe-160.webp",
+			"display": "/logos/display/zhe-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "262 83% 58%",
+				"source": "app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "TypeScript URL shortener with clean links and analytics-ready storage",
+			"repositoryRevision": "120a01207c1b978a081413e785099d3580890d80"
+		},
+		"colors": {
+			"primary": "#7c3bed",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#7c3bed",
+					"role": "primary",
+					"source": "app/globals.css --primary: 262 83% 58%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "app/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#e48f2b",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#48260d",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#fac7e2",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "geekhub",
+		"repo": "geekhub",
+		"title": "GeekHub",
+		"emoji": "📰",
+		"description": {
+			"en": "A self-hosted RSS reader with AI summaries and translation.",
+			"zh": "可以自行托管的 RSS 阅读器，带有 AI 摘要与翻译。"
+		},
+		"category": "everyday",
+		"website": "https://geekhub.vercel.app",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/geekhub",
+		"subject": "Green digital letter G",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/geekhub.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/geekhub/blob/4d3d7fa0676a0adda9e1af3f7f99b2cfd5855863/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 5936588,
+			"sha256": "a1cec3b549d3c812f52f7d47748584bf07cbfd636d4d15b8a6415cba9cb4f47b",
+			"thumbnail": "/logos/display/geekhub-160.webp",
+			"display": "/logos/display/geekhub-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "0 0% 100%",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "222 47% 11%",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "152 76% 46%",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Self-hosted RSS reader with AI summarization and translation",
+			"repositoryRevision": "4d3d7fa0676a0adda9e1af3f7f99b2cfd5855863"
+		},
+		"colors": {
+			"primary": "#1cce7b",
+			"background": "#ffffff",
+			"ink": "#0f1729",
+			"palette": [
+				{
+					"color": "#1cce7b",
+					"role": "primary",
+					"source": "src/app/globals.css --primary: 152 76% 46%"
+				},
+				{
+					"color": "#ffffff",
+					"role": "background",
+					"source": "src/app/globals.css --background: 0 0% 100%"
+				},
+				{
+					"color": "#010201",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#187226",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#79e886",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "ccbackup",
+		"repo": "ccbackup",
+		"title": "CCBackup",
+		"emoji": "💾",
+		"description": {
+			"en": "Back up and restore your Claude Code configuration without the busywork.",
+			"zh": "备份与恢复 Claude Code 配置，省去重复整理的琐事。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/ccbackup",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/ccbackup.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 200904,
+			"sha256": "1bb8d48c887782be257b7221e84f16579cd775a9922b5c98a2b0bd32d598f2fa",
+			"thumbnail": "/logos/display/ccbackup-160.webp",
+			"display": "/logos/display/ccbackup-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Backup and restore Claude Code configuration files",
+			"repositoryRevision": "1fcc5e7abd926f2f34069299a40cae22191d7c8e"
+		},
+		"colors": {
+			"primary": "#609acf",
+			"background": "transparent",
+			"ink": "#3f3f3f",
+			"palette": [
+				{
+					"color": "#609acf",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#4f4f4f",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#fbfaf8",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#adafaf",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "noheir",
+		"repo": "noheir",
+		"title": "Noheir",
+		"emoji": "💰",
+		"description": {
+			"en": "A clear view of your money: income, spending, assets, and the bigger picture.",
+			"zh": "从收入、支出到资产，用一个清晰的视角理解自己的财务。"
+		},
+		"category": "everyday",
+		"website": "https://noheir.hexly.ai",
+		"websiteSource": "GitHub repository homepage",
+		"repository": "https://github.com/nocoo/noheir",
+		"subject": "Cow portrait",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/noheir.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/noheir/blob/2c99001444856d7756589254a52696af2cdfbab9/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4210139,
+			"sha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb",
+			"thumbnail": "/logos/display/noheir-160.webp",
+			"display": "/logos/display/noheir-1024.webp"
+		},
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "200 90% 55%",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Recent Projects",
+			"description": "Personal finance tracker for income, expenses, and assets with dashboards",
+			"repositoryRevision": "2c99001444856d7756589254a52696af2cdfbab9"
+		},
+		"colors": {
+			"primary": "#25aff4",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#25aff4",
+					"role": "primary",
+					"source": "src/app/globals.css --primary: 200 90% 55%"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "src/app/globals.css --background: 220 14% 94%"
+				},
+				{
+					"color": "#b4642f",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#d7b68b",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#efdfc1",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "ipsafe",
+		"repo": "ipsafe",
+		"title": "IPSafe",
+		"emoji": "🛡️",
+		"description": {
+			"en": "Check your network connection before letting a command run.",
+			"zh": "在执行命令之前，先确认网络连接符合预期。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/ipsafe",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/ipsafe.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 363196,
+			"sha256": "cfb96dff0fac916f28c150e67adb746fb6b5c6adbe54286f66e23095bb5c239d",
+			"thumbnail": "/logos/display/ipsafe-160.webp",
+			"display": "/logos/display/ipsafe-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "CLI Tools",
+			"description": "Validate network connectivity before executing commands `npm i -g ipsafe`",
+			"repositoryRevision": "aab8f669fa8cb1b955d6ce7d9431e42c09509428"
+		},
+		"colors": {
+			"primary": "#fe9686",
+			"background": "transparent",
+			"ink": "#722616",
+			"palette": [
+				{
+					"color": "#fe9686",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#f3f6f7",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#a8aaaa",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#676868",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "uptime-kuma-skill",
+		"repo": "uptime-kuma-skill",
+		"title": "Uptime Kuma Skill",
+		"emoji": "🩺",
+		"description": {
+			"en": "Give your agent the ability to manage monitors, uptime, and SSL certificates.",
+			"zh": "让智能体检查和管理监控项、可用性与 SSL 证书。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/uptime-kuma-skill",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/uptime-kuma-skill.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 271935,
+			"sha256": "c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5",
+			"thumbnail": "/logos/display/uptime-kuma-skill-160.webp",
+			"display": "/logos/display/uptime-kuma-skill-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "Manage Uptime Kuma monitors — status, SSL certs, response times, and CRUD",
+			"repositoryRevision": "f7b8da6b479ed2b32dcd0da7388538e6ec48cf74"
+		},
+		"colors": {
+			"primary": "#444444",
+			"background": "transparent",
+			"ink": "#2e2e2e",
+			"palette": [
+				{
+					"color": "#444444",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#8e8e8e",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#c1c9d7",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#f9f8f9",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "microsoft-teams-send-as-workflow",
+		"repo": "microsoft-teams-send-as-workflow",
+		"title": "Teams Workflow",
+		"emoji": "📨",
+		"description": {
+			"en": "Send messages and Adaptive Cards to Microsoft Teams through webhooks.",
+			"zh": "通过 Webhook 向 Microsoft Teams 发送消息与自适应卡片。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/microsoft-teams-send-as-workflow",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/microsoft-teams-send-as-workflow.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 353526,
+			"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+			"thumbnail": "/logos/display/microsoft-teams-send-as-workflow-160.webp",
+			"display": "/logos/display/microsoft-teams-send-as-workflow-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "Send messages and Adaptive Cards to Teams via Webhook",
+			"repositoryRevision": "b2b0f10619dee34054d92b532613a23c036d4660"
+		},
+		"colors": {
+			"primary": "#124e80",
+			"background": "transparent",
+			"ink": "#082a45",
+			"palette": [
+				{
+					"color": "#124e80",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#c4c7cf",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#eeeeee",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#3096ea",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "image-stitch",
+		"repo": "image-stitch",
+		"title": "Image Stitch",
+		"emoji": "🖼️",
+		"description": {
+			"en": "Turn overlapping scrolling screenshots into one continuous image.",
+			"zh": "把有重叠区域的滚动截图，拼成一张连贯的长图。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/image-stitch",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/image-stitch.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 559822,
+			"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4",
+			"thumbnail": "/logos/display/image-stitch-160.webp",
+			"display": "/logos/display/image-stitch-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "Seamlessly stitch multiple scrolling screenshots into a single image",
+			"repositoryRevision": "316ec44397c3446cb7c324040394bf056b1bd5d9"
+		},
+		"colors": {
+			"primary": "#ddb42d",
+			"background": "transparent",
+			"ink": "#492404",
+			"palette": [
+				{
+					"color": "#ddb42d",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#61c02e",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#c4dbe5",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#a76c1a",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "skill-faster-whisper",
+		"repo": "skill-faster-whisper",
+		"title": "Faster Whisper",
+		"emoji": "🎙️",
+		"description": {
+			"en": "Fast speech-to-text transcription, ready for your coding agent.",
+			"zh": "为编程智能体准备的快速语音转文字工具。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/skill-faster-whisper",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/skill-faster-whisper.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 518181,
+			"sha256": "fe2151b4426e09c6d6b153580e4962f112b342bd01f5bab0b6d4ba83961ba4a6",
+			"thumbnail": "/logos/display/skill-faster-whisper-160.webp",
+			"display": "/logos/display/skill-faster-whisper-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "Fast speech-to-text transcription powered by faster-whisper",
+			"repositoryRevision": "592776b2f841a7f026b72d36a06b0d75a792f524"
+		},
+		"colors": {
+			"primary": "#bfd3f0",
+			"background": "transparent",
+			"ink": "#151413",
+			"palette": [
+				{
+					"color": "#bfd3f0",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#151413",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#bfd1e5",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#404041",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "skill-task-notifier",
+		"repo": "skill-task-notifier",
+		"title": "Task Notifier",
+		"emoji": "📨",
+		"description": {
+			"en": "Keep track of running tasks and get notified when their status changes.",
+			"zh": "跟踪正在执行的任务，在状态变化时收到通知。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/skill-task-notifier",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/skill-task-notifier.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 353526,
+			"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+			"thumbnail": "/logos/display/skill-task-notifier-160.webp",
+			"display": "/logos/display/skill-task-notifier-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "Notification service for monitoring and alerting on task execution status",
+			"repositoryRevision": "a095190b42b95b14e3b692cc50bb7eba082e2299"
+		},
+		"colors": {
+			"primary": "#124e80",
+			"background": "transparent",
+			"ink": "#082a45",
+			"palette": [
+				{
+					"color": "#124e80",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#c4c7cf",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#eeeeee",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#3096ea",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "mcp-work-history",
+		"repo": "mcp-work-history",
+		"title": "Work History MCP",
+		"emoji": "🤖",
+		"description": {
+			"en": "A searchable record of your AI tools and the work they do.",
+			"zh": "记录 AI 工具的工作活动，留存可查询的历史和指标。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/mcp-work-history",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/mcp-work-history.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 384558,
+			"sha256": "cd0c3ef6a10e2311e6b444336d336c93e8fa0b316dbd5175b0c133e944649c7b",
+			"thumbnail": "/logos/display/mcp-work-history-160.webp",
+			"display": "/logos/display/mcp-work-history-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "MCP server for logging AI tool activities with metrics tracking",
+			"repositoryRevision": "cae3f14f4e3cccd588915b7f8b015d5bf9de08ce"
+		},
+		"colors": {
+			"primary": "#2a788c",
+			"background": "transparent",
+			"ink": "#150e10",
+			"palette": [
+				{
+					"color": "#2a788c",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#daf3f4",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#11323a",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#719da7",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "mcp-make-sound",
+		"repo": "mcp-make-sound",
+		"title": "Make Sound MCP",
+		"emoji": "🔊",
+		"description": {
+			"en": "Let your AI tools play system sounds on macOS.",
+			"zh": "让 AI 工具在 macOS 上播放系统提示音。"
+		},
+		"category": "extensions",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/mcp-make-sound",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/mcp-make-sound.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 574400,
+			"sha256": "e351632c7148db3536754e8d5e7f63120b16097fa22dff75d4e1138845cfa0b8",
+			"thumbnail": "/logos/display/mcp-make-sound-160.webp",
+			"display": "/logos/display/mcp-make-sound-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Skills & MCP Servers",
+			"description": "MCP server that provides system sound playback for macOS",
+			"repositoryRevision": "d88c1157ed9b976836eb39b8487ff718cc1b3211"
+		},
+		"colors": {
+			"primary": "#67d2ee",
+			"background": "transparent",
+			"ink": "#0d0c0c",
+			"palette": [
+				{
+					"color": "#67d2ee",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#0d0c0c",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#5b5d5e",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#a4b0bf",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "infoviz",
+		"repo": "infoviz",
+		"title": "InfoViz",
+		"emoji": "📊",
+		"description": {
+			"en": "A lightweight JavaScript library for beautiful, interactive data visualizations.",
+			"zh": "轻量的 JavaScript 数据可视化库，用来制作交互式图表。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/infoviz",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/infoviz.png",
+			"sourcePath": "images/infoviz_logo@2x.png",
+			"sourceUrl": "https://github.com/nocoo/infoviz/blob/dc41fd2d23ac9f82c998b3072758c09a86d9b004/images/infoviz_logo@2x.png",
+			"modified": false,
+			"width": 600,
+			"height": 207,
+			"bytes": 24045,
+			"sha256": "6572c1eabfc4a5159cb71dcda4f70a5f2078fb88205ad40b77a604508d317f9c",
+			"thumbnail": "/logos/display/infoviz-160.webp",
+			"display": "/logos/display/infoviz-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "A lightweight JavaScript library for creating beautiful, interactive data visualizations",
+			"repositoryRevision": "dc41fd2d23ac9f82c998b3072758c09a86d9b004"
+		},
+		"colors": {
+			"primary": "#104386",
+			"background": "transparent",
+			"ink": "#104386",
+			"palette": [
+				{
+					"color": "#104386",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#ed550a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "jsinst",
+		"repo": "jsinst",
+		"title": "JSInst",
+		"emoji": "⚡",
+		"description": {
+			"en": "JavaScript instrumentation and performance analysis tools.",
+			"zh": "用于 JavaScript 代码插桩与性能分析的工具集。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/jsinst",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/jsinst.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 187921,
+			"sha256": "fc80f6fe41b78073d17d73637336fb95637e2f8c3e1796b75488cc819d76543a",
+			"thumbnail": "/logos/display/jsinst-160.webp",
+			"display": "/logos/display/jsinst-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "A JavaScript instrumentation and performance toolkit",
+			"repositoryRevision": "56dd9f140b1d79ab3ca9b4a9ad6c04098f9f4693"
+		},
+		"colors": {
+			"primary": "#ff9d00",
+			"background": "transparent",
+			"ink": "#ff8f00",
+			"palette": [
+				{
+					"color": "#ff9d00",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#ffffdf",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#ffff84",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#ffdc24",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "infoviz-builder",
+		"repo": "infoviz-builder",
+		"title": "InfoViz Builder",
+		"emoji": "🛠️",
+		"description": {
+			"en": "A visual workspace for building InfoViz charts.",
+			"zh": "通过可视化操作制作 InfoViz 图表的工作空间。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/infoviz-builder",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/infoviz-builder.png",
+			"sourcePath": "public/images/infoviz_logo_small@2x.png",
+			"sourceUrl": "https://github.com/nocoo/infoviz-builder/blob/76a9d4e664141d51a0f8ca9eb3d6b397b8e17b9a/public/images/infoviz_logo_small@2x.png",
+			"modified": false,
+			"width": 200,
+			"height": 69,
+			"bytes": 7354,
+			"sha256": "53537d273b2f8638e4715dc8c4c2ed12c9ccbf4b63c666289b06e21c0651d493",
+			"thumbnail": "/logos/display/infoviz-builder-160.webp",
+			"display": "/logos/display/infoviz-builder-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "Visual creator for InfoViz charts",
+			"repositoryRevision": "76a9d4e664141d51a0f8ca9eb3d6b397b8e17b9a"
+		},
+		"colors": {
+			"primary": "#0f4386",
+			"background": "transparent",
+			"ink": "#0f4386",
+			"palette": [
+				{
+					"color": "#0f4386",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#ec540a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "nodehub",
+		"repo": "nodehub",
+		"title": "NodeHub",
+		"emoji": "🔌",
+		"description": {
+			"en": "A central place for running and organizing Node.js services.",
+			"zh": "集中运行与组织 Node.js 服务的工具。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/nodehub",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/nodehub.png",
+			"sourcePath": "public/assets/images/favicon.png",
+			"sourceUrl": "https://github.com/nocoo/nodehub/blob/9d9ba8f91c98d9eb7fce99226f9a2a40fad085dd/public/assets/images/favicon.png",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 220294,
+			"sha256": "ccdffc2057cbd73eb24549cb97667542a99c6a7a5a34848359caa675ac6ec223",
+			"thumbnail": "/logos/display/nodehub-160.webp",
+			"display": "/logos/display/nodehub-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "A hub for Node.js services",
+			"repositoryRevision": "9d9ba8f91c98d9eb7fce99226f9a2a40fad085dd"
+		},
+		"colors": {
+			"primary": "#d76b00",
+			"background": "#ff9933",
+			"ink": "#cb5f00",
+			"palette": [
+				{
+					"color": "#d76b00",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "#ff9933",
+					"role": "background",
+					"source": "Preserved project artwork, border pixel"
+				},
+				{
+					"color": "#ffffff",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#efc8a0",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "huran-cc",
+		"repo": "huran.cc",
+		"title": "huran.cc",
+		"emoji": "🏠",
+		"description": {
+			"en": "An art marketplace connecting artists, collectors, and the works they love.",
+			"zh": "连接艺术家与收藏者的艺术电商平台。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/huran.cc",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/huran-cc.png",
+			"sourcePath": "public/images/hr-logo-2x.png",
+			"sourceUrl": "https://github.com/nocoo/huran.cc/blob/9085d193a00fc378fb3c54c1b740328e4cf000f7/public/images/hr-logo-2x.png",
+			"modified": false,
+			"width": 398,
+			"height": 150,
+			"bytes": 8618,
+			"sha256": "91d20c9117ae3166c1e4e911c07717246966fb456ec10150af2deb379045f0c7",
+			"thumbnail": "/logos/display/huran-cc-160.webp",
+			"display": "/logos/display/huran-cc-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "Art e-commerce platform connecting artists with collectors",
+			"repositoryRevision": "9085d193a00fc378fb3c54c1b740328e4cf000f7"
+		},
+		"colors": {
+			"primary": "#271b17",
+			"background": "transparent",
+			"ink": "#221715",
+			"palette": [
+				{
+					"color": "#271b17",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				}
+			]
+		}
+	},
+	{
+		"id": "doc-doctor-com",
+		"repo": "doc-doctor.com",
+		"title": "Doc Doctor",
+		"emoji": "📄",
+		"description": {
+			"en": "A platform for study-abroad writing, editing, and translation services.",
+			"zh": "为留学文书提供写作、润色与翻译服务的平台。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/doc-doctor.com",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/doc-doctor-com.png",
+			"sourcePath": "public/favicon.png",
+			"sourceUrl": "https://github.com/nocoo/doc-doctor.com/blob/a6f0de28d2118aeb75bdbd40100ded26ec5ade74/public/favicon.png",
+			"modified": false,
+			"width": 128,
+			"height": 128,
+			"bytes": 2327,
+			"sha256": "3df40dd3972a8ea4b85362b84a2c10d2f7fa20564d0aa1d7975a74ab4862b283",
+			"thumbnail": "/logos/display/doc-doctor-com-160.webp",
+			"display": "/logos/display/doc-doctor-com-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "Study abroad document service platform built with Node.js and Express",
+			"repositoryRevision": "a6f0de28d2118aeb75bdbd40100ded26ec5ade74"
+		},
+		"colors": {
+			"primary": "#0094bd",
+			"background": "#0094bd",
+			"ink": "#0094bd",
+			"palette": [
+				{
+					"color": "#0094bd",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "#0094bd",
+					"role": "background",
+					"source": "Preserved project artwork, border pixel"
+				},
+				{
+					"color": "#f2f4f5",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#79c4d9",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				},
+				{
+					"color": "#b6dce7",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "nodeviz",
+		"repo": "nodeviz",
+		"title": "NodeViz",
+		"emoji": "🔧",
+		"description": {
+			"en": "A visualization toolkit for Node.js.",
+			"zh": "面向 Node.js 的可视化工具集。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/nodeviz",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/nodeviz.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 252854,
+			"sha256": "dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51",
+			"thumbnail": "/logos/display/nodeviz-160.webp",
+			"display": "/logos/display/nodeviz-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "Node.js visualization toolkit",
+			"repositoryRevision": "c768753b64e1c2872dee7a94ad13dc2ba832c3b0"
+		},
+		"colors": {
+			"primary": "#b2d3ee",
+			"background": "transparent",
+			"ink": "#2c2b29",
+			"palette": [
+				{
+					"color": "#b2d3ee",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#97a4b4",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#625a56",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#303234",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "express-spa",
+		"repo": "express-spa",
+		"title": "Express SPA",
+		"emoji": "🌐",
+		"description": {
+			"en": "An early exploration of single-page applications built on Express.js.",
+			"zh": "基于 Express.js 构建单页应用的一次早期探索。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/express-spa",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/express-spa.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 509124,
+			"sha256": "7c0923ee71d9cad5f78561072378c0a2e121a23db05528fbd62cc93b23fe2f26",
+			"thumbnail": "/logos/display/express-spa-160.webp",
+			"display": "/logos/display/express-spa-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "Single page web app approach based on Express.js",
+			"repositoryRevision": "69509718bcf11a191830d3f18485d05530ad5a97"
+		},
+		"colors": {
+			"primary": "#5ba8c8",
+			"background": "transparent",
+			"ink": "#47859e",
+			"palette": [
+				{
+					"color": "#5ba8c8",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#84e8f4",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#c9ebfc",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#abbfc7",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "discuz-recovery",
+		"repo": "discuz-recovery",
+		"title": "Discuz Recovery",
+		"emoji": "🔧",
+		"description": {
+			"en": "Bring old Discuz! forum posts back from their backups.",
+			"zh": "从旧备份中找回 Discuz! 论坛的帖子。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/discuz-recovery",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/discuz-recovery.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 252854,
+			"sha256": "dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51",
+			"thumbnail": "/logos/display/discuz-recovery-160.webp",
+			"display": "/logos/display/discuz-recovery-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "Recovery Discuz! posts data from old backup",
+			"repositoryRevision": "0287558e963d757952a3d58d95a4fa2bff5580d8"
+		},
+		"colors": {
+			"primary": "#b2d3ee",
+			"background": "transparent",
+			"ink": "#2c2b29",
+			"palette": [
+				{
+					"color": "#b2d3ee",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#97a4b4",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#625a56",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#303234",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "feedmaid",
+		"repo": "feedmaid",
+		"title": "Feedmaid",
+		"emoji": "📬",
+		"description": {
+			"en": "Collect user feedback and explore it through a web interface.",
+			"zh": "收集用户反馈，并在网页中查看和整理。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/feedmaid",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/feedmaid.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 335132,
+			"sha256": "ad705222d130c788d2ad7decc43a79eb8a1f2e8e6c64a54fadfc8891f8101bc5",
+			"thumbnail": "/logos/display/feedmaid-160.webp",
+			"display": "/logos/display/feedmaid-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "An Express application which collects user feedback and visualizes them",
+			"repositoryRevision": "568a88fb3673866d533227e958a26c196163fb57"
+		},
+		"colors": {
+			"primary": "#2a6b92",
+			"background": "transparent",
+			"ink": "#262729",
+			"palette": [
+				{
+					"color": "#2a6b92",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#262729",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#e3240d",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#8d8e8e",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "infoviz-ios",
+		"repo": "infoviz-ios",
+		"title": "InfoViz iOS",
+		"emoji": "📱",
+		"description": {
+			"en": "InfoViz visualizations, brought to iOS.",
+			"zh": "把 InfoViz 数据可视化带到 iOS 上。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/infoviz-ios",
+		"subject": "Existing application mark",
+		"reference": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/infoviz-ios.png",
+			"sourcePath": "www/images/infoviz_logo.png",
+			"sourceUrl": "https://github.com/nocoo/infoviz-ios/blob/ee531d46fb38177bc908c8b6a12ff344cb5c4d75/www/images/infoviz_logo.png",
+			"modified": false,
+			"width": 300,
+			"height": 103,
+			"bytes": 11382,
+			"sha256": "56ce71863c1e9e493bf8da07654fd98107bc82c70150bd12311e4dc27d417934",
+			"thumbnail": "/logos/display/infoviz-ios-160.webp",
+			"display": "/logos/display/infoviz-ios-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "InfoViz on iOS",
+			"repositoryRevision": "ee531d46fb38177bc908c8b6a12ff344cb5c4d75"
+		},
+		"colors": {
+			"primary": "#104285",
+			"background": "transparent",
+			"ink": "#104285",
+			"palette": [
+				{
+					"color": "#104285",
+					"role": "primary",
+					"source": "Preserved project artwork, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Preserved project artwork, transparent background"
+				},
+				{
+					"color": "#ed550a",
+					"role": "accent",
+					"source": "Preserved project artwork, sampled pixel"
+				}
+			]
+		}
+	},
+	{
+		"id": "node-image-uploader",
+		"repo": "node-image-uploader",
+		"title": "Image Uploader",
+		"emoji": "🖼️",
+		"description": {
+			"en": "A small Node.js utility for uploading images.",
+			"zh": "一个用于上传图片的 Node.js 小工具。"
+		},
+		"category": "archive",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/node-image-uploader",
+		"subject": "Existing profile emoji",
+		"reference": false,
+		"logo": {
+			"kind": "emoji",
+			"original": "/logos/emoji/node-image-uploader.png",
+			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"modified": false,
+			"width": 1024,
+			"height": 1024,
+			"bytes": 559822,
+			"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4",
+			"thumbnail": "/logos/display/node-image-uploader-160.webp",
+			"display": "/logos/display/node-image-uploader-1024.webp"
+		},
+		"theme": {},
+		"source": {
+			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+			"profileSection": "Legacy Projects",
+			"description": "A Node.js image uploader utility",
+			"repositoryRevision": "e1fb7864d92d3bb48244a59809f30c700c00ca4b"
+		},
+		"colors": {
+			"primary": "#ddb42d",
+			"background": "transparent",
+			"ink": "#492404",
+			"palette": [
+				{
+					"color": "#ddb42d",
+					"role": "primary",
+					"source": "Existing profile emoji glyph, dominant colored pixels"
+				},
+				{
+					"color": "transparent",
+					"role": "background",
+					"source": "Existing profile emoji glyph, transparent background"
+				},
+				{
+					"color": "#61c02e",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#c4dbe5",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				},
+				{
+					"color": "#a76c1a",
+					"role": "accent",
+					"source": "Existing profile emoji glyph, sampled pixel"
+				}
+			]
+		}
+	}
+]
