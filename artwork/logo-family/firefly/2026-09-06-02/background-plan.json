@@ -1,0 +1,48 @@
+{
+	"base": "#9bb8b3",
+	"light": "#d5e2dc",
+	"shade": "#759497",
+	"motif": "#3e666c",
+	"grainAmplitude": 1,
+	"grainSeed": 609063,
+	"status": "Proposed Firefly 02 background, prepared before generation; composite only after raw-image approval.",
+	"motifOpacity": 0.14,
+	"highlightOpacity": 0.32,
+	"ribbonOpacity": 0.24,
+	"pattern": {
+		"name": "Light orbits",
+		"description": "Two interrupted tilted elliptical arcs and short radial highlights suggest emitted light and flight around an offset center. They remain open and avoid an enclosing medallion.",
+		"layers": [
+			{
+				"d": "M6.9 610.8A590 390 -27 0 1 438.9 126.4",
+				"tone": "motif",
+				"strokeWidth": 46
+			},
+			{
+				"d": "M-22.1 628.5A618 418 -27 0 1 409.1 108.9",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M1114.5 367.1A590 390 -27 0 1 517.6 924.5",
+				"tone": "motif",
+				"strokeWidth": 34
+			},
+			{
+				"d": "M1137.4 349.0A613 413 -27 0 1 539.3 943.3",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M979.0 559.9A508 305 -27 0 1 540.8 838.4",
+				"tone": "ribbon",
+				"strokeWidth": 27
+			},
+			{
+				"d": "M821 96L835 63M937 207L967 191",
+				"tone": "highlight",
+				"strokeWidth": 9
+			}
+		]
+	}
+}

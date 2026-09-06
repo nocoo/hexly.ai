@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie and Pew now have local finishing 03 previews with deeper backgrounds and clearer motifs. Their source projects retain the previously adopted Frogie and original Pew. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly study 01 is superseded; study 02 returns to a visibly faceted animal and adds a separate flame. Every new generation now stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -18,12 +18,15 @@ Measured empty-background patches from `ref02.jpeg` are warm gray `#ACA59F`, ice
 ## Drawing rules
 
 - Build the animal from contiguous irregular polygons and triangles with clean shared edges. Flat colors within each plane describe volume through differences in hue and lightness.
+- Show these facets across the animal's main surfaces. Smooth sculptural anatomy with a small patch of colorful inlays is insufficient, even when the presentation has tactile depth.
 - Preserve a clear dominant hue. Place multicolored fragments in a limited accent such as Frogie's musical notes or Pew's tongue.
+- Give every animal one secondary interest point extending into the surrounding negative space. An attached tongue, detached notes, or a separate flame qualifies; eyes, belly glow, and internal wing inlays alone do not. The pose or gaze connects this accent to the animal.
 - Keep the face primary: larger planes across broad surfaces, smaller planes only where expression and anatomy need them.
 - Use a consistent light direction and restrained highlights. Quiet tactile detail must leave the color planes legible at small sizes.
 - Large animals use head portraits. Small animals may use compact full-body poses.
 - Large portraits may enter naturally from a square frame's bottom or side. Let the neck and shoulders continue beyond the canvas; keep the face and expression intact. Do not terminate the neck with a circular medallion or a floating round cut. Keep important features clear of the final rounded corners, and distinguish intentional canvas-edge entry from accidental clipping.
 - For an approved logo, preserve the animal, pose, camera, expression, composition, and signature decoration. For a logo the owner explicitly dislikes, preserve the animal and redesign the camera, framing, pose, and decoration.
+- Design a distinct background motif for each project. Frogie's flowing curves, Pew's tapered stripe rhythm, and Firefly's light orbits share material and contrast, not identical paths. Save named pattern geometry in the recipe; merely recoloring another project's stencil is insufficient.
 
 ## Frogie study 01
 
@@ -39,9 +42,12 @@ Local finishing 03 deepens the base to `#BBCB9E`, with light `#DCE6C6`, shade `#
 2. Use Azure Foundry / OpenAI v1 with `gpt-image-2`, the existing workflow `azure-gpt-image-cover` skill's `api-key` authentication, and credentials loaded through direnv.
 3. Request one high-quality 2048 × 2048 PNG on uniform pure white. The reference-guided request uses `/images/edits`. Verify the decoded dimensions; do not describe an upscale as native generation.
 4. Preserve the returned PNG bytes, prompt, reference hashes, sanitized request, response metadata, request ID, and usage. Never save a key or authenticated headers.
-5. Remove white locally. Preserve enclosed white eye highlights, disconnected music notes, fine edges, and all source colors. Save the alpha mask and the parameters used for edge finishing.
-6. Compose the colored tile and soft shadows separately. Keep a transparent foreground master, a full square icon, and rounded presentation exports. Preserve intermediate layers.
-7. Review the original and candidate together at artwork, app-icon, sidebar, and favicon sizes, on both light and dark backgrounds. Record actual limitations before promotion.
+5. **Immediately show the untouched returned image for owner confirmation.** The generator writes `raw-review.json` with a pending status and the exact image hash. Do not extract, clean, composite, resize, build a full review page, or integrate that image before confirmation. Record the owner's actual decision; rejected images and feedback stay in their original studies. A replacement is a new pending study.
+6. After raw approval, remove white locally. The finishing tool requires `raw-review.json` to approve the exact source hash. Preserve enclosed white eye highlights, disconnected decorations, fine edges, and all source colors. Save the alpha mask and edge settings.
+7. Compose the project-specific colored tile and soft shadows separately. Keep a transparent foreground master, a full square icon, and rounded presentation exports. Preserve intermediate layers.
+8. Review the original and candidate together at artwork, app-icon, sidebar, and favicon sizes, on both light and dark backgrounds. Record actual limitations before promotion.
+
+The raw checkpoint and complete finished review are separate handoffs. Do not delay the first handoff to produce the second. An already retained foreground may receive an explicitly requested background-only pass without another raw approval; record the existing selection or instruction rather than inventing a new confirmation.
 
 The [official image guide](https://developers.openai.com/api/docs/guides/image-generation), checked on 2026-09-06, allows 2048 × 2048 for `gpt-image-2`. It documents multiples of 16, a maximum edge of 3840, a maximum area of 8,294,400 pixels, and an aspect ratio up to 3:1. High input fidelity is automatic; native transparent output is not supported by this model. White-background extraction is therefore a separate finishing step.
 
@@ -49,7 +55,13 @@ The [official image guide](https://developers.openai.com/api/docs/guides/image-g
 
 The [Pew candidate](../artwork/logo-family/pew/2026-09-06-01/notes.md) preserves the liked zebra, wink, ivory/charcoal stripes, and rainbow tongue. Its continuous neck enters from the bottom and right canvas boundaries. The face and ears remain clear of the final rounded corners. This replaces the old circular neck termination with a natural portrait entering the frame.
 
-One native 2048 × 2048 generation and three finishing passes are archived. Pass 02 preserves every fully opaque source color and all sampled pale anatomy; its only component cleanup removes five disconnected residue pixels. Pass 03 keeps the exact extracted foreground and pure-white bytes while deepening the original proposed `#E3DEEA` pearl-lilac field to `#BFB2CF`. Its light is `#E0D8E9`, shade `#9F8DB5`, and motif `#6D557F`, with the same contrast opacities as Frogie 03. Sampled animal colors and this presentation palette stay separate from Pew's current UI primary. The complete comparison is at [the local Pew path](https://index.dev.hexly.ai/logos/pew). The source and production Pew logo remain unchanged in this local review round.
+One native 2048 × 2048 generation and four finishing passes are archived. Pass 02 preserves every fully opaque source color and all sampled pale anatomy; its only component cleanup removes five disconnected residue pixels. Pass 03 deepens the original proposed `#E3DEEA` pearl-lilac field to `#BFB2CF`. Its light is `#E0D8E9`, shade `#9F8DB5`, and motif `#6D557F`, with the same contrast opacities as Frogie 03. Pass 04 retains these colors and the exact foreground/white bytes, replacing the reused curves with three tapered stripes fanning through the upper-left negative space and narrow relief highlights. Sampled animal colors and this presentation palette stay separate from Pew's current UI primary. The complete comparison is at [the local Pew path](https://index.dev.hexly.ai/logos/pew). The source and production Pew logo remain unchanged in this local review round.
+
+## Firefly studies
+
+[Study 01](../artwork/logo-family/firefly/2026-09-06-01/notes.md) produced a smooth teal firefly with a golden abdomen and faceted wing inlays. The owner requested broader fragmentation, an interest point outside the animal, and a unique motif. The exact raw image, both finishing passes, and static review remain archived as superseded. It is no longer the active catalogue candidate.
+
+[Study 02](../artwork/logo-family/firefly/2026-09-06-02/brief.md) uses a strongly faceted full-body firefly circling one separate small flame. Its planned sea-glass background has offset light-orbit arcs, distinct from Frogie and Pew. The next raw image is the first checkpoint; no new foreground extraction or catalogue preview is created before owner confirmation.
 
 ## Archive and promotion
 
@@ -57,7 +69,7 @@ Studies live under `artwork/logo-family/<project>/<date>-<sequence>/`; shared st
 
 Numbered finishing directories and sanitized request/response records are frozen generated artifacts, excluded from Biome formatting. `assets:check` verifies every finishing manifest, its source image, and all recorded file hashes. Active tools, mutable recipes, and review pages remain linted. Format a mutable recipe before taking its next snapshot; never rewrite an archived mask, tool snapshot, or settings file to satisfy a formatter.
 
-The workshop is outside `public/` and the production entry graph. Every completed candidate also receives a curated local catalogue preview. `family.status: "review"` records an unadopted pass, and `family.foreground` supplies its paths, dimensions, and hash. `project.logo` continues to record the actual source-project bytes and revision. Source-project adoption and publication require the session's authorization; a local-only round ends with atomic local commits and review URLs.
+The workshop is outside `public/` and the production entry graph. A pending raw image stays only in the workshop. After raw approval and finishing, a candidate receives a curated local catalogue preview. `family.status: "review"` records an unadopted pass, and `family.foreground` supplies its paths, dimensions, and hash. `project.logo` continues to record the actual source-project bytes and revision. Source-project adoption and publication require the session's authorization; a local-only round ends with atomic local commits and the appropriate raw or finished review link.
 
 Refined identities have a `family` record in `src/data/projects.json`. New curated review resources live under `public/logos/family/<project>/<study>/<pass>/`: exact transparent/square/rounded/white masters, untouched generation, prompt, background, and a checksum manifest. The original adopted Frogie root remains preserved. Source originals remain under versioned names in `public/logos/originals/`; previous names are immutable. `assets:build` adds optimized icon, transparent, background, and previous-artwork previews; `assets:check` validates active foregrounds, every historical public manifest, and every finishing pass.
 

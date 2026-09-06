@@ -27,6 +27,7 @@ export interface LogoFamily {
 	archive: string;
 	model: string;
 	foreground: {
+		subject?: Record<Locale, string>;
 		original: string;
 		display: string;
 		width: number;

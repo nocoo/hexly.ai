@@ -41,16 +41,16 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Refined identity
 
-![Pew refined preview](../../public/logos/family/pew/2026-09-06-01/03/icon-160.webp)
+![Pew refined preview](../../public/logos/family/pew/2026-09-06-01/04/icon-160.webp)
 
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-06.
-- Study `2026-09-06-01`, finishing `03`
+- Study `2026-09-06-01`, finishing `04`
 - Site path: `/logos/pew`; [local gallery](https://index.dev.hexly.ai/logos/pew)
 - [Static review HTML](../../artwork/logo-family/pew/2026-09-06-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pew/2026-09-06-01)
-- [Transparent foreground](../../public/logos/family/pew/2026-09-06-01/03/transparent.png); SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`
-- [Square icon](../../public/logos/family/pew/2026-09-06-01/03/icon.png), [rounded icon](../../public/logos/family/pew/2026-09-06-01/03/rounded.png), [white version](../../public/logos/family/pew/2026-09-06-01/03/white.png)
-- [Untouched generation](../../public/logos/family/pew/2026-09-06-01/03/raw.png), [exact prompt](../../public/logos/family/pew/2026-09-06-01/03/prompt.txt), [public asset checksums](../../public/logos/family/pew/2026-09-06-01/03/manifest.json)
+- [Transparent foreground](../../public/logos/family/pew/2026-09-06-01/04/transparent.png); SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`
+- [Square icon](../../public/logos/family/pew/2026-09-06-01/04/icon.png), [rounded icon](../../public/logos/family/pew/2026-09-06-01/04/rounded.png), [white version](../../public/logos/family/pew/2026-09-06-01/04/white.png)
+- [Untouched generation](../../public/logos/family/pew/2026-09-06-01/04/raw.png), [exact prompt](../../public/logos/family/pew/2026-09-06-01/04/prompt.txt), [public asset checksums](../../public/logos/family/pew/2026-09-06-01/04/manifest.json)
 - [Previous original](../../public/logos/originals/pew.png), copied from [its immutable source](https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png)
 - Previous SHA-256: `2b94fa9b0b0521008a08caa3bae34552f68785fd591c8dc578ceee943addc35e`
 - Generation: Azure Foundry · gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
@@ -61,7 +61,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#bfb2cf` | Local Pew contrast study, finishing 03; background.base in archived settings.json |
+| background | `#bfb2cf` | Local Pew stripe-motif study, finishing 04; background.base and unique background.pattern in archived settings.json |
 | primary | `#fcf8f0` | Pew native generation efa6aff9f478, sampled sRGB pixel (1510, 1740); palette.json |
 | accent | `#232637` | Pew native generation efa6aff9f478, sampled sRGB pixel (1140, 415); palette.json |
 | accent | `#827f8e` | Pew native generation efa6aff9f478, sampled sRGB pixel (770, 334); palette.json |
@@ -81,11 +81,11 @@ Broad ivory and charcoal planes carry the familiar zebra. Smaller facets articul
 
 大块象牙白与炭黑平面保留熟悉的斑马，细一些的切面刻画眨眼、深色鼻子与彩虹舌头。
 
-### A deeper lilac field
+### A rhythm of its own
 
-A deeper lilac field makes the tonal curves visible, with fine grain and soft shadows separating the ivory portrait from its setting.
+Tapered stripes fan through the lilac negative space, with fine light edges and shallow shadows. Their geometry echoes the zebra’s markings and belongs only to Pew.
 
-加深的丁香紫让同色底纹更清楚，细微颗粒与柔和阴影托起象牙白的斑马头像。
+舒展的条纹掠过淡紫色留白，细亮边与浅阴影带出浮雕质感。纹样呼应斑马的条纹，为 Pew 单独设计。
 
 Small-size observation: At 16 px the striped silhouette leads; the wink and individual facets merge, while the rainbow tongue becomes a small color accent.
 

@@ -1,7 +1,9 @@
 import { expect, test } from "@playwright/test";
 import projects from "../../src/data/projects.json" with { type: "json" };
 
-for (const id of ["frogie", "pew"]) {
+for (const id of projects
+	.filter((project) => project.family)
+	.map((project) => project.id)) {
 	test(`compares refined ${id} with its original at artwork and application sizes`, async ({
 		page,
 	}) => {
@@ -63,7 +65,9 @@ for (const id of ["frogie", "pew"]) {
 					: `${family.root}/${value}.png`,
 			);
 		}
-		await expect(page.locator(".sidebar-sample")).toContainText("AI & agents");
+		await expect(page.locator(".sidebar-sample")).toContainText(
+			project.description.en,
+		);
 		await expect(page.locator(".alpha-grid img")).toHaveCount(2);
 		for (const image of await page.locator(".alpha-grid img").all())
 			await expect(image).toHaveAttribute("src", family.foreground.display);

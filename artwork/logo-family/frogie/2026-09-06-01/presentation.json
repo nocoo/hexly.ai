@@ -11,7 +11,28 @@
 		"status": "Local contrast study, finishing 03; source-project artwork and UI tokens unchanged.",
 		"motifOpacity": 0.14,
 		"highlightOpacity": 0.32,
-		"ribbonOpacity": 0.24
+		"ribbonOpacity": 0.24,
+		"pattern": {
+			"name": "Flowing curves",
+			"description": "The original Frogie geometry, retained exactly for its accepted presentation. Other projects use their own paths.",
+			"layers": [
+				{
+					"d": "M1110 112C899 20 691 47 712 201S978 238 911 410S943 627 1117 588",
+					"tone": "motif",
+					"strokeWidth": 44
+				},
+				{
+					"d": "M1129 110C906 9 651 4 670 197S931 240 868 403S922 674 1105 636",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-111 756C103 665 143 853 285 902S481 934 588 1087",
+					"tone": "ribbon",
+					"strokeWidth": 78
+				}
+			]
+		}
 	},
 	"matte": {
 		"minimumChannel": 228,
