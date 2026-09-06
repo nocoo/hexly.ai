@@ -70,6 +70,8 @@ New requests use the neutral filename `raw/generated.png`; the response records 
 
 Immediately show the untouched returned image and ask for confirmation. Save actual owner feedback in `raw-review.json`; a new generation requires a new decision. Do not make the raw handoff wait for finishing or review pages.
 
+An explicit owner waiver can delegate this checkpoint for a named batch. Archive that instruction before requesting images, inspect every returned result, and record the exact SHA with `decisionSource: "owner-delegated batch acceptance"` and `ownerReviewedExactBytes: false`. The 2026-09-07 Bogo, Neo, Dove, Raven, and Lyre batch has this authorization. It still delivers five independent complete review pages and all normal provenance, finishing, adoption, and verification evidence.
+
 After the owner approves those exact bytes, create `presentation.json` with its project slug, evidence-backed/proposed colors, project-specific `background.pattern` geometry, matte settings, shadow settings, and export sizes. Each pattern has a name and SVG path layers in 1024-unit coordinates; a layer uses a `motif`, `highlight`, or `ribbon` tone and may have a `strokeWidth`. Omit `strokeWidth` for a filled shape. Each project supplies its own geometry, not a recolored shared stencil. Run a new numbered finishing pass:
 
 ```bash
