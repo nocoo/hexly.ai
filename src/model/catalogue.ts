@@ -77,10 +77,6 @@ export function destination(project: Project): string {
 	return project.website ?? project.repository;
 }
 
-export function destinationHost(project: Project): string {
-	return new URL(destination(project)).hostname.replace(/^www\./, "");
-}
-
 export function catalogueProblems(projects: Project[]): string[] {
 	const problems: string[] = [];
 	const ids = new Set<string>();

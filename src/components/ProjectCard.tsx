@@ -1,5 +1,4 @@
 import { categoryLabels, copy } from "../data/copy";
-import { destination, destinationHost } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
@@ -23,48 +22,46 @@ export function ProjectCard({
 			data-project={project.id}
 			data-refined={Boolean(project.family)}
 		>
-			<div className="card-identity">
-				<button
-					className="card-logo"
-					type="button"
-					onClick={() => onLogo(project.id)}
-					aria-label={`${t.viewLogo}: ${project.title}`}
-				>
+			<a
+				className="card-main"
+				href={`/logos/${project.id}`}
+				aria-label={`${t.viewLogo}: ${project.title}`}
+				onClick={(event) => {
+					if (
+						event.button !== 0 ||
+						event.metaKey ||
+						event.ctrlKey ||
+						event.shiftKey ||
+						event.altKey
+					)
+						return;
+					event.preventDefault();
+					onLogo(project.id);
+				}}
+			>
+				<div className="card-logo">
 					<Logo project={project} size={96} eager={eager} />
 					<span className="inspect-hint">
 						<Icon name="expand" />
 					</span>
-				</button>
-				{project.family && (
-					<span className="refined-badge">
-						<Icon name="check" />
-						{t.refined}
-					</span>
-				)}
-			</div>
-			<div className="card-body">
-				<div className="card-title-row">
-					<h3>
-						<a href={destination(project)} target="_blank" rel="noreferrer">
-							{project.title}
-						</a>
-					</h3>
-					<a
-						className="card-visit"
-						href={destination(project)}
-						target="_blank"
-						rel="noreferrer"
-						aria-label={`${t.visit}: ${project.title}`}
-						title={destinationHost(project)}
-					>
-						<Icon name="arrow" />
-					</a>
 				</div>
-				<p className="project-description" title={project.description[locale]}>
-					{project.description[locale]}
-				</p>
+				<div className="card-body">
+					<h3 title={project.title}>{project.title}</h3>
+					<p
+						className="project-description"
+						title={project.description[locale]}
+					>
+						{project.description[locale]}
+					</p>
+				</div>
 				<div className="card-meta">
-					<span>
+					{project.family && (
+						<span className="refined-badge">
+							<Icon name="check" />
+							{t.refined}
+						</span>
+					)}
+					<span className="card-category">
 						{
 							categoryLabels[locale][
 								project.archived ? "archive" : project.category
@@ -78,7 +75,18 @@ export function ProjectCard({
 						compact
 					/>
 				</div>
-			</div>
+			</a>
+			<a
+				className="card-github"
+				href={project.repository}
+				target="_blank"
+				rel="noreferrer"
+				aria-label={`${t.source}: ${project.title}`}
+				title={`${t.source}: ${project.title}`}
+			>
+				<Icon name="github" />
+				GitHub
+			</a>
 		</article>
 	);
 }
