@@ -41,7 +41,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png) |
 | Firefly | [2026-09-06-04](firefly/2026-09-06-04/notes.md) | Rejected: generic cute character; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-04/raw/generated-white.png) |
 | Firefly | [2026-09-06-05](firefly/2026-09-06-05/notes.md) | Superseded and unselected; untouched scene preserved without finishing | [Untouched raw](firefly/2026-09-06-05/raw/generated.png) |
-| Firefly | [2026-09-06-06](firefly/2026-09-06-06/brief.md) | New owner reference prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-06/brief.md) |
+| Firefly | [2026-09-06-06](firefly/2026-09-06-06/notes.md) | Native 2048² raw shown; awaiting owner confirmation before finishing | [Untouched raw](firefly/2026-09-06-06/raw/generated.png) |
 
 ## Running a study
 
