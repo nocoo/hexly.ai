@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly study 01 is superseded; study 02 returns to a visibly faceted animal and adds a separate flame. Every new generation now stops for raw-image confirmation before finishing.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01 and 02 are rejected; study 03 redesigns the animal into a compact, visually full logo mass with a close secondary spark. Every new generation stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -24,6 +24,7 @@ Measured empty-background patches from `ref02.jpeg` are warm gray `#ACA59F`, ice
 - Keep the face primary: larger planes across broad surfaces, smaller planes only where expression and anatomy need them.
 - Use a consistent light direction and restrained highlights. Quiet tactile detail must leave the color planes legible at small sizes.
 - Large animals use head portraits. Small animals may use compact full-body poses.
+- Give the logo a substantial main mass. Broad head/body/wing areas supply visual fullness; distant accents and extended limbs do not. Keep the interest point close to the animal, avoid large internal gaps, and preserve safe borders without shrinking the animal into an illustration.
 - Large portraits may enter naturally from a square frame's bottom or side. Let the neck and shoulders continue beyond the canvas; keep the face and expression intact. Do not terminate the neck with a circular medallion or a floating round cut. Keep important features clear of the final rounded corners, and distinguish intentional canvas-edge entry from accidental clipping.
 - For an approved logo, preserve the animal, pose, camera, expression, composition, and signature decoration. For a logo the owner explicitly dislikes, preserve the animal and redesign the camera, framing, pose, and decoration.
 - Design a distinct background motif for each project. Frogie's flowing curves, Pew's tapered stripe rhythm, and Firefly's light orbits share material and contrast, not identical paths. Save named pattern geometry in the recipe; merely recoloring another project's stencil is insufficient.
@@ -61,7 +62,9 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 01](../artwork/logo-family/firefly/2026-09-06-01/notes.md) produced a smooth teal firefly with a golden abdomen and faceted wing inlays. The owner requested broader fragmentation, an interest point outside the animal, and a unique motif. The exact raw image, both finishing passes, and static review remain archived as superseded. It is no longer the active catalogue candidate.
 
-[Study 02](../artwork/logo-family/firefly/2026-09-06-02/brief.md) uses a strongly faceted full-body firefly circling one separate small flame. Its planned sea-glass background has offset light-orbit arcs, distinct from Frogie and Pew. The next raw image is the first checkpoint; no new foreground extraction or catalogue preview is created before owner confirmation.
+[Study 02](../artwork/logo-family/firefly/2026-09-06-02/notes.md) produced a strongly faceted full-body firefly with a separate flame. The owner rejected its sparse composition: an elongated body, spread wings, and a distant large flame did not form a visually full logo. Its native image and proposed sea-glass light-orbit background remain archived; no finishing or catalogue preview was created.
+
+[Study 03](../artwork/logo-family/firefly/2026-09-06-03/brief.md) starts from a broad, short firefly with an enlarged head, gathered wings, and a small flame close to its face. Overlapping anatomy supplies the visual mass, with a compact protective gesture toward the spark. It uses the adopted Frogie and owner-selected local Pew pass 04 as drawing references. The Firefly background remains a proposal to adapt after raw approval. The next handoff is the untouched image for confirmation; finishing and catalogue integration wait for that decision.
 
 ## Archive and promotion
 

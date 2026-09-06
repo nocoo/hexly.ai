@@ -1,0 +1,62 @@
+{
+	"project": "firefly",
+	"sourceRepository": "https://github.com/nocoo/firefly",
+	"sourceRevision": "8093578e9960f36cd112b7c04a841e6d5e345aed",
+	"sourcePath": "logo.png",
+	"sourceSha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269",
+	"websiteColors": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
+		"status": "Existing Firefly UI tokens; unchanged"
+	},
+	"status": "prepared",
+	"preparedAt": "2026-09-06T10:48:54.550855+00:00",
+	"supersedes": "firefly/2026-09-06-02",
+	"intent": "A broad, short, visibly faceted firefly curls toward a small close flame; overlapping head, shell, and gathered wings form a visually full logo mass.",
+	"rawCheckpoint": "Mandatory: immediately show the untouched output and await confirmation before extraction, finishing, sizes, review pages, or catalogue integration.",
+	"promptSha256": "0c35e9f7a6072373bd65fa0ec545e9c7f9878e1e4f56c088331e11cf1e820d35",
+	"references": [
+		{
+			"index": 1,
+			"role": "Adopted Frogie: primary family drawing, broad animal mass, expressive face, and meaningful external accent",
+			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e"
+		},
+		{
+			"index": 2,
+			"role": "Retained Pew drawing in owner-selected local pass 04: broad facets, close icon presence, and subordinate rainbow accent; not source adoption",
+			"path": "artwork/logo-family/pew/2026-09-06-01/finishing/04/exports/pew-icon-2048.png",
+			"sha256": "d3734589bc3d7062c7473421a44570ff7cdd2744a813c756dd2a7eacb4e1f29a"
+		},
+		{
+			"index": 3,
+			"role": "Presentation reference only: deliberate framing, matte tactility, and hierarchy",
+			"path": "artwork/logo-family/references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff"
+		},
+		{
+			"index": 4,
+			"role": "Presentation reference only: full icon presence and restrained material",
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018"
+		}
+	],
+	"priorStudies": [
+		{
+			"study": "firefly/2026-09-06-01",
+			"status": "rejected",
+			"rawSha256": "9af427620891806bdf952bf6369028232ef46c1a8f6ddb40dcd96c73e2b66a90"
+		},
+		{
+			"study": "firefly/2026-09-06-02",
+			"status": "rejected",
+			"rawSha256": "9b98ac629551a7065b7360f33a4b0b3ecd5052cc4a105850bf0c04a2368098d7"
+		}
+	],
+	"backgroundPlan": {
+		"path": "background-plan.json",
+		"status": "proposed; adapt to selected silhouette after raw approval"
+	},
+	"publication": "Local only; no source adoption, push, or deployment"
+}
