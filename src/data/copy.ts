@@ -26,6 +26,7 @@ export const categoryLabels: Record<Locale, Record<Category, string>> = {
 export const copy = {
 	en: {
 		directory: "Projects",
+		version: "Version",
 		gallery: "Logo gallery",
 		about: "About me",
 		skip: "Skip to content",
@@ -106,6 +107,7 @@ export const copy = {
 	},
 	zh: {
 		directory: "项目导航",
+		version: "版本",
 		gallery: "Logo 图鉴",
 		about: "关于我",
 		skip: "跳到主要内容",

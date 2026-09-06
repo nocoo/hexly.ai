@@ -1,4 +1,5 @@
 import { copy } from "../data/copy";
+import { appVersion } from "../data/version";
 import type { Locale, Theme, View } from "../model/project";
 import { BrandMark, Icon } from "./Icon";
 
@@ -20,20 +21,25 @@ export function Header({
 	const t = copy[locale];
 	return (
 		<header className="site-header shell">
-			<a
-				href="/"
-				className="brand"
-				onClick={(event) => {
-					event.preventDefault();
-					onView("directory");
-				}}
-				aria-label="hexly.ai"
-			>
-				<BrandMark />
-				<span>
-					hexly<span className="brand-domain">.ai</span>
+			<div className="brand-group">
+				<a
+					href="/"
+					className="brand"
+					onClick={(event) => {
+						event.preventDefault();
+						onView("directory");
+					}}
+					aria-label="hexly.ai"
+				>
+					<BrandMark />
+					<span>
+						hexly<span className="brand-domain">.ai</span>
+					</span>
+				</a>
+				<span className="version-pill" title={`${t.version} v${appVersion}`}>
+					v{appVersion}
 				</span>
-			</a>
+			</div>
 			<nav
 				className="main-nav"
 				aria-label={locale === "en" ? "Main navigation" : "主要导航"}

@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import manifest from "../../package.json" with { type: "json" };
 
 test("renders the complete directory with local images and working destinations", async ({
 	page,
@@ -10,6 +11,9 @@ test("renders the complete directory with local images and working destinations"
 	});
 	await page.goto("/");
 	await expect(page).toHaveTitle(/hexly.ai/);
+	await expect(page.locator(".version-pill")).toHaveText(
+		`v${manifest.version}`,
+	);
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
 		"Small ideas.A little universe.",
 	);

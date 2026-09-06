@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
 import sharp from "sharp";
+import manifest from "../../package.json" with { type: "json" };
 import projects from "../../src/data/projects.json" with { type: "json" };
 
 test("serves the built document and security policy through Workers HTTP", async ({
@@ -59,6 +60,22 @@ test("reloads gallery links and serves the external preference bootstrap", async
 	expect(preferences.status()).toBe(200);
 	expect(preferences.headers()["content-type"]).toContain("javascript");
 	expect(await preferences.text()).toContain("hexly:theme");
+});
+
+test("reports the deployed version and revision without caching", async ({
+	request,
+}) => {
+	const response = await request.get("/api/live");
+	expect(response.status()).toBe(200);
+	expect(response.headers()["content-type"]).toContain("application/json");
+	expect(response.headers()["cache-control"]).toBe("no-store");
+	const metadata = await response.json();
+	expect(metadata).toMatchObject({
+		status: "ok",
+		name: "hexly.ai",
+		version: manifest.version,
+	});
+	expect(metadata.revision).toMatch(/^[a-f0-9]{40}$/);
 });
 
 for (const id of ["frogie", "pew", "pokepocket", "node-image-uploader"]) {
