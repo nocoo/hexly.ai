@@ -131,7 +131,7 @@ await writeFile(
 		notes,
 	),
 );
-await run("bun", "install", "--lockfile-only");
+await run("bun", "install", "--lockfile-only", "--frozen-lockfile");
 await run("git", "add", "--", "package.json", "bun.lock", "CHANGELOG.md");
 if (await output("git", "diff", "--cached", "--name-only")) {
 	await run("git", "commit", "-m", `chore: release ${tag}`);
