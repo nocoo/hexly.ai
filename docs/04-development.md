@@ -38,7 +38,7 @@ The package registry on this machine is filtered. Use a temporary allowed mirror
 
 ## Cloudflare Workers
 
-The application uses Workers Static Assets, with no database or server-side API. `wrangler.jsonc` points at Vite's `dist` output and declares `hexly.ai` as the production custom domain.
+The application uses Workers Static Assets, with no database or server-side handler. `wrangler.jsonc` points at Vite's `dist` output and declares `hexly.ai` as the production custom domain. `/api/live` is build-generated static JSON containing the package version and Git revision.
 
 ```sh
 bun run build
@@ -47,7 +47,15 @@ bun run preview:worker
 bun run deploy
 ```
 
-The local preview uses port `37048`, inspector port `38048`, and `.wrangler/preview` for runtime state. Deployment commands explicitly select the top-level production configuration with `--env ""`; tests use `--env test`. Deployment requires the account's normal Cloudflare credentials. The requested first-phase handoff is the local browser review; production publishing is a separate action from preparing and validating this configuration.
+The local preview uses port `37048`, inspector port `38048`, and `.wrangler/preview` for runtime state. Deployment commands explicitly select the top-level production configuration with `--env ""`; tests use `--env test`. Deployment requires the account's normal Cloudflare credentials.
+
+GitHub Actions automatically deploys `main` after all quality checks pass, then verifies the public version, revision, document, compiled assets, and original logo. See [versioning and releases](05-release.md) for credentials and the release command.
+
+## Apex migration from Vercel
+
+Before the Workers migration, `hexly.ai` had a proxied A record pointing to `76.76.21.21`, with automatic TTL. Its rollback values are saved in [previous-apex-dns.json](deployment/previous-apex-dns.json). Wrangler uploads the ready Worker assets before attaching the custom domain and replacing that conflicting web record.
+
+Only the apex web route moves to the Worker. Existing mail records, development wildcard records, and other subdomains are independent. The Vercel deployment is retained. To roll back the routing, detach the Worker custom domain and restore the recorded apex A record; do not remove the zone's MX or TXT records.
 
 ## Documentation references
 
