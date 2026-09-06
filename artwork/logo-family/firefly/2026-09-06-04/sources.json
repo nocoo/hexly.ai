@@ -36,7 +36,7 @@
 			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018"
 		}
 	],
-	"status": "prepared",
+	"status": "raw-review-pending",
 	"preparedAt": "2026-09-06T10:57:08.450062+00:00",
 	"supersedes": "firefly/2026-09-06-03",
 	"intent": "An approachable graphic firefly with simple crescent eyes, rounded overlapping head/body/wings, discreet limb hints, a warm tail light, and a small offered flame beside its cheek.",
@@ -63,5 +63,7 @@
 		"path": "background-plan.json",
 		"status": "proposed; adapt after raw approval"
 	},
-	"publication": "Local only; no source adoption, push, or deployment"
+	"publication": "Local only; no source adoption, push, or deployment",
+	"rawImageSha256": "ee53f18b46c419f13d8a3ba11f72bb92cf671791d8c8594e43afd875f4c6164b",
+	"decisionRecord": "raw-review.json"
 }

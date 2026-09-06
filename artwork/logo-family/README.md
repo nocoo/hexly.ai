@@ -37,7 +37,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-01](firefly/2026-09-06-01/notes.md) | Superseded; both finishing passes preserved | [Archived static HTML](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-01/review.html) |
 | Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png) |
 | Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png) |
-| Firefly | [2026-09-06-04](firefly/2026-09-06-04/brief.md) | Graphic character redesign prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-04/brief.md) |
+| Firefly | [2026-09-06-04](firefly/2026-09-06-04/notes.md) | Raw character awaiting owner confirmation; no finishing | [Untouched raw](firefly/2026-09-06-04/raw/generated-white.png) |
 
 ## Running a study
 
