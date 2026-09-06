@@ -10,7 +10,7 @@
 		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
 		"status": "Existing Firefly UI tokens; unchanged"
 	},
-	"status": "prepared",
+	"status": "rejected",
 	"preparedAt": "2026-09-06T11:39:15.849741+00:00",
 	"sourceMode": "isolated-white",
 	"rawSource": "raw/generated.png",
@@ -63,5 +63,10 @@
 		}
 	],
 	"presentationPlan": "presentation-plan.json",
-	"publication": "Local only; no source adoption, push, or deployment"
+	"publication": "Local only; no source adoption, push, or deployment",
+	"generatedAt": "2026-09-06T11:42:09.848547+00:00",
+	"rawSha256": "e80c96c5e5a6e0dfdd416799fed1def6632acebdbdaada6f62d00dea93212a41",
+	"requestId": "8cd30580-977b-44bb-8296-f96ffe261b49",
+	"supersededBy": "firefly/2026-09-06-08",
+	"ownerFeedback": "One eye is missing; the retained composition needs a second visible eye."
 }
