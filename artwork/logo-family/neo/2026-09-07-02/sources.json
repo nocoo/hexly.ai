@@ -1,0 +1,44 @@
+{
+	"recordedAt": "2026-09-06T20:21:07.719Z",
+	"project": "neo",
+	"sourceMode": "isolated-white",
+	"repository": "https://github.com/nocoo/neo",
+	"repositoryRevision": "856e487050327aa471ff9761c9d111822f2b46db",
+	"sourcePath": "logo.png",
+	"sourceSha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+	"originalBackup": "../../../../public/logos/originals/neo.png",
+	"websiteThemeEvidence": {
+		"background": {
+			"value": "220 14% 94%",
+			"source": "app/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "app/globals.css --foreground"
+		},
+		"primary": {
+			"value": "217 91% 60%",
+			"source": "app/globals.css imports @nocoo/basalt/styles"
+		}
+	},
+	"precedingStudy": "../2026-09-07-01",
+	"precedingRawSha256": "0b876d608078fbf55795241541a5e237c12cb1159d157208be7034e9b3cfacd6",
+	"referenceHierarchy": [
+		{
+			"index": 1,
+			"path": "input/framing-guide.png",
+			"sha256": "427f0a38390bd57d440da4f002558c21c1d3af98b0ecdef7526ce02c37f52e37",
+			"role": "Exact desired composition: uniformly scaled preceding native drawing on a larger white field. Preserve head, expression and accessories at these exact positions; paint only natural neck/shoulder continuation through the remaining lower edge inset."
+		}
+	],
+	"guide": {
+		"source": "../2026-09-07-01/raw/generated.png",
+		"sourceSha256": "0b876d608078fbf55795241541a5e237c12cb1159d157208be7034e9b3cfacd6",
+		"nativeDimensions": [2048, 2048],
+		"scale": 0.88,
+		"resizedDimensions": [1802, 1802],
+		"offset": [123, 123],
+		"background": "#fbfcfc",
+		"method": "Uniform Lanczos resize of untouched opaque native source, centered on a near-white field; no edge extension, no retouch, no composite colored presentation."
+	}
+}

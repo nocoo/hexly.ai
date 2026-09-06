@@ -1,0 +1,90 @@
+{
+	"project": "neo",
+	"original": "../../../../public/logos/originals/neo.png",
+	"background": {
+		"base": "#cba16f",
+		"light": "#f2d4a8",
+		"shade": "#aa7d51",
+		"motif": "#875a32",
+		"grainAmplitude": 1,
+		"grainSeed": 609072,
+		"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+		"motifOpacity": 0.14,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Golden lozenge impressions",
+			"description": "Loose alternating long and short rounded impressions rise through the left negative space like softened sunlit pebbles.",
+			"layers": [
+				{
+					"d": "M48 213L159 146Q176 136 186 153Q196 170 180 181L69 247Q51 258 41 241Q31 223 48 213Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M35 344L83 315Q101 305 111 322Q121 339 104 350L56 379Q38 389 28 371Q18 354 35 344Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M61 517L162 456Q179 446 189 463Q199 480 182 491L83 552Q65 562 54 545Q43 528 61 517Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M770 47L874-16Q891-25 901-9Q912 9 894 20L791 83Q773 93 763 75Q753 58 770 47Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M857 149L909 118Q926 107 936 124Q947 142 929 153L878 183Q860 194 850 176Q840 159 857 149Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M49 256L186 174",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M64 561L188 486",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M771 92L901 13",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 8,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 16,
+		"componentNote": "Only sub-16-pixel isolated matte residue may be removed, with component bounds and counts inspected. Every legitimate detached blossom petal is much larger and must remain."
+	},
+	"shadows": [
+		{
+			"color": [135, 90, 50],
+			"opacity": 0.14,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 23]
+		},
+		{
+			"color": [135, 90, 50],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 1,
+		"intentionalEdges": ["bottom"],
+		"note": "Final positions supplied by the archived scale guide; the image model completes continuous lower anatomy. No finishing scale, crop, edge-copy extension or circular bust mask."
+	}
+}

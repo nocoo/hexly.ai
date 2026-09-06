@@ -1,0 +1,90 @@
+{
+	"project": "lyre",
+	"original": "../../../../public/logos/originals/lyre.png",
+	"background": {
+		"base": "#c29d85",
+		"light": "#e2c9ac",
+		"shade": "#a17c69",
+		"motif": "#765445",
+		"grainAmplitude": 1,
+		"grainSeed": 609075,
+		"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+		"motifOpacity": 0.14,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Lyre string impressions",
+			"description": "Three fine open U-shaped string contours, offset endpoints and small circular impressions sit in the upper-left field, echoing the retained crest.",
+			"layers": [
+				{
+					"d": "M44-32V208C44 266 93 305 150 284C188 270 203 239 203 197V-26",
+					"tone": "motif",
+					"strokeWidth": 7
+				},
+				{
+					"d": "M99-20V148C99 206 142 231 180 210C206 195 214 171 214 140V-32",
+					"tone": "motif",
+					"strokeWidth": 5
+				},
+				{
+					"d": "M260-31V118C260 177 302 207 343 185C371 170 380 144 380 109V-24",
+					"tone": "motif",
+					"strokeWidth": 6
+				},
+				{
+					"d": "M38-27V210C38 273 92 312 152 291C193 277 210 241 210 199V-26",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M254-29V120C254 183 301 215 346 192C376 176 387 146 387 110V-24",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M310 317a12 12 0 1 0 24 0a12 12 0 1 0-24 0",
+					"tone": "motif"
+				},
+				{
+					"d": "M33 383a9 9 0 1 0 18 0a9 9 0 1 0-18 0",
+					"tone": "motif"
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 237,
+		"maximumChroma": 16,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 16,
+		"componentNote": "Remove only sub-16-pixel isolated matte residue. Actual connected-component bounds are archived with finishing checks; detached blossom petals are retained.",
+		"calibrationNote": "Pass 01 exposed small exterior neutral fragments with minimum channels 238–244 and chroma 9–15. The calibrated exterior threshold removes these without changing opaque colored facets."
+	},
+	"shadows": [
+		{
+			"color": [118, 84, 69],
+			"opacity": 0.14,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 23]
+		},
+		{
+			"color": [118, 84, 69],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 1,
+		"intentionalEdges": ["bottom", "lower-right"],
+		"note": "The crest was drawn higher than the composition guide. Translate the entire foreground 80px down, without resizing, to provide top clearance. Only the already-continuous lower neck is cropped by the bottom frame.",
+		"offsetAt2048": [0, 80]
+	}
+}

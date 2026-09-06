@@ -1,0 +1,374 @@
+{
+	"createdAt": "2026-09-06T20:28:09.441Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "176e095a3f7b986e463b1e6a979e64e59d500e51f68449fe96e96377832ca96d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "6c72a91186995069831f39e439f4cb1a64e8dc74e04d7fadec970e690fcab7fe",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "bogo",
+		"original": "../../../../public/logos/originals/bogo.png",
+		"background": {
+			"base": "#b7a186",
+			"light": "#e0ccaf",
+			"shade": "#958370",
+			"motif": "#6d5843",
+			"grainAmplitude": 1,
+			"grainSeed": 609071,
+			"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Mineral horn arches",
+				"description": "Offset broken polygonal arches with blunt beveled ends, recalling the buffalo horns without framing the face.",
+				"layers": [
+					{
+						"d": "M-34 327L99 161L219 89L246 124L131 195L9 351Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M29 447L174 268L303 190L321 217L194 300L63 471Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M96 544L235 382L338 319L353 341L256 407L123 564Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M771-18L855 53L1062 144L1048 173L831 82L748 9Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M19 357L136 201L249 129",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M74 476L199 306L324 222",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M1054 186L828 92L744 19",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 16,
+			"componentNote": "Only sub-16-pixel isolated matte residue may be removed, with component bounds and counts inspected. Every legitimate detached blossom petal is much larger and must remain."
+		},
+		"shadows": [
+			{
+				"color": [
+					109,
+					88,
+					67
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					109,
+					88,
+					67
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 1,
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "Final positions supplied by the archived scale guide; the image model completes continuous lower anatomy. No finishing scale, crop, edge-copy extension or circular bust mask."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1919741,
+		"foregroundPixels": 2274563,
+		"softEdgePixels": 17077,
+		"removedComponents": 15,
+		"removedComponentPixels": 55,
+		"bounds": {
+			"left": 282,
+			"top": 0,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 283,
+			"top": 0,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47954
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2335,
+			"sha256": "b6da23793f789a4b29b03695f5d33e43a1b6ec7e3a2aa6bc4dde87af40dd29fb"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1008,
+			"sha256": "ce3fa31000735d7c3e5622b2e947516b40d2debd5a9fc7966105dcd2f8d42e89"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 19916,
+			"sha256": "176e095a3f7b986e463b1e6a979e64e59d500e51f68449fe96e96377832ca96d"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3147115,
+			"sha256": "70202752ed086fa869c761da91b94d88f90966ef3584600b0b8af67071d4509f"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 90617,
+			"sha256": "a845fb0154ce61bb569f834373c1876cc6fa4aad688bf94de73326bf8bc9f83f"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1050,
+			"sha256": "d89ef95802edfcb29b6f586135da034ce0c62db9c3c5e4c4faf4199ecba2af8b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2120015,
+			"sha256": "b4d91c822942e01f11a1dfec0c22ce8aa86ff97ba06728c1db230d52c4014301"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 275652,
+			"sha256": "aeb5e0257fb5a6cefcb675e666edeb64f3c51030a6fbb3995e09c34a539c7c80"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 211983,
+			"sha256": "ea641168f78dd2ade2d12c67f1fa85b7b72ab27868cdacb6328957a852a9009f"
+		},
+		{
+			"path": "exports/bogo-transparent-2048.png",
+			"bytes": 3147115,
+			"sha256": "70202752ed086fa869c761da91b94d88f90966ef3584600b0b8af67071d4509f"
+		},
+		{
+			"path": "exports/bogo-icon-2048.png",
+			"bytes": 4465990,
+			"sha256": "89a869f2a591413c9a01392c1d2149d3d892b6d3cf6ac271b9a186f86da4384d"
+		},
+		{
+			"path": "exports/bogo-rounded-2048.png",
+			"bytes": 4364334,
+			"sha256": "204a73bd38add4c94962b1ee7cb6ab5a8df4f964d291215d4bb126085669fe3c"
+		},
+		{
+			"path": "exports/bogo-transparent-1024.png",
+			"bytes": 924045,
+			"sha256": "51937299077e78e790282491a3619271d349567eef4cf16f8620bd46d86fba76"
+		},
+		{
+			"path": "exports/bogo-icon-1024.png",
+			"bytes": 1219316,
+			"sha256": "87baf4971475c90989760331785637a7b9bb73a081588224dbf91c7583cdb5b0"
+		},
+		{
+			"path": "exports/bogo-rounded-1024.png",
+			"bytes": 1209552,
+			"sha256": "70736c1c25120ad735e823494fe3b69ad1fda7a00b0a7de4ab93f758fdd23653"
+		},
+		{
+			"path": "exports/bogo-transparent-512.png",
+			"bytes": 289616,
+			"sha256": "bf3a12079757ae67f9e8ce757234e04e581d59c36002d0ba3e512d15240363d9"
+		},
+		{
+			"path": "exports/bogo-icon-512.png",
+			"bytes": 379120,
+			"sha256": "013cc2f4b72814a296d0c5b0014d8fac4ee033c897e272100fc0243308f0e709"
+		},
+		{
+			"path": "exports/bogo-rounded-512.png",
+			"bytes": 378299,
+			"sha256": "2575b6672e83f3851468696873ce8469caf09217acb43a17af7ce4ca37cfcd7c"
+		},
+		{
+			"path": "exports/bogo-transparent-256.png",
+			"bytes": 91938,
+			"sha256": "b97d2850e1327c20699978c176df2c189200e2cc56c688919a307101684722dd"
+		},
+		{
+			"path": "exports/bogo-icon-256.png",
+			"bytes": 107886,
+			"sha256": "bf0aabb9784885ebe2a42ca7ecb35dd4640a56995402dee47622bea69f3c0486"
+		},
+		{
+			"path": "exports/bogo-rounded-256.png",
+			"bytes": 110011,
+			"sha256": "4104698e06babcfed764a4240a68f22204cdf34c37f73ad651cc0939f473b81c"
+		},
+		{
+			"path": "exports/bogo-transparent-128.png",
+			"bytes": 28199,
+			"sha256": "cff5e62f2498034e01cb4e81fa09bea7057490696294ba98cfe276132abd080e"
+		},
+		{
+			"path": "exports/bogo-icon-128.png",
+			"bytes": 33064,
+			"sha256": "5d486dade627b858fe1b689b07c5fa1c4da2b1bdd2ad43b593a1e66b17dd5a6e"
+		},
+		{
+			"path": "exports/bogo-rounded-128.png",
+			"bytes": 34362,
+			"sha256": "d7f0a0f27ff437f52f2cfded7f6b0e56b7a496aa4da198624089bcfa3a407eae"
+		},
+		{
+			"path": "exports/bogo-transparent-64.png",
+			"bytes": 8440,
+			"sha256": "bb95886454497b67b2c785ee871ee3556dccad939bf1e6bd4d9de3384cd4a22e"
+		},
+		{
+			"path": "exports/bogo-icon-64.png",
+			"bytes": 10236,
+			"sha256": "8005c70b69dc3c0f06094a3206203d4290476a84b6d400e030ba3ba6596935a9"
+		},
+		{
+			"path": "exports/bogo-rounded-64.png",
+			"bytes": 10747,
+			"sha256": "d5d252125d5518b2821989735f9a1435ddf8c7c0ea3568179e164f6d09ff9697"
+		},
+		{
+			"path": "exports/bogo-transparent-48.png",
+			"bytes": 5229,
+			"sha256": "6c8962309968830ce2e430a1c9371aa1d22f9c03a91fc79a306b792683c89379"
+		},
+		{
+			"path": "exports/bogo-icon-48.png",
+			"bytes": 6229,
+			"sha256": "0a671961852a087dc497898791fe7c04e4dde11a240922844fa0f84e049af1eb"
+		},
+		{
+			"path": "exports/bogo-rounded-48.png",
+			"bytes": 6597,
+			"sha256": "0922398078fa7481a39f66b5a3365d236ae6e45d39551dd44f4e20249f266eed"
+		},
+		{
+			"path": "exports/bogo-transparent-32.png",
+			"bytes": 2688,
+			"sha256": "acdab0dd2b3040723621ba320db7a6288e32b268d6eb2d996344ceca058ad374"
+		},
+		{
+			"path": "exports/bogo-icon-32.png",
+			"bytes": 3189,
+			"sha256": "06becc75db3eb768cd1f5632483160a53f22ea56079e13f605f19fef8213b931"
+		},
+		{
+			"path": "exports/bogo-rounded-32.png",
+			"bytes": 3348,
+			"sha256": "434e50d541580e67dd6cde4a3f8ae654daedd84e80ce7849ae4469e0027c2dc0"
+		},
+		{
+			"path": "exports/bogo-transparent-24.png",
+			"bytes": 1693,
+			"sha256": "0ce6228247bbabd1c0c53c7ae27037f2bb55a438ca6055faa1cb8f3a82747c88"
+		},
+		{
+			"path": "exports/bogo-icon-24.png",
+			"bytes": 1925,
+			"sha256": "f22f41e3e72e2b39c04f2de37679ff84ef0c2513fa4c023f446880f055725d00"
+		},
+		{
+			"path": "exports/bogo-rounded-24.png",
+			"bytes": 2029,
+			"sha256": "c41e06fff0346af36615e9a9ffb042124033d8a20cdd84debe24cacdcfb1a051"
+		},
+		{
+			"path": "exports/bogo-transparent-16.png",
+			"bytes": 913,
+			"sha256": "44571f97611763591dbeaeeb1d1738285db3912d33737ccbb39f302d8cdd451d"
+		},
+		{
+			"path": "exports/bogo-icon-16.png",
+			"bytes": 957,
+			"sha256": "3bf833880d83a35fe6eb914dee4a941a9fee7a19dbc14dc1e6b2d418cd0b68cd"
+		},
+		{
+			"path": "exports/bogo-rounded-16.png",
+			"bytes": 999,
+			"sha256": "2b1bfad46d85632ccda14e1cb3b48147165e7e14626a3d70c73eac2f87652a39"
+		},
+		{
+			"path": "exports/bogo-white-2048.png",
+			"bytes": 2939877,
+			"sha256": "85e7b50dcdcfb23b2bdec9dad71ae2234ba71396330948a8b699936f1fd0862e"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 874335,
+			"sha256": "599e272436ed8c1c6306d7a76a228c789af9034d657b1549ab3581a3ce9ad0ce"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 872374,
+			"sha256": "ca3d84d4ff828c6387ffb11897321cd817f97e01cae64384a768f5239e9f1856"
+		}
+	]
+}

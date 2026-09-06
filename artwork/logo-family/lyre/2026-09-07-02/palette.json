@@ -1,0 +1,85 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "1be9e0eee3acb6acf0857aa78c5ba3b4c9140fb5512caa22b672cd0b135273b4",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels in visually selected animal/accessory regions. Samples are fully opaque and stable in their immediate neighborhood. Coordinates precede any documented integer placement. No generated palette values are substituted for sampled pixels.",
+	"foreground": [
+		{
+			"role": "Chestnut",
+			"label": {
+				"en": "Chestnut",
+				"zh": "栗棕"
+			},
+			"x": 692,
+			"y": 984,
+			"rgb": [145, 83, 56],
+			"hex": "#915338"
+		},
+		{
+			"role": "Russet",
+			"label": {
+				"en": "Russet",
+				"zh": "赤褐"
+			},
+			"x": 1286,
+			"y": 1298,
+			"rgb": [197, 106, 53],
+			"hex": "#c56a35"
+		},
+		{
+			"role": "Cream",
+			"label": {
+				"en": "Cream",
+				"zh": "奶油色"
+			},
+			"x": 1030,
+			"y": 1104,
+			"rgb": [245, 212, 173],
+			"hex": "#f5d4ad"
+		},
+		{
+			"role": "Gold",
+			"label": {
+				"en": "Gold",
+				"zh": "暖金"
+			},
+			"x": 920,
+			"y": 450,
+			"rgb": [234, 160, 88],
+			"hex": "#eaa058"
+		},
+		{
+			"role": "Walnut",
+			"label": {
+				"en": "Walnut",
+				"zh": "胡桃棕"
+			},
+			"x": 1136,
+			"y": 686,
+			"rgb": [70, 37, 26],
+			"hex": "#46251a"
+		}
+	],
+	"background": {
+		"role": "Terracotta paper",
+		"label": {
+			"en": "Terracotta paper",
+			"zh": "陶土纸面"
+		},
+		"hex": "#c29d85",
+		"light": "#e2c9ac",
+		"shade": "#a17c69",
+		"motif": "#765445",
+		"motifOpacity": 0.14,
+		"pattern": "Lyre string impressions",
+		"status": "Designed presentation for finishing 02; separate from the existing UI palette."
+	},
+	"existingSitePrimary": {
+		"hex": "#883720",
+		"source": "apps/web/src/styles.css --basalt-primary",
+		"status": "Existing project UI token"
+	}
+}

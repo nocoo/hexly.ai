@@ -1,0 +1,391 @@
+{
+	"createdAt": "2026-09-06T21:28:34.725Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "f59a11f558e963ee3b784196983798a140916e4c210503f31a5b637e3523595d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "1be9e0eee3acb6acf0857aa78c5ba3b4c9140fb5512caa22b672cd0b135273b4",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "lyre",
+		"original": "../../../../public/logos/originals/lyre.png",
+		"background": {
+			"base": "#c29d85",
+			"light": "#e2c9ac",
+			"shade": "#a17c69",
+			"motif": "#765445",
+			"grainAmplitude": 1,
+			"grainSeed": 609075,
+			"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Lyre string impressions",
+				"description": "Three fine open U-shaped string contours, offset endpoints and small circular impressions sit in the upper-left field, echoing the retained crest.",
+				"layers": [
+					{
+						"d": "M44-32V208C44 266 93 305 150 284C188 270 203 239 203 197V-26",
+						"tone": "motif",
+						"strokeWidth": 7
+					},
+					{
+						"d": "M99-20V148C99 206 142 231 180 210C206 195 214 171 214 140V-32",
+						"tone": "motif",
+						"strokeWidth": 5
+					},
+					{
+						"d": "M260-31V118C260 177 302 207 343 185C371 170 380 144 380 109V-24",
+						"tone": "motif",
+						"strokeWidth": 6
+					},
+					{
+						"d": "M38-27V210C38 273 92 312 152 291C193 277 210 241 210 199V-26",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M254-29V120C254 183 301 215 346 192C376 176 387 146 387 110V-24",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M310 317a12 12 0 1 0 24 0a12 12 0 1 0-24 0",
+						"tone": "motif"
+					},
+					{
+						"d": "M33 383a9 9 0 1 0 18 0a9 9 0 1 0-18 0",
+						"tone": "motif"
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 237,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 16,
+			"componentNote": "Remove only sub-16-pixel isolated matte residue. Actual connected-component bounds are archived with finishing checks; detached blossom petals are retained.",
+			"calibrationNote": "Pass 01 exposed small exterior neutral fragments with minimum channels 238–244 and chroma 9–15. The calibrated exterior threshold removes these without changing opaque colored facets."
+		},
+		"shadows": [
+			{
+				"color": [
+					118,
+					84,
+					69
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					118,
+					84,
+					69
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 1,
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "The crest was drawn higher than the composition guide. Translate the entire foreground 80px down, without resizing, to provide top clearance. Only the already-continuous lower neck is cropped by the bottom frame.",
+			"offsetAt2048": [
+				0,
+				80
+			]
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2221130,
+		"foregroundPixels": 1973174,
+		"softEdgePixels": 9744,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 351,
+			"top": 79,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			80
+		],
+		"bounds": {
+			"left": 351,
+			"top": 159,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47018
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2811,
+			"sha256": "5087eadd924df4e3747d73b2a33475562b15af928c90b6726c0a3c04b26f0829"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1048,
+			"sha256": "85b4d3798899b2a39e7823cfdfbb4b99909b3080ead0606637821950d2b56999"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 21831,
+			"sha256": "f59a11f558e963ee3b784196983798a140916e4c210503f31a5b637e3523595d"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4297447,
+			"sha256": "3eddc870da66d4365bc5065e354d9f58c1f5a9b00d25348980187394101da826"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 64292,
+			"sha256": "78902daf2c1e44f14a90aa1291e293e084615de5c50aa403c0a37a70a7027301"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1248,
+			"sha256": "22ad5d4f4d337a1d2e1d70f4f4feabdb458e9160f1adff4f14fbb03be9344e2b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2130425,
+			"sha256": "f91a1da426a2d5655f2d13d9b589aa4df597528a6de722d27f06e2f2cf36ac96"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4097366,
+			"sha256": "2b18c416f21c4f08db08e0f22a1f96ea4986cc75b8f17ed3529e51b0010802da"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 63183,
+			"sha256": "e449645bb50c62cf001e5d1d9f58ffec57295d78310ed25d63ffc23aca0010be"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 225544,
+			"sha256": "32c1e6fd231be139c96d18b5aca1af0d57cca2378be6df143e47d2bc3d3e2d89"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 184272,
+			"sha256": "cb2abf03afb69b50496932aa4d8bd2ade718b03114d67cb17cd11c387f5911ca"
+		},
+		{
+			"path": "exports/lyre-transparent-2048.png",
+			"bytes": 4097366,
+			"sha256": "2b18c416f21c4f08db08e0f22a1f96ea4986cc75b8f17ed3529e51b0010802da"
+		},
+		{
+			"path": "exports/lyre-icon-2048.png",
+			"bytes": 5696135,
+			"sha256": "f8b29f281f6c0dc87b56e421a9f4643c7afea8901013f69aaebef22b66de7899"
+		},
+		{
+			"path": "exports/lyre-rounded-2048.png",
+			"bytes": 5547775,
+			"sha256": "071631bd5b7577caf98a9c2a4919dbeb596cc7a424c571c8e8e5744a2c1fa8d8"
+		},
+		{
+			"path": "exports/lyre-transparent-1024.png",
+			"bytes": 1084097,
+			"sha256": "14675ec405c5d413c823aff47eefcede27d3377e24a29faaccc00f3af02d1f6d"
+		},
+		{
+			"path": "exports/lyre-icon-1024.png",
+			"bytes": 1432006,
+			"sha256": "b1467a042e17c0a4c989b0b699172867addc260f980c3230da1a0d62f89c23ed"
+		},
+		{
+			"path": "exports/lyre-rounded-1024.png",
+			"bytes": 1410919,
+			"sha256": "c9dbb2a6bdd020d8892b356b9d9cad08774dc55835ce79ddfaafc8a154db40ba"
+		},
+		{
+			"path": "exports/lyre-transparent-512.png",
+			"bytes": 307737,
+			"sha256": "0babbff78d8b716685e7042de7992876258b96db9704808a8f99e5efd5c987f3"
+		},
+		{
+			"path": "exports/lyre-icon-512.png",
+			"bytes": 416168,
+			"sha256": "f79c2e77bb74e6408057e4f8bc72542a0bb4f92bfa89a60d6ce389bcb3a01f7f"
+		},
+		{
+			"path": "exports/lyre-rounded-512.png",
+			"bytes": 412850,
+			"sha256": "55ceec56f4ad9b5fa29c3df28ed220ed927d380af5bb0a6d9a295e856883dc65"
+		},
+		{
+			"path": "exports/lyre-transparent-256.png",
+			"bytes": 91884,
+			"sha256": "7f61680900f72b27bae95da930be15e510e25b154263bcd114e4ecf8b0c32ffa"
+		},
+		{
+			"path": "exports/lyre-icon-256.png",
+			"bytes": 109413,
+			"sha256": "b28aecdae8f86ea73b62bbcc52551279a347447f9d928c2a0f90d6eb78cc6dad"
+		},
+		{
+			"path": "exports/lyre-rounded-256.png",
+			"bytes": 110948,
+			"sha256": "a362169a0244824e7fdcf102a0d34e62dbc4e35c52163f66d02c471c24a94d76"
+		},
+		{
+			"path": "exports/lyre-transparent-128.png",
+			"bytes": 26311,
+			"sha256": "4f86ccd30d117f74b17983d011b9e692d8526b4960f3e1c84ff7a4ff8af36749"
+		},
+		{
+			"path": "exports/lyre-icon-128.png",
+			"bytes": 31816,
+			"sha256": "a22924e70522c4ce8fab13d039a15208441974ae301e9597d686bdaef88b85ed"
+		},
+		{
+			"path": "exports/lyre-rounded-128.png",
+			"bytes": 33009,
+			"sha256": "c85af73affff7e02b127f0c7d3b0abda155bcac647e1aa7bde8fee6b1a91abb2"
+		},
+		{
+			"path": "exports/lyre-transparent-64.png",
+			"bytes": 7523,
+			"sha256": "6b617f82ff1b8edebb8c6c841793df5cb7371861baba646d34c1376e3e7633ed"
+		},
+		{
+			"path": "exports/lyre-icon-64.png",
+			"bytes": 9829,
+			"sha256": "621e91efe3117e1c90d1ed4a33884f84f5cfe47d1a1d13a4038fce174528f410"
+		},
+		{
+			"path": "exports/lyre-rounded-64.png",
+			"bytes": 10345,
+			"sha256": "69a59c0a2c7a373c4f7baeb011e3b6755ec8f0443c7751456a14275cffd2e154"
+		},
+		{
+			"path": "exports/lyre-transparent-48.png",
+			"bytes": 4542,
+			"sha256": "7a93aaf1a57cf780f2f03ffa9b1dd1b244140b40e346feb4b104ddd383cbf8f7"
+		},
+		{
+			"path": "exports/lyre-icon-48.png",
+			"bytes": 5803,
+			"sha256": "bd8355c253077b63b148cd434fbe04b42b93ce1ab054fd3cf731a8fb6f6e67cb"
+		},
+		{
+			"path": "exports/lyre-rounded-48.png",
+			"bytes": 6179,
+			"sha256": "da8cb3d7b5b5ce3ed6ff231d98480970b4be9f497ec300d77fa23676b8759a40"
+		},
+		{
+			"path": "exports/lyre-transparent-32.png",
+			"bytes": 2282,
+			"sha256": "85345ef7a76fc0bc23a3f27048a8be17405b9c118a0e8256bd9d6d0f0eb3aa3f"
+		},
+		{
+			"path": "exports/lyre-icon-32.png",
+			"bytes": 3015,
+			"sha256": "319731456bbb82cea1ff1099200e18697a8afa7cbc3acc173139db7f55d026fc"
+		},
+		{
+			"path": "exports/lyre-rounded-32.png",
+			"bytes": 3203,
+			"sha256": "0b215164e66ba05f8029bccf34463e50c600c00259c325a3bc2d74e32d979f26"
+		},
+		{
+			"path": "exports/lyre-transparent-24.png",
+			"bytes": 1435,
+			"sha256": "a5e9d5a657ff3fdfc734de1a5831846f6d22f1658a2c4205804c6da07e911b80"
+		},
+		{
+			"path": "exports/lyre-icon-24.png",
+			"bytes": 1858,
+			"sha256": "f659c11738afffc22c05ea378648ca589607b1d828f048fb587fbd602fb4554e"
+		},
+		{
+			"path": "exports/lyre-rounded-24.png",
+			"bytes": 1988,
+			"sha256": "20fc9617febbfbf304d88f0c385fbb01f6ded0ce9b7ed2b1b7ee4673dc6fcea3"
+		},
+		{
+			"path": "exports/lyre-transparent-16.png",
+			"bytes": 806,
+			"sha256": "8dd278378ab605e770dc1ba6671a3d49bcc327229c34e06560c4b2cc2897861c"
+		},
+		{
+			"path": "exports/lyre-icon-16.png",
+			"bytes": 961,
+			"sha256": "c7f592894884874d767455c3d32a33b79ed547b7b7cad9fcd5412694fcb9d584"
+		},
+		{
+			"path": "exports/lyre-rounded-16.png",
+			"bytes": 1008,
+			"sha256": "85e7a2acddf3d5d25ead6fb55570c382421a920c5087dc02227f6b168d311fae"
+		},
+		{
+			"path": "exports/lyre-white-2048.png",
+			"bytes": 3931789,
+			"sha256": "3e831658d4aaeeefcdbe460134cc5bcf643c5d87daebe420ba2d38f591de1e53"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1046087,
+			"sha256": "0f4085fa8aa6927deced0acd04740cb009c3d4049029c53df1e4605d97c60abb"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1043801,
+			"sha256": "1efbd81b9d4b34504e6b77222553c282c4c823816d5a31e2ecfc5bb98f9bc9f3"
+		}
+	]
+}

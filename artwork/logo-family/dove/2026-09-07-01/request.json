@@ -1,0 +1,49 @@
+{
+	"startedAt": "2026-09-06T20:08:22.444538+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/edits",
+	"method": "POST",
+	"contentType": "multipart/form-data",
+	"parameters": {
+		"model": "gpt-image-2",
+		"size": "2048x2048",
+		"quality": "high",
+		"n": "1",
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "5c4d6b5bbca070e1a0096695f36ec421479b8ca290bc2b0dd596ba6ebe387856",
+	"images": [
+		{
+			"index": 1,
+			"path": "../../../../public/logos/originals/dove.png",
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+			"bytes": 4062349,
+			"mime": "image/png"
+		},
+		{
+			"index": 2,
+			"path": "../../frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e",
+			"bytes": 5418502,
+			"mime": "image/png"
+		},
+		{
+			"index": 3,
+			"path": "../../references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff",
+			"bytes": 370854,
+			"mime": "image/jpeg"
+		},
+		{
+			"index": 4,
+			"path": "../../references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683,
+			"mime": "image/jpeg"
+		}
+	],
+	"transportReference": "workflow/agents/skills/azure-gpt-image-cover/scripts/generate.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}

@@ -1,0 +1,40 @@
+{
+	"recordedAt": "2026-09-06T20:21:08.020Z",
+	"project": "raven",
+	"sourceMode": "isolated-white",
+	"repository": "https://github.com/nocoo/raven",
+	"repositoryRevision": "2e082931954fc48131177c57138c6956b1cd67c9",
+	"sourcePath": "logo.png",
+	"sourceSha256": "4de4df89c83e1fe24a02c6446e158793ccef0edfb7e4ee953a538edcf2004bf8",
+	"originalBackup": "../../../../public/logos/originals/raven.png",
+	"websiteThemeEvidence": {
+		"primary": {
+			"value": "255 55% 52%",
+			"source": "packages/dashboard/src/app/globals.css --basalt-primary"
+		},
+		"background": {
+			"value": "220 14% 94%",
+			"source": "@nocoo/basalt/styles tokens --basalt-background"
+		}
+	},
+	"precedingStudy": "../2026-09-07-02",
+	"precedingRawSha256": "d7521ca9b239314bb987a37f05171bda2e0bad848605cd5540691bbbc1597056",
+	"referenceHierarchy": [
+		{
+			"index": 1,
+			"path": "input/framing-guide.png",
+			"sha256": "00ece299851e129828b98840accf867ea21bf2a2bf63525eaa0d521af35b94cb",
+			"role": "Exact desired composition: uniformly scaled preceding native drawing on a larger white field. Preserve head, expression and accessories at these exact positions; paint only natural neck/shoulder continuation through the remaining lower edge inset."
+		}
+	],
+	"guide": {
+		"source": "../2026-09-07-02/raw/generated.png",
+		"sourceSha256": "d7521ca9b239314bb987a37f05171bda2e0bad848605cd5540691bbbc1597056",
+		"nativeDimensions": [2048, 2048],
+		"scale": 0.88,
+		"resizedDimensions": [1802, 1802],
+		"offset": [123, 123],
+		"background": "#fbfcfc",
+		"method": "Uniform Lanczos resize of untouched opaque native source, centered on a near-white field; no edge extension, no retouch, no composite colored presentation."
+	}
+}

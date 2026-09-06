@@ -1,0 +1,44 @@
+{
+	"recordedAt": "2026-09-06T20:21:07.872Z",
+	"project": "dove",
+	"sourceMode": "isolated-white",
+	"repository": "https://github.com/nocoo/dove",
+	"repositoryRevision": "2f7e96b0217a800f09c2685065024ae10c34918f",
+	"sourcePath": "src/client/public/logo.png",
+	"sourceSha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+	"originalBackup": "../../../../public/logos/originals/dove.png",
+	"websiteThemeEvidence": {
+		"background": {
+			"value": "330 20% 94%",
+			"source": "src/client/styles/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "src/client/styles/globals.css --foreground"
+		},
+		"primary": {
+			"value": "340 50% 55%",
+			"source": "src/client/styles/globals.css --primary"
+		}
+	},
+	"precedingStudy": "../2026-09-07-01",
+	"precedingRawSha256": "45c397700c126a397968a9f51edb28cbf5f0ec6d31965b241728f242d5d0bd31",
+	"referenceHierarchy": [
+		{
+			"index": 1,
+			"path": "input/framing-guide.png",
+			"sha256": "a3f6e7440677d41d4f84ee18f6e5acc0169e92f01e7dfda92b77e42ca997dc40",
+			"role": "Exact desired composition: uniformly scaled preceding native drawing on a larger white field. Preserve head, expression and accessories at these exact positions; paint only natural neck/shoulder continuation through the remaining lower edge inset."
+		}
+	],
+	"guide": {
+		"source": "../2026-09-07-01/raw/generated.png",
+		"sourceSha256": "45c397700c126a397968a9f51edb28cbf5f0ec6d31965b241728f242d5d0bd31",
+		"nativeDimensions": [2048, 2048],
+		"scale": 0.84,
+		"resizedDimensions": [1720, 1720],
+		"offset": [164, 164],
+		"background": "#fbfcfc",
+		"method": "Uniform Lanczos resize of untouched opaque native source, centered on a near-white field; no edge extension, no retouch, no composite colored presentation."
+	}
+}

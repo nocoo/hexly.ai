@@ -1,0 +1,390 @@
+{
+	"createdAt": "2026-09-06T20:17:26.084Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "ae82b8f1fad4e57c69fa87bbde5f3c04af293eb5ea3d239f6eb9a00a19ed3eeb",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "0b876d608078fbf55795241541a5e237c12cb1159d157208be7034e9b3cfacd6",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "neo",
+		"original": "../../../../public/logos/originals/neo.png",
+		"background": {
+			"base": "#cba16f",
+			"light": "#f2d4a8",
+			"shade": "#aa7d51",
+			"motif": "#875a32",
+			"grainAmplitude": 1,
+			"grainSeed": 609072,
+			"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Golden lozenge impressions",
+				"description": "Loose alternating long and short rounded impressions rise through the left negative space like softened sunlit pebbles.",
+				"layers": [
+					{
+						"d": "M48 213L159 146Q176 136 186 153Q196 170 180 181L69 247Q51 258 41 241Q31 223 48 213Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M35 344L83 315Q101 305 111 322Q121 339 104 350L56 379Q38 389 28 371Q18 354 35 344Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M61 517L162 456Q179 446 189 463Q199 480 182 491L83 552Q65 562 54 545Q43 528 61 517Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M770 47L874-16Q891-25 901-9Q912 9 894 20L791 83Q773 93 763 75Q753 58 770 47Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M857 149L909 118Q926 107 936 124Q947 142 929 153L878 183Q860 194 850 176Q840 159 857 149Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M49 256L186 174",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M64 561L188 486",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M771 92L901 13",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 249,
+			"maximumChroma": 5,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 0,
+			"componentNote": "Preserve all detached identity decoration. Adjust only after examining the actual returned matte."
+		},
+		"shadows": [
+			{
+				"color": [
+					135,
+					90,
+					50
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					135,
+					90,
+					50
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.88,
+			"anchor": [
+				0.5,
+				0.5
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"extendEdges": [
+				"bottom"
+			],
+			"note": "Uniform centered placement. Continue only the already-cut neck/shoulder outside the scaled native canvas by copying its edge RGBA samples. This fills the narrow presentation inset without an internal vertical/horizontal stump. No head, expression, accessory, or native interior pixel is independently altered. The raw and unscaled extraction remain intact; inspect each extended edge and final rounded corners."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1532321,
+		"foregroundPixels": 2661983,
+		"softEdgePixels": 14864,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.88,
+		"bounds": {
+			"left": 123,
+			"top": 123,
+			"right": 1924,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -113.93174564247107,
+		"clippedPixels": 13168
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2801,
+			"sha256": "a64e764c0b696130628d663b979befbeac5945b6c15b8b52e021d9f121b663f5"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1000,
+			"sha256": "a833f458a2f907e320e9749b88017f3b5d15a1ca2c18c154d7e72d9eadb8a518"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 19917,
+			"sha256": "ae82b8f1fad4e57c69fa87bbde5f3c04af293eb5ea3d239f6eb9a00a19ed3eeb"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3883501,
+			"sha256": "f03d9eca93ac7c89475de3aac690382fe4458b38ceb5119cfbb1afb0484c1a3e"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 67751,
+			"sha256": "205fc8378f38446a0b99558ee6401e76ac159eb9d0329031569d8f051c21ec18"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1302,
+			"sha256": "78273d77301c3acecc6accf15cb99686e43ae4b135bdfc480c848fde22247140"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2291729,
+			"sha256": "079d9cfe36e14754a04901c3f828aba079e170fdf00956b3f1240b7e64ae8b3d"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3350990,
+			"sha256": "8908db84196c9a769f29e5a5ee34ced0d45c8957de5f0e52a92536660bdabead"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 101583,
+			"sha256": "aa7d1a2d41e286844b0105baac5b7838bf76167c0a8fc1764f439d5edfb92abb"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 223148,
+			"sha256": "7c79b28d6ccb4ba3ad7288c20fabb3c71893eaddd8885501cbb699de4331c6da"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 179830,
+			"sha256": "d4b3b23cbf96448c4debcbff712197dde11fc427378d4f91deb150d0cb36b291"
+		},
+		{
+			"path": "exports/neo-transparent-2048.png",
+			"bytes": 3350990,
+			"sha256": "8908db84196c9a769f29e5a5ee34ced0d45c8957de5f0e52a92536660bdabead"
+		},
+		{
+			"path": "exports/neo-icon-2048.png",
+			"bytes": 4744744,
+			"sha256": "99f4dff32ee8ef1fbac4c37e36c4225ef9d787079b3192d2f708d91d0ee2653a"
+		},
+		{
+			"path": "exports/neo-rounded-2048.png",
+			"bytes": 4655997,
+			"sha256": "5471b7b9388f728262af1aa66a4e6679c6534929bd055c5889df969cfac78150"
+		},
+		{
+			"path": "exports/neo-transparent-1024.png",
+			"bytes": 980661,
+			"sha256": "93cebbfbe1d56b3c2ce685f8fc8d6f23829bea1018be361bf8503c2b7d848cce"
+		},
+		{
+			"path": "exports/neo-icon-1024.png",
+			"bytes": 1298960,
+			"sha256": "6c1c0bc1448aee7c53eeb9f224dab14e3051076298e5515b05d70e5c7d1bfbe9"
+		},
+		{
+			"path": "exports/neo-rounded-1024.png",
+			"bytes": 1293626,
+			"sha256": "9ace4822aaaa1cf3e5f8c974c30e37adbd1537864e327a226185a699164d9c17"
+		},
+		{
+			"path": "exports/neo-transparent-512.png",
+			"bytes": 311064,
+			"sha256": "3ba9bed12a459497e7a35e60ae264512e63fa2fb640478a5f7a3bab8b9a9d51f"
+		},
+		{
+			"path": "exports/neo-icon-512.png",
+			"bytes": 413414,
+			"sha256": "668c43157c8dd90f59df31df0a70feeabcc25292f4bec287ac86fa8b0b8d6289"
+		},
+		{
+			"path": "exports/neo-rounded-512.png",
+			"bytes": 412885,
+			"sha256": "b743c38575fa71874f6e27f543e7e1311361a9e8e0e677d2cb422e47460579af"
+		},
+		{
+			"path": "exports/neo-transparent-256.png",
+			"bytes": 97568,
+			"sha256": "f7b5dd1ff1e603ee6b27393be19203116ccd858e19f13baf33e139a9c71dd6d0"
+		},
+		{
+			"path": "exports/neo-icon-256.png",
+			"bytes": 115862,
+			"sha256": "c141e4f67143fa7927f2f7251fb7189ee74ea5f1bef0bcdd4a69b17103528252"
+		},
+		{
+			"path": "exports/neo-rounded-256.png",
+			"bytes": 118241,
+			"sha256": "da6cc13b1503c22efc92b6f262cd32e855737e65db1425de7c7121405b016a23"
+		},
+		{
+			"path": "exports/neo-transparent-128.png",
+			"bytes": 28582,
+			"sha256": "38538cc1c1abec4ae6c33356deee63ff3afddfb4d1b380e87c571f75cf760dd9"
+		},
+		{
+			"path": "exports/neo-icon-128.png",
+			"bytes": 34608,
+			"sha256": "2a68aff8095d7dc7d3c976ef85efd9d6e16b3e633ab7e116c42213e039c764fe"
+		},
+		{
+			"path": "exports/neo-rounded-128.png",
+			"bytes": 35959,
+			"sha256": "596077a2051052b591fd9694609235de544b52683e4643866649e7961892de25"
+		},
+		{
+			"path": "exports/neo-transparent-64.png",
+			"bytes": 8236,
+			"sha256": "99a669db1f29b28ec979022f1064aab63f743df05edd19e40e26bfd6086ee1e2"
+		},
+		{
+			"path": "exports/neo-icon-64.png",
+			"bytes": 10736,
+			"sha256": "54b95c45af24627aa28c199ef6942c9318c5add41331c5b9c9dfe9eb5300647f"
+		},
+		{
+			"path": "exports/neo-rounded-64.png",
+			"bytes": 11202,
+			"sha256": "4b5453cf3a25df2567e71c68fed2fb35c84839c8243366d9b79dbb381b1bcb76"
+		},
+		{
+			"path": "exports/neo-transparent-48.png",
+			"bytes": 4994,
+			"sha256": "26be716f45c06c2c1ae5b685d8b836c12d054598e73a43adb07f573d87b3d2e1"
+		},
+		{
+			"path": "exports/neo-icon-48.png",
+			"bytes": 6349,
+			"sha256": "e1ad614c9ae9217cb91283184dd9ab2c70ea26dc98d201cf1885992e5e2665a3"
+		},
+		{
+			"path": "exports/neo-rounded-48.png",
+			"bytes": 6706,
+			"sha256": "30468a8c45e00bf9d864fa12c83552cb410a4f6df975fd33601ec82821abec9c"
+		},
+		{
+			"path": "exports/neo-transparent-32.png",
+			"bytes": 2537,
+			"sha256": "63753b3a6c93eb506efdd6368b200d3cd6bcdab299e88022f80e649b724882b4"
+		},
+		{
+			"path": "exports/neo-icon-32.png",
+			"bytes": 3227,
+			"sha256": "5296d761c08695d07571fad3cac7d4cd857de182edebdc5c9590a38f2738d5e9"
+		},
+		{
+			"path": "exports/neo-rounded-32.png",
+			"bytes": 3347,
+			"sha256": "5ad51dd81070d9604485ca700c99c60ab5b156cb2b58e21e3cac73148038f806"
+		},
+		{
+			"path": "exports/neo-transparent-24.png",
+			"bytes": 1580,
+			"sha256": "60dfd182333a2b4092768a6cda3cd2823181ae76486c43fbdb02435454f0b414"
+		},
+		{
+			"path": "exports/neo-icon-24.png",
+			"bytes": 1944,
+			"sha256": "30cf9cffc151083b17f810b11edc73fa9b8dfcf6dff8d7e4ec37d56d424af521"
+		},
+		{
+			"path": "exports/neo-rounded-24.png",
+			"bytes": 2044,
+			"sha256": "9faedb3f64d32d92f43da46538e2c5fbda3ff94612f601ca83b6f6a88a3b9ee2"
+		},
+		{
+			"path": "exports/neo-transparent-16.png",
+			"bytes": 848,
+			"sha256": "c7eb68e82dd73fb7a78390252d5b41494d0a32065ced5fef1518486f3f6b0208"
+		},
+		{
+			"path": "exports/neo-icon-16.png",
+			"bytes": 976,
+			"sha256": "692496bd99989711be1dd9df9c7dc9ceb5bb9fd5b7bf725050bc54de10c41b4d"
+		},
+		{
+			"path": "exports/neo-rounded-16.png",
+			"bytes": 1005,
+			"sha256": "bd0d7474358eeea6ae26a5874880aa98c330c17095c3a81895570e6f79753077"
+		},
+		{
+			"path": "exports/neo-white-2048.png",
+			"bytes": 3133710,
+			"sha256": "8b13b562acb55b6fa29ab312234e8b8af113206b35857c519315ab64bdaa6ffd"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 928781,
+			"sha256": "a2670ef2dc63c089937d399ac5a1fe7836a470322a719275a86138e6b449b289"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 948078,
+			"sha256": "239338db47375112d940788ec2fe423b4d70b3f198325778e5442f88dc6decf9"
+		}
+	]
+}

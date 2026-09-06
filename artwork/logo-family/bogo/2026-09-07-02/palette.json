@@ -1,0 +1,107 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "6c72a91186995069831f39e439f4cb1a64e8dc74e04d7fadec970e690fcab7fe",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels in visually selected animal/accessory regions. Samples are fully opaque and stable in their immediate neighborhood. Coordinates precede any documented integer placement. No generated palette values are substituted for sampled pixels.",
+	"foreground": [
+		{
+			"role": "Walnut",
+			"label": {
+				"en": "Walnut",
+				"zh": "胡桃棕"
+			},
+			"x": 1118,
+			"y": 778,
+			"rgb": [136, 99, 76],
+			"hex": "#88634c"
+		},
+		{
+			"role": "Horn gold",
+			"label": {
+				"en": "Horn gold",
+				"zh": "牛角金"
+			},
+			"x": 1162,
+			"y": 314,
+			"rgb": [210, 171, 111],
+			"hex": "#d2ab6f"
+		},
+		{
+			"role": "Charcoal",
+			"label": {
+				"en": "Charcoal",
+				"zh": "炭黑"
+			},
+			"x": 788,
+			"y": 748,
+			"rgb": [36, 33, 39],
+			"hex": "#242127"
+		},
+		{
+			"role": "Coral",
+			"label": {
+				"en": "Coral",
+				"zh": "珊瑚红"
+			},
+			"x": 508,
+			"y": 1226,
+			"rgb": [241, 91, 53],
+			"hex": "#f15b35"
+		},
+		{
+			"role": "Leaf",
+			"label": {
+				"en": "Leaf",
+				"zh": "叶绿"
+			},
+			"x": 1260,
+			"y": 1236,
+			"rgb": [113, 168, 74],
+			"hex": "#71a84a"
+		},
+		{
+			"role": "Sky",
+			"label": {
+				"en": "Sky",
+				"zh": "天蓝"
+			},
+			"x": 484,
+			"y": 1416,
+			"rgb": [87, 160, 208],
+			"hex": "#57a0d0"
+		},
+		{
+			"role": "Violet",
+			"label": {
+				"en": "Violet",
+				"zh": "紫罗兰"
+			},
+			"x": 662,
+			"y": 1524,
+			"rgb": [146, 98, 182],
+			"hex": "#9262b6"
+		}
+	],
+	"background": {
+		"role": "Warm mineral",
+		"label": {
+			"en": "Warm mineral",
+			"zh": "暖砂色"
+		},
+		"hex": "#b7a186",
+		"light": "#e0ccaf",
+		"shade": "#958370",
+		"motif": "#6d5843",
+		"motifOpacity": 0.14,
+		"pattern": "Mineral horn arches",
+		"status": "Designed presentation for finishing 02; separate from the existing UI palette."
+	},
+	"existingSitePrimary": {
+		"hex": "#0051bd",
+		"source": "packages/ui/src/index.css --primary",
+		"status": "Existing project UI token"
+	}
+}

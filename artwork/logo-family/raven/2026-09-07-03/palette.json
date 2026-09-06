@@ -1,0 +1,85 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "bfa00c38b80efda248072013854d4a812bc789098894c3f49dacafa8a3def8b4",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels in visually selected animal/accessory regions. Samples are fully opaque and stable in their immediate neighborhood. Coordinates precede any documented integer placement. No generated palette values are substituted for sampled pixels.",
+	"foreground": [
+		{
+			"role": "Indigo",
+			"label": {
+				"en": "Indigo",
+				"zh": "靛蓝"
+			},
+			"x": 636,
+			"y": 1872,
+			"rgb": [51, 71, 135],
+			"hex": "#334787"
+		},
+		{
+			"role": "Cyan",
+			"label": {
+				"en": "Cyan",
+				"zh": "青蓝"
+			},
+			"x": 896,
+			"y": 1178,
+			"rgb": [101, 213, 225],
+			"hex": "#65d5e1"
+		},
+		{
+			"role": "Mint",
+			"label": {
+				"en": "Mint",
+				"zh": "薄荷绿"
+			},
+			"x": 1168,
+			"y": 366,
+			"rgb": [127, 214, 183],
+			"hex": "#7fd6b7"
+		},
+		{
+			"role": "Violet",
+			"label": {
+				"en": "Violet",
+				"zh": "紫罗兰"
+			},
+			"x": 558,
+			"y": 454,
+			"rgb": [100, 63, 146],
+			"hex": "#643f92"
+		},
+		{
+			"role": "Ink",
+			"label": {
+				"en": "Ink",
+				"zh": "墨蓝"
+			},
+			"x": 1028,
+			"y": 596,
+			"rgb": [4, 7, 36],
+			"hex": "#040724"
+		}
+	],
+	"background": {
+		"role": "Dusk blue",
+		"label": {
+			"en": "Dusk blue",
+			"zh": "暮蓝底色"
+		},
+		"hex": "#969cbf",
+		"light": "#c8d0e3",
+		"shade": "#767fa4",
+		"motif": "#4a577e",
+		"motifOpacity": 0.14,
+		"pattern": "Offset feather vanes",
+		"status": "Designed presentation for finishing 02; separate from the existing UI palette."
+	},
+	"existingSitePrimary": {
+		"hex": "#6341c8",
+		"source": "packages/dashboard/src/app/globals.css --basalt-primary",
+		"status": "Existing project UI token"
+	}
+}

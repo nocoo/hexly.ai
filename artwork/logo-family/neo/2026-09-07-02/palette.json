@@ -1,0 +1,85 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "3450916bc2cea7cebb350e5e292d0c24245f4bf703affba2ae4db6b2092621ed",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels in visually selected animal/accessory regions. Samples are fully opaque and stable in their immediate neighborhood. Coordinates precede any documented integer placement. No generated palette values are substituted for sampled pixels.",
+	"foreground": [
+		{
+			"role": "Golden",
+			"label": {
+				"en": "Golden",
+				"zh": "金黄"
+			},
+			"x": 1046,
+			"y": 496,
+			"rgb": [242, 177, 85],
+			"hex": "#f2b155"
+		},
+		{
+			"role": "Cream",
+			"label": {
+				"en": "Cream",
+				"zh": "奶油白"
+			},
+			"x": 1340,
+			"y": 336,
+			"rgb": [252, 235, 196],
+			"hex": "#fcebc4"
+		},
+		{
+			"role": "Honey",
+			"label": {
+				"en": "Honey",
+				"zh": "蜂蜜棕"
+			},
+			"x": 332,
+			"y": 878,
+			"rgb": [183, 114, 66],
+			"hex": "#b77242"
+		},
+		{
+			"role": "Charcoal",
+			"label": {
+				"en": "Charcoal",
+				"zh": "炭黑"
+			},
+			"x": 962,
+			"y": 1042,
+			"rgb": [32, 32, 39],
+			"hex": "#202027"
+		},
+		{
+			"role": "Coral",
+			"label": {
+				"en": "Coral",
+				"zh": "珊瑚粉"
+			},
+			"x": 952,
+			"y": 1312,
+			"rgb": [242, 122, 129],
+			"hex": "#f27a81"
+		}
+	],
+	"background": {
+		"role": "Golden paper",
+		"label": {
+			"en": "Golden paper",
+			"zh": "金色纸面"
+		},
+		"hex": "#cba16f",
+		"light": "#f2d4a8",
+		"shade": "#aa7d51",
+		"motif": "#875a32",
+		"motifOpacity": 0.14,
+		"pattern": "Golden lozenge impressions",
+		"status": "Designed presentation for finishing 02; separate from the existing UI palette."
+	},
+	"existingSitePrimary": {
+		"hex": "#3c83f6",
+		"source": "app/globals.css imports @nocoo/basalt/styles",
+		"status": "Existing project UI token"
+	}
+}

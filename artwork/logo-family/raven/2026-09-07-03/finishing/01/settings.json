@@ -1,0 +1,91 @@
+{
+	"project": "raven",
+	"original": "../../../../public/logos/originals/raven.png",
+	"background": {
+		"base": "#969cbf",
+		"light": "#c8d0e3",
+		"shade": "#767fa4",
+		"motif": "#4a577e",
+		"grainAmplitude": 1,
+		"grainSeed": 609074,
+		"status": "Designed presentation under explicit owner-delegated batch acceptance; separate from source UI tokens.",
+		"motifOpacity": 0.14,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Offset feather vanes",
+			"description": "Short paired diagonal vanes and separated angular cuts build an asymmetric feather rhythm outside the dark head.",
+			"layers": [
+				{
+					"d": "M17 128L118 71L192 127L172 145L115 109L29 160Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M11 256L128 190L214 254L193 273L124 229L21 290Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M9 394L133 324L207 378L188 398L131 363L15 430Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M38 542L143 484L212 533L194 552L139 521L47 576Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M760 9L842 72L1008 60L1013 94L831 109L735 34Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M18 295L129 236L195 279",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M12 437L133 370L189 404",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M738 42L829 117L1018 102",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 8,
+		"backgroundRgb": [251, 251, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 16,
+		"componentNote": "Only sub-16-pixel isolated matte residue may be removed, with component bounds and counts inspected. Every legitimate detached blossom petal is much larger and must remain."
+	},
+	"shadows": [
+		{
+			"color": [74, 87, 126],
+			"opacity": 0.14,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 23]
+		},
+		{
+			"color": [74, 87, 126],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 1,
+		"intentionalEdges": ["bottom", "lower-left"],
+		"note": "The image model left a short vertical lower-neck cut about 106px inside the left frame. Translate the whole foreground 106px left, without resizing or pixel extension, so only that lower neck intersects the canvas. Expression and beak remain safe.",
+		"offsetAt2048": [-106, 0]
+	}
+}
