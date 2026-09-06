@@ -1,4 +1,4 @@
-import type { RefObject } from "react";
+import { type RefObject, useCallback, useEffect } from "react";
 import { categoryLabels, copy } from "../data/copy";
 import {
 	categories,
@@ -34,11 +34,40 @@ export function Gallery({
 	const counts = categoryCounts(projects);
 	const foreground = project?.family?.foreground ?? project?.logo;
 	const selectedIndex = visible.findIndex((item) => item.id === project?.id);
-	const move = (offset: number) => {
-		const next =
-			visible[(selectedIndex + offset + visible.length) % visible.length];
-		if (next) onChange({ project: next.id });
-	};
+	const move = useCallback(
+		(offset: number) => {
+			if (visible.length < 2) return;
+			const next =
+				visible[(selectedIndex + offset + visible.length) % visible.length];
+			if (next) onChange({ project: next.id });
+		},
+		[visible, selectedIndex, onChange],
+	);
+	useEffect(() => {
+		const onKeyDown = (event: KeyboardEvent) => {
+			if (
+				visible.length < 2 ||
+				event.defaultPrevented ||
+				event.isComposing ||
+				event.altKey ||
+				event.ctrlKey ||
+				event.metaKey ||
+				event.shiftKey ||
+				(event.key !== "ArrowLeft" && event.key !== "ArrowRight")
+			)
+				return;
+			const target = event.target;
+			if (
+				target instanceof HTMLElement &&
+				(target.isContentEditable || target.closest("input, textarea, select"))
+			)
+				return;
+			event.preventDefault();
+			move(event.key === "ArrowLeft" ? -1 : 1);
+		};
+		window.addEventListener("keydown", onKeyDown);
+		return () => window.removeEventListener("keydown", onKeyDown);
+	}, [move, visible.length]);
 	return (
 		<main id="main-content" className="shell gallery-main">
 			<div className="gallery-heading">
@@ -100,22 +129,53 @@ export function Gallery({
 			{project ? (
 				<section className="identity-detail" aria-labelledby="identity-title">
 					<div className="identity-heading">
-						<div>
+						<div className="identity-summary">
 							<p className="identity-category">
 								{categoryLabels[locale][project.category]}
 								{project.archived &&
 									project.category !== "archive" &&
 									` · ${categoryLabels[locale].archive}`}
 							</p>
-							<h2 id="identity-title">
-								{project.title}
-								<span aria-hidden="true">{project.emoji}</span>
+							<h2 id="identity-title" title={project.title}>
+								<span className="identity-name">{project.title}</span>
+								<span className="identity-emoji" aria-hidden="true">
+									{project.emoji}
+								</span>
 							</h2>
-							<p className="identity-description">
+							<p
+								className="identity-description"
+								title={project.description[locale]}
+							>
 								{project.description[locale]}
 							</p>
 						</div>
 						<div className="identity-meta">
+							<div className="identity-links">
+								{project.website && (
+									<a
+										className="button button-secondary identity-website"
+										href={project.website}
+										target="_blank"
+										rel="noreferrer"
+										aria-label={`${t.visit}: ${project.title}`}
+									>
+										<Icon name="globe" />
+										{t.visit}
+										<Icon name="arrow" />
+									</a>
+								)}
+								<a
+									className="button button-secondary identity-github"
+									href={project.repository}
+									target="_blank"
+									rel="noreferrer"
+									aria-label={`${t.source}: ${project.title}`}
+								>
+									<Icon name="github" />
+									GitHub
+									<Icon name="arrow" />
+								</a>
+							</div>
 							<span className="asset-label">
 								{project.family
 									? t.refined
@@ -138,6 +198,9 @@ export function Gallery({
 									className="icon-button"
 									type="button"
 									aria-label={t.previous}
+									aria-keyshortcuts="ArrowLeft"
+									title={`${t.previous} (←)`}
+									disabled={visible.length < 2}
 									onClick={() => move(-1)}
 								>
 									<Icon name="left" />
@@ -146,6 +209,9 @@ export function Gallery({
 									className="icon-button"
 									type="button"
 									aria-label={t.next}
+									aria-keyshortcuts="ArrowRight"
+									title={`${t.next} (→)`}
+									disabled={visible.length < 2}
 									onClick={() => move(1)}
 								>
 									<Icon name="right" />
@@ -190,16 +256,6 @@ export function Gallery({
 								<Icon name="link" />
 								{t.share}
 							</button>
-							<a
-								className="icon-button repository-link"
-								href={project.repository}
-								target="_blank"
-								rel="noreferrer"
-								aria-label={t.source}
-								title={t.source}
-							>
-								<Icon name="github" />
-							</a>
 						</div>
 					</div>
 				</section>

@@ -12,6 +12,20 @@ for (const id of projects
 		const { family } = project;
 		await page.goto(`/logos/${id}`);
 		await expect(page.locator("#identity-title")).toContainText(project.title);
+		const repository = page
+			.locator(".identity-heading")
+			.getByRole("link", { name: `View on GitHub: ${project.title}` });
+		await expect(repository).toBeVisible();
+		await expect(repository).toHaveText("GitHub");
+		await expect(repository).toHaveAttribute("href", project.repository);
+		const website = page.locator(".identity-website");
+		if (project.website) {
+			await expect(website).toBeVisible();
+			await expect(website).toHaveText("Visit website");
+			await expect(website).toHaveAttribute("href", project.website);
+		} else {
+			await expect(website).toHaveCount(0);
+		}
 		await expect(page.locator(".artwork-image")).toHaveAttribute(
 			"src",
 			`${family.root}/icon-1024.webp`,
@@ -157,6 +171,158 @@ test("copies current palette colors and a reusable gallery link", async ({
 	expect(new URL(link).search).toBe("");
 	await page.goto(link);
 	await expect(page.locator("#identity-title")).toContainText("Pew");
+});
+
+test("browses filtered identities with arrow keys, wraps, and preserves history", async ({
+	page,
+}) => {
+	await page.goto("/logos/pew?q=pew&sort=az");
+	await expect(page.locator(".picker-item")).toHaveCount(2);
+	await expect(
+		page.getByRole("button", { name: "Previous identity" }),
+	).toHaveAttribute("aria-keyshortcuts", "ArrowLeft");
+	await expect(
+		page.getByRole("button", { name: "Next identity" }),
+	).toHaveAttribute("aria-keyshortcuts", "ArrowRight");
+	await page.keyboard.press("ArrowRight");
+	await expect(page).toHaveURL(/\/logos\/pew-game\?q=pew&sort=az$/);
+	await expect(page.locator("#identity-title")).toContainText("Pew Game");
+	await page.keyboard.press("ArrowRight");
+	await expect(page).toHaveURL(/\/logos\/pew\?q=pew&sort=az$/);
+	await page.keyboard.press("ArrowLeft");
+	await expect(page).toHaveURL(/\/logos\/pew-game\?q=pew&sort=az$/);
+	await page.goBack();
+	await expect(page).toHaveURL(/\/logos\/pew\?q=pew&sort=az$/);
+	await page.goForward();
+	await expect(page).toHaveURL(/\/logos\/pew-game\?q=pew&sort=az$/);
+	await page
+		.getByRole("combobox", { name: "Project categories" })
+		.selectOption("games");
+	await expect(page.locator(".picker-item")).toHaveCount(1);
+	await expect(
+		page.getByRole("button", { name: "Next identity" }),
+	).toBeDisabled();
+	await expect(
+		page.getByRole("button", { name: "Previous identity" }),
+	).toBeDisabled();
+	await page.locator(".identity-github").focus();
+	const singleUrl = page.url();
+	const historyLength = await page.evaluate(() => history.length);
+	await page.keyboard.press("ArrowRight");
+	await expect(page).toHaveURL(singleUrl);
+	expect(await page.evaluate(() => history.length)).toBe(historyLength);
+	await page.getByRole("searchbox").fill("there-is-no-such-project");
+	await page.getByRole("button", { name: "Reset filters" }).focus();
+	const emptyUrl = page.url();
+	await page.keyboard.press("ArrowLeft");
+	await expect(page).toHaveURL(emptyUrl);
+});
+
+test("keeps arrow keys in editable controls and ignores modified or handled keys", async ({
+	page,
+}) => {
+	await page.goto("/logos/pew?q=pew");
+	const url = page.url();
+	const search = page.getByRole("searchbox", { name: "Search projects" });
+	await search.focus();
+	await search.press("End");
+	await search.press("ArrowLeft");
+	await expect(page).toHaveURL(url);
+	await expect(search).toBeFocused();
+	const category = page.getByRole("combobox", { name: "Project categories" });
+	await category.focus();
+	const prevented = await category.evaluate(
+		(element) =>
+			!element.dispatchEvent(
+				new KeyboardEvent("keydown", {
+					key: "ArrowRight",
+					bubbles: true,
+					cancelable: true,
+				}),
+			),
+	);
+	expect(prevented).toBe(false);
+	await expect(page).toHaveURL(url);
+	const editableDefaults = await page.evaluate(() => {
+		const results: boolean[] = [];
+		for (const tag of ["textarea", "div"]) {
+			const element = document.createElement(tag);
+			if (tag === "div") element.contentEditable = "true";
+			document.body.append(element);
+			element.focus();
+			results.push(
+				element.dispatchEvent(
+					new KeyboardEvent("keydown", {
+						key: "ArrowLeft",
+						bubbles: true,
+						cancelable: true,
+					}),
+				),
+			);
+			element.remove();
+		}
+		return results;
+	});
+	expect(editableDefaults).toEqual([true, true]);
+	await expect(page).toHaveURL(url);
+	await page.locator(".identity-github").focus();
+	for (const modifier of ["Alt", "Control", "Meta", "Shift"])
+		await page.keyboard.press(`${modifier}+ArrowRight`);
+	await expect(page).toHaveURL(url);
+	await page.evaluate(() => {
+		document.dispatchEvent(
+			new KeyboardEvent("keydown", {
+				key: "ArrowRight",
+				isComposing: true,
+				bubbles: true,
+				cancelable: true,
+			}),
+		);
+		const handled = new KeyboardEvent("keydown", {
+			key: "ArrowRight",
+			bubbles: true,
+			cancelable: true,
+		});
+		handled.preventDefault();
+		document.dispatchEvent(handled);
+	});
+	await expect(page).toHaveURL(url);
+	await page
+		.getByRole("navigation", { name: "Main navigation" })
+		.getByRole("button", { name: "Projects", exact: true })
+		.click();
+	await page.keyboard.press("ArrowRight");
+	await expect(page).toHaveURL(/\/$/);
+});
+
+test("keeps the artwork in place when descriptions wrap or projects change", async ({
+	page,
+	isMobile,
+}) => {
+	if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
+	await page.goto("/logos/frogie");
+	await page.evaluate(() => document.fonts.ready);
+	for (const locale of ["en", "zh"]) {
+		if (locale === "zh")
+			await page.getByRole("button", { name: "Switch to Chinese" }).click();
+		await page.locator(".identity-github").focus();
+		await page.evaluate(() =>
+			window.scrollTo({ top: 300, behavior: "instant" }),
+		);
+		const start = await page.locator(".logo-review").boundingBox();
+		if (!start) throw new Error("Missing artwork review");
+		await page.locator(".identity-description").evaluate((element) => {
+			element.textContent = `${element.textContent} `.repeat(10);
+		});
+		const wrapped = await page.locator(".logo-review").boundingBox();
+		expect(wrapped?.y).toBeCloseTo(start.y, 0);
+		for (let index = 0; index < 7; index += 1) {
+			await page.keyboard.press("ArrowRight");
+			const current = await page.locator(".logo-review").boundingBox();
+			expect(current?.y).toBeCloseTo(start.y, 0);
+			expect(await page.evaluate(() => scrollY)).toBe(300);
+		}
+	}
 });
 
 test("searches the gallery, labels emoji identities, and recovers from empty or unknown selections", async ({

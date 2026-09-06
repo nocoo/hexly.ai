@@ -22,6 +22,16 @@ test("renders active projects with local logos, redraw badges, and working desti
 		"Small ideas.A little universe.",
 	);
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
+	expect(
+		await page.locator(".card-github").evaluateAll((links) =>
+			links.map((link) => ({
+				label: link.textContent?.trim(),
+				href: link.getAttribute("href"),
+			})),
+		),
+	).toEqual(
+		active.map((project) => ({ label: "GitHub", href: project.repository })),
+	);
 	const refined = active.filter((project) => project.family);
 	await expect(page.locator(".refined-badge")).toHaveCount(refined.length);
 	for (const project of refined) {
@@ -42,14 +52,13 @@ test("renders active projects with local logos, redraw badges, and working desti
 			}),
 		);
 	});
-	await expect(page.locator('[data-project="pew"] h3 a')).toHaveAttribute(
+	await expect(page.locator('[data-project="pew"] .card-main')).toHaveAttribute(
 		"href",
-		"https://pew.md",
+		"/logos/pew",
 	);
-	await expect(page.locator('[data-project="frogie"] h3 a')).toHaveAttribute(
-		"href",
-		"https://github.com/nocoo/frogie",
-	);
+	await expect(
+		page.locator('[data-project="frogie"] .card-main'),
+	).toHaveAttribute("href", "/logos/frogie");
 	expect(
 		await page.evaluate(
 			() => document.documentElement.scrollWidth <= innerWidth,
@@ -81,7 +90,7 @@ test("combines search and categories, resets empty results, and sorts by name", 
 	await search.press("Escape");
 	await expect(search).toHaveValue("");
 	await page.getByLabel("Sort projects").selectOption("az");
-	const names = await page.locator(".project-card h3 a").allTextContents();
+	const names = await page.locator(".project-card h3").allTextContents();
 	expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b)));
 	await expect(page).toHaveURL(/sort=az/);
 });
@@ -107,6 +116,9 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(
 		page.locator('[data-project="frogie"] .refined-badge'),
 	).toHaveText("已重绘");
+	await expect(
+		page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
+	).toHaveAttribute("href", "https://github.com/nocoo/frogie");
 	await page.getByRole("button", { name: "切换到浅色主题" }).click();
 	await page.getByRole("button", { name: "Switch to English" }).click();
 	await page.reload();
@@ -121,8 +133,8 @@ test("restores directory filters with browser back and reloads a shared identity
 	await page.getByRole("searchbox", { name: "Search projects" }).fill("pew");
 	await page
 		.locator('[data-project="pew"]')
-		.getByRole("button", { name: "View logo: Pew", exact: true })
-		.click();
+		.getByRole("link", { name: "View logo: Pew", exact: true })
+		.click({ position: { x: 8, y: 8 } });
 	await expect(page).toHaveURL(/\/logos\/pew$/);
 	await expect(page.locator("#identity-title")).toContainText("Pew");
 	await page.reload();
@@ -152,7 +164,7 @@ test("keeps archived projects accessible through their category and direct logo 
 	await expect(page.locator(".project-card")).toHaveCount(archived.length);
 	await page
 		.locator('[data-project="uptime-kuma-skill"]')
-		.getByRole("button", { name: "View logo: Uptime Kuma Skill" })
+		.getByRole("link", { name: "View logo: Uptime Kuma Skill" })
 		.click();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
@@ -176,6 +188,35 @@ test("keeps archived projects accessible through their category and direct logo 
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
 	);
+});
+
+test("keeps repository clicks separate and supports card links in another tab", async ({
+	page,
+	context,
+}) => {
+	await context.route("https://github.com/nocoo/pew", (route) =>
+		route.fulfill({
+			contentType: "text/html",
+			body: "<title>Pew repository</title>",
+		}),
+	);
+	await page.goto("/");
+	const card = page.locator('[data-project="pew"]');
+	const repositoryPage = page.waitForEvent("popup");
+	await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
+	const repository = await repositoryPage;
+	await expect(repository).toHaveURL("https://github.com/nocoo/pew");
+	await expect(page).toHaveURL(/\/$/);
+	await repository.close();
+	const detailPage = context.waitForEvent("page");
+	await card
+		.getByRole("link", { name: "View logo: Pew" })
+		.click({ button: "middle" });
+	const detail = await detailPage;
+	await expect(detail).toHaveURL(/\/logos\/pew$/);
+	await expect(detail.locator("#identity-title")).toContainText("Pew");
+	await expect(page).toHaveURL(/\/$/);
+	await detail.close();
 });
 
 test.describe("system preferences", () => {
