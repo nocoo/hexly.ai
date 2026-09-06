@@ -1,0 +1,274 @@
+{
+	"createdAt": "2026-09-06T07:33:30.814Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "730f78a156397743d0f17ebbd818e6d441fe7c40e945f1973307e9d1676a78e8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "2097aa50fe3af1c214058c3a3aec0863081e9071433e869900486cfbc3654efd",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; local two-pixel alpha matting and edge color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "frogie",
+		"original": "../../../../public/logos/originals/frogie.png",
+		"background": {
+			"base": "#dce6ca",
+			"light": "#eef2df",
+			"shade": "#c6d3b0",
+			"motif": "#81966c",
+			"grainAmplitude": 1,
+			"grainSeed": 60906,
+			"status": "Proposed presentation colors; not existing project tokens."
+		},
+		"matte": {
+			"minimumChannel": 240,
+			"maximumChroma": 22,
+			"backgroundRgb": [251, 251, 252],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.97
+		},
+		"shadows": [
+			{
+				"color": [62, 79, 38],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [10, 24]
+			},
+			{
+				"color": [49, 68, 31],
+				"opacity": 0.11,
+				"blurAt2048": 7,
+				"offsetAt2048": [2, 7]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16]
+	},
+	"statistics": {
+		"backgroundPixels": 2675032,
+		"foregroundPixels": 1519272,
+		"softEdgePixels": 13995,
+		"bounds": {
+			"left": 192,
+			"top": 156,
+			"right": 1886,
+			"bottom": 1928
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 818,
+			"sha256": "7af5afdc01aa27444fe8b6da667b0d11322a39e6f190bd790c6df0b42d697059"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 87021,
+			"sha256": "401482760d98207bcb2bf40b1f1b403f68ae6f0f62b243b8490a7f14b227e5d4"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 804,
+			"sha256": "ef839708444819b4c8976a83aadbf699f71bdc7cc31310d5f343d55d481f028b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1964790,
+			"sha256": "4f0b9a501e81b05db45b491119a0bdd0877b3ff2191c670abdddbea38d7e0150"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 287129,
+			"sha256": "1957b9cdb590f7cd07d8c8c2c24613001396128b2fb28383b9fdbc80e7c4f392"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 213021,
+			"sha256": "6cec0c9fbcdaa7caf6b1f25af1e11de6fd9def1bf86dab76d914cc89750aa53f"
+		},
+		{
+			"path": "exports/frogie-transparent-2048.png",
+			"bytes": 3591348,
+			"sha256": "9b64d0a73267cc82d47ee252817144c3e3ed7a9b11a79c55f74f7e51266b37c6"
+		},
+		{
+			"path": "exports/frogie-icon-2048.png",
+			"bytes": 5424944,
+			"sha256": "dd29bf9b155155706fc38169e17a15b4bc13e8b4b553d1caf04556a70a8fe72c"
+		},
+		{
+			"path": "exports/frogie-rounded-2048.png",
+			"bytes": 5342616,
+			"sha256": "ef9e3a8f59b3838e5adaddbac18f52d2098854c7b3a238ee416f227b1b77df0d"
+		},
+		{
+			"path": "exports/frogie-transparent-1024.png",
+			"bytes": 974499,
+			"sha256": "1dc61036c78eae8544c4bee0b0dad7b537ff7af7d7fceba3f321811660cbf49f"
+		},
+		{
+			"path": "exports/frogie-icon-1024.png",
+			"bytes": 1367721,
+			"sha256": "14390fc68af24c5e602577532e4f544b603a0bd7a2a7ddddef3ded14ff351758"
+		},
+		{
+			"path": "exports/frogie-rounded-1024.png",
+			"bytes": 1364382,
+			"sha256": "006df19e508886ccab5b87254634fe9856269bb5386dfcca230cc1f2904f967b"
+		},
+		{
+			"path": "exports/frogie-transparent-512.png",
+			"bytes": 288615,
+			"sha256": "d46bb8dd888951ab29d24b5e1637da1c71567bcd77e8d7b31bca96ac1f4872c7"
+		},
+		{
+			"path": "exports/frogie-icon-512.png",
+			"bytes": 409644,
+			"sha256": "779ed961b758ef84a375f89e59a4b13b6bbe3ff198f8930111e0e225aa95842b"
+		},
+		{
+			"path": "exports/frogie-rounded-512.png",
+			"bytes": 410318,
+			"sha256": "c6d8de14b8d697b458b1c4b86e67dd4a57e0c63c3fa4811f0733c96cdd3e3405"
+		},
+		{
+			"path": "exports/frogie-transparent-256.png",
+			"bytes": 86836,
+			"sha256": "29b6b52d733a8069441fdaab08d7b777b8f73e6044a013d70413c84b8fabd67e"
+		},
+		{
+			"path": "exports/frogie-icon-256.png",
+			"bytes": 106549,
+			"sha256": "ce5b032e50e509067db6c864d4753ad72a3216939ebe4e6efec9656f4521503a"
+		},
+		{
+			"path": "exports/frogie-rounded-256.png",
+			"bytes": 109663,
+			"sha256": "8dd15074070f3991b4ffd93feea28e154e027578a0a3e602da623334d0fa1966"
+		},
+		{
+			"path": "exports/frogie-transparent-128.png",
+			"bytes": 25135,
+			"sha256": "e1ff689bcdb534575732cd537a840a0321c6a7ef686009569c1692b5c0b106b0"
+		},
+		{
+			"path": "exports/frogie-icon-128.png",
+			"bytes": 30435,
+			"sha256": "97a03a55e219e40849b65c3eaf119c08f2724faf4eb808cf9280b1496f750952"
+		},
+		{
+			"path": "exports/frogie-rounded-128.png",
+			"bytes": 32227,
+			"sha256": "2d6734f6d7cc368a1c651b7c35a0c1121852a40050025a8a0139c5125c7f4f88"
+		},
+		{
+			"path": "exports/frogie-transparent-64.png",
+			"bytes": 7341,
+			"sha256": "4e2bfc201988bf171ec090bebe7b3cfd3358cf6aa1d9e2a2ccc670e2fdc5f88d"
+		},
+		{
+			"path": "exports/frogie-icon-64.png",
+			"bytes": 9250,
+			"sha256": "8621e67cd688e5d9251bb73c90ff3fd2f293e6df1bc150e4e7755883318e2670"
+		},
+		{
+			"path": "exports/frogie-rounded-64.png",
+			"bytes": 9888,
+			"sha256": "613ed708f8252ed91691332589fa0cccb2716423d5fd41f29dbdd4fc55c266b8"
+		},
+		{
+			"path": "exports/frogie-transparent-48.png",
+			"bytes": 4556,
+			"sha256": "36cf1a0900b061d9ff662b6c35ee3a154f74057f879f46375dce7d2702b6214e"
+		},
+		{
+			"path": "exports/frogie-icon-48.png",
+			"bytes": 5668,
+			"sha256": "8b41d056bd2fdc2217ae43939368ea6eaa833f76b10ff1903716f93f8a490be1"
+		},
+		{
+			"path": "exports/frogie-rounded-48.png",
+			"bytes": 6128,
+			"sha256": "a6b2257c77509063b45f2bbead8568d602155d0a75321374f7e02c5b664bc3a4"
+		},
+		{
+			"path": "exports/frogie-transparent-32.png",
+			"bytes": 2347,
+			"sha256": "ac5ff45a01c8e3031f323d63d427192084ee45cca70df879c1bc4afb4f034bd1"
+		},
+		{
+			"path": "exports/frogie-icon-32.png",
+			"bytes": 2957,
+			"sha256": "f806a9775f92211e949678f57ff5ab5f147c62023ab796945bc22262a4033eeb"
+		},
+		{
+			"path": "exports/frogie-rounded-32.png",
+			"bytes": 3133,
+			"sha256": "431135fd086393743db760c273d967ea701a80a8566b669e278879e1de191b84"
+		},
+		{
+			"path": "exports/frogie-transparent-24.png",
+			"bytes": 1511,
+			"sha256": "6e639a3cfb6c5bd54bcd7bc41cb23d1645c1d4d9904af3d03898d431eb2efc7f"
+		},
+		{
+			"path": "exports/frogie-icon-24.png",
+			"bytes": 1812,
+			"sha256": "3aca7b851fa535f7b806334bb400a99f53c1e866c5b37380975874d497852dfe"
+		},
+		{
+			"path": "exports/frogie-rounded-24.png",
+			"bytes": 1932,
+			"sha256": "dcba18e2db951f35a8854ff70cd8d3e08039cae9eba1abc04406fe7a0fca01e1"
+		},
+		{
+			"path": "exports/frogie-transparent-16.png",
+			"bytes": 829,
+			"sha256": "31bb5a296a944f91a6924a891eaf889630aa05493ed79b404aef9bfd6409c3d8"
+		},
+		{
+			"path": "exports/frogie-icon-16.png",
+			"bytes": 939,
+			"sha256": "a77e3f5b217657eb6ab549cfd77e50b9651cf8690e4bbaf4cc2ff9db9fe42c8a"
+		},
+		{
+			"path": "exports/frogie-rounded-16.png",
+			"bytes": 979,
+			"sha256": "f380df2bf62a5e4a7c5ab857044bd8e87afdfd3318b3ca253bb9eaa60b544ce4"
+		},
+		{
+			"path": "exports/frogie-white-2048.png",
+			"bytes": 3394317,
+			"sha256": "9127e848b7de0d55f69dd1d2d28ce6fe8d4323bb7d0367b4618f9b7c3241eccc"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 917125,
+			"sha256": "b5bcb6ee72028c639ff4f7d8afe5f173c4b3be3ce31af8b1289c11a070286355"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 926116,
+			"sha256": "78c9ebdec1559d0d6f8ba2dc2b3949631523326611836a3672fc82762970bd50"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 11188,
+			"sha256": "730f78a156397743d0f17ebbd818e6d441fe7c40e945f1973307e9d1676a78e8"
+		}
+	],
+	"metadataEdits": [
+		{
+			"file": "background.svg",
+			"change": "Added a non-rendering accessibility title after visual review.",
+			"originalSha256": "a8c75a15e16681d89aed4dbccfc1fdba23a2d950f9aa7519b2bc82b08e7a6fdc",
+			"rasterPixelsUnchanged": true
+		}
+	],
+	"toolSnapshotPath": "tool-snapshot.mjs"
+}

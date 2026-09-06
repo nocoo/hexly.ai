@@ -1,0 +1,39 @@
+{
+	"project": "frogie",
+	"original": "../../../../public/logos/originals/frogie.png",
+	"background": {
+		"base": "#dce6ca",
+		"light": "#eef2df",
+		"shade": "#c6d3b0",
+		"motif": "#81966c",
+		"grainAmplitude": 1,
+		"grainSeed": 60906,
+		"status": "Proposed presentation colors; not existing project tokens."
+	},
+	"matte": {
+		"minimumChannel": 228,
+		"maximumChroma": 35,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.97,
+		"maximumMatteEnergy": 1200
+	},
+	"shadows": [
+		{
+			"color": [62, 79, 38],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [49, 68, 31],
+			"opacity": 0.11,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16]
+}
