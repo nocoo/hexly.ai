@@ -1,0 +1,60 @@
+{
+	"source": {
+		"path": "raw/generated-white.png",
+		"sha256": "9af427620891806bdf952bf6369028232ef46c1a8f6ddb40dcd96c73e2b66a90",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels; zero-based coordinates. Colors describe visible roles, not area rankings.",
+	"foreground": [
+		{
+			"role": "Petrol",
+			"x": 1380,
+			"y": 520,
+			"hex": "#1b596b"
+		},
+		{
+			"role": "Amber",
+			"x": 750,
+			"y": 1550,
+			"hex": "#fbca2d"
+		},
+		{
+			"role": "Wing aqua",
+			"x": 540,
+			"y": 1060,
+			"hex": "#d5ede7"
+		},
+		{
+			"role": "Coral",
+			"x": 1090,
+			"y": 901,
+			"hex": "#f19486"
+		},
+		{
+			"role": "Violet",
+			"x": 1105,
+			"y": 996,
+			"hex": "#93729c"
+		},
+		{
+			"role": "Blue",
+			"x": 830,
+			"y": 1090,
+			"hex": "#6d86b4"
+		}
+	],
+	"background": {
+		"role": "Sea-glass field",
+		"hex": "#9bb8b3",
+		"status": "Proposed local presentation, finishing 02",
+		"light": "#d5e2dc",
+		"shade": "#759497",
+		"motif": "#3e666c"
+	},
+	"existingSitePrimary": {
+		"hex": "#3c83f6",
+		"source": "src/app/styles/tokens.css --primary: 217 91% 60%",
+		"status": "Existing Firefly UI token; unchanged"
+	}
+}

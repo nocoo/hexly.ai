@@ -1,0 +1,306 @@
+{
+	"createdAt": "2026-09-06T10:13:00.832Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3273480b77afd705a946c5b4bde88176270fd5255a3b7f68ab180688d0176a2d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "9af427620891806bdf952bf6369028232ef46c1a8f6ddb40dcd96c73e2b66a90",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; local two-pixel alpha matting and edge color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "firefly",
+		"original": "../../../../public/logos/originals/firefly.png",
+		"background": {
+			"base": "#9bb8b3",
+			"light": "#d5e2dc",
+			"shade": "#759497",
+			"motif": "#3e666c",
+			"grainAmplitude": 1,
+			"grainSeed": 609063,
+			"status": "Proposed sea-glass presentation for the local Firefly study; source logo and website colors unchanged.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.24
+		},
+		"matte": {
+			"minimumChannel": 235,
+			"maximumChroma": 20,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 128,
+			"componentNote": "Initial extraction exposed 25 near-white residue components totaling 537 pixels, all separate from the complete firefly. Widen the exterior near-white sample range and remove only residual components below 128 pixels; preserve the pale wing, antennae, eye highlight and glowing abdomen."
+		},
+		"shadows": [
+			{
+				"color": [
+					16,
+					49,
+					57
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					12,
+					30
+				]
+			},
+			{
+				"color": [
+					13,
+					42,
+					49
+				],
+				"opacity": 0.1,
+				"blurAt2048": 8,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"intentionalEdges": [],
+			"note": "Complete hovering firefly with clear borders. Both antennae, wing tips, visible legs and luminous abdomen remain inside the rounded-square safe region. No crop or repositioning."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 3221812,
+		"foregroundPixels": 972492,
+		"softEdgePixels": 22316,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 336,
+			"top": 159,
+			"right": 1746,
+			"bottom": 1716
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1546,
+			"sha256": "18995b78535546f94ec94f1c165164fdfa7ad083e336a717b495073cd20c6adc"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 12548,
+			"sha256": "3273480b77afd705a946c5b4bde88176270fd5255a3b7f68ab180688d0176a2d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 93999,
+			"sha256": "edc89fec0e771213c7a7ad71983b55847aa8da5615de267f9561c29e70d9b206"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 809,
+			"sha256": "8eb3a7df68a0e8a4c66f26c3b33e09213dfd813e168ff22f8b1df7d2a3ee0743"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2294013,
+			"sha256": "1424b44110be24d1663f9c80c68d7339f21064582bdf0b8cf9b1b44959993a40"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 165912,
+			"sha256": "1ec54f9b93637cb5fae4103e2666b535c428b4342d75709ff7895ef7e54661d4"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 128865,
+			"sha256": "a8434d95472387158db30cacc902e6e06771f7a88ff54620dbbec6312065aa88"
+		},
+		{
+			"path": "exports/firefly-transparent-2048.png",
+			"bytes": 2635881,
+			"sha256": "9f5834f6f97582674e3077c2aaa78dae4e549abfb1c6e799c8ae074b21c2b391"
+		},
+		{
+			"path": "exports/firefly-icon-2048.png",
+			"bytes": 4854434,
+			"sha256": "f54c3c4324bda61ccac75f124f4fd4ee37bb6c2a87ab9433902e214dbf13dbca"
+		},
+		{
+			"path": "exports/firefly-rounded-2048.png",
+			"bytes": 4762578,
+			"sha256": "60510d67497fb1f7c8cb08e7e5757710d8e2815906426be1edfd8814133f69be"
+		},
+		{
+			"path": "exports/firefly-transparent-1024.png",
+			"bytes": 705428,
+			"sha256": "85dc4142afeecb4f440283b965a6bc68448ea5d4474ab61e3d225485e80d9005"
+		},
+		{
+			"path": "exports/firefly-icon-1024.png",
+			"bytes": 1220833,
+			"sha256": "8bdfba3517d67d40a7e29cc5fe1217df4656b95a754c581d79af38491b26522f"
+		},
+		{
+			"path": "exports/firefly-rounded-1024.png",
+			"bytes": 1212599,
+			"sha256": "1502b87ebb53d9c2e30133d2fb89ed7b8f79e5c7d62bca248e45bcea627766d0"
+		},
+		{
+			"path": "exports/firefly-transparent-512.png",
+			"bytes": 194257,
+			"sha256": "480b017419fd5ef33f2bb45f809619544ca5f392528a2f7dfff64b4b804d873c"
+		},
+		{
+			"path": "exports/firefly-icon-512.png",
+			"bytes": 361691,
+			"sha256": "4ec3fffee5ab4612dbc351d03b6be9b0ddeb0370c0f45cbc1008990a2945b413"
+		},
+		{
+			"path": "exports/firefly-rounded-512.png",
+			"bytes": 361103,
+			"sha256": "044a7c79d44ff48638fb12d8ca26cd688083571ed8892d1248888d5811564501"
+		},
+		{
+			"path": "exports/firefly-transparent-256.png",
+			"bytes": 54718,
+			"sha256": "b22c14a5b1c3ed828275d2ec5c44807601fe9a15d20946d7293c2fd946911c93"
+		},
+		{
+			"path": "exports/firefly-icon-256.png",
+			"bytes": 84676,
+			"sha256": "b16b0e96e41660cdc8d33631c7fa34ad2ac4025325265e42336290785f6a7cb2"
+		},
+		{
+			"path": "exports/firefly-rounded-256.png",
+			"bytes": 87295,
+			"sha256": "9a2296fa663b67eccddfecceed6f73c35e7edab4ef1be43d61c943b4e16cb21c"
+		},
+		{
+			"path": "exports/firefly-transparent-128.png",
+			"bytes": 15821,
+			"sha256": "ebc8b2b2bec2b1b04235c9e5bff133429e5ba30de5fd34e206260263db19ae49"
+		},
+		{
+			"path": "exports/firefly-icon-128.png",
+			"bytes": 25580,
+			"sha256": "ce29c45097bd70eb55779d1cdae704a4cb28b9f9f081fc09cfe8880b5a49d0fe"
+		},
+		{
+			"path": "exports/firefly-rounded-128.png",
+			"bytes": 26952,
+			"sha256": "5ee70a5afbc3c71da5522e9300281a5f365336b7e63469da3c2e9a9743fa44d3"
+		},
+		{
+			"path": "exports/firefly-transparent-64.png",
+			"bytes": 4796,
+			"sha256": "741a5faa89aa33ac9b9ee13d27ac004a7a0b7d81053d5920636bea0e010344ee"
+		},
+		{
+			"path": "exports/firefly-icon-64.png",
+			"bytes": 8816,
+			"sha256": "627ad3c62c1e3a5cea420787196d8272c94f8c337a8fb8ff99d94e38a236b781"
+		},
+		{
+			"path": "exports/firefly-rounded-64.png",
+			"bytes": 9315,
+			"sha256": "bc3b30ca8e7b3c44682f772ee7c1c20e2a150d15d13518dd55ad1dc1ae68d6b4"
+		},
+		{
+			"path": "exports/firefly-transparent-48.png",
+			"bytes": 2961,
+			"sha256": "1cb5b4ae0e0f775f8cd4e2e0ef836d92bd07991a830303b13f7af383181d173b"
+		},
+		{
+			"path": "exports/firefly-icon-48.png",
+			"bytes": 5298,
+			"sha256": "dbc84ecd4ef5e2e9830c053b99a2754712f4158c697729dbfc091b008d008c74"
+		},
+		{
+			"path": "exports/firefly-rounded-48.png",
+			"bytes": 5714,
+			"sha256": "1156ae29dc801a9677e322df0ddac6bfa5eb12dc8a9aaa271608c783aedc802f"
+		},
+		{
+			"path": "exports/firefly-transparent-32.png",
+			"bytes": 1618,
+			"sha256": "455de9a6d28da0163a5dbabeea49ad2188aa1c681a949b7c79d89e7c25ddf9c6"
+		},
+		{
+			"path": "exports/firefly-icon-32.png",
+			"bytes": 2885,
+			"sha256": "c4b5564a8761df120de9547c2d6e2e55f62cabd80d95edc5f56c144b3f89fbfc"
+		},
+		{
+			"path": "exports/firefly-rounded-32.png",
+			"bytes": 3059,
+			"sha256": "be1a32673dbb255f9a74b7745d4c4ca3702743fbdcc53954b93dc79c43e22f95"
+		},
+		{
+			"path": "exports/firefly-transparent-24.png",
+			"bytes": 1069,
+			"sha256": "c587d1208aa82ef89383890c6b0103bbacaa45002f48e71c755aa33b7cb0a50b"
+		},
+		{
+			"path": "exports/firefly-icon-24.png",
+			"bytes": 1766,
+			"sha256": "55c50834d19d1e3699c56da5b0d6b7f64f138b9067d5c81c06f2757040e63274"
+		},
+		{
+			"path": "exports/firefly-rounded-24.png",
+			"bytes": 1908,
+			"sha256": "810e17abec66b71666c675d6aa04fab297a1c34c68271977bebb0cfe1c154fe9"
+		},
+		{
+			"path": "exports/firefly-transparent-16.png",
+			"bytes": 615,
+			"sha256": "ef834a07bb8388a0265331abd535e59009c6bcb1b01b01fbfc6fdf69993e5800"
+		},
+		{
+			"path": "exports/firefly-icon-16.png",
+			"bytes": 928,
+			"sha256": "feeaa69b59461bb0c37abb64d064cda29c909146fef88745299a7573037e779e"
+		},
+		{
+			"path": "exports/firefly-rounded-16.png",
+			"bytes": 975,
+			"sha256": "86c340e0ede9bebb373125ff2285582e67e960c9e4f1985ef2fe2bb0dc95dc58"
+		},
+		{
+			"path": "exports/firefly-white-2048.png",
+			"bytes": 2445144,
+			"sha256": "bd491dfe186cfb97891bfcaffe8ee9b44771477e834fc12141152ca292773c5c"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 662244,
+			"sha256": "973982a5dae6b534ada935e7bb58255d8dbd695469193d3e8e17b09d1789c7e0"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 655294,
+			"sha256": "0917a85b7cffe116f8059803a905c365ba648c479b9a8487fb91f8370051c023"
+		}
+	]
+}
