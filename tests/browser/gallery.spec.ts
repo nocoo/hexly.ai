@@ -21,7 +21,7 @@ for (const id of projects
 			.evaluate((node) => (node as HTMLImageElement).decode());
 		await expect(page.locator(".asset-label")).toHaveText("Refined");
 		await expect(page.locator(".current-artwork figcaption")).toContainText(
-			"Local preview",
+			family.status === "adopted" ? "Adopted family identity" : "Local preview",
 		);
 		for (const [selector, size] of [
 			[".size-grid figure:nth-child(1) .logo-tile", 128],
