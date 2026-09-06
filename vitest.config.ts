@@ -1,8 +1,17 @@
-import { defineConfig } from "vitest/config";
+import { configDefaults, defineConfig } from "vitest/config";
 
 export default defineConfig({
 	test: {
 		include: ["tests/unit/**/*.test.ts"],
+		forceRerunTriggers: [
+			...configDefaults.forceRerunTriggers,
+			"**/bun.lock",
+			"**/bunfig.toml",
+			"**/tsconfig*.json",
+			// These inputs are read through a subprocess or fs, outside the import graph.
+			"**/scripts/release.ts",
+			"**/public/logos/originals/hexly-ai.*",
+		],
 		coverage: {
 			provider: "v8",
 			include: [

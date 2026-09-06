@@ -58,6 +58,7 @@ Keep model logic independent of React and browser globals. Browser effects belon
 bun run dev
 bun run typecheck
 bun run lint
+bun run gate:commit
 bun run build
 bun run test:coverage
 bun run test:http
@@ -75,17 +76,17 @@ Run the asset/profile generation sequence after intentional catalogue or artwork
 
 | Dimension / change | Contract | Status | Evidence |
 |---|---|---|---|
-| L1 logic | At least 90% statements, branches, functions, and lines for models, isolation, and release policy | enforced | Pre-commit and CI `test:coverage`; `vitest.config.ts` |
+| L1 logic | At least 90% statements, branches, functions, and lines for models, isolation, and release policy | enforced | Pre-commit `test:changed`; CI `test:coverage`; `vitest.config.ts` |
 | L2 HTTP | Built document, assets, headers, downloads, and release metadata through local Workers HTTP | enforced | Pre-push and CI `test:http`; `playwright.http.config.ts` |
 | L3 UI | Desktop/mobile journeys, both languages/themes, gallery, accessibility | enforced | CI `test:browser`; `playwright.config.ts` |
-| G1 static | TypeScript strict and Biome with zero errors or warnings | enforced | Pre-commit `check:static`; CI typecheck/lint |
-| G2 security | OSV locked dependencies and Gitleaks; missing tools fail | enforced | Pre-push `check:security`; CI; pre-commit staged secret scan |
+| G1 static | TypeScript strict and Biome with zero errors or warnings | enforced | Pre-commit `lint:staged`; CI full typecheck/lint |
+| G2 security | OSV locked dependencies and Gitleaks; missing tools fail | enforced | Pre-push `check:security`; CI |
 | D1 isolation | Loopback servers, separate state, no storage or remote bindings | enforced | `check:isolation`, `scripts/isolation.ts`, Playwright configs |
 | Assets / build | Source checksums, WebP sizes, Vite build, Wrangler dry run | enforced | CI `assets:check`, L2/L3 build, `deploy:check` |
 | Content / docs | Profile synchronization, provenance, numbered docs when behavior changes | manual | Review catalogue changes against identity rules and source evidence |
 
-Pre-commit runs G1 + L1 + staged secret scanning; pre-push runs L2 + G2. Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Playwright enforces `forbidOnly`.
-Current hooks check working-tree code, without index snapshots or stdin-ref-range validation; only the commit secret scan targets staged content. Review the staged diff explicitly.
+Pre-commit runs only staged-file Biome and affected unit tests, concurrently and without coverage. Vitest selects tests from staged, unstaged, and untracked Git changes; configuration/dependency changes and inputs read outside the import graph trigger all unit tests. Documentation/artwork-only changes with no related tests pass without running the suite. Full typecheck, lint, coverage, isolation, security, and integration/browser checks remain in CI; pre-push runs L2 + G2.
+Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Playwright enforces `forbidOnly`. Hooks read working-tree content, without index snapshots or stdin-ref-range validation. Review the staged diff explicitly.
 
 ## Resources / Isolation
 

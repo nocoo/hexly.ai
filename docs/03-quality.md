@@ -4,16 +4,27 @@ This structure is established before product implementation. Source: nmem `af0da
 
 | Dimension | Contract | Command | When |
 | --- | --- | --- | --- |
-| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 90% statements, branches, functions, and lines | `bun run test:coverage` | Pre-commit |
+| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 90% statements, branches, functions, and lines | `bun run test:changed`; `bun run test:coverage` | Affected tests at pre-commit; full coverage in CI |
 | L2 | Real HTTP requests to the built site in the Workers runtime; HTML, assets, and response behavior | `bun run test:http` | Pre-push |
 | L3 | Browser journeys for navigation, search, categories, bilingual preferences, themes, gallery, responsive layout, and accessibility | `bun run test:browser` | CI and manual |
-| G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run check:static` | Pre-commit |
+| G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run lint:staged`; `bun run check:static` | Staged lint at pre-commit; full checks in CI |
 | G2 | OSV dependency audit and Gitleaks secret scanning | `bun run check:security` | Pre-push and CI |
 | D1 | Independent loopback test servers, no production resource bindings, and no remote services | `bun run check:isolation` | Before integration/browser tests |
 
 The D1 dimension denotes test isolation, not a Cloudflare D1 database. External storage isolation is **not applicable** because this application is static and has no storage bindings. The configuration check rejects newly added remote/storage bindings until an explicit isolated design is implemented.
 
 L1 coverage includes executable model logic, release policy, and isolation rules. A temporary-repository test runs the actual release dry-run command and verifies that files and Git refs stay unchanged. Thin React presentation components, static catalogue data, and build-tool entry points are not included in the model coverage denominator. L3 validates those views through actual user journeys.
+
+## Commit feedback
+
+`bun run gate:commit` runs only these two checks in parallel:
+
+- `lint:staged`: Biome checks staged paths with zero warnings, without rewriting files. Commits containing only ignored or unsupported files pass when there is nothing to lint.
+- `test:changed`: Vitest runs unit tests affected by uncommitted Git changes, without coverage. This includes staged, unstaged, and untracked files. Documentation/artwork changes without related tests do not run the suite.
+
+Package, Vite/Vitest configuration, Bun lock/configuration, and TypeScript configuration changes trigger all unit tests. The release CLI and the directory's original logo also trigger the full suite because tests read them through a subprocess or filesystem rather than an import. These triggers are declared in `vitest.config.ts`.
+
+Both tools check working-tree content; they do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
 
 ## Port boundaries
 
