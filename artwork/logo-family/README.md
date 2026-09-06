@@ -47,7 +47,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-06](firefly/2026-09-06-06/notes.md) | Improved direction retained; clean foreground requested in study 07 | [Untouched raw](firefly/2026-09-06-06/raw/generated.png) |
 | Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye | [Untouched raw](firefly/2026-09-06-07/raw/generated.png) |
 | Firefly | [2026-09-06-08](firefly/2026-09-06-08/notes.md) | Rejected: backward-facing eye perspective | [Untouched raw](firefly/2026-09-06-08/raw/generated.png) |
-| Firefly | [2026-09-06-09](firefly/2026-09-06-09/brief.md) | New camera and foreground campfire prepared; raw checkpoint before finishing | [Brief](firefly/2026-09-06-09/brief.md) |
+| Firefly | [2026-09-06-09](firefly/2026-09-06-09/notes.md) | Foreground campfire raw returned; awaiting composition and eye-perspective confirmation | [Untouched raw](firefly/2026-09-06-09/raw/generated.png) |
 
 ## Running a study
 
