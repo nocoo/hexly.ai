@@ -1,0 +1,116 @@
+{
+	"project": "firefly",
+	"original": "../../../../public/logos/originals/firefly.png",
+	"background": {
+		"base": "#10282e",
+		"light": "#203f49",
+		"shade": "#08161d",
+		"motif": "#5c7b88",
+		"grainAmplitude": 0.65,
+		"grainSeed": 6090610,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.055,
+		"ribbonOpacity": 0.035,
+		"status": "Designed night presentation for approved Firefly 10; distinct from existing website UI tokens.",
+		"pattern": {
+			"name": "Midnight crescent and drifting clouds",
+			"description": "An offset crescent, sparse four-point stars, and broad cloud contours occupy the upper and outer negative space. Original Firefly geometry, independent of Frogie curves and Pew stripes.",
+			"layers": [
+				{
+					"d": "M306 58C259 68 236 112 253 153C268 192 307 209 346 190C310 190 282 163 279 130C277 102 287 77 306 58Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M306 58C260 69 239 109 253 151",
+					"tone": "highlight",
+					"strokeWidth": 2.2
+				},
+				{
+					"d": "M104 129L108 140L119 144L108 148L104 159L100 148L89 144L100 140Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M436 83L439 91L447 94L439 97L436 105L433 97L425 94L433 91Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M823 834L827 845L838 849L827 853L823 864L819 853L808 849L819 845Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M15 205C49 189 68 192 87 203C94 178 126 174 144 194C166 183 195 190 209 207C230 200 245 204 258 213",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M776 933C805 917 831 919 850 931C863 911 892 909 910 926C942 912 970 921 989 937C1003 930 1015 932 1034 940",
+					"tone": "ribbon",
+					"strokeWidth": 4
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 238,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 9,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 450,
+		"minimumComponentPixels": 0
+	},
+	"shadows": [
+		{
+			"color": [2, 10, 16],
+			"opacity": 0.2,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 22]
+		},
+		{
+			"color": [2, 9, 14],
+			"opacity": 0.14,
+			"blurAt2048": 8,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"emission": [
+		{
+			"name": "flame",
+			"mask": {
+				"ellipseAt2048": [502, 1515, 210, 335],
+				"minimumRed": 220,
+				"minimumGreen": 90,
+				"maximumBlue": 210,
+				"minimumWarmth": 70
+			},
+			"color": [255, 161, 49],
+			"opacity": 0.56,
+			"blurAt2048": 112,
+			"blend": "screen"
+		},
+		{
+			"name": "abdomen",
+			"mask": {
+				"ellipseAt2048": [1320, 1370, 295, 270],
+				"minimumRed": 215,
+				"minimumGreen": 145,
+				"maximumBlue": 190,
+				"minimumWarmth": 75
+			},
+			"color": [255, 199, 72],
+			"opacity": 0.34,
+			"blurAt2048": 140,
+			"blend": "screen"
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.84,
+		"minimumClearanceAt2048": 128,
+		"intentionalEdges": [],
+		"note": "Owner requested more breathing room after raw approval. Scale and center the entire accepted firefly/fire group uniformly in every master and size; preserve relative proportions. Keep untouched generation and unscaled extracted artwork separately. Require at least 128 native pixels between visible artwork and the final rounded-square edge."
+	}
+}
