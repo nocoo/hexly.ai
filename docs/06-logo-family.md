@@ -75,6 +75,8 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 07](../artwork/logo-family/firefly/2026-09-06-07/notes.md) returned a native 2048 × 2048 foreground on a near-white matte, with the night field and external glow removed. The flame and abdomen retain solid bright facets. The owner identified a missing second eye; the earlier single-visible-eye instruction must be corrected. These exact bytes and the feedback remain archived without extraction or finishing. The night motif and warm glow are still planned as independent layers after a corrected raw source is approved.
 
+[Study 08](../artwork/logo-family/firefly/2026-09-06-08/brief.md) uses the exact study 07 image for one local correction: retain the existing viewer-right eye and add a clearly visible, perspective-matched second eye. The flying composition, connected facets, white matte, and separate night/glow plan remain the same requirements. Its new native output must pass the immediate raw-image checkpoint before any finishing.
+
 ## Archive and promotion
 
 Studies live under `artwork/logo-family/<project>/<date>-<sequence>/`; shared style references and tools live alongside them. Use a new study for every model request and a new numbered finishing directory for every rendering pass. A failed or superseded attempt is still part of the archive.
