@@ -32,6 +32,9 @@ for (const project of projects) {
 		const root = `public${family.root}`;
 		const study = `artwork/logo-family/${project.id}/${family.id}`;
 		const finishing = `${study}/finishing/${family.finishing}`;
+		const response: { output: { path: string } } = JSON.parse(
+			await readFile(`${study}/response.json`, "utf8"),
+		);
 		await mkdir(root, { recursive: true });
 		const files = [];
 		for (const [name, source] of [
@@ -43,7 +46,7 @@ for (const project of projects) {
 			["rounded.png", `${finishing}/exports/${project.id}-rounded-2048.png`],
 			["white.png", `${finishing}/exports/${project.id}-white-2048.png`],
 			["background.png", `${finishing}/background.png`],
-			["raw.png", `${study}/raw/generated-white.png`],
+			["raw.png", `${study}/${response.output.path}`],
 			["prompt.txt", `${study}/prompt.txt`],
 		] as const) {
 			const data = await readFile(source);

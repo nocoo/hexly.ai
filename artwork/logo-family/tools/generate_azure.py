@@ -37,7 +37,7 @@ def main():
     request_path = run_dir / "request.json"
     response_path = run_dir / "response.json"
     review_path = run_dir / "raw-review.json"
-    output_path = run_dir / "raw" / "generated-white.png"
+    output_path = run_dir / "raw" / "generated.png"
     if any(path.exists() for path in [request_path, response_path, review_path, output_path]):
         parser.error("Use a new study directory; previous requests are immutable.")
     prompt = prompt_path.read_text()
