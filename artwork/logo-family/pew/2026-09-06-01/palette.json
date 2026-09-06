@@ -1,0 +1,57 @@
+{
+	"source": {
+		"path": "raw/generated-white.png",
+		"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Representative native sRGB pixels; zero-based coordinates. Colors describe visible roles, not area rankings.",
+	"foreground": [
+		{
+			"role": "Ivory",
+			"x": 1510,
+			"y": 1740,
+			"hex": "#fcf8f0"
+		},
+		{
+			"role": "Charcoal",
+			"x": 1140,
+			"y": 415,
+			"hex": "#232637"
+		},
+		{
+			"role": "Quiet gray",
+			"x": 770,
+			"y": 334,
+			"hex": "#827f8e"
+		},
+		{
+			"role": "Coral",
+			"x": 593,
+			"y": 1620,
+			"hex": "#fb9383"
+		},
+		{
+			"role": "Cyan",
+			"x": 589,
+			"y": 1759,
+			"hex": "#73dce7"
+		},
+		{
+			"role": "Violet",
+			"x": 631,
+			"y": 1806,
+			"hex": "#b97ce6"
+		}
+	],
+	"background": {
+		"role": "Pearl lilac",
+		"hex": "#e3deea",
+		"status": "Proposed presentation color"
+	},
+	"existingSitePrimary": {
+		"hex": "#851ded",
+		"source": "packages/web/src/app/globals.css --primary: 270 85% 52%",
+		"status": "Existing Pew UI token; unchanged"
+	}
+}

@@ -10,6 +10,7 @@ frogie/2026-09-06-01/         First Frogie study
   finishing/01/              First extraction and presentation
   finishing/02/              Approved Frogie exports
   previews/                  Browser captures and review evidence
+pew/2026-09-06-01/            Natural edge-entry zebra candidate
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
@@ -27,6 +28,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Project | Study | Status | Review |
 |---|---|---|---|
 | Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Adopted on 2026-09-06 · finishing 02 | [Local review page](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
+| Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Candidate · finishing 02 · source logo unchanged | [Local review page](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
 
 ## Running a study
 

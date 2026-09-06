@@ -1,0 +1,306 @@
+{
+	"createdAt": "2026-09-06T08:37:32.062Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "7184756362b8453ace811684bea8513ff1ea6383de5a67e50a33dbdeb185a62c",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; local two-pixel alpha matting and edge color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "pew",
+		"original": "../../../../public/logos/originals/pew.png",
+		"background": {
+			"base": "#e3deea",
+			"light": "#f4f1f7",
+			"shade": "#cac2d7",
+			"motif": "#9382a3",
+			"grainAmplitude": 1,
+			"grainSeed": 609062,
+			"status": "Proposed pearl-lilac presentation; existing Pew UI tokens stay separate."
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 32,
+			"componentNote": "Remove sub-32-pixel disconnected threshold residue; this zebra and its tongue form one connected animal. Do not apply this cleanup to detached identity decorations without review."
+		},
+		"shadows": [
+			{
+				"color": [
+					58,
+					43,
+					77
+				],
+				"opacity": 0.12,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					43,
+					34,
+					57
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "The native neck continues beyond the frame; no finishing crop or circular bust mask is applied. Eyes, ears, muzzle, and tongue remain inside the rounded-square safe area."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2068108,
+		"foregroundPixels": 2126196,
+		"softEdgePixels": 9116,
+		"removedComponents": 2,
+		"removedComponentPixels": 5,
+		"bounds": {
+			"left": 436,
+			"top": 88,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1338,
+			"sha256": "ca8517cb10a16290bbe28b950aa96c252b434496bd034407547ef300e57f5f3c"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 12462,
+			"sha256": "7184756362b8453ace811684bea8513ff1ea6383de5a67e50a33dbdeb185a62c"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61328,
+			"sha256": "8730a21ac917ffff54d2a766026589ca98c1d855dcb2a5c62f4f010bbfc9d9c5"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 807,
+			"sha256": "0264a0cbfc44710f3b56247e33663e3800db6f57228a73cdfc205b669735690b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1951313,
+			"sha256": "7cdf1f75fbf60b773f6dbeef7475a35b47896df239f37c8676d6aae1029c4b69"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 199402,
+			"sha256": "5bac9f286d978df2163a6ca2ef78562d87cb76bd90c5ad3e8d5e1013877bc81a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 154289,
+			"sha256": "8f07b0c0de15504ce57a210301ad4c140cea0287a36c5d997c86f453eadd90c1"
+		},
+		{
+			"path": "exports/pew-transparent-2048.png",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "exports/pew-icon-2048.png",
+			"bytes": 4298492,
+			"sha256": "15588e524e0fdcfb9a139dc361ec26ca4a81ab7659385a81c164dbb186bf66e6"
+		},
+		{
+			"path": "exports/pew-rounded-2048.png",
+			"bytes": 4209839,
+			"sha256": "d3d544595cdbbeba8dd1bb60d5febde5f27d5893ff3ba3025fd866a6f249900a"
+		},
+		{
+			"path": "exports/pew-transparent-1024.png",
+			"bytes": 974056,
+			"sha256": "7cb275a2f3c9d8e03dfd312b123aa2dae26d0209723b9d2a75aacc203d47ca78"
+		},
+		{
+			"path": "exports/pew-icon-1024.png",
+			"bytes": 1233683,
+			"sha256": "c0b66fbf3e0afcaca914edfeacd91d85f1f529c0bfe0d6640b61a8dfd83f0570"
+		},
+		{
+			"path": "exports/pew-rounded-1024.png",
+			"bytes": 1224230,
+			"sha256": "9e99ed4da44340bc420d5e433d34e5fda4c0e5c12d83ab866680e523ae16ffc4"
+		},
+		{
+			"path": "exports/pew-transparent-512.png",
+			"bytes": 318616,
+			"sha256": "79bde7125b5d45ec51f07b96ee2644b8b960763b83f596f90da4f1f9562ba08a"
+		},
+		{
+			"path": "exports/pew-icon-512.png",
+			"bytes": 401325,
+			"sha256": "8df1d359a03be3b0548f461f62c57d40ed86442dc77ffb94759383455325ba6b"
+		},
+		{
+			"path": "exports/pew-rounded-512.png",
+			"bytes": 399598,
+			"sha256": "ae27612c5e683f74c73ed34ae26aa2c11cf2dc9f2bf1513408358b8b3eabf9ec"
+		},
+		{
+			"path": "exports/pew-transparent-256.png",
+			"bytes": 99157,
+			"sha256": "9e6aa90ebb1e5fb6fd66eb4bfac35c0ef6bc8205854a2262eda973832d5a0159"
+		},
+		{
+			"path": "exports/pew-icon-256.png",
+			"bytes": 111454,
+			"sha256": "9815e12b569c20ccbe66f3a386fe5eee2532e240ed31b585b4dc621e663c12ff"
+		},
+		{
+			"path": "exports/pew-rounded-256.png",
+			"bytes": 113131,
+			"sha256": "23545eb85d29fba69c5ba30c392388b3e7dbb3bbd9299449bdf4e95a3ebc66e5"
+		},
+		{
+			"path": "exports/pew-transparent-128.png",
+			"bytes": 29031,
+			"sha256": "aefb8357a831b668a76d41f2ebdbcbec6302c945abd1f16a07ac8ef3d77d6fde"
+		},
+		{
+			"path": "exports/pew-icon-128.png",
+			"bytes": 32283,
+			"sha256": "906e7e58948358052c508d1d388a9446802c8b133548a0c670b143c94f8d3e1e"
+		},
+		{
+			"path": "exports/pew-rounded-128.png",
+			"bytes": 33514,
+			"sha256": "75ad5f455a41c90eebbefed601d933713936720f9f5a0e9ac40c84dd37413a4c"
+		},
+		{
+			"path": "exports/pew-transparent-64.png",
+			"bytes": 8314,
+			"sha256": "6aa9ba10c85c34402239cff35de2647841c9e5a77b319453cedc807157498bb6"
+		},
+		{
+			"path": "exports/pew-icon-64.png",
+			"bytes": 9561,
+			"sha256": "cfac43951acf69d5ea9f4d67246d948f84cc7d029d261150a57f9014244a9c29"
+		},
+		{
+			"path": "exports/pew-rounded-64.png",
+			"bytes": 10102,
+			"sha256": "458174ecd01fce6b5dcd8589fbee5fa5b4e4888fa04d18e0f4a323a94a2a9ab0"
+		},
+		{
+			"path": "exports/pew-transparent-48.png",
+			"bytes": 4998,
+			"sha256": "9335a5f7ca63528f5d359df7af7d696264e0888a5bc08e526cf58f5ddf65c087"
+		},
+		{
+			"path": "exports/pew-icon-48.png",
+			"bytes": 5800,
+			"sha256": "01710c27d9bd9b9c989396c0b65d7f4935e6bd925cec2e0650ddb0f9da681b87"
+		},
+		{
+			"path": "exports/pew-rounded-48.png",
+			"bytes": 6198,
+			"sha256": "c828b92b70b92fdc400b1dfbd90e715975eb28d1d37d9a7eb7654dbd43414227"
+		},
+		{
+			"path": "exports/pew-transparent-32.png",
+			"bytes": 2499,
+			"sha256": "7fc3ecb16c23f88b23b0f544f7c6a917063d0fcbc0cf1a31d1d24e4b282b3fb8"
+		},
+		{
+			"path": "exports/pew-icon-32.png",
+			"bytes": 2947,
+			"sha256": "8d8911d3d34f8206bf3b4f979373c304dcd6016e87066cd9f996a114eb5d68a3"
+		},
+		{
+			"path": "exports/pew-rounded-32.png",
+			"bytes": 3116,
+			"sha256": "724379f71ca3cef7479c8a44414a787324f82face8f40f80915c95c7020b6e53"
+		},
+		{
+			"path": "exports/pew-transparent-24.png",
+			"bytes": 1526,
+			"sha256": "8d6c96b31b6ee435916eaad0c28e1ffa1828f74f6816b589e9a9c81f46b9da3b"
+		},
+		{
+			"path": "exports/pew-icon-24.png",
+			"bytes": 1797,
+			"sha256": "cb41661e298b2eff8d96ac64e0073d0b9a4e214c4928bfec0003953f40f38c02"
+		},
+		{
+			"path": "exports/pew-rounded-24.png",
+			"bytes": 1940,
+			"sha256": "d8039f7c776a74e6e66a4739e95bfa87143dab5975c0f6c19b36b897ae57a8b6"
+		},
+		{
+			"path": "exports/pew-transparent-16.png",
+			"bytes": 841,
+			"sha256": "7bea66ee0fb0186b43f558206015c2a0833d3a039dcdf02f840f2d5c9ea0a434"
+		},
+		{
+			"path": "exports/pew-icon-16.png",
+			"bytes": 931,
+			"sha256": "f4fd9d72377338db55934a94d5e9d3b6d401790f21287f781e12f4991da18669"
+		},
+		{
+			"path": "exports/pew-rounded-16.png",
+			"bytes": 986,
+			"sha256": "f3efeb7c912f6bb95845e12dd2301b20b5bf8ef83d213d71fa87d693abc9e360"
+		},
+		{
+			"path": "exports/pew-white-2048.png",
+			"bytes": 2854245,
+			"sha256": "5d489e823c135d7e3725292d35a5bfa0d53b4eb3e8b0852d4f1a552d54e58f83"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 922622,
+			"sha256": "976f63f0281a811b764af18cf54cdfb6a6e3794869f53adc3d4a75831a4f0e05"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 927806,
+			"sha256": "690ade89c58bf6392170fbabf79925ae76e87aa4c667e8fad46a307ae28dc340"
+		}
+	]
+}

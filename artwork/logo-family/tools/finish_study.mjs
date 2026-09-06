@@ -44,7 +44,29 @@ function extractWhite(rgb, width, height, settings) {
 		visitWhite(y * width + width - 1);
 	}
 	while (head < tail) neighbors(queue[head++], visitWhite);
-	const backgroundPixels = tail;
+	let backgroundPixels = tail;
+	let removedComponents = 0;
+	let removedComponentPixels = 0;
+	if (settings.minimumComponentPixels > 0) {
+		const seen = new Uint8Array(count);
+		for (let start = 0; start < count; start++) {
+			if (background[start] || seen[start]) continue;
+			head = 0;
+			tail = 0;
+			const visitForeground = (index) => {
+				if (background[index] || seen[index]) return;
+				seen[index] = 1;
+				queue[tail++] = index;
+			};
+			visitForeground(start);
+			while (head < tail) neighbors(queue[head++], visitForeground);
+			if (tail >= settings.minimumComponentPixels) continue;
+			for (let index = 0; index < tail; index++) background[queue[index]] = 1;
+			backgroundPixels += tail;
+			removedComponentPixels += tail;
+			removedComponents++;
+		}
+	}
 	if (backgroundPixels < count * 0.1 || backgroundPixels > count * 0.95)
 		throw new Error("Unexpected foreground coverage; inspect the white matte.");
 
@@ -156,6 +178,8 @@ function extractWhite(rgb, width, height, settings) {
 			backgroundPixels,
 			foregroundPixels: count - backgroundPixels,
 			softEdgePixels: softPixels,
+			removedComponents,
+			removedComponentPixels,
 			bounds: { left, top, right, bottom },
 		},
 	};
@@ -163,9 +187,9 @@ function extractWhite(rgb, width, height, settings) {
 
 function backgroundSvg(size, colors) {
 	return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 1024 1024">
-<title>Sage icon background with quiet curved motifs</title>
-<defs><radialGradient id="sage" cx="26%" cy="14%" r="115%"><stop stop-color="${colors.light}"/><stop offset=".52" stop-color="${colors.base}"/><stop offset="1" stop-color="${colors.shade}"/></radialGradient></defs>
-<path fill="url(#sage)" d="M0 0h1024v1024H0z"/>
+<title>Tonal icon background with quiet curved motifs</title>
+<defs><radialGradient id="field" cx="26%" cy="14%" r="115%"><stop stop-color="${colors.light}"/><stop offset=".52" stop-color="${colors.base}"/><stop offset="1" stop-color="${colors.shade}"/></radialGradient></defs>
+<path fill="url(#field)" d="M0 0h1024v1024H0z"/>
 <g fill="none" stroke-linecap="round">
 <path d="M1110 112C899 20 691 47 712 201S978 238 911 410S943 627 1117 588" stroke="${colors.motif}" stroke-width="44" opacity=".055"/>
 <path d="M1129 110C906 9 651 4 670 197S931 240 868 403S922 674 1105 636" stroke="#ffffff" stroke-width="3" opacity=".18"/>
