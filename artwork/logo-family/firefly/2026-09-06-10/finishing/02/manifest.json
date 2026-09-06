@@ -1,0 +1,458 @@
+{
+	"createdAt": "2026-09-06T12:58:18.066Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "0822585bd2732c2c95a811864a0cd643bfbf602a413f72e9c622c3413b41ed77",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "384fff12838b1e9b282879ffb008f9b9aa8af110ba28400050ef6cd489f48d25",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "firefly",
+		"original": "../../../../public/logos/originals/firefly.png",
+		"background": {
+			"base": "#10282e",
+			"light": "#203f49",
+			"shade": "#08161d",
+			"motif": "#5c7b88",
+			"grainAmplitude": 0.65,
+			"grainSeed": 6090610,
+			"motifOpacity": 0.22,
+			"highlightOpacity": 0.055,
+			"ribbonOpacity": 0.035,
+			"status": "Designed night presentation for approved Firefly 10; distinct from existing website UI tokens.",
+			"pattern": {
+				"name": "Midnight crescent and drifting clouds",
+				"description": "An offset crescent, sparse four-point stars, and broad cloud contours occupy the upper and outer negative space. Original Firefly geometry, independent of Frogie curves and Pew stripes.",
+				"layers": [
+					{
+						"d": "M306 58C259 68 236 112 253 153C268 192 307 209 346 190C310 190 282 163 279 130C277 102 287 77 306 58Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M306 58C260 69 239 109 253 151",
+						"tone": "highlight",
+						"strokeWidth": 2.2
+					},
+					{
+						"d": "M104 129L108 140L119 144L108 148L104 159L100 148L89 144L100 140Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M436 83L439 91L447 94L439 97L436 105L433 97L425 94L433 91Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M823 834L827 845L838 849L827 853L823 864L819 853L808 849L819 845Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M15 205C49 189 68 192 87 203C94 178 126 174 144 194C166 183 195 190 209 207C230 200 245 204 258 213",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M776 933C805 917 831 919 850 931C863 911 892 909 910 926C942 912 970 921 989 937C1003 930 1015 932 1034 940",
+						"tone": "ribbon",
+						"strokeWidth": 4
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 238,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 450,
+			"minimumComponentPixels": 0
+		},
+		"shadows": [
+			{
+				"color": [
+					2,
+					10,
+					16
+				],
+				"opacity": 0.2,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					22
+				]
+			},
+			{
+				"color": [
+					2,
+					9,
+					14
+				],
+				"opacity": 0.14,
+				"blurAt2048": 8,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"emission": [
+			{
+				"name": "flame",
+				"mask": {
+					"ellipseAt2048": [
+						502,
+						1515,
+						210,
+						335
+					],
+					"minimumRed": 220,
+					"minimumGreen": 90,
+					"maximumBlue": 210,
+					"minimumWarmth": 70
+				},
+				"color": [
+					255,
+					161,
+					49
+				],
+				"opacity": 0.56,
+				"blurAt2048": 112,
+				"blend": "screen"
+			},
+			{
+				"name": "abdomen",
+				"mask": {
+					"ellipseAt2048": [
+						1320,
+						1370,
+						295,
+						270
+					],
+					"minimumRed": 215,
+					"minimumGreen": 145,
+					"maximumBlue": 190,
+					"minimumWarmth": 75
+				},
+				"color": [
+					255,
+					199,
+					72
+				],
+				"opacity": 0.34,
+				"blurAt2048": 140,
+				"blend": "screen"
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.84,
+			"minimumClearanceAt2048": 128,
+			"intentionalEdges": [],
+			"note": "Owner requested more breathing room after raw approval. Scale and center the entire accepted firefly/fire group uniformly in every master and size; preserve relative proportions. Keep untouched generation and unscaled extracted artwork separately. Require at least 128 native pixels between visible artwork and the final rounded-square edge."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2719302,
+		"foregroundPixels": 1475002,
+		"softEdgePixels": 20671,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 54,
+			"top": 114,
+			"right": 1981,
+			"bottom": 1889
+		}
+	},
+	"placement": {
+		"scale": 0.84,
+		"bounds": {
+			"left": 209,
+			"top": 259,
+			"right": 1828,
+			"bottom": 1751
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 157.28273203637184,
+		"clippedPixels": 0
+	},
+	"emission": [
+		{
+			"name": "flame",
+			"selectedPixels": 95613,
+			"renderedAlpha": 13655275,
+			"maskCoordinates": "Native source pixels, before icon placement"
+		},
+		{
+			"name": "abdomen",
+			"selectedPixels": 121140,
+			"renderedAlpha": 10490192,
+			"maskCoordinates": "Native source pixels, before icon placement"
+		}
+	],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3260,
+			"sha256": "66f35da8a78badd47b53a4e3ce693cc23f215f121a9405fb527113e917c9a939"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 720,
+			"sha256": "21a627663fdebb02abb0bdbb1aaad76e5ab0daf8ea1cb6ea84fa06d31cf8bb3e"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 18593,
+			"sha256": "0822585bd2732c2c95a811864a0cd643bfbf602a413f72e9c622c3413b41ed77"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3416947,
+			"sha256": "7d68614b88b09f24a817c29573738c728f24e1e00fbda7d28e94e14987d3830a"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 99959,
+			"sha256": "2427705b8e21d1a62920bec84d1cb2f5cd23f28e1e8e5fb6712e707942209449"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1345,
+			"sha256": "879b6196108cbcc15c7f787d805b0e04980b4efe34a1cb3e8adb4252afd6dd5a"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1476175,
+			"sha256": "12b80551b675bece95993276ccd46048c2ad623f8d52868b39242c491aeee4e8"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2583578,
+			"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 120829,
+			"sha256": "b2dd47260e0032f9d94cec90d2cf18717969a48ce351b3841cf8ecbe10bc35c0"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 198996,
+			"sha256": "9ecc361d1500833d7985dc727ba90173f0908b7857c676b43c414da9a07863ea"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 138855,
+			"sha256": "4d8bc8ce22ecc9f620f2d20c81c43307eb5267b9b0e3b06ee805701048389baf"
+		},
+		{
+			"path": "glow-flame-mask.png",
+			"bytes": 29093,
+			"sha256": "d95b281de29d18686e65e9bbf2048705ddf9540b26089f2d496dddd698e9c39b"
+		},
+		{
+			"path": "glow-flame.png",
+			"bytes": 86044,
+			"sha256": "441d1241170da867bcf87209ed4676ceecd67f6161cd55d34af037ec9d6574f1"
+		},
+		{
+			"path": "glow-abdomen-mask.png",
+			"bytes": 21474,
+			"sha256": "14b777be3f00e341150f2117c89b54d8d2854ad4ab98c9f1a4026c30c638ca34"
+		},
+		{
+			"path": "glow-abdomen.png",
+			"bytes": 63133,
+			"sha256": "6c06228ef54c3a936dc91c389a1fd17c85fb897c57cc6e39c3c6e3238a72757e"
+		},
+		{
+			"path": "exports/firefly-transparent-2048.png",
+			"bytes": 2583578,
+			"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+		},
+		{
+			"path": "exports/firefly-icon-2048.png",
+			"bytes": 3973346,
+			"sha256": "5b44f514117c0e7471e60fcd628880c3c7116a9d597e9d1f944aaa621318992e"
+		},
+		{
+			"path": "exports/firefly-rounded-2048.png",
+			"bytes": 3921094,
+			"sha256": "47baff0c6569e958d6e7665c663a2c66ea0f449b7d1859752420bad2a58d8776"
+		},
+		{
+			"path": "exports/firefly-transparent-1024.png",
+			"bytes": 698807,
+			"sha256": "eabd716b923fd331ab1eddff6a4f1f42d04f9b1a1cc6989466cae31f28a1a57f"
+		},
+		{
+			"path": "exports/firefly-icon-1024.png",
+			"bytes": 924786,
+			"sha256": "9ceea2602b879a782bb35a2b462d9c11b494b0dedf24e6009a8ec16bf9db0449"
+		},
+		{
+			"path": "exports/firefly-rounded-1024.png",
+			"bytes": 929021,
+			"sha256": "383f987b6859ebece8bc4a811e1f3ef53e367800d783e64cf4237658a0dd2591"
+		},
+		{
+			"path": "exports/firefly-transparent-512.png",
+			"bytes": 203340,
+			"sha256": "41b422350eaab8b91ebaa40eb1bbcabc863ef3248aebe119544866a567389f2f"
+		},
+		{
+			"path": "exports/firefly-icon-512.png",
+			"bytes": 305006,
+			"sha256": "e08a95476a90587dc940b7a108d5deab39bfaebcadfc033fc060e65aa07cf34e"
+		},
+		{
+			"path": "exports/firefly-rounded-512.png",
+			"bytes": 306332,
+			"sha256": "7b2c0515af73cf2f1ea76e9dbc2f02f823f6679c7f7b6c6373010a0202f43c11"
+		},
+		{
+			"path": "exports/firefly-transparent-256.png",
+			"bytes": 59828,
+			"sha256": "082d3db02d68a800160ca9c62317c050458433fffc4cb12cbe37e59673ecdd6b"
+		},
+		{
+			"path": "exports/firefly-icon-256.png",
+			"bytes": 72714,
+			"sha256": "54a86c41e72039644c6fec694d8a3e86750ebfae8f90395ae2d9dcaa5c32cb3f"
+		},
+		{
+			"path": "exports/firefly-rounded-256.png",
+			"bytes": 75823,
+			"sha256": "f3036252f04a93b46d42a29ccf1e6bca82670da351c6b120e142ffeaab209760"
+		},
+		{
+			"path": "exports/firefly-transparent-128.png",
+			"bytes": 17579,
+			"sha256": "6896a83e3fa2a220a24408c201ae361d90bff1edea62a1b7d11180dfe6568eb2"
+		},
+		{
+			"path": "exports/firefly-icon-128.png",
+			"bytes": 22350,
+			"sha256": "d7a516fddb5cfd9c6509baffb9d873ead7cc4d55983d577814dbe57fec68800a"
+		},
+		{
+			"path": "exports/firefly-rounded-128.png",
+			"bytes": 23885,
+			"sha256": "6aa4dc06a10325f60dd08d38fab0f965b7aaebe5dba4872801e12c07c4a446a3"
+		},
+		{
+			"path": "exports/firefly-transparent-64.png",
+			"bytes": 5312,
+			"sha256": "ba34b0a1894c8d1314d9ec362a92bf689cfb77a8f0fc1ddbd7fb5c68533f0d75"
+		},
+		{
+			"path": "exports/firefly-icon-64.png",
+			"bytes": 7414,
+			"sha256": "44c3f90215cd9608f13d3e2f820d0624be3b8485a5d8d2dbd100160d7d50ccff"
+		},
+		{
+			"path": "exports/firefly-rounded-64.png",
+			"bytes": 8049,
+			"sha256": "e81167e61522859245e0898194f61121240ae3cd67eff312413b2cc9bc459b30"
+		},
+		{
+			"path": "exports/firefly-transparent-48.png",
+			"bytes": 3353,
+			"sha256": "3fa2bd3291810b777cd075076ea9fb2e6dba045d647e1e54adb03972af930716"
+		},
+		{
+			"path": "exports/firefly-icon-48.png",
+			"bytes": 4699,
+			"sha256": "4231ffe9bb29bfd6de000b579e26562fafcd3978fe1375e454bd75acf5fec4ca"
+		},
+		{
+			"path": "exports/firefly-rounded-48.png",
+			"bytes": 5112,
+			"sha256": "c9adfc6126209c8d2247e445be2722d06c12e8bbfd8a1c5dfb40b6560035610d"
+		},
+		{
+			"path": "exports/firefly-transparent-32.png",
+			"bytes": 1813,
+			"sha256": "8f231431061d2b0df666b4204ce74bb3d3048800e212073b18be079ec0774cf7"
+		},
+		{
+			"path": "exports/firefly-icon-32.png",
+			"bytes": 2585,
+			"sha256": "c769735da68add2c0d344651074bf0deff1af8b33b251d064e0c00ee3d6c94d9"
+		},
+		{
+			"path": "exports/firefly-rounded-32.png",
+			"bytes": 2776,
+			"sha256": "2681ea42a7f9f830c3b0514effdb6992df24fd4d5e1ac96550b29fdd136d8431"
+		},
+		{
+			"path": "exports/firefly-transparent-24.png",
+			"bytes": 1202,
+			"sha256": "39ffca8d9ffcde51841dfd09520339a16921d8c98b82a876d2aefdd60b7254f3"
+		},
+		{
+			"path": "exports/firefly-icon-24.png",
+			"bytes": 1685,
+			"sha256": "55deba9cf285eecb696879600cc3e47855a94ba5a8cac6a088a740b2241e7849"
+		},
+		{
+			"path": "exports/firefly-rounded-24.png",
+			"bytes": 1811,
+			"sha256": "4d209494a986c07113ecd11cc101f9a093f3b5b7b168a291a0410f00e24b1582"
+		},
+		{
+			"path": "exports/firefly-transparent-16.png",
+			"bytes": 674,
+			"sha256": "7677bff204dbd41927875e7287e6d0258ee4f5b3390ebdb4a48344b16e1ed3c0"
+		},
+		{
+			"path": "exports/firefly-icon-16.png",
+			"bytes": 914,
+			"sha256": "dada7e93ad80ea782582f4e73496eb0d8cfde5c56a6187e6e193054b79f6b84a"
+		},
+		{
+			"path": "exports/firefly-rounded-16.png",
+			"bytes": 966,
+			"sha256": "17683d00b7bb2c686a2a5c6178e2b2003ba47b092a0bf43d8627f543f286348a"
+		},
+		{
+			"path": "exports/firefly-white-2048.png",
+			"bytes": 2380781,
+			"sha256": "a7df2ca3180cdd1a1ee6fe57787cc753ce125786dd01744610dfb00d92878793"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 656531,
+			"sha256": "15e0bbe78610755fffbf92f56ec92a6497f2edc67459ce33bda1c2ba7fd895e3"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 659102,
+			"sha256": "e72ccb438482524cd990f810abad895bdfaca160253e8bed2b0ab721f4dfc5dd"
+		}
+	]
+}
