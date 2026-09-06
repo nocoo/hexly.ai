@@ -10,7 +10,7 @@
 		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
 		"status": "Existing Firefly UI tokens; unchanged"
 	},
-	"status": "raw-review-pending",
+	"status": "rejected",
 	"supersedes": "firefly/2026-09-06-01",
 	"intent": "A visibly faceted complete firefly circles one separate little flame, with a project-specific light-orbit background planned for after raw approval.",
 	"rawCheckpoint": "Mandatory: show untouched output immediately and await confirmation before finishing.",
@@ -40,5 +40,7 @@
 			"path": "artwork/logo-family/references/ref02.jpeg",
 			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018"
 		}
-	]
+	],
+	"supersededBy": "firefly/2026-09-06-03",
+	"decisionRecord": "raw-review.json"
 }
