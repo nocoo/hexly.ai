@@ -22,17 +22,15 @@ for (const project of projects) {
 	}
 	if (project.family) {
 		const root = `public${project.family.root}`;
-		const manifest: {
-			files: { path: string; bytes: number; sha256: string }[];
-		} = JSON.parse(await readFile(`${root}/manifest.json`, "utf8"));
-		for (const file of manifest.files) {
-			const data = await readFile(`public${file.path}`);
-			if (
-				data.length !== file.bytes ||
-				createHash("sha256").update(data).digest("hex") !== file.sha256
-			)
-				throw new Error(`Family archive changed: ${file.path}`);
-		}
+		const foreground = project.family.foreground;
+		const master = await readFile(`public${foreground.original}`);
+		const meta = await sharp(master).metadata();
+		if (
+			createHash("sha256").update(master).digest("hex") !== foreground.sha256 ||
+			meta.width !== foreground.width ||
+			meta.height !== foreground.height
+		)
+			throw new Error(`Refined foreground changed: ${project.id}`);
 		const previous = await readFile(
 			`public${project.family.previous.original}`,
 		);
@@ -48,7 +46,7 @@ for (const project of projects) {
 					`Incorrect family icon dimensions: ${project.id}/${size}`,
 				);
 		}
-		for (const name of ["previous", "background"]) {
+		for (const name of ["previous", "background", "transparent"]) {
 			const meta = await sharp(`${root}/${name}-1024.webp`).metadata();
 			if (meta.width !== 1024 || meta.height !== 1024)
 				throw new Error(
@@ -58,7 +56,28 @@ for (const project of projects) {
 	}
 }
 console.info(
-	`Verified ${projects.length} source checksums, ${projects.length * 4} artwork derivatives, and all promoted family archives and previews.`,
+	`Verified ${projects.length} source checksums, ${projects.length * 4} artwork derivatives, and all current family foregrounds and previews.`,
+);
+
+let publicArchives = 0;
+for await (const path of new Bun.Glob(
+	"public/logos/family/**/manifest.json",
+).scan(".")) {
+	const manifest: {
+		files: { path: string; bytes: number; sha256: string }[];
+	} = JSON.parse(await readFile(path, "utf8"));
+	for (const file of manifest.files) {
+		const data = await readFile(`public${file.path}`);
+		if (
+			data.length !== file.bytes ||
+			createHash("sha256").update(data).digest("hex") !== file.sha256
+		)
+			throw new Error(`Family archive changed: ${file.path}`);
+	}
+	publicArchives++;
+}
+console.info(
+	`Verified ${publicArchives} current and historical public family archives.`,
 );
 
 let finishingPasses = 0;

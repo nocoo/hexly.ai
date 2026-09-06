@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: An art marketplace connecting artists, collectors, and the works they love.
 - Chinese: 连接艺术家与收藏者的艺术电商平台。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![huran.cc identity](../../public/logos/display/huran-cc-160.webp)
+![huran.cc source identity](../../public/logos/display/huran-cc-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

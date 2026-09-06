@@ -6,6 +6,7 @@
 - Website: [https://lyre.hexly.ai](https://lyre.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Recordings, transcripts, and word-by-word playback, beautifully in sync.
 - Chinese: 整理录音和转写文本，让逐字高亮跟着声音一起播放。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Lyre identity](../../public/logos/display/lyre-160.webp)
+![Lyre source identity](../../public/logos/display/lyre-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Lyrebird portrait

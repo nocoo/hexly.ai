@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A little perspective on your screen time, with a Mac tracker and a synced dashboard.
 - Chinese: 用 Mac 时间追踪器和同步仪表盘，看看自己的时间花在了哪里。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Gecko identity](../../public/logos/display/gecko-160.webp)
+![Gecko source identity](../../public/logos/display/gecko-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Full-body gecko

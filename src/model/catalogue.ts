@@ -24,7 +24,12 @@ export function filterProjects(
 		.split(/\s+/)
 		.filter(Boolean);
 	const result = projects.filter((project) => {
-		if (category !== "all" && project.category !== category) return false;
+		if (category === "archive") {
+			if (!project.archived) return false;
+		} else {
+			if (category === "all" && project.archived) return false;
+			if (category !== "all" && project.category !== category) return false;
+		}
 		const content = [
 			project.title,
 			project.repo,
@@ -45,7 +50,7 @@ export function filterProjects(
 
 export function categoryCounts(projects: Project[]): Record<Category, number> {
 	const counts: Record<Category, number> = {
-		all: projects.length,
+		all: projects.filter((project) => !project.archived).length,
 		ai: 0,
 		tools: 0,
 		everyday: 0,
@@ -54,7 +59,10 @@ export function categoryCounts(projects: Project[]): Record<Category, number> {
 		extensions: 0,
 		archive: 0,
 	};
-	for (const project of projects) counts[project.category] += 1;
+	for (const project of projects) {
+		if (project.archived) counts.archive += 1;
+		if (project.category !== "archive") counts[project.category] += 1;
+	}
 	return counts;
 }
 

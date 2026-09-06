@@ -6,6 +6,7 @@
 - Website: [https://surety.hexly.ai](https://surety.hexly.ai)
 - Website evidence: README.md browser access
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A private, local-first home for your family insurance policies.
 - Chinese: 以隐私和本地数据为先，为家庭保险保单建立一个清晰的档案。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Surety identity](../../public/logos/display/surety-160.webp)
+![Surety source identity](../../public/logos/display/surety-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Illustrated tiger portrait

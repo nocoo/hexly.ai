@@ -129,10 +129,9 @@
 		},
 		"family": {
 			"id": "2026-09-06-01",
-			"adopted": "2026-09-06",
-			"finishing": "02",
-			"root": "/logos/family/frogie/2026-09-06-01",
-			"archive": "https://github.com/nocoo/hexly.ai/tree/aeeac5d/artwork/logo-family/frogie/2026-09-06-01",
+			"finishing": "03",
+			"root": "/logos/family/frogie/2026-09-06-01/03",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/frogie/2026-09-06-01",
 			"model": "Azure Foundry · gpt-image-2",
 			"previous": {
 				"original": "/logos/originals/frogie.png",
@@ -167,24 +166,24 @@
 				{
 					"aspect": "presentation",
 					"title": {
-						"en": "A softer color field",
-						"zh": "安静而有触感的底色"
+						"en": "A deeper sage field",
+						"zh": "更有层次的鼠尾草绿"
 					},
 					"description": {
-						"en": "Pale sage, quiet curved motifs, fine grain, and shallow shadows give the green character a matte paper setting.",
-						"zh": "淡鼠尾草绿、低对比弧线、细微颗粒与浅阴影，让绿色角色像落在一张有触感的纸上。"
+						"en": "Deeper sage, visible tonal curves, fine grain, and soft shadows give the green character a matte paper setting.",
+						"zh": "加深的鼠尾草绿、清晰的同色弧线、细微颗粒与柔和阴影，为绿色角色增添哑光纸面的层次。"
 					}
 				}
 			],
 			"palette": [
 				{
-					"color": "#dce6ca",
+					"color": "#bbcb9e",
 					"role": "background",
 					"label": {
 						"en": "Sage field",
 						"zh": "鼠尾草底色"
 					},
-					"source": "Approved Frogie family presentation, finishing 02: background.base #DCE6CA"
+					"source": "Local Frogie contrast study, finishing 03; background.base in archived settings.json"
 				},
 				{
 					"color": "#86c32c",
@@ -245,11 +244,17 @@
 				"en": "At 16 px the green silhouette and open mouth lead; individual facets and musical notes merge into small color accents.",
 				"zh": "缩到 16 px 时，绿色轮廓和张开的嘴巴承担辨识度，细碎的切面与音符会合并成小小的色彩点缀。"
 			},
-			"references": [
-				"/logos/family/references/ref01.jpeg",
-				"/logos/family/references/ref02.jpeg"
-			]
-		}
+			"status": "review",
+			"updated": "2026-09-06",
+			"foreground": {
+				"original": "/logos/family/frogie/2026-09-06-01/03/transparent.png",
+				"display": "/logos/family/frogie/2026-09-06-01/03/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+			}
+		},
+		"archived": false
 	},
 	{
 		"id": "pew",
@@ -330,6 +335,134 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
+		},
+		"archived": false,
+		"family": {
+			"id": "2026-09-06-01",
+			"model": "Azure Foundry · gpt-image-2",
+			"previous": {
+				"original": "/logos/originals/pew.png",
+				"sourceUrl": "https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2b94fa9b0b0521008a08caa3bae34552f68785fd591c8dc578ceee943addc35e"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "Just inside the frame",
+						"zh": "自然探入画面"
+					},
+					"description": {
+						"en": "The continuous neck enters from the bottom and right edge, with the ears, wink, muzzle, and rainbow tongue kept inside the rounded tile.",
+						"zh": "颈部从底部与右侧自然延伸出画面，耳朵、眨眼、鼻口和彩虹舌头完整留在圆角图标内。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Stripes become facets",
+						"zh": "条纹构成连贯的切面"
+					},
+					"description": {
+						"en": "Broad ivory and charcoal planes carry the familiar zebra. Smaller facets articulate the wink, dark nose, and little rainbow tongue.",
+						"zh": "大块象牙白与炭黑平面保留熟悉的斑马，细一些的切面刻画眨眼、深色鼻子与彩虹舌头。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "A deeper lilac field",
+						"zh": "更有层次的丁香紫底色"
+					},
+					"description": {
+						"en": "A deeper lilac field makes the tonal curves visible, with fine grain and soft shadows separating the ivory portrait from its setting.",
+						"zh": "加深的丁香紫让同色底纹更清楚，细微颗粒与柔和阴影托起象牙白的斑马头像。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#bfb2cf",
+					"role": "background",
+					"label": {
+						"en": "Lilac field",
+						"zh": "丁香紫底色"
+					},
+					"source": "Local Pew contrast study, finishing 03; background.base in archived settings.json"
+				},
+				{
+					"color": "#fcf8f0",
+					"role": "primary",
+					"label": {
+						"en": "Ivory",
+						"zh": "象牙白"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (1510, 1740); palette.json"
+				},
+				{
+					"color": "#232637",
+					"role": "accent",
+					"label": {
+						"en": "Charcoal",
+						"zh": "炭黑"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (1140, 415); palette.json"
+				},
+				{
+					"color": "#827f8e",
+					"role": "accent",
+					"label": {
+						"en": "Quiet gray",
+						"zh": "柔灰"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (770, 334); palette.json"
+				},
+				{
+					"color": "#fb9383",
+					"role": "accent",
+					"label": {
+						"en": "Coral",
+						"zh": "珊瑚橘"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (593, 1620); palette.json"
+				},
+				{
+					"color": "#73dce7",
+					"role": "accent",
+					"label": {
+						"en": "Cyan",
+						"zh": "青蓝"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (589, 1759); palette.json"
+				},
+				{
+					"color": "#b97ce6",
+					"role": "accent",
+					"label": {
+						"en": "Violet",
+						"zh": "紫罗兰"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (631, 1806); palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "At 16 px the striped silhouette leads; the wink and individual facets merge, while the rainbow tongue becomes a small color accent.",
+				"zh": "缩到 16 px 时，黑白条纹轮廓承担辨识度；眨眼与细碎切面会合并，彩虹舌头成为一小点彩色装饰。"
+			},
+			"status": "review",
+			"updated": "2026-09-06",
+			"finishing": "03",
+			"root": "/logos/family/pew/2026-09-06-01/03",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pew/2026-09-06-01",
+			"foreground": {
+				"original": "/logos/family/pew/2026-09-06-01/03/transparent.png",
+				"display": "/logos/family/pew/2026-09-06-01/03/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+			}
 		}
 	},
 	{
@@ -411,7 +544,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "bogo",
@@ -492,7 +626,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "steed",
@@ -573,7 +708,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "ellie",
@@ -654,7 +790,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "neo",
@@ -735,7 +872,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "giraffe",
@@ -812,7 +950,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "backy",
@@ -893,7 +1032,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "otter",
@@ -974,7 +1114,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "gecko",
@@ -1055,7 +1196,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "dove",
@@ -1136,7 +1278,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "pika",
@@ -1217,7 +1360,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "raven",
@@ -1294,7 +1438,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "bat",
@@ -1375,7 +1520,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "lyre",
@@ -1452,7 +1598,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "pokepocket",
@@ -1529,7 +1676,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "dogfight",
@@ -1610,7 +1758,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "gaga",
@@ -1687,7 +1836,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "pew-game",
@@ -1764,7 +1914,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "rooster",
@@ -1832,7 +1983,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "snaky",
@@ -1900,7 +2052,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "signoff-now",
@@ -1981,7 +2134,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "unseal",
@@ -2049,7 +2203,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "flow",
@@ -2130,7 +2285,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "codo",
@@ -2198,7 +2354,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "arena",
@@ -2279,7 +2436,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "owl",
@@ -2347,7 +2505,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "xray",
@@ -2428,7 +2587,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "r2shot",
@@ -2509,7 +2669,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "shrike",
@@ -2590,7 +2751,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "hooky",
@@ -2658,7 +2820,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "dotty",
@@ -2729,7 +2892,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "wooly",
@@ -2810,7 +2974,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "matrix",
@@ -2891,7 +3056,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "basalt",
@@ -2968,7 +3134,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "surety",
@@ -3049,7 +3216,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "life-ai",
@@ -3130,7 +3298,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "echo",
@@ -3198,7 +3367,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "deca",
@@ -3266,7 +3436,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "runner",
@@ -3329,7 +3500,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "zhe",
@@ -3410,7 +3582,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "geekhub",
@@ -3491,7 +3664,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "ccbackup",
@@ -3559,7 +3733,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "noheir",
@@ -3640,7 +3815,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "ipsafe",
@@ -3708,7 +3884,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": false
 	},
 	{
 		"id": "uptime-kuma-skill",
@@ -3776,7 +3953,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "microsoft-teams-send-as-workflow",
@@ -3844,7 +4022,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "image-stitch",
@@ -3912,7 +4091,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "skill-faster-whisper",
@@ -3980,7 +4160,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "skill-task-notifier",
@@ -4048,7 +4229,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "mcp-work-history",
@@ -4116,7 +4298,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "mcp-make-sound",
@@ -4184,7 +4367,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "infoviz",
@@ -4242,7 +4426,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "jsinst",
@@ -4310,7 +4495,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "infoviz-builder",
@@ -4368,7 +4554,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "nodehub",
@@ -4431,7 +4618,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "huran-cc",
@@ -4484,7 +4672,8 @@
 					"source": "Preserved project artwork, transparent background"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "doc-doctor-com",
@@ -4552,7 +4741,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "nodeviz",
@@ -4620,7 +4810,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "express-spa",
@@ -4688,7 +4879,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "discuz-recovery",
@@ -4756,7 +4948,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "feedmaid",
@@ -4824,7 +5017,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "infoviz-ios",
@@ -4882,7 +5076,8 @@
 					"source": "Preserved project artwork, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "node-image-uploader",
@@ -4950,7 +5145,8 @@
 					"source": "Existing profile emoji glyph, sampled pixel"
 				}
 			]
-		}
+		},
+		"archived": true
 	},
 	{
 		"id": "hexly-ai",
@@ -5021,6 +5217,7 @@
 					"source": "src/styles/base.css :root --ink"
 				}
 			]
-		}
+		},
+		"archived": false
 	}
 ]

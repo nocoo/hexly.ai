@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Bring old Discuz! forum posts back from their backups.
 - Chinese: 从旧备份中找回 Discuz! 论坛的帖子。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Discuz Recovery identity](../../public/logos/display/discuz-recovery-160.webp)
+![Discuz Recovery source identity](../../public/logos/display/discuz-recovery-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

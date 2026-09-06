@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A modern forum for thoughtful conversations, with a companion terminal client.
 - Chinese: 为认真交流而做的现代论坛，也提供可以在终端里使用的客户端。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Ellie identity](../../public/logos/display/ellie-160.webp)
+![Ellie source identity](../../public/logos/display/ellie-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Elephant portrait with colorful ornaments

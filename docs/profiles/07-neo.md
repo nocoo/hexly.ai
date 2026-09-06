@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Your two-factor codes, together. Encrypted storage, easy imports, and offline access.
 - Chinese: 把双重验证口令放在一起，支持加密存储、多格式导入与离线访问。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Neo identity](../../public/logos/display/neo-160.webp)
+![Neo source identity](../../public/logos/display/neo-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Golden retriever portrait

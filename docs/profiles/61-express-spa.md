@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: An early exploration of single-page applications built on Express.js.
 - Chinese: 基于 Express.js 构建单页应用的一次早期探索。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Express SPA identity](../../public/logos/display/express-spa-160.webp)
+![Express SPA source identity](../../public/logos/display/express-spa-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

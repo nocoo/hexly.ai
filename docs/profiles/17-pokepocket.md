@@ -6,6 +6,7 @@
 - Website: [https://pokepocket.hexly.ai](https://pokepocket.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: games
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: GB / GBC / GBA collection with browser play and local saves
 - Chinese: GB / GBC / GBA 游戏收藏盘，支持浏览器游玩与本地存档。
 - Profile section: Games
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Poké Pocket identity](../../public/logos/display/pokepocket-160.webp)
+![Poké Pocket source identity](../../public/logos/display/pokepocket-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

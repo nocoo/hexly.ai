@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: extensions
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Let your AI tools play system sounds on macOS.
 - Chinese: 让 AI 工具在 macOS 上播放系统提示音。
 - Profile section: Skills & MCP Servers
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Make Sound MCP identity](../../public/logos/display/mcp-make-sound-160.webp)
+![Make Sound MCP source identity](../../public/logos/display/mcp-make-sound-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Let coding agents debate solutions while you review, compare, and decide.
 - Chinese: 让多个编程智能体提出方案、展开讨论，由你比较、审阅并做决定。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Arena identity](../../public/logos/display/arena-160.webp)
+![Arena source identity](../../public/logos/display/arena-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

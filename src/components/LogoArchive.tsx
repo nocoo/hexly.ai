@@ -35,12 +35,13 @@ export function LogoArchive({
 			<div className="review-section-heading">
 				<h3 id="archive-title">{t.archive}</h3>
 				<p>
-					{family.model} · {project.logo.width} × {project.logo.height}
+					{family.model} · {family.foreground.width} ×{" "}
+					{family.foreground.height}
 				</p>
 			</div>
 			<div className="download-links">
 				{[
-					[t.download, project.logo.original],
+					[t.download, family.foreground.original],
 					[t.squareDownload, `${family.root}/icon.png`],
 					[t.roundedDownload, `${family.root}/rounded.png`],
 					[t.whiteDownload, `${family.root}/white.png`],
@@ -66,25 +67,6 @@ export function LogoArchive({
 				<pre className="generation-prompt">
 					{failed ? t.promptFailed : prompt || t.promptLoading}
 				</pre>
-			</details>
-			<details>
-				<summary>{t.referencesTitle}</summary>
-				<div className="reference-grid">
-					{family.references.map((reference, index) => (
-						<a
-							key={reference}
-							href={reference}
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img
-								loading="lazy"
-								src={reference}
-								alt={`${t.referenceAlt} ${index + 1}`}
-							/>
-						</a>
-					))}
-				</div>
 			</details>
 			<a
 				className="process-link"
