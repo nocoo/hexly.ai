@@ -1,0 +1,300 @@
+{
+	"createdAt": "2026-09-06T08:55:52.270Z",
+	"pass": "03",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3273480b77afd705a946c5b4bde88176270fd5255a3b7f68ab180688d0176a2d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "2097aa50fe3af1c214058c3a3aec0863081e9071433e869900486cfbc3654efd",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; local two-pixel alpha matting and edge color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "frogie",
+		"original": "../../../../public/logos/originals/frogie.png",
+		"background": {
+			"base": "#bbcb9e",
+			"light": "#dce6c6",
+			"shade": "#9daf7d",
+			"motif": "#617b47",
+			"grainAmplitude": 1,
+			"grainSeed": 60906,
+			"status": "Local contrast study, finishing 03; source-project artwork and UI tokens unchanged.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.24
+		},
+		"matte": {
+			"minimumChannel": 228,
+			"maximumChroma": 35,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.97,
+			"maximumMatteEnergy": 1200
+		},
+		"shadows": [
+			{
+				"color": [
+					62,
+					79,
+					38
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					49,
+					68,
+					31
+				],
+				"opacity": 0.11,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 2677019,
+		"foregroundPixels": 1517285,
+		"softEdgePixels": 16829,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 192,
+			"top": 157,
+			"right": 1886,
+			"bottom": 1928
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 950,
+			"sha256": "226fed245a2f5fcb68d2442bb4e600d811c4f68deaca7d7207eb4763f56e581d"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 12548,
+			"sha256": "3273480b77afd705a946c5b4bde88176270fd5255a3b7f68ab180688d0176a2d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 93405,
+			"sha256": "9ffa07ac6848d81c65d73ac97a867d302cb08c50d048a4ba0cf71ec9e866800b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 809,
+			"sha256": "86f7b00ab5fb8e7c8be8b3f14d98fc60f48bb8dc7a327163096a5b7b74e1cc83"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2176346,
+			"sha256": "b54e369db256f66359560247860492c22e5c791a507ff3cfa0f6a7128b0eb502"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 284930,
+			"sha256": "48469902b3f1e293d411ead6764ddfba2e8d60742b05bb467b47af43062a5d86"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 208901,
+			"sha256": "73a601eb915cbd75561be93fd26504b031dd2adc311555bf94829be188ac589b"
+		},
+		{
+			"path": "exports/frogie-transparent-2048.png",
+			"bytes": 3588507,
+			"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+		},
+		{
+			"path": "exports/frogie-icon-2048.png",
+			"bytes": 5555134,
+			"sha256": "d1df7b7901af384a3eed8ccdf326d474159ee766e6384990b4e938f33696b2cc"
+		},
+		{
+			"path": "exports/frogie-rounded-2048.png",
+			"bytes": 5464546,
+			"sha256": "5363cb58535b8904182a37a725b5f64a2f381296f82b4a15969defff3b37cbc0"
+		},
+		{
+			"path": "exports/frogie-transparent-1024.png",
+			"bytes": 972658,
+			"sha256": "5b1229b3d6ed7e4a08116bcbe88362af3e78d2ea982cb119e336dc3e9213b8f8"
+		},
+		{
+			"path": "exports/frogie-icon-1024.png",
+			"bytes": 1415862,
+			"sha256": "0f303338dcd4a7599fe1afa9a025037b11ea2a9352e6cc58ab327169c01cf5d9"
+		},
+		{
+			"path": "exports/frogie-rounded-1024.png",
+			"bytes": 1409061,
+			"sha256": "5d9ad02aff0105d43146a838256708432793c45735fa48aa4b3e15211e0974c4"
+		},
+		{
+			"path": "exports/frogie-transparent-512.png",
+			"bytes": 288146,
+			"sha256": "611a0c92f5f8b0020d85d2439b601bc375de79c90a892d5b23b208056d993948"
+		},
+		{
+			"path": "exports/frogie-icon-512.png",
+			"bytes": 426178,
+			"sha256": "693bede680f4a05924c74147a5a2d7a5c703b490332bdab86995507061f67931"
+		},
+		{
+			"path": "exports/frogie-rounded-512.png",
+			"bytes": 425920,
+			"sha256": "d5c1048987ae6c02911f91dd4cfeeca425c0f194848f6ef78ef6f9b7fd78b500"
+		},
+		{
+			"path": "exports/frogie-transparent-256.png",
+			"bytes": 86632,
+			"sha256": "9c86f9fcf35bde244421ca7573ccd55878731527c5482af76a32ea84a1e4e363"
+		},
+		{
+			"path": "exports/frogie-icon-256.png",
+			"bytes": 111617,
+			"sha256": "7c04a13423817366feb6f5d4e0d16207720d692627e7c5d5b650f26242538264"
+		},
+		{
+			"path": "exports/frogie-rounded-256.png",
+			"bytes": 114399,
+			"sha256": "3dc079bd527ee0335828f75b3598a3fd088fd4d331433eacfd7a4dac2b7f8acd"
+		},
+		{
+			"path": "exports/frogie-transparent-128.png",
+			"bytes": 25154,
+			"sha256": "e4aa3481db48096a6ef17de07e85e52c66500d4a58dd1c2377bd6ec31ecf81c5"
+		},
+		{
+			"path": "exports/frogie-icon-128.png",
+			"bytes": 32223,
+			"sha256": "207cb046ec233fcfbfd43a1290954eb89650c82d95ff2bf8774d6adf9357b39f"
+		},
+		{
+			"path": "exports/frogie-rounded-128.png",
+			"bytes": 33769,
+			"sha256": "dd8c0851bba7710152519c246d5b6aa09a73cfdb95b215b61676f9507f4c4dba"
+		},
+		{
+			"path": "exports/frogie-transparent-64.png",
+			"bytes": 7329,
+			"sha256": "08e7d9e6691b23a52e8b96cf9ba9b5b7a3e9efc9ac0a221ca18f41fd5a9edfd1"
+		},
+		{
+			"path": "exports/frogie-icon-64.png",
+			"bytes": 10160,
+			"sha256": "2be55eb7006d9ab9ab953f9d80eae4a17fcb21564a428e1a347245ddb9fcdc8d"
+		},
+		{
+			"path": "exports/frogie-rounded-64.png",
+			"bytes": 10713,
+			"sha256": "6bb548397748860220cbb265b36eae528c9fea33122a1fcb1a2ebfb4c933262c"
+		},
+		{
+			"path": "exports/frogie-transparent-48.png",
+			"bytes": 4559,
+			"sha256": "c5291d9a5001ad5206ceefa275ee34ee8991e2718cbd973fd18fe3684910e16b"
+		},
+		{
+			"path": "exports/frogie-icon-48.png",
+			"bytes": 6087,
+			"sha256": "165eac9a2e0c666bd62ae84c611d0885174a807f9b535ded3445a005b6c248bb"
+		},
+		{
+			"path": "exports/frogie-rounded-48.png",
+			"bytes": 6515,
+			"sha256": "ca98688babb81a60105fc921df3753a9aa8fecb89e35fd7e0cd2d4e28cb1aada"
+		},
+		{
+			"path": "exports/frogie-transparent-32.png",
+			"bytes": 2340,
+			"sha256": "3c616084a1d57372ebf69ca4d01a6f186f8fd5daf5eb46c76d86a8ef02be7483"
+		},
+		{
+			"path": "exports/frogie-icon-32.png",
+			"bytes": 3109,
+			"sha256": "0a84e2c3fa240553babeefbaf7099741ca003c9213e0a67f4c4b1532baa44d93"
+		},
+		{
+			"path": "exports/frogie-rounded-32.png",
+			"bytes": 3259,
+			"sha256": "1ed8d5426cdad63336349a85ca46db8e5ba2415b6cb02287d5d8a61fbf5519e8"
+		},
+		{
+			"path": "exports/frogie-transparent-24.png",
+			"bytes": 1509,
+			"sha256": "b78d6473bc732b14fc55043065884ac3428df6546df6ca62e60be9c95d14c106"
+		},
+		{
+			"path": "exports/frogie-icon-24.png",
+			"bytes": 1894,
+			"sha256": "3848a9831554493e711c921edaccbbc442c523a64c2ddda608aaa2448fec00ea"
+		},
+		{
+			"path": "exports/frogie-rounded-24.png",
+			"bytes": 1999,
+			"sha256": "ae5919bbefa40bb76345ee9b05a9c23f93caa8951e6913f473db55253dcdb1be"
+		},
+		{
+			"path": "exports/frogie-transparent-16.png",
+			"bytes": 829,
+			"sha256": "3aef4aa0e541dff93bedb05a1dea55d9743f3cdc78777e9a853e55a39946c697"
+		},
+		{
+			"path": "exports/frogie-icon-16.png",
+			"bytes": 953,
+			"sha256": "1286403aca3c063493df6539d01b20f854abcc789671a4694eb2a9089b8634a8"
+		},
+		{
+			"path": "exports/frogie-rounded-16.png",
+			"bytes": 993,
+			"sha256": "d022363c6df26fef0b80b865c918bf80b16f3f273d81acb79550d430d45394c3"
+		},
+		{
+			"path": "exports/frogie-white-2048.png",
+			"bytes": 3387872,
+			"sha256": "be335d2c2470b3001f588f2e94475b0d0ece30224aa7bd7f28ed468444859b3e"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 916854,
+			"sha256": "d660e0fd91e351f22314de35d5d2bd99c4a4ad7c0a8725b588542c7da4422a54"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 922526,
+			"sha256": "84babe285e65163fb59833b855c55a9d604d6388ee3adf3ad1815e4285db3d8a"
+		}
+	]
+}

@@ -1,0 +1,309 @@
+{
+	"createdAt": "2026-09-06T08:56:16.261Z",
+	"pass": "03",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3273480b77afd705a946c5b4bde88176270fd5255a3b7f68ab180688d0176a2d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; local two-pixel alpha matting and edge color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "pew",
+		"original": "../../../../public/logos/originals/pew.png",
+		"background": {
+			"base": "#bfb2cf",
+			"light": "#e0d8e9",
+			"shade": "#9f8db5",
+			"motif": "#6d557f",
+			"grainAmplitude": 1,
+			"grainSeed": 609062,
+			"status": "Local contrast study, finishing 03; source-project artwork and UI tokens unchanged.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.24
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 32,
+			"componentNote": "Remove sub-32-pixel disconnected threshold residue; this zebra and its tongue form one connected animal. Do not apply this cleanup to detached identity decorations without review."
+		},
+		"shadows": [
+			{
+				"color": [
+					58,
+					43,
+					77
+				],
+				"opacity": 0.12,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					43,
+					34,
+					57
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "The native neck continues beyond the frame; no finishing crop or circular bust mask is applied. Eyes, ears, muzzle, and tongue remain inside the rounded-square safe area."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2068108,
+		"foregroundPixels": 2126196,
+		"softEdgePixels": 9116,
+		"removedComponents": 2,
+		"removedComponentPixels": 5,
+		"bounds": {
+			"left": 436,
+			"top": 88,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1426,
+			"sha256": "b3fe614d857618b88307e52617b55d810ab01087b3a7b245e75855d92c36979f"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 12548,
+			"sha256": "3273480b77afd705a946c5b4bde88176270fd5255a3b7f68ab180688d0176a2d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61328,
+			"sha256": "8730a21ac917ffff54d2a766026589ca98c1d855dcb2a5c62f4f010bbfc9d9c5"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 809,
+			"sha256": "0c88f5ddf8aa6db1f1d84b17b6faf52923fac1e219155083f366be72ca34c646"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2178610,
+			"sha256": "3c603ff25ed4356a0cd7b11f287de60d4c4fff4e1ac254b36f3fa397b87291ef"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 199402,
+			"sha256": "5bac9f286d978df2163a6ca2ef78562d87cb76bd90c5ad3e8d5e1013877bc81a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 154289,
+			"sha256": "8f07b0c0de15504ce57a210301ad4c140cea0287a36c5d997c86f453eadd90c1"
+		},
+		{
+			"path": "exports/pew-transparent-2048.png",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "exports/pew-icon-2048.png",
+			"bytes": 4409142,
+			"sha256": "48237907168291cf3b44993ebc18064cf823ea4822874d05b2ec80f2d6e25967"
+		},
+		{
+			"path": "exports/pew-rounded-2048.png",
+			"bytes": 4313943,
+			"sha256": "85e0d2c589b71ea8887b439701ce023d28d35f5e71e89bdee6c4b31fc0f143d2"
+		},
+		{
+			"path": "exports/pew-transparent-1024.png",
+			"bytes": 974056,
+			"sha256": "7cb275a2f3c9d8e03dfd312b123aa2dae26d0209723b9d2a75aacc203d47ca78"
+		},
+		{
+			"path": "exports/pew-icon-1024.png",
+			"bytes": 1276732,
+			"sha256": "6b271323d5f8fdd5ea2e6b2a9d642dcbd15b1f785ff0188567e547957e3c00e9"
+		},
+		{
+			"path": "exports/pew-rounded-1024.png",
+			"bytes": 1265172,
+			"sha256": "f7139fd34166b2aaec715ddb758f840b6a50ce849fba7635305f32f0d64d1b4d"
+		},
+		{
+			"path": "exports/pew-transparent-512.png",
+			"bytes": 318616,
+			"sha256": "79bde7125b5d45ec51f07b96ee2644b8b960763b83f596f90da4f1f9562ba08a"
+		},
+		{
+			"path": "exports/pew-icon-512.png",
+			"bytes": 417003,
+			"sha256": "8018011d30054270c01b94161d425be95c6dea136a07be875682b34818a0f0c9"
+		},
+		{
+			"path": "exports/pew-rounded-512.png",
+			"bytes": 414642,
+			"sha256": "65a0f144d446f106fd62b69aa189ebf02fa5905e50faebf50e7228f752eed8cf"
+		},
+		{
+			"path": "exports/pew-transparent-256.png",
+			"bytes": 99157,
+			"sha256": "9e6aa90ebb1e5fb6fd66eb4bfac35c0ef6bc8205854a2262eda973832d5a0159"
+		},
+		{
+			"path": "exports/pew-icon-256.png",
+			"bytes": 115973,
+			"sha256": "0d5b370b94747b2bafad94ce55c83d557171bc6df03b855f0b51466f3e4aed50"
+		},
+		{
+			"path": "exports/pew-rounded-256.png",
+			"bytes": 117555,
+			"sha256": "a71c7e9a324dd92deafdc2314560dcffd8bbe2455d99849525cc1cc53ca150cc"
+		},
+		{
+			"path": "exports/pew-transparent-128.png",
+			"bytes": 29031,
+			"sha256": "aefb8357a831b668a76d41f2ebdbcbec6302c945abd1f16a07ac8ef3d77d6fde"
+		},
+		{
+			"path": "exports/pew-icon-128.png",
+			"bytes": 34038,
+			"sha256": "d3deb2c4b783929c6dfedd1b04d3990c0dbe89b232ab36ca7018795c7f2e0ab8"
+		},
+		{
+			"path": "exports/pew-rounded-128.png",
+			"bytes": 35110,
+			"sha256": "8e12cb001bf4c1a3a47196458450bf38d7f4658de5adda05ccbb83462b4612a4"
+		},
+		{
+			"path": "exports/pew-transparent-64.png",
+			"bytes": 8314,
+			"sha256": "6aa9ba10c85c34402239cff35de2647841c9e5a77b319453cedc807157498bb6"
+		},
+		{
+			"path": "exports/pew-icon-64.png",
+			"bytes": 10406,
+			"sha256": "76c49a7d25749d0099cef26b039b00a7e1922815fe47b98a2ce9b8f789dbb748"
+		},
+		{
+			"path": "exports/pew-rounded-64.png",
+			"bytes": 10852,
+			"sha256": "88bb5c478f582434988587c8586b2c7edddee47f510a5fbd8a0e5238ab811499"
+		},
+		{
+			"path": "exports/pew-transparent-48.png",
+			"bytes": 4998,
+			"sha256": "9335a5f7ca63528f5d359df7af7d696264e0888a5bc08e526cf58f5ddf65c087"
+		},
+		{
+			"path": "exports/pew-icon-48.png",
+			"bytes": 6223,
+			"sha256": "eff864168e0efaffe153b6781293a66e80b8690c29dc49b372ef187593f77c23"
+		},
+		{
+			"path": "exports/pew-rounded-48.png",
+			"bytes": 6574,
+			"sha256": "7b5142a8dfec5c43490ca8cba248958bebd248c31de8b19755cd9c27339b567c"
+		},
+		{
+			"path": "exports/pew-transparent-32.png",
+			"bytes": 2499,
+			"sha256": "7fc3ecb16c23f88b23b0f544f7c6a917063d0fcbc0cf1a31d1d24e4b282b3fb8"
+		},
+		{
+			"path": "exports/pew-icon-32.png",
+			"bytes": 3141,
+			"sha256": "aa7e284dcb92987d49e1aee2c2942842826f19d5793f40321822ef9ed7363602"
+		},
+		{
+			"path": "exports/pew-rounded-32.png",
+			"bytes": 3290,
+			"sha256": "a3e6bcdc97fb12fbd52fdfdd24a1a88b26244040df39c2e650d8ec34f7cab32a"
+		},
+		{
+			"path": "exports/pew-transparent-24.png",
+			"bytes": 1526,
+			"sha256": "8d6c96b31b6ee435916eaad0c28e1ffa1828f74f6816b589e9a9c81f46b9da3b"
+		},
+		{
+			"path": "exports/pew-icon-24.png",
+			"bytes": 1881,
+			"sha256": "b7d156de29a4b6a03cae15aeff20749dfb33e26f8c78a6bc9da2ecb0bd7744f9"
+		},
+		{
+			"path": "exports/pew-rounded-24.png",
+			"bytes": 1992,
+			"sha256": "faf65c56e384300026fa8d1c42728833b156660a47ed0af08c5ddc8b316bb878"
+		},
+		{
+			"path": "exports/pew-transparent-16.png",
+			"bytes": 841,
+			"sha256": "7bea66ee0fb0186b43f558206015c2a0833d3a039dcdf02f840f2d5c9ea0a434"
+		},
+		{
+			"path": "exports/pew-icon-16.png",
+			"bytes": 938,
+			"sha256": "c96bdeea4253f9e1c4b43d4cc8057e56f50a32547c3d71134eb5f230b872ed21"
+		},
+		{
+			"path": "exports/pew-rounded-16.png",
+			"bytes": 983,
+			"sha256": "81b7a043ade56c1a3efb5c96bb8db7c66c6c1b24ce9c4841d40970210cdad6f9"
+		},
+		{
+			"path": "exports/pew-white-2048.png",
+			"bytes": 2854245,
+			"sha256": "5d489e823c135d7e3725292d35a5bfa0d53b4eb3e8b0852d4f1a552d54e58f83"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 922622,
+			"sha256": "976f63f0281a811b764af18cf54cdfb6a6e3794869f53adc3d4a75831a4f0e05"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 927806,
+			"sha256": "690ade89c58bf6392170fbabf79925ae76e87aa4c667e8fad46a307ae28dc340"
+		}
+	]
+}

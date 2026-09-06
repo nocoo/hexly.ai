@@ -191,9 +191,9 @@ function backgroundSvg(size, colors) {
 <defs><radialGradient id="field" cx="26%" cy="14%" r="115%"><stop stop-color="${colors.light}"/><stop offset=".52" stop-color="${colors.base}"/><stop offset="1" stop-color="${colors.shade}"/></radialGradient></defs>
 <path fill="url(#field)" d="M0 0h1024v1024H0z"/>
 <g fill="none" stroke-linecap="round">
-<path d="M1110 112C899 20 691 47 712 201S978 238 911 410S943 627 1117 588" stroke="${colors.motif}" stroke-width="44" opacity=".055"/>
-<path d="M1129 110C906 9 651 4 670 197S931 240 868 403S922 674 1105 636" stroke="#ffffff" stroke-width="3" opacity=".18"/>
-<path d="M-111 756C103 665 143 853 285 902S481 934 588 1087" stroke="#ffffff" stroke-width="78" opacity=".13"/>
+<path d="M1110 112C899 20 691 47 712 201S978 238 911 410S943 627 1117 588" stroke="${colors.motif}" stroke-width="44" opacity="${colors.motifOpacity ?? 0.055}"/>
+<path d="M1129 110C906 9 651 4 670 197S931 240 868 403S922 674 1105 636" stroke="#ffffff" stroke-width="3" opacity="${colors.highlightOpacity ?? 0.18}"/>
+<path d="M-111 756C103 665 143 853 285 902S481 934 588 1087" stroke="#ffffff" stroke-width="78" opacity="${colors.ribbonOpacity ?? 0.13}"/>
 </g></svg>`;
 }
 
