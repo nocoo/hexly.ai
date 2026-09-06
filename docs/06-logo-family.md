@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01–04 are rejected; the owner has requested a tactile campfire scene with small surrounding fireflies and a darker background. Every new generation stops for raw-image confirmation before finishing.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01–04 are rejected; campfire study 05 remains unselected. The owner's new reference defines study 06: a larger hovering firefly and flame, connected family facets, and a clean nighttime motif. Every new generation stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -70,6 +70,8 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 [Study 04](../artwork/logo-family/firefly/2026-09-06-04/notes.md) produced a graphic character with crescent eyes, a rounded body, and a separate flame. The owner rejected it entirely and explicitly moved to a tactile three-dimensional campfire scene. Small surrounding insects should be neither frightening nor generically cute; physically plausible colors, scene relationships, and light should provide the fullness. The fourth raw image remains archived without finishing.
 
 [Study 05](../artwork/logo-family/firefly/2026-09-06-05/notes.md) returned one native 2048 × 2048 dark campfire scene with split logs, coals, and four small fireflies. Its tall angular flame has a crystalline appearance, with materially detailed wood and ground. The untouched scene was displayed and opened in Chrome. The owner then supplied a new graphic reference before selecting this output; the scene remains unapproved and superseded, without an explicit aesthetic rejection. No finishing or catalogue integration occurred. Previous sea-glass background plans remain unselected in their original studies.
+
+[Study 06](../artwork/logo-family/firefly/2026-09-06-06/brief.md) uses the newly supplied flight-and-flame image as the primary graphic reference. A byte-identical backup lives at `artwork/logo-family/references/firefly-flight-flame.jpeg`, with its original path and hash in the study's sources. The direction preserves the hovering gesture, fanned wings, trailing luminous abdomen, and separate flame while increasing the combined mark's scale and replacing square pixels with broad connected facets. A sparse crescent-and-star relief on a dark blue-green field suggests nighttime. The prompt requests a complete scene with integrated light, subject to the immediate untouched-image checkpoint.
 
 ## Archive and promotion
 
