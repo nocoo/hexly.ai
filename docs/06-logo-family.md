@@ -25,6 +25,7 @@ Measured empty-background patches from `ref02.jpeg` are warm gray `#ACA59F`, ice
 - Use a consistent light direction and restrained highlights. Quiet tactile detail must leave the color planes legible at small sizes.
 - Large animals use head portraits. Small animals may use compact full-body poses.
 - Give the logo a substantial main mass. Broad head/body/wing areas supply visual fullness; distant accents and extended limbs do not. Keep the interest point close to the animal, avoid large internal gaps, and preserve safe borders without shrinking the animal into an illustration.
+- For insects, use a few species cues to build an approachable graphic character. Simplify eye discs, armor, and hooked joints instead of enlarging anatomical detail; overlapping rounded forms can carry flat internal facets without an intimidating macro-insect appearance.
 - Large portraits may enter naturally from a square frame's bottom or side. Let the neck and shoulders continue beyond the canvas; keep the face and expression intact. Do not terminate the neck with a circular medallion or a floating round cut. Keep important features clear of the final rounded corners, and distinguish intentional canvas-edge entry from accidental clipping.
 - For an approved logo, preserve the animal, pose, camera, expression, composition, and signature decoration. For a logo the owner explicitly dislikes, preserve the animal and redesign the camera, framing, pose, and decoration.
 - Design a distinct background motif for each project. Frogie's flowing curves, Pew's tapered stripe rhythm, and Firefly's light orbits share material and contrast, not identical paths. Save named pattern geometry in the recipe; merely recoloring another project's stencil is insufficient.
@@ -65,6 +66,8 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 [Study 02](../artwork/logo-family/firefly/2026-09-06-02/notes.md) produced a strongly faceted full-body firefly with a separate flame. The owner rejected its sparse composition: an elongated body, spread wings, and a distant large flame did not form a visually full logo. Its native image and proposed sea-glass light-orbit background remain archived; no finishing or catalogue preview was created.
 
 [Study 03](../artwork/logo-family/firefly/2026-09-06-03/notes.md) increased the occupied area with an enlarged head, gathered shell, and rounded abdomen. The owner rejected its frightening insect treatment and clarified that fullness must not come from simple magnification. Its large eye discs, hard shell, and hooked articulated legs require a different graphic abstraction. The exact native output and rejection remain archived without finishing.
+
+[Study 04](../artwork/logo-family/firefly/2026-09-06-04/brief.md) rebuilds the firefly from a rounded jade face with crescent eyes, a short body, gathered petal-shaped wings, and a warm tail light. Tiny rounded limb hints replace exposed joints. A small flame beside the cheek remains its external interest point. Brighter jade and mint are proposed for the artwork, with the existing UI colors preserved separately. The first delivery remains an untouched raw image for confirmation.
 
 ## Archive and promotion
 
