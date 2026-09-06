@@ -1,0 +1,90 @@
+{
+	"project": "firefly",
+	"sourceRepository": "https://github.com/nocoo/firefly",
+	"sourceRevision": "8093578e9960f36cd112b7c04a841e6d5e345aed",
+	"sourcePath": "logo.png",
+	"sourceSha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269",
+	"websiteColors": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
+		"status": "Existing Firefly UI tokens; unchanged"
+	},
+	"status": "prepared",
+	"preparedAt": "2026-09-06T11:21:14.069205+00:00",
+	"sourceMode": "scene",
+	"rawSource": "raw/generated.png",
+	"supersedes": "firefly/2026-09-06-05",
+	"intent": "Recompose the owner reference: one hovering firefly in front of a separate rising flame, larger and more compact, with connected facets and clean nighttime relief.",
+	"ownerDirection": "Preserve the supplied graphic action in the family style. Nighttime background motif, clean presentation, much less pixelation, and a larger subject.",
+	"defaultOverrides": [
+		"Integrated dark night presentation instead of an isolated white source",
+		"New owner reference supplies the subject and flight/flame relationship",
+		"Natural warm material colors with restrained cool facet accents"
+	],
+	"rawCheckpoint": "Immediately show the untouched output and await approval of these exact bytes before any finishing or catalogue work.",
+	"promptSha256": "e317640f9675cf7a2e3c446b0d8d7ffb4c6225d9c2b5706935ad1dc14f53535d",
+	"references": [
+		{
+			"index": 1,
+			"role": "Primary owner reference for graphic subject, hovering action, wing spread, trailing luminous abdomen, and flame relationship; replace pixel rendering, scale, and noisy field",
+			"path": "artwork/logo-family/references/firefly-flight-flame.jpeg",
+			"sha256": "fe235f9268009834f1368dde909458667f19c9aa153f4b6eb6db0bd4eec02a1f",
+			"bytes": 357335,
+			"originalPath": "/Users/nocoo/Downloads/firefly.jpeg",
+			"originalSha256": "fe235f9268009834f1368dde909458667f19c9aa153f4b6eb6db0bd4eec02a1f",
+			"byteIdenticalBackup": true,
+			"suppliedBy": "Owner in the current conversation"
+		},
+		{
+			"index": 2,
+			"role": "Adopted Frogie: connected facet drawing and value hierarchy, not anatomy, expression, green palette, musical notes, or background geometry",
+			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e",
+			"bytes": 5418502
+		},
+		{
+			"index": 3,
+			"role": "Presentation: large offset icon presence, quiet tonal motifs, coherent light, matte dimensionality; not smooth cute animal rendering",
+			"path": "artwork/logo-family/references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff",
+			"bytes": 370854
+		},
+		{
+			"index": 4,
+			"role": "Close-view material and clean shadows; not animal identity or composition",
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683
+		}
+	],
+	"priorStudies": [
+		{
+			"study": "firefly/2026-09-06-01",
+			"status": "rejected",
+			"rawSha256": "9af427620891806bdf952bf6369028232ef46c1a8f6ddb40dcd96c73e2b66a90"
+		},
+		{
+			"study": "firefly/2026-09-06-02",
+			"status": "rejected",
+			"rawSha256": "9b98ac629551a7065b7360f33a4b0b3ecd5052cc4a105850bf0c04a2368098d7"
+		},
+		{
+			"study": "firefly/2026-09-06-03",
+			"status": "rejected",
+			"rawSha256": "0f5bc23c389a2b90c86436926cd875a51aa21bf25c5bd951c1919c3f543534e8"
+		},
+		{
+			"study": "firefly/2026-09-06-04",
+			"status": "rejected",
+			"rawSha256": "ee53f18b46c419f13d8a3ba11f72bb92cf671791d8c8594e43afd875f4c6164b"
+		},
+		{
+			"study": "firefly/2026-09-06-05",
+			"status": "superseded-unselected",
+			"rawSha256": "793f16921b95b411de4ca1155169c053afc96b6ae11ad18ddd8e7e976d91a5f8"
+		}
+	],
+	"scenePlan": "scene-plan.json",
+	"publication": "Local only; no source adoption, push, or deployment"
+}
