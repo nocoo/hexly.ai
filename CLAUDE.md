@@ -11,7 +11,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 |---|---|
 | Human docs | [README.md](README.md), [docs/README.md](docs/README.md) |
 | Catalogue | `src/data/projects.json`; public `nocoo/nocoo` profile and recorded repository evidence |
-| Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/` |
+| Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
 | Enforcement | `.husky/`, `scripts/gates.ts`, `.github/workflows/ci.yml`, test configs |
 | Secrets | GitHub Actions secrets; local `.env*` and `.dev.vars*` are gitignored; never track values |
@@ -24,7 +24,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - Every project needs a stable slug, title, bilingual descriptions, emoji, verified links, logo provenance, and evidenced foreground/background colors. Follow the identity rules; do not infer websites or invent palettes.
 - Keep original logo bytes and SHA-256 provenance in `public/logos/originals/`. Emoji identities live separately in `public/logos/emoji/`. Derivatives must preserve artwork proportions and colors.
 - Synchronize catalogue changes with the GitHub profile using the workflow skill `zhengli-update-github-readme` (`../workflow/agents/skills/zhengli-update-github-readme/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
-- Preserve the current identity baseline. The later animal-family regeneration with `gpt-image-2` is a separate phase; its candidates must retain original backups and undergo review at artwork, app-icon, sidebar, and favicon sizes.
+- Preserve the current identity baseline. Animal-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
 
 ## Stack / Layout
 
@@ -45,6 +45,7 @@ public/logos/      original backups, emoji identities, WebP derivatives
 scripts/           asset/profile generators, verification, gates, release
 tests/             unit/, http/, browser/
 docs/              numbered guides, profiles/, sources/, deployment/
+artwork/           versioned logo studies, references, raw outputs, finishing
 ```
 
 Keep model logic independent of React and browser globals. Browser effects belong in `App.tsx` or view components; keep views thin.
