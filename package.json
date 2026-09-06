@@ -16,6 +16,8 @@
 		"preview:worker": "wrangler dev --env \"\" --local --ip 127.0.0.1 --port 37048 --inspector-port 38048 --persist-to .wrangler/preview",
 		"deploy": "bun run build && wrangler deploy --env \"\"",
 		"deploy:check": "wrangler deploy --env \"\" --dry-run",
+		"verify:production": "bun scripts/verify-deployment.ts",
+		"release": "bun scripts/release.ts",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome check --error-on-warnings .",
 		"format": "biome check --write .",
