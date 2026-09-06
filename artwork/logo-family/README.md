@@ -49,7 +49,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye | [Untouched raw](firefly/2026-09-06-07/raw/generated.png) |
 | Firefly | [2026-09-06-08](firefly/2026-09-06-08/notes.md) | Rejected: backward-facing eye perspective | [Untouched raw](firefly/2026-09-06-08/raw/generated.png) |
 | Firefly | [2026-09-06-09](firefly/2026-09-06-09/notes.md) | Rejected: fire and insect compete; firefly must be primary | [Untouched raw](firefly/2026-09-06-09/raw/generated.png) |
-| Firefly | [2026-09-06-10](firefly/2026-09-06-10/brief.md) | Animal-led proportions prepared from the owner JPEG; raw checkpoint before finishing | [Brief](firefly/2026-09-06-10/brief.md) |
+| Firefly | [2026-09-06-10](firefly/2026-09-06-10/notes.md) | Raw approved; finishing, source replacement, and publication authorized | [Untouched raw](firefly/2026-09-06-10/raw/generated.png) |
 
 ## Running a study
 
