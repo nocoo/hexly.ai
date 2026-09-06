@@ -10,6 +10,9 @@ export default defineConfig({
 	outputDir: ".test-results/browser",
 	use: {
 		baseURL: "http://127.0.0.1:27048",
+		locale: "en-US",
+		colorScheme: "light",
+		reducedMotion: "reduce",
 		trace: "retain-on-failure",
 		screenshot: "only-on-failure",
 	},
@@ -28,7 +31,7 @@ export default defineConfig({
 	],
 	webServer: {
 		command:
-			"bunx wrangler dev --env test --local --ip 127.0.0.1 --port 27048 --inspector-port 28048",
+			"bunx wrangler dev --env test --local --ip 127.0.0.1 --port 27048 --inspector-port 28048 --persist-to .wrangler/browser",
 		url: "http://127.0.0.1:27048",
 		reuseExistingServer: false,
 		timeout: 60000,

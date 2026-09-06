@@ -1,8 +1,111 @@
+import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
+import sharp from "sharp";
+import projects from "../../src/data/projects.json" with { type: "json" };
 
-test("serves the built site through real Workers HTTP", async ({ request }) => {
+test("serves the built document and security policy through Workers HTTP", async ({
+	request,
+}) => {
 	const response = await request.get("/");
 	expect(response.status()).toBe(200);
 	expect(response.headers()["content-type"]).toContain("text/html");
+	expect(response.headers()["x-content-type-options"]).toBe("nosniff");
+	expect(response.headers()["content-security-policy"]).toContain(
+		"script-src 'self'",
+	);
+	expect(response.headers()["content-security-policy"]).toContain(
+		"frame-ancestors 'none'",
+	);
+	const html = await response.text();
+	expect(html).toContain('href="https://hexly.ai/"');
+	expect(html).toContain('<div id="root"></div>');
+	expect(html).not.toContain("/src/main.tsx");
+});
+
+test("serves compiled code, styles, and self-hosted fonts with cache headers", async ({
+	request,
+}) => {
+	const html = await (await request.get("/")).text();
+	for (const [extension, contentType] of [
+		["js", "javascript"],
+		["css", "text/css"],
+	]) {
+		const path = html.match(new RegExp(`/assets/[^" ]+\\.${extension}`))?.[0];
+		expect(path).toBeTruthy();
+		const response = await request.get(path ?? "/missing-build-asset");
+		expect(response.status()).toBe(200);
+		expect(response.headers()["content-type"]).toContain(contentType);
+		expect(response.headers()["cache-control"]).toContain("immutable");
+		if (extension === "css") {
+			const css = await response.text();
+			const fonts = [...new Set(css.match(/\/assets\/[^)" ]+\.woff2/g))];
+			expect(fonts).toHaveLength(2);
+			for (const font of fonts) {
+				const fontResponse = await request.get(font);
+				expect(fontResponse.status()).toBe(200);
+				expect(fontResponse.headers()["content-type"]).toContain("font/woff2");
+			}
+		}
+	}
+});
+
+test("reloads gallery links and serves the external preference bootstrap", async ({
+	request,
+}) => {
+	const response = await request.get("/?view=logos&project=pew");
+	expect(response.status()).toBe(200);
 	expect(await response.text()).toContain("hexly.ai");
+	const preferences = await request.get("/preferences.js");
+	expect(preferences.status()).toBe(200);
+	expect(preferences.headers()["content-type"]).toContain("javascript");
+	expect(await preferences.text()).toContain("hexly:theme");
+});
+
+for (const id of ["frogie", "pew", "pokepocket", "node-image-uploader"]) {
+	test(`downloads the preserved ${id} identity without changing its bytes`, async ({
+		request,
+	}) => {
+		const project = projects.find((entry) => entry.id === id);
+		if (!project) throw new Error(`Missing project: ${id}`);
+		const response = await request.get(project.logo.original);
+		expect(response.status()).toBe(200);
+		expect(response.headers()["content-type"]).toContain(
+			project.logo.original.endsWith(".svg") ? "image/svg+xml" : "image/png",
+		);
+		expect(response.headers()["cache-control"]).toContain("max-age=86400");
+		const bytes = await response.body();
+		expect(bytes.byteLength).toBe(project.logo.bytes);
+		expect(createHash("sha256").update(bytes).digest("hex")).toBe(
+			project.logo.sha256,
+		);
+	});
+}
+
+test("serves genuine WebP artwork and small icon variants", async ({
+	request,
+}) => {
+	for (const size of [32, 64, 160, 1024]) {
+		const response = await request.get(`/logos/display/pew-${size}.webp`);
+		expect(response.status()).toBe(200);
+		expect(response.headers()["content-type"]).toContain("image/webp");
+		const metadata = await sharp(await response.body()).metadata();
+		expect(metadata.format).toBe("webp");
+		expect([metadata.width, metadata.height]).toEqual([size, size]);
+	}
+});
+
+test("exposes the root domain to crawlers and supplies a favicon", async ({
+	request,
+}) => {
+	const robots = await request.get("/robots.txt");
+	expect(robots.status()).toBe(200);
+	expect(await robots.text()).toContain(
+		"Sitemap: https://hexly.ai/sitemap.xml",
+	);
+	const sitemap = await request.get("/sitemap.xml");
+	expect(sitemap.status()).toBe(200);
+	expect(await sitemap.text()).toContain("<loc>https://hexly.ai/</loc>");
+	const favicon = await request.get("/favicon.svg");
+	expect(favicon.status()).toBe(200);
+	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");
 });
