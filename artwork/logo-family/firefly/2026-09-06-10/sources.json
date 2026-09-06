@@ -10,7 +10,7 @@
 		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
 		"status": "Existing Firefly UI tokens; unchanged"
 	},
-	"status": "raw-approved",
+	"status": "finished-approved-artwork",
 	"preparedAt": "2026-09-06T12:33:58.781123+00:00",
 	"sourceMode": "isolated-white",
 	"rawSource": "raw/generated.png",
@@ -116,5 +116,11 @@
 	"rawSha256": "384fff12838b1e9b282879ffb008f9b9aa8af110ba28400050ef6cd489f48d25",
 	"requestId": "bbbf161b-5c82-44f5-8b7b-3697e1776308",
 	"rawReviewUrl": "https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-10/raw/generated.png",
-	"approvedAt": "2026-09-06T12:41:15.707155+00:00"
+	"approvedAt": "2026-09-06T12:41:15.707155+00:00",
+	"selectedFinishing": "02",
+	"framingCorrection": {
+		"ownerFeedback": "实际上你创建的这个主体过大，超过安全边界，加上圆角会过于贴边。",
+		"scope": "Uniformly reduce the complete accepted insect/fire group to 84% in all delivered masters and sizes. No additional image generation.",
+		"checks": "checks/finishing-02.json"
+	}
 }
