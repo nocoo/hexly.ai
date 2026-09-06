@@ -1,0 +1,56 @@
+import { copy } from "../data/copy";
+import type { Locale, Project } from "../model/project";
+
+export function Palette({
+	project,
+	locale,
+	compact = false,
+	onCopy,
+}: {
+	project: Project;
+	locale: Locale;
+	compact?: boolean;
+	onCopy?: (value: string) => void;
+}) {
+	const t = copy[locale];
+	if (compact)
+		return (
+			<span
+				className="palette-mini"
+				role="img"
+				aria-label={`${t.palette}: ${project.colors.palette.map((swatch) => swatch.color).join(", ")}`}
+			>
+				{project.colors.palette.map((swatch) => (
+					<span
+						key={`${swatch.role}-${swatch.color}`}
+						className={swatch.color === "transparent" ? "checkerboard" : ""}
+						style={{ backgroundColor: swatch.color }}
+						title={swatch.color}
+					/>
+				))}
+			</span>
+		);
+	return (
+		<div className="palette-swatches">
+			{project.colors.palette.map((swatch) => (
+				<button
+					type="button"
+					key={`${swatch.role}-${swatch.color}`}
+					className="palette-swatch"
+					onClick={() => onCopy?.(swatch.color)}
+					aria-label={`${t.copyColor} ${swatch.color}`}
+					title={swatch.source}
+				>
+					<span
+						className={`swatch-color ${swatch.color === "transparent" ? "checkerboard" : ""}`}
+						style={{ backgroundColor: swatch.color }}
+					/>
+					<span className="swatch-value">
+						{swatch.color === "transparent" ? t.transparent : swatch.color}
+					</span>
+					<span className="swatch-role">{t[swatch.role]}</span>
+				</button>
+			))}
+		</div>
+	);
+}
