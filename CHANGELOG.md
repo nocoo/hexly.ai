@@ -26,3 +26,7 @@
 ### Tests
 
 - verify assets and browsing journeys ([6c867db](https://github.com/nocoo/hexly.ai/commit/6c867db44b88864838ede5866b3c8edaf6463105))
+
+### Fixes
+
+- preserve dependency sources during release ([0975202](https://github.com/nocoo/hexly.ai/commit/09752022ef351efa3b0af4e437a6d9d07fd17d91))
