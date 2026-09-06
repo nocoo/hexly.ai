@@ -1,0 +1,27 @@
+{
+	"status": "rejected",
+	"imageSha256": "b375938464ea1f642f709d12ecdda2bf7242f0a22defc06403790630f5364d56",
+	"recordedAt": "2026-09-06T22:17:31.093502+00:00",
+	"nextStep": "Generate study 05 as a tight head portrait. Keep torso and legs outside the viewfinder, with one multicolored flower-sprig accent.",
+	"decision": "full-body framing rejected; retain the requested head close-up with natural animal structure",
+	"decidedAt": "2026-09-06T22:23:00.994666+00:00",
+	"decisionSource": "owner review of the exact native image",
+	"ownerReviewedExactBytes": true,
+	"ownerMessage": "你理解错了，动物需要自然形态，但是我们不是用镜头只去头部特写不是吗",
+	"agentInspection": {
+		"method": "Viewed untouched native PNG at original detail and opened byte-identical Vite-served PNG in Chrome.",
+		"findings": [
+			"The model produced a complete standing buffalo with four visible legs and hooves, which is outside the requested portrait framing.",
+			"The nose and muzzle have only brown and tan facets; the flower sprig remains the only rainbow accent group.",
+			"Connected flat facets cover the animal; no extraction or presentation was performed."
+		]
+	},
+	"decisionHistory": [
+		{
+			"status": "pending",
+			"imageSha256": "b375938464ea1f642f709d12ecdda2bf7242f0a22defc06403790630f5364d56",
+			"recordedAt": "2026-09-06T22:17:31.093502+00:00",
+			"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+		}
+	]
+}
