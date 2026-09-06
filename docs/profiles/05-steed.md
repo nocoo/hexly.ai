@@ -6,6 +6,7 @@
 - Website: [https://steed.hexly.ai](https://steed.hexly.ai)
 - Website evidence: apps/web/wrangler.toml routes
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A shared home for AI agents, their assets, and the relationships between them.
 - Chinese: 面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Steed identity](../../public/logos/display/steed-160.webp)
+![Steed source identity](../../public/logos/display/steed-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Horse portrait with multicolored fragments

@@ -1,8 +1,12 @@
 import type { RefObject } from "react";
 import { categoryLabels, copy } from "../data/copy";
-import { selectedProject } from "../model/catalogue";
+import {
+	categories,
+	categoryCounts,
+	selectedProject,
+} from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
-import type { Locale, Project } from "../model/project";
+import type { Category, Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { LogoReview } from "./LogoReview";
@@ -27,6 +31,8 @@ export function Gallery({
 }) {
 	const t = copy[locale];
 	const project = selectedProject(visible, state.project);
+	const counts = categoryCounts(projects);
+	const foreground = project?.family?.foreground ?? project?.logo;
 	const selectedIndex = visible.findIndex((item) => item.id === project?.id);
 	const move = (offset: number) => {
 		const next =
@@ -53,12 +59,28 @@ export function Gallery({
 							{visible.length}/{projects.length}
 						</span>
 					</span>
-					<SearchField
-						value={state.query}
-						onChange={(query) => onChange({ query })}
-						locale={locale}
-						inputRef={searchRef}
-					/>
+					<div className="picker-controls">
+						<select
+							className="picker-category"
+							aria-label={t.categories}
+							value={state.category}
+							onChange={(event) =>
+								onChange({ category: event.target.value as Category })
+							}
+						>
+							{categories.map((category) => (
+								<option key={category} value={category}>
+									{categoryLabels[locale][category]} · {counts[category]}
+								</option>
+							))}
+						</select>
+						<SearchField
+							value={state.query}
+							onChange={(query) => onChange({ query })}
+							locale={locale}
+							inputRef={searchRef}
+						/>
+					</div>
 				</div>
 				<div className="project-picker">
 					{visible.map((item) => (
@@ -81,6 +103,9 @@ export function Gallery({
 						<div>
 							<p className="identity-category">
 								{categoryLabels[locale][project.category]}
+								{project.archived &&
+									project.category !== "archive" &&
+									` · ${categoryLabels[locale].archive}`}
 							</p>
 							<h2 id="identity-title">
 								{project.title}
@@ -93,7 +118,7 @@ export function Gallery({
 						<div className="identity-meta">
 							<span className="asset-label">
 								{project.family
-									? t.approved
+									? t.refined
 									: project.reference
 										? t.reference
 										: project.logo.kind === "original"
@@ -101,8 +126,8 @@ export function Gallery({
 											: t.emoji}
 							</span>
 							<span className="mono">
-								{project.logo.width} × {project.logo.height}
-								{project.family && ` · ${project.family.adopted}`}
+								{foreground?.width} × {foreground?.height}
+								{project.family && ` · ${project.family.updated}`}
 							</span>
 							<div className="identity-pagination">
 								<span className="mono">
@@ -159,9 +184,7 @@ export function Gallery({
 								className="button button-secondary"
 								type="button"
 								onClick={() =>
-									onCopy(
-										`${window.location.origin}/?view=logos&project=${project.id}`,
-									)
+									onCopy(`${window.location.origin}/logos/${project.id}`)
 								}
 							>
 								<Icon name="link" />

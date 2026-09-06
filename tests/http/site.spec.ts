@@ -53,9 +53,17 @@ test("serves compiled code, styles, and self-hosted fonts with cache headers", a
 test("reloads gallery links and serves the external preference bootstrap", async ({
 	request,
 }) => {
-	const response = await request.get("/?view=logos&project=pew");
-	expect(response.status()).toBe(200);
-	expect(await response.text()).toContain("hexly.ai");
+	for (const path of [
+		"/logos",
+		"/logos/frogie",
+		"/logos/pew",
+		"/logos/uptime-kuma-skill",
+	]) {
+		const response = await request.get(path);
+		expect(response.status(), path).toBe(200);
+		expect(response.headers()["content-type"]).toContain("text/html");
+		expect(await response.text()).toContain('<div id="root"></div>');
+	}
 	const preferences = await request.get("/preferences.js");
 	expect(preferences.status()).toBe(200);
 	expect(preferences.headers()["content-type"]).toContain("javascript");
@@ -127,30 +135,47 @@ test("exposes the root domain to crawlers and supplies a favicon", async ({
 	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");
 });
 
-test("serves the complete adopted logo archive and preserved predecessor", async ({
-	request,
-}) => {
-	const family = projects.find((project) => project.id === "frogie")?.family;
-	if (!family) throw new Error("Frogie must have its adopted family archive");
-	const manifestResponse = await request.get(`${family.root}/manifest.json`);
-	expect(manifestResponse.status()).toBe(200);
-	const manifest: { files: { path: string; bytes: number; sha256: string }[] } =
-		await manifestResponse.json();
-	for (const file of manifest.files) {
-		const response = await request.get(file.path);
-		expect(response.status(), file.path).toBe(200);
-		const data = await response.body();
-		expect(data.length, file.path).toBe(file.bytes);
-		expect(createHash("sha256").update(data).digest("hex"), file.path).toBe(
-			file.sha256,
+for (const id of ["frogie", "pew"]) {
+	test(`serves the complete ${id} refinement and preserved predecessor`, async ({
+		request,
+	}) => {
+		const family = projects.find((project) => project.id === id)?.family;
+		if (!family) throw new Error(`${id} must have its family archive`);
+		const manifestResponse = await request.get(`${family.root}/manifest.json`);
+		expect(manifestResponse.status()).toBe(200);
+		const manifest: {
+			files: { path: string; bytes: number; sha256: string }[];
+		} = await manifestResponse.json();
+		for (const file of manifest.files) {
+			const response = await request.get(file.path);
+			expect(response.status(), file.path).toBe(200);
+			const data = await response.body();
+			expect(data.length, file.path).toBe(file.bytes);
+			expect(createHash("sha256").update(data).digest("hex"), file.path).toBe(
+				file.sha256,
+			);
+		}
+		const original = await (await request.get(family.previous.original)).body();
+		expect(createHash("sha256").update(original).digest("hex")).toBe(
+			family.previous.sha256,
 		);
-	}
-	const original = await (await request.get(family.previous.original)).body();
-	expect(createHash("sha256").update(original).digest("hex")).toBe(
-		family.previous.sha256,
-	);
-	const icon = await sharp(
-		await (await request.get(`${family.root}/icon.png`)).body(),
-	).metadata();
-	expect([icon.width, icon.height]).toEqual([2048, 2048]);
-});
+		const icon = await sharp(
+			await (await request.get(`${family.root}/icon.png`)).body(),
+		).metadata();
+		expect([icon.width, icon.height]).toEqual([2048, 2048]);
+		const foreground = await (
+			await request.get(family.foreground.original)
+		).body();
+		expect(createHash("sha256").update(foreground).digest("hex")).toBe(
+			family.foreground.sha256,
+		);
+		const preview = await sharp(
+			await (await request.get(family.foreground.display)).body(),
+		).metadata();
+		expect([preview.width, preview.height, preview.hasAlpha]).toEqual([
+			1024,
+			1024,
+			true,
+		]);
+	});
+}

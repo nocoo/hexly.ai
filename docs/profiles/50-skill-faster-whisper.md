@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: extensions
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Fast speech-to-text transcription, ready for your coding agent.
 - Chinese: 为编程智能体准备的快速语音转文字工具。
 - Profile section: Skills & MCP Servers
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Faster Whisper identity](../../public/logos/display/skill-faster-whisper-160.webp)
+![Faster Whisper source identity](../../public/logos/display/skill-faster-whisper-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

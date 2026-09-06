@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A quiet macOS notification bridge between your AI agents and your desktop.
 - Chinese: 连接 AI 智能体与桌面的 macOS 通知桥梁，支持菜单栏服务和命令行。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Codo identity](../../public/logos/display/codo-160.webp)
+![Codo source identity](../../public/logos/display/codo-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Full-body green hummingbird

@@ -6,6 +6,7 @@
 - Website: [https://dotty.hexly.ai](https://dotty.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: design
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A pixel-brutalist dashboard kit with monochrome geometry and stacked charts.
 - Chinese: 像素与粗野主义风格的仪表盘模板，使用单色几何元素和堆叠图表。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Dotty identity](../../public/logos/display/dotty-160.webp)
+![Dotty source identity](../../public/logos/display/dotty-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

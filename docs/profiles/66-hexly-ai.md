@@ -6,6 +6,7 @@
 - Website: [https://hexly.ai](https://hexly.ai)
 - Website evidence: wrangler.jsonc custom domain and GitHub repository homepage
 - Category: design
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Bilingual project directory and logo gallery with original artwork and color palettes
 - Chinese: 个人项目的中英文导航站，收藏原始 Logo、展示图标尺寸与真实项目色板。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![hexly.ai identity](../../public/logos/display/hexly-ai-160.webp)
+![hexly.ai source identity](../../public/logos/display/hexly-ai-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Terracotta faceted hexagon

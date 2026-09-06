@@ -18,6 +18,7 @@ export function LogoReview({
 }) {
 	const t = copy[locale];
 	const { family } = project;
+	const foreground = family?.foreground ?? project.logo;
 	const [view, setView] = useState<"icon" | "transparent" | "white">("icon");
 	const tileStyle = {
 		"--identity-background": project.colors.background,
@@ -28,11 +29,11 @@ export function LogoReview({
 	const currentImage =
 		family && view === "icon"
 			? `${family.root}/icon-1024.webp`
-			: project.logo.display;
+			: foreground.display;
 	const currentDownload =
 		family && view !== "transparent"
 			? `${family.root}/${view === "icon" ? "icon" : "white"}.png`
-			: project.logo.original;
+			: foreground.original;
 
 	return (
 		<div className="logo-review" data-presentation={view}>
@@ -105,9 +106,11 @@ export function LogoReview({
 							</a>
 						</div>
 						<figcaption>
-							<strong>{t.currentArtwork}</strong>
+							<strong>{family ? t.refinedArtwork : t.currentArtwork}</strong>
 							<span>
-								{family ? `${t.approved} · ${family.adopted}` : t.preserved}
+								{family
+									? `${family.status === "adopted" ? t.approved : t.localReview} · ${family.updated}`
+									: t.preserved}
 							</span>
 						</figcaption>
 					</figure>
@@ -213,6 +216,7 @@ export function LogoReview({
 			</section>
 
 			<section
+				id="foreground"
 				className="review-section alpha-section"
 				aria-labelledby="alpha-title"
 			>
@@ -225,13 +229,13 @@ export function LogoReview({
 						<figure key={surface}>
 							<a
 								className={`alpha-well alpha-${surface}`}
-								href={project.logo.original}
+								href={foreground.original}
 								target="_blank"
 								rel="noreferrer"
 								aria-label={`${t.openOriginal}: ${surface === "light" ? t.white : t.black}`}
 							>
 								<img
-									src={project.logo.display}
+									src={foreground.display}
 									alt={`${project.title} — ${surface === "light" ? t.lightSetting : t.darkSetting}`}
 									loading="lazy"
 									width={1024}

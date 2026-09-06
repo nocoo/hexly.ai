@@ -6,6 +6,7 @@
 - Website: [https://otter.hexly.ai](https://otter.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Keep your Mac development setup safe with snapshots, diffs, and cloud backups.
 - Chinese: 用快照、差异比较与云端备份，保存 Mac 开发环境的每一次变化。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Otter identity](../../public/logos/display/otter-160.webp)
+![Otter source identity](../../public/logos/display/otter-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Full-body otter with colorful accents

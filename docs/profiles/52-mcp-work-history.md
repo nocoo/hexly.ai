@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: extensions
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A searchable record of your AI tools and the work they do.
 - Chinese: 记录 AI 工具的工作活动，留存可查询的历史和指标。
 - Profile section: Skills & MCP Servers
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Work History MCP identity](../../public/logos/display/mcp-work-history-160.webp)
+![Work History MCP source identity](../../public/logos/display/mcp-work-history-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

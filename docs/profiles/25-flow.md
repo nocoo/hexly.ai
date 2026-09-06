@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A Chinese pinyin input engine that brings language models into everyday typing.
 - Chinese: 把大语言模型带进日常输入的中文拼音引擎，支持智能分词与预测。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Flow identity](../../public/logos/display/flow-160.webp)
+![Flow source identity](../../public/logos/display/flow-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

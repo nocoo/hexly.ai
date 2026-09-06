@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Connect GitHub Copilot to Anthropic- and OpenAI-compatible tools and track usage.
 - Chinese: 为 GitHub Copilot 提供兼容 Anthropic 与 OpenAI 的接口，并查看使用情况。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Raven identity](../../public/logos/display/raven-160.webp)
+![Raven source identity](../../public/logos/display/raven-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Purple-indigo raven portrait

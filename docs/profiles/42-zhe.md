@@ -6,6 +6,7 @@
 - Website: [https://zhe.to](https://zhe.to)
 - Website evidence: GitHub repository homepage
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Short links, clean URLs, and a little less friction when sharing things.
 - Chinese: 把长网址变成简洁的短链接，让分享少一点麻烦。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Zhe identity](../../public/logos/display/zhe-160.webp)
+![Zhe source identity](../../public/logos/display/zhe-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Bee with colorful wings

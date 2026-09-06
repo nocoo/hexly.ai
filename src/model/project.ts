@@ -20,11 +20,19 @@ export interface PaletteColor {
 
 export interface LogoFamily {
 	id: string;
-	adopted: string;
+	status: "review" | "adopted";
+	updated: string;
 	finishing: string;
 	root: string;
 	archive: string;
 	model: string;
+	foreground: {
+		original: string;
+		display: string;
+		width: number;
+		height: number;
+		sha256: string;
+	};
 	previous: {
 		original: string;
 		sourceUrl: string;
@@ -39,7 +47,6 @@ export interface LogoFamily {
 	}[];
 	palette: PaletteColor[];
 	sizeNote: Record<Locale, string>;
-	references: string[];
 }
 
 export interface Project {
@@ -54,6 +61,7 @@ export interface Project {
 	repository: string;
 	subject: string;
 	reference: boolean;
+	archived: boolean;
 	logo: {
 		kind: "original" | "emoji";
 		original: string;

@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A small Node.js utility for uploading images.
 - Chinese: 一个用于上传图片的 Node.js 小工具。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Image Uploader identity](../../public/logos/display/node-image-uploader-160.webp)
+![Image Uploader source identity](../../public/logos/display/node-image-uploader-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

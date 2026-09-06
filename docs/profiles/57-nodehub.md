@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A central place for running and organizing Node.js services.
 - Chinese: 集中运行与组织 Node.js 服务的工具。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![NodeHub identity](../../public/logos/display/nodehub-160.webp)
+![NodeHub source identity](../../public/logos/display/nodehub-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

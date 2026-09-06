@@ -6,6 +6,7 @@
 - Website: [https://xray.hexly.ai](https://xray.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A closer look at your Twitter / X activity, with analytics and AI-powered reports.
 - Chinese: 深入查看 Twitter / X 动态，用数据分析与 AI 报告理解自己的内容。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Xray identity](../../public/logos/display/xray-160.webp)
+![Xray source identity](../../public/logos/display/xray-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Rainbow butterfly

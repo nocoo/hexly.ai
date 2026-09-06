@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A small macOS menu bar app that keeps your files in sync with Google Drive.
 - Chinese: 轻巧的 macOS 菜单栏工具，把文件和文件夹同步到 Google Drive。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Shrike identity](../../public/logos/display/shrike-160.webp)
+![Shrike source identity](../../public/logos/display/shrike-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Shrike portrait

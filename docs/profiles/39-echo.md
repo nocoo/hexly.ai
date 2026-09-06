@@ -6,6 +6,7 @@
 - Website: [https://echo.nocoo.cloud](https://echo.nocoo.cloud)
 - Website evidence: GitHub repository homepage
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A small, fast IP lookup service, built with Bun and TypeScript.
 - Chinese: 用 Bun 与 TypeScript 构建的轻量 IP 查询服务。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Echo identity](../../public/logos/display/echo-160.webp)
+![Echo source identity](../../public/logos/display/echo-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

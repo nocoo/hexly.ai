@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Declare a schedule and let your Mac run your AI jobs through launchd.
 - Chinese: 声明任务日程，交给 Mac 的 launchd 定时运行 AI 工作。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Runner identity](../../public/logos/display/runner-160.webp)
+![Runner source identity](../../public/logos/display/runner-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Green digital glyph

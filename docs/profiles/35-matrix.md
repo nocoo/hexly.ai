@@ -6,6 +6,7 @@
 - Website: [https://matrix.hexly.ai](https://matrix.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: design
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A sci-fi dashboard kit for interfaces that feel like a glimpse into the digital world.
 - Chinese: 带有科幻气息的仪表盘组件，让界面像是数字世界的一扇窗口。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Matrix identity](../../public/logos/display/matrix-160.webp)
+![Matrix source identity](../../public/logos/display/matrix-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

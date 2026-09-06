@@ -6,6 +6,7 @@
 - Website: [https://www.npmjs.com/package/unseal](https://www.npmjs.com/package/unseal)
 - Website evidence: GitHub repository homepage
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Find quarantined macOS apps and interactively remove their quarantine flags.
 - Chinese: 扫描被 macOS 隔离的应用，交互式地批量解除隔离标记。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Unseal identity](../../public/logos/display/unseal-160.webp)
+![Unseal source identity](../../public/logos/display/unseal-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Keep family perks in sight: card rewards, memberships, insurance, and expiry dates.
 - Chinese: 把家庭的信用卡权益、会员、保险福利和到期时间放在眼前。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Wooly identity](../../public/logos/display/wooly-160.webp)
+![Wooly source identity](../../public/logos/display/wooly-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Sheep portrait

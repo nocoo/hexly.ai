@@ -6,6 +6,7 @@
 - Website: [https://bat.hexly.ai](https://bat.hexly.ai)
 - Website evidence: CLAUDE.md Live-check
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A lightweight watchtower for your servers, with a Rust probe and a clear dashboard.
 - Chinese: 轻量的服务器观察台，用 Rust 探针采集状态，在仪表盘里集中查看。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Bat identity](../../public/logos/display/bat-160.webp)
+![Bat source identity](../../public/logos/display/bat-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Hanging pink bat with sound waves

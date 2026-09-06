@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Send webhooks from your browser toolbar, context menu, or a quick message.
 - Chinese: 从浏览器工具栏、右键菜单或快捷消息中，随手触发 Webhook。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Hooky identity](../../public/logos/display/hooky-160.webp)
+![Hooky source identity](../../public/logos/display/hooky-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Pink octopus

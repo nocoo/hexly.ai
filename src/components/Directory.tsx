@@ -106,10 +106,7 @@ export function Directory({
 					/>
 				</div>
 				<div className="collection-toolbar">
-					<fieldset
-						className="category-tabs"
-						aria-label={locale === "en" ? "Project categories" : "项目分类"}
-					>
+					<fieldset className="category-tabs" aria-label={t.categories}>
 						{categories.map((category) => (
 							<button
 								type="button"

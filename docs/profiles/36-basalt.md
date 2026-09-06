@@ -6,6 +6,7 @@
 - Website: [https://basalt.hexly.ai](https://basalt.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: design
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Dense, dark, durable. A matte design system for information-rich software.
 - Chinese: 沉稳、紧凑的哑光设计系统，为信息密集的软件界面而做。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Basalt identity](../../public/logos/display/basalt-160.webp)
+![Basalt source identity](../../public/logos/display/basalt-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

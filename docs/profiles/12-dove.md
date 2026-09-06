@@ -6,6 +6,7 @@
 - Website: [https://dove.hexly.ai](https://dove.hexly.ai)
 - Website evidence: wrangler.toml routes
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A self-hosted email relay with webhooks, reusable templates, and delivery insights.
 - Chinese: 可自行托管的邮件中继，支持 Webhook、邮件模板与用量查看。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Dove identity](../../public/logos/display/dove-160.webp)
+![Dove source identity](../../public/logos/display/dove-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Dove portrait with pink blossoms

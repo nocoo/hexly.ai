@@ -11,6 +11,7 @@ import {
 import type { Project } from "../../src/model/project";
 
 const projects = rawProjects as Project[];
+const active = projects.filter((project) => !project.archived);
 const frogie = projects.find((project) => project.id === "frogie");
 if (!frogie) throw new Error("Frogie is required as the reference identity.");
 
@@ -39,22 +40,30 @@ describe("the imported project catalogue", () => {
 		expect(filterProjects(projects, "  AI   agents  ", "ai")).toContain(frogie);
 		expect(filterProjects(projects, "frogie", "games")).toEqual([]);
 		expect(filterProjects(projects, "not-a-real-project")).toEqual([]);
-		expect(filterProjects(projects, "  ")).toEqual(projects);
+		expect(filterProjects(projects, "  ")).toEqual(active);
 		const sorted = filterProjects(projects, "", "all", "az");
 		expect(sorted.map((project) => project.title)).toEqual(
-			projects
+			active
 				.map((project) => project.title)
 				.toSorted((a, b) => a.localeCompare(b, "en")),
 		);
 		expect(projects).toEqual(before);
 	});
-	it("counts the full collection and disjoint categories", () => {
+	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(projects.length);
-		expect(counts.archive).toBe(12);
+		expect(counts.all).toBe(46);
+		expect(counts.archive).toBe(20);
 		expect(counts.games).toBe(4);
-		expect(Object.values(counts).reduce((sum, count) => sum + count, 0)).toBe(
-			projects.length * 2,
+		expect(counts.all + counts.archive).toBe(projects.length);
+		expect(filterProjects(projects, "", "archive")).toEqual(
+			projects.filter((project) => project.archived),
+		);
+		expect(filterProjects(projects, "uptime kuma")).toEqual([]);
+		expect(filterProjects(projects, "uptime kuma", "extensions")).toHaveLength(
+			1,
+		);
+		expect(counts.extensions).toBe(
+			filterProjects(projects, "", "extensions").length,
 		);
 		expect(categoryCounts([]).all).toBe(0);
 	});

@@ -6,6 +6,7 @@
 - Website: [https://dogfight.hexly.ai](https://dogfight.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: games
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: An arcade dogfight in the browser. Take an F-22 into a sky full of Su-35s.
 - Chinese: 驾驶 F-22 迎战苏-35，在浏览器里体验街机风格的三维空战。
 - Profile section: Games
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Dogfight identity](../../public/logos/display/dogfight-160.webp)
+![Dogfight source identity](../../public/logos/display/dogfight-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

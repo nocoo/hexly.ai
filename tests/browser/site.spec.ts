@@ -2,7 +2,10 @@ import { expect, test } from "@playwright/test";
 import manifest from "../../package.json" with { type: "json" };
 import projects from "../../src/data/projects.json" with { type: "json" };
 
-test("renders the complete directory with local images and working destinations", async ({
+const active = projects.filter((project) => !project.archived);
+const archived = projects.filter((project) => project.archived);
+
+test("renders active projects with local logos, redraw badges, and working destinations", async ({
 	page,
 }) => {
 	const errors: string[] = [];
@@ -18,7 +21,16 @@ test("renders the complete directory with local images and working destinations"
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
 		"Small ideas.A little universe.",
 	);
-	await expect(page.locator(".project-card")).toHaveCount(projects.length);
+	await expect(page.locator(".project-card")).toHaveCount(active.length);
+	await expect(page.locator(".refined-badge")).toHaveCount(2);
+	for (const id of ["frogie", "pew"]) {
+		await expect(
+			page.locator(`[data-project="${id}"] .refined-badge`),
+		).toHaveText("Refined");
+		await expect(
+			page.locator(`[data-project="${id}"] .logo-family img`),
+		).toHaveAttribute("src", /\/03\/icon-/);
+	}
 	await page.locator(".project-card img").evaluateAll(async (images) => {
 		await Promise.all(
 			images.map(async (node) => {
@@ -61,7 +73,7 @@ test("combines search and categories, resets empty results, and sorts by name", 
 		page.getByRole("heading", { name: "Nothing here just yet." }),
 	).toBeVisible();
 	await page.getByRole("button", { name: "Reset filters" }).click();
-	await expect(page.locator(".project-card")).toHaveCount(projects.length);
+	await expect(page.locator(".project-card")).toHaveCount(active.length);
 	await expect(search).toHaveValue("");
 	await search.fill("backup");
 	await search.press("Escape");
@@ -89,7 +101,10 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(page.locator(".project-card")).toHaveCount(1);
 	await expect(page.locator(".project-card h3")).toContainText("Frogie");
 	await page.getByRole("button", { name: "清空搜索" }).click();
-	await expect(page.locator(".project-card")).toHaveCount(projects.length);
+	await expect(page.locator(".project-card")).toHaveCount(active.length);
+	await expect(
+		page.locator('[data-project="frogie"] .refined-badge'),
+	).toHaveText("已重绘");
 	await page.getByRole("button", { name: "切换到浅色主题" }).click();
 	await page.getByRole("button", { name: "Switch to English" }).click();
 	await page.reload();
@@ -106,7 +121,7 @@ test("restores directory filters with browser back and reloads a shared identity
 		.locator('[data-project="pew"]')
 		.getByRole("button", { name: "View logo: Pew", exact: true })
 		.click();
-	await expect(page).toHaveURL(/view=logos&project=pew/);
+	await expect(page).toHaveURL(/\/logos\/pew$/);
 	await expect(page.locator("#identity-title")).toContainText("Pew");
 	await page.reload();
 	await expect(page.locator("#identity-title")).toContainText("Pew");
@@ -119,9 +134,46 @@ test("restores directory filters with browser back and reloads a shared identity
 		.getByRole("navigation", { name: "Main navigation" })
 		.getByRole("button", { name: "Logo gallery" })
 		.click();
-	await expect(page.locator(".picker-item")).toHaveCount(projects.length);
+	await expect(page.locator(".picker-item")).toHaveCount(active.length);
 	await page.getByRole("link", { name: "hexly.ai", exact: true }).click();
-	await expect(page.locator(".project-card")).toHaveCount(projects.length);
+	await expect(page.locator(".project-card")).toHaveCount(active.length);
+});
+
+test("keeps archived projects accessible through their category and direct logo paths", async ({
+	page,
+}) => {
+	await page.goto("/");
+	await expect(page.locator('[data-project="uptime-kuma-skill"]')).toHaveCount(
+		0,
+	);
+	await page.getByRole("button", { name: /^Archived/ }).click();
+	await expect(page.locator(".project-card")).toHaveCount(archived.length);
+	await page
+		.locator('[data-project="uptime-kuma-skill"]')
+		.getByRole("button", { name: "View logo: Uptime Kuma Skill" })
+		.click();
+	await expect(page.locator("#identity-title")).toContainText(
+		"Uptime Kuma Skill",
+	);
+	await expect(page).toHaveURL(/\/logos\/uptime-kuma-skill\?category=archive$/);
+	await page.goto("/logos/uptime-kuma-skill");
+	await page.reload();
+	await expect(page.locator("#identity-title")).toContainText(
+		"Uptime Kuma Skill",
+	);
+	await expect(
+		page.getByRole("combobox", { name: "Project categories" }),
+	).toHaveValue("archive");
+	await expect(page.locator(".picker-item")).toHaveCount(archived.length);
+	await page
+		.getByRole("combobox", { name: "Project categories" })
+		.selectOption("all");
+	await expect(page.locator(".picker-item")).toHaveCount(active.length);
+	await expect(page.locator("#identity-title")).toContainText("Frogie");
+	await page.goBack();
+	await expect(page.locator("#identity-title")).toContainText(
+		"Uptime Kuma Skill",
+	);
 });
 
 test.describe("system preferences", () => {

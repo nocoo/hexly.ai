@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Check your network connection before letting a command run.
 - Chinese: 在执行命令之前，先确认网络连接符合预期。
 - Profile section: CLI Tools
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![IPSafe identity](../../public/logos/display/ipsafe-160.webp)
+![IPSafe source identity](../../public/logos/display/ipsafe-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

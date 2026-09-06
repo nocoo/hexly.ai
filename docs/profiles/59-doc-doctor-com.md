@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A platform for study-abroad writing, editing, and translation services.
 - Chinese: 为留学文书提供写作、润色与翻译服务的平台。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Doc Doctor identity](../../public/logos/display/doc-doctor-com-160.webp)
+![Doc Doctor source identity](../../public/logos/display/doc-doctor-com-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

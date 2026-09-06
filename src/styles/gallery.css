@@ -46,6 +46,22 @@
 	height: 36px;
 	margin: 0;
 }
+.picker-controls {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.picker-category {
+	min-width: 0;
+	max-width: 180px;
+	height: 36px;
+	border: 1px solid var(--line);
+	border-radius: 7px;
+	padding: 6px 9px;
+	background: var(--surface);
+	color: var(--ink);
+	font-size: 11px;
+}
 .project-picker {
 	display: flex;
 	gap: 8px;
@@ -96,6 +112,7 @@
 	letter-spacing: -3px;
 	line-height: 1.1;
 	margin: 0;
+	overflow-wrap: anywhere;
 }
 .identity-heading h2 > span {
 	font-size: 26px;
@@ -502,17 +519,6 @@
 	border-radius: 10px;
 	font: 11px / 1.8 var(--mono);
 }
-.reference-grid {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	align-items: center;
-	gap: 24px;
-	padding-bottom: 26px;
-}
-.reference-grid img {
-	width: 100%;
-	border-radius: 8px;
-}
 .process-link {
 	display: inline-block;
 	font-size: 11px;
@@ -619,6 +625,13 @@
 	}
 	.picker-heading .search-field {
 		width: 100%;
+	}
+	.picker-controls {
+		gap: 8px;
+	}
+	.picker-category {
+		max-width: 142px;
+		font-size: 10px;
 	}
 	.picker-item {
 		padding: 8px;
@@ -738,9 +751,6 @@
 	.download-links a {
 		padding: 14px 12px;
 		font-size: 10px;
-	}
-	.reference-grid {
-		grid-template-columns: 1fr;
 	}
 	.identity-footer > p {
 		align-items: start;

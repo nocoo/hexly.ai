@@ -6,6 +6,7 @@
 - Website: [https://lizheng.blog](https://lizheng.blog)
 - Website evidence: nocoo/nocoo README.md Writing link
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A modern home for writing, publishing, and the ideas worth keeping.
 - Chinese: 写作、发布，也留住值得记录的想法。由 WordPress 迁移而来的博客平台。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Firefly identity](../../public/logos/display/firefly-160.webp)
+![Firefly source identity](../../public/logos/display/firefly-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Multicolored prismatic flame

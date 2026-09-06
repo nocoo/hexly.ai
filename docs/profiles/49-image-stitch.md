@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: extensions
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Turn overlapping scrolling screenshots into one continuous image.
 - Chinese: 把有重叠区域的滚动截图，拼成一张连贯的长图。
 - Profile section: Skills & MCP Servers
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Image Stitch identity](../../public/logos/display/image-stitch-160.webp)
+![Image Stitch source identity](../../public/logos/display/image-stitch-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

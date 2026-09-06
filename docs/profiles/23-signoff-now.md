@@ -6,6 +6,7 @@
 - Website: [https://signoff.hexly.ai](https://signoff.hexly.ai)
 - Website evidence: wrangler.toml routes
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A desktop-first developer workspace for digital signoff and approval workflows.
 - Chinese: 以桌面为中心的开发者工作空间，管理数字签署和审批流程。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![signoff.now identity](../../public/logos/display/signoff-now-160.webp)
+![signoff.now source identity](../../public/logos/display/signoff-now-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

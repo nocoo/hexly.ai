@@ -6,6 +6,7 @@
 - Website: [https://geekhub.vercel.app](https://geekhub.vercel.app)
 - Website evidence: GitHub repository homepage
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A self-hosted RSS reader with AI summaries and translation.
 - Chinese: 可以自行托管的 RSS 阅读器，带有 AI 摘要与翻译。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![GeekHub identity](../../public/logos/display/geekhub-160.webp)
+![GeekHub source identity](../../public/logos/display/geekhub-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Green digital letter G

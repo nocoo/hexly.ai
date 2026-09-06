@@ -6,6 +6,7 @@
 - Website: [https://giraffe.hexly.ai](https://giraffe.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A personal GitHub observatory for repositories, workflows, and encrypted snapshots.
 - Chinese: 个人 GitHub 观察台，集中查看仓库、工作流与加密的访问令牌快照。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Giraffe identity](../../public/logos/display/giraffe-160.webp)
+![Giraffe source identity](../../public/logos/display/giraffe-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Giraffe head with laurel leaves

@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A local-first Mac gateway that brings AI agents to Discord, the terminal, and HTTP.
 - Chinese: 优先在本地运行的 Mac AI 智能体网关，连接 Discord、终端与 HTTP。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Deca identity](../../public/logos/display/deca-160.webp)
+![Deca source identity](../../public/logos/display/deca-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

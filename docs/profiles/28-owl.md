@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A macOS menu bar lookout that spots unusual patterns in your system logs.
 - Chinese: 守在 macOS 菜单栏里的观察员，从系统日志中发现异常信号。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Owl identity](../../public/logos/display/owl-160.webp)
+![Owl source identity](../../public/logos/display/owl-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Multicolored owl portrait

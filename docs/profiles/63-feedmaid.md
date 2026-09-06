@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Collect user feedback and explore it through a web interface.
 - Chinese: 收集用户反馈，并在网页中查看和整理。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Feedmaid identity](../../public/logos/display/feedmaid-160.webp)
+![Feedmaid source identity](../../public/logos/display/feedmaid-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

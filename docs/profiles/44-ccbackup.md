@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Back up and restore your Claude Code configuration without the busywork.
 - Chinese: 备份与恢复 Claude Code 配置，省去重复整理的琐事。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![CCBackup identity](../../public/logos/display/ccbackup-160.webp)
+![CCBackup source identity](../../public/logos/display/ccbackup-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

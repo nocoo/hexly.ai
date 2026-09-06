@@ -3,11 +3,13 @@
 ## Current identities
 
 - Keep a stable lowercase, hyphenated asset slug; the display name may retain punctuation and brand capitalization.
-- Each project has a title, English and Chinese descriptions, its existing emoji, a source repository, a category, a logo record, a foreground/accent color, and a background color.
+- Each project has a title, English and Chinese descriptions, its existing emoji, a source repository, a category, an explicit repository `archived` flag, a logo record, a foreground/accent color, and a background color.
+- Record archive status from repository metadata, independently of the GitHub profile's Legacy section. All excludes archived repositories; Archived selects them across all existing categories. Keep product categories and put redraw status on the card.
 - A project website must come from its repository metadata, README, or deployment configuration. Do not construct presumed live domains from repository names.
 - Prefer the repository's root `logo.png`, then its documented application logo, app icon, or favicon. Preserve the original bytes in `public/logos/originals/` with a normalized filename.
 - Record the source repository, source path, revision, file dimensions, and SHA-256. Record whether the source was a checked-out revision or a locally modified asset.
 - When an approved family replaces a logo, keep the previous original's filename and hash stable. Store the replacement with a versioned filename, record a source revision containing those exact bytes, and add its presentation/history metadata under `family`.
+- Local refinements use `family.status: "review"` and their own `foreground` paths, native dimensions, and checksum. Keep `project.logo` tied to the actual source repository. All candidate artwork views and downloads must use that candidate foreground. A Refined badge describes the drawing, not adoption or deployment.
 - Derive display sizes without redrawing, recoloring, stretching, or cropping original artwork. Transparent padding and rounded-square presentation are display treatments.
 - If no independent image exists, preserve the profile emoji as the current identity. Clearly record that it is an emoji identity, not a recovered original logo.
 - Read colors from actual theme tokens where available. Otherwise sample the actual logo and record that method. Do not invent an unverified brand palette for a project with no source evidence.
@@ -30,7 +32,9 @@ The later cleanup must preserve the original backup and provenance, create a sep
 
 The active art direction and archive convention are in [the logo family guide](06-logo-family.md). Versioned candidates, raw generations, prompts, references, masks, and finishing passes live in `artwork/logo-family/` until reviewed for promotion.
 
-Approved application tiles include their own background and contact shadows. Display them at full size with one rounded-square boundary; do not pad them inside another colored tile. Preserve separate transparent foregrounds for artwork and edge review. A square source is used for operating-system icons; rounded transparent corners are used only where the application controls presentation.
+Refined application tiles include their own background and contact shadows. Display them at full size with one rounded-square boundary; do not pad them inside another colored tile. Preserve separate transparent foregrounds for artwork and edge review. A square source is used for operating-system icons; rounded transparent corners are used only where the application controls presentation.
+
+Every completed candidate has a static `review.html` and a complete `/logos/<project>` before/after page, plus all master and small-size exports. Presentation reference boards appear only in static study HTML and Git. Background-only adjustments require a new finishing pass and byte-identical transparent/white masters. Preserve historical public manifests and verify them even after the catalogue selects a newer pass. Follow the current session's local-only or publication authorization.
 
 ## Profile maintenance reference
 

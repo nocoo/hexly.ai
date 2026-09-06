@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A visual workspace for building InfoViz charts.
 - Chinese: 通过可视化操作制作 InfoViz 图表的工作空间。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![InfoViz Builder identity](../../public/logos/display/infoviz-builder-160.webp)
+![InfoViz Builder source identity](../../public/logos/display/infoviz-builder-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
