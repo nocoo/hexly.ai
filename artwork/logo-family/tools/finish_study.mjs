@@ -232,6 +232,118 @@ async function makeShadow(alpha, width, height, settings) {
 		.toBuffer();
 }
 
+async function placeLayer(bytes, width, height, scale) {
+	if (scale === 1) return bytes;
+	const placedWidth = Math.round(width * scale);
+	const placedHeight = Math.round(height * scale);
+	const resized = await sharp(bytes)
+		.resize(placedWidth, placedHeight)
+		.png()
+		.toBuffer();
+	return sharp({
+		create: {
+			width,
+			height,
+			channels: 4,
+			background: { r: 0, g: 0, b: 0, alpha: 0 },
+		},
+	})
+		.composite([
+			{
+				input: resized,
+				left: Math.floor((width - placedWidth) / 2),
+				top: Math.floor((height - placedHeight) / 2),
+			},
+		])
+		.png()
+		.toBuffer();
+}
+
+async function makeEmission(rgb, alpha, width, height, settings) {
+	const mask = Buffer.alloc(width * height);
+	const rgba = Buffer.alloc(width * height * 4);
+	const factor = width / 2048;
+	const [cx, cy, rx, ry] = settings.mask.ellipseAt2048.map(
+		(value) => value * factor,
+	);
+	let selectedPixels = 0;
+	for (let y = 0; y < height; y++) {
+		for (let x = 0; x < width; x++) {
+			const index = y * width + x;
+			if (!alpha[index] || ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2 > 1)
+				continue;
+			const [red, green, blue] = rgb.subarray(index * 3, index * 3 + 3);
+			if (
+				red < settings.mask.minimumRed ||
+				green < settings.mask.minimumGreen ||
+				blue > settings.mask.maximumBlue ||
+				red - blue < settings.mask.minimumWarmth
+			)
+				continue;
+			mask[index] = alpha[index];
+			selectedPixels++;
+		}
+	}
+	if (!selectedPixels)
+		throw new Error(`Emission source mask is empty: ${settings.name}`);
+	const softened = await sharp(mask, { raw: { width, height, channels: 1 } })
+		.blur(settings.blurAt2048 * factor)
+		.extractChannel(0)
+		.raw()
+		.toBuffer();
+	if (softened.length !== width * height)
+		throw new Error(`Unexpected emission mask channels: ${settings.name}`);
+	let renderedAlpha = 0;
+	for (let index = 0; index < width * height; index++) {
+		for (let channel = 0; channel < 3; channel++)
+			rgba[index * 4 + channel] = settings.color[channel];
+		rgba[index * 4 + 3] = Math.round(softened[index] * settings.opacity);
+		renderedAlpha += rgba[index * 4 + 3];
+	}
+	if (!renderedAlpha)
+		throw new Error(`Rendered emission is empty: ${settings.name}`);
+	return {
+		mask: await sharp(mask, { raw: { width, height, channels: 1 } })
+			.png()
+			.toBuffer(),
+		layer: await sharp(rgba, { raw: { width, height, channels: 4 } })
+			.png()
+			.toBuffer(),
+		selectedPixels,
+		renderedAlpha,
+	};
+}
+
+function inspectPlacement(alpha, width, height, cornerRadius) {
+	const radius = width * cornerRadius;
+	let minimumClearance = Infinity;
+	let clippedPixels = 0;
+	const bounds = { left: width, top: height, right: 0, bottom: 0 };
+	for (let y = 0; y < height; y++) {
+		for (let x = 0; x < width; x++) {
+			if (alpha[y * width + x] < 16) continue;
+			const qx = Math.abs(x + 0.5 - width / 2) - (width / 2 - radius);
+			const qy = Math.abs(y + 0.5 - height / 2) - (height / 2 - radius);
+			const clearance =
+				radius -
+				(Math.hypot(Math.max(qx, 0), Math.max(qy, 0)) +
+					Math.min(Math.max(qx, qy), 0));
+			minimumClearance = Math.min(minimumClearance, clearance);
+			if (clearance < 0) clippedPixels++;
+			bounds.left = Math.min(bounds.left, x);
+			bounds.top = Math.min(bounds.top, y);
+			bounds.right = Math.max(bounds.right, x);
+			bounds.bottom = Math.max(bounds.bottom, y);
+		}
+	}
+	return {
+		bounds,
+		visibleAlphaThreshold: 16,
+		minimumRoundedEdgeClearance: minimumClearance,
+		clippedPixels,
+	};
+}
+
 const runArgument = process.argv[2];
 const pass = process.argv[3];
 if (!runArgument || !/^\d{2}$/.test(pass ?? ""))
@@ -292,6 +404,7 @@ await save("tool-snapshot.mjs", await readFile(new URL(import.meta.url)));
 const foreground = await sharp(rgba, { raw: { width, height, channels: 4 } })
 	.png()
 	.toBuffer();
+await save("extracted-foreground.png", foreground);
 await save(
 	"alpha-mask.png",
 	await sharp(alpha, { raw: { width, height, channels: 1 } })
@@ -323,14 +436,73 @@ const background = await sharp(backgroundRaw, {
 	.png()
 	.toBuffer();
 await save("background.png", background);
+const placementScale = settings.framing?.scale ?? 1;
+if (
+	!Number.isFinite(placementScale) ||
+	placementScale < 0.5 ||
+	placementScale > 1
+)
+	throw new Error("Foreground placement scale must be between 0.5 and 1.");
+const placedForeground = await placeLayer(
+	foreground,
+	width,
+	height,
+	placementScale,
+);
+const presentationAlpha =
+	placementScale === 1
+		? alpha
+		: await sharp(placedForeground).extractChannel(3).raw().toBuffer();
+const placement = inspectPlacement(
+	presentationAlpha,
+	width,
+	height,
+	settings.cornerRadius,
+);
+const requiredClearance = settings.framing?.minimumClearanceAt2048;
+if (
+	requiredClearance !== undefined &&
+	placement.minimumRoundedEdgeClearance < (requiredClearance * width) / 2048
+)
+	throw new Error(
+		`Insufficient rounded-corner clearance: ${placement.minimumRoundedEdgeClearance.toFixed(1)} pixels`,
+	);
+if (placementScale !== 1) {
+	await save("foreground-placement.png", placedForeground);
+	await save(
+		"presentation-alpha-mask.png",
+		await sharp(presentationAlpha, {
+			raw: { width, height, channels: 1 },
+		})
+			.png()
+			.toBuffer(),
+	);
+}
 const shadows = [];
 for (const [index, shadow] of settings.shadows.entries()) {
-	const bytes = await makeShadow(alpha, width, height, shadow);
+	const bytes = await makeShadow(presentationAlpha, width, height, shadow);
 	await save(`shadow-${index + 1}.png`, bytes);
 	shadows.push({ input: bytes });
 }
+const emissions = [];
+const emissionReports = [];
+for (const light of settings.emission ?? []) {
+	if (!/^[a-z0-9-]+$/.test(light.name))
+		throw new Error("Emission names must be lowercase filename-safe labels.");
+	const result = await makeEmission(rgb, alpha, width, height, light);
+	const layer = await placeLayer(result.layer, width, height, placementScale);
+	await save(`glow-${light.name}-mask.png`, result.mask);
+	await save(`glow-${light.name}.png`, layer);
+	emissions.push({ input: layer, blend: light.blend });
+	emissionReports.push({
+		name: light.name,
+		selectedPixels: result.selectedPixels,
+		renderedAlpha: result.renderedAlpha,
+		maskCoordinates: "Native source pixels, before icon placement",
+	});
+}
 const square = await sharp(background)
-	.composite([...shadows, { input: foreground }])
+	.composite([...shadows, ...emissions, { input: placedForeground }])
 	.png()
 	.toBuffer();
 const roundedMask = Buffer.from(
@@ -344,7 +516,7 @@ for (const size of settings.exportSizes) {
 	if (size > width)
 		throw new Error("Exports may not upscale the native master.");
 	for (const [kind, bytes] of [
-		["transparent", foreground],
+		["transparent", placedForeground],
 		["icon", square],
 		["rounded", rounded],
 	]) {
@@ -357,7 +529,10 @@ for (const size of settings.exportSizes) {
 }
 await save(
 	`exports/${settings.project}-white-${width}.png`,
-	await sharp(foreground).flatten({ background: "#ffffff" }).png().toBuffer(),
+	await sharp(placedForeground)
+		.flatten({ background: "#ffffff" })
+		.png()
+		.toBuffer(),
 );
 for (const [name, color] of [
 	["light", "#f6f5ef"],
@@ -365,7 +540,7 @@ for (const [name, color] of [
 ]) {
 	await save(
 		`previews/on-${name}-1024.png`,
-		await sharp(foreground)
+		await sharp(placedForeground)
 			.flatten({ background: color })
 			.resize(1024, 1024)
 			.png()
@@ -392,6 +567,8 @@ await save(
 					"Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
 				settings,
 				statistics,
+				placement: { scale: placementScale, ...placement },
+				emission: emissionReports,
 				files,
 			},
 			null,
