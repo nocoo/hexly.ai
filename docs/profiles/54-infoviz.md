@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A lightweight JavaScript library for beautiful, interactive data visualizations.
 - Chinese: 轻量的 JavaScript 数据可视化库，用来制作交互式图表。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![InfoViz identity](../../public/logos/display/infoviz-160.webp)
+![InfoViz source identity](../../public/logos/display/infoviz-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

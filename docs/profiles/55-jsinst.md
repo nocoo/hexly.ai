@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: archive
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: JavaScript instrumentation and performance analysis tools.
 - Chinese: 用于 JavaScript 代码插桩与性能分析的工具集。
 - Profile section: Legacy Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![JSInst identity](../../public/logos/display/jsinst-160.webp)
+![JSInst source identity](../../public/logos/display/jsinst-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

@@ -36,7 +36,7 @@
 
 ## 安装
 
-直接访问 **[hexly.ai](https://hexly.ai)**，无需安装或登录。也可以打开 [Logo 画廊](https://hexly.ai/?view=logos&project=frogie)。
+直接访问 **[hexly.ai](https://hexly.ai)**，无需安装或登录。也可以打开 [Logo 画廊](https://hexly.ai/logos/frogie)。
 
 ## 命令一览
 

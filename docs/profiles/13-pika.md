@@ -6,6 +6,7 @@
 - Website: [https://pika.hexly.ai](https://pika.hexly.ai)
 - Website evidence: packages/web-worker/wrangler.toml routes
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Replay, search, and rediscover your AI coding conversations.
 - Chinese: 回放、搜索和重新发现 AI 编程会话，让过去的思路更容易找回来。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Pika identity](../../public/logos/display/pika-160.webp)
+![Pika source identity](../../public/logos/display/pika-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Yellow electric mouse in motion

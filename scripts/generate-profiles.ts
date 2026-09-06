@@ -10,26 +10,39 @@ const index = [
 	"",
 	`All ${projects.length} unique entries from the GitHub profile are represented. Project metadata is maintained in \`src/data/projects.json\`; run \`bun run docs:profiles\` after editing it.`,
 	"",
-	"| Project | Current identity | Foreground | Background |",
+	"| Project | Catalogue artwork | Source primary | Source background |",
 	"| --- | --- | --- | --- |",
 ];
 for (const [position, project] of projects.entries()) {
 	const name = `${String(position + 1).padStart(2, "0")}-${project.id}.md`;
 	index.push(
-		`| [${project.emoji} ${project.title}](${name}) | ${project.family ? "Adopted family" : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
+		`| [${project.emoji} ${project.title}](${name}) | ${project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);
 	const family = project.family;
 	const familySection = family
-		? `## Adopted animal family
+		? `## Refined identity
 
-- Adopted: ${family.adopted}; study \`${family.id}\`, finishing \`${family.finishing}\`
+![${project.title} refined preview](../../public${family.root}/icon-160.webp)
+
+- Status: ${family.status === "adopted" ? "Adopted in the source project" : "Local review; this finishing pass has not been adopted in the source project"}; updated ${family.updated}.
+- Study \`${family.id}\`, finishing \`${family.finishing}\`
+- Site path: \`/logos/${project.id}\`; [local gallery](https://index.dev.hexly.ai/logos/${project.id})
+- [Static review HTML](../../artwork/logo-family/${project.id}/${family.id}/review.html)
 - [Full process archive](${family.archive})
+- [Transparent foreground](../../public${family.foreground.original}); SHA-256: \`${family.foreground.sha256}\`
 - [Square icon](../../public${family.root}/icon.png), [rounded icon](../../public${family.root}/rounded.png), [white version](../../public${family.root}/white.png)
 - [Untouched generation](../../public${family.root}/raw.png), [exact prompt](../../public${family.root}/prompt.txt), [public asset checksums](../../public${family.root}/manifest.json)
 - [Previous original](../../public${family.previous.original}), copied from [its immutable source](${family.previous.sourceUrl})
 - Previous SHA-256: \`${family.previous.sha256}\`
-- Generation: ${family.model}, native ${project.logo.width} × ${project.logo.height}; transparent extraction and presentation are separate finishing steps.
-- Application previews use the approved square icon without extra padding, backgrounds, or circular masks. Artwork previews retain the transparent foreground.
+- Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
+- Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
+
+### Refined palette
+
+| Role | Value | Evidence |
+| --- | --- | --- |
+${family.palette.map((color) => `| ${color.role} | \`${color.color}\` | ${color.source} |`).join("\n")}
 
 ${family.direction.map((item) => `### ${item.title.en}\n\n${item.description.en}\n\n${item.description.zh}`).join("\n\n")}
 
@@ -48,6 +61,7 @@ Small-size observation: ${family.sizeNote.en}
 - Website: ${project.website ? `[${project.website}](${project.website})` : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
+- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: ${project.description.en}
 - Chinese: ${project.description.zh}
 - Profile section: ${project.source.profileSection}
@@ -56,7 +70,7 @@ Small-size observation: ${family.sizeNote.en}
 
 ## Current logo
 
-![${project.title} identity](../../public${family ? `${family.root}/icon-160.webp` : project.logo.thumbnail})
+![${project.title} source identity](../../public${project.logo.thumbnail})
 
 - Type: ${project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
@@ -80,7 +94,7 @@ ${familySection}## ${family ? "Further refinements" : "Future family notes"}
 
 ${project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this approved composition and its archived predecessors." : " No new logo is generated in phase one."}
+Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}
 `;
 	await writeFile(`docs/profiles/${name}`, content);
 }

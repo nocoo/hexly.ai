@@ -6,12 +6,13 @@ for (const theme of ["light", "dark"] as const) {
 		test.use({ colorScheme: theme });
 		for (const [view, path] of [
 			["directory", "/"],
-			["gallery", "/?view=logos&project=frogie"],
+			["gallery", "/logos/frogie"],
 		] as const) {
 			test(`${view} has accessible content and fits the viewport`, async ({
 				page,
 				isMobile,
 			}) => {
+				if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
 				await page.goto(path);
 				await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 				if (isMobile)

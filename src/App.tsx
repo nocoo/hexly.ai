@@ -9,9 +9,10 @@ import rawProjects from "./data/projects.json";
 import { filterProjects } from "./model/catalogue";
 import {
 	type DirectoryState,
-	navigationSearch,
+	navigationPath,
 	openLogo,
 	parseNavigation,
+	resolveNavigation,
 } from "./model/navigation";
 import { readPreferences, savePreference } from "./model/preferences";
 import type { Project, View } from "./model/project";
@@ -31,7 +32,7 @@ function browserStorage(): Storage | null {
 
 export function App() {
 	const [state, setState] = useState(() =>
-		parseNavigation(window.location.search),
+		parseNavigation(window.location.pathname, window.location.search, projects),
 	);
 	const [preferences, setPreferences] = useState(() =>
 		readPreferences(
@@ -63,7 +64,20 @@ export function App() {
 	}, [locale, theme]);
 
 	useEffect(() => {
-		const onPopState = () => setState(parseNavigation(window.location.search));
+		const path = navigationPath(state);
+		if (`${window.location.pathname}${window.location.search}` !== path)
+			window.history.replaceState(null, "", `${path}${window.location.hash}`);
+	}, [state]);
+
+	useEffect(() => {
+		const onPopState = () =>
+			setState(
+				parseNavigation(
+					window.location.pathname,
+					window.location.search,
+					projects,
+				),
+			);
 		const onKeyDown = (event: KeyboardEvent) => {
 			const target = event.target;
 			if (
@@ -90,11 +104,12 @@ export function App() {
 	}, []);
 
 	const navigate = (next: DirectoryState, replace = false) => {
-		setState(next);
+		const resolved = resolveNavigation(next, projects);
+		setState(resolved);
 		window.history[replace ? "replaceState" : "pushState"](
 			null,
 			"",
-			navigationSearch(next),
+			navigationPath(resolved),
 		);
 		if (next.view !== state.view)
 			window.scrollTo({ top: 0, behavior: "instant" });
@@ -147,7 +162,10 @@ export function App() {
 					locale={locale}
 					searchRef={searchRef}
 					onChange={change}
-					onLogo={(id) => navigate(openLogo(state, id))}
+					onLogo={(id) => {
+						const project = projects.find((item) => item.id === id);
+						if (project) navigate(openLogo(state, project));
+					}}
 				/>
 			) : (
 				<Gallery

@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Capture a screenshot, upload it to R2, and have a shareable link on your clipboard.
 - Chinese: 截图、上传到 R2，再把可分享的链接放进剪贴板，一次完成。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![R2Shot identity](../../public/logos/display/r2shot-160.webp)
+![R2Shot source identity](../../public/logos/display/r2shot-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Blue dolphin

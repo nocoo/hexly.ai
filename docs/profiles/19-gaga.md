@@ -6,6 +6,7 @@
 - Website: [https://gaga.hexly.ai](https://gaga.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: games
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A tiny 3D playroom where Taotao can explore, wander, and discover toys.
 - Chinese: 给陶陶的小小三维玩具房，自由走动，探索喜欢的玩具。
 - Profile section: Games
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Gaga identity](../../public/logos/display/gaga-160.webp)
+![Gaga source identity](../../public/logos/display/gaga-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark

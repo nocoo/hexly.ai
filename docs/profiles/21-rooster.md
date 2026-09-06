@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A web control panel for Hermes Agent, from conversations to models and profiles.
 - Chinese: Hermes Agent 的网页控制台，管理对话、会话、模型与配置。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Rooster identity](../../public/logos/display/rooster-160.webp)
+![Rooster source identity](../../public/logos/display/rooster-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

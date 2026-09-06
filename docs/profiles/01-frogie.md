@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A local-first home for your AI agents. Chat, tools, and sessions in one place.
 - Chinese: AI 智能体的本地工作台，把对话、工具与会话放在一起。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Frogie identity](../../public/logos/family/frogie/2026-09-06-01/icon-160.webp)
+![Frogie source identity](../../public/logos/display/frogie-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Full-body green frog with musical notes
@@ -42,16 +43,35 @@
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Adopted animal family
+## Refined identity
 
-- Adopted: 2026-09-06; study `2026-09-06-01`, finishing `02`
-- [Full process archive](https://github.com/nocoo/hexly.ai/tree/aeeac5d/artwork/logo-family/frogie/2026-09-06-01)
-- [Square icon](../../public/logos/family/frogie/2026-09-06-01/icon.png), [rounded icon](../../public/logos/family/frogie/2026-09-06-01/rounded.png), [white version](../../public/logos/family/frogie/2026-09-06-01/white.png)
-- [Untouched generation](../../public/logos/family/frogie/2026-09-06-01/raw.png), [exact prompt](../../public/logos/family/frogie/2026-09-06-01/prompt.txt), [public asset checksums](../../public/logos/family/frogie/2026-09-06-01/manifest.json)
+![Frogie refined preview](../../public/logos/family/frogie/2026-09-06-01/03/icon-160.webp)
+
+- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-06.
+- Study `2026-09-06-01`, finishing `03`
+- Site path: `/logos/frogie`; [local gallery](https://index.dev.hexly.ai/logos/frogie)
+- [Static review HTML](../../artwork/logo-family/frogie/2026-09-06-01/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/frogie/2026-09-06-01)
+- [Transparent foreground](../../public/logos/family/frogie/2026-09-06-01/03/transparent.png); SHA-256: `752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b`
+- [Square icon](../../public/logos/family/frogie/2026-09-06-01/03/icon.png), [rounded icon](../../public/logos/family/frogie/2026-09-06-01/03/rounded.png), [white version](../../public/logos/family/frogie/2026-09-06-01/03/white.png)
+- [Untouched generation](../../public/logos/family/frogie/2026-09-06-01/03/raw.png), [exact prompt](../../public/logos/family/frogie/2026-09-06-01/03/prompt.txt), [public asset checksums](../../public/logos/family/frogie/2026-09-06-01/03/manifest.json)
 - [Previous original](../../public/logos/originals/frogie.png), copied from [its immutable source](https://github.com/nocoo/frogie/blob/3643e162ef3e3b784a1f8a7c88bd433fae0d5e45/logo.png)
 - Previous SHA-256: `cf53c0a17c5a025dcfa4b3b1eb50e1088a62aa89c1d51813881f8a751c61fbb6`
 - Generation: Azure Foundry · gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
-- Application previews use the approved square icon without extra padding, backgrounds, or circular masks. Artwork previews retain the transparent foreground.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
+- Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
+
+### Refined palette
+
+| Role | Value | Evidence |
+| --- | --- | --- |
+| background | `#bbcb9e` | Local Frogie contrast study, finishing 03; background.base in archived settings.json |
+| primary | `#86c32c` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1065, 512); palette.json |
+| accent | `#fbf4a8` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1024, 1331); palette.json |
+| accent | `#3b1220` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1085, 717); palette.json |
+| accent | `#f78571` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1167, 860); palette.json |
+| accent | `#56c8ee` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1597, 307); palette.json |
+| accent | `#9a4fbd` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1803, 713); palette.json |
 
 ### A diagonal balance
 
@@ -65,11 +85,11 @@ Broad planes clarify the face and belly. Smaller polygons describe the eyes, ope
 
 脸和肚子由大块平面构成，眼睛、张开的嘴巴和脚趾用更细的多边形刻画，保留熟悉的表情。
 
-### A softer color field
+### A deeper sage field
 
-Pale sage, quiet curved motifs, fine grain, and shallow shadows give the green character a matte paper setting.
+Deeper sage, visible tonal curves, fine grain, and soft shadows give the green character a matte paper setting.
 
-淡鼠尾草绿、低对比弧线、细微颗粒与浅阴影，让绿色角色像落在一张有触感的纸上。
+加深的鼠尾草绿、清晰的同色弧线、细微颗粒与柔和阴影，为绿色角色增添哑光纸面的层次。
 
 Small-size observation: At 16 px the green silhouette and open mouth lead; individual facets and musical notes merge into small color accents.
 
@@ -77,4 +97,4 @@ Small-size observation: At 16 px the green silhouette and open mouth lead; indiv
 
 This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this approved composition and its archived predecessors.
+Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.

@@ -24,6 +24,10 @@ bun run dev
 
 Vite explicitly allows `index.dev.hexly.ai`. HTTPS websocket upgrades pass through Caddy for hot-module replacement.
 
+Review the directory at `https://index.dev.hexly.ai/`, with identities at `/logos/frogie` and `/logos/pew`. `/logos` opens the default identity. Vite serves these client paths directly; Workers uses its configured SPA fallback for the same paths. Share links contain the project in the pathname. Archived identities also load directly, for example `/logos/uptime-kuma-skill`.
+
+Each candidate's complete static review remains available at `/artwork/logo-family/<project>/<study>/review.html` in the dev server. Static study HTML includes the presentation references; the React site omits that disclosure. A local review round finishes with local commits only when push and deployment are out of scope.
+
 ## Quality commands
 
 ```sh

@@ -9,13 +9,14 @@ frogie/2026-09-06-01/         First Frogie study
   raw/                       Untouched native model output
   finishing/01/              First extraction and presentation
   finishing/02/              Approved Frogie exports
+  finishing/03/              Local background contrast refinement
   previews/                  Browser captures and review evidence
 pew/2026-09-06-01/            Natural edge-entry zebra candidate
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
 
-Previous originals retain their filenames and checksums. A study stays a candidate until selected. Adopted identities publish a curated copy in `public/logos/family/`; the full workshop and intermediate artwork stay outside Vite's production asset directory.
+Previous originals retain their filenames and checksums. A study stays a candidate until selected. Finished candidates receive a curated local preview in `public/logos/family/<project>/<study>/<pass>/`, with a truthful review status and a separate candidate foreground record. The full workshop and intermediate artwork stay outside Vite's production asset directory. Source adoption and publication follow the current session's authorization.
 
 Generation uses the Azure Foundry endpoint and `api-key` authentication documented in `workflow/agents/skills/azure-gpt-image-cover/SKILL.md`. Credentials are supplied by workflow's direnv environment. No credentials or raw authenticated HTTP headers belong in this directory.
 
@@ -27,8 +28,8 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 
 | Project | Study | Status | Review |
 |---|---|---|---|
-| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Adopted on 2026-09-06 · finishing 02 | [Local review page](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
-| Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Candidate · finishing 02 · source logo unchanged | [Local review page](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
+| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Local contrast pass 03; source retains adopted 02 | [Site path](https://index.dev.hexly.ai/logos/frogie) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
+| Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Local contrast pass 03; source logo unchanged | [Site path](https://index.dev.hexly.ai/logos/pew) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
 
 ## Running a study
 
@@ -54,3 +55,5 @@ bun artwork/logo-family/tools/finish_study.mjs "$study_dir" 01
 Finishing reads only local files. It checks the raw image hash and refuses to replace an existing finishing directory. Each pass preserves its settings, tool snapshot, alpha mask, background, shadows, transparent master, square/rounded icons, previews, and manifest. Review thresholds for each animal's actual colors; pale or white silhouettes need their own matte assessment.
 
 The Vite dev server serves each study's `review.html` through `index.dev.hexly.ai`. Shared `review.css` and `review.mjs` provide comparison modes, themes, size checks, palette copying, references, downloads, and the exact prompt. Study pages are outside the production build.
+
+Every finished study also supplies the same complete comparison at `/logos/<project>`, with working refresh/history/share links. Reference boards and their disclosure remain exclusive to static HTML and Git. The finishing archive delivers all transparent/square/rounded sizes from 2048 to 16 px, a pure-white master, and exact intermediate layers. Background-only passes preserve the transparent and white bytes and record comparisons under `previews/contrast-<pass>/`; frozen earlier passes and browser evidence remain intact.

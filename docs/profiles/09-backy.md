@@ -6,6 +6,7 @@
 - Website: [https://backy.hexly.ai](https://backy.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A dependable home for AI-agent backups. Store, inspect, and restore with confidence.
 - Chinese: 给 AI 智能体的备份服务，集中接收、存储、预览和恢复数据。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Backy identity](../../public/logos/display/backy-160.webp)
+![Backy source identity](../../public/logos/display/backy-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Turtle portrait wearing a holiday hat

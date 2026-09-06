@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Know where your traffic goes. Inspect VPN routes, exit IPs, latency, and proxy rules.
 - Chinese: 弄清网络流量去了哪里，检查 VPN 路由、出口 IP、延迟与分流规则。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Snaky identity](../../public/logos/display/snaky-160.webp)
+![Snaky source identity](../../public/logos/display/snaky-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Green snake portrait in a circular frame

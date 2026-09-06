@@ -6,6 +6,7 @@
 - Website: [https://bogo.hexly.ai](https://bogo.hexly.ai)
 - Website evidence: CLAUDE.md Live-check
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A personal knowledge home for documents, people, and the connections between them.
 - Chinese: 把文档、人物与工作空间放在一起，整理个人知识和它们之间的联系。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Bogo identity](../../public/logos/display/bogo-160.webp)
+![Bogo source identity](../../public/logos/display/bogo-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Buffalo head with colorful geometric accents

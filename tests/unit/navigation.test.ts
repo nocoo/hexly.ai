@@ -1,13 +1,20 @@
 import { describe, expect, it } from "vitest";
+import rawProjects from "../../src/data/projects.json";
 import {
-	navigationSearch,
+	navigationPath,
 	openLogo,
 	parseNavigation,
+	resolveNavigation,
 } from "../../src/model/navigation";
+import type { Project } from "../../src/model/project";
+
+const projects = rawProjects as Project[];
+const parse = (pathname: string, search = "") =>
+	parseNavigation(pathname, search, projects);
 
 describe("shareable directory navigation", () => {
 	it("opens the directory by default and rejects unsupported parameters", () => {
-		expect(parseNavigation("")).toEqual({
+		expect(parse("/")).toEqual({
 			view: "directory",
 			category: "all",
 			query: "",
@@ -15,30 +22,63 @@ describe("shareable directory navigation", () => {
 			project: "frogie",
 		});
 		expect(
-			parseNavigation("?view=unknown&category=wrong&sort=wrong&project=../bad"),
-		).toEqual(parseNavigation(""));
+			parse("/", "?view=logos&category=wrong&sort=wrong&project=../bad"),
+		).toEqual(parse("/"));
+		for (const path of ["/logos/../bad", "/logos/UPPER", "/unknown"])
+			expect(parse(path)).toEqual(parse("/"));
 	});
 	it("round-trips gallery, filters, Unicode search, and sort order", () => {
-		const state = parseNavigation(
-			"?view=logos&project=pew&category=ai&q=智能体&sort=az",
-		);
-		expect(state).toEqual({
-			view: "logos",
-			project: "pew",
-			category: "ai",
-			query: "智能体",
-			sort: "az",
-		});
-		expect(parseNavigation(navigationSearch(state))).toEqual(state);
-		expect(navigationSearch(parseNavigation(""))).toBe("/");
+		for (const state of [
+			parse("/logos/pew", "?category=ai&sort=az"),
+			parse("/", "?q=智能体&category=ai&sort=az"),
+		]) {
+			const url = new URL(navigationPath(state), "https://hexly.ai");
+			expect(parse(url.pathname, url.search)).toEqual(state);
+		}
+		expect(parse("/", "?q=智能体").query).toBe("智能体");
+		expect(navigationPath(parse("/logos/pew/"))).toBe("/logos/pew");
+		expect(navigationPath(parse("/logos"))).toBe("/logos/frogie");
+		expect(navigationPath(parse("/"))).toBe("/");
 	});
 	it("opens a project's logo and clears incompatible directory filters", () => {
-		expect(openLogo(parseNavigation("?q=pew&category=ai"), "backy")).toEqual({
+		expect(
+			openLogo(parse("/", "?q=pew&category=ai"), {
+				id: "backy",
+				archived: false,
+			}),
+		).toEqual({
 			view: "logos",
 			project: "backy",
 			query: "",
 			category: "all",
 			sort: "curated",
 		});
+	});
+	it("opens archived identities from cards and clean direct paths", () => {
+		const archived = { id: "uptime-kuma-skill", archived: true };
+		expect(openLogo(parse("/"), archived)).toMatchObject({
+			project: archived.id,
+			view: "logos",
+			category: "archive",
+		});
+		expect(parse(`/logos/${archived.id}`)).toMatchObject({
+			project: archived.id,
+			category: "archive",
+		});
+		expect(
+			parse(`/logos/${archived.id}`, "?category=extensions").category,
+		).toBe("extensions");
+	});
+	it("keeps the path aligned with selection when filtering and handles empty results", () => {
+		const state = parse("/logos/frogie");
+		expect(
+			resolveNavigation({ ...state, query: "pew" }, projects).project,
+		).toBe("pew");
+		expect(
+			resolveNavigation({ ...state, query: "missing-project" }, projects)
+				.project,
+		).toBe("frogie");
+		expect(parse("/logos/missing-project").project).toBe("frogie");
+		expect(parseNavigation("/logos", "", []).project).toBe("frogie");
 	});
 });

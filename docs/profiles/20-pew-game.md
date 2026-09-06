@@ -6,6 +6,7 @@
 - Website: [https://pew.hexly.ai](https://pew.hexly.ai)
 - Website evidence: nocoo/nocoo README.md Games section
 - Category: games
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A pixel-art prairie shooter with twin-stick action and a high-score leaderboard.
 - Chinese: 像素风格的草原双摇杆射击游戏，闯关、闪避，再挑战排行榜。
 - Profile section: Games
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Pew Game identity](../../public/logos/display/pew-game-160.webp)
+![Pew Game source identity](../../public/logos/display/pew-game-160.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji

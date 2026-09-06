@@ -6,6 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Bring health, places, and spending into one personal picture.
 - Chinese: 把健康指标、位置足迹和消费记录，汇成一幅个人生活图景。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Life.ai identity](../../public/logos/display/life-ai-160.webp)
+![Life.ai source identity](../../public/logos/display/life-ai-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Capybara portrait with an apple

@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Pew study 01 is ready for review. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie and Pew now have local finishing 03 previews with deeper backgrounds and clearer motifs. Their source projects retain the previously adopted Frogie and original Pew. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
 
 ## Reading the references
 
@@ -31,6 +31,8 @@ The [first study](../artwork/logo-family/frogie/2026-09-06-01/brief.md) preserve
 
 The adopted sage tile starts at `#DCE6CA`, a quieter relative of the artwork's yellow-green, distinct from the existing Frogie site primary `#21C45D`. The transparent foreground is the source repository's root `logo.png`; square and rounded masters live in its `assets/brand/`. The previous original retains its original path and hash in this repository. The promoted version, theme colors, sampled art colors, and source revision are recorded in [Frogie's project profile](profiles/01-frogie.md).
 
+Local finishing 03 deepens the base to `#BBCB9E`, with light `#DCE6C6`, shade `#9DAF7D`, and motif `#617B47`. Motif opacity is 0.14, highlight opacity 0.32, and ribbon opacity 0.24. Its transparent master and pure-white derivative are byte-identical to finishing 02. The current comparison is available at [the local Frogie path](https://index.dev.hexly.ai/logos/frogie).
+
 ## Generation and finishing
 
 1. Save the brief, exact prompt, and ordered reference roles before requesting an image. The original defines identity. For the first Frogie study, images 2 and 3 were presentation references. Subsequent studies use the approved Frogie as image 2 for drawing language, followed by the two presentation references.
@@ -47,7 +49,7 @@ The [official image guide](https://developers.openai.com/api/docs/guides/image-g
 
 The [Pew candidate](../artwork/logo-family/pew/2026-09-06-01/notes.md) preserves the liked zebra, wink, ivory/charcoal stripes, and rainbow tongue. Its continuous neck enters from the bottom and right canvas boundaries. The face and ears remain clear of the final rounded corners. This replaces the old circular neck termination with a natural portrait entering the frame.
 
-One native 2048 × 2048 generation and two extraction passes are archived. The current pass preserves every fully opaque source color and all sampled pale anatomy; its only component cleanup removes five disconnected residue pixels. The proposed `#E3DEEA` pearl-lilac tile and sampled animal colors stay separate from Pew's current UI primary. The complete review page passed desktop/mobile checks, all presentation modes, light/dark themes, downloads, and accessibility scans. The production Pew logo remains unchanged until selection.
+One native 2048 × 2048 generation and three finishing passes are archived. Pass 02 preserves every fully opaque source color and all sampled pale anatomy; its only component cleanup removes five disconnected residue pixels. Pass 03 keeps the exact extracted foreground and pure-white bytes while deepening the original proposed `#E3DEEA` pearl-lilac field to `#BFB2CF`. Its light is `#E0D8E9`, shade `#9F8DB5`, and motif `#6D557F`, with the same contrast opacities as Frogie 03. Sampled animal colors and this presentation palette stay separate from Pew's current UI primary. The complete comparison is at [the local Pew path](https://index.dev.hexly.ai/logos/pew). The source and production Pew logo remain unchanged in this local review round.
 
 ## Archive and promotion
 
@@ -55,10 +57,12 @@ Studies live under `artwork/logo-family/<project>/<date>-<sequence>/`; shared st
 
 Numbered finishing directories and sanitized request/response records are frozen generated artifacts, excluded from Biome formatting. `assets:check` verifies every finishing manifest, its source image, and all recorded file hashes. Active tools, mutable recipes, and review pages remain linted. Format a mutable recipe before taking its next snapshot; never rewrite an archived mask, tool snapshot, or settings file to satisfy a formatter.
 
-The workshop is outside `public/` and the production entry graph. Candidates do not automatically become live catalogue assets. After an identity is selected, update its source project, preserved version/provenance, catalogue, derivatives, palettes, and project profile together; follow the GitHub-profile synchronization skill for affected catalogue information.
+The workshop is outside `public/` and the production entry graph. Every completed candidate also receives a curated local catalogue preview. `family.status: "review"` records an unadopted pass, and `family.foreground` supplies its paths, dimensions, and hash. `project.logo` continues to record the actual source-project bytes and revision. Source-project adoption and publication require the session's authorization; a local-only round ends with atomic local commits and review URLs.
 
-Adopted identities have a `family` record in `src/data/projects.json`. Their public review resources live under `public/logos/family/<project>/<study>/`: exact approved square/rounded/white masters, untouched generation, prompt, background, and a checksum manifest. Shared references have one public backup. Original foregrounds remain under versioned names in `public/logos/originals/`; previous names are immutable. `assets:build` adds optimized icon, background, and previous-artwork previews; `assets:check` validates both current and historical originals and every public archive file.
+Refined identities have a `family` record in `src/data/projects.json`. New curated review resources live under `public/logos/family/<project>/<study>/<pass>/`: exact transparent/square/rounded/white masters, untouched generation, prompt, background, and a checksum manifest. The original adopted Frogie root remains preserved. Source originals remain under versioned names in `public/logos/originals/`; previous names are immutable. `assets:build` adds optimized icon, transparent, background, and previous-artwork previews; `assets:check` validates active foregrounds, every historical public manifest, and every finishing pass.
 
-The production gallery follows the complete study layout: large original/current comparison, icon/transparent/white views, composition/drawing/material notes, 128/64/32/16 px specimens, real 24 px sidebar and 16 px browser contexts, copyable art colors, separate site theme values, light/dark foreground checks, downloads, exact prompt, and references. Use actual project descriptions in context previews; a singing mascot does not make Frogie a music product.
+Both the static study HTML and `/logos/<project>` follow the complete review layout: large original/refined comparison, icon/transparent/white views, composition/drawing/material notes, 128/64/32/16 px specimens, real 24 px sidebar and 16 px browser contexts, copyable art colors, separate site theme values, light/dark foreground checks, downloads, and exact prompt. Presentation references and their disclosure appear only in static HTML and Git. Use actual project descriptions in context previews; a singing mascot does not make Frogie a music product.
+
+The delivery also includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px, a native white master, immutable history, palette evidence, a generated profile, and browser evidence for both review surfaces. Validate path refresh, navigation history, share links, and archived-project access. Redrawn cards show Refined / 已重绘 within the existing product categories; All hides archived repositories by default.
 
 The reusable workflow skill is `../workflow/agents/skills/zhengli-project-logo/SKILL.md`. Frogie is the first promoted identity; this does not mark the wider three-project replacement phase complete.

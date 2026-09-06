@@ -6,6 +6,7 @@
 - Website: [https://noheir.hexly.ai](https://noheir.hexly.ai)
 - Website evidence: GitHub repository homepage
 - Category: everyday
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A clear view of your money: income, spending, assets, and the bigger picture.
 - Chinese: 从收入、支出到资产，用一个清晰的视角理解自己的财务。
 - Profile section: Recent Projects
@@ -14,7 +15,7 @@
 
 ## Current logo
 
-![Noheir identity](../../public/logos/display/noheir-160.webp)
+![Noheir source identity](../../public/logos/display/noheir-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Cow portrait
