@@ -49,7 +49,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye | [Untouched raw](firefly/2026-09-06-07/raw/generated.png) |
 | Firefly | [2026-09-06-08](firefly/2026-09-06-08/notes.md) | Rejected: backward-facing eye perspective | [Untouched raw](firefly/2026-09-06-08/raw/generated.png) |
 | Firefly | [2026-09-06-09](firefly/2026-09-06-09/notes.md) | Rejected: fire and insect compete; firefly must be primary | [Untouched raw](firefly/2026-09-06-09/raw/generated.png) |
-| Firefly | [2026-09-06-10](firefly/2026-09-06-10/notes.md) | Raw approved; finishing, source replacement, and publication authorized | [Untouched raw](firefly/2026-09-06-10/raw/generated.png) |
+| Firefly | [2026-09-06-10](firefly/2026-09-06-10/notes.md) | Finishing 02 adopted; 84% placement, safe rounded borders, independent night and glow layers | [Site comparison](https://index.dev.hexly.ai/logos/firefly) · [Static review](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-10/review.html) |
 
 ## Running a study
 
@@ -81,3 +81,5 @@ Finishing reads only local files. It requires approval matching the raw image ha
 The Vite dev server serves each study's `review.html` through `index.dev.hexly.ai`. Shared `review.css` and `review.mjs` provide comparison modes, themes, size checks, palette copying, references, downloads, and the exact prompt. Study pages are outside the production build.
 
 Every finished study also supplies the same complete comparison at `/logos/<project>`, with working refresh/history/share links. Reference boards and their disclosure remain exclusive to static HTML and Git. The finishing archive delivers all transparent/square/rounded sizes from 2048 to 16 px, a pure-white master, and exact intermediate layers. Background-only passes preserve the transparent and white bytes and record comparisons under `previews/contrast-<pass>/`; frozen earlier passes and browser evidence remain intact.
+
+Full-body studies also record `framing.scale` and `framing.minimumClearanceAt2048`. The finisher checks visible pixels against the actual rounded outline, preserves the native unscaled extraction separately, and uses one consistent placement in every master. Optional `emission` entries save their native source masks and placed glow layers; rendered alpha must be nonzero. Firefly 10 finishing 02 is the first adopted example.
