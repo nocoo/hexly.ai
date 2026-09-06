@@ -150,7 +150,7 @@ export function LogoReview({
 					).map(([size, label]) => (
 						<figure key={size}>
 							<div className="size-well">
-								<Logo project={project} size={size} eager />
+								<Logo project={project} size={size} framed={size > 32} eager />
 							</div>
 							<figcaption>
 								<strong>{size} px</strong>

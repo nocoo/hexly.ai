@@ -11,7 +11,7 @@
 - Chinese: 写作、发布，也留住值得记录的想法。由 WordPress 迁移而来的博客平台。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `10793b5b25712b9251bddcdbbb85fc99f1e0f91b`
+- Repository revision inspected: `70a4de51b9fe6f152805298c031ca92165754c40`
 
 ## Current logo
 
@@ -19,7 +19,7 @@
 
 - Type: Original project artwork, copied without modification
 - Subject: Broad-winged faceted firefly with a small campfire
-- [Source](https://github.com/nocoo/firefly/blob/10793b5b25712b9251bddcdbbb85fc99f1e0f91b/logo.png): `logo.png`
+- [Source](https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/firefly-2026-09-06.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2583578 bytes
@@ -47,7 +47,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ![Firefly refined preview](../../public/logos/family/firefly/2026-09-06-10/02/icon-160.webp)
 
-- Status: Adopted in the source project; updated 2026-09-06.
+- Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-10`, finishing `02`
 - Refined subject: Broad-winged faceted firefly with a small campfire
 - Site path: `/logos/firefly`; [local gallery](https://index.dev.hexly.ai/logos/firefly)

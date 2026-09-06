@@ -11,7 +11,7 @@
 - Chinese: AI 智能体的本地工作台，把对话、工具与会话放在一起。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `d8ad4237f4ee6f08895d641ba4fa339d4d34751a`
+- Repository revision inspected: `e965214c3efe99f4c4b459e6716e2014184dc32d`
 
 ## Current logo
 
@@ -19,7 +19,7 @@
 
 - Type: Original project artwork, copied without modification
 - Subject: Full-body green frog with musical notes
-- [Source](https://github.com/nocoo/frogie/blob/d8ad4237f4ee6f08895d641ba4fa339d4d34751a/logo.png): `logo.png`
+- [Source](https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/frogie-2026-09-06.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3588507 bytes
@@ -33,7 +33,7 @@
 | --- | --- | --- |
 | primary | `#21c45d` | packages/web/src/index.css --primary: 142 71% 45% |
 | background | `#eeeff2` | packages/web/src/index.css --background: 220 14% 94% |
-| background | `#dce6ca` | Approved Frogie family presentation, finishing 02: background.base #DCE6CA |
+| background | `#bbcb9e` | Selected Frogie presentation, finishing 03; background.base in archived settings.json |
 | primary | `#86c32c` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1065, 512); palette.json |
 | accent | `#fbf4a8` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1024, 1331); palette.json |
 | accent | `#3b1220` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1085, 717); palette.json |
@@ -47,7 +47,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ![Frogie refined preview](../../public/logos/family/frogie/2026-09-06-01/03/icon-160.webp)
 
-- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-06.
+- Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-01`, finishing `03`
 - Site path: `/logos/frogie`; [local gallery](https://index.dev.hexly.ai/logos/frogie)
 - [Static review HTML](../../artwork/logo-family/frogie/2026-09-06-01/review.html)
@@ -65,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#bbcb9e` | Local Frogie contrast study, finishing 03; background.base in archived settings.json |
+| background | `#bbcb9e` | Selected Frogie presentation, finishing 03; background.base in archived settings.json |
 | primary | `#86c32c` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1065, 512); palette.json |
 | accent | `#fbf4a8` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1024, 1331); palette.json |
 | accent | `#3b1220` | Frogie native generation 2097aa50fe3a, sampled sRGB pixel (1085, 717); palette.json |

@@ -26,13 +26,38 @@ for (const id of projects
 		for (const [selector, size] of [
 			[".size-grid figure:nth-child(1) .logo-tile", 128],
 			[".size-grid figure:nth-child(2) .logo-tile", 64],
-			[".size-grid figure:nth-child(3) .logo-tile", 32],
-			[".size-grid figure:nth-child(4) .logo-tile", 16],
+			[".size-grid figure:nth-child(3) .logo-plain", 32],
+			[".size-grid figure:nth-child(4) .logo-plain", 16],
 			[".preview-workspace .logo-plain", 24],
 			[".browser-tab .logo-plain", 16],
 		] as const) {
 			await expect(page.locator(selector)).toHaveCSS("width", `${size}px`);
 			await expect(page.locator(selector)).toHaveCSS("height", `${size}px`);
+		}
+		for (const mark of await page.locator(".size-section .logo-plain").all()) {
+			await expect(mark).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
+			await expect(mark).toHaveCSS("border-radius", "0px");
+			await expect(mark).toHaveCSS("box-shadow", "none");
+			await expect(mark.locator("img")).toHaveCSS("border-radius", "0px");
+			const transparentPixels = await mark
+				.locator("img")
+				.evaluate(async (node) => {
+					const image = node as HTMLImageElement;
+					await image.decode();
+					const canvas = document.createElement("canvas");
+					canvas.width = 32;
+					canvas.height = 32;
+					const context = canvas.getContext("2d");
+					if (!context) throw new Error("Canvas context unavailable");
+					context.drawImage(image, 0, 0, 32, 32);
+					const pixels = context.getImageData(0, 0, 32, 32).data;
+					let count = 0;
+					for (let offset = 3; offset < pixels.length; offset += 4) {
+						if (pixels[offset] === 0) count += 1;
+					}
+					return count;
+				});
+			expect(transparentPixels).toBeGreaterThan(128);
 		}
 		await expect(page.locator(".previous-artwork img")).toHaveAttribute(
 			"src",

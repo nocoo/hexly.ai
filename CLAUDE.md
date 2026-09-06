@@ -28,6 +28,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - Preserve the current identity baseline. Animal-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
 - Immediately show each new Image 2 result for raw-image confirmation, unless the owner explicitly delegates acceptance for a named batch. Record the exact waiver and agent inspection without claiming owner review of unseen bytes. Require an approved `raw-review.json` for those exact bytes before extraction, compositing, derivatives, or catalogue integration. Every animal needs visible connected facets and one interest point outside its main mass; every project's background needs distinct motif geometry.
 - Every finished study has static review HTML and a complete site comparison. Keep `family.status` and its separate foreground truthful to source adoption; `project.logo` remains source provenance. Presentation reference boards appear only in static HTML and Git. Background-only passes preserve exact transparent/white bytes.
+- Follow [the logo usage SOP](docs/07-logo-usage-sop.md): large README presentations may use backgrounds; sidebar and browser marks use transparent foregrounds without extra masking. Verify actual consumers and distinguish local adoption from publication.
 
 ## Stack / Layout
 

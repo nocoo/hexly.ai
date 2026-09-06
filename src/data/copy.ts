@@ -113,7 +113,8 @@ export const copy = {
 		downloadEmoji: "Download identity",
 		share: "Copy gallery link",
 		sizes: "Small details, big personality.",
-		sizesDescription: "The same identity, at the sizes you actually see.",
+		sizesDescription:
+			"Backgrounds for app tiles; transparent marks for small UI.",
 		appIcon: "App icon",
 		sidebar: "Sidebar",
 		favicon: "Browser tab",
@@ -226,7 +227,7 @@ export const copy = {
 		downloadEmoji: "下载标识",
 		share: "复制图鉴链接",
 		sizes: "小小细节，也有自己的样子。",
-		sizesDescription: "把同一个标识，放进日常会见到的尺寸里。",
+		sizesDescription: "大图保留背景，侧栏与浏览器标签使用透明主体。",
 		appIcon: "应用图标",
 		sidebar: "侧栏",
 		favicon: "浏览器标签页",

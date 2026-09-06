@@ -9,9 +9,9 @@ frogie/2026-09-06-01/         First Frogie study
   raw/                       Untouched native model output
   finishing/01/              First extraction and presentation
   finishing/02/              Approved Frogie exports
-  finishing/03/              Local background contrast refinement
+  finishing/03/              Locally adopted background contrast refinement
   previews/                  Browser captures and review evidence
-pew/2026-09-06-01/            Natural edge-entry zebra candidate
+pew/2026-09-06-01/            Locally adopted edge-entry zebra, finishing 04
 firefly/2026-09-06-01/        Superseded smooth lantern study
 firefly/2026-09-06-02/        Rejected sparse firefly-and-flame composition
 firefly/2026-09-06-03/        Rejected enlarged insect character
@@ -38,8 +38,8 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 
 | Project | Study | Status | Review |
 |---|---|---|---|
-| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Local contrast pass 03; source retains adopted 02 | [Site path](https://index.dev.hexly.ai/logos/frogie) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
-| Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Owner-selected local motif pass 04; source logo unchanged | [Site path](https://index.dev.hexly.ai/logos/pew) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
+| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Locally adopted pass 03; transparent app/browser marks | [Site path](https://index.dev.hexly.ai/logos/frogie) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
+| Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Locally adopted motif pass 04; transparent app/browser marks | [Site path](https://index.dev.hexly.ai/logos/pew) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
 | Firefly | [2026-09-06-01](firefly/2026-09-06-01/notes.md) | Superseded; both finishing passes preserved | [Archived static HTML](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-01/review.html) |
 | Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png) |
 | Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png) |
@@ -53,7 +53,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 
 ## Running a study
 
-The active Bogo exploration is [study 05](bogo/2026-09-07-05/brief.md). Study 03's close portrait direction is retained; study 04 was rejected for showing the full animal. Natural anatomy must remain compatible with a tight head close-up: only a little real neck base or shoulder enters the crop, while the torso and limbs stay outside. The flower sprig is the sole multicolored interest point, with no rainbow nose freckles. A 135 mm animal-head portrait perspective guides the moment; the model chooses the exact angle and crop. This request stops at individual raw confirmation; no new finishing or adoption is authorized yet.
+The active Bogo exploration is [study 05](bogo/2026-09-07-05/brief.md). Study 03's close portrait direction is retained; study 04 was rejected for showing the full animal. Natural anatomy must remain compatible with a tight head close-up: only a little real neck base or shoulder enters the crop, while the torso and limbs stay outside. The flower sprig is the sole multicolored interest point, with no rainbow nose freckles. A 135 mm animal-head portrait perspective guides the moment; the model chooses the exact angle and crop. The owner subsequently approved this exact result and authorized local finishing and adoption; see Current Bogo selection below.
 
 Create a fresh project/date directory and write its `brief.md` and `prompt.txt` first. Supply reference images in the exact priority order described by the prompt. The generator refuses to overwrite any existing request; a retry needs a new study directory.
 
@@ -72,7 +72,7 @@ New requests use the neutral filename `raw/generated.png`; the response records 
 
 Immediately show the untouched returned image and ask for confirmation. Save actual owner feedback in `raw-review.json`; a new generation requires a new decision. Do not make the raw handoff wait for finishing or review pages.
 
-An explicit owner waiver can delegate this checkpoint for a named batch. Archive that instruction before requesting images, inspect every returned result, and record the exact SHA with `decisionSource: "owner-delegated batch acceptance"` and `ownerReviewedExactBytes: false`. The 2026-09-07 Bogo, Neo, Dove, Raven, and Lyre batch initially had this authorization; the owner has since revoked it and paused adoption and publication. The source repositories are restored through local revert commits. Bogo returns to its liked original for a fresh, naturally proportioned shoulder composition and individual raw confirmation. Raven study 02 is the retained direction; study 03 is withdrawn because the owner rejected its left-side crop. The other studies are deferred. See [the feedback and restoration record](2026-09-07-owner-feedback.json). Keep all existing studies; five independent finished pages remain the eventual delivery after approval.
+An explicit owner waiver can delegate this checkpoint for a named batch. Archive that instruction before requesting images, inspect every returned result, and record the exact SHA with `decisionSource: "owner-delegated batch acceptance"` and `ownerReviewedExactBytes: false`. The 2026-09-07 Bogo, Neo, Dove, Raven, and Lyre batch initially had this authorization; the owner has since revoked it and paused adoption and publication. The source repositories are restored through local revert commits. Bogo returned to its liked original for a fresh, naturally proportioned shoulder composition and individual raw confirmation, then received local adoption authorization for study 05. Raven study 02 is the retained direction; study 03 is withdrawn because the owner rejected its left-side crop. The other studies are deferred. See [the feedback and restoration record](2026-09-07-owner-feedback.json). Keep all existing studies; five independent finished pages remain the eventual delivery after approval.
 
 After the owner approves those exact bytes, create `presentation.json` with its project slug, evidence-backed/proposed colors, project-specific `background.pattern` geometry, matte settings, shadow settings, and export sizes. Each pattern has a name and SVG path layers in 1024-unit coordinates; a layer uses a `motif`, `highlight`, or `ribbon` tone and may have a `strokeWidth`. Omit `strokeWidth` for a filled shape. Each project supplies its own geometry, not a recolored shared stencil. Run a new numbered finishing pass:
 
@@ -93,3 +93,9 @@ Full-body studies also record `framing.scale` and `framing.minimumClearanceAt204
 The owner approved `bogo/2026-09-07-05` and resumed complete finishing and source adoption for Bogo only. Finishing `04` uses the approved head close-up at 80%, a plain muzzle, one rainbow flower sprig, and the mineral horn-arch field. The original neck meets the bottom canvas; small separately archived facets complete the native clipped ear/horn tips and the lower-right shoulder. All opaque placed pixels are checked unchanged. No new image request was needed for finishing.
 
 The nearest protected feature sits 133.98 px inside the 2048-pixel rounded outline. Earlier diagnostic passes, contour layers, masks, settings, source hashes, and sampled palette remain in the study. [Bogo's own review page](https://index.dev.hexly.ai/artwork/logo-family/bogo/2026-09-07-05/review.html) and [the catalogue path](https://index.dev.hexly.ai/logos/bogo) include the complete before/after and size delivery. Bogo's source checkout is updated locally; the other four projects and publication remain paused.
+
+## Application usage
+
+Frogie 03, Pew 04, Firefly study 10 pass 02, and Bogo study 05 pass 04 are adopted in the local source repositories. README headers use their selected rounded presentations. App marks and favicons use the transparent foreground without another tile or corner mask. The four individual static pages and Vite paths show these same roles. Publication remains paused.
+
+Follow [the usage wiki and adoption SOP](../../docs/07-logo-usage-sop.md) for every later project. The [2026-09-07 audit](audits/2026-09-07-usage/) preserves the previous source state, exact-master comparisons, small-image alpha checks, and browser evidence.

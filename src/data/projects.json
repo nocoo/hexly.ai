@@ -18,7 +18,7 @@
 			"kind": "original",
 			"original": "/logos/originals/frogie-2026-09-06.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/frogie/blob/d8ad4237f4ee6f08895d641ba4fa339d4d34751a/logo.png",
+			"sourceUrl": "https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -45,7 +45,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Local-first web shell for an agent engine — chat, MCP, sessions on Bun + React",
-			"repositoryRevision": "d8ad4237f4ee6f08895d641ba4fa339d4d34751a"
+			"repositoryRevision": "e965214c3efe99f4c4b459e6716e2014184dc32d"
 		},
 		"colors": {
 			"primary": "#21c45d",
@@ -63,13 +63,13 @@
 					"source": "packages/web/src/index.css --background: 220 14% 94%"
 				},
 				{
-					"color": "#dce6ca",
+					"color": "#bbcb9e",
 					"role": "background",
 					"label": {
 						"en": "Sage field",
 						"zh": "鼠尾草底色"
 					},
-					"source": "Approved Frogie family presentation, finishing 02: background.base #DCE6CA"
+					"source": "Selected Frogie presentation, finishing 03; background.base in archived settings.json"
 				},
 				{
 					"color": "#86c32c",
@@ -183,7 +183,7 @@
 						"en": "Sage field",
 						"zh": "鼠尾草底色"
 					},
-					"source": "Local Frogie contrast study, finishing 03; background.base in archived settings.json"
+					"source": "Selected Frogie presentation, finishing 03; background.base in archived settings.json"
 				},
 				{
 					"color": "#86c32c",
@@ -244,8 +244,8 @@
 				"en": "At 16 px the green silhouette and open mouth lead; individual facets and musical notes merge into small color accents.",
 				"zh": "缩到 16 px 时，绿色轮廓和张开的嘴巴承担辨识度，细碎的切面与音符会合并成小小的色彩点缀。"
 			},
-			"status": "review",
-			"updated": "2026-09-06",
+			"status": "adopted",
+			"updated": "2026-09-07",
 			"foreground": {
 				"original": "/logos/family/frogie/2026-09-06-01/03/transparent.png",
 				"display": "/logos/family/frogie/2026-09-06-01/03/transparent-1024.webp",
@@ -273,14 +273,14 @@
 		"reference": true,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/pew.png",
+			"original": "/logos/originals/pew-2026-09-07.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png",
+			"sourceUrl": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
-			"bytes": 3835152,
-			"sha256": "2b94fa9b0b0521008a08caa3bae34552f68785fd591c8dc578ceee943addc35e",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
 			"thumbnail": "/logos/display/pew-160.webp",
 			"display": "/logos/display/pew-1024.webp"
 		},
@@ -302,7 +302,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Contribution graph for AI-native developers — track token usage across tools",
-			"repositoryRevision": "44351912506d0584bf59fdcefaec9b4e2be7eeef"
+			"repositoryRevision": "5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b"
 		},
 		"colors": {
 			"primary": "#851ded",
@@ -320,19 +320,67 @@
 					"source": "packages/web/src/app/globals.css --background: 260 20% 95%"
 				},
 				{
-					"color": "#b4b4b8",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#bfb2cf",
+					"role": "background",
+					"label": {
+						"en": "Lilac field",
+						"zh": "丁香紫底色"
+					},
+					"source": "Selected Pew presentation, finishing 04; background.base in archived settings.json"
 				},
 				{
-					"color": "#252335",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#fcf8f0",
+					"role": "primary",
+					"label": {
+						"en": "Ivory",
+						"zh": "象牙白"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (1510, 1740); palette.json"
 				},
 				{
-					"color": "#ffffff",
+					"color": "#232637",
 					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"label": {
+						"en": "Charcoal",
+						"zh": "炭黑"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (1140, 415); palette.json"
+				},
+				{
+					"color": "#827f8e",
+					"role": "accent",
+					"label": {
+						"en": "Quiet gray",
+						"zh": "柔灰"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (770, 334); palette.json"
+				},
+				{
+					"color": "#fb9383",
+					"role": "accent",
+					"label": {
+						"en": "Coral",
+						"zh": "珊瑚橘"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (593, 1620); palette.json"
+				},
+				{
+					"color": "#73dce7",
+					"role": "accent",
+					"label": {
+						"en": "Cyan",
+						"zh": "青蓝"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (589, 1759); palette.json"
+				},
+				{
+					"color": "#b97ce6",
+					"role": "accent",
+					"label": {
+						"en": "Violet",
+						"zh": "紫罗兰"
+					},
+					"source": "Pew native generation efa6aff9f478, sampled sRGB pixel (631, 1806); palette.json"
 				}
 			]
 		},
@@ -390,7 +438,7 @@
 						"en": "Lilac field",
 						"zh": "丁香紫底色"
 					},
-					"source": "Local Pew stripe-motif study, finishing 04; background.base and unique background.pattern in archived settings.json"
+					"source": "Selected Pew presentation, finishing 04; background.base in archived settings.json"
 				},
 				{
 					"color": "#fcf8f0",
@@ -451,8 +499,8 @@
 				"en": "At 16 px the striped silhouette leads; the wink and individual facets merge, while the rainbow tongue becomes a small color accent.",
 				"zh": "缩到 16 px 时，黑白条纹轮廓承担辨识度；眨眼与细碎切面会合并，彩虹舌头成为一小点彩色装饰。"
 			},
-			"status": "review",
-			"updated": "2026-09-06",
+			"status": "adopted",
+			"updated": "2026-09-07",
 			"finishing": "04",
 			"root": "/logos/family/pew/2026-09-06-01/04",
 			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pew/2026-09-06-01",
@@ -484,7 +532,7 @@
 			"kind": "original",
 			"original": "/logos/originals/firefly-2026-09-06.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/firefly/blob/10793b5b25712b9251bddcdbbb85fc99f1e0f91b/logo.png",
+			"sourceUrl": "https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -511,7 +559,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Modern blog platform — Next.js 16 + Cloudflare D1 + R2, migrated from WordPress",
-			"repositoryRevision": "10793b5b25712b9251bddcdbbb85fc99f1e0f91b"
+			"repositoryRevision": "70a4de51b9fe6f152805298c031ca92165754c40"
 		},
 		"colors": {
 			"primary": "#3c83f6",
@@ -597,7 +645,7 @@
 		"family": {
 			"id": "2026-09-06-10",
 			"status": "adopted",
-			"updated": "2026-09-06",
+			"updated": "2026-09-07",
 			"finishing": "02",
 			"root": "/logos/family/firefly/2026-09-06-10/02",
 			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/firefly/2026-09-06-10",
@@ -745,7 +793,7 @@
 			"kind": "original",
 			"original": "/logos/originals/bogo-2026-09-07.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/bogo/blob/59e6a1656b3b5bfe99a6a54cc53da7458017b082/logo.png",
+			"sourceUrl": "https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -772,7 +820,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Personal knowledge base for documents, people, and workspaces — React + Hono + Cloudflare D1",
-			"repositoryRevision": "59e6a1656b3b5bfe99a6a54cc53da7458017b082"
+			"repositoryRevision": "77e211a294a885fff2830d0aba2e48a10299dff1"
 		},
 		"colors": {
 			"primary": "#0051bd",

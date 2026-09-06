@@ -21,11 +21,13 @@ export function Logo({
 	} as CSSProperties;
 	const pixels = size <= 16 ? 32 : size <= 32 ? 64 : size <= 80 ? 160 : 1024;
 	const src = project.family
-		? `${project.family.root}/icon-${pixels}.webp`
+		? framed
+			? `${project.family.root}/icon-${pixels}.webp`
+			: project.family.foreground.display
 		: `/logos/display/${project.id}-${pixels}.webp`;
 	return (
 		<span
-			className={`${framed ? "logo-tile" : "logo-plain"} ${project.family ? "logo-family" : ""} ${className}`}
+			className={`${framed ? "logo-tile" : "logo-plain"} ${project.family && framed ? "logo-family" : ""} ${className}`}
 			style={style}
 		>
 			<img
