@@ -47,7 +47,7 @@ bun run preview:worker
 bun run deploy
 ```
 
-The local preview uses port `37048`. Deployment requires the account's normal Cloudflare credentials. The requested first-phase handoff is the local browser review; production publishing is a separate action from preparing and validating this configuration.
+The local preview uses port `37048`, inspector port `38048`, and `.wrangler/preview` for runtime state. Deployment commands explicitly select the top-level production configuration with `--env ""`; tests use `--env test`. Deployment requires the account's normal Cloudflare credentials. The requested first-phase handoff is the local browser review; production publishing is a separate action from preparing and validating this configuration.
 
 ## Documentation references
 
