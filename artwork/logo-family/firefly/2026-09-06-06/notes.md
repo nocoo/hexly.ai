@@ -12,7 +12,7 @@ The tall flame is still quite angular and somewhat crystalline. Its tip and the 
 
 ## Checkpoint and evidence
 
-The exact output was displayed immediately and opened in Chrome at [the local raw URL](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-06/raw/generated.png). The owner was asked to confirm this exact image before post-processing. The local URL serves byte-identical PNG content. Raw review remains pending in [raw-review.json](raw-review.json).
+The exact output was displayed immediately and opened in Chrome at [the local raw URL](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-06/raw/generated.png). The owner was asked to confirm this exact image before post-processing. The local URL serves byte-identical PNG content. The owner subsequently described this direction as an improvement and requested a clean white-background source, with the night setting and emitted glow handled separately. Study 07 uses these exact bytes as its edit reference. The integrated image has not been approved for finishing or adoption; its review record preserves the directional feedback in [raw-review.json](raw-review.json).
 
 - Request ID: `17126984-6b28-4874-afff-6f4120949d6d`.
 - Raw SHA-256: `0c3ac8c03e04ec6625f7a9c0c950e2da158457279fd9c719936dd3bec641c406`.
