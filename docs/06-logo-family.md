@@ -77,7 +77,7 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 08](../artwork/logo-family/firefly/2026-09-06-08/notes.md) returned one native 2048 × 2048 source with two visible dark faceted eyes. The owner rejected its perspective because the eye placement made the head appear to face backward. The requested correction changes the camera and depth relationship, beyond simply adding another eye. The exact output remains archived without finishing.
 
-[Study 09](../artwork/logo-family/firefly/2026-09-06-09/brief.md) places a tactile three-dimensional campfire and short split logs in the lower-left foreground, with one fragmented firefly approaching from the upper-right background. Minimal overlap establishes depth while leaving the insect mostly visible. The fire uses organic curved volume; connected facets belong to the insect. The source remains on white without external bloom, preserving the owner's separate background/light workflow and the immediate raw checkpoint.
+[Study 09](../artwork/logo-family/firefly/2026-09-06-09/notes.md) returned one native 2048 × 2048 source with a curved three-dimensional campfire and split logs in the lower-left foreground, and a fragmented firefly facing it from the upper-right. The near eye is clear; the far eye is a narrow sliver. The insect remains prominent, its abdomen slopes down-right, and the two masses have very little overlap. The source has a near-white matte with a soft log contact shadow and no obvious external flame bloom. The untouched image was displayed and opened in Chrome immediately; composition and eye perspective await owner confirmation before extraction, separate night/glow layers, or catalogue integration.
 
 ## Archive and promotion
 
