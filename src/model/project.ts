@@ -15,6 +15,31 @@ export interface PaletteColor {
 	color: string;
 	role: "primary" | "background" | "accent";
 	source: string;
+	label?: Record<Locale, string>;
+}
+
+export interface LogoFamily {
+	id: string;
+	adopted: string;
+	finishing: string;
+	root: string;
+	archive: string;
+	model: string;
+	previous: {
+		original: string;
+		sourceUrl: string;
+		width: number;
+		height: number;
+		sha256: string;
+	};
+	direction: {
+		aspect: "composition" | "drawing" | "presentation";
+		title: Record<Locale, string>;
+		description: Record<Locale, string>;
+	}[];
+	palette: PaletteColor[];
+	sizeNote: Record<Locale, string>;
+	references: string[];
 }
 
 export interface Project {
@@ -42,6 +67,7 @@ export interface Project {
 		bytes: number;
 		sha256: string;
 	};
+	family?: LogoFamily;
 	theme: Partial<
 		Record<"primary" | "background" | "ink", { value: string; source: string }>
 	>;

@@ -126,3 +126,31 @@ test("exposes the root domain to crawlers and supplies a favicon", async ({
 	expect(favicon.status()).toBe(200);
 	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");
 });
+
+test("serves the complete adopted logo archive and preserved predecessor", async ({
+	request,
+}) => {
+	const family = projects.find((project) => project.id === "frogie")?.family;
+	if (!family) throw new Error("Frogie must have its adopted family archive");
+	const manifestResponse = await request.get(`${family.root}/manifest.json`);
+	expect(manifestResponse.status()).toBe(200);
+	const manifest: { files: { path: string; bytes: number; sha256: string }[] } =
+		await manifestResponse.json();
+	for (const file of manifest.files) {
+		const response = await request.get(file.path);
+		expect(response.status(), file.path).toBe(200);
+		const data = await response.body();
+		expect(data.length, file.path).toBe(file.bytes);
+		expect(createHash("sha256").update(data).digest("hex"), file.path).toBe(
+			file.sha256,
+		);
+	}
+	const original = await (await request.get(family.previous.original)).body();
+	expect(createHash("sha256").update(original).digest("hex")).toBe(
+		family.previous.sha256,
+	);
+	const icon = await sharp(
+		await (await request.get(`${family.root}/icon.png`)).body(),
+	).metadata();
+	expect([icon.width, icon.height]).toEqual([2048, 2048]);
+});

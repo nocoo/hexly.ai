@@ -1,43 +1,68 @@
 import { expect, test } from "@playwright/test";
 import projects from "../../src/data/projects.json" with { type: "json" };
 
-test("inspects an original at artwork, app, sidebar, and favicon sizes", async ({
+test("compares the adopted identity and its original at artwork and application sizes", async ({
 	page,
 }) => {
 	await page.goto("/?view=logos&project=frogie");
 	await expect(page.locator("#identity-title")).toContainText("Frogie");
 	await expect(page.locator(".artwork-image")).toHaveAttribute(
 		"src",
-		"/logos/display/frogie-1024.webp",
+		"/logos/family/frogie/2026-09-06-01/icon-1024.webp",
 	);
 	await page
 		.locator(".artwork-image")
 		.evaluate((node) => (node as HTMLImageElement).decode());
-	await expect(page.locator(".asset-label")).toHaveText("Family reference");
+	await expect(page.locator(".asset-label")).toHaveText(
+		"Adopted family identity",
+	);
 	for (const [selector, size] of [
-		[".app-preview .logo-tile", 80],
+		[".size-grid figure:nth-child(1) .logo-tile", 128],
+		[".size-grid figure:nth-child(2) .logo-tile", 64],
+		[".size-grid figure:nth-child(3) .logo-tile", 32],
+		[".size-grid figure:nth-child(4) .logo-tile", 16],
 		[".preview-workspace .logo-plain", 24],
 		[".browser-tab .logo-plain", 16],
 	] as const) {
 		await expect(page.locator(selector)).toHaveCSS("width", `${size}px`);
 		await expect(page.locator(selector)).toHaveCSS("height", `${size}px`);
 	}
-	for (const [name, className] of [
-		["Light", "white"],
-		["Dark", "black"],
+	await expect(page.locator(".previous-artwork img")).toHaveAttribute(
+		"src",
+		"/logos/family/frogie/2026-09-06-01/previous-1024.webp",
+	);
+	for (const [name, value] of [
+		["White", "white"],
 		["Transparent", "transparent"],
-		["Paper", "paper"],
+		["Icon", "icon"],
 	]) {
-		const button = page.getByRole("button", {
-			name: `Preview background: ${name}`,
-			exact: true,
-		});
+		const button = page.getByRole("button", { name, exact: true });
 		await button.click();
 		await expect(button).toHaveAttribute("aria-pressed", "true");
-		await expect(page.locator(".artwork-stage")).toHaveClass(
-			`artwork-stage surface-${className}`,
+		await expect(page.locator(".logo-review")).toHaveAttribute(
+			"data-presentation",
+			value ?? "",
+		);
+		await expect(page.locator(".artwork-image")).toHaveAttribute(
+			"src",
+			value === "icon"
+				? "/logos/family/frogie/2026-09-06-01/icon-1024.webp"
+				: "/logos/display/frogie-1024.webp",
 		);
 	}
+	await expect(page.locator(".sidebar-sample")).toContainText("AI & agents");
+	await expect(page.locator(".alpha-grid img")).toHaveCount(2);
+	await page
+		.getByText("Read the exact generation prompt", { exact: true })
+		.click();
+	await expect(page.locator(".generation-prompt")).toContainText("Frogie");
+	await page
+		.getByText("View the presentation references", { exact: true })
+		.click();
+	await expect(page.locator(".reference-grid img")).toHaveCount(2);
+	await expect(
+		page.getByRole("link", { name: "Untouched generation" }),
+	).toHaveAttribute("href", "/logos/family/frogie/2026-09-06-01/raw.png");
 	await page.getByRole("button", { name: "Next identity" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Pew");
 	await page.getByRole("button", { name: "Previous identity" }).click();
@@ -45,7 +70,7 @@ test("inspects an original at artwork, app, sidebar, and favicon sizes", async (
 	const downloadEvent = page.waitForEvent("download");
 	await page.getByRole("link", { name: "Download original" }).click();
 	const download = await downloadEvent;
-	expect(download.suggestedFilename()).toBe("frogie.png");
+	expect(download.suggestedFilename()).toBe("frogie-2026-09-06.png");
 	expect(await download.failure()).toBeNull();
 	await expect(
 		page.getByRole("link", { name: "View asset source" }),

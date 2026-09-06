@@ -16,8 +16,27 @@ const index = [
 for (const [position, project] of projects.entries()) {
 	const name = `${String(position + 1).padStart(2, "0")}-${project.id}.md`;
 	index.push(
-		`| [${project.emoji} ${project.title}](${name}) | ${project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
+		`| [${project.emoji} ${project.title}](${name}) | ${project.family ? "Adopted family" : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);
+	const family = project.family;
+	const familySection = family
+		? `## Adopted animal family
+
+- Adopted: ${family.adopted}; study \`${family.id}\`, finishing \`${family.finishing}\`
+- [Full process archive](${family.archive})
+- [Square icon](../../public${family.root}/icon.png), [rounded icon](../../public${family.root}/rounded.png), [white version](../../public${family.root}/white.png)
+- [Untouched generation](../../public${family.root}/raw.png), [exact prompt](../../public${family.root}/prompt.txt), [public asset checksums](../../public${family.root}/manifest.json)
+- [Previous original](../../public${family.previous.original}), copied from [its immutable source](${family.previous.sourceUrl})
+- Previous SHA-256: \`${family.previous.sha256}\`
+- Generation: ${family.model}, native ${project.logo.width} × ${project.logo.height}; transparent extraction and presentation are separate finishing steps.
+- Application previews use the approved square icon without extra padding, backgrounds, or circular masks. Artwork previews retain the transparent foreground.
+
+${family.direction.map((item) => `### ${item.title.en}\n\n${item.description.en}\n\n${item.description.zh}`).join("\n\n")}
+
+Small-size observation: ${family.sizeNote.en}
+
+`
+		: "";
 	const palette = project.colors.palette
 		.map((color) => `| ${color.role} | \`${color.color}\` | ${color.source} |`)
 		.join("\n");
@@ -37,7 +56,7 @@ for (const [position, project] of projects.entries()) {
 
 ## Current logo
 
-![${project.title} identity](../../public${project.logo.thumbnail})
+![${project.title} identity](../../public${family ? `${family.root}/icon-160.webp` : project.logo.thumbnail})
 
 - Type: ${project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
@@ -57,11 +76,11 @@ ${palette}
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Future family notes
+${familySection}## ${family ? "Further refinements" : "Future family notes"}
 
 ${project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. No new logo is generated in phase one.
+Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this approved composition and its archived predecessors." : " No new logo is generated in phase one."}
 `;
 	await writeFile(`docs/profiles/${name}`, content);
 }

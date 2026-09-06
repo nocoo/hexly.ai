@@ -36,6 +36,6 @@ Vite builds the client. Cloudflare Workers Static Assets serves the build withou
 
 Every completed logical change is committed on `main` with a Conventional Commit message.
 
-## Deferred phase
+## Animal family
 
-The later logo cleanup uses `gpt-image-2` to create a coherent animal family. Phase one supplies its evidence and review surface; it does not replace existing project identities.
+The logo cleanup uses `gpt-image-2` to create a coherent animal family. Frogie is the first adopted identity; its previous logo stays archived. The production gallery uses the study's full-width comparison, presentation modes, art-direction notes, actual-size specimens, context previews, palettes, light/dark foregrounds, and downloadable archive. A horizontal project selector preserves search and shareable navigation while giving the artwork room. Other projects retain their current identities until their own candidates are approved. See [the family guide](06-logo-family.md).

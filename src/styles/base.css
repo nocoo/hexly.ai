@@ -439,6 +439,21 @@ a {
 [data-theme="dark"] .logo-tile::after {
 	border-color: #f5ffe211;
 }
+.logo-family,
+[data-theme="dark"] .logo-family {
+	border: 0;
+	border-radius: 23%;
+	background: transparent;
+}
+.logo-family img {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	filter: none;
+}
+.logo-family::after {
+	content: none;
+}
 .search-field {
 	display: flex;
 	align-items: center;

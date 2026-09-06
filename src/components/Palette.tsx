@@ -1,15 +1,17 @@
 import { copy } from "../data/copy";
-import type { Locale, Project } from "../model/project";
+import type { Locale, PaletteColor, Project } from "../model/project";
 
 export function Palette({
 	project,
 	locale,
 	compact = false,
+	colors = project.colors.palette,
 	onCopy,
 }: {
 	project: Project;
 	locale: Locale;
 	compact?: boolean;
+	colors?: PaletteColor[];
 	onCopy?: (value: string) => void;
 }) {
 	const t = copy[locale];
@@ -18,9 +20,9 @@ export function Palette({
 			<span
 				className="palette-mini"
 				role="img"
-				aria-label={`${t.palette}: ${project.colors.palette.map((swatch) => swatch.color).join(", ")}`}
+				aria-label={`${t.palette}: ${colors.map((swatch) => swatch.color).join(", ")}`}
 			>
-				{project.colors.palette.map((swatch) => (
+				{colors.map((swatch) => (
 					<span
 						key={`${swatch.role}-${swatch.color}`}
 						className={swatch.color === "transparent" ? "checkerboard" : ""}
@@ -32,7 +34,7 @@ export function Palette({
 		);
 	return (
 		<div className="palette-swatches">
-			{project.colors.palette.map((swatch) => (
+			{colors.map((swatch) => (
 				<button
 					type="button"
 					key={`${swatch.role}-${swatch.color}`}
@@ -48,7 +50,9 @@ export function Palette({
 					<span className="swatch-value">
 						{swatch.color === "transparent" ? t.transparent : swatch.color}
 					</span>
-					<span className="swatch-role">{t[swatch.role]}</span>
+					<span className="swatch-role">
+						{swatch.label?.[locale] ?? t[swatch.role]}
+					</span>
 				</button>
 			))}
 		</div>
