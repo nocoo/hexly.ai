@@ -13,7 +13,8 @@ frogie/2026-09-06-01/         First Frogie study
   previews/                  Browser captures and review evidence
 pew/2026-09-06-01/            Natural edge-entry zebra candidate
 firefly/2026-09-06-01/        Superseded smooth lantern study
-firefly/2026-09-06-02/        Faceted firefly and separate flame
+firefly/2026-09-06-02/        Rejected sparse firefly-and-flame composition
+firefly/2026-09-06-03/        Compact firefly with a close secondary spark
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
@@ -33,7 +34,8 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Local contrast pass 03; source retains adopted 02 | [Site path](https://index.dev.hexly.ai/logos/frogie) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
 | Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Owner-selected local motif pass 04; source logo unchanged | [Site path](https://index.dev.hexly.ai/logos/pew) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
 | Firefly | [2026-09-06-01](firefly/2026-09-06-01/notes.md) | Superseded; both finishing passes preserved | [Archived static HTML](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-01/review.html) |
-| Firefly | [2026-09-06-02](firefly/2026-09-06-02/brief.md) | New direction; raw-image checkpoint before finishing | [Brief](firefly/2026-09-06-02/brief.md) |
+| Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png) |
+| Firefly | [2026-09-06-03](firefly/2026-09-06-03/brief.md) | Compact redesign prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-03/brief.md) |
 
 ## Running a study
 
