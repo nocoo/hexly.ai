@@ -57,6 +57,7 @@ test("reloads gallery links and serves the external preference bootstrap", async
 		"/logos",
 		"/logos/frogie",
 		"/logos/pew",
+		"/logos/firefly",
 		"/logos/uptime-kuma-skill",
 	]) {
 		const response = await request.get(path);
@@ -135,7 +136,9 @@ test("exposes the root domain to crawlers and supplies a favicon", async ({
 	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");
 });
 
-for (const id of ["frogie", "pew"]) {
+for (const id of projects
+	.filter((project) => project.family)
+	.map((project) => project.id)) {
 	test(`serves the complete ${id} refinement and preserved predecessor`, async ({
 		request,
 	}) => {

@@ -100,7 +100,7 @@ export function LogoReview({
 									src={currentImage}
 									width={1024}
 									height={1024}
-									alt={`${project.title} — ${project.subject}`}
+									alt={`${project.title} — ${family?.foreground.subject?.[locale] ?? project.subject}`}
 									fetchPriority="high"
 								/>
 							</a>

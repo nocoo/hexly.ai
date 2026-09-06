@@ -26,7 +26,7 @@ for (const [position, project] of projects.entries()) {
 
 - Status: ${family.status === "adopted" ? "Adopted in the source project" : "Local review; this finishing pass has not been adopted in the source project"}; updated ${family.updated}.
 - Study \`${family.id}\`, finishing \`${family.finishing}\`
-- Site path: \`/logos/${project.id}\`; [local gallery](https://index.dev.hexly.ai/logos/${project.id})
+${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en}\n` : ""}- Site path: \`/logos/${project.id}\`; [local gallery](https://index.dev.hexly.ai/logos/${project.id})
 - [Static review HTML](../../artwork/logo-family/${project.id}/${family.id}/review.html)
 - [Full process archive](${family.archive})
 - [Transparent foreground](../../public${family.foreground.original}); SHA-256: \`${family.foreground.sha256}\`

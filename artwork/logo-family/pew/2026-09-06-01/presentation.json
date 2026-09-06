@@ -8,10 +8,47 @@
 		"motif": "#6d557f",
 		"grainAmplitude": 1,
 		"grainSeed": 609062,
-		"status": "Local contrast study, finishing 03; source-project artwork and UI tokens unchanged.",
+		"status": "Local stripe-motif study, finishing 04; exact foreground and existing UI tokens retained.",
 		"motifOpacity": 0.14,
 		"highlightOpacity": 0.32,
-		"ribbonOpacity": 0.24
+		"ribbonOpacity": 0.24,
+		"pattern": {
+			"name": "Zebra rhythm",
+			"description": "Three tapered sweeping ribs fan across the empty upper-left field. Unequal spacing and narrow light edges echo zebra markings as shallow relief.",
+			"layers": [
+				{
+					"d": "M-76 365C63 283 96 165 137-64H207C185 179 141 318-49 462Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-89 594C154 484 254 208 285-61H349C323 241 223 503-53 673Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-73 812C215 685 385 336 410-49H455C473 312 319 692-11 879Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-63 471C141 321 183 180 206-60",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-65 681C224 506 323 245 352-60",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-31 891C320 699 473 315 458-49",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-88 1007C157 919 293 792 392 610C325 821 184 988 2 1090Z",
+					"tone": "ribbon"
+				}
+			]
+		}
 	},
 	"matte": {
 		"minimumChannel": 245,

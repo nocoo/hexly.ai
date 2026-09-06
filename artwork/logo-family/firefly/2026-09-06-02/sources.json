@@ -1,0 +1,44 @@
+{
+	"project": "firefly",
+	"sourceRepository": "https://github.com/nocoo/firefly",
+	"sourceRevision": "8093578e9960f36cd112b7c04a841e6d5e345aed",
+	"sourcePath": "logo.png",
+	"sourceSha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269",
+	"websiteColors": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
+		"status": "Existing Firefly UI tokens; unchanged"
+	},
+	"status": "prepared",
+	"supersedes": "firefly/2026-09-06-01",
+	"intent": "A visibly faceted complete firefly circles one separate little flame, with a project-specific light-orbit background planned for after raw approval.",
+	"rawCheckpoint": "Mandatory: show untouched output immediately and await confirmation before finishing.",
+	"promptSha256": "960d8e5b3f8a3846753f3c9b0c8254a81643a4adbab1a4bca35760a40a2b9607",
+	"references": [
+		{
+			"index": 1,
+			"role": "Adopted Frogie; primary reference for connected flat facets and an external interest point",
+			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e"
+		},
+		{
+			"index": 2,
+			"role": "Retained Pew foreground; secondary reference for faceted anatomy and restrained rainbow accents, not source adoption",
+			"path": "artwork/logo-family/pew/2026-09-06-01/finishing/03/exports/pew-icon-2048.png",
+			"sha256": "48237907168291cf3b44993ebc18064cf823ea4822874d05b2ec80f2d6e25967"
+		},
+		{
+			"index": 3,
+			"role": "Presentation reference: offset composition and matte material only",
+			"path": "artwork/logo-family/references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff"
+		},
+		{
+			"index": 4,
+			"role": "Presentation reference: close-up material and soft separation only",
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018"
+		}
+	]
+}

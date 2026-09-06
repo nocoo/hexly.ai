@@ -1,0 +1,351 @@
+{
+	"createdAt": "2026-09-06T10:31:25.823Z",
+	"pass": "04",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "faf6703b49d5189c00710f3dfc4e553cfd64959d9f9945a9b6b94cf58720e387",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated-white.png",
+		"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+	"settings": {
+		"project": "pew",
+		"original": "../../../../public/logos/originals/pew.png",
+		"background": {
+			"base": "#bfb2cf",
+			"light": "#e0d8e9",
+			"shade": "#9f8db5",
+			"motif": "#6d557f",
+			"grainAmplitude": 1,
+			"grainSeed": 609062,
+			"status": "Local stripe-motif study, finishing 04; exact foreground and existing UI tokens retained.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.24,
+			"pattern": {
+				"name": "Zebra rhythm",
+				"description": "Three tapered sweeping ribs fan across the empty upper-left field. Unequal spacing and narrow light edges echo zebra markings as shallow relief.",
+				"layers": [
+					{
+						"d": "M-76 365C63 283 96 165 137-64H207C185 179 141 318-49 462Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-89 594C154 484 254 208 285-61H349C323 241 223 503-53 673Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-73 812C215 685 385 336 410-49H455C473 312 319 692-11 879Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-63 471C141 321 183 180 206-60",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-65 681C224 506 323 245 352-60",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-31 891C320 699 473 315 458-49",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-88 1007C157 919 293 792 392 610C325 821 184 988 2 1090Z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 32,
+			"componentNote": "Remove sub-32-pixel disconnected threshold residue; this zebra and its tongue form one connected animal. Do not apply this cleanup to detached identity decorations without review."
+		},
+		"shadows": [
+			{
+				"color": [
+					58,
+					43,
+					77
+				],
+				"opacity": 0.12,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					43,
+					34,
+					57
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "The native neck continues beyond the frame; no finishing crop or circular bust mask is applied. Eyes, ears, muzzle, and tongue remain inside the rounded-square safe area."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2068108,
+		"foregroundPixels": 2126196,
+		"softEdgePixels": 9116,
+		"removedComponents": 2,
+		"removedComponentPixels": 5,
+		"bounds": {
+			"left": 436,
+			"top": 88,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2407,
+			"sha256": "96bba3743a7ddf03a5a5764f7ec05c5834e7e03d7e4e3d464bcfbc05c452f3c3"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 437,
+			"sha256": "19d5bc9d03f8c96a62215533f240b37dae9f10109893de25cb7801ecf1bcfe04"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 13182,
+			"sha256": "faf6703b49d5189c00710f3dfc4e553cfd64959d9f9945a9b6b94cf58720e387"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61328,
+			"sha256": "8730a21ac917ffff54d2a766026589ca98c1d855dcb2a5c62f4f010bbfc9d9c5"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1116,
+			"sha256": "6ee15f25bb45207413cbd9aef041e6b855c32feeb7058e112ee34d218b3e2cea"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2243902,
+			"sha256": "14a8338bd9b72ca5e27c5991cdb0da1397952b1c3877ba87b2c46f86afb6ff7f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 199402,
+			"sha256": "5bac9f286d978df2163a6ca2ef78562d87cb76bd90c5ad3e8d5e1013877bc81a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 154289,
+			"sha256": "8f07b0c0de15504ce57a210301ad4c140cea0287a36c5d997c86f453eadd90c1"
+		},
+		{
+			"path": "exports/pew-transparent-2048.png",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "exports/pew-icon-2048.png",
+			"bytes": 4459362,
+			"sha256": "d3734589bc3d7062c7473421a44570ff7cdd2744a813c756dd2a7eacb4e1f29a"
+		},
+		{
+			"path": "exports/pew-rounded-2048.png",
+			"bytes": 4364683,
+			"sha256": "26c25676ec61a4fb2d1b3f01f8b959743f7f42ad17ccffd5efacb56a099fa69c"
+		},
+		{
+			"path": "exports/pew-transparent-1024.png",
+			"bytes": 974056,
+			"sha256": "7cb275a2f3c9d8e03dfd312b123aa2dae26d0209723b9d2a75aacc203d47ca78"
+		},
+		{
+			"path": "exports/pew-icon-1024.png",
+			"bytes": 1297413,
+			"sha256": "2800f38c96806b08be370042fdd826a0568b32f0f6be5f6283dcd47b072ef207"
+		},
+		{
+			"path": "exports/pew-rounded-1024.png",
+			"bytes": 1286478,
+			"sha256": "0f07784c740c2999e0b17243d7e8c27faa05d6277a205626369ea99632d254a8"
+		},
+		{
+			"path": "exports/pew-transparent-512.png",
+			"bytes": 318616,
+			"sha256": "79bde7125b5d45ec51f07b96ee2644b8b960763b83f596f90da4f1f9562ba08a"
+		},
+		{
+			"path": "exports/pew-icon-512.png",
+			"bytes": 425040,
+			"sha256": "7ab8c7d26894f060b07a7f0e5c75dacfd5261848a7a7a9193e5cce067a160f6b"
+		},
+		{
+			"path": "exports/pew-rounded-512.png",
+			"bytes": 422911,
+			"sha256": "67eb8b4726bf29292ef2d6c75cae7515835b3d75a3cd4b3a33bb4b49a5aef8e2"
+		},
+		{
+			"path": "exports/pew-transparent-256.png",
+			"bytes": 99157,
+			"sha256": "9e6aa90ebb1e5fb6fd66eb4bfac35c0ef6bc8205854a2262eda973832d5a0159"
+		},
+		{
+			"path": "exports/pew-icon-256.png",
+			"bytes": 120032,
+			"sha256": "78655fe3a93adc6a49a00205c0ae882c33482ce5ed41886581c32715f4100e37"
+		},
+		{
+			"path": "exports/pew-rounded-256.png",
+			"bytes": 121695,
+			"sha256": "c13a977c529bfae2a748063f5e0ea7f88c774d7404f605757bf06baf9d3ee175"
+		},
+		{
+			"path": "exports/pew-transparent-128.png",
+			"bytes": 29031,
+			"sha256": "aefb8357a831b668a76d41f2ebdbcbec6302c945abd1f16a07ac8ef3d77d6fde"
+		},
+		{
+			"path": "exports/pew-icon-128.png",
+			"bytes": 35900,
+			"sha256": "f4bb9cf2dc7bc600f7ace85d29e6025074067d2472a396e5a44728a1a5529971"
+		},
+		{
+			"path": "exports/pew-rounded-128.png",
+			"bytes": 37037,
+			"sha256": "9bc23c5e81b0ceca0e1d0afb171001f9e08c6fa0470ebbe7da4fa7fc3bba5119"
+		},
+		{
+			"path": "exports/pew-transparent-64.png",
+			"bytes": 8314,
+			"sha256": "6aa9ba10c85c34402239cff35de2647841c9e5a77b319453cedc807157498bb6"
+		},
+		{
+			"path": "exports/pew-icon-64.png",
+			"bytes": 10972,
+			"sha256": "1743d50a12e4632ef46610501107307a0b30483a9dba2d9227ba31c30c67d81c"
+		},
+		{
+			"path": "exports/pew-rounded-64.png",
+			"bytes": 11394,
+			"sha256": "326f854b95c50f799367739c1cfbd673f979bba5216e9995b3853a624429abc0"
+		},
+		{
+			"path": "exports/pew-transparent-48.png",
+			"bytes": 4998,
+			"sha256": "9335a5f7ca63528f5d359df7af7d696264e0888a5bc08e526cf58f5ddf65c087"
+		},
+		{
+			"path": "exports/pew-icon-48.png",
+			"bytes": 6522,
+			"sha256": "c99a07e9e38e3fc4fd086b0c1f4b7cf04a811dab7ba5300a7bfa563bc1ac23ba"
+		},
+		{
+			"path": "exports/pew-rounded-48.png",
+			"bytes": 6838,
+			"sha256": "60fb303162200add485b8a845d07f6df49e23ddcabffb8217ff208a08edc3629"
+		},
+		{
+			"path": "exports/pew-transparent-32.png",
+			"bytes": 2499,
+			"sha256": "7fc3ecb16c23f88b23b0f544f7c6a917063d0fcbc0cf1a31d1d24e4b282b3fb8"
+		},
+		{
+			"path": "exports/pew-icon-32.png",
+			"bytes": 3203,
+			"sha256": "2fb4c6d4cfbcc1cc082bc28ebfda614826acc0e03917a8ac8abd24bd2cde245d"
+		},
+		{
+			"path": "exports/pew-rounded-32.png",
+			"bytes": 3339,
+			"sha256": "6d9d03371d59ee88ff846d382e80ce018982bbe01924bea1170ac2eb0aea74af"
+		},
+		{
+			"path": "exports/pew-transparent-24.png",
+			"bytes": 1526,
+			"sha256": "8d6c96b31b6ee435916eaad0c28e1ffa1828f74f6816b589e9a9c81f46b9da3b"
+		},
+		{
+			"path": "exports/pew-icon-24.png",
+			"bytes": 1914,
+			"sha256": "76d1b19dbeb7336567880163315cc764079d802bbfc1eafce3137c1d1bf34949"
+		},
+		{
+			"path": "exports/pew-rounded-24.png",
+			"bytes": 2020,
+			"sha256": "2a9a969863c5d72ca2c38dd192e0ae4a8cdb1192a2ef23328466f16cf339473d"
+		},
+		{
+			"path": "exports/pew-transparent-16.png",
+			"bytes": 841,
+			"sha256": "7bea66ee0fb0186b43f558206015c2a0833d3a039dcdf02f840f2d5c9ea0a434"
+		},
+		{
+			"path": "exports/pew-icon-16.png",
+			"bytes": 931,
+			"sha256": "d4b219b472db761ba97ba85b623716ef5d722282843f40dd9a4747e8881336ec"
+		},
+		{
+			"path": "exports/pew-rounded-16.png",
+			"bytes": 972,
+			"sha256": "7b9315fe80491c8c7efbca4a8d7113633500f7026a1d441301bd35473764b803"
+		},
+		{
+			"path": "exports/pew-white-2048.png",
+			"bytes": 2854245,
+			"sha256": "5d489e823c135d7e3725292d35a5bfa0d53b4eb3e8b0852d4f1a552d54e58f83"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 922622,
+			"sha256": "976f63f0281a811b764af18cf54cdfb6a6e3794869f53adc3d4a75831a4f0e05"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 927806,
+			"sha256": "690ade89c58bf6392170fbabf79925ae76e87aa4c667e8fad46a307ae28dc340"
+		}
+	]
+}

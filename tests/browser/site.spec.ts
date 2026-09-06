@@ -22,14 +22,16 @@ test("renders active projects with local logos, redraw badges, and working desti
 		"Small ideas.A little universe.",
 	);
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
-	await expect(page.locator(".refined-badge")).toHaveCount(2);
-	for (const id of ["frogie", "pew"]) {
+	const refined = active.filter((project) => project.family);
+	await expect(page.locator(".refined-badge")).toHaveCount(refined.length);
+	for (const project of refined) {
+		const { id } = project;
 		await expect(
 			page.locator(`[data-project="${id}"] .refined-badge`),
 		).toHaveText("Refined");
 		await expect(
 			page.locator(`[data-project="${id}"] .logo-family img`),
-		).toHaveAttribute("src", /\/03\/icon-/);
+		).toHaveAttribute("src", new RegExp(`${project.family?.root}/icon-`));
 	}
 	await page.locator(".project-card img").evaluateAll(async (images) => {
 		await Promise.all(

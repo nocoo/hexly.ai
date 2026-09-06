@@ -36,8 +36,9 @@ def main():
     prompt_path = run_dir / "prompt.txt"
     request_path = run_dir / "request.json"
     response_path = run_dir / "response.json"
+    review_path = run_dir / "raw-review.json"
     output_path = run_dir / "raw" / "generated-white.png"
-    if request_path.exists() or response_path.exists() or output_path.exists():
+    if any(path.exists() for path in [request_path, response_path, review_path, output_path]):
         parser.error("Use a new study directory; previous requests are immutable.")
     prompt = prompt_path.read_text()
     endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT", "").rstrip("/")
@@ -139,7 +140,14 @@ def main():
                 "rawResponseBytesPreserved": True,
             },
         })
+        write_json(review_path, {
+            "status": "pending",
+            "imageSha256": hashlib.sha256(image_bytes).hexdigest(),
+            "recordedAt": timestamp(),
+            "nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
+        })
         print(f"Saved native {actual_size[0]}x{actual_size[1]} PNG to {output_path}")
+        print("Raw image review is pending. Show the original and wait for owner confirmation.")
     except Exception as error:
         detail = error.read().decode(errors="replace")[:4000] if isinstance(error, HTTPError) else str(error)
         detail = detail.replace(api_key, "[redacted]")
