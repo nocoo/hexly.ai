@@ -547,15 +547,73 @@ if (
 	placementScale > 1
 )
 	throw new Error("Foreground placement scale must be between 0.5 and 1.");
-const placedForeground = await placeLayer(
+let placedForeground = await placeLayer(
 	foreground,
 	width,
 	height,
 	settings.framing,
 );
+let continuationReport = null;
+const continuation = settings.framing?.continuation;
+if (continuation) {
+	const bytes = await readFile(path.resolve(run, continuation.path));
+	if (sha256(bytes) !== continuation.sha256)
+		throw new Error("Edge continuation differs from its recorded hash.");
+	const metadata = await sharp(bytes).metadata();
+	if (
+		metadata.format !== "svg" ||
+		metadata.width !== 2048 ||
+		metadata.height !== 2048
+	)
+		throw new Error(
+			"Edge continuation must be a native 2048-square SVG layer.",
+		);
+	const layer = await sharp(bytes).resize(width, height).png().toBuffer();
+	await save("edge-continuation.svg", bytes);
+	await save("edge-continuation.png", layer);
+	await save("placed-source.png", placedForeground);
+	const sourcePixels = await sharp(placedForeground)
+		.ensureAlpha()
+		.raw()
+		.toBuffer();
+	placedForeground = await sharp(layer)
+		.composite([{ input: placedForeground }])
+		.png()
+		.toBuffer();
+	const finishedPixels = await sharp(placedForeground)
+		.ensureAlpha()
+		.raw()
+		.toBuffer();
+	let addedPixels = 0;
+	let opaquePixelsPreserved = 0;
+	for (let index = 0; index < width * height; index++) {
+		const at = index * 4;
+		if (sourcePixels[at + 3] === 255) {
+			if (
+				!sourcePixels
+					.subarray(at, at + 4)
+					.equals(finishedPixels.subarray(at, at + 4))
+			)
+				throw new Error("Edge continuation changed an opaque approved pixel.");
+			opaquePixelsPreserved++;
+		}
+		if (sourcePixels[at + 3] === 0 && finishedPixels[at + 3] >= 16)
+			addedPixels++;
+	}
+	if (!addedPixels)
+		throw new Error("Edge continuation adds no visible contour.");
+	continuationReport = {
+		path: continuation.path,
+		sha256: continuation.sha256,
+		description: continuation.description,
+		addedPixels,
+		opaquePixelsPreserved,
+	};
+}
 const placementChanged =
 	placementScale !== 1 ||
-	(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0);
+	(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0) ||
+	Boolean(continuation);
 const presentationAlpha = placementChanged
 	? await sharp(placedForeground).extractChannel(3).raw().toBuffer()
 	: alpha;
@@ -679,6 +737,7 @@ await save(
 					...placement,
 				},
 				emission: emissionReports,
+				...(continuationReport ? { continuation: continuationReport } : {}),
 				files,
 			},
 			null,

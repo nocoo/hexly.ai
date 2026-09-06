@@ -107,6 +107,38 @@ test("keeps pale anatomy and an eye highlight while extracting a backdrop gap an
 				(file: { path: string }) => file.path === "matte-protection-mask.png",
 			),
 		).toBe(true);
+		const continuation = Buffer.from(
+			'<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048"><path fill="#605040" d="M240 800h1600v1248H240z"/></svg>',
+		);
+		await writeFile(join(study, "continuation.svg"), continuation);
+		const recipe = JSON.parse(
+			await readFile(join(study, "presentation.json"), "utf8"),
+		);
+		recipe.framing.continuation = {
+			path: "continuation.svg",
+			sha256: createHash("sha256").update(continuation).digest("hex"),
+			description: "Extend the silhouette behind accepted opaque artwork.",
+		};
+		await writeFile(join(study, "presentation.json"), JSON.stringify(recipe));
+		await execute(process.execPath, [tool, study, "02"]);
+		const completed = await sharp(
+			join(study, "finishing/02/exports/fixture-transparent-256.png"),
+		)
+			.ensureAlpha()
+			.raw()
+			.toBuffer();
+		const completedPixel = (x: number, y: number) => [
+			...completed.subarray((y * 256 + x) * 4, (y * 256 + x) * 4 + 4),
+		];
+		expect(completedPixel(40, 150)).toEqual([96, 80, 64, 255]);
+		expect(completedPixel(70, 130)).toEqual(pixel(70, 130));
+		expect(completedPixel(130, 195)).toEqual(pixel(130, 195));
+		expect(completedPixel(10, 10)[3]).toBe(0);
+		recipe.framing.continuation.sha256 = "0".repeat(64);
+		await writeFile(join(study, "presentation.json"), JSON.stringify(recipe));
+		await expect(
+			execute(process.execPath, [tool, study, "03"]),
+		).rejects.toThrow("Edge continuation differs from its recorded hash.");
 	} finally {
 		await rm(study, { recursive: true, force: true });
 	}
