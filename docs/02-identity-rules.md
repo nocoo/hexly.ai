@@ -29,6 +29,8 @@ The later cleanup must preserve the original backup and provenance, create a sep
 
 ## Profile maintenance reference
 
-The workflow checkout currently has no separate GitHub-profile maintenance skill. The relevant existing procedure was retrieved from nmem: `e42a5dde-192d-495f-bc21-4d303cabeb3a` (GitHub project metadata and profile updates).
+The canonical maintenance skill is `workflow/agents/skills/zhengli-update-github-readme/SKILL.md`, with a reference entry in `nocoo/skills/zhengli-update-github-readme/SKILL.md`. The metadata convention is also recorded in nmem: `e42a5dde-192d-495f-bc21-4d303cabeb3a`.
 
-Its shared rules are: English repository descriptions prefixed by the project's emoji; profile entries use the same emoji and description; deduplicate entries; exclude forks; keep skills and MCP servers in their own section; keep old projects in the legacy section. This phase reads the profile as input and maintains its own audited catalogue.
+Every GitHub-profile project update must also update the corresponding entry in this site's catalogue, logo backup, palette, and generated project profile. Preserve unrelated profile entries and existing asset provenance. Record the profile commit before referencing it in a new catalogue entry, and run the asset and documentation generators followed by the relevant quality gates.
+
+Shared rules include English repository descriptions prefixed by the project's emoji, matching profile descriptions, deduplicated entries, exclusion of forks, and preservation of the Games, Skills & MCP, and Legacy sections. The v0.1.0 catalogue adds hexly.ai itself, bringing the total to 66 projects with 43 original images and 23 emoji identities.

@@ -8,7 +8,7 @@ await mkdir("docs/profiles", { recursive: true });
 const index = [
 	"# Project profiles",
 	"",
-	"All 65 unique entries from the GitHub profile are represented. Project metadata is maintained in `src/data/projects.json`; run `bun run docs:profiles` after editing it.",
+	`All ${projects.length} unique entries from the GitHub profile are represented. Project metadata is maintained in \`src/data/projects.json\`; run \`bun run docs:profiles\` after editing it.`,
 	"",
 	"| Project | Current identity | Foreground | Background |",
 	"| --- | --- | --- | --- |",

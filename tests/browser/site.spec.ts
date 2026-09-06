@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import manifest from "../../package.json" with { type: "json" };
+import projects from "../../src/data/projects.json" with { type: "json" };
 
 test("renders the complete directory with local images and working destinations", async ({
 	page,
@@ -17,7 +18,7 @@ test("renders the complete directory with local images and working destinations"
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
 		"Small ideas.A little universe.",
 	);
-	await expect(page.locator(".project-card")).toHaveCount(65);
+	await expect(page.locator(".project-card")).toHaveCount(projects.length);
 	await page.locator(".project-card img").evaluateAll(async (images) => {
 		await Promise.all(
 			images.map(async (node) => {
@@ -60,7 +61,7 @@ test("combines search and categories, resets empty results, and sorts by name", 
 		page.getByRole("heading", { name: "Nothing here just yet." }),
 	).toBeVisible();
 	await page.getByRole("button", { name: "Reset filters" }).click();
-	await expect(page.locator(".project-card")).toHaveCount(65);
+	await expect(page.locator(".project-card")).toHaveCount(projects.length);
 	await expect(search).toHaveValue("");
 	await search.fill("backup");
 	await search.press("Escape");
@@ -88,7 +89,7 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(page.locator(".project-card")).toHaveCount(1);
 	await expect(page.locator(".project-card h3")).toContainText("Frogie");
 	await page.getByRole("button", { name: "清空搜索" }).click();
-	await expect(page.locator(".project-card")).toHaveCount(65);
+	await expect(page.locator(".project-card")).toHaveCount(projects.length);
 	await page.getByRole("button", { name: "切换到浅色主题" }).click();
 	await page.getByRole("button", { name: "Switch to English" }).click();
 	await page.reload();
@@ -118,9 +119,9 @@ test("restores directory filters with browser back and reloads a shared identity
 		.getByRole("navigation", { name: "Main navigation" })
 		.getByRole("button", { name: "Logo gallery" })
 		.click();
-	await expect(page.locator(".picker-item")).toHaveCount(65);
+	await expect(page.locator(".picker-item")).toHaveCount(projects.length);
 	await page.getByRole("link", { name: "hexly.ai", exact: true }).click();
-	await expect(page.locator(".project-card")).toHaveCount(65);
+	await expect(page.locator(".project-card")).toHaveCount(projects.length);
 });
 
 test.describe("system preferences", () => {
