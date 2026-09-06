@@ -1,0 +1,148 @@
+{
+	"method": "Local vector completion behind the uniformly placed approved extraction; no generation, cloned edge pixels, neck stretching, or repainting of the accepted opaque artwork.",
+	"source": {
+		"path": "../raw/generated.png",
+		"sha256": "40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db"
+	},
+	"placement": {
+		"width": 1638,
+		"left": 195,
+		"top": 410,
+		"nativeWidth": 2048
+	},
+	"geometry": "Small ear and horn contour tips plus a continuation of the already accepted shoulder through the lower frame.",
+	"facets": [
+		{
+			"name": "left-ear-upper",
+			"points": [[1, 877], [-20, 899], [1, 897]],
+			"samples": [[5, 883], [5, 894]],
+			"axis": "y",
+			"sampledRgb": [[123, 78, 53], [139, 85, 54]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "left-ear-lower",
+			"points": [[1, 895], [-20, 899], [1, 916]],
+			"samples": [[5, 898], [5, 909]],
+			"axis": "y",
+			"sampledRgb": [[139, 86, 53], [142, 87, 59]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "horn-outer-tip",
+			"points": [[2046, 494], [2058, 512], [2046, 512]],
+			"samples": [[2043, 501], [2043, 507]],
+			"axis": "y",
+			"sampledRgb": [[141, 100, 45], [142, 101, 44]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "horn-gold",
+			"points": [
+				[2046, 510],
+				[2058, 512],
+				[2082, 545],
+				[2098, 598],
+				[2046, 556]
+			],
+			"samples": [[2043, 520], [2043, 546]],
+			"axis": "y",
+			"sampledRgb": [[166, 112, 45], [172, 116, 46]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "horn-return",
+			"points": [[2046, 554], [2098, 598], [2078, 688], [2046, 735]],
+			"samples": [[2043, 565], [2043, 716]],
+			"axis": "y",
+			"sampledRgb": [[106, 71, 38], [115, 79, 38]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "ear-top",
+			"points": [[2046, 1042], [2093, 1107], [2138, 1176], [2046, 1088]],
+			"samples": [[2043, 1056], [2043, 1080]],
+			"axis": "y",
+			"sampledRgb": [[123, 82, 52], [124, 81, 51]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "ear-fold",
+			"points": [[2046, 1086], [2138, 1176], [2110, 1201], [2046, 1186]],
+			"samples": [[2043, 1105], [2043, 1174]],
+			"axis": "y",
+			"sampledRgb": [[146, 92, 54], [160, 101, 62]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "ear-lower",
+			"points": [[2046, 1184], [2110, 1201], [2046, 1226]],
+			"samples": [[2043, 1192], [2043, 1212]],
+			"axis": "y",
+			"sampledRgb": [[158, 100, 62], [153, 97, 59]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-top",
+			"points": [[2046, 1408], [2120, 1480], [2046, 1533]],
+			"samples": [[2043, 1424], [2043, 1524]],
+			"axis": "y",
+			"sampledRgb": [[101, 66, 45], [116, 77, 50]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-fold",
+			"points": [
+				[2046, 1531],
+				[2120, 1480],
+				[2190, 1548],
+				[2239, 1636],
+				[2046, 1613]
+			],
+			"samples": [[2043, 1546], [2043, 1603]],
+			"axis": "y",
+			"sampledRgb": [[79, 54, 40], [79, 53, 39]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-light",
+			"points": [
+				[2046, 1611],
+				[2239, 1636],
+				[2338, 1800],
+				[2118, 1876],
+				[2046, 1756]
+			],
+			"samples": [[2043, 1624], [2043, 1740]],
+			"axis": "y",
+			"sampledRgb": [[114, 75, 50], [119, 79, 50]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-mid",
+			"points": [[2046, 1754], [2118, 1876], [2046, 1905]],
+			"samples": [[2043, 1764], [2043, 1896]],
+			"axis": "y",
+			"sampledRgb": [[104, 68, 47], [110, 74, 49]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-lower",
+			"points": [
+				[2046, 1903],
+				[2118, 1876],
+				[2338, 1800],
+				[2380, 2390],
+				[2046, 2390]
+			],
+			"samples": [[2043, 1915], [2043, 2038]],
+			"axis": "y",
+			"sampledRgb": [[80, 54, 41], [81, 58, 42]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		}
+	],
+	"output": {
+		"path": "edge-continuation-03.svg",
+		"sha256": "cc407b33c582d2987f7ecd1e12057bf00481d53915ab25c2295f35d33bc9fcf6"
+	}
+}

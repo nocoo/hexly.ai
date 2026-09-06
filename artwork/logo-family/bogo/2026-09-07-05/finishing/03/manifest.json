@@ -1,0 +1,425 @@
+{
+	"createdAt": "2026-09-06T22:38:56.651Z",
+	"pass": "03",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3a4f39bb3ed8b945dcb20b4025de622bc48063ed010f6c637c77c84ceaedab67",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "bogo",
+		"original": "../../../../public/logos/originals/bogo.png",
+		"background": {
+			"base": "#b7a186",
+			"light": "#e0ccaf",
+			"shade": "#958370",
+			"motif": "#6d5843",
+			"grainAmplitude": 1,
+			"grainSeed": 609071,
+			"status": "Designed mineral presentation for owner-approved Bogo study 05; independent of the unchanged blue UI theme.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Mineral horn arches",
+				"description": "Offset broken polygonal arches with blunt beveled ends, recalling the buffalo horns without framing the face.",
+				"layers": [
+					{
+						"d": "M-34 327L99 161L219 89L246 124L131 195L9 351Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M29 447L174 268L303 190L321 217L194 300L63 471Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M96 544L235 382L338 319L353 341L256 407L123 564Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M771-18L855 53L1062 144L1048 173L831 82L748 9Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M19 357L136 201L249 129",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M74 476L199 306L324 222",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M1054 186L828 92L744 19",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 237,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				251,
+				250,
+				250
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Exterior near-white samples plus two enclosed backdrop gaps between the sprig and muzzle; all visible eye highlights remain protected by connected extraction. No component removal.",
+			"backgroundSeedsAt2048": [
+				[
+					575,
+					1451
+				],
+				[
+					556,
+					1516
+				]
+			]
+		},
+		"shadows": [
+			{
+				"color": [
+					109,
+					88,
+					67
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					109,
+					88,
+					67
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.82,
+			"offsetAt2048": [
+				-20,
+				185
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "Uniform 82% placement, 20 native pixels left and 185 down relative to centered placement. The approved neck meets the lower canvas directly. Local vector facets close the small native ear/horn cuts and continue the existing shoulder through the lower-right edge. Expressive features and the full flower sprig keep at least 128 px from the rounded outline; verify named feature regions separately from the intentional neck/shoulder entries.",
+			"continuation": {
+				"path": "input/edge-continuation-02.svg",
+				"sha256": "fb6a8a50472fe9235d5c48b22aff671cc4d8fd24f2e7188c8282dc27c2589e2e",
+				"description": "Small vector continuation of clipped ear and horn contours, plus natural shoulder continuation behind the approved portrait. Original fully opaque placed pixels are verified unchanged; no stretched or repeated edge pixels."
+			}
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1281169,
+		"foregroundPixels": 2913135,
+		"softEdgePixels": 17394,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 85,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.82,
+		"offsetAt2048": [
+			-20,
+			185
+		],
+		"bounds": {
+			"left": 147,
+			"top": 439,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 45376
+	},
+	"emission": [],
+	"continuation": {
+		"path": "input/edge-continuation-02.svg",
+		"sha256": "fb6a8a50472fe9235d5c48b22aff671cc4d8fd24f2e7188c8282dc27c2589e2e",
+		"description": "Small vector continuation of clipped ear and horn contours, plus natural shoulder continuation behind the approved portrait. Original fully opaque placed pixels are verified unchanged; no stretched or repeated edge pixels.",
+		"addedPixels": 95333,
+		"opaquePixelsPreserved": 1934903
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3097,
+			"sha256": "8c7d2029dfc23b70caf8bb99ca6622e9b13ee3acd189288ca68be7899caa6941"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1571,
+			"sha256": "33df86bb32c46345015872516f61a6e658642b3bab43eed137991b659dc183c1"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 23689,
+			"sha256": "3a4f39bb3ed8b945dcb20b4025de622bc48063ed010f6c637c77c84ceaedab67"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5074774,
+			"sha256": "88253517d5a6b063a36f06940909bee449efe33bc405f4459e5b31e026785455"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 97635,
+			"sha256": "19fa20517c399a92c046d41d4a29344284d232600267664d5afbbe805d9aa08b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1050,
+			"sha256": "d89ef95802edfcb29b6f586135da034ce0c62db9c3c5e4c4faf4199ecba2af8b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2120015,
+			"sha256": "b4d91c822942e01f11a1dfec0c22ce8aa86ff97ba06728c1db230d52c4014301"
+		},
+		{
+			"path": "edge-continuation.svg",
+			"bytes": 3906,
+			"sha256": "fb6a8a50472fe9235d5c48b22aff671cc4d8fd24f2e7188c8282dc27c2589e2e"
+		},
+		{
+			"path": "edge-continuation.png",
+			"bytes": 32584,
+			"sha256": "b5b806e18e06d5cb03abac8ec282f9e06c4bd3947f5332d365d8ac5a504ca126"
+		},
+		{
+			"path": "placed-source.png",
+			"bytes": 3781419,
+			"sha256": "b651819f79f5e294a281b25765c223103a32f77aaf09a73cdc3d796053d99e84"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3793192,
+			"sha256": "04dbf75593356b093f94fa1b26e99179f4591bbdd7f876f4f799244f9fd0a9f3"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 124735,
+			"sha256": "4d74b0dce7e57aee6766dd82d6585f5680d6ff101334aa2b4a79216614dcd0ac"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 274637,
+			"sha256": "06d5d8c6b2c902a47fb89540c4aab6605ab6ad7efcf4716f2be681390b2b595c"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 208328,
+			"sha256": "15f24701b8576dab239b7d6e5415c741bd4cd088488708c8deb26ccdde366fe3"
+		},
+		{
+			"path": "exports/bogo-transparent-2048.png",
+			"bytes": 3793192,
+			"sha256": "04dbf75593356b093f94fa1b26e99179f4591bbdd7f876f4f799244f9fd0a9f3"
+		},
+		{
+			"path": "exports/bogo-icon-2048.png",
+			"bytes": 5255472,
+			"sha256": "84cbbe1b4ccf741b20c89856766473c2fac7ecef8550fb92785b8e8a7d054608"
+		},
+		{
+			"path": "exports/bogo-rounded-2048.png",
+			"bytes": 5183436,
+			"sha256": "cc966f9f7f07f0f745d33b3f8707ff2e2694b6c2489d964a45d5d53dff4c4344"
+		},
+		{
+			"path": "exports/bogo-transparent-1024.png",
+			"bytes": 1049590,
+			"sha256": "b2f7bddb0a996718c70da0930c981a8290139d18130aed1c79ab8d638066c17e"
+		},
+		{
+			"path": "exports/bogo-icon-1024.png",
+			"bytes": 1384970,
+			"sha256": "8ad8aa8d7b007be31af1e016a2a81078848b31bd9d4dc0d3308041a12dac725b"
+		},
+		{
+			"path": "exports/bogo-rounded-1024.png",
+			"bytes": 1383184,
+			"sha256": "fb64bf4b7aa7829f5e6cca17f50bd749356ead74b90c943e48b306b78f7edfe4"
+		},
+		{
+			"path": "exports/bogo-transparent-512.png",
+			"bytes": 311792,
+			"sha256": "f61a8e297b9322aba0aa1fb3b0b2f2c39e2f0e1201cdb4d6daa7fa8bba17cfa3"
+		},
+		{
+			"path": "exports/bogo-icon-512.png",
+			"bytes": 413310,
+			"sha256": "31e74c2b72aba77c22622257aacf8ec76c602ecbc3bed96070bfd712a1388446"
+		},
+		{
+			"path": "exports/bogo-rounded-512.png",
+			"bytes": 415115,
+			"sha256": "c15a1c577600f4547d5b9b6e0ef81fb4638eefac1aa3bc9b3c0c817869a684a6"
+		},
+		{
+			"path": "exports/bogo-transparent-256.png",
+			"bytes": 93390,
+			"sha256": "c01bdadb34562ceb27d86cea8f0ff9cda58c6c75ae0bf5f843482e8068e9654e"
+		},
+		{
+			"path": "exports/bogo-icon-256.png",
+			"bytes": 111829,
+			"sha256": "b84de03a6bf53bafd2532607b1cd5bb30dc69e8c9dacbe9172b026b9b809f724"
+		},
+		{
+			"path": "exports/bogo-rounded-256.png",
+			"bytes": 114633,
+			"sha256": "33790639362704021d15d020ad2275385eb7876286a9a676c4d163c1c3eaed0b"
+		},
+		{
+			"path": "exports/bogo-transparent-128.png",
+			"bytes": 27261,
+			"sha256": "b3a77ede58b953dbdc6153fada0f2831d17d08ea6fea9f81fa2b7ba3d4170a2a"
+		},
+		{
+			"path": "exports/bogo-icon-128.png",
+			"bytes": 33207,
+			"sha256": "3ff1d5e6abe16e89c64e44238318109935243fad642c6c51d7abe44ab5799b2b"
+		},
+		{
+			"path": "exports/bogo-rounded-128.png",
+			"bytes": 34675,
+			"sha256": "ed41ffb8bbe0db0b7b249eff0c9f586271b5321d6cdf20a2623c2ad3867e0bb5"
+		},
+		{
+			"path": "exports/bogo-transparent-64.png",
+			"bytes": 8098,
+			"sha256": "d510f07d96c1e105352635652539d508da0c1c1b46b910cb51361e6ce0039ffd"
+		},
+		{
+			"path": "exports/bogo-icon-64.png",
+			"bytes": 10367,
+			"sha256": "bd1ba1e08b5eab20777baa71cc7fdc5f1b4daa5e38bd08132c977f5c64beabd8"
+		},
+		{
+			"path": "exports/bogo-rounded-64.png",
+			"bytes": 10927,
+			"sha256": "489900c2f0d28df1784ca4d8bda84e8052965f55cc5cd2dcba97facd53bfe84b"
+		},
+		{
+			"path": "exports/bogo-transparent-48.png",
+			"bytes": 4973,
+			"sha256": "626a81ccc3e475190c2b7ccbf3eb48c27c1e8cda359e004861c72417975cd9d0"
+		},
+		{
+			"path": "exports/bogo-icon-48.png",
+			"bytes": 6298,
+			"sha256": "0ea6a69dea7da098805982fb84f57db58af64fc6b87f9513b66ebcb8779d9b59"
+		},
+		{
+			"path": "exports/bogo-rounded-48.png",
+			"bytes": 6654,
+			"sha256": "5dd6695e229077fbcb298a25ef83e21bb7a48541a16ea58600048e4654522307"
+		},
+		{
+			"path": "exports/bogo-transparent-32.png",
+			"bytes": 2513,
+			"sha256": "4b53115a5e1a8d5f81bb2fe78b5b220b065305d1e4958af911cf75b83517da2d"
+		},
+		{
+			"path": "exports/bogo-icon-32.png",
+			"bytes": 3212,
+			"sha256": "74c3a2978626ca2b8aafaae5ab427bc96dcb046ca3e341f8b7b277e77d927cdd"
+		},
+		{
+			"path": "exports/bogo-rounded-32.png",
+			"bytes": 3359,
+			"sha256": "69347364e972feaac2573deb9f3c1125b6ed7e092a8790d2342d2b8afb6a5298"
+		},
+		{
+			"path": "exports/bogo-transparent-24.png",
+			"bytes": 1582,
+			"sha256": "f5cfcca6cbc747e93fc7c781ee26a14c2efd754617dc44dcd12f3ffe638204f8"
+		},
+		{
+			"path": "exports/bogo-icon-24.png",
+			"bytes": 1940,
+			"sha256": "a4eb96c4db8ba9404526e183b6aa4f24580506cdcf69b03ea545c93a12abb5d2"
+		},
+		{
+			"path": "exports/bogo-rounded-24.png",
+			"bytes": 2046,
+			"sha256": "52dc3378902418650493e1af1813823969f3cd3bfa19c74ba5617b8d24a783b3"
+		},
+		{
+			"path": "exports/bogo-transparent-16.png",
+			"bytes": 857,
+			"sha256": "28c83a9de87d5dd8d1943153c5bd275409e5fbbb4e756d00c08f47a0ff9c854b"
+		},
+		{
+			"path": "exports/bogo-icon-16.png",
+			"bytes": 976,
+			"sha256": "f62d53d1f7ab3d15a17f5deba87d13148fa1861a69c7b5483e6f03dc48adcaa5"
+		},
+		{
+			"path": "exports/bogo-rounded-16.png",
+			"bytes": 1009,
+			"sha256": "3b0eb2728eb1691ab4ab739c18a04ee2bdcd3de845fbe02b35ba36d275beba57"
+		},
+		{
+			"path": "exports/bogo-white-2048.png",
+			"bytes": 3563169,
+			"sha256": "fcd6af2bc7641709ecf6c4411dac29f180cd589864e00358cecb8a0349ccb90d"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1004631,
+			"sha256": "c96c7656b24155852e2a5a3a31d90472fc9f3c5eb4065a1ec6604877002fbca0"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 993723,
+			"sha256": "8c70ae79ed04063e0126099fd9211f7112646fef78c671f6fb170aeabc56a22f"
+		}
+	]
+}
