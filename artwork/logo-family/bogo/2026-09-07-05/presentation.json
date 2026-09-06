@@ -1,0 +1,93 @@
+{
+	"project": "bogo",
+	"original": "../../../../public/logos/originals/bogo.png",
+	"background": {
+		"base": "#b7a186",
+		"light": "#e0ccaf",
+		"shade": "#958370",
+		"motif": "#6d5843",
+		"grainAmplitude": 1,
+		"grainSeed": 609071,
+		"status": "Designed mineral presentation for owner-approved Bogo study 05; independent of the unchanged blue UI theme.",
+		"motifOpacity": 0.14,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Mineral horn arches",
+			"description": "Offset broken polygonal arches with blunt beveled ends, recalling the buffalo horns without framing the face.",
+			"layers": [
+				{
+					"d": "M-34 327L99 161L219 89L246 124L131 195L9 351Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M29 447L174 268L303 190L321 217L194 300L63 471Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M96 544L235 382L338 319L353 341L256 407L123 564Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M771-18L855 53L1062 144L1048 173L831 82L748 9Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M19 357L136 201L249 129",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M74 476L199 306L324 222",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1054 186L828 92L744 19",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 237,
+		"maximumChroma": 16,
+		"backgroundRgb": [251, 250, 250],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.985,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Exterior near-white samples plus two enclosed backdrop gaps between the sprig and muzzle; all visible eye highlights remain protected by connected extraction. No component removal.",
+		"backgroundSeedsAt2048": [[575, 1451], [556, 1516]]
+	},
+	"shadows": [
+		{
+			"color": [109, 88, 67],
+			"opacity": 0.14,
+			"blurAt2048": 30,
+			"offsetAt2048": [8, 23]
+		},
+		{
+			"color": [109, 88, 67],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.8,
+		"offsetAt2048": [-10, 205],
+		"intentionalEdges": ["bottom", "lower-right"],
+		"note": "Uniform 80% placement, 10 native pixels left and 205 down relative to centered placement. The approved neck meets the lower canvas directly. Local vector facets close the small native ear/horn cuts and continue the existing shoulder through the lower-right edge. Expressive features and the complete flower sprig are checked against a 128 px rounded-outline safety margin; neck and shoulder entries are documented exceptions.",
+		"continuation": {
+			"path": "input/edge-continuation-03.svg",
+			"sha256": "cc407b33c582d2987f7ecd1e12057bf00481d53915ab25c2295f35d33bc9fcf6",
+			"description": "Small vector continuation of clipped ear and horn contours, plus natural shoulder continuation behind the approved portrait. Original fully opaque placed pixels are verified unchanged; no stretched or repeated edge pixels."
+		}
+	}
+}

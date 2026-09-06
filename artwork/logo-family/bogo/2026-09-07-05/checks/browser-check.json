@@ -1,0 +1,113 @@
+{
+	"checkedAt": "2026-09-06T22:49:17.471Z",
+	"cases": [
+		{
+			"surface": "catalogue",
+			"viewport": "desktop",
+			"languages": ["en", "zh"],
+			"themes": ["light", "dark"],
+			"modes": ["icon", "transparent", "white"],
+			"download": "exact transparent master",
+			"clipboard": true,
+			"history": true,
+			"overflow": false
+		},
+		{
+			"surface": "static",
+			"viewport": "desktop",
+			"themes": ["light", "dark"],
+			"modes": ["icon", "transparent", "white"],
+			"references": 5,
+			"downloads": 6,
+			"clipboard": true,
+			"overflow": false
+		},
+		{
+			"surface": "catalogue",
+			"viewport": "mobile",
+			"languages": ["en", "zh"],
+			"themes": ["light", "dark"],
+			"modes": ["icon", "transparent", "white"],
+			"download": "exact transparent master",
+			"clipboard": true,
+			"history": true,
+			"overflow": false
+		},
+		{
+			"surface": "static",
+			"viewport": "mobile",
+			"themes": ["light", "dark"],
+			"modes": ["icon", "transparent", "white"],
+			"references": 5,
+			"downloads": 6,
+			"clipboard": true,
+			"overflow": false
+		}
+	],
+	"downloads": [
+		{
+			"path": "/artwork/logo-family/bogo/2026-09-07-05/finishing/04/exports/bogo-transparent-2048.png",
+			"bytes": 3637079,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		{
+			"path": "/artwork/logo-family/bogo/2026-09-07-05/finishing/04/exports/bogo-icon-2048.png",
+			"bytes": 5154256,
+			"sha256": "4063fb82588f5fe1221b32e530fddfd979a7b0414ffd0a49c896db6c020940e6"
+		},
+		{
+			"path": "/artwork/logo-family/bogo/2026-09-07-05/finishing/04/exports/bogo-rounded-2048.png",
+			"bytes": 5081941,
+			"sha256": "95a93d50cf868bd2eed7a82b20be17ce6374a54f9306e1e4839ed1b4b38530a9"
+		},
+		{
+			"path": "/artwork/logo-family/bogo/2026-09-07-05/finishing/04/exports/bogo-white-2048.png",
+			"bytes": 3414868,
+			"sha256": "b33c5429a4ef3b4825af89e7d8b7c81dd8c6c3797e9ebfd7089034857bff8275"
+		},
+		{
+			"path": "/artwork/logo-family/bogo/2026-09-07-05/raw/generated.png",
+			"bytes": 3238191,
+			"sha256": "40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db"
+		},
+		{
+			"path": "/artwork/logo-family/bogo/2026-09-07-05/prompt.txt",
+			"bytes": 2210,
+			"sha256": "faddb6d6a2223334b236066875fa91906f77456ca08bf25688b25e1a24b7cd3a"
+		}
+	],
+	"source": {
+		"origin": "https://bogo.dev.hexly.ai",
+		"sidebarExpanded": true,
+		"sidebarCollapsed": true,
+		"displayedLogoPixels": 20,
+		"assets": [
+			{
+				"file": "logo-24.png",
+				"sha256": "8720debf280a50dacaf52c12bc4c2167cf4b5f20537cc20fb5eeecafe2a9e952"
+			},
+			{
+				"file": "logo-80.png",
+				"sha256": "9d6d480db4fe98ac2263d86ff04607b8b4152f293ad74a0571f566d3cc81b2fc"
+			},
+			{
+				"file": "favicon.png",
+				"sha256": "bc68e355672aaf3c692db10e7757d19aead06eb2e2607060c2eaa5d8b5b2197d"
+			}
+		],
+		"captureScope": "Brand header and logo only; no personal knowledge-base content archived."
+	},
+	"status": "passed",
+	"finalDarkCaptures": [
+		{
+			"file": "site-desktop-dark-zh-final.png",
+			"lang": "zh-CN",
+			"theme": "dark"
+		},
+		{
+			"file": "site-mobile-dark-zh-final.png",
+			"lang": "zh-CN",
+			"theme": "dark"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"checkedAt": "2026-09-06T22:54:27.951658+00:00",
+	"status": "passed",
+	"hexly": {
+		"lint": "passed; zero warnings",
+		"typecheck": "passed",
+		"unitTests": 48,
+		"coverage": {
+			"statements": 100,
+			"branches": 100,
+			"functions": 100,
+			"lines": 100,
+			"scope": "Configured model and policy coverage"
+		},
+		"httpTests": 14,
+		"galleryBrowserTests": 14,
+		"customBrowserReview": "browser-check.json; static and Vite, desktop/mobile, both themes, bilingual catalogue, downloads/clipboard/history, and actual Bogo logo consumers",
+		"sourceChecksums": 66,
+		"displayDerivatives": 264,
+		"publicFamilyArchives": 6,
+		"frozenFinishingPasses": 30,
+		"build": "passed",
+		"isolation": "local Workers only, separate loopback ports and state"
+	},
+	"bogo": {
+		"build": "passed",
+		"sourceCommit": "59e6a1656b3b5bfe99a6a54cc53da7458017b082",
+		"unitTests": 1123,
+		"unitSuites": 99,
+		"preCommit": "passed: L1 coverage, typecheck, zero-warning Biome, staged Gitleaks, route coverage, and page coverage",
+		"applicationAssets": "actual expanded/collapsed sidebar and favicon/display bytes checked through local Caddy domain"
+	},
+	"publication": "not performed",
+	"scope": "Bogo only; no changes to other source identities"
+}
