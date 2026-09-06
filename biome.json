@@ -3,7 +3,13 @@
 	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
 	"files": { "includes": ["**", "!!public/logos", "!!docs", "!!bun.lock"] },
 	"formatter": { "enabled": true, "indentStyle": "tab" },
-	"linter": { "enabled": true, "rules": { "preset": "recommended" } },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"preset": "recommended",
+			"style": { "noDescendingSpecificity": "off" }
+		}
+	},
 	"assist": {
 		"enabled": true,
 		"actions": { "source": { "organizeImports": "on" } }
