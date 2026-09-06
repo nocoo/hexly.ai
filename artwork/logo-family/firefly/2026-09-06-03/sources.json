@@ -10,7 +10,7 @@
 		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
 		"status": "Existing Firefly UI tokens; unchanged"
 	},
-	"status": "prepared",
+	"status": "rejected",
 	"preparedAt": "2026-09-06T10:48:54.550855+00:00",
 	"supersedes": "firefly/2026-09-06-02",
 	"intent": "A broad, short, visibly faceted firefly curls toward a small close flame; overlapping head, shell, and gathered wings form a visually full logo mass.",
@@ -58,5 +58,8 @@
 		"path": "background-plan.json",
 		"status": "proposed; adapt to selected silhouette after raw approval"
 	},
-	"publication": "Local only; no source adoption, push, or deployment"
+	"publication": "Local only; no source adoption, push, or deployment",
+	"rawImageSha256": "0f5bc23c389a2b90c86436926cd875a51aa21bf25c5bd951c1919c3f543534e8",
+	"decisionRecord": "raw-review.json",
+	"supersededBy": "firefly/2026-09-06-04"
 }
