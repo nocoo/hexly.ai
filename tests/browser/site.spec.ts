@@ -115,7 +115,7 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
 	await expect(
 		page.locator('[data-project="frogie"] .refined-badge'),
-	).toHaveText("已重绘");
+	).toHaveText("Refined");
 	await expect(
 		page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
 	).toHaveAttribute("href", "https://github.com/nocoo/frogie");

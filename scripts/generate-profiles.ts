@@ -19,6 +19,7 @@ for (const [position, project] of projects.entries()) {
 		`| [${project.emoji} ${project.title}](${name}) | ${project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);
 	const family = project.family;
+	const retained = family?.method === "retained-original";
 	const familySection = family
 		? `## Refined identity
 
@@ -31,11 +32,11 @@ ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en
 - [Full process archive](${family.archive})
 - [Transparent foreground](../../public${family.foreground.original}); SHA-256: \`${family.foreground.sha256}\`
 - [Square icon](../../public${family.root}/icon.png), [rounded icon](../../public${family.root}/rounded.png), [white version](../../public${family.root}/white.png)
-- [Untouched generation](../../public${family.root}/raw.png), [exact prompt](../../public${family.root}/prompt.txt), [public asset checksums](../../public${family.root}/manifest.json)
+- [${retained ? "Untouched original" : "Untouched generation"}](../../public${family.root}/${retained ? "source" : "raw"}.png), [${retained ? "presentation brief" : "exact prompt"}](../../public${family.root}/${retained ? "brief" : "prompt"}.txt), [public asset checksums](../../public${family.root}/manifest.json)
 - [Previous original](../../public${family.previous.original}), copied from [its immutable source](${family.previous.sourceUrl})
 - Previous SHA-256: \`${family.previous.sha256}\`
-- Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.
-- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
+- ${retained ? `Original artwork retained byte-for-byte at native ${family.foreground.width} × ${family.foreground.height}. Zero image-generation calls; only background, grain, and shadow layers were composed.` : `Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.`}
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.${retained && family.foreground.width < 2048 ? ` Sizes above ${family.foreground.width} px are explicitly recorded upscales; the native transparent master is unchanged.` : ""}
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
 ### Refined palette

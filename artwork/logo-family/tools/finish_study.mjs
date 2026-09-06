@@ -442,25 +442,30 @@ if (!runArgument || !/^\d{2}$/.test(pass ?? ""))
 		"Usage: bun finish_study.mjs <study-directory> <finishing-pass: 01>",
 	);
 const run = path.resolve(runArgument);
-const response = JSON.parse(
-	await readFile(path.join(run, "response.json"), "utf8"),
-);
-if (response.status !== "succeeded")
-	throw new Error("No successful source generation.");
-const reviewBytes = await readFile(path.join(run, "raw-review.json"));
-const review = JSON.parse(reviewBytes);
+const settingsBytes = await readFile(path.join(run, "presentation.json"));
+const settings = JSON.parse(settingsBytes);
+const retained = settings.sourceMode === "retained-transparent";
+const sourceRecordName = retained ? "source.json" : "response.json";
+const sourceRecordBytes = await readFile(path.join(run, sourceRecordName));
+const sourceRecord = JSON.parse(sourceRecordBytes);
 if (
-	review.status !== "approved" ||
-	review.imageSha256 !== response.output.sha256
+	retained
+		? sourceRecord.kind !== "retained-original" ||
+			sourceRecord.generationCalls !== 0
+		: sourceRecord.status !== "succeeded"
 )
+	throw new Error("A recorded original or successful generation is required.");
+const source = retained ? sourceRecord.artwork : sourceRecord.output;
+const reviewName = retained ? "source-review.json" : "raw-review.json";
+const reviewBytes = await readFile(path.join(run, reviewName));
+const review = JSON.parse(reviewBytes);
+if (review.status !== "approved" || review.imageSha256 !== source.sha256)
 	throw new Error(
 		"Owner approval of this exact raw image is required before finishing.",
 	);
-const settingsBytes = await readFile(path.join(run, "presentation.json"));
-const settings = JSON.parse(settingsBytes);
-const sourceBytes = await readFile(path.join(run, response.output.path));
-if (sha256(sourceBytes) !== response.output.sha256)
-	throw new Error("Raw output differs from its recorded generation hash.");
+const sourceBytes = await readFile(path.join(run, source.path));
+if (sha256(sourceBytes) !== source.sha256)
+	throw new Error("Source artwork differs from its recorded hash.");
 const destination = path.join(run, "finishing", pass);
 try {
 	await stat(destination);
@@ -476,18 +481,54 @@ const { data: rgb, info } = await sharp(sourceBytes)
 const { width, height } = info;
 if (width !== height)
 	throw new Error("This icon study requires a square master.");
-const protection = await makeMatteProtection(
-	width,
-	height,
-	settings.matte.foregroundRegionsAt2048,
-);
-const { rgba, alpha, statistics } = extractWhite(
-	rgb,
-	width,
-	height,
-	settings.matte,
-	protection,
-);
+let protection = null;
+let foreground;
+let alpha;
+let statistics;
+if (retained) {
+	const metadata = await sharp(sourceBytes).metadata();
+	if (!metadata.hasAlpha || metadata.format !== "png")
+		throw new Error("Retained artwork must be an existing transparent PNG.");
+	if (
+		(settings.framing?.scale ?? 1) !== 1 ||
+		(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0) ||
+		settings.framing?.continuation
+	)
+		throw new Error("A retained original cannot be repositioned or redrawn.");
+	foreground = sourceBytes;
+	alpha = await sharp(sourceBytes).extractChannel(3).raw().toBuffer();
+	const backgroundPixels = alpha.filter((value) => value === 0).length;
+	if (!backgroundPixels || !alpha.some((value) => value === 255))
+		throw new Error(
+			"Inspect the original: expected transparent and opaque pixels.",
+		);
+	statistics = {
+		backgroundPixels,
+		foregroundPixels: width * height - backgroundPixels,
+		softEdgePixels: alpha.filter((value) => value > 0 && value < 255).length,
+		foregroundByteIdentical: true,
+	};
+} else {
+	protection = await makeMatteProtection(
+		width,
+		height,
+		settings.matte.foregroundRegionsAt2048,
+	);
+	const extracted = extractWhite(
+		rgb,
+		width,
+		height,
+		settings.matte,
+		protection,
+	);
+	alpha = extracted.alpha;
+	statistics = extracted.statistics;
+	foreground = await sharp(extracted.rgba, {
+		raw: { width, height, channels: 4 },
+	})
+		.png()
+		.toBuffer();
+}
 await mkdir(path.join(destination, "exports"), { recursive: true });
 await mkdir(path.join(destination, "previews"));
 const files = [];
@@ -496,7 +537,8 @@ async function save(name, bytes) {
 	files.push({ path: name, bytes: bytes.length, sha256: sha256(bytes) });
 }
 await save("settings.json", settingsBytes);
-await save("raw-review.json", reviewBytes);
+await save(reviewName, reviewBytes);
+if (retained) await save(sourceRecordName, sourceRecordBytes);
 await save("tool-snapshot.mjs", await readFile(new URL(import.meta.url)));
 if (protection)
 	await save(
@@ -505,10 +547,10 @@ if (protection)
 			.png()
 			.toBuffer(),
 	);
-const foreground = await sharp(rgba, { raw: { width, height, channels: 4 } })
-	.png()
-	.toBuffer();
-await save("extracted-foreground.png", foreground);
+await save(
+	retained ? "retained-foreground.png" : "extracted-foreground.png",
+	foreground,
+);
 await save(
 	"alpha-mask.png",
 	await sharp(alpha, { raw: { width, height, channels: 1 } })
@@ -677,8 +719,13 @@ const rounded = await sharp(square)
 	.png()
 	.toBuffer();
 for (const size of settings.exportSizes) {
-	if (size > width)
-		throw new Error("Exports may not upscale the native master.");
+	if (
+		size > width &&
+		!(retained && settings.upscaledExportSizes?.includes(size))
+	)
+		throw new Error(
+			"Upscaled exports require an explicit retained-original record.",
+		);
 	for (const [kind, bytes] of [
 		["transparent", placedForeground],
 		["icon", square],
@@ -722,13 +769,22 @@ await save(
 				toolSha256: sha256(await readFile(new URL(import.meta.url))),
 				sharp: sharp.versions.sharp,
 				input: {
-					path: `../../${response.output.path}`,
+					path: `../../${source.path}`,
 					sha256: sha256(sourceBytes),
 					width,
 					height,
 				},
-				method:
-					"Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+				method: retained
+					? "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing."
+					: "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+				...(retained
+					? {
+							generationCalls: 0,
+							upscaledExportSizes: settings.exportSizes.filter(
+								(size) => size > width,
+							),
+						}
+					: {}),
 				settings,
 				statistics,
 				placement: {
