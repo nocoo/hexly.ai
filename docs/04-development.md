@@ -32,11 +32,15 @@ Each candidate's complete static review remains available at `/artwork/logo-fami
 
 ```sh
 bun run gate:commit
+bun run check:static
+bun run test:coverage
 bun run build
 bun run test:http
 bun run test:browser
 bun run check:security
 ```
+
+Pre-commit runs only staged-file lint and affected unit tests in parallel, without coverage. Dependency/configuration changes trigger all unit tests; documentation and artwork changes with no related tests skip the suite. Full checks remain available above and run in CI. See [commit feedback](03-quality.md#commit-feedback) for selection rules and partially staged files.
 
 The package registry on this machine is filtered. Use a temporary allowed mirror for local installation; do not commit mirror URLs or credentials into the lockfile.
 

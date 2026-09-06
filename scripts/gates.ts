@@ -11,9 +11,8 @@ const groups: Record<string, string[][]> = {
 		["gitleaks", "git", ".", "--no-banner", "--redact"],
 	],
 	commit: [
-		["bun", "run", "check:static"],
-		["bun", "run", "test:coverage"],
-		["gitleaks", "protect", "--staged", "--no-banner", "--redact"],
+		["bun", "run", "lint:staged"],
+		["bun", "run", "test:changed"],
 	],
 	push: [
 		["bun", "run", "test:http"],
