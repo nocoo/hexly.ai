@@ -1,0 +1,12 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Installed dependencies and generated build/test artifacts"
+paths = [
+  '''(^|/)node_modules/''',
+  '''(^|/)dist/''',
+  '''(^|/)coverage/''',
+  '''(^|/)\.wrangler/''',
+  '''(^|/)\.test-results/''',
+]
