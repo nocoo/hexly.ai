@@ -53,7 +53,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 
 ## Running a study
 
-The active Bogo exploration is [study 04](bogo/2026-09-07-04/brief.md). The owner broadly liked study 03 and requested natural quadruped anatomy in place of its human-looking torso, plus removal of the rainbow nose markings. The flower sprig is the sole multicolored interest point. An 85 mm animal-portrait perspective guides the captured moment; the model determines the natural pose and crop. This request stops at individual raw confirmation; no new finishing or adoption is authorized yet.
+The active Bogo exploration is [study 05](bogo/2026-09-07-05/brief.md). Study 03's close portrait direction is retained; study 04 was rejected for showing the full animal. Natural anatomy must remain compatible with a tight head close-up: only a little real neck base or shoulder enters the crop, while the torso and limbs stay outside. The flower sprig is the sole multicolored interest point, with no rainbow nose freckles. A 135 mm animal-head portrait perspective guides the moment; the model chooses the exact angle and crop. This request stops at individual raw confirmation; no new finishing or adoption is authorized yet.
 
 Create a fresh project/date directory and write its `brief.md` and `prompt.txt` first. Supply reference images in the exact priority order described by the prompt. The generator refuses to overwrite any existing request; a retry needs a new study directory.
 
