@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01–03 are rejected; its next design must combine visual fullness with an approachable abstraction of the insect. Every new generation stops for raw-image confirmation before finishing.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01–03 are rejected; study 04 awaits raw-image confirmation as an approachable graphic character. Every new generation stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -67,7 +67,7 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 03](../artwork/logo-family/firefly/2026-09-06-03/notes.md) increased the occupied area with an enlarged head, gathered shell, and rounded abdomen. The owner rejected its frightening insect treatment and clarified that fullness must not come from simple magnification. Its large eye discs, hard shell, and hooked articulated legs require a different graphic abstraction. The exact native output and rejection remain archived without finishing.
 
-[Study 04](../artwork/logo-family/firefly/2026-09-06-04/brief.md) rebuilds the firefly from a rounded jade face with crescent eyes, a short body, gathered petal-shaped wings, and a warm tail light. Tiny rounded limb hints replace exposed joints. A small flame beside the cheek remains its external interest point. Brighter jade and mint are proposed for the artwork, with the existing UI colors preserved separately. The first delivery remains an untouched raw image for confirmation.
+[Study 04](../artwork/logo-family/firefly/2026-09-06-04/notes.md) produced a native 2048 × 2048 graphic firefly with crescent eyes, a short body, gathered petal-shaped wings, and a warm tail light. Tiny rounded limb hints replace exposed joints. One separate flame hovers beside the cheek above a rounded forelimb. Brighter jade, mint, and yellow-green planes dominate the artwork; the existing UI colors remain separate. The untouched output is pending owner confirmation. No extraction, finishing, or catalogue integration has occurred.
 
 ## Archive and promotion
 
