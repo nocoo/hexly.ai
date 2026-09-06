@@ -16,11 +16,11 @@ if (!frogie) throw new Error("Frogie is required as the reference identity.");
 
 describe("the imported project catalogue", () => {
 	it("includes every unique profile entry with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(65);
+		expect(projects).toHaveLength(66);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(42);
+		).toHaveLength(43);
 	});
 	it("finds projects by English, Chinese, emoji, repository name, and animal", () => {
 		for (const query of [
@@ -50,11 +50,11 @@ describe("the imported project catalogue", () => {
 	});
 	it("counts the full collection and disjoint categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(65);
+		expect(counts.all).toBe(projects.length);
 		expect(counts.archive).toBe(12);
 		expect(counts.games).toBe(4);
 		expect(Object.values(counts).reduce((sum, count) => sum + count, 0)).toBe(
-			130,
+			projects.length * 2,
 		);
 		expect(categoryCounts([]).all).toBe(0);
 	});

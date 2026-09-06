@@ -1,6 +1,6 @@
 # Project profiles
 
-All 65 unique entries from the GitHub profile are represented. Project metadata is maintained in `src/data/projects.json`; run `bun run docs:profiles` after editing it.
+All 66 unique entries from the GitHub profile are represented. Project metadata is maintained in `src/data/projects.json`; run `bun run docs:profiles` after editing it.
 
 | Project | Current identity | Foreground | Background |
 | --- | --- | --- | --- |
@@ -69,3 +69,4 @@ All 65 unique entries from the GitHub profile are represented. Project metadata 
 | [📬 Feedmaid](63-feedmaid.md) | Profile emoji | #2a6b92 | transparent |
 | [📱 InfoViz iOS](64-infoviz-ios.md) | Original asset | #104285 | transparent |
 | [🖼️ Image Uploader](65-node-image-uploader.md) | Profile emoji | #ddb42d | transparent |
+| [🧭 hexly.ai](66-hexly-ai.md) | Original asset | #bf5c3c | #f0f0e9 |
