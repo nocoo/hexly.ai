@@ -1,9 +1,9 @@
 {
-	"status": "pending",
+	"status": "rejected",
 	"imageSha256": "835fc6c79171388edd98aef5e77064b14d30548ea6b085f69db43bea296a89ab",
 	"recordedAt": "2026-09-06T22:06:44.512268+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
-	"ownerReviewedExactBytes": false,
+	"nextStep": "Use this drawing as the identity reference for study 04. No finishing or adoption of study 03.",
+	"ownerReviewedExactBytes": true,
 	"agentInspection": {
 		"inspectedAt": "2026-09-06T22:08:13.579916+00:00",
 		"method": "Viewed untouched native PNG at original detail and opened byte-identical Vite-served PNG in Chrome.",
@@ -14,5 +14,30 @@
 		],
 		"derivedImagesCreated": false,
 		"catalogueOrSourceAdoption": false
-	}
+	},
+	"decision": "revision requested; overall direction retained",
+	"directionRetained": true,
+	"decidedAt": "2026-09-06T22:15:04.866031+00:00",
+	"decisionSource": "owner review of the exact native image",
+	"ownerMessage": "这个基本可以，但是不必过于拟人，例如躯干部分其实是坐姿人的样子，保持这是个动物。此外，我们的多彩兴趣点应该聚焦一个即可，这里鼻子上多彩花纹不必，这样会导致兴趣点过多。再来一版",
+	"decisionHistory": [
+		{
+			"status": "pending",
+			"imageSha256": "835fc6c79171388edd98aef5e77064b14d30548ea6b085f69db43bea296a89ab",
+			"recordedAt": "2026-09-06T22:06:44.512268+00:00",
+			"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
+			"ownerReviewedExactBytes": false,
+			"agentInspection": {
+				"inspectedAt": "2026-09-06T22:08:13.579916+00:00",
+				"method": "Viewed untouched native PNG at original detail and opened byte-identical Vite-served PNG in Chrome.",
+				"findings": [
+					"The brown buffalo, golden curved horns, viewer-left open eye, viewer-right wink, colored muzzle flecks, and mouth-held rainbow flower sprig remain recognizable.",
+					"Connected flat facets cover the face and visible lower-right shoulder mass. The body continues beyond the lower and right image boundaries.",
+					"The result is still a largely frontal portrait; the requested turning moment is subtle. The right horn and ear have tight outer clearance, so rounded-icon safety is not established."
+				],
+				"derivedImagesCreated": false,
+				"catalogueOrSourceAdoption": false
+			}
+		}
+	]
 }
