@@ -1,0 +1,22 @@
+name: Quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quality:
+    uses: nocoo/base-ci/.github/workflows/bun-quality.yml@830346a575841cee2808abab6001d0bfa8980c1a
+    with:
+      bun-version: "1.4.0"
+      test-command: bun run test:coverage
+      lint-command: bun run lint
+      typecheck-command: bun run typecheck && bun run check:isolation
+      enable-security: "true"
+      enable-l2: "true"
+      l2-command: bun run test:http && bun run deploy:check
+      enable-l3: "true"
+      l3-command: bun run test:browser
+      l3-browser: chromium
