@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01 and 02 are rejected; study 03 redesigns the animal into a compact, visually full logo mass with a close secondary spark. Every new generation stops for raw-image confirmation before finishing.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01–03 are rejected; its next design must combine visual fullness with an approachable abstraction of the insect. Every new generation stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -64,7 +64,7 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 02](../artwork/logo-family/firefly/2026-09-06-02/notes.md) produced a strongly faceted full-body firefly with a separate flame. The owner rejected its sparse composition: an elongated body, spread wings, and a distant large flame did not form a visually full logo. Its native image and proposed sea-glass light-orbit background remain archived; no finishing or catalogue preview was created.
 
-[Study 03](../artwork/logo-family/firefly/2026-09-06-03/brief.md) starts from a broad, short firefly with an enlarged head, gathered wings, and a small flame close to its face. Overlapping anatomy supplies the visual mass, with a compact protective gesture toward the spark. It uses the adopted Frogie and owner-selected local Pew pass 04 as drawing references. The Firefly background remains a proposal to adapt after raw approval. The next handoff is the untouched image for confirmation; finishing and catalogue integration wait for that decision.
+[Study 03](../artwork/logo-family/firefly/2026-09-06-03/notes.md) increased the occupied area with an enlarged head, gathered shell, and rounded abdomen. The owner rejected its frightening insect treatment and clarified that fullness must not come from simple magnification. Its large eye discs, hard shell, and hooked articulated legs require a different graphic abstraction. The exact native output and rejection remain archived without finishing.
 
 ## Archive and promotion
 
