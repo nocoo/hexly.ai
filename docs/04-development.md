@@ -53,7 +53,11 @@ GitHub Actions automatically deploys `main` after all quality checks pass, then 
 
 ## Apex migration from Vercel
 
-Before the Workers migration, `hexly.ai` had a proxied A record pointing to `76.76.21.21`, with automatic TTL. Its rollback values are saved in [previous-apex-dns.json](deployment/previous-apex-dns.json). Wrangler uploads the ready Worker assets before attaching the custom domain and replacing that conflicting web record.
+Before the Workers migration, `hexly.ai` had a proxied A record pointing to `76.76.21.21`, with automatic TTL. Its rollback values are saved in [previous-apex-dns.json](deployment/previous-apex-dns.json).
+
+The initial CI deployment uploaded the Worker successfully, but custom-domain attachment returned Cloudflare error `100117`: the externally managed A record had to be deleted explicitly. After verifying the version, revision, document, assets, and logo at `https://hexly-ai.nocoo.workers.dev`, the backed-up apex A record was removed and `hexly.ai` was attached to Worker `hexly-ai`. Cloudflare created its managed proxied AAAA record (`100::`). Public verification then passed at `https://hexly.ai`; the original MX and TXT records were unchanged.
+
+Later CI deployments maintain this existing custom-domain binding. The Workers preview URL is marked `noindex`; the canonical public URL is `https://hexly.ai/`.
 
 Only the apex web route moves to the Worker. Existing mail records, development wildcard records, and other subdomains are independent. The Vercel deployment is retained. To roll back the routing, detach the Worker custom domain and restore the recorded apex A record; do not remove the zone's MX or TXT records.
 
