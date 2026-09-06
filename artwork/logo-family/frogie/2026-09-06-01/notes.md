@@ -1,6 +1,6 @@
 # Frogie study 01 review
 
-Status: **Candidate for review**. The current presentation uses finishing pass **02**. One Azure image request was made; both finishing passes use the same native output. The production Frogie identity and catalogue are unchanged.
+Status: **Adopted on 2026-09-06**, finishing **02**. The exact approved masters are in the Frogie source project and the hexly.ai production catalogue. One Azure image request was made; both archived finishing passes use the same native output. The adoption record is below.
 
 Open [the local review page](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) with the hexly.ai Vite server running. It contains the original/candidate comparison, icon/transparent/white modes, theme switching, native-size downloads, palette swatches, references, and the full prompt.
 
@@ -10,7 +10,7 @@ Open [the local review page](https://index.dev.hexly.ai/artwork/logo-family/frog
 - The original seated pose, three-quarter camera, prominent eyes, open singing mouth, coral tongue, folded hind legs, planted forelegs, and upper-right musical shapes remain recognizable.
 - The color-plane hierarchy is clearer across the forehead and belly. Flat facets carry the volume; the sage tile, subtle curved motifs, fine grain, and shallow shadows provide the presentation's tactile quality.
 - The generated background is near-white, with sampled empty areas around RGB 249–253. The raw output is preserved. The exported white derivative uses exact `#FFFFFF` after extraction.
-- The proposed base background is `#DCE6CA`. Actual foreground samples, coordinates, and the distinction from the existing site primary `#21C45D` are in [palette.json](palette.json).
+- The adopted base background is `#DCE6CA`. Actual foreground samples, coordinates, and the distinction from the existing site primary `#21C45D` are in [palette.json](palette.json).
 
 ## Finishing review
 
@@ -38,7 +38,7 @@ The main comparison places the unchanged original artwork on the same proposed s
 | Previous finishing pass | [finishing/01/](finishing/01/) |
 | Original Frogie backup | [frogie.png](../../../../public/logos/originals/frogie.png) |
 
-Exports include transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 pixels. Light/dark composites and browser captures support visual review. No production identity replacement, release, or catalogue synchronization is implied by this study.
+Exports include transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 pixels. Light/dark composites and browser captures preserve the review evidence. The full study remains archived after adoption.
 
 ## Adoption — 2026-09-06
 

@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Pew is the next study. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Pew study 01 is ready for review. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
 
 ## Reading the references
 
@@ -33,7 +33,7 @@ The adopted sage tile starts at `#DCE6CA`, a quieter relative of the artwork's y
 
 ## Generation and finishing
 
-1. Save the brief, exact prompt, and ordered reference roles before requesting an image. Image 1 is the approved original; images 2 and 3 are presentation references.
+1. Save the brief, exact prompt, and ordered reference roles before requesting an image. The original defines identity. For the first Frogie study, images 2 and 3 were presentation references. Subsequent studies use the approved Frogie as image 2 for drawing language, followed by the two presentation references.
 2. Use Azure Foundry / OpenAI v1 with `gpt-image-2`, the existing workflow `azure-gpt-image-cover` skill's `api-key` authentication, and credentials loaded through direnv.
 3. Request one high-quality 2048 × 2048 PNG on uniform pure white. The reference-guided request uses `/images/edits`. Verify the decoded dimensions; do not describe an upscale as native generation.
 4. Preserve the returned PNG bytes, prompt, reference hashes, sanitized request, response metadata, request ID, and usage. Never save a key or authenticated headers.
@@ -43,9 +43,17 @@ The adopted sage tile starts at `#DCE6CA`, a quieter relative of the artwork's y
 
 The [official image guide](https://developers.openai.com/api/docs/guides/image-generation), checked on 2026-09-06, allows 2048 × 2048 for `gpt-image-2`. It documents multiples of 16, a maximum edge of 3840, a maximum area of 8,294,400 pixels, and an aspect ratio up to 3:1. High input fidelity is automatic; native transparent output is not supported by this model. White-background extraction is therefore a separate finishing step.
 
+## Pew study 01
+
+The [Pew candidate](../artwork/logo-family/pew/2026-09-06-01/notes.md) preserves the liked zebra, wink, ivory/charcoal stripes, and rainbow tongue. Its continuous neck enters from the bottom and right canvas boundaries. The face and ears remain clear of the final rounded corners. This replaces the old circular neck termination with a natural portrait entering the frame.
+
+One native 2048 × 2048 generation and two extraction passes are archived. The current pass preserves every fully opaque source color and all sampled pale anatomy; its only component cleanup removes five disconnected residue pixels. The proposed `#E3DEEA` pearl-lilac tile and sampled animal colors stay separate from Pew's current UI primary. The complete review page passed desktop/mobile checks, all presentation modes, light/dark themes, downloads, and accessibility scans. The production Pew logo remains unchanged until selection.
+
 ## Archive and promotion
 
 Studies live under `artwork/logo-family/<project>/<date>-<sequence>/`; shared style references and tools live alongside them. Use a new study for every model request and a new numbered finishing directory for every rendering pass. A failed or superseded attempt is still part of the archive.
+
+Numbered finishing directories and sanitized request/response records are frozen generated artifacts, excluded from Biome formatting. `assets:check` verifies every finishing manifest, its source image, and all recorded file hashes. Active tools, mutable recipes, and review pages remain linted. Format a mutable recipe before taking its next snapshot; never rewrite an archived mask, tool snapshot, or settings file to satisfy a formatter.
 
 The workshop is outside `public/` and the production entry graph. Candidates do not automatically become live catalogue assets. After an identity is selected, update its source project, preserved version/provenance, catalogue, derivatives, palettes, and project profile together; follow the GitHub-profile synchronization skill for affected catalogue information.
 
