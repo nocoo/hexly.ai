@@ -14,6 +14,7 @@
 
 - define phase one and quality gates ([be27e53](https://github.com/nocoo/hexly.ai/commit/be27e5390ff5755d04f0b727da65cd9cdac67288))
 - publish the directory guide and preview ([c93bee4](https://github.com/nocoo/hexly.ai/commit/c93bee4632e1ba142d2b6cc188ae4bd89d3058f1))
+- record the verified apex migration ([70b9f92](https://github.com/nocoo/hexly.ai/commit/70b9f925a0ce2b977a092550750aaef9e3b19f9f))
 
 ### Features
 
