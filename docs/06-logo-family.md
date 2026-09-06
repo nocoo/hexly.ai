@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies 01–04 are rejected; campfire study 05 remains unselected. The owner favored the direction of reference-guided study 06 and requested study 07 as a clean white foreground, with night and glow layers composed separately. Every new generation stops for raw-image confirmation before finishing.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies remain unadopted. Study 09 follows the owner's new depth direction: a tactile 3D campfire in front, a faceted firefly diagonally behind, and white-source artwork for separate night and glow layers. Every new generation stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -75,7 +75,9 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 07](../artwork/logo-family/firefly/2026-09-06-07/notes.md) returned a native 2048 × 2048 foreground on a near-white matte, with the night field and external glow removed. The flame and abdomen retain solid bright facets. The owner identified a missing second eye; the earlier single-visible-eye instruction must be corrected. These exact bytes and the feedback remain archived without extraction or finishing. The night motif and warm glow are still planned as independent layers after a corrected raw source is approved.
 
-[Study 08](../artwork/logo-family/firefly/2026-09-06-08/notes.md) returned one native 2048 × 2048 source with two visible dark faceted eyes. The viewer-left eye is new; the original viewer-right eye and the flying composition remain recognizable, with local facial planes redrawn. The white-matte presentation and separate night/glow plan are retained. The untouched output was displayed immediately and opened in Chrome; confirmation is pending before extraction or finishing.
+[Study 08](../artwork/logo-family/firefly/2026-09-06-08/notes.md) returned one native 2048 × 2048 source with two visible dark faceted eyes. The owner rejected its perspective because the eye placement made the head appear to face backward. The requested correction changes the camera and depth relationship, beyond simply adding another eye. The exact output remains archived without finishing.
+
+[Study 09](../artwork/logo-family/firefly/2026-09-06-09/brief.md) places a tactile three-dimensional campfire and short split logs in the lower-left foreground, with one fragmented firefly approaching from the upper-right background. Minimal overlap establishes depth while leaving the insect mostly visible. The fire uses organic curved volume; connected facets belong to the insect. The source remains on white without external bloom, preserving the owner's separate background/light workflow and the immediate raw checkpoint.
 
 ## Archive and promotion
 

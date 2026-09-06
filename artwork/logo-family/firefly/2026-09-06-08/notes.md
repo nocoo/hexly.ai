@@ -6,7 +6,7 @@ The source now shows two dark faceted eyes with restrained pale highlights. The 
 
 The source has a visually near-white backdrop, opaque artwork, and no obvious external glow. No extraction, matte cleanup, light layers, background composition, derivative sizes, full review pages, or catalogue integration have been performed. Small-size readability and transparent edge quality remain untested until raw confirmation.
 
-The untouched output was displayed immediately and opened in Chrome at [the local raw URL](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-08/raw/generated.png). The URL serves byte-identical content. The owner was asked to confirm the eye pair; [raw-review.json](raw-review.json) remains pending for these exact bytes.
+The untouched output was displayed immediately and opened in Chrome at [the local raw URL](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-08/raw/generated.png). The URL serves byte-identical content. The owner rejected the head perspective because the eyes appeared to face backward, and requested a new foreground campfire with a faceted firefly diagonally behind it. The decision is recorded in [raw-review.json](raw-review.json). Study 09 redesigns the camera and depth ordering; these exact bytes remain unprocessed.
 
 - Request ID: `11ec1bb4-37d4-4547-b180-d266cc3a00cf`.
 - Raw SHA-256: `d0bdde5d5c070111c142c42ea7d5ff902838871abe9802a2eebdaf477f70cdf7`.

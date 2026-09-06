@@ -1,0 +1,51 @@
+{
+	"status": "Plan only; no rendering before raw approval",
+	"sourceMode": "isolated-white",
+	"foreground": {
+		"source": "raw/generated.png",
+		"background": "#FFFFFF",
+		"externalGlow": false,
+		"translucentWings": false,
+		"preserveOpaqueColors": true
+	},
+	"nightBackground": {
+		"base": "#10282E",
+		"ambient": "#1C3A43",
+		"shade": "#08161D",
+		"motif": "#29424B",
+		"geometry": "A restrained offset crescent, sparse small star marks, and quiet cloud contours in outer negative space; distinct from Frogie ribbons and Pew stripes",
+		"colorEvidence": "Proposed presentation colors, not image samples or existing website tokens"
+	},
+	"lighting": {
+		"sources": ["foreground-flame", "rear-firefly-abdomen"],
+		"externalEmission": "Render independently after foreground extraction and owner confirmation",
+		"layerOrder": [
+			"night-background",
+			"flame-background-glow",
+			"abdomen-background-glow",
+			"optional-contact-shadow",
+			"clean-foreground",
+			"optional-near-source-light"
+		],
+		"recipeRequirements": [
+			"separate source masks",
+			"layer PNGs",
+			"positions",
+			"radii",
+			"colors",
+			"opacities",
+			"blend modes",
+			"tool snapshot",
+			"checksums"
+		],
+		"limits": "Add radiance later with separate masks; preserve clean opaque artwork and do not flatten flame volume or insect facets."
+	},
+	"rawCheckpoint": "Exact new white-background source must be confirmed before these presentation layers are created",
+	"composition": {
+		"primary": "Tactile 3D campfire and three short logs in lower-left/central foreground",
+		"animal": "One faceted firefly diagonally behind in upper-right, approaching head-first toward the flame",
+		"occlusion": "Only a narrow wing/root overlap; keep head, both eyes, abdomen, and at least 85% of insect visible",
+		"camera": "One slightly elevated three-quarter camera; anterior face directed toward fire, thorax and abdomen trailing upper-right",
+		"materials": "Organic smooth-volume flame and physical wood; connected facets on insect only"
+	}
+}
