@@ -45,7 +45,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-05](firefly/2026-09-06-05/notes.md) | Superseded and unselected; untouched scene preserved without finishing | [Untouched raw](firefly/2026-09-06-05/raw/generated.png) |
 | Firefly | [2026-09-06-06](firefly/2026-09-06-06/notes.md) | Improved direction retained; clean foreground requested in study 07 | [Untouched raw](firefly/2026-09-06-06/raw/generated.png) |
 | Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye | [Untouched raw](firefly/2026-09-06-07/raw/generated.png) |
-| Firefly | [2026-09-06-08](firefly/2026-09-06-08/brief.md) | Targeted second-eye edit prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-08/brief.md) |
+| Firefly | [2026-09-06-08](firefly/2026-09-06-08/notes.md) | Two-eye native source shown; awaiting raw confirmation | [Untouched raw](firefly/2026-09-06-08/raw/generated.png) |
 
 ## Running a study
 
