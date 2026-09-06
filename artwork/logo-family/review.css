@@ -303,6 +303,10 @@ figcaption span {
 	border-radius: 23%;
 	box-shadow: 0 6px 14px #233d2421;
 }
+.size-well img.foreground-mark {
+	border-radius: 0;
+	box-shadow: none;
+}
 .context-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -333,6 +337,10 @@ figcaption span {
 }
 .sidebar-sample img {
 	border-radius: 6px;
+}
+.sidebar-sample img.foreground-mark,
+.browser-sample img.foreground-mark {
+	border-radius: 0;
 }
 .sidebar-sample strong {
 	font-weight: 500;

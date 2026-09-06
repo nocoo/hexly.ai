@@ -1,0 +1,229 @@
+{
+	"status": "passed",
+	"method": "Exact selected-master bytes; small PNG pixels match a LANCZOS resize of root foreground; decoded ICO sizes and alpha; README target matches rounded master",
+	"projects": [
+		{
+			"project": "frogie",
+			"study": "2026-09-06-01",
+			"finishing": "03",
+			"masters": [
+				{
+					"path": "logo.png",
+					"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon.png",
+					"sha256": "d1df7b7901af384a3eed8ccdf326d474159ee766e6384990b4e938f33696b2cc",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon-rounded.png",
+					"sha256": "5363cb58535b8904182a37a725b5f64a2f381296f82b4a15969defff3b37cbc0",
+					"matchesSelected": true
+				}
+			],
+			"smallMarks": [
+				{
+					"path": "packages/web/public/logo-24.png",
+					"size": 24,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 220,
+					"sha256": "42e6c51d295c0eed01fde5eafabb5a4f478b795c8a8dc1cffd5953bf027e7e3a"
+				},
+				{
+					"path": "packages/web/public/logo-80.png",
+					"size": 80,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 3455,
+					"sha256": "59d962ed9bd2cc5e0a332acba4a840758aaf815338c7e9f3aff357aab9a56ba6"
+				},
+				{
+					"path": "packages/web/public/favicon.png",
+					"size": 32,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 451,
+					"sha256": "9712f1b322dfba4b84b499daf9d9586802c44502e7b987a6aaed42659c4806d3"
+				}
+			],
+			"ico": {
+				"path": "packages/web/public/favicon.ico",
+				"sizes": [16, 32],
+				"everyEntryTransparent": true
+			},
+			"readme": {
+				"path": "assets/brand/icon-rounded.png",
+				"matchesSelectedRounded": true
+			}
+		},
+		{
+			"project": "pew",
+			"study": "2026-09-06-01",
+			"finishing": "04",
+			"masters": [
+				{
+					"path": "logo.png",
+					"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon.png",
+					"sha256": "d3734589bc3d7062c7473421a44570ff7cdd2744a813c756dd2a7eacb4e1f29a",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon-rounded.png",
+					"sha256": "26c25676ec61a4fb2d1b3f01f8b959743f7f42ad17ccffd5efacb56a099fa69c",
+					"matchesSelected": true
+				}
+			],
+			"smallMarks": [
+				{
+					"path": "packages/web/public/logo-24.png",
+					"size": 24,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 191,
+					"sha256": "f7007e9cb8108410112b3687db50c9583d23ab215b1ab0cef26bbcc41ecd55f4"
+				},
+				{
+					"path": "packages/web/public/logo-80.png",
+					"size": 80,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 2786,
+					"sha256": "39bf1a97fc360ca2775d29019d0b5a24354132794d57bce64f08e0e2fa0c7c9e"
+				},
+				{
+					"path": "packages/web/src/app/icon.png",
+					"size": 32,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 377,
+					"sha256": "311d87a12a5f3a6b017fc8a7900fcf38958f13bec04e75d7416f30ad4f8bd49d"
+				}
+			],
+			"ico": {
+				"path": "packages/web/src/app/favicon.ico",
+				"sizes": [16, 32],
+				"everyEntryTransparent": true
+			},
+			"readme": {
+				"path": "assets/brand/icon-rounded.png",
+				"matchesSelectedRounded": true
+			}
+		},
+		{
+			"project": "firefly",
+			"study": "2026-09-06-10",
+			"finishing": "02",
+			"masters": [
+				{
+					"path": "logo.png",
+					"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon.png",
+					"sha256": "5b44f514117c0e7471e60fcd628880c3c7116a9d597e9d1f944aaa621318992e",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon-rounded.png",
+					"sha256": "47baff0c6569e958d6e7665c663a2c66ea0f449b7d1859752420bad2a58d8776",
+					"matchesSelected": true
+				}
+			],
+			"smallMarks": [
+				{
+					"path": "public/logo-24.png",
+					"size": 24,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 305,
+					"sha256": "c912dd46f59a61c5e8285dd30fbb8971180e160be47043d3dedb58c5d1632811"
+				},
+				{
+					"path": "public/logo-80.png",
+					"size": 80,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 4337,
+					"sha256": "e14b9505724d78938505fd58e3d8d651b0c054db819eced84c9e1a0c1e8c004d"
+				},
+				{
+					"path": "src/app/icon.png",
+					"size": 32,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 584,
+					"sha256": "d40fc00a1ff692e26a73c7bc6ca62d7095a7d01d3f4082085847d246875e0653"
+				}
+			],
+			"ico": {
+				"path": "src/app/favicon.ico",
+				"sizes": [16, 32, 48],
+				"everyEntryTransparent": true
+			},
+			"readme": {
+				"path": "./assets/brand/icon-rounded.png",
+				"matchesSelectedRounded": true
+			}
+		},
+		{
+			"project": "bogo",
+			"study": "2026-09-07-05",
+			"finishing": "04",
+			"masters": [
+				{
+					"path": "logo.png",
+					"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon.png",
+					"sha256": "4063fb82588f5fe1221b32e530fddfd979a7b0414ffd0a49c896db6c020940e6",
+					"matchesSelected": true
+				},
+				{
+					"path": "assets/brand/icon-rounded.png",
+					"sha256": "95a93d50cf868bd2eed7a82b20be17ce6374a54f9306e1e4839ed1b4b38530a9",
+					"matchesSelected": true
+				}
+			],
+			"smallMarks": [
+				{
+					"path": "packages/ui/public/logo-24.png",
+					"size": 24,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 195,
+					"sha256": "babeae354dc8e0df584f5e007d72a54d209cd66b1508cf5b39fb4ff94ff5d062"
+				},
+				{
+					"path": "packages/ui/public/logo-80.png",
+					"size": 80,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 2916,
+					"sha256": "4e1e6f8f051dc08198cb965a858b22ff23d0bc45f7eba3953914a74161d55e35"
+				},
+				{
+					"path": "packages/ui/public/favicon.png",
+					"size": 32,
+					"source": "logo.png",
+					"pixelIdenticalToResizedForeground": true,
+					"transparentPixels": 393,
+					"sha256": "5dcc750fdfddb62fa7a218f1baf9b0d713e27b118cd068599aa950753754350c"
+				}
+			],
+			"readme": {
+				"path": "assets/brand/icon-rounded.png",
+				"matchesSelectedRounded": true
+			}
+		}
+	]
+}
