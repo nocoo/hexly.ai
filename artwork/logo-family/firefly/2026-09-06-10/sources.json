@@ -10,39 +10,54 @@
 		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
 		"status": "Existing Firefly UI tokens; unchanged"
 	},
-	"status": "rejected-for-subject-hierarchy",
-	"preparedAt": "2026-09-06T12:04:34.770777+00:00",
+	"status": "prepared",
+	"preparedAt": "2026-09-06T12:33:58.781123+00:00",
 	"sourceMode": "isolated-white",
 	"rawSource": "raw/generated.png",
-	"supersedes": "firefly/2026-09-06-08",
-	"ownerDirection": "The perspective is wrong and the eyes face backward. Put a tactile 3D fire in the foreground, a fragmented firefly diagonally behind it with little occlusion, and optionally wood beneath the fire.",
-	"intent": "A new coherent scene: smooth tactile 3D fire and wood in the lower-left foreground, with one bronze faceted firefly approaching from the upper-right background and minimal occlusion.",
+	"supersedes": "firefly/2026-09-06-09",
+	"ownerDirection": "The proportions are unsatisfactory. The firefly must be the main subject rather than appearing equal to the fire. Use the proportions of the earlier owner-supplied JPEG for another version.",
+	"intent": "A dominant broad-winged fragmented firefly, with a much smaller tactile flame and two tiny logs in the lower-left foreground. The owner JPEG restores the animal proportions and subject hierarchy.",
+	"hierarchy": {
+		"primary": "Firefly, approximately 75-80% visual weight",
+		"secondary": "Small fire and wood, approximately 20-25% visual weight",
+		"depth": "Small fire in front; the primary insect diagonally behind",
+		"scaleEvidence": "Proposed layout constraints informed by the reference, not measured source ratios"
+	},
 	"overrides": [
-		"Replace the rejected head/camera and prior pose",
-		"Organic three-dimensional flame rather than faceted fire",
-		"Keep connected facets on the insect",
-		"Preserve white-matte source and independently composed night/glow layers"
+		"Restore animal dominance instead of equal subjects or a campfire-led scene",
+		"Owner JPEG becomes primary model input again",
+		"Keep the foreground fire tactile and three-dimensional",
+		"Keep connected facets across the insect",
+		"Preserve the white source and independent night/glow workflow"
 	],
 	"rawCheckpoint": "Immediately show the untouched result for confirmation before extraction, light layers, background composition, derivatives, or full review pages.",
-	"promptSha256": "b2c22cf690c758447f083c87a2042655fd17ee66706d67b4b9824d7f9dbec12c",
+	"promptSha256": "9cb9a649c75b73ccc515463198142bf86f6fbd591bd16c7c68b82e843f9a0418",
 	"references": [
 		{
 			"index": 1,
-			"role": "Primary connected-facet drawing for the firefly only; not frog anatomy, green colors, music notes, or flame material",
+			"role": "Primary owner reference for animal dominance, broad-wing flight, and internal insect proportions; adapt depth order and replace pixels, outlines, sparks, and background",
+			"path": "artwork/logo-family/references/firefly-flight-flame.jpeg",
+			"sha256": "fe235f9268009834f1368dde909458667f19c9aa153f4b6eb6db0bd4eec02a1f",
+			"bytes": 357335,
+			"originalPath": "/Users/nocoo/Downloads/firefly.jpeg"
+		},
+		{
+			"index": 2,
+			"role": "Connected flat facet drawing for the insect only; not frog anatomy, colors, accessories, or fire rendering",
 			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
 			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e",
 			"bytes": 5418502
 		},
 		{
-			"index": 2,
-			"role": "Primary premium icon presence, tactile three-dimensional material for fire/wood, coherent depth, and compact framing",
+			"index": 3,
+			"role": "Compact icon presence and tactile three-dimensional material for the small fire and wood",
 			"path": "artwork/logo-family/references/ref01.jpeg",
 			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff",
 			"bytes": 370854
 		},
 		{
-			"index": 3,
-			"role": "Supporting close-view dimensional material and restrained contact shadows; not animal identity or background colors",
+			"index": 4,
+			"role": "Supporting material restraint and coherent depth; not animal identity or background colors",
 			"path": "artwork/logo-family/references/ref02.jpeg",
 			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
 			"bytes": 196683
@@ -88,15 +103,13 @@
 			"study": "firefly/2026-09-06-08",
 			"status": "rejected-for-head-perspective",
 			"rawSha256": "d0bdde5d5c070111c142c42ea7d5ff902838871abe9802a2eebdaf477f70cdf7"
+		},
+		{
+			"study": "firefly/2026-09-06-09",
+			"status": "rejected-for-subject-hierarchy",
+			"rawSha256": "545b3927d4fa1598e46def36e134ff77faffc99d3aeacbf25a8bac1b3fa5b56f"
 		}
 	],
 	"presentationPlan": "presentation-plan.json",
-	"publication": "Local only; no source adoption, push, or deployment",
-	"generatedAt": "2026-09-06T12:11:24.921765+00:00",
-	"rawSha256": "545b3927d4fa1598e46def36e134ff77faffc99d3aeacbf25a8bac1b3fa5b56f",
-	"requestId": "c9ffa512-3387-4b50-a62a-a26c83a955ee",
-	"rawReviewUrl": "https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-09/raw/generated.png",
-	"rejectedAt": "2026-09-06T12:33:58.781123+00:00",
-	"ownerFeedback": "The proportions are unsatisfactory. The firefly must be the main subject rather than appearing equal to the fire. Use the proportions of the earlier owner-supplied JPEG for another version.",
-	"supersededBy": "firefly/2026-09-06-10"
+	"publication": "Local only; no source adoption, push, or deployment"
 }
