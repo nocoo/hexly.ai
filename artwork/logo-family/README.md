@@ -53,7 +53,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 
 ## Running a study
 
-The active Bogo exploration is [study 03](bogo/2026-09-07-03/brief.md): a flower-chewing buffalo caught turning and winking, with an 85 mm portrait perspective. The model determines the natural pose and crop. This request stops at individual raw confirmation; no new finishing or adoption is authorized yet.
+The active Bogo exploration is [study 04](bogo/2026-09-07-04/brief.md). The owner broadly liked study 03 and requested natural quadruped anatomy in place of its human-looking torso, plus removal of the rainbow nose markings. The flower sprig is the sole multicolored interest point. An 85 mm animal-portrait perspective guides the captured moment; the model determines the natural pose and crop. This request stops at individual raw confirmation; no new finishing or adoption is authorized yet.
 
 Create a fresh project/date directory and write its `brief.md` and `prompt.txt` first. Supply reference images in the exact priority order described by the prompt. The generator refuses to overwrite any existing request; a retry needs a new study directory.
 
