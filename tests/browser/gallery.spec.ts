@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import projects from "../../src/data/projects.json" with { type: "json" };
+import type { LogoFamily } from "../../src/model/project";
 
 for (const id of projects
 	.filter((project) => project.family)
@@ -9,7 +10,8 @@ for (const id of projects
 	}) => {
 		const project = projects.find((item) => item.id === id);
 		if (!project?.family) throw new Error(`Missing refinement: ${id}`);
-		const { family } = project;
+		const family: LogoFamily = project.family;
+		const retained = family.method === "retained-original";
 		await page.goto(`/logos/${id}`);
 		await expect(page.locator("#identity-title")).toContainText(project.title);
 		const repository = page
@@ -113,7 +115,12 @@ for (const id of projects
 		for (const link of await page.locator(".alpha-grid a").all())
 			await expect(link).toHaveAttribute("href", family.foreground.original);
 		await page
-			.getByText("Read the exact generation prompt", { exact: true })
+			.getByText(
+				retained
+					? "Read the presentation brief"
+					: "Read the exact generation prompt",
+				{ exact: true },
+			)
 			.click();
 		await expect(page.locator(".generation-prompt")).toContainText(
 			project.title,
@@ -123,8 +130,23 @@ for (const id of projects
 			page.getByText("View the presentation references", { exact: true }),
 		).toHaveCount(0);
 		await expect(
-			page.getByRole("link", { name: "Untouched generation" }),
-		).toHaveAttribute("href", `${family.root}/raw.png`);
+			page.getByRole("link", {
+				name: retained ? "Untouched original" : "Untouched generation",
+			}),
+		).toHaveAttribute(
+			"href",
+			`${family.root}/${retained ? "source" : "raw"}.png`,
+		);
+		if (retained) {
+			await expect(
+				page.getByRole("link", { name: "Untouched generation" }),
+			).toHaveCount(0);
+			await expect(page.locator(".identity-archive")).toContainText(
+				"Original artwork retained",
+			);
+			expect(family.foreground.sha256).toBe(project.logo.sha256);
+			expect(family.previous.sha256).toBe(project.logo.sha256);
+		}
 		const downloadEvent = page.waitForEvent("download");
 		await page.getByRole("link", { name: "Download original" }).click();
 		const download = await downloadEvent;
