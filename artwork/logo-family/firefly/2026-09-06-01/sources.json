@@ -1,0 +1,44 @@
+{
+	"project": "firefly",
+	"sourceRepository": "https://github.com/nocoo/firefly",
+	"sourceRevision": "8093578e9960f36cd112b7c04a841e6d5e345aed",
+	"sourcePath": "logo.png",
+	"sourceSha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269",
+	"approvedFamilyReference": "frogie/2026-09-06-01/finishing/02",
+	"promptSha256": "d53527f6195ad1744957f128749b346ebb41acedaae6851d199b9e30e4bad19e",
+	"intent": "Complete redesign as a recognizable firefly whose luminous abdomen represents thoughtful guidance.",
+	"styleException": "Owner explicitly permits a more skeuomorphic, sculptural treatment; retain the family composition, color discipline, faceted inlays and tonal presentation.",
+	"status": "candidate",
+	"references": [
+		{
+			"index": 1,
+			"role": "Rejected historical Firefly identity; concept only",
+			"path": "public/logos/originals/firefly.png",
+			"sha256": "2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269"
+		},
+		{
+			"index": 2,
+			"role": "Approved family language; sculpture permitted for Firefly",
+			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e"
+		},
+		{
+			"index": 3,
+			"role": "Animal collection, material and composition",
+			"path": "artwork/logo-family/references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff"
+		},
+		{
+			"index": 4,
+			"role": "Close-up material and presentation",
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018"
+		}
+	],
+	"websiteColors": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
+		"status": "Existing Firefly UI tokens; unchanged"
+	}
+}
