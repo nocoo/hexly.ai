@@ -16,7 +16,7 @@ firefly/2026-09-06-01/        Superseded smooth lantern study
 firefly/2026-09-06-02/        Rejected sparse firefly-and-flame composition
 firefly/2026-09-06-03/        Rejected enlarged insect character
 firefly/2026-09-06-04/        Rejected cute firefly character
-firefly/2026-09-06-05/        Dark campfire scene with small fireflies
+firefly/2026-09-06-05/        Unselected dark campfire scene
 ```
 
 Each study keeps its brief, exact prompt, sanitized request/response metadata, untouched model output, extraction mask, transparent artwork, icon exports, and review page. Use a new numbered study directory for each generation; do not overwrite previous results.
@@ -39,7 +39,7 @@ For an approved existing identity, preserve its animal, camera, pose, expression
 | Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png) |
 | Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png) |
 | Firefly | [2026-09-06-04](firefly/2026-09-06-04/notes.md) | Rejected: generic cute character; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-04/raw/generated-white.png) |
-| Firefly | [2026-09-06-05](firefly/2026-09-06-05/brief.md) | Owner-directed dark scene prepared; raw confirmation before finishing | [Brief](firefly/2026-09-06-05/brief.md) |
+| Firefly | [2026-09-06-05](firefly/2026-09-06-05/notes.md) | Superseded and unselected; untouched scene preserved without finishing | [Untouched raw](firefly/2026-09-06-05/raw/generated.png) |
 
 ## Running a study
 

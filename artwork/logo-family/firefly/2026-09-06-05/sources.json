@@ -10,7 +10,7 @@
 		"source": "src/app/styles/tokens.css --primary: 217 91% 60%; --background: 220 14% 94%",
 		"status": "Existing Firefly UI tokens; unchanged"
 	},
-	"status": "prepared",
+	"status": "superseded-unselected",
 	"preparedAt": "2026-09-06T11:10:14.207408+00:00",
 	"sourceMode": "scene",
 	"rawSource": "raw/generated.png",
@@ -74,5 +74,9 @@
 		}
 	],
 	"scenePlan": "scene-plan.json",
-	"publication": "Local only; no source adoption, push, or deployment"
+	"publication": "Local only; no source adoption, push, or deployment",
+	"supersededBy": "firefly/2026-09-06-06",
+	"generatedAt": "2026-09-06T11:14:07.060252+00:00",
+	"rawSha256": "793f16921b95b411de4ca1155169c053afc96b6ae11ad18ddd8e7e976d91a5f8",
+	"disposition": "The owner supplied a new graphic reference before selecting this scene. No approval or explicit aesthetic rejection was given."
 }
