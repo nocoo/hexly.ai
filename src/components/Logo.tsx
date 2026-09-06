@@ -19,15 +19,13 @@ export function Logo({
 		"--project-color": project.colors.primary,
 		"--project-background": project.colors.background,
 	} as CSSProperties;
-	const src =
-		size <= 16
-			? `/logos/display/${project.id}-32.webp`
-			: size <= 32
-				? `/logos/display/${project.id}-64.webp`
-				: project.logo.thumbnail;
+	const pixels = size <= 16 ? 32 : size <= 32 ? 64 : size <= 80 ? 160 : 1024;
+	const src = project.family
+		? `${project.family.root}/icon-${pixels}.webp`
+		: `/logos/display/${project.id}-${pixels}.webp`;
 	return (
 		<span
-			className={`${framed ? "logo-tile" : "logo-plain"} ${className}`}
+			className={`${framed ? "logo-tile" : "logo-plain"} ${project.family ? "logo-family" : ""} ${className}`}
 			style={style}
 		>
 			<img

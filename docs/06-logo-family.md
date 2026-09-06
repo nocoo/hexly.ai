@@ -1,6 +1,6 @@
 # Animal logo family
 
-The first study refines Frogie, one of the approved identities alongside Pew. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Pew is the next study. The drawing language is a recognizable animal built from connected, flat color facets, with one dominant color family and a restrained multicolored accent.
 
 ## Reading the references
 
@@ -22,13 +22,14 @@ Measured empty-background patches from `ref02.jpeg` are warm gray `#ACA59F`, ice
 - Keep the face primary: larger planes across broad surfaces, smaller planes only where expression and anatomy need them.
 - Use a consistent light direction and restrained highlights. Quiet tactile detail must leave the color planes legible at small sizes.
 - Large animals use head portraits. Small animals may use compact full-body poses.
+- Large portraits may enter naturally from a square frame's bottom or side. Let the neck and shoulders continue beyond the canvas; keep the face and expression intact. Do not terminate the neck with a circular medallion or a floating round cut. Keep important features clear of the final rounded corners, and distinguish intentional canvas-edge entry from accidental clipping.
 - For an approved logo, preserve the animal, pose, camera, expression, composition, and signature decoration. For a logo the owner explicitly dislikes, preserve the animal and redesign the camera, framing, pose, and decoration.
 
 ## Frogie study 01
 
 The [first study](../artwork/logo-family/frogie/2026-09-06-01/brief.md) preserves the compact seated green frog, gentle three-quarter turn, open singing mouth, folded hind legs, planted forelegs, pale-yellow belly, and music notes rising toward the upper right. The body carries the lower-left visual weight; the notes balance it diagonally.
 
-The proposed sage tile starts at `#DCE6CA`, a quieter relative of the artwork's yellow-green. It is a study color, distinct from the existing Frogie site primary `#21C45D`. The unchanged original and current palette remain in [Frogie's project profile](profiles/01-frogie.md).
+The adopted sage tile starts at `#DCE6CA`, a quieter relative of the artwork's yellow-green, distinct from the existing Frogie site primary `#21C45D`. The transparent foreground is the source repository's root `logo.png`; square and rounded masters live in its `assets/brand/`. The previous original retains its original path and hash in this repository. The promoted version, theme colors, sampled art colors, and source revision are recorded in [Frogie's project profile](profiles/01-frogie.md).
 
 ## Generation and finishing
 
@@ -48,4 +49,8 @@ Studies live under `artwork/logo-family/<project>/<date>-<sequence>/`; shared st
 
 The workshop is outside `public/` and the production entry graph. Candidates do not automatically become live catalogue assets. After an identity is selected, update its source project, preserved version/provenance, catalogue, derivatives, palettes, and project profile together; follow the GitHub-profile synchronization skill for affected catalogue information.
 
-The reusable workflow skill will capture the reviewed family rules and successful generation/finishing process. Study 01 is the first visual trial; it does not mark the wider three-project replacement phase complete.
+Adopted identities have a `family` record in `src/data/projects.json`. Their public review resources live under `public/logos/family/<project>/<study>/`: exact approved square/rounded/white masters, untouched generation, prompt, background, and a checksum manifest. Shared references have one public backup. Original foregrounds remain under versioned names in `public/logos/originals/`; previous names are immutable. `assets:build` adds optimized icon, background, and previous-artwork previews; `assets:check` validates both current and historical originals and every public archive file.
+
+The production gallery follows the complete study layout: large original/current comparison, icon/transparent/white views, composition/drawing/material notes, 128/64/32/16 px specimens, real 24 px sidebar and 16 px browser contexts, copyable art colors, separate site theme values, light/dark foreground checks, downloads, exact prompt, and references. Use actual project descriptions in context previews; a singing mascot does not make Frogie a music product.
+
+The reusable workflow skill is `../workflow/agents/skills/zhengli-project-logo/SKILL.md`. Frogie is the first promoted identity; this does not mark the wider three-project replacement phase complete.
