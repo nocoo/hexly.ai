@@ -1,0 +1,52 @@
+{
+	"status": "Plan only; no rendering before raw approval",
+	"sourceMode": "isolated-white",
+	"foreground": {
+		"source": "raw/generated.png",
+		"background": "#FFFFFF",
+		"externalGlow": false,
+		"translucentWings": false,
+		"preserveOpaqueColors": true
+	},
+	"nightBackground": {
+		"base": "#10282E",
+		"ambient": "#1C3A43",
+		"shade": "#08161D",
+		"motif": "#29424B",
+		"geometry": "A restrained offset crescent, sparse small star marks, and quiet cloud contours in outer negative space; distinct from Frogie ribbons and Pew stripes",
+		"colorEvidence": "Proposed presentation colors, not image samples or existing website tokens"
+	},
+	"lighting": {
+		"sources": ["foreground-flame", "rear-firefly-abdomen"],
+		"externalEmission": "Render independently after foreground extraction and owner confirmation",
+		"layerOrder": [
+			"night-background",
+			"flame-background-glow",
+			"abdomen-background-glow",
+			"optional-contact-shadow",
+			"clean-foreground",
+			"optional-near-source-light"
+		],
+		"recipeRequirements": [
+			"separate source masks",
+			"layer PNGs",
+			"positions",
+			"radii",
+			"colors",
+			"opacities",
+			"blend modes",
+			"tool snapshot",
+			"checksums"
+		],
+		"limits": "Add radiance later with separate masks; preserve clean opaque artwork and do not flatten flame volume or insect facets."
+	},
+	"rawCheckpoint": "Exact new white-background source must be confirmed before these presentation layers are created",
+	"composition": {
+		"primary": "Dominant broad-winged faceted firefly, compact head/thorax and rounded luminous abdomen",
+		"secondary": "A small tactile 3D flame on two tiny crossed logs in lower-left foreground",
+		"hierarchy": "Animal carries approximately 75-80% of visual weight; foreground depth does not promote the fire to primary subject",
+		"occlusion": "One narrow lower-left wing-edge overlap; keep head, eyes, abdomen, and almost all wing area visible",
+		"camera": "Coherent gently elevated front three-quarter camera, head naturally turned toward the small flame",
+		"materials": "Connected flat facets across the insect; organic curved fire volume and restrained wood grain"
+	}
+}

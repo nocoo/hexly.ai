@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies remain unadopted. Study 09 follows the owner's new depth direction: a tactile 3D campfire in front, a faceted firefly diagonally behind, and white-source artwork for separate night and glow layers. Every new generation stops for raw-image confirmation before finishing.
+Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly studies remain unadopted. Study 10 restores animal dominance from the owner JPEG: a broad-winged faceted firefly with a small tactile fire in the foreground, on a white source for separate night and glow layers. Every new generation stops for raw-image confirmation before finishing.
 
 ## Reading the references
 
@@ -77,7 +77,9 @@ One native 2048 × 2048 generation and four finishing passes are archived. Pass 
 
 [Study 08](../artwork/logo-family/firefly/2026-09-06-08/notes.md) returned one native 2048 × 2048 source with two visible dark faceted eyes. The owner rejected its perspective because the eye placement made the head appear to face backward. The requested correction changes the camera and depth relationship, beyond simply adding another eye. The exact output remains archived without finishing.
 
-[Study 09](../artwork/logo-family/firefly/2026-09-06-09/notes.md) returned one native 2048 × 2048 source with a curved three-dimensional campfire and split logs in the lower-left foreground, and a fragmented firefly facing it from the upper-right. The near eye is clear; the far eye is a narrow sliver. The insect remains prominent, its abdomen slopes down-right, and the two masses have very little overlap. The source has a near-white matte with a soft log contact shadow and no obvious external flame bloom. The untouched image was displayed and opened in Chrome immediately; composition and eye perspective await owner confirmation before extraction, separate night/glow layers, or catalogue integration.
+[Study 09](../artwork/logo-family/firefly/2026-09-06-09/notes.md) returned one native 2048 × 2048 source with a curved three-dimensional campfire and split logs in the lower-left foreground, and a fragmented firefly facing it from the upper-right. The near eye is clear; the far eye is a narrow sliver. The insect remains prominent, its abdomen slopes down-right, and the two masses have very little overlap. The source has a near-white matte with a soft log contact shadow and no obvious external flame bloom. The untouched image was displayed and opened in Chrome immediately. The owner rejected its proportions because the insect and fire competed equally; the firefly must be the main subject. The exact raw bytes remain archived without finishing.
+
+[Study 10](../artwork/logo-family/firefly/2026-09-06-10/brief.md) returns the owner JPEG to the first reference position, restoring the broad-winged animal as the dominant mass and shrinking the fire and wood to a nearby foreground interest point. Depth order and visual priority are specified independently. The insect retains connected facets; the small fire retains organic three-dimensional volume. The white source, separate night/glow layers, and immediate raw confirmation remain required.
 
 ## Archive and promotion
 
