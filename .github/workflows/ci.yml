@@ -1,4 +1,4 @@
-name: Quality
+name: Quality & Deploy
 on:
   push:
     branches: [main]
@@ -11,6 +11,7 @@ jobs:
     uses: nocoo/base-ci/.github/workflows/bun-quality.yml@830346a575841cee2808abab6001d0bfa8980c1a
     with:
       bun-version: "1.4.0"
+      pre-command: bun run assets:check
       test-command: bun run test:coverage
       lint-command: bun run lint
       typecheck-command: bun run typecheck && bun run check:isolation
@@ -20,3 +21,45 @@ jobs:
       enable-l3: "true"
       l3-command: bun run test:browser
       l3-browser: chromium
+  deploy:
+    name: Deploy
+    needs: quality
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: hexly-ai-production
+      cancel-in-progress: false
+    environment:
+      name: production
+      url: https://hexly.ai
+    steps:
+      - name: Checkout verified revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "26.7.0"
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: "1.4.0"
+      - name: Install locked dependencies
+        run: bun install --frozen-lockfile
+      - name: Build production assets
+        run: bun run build && bun run deploy:check
+      - name: Reject a superseded revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          current_revision=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)
+          test "$current_revision" = "$GITHUB_SHA"
+      - name: Deploy Workers Static Assets
+        run: bunx wrangler deploy --env ""
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Verify production release
+        run: bun run verify:production
