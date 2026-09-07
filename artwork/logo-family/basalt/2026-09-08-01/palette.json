@@ -1,0 +1,109 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4",
+		"colorSpace": "sRGB",
+		"sampling": "Exact native pixels at least four pixels inside the fully opaque extracted foreground. No averaging, recoloring or resampling."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Candy blue",
+				"zh": "糖果蓝"
+			},
+			"role": "primary",
+			"color": "#5ac2f6",
+			"pixel": [638, 850],
+			"rgb": [90, 194, 246],
+			"sourceSha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4"
+		},
+		{
+			"label": {
+				"en": "Fresh green",
+				"zh": "鲜绿"
+			},
+			"role": "accent",
+			"color": "#8dd35a",
+			"pixel": [935, 575],
+			"rgb": [141, 211, 90],
+			"sourceSha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4"
+		},
+		{
+			"label": {
+				"en": "Soft pink",
+				"zh": "柔粉"
+			},
+			"role": "accent",
+			"color": "#f694b2",
+			"pixel": [780, 1350],
+			"rgb": [246, 148, 178],
+			"sourceSha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4"
+		},
+		{
+			"label": {
+				"en": "Finial gold",
+				"zh": "宝顶金"
+			},
+			"role": "accent",
+			"color": "#eec14b",
+			"pixel": [1026, 209],
+			"rgb": [238, 193, 75],
+			"sourceSha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4"
+		},
+		{
+			"label": {
+				"en": "Hanbaiyu white",
+				"zh": "汉白玉白"
+			},
+			"role": "accent",
+			"color": "#edeeeb",
+			"pixel": [842, 1763],
+			"rgb": [237, 238, 235],
+			"sourceSha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4"
+		},
+		{
+			"label": {
+				"en": "Pearl structure",
+				"zh": "珍珠色构件"
+			},
+			"role": "accent",
+			"color": "#d3d7d8",
+			"pixel": [960, 717],
+			"rgb": [211, 215, 216],
+			"sourceSha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4"
+		}
+	],
+	"presentation": {
+		"base": "#ede6d8",
+		"light": "#faf7ee",
+		"shade": "#dbd1c0",
+		"motif": "#a8987e",
+		"pattern": "Corner tower construction grid",
+		"status": "Selected local review presentation; source adoption and publication have not occurred for this new color study."
+	},
+	"referencePalette": {
+		"path": "palette-reference.json",
+		"note": "Basalt control swatches supplied to the model are paint references. Physical shading in the returned image produces the separately sampled artwork colors above."
+	},
+	"website": {
+		"primary": "#0a6099",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f",
+		"theme": {
+			"primary": {
+				"value": "204 88% 32%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-foreground"
+			}
+		},
+		"repositoryRevision": "53df43d64d9514bd42a6f1999c4ff369afaa99cb",
+		"note": "Existing contrast-adjusted semantic tokens remain independent from the bright raw candy swatches and the local logo artwork."
+	}
+}

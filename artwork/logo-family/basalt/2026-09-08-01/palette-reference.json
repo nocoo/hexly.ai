@@ -1,0 +1,177 @@
+{
+	"repository": "https://github.com/nocoo/basalt",
+	"repositoryRevision": "53df43d64d9514bd42a6f1999c4ff369afaa99cb",
+	"recordedAt": "2026-09-07T22:19:44.294258+00:00",
+	"sourceFiles": [
+		{
+			"path": "packages/basalt/src/providers/accent.tsx",
+			"sha256": "447958abe60285dc33d9b03f365ee9ca48c4962d6690dfbb090317d6b48afade",
+			"snapshot": "references/basalt-accent.tsx.txt"
+		},
+		{
+			"path": "packages/basalt/src/styles/tokens.css",
+			"sha256": "ce89d96ecb21c6915fcfa0b16bed6a3dd363257b5b4696081f34d82c37cad283",
+			"snapshot": "references/basalt-tokens.css.txt"
+		}
+	],
+	"conversion": "CSS HSL converted to sRGB with colorsys.hls_to_rgb and rounded to the nearest 8-bit channel.",
+	"controlSwatches": [
+		{
+			"id": "primary",
+			"label": "Blue",
+			"token": "--basalt-accent-1",
+			"lightHsl": "204 88% 62%",
+			"lightHex": "#49aff3",
+			"darkHsl": "204 90% 70%",
+			"darkHex": "#6ec0f7"
+		},
+		{
+			"id": "sky",
+			"label": "Ice",
+			"token": "--basalt-accent-2",
+			"lightHsl": "191 79% 70%",
+			"lightHex": "#76d9ef",
+			"darkHsl": "191 79% 74%",
+			"darkHex": "#88def1"
+		},
+		{
+			"id": "teal",
+			"label": "Bondi",
+			"token": "--basalt-accent-3",
+			"lightHsl": "182 62% 47%",
+			"lightHex": "#2ebdc2",
+			"darkHsl": "182 62% 63%",
+			"darkHex": "#66d7db"
+		},
+		{
+			"id": "green",
+			"label": "Green",
+			"token": "--basalt-accent-4",
+			"lightHsl": "113 58% 62%",
+			"lightHex": "#73d666",
+			"darkHsl": "113 58% 70%",
+			"darkHex": "#90df86"
+		},
+		{
+			"id": "lime",
+			"label": "Lime",
+			"token": "--basalt-accent-5",
+			"lightHsl": "79 70% 64%",
+			"lightHex": "#bbe363",
+			"darkHsl": "79 70% 70%",
+			"darkHex": "#c6e87d"
+		},
+		{
+			"id": "amber",
+			"label": "Yellow",
+			"token": "--basalt-accent-6",
+			"lightHsl": "49 100% 69%",
+			"lightHex": "#ffe261",
+			"darkHsl": "49 100% 73%",
+			"darkHex": "#ffe675"
+		},
+		{
+			"id": "orange",
+			"label": "Tangerine",
+			"token": "--basalt-accent-7",
+			"lightHsl": "27 95% 65%",
+			"lightHex": "#fb9d51",
+			"darkHsl": "27 95% 72%",
+			"darkHex": "#fbb174"
+		},
+		{
+			"id": "red",
+			"label": "Strawberry",
+			"token": "--basalt-accent-8",
+			"lightHsl": "5 85% 66%",
+			"lightHex": "#f26b5f",
+			"darkHsl": "5 85% 73%",
+			"darkHex": "#f58980"
+		},
+		{
+			"id": "rose",
+			"label": "Pink",
+			"token": "--basalt-accent-9",
+			"lightHsl": "345 88% 72%",
+			"lightHex": "#f67998",
+			"darkHsl": "345 88% 77%",
+			"darkHex": "#f891ab"
+		},
+		{
+			"id": "purple",
+			"label": "Grape",
+			"token": "--basalt-accent-10",
+			"lightHsl": "280 53% 71%",
+			"lightHex": "#c28edc",
+			"darkHsl": "280 53% 77%",
+			"darkHex": "#cfa5e3"
+		},
+		{
+			"id": "indigo",
+			"label": "Blueberry",
+			"token": "--basalt-accent-11",
+			"lightHsl": "237 66% 69%",
+			"lightHex": "#7c81e4",
+			"darkHsl": "237 66% 77%",
+			"darkHex": "#9ea2eb"
+		},
+		{
+			"id": "gray",
+			"label": "Pearl",
+			"token": "--basalt-accent-12",
+			"lightHsl": "210 20% 87%",
+			"lightHex": "#d7dee4",
+			"darkHsl": "210 20% 88%",
+			"darkHex": "#dae0e7"
+		}
+	],
+	"selectedLightSwatches": [
+		{
+			"id": "primary",
+			"label": "Blue",
+			"token": "--basalt-accent-1",
+			"lightHsl": "204 88% 62%",
+			"lightHex": "#49aff3",
+			"darkHsl": "204 90% 70%",
+			"darkHex": "#6ec0f7"
+		},
+		{
+			"id": "rose",
+			"label": "Pink",
+			"token": "--basalt-accent-9",
+			"lightHsl": "345 88% 72%",
+			"lightHex": "#f67998",
+			"darkHsl": "345 88% 77%",
+			"darkHex": "#f891ab"
+		},
+		{
+			"id": "green",
+			"label": "Green",
+			"token": "--basalt-accent-4",
+			"lightHsl": "113 58% 62%",
+			"lightHex": "#73d666",
+			"darkHsl": "113 58% 70%",
+			"darkHex": "#90df86"
+		},
+		{
+			"id": "amber",
+			"label": "Yellow",
+			"token": "--basalt-accent-6",
+			"lightHsl": "49 100% 69%",
+			"lightHex": "#ffe261",
+			"darkHsl": "49 100% 73%",
+			"darkHex": "#ffe675"
+		},
+		{
+			"id": "gray",
+			"label": "Pearl",
+			"token": "--basalt-accent-12",
+			"lightHsl": "210 20% 87%",
+			"lightHex": "#d7dee4",
+			"darkHsl": "210 20% 88%",
+			"darkHex": "#dae0e7"
+		}
+	],
+	"distinction": "Blue, Pink, Green and Yellow match the fixed light-theme chart colors. Pearl uses the pale control swatch, not the darker chart gray. The semantic primary #0a6099 is a separate contrast-adjusted UI token.",
+	"materialDirection": "White Hanbaiyu marble foundation and balustrade. The existing tower uses the selected bright candy palette as physically shaded surface colors."
+}
