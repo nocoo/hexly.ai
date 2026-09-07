@@ -1,5 +1,7 @@
 # 🧭 hexly.ai
 
+Historical site identity. Removed from the displayed catalogue at the owner’s request on 2026-09-08; its brand record remains in `src/data/site-identity.json`.
+
 ## Profile
 
 - Repository: [nocoo/hexly.ai](https://github.com/nocoo/hexly.ai)

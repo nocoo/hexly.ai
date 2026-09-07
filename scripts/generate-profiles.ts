@@ -1,20 +1,27 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import type { Project } from "../src/model/project";
 
 const projects: Project[] = JSON.parse(
 	await readFile("src/data/projects.json", "utf8"),
 );
 await mkdir("docs/profiles", { recursive: true });
+const existingProfiles = await readdir("docs/profiles");
+let nextProfileNumber = Math.max(
+	0,
+	...existingProfiles.map((name) => Number(name.match(/^(\d+)-/)?.[1] ?? 0)),
+);
 const index = [
 	"# Project profiles",
 	"",
-	`All ${projects.length} unique entries from the GitHub profile are represented. Project metadata is maintained in \`src/data/projects.json\`; run \`bun run docs:profiles\` after editing it.`,
+	`${projects.length} projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in \`src/data/projects.json\`; run \`bun run docs:profiles\` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.`,
 	"",
 	"| Project | Catalogue artwork | Source primary | Source background |",
 	"| --- | --- | --- | --- |",
 ];
-for (const [position, project] of projects.entries()) {
-	const name = `${String(position + 1).padStart(2, "0")}-${project.id}.md`;
+for (const project of projects) {
+	const name =
+		existingProfiles.find((name) => name.endsWith(`-${project.id}.md`)) ??
+		`${String(++nextProfileNumber).padStart(2, "0")}-${project.id}.md`;
 	index.push(
 		`| [${project.emoji} ${project.title}](${name}) | ${project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);

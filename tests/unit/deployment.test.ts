@@ -2,13 +2,11 @@ import { readFileSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import manifest from "../../package.json";
 import { verifyDeployment } from "../../scripts/verify-deployment";
-import projects from "../../src/data/projects.json";
+import identity from "../../src/data/site-identity.json";
 
 const origin = new URL("https://deployment.example.test");
 const revision = "a".repeat(40);
 const retry = { attempts: 3, delayMs: 0 };
-const identity = projects.find((project) => project.id === "hexly-ai");
-if (!identity) throw new Error("Missing directory identity.");
 const logoPath = identity.logo.original;
 const logo = readFileSync(`public${logoPath}`);
 
