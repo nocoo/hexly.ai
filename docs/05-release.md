@@ -38,6 +38,6 @@ Repository Actions secrets:
 
 The token needs Workers deployment permissions on the account, Workers Routes permissions for the zone, and the read permissions Wrangler requires for account/zone discovery. Keep token values in GitHub Secrets; local interactive Wrangler authentication is independent.
 
-The workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. The Deploy job runs only for `main`, after the reusable quality workflow succeeds. It checks out the same Git SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the Wrangler step.
+The workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. The Deploy job runs only for `main`, after both the reusable quality workflow and the separate browser job succeed. Browser testing and deployment pin Node.js 26.7.0. Deployment checks out the same Git SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the Wrangler step.
 
 After publication, inspect the actual remote workflow and public metadata. A successful local build or accepted upload alone is not release completion.
