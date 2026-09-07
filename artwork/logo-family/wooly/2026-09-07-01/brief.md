@@ -1,0 +1,22 @@
+# Wooly retained-original study
+
+The familiar woolly wink, on a soft rose field of cloudlike folds.
+
+This is a presentation-only refinement. No image model was called; there is no generation prompt or provider request/response. Keep the original animal, expression, pose, canvas, colors, facets, and existing accents byte-for-byte. Do not add another accessory.
+
+The same mischievous wink
+The sheep, curled forelock, wink, tongue, ears, and original bust framing remain unchanged. No neck extension or new animal drawing is introduced.
+
+Cream planes and a pink accent
+Broad ivory and warm cream facets keep the face light. The original tongue remains the playful accent; pale anatomy and antialiased boundaries are copied exactly.
+
+Soft cloud seams
+A deeper rose field gives the ivory wool contrast. Wide uneven scallops, fine grain, and shallow lighting suggest a tactile wool fold around the empty edges.
+
+Source: https://github.com/nocoo/wooly/blob/348dac5c402063de8ef6cf69f8c93f8da43347bf/logo.png
+SHA-256: 95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36
+Native dimensions: 2048 × 2048
+
+All requested exports are native-size or downsampled derivatives.
+
+The separate transparent master remains the source for small app marks and favicons. Large README and gallery presentations use the rounded icon. Keep an individual before/after page even though both sides use the same foreground. Label the completed identity Refined.

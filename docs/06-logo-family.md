@@ -1,6 +1,6 @@
 # Animal logo family
 
-Frogie study 01, finishing 02, was approved and adopted on 2026-09-06. Frogie has a local finishing 03 contrast preview; Pew's finishing 04 replaces the shared background curves with its own stripe motif. Their source projects retain the previously adopted Frogie and original Pew. Firefly study 10, finishing 02, is now adopted in its source repository: a broad-winged faceted firefly with a small tactile fire, separate night/glow layers, and consistent 84% placement for rounded-safe borders. Bogo study 05, finishing 04, is now adopted in its local source checkout, with a natural close-up and one rainbow flower sprig. Publication remains paused. Every new generation stops for raw-image confirmation before finishing.
+The family supports both new drawings and retained-original presentations. The current nine-project batch preserves R2Shot, Hooky, Zhe, Lyre, Shrike, Wooly, Noheir, Dove, and Neo exactly, with distinct tonal backgrounds and complete individual reviews. No image-generation call was made for this batch. Source adoption and publication evidence live in the project profiles and [usage SOP](07-logo-usage-sop.md). Earlier drawings, decisions, and finishing passes remain in their own archives.
 
 ## Reading the references
 
@@ -109,6 +109,30 @@ Refined identities have a `family` record in `src/data/projects.json`. New curat
 
 Both the static study HTML and `/logos/<project>` follow the complete review layout: large original/refined comparison, icon/transparent/white views, composition/drawing/material notes, 128/64/32/16 px specimens, real 24 px sidebar and 16 px browser contexts, copyable art colors, separate site theme values, light/dark foreground checks, downloads, and exact prompt. Presentation references and their disclosure appear only in static HTML and Git. Use actual project descriptions in context previews; a singing mascot does not make Frogie a music product.
 
-The delivery also includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px, a native white master, immutable history, palette evidence, a generated profile, and browser evidence for both review surfaces. Validate path refresh, navigation history, share links, and archived-project access. Redrawn cards show Refined / 已重绘 within the existing product categories; All hides archived repositories by default.
+The delivery also includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px, a native white master, immutable history, palette evidence, a generated profile, and browser evidence for both review surfaces. Validate path refresh, navigation history, share links, and archived-project access. Completed presentations show Refined in both languages within the existing product categories; All hides archived repositories by default.
 
-The reusable workflow skill is `../workflow/agents/skills/zhengli-project-logo/SKILL.md`. Frogie finishing 03, Pew finishing 04, Firefly study 10 finishing 02, and Bogo study 05 finishing 04 are adopted in their local source checkouts. Their README headers use the selected rounded presentations; sidebar and browser marks use the transparent foregrounds. The [usage wiki and SOP](07-logo-usage-sop.md) records the audit, actual consumers, and completion criteria. Adoption, Git publication, and deployment are separate states; this follow-up has not been pushed or deployed.
+The reusable workflow skill is `../workflow/agents/skills/zhengli-project-logo/SKILL.md`. Record current source adoption per project in the catalogue and [usage SOP](07-logo-usage-sop.md); a completed study alone does not establish source adoption or publication.
+
+## Retained-original presentations — 2026-09-07
+
+The owner selected the existing artwork for this batch and authorized presentation finishing, source-project updates, README updates, and push. Each native transparent master is byte-identical to its source and the existing normalized original backup. The `Refined` badge denotes the completed presentation; it does not claim that an animal was redrawn.
+
+| Project | Study / pass | Native source | Background | Review |
+| --- | --- | --- | --- | --- |
+| R2Shot | `2026-09-07-01 / 01` | 920 × 920 | Dolphin wake | [Individual page](https://hexly.ai/logos/r2shot) |
+| Hooky | `2026-09-07-01 / 01` | 900 × 900 | Tidal hooks | [Individual page](https://hexly.ai/logos/hooky) |
+| Zhe | `2026-09-07-01 / 01` | 2048 × 2048 | Beeswax cells | [Individual page](https://hexly.ai/logos/zhe) |
+| Lyre | `2026-09-07-03 / 01` | 2048 × 2048 | Lyrebird fan | [Individual page](https://hexly.ai/logos/lyre) |
+| Shrike | `2026-09-07-01 / 01` | 2048 × 2048 | Folded wings | [Individual page](https://hexly.ai/logos/shrike) |
+| Wooly | `2026-09-07-01 / 01` | 2048 × 2048 | Wool cloud folds | [Individual page](https://hexly.ai/logos/wooly) |
+| Noheir | `2026-09-07-01 / 01` | 2048 × 2048 | Quiet terraces | [Individual page](https://hexly.ai/logos/noheir) |
+| Dove | `2026-09-07-03 / 01` | 2048 × 2048 | Pressed petals | [Individual page](https://hexly.ai/logos/dove) |
+| Neo | `2026-09-07-03 / 01` | 2048 × 2048 | Folded sunlight | [Individual page](https://hexly.ai/logos/neo) |
+
+Retained studies use `source.json`, `source-review.json`, `brief.md`, and `brief.txt`. Their source mode is `retained-transparent`; the catalogue method is `retained-original`. There is no fabricated model, generation prompt, provider request, or response. The public archive exposes `source.png` and `brief.txt`, with native transparent/square/rounded/white masters and a checksum manifest. R2Shot and Hooky retain their 920/900 px masters; their 1024 and 2048 px exports are explicitly recorded upscales.
+
+Each project has its own `artwork/logo-family/<project>/<study>/review.html` and `/logos/<project>` comparison. Both sides intentionally share the original foreground. The pages retain Icon/Transparent/White views, actual-size examples, palette evidence, contrasting alpha checks, downloads, and the presentation brief. Reference boards stay in static HTML and Git. Refined entries precede other projects; A–Z ordering applies within each set, including search and category results.
+
+All nine foregrounds remain unscaled and unmoved in the family masters. Eight have zero visible rounded-mask intersections. Neo retains its original lower shoulder entry: the mask meets 3,798 terminal shoulder pixels (about 0.14% of the visible foreground), while facial features and ears remain clear. This is an explicitly inspected original boundary relationship, not a changed transparent source. Native app icons use their own platform insets; a full composition is never declared maskable without verifying its safe region.
+
+The [usage SOP](07-logo-usage-sop.md) and each source repository's `assets/brand/README.md` record actual consumers, source commits, and platform exceptions. [Batch evidence](../artwork/logo-family/audits/2026-09-07-retained/) records exact bytes, foreground sizes, ICO entries, native assets, and browser/publication checks.

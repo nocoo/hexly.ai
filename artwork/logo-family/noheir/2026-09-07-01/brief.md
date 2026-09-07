@@ -1,0 +1,22 @@
+# Noheir retained-original study
+
+The familiar warm cow, framed by quiet terraces in a cool green field.
+
+This is a presentation-only refinement. No image model was called; there is no generation prompt or provider request/response. Keep the original animal, expression, pose, canvas, colors, facets, and existing accents byte-for-byte. Do not add another accessory.
+
+Keep the gentle three-quarter view
+The cow, horns, ears, expression, and original shoulder silhouette remain exactly as supplied. The warm animal stays prominent without changing its proportions.
+
+Warm patches, clear eyes
+The existing copper, cream, coral nose, and blue eye facets are retained. This presentation-only pass adds no accessory, repaint, or model generation.
+
+A cool terraced field
+Unequal stepped contours sit on a muted green field. Their broad rhythm and tiny lit edges contrast the warm cow while keeping the finance app UI palette separate.
+
+Source: https://github.com/nocoo/noheir/blob/2c99001444856d7756589254a52696af2cdfbab9/logo.png
+SHA-256: 2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb
+Native dimensions: 2048 × 2048
+
+All requested exports are native-size or downsampled derivatives.
+
+The separate transparent master remains the source for small app marks and favicons. Large README and gallery presentations use the rounded icon. Keep an individual before/after page even though both sides use the same foreground. Label the completed identity Refined.

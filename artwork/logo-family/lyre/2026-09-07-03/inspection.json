@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3656299,
+		"repository": "https://github.com/nocoo/lyre",
+		"repositoryRevision": "f22d7fa974f0440477b148f1e22c42fc418caa51",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/lyre/blob/f22d7fa974f0440477b148f1e22c42fc418caa51/logo.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 183,
+			"top": 128,
+			"right": 1941,
+			"bottom": 1870
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 52.37638419370626,
+		"clippedPixels": 0
+	},
+	"framingAssessment": "The entire retained silhouette remains inside the rounded boundary; no visible source pixels are clipped.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/lyre",
+			"/artwork/logo-family/lyre/2026-09-07-03/review.html"
+		]
+	}
+}

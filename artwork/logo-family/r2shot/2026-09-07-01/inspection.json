@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"width": 920,
+		"height": 920,
+		"bytes": 668704,
+		"repository": "https://github.com/nocoo/r2shot",
+		"repositoryRevision": "761799416deb2a977eee92b2392746e16f6bc644",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 51,
+			"top": 49,
+			"right": 870,
+			"bottom": 870
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 49.5,
+		"clippedPixels": 0
+	},
+	"framingAssessment": "The entire retained silhouette remains inside the rounded boundary; no visible source pixels are clipped.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/r2shot",
+			"/artwork/logo-family/r2shot/2026-09-07-01/review.html"
+		]
+	}
+}
