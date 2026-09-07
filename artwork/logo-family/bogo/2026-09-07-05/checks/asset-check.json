@@ -1,0 +1,232 @@
+{
+	"status": "passed",
+	"rawSha256": "40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db",
+	"nativeDimensions": [2048, 2048],
+	"opaqueExtractionPixels": 2895741,
+	"changedOpaqueExtractionPixels": 0,
+	"matteSamples": [
+		{
+			"role": "background gap",
+			"at": [575, 1451],
+			"alpha": 0
+		},
+		{
+			"role": "background gap",
+			"at": [556, 1516],
+			"alpha": 0
+		},
+		{
+			"role": "eye highlight",
+			"at": [769, 775],
+			"alpha": 255
+		},
+		{
+			"role": "eye highlight",
+			"at": [735, 794],
+			"alpha": 255
+		}
+	],
+	"placement": {
+		"scale": 0.8,
+		"offsetAt2048": [-10, 205],
+		"bounds": {
+			"left": 179,
+			"top": 478,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 44341
+	},
+	"continuation": {
+		"path": "input/edge-continuation-03.svg",
+		"sha256": "cc407b33c582d2987f7ecd1e12057bf00481d53915ab25c2295f35d33bc9fcf6",
+		"description": "Small vector continuation of clipped ear and horn contours, plus natural shoulder continuation behind the approved portrait. Original fully opaque placed pixels are verified unchanged; no stretched or repeated edge pixels.",
+		"addedPixels": 94364,
+		"opaquePixelsPreserved": 1841155
+	},
+	"featureSafety": "framing-04.json",
+	"exports": [
+		{
+			"path": "exports/bogo-transparent-2048.png",
+			"size": 2048,
+			"bytes": 3637079,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		{
+			"path": "exports/bogo-icon-2048.png",
+			"size": 2048,
+			"bytes": 5154256,
+			"sha256": "4063fb82588f5fe1221b32e530fddfd979a7b0414ffd0a49c896db6c020940e6"
+		},
+		{
+			"path": "exports/bogo-rounded-2048.png",
+			"size": 2048,
+			"bytes": 5081941,
+			"sha256": "95a93d50cf868bd2eed7a82b20be17ce6374a54f9306e1e4839ed1b4b38530a9"
+		},
+		{
+			"path": "exports/bogo-transparent-1024.png",
+			"size": 1024,
+			"bytes": 1008723,
+			"sha256": "158be191b46446ab3a894e809a706619aa7560fee6bea4ec43f659498288b412"
+		},
+		{
+			"path": "exports/bogo-icon-1024.png",
+			"size": 1024,
+			"bytes": 1356355,
+			"sha256": "b90797a3e676b815707d237ec998c139f22d8807659bce45b9924714f6536268"
+		},
+		{
+			"path": "exports/bogo-rounded-1024.png",
+			"size": 1024,
+			"bytes": 1354536,
+			"sha256": "dd5a07ece9347b40759ec3be1ed2d8b53293617468f57ff7209e1a59d223059d"
+		},
+		{
+			"path": "exports/bogo-transparent-512.png",
+			"size": 512,
+			"bytes": 299525,
+			"sha256": "2deaf4acae8e52b31e5b902376d31fd0721b3b666c276d052d2988bbb666fc84"
+		},
+		{
+			"path": "exports/bogo-icon-512.png",
+			"size": 512,
+			"bytes": 405641,
+			"sha256": "6bdd14a414c9dcc3b17db05377364832d50d7392befee16d641f0d23f3cf43c5"
+		},
+		{
+			"path": "exports/bogo-rounded-512.png",
+			"size": 512,
+			"bytes": 407358,
+			"sha256": "41069a7cb727146d2d99b9a0634b7ba924b136576491d3997caee55a478cc306"
+		},
+		{
+			"path": "exports/bogo-transparent-256.png",
+			"size": 256,
+			"bytes": 89907,
+			"sha256": "d2185d7adc938ac8dc7d0d99f5e12904e95f4d1fb5dd3cfe63d862ac462dccd3"
+		},
+		{
+			"path": "exports/bogo-icon-256.png",
+			"size": 256,
+			"bytes": 109097,
+			"sha256": "4e8a26078741190b5de37006620d960f95b0a0ecb5c5055cf4cc2c0527b72689"
+		},
+		{
+			"path": "exports/bogo-rounded-256.png",
+			"size": 256,
+			"bytes": 111865,
+			"sha256": "1e35127be6cbd3c56e3f77f6168c7d7f3e19916a107edfd400c803430c48fe16"
+		},
+		{
+			"path": "exports/bogo-transparent-128.png",
+			"size": 128,
+			"bytes": 26172,
+			"sha256": "3ce10e6ea77ba742776ecb3fab825bbfd47474829cc7363ffe0622fc55e48452"
+		},
+		{
+			"path": "exports/bogo-icon-128.png",
+			"size": 128,
+			"bytes": 32373,
+			"sha256": "cb176c36e70ede3791aefe40bc42ad5bc213d637f626b35fcd864c340466624b"
+		},
+		{
+			"path": "exports/bogo-rounded-128.png",
+			"size": 128,
+			"bytes": 33865,
+			"sha256": "a4854e740c05c9e685318b6a7f18aa1914252632e1ae642b68888db0027a02cc"
+		},
+		{
+			"path": "exports/bogo-transparent-64.png",
+			"size": 64,
+			"bytes": 7791,
+			"sha256": "88624d6907665a1723a9012a9741ddd9620e152d5770568fd199a1d40dd89ca6"
+		},
+		{
+			"path": "exports/bogo-icon-64.png",
+			"size": 64,
+			"bytes": 10156,
+			"sha256": "178bc253f350a2c8d2e18e0c8c59433a8ace13972f5ec66909c30a4a6831697f"
+		},
+		{
+			"path": "exports/bogo-rounded-64.png",
+			"size": 64,
+			"bytes": 10704,
+			"sha256": "53a18c3b86dab13a41513ff88282404880404f73b06451c88e38acb70536ffb6"
+		},
+		{
+			"path": "exports/bogo-transparent-48.png",
+			"size": 48,
+			"bytes": 4746,
+			"sha256": "8483e07a1d37cee3479c4412fdcf6b369cc335611c9588657aa81a06252c0d92"
+		},
+		{
+			"path": "exports/bogo-icon-48.png",
+			"size": 48,
+			"bytes": 6159,
+			"sha256": "90e78d5a318a4150a246004391ce05d0ced7400bb827c947b42f6053f81561ad"
+		},
+		{
+			"path": "exports/bogo-rounded-48.png",
+			"size": 48,
+			"bytes": 6512,
+			"sha256": "932b00eff14a4fca1db251081c2241c68d4476645d4b4c6e32d2139bc252b6cf"
+		},
+		{
+			"path": "exports/bogo-transparent-32.png",
+			"size": 32,
+			"bytes": 2421,
+			"sha256": "9161288d494297330f01d751a200aafe15fd5ec47fab860f65147d565dc0ced9"
+		},
+		{
+			"path": "exports/bogo-icon-32.png",
+			"size": 32,
+			"bytes": 3211,
+			"sha256": "2671bbfbed031477e721293dd61003566a6570065bb98af53f5da5f79a011f4b"
+		},
+		{
+			"path": "exports/bogo-rounded-32.png",
+			"size": 32,
+			"bytes": 3352,
+			"sha256": "372f0a703dfc9c1c4d08801b0ce8cffa45315e9e553f2c41d4ecc809fa164c30"
+		},
+		{
+			"path": "exports/bogo-transparent-24.png",
+			"size": 24,
+			"bytes": 1517,
+			"sha256": "8023b1f516bd6529ead011aec1aef499a450783aec11ac3185202df65132fc9c"
+		},
+		{
+			"path": "exports/bogo-icon-24.png",
+			"size": 24,
+			"bytes": 1928,
+			"sha256": "26a3981c12f01e712c37c7c848fcb9e1235ffc1eb43ef5d9c3aa22e8e8359d59"
+		},
+		{
+			"path": "exports/bogo-rounded-24.png",
+			"size": 24,
+			"bytes": 2036,
+			"sha256": "82e958b73f8d72ae3fbcf3e988079d39a1c275b82e28b1757812f61863355d4a"
+		},
+		{
+			"path": "exports/bogo-transparent-16.png",
+			"size": 16,
+			"bytes": 817,
+			"sha256": "4d13c469f3c95081a8f16b4778f1b395efb579a6040bd5ba483dfed1f060c8da"
+		},
+		{
+			"path": "exports/bogo-icon-16.png",
+			"size": 16,
+			"bytes": 968,
+			"sha256": "9507bef3fb2ac958fc5641087c390c6b1c0ffbc58f939f6ed6580b8cd22e3a66"
+		},
+		{
+			"path": "exports/bogo-rounded-16.png",
+			"size": 16,
+			"bytes": 1006,
+			"sha256": "a8f85819e45f6498f82f843d4fcea441606df25ed3336dd319a3f440fd77f7b6"
+		}
+	]
+}

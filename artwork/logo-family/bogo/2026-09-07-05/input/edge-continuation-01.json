@@ -1,0 +1,193 @@
+{
+	"method": "Local vector completion behind the uniformly placed approved extraction; no generation, cloned edge pixels, neck stretching, or repainting of the accepted opaque artwork.",
+	"source": {
+		"path": "../raw/generated.png",
+		"sha256": "40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db"
+	},
+	"placement": {
+		"width": 1679,
+		"left": 164,
+		"top": 184,
+		"nativeWidth": 2048
+	},
+	"geometry": "Small ear and horn contour tips plus a continuation of the already accepted shoulder through the lower frame.",
+	"facets": [
+		{
+			"name": "left-ear-upper",
+			"points": [[1, 877], [-20, 899], [1, 897]],
+			"samples": [[5, 883], [5, 894]],
+			"axis": "y",
+			"sampledRgb": [[123, 78, 53], [139, 85, 54]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "left-ear-lower",
+			"points": [[1, 895], [-20, 899], [1, 916]],
+			"samples": [[5, 898], [5, 909]],
+			"axis": "y",
+			"sampledRgb": [[139, 86, 53], [142, 87, 59]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "horn-rim",
+			"points": [[2046, 494], [2082, 545], [2098, 598], [2046, 547]],
+			"samples": [[2040, 504], [2040, 538]],
+			"axis": "y",
+			"sampledRgb": [[144, 101, 47], [170, 114, 46]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "horn-return",
+			"points": [[2046, 545], [2098, 598], [2078, 688], [2046, 735]],
+			"samples": [[2040, 558], [2040, 713]],
+			"axis": "y",
+			"sampledRgb": [[170, 116, 48], [116, 79, 37]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "ear-top",
+			"points": [[2046, 1042], [2093, 1107], [2138, 1176], [2046, 1097]],
+			"samples": [[2040, 1055], [2040, 1084]],
+			"axis": "y",
+			"sampledRgb": [[123, 81, 53], [125, 81, 52]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "ear-fold",
+			"points": [[2046, 1095], [2138, 1176], [2110, 1201], [2046, 1186]],
+			"samples": [[2040, 1110], [2040, 1170]],
+			"axis": "y",
+			"sampledRgb": [[147, 92, 56], [159, 100, 61]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "ear-lower",
+			"points": [[2046, 1184], [2110, 1201], [2046, 1226]],
+			"samples": [[2040, 1192], [2040, 1212]],
+			"axis": "y",
+			"sampledRgb": [[158, 100, 62], [156, 97, 60]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-top",
+			"points": [[2046, 1408], [2190, 1548], [2154, 1670], [2046, 1524]],
+			"samples": [[2040, 1424], [2040, 1504]],
+			"axis": "y",
+			"sampledRgb": [[101, 67, 46], [115, 75, 50]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-fold",
+			"points": [[2046, 1522], [2154, 1670], [2046, 1596]],
+			"samples": [[2040, 1542], [2040, 1580]],
+			"axis": "y",
+			"sampledRgb": [[80, 54, 40], [80, 54, 40]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-light",
+			"points": [
+				[2046, 1594],
+				[2154, 1670],
+				[2190, 1548],
+				[2338, 1800],
+				[2190, 1850],
+				[2046, 1734]
+			],
+			"samples": [[2040, 1630], [2040, 1710]],
+			"axis": "y",
+			"sampledRgb": [[114, 76, 51], [118, 79, 54]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-mid",
+			"points": [[2046, 1732], [2190, 1850], [2046, 1928]],
+			"samples": [[2040, 1760], [2040, 1890]],
+			"axis": "y",
+			"sampledRgb": [[104, 68, 47], [108, 73, 49]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-lower",
+			"points": [[2046, 1926], [2190, 1850], [2315, 2160], [2046, 2049]],
+			"samples": [[2040, 1950], [2040, 2038]],
+			"axis": "y",
+			"sampledRgb": [[81, 57, 42], [82, 59, 42]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "shoulder-outside",
+			"points": [[2190, 1850], [2338, 1800], [2380, 2390], [2315, 2160]],
+			"samples": [[1990, 1670], [2000, 1860]],
+			"axis": "y",
+			"sampledRgb": [[102, 68, 47], [105, 71, 49]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-left",
+			"points": [[721, 2046], [804, 2046], [837, 2390], [632, 2390]],
+			"samples": [[735, 2040], [790, 2040]],
+			"axis": "x",
+			"sampledRgb": [[103, 69, 46], [103, 68, 46]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-ochre",
+			"points": [[802, 2046], [948, 2046], [1012, 2390], [837, 2390]],
+			"samples": [[833, 2040], [929, 2040]],
+			"axis": "x",
+			"sampledRgb": [[101, 67, 43], [112, 74, 49]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-shadow",
+			"points": [[946, 2046], [1108, 2046], [1012, 2390]],
+			"samples": [[981, 2040], [1080, 2040]],
+			"axis": "x",
+			"sampledRgb": [[62, 46, 38], [52, 40, 35]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-center",
+			"points": [[1106, 2046], [1350, 2046], [1330, 2390], [1012, 2390]],
+			"samples": [[1160, 2040], [1310, 2040]],
+			"axis": "x",
+			"sampledRgb": [[63, 46, 39], [51, 39, 33]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-dark",
+			"points": [[1348, 2046], [1588, 2046], [1610, 2390], [1330, 2390]],
+			"samples": [[1380, 2040], [1550, 2040]],
+			"axis": "x",
+			"sampledRgb": [[38, 32, 32], [30, 27, 27]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-fold",
+			"points": [[1586, 2046], [1760, 2046], [1850, 2390], [1610, 2390]],
+			"samples": [[1640, 2040], [1720, 2040]],
+			"axis": "x",
+			"sampledRgb": [[43, 35, 33], [38, 32, 31]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		},
+		{
+			"name": "neck-right",
+			"points": [
+				[1758, 2046],
+				[2048, 2046],
+				[2315, 2160],
+				[2380, 2390],
+				[1850, 2390]
+			],
+			"samples": [[1820, 2040], [2020, 2040]],
+			"axis": "x",
+			"sampledRgb": [[64, 47, 40], [83, 58, 44]],
+			"sampling": "Mean of a native 5 by 5 pixel patch"
+		}
+	],
+	"output": {
+		"path": "edge-continuation-01.svg",
+		"sha256": "174a853bb7598a3994d70d70cd0d99a2fa89f2519b784e481013a19894c6f1ae"
+	}
+}
