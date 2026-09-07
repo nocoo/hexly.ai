@@ -20,17 +20,18 @@
 			}
 		],
 		"queryExitCode": 0,
-		"error": null
+		"error": null,
+		"verification": "CI passed. Its independent Release workflow cannot deploy because the existing Cloudflare API token is invalid (10000/9109). Owner input has been requested for the CLOUDFLARE_API_TOKEN repository secret. The adopted logo is committed, pushed and published on Hexly."
 	},
 	"pew-game": {
-		"revision": "ee68b2dead3e5e698b2427d6a949e8e57c69d520",
+		"revision": "71b4b8165874e1986f993706c6830cc60a8107bf",
 		"runs": [
 			{
 				"conclusion": "success",
-				"databaseId": 34113099798,
-				"headSha": "ee68b2dead3e5e698b2427d6a949e8e57c69d520",
+				"databaseId": 34115879019,
+				"headSha": "71b4b8165874e1986f993706c6830cc60a8107bf",
 				"status": "completed",
-				"url": "https://github.com/nocoo/pew-game/actions/runs/34113099798",
+				"url": "https://github.com/nocoo/pew-game/actions/runs/34115879019",
 				"workflowName": "CI"
 			}
 		],
@@ -53,19 +54,20 @@
 		"error": null
 	},
 	"unseal": {
-		"revision": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a",
+		"revision": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
 		"runs": [
 			{
-				"conclusion": "failure",
-				"databaseId": 34113304313,
-				"headSha": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a",
+				"conclusion": "success",
+				"databaseId": 34116844616,
+				"headSha": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
 				"status": "completed",
-				"url": "https://github.com/nocoo/unseal/actions/runs/34113304313",
+				"url": "https://github.com/nocoo/unseal/actions/runs/34116844616",
 				"workflowName": "CI"
 			}
 		],
 		"queryExitCode": 0,
-		"error": null
+		"error": null,
+		"verification": "CI passed after formatting the new source metadata and patching only two vulnerable transitive build dependencies. The normal commit and pre-push gates remain enabled."
 	},
 	"flow": {
 		"revision": "f4a9e9464d64184b793240adff182e08c04997e1",
@@ -95,7 +97,8 @@
 			}
 		],
 		"queryExitCode": 0,
-		"error": null
+		"error": null,
+		"verification": "CI passed after the separate browserslist patch required by the normal source security gate."
 	},
 	"echo": {
 		"revision": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
@@ -142,7 +145,7 @@
 		],
 		"queryExitCode": 0,
 		"error": null,
-		"verification": "Initial Swift test hit a transient SQLite lock; the failed-job rerun passed on the unchanged source commit."
+		"verification": "All CI jobs passed after rerunning the failed Swift job on the unchanged source commit. The first attempt hit an intermittent SQLite lock."
 	},
 	"geekhub": {
 		"revision": "ca7042dc77e4c64e317793b97a1c080c6fa8e567",
@@ -157,7 +160,8 @@
 			}
 		],
 		"queryExitCode": 0,
-		"error": null
+		"error": null,
+		"verification": "CI passed after the separate browserslist and postcss-selector-parser patches required by the normal source security gate."
 	},
 	"ipsafe": {
 		"revision": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
@@ -178,6 +182,23 @@
 		"revision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
 		"runs": [
 			{
+				"conclusion": "success",
+				"databaseId": 34117637201,
+				"headSha": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+				"status": "completed",
+				"url": "https://github.com/nocoo/pokepocket/actions/runs/34117637201",
+				"workflowName": "Release",
+				"attempt": 2
+			},
+			{
+				"conclusion": "failure",
+				"databaseId": 34116453885,
+				"headSha": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+				"status": "completed",
+				"url": "https://github.com/nocoo/pokepocket/actions/runs/34116453885",
+				"workflowName": "Release"
+			},
+			{
 				"conclusion": "failure",
 				"databaseId": 34115235833,
 				"headSha": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
@@ -186,16 +207,17 @@
 				"workflowName": "Release"
 			},
 			{
-				"conclusion": "failure",
+				"conclusion": "success",
 				"databaseId": 34114769922,
 				"headSha": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
 				"status": "completed",
 				"url": "https://github.com/nocoo/pokepocket/actions/runs/34114769922",
-				"workflowName": "CI"
+				"workflowName": "CI",
+				"attempt": 3
 			}
 		],
 		"queryExitCode": 0,
 		"error": null,
-		"verification": "The snapshot regression failed at its existing pause action in both attempts (GBA, then GBC). Browser-logo inspection passed; source deployment remains separately gated by application CI."
+		"verification": "CI passed on attempt 3; the Release workflow passed all repeated quality gates and deployed the same commit on attempt 2. Earlier runs intermittently stalled inside the existing emulator pause action. Runtime code and assertions were preserved."
 	}
 }
