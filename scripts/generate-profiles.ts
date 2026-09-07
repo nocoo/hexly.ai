@@ -20,6 +20,7 @@ for (const [position, project] of projects.entries()) {
 	);
 	const family = project.family;
 	const retained = family?.method === "retained-original";
+	const material = family?.series === "material";
 	const familySection = family
 		? `## Refined identity
 
@@ -93,9 +94,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ${familySection}## ${family ? "Further refinements" : "Future family notes"}
 
-${project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
+${material ? "This is an owner-directed material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct pale engineering presentation. The animal-series drawing and accessory rules do not apply." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}
+${material ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}
 `;
 	await writeFile(`docs/profiles/${name}`, content);
 }

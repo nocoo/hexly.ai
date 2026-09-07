@@ -1,0 +1,85 @@
+{
+	"project": "basalt",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/basalt.svg",
+	"background": {
+		"base": "#e9e5dc",
+		"light": "#faf7f0",
+		"shade": "#d7d1c7",
+		"motif": "#958d80",
+		"grainAmplitude": 0.52,
+		"grainSeed": 60907361,
+		"motifOpacity": 0.23,
+		"highlightOpacity": 0.42,
+		"ribbonOpacity": 0.16,
+		"pattern": {
+			"name": "Mineral survey grid",
+			"description": "Warm mineral paper with fine 36-unit survey cells, 144-unit datum lines, sparse triangular benchmarks and shallow geological contours at the corners.",
+			"layers": [
+				{
+					"d": "M10 0V1024M0 10H1024M46 0V1024M0 46H1024M82 0V1024M0 82H1024M118 0V1024M0 118H1024M154 0V1024M0 154H1024M190 0V1024M0 190H1024M226 0V1024M0 226H1024M262 0V1024M0 262H1024M298 0V1024M0 298H1024M334 0V1024M0 334H1024M370 0V1024M0 370H1024M406 0V1024M0 406H1024M442 0V1024M0 442H1024M478 0V1024M0 478H1024M514 0V1024M0 514H1024M550 0V1024M0 550H1024M586 0V1024M0 586H1024M622 0V1024M0 622H1024M658 0V1024M0 658H1024M694 0V1024M0 694H1024M730 0V1024M0 730H1024M766 0V1024M0 766H1024M802 0V1024M0 802H1024M838 0V1024M0 838H1024M874 0V1024M0 874H1024M910 0V1024M0 910H1024M946 0V1024M0 946H1024M982 0V1024M0 982H1024M1018 0V1024M0 1018H1024",
+					"tone": "motif",
+					"strokeWidth": 0.45
+				},
+				{
+					"d": "M10 0V1024M0 10H1024M154 0V1024M0 154H1024M298 0V1024M0 298H1024M442 0V1024M0 442H1024M586 0V1024M0 586H1024M730 0V1024M0 730H1024M874 0V1024M0 874H1024M1018 0V1024M0 1018H1024",
+					"tone": "motif",
+					"strokeWidth": 0.8
+				},
+				{
+					"d": "M-30 182C62 192 72 110 176 128S263 67 307-24M-30 210C82 222 84 138 181 155S293 90 337-24M-30 238C102 252 111 166 190 184S320 110 367-24M686 1048C690 941 791 989 807 902S953 826 1052 873M714 1048C718 967 818 1005 835 916S972 854 1052 901M742 1048C744 996 846 1023 863 931S990 882 1052 929",
+					"tone": "motif",
+					"strokeWidth": 0.7
+				},
+				{
+					"d": "M76 818L202 914L358 844M202 914L260 1002M76 818L26 970M842 62L972 174L1012 42M842 62L772-12",
+					"tone": "motif",
+					"strokeWidth": 0.65
+				},
+				{
+					"d": "M76 814l4 7h-8zM68 826h16M202 910l4 7h-8zM194 922h16M358 840l4 7h-8zM350 852h16M842 58l4 7h-8zM834 70h16M972 170l4 7h-8zM964 182h16",
+					"tone": "motif",
+					"strokeWidth": 0.8
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [68, 60, 49],
+			"opacity": 0.2,
+			"blurAt2048": 78,
+			"projectionScale": [0.98, 0.38],
+			"offsetAt2048": [28, 510]
+		},
+		{
+			"color": [68, 60, 49],
+			"opacity": 0.13,
+			"blurAt2048": 36,
+			"projectionScale": [0.82, 0.26],
+			"offsetAt2048": [12, 503]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.8025,
+		"offsetAt2048": [-14, -67],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "The whole opaque block is placed uniformly inside the rounded tile. A shared target width of 1516 px and height of 1280 px keeps consistent perceived scale and room for the independent projected floor shadow. No material pieces move independently."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected near-white extraction preserves all solid surface details; no global white deletion."
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"project": "dotty",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/dotty.svg",
+	"background": {
+		"base": "#e5eaf1",
+		"light": "#f8fafc",
+		"shade": "#d6dfe9",
+		"motif": "#8c9eaf",
+		"grainAmplitude": 0.45,
+		"grainSeed": 60907331,
+		"motifOpacity": 0.24,
+		"highlightOpacity": 0.5,
+		"ribbonOpacity": 0.2,
+		"pattern": {
+			"name": "Precision drafting grid",
+			"description": "Cool drafting paper with fine 32-unit Cartesian subdivisions, stronger 128-unit construction lines, corner registration crosses and a short calibrated ruler.",
+			"layers": [
+				{
+					"d": "M16 0V1024M0 16H1024M48 0V1024M0 48H1024M80 0V1024M0 80H1024M112 0V1024M0 112H1024M144 0V1024M0 144H1024M176 0V1024M0 176H1024M208 0V1024M0 208H1024M240 0V1024M0 240H1024M272 0V1024M0 272H1024M304 0V1024M0 304H1024M336 0V1024M0 336H1024M368 0V1024M0 368H1024M400 0V1024M0 400H1024M432 0V1024M0 432H1024M464 0V1024M0 464H1024M496 0V1024M0 496H1024M528 0V1024M0 528H1024M560 0V1024M0 560H1024M592 0V1024M0 592H1024M624 0V1024M0 624H1024M656 0V1024M0 656H1024M688 0V1024M0 688H1024M720 0V1024M0 720H1024M752 0V1024M0 752H1024M784 0V1024M0 784H1024M816 0V1024M0 816H1024M848 0V1024M0 848H1024M880 0V1024M0 880H1024M912 0V1024M0 912H1024M944 0V1024M0 944H1024M976 0V1024M0 976H1024M1008 0V1024M0 1008H1024",
+					"tone": "motif",
+					"strokeWidth": 0.48
+				},
+				{
+					"d": "M48 0V1024M0 48H1024M176 0V1024M0 176H1024M304 0V1024M0 304H1024M432 0V1024M0 432H1024M560 0V1024M0 560H1024M688 0V1024M0 688H1024M816 0V1024M0 816H1024M944 0V1024M0 944H1024",
+					"tone": "motif",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M73 80H87M80 73V87M937 80H951M944 73V87M73 944H87M80 937V951M937 944H951M944 937V951M201 816H215M208 809V823M809 208H823M816 201V215",
+					"tone": "motif",
+					"strokeWidth": 1
+				},
+				{
+					"d": "M48 192V80H160M864 944H976V832M80 912H272M80 908V920M92 908V915M104 908V915M116 908V915M128 908V920M140 908V915M152 908V915M164 908V915M176 908V920M188 908V915M200 908V915M212 908V915M224 908V920M236 908V915M248 908V915M260 908V915M272 908V920",
+					"tone": "motif",
+					"strokeWidth": 0.75
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [51, 61, 77],
+			"opacity": 0.2,
+			"blurAt2048": 78,
+			"projectionScale": [0.98, 0.38],
+			"offsetAt2048": [28, 510]
+		},
+		{
+			"color": [51, 61, 77],
+			"opacity": 0.13,
+			"blurAt2048": 36,
+			"projectionScale": [0.82, 0.26],
+			"offsetAt2048": [12, 503]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.8181,
+		"offsetAt2048": [-11, -55],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "The whole opaque block is placed uniformly inside the rounded tile. A shared target width of 1516 px and height of 1280 px keeps consistent perceived scale and room for the independent projected floor shadow. No material pieces move independently."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected extraction only; opaque material white is preserved. Dotty uses threshold 245 after inspecting white cells, and removes eight outside residue components totaling 131 pixels."
+	}
+}

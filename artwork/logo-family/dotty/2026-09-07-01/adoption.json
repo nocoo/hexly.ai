@@ -1,0 +1,39 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"study": "dotty/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/dotty",
+	"sourceCommit": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+	"masters": {
+		"logo.png": {
+			"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "3805d754d3d4d78191e7fa5f883a23b96f2289d5100723481fa882b0d0f6ce20",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "9e47936711f8795123c0381ffd456b4fd743a4844912aee2607ec124847dd106",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "2f347689bd1ba0163679d6e3edd18135390036549f3f346765afa0e453ea3dc2",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/assets/brand/README.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/dotty",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/dotty/2026-09-07-01/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-materials/source-publication.json",
+		"note": "Source adoption and public deployment are verified separately against the exact revision in the batch report."
+	}
+}

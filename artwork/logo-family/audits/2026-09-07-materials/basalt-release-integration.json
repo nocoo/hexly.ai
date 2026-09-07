@@ -1,0 +1,27 @@
+{
+	"adoptionCommit": "8e41ff077391e76d07df786b15c655138ef58989",
+	"integratedReleaseCommit": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+	"reason": "The owner’s concurrent v2.1.0 release integrated the isolated logo adoption commit and superseded its earlier CI run. No unrelated release changes were made by this logo task.",
+	"version": "2.1.0",
+	"website": "https://basaltui.com",
+	"theme": {
+		"primary": {
+			"value": "204 88% 32%",
+			"source": "packages/basalt/src/styles/tokens.css --basalt-primary"
+		},
+		"background": {
+			"value": "220 14% 94%",
+			"source": "packages/basalt/src/styles/tokens.css --basalt-background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "packages/basalt/src/styles/tokens.css --basalt-foreground"
+		}
+	},
+	"masters": {
+		"logo.png": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+		"assets/brand/icon.png": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1",
+		"assets/brand/icon-rounded.png": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9",
+		"assets/brand/background.png": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840"
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"project": "basalt",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/basalt.svg",
+	"background": {
+		"base": "#ede6d8",
+		"light": "#faf7ee",
+		"shade": "#dbd1c0",
+		"motif": "#a8987e",
+		"grainAmplitude": 0.46,
+		"grainSeed": 60907362,
+		"motifOpacity": 0.24,
+		"highlightOpacity": 0.42,
+		"ribbonOpacity": 0.16,
+		"pattern": {
+			"name": "Corner tower construction grid",
+			"description": "Pale champagne architectural drawing paper with fine 40-unit cells, 160-unit datum lines, spare roof-elevation construction strokes, dimension ticks and registration crosses.",
+			"layers": [
+				{
+					"d": "M12 0V1024M0 12H1024M52 0V1024M0 52H1024M92 0V1024M0 92H1024M132 0V1024M0 132H1024M172 0V1024M0 172H1024M212 0V1024M0 212H1024M252 0V1024M0 252H1024M292 0V1024M0 292H1024M332 0V1024M0 332H1024M372 0V1024M0 372H1024M412 0V1024M0 412H1024M452 0V1024M0 452H1024M492 0V1024M0 492H1024M532 0V1024M0 532H1024M572 0V1024M0 572H1024M612 0V1024M0 612H1024M652 0V1024M0 652H1024M692 0V1024M0 692H1024M732 0V1024M0 732H1024M772 0V1024M0 772H1024M812 0V1024M0 812H1024M852 0V1024M0 852H1024M892 0V1024M0 892H1024M932 0V1024M0 932H1024M972 0V1024M0 972H1024M1012 0V1024M0 1012H1024",
+					"tone": "motif",
+					"strokeWidth": 0.44
+				},
+				{
+					"d": "M52 0V1024M0 52H1024M212 0V1024M0 212H1024M372 0V1024M0 372H1024M532 0V1024M0 532H1024M692 0V1024M0 692H1024M852 0V1024M0 852H1024M1012 0V1024M0 1012H1024",
+					"tone": "motif",
+					"strokeWidth": 0.82
+				},
+				{
+					"d": "M12 220H220M52 64V244M32 224Q100 217 148 176Q175 192 244 200M36 200Q91 196 148 152Q186 180 244 178M148 120V240M28 252H244M28 246V258M244 246V258",
+					"tone": "motif",
+					"strokeWidth": 0.72
+				},
+				{
+					"d": "M780 824H996M836 756V948M756 864Q816 861 884 820Q923 848 996 850M756 892Q824 890 884 848Q932 878 996 874M884 780V944M780 936H996M780 930V942M996 930V942",
+					"tone": "motif",
+					"strokeWidth": 0.7
+				},
+				{
+					"d": "M45 52H59M52 45V59M965 52H979M972 45V59M45 972H59M52 965V979M965 972H979M972 965V979M285 92H299M292 85V99M725 932H739M732 925V939",
+					"tone": "motif",
+					"strokeWidth": 0.95
+				},
+				{
+					"d": "M812 108H972M812 102V114M852 104V112M892 102V114M932 104V112M972 102V114M52 812V932M46 812H58M48 852H56M46 892H58M48 932H56",
+					"tone": "motif",
+					"strokeWidth": 0.7
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [64, 55, 45],
+			"opacity": 0.19,
+			"blurAt2048": 75,
+			"projectionScale": [0.89, 0.21],
+			"offsetAt2048": [22, 700]
+		},
+		{
+			"color": [64, 55, 45],
+			"opacity": 0.13,
+			"blurAt2048": 34,
+			"projectionScale": [0.67, 0.12],
+			"offsetAt2048": [18, 690]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.8468,
+		"offsetAt2048": [3, -44],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "The complete tower is uniformly placed within a 1520-pixel maximum extent, centered slightly above the tile midpoint. All eaves, finials and foundation corners remain intact; the independent floor shadow supplies hovering depth without reducing the architecture to the earlier slab proportions."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Modal RGB from the outer eight-pixel native border. Exterior-connected near-white extraction only; preserve opaque gemstone highlights, obsidian reflections and architectural openings according to their geometry."
+	}
+}

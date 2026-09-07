@@ -1,0 +1,100 @@
+{
+	"project": "matrix",
+	"references": [
+		{
+			"index": 1,
+			"path": "../../dotty/2026-09-07-01/raw/generated.png",
+			"sha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+			"bytes": 2516123,
+			"role": "Accepted Dotty native raw: shared thick-square geometry, full rounded perimeter, 45-degree elevated camera and physical render quality only. Replace the checkerboard completely with the project-specific material."
+		}
+	],
+	"sourceRepository": {
+		"localHead": "2bcf6562952d81010a8d14c10061bbd9dfb3f4e1",
+		"originMain": "2bcf6562952d81010a8d14c10061bbd9dfb3f4e1",
+		"status": "## main...origin/main",
+		"previousCatalogue": {
+			"id": "matrix",
+			"repo": "matrix",
+			"title": "Matrix",
+			"emoji": "🧩",
+			"description": {
+				"en": "A sci-fi dashboard kit for interfaces that feel like a glimpse into the digital world.",
+				"zh": "带有科幻气息的仪表盘组件，让界面像是数字世界的一扇窗口。"
+			},
+			"category": "design",
+			"website": "https://matrix.hexly.ai",
+			"websiteSource": "GitHub repository homepage",
+			"repository": "https://github.com/nocoo/matrix",
+			"subject": "Existing profile emoji",
+			"reference": false,
+			"logo": {
+				"kind": "emoji",
+				"original": "/logos/emoji/matrix.png",
+				"sourcePath": "nocoo/nocoo README.md — existing project emoji",
+				"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"modified": false,
+				"width": 1024,
+				"height": 1024,
+				"bytes": 354520,
+				"sha256": "21d9c4ed49bedc6010a787ae1a16c2b7e982be264dc5c3e446a2fe9ad122e8b3",
+				"thumbnail": "/logos/display/matrix-160.webp",
+				"display": "/logos/display/matrix-1024.webp"
+			},
+			"theme": {
+				"primary": {
+					"value": "#00ff41",
+					"source": "src/index.css --matrix-ink"
+				},
+				"background": {
+					"value": "#050505",
+					"source": "src/index.css --matrix-bg"
+				},
+				"ink": {
+					"value": "#e8ffe9",
+					"source": "src/index.css --matrix-ink-bright"
+				}
+			},
+			"source": {
+				"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+				"profileSection": "Recent Projects",
+				"description": "Sci-fi dashboard UI kit with React and Tailwind for digital reality interfaces",
+				"repositoryRevision": "91556a6510239e399de92770ed0bdc6bdee33a82"
+			},
+			"colors": {
+				"primary": "#00ff41",
+				"background": "#050505",
+				"ink": "#e8ffe9",
+				"palette": [
+					{
+						"color": "#00ff41",
+						"role": "primary",
+						"source": "src/index.css --matrix-ink: #00ff41"
+					},
+					{
+						"color": "#050505",
+						"role": "background",
+						"source": "src/index.css --matrix-bg: #050505"
+					},
+					{
+						"color": "#90dd7a",
+						"role": "accent",
+						"source": "Existing profile emoji glyph, sampled pixel"
+					},
+					{
+						"color": "#5bae64",
+						"role": "accent",
+						"source": "Existing profile emoji glyph, sampled pixel"
+					},
+					{
+						"color": "#3f3b28",
+						"role": "accent",
+						"source": "Existing profile emoji glyph, sampled pixel"
+					}
+				]
+			},
+			"archived": false
+		},
+		"preexistingDirtyFiles": {}
+	}
+}

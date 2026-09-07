@@ -164,3 +164,19 @@ The next two owner-authorized batches add twelve new drawings and three retained
 - Fifteen distinct tonal background geometries, separate foregrounds and shadows, ten export sizes, native palette evidence, individual static reviews and source adoption records.
 
 See [the usage and adoption table](07-logo-usage-sop.md#fifteen-identities--2026-09-07), [the five-project audit](../artwork/logo-family/audits/2026-09-07-redesign/) and [the ten-project audit](../artwork/logo-family/audits/2026-09-07-next-ten/) for exact source revisions, framing/matte checks, browser captures and publication evidence. Unrelated earlier local studies retain their own selection and publication status.
+
+## Material and architectural series — 2026-09-07
+
+The owner requested a physical material series for the three template projects, replacing the default animal/facet direction for this batch. Dotty and Matrix use complete floating thick-square blocks at approximately 45 degrees elevation. Basalt follows the later correction to an obsidian-and-gemstone Forbidden City corner tower at approximately 25 degrees. Its plain stone slab is rejected history and has never been adopted.
+
+| Project | Selected study / pass | Presentation | Rounded clearance | Individual review |
+| --- | --- | --- | --- | --- |
+| Dotty | `2026-09-07-01 / 01` | Opaque checker ceramic; cool precision drafting grid | 265.5 px | [Review](https://hexly.ai/logos/dotty) |
+| Matrix | `2026-09-07-01 / 01` | Layered black/green deck; pale mint circuit routing grid | 268.5 px | [Review](https://hexly.ai/logos/matrix) |
+| Basalt | `2026-09-07-02 / 01` | Obsidian and gemstones; pale champagne architectural grid | 207.5 px | [Review](https://hexly.ai/logos/basalt) |
+
+All objects use one uniform placement, measured against the actual 23% rounded outline at alpha ≥16, with zero clipped foreground pixels. Native material highlights are retained; backgrounds, projected floor shadows and Matrix’s subtle lower emission remain independent. The optional shadow `projectionScale` compresses the foreground silhouette onto the floor; omitting it preserves existing finishing behavior and exact historical shadow bytes.
+
+Four native 2048 × 2048 requests produced the three selected identities and the rejected Basalt slab. Each exact raw was inspected under the named-batch waiver, without claiming owner review. Dotty’s calibrated exterior-connected matte preserves its opaque white cells; enclosed specular highlights and architectural shadows remain intact. Native pixels, all ten export sizes, source consumer screenshots and release evidence are in [the material audit](../artwork/logo-family/audits/2026-09-07-materials/).
+
+Use `family.series: "material"` to preserve this intentional exception in generated project profiles. Both complete review surfaces remain required, with material-specific descriptions and truthful reference roles. The architecture photograph and its focused crop retain their attribution in Git and static review HTML. Reference disclosures remain absent from the React catalogue.

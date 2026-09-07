@@ -110,3 +110,21 @@ Codo's small notification mark uses the transparent hummingbird. Rooster receive
 The [five-project audit](../artwork/logo-family/audits/2026-09-07-redesign/) and [ten-project audit](../artwork/logo-family/audits/2026-09-07-next-ten/) contain exact-master checks, real source component captures, size/alpha verification, and publication records. Each study retains its prompt or presentation brief, raw/source decision, sampled palette, all finishing passes, static review, and adoption record. The public catalogue paths use `/logos/<project>`.
 
 New full-body drawings maintain at least 128 px clearance against the actual rounded outline. Retained artwork keeps its existing native margins, including Pika's close outer sparks. Bat, Rooster and Otter pass 02 remove an inspected enclosed white matte pocket; previous passes remain immutable. Giraffe pass 02 adjusts placement by one pixel. Steed preserves one rejected generation and adopts its second native result. Across both batches, twelve projects were redrawn in thirteen native requests and three projects required no generation.
+
+## Three template identities — 2026-09-07
+
+The material batch installs transparent source masters and separate pale engineering presentations in Dotty, Matrix and Basalt. The owner delegated raw acceptance, requested source replacement, and continued authorized publication.
+
+| Project | Study / pass | Source commit | Individual page |
+| --- | --- | --- | --- |
+| Dotty | `2026-09-07-01 / 01` | [`1becb8026f`](https://github.com/nocoo/dotty/commit/1becb8026f44a20d9827cd5b4f100b6fb09836fe) | [Review](https://hexly.ai/logos/dotty) |
+| Matrix | `2026-09-07-01 / 01` | [`8e6f9add03`](https://github.com/nocoo/matrix/commit/8e6f9add035b35505576f161d95393c0b8b31e07) | [Review](https://hexly.ai/logos/matrix) |
+| Basalt | `2026-09-07-02 / 01` | [`8e41ff0773`](https://github.com/nocoo/basalt/commit/8e41ff077391e76d07df786b15c655138ef58989) | [Review](https://hexly.ai/logos/basalt) |
+
+README headers use rounded presentation masters. Application navigation, Dotty’s login/badge views, Matrix’s login/boot views, Basalt’s login/library/loading marks, and browser favicons use transparent foregrounds with no extra circular crop or colored container. All three ICO files decode to 16, 24, 32, 48 and 64 px entries matching transparent master resizes. Square 180 px touch icons and 1200 × 630 social images follow their platform roles.
+
+Basalt’s root and package READMEs are updated. Its `BasaltMark` SVG interface embeds a checked 128 px transparent PNG, so the package’s default loading mark works without an application-specific asset URL. The generic mountain icon in the component catalogue’s navigation remains a semantic category symbol. Library build/runtime checks pass; this source update does not publish an npm package.
+
+Basalt’s site branding is isolated from unrelated ongoing development in the owner’s local main checkout. Source consumer captures, exact-master/derivative checks, raw decisions, and per-project CI/Deploy results are recorded in [the material audit](../artwork/logo-family/audits/2026-09-07-materials/). The rejected plain Basalt slab remains an unadopted study; only the corrected corner tower supplies source and catalogue assets.
+
+The owner’s concurrent v2.1.0 release subsequently integrated Basalt’s branding at [`9e226aa5c1`](https://github.com/nocoo/basalt/commit/9e226aa5c1376351ec76a659b1a33a8139892b4b), preserving all exact masters and consumer assets. The active profile follows its verified homepage `https://basaltui.com` and current theme tokens. [Integration evidence](../artwork/logo-family/audits/2026-09-07-materials/basalt-release-integration.json) distinguishes that release from the isolated logo adoption above.
