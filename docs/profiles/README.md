@@ -12,27 +12,27 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🐘 Ellie](06-ellie.md) | Adopted family | #016698 | #ffffff |
 | [🔐 Neo](07-neo.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [🦒 Giraffe](08-giraffe.md) | Adopted family | #598128 | #eeeff2 |
-| [🐢 Backy](09-backy.md) | Original asset | #2e8553 | #eeeff2 |
-| [🦦 Otter](10-otter.md) | Original asset | #1b99a7 | #eeeff2 |
-| [🦎 Gecko](11-gecko.md) | Original asset | #2e8553 | #eef2ef |
+| [🐢 Backy](09-backy.md) | Adopted family | #2e8553 | #eeeff2 |
+| [🦦 Otter](10-otter.md) | Adopted family | #1b99a7 | #eeeff2 |
+| [🦎 Gecko](11-gecko.md) | Adopted family | #2e8553 | #eef2ef |
 | [🕊️ Dove](12-dove.md) | Adopted family | #c65379 | #f3edf0 |
-| [⚡ Pika](13-pika.md) | Original asset | #c38e13 | #eeeff2 |
+| [⚡ Pika](13-pika.md) | Adopted family | #c38e13 | #eeeff2 |
 | [🐦‍⬛ Raven](14-raven.md) | Adopted family | #6341c8 | #eeeff2 |
-| [🦇 Bat](15-bat.md) | Original asset | #df497b | #eeeff2 |
+| [🦇 Bat](15-bat.md) | Adopted family | #df497b | #eeeff2 |
 | [🎶 Lyre](16-lyre.md) | Adopted family | #883720 | #eeeff2 |
 | [🎮 Poké Pocket](17-pokepocket.md) | Original asset | #294138 | #f7f8f2 |
 | [✈️ Dogfight](18-dogfight.md) | Original asset | #c0e9dc | #101c27 |
-| [🧸 Gaga](19-gaga.md) | Original asset | #4c5342 | #f3f0e8 |
+| [🧸 Gaga](19-gaga.md) | Adopted family | #4c5342 | #f3f0e8 |
 | [🤠 Pew Game](20-pew-game.md) | Profile emoji | #755942 | #111111 |
-| [🐔 Rooster](21-rooster.md) | Profile emoji | #e54745 | transparent |
-| [🐍 Snaky](22-snaky.md) | Original asset | #e2ecae | transparent |
+| [🐔 Rooster](21-rooster.md) | Adopted family | #ba7522 | transparent |
+| [🐍 Snaky](22-snaky.md) | Adopted family | #8bbc3f | transparent |
 | [✍️ signoff.now](23-signoff-now.md) | Profile emoji | #00a4f0 | #edf0f2 |
 | [🔓 Unseal](24-unseal.md) | Profile emoji | #94935f | transparent |
 | [🌊 Flow](25-flow.md) | Original asset | #171717 | #ffffff |
-| [🔔 Codo](26-codo.md) | Original asset | #0e413a | transparent |
+| [🔔 Codo](26-codo.md) | Adopted family | #349078 | transparent |
 | [🏟️ Arena](27-arena.md) | Profile emoji | #7430e8 | #eeeff2 |
 | [🦉 Owl](28-owl.md) | Adopted family | #93816a | transparent |
-| [🦋 Xray](29-xray.md) | Original asset | #3653e2 | #eeeff2 |
+| [🦋 Xray](29-xray.md) | Adopted family | #3653e2 | #eeeff2 |
 | [🐬 R2Shot](30-r2shot.md) | Adopted family | #24c4bd | #ffffff |
 | [🪶 Shrike](31-shrike.md) | Adopted family | #86502c | #fffbf9 |
 | [🐙 Hooky](32-hooky.md) | Adopted family | #9666b7 | #ffffff |

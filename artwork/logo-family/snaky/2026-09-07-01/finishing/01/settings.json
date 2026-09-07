@@ -1,0 +1,88 @@
+{
+	"project": "snaky",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#778e57",
+		"light": "#c3d497",
+		"shade": "#465e37",
+		"motif": "#314427",
+		"grainAmplitude": 1,
+		"grainSeed": 6090793,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Meadow bends",
+			"description": "Meadow bends: broad unequal S-shaped pressed channels on a moss-green field, with open ends and no enclosing circular motif.",
+			"layers": [
+				{
+					"d": "M-108 147C95 25 217 133 356 109S590-15 739 3C936 27 909 227 1121 159",
+					"tone": "motif",
+					"strokeWidth": 48
+				},
+				{
+					"d": "M-108 174C93 53 219 160 359 137S592 13 738 31C925 55 913 256 1123 187",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-112 581C96 428 251 561 219 733C181 935 8 961 25 1124",
+					"tone": "ribbon",
+					"strokeWidth": 73
+				},
+				{
+					"d": "M-111 623C91 472 206 571 180 729C147 922-37 955-18 1128",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M661 1124C496 904 737 832 874 873C1036 923 1142 790 1107 641",
+					"tone": "ribbon",
+					"strokeWidth": 49
+				},
+				{
+					"d": "M635 1140C457 901 737 803 883 846C1030 890 1114 780 1080 649",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/snaky.png",
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+	}
+}

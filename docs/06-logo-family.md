@@ -137,3 +137,14 @@ The owner explicitly delegated inspection for this named batch. Each study recor
 Clearance is measured from alpha ≥16 pixels in named conservative regions to the actual 23% rounded outline. All protected features exceed 128 px and have zero clipped pixels. Lower shoulder/wing entries are intentional and recorded separately. Noheir, Raven, and Life.ai have small source-sampled continuation layers behind the inset source; every opaque placed source pixel is preserved. Wooly uses its natural lower fleece without continuation.
 
 Wooly retains Wool cloud folds; Noheir retains Quiet terraces. Raven’s pointed Quill pennants and Life.ai’s elliptical Riverbank ripples use distinct geometry. Fully opaque extracted colors match their raw pixels. Light/dark edge evidence, all ten sizes, source consumers, and browser/publication checks live in the [framing audit](../artwork/logo-family/audits/2026-09-07-framing/).
+
+## Fifteen additional identities — 2026-09-07
+
+The next two owner-authorized batches add twelve new drawings and three retained-original presentations. The source repositories contain the selected transparent masters, rounded README images and role-specific derivatives; every catalogue entry is Refined with its own complete `/logos/<project>` page.
+
+- Redesigns: Surety (lion), Owl, Ellie, Giraffe, Steed, Bat, Rooster, Snaky, Codo, Gaga, Backy, and Otter.
+- Retained originals: Xray, Pika, and Gecko. Their exact native bytes and placement are unchanged.
+- Thirteen Azure gpt-image-2 requests, all native 2048 × 2048. Steed's first request is preserved as rejected history; its second is selected.
+- Fifteen distinct tonal background geometries, separate foregrounds and shadows, ten export sizes, native palette evidence, individual static reviews and source adoption records.
+
+See [the usage and adoption table](07-logo-usage-sop.md#fifteen-identities--2026-09-07), [the five-project audit](../artwork/logo-family/audits/2026-09-07-redesign/) and [the ten-project audit](../artwork/logo-family/audits/2026-09-07-next-ten/) for exact source revisions, framing/matte checks, browser captures and publication evidence. Unrelated earlier local studies retain their own selection and publication status.

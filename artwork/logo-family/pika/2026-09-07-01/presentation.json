@@ -1,0 +1,70 @@
+{
+	"project": "pika",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#918451",
+		"light": "#c1b783",
+		"shade": "#5f542f",
+		"motif": "#463b20",
+		"grainAmplitude": 1,
+		"grainSeed": 6090796,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Charge steps",
+			"description": "Charge steps: broad unequal angular charge paths and low pressed zigzag bands on a deep antique-gold field. Preserve the exact original mouse, its detached energy accents and native placement.",
+			"layers": [
+				{
+					"d": "M-100 118L224 16L180 225L475 130L408 402L334 425L382 226L78 324L132 129L-100 199Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-101 206L124 139L69 334L373 236L326 433",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M813-88L707 254L963 175L824 498L905 473L1097 62L825 147L897-88Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M810 508L950 188L693 268L800-86",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-89 959L251 830L208 1093H310L373 686L-89 857Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M733 1120L790 875L1114 768V669L705 807L627 1120Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M618 1119L698 800L1114 660",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/pika.png"
+}
