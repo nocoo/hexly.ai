@@ -1,5 +1,11 @@
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+	mkdtempSync,
+	readFileSync,
+	realpathSync,
+	rmSync,
+	writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
@@ -131,10 +137,29 @@ describe("release notes and retry behavior", () => {
 	it("runs the real dry-run command without changing files or Git refs", () => {
 		const directory = mkdtempSync(join(tmpdir(), "hexly-release-test-"));
 		const script = resolve("scripts/release.ts");
+		const repositoryVariables = new Set(
+			execFileSync("git", ["rev-parse", "--local-env-vars"], {
+				encoding: "utf8",
+			})
+				.trim()
+				.split("\n"),
+		);
+		const env = Object.fromEntries(
+			Object.entries(process.env).filter(
+				([name]) => !repositoryVariables.has(name),
+			),
+		);
 		const git = (...args: string[]) =>
-			execFileSync("git", args, { cwd: directory, encoding: "utf8" }).trim();
+			execFileSync("git", args, {
+				cwd: directory,
+				encoding: "utf8",
+				env,
+			}).trim();
 		try {
 			git("init", "-b", "main");
+			expect(git("rev-parse", "--absolute-git-dir")).toBe(
+				realpathSync(join(directory, ".git")),
+			);
 			git("config", "user.name", "Release Test");
 			git("config", "user.email", "release@example.test");
 			writeFileSync(
@@ -151,6 +176,7 @@ describe("release notes and retry behavior", () => {
 			const result = execFileSync("bun", [script, "0.1.0", "--dry-run"], {
 				cwd: directory,
 				encoding: "utf8",
+				env,
 			});
 			expect(result).toContain("Release 0.1.0 → 0.1.0");
 			expect(result).toContain("no files, refs, or remote resources changed");

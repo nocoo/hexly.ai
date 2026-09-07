@@ -113,3 +113,4 @@ Record accident narratives in [Retrospective.md](Retrospective.md), recurring pr
 
 - Keep frozen lockfile validation in version-only releases; temporary registry configuration must not rewrite dependency sources.
 - Confirm the Deploy job's final success and public verification before reporting publication complete.
+- Temporary-repository tests must remove repository-local Git environment variables inherited from hooks; a different working directory alone does not isolate a linked worktree.
