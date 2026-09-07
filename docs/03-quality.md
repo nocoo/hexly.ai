@@ -37,6 +37,8 @@ Both tools check working-tree content; they do not snapshot partially staged fil
 
 Test runners start and terminate their own servers and do not reuse an existing server. L2 uses `.wrangler/http` for runtime state and L3 uses `.wrangler/browser`; the local review server remains independent. Even a static-only workerd process maintains internal SQLite state, so separate ports alone do not provide complete local isolation.
 
+Browser CI records the runner's Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines and preserves the test command's exit status. Inspect these diagnostics before rerunning a failure that loses the local server.
+
 ## Completion evidence
 
 Verified locally on 2026-09-06 with Bun 1.4.0 and Node.js 26.7.0.
