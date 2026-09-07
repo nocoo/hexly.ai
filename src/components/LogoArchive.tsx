@@ -12,11 +12,15 @@ export function LogoArchive({
 	locale: Locale;
 }) {
 	const t = copy[locale];
+	const retained = family.method === "retained-original";
+	const textFile = retained ? "brief.txt" : "prompt.txt";
 	const [prompt, setPrompt] = useState("");
 	const [failed, setFailed] = useState(false);
 	useEffect(() => {
 		const controller = new AbortController();
-		fetch(`${family.root}/prompt.txt`, { signal: controller.signal })
+		setPrompt("");
+		setFailed(false);
+		fetch(`${family.root}/${textFile}`, { signal: controller.signal })
 			.then((response) => {
 				if (!response.ok) throw new Error(`HTTP ${response.status}`);
 				return response.text();
@@ -26,7 +30,7 @@ export function LogoArchive({
 				if (!controller.signal.aborted) setFailed(true);
 			});
 		return () => controller.abort();
-	}, [family.root]);
+	}, [family.root, textFile]);
 	return (
 		<section
 			className="review-section identity-archive"
@@ -35,8 +39,8 @@ export function LogoArchive({
 			<div className="review-section-heading">
 				<h3 id="archive-title">{t.archive}</h3>
 				<p>
-					{family.model} · {family.foreground.width} ×{" "}
-					{family.foreground.height}
+					{retained ? t.retainedArtwork : family.model} ·{" "}
+					{family.foreground.width} × {family.foreground.height}
 				</p>
 			</div>
 			<div className="download-links">
@@ -45,8 +49,14 @@ export function LogoArchive({
 					[t.squareDownload, `${family.root}/icon.png`],
 					[t.roundedDownload, `${family.root}/rounded.png`],
 					[t.whiteDownload, `${family.root}/white.png`],
-					[t.rawDownload, `${family.root}/raw.png`],
-					[t.promptDownload, `${family.root}/prompt.txt`],
+					[
+						retained ? t.retainedSource : t.rawDownload,
+						`${family.root}/${retained ? "source" : "raw"}.png`,
+					],
+					[
+						retained ? t.briefDownload : t.promptDownload,
+						`${family.root}/${textFile}`,
+					],
 				].map(([label, href]) => (
 					<a
 						key={href}
@@ -63,9 +73,13 @@ export function LogoArchive({
 				))}
 			</div>
 			<details>
-				<summary>{t.promptTitle}</summary>
+				<summary>{retained ? t.briefTitle : t.promptTitle}</summary>
 				<pre className="generation-prompt">
-					{failed ? t.promptFailed : prompt || t.promptLoading}
+					{failed
+						? retained
+							? t.briefFailed
+							: t.promptFailed
+						: prompt || (retained ? t.briefLoading : t.promptLoading)}
 				</pre>
 			</details>
 			<a
