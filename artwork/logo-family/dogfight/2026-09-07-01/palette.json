@@ -1,0 +1,73 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "0ef348789c2117bde4b8c2b7d6d9f902d4ea740f712fbe46ead51c7a3feb5162",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Titanium",
+				"zh": "钛灰"
+			},
+			"role": "primary",
+			"color": "#878f95",
+			"pixel": [715, 700],
+			"rgb": [135, 143, 149],
+			"sourceSha256": "0ef348789c2117bde4b8c2b7d6d9f902d4ea740f712fbe46ead51c7a3feb5162"
+		},
+		{
+			"label": {
+				"en": "Canopy amber",
+				"zh": "琥珀座舱"
+			},
+			"role": "accent",
+			"color": "#694d2c",
+			"pixel": [401, 1453],
+			"rgb": [105, 77, 44],
+			"sourceSha256": "0ef348789c2117bde4b8c2b7d6d9f902d4ea740f712fbe46ead51c7a3feb5162"
+		},
+		{
+			"label": {
+				"en": "Panel highlight",
+				"zh": "面板高光"
+			},
+			"role": "accent",
+			"color": "#bcbfbd",
+			"pixel": [1040, 956],
+			"rgb": [188, 191, 189],
+			"sourceSha256": "0ef348789c2117bde4b8c2b7d6d9f902d4ea740f712fbe46ead51c7a3feb5162"
+		}
+	],
+	"presentation": {
+		"base": "#d0dfe9",
+		"light": "#edf3f5",
+		"shade": "#b7cbdc",
+		"motif": "#7693ab",
+		"pattern": "Banking vectors",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#c0e9dc",
+		"background": "#101c27",
+		"ink": "#e9eee9",
+		"evidence": {
+			"primary": {
+				"value": "#c0e9dc",
+				"source": "src/styles.css --mint"
+			},
+			"background": {
+				"value": "#101c27",
+				"source": "src/styles.css :root background"
+			},
+			"ink": {
+				"value": "#e9eee9",
+				"source": "src/styles.css :root color"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}

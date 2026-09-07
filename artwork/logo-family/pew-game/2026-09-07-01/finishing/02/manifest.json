@@ -1,0 +1,446 @@
+{
+	"createdAt": "2026-09-07T10:00:10.258Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "pew-game",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/pew-game.png",
+		"background": {
+			"base": "#d6bb8a",
+			"light": "#eed9af",
+			"shade": "#bfa277",
+			"motif": "#8a6b42",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907019,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Prairie suntracks",
+				"description": "A low rising sun with short prairie grass cuts and concentric joystick-like arcs in warm sand paper.",
+				"layers": [
+					{
+						"d": "M20 900a160 160 0 0 1 320 0",
+						"tone": "motif",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M-40 900a220 220 0 0 1 440 0",
+						"tone": "motif",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M-120 900a300 300 0 0 1 600 0",
+						"tone": "motif",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M60 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M143 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M226 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M309 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M392 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M475 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M558 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M641 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M724 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M807 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M890 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M973 995l8 -34 6 21 12 -47",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M806 50q70 50 125 145M779 65q72 55 122 150",
+						"tone": "highlight",
+						"strokeWidth": 2.2
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					138,
+					107,
+					66
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					645
+				]
+			},
+			{
+				"color": [
+					138,
+					107,
+					66
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					640
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.916713,
+			"offsetAt2048": [
+				-32,
+				-16
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 238,
+			"maximumChroma": 24,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object.",
+			"minimumChannelOverride": 238,
+			"componentCleanupNote": "Pass 01 dark preview exposes detached white matte specks and pale edge residue outside the dark wood/brass object. The calibrated 238 threshold preserves its internal highlights while removing exterior-connected matte."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2414564,
+		"foregroundPixels": 1779740,
+		"softEdgePixels": 11816,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 164,
+			"top": 272,
+			"right": 1952,
+			"bottom": 1766
+		}
+	},
+	"placement": {
+		"scale": 0.916713,
+		"offsetAt2048": [
+			-32,
+			-16
+		],
+		"bounds": {
+			"left": 203,
+			"top": 318,
+			"right": 1842,
+			"bottom": 1687
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 203.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3634,
+			"sha256": "d97e5aa4d6be9fc54381b1d9d93b59e3c51377733f945d5bfbde491bdf498e0a"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 867,
+			"sha256": "86d81123e1b4958c474d054da99d575f10c8e932aa7f252a0fef72caa6d0ff76"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4591047,
+			"sha256": "2acf9e832f26be9e737555753991169d0d67905d091786f2dd4e588f8ca9728d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61100,
+			"sha256": "be65e7a517e25777e3e1813fbb0d945ef9c4b13388cbf53ba37c66da893244df"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 2048,
+			"sha256": "697810d8e7535ba341f3387f4678ef389e336e3c3635315c3ef770ed59a65594"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1884298,
+			"sha256": "7e76b445259d255618557f2aff6b398892563c2e2363532efc648ef8e6faf067"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3907401,
+			"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 74009,
+			"sha256": "2e9ae9737772c63ca0c79a93525dc00cf51ea2e6729f80dc9c6a6bb29a502a2b"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 132659,
+			"sha256": "6ca66928b4c66cd74906dd00a53d4d769dff3065ad545a359628d7e317954ba7"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 63113,
+			"sha256": "744283196550bb7851ab6863899714b521ad86a327b8bfb800bb1255633f55ec"
+		},
+		{
+			"path": "exports/pew-game-transparent-2048.png",
+			"bytes": 3907401,
+			"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90"
+		},
+		{
+			"path": "exports/pew-game-icon-2048.png",
+			"bytes": 5563235,
+			"sha256": "b4a18046011d7da6cde997aae3b72c1e000dc2d509e29e3a8218d65276e04535"
+		},
+		{
+			"path": "exports/pew-game-rounded-2048.png",
+			"bytes": 5492581,
+			"sha256": "a113a9b96ef5d3b96a1ca70a73537596a5ba35a0613d12a756d638d4d2d84d8e"
+		},
+		{
+			"path": "exports/pew-game-transparent-1024.png",
+			"bytes": 972386,
+			"sha256": "5c1e473a0f5d7301d17c254679d33cd1fe4a8e8434c21a3b291be138805a99fb"
+		},
+		{
+			"path": "exports/pew-game-icon-1024.png",
+			"bytes": 1333644,
+			"sha256": "09187f92fcbf4f949fb88c5aa3db69be2a0576122be3cb8ee5c9a9ede2853975"
+		},
+		{
+			"path": "exports/pew-game-rounded-1024.png",
+			"bytes": 1335194,
+			"sha256": "fb3d1f298f35fb16f3fcb9484e9e02e5b5e84bca4ce5dd834bbd1d9b17cd4e14"
+		},
+		{
+			"path": "exports/pew-game-transparent-512.png",
+			"bytes": 246451,
+			"sha256": "60bbe8fe4e190d7eca7348413e94780e1168ebbfd569a479edc4c8e696c7cd18"
+		},
+		{
+			"path": "exports/pew-game-icon-512.png",
+			"bytes": 370489,
+			"sha256": "da15cfeb64f8ea995e7a16669d48a70443ec00003685460e52f903ecd1c5d5aa"
+		},
+		{
+			"path": "exports/pew-game-rounded-512.png",
+			"bytes": 372145,
+			"sha256": "91a616f903c598b3421ae280afdd0d787e57413df85609f297bb8525147958a0"
+		},
+		{
+			"path": "exports/pew-game-transparent-256.png",
+			"bytes": 65984,
+			"sha256": "3b663df5db07a66ba41248ee2f2e166d43c8501c11f42c7a3c56c8c5b1ccf788"
+		},
+		{
+			"path": "exports/pew-game-icon-256.png",
+			"bytes": 88115,
+			"sha256": "7f19fa8b3fdc875cbe3454898dc697521f4a9d7137b6e225e8d09c71d5c2f8c4"
+		},
+		{
+			"path": "exports/pew-game-rounded-256.png",
+			"bytes": 91723,
+			"sha256": "91bce1048163753f68b7e2e915a0d33f0fff2f65bf93150915432812bf64dc87"
+		},
+		{
+			"path": "exports/pew-game-transparent-128.png",
+			"bytes": 18194,
+			"sha256": "c71b4def229e98e3d8857e534022b870ef341a41cee793b6955c048cadf306a3"
+		},
+		{
+			"path": "exports/pew-game-icon-128.png",
+			"bytes": 26310,
+			"sha256": "5ef953ddd6e903de208ab3fc636431d360b530205b41d4fd3a501a4696f4d090"
+		},
+		{
+			"path": "exports/pew-game-rounded-128.png",
+			"bytes": 28239,
+			"sha256": "3b5ef7e0ef5b2365a8e0afa13727610aeceb6cb987ee581379cbc41176f3bdc4"
+		},
+		{
+			"path": "exports/pew-game-transparent-64.png",
+			"bytes": 5249,
+			"sha256": "b28a1a65e0f8863bc47227b4342e0b72b94f7ca75fcbb99d8c6f839fd4c429a9"
+		},
+		{
+			"path": "exports/pew-game-icon-64.png",
+			"bytes": 8698,
+			"sha256": "77d687beb9613e93d37eaaf36c5dd1f317b1a9320f98ddb6a71f7ac6ffce5990"
+		},
+		{
+			"path": "exports/pew-game-rounded-64.png",
+			"bytes": 9410,
+			"sha256": "b9be10fb003adc3581777eff20689f1d29d8662997add66b1d3a88caabea02ae"
+		},
+		{
+			"path": "exports/pew-game-transparent-48.png",
+			"bytes": 3302,
+			"sha256": "53d87984751152f0f1457d841a9426c68a0da2cec4d47d30ea0aaff66b302f1a"
+		},
+		{
+			"path": "exports/pew-game-icon-48.png",
+			"bytes": 5379,
+			"sha256": "db7fe987fff98c51f329163820bb04ca146a6b661edd485a6f53d299be1167f8"
+		},
+		{
+			"path": "exports/pew-game-rounded-48.png",
+			"bytes": 5917,
+			"sha256": "02279fb9650fc77abf7dd2ec0c8e77cc845659afa7f1c26cd7042119e06e575e"
+		},
+		{
+			"path": "exports/pew-game-transparent-32.png",
+			"bytes": 1754,
+			"sha256": "2032670c6b08b13ecbd3c9b60cc3265d893aef2fd7e18db0c0319820b3e08680"
+		},
+		{
+			"path": "exports/pew-game-icon-32.png",
+			"bytes": 2878,
+			"sha256": "2c863fc33f76deb408ff402a126573093751173487e8b6d75cce4e44f8df5d33"
+		},
+		{
+			"path": "exports/pew-game-rounded-32.png",
+			"bytes": 3122,
+			"sha256": "29d9c7978db22ab5f03711f29515c58febf4f61299e8fac4f090fae6209a7416"
+		},
+		{
+			"path": "exports/pew-game-transparent-24.png",
+			"bytes": 1141,
+			"sha256": "cc065cba3d8198f62749d385f85a559b125a97771ff660a30942196aa8781311"
+		},
+		{
+			"path": "exports/pew-game-icon-24.png",
+			"bytes": 1851,
+			"sha256": "811a17f7d5dcc3a7b0197ff7a5c8116ce6af0b524fba06014a7ea79956b8e955"
+		},
+		{
+			"path": "exports/pew-game-rounded-24.png",
+			"bytes": 2021,
+			"sha256": "d442ee671d8e78ab21958a4ed17b03a9ba0fcdd441d9054fda61bbdf37f540dd"
+		},
+		{
+			"path": "exports/pew-game-transparent-16.png",
+			"bytes": 668,
+			"sha256": "3c97d28f683edc876ba61f3a1d2ffb847d5896e551bf411826dbf157254868c4"
+		},
+		{
+			"path": "exports/pew-game-icon-16.png",
+			"bytes": 970,
+			"sha256": "4b377e7f19bf10c700a9742d73f8f6a1fffea1091c2d91705935d2eebbb0fa9e"
+		},
+		{
+			"path": "exports/pew-game-rounded-16.png",
+			"bytes": 1028,
+			"sha256": "cd1edc7d3137c4995b1d282732a3bc598cc3d2b331bbfc61cf1daa9007e4fa52"
+		},
+		{
+			"path": "exports/pew-game-white-2048.png",
+			"bytes": 3626361,
+			"sha256": "ca0377d2dacd554524b65e76394d65c085fc58c5348068fd19eca0c654938f49"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 916776,
+			"sha256": "3e3ab862748f5537ea11a7ee2ed3ad04043d231263574a640c8d080366979f0c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 905145,
+			"sha256": "9092668710f9f0d2766823f1a048e979795e24209a1bdd22dce91a18c0fb9e9f"
+		}
+	]
+}

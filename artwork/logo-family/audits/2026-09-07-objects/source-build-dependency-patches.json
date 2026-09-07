@@ -1,0 +1,113 @@
+[
+	{
+		"project": "arena",
+		"patches": {
+			"browserslist": "4.28.7"
+		},
+		"changedPackages": [
+			{
+				"package": "node-releases",
+				"before": "node-releases@2.0.47",
+				"after": "node-releases@2.0.54"
+			},
+			{
+				"package": "browserslist/caniuse-lite",
+				"before": null,
+				"after": "caniuse-lite@1.0.30001810"
+			},
+			{
+				"package": "browserslist",
+				"before": "browserslist@4.28.2",
+				"after": "browserslist@4.28.7"
+			},
+			{
+				"package": "electron-to-chromium",
+				"before": "electron-to-chromium@1.5.372",
+				"after": "electron-to-chromium@1.5.422"
+			},
+			{
+				"package": "browserslist/baseline-browser-mapping",
+				"before": null,
+				"after": "baseline-browser-mapping@2.11.21"
+			}
+		],
+		"registryUrlsPreserved": true,
+		"reason": "Existing source pre-push OSV gate rejected known build dependency vulnerabilities; this is a separate minimal patch commit.",
+		"frozenInstallExitCode": 0
+	},
+	{
+		"project": "geekhub",
+		"patches": {
+			"browserslist": "4.28.7",
+			"postcss-selector-parser": "6.1.3"
+		},
+		"changedPackages": [
+			{
+				"package": "tailwindcss/postcss-selector-parser",
+				"before": "postcss-selector-parser@6.1.2",
+				"after": null
+			},
+			{
+				"package": "node-releases",
+				"before": "node-releases@2.0.44",
+				"after": "node-releases@2.0.54"
+			},
+			{
+				"package": "browserslist/caniuse-lite",
+				"before": null,
+				"after": "caniuse-lite@1.0.30001810"
+			},
+			{
+				"package": "postcss-selector-parser",
+				"before": "postcss-selector-parser@6.0.10",
+				"after": "postcss-selector-parser@6.1.3"
+			},
+			{
+				"package": "browserslist",
+				"before": "browserslist@4.28.2",
+				"after": "browserslist@4.28.7"
+			},
+			{
+				"package": "postcss-nested/postcss-selector-parser",
+				"before": "postcss-selector-parser@6.1.2",
+				"after": null
+			},
+			{
+				"package": "electron-to-chromium",
+				"before": "electron-to-chromium@1.5.359",
+				"after": "electron-to-chromium@1.5.422"
+			},
+			{
+				"package": "browserslist/baseline-browser-mapping",
+				"before": null,
+				"after": "baseline-browser-mapping@2.11.21"
+			}
+		],
+		"registryUrlsPreserved": true,
+		"reason": "Existing source pre-push OSV gate rejected known build dependency vulnerabilities; this is a separate minimal patch commit.",
+		"frozenInstallExitCode": 0
+	},
+	{
+		"project": "unseal",
+		"patches": {
+			"nanoid": "3.3.18",
+			"postcss": "8.5.28"
+		},
+		"changedPackages": [
+			{
+				"package": "postcss",
+				"before": "postcss@8.5.15",
+				"after": "postcss@8.5.28"
+			},
+			{
+				"package": "nanoid",
+				"before": "nanoid@3.3.12",
+				"after": "nanoid@3.3.18"
+			}
+		],
+		"registryUrlsPreserved": true,
+		"otherPackageEntriesPreserved": true,
+		"frozenInstallExitCode": 0,
+		"reason": "The normal source pre-push OSV gate rejected existing transitive build dependencies. Only these two packages and explicit overrides change; no application dependency or project version is upgraded."
+	}
+]

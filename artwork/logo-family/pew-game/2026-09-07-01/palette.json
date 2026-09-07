@@ -1,0 +1,91 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Walnut",
+				"zh": "胡桃木"
+			},
+			"role": "primary",
+			"color": "#583b2c",
+			"pixel": [850, 1360],
+			"rgb": [88, 59, 44],
+			"sourceSha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3"
+		},
+		{
+			"label": {
+				"en": "Oxblood lacquer",
+				"zh": "深红漆面"
+			},
+			"role": "accent",
+			"color": "#651b19",
+			"pixel": [818, 344],
+			"rgb": [101, 27, 25],
+			"sourceSha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3"
+		},
+		{
+			"label": {
+				"en": "Aged brass",
+				"zh": "旧黄铜"
+			},
+			"role": "accent",
+			"color": "#836b42",
+			"pixel": [1328, 1038],
+			"rgb": [131, 107, 66],
+			"sourceSha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3"
+		},
+		{
+			"label": {
+				"en": "Ochre button",
+				"zh": "赭黄按钮"
+			},
+			"role": "accent",
+			"color": "#da9438",
+			"pixel": [1253, 928],
+			"rgb": [218, 148, 56],
+			"sourceSha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3"
+		},
+		{
+			"label": {
+				"en": "Teal button",
+				"zh": "青色按钮"
+			},
+			"role": "accent",
+			"color": "#506866",
+			"pixel": [1640, 1020],
+			"rgb": [80, 104, 102],
+			"sourceSha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3"
+		}
+	],
+	"presentation": {
+		"base": "#d6bb8a",
+		"light": "#eed9af",
+		"shade": "#bfa277",
+		"motif": "#8a6b42",
+		"pattern": "Prairie suntracks",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#755942",
+		"background": "#111111",
+		"ink": "#eeeeee",
+		"evidence": {
+			"background": {
+				"value": "#111111",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "#eeeeee",
+				"source": "src/app/globals.css --foreground"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}
