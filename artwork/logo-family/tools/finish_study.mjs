@@ -264,19 +264,45 @@ function backgroundSvg(size, colors) {
 async function makeShadow(alpha, width, height, settings) {
 	const rgba = Buffer.alloc(width * height * 4);
 	const scale = width / 2048;
+	let shadowAlpha = alpha;
+	let shadowWidth = width;
+	let shadowHeight = height;
+	if (settings.projectionScale) {
+		if (
+			settings.projectionScale.length !== 2 ||
+			settings.projectionScale.some(
+				(value) => !Number.isFinite(value) || value <= 0 || value > 1,
+			)
+		)
+			throw new Error("Shadow projection needs two scales between 0 and 1.");
+		shadowWidth = Math.max(1, Math.round(width * settings.projectionScale[0]));
+		shadowHeight = Math.max(
+			1,
+			Math.round(height * settings.projectionScale[1]),
+		);
+		shadowAlpha = await sharp(alpha, { raw: { width, height, channels: 1 } })
+			.resize(shadowWidth, shadowHeight)
+			.toColourspace("b-w")
+			.raw()
+			.toBuffer();
+	}
 	const [dx, dy] = settings.offsetAt2048.map((value) =>
 		Math.round(value * scale),
 	);
-	for (let y = 0; y < height; y++) {
-		for (let x = 0; x < width; x++) {
-			const nx = x + dx;
-			const ny = y + dy;
+	const left = Math.floor((width - shadowWidth) / 2);
+	const top = Math.floor((height - shadowHeight) / 2);
+	for (let y = 0; y < shadowHeight; y++) {
+		for (let x = 0; x < shadowWidth; x++) {
+			const nx = x + left + dx;
+			const ny = y + top + dy;
 			if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
 			const target = (ny * width + nx) * 4;
 			rgba[target] = settings.color[0];
 			rgba[target + 1] = settings.color[1];
 			rgba[target + 2] = settings.color[2];
-			rgba[target + 3] = Math.round(alpha[y * width + x] * settings.opacity);
+			rgba[target + 3] = Math.round(
+				shadowAlpha[y * shadowWidth + x] * settings.opacity,
+			);
 		}
 	}
 	return sharp(rgba, { raw: { width, height, channels: 4 } })
