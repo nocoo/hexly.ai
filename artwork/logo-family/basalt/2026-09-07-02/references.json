@@ -1,0 +1,115 @@
+{
+	"project": "basalt",
+	"references": [
+		{
+			"index": 1,
+			"path": "references/corner-tower-roof.png",
+			"role": "Architectural massing and recognizable roof profile of the elevated Forbidden City corner tower only. Recompose a new isolated obsidian-and-gemstone object at 25 degrees elevation; do not copy the photo lighting, colors or surroundings.",
+			"sha256": "56bff04818bbc210fe869760070c53878d7b6bfe997a972a1ef280baf531fdcc",
+			"bytes": 167160
+		},
+		{
+			"index": 2,
+			"path": "../../dotty/2026-09-07-01/raw/generated.png",
+			"role": "Premium physical-material finish, complete icon framing and clean white extraction source only. Do not copy the checker material, flat slab subject or 45-degree camera.",
+			"sha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+			"bytes": 2516123
+		}
+	],
+	"sourceRepository": {
+		"localHead": "e1d86a91079476c1cd364278dc2ed9e59f8a3bb1",
+		"originMain": "4f97ac4aa246dc25adebf4df177b2189e96c561d",
+		"status": "## main...origin/main [ahead 116, behind 17]\n M CHANGELOG.md\n M INTEGRATION.md\n M packages/basalt/ai/COMPATIBILITY.md\n M packages/basalt/src/styles/tokens.css\n M scripts/package-registry.ts\n M scripts/showcase-palette.ts\n M src/i18n/locales/en.json\n M src/i18n/locales/zh.json\n M src/pages/PalettePage.tsx",
+		"previousCatalogue": {
+			"id": "basalt",
+			"repo": "basalt",
+			"title": "Basalt",
+			"emoji": "🎨",
+			"description": {
+				"en": "Dense, dark, durable. A matte design system for information-rich software.",
+				"zh": "沉稳、紧凑的哑光设计系统，为信息密集的软件界面而做。"
+			},
+			"category": "design",
+			"website": "https://basalt.hexly.ai",
+			"websiteSource": "GitHub repository homepage",
+			"repository": "https://github.com/nocoo/basalt",
+			"subject": "Existing application mark",
+			"reference": false,
+			"logo": {
+				"kind": "original",
+				"original": "/logos/originals/basalt.svg",
+				"sourcePath": "public/favicon.svg",
+				"sourceUrl": "https://github.com/nocoo/basalt/blob/68a3b545d8dbcfb1968a3be8031d4710bfe3c10c/public/favicon.svg",
+				"modified": false,
+				"width": 32,
+				"height": 32,
+				"bytes": 364,
+				"sha256": "652ee2a1a62d12e0e9ae89b0a29381b5a03a91a80f75d3a07251fdef89bdb14a",
+				"thumbnail": "/logos/display/basalt-160.webp",
+				"display": "/logos/display/basalt-1024.webp"
+			},
+			"theme": {
+				"primary": {
+					"value": "217 91% 60%",
+					"source": "packages/basalt/src/styles/tokens.css --basalt-primary"
+				},
+				"background": {
+					"value": "220 14% 94%",
+					"source": "packages/basalt/src/styles/tokens.css --basalt-background"
+				}
+			},
+			"source": {
+				"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+				"profileSection": "Recent Projects",
+				"description": "Matte-dark design system engineered for high-density SaaS interfaces",
+				"repositoryRevision": "68a3b545d8dbcfb1968a3be8031d4710bfe3c10c"
+			},
+			"colors": {
+				"primary": "#3c83f6",
+				"background": "#eeeff2",
+				"ink": "#161616",
+				"palette": [
+					{
+						"color": "#3c83f6",
+						"role": "primary",
+						"source": "packages/basalt/src/styles/tokens.css --basalt-primary: 217 91% 60%"
+					},
+					{
+						"color": "#eeeff2",
+						"role": "background",
+						"source": "packages/basalt/src/styles/tokens.css --basalt-background: 220 14% 94%"
+					},
+					{
+						"color": "#161616",
+						"role": "accent",
+						"source": "Preserved project artwork, sampled pixel"
+					},
+					{
+						"color": "#3c84f6",
+						"role": "accent",
+						"source": "Preserved project artwork, sampled pixel"
+					},
+					{
+						"color": "#233a60",
+						"role": "accent",
+						"source": "Preserved project artwork, sampled pixel"
+					}
+				]
+			},
+			"archived": false
+		},
+		"preexistingDirtyFiles": {
+			"CHANGELOG.md": "a95a0c18ed2bffe9a8d36321e3853f482f0cebf9b917166ea38d060fd8305cd4",
+			"INTEGRATION.md": "d24c8673ea1335b469420477b4da616b0990364c7c0f1341da0948b41691fd5a",
+			"packages/basalt/ai/COMPATIBILITY.md": "44c1b264625d976082912020f116d4d0831d24bd669819fc9e95170c463f0fc8",
+			"packages/basalt/src/styles/tokens.css": "fce5aac6e37046de963a65e29b99442327ebb3abe86da3a8677350ed939bfee4",
+			"scripts/package-registry.ts": "b0fa71385899bd0351618b10c84e0a773afe84adfa0b6b09bd2e8b4767e001fb",
+			"scripts/showcase-palette.ts": "801c5f688d220ba0540bb7da3837c2811089fac3f1d6574c0fdb3b39a317b935",
+			"src/i18n/locales/en.json": "73e68af14f3e5303d335cb47ff9b180de03b92e7366f35a5741993304f207a4f",
+			"src/i18n/locales/zh.json": "a492e279783cba39bf779cf0e3e943ef7b6b7f9ba3b24d8ae6cb78e25b6cd5bd",
+			"src/pages/PalettePage.tsx": "cf2e3c8cd7d975607520632bb49b16c42be5700b013081c5dc5677c8d9a2a7ee"
+		}
+	},
+	"previousStudy": "../2026-09-07-01",
+	"ownerFeedback": "basalt有点过于平平无奇了，不妨来一个黑曜石搭配宝石呈现的故宫角楼，俯仰角度可以平一点，斜25度左右。"
+}

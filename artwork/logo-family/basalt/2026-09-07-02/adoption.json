@@ -1,0 +1,39 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"study": "basalt/2026-09-07-02",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/basalt",
+	"sourceCommit": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+	"masters": {
+		"logo.png": {
+			"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/assets/brand/README.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/basalt",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/basalt/2026-09-07-02/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-materials/source-publication.json",
+		"note": "Source adoption and public deployment are verified separately against the exact revision in the batch report."
+	}
+}
