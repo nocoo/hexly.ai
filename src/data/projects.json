@@ -10559,5 +10559,285 @@
 			]
 		},
 		"archived": false
+	},
+	{
+		"id": "clip",
+		"repo": "clip",
+		"title": "clip",
+		"emoji": "✂️",
+		"description": {
+			"en": "Generate fully working CLIs from a clip.yaml schema, with built-in credential management",
+			"zh": "从 clip.yaml 生成可用的 CLI 工具，并集中管理 API 凭据与鉴权。"
+		},
+		"category": "tools",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/clip",
+		"subject": "Faceted brown ostrich in a feathered hat",
+		"reference": false,
+		"archived": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/clip.png",
+			"thumbnail": "/logos/display/clip-160.webp",
+			"display": "/logos/display/clip-1024.webp",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3160958,
+			"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009"
+		},
+		"theme": {
+			"primary": {
+				"value": "#6366f1",
+				"source": "packages/web/src/styles/global.css :root --color-accent"
+			},
+			"background": {
+				"value": "#0a0a0b",
+				"source": "packages/web/src/styles/global.css :root --color-bg"
+			},
+			"ink": {
+				"value": "#e4e4e7",
+				"source": "packages/web/src/styles/global.css :root --color-text"
+			}
+		},
+		"colors": {
+			"primary": "#6366f1",
+			"background": "#0a0a0b",
+			"ink": "#e4e4e7",
+			"palette": [
+				{
+					"color": "#6366f1",
+					"role": "primary",
+					"source": "packages/web/src/styles/global.css :root --color-accent"
+				},
+				{
+					"color": "#0a0a0b",
+					"role": "background",
+					"source": "packages/web/src/styles/global.css :root --color-bg"
+				},
+				{
+					"color": "#e4e4e7",
+					"role": "accent",
+					"source": "packages/web/src/styles/global.css :root --color-text"
+				}
+			]
+		},
+		"source": {
+			"profileRevision": "880737d35ff74923cc0c96873fccf9e09ea5e569",
+			"profileSection": "Recent Projects",
+			"description": "Generate fully working CLIs from a clip.yaml schema, with built-in credential management",
+			"repositoryRevision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c"
+		}
+	},
+	{
+		"id": "fundly",
+		"repo": "fundly",
+		"title": "Fundly",
+		"emoji": "🪴",
+		"description": {
+			"en": "China mutual-fund browser and ranking tool with local SQLite and Railway",
+			"zh": "中国公募基金浏览与排名工具，采用本地 SQLite 存储并部署于 Railway。"
+		},
+		"category": "everyday",
+		"website": "https://fundly.hexly.ai",
+		"websiteSource": "GitHub repository homepage and docs/09-RAILWAY.md custom-domain table",
+		"repository": "https://github.com/nocoo/fundly",
+		"subject": "White flame on an orange rounded square",
+		"reference": false,
+		"archived": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/fundly.svg",
+			"thumbnail": "/logos/display/fundly-160.webp",
+			"display": "/logos/display/fundly-1024.webp",
+			"sourcePath": "apps/web/public/logo.svg",
+			"sourceUrl": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+			"modified": false,
+			"width": 32,
+			"height": 32,
+			"bytes": 456,
+			"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8"
+		},
+		"theme": {
+			"primary": {
+				"value": "#e95d2b",
+				"source": "apps/web/src/globals.css :root --basalt-primary: 16 81% 54%, converted to sRGB"
+			}
+		},
+		"colors": {
+			"primary": "#e95d2b",
+			"background": "#e85d2a",
+			"ink": "#ffffff",
+			"palette": [
+				{
+					"color": "#e95d2b",
+					"role": "primary",
+					"source": "apps/web/src/globals.css :root --basalt-primary: 16 81% 54%, converted to sRGB"
+				},
+				{
+					"color": "#e85d2a",
+					"role": "background",
+					"source": "apps/web/public/logo.svg background rect fill"
+				},
+				{
+					"color": "#ffffff",
+					"role": "accent",
+					"source": "apps/web/public/logo.svg foreground path fill"
+				}
+			]
+		},
+		"source": {
+			"profileRevision": "880737d35ff74923cc0c96873fccf9e09ea5e569",
+			"profileSection": "Recent Projects",
+			"description": "China mutual-fund browser and ranking tool with local SQLite and Railway",
+			"repositoryRevision": "6de762074e00011009f7604bbeeb7c0b04923c00"
+		}
+	},
+	{
+		"id": "dreamro",
+		"repo": "dreamro",
+		"title": "DreamRO",
+		"emoji": "🌸",
+		"description": {
+			"en": "Nostalgic 3D browser RPG with 20 classes, three realms, and local saves",
+			"zh": "怀旧风格的 3D 网页角色扮演游戏，提供 20 种职业、三大区域和本地存档。"
+		},
+		"category": "games",
+		"website": "https://dreamro.hexly.ai",
+		"websiteSource": "GitHub repository homepage and README.md linked game preview",
+		"repository": "https://github.com/nocoo/dreamro",
+		"subject": "Gold compass star with a smaller sage star",
+		"reference": false,
+		"archived": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/dreamro.png",
+			"thumbnail": "/logos/display/dreamro-160.webp",
+			"display": "/logos/display/dreamro-1024.webp",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png",
+			"modified": false,
+			"width": 512,
+			"height": 512,
+			"bytes": 17371,
+			"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc"
+		},
+		"theme": {
+			"primary": {
+				"value": "#a98c57",
+				"source": "src/styles.css :root --gold"
+			},
+			"background": {
+				"value": "#f4f1e5",
+				"source": "src/styles.css :root background"
+			},
+			"ink": {
+				"value": "#4c5c51",
+				"source": "src/styles.css :root --ink"
+			}
+		},
+		"colors": {
+			"primary": "#a98c57",
+			"background": "#f4f1e5",
+			"ink": "#4c5c51",
+			"palette": [
+				{
+					"color": "#a98c57",
+					"role": "primary",
+					"source": "src/styles.css :root --gold"
+				},
+				{
+					"color": "#f4f1e5",
+					"role": "background",
+					"source": "src/styles.css :root background"
+				},
+				{
+					"color": "#4c5c51",
+					"role": "accent",
+					"source": "src/styles.css :root --ink"
+				}
+			]
+		},
+		"source": {
+			"profileRevision": "880737d35ff74923cc0c96873fccf9e09ea5e569",
+			"profileSection": "Games",
+			"description": "Nostalgic 3D browser RPG with 20 classes, three realms, and local saves",
+			"repositoryRevision": "07185e854a59e320f8b2a45f6d50484186753c57"
+		}
+	},
+	{
+		"id": "meowth",
+		"repo": "meowth",
+		"title": "Meowth",
+		"emoji": "🐱",
+		"description": {
+			"en": "Local bridge for five coding-agent CLIs with HTTP control and a web dashboard",
+			"zh": "把五种本机编程 Agent CLI 接入统一 HTTP 服务，并提供网页管理面板。"
+		},
+		"category": "ai",
+		"website": null,
+		"websiteSource": null,
+		"repository": "https://github.com/nocoo/meowth",
+		"subject": "Multicolored faceted kitten with a bow tie and paw-print accents",
+		"reference": false,
+		"archived": false,
+		"logo": {
+			"kind": "original",
+			"original": "/logos/originals/meowth.png",
+			"thumbnail": "/logos/display/meowth-160.webp",
+			"display": "/logos/display/meowth-1024.webp",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png",
+			"modified": false,
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3003934,
+			"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541"
+		},
+		"theme": {
+			"primary": {
+				"value": "#3c83f6",
+				"source": "apps/dashboard/src/index.css :root --primary: 217 91% 60%, converted to sRGB"
+			},
+			"background": {
+				"value": "#eeeff2",
+				"source": "apps/dashboard/src/index.css :root --background: 220 14% 94%, converted to sRGB"
+			},
+			"ink": {
+				"value": "#1f1f1f",
+				"source": "apps/dashboard/src/index.css :root --foreground: 0 0% 12%, converted to sRGB"
+			}
+		},
+		"colors": {
+			"primary": "#3c83f6",
+			"background": "#eeeff2",
+			"ink": "#1f1f1f",
+			"palette": [
+				{
+					"color": "#3c83f6",
+					"role": "primary",
+					"source": "apps/dashboard/src/index.css :root --primary: 217 91% 60%, converted to sRGB"
+				},
+				{
+					"color": "#eeeff2",
+					"role": "background",
+					"source": "apps/dashboard/src/index.css :root --background: 220 14% 94%, converted to sRGB"
+				},
+				{
+					"color": "#1f1f1f",
+					"role": "accent",
+					"source": "apps/dashboard/src/index.css :root --foreground: 0 0% 12%, converted to sRGB"
+				}
+			]
+		},
+		"source": {
+			"profileRevision": "880737d35ff74923cc0c96873fccf9e09ea5e569",
+			"profileSection": "Recent Projects",
+			"description": "Local bridge for five coding-agent CLIs with HTTP control and a web dashboard",
+			"repositoryRevision": "15b4d902c71ec6184c7220f0fb50a29ca87e080d"
+		}
 	}
 ]
