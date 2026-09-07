@@ -49,6 +49,28 @@ for (const project of projects) {
 			)
 				throw new Error(`Retained original was modified: ${project.id}`);
 		}
+		if (project.family.method === "reference-adaptation") {
+			const source = JSON.parse(
+				await readFile(
+					`artwork/logo-family/${project.id}/${project.family.id}/source.json`,
+					"utf8",
+				),
+			) as { reference: { sha256: string; width: number; height: number } };
+			const illustration = await readFile(`${root}/source.jpg`);
+			const info = await sharp(illustration).metadata();
+			if (
+				project.family.model ||
+				createHash("sha256").update(illustration).digest("hex") !==
+					source.reference.sha256 ||
+				info.width !== source.reference.width ||
+				info.height !== source.reference.height ||
+				foreground.width !== info.width ||
+				foreground.height !== info.height
+			)
+				throw new Error(
+					`Adapted illustration provenance changed: ${project.id}`,
+				);
+		}
 		for (const size of [32, 64, 160, 1024]) {
 			const meta = await sharp(`${root}/icon-${size}.webp`).metadata();
 			if (meta.width !== size || meta.height !== size)
