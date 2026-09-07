@@ -1,0 +1,35 @@
+{
+	"startedAt": "2026-09-07T05:35:51.952948+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/edits",
+	"method": "POST",
+	"contentType": "multipart/form-data",
+	"parameters": {
+		"model": "gpt-image-2",
+		"size": "2048x2048",
+		"quality": "high",
+		"n": "1",
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "e9014e827666c7a7efcf7bf1e7e6bdcab38ddbe4a4167cf4f22297bebbdabae3",
+	"images": [
+		{
+			"index": 1,
+			"path": "references/corner-tower-roof.png",
+			"sha256": "56bff04818bbc210fe869760070c53878d7b6bfe997a972a1ef280baf531fdcc",
+			"bytes": 167160,
+			"mime": "image/png"
+		},
+		{
+			"index": 2,
+			"path": "../../dotty/2026-09-07-01/raw/generated.png",
+			"sha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+			"bytes": 2516123,
+			"mime": "image/png"
+		}
+	],
+	"transportReference": "workflow/agents/skills/azure-gpt-image-cover/scripts/generate.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}

@@ -1,0 +1,384 @@
+{
+	"createdAt": "2026-09-07T05:29:06.546Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "dotty",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/dotty.svg",
+		"background": {
+			"base": "#e5eaf1",
+			"light": "#f8fafc",
+			"shade": "#d6dfe9",
+			"motif": "#8c9eaf",
+			"grainAmplitude": 0.45,
+			"grainSeed": 60907331,
+			"motifOpacity": 0.24,
+			"highlightOpacity": 0.5,
+			"ribbonOpacity": 0.2,
+			"pattern": {
+				"name": "Precision drafting grid",
+				"description": "Cool drafting paper with fine 32-unit Cartesian subdivisions, stronger 128-unit construction lines, corner registration crosses and a short calibrated ruler.",
+				"layers": [
+					{
+						"d": "M16 0V1024M0 16H1024M48 0V1024M0 48H1024M80 0V1024M0 80H1024M112 0V1024M0 112H1024M144 0V1024M0 144H1024M176 0V1024M0 176H1024M208 0V1024M0 208H1024M240 0V1024M0 240H1024M272 0V1024M0 272H1024M304 0V1024M0 304H1024M336 0V1024M0 336H1024M368 0V1024M0 368H1024M400 0V1024M0 400H1024M432 0V1024M0 432H1024M464 0V1024M0 464H1024M496 0V1024M0 496H1024M528 0V1024M0 528H1024M560 0V1024M0 560H1024M592 0V1024M0 592H1024M624 0V1024M0 624H1024M656 0V1024M0 656H1024M688 0V1024M0 688H1024M720 0V1024M0 720H1024M752 0V1024M0 752H1024M784 0V1024M0 784H1024M816 0V1024M0 816H1024M848 0V1024M0 848H1024M880 0V1024M0 880H1024M912 0V1024M0 912H1024M944 0V1024M0 944H1024M976 0V1024M0 976H1024M1008 0V1024M0 1008H1024",
+						"tone": "motif",
+						"strokeWidth": 0.48
+					},
+					{
+						"d": "M48 0V1024M0 48H1024M176 0V1024M0 176H1024M304 0V1024M0 304H1024M432 0V1024M0 432H1024M560 0V1024M0 560H1024M688 0V1024M0 688H1024M816 0V1024M0 816H1024M944 0V1024M0 944H1024",
+						"tone": "motif",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M73 80H87M80 73V87M937 80H951M944 73V87M73 944H87M80 937V951M937 944H951M944 937V951M201 816H215M208 809V823M809 208H823M816 201V215",
+						"tone": "motif",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M48 192V80H160M864 944H976V832M80 912H272M80 908V920M92 908V915M104 908V915M116 908V915M128 908V920M140 908V915M152 908V915M164 908V915M176 908V920M188 908V915M200 908V915M212 908V915M224 908V920M236 908V915M248 908V915M260 908V915M272 908V920",
+						"tone": "motif",
+						"strokeWidth": 0.75
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					51,
+					61,
+					77
+				],
+				"opacity": 0.2,
+				"blurAt2048": 78,
+				"projectionScale": [
+					0.98,
+					0.38
+				],
+				"offsetAt2048": [
+					28,
+					510
+				]
+			},
+			{
+				"color": [
+					51,
+					61,
+					77
+				],
+				"opacity": 0.13,
+				"blurAt2048": 36,
+				"projectionScale": [
+					0.82,
+					0.26
+				],
+				"offsetAt2048": [
+					12,
+					503
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.8181,
+			"offsetAt2048": [
+				-11,
+				-55
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "The whole opaque block is placed uniformly inside the rounded tile. A shared target width of 1516 px and height of 1280 px keeps consistent perceived scale and room for the independent projected floor shadow. No material pieces move independently."
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected extraction only; opaque material white is preserved. Dotty uses threshold 245 after inspecting white cells, and removes eight outside residue components totaling 131 pixels."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2411705,
+		"foregroundPixels": 1782599,
+		"softEdgePixels": 8635,
+		"removedComponents": 8,
+		"removedComponentPixels": 131,
+		"bounds": {
+			"left": 111,
+			"top": 203,
+			"right": 1963,
+			"bottom": 1759
+		}
+	},
+	"placement": {
+		"scale": 0.8181,
+		"offsetAt2048": [
+			-11,
+			-55
+		],
+		"bounds": {
+			"left": 265,
+			"top": 297,
+			"right": 1780,
+			"bottom": 1569
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 265.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3470,
+			"sha256": "77520c503c05065806aafe7e8f939a087fd05774bb2cbcc454b741fdeb8c8035"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1300,
+			"sha256": "721437dc8cbbf095a962cd774e43b8dbd9ccdf22a867287ac6459ca9c4b570c0"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3152886,
+			"sha256": "7b454c5f58391f81ad6df14516a408b9c655246ded072bf545e60930908c70be"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 52862,
+			"sha256": "7ec5fdde80b7f074c0c01f590971aae540a9d3e25ca2b8bb52e1cd1c9ab9d7d8"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1961,
+			"sha256": "72a7bd4b496985b24148907cf6b5522e20df1c76b20d1b25bd18e539f50fb7fb"
+		},
+		{
+			"path": "background.png",
+			"bytes": 243111,
+			"sha256": "2f347689bd1ba0163679d6e3edd18135390036549f3f346765afa0e453ea3dc2"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2227338,
+			"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 67054,
+			"sha256": "72c44c697bfcaf49ebe7c4bda6aa03b07ba6e03025c0e7deb14acf8d73672557"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 132966,
+			"sha256": "443c5b48d3d1956675e5a171e8f94d1f07407bd7be0138b0feb7131b6b1e258b"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 66963,
+			"sha256": "dbf1c1e29e57f61c7fe0eda8c8dfe0b86f78516b727c80ebf62b9adb2b379e81"
+		},
+		{
+			"path": "exports/dotty-transparent-2048.png",
+			"bytes": 2227338,
+			"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e"
+		},
+		{
+			"path": "exports/dotty-icon-2048.png",
+			"bytes": 2569912,
+			"sha256": "3805d754d3d4d78191e7fa5f883a23b96f2289d5100723481fa882b0d0f6ce20"
+		},
+		{
+			"path": "exports/dotty-rounded-2048.png",
+			"bytes": 2575282,
+			"sha256": "9e47936711f8795123c0381ffd456b4fd743a4844912aee2607ec124847dd106"
+		},
+		{
+			"path": "exports/dotty-transparent-1024.png",
+			"bytes": 571662,
+			"sha256": "b208501767ce235bcd2d41aa6f9c9823f5b90ccfe8a57abacaba3f31f3189dd2"
+		},
+		{
+			"path": "exports/dotty-icon-1024.png",
+			"bytes": 777667,
+			"sha256": "344cca8221b5b724d9f9e9016c0725f37a4c9eaecfd5ee9ec21ab8a506b7e2bc"
+		},
+		{
+			"path": "exports/dotty-rounded-1024.png",
+			"bytes": 790542,
+			"sha256": "914ef29661c90e91628017887bc345526a869b9643ff17553f912905aeabae83"
+		},
+		{
+			"path": "exports/dotty-transparent-512.png",
+			"bytes": 157278,
+			"sha256": "537e4d19a45dc6d3dd43cc6d4dbf992e264c5ad6154448f5a4e5c04dc6b8c323"
+		},
+		{
+			"path": "exports/dotty-icon-512.png",
+			"bytes": 238326,
+			"sha256": "ac0178079c21a5ef1770df388b660fea816cb646505ef0e400dc38525083928e"
+		},
+		{
+			"path": "exports/dotty-rounded-512.png",
+			"bytes": 244866,
+			"sha256": "78bf392043d39efbe19e9235e7be3fb61e122505a069ac802e795bf6087286d9"
+		},
+		{
+			"path": "exports/dotty-transparent-256.png",
+			"bytes": 45575,
+			"sha256": "214e989a814e020996cc85e237f2cf445dc2dd4933b847ff62d2eec252ce84b7"
+		},
+		{
+			"path": "exports/dotty-icon-256.png",
+			"bytes": 76391,
+			"sha256": "9c934c67095953ead3e985aa04b56c4785d1a3711f390029f46f5783480c7a44"
+		},
+		{
+			"path": "exports/dotty-rounded-256.png",
+			"bytes": 79237,
+			"sha256": "7eced1d9d13ce3b9110c919e12bc4e5f4f42cfa67087a3815392abf974ae0697"
+		},
+		{
+			"path": "exports/dotty-transparent-128.png",
+			"bytes": 14136,
+			"sha256": "2e82b60df94a36bc189705639dbd583df3ce5dd3d61a8ff6e83281078b66f26b"
+		},
+		{
+			"path": "exports/dotty-icon-128.png",
+			"bytes": 25533,
+			"sha256": "07ba4602012c290b1f2f9ae207a336362501ffbf72538549ca9ba9ffa91b00af"
+		},
+		{
+			"path": "exports/dotty-rounded-128.png",
+			"bytes": 26864,
+			"sha256": "654631cbbc423efb6234c1944f6aad35ce0c3db84706f5cba73a8124e4ce84b6"
+		},
+		{
+			"path": "exports/dotty-transparent-64.png",
+			"bytes": 4578,
+			"sha256": "346f9cf3db275c39c7023c4af75402dc5ba59433b2da5cbec3e0e80b879f2105"
+		},
+		{
+			"path": "exports/dotty-icon-64.png",
+			"bytes": 8300,
+			"sha256": "06e2a535a9a64b9934c77a5320bdd5120d146dbfe6e84400f910b267ca3a2fe1"
+		},
+		{
+			"path": "exports/dotty-rounded-64.png",
+			"bytes": 8832,
+			"sha256": "304171b8dded6eecca4a4185e49a4bf4cb40c095da13ce90b16c668cd149e225"
+		},
+		{
+			"path": "exports/dotty-transparent-48.png",
+			"bytes": 2885,
+			"sha256": "e92047b7e4548b464acd6fca64f67c2554065d5a21a3624f56200ff8e1ed2cff"
+		},
+		{
+			"path": "exports/dotty-icon-48.png",
+			"bytes": 5155,
+			"sha256": "60fd6fc6741a6a639ad5fdf607e938793f5bc18f08254d64a3694cce6a306a31"
+		},
+		{
+			"path": "exports/dotty-rounded-48.png",
+			"bytes": 5576,
+			"sha256": "b2ee8d81841e45333cd248e4200a3ac8d73e4c7f0bd76f31b6fc5df17cd4f29b"
+		},
+		{
+			"path": "exports/dotty-transparent-32.png",
+			"bytes": 1546,
+			"sha256": "0ebe15e4e3c6815e41f71c032ea818754a93f2247de0df985957f4dcf25dc724"
+		},
+		{
+			"path": "exports/dotty-icon-32.png",
+			"bytes": 2573,
+			"sha256": "ebd5f5eebc07e322f0bc5a9d3937ff772eafdd1ef0f4d68e447933c31b1c4794"
+		},
+		{
+			"path": "exports/dotty-rounded-32.png",
+			"bytes": 2816,
+			"sha256": "3eb14a4550b93a3ff405a389826c286a141b74ed4c16cd363fd40804f82db727"
+		},
+		{
+			"path": "exports/dotty-transparent-24.png",
+			"bytes": 1041,
+			"sha256": "31202ae6b16e3a4b5d828650eaf93a770d37ee51a5b7b02303708deead305fd2"
+		},
+		{
+			"path": "exports/dotty-icon-24.png",
+			"bytes": 1633,
+			"sha256": "22c219cbaaaaf15859b374a45e55b80cb7d137e0d37d82bbf66ec7cf89bb1985"
+		},
+		{
+			"path": "exports/dotty-rounded-24.png",
+			"bytes": 1805,
+			"sha256": "3390f028488631a38761156e275857a8009fcb683d1da82e5f059929aa000811"
+		},
+		{
+			"path": "exports/dotty-transparent-16.png",
+			"bytes": 601,
+			"sha256": "3c864306b355c419facce344f04bf4633b78781498a6f2387bbb8c63b224ad47"
+		},
+		{
+			"path": "exports/dotty-icon-16.png",
+			"bytes": 864,
+			"sha256": "aeda4d5e437af8baa817a70f07b0777fe63876b299e1b9d9a9eb88bd77105406"
+		},
+		{
+			"path": "exports/dotty-rounded-16.png",
+			"bytes": 930,
+			"sha256": "596e1778ece0bdc24ee66212e437229017cc56d43577a85e577abf32deb8ca84"
+		},
+		{
+			"path": "exports/dotty-white-2048.png",
+			"bytes": 2017357,
+			"sha256": "b810588a39d1a1c7226d3888ecec2a82620ab43d574e9e0cb0637291984dc1cc"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 530814,
+			"sha256": "2caf0e41f4af0eb62904b843ded0a1abc88647b4344d480e9557632cb573a67f"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 532500,
+			"sha256": "25012ddc7201776b1d55d5e47904889d622249e5a550110dc82f82ac9e1c2285"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"sourceSha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb",
+	"extractionSha256": "4f82135798561f5754bd3f9cb4067bf2e14a7a3e4beca035331275ebf8de0f4b",
+	"opaquePixelsChecked": 1803993,
+	"changedOpaquePixels": 0,
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected near-white extraction preserves all solid surface details; no global white deletion."
+	},
+	"statistics": {
+		"backgroundPixels": 2380787,
+		"foregroundPixels": 1813517,
+		"softEdgePixels": 9524,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 107,
+			"top": 168,
+			"right": 1967,
+			"bottom": 1745
+		}
+	},
+	"visualInspection": "Light and dark edge previews inspected; enclosed specular highlights and internal material/architectural shadows are preserved. Dotty calibration protects opaque white checker cells; its eight removed exterior residue components are separately inspected. No global near-white deletion."
+}

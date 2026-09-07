@@ -1,0 +1,82 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels within the extracted boundary; selected by visible material role, not average color or invented site tokens."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Black deck",
+				"zh": "黑色甲板"
+			},
+			"role": "primary",
+			"color": "#1d2222",
+			"pixel": [1340, 376],
+			"rgb": [29, 34, 34],
+			"sourceSha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb"
+		},
+		{
+			"label": {
+				"en": "Live green",
+				"zh": "带电绿色"
+			},
+			"role": "accent",
+			"color": "#29bf5a",
+			"pixel": [1258, 1177],
+			"rgb": [41, 191, 90],
+			"sourceSha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb"
+		},
+		{
+			"label": {
+				"en": "Contact metal",
+				"zh": "触点金属"
+			},
+			"role": "accent",
+			"color": "#a79667",
+			"pixel": [405, 666],
+			"rgb": [167, 150, 103],
+			"sourceSha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb"
+		},
+		{
+			"label": {
+				"en": "Arc highlight",
+				"zh": "电弧高光"
+			},
+			"role": "accent",
+			"color": "#b2f6cb",
+			"pixel": [973, 864],
+			"rgb": [178, 246, 203],
+			"sourceSha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb"
+		}
+	],
+	"presentation": {
+		"base": "#e2eee7",
+		"light": "#f4faf7",
+		"shade": "#cddfd8",
+		"motif": "#799b8b",
+		"pattern": "Circuit routing grid",
+		"status": "Adopted under the owner-authorized material batch; Basalt follows the explicit architectural correction."
+	},
+	"website": {
+		"primary": "#00ff41",
+		"background": "#050505",
+		"ink": "#e8ffe9",
+		"evidence": {
+			"primary": {
+				"value": "#00ff41",
+				"source": "src/index.css --matrix-ink"
+			},
+			"background": {
+				"value": "#050505",
+				"source": "src/index.css --matrix-bg"
+			},
+			"ink": {
+				"value": "#e8ffe9",
+				"source": "src/index.css --matrix-ink-bright"
+			}
+		},
+		"status": "Existing product theme retained; the new artwork does not recolor the UI."
+	}
+}
