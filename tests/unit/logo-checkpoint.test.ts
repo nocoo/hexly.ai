@@ -12,7 +12,9 @@ const tool = fileURLToPath(
 );
 const imageSha256 = "a".repeat(64);
 
-for (const retained of [false, true]) {
+for (const mode of ["generated", "retained", "adapted"] as const) {
+	const retained = mode !== "generated";
+	const adapted = mode === "adapted";
 	const reviewName = retained ? "source-review.json" : "raw-review.json";
 	for (const [name, review] of [
 		["missing", undefined],
@@ -23,13 +25,19 @@ for (const retained of [false, true]) {
 			{ status: "approved", imageSha256: "b".repeat(64) },
 		],
 	] as const) {
-		test(`refuses ${retained ? "retained" : "generated"} finishing with ${name} approval before processing artwork`, async () => {
+		test(`refuses ${mode} finishing with ${name} approval before processing artwork`, async () => {
 			const study = await mkdtemp(join(tmpdir(), "hexly-logo-review-"));
 			try {
 				await writeFile(
 					join(study, "presentation.json"),
 					JSON.stringify(
-						retained ? { sourceMode: "retained-transparent" } : {},
+						retained
+							? {
+									sourceMode: adapted
+										? "prepared-transparent"
+										: "retained-transparent",
+								}
+							: {},
 					),
 				);
 				const artwork = { path: "source.png", sha256: imageSha256 };
@@ -37,7 +45,11 @@ for (const retained of [false, true]) {
 					join(study, retained ? "source.json" : "response.json"),
 					JSON.stringify(
 						retained
-							? { kind: "retained-original", generationCalls: 0, artwork }
+							? {
+									kind: adapted ? "reference-adaptation" : "retained-original",
+									generationCalls: 0,
+									artwork,
+								}
 							: { status: "succeeded", output: artwork },
 					),
 				);
