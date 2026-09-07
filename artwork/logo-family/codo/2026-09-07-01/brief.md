@@ -1,0 +1,16 @@
+# Codo — a bright arrival
+
+- Product: A quiet macOS notification bridge between your AI agents and your desktop.
+- Species: a vivid jewel-colored hummingbird in a compact hovering pose.
+- Moment: A hummingbird brakes into a quiet hover just before its slender beak reaches one small bell-shaped flower. Catch the decisive instant with the chest turned slightly toward us, one wing raised and the other overlapping naturally behind, the compact tail fanned just enough to balance. The bird itself carries the occupied area; the tiny nearby flower completes the gesture.
+- Camera: A 90 mm close small-bird view including the whole hovering hummingbird, with an intimate three-quarter turn. The eye, beak and flower relationship are the focal story; folded-back wing overlap keeps the silhouette compact.
+- Palette: The owner explicitly asks for richly colorful plumage. Use a coherent iridescent jewel sequence: emerald and turquoise dominate chest and wings, cobalt and violet gather at the throat and wing undersides, and a warm coral-gold transition is concentrated near the breast. Organize these saturated colors into connected anatomical planes with deep teal shadows, not random rainbow triangles. A crisp dark eye and beak stay easy to read.
+- One external interest point: Exactly one small bell-shaped flower close to the beak, with a connected coral, golden-yellow and pink petal group and a short quiet stem. It extends into nearby negative space and remains distinctly secondary to the jewel-colored bird. No sparkles, detached feathers, extra blossoms, rainbow trails or floating confetti.
+- Specific direction: The old first reference is a very dark narrow hummingbird, used only to establish the species. Redesign it with clearer volume and vivid but organized color as expressly requested. Avoid a thin horizontal arrow silhouette, two huge widely separated wings, realistic iridescent gradients, lens blur or a busy garden. Keep the complete wing tips, tail and flower inside the rounded viewfinder.
+- Drawing: connected flat irregular polygons, broad anatomical planes, smaller expressive facets.
+- Presentation proposal: Petal pockets: three broad asymmetrical folded petal pockets and fine offset seams on a deep mineral-teal field. Background, grain and contact shadows are composed independently after extraction; existing site colors stay separate.
+- Source: one high-quality native 2048 × 2048 Azure gpt-image-2 image on uniform pure white. No exterior emission, shadow, text, or tile.
+- Framing: a complete small animal with at least 128 native pixels of clearance against the final 23% rounded outline; exact uniform placement chosen after inspection. No stretched anatomy or circular clipping.
+- Reference order: Rejected historical context. Preserve only the animal named in the prompt; redesign the composition and colors. Frogie guides drawing; ref01/ref02 guide presentation only.
+- Authorization: exact owner batch waiver in authorization.json. Inspect each returned image and record delegated acceptance without claiming owner review.
+- Delivery: independent static/Vite pages, generation and finishing history, all sizes, source assets and README, palette, consumer evidence, catalogue/profile synchronization, Refined status, commits, pushes and verified deployment.
