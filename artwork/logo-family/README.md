@@ -99,3 +99,21 @@ The nearest protected feature sits 133.98 px inside the 2048-pixel rounded outli
 Frogie 03, Pew 04, Firefly study 10 pass 02, and Bogo study 05 pass 04 are adopted in the local source repositories. README headers use their selected rounded presentations. App marks and favicons use the transparent foreground without another tile or corner mask. The four individual static pages and Vite paths show these same roles. Publication remains paused.
 
 Follow [the usage wiki and adoption SOP](../../docs/07-logo-usage-sop.md) for every later project. The [2026-09-07 audit](audits/2026-09-07-usage/) preserves the previous source state, exact-master comparisons, small-image alpha checks, and browser evidence.
+
+## Retained-original batch
+
+Nine owner-selected originals received presentation-only refinements with zero image-generation calls. Each study has source/provenance records, a presentation brief, a distinct texture recipe, frozen finishing 01, native and small exports, an adoption record, and an individual review.
+
+| Project | Study | Review |
+| --- | --- | --- |
+| R2Shot | [2026-09-07-01](r2shot/2026-09-07-01/notes.md) | [Static HTML](r2shot/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/r2shot) |
+| Hooky | [2026-09-07-01](hooky/2026-09-07-01/notes.md) | [Static HTML](hooky/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/hooky) |
+| Zhe | [2026-09-07-01](zhe/2026-09-07-01/notes.md) | [Static HTML](zhe/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/zhe) |
+| Lyre | [2026-09-07-03](lyre/2026-09-07-03/notes.md) | [Static HTML](lyre/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/lyre) |
+| Shrike | [2026-09-07-01](shrike/2026-09-07-01/notes.md) | [Static HTML](shrike/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/shrike) |
+| Wooly | [2026-09-07-01](wooly/2026-09-07-01/notes.md) | [Static HTML](wooly/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/wooly) |
+| Noheir | [2026-09-07-01](noheir/2026-09-07-01/notes.md) | [Static HTML](noheir/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/noheir) |
+| Dove | [2026-09-07-03](dove/2026-09-07-03/notes.md) | [Static HTML](dove/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/dove) |
+| Neo | [2026-09-07-03](neo/2026-09-07-03/notes.md) | [Static HTML](neo/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/neo) |
+
+The retained route uses `source.json`, `source-review.json`, and `brief.txt`, with `sourceMode: "retained-transparent"`. Native foregrounds remain byte-identical. Public archives use `source.png` and `brief.txt`; R2Shot and Hooky keep their native 920/900 px masters. See [the family guide](../../docs/06-logo-family.md), [usage SOP](../../docs/07-logo-usage-sop.md), and [batch audit](audits/2026-09-07-retained/).

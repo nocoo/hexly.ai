@@ -1,0 +1,346 @@
+{
+	"createdAt": "2026-09-07T00:07:11.210Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "neo",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#5c7eaa",
+			"light": "#a4bad5",
+			"shade": "#39577e",
+			"motif": "#253c60",
+			"grainAmplitude": 1,
+			"grainSeed": 609079,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.23,
+			"ribbonOpacity": 0.12,
+			"pattern": {
+				"name": "Folded sunlight",
+				"description": "Wide asymmetrical ray-like paper planes enter from the upper-right and lower-left. Their varied widths, oblique ends, and short highlighted seams make a calm sunlit fold rather than a starburst or pixel grid.",
+				"layers": [
+					{
+						"d": "M637-90L751-90L488 278L388 323Z M871-80L1028-55L711 279L636 294Z M1078 73L1131 199L868 349L813 329Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M394 328L494 283L757-85 M642 299L717 284L1034-50 M819 334L874 354L1137 204",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-98 790L-48 924L203 742L231 680Z M-36 1101L131 1101L287 894L264 823Z M330 1120L452 1134L442 939L403 900Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-44 930L209 748L237 686 M136 1106L293 899L270 828 M458 1134L448 939L409 900",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+		},
+		"shadows": [
+			{
+				"color": [
+					29,
+					44,
+					63
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					23,
+					35,
+					50
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": []
+	},
+	"statistics": {
+		"backgroundPixels": 1554269,
+		"foregroundPixels": 2640035,
+		"softEdgePixels": 2622599,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 81,
+			"top": 202,
+			"right": 1968,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -31.177266927372727,
+		"clippedPixels": 3798
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1966,
+			"sha256": "59473e198874c70af552f911c6722e6ef91d606e6848a8aa897e86388b8de9d9"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 660,
+			"sha256": "fc458a3d7bcd92e749f3d1d5d9fe6268a63355b54a7239111ee6e601eda1759e"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1005,
+			"sha256": "65d97f197c28a0314791e0e21e5e39221c5ada07f2b22a5d6de7a18850d63b5e"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 183931,
+			"sha256": "f47617eaf378d250facf8d1c6b777ef5b87db665b20ca36fa7a97f234b92cf63"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 988,
+			"sha256": "2405e02351f48f7e589e0d819e54ffa048329db3ae43225196bd3f7edb0ffb76"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2457883,
+			"sha256": "d6892cdadcaec126d020b6682ec1186643046ea0505abe087ee7a50baea6b892"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 178704,
+			"sha256": "43f1f8ed0ee0017727776b02c31767de71bbaf27a56ce22d61d90ff67dda74cb"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 148335,
+			"sha256": "77874ff04e0c5309d17bbf9952a574c1afc7c515ebc52182631a70a44781f5a1"
+		},
+		{
+			"path": "exports/neo-transparent-2048.png",
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+		},
+		{
+			"path": "exports/neo-icon-2048.png",
+			"bytes": 5892045,
+			"sha256": "2e836657fb25fd0ebdeff70c249e6042922d59adcce25dc288dc6864dfeb7b32"
+		},
+		{
+			"path": "exports/neo-rounded-2048.png",
+			"bytes": 5780228,
+			"sha256": "a4211243fdde65090cc3432563fba4b504dbfefe4033a6d8b99f92f17756012e"
+		},
+		{
+			"path": "exports/neo-transparent-1024.png",
+			"bytes": 1506396,
+			"sha256": "4ead65595289eb11cfe3e41d8b3848b8fa1a55edcb91df227d989de3834d3f2f"
+		},
+		{
+			"path": "exports/neo-icon-1024.png",
+			"bytes": 1781498,
+			"sha256": "2f696ca4e23da12e81ad5d37876958f66c5561b89df90c6840a86d1d4ed765b9"
+		},
+		{
+			"path": "exports/neo-rounded-1024.png",
+			"bytes": 1767690,
+			"sha256": "aa7b5573c8769fbc5b202092b8beb9df870d27e59836c716e208047a33924e0f"
+		},
+		{
+			"path": "exports/neo-transparent-512.png",
+			"bytes": 423789,
+			"sha256": "561ec2c511dd7eb6157a8558edce4054a719d2bf95f26955a818394c33aeb715"
+		},
+		{
+			"path": "exports/neo-icon-512.png",
+			"bytes": 514405,
+			"sha256": "6f7edfd3c96bfde007588b9dae9c48dde6ed2c22ef3e9e5a6cd818a63cdce1ce"
+		},
+		{
+			"path": "exports/neo-rounded-512.png",
+			"bytes": 511535,
+			"sha256": "793426dcfb4890501f6338313cd06bfeef19364faf14b5c4d00e55168ac125bc"
+		},
+		{
+			"path": "exports/neo-transparent-256.png",
+			"bytes": 120295,
+			"sha256": "e421e17d8233aa0fe74e2acface25d490eb72d52d38fb3f068f24aada9e87cc1"
+		},
+		{
+			"path": "exports/neo-icon-256.png",
+			"bytes": 137316,
+			"sha256": "f05ad424e1dd4fd1164795f83dbecd30ff8d857e9e22e7735f707fb3c79aa257"
+		},
+		{
+			"path": "exports/neo-rounded-256.png",
+			"bytes": 139156,
+			"sha256": "0db2b8438860ddd17ea95788af3cc02988d322c4a9ef6c21b7cb51887480ef37"
+		},
+		{
+			"path": "exports/neo-transparent-128.png",
+			"bytes": 34940,
+			"sha256": "bedda0fba6ab1dab4a5cbb473a8f69655250610612804dfa5a30111ae5a176fc"
+		},
+		{
+			"path": "exports/neo-icon-128.png",
+			"bytes": 41169,
+			"sha256": "029e91e6ef2aa1d68267b20523d8faffd9098aee3779fe5becd8e50a789c99a7"
+		},
+		{
+			"path": "exports/neo-rounded-128.png",
+			"bytes": 42181,
+			"sha256": "8fb2eccdcae303d0d00c548ea8f5c10b6b310d348b9e348bdc42de15cfb98458"
+		},
+		{
+			"path": "exports/neo-transparent-64.png",
+			"bytes": 10014,
+			"sha256": "b5965220ed9137ad9737ec6e100976ebe453055c24297bdf7b0778c491123179"
+		},
+		{
+			"path": "exports/neo-icon-64.png",
+			"bytes": 12155,
+			"sha256": "3c2aa4442bb9c9c67dd31c4cf687bed8f26c95af5b4eb57727270c24f4242c41"
+		},
+		{
+			"path": "exports/neo-rounded-64.png",
+			"bytes": 12541,
+			"sha256": "62329950e2af11d9e6e1a95a8749cf211470b7e80aa5ff0ba1f7b44d343c30dc"
+		},
+		{
+			"path": "exports/neo-transparent-48.png",
+			"bytes": 5892,
+			"sha256": "37f3591b4fcd9ec41337857d5b06438b9551642dff103c5f2a032238df93e5ee"
+		},
+		{
+			"path": "exports/neo-icon-48.png",
+			"bytes": 7175,
+			"sha256": "ffafafac59b9b44d9720c664eee6678580600826c5733aa7b1b7a3837e2aaff5"
+		},
+		{
+			"path": "exports/neo-rounded-48.png",
+			"bytes": 7393,
+			"sha256": "54833f50f27b7e8ce8f5ecabdc08d05e95a6fd0da14b39b1d00afbf19ac003d4"
+		},
+		{
+			"path": "exports/neo-transparent-32.png",
+			"bytes": 2914,
+			"sha256": "be376d493881ddc06a8f3f8322ac6204b7fe6c2ac11819158f1f7379a94d6545"
+		},
+		{
+			"path": "exports/neo-icon-32.png",
+			"bytes": 3439,
+			"sha256": "5e9bb6ce709f767f4aa488ab51108a5e5257f03b49725d241c1a62536b09ba16"
+		},
+		{
+			"path": "exports/neo-rounded-32.png",
+			"bytes": 3515,
+			"sha256": "36e2ab739f22b5ee1e1fe04e008246810bb62c9ac4a46f1bd702b03e8f8665fe"
+		},
+		{
+			"path": "exports/neo-transparent-24.png",
+			"bytes": 1805,
+			"sha256": "15ba4d403f31d9573c814a5f0afdaee869ce3cf4f6b651b283b23f97f3c14117"
+		},
+		{
+			"path": "exports/neo-icon-24.png",
+			"bytes": 2032,
+			"sha256": "add5196857adff28ba608a7de9f0368ee08a53915b6edc385d97cc2126fbf75a"
+		},
+		{
+			"path": "exports/neo-rounded-24.png",
+			"bytes": 2102,
+			"sha256": "8e0b04588d2e2ce5231de86a9bd5e481dc12e7057472d97420be5643e1dc01cf"
+		},
+		{
+			"path": "exports/neo-transparent-16.png",
+			"bytes": 961,
+			"sha256": "46460cb1affc4d60af601773de02069a03646d40a9dbaf5775a4cf62a1e1030f"
+		},
+		{
+			"path": "exports/neo-icon-16.png",
+			"bytes": 985,
+			"sha256": "58f9dbee6ba0642b1aa8cc08df06a3b5209951b74bcabbcc03fcbd86737722b4"
+		},
+		{
+			"path": "exports/neo-rounded-16.png",
+			"bytes": 1013,
+			"sha256": "3b058fcf825a7d1537343ff0b6d7c2129fff9b59c531a4bea1f9c5502ffdd833"
+		},
+		{
+			"path": "exports/neo-white-2048.png",
+			"bytes": 4542672,
+			"sha256": "97d27b454d4d9d08acc1e3e3d48165eb20220dc19a69079d5d0b325ff4ad62d5"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1409057,
+			"sha256": "441ec7f7e3a0b4d39043c66d8c4502fdbedcd6934d87d23fa7602f38601d4c11"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1415531,
+			"sha256": "ab7374e1d6652237e147da754a4b2cc537addad8a385cc050b181ca672a95f73"
+		}
+	]
+}

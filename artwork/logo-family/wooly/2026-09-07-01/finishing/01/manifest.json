@@ -1,0 +1,353 @@
+{
+	"createdAt": "2026-09-07T00:07:02.780Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "wooly",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#ad8093",
+			"light": "#d6b2bd",
+			"shade": "#794f6d",
+			"motif": "#5f3455",
+			"grainAmplitude": 1,
+			"grainSeed": 609076,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.25,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Wool cloud folds",
+				"description": "Large scalloped seams gather at the left and lower edges like lightly pressed wool. The lobes remain open and uneven, avoiding both a repeated grid and the octopus curling channels.",
+				"layers": [
+					{
+						"d": "M-90 425C-3 407 4 343-25 305C65 343 131 281 114 216C198 245 241 191 222 122C312 158 371 82 340-42",
+						"tone": "motif",
+						"strokeWidth": 29
+					},
+					{
+						"d": "M-91 443C16 424 22 344-7 315C78 359 151 280 133 228C217 258 262 189 242 135C330 173 391 83 360-44",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M326 1091C337 1011 407 973 457 1018C436 923 510 875 573 908C566 824 637 789 698 833C722 748 808 744 854 803C892 729 981 746 1017 814C1060 785 1100 802 1126 845",
+						"tone": "motif",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M344 1094C354 1026 414 995 474 1035C453 938 519 896 590 926C583 841 646 810 708 852C737 767 812 765 859 823C897 749 978 766 1024 833",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M779-93C759 9 806 63 877 43C864 131 938 169 1004 128C1007 210 1075 241 1131 206",
+						"tone": "ribbon",
+						"strokeWidth": 37
+					}
+				]
+			},
+			"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+		},
+		"shadows": [
+			{
+				"color": [
+					61,
+					40,
+					55
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					48,
+					32,
+					44
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": []
+	},
+	"statistics": {
+		"backgroundPixels": 1992167,
+		"foregroundPixels": 2202137,
+		"softEdgePixels": 2201087,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 179,
+			"top": 121,
+			"right": 2013,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 0.5000000000000568,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2271,
+			"sha256": "60ff7cd0550da3e8995a918a7bf9afbc934259ec1f1d3ae588b98a67d2874073"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 660,
+			"sha256": "0404feeb1fb0eabd3c9c185d4cec7e866881aa485ab3c98f5d1778286827058d"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1009,
+			"sha256": "c243f84665197d8374915d2086ef04a4fee4cd0b6fb50c508192755988e57e9a"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 4261802,
+			"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 304263,
+			"sha256": "6aaaa5ef12eb9682a8082137bc3a3eec8dafd30cea87cd34c89f11b0e84a1387"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1337,
+			"sha256": "23dbfc88e62b529497b32ba34da5187c95f98bf1aa7d6796a9e73d05e33348ca"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2376172,
+			"sha256": "71ed6e9e76d49fac89ba674eb55fe967b73781c71d0914e90775dc9055797c3c"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 228176,
+			"sha256": "eefb24598c85658990e1e59d1ad838051c902bbf0414898f82391111c341a261"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 182944,
+			"sha256": "d9aefd4f895b9db1fb0f7d9b83f0d873755e59678e46cda6f3ac4907e3560af2"
+		},
+		{
+			"path": "exports/wooly-transparent-2048.png",
+			"bytes": 4261802,
+			"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36"
+		},
+		{
+			"path": "exports/wooly-icon-2048.png",
+			"bytes": 5767830,
+			"sha256": "80f28d046fb46270a2ea058c5b36188849c00895de8425ad3cf578850f1c8314"
+		},
+		{
+			"path": "exports/wooly-rounded-2048.png",
+			"bytes": 5663492,
+			"sha256": "019e601eb2473e197b21333885c42559bd6067d36352bc5a0a31107ad34c2e90"
+		},
+		{
+			"path": "exports/wooly-transparent-1024.png",
+			"bytes": 1207789,
+			"sha256": "4be9aca5d6350fed66f0a633f29d9ce1f3d34910fe4065d4ee0af0aa49246689"
+		},
+		{
+			"path": "exports/wooly-icon-1024.png",
+			"bytes": 1545863,
+			"sha256": "6ed285baccd11672742a8f9eaf07bb617214a62d4dcfcf0d4979ee6618800ab2"
+		},
+		{
+			"path": "exports/wooly-rounded-1024.png",
+			"bytes": 1535648,
+			"sha256": "62187db0a8a85bfe7f2b4e76a526c97cac88b14c336722dd9af23bad7144cf45"
+		},
+		{
+			"path": "exports/wooly-transparent-512.png",
+			"bytes": 312204,
+			"sha256": "8238664a0e69522c236c99663efefa491a66fdf9e35b60939a6bfe9ea1daf1cb"
+		},
+		{
+			"path": "exports/wooly-icon-512.png",
+			"bytes": 420831,
+			"sha256": "670bb57eafda4778da0b6f0c913a5e568edd1a09647eb159338a51f1994b51bb"
+		},
+		{
+			"path": "exports/wooly-rounded-512.png",
+			"bytes": 419390,
+			"sha256": "6dc587adf82e6ec6ab2bc8f946cda6947d3b7952e904eb0f143ce6383c476f2b"
+		},
+		{
+			"path": "exports/wooly-transparent-256.png",
+			"bytes": 88066,
+			"sha256": "44a8a5be655fb2dbd41b2c68b62a8e4446d848d1dc879f0420420258230d8a4a"
+		},
+		{
+			"path": "exports/wooly-icon-256.png",
+			"bytes": 106331,
+			"sha256": "2cca9b9c7a90775f5b027dfc3e259fe7b8af6ff67266478b5f1151091eb9a4c8"
+		},
+		{
+			"path": "exports/wooly-rounded-256.png",
+			"bytes": 109000,
+			"sha256": "02a90cad18c09eb42aa3abb9b80eb47830ef127c0c06fa1f55e64207ff866fca"
+		},
+		{
+			"path": "exports/wooly-transparent-128.png",
+			"bytes": 27159,
+			"sha256": "e73aad277e11f2b011a6d0f7601b654741c9f7ca9e5192552304a1e1b85947f1"
+		},
+		{
+			"path": "exports/wooly-icon-128.png",
+			"bytes": 33008,
+			"sha256": "e4d5ff6f7f3b5d50f5ff4336af221b7c66808218402a1341decf14ee0c39eeb8"
+		},
+		{
+			"path": "exports/wooly-rounded-128.png",
+			"bytes": 34400,
+			"sha256": "1d69a65c64a231182128b62ef8e09ed2eaabdb77e03e5925738ceda0f9d90a9e"
+		},
+		{
+			"path": "exports/wooly-transparent-64.png",
+			"bytes": 8470,
+			"sha256": "8362da17455cc0755f747b6cddaa9800fffbeffd25d6c62824e1b2f8a0fbbd01"
+		},
+		{
+			"path": "exports/wooly-icon-64.png",
+			"bytes": 10485,
+			"sha256": "30ba5fe41cbe165b05dd8aa4b0a49572947a392040d49037d6b05e077adc55e2"
+		},
+		{
+			"path": "exports/wooly-rounded-64.png",
+			"bytes": 10996,
+			"sha256": "6b96c378c8c14075b4a5f3a76abd36ca84976aa7a3093a9513503225cb512e94"
+		},
+		{
+			"path": "exports/wooly-transparent-48.png",
+			"bytes": 5140,
+			"sha256": "6756d1f943292458a37b79adfe7424ea70857e3fc6065bbc1760bf8fe2a04142"
+		},
+		{
+			"path": "exports/wooly-icon-48.png",
+			"bytes": 6343,
+			"sha256": "5cd7e5480c6c3a1d09c36f42e801e01b86bfe03a1ef84be6266c33adf7952568"
+		},
+		{
+			"path": "exports/wooly-rounded-48.png",
+			"bytes": 6708,
+			"sha256": "a483dc436b53be00116e8bd6dce5aeb653d62fd625506cb2709a5910d9845fb8"
+		},
+		{
+			"path": "exports/wooly-transparent-32.png",
+			"bytes": 2610,
+			"sha256": "167857cc2f2d6fe77ecff678d533d2969c8cf1fb303e3d6037aebbc06b3aa91b"
+		},
+		{
+			"path": "exports/wooly-icon-32.png",
+			"bytes": 3155,
+			"sha256": "50f0947efec399df9d51265737b269285e12733c3b07aed6b462e8593c7f9dd4"
+		},
+		{
+			"path": "exports/wooly-rounded-32.png",
+			"bytes": 3274,
+			"sha256": "f3a35c77032acff5b2ab3e537bf4a4a7bce4e79b71a2b457750d34cc0ae18085"
+		},
+		{
+			"path": "exports/wooly-transparent-24.png",
+			"bytes": 1645,
+			"sha256": "a9c17cd0dda9766f25fde829a75648d1de437d7859a14edd6fae8adca8205733"
+		},
+		{
+			"path": "exports/wooly-icon-24.png",
+			"bytes": 1887,
+			"sha256": "39459e40dc92f8ba26432b59fa0f3fd9d84813dc675856ca696bd62a1d4dc7ab"
+		},
+		{
+			"path": "exports/wooly-rounded-24.png",
+			"bytes": 1980,
+			"sha256": "f0f1d5b8e8a397b120e3cb436c262b45e456f734c2837133bef18101725d73ed"
+		},
+		{
+			"path": "exports/wooly-transparent-16.png",
+			"bytes": 871,
+			"sha256": "720523eca2787f3c68723767599ce12d1d99b7b4312dc61cdde3e2a6fe246829"
+		},
+		{
+			"path": "exports/wooly-icon-16.png",
+			"bytes": 926,
+			"sha256": "7cf15f068ad6399d715bd99b0f679a5bfe773c90e2a884dfc220a4095d3804a9"
+		},
+		{
+			"path": "exports/wooly-rounded-16.png",
+			"bytes": 964,
+			"sha256": "42827ac0560d025ef24904d814e3c8ef2e36abb1bf93226afa0e891250d080af"
+		},
+		{
+			"path": "exports/wooly-white-2048.png",
+			"bytes": 4092843,
+			"sha256": "8cff2c86a9ab93014747f1576754e5fa6b7a5feab07865e33a6124b6f26e3bf0"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1107457,
+			"sha256": "5fdbdd9d76119b81e59195775a8ae05f4352316abdc5653a15f9b9b549afb351"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1144142,
+			"sha256": "299185e17233286b8e37686a4680ee5b407f98ec59b9aa24eacd86587efc4ab9"
+		}
+	]
+}

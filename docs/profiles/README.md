@@ -10,16 +10,16 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [📚 Bogo](04-bogo.md) | Adopted family | #0051bd | #e3edf2 |
 | [🐎 Steed](05-steed.md) | Original asset | #1da599 | #eef1f1 |
 | [🐘 Ellie](06-ellie.md) | Original asset | #016698 | #ffffff |
-| [🔐 Neo](07-neo.md) | Original asset | #3c83f6 | #eeeff2 |
+| [🔐 Neo](07-neo.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [🦒 Giraffe](08-giraffe.md) | Original asset | #598128 | #eeeff2 |
 | [🐢 Backy](09-backy.md) | Original asset | #2e8553 | #eeeff2 |
 | [🦦 Otter](10-otter.md) | Original asset | #1b99a7 | #eeeff2 |
 | [🦎 Gecko](11-gecko.md) | Original asset | #2e8553 | #eef2ef |
-| [🕊️ Dove](12-dove.md) | Original asset | #c65379 | #f3edf0 |
+| [🕊️ Dove](12-dove.md) | Adopted family | #c65379 | #f3edf0 |
 | [⚡ Pika](13-pika.md) | Original asset | #c38e13 | #eeeff2 |
 | [🐦‍⬛ Raven](14-raven.md) | Original asset | #6341c8 | #eeeff2 |
 | [🦇 Bat](15-bat.md) | Original asset | #df497b | #eeeff2 |
-| [🎶 Lyre](16-lyre.md) | Original asset | #883720 | #eeeff2 |
+| [🎶 Lyre](16-lyre.md) | Adopted family | #883720 | #eeeff2 |
 | [🎮 Poké Pocket](17-pokepocket.md) | Original asset | #294138 | #f7f8f2 |
 | [✈️ Dogfight](18-dogfight.md) | Original asset | #c0e9dc | #101c27 |
 | [🧸 Gaga](19-gaga.md) | Original asset | #4c5342 | #f3f0e8 |
@@ -33,11 +33,11 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🏟️ Arena](27-arena.md) | Profile emoji | #7430e8 | #eeeff2 |
 | [🦉 Owl](28-owl.md) | Original asset | #1c6972 | transparent |
 | [🦋 Xray](29-xray.md) | Original asset | #3653e2 | #eeeff2 |
-| [🐬 R2Shot](30-r2shot.md) | Original asset | #24c4bd | #ffffff |
-| [🪶 Shrike](31-shrike.md) | Original asset | #86502c | #fffbf9 |
-| [🐙 Hooky](32-hooky.md) | Original asset | #e9a5bf | transparent |
+| [🐬 R2Shot](30-r2shot.md) | Adopted family | #24c4bd | #ffffff |
+| [🪶 Shrike](31-shrike.md) | Adopted family | #86502c | #fffbf9 |
+| [🐙 Hooky](32-hooky.md) | Adopted family | #9666b7 | #ffffff |
 | [🔲 Dotty](33-dotty.md) | Original asset | #16181d | #f3f4f6 |
-| [🐑 Wooly](34-wooly.md) | Original asset | #dd3ca7 | #eeeff2 |
+| [🐑 Wooly](34-wooly.md) | Adopted family | #dd3ca7 | #eeeff2 |
 | [🧩 Matrix](35-matrix.md) | Profile emoji | #00ff41 | #050505 |
 | [🎨 Basalt](36-basalt.md) | Original asset | #3c83f6 | #eeeff2 |
 | [🛡️ Surety](37-surety.md) | Original asset | #ed511d | #eeeff2 |
@@ -45,10 +45,10 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🚀 Echo](39-echo.md) | Profile emoji | #f01315 | transparent |
 | [🧭 Deca](40-deca.md) | Profile emoji | #d9060a | transparent |
 | [⏰ Runner](41-runner.md) | Original asset | #14501f | #020202 |
-| [🔗 Zhe](42-zhe.md) | Original asset | #7c3bed | #eeeff2 |
+| [🔗 Zhe](42-zhe.md) | Adopted family | #7c3bed | #eeeff2 |
 | [📰 GeekHub](43-geekhub.md) | Original asset | #1cce7b | #ffffff |
 | [💾 CCBackup](44-ccbackup.md) | Profile emoji | #609acf | transparent |
-| [💰 Noheir](45-noheir.md) | Original asset | #25aff4 | #eeeff2 |
+| [💰 Noheir](45-noheir.md) | Adopted family | #25aff4 | #eeeff2 |
 | [🛡️ IPSafe](46-ipsafe.md) | Profile emoji | #fe9686 | transparent |
 | [🩺 Uptime Kuma Skill](47-uptime-kuma-skill.md) | Profile emoji | #444444 | transparent |
 | [📨 Teams Workflow](48-microsoft-teams-send-as-workflow.md) | Profile emoji | #124e80 | transparent |

@@ -1,0 +1,137 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+		"width": 900,
+		"height": 900,
+		"bytes": 667627,
+		"repository": "https://github.com/nocoo/hooky",
+		"repositoryRevision": "fadcde05a823356775a9c27005a701d6d107e955",
+		"sourcePath": "assets/hooky-max.png",
+		"sourceUrl": "https://github.com/nocoo/hooky/blob/fadcde05a823356775a9c27005a701d6d107e955/assets/hooky-max.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Rose pink",
+				"zh": "玫瑰粉"
+			},
+			"color": "#e9a5bf",
+			"x": 313,
+			"y": 260,
+			"alpha": 254,
+			"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (313, 260); palette.json"
+		},
+		{
+			"label": {
+				"en": "Lilac",
+				"zh": "丁香紫"
+			},
+			"color": "#b771af",
+			"x": 262,
+			"y": 528,
+			"alpha": 254,
+			"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (262, 528); palette.json"
+		},
+		{
+			"label": {
+				"en": "Petal light",
+				"zh": "浅花瓣"
+			},
+			"color": "#fedced",
+			"x": 376,
+			"y": 129,
+			"alpha": 254,
+			"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (376, 129); palette.json"
+		},
+		{
+			"label": {
+				"en": "Berry violet",
+				"zh": "莓紫"
+			},
+			"color": "#8b4e93",
+			"x": 573,
+			"y": 606,
+			"alpha": 254,
+			"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (573, 606); palette.json"
+		},
+		{
+			"label": {
+				"en": "Ink plum",
+				"zh": "墨梅紫"
+			},
+			"color": "#42274d",
+			"x": 556,
+			"y": 340,
+			"alpha": 254,
+			"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (556, 340); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#9d7097",
+		"light": "#c9a7c4",
+		"shade": "#704a79",
+		"motif": "#55255f",
+		"grainAmplitude": 1,
+		"grainSeed": 609072,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Tidal hooks",
+			"description": "Open curling channels approach from the top-left and right edges. Their tapered hooks echo the octopus arms without adding another foreground accessory or reusing the dolphin wake.",
+			"layers": [
+				{
+					"d": "M-52 360C59 355 172 280 187 161C197 85 151 27 84 35C35 41 19 79 40 112C55 133 87 125 92 103",
+					"tone": "motif",
+					"strokeWidth": 28
+				},
+				{
+					"d": "M-51 377C79 370 193 285 204 160C214 65 153 7 78 19",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1091 515C935 475 840 389 850 250C856 156 927 107 988 138C1033 161 1028 219 988 230C960 238 942 216 952 194",
+					"tone": "motif",
+					"strokeWidth": 32
+				},
+				{
+					"d": "M1090 535C909 487 819 381 835 248C846 141 932 92 995 121",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M275 1107C193 982 89 918-58 946",
+					"tone": "motif",
+					"strokeWidth": 38
+				},
+				{
+					"d": "M258 1111C168 989 64 941-58 966",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1048 796C964 823 944 914 991 957C1021 984 1055 975 1086 950",
+					"tone": "ribbon",
+					"strokeWidth": 24
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"primary": {
+			"value": "#9666b7",
+			"source": "src/popup/popup.css .btn-primary background-color"
+		},
+		"background": {
+			"value": "#ffffff",
+			"source": "src/popup/popup.css body background-color"
+		},
+		"ink": {
+			"value": "#333333",
+			"source": "src/popup/popup.css body color"
+		}
+	}
+}

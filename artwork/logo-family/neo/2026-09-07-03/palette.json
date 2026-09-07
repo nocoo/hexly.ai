@@ -1,0 +1,120 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4237355,
+		"repository": "https://github.com/nocoo/neo",
+		"repositoryRevision": "97907273ddd9e52efc4ee9d3d640a51871d81970",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/neo/blob/97907273ddd9e52efc4ee9d3d640a51871d81970/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Golden coat",
+				"zh": "金色毛发"
+			},
+			"color": "#f4be7e",
+			"x": 1447,
+			"y": 448,
+			"alpha": 254,
+			"source": "Original neo 2939c3edb084, sampled sRGB pixel (1447, 448); palette.json"
+		},
+		{
+			"label": {
+				"en": "Cream light",
+				"zh": "奶油高光"
+			},
+			"color": "#ffdebb",
+			"x": 1040,
+			"y": 504,
+			"alpha": 254,
+			"source": "Original neo 2939c3edb084, sampled sRGB pixel (1040, 504); palette.json"
+		},
+		{
+			"label": {
+				"en": "Warm shadow",
+				"zh": "暖色阴影"
+			},
+			"color": "#b17158",
+			"x": 345,
+			"y": 729,
+			"alpha": 254,
+			"source": "Original neo 2939c3edb084, sampled sRGB pixel (345, 729); palette.json"
+		},
+		{
+			"label": {
+				"en": "Tongue rose",
+				"zh": "舌头玫瑰"
+			},
+			"color": "#e88089",
+			"x": 919,
+			"y": 1539,
+			"alpha": 254,
+			"source": "Original neo 2939c3edb084, sampled sRGB pixel (919, 1539); palette.json"
+		},
+		{
+			"label": {
+				"en": "Nose charcoal",
+				"zh": "鼻尖炭黑"
+			},
+			"color": "#322a37",
+			"x": 855,
+			"y": 1120,
+			"alpha": 254,
+			"source": "Original neo 2939c3edb084, sampled sRGB pixel (855, 1120); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#5c7eaa",
+		"light": "#a4bad5",
+		"shade": "#39577e",
+		"motif": "#253c60",
+		"grainAmplitude": 1,
+		"grainSeed": 609079,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.23,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Folded sunlight",
+			"description": "Wide asymmetrical ray-like paper planes enter from the upper-right and lower-left. Their varied widths, oblique ends, and short highlighted seams make a calm sunlit fold rather than a starburst or pixel grid.",
+			"layers": [
+				{
+					"d": "M637-90L751-90L488 278L388 323Z M871-80L1028-55L711 279L636 294Z M1078 73L1131 199L868 349L813 329Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M394 328L494 283L757-85 M642 299L717 284L1034-50 M819 334L874 354L1137 204",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-98 790L-48 924L203 742L231 680Z M-36 1101L131 1101L287 894L264 823Z M330 1120L452 1134L442 939L403 900Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-44 930L209 748L237 686 M136 1106L293 899L270 828 M458 1134L448 939L409 900",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"background": {
+			"value": "220 14% 94%",
+			"source": "app/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "app/globals.css --foreground"
+		},
+		"primary": {
+			"value": "217 91% 60%",
+			"source": "app/globals.css imports @nocoo/basalt/styles"
+		}
+	}
+}

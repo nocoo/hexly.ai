@@ -1,0 +1,346 @@
+{
+	"createdAt": "2026-09-07T00:07:08.922Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "dove",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#83759b",
+			"light": "#bfb2cd",
+			"shade": "#57496e",
+			"motif": "#3e2f58",
+			"grainAmplitude": 1,
+			"grainSeed": 609078,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Pressed petals",
+				"description": "Sparse elongated petal impressions lean at different angles near the empty corners. Paired offset edges make a shallow botanical paper relief, not another foreground flower cluster.",
+				"layers": [
+					{
+						"d": "M-48 375C-48 183 88 49 243 37C206 181 115 311-48 375Z M669-48C804-9 833 94 797 215C695 160 643 58 669-48Z M962 359C947 176 1041 60 1144 45C1150 204 1088 310 962 359Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-41 378C122 314 213 184 250 40 M804 218C702 163 650 61 676-45 M969 362C1095 313 1157 207 1151 48",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M771 1101C760 965 833 874 963 829C990 960 920 1076 771 1101Z M-55 841C102 814 213 875 262 995C100 1018 13 953-55 841Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M778 1104C927 1079 997 963 970 832 M-52 848C16 960 103 1025 265 1002",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+		},
+		"shadows": [
+			{
+				"color": [
+					44,
+					37,
+					55
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					35,
+					29,
+					44
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": []
+	},
+	"statistics": {
+		"backgroundPixels": 2369100,
+		"foregroundPixels": 1825204,
+		"softEdgePixels": 1824844,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 153,
+			"top": 247,
+			"right": 1879,
+			"bottom": 1901
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 146.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2032,
+			"sha256": "b117e15a5786c77c59321b40111f5274e838c671c55608a610d0337bd74e81b8"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 660,
+			"sha256": "fae8c7f8deec97f3af11611e32d7fd1f6d38d3fbc691766c0da4613d850b29c3"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1043,
+			"sha256": "504a35a5d466de2ad17ef86003ce00153b9a82b5d96829f7dbd33c9efcb3b609"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 386699,
+			"sha256": "1c786bc4e2c3a51f816744cb3fd5efd280ff939bd2c9e3e7d053d75b3b9171c0"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1080,
+			"sha256": "8b84eba4e5eea621122bd93b07d785c548c2a74f30377d7738f56e476e1bdc26"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2343586,
+			"sha256": "91759efed350f049d37376f51e2fa7efa0eeaf6cc4535c5555ad011735674278"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 283400,
+			"sha256": "52a2b22533983b35879a9419499d59009fba7e5c4825dc54def5720ec7dd7e76"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 219205,
+			"sha256": "cdbcb9c1097ff69a3ad655a667a687f60dda96f1937b0b326901b0bca413f7cf"
+		},
+		{
+			"path": "exports/dove-transparent-2048.png",
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+		},
+		{
+			"path": "exports/dove-icon-2048.png",
+			"bytes": 6338009,
+			"sha256": "fcafb6229474efe056d37bcee0b114acdf6c7d70da3a80c43609a5ca4af0e074"
+		},
+		{
+			"path": "exports/dove-rounded-2048.png",
+			"bytes": 6238964,
+			"sha256": "2d759d13fd984a8d89a5020a0afd85a460fbd6b444eb3ad8c0a2d6c44708fd06"
+		},
+		{
+			"path": "exports/dove-transparent-1024.png",
+			"bytes": 1276090,
+			"sha256": "b76ac2ee9c67011cc4f85f0c994dd2fe8cb18873cdd0d742b97dc20ff74d8e26"
+		},
+		{
+			"path": "exports/dove-icon-1024.png",
+			"bytes": 1673753,
+			"sha256": "bee86833f0959293263c5f7ec4ba67be2f2f34e01c19896405cec9ffb1aabca3"
+		},
+		{
+			"path": "exports/dove-rounded-1024.png",
+			"bytes": 1663556,
+			"sha256": "5ca9ac57a749ee36ced8d39003851ffa5fd2694bbd99bba2d267dbf5600842a8"
+		},
+		{
+			"path": "exports/dove-transparent-512.png",
+			"bytes": 341573,
+			"sha256": "90bca4a429da7fcf0c2ca88534fecd9c0531b8cca86b2cc50646760d038d1602"
+		},
+		{
+			"path": "exports/dove-icon-512.png",
+			"bytes": 466318,
+			"sha256": "1eee8fb6f2703c0fcaaaec6a440e46699ea5bb3f4cccd3d5fdded588d3467057"
+		},
+		{
+			"path": "exports/dove-rounded-512.png",
+			"bytes": 465361,
+			"sha256": "16386cd08314bf279dc6c2f836339f5f3da800eb0383c1997f4f780f84442cab"
+		},
+		{
+			"path": "exports/dove-transparent-256.png",
+			"bytes": 97289,
+			"sha256": "b18010b23d9ea43a68a994b7680f6afb812eabe6b6e97897b5dbc3b1da207382"
+		},
+		{
+			"path": "exports/dove-icon-256.png",
+			"bytes": 119947,
+			"sha256": "d8fe6cbac74cc3d8cd77b59783c2336e6f72dd2a62cfe3c11a1c84bb19f3b3d4"
+		},
+		{
+			"path": "exports/dove-rounded-256.png",
+			"bytes": 121676,
+			"sha256": "567457046b69d7c8065ff3d6b0dc775ba7b9e083c22a108eef9cc00bfcc254c0"
+		},
+		{
+			"path": "exports/dove-transparent-128.png",
+			"bytes": 28058,
+			"sha256": "9868e6308eebb179397019e514aad8154cda6a165a3ff0ca0b814564acb983f4"
+		},
+		{
+			"path": "exports/dove-icon-128.png",
+			"bytes": 35503,
+			"sha256": "9f7526b7465c4eaec174dcacbb2fcc28421fc1d4d2018e352f7e576cbcf51e9a"
+		},
+		{
+			"path": "exports/dove-rounded-128.png",
+			"bytes": 36511,
+			"sha256": "1c0d20d11c387fdca4b4c63879f5ec1e9e2c450cb28bf9f90356a3814af8a117"
+		},
+		{
+			"path": "exports/dove-transparent-64.png",
+			"bytes": 8136,
+			"sha256": "2db7967e896f679a0621191e5be4973807e52bde20172ecfe25fe47a326e4817"
+		},
+		{
+			"path": "exports/dove-icon-64.png",
+			"bytes": 10565,
+			"sha256": "5dffe654d5276dbec0bbf8d52d5af35c904b3143cd38b6bf818400c92ff8798a"
+		},
+		{
+			"path": "exports/dove-rounded-64.png",
+			"bytes": 10991,
+			"sha256": "1f5255bee18292cbbe4bb3ccf5d4d99a3a16a4a9727859225bd56a3609231b9a"
+		},
+		{
+			"path": "exports/dove-transparent-48.png",
+			"bytes": 4891,
+			"sha256": "6b7f7cef90e5175da7b73fc18452d8d881dd39a3f87ededc0a803cf0574bb4e5"
+		},
+		{
+			"path": "exports/dove-icon-48.png",
+			"bytes": 6411,
+			"sha256": "f3e5b57ae42de151eb08f23f709bdedded17f4b871637424e024cb0cd213ddd0"
+		},
+		{
+			"path": "exports/dove-rounded-48.png",
+			"bytes": 6692,
+			"sha256": "6204bb47fecbdb4a310e9bd54ae86e7b0fa15c0383b4fea8f63ef0ef98c5ab6b"
+		},
+		{
+			"path": "exports/dove-transparent-32.png",
+			"bytes": 2516,
+			"sha256": "8b2bd9c5e44677f67361a18ef9f985f0dd4e79b4dda2bb80bf8765e039927da6"
+		},
+		{
+			"path": "exports/dove-icon-32.png",
+			"bytes": 3139,
+			"sha256": "1de143be5ab7654f97f06783a9792ad6855c2204d4b440c738f4876906cbba27"
+		},
+		{
+			"path": "exports/dove-rounded-32.png",
+			"bytes": 3246,
+			"sha256": "e3d70d5f093c880366a25917afbc004efe8ab5dfbfaed5bb2a047916f728c279"
+		},
+		{
+			"path": "exports/dove-transparent-24.png",
+			"bytes": 1591,
+			"sha256": "00cccadedb3640966a7dd54a272d60e5e3e9203f65f810eb3b41d26ed6d913fd"
+		},
+		{
+			"path": "exports/dove-icon-24.png",
+			"bytes": 1886,
+			"sha256": "0a9c22e1ca097a25d444e4b69c2a0d8aa9e4111e9c802907fd9b03dd29bdcb0f"
+		},
+		{
+			"path": "exports/dove-rounded-24.png",
+			"bytes": 1983,
+			"sha256": "1097ab71101cfcee71b8ce7aa5592af4bd2cdd179b16a7cefa3d0f561d77169f"
+		},
+		{
+			"path": "exports/dove-transparent-16.png",
+			"bytes": 853,
+			"sha256": "65ca24df06ba6aa9308de019c8cba1a5dd8b4c883686dd76e48886dfa38ef9cf"
+		},
+		{
+			"path": "exports/dove-icon-16.png",
+			"bytes": 926,
+			"sha256": "c319fad5fc7b71991149d8b025beff72431ebfaa0c97785aeff4e8da3db3c0fd"
+		},
+		{
+			"path": "exports/dove-rounded-16.png",
+			"bytes": 965,
+			"sha256": "664b84bb12adef8f8511a35998e3d03c16be5d1bbb6de8f62d834d4e6f62a7e1"
+		},
+		{
+			"path": "exports/dove-white-2048.png",
+			"bytes": 4292879,
+			"sha256": "53afafa48f067a23090272b18f4f0bf6325b23917b2eca8ff7d353ccab8f2fbf"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1149663,
+			"sha256": "be10ddbb41bc4312b93bac8ed1ff72297347f32a5427b4faf350991420259955"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1157888,
+			"sha256": "c7a853b89a57213f32c3d58d261eee9cc142f4679a40ee6b09b9559991706908"
+		}
+	]
+}
