@@ -1,0 +1,106 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Emerald",
+				"zh": "翡翠绿"
+			},
+			"role": "primary",
+			"color": "#349078",
+			"pixel": [828, 1414],
+			"rgb": [52, 144, 120],
+			"sourceSha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c"
+		},
+		{
+			"label": {
+				"en": "Teal",
+				"zh": "青色"
+			},
+			"role": "accent",
+			"color": "#247185",
+			"pixel": [663, 1350],
+			"rgb": [36, 113, 133],
+			"sourceSha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c"
+		},
+		{
+			"label": {
+				"en": "Violet",
+				"zh": "紫色"
+			},
+			"role": "accent",
+			"color": "#764395",
+			"pixel": [645, 1616],
+			"rgb": [118, 67, 149],
+			"sourceSha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c"
+		},
+		{
+			"label": {
+				"en": "Coral",
+				"zh": "珊瑚色"
+			},
+			"role": "accent",
+			"color": "#e8675e",
+			"pixel": [1773, 846],
+			"rgb": [232, 103, 94],
+			"sourceSha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c"
+		},
+		{
+			"label": {
+				"en": "Gold",
+				"zh": "金色"
+			},
+			"role": "accent",
+			"color": "#ddb048",
+			"pixel": [1121, 1132],
+			"rgb": [221, 176, 72],
+			"sourceSha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c"
+		}
+	],
+	"presentation": {
+		"base": "#5f8988",
+		"light": "#b6cfbd",
+		"shade": "#304f5e",
+		"motif": "#243d49",
+		"pattern": "Petal pockets",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#0e413a",
+		"background": "transparent",
+		"theme": {},
+		"evidence": [
+			{
+				"color": "#0e413a",
+				"role": "primary",
+				"source": "Preserved project artwork, dominant colored pixels"
+			},
+			{
+				"color": "transparent",
+				"role": "background",
+				"source": "Preserved project artwork, transparent background"
+			},
+			{
+				"color": "#112f24",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#54765e",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#adab7e",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Native macOS and CLI project. Existing catalogue color evidence is preserved; it does not establish a fixed global website theme. System material and semantic status colors are independent of the mascot."
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"project": "xray",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#756584",
+		"light": "#b59dae",
+		"shade": "#473855",
+		"motif": "#342843",
+		"grainAmplitude": 1,
+		"grainSeed": 6090790,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Wing-vein panels",
+			"description": "Wing-vein panels: broad interlocking unequal quadrilateral folds, inspired by butterfly wing veins, on a smoky plum field. Preserve every original pixel, antenna, wing tip, and native placement.",
+			"layers": [
+				{
+					"d": "M-80 88L384-77L215 314L-80 467Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-80 479L215 329L302 390L82 703L-80 706Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M395-75L529-75L753 188L550 375L333 234Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M755 192L1120 63L1120 276L860 480L668 397Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M783 761L1122 605L1122 798L873 1108L642 1108Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-78 880L295 749L468 1104H-78Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-75 475L219 319L336 234L550 378L755 191",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M643 1106L788 754L1125 599",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/xray.png"
+}

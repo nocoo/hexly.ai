@@ -1,0 +1,73 @@
+{
+	"surety": {
+		"repository": "https://github.com/nocoo/surety",
+		"revision": "daa78704b19f9924d63f8d5324dc99bdade72bfd",
+		"original": "logo.png",
+		"originalSha256": "13b22815f3d07d56ee294f005db9638809e0329fedce51887dd55cba75b01dc6",
+		"consumers": {
+			"apps/web/public/favicon.ico": "fa2bb1b54acb3fa677c1a36a4b3fa0e9dae2a8e40e0a8a7f4e437df4d2839d73",
+			"apps/web/public/logo-24.png": "21a1d36b4209ef6f7f61634a64aeb00074136c4b48cbd736d8580b1172435b31",
+			"apps/web/public/logo-80.png": "fd66f5e984865d0d0ef2dcad3615201506dc56ed4409ced88d21b23c1e9963f6",
+			"apps/worker/static/favicon.ico": "fa2bb1b54acb3fa677c1a36a4b3fa0e9dae2a8e40e0a8a7f4e437df4d2839d73",
+			"apps/worker/static/logo-24.png": "21a1d36b4209ef6f7f61634a64aeb00074136c4b48cbd736d8580b1172435b31",
+			"apps/worker/static/logo-80.png": "fd66f5e984865d0d0ef2dcad3615201506dc56ed4409ced88d21b23c1e9963f6",
+			"logo.png": "13b22815f3d07d56ee294f005db9638809e0329fedce51887dd55cba75b01dc6"
+		}
+	},
+	"owl": {
+		"repository": "https://github.com/nocoo/owl",
+		"revision": "73c292ea59ed8ccaf8dfd1e6d1d57f80e8be7ed3",
+		"original": "owl.png",
+		"originalSha256": "f579214edd8876dacaa55d27c35c3598d3f809e651e4d3537d6d228823b5f413",
+		"consumers": {}
+	},
+	"ellie": {
+		"repository": "https://github.com/nocoo/ellie",
+		"revision": "cef1fc94cfad189f310bd8818b8d07bf1e5d8614",
+		"original": "logo.png",
+		"originalSha256": "03f8da981d89188fdbeeec38dcd9e32a693960d5b8af2020b48beaaa86844a13",
+		"consumers": {
+			"apps/admin/public/logo-192.png": "5b33e71a350cce7d62b1e7e67754843204cfe58c14fc8182dfd65eb44f0529cf",
+			"apps/admin/public/logo-24.png": "39ac256b46dfc044b5e80a0fa6087dc385fb3c0bee246f0b5957fca1a025c16b",
+			"apps/admin/public/logo-80.png": "8e17c1285cdfbc058ad3ca84b552d329fce76da8d3cb17c5323616754c251eb4",
+			"apps/admin/src/app/apple-icon.png": "fb0fedb252b6641ebc3b1ab774d17defce80d6eaa23db4d9df8378f2801d1903",
+			"apps/admin/src/app/favicon.ico": "1c7d4b869c10a46f19d465a608c68f6a6ea55f373316f564fd5ca4257b8f51b7",
+			"apps/admin/src/app/icon.png": "ba9f36922c98e594a31a190965da7676221422dce3f138482941a393126e00d9",
+			"apps/admin/src/app/opengraph-image.png": "656d58414b6267d0b1414acbdfbb9ada31dc1be73ee34d999627a43544390255",
+			"apps/web/src/app/favicon.ico": "ff310c0d3445ece9aca8da16d741d94901983f81b42e6a37712918826ef894f7",
+			"logo.png": "03f8da981d89188fdbeeec38dcd9e32a693960d5b8af2020b48beaaa86844a13"
+		},
+		"independentSiteAssets": {
+			"apps/web/src/app/favicon.ico": "ff310c0d3445ece9aca8da16d741d94901983f81b42e6a37712918826ef894f7",
+			"apps/web/src/components/forum/forum-logo.tsx": "52c11f5cded76989b59be0f83f2a5a770a5cc2c78116863f581c3fb4fd1ba545",
+			"apps/web/src/viewmodels/forum/header.ts": "b08a5b5f8085808c461fa184ae7dd5bcb2c97b5493f85d3b0456ba9fe8aac877",
+			"apps/web/src/viewmodels/forum/footer.ts": "25559862e2859d23f75a2d9ae99f4c7135aa503255bd1f131cd5be94af785271"
+		}
+	},
+	"giraffe": {
+		"repository": "https://github.com/nocoo/giraffe",
+		"revision": "e0bb57ab7b7e498db9bd470d673ba52bb76be6f0",
+		"original": "logo.png",
+		"originalSha256": "169ba1ff6951014dd9fdedb750bc4d65d7099c250eb1f941570bfb3c509db0fe",
+		"consumers": {
+			"logo.png": "169ba1ff6951014dd9fdedb750bc4d65d7099c250eb1f941570bfb3c509db0fe",
+			"public/apple-touch-icon.png": "6188c7757ca5850335ab151acf93149171b07130d218b0b83cc6111d6f36af53",
+			"public/logo-24.png": "f4f0f6d4bdbb1f165e8d99d2079363db2ee7fe16dfa69b42933ee63fae0522ad",
+			"public/logo-32.png": "8901a8dc776037311b43c5865275b5bcb578e1baa6f7bf7bf1d8c84a4eef87b1"
+		}
+	},
+	"steed": {
+		"repository": "https://github.com/nocoo/steed",
+		"revision": "1159f3769ec3c0a00a9a2bf32e914cf7cff00e33",
+		"original": "logo.png",
+		"originalSha256": "9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719",
+		"consumers": {
+			"apps/web/public/apple-touch-icon.png": "28bc783fa0aa7d2f89cfa2288664949cf855722590156960230a7f9579431645",
+			"apps/web/public/favicon.ico": "2fa26e344a13b7f7e3b41f5212dd787116eb98afa003f04c0f354f11e24d7a1b",
+			"apps/web/public/logo-24.png": "947bddff5d7e5ebb0a780c528bdd48592c720c7afaa06b40db226b4bd851c604",
+			"apps/web/public/logo-80.png": "d647fd8653e469df8b6acf8c5029b6cd0cd0503f376a296cc1e035fa03896bec",
+			"apps/web/public/og-image.png": "a77014d229edaac51095d7b94ca77e00f97f4fdb653aaebed42a0da8819573ac",
+			"logo.png": "9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719"
+		}
+	}
+}

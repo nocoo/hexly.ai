@@ -1,0 +1,386 @@
+{
+	"createdAt": "2026-09-07T03:31:42.320Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "backy",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#829178",
+			"light": "#ccd1a6",
+			"shade": "#4f6250",
+			"motif": "#384935",
+			"grainAmplitude": 1,
+			"grainSeed": 6090797,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Shell saddles",
+				"description": "Shell saddles: unequal broad hexagonal scute impressions with interrupted seams on a deep sage field, avoiding uniform polygon noise.",
+				"layers": [
+					{
+						"d": "M-84 59L178-48L338 108L288 337L50 412L-84 299Z",
+						"tone": "motif",
+						"strokeWidth": 30
+					},
+					{
+						"d": "M-80 38L184-72L362 103L310 357L46 437",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M653-84L920-35L1108 144L1054 370L830 399L689 235Z",
+						"tone": "ribbon",
+						"strokeWidth": 42
+					},
+					{
+						"d": "M849 706L1112 774L1150 1022L940 1125L719 973L714 831Z",
+						"tone": "motif",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M844 684L1130 757L1166 1034L944 1149L696 984L690 820Z",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-113 712L89 681L248 854L187 1108L-110 1120",
+						"tone": "ribbon",
+						"strokeWidth": 46
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/backy.png",
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2857833,
+		"foregroundPixels": 1336471,
+		"softEdgePixels": 8510,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 227,
+			"top": 250,
+			"right": 1837,
+			"bottom": 1658
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 290,
+			"top": 312,
+			"right": 1772,
+			"bottom": 1607
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 275.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2665,
+			"sha256": "5e9afe020caefee765b7447629e88a58b813f6b038890a62d9b57e4ced83473e"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1789,
+			"sha256": "5f8217a39547bd15a231f9a9cf65725205b77b0bb83118c382ed418067bd5f32"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2696178,
+			"sha256": "8037a9791a170adcc510ae9f34c2a4e59d7508b57a5ec8db78c61db7c42de458"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 53982,
+			"sha256": "e406640536b876be966238777988343685c99918f9eebd60c09f25c9b37d7927"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1127,
+			"sha256": "bc88647620eaeaf684790c56b0a77b1d9996129e23efd6c38cc0c3ddd9055081"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2502651,
+			"sha256": "ab09c254e6bf180712c62f7dd9748fdf2d18e8ba2a4903d8b13cbffc12530191"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2447370,
+			"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 74841,
+			"sha256": "b5a0cfae2cea2cf5327d5783c2c443aea99903b255317e5e14bfff05b8dd7294"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 136742,
+			"sha256": "577593988d4be37364e608e4e459f52d1d6c70bcdd99f97fa279eadf27312cd7"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 98427,
+			"sha256": "599ff1182f6f179e0e7841aa2ba605a3f8110fee5ba1b5eeb907530e42e6a9e1"
+		},
+		{
+			"path": "exports/backy-transparent-2048.png",
+			"bytes": 2447370,
+			"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+		},
+		{
+			"path": "exports/backy-icon-2048.png",
+			"bytes": 4589842,
+			"sha256": "08c74ba1a809f284d9a6364b626c07e7598f584383fcbac3ed952dd43d226d0f"
+		},
+		{
+			"path": "exports/backy-rounded-2048.png",
+			"bytes": 4489355,
+			"sha256": "e9f5e7da85ac99d1709354c071f05ca8e8eb51de49eea1e3e866eeacd2f2cd24"
+		},
+		{
+			"path": "exports/backy-transparent-1024.png",
+			"bytes": 684123,
+			"sha256": "b0dcbf3dbab2acf6a7a4db7ca647f21a0820cd7c20f3f1bdd0934090243dcf8e"
+		},
+		{
+			"path": "exports/backy-icon-1024.png",
+			"bytes": 1204183,
+			"sha256": "c566c4afebe3bfb6d5ee4667dbb86f53e43bac891034a1bf596e78b713f6d105"
+		},
+		{
+			"path": "exports/backy-rounded-1024.png",
+			"bytes": 1193590,
+			"sha256": "63459aa7ff3dfbaaa01db41199b8b604bd81dc1226723c8e2e132b0267286884"
+		},
+		{
+			"path": "exports/backy-transparent-512.png",
+			"bytes": 206115,
+			"sha256": "96b4f5ab1b0c2fc7b12db54db2024638f5e33abb49329b8d4543c9a9af0ec83b"
+		},
+		{
+			"path": "exports/backy-icon-512.png",
+			"bytes": 376202,
+			"sha256": "185e2295b49dfc531dd5298bce3a186aee253b7ec0b83ab715688b02424b4856"
+		},
+		{
+			"path": "exports/backy-rounded-512.png",
+			"bytes": 374495,
+			"sha256": "133e4b423907b6f22354953a2ec98b9970d90359d19b055bab996c185292b3b2"
+		},
+		{
+			"path": "exports/backy-transparent-256.png",
+			"bytes": 61353,
+			"sha256": "239d982cda91a311c6fd81b69238a7ce2d38da6785dd07cfce73f3bb656ea5a8"
+		},
+		{
+			"path": "exports/backy-icon-256.png",
+			"bytes": 94675,
+			"sha256": "b82ed742696d0335784c46489b091ca0de1f9c620429973ec31793a37fcc5fb7"
+		},
+		{
+			"path": "exports/backy-rounded-256.png",
+			"bytes": 96672,
+			"sha256": "d39b4b76b4ac635e131bf31ad35e1eb675cd25da247cc664c8d494c5d956a36a"
+		},
+		{
+			"path": "exports/backy-transparent-128.png",
+			"bytes": 17320,
+			"sha256": "059af4f59aca815a86af4f21aee466a90f5e6a8a627816f676800b032d72e68a"
+		},
+		{
+			"path": "exports/backy-icon-128.png",
+			"bytes": 29879,
+			"sha256": "dc749ebb2f4120ea183acfd77172e89e47f2df2296152cbeec0f11026416f30d"
+		},
+		{
+			"path": "exports/backy-rounded-128.png",
+			"bytes": 31023,
+			"sha256": "0aa0bfae00b13837b663ae35eddfcea078c22dc58aaef635191883880ab1a5b4"
+		},
+		{
+			"path": "exports/backy-transparent-64.png",
+			"bytes": 5052,
+			"sha256": "8fcb8bb332e8eab1699d0a0a401eba0aee69735b343056b764205984fbe27024"
+		},
+		{
+			"path": "exports/backy-icon-64.png",
+			"bytes": 9419,
+			"sha256": "192b390f75a2a103beb965ff9ea0e4b6ef778176bf870a1f92d1b35bc61b472d"
+		},
+		{
+			"path": "exports/backy-rounded-64.png",
+			"bytes": 9913,
+			"sha256": "8d15f0ad3b7ae51939029f47c099ff2e9c25aa734c08f45e4868d082526e2613"
+		},
+		{
+			"path": "exports/backy-transparent-48.png",
+			"bytes": 3068,
+			"sha256": "26c2430b913f29b83acdf8997cd6c8bdef7fae890565a73eba71630e1fb72aad"
+		},
+		{
+			"path": "exports/backy-icon-48.png",
+			"bytes": 5775,
+			"sha256": "16bd22329490fb18eab6ba8b5ee8c4274ce8bb997fdf1b191097b518161d06be"
+		},
+		{
+			"path": "exports/backy-rounded-48.png",
+			"bytes": 6118,
+			"sha256": "cdd3d988b3a82240988a3db60c5dbddaa8bd3505dae228cb9d6239490cd05489"
+		},
+		{
+			"path": "exports/backy-transparent-32.png",
+			"bytes": 1649,
+			"sha256": "59dd77ecdabb820c156269ebce15a32e140f41b881595ce66f31e23646865f53"
+		},
+		{
+			"path": "exports/backy-icon-32.png",
+			"bytes": 3005,
+			"sha256": "26e141a6439c2e726ff15646de6399837ce2361157206dfa215680c456f81c81"
+		},
+		{
+			"path": "exports/backy-rounded-32.png",
+			"bytes": 3158,
+			"sha256": "7a05052bda72f1a47d7675199cf65c247d7d6e6ae2497609cd05a3efdc6e9ce8"
+		},
+		{
+			"path": "exports/backy-transparent-24.png",
+			"bytes": 1097,
+			"sha256": "7f482bd5dff64fc5ebbda60b804895a19068a169912f9ded93261bca7e1ea7a2"
+		},
+		{
+			"path": "exports/backy-icon-24.png",
+			"bytes": 1810,
+			"sha256": "e3e7d9567f3b4c2868a62d43dfc943e77c34e5368a91826fdc590f66d71812d2"
+		},
+		{
+			"path": "exports/backy-rounded-24.png",
+			"bytes": 1956,
+			"sha256": "97779ede41444a8390134189ad679d86a5bb941d0f84412c0e5bd40ec921ea0d"
+		},
+		{
+			"path": "exports/backy-transparent-16.png",
+			"bytes": 631,
+			"sha256": "e1c224af9875a81442287f3eb2684abd3bcffd62fcb5fa66e653271282101565"
+		},
+		{
+			"path": "exports/backy-icon-16.png",
+			"bytes": 918,
+			"sha256": "b4a294df1ffb0d387eaa206f5143f9f585adea5f74670034d6c791f8903d2b32"
+		},
+		{
+			"path": "exports/backy-rounded-16.png",
+			"bytes": 958,
+			"sha256": "a716ada5c5dbdce36dfd255f3c70e13e34e0292b742205d06fd15930fb1e4ded"
+		},
+		{
+			"path": "exports/backy-white-2048.png",
+			"bytes": 2296149,
+			"sha256": "1f22de82fcbb54af780cf0ecd2cca6db01349172939450295843152e8dc9f3e1"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 658103,
+			"sha256": "d4975b9988c2ca9b414d355b2fc658ae419a1ce3802855555d548007ca2519b5"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 654692,
+			"sha256": "8b31729b95c21d9aa530a5fdfabb1c0769ae1768442ef76ff4fd782951cfed1c"
+		}
+	]
+}

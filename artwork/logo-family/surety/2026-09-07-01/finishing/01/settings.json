@@ -1,0 +1,92 @@
+{
+	"project": "surety",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#9b865c",
+		"light": "#d1c49b",
+		"shade": "#625235",
+		"motif": "#43351e",
+		"grainAmplitude": 1,
+		"grainSeed": 609079,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Amber fan relief",
+			"description": "Unequal folded fan rays spread from an off-center lower pivot. Broad tapered planes and single fine seams create a quiet mane-like paper relief without a circle, wreath, or repeated stripe stencil.",
+			"layers": [
+				{
+					"d": "M347 1100L-110 412L-110 210Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M351 1100L-102 195L-49-100L102-100Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M358 1100L190-100L371-100Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M365 1100L533-100L724-100Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M372 1100L888-96L1114-96Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M380 1100L1133 159L1133 390Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M358 1100L378-100",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M373 1100L1115-93",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+	},
+	"shadows": [
+		{
+			"color": [29, 31, 35],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [23, 26, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.86,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform centered 86% placement of the complete mane portrait. No contour additions, stretched anatomy, or corner clipping; every visible feature is protected."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/surety.png",
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [250, 251, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+	}
+}

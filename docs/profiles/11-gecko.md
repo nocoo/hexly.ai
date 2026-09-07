@@ -11,15 +11,15 @@
 - Chinese: 用 Mac 时间追踪器和同步仪表盘，看看自己的时间花在了哪里。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `db35d40b4c30e115914b591ac0475f2cc8961375`
+- Repository revision inspected: `f259be7fe740ce260c9257e2870b57dec8d9e7b3`
 
 ## Current logo
 
 ![Gecko source identity](../../public/logos/display/gecko-160.webp)
 
 - Type: Original project artwork, copied without modification
-- Subject: Full-body gecko
-- [Source](https://github.com/nocoo/gecko/blob/db35d40b4c30e115914b591ac0475f2cc8961375/logo.png): `logo.png`
+- Subject: Original sandstone-colored gecko with a complete curled tail and toes
+- [Source](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/gecko.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2799098 bytes
@@ -33,14 +33,64 @@
 | --- | --- | --- |
 | primary | `#2e8553` | apps/web-dashboard/src/app/globals.css --primary: 146 49% 35% |
 | background | `#eef2ef` | apps/web-dashboard/src/app/globals.css --background: 140 14% 94% |
-| accent | `#a8875e` | Preserved project artwork, sampled pixel |
-| accent | `#cdb089` | Preserved project artwork, sampled pixel |
-| accent | `#785347` | Preserved project artwork, sampled pixel |
+| accent | `#bd9f6d` | Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+| accent | `#bd9f6d` | Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+| accent | `#e4d4b0` | Native gecko 8808c3134902, sampled sRGB pixel (1338, 267); artwork/logo-family/gecko/2026-09-07-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Future family notes
+## Refined identity
+
+![Gecko refined preview](../../public/logos/family/gecko/2026-09-07-01/01/icon-160.webp)
+
+- Status: Adopted in the source project; updated 2026-09-07.
+- Study `2026-09-07-01`, finishing `01`
+- Refined subject: Original sandstone-colored gecko with a complete curled tail and toes
+- Site path: `/logos/gecko`; [local gallery](https://index.dev.hexly.ai/logos/gecko)
+- [Static review HTML](../../artwork/logo-family/gecko/2026-09-07-01/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/gecko/2026-09-07-01)
+- [Transparent foreground](../../public/logos/family/gecko/2026-09-07-01/01/transparent.png); SHA-256: `8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3`
+- [Square icon](../../public/logos/family/gecko/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/gecko/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/gecko/2026-09-07-01/01/white.png)
+- [Untouched original](../../public/logos/family/gecko/2026-09-07-01/01/source.png), [presentation brief](../../public/logos/family/gecko/2026-09-07-01/01/brief.txt), [public asset checksums](../../public/logos/family/gecko/2026-09-07-01/01/manifest.json)
+- [Previous original](../../public/logos/originals/gecko.png), copied from [its immutable source](https://github.com/nocoo/gecko/blob/db35d40b4c30e115914b591ac0475f2cc8961375/logo.png)
+- Previous SHA-256: `8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3`
+- Original artwork retained byte-for-byte at native 2048 × 2048. Zero image-generation calls; only background, grain, and shadow layers were composed.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
+- Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
+
+### Refined palette
+
+| Role | Value | Evidence |
+| --- | --- | --- |
+| background | `#926d60` | Selected Gecko presentation, 2026-09-07-01/01; background.base in archived settings.json |
+| primary | `#c4a576` | Native gecko 8808c3134902, sampled sRGB pixel (1645, 318); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+| accent | `#bd9f6d` | Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+| accent | `#bd9f6d` | Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+| accent | `#e4d4b0` | Native gecko 8808c3134902, sampled sRGB pixel (1338, 267); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+| accent | `#bd9f6d` | Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json |
+
+### A familiar pause
+
+The liked whole gecko keeps its exact native placement, broad face, curled tail and spread toes. The comparison intentionally shows the same animal.
+
+喜爱的壁虎全身保留原有位置、宽脸、卷尾和展开的脚趾，前后对比有意展示同一个主体。
+
+### Sandstone stays intact
+
+Warm sandstone, clay, cream and quiet sage facets remain byte for byte unchanged. No redraw or new accessory is introduced.
+
+温暖的砂岩、陶土、奶油与柔和鼠尾草色色面逐字节保留，没有重绘或添加新的装饰。
+
+### Sandstone shelves
+
+Staggered broad ledges and short rising seams sit on a warmer clay field. The low relief gives the gecko a distinct place within the family.
+
+错落的宽阔层架和短竖缝铺在暖陶土色底纹上，用浅浮雕为壁虎形成独有的家族背景。
+
+Small-size observation: The original 2048 px foreground and placement are retained exactly. Existing nearest rounded-outline clearance is 114.5 px with no clipped pixels. Fine facets and small sparks simplify at 16 px; app and browser marks use the transparent source.
+
+## Further refinements
 
 Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. No new logo is generated in phase one.
+Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.

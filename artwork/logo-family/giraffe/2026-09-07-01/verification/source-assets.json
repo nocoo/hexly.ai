@@ -1,0 +1,53 @@
+{
+	"project": "giraffe",
+	"study": "2026-09-07-01",
+	"finishing": "02",
+	"masters": {
+		"logo.png": {
+			"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "a0a891160f779acc998e77af4d92bd2517494de36e252f80a0ca0261fb704686",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "9231462e42a52e4f59f1da7c9a6dc96178e782d5ab54bf5e1232c9e03da766a9",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"sha256": "9231462e42a52e4f59f1da7c9a6dc96178e782d5ab54bf5e1232c9e03da766a9",
+		"width": 128
+	},
+	"transparentPngs": [
+		{
+			"path": "public/logo-24.png",
+			"size": 24,
+			"sha256": "827de2b1b5d63036f9f6a9a3b9376f3e0c84a062995812a28644efdfb9a094a0",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 349,
+			"opaquePixels": 101
+		},
+		{
+			"path": "public/logo-32.png",
+			"size": 32,
+			"sha256": "764ef521e3932aa3d0ff274b052effbdae3b2566a1176409d30f2e98d3c98c7b",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 640,
+			"opaquePixels": 204
+		}
+	],
+	"icoEntries": [],
+	"touch": {
+		"path": "public/apple-touch-icon.png",
+		"size": [180, 180],
+		"opaqueSquare": true,
+		"sha256": "7626a4ca408f223cb859c83e9b3324fae7f8fde9577ac41790b4d00c9b3b00a8"
+	}
+}

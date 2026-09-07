@@ -1,0 +1,108 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Coral",
+				"zh": "珊瑚色"
+			},
+			"role": "primary",
+			"color": "#f24d31",
+			"pixel": [424, 344],
+			"rgb": [242, 77, 49],
+			"sourceSha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"label": {
+				"en": "Golden yellow",
+				"zh": "金黄色"
+			},
+			"role": "accent",
+			"color": "#f6bc36",
+			"pixel": [1371, 523],
+			"rgb": [246, 188, 54],
+			"sourceSha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"label": {
+				"en": "Teal",
+				"zh": "青色"
+			},
+			"role": "accent",
+			"color": "#961b54",
+			"pixel": [176, 366],
+			"rgb": [150, 27, 84],
+			"sourceSha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"label": {
+				"en": "Violet",
+				"zh": "紫色"
+			},
+			"role": "accent",
+			"color": "#991c56",
+			"pixel": [178, 364],
+			"rgb": [153, 28, 86],
+			"sourceSha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		}
+	],
+	"presentation": {
+		"base": "#756584",
+		"light": "#b59dae",
+		"shade": "#473855",
+		"motif": "#342843",
+		"pattern": "Wing-vein panels",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#3653e2",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/ui/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/ui/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "230 75% 55%",
+				"source": "packages/ui/src/index.css --primary"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#3653e2",
+				"role": "primary",
+				"source": "packages/ui/src/index.css --primary: 230 75% 55%"
+			},
+			{
+				"color": "#eeeff2",
+				"role": "background",
+				"source": "packages/ui/src/index.css --background: 220 14% 94%"
+			},
+			{
+				"color": "#ff4c32",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#0080c1",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#fca127",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Existing recorded product colors are separate from sampled artwork and the designed presentation."
+	}
+}

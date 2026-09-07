@@ -1,0 +1,89 @@
+{
+	"project": "otter",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#648691",
+		"light": "#bdccc5",
+		"shade": "#355569",
+		"motif": "#243e50",
+		"grainAmplitude": 1,
+		"grainSeed": 6090799,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Riverbank sweeps",
+			"description": "Riverbank sweeps: two broad offset eddy-shaped sweeps and a low bank contour on a muted blue-gray river field, with open flowing geometry rather than concentric circles.",
+			"layers": [
+				{
+					"d": "M-90 33C216 127 393-51 642 35C745 71 816 181 739 265C636 378 503 290 544 218C574 166 643 204 619 238",
+					"tone": "motif",
+					"strokeWidth": 40
+				},
+				{
+					"d": "M-91 59C209 153 399-20 631 61C712 89 780 177 716 246C635 333 535 277 567 231",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1124 472C868 512 1017 685 832 700C630 716 615 920 781 995C880 1039 1035 1011 1125 1100",
+					"tone": "ribbon",
+					"strokeWidth": 66
+				},
+				{
+					"d": "M1127 434C813 482 988 650 829 664C581 687 575 939 765 1030",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-93 876C71 852 129 1032 383 1024L388 1122H-91Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-91 871C72 845 135 1025 387 1017",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/otter.png",
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed.",
+		"backgroundSeedsAt2048": [[1208, 680]],
+		"backgroundSeedReason": "An enclosed white negative-space pocket between animal/accessory contours, visible on the dark-background inspection. Preserve eye highlights and every colored opaque facet; seed only this inspected near-white component."
+	}
+}

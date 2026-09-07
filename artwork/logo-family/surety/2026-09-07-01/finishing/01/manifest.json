@@ -1,0 +1,390 @@
+{
+	"createdAt": "2026-09-07T02:47:46.686Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "surety",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#9b865c",
+			"light": "#d1c49b",
+			"shade": "#625235",
+			"motif": "#43351e",
+			"grainAmplitude": 1,
+			"grainSeed": 609079,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Amber fan relief",
+				"description": "Unequal folded fan rays spread from an off-center lower pivot. Broad tapered planes and single fine seams create a quiet mane-like paper relief without a circle, wreath, or repeated stripe stencil.",
+				"layers": [
+					{
+						"d": "M347 1100L-110 412L-110 210Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M351 1100L-102 195L-49-100L102-100Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M358 1100L190-100L371-100Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M365 1100L533-100L724-100Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M372 1100L888-96L1114-96Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M380 1100L1133 159L1133 390Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M358 1100L378-100",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M373 1100L1115-93",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+		},
+		"shadows": [
+			{
+				"color": [
+					29,
+					31,
+					35
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					23,
+					26,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.86,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform centered 86% placement of the complete mane portrait. No contour additions, stretched anatomy, or corner clipping; every visible feature is protected."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/surety.png",
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				250,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1788400,
+		"foregroundPixels": 2405904,
+		"softEdgePixels": 13053,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 96,
+			"top": 109,
+			"right": 1915,
+			"bottom": 2046
+		}
+	},
+	"placement": {
+		"scale": 0.86,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 225,
+			"top": 236,
+			"right": 1790,
+			"bottom": 1902
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 145.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2630,
+			"sha256": "f75f8b6f50bba78ea56412025aa0eaade491b58303a63cc40dc0926cd6e0ff6d"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1687,
+			"sha256": "664db9c3b001e6773cb2e3fa1277b0654b0f8f418d6d5e26116f0cac87c64f86"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3916259,
+			"sha256": "e6042d6135a771cf9f5ad2555a1338be979dd943122c4b6451d3e8ac3c65ed82"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 76418,
+			"sha256": "cf09f657cbb5bf1333fabf273d4a2de2cc8c1b2bf67549cca84424863bb3a963"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1009,
+			"sha256": "410e620fd38bb720b5d8683f299d241f969ff028cb5de7b3577e883f7bf6e982"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2619390,
+			"sha256": "271e33f57d8a121126ffe34567117ed734dfdb81cb4426f4aa8de636719c61aa"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 99257,
+			"sha256": "bb59e80c2c011bd24e8f72eadb57204582ee91b44c015b7f16defcc97501d92c"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 169524,
+			"sha256": "e5556775483ebb8f12e9e96f74ddfadb1d81c854abbd2e64cbbea9887f9e21e2"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 135604,
+			"sha256": "025b49f1b684bd37def71f0202c6a684f153b1c0b956fcc6df7dd45a3be23ebe"
+		},
+		{
+			"path": "exports/surety-transparent-2048.png",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+		},
+		{
+			"path": "exports/surety-icon-2048.png",
+			"bytes": 5015552,
+			"sha256": "587a4c30fd62c32927fc51b03911ad3dd287de18e3e1731ca05d8eb841c68c54"
+		},
+		{
+			"path": "exports/surety-rounded-2048.png",
+			"bytes": 4911975,
+			"sha256": "0ba3d464cf5672cf97d5e3c58f3df959b4b938fc0a1e8fb4c09552b32526aa4d"
+		},
+		{
+			"path": "exports/surety-transparent-1024.png",
+			"bytes": 921888,
+			"sha256": "ea6ba89772870c7d501f8677fe0262d59a49c57aa2baa670510578c9ef8e5d54"
+		},
+		{
+			"path": "exports/surety-icon-1024.png",
+			"bytes": 1358458,
+			"sha256": "998184f3ecd84e2f5d1b3da344da69fcd3646186c8194ba0ca490647f5a11fbb"
+		},
+		{
+			"path": "exports/surety-rounded-1024.png",
+			"bytes": 1347480,
+			"sha256": "c1e373e577ff700dce9742c70267db8ce6bbc7573a1608ba26cf870c11d0d7b2"
+		},
+		{
+			"path": "exports/surety-transparent-512.png",
+			"bytes": 289151,
+			"sha256": "0c4fc193db0300e51f85ae4760d0bf1075e6fb6dccc93ed84c26840f8d02e7d0"
+		},
+		{
+			"path": "exports/surety-icon-512.png",
+			"bytes": 432396,
+			"sha256": "8d43dc2292ba7d46da307ceee5ab3e5e6dd5c69e2ea50eff04a7fa67ab16dada"
+		},
+		{
+			"path": "exports/surety-rounded-512.png",
+			"bytes": 430718,
+			"sha256": "6098434be8b5ffef6adcd15531f4436f613db0ee6156c23520b531cf1a4fce15"
+		},
+		{
+			"path": "exports/surety-transparent-256.png",
+			"bytes": 88864,
+			"sha256": "48ce77cff8992e1a30eb05734138e23c546e724ed3fc05a75d521c4b8db94e7b"
+		},
+		{
+			"path": "exports/surety-icon-256.png",
+			"bytes": 117236,
+			"sha256": "b37f90499c9889316f43a523daaa840128161d0e75fd9bad12fc7c5162a9470b"
+		},
+		{
+			"path": "exports/surety-rounded-256.png",
+			"bytes": 119627,
+			"sha256": "70e888379b05b0680ec46bb7370031cd52397db03d3d337134dcecbc29293e0e"
+		},
+		{
+			"path": "exports/surety-transparent-128.png",
+			"bytes": 25317,
+			"sha256": "2811007ec59a3d2a54c9cfcf6442c1b979ca5c952b0f235d47d10e02f14e7d2b"
+		},
+		{
+			"path": "exports/surety-icon-128.png",
+			"bytes": 35779,
+			"sha256": "2a949290517d6def0e6239d8b4b755e3f9b459fb2e1c4f446646b266b6abcdbe"
+		},
+		{
+			"path": "exports/surety-rounded-128.png",
+			"bytes": 36836,
+			"sha256": "38183de796d7050c7fcadf320ab497a34482bf31c231e379ea6833dbada50615"
+		},
+		{
+			"path": "exports/surety-transparent-64.png",
+			"bytes": 7325,
+			"sha256": "51f49e47f806d6276ed26f3eb747fbd8fbe167ede6dacba9844471f5004ae61a"
+		},
+		{
+			"path": "exports/surety-icon-64.png",
+			"bytes": 10948,
+			"sha256": "c62917e1d834f1cdba9a32510a70f074e53aeb88a65a8d2bef60aab0c7c2e84a"
+		},
+		{
+			"path": "exports/surety-rounded-64.png",
+			"bytes": 11434,
+			"sha256": "f59b1081031f64723c7b41cf8dfea95091aa67654499974a9c1fc281600e1791"
+		},
+		{
+			"path": "exports/surety-transparent-48.png",
+			"bytes": 4409,
+			"sha256": "d3adfbe480d8d6831b19562612e03d7350984507fc43448ac96c59e0fc4bcdd5"
+		},
+		{
+			"path": "exports/surety-icon-48.png",
+			"bytes": 6546,
+			"sha256": "ba19b971627b433aff22267865253ddb895e88fd28f7a88a8cbfe9955aa78dac"
+		},
+		{
+			"path": "exports/surety-rounded-48.png",
+			"bytes": 6885,
+			"sha256": "8d59954e2c71783d6ec900b2de91bc7c408417a85e47fc9179c043da1020a88b"
+		},
+		{
+			"path": "exports/surety-transparent-32.png",
+			"bytes": 2284,
+			"sha256": "f4d345afd7d10e7cda6503da60db99a6e630afef8e7ef0fc21997e67ac882cca"
+		},
+		{
+			"path": "exports/surety-icon-32.png",
+			"bytes": 3303,
+			"sha256": "92c8a2385063db189d04580ebc15a51e7bd6ebf3a840df3727399d736caa41dc"
+		},
+		{
+			"path": "exports/surety-rounded-32.png",
+			"bytes": 3431,
+			"sha256": "bd6b2a6f9202f35f70b770009599bf20a0af56cecb7d264035710e45daa280b5"
+		},
+		{
+			"path": "exports/surety-transparent-24.png",
+			"bytes": 1463,
+			"sha256": "df009b944811db71e12d3c61635ebfa7352b0fc6b3f8a732b2af8f92cbb855fe"
+		},
+		{
+			"path": "exports/surety-icon-24.png",
+			"bytes": 1991,
+			"sha256": "b83db53b26494db0094343b0fadf2fc698fa057c58c70e8c198694c68e2cf143"
+		},
+		{
+			"path": "exports/surety-rounded-24.png",
+			"bytes": 2090,
+			"sha256": "de72520f4198a3f60299dbd52a96bb135dd9a81035728f997c0abaca3d51f26f"
+		},
+		{
+			"path": "exports/surety-transparent-16.png",
+			"bytes": 785,
+			"sha256": "db7d65b94336b65f838efa8dd1a9f8e8c4b2060e4da868d59d8ae44410602632"
+		},
+		{
+			"path": "exports/surety-icon-16.png",
+			"bytes": 986,
+			"sha256": "5a4bcdf11bdf1bb2e0f31086562771f80dbd415182778f5e0ac7771c1010ad47"
+		},
+		{
+			"path": "exports/surety-rounded-16.png",
+			"bytes": 1019,
+			"sha256": "98b9eadcbf7a8682c79a266a3973d31ddc63ab7ff0eda4c9d484bd697423742b"
+		},
+		{
+			"path": "exports/surety-white-2048.png",
+			"bytes": 3006181,
+			"sha256": "0b5d3bfdba1c4abeb7b6fe48128ca606af3c8886fba07fe8f22a4673e5931246"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 879887,
+			"sha256": "eb5847776fe675d2ce116b7fba048ddf23818a50983de9e6edc32c95dd282015"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 874383,
+			"sha256": "aa3a2a15437c50e198929b59ff8c52d346bc4f5e581947cce1748c68ff2d3383"
+		}
+	]
+}

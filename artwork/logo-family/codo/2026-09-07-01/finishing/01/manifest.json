@@ -1,0 +1,387 @@
+{
+	"createdAt": "2026-09-07T03:31:36.630Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "76ffd623644d056cbe15f2a924c0bb53fe9e294caccd3f43ce796f75cb66e79c",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "codo",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#5f8988",
+			"light": "#b6cfbd",
+			"shade": "#304f5e",
+			"motif": "#243d49",
+			"grainAmplitude": 1,
+			"grainSeed": 6090794,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Petal pockets",
+				"description": "Petal pockets: three broad asymmetrical folded petal pockets and fine offset seams on a deep mineral-teal field.",
+				"layers": [
+					{
+						"d": "M-92 106C125 34 319 68 413 267C255 274 99 245-92 348Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-89 355C102 252 256 282 420 275",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M788-97C882 53 758 217 622 280C801 335 1004 212 1119 10V-97Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M621 287C810 344 1013 221 1125 13",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M779 714C942 670 1073 751 1120 988V1124H850C710 1006 704 855 779 714Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M773 709C696 850 702 1006 844 1127",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-74 810C60 719 222 766 279 948C110 1013 58 1109-74 1115Z",
+						"tone": "ribbon"
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/codo.png",
+		"framing": {
+			"scale": 0.89,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 3259067,
+		"foregroundPixels": 935237,
+		"softEdgePixels": 12517,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 145,
+			"top": 150,
+			"right": 1889,
+			"bottom": 1839
+		}
+	},
+	"placement": {
+		"scale": 0.89,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 241,
+			"top": 245,
+			"right": 1793,
+			"bottom": 1748
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 149.9374880197915,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2678,
+			"sha256": "d0f477bb57abee5a2775eb6607728d45e439e3ac9d0143e98ca6446a0dcc66ea"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1936,
+			"sha256": "c49a46348575e58a3bbb5e761ba7bbf3a3608b0175876f9bd400bac7cbdcbe08"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2227687,
+			"sha256": "20fbed33dcf90f1a32420e9c6d1eff5bf5cf7307e4b0cbdff0ac12f453e3813c"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 77027,
+			"sha256": "b0d4bcf07d94aa1fbefa9bc2c1adf15fea16f2876f97914df480acd4f97b5f4b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1130,
+			"sha256": "8979df8f0e27f0b15b7f73fca9782aa94390bf0242942040eb2f22e9af5c2e81"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2537065,
+			"sha256": "a359cb43782e1cba5225ced8380ee91a242f2304844a62ed2d5c443585f73259"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 1902979,
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 104320,
+			"sha256": "3886cb909358a7dc4eb2341712497696558b2181f7e7629daa395d77d8539d01"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 160429,
+			"sha256": "e983546f1304cc243a1d877a63f71717ec7c092494f858c253ab590234699e33"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 118826,
+			"sha256": "a1532c0b51284c6ce9651ca4d91b03d46b16613365936f6dcb8b43da5f3d3fb1"
+		},
+		{
+			"path": "exports/codo-transparent-2048.png",
+			"bytes": 1902979,
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+		},
+		{
+			"path": "exports/codo-icon-2048.png",
+			"bytes": 4416629,
+			"sha256": "7468b1cefd8e6483759a5e9b31f34c7ed0243f8d021fda097d8f03be96f500ff"
+		},
+		{
+			"path": "exports/codo-rounded-2048.png",
+			"bytes": 4316282,
+			"sha256": "c1a2ff439774e7702fc1d798f744ad0e9797da1b4a72cd601ba689b83b34f745"
+		},
+		{
+			"path": "exports/codo-transparent-1024.png",
+			"bytes": 537273,
+			"sha256": "fc6c31e0f6936eabc83e8a9e8e297a38c70f50746c21a508aa41ae88147b66ae"
+		},
+		{
+			"path": "exports/codo-icon-1024.png",
+			"bytes": 1142345,
+			"sha256": "06e6482ca37559f8c5f1e168747ed4e33a5e4202de4723dd99d0e6fe6f8d3484"
+		},
+		{
+			"path": "exports/codo-rounded-1024.png",
+			"bytes": 1131870,
+			"sha256": "8398f6b7a32f70df071df179067ad82713319da19ae966aee33408b9dd641033"
+		},
+		{
+			"path": "exports/codo-transparent-512.png",
+			"bytes": 158919,
+			"sha256": "6d7be603a104782c541e512b139e6d03ab8fcb57ce482e134dc5cd0f0f0c33f1"
+		},
+		{
+			"path": "exports/codo-icon-512.png",
+			"bytes": 355559,
+			"sha256": "550c6fc8025d1906e0097a1c5327721c7c855ce39541348ca3969cda189b4e79"
+		},
+		{
+			"path": "exports/codo-rounded-512.png",
+			"bytes": 354366,
+			"sha256": "6d72e07f40db156c73ec12544981af634c67d47208918f340cd8ff1befc8760e"
+		},
+		{
+			"path": "exports/codo-transparent-256.png",
+			"bytes": 46030,
+			"sha256": "b197ec74c1daa0660ad46eb951e6950fa08016934fde151eb332cdfba4a74bc2"
+		},
+		{
+			"path": "exports/codo-icon-256.png",
+			"bytes": 82520,
+			"sha256": "0c3b9f4972245b7a18514e2dd7fddad5f58274285ac65dbb9577126710c9c8aa"
+		},
+		{
+			"path": "exports/codo-rounded-256.png",
+			"bytes": 84932,
+			"sha256": "f23629db089338f76702508297fa95944e790f2de7b83a9c224d9ea6b52018b9"
+		},
+		{
+			"path": "exports/codo-transparent-128.png",
+			"bytes": 13381,
+			"sha256": "e6ae25014eee1c440de38e067843894acb4194419d0113d4d6ad9d110549e864"
+		},
+		{
+			"path": "exports/codo-icon-128.png",
+			"bytes": 26284,
+			"sha256": "b655121820e3a6192ab1b765b509e679427785679ad88b4f69a21bec1bdce544"
+		},
+		{
+			"path": "exports/codo-rounded-128.png",
+			"bytes": 27363,
+			"sha256": "11fec9dedc6bda6c9e97f6192ca7189bf4428183cb82733496c187a283f4b606"
+		},
+		{
+			"path": "exports/codo-transparent-64.png",
+			"bytes": 4189,
+			"sha256": "3683bee3a957f561a6591804b8a6f7b73ab3977e34b972e15ce2aeafe2d04b9c"
+		},
+		{
+			"path": "exports/codo-icon-64.png",
+			"bytes": 8998,
+			"sha256": "42da0f9034733f724b94fc1767b29daacfcbb970c62be7962c7d2c7a30599075"
+		},
+		{
+			"path": "exports/codo-rounded-64.png",
+			"bytes": 9453,
+			"sha256": "f5b2f75905331b7970989eaf7e1d0433a948a458869e38e68a0f709c21e2d548"
+		},
+		{
+			"path": "exports/codo-transparent-48.png",
+			"bytes": 2682,
+			"sha256": "47e1a57ae878f1e8fe02c2975d29710d404567ad0c7debc83d8269061f2d6af2"
+		},
+		{
+			"path": "exports/codo-icon-48.png",
+			"bytes": 5511,
+			"sha256": "4fa0eed4a6cf741721e67fa03426c131b6cc5cc809c5f62b9797dbc92d1cef20"
+		},
+		{
+			"path": "exports/codo-rounded-48.png",
+			"bytes": 5845,
+			"sha256": "6b9e19b014b08d33f6624f2265ff1051cd54342704bac395ed598ad478dddd05"
+		},
+		{
+			"path": "exports/codo-transparent-32.png",
+			"bytes": 1492,
+			"sha256": "925a1a5ae4c2cf051c5b1aeba0c032066759174a8d86e46d86192202094aa746"
+		},
+		{
+			"path": "exports/codo-icon-32.png",
+			"bytes": 2986,
+			"sha256": "dea2314505de3b6644b97fb7abc42994ab53c42482cf149748c9234725549bed"
+		},
+		{
+			"path": "exports/codo-rounded-32.png",
+			"bytes": 3115,
+			"sha256": "9bd10339e5a8678838470dcfecc7151e71f7c4a72ca0bf5bfcb4e236dc1f9e80"
+		},
+		{
+			"path": "exports/codo-transparent-24.png",
+			"bytes": 984,
+			"sha256": "72fe732afb95d62b6c18af0058489cd37ff333f58694d65b58a4fb61c8077792"
+		},
+		{
+			"path": "exports/codo-icon-24.png",
+			"bytes": 1848,
+			"sha256": "1723b0bc9a00efae4949487bae020fb39d60d69e33a0f05cdee1a45d6c791fcc"
+		},
+		{
+			"path": "exports/codo-rounded-24.png",
+			"bytes": 1969,
+			"sha256": "07e1d82e720ad2cc45f0ca45c141e92a1a6d38aa0ab8d5d68bc73255d36f7ccd"
+		},
+		{
+			"path": "exports/codo-transparent-16.png",
+			"bytes": 582,
+			"sha256": "a9709d9d700b082eea926ca1983c27d00bf69d7ca5572a419b837d8e4842e8a7"
+		},
+		{
+			"path": "exports/codo-icon-16.png",
+			"bytes": 942,
+			"sha256": "61e39e11ee0b7703c20422b9c8eb5f0dd7c26d96b6e14ae7c5c17159c379634e"
+		},
+		{
+			"path": "exports/codo-rounded-16.png",
+			"bytes": 985,
+			"sha256": "13695f9409f0db276d0372e949d896f12ae5121cf3e7a38e097d05ac608aef87"
+		},
+		{
+			"path": "exports/codo-white-2048.png",
+			"bytes": 1744729,
+			"sha256": "818b5990e6765ef7e35c4624048665d4d8e3ff00141862ff91d9906ee4f23756"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 505649,
+			"sha256": "f2ad82c94841975f04cdf20399467337decc793ad720306d929aef1ef68d0582"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 502009,
+			"sha256": "15ac98ebf389f1fc8c672675c9e29c4f78c210fbb96ac3f255edbaba83c06486"
+		}
+	]
+}

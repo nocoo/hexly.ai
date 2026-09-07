@@ -1,0 +1,132 @@
+{
+	"project": "gecko",
+	"study": "2026-09-07-01",
+	"finishing": "01",
+	"masters": {
+		"logo.png": {
+			"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "293ebb96796478b1fe70e16a8c1b948351970b92972d819d1423946f96174e85",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "0f0df46ddc11d2823b0767c8a97c549cf43732580a19202a05c2d197deadda38",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"width": 128
+	},
+	"transparentPngs": [
+		{
+			"path": "apps/web-dashboard/public/logo-24.png",
+			"size": 24,
+			"sha256": "6c076cc50b12c49ed4ce17645f00e7e0a01cbac828212b8a75af2be773e0e05f",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 254
+		},
+		{
+			"path": "apps/web-dashboard/public/logo-80.png",
+			"size": 80,
+			"sha256": "d8565c706223179cc373f8bf7824f44348bc4dc5dacb95b4bfe4a829b89738dc",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 3934
+		},
+		{
+			"path": "apps/web-dashboard/src/app/icon.png",
+			"size": 32,
+			"sha256": "fbb5bcb6909baf8e9514349e7a56fd0a6a14571ebeba07123e6a73dae71523ed",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 508
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "apps/web-dashboard/src/app/favicon.ico",
+			"size": [16, 16],
+			"exactWholeMasterResize": true
+		},
+		{
+			"path": "apps/web-dashboard/src/app/favicon.ico",
+			"size": [32, 32],
+			"exactWholeMasterResize": true
+		},
+		{
+			"path": "apps/web-dashboard/src/app/favicon.ico",
+			"size": [48, 48],
+			"exactWholeMasterResize": true
+		}
+	],
+	"touch": {
+		"path": "apps/web-dashboard/src/app/apple-icon.png",
+		"size": [180, 180],
+		"opaqueSquare": true
+	},
+	"social": {
+		"path": "apps/web-dashboard/src/app/opengraph-image.png",
+		"size": [1200, 630],
+		"source": "assets/brand/icon-rounded.png"
+	},
+	"retainedSourceBytes": true,
+	"macOS": {
+		"canvas": "assets/brand/app-icon-macos.png",
+		"canvasSize": [1024, 1024],
+		"tileSize": [824, 824],
+		"inset": [100, 100],
+		"appIconEntries": [
+			{
+				"name": "icon_16x16.png",
+				"size": 16
+			},
+			{
+				"name": "icon_16x16@2x.png",
+				"size": 32
+			},
+			{
+				"name": "icon_32x32.png",
+				"size": 32
+			},
+			{
+				"name": "icon_32x32@2x.png",
+				"size": 64
+			},
+			{
+				"name": "icon_128x128.png",
+				"size": 128
+			},
+			{
+				"name": "icon_128x128@2x.png",
+				"size": 256
+			},
+			{
+				"name": "icon_256x256.png",
+				"size": 256
+			},
+			{
+				"name": "icon_256x256@2x.png",
+				"size": 512
+			},
+			{
+				"name": "icon_512x512.png",
+				"size": 512
+			},
+			{
+				"name": "icon_512x512@2x.png",
+				"size": 1024
+			}
+		],
+		"retainedMenuTemplates": {
+			"apps/mac-client/Gecko/Resources/Assets.xcassets/MenuBarIcon.imageset/menubar-icon.png": "816af90f440057ca1811185b10ad9677a98c5510e9e729fd92199198684eb635",
+			"apps/mac-client/Gecko/Resources/Assets.xcassets/MenuBarIcon.imageset/menubar-icon@2x.png": "e7b464640017a6a83a503536314efa8642341fe6a8afae1904477b090b15dfcd"
+		},
+		"aboutPresentationSizes": [128, 256, 384],
+		"newTemplates": []
+	}
+}

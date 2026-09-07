@@ -1,0 +1,98 @@
+{
+	"project": "giraffe",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#79865b",
+		"light": "#b9c398",
+		"shade": "#4b5c39",
+		"motif": "#354629",
+		"grainAmplitude": 1,
+		"grainSeed": 609082,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Acacia canopy relief",
+			"description": "Staggered flat-topped acacia canopies and a few angled branching stems form broad pressed impressions. Unequal canopy spans and open lower branches keep this distinct from leaf wreaths and regular tessellation.",
+			"layers": [
+				{
+					"d": "M-83 176C1 92 147 72 250 123C291 91 364 106 416 172L422 198H-83Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-80 202H420",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M227 197L216 324L159 412M216 324L308 389",
+					"tone": "motif",
+					"strokeWidth": 19
+				},
+				{
+					"d": "M704 329C779 253 922 230 1066 276L1139 329V353H700Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M707 355H1134",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M908 355L925 492L1030 587M925 492L853 557",
+					"tone": "ribbon",
+					"strokeWidth": 20
+				},
+				{
+					"d": "M704 988C825 906 1008 917 1130 1008V1048H707Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M709 1050H1122",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-114 738C-3 661 143 670 256 748V774H-114Z",
+					"tone": "ribbon"
+				}
+			]
+		},
+		"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+	},
+	"shadows": [
+		{
+			"color": [29, 31, 35],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [23, 26, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.86,
+		"offsetAt2048": [0, 143],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniform 86% bottom-anchored placement gives the horns, ears, and entire sprig rounded-corner room while preserving the natural diagonal neck entry. No neck stretching or fabricated shoulder."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/giraffe.png",
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+	}
+}

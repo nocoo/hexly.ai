@@ -1,0 +1,88 @@
+{
+	"checkedAt": "2026-09-07T04:10:15.652073+00:00",
+	"themes": ["light", "dark"],
+	"ownerInterrupted": false,
+	"nativeApplicationsInstalled": false,
+	"records": [
+		{
+			"project": "snaky",
+			"method": "Actual SnakyCore PopoverContentView inside NSHostingView, 451 x 818 pt at 2x.",
+			"logoRoles": ["Transparent 22 pt popover mark"],
+			"limitation": "CLI discovery uses explicit false/nil file and shell fixtures; no probe or user CLI was run. The capture shows initial loading state. The earlier ImageRenderer-only attempt omitted the ScrollView and is retained as an intermediate, not acceptance evidence.",
+			"result": "passed",
+			"screenshots": [
+				{
+					"path": "source-browser/snaky-imagerenderer-dark.png",
+					"dimensions": [902, 1636],
+					"sha256": "45b9a923335e12433389eb10b034fea71786e73e9a587ebfe94316fea5c849c9"
+				},
+				{
+					"path": "source-browser/snaky-imagerenderer-light.png",
+					"dimensions": [902, 1636],
+					"sha256": "45b9a923335e12433389eb10b034fea71786e73e9a587ebfe94316fea5c849c9"
+				},
+				{
+					"path": "source-browser/snaky-popover-dark.png",
+					"dimensions": [902, 1636],
+					"sha256": "1326cc2f2154923915b944c294efb925d3866386a33a8aed950f3a6647234b6b"
+				},
+				{
+					"path": "source-browser/snaky-popover-header-dark.png",
+					"dimensions": [902, 146],
+					"sha256": "9ba9d8dd8565a19751ffda7d1eaf15e8648418546bbcc5bd62275d54e675db1d"
+				},
+				{
+					"path": "source-browser/snaky-popover-header-light.png",
+					"dimensions": [902, 146],
+					"sha256": "720203d3a9c0a2464d7a301c61f43bad1dcf5fe7e2a1a4a5a9a0fb3d7ebc8080"
+				},
+				{
+					"path": "source-browser/snaky-popover-light.png",
+					"dimensions": [902, 1636],
+					"sha256": "fd6d4bd52ca217c3ead56aed3c667c06eb2b19e3d9548f9894472075e24bad94"
+				}
+			],
+			"harness": "native-harness/snaky.swift"
+		},
+		{
+			"project": "codo",
+			"method": "Actual BannerContentView, BannerViewFactory and MarkdownRenderer linked with CodoCore; offscreen AppKit bitmap capture at 2x with an explicit message fixture.",
+			"logoRoles": ["Transparent 40 pt notification mark"],
+			"limitation": "The helper uses a temporary bundle with the exact logo.png. It does not launch AppDelegate, send a notification, show a window, or read dashboard state. Offscreen vibrancy cannot reproduce live desktop blur; the actual image geometry and layer crop properties were asserted.",
+			"result": "passed",
+			"screenshots": [
+				{
+					"path": "source-browser/codo-banner-dark.png",
+					"dimensions": [992, 356],
+					"sha256": "7cb379723b414ac59b427b1d16bf3049ee9e0b7699024bb15d7da8e6d5581de2"
+				},
+				{
+					"path": "source-browser/codo-banner-light.png",
+					"dimensions": [992, 356],
+					"sha256": "925fcb26937a0c572d57f162e26e934b985a015c6c5774a191811d73a3879ae9"
+				}
+			],
+			"harness": "native-harness/codo.swift"
+		},
+		{
+			"project": "gecko",
+			"method": "Actual AboutView with the freshly compiled source Assets.car in a temporary bundle, rendered with SwiftUI ImageRenderer at 2x.",
+			"logoRoles": ["Background presentation at 96 pt in About"],
+			"limitation": "Only the About view is rendered. No production Gecko process, settings, tracking, database, Keychain or TCC state is started or changed.",
+			"result": "passed",
+			"screenshots": [
+				{
+					"path": "source-browser/gecko-about-dark.png",
+					"dimensions": [1040, 1040],
+					"sha256": "d6918da6bf33903ac3347d19b99ab1ab0f628be4e97e0cc5d8e54895593924eb"
+				},
+				{
+					"path": "source-browser/gecko-about-light.png",
+					"dimensions": [1040, 1040],
+					"sha256": "1d663e379a478541a762e24f7348a0d30bfdf9cda42ade9e605becb56e2075b0"
+				}
+			],
+			"harness": "native-harness/gecko.swift"
+		}
+	]
+}

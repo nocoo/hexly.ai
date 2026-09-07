@@ -1,0 +1,119 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Golden yellow",
+				"zh": "金黄色"
+			},
+			"role": "primary",
+			"color": "#fdc904",
+			"pixel": [1681, 1223],
+			"rgb": [253, 201, 4],
+			"sourceSha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"label": {
+				"en": "Lemon",
+				"zh": "柠檬黄"
+			},
+			"role": "accent",
+			"color": "#fdc904",
+			"pixel": [1681, 1223],
+			"rgb": [253, 201, 4],
+			"sourceSha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"label": {
+				"en": "Charcoal",
+				"zh": "炭灰色"
+			},
+			"role": "accent",
+			"color": "#fdc904",
+			"pixel": [1681, 1223],
+			"rgb": [253, 201, 4],
+			"sourceSha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"label": {
+				"en": "Coral",
+				"zh": "珊瑚色"
+			},
+			"role": "accent",
+			"color": "#fdc904",
+			"pixel": [1681, 1223],
+			"rgb": [253, 201, 4],
+			"sourceSha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"label": {
+				"en": "Electric blue",
+				"zh": "电光蓝"
+			},
+			"role": "accent",
+			"color": "#fdc904",
+			"pixel": [1681, 1223],
+			"rgb": [253, 201, 4],
+			"sourceSha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		}
+	],
+	"presentation": {
+		"base": "#918451",
+		"light": "#c1b783",
+		"shade": "#5f542f",
+		"motif": "#463b20",
+		"pattern": "Charge steps",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#c38e13",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/web/src/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/web/src/globals.css --foreground"
+			},
+			"primary": {
+				"value": "42 82% 42%",
+				"source": "packages/web/src/globals.css --primary"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#c38e13",
+				"role": "primary",
+				"source": "packages/web/src/globals.css --primary: 42 82% 42%"
+			},
+			{
+				"color": "#eeeff2",
+				"role": "background",
+				"source": "packages/web/src/globals.css --background: 220 14% 94%"
+			},
+			{
+				"color": "#ffea02",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#ffab17",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#ffef66",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Existing recorded product colors are separate from sampled artwork and the designed presentation."
+	}
+}

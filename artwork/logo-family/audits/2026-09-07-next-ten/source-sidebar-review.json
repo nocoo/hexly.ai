@@ -1,0 +1,383 @@
+{
+	"method": "Real source components server-rendered with explicit router/session fixtures and their actual compiled CSS. Headless Chrome receives only local source images. No source server, production connection, or user data is used.",
+	"projects": {
+		"xray": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "16e3c3435d3ac2c5e2a3fa38d850108005fcdbd7eda0d3cef45d54c67c5befdb",
+			"stylesSha256": "cd20f1cdef2930f158d5e8e88a2b1d937cf5ff2ab1325cd7eac00d59c20084d6",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/xray-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/xray-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/xray-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/xray-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"bat": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "2f159572cf0285dbb685f4d70ff0f3742b37880088e8e9572e51924112289e2a",
+			"stylesSha256": "ca0f548a4b2c3389c4ca89e2de0967c879c610ee565906be87555e0ed3873366",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/bat-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/bat-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/bat-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/bat-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"pika": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "c5c385d365d38b3a0a1b3adce5a5c4ed3b504cf76b0ff6a139afe658f0893595",
+			"stylesSha256": "4170f33a2d3e191d9556b0d18cdaffc7d83293ae678fd0c916cca8763d91151a",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/pika-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/pika-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/pika-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/pika-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"backy": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "93bed349ebfbacbbb7d69ac05ac94b75202a083a7f1d51b5c0e365c13cc58a6b",
+			"stylesSha256": "73d7d280ecb45588594684e0b9a75b9bebf017be03ef40e1a0e114ca8de101b6",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/backy-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/backy-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/backy-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/backy-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"otter": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "7f1f082bff872aeaa662a8ed9e98490c2ff39f036c7bfdf7f630483297e79d8c",
+			"stylesSha256": "88736b673f65080aa3aa1f8e1fc7fad073d0475f8d410c336043c0ac3389bc67",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/otter-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/otter-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/otter-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/otter-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"gecko": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "c93bc3b20c2096d4fa63bced3618c5c27809bbbea3e9723d00f217b6350a8fce",
+			"stylesSha256": "7e0986c0a4adb0330036fcb886fb22108b90e35a881665f90c187670479aee8c",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/gecko-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/gecko-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/gecko-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/gecko-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		}
+	}
+}

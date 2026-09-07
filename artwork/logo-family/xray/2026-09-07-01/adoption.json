@@ -1,0 +1,33 @@
+{
+	"status": "adopted",
+	"study": "xray/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/xray",
+	"sourceCommit": "16175dc87ef406e8cf3343ab8808b60e8f53cc8a",
+	"masters": {
+		"logo.png": {
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "cdc6aa43110cc2ea7ead1520416b26a3153176e3a3ad6afe9185a576f7fbcd69",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "cfc96baa2fbd99fab5af9aca03e09de14beaf52920ff028d9b7a6ee0b579adce",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/assets/brand/README.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/xray",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/xray/2026-09-07-01/review.html",
+	"publication": {
+		"sourcePush": "See exact source revision and CI/CD results in the batch publication report.",
+		"report": "../../audits/2026-09-07-next-ten/source-publication.json"
+	}
+}

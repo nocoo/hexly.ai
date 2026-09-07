@@ -1,0 +1,20 @@
+{
+	"sourceSha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04",
+	"foregroundSha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+	"nativeDimensions": [2048, 2048],
+	"presentationDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"minimumClearancePx": 198.5,
+	"clippedPixels": 0,
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"minimumRequiredClearancePx": 128.0,
+	"retainedExactBytes": null,
+	"note": "Complete animal and single accessory share one uniform placement. Distance is measured from visible pixel centers to the actual rounded outline, including every ear, toe, tail and accessory. No intentional boundary intersection or continuation layer."
+}

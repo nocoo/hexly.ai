@@ -1,0 +1,119 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Sandstone",
+				"zh": "砂岩色"
+			},
+			"role": "primary",
+			"color": "#c4a576",
+			"pixel": [1645, 318],
+			"rgb": [196, 165, 118],
+			"sourceSha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		},
+		{
+			"label": {
+				"en": "Clay",
+				"zh": "陶土色"
+			},
+			"role": "accent",
+			"color": "#bd9f6d",
+			"pixel": [1645, 317],
+			"rgb": [189, 159, 109],
+			"sourceSha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		},
+		{
+			"label": {
+				"en": "Sage",
+				"zh": "鼠尾草色"
+			},
+			"role": "accent",
+			"color": "#bd9f6d",
+			"pixel": [1645, 317],
+			"rgb": [189, 159, 109],
+			"sourceSha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		},
+		{
+			"label": {
+				"en": "Cream",
+				"zh": "奶油色"
+			},
+			"role": "accent",
+			"color": "#e4d4b0",
+			"pixel": [1338, 267],
+			"rgb": [228, 212, 176],
+			"sourceSha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		},
+		{
+			"label": {
+				"en": "Dark brown",
+				"zh": "深棕色"
+			},
+			"role": "accent",
+			"color": "#bd9f6d",
+			"pixel": [1645, 317],
+			"rgb": [189, 159, 109],
+			"sourceSha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		}
+	],
+	"presentation": {
+		"base": "#926d60",
+		"light": "#d4ad8b",
+		"shade": "#654842",
+		"motif": "#49312e",
+		"pattern": "Sandstone shelves",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#2e8553",
+		"background": "#eef2ef",
+		"theme": {
+			"background": {
+				"value": "140 14% 94%",
+				"source": "apps/web-dashboard/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web-dashboard/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "146 49% 35%",
+				"source": "apps/web-dashboard/src/app/globals.css --primary"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#2e8553",
+				"role": "primary",
+				"source": "apps/web-dashboard/src/app/globals.css --primary: 146 49% 35%"
+			},
+			{
+				"color": "#eef2ef",
+				"role": "background",
+				"source": "apps/web-dashboard/src/app/globals.css --background: 140 14% 94%"
+			},
+			{
+				"color": "#a8875e",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#cdb089",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#785347",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Existing recorded product colors are separate from sampled artwork and the designed presentation."
+	}
+}

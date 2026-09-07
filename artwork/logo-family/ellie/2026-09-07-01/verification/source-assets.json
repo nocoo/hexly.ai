@@ -1,0 +1,98 @@
+{
+	"project": "ellie",
+	"study": "2026-09-07-01",
+	"finishing": "01",
+	"masters": {
+		"logo.png": {
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "2b9d33da5dbab34e5bb8b1066337fca856afb6a6a1d1702d7477abd644bc512b",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "599c9514a88347562b961386b35e5a9b6fe2fbeca49c885feb8d0bb071cdb8cd",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"sha256": "599c9514a88347562b961386b35e5a9b6fe2fbeca49c885feb8d0bb071cdb8cd",
+		"width": 128
+	},
+	"transparentPngs": [
+		{
+			"path": "apps/admin/public/logo-24.png",
+			"size": 24,
+			"sha256": "6015fe039d31bb437d492d05b7251657e11f3a0e5269bf251d5a458d66eafc66",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 223,
+			"opaquePixels": 161
+		},
+		{
+			"path": "apps/admin/public/logo-80.png",
+			"size": 80,
+			"sha256": "3b5be3de018a1ced326ce0042dc59e5db1569daa368f70d89c5a9e43bf1e279d",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 3216,
+			"opaquePixels": 2451
+		},
+		{
+			"path": "apps/admin/public/logo-192.png",
+			"size": 192,
+			"sha256": "ed1eb2acfaa895a3e89f4f754434fc282d50ea79f7c1b586b9a89a305c45c6bd",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 19649,
+			"opaquePixels": 15320
+		},
+		{
+			"path": "apps/admin/src/app/icon.png",
+			"size": 32,
+			"sha256": "49579fbb39318d1c1a6133abbe1dfb558b790d23cc34efcc06b5b927a7c39f56",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 439,
+			"opaquePixels": 324
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "apps/admin/src/app/favicon.ico",
+			"size": [16, 16],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 88
+		},
+		{
+			"path": "apps/admin/src/app/favicon.ico",
+			"size": [32, 32],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 439
+		}
+	],
+	"touch": {
+		"path": "apps/admin/src/app/apple-icon.png",
+		"size": [180, 180],
+		"opaqueSquare": true,
+		"sha256": "0026c6355bdf0790e20b320733d5aa0eef81e300ddb55d571f7b58dde2e81d3e"
+	},
+	"social": {
+		"path": "apps/admin/src/app/opengraph-image.png",
+		"size": [1200, 630],
+		"source": "assets/brand/icon-rounded.png",
+		"sha256": "1972161b0e6806e8d80e7fd284ace60bbc870a2b1fb95c4453eb4944c7cf1614"
+	},
+	"independentForumIdentity": {
+		"preserved": true,
+		"assets": {
+			"apps/web/src/app/favicon.ico": "ff310c0d3445ece9aca8da16d741d94901983f81b42e6a37712918826ef894f7",
+			"apps/web/src/components/forum/forum-logo.tsx": "52c11f5cded76989b59be0f83f2a5a770a5cc2c78116863f581c3fb4fd1ba545",
+			"apps/web/src/viewmodels/forum/header.ts": "b08a5b5f8085808c461fa184ae7dd5bcb2c97b5493f85d3b0456ba9fe8aac877",
+			"apps/web/src/viewmodels/forum/footer.ts": "25559862e2859d23f75a2d9ae99f4c7135aa503255bd1f131cd5be94af785271"
+		}
+	},
+	"loginMaskRemoved": true
+}

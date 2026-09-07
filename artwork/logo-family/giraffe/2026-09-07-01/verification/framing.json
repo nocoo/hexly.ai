@@ -1,0 +1,60 @@
+{
+	"sourceSha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603",
+	"foregroundSha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+	"squareSha256": "a0a891160f779acc998e77af4d92bd2517494de36e252f80a0ca0261fb704686",
+	"roundedSha256": "9231462e42a52e4f59f1da7c9a6dc96178e782d5ab54bf5e1232c9e03da766a9",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance from visible pixel centers to the actual rounded-square boundary. Native anatomical regions are transformed by the exact rounded resize and placement.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.86,
+		"offsetAt2048": [0, 144],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniform 86% bottom-anchored placement gives the horns, ears, and entire sprig rounded-corner room. A one-pixel placement correction from pass 01 closes the resampling gap at the lower canvas. Natural diagonal neck entry; no stretched anatomy or painted continuation."
+	},
+	"protectedFeatures": [
+		{
+			"name": "Both ossicones",
+			"nativeRegionAt2048": [690, 80, 1290, 575],
+			"regionAt2048": [736, 355, 1253, 782],
+			"visiblePixels": 123777,
+			"minimumClearancePx": 370.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Both complete ears",
+			"nativeRegionAt2048": [205, 240, 1850, 820],
+			"regionAt2048": [319, 493, 1734, 993],
+			"visiblePixels": 437758,
+			"minimumClearancePx": 335.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Eyes, head, and muzzle",
+			"nativeRegionAt2048": [640, 420, 1640, 1590],
+			"regionAt2048": [693, 648, 1554, 1655],
+			"visiblePixels": 723375,
+			"minimumClearancePx": 393.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Single complete leaf sprig",
+			"nativeRegionAt2048": [1090, 1250, 1940, 1850],
+			"regionAt2048": [1080, 1361, 1812, 1878],
+			"visiblePixels": 148967,
+			"minimumClearancePx": 164.64,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": ["bottom"],
+		"clippedPixels": 4611,
+		"bottomRowVisiblePixels": 646,
+		"rightColumnVisiblePixels": 0,
+		"note": "Only the documented native lower neck/shoulder continuation intersects the presentation outline. The complete lion mane and whole owl are fully inset."
+	},
+	"continuation": null
+}

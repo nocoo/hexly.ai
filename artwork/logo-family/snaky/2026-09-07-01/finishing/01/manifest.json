@@ -1,0 +1,386 @@
+{
+	"createdAt": "2026-09-07T03:31:34.542Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "snaky",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#778e57",
+			"light": "#c3d497",
+			"shade": "#465e37",
+			"motif": "#314427",
+			"grainAmplitude": 1,
+			"grainSeed": 6090793,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Meadow bends",
+				"description": "Meadow bends: broad unequal S-shaped pressed channels on a moss-green field, with open ends and no enclosing circular motif.",
+				"layers": [
+					{
+						"d": "M-108 147C95 25 217 133 356 109S590-15 739 3C936 27 909 227 1121 159",
+						"tone": "motif",
+						"strokeWidth": 48
+					},
+					{
+						"d": "M-108 174C93 53 219 160 359 137S592 13 738 31C925 55 913 256 1123 187",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-112 581C96 428 251 561 219 733C181 935 8 961 25 1124",
+						"tone": "ribbon",
+						"strokeWidth": 73
+					},
+					{
+						"d": "M-111 623C91 472 206 571 180 729C147 922-37 955-18 1128",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M661 1124C496 904 737 832 874 873C1036 923 1142 790 1107 641",
+						"tone": "ribbon",
+						"strokeWidth": 49
+					},
+					{
+						"d": "M635 1140C457 901 737 803 883 846C1030 890 1114 780 1080 649",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/snaky.png",
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2446691,
+		"foregroundPixels": 1747613,
+		"softEdgePixels": 11338,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 246,
+			"top": 142,
+			"right": 1921,
+			"bottom": 1871
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 308,
+			"top": 213,
+			"right": 1849,
+			"bottom": 1804
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 198.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2743,
+			"sha256": "a3a0adddb9f5e67a8ba61daccb69d2ef4ac5f23a8222a73fb26c86ecfad6b55b"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1838,
+			"sha256": "c36b624822615c7f34c8803ff425c6c3da49ddf01d5d4f2ca43b372c59fe9446"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3264355,
+			"sha256": "0c08f612fade377c4c1e033079a86ef69c594e15aa06c5bb3ebedb09963bc3a5"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 67296,
+			"sha256": "be13c9c4e44db2d5e503b62b067f6789bd7fd0b3719ed3c1e45e65b6c5bbe720"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1210,
+			"sha256": "c23dda802773234855d51636bf6438d535667bcf047cf3621a3714fa36818f8d"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2542906,
+			"sha256": "2953d0334084902445a7caf914b0a094b2d6753560cfd4803ee553f20b5a9901"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2958177,
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 92436,
+			"sha256": "9e26e97e517addb343f14ae560fc074dce666a7bc35c85fea57154359cd54ddb"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 157637,
+			"sha256": "505e945e5b6d6f6d5036bc7a7afa39d0925c3fab69fbff6a6bd254c796f08dd5"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 121846,
+			"sha256": "a543ec6f1df628f54e6b3f5d94acd7f67d9c9511a899c36edfc541f42dfd10cb"
+		},
+		{
+			"path": "exports/snaky-transparent-2048.png",
+			"bytes": 2958177,
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+		},
+		{
+			"path": "exports/snaky-icon-2048.png",
+			"bytes": 4949221,
+			"sha256": "f1a0bab24253e83d85b261d1686e5bd05e4cd4178da8c1d91bc0cb57d338e060"
+		},
+		{
+			"path": "exports/snaky-rounded-2048.png",
+			"bytes": 4842522,
+			"sha256": "c4ca254e32aa4e47fd09f31991ade322422491cd8117aac5f627b1a018e94615"
+		},
+		{
+			"path": "exports/snaky-transparent-1024.png",
+			"bytes": 833202,
+			"sha256": "77cf2439adc468fa9e06677e5a6adf34867fb06a90abb37551047b17f250073d"
+		},
+		{
+			"path": "exports/snaky-icon-1024.png",
+			"bytes": 1325529,
+			"sha256": "6e9bc97eae87e8d0408dc33137dc11b42413092c5a37b9c64efa1b4b9a12f1bd"
+		},
+		{
+			"path": "exports/snaky-rounded-1024.png",
+			"bytes": 1312400,
+			"sha256": "c8a789ea05b7c08f34d12ec8abdfc88e2c768dc4f577dfd5ddb0f4453c1514fe"
+		},
+		{
+			"path": "exports/snaky-transparent-512.png",
+			"bytes": 256659,
+			"sha256": "770c338402f5d636ac6f4c4abfcf8150f3eaf21c7b806b558c06ea09a9caa8e0"
+		},
+		{
+			"path": "exports/snaky-icon-512.png",
+			"bytes": 418668,
+			"sha256": "8c95d1abefda7ff912bdf0efe3c1dd660ad2b33c423b2f2c15e9582e8340cc54"
+		},
+		{
+			"path": "exports/snaky-rounded-512.png",
+			"bytes": 416153,
+			"sha256": "2e66e1a90a9152fb238ccc0c27dafb60af8b7682d2e0dc319161d8b17c688262"
+		},
+		{
+			"path": "exports/snaky-transparent-256.png",
+			"bytes": 78482,
+			"sha256": "43c49020583871b839ef544389b1f86df0387cfa5ef3d79f1869b25febab06a5"
+		},
+		{
+			"path": "exports/snaky-icon-256.png",
+			"bytes": 111133,
+			"sha256": "c82e13701289d3b2594d61d0795ddccabb5faa2f36c5b1ff64362421b465cc8a"
+		},
+		{
+			"path": "exports/snaky-rounded-256.png",
+			"bytes": 112843,
+			"sha256": "b301f0b1068aa0bffe7691e81d29bd274dd8bd00c372d4e6723ac61b26c14fcd"
+		},
+		{
+			"path": "exports/snaky-transparent-128.png",
+			"bytes": 22539,
+			"sha256": "a6284e5197c6df557307ce5b89dc444ea58913677d0bdc439d283200e7c1b664"
+		},
+		{
+			"path": "exports/snaky-icon-128.png",
+			"bytes": 34497,
+			"sha256": "21fcd7d36e08416d3d6af4a6f1b860803f3fcdca02f79c982a5fd4d95d0f85ec"
+		},
+		{
+			"path": "exports/snaky-rounded-128.png",
+			"bytes": 35357,
+			"sha256": "47447f420b8bc25f93f550b2de059fb8624f0f69816a860b84ea6015f1e30d96"
+		},
+		{
+			"path": "exports/snaky-transparent-64.png",
+			"bytes": 6529,
+			"sha256": "f232ba02401e56aa78992fbcceea404548b73f714784b1673a5bab4d2c6d22d4"
+		},
+		{
+			"path": "exports/snaky-icon-64.png",
+			"bytes": 10719,
+			"sha256": "1d8802968dd98c1235a4ab50b394e982fa7291a1d6e7a58fc3c3dbb0815905a8"
+		},
+		{
+			"path": "exports/snaky-rounded-64.png",
+			"bytes": 11054,
+			"sha256": "61f053eb285bcbdff2d58053956225cd667a2b429197e957aca2c8d3138951ee"
+		},
+		{
+			"path": "exports/snaky-transparent-48.png",
+			"bytes": 3971,
+			"sha256": "616f2ae585f1353fcc69b57db2f31cc2eb723ac968492277953b7991efbc283d"
+		},
+		{
+			"path": "exports/snaky-icon-48.png",
+			"bytes": 6431,
+			"sha256": "2eb9abccf61ef75ac16e51b8f668eb30d6fb3ffd73a687be8c94732f23f3f8fd"
+		},
+		{
+			"path": "exports/snaky-rounded-48.png",
+			"bytes": 6681,
+			"sha256": "3c79617035f2b8fbe124443dd215bf4f63ba05764ee21d094e394066c938bcfe"
+		},
+		{
+			"path": "exports/snaky-transparent-32.png",
+			"bytes": 2084,
+			"sha256": "9a823093c4ef2a5d6a960624117cf91b3bdf0d506166c68c58dde227fab778e9"
+		},
+		{
+			"path": "exports/snaky-icon-32.png",
+			"bytes": 3243,
+			"sha256": "ac823ed09c14a582ce01da25d0c9c6821ae689de2ae44edd8f2368570cbdbefb"
+		},
+		{
+			"path": "exports/snaky-rounded-32.png",
+			"bytes": 3345,
+			"sha256": "be18e34f24fd3dcd4ea500df4440ef925a5f1b7a91b454fa9d20d60009ddd77d"
+		},
+		{
+			"path": "exports/snaky-transparent-24.png",
+			"bytes": 1361,
+			"sha256": "70729e4b80eef319dcd714b903008abc203228b6a57459ed9db2159821c56255"
+		},
+		{
+			"path": "exports/snaky-icon-24.png",
+			"bytes": 1954,
+			"sha256": "716ad6b3c19ceaf6a9cc6b39e044cae297ea26812b526e3f33c747d919f7bd25"
+		},
+		{
+			"path": "exports/snaky-rounded-24.png",
+			"bytes": 2046,
+			"sha256": "a3be5fca3686ac9d51374c1b1b37771a1b7a0ea81ab6f7685da90e8906541822"
+		},
+		{
+			"path": "exports/snaky-transparent-16.png",
+			"bytes": 773,
+			"sha256": "6b952445cda88a5892bfa655e0bf00b28cd27bbdf740af4a9f3a035f06d4ab9e"
+		},
+		{
+			"path": "exports/snaky-icon-16.png",
+			"bytes": 961,
+			"sha256": "042e90e65e8028b2532e567bfaf54396e202caa71ea5e1a838edf9225caf3f59"
+		},
+		{
+			"path": "exports/snaky-rounded-16.png",
+			"bytes": 996,
+			"sha256": "ca1c685f5a508492633b535dc83b3d1bc910225f63a38054021503830737cfc0"
+		},
+		{
+			"path": "exports/snaky-white-2048.png",
+			"bytes": 2767809,
+			"sha256": "594062856bbb81723f3bbc04a1c3f75fb1f3989bf770231d26b2a8a9996001fe"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 793791,
+			"sha256": "1c7f6ba8df8d045fcc44fb3963305a7524369b515336ca22606b18ae900c3897"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 798170,
+			"sha256": "1de1d58df05c97b60ec5282a9ca3696b732392eea67baf47b25f4da7a1c23b5f"
+		}
+	]
+}

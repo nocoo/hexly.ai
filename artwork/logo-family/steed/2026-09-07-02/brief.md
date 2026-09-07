@@ -1,0 +1,7 @@
+# Steed — a visitor beyond the mane
+
+The first generated horse has the right natural chestnut identity, gentle expression, clear ivory blaze, and connected drawing. Its bird overlaps the mane entirely, so it does not yet create the required interest point in negative space. The top ear clearance is also too tight. Preserve the first native response as rejected history; no extraction or adoption was performed on it.
+
+Use that horse as the primary directional reference and correct the relationship: the tiny colorful bird has just alighted at the outside edge of the mane, close to the cheek, with most of its body and tail extending into adjacent white space. Keep one small coherent bird accent and no other colorful decoration. An 85 mm portrait metaphor guides a slightly wider decisive moment; the model chooses the exact pose, overlap, and camera without coordinate constraints. Retain a head close-up and natural unseen quadruped anatomy. A strong neck/withers can leave the lower square naturally; complete ears and the visitor need generous room.
+
+Source mode remains `isolated-white`, native 2048 square, high quality, Azure `gpt-image-2`. The final teal canter-pleat field is composed independently. The same explicit owner waiver covers this named batch; record exact agent inspection and do not claim owner review. Complete individual review pages, all sizes, source assets/README, provenance, and publication after acceptance.

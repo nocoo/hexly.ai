@@ -1,0 +1,128 @@
+{
+	"project": "surety",
+	"study": "2026-09-07-01",
+	"finishing": "01",
+	"masters": {
+		"logo.png": {
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "587a4c30fd62c32927fc51b03911ad3dd287de18e3e1731ca05d8eb841c68c54",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "0ba3d464cf5672cf97d5e3c58f3df959b4b938fc0a1e8fb4c09552b32526aa4d",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"sha256": "0ba3d464cf5672cf97d5e3c58f3df959b4b938fc0a1e8fb4c09552b32526aa4d",
+		"width": 128
+	},
+	"transparentPngs": [
+		{
+			"path": "apps/web/public/logo-24.png",
+			"size": 24,
+			"sha256": "67341459677d816a6bc663418f05b32ce47a2a4db5deb0454c529343f753398c",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 210,
+			"opaquePixels": 150
+		},
+		{
+			"path": "apps/web/public/logo-80.png",
+			"size": 80,
+			"sha256": "91ee0c1ab2edf6d5dbd7a07c64853616a622e84b5fe9bc7e6a3e40828e07927c",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 3282,
+			"opaquePixels": 2328
+		},
+		{
+			"path": "apps/web/public/logo-256.png",
+			"size": 256,
+			"sha256": "5d24317bef4e1b63cfb7644c817f9201e22b4828743fe57b29cd52d4b6e0a2ea",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 36357,
+			"opaquePixels": 26388
+		},
+		{
+			"path": "apps/web/public/favicon.png",
+			"size": 32,
+			"sha256": "cc9dac7c9d17f9f311141bf8d1e4a08f08ecb15220c6d76da512f0688ca21589",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 438,
+			"opaquePixels": 293
+		},
+		{
+			"path": "apps/worker/static/logo-24.png",
+			"size": 24,
+			"sha256": "67341459677d816a6bc663418f05b32ce47a2a4db5deb0454c529343f753398c",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 210,
+			"opaquePixels": 150
+		},
+		{
+			"path": "apps/worker/static/logo-80.png",
+			"size": 80,
+			"sha256": "91ee0c1ab2edf6d5dbd7a07c64853616a622e84b5fe9bc7e6a3e40828e07927c",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 3282,
+			"opaquePixels": 2328
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "apps/web/public/favicon.ico",
+			"size": [16, 16],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 79
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"size": [32, 32],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 438
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"size": [48, 48],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 1084
+		},
+		{
+			"path": "apps/worker/static/favicon.ico",
+			"size": [16, 16],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 79
+		},
+		{
+			"path": "apps/worker/static/favicon.ico",
+			"size": [32, 32],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 438
+		},
+		{
+			"path": "apps/worker/static/favicon.ico",
+			"size": [48, 48],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 1084
+		}
+	],
+	"touch": {
+		"path": "apps/web/public/apple-touch-icon.png",
+		"size": [180, 180],
+		"opaqueSquare": true,
+		"sha256": "4669f8b180561cce8d4aca7673b7d582a7ecd06f006b6ba7cb44a8cc48b6a739"
+	},
+	"social": {
+		"path": "apps/web/public/og-image.png",
+		"size": [1200, 630],
+		"source": "assets/brand/icon-rounded.png",
+		"sha256": "5e9314f263447db0c6e6fb6a4e5defde0dfde1c8753b95c12dce297f2adc5d51"
+	}
+}

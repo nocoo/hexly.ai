@@ -1,0 +1,72 @@
+{
+	"project": "steed",
+	"study": "2026-09-07-02",
+	"finishing": "01",
+	"masters": {
+		"logo.png": {
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "2e9ca2540081fb4f35f5014fb1afe4be2c8a0877ad7715878f25f5bc58264999",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "44930bc4657e030cc302e6334ec5f0eef4c8ebab7a4c6b111392d78f44c541f7",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"sha256": "44930bc4657e030cc302e6334ec5f0eef4c8ebab7a4c6b111392d78f44c541f7",
+		"width": 128
+	},
+	"transparentPngs": [
+		{
+			"path": "apps/web/public/logo-24.png",
+			"size": 24,
+			"sha256": "37e05a244608b19acf1956a08295b0c2ba601335b4db27815ce26b7c4dba0955",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 255,
+			"opaquePixels": 134
+		},
+		{
+			"path": "apps/web/public/logo-80.png",
+			"size": 80,
+			"sha256": "9aa18c2f25c9fa3dc04042808e4037c75af76b0fd0a5d7c30cb568bd4ca91f4b",
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 3556,
+			"opaquePixels": 2101
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "apps/web/public/favicon.ico",
+			"size": [16, 16],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 94
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"size": [32, 32],
+			"exactWholeMasterResize": true,
+			"zeroAlphaPixels": 494
+		}
+	],
+	"touch": {
+		"path": "apps/web/public/apple-touch-icon.png",
+		"size": [180, 180],
+		"opaqueSquare": true,
+		"sha256": "42e1080c17e9864b0c9fe76c4c54a3ef069334fc9ecd6756a64936a70e20792e"
+	},
+	"social": {
+		"path": "apps/web/public/og-image.png",
+		"size": [1200, 630],
+		"source": "assets/brand/icon-rounded.png",
+		"sha256": "c0b7bbed8fff9efc3799f1468b01553d2915620c1450d3c35245e52918db1eae"
+	}
+}

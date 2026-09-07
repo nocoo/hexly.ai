@@ -1,0 +1,88 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels inside named anatomical regions; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Honey coat",
+				"zh": "蜜金皮毛"
+			},
+			"role": "primary",
+			"color": "#e6a328",
+			"pixel": [1396, 1263],
+			"rgb": [230, 163, 40],
+			"sourceSha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603"
+		},
+		{
+			"label": {
+				"en": "Chestnut patches",
+				"zh": "栗棕斑纹"
+			},
+			"role": "accent",
+			"color": "#884812",
+			"pixel": [260, 1830],
+			"rgb": [136, 72, 18],
+			"sourceSha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603"
+		},
+		{
+			"label": {
+				"en": "Cream planes",
+				"zh": "奶油色面"
+			},
+			"role": "accent",
+			"color": "#f3d49e",
+			"pixel": [957, 923],
+			"rgb": [243, 212, 158],
+			"sourceSha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603"
+		},
+		{
+			"label": {
+				"en": "Olive leaves",
+				"zh": "橄榄叶色"
+			},
+			"role": "accent",
+			"color": "#828731",
+			"pixel": [1649, 1388],
+			"rgb": [130, 135, 49],
+			"sourceSha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603"
+		},
+		{
+			"label": {
+				"en": "Coral leaf",
+				"zh": "珊瑚色叶片"
+			},
+			"role": "accent",
+			"color": "#c76036",
+			"pixel": [1648, 1477],
+			"rgb": [199, 96, 54],
+			"sourceSha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603"
+		}
+	],
+	"presentation": {
+		"base": "#79865b",
+		"light": "#b9c398",
+		"shade": "#4b5c39",
+		"motif": "#354629",
+		"pattern": "Acacia canopy relief",
+		"status": "Selected in the owner-delegated five-project redesign batch."
+	},
+	"website": {
+		"primary": "#598128",
+		"background": "#eeeff2",
+		"theme": {
+			"primary": {
+				"value": "87 53% 33%",
+				"source": "src/client/index.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "@nocoo/basalt/styles tokens --basalt-background"
+			}
+		},
+		"note": "Existing product UI colors are independent of native artwork and the designed presentation."
+	}
+}

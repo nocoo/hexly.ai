@@ -1,0 +1,85 @@
+{
+	"project": "gaga",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#b38c77",
+		"light": "#ecd1ac",
+		"shade": "#805c52",
+		"motif": "#614437",
+		"grainAmplitude": 1,
+		"grainSeed": 6090795,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Playroom folds",
+			"description": "Playroom folds: rounded offset paper-block impressions, broad shallow corners and one open curved fold on a muted peach field.",
+			"layers": [
+				{
+					"d": "M-64 53H180Q218 53 218 91V239Q218 277 180 277H-64V239H153Q178 239 178 214V114Q178 94 153 94H-64Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-67 283H182Q224 283 224 241V88Q224 47 182 47",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M647-75H874Q915-75 915-34V176Q915 217 874 217H744V178H850Q875 178 875 153V-7Q875-34 849-34H647Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M754 1106V893Q754 851 796 851H1103V890H824Q797 890 797 916V1106Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M746 1105V891Q746 843 794 843H1105",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-104 574C88 434 267 523 260 684C255 811 85 841 142 1053",
+					"tone": "ribbon",
+					"strokeWidth": 48
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/gaga.svg",
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+	}
+}

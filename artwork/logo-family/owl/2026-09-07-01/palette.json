@@ -1,0 +1,86 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels inside named anatomical regions; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Tawny feathers",
+				"zh": "灰褐羽毛"
+			},
+			"role": "primary",
+			"color": "#93816a",
+			"pixel": [1030, 752],
+			"rgb": [147, 129, 106],
+			"sourceSha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043"
+		},
+		{
+			"label": {
+				"en": "Cream face",
+				"zh": "奶油面盘"
+			},
+			"role": "accent",
+			"color": "#e5cfab",
+			"pixel": [1214, 844],
+			"rgb": [229, 207, 171],
+			"sourceSha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043"
+		},
+		{
+			"label": {
+				"en": "Amber iris",
+				"zh": "琥珀眼睛"
+			},
+			"role": "accent",
+			"color": "#cd8523",
+			"pixel": [1005, 598],
+			"rgb": [205, 133, 35],
+			"sourceSha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043"
+		},
+		{
+			"label": {
+				"en": "Feather coral",
+				"zh": "羽毛珊瑚色"
+			},
+			"role": "accent",
+			"color": "#dc8470",
+			"pixel": [1329, 979],
+			"rgb": [220, 132, 112],
+			"sourceSha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043"
+		},
+		{
+			"label": {
+				"en": "Feather plum",
+				"zh": "羽毛梅紫色"
+			},
+			"role": "accent",
+			"color": "#844c6e",
+			"pixel": [1691, 931],
+			"rgb": [132, 76, 110],
+			"sourceSha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043"
+		}
+	],
+	"presentation": {
+		"base": "#5f6684",
+		"light": "#a8aec5",
+		"shade": "#363c55",
+		"motif": "#262a43",
+		"pattern": "Night aperture relief",
+		"status": "Selected in the owner-delegated five-project redesign batch."
+	},
+	"website": {
+		"primary": null,
+		"background": null,
+		"theme": {},
+		"nativeStatusColors": {
+			"green": "#3aa17c",
+			"amber": "#cb9d46",
+			"red": "#e47567",
+			"purple": "#5f4487"
+		},
+		"source": "Sources/OwlCore/UI/OwlTheme.swift: OwlPalette; native system material and semantic text colors.",
+		"note": "There is no fixed global website primary/background. Four semantic status colors are retained; the catalogue foreground colors are sampled from the new artwork."
+	}
+}

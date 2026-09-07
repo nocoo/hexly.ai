@@ -1,0 +1,388 @@
+{
+	"createdAt": "2026-09-07T02:47:46.687Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "ellie",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#537b93",
+			"light": "#a9c5cf",
+			"shade": "#2c4c65",
+			"motif": "#19374f",
+			"grainAmplitude": 1,
+			"grainSeed": 609081,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Mineral listening folds",
+				"description": "Large unequal mineral panels meet at open diagonal folds. Long angular seams gather above the elephant while a broad counterfold remains at lower right; the field is clean and spacious rather than tessellated noise.",
+				"layers": [
+					{
+						"d": "M-120 539L318-106L501-106L57 510Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-85 546L510-107",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M194-102L580 323L858 111L1134 263L1134 74L871-77L591 136L377-102Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M585 321L861 109L1122 255",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M628 1120L799 903L1110 827L1110 959L885 1008L802 1120Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M621 1110L790 887L1111 813",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-94 750L208 689L72 1088L-93 1088Z",
+						"tone": "ribbon"
+					}
+				]
+			},
+			"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+		},
+		"shadows": [
+			{
+				"color": [
+					29,
+					31,
+					35
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					23,
+					26,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				0,
+				260
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Uniform 90% placement with a downward offset moves the native lower neck crop through the bottom viewfinder boundary. The broad ear, natural face, curled trunk, tusk, and complete airplane retain their exact relative proportions. No anatomy extension or repeated edge pixels."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/ellie.png",
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				250,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1852553,
+		"foregroundPixels": 2341751,
+		"softEdgePixels": 11860,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 51,
+			"top": 251,
+			"right": 1978,
+			"bottom": 1932
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			0,
+			260
+		],
+		"bounds": {
+			"left": 148,
+			"top": 588,
+			"right": 1882,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -46.51713037306325,
+		"clippedPixels": 3777
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2775,
+			"sha256": "1730f9e4a9a28a3c2077dd242b67d758c74a38a9998e43963384d759223e5f19"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1532,
+			"sha256": "5f0db771f821f8eca7bce64d7917634a271fd135d27fe2a725b292f0980410c3"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3099602,
+			"sha256": "a5f6ac91ca13710b9d0768e4ccdfe61f4c1eab69af7efa847f8eed44ab1d3cd4"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 69511,
+			"sha256": "26451a415ef0bef2c2a4a381b999ad4c4a4e4681acdafd8ae09dd32da2244d39"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1055,
+			"sha256": "8158d8ace9c0cfd029d4b059778133984d9839cd753d2ca4a56a795821daa2b9"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2560084,
+			"sha256": "3a4da7c6d6dd5a858f34203b4e4c4f3f6d9368ded1f6673aa159d34bbb308a6a"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 86082,
+			"sha256": "ef43a779e306d38fa152f15b6111d44a42aaa446891a5af3aacc3d1d55e10790"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 158496,
+			"sha256": "9c83d6ddf4c2f933f65625ad0f4bd4a57c34928b1077ed8f5cdc0b1c8abb09f6"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 120599,
+			"sha256": "efb9dcfbe09b63f82c8b8ecb338cc9f76d85ed16f225759db7cf7adbf57782e7"
+		},
+		{
+			"path": "exports/ellie-transparent-2048.png",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+		},
+		{
+			"path": "exports/ellie-icon-2048.png",
+			"bytes": 4475532,
+			"sha256": "2b9d33da5dbab34e5bb8b1066337fca856afb6a6a1d1702d7477abd644bc512b"
+		},
+		{
+			"path": "exports/ellie-rounded-2048.png",
+			"bytes": 4366050,
+			"sha256": "599c9514a88347562b961386b35e5a9b6fe2fbeca49c885feb8d0bb071cdb8cd"
+		},
+		{
+			"path": "exports/ellie-transparent-1024.png",
+			"bytes": 780970,
+			"sha256": "5eb277ee3734f209132451e391c4af6860958ae13e20bca54c277aa67b3beeb0"
+		},
+		{
+			"path": "exports/ellie-icon-1024.png",
+			"bytes": 1209547,
+			"sha256": "f95a73883b06ffb8dcfa46f3e9845f4804f93aff46cdea0ea2ff5d211a1ce7a7"
+		},
+		{
+			"path": "exports/ellie-rounded-1024.png",
+			"bytes": 1197052,
+			"sha256": "76f9211cce83488a4970082f8b8d4593b6777e2cc06640e3ddf65991ed2bb953"
+		},
+		{
+			"path": "exports/ellie-transparent-512.png",
+			"bytes": 245919,
+			"sha256": "49ea2fac7790b6f86477a77dff0f5317351f9fcfbe7953978f8ae1810a7206ed"
+		},
+		{
+			"path": "exports/ellie-icon-512.png",
+			"bytes": 382479,
+			"sha256": "d4f9e0886c79f97e6282b6611d94e53134fcae7e432d6bf1a601006bf8998e5f"
+		},
+		{
+			"path": "exports/ellie-rounded-512.png",
+			"bytes": 380508,
+			"sha256": "e21fd06b29a512cb0dbe0fc5f7817e256baf7824b870711c28ae65091428b8ed"
+		},
+		{
+			"path": "exports/ellie-transparent-256.png",
+			"bytes": 78252,
+			"sha256": "ace6ba75a6d60725660361d9ad53e20f5a9aaee4e333d393676595be41b86142"
+		},
+		{
+			"path": "exports/ellie-icon-256.png",
+			"bytes": 105829,
+			"sha256": "01d0cf3553602ba1424b316fbd13f7f38e2f1cf7d6467a658a1f47045a858a86"
+		},
+		{
+			"path": "exports/ellie-rounded-256.png",
+			"bytes": 108086,
+			"sha256": "57f0771996d1b884602cd5062bd20d6ef23431d76f37a7979aeedf844e1c8a5c"
+		},
+		{
+			"path": "exports/ellie-transparent-128.png",
+			"bytes": 23561,
+			"sha256": "380ae37ab97d5e51946ab6849753519392f60bc7d4daa457a04fff1d766aa781"
+		},
+		{
+			"path": "exports/ellie-icon-128.png",
+			"bytes": 33528,
+			"sha256": "c25c35d3b407eb7d21b7a942a020556cff1be355a360c8caf62d5c997d6daa87"
+		},
+		{
+			"path": "exports/ellie-rounded-128.png",
+			"bytes": 34601,
+			"sha256": "908658c02c58c0751117e5c5c3638041f22146acffdf5f6ed1166dd98bf6f748"
+		},
+		{
+			"path": "exports/ellie-transparent-64.png",
+			"bytes": 7058,
+			"sha256": "7dc9931e9bf95e3574467dd426f84e797c10c7b411d9481eca1959e1befc7d0f"
+		},
+		{
+			"path": "exports/ellie-icon-64.png",
+			"bytes": 10645,
+			"sha256": "7ae1e2237671adaf772ba31b8af5e48e292155df18e8a59f95c57e697f1062f1"
+		},
+		{
+			"path": "exports/ellie-rounded-64.png",
+			"bytes": 11037,
+			"sha256": "d3d9d59f78d96c6256497839a06d6c0e29062f0ff5a10576a9ad1bf31358547c"
+		},
+		{
+			"path": "exports/ellie-transparent-48.png",
+			"bytes": 4329,
+			"sha256": "0fc0290dec7613fe4d67cd4ec32053e8ee3fc0ddb9f63b2997626e664f024572"
+		},
+		{
+			"path": "exports/ellie-icon-48.png",
+			"bytes": 6355,
+			"sha256": "8016fbbdc84a8385f9b112d2ab1163a5e06ae8e4ace44b470c5287e9030b4624"
+		},
+		{
+			"path": "exports/ellie-rounded-48.png",
+			"bytes": 6661,
+			"sha256": "736bf4022df6fcfbbbf0273b0839515aba7b98e8154e42c7baabaa43e813b7f8"
+		},
+		{
+			"path": "exports/ellie-transparent-32.png",
+			"bytes": 2217,
+			"sha256": "1b4b0e349303752bad604c867d4e2ee1ab67047775933e37ccc3698689a12651"
+		},
+		{
+			"path": "exports/ellie-icon-32.png",
+			"bytes": 3171,
+			"sha256": "973413d5f4d236b7c2ca4163ab61ba4cb4515090d8fe1b6902ff6ee6b52cdc49"
+		},
+		{
+			"path": "exports/ellie-rounded-32.png",
+			"bytes": 3283,
+			"sha256": "ccc76c2e087ee10cb999c6ff049268adea9b20c891a3eb059e41bad666ded11a"
+		},
+		{
+			"path": "exports/ellie-transparent-24.png",
+			"bytes": 1412,
+			"sha256": "917d2e972f27ac14dfef9734b875c8309d83c715e09a2ee2a87714de2a1217ad"
+		},
+		{
+			"path": "exports/ellie-icon-24.png",
+			"bytes": 1909,
+			"sha256": "9bea95d3d945f7e3ca244880cdbbd327907ba89d33b214619eca95303f6c230d"
+		},
+		{
+			"path": "exports/ellie-rounded-24.png",
+			"bytes": 2015,
+			"sha256": "228dc2fc434f0af7bb09387445b5ef4099861f81ee3496e37a4ee734d87fd59a"
+		},
+		{
+			"path": "exports/ellie-transparent-16.png",
+			"bytes": 765,
+			"sha256": "d36d8583cd91d84baa193f010818599e92e626e924cbe24228891082ab942943"
+		},
+		{
+			"path": "exports/ellie-icon-16.png",
+			"bytes": 935,
+			"sha256": "7c56b56503614e9e5b262cbedc81303617170001165b579cc305bcdda477975a"
+		},
+		{
+			"path": "exports/ellie-rounded-16.png",
+			"bytes": 971,
+			"sha256": "a2e2db3cb80040c0e7bcc7dc5cc7eb4dc661eaf6b347444a64d6a64480b64302"
+		},
+		{
+			"path": "exports/ellie-white-2048.png",
+			"bytes": 2520937,
+			"sha256": "26265552f83dcc7d7a9e8fedc1927c393db91df64b5d43c321993acf1a10475e"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 747279,
+			"sha256": "7b99a83206589f9a39a2d9baa19b979c7ec9e3027780f4a3014f4de5a38f83ac"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 745956,
+			"sha256": "2e2d69490ad1b7e7c1eb1678933ee743e4cbf86b9c404ebbaa71011fea98085f"
+		}
+	]
+}
