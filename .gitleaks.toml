@@ -2,11 +2,15 @@
 useDefault = true
 
 [allowlist]
-description = "Installed dependencies and generated build/test artifacts"
+description = "Generated artifacts and an independently verified stylesheet checksum"
 paths = [
   '''(^|/)node_modules/''',
   '''(^|/)dist/''',
   '''(^|/)coverage/''',
   '''(^|/)\.wrangler/''',
   '''(^|/)\.test-results/''',
+]
+regexTarget = "line"
+regexes = [
+  '''^\s*"packages/basalt/src/styles/tokens\.css":\s*"fce5aac6e37046de963a65e29b99442327ebb3abe86da3a8677350ed939bfee4",?\s*$''',
 ]
