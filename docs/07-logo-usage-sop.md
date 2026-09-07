@@ -65,3 +65,18 @@ These nine identities retain the existing animals and add independent background
 The [batch audit](../artwork/logo-family/audits/2026-09-07-retained/) verifies all nine native sources and presentation masters, 35 transparent PNG sizes, all favicon ICO resolutions, macOS inset PNGs/ICNS, opaque touch icons, and Android foreground safe regions. Each study's `adoption.json` links its exact source commit and usage guide. Push and CI results are recorded in the separate publication report.
 
 For a retained original, preserve the old normalized backup filename. Record its source authorization with `source-review.json` and deliver a presentation brief in place of a generation prompt. Complete matching before/after pages and the Refined badge even when the foreground does not change. Keep native 900/920 px sources at those dimensions and disclose any larger upscales. Platform-specific insets belong to derivatives, never to the canonical source.
+
+## Viewfinder framing repairs — 2026-09-07
+
+The current Wooly and Noheir identities supersede their earlier retained-original presentations. Raven and Life.ai now also carry Refined identities adopted in their source projects. The owner authorized generation, source replacement, README synchronization, and push for all four.
+
+| Project | Source commit | Selected study / pass | Consumer roles | Individual page |
+| --- | --- | --- | --- | --- |
+| Wooly | [`e516e1fbcb`](https://github.com/nocoo/wooly/commit/e516e1fbcbd146fcda6b80cf071bd5367e611afd) | `2026-09-07-02 / 01` | Transparent Logo component and browser marks; square touch; rounded README/social | [Review](https://hexly.ai/logos/wooly) |
+| Noheir | [`5e32426a60`](https://github.com/nocoo/noheir/commit/5e32426a6044436eee5c6b2894910666896a8b49) | `2026-09-07-02 / 02` | Transparent sidebar/login/browser; square touch/install; rounded README/social | [Review](https://hexly.ai/logos/noheir) |
+| Raven | [`c59fe3ad5a`](https://github.com/nocoo/raven/commit/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf) | `2026-09-07-04 / 02` | Transparent dashboard/sidebar/login/browser; square touch; rounded README/social | [Review](https://hexly.ai/logos/raven) |
+| Life.ai | [`b6f3e7f426`](https://github.com/nocoo/life.ai/commit/b6f3e7f426315062e0492e00c4d9448bfa3b8031) | `2026-09-07-01 / 02` | Transparent sidebar/login/browser, including the 192 px login asset; square touch; rounded README/social | [Review](https://hexly.ai/logos/life-ai) |
+
+Each source stores exact transparent/square/rounded masters and a brand usage guide. PNGs and both 16/32 ICO entries are verified against the selected transparent master. Large README/social presentations use their backgrounds. Life.ai’s former login circle and white filter are removed; its 192 px login image remains transparent because it is a UI mark rather than a PWA asset.
+
+See [the batch audit](../artwork/logo-family/audits/2026-09-07-framing/) and each study’s `adoption.json` for immutable source revisions, master hashes, round-corner measurements, browser captures, and publication evidence. Earlier originals, public archive roots, raw generations, and diagnostic passes remain preserved.

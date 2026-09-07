@@ -1,0 +1,90 @@
+{
+	"project": "life-ai",
+	"study": "2026-09-07-01",
+	"finishing": "02",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "36f5a83c65868f88669bd52dcf2983ae875a39eb1990cebcf3eea3f16b662509",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "c96ac0910c491e515bf7dfa674d9b38f8fe6339a5db6747190502ae94333015a",
+			"exactSelectedMaster": true
+		}
+	],
+	"smallPngs": [
+		{
+			"path": "dashboard/public/logo-24.png",
+			"size": 24,
+			"transparentPixels": 221,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "169438bc2db19761c473365f98e615860893d4725428bbf4e8be03a9d62ba44e"
+		},
+		{
+			"path": "dashboard/public/logo-80.png",
+			"size": 80,
+			"transparentPixels": 3154,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "6a0cbec6e1df3ca9175d01d8bd6c42c9b7b5fb9972138a10360e2e663439a083"
+		},
+		{
+			"path": "dashboard/public/logo-192.png",
+			"size": 192,
+			"transparentPixels": 19301,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "f0561c9ab640d6c7b1a040c6519e4b590d808a0f5162fe9f1ee1d5c555eac36b"
+		},
+		{
+			"path": "dashboard/src/app/icon.png",
+			"size": 32,
+			"transparentPixels": 432,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "255cabbf3a0aac720182c7635c773b0e063632592019adaec557bae9bac2bdf2"
+		}
+	],
+	"favicon": {
+		"path": "dashboard/src/app/favicon.ico",
+		"sha256": "0ee8bc93991f54b16a4d622ed6bce19275b8c7a3c315b0e1268d31f775cd4b2e",
+		"entries": [
+			{
+				"size": 16,
+				"transparentPixels": 82,
+				"matchesTransparentMasterResize": true
+			},
+			{
+				"size": 32,
+				"transparentPixels": 432,
+				"matchesTransparentMasterResize": true
+			}
+		]
+	},
+	"touch": {
+		"path": "dashboard/src/app/apple-icon.png",
+		"size": 180,
+		"squarePresentation": true,
+		"opaque": true
+	},
+	"installed": [],
+	"social": {
+		"path": "dashboard/src/app/opengraph-image.png",
+		"size": [1200, 630],
+		"opaque": true,
+		"source": "assets/brand/icon-rounded.png"
+	},
+	"readme": {
+		"path": "README.md",
+		"target": "assets/brand/icon-rounded.png"
+	},
+	"status": "Source assets installed and verified; commit, push, and browser evidence recorded separately."
+}
