@@ -1,0 +1,385 @@
+{
+	"createdAt": "2026-09-07T03:31:46.090Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "eeca4aa68c5ff5ee36a6a58d377796412acb1aeeba29225693d315c6b3f64b36",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "otter",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#648691",
+			"light": "#bdccc5",
+			"shade": "#355569",
+			"motif": "#243e50",
+			"grainAmplitude": 1,
+			"grainSeed": 6090799,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Riverbank sweeps",
+				"description": "Riverbank sweeps: two broad offset eddy-shaped sweeps and a low bank contour on a muted blue-gray river field, with open flowing geometry rather than concentric circles.",
+				"layers": [
+					{
+						"d": "M-90 33C216 127 393-51 642 35C745 71 816 181 739 265C636 378 503 290 544 218C574 166 643 204 619 238",
+						"tone": "motif",
+						"strokeWidth": 40
+					},
+					{
+						"d": "M-91 59C209 153 399-20 631 61C712 89 780 177 716 246C635 333 535 277 567 231",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M1124 472C868 512 1017 685 832 700C630 716 615 920 781 995C880 1039 1035 1011 1125 1100",
+						"tone": "ribbon",
+						"strokeWidth": 66
+					},
+					{
+						"d": "M1127 434C813 482 988 650 829 664C581 687 575 939 765 1030",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-93 876C71 852 129 1032 383 1024L388 1122H-91Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-91 871C72 845 135 1025 387 1017",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/otter.png",
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2544250,
+		"foregroundPixels": 1650054,
+		"softEdgePixels": 9438,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 386,
+			"top": 155,
+			"right": 1746,
+			"bottom": 1882
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 437,
+			"top": 224,
+			"right": 1688,
+			"bottom": 1814
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 224.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2803,
+			"sha256": "9e43ae542c32bba1e1cead726998a7f5d3cc3eef5b8da42db7e4b82984ff3bf5"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 2044,
+			"sha256": "b3bdeb9dca1fd317ebd0f13748c621bd1c08fdb1cc523632775ff783e90d3fea"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3303642,
+			"sha256": "1c3a2ca8b411226c4b2308ffdb0750d596785c7d8886e395fd91a6e7505e9cc5"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 57990,
+			"sha256": "eec9ae8b4d621fe25ca8393a9aeabda66c02963c78fdde2a5870988120925814"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1217,
+			"sha256": "7ceda3ba7fafd7d0e0d98cb508504109ae41fac789754df25fb82a16cb89aeea"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2562924,
+			"sha256": "90a58416834bf11cc8a093ecc2ebaea714881a4a12d4baa15e5490c7b496c2e2"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2942832,
+			"sha256": "05513a44b72dc0144e1179b8a6fbde0796d96634cf5e972abd7ca3fedcbf3e35"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 78050,
+			"sha256": "01ccd37a7fe72465640cd816eab89500b3ff68d7ad290f2b516c43f8f9293cf6"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 145030,
+			"sha256": "bf96b6084272c3594350ffb35bdf134b2e4421de08a776db1ed845baafdbeb54"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 109695,
+			"sha256": "a1f81ae92cf380e96f81fefea6e83c96bf6054a0639d7acc8701c35e0595648d"
+		},
+		{
+			"path": "exports/otter-transparent-2048.png",
+			"bytes": 2942832,
+			"sha256": "05513a44b72dc0144e1179b8a6fbde0796d96634cf5e972abd7ca3fedcbf3e35"
+		},
+		{
+			"path": "exports/otter-icon-2048.png",
+			"bytes": 5026863,
+			"sha256": "cb3731cfbdd8eec5e4d4eb56760c7b4977b9e1c3306da834ddbed5e6cd69a954"
+		},
+		{
+			"path": "exports/otter-rounded-2048.png",
+			"bytes": 4921655,
+			"sha256": "0b802302518eff4b75f80bbd5178e419970c153a8f67f2cf51f3610565451747"
+		},
+		{
+			"path": "exports/otter-transparent-1024.png",
+			"bytes": 782709,
+			"sha256": "4bdb8ca7281b7ee15afdb206863a31ade17237a4216a01b7e796e251e0f25d78"
+		},
+		{
+			"path": "exports/otter-icon-1024.png",
+			"bytes": 1289524,
+			"sha256": "25a3a6cd7201d9018732148e05920d96bf1ad49a41d5b93b564731f66fee82a6"
+		},
+		{
+			"path": "exports/otter-rounded-1024.png",
+			"bytes": 1277671,
+			"sha256": "05ecff7eae005a8a2df9c348aae006b0b0fa01301df8435ec7763e2749937bf9"
+		},
+		{
+			"path": "exports/otter-transparent-512.png",
+			"bytes": 226914,
+			"sha256": "843e84f6831c36a8ced23d8bc0ac32faa92863ed0b88acb770ac52a36965dc2d"
+		},
+		{
+			"path": "exports/otter-icon-512.png",
+			"bytes": 392207,
+			"sha256": "b928a5cb70419b2708447856c0f6b4c8d603db624335c3d0ec53a189228df2f7"
+		},
+		{
+			"path": "exports/otter-rounded-512.png",
+			"bytes": 390018,
+			"sha256": "9c89c2019a7520983e167a41a0260e63ab70df0e35054b7312cedaf673132bda"
+		},
+		{
+			"path": "exports/otter-transparent-256.png",
+			"bytes": 67346,
+			"sha256": "3491bbaaafd105e8d4db158c42e10a2ff5446f1066bc56232cd45473e1d0f124"
+		},
+		{
+			"path": "exports/otter-icon-256.png",
+			"bytes": 100235,
+			"sha256": "524547ee95096c676fe42c1f6688b845d418b673fc85ae173a66258b291a50e7"
+		},
+		{
+			"path": "exports/otter-rounded-256.png",
+			"bytes": 102356,
+			"sha256": "b8bc33d820cd54ad309584da1452136a01e3f0b4ada59993107502512b7a1479"
+		},
+		{
+			"path": "exports/otter-transparent-128.png",
+			"bytes": 19432,
+			"sha256": "4ed6b3a2316fb5a0683088edd17a681e6fe91c896ca62fa40c68eff776db5256"
+		},
+		{
+			"path": "exports/otter-icon-128.png",
+			"bytes": 30926,
+			"sha256": "adbb6a69354f69b9099d41bd8421e0873435981c2a23f977ca3b2958a518f8ae"
+		},
+		{
+			"path": "exports/otter-rounded-128.png",
+			"bytes": 32155,
+			"sha256": "9b0e594d0bf43b4cd654f942ec681bfeb818e95f2a26d6480f014c7b778ab06e"
+		},
+		{
+			"path": "exports/otter-transparent-64.png",
+			"bytes": 5732,
+			"sha256": "ff1e93096a03c3a984736b20d890eb8971d943b37d8969515b8f267ab404c243"
+		},
+		{
+			"path": "exports/otter-icon-64.png",
+			"bytes": 9899,
+			"sha256": "f8bbb0bdd9a6b0e6fd6fc8a7e3301970815ac8a38afb85e2ad9d8a5d9ce388f3"
+		},
+		{
+			"path": "exports/otter-rounded-64.png",
+			"bytes": 10383,
+			"sha256": "962c7ebdfcb921f097925fd4b607b7f9a1e6f725881fc05684863a26383436c0"
+		},
+		{
+			"path": "exports/otter-transparent-48.png",
+			"bytes": 3505,
+			"sha256": "8c268a1c7cb8fd9d85b8800ea3480b85dfcd1f640ad5083a368638680b2e19c7"
+		},
+		{
+			"path": "exports/otter-icon-48.png",
+			"bytes": 6006,
+			"sha256": "d33b22eab037999ecf0da079cf057e1329dde7ca18de27156f3f516edc14d903"
+		},
+		{
+			"path": "exports/otter-rounded-48.png",
+			"bytes": 6396,
+			"sha256": "ebf0168d100ce0fc48a04c801eae5a91fa546b12696c153d42aeb17dacb427f2"
+		},
+		{
+			"path": "exports/otter-transparent-32.png",
+			"bytes": 1860,
+			"sha256": "81846a99c77607bbbe38381583254550988d55d53459f7a9125ea287a8d117ad"
+		},
+		{
+			"path": "exports/otter-icon-32.png",
+			"bytes": 3150,
+			"sha256": "67bacdf7dfc9ecd0e9efefdfeec7d9ef7f1e6f42f32fdace49f50235d07fc54c"
+		},
+		{
+			"path": "exports/otter-rounded-32.png",
+			"bytes": 3315,
+			"sha256": "702436da4f09cffdb0bf9676cd9bacfbf68137f7af625afd203945a86dc64db8"
+		},
+		{
+			"path": "exports/otter-transparent-24.png",
+			"bytes": 1216,
+			"sha256": "ae405134914e89b2e885881b687cb1a22460b25fa799933c6c5fb3f3f5c7ed6d"
+		},
+		{
+			"path": "exports/otter-icon-24.png",
+			"bytes": 1889,
+			"sha256": "5ab0f303d15ec057280bdbbf0c223c9015b8913f3246b157af1b72e6bfd03c0c"
+		},
+		{
+			"path": "exports/otter-rounded-24.png",
+			"bytes": 2029,
+			"sha256": "1f162f9bb18eb30d7f35262abb4173da4efb20aea928da2841b0fd82f43ab319"
+		},
+		{
+			"path": "exports/otter-transparent-16.png",
+			"bytes": 676,
+			"sha256": "d26f7c3de1a503303a928c522872f3e70f8f89d20f50fd39549bd88a063a7b52"
+		},
+		{
+			"path": "exports/otter-icon-16.png",
+			"bytes": 946,
+			"sha256": "4213a6025f72f26d785100280726125ac0dcc0df4ee8e9400a6c27a69b1674b9"
+		},
+		{
+			"path": "exports/otter-rounded-16.png",
+			"bytes": 993,
+			"sha256": "522ebc624ce4e628c24c03fc68fa6b42e6e0e6b86b54def19443a87004d3f028"
+		},
+		{
+			"path": "exports/otter-white-2048.png",
+			"bytes": 2769166,
+			"sha256": "104bfadb76ae185e3a7b7ce38a5b191c50dce5e1acd380fd714a6f25801a80eb"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 755298,
+			"sha256": "16cb178e00f411ee3037b9feb3a940c0143c311f016d63a52b951762358e0148"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 742703,
+			"sha256": "cff0a1d9405d0adf958c0e4462084df023faeac833d9e8ceeaa68e0fa8c44981"
+		}
+	]
+}

@@ -1,0 +1,162 @@
+{
+	"project": "codo",
+	"study": "2026-09-07-01",
+	"finishing": "01",
+	"masters": {
+		"logo.png": {
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "7468b1cefd8e6483759a5e9b31f34c7ed0243f8d021fda097d8f03be96f500ff",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "c1a2ff439774e7702fc1d798f744ad0e9797da1b4a72cd601ba689b83b34f745",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"width": 128
+	},
+	"transparentPngs": [],
+	"icoEntries": [],
+	"macOS": {
+		"canvas": "assets/brand/app-icon-macos.png",
+		"canvasSize": [1024, 1024],
+		"tileSize": [824, 824],
+		"inset": [100, 100],
+		"appIconEntries": [
+			{
+				"name": "icon_16x16.png",
+				"size": 16
+			},
+			{
+				"name": "icon_16x16@2x.png",
+				"size": 32
+			},
+			{
+				"name": "icon_32x32.png",
+				"size": 32
+			},
+			{
+				"name": "icon_32x32@2x.png",
+				"size": 64
+			},
+			{
+				"name": "icon_128x128.png",
+				"size": 128
+			},
+			{
+				"name": "icon_128x128@2x.png",
+				"size": 256
+			},
+			{
+				"name": "icon_256x256.png",
+				"size": 256
+			},
+			{
+				"name": "icon_256x256@2x.png",
+				"size": 512
+			},
+			{
+				"name": "icon_512x512.png",
+				"size": 512
+			},
+			{
+				"name": "icon_512x512@2x.png",
+				"size": 1024
+			}
+		],
+		"icnsEntries": [
+			{
+				"name": "icon_128x128.png",
+				"size": [128, 128],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_128x128@2x.png",
+				"size": [256, 256],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_16x16.png",
+				"size": [16, 16],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Native iconutil legacy small-entry edge RGB; exact alpha and opaque RGB verified."
+			},
+			{
+				"name": "icon_16x16@2x.png",
+				"size": [32, 32],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_256x256.png",
+				"size": [256, 256],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_256x256@2x.png",
+				"size": [512, 512],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_32x32.png",
+				"size": [32, 32],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Native iconutil legacy small-entry edge RGB; exact alpha and opaque RGB verified."
+			},
+			{
+				"name": "icon_32x32@2x.png",
+				"size": [64, 64],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_512x512.png",
+				"size": [512, 512],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			},
+			{
+				"name": "icon_512x512@2x.png",
+				"size": [1024, 1024],
+				"alphaExact": true,
+				"opaqueRgbExact": true,
+				"edgeEncoding": "Exact PNG pixels"
+			}
+		],
+		"bannerForeground": "Root transparent logo copied by scripts/build.sh to Resources/logo.png; displayed at 40 points without a mask.",
+		"newTemplates": [
+			{
+				"path": "Resources/menubar.png",
+				"size": 18,
+				"sourceAlphaExact": true
+			},
+			{
+				"path": "Resources/menubar@2x.png",
+				"size": 36,
+				"sourceAlphaExact": true
+			}
+		]
+	}
+}

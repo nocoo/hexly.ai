@@ -1,0 +1,16 @@
+# Otter — a small river treasure
+
+- Product: Keep your Mac development setup safe with snapshots, diffs, and cloud backups.
+- Species: a recognizable river otter with a broad whiskered muzzle, small ears and a tapering tail.
+- Moment: A river otter pauses in a relaxed, slightly reclined curl and brings one little shell toward the side of its muzzle with its natural forepaws. Its head turns to us as if briefly noticing the camera. A long smooth otter torso curves behind the face, the hind feet rest naturally below, and its tapering tail tucks alongside. Capture the attentive instant before it resumes investigating the shell.
+- Camera: An 80 mm small-animal portrait including the compact curled otter. Prioritize the broad whiskered muzzle, shell and natural paw relationship. A slight three-quarter turn and overlapping tail make the body readable without widening into a scene.
+- Palette: Chestnut, warm umber and soft brown dominate nearly the whole otter. Cream muzzle and throat, slightly lighter tawny cheeks, a dark nose and small clear dark eyes establish immediate species recognition. Keep the torso in broad related brown planes, with no pink, turquoise or purple body patches.
+- One external interest point: Exactly one small fan-shaped river shell held in its forepaws just beside the muzzle, extending beyond the body silhouette into nearby negative space. Its connected ridges carry turquoise, coral, muted violet and gold as a single compact color group. No fish, stars, hearts, water drops, extra shells or detached confetti.
+- Specific direction: The first reference is rejected because too many competing colored accents obscure recognition. Redesign a clear natural OTTER silhouette: small rounded ears, broad cream whisker pads, tapered tail, short forepaws, and an elongated but compact body. Avoid a bear cub, seal, beaver paddle tail, seated human torso, giant baby eyes or a grin with teeth. Simplify whiskers to a few solid fine facets that extract cleanly.
+- Drawing: connected flat irregular polygons, broad anatomical planes, smaller expressive facets.
+- Presentation proposal: Riverbank sweeps: two broad offset eddy-shaped sweeps and a low bank contour on a muted blue-gray river field, with open flowing geometry rather than concentric circles. Background, grain and contact shadows are composed independently after extraction; existing site colors stay separate.
+- Source: one high-quality native 2048 × 2048 Azure gpt-image-2 image on uniform pure white. No exterior emission, shadow, text, or tile.
+- Framing: a complete small animal with at least 128 native pixels of clearance against the final 23% rounded outline; exact uniform placement chosen after inspection. No stretched anatomy or circular clipping.
+- Reference order: Rejected historical context. Preserve only the animal named in the prompt; redesign the composition and colors. Frogie guides drawing; ref01/ref02 guide presentation only.
+- Authorization: exact owner batch waiver in authorization.json. Inspect each returned image and record delegated acceptance without claiming owner review.
+- Delivery: independent static/Vite pages, generation and finishing history, all sizes, source assets and README, palette, consumer evidence, catalogue/profile synchronization, Refined status, commits, pushes and verified deployment.

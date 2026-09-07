@@ -1,0 +1,115 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Biscuit",
+				"zh": "饼干色"
+			},
+			"role": "primary",
+			"color": "#c39c65",
+			"pixel": [1306, 1590],
+			"rgb": [195, 156, 101],
+			"sourceSha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7"
+		},
+		{
+			"label": {
+				"en": "Cream",
+				"zh": "奶油色"
+			},
+			"role": "accent",
+			"color": "#ecd3a5",
+			"pixel": [244, 1120],
+			"rgb": [236, 211, 165],
+			"sourceSha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7"
+		},
+		{
+			"label": {
+				"en": "Warm brown",
+				"zh": "暖棕色"
+			},
+			"role": "accent",
+			"color": "#997040",
+			"pixel": [582, 1759],
+			"rgb": [153, 112, 64],
+			"sourceSha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7"
+		},
+		{
+			"label": {
+				"en": "Carrot orange",
+				"zh": "胡萝卜橙"
+			},
+			"role": "accent",
+			"color": "#ed7520",
+			"pixel": [1867, 1632],
+			"rgb": [237, 117, 32],
+			"sourceSha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7"
+		},
+		{
+			"label": {
+				"en": "Leaf teal",
+				"zh": "叶片青色"
+			},
+			"role": "accent",
+			"color": "#418e8c",
+			"pixel": [1727, 1215],
+			"rgb": [65, 142, 140],
+			"sourceSha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7"
+		}
+	],
+	"presentation": {
+		"base": "#b38c77",
+		"light": "#ecd1ac",
+		"shade": "#805c52",
+		"motif": "#614437",
+		"pattern": "Playroom folds",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#4c5342",
+		"background": "#f3f0e8",
+		"theme": {
+			"primary": {
+				"value": "#4c5342",
+				"source": "src/style.css :root color"
+			},
+			"background": {
+				"value": "#f3f0e8",
+				"source": "src/style.css :root background"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#4c5342",
+				"role": "primary",
+				"source": "src/style.css :root color: #4c5342"
+			},
+			{
+				"color": "#f3f0e8",
+				"role": "background",
+				"source": "src/style.css :root background: #f3f0e8"
+			},
+			{
+				"color": "#e8ecd9",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#7b8b6a",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#a8b397",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Existing recorded product colors are separate from sampled artwork and the designed presentation."
+	}
+}

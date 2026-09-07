@@ -1,0 +1,383 @@
+{
+	"createdAt": "2026-09-07T03:31:38.873Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "cfe8aeeef77bb7503a05f588f0232de2ed0df2e343c2b46e43e23b644feb07b7",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "gaga",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#b38c77",
+			"light": "#ecd1ac",
+			"shade": "#805c52",
+			"motif": "#614437",
+			"grainAmplitude": 1,
+			"grainSeed": 6090795,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Playroom folds",
+				"description": "Playroom folds: rounded offset paper-block impressions, broad shallow corners and one open curved fold on a muted peach field.",
+				"layers": [
+					{
+						"d": "M-64 53H180Q218 53 218 91V239Q218 277 180 277H-64V239H153Q178 239 178 214V114Q178 94 153 94H-64Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-67 283H182Q224 283 224 241V88Q224 47 182 47",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M647-75H874Q915-75 915-34V176Q915 217 874 217H744V178H850Q875 178 875 153V-7Q875-34 849-34H647Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M754 1106V893Q754 851 796 851H1103V890H824Q797 890 797 916V1106Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M746 1105V891Q746 843 794 843H1105",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-104 574C88 434 267 523 260 684C255 811 85 841 142 1053",
+						"tone": "ribbon",
+						"strokeWidth": 48
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/gaga.svg",
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2682068,
+		"foregroundPixels": 1512236,
+		"softEdgePixels": 13561,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 211,
+			"top": 110,
+			"right": 1915,
+			"bottom": 1828
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 276,
+			"top": 183,
+			"right": 1843,
+			"bottom": 1764
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 183.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2694,
+			"sha256": "ba41cbbbb0c823af30403a1f5114e2ba8562bd6283d7f346bbed6b42c40c61a6"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1820,
+			"sha256": "4b36b16bc75bf55c74265a856e8bab1e666db444ff61d68d5988447673ed7fa9"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2553175,
+			"sha256": "975dc62140f2a16a08e265948463270f0610926d163060cdcf83e0a6afe3b8e6"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 78746,
+			"sha256": "27a216efc4ff0c28a6801362e5fc18d526debe378496b919609e97079bf6a1de"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1141,
+			"sha256": "9c07ec90551563c5671ae1a34f9953dcd1724d3e96decb32a5883815d973a243"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2452146,
+			"sha256": "2678b2c79a8c79c3e684308b65465b87c7d9d09a118840c42180ada0305dd9ab"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2357751,
+			"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 106801,
+			"sha256": "ef81d40885ca7884cb17d1daf5b27e1066a07867c5bcd5b791130ac384bafaea"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 184304,
+			"sha256": "5a8dfe8fcde0f0481c7e3114dcc0cb19617b5bd2d98bf8a298f5c405010e36fe"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 130412,
+			"sha256": "80fb92bbf84ddc3c4094ce6c0d6a5ae1b90888843abd6d758a6386615a76c4fa"
+		},
+		{
+			"path": "exports/gaga-transparent-2048.png",
+			"bytes": 2357751,
+			"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+		},
+		{
+			"path": "exports/gaga-icon-2048.png",
+			"bytes": 4427824,
+			"sha256": "31b3e11e13361cfc212148686bef79e26fcef9f0f942105fa7f82041953bcf43"
+		},
+		{
+			"path": "exports/gaga-rounded-2048.png",
+			"bytes": 4326744,
+			"sha256": "2af9d62d79838bed81e6deaaa338565a4524f552c1954b201a29de9281467dbd"
+		},
+		{
+			"path": "exports/gaga-transparent-1024.png",
+			"bytes": 663427,
+			"sha256": "f65713001c88b1980d56a7c7a0f0c5e74c03f2e5dc64e300eb53919ad467137e"
+		},
+		{
+			"path": "exports/gaga-icon-1024.png",
+			"bytes": 1158930,
+			"sha256": "384961986c585a502776d1dd38de2dced2d07ba584cd9298dca8d45389cdc87d"
+		},
+		{
+			"path": "exports/gaga-rounded-1024.png",
+			"bytes": 1149149,
+			"sha256": "48f91bbacac0ade55bbd4c86ed265ff62b1fdfc409eb5e310e7a79d3e315b404"
+		},
+		{
+			"path": "exports/gaga-transparent-512.png",
+			"bytes": 205024,
+			"sha256": "ed8d2b48b58f8a2831171a82a1cc5948d2cb51457b2415325ff6656b610901b8"
+		},
+		{
+			"path": "exports/gaga-icon-512.png",
+			"bytes": 364470,
+			"sha256": "a1c0162c6a16532acda09cd58df7aa515f47b2e385452435ffaac2f28f7644da"
+		},
+		{
+			"path": "exports/gaga-rounded-512.png",
+			"bytes": 363089,
+			"sha256": "f6960606989c6930072f9474003e8f8fea36fbc707af1fc56cf3f8bc98a80de7"
+		},
+		{
+			"path": "exports/gaga-transparent-256.png",
+			"bytes": 64494,
+			"sha256": "4d0b0aadc0d8fb83fd181684b8fcc7983c6d2edcf9441946b4fc6e3e84c835b7"
+		},
+		{
+			"path": "exports/gaga-icon-256.png",
+			"bytes": 94197,
+			"sha256": "ed61bdebdf1903ba804e173ececdae33f4287052a2c1bbacd30afc3384f454d9"
+		},
+		{
+			"path": "exports/gaga-rounded-256.png",
+			"bytes": 96386,
+			"sha256": "4373850f20741bca67df21da8e0e15a168947d40e06cf12abc0955fb9d5bac01"
+		},
+		{
+			"path": "exports/gaga-transparent-128.png",
+			"bytes": 19554,
+			"sha256": "41cdb3d6e74bd58620f3f7b763aaf00ef9559af191a745fec1f50524b30da335"
+		},
+		{
+			"path": "exports/gaga-icon-128.png",
+			"bytes": 29997,
+			"sha256": "f553acce34793bcd153f73a2d7a2cf0fdd81da3f211a0b5688a706ab739fb1aa"
+		},
+		{
+			"path": "exports/gaga-rounded-128.png",
+			"bytes": 31210,
+			"sha256": "e547634a18983d0ace4404aedc5ba98f4b0b1a19cc08a5783f157a9f2868c95e"
+		},
+		{
+			"path": "exports/gaga-transparent-64.png",
+			"bytes": 5923,
+			"sha256": "f841f163a7db17517a8d586cef84bc6895f4da187516c66bb0a8a3e76502e836"
+		},
+		{
+			"path": "exports/gaga-icon-64.png",
+			"bytes": 9589,
+			"sha256": "313709942c8b28824d7ed524f3013fe88ce820eb303971d3daf6ddfffc383a79"
+		},
+		{
+			"path": "exports/gaga-rounded-64.png",
+			"bytes": 10087,
+			"sha256": "cd73fae92eb0f979b8e1508a566017b3a4aa05ed9caff741873a30807a48b5cb"
+		},
+		{
+			"path": "exports/gaga-transparent-48.png",
+			"bytes": 3677,
+			"sha256": "c94ec902c9b14598de77ed6ef61b2a3bcd54f9e5eed039dd67e82b32208185af"
+		},
+		{
+			"path": "exports/gaga-icon-48.png",
+			"bytes": 5948,
+			"sha256": "f00537dab782c3ec1ae3faa30e2ba66a802549275943f293c5ee186429369b70"
+		},
+		{
+			"path": "exports/gaga-rounded-48.png",
+			"bytes": 6298,
+			"sha256": "0e695ce338e62147aaa5cab139ccc9b53557d8ade717075d3390c610c70bdf84"
+		},
+		{
+			"path": "exports/gaga-transparent-32.png",
+			"bytes": 1962,
+			"sha256": "23f4f3d9aed6303f47d20b86c318f99fdda918417a7594bd68b8b92fc9e1fb15"
+		},
+		{
+			"path": "exports/gaga-icon-32.png",
+			"bytes": 3058,
+			"sha256": "f4faf6e6dc269f1a9c4cf484afa8e7a5505d4ae0fbc0a2148aa346a07f6aefe0"
+		},
+		{
+			"path": "exports/gaga-rounded-32.png",
+			"bytes": 3205,
+			"sha256": "f4902feca67e08c61efcf06930e8b82f6011ef0932a7275201e8213242a735c4"
+		},
+		{
+			"path": "exports/gaga-transparent-24.png",
+			"bytes": 1297,
+			"sha256": "54c34bcb1899d4414e1e9d4d16016094e5b292801824d92f0822d1c2044c5e46"
+		},
+		{
+			"path": "exports/gaga-icon-24.png",
+			"bytes": 1881,
+			"sha256": "fb6345e6562f6cdaf8c3e799cfe4e8185d48acd680476a76bb6d2fa70ca44338"
+		},
+		{
+			"path": "exports/gaga-rounded-24.png",
+			"bytes": 1994,
+			"sha256": "2d24b4f04f4fc3e12d1c375c6e4da9e557c28e6599b97bf55fea9c4075833cfb"
+		},
+		{
+			"path": "exports/gaga-transparent-16.png",
+			"bytes": 742,
+			"sha256": "88d587f1201bd756a328d46f420c80787e59cea8782d2f19f18a0f43d989272f"
+		},
+		{
+			"path": "exports/gaga-icon-16.png",
+			"bytes": 940,
+			"sha256": "007d25cbce7a6a54c702f83db0a5bf600697ebf63867029fd7568e332efbc8b8"
+		},
+		{
+			"path": "exports/gaga-rounded-16.png",
+			"bytes": 978,
+			"sha256": "5d872995c273322e1ce6dbbfcb39d3a02d978c1d417344cfa750cbdaf150d31f"
+		},
+		{
+			"path": "exports/gaga-white-2048.png",
+			"bytes": 2193016,
+			"sha256": "5b5d3b6f9215a8167a4b6510e8899238d6ec1bdf9a363bd441ae6d98926a0e30"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 631211,
+			"sha256": "1b73e7ce6b17627024c09f986c5a11b4f5750c37944271ae34becf883f408158"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 642682,
+			"sha256": "6a95eb2c42e4ccb1157105f0421b9194842e8dc267d4b1cb8d4244b96d3149a9"
+		}
+	]
+}

@@ -1,0 +1,88 @@
+{
+	"project": "backy",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#829178",
+		"light": "#ccd1a6",
+		"shade": "#4f6250",
+		"motif": "#384935",
+		"grainAmplitude": 1,
+		"grainSeed": 6090797,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Shell saddles",
+			"description": "Shell saddles: unequal broad hexagonal scute impressions with interrupted seams on a deep sage field, avoiding uniform polygon noise.",
+			"layers": [
+				{
+					"d": "M-84 59L178-48L338 108L288 337L50 412L-84 299Z",
+					"tone": "motif",
+					"strokeWidth": 30
+				},
+				{
+					"d": "M-80 38L184-72L362 103L310 357L46 437",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M653-84L920-35L1108 144L1054 370L830 399L689 235Z",
+					"tone": "ribbon",
+					"strokeWidth": 42
+				},
+				{
+					"d": "M849 706L1112 774L1150 1022L940 1125L719 973L714 831Z",
+					"tone": "motif",
+					"strokeWidth": 34
+				},
+				{
+					"d": "M844 684L1130 757L1166 1034L944 1149L696 984L690 820Z",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-113 712L89 681L248 854L187 1108L-110 1120",
+					"tone": "ribbon",
+					"strokeWidth": 46
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/backy.png",
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+	}
+}

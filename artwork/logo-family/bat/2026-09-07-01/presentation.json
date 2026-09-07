@@ -1,0 +1,82 @@
+{
+	"project": "bat",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#9a7e90",
+		"light": "#ccb4bc",
+		"shade": "#614b64",
+		"motif": "#4a364d",
+		"grainAmplitude": 1,
+		"grainSeed": 6090791,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Dusk scallops",
+			"description": "Dusk scallops: interrupted shallow scalloped folds in a smoky mauve field; broad lobes and offset seams rather than sonar rings.",
+			"layers": [
+				{
+					"d": "M-88 138Q59 28 199 165Q326 44 475 184Q643 67 776 205Q952 91 1120 210L1120 262Q956 144 780 259Q642 120 478 238Q327 95 203 219Q57 81-88 193Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-87 198Q58 86 204 224Q329 102 479 243Q644 127 780 264Q952 153 1123 268",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-93 541Q62 428 180 535Q325 446 431 573L366 616Q279 518 180 589Q63 483-93 595Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M600 875Q711 743 836 858Q979 754 1133 891L1133 946Q980 810 837 913Q715 799 651 918Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M654 925Q715 808 838 922Q979 820 1134 954",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/bat.png",
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed.",
+		"backgroundSeedsAt2048": [[1145, 1716]],
+		"backgroundSeedReason": "An enclosed white negative-space pocket between animal/accessory contours, visible on the dark-background inspection. Preserve eye highlights and every colored opaque facet; seed only this inspected near-white component."
+	}
+}

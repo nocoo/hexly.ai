@@ -1,0 +1,106 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Leaf green",
+				"zh": "嫩叶绿"
+			},
+			"role": "primary",
+			"color": "#8bbc3f",
+			"pixel": [342, 1252],
+			"rgb": [139, 188, 63],
+			"sourceSha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04"
+		},
+		{
+			"label": {
+				"en": "Chartreuse",
+				"zh": "黄绿色"
+			},
+			"role": "accent",
+			"color": "#c6dc5b",
+			"pixel": [1573, 407],
+			"rgb": [198, 220, 91],
+			"sourceSha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04"
+		},
+		{
+			"label": {
+				"en": "Cream",
+				"zh": "奶油色"
+			},
+			"role": "accent",
+			"color": "#e6c88f",
+			"pixel": [796, 562],
+			"rgb": [230, 200, 143],
+			"sourceSha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04"
+		},
+		{
+			"label": {
+				"en": "Tongue coral",
+				"zh": "舌头珊瑚色"
+			},
+			"role": "accent",
+			"color": "#d96e6b",
+			"pixel": [1483, 606],
+			"rgb": [217, 110, 107],
+			"sourceSha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04"
+		},
+		{
+			"label": {
+				"en": "Tongue violet",
+				"zh": "舌头紫色"
+			},
+			"role": "accent",
+			"color": "#8779b3",
+			"pixel": [1811, 784],
+			"rgb": [135, 121, 179],
+			"sourceSha256": "2283c4fb8964d661e4c36b20a2dc48ae08177af8a7d56cb67b15043763c9ba04"
+		}
+	],
+	"presentation": {
+		"base": "#778e57",
+		"light": "#c3d497",
+		"shade": "#465e37",
+		"motif": "#314427",
+		"pattern": "Meadow bends",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#e2ecae",
+		"background": "transparent",
+		"theme": {},
+		"evidence": [
+			{
+				"color": "#e2ecae",
+				"role": "primary",
+				"source": "Preserved project artwork, dominant colored pixels"
+			},
+			{
+				"color": "transparent",
+				"role": "background",
+				"source": "Preserved project artwork, transparent background"
+			},
+			{
+				"color": "#65ac59",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#c4ea49",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#e1af8b",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Native macOS and CLI project. Existing catalogue color evidence is preserved; it does not establish a fixed global website theme. System material and semantic status colors are independent of the mascot."
+	}
+}
