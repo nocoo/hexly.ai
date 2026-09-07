@@ -1,0 +1,61 @@
+{
+	"sourceSha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043",
+	"foregroundSha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+	"squareSha256": "17c1ad45a633ef110cf1986c4143eb0d67e65f82ab867a9f2daeedcec5a3f703",
+	"roundedSha256": "a6a7626bfda4abcae468c9c61b8113674a2fbd1369e0a6ef161a583b8ba5b095",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance from visible pixel centers to the actual rounded-square boundary. Native anatomical regions are transformed by the exact rounded resize and placement.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform centered 90% placement protects both ear tufts, the complete feather, and every talon. The compact whole owl remains intact."
+	},
+	"protectedFeatures": [
+		{
+			"name": "Ear tufts",
+			"nativeRegionAt2048": [740, 80, 1690, 500],
+			"regionAt2048": [767, 173, 1623, 552],
+			"visiblePixels": 171600,
+			"minimumClearancePx": 193.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Both eyes and facial discs",
+			"nativeRegionAt2048": [630, 300, 1630, 970],
+			"regionAt2048": [668, 371, 1569, 975],
+			"visiblePixels": 488803,
+			"minimumClearancePx": 371.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Complete accent feather",
+			"nativeRegionAt2048": [950, 705, 1790, 1100],
+			"regionAt2048": [956, 736, 1713, 1092],
+			"visiblePixels": 204770,
+			"minimumClearancePx": 370.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Folded wings and all talons",
+			"nativeRegionAt2048": [375, 745, 1510, 1960],
+			"regionAt2048": [439, 772, 1461, 1866],
+			"visiblePixels": 878608,
+			"minimumClearancePx": 202.5,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": [],
+		"clippedPixels": 0,
+		"bottomRowVisiblePixels": 0,
+		"rightColumnVisiblePixels": 0,
+		"note": "Only the documented native lower neck/shoulder continuation intersects the presentation outline. The complete lion mane and whole owl are fully inset."
+	},
+	"continuation": null
+}

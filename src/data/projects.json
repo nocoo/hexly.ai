@@ -821,18 +821,18 @@
 		"website": "https://steed.hexly.ai",
 		"websiteSource": "apps/web/wrangler.toml routes",
 		"repository": "https://github.com/nocoo/steed",
-		"subject": "Horse portrait with multicolored fragments",
+		"subject": "Chestnut horse portrait with an ivory blaze and one colorful bird",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/steed.png",
+			"original": "/logos/originals/steed-family-2026-09-07-02-01.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/steed/blob/1159f3769ec3c0a00a9a2bf32e914cf7cff00e33/logo.png",
+			"sourceUrl": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
-			"bytes": 4168086,
-			"sha256": "9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
 			"thumbnail": "/logos/display/steed-160.webp",
 			"display": "/logos/display/steed-1024.webp"
 		},
@@ -854,7 +854,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "AI Hub for the multi-agent era — asset visibility and relationship management across agents",
-			"repositoryRevision": "1159f3769ec3c0a00a9a2bf32e914cf7cff00e33"
+			"repositoryRevision": "bcab1f113b9b7cde65898bbd23705c7dac339634"
 		},
 		"colors": {
 			"primary": "#1da599",
@@ -872,23 +872,145 @@
 					"source": "apps/web/src/index.css --background: 180 10% 94%"
 				},
 				{
-					"color": "#70b5a7",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#4d3428",
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1165, 638); artwork/logo-family/steed/2026-09-07-02/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#f2cc9a",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#f3d2a9",
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1153, 982); artwork/logo-family/steed/2026-09-07-02/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#7c60a5",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#309eaf",
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1632, 1233); artwork/logo-family/steed/2026-09-07-02/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-02",
+			"finishing": "01",
+			"root": "/logos/family/steed/2026-09-07-02/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/steed/2026-09-07-02",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Chestnut horse portrait with an ivory blaze and one colorful bird",
+					"zh": "栗棕色骏马头像、象牙白额纹与一只多彩小鸟"
+				},
+				"original": "/logos/family/steed/2026-09-07-02/01/transparent.png",
+				"display": "/logos/family/steed/2026-09-07-02/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+			},
+			"previous": {
+				"original": "/logos/originals/steed.png",
+				"sourceUrl": "https://github.com/nocoo/steed/blob/1159f3769ec3c0a00a9a2bf32e914cf7cff00e33/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "A small visitor",
+						"zh": "一位小访客"
+					},
+					"description": {
+						"en": "The horse turns with relaxed ears and a soft muzzle. A small bird sits at the outer mane edge, visibly extending into negative space; natural shoulder anatomy continues below and to the right.",
+						"zh": "马儿转头，耳朵放松、口鼻柔和。一只小鸟停在鬃毛外缘，伸入留白；自然肩部向下方与右侧延续。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Chestnut, chocolate, ivory",
+						"zh": "栗棕、巧克力与象牙白"
+					},
+					"description": {
+						"en": "Broad chestnut coat planes meet a dark chocolate mane and a quiet ivory blaze. The single jewel-colored bird carries the multicolored detail.",
+						"zh": "宽阔栗棕毛色切面与深巧克力色鬃毛、安静的象牙白额纹相接。多彩细节集中在一只宝石色小鸟上。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Canter pleats",
+						"zh": "慢跑风褶"
+					},
+					"description": {
+						"en": "Unequal long wind folds lean across a deep petrol-teal field. Fine grain and shallow shadows separate the warm horse from its cooler setting.",
+						"zh": "长短不一的风褶斜穿深汽油青色底纹，细颗粒与浅阴影让暖色马儿从偏冷背景中显现。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#53817c",
+					"role": "background",
+					"label": {
+						"en": "Canter pleats",
+						"zh": "慢跑风褶"
+					},
+					"source": "Selected Steed presentation, 2026-09-07-02/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#ba7135",
+					"role": "primary",
+					"label": {
+						"en": "Chestnut coat",
+						"zh": "栗棕毛色"
+					},
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (659, 480); artwork/logo-family/steed/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#4d3428",
+					"role": "accent",
+					"label": {
+						"en": "Chocolate mane",
+						"zh": "巧克力色鬃毛"
+					},
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1165, 638); artwork/logo-family/steed/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#f3d2a9",
+					"role": "accent",
+					"label": {
+						"en": "Ivory blaze",
+						"zh": "象牙白额纹"
+					},
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1153, 982); artwork/logo-family/steed/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#309eaf",
+					"role": "accent",
+					"label": {
+						"en": "Bird turquoise",
+						"zh": "小鸟松石色"
+					},
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1632, 1233); artwork/logo-family/steed/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#eb8361",
+					"role": "accent",
+					"label": {
+						"en": "Bird coral",
+						"zh": "小鸟珊瑚色"
+					},
+					"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1459, 1107); artwork/logo-family/steed/2026-09-07-02/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "The complete ears, mane tips, face and bird retain at least 214.5 px of protected clearance. Only natural lower/right shoulder entries cross the frame. Two native requests were made: study 01 was rejected because its bird stayed inside the mane; study 02 is selected.",
+				"zh": "完整双耳、鬃毛尖、面部与小鸟保留至少 214.5 px 的保护留白，仅自然的下方与右侧肩部穿过边框。共生成两次：第一版小鸟陷在鬃毛内部，最终选择第二版。"
+			},
+			"model": "gpt-image-2"
+		}
 	},
 	{
 		"id": "ellie",
@@ -903,18 +1025,18 @@
 		"website": null,
 		"websiteSource": null,
 		"repository": "https://github.com/nocoo/ellie",
-		"subject": "Elephant portrait with colorful ornaments",
+		"subject": "Mineral-gray elephant portrait with a curled trunk and one paper airplane",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/ellie.png",
+			"original": "/logos/originals/ellie-family-2026-09-07-01-01.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/ellie/blob/a53769b75c9220fc2ad02eb9cba5d8e342a6be3a/logo.png",
+			"sourceUrl": "https://github.com/nocoo/ellie/blob/300b8540eac51ae21803a8d58ebffbe3d90efa24/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
-			"bytes": 4123134,
-			"sha256": "03f8da981d89188fdbeeec38dcd9e32a693960d5b8af2020b48beaaa86844a13",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
 			"thumbnail": "/logos/display/ellie-160.webp",
 			"display": "/logos/display/ellie-1024.webp"
 		},
@@ -936,7 +1058,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Modern forum platform on Next.js + Cloudflare Workers + D1, with a Rust TUI client",
-			"repositoryRevision": "a53769b75c9220fc2ad02eb9cba5d8e342a6be3a"
+			"repositoryRevision": "300b8540eac51ae21803a8d58ebffbe3d90efa24"
 		},
 		"colors": {
 			"primary": "#016698",
@@ -954,23 +1076,145 @@
 					"source": "apps/web/src/app/tailwind.css --background: 0 0% 100%"
 				},
 				{
-					"color": "#9f9bb1",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#395970",
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1480, 1164); artwork/logo-family/ellie/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#f6b8a8",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#e9dac5",
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1234, 1345); artwork/logo-family/ellie/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#b3e3ef",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#248aa0",
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1762, 677); artwork/logo-family/ellie/2026-09-07-01/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/ellie/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ellie/2026-09-07-01",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Mineral-gray elephant portrait with a curled trunk and one paper airplane",
+					"zh": "矿石灰大象头像、卷起的鼻子与一架纸飞机"
+				},
+				"original": "/logos/family/ellie/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/ellie/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+			},
+			"previous": {
+				"original": "/logos/originals/ellie.png",
+				"sourceUrl": "https://github.com/nocoo/ellie/blob/a53769b75c9220fc2ad02eb9cba5d8e342a6be3a/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "03f8da981d89188fdbeeec38dcd9e32a693960d5b8af2020b48beaaa86844a13"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "An inquisitive lift",
+						"zh": "好奇地抬起鼻尖"
+					},
+					"description": {
+						"en": "The broad ear and cheek carry the portrait while the trunk curls close to the face. A small paper airplane balances the gesture; only the natural lower neck enters the frame edge.",
+						"zh": "宽大的耳朵和脸颊承担头像主体，象鼻在脸旁卷起，小纸飞机平衡动作。仅自然延续的颈部穿过底边。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Mineral planes",
+						"zh": "矿石色切面"
+					},
+					"description": {
+						"en": "Slate and blue-gray facets establish the elephant as one clear mass. Warm ivory anatomy stays opaque; the airplane concentrates the colorful folded panels.",
+						"zh": "岩蓝与蓝灰色切面把大象组织成清晰整体，象牙白部位保留不透明度，多彩折面集中于纸飞机。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Listening folds",
+						"zh": "聆听折面"
+					},
+					"description": {
+						"en": "Unequal broad mineral panels meet along open diagonal seams. A deeper blue field, fine grain and two shallow shadows separate the ear and trunk.",
+						"zh": "不等宽的矿石折面沿开放斜缝相接，深蓝底色、细颗粒和两层浅阴影托起象耳与鼻子。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#537b93",
+					"role": "background",
+					"label": {
+						"en": "Mineral listening folds",
+						"zh": "聆听折面"
+					},
+					"source": "Selected Ellie presentation, 2026-09-07-01/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#9dabb7",
+					"role": "primary",
+					"label": {
+						"en": "Mineral gray",
+						"zh": "矿石灰"
+					},
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1096, 759); artwork/logo-family/ellie/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#395970",
+					"role": "accent",
+					"label": {
+						"en": "Slate planes",
+						"zh": "岩蓝色面"
+					},
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1480, 1164); artwork/logo-family/ellie/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#e9dac5",
+					"role": "accent",
+					"label": {
+						"en": "Ivory tusk",
+						"zh": "象牙白"
+					},
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1234, 1345); artwork/logo-family/ellie/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#248aa0",
+					"role": "accent",
+					"label": {
+						"en": "Airplane teal",
+						"zh": "纸飞机青色"
+					},
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1762, 677); artwork/logo-family/ellie/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#9379a2",
+					"role": "accent",
+					"label": {
+						"en": "Airplane plum",
+						"zh": "纸飞机浅紫色"
+					},
+					"source": "Native ellie 5f05992e1b8a, sampled sRGB pixel (1881, 852); artwork/logo-family/ellie/2026-09-07-01/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "Ear edges, eye, tusk, curled trunk and the complete airplane retain at least 148.5 px of rounded-edge clearance. Only the lower neck crosses the frame. Admin marks stay transparent; separately configured forum logos and favicon remain independent.",
+				"zh": "象耳、眼睛、象牙、卷鼻与整架纸飞机距圆角边界至少 148.5 px，仅下方颈部穿过边框。管理后台使用透明小标，用户配置的论坛标识与 favicon 保持独立。"
+			},
+			"model": "gpt-image-2"
+		}
 	},
 	{
 		"id": "neo",
@@ -1189,18 +1433,18 @@
 		"website": "https://giraffe.hexly.ai",
 		"websiteSource": "GitHub repository homepage",
 		"repository": "https://github.com/nocoo/giraffe",
-		"subject": "Giraffe head with laurel leaves",
+		"subject": "Honey-colored giraffe portrait nibbling one colorful acacia sprig",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/giraffe.png",
+			"original": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/giraffe/blob/13083cd48ff37f4d47f1b5848d980eaa72fba80f/logo.png",
+			"sourceUrl": "https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png",
 			"modified": false,
-			"width": 1408,
-			"height": 1408,
-			"bytes": 1726680,
-			"sha256": "169ba1ff6951014dd9fdedb750bc4d65d7099c250eb1f941570bfb3c509db0fe",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3073843,
+			"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
 			"thumbnail": "/logos/display/giraffe-160.webp",
 			"display": "/logos/display/giraffe-1024.webp"
 		},
@@ -1218,12 +1462,12 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Personal GitHub monitoring console with encrypted PAT snapshots",
-			"repositoryRevision": "13083cd48ff37f4d47f1b5848d980eaa72fba80f"
+			"repositoryRevision": "c71543478405f580e6dd36ebac18174f7ae6e474"
 		},
 		"colors": {
 			"primary": "#598128",
 			"background": "#eeeff2",
-			"ink": "#1f0b00",
+			"ink": "#884812",
 			"palette": [
 				{
 					"color": "#598128",
@@ -1236,23 +1480,145 @@
 					"source": "@nocoo/basalt/styles tokens --basalt-background: 220 14% 94%"
 				},
 				{
-					"color": "#779c35",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#884812",
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (260, 1830); artwork/logo-family/giraffe/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#faac1c",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#f3d49e",
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (957, 923); artwork/logo-family/giraffe/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#ca7102",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#828731",
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (1649, 1388); artwork/logo-family/giraffe/2026-09-07-01/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "02",
+			"root": "/logos/family/giraffe/2026-09-07-01/02",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/giraffe/2026-09-07-01",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Honey-colored giraffe portrait nibbling one colorful acacia sprig",
+					"zh": "轻咬一枝多彩金合欢叶的蜜金色长颈鹿头像"
+				},
+				"original": "/logos/family/giraffe/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/giraffe/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+			},
+			"previous": {
+				"original": "/logos/originals/giraffe.png",
+				"sourceUrl": "https://github.com/nocoo/giraffe/blob/13083cd48ff37f4d47f1b5848d980eaa72fba80f/logo.png",
+				"width": 1408,
+				"height": 1408,
+				"sha256": "169ba1ff6951014dd9fdedb750bc4d65d7099c250eb1f941570bfb3c509db0fe"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "The last tender leaf",
+						"zh": "最后一片嫩叶"
+					},
+					"description": {
+						"en": "A broad cheek, natural ear spread and a gently diagonal neck form one portrait. The mouth-held acacia sprig stays close; the lower neck continues through the viewfinder.",
+						"zh": "宽阔脸颊、自然展开的双耳与倾斜颈部构成统一头像。衔住的金合欢叶靠近嘴边，下方颈部自然延续到取景框外。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Honey and chestnut",
+						"zh": "蜜金与栗棕"
+					},
+					"description": {
+						"en": "Ochre planes and broad chestnut patches preserve the giraffe’s species cues. One colored leaf sprig replaces the enclosing wreath and competing decorative fragments.",
+						"zh": "赭黄色面与宽阔栗棕斑纹保留物种特征。一枝多彩叶片取代外圈花环与分散的装饰碎片。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Acacia canopy relief",
+						"zh": "金合欢树冠压纹"
+					},
+					"description": {
+						"en": "Staggered flat-topped canopies and open branching stems sit in an olive field. Unequal spans add quiet structure around the ears and leaf gesture.",
+						"zh": "错落的平顶树冠与开放枝干压在橄榄色底纹上，不同跨度的形状在双耳与叶片周围提供安静的结构。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#79865b",
+					"role": "background",
+					"label": {
+						"en": "Acacia canopy relief",
+						"zh": "金合欢树冠压纹"
+					},
+					"source": "Selected Giraffe presentation, 2026-09-07-01/02; background.base in archived settings.json"
+				},
+				{
+					"color": "#e6a328",
+					"role": "primary",
+					"label": {
+						"en": "Honey coat",
+						"zh": "蜜金皮毛"
+					},
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (1396, 1263); artwork/logo-family/giraffe/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#884812",
+					"role": "accent",
+					"label": {
+						"en": "Chestnut patches",
+						"zh": "栗棕斑纹"
+					},
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (260, 1830); artwork/logo-family/giraffe/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#f3d49e",
+					"role": "accent",
+					"label": {
+						"en": "Cream planes",
+						"zh": "奶油色面"
+					},
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (957, 923); artwork/logo-family/giraffe/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#828731",
+					"role": "accent",
+					"label": {
+						"en": "Olive leaves",
+						"zh": "橄榄叶色"
+					},
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (1649, 1388); artwork/logo-family/giraffe/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#c76036",
+					"role": "accent",
+					"label": {
+						"en": "Coral leaf",
+						"zh": "珊瑚色叶片"
+					},
+					"source": "Native giraffe 55739caf938b, sampled sRGB pixel (1648, 1477); artwork/logo-family/giraffe/2026-09-07-01/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "Ossicones, both ears, face and every leaf keep at least 164.64 px of rounded-edge clearance. A one-pixel placement correction preserves the native extraction and closes the lower neck entry. The historical original is 1408 px; the new artwork is native 2048 px.",
+				"zh": "角、双耳、面部与每片叶子距圆角边界至少 164.64 px。一次 1 px 位置修正保持抠图原样，并让颈部自然接到底边。历史原图为 1408 px，新图为原生 2048 px。"
+			},
+			"model": "gpt-image-2"
+		}
 	},
 	{
 		"id": "backy",
@@ -3119,18 +3485,18 @@
 		"website": null,
 		"websiteSource": null,
 		"repository": "https://github.com/nocoo/owl",
-		"subject": "Multicolored owl portrait",
+		"subject": "Compact tawny owl holding one multicolored feather",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/owl.png",
-			"sourcePath": "owl.png",
-			"sourceUrl": "https://github.com/nocoo/owl/blob/73c292ea59ed8ccaf8dfd1e6d1d57f80e8be7ed3/owl.png",
+			"original": "/logos/originals/owl-family-2026-09-07-01-01.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
-			"bytes": 4831043,
-			"sha256": "f579214edd8876dacaa55d27c35c3598d3f809e651e4d3537d6d228823b5f413",
+			"bytes": 2973160,
+			"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
 			"thumbnail": "/logos/display/owl-160.webp",
 			"display": "/logos/display/owl-1024.webp"
 		},
@@ -3139,17 +3505,17 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "macOS menu bar system health monitor via unified log stream anomaly detection",
-			"repositoryRevision": "73c292ea59ed8ccaf8dfd1e6d1d57f80e8be7ed3"
+			"repositoryRevision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf"
 		},
 		"colors": {
-			"primary": "#1c6972",
+			"primary": "#93816a",
 			"background": "transparent",
-			"ink": "#181344",
+			"ink": "#844c6e",
 			"palette": [
 				{
-					"color": "#1c6972",
+					"color": "#93816a",
 					"role": "primary",
-					"source": "Preserved project artwork, dominant colored pixels"
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1030, 752); artwork/logo-family/owl/2026-09-07-01/palette.json"
 				},
 				{
 					"color": "transparent",
@@ -3157,23 +3523,145 @@
 					"source": "Preserved project artwork, transparent background"
 				},
 				{
-					"color": "#e3ab46",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#e5cfab",
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1214, 844); artwork/logo-family/owl/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#65418d",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#cd8523",
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1005, 598); artwork/logo-family/owl/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#b18630",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#dc8470",
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1329, 979); artwork/logo-family/owl/2026-09-07-01/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/owl/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/owl/2026-09-07-01",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Compact tawny owl holding one multicolored feather",
+					"zh": "衔着一根多彩羽毛的灰褐色猫头鹰"
+				},
+				"original": "/logos/family/owl/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/owl/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8"
+			},
+			"previous": {
+				"original": "/logos/originals/owl.png",
+				"sourceUrl": "https://github.com/nocoo/owl/blob/73c292ea59ed8ccaf8dfd1e6d1d57f80e8be7ed3/owl.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "f579214edd8876dacaa55d27c35c3598d3f809e651e4d3537d6d228823b5f413"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "A feather caught mid-turn",
+						"zh": "转头间衔住羽毛"
+					},
+					"description": {
+						"en": "A compact whole owl tilts its head, with both eyes, folded wings and every talon visible. One feather extends from the beak into the surrounding space.",
+						"zh": "完整的小猫头鹰微微侧头，双眼、折叠双翼和脚爪清晰可见。一根羽毛从喙边伸向留白。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Tawny, cream, amber",
+						"zh": "灰褐、奶油与琥珀"
+					},
+					"description": {
+						"en": "Broad neutral facets organize the plumage. Cream facial discs and amber eyes preserve recognition; the feather is the only multicolored accessory.",
+						"zh": "大块中性色切面组织羽毛，奶油色面盘与琥珀眼睛保持辨识度，羽毛是唯一的多彩配件。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "A quiet night aperture",
+						"zh": "安静的夜色窗口"
+					},
+					"description": {
+						"en": "Interrupted crescent steps and offset notches form a smoky-blue observatory field. The pattern stays distinct from feather stripes and light orbits.",
+						"zh": "中断的弧形台阶与错位缺口构成烟蓝色夜间窗口，几何形态与羽毛条纹和光线轨道不同。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#5f6684",
+					"role": "background",
+					"label": {
+						"en": "Night aperture relief",
+						"zh": "安静的夜色窗口"
+					},
+					"source": "Selected Owl presentation, 2026-09-07-01/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#93816a",
+					"role": "primary",
+					"label": {
+						"en": "Tawny feathers",
+						"zh": "灰褐羽毛"
+					},
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1030, 752); artwork/logo-family/owl/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#e5cfab",
+					"role": "accent",
+					"label": {
+						"en": "Cream face",
+						"zh": "奶油面盘"
+					},
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1214, 844); artwork/logo-family/owl/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#cd8523",
+					"role": "accent",
+					"label": {
+						"en": "Amber iris",
+						"zh": "琥珀眼睛"
+					},
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1005, 598); artwork/logo-family/owl/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#dc8470",
+					"role": "accent",
+					"label": {
+						"en": "Feather coral",
+						"zh": "羽毛珊瑚色"
+					},
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1329, 979); artwork/logo-family/owl/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#844c6e",
+					"role": "accent",
+					"label": {
+						"en": "Feather plum",
+						"zh": "羽毛梅紫色"
+					},
+					"source": "Native owl 6638f897f718, sampled sRGB pixel (1691, 931); artwork/logo-family/owl/2026-09-07-01/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "The complete bird and feather have at least 193.5 px of rounded-edge clearance. The native popover uses a transparent 22 pt mark; macOS app icons use a separate rounded tile with a platform inset. Browser specimens demonstrate the identity at small sizes.",
+				"zh": "完整鸟身和羽毛距圆角边界至少 193.5 px。原生弹窗使用透明的 22 pt 小标，macOS 应用图标使用带平台留白的独立圆角底图。浏览器样例用于检视缩小效果。"
+			},
+			"model": "gpt-image-2"
+		}
 	},
 	{
 		"id": "xray",
@@ -4318,18 +4806,18 @@
 		"website": "https://surety.hexly.ai",
 		"websiteSource": "README.md browser access",
 		"repository": "https://github.com/nocoo/surety",
-		"subject": "Illustrated tiger portrait",
+		"subject": "Amber lion portrait with one multicolored butterfly",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/surety.png",
+			"original": "/logos/originals/surety-family-2026-09-07-01-01.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/surety/blob/aad7b0298935b71642e8d25abb125c0cb9cc0d22/logo.png",
+			"sourceUrl": "https://github.com/nocoo/surety/blob/f257e0977e85358f9d02ed3f79a9fad8862e5117/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
-			"bytes": 6017598,
-			"sha256": "13b22815f3d07d56ee294f005db9638809e0329fedce51887dd55cba75b01dc6",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
 			"thumbnail": "/logos/display/surety-160.webp",
 			"display": "/logos/display/surety-1024.webp"
 		},
@@ -4351,7 +4839,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Privacy-first, local-first family insurance policy management with Next.js",
-			"repositoryRevision": "aad7b0298935b71642e8d25abb125c0cb9cc0d22"
+			"repositoryRevision": "f257e0977e85358f9d02ed3f79a9fad8862e5117"
 		},
 		"colors": {
 			"primary": "#ed511d",
@@ -4369,23 +4857,145 @@
 					"source": "apps/web/src/globals.css --background: 220 14% 94%"
 				},
 				{
-					"color": "#ece1b1",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#754321",
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (466, 1388); artwork/logo-family/surety/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#342917",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#edcfa7",
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1466, 1263); artwork/logo-family/surety/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#e16d1f",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#19989b",
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1778, 915); artwork/logo-family/surety/2026-09-07-01/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/surety/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/surety/2026-09-07-01",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Amber lion portrait with one multicolored butterfly",
+					"zh": "琥珀色狮子头像与一只多彩蝴蝶"
+				},
+				"original": "/logos/family/surety/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/surety/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+			},
+			"previous": {
+				"original": "/logos/originals/surety.png",
+				"sourceUrl": "https://github.com/nocoo/surety/blob/aad7b0298935b71642e8d25abb125c0cb9cc0d22/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "13b22815f3d07d56ee294f005db9638809e0329fedce51887dd55cba75b01dc6"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "The guardian pauses",
+						"zh": "守护者的片刻"
+					},
+					"description": {
+						"en": "The complete irregular mane frames a quiet head turn. A butterfly beside the nose adds a single secondary focus; the whole group sits safely inside the rounded tile.",
+						"zh": "完整而自然的鬃毛围住安静转动的脸，鼻尖旁的蝴蝶成为唯一的兴趣点。整组主体在圆角内保留留白。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Amber takes the lead",
+						"zh": "让琥珀色成为主角"
+					},
+					"description": {
+						"en": "Broad honey and umber planes describe the face and mane. The former tiger identity is replaced by a recognizable lion, with color concentrated in one small butterfly.",
+						"zh": "大块蜜金与深棕色面描绘脸部和鬃毛。旧虎形标识替换为清晰的狮子，多彩点缀集中在一只小蝴蝶上。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Folded amber fan",
+						"zh": "琥珀折扇底纹"
+					},
+					"description": {
+						"en": "Unequal fan folds spread from a low off-center pivot. Deeper ochre, fine grain and shallow shadows give the mane separation without competing with its expression.",
+						"zh": "不等宽的扇形折面从偏下方展开，较深赭色、细颗粒和浅阴影托起鬃毛，同时保留表情的主导地位。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#9b865c",
+					"role": "background",
+					"label": {
+						"en": "Amber fan relief",
+						"zh": "琥珀折扇底纹"
+					},
+					"source": "Selected Surety presentation, 2026-09-07-01/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#cc8330",
+					"role": "primary",
+					"label": {
+						"en": "Honey face",
+						"zh": "蜂蜜色面"
+					},
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1280, 708); artwork/logo-family/surety/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#754321",
+					"role": "accent",
+					"label": {
+						"en": "Umber mane",
+						"zh": "深棕鬃毛"
+					},
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (466, 1388); artwork/logo-family/surety/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#edcfa7",
+					"role": "accent",
+					"label": {
+						"en": "Cream muzzle",
+						"zh": "奶油鼻口"
+					},
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1466, 1263); artwork/logo-family/surety/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#19989b",
+					"role": "accent",
+					"label": {
+						"en": "Butterfly teal",
+						"zh": "蝶翼青色"
+					},
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1778, 915); artwork/logo-family/surety/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#6f4584",
+					"role": "accent",
+					"label": {
+						"en": "Butterfly violet",
+						"zh": "蝶翼紫色"
+					},
+					"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1770, 1105); artwork/logo-family/surety/2026-09-07-01/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "The whole mane and butterfly stay inside the rounded outline with at least 145.5 px of native clearance. Small marks use the transparent lion; butterfly details simplify at 16 px.",
+				"zh": "完整鬃毛和蝴蝶距圆角边界至少保留 145.5 原生像素。小标使用透明狮子，16 px 时蝴蝶细节会简化。"
+			},
+			"model": "gpt-image-2"
+		}
 	},
 	{
 		"id": "life-ai",

@@ -1,0 +1,526 @@
+{
+	"checkedAt": "2026-09-07T04:04:13.371169+00:00",
+	"projects": [
+		{
+			"project": "surety",
+			"repo": "/Users/nocoo/workspace/personal/surety",
+			"commit": "f257e0977e85358f9d02ed3f79a9fad8862e5117",
+			"study": "2026-09-07-01",
+			"finishing": "01",
+			"audit": "2026-09-07-redesign",
+			"remoteMain": "f257e0977e85358f9d02ed3f79a9fad8862e5117",
+			"sourceCommitPublished": true,
+			"runs": [
+				{
+					"conclusion": "success",
+					"databaseId": 34079397103,
+					"headSha": "f257e0977e85358f9d02ed3f79a9fad8862e5117",
+					"status": "completed",
+					"url": "https://github.com/nocoo/surety/actions/runs/34079397103",
+					"workflowName": "Release",
+					"jobs": [
+						{
+							"name": "Deploy Worker (main)",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079397103/job/101611675227"
+						},
+						{
+							"name": "Deploy Worker (tagged)",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079397103/job/101611675418"
+						}
+					]
+				},
+				{
+					"conclusion": "success",
+					"databaseId": 34079160701,
+					"headSha": "f257e0977e85358f9d02ed3f79a9fad8862e5117",
+					"status": "completed",
+					"url": "https://github.com/nocoo/surety/actions/runs/34079160701",
+					"workflowName": "CI",
+					"jobs": [
+						{
+							"name": "quality / L1+G1+G2",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079160701/job/101610994900"
+						},
+						{
+							"name": "quality / L2 API E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079160701/job/101610995034"
+						},
+						{
+							"name": "quality / L3 Browser E2E",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079160701/job/101610995665"
+						},
+						{
+							"name": "quality / Worker Tests",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079160701/job/101610995776"
+						},
+						{
+							"name": "L3 Browser E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/surety/actions/runs/34079160701/job/101611079520"
+						}
+					]
+				}
+			],
+			"publicAssets": {
+				"project": "surety",
+				"website": "https://surety.hexly.ai",
+				"assets": [
+					{
+						"url": "https://surety.hexly.ai/logo-24.png?logo_revision=f257e0977e85",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34814,
+						"sha256": "f92f23fc8e80d45d9b8a17052368615948a3e6fe19989544344de116f7f19357",
+						"expectedSha256": "67341459677d816a6bc663418f05b32ce47a2a4db5deb0454c529343f753398c",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/surety.hexly.ai"
+					},
+					{
+						"url": "https://surety.hexly.ai/logo-80.png?logo_revision=f257e0977e85",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34814,
+						"sha256": "1c502e9c1dd5db4c470252fa859cf72ed220e8c13868e5fbfc4830ca78bede59",
+						"expectedSha256": "91ee0c1ab2edf6d5dbd7a07c64853616a622e84b5fe9bc7e6a3e40828e07927c",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/surety.hexly.ai"
+					},
+					{
+						"url": "https://surety.hexly.ai/logo-256.png?logo_revision=f257e0977e85",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34806,
+						"sha256": "30bff74cf498bf58415a36b59c26495d39b915ba49324b30f91d98c3dac15940",
+						"expectedSha256": "5d24317bef4e1b63cfb7644c817f9201e22b4828743fe57b29cd52d4b6e0a2ea",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/surety.hexly.ai"
+					},
+					{
+						"url": "https://surety.hexly.ai/favicon.png?logo_revision=f257e0977e85",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34814,
+						"sha256": "500e02373416b7fa449cc63181f277dda2d79b33316ba04ed49423851cf5dbec",
+						"expectedSha256": "cc9dac7c9d17f9f311141bf8d1e4a08f08ecb15220c6d76da512f0688ca21589",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/surety.hexly.ai"
+					},
+					{
+						"url": "https://surety.hexly.ai/apple-touch-icon.png?logo_revision=f257e0977e85",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34838,
+						"sha256": "b7f45ba0eee2914eca68900e8c5cb97813a97d742113253daf5fec95d83a44e2",
+						"expectedSha256": "4669f8b180561cce8d4aca7673b7d582a7ecd06f006b6ba7cb44a8cc48b6a739",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/surety.hexly.ai"
+					},
+					{
+						"url": "https://surety.hexly.ai/og-image.png?logo_revision=f257e0977e85",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34806,
+						"sha256": "8169955a7a376791551be7daa7d3504fbc57444a58d90ea0cd09d6305dc40bca",
+						"expectedSha256": "5e9314f263447db0c6e6fb6a4e5defde0dfde1c8753b95c12dce297f2adc5d51",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/surety.hexly.ai"
+					}
+				],
+				"status": "access-protected",
+				"limitation": "Public requests redirect to Cloudflare Access. Image hashes are verified in the source checkout and deployed revision; unauthenticated public bytes are not claimed. Access policy was not changed."
+			}
+		},
+		{
+			"project": "owl",
+			"repo": "/Users/nocoo/workspace/personal/owl",
+			"commit": "e1c69addb656e8907a8828001e1f5c103f3b9fbf",
+			"study": "2026-09-07-01",
+			"finishing": "01",
+			"audit": "2026-09-07-redesign",
+			"remoteMain": "e1c69addb656e8907a8828001e1f5c103f3b9fbf",
+			"sourceCommitPublished": true,
+			"runs": [
+				{
+					"conclusion": "success",
+					"databaseId": 34079168722,
+					"headSha": "e1c69addb656e8907a8828001e1f5c103f3b9fbf",
+					"status": "completed",
+					"url": "https://github.com/nocoo/owl/actions/runs/34079168722",
+					"workflowName": "CI",
+					"jobs": [
+						{
+							"name": "build-and-test",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/owl/actions/runs/34079168722/job/101611017935"
+						},
+						{
+							"name": "security",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/owl/actions/runs/34079168722/job/101611017978"
+						}
+					]
+				}
+			],
+			"publicAssets": {
+				"project": "owl",
+				"status": "not-applicable",
+				"reason": "No public website declared; source adoption and CI verified separately."
+			}
+		},
+		{
+			"project": "ellie",
+			"repo": "/Users/nocoo/workspace/personal/ellie",
+			"commit": "300b8540eac51ae21803a8d58ebffbe3d90efa24",
+			"study": "2026-09-07-01",
+			"finishing": "01",
+			"audit": "2026-09-07-redesign",
+			"remoteMain": "300b8540eac51ae21803a8d58ebffbe3d90efa24",
+			"sourceCommitPublished": true,
+			"runs": [
+				{
+					"conclusion": "success",
+					"databaseId": 34079441649,
+					"headSha": "300b8540eac51ae21803a8d58ebffbe3d90efa24",
+					"status": "completed",
+					"url": "https://github.com/nocoo/ellie/actions/runs/34079441649",
+					"workflowName": "Release",
+					"jobs": [
+						{
+							"name": "Build images & deploy",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079441649/job/101611802734"
+						}
+					]
+				},
+				{
+					"conclusion": "success",
+					"databaseId": 34079194977,
+					"headSha": "300b8540eac51ae21803a8d58ebffbe3d90efa24",
+					"status": "completed",
+					"url": "https://github.com/nocoo/ellie/actions/runs/34079194977",
+					"workflowName": "CI",
+					"jobs": [
+						{
+							"name": "G2 Security Scan (OSV)",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093128"
+						},
+						{
+							"name": "Release Workflow Smoke",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093246"
+						},
+						{
+							"name": "L2 API E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093249"
+						},
+						{
+							"name": "L3 Browser E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093291"
+						},
+						{
+							"name": "quality / L1+G1+G2",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093496"
+						},
+						{
+							"name": "quality / L3 Browser E2E",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093949"
+						},
+						{
+							"name": "quality / Worker Tests",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611093961"
+						},
+						{
+							"name": "quality / L2 API E2E",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/ellie/actions/runs/34079194977/job/101611094174"
+						}
+					]
+				}
+			],
+			"publicAssets": {
+				"project": "ellie",
+				"status": "not-applicable",
+				"reason": "No public website declared; source adoption and CI verified separately."
+			}
+		},
+		{
+			"project": "giraffe",
+			"repo": "/tmp/giraffe-logo-20260907",
+			"commit": "c71543478405f580e6dd36ebac18174f7ae6e474",
+			"study": "2026-09-07-01",
+			"finishing": "02",
+			"audit": "2026-09-07-redesign",
+			"remoteMain": "c71543478405f580e6dd36ebac18174f7ae6e474",
+			"sourceCommitPublished": true,
+			"runs": [
+				{
+					"conclusion": "success",
+					"databaseId": 34079267489,
+					"headSha": "c71543478405f580e6dd36ebac18174f7ae6e474",
+					"status": "completed",
+					"url": "https://github.com/nocoo/giraffe/actions/runs/34079267489",
+					"workflowName": "Release",
+					"jobs": [
+						{
+							"name": "Deploy Worker (tagged)",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079267489/job/101611308510"
+						},
+						{
+							"name": "Deploy Worker (main)",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079267489/job/101611308540"
+						}
+					]
+				},
+				{
+					"conclusion": "success",
+					"databaseId": 34079218713,
+					"headSha": "c71543478405f580e6dd36ebac18174f7ae6e474",
+					"status": "completed",
+					"url": "https://github.com/nocoo/giraffe/actions/runs/34079218713",
+					"workflowName": "CI",
+					"jobs": [
+						{
+							"name": "quality / L2 API E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079218713/job/101611164460"
+						},
+						{
+							"name": "quality / L1+G1+G2",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079218713/job/101611164610"
+						},
+						{
+							"name": "quality / L3 Browser E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079218713/job/101611164666"
+						},
+						{
+							"name": "quality / Self-dispatch: refresh latest run",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079218713/job/101611165010"
+						},
+						{
+							"name": "quality / Worker Tests",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/giraffe/actions/runs/34079218713/job/101611165112"
+						}
+					]
+				}
+			],
+			"publicAssets": {
+				"project": "giraffe",
+				"website": "https://giraffe.hexly.ai",
+				"assets": [
+					{
+						"url": "https://giraffe.hexly.ai/logo-24.png?logo_revision=c71543478405",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34807,
+						"sha256": "d7250f06bba9aadf7207e3d0009c1d11cb6806878454dce4fb24357da7a68a1d",
+						"expectedSha256": "827de2b1b5d63036f9f6a9a3b9376f3e0c84a062995812a28644efdfb9a094a0",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/giraffe.hexly.ai"
+					},
+					{
+						"url": "https://giraffe.hexly.ai/logo-32.png?logo_revision=c71543478405",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34807,
+						"sha256": "70915f747eccec5ec18431a29d5c03c0372ee98bbf01385712f6ee7a0e54369a",
+						"expectedSha256": "764ef521e3932aa3d0ff274b052effbdae3b2566a1176409d30f2e98d3c98c7b",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/giraffe.hexly.ai"
+					},
+					{
+						"url": "https://giraffe.hexly.ai/apple-touch-icon.png?logo_revision=c71543478405",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34831,
+						"sha256": "89b928943a86ff1459b78cec9fcf5c24b3c7a136f2049fc9b1164038a2c22884",
+						"expectedSha256": "7626a4ca408f223cb859c83e9b3324fae7f8fde9577ac41790b4d00c9b3b00a8",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/giraffe.hexly.ai"
+					}
+				],
+				"status": "access-protected",
+				"limitation": "Public requests redirect to Cloudflare Access. Image hashes are verified in the source checkout and deployed revision; unauthenticated public bytes are not claimed. Access policy was not changed."
+			}
+		},
+		{
+			"project": "steed",
+			"repo": "/Users/nocoo/workspace/personal/steed",
+			"commit": "bcab1f113b9b7cde65898bbd23705c7dac339634",
+			"study": "2026-09-07-02",
+			"finishing": "01",
+			"audit": "2026-09-07-redesign",
+			"remoteMain": "bcab1f113b9b7cde65898bbd23705c7dac339634",
+			"sourceCommitPublished": true,
+			"runs": [
+				{
+					"conclusion": "success",
+					"databaseId": 34080028810,
+					"headSha": "bcab1f113b9b7cde65898bbd23705c7dac339634",
+					"status": "completed",
+					"url": "https://github.com/nocoo/steed/actions/runs/34080028810",
+					"workflowName": "Release",
+					"jobs": [
+						{
+							"name": "Deploy Worker (production)",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/steed/actions/runs/34080028810/job/101613441614"
+						}
+					]
+				},
+				{
+					"conclusion": "success",
+					"databaseId": 34079963132,
+					"headSha": "bcab1f113b9b7cde65898bbd23705c7dac339634",
+					"status": "completed",
+					"url": "https://github.com/nocoo/steed/actions/runs/34079963132",
+					"workflowName": "CI",
+					"jobs": [
+						{
+							"name": "quality / L2 API E2E",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/steed/actions/runs/34079963132/job/101613255486"
+						},
+						{
+							"name": "quality / L1+G1+G2",
+							"status": "completed",
+							"conclusion": "success",
+							"url": "https://github.com/nocoo/steed/actions/runs/34079963132/job/101613255507"
+						},
+						{
+							"name": "quality / L3 Browser E2E",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/steed/actions/runs/34079963132/job/101613255920"
+						},
+						{
+							"name": "quality / Worker Tests",
+							"status": "completed",
+							"conclusion": "skipped",
+							"url": "https://github.com/nocoo/steed/actions/runs/34079963132/job/101613256206"
+						}
+					]
+				}
+			],
+			"publicAssets": {
+				"project": "steed",
+				"website": "https://steed.hexly.ai",
+				"assets": [
+					{
+						"url": "https://steed.hexly.ai/logo-24.png?logo_revision=bcab1f113b9b",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34789,
+						"sha256": "c98d04146967b89fc929c131c0ebbdcc2c431ba7bdca2ec1b60209baa8e8fc6c",
+						"expectedSha256": "37e05a244608b19acf1956a08295b0c2ba601335b4db27815ce26b7c4dba0955",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/steed.hexly.ai"
+					},
+					{
+						"url": "https://steed.hexly.ai/logo-80.png?logo_revision=bcab1f113b9b",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34789,
+						"sha256": "4cc40c90585eed57674bd816fb3ad1a74fab7a6d5fda4c81096a1a373389ec93",
+						"expectedSha256": "9aa18c2f25c9fa3dc04042808e4037c75af76b0fd0a5d7c30cb568bd4ca91f4b",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/steed.hexly.ai"
+					},
+					{
+						"url": "https://steed.hexly.ai/apple-touch-icon.png?logo_revision=bcab1f113b9b",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34813,
+						"sha256": "67a31787533058d78585d210d98c40798540537bad263adbc7de08f84881d07f",
+						"expectedSha256": "42e1080c17e9864b0c9fe76c4c54a3ef069334fc9ecd6756a64936a70e20792e",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/steed.hexly.ai"
+					},
+					{
+						"url": "https://steed.hexly.ai/og-image.png?logo_revision=bcab1f113b9b",
+						"status": 200,
+						"type": "text/html",
+						"bytes": 34813,
+						"sha256": "57e04ca87ab023d412feb8169d1027f3684cadd2126d4c22d23514bc0e10a1d8",
+						"expectedSha256": "c0b7bbed8fff9efc3799f1468b01553d2915620c1450d3c35245e52918db1eae",
+						"matches": null,
+						"accessProtected": true,
+						"finalOrigin": "https://nocoo.cloudflareaccess.com",
+						"finalPath": "/cdn-cgi/access/login/steed.hexly.ai"
+					}
+				],
+				"status": "access-protected",
+				"limitation": "Public requests redirect to Cloudflare Access. Image hashes are verified in the source checkout and deployed revision; unauthenticated public bytes are not claimed. Access policy was not changed."
+			}
+		}
+	],
+	"publicAssetsCheckedAt": "2026-09-07T04:12:21.964045+00:00"
+}

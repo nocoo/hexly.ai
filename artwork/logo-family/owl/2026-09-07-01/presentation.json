@@ -1,0 +1,88 @@
+{
+	"project": "owl",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#5f6684",
+		"light": "#a8aec5",
+		"shade": "#363c55",
+		"motif": "#262a43",
+		"grainAmplitude": 1,
+		"grainSeed": 609080,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Night aperture relief",
+			"description": "An off-center observatory aperture uses wide interrupted crescent steps and two rectangular notches. Its asymmetric nested opening differs from flowing curves, feather stripes, and circular light orbits.",
+			"layers": [
+				{
+					"d": "M1138 917C859 1040 661 902 694 681L726 681L726 578C739 423 862 329 1038 371L1124 392",
+					"tone": "motif",
+					"strokeWidth": 38
+				},
+				{
+					"d": "M1141 940C836 1068 637 905 671 662L704 662L704 575C720 402 860 307 1047 350",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1160 713C1033 809 920 756 924 645L947 645L947 610C954 551 1017 521 1084 552",
+					"tone": "ribbon",
+					"strokeWidth": 34
+				},
+				{
+					"d": "M-100 127H63V173C196 179 266 92 240-69",
+					"tone": "motif",
+					"strokeWidth": 33
+				},
+				{
+					"d": "M-100 149H45V194C209 204 290 93 262-71",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-76 406C164 454 348 285 329 78H291V-78",
+					"tone": "ribbon",
+					"strokeWidth": 29
+				}
+			]
+		},
+		"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+	},
+	"shadows": [
+		{
+			"color": [29, 31, 35],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [23, 26, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform centered 90% placement protects both ear tufts, the complete feather, and every talon. The compact whole owl remains intact."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/owl.png",
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+	}
+}

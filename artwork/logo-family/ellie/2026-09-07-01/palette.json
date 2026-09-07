@@ -1,0 +1,92 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels inside named anatomical regions; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Mineral gray",
+				"zh": "矿石灰"
+			},
+			"role": "primary",
+			"color": "#9dabb7",
+			"pixel": [1096, 759],
+			"rgb": [157, 171, 183],
+			"sourceSha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5"
+		},
+		{
+			"label": {
+				"en": "Slate planes",
+				"zh": "岩蓝色面"
+			},
+			"role": "accent",
+			"color": "#395970",
+			"pixel": [1480, 1164],
+			"rgb": [57, 89, 112],
+			"sourceSha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5"
+		},
+		{
+			"label": {
+				"en": "Ivory tusk",
+				"zh": "象牙白"
+			},
+			"role": "accent",
+			"color": "#e9dac5",
+			"pixel": [1234, 1345],
+			"rgb": [233, 218, 197],
+			"sourceSha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5"
+		},
+		{
+			"label": {
+				"en": "Airplane teal",
+				"zh": "纸飞机青色"
+			},
+			"role": "accent",
+			"color": "#248aa0",
+			"pixel": [1762, 677],
+			"rgb": [36, 138, 160],
+			"sourceSha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5"
+		},
+		{
+			"label": {
+				"en": "Airplane plum",
+				"zh": "纸飞机浅紫色"
+			},
+			"role": "accent",
+			"color": "#9379a2",
+			"pixel": [1881, 852],
+			"rgb": [147, 121, 162],
+			"sourceSha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5"
+		}
+	],
+	"presentation": {
+		"base": "#537b93",
+		"light": "#a9c5cf",
+		"shade": "#2c4c65",
+		"motif": "#19374f",
+		"pattern": "Mineral listening folds",
+		"status": "Selected in the owner-delegated five-project redesign batch."
+	},
+	"website": {
+		"primary": "#016698",
+		"background": "#ffffff",
+		"theme": {
+			"background": {
+				"value": "0 0% 100%",
+				"source": "apps/web/src/app/tailwind.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/app/tailwind.css --foreground"
+			},
+			"primary": {
+				"value": "200 99% 30%",
+				"source": "apps/web/src/app/tailwind.css --primary"
+			}
+		},
+		"note": "Existing product UI colors are independent of native artwork and the designed presentation."
+	}
+}

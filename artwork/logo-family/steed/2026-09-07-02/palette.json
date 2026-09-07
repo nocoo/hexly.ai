@@ -1,0 +1,92 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels inside named anatomical regions; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Chestnut coat",
+				"zh": "栗棕毛色"
+			},
+			"role": "primary",
+			"color": "#ba7135",
+			"pixel": [659, 480],
+			"rgb": [186, 113, 53],
+			"sourceSha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12"
+		},
+		{
+			"label": {
+				"en": "Chocolate mane",
+				"zh": "巧克力色鬃毛"
+			},
+			"role": "accent",
+			"color": "#4d3428",
+			"pixel": [1165, 638],
+			"rgb": [77, 52, 40],
+			"sourceSha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12"
+		},
+		{
+			"label": {
+				"en": "Ivory blaze",
+				"zh": "象牙白额纹"
+			},
+			"role": "accent",
+			"color": "#f3d2a9",
+			"pixel": [1153, 982],
+			"rgb": [243, 210, 169],
+			"sourceSha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12"
+		},
+		{
+			"label": {
+				"en": "Bird turquoise",
+				"zh": "小鸟松石色"
+			},
+			"role": "accent",
+			"color": "#309eaf",
+			"pixel": [1632, 1233],
+			"rgb": [48, 158, 175],
+			"sourceSha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12"
+		},
+		{
+			"label": {
+				"en": "Bird coral",
+				"zh": "小鸟珊瑚色"
+			},
+			"role": "accent",
+			"color": "#eb8361",
+			"pixel": [1459, 1107],
+			"rgb": [235, 131, 97],
+			"sourceSha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12"
+		}
+	],
+	"presentation": {
+		"base": "#53817c",
+		"light": "#a4bdb0",
+		"shade": "#305651",
+		"motif": "#1e403c",
+		"pattern": "Canter pleats",
+		"status": "Selected in the owner-delegated five-project redesign batch."
+	},
+	"website": {
+		"primary": "#1da599",
+		"background": "#eef1f1",
+		"theme": {
+			"background": {
+				"value": "180 10% 94%",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "180 10% 10%",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "175 70% 38%",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"note": "Existing product UI colors are independent of native artwork and the designed presentation."
+	}
+}

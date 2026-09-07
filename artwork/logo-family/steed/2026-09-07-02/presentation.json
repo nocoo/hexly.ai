@@ -1,0 +1,79 @@
+{
+	"project": "steed",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#53817c",
+		"light": "#a4bdb0",
+		"shade": "#305651",
+		"motif": "#1e403c",
+		"grainAmplitude": 1,
+		"grainSeed": 609083,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Canter pleats",
+			"description": "Three unequal wind-fold panels lean and taper through the viewfinder. Long open curves with offset creases create the rhythm of a canter without repeating the zebra stripe stencil or a feather motif.",
+			"layers": [
+				{
+					"d": "M-103 1130C22 916 87 652 279 445C401 313 433 157 395-103L575-103C560 149 481 332 356 480C189 679 114 933 89 1130Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M95 1131C129 922 202 681 367 487C495 336 574 146 583-103",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M259 1135C292 884 446 734 608 655C813 555 914 303 891-104L1093-104C1080 323 938 559 720 708C551 821 442 975 433 1135Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M433 1135C451 970 560 822 729 712C947 569 1087 331 1101-98",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M762 1116C790 993 913 936 1113 895V1016C974 1038 916 1070 899 1116Z",
+					"tone": "motif"
+				}
+			]
+		},
+		"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+	},
+	"shadows": [
+		{
+			"color": [29, 31, 35],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [23, 26, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [103, 103],
+		"intentionalEdges": ["bottom", "lower-right"],
+		"note": "Uniform 90% bottom-right-anchored placement protects the complete ears, mane tips, muzzle, and external bird. The existing natural equine shoulder continues to both lower boundaries without a painted extension or an exposed internal cut."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/steed.png",
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+	}
+}

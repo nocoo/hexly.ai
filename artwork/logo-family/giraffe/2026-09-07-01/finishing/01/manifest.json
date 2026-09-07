@@ -1,0 +1,398 @@
+{
+	"createdAt": "2026-09-07T02:47:46.657Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "55739caf938b94207c5c96f556004413cec9373db619deb31aab784b602be603",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "giraffe",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#79865b",
+			"light": "#b9c398",
+			"shade": "#4b5c39",
+			"motif": "#354629",
+			"grainAmplitude": 1,
+			"grainSeed": 609082,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Acacia canopy relief",
+				"description": "Staggered flat-topped acacia canopies and a few angled branching stems form broad pressed impressions. Unequal canopy spans and open lower branches keep this distinct from leaf wreaths and regular tessellation.",
+				"layers": [
+					{
+						"d": "M-83 176C1 92 147 72 250 123C291 91 364 106 416 172L422 198H-83Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-80 202H420",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M227 197L216 324L159 412M216 324L308 389",
+						"tone": "motif",
+						"strokeWidth": 19
+					},
+					{
+						"d": "M704 329C779 253 922 230 1066 276L1139 329V353H700Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M707 355H1134",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M908 355L925 492L1030 587M925 492L853 557",
+						"tone": "ribbon",
+						"strokeWidth": 20
+					},
+					{
+						"d": "M704 988C825 906 1008 917 1130 1008V1048H707Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M709 1050H1122",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-114 738C-3 661 143 670 256 748V774H-114Z",
+						"tone": "ribbon"
+					}
+				]
+			},
+			"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+		},
+		"shadows": [
+			{
+				"color": [
+					29,
+					31,
+					35
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					23,
+					26,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.86,
+			"offsetAt2048": [
+				0,
+				143
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Uniform 86% bottom-anchored placement gives the horns, ears, and entire sprig rounded-corner room while preserving the natural diagonal neck entry. No neck stretching or fabricated shoulder."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/giraffe.png",
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2494260,
+		"foregroundPixels": 1700044,
+		"softEdgePixels": 16990,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 90,
+			"top": 97,
+			"right": 1911,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.86,
+		"offsetAt2048": [
+			0,
+			143
+		],
+		"bounds": {
+			"left": 220,
+			"top": 369,
+			"right": 1786,
+			"bottom": 2046
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -61.161186770566985,
+		"clippedPixels": 4416
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2901,
+			"sha256": "7b636aa569df97e98858ed42cd188a46dcf52163fd30b14b69c31ef652598341"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1432,
+			"sha256": "4772baeb5a3fadb545c8c3dcb251c2950291f9bce69c59b49836746718c0b362"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3863806,
+			"sha256": "2c07948071de157376fea98339c8add981a8f663adff46fd0b6cad7e3134db16"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 96264,
+			"sha256": "a07615e143a48441d1327b8e61378c6952f3cc52d6de11e77aaf065ea3d21140"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1271,
+			"sha256": "b7594d192d3e59d62ac5634a6247cea2783c894c50edf8d0348955d1d0b7335d"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2266217,
+			"sha256": "357a98673cf033f131ff5733cd3a34a367d529010f221cabb0066b9b104fff0e"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3073856,
+			"sha256": "5e3158cc7cfe8cb40114450636c5634a58c6a7a47fcc7301c413565c2e73c503"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 120197,
+			"sha256": "7a472f6d6fed526e957111e33b201d2633b142604cb67e875059da5039798679"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 196602,
+			"sha256": "8fe89fb08e198ad170fcfa8f4afe33cc4f0ae5783edcc5b6cb60b8e4619f56d3"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 142768,
+			"sha256": "79387179170dbf50b1da9005e513829b37eff0ab50ded5cb7d20821d9b5119cd"
+		},
+		{
+			"path": "exports/giraffe-transparent-2048.png",
+			"bytes": 3073856,
+			"sha256": "5e3158cc7cfe8cb40114450636c5634a58c6a7a47fcc7301c413565c2e73c503"
+		},
+		{
+			"path": "exports/giraffe-icon-2048.png",
+			"bytes": 5113968,
+			"sha256": "26ce2756dfa1b4043f64b5fadd5ebeb12fb50fee6e58b84abf6927202671207c"
+		},
+		{
+			"path": "exports/giraffe-rounded-2048.png",
+			"bytes": 5013309,
+			"sha256": "e38621a90bdae7ceab0049337e38eec16a3915357111855110498c6d6dd3d65d"
+		},
+		{
+			"path": "exports/giraffe-transparent-1024.png",
+			"bytes": 855973,
+			"sha256": "96edd9c433467b4f895f26f6c8344455b4f0d0f26e84c48ff4df433c0b9e71f0"
+		},
+		{
+			"path": "exports/giraffe-icon-1024.png",
+			"bytes": 1322589,
+			"sha256": "c0a43abaaad9217b62e4ecd488c12f9f3b2558a271214f9f2a7d4af292854fc1"
+		},
+		{
+			"path": "exports/giraffe-rounded-1024.png",
+			"bytes": 1313494,
+			"sha256": "ff393e8ed32b771967242c571938a0be6406ac4c2600daf3e3352bc9a128ec13"
+		},
+		{
+			"path": "exports/giraffe-transparent-512.png",
+			"bytes": 249693,
+			"sha256": "880ba4a223c95aa01ed04f565c161810970563a3475c2f461921f5e3a9f9edae"
+		},
+		{
+			"path": "exports/giraffe-icon-512.png",
+			"bytes": 396831,
+			"sha256": "2263c955429aa89585b8f1f3582a93f6ccbd9d0970dc9eda3cc410b870a0a81a"
+		},
+		{
+			"path": "exports/giraffe-rounded-512.png",
+			"bytes": 395939,
+			"sha256": "db30ed72fc178a7727a0e2106faa7fcf7b16bb12850ac83042ab5c694f518e41"
+		},
+		{
+			"path": "exports/giraffe-transparent-256.png",
+			"bytes": 72402,
+			"sha256": "087660463c9ef1ed1f4adc7361dd3b6bbdacdf80969a66dc5fd0393283f428d1"
+		},
+		{
+			"path": "exports/giraffe-icon-256.png",
+			"bytes": 99533,
+			"sha256": "38d3ba8b6695b29ac102c20c1fd18963e484e810cfd9d128265384daef350fbb"
+		},
+		{
+			"path": "exports/giraffe-rounded-256.png",
+			"bytes": 101957,
+			"sha256": "c2724f6cb680a19c47b605c70548765a4cb685176ba9d75b812767041d387828"
+		},
+		{
+			"path": "exports/giraffe-transparent-128.png",
+			"bytes": 20683,
+			"sha256": "e2d4eda7e88549d20fea59b0246262a9be22da1d47195485a4dc6757b2767233"
+		},
+		{
+			"path": "exports/giraffe-icon-128.png",
+			"bytes": 30198,
+			"sha256": "ff1ed98a1d5ba45d748461f23ed8968ddca7863e0b3efc5cdaba42989a8ed8eb"
+		},
+		{
+			"path": "exports/giraffe-rounded-128.png",
+			"bytes": 31468,
+			"sha256": "32a4e8092aee25c0b79ed0333ecdf737574774638a2e1ccdaeefecad8325bd94"
+		},
+		{
+			"path": "exports/giraffe-transparent-64.png",
+			"bytes": 6142,
+			"sha256": "39823c455afee8c34b9930dc55a43598e7f8e9d3777a0b31ca63a5eda4831f8c"
+		},
+		{
+			"path": "exports/giraffe-icon-64.png",
+			"bytes": 9679,
+			"sha256": "1ab45bed29e45e33f8f9adcd047e233d561f5ec477a3259fa82048716bd10e12"
+		},
+		{
+			"path": "exports/giraffe-rounded-64.png",
+			"bytes": 10233,
+			"sha256": "959b080e6685ec2f2fabc4a3130e762bbec55a2a07da655f4dd4c4a50bc01864"
+		},
+		{
+			"path": "exports/giraffe-transparent-48.png",
+			"bytes": 3783,
+			"sha256": "cc6a5d123d7aae2df6b1d88a07e08a90610b851aa6cec8a042e9a212d76e96d1"
+		},
+		{
+			"path": "exports/giraffe-icon-48.png",
+			"bytes": 5999,
+			"sha256": "f819ece4e08ef19730088898063b5a63b719c1771cc05bcbb9a4d465d8bd468d"
+		},
+		{
+			"path": "exports/giraffe-rounded-48.png",
+			"bytes": 6336,
+			"sha256": "3309c57660a2618c10edd188cd590fd362240ca7cad3730eb8cece5cb728caed"
+		},
+		{
+			"path": "exports/giraffe-transparent-32.png",
+			"bytes": 1981,
+			"sha256": "879474eb2bef6ef5bdcdded7f928396abfd98291c57e95ba257d7a27232f4c39"
+		},
+		{
+			"path": "exports/giraffe-icon-32.png",
+			"bytes": 3134,
+			"sha256": "d89831f477cef90b7046920e9240c158763ac2036079d3dba6ff97ca8394d2b9"
+		},
+		{
+			"path": "exports/giraffe-rounded-32.png",
+			"bytes": 3258,
+			"sha256": "2b08019e92d17bd0c2b646be4c3991a51fae41eea309d7cecbe44ae9de4e3248"
+		},
+		{
+			"path": "exports/giraffe-transparent-24.png",
+			"bytes": 1326,
+			"sha256": "8afa3a1ae929bf75573197809aec83a4b688c162a8b1612f5869cf54657fc4f5"
+		},
+		{
+			"path": "exports/giraffe-icon-24.png",
+			"bytes": 1922,
+			"sha256": "4aae7dcb512cd48469cbee9bd971c682f47746384495dacb8a1c5ae0f9c1d03c"
+		},
+		{
+			"path": "exports/giraffe-rounded-24.png",
+			"bytes": 2024,
+			"sha256": "5423657c78ddbba6c5c851b15bcbfdf38db59faf01d8a93fb235d4b94c489a18"
+		},
+		{
+			"path": "exports/giraffe-transparent-16.png",
+			"bytes": 740,
+			"sha256": "5419d6fbb6684b6b231e1d7be8f2018c9a626e6e82eca2eaeea865ba58565f45"
+		},
+		{
+			"path": "exports/giraffe-icon-16.png",
+			"bytes": 974,
+			"sha256": "e6f6bb8c3d86604847fd6934d58a40c2101d48d219066c0090ea0ec87ae495db"
+		},
+		{
+			"path": "exports/giraffe-rounded-16.png",
+			"bytes": 1017,
+			"sha256": "83dbe1509f5f0885ec3b1854731ed4b5cff00a44b14f1376c12f618d14e03206"
+		},
+		{
+			"path": "exports/giraffe-white-2048.png",
+			"bytes": 2872910,
+			"sha256": "59cb44a3406570320d38bba3a60ddb8d45aff8055d93b3b582e6431fad2e2222"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 811199,
+			"sha256": "c7f3012e7e189dcee5067c52837eae385fcadc31011bc3e566089b4e7d57cf63"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 812017,
+			"sha256": "89426a2f4f059d249a63a2725e46818de6b6f2e63b4bbf6e26a8b795512802d6"
+		}
+	]
+}
