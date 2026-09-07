@@ -1,0 +1,416 @@
+{
+	"createdAt": "2026-09-07T01:49:31.097Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "raven",
+		"background": {
+			"base": "#b0a6c5",
+			"light": "#d8d2e4",
+			"shade": "#877799",
+			"motif": "#655174",
+			"grainAmplitude": 1,
+			"grainSeed": 609084,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.27,
+			"ribbonOpacity": 0.15,
+			"pattern": {
+				"name": "Quill pennants",
+				"description": "Staggered broad pointed feather impressions cross the upper-left field. A separate slender quill turns at the upper-right, with asymmetric spacing and shallow lit seams.",
+				"layers": [
+					{
+						"d": "M-61 311L18 173L239 44L352-32L251 107L62 231Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-63 507L41 356L253 215L400 83L310 259L110 400Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-26 657L93 553L250 482L393 347L317 522L164 597Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M18 235L249 111L353-30",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M52 407L309 263L401 84",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M736-83C773 58 859 135 1086 194L980 215C828 174 746 114 715-11Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M739-32C776 103 859 159 1066 205",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+		},
+		"shadows": [
+			{
+				"color": [
+					49,
+					43,
+					62
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					42,
+					36,
+					52
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/raven.png",
+		"framing": {
+			"scale": 0.88,
+			"offsetAt2048": [
+				0,
+				123
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"note": "Uniform 88% bottom-aligned placement; the head and accessories retain their exact relative proportions. A narrow source-colored continuation of the existing folded wing restores the left frame entry exposed by the inset. Protect expressive features separately from intentional lower shoulder intersections.",
+			"continuation": {
+				"path": "input/shoulder-continuation.svg",
+				"sha256": "2d76765d5fb779bdfd269e31ddba64aa697b828d82521b9bd1bea2335f1eaed7",
+				"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher."
+			}
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 128,
+			"calibrationNote": "Native background sampled at [251,252,252] or [251,251,251]. Pass 01 revealed separate pale residue only on the native top border (maximum component 63 pixels), unrelated to anatomy. A broader near-white chroma window and a 128-pixel isolated-component threshold clear that residue. All four animals and retained accessories are connected; enclosed eyes remain protected. Inspect the complete alpha delta and pale anatomy before adoption."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1642429,
+		"foregroundPixels": 2551875,
+		"softEdgePixels": 8761,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 265,
+			"right": 2018,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.88,
+		"offsetAt2048": [
+			0,
+			123
+		],
+		"bounds": {
+			"left": 0,
+			"top": 480,
+			"right": 1899,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 48354
+	},
+	"emission": [],
+	"continuation": {
+		"path": "input/shoulder-continuation.svg",
+		"sha256": "2d76765d5fb779bdfd269e31ddba64aa697b828d82521b9bd1bea2335f1eaed7",
+		"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher.",
+		"addedPixels": 41790,
+		"opaquePixelsPreserved": 1964006
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3362,
+			"sha256": "d61b6ac7cef70ba58e10ec233a08fcac36c9342ee7d025d965e547848214797a"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1233,
+			"sha256": "7dcc85f4b39e6f27495921d7482c7107830261fa4e8ca53a6f9617e8b8768e5f"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2701324,
+			"sha256": "07f617442728046bcfe1b6f5922be6550fd421d7e4263bce228dcd6365aab9bd"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 55517,
+			"sha256": "eb45a5941c37ac640fd8269d5427f56fd79d355d6cacbbbef0374fe4bd8c65b3"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1072,
+			"sha256": "960d5ed691f42a20b4e533a7f8a231f5f20d055f9975ef6816afe36d359d1462"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2316766,
+			"sha256": "941512c7da652ee8e5013e0bf1562577dd8dda8a91c238239de041445d7c3f73"
+		},
+		{
+			"path": "edge-continuation.svg",
+			"bytes": 296,
+			"sha256": "2d76765d5fb779bdfd269e31ddba64aa697b828d82521b9bd1bea2335f1eaed7"
+		},
+		{
+			"path": "edge-continuation.png",
+			"bytes": 21848,
+			"sha256": "dcbb7334de89b456d4d804a7489e87bb37529f143d3b7605e3ac7127b372a4e6"
+		},
+		{
+			"path": "placed-source.png",
+			"bytes": 2324296,
+			"sha256": "94ade4273ab7e043aea9867495c64888cf882da4f9665ad1861c4f71e61288b6"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2327803,
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 73708,
+			"sha256": "ceb07486ddcdb0dd7e3f9fc3931a3f95bc09b5ee28b17ad9f487e53bb45eaf6f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 148204,
+			"sha256": "a5cdd34675d68f8c99412233dbc12bcd2bc74028d4e5e07dd47feb4aba9bdadb"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 127810,
+			"sha256": "47f23d2d59b546b67fee9ea2bfbf3feb77274a2d50946854330d5b3f22c287f0"
+		},
+		{
+			"path": "exports/raven-transparent-2048.png",
+			"bytes": 2327803,
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+		},
+		{
+			"path": "exports/raven-icon-2048.png",
+			"bytes": 3848317,
+			"sha256": "bda85a414525de14ce551d234dbdc44161b447d8cdae0d88f7c6f026382bd32e"
+		},
+		{
+			"path": "exports/raven-rounded-2048.png",
+			"bytes": 3755968,
+			"sha256": "4ee7bf35d7a313219f2157233e5475a758ecade16ce465e02f60a1661d7ae781"
+		},
+		{
+			"path": "exports/raven-transparent-1024.png",
+			"bytes": 757191,
+			"sha256": "7dcdb85fb5f09bd0544f11a73a6a060d584a8cc54819c69b98a2fddd9cd1b961"
+		},
+		{
+			"path": "exports/raven-icon-1024.png",
+			"bytes": 1112261,
+			"sha256": "f5e4162a1f850ada69ce06edd5bb5eea399170945f2c2f3fd745af6c9dc8db81"
+		},
+		{
+			"path": "exports/raven-rounded-1024.png",
+			"bytes": 1102522,
+			"sha256": "532f55f75355f4606cdffa35aeb2be8909d5f3307796064a9e21edd0e5505272"
+		},
+		{
+			"path": "exports/raven-transparent-512.png",
+			"bytes": 259900,
+			"sha256": "7a8bef4f03e3445ce997b81d05de1d3efaf11d0ee6007978bb0504b764459127"
+		},
+		{
+			"path": "exports/raven-icon-512.png",
+			"bytes": 377073,
+			"sha256": "15ccf8874f446f1f49ab3097a2b9aa395348052ce5f9124e5f8fd9ccc88ae3f8"
+		},
+		{
+			"path": "exports/raven-rounded-512.png",
+			"bytes": 375719,
+			"sha256": "59ee030bf9c49afdd994acfe32dbb4e5cf0228b6494eb4f8ac9a9d224df74257"
+		},
+		{
+			"path": "exports/raven-transparent-256.png",
+			"bytes": 86450,
+			"sha256": "0dbdfe6205e879a71e8f4defcf39940739cee9dd9c20ed5a59884a2f550f7302"
+		},
+		{
+			"path": "exports/raven-icon-256.png",
+			"bytes": 109305,
+			"sha256": "01579c1ffa616c9f4158fff46bc9b41d14d411a8ce2a88e38b3d5e541f0a6fb9"
+		},
+		{
+			"path": "exports/raven-rounded-256.png",
+			"bytes": 111277,
+			"sha256": "68ab5eadbef0146d93400b836bf0edd6b0464aadf6b6dadcde9fbb7c87718530"
+		},
+		{
+			"path": "exports/raven-transparent-128.png",
+			"bytes": 26406,
+			"sha256": "a40051b2af651c871619953002e9da51d4b8f3d7e25651ce194b0c2101ce357d"
+		},
+		{
+			"path": "exports/raven-icon-128.png",
+			"bytes": 34393,
+			"sha256": "ed32d1888227ff3df529d670766e223a0ba968a9014860cc07544eda0654f42f"
+		},
+		{
+			"path": "exports/raven-rounded-128.png",
+			"bytes": 35627,
+			"sha256": "cd10ffd4bc82d0db10ece1f7a71ed2979577922704b5c05a1db27a3754cc0559"
+		},
+		{
+			"path": "exports/raven-transparent-64.png",
+			"bytes": 7667,
+			"sha256": "64b8bf5e053909c640d1af1a1baecc91595a22946583f549f15da69a18734258"
+		},
+		{
+			"path": "exports/raven-icon-64.png",
+			"bytes": 10842,
+			"sha256": "784111a496bdb4b0dcd6e9a9ac8466b87ac2c0fa7824ced5c94d32bf5097498e"
+		},
+		{
+			"path": "exports/raven-rounded-64.png",
+			"bytes": 11253,
+			"sha256": "507f23fdaa93183f001b6f7b74d97072e5226222987ba304d7c317753bc179eb"
+		},
+		{
+			"path": "exports/raven-transparent-48.png",
+			"bytes": 4569,
+			"sha256": "611f9a60b2bb11d69dcf2660a0c1c453a938580a6f3d305c2018c2964f69c076"
+		},
+		{
+			"path": "exports/raven-icon-48.png",
+			"bytes": 6422,
+			"sha256": "3c5a627450422a3fc8ee9185b5491f0d3609a25e27f2494c3d7d650c8cfe4b1d"
+		},
+		{
+			"path": "exports/raven-rounded-48.png",
+			"bytes": 6736,
+			"sha256": "9eafc3c3fb0b0e711ace7ce5853e24a72f3c34e064ba2ef1b5cfafb3a9511c84"
+		},
+		{
+			"path": "exports/raven-transparent-32.png",
+			"bytes": 2286,
+			"sha256": "0e2c1107a4584cb0909a7fdd4b0ac784772763622089e3ed0a58bad9f880c2b5"
+		},
+		{
+			"path": "exports/raven-icon-32.png",
+			"bytes": 3287,
+			"sha256": "0992042aaae2f10d62b89185270a8130d3a17357adf45f0b177417b88f3cf4ac"
+		},
+		{
+			"path": "exports/raven-rounded-32.png",
+			"bytes": 3401,
+			"sha256": "4954d6b7d769cb866b4aa3773cb248ebca2f82a4d4e2620d90bc4b7d33dda6bd"
+		},
+		{
+			"path": "exports/raven-transparent-24.png",
+			"bytes": 1423,
+			"sha256": "38410b45b4b2afaad14dbdfd25fccadf9e9a23930dc42d0956e53d1dd169151e"
+		},
+		{
+			"path": "exports/raven-icon-24.png",
+			"bytes": 1968,
+			"sha256": "cfed7e22a365a8d348db2e5162fc9c4c3d9e9ec32e2ac2865f4fa18e26195736"
+		},
+		{
+			"path": "exports/raven-rounded-24.png",
+			"bytes": 2078,
+			"sha256": "3b2a2c8abb540dcdd3c2f856c61fe16e2b39e25bee3a861583c309d7bc0f61b3"
+		},
+		{
+			"path": "exports/raven-transparent-16.png",
+			"bytes": 789,
+			"sha256": "3403ec520133ef39cb46ad126068ceb64080d9b537798486ce8dc8c78e000901"
+		},
+		{
+			"path": "exports/raven-icon-16.png",
+			"bytes": 986,
+			"sha256": "000d7f388943e39eba116850a038932a8906f9e17884b4681871791e8e2e68f3"
+		},
+		{
+			"path": "exports/raven-rounded-16.png",
+			"bytes": 1020,
+			"sha256": "8f973d86cb36e22aafb5a1a523bb6bde13f7465e66b3be9820df74c1dbcfd7fe"
+		},
+		{
+			"path": "exports/raven-white-2048.png",
+			"bytes": 2171434,
+			"sha256": "55a7fadcc43fb46d2d88b9222d0af37d01ebc2c2077af90f97ea16941dba08bc"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 717792,
+			"sha256": "4273d7cf738769de556d530f6bf08385cd3679fd3ff7d4021843ba4eb1e51de1"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 712641,
+			"sha256": "1f8661cd5eeddc7398573b9867852d804ec015c21a4fef51eb66a97c87e4773b"
+		}
+	]
+}

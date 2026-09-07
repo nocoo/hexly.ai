@@ -1,0 +1,415 @@
+{
+	"createdAt": "2026-09-07T01:49:28.758Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "noheir",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#638783",
+			"light": "#a5c2b8",
+			"shade": "#3d625f",
+			"motif": "#254946",
+			"grainAmplitude": 1,
+			"grainSeed": 609077,
+			"motifOpacity": 0.19,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Quiet terraces",
+				"description": "Broad terraced contours turn around the upper-left and lower-right edges with softened right-angle bends. Unequal levels and short step transitions suggest a pressed landscape, rather than flowing waves or feather stripes.",
+				"layers": [
+					{
+						"d": "M-90 277H142Q208 277 208 205V149Q208 88 278 88H529V-80",
+						"tone": "motif",
+						"strokeWidth": 31
+					},
+					{
+						"d": "M-90 294H144Q225 294 225 205V151Q225 106 279 106H547V-80",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-91 454H49Q104 454 104 388V338Q104 307 149 307H297Q360 307 360 243V211Q360 168 424 168H725V-91",
+						"tone": "ribbon",
+						"strokeWidth": 30
+					},
+					{
+						"d": "M613 1102V925Q613 870 674 870H741Q802 870 802 812V729Q802 678 867 678H1120",
+						"tone": "motif",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M633 1103V928Q633 890 676 890H743Q822 890 822 814V730Q822 698 869 698H1120",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M427 1100V1041Q427 983 494 983H521Q565 983 565 937V858Q565 795 623 795H717Q729 795 729 763V641Q729 562 811 562H1114",
+						"tone": "ribbon",
+						"strokeWidth": 23
+					}
+				]
+			},
+			"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+		},
+		"shadows": [
+			{
+				"color": [
+					31,
+					49,
+					48
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					39,
+					38
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				0,
+				103
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "Uniform 90% bottom-aligned placement; the head and accessories retain their exact relative proportions. A narrow source-colored continuation of the existing shoulder restores the right frame entry exposed by the inset. Protect expressive features separately from intentional lower shoulder intersections.",
+			"continuation": {
+				"path": "input/shoulder-continuation.svg",
+				"sha256": "8dbe145dfec503d6e22e93a6397eab3874ad30f83a2147004b66f1549f81860a",
+				"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher."
+			}
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/noheir.png",
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 128,
+			"calibrationNote": "Native background sampled at [251,252,252] or [251,251,251]. Pass 01 revealed separate pale residue only on the native top border (maximum component 63 pixels), unrelated to anatomy. A broader near-white chroma window and a 128-pixel isolated-component threshold clear that residue. All four animals and retained accessories are connected; enclosed eyes remain protected. Inspect the complete alpha delta and pale anatomy before adoption."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1786112,
+		"foregroundPixels": 2408192,
+		"softEdgePixels": 8907,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 213,
+			"top": 142,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			0,
+			103
+		],
+		"bounds": {
+			"left": 294,
+			"top": 333,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47610
+	},
+	"emission": [],
+	"continuation": {
+		"path": "input/shoulder-continuation.svg",
+		"sha256": "8dbe145dfec503d6e22e93a6397eab3874ad30f83a2147004b66f1549f81860a",
+		"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher.",
+		"addedPixels": 112615,
+		"opaquePixelsPreserved": 1937041
+	},
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3625,
+			"sha256": "a7c821c684c82c3c533202ac2271f53aa7d369b6d6e0394b66521210169dc5c4"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1180,
+			"sha256": "0cb4eb4cad504f23c93f5dd0856f22ebd5d3e151611c3eb9ecc659d1a4a22b55"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4468892,
+			"sha256": "3d888b0681b15d9c7c3e78d800b5c1a1b0c6b0ad1177e8ef8b4a4839f25b2cd9"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 60267,
+			"sha256": "e56e6a9db97df089a3c3c63a045b74c558992d73c323b625b1fc71382bcc59be"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1313,
+			"sha256": "c8eac659e4b5518eead045419d2e4e5f179a8d4f2b0d4d06ba93a24fca4d0ff0"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2392641,
+			"sha256": "454ddfbeecf04a235ed632d55135657df3e58900a461f452f47c3624df33f359"
+		},
+		{
+			"path": "edge-continuation.svg",
+			"bytes": 688,
+			"sha256": "8dbe145dfec503d6e22e93a6397eab3874ad30f83a2147004b66f1549f81860a"
+		},
+		{
+			"path": "edge-continuation.png",
+			"bytes": 30033,
+			"sha256": "d333bd8d3a5b18836b239195e888e57a29ee638a6e42a7a0761e1c42b7617d99"
+		},
+		{
+			"path": "placed-source.png",
+			"bytes": 3790519,
+			"sha256": "a0940004669a9719a08290b2c6a83001a6ac98e1b6afe771e785f1d3d56f71a7"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3801133,
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 84293,
+			"sha256": "9ed7fd4377b35ca0b8cde2277f15179551d1689bfe6e7138169f094e44f1272b"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 157665,
+			"sha256": "bb5830ecd768fac812ebb58502121c3f30df42dc2b215e4e9b720e492ca9ec2e"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 122208,
+			"sha256": "33a364e9f8ef210bf4ac990b178b236bac8cbd473fbb6b3362d621f36612a938"
+		},
+		{
+			"path": "exports/noheir-transparent-2048.png",
+			"bytes": 3801133,
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+		},
+		{
+			"path": "exports/noheir-icon-2048.png",
+			"bytes": 5294363,
+			"sha256": "19c3326070dd5f9d3ca86d09fed9fd529bb7650f01cca587cd6e77a552defa1e"
+		},
+		{
+			"path": "exports/noheir-rounded-2048.png",
+			"bytes": 5185884,
+			"sha256": "dd60283dcedcb379043ba3bc51e891b6b50111bc02f5ed6fdbf8335dce9ba39d"
+		},
+		{
+			"path": "exports/noheir-transparent-1024.png",
+			"bytes": 975386,
+			"sha256": "debc70ef8cd0a6b9aa31d8745af1ade4f097f51fbb89eec0364cee3c8205b69b"
+		},
+		{
+			"path": "exports/noheir-icon-1024.png",
+			"bytes": 1324783,
+			"sha256": "82ded421dae723866a743b8c82dbef02db4649986be49bc8f16531a1edb5cca1"
+		},
+		{
+			"path": "exports/noheir-rounded-1024.png",
+			"bytes": 1312990,
+			"sha256": "a64f24356ded46755463c85890134b6d1307aae07873b59887eeebf0017bba22"
+		},
+		{
+			"path": "exports/noheir-transparent-512.png",
+			"bytes": 270875,
+			"sha256": "15ce86d263a2459bec1b78190848b25ca5719386f27e1c4529f07fd436e21a9b"
+		},
+		{
+			"path": "exports/noheir-icon-512.png",
+			"bytes": 382156,
+			"sha256": "91c78752439995ff036476d7ed2f8a35ac32f70b05488e5aeb5bb0fc7b89016c"
+		},
+		{
+			"path": "exports/noheir-rounded-512.png",
+			"bytes": 381213,
+			"sha256": "7ac4ec029408c1ad0915bd4649784a22121d104da9a05c6aa644b6378af3d485"
+		},
+		{
+			"path": "exports/noheir-transparent-256.png",
+			"bytes": 83090,
+			"sha256": "0c0fd96bda16ed19d6137ff474b2b3925842094acf2b55145e1ecc4e5c82de5b"
+		},
+		{
+			"path": "exports/noheir-icon-256.png",
+			"bytes": 103549,
+			"sha256": "8edce629085f97b28480a75ce8de35feb0a442ea850bcf1ed7ca66e874b57b51"
+		},
+		{
+			"path": "exports/noheir-rounded-256.png",
+			"bytes": 105580,
+			"sha256": "aaf40f3975ef711b03ccf9dd0a8aad57db87c746e49d7f98fea8f08396384ac9"
+		},
+		{
+			"path": "exports/noheir-transparent-128.png",
+			"bytes": 25465,
+			"sha256": "5f85163b5919f1edb612b03c49dc2e13ff3e64c704c84946aa7ec297257d0354"
+		},
+		{
+			"path": "exports/noheir-icon-128.png",
+			"bytes": 32848,
+			"sha256": "2bc35f5117dffa06e47b7e3b8442f912b2da1eb7d773ebfb302a48ae07fcee7f"
+		},
+		{
+			"path": "exports/noheir-rounded-128.png",
+			"bytes": 34105,
+			"sha256": "f72ceafb2c723bcbd7bf01940eca19df76f6ca6acf4706d6c85bcfe9b01e4bb5"
+		},
+		{
+			"path": "exports/noheir-transparent-64.png",
+			"bytes": 7800,
+			"sha256": "54eed45c4e11c25e24e1384ab4ae9c03c93d76bd3eabbb0afacac1abb83ec343"
+		},
+		{
+			"path": "exports/noheir-icon-64.png",
+			"bytes": 10560,
+			"sha256": "e5356cdc25ea1b6fe4231ba573600e39acf25ac70bae6621ad014417cd13be51"
+		},
+		{
+			"path": "exports/noheir-rounded-64.png",
+			"bytes": 11093,
+			"sha256": "0abe9576ba2fc6bf0af6a1d6b8e64d8f3e1761634f5b9f0e88b38adb4bf09550"
+		},
+		{
+			"path": "exports/noheir-transparent-48.png",
+			"bytes": 4805,
+			"sha256": "769fd5347db6064ebc48b76f252aab3b6eb92def541a2987f35c7d301d48cb66"
+		},
+		{
+			"path": "exports/noheir-icon-48.png",
+			"bytes": 6429,
+			"sha256": "734bfc08500b7d009119275fd27f544fc7589fd98108cc3ec8658029ad025f9e"
+		},
+		{
+			"path": "exports/noheir-rounded-48.png",
+			"bytes": 6749,
+			"sha256": "03a314fbb6472fd651b2c98f965aa733c9d022e7bc4800dc458110491695a31e"
+		},
+		{
+			"path": "exports/noheir-transparent-32.png",
+			"bytes": 2444,
+			"sha256": "30240b40b24066bc433083bbc0e7cf707813763ded34f38f50ec5e5780af9a99"
+		},
+		{
+			"path": "exports/noheir-icon-32.png",
+			"bytes": 3244,
+			"sha256": "52e6e7a90968b6df51fa50360aa0b4bbca5d7e6bd1ed24f88fd90663fd9bef1d"
+		},
+		{
+			"path": "exports/noheir-rounded-32.png",
+			"bytes": 3396,
+			"sha256": "358fd4ac28ab64fcd93f2514d85a1009a0c8dd3c367ffc888d8e24fa1a2be619"
+		},
+		{
+			"path": "exports/noheir-transparent-24.png",
+			"bytes": 1537,
+			"sha256": "adfe7244eee3982fc14950129f7978ff192ac0f4d8e189d4ac38c3c5b848fa48"
+		},
+		{
+			"path": "exports/noheir-icon-24.png",
+			"bytes": 1938,
+			"sha256": "2170adfb6ffe1cb40dc3cb4e168b31c577136cea833e0bba06b7087d3db8a653"
+		},
+		{
+			"path": "exports/noheir-rounded-24.png",
+			"bytes": 2056,
+			"sha256": "42c58ffca430cb8409a14887638db0d2bde4a4160327a354583bb0544109ffc8"
+		},
+		{
+			"path": "exports/noheir-transparent-16.png",
+			"bytes": 854,
+			"sha256": "55b224faa407d111db04afc7914f3f80b645b6eac93d5ee061f457dcf68ff2c5"
+		},
+		{
+			"path": "exports/noheir-icon-16.png",
+			"bytes": 972,
+			"sha256": "68946129cbcfcaeb77772e69a36dabd6c70d5ee023440d26d48f118f274b333d"
+		},
+		{
+			"path": "exports/noheir-rounded-16.png",
+			"bytes": 1012,
+			"sha256": "0803615625244bd43115cb97dd7a40a299bbedaf74ea4265a69edcd0f364ac50"
+		},
+		{
+			"path": "exports/noheir-white-2048.png",
+			"bytes": 3593038,
+			"sha256": "e908fb86b4058ade71550c62a769e1550d04485b9ee94b1b9dcce6445b37936c"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 929133,
+			"sha256": "6e0a47edb239686a087ca54d6842cf0c8fdc1bf35b3e73b3a7fc39032201bfea"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 931183,
+			"sha256": "6c15c976c069734ccfe9b53d0bcb737e3f624f2879e86f92af28e61d226f9a58"
+		}
+	]
+}

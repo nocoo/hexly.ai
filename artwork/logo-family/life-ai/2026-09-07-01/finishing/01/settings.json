@@ -1,0 +1,92 @@
+{
+	"project": "life-ai",
+	"background": {
+		"base": "#b7aa8e",
+		"light": "#ddd2b5",
+		"shade": "#8f836c",
+		"motif": "#756747",
+		"grainAmplitude": 1,
+		"grainSeed": 609085,
+		"motifOpacity": 0.17,
+		"highlightOpacity": 0.28,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Riverbank ripples",
+			"description": "Broad broken horizontal water rings wrap the empty edges, paired with one low-relief leaf vein. Uneven gaps and elliptical curves suggest a quiet riverbank without drawing a scene.",
+			"layers": [
+				{
+					"d": "M-97 228C15 104 265 93 426 167C490 197 529 235 520 280C510 330 394 369 262 372",
+					"tone": "motif",
+					"strokeWidth": 23
+				},
+				{
+					"d": "M-82 246C28 121 268 111 420 184C478 212 514 245 507 279C499 317 392 352 263 355",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-65 421C87 358 238 378 344 427",
+					"tone": "ribbon",
+					"strokeWidth": 32
+				},
+				{
+					"d": "M700 1093C588 1059 551 1001 579 944C617 863 828 812 1112 859",
+					"tone": "motif",
+					"strokeWidth": 29
+				},
+				{
+					"d": "M707 1074C605 1043 571 997 596 951C631 881 830 832 1111 877",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M752-74C774 62 851 133 983 177C923 74 847 14 752-74Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M776-20L940 137M829 38L827 87M872 78L927 82",
+					"tone": "motif",
+					"strokeWidth": 5
+				}
+			]
+		},
+		"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+	},
+	"shadows": [
+		{
+			"color": [63, 51, 32],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [53, 43, 28],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/life-ai.png",
+	"framing": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 123],
+		"intentionalEdges": ["bottom", "lower-left"],
+		"note": "Uniform 88% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 8,
+		"backgroundRgb": [251, 251, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 32,
+		"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity.",
+		"backgroundSeedsAt2048": [[1808, 898], [1734, 750], [1124, 221]]
+	}
+}

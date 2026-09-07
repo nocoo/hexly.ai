@@ -117,3 +117,16 @@ Nine owner-selected originals received presentation-only refinements with zero i
 | Neo | [2026-09-07-03](neo/2026-09-07-03/notes.md) | [Static HTML](neo/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/neo) |
 
 The retained route uses `source.json`, `source-review.json`, and `brief.txt`, with `sourceMode: "retained-transparent"`. Native foregrounds remain byte-identical. Public archives use `source.png` and `brief.txt`; R2Shot and Hooky keep their native 920/900 px masters. See [the family guide](../../docs/06-logo-family.md), [usage SOP](../../docs/07-logo-usage-sop.md), and [batch audit](audits/2026-09-07-retained/).
+
+## Viewfinder framing repairs — 2026-09-07
+
+These four studies preserve liked identities while repairing hard crop boundaries. Each uses one native 2048 × 2048 Image 2 result, explicit batch acceptance, full extraction/finishing archives, sampled palettes, and complete individual before/after pages. The earlier Wooly and Noheir retained-original studies remain historical records; the studies below are their current source identities.
+
+Checksummed SVG inputs in `input/` are frozen drawing layers, like the rendered copies and tool snapshots in `finishing/`. They are excluded from code formatting and accessibility lint; the live review HTML remains linted. Preserve their exact source bytes and recorded hashes.
+
+| Project | Selected study / pass | Review |
+| --- | --- | --- |
+| Wooly | [2026-09-07-02 / 01](wooly/2026-09-07-02/notes.md) | [Static HTML](wooly/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/wooly) |
+| Noheir | [2026-09-07-02 / 02](noheir/2026-09-07-02/notes.md) | [Static HTML](noheir/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/noheir) |
+| Raven | [2026-09-07-04 / 02](raven/2026-09-07-04/notes.md) | [Static HTML](raven/2026-09-07-04/review.html) · [Site](https://hexly.ai/logos/raven) |
+| Life.ai | [2026-09-07-01 / 02](life-ai/2026-09-07-01/notes.md) | [Static HTML](life-ai/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/life-ai) |

@@ -1,0 +1,382 @@
+{
+	"createdAt": "2026-09-07T01:43:26.628Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "wooly",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#ad8093",
+			"light": "#d6b2bd",
+			"shade": "#794f6d",
+			"motif": "#5f3455",
+			"grainAmplitude": 1,
+			"grainSeed": 609076,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.25,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Wool cloud folds",
+				"description": "Large scalloped seams gather at the left and lower edges like lightly pressed wool. The lobes remain open and uneven, avoiding both a repeated grid and the octopus curling channels.",
+				"layers": [
+					{
+						"d": "M-90 425C-3 407 4 343-25 305C65 343 131 281 114 216C198 245 241 191 222 122C312 158 371 82 340-42",
+						"tone": "motif",
+						"strokeWidth": 29
+					},
+					{
+						"d": "M-91 443C16 424 22 344-7 315C78 359 151 280 133 228C217 258 262 189 242 135C330 173 391 83 360-44",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M326 1091C337 1011 407 973 457 1018C436 923 510 875 573 908C566 824 637 789 698 833C722 748 808 744 854 803C892 729 981 746 1017 814C1060 785 1100 802 1126 845",
+						"tone": "motif",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M344 1094C354 1026 414 995 474 1035C453 938 519 896 590 926C583 841 646 810 708 852C737 767 812 765 859 823C897 749 978 766 1024 833",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M779-93C759 9 806 63 877 43C864 131 938 169 1004 128C1007 210 1075 241 1131 206",
+						"tone": "ribbon",
+						"strokeWidth": 37
+					}
+				]
+			},
+			"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+		},
+		"shadows": [
+			{
+				"color": [
+					61,
+					40,
+					55
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					48,
+					32,
+					44
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				82
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Uniform 92% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/wooly.png",
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 32,
+			"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1774307,
+		"foregroundPixels": 2419997,
+		"softEdgePixels": 14158,
+		"removedComponents": 2,
+		"removedComponentPixels": 22,
+		"bounds": {
+			"left": 165,
+			"top": 73,
+			"right": 1951,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			82
+		],
+		"bounds": {
+			"left": 233,
+			"top": 231,
+			"right": 1877,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -87.2898157899146,
+		"clippedPixels": 10342
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2912,
+			"sha256": "558420063d8091646e32f6b6f2ca1158ac0af03489d62aa158251142ef7a113b"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1007,
+			"sha256": "05746583b0e0ab56d44deb5532de62d15d1c1be07fca50c9c93b13dcc1041b17"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4364457,
+			"sha256": "36c7479f08d1b27156f9ec6df1363f39516502359aa309bbd2ef64e50f587a70"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 79806,
+			"sha256": "0fdebef89a727a236065be49a576ead9f33a9b4d1453cbfd4e9866df38f1df7c"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1337,
+			"sha256": "23dbfc88e62b529497b32ba34da5187c95f98bf1aa7d6796a9e73d05e33348ca"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2376172,
+			"sha256": "71ed6e9e76d49fac89ba674eb55fe967b73781c71d0914e90775dc9055797c3c"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3895425,
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 107783,
+			"sha256": "9cc43120dddca90547dc04a678f267e34df97695399126e8fcadf1d67b831ba6"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 205467,
+			"sha256": "f89382cb789d1f8b7095f241db44d6d638039c2be0d9fe1c55979ada47327204"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 163677,
+			"sha256": "0601979d969158f03998f5e629f4e1d648698819b59d90ecd1250c7646d2f7d2"
+		},
+		{
+			"path": "exports/wooly-transparent-2048.png",
+			"bytes": 3895425,
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+		},
+		{
+			"path": "exports/wooly-icon-2048.png",
+			"bytes": 5480010,
+			"sha256": "920f2ef9641359f00c1c7ff48db32291886d9a2445b44d921911a0a65ecfe4e1"
+		},
+		{
+			"path": "exports/wooly-rounded-2048.png",
+			"bytes": 5361346,
+			"sha256": "5a0cee68a0bf64abe7801ab4744fb314e5bd284ef86eef34831937627236ab25"
+		},
+		{
+			"path": "exports/wooly-transparent-1024.png",
+			"bytes": 1010870,
+			"sha256": "9cf044d8a54c832c8aab9f4f7932269165771037463c9b88d061a765ad99ee0b"
+		},
+		{
+			"path": "exports/wooly-icon-1024.png",
+			"bytes": 1379196,
+			"sha256": "0ed125d54df4d1c7c845de20c71064e5fd5390cb12200c202d13b01c2310e4c8"
+		},
+		{
+			"path": "exports/wooly-rounded-1024.png",
+			"bytes": 1364811,
+			"sha256": "a8f9ae2d1853ad6ecc85498f20c16c8890ad2e8fe3f8345f873e944b8188cd48"
+		},
+		{
+			"path": "exports/wooly-transparent-512.png",
+			"bytes": 284639,
+			"sha256": "50837cb356f2361600e509d0f1f8bcef49e231b18c4f50fe4f2574c5e70d86e2"
+		},
+		{
+			"path": "exports/wooly-icon-512.png",
+			"bytes": 401387,
+			"sha256": "2ce9b33256c21a47005c4e06c7bb22f4fcd4c741ab7285a9e79abc6f1b47d465"
+		},
+		{
+			"path": "exports/wooly-rounded-512.png",
+			"bytes": 398804,
+			"sha256": "e9976a11d75d9c69f12f56ab717fe0ff3a82d72cc05071c9a65e8fcea8bdc2a2"
+		},
+		{
+			"path": "exports/wooly-transparent-256.png",
+			"bytes": 87213,
+			"sha256": "450a11fd5c49dd578ab2af1e19d6561ff5337304fb6c32f5160bf423b0f59134"
+		},
+		{
+			"path": "exports/wooly-icon-256.png",
+			"bytes": 108264,
+			"sha256": "e37508a21d294a3422e2dcd8ca6d399c9221a799e69e0d4d7bc806519101a1cf"
+		},
+		{
+			"path": "exports/wooly-rounded-256.png",
+			"bytes": 110156,
+			"sha256": "c7d9fd7a95a9ef35fae50de6e3aa9d904d5718e2026e97473d279a6b89644a54"
+		},
+		{
+			"path": "exports/wooly-transparent-128.png",
+			"bytes": 25851,
+			"sha256": "dd9281ba2623ac1ff70036e5cf26d90d250b462b20e1baecf3d3dae9dae2bd58"
+		},
+		{
+			"path": "exports/wooly-icon-128.png",
+			"bytes": 33021,
+			"sha256": "67679aabd6366b79b0d88daab90613aee3febfcb13a7840e861fcad37ae52ea0"
+		},
+		{
+			"path": "exports/wooly-rounded-128.png",
+			"bytes": 34108,
+			"sha256": "97ef6023b64bae072c7abc24a4e99ad9abff0b888f6ba4f5630e5c401b409062"
+		},
+		{
+			"path": "exports/wooly-transparent-64.png",
+			"bytes": 7649,
+			"sha256": "56332c34c4fdc43ab0a84bdf2437a82aecdd9742628bc3cdf70ef672965f9318"
+		},
+		{
+			"path": "exports/wooly-icon-64.png",
+			"bytes": 10286,
+			"sha256": "90fd993b6e9e655c6bc231c2a618d74d41d89c568cd250da7204e735df2a7f86"
+		},
+		{
+			"path": "exports/wooly-rounded-64.png",
+			"bytes": 10673,
+			"sha256": "193fb59a6bbd45a0fe1f5260b839b2ebbada6be123bc02bf8a8869764ca1446b"
+		},
+		{
+			"path": "exports/wooly-transparent-48.png",
+			"bytes": 4670,
+			"sha256": "eaa40a36bbf86ff24518c195426f265c14deaa4aa0cf94dbd4eaeea201a3895f"
+		},
+		{
+			"path": "exports/wooly-icon-48.png",
+			"bytes": 6246,
+			"sha256": "68445a5ec636600174ceff0ad9fb60b6a4d37dd7f59689f4d3df1a0d7c7a7d48"
+		},
+		{
+			"path": "exports/wooly-rounded-48.png",
+			"bytes": 6510,
+			"sha256": "0e94499592234d595035239da3ba58c7d6565ee6117d5a9d73cf18cf6c8c6bad"
+		},
+		{
+			"path": "exports/wooly-transparent-32.png",
+			"bytes": 2383,
+			"sha256": "6dfeda018bd38fd8be86d5ca7d730326c195b23bf64d0a1ee372776c99e47aa6"
+		},
+		{
+			"path": "exports/wooly-icon-32.png",
+			"bytes": 3139,
+			"sha256": "2c71e9faec5b77853c0e7a3c0356b46c020ac4ffa15495137d790554814de209"
+		},
+		{
+			"path": "exports/wooly-rounded-32.png",
+			"bytes": 3242,
+			"sha256": "58e61a0ea0fcb4c73cd83899a6677cce6da3216d00a28db33b5e3f0e71edda04"
+		},
+		{
+			"path": "exports/wooly-transparent-24.png",
+			"bytes": 1506,
+			"sha256": "4dc78a9753b14b490dd3dc24fba6deeca38df0b592b58919eff61ffe01def9b6"
+		},
+		{
+			"path": "exports/wooly-icon-24.png",
+			"bytes": 1884,
+			"sha256": "7ccc1374664492961d52c987b86d36b906d392f63b3afcc1cdf59843f6b8a3b2"
+		},
+		{
+			"path": "exports/wooly-rounded-24.png",
+			"bytes": 1967,
+			"sha256": "2f0a6e2e2fb8bd1f84388f4398606a1e49e68ac2863ebf9d961e494f2a8e871a"
+		},
+		{
+			"path": "exports/wooly-transparent-16.png",
+			"bytes": 838,
+			"sha256": "063648596c584115e6d72195300fc3ded30f03c81afd05be3ab6901583235c25"
+		},
+		{
+			"path": "exports/wooly-icon-16.png",
+			"bytes": 930,
+			"sha256": "596961579ad029f8f5517e19dcc1eaeafda197c49c43b818b851b34ab99cf777"
+		},
+		{
+			"path": "exports/wooly-rounded-16.png",
+			"bytes": 967,
+			"sha256": "84423eaa22846979d04c20bdb97cfdc62e785bc43a0a5d8a2743a0291b562e09"
+		},
+		{
+			"path": "exports/wooly-white-2048.png",
+			"bytes": 3660805,
+			"sha256": "c1129eceb0107106175dab74634ed97d9685db25ce192e6d78ac2c682c88853f"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 955900,
+			"sha256": "089c3e35508290e5844994225301ea5431d9e87efa737f3f9cdc02ecd8c0d685"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 977155,
+			"sha256": "e7b8dc86d067a1846f252f1163bb0356759cf3346d219fedc8c0b27bc5b74b14"
+		}
+	]
+}

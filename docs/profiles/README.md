@@ -17,7 +17,7 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🦎 Gecko](11-gecko.md) | Original asset | #2e8553 | #eef2ef |
 | [🕊️ Dove](12-dove.md) | Adopted family | #c65379 | #f3edf0 |
 | [⚡ Pika](13-pika.md) | Original asset | #c38e13 | #eeeff2 |
-| [🐦‍⬛ Raven](14-raven.md) | Original asset | #6341c8 | #eeeff2 |
+| [🐦‍⬛ Raven](14-raven.md) | Adopted family | #6341c8 | #eeeff2 |
 | [🦇 Bat](15-bat.md) | Original asset | #df497b | #eeeff2 |
 | [🎶 Lyre](16-lyre.md) | Adopted family | #883720 | #eeeff2 |
 | [🎮 Poké Pocket](17-pokepocket.md) | Original asset | #294138 | #f7f8f2 |
@@ -41,7 +41,7 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🧩 Matrix](35-matrix.md) | Profile emoji | #00ff41 | #050505 |
 | [🎨 Basalt](36-basalt.md) | Original asset | #3c83f6 | #eeeff2 |
 | [🛡️ Surety](37-surety.md) | Original asset | #ed511d | #eeeff2 |
-| [🧬 Life.ai](38-life-ai.md) | Original asset | #3c83f6 | #eeeff2 |
+| [🧬 Life.ai](38-life-ai.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [🚀 Echo](39-echo.md) | Profile emoji | #f01315 | transparent |
 | [🧭 Deca](40-deca.md) | Profile emoji | #d9060a | transparent |
 | [⏰ Runner](41-runner.md) | Original asset | #14501f | #020202 |
