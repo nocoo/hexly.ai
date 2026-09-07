@@ -1,0 +1,510 @@
+{
+	"status": "deployed",
+	"scope": ["dotty", "matrix", "basalt"],
+	"version": "0.2.0",
+	"contentRevision": "c90bd95d7eeaef4b468e23729b545ebd15c1f671",
+	"publicationBase": "59604eb0f4a3e6a0154d2f2f14d0ce383ed1f892",
+	"sourcePublication": "source-publication.json",
+	"workflowSkillRevision": "b4e940aff194288011ee5de949e86eab57b7003d",
+	"ci": {
+		"databaseId": 34090831980,
+		"workflowName": "Quality & Deploy",
+		"headSha": "c90bd95d7eeaef4b468e23729b545ebd15c1f671",
+		"status": "completed",
+		"conclusion": "success",
+		"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980",
+		"createdAt": "2026-09-07T06:26:19Z",
+		"updatedAt": "2026-09-07T06:33:25Z"
+	},
+	"qualityJobs": [
+		{
+			"databaseId": 101643787252,
+			"name": "quality / L1+G1+G2",
+			"status": "completed",
+			"conclusion": "success",
+			"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980/job/101643787252",
+			"startedAt": "2026-09-07T06:26:21Z",
+			"completedAt": "2026-09-07T06:28:42Z"
+		},
+		{
+			"databaseId": 101643787364,
+			"name": "quality / L3 Browser E2E",
+			"status": "completed",
+			"conclusion": "success",
+			"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980/job/101643787364",
+			"startedAt": "2026-09-07T06:26:22Z",
+			"completedAt": "2026-09-07T06:30:42Z"
+		},
+		{
+			"databaseId": 101643787369,
+			"name": "quality / L2 API E2E",
+			"status": "completed",
+			"conclusion": "success",
+			"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980/job/101643787369",
+			"startedAt": "2026-09-07T06:26:22Z",
+			"completedAt": "2026-09-07T06:28:45Z"
+		},
+		{
+			"databaseId": 101643788556,
+			"name": "quality / Worker Tests",
+			"status": "completed",
+			"conclusion": "skipped",
+			"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980/job/101643788556",
+			"startedAt": "2026-09-07T06:26:20Z",
+			"completedAt": "2026-09-07T06:26:19Z"
+		},
+		{
+			"databaseId": 101643788612,
+			"name": "quality / Self-dispatch: refresh latest run",
+			"status": "completed",
+			"conclusion": "skipped",
+			"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980/job/101643788612",
+			"startedAt": "2026-09-07T06:26:20Z",
+			"completedAt": "2026-09-07T06:26:19Z"
+		},
+		{
+			"databaseId": 101644747502,
+			"name": "Deploy",
+			"status": "completed",
+			"conclusion": "success",
+			"url": "https://github.com/nocoo/hexly.ai/actions/runs/34090831980/job/101644747502",
+			"startedAt": "2026-09-07T06:30:44Z",
+			"completedAt": "2026-09-07T06:33:25Z"
+		}
+	],
+	"deploySteps": [
+		{
+			"completedAt": "2026-09-07T06:30:46Z",
+			"conclusion": "success",
+			"name": "Set up job",
+			"number": 1,
+			"startedAt": "2026-09-07T06:30:45Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:32:45Z",
+			"conclusion": "success",
+			"name": "Checkout verified revision",
+			"number": 2,
+			"startedAt": "2026-09-07T06:30:46Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:32:49Z",
+			"conclusion": "success",
+			"name": "Set up Node.js",
+			"number": 3,
+			"startedAt": "2026-09-07T06:32:45Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:32:50Z",
+			"conclusion": "success",
+			"name": "Set up Bun",
+			"number": 4,
+			"startedAt": "2026-09-07T06:32:49Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:32:51Z",
+			"conclusion": "success",
+			"name": "Install locked dependencies",
+			"number": 5,
+			"startedAt": "2026-09-07T06:32:50Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:32:58Z",
+			"conclusion": "success",
+			"name": "Build production assets",
+			"number": 6,
+			"startedAt": "2026-09-07T06:32:51Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:32:59Z",
+			"conclusion": "success",
+			"name": "Reject a superseded revision",
+			"number": 7,
+			"startedAt": "2026-09-07T06:32:58Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:33:12Z",
+			"conclusion": "success",
+			"name": "Deploy Workers Static Assets",
+			"number": 8,
+			"startedAt": "2026-09-07T06:32:59Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:33:23Z",
+			"conclusion": "success",
+			"name": "Verify production release",
+			"number": 9,
+			"startedAt": "2026-09-07T06:33:12Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:33:23Z",
+			"conclusion": "success",
+			"name": "Post Set up Bun",
+			"number": 16,
+			"startedAt": "2026-09-07T06:33:23Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:33:23Z",
+			"conclusion": "success",
+			"name": "Post Set up Node.js",
+			"number": 17,
+			"startedAt": "2026-09-07T06:33:23Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:33:23Z",
+			"conclusion": "success",
+			"name": "Post Checkout verified revision",
+			"number": 18,
+			"startedAt": "2026-09-07T06:33:23Z",
+			"status": "completed"
+		},
+		{
+			"completedAt": "2026-09-07T06:33:24Z",
+			"conclusion": "success",
+			"name": "Complete job",
+			"number": 19,
+			"startedAt": "2026-09-07T06:33:23Z",
+			"status": "completed"
+		}
+	],
+	"publicVerification": {
+		"checkedAt": "2026-09-07T06:34:42.488Z",
+		"live": {
+			"status": "ok",
+			"name": "hexly.ai",
+			"version": "0.2.0",
+			"revision": "c90bd95d7eeaef4b468e23729b545ebd15c1f671"
+		},
+		"browser": "152.0.7977.83",
+		"pages": [
+			{
+				"route": "https://hexly.ai/logos/dotty",
+				"files": [
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/transparent.png",
+						"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+						"bytes": 2227338,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/icon.png",
+						"sha256": "3805d754d3d4d78191e7fa5f883a23b96f2289d5100723481fa882b0d0f6ce20",
+						"bytes": 2569912,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/rounded.png",
+						"sha256": "9e47936711f8795123c0381ffd456b4fd743a4844912aee2607ec124847dd106",
+						"bytes": 2575282,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/white.png",
+						"sha256": "b810588a39d1a1c7226d3888ecec2a82620ab43d574e9e0cb0637291984dc1cc",
+						"bytes": 2017357,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/background.png",
+						"sha256": "2f347689bd1ba0163679d6e3edd18135390036549f3f346765afa0e453ea3dc2",
+						"bytes": 243111,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/raw.png",
+						"sha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+						"bytes": 2516123,
+						"result": "exact-match",
+						"width": 2048,
+						"height": 2048
+					},
+					{
+						"path": "/logos/family/dotty/2026-09-07-01/01/prompt.txt",
+						"sha256": "b66346f4f7ea2863ed80c11dc87e815eee4c91566dff4d292c2112c47b5f3238",
+						"bytes": 3745,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+						"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+						"bytes": 2227338,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/originals/dotty.svg",
+						"sha256": "33c046a7f6647bd2af6d6e47c1e3d9b439e9a0d78773c94c3e2fa3a0ba842d49",
+						"bytes": 292,
+						"result": "exact-match"
+					}
+				],
+				"views": [
+					{
+						"name": "desktop-en-light",
+						"modes": ["icon", "transparent", "white"],
+						"smallMarkWidths": [32, 16, 24, 16],
+						"runtimeErrors": [],
+						"result": "passed",
+						"screenshot": "production-screenshots/dotty-desktop-en-light.png"
+					},
+					{
+						"name": "mobile-zh-dark",
+						"modes": ["icon", "transparent", "white"],
+						"smallMarkWidths": [32, 16, 24, 16],
+						"runtimeErrors": [],
+						"result": "passed",
+						"screenshot": "production-screenshots/dotty-mobile-zh-dark.png"
+					}
+				]
+			},
+			{
+				"route": "https://hexly.ai/logos/matrix",
+				"files": [
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/transparent.png",
+						"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+						"bytes": 3271736,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/icon.png",
+						"sha256": "cfca56f6199c4e5eee4f6e1eae1a0868bbaf6283cf6b32e23e1c8bfb23c559db",
+						"bytes": 3680978,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/rounded.png",
+						"sha256": "32718620d15e7435f15c853ea88b796370d44b958b6512fc336c42bb61e27d7e",
+						"bytes": 3684259,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/white.png",
+						"sha256": "a6494132c48a6be4f0ed86754901194089d898659a5bfe9b2f143e824b6e335d",
+						"bytes": 2909978,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/background.png",
+						"sha256": "210f6f50a60ac97ec296fda48f20df7bf8c22f4d8d5a26f98259763eb9591f76",
+						"bytes": 281847,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/raw.png",
+						"sha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb",
+						"bytes": 4215333,
+						"result": "exact-match",
+						"width": 2048,
+						"height": 2048
+					},
+					{
+						"path": "/logos/family/matrix/2026-09-07-01/01/prompt.txt",
+						"sha256": "4d16fa94649a51b0890b30b838bbfc497c887871c4d1c1f17c550e3486a238ec",
+						"bytes": 4492,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+						"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+						"bytes": 3271736,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/emoji/matrix.png",
+						"sha256": "21d9c4ed49bedc6010a787ae1a16c2b7e982be264dc5c3e446a2fe9ad122e8b3",
+						"bytes": 354520,
+						"result": "exact-match"
+					}
+				],
+				"views": [
+					{
+						"name": "desktop-en-light",
+						"modes": ["icon", "transparent", "white"],
+						"smallMarkWidths": [32, 16, 24, 16],
+						"runtimeErrors": [],
+						"result": "passed",
+						"screenshot": "production-screenshots/matrix-desktop-en-light.png"
+					},
+					{
+						"name": "mobile-zh-dark",
+						"modes": ["icon", "transparent", "white"],
+						"smallMarkWidths": [32, 16, 24, 16],
+						"runtimeErrors": [],
+						"result": "passed",
+						"screenshot": "production-screenshots/matrix-mobile-zh-dark.png"
+					}
+				]
+			},
+			{
+				"route": "https://hexly.ai/logos/basalt",
+				"files": [
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/transparent.png",
+						"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+						"bytes": 3445051,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/icon.png",
+						"sha256": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1",
+						"bytes": 3751552,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/rounded.png",
+						"sha256": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9",
+						"bytes": 3754162,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/white.png",
+						"sha256": "44ee1deb94999a305b6536c4e1fefd3f76d529528c41abc3ef0442abf7f566c8",
+						"bytes": 3103185,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/background.png",
+						"sha256": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840",
+						"bytes": 273933,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/raw.png",
+						"sha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8",
+						"bytes": 3666997,
+						"result": "exact-match",
+						"width": 2048,
+						"height": 2048
+					},
+					{
+						"path": "/logos/family/basalt/2026-09-07-02/01/prompt.txt",
+						"sha256": "e9014e827666c7a7efcf7bf1e7e6bdcab38ddbe4a4167cf4f22297bebbdabae3",
+						"bytes": 5563,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+						"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+						"bytes": 3445051,
+						"result": "exact-match"
+					},
+					{
+						"path": "/logos/originals/basalt.svg",
+						"sha256": "652ee2a1a62d12e0e9ae89b0a29381b5a03a91a80f75d3a07251fdef89bdb14a",
+						"bytes": 364,
+						"result": "exact-match"
+					}
+				],
+				"views": [
+					{
+						"name": "desktop-en-light",
+						"modes": ["icon", "transparent", "white"],
+						"smallMarkWidths": [32, 16, 24, 16],
+						"runtimeErrors": [],
+						"result": "passed",
+						"screenshot": "production-screenshots/basalt-desktop-en-light.png"
+					},
+					{
+						"name": "mobile-zh-dark",
+						"modes": ["icon", "transparent", "white"],
+						"smallMarkWidths": [32, 16, 24, 16],
+						"runtimeErrors": [],
+						"result": "passed",
+						"screenshot": "production-screenshots/basalt-mobile-zh-dark.png"
+					}
+				]
+			}
+		],
+		"universe": {
+			"refinedOnly": true,
+			"faces": [
+				"/logos/family/frogie/2026-09-06-01/03/icon-1024.webp",
+				"/logos/family/pew/2026-09-06-01/04/icon-1024.webp",
+				"/logos/family/firefly/2026-09-06-10/02/icon-160.webp",
+				"/logos/family/steed/2026-09-07-02/01/icon-160.webp",
+				"/logos/family/ellie/2026-09-07-01/01/icon-160.webp",
+				"/logos/family/neo/2026-09-07-03/01/icon-160.webp"
+			]
+		},
+		"order": {
+			"refinedFirst": true,
+			"ids": [
+				"frogie",
+				"pew",
+				"firefly",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy",
+				"otter",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"bat",
+				"lyre",
+				"gaga",
+				"rooster",
+				"snaky",
+				"codo",
+				"owl",
+				"xray",
+				"r2shot",
+				"shrike",
+				"hooky",
+				"dotty",
+				"wooly",
+				"matrix",
+				"basalt",
+				"surety",
+				"life-ai",
+				"zhe",
+				"noheir",
+				"bogo",
+				"pokepocket",
+				"dogfight",
+				"pew-game",
+				"signoff-now",
+				"unseal",
+				"flow",
+				"arena",
+				"echo",
+				"deca",
+				"runner",
+				"geekhub",
+				"ipsafe",
+				"hexly-ai"
+			]
+		}
+	},
+	"localChecks": {
+		"static": "TypeScript, Biome and isolation passed.",
+		"unit": {
+			"tests": 52,
+			"coverage": "100% statements, branches, functions and lines"
+		},
+		"http": {
+			"tests": 42,
+			"result": "passed"
+		},
+		"browser": {
+			"tests": 98,
+			"result": "passed"
+		},
+		"assets": "All original, public family and finishing manifest checks passed.",
+		"security": "OSV and Gitleaks passed; the exact stylesheet-digest finding is documented in secret-scan-review.json.",
+		"deployment": "Wrangler dry run passed; normal pre-commit and pre-push hooks passed."
+	}
+}
