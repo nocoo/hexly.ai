@@ -1,0 +1,28 @@
+# Basalt — honed volcanic stone
+
+Create the Basalt identity: one exquisite solid basalt material block, a sculptural sample of genuine volcanic rock finished to an architectural-material standard. Keep the pleasing complete shape and camera of reference image 1 but create this NEW material.
+
+The entire thick square block is deep charcoal and warm graphite BASALT. It has the dense, fine-grained mineral structure of cooled volcanic stone: subtle tiny crystalline speckles, natural compact pores and a few restrained vesicles. The top is carefully honed to a velvety smooth satin finish, tactile and light-absorbing, with finely resolved irregular stone grain. The side faces show a slightly more open natural microtexture while remaining precisely milled, and the continuous rounded chamfer catches a beautifully soft narrow highlight. The brick is solid rock throughout, not a veneer over another core. It must feel substantial, timeless and expensive because of its excellent material and restrained craftsmanship.
+
+Keep the palette in believable basalt tones: near-black shadow, graphite, quiet warm charcoal and restrained mineral gray. Let broad soft light distinguish top, bevel and sides without metallic gloss. Microtexture and tiny natural inclusions provide the interest; do not add any secondary object or decorative colored accessory. Preserve the coherent dark mass so it reads as a striking compact logo at small size. Fine basalt pores should remain visible in the large master but never become a noisy gravel texture.
+
+This is not polished black ceramic, glass, metal, marble, granite or a porous sponge. No glossy mirror reflection, white marble veining, huge glittering crystals, cracks splitting the block, glowing lava, moss, labels, etched letters, hexagonal-column landscape or geological debris. Think of a premium honed basalt building sample displayed in a design studio: a simple, generous rounded square with extraordinary native-resolution stone quality.
+
+
+## Shared geometry and layers
+
+
+SHARED BUILDING-BLOCK FAMILY
+Reference image 1 is the accepted Dotty raw image from this same batch. Use it to establish the shared object geometry, softly rounded thickness, elevated camera angle, complete perimeter and high-quality physical rendering. It is NOT the new material: replace all black/white checks with the material specified below. Keep the same single solid thick square tile, approximately a quarter to a third as thick as its side length, with a continuous, confidently rounded perimeter and two visible side faces. No full-height cube, thin placemat, frame, letters, platform, or second block.
+
+Treat the square logo as a product photographer's viewfinder catching one quiet suspended instant. A camera about 45 degrees above horizontal, with the square rotated about 45 degrees, sees the broad diamond top and two sides. A 75 mm product-lens analogy provides mild elegant perspective, with deep focus across the whole object rather than blur. A large soft light comes from upper left with restrained fill from the right; the material itself supplies the rich surface character and subtle highlights. Give the model's composition room to breathe. The entire object, including the front lower edge, is complete within generous white margins; aim for about three quarters of the canvas width and leave room below for a separate floor shadow. All rounded corners remain inside the viewfinder. No cropped edges and no medallion.
+
+ISOLATED SOURCE
+Return one native 2048 by 2048 PNG. Render only the opaque solid block, isolated on perfectly uniform pure-white #FFFFFF. The final presentation will have a pale, delicately gridded engineering background, hover shadow and any light spill composed later as independent layers. Do NOT paint that presentation now: no ground plane, horizon, background gradient, external cast shadow, contact shadow, surrounding haze, external bloom, reflections on a floor, border, inset app tile, text or watermark. Keep crisp, complete antialiased boundaries. Internal material shadows, physical reflection and solid bright surface details are welcome. The building-block analogy is about the volume only: NO pixel art, voxel texture, disconnected polygon drawing, cartoon shading or game screenshot. This is a refined high-resolution tangible material logo.
+
+
+## Independent presentation
+
+Pale warm mineral drafting paper with a fine survey grid, sparse triangulation and understated elevation contours. The dark stone gets a clean architectural context rather than a dark cave or lava field.
+
+This explicit non-animal, physical-material direction overrides the standard animal facets and accent rules. The owner delegates exact-byte raw acceptance for this batch; see authorization.json. Preserve complete history and deliver the individual study, source adoption and /logos/basalt page.

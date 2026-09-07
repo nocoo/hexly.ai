@@ -154,3 +154,17 @@ The owner waived intermediate human confirmation for these named batches and aut
 | otter | `2026-09-07-01 / 02` | Generated | [HTML](otter/2026-09-07-01/review.html) | [/otter](https://hexly.ai/logos/otter) |
 
 The [redesign audit](audits/2026-09-07-redesign/) and [ten-project audit](audits/2026-09-07-next-ten/) record source consumers, actual browser/native captures and publication. Native source artwork, raw checkpoints, prompt/brief, reference provenance, all finishing layers and checksums remain archived. Source revisions and platform rules are listed in [the shared usage SOP](../../docs/07-logo-usage-sop.md#fifteen-identities--2026-09-07).
+
+## Three template materials — 2026-09-07
+
+The owner-directed material series uses physical surfaces, complete object framing, pale project-specific engineering grids and separately projected hover shadows. Dotty is opaque checker ceramic; Matrix is layered black/green circuitry; Basalt is an obsidian-and-gemstone Forbidden City corner tower viewed from a shallower approximately 25-degree angle.
+
+| Project | Selected study / pass | Static review | Catalogue |
+| --- | --- | --- | --- |
+| Dotty | [2026-09-07-01 / 01](dotty/2026-09-07-01/notes.md) | [Static HTML](dotty/2026-09-07-01/review.html) | [Site](https://hexly.ai/logos/dotty) |
+| Matrix | [2026-09-07-01 / 01](matrix/2026-09-07-01/notes.md) | [Static HTML](matrix/2026-09-07-01/review.html) | [Site](https://hexly.ai/logos/matrix) |
+| Basalt | [2026-09-07-02 / 01](basalt/2026-09-07-02/notes.md) | [Static HTML](basalt/2026-09-07-02/review.html) | [Site](https://hexly.ai/logos/basalt) |
+
+[Basalt study 01](basalt/2026-09-07-01/notes.md) preserves the ordinary stone slab rejected by the owner. Its raw output and finishing pass remain archived and were never adopted. Study 02 follows the explicit architectural correction. Four native generation calls cover the complete batch, with exact-hash delegated acceptance recorded separately for each result.
+
+See [the material audit](audits/2026-09-07-materials/) for native palette samples, rounded-outline measurements, matting decisions, source-app screenshots and publication evidence. Foreground, square, rounded and white masters share one placement; small application/browser marks use the transparent foreground. The workflow logo skill and [family guide](../../docs/06-logo-family.md#material-and-architectural-series--2026-09-07) preserve this explicit exception to the animal series.

@@ -1,0 +1,71 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels within the extracted boundary; selected by visible material role, not average color or invented site tokens."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Black ceramic",
+				"zh": "黑色陶瓷"
+			},
+			"role": "primary",
+			"color": "#1a1c1d",
+			"pixel": [1057, 943],
+			"rgb": [26, 28, 29],
+			"sourceSha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa"
+		},
+		{
+			"label": {
+				"en": "White ceramic",
+				"zh": "白色陶瓷"
+			},
+			"role": "accent",
+			"color": "#fbfbfb",
+			"pixel": [1059, 371],
+			"rgb": [251, 251, 251],
+			"sourceSha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa"
+		},
+		{
+			"label": {
+				"en": "Bevel reflection",
+				"zh": "倒角反光"
+			},
+			"role": "accent",
+			"color": "#919699",
+			"pixel": [1511, 1152],
+			"rgb": [145, 150, 153],
+			"sourceSha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa"
+		}
+	],
+	"presentation": {
+		"base": "#e5eaf1",
+		"light": "#f8fafc",
+		"shade": "#d6dfe9",
+		"motif": "#8c9eaf",
+		"pattern": "Precision drafting grid",
+		"status": "Adopted under the owner-authorized material batch; Basalt follows the explicit architectural correction."
+	},
+	"website": {
+		"primary": "#16181d",
+		"background": "#f3f4f6",
+		"ink": "#16181d",
+		"evidence": {
+			"background": {
+				"value": "220 14% 96%",
+				"source": "src/index.css --background"
+			},
+			"ink": {
+				"value": "220 14% 10%",
+				"source": "src/index.css --foreground"
+			},
+			"primary": {
+				"value": "220 14% 10%",
+				"source": "src/index.css --primary"
+			}
+		},
+		"status": "Existing product theme retained; the new artwork does not recolor the UI."
+	}
+}

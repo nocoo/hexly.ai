@@ -5844,18 +5844,18 @@
 		"website": "https://dotty.hexly.ai",
 		"websiteSource": "GitHub repository homepage",
 		"repository": "https://github.com/nocoo/dotty",
-		"subject": "Existing application mark",
+		"subject": "Floating black-and-white checker ceramic block",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/dotty.svg",
-			"sourcePath": "public/logo.svg",
-			"sourceUrl": "https://github.com/nocoo/dotty/blob/33c0ffa370a7582d2655cac142e1e6bbff71e412/public/logo.svg",
+			"original": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png",
 			"modified": false,
-			"width": 24,
-			"height": 24,
-			"bytes": 292,
-			"sha256": "33c046a7f6647bd2af6d6e47c1e3d9b439e9a0d78773c94c3e2fa3a0ba842d49",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 2227338,
+			"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
 			"thumbnail": "/logos/display/dotty-160.webp",
 			"display": "/logos/display/dotty-1024.webp"
 		},
@@ -5877,7 +5877,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Pixel-brutalist dashboard template with monochrome geometry and stacked charts",
-			"repositoryRevision": "33c0ffa370a7582d2655cac142e1e6bbff71e412"
+			"repositoryRevision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe"
 		},
 		"colors": {
 			"primary": "#16181d",
@@ -5895,13 +5895,128 @@
 					"source": "src/index.css --background: 220 14% 96%"
 				},
 				{
-					"color": "#191c23",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#1a1c1d",
+					"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1057, 943); artwork/logo-family/dotty/2026-09-07-01/palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#fbfbfb",
+					"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1059, 371); artwork/logo-family/dotty/2026-09-07-01/palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#919699",
+					"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1511, 1152); artwork/logo-family/dotty/2026-09-07-01/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"series": "material",
+			"finishing": "01",
+			"model": "gpt-image-2",
+			"root": "/logos/family/dotty/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dotty/2026-09-07-01",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Floating black-and-white checker ceramic block",
+					"zh": "悬浮的黑白棋盘陶瓷方砖"
+				},
+				"original": "/logos/family/dotty/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/dotty/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e"
+			},
+			"previous": {
+				"original": "/logos/originals/dotty.svg",
+				"sourceUrl": "https://github.com/nocoo/dotty/blob/33c0ffa370a7582d2655cac142e1e6bbff71e412/public/logo.svg",
+				"width": 24,
+				"height": 24,
+				"sha256": "33c046a7f6647bd2af6d6e47c1e3d9b439e9a0d78773c94c3e2fa3a0ba842d49"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "A suspended building block",
+						"zh": "悬浮的构建方砖"
+					},
+					"description": {
+						"en": "A complete rounded square brick seen from an elevated three-quarter view, uniformly inset from every corner. The independent projected shadow makes its weight and hover gap legible.",
+						"zh": "完整的圆角厚方砖从斜上方呈现，整体统一缩放，为四角保留安全距离。独立投影表现重量与悬浮间隙。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Opaque checker ceramic",
+						"zh": "不透明棋盘陶瓷"
+					},
+					"description": {
+						"en": "Pure black and white inlays carry the identity. Physical ceramic shading, controlled reflections and soft bevels provide detail without a pixel-art treatment; white cells remain solid after extraction.",
+						"zh": "黑白镶嵌构成标识。陶瓷明暗、克制反光与柔和倒角提供精致细节，不使用像素画处理；白色格块在抠图后依然保持不透明。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Precision drafting grid",
+						"zh": "精密制图格线"
+					},
+					"description": {
+						"en": "Cool pale drafting paper uses fine Cartesian cells, larger construction divisions, registration crosses and a short ruler. Its separate soft floor shadow never enters transparent UI marks.",
+						"zh": "浅冷色制图纸配细笛卡尔网格、较大的工程分区、定位十字与短标尺。背景和柔和地面投影独立保存，小型透明标记不带底纹或阴影。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#e5eaf1",
+					"role": "background",
+					"label": {
+						"en": "Precision drafting grid",
+						"zh": "精密制图格线"
+					},
+					"source": "Selected Dotty presentation, 2026-09-07-01/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#1a1c1d",
+					"role": "primary",
+					"label": {
+						"en": "Black ceramic",
+						"zh": "黑色陶瓷"
+					},
+					"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1057, 943); artwork/logo-family/dotty/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#fbfbfb",
+					"role": "accent",
+					"label": {
+						"en": "White ceramic",
+						"zh": "白色陶瓷"
+					},
+					"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1059, 371); artwork/logo-family/dotty/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#919699",
+					"role": "accent",
+					"label": {
+						"en": "Bevel reflection",
+						"zh": "倒角反光"
+					},
+					"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1511, 1152); artwork/logo-family/dotty/2026-09-07-01/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "At 128/64 px the checker rhythm, rounded thickness and hover shadow remain clear. At 32/24/16 px the transparent mark retains the alternating block silhouette; fine bevel reflections and drafting lines are deliberately left to the large presentation.",
+				"zh": "128/64 px 保留棋盘节奏、圆润厚度与悬浮阴影；32/24/16 px 透明图标以黑白交错轮廓为主，精细倒角反光与工程格线留给大尺寸展示。"
+			}
+		}
 	},
 	{
 		"id": "wooly",
@@ -6120,18 +6235,18 @@
 		"website": "https://matrix.hexly.ai",
 		"websiteSource": "GitHub repository homepage",
 		"repository": "https://github.com/nocoo/matrix",
-		"subject": "Existing profile emoji",
+		"subject": "Floating black-and-green layered circuit deck",
 		"reference": false,
 		"logo": {
-			"kind": "emoji",
-			"original": "/logos/emoji/matrix.png",
-			"sourcePath": "nocoo/nocoo README.md — existing project emoji",
-			"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+			"kind": "original",
+			"original": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png",
 			"modified": false,
-			"width": 1024,
-			"height": 1024,
-			"bytes": 354520,
-			"sha256": "21d9c4ed49bedc6010a787ae1a16c2b7e982be264dc5c3e446a2fe9ad122e8b3",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3271736,
+			"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
 			"thumbnail": "/logos/display/matrix-160.webp",
 			"display": "/logos/display/matrix-1024.webp"
 		},
@@ -6153,7 +6268,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Sci-fi dashboard UI kit with React and Tailwind for digital reality interfaces",
-			"repositoryRevision": "91556a6510239e399de92770ed0bdc6bdee33a82"
+			"repositoryRevision": "8e6f9add035b35505576f161d95393c0b8b31e07"
 		},
 		"colors": {
 			"primary": "#00ff41",
@@ -6171,23 +6286,142 @@
 					"source": "src/index.css --matrix-bg: #050505"
 				},
 				{
-					"color": "#90dd7a",
-					"role": "accent",
-					"source": "Existing profile emoji glyph, sampled pixel"
+					"color": "#1d2222",
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (1340, 376); artwork/logo-family/matrix/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#5bae64",
-					"role": "accent",
-					"source": "Existing profile emoji glyph, sampled pixel"
+					"color": "#29bf5a",
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (1258, 1177); artwork/logo-family/matrix/2026-09-07-01/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#3f3b28",
-					"role": "accent",
-					"source": "Existing profile emoji glyph, sampled pixel"
+					"color": "#a79667",
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (405, 666); artwork/logo-family/matrix/2026-09-07-01/palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#b2f6cb",
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (973, 864); artwork/logo-family/matrix/2026-09-07-01/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"series": "material",
+			"finishing": "01",
+			"model": "gpt-image-2",
+			"root": "/logos/family/matrix/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/matrix/2026-09-07-01",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Floating black-and-green layered circuit deck",
+					"zh": "悬浮的黑绿多层电路甲板"
+				},
+				"original": "/logos/family/matrix/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/matrix/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8"
+			},
+			"previous": {
+				"original": "/logos/emoji/matrix.png",
+				"sourceUrl": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"width": 1024,
+				"height": 1024,
+				"sha256": "21d9c4ed49bedc6010a787ae1a16c2b7e982be264dc5c3e446a2fe9ad122e8b3"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "A fragment of the mothership",
+						"zh": "母星甲板的一角"
+					},
+					"description": {
+						"en": "A floating thick square deck shares Dotty’s elevated camera and whole-object safety inset. Dense circuitry fills the top and stacked sidewalls while preserving one clear solid block.",
+						"zh": "悬浮的厚方形甲板延续 Dotty 的斜上方镜头与整体安全留白。密集电路铺满表面及层叠侧壁，仍保持一个清楚、完整的材质主体。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Black structure, live green traces",
+						"zh": "黑色结构与绿色带电走线"
+					},
+					"description": {
+						"en": "Near-black panels, metallic contacts and many thin circuit layers read as a physical engineered material. One small arc bridges deck contacts; the separate subtle lower spill adds light only to large presentations.",
+						"zh": "近黑面板、金属触点与多层细电路组成拟物工程材质。小电弧连接表面触点，下缘微弱外发光单独处理，仅用于大尺寸展示。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Circuit routing grid",
+						"zh": "电路布线格线"
+					},
+					"description": {
+						"en": "Pale mint engineering paper combines fine cells with larger backplane divisions, stepped routes and terminal vias. The geometry differs from Dotty’s drafting marks and Basalt’s architectural elevations.",
+						"zh": "浅薄荷色工程纸结合细格、较大的背板分区、折线走线和端点过孔，纹理几何与 Dotty 的制图标记、Basalt 的建筑立面各不相同。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#e2eee7",
+					"role": "background",
+					"label": {
+						"en": "Circuit routing grid",
+						"zh": "电路布线格线"
+					},
+					"source": "Selected Matrix presentation, 2026-09-07-01/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#1d2222",
+					"role": "primary",
+					"label": {
+						"en": "Black deck",
+						"zh": "黑色甲板"
+					},
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (1340, 376); artwork/logo-family/matrix/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#29bf5a",
+					"role": "accent",
+					"label": {
+						"en": "Live green",
+						"zh": "带电绿色"
+					},
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (1258, 1177); artwork/logo-family/matrix/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#a79667",
+					"role": "accent",
+					"label": {
+						"en": "Contact metal",
+						"zh": "触点金属"
+					},
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (405, 666); artwork/logo-family/matrix/2026-09-07-01/palette.json"
+				},
+				{
+					"color": "#b2f6cb",
+					"role": "accent",
+					"label": {
+						"en": "Arc highlight",
+						"zh": "电弧高光"
+					},
+					"source": "Native matrix d6d796220a39, sampled sRGB pixel (973, 864); artwork/logo-family/matrix/2026-09-07-01/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "At 128/64 px the deck shape, green routing and layered rim remain readable. At 32/24/16 px the transparent mark resolves to a dark diamond-like block with a green circuit signature; individual vias and the small arc merge into that accent.",
+				"zh": "128/64 px 能读出甲板形状、绿色走线和层叠侧缘；32/24/16 px 透明标记凝练为带绿色电路特征的深色菱形方块，独立过孔与小电弧合并为色彩点缀。"
+			}
+		}
 	},
 	{
 		"id": "basalt",
@@ -6199,49 +6433,53 @@
 			"zh": "沉稳、紧凑的哑光设计系统，为信息密集的软件界面而做。"
 		},
 		"category": "design",
-		"website": "https://basalt.hexly.ai",
-		"websiteSource": "GitHub repository homepage",
+		"website": "https://basaltui.com",
+		"websiteSource": "GitHub repository homepage and README at 9e226aa5c1376351ec76a659b1a33a8139892b4b",
 		"repository": "https://github.com/nocoo/basalt",
-		"subject": "Existing application mark",
+		"subject": "Obsidian and gemstone Forbidden City corner tower",
 		"reference": false,
 		"logo": {
 			"kind": "original",
-			"original": "/logos/originals/basalt.svg",
-			"sourcePath": "public/favicon.svg",
-			"sourceUrl": "https://github.com/nocoo/basalt/blob/68a3b545d8dbcfb1968a3be8031d4710bfe3c10c/public/favicon.svg",
+			"original": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
 			"modified": false,
-			"width": 32,
-			"height": 32,
-			"bytes": 364,
-			"sha256": "652ee2a1a62d12e0e9ae89b0a29381b5a03a91a80f75d3a07251fdef89bdb14a",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 3445051,
+			"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
 			"thumbnail": "/logos/display/basalt-160.webp",
 			"display": "/logos/display/basalt-1024.webp"
 		},
 		"theme": {
 			"primary": {
-				"value": "217 91% 60%",
+				"value": "204 88% 32%",
 				"source": "packages/basalt/src/styles/tokens.css --basalt-primary"
 			},
 			"background": {
 				"value": "220 14% 94%",
 				"source": "packages/basalt/src/styles/tokens.css --basalt-background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-foreground"
 			}
 		},
 		"source": {
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Matte-dark design system engineered for high-density SaaS interfaces",
-			"repositoryRevision": "68a3b545d8dbcfb1968a3be8031d4710bfe3c10c"
+			"repositoryRevision": "9e226aa5c1376351ec76a659b1a33a8139892b4b"
 		},
 		"colors": {
-			"primary": "#3c83f6",
+			"primary": "#0a6099",
 			"background": "#eeeff2",
-			"ink": "#161616",
+			"ink": "#1f1f1f",
 			"palette": [
 				{
-					"color": "#3c83f6",
+					"color": "#0a6099",
 					"role": "primary",
-					"source": "packages/basalt/src/styles/tokens.css --basalt-primary: 217 91% 60%"
+					"source": "packages/basalt/src/styles/tokens.css --basalt-primary: 204 88% 32%"
 				},
 				{
 					"color": "#eeeff2",
@@ -6249,23 +6487,156 @@
 					"source": "packages/basalt/src/styles/tokens.css --basalt-background: 220 14% 94%"
 				},
 				{
-					"color": "#161616",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#17191c",
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (601, 1192); artwork/logo-family/basalt/2026-09-07-02/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#3c84f6",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#0a6648",
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (616, 1095); artwork/logo-family/basalt/2026-09-07-02/palette.json",
+					"role": "accent"
 				},
 				{
-					"color": "#233a60",
-					"role": "accent",
-					"source": "Preserved project artwork, sampled pixel"
+					"color": "#9e1c2b",
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (849, 483); artwork/logo-family/basalt/2026-09-07-02/palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#e4a228",
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (1007, 257); artwork/logo-family/basalt/2026-09-07-02/palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#b58e4d",
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (1402, 797); artwork/logo-family/basalt/2026-09-07-02/palette.json",
+					"role": "accent"
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-02",
+			"series": "material",
+			"finishing": "01",
+			"model": "gpt-image-2",
+			"root": "/logos/family/basalt/2026-09-07-02/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/basalt/2026-09-07-02",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Obsidian and gemstone Forbidden City corner tower",
+					"zh": "黑曜石与宝石构成的故宫角楼"
+				},
+				"original": "/logos/family/basalt/2026-09-07-02/01/transparent.png",
+				"display": "/logos/family/basalt/2026-09-07-02/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
+			},
+			"previous": {
+				"original": "/logos/originals/basalt.svg",
+				"sourceUrl": "https://github.com/nocoo/basalt/blob/68a3b545d8dbcfb1968a3be8031d4710bfe3c10c/public/favicon.svg",
+				"width": 32,
+				"height": 32,
+				"sha256": "652ee2a1a62d12e0e9ae89b0a29381b5a03a91a80f75d3a07251fdef89bdb14a"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "A shallower architectural portrait",
+						"zh": "更平的建筑视角"
+					},
+					"description": {
+						"en": "The corner tower replaces the rejected plain stone slab. A three-quarter camera around 25 degrees above horizontal emphasizes its tiered eaves and compact foundation; the complete tower is uniformly inset without clipping finials or roof tips.",
+						"zh": "角楼替换已否定的普通石砖。约 25° 俯视的斜向镜头突出重檐和紧凑基座；整座建筑统一缩放，尖顶与飞檐均完整保留。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Obsidian and gemstones",
+						"zh": "黑曜石与宝石"
+					},
+					"description": {
+						"en": "Polished black obsidian defines the structure. Emerald roof inlays, restrained ruby accents, warm amber and fine gold trim follow the architecture as one coherent material system, with physical light and crisp high-resolution detail.",
+						"zh": "抛光黑曜石构成建筑主体。祖母绿屋面、克制的红宝石点缀、温暖琥珀及细金边沿建筑组织为一个统一材质体系，保留真实光感与清晰高清细节。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Corner tower construction grid",
+						"zh": "角楼建筑工程格线"
+					},
+					"description": {
+						"en": "Pale champagne drawing paper combines fine engineering cells, larger datum lines, sparse roof elevations and dimensional ticks. Its independent projected shadow creates a gentle hover gap under the obsidian foundation.",
+						"zh": "浅香槟色制图纸结合细工程网格、较大的基准线、稀疏屋顶立面与尺寸刻度，独立投影在黑曜石基座下形成轻盈的悬浮间隙。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#ede6d8",
+					"role": "background",
+					"label": {
+						"en": "Corner tower construction grid",
+						"zh": "角楼建筑工程格线"
+					},
+					"source": "Selected Basalt presentation, 2026-09-07-02/01; background.base in archived settings.json"
+				},
+				{
+					"color": "#17191c",
+					"role": "primary",
+					"label": {
+						"en": "Obsidian",
+						"zh": "黑曜石"
+					},
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (601, 1192); artwork/logo-family/basalt/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#0a6648",
+					"role": "accent",
+					"label": {
+						"en": "Emerald",
+						"zh": "祖母绿"
+					},
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (616, 1095); artwork/logo-family/basalt/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#9e1c2b",
+					"role": "accent",
+					"label": {
+						"en": "Ruby",
+						"zh": "红宝石"
+					},
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (849, 483); artwork/logo-family/basalt/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#e4a228",
+					"role": "accent",
+					"label": {
+						"en": "Amber",
+						"zh": "琥珀"
+					},
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (1007, 257); artwork/logo-family/basalt/2026-09-07-02/palette.json"
+				},
+				{
+					"color": "#b58e4d",
+					"role": "accent",
+					"label": {
+						"en": "Gold trim",
+						"zh": "金色镶边"
+					},
+					"source": "Native basalt 3b270748ea02, sampled sRGB pixel (1402, 797); artwork/logo-family/basalt/2026-09-07-02/palette.json"
+				}
+			],
+			"sizeNote": {
+				"en": "At 128/64 px the tiered roofs, obsidian base and emerald/amber accents establish the tower. At 32/24/16 px the transparent mark relies on the stepped architectural silhouette; tiny ruby inlays, railings and gold details naturally merge.",
+				"zh": "128/64 px 以重檐、黑曜石底座和祖母绿、琥珀点缀建立角楼形象；32/24/16 px 透明标记依靠层叠建筑剪影，细小红宝石、栏杆与金色细节自然合并。"
+			}
+		}
 	},
 	{
 		"id": "surety",

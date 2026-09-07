@@ -1,0 +1,97 @@
+{
+	"project": "dotty",
+	"references": [
+		{
+			"index": 1,
+			"path": "../../references/ref01.jpeg",
+			"sha256": "b6ffbf6a769a73aacca94b0fcbd4d8c8ffa59ce9f18b48775e3dcd57897044ff",
+			"bytes": 370854,
+			"role": "Premium tactile finish, restrained presentation and negative space only. No animal subject, no copied geometry, no transferred background stencil."
+		},
+		{
+			"index": 2,
+			"path": "../../references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683,
+			"role": "Premium tactile finish, restrained presentation and negative space only. No animal subject, no copied geometry, no transferred background stencil."
+		}
+	],
+	"sourceRepository": {
+		"localHead": "33c0ffa370a7582d2655cac142e1e6bbff71e412",
+		"originMain": "33c0ffa370a7582d2655cac142e1e6bbff71e412",
+		"status": "## main...origin/main",
+		"previousCatalogue": {
+			"id": "dotty",
+			"repo": "dotty",
+			"title": "Dotty",
+			"emoji": "🔲",
+			"description": {
+				"en": "A pixel-brutalist dashboard kit with monochrome geometry and stacked charts.",
+				"zh": "像素与粗野主义风格的仪表盘模板，使用单色几何元素和堆叠图表。"
+			},
+			"category": "design",
+			"website": "https://dotty.hexly.ai",
+			"websiteSource": "GitHub repository homepage",
+			"repository": "https://github.com/nocoo/dotty",
+			"subject": "Existing application mark",
+			"reference": false,
+			"logo": {
+				"kind": "original",
+				"original": "/logos/originals/dotty.svg",
+				"sourcePath": "public/logo.svg",
+				"sourceUrl": "https://github.com/nocoo/dotty/blob/33c0ffa370a7582d2655cac142e1e6bbff71e412/public/logo.svg",
+				"modified": false,
+				"width": 24,
+				"height": 24,
+				"bytes": 292,
+				"sha256": "33c046a7f6647bd2af6d6e47c1e3d9b439e9a0d78773c94c3e2fa3a0ba842d49",
+				"thumbnail": "/logos/display/dotty-160.webp",
+				"display": "/logos/display/dotty-1024.webp"
+			},
+			"theme": {
+				"background": {
+					"value": "220 14% 96%",
+					"source": "src/index.css --background"
+				},
+				"ink": {
+					"value": "220 14% 10%",
+					"source": "src/index.css --foreground"
+				},
+				"primary": {
+					"value": "220 14% 10%",
+					"source": "src/index.css --primary"
+				}
+			},
+			"source": {
+				"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+				"profileSection": "Recent Projects",
+				"description": "Pixel-brutalist dashboard template with monochrome geometry and stacked charts",
+				"repositoryRevision": "33c0ffa370a7582d2655cac142e1e6bbff71e412"
+			},
+			"colors": {
+				"primary": "#16181d",
+				"background": "#f3f4f6",
+				"ink": "#16181d",
+				"palette": [
+					{
+						"color": "#16181d",
+						"role": "primary",
+						"source": "src/index.css --primary: 220 14% 10%"
+					},
+					{
+						"color": "#f3f4f6",
+						"role": "background",
+						"source": "src/index.css --background: 220 14% 96%"
+					},
+					{
+						"color": "#191c23",
+						"role": "accent",
+						"source": "Preserved project artwork, sampled pixel"
+					}
+				]
+			},
+			"archived": false
+		},
+		"preexistingDirtyFiles": {}
+	}
+}

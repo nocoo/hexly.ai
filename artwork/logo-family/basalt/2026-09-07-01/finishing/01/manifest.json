@@ -1,0 +1,389 @@
+{
+	"createdAt": "2026-09-07T05:31:16.415Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "283dc0710ab4b2ffd57e7e8574bf20ef5afe89efeac6c8c4e24f5a9fdf49988d",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "basalt",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/basalt.svg",
+		"background": {
+			"base": "#e9e5dc",
+			"light": "#faf7f0",
+			"shade": "#d7d1c7",
+			"motif": "#958d80",
+			"grainAmplitude": 0.52,
+			"grainSeed": 60907361,
+			"motifOpacity": 0.23,
+			"highlightOpacity": 0.42,
+			"ribbonOpacity": 0.16,
+			"pattern": {
+				"name": "Mineral survey grid",
+				"description": "Warm mineral paper with fine 36-unit survey cells, 144-unit datum lines, sparse triangular benchmarks and shallow geological contours at the corners.",
+				"layers": [
+					{
+						"d": "M10 0V1024M0 10H1024M46 0V1024M0 46H1024M82 0V1024M0 82H1024M118 0V1024M0 118H1024M154 0V1024M0 154H1024M190 0V1024M0 190H1024M226 0V1024M0 226H1024M262 0V1024M0 262H1024M298 0V1024M0 298H1024M334 0V1024M0 334H1024M370 0V1024M0 370H1024M406 0V1024M0 406H1024M442 0V1024M0 442H1024M478 0V1024M0 478H1024M514 0V1024M0 514H1024M550 0V1024M0 550H1024M586 0V1024M0 586H1024M622 0V1024M0 622H1024M658 0V1024M0 658H1024M694 0V1024M0 694H1024M730 0V1024M0 730H1024M766 0V1024M0 766H1024M802 0V1024M0 802H1024M838 0V1024M0 838H1024M874 0V1024M0 874H1024M910 0V1024M0 910H1024M946 0V1024M0 946H1024M982 0V1024M0 982H1024M1018 0V1024M0 1018H1024",
+						"tone": "motif",
+						"strokeWidth": 0.45
+					},
+					{
+						"d": "M10 0V1024M0 10H1024M154 0V1024M0 154H1024M298 0V1024M0 298H1024M442 0V1024M0 442H1024M586 0V1024M0 586H1024M730 0V1024M0 730H1024M874 0V1024M0 874H1024M1018 0V1024M0 1018H1024",
+						"tone": "motif",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M-30 182C62 192 72 110 176 128S263 67 307-24M-30 210C82 222 84 138 181 155S293 90 337-24M-30 238C102 252 111 166 190 184S320 110 367-24M686 1048C690 941 791 989 807 902S953 826 1052 873M714 1048C718 967 818 1005 835 916S972 854 1052 901M742 1048C744 996 846 1023 863 931S990 882 1052 929",
+						"tone": "motif",
+						"strokeWidth": 0.7
+					},
+					{
+						"d": "M76 818L202 914L358 844M202 914L260 1002M76 818L26 970M842 62L972 174L1012 42M842 62L772-12",
+						"tone": "motif",
+						"strokeWidth": 0.65
+					},
+					{
+						"d": "M76 814l4 7h-8zM68 826h16M202 910l4 7h-8zM194 922h16M358 840l4 7h-8zM350 852h16M842 58l4 7h-8zM834 70h16M972 170l4 7h-8zM964 182h16",
+						"tone": "motif",
+						"strokeWidth": 0.8
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					68,
+					60,
+					49
+				],
+				"opacity": 0.2,
+				"blurAt2048": 78,
+				"projectionScale": [
+					0.98,
+					0.38
+				],
+				"offsetAt2048": [
+					28,
+					510
+				]
+			},
+			{
+				"color": [
+					68,
+					60,
+					49
+				],
+				"opacity": 0.13,
+				"blurAt2048": 36,
+				"projectionScale": [
+					0.82,
+					0.26
+				],
+				"offsetAt2048": [
+					12,
+					503
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.8025,
+			"offsetAt2048": [
+				-14,
+				-67
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "The whole opaque block is placed uniformly inside the rounded tile. A shared target width of 1516 px and height of 1280 px keeps consistent perceived scale and room for the independent projected floor shadow. No material pieces move independently."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected near-white extraction preserves all solid surface details; no global white deletion."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2309578,
+		"foregroundPixels": 1884726,
+		"softEdgePixels": 12566,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 99,
+			"top": 198,
+			"right": 1985,
+			"bottom": 1792
+		}
+	},
+	"placement": {
+		"scale": 0.8025,
+		"offsetAt2048": [
+			-14,
+			-67
+		],
+		"bounds": {
+			"left": 267,
+			"top": 294,
+			"right": 1781,
+			"bottom": 1574
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 266.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3515,
+			"sha256": "be6241415cfedd747d1c094d6321e6a5844b36825f9316bdb1f9921b52588c0e"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1149,
+			"sha256": "577a7af562d1ff8aa5884e512c79a76565cba84fc995d544f8aa394a407c6c1a"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4228418,
+			"sha256": "3a8f37aa415971c52f26108f8aff7146445b042c117b9d6d6aa2df8ae167694e"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 64827,
+			"sha256": "1aa50912f18380d49d0cf457801c0c5a409f80fee0ca3615466b07616889d4b0"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 2105,
+			"sha256": "4b34ce2a22188812b0f2609521948e03c4e217f3bbf7d2e95b9ac2e8f575140a"
+		},
+		{
+			"path": "background.png",
+			"bytes": 789171,
+			"sha256": "163b785f5017910a7366507bbb09163a92c8afb8a2b888bd21f7c25526b46ac6"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2796611,
+			"sha256": "02447e54bfb20cbae911f497cce493b4793f54230ce16ebd08bfd97b0132c2ae"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 68384,
+			"sha256": "b8b9550082fe0334b3ea034e507b4477e4c1c7a0d548e92618ef4e38eacea385"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 132074,
+			"sha256": "3275665d86484277b6a0a2444da4f025688b14a8dbc16f570eea42426d3a2c5a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 66278,
+			"sha256": "f12ea7164578721971f7f7228696ccd22c99a4d6eeb999cd7d8762f8dac423ec"
+		},
+		{
+			"path": "exports/basalt-transparent-2048.png",
+			"bytes": 2796611,
+			"sha256": "02447e54bfb20cbae911f497cce493b4793f54230ce16ebd08bfd97b0132c2ae"
+		},
+		{
+			"path": "exports/basalt-icon-2048.png",
+			"bytes": 3607916,
+			"sha256": "8cdc300e6385715ac56859c6071efd6869bf57bf045d2f5c54b50f9cb4cd513b"
+		},
+		{
+			"path": "exports/basalt-rounded-2048.png",
+			"bytes": 3587913,
+			"sha256": "089089953a14fd39b95df7810c2fa8949f5e030652bddfcdeba02011782189c0"
+		},
+		{
+			"path": "exports/basalt-transparent-1024.png",
+			"bytes": 678846,
+			"sha256": "d94779308fad442b612982927f6607dddca18219779fd2c2d839a57cad3f2f89"
+		},
+		{
+			"path": "exports/basalt-icon-1024.png",
+			"bytes": 946756,
+			"sha256": "cf5926eef63aa221cd7d0cc48821272dbd4ec483487256a0cc8f0bb5c321beaa"
+		},
+		{
+			"path": "exports/basalt-rounded-1024.png",
+			"bytes": 955668,
+			"sha256": "edc62307865423be2563dd1a01b7f9e305510df44f2dfff32e4279b3c8de19e6"
+		},
+		{
+			"path": "exports/basalt-transparent-512.png",
+			"bytes": 163115,
+			"sha256": "bda46eaa70fb041fa985d42fab674ecd11d171751fd5a66c00853d547c960c35"
+		},
+		{
+			"path": "exports/basalt-icon-512.png",
+			"bytes": 272231,
+			"sha256": "7e56c8dbbc42b28e215079889ff6355a77ae471816c09467685feea0221ee5b3"
+		},
+		{
+			"path": "exports/basalt-rounded-512.png",
+			"bytes": 276212,
+			"sha256": "ee07bb51efcbc03ce66c7b6d1182312a971cbea08e7e147d0e094b4aee1b55cc"
+		},
+		{
+			"path": "exports/basalt-transparent-256.png",
+			"bytes": 41489,
+			"sha256": "a4ad80ff847481a89514697a410005a32868d0348dd852c6fbfc77be8f5d3080"
+		},
+		{
+			"path": "exports/basalt-icon-256.png",
+			"bytes": 74605,
+			"sha256": "11dbed14c31bd7bf7339478434eaa9fd33c3dbf81740cb2c054460dfe652822c"
+		},
+		{
+			"path": "exports/basalt-rounded-256.png",
+			"bytes": 77283,
+			"sha256": "b85ec2adc44951c7001a4bbc308ea32d3266b14ca5a79c4e481a974aed517dc4"
+		},
+		{
+			"path": "exports/basalt-transparent-128.png",
+			"bytes": 11002,
+			"sha256": "6bf29e69eb339f62dc80185b0d94bdf19936f9f6d06554d0728b5f87e4883f8e"
+		},
+		{
+			"path": "exports/basalt-icon-128.png",
+			"bytes": 22541,
+			"sha256": "4d3ffa7b6b5776fe52d744eef6977a984d226d8d9ed7069752ea5784ca73ee57"
+		},
+		{
+			"path": "exports/basalt-rounded-128.png",
+			"bytes": 23885,
+			"sha256": "f099eba65e73f599d0fab61d8eeb21a7690dd5122df4c97ebde96e2fc4e1dce4"
+		},
+		{
+			"path": "exports/basalt-transparent-64.png",
+			"bytes": 3281,
+			"sha256": "97934e2bcd6c68fbc19418b3567d18c1dae654738f81717fe9c50917277f9cc2"
+		},
+		{
+			"path": "exports/basalt-icon-64.png",
+			"bytes": 6815,
+			"sha256": "98f7b82311b5d5dfd4eb59307e2d58a926427c460612051a5d06a85336cff47e"
+		},
+		{
+			"path": "exports/basalt-rounded-64.png",
+			"bytes": 7426,
+			"sha256": "1c08826a951af0369d1d2ae1c98c1b799c490ffec16a3edbb7f36422bfafd356"
+		},
+		{
+			"path": "exports/basalt-transparent-48.png",
+			"bytes": 2119,
+			"sha256": "aec304b80793d020bcfece1249d18e5bb81d0dc1a7c47b6c98dcbed15b826141"
+		},
+		{
+			"path": "exports/basalt-icon-48.png",
+			"bytes": 4373,
+			"sha256": "af2cb0e4c26308d402d1a47d93fb3b06bd60d20f7a07edced6b99bf07344eda6"
+		},
+		{
+			"path": "exports/basalt-rounded-48.png",
+			"bytes": 4807,
+			"sha256": "c8bdb8c733f0a14a44955613ffce347ee763d0d0ceab1c979662552c3c60112c"
+		},
+		{
+			"path": "exports/basalt-transparent-32.png",
+			"bytes": 1213,
+			"sha256": "7b73dece3968faacb9ca5d90a09213a6236821cfdd3b88a5841dfc059c0ffb31"
+		},
+		{
+			"path": "exports/basalt-icon-32.png",
+			"bytes": 2382,
+			"sha256": "4f69bc63cb5fb6031a420bca677ee3bdb21a74a0fd97dea9bdb3b55862598fdb"
+		},
+		{
+			"path": "exports/basalt-rounded-32.png",
+			"bytes": 2587,
+			"sha256": "83adc754554b321b80e338b2e84151edcc3fb958c16422dd4bad83c60a82949b"
+		},
+		{
+			"path": "exports/basalt-transparent-24.png",
+			"bytes": 835,
+			"sha256": "de45e2751ef6aebd3f38ce3c38e95501c962af3ba528af85261e6e6f71678f0a"
+		},
+		{
+			"path": "exports/basalt-icon-24.png",
+			"bytes": 1506,
+			"sha256": "f6bae30af0338fcfa4d3bf9a947cbf70ebdfaf6657850c5b0bb9ed603ece031d"
+		},
+		{
+			"path": "exports/basalt-rounded-24.png",
+			"bytes": 1683,
+			"sha256": "df2692729b88cc36cda1377b2485576ea4552b155b6b00e074cbb229d4cf2ca9"
+		},
+		{
+			"path": "exports/basalt-transparent-16.png",
+			"bytes": 535,
+			"sha256": "d6f8b4e6866e79640ee0e05dadce5e7aaef777c0b68783fa348159657ff2ae0f"
+		},
+		{
+			"path": "exports/basalt-icon-16.png",
+			"bytes": 870,
+			"sha256": "b4274e92570ece72c45e6e14a40c32f430bd6a60ce2b57143f062a02f1efde00"
+		},
+		{
+			"path": "exports/basalt-rounded-16.png",
+			"bytes": 929,
+			"sha256": "657bb27310a4501836ea1c2f6f4b6c947c85bb3172fd4bb85db60d58a0688485"
+		},
+		{
+			"path": "exports/basalt-white-2048.png",
+			"bytes": 2562261,
+			"sha256": "da3f4197c8071b98f25c774867568e40ec091953491c7b8b7649b23dd8074ff3"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 637509,
+			"sha256": "e8ab02a7e1cd18c3e8e298c57d6ef7ee5ca72bff75d257543678d5e00d7e8bbb"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 628091,
+			"sha256": "1f9dd688c47e88408271a86fd9da51b609b0991d3c240b2f1a3d87f331f417cd"
+		}
+	]
+}

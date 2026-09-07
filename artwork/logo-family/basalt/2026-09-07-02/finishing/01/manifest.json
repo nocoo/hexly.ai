@@ -1,0 +1,394 @@
+{
+	"createdAt": "2026-09-07T05:48:05.700Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "basalt",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/basalt.svg",
+		"background": {
+			"base": "#ede6d8",
+			"light": "#faf7ee",
+			"shade": "#dbd1c0",
+			"motif": "#a8987e",
+			"grainAmplitude": 0.46,
+			"grainSeed": 60907362,
+			"motifOpacity": 0.24,
+			"highlightOpacity": 0.42,
+			"ribbonOpacity": 0.16,
+			"pattern": {
+				"name": "Corner tower construction grid",
+				"description": "Pale champagne architectural drawing paper with fine 40-unit cells, 160-unit datum lines, spare roof-elevation construction strokes, dimension ticks and registration crosses.",
+				"layers": [
+					{
+						"d": "M12 0V1024M0 12H1024M52 0V1024M0 52H1024M92 0V1024M0 92H1024M132 0V1024M0 132H1024M172 0V1024M0 172H1024M212 0V1024M0 212H1024M252 0V1024M0 252H1024M292 0V1024M0 292H1024M332 0V1024M0 332H1024M372 0V1024M0 372H1024M412 0V1024M0 412H1024M452 0V1024M0 452H1024M492 0V1024M0 492H1024M532 0V1024M0 532H1024M572 0V1024M0 572H1024M612 0V1024M0 612H1024M652 0V1024M0 652H1024M692 0V1024M0 692H1024M732 0V1024M0 732H1024M772 0V1024M0 772H1024M812 0V1024M0 812H1024M852 0V1024M0 852H1024M892 0V1024M0 892H1024M932 0V1024M0 932H1024M972 0V1024M0 972H1024M1012 0V1024M0 1012H1024",
+						"tone": "motif",
+						"strokeWidth": 0.44
+					},
+					{
+						"d": "M52 0V1024M0 52H1024M212 0V1024M0 212H1024M372 0V1024M0 372H1024M532 0V1024M0 532H1024M692 0V1024M0 692H1024M852 0V1024M0 852H1024M1012 0V1024M0 1012H1024",
+						"tone": "motif",
+						"strokeWidth": 0.82
+					},
+					{
+						"d": "M12 220H220M52 64V244M32 224Q100 217 148 176Q175 192 244 200M36 200Q91 196 148 152Q186 180 244 178M148 120V240M28 252H244M28 246V258M244 246V258",
+						"tone": "motif",
+						"strokeWidth": 0.72
+					},
+					{
+						"d": "M780 824H996M836 756V948M756 864Q816 861 884 820Q923 848 996 850M756 892Q824 890 884 848Q932 878 996 874M884 780V944M780 936H996M780 930V942M996 930V942",
+						"tone": "motif",
+						"strokeWidth": 0.7
+					},
+					{
+						"d": "M45 52H59M52 45V59M965 52H979M972 45V59M45 972H59M52 965V979M965 972H979M972 965V979M285 92H299M292 85V99M725 932H739M732 925V939",
+						"tone": "motif",
+						"strokeWidth": 0.95
+					},
+					{
+						"d": "M812 108H972M812 102V114M852 104V112M892 102V114M932 104V112M972 102V114M52 812V932M46 812H58M48 852H56M46 892H58M48 932H56",
+						"tone": "motif",
+						"strokeWidth": 0.7
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					64,
+					55,
+					45
+				],
+				"opacity": 0.19,
+				"blurAt2048": 75,
+				"projectionScale": [
+					0.89,
+					0.21
+				],
+				"offsetAt2048": [
+					22,
+					700
+				]
+			},
+			{
+				"color": [
+					64,
+					55,
+					45
+				],
+				"opacity": 0.13,
+				"blurAt2048": 34,
+				"projectionScale": [
+					0.67,
+					0.12
+				],
+				"offsetAt2048": [
+					18,
+					690
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.8468,
+			"offsetAt2048": [
+				3,
+				-44
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "The complete tower is uniformly placed within a 1520-pixel maximum extent, centered slightly above the tile midpoint. All eaves, finials and foundation corners remain intact; the independent floor shadow supplies hovering depth without reducing the architecture to the earlier slab proportions."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Modal RGB from the outer eight-pixel native border. Exterior-connected near-white extraction only; preserve opaque gemstone highlights, obsidian reflections and architectural openings according to their geometry."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2361688,
+		"foregroundPixels": 1832616,
+		"softEdgePixels": 15054,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 135,
+			"top": 111,
+			"right": 1907,
+			"bottom": 1905
+		}
+	},
+	"placement": {
+		"scale": 0.8468,
+		"offsetAt2048": [
+			3,
+			-44
+		],
+		"bounds": {
+			"left": 274,
+			"top": 207,
+			"right": 1775,
+			"bottom": 1726
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 207.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3680,
+			"sha256": "18c364ed257fee09cf475192f7f36b10616b4f8de8dff34bccbf68f81253923d"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1314,
+			"sha256": "58dac3a04ff313781e9473931faeecafdf7154a1d261b6a22c9d9db882cc0edb"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4583200,
+			"sha256": "7535a072f751a447717eef7d497b47f17df1a2cbfd50185760b4e19997d8a747"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 82397,
+			"sha256": "c3b7d4c17abc18cf7d7615476c6355a81d5664c2729d3afcc64a073755f96b24"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 2145,
+			"sha256": "9194ab4a6dabdff7354563c007f1ab82c1a623f4124e8502fbc0fc87b37d6989"
+		},
+		{
+			"path": "background.png",
+			"bytes": 273933,
+			"sha256": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3445051,
+			"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 107103,
+			"sha256": "7b0280e4306915242b45aeaa502bb94ab76f20a17e6948aafb3c9ddd114c15c7"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 102238,
+			"sha256": "cfea020c501bcc0435c091b28f9e63b6ddab5af7510af7e60507dd43833e113f"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 53162,
+			"sha256": "b86dcaf980a95158f7b1c3da6b33ab4ac08eebb5782546486f8a5a9feec537ff"
+		},
+		{
+			"path": "exports/basalt-transparent-2048.png",
+			"bytes": 3445051,
+			"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
+		},
+		{
+			"path": "exports/basalt-icon-2048.png",
+			"bytes": 3751552,
+			"sha256": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1"
+		},
+		{
+			"path": "exports/basalt-rounded-2048.png",
+			"bytes": 3754162,
+			"sha256": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9"
+		},
+		{
+			"path": "exports/basalt-transparent-1024.png",
+			"bytes": 912757,
+			"sha256": "74448a487b98e5fc62fe8cfcae620549c901e6a37b9a9e50c2f88da4025b9db6"
+		},
+		{
+			"path": "exports/basalt-icon-1024.png",
+			"bytes": 1094662,
+			"sha256": "7348845649486cb47e8430d2c0ab23fc698c9250f76e2077f8d0a974d708af0e"
+		},
+		{
+			"path": "exports/basalt-rounded-1024.png",
+			"bytes": 1106061,
+			"sha256": "a347bdc3789618ba1f14e9f0b1dffe3be438034f9e0138bf5fa7fc3bc3729319"
+		},
+		{
+			"path": "exports/basalt-transparent-512.png",
+			"bytes": 245894,
+			"sha256": "bc04fb58db8fab7d807110050596174653b5a12c5faf14d860b80b187646f37b"
+		},
+		{
+			"path": "exports/basalt-icon-512.png",
+			"bytes": 325605,
+			"sha256": "851266750f5fbad6ad09ece11de98c304b3b695858a664bfc405061e9e91c56c"
+		},
+		{
+			"path": "exports/basalt-rounded-512.png",
+			"bytes": 331033,
+			"sha256": "557705f2803210d01e9b8b14f1e8b00bc17983441b54f68a9d763a946ca76421"
+		},
+		{
+			"path": "exports/basalt-transparent-256.png",
+			"bytes": 66423,
+			"sha256": "61c49e920dd03bbd0c47ad4c2059a248780b0e24e090b3256e35723e4a611116"
+		},
+		{
+			"path": "exports/basalt-icon-256.png",
+			"bytes": 97508,
+			"sha256": "e4b6d98642a2707d06b3b84e2ed5f951f11301a4103ba62efe60db432394e701"
+		},
+		{
+			"path": "exports/basalt-rounded-256.png",
+			"bytes": 100040,
+			"sha256": "8ff79a1b14d1442ae66992b021d75bddd2f7937b97e3535086171d426662027c"
+		},
+		{
+			"path": "exports/basalt-transparent-128.png",
+			"bytes": 18475,
+			"sha256": "1da73b5ec2f10a7445cc714dcc31b8cc131f45f528a6d73fa1e73ff9b376d4d6"
+		},
+		{
+			"path": "exports/basalt-icon-128.png",
+			"bytes": 28893,
+			"sha256": "77b1bf1bb58b5ed019eea05221d455cb85cb2b9b01754bd10a24dc05fd27c0be"
+		},
+		{
+			"path": "exports/basalt-rounded-128.png",
+			"bytes": 30346,
+			"sha256": "eb0f1db96488d8ddb13e229dedd34fcb842aea3b857fe4fa419e91170bcd1eb8"
+		},
+		{
+			"path": "exports/basalt-transparent-64.png",
+			"bytes": 5333,
+			"sha256": "0ae66944ba58e6feb2d600d207d763392ac01b774de0dec254ad4241b3084bf8"
+		},
+		{
+			"path": "exports/basalt-icon-64.png",
+			"bytes": 8949,
+			"sha256": "f30a76425a47f810848affc6ffba8613635c5d6812a1d70274be7e5684affe23"
+		},
+		{
+			"path": "exports/basalt-rounded-64.png",
+			"bytes": 9553,
+			"sha256": "f0b58789c6684692692e1f13012aaa937b2d0d9134718d3259c11c0a4a7315f0"
+		},
+		{
+			"path": "exports/basalt-transparent-48.png",
+			"bytes": 3292,
+			"sha256": "fc360d2cb049ad9952fb97472c40ac8cdf8e8dd9614026a5f6a77d2b7639532a"
+		},
+		{
+			"path": "exports/basalt-icon-48.png",
+			"bytes": 5547,
+			"sha256": "9fda7474a51ddf3fff45d6f28c5eeda117cb968d1b71e45ad2c5266567e58d64"
+		},
+		{
+			"path": "exports/basalt-rounded-48.png",
+			"bytes": 5989,
+			"sha256": "c1e42cd4d400266faf5833999cf0db61e6c1d35ced9f4c16a040ea1f52f24dfe"
+		},
+		{
+			"path": "exports/basalt-transparent-32.png",
+			"bytes": 1699,
+			"sha256": "cb5ee4d897b317885a469dc68f7b6c5ad4aa9bcbcc14ce3e5b86cefc811dc6f6"
+		},
+		{
+			"path": "exports/basalt-icon-32.png",
+			"bytes": 2796,
+			"sha256": "fb69ea8a806ddbdf66c2bbdf87201b9d288dfa39a63176b86c3f0d76a2c69920"
+		},
+		{
+			"path": "exports/basalt-rounded-32.png",
+			"bytes": 3020,
+			"sha256": "1fb533c477b5a0956834569d98a221968b0a844b466d52281f6ef4f62e3b497f"
+		},
+		{
+			"path": "exports/basalt-transparent-24.png",
+			"bytes": 1128,
+			"sha256": "31880b042615a7bea3fc7deb45bf6cfab1a7c1407480908ed773e6b2d46008f1"
+		},
+		{
+			"path": "exports/basalt-icon-24.png",
+			"bytes": 1777,
+			"sha256": "7298770d2691f3bdecc94ba9aa808e3f6b1b555755a9349ace07ec327e0ce1b5"
+		},
+		{
+			"path": "exports/basalt-rounded-24.png",
+			"bytes": 1921,
+			"sha256": "296c5d4bf075d5f3bc52ac66e8c0730ba22f7f602ee3b67b610e2a82065da08f"
+		},
+		{
+			"path": "exports/basalt-transparent-16.png",
+			"bytes": 626,
+			"sha256": "fc805af3a1d75560741df409bb502b462c052c7f54211808262f7ed73c219982"
+		},
+		{
+			"path": "exports/basalt-icon-16.png",
+			"bytes": 938,
+			"sha256": "315518de2c07e51745afa13e29c9bcfee89142cbe4853dd1edf9229779501003"
+		},
+		{
+			"path": "exports/basalt-rounded-16.png",
+			"bytes": 991,
+			"sha256": "d054584bad15474cee55e05c4b57101212ab7da0a8b6475b6a81e518180cea05"
+		},
+		{
+			"path": "exports/basalt-white-2048.png",
+			"bytes": 3103185,
+			"sha256": "44ee1deb94999a305b6536c4e1fefd3f76d529528c41abc3ef0442abf7f566c8"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 842253,
+			"sha256": "c95a93c95e35052d04d1a5690ad1f46db0d7d068ca5f622a98ce890ce95b79ba"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 827935,
+			"sha256": "8375cd5423360bfcb05ce1d27be2affc1f6385809fc387a8076f59030fa247b8"
+		}
+	]
+}

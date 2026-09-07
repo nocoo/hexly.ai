@@ -1,0 +1,39 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"study": "matrix/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/matrix",
+	"sourceCommit": "8e6f9add035b35505576f161d95393c0b8b31e07",
+	"masters": {
+		"logo.png": {
+			"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "cfca56f6199c4e5eee4f6e1eae1a0868bbaf6283cf6b32e23e1c8bfb23c559db",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "32718620d15e7435f15c853ea88b796370d44b958b6512fc336c42bb61e27d7e",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "210f6f50a60ac97ec296fda48f20df7bf8c22f4d8d5a26f98259763eb9591f76",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/assets/brand/README.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/matrix",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/matrix/2026-09-07-01/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-materials/source-publication.json",
+		"note": "Source adoption and public deployment are verified separately against the exact revision in the batch report."
+	}
+}
