@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
-import projects from "../../src/data/projects.json" with { type: "json" };
-import type { LogoFamily } from "../../src/model/project";
+import rawProjects from "../../src/data/projects.json" with { type: "json" };
+import type { Project } from "../../src/model/project";
+
+const projects = rawProjects as Project[];
 
 for (const id of projects
 	.filter((project) => project.family)
@@ -10,7 +12,7 @@ for (const id of projects
 	}) => {
 		const project = projects.find((item) => item.id === id);
 		if (!project?.family) throw new Error(`Missing refinement: ${id}`);
-		const family: LogoFamily = project.family;
+		const family = project.family;
 		const retained = family.method === "retained-original";
 		await page.goto(`/logos/${id}`);
 		await expect(page.locator("#identity-title")).toContainText(project.title);
