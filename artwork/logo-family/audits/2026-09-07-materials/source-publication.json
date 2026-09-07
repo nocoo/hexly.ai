@@ -1,5 +1,5 @@
 {
-	"checkedAt": "2026-09-07T06:37:43.018503+00:00",
+	"checkedAt": "2026-09-07T06:53:38.900784+00:00",
 	"scope": ["dotty", "matrix", "basalt"],
 	"projects": [
 		{
@@ -797,23 +797,23 @@
 		{
 			"project": "basalt",
 			"repository": "https://github.com/nocoo/basalt",
-			"checkedAt": "2026-09-07T06:37:34.925495+00:00",
+			"checkedAt": "2026-09-07T06:53:31.065556+00:00",
 			"sourceAdoptionCommit": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
-			"publishedMainCommit": "6643037a00015adb126e7d41faca497b92b7f305",
+			"publishedMainCommit": "514d94892b9f55984dcd3cda0d9408ebecfcba9b",
 			"ci": {
-				"conclusion": "failure",
-				"createdAt": "2026-09-07T06:21:42Z",
-				"databaseId": 34090481049,
-				"headSha": "6643037a00015adb126e7d41faca497b92b7f305",
+				"conclusion": "success",
+				"createdAt": "2026-09-07T06:40:02Z",
+				"databaseId": 34091855466,
+				"headSha": "514d94892b9f55984dcd3cda0d9408ebecfcba9b",
 				"jobs": [
 					{
-						"databaseId": 101642751655,
+						"databaseId": 101646828031,
 						"name": "Package Gates & Consumers",
 						"status": "completed",
-						"conclusion": "failure",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34090481049/job/101642751655",
-						"startedAt": "2026-09-07T06:21:45Z",
-						"completedAt": "2026-09-07T06:28:13Z",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34091855466/job/101646828031",
+						"startedAt": "2026-09-07T06:40:05Z",
+						"completedAt": "2026-09-07T06:49:41Z",
 						"steps": [
 							{
 								"name": "Set up job",
@@ -893,17 +893,17 @@
 							{
 								"name": "Validate Library and Example interactions",
 								"status": "completed",
-								"conclusion": "failure"
+								"conclusion": "success"
 							},
 							{
 								"name": "Post Setup Bun",
 								"status": "completed",
-								"conclusion": "skipped"
+								"conclusion": "success"
 							},
 							{
 								"name": "Post Setup Node",
 								"status": "completed",
-								"conclusion": "skipped"
+								"conclusion": "success"
 							},
 							{
 								"name": "Post Checkout",
@@ -918,13 +918,13 @@
 						]
 					},
 					{
-						"databaseId": 101642751770,
+						"databaseId": 101646828162,
 						"name": "ci / L1+G1+G2",
 						"status": "completed",
-						"conclusion": "failure",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34090481049/job/101642751770",
-						"startedAt": "2026-09-07T06:21:44Z",
-						"completedAt": "2026-09-07T06:33:11Z",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34091855466/job/101646828162",
+						"startedAt": "2026-09-07T06:40:05Z",
+						"completedAt": "2026-09-07T06:49:36Z",
 						"steps": [
 							{
 								"name": "Set up job",
@@ -979,7 +979,7 @@
 							{
 								"name": "L1: Unit tests",
 								"status": "completed",
-								"conclusion": "failure"
+								"conclusion": "success"
 							},
 							{
 								"name": "Upload coverage",
@@ -989,17 +989,17 @@
 							{
 								"name": "G2: Install osv-scanner",
 								"status": "completed",
-								"conclusion": "skipped"
+								"conclusion": "success"
 							},
 							{
 								"name": "G2: OSV dependency scan",
 								"status": "completed",
-								"conclusion": "skipped"
+								"conclusion": "success"
 							},
 							{
 								"name": "Post Setup Bun",
 								"status": "completed",
-								"conclusion": "skipped"
+								"conclusion": "success"
 							},
 							{
 								"name": "Post Checkout",
@@ -1014,76 +1014,132 @@
 						]
 					},
 					{
-						"databaseId": 101642752666,
-						"name": "ci / L2 API E2E",
-						"status": "completed",
-						"conclusion": "skipped",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34090481049/job/101642752666",
-						"startedAt": "2026-09-07T06:21:43Z",
-						"completedAt": "2026-09-07T06:21:42Z",
-						"steps": []
-					},
-					{
-						"databaseId": 101642753027,
+						"databaseId": 101646829375,
 						"name": "ci / Worker Tests",
 						"status": "completed",
 						"conclusion": "skipped",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34090481049/job/101642753027",
-						"startedAt": "2026-09-07T06:21:43Z",
-						"completedAt": "2026-09-07T06:21:42Z",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34091855466/job/101646829375",
+						"startedAt": "2026-09-07T06:40:03Z",
+						"completedAt": "2026-09-07T06:40:03Z",
 						"steps": []
 					},
 					{
-						"databaseId": 101642753042,
+						"databaseId": 101646829420,
+						"name": "ci / L2 API E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34091855466/job/101646829420",
+						"startedAt": "2026-09-07T06:40:03Z",
+						"completedAt": "2026-09-07T06:40:03Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101646829786,
 						"name": "ci / L3 Browser E2E",
 						"status": "completed",
 						"conclusion": "skipped",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34090481049/job/101642753042",
-						"startedAt": "2026-09-07T06:21:43Z",
-						"completedAt": "2026-09-07T06:21:42Z",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34091855466/job/101646829786",
+						"startedAt": "2026-09-07T06:40:03Z",
+						"completedAt": "2026-09-07T06:40:03Z",
 						"steps": []
 					}
 				],
 				"status": "completed",
-				"updatedAt": "2026-09-07T06:33:11Z",
-				"url": "https://github.com/nocoo/basalt/actions/runs/34090481049",
+				"updatedAt": "2026-09-07T06:49:42Z",
+				"url": "https://github.com/nocoo/basalt/actions/runs/34091855466",
 				"workflowName": "CI"
 			},
 			"release": {
-				"conclusion": "skipped",
-				"createdAt": "2026-09-07T06:33:13Z",
-				"databaseId": 34091354433,
-				"headSha": "6643037a00015adb126e7d41faca497b92b7f305",
+				"conclusion": "success",
+				"createdAt": "2026-09-07T06:52:34Z",
+				"databaseId": 34092771400,
+				"headSha": "514d94892b9f55984dcd3cda0d9408ebecfcba9b",
 				"jobs": [
 					{
-						"databaseId": 101645297045,
+						"databaseId": 101649611889,
+						"name": "Deploy Worker (tagged)",
+						"status": "completed",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34092771400/job/101649611889",
+						"startedAt": "2026-09-07T06:52:37Z",
+						"completedAt": "2026-09-07T06:53:13Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Resolve version and commit",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Build site (into dist)",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Deploy Worker",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Summary",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Complete job",
+								"status": "completed",
+								"conclusion": "success"
+							}
+						]
+					},
+					{
+						"databaseId": 101649613023,
 						"name": "Deploy Worker (main)",
 						"status": "completed",
 						"conclusion": "skipped",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34091354433/job/101645297045",
-						"startedAt": "2026-09-07T06:33:14Z",
-						"completedAt": "2026-09-07T06:33:14Z",
-						"steps": []
-					},
-					{
-						"databaseId": 101645320990,
-						"name": "Deploy Worker (tagged)",
-						"status": "completed",
-						"conclusion": "skipped",
-						"url": "https://github.com/nocoo/basalt/actions/runs/34091354433/job/101645320990",
-						"startedAt": "2026-09-07T06:33:21Z",
-						"completedAt": "2026-09-07T06:33:14Z",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34092771400/job/101649613023",
+						"startedAt": "2026-09-07T06:52:35Z",
+						"completedAt": "2026-09-07T06:52:35Z",
 						"steps": []
 					}
 				],
 				"status": "completed",
-				"updatedAt": "2026-09-07T06:33:14Z",
-				"url": "https://github.com/nocoo/basalt/actions/runs/34091354433",
+				"updatedAt": "2026-09-07T06:53:14Z",
+				"url": "https://github.com/nocoo/basalt/actions/runs/34092771400",
 				"workflowName": "Release"
 			},
 			"sourceAssets": [
 				{
-					"url": "https://raw.githubusercontent.com/nocoo/basalt/6643037a00015adb126e7d41faca497b92b7f305/logo.png",
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/514d94892b9f55984dcd3cda0d9408ebecfcba9b/logo.png",
 					"status": 200,
 					"contentType": "image/png",
 					"bytes": 3445051,
@@ -1093,7 +1149,7 @@
 					"expectedSha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
 				},
 				{
-					"url": "https://raw.githubusercontent.com/nocoo/basalt/6643037a00015adb126e7d41faca497b92b7f305/assets/brand/icon.png",
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/514d94892b9f55984dcd3cda0d9408ebecfcba9b/assets/brand/icon.png",
 					"status": 200,
 					"contentType": "image/png",
 					"bytes": 3751552,
@@ -1103,7 +1159,7 @@
 					"expectedSha256": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1"
 				},
 				{
-					"url": "https://raw.githubusercontent.com/nocoo/basalt/6643037a00015adb126e7d41faca497b92b7f305/assets/brand/icon-rounded.png",
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/514d94892b9f55984dcd3cda0d9408ebecfcba9b/assets/brand/icon-rounded.png",
 					"status": 200,
 					"contentType": "image/png",
 					"bytes": 3754162,
@@ -1113,7 +1169,7 @@
 					"expectedSha256": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9"
 				},
 				{
-					"url": "https://raw.githubusercontent.com/nocoo/basalt/6643037a00015adb126e7d41faca497b92b7f305/assets/brand/background.png",
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/514d94892b9f55984dcd3cda0d9408ebecfcba9b/assets/brand/background.png",
 					"status": 200,
 					"contentType": "image/png",
 					"bytes": 273933,
@@ -1239,11 +1295,11 @@
 				"url": "https://basaltui.com",
 				"status": 200,
 				"contentType": "text/html",
-				"bytes": 2914,
-				"sha256": "9fd87d33df5880ed6f39d466cfe3589e5292048591be283327b96c916d9ce8cd",
+				"bytes": 2915,
+				"sha256": "6ceaef14a55e202a6af54d4314956b85e47796d872cdc20dc1577576c42a58ad",
 				"result": "received"
 			},
-			"status": "awaiting-ci-or-deployment",
+			"status": "deployed",
 			"originalLogoCommit": "8e41ff077391e76d07df786b15c655138ef58989",
 			"integrationEvidence": "basalt-release-integration.json",
 			"supersededRun": {
