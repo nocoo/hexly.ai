@@ -27,9 +27,9 @@ export function Directory({
 }) {
 	const t = copy[locale];
 	const counts = categoryCounts(projects);
-	const faces = ["frogie", "pew", "otter", "bogo", "steed", "ellie"]
-		.map((id) => projects.find((project) => project.id === id))
-		.filter((project): project is Project => Boolean(project));
+	const faces = projects
+		.filter((project) => project.family && !project.archived)
+		.slice(0, 6);
 	return (
 		<main id="main-content" className="shell directory-main">
 			<section className="hero" aria-labelledby="hero-title">
