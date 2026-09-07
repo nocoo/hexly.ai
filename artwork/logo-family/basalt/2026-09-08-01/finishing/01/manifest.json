@@ -1,0 +1,479 @@
+{
+	"createdAt": "2026-09-07T22:28:18.919Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "0acb99561768ec6689e45e3689eb44c46abb5e063a8033e928b4bfd699a164b4",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "basalt",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/basalt-family-2026-09-07-02-01.png",
+		"background": {
+			"base": "#ede6d8",
+			"light": "#faf7ee",
+			"shade": "#dbd1c0",
+			"motif": "#a8987e",
+			"grainAmplitude": 0.46,
+			"grainSeed": 60907362,
+			"motifOpacity": 0.24,
+			"highlightOpacity": 0.42,
+			"ribbonOpacity": 0.16,
+			"pattern": {
+				"name": "Corner tower construction grid",
+				"description": "Pale champagne architectural drawing paper with fine 40-unit cells, 160-unit datum lines, spare roof-elevation construction strokes, dimension ticks and registration crosses.",
+				"layers": [
+					{
+						"d": "M12 0V1024M0 12H1024M52 0V1024M0 52H1024M92 0V1024M0 92H1024M132 0V1024M0 132H1024M172 0V1024M0 172H1024M212 0V1024M0 212H1024M252 0V1024M0 252H1024M292 0V1024M0 292H1024M332 0V1024M0 332H1024M372 0V1024M0 372H1024M412 0V1024M0 412H1024M452 0V1024M0 452H1024M492 0V1024M0 492H1024M532 0V1024M0 532H1024M572 0V1024M0 572H1024M612 0V1024M0 612H1024M652 0V1024M0 652H1024M692 0V1024M0 692H1024M732 0V1024M0 732H1024M772 0V1024M0 772H1024M812 0V1024M0 812H1024M852 0V1024M0 852H1024M892 0V1024M0 892H1024M932 0V1024M0 932H1024M972 0V1024M0 972H1024M1012 0V1024M0 1012H1024",
+						"tone": "motif",
+						"strokeWidth": 0.44
+					},
+					{
+						"d": "M52 0V1024M0 52H1024M212 0V1024M0 212H1024M372 0V1024M0 372H1024M532 0V1024M0 532H1024M692 0V1024M0 692H1024M852 0V1024M0 852H1024M1012 0V1024M0 1012H1024",
+						"tone": "motif",
+						"strokeWidth": 0.82
+					},
+					{
+						"d": "M12 220H220M52 64V244M32 224Q100 217 148 176Q175 192 244 200M36 200Q91 196 148 152Q186 180 244 178M148 120V240M28 252H244M28 246V258M244 246V258",
+						"tone": "motif",
+						"strokeWidth": 0.72
+					},
+					{
+						"d": "M780 824H996M836 756V948M756 864Q816 861 884 820Q923 848 996 850M756 892Q824 890 884 848Q932 878 996 874M884 780V944M780 936H996M780 930V942M996 930V942",
+						"tone": "motif",
+						"strokeWidth": 0.7
+					},
+					{
+						"d": "M45 52H59M52 45V59M965 52H979M972 45V59M45 972H59M52 965V979M965 972H979M972 965V979M285 92H299M292 85V99M725 932H739M732 925V939",
+						"tone": "motif",
+						"strokeWidth": 0.95
+					},
+					{
+						"d": "M812 108H972M812 102V114M852 104V112M892 102V114M932 104V112M972 102V114M52 812V932M46 812H58M48 852H56M46 892H58M48 932H56",
+						"tone": "motif",
+						"strokeWidth": 0.7
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					64,
+					55,
+					45
+				],
+				"opacity": 0.19,
+				"blurAt2048": 75,
+				"projectionScale": [
+					0.89,
+					0.21
+				],
+				"offsetAt2048": [
+					22,
+					700
+				]
+			},
+			{
+				"color": [
+					64,
+					55,
+					45
+				],
+				"opacity": 0.13,
+				"blurAt2048": 34,
+				"projectionScale": [
+					0.67,
+					0.12
+				],
+				"offsetAt2048": [
+					18,
+					690
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.8,
+			"offsetAt2048": [
+				6,
+				-28
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniformly inset the complete new tower to a comparable icon mass to the previous selected tower. Preserve every roof tip, finial and marble corner; no selective scaling, cropping or synthetic continuation."
+		},
+		"matte": {
+			"minimumChannel": 247,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 4,
+			"interiorDistance": 6,
+			"searchRadius": 12,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"foregroundRegionsAt2048": [
+				{
+					"name": "Opaque left Hanbaiyu slab highlight",
+					"points": [
+						[
+							114.87,
+							1426.49
+						],
+						[
+							221.68,
+							1425.71
+						],
+						[
+							221.64,
+							1539.36
+						],
+						[
+							86.6,
+							1538.63
+						],
+						[
+							85.64,
+							1536.65
+						],
+						[
+							84.71,
+							1532.68
+						],
+						[
+							84.8,
+							1525.73
+						],
+						[
+							87.23,
+							1502.14
+						],
+						[
+							88.44,
+							1492.58
+						],
+						[
+							90.31,
+							1475.73
+						],
+						[
+							91.86,
+							1461.23
+						],
+						[
+							92.71,
+							1455.32
+						],
+						[
+							93.62,
+							1451.37
+						],
+						[
+							95.51,
+							1447.41
+						]
+					]
+				}
+			],
+			"backgroundSeedsAt2048": [
+				[
+					414,
+					1331
+				],
+				[
+					419,
+					1338
+				],
+				[
+					1633,
+					1332
+				]
+			],
+			"calibrationNote": "The actual matte is near-white (251,252,252). Exterior threshold 240 cut connected physical marble highlights; 247 preserves the right foundation ledge, while a measured inset polygon protects the solid left marble plane. Unmatte only the four-pixel contour band against the sampled matte.",
+			"foregroundProtectionReason": "The bright left marble bevel is physical stone. The local hull comes from surrounding connected stone pixels in native rectangle [83,1425,223,1540], inset by 1.5 pixels; it closes only the white-material leak, without recoloring or adding a drawn contour.",
+			"backgroundSeedReason": "Three small patches show the white exterior through the two rear-balustrade openings. Front rail gaps reveal physical floor or masonry; lattice-window interiors, marble planes and metal highlights stay opaque.",
+			"componentCleanupReason": "All sub-100-pixel connected regions are inspected pale fringe/edge-rendering residue, including marks along the native canvas border. Preserve the continuous tower and its connected ornaments."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2084374,
+		"foregroundPixels": 2109930,
+		"softEdgePixels": 24831,
+		"removedComponents": 55,
+		"removedComponentPixels": 903,
+		"bounds": {
+			"left": 84,
+			"top": 53,
+			"right": 1962,
+			"bottom": 1998
+		}
+	},
+	"placement": {
+		"scale": 0.8,
+		"offsetAt2048": [
+			6,
+			-28
+		],
+		"bounds": {
+			"left": 278,
+			"top": 219,
+			"right": 1780,
+			"bottom": 1775
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 219.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 4956,
+			"sha256": "ae51f984b59096a82eb60b99e4883c1bf44b70dc2d2fe3dc9caa763d54cb2c9d"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1440,
+			"sha256": "2e0d7b02c0e56a42b0dff57118404a7e23d52fc8bcead66c7788afe8a02bc3ec"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "matte-protection-mask.png",
+			"bytes": 13764,
+			"sha256": "5b9c673c3255202abf6ffdca471d0ab031cb7969ef2698400e17320753d422c4"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5780440,
+			"sha256": "1e444d95d9f2c1c339639154dd559a2d1334ab8c1b477e358e9a5db862f4fb85"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 113364,
+			"sha256": "3a2cbf6adef71b9f8405ba0ddde39ce74fcb7a3d4a43ade78b5e4392d07c8c5b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 2145,
+			"sha256": "9194ab4a6dabdff7354563c007f1ab82c1a623f4124e8502fbc0fc87b37d6989"
+		},
+		{
+			"path": "background.png",
+			"bytes": 273933,
+			"sha256": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3884976,
+			"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 136801,
+			"sha256": "7132383e0ec903f365dd6f398a0055495c1caa0a262ab2ba5a023a9fd52c0090"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 100409,
+			"sha256": "2fd3e547665ef87bdaa80c37f4f3400ce8994b48a5a8a22663faac4d62f1ce2f"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 53389,
+			"sha256": "d2e3e903a878deb07a99b4691feea9f9ee481e5ae7b5a2c84f287d0636d4fc78"
+		},
+		{
+			"path": "exports/basalt-transparent-2048.png",
+			"bytes": 3884976,
+			"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7"
+		},
+		{
+			"path": "exports/basalt-icon-2048.png",
+			"bytes": 4149616,
+			"sha256": "6435729ff1f21dc099080253cfc4e01f9704fd940f7d97075878fa563e39897f"
+		},
+		{
+			"path": "exports/basalt-rounded-2048.png",
+			"bytes": 4152735,
+			"sha256": "ee9b539b32c47aa6f51cd57f7329d945313ebd5adfb94eb38ad837f6929ee24e"
+		},
+		{
+			"path": "exports/basalt-transparent-1024.png",
+			"bytes": 1016090,
+			"sha256": "c0c5114841a588f90ebbc6c3969e29c618006ce1c41e5e2eedbbda00ac1da9c3"
+		},
+		{
+			"path": "exports/basalt-icon-1024.png",
+			"bytes": 1173539,
+			"sha256": "790a5bacd37f4e6cfafccc224188ba08a7b91c30cde4551c11a71f6661c2c80c"
+		},
+		{
+			"path": "exports/basalt-rounded-1024.png",
+			"bytes": 1184674,
+			"sha256": "235ea773ddb0d998c8495540cc0b6dcceaae3f4aaf46c36d99a8735d58be1af7"
+		},
+		{
+			"path": "exports/basalt-transparent-512.png",
+			"bytes": 265965,
+			"sha256": "7eda6f5e484bce36d410437dd694554bc2100f778d7a6469b23f97b6ab541cff"
+		},
+		{
+			"path": "exports/basalt-icon-512.png",
+			"bytes": 335369,
+			"sha256": "3b9f482b19f0f0ac88fbbd98b8347cd5a0af44ff849dbcd98a9f9a6d3a8abda8"
+		},
+		{
+			"path": "exports/basalt-rounded-512.png",
+			"bytes": 340571,
+			"sha256": "144653f2beefcfddee679798a300810d85fc69b1578e9ccc51964b8fab2bffca"
+		},
+		{
+			"path": "exports/basalt-transparent-256.png",
+			"bytes": 70983,
+			"sha256": "1e5fc761178de8fb9ce7b04b2bce1aadb321cb621774fb5063d6c9066fb020f6"
+		},
+		{
+			"path": "exports/basalt-icon-256.png",
+			"bytes": 98112,
+			"sha256": "97f83ae19a4d2a78c7593a7cc3fe63c82ea3b3ed3c23c91005cb14b6ee88be8e"
+		},
+		{
+			"path": "exports/basalt-rounded-256.png",
+			"bytes": 100444,
+			"sha256": "3fd45e5d2f057da5c139a13403829b913a31ec601391eb54e63644b7619c6c36"
+		},
+		{
+			"path": "exports/basalt-transparent-128.png",
+			"bytes": 19337,
+			"sha256": "acc9876096466e1b07674559cba7f42c4eb76edcc1833c795d75d9aaa56fe442"
+		},
+		{
+			"path": "exports/basalt-icon-128.png",
+			"bytes": 28319,
+			"sha256": "009aad57e6853c79efdba4936f2b0bb139253568a9b2efd8dca5ab174c52dcb7"
+		},
+		{
+			"path": "exports/basalt-rounded-128.png",
+			"bytes": 29657,
+			"sha256": "c94f912530a3a8dbfb1be3f08f63ccdea1141498f5541af08bf666bc675bd398"
+		},
+		{
+			"path": "exports/basalt-transparent-64.png",
+			"bytes": 5639,
+			"sha256": "8de13908ecb5cfcc5f697caee693b318be2bc9c226eeabc02397df1047637101"
+		},
+		{
+			"path": "exports/basalt-icon-64.png",
+			"bytes": 8457,
+			"sha256": "34324432c454ae4b051f5e19a444c125710023428b4fb43df3af7aef420d370b"
+		},
+		{
+			"path": "exports/basalt-rounded-64.png",
+			"bytes": 9005,
+			"sha256": "eba1efe21a5148a099a36dd720d168a1060b959e00a1adedda02895c42c8c20b"
+		},
+		{
+			"path": "exports/basalt-transparent-48.png",
+			"bytes": 3480,
+			"sha256": "e1327d94951cbc3e0810d6d7a8203d3937bf4b3e369337c5603687714e0d3a3f"
+		},
+		{
+			"path": "exports/basalt-icon-48.png",
+			"bytes": 5184,
+			"sha256": "2b96881dbf71a7434c686a083f1f2cd3d9a5359d4f7696a272b8ef503b018560"
+		},
+		{
+			"path": "exports/basalt-rounded-48.png",
+			"bytes": 5591,
+			"sha256": "f45dbf1077ec30f929e514cbd1c7cbd2eeb985d43e26f57811831c3bf0e35533"
+		},
+		{
+			"path": "exports/basalt-transparent-32.png",
+			"bytes": 1819,
+			"sha256": "5fee2f35c6225d4334df9f14187ba4b8f45303c920c22dd40b51ec956bfe42d5"
+		},
+		{
+			"path": "exports/basalt-icon-32.png",
+			"bytes": 2557,
+			"sha256": "d0bcbfb398c3b383b12af673b3f6a8940741dcd66c63981c4d41db1764cf23a6"
+		},
+		{
+			"path": "exports/basalt-rounded-32.png",
+			"bytes": 2781,
+			"sha256": "193937d7a1c612ae914b9b8bdde8e5c956d21bdc666601c2c8fa0436526902a2"
+		},
+		{
+			"path": "exports/basalt-transparent-24.png",
+			"bytes": 1184,
+			"sha256": "3a7fe2348fa2288119908581a0b6789d553dc3bb4f59878070cd029871c62d7a"
+		},
+		{
+			"path": "exports/basalt-icon-24.png",
+			"bytes": 1622,
+			"sha256": "a8511273234409047b9e9c55f37f259e52eeb1b9e652e72ac4c70fbe36c4bcce"
+		},
+		{
+			"path": "exports/basalt-rounded-24.png",
+			"bytes": 1767,
+			"sha256": "b677a19e64658de7d384035548c10b84801fcaf015667aa55937ea8fa2ee80fd"
+		},
+		{
+			"path": "exports/basalt-transparent-16.png",
+			"bytes": 671,
+			"sha256": "35d88d81094ca7a20a2dd873e307b75cc020e6ea04bb9b195ccf5c98129c1c0c"
+		},
+		{
+			"path": "exports/basalt-icon-16.png",
+			"bytes": 838,
+			"sha256": "4eee245c4bacc4a756bf0dbdcd4524db5dc936a8d420b365f666ad738ab9f5c3"
+		},
+		{
+			"path": "exports/basalt-rounded-16.png",
+			"bytes": 900,
+			"sha256": "1f4cdcf3ce725b0dfaf17fa5363328a2c6d661d9e3911357b7e77c5206ea8ca9"
+		},
+		{
+			"path": "exports/basalt-white-2048.png",
+			"bytes": 3448316,
+			"sha256": "4adfafd5224e47f50343c9fdd5ed5bdd8ba3bb7deb41fa61e535eeeed9f21502"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 909022,
+			"sha256": "079ac00cd2877649923ac29e595bda005f9d0f3ccc1d9dd505f145426cf92f2e"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 924018,
+			"sha256": "1271ad81812fb61d391b823897f0ebaa79639de6e91b91c48633098019aeb18c"
+		}
+	]
+}

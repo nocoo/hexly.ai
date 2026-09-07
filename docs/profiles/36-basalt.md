@@ -43,19 +43,19 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Refined identity
 
-![Basalt refined preview](../../public/logos/family/basalt/2026-09-07-02/01/icon-160.webp)
+![Basalt refined preview](../../public/logos/family/basalt/2026-09-08-01/01/icon-160.webp)
 
-- Status: Adopted in the source project; updated 2026-09-07.
-- Study `2026-09-07-02`, finishing `01`
-- Refined subject: Obsidian and gemstone Forbidden City corner tower
+- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-08.
+- Study `2026-09-08-01`, finishing `01`
+- Refined subject: A candy-colored Forbidden City corner tower on white Hanbaiyu marble
 - Site path: `/logos/basalt`; [local gallery](https://index.dev.hexly.ai/logos/basalt)
-- [Static review HTML](../../artwork/logo-family/basalt/2026-09-07-02/review.html)
-- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/basalt/2026-09-07-02)
-- [Transparent foreground](../../public/logos/family/basalt/2026-09-07-02/01/transparent.png); SHA-256: `d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94`
-- [Square icon](../../public/logos/family/basalt/2026-09-07-02/01/icon.png), [rounded icon](../../public/logos/family/basalt/2026-09-07-02/01/rounded.png), [white version](../../public/logos/family/basalt/2026-09-07-02/01/white.png)
-- [Untouched generation](../../public/logos/family/basalt/2026-09-07-02/01/raw.png), [exact prompt](../../public/logos/family/basalt/2026-09-07-02/01/prompt.txt), [public asset checksums](../../public/logos/family/basalt/2026-09-07-02/01/manifest.json)
-- [Previous original](../../public/logos/originals/basalt.svg), copied from [its immutable source](https://github.com/nocoo/basalt/blob/68a3b545d8dbcfb1968a3be8031d4710bfe3c10c/public/favicon.svg)
-- Previous SHA-256: `652ee2a1a62d12e0e9ae89b0a29381b5a03a91a80f75d3a07251fdef89bdb14a`
+- [Static review HTML](../../artwork/logo-family/basalt/2026-09-08-01/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/basalt/2026-09-08-01)
+- [Transparent foreground](../../public/logos/family/basalt/2026-09-08-01/01/transparent.png); SHA-256: `97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7`
+- [Square icon](../../public/logos/family/basalt/2026-09-08-01/01/icon.png), [rounded icon](../../public/logos/family/basalt/2026-09-08-01/01/rounded.png), [white version](../../public/logos/family/basalt/2026-09-08-01/01/white.png)
+- [Untouched generation](../../public/logos/family/basalt/2026-09-08-01/01/raw.png), [exact prompt](../../public/logos/family/basalt/2026-09-08-01/01/prompt.txt), [public asset checksums](../../public/logos/family/basalt/2026-09-08-01/01/manifest.json)
+- [Previous original](../../public/logos/originals/basalt-family-2026-09-07-02-01.png), copied from [its immutable source](https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png)
+- Previous SHA-256: `d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
@@ -64,32 +64,33 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#ede6d8` | Selected Basalt presentation, 2026-09-07-02/01; background.base in archived settings.json |
-| primary | `#17191c` | Native basalt 3b270748ea02, sampled sRGB pixel (601, 1192); artwork/logo-family/basalt/2026-09-07-02/palette.json |
-| accent | `#0a6648` | Native basalt 3b270748ea02, sampled sRGB pixel (616, 1095); artwork/logo-family/basalt/2026-09-07-02/palette.json |
-| accent | `#9e1c2b` | Native basalt 3b270748ea02, sampled sRGB pixel (849, 483); artwork/logo-family/basalt/2026-09-07-02/palette.json |
-| accent | `#e4a228` | Native basalt 3b270748ea02, sampled sRGB pixel (1007, 257); artwork/logo-family/basalt/2026-09-07-02/palette.json |
-| accent | `#b58e4d` | Native basalt 3b270748ea02, sampled sRGB pixel (1402, 797); artwork/logo-family/basalt/2026-09-07-02/palette.json |
+| background | `#ede6d8` | Selected local Basalt presentation, 2026-09-08-01/01; background.base in archived settings.json |
+| primary | `#5ac2f6` | Native basalt 0acb99561768, sampled sRGB pixel (638, 850); artwork/logo-family/basalt/2026-09-08-01/palette.json |
+| accent | `#8dd35a` | Native basalt 0acb99561768, sampled sRGB pixel (935, 575); artwork/logo-family/basalt/2026-09-08-01/palette.json |
+| accent | `#f694b2` | Native basalt 0acb99561768, sampled sRGB pixel (780, 1350); artwork/logo-family/basalt/2026-09-08-01/palette.json |
+| accent | `#eec14b` | Native basalt 0acb99561768, sampled sRGB pixel (1026, 209); artwork/logo-family/basalt/2026-09-08-01/palette.json |
+| accent | `#edeeeb` | Native basalt 0acb99561768, sampled sRGB pixel (842, 1763); artwork/logo-family/basalt/2026-09-08-01/palette.json |
+| accent | `#d3d7d8` | Native basalt 0acb99561768, sampled sRGB pixel (960, 717); artwork/logo-family/basalt/2026-09-08-01/palette.json |
 
-### A shallower architectural portrait
+### The familiar stepped roofline
 
-The corner tower replaces the rejected plain stone slab. A three-quarter camera around 25 degrees above horizontal emphasizes its tiered eaves and compact foundation; the complete tower is uniformly inset without clipping finials or roof tips.
+The three-quarter view, tiered roofs, upturned eaves, finial and low square foundation preserve the earlier tower. One uniform 80% placement gives every architectural tip room inside the rounded tile; the nearest visible feature sits about 220 native pixels from its boundary.
 
-角楼替换已否定的普通石砖。约 25° 俯视的斜向镜头突出重檐和紧凑基座；整座建筑统一缩放，尖顶与飞檐均完整保留。
+保留原有斜向镜头、层叠屋顶、飞檐、宝顶和低方基座。整座角楼统一按 80% 放入圆角取景框，最近的可见边缘也留有约 220 个原生像素的空间。
 
-### Obsidian and gemstones
+### Hanbaiyu and candy color
 
-Polished black obsidian defines the structure. Emerald roof inlays, restrained ruby accents, warm amber and fine gold trim follow the architecture as one coherent material system, with physical light and crisp high-resolution detail.
+Opaque white marble replaces the black plinth and balustrade. Blue and green roof surfaces, pink columns, pearl structure and yellow-gold details translate Basalt’s existing candy palette into a crafted miniature. Veining, latticework and small bevels retain physical depth under broad studio light.
 
-抛光黑曜石构成建筑主体。祖母绿屋面、克制的红宝石点缀、温暖琥珀及细金边沿建筑组织为一个统一材质体系，保留真实光感与清晰高清细节。
+白色汉白玉替换黑色基座与栏杆；蓝绿屋面、粉色立柱、珍珠色构件与金黄细节，把 Basalt 现有糖果色板转化为精工微缩建筑。石材纹理、窗棂和小倒角在宽柔光下保留真实层次。
 
-### Corner tower construction grid
+### Champagne construction paper
 
-Pale champagne drawing paper combines fine engineering cells, larger datum lines, sparse roof elevations and dimensional ticks. Its independent projected shadow creates a gentle hover gap under the obsidian foundation.
+The existing Basalt field keeps fine engineering cells, larger datum lines, spare roof elevations and dimensional ticks. Independent projected shadows lift the marble base gently from the paper. The transparent master contains the complete tower without the field, grain or cast shadow.
 
-浅香槟色制图纸结合细工程网格、较大的基准线、稀疏屋顶立面与尺寸刻度，独立投影在黑曜石基座下形成轻盈的悬浮间隙。
+沿用 Basalt 的细工程格线、较大基准线、疏朗屋顶立面与尺寸刻度。独立投影让汉白玉基座轻轻悬于纸面；透明母版只保留完整角楼，不含底色、颗粒或外部投影。
 
-Small-size observation: At 128/64 px the tiered roofs, obsidian base and emerald/amber accents establish the tower. At 32/24/16 px the transparent mark relies on the stepped architectural silhouette; tiny ruby inlays, railings and gold details naturally merge.
+Small-size observation: At 128/64 px the colored roof tiers and white marble foundation remain distinct. At 32/24/16 px the mark relies on its blue-and-green stepped silhouette; latticework, veining and gold beads merge. The pale foundation softens on light interfaces, while sidebar and favicon specimens retain the transparent foreground.
 
 ## Further refinements
 

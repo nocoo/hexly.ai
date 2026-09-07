@@ -8,7 +8,8 @@
 6. [Animal logo family and versioned studies](06-logo-family.md)
 7. [Logo usage and adoption SOP](07-logo-usage-sop.md)
 8. [Four new project identities](08-new-project-identities.md)
-9. [Project profiles](profiles/README.md)
-10. [Source snapshots](sources/README.md)
+9. [Basalt marble and candy color study](09-basalt-color-study.md)
+10. [Project profiles](profiles/README.md)
+11. [Source snapshots](sources/README.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
