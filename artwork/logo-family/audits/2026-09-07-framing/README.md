@@ -16,10 +16,11 @@ Each study preserves the untouched generation, exact prompt, request/response, o
 ## Site validation
 
 - Source checksums and previews: 66 projects, 264 display derivatives.
-- Archives: 19 public family manifests and every recorded file in 46 finishing passes.
+- Local workbench archives: 19 public family manifests and every recorded file in 46 finishing passes.
+- Scoped publication archives: 18 public family manifests and every recorded file in 27 finishing passes. Earlier unpublished studies remain local.
 - Typecheck and full lint: passed.
 - Unit coverage: 100% statements, branches, functions, and lines.
-- Repository Chromium suite: 64 browser cases passed.
+- Repository Chromium suite: 64 cases passed in the local workbench; all 62 cases applicable to the scoped publication checkout also passed.
 - HTTP, security, Workers dry run, and publication are completed by the scoped site push and exact-commit CI deployment.
 
 The publication checkout carries only this authorized batch and the Refined Universe change. Earlier unpublished source/logo work stays in the local history.
