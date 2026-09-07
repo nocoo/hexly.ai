@@ -2,7 +2,7 @@ import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { setTimeout } from "node:timers/promises";
 import manifest from "../package.json";
-import projects from "../src/data/projects.json";
+import identity from "../src/data/site-identity.json";
 
 export async function verifyDeployment(
 	origin: URL,
@@ -61,9 +61,6 @@ export async function verifyDeployment(
 				}
 			}),
 		);
-		const identity = projects.find((project) => project.id === "hexly-ai");
-		if (!identity)
-			throw new Error("The directory must include its own identity.");
 		const logo = await (await get(identity.logo.original)).arrayBuffer();
 		if (
 			createHash("sha256").update(new Uint8Array(logo)).digest("hex") !==

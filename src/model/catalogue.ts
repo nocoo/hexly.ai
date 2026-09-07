@@ -1,4 +1,19 @@
+import projectOrder from "../data/project-order.json";
 import type { Category, Project } from "./project";
+
+const curatedOrder = new Map<string, number>(
+	[
+		...projectOrder.animals
+			.toSorted(
+				(a, b) =>
+					b.stars - a.stars ||
+					(a.stars === 0 && b.stars === 0 ? b.commits - a.commits : 0),
+			)
+			.map((project) => project.id),
+		...projectOrder.templates,
+		...projectOrder.games,
+	].map((id, position) => [id, position]),
+);
 
 export const categories: Category[] = [
 	"all",
@@ -43,10 +58,11 @@ export function filterProjects(
 			.toLowerCase();
 		return terms.every((term) => content.includes(term));
 	});
-	return result.toSorted(
-		(a, b) =>
-			Number(Boolean(b.family)) - Number(Boolean(a.family)) ||
-			(sort === "az" ? a.title.localeCompare(b.title, "en") : 0),
+	return result.toSorted((a, b) =>
+		sort === "az"
+			? a.title.localeCompare(b.title, "en")
+			: (curatedOrder.get(a.id) ?? curatedOrder.size) -
+				(curatedOrder.get(b.id) ?? curatedOrder.size),
 	);
 }
 

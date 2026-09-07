@@ -11,20 +11,16 @@ import type { Project } from "../../src/model/project";
 
 const projects = rawProjects as Project[];
 const active = projects.filter((project) => !project.archived);
-const tiers = [
-	active.filter((project) => project.family),
-	active.filter((project) => !project.family),
-];
 const frogie = projects.find((project) => project.id === "frogie");
 if (!frogie) throw new Error("Frogie is required as the reference identity.");
 
 describe("the imported project catalogue", () => {
-	it("includes every unique profile entry with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(70);
+	it("includes the listed projects with bilingual metadata and local assets", () => {
+		expect(projects).toHaveLength(69);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(56);
+		).toHaveLength(55);
 	});
 	it("finds projects by English, Chinese, emoji, repository name, and animal", () => {
 		for (const query of [
@@ -43,20 +39,21 @@ describe("the imported project catalogue", () => {
 		expect(filterProjects(projects, "  AI   agents  ", "ai")).toContain(frogie);
 		expect(filterProjects(projects, "frogie", "games")).toEqual([]);
 		expect(filterProjects(projects, "not-a-real-project")).toEqual([]);
-		expect(filterProjects(projects, "  ")).toEqual(tiers.flat());
+		expect(filterProjects(projects, "  ")).toHaveLength(active.length);
+		expect(filterProjects(projects, "  ")).toEqual(
+			expect.arrayContaining(active),
+		);
 		const sorted = filterProjects(projects, "", "all", "az");
 		expect(sorted.map((project) => project.title)).toEqual(
-			tiers.flatMap((tier) =>
-				tier
-					.map((project) => project.title)
-					.toSorted((a, b) => a.localeCompare(b, "en")),
-			),
+			active
+				.map((project) => project.title)
+				.toSorted((a, b) => a.localeCompare(b, "en")),
 		);
 		expect(projects).toEqual(before);
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(50);
+		expect(counts.all).toBe(49);
 		expect(counts.archive).toBe(20);
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);

@@ -1,0 +1,72 @@
+{
+	"id": "hexly-ai",
+	"repo": "hexly.ai",
+	"title": "hexly.ai",
+	"emoji": "🧭",
+	"description": {
+		"en": "Bilingual project directory and logo gallery with original artwork and color palettes",
+		"zh": "个人项目的中英文导航站，收藏原始 Logo、展示图标尺寸与真实项目色板。"
+	},
+	"category": "design",
+	"website": "https://hexly.ai",
+	"websiteSource": "wrangler.jsonc custom domain and GitHub repository homepage",
+	"repository": "https://github.com/nocoo/hexly.ai",
+	"subject": "Terracotta faceted hexagon",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/hexly-ai.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/hexly.ai/blob/dbdb9d8ea428ac73764503bc09916b97c8ca999e/logo.png",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 53585,
+		"sha256": "c69b5e7a341eabc3de296db4d1b8dcff314f04c7652b86fd1dc217b1f42628d0",
+		"thumbnail": "/logos/display/hexly-ai-160.webp",
+		"display": "/logos/display/hexly-ai-1024.webp"
+	},
+	"theme": {
+		"primary": {
+			"value": "#bf5c3c",
+			"source": "src/styles/base.css :root --accent"
+		},
+		"background": {
+			"value": "#f0f0e9",
+			"source": "src/styles/base.css :root --page"
+		},
+		"ink": {
+			"value": "#30372e",
+			"source": "src/styles/base.css :root --ink"
+		}
+	},
+	"source": {
+		"profileRevision": "7127d38369e8cf4d83b0322fb3e26e239408d727",
+		"profileSection": "Recent Projects",
+		"description": "Bilingual project directory and logo gallery with original artwork and color palettes",
+		"repositoryRevision": "dbdb9d8ea428ac73764503bc09916b97c8ca999e"
+	},
+	"colors": {
+		"primary": "#bf5c3c",
+		"background": "#f0f0e9",
+		"ink": "#30372e",
+		"palette": [
+			{
+				"color": "#bf5c3c",
+				"role": "primary",
+				"source": "src/styles/base.css :root --accent; public/favicon.svg hexagon fill"
+			},
+			{
+				"color": "#f0f0e9",
+				"role": "background",
+				"source": "src/styles/base.css :root --page; public/favicon.svg background fill"
+			},
+			{
+				"color": "#30372e",
+				"role": "accent",
+				"source": "src/styles/base.css :root --ink"
+			}
+		]
+	},
+	"archived": false
+}
