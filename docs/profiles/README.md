@@ -8,10 +8,10 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🦓 Pew](02-pew.md) | Refined preview | #851ded | #f1f0f5 |
 | [🔥 Firefly](03-firefly.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [📚 Bogo](04-bogo.md) | Original asset | #0051bd | #e3edf2 |
-| [🐎 Steed](05-steed.md) | Original asset | #1da599 | #eef1f1 |
-| [🐘 Ellie](06-ellie.md) | Original asset | #016698 | #ffffff |
+| [🐎 Steed](05-steed.md) | Adopted family | #1da599 | #eef1f1 |
+| [🐘 Ellie](06-ellie.md) | Adopted family | #016698 | #ffffff |
 | [🔐 Neo](07-neo.md) | Adopted family | #3c83f6 | #eeeff2 |
-| [🦒 Giraffe](08-giraffe.md) | Original asset | #598128 | #eeeff2 |
+| [🦒 Giraffe](08-giraffe.md) | Adopted family | #598128 | #eeeff2 |
 | [🐢 Backy](09-backy.md) | Original asset | #2e8553 | #eeeff2 |
 | [🦦 Otter](10-otter.md) | Original asset | #1b99a7 | #eeeff2 |
 | [🦎 Gecko](11-gecko.md) | Original asset | #2e8553 | #eef2ef |
@@ -31,7 +31,7 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🌊 Flow](25-flow.md) | Original asset | #171717 | #ffffff |
 | [🔔 Codo](26-codo.md) | Original asset | #0e413a | transparent |
 | [🏟️ Arena](27-arena.md) | Profile emoji | #7430e8 | #eeeff2 |
-| [🦉 Owl](28-owl.md) | Original asset | #1c6972 | transparent |
+| [🦉 Owl](28-owl.md) | Adopted family | #93816a | transparent |
 | [🦋 Xray](29-xray.md) | Original asset | #3653e2 | #eeeff2 |
 | [🐬 R2Shot](30-r2shot.md) | Adopted family | #24c4bd | #ffffff |
 | [🪶 Shrike](31-shrike.md) | Adopted family | #86502c | #fffbf9 |
@@ -40,7 +40,7 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🐑 Wooly](34-wooly.md) | Adopted family | #dd3ca7 | #eeeff2 |
 | [🧩 Matrix](35-matrix.md) | Profile emoji | #00ff41 | #050505 |
 | [🎨 Basalt](36-basalt.md) | Original asset | #3c83f6 | #eeeff2 |
-| [🛡️ Surety](37-surety.md) | Original asset | #ed511d | #eeeff2 |
+| [🛡️ Surety](37-surety.md) | Adopted family | #ed511d | #eeeff2 |
 | [🧬 Life.ai](38-life-ai.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [🚀 Echo](39-echo.md) | Profile emoji | #f01315 | transparent |
 | [🧭 Deca](40-deca.md) | Profile emoji | #d9060a | transparent |

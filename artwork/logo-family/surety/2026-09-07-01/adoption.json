@@ -1,0 +1,33 @@
+{
+	"status": "adopted",
+	"study": "surety/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/surety",
+	"sourceCommit": "f257e0977e85358f9d02ed3f79a9fad8862e5117",
+	"masters": {
+		"logo.png": {
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "587a4c30fd62c32927fc51b03911ad3dd287de18e3e1731ca05d8eb841c68c54",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "0ba3d464cf5672cf97d5e3c58f3df959b4b938fc0a1e8fb4c09552b32526aa4d",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/surety/blob/f257e0977e85358f9d02ed3f79a9fad8862e5117/assets/brand/README.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/surety",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/surety/2026-09-07-01/review.html",
+	"publication": {
+		"sourcePush": "See exact source revision and CI/CD results in the batch publication report.",
+		"report": "../../audits/2026-09-07-redesign/source-publication.json"
+	}
+}

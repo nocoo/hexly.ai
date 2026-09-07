@@ -1,0 +1,61 @@
+{
+	"checkedAt": "2026-09-07T04:10:15.645530+00:00",
+	"themes": ["light", "dark"],
+	"ownerInterrupted": false,
+	"nativeApplicationsInstalled": false,
+	"records": [
+		{
+			"project": "owl",
+			"method": "Actual OwlCore PopoverContentView and GeneralTab with SwiftUI ImageRenderer at 2x; initial AppState and explicit logo resources.",
+			"logoRoles": [
+				"Transparent 22 pt popover header",
+				"Native inset presentation at 120 pt in preferences"
+			],
+			"limitation": "ImageRenderer omits AppKit-backed Form/Link controls. Header crops establish the logo consumers; uncropped renders are preserved as intermediates. No running system-monitor session was opened.",
+			"result": "passed",
+			"screenshots": [
+				{
+					"path": "source-browser/owl-popover-dark.png",
+					"dimensions": [644, 1360],
+					"sha256": "24b9c4222e18de818de4644927e240d18f79c88adc2c9e0646dfd192467f9b38"
+				},
+				{
+					"path": "source-browser/owl-popover-header-dark.png",
+					"dimensions": [644, 96],
+					"sha256": "fd952055b8ba28fc33e78905949cf91c2700c5efeff242de12f781c8a4d96252"
+				},
+				{
+					"path": "source-browser/owl-popover-header-light.png",
+					"dimensions": [644, 96],
+					"sha256": "aec4cac163835679b41d21b61f71cfc560b1d4f42e79458ee6f21b0958adf412"
+				},
+				{
+					"path": "source-browser/owl-popover-light.png",
+					"dimensions": [644, 1360],
+					"sha256": "648c2d1ced4de230b2da991309fbeb849a4145cfa2ffb83617f0f14bf0858cff"
+				},
+				{
+					"path": "source-browser/owl-preferences-dark.png",
+					"dimensions": [1040, 1040],
+					"sha256": "5b2ca2de561aa6d2c3be8c0d6711c8e4f826d9a4da960fb59110c285d37fb47c"
+				},
+				{
+					"path": "source-browser/owl-preferences-header-dark.png",
+					"dimensions": [1040, 414],
+					"sha256": "9ebe56dfe92ab2c8dfd64b7835936ecd805cdb2cda9aa16373ce88ec9a183acd"
+				},
+				{
+					"path": "source-browser/owl-preferences-header-light.png",
+					"dimensions": [1040, 414],
+					"sha256": "1e9420dd62b4754e7748ed1a56ad2133685008296b00564eaaa8776235065b73"
+				},
+				{
+					"path": "source-browser/owl-preferences-light.png",
+					"dimensions": [1040, 1040],
+					"sha256": "d17cb1e3b89f312343232dcd5d548adb267d38553acacf42dcf1bb9c75cdf248"
+				}
+			],
+			"harness": "native-harness/owl.swift"
+		}
+	]
+}
