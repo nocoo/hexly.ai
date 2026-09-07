@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+		"width": 900,
+		"height": 900,
+		"bytes": 667627,
+		"repository": "https://github.com/nocoo/hooky",
+		"repositoryRevision": "fadcde05a823356775a9c27005a701d6d107e955",
+		"sourcePath": "assets/hooky-max.png",
+		"sourceUrl": "https://github.com/nocoo/hooky/blob/fadcde05a823356775a9c27005a701d6d107e955/assets/hooky-max.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 39,
+			"top": 57,
+			"right": 860,
+			"bottom": 860
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 39.5,
+		"clippedPixels": 0
+	},
+	"framingAssessment": "The entire retained silhouette remains inside the rounded boundary; no visible source pixels are clipped.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/hooky",
+			"/artwork/logo-family/hooky/2026-09-07-01/review.html"
+		]
+	}
+}

@@ -991,7 +991,7 @@
 			"kind": "original",
 			"original": "/logos/originals/neo.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/neo/blob/856e487050327aa471ff9761c9d111822f2b46db/logo.png",
+			"sourceUrl": "https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -1018,7 +1018,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Modern TOTP/HOTP authenticator — encrypted storage, 18+ import formats, PWA",
-			"repositoryRevision": "856e487050327aa471ff9761c9d111822f2b46db"
+			"repositoryRevision": "0d750484792449914b07e9b3e3404a823493f8a5"
 		},
 		"colors": {
 			"primary": "#3c83f6",
@@ -1052,7 +1052,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-03",
+			"finishing": "01",
+			"root": "/logos/family/neo/2026-09-07-03/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/neo/2026-09-07-03",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original golden faceted retriever with a relaxed smile",
+					"zh": "保留原图的金色碎片化寻回犬与放松笑容"
+				},
+				"original": "/logos/family/neo/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/neo/2026-09-07-03/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+			},
+			"previous": {
+				"original": "/logos/originals/neo.png",
+				"sourceUrl": "https://github.com/nocoo/neo/blob/856e487050327aa471ff9761c9d111822f2b46db/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "Keep the relaxed smile",
+						"zh": "保留放松的笑容"
+					},
+					"description": {
+						"en": "The original face, ears, smile, tongue, and lower-frame entry stay unchanged. No elongated-neck candidate or new paw is substituted for the owner-retained portrait.",
+						"zh": "原来的脸、耳朵、笑容、舌头与下方入框关系全部保留，不以延长颈部的候选或新增爪子替换用户选定的头像。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Warm gold on clear facets",
+						"zh": "清晰碎片上的暖金色"
+					},
+					"description": {
+						"en": "Golden and cream planes carry the dog, with its existing rose tongue and dark nose. The original transparency, color, anatomy, and framing are copied byte-for-byte.",
+						"zh": "金色与奶油色面构成小狗，保留原来的玫瑰舌头和深色鼻尖。透明度、色彩、解剖与构图均逐字节复制。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Broad folds of blue light",
+						"zh": "蓝色底面的宽幅光束"
+					},
+					"description": {
+						"en": "Unequal oblique paper planes cross the blue negative space. The cooler setting separates the golden face, while fine grain and a shallow shadow keep the family material consistent.",
+						"zh": "宽窄不一的斜向纸面穿过蓝色留白，清凉底色突出金色面部，细颗粒与浅阴影保持家族材质的一致。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#5c7eaa",
+					"role": "background",
+					"label": {
+						"en": "Folded sunlight",
+						"zh": "展示底色"
+					},
+					"source": "Selected Neo presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#f4be7e",
+					"label": {
+						"en": "Golden coat",
+						"zh": "金色毛发"
+					},
+					"source": "Original neo 2939c3edb084, sampled sRGB pixel (1447, 448); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#ffdebb",
+					"label": {
+						"en": "Cream light",
+						"zh": "奶油高光"
+					},
+					"source": "Original neo 2939c3edb084, sampled sRGB pixel (1040, 504); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#b17158",
+					"label": {
+						"en": "Warm shadow",
+						"zh": "暖色阴影"
+					},
+					"source": "Original neo 2939c3edb084, sampled sRGB pixel (345, 729); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#e88089",
+					"label": {
+						"en": "Tongue rose",
+						"zh": "舌头玫瑰"
+					},
+					"source": "Original neo 2939c3edb084, sampled sRGB pixel (919, 1539); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#322a37",
+					"label": {
+						"en": "Nose charcoal",
+						"zh": "鼻尖炭黑"
+					},
+					"source": "Original neo 2939c3edb084, sampled sRGB pixel (855, 1120); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The golden ears, dark nose, and open smile remain clear at 32 px. Finer coat planes simplify at 16 px. Sidebar and browser marks stay transparent; touch and install icons use platform-specific presentations.",
+				"zh": "32 像素时金色耳朵、深色鼻尖与张嘴笑容依然清晰；16 像素时细毛色面会合并。侧栏和浏览器保持透明，触屏与安装图标使用各自平台的展示版本。"
+			}
+		}
 	},
 	{
 		"id": "giraffe",
@@ -1396,8 +1518,8 @@
 		"logo": {
 			"kind": "original",
 			"original": "/logos/originals/dove.png",
-			"sourcePath": "src/client/public/logo.png",
-			"sourceUrl": "https://github.com/nocoo/dove/blob/2f7e96b0217a800f09c2685065024ae10c34918f/src/client/public/logo.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -1424,7 +1546,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Self-hosted email relay with webhook triggers, templates, and usage dashboard",
-			"repositoryRevision": "2f7e96b0217a800f09c2685065024ae10c34918f"
+			"repositoryRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0"
 		},
 		"colors": {
 			"primary": "#c65379",
@@ -1458,7 +1580,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-03",
+			"finishing": "01",
+			"root": "/logos/family/dove/2026-09-07-03/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dove/2026-09-07-03",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original violet and teal faceted dove with pink blossoms",
+					"zh": "保留原图的紫青色碎片化鸽子与粉色花枝"
+				},
+				"original": "/logos/family/dove/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/dove/2026-09-07-03/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+			},
+			"previous": {
+				"original": "/logos/originals/dove.png",
+				"sourceUrl": "https://github.com/nocoo/dove/blob/2f7e96b0217a800f09c2685065024ae10c34918f/src/client/public/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "The original blossom portrait",
+						"zh": "保留原来的花枝头像"
+					},
+					"description": {
+						"en": "The dove, shoulder curve, watchful eye, and surrounding blossom group retain their original layout. This pass does not use any superseded neck-extension study.",
+						"zh": "鸽子、肩部曲线、专注眼神与周围花枝均保留原来布局，不采用此前已撤回的延长颈部版本。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "One blossom group",
+						"zh": "一个完整的花枝点缀"
+					},
+					"description": {
+						"en": "Violet, blue, and mint facets remain the original bird; the existing pink blossoms form the signature accent group. All foreground pixels and detached petals are preserved.",
+						"zh": "紫、蓝和薄荷色碎片构成原来的鸟，既有粉色花枝是标志性的点缀组。所有前景像素与飘落花瓣均保留。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Petals pressed into violet paper",
+						"zh": "紫色纸面上的花瓣压纹"
+					},
+					"description": {
+						"en": "Sparse elongated petals sit at the corners of a muted violet field. Fine grain, offset edge light, and a shallow shadow keep the real blossom group in front.",
+						"zh": "稀疏修长的花瓣纹位于柔和紫色底面的角落，细颗粒、偏移边光与浅阴影让真正的花枝点缀保持在视觉前方。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#83759b",
+					"role": "background",
+					"label": {
+						"en": "Pressed petals",
+						"zh": "展示底色"
+					},
+					"source": "Selected Dove presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#8079a5",
+					"label": {
+						"en": "Iris violet",
+						"zh": "鸢尾紫"
+					},
+					"source": "Original dove 25be5b3506f8, sampled sRGB pixel (885, 372); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#4c5777",
+					"label": {
+						"en": "Blue feather",
+						"zh": "蓝羽"
+					},
+					"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1237, 783); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#fbccc6",
+					"label": {
+						"en": "Petal pink",
+						"zh": "花瓣粉"
+					},
+					"source": "Original dove 25be5b3506f8, sampled sRGB pixel (336, 482); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#65c8b6",
+					"label": {
+						"en": "Mint feather",
+						"zh": "薄荷羽色"
+					},
+					"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1101, 1055); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#d4b7a9",
+					"label": {
+						"en": "Warm beak",
+						"zh": "暖色鸟喙"
+					},
+					"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1196, 474); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The violet silhouette and pink blossom arc remain distinct at 32 px. At 16 px small petals and feather facets merge; use the transparent foreground for browser and sidebar marks.",
+				"zh": "32 像素时紫色轮廓与粉色花枝弧线仍能区分；16 像素时细花瓣与羽毛碎片会合并。浏览器和侧栏标记使用透明前景。"
+			}
+		}
 	},
 	{
 		"id": "pika",
@@ -1721,7 +1965,7 @@
 			"kind": "original",
 			"original": "/logos/originals/lyre.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/lyre/blob/c2c5cf883fef4cf775c98eba6dce883c56653fe7/logo.png",
+			"sourceUrl": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -1744,7 +1988,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Audio recording management and transcription with word-level karaoke playback",
-			"repositoryRevision": "c2c5cf883fef4cf775c98eba6dce883c56653fe7"
+			"repositoryRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e"
 		},
 		"colors": {
 			"primary": "#883720",
@@ -1778,7 +2022,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-03",
+			"finishing": "01",
+			"root": "/logos/family/lyre/2026-09-07-03/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/lyre/2026-09-07-03",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original chestnut faceted lyrebird with a curled feather crest",
+					"zh": "保留原图的栗色碎片化琴鸟与卷曲羽冠"
+				},
+				"original": "/logos/family/lyre/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/lyre/2026-09-07-03/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+			},
+			"previous": {
+				"original": "/logos/originals/lyre.png",
+				"sourceUrl": "https://github.com/nocoo/lyre/blob/c2c5cf883fef4cf775c98eba6dce883c56653fe7/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "The original attentive turn",
+						"zh": "保留专注回望的姿态"
+					},
+					"description": {
+						"en": "The portrait, beak, eye, curled crest, and native spacing remain the original artwork. This pass preserves the existing neck silhouette and adds no extension.",
+						"zh": "头像、鸟喙、眼神、卷曲羽冠与原有留白均沿用原图，保留现有颈部轮廓，没有补画或拉伸。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Chestnut, cream, and copper",
+						"zh": "栗棕、奶油色与铜橙"
+					},
+					"description": {
+						"en": "The existing warm facets and expressive feather crest carry the identity. Every original pixel is retained; no new rainbow accessory or model output is introduced.",
+						"zh": "暖色碎片与灵动的羽冠继续承担识别特征。所有原始像素均保留，不新增彩虹配饰，也不重新生图。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "A pressed feather fan",
+						"zh": "压印的扇羽"
+					},
+					"description": {
+						"en": "Unequal feather ribs open around a chestnut paper field. Small raised edges, fine grain, and a shallow shadow separate the bird from its warm setting.",
+						"zh": "疏密不一的扇羽纹围绕栗棕纸面展开，细亮边、微颗粒与浅阴影将鸟的轮廓从暖色底面中托出。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#a16850",
+					"role": "background",
+					"label": {
+						"en": "Lyrebird fan",
+						"zh": "展示底色"
+					},
+					"source": "Selected Lyre presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#a35d3b",
+					"label": {
+						"en": "Chestnut",
+						"zh": "栗棕"
+					},
+					"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1408, 138); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#d7884d",
+					"label": {
+						"en": "Copper",
+						"zh": "铜橙"
+					},
+					"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1161, 1515); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#dfc39e",
+					"label": {
+						"en": "Cream throat",
+						"zh": "奶油色喉羽"
+					},
+					"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1225, 1199); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#5d2e24",
+					"label": {
+						"en": "Deep umber",
+						"zh": "深赭棕"
+					},
+					"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1414, 223); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#f2a965",
+					"label": {
+						"en": "Amber eye",
+						"zh": "琥珀眼"
+					},
+					"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (877, 548); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The eye, beak, and warm silhouette remain legible at sidebar size. Individual crest facets simplify at 16 px; use the transparent original for browser and menu bar marks.",
+				"zh": "侧栏尺寸仍能辨认眼睛、鸟喙和暖色轮廓；16 像素时羽冠碎片会简化，浏览器与菜单栏标识使用透明原图。"
+			}
+		}
 	},
 	{
 		"id": "pokepocket",
@@ -2779,8 +3145,8 @@
 			"zh": "截图、上传到 R2，再把可分享的链接放进剪贴板，一次完成。"
 		},
 		"category": "tools",
-		"website": null,
-		"websiteSource": null,
+		"website": "https://chromewebstore.google.com/detail/r2shot/chhcpjnlcbomogddjockcpjjpiijogha",
+		"websiteSource": "Chrome Web Store link in repository README.md at d69714a2332066c9c7b1792f919607a4b776eade",
 		"repository": "https://github.com/nocoo/r2shot",
 		"subject": "Blue dolphin",
 		"reference": false,
@@ -2788,7 +3154,7 @@
 			"kind": "original",
 			"original": "/logos/originals/r2shot.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png",
+			"sourceUrl": "https://github.com/nocoo/r2shot/blob/d69714a2332066c9c7b1792f919607a4b776eade/logo.png",
 			"modified": false,
 			"width": 920,
 			"height": 920,
@@ -2815,7 +3181,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "One-click screenshot capture, upload to Cloudflare R2, CDN URL to clipboard",
-			"repositoryRevision": "761799416deb2a977eee92b2392746e16f6bc644"
+			"repositoryRevision": "d69714a2332066c9c7b1792f919607a4b776eade"
 		},
 		"colors": {
 			"primary": "#24c4bd",
@@ -2849,7 +3215,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/r2shot/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/r2shot/2026-09-07-01",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original blue faceted dolphin with a curled tail",
+					"zh": "保留原图的蓝色碎片化海豚与卷曲尾鳍"
+				},
+				"original": "/logos/family/r2shot/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/r2shot/2026-09-07-01/01/transparent-1024.webp",
+				"width": 920,
+				"height": 920,
+				"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1"
+			},
+			"previous": {
+				"original": "/logos/originals/r2shot.png",
+				"sourceUrl": "https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png",
+				"width": 920,
+				"height": 920,
+				"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "The same playful turn",
+						"zh": "保留这一刻的回身"
+					},
+					"description": {
+						"en": "The dolphin, curled tail, camera, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.",
+						"zh": "海豚、卷曲尾鳍、视角和原有边距全部保留。完整轮廓位于圆角之内，没有裁切或补画。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Every original facet",
+						"zh": "每一块原有的色面"
+					},
+					"description": {
+						"en": "Cyan, turquoise, blue, and pale belly planes remain the original transparent artwork. The bright eyes and sweeping tail keep their existing gesture; no new decoration or model generation was needed.",
+						"zh": "青色、蓝色和浅色腹部均沿用原来的透明图像。明亮眼神与回卷尾鳍保留原有动作，没有新增装饰，也没有重新生图。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "A quiet teal wake",
+						"zh": "青色水流的浮纹"
+					},
+					"description": {
+						"en": "Oblique wave crests follow the empty upper-right field. A deep teal gradient, fine grain, and shallow contact shadows give the retained flat artwork a tactile setting.",
+						"zh": "斜向水波穿过右上方的留白，搭配深青渐变、细微颗粒和轻浅接触阴影，为原来的平面主体加上纸面质感。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#4d818c",
+					"role": "background",
+					"label": {
+						"en": "Dolphin wake",
+						"zh": "展示底色"
+					},
+					"source": "Selected R2Shot presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#3fc2d0",
+					"label": {
+						"en": "Lagoon cyan",
+						"zh": "泻湖青"
+					},
+					"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (568, 298); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#198eba",
+					"label": {
+						"en": "Ocean blue",
+						"zh": "海蓝"
+					},
+					"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (217, 676); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#dbffff",
+					"label": {
+						"en": "Ice mint",
+						"zh": "冰薄荷"
+					},
+					"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (494, 280); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#143361",
+					"label": {
+						"en": "Deep water",
+						"zh": "深海蓝"
+					},
+					"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (653, 181); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#2ebad5",
+					"label": {
+						"en": "Tail turquoise",
+						"zh": "尾鳍青"
+					},
+					"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (854, 632); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The curled blue silhouette and pale face stay recognizable at toolbar size. At 16 px, individual facets and eye highlights simplify; use the transparent foreground there. Native source: 920 px; 1024/2048 px exports are upscales.",
+				"zh": "卷曲的蓝色轮廓与浅色面部在工具栏尺寸仍可辨识。16 像素时碎片与眼部高光会合并，应使用透明前景。原图为 920 像素，1024、2048 为放大导出。"
+			}
+		}
 	},
 	{
 		"id": "shrike",
@@ -2870,7 +3358,7 @@
 			"kind": "original",
 			"original": "/logos/originals/shrike.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png",
+			"sourceUrl": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -2897,7 +3385,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "macOS menu bar utility that syncs files and folders to Google Drive via rsync",
-			"repositoryRevision": "9ca43106ca79f35f7b0ad77198b82150a2307b44"
+			"repositoryRevision": "0fec187fc22742664925897400d0c1a62b2478bb"
 		},
 		"colors": {
 			"primary": "#86502c",
@@ -2931,7 +3419,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/shrike/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/shrike/2026-09-07-01",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original grey faceted shrike with a dark eye mask",
+					"zh": "保留原图的灰色碎片化伯劳与深色眼罩"
+				},
+				"original": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/shrike/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+			},
+			"previous": {
+				"original": "/logos/originals/shrike.png",
+				"sourceUrl": "https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "Keep the watchful profile",
+						"zh": "保留警觉的侧影"
+					},
+					"description": {
+						"en": "The original head, hooked beak, eye mask, shoulders, and canvas are preserved exactly. The existing compact silhouette stays the source of every foreground size.",
+						"zh": "头部、钩状鸟喙、眼罩、肩羽和画布全部原样保留，现有紧凑轮廓是所有透明尺寸的唯一来源。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Silver facets, dark mask",
+						"zh": "银灰碎片与深色眼罩"
+					},
+					"description": {
+						"en": "The silver crown, charcoal eye band, blue-grey beak, and warm shoulder facets are untouched. No new ornament or image-generation call is needed for this retained identity.",
+						"zh": "银灰头顶、炭黑眼带、蓝灰鸟喙与暖色肩羽均未修改。这次沿用既有形象，不增加装饰或调用生图。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Angular paper folds",
+						"zh": "棱角分明的纸面折翼"
+					},
+					"description": {
+						"en": "Oversized angular pleats enter a slate field from opposite corners. Narrow edge highlights and a low shadow give the grey bird separation without adding a scene.",
+						"zh": "大幅折翼纹从对角进入石板色底面，细边高光和轻浅阴影让灰色主体清晰浮现，保持图标简洁。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#718591",
+					"role": "background",
+					"label": {
+						"en": "Folded wings",
+						"zh": "展示底色"
+					},
+					"source": "Selected Shrike presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#a0a1a6",
+					"label": {
+						"en": "Slate grey",
+						"zh": "石板灰"
+					},
+					"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1363, 324); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#c4c7ce",
+					"label": {
+						"en": "Silver feather",
+						"zh": "银灰羽毛"
+					},
+					"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1081, 284); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#1a1a18",
+					"label": {
+						"en": "Eye mask",
+						"zh": "深色眼罩"
+					},
+					"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1091, 636); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#b7936f",
+					"label": {
+						"en": "Buff shoulder",
+						"zh": "浅褐肩羽"
+					},
+					"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1197, 1367); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#576475",
+					"label": {
+						"en": "Beak blue",
+						"zh": "鸟喙蓝灰"
+					},
+					"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (322, 801); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The beak and dark eye band carry the mark at small sizes. Menu bar template icons keep their existing monochrome silhouette; app, toolbar, and browser derivatives retain their distinct roles.",
+				"zh": "小尺寸由鸟喙与深色眼带承担识别。菜单栏模板图保留现有单色轮廓；应用、工具栏与浏览器图标分别按各自用途处理。"
+			}
+		}
 	},
 	{
 		"id": "hooky",
@@ -2943,16 +3553,16 @@
 			"zh": "从浏览器工具栏、右键菜单或快捷消息中，随手触发 Webhook。"
 		},
 		"category": "tools",
-		"website": null,
-		"websiteSource": null,
+		"website": "https://chromewebstore.google.com/detail/hooky/almccnkbhfhckimediabjimflnbfbeeo",
+		"websiteSource": "Chrome Web Store link in repository README.md at 8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a",
 		"repository": "https://github.com/nocoo/hooky",
 		"subject": "Pink octopus",
 		"reference": false,
 		"logo": {
 			"kind": "original",
 			"original": "/logos/originals/hooky.png",
-			"sourcePath": "assets/hooky-max.png",
-			"sourceUrl": "https://github.com/nocoo/hooky/blob/fadcde05a823356775a9c27005a701d6d107e955/assets/hooky-max.png",
+			"sourcePath": "logo.png",
+			"sourceUrl": "https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/logo.png",
 			"modified": false,
 			"width": 900,
 			"height": 900,
@@ -2961,27 +3571,40 @@
 			"thumbnail": "/logos/display/hooky-160.webp",
 			"display": "/logos/display/hooky-1024.webp"
 		},
-		"theme": {},
+		"theme": {
+			"primary": {
+				"value": "#9666b7",
+				"source": "src/popup/popup.css .btn-primary background-color"
+			},
+			"background": {
+				"value": "#ffffff",
+				"source": "src/popup/popup.css body background-color"
+			},
+			"ink": {
+				"value": "#333333",
+				"source": "src/popup/popup.css body color"
+			}
+		},
 		"source": {
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Chrome extension to trigger webhooks from toolbar, context menu, or Quick Send",
-			"repositoryRevision": "fadcde05a823356775a9c27005a701d6d107e955"
+			"repositoryRevision": "8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a"
 		},
 		"colors": {
-			"primary": "#e9a5bf",
-			"background": "transparent",
-			"ink": "#311a41",
+			"primary": "#9666b7",
+			"background": "#ffffff",
+			"ink": "#333333",
 			"palette": [
 				{
-					"color": "#e9a5bf",
+					"color": "#9666b7",
 					"role": "primary",
-					"source": "Preserved project artwork, dominant colored pixels"
+					"source": "src/popup/popup.css .btn-primary background-color: #9666b7"
 				},
 				{
-					"color": "transparent",
+					"color": "#ffffff",
 					"role": "background",
-					"source": "Preserved project artwork, transparent background"
+					"source": "src/popup/popup.css body background-color: #ffffff"
 				},
 				{
 					"color": "#b771af",
@@ -3000,7 +3623,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/hooky/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hooky/2026-09-07-01",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original pink faceted octopus with curled arms",
+					"zh": "保留原图的粉色碎片化章鱼与卷曲腕足"
+				},
+				"original": "/logos/family/hooky/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/hooky/2026-09-07-01/01/transparent-1024.webp",
+				"width": 900,
+				"height": 900,
+				"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+			},
+			"previous": {
+				"original": "/logos/originals/hooky.png",
+				"sourceUrl": "https://github.com/nocoo/hooky/blob/fadcde05a823356775a9c27005a701d6d107e955/assets/hooky-max.png",
+				"width": 900,
+				"height": 900,
+				"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "A complete little octopus",
+						"zh": "完整的小章鱼"
+					},
+					"description": {
+						"en": "The head, expression, curled arms, and native spacing are unchanged. Every visible arm remains clear of the rounded boundary. The original foreground is preserved byte-for-byte.",
+						"zh": "头部、表情、腕足与原有留白保持不变。所有可见腕足都位于圆角边界之内，透明原图逐字节保留。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Keep the gentle facets",
+						"zh": "保留温和的碎片"
+					},
+					"description": {
+						"en": "The pink-to-lilac planes and violet curls already belong to the family. Their existing motion supplies the character; this pass adds no accessory and makes no image-generation call.",
+						"zh": "粉色到丁香紫的色面与紫色卷曲腕足已经具备家族风格。原来的动态继续承担表情，这次没有新增配饰或调用生图。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Softly curled relief",
+						"zh": "卷曲的浅浮纹"
+					},
+					"description": {
+						"en": "Open hook-shaped channels enter a muted plum field from different edges. Fine grain, offset highlights, and low contact shadows keep the background tactile and the octopus prominent.",
+						"zh": "开口的卷曲沟纹从不同边缘进入柔和梅紫底色，细颗粒、偏移高光和轻浅阴影带来触感，同时突出章鱼主体。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#9d7097",
+					"role": "background",
+					"label": {
+						"en": "Tidal hooks",
+						"zh": "展示底色"
+					},
+					"source": "Selected Hooky presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#e9a5bf",
+					"label": {
+						"en": "Rose pink",
+						"zh": "玫瑰粉"
+					},
+					"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (313, 260); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#b771af",
+					"label": {
+						"en": "Lilac",
+						"zh": "丁香紫"
+					},
+					"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (262, 528); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#fedced",
+					"label": {
+						"en": "Petal light",
+						"zh": "浅花瓣"
+					},
+					"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (376, 129); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#8b4e93",
+					"label": {
+						"en": "Berry violet",
+						"zh": "莓紫"
+					},
+					"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (573, 606); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#42274d",
+					"label": {
+						"en": "Ink plum",
+						"zh": "墨梅紫"
+					},
+					"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (556, 340); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "At 32 px the pink head and violet curls carry the mark. At 16 px the small arm gaps and facets merge; toolbar and tab marks use the transparent source. Native source: 900 px; 1024/2048 px exports are upscales.",
+				"zh": "32 像素时粉色头部与紫色腕足形成清晰标识；16 像素时细小缝隙和碎片会合并。工具栏与标签页使用透明原图。原图为 900 像素，1024、2048 为放大导出。"
+			}
+		}
 	},
 	{
 		"id": "dotty",
@@ -3093,7 +3838,7 @@
 			"kind": "original",
 			"original": "/logos/originals/wooly.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/wooly/blob/348dac5c402063de8ef6cf69f8c93f8da43347bf/logo.png",
+			"sourceUrl": "https://github.com/nocoo/wooly/blob/1eea8ada0a31fdd55b98062333ec4517f65609f4/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -3120,7 +3865,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Family perks dashboard — credit card rewards, insurance benefits, expiry alerts",
-			"repositoryRevision": "348dac5c402063de8ef6cf69f8c93f8da43347bf"
+			"repositoryRevision": "1eea8ada0a31fdd55b98062333ec4517f65609f4"
 		},
 		"colors": {
 			"primary": "#dd3ca7",
@@ -3154,7 +3899,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/wooly/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/wooly/2026-09-07-01",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original cream faceted sheep with a wink and pink tongue",
+					"zh": "保留原图的奶油色碎片化绵羊、眨眼与粉色舌头"
+				},
+				"original": "/logos/family/wooly/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/wooly/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36"
+			},
+			"previous": {
+				"original": "/logos/originals/wooly.png",
+				"sourceUrl": "https://github.com/nocoo/wooly/blob/348dac5c402063de8ef6cf69f8c93f8da43347bf/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "The same mischievous wink",
+						"zh": "保留俏皮的眨眼"
+					},
+					"description": {
+						"en": "The sheep, curled forelock, wink, tongue, ears, and original bust framing remain unchanged. No neck extension or new animal drawing is introduced.",
+						"zh": "绵羊、卷发、眨眼、舌头、耳朵和原来的头像构图全部保留，没有拉长脖子或重画动物。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Cream planes and a pink accent",
+						"zh": "奶油色面与粉色点缀"
+					},
+					"description": {
+						"en": "Broad ivory and warm cream facets keep the face light. The original tongue remains the playful accent; pale anatomy and antialiased boundaries are copied exactly.",
+						"zh": "大块象牙白与暖奶油色面保持脸部明亮，原来的舌头继续作为俏皮点缀；浅色解剖与抗锯齿边缘均准确复制。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Soft cloud seams",
+						"zh": "柔软的云纹接缝"
+					},
+					"description": {
+						"en": "A deeper rose field gives the ivory wool contrast. Wide uneven scallops, fine grain, and shallow lighting suggest a tactile wool fold around the empty edges.",
+						"zh": "较深玫瑰底色增强与象牙白羊毛的对比，宽而不均匀的云纹、微颗粒和浅层光照在留白边缘形成柔软触感。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#ad8093",
+					"role": "background",
+					"label": {
+						"en": "Wool cloud folds",
+						"zh": "展示底色"
+					},
+					"source": "Selected Wooly presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#f3e6c4",
+					"label": {
+						"en": "Cream wool",
+						"zh": "奶油羊毛"
+					},
+					"source": "Original wooly 95798966dd1a, sampled sRGB pixel (961, 149); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#d4bc98",
+					"label": {
+						"en": "Warm fleece",
+						"zh": "暖色羊毛"
+					},
+					"source": "Original wooly 95798966dd1a, sampled sRGB pixel (1024, 143); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#ac806c",
+					"label": {
+						"en": "Ear blush",
+						"zh": "耳朵浅棕"
+					},
+					"source": "Original wooly 95798966dd1a, sampled sRGB pixel (585, 768); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#ed9591",
+					"label": {
+						"en": "Tongue pink",
+						"zh": "舌头粉"
+					},
+					"source": "Original wooly 95798966dd1a, sampled sRGB pixel (1041, 1539); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#2d3f4d",
+					"label": {
+						"en": "Deep eye",
+						"zh": "深色眼睛"
+					},
+					"source": "Original wooly 95798966dd1a, sampled sRGB pixel (710, 871); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "Cream ears, a dark eye, and the pink tongue remain the key cues at 32 px. Tiny wool facets simplify at 16 px; transparent artwork is used for the sidebar and favicon.",
+				"zh": "32 像素时奶油色耳朵、深色眼睛与粉色舌头仍是识别重点；16 像素时细小羊毛碎片会合并，侧栏和 favicon 使用透明前景。"
+			}
+		}
 	},
 	{
 		"id": "matrix",
@@ -3701,7 +4568,7 @@
 			"kind": "original",
 			"original": "/logos/originals/zhe.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/zhe/blob/120a01207c1b978a081413e785099d3580890d80/logo.png",
+			"sourceUrl": "https://github.com/nocoo/zhe/blob/075c875936e9a244c147ff9d58452398bb1ef3cf/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -3728,7 +4595,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "TypeScript URL shortener with clean links and analytics-ready storage",
-			"repositoryRevision": "120a01207c1b978a081413e785099d3580890d80"
+			"repositoryRevision": "075c875936e9a244c147ff9d58452398bb1ef3cf"
 		},
 		"colors": {
 			"primary": "#7c3bed",
@@ -3762,7 +4629,138 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/zhe/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/zhe/2026-09-07-01",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original golden faceted bee with multicolored wings",
+					"zh": "保留原图的金色碎片化蜜蜂与多彩翅膀"
+				},
+				"original": "/logos/family/zhe/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/zhe/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+			},
+			"previous": {
+				"original": "/logos/originals/zhe.png",
+				"sourceUrl": "https://github.com/nocoo/zhe/blob/120a01207c1b978a081413e785099d3580890d80/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "Keep the hovering gesture",
+						"zh": "保留悬停的动作"
+					},
+					"description": {
+						"en": "The bee, antenna curls, wing spread, and original off-center balance remain unchanged. The native 2048 px canvas already gives the complete mark ample rounded-corner clearance.",
+						"zh": "蜜蜂、卷曲触角、展开的翅膀和原来的偏心平衡全部保留。2048 像素原图已经为完整主体留出了充分的圆角安全空间。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Gold with one wing flourish",
+						"zh": "金色主体与多彩翅膀"
+					},
+					"description": {
+						"en": "Broad honey and amber facets lead the body; the existing cyan-and-rose wing group supplies the colorful interest point. All source pixels and the transparent silhouette remain untouched.",
+						"zh": "蜂蜜金与琥珀色面构成主体，现有青粉色翅膀形成集中多彩的兴趣点。源图像素和透明轮廓均未修改。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "Pressed beeswax",
+						"zh": "蜂蜡上的浅浮纹"
+					},
+					"description": {
+						"en": "Sparse oversized honeycomb cells sit around a warm beeswax field. Their uneven rhythm, light edges, fine grain, and shallow contact shadow support the bee without turning the logo into a scene.",
+						"zh": "稀疏的大蜂巢格分布在暖蜂蜡底色周围，不均匀的节奏、细亮边、颗粒和浅接触阴影衬托蜜蜂，保持标识的简洁。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#bb914f",
+					"role": "background",
+					"label": {
+						"en": "Beeswax cells",
+						"zh": "展示底色"
+					},
+					"source": "Selected Zhe presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#f0b724",
+					"label": {
+						"en": "Honey gold",
+						"zh": "蜂蜜金"
+					},
+					"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1478, 1111); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#e48f2a",
+					"label": {
+						"en": "Amber",
+						"zh": "琥珀"
+					},
+					"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1150, 1048); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#47260c",
+					"label": {
+						"en": "Cocoa",
+						"zh": "可可棕"
+					},
+					"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1159, 747); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#86cddf",
+					"label": {
+						"en": "Wing cyan",
+						"zh": "翼青"
+					},
+					"source": "Original zhe a0c8b9240261, sampled sRGB pixel (616, 797); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#fac7e2",
+					"label": {
+						"en": "Wing rose",
+						"zh": "翼粉"
+					},
+					"source": "Original zhe a0c8b9240261, sampled sRGB pixel (860, 398); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#e57863",
+					"label": {
+						"en": "Antenna coral",
+						"zh": "触角珊瑚"
+					},
+					"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1224, 300); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The golden body and cyan-pink wing group remain distinct at 32 px. At 16 px the antenna curls and smaller facets simplify into the overall silhouette; sidebar and browser marks use the transparent foreground.",
+				"zh": "32 像素时金色身体和青粉翅膀仍能区分；16 像素时触角卷曲与小碎片会融入整体轮廓。侧栏和浏览器标记继续使用透明前景。"
+			}
+		}
 	},
 	{
 		"id": "geekhub",
@@ -3934,7 +4932,7 @@
 			"kind": "original",
 			"original": "/logos/originals/noheir.png",
 			"sourcePath": "logo.png",
-			"sourceUrl": "https://github.com/nocoo/noheir/blob/2c99001444856d7756589254a52696af2cdfbab9/logo.png",
+			"sourceUrl": "https://github.com/nocoo/noheir/blob/1041610cf06562bb04911e39f4356690f6256f57/logo.png",
 			"modified": false,
 			"width": 2048,
 			"height": 2048,
@@ -3961,7 +4959,7 @@
 			"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
 			"profileSection": "Recent Projects",
 			"description": "Personal finance tracker for income, expenses, and assets with dashboards",
-			"repositoryRevision": "2c99001444856d7756589254a52696af2cdfbab9"
+			"repositoryRevision": "1041610cf06562bb04911e39f4356690f6256f57"
 		},
 		"colors": {
 			"primary": "#25aff4",
@@ -3995,7 +4993,129 @@
 				}
 			]
 		},
-		"archived": false
+		"archived": false,
+		"family": {
+			"id": "2026-09-07-01",
+			"finishing": "01",
+			"root": "/logos/family/noheir/2026-09-07-01/01",
+			"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/noheir/2026-09-07-01",
+			"method": "retained-original",
+			"status": "adopted",
+			"updated": "2026-09-07",
+			"foreground": {
+				"subject": {
+					"en": "Original warm brown and cream faceted cow portrait",
+					"zh": "保留原图的暖棕与奶油色碎片化奶牛头像"
+				},
+				"original": "/logos/family/noheir/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/noheir/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb"
+			},
+			"previous": {
+				"original": "/logos/originals/noheir.png",
+				"sourceUrl": "https://github.com/nocoo/noheir/blob/2c99001444856d7756589254a52696af2cdfbab9/logo.png",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb"
+			},
+			"direction": [
+				{
+					"aspect": "composition",
+					"title": {
+						"en": "Keep the gentle three-quarter view",
+						"zh": "保留温和的三分之四侧脸"
+					},
+					"description": {
+						"en": "The cow, horns, ears, expression, and original shoulder silhouette remain exactly as supplied. The warm animal stays prominent without changing its proportions.",
+						"zh": "奶牛、角、耳朵、表情和原来的肩部轮廓均原样保留，在不改变比例的情况下突出暖色主体。"
+					}
+				},
+				{
+					"aspect": "drawing",
+					"title": {
+						"en": "Warm patches, clear eyes",
+						"zh": "暖色斑块与清晰眼神"
+					},
+					"description": {
+						"en": "The existing copper, cream, coral nose, and blue eye facets are retained. This presentation-only pass adds no accessory, repaint, or model generation.",
+						"zh": "原有铜棕、奶油色、珊瑚鼻尖与蓝色眼睛碎片均保留。这次只完善展示，不加配饰、不重涂，也不调用生图。"
+					}
+				},
+				{
+					"aspect": "presentation",
+					"title": {
+						"en": "A cool terraced field",
+						"zh": "清凉的梯田底纹"
+					},
+					"description": {
+						"en": "Unequal stepped contours sit on a muted green field. Their broad rhythm and tiny lit edges contrast the warm cow while keeping the finance app UI palette separate.",
+						"zh": "高低不一的阶梯轮廓落在柔和绿色底面上，宽阔节奏与细亮边衬托暖色奶牛；财务应用的界面色板单独保留。"
+					}
+				}
+			],
+			"palette": [
+				{
+					"color": "#638783",
+					"role": "background",
+					"label": {
+						"en": "Quiet terraces",
+						"zh": "展示底色"
+					},
+					"source": "Selected Noheir presentation, finishing 01; background.base in archived settings.json"
+				},
+				{
+					"color": "#b4642f",
+					"label": {
+						"en": "Copper brown",
+						"zh": "铜棕"
+					},
+					"source": "Original noheir 2ed854204cbc, sampled sRGB pixel (1219, 426); palette.json",
+					"role": "primary"
+				},
+				{
+					"color": "#f0dfc1",
+					"label": {
+						"en": "Oat cream",
+						"zh": "燕麦奶油"
+					},
+					"source": "Original noheir 2ed854204cbc, sampled sRGB pixel (902, 421); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#d7b68b",
+					"label": {
+						"en": "Warm tan",
+						"zh": "暖褐"
+					},
+					"source": "Original noheir 2ed854204cbc, sampled sRGB pixel (1069, 360); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#ee9d8a",
+					"label": {
+						"en": "Nose coral",
+						"zh": "鼻尖珊瑚"
+					},
+					"source": "Original noheir 2ed854204cbc, sampled sRGB pixel (530, 1341); palette.json",
+					"role": "accent"
+				},
+				{
+					"color": "#566b7e",
+					"label": {
+						"en": "Eye blue",
+						"zh": "眼睛蓝"
+					},
+					"source": "Original noheir 2ed854204cbc, sampled sRGB pixel (537, 855); palette.json",
+					"role": "accent"
+				}
+			],
+			"sizeNote": {
+				"en": "The cream blaze, horns, and coral nose anchor the 32 px silhouette. At 16 px smaller patches merge; browser and sidebar marks use the transparent source while installed-app icons use the presentation.",
+				"zh": "32 像素时奶油色额纹、牛角与珊瑚鼻尖构成清晰轮廓；16 像素时细斑块合并。浏览器和侧栏用透明源图，安装图标使用展示底色。"
+			}
+		}
 	},
 	{
 		"id": "ipsafe",

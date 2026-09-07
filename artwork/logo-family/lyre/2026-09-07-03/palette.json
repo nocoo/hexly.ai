@@ -1,0 +1,124 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3656299,
+		"repository": "https://github.com/nocoo/lyre",
+		"repositoryRevision": "f22d7fa974f0440477b148f1e22c42fc418caa51",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/lyre/blob/f22d7fa974f0440477b148f1e22c42fc418caa51/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Chestnut",
+				"zh": "栗棕"
+			},
+			"color": "#a35d3b",
+			"x": 1408,
+			"y": 138,
+			"alpha": 253,
+			"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1408, 138); palette.json"
+		},
+		{
+			"label": {
+				"en": "Copper",
+				"zh": "铜橙"
+			},
+			"color": "#d7884d",
+			"x": 1161,
+			"y": 1515,
+			"alpha": 254,
+			"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1161, 1515); palette.json"
+		},
+		{
+			"label": {
+				"en": "Cream throat",
+				"zh": "奶油色喉羽"
+			},
+			"color": "#dfc39e",
+			"x": 1225,
+			"y": 1199,
+			"alpha": 254,
+			"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1225, 1199); palette.json"
+		},
+		{
+			"label": {
+				"en": "Deep umber",
+				"zh": "深赭棕"
+			},
+			"color": "#5d2e24",
+			"x": 1414,
+			"y": 223,
+			"alpha": 254,
+			"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1414, 223); palette.json"
+		},
+		{
+			"label": {
+				"en": "Amber eye",
+				"zh": "琥珀眼"
+			},
+			"color": "#f2a965",
+			"x": 877,
+			"y": 548,
+			"alpha": 254,
+			"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (877, 548); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#a16850",
+		"light": "#d4a17d",
+		"shade": "#70422f",
+		"motif": "#512819",
+		"grainAmplitude": 1,
+		"grainSeed": 609074,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Lyrebird fan",
+			"description": "A wide off-center feather fan opens from the lower-left beyond the canvas. Unequal curved ribs and a second clipped fan at the upper right suggest pressed paper feathers, without repeating parallel stripes.",
+			"layers": [
+				{
+					"d": "M-110 1090C-70 655 2 226 304-55L333-46C44 258-29 679-75 1101Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-90 1088C80 759 206 555 442 408C102 714 14 924-52 1107Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-92 1104C144 955 318 898 607 924C351 941 154 1027-57 1122Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-70 1100C-22 679 52 259 340-41 M-47 1108C23 925 112 716 449 413 M-53 1125C160 1033 354 947 609 931",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1080-72C890 51 798 93 650 96C844 146 1000 50 1096-41Z M1089-32C945 112 942 231 985 326C970 178 1060 72 1110-3Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M653 102C846 152 1003 56 1099-35 M992 329C977 181 1067 75 1117 0",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"primary": {
+			"value": "13 62% 33%",
+			"source": "apps/web/src/styles.css --basalt-primary"
+		},
+		"background": {
+			"value": "220 14% 94%",
+			"source": "@nocoo/basalt/styles tokens --basalt-background"
+		}
+	}
+}
