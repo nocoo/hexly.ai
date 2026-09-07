@@ -165,7 +165,10 @@ for (const id of projects
 		const icon = await sharp(
 			await (await request.get(`${family.root}/icon.png`)).body(),
 		).metadata();
-		expect([icon.width, icon.height]).toEqual([2048, 2048]);
+		expect([icon.width, icon.height]).toEqual([
+			family.foreground.width,
+			family.foreground.height,
+		]);
 		const foreground = await (
 			await request.get(family.foreground.original)
 		).body();
