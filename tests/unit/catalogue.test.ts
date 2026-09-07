@@ -24,7 +24,7 @@ describe("the imported project catalogue", () => {
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(43);
+		).toHaveLength(44);
 	});
 	it("finds projects by English, Chinese, emoji, repository name, and animal", () => {
 		for (const query of [

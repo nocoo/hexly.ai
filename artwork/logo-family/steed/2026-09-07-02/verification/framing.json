@@ -1,0 +1,60 @@
+{
+	"sourceSha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12",
+	"foregroundSha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+	"squareSha256": "2e9ca2540081fb4f35f5014fb1afe4be2c8a0877ad7715878f25f5bc58264999",
+	"roundedSha256": "44930bc4657e030cc302e6334ec5f0eef4c8ebab7a4c6b111392d78f44c541f7",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance from visible pixel centers to the actual rounded-square boundary. Native anatomical regions are transformed by the exact rounded resize and placement.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [103, 103],
+		"intentionalEdges": ["bottom", "lower-right"],
+		"note": "Uniform 90% bottom-right-anchored placement protects the complete ears, mane tips, muzzle, and external bird. The existing natural equine shoulder continues to both lower boundaries without a painted extension or an exposed internal cut."
+	},
+	"protectedFeatures": [
+		{
+			"name": "Complete ears and forelock",
+			"nativeRegionAt2048": [610, 35, 1530, 720],
+			"regionAt2048": [753, 236, 1582, 853],
+			"visiblePixels": 308660,
+			"minimumClearancePx": 253.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Eyes, blaze, and muzzle",
+			"nativeRegionAt2048": [720, 720, 1520, 1810],
+			"regionAt2048": [852, 852, 1573, 1834],
+			"visiblePixels": 659788,
+			"minimumClearancePx": 214.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Swept mane tips",
+			"nativeRegionAt2048": [340, 240, 1610, 1500],
+			"regionAt2048": [510, 420, 1654, 1555],
+			"visiblePixels": 975821,
+			"minimumClearancePx": 394.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Bird body, feet, and entire tail",
+			"nativeRegionAt2048": [1400, 1020, 1790, 1490],
+			"regionAt2048": [1464, 1122, 1816, 1546],
+			"visiblePixels": 70173,
+			"minimumClearancePx": 250.5,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": ["bottom", "lower-right"],
+		"clippedPixels": 21753,
+		"bottomRowVisiblePixels": 1516,
+		"rightColumnVisiblePixels": 0,
+		"note": "Only the documented native lower neck/shoulder continuation intersects the presentation outline. The complete lion mane and whole owl are fully inset."
+	},
+	"continuation": null
+}

@@ -1,0 +1,378 @@
+{
+	"createdAt": "2026-09-07T03:31:32.161Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "eec0319d43260f7915b8a8a56111818aab0deb3af0af737e7b6943be9a865dd4",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "rooster",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#9c8460",
+			"light": "#d9bd8d",
+			"shade": "#655037",
+			"motif": "#45311f",
+			"grainAmplitude": 1,
+			"grainSeed": 6090792,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Dawn terraces",
+				"description": "Dawn terraces: unequal low stepped bands and offset rising folds on a muted warm apricot field, distinct from radial fans.",
+				"layers": [
+					{
+						"d": "M-97 81H234V125H396V175H558V228H770V278H1121V323H735V276H518V224H354V175H191V129H-97Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-94 135H187V181H350V230H514V282H731V329H1120",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-97 616H99V666H222V722H351V766H523V812H749V862H1123V909H710V859H483V815H309V771H181V717H56V668H-97Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-96 671H53V722H177V777H304V821H478V865H704V915H1122",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M753-84H855V26H990V78H1110V123H952V75H809V-27H753Z",
+						"tone": "ribbon"
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/emoji/rooster.png",
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2791638,
+		"foregroundPixels": 1402666,
+		"softEdgePixels": 14659,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 271,
+			"top": 97,
+			"right": 1827,
+			"bottom": 1937
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 332,
+			"top": 172,
+			"right": 1763,
+			"bottom": 1864
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 172.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2561,
+			"sha256": "10c9d30f008b3dd7d14c2f8e8380772db87ca4628e2749872495a7ec7288e7a1"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 2160,
+			"sha256": "a6d79d3fd48ca84a00bcda6ece7a4da23ce6ed4fdbfc16fea9e3b582a0683502"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3130314,
+			"sha256": "495de13a62cd4c67d04a181bcbce5d80dfb7433659515694b3b60a5d26cf4ea5"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 88845,
+			"sha256": "3661f8551ee4ba58d2307fec5581632150a41a74415542a0adde73220d03f46a"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1007,
+			"sha256": "13b2419310fd7a14e2df50a25504ba4119595d7d2a7d993c3e39520e8f919f02"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2414557,
+			"sha256": "bd2aa6bde26f16658398268e84ac5c2dc73035171def001e4922cf8864e33829"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2791477,
+			"sha256": "052ef62bd007f5dc4ba25a04ee312d8b5e84cfe07b3c8de53a96ae58d2908673"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 122047,
+			"sha256": "75ad6c5e65a176cb8a2d4fdc5d88120ee30e36b93d8d11cc47da95b7cd09e9a2"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 189809,
+			"sha256": "9b63804c674d63b1ed471eb8ab92854f17c1e7b4765a56e12195c9960eb5a87a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 143106,
+			"sha256": "3cd46ead4bf5d5c45bbb0c9d5fd6de6148ea7c97bae116e1cdddc0c23997c605"
+		},
+		{
+			"path": "exports/rooster-transparent-2048.png",
+			"bytes": 2791477,
+			"sha256": "052ef62bd007f5dc4ba25a04ee312d8b5e84cfe07b3c8de53a96ae58d2908673"
+		},
+		{
+			"path": "exports/rooster-icon-2048.png",
+			"bytes": 4923471,
+			"sha256": "4b4fcec32a988567c50cd7b08bf194cf53b3f90fd4eeb2567edc962f9bc52794"
+		},
+		{
+			"path": "exports/rooster-rounded-2048.png",
+			"bytes": 4821146,
+			"sha256": "10812edf1da175e0e9b0899e83d5e349937570e5fd5a610ad7de3fc21150a6c3"
+		},
+		{
+			"path": "exports/rooster-transparent-1024.png",
+			"bytes": 754476,
+			"sha256": "e8f078f081f12179674975f3bd7ed126e6c4b5277c2257d29acd40749bed6ea7"
+		},
+		{
+			"path": "exports/rooster-icon-1024.png",
+			"bytes": 1269823,
+			"sha256": "13a4a4fbf80548d1fcaaec248bf3bf7a65ab689021f991e405ffebfeb6126a88"
+		},
+		{
+			"path": "exports/rooster-rounded-1024.png",
+			"bytes": 1258778,
+			"sha256": "1012c972072df46fc4d04a1315f4ca523c4bf40f64da04dfd831a06995f453c3"
+		},
+		{
+			"path": "exports/rooster-transparent-512.png",
+			"bytes": 220792,
+			"sha256": "b50e3b4e0608f925705cfbb6fbf8e9b1a67a874fd1702f492b287fbf36cada78"
+		},
+		{
+			"path": "exports/rooster-icon-512.png",
+			"bytes": 387567,
+			"sha256": "8578a58bec919e5d9fbe96a49feade0e43cd21e0c56be696f3081b9139bc70a5"
+		},
+		{
+			"path": "exports/rooster-rounded-512.png",
+			"bytes": 385514,
+			"sha256": "2878104771c2a9e09bf09c9f890d1838c1665039f9fb1c0d478e48cddc0186e6"
+		},
+		{
+			"path": "exports/rooster-transparent-256.png",
+			"bytes": 66094,
+			"sha256": "d26e1ec98435f040d20b73031bcba7c0e78287dd15728f97dd04c3596083da05"
+		},
+		{
+			"path": "exports/rooster-icon-256.png",
+			"bytes": 96703,
+			"sha256": "c7c59b573d44ff1e0e77f43c1247df590b7f328f5ae34c74bdf737eeb57f8b53"
+		},
+		{
+			"path": "exports/rooster-rounded-256.png",
+			"bytes": 98804,
+			"sha256": "358ba601ece649d30ffec85f7cc3c75645df23c5c7e8268d3da060d8b6cc2e27"
+		},
+		{
+			"path": "exports/rooster-transparent-128.png",
+			"bytes": 19282,
+			"sha256": "f15215cb7205f1b6a9320d70478f0b5ec8f7e38a82eccf32197d7d2ceab109de"
+		},
+		{
+			"path": "exports/rooster-icon-128.png",
+			"bytes": 30742,
+			"sha256": "06f26680643a5af67b05f2cc1aa0907bfab2f06eab86d0643d2546ce828d1ac6"
+		},
+		{
+			"path": "exports/rooster-rounded-128.png",
+			"bytes": 31723,
+			"sha256": "06fe08c0fd9feb907617b6ed301db466f649b58da71c8bc03ec5e0986595afb3"
+		},
+		{
+			"path": "exports/rooster-transparent-64.png",
+			"bytes": 5698,
+			"sha256": "acdf4481460736cc69cf0653720744cc8a1fd0828fd8cb224600768e8a7ea3f9"
+		},
+		{
+			"path": "exports/rooster-icon-64.png",
+			"bytes": 9772,
+			"sha256": "701268ad836a8395602fe1805fe1551ac5d09babf5dcdf849ba8a8bc08c97a18"
+		},
+		{
+			"path": "exports/rooster-rounded-64.png",
+			"bytes": 10183,
+			"sha256": "e302f96c8692042e135f8f91caa4a63455142dc2e807a80db07651530c325fbb"
+		},
+		{
+			"path": "exports/rooster-transparent-48.png",
+			"bytes": 3566,
+			"sha256": "cb955c31c14b4ef51d8d9f7814ee1a6819ed0fc44966df1efe795b33ea3e8529"
+		},
+		{
+			"path": "exports/rooster-icon-48.png",
+			"bytes": 6089,
+			"sha256": "256df18edfac689bdbb24d3ebc5ef5c4c6cef06174578520eabd8255ca7ce487"
+		},
+		{
+			"path": "exports/rooster-rounded-48.png",
+			"bytes": 6370,
+			"sha256": "d6cb22c2e8d9713693592f42a3813eaa23eb04d6e630fa24aa1b4f258935b780"
+		},
+		{
+			"path": "exports/rooster-transparent-32.png",
+			"bytes": 1863,
+			"sha256": "588c7dcfb4b1c4dfdc791b88d6368a53430f4bb9d4c3c8c4c0edf3cf48671e98"
+		},
+		{
+			"path": "exports/rooster-icon-32.png",
+			"bytes": 3171,
+			"sha256": "4eb0889201fda3a2697134b99695b97eee6c6c2d4d86687b362d0ba93da9c443"
+		},
+		{
+			"path": "exports/rooster-rounded-32.png",
+			"bytes": 3292,
+			"sha256": "23636d688e4505ed1bfc0e2ac11b80ea1e2911c9493e40d34b58e7d0055333aa"
+		},
+		{
+			"path": "exports/rooster-transparent-24.png",
+			"bytes": 1246,
+			"sha256": "2df02bf6312f8ebc245c97b4a2fb219ca5b9db78607d270ebe09cea601522c05"
+		},
+		{
+			"path": "exports/rooster-icon-24.png",
+			"bytes": 1949,
+			"sha256": "ae6b97592278448d4a90d22d5ce85a132399e29b689fdf37b02c08d1f911ba27"
+		},
+		{
+			"path": "exports/rooster-rounded-24.png",
+			"bytes": 2055,
+			"sha256": "41c658a919f0c71dcd09df2680d74634e60d8793a0453d4d372769d586df1427"
+		},
+		{
+			"path": "exports/rooster-transparent-16.png",
+			"bytes": 681,
+			"sha256": "5666bc56ba31b9d54de8e9090ca7cc4769ffdb16cdae90a42ca3ce52a389c80f"
+		},
+		{
+			"path": "exports/rooster-icon-16.png",
+			"bytes": 981,
+			"sha256": "7467a2b894e09d34e8f42611249d243073ef195df30c1d2a69eeca14a063ca11"
+		},
+		{
+			"path": "exports/rooster-rounded-16.png",
+			"bytes": 1023,
+			"sha256": "16f2bc2530a3e6b7829dda8a3063c0595f84513dc4786797d72893ce01169854"
+		},
+		{
+			"path": "exports/rooster-white-2048.png",
+			"bytes": 2602339,
+			"sha256": "ceea4857c7f31ab857cd12222045d266627da778c1e2c55239e4053b212befca"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 719731,
+			"sha256": "51352ea0aff3c0d20a4d9eef9bb2a0720df4887e9e0b9a1c649dbfc9da11f719"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 709130,
+			"sha256": "cb0243ac18eb8dfdc46d860f4226e9591d1388c1267d9e07574a1d79926e1369"
+		}
+	]
+}

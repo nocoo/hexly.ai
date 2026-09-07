@@ -1,0 +1,92 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels inside named anatomical regions; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Honey face",
+				"zh": "蜂蜜色面"
+			},
+			"role": "primary",
+			"color": "#cc8330",
+			"pixel": [1280, 708],
+			"rgb": [204, 131, 48],
+			"sourceSha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3"
+		},
+		{
+			"label": {
+				"en": "Umber mane",
+				"zh": "深棕鬃毛"
+			},
+			"role": "accent",
+			"color": "#754321",
+			"pixel": [466, 1388],
+			"rgb": [117, 67, 33],
+			"sourceSha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3"
+		},
+		{
+			"label": {
+				"en": "Cream muzzle",
+				"zh": "奶油鼻口"
+			},
+			"role": "accent",
+			"color": "#edcfa7",
+			"pixel": [1466, 1263],
+			"rgb": [237, 207, 167],
+			"sourceSha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3"
+		},
+		{
+			"label": {
+				"en": "Butterfly teal",
+				"zh": "蝶翼青色"
+			},
+			"role": "accent",
+			"color": "#19989b",
+			"pixel": [1778, 915],
+			"rgb": [25, 152, 155],
+			"sourceSha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3"
+		},
+		{
+			"label": {
+				"en": "Butterfly violet",
+				"zh": "蝶翼紫色"
+			},
+			"role": "accent",
+			"color": "#6f4584",
+			"pixel": [1770, 1105],
+			"rgb": [111, 69, 132],
+			"sourceSha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3"
+		}
+	],
+	"presentation": {
+		"base": "#9b865c",
+		"light": "#d1c49b",
+		"shade": "#625235",
+		"motif": "#43351e",
+		"pattern": "Amber fan relief",
+		"status": "Selected in the owner-delegated five-project redesign batch."
+	},
+	"website": {
+		"primary": "#ed511d",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "apps/web/src/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/globals.css --foreground"
+			},
+			"primary": {
+				"value": "15 85% 52%",
+				"source": "apps/web/src/globals.css --primary"
+			}
+		},
+		"note": "Existing product UI colors are independent of native artwork and the designed presentation."
+	}
+}

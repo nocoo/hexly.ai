@@ -1,0 +1,43 @@
+{
+	"project": "snaky",
+	"study": "2026-09-07-01",
+	"finishing": "01",
+	"masters": {
+		"logo.png": {
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "f1a0bab24253e83d85b261d1686e5bd05e4cd4178da8c1d91bc0cb57d338e060",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "c4ca254e32aa4e47fd09f31991ade322422491cd8117aac5f627b1a018e94615",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"readme": {
+		"path": "README.md",
+		"image": "assets/brand/icon-rounded.png",
+		"width": 128
+	},
+	"transparentPngs": [],
+	"icoEntries": [],
+	"macOS": {
+		"canvas": "assets/brand/app-icon-macos.png",
+		"canvasSize": [1024, 1024],
+		"tileSize": [824, 824],
+		"inset": [100, 100],
+		"popoverForegroundMatchesMaster": true,
+		"newTemplates": [
+			{
+				"path": "apps/macos/Sources/SnakyCore/Resources/menubar-icon.png",
+				"size": 44,
+				"sourceAlphaExact": true
+			}
+		]
+	}
+}

@@ -1,0 +1,285 @@
+{
+	"method": "Real source components server-rendered with explicit router/session fixtures and their actual compiled CSS. Headless Chrome receives only local source images. No source server, production connection, or user data is used.",
+	"projects": {
+		"surety": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "565f30210d70d1bacb7a2ecaea1951f5726942f8ae4e2e598e68626634c84f18",
+			"stylesSha256": "47403bf9514048ef721496c8cf13da9b4ba90236be9b2ddf96eb56c3bc680c3f",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/surety-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/surety-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/surety-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/surety-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"ellie": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "124c15239ea91cd256f4176477065cd85e0a4ed1134255c67ef32aaa221c6f05",
+			"stylesSha256": "98810f21ee9917bf4116b9ba58d49d587ed39bd3a2e33eceea0c0bb44eefb83b",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/ellie-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/ellie-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "login",
+					"theme": "light",
+					"width": 96,
+					"height": 96,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-192.png&w=384&q=75",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/ellie-login-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/ellie-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/ellie-collapsed-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "login",
+					"theme": "dark",
+					"width": 96,
+					"height": 96,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-192.png&w=384&q=75",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/ellie-login-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"giraffe": {
+			"sourceComponent": "src/client/components/layout/app-sidebar.tsx",
+			"sourceSha256": "6f7dce7aeacba2870d4e377b5b332ab28ab28486f1ea15c458917fe7836ac1da",
+			"stylesSha256": "957b0276a8740ee1a97ee3ce73de054a4ad16cb300bc3ad04a779fb25badd1a4",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/giraffe-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/giraffe-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/giraffe-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/giraffe-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"steed": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "39fb5fe7ac529b7660becdd88045a2e19608c2d874c2d81a5cd4ca6320dce7ae",
+			"stylesSha256": "924ce6e2cc0e2bffa32eafe6f53dce4d0f27d38804c47a5a18648eccc086f410",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/steed-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/steed-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/steed-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"parentRadius": "0px",
+					"parentOverflow": "visible",
+					"screenshot": "source-browser/steed-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		}
+	}
+}

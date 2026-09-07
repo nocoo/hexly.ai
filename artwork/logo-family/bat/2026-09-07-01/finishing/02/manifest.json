@@ -1,0 +1,385 @@
+{
+	"createdAt": "2026-09-07T03:33:34.547Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "1935dbb8272ecb7e1d601042fc687f8b88f1ea72cdb8e6bb20f13182be08b3ce",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "bat",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#9a7e90",
+			"light": "#ccb4bc",
+			"shade": "#614b64",
+			"motif": "#4a364d",
+			"grainAmplitude": 1,
+			"grainSeed": 6090791,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Dusk scallops",
+				"description": "Dusk scallops: interrupted shallow scalloped folds in a smoky mauve field; broad lobes and offset seams rather than sonar rings.",
+				"layers": [
+					{
+						"d": "M-88 138Q59 28 199 165Q326 44 475 184Q643 67 776 205Q952 91 1120 210L1120 262Q956 144 780 259Q642 120 478 238Q327 95 203 219Q57 81-88 193Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-87 198Q58 86 204 224Q329 102 479 243Q644 127 780 264Q952 153 1123 268",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-93 541Q62 428 180 535Q325 446 431 573L366 616Q279 518 180 589Q63 483-93 595Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M600 875Q711 743 836 858Q979 754 1133 891L1133 946Q980 810 837 913Q715 799 651 918Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M654 925Q715 808 838 922Q979 820 1134 954",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/bat.png",
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed.",
+			"backgroundSeedsAt2048": [
+				[
+					1145,
+					1716
+				]
+			],
+			"backgroundSeedReason": "An enclosed white negative-space pocket between animal/accessory contours, visible on the dark-background inspection. Preserve eye highlights and every colored opaque facet; seed only this inspected near-white component."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2929806,
+		"foregroundPixels": 1264498,
+		"softEdgePixels": 9598,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 468,
+			"top": 69,
+			"right": 1593,
+			"bottom": 1945
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 512,
+			"top": 145,
+			"right": 1548,
+			"bottom": 1872
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 145.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2935,
+			"sha256": "e8c5ae488c17e77b907892b1e5f2d208835954e04fb5d38a7f59a4a050ea202e"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 2250,
+			"sha256": "eae1153697d1198ec7d6940486850133e0cef818f80db679cd22991669a478b8"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2322440,
+			"sha256": "cbb917e8d9a1f71ea8df8fd83228087579dc55458e4b5805dd24d2d4e083b8c4"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 67317,
+			"sha256": "bf5c7681327caf5ffadf1c774a339d4656ac2011e6690953e39ab0bc2addea64"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1086,
+			"sha256": "6815643a5174de996de2ffe2128d94d12d4fd1dc7bd2f1280fde1537d945794b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2417114,
+			"sha256": "956664258064b1a41303914adf89b92ce225157ef845fb95697a9f8559c4d87a"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2092682,
+			"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 96080,
+			"sha256": "f1d7acb5dee781381d075a8d4196c5050b15ef3726b0fda0b362574abdc7a2a3"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 168564,
+			"sha256": "65a05ac08f7f6b27bb394e2f900f70be3561332171252feeed150327625eea09"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 126248,
+			"sha256": "df35997d983cf566102ee53cc651e7cfeb3f3a8916be7285f7724441b5c26725"
+		},
+		{
+			"path": "exports/bat-transparent-2048.png",
+			"bytes": 2092682,
+			"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d"
+		},
+		{
+			"path": "exports/bat-icon-2048.png",
+			"bytes": 4286453,
+			"sha256": "e6e06e63ea35672a4507d89350d20f88aa4c8ba8f27feed94bac0d186e75f4c0"
+		},
+		{
+			"path": "exports/bat-rounded-2048.png",
+			"bytes": 4185885,
+			"sha256": "d5604572323b6f297e12e9c51170cb495a800f272c405f3d4edd0e3575998ce4"
+		},
+		{
+			"path": "exports/bat-transparent-1024.png",
+			"bytes": 597316,
+			"sha256": "51de74376d83128f6a5b83a665a185d8c512db46370fc37911fd5468289a0555"
+		},
+		{
+			"path": "exports/bat-icon-1024.png",
+			"bytes": 1116746,
+			"sha256": "ba53238bf9f44cb9471495283eea680e9d38ba8120defad1d6e9c77fe35386da"
+		},
+		{
+			"path": "exports/bat-rounded-1024.png",
+			"bytes": 1106278,
+			"sha256": "9cefac5aa04761c3389b5f6810b12f5aad6f036cc3b81b800c968926b0837a07"
+		},
+		{
+			"path": "exports/bat-transparent-512.png",
+			"bytes": 183653,
+			"sha256": "996d83a575b2c5c591a48829f508b5d4bd6b1fb382b32a0e06c813a19190186d"
+		},
+		{
+			"path": "exports/bat-icon-512.png",
+			"bytes": 351733,
+			"sha256": "a4bf027ff57c68584c28266107e25098843437f27015fb723696755af7b2eb4e"
+		},
+		{
+			"path": "exports/bat-rounded-512.png",
+			"bytes": 350622,
+			"sha256": "2b39f6a08dbffc8ea1180b6d35887bb49e53bfd251fa5fc40581e89378828f6e"
+		},
+		{
+			"path": "exports/bat-transparent-256.png",
+			"bytes": 56434,
+			"sha256": "389370f85f7240c215024571d7ef07bdc13f65f9e88ef787466a6d83ae17c6f0"
+		},
+		{
+			"path": "exports/bat-icon-256.png",
+			"bytes": 87213,
+			"sha256": "66c9fa0120490bf8c48c85df3ff2dc0c99cae6ea8b1d2b1779f9e6755fd02419"
+		},
+		{
+			"path": "exports/bat-rounded-256.png",
+			"bytes": 89544,
+			"sha256": "3dcc8dd87dca427d30c0d1bd56b9ec19924006bdd4418afbcd593d66c3f652be"
+		},
+		{
+			"path": "exports/bat-transparent-128.png",
+			"bytes": 16586,
+			"sha256": "1d4b7fb1db95f08c602568ff78b4c26d5eaea6e2e1547aa085f55f610c95b6c4"
+		},
+		{
+			"path": "exports/bat-icon-128.png",
+			"bytes": 27511,
+			"sha256": "2132efa3980dadd6d158f2db871398278f7b6244c97d0a429098eea089341166"
+		},
+		{
+			"path": "exports/bat-rounded-128.png",
+			"bytes": 28756,
+			"sha256": "a2a3133adc5c425711b9c309e244b6ef3bbb3008b55fc14a41447b7987938eab"
+		},
+		{
+			"path": "exports/bat-transparent-64.png",
+			"bytes": 4939,
+			"sha256": "2a7c087c35f94ab54979ad0220befc202b8e60694c8498c39937357c7255f7f2"
+		},
+		{
+			"path": "exports/bat-icon-64.png",
+			"bytes": 8778,
+			"sha256": "a1930f31227e39091a951c68f3ce68c8780682b3be22edda24ae2aab17f3ab76"
+		},
+		{
+			"path": "exports/bat-rounded-64.png",
+			"bytes": 9295,
+			"sha256": "6415a53ae0687cc7badcf4da7c6113cdfb48db112fced2e14aab7e25c5b89ea8"
+		},
+		{
+			"path": "exports/bat-transparent-48.png",
+			"bytes": 3034,
+			"sha256": "9a5becf2ea4d7386483b2a45222390eefd3fdba527a57dea55e46d7e4f90da42"
+		},
+		{
+			"path": "exports/bat-icon-48.png",
+			"bytes": 5345,
+			"sha256": "8f940f2b4efd69c1055d4a472c434def67d4794e878e06af9c40505fabaedf76"
+		},
+		{
+			"path": "exports/bat-rounded-48.png",
+			"bytes": 5690,
+			"sha256": "78136ac332ed0cdefff2f16d33ea34e857e13e474592bf81bbc1bd471fb440d4"
+		},
+		{
+			"path": "exports/bat-transparent-32.png",
+			"bytes": 1658,
+			"sha256": "fab720d23de8587260a9ad78e0cb210bf89e6ff2ad316e2078358f317a8dfa21"
+		},
+		{
+			"path": "exports/bat-icon-32.png",
+			"bytes": 2852,
+			"sha256": "0d0ac8bb6fab8377a99364b24dd1703b2e014287bfaeb035a075745504219603"
+		},
+		{
+			"path": "exports/bat-rounded-32.png",
+			"bytes": 3012,
+			"sha256": "21887134ae29e4dab3c9f65c8d9984b107ff183f3f15eea9ff0f622ad64121f3"
+		},
+		{
+			"path": "exports/bat-transparent-24.png",
+			"bytes": 1081,
+			"sha256": "7ae9f873af9555210a8dde3e0ce785641c2b0e7f290256e975c26e70d29fe31b"
+		},
+		{
+			"path": "exports/bat-icon-24.png",
+			"bytes": 1742,
+			"sha256": "ed34f0f87967c177c8bd0eb4ef66b0b3d9c6dd1184a40ef773ae0188af265c65"
+		},
+		{
+			"path": "exports/bat-rounded-24.png",
+			"bytes": 1882,
+			"sha256": "7d89aaf38811f8fd21cf45e2393e4936928f87adc917f2cfffcf4e8d780db686"
+		},
+		{
+			"path": "exports/bat-transparent-16.png",
+			"bytes": 612,
+			"sha256": "d92be227fa4779e6e4876c05f521d75e379e79145c2ee4df69cf08c8f55b691c"
+		},
+		{
+			"path": "exports/bat-icon-16.png",
+			"bytes": 901,
+			"sha256": "a1bf3661669c53a3607727bd0f825389b32cee760d4adec813ee05f3644ac93d"
+		},
+		{
+			"path": "exports/bat-rounded-16.png",
+			"bytes": 943,
+			"sha256": "2fccc22c5a7a6068d75fa5377e6e0a023fbdb0a366671a98d85ccba02c068469"
+		},
+		{
+			"path": "exports/bat-white-2048.png",
+			"bytes": 1923236,
+			"sha256": "d0d8c7c21e66c7281ce091454743796a10d34b42b490a80e8934fb1c49e2be2c"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 567180,
+			"sha256": "bfcf49e8d92c5b44d6442716283f7023da6ad08521743944a021cccf1306c8b8"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 562108,
+			"sha256": "41a8648d3cbf5ac79890ad1fb025b15065c21d128ab97ac956be56a332edda06"
+		}
+	]
+}

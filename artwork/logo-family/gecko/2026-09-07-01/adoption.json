@@ -1,0 +1,33 @@
+{
+	"status": "adopted",
+	"study": "gecko/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/gecko",
+	"sourceCommit": "f259be7fe740ce260c9257e2870b57dec8d9e7b3",
+	"masters": {
+		"logo.png": {
+			"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "293ebb96796478b1fe70e16a8c1b948351970b92972d819d1423946f96174e85",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "0f0df46ddc11d2823b0767c8a97c549cf43732580a19202a05c2d197deadda38",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/assets/brand/README.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/gecko",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/gecko/2026-09-07-01/review.html",
+	"publication": {
+		"sourcePush": "See exact source revision and CI/CD results in the batch publication report.",
+		"report": "../../audits/2026-09-07-next-ten/source-publication.json"
+	}
+}

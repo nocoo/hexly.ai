@@ -1,0 +1,380 @@
+{
+	"createdAt": "2026-09-07T02:53:39.959Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "5ff814fe012b5e81221810eefcba4c7109f9df3fdbcd34e8051ad8e9e5f08a12",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "steed",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#53817c",
+			"light": "#a4bdb0",
+			"shade": "#305651",
+			"motif": "#1e403c",
+			"grainAmplitude": 1,
+			"grainSeed": 609083,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Canter pleats",
+				"description": "Three unequal wind-fold panels lean and taper through the viewfinder. Long open curves with offset creases create the rhythm of a canter without repeating the zebra stripe stencil or a feather motif.",
+				"layers": [
+					{
+						"d": "M-103 1130C22 916 87 652 279 445C401 313 433 157 395-103L575-103C560 149 481 332 356 480C189 679 114 933 89 1130Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M95 1131C129 922 202 681 367 487C495 336 574 146 583-103",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M259 1135C292 884 446 734 608 655C813 555 914 303 891-104L1093-104C1080 323 938 559 720 708C551 821 442 975 433 1135Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M433 1135C451 970 560 822 729 712C947 569 1087 331 1101-98",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M762 1116C790 993 913 936 1113 895V1016C974 1038 916 1070 899 1116Z",
+						"tone": "motif"
+					}
+				]
+			},
+			"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+		},
+		"shadows": [
+			{
+				"color": [
+					29,
+					31,
+					35
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					23,
+					26,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				103,
+				103
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "Uniform 90% bottom-right-anchored placement protects the complete ears, mane tips, muzzle, and external bird. The existing natural equine shoulder continues to both lower boundaries without a painted extension or an exposed internal cut."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/steed.png",
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2190774,
+		"foregroundPixels": 2003530,
+		"softEdgePixels": 13244,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 339,
+			"top": 54,
+			"right": 2023,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			103,
+			103
+		],
+		"bounds": {
+			"left": 510,
+			"top": 253,
+			"right": 2025,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -179.03385980363788,
+		"clippedPixels": 21753
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2762,
+			"sha256": "30c1b5937866cea07d260df57d569e7861b5af13d1ae7c1137f052a47e72baf6"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1707,
+			"sha256": "c65c05d3dde0d2a7047d8559ddf386d4448ad870c8abf34872ad0f5961e40efa"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3614107,
+			"sha256": "6e2a7bbea56497a35242883e61bf136316e2b0f0f1bc07816ecb9a12fbab57dc"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 78916,
+			"sha256": "74acd933dbbc8c1b9b4dee0785f53009a6a2294d640c70953093cb1aa682c9f0"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1086,
+			"sha256": "e6cb7a475f9cd308f54b4d933789c3243f4fef8990a46636145d0ade6b01821c"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2429013,
+			"sha256": "88974b3c6ecd30b5ef9f5ed5ef55baa5883e91575196da068f03079d6b15c415"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 103797,
+			"sha256": "6dc0c1b339b3cab3faabb58fe860254a1adcfcab1d26fdf1e3855dd936bebdb6"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 164114,
+			"sha256": "211d52d797a9e1e4754faaf283d07a402529ae09f5c743243f2fc08be251fa75"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 136087,
+			"sha256": "f681f2797099d718e1caed38f552e10f2efd4aff3ffced43f3a7e86970aefa90"
+		},
+		{
+			"path": "exports/steed-transparent-2048.png",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		{
+			"path": "exports/steed-icon-2048.png",
+			"bytes": 4999003,
+			"sha256": "2e9ca2540081fb4f35f5014fb1afe4be2c8a0877ad7715878f25f5bc58264999"
+		},
+		{
+			"path": "exports/steed-rounded-2048.png",
+			"bytes": 4877150,
+			"sha256": "44930bc4657e030cc302e6334ec5f0eef4c8ebab7a4c6b111392d78f44c541f7"
+		},
+		{
+			"path": "exports/steed-transparent-1024.png",
+			"bytes": 898092,
+			"sha256": "a45fc27435a091b6bf627a18638dc49fc62e05b484f59861bb5cc1ba41f9cdae"
+		},
+		{
+			"path": "exports/steed-icon-1024.png",
+			"bytes": 1321994,
+			"sha256": "557ec1f753640843c54d706aa851f857384939fefa7c2ffe4c785c659b3e0195"
+		},
+		{
+			"path": "exports/steed-rounded-1024.png",
+			"bytes": 1305890,
+			"sha256": "671551bec7882fc71d3f477051a3ae4503769140be2e20c57d70dfb359d17a8f"
+		},
+		{
+			"path": "exports/steed-transparent-512.png",
+			"bytes": 269319,
+			"sha256": "ad7cb8c7f6839edf1be3e31ca4fab08d0e0c5b16c8c3b423238f1f684c497f69"
+		},
+		{
+			"path": "exports/steed-icon-512.png",
+			"bytes": 405600,
+			"sha256": "307e9a360d20f89687ae92a8089ee708aac16d701bef23a983976a01c7a4ecc4"
+		},
+		{
+			"path": "exports/steed-rounded-512.png",
+			"bytes": 402734,
+			"sha256": "8bbbce85db83455d0b1d6f0be2dfae86e2aacfe39d23cb6b0cd0095aa6c7abd0"
+		},
+		{
+			"path": "exports/steed-transparent-256.png",
+			"bytes": 80139,
+			"sha256": "a0655b745affc7b977a0c3dc0423f48d442628cf583aa625c777969d98ebb992"
+		},
+		{
+			"path": "exports/steed-icon-256.png",
+			"bytes": 105723,
+			"sha256": "3c214433dc94278571e8c022f76c1f2c762f7a01008c71ac7d04ee09b7f50b73"
+		},
+		{
+			"path": "exports/steed-rounded-256.png",
+			"bytes": 107425,
+			"sha256": "913bb22c8e430f76fe27a4e4e82f6f337cbf0af789876da9f8277ffb860c433a"
+		},
+		{
+			"path": "exports/steed-transparent-128.png",
+			"bytes": 22704,
+			"sha256": "d7547dff9c85e0836654a1bdebe3afc3819839c228d00ddac4be1ba35880c1f6"
+		},
+		{
+			"path": "exports/steed-icon-128.png",
+			"bytes": 31767,
+			"sha256": "744cba856fe246d12400d66d6ca13d2b70faab7d2773da3303334b0ecb7d324c"
+		},
+		{
+			"path": "exports/steed-rounded-128.png",
+			"bytes": 32858,
+			"sha256": "97ea5bec3b1908d1a94538dd6639164ac7f2740d1f4450ab37a948ebb62e44a7"
+		},
+		{
+			"path": "exports/steed-transparent-64.png",
+			"bytes": 6514,
+			"sha256": "fb9c5faccd2b971cc796c139526f8a208f9f5da3218dfadbcd73bd7a9711540f"
+		},
+		{
+			"path": "exports/steed-icon-64.png",
+			"bytes": 9918,
+			"sha256": "f3109b8a57c933f064f970762b5087c06d15ccc7f4c03922bb7b533eab9ee50c"
+		},
+		{
+			"path": "exports/steed-rounded-64.png",
+			"bytes": 10439,
+			"sha256": "9b928ec6fa80c0b8ee7762a44f3290fee19acb2822e42b94548b3af0b4f0f61c"
+		},
+		{
+			"path": "exports/steed-transparent-48.png",
+			"bytes": 3979,
+			"sha256": "4f3e5c8c488e7e09fc1e3c954a2ff5e4266d4502a1fd32fbdd5e8a79bebb32b7"
+		},
+		{
+			"path": "exports/steed-icon-48.png",
+			"bytes": 6137,
+			"sha256": "55951530b7953b36969e3cb5e0a6fa5897d72627017074836318641b81c4699a"
+		},
+		{
+			"path": "exports/steed-rounded-48.png",
+			"bytes": 6467,
+			"sha256": "ca2bc6970bc31ee4d8b14c3ba1aefd3964a192975c6e66c746e6ecb4d172edb8"
+		},
+		{
+			"path": "exports/steed-transparent-32.png",
+			"bytes": 2037,
+			"sha256": "7ddff6563ff9b29372920192171a9c1cd1ae429dbf9ee10f5a011cb2c3010470"
+		},
+		{
+			"path": "exports/steed-icon-32.png",
+			"bytes": 3113,
+			"sha256": "5f8d18d4ddacbe8afdd521e9fb12c35703637522df9af5c13176cb1ce176c982"
+		},
+		{
+			"path": "exports/steed-rounded-32.png",
+			"bytes": 3276,
+			"sha256": "8e444974ba937108a984cfbcdfd224368813b8ecfdf5b72c4926644898b679fd"
+		},
+		{
+			"path": "exports/steed-transparent-24.png",
+			"bytes": 1293,
+			"sha256": "5caace5b1e50f0a474237a5e7ad302061c728ecab90370ea03a21f5007a43a03"
+		},
+		{
+			"path": "exports/steed-icon-24.png",
+			"bytes": 1920,
+			"sha256": "f237c6f8a1b63c4ac9847dcaea754418265c1b30e0be4e132cd2c5f639ece8ca"
+		},
+		{
+			"path": "exports/steed-rounded-24.png",
+			"bytes": 2024,
+			"sha256": "cf7599b094492707b88b4909059161a4596c8072df35cd39bd9a63896a5af385"
+		},
+		{
+			"path": "exports/steed-transparent-16.png",
+			"bytes": 730,
+			"sha256": "4be1466352484cc80e8a905a348424d411840b52319496845244c3b2a2a38864"
+		},
+		{
+			"path": "exports/steed-icon-16.png",
+			"bytes": 951,
+			"sha256": "dedde49e449add64d51013f38b1dc2d2375b2aeeef21333a67c8c5160f97de09"
+		},
+		{
+			"path": "exports/steed-rounded-16.png",
+			"bytes": 986,
+			"sha256": "b523b951c7a5a6ae99797f6c0114da56167b666987024096f5edbedfa92e2c83"
+		},
+		{
+			"path": "exports/steed-white-2048.png",
+			"bytes": 2980620,
+			"sha256": "63f3a19bc1c9580d85ff9c52a7b747a1a113ed6e170b7868bdbfe4f3dbe91d82"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 860469,
+			"sha256": "9343e4828cc42d638340a08964c230adb0643488a627938a3e8a9f552c2f38ca"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 853023,
+			"sha256": "82900470316a8f8231368b8721d802704c74c8008b7fa11592e2ee789b44bd66"
+		}
+	]
+}
