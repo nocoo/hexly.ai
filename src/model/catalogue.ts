@@ -43,9 +43,11 @@ export function filterProjects(
 			.toLowerCase();
 		return terms.every((term) => content.includes(term));
 	});
-	return sort === "az"
-		? result.toSorted((a, b) => a.title.localeCompare(b.title, "en"))
-		: result;
+	return result.toSorted(
+		(a, b) =>
+			Number(Boolean(b.family)) - Number(Boolean(a.family)) ||
+			(sort === "az" ? a.title.localeCompare(b.title, "en") : 0),
+	);
 }
 
 export function categoryCounts(projects: Project[]): Record<Category, number> {
