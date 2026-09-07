@@ -12,35 +12,46 @@ const tool = fileURLToPath(
 );
 const imageSha256 = "a".repeat(64);
 
-for (const [name, review] of [
-	["missing", undefined],
-	["pending", { status: "pending", imageSha256 }],
-	["rejected", { status: "rejected", imageSha256 }],
-	[
-		"approval for another image",
-		{ status: "approved", imageSha256: "b".repeat(64) },
-	],
-] as const) {
-	test(`refuses finishing with ${name} raw approval before processing artwork`, async () => {
-		const study = await mkdtemp(join(tmpdir(), "hexly-raw-review-"));
-		try {
-			await writeFile(
-				join(study, "response.json"),
-				JSON.stringify({
-					status: "succeeded",
-					output: { path: "raw/generated-white.png", sha256: imageSha256 },
-				}),
-			);
-			if (review)
-				await writeFile(join(study, "raw-review.json"), JSON.stringify(review));
-			await expect(
-				execute(process.execPath, [tool, study, "01"]),
-			).rejects.toThrow(
-				review ? "Owner approval of this exact raw image" : "raw-review.json",
-			);
-			expect(await readdir(study)).not.toContain("finishing");
-		} finally {
-			await rm(study, { recursive: true, force: true });
-		}
-	});
+for (const retained of [false, true]) {
+	const reviewName = retained ? "source-review.json" : "raw-review.json";
+	for (const [name, review] of [
+		["missing", undefined],
+		["pending", { status: "pending", imageSha256 }],
+		["rejected", { status: "rejected", imageSha256 }],
+		[
+			"approval for another image",
+			{ status: "approved", imageSha256: "b".repeat(64) },
+		],
+	] as const) {
+		test(`refuses ${retained ? "retained" : "generated"} finishing with ${name} approval before processing artwork`, async () => {
+			const study = await mkdtemp(join(tmpdir(), "hexly-logo-review-"));
+			try {
+				await writeFile(
+					join(study, "presentation.json"),
+					JSON.stringify(
+						retained ? { sourceMode: "retained-transparent" } : {},
+					),
+				);
+				const artwork = { path: "source.png", sha256: imageSha256 };
+				await writeFile(
+					join(study, retained ? "source.json" : "response.json"),
+					JSON.stringify(
+						retained
+							? { kind: "retained-original", generationCalls: 0, artwork }
+							: { status: "succeeded", output: artwork },
+					),
+				);
+				if (review)
+					await writeFile(join(study, reviewName), JSON.stringify(review));
+				await expect(
+					execute(process.execPath, [tool, study, "01"]),
+				).rejects.toThrow(
+					review ? "Owner approval of this exact raw image" : reviewName,
+				);
+				expect(await readdir(study)).not.toContain("finishing");
+			} finally {
+				await rm(study, { recursive: true, force: true });
+			}
+		});
+	}
 }
