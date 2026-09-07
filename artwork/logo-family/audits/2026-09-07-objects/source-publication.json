@@ -4,7 +4,17 @@
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-dogfight-push.log",
 		"pushed": true,
-		"remoteRevision": "b5ab075a963a78516aaa351d6ca0178c64994729"
+		"remoteRevision": "b5ab075a963a78516aaa351d6ca0178c64994729",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		},
+		"deployment": {
+			"status": "blocked",
+			"workflow": "https://github.com/nocoo/dogfight/actions/runs/34113124912",
+			"reason": "Existing CLOUDFLARE_API_TOKEN is invalid; Cloudflare returned 10000 and 9109. The owner has been asked to update the repository Actions secret.",
+			"hexlyIdentityPublished": true
+		}
 	},
 	"pew-game": {
 		"sourceCommit": "ee68b2dead3e5e698b2427d6a949e8e57c69d520",
@@ -13,7 +23,11 @@
 		"remoteRevision": "71b4b8165874e1986f993706c6830cc60a8107bf",
 		"verification": "Pushed the logo adoption and explicit Next browser-icon metadata; built desktop/mobile page metadata serves the exact transparent PNG.",
 		"localLog": "/tmp/hexly-objects-pew-game-push.log",
-		"publicationCommit": "71b4b8165874e1986f993706c6830cc60a8107bf"
+		"publicationCommit": "71b4b8165874e1986f993706c6830cc60a8107bf",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"signoff-now": {
 		"sourceCommit": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
@@ -21,7 +35,11 @@
 		"remoteRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
 		"pushed": true,
 		"pushExitCode": 0,
-		"verification": "Normal pre-push security gate passed; successful Git push using the configured local HTTPS proxy."
+		"verification": "Normal pre-push security gate passed; successful Git push using the configured local HTTPS proxy.",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"unseal": {
 		"sourceCommit": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a",
@@ -30,14 +48,22 @@
 		"pushed": true,
 		"remoteRevision": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
 		"publicationCommit": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
-		"verification": "Logo adoption, source metadata formatting and two build-dependency security patches pushed with normal gates; 64 tests and the OSV/Gitleaks gate passed."
+		"verification": "Logo adoption, source metadata formatting and two build-dependency security patches pushed with normal gates; 64 tests and the OSV/Gitleaks gate passed.",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"flow": {
 		"sourceCommit": "f4a9e9464d64184b793240adff182e08c04997e1",
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-flow-push.log",
 		"pushed": true,
-		"remoteRevision": "f4a9e9464d64184b793240adff182e08c04997e1"
+		"remoteRevision": "f4a9e9464d64184b793240adff182e08c04997e1",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"arena": {
 		"sourceCommit": "4a9efd6690942dd1384fd807ba83c73e7c29c202",
@@ -45,28 +71,44 @@
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-arena-push.log",
 		"pushed": true,
-		"remoteRevision": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93"
+		"remoteRevision": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"echo": {
 		"sourceCommit": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-echo-push.log",
 		"pushed": true,
-		"remoteRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39"
+		"remoteRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"deca": {
 		"sourceCommit": "1f41b41255b7184c307cb13693e94a6f45bbb9e1",
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-deca-push.log",
 		"pushed": true,
-		"remoteRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1"
+		"remoteRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"runner": {
 		"sourceCommit": "a5d786175358dee245773bd98af83eef4bbf5689",
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-runner-push.log",
 		"pushed": true,
-		"remoteRevision": "a5d786175358dee245773bd98af83eef4bbf5689"
+		"remoteRevision": "a5d786175358dee245773bd98af83eef4bbf5689",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"geekhub": {
 		"sourceCommit": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c",
@@ -74,14 +116,22 @@
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-geekhub-push.log",
 		"pushed": true,
-		"remoteRevision": "ca7042dc77e4c64e317793b97a1c080c6fa8e567"
+		"remoteRevision": "ca7042dc77e4c64e317793b97a1c080c6fa8e567",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"ipsafe": {
 		"sourceCommit": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-ipsafe-push.log",
 		"pushed": true,
-		"remoteRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629"
+		"remoteRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		}
 	},
 	"pokepocket": {
 		"sourceCommit": "019798f1c8fae7a6e7c0beb2368279c9980c7188",
@@ -89,6 +139,17 @@
 		"pushExitCode": 0,
 		"localLog": "/tmp/hexly-objects-pokepocket-push.log",
 		"pushed": true,
-		"remoteRevision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad"
+		"remoteRevision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+		"ci": {
+			"conclusion": "success",
+			"report": "source-ci.json"
+		},
+		"deployment": {
+			"status": "success",
+			"workflow": "https://github.com/nocoo/pokepocket/actions/runs/34117637201",
+			"attempt": 2,
+			"job": "Deploy Worker",
+			"verification": "All source Release quality gates and deployment passed. An additional anonymous request to the public favicon returned HTTP 403; production asset-byte verification was not claimed from that request. Built loopback consumers were already checked against exact committed PNG bytes."
+		}
 	}
 }
