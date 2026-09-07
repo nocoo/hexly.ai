@@ -1,0 +1,81 @@
+{
+	"project": "pokepocket",
+	"series": "character",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/pokepocket.svg",
+	"background": {
+		"base": "#af4b4a",
+		"light": "#c67668",
+		"shade": "#913e42",
+		"motif": "#682933",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907016,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Pocket orbits",
+			"description": "Offset interrupted ball orbits and short curved seams, impressed into a warm vermilion paper field.",
+			"layers": [
+				{
+					"d": "M-30 235a190 190 0 1 1 328.7 129.2",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M-100 235a260 260 0 1 1 449.8 176.8",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M-205 235a365 365 0 1 1 631.5 248.2",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M-310 235a470 470 0 1 1 813.1 319.6",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M720 820q115 -32 230 18M705 838q130 -34 250 19",
+					"tone": "highlight",
+					"strokeWidth": 3.2
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [35, 42, 42],
+			"opacity": 0.18,
+			"blurAt2048": 60,
+			"offsetAt2048": [22, 40]
+		},
+		{
+			"color": [35, 42, 42],
+			"opacity": 0.13,
+			"blurAt2048": 18,
+			"offsetAt2048": [4, 12]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": ["bottom"],
+		"note": "Placement will be calibrated to the inspected native silhouette before freezing a finishing pass."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [255, 255, 255],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 12
+	}
+}

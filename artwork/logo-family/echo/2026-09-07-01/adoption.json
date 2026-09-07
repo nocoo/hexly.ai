@@ -1,0 +1,44 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"method": "generated",
+	"study": "echo/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/echo",
+	"sourceCommit": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
+	"masters": {
+		"logo.png": {
+			"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+			"source": "artwork/logo-family/echo/2026-09-07-01/finishing/01/exports/echo-transparent-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "49ad152a8f3dc35694d374bd3f176128aa073c22f4ecf73b7aa402e1c2ce6884",
+			"source": "artwork/logo-family/echo/2026-09-07-01/finishing/01/exports/echo-icon-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "83cc2795133f81a9870390fa197db60f66f257e00ef49e54eadd2a64f913d8ff",
+			"source": "artwork/logo-family/echo/2026-09-07-01/finishing/01/exports/echo-rounded-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "b14eae13644102ae8f56efd600d5566806c37ea8813d0234877b7297fafb99b9",
+			"source": "artwork/logo-family/echo/2026-09-07-01/finishing/01/background.png",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/docs/08-logo-usage.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/echo",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/echo/2026-09-07-01/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-objects/source-publication.json",
+		"note": "Source installation, commit, push, and deployment are verified separately in the batch publication record."
+	}
+}

@@ -11,19 +11,19 @@
 - Chinese: 扫描被 macOS 隔离的应用，交互式地批量解除隔离标记。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `ea82ce6bf69affc57e79a08a09a3e5aa648070bb`
+- Repository revision inspected: `61a55cdb4380bc9e5dbaada3390ef29c7be6b84a`
 
 ## Current logo
 
 ![Unseal source identity](../../public/logos/display/unseal-160.webp)
 
-- Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
-- Subject: Existing profile emoji
-- [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/unseal.png)
-- Original dimensions: 1024 × 1024
-- Original size: 314450 bytes
-- SHA-256: `67157ad6394cd71c60b4b19632cfa0883c2159aeeb8ea6146f51330f42eb19f9`
+- Type: Original project artwork, copied without modification
+- Subject: An opened green enamel and brass padlock
+- [Source](https://github.com/nocoo/unseal/blob/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a/logo.png): `logo.png`
+- [Preserved asset](../../public/logos/originals/unseal-family-2026-09-07-01-01.png)
+- Original dimensions: 2048 × 2048
+- Original size: 2323865 bytes
+- SHA-256: `8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -31,16 +31,63 @@
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| primary | `#94935f` | Existing profile emoji glyph, dominant colored pixels |
-| background | `transparent` | Existing profile emoji glyph, transparent background |
-| accent | `#c4c08f` | Existing profile emoji glyph, sampled pixel |
-| accent | `#abcaed` | Existing profile emoji glyph, sampled pixel |
-| accent | `#51451f` | Existing profile emoji glyph, sampled pixel |
+| primary | `#4e5b4b` | Native unseal a793439f905e, sampled sRGB pixel (748, 1558); artwork/logo-family/unseal/2026-09-07-01/palette.json |
+| background | `#bdcebd` | Adopted Unseal presentation, 2026-09-07-01/01; background.base in archived settings.json |
+| accent | `#97793d` | Native unseal a793439f905e, sampled sRGB pixel (497, 558); artwork/logo-family/unseal/2026-09-07-01/palette.json |
+| accent | `#d85238` | Native unseal a793439f905e, sampled sRGB pixel (1573, 1264); artwork/logo-family/unseal/2026-09-07-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Future family notes
+## Refined identity
 
-Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
+![Unseal refined preview](../../public/logos/family/unseal/2026-09-07-01/01/icon-160.webp)
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. No new logo is generated in phase one.
+- Status: Adopted in the source project; updated 2026-09-07.
+- Study `2026-09-07-01`, finishing `01`
+- Refined subject: An opened green enamel and brass padlock
+- Site path: `/logos/unseal`; [local gallery](https://index.dev.hexly.ai/logos/unseal)
+- [Static review HTML](../../artwork/logo-family/unseal/2026-09-07-01/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/unseal/2026-09-07-01)
+- [Transparent foreground](../../public/logos/family/unseal/2026-09-07-01/01/transparent.png); SHA-256: `8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b`
+- [Square icon](../../public/logos/family/unseal/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/unseal/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/unseal/2026-09-07-01/01/white.png)
+- [Untouched generation](../../public/logos/family/unseal/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/unseal/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/unseal/2026-09-07-01/01/manifest.json)
+- [Previous original](../../public/logos/emoji/unseal.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
+- Previous SHA-256: `67157ad6394cd71c60b4b19632cfa0883c2159aeeb8ea6146f51330f42eb19f9`
+- Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
+- Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
+
+### Refined palette
+
+| Role | Value | Evidence |
+| --- | --- | --- |
+| background | `#bdcebd` | Adopted Unseal presentation, 2026-09-07-01/01; background.base in archived settings.json |
+| primary | `#4e5b4b` | Native unseal a793439f905e, sampled sRGB pixel (748, 1558); artwork/logo-family/unseal/2026-09-07-01/palette.json |
+| accent | `#97793d` | Native unseal a793439f905e, sampled sRGB pixel (497, 558); artwork/logo-family/unseal/2026-09-07-01/palette.json |
+| accent | `#d85238` | Native unseal a793439f905e, sampled sRGB pixel (1573, 1264); artwork/logo-family/unseal/2026-09-07-01/palette.json |
+
+### The latch lifts
+
+A complete brass shackle lifts and turns above a substantial green padlock. The torn red paper seal stays attached as one restrained accent.
+
+完整黄铜锁梁从厚实绿色锁身上抬起并转开。撕开的红色纸封仍贴着侧面，形成克制的单一兴趣点。
+
+### Worn brass and sage enamel
+
+Soft metal wear, curved enamel and the physical keyhole make the object tangible. The open shackle is unmistakable even without a separate key or symbol.
+
+柔和金属磨损、弧面珐琅和真实锁眼带来触感；无需钥匙或附加符号，也能清楚识别解锁状态。
+
+### Released seams
+
+Separated perforated seams and folded-tab outlines embossed in calm sage paper. The field, grain and contact shadow are independent of transparent app marks.
+
+鼠尾草色纸面的分离虚线与折页轮廓，呼应解除封印。 底色、颗粒与接触阴影均独立于透明应用标记。
+
+Small-size observation: At 128/64 px, the open shackle, green body and red seal remain clear. At 32/24/16 px, the compact silhouette and dominant colors carry recognition; fine material detail, printed marks and background lines naturally merge.
+
+## Further refinements
+
+This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply.
+
+Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.

@@ -1,0 +1,384 @@
+{
+	"createdAt": "2026-09-07T09:49:14.701Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "0ef348789c2117bde4b8c2b7d6d9f902d4ea740f712fbe46ead51c7a3feb5162",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "dogfight",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/dogfight.svg",
+		"background": {
+			"base": "#d0dfe9",
+			"light": "#edf3f5",
+			"shade": "#b7cbdc",
+			"motif": "#7693ab",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907017,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Banking vectors",
+				"description": "Three swept flight lanes and short altitude ticks crossing a pale blue atmospheric field.",
+				"layers": [
+					{
+						"d": "M-100 820Q350 750 1100 50",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M-100 905Q350 835 1100 135",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M-100 1010Q350 940 1100 240",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M85 135l42 -24M100 159l28 -16M116 183l42 -24M886 804l42 -24M902 828l28 -16M918 852l42 -24",
+						"tone": "motif",
+						"strokeWidth": 2.1
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					118,
+					147,
+					171
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					696
+				]
+			},
+			{
+				"color": [
+					118,
+					147,
+					171
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					691
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.867725,
+			"offsetAt2048": [
+				-27,
+				-130
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 12,
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2883998,
+		"foregroundPixels": 1310306,
+		"softEdgePixels": 11870,
+		"removedComponents": 4,
+		"removedComponentPixels": 4,
+		"bounds": {
+			"left": 110,
+			"top": 253,
+			"right": 1999,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.867725,
+		"offsetAt2048": [
+			-27,
+			-130
+		],
+		"bounds": {
+			"left": 203,
+			"top": 224,
+			"right": 1843,
+			"bottom": 1781
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 203.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2201,
+			"sha256": "54ef58034310ddcbe2f31fb48db2e63f2d210b5c11e7a7d71cc6850823ea70ed"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 846,
+			"sha256": "2cc308e62b52c518c15f7e2941fc653236eb8ae6348faf07b50f741947cf8ca2"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3547826,
+			"sha256": "1998870fed0b15dcd46b48d1a4ff868f34129f7fae95f3fbc83f958efbc5974d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 68090,
+			"sha256": "d8c8a4c4294df9275f47302cde364bdfc31a3e1a108517d339e21f424fb40da6"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 871,
+			"sha256": "1be8f8f8c8d0d5c9c5a7570aaef710619cb8feb3cbbcaa850343dfbc7fad2836"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1783659,
+			"sha256": "36ae7809581d256eb7e35e44e7a475a75405a5e7d75b83c7bf1abf2b4afe693a"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2743797,
+			"sha256": "a89d85d14471d1c31d1d7dfe47bd8772fed03bf3110a2e0399d5ea19f75c10b3"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 86421,
+			"sha256": "75329b3c5ebd5da06ef50754bca4553e4c7f88d2b907e54a07ce9ad4d309a231"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 174462,
+			"sha256": "23ad5c2ce45577b74a3201828f9ff503a16bf91d9eb3aca7615cbbdc89b3a662"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 79842,
+			"sha256": "ee84cf56fa24267c941b564a919f7787f69405a8106fea1fbeb57e4825dc5725"
+		},
+		{
+			"path": "exports/dogfight-transparent-2048.png",
+			"bytes": 2743797,
+			"sha256": "a89d85d14471d1c31d1d7dfe47bd8772fed03bf3110a2e0399d5ea19f75c10b3"
+		},
+		{
+			"path": "exports/dogfight-icon-2048.png",
+			"bytes": 4601363,
+			"sha256": "772c9ab2694584a6d2a70e38625938a4b1c94c92294b106ff4bd054c5c487aff"
+		},
+		{
+			"path": "exports/dogfight-rounded-2048.png",
+			"bytes": 4534037,
+			"sha256": "69b7e52f31d69dea0ef5719235f51510f400bb9e2c1b4a7154e04f05c0306f4e"
+		},
+		{
+			"path": "exports/dogfight-transparent-1024.png",
+			"bytes": 676405,
+			"sha256": "8b6065caf12208d908b81cb0a613b1a3d084caed81590d34740c8cd779aa0595"
+		},
+		{
+			"path": "exports/dogfight-icon-1024.png",
+			"bytes": 1075692,
+			"sha256": "7114b2d219c8162bcc00e99720a705881b094243bfef0f370d0a97d6d24dfc28"
+		},
+		{
+			"path": "exports/dogfight-rounded-1024.png",
+			"bytes": 1078265,
+			"sha256": "863a894b74a146d8d72b25b5a0a373da8b1f2b814a3d1dd43564c7e0ef871760"
+		},
+		{
+			"path": "exports/dogfight-transparent-512.png",
+			"bytes": 175928,
+			"sha256": "675fa4fcaba37da1cc6cec2fe16f59654727bdd694fbd3d6a8c08704ebf0fb01"
+		},
+		{
+			"path": "exports/dogfight-icon-512.png",
+			"bytes": 308288,
+			"sha256": "e7e3984ed2a0019bd9a5cf389e8ad07e6fec5d3f366a724664bd7d2dbde3fb58"
+		},
+		{
+			"path": "exports/dogfight-rounded-512.png",
+			"bytes": 310302,
+			"sha256": "ad8e59c638ce9661d1508c024280a5d849757740ad8f9046301cc95ec15d0839"
+		},
+		{
+			"path": "exports/dogfight-transparent-256.png",
+			"bytes": 49142,
+			"sha256": "998b6e50819b88a2163dccf7106fd6d239a9a0b8f89410604d62213b4579620c"
+		},
+		{
+			"path": "exports/dogfight-icon-256.png",
+			"bytes": 72394,
+			"sha256": "84544e36bb261d9f321e227f24ceab4dea8eeb31e86566eac95d9751911df287"
+		},
+		{
+			"path": "exports/dogfight-rounded-256.png",
+			"bytes": 75992,
+			"sha256": "b2b149b6d9c74635b4d61e0d407a0847bc1d15738d3821d5840674b6ec76a98b"
+		},
+		{
+			"path": "exports/dogfight-transparent-128.png",
+			"bytes": 14210,
+			"sha256": "b44129dd9106c54e750585c83dc2ac96a1b32891fda827c9613980b6365e1a90"
+		},
+		{
+			"path": "exports/dogfight-icon-128.png",
+			"bytes": 22644,
+			"sha256": "8f0d9edbbb6b41259a4077f1418792cca9033139a1ad82bf6908769c5c18a85d"
+		},
+		{
+			"path": "exports/dogfight-rounded-128.png",
+			"bytes": 24255,
+			"sha256": "99edbd7e3f8e55ceb65e5457133a5ea95d81e4a8cf65a622850cc3b48c014b71"
+		},
+		{
+			"path": "exports/dogfight-transparent-64.png",
+			"bytes": 4338,
+			"sha256": "1931371b9e6381190e5ec805d07f3607af2d4185545a894aa01d8b94950b7491"
+		},
+		{
+			"path": "exports/dogfight-icon-64.png",
+			"bytes": 7530,
+			"sha256": "87344f091cadbca5fa636d336c634db45395a7776b488ae449c14d7e6afff84c"
+		},
+		{
+			"path": "exports/dogfight-rounded-64.png",
+			"bytes": 8209,
+			"sha256": "3157414f815b1a69e2692f242a515a2c52439bff2a1a2de37955f130c59dc294"
+		},
+		{
+			"path": "exports/dogfight-transparent-48.png",
+			"bytes": 2772,
+			"sha256": "2bbeef752b674715be7417e09bc094e807c5dd0e52804826215ef4a6f5688ddd"
+		},
+		{
+			"path": "exports/dogfight-icon-48.png",
+			"bytes": 4727,
+			"sha256": "eb41a4eeac3044ccb01480313a3e4803188c64b01d511206f5b9a80b328be0c5"
+		},
+		{
+			"path": "exports/dogfight-rounded-48.png",
+			"bytes": 5234,
+			"sha256": "cc7d48a25ba52e7d5b612e9dfb48cf30f64b77d0b5a6a9b75caf083c692dca1f"
+		},
+		{
+			"path": "exports/dogfight-transparent-32.png",
+			"bytes": 1544,
+			"sha256": "c16ccb0289a445c9800bbe5b03a980e5e54ec228c40ebca83f3293f4c5c26ed5"
+		},
+		{
+			"path": "exports/dogfight-icon-32.png",
+			"bytes": 2549,
+			"sha256": "80c322af4e0289d89c6c6f1b3835d8cccd9f748837bd2ad60b65f019689ceae2"
+		},
+		{
+			"path": "exports/dogfight-rounded-32.png",
+			"bytes": 2792,
+			"sha256": "85f45878ecbfce17d03f2c28884724741e2ee740b74f0be9be9bbb23fa850b43"
+		},
+		{
+			"path": "exports/dogfight-transparent-24.png",
+			"bytes": 1024,
+			"sha256": "8bbfbb5f4a01255a69db603f99ad49e8a862bc341af26410f03a741b7b737788"
+		},
+		{
+			"path": "exports/dogfight-icon-24.png",
+			"bytes": 1617,
+			"sha256": "124f824098dfc819226f30fa715ab3b964327aa3ea3864d82a1df34e52d7587f"
+		},
+		{
+			"path": "exports/dogfight-rounded-24.png",
+			"bytes": 1790,
+			"sha256": "448e1f3d3fa736864d09fea33b25cbad50debecd197c3b7ab7b2a7741e06e7b0"
+		},
+		{
+			"path": "exports/dogfight-transparent-16.png",
+			"bytes": 598,
+			"sha256": "177c2805e286915eb604ecbd79090074bd8870da309643fad6f22e056f150dc0"
+		},
+		{
+			"path": "exports/dogfight-icon-16.png",
+			"bytes": 883,
+			"sha256": "211609b93ad95834323d36d7697f4fe3e34b8776baa06ff069cd34f29af74dea"
+		},
+		{
+			"path": "exports/dogfight-rounded-16.png",
+			"bytes": 944,
+			"sha256": "e06378abb8eededd0f44ffa4240439845c53168100849d3a56d08fc03a2c9788"
+		},
+		{
+			"path": "exports/dogfight-white-2048.png",
+			"bytes": 2566532,
+			"sha256": "8b1b85c23335eb0a8c3ed3250298e6c6a84239df402e6d3ab745f8737cf616a9"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 647631,
+			"sha256": "2b48cec25974d45723e4bcb41cb5d0c0223487e26eec87f4c68334bc5532dc35"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 649628,
+			"sha256": "390937e80b7624d4d358b72a5450418304d83a2b288852bc9baf77612ea5ff11"
+		}
+	]
+}

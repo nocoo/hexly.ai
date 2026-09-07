@@ -1,0 +1,151 @@
+{
+	"repo": "/Users/nocoo/workspace/personal/geekhub",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "31e57d1cc23e7af4452163410ca297ade45dd738d645ee4655d167a62840bc33",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "7eea89b45051e06832eed3da3849d9afdbcf84f4aaf506269067f209871707dd",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/background.png",
+			"sha256": "19c57194526963abddb8108abb488e9193a14cf7b55db72777a9887f266006db",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		}
+	],
+	"derivatives": [
+		{
+			"path": "public/logo-24.png",
+			"dimensions": [24, 24],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "591824c7e6e463ca8f8d1debd121d25706d9f905c43b015b0a65d1f47b17871d"
+		},
+		{
+			"path": "public/logo-32.png",
+			"dimensions": [32, 32],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "a22c53b9503a38a8b5665b1f2d6663aba50f776a825a99666676fd6f18ef7c0c"
+		},
+		{
+			"path": "public/logo-48.png",
+			"dimensions": [48, 48],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "b6e9b69ae09390a5dee03cb0ebc0313202cfc8a6736631ba0c238ce0e73b3c58"
+		},
+		{
+			"path": "public/logo-64.png",
+			"dimensions": [64, 64],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "983fb6d546252e4406aafb5ad0d2b2859a4288e28b33560d71ce76795c2db90c"
+		},
+		{
+			"path": "public/logo-128.png",
+			"dimensions": [128, 128],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "16cfee3459acd3436837a5b5067a5aab3a4550e49613b5aa0a7bca74b7d7efac"
+		},
+		{
+			"path": "public/logo-192.png",
+			"dimensions": [192, 192],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "2306c5f6b8d8602d9c75e0a551e0245e8273ee4f3169cf0a6f8372e215aca88d"
+		},
+		{
+			"path": "public/logo-256.png",
+			"dimensions": [256, 256],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "1add6f26e72e8ce52861da28a67ad62f4f6f88d8f47355893917b8409251a935"
+		},
+		{
+			"path": "public/logo-512.png",
+			"dimensions": [512, 512],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "4ab483cc86006f2c4f1246649b69d89c3113470e324faac2b3d4532dbee9c8b2"
+		},
+		{
+			"path": "public/favicon.png",
+			"dimensions": [32, 32],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "a22c53b9503a38a8b5665b1f2d6663aba50f776a825a99666676fd6f18ef7c0c"
+		},
+		{
+			"path": "public/apple-touch-icon.png",
+			"dimensions": [180, 180],
+			"role": "platform-tile",
+			"alphaExtrema": [255, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "71a1161065ae85bf87c35c8a5778d1eede229cd68101a019bbc4bf2923f6b6af"
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [16, 16],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [24, 24],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [32, 32],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [48, 48],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [64, 64],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		}
+	],
+	"readmeUsesRoundedPresentation": true,
+	"consumers": [
+		"src/components/Header.tsx: transparent 32 px logo",
+		"src/app/login/page.tsx: transparent 64 px logo",
+		"src/app/layout.tsx: favicon and touch icon"
+	],
+	"usageGuide": "docs/09-logo-usage.md",
+	"publication": "Source installation, commit, push and deployment are separate facts; see adoption.json and the batch publication report."
+}

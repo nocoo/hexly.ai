@@ -55,7 +55,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - [Previous original](../../public/logos/originals/r2shot.png), copied from [its immutable source](https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png)
 - Previous SHA-256: `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`
 - Original artwork retained byte-for-byte at native 920 × 920. Zero image-generation calls; only background, grain, and shadow layers were composed.
-- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 920 px are explicitly recorded upscales; the native transparent master is unchanged.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 920 px are explicitly recorded upscales; the native master retains its recorded resolution.
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
 ### Refined palette

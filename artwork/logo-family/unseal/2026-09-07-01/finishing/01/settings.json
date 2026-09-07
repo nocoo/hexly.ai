@@ -1,0 +1,140 @@
+{
+	"project": "unseal",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/unseal.png",
+	"background": {
+		"base": "#bdcebd",
+		"light": "#dbe5cf",
+		"shade": "#a4b8a9",
+		"motif": "#6c8976",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907023,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Released seams",
+			"description": "Separated perforated seams and folded-tab outlines embossed in calm sage paper.",
+			"layers": [
+				{
+					"d": "M104 30v27M132 42v27M896 30v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 101v27M132 113v27M896 101v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 172v27M132 184v27M896 172v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 243v27M132 255v27M896 243v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 314v27M132 326v27M896 314v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 385v27M132 397v27M896 385v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 456v27M132 468v27M896 456v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 527v27M132 539v27M896 527v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 598v27M132 610v27M896 598v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 669v27M132 681v27M896 669v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 740v27M132 752v27M896 740v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 811v27M132 823v27M896 811v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 882v27M132 894v27M896 882v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 953v27M132 965v27M896 953v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M104 1024v27M132 1036v27M896 1024v27",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M0 806h212l72 -72M805 0v154l89 64M32 823h170l56 -56",
+					"tone": "motif",
+					"strokeWidth": 2.2
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [108, 137, 118],
+			"opacity": 0.25,
+			"blurAt2048": 66,
+			"projectionScale": [0.94, 0.3],
+			"offsetAt2048": [20, 696]
+		},
+		{
+			"color": [108, 137, 118],
+			"opacity": 0.17,
+			"blurAt2048": 28,
+			"projectionScale": [0.78, 0.17],
+			"offsetAt2048": [6, 691]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.860098,
+		"offsetAt2048": [-22, -1],
+		"intentionalEdges": [],
+		"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+		"minimumClearanceAt2048": 128
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+	}
+}

@@ -1,0 +1,150 @@
+{
+	"repo": "/Users/nocoo/workspace/personal/signoff.now",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "b13e360b3e5ce4314d357d7fbcd287e149eba119e5d59b7722ccfae058694930",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "90ca8a6666438b4facd4c31e9e3b8c242884ed9dd1b00e698615a2ff0e4fb518",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/background.png",
+			"sha256": "260cf65b2a27cf45d1a1f8d498d70a643e8f91ee3fdef0c1db7da559736ea189",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		}
+	],
+	"derivatives": [
+		{
+			"path": "apps/web/public/logo-24.png",
+			"dimensions": [24, 24],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "bfe1828452edb30f8993a5055797b461cd2b588f7d3c2a79897fdd64dfdce000"
+		},
+		{
+			"path": "apps/web/public/logo-32.png",
+			"dimensions": [32, 32],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "6e1048dbff206c3b8e29718750547912e8d45acb2b7f9fab8ec49b2a8f8f5e23"
+		},
+		{
+			"path": "apps/web/public/logo-48.png",
+			"dimensions": [48, 48],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "3418410175265d161224c411537e90d428614659e25188ffd0c7b98e50a45113"
+		},
+		{
+			"path": "apps/web/public/logo-64.png",
+			"dimensions": [64, 64],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "c82bc86752745762499e97cf3605077f69728ef0e905ac00739e629eb4cd51ee"
+		},
+		{
+			"path": "apps/web/public/logo-128.png",
+			"dimensions": [128, 128],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "514d490869bb2cdbfe685ec11389bb639f528445f444a89495d0430a809967cc"
+		},
+		{
+			"path": "apps/web/public/logo-192.png",
+			"dimensions": [192, 192],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "76ee44a0b36e43f6691913caa1eda4d9bd6094b4c11dba0faf80fca2fe622b65"
+		},
+		{
+			"path": "apps/web/public/logo-256.png",
+			"dimensions": [256, 256],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "09a6e99a38a132edc705577962eb2af1c224bc5a1646b40221e65b736bc83301"
+		},
+		{
+			"path": "apps/web/public/logo-512.png",
+			"dimensions": [512, 512],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "4b131b6d600b9256ac6923bed2b2e4c8a3edc698ea53a5a617bbfc46f7220e0e"
+		},
+		{
+			"path": "apps/web/public/favicon.png",
+			"dimensions": [32, 32],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "6e1048dbff206c3b8e29718750547912e8d45acb2b7f9fab8ec49b2a8f8f5e23"
+		},
+		{
+			"path": "apps/web/public/apple-touch-icon.png",
+			"dimensions": [180, 180],
+			"role": "platform-tile",
+			"alphaExtrema": [255, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "7fc3d2eefbb8057a2413678f761359f29e4632a4f5d1b3dc5ae6b769afee3e48"
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "apps/web/public/favicon.ico",
+			"dimensions": [16, 16],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"dimensions": [24, 24],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"dimensions": [32, 32],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"dimensions": [48, 48],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "apps/web/public/favicon.ico",
+			"dimensions": [64, 64],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		}
+	],
+	"readmeUsesRoundedPresentation": true,
+	"consumers": [
+		"apps/web/index.html",
+		"apps/web/src/components/layout/sidebar.tsx: expanded and collapsed marks"
+	],
+	"usageGuide": "docs/09-logo-usage.md",
+	"publication": "Source installation, commit, push and deployment are separate facts; see adoption.json and the batch publication report."
+}

@@ -1,0 +1,684 @@
+{
+	"createdAt": "2026-09-07T10:12:04.635Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "d52f1b25e37de86f00be2902408597b743867e4435d4b505aa1c4bb11ef1fa5c",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "runner",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/runner.png",
+		"background": {
+			"base": "#c2ceb4",
+			"light": "#e0e8cf",
+			"shade": "#a8ba9b",
+			"motif": "#778d61",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907040,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Scheduled minutes",
+				"description": "An interrupted outer minute track, a shorter offset timing arc and grouped launch ticks on pistachio paper.",
+				"layers": [
+					{
+						"d": "M121 475a414 414 0 1 1 724.5 273.24",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M87 475a448 448 0 1 1 784.0 295.68",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M1005.00 475.00l14.00 0.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M1002.43 524.13l5.97 0.63",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M994.73 572.72l5.87 1.25",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M982.00 620.24l5.71 1.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M964.37 666.17l5.48 2.44",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M942.03 710.00l12.12 7.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M915.24 751.26l4.85 3.53",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M884.28 789.49l4.46 4.01",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M849.49 824.28l4.01 4.46",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M811.26 855.24l3.53 4.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M770.00 882.03l7.00 12.12",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M726.17 904.37l2.44 5.48",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M680.24 922.00l1.85 5.71",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M632.72 934.73l1.25 5.87",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M584.13 942.43l0.63 5.97",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M535.00 945.00l0.00 14.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M485.87 942.43l-0.63 5.97",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M437.28 934.73l-1.25 5.87",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M389.76 922.00l-1.85 5.71",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M343.83 904.37l-2.44 5.48",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M300.00 882.03l-7.00 12.12",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M258.74 855.24l-3.53 4.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M220.51 824.28l-4.01 4.46",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M185.72 789.49l-4.46 4.01",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M154.76 751.26l-4.85 3.53",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M127.97 710.00l-12.12 7.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M105.63 666.17l-5.48 2.44",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M88.00 620.24l-5.71 1.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M75.27 572.72l-5.87 1.25",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M67.57 524.13l-5.97 0.63",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M65.00 475.00l-14.00 0.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M67.57 425.87l-5.97 -0.63",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M75.27 377.28l-5.87 -1.25",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M88.00 329.76l-5.71 -1.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M105.63 283.83l-5.48 -2.44",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M127.97 240.00l-12.12 -7.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M154.76 198.74l-4.85 -3.53",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M185.72 160.51l-4.46 -4.01",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M220.51 125.72l-4.01 -4.46",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M258.74 94.76l-3.53 -4.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M300.00 67.97l-7.00 -12.12",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M343.83 45.63l-2.44 -5.48",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M389.76 28.00l-1.85 -5.71",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M437.28 15.27l-1.25 -5.87",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M485.87 7.57l-0.63 -5.97",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M535.00 5.00l-0.00 -14.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M584.13 7.57l0.63 -5.97",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M632.72 15.27l1.25 -5.87",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M680.24 28.00l1.85 -5.71",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M726.17 45.63l2.44 -5.48",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M770.00 67.97l7.00 -12.12",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M811.26 94.76l3.53 -4.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M849.49 125.72l4.01 -4.46",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M884.28 160.51l4.46 -4.01",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M915.24 198.74l4.85 -3.53",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M942.03 240.00l12.12 -7.00",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M964.37 283.83l5.48 -2.44",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M982.00 329.76l5.71 -1.85",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M994.73 377.28l5.87 -1.25",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M1002.43 425.87l5.97 -0.63",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					119,
+					141,
+					97
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					696
+				]
+			},
+			{
+				"color": [
+					119,
+					141,
+					97
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					691
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.851293,
+			"offsetAt2048": [
+				-2,
+				7
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"backgroundSeedsAt2048": [
+				[
+					1703,
+					316
+				],
+				[
+					1384,
+					275
+				]
+			],
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1932440,
+		"foregroundPixels": 2261864,
+		"softEdgePixels": 13333,
+		"removedComponents": 9,
+		"removedComponentPixels": 149,
+		"bounds": {
+			"left": 153,
+			"top": 64,
+			"right": 1899,
+			"bottom": 1919
+		}
+	},
+	"placement": {
+		"scale": 0.851293,
+		"offsetAt2048": [
+			-2,
+			7
+		],
+		"bounds": {
+			"left": 280,
+			"top": 213,
+			"right": 1766,
+			"bottom": 1792
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 213.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 7895,
+			"sha256": "9b41f0cd0121a1025004c59341099cb4560add37906bf0d03ed01fe6edede11a"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 764,
+			"sha256": "0cd2436266b43af2f9e1539b3ce8cefc49bd4581dc66daa65d3a973f479bfd2b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5661055,
+			"sha256": "fabded615234d06ab9f3746b61ef93bd06159323ceed1448477b96a7acd7cccb"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 75273,
+			"sha256": "9e20f7e848ef24d3b67575e0c3448dc8ab7ab1e79b976b058720d757b037001f"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 6674,
+			"sha256": "47c5c3a111873b15e1707cebbb4d3cb1642df7a0ee8f06470fa26e032a928cc7"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1878184,
+			"sha256": "5215526508d32253e5ff269a517df08ddeb0745548b024259d0bf438ae492de9"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4230760,
+			"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 93020,
+			"sha256": "6551336e12facded403bc37b14bf51f38d1ff9c0fc7dba51715aee6e16cbfd82"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 128638,
+			"sha256": "1bad48fb2c9b76b17ea3f02f670132290dd39b00a14827a56f3db8b835eb089d"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 61533,
+			"sha256": "01965b874191ca83ceca506eec1174bb09c62abba71329d214b814bb01c41802"
+		},
+		{
+			"path": "exports/runner-transparent-2048.png",
+			"bytes": 4230760,
+			"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347"
+		},
+		{
+			"path": "exports/runner-icon-2048.png",
+			"bytes": 5803282,
+			"sha256": "5a9f17a7f344b91e9d20cc66862b3bbbc7357b35c71909e66c64c3eef9b7659d"
+		},
+		{
+			"path": "exports/runner-rounded-2048.png",
+			"bytes": 5732073,
+			"sha256": "e29a99dd1691c68c9bcdb00144fb75b6b4af02fdf8d80f4779309b7fc91fef87"
+		},
+		{
+			"path": "exports/runner-transparent-1024.png",
+			"bytes": 1073846,
+			"sha256": "c3ba6834a7370ca9490b585803309d3f16659840d4529f952077d2fd47e1b2fb"
+		},
+		{
+			"path": "exports/runner-icon-1024.png",
+			"bytes": 1411921,
+			"sha256": "94507b72b05a0a07669f02863e5d1c24b1265eeca15be1c73d3d96963da76216"
+		},
+		{
+			"path": "exports/runner-rounded-1024.png",
+			"bytes": 1414124,
+			"sha256": "e91d08f598f2ab19a990f19366f7740235e5a997d3a3d1f2cf9af4cbbd435b2d"
+		},
+		{
+			"path": "exports/runner-transparent-512.png",
+			"bytes": 278686,
+			"sha256": "50d991cc6c1dff202f9a8b36677047a84fddc187b89ac7c43e0062bf2a417bbd"
+		},
+		{
+			"path": "exports/runner-icon-512.png",
+			"bytes": 395408,
+			"sha256": "3882e4ca81246dfc59c69dee826777d83278ffa4eac44c5fc45d07b033fa6121"
+		},
+		{
+			"path": "exports/runner-rounded-512.png",
+			"bytes": 396985,
+			"sha256": "2592ff75d86402e22243519e31cceb0e2783f726d1b2f74fa54e73a3a516696d"
+		},
+		{
+			"path": "exports/runner-transparent-256.png",
+			"bytes": 75062,
+			"sha256": "0d99294d2b0ee20e5fd1e3a9d35b9c4e25375b61bad2775e60b53774a8b6f06a"
+		},
+		{
+			"path": "exports/runner-icon-256.png",
+			"bytes": 96196,
+			"sha256": "4af195da86abe656e92f123b1d45aa746fa229e8199bbdf73fa764d26de07eb2"
+		},
+		{
+			"path": "exports/runner-rounded-256.png",
+			"bytes": 99902,
+			"sha256": "9ee63c5ce47a850dea040af8c57ac9f1824079526f56711692f7b987300fa7fa"
+		},
+		{
+			"path": "exports/runner-transparent-128.png",
+			"bytes": 20600,
+			"sha256": "127873887415901f73442ff6e52c39bb3c81cd036221eef5aeb9c3715115779d"
+		},
+		{
+			"path": "exports/runner-icon-128.png",
+			"bytes": 27940,
+			"sha256": "16876f46b57290d43e4923b3b55ed6671feb17118c4ae7883ce84dcec5215bc0"
+		},
+		{
+			"path": "exports/runner-rounded-128.png",
+			"bytes": 29817,
+			"sha256": "aaeeca3c065ab598205c779b81ef1448b87256f0aa9b6ed0b0eed58798fa6cb8"
+		},
+		{
+			"path": "exports/runner-transparent-64.png",
+			"bytes": 6129,
+			"sha256": "c9dbaf9f1c98db66e8c924b732bc0ec9a5368584dad4594f77554ab92ce24899"
+		},
+		{
+			"path": "exports/runner-icon-64.png",
+			"bytes": 8737,
+			"sha256": "c5dfe6dd3c11112ed95aa96814d931df4094916c115da0150b80e81fc587f9df"
+		},
+		{
+			"path": "exports/runner-rounded-64.png",
+			"bytes": 9412,
+			"sha256": "e147f973d993793811b35555a89d0130d5737d79985491f7075fd005b9535c12"
+		},
+		{
+			"path": "exports/runner-transparent-48.png",
+			"bytes": 3759,
+			"sha256": "dfa634dff1cbed2c79a170e246698c1fb87700f8886d6f57e5b5dd0b5757937a"
+		},
+		{
+			"path": "exports/runner-icon-48.png",
+			"bytes": 5325,
+			"sha256": "89f87a8859687878e51166298efdb20ad81a6ff5ef771aaddd48651cafc80e59"
+		},
+		{
+			"path": "exports/runner-rounded-48.png",
+			"bytes": 5843,
+			"sha256": "789faf800ecfcfafc4f52e373df51729f871493cf5932ce131143e3550ef031b"
+		},
+		{
+			"path": "exports/runner-transparent-32.png",
+			"bytes": 2010,
+			"sha256": "e310baeadec43f3a5c4dc3deb73053f349381d9cc9da8f2984581daa9d144440"
+		},
+		{
+			"path": "exports/runner-icon-32.png",
+			"bytes": 2846,
+			"sha256": "46a0e56cde54be91db14db7e5f4b049c5ad4ac5eabcc3c5db5f111563dc6df1f"
+		},
+		{
+			"path": "exports/runner-rounded-32.png",
+			"bytes": 3053,
+			"sha256": "40d113111a6646f9c8c1c051116f26dc43bbcac86890c5d741e45c4c2759ff3b"
+		},
+		{
+			"path": "exports/runner-transparent-24.png",
+			"bytes": 1328,
+			"sha256": "bb89443a8162ee9e1f086cdebd9841f01d0c9becc9d45454aaa19a9b14a904c4"
+		},
+		{
+			"path": "exports/runner-icon-24.png",
+			"bytes": 1817,
+			"sha256": "85cdc7dedbebfb67565c508dc884de11e633747402bf07fcccb916c9c13198f8"
+		},
+		{
+			"path": "exports/runner-rounded-24.png",
+			"bytes": 1973,
+			"sha256": "2cfa0bc11a2ea7cc0b0f573c3fe7d4588706ee5195145a2dc358ee0a6f4230d5"
+		},
+		{
+			"path": "exports/runner-transparent-16.png",
+			"bytes": 747,
+			"sha256": "d6e87c7c67bc153017caba3c9c8474487ac3345746e787ecd915d3664d205bf3"
+		},
+		{
+			"path": "exports/runner-icon-16.png",
+			"bytes": 965,
+			"sha256": "43e504de6e6af9789bff9d3abb46d406c680fc0453cfd54199706a41f2fcf56d"
+		},
+		{
+			"path": "exports/runner-rounded-16.png",
+			"bytes": 1017,
+			"sha256": "0c6a607e90686124a9f0b1bf9d37d1051a38c0abc059134c4eee33211153d869"
+		},
+		{
+			"path": "exports/runner-white-2048.png",
+			"bytes": 3968222,
+			"sha256": "42881bcd0cc0d6e2bc337278df4d2522f22329427457f2b3ec56279e71658d25"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1019888,
+			"sha256": "12c0c1712cb4be83ea1cc025801d6aac0b526f26e67a160223d9a5e882fd0025"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1018762,
+			"sha256": "a0bca64c984d2a6d337f77a87d79a16e041ca672fb8ead1d7a1a14c543940f82"
+		}
+	]
+}

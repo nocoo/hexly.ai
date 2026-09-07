@@ -1,0 +1,37 @@
+{
+	"repo": "/Users/nocoo/workspace/personal/ipsafe",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "8cd6439c85171aeb83695f1024e1aa6a502985bd152bec3a3d6f2ca7f51f9c03",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "4f671c319c84888a82007742a1478bafabc1766512bc7930d20b11f0e621264f",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/background.png",
+			"sha256": "b2c4670d39c43206ea6e61c58cbb9bd7afc1e9c3df87a51d11d0acc86ec3ae9d",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		}
+	],
+	"derivatives": [],
+	"icoEntries": [],
+	"readmeUsesRoundedPresentation": true,
+	"consumers": [
+		"README only: this CLI/API repository has no application logo surface or browser metadata"
+	],
+	"usageGuide": "docs/01-logo-usage.md",
+	"publication": "Source installation, commit, push and deployment are separate facts; see adoption.json and the batch publication report."
+}

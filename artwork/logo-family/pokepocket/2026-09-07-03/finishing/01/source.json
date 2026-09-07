@@ -1,0 +1,40 @@
+{
+	"kind": "reference-adaptation",
+	"generationCalls": 0,
+	"artwork": {
+		"path": "source/extracted.png",
+		"sha256": "64dcc7121d7aae91bc174ab5125ea7f169799e3c3059a53f2c6076d7fae3873c",
+		"width": 960,
+		"height": 960
+	},
+	"reference": {
+		"path": "source/reference.jpg",
+		"sha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774",
+		"width": 960,
+		"height": 960,
+		"ownerPath": "~/Downloads/pokepocket.jpg"
+	},
+	"derivation": {
+		"script": "source/extract.py",
+		"scriptSha256": "e6fd1ee3b09d949adb1269a790b08d2ed2039247ad8ba958df20550acddda1de",
+		"decoded": "source/decoded.png",
+		"mask": "source/alpha-mask.png",
+		"method": "Exterior-connected beige segmentation from top and side edges; dark ink contours protect ivory clothing and skin. A narrow local color-line matte restores antialiased black outlines. No generative redrawing or invented detail.",
+		"nativeSize": [
+			960,
+			960
+		],
+		"opaquePixelsUnchanged": 406560,
+		"softEdgePixels": 7053
+	},
+	"earlierGenerationAttempts": [
+		{
+			"study": "2026-09-07-01",
+			"result": "moderation_blocked; no output image"
+		},
+		{
+			"study": "2026-09-07-02",
+			"result": "moderation_blocked; no output image"
+		}
+	]
+}

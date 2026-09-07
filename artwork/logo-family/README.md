@@ -152,3 +152,24 @@ The owner-directed material series uses physical surfaces, complete object frami
 [Basalt study 01](basalt/2026-09-07-01/notes.md) preserves the ordinary stone slab rejected by the owner. Its raw output and finishing pass remain archived and were never adopted. Study 02 follows the explicit architectural correction. Four native generation calls cover the complete batch, with exact-hash delegated acceptance recorded separately for each result.
 
 See [the material audit](audits/2026-09-07-materials/) for native palette samples, rounded-outline measurements, matting decisions, source-app screenshots and publication evidence. Foreground, square, rounded and white masters share one placement; small application/browser marks use the transparent foreground. The workflow logo skill and [family guide](../../docs/06-logo-family.md#material-and-architectural-series--2026-09-07) preserve this explicit exception to the animal series.
+
+## Remaining physical objects and PokePocket — 2026-09-07
+
+| Project | Subject | Source commit | Native | Comparison |
+| --- | --- | --- | --- | --- |
+| pokepocket | Red-capped trainer turning with a Poké Ball | `019798f1c8` | 960 px | [/logos/pokepocket](https://hexly.ai/logos/pokepocket) |
+| dogfight | Titanium F-22 desk model caught in a banking turn | `b5ab075a96` | 2048 px | [/logos/dogfight](https://hexly.ai/logos/dogfight) |
+| pew-game | Walnut and brass prairie arcade joystick | `ee68b2dead` | 2048 px | [/logos/pew-game](https://hexly.ai/logos/pew-game) |
+| signoff-now | Petrol enamel mechanical tally counter | `51b679fba8` | 2048 px | [/logos/signoff-now](https://hexly.ai/logos/signoff-now) |
+| unseal | An opened green enamel and brass padlock | `61a55cdb43` | 2048 px | [/logos/unseal](https://hexly.ai/logos/unseal) |
+| flow | Celadon mechanical keycap with a Chinese character | `f4a9e9464d` | 2048 px | [/logos/flow](https://hexly.ai/logos/flow) |
+| arena | Walnut dual-dial chess clock | `4a9efd6690` | 2048 px | [/logos/arena](https://hexly.ai/logos/arena) |
+| echo | A brass and navy pocket compass | `59730aa033` | 2048 px | [/logos/echo](https://hexly.ai/logos/echo) |
+| deca | A midnight teal rotary desk telephone | `1f41b41255` | 2048 px | [/logos/deca](https://hexly.ai/logos/deca) |
+| runner | Emerald enamel mechanical stopwatch | `a5d7861753` | 2048 px | [/logos/runner](https://hexly.ai/logos/runner) |
+| geekhub | A folded newspaper in a forest-green reading folio | `d45713b5d3` | 2048 px | [/logos/geekhub](https://hexly.ai/logos/geekhub) |
+| ipsafe | A green network cable tester with a short patch lead | `d8a28afb9e` | 2048 px | [/logos/ipsafe](https://hexly.ai/logos/ipsafe) |
+
+The batch archive is [audits/2026-09-07-objects/](audits/2026-09-07-objects/). Each selected study has a complete independent `review.html`, exported masters/sizes, palette, exact-byte source decision, transparent edge inspection, rounded-framing report and source adoption provenance. The public `/logos/<project>` path keeps the full comparison without showing presentation-reference boards.
+
+Eleven native 2048 px generations succeeded, one per physical-object project. PokePocket's two attempts failed at output moderation and returned no image; its selected study is an honest 960 px supplied-illustration extraction with documented resampling. Source app/header/favicon uses remain transparent, while README and platform presentations use the appropriate separate tile.

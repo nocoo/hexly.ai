@@ -1,0 +1,111 @@
+{
+	"project": "ipsafe",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/ipsafe.png",
+	"background": {
+		"base": "#bbd2c7",
+		"light": "#dcebe0",
+		"shade": "#9fbdae",
+		"motif": "#638c7c",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907045,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Connection lanes",
+			"description": "Paired port rectangles, guarded chevron lanes and three short status bars in quiet mint paper.",
+			"layers": [
+				{
+					"d": "M45 80h42v24H45ZM910 80h42v24h-42Z",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M45 140h42v24H45ZM910 140h42v24h-42Z",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M45 820h42v24H45ZM910 820h42v24h-42Z",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M45 880h42v24H45ZM910 880h42v24h-42Z",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M0 250l52 28 -52 28M1024 310l-52 28 52 28",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M0 350l52 28 -52 28M1024 410l-52 28 52 28",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M0 450l52 28 -52 28M1024 510l-52 28 52 28",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M0 550l52 28 -52 28M1024 610l-52 28 52 28",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M0 650l52 28 -52 28M1024 710l-52 28 52 28",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M130 920h72M220 920h72M310 920h72",
+					"tone": "motif",
+					"strokeWidth": 2.5
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [99, 140, 124],
+			"opacity": 0.25,
+			"blurAt2048": 66,
+			"projectionScale": [0.94, 0.3],
+			"offsetAt2048": [20, 696]
+		},
+		{
+			"color": [99, 140, 124],
+			"opacity": 0.17,
+			"blurAt2048": 28,
+			"projectionScale": [0.78, 0.17],
+			"offsetAt2048": [6, 691]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.900285,
+		"offsetAt2048": [-55, -13],
+		"intentionalEdges": [],
+		"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+		"minimumClearanceAt2048": 128
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"backgroundSeedsAt2048": [[835, 419]],
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+	}
+}

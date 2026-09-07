@@ -1,0 +1,410 @@
+{
+	"createdAt": "2026-09-07T10:12:00.359Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "bce159d3b8a5b853cebb62f894b07f68c68aec8ffbc6d79bd9b7f47ac69cde25",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "echo",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/echo.png",
+		"background": {
+			"base": "#bfd4d7",
+			"light": "#e1ece9",
+			"shade": "#a6bfc6",
+			"motif": "#6a9099",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907038,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Survey bearings",
+				"description": "Latitude arcs, a sparse meridian fan and short bearing marks in pale harbor-blue paper.",
+				"layers": [
+					{
+						"d": "M-60 360a180 125.99999999999999 0 1 1 360 0",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M-155 360a275 192.5 0 1 1 550 0",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M-260 360a380 266.0 0 1 1 760 0",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M-390 360a510 357.0 0 1 1 1020 0",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M690 -50Q520 500 690 1070",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M790 -50Q620 500 790 1070",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M890 -50Q720 500 890 1070",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M100 90l20 -20M132 104l20 -20M164 118l20 -20M832 922l20 -20M864 936l20 -20",
+						"tone": "motif",
+						"strokeWidth": 1.9
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					106,
+					144,
+					153
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					696
+				]
+			},
+			{
+				"color": [
+					106,
+					144,
+					153
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					691
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.909091,
+			"offsetAt2048": [
+				-23,
+				35
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"backgroundSeedsAt2048": [
+				[
+					1560,
+					260
+				]
+			],
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1948241,
+		"foregroundPixels": 2246063,
+		"softEdgePixels": 11489,
+		"removedComponents": 5,
+		"removedComponentPixels": 11,
+		"bounds": {
+			"left": 154,
+			"top": 94,
+			"right": 1943,
+			"bottom": 1831
+		}
+	},
+	"placement": {
+		"scale": 0.909091,
+		"offsetAt2048": [
+			-23,
+			35
+		],
+		"bounds": {
+			"left": 210,
+			"top": 213,
+			"right": 1837,
+			"bottom": 1791
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 190.28397922751515,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2640,
+			"sha256": "00da444820aa2d977bc82fa405a77f91af32a9847116d14f67d15518b4b6006a"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 683,
+			"sha256": "f5e24e6b8d1cd35d4d79ce5652375f3832dad94bf114243490192eeb4d306263"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 6168849,
+			"sha256": "a9c39a8fe864b56bff8b51aaf2a4c534467c68bf0eec1b9e38ea41c2c626740b"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 66373,
+			"sha256": "f974b4232f8fee9f8bba4624fccd82c1ffe277b7bc19219fc2a77b515d1b3e91"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1294,
+			"sha256": "49b9ae061c25f57e5347e8fdaafa623a50365389d4183b6d655a8e439663ece6"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1871401,
+			"sha256": "b14eae13644102ae8f56efd600d5566806c37ea8813d0234877b7297fafb99b9"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 5170077,
+			"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 87339,
+			"sha256": "33b77226fdc42aef004504232daee9331cfab1ae5b0be244a700f093054901e1"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 138166,
+			"sha256": "da40c023318920803095c76549873fc96ca119be93864dabcbd8853e7a87585b"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 67037,
+			"sha256": "a7cea62e7ad7967f9d68fe8ae91888dc98be32fb55692f81dcac2033b80523f8"
+		},
+		{
+			"path": "exports/echo-transparent-2048.png",
+			"bytes": 5170077,
+			"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d"
+		},
+		{
+			"path": "exports/echo-icon-2048.png",
+			"bytes": 6625594,
+			"sha256": "49ad152a8f3dc35694d374bd3f176128aa073c22f4ecf73b7aa402e1c2ce6884"
+		},
+		{
+			"path": "exports/echo-rounded-2048.png",
+			"bytes": 6552038,
+			"sha256": "83cc2795133f81a9870390fa197db60f66f257e00ef49e54eadd2a64f913d8ff"
+		},
+		{
+			"path": "exports/echo-transparent-1024.png",
+			"bytes": 1270117,
+			"sha256": "54c431bd040775aabad3235dc9520ac60c62df7697322e08a71c5cee11daf3c8"
+		},
+		{
+			"path": "exports/echo-icon-1024.png",
+			"bytes": 1582893,
+			"sha256": "7695b98bb90fa39952c07b844f4a4a529337350361ad3bd5238ef6a9ef0ee59d"
+		},
+		{
+			"path": "exports/echo-rounded-1024.png",
+			"bytes": 1582336,
+			"sha256": "97176ec071475757372760794c80308ecae27cc323e7bccfeed54ac17f91be93"
+		},
+		{
+			"path": "exports/echo-transparent-512.png",
+			"bytes": 321528,
+			"sha256": "f8a01143785be7fa28cda989246efd0bcf68ca251494454a63a11bf513fc7f1f"
+		},
+		{
+			"path": "exports/echo-icon-512.png",
+			"bytes": 427933,
+			"sha256": "350a4c2510d88f9893aa1744090c5fa1b910ba788a1b9fe599c6b220b692026f"
+		},
+		{
+			"path": "exports/echo-rounded-512.png",
+			"bytes": 428796,
+			"sha256": "b6a254b6a7af7affa6e58d0de33f056e16576c1224048094b73e46ae8198c50d"
+		},
+		{
+			"path": "exports/echo-transparent-256.png",
+			"bytes": 86917,
+			"sha256": "d1bd1de5da0121782fc79f79af55ba5d20f8783235dbe37652430e63787b1602"
+		},
+		{
+			"path": "exports/echo-icon-256.png",
+			"bytes": 105984,
+			"sha256": "f402efd687affef9ae47b1d0f20b1e98b6d46ca72a6946c93ee50fec7ff57f78"
+		},
+		{
+			"path": "exports/echo-rounded-256.png",
+			"bytes": 109171,
+			"sha256": "23b2555c9ea9cb9fb3ab6fb602338bbdee9b2abadaf74e2fdeb114dc32333436"
+		},
+		{
+			"path": "exports/echo-transparent-128.png",
+			"bytes": 24158,
+			"sha256": "1a3d93d8ad9c24b624183718905d04a3a2b708da488aa8c483b4d0dc8a41e90e"
+		},
+		{
+			"path": "exports/echo-icon-128.png",
+			"bytes": 30859,
+			"sha256": "b5684213001293b69dc2210a7747dbe6b4b6417ed206beecd48a8e08565c81a4"
+		},
+		{
+			"path": "exports/echo-rounded-128.png",
+			"bytes": 32481,
+			"sha256": "2de0643f8546384cd20d95e83a04dc8c8c8fc2a5348786ff3b1930a72ddf6c48"
+		},
+		{
+			"path": "exports/echo-transparent-64.png",
+			"bytes": 7089,
+			"sha256": "9fe24a9d67a4f5f35577099c6e8437068819dbfe160e5660665cb89cce6841d7"
+		},
+		{
+			"path": "exports/echo-icon-64.png",
+			"bytes": 9593,
+			"sha256": "e5ef63ab757831e68f8e7d563d7b0c89ce08ee1ebc5fb6005309bf972a8b6dcf"
+		},
+		{
+			"path": "exports/echo-rounded-64.png",
+			"bytes": 10228,
+			"sha256": "1802ca412c1004698545ddd927f688c2bec017fdedae3153a985e87350563528"
+		},
+		{
+			"path": "exports/echo-transparent-48.png",
+			"bytes": 4320,
+			"sha256": "53caf34b964340ea90f16da7fa0172daf350ea565343057360a0ec2640380ac9"
+		},
+		{
+			"path": "exports/echo-icon-48.png",
+			"bytes": 5914,
+			"sha256": "b0b7a49d5293dd2a89c382d081ccbab9cd5169b2c3687f6a90088f1d6e65191b"
+		},
+		{
+			"path": "exports/echo-rounded-48.png",
+			"bytes": 6358,
+			"sha256": "81d25327a3c813e64ebba5c796f2a9c0323180d29b67670ff8ac3bc2f920397b"
+		},
+		{
+			"path": "exports/echo-transparent-32.png",
+			"bytes": 2271,
+			"sha256": "1d178d05dee76c03b731cb0ea69d79139df0907684760980b43edddff2132a69"
+		},
+		{
+			"path": "exports/echo-icon-32.png",
+			"bytes": 3097,
+			"sha256": "97281ce49c31916b3e19ee00c5b8d249343a672af1fb7462c9c31fec0b1b0861"
+		},
+		{
+			"path": "exports/echo-rounded-32.png",
+			"bytes": 3273,
+			"sha256": "d389477b8d53feb9a465fc5b85f5a63280ab50c5c28620aa27e0584cfe9b5387"
+		},
+		{
+			"path": "exports/echo-transparent-24.png",
+			"bytes": 1480,
+			"sha256": "e0a85bc15ff19223d24dbe659bbdc37b1b67992663af7405d0cc94db15a82957"
+		},
+		{
+			"path": "exports/echo-icon-24.png",
+			"bytes": 1940,
+			"sha256": "316122d53764e4c393e1b378b28481004c9d37f29914af223a9666f454ee187c"
+		},
+		{
+			"path": "exports/echo-rounded-24.png",
+			"bytes": 2065,
+			"sha256": "67c771e2871764698f85f2760b1149fef2c903b859472c5f7d82f4256914ba36"
+		},
+		{
+			"path": "exports/echo-transparent-16.png",
+			"bytes": 817,
+			"sha256": "025e59cd45709f2dd5bc1ebac0c3e771d7941fa26e1ddaefd1da69197e1020cd"
+		},
+		{
+			"path": "exports/echo-icon-16.png",
+			"bytes": 990,
+			"sha256": "4463aa277865489effccfe5ffa50b0b9f372d40c9e7de580d01cc2e4b10da98e"
+		},
+		{
+			"path": "exports/echo-rounded-16.png",
+			"bytes": 1028,
+			"sha256": "88e6c9415be25a6cf4df22fd5947c187964a3bc2d481951b5a6f270c99bbb58d"
+		},
+		{
+			"path": "exports/echo-white-2048.png",
+			"bytes": 4808331,
+			"sha256": "12d910a174245b82a804205e573c78cf9cec0fbe767ad8e006dc3e26362ae96d"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1198504,
+			"sha256": "23e89b3998a41fdf25e22ea82ee078da9e2822a9959a91114a3b0b2a6d304a1c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1194527,
+			"sha256": "105d7d4d6deefcbb5afed486eff2ae9222b7f2e7681ffd00634fbb5893e2c539"
+		}
+	]
+}

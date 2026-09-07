@@ -1,0 +1,50 @@
+{
+	"width": 960,
+	"height": 960,
+	"sourceSha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774",
+	"presentationSha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+	"cornerRadius": 0.23,
+	"visibleAlphaThreshold": 16,
+	"bounds": {
+		"left": 95,
+		"top": 188,
+		"right": 826,
+		"bottom": 959
+	},
+	"minimumClearancePx": -32.64068339554328,
+	"clippedPixels": 1277,
+	"placement": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 123],
+		"bounds": {
+			"left": 95,
+			"top": 188,
+			"right": 826,
+			"bottom": 959
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -32.64068339554328,
+		"clippedPixels": 1277
+	},
+	"wholeObject": false,
+	"intentionalEdges": [
+		"bottom: jacket and lower forearm; only clothing/body may meet the rounded outline"
+	],
+	"features": [
+		{
+			"feature": "cap, hair and face",
+			"nativeRegion": [165, 82, 775, 641],
+			"minimumClearancePx": 189.61624999999998,
+			"requiredClearancePx": 60,
+			"clippedPixels": 0
+		},
+		{
+			"feature": "raised ball and complete fingers",
+			"nativeRegion": [650, 548, 878, 780],
+			"minimumClearancePx": 133.72000000000003,
+			"requiredClearancePx": 60,
+			"clippedPixels": 0
+		}
+	],
+	"note": "The complete expressive features clear the rounded boundary. The intentionally continuing lower body is measured separately and is not an accidental crop."
+}
