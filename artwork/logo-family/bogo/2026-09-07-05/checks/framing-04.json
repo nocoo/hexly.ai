@@ -1,0 +1,66 @@
+{
+	"nativeSize": 2048,
+	"roundedRadius": 471.04,
+	"visibleAlphaThreshold": 16,
+	"minimumRequiredClearance": 128,
+	"intentionalBoundaryEntries": ["bottom neck", "lower-right shoulder"],
+	"regions": [
+		{
+			"name": "left horn",
+			"sourceRegion": [100, 50, 930, 670],
+			"visiblePixels": 157687,
+			"minimumRoundedEdgeClearance": 351.50000000000006,
+			"clippedPixels": 0
+		},
+		{
+			"name": "right horn",
+			"sourceRegion": [1390, 160, 2160, 850],
+			"visiblePixels": 181937,
+			"minimumRoundedEdgeClearance": 175.50000000000006,
+			"clippedPixels": 0
+		},
+		{
+			"name": "left ear",
+			"sourceRegion": [-32, 640, 710, 1120],
+			"visiblePixels": 151512,
+			"minimumRoundedEdgeClearance": 179.50000000000006,
+			"clippedPixels": 0
+		},
+		{
+			"name": "right ear",
+			"sourceRegion": [1460, 820, 2150, 1280],
+			"visiblePixels": 157463,
+			"minimumRoundedEdgeClearance": 143.50000000000006,
+			"clippedPixels": 0
+		},
+		{
+			"name": "face",
+			"sourceRegion": [590, 500, 1570, 1740],
+			"visiblePixels": 755870,
+			"minimumRoundedEdgeClearance": 246.50000000000006,
+			"clippedPixels": 0
+		},
+		{
+			"name": "flower group",
+			"sourceRegion": [40, 1090, 710, 1880],
+			"visiblePixels": 202984,
+			"minimumRoundedEdgeClearance": 133.98198837588808,
+			"clippedPixels": 0
+		},
+		{
+			"name": "leaf group",
+			"sourceRegion": [1000, 1280, 1640, 1880],
+			"visiblePixels": 246753,
+			"minimumRoundedEdgeClearance": 134.50000000000006,
+			"clippedPixels": 0
+		}
+	],
+	"passed": true,
+	"method": "Conservative source-coordinate feature envelopes, inspected against the native image, transformed with the final placement. The sprig ends by native y=1872; y=1880 includes antialiasing while excluding unrelated lower neck anatomy.",
+	"placement": {
+		"scale": 0.8,
+		"width": 1638,
+		"left": 195,
+		"top": 410
+	}
+}
