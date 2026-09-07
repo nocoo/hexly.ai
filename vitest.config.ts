@@ -10,6 +10,7 @@ export default defineConfig({
 			"**/tsconfig*.json",
 			// These inputs are read through a subprocess or fs, outside the import graph.
 			"**/scripts/release.ts",
+			"**/artwork/logo-family/tools/**",
 			"**/public/logos/originals/hexly-ai.*",
 		],
 		coverage: {
