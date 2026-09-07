@@ -11,7 +11,7 @@
 - Chinese: 从收入、支出到资产，用一个清晰的视角理解自己的财务。
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `1041610cf06562bb04911e39f4356690f6256f57`
+- Repository revision inspected: `5e32426a6044436eee5c6b2894910666896a8b49`
 
 ## Current logo
 
@@ -19,11 +19,11 @@
 
 - Type: Original project artwork, copied without modification
 - Subject: Cow portrait
-- [Source](https://github.com/nocoo/noheir/blob/1041610cf06562bb04911e39f4356690f6256f57/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/noheir.png)
+- [Source](https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png): `logo.png`
+- [Preserved asset](../../public/logos/originals/noheir-family-2026-09-07-02-02.png)
 - Original dimensions: 2048 × 2048
-- Original size: 4210139 bytes
-- SHA-256: `2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb`
+- Original size: 3801133 bytes
+- SHA-256: `26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -33,28 +33,28 @@
 | --- | --- | --- |
 | primary | `#25aff4` | src/app/globals.css --primary: 200 90% 55% |
 | background | `#eeeff2` | src/app/globals.css --background: 220 14% 94% |
-| accent | `#b4642f` | Preserved project artwork, sampled pixel |
-| accent | `#d7b68b` | Preserved project artwork, sampled pixel |
-| accent | `#efdfc1` | Preserved project artwork, sampled pixel |
+| accent | `#b4642e` | Native noheir 61f13d785b85, sampled sRGB pixel (1032, 870); artwork/logo-family/noheir/2026-09-07-02/palette.json |
+| accent | `#f1ddc3` | Native noheir 61f13d785b85, sampled sRGB pixel (683, 558); artwork/logo-family/noheir/2026-09-07-02/palette.json |
+| accent | `#f29b8a` | Native noheir 61f13d785b85, sampled sRGB pixel (631, 1385); artwork/logo-family/noheir/2026-09-07-02/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
 ## Refined identity
 
-![Noheir refined preview](../../public/logos/family/noheir/2026-09-07-01/01/icon-160.webp)
+![Noheir refined preview](../../public/logos/family/noheir/2026-09-07-02/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
-- Study `2026-09-07-01`, finishing `01`
-- Refined subject: Original warm brown and cream faceted cow portrait
+- Study `2026-09-07-02`, finishing `02`
+- Refined subject: Copper and cream cow with complete horns, blue eyes, and a coral muzzle
 - Site path: `/logos/noheir`; [local gallery](https://index.dev.hexly.ai/logos/noheir)
-- [Static review HTML](../../artwork/logo-family/noheir/2026-09-07-01/review.html)
-- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/noheir/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/noheir/2026-09-07-01/01/transparent.png); SHA-256: `2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb`
-- [Square icon](../../public/logos/family/noheir/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/noheir/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/noheir/2026-09-07-01/01/white.png)
-- [Untouched original](../../public/logos/family/noheir/2026-09-07-01/01/source.png), [presentation brief](../../public/logos/family/noheir/2026-09-07-01/01/brief.txt), [public asset checksums](../../public/logos/family/noheir/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/noheir.png), copied from [its immutable source](https://github.com/nocoo/noheir/blob/2c99001444856d7756589254a52696af2cdfbab9/logo.png)
+- [Static review HTML](../../artwork/logo-family/noheir/2026-09-07-02/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/noheir/2026-09-07-02)
+- [Transparent foreground](../../public/logos/family/noheir/2026-09-07-02/02/transparent.png); SHA-256: `26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff`
+- [Square icon](../../public/logos/family/noheir/2026-09-07-02/02/icon.png), [rounded icon](../../public/logos/family/noheir/2026-09-07-02/02/rounded.png), [white version](../../public/logos/family/noheir/2026-09-07-02/02/white.png)
+- [Untouched generation](../../public/logos/family/noheir/2026-09-07-02/02/raw.png), [exact prompt](../../public/logos/family/noheir/2026-09-07-02/02/prompt.txt), [public asset checksums](../../public/logos/family/noheir/2026-09-07-02/02/manifest.json)
+- [Previous original](../../public/logos/originals/noheir.png), copied from [its immutable source](https://github.com/nocoo/noheir/blob/1041610cf06562bb04911e39f4356690f6256f57/logo.png)
 - Previous SHA-256: `2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb`
-- Original artwork retained byte-for-byte at native 2048 × 2048. Zero image-generation calls; only background, grain, and shadow layers were composed.
+- Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
@@ -62,32 +62,32 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#638783` | Selected Noheir presentation, finishing 01; background.base in archived settings.json |
-| primary | `#b4642f` | Original noheir 2ed854204cbc, sampled sRGB pixel (1219, 426); palette.json |
-| accent | `#f0dfc1` | Original noheir 2ed854204cbc, sampled sRGB pixel (902, 421); palette.json |
-| accent | `#d7b68b` | Original noheir 2ed854204cbc, sampled sRGB pixel (1069, 360); palette.json |
-| accent | `#ee9d8a` | Original noheir 2ed854204cbc, sampled sRGB pixel (530, 1341); palette.json |
-| accent | `#566b7e` | Original noheir 2ed854204cbc, sampled sRGB pixel (537, 855); palette.json |
+| background | `#638783` | Selected Noheir presentation, 2026-09-07-02/02; background.base in archived settings.json |
+| primary | `#b4642e` | Native noheir 61f13d785b85, sampled sRGB pixel (1032, 870); artwork/logo-family/noheir/2026-09-07-02/palette.json |
+| accent | `#f1ddc3` | Native noheir 61f13d785b85, sampled sRGB pixel (683, 558); artwork/logo-family/noheir/2026-09-07-02/palette.json |
+| accent | `#f29b8a` | Native noheir 61f13d785b85, sampled sRGB pixel (631, 1385); artwork/logo-family/noheir/2026-09-07-02/palette.json |
+| accent | `#586b7b` | Native noheir 61f13d785b85, sampled sRGB pixel (1128, 869); artwork/logo-family/noheir/2026-09-07-02/palette.json |
+| accent | `#713b28` | Native noheir 61f13d785b85, sampled sRGB pixel (1616, 1501); artwork/logo-family/noheir/2026-09-07-02/palette.json |
 
-### Keep the gentle three-quarter view
+### A gentle three-quarter turn
 
-The cow, horns, ears, expression, and original shoulder silhouette remain exactly as supplied. The warm animal stays prominent without changing its proportions.
+The familiar face keeps both horns and ears clear. A short neck settles into a broad shoulder entering the lower-right frame, replacing the old internal bust cut.
 
-奶牛、角、耳朵、表情和原来的肩部轮廓均原样保留，在不改变比例的情况下突出暖色主体。
+熟悉的面孔保留完整牛角与耳朵，短颈自然连接宽厚肩部并从右下进入画框，替换原先画面内部的头像截断。
 
-### Warm patches, clear eyes
+### Warm patches and clear eyes
 
-The existing copper, cream, coral nose, and blue eye facets are retained. This presentation-only pass adds no accessory, repaint, or model generation.
+Broad copper and cream facets preserve the cow’s expression, coral nose, and blue eyes. This framing repair retains the existing accents without adding accessories.
 
-原有铜棕、奶油色、珊瑚鼻尖与蓝色眼睛碎片均保留。这次只完善展示，不加配饰、不重涂，也不调用生图。
+大块铜棕和奶油色面保留奶牛表情、珊瑚鼻尖和蓝眼睛；这次修复构图，沿用原有点缀而不增加配饰。
 
-### A cool terraced field
+### Quiet terraces
 
-Unequal stepped contours sit on a muted green field. Their broad rhythm and tiny lit edges contrast the warm cow while keeping the finance app UI palette separate.
+The retained muted green field uses unequal stepped contours and softly lit edges. Its cool color contrasts the warm animal while the finance app theme remains separate.
 
-高低不一的阶梯轮廓落在柔和绿色底面上，宽阔节奏与细亮边衬托暖色奶牛；财务应用的界面色板单独保留。
+沿用柔和绿色底面、高低不一的阶梯轮廓与细亮边，以冷暖对比衬托奶牛；财务应用主题色单独保留。
 
-Small-size observation: The cream blaze, horns, and coral nose anchor the 32 px silhouette. At 16 px smaller patches merge; browser and sidebar marks use the transparent source while installed-app icons use the presentation.
+Small-size observation: The cream blaze, paired horns, and coral muzzle stay legible at 32 px. Smaller color planes merge at 16 px; transparent marks serve the sidebar and browser, while installed icons use the square presentation.
 
 ## Further refinements
 

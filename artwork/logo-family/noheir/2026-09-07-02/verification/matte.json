@@ -1,0 +1,153 @@
+{
+	"sourceSha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c",
+	"extractedForegroundSha256": "3d888b0681b15d9c7c3e78d800b5c1a1b0c6b0ad1177e8ef8b4a4839f25b2cd9",
+	"extractionStatistics": {
+		"backgroundPixels": 1786112,
+		"foregroundPixels": 2408192,
+		"softEdgePixels": 8907,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 213,
+			"top": 142,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"connectedComponentsAtAlpha16": [
+		{
+			"pixels": 2408132,
+			"bounds": [213, 142, 2048, 2048]
+		}
+	],
+	"fullyOpaquePixels": 2399285,
+	"opaquePixelsChangedFromRaw": 0,
+	"note": "Light/dark edges, ivory anatomy, highlights, and enclosed accessory gaps were visually inspected. Edge unmatting is isolated from unchanged opaque color planes.",
+	"previousPassComparison": {
+		"previousPass": "01",
+		"removedVisiblePixels": 687,
+		"removedRegions": [
+			{
+				"pixels": 83,
+				"bounds": [323, 741, 334, 757]
+			},
+			{
+				"pixels": 61,
+				"bounds": [368, 0, 379, 7]
+			},
+			{
+				"pixels": 52,
+				"bounds": [411, 0, 422, 6]
+			},
+			{
+				"pixels": 43,
+				"bounds": [284, 0, 294, 6]
+			},
+			{
+				"pixels": 43,
+				"bounds": [326, 0, 335, 6]
+			},
+			{
+				"pixels": 24,
+				"bounds": [1591, 461, 1599, 466]
+			},
+			{
+				"pixels": 22,
+				"bounds": [646, 545, 653, 549]
+			},
+			{
+				"pixels": 19,
+				"bounds": [867, 1677, 872, 1684]
+			},
+			{
+				"pixels": 7,
+				"bounds": [493, 174, 494, 181]
+			},
+			{
+				"pixels": 5,
+				"bounds": [1781, 447, 1785, 449]
+			},
+			{
+				"pixels": 5,
+				"bounds": [385, 1437, 386, 1442]
+			},
+			{
+				"pixels": 5,
+				"bounds": [383, 1469, 384, 1474]
+			},
+			{
+				"pixels": 4,
+				"bounds": [617, 302, 621, 306]
+			},
+			{
+				"pixels": 4,
+				"bounds": [1425, 322, 1429, 326]
+			},
+			{
+				"pixels": 4,
+				"bounds": [386, 1423, 387, 1427]
+			},
+			{
+				"pixels": 3,
+				"bounds": [581, 269, 584, 272]
+			},
+			{
+				"pixels": 3,
+				"bounds": [1478, 277, 1481, 280]
+			},
+			{
+				"pixels": 3,
+				"bounds": [605, 291, 608, 294]
+			},
+			{
+				"pixels": 3,
+				"bounds": [1439, 311, 1442, 314]
+			},
+			{
+				"pixels": 3,
+				"bounds": [650, 332, 653, 335]
+			},
+			{
+				"pixels": 3,
+				"bounds": [384, 1455, 385, 1458]
+			},
+			{
+				"pixels": 3,
+				"bounds": [439, 1604, 442, 1607]
+			},
+			{
+				"pixels": 3,
+				"bounds": [475, 1622, 476, 1625]
+			},
+			{
+				"pixels": 3,
+				"bounds": [955, 1669, 958, 1670]
+			},
+			{
+				"pixels": 3,
+				"bounds": [729, 1744, 732, 1745]
+			},
+			{
+				"pixels": 2,
+				"bounds": [498, 174, 499, 176]
+			},
+			{
+				"pixels": 2,
+				"bounds": [1474, 280, 1476, 282]
+			},
+			{
+				"pixels": 2,
+				"bounds": [594, 281, 596, 283]
+			},
+			{
+				"pixels": 2,
+				"bounds": [657, 338, 659, 340]
+			},
+			{
+				"pixels": 2,
+				"bounds": [481, 1232, 483, 1234]
+			}
+		],
+		"interpretation": "Exterior near-white residue and edge fringe; Life.ai additionally opens the empty glasses and stem gaps using recorded interior background seeds."
+	}
+}

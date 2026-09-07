@@ -1,0 +1,114 @@
+{
+	"project": "noheir",
+	"study": "2026-09-07-02",
+	"finishing": "02",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "19c3326070dd5f9d3ca86d09fed9fd529bb7650f01cca587cd6e77a552defa1e",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "dd60283dcedcb379043ba3bc51e891b6b50111bc02f5ed6fdbf8335dce9ba39d",
+			"exactSelectedMaster": true
+		}
+	],
+	"smallPngs": [
+		{
+			"path": "public/logo-24.png",
+			"size": 24,
+			"transparentPixels": 201,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "b1dc5a00ec0821ae2f024f842c49b6a20013645b2f7dff02ef984bee2f6e4c93"
+		},
+		{
+			"path": "public/logo-32.png",
+			"size": 32,
+			"transparentPixels": 397,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "e3577c5c3d4a14da1844def023f351294f6f4e4cc91a4ae95c2b11368ff256f3"
+		},
+		{
+			"path": "public/logo-64.png",
+			"size": 64,
+			"transparentPixels": 1824,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "42f07360b071f6aab8ec52d552b27365f56480166d9361cacf0a2b94c62169ef"
+		},
+		{
+			"path": "public/logo-80.png",
+			"size": 80,
+			"transparentPixels": 2925,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "e265319c5af64ad83eb1e2124a31b88b9ae2dd05746daf4e0644ac4724fe7b62"
+		},
+		{
+			"path": "public/logo-128.png",
+			"size": 128,
+			"transparentPixels": 7776,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "84d8cfa90c8e658dbc1607c8dc141ad9db77e90cf4ccfe13f84b869c65043f07"
+		}
+	],
+	"favicon": {
+		"path": "public/favicon.ico",
+		"sha256": "308bd39b55ce9ee3b42238cfaff5fd9dd692bf14ba8c12b53059e1f82f310680",
+		"entries": [
+			{
+				"size": 16,
+				"transparentPixels": 73,
+				"matchesTransparentMasterResize": true
+			},
+			{
+				"size": 32,
+				"transparentPixels": 397,
+				"matchesTransparentMasterResize": true
+			}
+		]
+	},
+	"touch": {
+		"path": "public/logo-180.png",
+		"size": 180,
+		"squarePresentation": true,
+		"opaque": true
+	},
+	"installed": [
+		{
+			"path": "public/logo-192.png",
+			"size": 192,
+			"squarePresentation": true
+		},
+		{
+			"path": "public/logo-256.png",
+			"size": 256,
+			"squarePresentation": true
+		},
+		{
+			"path": "public/icon-512.png",
+			"size": 512,
+			"squarePresentation": true
+		}
+	],
+	"social": {
+		"path": "public/opengraph-image.png",
+		"size": [1200, 630],
+		"opaque": true,
+		"source": "assets/brand/icon-rounded.png"
+	},
+	"readme": {
+		"path": "README.md",
+		"target": "assets/brand/icon-rounded.png"
+	},
+	"status": "Source assets installed and verified; commit, push, and browser evidence recorded separately."
+}
