@@ -23,5 +23,22 @@
 		"assets/brand/icon.png": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1",
 		"assets/brand/icon-rounded.png": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9",
 		"assets/brand/background.png": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840"
+	},
+	"verifiedSourceDeployment": {
+		"revision": "514d94892b9f55984dcd3cda0d9408ebecfcba9b",
+		"ci": "https://github.com/nocoo/basalt/actions/runs/34091855466",
+		"release": "https://github.com/nocoo/basalt/actions/runs/34092771400",
+		"deploymentJob": {
+			"name": "Deploy Worker (tagged)",
+			"url": "https://github.com/nocoo/basalt/actions/runs/34092771400/job/101649611889",
+			"conclusion": "success"
+		},
+		"publicAssetResult": "All eleven served PNG/ICO application and platform files match the selected tower derivatives.",
+		"websiteTokens": {
+			"--basalt-primary": ["204 88% 32%", "204 90% 70%"],
+			"--basalt-background": ["220 14% 94%", "0 0% 9%"],
+			"--basalt-foreground": ["0 0% 12%", "0 0% 93%"]
+		},
+		"paletteResult": "The recorded light/dark primary, background and foreground tokens remain unchanged from the integrated adoption revision."
 	}
 }
