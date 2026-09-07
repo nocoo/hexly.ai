@@ -1,0 +1,100 @@
+{
+	"project": "clip",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/clip.png",
+	"background": {
+		"base": "#9eb88d",
+		"light": "#d6e2bb",
+		"shade": "#6b845e",
+		"motif": "#4a683e",
+		"grainAmplitude": 0.8,
+		"grainSeed": 6090770,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.2,
+		"pattern": {
+			"name": "Leaf-vein relief",
+			"description": "Two asymmetrical leaf folds with branching veins, one entering from the upper right and one from the lower-right paper edge.",
+			"layers": [
+				{
+					"d": "M1115 -80C858 -32 667 138 654 390C844 362 1057 243 1115 -80Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M1092 -30C1002 97 830 247 686 361",
+					"tone": "motif",
+					"strokeWidth": 12
+				},
+				{
+					"d": "M843 226L868 79M905 166L1034 161M774 288L781 171M984 88L1069 74",
+					"tone": "motif",
+					"strokeWidth": 6
+				},
+				{
+					"d": "M1081 -40C991 89 817 233 675 351",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				},
+				{
+					"d": "M720 1110C716 937 856 829 1090 762C1075 994 912 1102 720 1110Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M758 1099C820 976 921 892 1088 784M827 991L795 938M887 931L1006 976M960 873L955 817",
+					"tone": "motif",
+					"strokeWidth": 7
+				},
+				{
+					"d": "M748 1092C808 970 911 882 1078 775",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				}
+			]
+		},
+		"status": "Designed local presentation; separate from the existing source website palette."
+	},
+	"matte": {
+		"minimumChannel": 247,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [[1378, 1631], [1305, 1759], [1487, 1416]],
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction and individually classified enclosed background gaps. Pale anatomy and physical highlights stay opaque.",
+		"backgroundSeedReason": "Three enclosed background spaces between the folded foreleg contours. Both enclosed white eye highlights remain opaque.",
+		"componentCleanupReason": "All legitimate anatomy and the single accessory form the main connected component. Separately recorded sub-100-pixel islands are isolated near-white matte/antialias residue, including tiny colored pixels along native canvas borders."
+	},
+	"shadows": [
+		{
+			"color": [74, 104, 62],
+			"opacity": 0.15,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [74, 104, 62],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.93,
+		"offsetAt2048": [-16, 72],
+		"intentionalEdges": ["bottom"],
+		"note": "One uniform placement retains the mantis thorax and foreleg entering the bottom viewfinder. The complete head, two antennae and full paper-ribbon group are protected above native y=1450; no circular mask, stretched neck or contour repair.",
+		"protectedFeatureRegionsAt2048": [
+			{
+				"name": "Complete head, antennae and paper group",
+				"bounds": [0, 0, 2048, 1450]
+			}
+		],
+		"minimumFeatureClearanceAt2048": 128
+	}
+}

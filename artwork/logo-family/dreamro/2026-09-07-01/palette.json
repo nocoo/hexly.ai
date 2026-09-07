@@ -1,0 +1,120 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f",
+		"colorSpace": "sRGB",
+		"sampling": "Exact native pixels at least four pixels inside the fully opaque extracted foreground; no averaging, resampling or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Forest timber",
+				"zh": "森林色木材"
+			},
+			"role": "primary",
+			"color": "#5c6456",
+			"pixel": [824, 656],
+			"rgb": [92, 100, 86],
+			"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f"
+		},
+		{
+			"label": {
+				"en": "Antique gold",
+				"zh": "古金色"
+			},
+			"role": "accent",
+			"color": "#e3be8e",
+			"pixel": [994, 252],
+			"rgb": [227, 190, 142],
+			"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f"
+		},
+		{
+			"label": {
+				"en": "Polished steel",
+				"zh": "抛光钢色"
+			},
+			"role": "accent",
+			"color": "#e2dfdb",
+			"pixel": [1200, 1050],
+			"rgb": [226, 223, 219],
+			"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f"
+		},
+		{
+			"label": {
+				"en": "Dark bow wood",
+				"zh": "深色弓木"
+			},
+			"role": "accent",
+			"color": "#29170b",
+			"pixel": [285, 750],
+			"rgb": [41, 23, 11],
+			"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f"
+		},
+		{
+			"label": {
+				"en": "Amethyst",
+				"zh": "紫晶色"
+			},
+			"role": "accent",
+			"color": "#382cbe",
+			"pixel": [1770, 480],
+			"rgb": [56, 44, 190],
+			"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f"
+		},
+		{
+			"label": {
+				"en": "Dark leather",
+				"zh": "深色皮革"
+			},
+			"role": "accent",
+			"color": "#31221e",
+			"pixel": [495, 1170],
+			"rgb": [49, 34, 30],
+			"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f"
+		}
+	],
+	"presentation": {
+		"base": "#dccfad",
+		"light": "#f5eedb",
+		"shade": "#c1ad88",
+		"motif": "#938060",
+		"pattern": "Parchment heraldic lattice",
+		"status": "Selected local review presentation; source adoption and publication have not occurred."
+	},
+	"website": {
+		"primary": "#a98c57",
+		"background": "#f4f1e5",
+		"theme": {
+			"primary": {
+				"value": "#a98c57",
+				"source": "src/styles.css :root --gold"
+			},
+			"background": {
+				"value": "#f4f1e5",
+				"source": "src/styles.css :root background"
+			},
+			"ink": {
+				"value": "#4c5c51",
+				"source": "src/styles.css :root --ink"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#a98c57",
+				"role": "primary",
+				"source": "src/styles.css :root --gold"
+			},
+			{
+				"color": "#f4f1e5",
+				"role": "background",
+				"source": "src/styles.css :root background"
+			},
+			{
+				"color": "#4c5c51",
+				"role": "accent",
+				"source": "src/styles.css :root --ink"
+			}
+		],
+		"note": "Existing product theme evidence remains independent from the local artwork and designed paper presentation."
+	}
+}

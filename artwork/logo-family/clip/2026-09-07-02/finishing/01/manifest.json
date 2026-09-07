@@ -1,0 +1,416 @@
+{
+	"createdAt": "2026-09-07T12:46:43.771Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "clip",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/clip.png",
+		"background": {
+			"base": "#baae91",
+			"light": "#e7dcc2",
+			"shade": "#8c7a5b",
+			"motif": "#65563b",
+			"grainAmplitude": 0.8,
+			"grainSeed": 6090774,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.2,
+			"pattern": {
+				"name": "Windward feather relief",
+				"description": "Long curved quills and spaced, gently splayed barbs enter the upper-left field and the lower-right paper edge. The paths form wind-swept feather rhythm without a closed leaf stencil.",
+				"layers": [
+					{
+						"d": "M-112 467C21 271 155 119 411 40L427 74C199 142 51 292-83 487Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-112 468C28 269 169 126 424 59",
+						"tone": "motif",
+						"strokeWidth": 11
+					},
+					{
+						"d": "M-119 450C20 252 159 109 418 43",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M30 300C12 247-6 225-42 211M94 223C84 157 68 132 39 111M168 161C169 99 157 68 141 40M253 115C269 61 275 27 270-7",
+						"tone": "motif",
+						"strokeWidth": 5
+					},
+					{
+						"d": "M28 326C93 328 133 339 166 365M90 250C163 256 207 271 236 292M166 184C228 186 272 195 301 213",
+						"tone": "motif",
+						"strokeWidth": 5
+					},
+					{
+						"d": "M34 337C99 341 138 353 169 377M100 264C169 270 210 284 240 305M175 198C235 199 275 210 305 226",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M847 1143C826 1003 896 874 1100 785",
+						"tone": "ribbon",
+						"strokeWidth": 29
+					},
+					{
+						"d": "M858 1142C839 1008 909 880 1105 797M873 990C929 1007 962 1031 984 1073M925 916C984 927 1027 949 1051 976",
+						"tone": "motif",
+						"strokeWidth": 6
+					},
+					{
+						"d": "M836 1141C816 996 884 864 1093 774",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					}
+				]
+			},
+			"status": "Selected local ostrich presentation, separate from unchanged source website tokens."
+		},
+		"matte": {
+			"minimumChannel": 240,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				250,
+				251,
+				251
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 10,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Modal native outer-eight-pixel near-white matte. Exterior-connected extraction at 240 removes pale boundary ringing without a global white deletion; warm anatomy and eye highlights remain opaque.",
+			"backgroundSeedReason": "No enclosed background gaps require seeds. The near-white interior pockets are the eyes and remain opaque.",
+			"componentCleanupReason": "The ostrich, hat and attached feather group form one connected foreground. Any separately recorded sub-100-pixel islands are matte residue, not decorative identity elements."
+		},
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				-18,
+				103
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Uniformly inset the complete close portrait and align its existing natural neck entry with the lower viewfinder. The head, whole hat, complete feather spray and beak remain clear of rounded corners. No neck stretching, circular bust mask, independent part movement or continuation layer.",
+			"protectedFeatureRegionsAt2048": [
+				{
+					"name": "Complete face, beak, both eyes, entire hat and feather spray",
+					"bounds": [
+						0,
+						0,
+						2048,
+						1610
+					]
+				}
+			],
+			"minimumFeatureClearanceAt2048": 128
+		},
+		"shadows": [
+			{
+				"color": [
+					101,
+					86,
+					59
+				],
+				"opacity": 0.15,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					101,
+					86,
+					59
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 2209777,
+		"foregroundPixels": 1984527,
+		"softEdgePixels": 18370,
+		"removedComponents": 1,
+		"removedComponentPixels": 1,
+		"bounds": {
+			"left": 156,
+			"top": 53,
+			"right": 1924,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			-18,
+			103
+		],
+		"bounds": {
+			"left": 225,
+			"top": 253,
+			"right": 1816,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 0.5000000000000568,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3718,
+			"sha256": "9e095f1fa254f6ebb8c2379f06ae4398556a39c31995da8a450b0b9678a8d580"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1325,
+			"sha256": "1e91b4755b154692c76106df136b7bbe488e31554b6d220c692a8be2d52726ab"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2829911,
+			"sha256": "929e1b179ea55a0d1853ec3ba7907ad08baaceea7e2a00ba54c30b5ec37ad5e7"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 83723,
+			"sha256": "61a41cdb7618b4e681f676ba6442ac665d112cddfdf9b46e28aa5f77b4091e3a"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1639,
+			"sha256": "39936576dcb4cc4d8da9c7ff2cc651cbd34096c2e6488345f33cbcefe22e4aa7"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2244954,
+			"sha256": "c8d952fa80c7e528d76a888f5c8fa0e22dc3f7b8ed12826cba59eee286d0d50e"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2528861,
+			"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 104104,
+			"sha256": "66271649e1642963d35b835b78b65bb3368306c48e5ded9d84614289c7d7557f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 224629,
+			"sha256": "e936390a21075fc632b150c211d07fe53746b706de6aeed4eedba02e1f751d8b"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 168735,
+			"sha256": "b241a1eace2acf255c0a3b6b9d53f0cc62c768d33bf1f4b1e53af673ad7cc585"
+		},
+		{
+			"path": "exports/clip-transparent-2048.png",
+			"bytes": 2528861,
+			"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983"
+		},
+		{
+			"path": "exports/clip-icon-2048.png",
+			"bytes": 4248389,
+			"sha256": "3a560bee022b6fc41780193df13d95d2f9a053ac0fc0aba42a5e5c14b82e5ced"
+		},
+		{
+			"path": "exports/clip-rounded-2048.png",
+			"bytes": 4152799,
+			"sha256": "ca76757755cb5598cfdadb3eb9b5f0d8649415a5f45438b9a699a07f493d1e06"
+		},
+		{
+			"path": "exports/clip-transparent-1024.png",
+			"bytes": 761591,
+			"sha256": "0aabce41e08349838d768fd7880a464d20b1a69c86edebc04092156098144b2c"
+		},
+		{
+			"path": "exports/clip-icon-1024.png",
+			"bytes": 1157902,
+			"sha256": "bcb41ee154a57cd499296f9eabd52f3790d9228c01d88d78439905ec96cc9cff"
+		},
+		{
+			"path": "exports/clip-rounded-1024.png",
+			"bytes": 1151492,
+			"sha256": "6e16e64075d831b5093fb0939a790a715d05ce4f791dea4818adb6baf5f395ce"
+		},
+		{
+			"path": "exports/clip-transparent-512.png",
+			"bytes": 247041,
+			"sha256": "7a9ec3215341832c5d5860ca6147dcb80dc07bb2b95a677b3631589898ef5b0a"
+		},
+		{
+			"path": "exports/clip-icon-512.png",
+			"bytes": 386982,
+			"sha256": "a03e1b8ade55bb0ac30cc50e36cf82ac57b16008d8d3fb9f71de90bd9bf5aabe"
+		},
+		{
+			"path": "exports/clip-rounded-512.png",
+			"bytes": 385748,
+			"sha256": "af6683583e9928f6776cad881ee785e55b202de0849e350704c92e1b5267c767"
+		},
+		{
+			"path": "exports/clip-transparent-256.png",
+			"bytes": 78704,
+			"sha256": "bbed6ecf12b2b066d104639132d81967ac0a503ff0ee8469c908d8fbaa080b0f"
+		},
+		{
+			"path": "exports/clip-icon-256.png",
+			"bytes": 103329,
+			"sha256": "a19da88aa0f2994ca9d2d1f6c925fcce374aa3336b4614520688ac92b8f3671a"
+		},
+		{
+			"path": "exports/clip-rounded-256.png",
+			"bytes": 106071,
+			"sha256": "bb5ba188f505237a182a18cded74505f5d16b8ba886070477ce14f1dae69f46b"
+		},
+		{
+			"path": "exports/clip-transparent-128.png",
+			"bytes": 23416,
+			"sha256": "bbd879a7cc93dcfc84cbd3b85011b657ac525da25e8cc0381728e6b6491e2e1d"
+		},
+		{
+			"path": "exports/clip-icon-128.png",
+			"bytes": 32992,
+			"sha256": "5e6c86089eab6e383daebbf0f46cca30b228ff6f845abe5a5b2a3c09a890d7e5"
+		},
+		{
+			"path": "exports/clip-rounded-128.png",
+			"bytes": 34240,
+			"sha256": "9f376618d32a5d041a47dc5553344434340fc09d67cf9c711d3263cc34392fe3"
+		},
+		{
+			"path": "exports/clip-transparent-64.png",
+			"bytes": 6899,
+			"sha256": "fad0c0d45efd802ec6a15c030f469629c527eb11fa06d6a93f93101c5ab95352"
+		},
+		{
+			"path": "exports/clip-icon-64.png",
+			"bytes": 10079,
+			"sha256": "754eaf791b0c4fc585882128f2a6725fa1b7574ab815c9955aa8adf0a2e14340"
+		},
+		{
+			"path": "exports/clip-rounded-64.png",
+			"bytes": 10621,
+			"sha256": "b22a9b41e45e8627596dca131436c20fc7e49e51d1d3f6464da6ad878cab1132"
+		},
+		{
+			"path": "exports/clip-transparent-48.png",
+			"bytes": 4220,
+			"sha256": "a7584f4e8ea82b3343b8f52de5686309f492bdbd98a4ea6f40dcc5dc18a2786a"
+		},
+		{
+			"path": "exports/clip-icon-48.png",
+			"bytes": 6069,
+			"sha256": "81ec7fc77208488751ac2dfd0900fdddf8198f797cd1c44da837d6e5c70b0696"
+		},
+		{
+			"path": "exports/clip-rounded-48.png",
+			"bytes": 6475,
+			"sha256": "b202ee34262c42122e7407a1315fa21c3bf6be257cac24689361c2eb924ae4fd"
+		},
+		{
+			"path": "exports/clip-transparent-32.png",
+			"bytes": 2163,
+			"sha256": "0b30942070f1d66326f811361302c6e67b9be81e66a56dd41b71f2664405ebd4"
+		},
+		{
+			"path": "exports/clip-icon-32.png",
+			"bytes": 3171,
+			"sha256": "46dc982fddd45cf9041a602fc90df592b44aabaf45ff961bf35a7108e5d5fe95"
+		},
+		{
+			"path": "exports/clip-rounded-32.png",
+			"bytes": 3313,
+			"sha256": "c163e84c40416a29acec8fdbcb1ec99e2a58c73692ae77cb4bf91b18c20ad1d9"
+		},
+		{
+			"path": "exports/clip-transparent-24.png",
+			"bytes": 1398,
+			"sha256": "8ec1b00bed076fd37a21c4da6e9dec55d3482073c9701b1e1e3e5b9b8309ca1a"
+		},
+		{
+			"path": "exports/clip-icon-24.png",
+			"bytes": 1933,
+			"sha256": "5fe164811df0c474b619baf53dcc305eb4453c4f5b7e326e7fff475b7534e909"
+		},
+		{
+			"path": "exports/clip-rounded-24.png",
+			"bytes": 2039,
+			"sha256": "fbe9ceb4e835d5382483f79563425327f7b300b8afa23686be26a67ec4b80174"
+		},
+		{
+			"path": "exports/clip-transparent-16.png",
+			"bytes": 769,
+			"sha256": "d1311b6d67365b8bf36bf1b5440cd3291003aa9a5e367816715bff557756b7dd"
+		},
+		{
+			"path": "exports/clip-icon-16.png",
+			"bytes": 973,
+			"sha256": "b252d70b26f403b6305781573f1e05786d59cccf210ee0527a883fec8587c2f1"
+		},
+		{
+			"path": "exports/clip-rounded-16.png",
+			"bytes": 1009,
+			"sha256": "164c33d2c03660b86c8c99472f76b32e34a416015bd3a18e84ac7686ed2e8e43"
+		},
+		{
+			"path": "exports/clip-white-2048.png",
+			"bytes": 2346013,
+			"sha256": "c8c66df9980c79d13f3608d11313fd003d079f279ce79a401caaea03a5458bfe"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 721861,
+			"sha256": "70ccd9bde1dd9beb0f671d81abe55e42299877dbed7e12ea4a0f63775445365c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 722052,
+			"sha256": "4c8fe9d13c396fd31e0c2a56529498c518bb41c3f3f913bff3807e2f0f828d79"
+		}
+	]
+}

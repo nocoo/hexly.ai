@@ -1,0 +1,388 @@
+{
+	"createdAt": "2026-09-07T12:44:30.463Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "meowth",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/meowth.png",
+		"background": {
+			"base": "#b5a6bb",
+			"light": "#e1d8e2",
+			"shade": "#887591",
+			"motif": "#64516f",
+			"grainAmplitude": 0.8,
+			"grainSeed": 6090773,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.2,
+			"pattern": {
+				"name": "Quiet yarn loops",
+				"description": "One broad looping yarn path turns through the upper-right paper, with a separate short lower-left return and slim relief edges.",
+				"layers": [
+					{
+						"d": "M1135 111C947-82 691-1 689 164C687 317 885 356 951 245C1017 134 849 77 802 174C754 274 876 409 1121 382",
+						"tone": "motif",
+						"strokeWidth": 33
+					},
+					{
+						"d": "M1142 91C947-103 668-26 668 163C667 334 897 379 971 254C1047 126 839 48 783 165C725 285 873 432 1120 403",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M-111 701C58 625 159 676 151 784C143 892-7 879 22 790C51 701 255 797 303 1059",
+						"tone": "ribbon",
+						"strokeWidth": 47
+					},
+					{
+						"d": "M-104 677C81 598 185 669 175 787C165 925-37 899-1 782C38 655 285 794 326 1064",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					}
+				]
+			},
+			"status": "Designed local presentation; separate from the existing source website palette."
+		},
+		"matte": {
+			"minimumChannel": 240,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 10,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"backgroundSeedsAt2048": [
+				[
+					1675,
+					1324
+				],
+				[
+					1263,
+					1845
+				]
+			],
+			"calibrationNote": "The native matte includes faint colored ringing near the contour. A 240 minimum-channel exterior-connected threshold removes these pale fringe islands while keeping the warm ivory, silver fur, whiskers and physical metallic highlights. Only explicit enclosed background gaps are seeded; white eye/metal highlights remain protected by connectivity.",
+			"backgroundSeedReason": "The exposed upper yarn-loop opening and the small gap beneath the paw are background. Eye highlights, pale muzzle planes and every connected whisker remain opaque.",
+			"componentCleanupReason": "Recorded isolated components under 100 native pixels are exterior matte/antialias residue. The genuine animal/accessory or complete equipment assembly remains connected."
+		},
+		"shadows": [
+			{
+				"color": [
+					100,
+					81,
+					111
+				],
+				"opacity": 0.15,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					100,
+					81,
+					111
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.886802,
+			"offsetAt2048": [
+				12,
+				-21
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform placement of the complete supplied foreground, preserving its intentional offset and every expressive feature or accessory. The natural faceted outline stays intact; no circular bust crop, stretched anatomy, independent part movement or synthetic continuation."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2151514,
+		"foregroundPixels": 2042790,
+		"softEdgePixels": 16444,
+		"removedComponents": 1,
+		"removedComponentPixels": 1,
+		"bounds": {
+			"left": 158,
+			"top": 90,
+			"right": 1808,
+			"bottom": 2005
+		}
+	},
+	"placement": {
+		"scale": 0.886802,
+		"offsetAt2048": [
+			12,
+			-21
+		],
+		"bounds": {
+			"left": 268,
+			"top": 175,
+			"right": 1732,
+			"bottom": 1873
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 174.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3131,
+			"sha256": "5c8545bdf51ea4415066e7a01a21501a7228dcdaa87d9d42537a9466dabed85b"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1155,
+			"sha256": "8e10169faa0949bd5eacad1ef53f78ac5759c6dacf69923e04b54776eb91bfa4"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3151961,
+			"sha256": "0c2c50aba82b376625fd2676c0056af9c7342db204b5b568c938ebd79409df80"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 78321,
+			"sha256": "59fac16896a8d88b825f34fca1a16c09e6e5fe2040a44ead01151c2ce0335869"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1061,
+			"sha256": "871b2ee66f19edbc6a21e04b5012c5132b67b411097eef479ee1ffd95a731705"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2214154,
+			"sha256": "37765090ae6ed90f7e1ed8def00a6ae4cf1e2cb567c3045b62103a12d311982b"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2779031,
+			"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 99658,
+			"sha256": "0b19aa2f166625f9be58d3f3d1ec27a300ff66e8cccbc035d8bb928105836485"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 223802,
+			"sha256": "c5ff99250bdb52e28d3b5a1680213d8f6b9ec0f37cfc51577cc500f81f2ee742"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 171335,
+			"sha256": "290b7eda37b39690f38712f85f46b6757093d76ad7e3f7d5eb73444062cf61e4"
+		},
+		{
+			"path": "exports/meowth-transparent-2048.png",
+			"bytes": 2779031,
+			"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378"
+		},
+		{
+			"path": "exports/meowth-icon-2048.png",
+			"bytes": 4479655,
+			"sha256": "2a6411110cd68b6a5b38bbefe9325d515276e7f50ec257d8c6a5520bc6d4b10a"
+		},
+		{
+			"path": "exports/meowth-rounded-2048.png",
+			"bytes": 4388260,
+			"sha256": "99eb2aaff6616232bb87e56170631349957dd72f7f2506f8daf001a55373aed4"
+		},
+		{
+			"path": "exports/meowth-transparent-1024.png",
+			"bytes": 821815,
+			"sha256": "60ae75c6848d1a97440cb3deec21955a444b4a6a5ab2ea7a56849e8331b683dd"
+		},
+		{
+			"path": "exports/meowth-icon-1024.png",
+			"bytes": 1200806,
+			"sha256": "5c3f4dc020ad1831b363ea41170558fe3459d81a62ca872826fbf6d358a7cdac"
+		},
+		{
+			"path": "exports/meowth-rounded-1024.png",
+			"bytes": 1194619,
+			"sha256": "84fac5c40fcb853e1fdc2ffb7e8240c61a5f1eb2dba8132fb7406768e0cbe07d"
+		},
+		{
+			"path": "exports/meowth-transparent-512.png",
+			"bytes": 259577,
+			"sha256": "aac64bdc62a6b287df23cef05c2c38f09279fca0476cc163a1157a8c260cc62c"
+		},
+		{
+			"path": "exports/meowth-icon-512.png",
+			"bytes": 393566,
+			"sha256": "fb0f39252e010b2fed0df883bbcd6d0c43f8dabba8b204fe95d8a01938e8ab93"
+		},
+		{
+			"path": "exports/meowth-rounded-512.png",
+			"bytes": 392468,
+			"sha256": "f1cb2696f916c12d93cca52aef44d443e9c81b19706f07c0d1cab9f60e908c2e"
+		},
+		{
+			"path": "exports/meowth-transparent-256.png",
+			"bytes": 80035,
+			"sha256": "c39d35b1634b601b02c790c2e021cb895ec72df7e2f467d720fc86638056e38a"
+		},
+		{
+			"path": "exports/meowth-icon-256.png",
+			"bytes": 102139,
+			"sha256": "7852e0ec42c8b8267715f9986e1688d817d1e8cdcffdf74ae272cd790bd74dbc"
+		},
+		{
+			"path": "exports/meowth-rounded-256.png",
+			"bytes": 104775,
+			"sha256": "01a239863cb8170a02a29f2e0242a09722abe374382b08cfeac825be83fbf819"
+		},
+		{
+			"path": "exports/meowth-transparent-128.png",
+			"bytes": 22991,
+			"sha256": "3159c1b3bfe931d7066d39427c7617b54be91bb947252ed33065d2b16ff9849d"
+		},
+		{
+			"path": "exports/meowth-icon-128.png",
+			"bytes": 31249,
+			"sha256": "3de91466d4b2e42eb4630172c5e6ed892b30f877e28b0aacdd991282140aa7e3"
+		},
+		{
+			"path": "exports/meowth-rounded-128.png",
+			"bytes": 32457,
+			"sha256": "fe7752adf87c47d728109d075ec9ac9027cab33a9cbec7a4972cd02d11218f3b"
+		},
+		{
+			"path": "exports/meowth-transparent-64.png",
+			"bytes": 6654,
+			"sha256": "2f41584d8c129c79f77604f4c7073f3ba3f6c039690faee6fe54b32af4eb4247"
+		},
+		{
+			"path": "exports/meowth-icon-64.png",
+			"bytes": 9678,
+			"sha256": "a35ffa7933dca4faeccd64838c5b9b3965bf8b3ac4105139c2632470da0201f7"
+		},
+		{
+			"path": "exports/meowth-rounded-64.png",
+			"bytes": 10175,
+			"sha256": "f95ef91a95a92d5bd642a6fb6b7cad96cf5c87b1f633c8763b3a9bb8c4279eb2"
+		},
+		{
+			"path": "exports/meowth-transparent-48.png",
+			"bytes": 4050,
+			"sha256": "6be54518415f10915ce29277a75a38aaf362032fcff999b010011451124468d5"
+		},
+		{
+			"path": "exports/meowth-icon-48.png",
+			"bytes": 5699,
+			"sha256": "6a2664ef57fbe0b367304230313fbce1586a6af16bb84da854568a54d97be39f"
+		},
+		{
+			"path": "exports/meowth-rounded-48.png",
+			"bytes": 6075,
+			"sha256": "c7117be022f6a2cb39c69de5da0227e081c01f16a2bb3800b9c93782bbf9cb27"
+		},
+		{
+			"path": "exports/meowth-transparent-32.png",
+			"bytes": 2083,
+			"sha256": "6b6c4a3954ffff9183ba019ef4ea64988cb2d56084d3ebd7b9243b2843bca5ba"
+		},
+		{
+			"path": "exports/meowth-icon-32.png",
+			"bytes": 2953,
+			"sha256": "4153e1f2e1c4a42a9d9155838257b25f0794e55b023f02724ec3337d8771e8dd"
+		},
+		{
+			"path": "exports/meowth-rounded-32.png",
+			"bytes": 3098,
+			"sha256": "9cddf167c56ead0addafe16c6bdecea6d01edc1d3e94703d32ab3b2b443781c5"
+		},
+		{
+			"path": "exports/meowth-transparent-24.png",
+			"bytes": 1360,
+			"sha256": "f6186dbe1089a920c7b3ca01c8acb2d73a64582bf36fbab6c388e08c550ee224"
+		},
+		{
+			"path": "exports/meowth-icon-24.png",
+			"bytes": 1777,
+			"sha256": "aba13bfc07bececa15bffe9fc924e88e3596b6ffdf4c7fa8c460914f79ab0e1b"
+		},
+		{
+			"path": "exports/meowth-rounded-24.png",
+			"bytes": 1896,
+			"sha256": "434eae6b1658eb1990ef66a9a9d2062e438cda6d2abec8886c434f0c0325bb3d"
+		},
+		{
+			"path": "exports/meowth-transparent-16.png",
+			"bytes": 742,
+			"sha256": "27fcad007b317072926b23d480371bd74a2950a342ec3fb62825ac954d800259"
+		},
+		{
+			"path": "exports/meowth-icon-16.png",
+			"bytes": 882,
+			"sha256": "dd531fde5394abc97f5ee4e17393b0af3a4b7253bbe765fcb40dca0e1b0381ab"
+		},
+		{
+			"path": "exports/meowth-rounded-16.png",
+			"bytes": 927,
+			"sha256": "ebbb5d83face48ef9ee17ca2038fbdea920f6bcc7781512c9eec004dcdf3c445"
+		},
+		{
+			"path": "exports/meowth-white-2048.png",
+			"bytes": 2582419,
+			"sha256": "88ef7b2c8ba5a731b2b239731232a6c5e960f98741cbcf3d7708ba26c7eaffc5"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 779978,
+			"sha256": "6c6fb51b937065823962660fee0d99ce24d27dd219af42a77523acb5cba9c88a"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 786008,
+			"sha256": "1e8e3ebf571c8982b421eb6d059edb084e1ec7f1c62e150d5cb1fe3a4fc44316"
+		}
+	]
+}

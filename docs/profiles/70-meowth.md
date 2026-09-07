@@ -37,8 +37,59 @@
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Future family notes
+## Refined identity
+
+![Meowth refined preview](../../public/logos/family/meowth/2026-09-07-01/02/icon-160.webp)
+
+- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
+- Study `2026-09-07-01`, finishing `02`
+- Refined subject: A silver-blue American Shorthair head playing with one yarn loop
+- Site path: `/logos/meowth`; [local gallery](https://index.dev.hexly.ai/logos/meowth)
+- [Static review HTML](../../artwork/logo-family/meowth/2026-09-07-01/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/meowth/2026-09-07-01)
+- [Transparent foreground](../../public/logos/family/meowth/2026-09-07-01/02/transparent.png); SHA-256: `5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378`
+- [Square icon](../../public/logos/family/meowth/2026-09-07-01/02/icon.png), [rounded icon](../../public/logos/family/meowth/2026-09-07-01/02/rounded.png), [white version](../../public/logos/family/meowth/2026-09-07-01/02/white.png)
+- [Untouched generation](../../public/logos/family/meowth/2026-09-07-01/02/raw.png), [exact prompt](../../public/logos/family/meowth/2026-09-07-01/02/prompt.txt), [public asset checksums](../../public/logos/family/meowth/2026-09-07-01/02/manifest.json)
+- [Previous original](../../public/logos/originals/meowth.png), copied from [its immutable source](https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png)
+- Previous SHA-256: `13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541`
+- Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
+- Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
+
+### Refined palette
+
+| Role | Value | Evidence |
+| --- | --- | --- |
+| background | `#b5a6bb` | Selected local presentation, meowth/2026-09-07-01/02; background.base in archived settings.json |
+| primary | `#4c6073` | Native meowth 64e396c30a77, sampled sRGB pixel (1180, 680); artwork/logo-family/meowth/2026-09-07-01/palette.json |
+| accent | `#bdc2cc` | Native meowth 64e396c30a77, sampled sRGB pixel (840, 710); artwork/logo-family/meowth/2026-09-07-01/palette.json |
+| accent | `#e8ded4` | Native meowth 64e396c30a77, sampled sRGB pixel (800, 1300); artwork/logo-family/meowth/2026-09-07-01/palette.json |
+| accent | `#e3b265` | Native meowth 64e396c30a77, sampled sRGB pixel (667, 930); artwork/logo-family/meowth/2026-09-07-01/palette.json |
+| accent | `#2badb8` | Native meowth 64e396c30a77, sampled sRGB pixel (1740, 1390); artwork/logo-family/meowth/2026-09-07-01/palette.json |
+| accent | `#f1958d` | Native meowth 64e396c30a77, sampled sRGB pixel (1650, 1220); artwork/logo-family/meowth/2026-09-07-01/palette.json |
+
+### A tilted head and a waiting paw
+
+The American Shorthair tilts its large head toward a single yarn strand held by one natural paw. Unequal ear heights and the loop beside the cheek establish the offset moment. The complete faceted shoulder contour is uniformly inset with generous room around ears, whiskers and yarn.
+
+美短把大脑袋歪向一根毛线，一只自然的小爪轻轻按住它。高低错落的双耳与脸旁线圈形成偏心瞬间，完整的肩部色块轮廓等比内收，为耳尖、胡须和毛线留出空间。
+
+### Silver tabby, one yarn gesture
+
+Silver, slate blue and warm ivory form the classic tabby markings through connected flat facets. Amber eyes keep the expression clear. Coral, gold, turquoise and violet stay together along one continuous yarn strand instead of spreading across the coat.
+
+银灰、石板蓝和暖象牙白以连贯的平面碎片构成经典虎斑，琥珀眼保持神态清楚。珊瑚、金、青与紫集中在一根连续毛线上，不散落到毛色中。
+
+### Quiet yarn loops
+
+Muted mauve paper carries broad looping relief in the empty corners, echoing the yarn’s action at lower contrast. Fine grain, broad light and shallow contact shadows add depth while keeping the silver portrait distinct from the background.
+
+柔和灰紫纸面在角落留白处铺开宽阔回环，以较低对比呼应毛线动作。细颗粒、宽柔光和浅接触阴影增加层次，让银灰头像与背景清楚分开。
+
+Small-size observation: At 32/16 px the tilted ears, silver tabby mask and amber eyes carry recognition. Fine whiskers and the two bends of the single yarn strand simplify. Sidebar and favicon marks use the transparent cat; large views may use the mauve presentation.
+
+## Further refinements
 
 Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. No new logo is generated in phase one.
+Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.
