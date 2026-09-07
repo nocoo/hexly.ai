@@ -33,15 +33,23 @@ for (const project of projects) {
 		const study = `artwork/logo-family/${project.id}/${family.id}`;
 		const finishing = `${study}/finishing/${family.finishing}`;
 		const retained = family.method === "retained-original";
+		const adapted = family.method === "reference-adaptation";
+		const supplied = retained || adapted;
 		const sourceRecord = JSON.parse(
 			await readFile(
-				`${study}/${retained ? "source" : "response"}.json`,
+				`${study}/${supplied ? "source" : "response"}.json`,
 				"utf8",
 			),
-		) as { output?: { path: string }; artwork?: { path: string } };
-		const sourcePath = retained
-			? sourceRecord.artwork?.path
-			: sourceRecord.output?.path;
+		) as {
+			output?: { path: string };
+			artwork?: { path: string };
+			reference?: { path: string };
+		};
+		const sourcePath = adapted
+			? sourceRecord.reference?.path
+			: retained
+				? sourceRecord.artwork?.path
+				: sourceRecord.output?.path;
 		if (!sourcePath) throw new Error(`Missing study source: ${project.id}`);
 		const nativeSize = family.foreground.width;
 		await mkdir(root, { recursive: true });
@@ -61,10 +69,13 @@ for (const project of projects) {
 				`${finishing}/exports/${project.id}-white-${nativeSize}.png`,
 			],
 			["background.png", `${finishing}/background.png`],
-			[retained ? "source.png" : "raw.png", `${study}/${sourcePath}`],
 			[
-				retained ? "brief.txt" : "prompt.txt",
-				`${study}/${retained ? "brief.txt" : "prompt.txt"}`,
+				adapted ? "source.jpg" : retained ? "source.png" : "raw.png",
+				`${study}/${sourcePath}`,
+			],
+			[
+				supplied ? "brief.txt" : "prompt.txt",
+				`${study}/${supplied ? "brief.txt" : "prompt.txt"}`,
 			],
 		] as const) {
 			const data = await readFile(source);
