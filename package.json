@@ -58,5 +58,8 @@
 		"vite": "8.2.2",
 		"vitest": "5.0.0",
 		"wrangler": "4.129.0"
+	},
+	"patchedDependencies": {
+		"wrangler@4.129.0": "patches/wrangler@4.129.0.patch"
 	}
 }
