@@ -1,0 +1,62 @@
+{
+	"project": "dove",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#83759b",
+		"light": "#bfb2cd",
+		"shade": "#57496e",
+		"motif": "#3e2f58",
+		"grainAmplitude": 1,
+		"grainSeed": 609078,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Pressed petals",
+			"description": "Sparse elongated petal impressions lean at different angles near the empty corners. Paired offset edges make a shallow botanical paper relief, not another foreground flower cluster.",
+			"layers": [
+				{
+					"d": "M-48 375C-48 183 88 49 243 37C206 181 115 311-48 375Z M669-48C804-9 833 94 797 215C695 160 643 58 669-48Z M962 359C947 176 1041 60 1144 45C1150 204 1088 310 962 359Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-41 378C122 314 213 184 250 40 M804 218C702 163 650 61 676-45 M969 362C1095 313 1157 207 1151 48",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M771 1101C760 965 833 874 963 829C990 960 920 1076 771 1101Z M-55 841C102 814 213 875 262 995C100 1018 13 953-55 841Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M778 1104C927 1079 997 963 970 832 M-52 848C16 960 103 1025 265 1002",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+	},
+	"shadows": [
+		{
+			"color": [44, 37, 55],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [35, 29, 44],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": []
+}

@@ -1,0 +1,62 @@
+{
+	"project": "neo",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#5c7eaa",
+		"light": "#a4bad5",
+		"shade": "#39577e",
+		"motif": "#253c60",
+		"grainAmplitude": 1,
+		"grainSeed": 609079,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.23,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Folded sunlight",
+			"description": "Wide asymmetrical ray-like paper planes enter from the upper-right and lower-left. Their varied widths, oblique ends, and short highlighted seams make a calm sunlit fold rather than a starburst or pixel grid.",
+			"layers": [
+				{
+					"d": "M637-90L751-90L488 278L388 323Z M871-80L1028-55L711 279L636 294Z M1078 73L1131 199L868 349L813 329Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M394 328L494 283L757-85 M642 299L717 284L1034-50 M819 334L874 354L1137 204",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-98 790L-48 924L203 742L231 680Z M-36 1101L131 1101L287 894L264 823Z M330 1120L452 1134L442 939L403 900Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-44 930L209 748L237 686 M136 1106L293 899L270 828 M458 1134L448 939L409 900",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+	},
+	"shadows": [
+		{
+			"color": [29, 44, 63],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [23, 35, 50],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": []
+}

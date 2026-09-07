@@ -1,0 +1,138 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"width": 920,
+		"height": 920,
+		"bytes": 668704,
+		"repository": "https://github.com/nocoo/r2shot",
+		"repositoryRevision": "761799416deb2a977eee92b2392746e16f6bc644",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Lagoon cyan",
+				"zh": "泻湖青"
+			},
+			"color": "#3fc2d0",
+			"x": 568,
+			"y": 298,
+			"alpha": 254,
+			"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (568, 298); palette.json"
+		},
+		{
+			"label": {
+				"en": "Ocean blue",
+				"zh": "海蓝"
+			},
+			"color": "#198eba",
+			"x": 217,
+			"y": 676,
+			"alpha": 254,
+			"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (217, 676); palette.json"
+		},
+		{
+			"label": {
+				"en": "Ice mint",
+				"zh": "冰薄荷"
+			},
+			"color": "#dbffff",
+			"x": 494,
+			"y": 280,
+			"alpha": 254,
+			"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (494, 280); palette.json"
+		},
+		{
+			"label": {
+				"en": "Deep water",
+				"zh": "深海蓝"
+			},
+			"color": "#143361",
+			"x": 653,
+			"y": 181,
+			"alpha": 254,
+			"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (653, 181); palette.json"
+		},
+		{
+			"label": {
+				"en": "Tail turquoise",
+				"zh": "尾鳍青"
+			},
+			"color": "#2ebad5",
+			"x": 854,
+			"y": 632,
+			"alpha": 254,
+			"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (854, 632); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#4d818c",
+		"light": "#8cbbc0",
+		"shade": "#35586c",
+		"motif": "#173f54",
+		"grainAmplitude": 1,
+		"grainSeed": 609071,
+		"motifOpacity": 0.19,
+		"highlightOpacity": 0.25,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Dolphin wake",
+			"description": "Three oblique wave crests sweep through the upper-right field; a shallow lower wake follows the dolphin tail. Raised edges use a small light offset, unlike the family stripe, orbit, and horn motifs.",
+			"layers": [
+				{
+					"d": "M340-90C520 128 663 183 1120 62L1130 105C699 237 482 180 302-69Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M518-85C658 53 836 58 1089-20L1110 23C823 121 635 105 480-67Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M490 122C699 331 887 269 1111 171L1120 208C879 324 678 386 462 156Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M305-67C483 182 699 240 1130 108",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M483-67C635 108 823 124 1110 26",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M463 159C678 389 879 327 1120 211",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-90 831C139 871 184 1041 492 1090L455 1120C151 1067 90 919-92 867Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-80 906C68 944 115 1013 242 1074",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"primary": {
+			"value": "#24c4bd",
+			"source": "src/shared/index.css --color-primary"
+		},
+		"background": {
+			"value": "#ffffff",
+			"source": "src/shared/index.css --color-background"
+		},
+		"ink": {
+			"value": "#0f172a",
+			"source": "src/shared/index.css --color-foreground"
+		}
+	}
+}

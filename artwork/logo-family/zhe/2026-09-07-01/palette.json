@@ -1,0 +1,131 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3100798,
+		"repository": "https://github.com/nocoo/zhe",
+		"repositoryRevision": "120a01207c1b978a081413e785099d3580890d80",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/zhe/blob/120a01207c1b978a081413e785099d3580890d80/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Honey gold",
+				"zh": "蜂蜜金"
+			},
+			"color": "#f0b724",
+			"x": 1478,
+			"y": 1111,
+			"alpha": 254,
+			"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1478, 1111); palette.json"
+		},
+		{
+			"label": {
+				"en": "Amber",
+				"zh": "琥珀"
+			},
+			"color": "#e48f2a",
+			"x": 1150,
+			"y": 1048,
+			"alpha": 254,
+			"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1150, 1048); palette.json"
+		},
+		{
+			"label": {
+				"en": "Cocoa",
+				"zh": "可可棕"
+			},
+			"color": "#47260c",
+			"x": 1159,
+			"y": 747,
+			"alpha": 254,
+			"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1159, 747); palette.json"
+		},
+		{
+			"label": {
+				"en": "Wing cyan",
+				"zh": "翼青"
+			},
+			"color": "#86cddf",
+			"x": 616,
+			"y": 797,
+			"alpha": 254,
+			"source": "Original zhe a0c8b9240261, sampled sRGB pixel (616, 797); palette.json"
+		},
+		{
+			"label": {
+				"en": "Wing rose",
+				"zh": "翼粉"
+			},
+			"color": "#fac7e2",
+			"x": 860,
+			"y": 398,
+			"alpha": 254,
+			"source": "Original zhe a0c8b9240261, sampled sRGB pixel (860, 398); palette.json"
+		},
+		{
+			"label": {
+				"en": "Antenna coral",
+				"zh": "触角珊瑚"
+			},
+			"color": "#e57863",
+			"x": 1224,
+			"y": 300,
+			"alpha": 254,
+			"source": "Original zhe a0c8b9240261, sampled sRGB pixel (1224, 300); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#bb914f",
+		"light": "#e3ca8b",
+		"shade": "#8b6036",
+		"motif": "#68421d",
+		"grainAmplitude": 1,
+		"grainSeed": 609073,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.26,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Beeswax cells",
+			"description": "Large irregular honeycomb cells remain mostly at the perimeter. Alternating filled cells and tiny light edges suggest pressed beeswax rather than a repeating digital grid.",
+			"layers": [
+				{
+					"d": "M-70 575L72 493L214 575V739L72 821L-70 739Z M214 739L356 821V985L214 1067L72 985V821Z M782-77L924 5V169L782 251L640 169V5Z M924 169L1066 87L1208 169V333L1066 415L924 333Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-71 411L71 329L213 411V575L71 657L-71 575 M782 251V415L924 497L1066 415 M782 744L924 662L1066 744V908L924 990L782 908Z",
+					"tone": "motif",
+					"strokeWidth": 16
+				},
+				{
+					"d": "M-69 576L73 494L215 576 M73 823L215 741L357 823 M642 171L784 253L926 171 M784 747L926 665L1068 747",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M357 986L499 904L641 986V1150L499 1232L357 1150Z",
+					"tone": "ribbon"
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"background": {
+			"value": "220 14% 94%",
+			"source": "app/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "app/globals.css --foreground"
+		},
+		"primary": {
+			"value": "262 83% 58%",
+			"source": "app/globals.css --primary"
+		}
+	}
+}

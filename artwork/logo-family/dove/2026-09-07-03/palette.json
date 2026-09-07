@@ -1,0 +1,120 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4062349,
+		"repository": "https://github.com/nocoo/dove",
+		"repositoryRevision": "cb477a39d2fbb6bc561bcf5348cb5e830c83de29",
+		"sourcePath": "src/client/public/logo.png",
+		"sourceUrl": "https://github.com/nocoo/dove/blob/cb477a39d2fbb6bc561bcf5348cb5e830c83de29/src/client/public/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Iris violet",
+				"zh": "鸢尾紫"
+			},
+			"color": "#8079a5",
+			"x": 885,
+			"y": 372,
+			"alpha": 254,
+			"source": "Original dove 25be5b3506f8, sampled sRGB pixel (885, 372); palette.json"
+		},
+		{
+			"label": {
+				"en": "Blue feather",
+				"zh": "蓝羽"
+			},
+			"color": "#4c5777",
+			"x": 1237,
+			"y": 783,
+			"alpha": 254,
+			"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1237, 783); palette.json"
+		},
+		{
+			"label": {
+				"en": "Petal pink",
+				"zh": "花瓣粉"
+			},
+			"color": "#fbccc6",
+			"x": 336,
+			"y": 482,
+			"alpha": 252,
+			"source": "Original dove 25be5b3506f8, sampled sRGB pixel (336, 482); palette.json"
+		},
+		{
+			"label": {
+				"en": "Mint feather",
+				"zh": "薄荷羽色"
+			},
+			"color": "#65c8b6",
+			"x": 1101,
+			"y": 1055,
+			"alpha": 254,
+			"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1101, 1055); palette.json"
+		},
+		{
+			"label": {
+				"en": "Warm beak",
+				"zh": "暖色鸟喙"
+			},
+			"color": "#d4b7a9",
+			"x": 1196,
+			"y": 474,
+			"alpha": 254,
+			"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1196, 474); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#83759b",
+		"light": "#bfb2cd",
+		"shade": "#57496e",
+		"motif": "#3e2f58",
+		"grainAmplitude": 1,
+		"grainSeed": 609078,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Pressed petals",
+			"description": "Sparse elongated petal impressions lean at different angles near the empty corners. Paired offset edges make a shallow botanical paper relief, not another foreground flower cluster.",
+			"layers": [
+				{
+					"d": "M-48 375C-48 183 88 49 243 37C206 181 115 311-48 375Z M669-48C804-9 833 94 797 215C695 160 643 58 669-48Z M962 359C947 176 1041 60 1144 45C1150 204 1088 310 962 359Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-41 378C122 314 213 184 250 40 M804 218C702 163 650 61 676-45 M969 362C1095 313 1157 207 1151 48",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M771 1101C760 965 833 874 963 829C990 960 920 1076 771 1101Z M-55 841C102 814 213 875 262 995C100 1018 13 953-55 841Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M778 1104C927 1079 997 963 970 832 M-52 848C16 960 103 1025 265 1002",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"background": {
+			"value": "330 20% 94%",
+			"source": "src/client/styles/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "src/client/styles/globals.css --foreground"
+		},
+		"primary": {
+			"value": "340 50% 55%",
+			"source": "src/client/styles/globals.css --primary"
+		}
+	}
+}

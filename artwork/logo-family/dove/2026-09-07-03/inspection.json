@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4062349,
+		"repository": "https://github.com/nocoo/dove",
+		"repositoryRevision": "cb477a39d2fbb6bc561bcf5348cb5e830c83de29",
+		"sourcePath": "src/client/public/logo.png",
+		"sourceUrl": "https://github.com/nocoo/dove/blob/cb477a39d2fbb6bc561bcf5348cb5e830c83de29/src/client/public/logo.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 153,
+			"top": 247,
+			"right": 1879,
+			"bottom": 1901
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 146.50000000000006,
+		"clippedPixels": 0
+	},
+	"framingAssessment": "The entire retained silhouette remains inside the rounded boundary; no visible source pixels are clipped.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/dove",
+			"/artwork/logo-family/dove/2026-09-07-03/review.html"
+		]
+	}
+}
