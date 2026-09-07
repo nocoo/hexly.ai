@@ -1,0 +1,88 @@
+{
+	"project": "ellie",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#537b93",
+		"light": "#a9c5cf",
+		"shade": "#2c4c65",
+		"motif": "#19374f",
+		"grainAmplitude": 1,
+		"grainSeed": 609081,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Mineral listening folds",
+			"description": "Large unequal mineral panels meet at open diagonal folds. Long angular seams gather above the elephant while a broad counterfold remains at lower right; the field is clean and spacious rather than tessellated noise.",
+			"layers": [
+				{
+					"d": "M-120 539L318-106L501-106L57 510Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-85 546L510-107",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M194-102L580 323L858 111L1134 263L1134 74L871-77L591 136L377-102Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M585 321L861 109L1122 255",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M628 1120L799 903L1110 827L1110 959L885 1008L802 1120Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M621 1110L790 887L1111 813",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-94 750L208 689L72 1088L-93 1088Z",
+					"tone": "ribbon"
+				}
+			]
+		},
+		"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+	},
+	"shadows": [
+		{
+			"color": [29, 31, 35],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [23, 26, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [0, 260],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniform 90% placement with a downward offset moves the native lower neck crop through the bottom viewfinder boundary. The broad ear, natural face, curled trunk, tusk, and complete airplane retain their exact relative proportions. No anatomy extension or repeated edge pixels."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/ellie.png",
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [250, 251, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+	}
+}

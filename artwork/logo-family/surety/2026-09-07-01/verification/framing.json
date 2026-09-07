@@ -1,0 +1,53 @@
+{
+	"sourceSha256": "ae84f2009fb76b37853b64fa85c8204cb6d51d5fa263affd146fa8d8ba8f74a3",
+	"foregroundSha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+	"squareSha256": "587a4c30fd62c32927fc51b03911ad3dd287de18e3e1731ca05d8eb841c68c54",
+	"roundedSha256": "0ba3d464cf5672cf97d5e3c58f3df959b4b938fc0a1e8fb4c09552b32526aa4d",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance from visible pixel centers to the actual rounded-square boundary. Native anatomical regions are transformed by the exact rounded resize and placement.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.86,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform centered 86% placement of the complete mane portrait. No contour additions, stretched anatomy, or corner clipping; every visible feature is protected."
+	},
+	"protectedFeatures": [
+		{
+			"name": "Complete mane and ears",
+			"nativeRegionAt2048": [80, 90, 1610, 2048],
+			"regionAt2048": [211, 220, 1528, 1904],
+			"visiblePixels": 1727476,
+			"minimumClearancePx": 145.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Eyes and complete muzzle",
+			"nativeRegionAt2048": [930, 690, 1770, 1590],
+			"regionAt2048": [942, 736, 1665, 1511],
+			"visiblePixels": 457056,
+			"minimumClearancePx": 383.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Single butterfly",
+			"nativeRegionAt2048": [1580, 760, 1940, 1230],
+			"regionAt2048": [1501, 796, 1812, 1201],
+			"visiblePixels": 52676,
+			"minimumClearancePx": 257.5,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": [],
+		"clippedPixels": 0,
+		"bottomRowVisiblePixels": 0,
+		"rightColumnVisiblePixels": 0,
+		"note": "Only the documented native lower neck/shoulder continuation intersects the presentation outline. The complete lion mane and whole owl are fully inset."
+	},
+	"continuation": null
+}
