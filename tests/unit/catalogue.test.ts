@@ -11,6 +11,10 @@ import type { Project } from "../../src/model/project";
 
 const projects = rawProjects as Project[];
 const active = projects.filter((project) => !project.archived);
+const tiers = [
+	active.filter((project) => project.family),
+	active.filter((project) => !project.family),
+];
 const frogie = projects.find((project) => project.id === "frogie");
 if (!frogie) throw new Error("Frogie is required as the reference identity.");
 
@@ -39,12 +43,14 @@ describe("the imported project catalogue", () => {
 		expect(filterProjects(projects, "  AI   agents  ", "ai")).toContain(frogie);
 		expect(filterProjects(projects, "frogie", "games")).toEqual([]);
 		expect(filterProjects(projects, "not-a-real-project")).toEqual([]);
-		expect(filterProjects(projects, "  ")).toEqual(active);
+		expect(filterProjects(projects, "  ")).toEqual(tiers.flat());
 		const sorted = filterProjects(projects, "", "all", "az");
 		expect(sorted.map((project) => project.title)).toEqual(
-			active
-				.map((project) => project.title)
-				.toSorted((a, b) => a.localeCompare(b, "en")),
+			tiers.flatMap((tier) =>
+				tier
+					.map((project) => project.title)
+					.toSorted((a, b) => a.localeCompare(b, "en")),
+			),
 		);
 		expect(projects).toEqual(before);
 	});
