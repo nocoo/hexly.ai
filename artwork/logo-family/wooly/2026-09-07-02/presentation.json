@@ -1,0 +1,82 @@
+{
+	"project": "wooly",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#ad8093",
+		"light": "#d6b2bd",
+		"shade": "#794f6d",
+		"motif": "#5f3455",
+		"grainAmplitude": 1,
+		"grainSeed": 609076,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.25,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Wool cloud folds",
+			"description": "Large scalloped seams gather at the left and lower edges like lightly pressed wool. The lobes remain open and uneven, avoiding both a repeated grid and the octopus curling channels.",
+			"layers": [
+				{
+					"d": "M-90 425C-3 407 4 343-25 305C65 343 131 281 114 216C198 245 241 191 222 122C312 158 371 82 340-42",
+					"tone": "motif",
+					"strokeWidth": 29
+				},
+				{
+					"d": "M-91 443C16 424 22 344-7 315C78 359 151 280 133 228C217 258 262 189 242 135C330 173 391 83 360-44",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M326 1091C337 1011 407 973 457 1018C436 923 510 875 573 908C566 824 637 789 698 833C722 748 808 744 854 803C892 729 981 746 1017 814C1060 785 1100 802 1126 845",
+					"tone": "motif",
+					"strokeWidth": 34
+				},
+				{
+					"d": "M344 1094C354 1026 414 995 474 1035C453 938 519 896 590 926C583 841 646 810 708 852C737 767 812 765 859 823C897 749 978 766 1024 833",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M779-93C759 9 806 63 877 43C864 131 938 169 1004 128C1007 210 1075 241 1131 206",
+					"tone": "ribbon",
+					"strokeWidth": 37
+				}
+			]
+		},
+		"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+	},
+	"shadows": [
+		{
+			"color": [61, 40, 55],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [48, 32, 44],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 82],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniform 92% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/wooly.png",
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 8,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 32,
+		"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity."
+	}
+}

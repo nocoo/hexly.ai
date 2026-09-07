@@ -1,0 +1,388 @@
+{
+	"createdAt": "2026-09-07T01:43:28.644Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "noheir",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#638783",
+			"light": "#a5c2b8",
+			"shade": "#3d625f",
+			"motif": "#254946",
+			"grainAmplitude": 1,
+			"grainSeed": 609077,
+			"motifOpacity": 0.19,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Quiet terraces",
+				"description": "Broad terraced contours turn around the upper-left and lower-right edges with softened right-angle bends. Unequal levels and short step transitions suggest a pressed landscape, rather than flowing waves or feather stripes.",
+				"layers": [
+					{
+						"d": "M-90 277H142Q208 277 208 205V149Q208 88 278 88H529V-80",
+						"tone": "motif",
+						"strokeWidth": 31
+					},
+					{
+						"d": "M-90 294H144Q225 294 225 205V151Q225 106 279 106H547V-80",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-91 454H49Q104 454 104 388V338Q104 307 149 307H297Q360 307 360 243V211Q360 168 424 168H725V-91",
+						"tone": "ribbon",
+						"strokeWidth": 30
+					},
+					{
+						"d": "M613 1102V925Q613 870 674 870H741Q802 870 802 812V729Q802 678 867 678H1120",
+						"tone": "motif",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M633 1103V928Q633 890 676 890H743Q822 890 822 814V730Q822 698 869 698H1120",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M427 1100V1041Q427 983 494 983H521Q565 983 565 937V858Q565 795 623 795H717Q729 795 729 763V641Q729 562 811 562H1114",
+						"tone": "ribbon",
+						"strokeWidth": 23
+					}
+				]
+			},
+			"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+		},
+		"shadows": [
+			{
+				"color": [
+					31,
+					49,
+					48
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					39,
+					38
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				0,
+				103
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "Uniform 90% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/noheir.png",
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 32,
+			"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1784622,
+		"foregroundPixels": 2409682,
+		"softEdgePixels": 9807,
+		"removedComponents": 17,
+		"removedComponentPixels": 40,
+		"bounds": {
+			"left": 213,
+			"top": 0,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			0,
+			103
+		],
+		"bounds": {
+			"left": 294,
+			"top": 205,
+			"right": 1944,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -126.03080250167983,
+		"clippedPixels": 19770
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2945,
+			"sha256": "c120df860eedbdf364cde8afc686e12a9b69844d2bfeebcacf15579e8f6033a5"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1180,
+			"sha256": "0cb4eb4cad504f23c93f5dd0856f22ebd5d3e151611c3eb9ecc659d1a4a22b55"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4474596,
+			"sha256": "de603e464eba7f76c40d72a665526352864c7e8e69dd9056fda52d1ae2d6ab10"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 62974,
+			"sha256": "9d2c3f64b094046326c256aa8c0d673134cb9fa5ddc6751dd2431f103083f1f8"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1313,
+			"sha256": "c8eac659e4b5518eead045419d2e4e5f179a8d4f2b0d4d06ba93a24fca4d0ff0"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2392641,
+			"sha256": "454ddfbeecf04a235ed632d55135657df3e58900a461f452f47c3624df33f359"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3792934,
+			"sha256": "2f79a77e43165863dd415f6bf54ab07bab29faf9cb7fd926ba115480582d37c4"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 80995,
+			"sha256": "963c46361fcdcb5fb2cf22aa63a6cda8b108088c3d7ec665459c7c3eec55efd5"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 166493,
+			"sha256": "985ee06bcc42e20b1aeda808cd9ef8c3090ee8795a2254246f86492c7db232a0"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 122006,
+			"sha256": "f7da8bb19131cc5cf45fe93042e331e154abfda75b206fafefa7ebc2e639e729"
+		},
+		{
+			"path": "exports/noheir-transparent-2048.png",
+			"bytes": 3792934,
+			"sha256": "2f79a77e43165863dd415f6bf54ab07bab29faf9cb7fd926ba115480582d37c4"
+		},
+		{
+			"path": "exports/noheir-icon-2048.png",
+			"bytes": 5395600,
+			"sha256": "859987435b520a6375b5cbb67efc90ffcfd5a47c507c0e2546e65bb08608aaba"
+		},
+		{
+			"path": "exports/noheir-rounded-2048.png",
+			"bytes": 5265521,
+			"sha256": "db753db0ef2f56df9157de514df6393160717b02b02242d3bc7b549651923a21"
+		},
+		{
+			"path": "exports/noheir-transparent-1024.png",
+			"bytes": 970977,
+			"sha256": "be9b5d84e1b941004b9b90951345428069cc304ff8eb06b9c4c45597b904d5ab"
+		},
+		{
+			"path": "exports/noheir-icon-1024.png",
+			"bytes": 1348729,
+			"sha256": "21b074743efd978df8f54f0238144848bad5a5efb27aa465cb506f9f587a822e"
+		},
+		{
+			"path": "exports/noheir-rounded-1024.png",
+			"bytes": 1331504,
+			"sha256": "1689e2d5555e822373ac8c717802b20750d8d6bd6087e4ed07be197ea59fe1b2"
+		},
+		{
+			"path": "exports/noheir-transparent-512.png",
+			"bytes": 268372,
+			"sha256": "3ff3206f7488a109dae36672267b2d72c51d367daaf0ca65d5810eea03ad296f"
+		},
+		{
+			"path": "exports/noheir-icon-512.png",
+			"bytes": 388519,
+			"sha256": "3f84909a05f569ece2f8ee68d9cebf7b83c41393016d7a297067e293b1206fbd"
+		},
+		{
+			"path": "exports/noheir-rounded-512.png",
+			"bytes": 386085,
+			"sha256": "abecdd7144571ffcb5e405233f0b7bf000db0385989e3936bf078914fe288faa"
+		},
+		{
+			"path": "exports/noheir-transparent-256.png",
+			"bytes": 82076,
+			"sha256": "d2750826d59eeda4da7682e981d274a95882e1ae2910fcec43aca0c521da545a"
+		},
+		{
+			"path": "exports/noheir-icon-256.png",
+			"bytes": 104933,
+			"sha256": "d67c72bf6566d8e9b9ccef64dc2e8dcb152a5306c742d1f63dc9d53083a5b51e"
+		},
+		{
+			"path": "exports/noheir-rounded-256.png",
+			"bytes": 106637,
+			"sha256": "29401f3f21c08c93b411c57cdd72b493e8ad2f7294f0e796140ca47b7f6dc115"
+		},
+		{
+			"path": "exports/noheir-transparent-128.png",
+			"bytes": 25002,
+			"sha256": "881668bc09605a007c685aed569bd221b3cc955e13bd4db31b5fb59c2fd350ce"
+		},
+		{
+			"path": "exports/noheir-icon-128.png",
+			"bytes": 33204,
+			"sha256": "d4fadfe5b2ab87420e903c5c92ad2a526e6942849c65b30917eaaea958d7066e"
+		},
+		{
+			"path": "exports/noheir-rounded-128.png",
+			"bytes": 34375,
+			"sha256": "4feea658c0fe5cc535834487f174c2d9a50741d1af634ebae22101191c29f3fb"
+		},
+		{
+			"path": "exports/noheir-transparent-64.png",
+			"bytes": 7583,
+			"sha256": "bd9c13440442e09711bb91f1a66f5a34e27e828fd8f97ca02abf51817797cc6a"
+		},
+		{
+			"path": "exports/noheir-icon-64.png",
+			"bytes": 10604,
+			"sha256": "efbdd99c7bf257f7bbc461b1ec047e872b3f6b1e11ed4afd085a95bd7b901849"
+		},
+		{
+			"path": "exports/noheir-rounded-64.png",
+			"bytes": 11118,
+			"sha256": "a98e78859f921241e1062bf58858d82214a624330559e4250d8013e44b99c2c7"
+		},
+		{
+			"path": "exports/noheir-transparent-48.png",
+			"bytes": 4685,
+			"sha256": "693affc9f8dfd96902f80bf6c9844b049c0d225cc3c7b24754c8cf6569099ccb"
+		},
+		{
+			"path": "exports/noheir-icon-48.png",
+			"bytes": 6438,
+			"sha256": "26ef260724a9d9616a6e93b688574678b89cbb74dc919415afd3618a0d479ee0"
+		},
+		{
+			"path": "exports/noheir-rounded-48.png",
+			"bytes": 6743,
+			"sha256": "75058236a4e45d6e39842da866213e0b58a63cf246b71f659d5a14d006897814"
+		},
+		{
+			"path": "exports/noheir-transparent-32.png",
+			"bytes": 2388,
+			"sha256": "a215d691b220abedd9a137befaf3c40d6cfa77318b6a074080bccfa9b3617ea4"
+		},
+		{
+			"path": "exports/noheir-icon-32.png",
+			"bytes": 3237,
+			"sha256": "53d1e98883e451196ec626e889e9a340467d4dc4e69264e70d5ce372219977e0"
+		},
+		{
+			"path": "exports/noheir-rounded-32.png",
+			"bytes": 3388,
+			"sha256": "3731f65d32e42f8a56c240b8abab14a0cc4b0c460d95c8e4e11f1f41d5dedaf1"
+		},
+		{
+			"path": "exports/noheir-transparent-24.png",
+			"bytes": 1512,
+			"sha256": "c7b2d91cbcec4a84e69b107b7e64c0940e10fbe1f5a334f0d373eeb21752f505"
+		},
+		{
+			"path": "exports/noheir-icon-24.png",
+			"bytes": 1934,
+			"sha256": "d445a0ddbac490cfdbd8ca22e81086249b5ddb6b8eb3abd4434cb0f7b3a36336"
+		},
+		{
+			"path": "exports/noheir-rounded-24.png",
+			"bytes": 2054,
+			"sha256": "d2432a88319787c75d33f73a125ffd5986483ff871f706a4e0a0a74512661f5c"
+		},
+		{
+			"path": "exports/noheir-transparent-16.png",
+			"bytes": 856,
+			"sha256": "4d3c157ee84c86f9d9f12eb45e53e458b6cb18bbef0fde37be3c395783fd6ba7"
+		},
+		{
+			"path": "exports/noheir-icon-16.png",
+			"bytes": 971,
+			"sha256": "d21929c20a373d8f1209df6f8f150a6b71077e4385545e993707e2f44ad54cf2"
+		},
+		{
+			"path": "exports/noheir-rounded-16.png",
+			"bytes": 1011,
+			"sha256": "6c5cab36fc874a0bd52a31e331ba1b25edab7fba8f21d9a9d2d01a52240c5c70"
+		},
+		{
+			"path": "exports/noheir-white-2048.png",
+			"bytes": 3590540,
+			"sha256": "2e22ccb38cb0c9c91669c411f3415febcdaf48affb830f4328890ec0fa74b22e"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 925726,
+			"sha256": "0f61799da52c181832027991ea5ce00606c0505aa6c7e72b9a8215611c32af6d"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 929251,
+			"sha256": "822299eac8fae199d4539d8807438baf637d8f64b1d1306c91302c67f29cd519"
+		}
+	]
+}

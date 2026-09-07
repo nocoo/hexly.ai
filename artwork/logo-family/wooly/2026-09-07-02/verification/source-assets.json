@@ -1,0 +1,82 @@
+{
+	"project": "wooly",
+	"study": "2026-09-07-02",
+	"finishing": "01",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "920f2ef9641359f00c1c7ff48db32291886d9a2445b44d921911a0a65ecfe4e1",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "5a0cee68a0bf64abe7801ab4744fb314e5bd284ef86eef34831937627236ab25",
+			"exactSelectedMaster": true
+		}
+	],
+	"smallPngs": [
+		{
+			"path": "public/logo-24.png",
+			"size": 24,
+			"transparentPixels": 184,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "951ff58af5e5e09272d2a8ff19f5219b68c1e3ebe5044f25174b0f48ca1d4233"
+		},
+		{
+			"path": "public/logo-80.png",
+			"size": 80,
+			"transparentPixels": 2825,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "1471207ff966d904c61776fa66a5603079ea63f6d70ff39d08720f2817b7d4ba"
+		},
+		{
+			"path": "src/app/icon.png",
+			"size": 32,
+			"transparentPixels": 369,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "9759a258dfaac500d4c52c9c1be6e5895de78e8dace2e29f7ac63a40d4575ce1"
+		}
+	],
+	"favicon": {
+		"path": "src/app/favicon.ico",
+		"sha256": "4f7b32e55fd4f8186886b245631f6484e277526023e4285bf56eeced63d73453",
+		"entries": [
+			{
+				"size": 16,
+				"transparentPixels": 67,
+				"matchesTransparentMasterResize": true
+			},
+			{
+				"size": 32,
+				"transparentPixels": 369,
+				"matchesTransparentMasterResize": true
+			}
+		]
+	},
+	"touch": {
+		"path": "src/app/apple-icon.png",
+		"size": 180,
+		"squarePresentation": true,
+		"opaque": true
+	},
+	"installed": [],
+	"social": {
+		"path": "src/app/opengraph-image.png",
+		"size": [1200, 630],
+		"opaque": true,
+		"source": "assets/brand/icon-rounded.png"
+	},
+	"readme": {
+		"path": "README.md",
+		"target": "assets/brand/icon-rounded.png"
+	},
+	"status": "Source assets installed and verified; commit, push, and browser evidence recorded separately."
+}

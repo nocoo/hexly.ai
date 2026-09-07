@@ -1,0 +1,406 @@
+{
+	"createdAt": "2026-09-07T01:43:32.191Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "life-ai",
+		"background": {
+			"base": "#b7aa8e",
+			"light": "#ddd2b5",
+			"shade": "#8f836c",
+			"motif": "#756747",
+			"grainAmplitude": 1,
+			"grainSeed": 609085,
+			"motifOpacity": 0.17,
+			"highlightOpacity": 0.28,
+			"ribbonOpacity": 0.12,
+			"pattern": {
+				"name": "Riverbank ripples",
+				"description": "Broad broken horizontal water rings wrap the empty edges, paired with one low-relief leaf vein. Uneven gaps and elliptical curves suggest a quiet riverbank without drawing a scene.",
+				"layers": [
+					{
+						"d": "M-97 228C15 104 265 93 426 167C490 197 529 235 520 280C510 330 394 369 262 372",
+						"tone": "motif",
+						"strokeWidth": 23
+					},
+					{
+						"d": "M-82 246C28 121 268 111 420 184C478 212 514 245 507 279C499 317 392 352 263 355",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-65 421C87 358 238 378 344 427",
+						"tone": "ribbon",
+						"strokeWidth": 32
+					},
+					{
+						"d": "M700 1093C588 1059 551 1001 579 944C617 863 828 812 1112 859",
+						"tone": "motif",
+						"strokeWidth": 29
+					},
+					{
+						"d": "M707 1074C605 1043 571 997 596 951C631 881 830 832 1111 877",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M752-74C774 62 851 133 983 177C923 74 847 14 752-74Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M776-20L940 137M829 38L827 87M872 78L927 82",
+						"tone": "motif",
+						"strokeWidth": 5
+					}
+				]
+			},
+			"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+		},
+		"shadows": [
+			{
+				"color": [
+					63,
+					51,
+					32
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					53,
+					43,
+					28
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/life-ai.png",
+		"framing": {
+			"scale": 0.88,
+			"offsetAt2048": [
+				0,
+				123
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"note": "Uniform 88% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				251,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 32,
+			"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity.",
+			"backgroundSeedsAt2048": [
+				[
+					1808,
+					898
+				],
+				[
+					1734,
+					750
+				],
+				[
+					1124,
+					221
+				]
+			]
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1791506,
+		"foregroundPixels": 2402798,
+		"softEdgePixels": 11834,
+		"removedComponents": 52,
+		"removedComponentPixels": 173,
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 1915,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.88,
+		"offsetAt2048": [
+			0,
+			123
+		],
+		"bounds": {
+			"left": 123,
+			"top": 246,
+			"right": 1808,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -113.93174564247107,
+		"clippedPixels": 16468
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2958,
+			"sha256": "716bd7ceb7f495b6bf35d420b5eba264789e3c0466c00dbbf45cac4205e87061"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1198,
+			"sha256": "410366d13c0dd5fb3da343f7af1fc3ceb10bdeffa759db66213f4e45f410f5c3"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2609003,
+			"sha256": "aa6e211c2d9b17126d35b74465874c419a02d4a54e1cc158c6f594758bfc708d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 69583,
+			"sha256": "971c947da19f9292a40f47550441026a995345e8cd58fdc89a8c2de797747fee"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1294,
+			"sha256": "01fb7d40a7291f733d434e9c13db6a0358839e24cde36e5956d22ae9005a3e0d"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2266696,
+			"sha256": "91352f16c3f2353da16cd0b2f899a9ab17a8ba869734802bc2cae19b89aab617"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2272065,
+			"sha256": "0d54788b2eeeff25e4e802e304f36f7a312fa1ccb4c4c403e57099b2856efe43"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 86880,
+			"sha256": "95fda904f641adeaf7f23d4afb9ed4aefdbb1112e838f52c50d19224200b3628"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 170859,
+			"sha256": "3f14f4c00568495b98ffca004043f18d77a2ca3e94404c5749bf1f8bcd1e7cdb"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 136223,
+			"sha256": "a052cf052d5de28b61c1b57def1b8602a262ec9d366607e0c6aba9048bf11b50"
+		},
+		{
+			"path": "exports/life-ai-transparent-2048.png",
+			"bytes": 2272065,
+			"sha256": "0d54788b2eeeff25e4e802e304f36f7a312fa1ccb4c4c403e57099b2856efe43"
+		},
+		{
+			"path": "exports/life-ai-icon-2048.png",
+			"bytes": 3857926,
+			"sha256": "1c74bed9477359765547120f5a104ee1ae1dffc704c76cdd65e6a1267cb8058c"
+		},
+		{
+			"path": "exports/life-ai-rounded-2048.png",
+			"bytes": 3753590,
+			"sha256": "f20479b2cbf682980a7926dfab04e90958aa0abdb93f86f4fd88a225ea432a43"
+		},
+		{
+			"path": "exports/life-ai-transparent-1024.png",
+			"bytes": 723117,
+			"sha256": "ddfcbdaf9aedd03ccba8f5e8ef1dc313bc8b8f1a57228b5426e59026b0726108"
+		},
+		{
+			"path": "exports/life-ai-icon-1024.png",
+			"bytes": 1089984,
+			"sha256": "085148a24e10c874e76198f8635c21b023174ce8229f368009deb50038006b29"
+		},
+		{
+			"path": "exports/life-ai-rounded-1024.png",
+			"bytes": 1078580,
+			"sha256": "77e82cf639a5151e5af59aceec8b54ff30fd4f71f1d5e040a071749ee8962b7f"
+		},
+		{
+			"path": "exports/life-ai-transparent-512.png",
+			"bytes": 246154,
+			"sha256": "f5b36cf698f0cfb334b430f63b1a26bd619a1c2f905a77b93e89c994d9e14383"
+		},
+		{
+			"path": "exports/life-ai-icon-512.png",
+			"bytes": 365083,
+			"sha256": "5134ccc23560403ad9225e8cc08aa92e37eb348249a93d774d3a98a3416dab47"
+		},
+		{
+			"path": "exports/life-ai-rounded-512.png",
+			"bytes": 363210,
+			"sha256": "4bd874e9b054e43aeb6a8ca5f7272182fd3b594d438854e33ac94b5a2efc9f01"
+		},
+		{
+			"path": "exports/life-ai-transparent-256.png",
+			"bytes": 81382,
+			"sha256": "d70b065318e2e9598a9fe50ef9d68dad7386ddc81602e8939ea6179f031bb5a5"
+		},
+		{
+			"path": "exports/life-ai-icon-256.png",
+			"bytes": 102283,
+			"sha256": "572edc8c31e35d01f7d031cf1a81a7633dbd7b3993c222830d98d6a6d8c961dd"
+		},
+		{
+			"path": "exports/life-ai-rounded-256.png",
+			"bytes": 104324,
+			"sha256": "6aedc35b9dc7641e079adf079644feb6aa4c07582ec03d2638d066a2d7f8c3dd"
+		},
+		{
+			"path": "exports/life-ai-transparent-128.png",
+			"bytes": 24751,
+			"sha256": "fe494a55ae0b33c154003073ebeeb968910801c22b14a0e1dbd05f4bbd9abdc2"
+		},
+		{
+			"path": "exports/life-ai-icon-128.png",
+			"bytes": 31034,
+			"sha256": "1629e21ca7f87b4a146ce1aaaf50af8d8a7e11a7c993a1fc3b6dd00ca09ea223"
+		},
+		{
+			"path": "exports/life-ai-rounded-128.png",
+			"bytes": 32180,
+			"sha256": "f9ec74cbb3328774c77d1b2f97af067cea4609aa172afa777653709e53ee33a5"
+		},
+		{
+			"path": "exports/life-ai-transparent-64.png",
+			"bytes": 7362,
+			"sha256": "a673b3b59c0d88a3cd27d513c10bc41dff1be9482573e3ae6e3502252a769864"
+		},
+		{
+			"path": "exports/life-ai-icon-64.png",
+			"bytes": 10171,
+			"sha256": "cce4caad1188e979d34146125b9561dad985ab8b1f77ac5d57e7d6f7cdf44560"
+		},
+		{
+			"path": "exports/life-ai-rounded-64.png",
+			"bytes": 10560,
+			"sha256": "8b5648880bed53efd2e52600717190a2d73211c665786e52dd8f1bb0c12e1e0b"
+		},
+		{
+			"path": "exports/life-ai-transparent-48.png",
+			"bytes": 4461,
+			"sha256": "62b4932aa97e8a68660b4d7c0a949fb0c680640f352e0d2e2ec92c9d4940e013"
+		},
+		{
+			"path": "exports/life-ai-icon-48.png",
+			"bytes": 6082,
+			"sha256": "daf4b0c19a2b687b7da8d062d9c959bb53d9da2a588d2a4570dc804b95b2965e"
+		},
+		{
+			"path": "exports/life-ai-rounded-48.png",
+			"bytes": 6341,
+			"sha256": "235a4fa09873004b5e2cc231d4bc3a6e4399dbc3c87723b60510e214e405e541"
+		},
+		{
+			"path": "exports/life-ai-transparent-32.png",
+			"bytes": 2273,
+			"sha256": "c99ddb1b63b3266ec7cb3170f72a0e6fa2ca4e987f92e3faabab8ee6c7fd9d28"
+		},
+		{
+			"path": "exports/life-ai-icon-32.png",
+			"bytes": 3124,
+			"sha256": "f01ee870bc89f76cb680a51f5cccf353c81f32e94ba6c900aab2a14c5adddb96"
+		},
+		{
+			"path": "exports/life-ai-rounded-32.png",
+			"bytes": 3241,
+			"sha256": "0840bd65e450c09f632b7e4b710814b029ebca25de06f9592849b04d7e2d1d6c"
+		},
+		{
+			"path": "exports/life-ai-transparent-24.png",
+			"bytes": 1440,
+			"sha256": "e7740769dfece14169b7000b12bdde1898115718a4f5802687eb6cb02bb00773"
+		},
+		{
+			"path": "exports/life-ai-icon-24.png",
+			"bytes": 1899,
+			"sha256": "81524af98e26939d2d1bf91a02560198206cf360579997c0b07877f0073d32a6"
+		},
+		{
+			"path": "exports/life-ai-rounded-24.png",
+			"bytes": 2002,
+			"sha256": "31730c0f6bd8fd9f37b6aa132345f2de6c79ac3104de2b37c2c31c59f7246972"
+		},
+		{
+			"path": "exports/life-ai-transparent-16.png",
+			"bytes": 797,
+			"sha256": "5edf707ba715490af41bf82f3784d467cae5ed50da4c2f731f7c751810c9bddd"
+		},
+		{
+			"path": "exports/life-ai-icon-16.png",
+			"bytes": 948,
+			"sha256": "5e4ae1f7e8acbcd9869184e828b2bf3af483b8f7ab9ac93a5568f2fe2f4330e4"
+		},
+		{
+			"path": "exports/life-ai-rounded-16.png",
+			"bytes": 989,
+			"sha256": "1a14c84bffb6289ca7c9318347364fcaadc026a9fdd5fdf9f5b3d6e3e775d860"
+		},
+		{
+			"path": "exports/life-ai-white-2048.png",
+			"bytes": 2114171,
+			"sha256": "8d2f1b1ea09c09fe0940f35626eff00994a9ddd48505e6df5080df5427944fb8"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 685356,
+			"sha256": "0e9df01105c6d3ee6fa9b0e4ed277ff0e49615e58f9754f9a264ca963cac40ab"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 689633,
+			"sha256": "1b0580ed1d7b5e938d2c0690b586e670e20d8f66512400c5a5725e5e19bbed59"
+		}
+	]
+}

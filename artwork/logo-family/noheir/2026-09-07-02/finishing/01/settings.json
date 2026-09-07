@@ -1,0 +1,87 @@
+{
+	"project": "noheir",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#638783",
+		"light": "#a5c2b8",
+		"shade": "#3d625f",
+		"motif": "#254946",
+		"grainAmplitude": 1,
+		"grainSeed": 609077,
+		"motifOpacity": 0.19,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Quiet terraces",
+			"description": "Broad terraced contours turn around the upper-left and lower-right edges with softened right-angle bends. Unequal levels and short step transitions suggest a pressed landscape, rather than flowing waves or feather stripes.",
+			"layers": [
+				{
+					"d": "M-90 277H142Q208 277 208 205V149Q208 88 278 88H529V-80",
+					"tone": "motif",
+					"strokeWidth": 31
+				},
+				{
+					"d": "M-90 294H144Q225 294 225 205V151Q225 106 279 106H547V-80",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-91 454H49Q104 454 104 388V338Q104 307 149 307H297Q360 307 360 243V211Q360 168 424 168H725V-91",
+					"tone": "ribbon",
+					"strokeWidth": 30
+				},
+				{
+					"d": "M613 1102V925Q613 870 674 870H741Q802 870 802 812V729Q802 678 867 678H1120",
+					"tone": "motif",
+					"strokeWidth": 34
+				},
+				{
+					"d": "M633 1103V928Q633 890 676 890H743Q822 890 822 814V730Q822 698 869 698H1120",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M427 1100V1041Q427 983 494 983H521Q565 983 565 937V858Q565 795 623 795H717Q729 795 729 763V641Q729 562 811 562H1114",
+					"tone": "ribbon",
+					"strokeWidth": 23
+				}
+			]
+		},
+		"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+	},
+	"shadows": [
+		{
+			"color": [31, 49, 48],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 39, 38],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [0, 103],
+		"intentionalEdges": ["bottom", "lower-right"],
+		"note": "Uniform 90% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/noheir.png",
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 8,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 32,
+		"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity."
+	}
+}

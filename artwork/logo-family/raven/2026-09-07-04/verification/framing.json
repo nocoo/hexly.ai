@@ -1,0 +1,58 @@
+{
+	"sourceSha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832",
+	"foregroundSha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+	"squareSha256": "bda85a414525de14ce551d234dbdc44161b447d8cdae0d88f7c6f026382bd32e",
+	"roundedSha256": "4ee7bf35d7a313219f2157233e5475a758ecade16ce465e02f60a1661d7ae781",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance to the actual rounded-square boundary, evaluated at visible pixel centers.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 123],
+		"intentionalEdges": ["bottom", "lower-left"],
+		"note": "Uniform 88% bottom-aligned placement; the head and accessories retain their exact relative proportions. A narrow source-colored continuation of the existing folded wing restores the left frame entry exposed by the inset. Protect expressive features separately from intentional lower shoulder intersections.",
+		"continuation": {
+			"path": "input/shoulder-continuation.svg",
+			"sha256": "2d76765d5fb779bdfd269e31ddba64aa697b828d82521b9bd1bea2335f1eaed7",
+			"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher."
+		}
+	},
+	"protectedFeatures": [
+		{
+			"name": "Crown and rear head feathers",
+			"regionAt2048": [170, 400, 1580, 1510],
+			"visiblePixels": 1077911,
+			"minimumClearancePx": 170.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Eye",
+			"regionAt2048": [960, 590, 1460, 1130],
+			"visiblePixels": 268138,
+			"minimumClearancePx": 588.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Complete beak",
+			"regionAt2048": [1240, 730, 1950, 1310],
+			"visiblePixels": 258764,
+			"minimumClearancePx": 148.5,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": ["bottom", "lower-left"],
+		"clippedPixels": 48354,
+		"note": "Only the natural lower shoulder or wing root crosses the presentation outline; expressive features and retained accessories are protected separately."
+	},
+	"continuation": {
+		"path": "input/shoulder-continuation.svg",
+		"sha256": "2d76765d5fb779bdfd269e31ddba64aa697b828d82521b9bd1bea2335f1eaed7",
+		"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher.",
+		"addedPixels": 41790,
+		"opaquePixelsPreserved": 1964006
+	}
+}

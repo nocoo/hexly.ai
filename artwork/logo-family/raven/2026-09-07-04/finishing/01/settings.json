@@ -1,0 +1,88 @@
+{
+	"project": "raven",
+	"background": {
+		"base": "#b0a6c5",
+		"light": "#d8d2e4",
+		"shade": "#877799",
+		"motif": "#655174",
+		"grainAmplitude": 1,
+		"grainSeed": 609084,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.27,
+		"ribbonOpacity": 0.15,
+		"pattern": {
+			"name": "Quill pennants",
+			"description": "Staggered broad pointed feather impressions cross the upper-left field. A separate slender quill turns at the upper-right, with asymmetric spacing and shallow lit seams.",
+			"layers": [
+				{
+					"d": "M-61 311L18 173L239 44L352-32L251 107L62 231Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-63 507L41 356L253 215L400 83L310 259L110 400Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-26 657L93 553L250 482L393 347L317 522L164 597Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M18 235L249 111L353-30",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M52 407L309 263L401 84",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M736-83C773 58 859 135 1086 194L980 215C828 174 746 114 715-11Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M739-32C776 103 859 159 1066 205",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected presentation for the owner-authorized framing repair. Background is independent of the animal and existing website theme."
+	},
+	"shadows": [
+		{
+			"color": [49, 43, 62],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [42, 36, 52],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/raven.png",
+	"framing": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 123],
+		"intentionalEdges": ["bottom", "lower-left"],
+		"note": "Uniform 88% portrait placement anchored to the bottom. No stretched anatomy or cloned edge samples. Protected feature clearance is measured separately from intentional shoulder entry. This first pass evaluates extraction and placement before any necessary minor side continuation."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 8,
+		"backgroundRgb": [251, 251, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 32,
+		"calibrationNote": "Sampled native exterior matte; connected extraction preserves enclosed eye details and warm ivory anatomy. Only sub-32-pixel isolated threshold residue may be removed; the animal and all retained accessories form one continuous identity."
+	}
+}

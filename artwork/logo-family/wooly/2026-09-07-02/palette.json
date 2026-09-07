@@ -1,0 +1,92 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Cream wool",
+				"zh": "奶油羊毛"
+			},
+			"role": "primary",
+			"color": "#f3e6c4",
+			"pixel": [1254, 770],
+			"rgb": [243, 230, 196],
+			"sourceSha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56"
+		},
+		{
+			"label": {
+				"en": "Oat fleece",
+				"zh": "燕麦羊毛"
+			},
+			"role": "accent",
+			"color": "#d4bc98",
+			"pixel": [538, 1304],
+			"rgb": [212, 188, 152],
+			"sourceSha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56"
+		},
+		{
+			"label": {
+				"en": "Ear rose",
+				"zh": "耳朵玫瑰棕"
+			},
+			"role": "accent",
+			"color": "#ac806c",
+			"pixel": [1618, 562],
+			"rgb": [172, 128, 108],
+			"sourceSha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56"
+		},
+		{
+			"label": {
+				"en": "Tongue pink",
+				"zh": "舌头粉"
+			},
+			"role": "accent",
+			"color": "#ef9790",
+			"pixel": [934, 1576],
+			"rgb": [239, 151, 144],
+			"sourceSha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56"
+		},
+		{
+			"label": {
+				"en": "Deep eye",
+				"zh": "深色眼睛"
+			},
+			"role": "accent",
+			"color": "#2c3441",
+			"pixel": [733, 846],
+			"rgb": [44, 52, 65],
+			"sourceSha256": "02c5ec40e8c1b2d3ec0b12382fd3dd0c3429c3ae0aa28c4e473cbba1f056fd56"
+		}
+	],
+	"presentation": {
+		"base": "#ad8093",
+		"light": "#d6b2bd",
+		"shade": "#794f6d",
+		"motif": "#5f3455",
+		"pattern": "Wool cloud folds",
+		"status": "Selected in the owner-authorized framing repair batch."
+	},
+	"website": {
+		"primary": "#dd3ca7",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "320 70% 55%",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"note": "Existing product theme values remain separate from artwork and presentation colors."
+	}
+}

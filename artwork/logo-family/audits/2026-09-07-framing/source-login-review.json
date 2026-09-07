@@ -1,0 +1,86 @@
+{
+	"baseURL": "http://127.0.0.1:17011",
+	"method": "Production build on loopback with placeholder OAuth configuration and isolated nonexistent database paths; only the public login route and image metadata are requested.",
+	"cases": [
+		{
+			"theme": "light",
+			"frames": [
+				{
+					"src": "/logo-24.png",
+					"width": 16,
+					"height": 16,
+					"filter": "none",
+					"parentRadius": "0px",
+					"parentOverflow": "visible"
+				},
+				{
+					"src": "/logo-192.png",
+					"width": 96,
+					"height": 96,
+					"filter": "none",
+					"parentRadius": "0px",
+					"parentOverflow": "visible"
+				}
+			],
+			"icons": [
+				{
+					"rel": "icon",
+					"href": "/favicon.ico?favicon.2fihc45zkxkmu.ico",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "icon",
+					"href": "/icon.png?icon.35wvk1_f53y7o.png",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-icon.png?apple-icon.1v-j-0rf6a_ye.png",
+					"sizes": "180x180"
+				}
+			],
+			"runtimeErrors": [],
+			"result": "passed"
+		},
+		{
+			"theme": "dark",
+			"frames": [
+				{
+					"src": "/logo-24.png",
+					"width": 16,
+					"height": 16,
+					"filter": "none",
+					"parentRadius": "0px",
+					"parentOverflow": "visible"
+				},
+				{
+					"src": "/logo-192.png",
+					"width": 96,
+					"height": 96,
+					"filter": "none",
+					"parentRadius": "0px",
+					"parentOverflow": "visible"
+				}
+			],
+			"icons": [
+				{
+					"rel": "icon",
+					"href": "/favicon.ico?favicon.2fihc45zkxkmu.ico",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "icon",
+					"href": "/icon.png?icon.35wvk1_f53y7o.png",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-icon.png?apple-icon.1v-j-0rf6a_ye.png",
+					"sizes": "180x180"
+				}
+			],
+			"runtimeErrors": [],
+			"result": "passed"
+		}
+	]
+}
