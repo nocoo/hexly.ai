@@ -19,7 +19,17 @@ jobs:
       enable-l2: "true"
       l2-command: bun run test:http && bun run deploy:check
       enable-l3: "true"
-      l3-command: bun run test:browser
+      l3-command: |
+        node --version
+        if WRANGLER_LOG_PATH=.wrangler/browser-ci.log WRANGLER_LOG_SANITIZE=true bun run test:browser; then
+          exit 0
+        else
+          browser_exit_code=$?
+          if [ -f .wrangler/browser-ci.log ]; then
+            tail -n 300 .wrangler/browser-ci.log
+          fi
+          exit "$browser_exit_code"
+        fi
       l3-browser: chromium
   deploy:
     name: Deploy
