@@ -1,0 +1,84 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "386f4e61218e1012f69ef2119b011e92b5579d94791eda6152d87489633e088c",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Celadon glaze",
+				"zh": "青瓷釉面"
+			},
+			"role": "primary",
+			"color": "#8ba48c",
+			"pixel": [1045, 500],
+			"rgb": [139, 164, 140],
+			"sourceSha256": "386f4e61218e1012f69ef2119b011e92b5579d94791eda6152d87489633e088c"
+		},
+		{
+			"label": {
+				"en": "Ivory character",
+				"zh": "象牙色汉字"
+			},
+			"role": "accent",
+			"color": "#e2d7b7",
+			"pixel": [1188, 731],
+			"rgb": [226, 215, 183],
+			"sourceSha256": "386f4e61218e1012f69ef2119b011e92b5579d94791eda6152d87489633e088c"
+		},
+		{
+			"label": {
+				"en": "Switch charcoal",
+				"zh": "深灰轴体"
+			},
+			"role": "accent",
+			"color": "#2c2d27",
+			"pixel": [1187, 1560],
+			"rgb": [44, 45, 39],
+			"sourceSha256": "386f4e61218e1012f69ef2119b011e92b5579d94791eda6152d87489633e088c"
+		},
+		{
+			"label": {
+				"en": "Copper spring",
+				"zh": "铜色弹簧"
+			},
+			"role": "accent",
+			"color": "#866540",
+			"pixel": [954, 1482],
+			"rgb": [134, 101, 64],
+			"sourceSha256": "386f4e61218e1012f69ef2119b011e92b5579d94791eda6152d87489633e088c"
+		}
+	],
+	"presentation": {
+		"base": "#c4d8cf",
+		"light": "#e3ede1",
+		"shade": "#aac5bb",
+		"motif": "#71958b",
+		"pattern": "Pinyin key rhythm",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#171717",
+		"background": "#ffffff",
+		"ink": "#0a0a0a",
+		"evidence": {
+			"background": {
+				"value": "oklch(1 0 0)",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "oklch(0.145 0 0)",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "oklch(0.205 0 0)",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}

@@ -1,0 +1,444 @@
+{
+	"createdAt": "2026-09-07T10:00:14.041Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "a793439f905e24294aadfdd4b389a28a7bb3d43ae3d058d1ca791d0b27744087",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "unseal",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/unseal.png",
+		"background": {
+			"base": "#bdcebd",
+			"light": "#dbe5cf",
+			"shade": "#a4b8a9",
+			"motif": "#6c8976",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907023,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Released seams",
+				"description": "Separated perforated seams and folded-tab outlines embossed in calm sage paper.",
+				"layers": [
+					{
+						"d": "M104 30v27M132 42v27M896 30v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 101v27M132 113v27M896 101v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 172v27M132 184v27M896 172v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 243v27M132 255v27M896 243v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 314v27M132 326v27M896 314v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 385v27M132 397v27M896 385v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 456v27M132 468v27M896 456v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 527v27M132 539v27M896 527v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 598v27M132 610v27M896 598v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 669v27M132 681v27M896 669v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 740v27M132 752v27M896 740v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 811v27M132 823v27M896 811v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 882v27M132 894v27M896 882v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 953v27M132 965v27M896 953v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M104 1024v27M132 1036v27M896 1024v27",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M0 806h212l72 -72M805 0v154l89 64M32 823h170l56 -56",
+						"tone": "motif",
+						"strokeWidth": 2.2
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					108,
+					137,
+					118
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					696
+				]
+			},
+			{
+				"color": [
+					108,
+					137,
+					118
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					691
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.860098,
+			"offsetAt2048": [
+				-22,
+				-1
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2931511,
+		"foregroundPixels": 1262793,
+		"softEdgePixels": 14286,
+		"removedComponents": 6,
+		"removedComponentPixels": 77,
+		"bounds": {
+			"left": 376,
+			"top": 83,
+			"right": 1721,
+			"bottom": 1919
+		}
+	},
+	"placement": {
+		"scale": 0.860098,
+		"offsetAt2048": [
+			-22,
+			-1
+		],
+		"bounds": {
+			"left": 444,
+			"top": 213,
+			"right": 1601,
+			"bottom": 1792
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 213.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3437,
+			"sha256": "43b6a65448238513b01b46d11dd39d9576554bb0e9e74ac17a293fc0bb9f9afa"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 864,
+			"sha256": "99cc937c8afdf372ea454f149ea6e763d354fe1278c895d463d5afebdf429265"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3027171,
+			"sha256": "d1a473d3a63864947723d064d8982cadc2a878653fd36060953bc22ed3c22e9f"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 74704,
+			"sha256": "d9bb1243f197a4579a9ed91e5c0885903173ff8a291ae412c4cd145454f3830b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 2161,
+			"sha256": "699e1d55d8dc3c3449be5306e379880a86573a980df2acc998208d49d3687a35"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1779771,
+			"sha256": "356e80b5dd9932101db5b7f819715609ed19dfb92139e38a8c5cd091af948353"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2323865,
+			"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 84459,
+			"sha256": "7e6cef2a715e0c1d647ec4b1fd022c39fa215759a61ba0aab0c73a308b1a3f8b"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 180348,
+			"sha256": "47e00ec09e07a35a1ac1d5ff8518dc5e0c4e48c565cc6dfcd8972fb086e99d39"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 70175,
+			"sha256": "06bb50035b0388e49fc71703205251d83c0f5634c1184f16feca079f0bbc43c4"
+		},
+		{
+			"path": "exports/unseal-transparent-2048.png",
+			"bytes": 2323865,
+			"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b"
+		},
+		{
+			"path": "exports/unseal-icon-2048.png",
+			"bytes": 4106428,
+			"sha256": "732160d54958294a1b7a60160c3688f5ef8a9f74584b8240641d373b95d91795"
+		},
+		{
+			"path": "exports/unseal-rounded-2048.png",
+			"bytes": 4037746,
+			"sha256": "27b3e2d1a47beb21928e81fac742fb29e04b4b6b07afb93beacd5dbcbc402e94"
+		},
+		{
+			"path": "exports/unseal-transparent-1024.png",
+			"bytes": 596866,
+			"sha256": "58d04c7326cf019751ef687a305edaf9649e7351931479fa798402c3b8786a4c"
+		},
+		{
+			"path": "exports/unseal-icon-1024.png",
+			"bytes": 947371,
+			"sha256": "8679b986c09960297b0db9227fa3eb6b7f4d4e45bba254237e18388b15e1303b"
+		},
+		{
+			"path": "exports/unseal-rounded-1024.png",
+			"bytes": 950176,
+			"sha256": "be26cc6428775cb8dc15d69eb88687364d72d3da9e43217f7788db6904f9e4e5"
+		},
+		{
+			"path": "exports/unseal-transparent-512.png",
+			"bytes": 156035,
+			"sha256": "bfc8b15e1691dc1ac1a25e9b4134c20955b0c8ea680b290fcb7f0d70cc3b7b45"
+		},
+		{
+			"path": "exports/unseal-icon-512.png",
+			"bytes": 285025,
+			"sha256": "30244b1dabf774eef9c20048d584c57777370e11fed588d4ceb15668b92b57e0"
+		},
+		{
+			"path": "exports/unseal-rounded-512.png",
+			"bytes": 286739,
+			"sha256": "ce26f44970a4c90dbbc72008e3a30c2684b1a06a54e457eec7922ff2c216ef2a"
+		},
+		{
+			"path": "exports/unseal-transparent-256.png",
+			"bytes": 43350,
+			"sha256": "a69fa25829ecff567727fe9d08545c77b89ec51c8c204195a33e2a58d9fa9781"
+		},
+		{
+			"path": "exports/unseal-icon-256.png",
+			"bytes": 61171,
+			"sha256": "129b45522160c8a65cf4f7e1c0f832de54d95112abfc2e55ee28de79e7b8d8c0"
+		},
+		{
+			"path": "exports/unseal-rounded-256.png",
+			"bytes": 64933,
+			"sha256": "bbe5a292e93617799ce23775243abcfbd26c60c5d5c8754f7333f69c0b775c92"
+		},
+		{
+			"path": "exports/unseal-transparent-128.png",
+			"bytes": 12578,
+			"sha256": "7ead99e037704f17abf3cf70e1a7ac6086c263a71c44c06e34807b80c72f4194"
+		},
+		{
+			"path": "exports/unseal-icon-128.png",
+			"bytes": 19305,
+			"sha256": "51d4e88d9dfcc09d28290dacea279eeff1a5f112408b400188dbd555ac2ea2c1"
+		},
+		{
+			"path": "exports/unseal-rounded-128.png",
+			"bytes": 21122,
+			"sha256": "2d032e7f13e4cdcf9f8940b0d086bfeab6ea31c6debc120d2928d87771a70ab2"
+		},
+		{
+			"path": "exports/unseal-transparent-64.png",
+			"bytes": 4023,
+			"sha256": "c8e26c8ad600be3b8c03b7ba08d94b39b79b71d0c9e71871ead82b1ae0104ff2"
+		},
+		{
+			"path": "exports/unseal-icon-64.png",
+			"bytes": 6864,
+			"sha256": "ed9a7ac82e379803b851d5c75db550c7a7705246ce42b53ed13b66689fd3f386"
+		},
+		{
+			"path": "exports/unseal-rounded-64.png",
+			"bytes": 7543,
+			"sha256": "0543578288d090ee5ddb92b95d6e299cb8a14960eb5be005ebf89bcf407121c6"
+		},
+		{
+			"path": "exports/unseal-transparent-48.png",
+			"bytes": 2541,
+			"sha256": "6680816858092e2eb1f5e4e7e44c9c250509932f00941c153a21f5845b8e10cc"
+		},
+		{
+			"path": "exports/unseal-icon-48.png",
+			"bytes": 4364,
+			"sha256": "a0f7035327d6f9de7bfa7dface0e1325989d0aead6995ff24cfa5b9d4f28f4b8"
+		},
+		{
+			"path": "exports/unseal-rounded-48.png",
+			"bytes": 4877,
+			"sha256": "edb2d6b73e3e0176b434248c92407dcb622f9fd50b6626f6195e6774169754e1"
+		},
+		{
+			"path": "exports/unseal-transparent-32.png",
+			"bytes": 1492,
+			"sha256": "f95b0b48c7a4c82374de8cbf9f7d8e91405c09c952859ce25a50e2788b363993"
+		},
+		{
+			"path": "exports/unseal-icon-32.png",
+			"bytes": 2430,
+			"sha256": "144d0b8013922b33dd840ec6dd29bee10db48a56797349be9402ce5d80b21cc7"
+		},
+		{
+			"path": "exports/unseal-rounded-32.png",
+			"bytes": 2692,
+			"sha256": "fd839cd5556637aa3afb223583975ebc26b484dd3baf603190d04e729b47f243"
+		},
+		{
+			"path": "exports/unseal-transparent-24.png",
+			"bytes": 991,
+			"sha256": "9502e0f7cf33f38c6f8345f96bd082c736ff8e4e42d497bace341c7bcca13d7a"
+		},
+		{
+			"path": "exports/unseal-icon-24.png",
+			"bytes": 1587,
+			"sha256": "6a146eac8ba44c275ea81800eefd30b302708b70ae5a16407d9d3d27a7eb1b1a"
+		},
+		{
+			"path": "exports/unseal-rounded-24.png",
+			"bytes": 1765,
+			"sha256": "b3e701d43e5990d2d624ba33a6b10c9fc964718f42d1d8c586f4900c75b32319"
+		},
+		{
+			"path": "exports/unseal-transparent-16.png",
+			"bytes": 593,
+			"sha256": "9e716b219f77ff9a420c4a9c90ebb96d02823763e46815ffb74f7f8d8b3ec712"
+		},
+		{
+			"path": "exports/unseal-icon-16.png",
+			"bytes": 887,
+			"sha256": "683bcaefd9a6e63f614a5c603fbd60b4c62b19e77279c21afca2e0ccd5e51204"
+		},
+		{
+			"path": "exports/unseal-rounded-16.png",
+			"bytes": 949,
+			"sha256": "54696da472ae9b0a58fe74fdec5cd411e51dc82afdff0a424fe4b4ca903f17ee"
+		},
+		{
+			"path": "exports/unseal-white-2048.png",
+			"bytes": 2103723,
+			"sha256": "b96238f4dcac7bc2c9034aa8fdebdbba788a48330e337d98c18c5380405aa58d"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 553330,
+			"sha256": "6dca0bd9bdbeb96f68eb828b275d6a102d9e59bbe4fef7b65a995c128edf05f8"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 550733,
+			"sha256": "e3cfb0bb5354af2f6965194f70998bca60cf0e160b18220b47d36f2c17ec0396"
+		}
+	]
+}

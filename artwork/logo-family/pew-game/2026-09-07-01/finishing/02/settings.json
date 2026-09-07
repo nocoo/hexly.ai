@@ -1,0 +1,142 @@
+{
+	"project": "pew-game",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/pew-game.png",
+	"background": {
+		"base": "#d6bb8a",
+		"light": "#eed9af",
+		"shade": "#bfa277",
+		"motif": "#8a6b42",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907019,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Prairie suntracks",
+			"description": "A low rising sun with short prairie grass cuts and concentric joystick-like arcs in warm sand paper.",
+			"layers": [
+				{
+					"d": "M20 900a160 160 0 0 1 320 0",
+					"tone": "motif",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M-40 900a220 220 0 0 1 440 0",
+					"tone": "motif",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M-120 900a300 300 0 0 1 600 0",
+					"tone": "motif",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M60 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M143 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M226 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M309 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M392 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M475 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M558 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M641 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M724 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M807 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M890 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M973 995l8 -34 6 21 12 -47",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M806 50q70 50 125 145M779 65q72 55 122 150",
+					"tone": "highlight",
+					"strokeWidth": 2.2
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [138, 107, 66],
+			"opacity": 0.25,
+			"blurAt2048": 66,
+			"projectionScale": [0.94, 0.3],
+			"offsetAt2048": [20, 645]
+		},
+		{
+			"color": [138, 107, 66],
+			"opacity": 0.17,
+			"blurAt2048": 28,
+			"projectionScale": [0.78, 0.17],
+			"offsetAt2048": [6, 640]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.916713,
+		"offsetAt2048": [-32, -16],
+		"intentionalEdges": [],
+		"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+		"minimumClearanceAt2048": 128
+	},
+	"matte": {
+		"minimumChannel": 238,
+		"maximumChroma": 24,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object.",
+		"minimumChannelOverride": 238,
+		"componentCleanupNote": "Pass 01 dark preview exposes detached white matte specks and pale edge residue outside the dark wood/brass object. The calibrated 238 threshold preserves its internal highlights while removing exterior-connected matte."
+	}
+}

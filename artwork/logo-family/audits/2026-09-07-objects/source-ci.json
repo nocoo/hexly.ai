@@ -1,0 +1,201 @@
+{
+	"dogfight": {
+		"revision": "b5ab075a963a78516aaa351d6ca0178c64994729",
+		"runs": [
+			{
+				"conclusion": "failure",
+				"databaseId": 34113124912,
+				"headSha": "b5ab075a963a78516aaa351d6ca0178c64994729",
+				"status": "completed",
+				"url": "https://github.com/nocoo/dogfight/actions/runs/34113124912",
+				"workflowName": "Release"
+			},
+			{
+				"conclusion": "success",
+				"databaseId": 34113079070,
+				"headSha": "b5ab075a963a78516aaa351d6ca0178c64994729",
+				"status": "completed",
+				"url": "https://github.com/nocoo/dogfight/actions/runs/34113079070",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"pew-game": {
+		"revision": "ee68b2dead3e5e698b2427d6a949e8e57c69d520",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113099798,
+				"headSha": "ee68b2dead3e5e698b2427d6a949e8e57c69d520",
+				"status": "completed",
+				"url": "https://github.com/nocoo/pew-game/actions/runs/34113099798",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"signoff-now": {
+		"revision": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113945607,
+				"headSha": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+				"status": "completed",
+				"url": "https://github.com/nocoo/signoff.now/actions/runs/34113945607",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"unseal": {
+		"revision": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a",
+		"runs": [
+			{
+				"conclusion": "failure",
+				"databaseId": 34113304313,
+				"headSha": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a",
+				"status": "completed",
+				"url": "https://github.com/nocoo/unseal/actions/runs/34113304313",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"flow": {
+		"revision": "f4a9e9464d64184b793240adff182e08c04997e1",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113335652,
+				"headSha": "f4a9e9464d64184b793240adff182e08c04997e1",
+				"status": "completed",
+				"url": "https://github.com/nocoo/flow/actions/runs/34113335652",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"arena": {
+		"revision": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34114698645,
+				"headSha": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93",
+				"status": "completed",
+				"url": "https://github.com/nocoo/arena/actions/runs/34114698645",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"echo": {
+		"revision": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113406616,
+				"headSha": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
+				"status": "completed",
+				"url": "https://github.com/nocoo/echo/actions/runs/34113406616",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"deca": {
+		"revision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113424387,
+				"headSha": "1f41b41255b7184c307cb13693e94a6f45bbb9e1",
+				"status": "completed",
+				"url": "https://github.com/nocoo/deca/actions/runs/34113424387",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"runner": {
+		"revision": "a5d786175358dee245773bd98af83eef4bbf5689",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113455820,
+				"headSha": "a5d786175358dee245773bd98af83eef4bbf5689",
+				"status": "completed",
+				"url": "https://github.com/nocoo/runner/actions/runs/34113455820",
+				"workflowName": "CI",
+				"attempt": 2
+			}
+		],
+		"queryExitCode": 0,
+		"error": null,
+		"verification": "Initial Swift test hit a transient SQLite lock; the failed-job rerun passed on the unchanged source commit."
+	},
+	"geekhub": {
+		"revision": "ca7042dc77e4c64e317793b97a1c080c6fa8e567",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34114763413,
+				"headSha": "ca7042dc77e4c64e317793b97a1c080c6fa8e567",
+				"status": "completed",
+				"url": "https://github.com/nocoo/geekhub/actions/runs/34114763413",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"ipsafe": {
+		"revision": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
+		"runs": [
+			{
+				"conclusion": "success",
+				"databaseId": 34113510458,
+				"headSha": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
+				"status": "completed",
+				"url": "https://github.com/nocoo/ipsafe/actions/runs/34113510458",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null
+	},
+	"pokepocket": {
+		"revision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+		"runs": [
+			{
+				"conclusion": "failure",
+				"databaseId": 34115235833,
+				"headSha": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+				"status": "completed",
+				"url": "https://github.com/nocoo/pokepocket/actions/runs/34115235833",
+				"workflowName": "Release"
+			},
+			{
+				"conclusion": "failure",
+				"databaseId": 34114769922,
+				"headSha": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+				"status": "completed",
+				"url": "https://github.com/nocoo/pokepocket/actions/runs/34114769922",
+				"workflowName": "CI"
+			}
+		],
+		"queryExitCode": 0,
+		"error": null,
+		"verification": "The snapshot regression failed at its existing pause action in both attempts (GBA, then GBC). Browser-logo inspection passed; source deployment remains separately gated by application CI."
+	}
+}

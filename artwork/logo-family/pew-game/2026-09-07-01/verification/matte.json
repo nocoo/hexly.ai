@@ -1,0 +1,35 @@
+{
+	"sourceSha256": "ab0299e6617c705aac576e7780fd4bfdb9136fc8b48c0824a83b82c3c6e299f3",
+	"extractionSha256": "2acf9e832f26be9e737555753991169d0d67905d091786f2dd4e588f8ca9728d",
+	"opaquePixelsChecked": 1767924,
+	"changedOpaquePixels": 0,
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"matte": {
+		"minimumChannel": 238,
+		"maximumChroma": 24,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object.",
+		"minimumChannelOverride": 238,
+		"componentCleanupNote": "Pass 01 dark preview exposes detached white matte specks and pale edge residue outside the dark wood/brass object. The calibrated 238 threshold preserves its internal highlights while removing exterior-connected matte."
+	},
+	"statistics": {
+		"backgroundPixels": 2414564,
+		"foregroundPixels": 1779740,
+		"softEdgePixels": 11816,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 164,
+			"top": 272,
+			"right": 1952,
+			"bottom": 1766
+		}
+	},
+	"inspection": "Transparent light/dark specimens and rounded presentation inspected. White/ivory physical surfaces, metal reflections, interior recesses and opaque printed details preserved. Enclosed background seeds are explicitly recorded where used."
+}

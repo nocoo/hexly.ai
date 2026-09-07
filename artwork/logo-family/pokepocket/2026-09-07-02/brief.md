@@ -1,0 +1,11 @@
+# PokePocket — reference-guided character portrait
+
+Create one original, welcoming adventure-game logo based on the pose and red/ivory/charcoal colors of reference image 1. A fully clothed young game adventurer in a red cap and red-and-ivory jacket turns back toward the viewer, smiling naturally, with a complete hand holding the small red-and-white spherical game collectible beside the cheek. Keep the cap, dark tousled hair, friendly eyes, jacket collar and spherical collectible clearly recognizable. This is an illustrated fictional character.
+
+Translate the illustration into the sophisticated connected-facet family language of reference 2: broad shared polygonal color planes, precise edges, restrained sculptural shading, and warm natural skin color. Keep the red cap and jacket as the dominant color group. The spherical collectible is the one focused secondary gesture. The face is calm, confident and expressive. Let the model choose the best turn, camera distance and overlap; an 85 mm portrait-viewfinder analogy catches a natural decisive instant. Only the short collar and shoulders continue through the lower middle edge. Preserve generous clear white space around the entire cap, hair, face and raised fingers/collectible. No circular bust cut, stretched torso or internal crop mask.
+
+References 3 and 4 show the quality of the future presentation only. Return the character alone as one native 2048 by 2048 opaque PNG on a perfectly uniform white background. Keep crisp complete boundaries and opaque warm ivory surfaces. The colored background, texture and cast shadows will be added separately. No text, watermark, app frame, extra accessories, floating color fragments, scenery, external glow or blur. The character stays fully clothed in the jacket and cap throughout.
+
+## Request history
+
+Study 01 received HTTP 400 moderation_blocked at the output stage and returned no image. Its request and response remain untouched. This fresh request uses a simpler, wholesome character description with the same ordered references and the same owner authorization.

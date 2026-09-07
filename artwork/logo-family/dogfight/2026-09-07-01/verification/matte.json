@@ -1,0 +1,34 @@
+{
+	"sourceSha256": "0ef348789c2117bde4b8c2b7d6d9f902d4ea740f712fbe46ead51c7a3feb5162",
+	"extractionSha256": "86244358e436bbf185231cc90a5cb3619aa7df0f0a53f3e23e331d73d8e120b8",
+	"opaquePixelsChecked": 1298378,
+	"changedOpaquePixels": 0,
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object.",
+		"componentCleanupNote": "Dark edge inspection found two detached matte specks below the aircraft in pass 01. The aircraft is one connected component; remove only sub-1000-pixel exterior residue, preserving every attached wing and tail."
+	},
+	"statistics": {
+		"backgroundPixels": 2884056,
+		"foregroundPixels": 1310248,
+		"softEdgePixels": 11870,
+		"removedComponents": 6,
+		"removedComponentPixels": 62,
+		"bounds": {
+			"left": 110,
+			"top": 253,
+			"right": 1999,
+			"bottom": 1757
+		}
+	},
+	"inspection": "Transparent light/dark specimens and rounded presentation inspected. White/ivory physical surfaces, metal reflections, interior recesses and opaque printed details preserved. Enclosed background seeds are explicitly recorded where used."
+}

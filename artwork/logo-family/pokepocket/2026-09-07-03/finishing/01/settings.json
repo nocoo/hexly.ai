@@ -1,0 +1,78 @@
+{
+	"project": "pokepocket",
+	"series": "character",
+	"sourceMode": "prepared-transparent",
+	"original": "../../../../public/logos/originals/pokepocket.svg",
+	"background": {
+		"base": "#af4b4a",
+		"light": "#c67668",
+		"shade": "#913e42",
+		"motif": "#682933",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907016,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Pocket orbits",
+			"description": "Offset interrupted ball orbits and short curved seams, impressed into a warm vermilion paper field.",
+			"layers": [
+				{
+					"d": "M-30 235a190 190 0 1 1 328.7 129.2",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M-100 235a260 260 0 1 1 449.8 176.8",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M-205 235a365 365 0 1 1 631.5 248.2",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M-310 235a470 470 0 1 1 813.1 319.6",
+					"tone": "motif",
+					"strokeWidth": 3.0
+				},
+				{
+					"d": "M720 820q115 -32 230 18M705 838q130 -34 250 19",
+					"tone": "highlight",
+					"strokeWidth": 3.2
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [59, 22, 28],
+			"opacity": 0.22,
+			"blurAt2048": 42,
+			"offsetAt2048": [14, 24]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 960, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 123],
+		"intentionalEdges": [
+			"bottom: jacket and lower forearm continue naturally through the viewfinder"
+		],
+		"note": "Uniform 0.88 placement keeps the original animal-free character pose and lower-frame body entry. The cap, complete raised ball and fingers are inset; no internal circular mask or stretched anatomy. Native art is 960 px; 1024/2048 exports are declared upscales."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [255, 255, 255],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 12
+	},
+	"upscaledExportSizes": [2048, 1024]
+}

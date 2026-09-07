@@ -1,0 +1,44 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"method": "generated",
+	"study": "signoff-now/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/signoff.now",
+	"sourceCommit": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+	"masters": {
+		"logo.png": {
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+			"source": "artwork/logo-family/signoff-now/2026-09-07-01/finishing/01/exports/signoff-now-transparent-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "b13e360b3e5ce4314d357d7fbcd287e149eba119e5d59b7722ccfae058694930",
+			"source": "artwork/logo-family/signoff-now/2026-09-07-01/finishing/01/exports/signoff-now-icon-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "90ca8a6666438b4facd4c31e9e3b8c242884ed9dd1b00e698615a2ff0e4fb518",
+			"source": "artwork/logo-family/signoff-now/2026-09-07-01/finishing/01/exports/signoff-now-rounded-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "260cf65b2a27cf45d1a1f8d498d70a643e8f91ee3fdef0c1db7da559736ea189",
+			"source": "artwork/logo-family/signoff-now/2026-09-07-01/finishing/01/background.png",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/docs/09-logo-usage.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/signoff-now",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/signoff-now/2026-09-07-01/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-objects/source-publication.json",
+		"note": "Source installation, commit, push, and deployment are verified separately in the batch publication record."
+	}
+}

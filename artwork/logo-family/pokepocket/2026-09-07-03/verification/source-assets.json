@@ -1,0 +1,147 @@
+{
+	"repo": "/Users/nocoo/workspace/personal/pokepocket",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+			"dimensions": [960, 960],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "53346d03834b1aa20f454fef669c21a613fdd7a59f1960501b54ab57a722a621",
+			"dimensions": [960, 960],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "aee6c8f50699a4995a3a7d8bf13c5769231efb62fa3bfaf7bb6b1f0c8abd25c0",
+			"dimensions": [960, 960],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/background.png",
+			"sha256": "028de74f83cb75ed870051b21e6177e5f56a2268dbce50011b2703f3b26c681f",
+			"dimensions": [960, 960],
+			"matchesSelectedMaster": true
+		}
+	],
+	"derivatives": [
+		{
+			"path": "public/logo-24.png",
+			"dimensions": [24, 24],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "8ca8372826c1c241fdbc4bb30b679f33a8770630f475545357bd056150d4c3c1"
+		},
+		{
+			"path": "public/logo-32.png",
+			"dimensions": [32, 32],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "a7d98bea58ef9626b728ab34e2f212d16cc21284844a91bee33c5a529729cd78"
+		},
+		{
+			"path": "public/logo-48.png",
+			"dimensions": [48, 48],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "523c5c8b9c91c4d2ef33fb8cb067d1ce2b04988faa3789d3bd5e7d68d485be27"
+		},
+		{
+			"path": "public/logo-64.png",
+			"dimensions": [64, 64],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "518c42231c4108cd4caa3b762e67cded9b7da7d88c9463cf350f0d276653094c"
+		},
+		{
+			"path": "public/logo-128.png",
+			"dimensions": [128, 128],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "78b434ed74fe945c9e0fe2d3c4bc0f5e9e0089e728886d8fcf270687710a925c"
+		},
+		{
+			"path": "public/logo-192.png",
+			"dimensions": [192, 192],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "d1113fae00430542f3f8b18939af2cc199ad3c2cf3f5b92040f7cbbc5982a390"
+		},
+		{
+			"path": "public/logo-256.png",
+			"dimensions": [256, 256],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "dcd5a90cb2abddc558b71ff1fedadadb8bd9f8f81a5eef1dc1c343d6622052a8"
+		},
+		{
+			"path": "public/logo-512.png",
+			"dimensions": [512, 512],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "21d41575e80bf121b41c4ae5ca47f051d97a1b9060ae8de2568bb416b0e08975"
+		},
+		{
+			"path": "public/favicon.png",
+			"dimensions": [32, 32],
+			"role": "transparent",
+			"alphaExtrema": [0, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "a7d98bea58ef9626b728ab34e2f212d16cc21284844a91bee33c5a529729cd78"
+		},
+		{
+			"path": "public/apple-touch-icon.png",
+			"dimensions": [180, 180],
+			"role": "platform-tile",
+			"alphaExtrema": [255, 255],
+			"matchesSelectedMasterResize": true,
+			"sha256": "6fd09975f4561d1421f2207640e847d9aa540f2c4f288cb7905e3e4f66bb4b1b"
+		}
+	],
+	"icoEntries": [
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [16, 16],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [24, 24],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [32, 32],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [48, 48],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		},
+		{
+			"path": "public/favicon.ico",
+			"dimensions": [64, 64],
+			"alphaExtrema": [0, 255],
+			"matchesTransparentResize": true
+		}
+	],
+	"readmeUsesRoundedPresentation": true,
+	"consumers": ["index.html", "src/App.tsx: collection header and game header"],
+	"usageGuide": "docs/04-logo-usage.md",
+	"publication": "Source installation, commit, push and deployment are separate facts; see adoption.json and the batch publication report."
+}
