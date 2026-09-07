@@ -1,0 +1,88 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Indigo feathers",
+				"zh": "靛蓝羽毛"
+			},
+			"role": "primary",
+			"color": "#31356a",
+			"pixel": [729, 1056],
+			"rgb": [49, 53, 106],
+			"sourceSha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832"
+		},
+		{
+			"label": {
+				"en": "Violet planes",
+				"zh": "紫色切面"
+			},
+			"role": "accent",
+			"color": "#65408f",
+			"pixel": [223, 1203],
+			"rgb": [101, 64, 143],
+			"sourceSha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832"
+		},
+		{
+			"label": {
+				"en": "Mint crown",
+				"zh": "薄荷头冠"
+			},
+			"role": "accent",
+			"color": "#9bdfc6",
+			"pixel": [1324, 404],
+			"rgb": [155, 223, 198],
+			"sourceSha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832"
+		},
+		{
+			"label": {
+				"en": "Cyan plumage",
+				"zh": "青色羽毛"
+			},
+			"role": "accent",
+			"color": "#4fb6d0",
+			"pixel": [898, 1359],
+			"rgb": [79, 182, 208],
+			"sourceSha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832"
+		},
+		{
+			"label": {
+				"en": "Deep navy",
+				"zh": "深海蓝"
+			},
+			"role": "accent",
+			"color": "#101633",
+			"pixel": [1347, 792],
+			"rgb": [16, 22, 51],
+			"sourceSha256": "778f2af775a29b84ae8dae6e489afa8deb59b79362c8f5a041dd1f10addf0832"
+		}
+	],
+	"presentation": {
+		"base": "#b0a6c5",
+		"light": "#d8d2e4",
+		"shade": "#877799",
+		"motif": "#655174",
+		"pattern": "Quill pennants",
+		"status": "Selected in the owner-authorized framing repair batch."
+	},
+	"website": {
+		"primary": "#6341c8",
+		"background": "#eeeff2",
+		"theme": {
+			"primary": {
+				"value": "255 55% 52%",
+				"source": "packages/dashboard/src/app/globals.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "@nocoo/basalt/styles tokens --basalt-background"
+			}
+		},
+		"note": "Existing product theme values remain separate from artwork and presentation colors."
+	}
+}

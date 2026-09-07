@@ -1,0 +1,233 @@
+{
+	"method": "The real source sidebar components are server-rendered in both states with explicit anonymous router/session fixtures and their compiled project CSS. Browser image interception serves only the selected source PNG; no application server, production configuration, or data access is used.",
+	"projects": {
+		"wooly": {
+			"sourceComponent": "src/components/AppSidebar.tsx",
+			"sourceSha256": "c273158b8b053f13c7512e92491205644199924a8a81fff5c4d14770e8ce92e3",
+			"stylesSha256": "f094acd024eed4ae8acc9335cb04f8ef32dd6705b0e4387a8f0afb0ce23cd8f2",
+			"asset": "public/logo-24.png",
+			"assetSha256": "951ff58af5e5e09272d2a8ff19f5219b68c1e3ebe5044f25174b0f48ca1d4233",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/wooly-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/wooly-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/wooly-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/wooly-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"noheir": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "503cf25ee941b943866df1c62d7b306a43f057ef7f8db9c50bef29d390e18bd4",
+			"stylesSha256": "0abc89bb0909da68724ad553bcd0bd599a573bf3792614c6ee94d09b96fa31cc",
+			"asset": "public/logo-24.png",
+			"assetSha256": "b1dc5a00ec0821ae2f024f842c49b6a20013645b2f7dff02ef984bee2f6e4c93",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/noheir-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/noheir-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/noheir-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/noheir-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"raven": {
+			"sourceComponent": "src/components/layout/sidebar.tsx",
+			"sourceSha256": "c3a96a138057f710025101ab7a3e053dcefb529d699991be84b9860eb0be813c",
+			"stylesSha256": "e5bf8b59fada9ec02f4b085635eb1edb5a3655747701daff26961ee5cef4952a",
+			"asset": "public/logo-24.png",
+			"assetSha256": "4638dd28c9417e744bf53e938fbd34bc075d0510a49dbbb957a82fdacaa85191",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/raven-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/raven-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/raven-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 20,
+					"height": 20,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/logo-24.png",
+					"screenshot": "source-browser/raven-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		},
+		"life-ai": {
+			"sourceComponent": "src/components/AppSidebar.tsx",
+			"sourceSha256": "10ee6c9a8099b87cff71ffccc33a8a76e6f829d9f3337a4de524cec11e129ef3",
+			"stylesSha256": "6ff05ab97f0227d16528d5b6cb96cfe71d767b492fd76e03eb6afab3ff4e11e5",
+			"asset": "public/logo-24.png",
+			"assetSha256": "169438bc2db19761c473365f98e615860893d4725428bbf4e8be03a9d62ba44e",
+			"cases": [
+				{
+					"state": "expanded",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/life-ai-expanded-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "light",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/life-ai-collapsed-light.png",
+					"result": "passed"
+				},
+				{
+					"state": "expanded",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/life-ai-expanded-dark.png",
+					"result": "passed"
+				},
+				{
+					"state": "collapsed",
+					"theme": "dark",
+					"width": 24,
+					"height": 24,
+					"radius": "0px",
+					"background": "rgba(0, 0, 0, 0)",
+					"filter": "none",
+					"src": "/_next/image?url=%2Flogo-24.png&w=48&q=75",
+					"screenshot": "source-browser/life-ai-collapsed-dark.png",
+					"result": "passed"
+				}
+			]
+		}
+	}
+}

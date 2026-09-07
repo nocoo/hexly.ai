@@ -1,0 +1,65 @@
+{
+	"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec",
+	"foregroundSha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca",
+	"squareSha256": "36f5a83c65868f88669bd52dcf2983ae875a39eb1990cebcf3eea3f16b662509",
+	"roundedSha256": "c96ac0910c491e515bf7dfa674d9b38f8fe6339a5db6747190502ae94333015a",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance to the actual rounded-square boundary, evaluated at visible pixel centers.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 123],
+		"intentionalEdges": ["bottom", "lower-left"],
+		"note": "Uniform 88% bottom-aligned placement; the head and accessories retain their exact relative proportions. A narrow source-colored continuation of the existing shoulder restores the left frame entry exposed by the inset. Protect expressive features separately from intentional lower shoulder intersections.",
+		"continuation": {
+			"path": "input/shoulder-continuation.svg",
+			"sha256": "278f0e30f876ce7eb2787514b22f723e286c25e889bfbc6dded03b6a3c48f014",
+			"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher."
+		}
+	},
+	"protectedFeatures": [
+		{
+			"name": "Complete apple, stem, and leaves",
+			"regionAt2048": [790, 270, 1400, 860],
+			"visiblePixels": 211788,
+			"minimumClearancePx": 319.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Ear",
+			"regionAt2048": [530, 500, 1020, 1100],
+			"visiblePixels": 224068,
+			"minimumClearancePx": 500.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Glasses including outer arm",
+			"regionAt2048": [500, 810, 1940, 1420],
+			"visiblePixels": 686628,
+			"minimumClearancePx": 239.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Eyes and broad muzzle",
+			"regionAt2048": [800, 990, 1940, 1800],
+			"visiblePixels": 730604,
+			"minimumClearancePx": 248.5,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": ["bottom", "lower-left"],
+		"clippedPixels": 46694,
+		"note": "Only the natural lower shoulder or wing root crosses the presentation outline; expressive features and retained accessories are protected separately."
+	},
+	"continuation": {
+		"path": "input/shoulder-continuation.svg",
+		"sha256": "278f0e30f876ce7eb2787514b22f723e286c25e889bfbc6dded03b6a3c48f014",
+		"description": "Minor outer shoulder/wing continuation behind the uniformly inset approved source; only the narrow newly exposed side strip is restored. Flat source-sampled facets, no repeated edge pixels or neck stretching. All opaque placed source pixels are verified unchanged by the finisher.",
+		"addedPixels": 44722,
+		"opaquePixelsPreserved": 1844026
+	}
+}

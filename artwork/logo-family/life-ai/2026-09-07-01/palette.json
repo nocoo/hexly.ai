@@ -1,0 +1,103 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Caramel coat",
+				"zh": "焦糖毛色"
+			},
+			"role": "primary",
+			"color": "#c18d57",
+			"pixel": [1101, 935],
+			"rgb": [193, 141, 87],
+			"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec"
+		},
+		{
+			"label": {
+				"en": "Cocoa facets",
+				"zh": "可可色块"
+			},
+			"role": "accent",
+			"color": "#694936",
+			"pixel": [1086, 1860],
+			"rgb": [105, 73, 54],
+			"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec"
+		},
+		{
+			"label": {
+				"en": "Apple red",
+				"zh": "苹果红"
+			},
+			"role": "accent",
+			"color": "#e1412e",
+			"pixel": [1079, 312],
+			"rgb": [225, 65, 46],
+			"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec"
+		},
+		{
+			"label": {
+				"en": "Leaf green",
+				"zh": "叶绿"
+			},
+			"role": "accent",
+			"color": "#77a848",
+			"pixel": [1205, 111],
+			"rgb": [119, 168, 72],
+			"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec"
+		},
+		{
+			"label": {
+				"en": "Blue glasses",
+				"zh": "蓝色镜框"
+			},
+			"role": "accent",
+			"color": "#276da5",
+			"pixel": [999, 918],
+			"rgb": [39, 109, 165],
+			"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec"
+		},
+		{
+			"label": {
+				"en": "Purple glasses",
+				"zh": "紫色镜框"
+			},
+			"role": "accent",
+			"color": "#793ca6",
+			"pixel": [1732, 721],
+			"rgb": [121, 60, 166],
+			"sourceSha256": "705264fc5b59cc4d709426f59b226cbafa0a4a82aadfd458cc5f3f1ab634a2ec"
+		}
+	],
+	"presentation": {
+		"base": "#b7aa8e",
+		"light": "#ddd2b5",
+		"shade": "#8f836c",
+		"motif": "#756747",
+		"pattern": "Riverbank ripples",
+		"status": "Selected in the owner-authorized framing repair batch."
+	},
+	"website": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "dashboard/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "dashboard/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "217 91% 60%",
+				"source": "dashboard/src/app/globals.css --primary"
+			}
+		},
+		"note": "Existing product theme values remain separate from artwork and presentation colors."
+	}
+}

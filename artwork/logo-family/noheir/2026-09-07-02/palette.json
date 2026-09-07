@@ -1,0 +1,92 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels; no averaging or color correction."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Copper brown",
+				"zh": "铜棕"
+			},
+			"role": "primary",
+			"color": "#b4642e",
+			"pixel": [1032, 870],
+			"rgb": [180, 100, 46],
+			"sourceSha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c"
+		},
+		{
+			"label": {
+				"en": "Cream blaze",
+				"zh": "奶油额纹"
+			},
+			"role": "accent",
+			"color": "#f1ddc3",
+			"pixel": [683, 558],
+			"rgb": [241, 221, 195],
+			"sourceSha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c"
+		},
+		{
+			"label": {
+				"en": "Coral muzzle",
+				"zh": "珊瑚鼻尖"
+			},
+			"role": "accent",
+			"color": "#f29b8a",
+			"pixel": [631, 1385],
+			"rgb": [242, 155, 138],
+			"sourceSha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c"
+		},
+		{
+			"label": {
+				"en": "Eye blue",
+				"zh": "眼睛蓝"
+			},
+			"role": "accent",
+			"color": "#586b7b",
+			"pixel": [1128, 869],
+			"rgb": [88, 107, 123],
+			"sourceSha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c"
+		},
+		{
+			"label": {
+				"en": "Chestnut",
+				"zh": "栗棕"
+			},
+			"role": "accent",
+			"color": "#713b28",
+			"pixel": [1616, 1501],
+			"rgb": [113, 59, 40],
+			"sourceSha256": "61f13d785b85a2aafc37ba1c2667bc15ca8b1b0b8258e947a9ea4440baada60c"
+		}
+	],
+	"presentation": {
+		"base": "#638783",
+		"light": "#a5c2b8",
+		"shade": "#3d625f",
+		"motif": "#254946",
+		"pattern": "Quiet terraces",
+		"status": "Selected in the owner-authorized framing repair batch."
+	},
+	"website": {
+		"primary": "#25aff4",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "200 90% 55%",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"note": "Existing product theme values remain separate from artwork and presentation colors."
+	}
+}
