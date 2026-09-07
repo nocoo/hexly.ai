@@ -34,7 +34,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Component | Choice |
 |---|---|
 | Client | React 19, Vite 8, TypeScript 7 strict |
-| Toolchain | Bun 1.4.0, exact dependencies and frozen `bun.lock`; CI Node.js 26.7.0 |
+| Toolchain | Bun 1.4.0, exact dependencies and frozen `bun.lock`; browser CI and deployment pin Node.js 26.7.0 |
 | Hosting | Cloudflare Worker `hexly-ai`, static assets only |
 | Quality | Biome; Vitest L1; Playwright HTTP L2 and Chromium L3; OSV + Gitleaks |
 
@@ -113,4 +113,5 @@ Record accident narratives in [Retrospective.md](Retrospective.md), recurring pr
 
 - Keep frozen lockfile validation in version-only releases; temporary registry configuration must not rewrite dependency sources.
 - Confirm the Deploy job's final success and public verification before reporting publication complete.
+- Keep the pinned browser job required by Deploy alongside the shared quality workflow; preserve its failure diagnostics and traces.
 - Temporary-repository tests must remove repository-local Git environment variables inherited from hooks; a different working directory alone does not isolate a linked worktree.
