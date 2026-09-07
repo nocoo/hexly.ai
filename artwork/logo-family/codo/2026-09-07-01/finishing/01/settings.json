@@ -1,0 +1,89 @@
+{
+	"project": "codo",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#5f8988",
+		"light": "#b6cfbd",
+		"shade": "#304f5e",
+		"motif": "#243d49",
+		"grainAmplitude": 1,
+		"grainSeed": 6090794,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Petal pockets",
+			"description": "Petal pockets: three broad asymmetrical folded petal pockets and fine offset seams on a deep mineral-teal field.",
+			"layers": [
+				{
+					"d": "M-92 106C125 34 319 68 413 267C255 274 99 245-92 348Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-89 355C102 252 256 282 420 275",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M788-97C882 53 758 217 622 280C801 335 1004 212 1119 10V-97Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M621 287C810 344 1013 221 1125 13",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M779 714C942 670 1073 751 1120 988V1124H850C710 1006 704 855 779 714Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M773 709C696 850 702 1006 844 1127",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-74 810C60 719 222 766 279 948C110 1013 58 1109-74 1115Z",
+					"tone": "ribbon"
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/codo.png",
+	"framing": {
+		"scale": 0.89,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+	}
+}

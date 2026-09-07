@@ -1,0 +1,386 @@
+{
+	"createdAt": "2026-09-07T02:47:46.639Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "6638f897f7188f9c38be09988c4342c6079f0304fd466a35f9ed47015bb96043",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "owl",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#5f6684",
+			"light": "#a8aec5",
+			"shade": "#363c55",
+			"motif": "#262a43",
+			"grainAmplitude": 1,
+			"grainSeed": 609080,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Night aperture relief",
+				"description": "An off-center observatory aperture uses wide interrupted crescent steps and two rectangular notches. Its asymmetric nested opening differs from flowing curves, feather stripes, and circular light orbits.",
+				"layers": [
+					{
+						"d": "M1138 917C859 1040 661 902 694 681L726 681L726 578C739 423 862 329 1038 371L1124 392",
+						"tone": "motif",
+						"strokeWidth": 38
+					},
+					{
+						"d": "M1141 940C836 1068 637 905 671 662L704 662L704 575C720 402 860 307 1047 350",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M1160 713C1033 809 920 756 924 645L947 645L947 610C954 551 1017 521 1084 552",
+						"tone": "ribbon",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M-100 127H63V173C196 179 266 92 240-69",
+						"tone": "motif",
+						"strokeWidth": 33
+					},
+					{
+						"d": "M-100 149H45V194C209 204 290 93 262-71",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-76 406C164 454 348 285 329 78H291V-78",
+						"tone": "ribbon",
+						"strokeWidth": 29
+					}
+				]
+			},
+			"status": "Designed presentation for the owner-delegated redesign batch; independent of native artwork and product UI colors."
+		},
+		"shadows": [
+			{
+				"color": [
+					29,
+					31,
+					35
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					23,
+					26,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform centered 90% placement protects both ear tufts, the complete feather, and every talon. The compact whole owl remains intact."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/owl.png",
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Native exterior samples are near-white rather than pure white. Border-connected extraction uses a source-specific matte sample; enclosed eye highlights and warm ivory anatomy are protected by connectivity and chroma. No connected-component cleanup is applied in this pass; inspect every remaining component and both light/dark boundaries."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2638780,
+		"foregroundPixels": 1555524,
+		"softEdgePixels": 10204,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 396,
+			"top": 102,
+			"right": 1750,
+			"bottom": 1936
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 458,
+			"top": 193,
+			"right": 1677,
+			"bottom": 1845
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 193.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2755,
+			"sha256": "78aa33c0ff68df235396a7988ad70ef8734c92817790aeb23ef2a91498fea898"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1374,
+			"sha256": "79d313d7569e8cd89b2c2a0b0e016e39e09f229210081a386bc4b7766dee5d04"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3436992,
+			"sha256": "c6a514d97dcd17deffb3b37117060c0202620e681712c40f82300feb6ffb1be3"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61913,
+			"sha256": "779e71d255f20ddd4f551fdf558ac3fc02bb2b99db04d0c0ed13ec152ca9eea2"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1204,
+			"sha256": "42fb6b00ee3113e5f20b282d0aa8c20f42d8fa34f25e2bf387c196d29fa82ba5"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2499441,
+			"sha256": "dbe7da6cddaadf3bd1bf70683371365376ef0806a342e7fe770349cfb2015722"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2973160,
+			"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 81163,
+			"sha256": "077b2721aa372bc43173d3dcfe360b486378f18ed1ba2a59ebfa6a87d354574b"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 144896,
+			"sha256": "4ee8055cb5d32c71633113c8085bb39e9c65fc38fe96043d7d7333928a927df2"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 117804,
+			"sha256": "fe2334f45ac2fdd18a5d84f09535efc63c279401b63d8c44d2c9bab8bf03b141"
+		},
+		{
+			"path": "exports/owl-transparent-2048.png",
+			"bytes": 2973160,
+			"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8"
+		},
+		{
+			"path": "exports/owl-icon-2048.png",
+			"bytes": 5063568,
+			"sha256": "17c1ad45a633ef110cf1986c4143eb0d67e65f82ab867a9f2daeedcec5a3f703"
+		},
+		{
+			"path": "exports/owl-rounded-2048.png",
+			"bytes": 4962713,
+			"sha256": "a6a7626bfda4abcae468c9c61b8113674a2fbd1369e0a6ef161a583b8ba5b095"
+		},
+		{
+			"path": "exports/owl-transparent-1024.png",
+			"bytes": 823449,
+			"sha256": "ddb886d89dea1234e2626f929824f2ab03776b7d0010f8a62ed8d03d9006d039"
+		},
+		{
+			"path": "exports/owl-icon-1024.png",
+			"bytes": 1325139,
+			"sha256": "b84a4a5f9916883190a47bbf584ac73808e089c3de71e05bf3f0a5c3b9fd696f"
+		},
+		{
+			"path": "exports/owl-rounded-1024.png",
+			"bytes": 1314032,
+			"sha256": "ed11896f12a265d5cb348257a3a4fd00d3be7d5ca4cf416ab7c102449ea655e6"
+		},
+		{
+			"path": "exports/owl-transparent-512.png",
+			"bytes": 238935,
+			"sha256": "015ead218c88a5f71f15453c316b04f3449e094e27869514d085ba1ae1a8ee78"
+		},
+		{
+			"path": "exports/owl-icon-512.png",
+			"bytes": 404354,
+			"sha256": "bbc112094833f51684481244720354600bd6781a8f5316a89ab5d09c64d6dde8"
+		},
+		{
+			"path": "exports/owl-rounded-512.png",
+			"bytes": 402755,
+			"sha256": "fda4f705cde781b5aef4db9a20149246e2d3fd7733eb1f20b8d613f314568bf9"
+		},
+		{
+			"path": "exports/owl-transparent-256.png",
+			"bytes": 67967,
+			"sha256": "2a3b9b1988d4c729e632ec9d03dbf04e1d21c282da1083a3dd45b9918209123e"
+		},
+		{
+			"path": "exports/owl-icon-256.png",
+			"bytes": 99203,
+			"sha256": "2e611bacf53f1d68bffd5d8b304aa3cec2e541e8de1a05e54598df1e27a226fb"
+		},
+		{
+			"path": "exports/owl-rounded-256.png",
+			"bytes": 101364,
+			"sha256": "4c17fdebe52ebefa2bb5e6f7803efa1af3e01e239992fe80b9ea8d3379b97d0c"
+		},
+		{
+			"path": "exports/owl-transparent-128.png",
+			"bytes": 18734,
+			"sha256": "b677f00d3333c4f3def58cfbe74c893409ae089814f92347cf8da220cdc43ba5"
+		},
+		{
+			"path": "exports/owl-icon-128.png",
+			"bytes": 30352,
+			"sha256": "af344ad604c64f1a73c2c6581894e5b9b8b7b94859a380d40fcdded95ceceafe"
+		},
+		{
+			"path": "exports/owl-rounded-128.png",
+			"bytes": 31552,
+			"sha256": "27c0eb94db88fd04e37a38302fbad99372b4334ce54dedf745b7fd3edceaa3a1"
+		},
+		{
+			"path": "exports/owl-transparent-64.png",
+			"bytes": 5414,
+			"sha256": "f6e3e9489c4d43f89aecccfe93fcd52e152de4abcbce97afa33ad00036f6ed77"
+		},
+		{
+			"path": "exports/owl-icon-64.png",
+			"bytes": 9530,
+			"sha256": "42e97fae2196585d63fb023527c4a21726136dae0ba5233dc8bb2aa4239e2a5d"
+		},
+		{
+			"path": "exports/owl-rounded-64.png",
+			"bytes": 10060,
+			"sha256": "0a8d90d2a1db6d1db95407f4d148306de4e7909ad7199a9b9ef6f5d97047b642"
+		},
+		{
+			"path": "exports/owl-transparent-48.png",
+			"bytes": 3328,
+			"sha256": "01949660b34c1f2e32a2903d8d755a4046d24f4c9a233d24bc9e5a7c9ed0c33f"
+		},
+		{
+			"path": "exports/owl-icon-48.png",
+			"bytes": 5659,
+			"sha256": "f5a0db5e2f8abfe4ab439e65dfd6316345e81ce9c7cf2a29e4045b84c3d0dd90"
+		},
+		{
+			"path": "exports/owl-rounded-48.png",
+			"bytes": 6035,
+			"sha256": "a6bdd67667f9f2f6bf7b991a3688d73d1681e2d8a8ce37a6b14f267206141048"
+		},
+		{
+			"path": "exports/owl-transparent-32.png",
+			"bytes": 1757,
+			"sha256": "586d9d70bbb09556130ec51873034070b1f19948475e0b5533408c87ff4df44c"
+		},
+		{
+			"path": "exports/owl-icon-32.png",
+			"bytes": 2919,
+			"sha256": "8f885eba514bb56c09a5255e3418ee1e31ad4247c2a7123b7969e833153525d5"
+		},
+		{
+			"path": "exports/owl-rounded-32.png",
+			"bytes": 3089,
+			"sha256": "770e42cbe192ae430d1635c67a470f14c0300fa4fb0c1bafc50ebb28ba95a6e8"
+		},
+		{
+			"path": "exports/owl-transparent-24.png",
+			"bytes": 1150,
+			"sha256": "2637d45f9348a6679256305206ccbe6008934c08ffd477eb0b768d909f2e45fe"
+		},
+		{
+			"path": "exports/owl-icon-24.png",
+			"bytes": 1766,
+			"sha256": "4638174129c65f107d486caab321c348280f84678d9247e75fdab411d6fd63c6"
+		},
+		{
+			"path": "exports/owl-rounded-24.png",
+			"bytes": 1930,
+			"sha256": "5121e9314f8fe1bc5c492fc4c630a44b6be23dcbf271c948bd66c0d118c65590"
+		},
+		{
+			"path": "exports/owl-transparent-16.png",
+			"bytes": 668,
+			"sha256": "d57407717e86ef6d573816d399974b8d01837ce96a85062b31f9bdcb1284eb45"
+		},
+		{
+			"path": "exports/owl-icon-16.png",
+			"bytes": 895,
+			"sha256": "5ba553a78bdc40601b1ac97c48ad48cc36074347f352152374d9a4a401085724"
+		},
+		{
+			"path": "exports/owl-rounded-16.png",
+			"bytes": 941,
+			"sha256": "8a947016c60c5473e841afc94789b7c95eaefbcd3cbbb7b285fc7d5a8d748eb3"
+		},
+		{
+			"path": "exports/owl-white-2048.png",
+			"bytes": 2796719,
+			"sha256": "fb3bff1718ec57fd773a944094560ee77c0161bd088a05c1a56784ba1e799713"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 787671,
+			"sha256": "32d830df365f6c906f92d4dba2dc257744d5866258dda15dccbec6d74bbc0f01"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 785483,
+			"sha256": "8c1ecb79541bfb53abc3934688b8b9163295ecba91022448b235180c9060bcac"
+		}
+	]
+}

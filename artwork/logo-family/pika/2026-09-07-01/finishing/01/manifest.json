@@ -1,0 +1,351 @@
+{
+	"createdAt": "2026-09-07T03:31:40.553Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "pika",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#918451",
+			"light": "#c1b783",
+			"shade": "#5f542f",
+			"motif": "#463b20",
+			"grainAmplitude": 1,
+			"grainSeed": 6090796,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Charge steps",
+				"description": "Charge steps: broad unequal angular charge paths and low pressed zigzag bands on a deep antique-gold field. Preserve the exact original mouse, its detached energy accents and native placement.",
+				"layers": [
+					{
+						"d": "M-100 118L224 16L180 225L475 130L408 402L334 425L382 226L78 324L132 129L-100 199Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-101 206L124 139L69 334L373 236L326 433",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M813-88L707 254L963 175L824 498L905 473L1097 62L825 147L897-88Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M810 508L950 188L693 268L800-86",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-89 959L251 830L208 1093H310L373 686L-89 857Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M733 1120L790 875L1114 768V669L705 807L627 1120Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M618 1119L698 800L1114 660",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/pika.png"
+	},
+	"statistics": {
+		"backgroundPixels": 2965262,
+		"foregroundPixels": 1229042,
+		"softEdgePixels": 1228939,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 26,
+			"top": 345,
+			"right": 1842,
+			"bottom": 1646
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 26.500000000000057,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1794,
+			"sha256": "d895ff4ffbf7611fd72237a128d7e737b6948471cf67fc1a60dca207c1e77c56"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 1237,
+			"sha256": "ebdd624ff9aa7f1a5ab56b9259435d371dff074873e7613ca2a9a9e4f3ca373d"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1313,
+			"sha256": "d1bbe2c58bc3203fedc96a84350028e25504b54c27fd3f15647ca2023bc8ff50"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 466653,
+			"sha256": "68c3f1827d6ba1920a5257bbc236713e515e481bc5bda8181c7817e919a39d01"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1126,
+			"sha256": "cfa0d700027c0096f7bee54a5b903e45e9c0776b515e5bae0b47d0a2a5f8bc8f"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2428498,
+			"sha256": "66d9627b1c85964aed32a63d6ce9c8dfc1591d2905336ed69ed78fb795bdb67f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 239129,
+			"sha256": "bc72e7f24b5e7b31d394aca75f3ab462f0fd0775d920e786614f4e2be7e20bd0"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 193302,
+			"sha256": "a23b59fadfe1d986f9afdf2d2eb7a32d7510510d83d3b7bafd1c6a91ad3ca701"
+		},
+		{
+			"path": "exports/pika-transparent-2048.png",
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"path": "exports/pika-icon-2048.png",
+			"bytes": 4719628,
+			"sha256": "9859f7c9894ee64cfab064497ac24d3ab7a1ca21e614b7381d8ae2b37fc6f5a9"
+		},
+		{
+			"path": "exports/pika-rounded-2048.png",
+			"bytes": 4621682,
+			"sha256": "715d50b1ad7aee3efa80bed4305cdbfb54720ca5b955e06bd7c6b3d642ede70d"
+		},
+		{
+			"path": "exports/pika-transparent-1024.png",
+			"bytes": 751841,
+			"sha256": "ec2525dc56838121486f384d9677bb23f8cf0477de94a55054d0e823a4b85216"
+		},
+		{
+			"path": "exports/pika-icon-1024.png",
+			"bytes": 1276183,
+			"sha256": "cd4bccb449f9801fc2304793bd4545ce97e36d1d5a70c9dcae2631d729954cb1"
+		},
+		{
+			"path": "exports/pika-rounded-1024.png",
+			"bytes": 1266246,
+			"sha256": "818a313214e6c80cf3cb71ff7ab88e89146a3ea78f5558ac963d2406f5bde6fb"
+		},
+		{
+			"path": "exports/pika-transparent-512.png",
+			"bytes": 209625,
+			"sha256": "3ff9dd8a64979cfc899d51ac6cac1cd55fe4dd3d95017fd897e180402b056b4f"
+		},
+		{
+			"path": "exports/pika-icon-512.png",
+			"bytes": 379443,
+			"sha256": "78b17bb590e2824e06707828f67a728393b5e141fcfa22211f8db54db9cc1ebf"
+		},
+		{
+			"path": "exports/pika-rounded-512.png",
+			"bytes": 378271,
+			"sha256": "ea1671fb65bbc1a7239c6eb76d3b59e07730eeba4017cdde032ee708e0c79a31"
+		},
+		{
+			"path": "exports/pika-transparent-256.png",
+			"bytes": 64222,
+			"sha256": "4c64aba2534839e4585dced75e00827cd5a84143e9af0183a5fc2d0f8c7251fa"
+		},
+		{
+			"path": "exports/pika-icon-256.png",
+			"bytes": 98054,
+			"sha256": "0b4a711dff786d867c91b78ae604283b6a0f89155e66e04927c8c1f5b4b0f858"
+		},
+		{
+			"path": "exports/pika-rounded-256.png",
+			"bytes": 100166,
+			"sha256": "61b7c0038aca998acbdd03a5635d6436d6b5a127feef93e03b18fdbe86502764"
+		},
+		{
+			"path": "exports/pika-transparent-128.png",
+			"bytes": 20738,
+			"sha256": "2ed517673a79be38386c5cd15ce9009b6a058ba8a990ec3f157f1e26e2b4d333"
+		},
+		{
+			"path": "exports/pika-icon-128.png",
+			"bytes": 31666,
+			"sha256": "9f3d7cc34fd523601cf907c6429bdcf56e5580bad1696747d838fb7ad62fe659"
+		},
+		{
+			"path": "exports/pika-rounded-128.png",
+			"bytes": 32730,
+			"sha256": "3a28d660512686d41036f5b7e0f97185695afbfb89e0f7de57d972ad52a2e087"
+		},
+		{
+			"path": "exports/pika-transparent-64.png",
+			"bytes": 6522,
+			"sha256": "57afa2c01deb5adf68c72cb0ccdf7a11ff52ce94cdbaa33e739885375ef346c5"
+		},
+		{
+			"path": "exports/pika-icon-64.png",
+			"bytes": 10386,
+			"sha256": "18f957012628f8616563f369deaf5c7191ecfc379d24f9bcaa62819ae2967c0f"
+		},
+		{
+			"path": "exports/pika-rounded-64.png",
+			"bytes": 10768,
+			"sha256": "6036f4775c5676a297dded26abffa697057bc3f86297e6ae2cd8d82cf8405bcc"
+		},
+		{
+			"path": "exports/pika-transparent-48.png",
+			"bytes": 4048,
+			"sha256": "f7659a077d136501bfa516ab6c2be6a3ae96ad571d92f1314781fb69f909fe89"
+		},
+		{
+			"path": "exports/pika-icon-48.png",
+			"bytes": 6417,
+			"sha256": "b6f24200c57947bf1b0c54af8305d1a5fb4fefed62dafff719deffa11c7a0ab6"
+		},
+		{
+			"path": "exports/pika-rounded-48.png",
+			"bytes": 6685,
+			"sha256": "fc9d0584006315a69bde9455b9700251b182f4ddc06c1bf97b93187b0b64cc52"
+		},
+		{
+			"path": "exports/pika-transparent-32.png",
+			"bytes": 2145,
+			"sha256": "257105396ed0be965562fe3f5ecf2c7a33930eadfd235a1749c6f8d8224954c8"
+		},
+		{
+			"path": "exports/pika-icon-32.png",
+			"bytes": 3297,
+			"sha256": "e9b5a9c30e293038b33245f829b8169dbf966b43c390b59b3990406fd2f8a168"
+		},
+		{
+			"path": "exports/pika-rounded-32.png",
+			"bytes": 3396,
+			"sha256": "8e10c462784bb44588b1d546ce734e376a5368e8d41fe70e3db8ccc189de4ec6"
+		},
+		{
+			"path": "exports/pika-transparent-24.png",
+			"bytes": 1384,
+			"sha256": "6d5fe39ae95ee0f566579b4d28c05140dada4f18a360cd923f0724e4af5ed6bd"
+		},
+		{
+			"path": "exports/pika-icon-24.png",
+			"bytes": 2002,
+			"sha256": "6c993bd2d52943d82e5de226c969c1f5a818b5a74e8e48a30dabbc45ab761257"
+		},
+		{
+			"path": "exports/pika-rounded-24.png",
+			"bytes": 2075,
+			"sha256": "3aee72e64650ee72f4e43e09eacb3eb39d155a7dc65890b809ce1cd21fed122a"
+		},
+		{
+			"path": "exports/pika-transparent-16.png",
+			"bytes": 768,
+			"sha256": "b360f2fd3ce71151dff6067e27207a9e5f260600f94acd5fd9fee968229b451e"
+		},
+		{
+			"path": "exports/pika-icon-16.png",
+			"bytes": 995,
+			"sha256": "c931ef497f2ab8b665bda62a9c76742d8477d10f90f11ea1c9110db2a5738bdc"
+		},
+		{
+			"path": "exports/pika-rounded-16.png",
+			"bytes": 1031,
+			"sha256": "9a2ab17fcbd17c6ace0dd83d91070fda04aee2fbd6d83990a4dd3061f1fde515"
+		},
+		{
+			"path": "exports/pika-white-2048.png",
+			"bytes": 2300889,
+			"sha256": "12b7cd33a53f06785da4185772ce42c4d1ecc2192def78a4731c9a21f8b7e3ee"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 667672,
+			"sha256": "e038c0bc1d2ea4a30ea38122a61f9555b5cfeba31cca5096124efa409c60102b"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 657319,
+			"sha256": "3d0d404e6df59f049877039944a0aea9776dc478de2d5807881d648566996af5"
+		}
+	]
+}

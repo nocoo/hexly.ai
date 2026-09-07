@@ -1,0 +1,80 @@
+{
+	"project": "rooster",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#9c8460",
+		"light": "#d9bd8d",
+		"shade": "#655037",
+		"motif": "#45311f",
+		"grainAmplitude": 1,
+		"grainSeed": 6090792,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Dawn terraces",
+			"description": "Dawn terraces: unequal low stepped bands and offset rising folds on a muted warm apricot field, distinct from radial fans.",
+			"layers": [
+				{
+					"d": "M-97 81H234V125H396V175H558V228H770V278H1121V323H735V276H518V224H354V175H191V129H-97Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-94 135H187V181H350V230H514V282H731V329H1120",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-97 616H99V666H222V722H351V766H523V812H749V862H1123V909H710V859H483V815H309V771H181V717H56V668H-97Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-96 671H53V722H177V777H304V821H478V865H704V915H1122",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M753-84H855V26H990V78H1110V123H952V75H809V-27H753Z",
+					"tone": "ribbon"
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/emoji/rooster.png",
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform centered placement of the complete animal and accessory. Scale selected from border-connected native foreground estimates with a 145 px preliminary buffer, then enforced against the actual extracted rounded outline at 128 px. No repositioned parts, stretched anatomy, added contours or internal crops."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The matte RGB is the modal value from the untouched native outer eight-pixel border. Remove only exterior-connected near-white; inspect pale anatomy, enclosed highlights and inner negative spaces separately. No component cleanup is assumed."
+	}
+}

@@ -1,0 +1,485 @@
+{
+	"checkedAt": "2026-09-07T04:03:12.782Z",
+	"baseURL": "https://index.dev.hexly.ai",
+	"browser": "152.0.7977.83",
+	"projects": {
+		"surety": {
+			"route": "/logos/surety",
+			"staticRoute": "/artwork/logo-family/surety/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/surety-site-desktop-en-light.png",
+				"screenshots/surety-static-desktop-en-light.png",
+				"screenshots/surety-site-mobile-en-dark.png",
+				"screenshots/surety-static-mobile-en-dark.png"
+			]
+		},
+		"owl": {
+			"route": "/logos/owl",
+			"staticRoute": "/artwork/logo-family/owl/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/owl-site-desktop-en-light.png",
+				"screenshots/owl-static-desktop-en-light.png",
+				"screenshots/owl-site-mobile-en-dark.png",
+				"screenshots/owl-static-mobile-en-dark.png"
+			]
+		},
+		"ellie": {
+			"route": "/logos/ellie",
+			"staticRoute": "/artwork/logo-family/ellie/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/ellie-site-desktop-en-light.png",
+				"screenshots/ellie-static-desktop-en-light.png",
+				"screenshots/ellie-site-mobile-en-dark.png",
+				"screenshots/ellie-static-mobile-en-dark.png"
+			]
+		},
+		"giraffe": {
+			"route": "/logos/giraffe",
+			"staticRoute": "/artwork/logo-family/giraffe/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/giraffe-site-desktop-en-light.png",
+				"screenshots/giraffe-static-desktop-en-light.png",
+				"screenshots/giraffe-site-mobile-en-dark.png",
+				"screenshots/giraffe-static-mobile-en-dark.png"
+			]
+		},
+		"steed": {
+			"route": "/logos/steed",
+			"staticRoute": "/artwork/logo-family/steed/2026-09-07-02/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/steed-site-desktop-en-light.png",
+				"screenshots/steed-static-desktop-en-light.png",
+				"screenshots/steed-site-mobile-en-dark.png",
+				"screenshots/steed-static-mobile-en-dark.png"
+			]
+		}
+	},
+	"index": [
+		{
+			"query": "",
+			"order": [
+				"frogie",
+				"pew",
+				"firefly",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy",
+				"otter",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"bat",
+				"lyre",
+				"gaga",
+				"rooster",
+				"snaky",
+				"codo",
+				"owl",
+				"xray",
+				"r2shot",
+				"shrike",
+				"hooky",
+				"wooly",
+				"surety",
+				"life-ai",
+				"zhe",
+				"noheir",
+				"pokepocket",
+				"dogfight",
+				"pew-game",
+				"signoff-now",
+				"unseal",
+				"flow",
+				"arena",
+				"dotty",
+				"matrix",
+				"basalt",
+				"echo",
+				"deca",
+				"runner",
+				"geekhub",
+				"ipsafe",
+				"hexly-ai"
+			],
+			"result": "passed"
+		},
+		{
+			"query": "?sort=az",
+			"order": [
+				"backy",
+				"bat",
+				"bogo",
+				"codo",
+				"dove",
+				"ellie",
+				"firefly",
+				"frogie",
+				"gaga",
+				"gecko",
+				"giraffe",
+				"hooky",
+				"life-ai",
+				"lyre",
+				"neo",
+				"noheir",
+				"otter",
+				"owl",
+				"pew",
+				"pika",
+				"r2shot",
+				"raven",
+				"rooster",
+				"shrike",
+				"snaky",
+				"steed",
+				"surety",
+				"wooly",
+				"xray",
+				"zhe",
+				"arena",
+				"basalt",
+				"deca",
+				"dogfight",
+				"dotty",
+				"echo",
+				"flow",
+				"geekhub",
+				"hexly-ai",
+				"ipsafe",
+				"matrix",
+				"pew-game",
+				"pokepocket",
+				"runner",
+				"signoff-now",
+				"unseal"
+			],
+			"result": "passed"
+		},
+		{
+			"query": "?category=extensions",
+			"order": [
+				"uptime-kuma-skill",
+				"microsoft-teams-send-as-workflow",
+				"image-stitch",
+				"skill-faster-whisper",
+				"skill-task-notifier",
+				"mcp-work-history",
+				"mcp-make-sound"
+			],
+			"result": "passed"
+		},
+		{
+			"query": "?category=extensions&sort=az",
+			"order": [
+				"skill-faster-whisper",
+				"image-stitch",
+				"mcp-make-sound",
+				"skill-task-notifier",
+				"microsoft-teams-send-as-workflow",
+				"uptime-kuma-skill",
+				"mcp-work-history"
+			],
+			"result": "passed"
+		},
+		{
+			"query": "?q=AI",
+			"order": [
+				"frogie",
+				"pew",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"lyre",
+				"codo",
+				"xray",
+				"shrike",
+				"wooly",
+				"surety",
+				"life-ai",
+				"noheir",
+				"pew-game",
+				"deca",
+				"runner",
+				"geekhub",
+				"hexly-ai"
+			],
+			"result": "passed"
+		}
+	],
+	"universe": {
+		"sources": [
+			"/logos/family/frogie/2026-09-06-01/03/icon-1024.webp",
+			"/logos/family/pew/2026-09-06-01/04/icon-1024.webp",
+			"/logos/family/firefly/2026-09-06-10/02/icon-160.webp",
+			"/logos/family/bogo/2026-09-07-05/04/icon-160.webp",
+			"/logos/family/steed/2026-09-07-02/01/icon-160.webp",
+			"/logos/family/ellie/2026-09-07-01/01/icon-160.webp"
+		],
+		"refinedOnly": true
+	},
+	"screenshotCapture": {
+		"method": "Fresh routes, fonts and visible images decoded, focus cleared and scroll position reset to the document origin before full-page capture. Prevents off-viewport fixed accessibility links appearing inside tall screenshot artifacts.",
+		"checkedAt": "2026-09-07T04:15:09.778Z"
+	}
+}

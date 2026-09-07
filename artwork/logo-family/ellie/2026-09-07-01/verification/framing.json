@@ -1,0 +1,60 @@
+{
+	"sourceSha256": "5f05992e1b8a9d1c99fd0a7e0e5fb0a3be3a4779608f115b43df7d5d7c6813e5",
+	"foregroundSha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+	"squareSha256": "2b9d33da5dbab34e5bb8b1066337fca856afb6a6a1d1702d7477abd644bc512b",
+	"roundedSha256": "599c9514a88347562b961386b35e5a9b6fe2fbeca49c885feb8d0bb071cdb8cd",
+	"nativeDimensions": [2048, 2048],
+	"cornerRadius": 0.23,
+	"alphaThreshold": 16,
+	"distanceMethod": "Signed distance from visible pixel centers to the actual rounded-square boundary. Native anatomical regions are transformed by the exact rounded resize and placement.",
+	"requiredProtectedFeatureClearancePx": 128,
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [0, 260],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniform 90% placement with a downward offset moves the native lower neck crop through the bottom viewfinder boundary. The broad ear, natural face, curled trunk, tusk, and complete airplane retain their exact relative proportions. No anatomy extension or repeated edge pixels."
+	},
+	"protectedFeatures": [
+		{
+			"name": "Complete broad ear",
+			"nativeRegionAt2048": [35, 235, 865, 1450],
+			"regionAt2048": [133, 573, 881, 1667],
+			"visiblePixels": 638150,
+			"minimumClearancePx": 148.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Eye, face, and ivory tusk",
+			"nativeRegionAt2048": [775, 245, 1610, 1560],
+			"regionAt2048": [799, 582, 1551, 1766],
+			"visiblePixels": 774937,
+			"minimumClearancePx": 282.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Curled trunk and tip",
+			"nativeRegionAt2048": [1090, 650, 1930, 1560],
+			"regionAt2048": [1082, 946, 1839, 1766],
+			"visiblePixels": 518970,
+			"minimumClearancePx": 209.5,
+			"clippedPixels": 0
+		},
+		{
+			"name": "Whole paper airplane",
+			"nativeRegionAt2048": [1610, 560, 2000, 915],
+			"regionAt2048": [1550, 865, 1902, 1186],
+			"visiblePixels": 51929,
+			"minimumClearancePx": 165.5,
+			"clippedPixels": 0
+		}
+	],
+	"allFeaturesPass": true,
+	"intentionalEntries": {
+		"edges": ["bottom"],
+		"clippedPixels": 3777,
+		"bottomRowVisiblePixels": 992,
+		"rightColumnVisiblePixels": 0,
+		"note": "Only the documented native lower neck/shoulder continuation intersects the presentation outline. The complete lion mane and whole owl are fully inset."
+	},
+	"continuation": null
+}

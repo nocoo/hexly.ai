@@ -1,0 +1,343 @@
+{
+	"createdAt": "2026-09-07T03:31:44.028Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "gecko",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#926d60",
+			"light": "#d4ad8b",
+			"shade": "#654842",
+			"motif": "#49312e",
+			"grainAmplitude": 1,
+			"grainSeed": 6090798,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Sandstone shelves",
+				"description": "Sandstone shelves: staggered broad rounded ledges with short rising seams on a warm clay field. Preserve the exact gecko artwork, every toe, its curled tail and native placement.",
+				"layers": [
+					{
+						"d": "M-92 129H230Q320 129 342 220H546Q616 220 626 284H1118V330H593Q587 261 526 261H306Q291 171 216 171H-92Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-92 177H212Q286 177 302 267H522Q582 267 588 336H1119",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-100 704H86Q160 704 184 767H323Q399 767 402 840H654Q719 840 743 897H1125V942H709Q691 882 627 882H360Q366 809 294 809H145Q124 748 63 748H-100Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-98 754H59Q119 754 141 815H288Q360 815 354 888H622Q685 888 704 948H1124",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M212 171L220 77M629 285L654 380M746 897L758 779",
+						"tone": "motif",
+						"strokeWidth": 8
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/gecko.png"
+	},
+	"statistics": {
+		"backgroundPixels": 2905200,
+		"foregroundPixels": 1289104,
+		"softEdgePixels": 1286670,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 167,
+			"top": 245,
+			"right": 1933,
+			"bottom": 1805
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 114.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1767,
+			"sha256": "16fb536f99c2af82e17f5de62501a23e912e797305f8e043786d99d24fd357e4"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 1237,
+			"sha256": "e9a2b3b0f1fb47932d9038793bd9ceda34f45cf659390feac0033abe2913a2b4"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1315,
+			"sha256": "dc4fd00ed06acc6ae5994b192ba0feb56574496c9af802b8ec779ca67214e24c"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 2799098,
+			"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 288451,
+			"sha256": "2e29b24058d12d475b9ebb7e3b948aed299116cf17c7dbd8116616ea0084e27a"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1126,
+			"sha256": "77aa160b5a2cede5e165c056e96e45f6d26ed98dbdec76dc01a095e1baf0c74d"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2405148,
+			"sha256": "90d785f1ccddcba5e2744cf79225a46f49c5ec569ca0b94d0619b90af7b6eccf"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 194792,
+			"sha256": "e87f69f1637b1c2f32020476e212fb9f329282c7c6413ef08a3aedd0f7a87783"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 143787,
+			"sha256": "982777c17b477eca2e3d5c6dc780c7627f3c5e79a4ce633ad35bf4b0556a00d6"
+		},
+		{
+			"path": "exports/gecko-transparent-2048.png",
+			"bytes": 2799098,
+			"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+		},
+		{
+			"path": "exports/gecko-icon-2048.png",
+			"bytes": 5195817,
+			"sha256": "293ebb96796478b1fe70e16a8c1b948351970b92972d819d1423946f96174e85"
+		},
+		{
+			"path": "exports/gecko-rounded-2048.png",
+			"bytes": 5100688,
+			"sha256": "0f0df46ddc11d2823b0767c8a97c549cf43732580a19202a05c2d197deadda38"
+		},
+		{
+			"path": "exports/gecko-transparent-1024.png",
+			"bytes": 909782,
+			"sha256": "d160c57027f6f831c92fed1d8defb90412c8db02c35cf53ea5b95f9998985a31"
+		},
+		{
+			"path": "exports/gecko-icon-1024.png",
+			"bytes": 1392725,
+			"sha256": "ea6bb6d6a9e8ad345cb1b3157a3bed7b205709f0cde1d6ff31bc162983d7380d"
+		},
+		{
+			"path": "exports/gecko-rounded-1024.png",
+			"bytes": 1384174,
+			"sha256": "fed79a85920cf912a71169049c2fde113ae99dffac28efe19d38865551c07f63"
+		},
+		{
+			"path": "exports/gecko-transparent-512.png",
+			"bytes": 242642,
+			"sha256": "62f5bbb8707a314d52c0b8496a8ad17d88cad74b5165cb15a284d97e37b396d5"
+		},
+		{
+			"path": "exports/gecko-icon-512.png",
+			"bytes": 398026,
+			"sha256": "6357aa49041b478a41c897a0c27e9d527165de0755a236292725bbff04dc164d"
+		},
+		{
+			"path": "exports/gecko-rounded-512.png",
+			"bytes": 397338,
+			"sha256": "be37ef9f3c06e8540a531477d47b3534cc7f7cd2a8bcbd59cf485fb6558d2d68"
+		},
+		{
+			"path": "exports/gecko-transparent-256.png",
+			"bytes": 69500,
+			"sha256": "50e0628eadfbd0bda190a093e71a36502080320356b7753964fcc981fa7f4739"
+		},
+		{
+			"path": "exports/gecko-icon-256.png",
+			"bytes": 97668,
+			"sha256": "f6dad7a10b1f654141e518d819f81f66d0ff1b0372fecfd0ec0bdb697adeee99"
+		},
+		{
+			"path": "exports/gecko-rounded-256.png",
+			"bytes": 100501,
+			"sha256": "da9ad8af0b46734c10fae6c9dd5264a059b413fb862c52f1dae2d8e5c8d8e60c"
+		},
+		{
+			"path": "exports/gecko-transparent-128.png",
+			"bytes": 20540,
+			"sha256": "9c26f85a8890d12c272a7868b847cd13b70e901459bf692fb72b723d8f77e014"
+		},
+		{
+			"path": "exports/gecko-icon-128.png",
+			"bytes": 30154,
+			"sha256": "16159f77ed3e0a18dde122ab080cd53df34bf45d796f5707f7ca1e733e4597a2"
+		},
+		{
+			"path": "exports/gecko-rounded-128.png",
+			"bytes": 31571,
+			"sha256": "db40c55c67c8b775dbd054d98f4ebed89903f9cbe454d4f66463cc5e66067262"
+		},
+		{
+			"path": "exports/gecko-transparent-64.png",
+			"bytes": 6227,
+			"sha256": "3bd332c5363a0baceac516e9171cc2e982dc4abfeab7fe7b1b4c0f55bdd24b01"
+		},
+		{
+			"path": "exports/gecko-icon-64.png",
+			"bytes": 9672,
+			"sha256": "ad7e9ae5ee2d87499a9a7b7bcd172a67b47c1e0313752a6b2c585fd58808819c"
+		},
+		{
+			"path": "exports/gecko-rounded-64.png",
+			"bytes": 10154,
+			"sha256": "d9c0223459a009d620ecec4dd44f83e461174785f0fba338501c0790e60f50d1"
+		},
+		{
+			"path": "exports/gecko-transparent-48.png",
+			"bytes": 3910,
+			"sha256": "73050dbddcbbefe97048c0f6164288c5fd3686c98a2be19b580c9756ba0429ff"
+		},
+		{
+			"path": "exports/gecko-icon-48.png",
+			"bytes": 5814,
+			"sha256": "af9dd0059740dbab1f6fd1f144d011cc08dedf79c29698b0d2883dd751d225d7"
+		},
+		{
+			"path": "exports/gecko-rounded-48.png",
+			"bytes": 6182,
+			"sha256": "0ed65484e11a64b5541bebabd0a9a2a73922f5144232a3eb92090c020e290db3"
+		},
+		{
+			"path": "exports/gecko-transparent-32.png",
+			"bytes": 2106,
+			"sha256": "8329d547a48a20fbd2d14dd34cc597724db0fdea58c54fef2e36246aaaa81ddb"
+		},
+		{
+			"path": "exports/gecko-icon-32.png",
+			"bytes": 2999,
+			"sha256": "575245a5cb5352d4b0720f5c5c96e2eaf5fd3607fe8418315eed9b6cae10c87d"
+		},
+		{
+			"path": "exports/gecko-rounded-32.png",
+			"bytes": 3138,
+			"sha256": "beb1ce916c3b03f06a78b2629f3a1db63040cd7f71f5030a07ac96b3ec5991a9"
+		},
+		{
+			"path": "exports/gecko-transparent-24.png",
+			"bytes": 1375,
+			"sha256": "9d59895c7cbb73fa842623c6ab8c8015ccec5609704132c6bb82a1bd7e72b7f8"
+		},
+		{
+			"path": "exports/gecko-icon-24.png",
+			"bytes": 1812,
+			"sha256": "611a7debc5e885fd418d9fb94857f634e07d44a690bbcca5cf5ad35dd920335e"
+		},
+		{
+			"path": "exports/gecko-rounded-24.png",
+			"bytes": 1953,
+			"sha256": "d4004d47210ce6c18755e230ec12340677171afadfefe148ccc69527d8e63d01"
+		},
+		{
+			"path": "exports/gecko-transparent-16.png",
+			"bytes": 759,
+			"sha256": "48788036594cd7db3b8dcd1f5c487fd9e111c38a64e39d559ee4a3782a8a4d45"
+		},
+		{
+			"path": "exports/gecko-icon-16.png",
+			"bytes": 917,
+			"sha256": "dfdf932c555300023bb19f873b598c50c90648efbb412e5ab3f210339502a8b5"
+		},
+		{
+			"path": "exports/gecko-rounded-16.png",
+			"bytes": 961,
+			"sha256": "d27927347bb5efd2666e3e41daf9667c8d9e4ec03c866e1837ac1cfcc9f6ffd4"
+		},
+		{
+			"path": "exports/gecko-white-2048.png",
+			"bytes": 3048707,
+			"sha256": "b843ad519101b2a73f026ab4129f828c8069365b9d917940cf8d8edc123768e4"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 840595,
+			"sha256": "6a8eca3bfe32f020b6a043261e3a2c7cc138e32025d8cb87ff1201e1ce1c82ff"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 839344,
+			"sha256": "5a80d4252b4a7a29e9779758571edca0d797196d88d83d499d2f917b9cf27471"
+		}
+	]
+}

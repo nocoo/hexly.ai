@@ -1,0 +1,883 @@
+[
+	{
+		"project": "xray",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "cdc6aa43110cc2ea7ead1520416b26a3153176e3a3ad6afe9185a576f7fbcd69",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "cfc96baa2fbd99fab5af9aca03e09de14beaf52920ff028d9b7a6ee0b579adce",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "packages/ui/public/logo-24.png",
+				"size": 24,
+				"sha256": "33fb0f653bba1a1776e9905c9f2b19c19ba261de939e0d25ecca74699bd2a50e",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 238
+			},
+			{
+				"path": "packages/ui/public/logo-80.png",
+				"size": 80,
+				"sha256": "000f55071e573b823b3f6d0adcb917159e44fea141a035af5d1c0d4471793d79",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 3572
+			},
+			{
+				"path": "packages/ui/public/favicon.png",
+				"size": 32,
+				"sha256": "c9566a4c62959e08071c857437fb40917af4db12e9b78b5ac39796083c8e5bd1",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 464
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "packages/ui/public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/ui/public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/ui/public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "packages/ui/public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "packages/ui/public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		},
+		"workerMirrors": [],
+		"retainedSourceBytes": true
+	},
+	{
+		"project": "bat",
+		"study": "2026-09-07-01",
+		"finishing": "02",
+		"masters": {
+			"logo.png": {
+				"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "e6e06e63ea35672a4507d89350d20f88aa4c8ba8f27feed94bac0d186e75f4c0",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "d5604572323b6f297e12e9c51170cb495a800f272c405f3d4edd0e3575998ce4",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "packages/ui/public/logo-24.png",
+				"size": 24,
+				"sha256": "b6dc576f792fc034a6f99cffbd9fcf828d84e145cd0dd8668563eab59bb0b0ef",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 320
+			},
+			{
+				"path": "packages/ui/public/logo-80.png",
+				"size": 80,
+				"sha256": "d44380fec4b4168e6911b2032a7a5d9adbabcc41ba91998e3cc97102644401e8",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 4367
+			},
+			{
+				"path": "packages/ui/public/favicon.png",
+				"size": 32,
+				"sha256": "95c28828e591f4092bd9b6adfa98be3081bba084f71585f724902a19b2993901",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 612
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "packages/ui/public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/ui/public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/ui/public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "packages/ui/public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "packages/ui/public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		},
+		"workerMirrors": []
+	},
+	{
+		"project": "rooster",
+		"study": "2026-09-07-01",
+		"finishing": "02",
+		"masters": {
+			"logo.png": {
+				"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "6e243ede05a040b2d4fc09f15a293ee03b8958ea0f7571ba35df9b08c5f97643",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "2f45550f487019aaf8ae1af3d61aec143d092982e37520867df3574daffcccbf",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "packages/client/public/logo-24.png",
+				"size": 24,
+				"sha256": "3e712396aa4e14091cef45edd598520588f4767feca4a4e594c7af053062011f",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 289
+			},
+			{
+				"path": "packages/client/public/logo-80.png",
+				"size": 80,
+				"sha256": "1f46afadcfb178d5e494392aada840a25a2da96b30c8ea46335e18bf1ad72731",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 4110
+			},
+			{
+				"path": "packages/client/public/favicon.png",
+				"size": 32,
+				"sha256": "206c9090a672ceb8459a127c293e9a81435795c77dc3ee2993af6e7b59292e4a",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 582
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "packages/client/public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/client/public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/client/public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "packages/client/public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "packages/client/public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		}
+	},
+	{
+		"project": "snaky",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "f1a0bab24253e83d85b261d1686e5bd05e4cd4178da8c1d91bc0cb57d338e060",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "c4ca254e32aa4e47fd09f31991ade322422491cd8117aac5f627b1a018e94615",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [],
+		"icoEntries": [],
+		"macOS": {
+			"canvas": "assets/brand/app-icon-macos.png",
+			"canvasSize": [1024, 1024],
+			"tileSize": [824, 824],
+			"inset": [100, 100],
+			"popoverForegroundMatchesMaster": true,
+			"newTemplates": [
+				{
+					"path": "apps/macos/Sources/SnakyCore/Resources/menubar-icon.png",
+					"size": 44,
+					"sourceAlphaExact": true
+				}
+			]
+		}
+	},
+	{
+		"project": "codo",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "7468b1cefd8e6483759a5e9b31f34c7ed0243f8d021fda097d8f03be96f500ff",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "c1a2ff439774e7702fc1d798f744ad0e9797da1b4a72cd601ba689b83b34f745",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [],
+		"icoEntries": [],
+		"macOS": {
+			"canvas": "assets/brand/app-icon-macos.png",
+			"canvasSize": [1024, 1024],
+			"tileSize": [824, 824],
+			"inset": [100, 100],
+			"appIconEntries": [
+				{
+					"name": "icon_16x16.png",
+					"size": 16
+				},
+				{
+					"name": "icon_16x16@2x.png",
+					"size": 32
+				},
+				{
+					"name": "icon_32x32.png",
+					"size": 32
+				},
+				{
+					"name": "icon_32x32@2x.png",
+					"size": 64
+				},
+				{
+					"name": "icon_128x128.png",
+					"size": 128
+				},
+				{
+					"name": "icon_128x128@2x.png",
+					"size": 256
+				},
+				{
+					"name": "icon_256x256.png",
+					"size": 256
+				},
+				{
+					"name": "icon_256x256@2x.png",
+					"size": 512
+				},
+				{
+					"name": "icon_512x512.png",
+					"size": 512
+				},
+				{
+					"name": "icon_512x512@2x.png",
+					"size": 1024
+				}
+			],
+			"icnsEntries": [
+				{
+					"name": "icon_128x128.png",
+					"size": [128, 128],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_128x128@2x.png",
+					"size": [256, 256],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_16x16.png",
+					"size": [16, 16],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Native iconutil legacy small-entry edge RGB; exact alpha and opaque RGB verified."
+				},
+				{
+					"name": "icon_16x16@2x.png",
+					"size": [32, 32],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_256x256.png",
+					"size": [256, 256],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_256x256@2x.png",
+					"size": [512, 512],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_32x32.png",
+					"size": [32, 32],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Native iconutil legacy small-entry edge RGB; exact alpha and opaque RGB verified."
+				},
+				{
+					"name": "icon_32x32@2x.png",
+					"size": [64, 64],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_512x512.png",
+					"size": [512, 512],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				},
+				{
+					"name": "icon_512x512@2x.png",
+					"size": [1024, 1024],
+					"alphaExact": true,
+					"opaqueRgbExact": true,
+					"edgeEncoding": "Exact PNG pixels"
+				}
+			],
+			"bannerForeground": "Root transparent logo copied by scripts/build.sh to Resources/logo.png; displayed at 40 points without a mask.",
+			"newTemplates": [
+				{
+					"path": "Resources/menubar.png",
+					"size": 18,
+					"sourceAlphaExact": true
+				},
+				{
+					"path": "Resources/menubar@2x.png",
+					"size": 36,
+					"sourceAlphaExact": true
+				}
+			]
+		}
+	},
+	{
+		"project": "gaga",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "31b3e11e13361cfc212148686bef79e26fcef9f0f942105fa7f82041953bcf43",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "2af9d62d79838bed81e6deaaa338565a4524f552c1954b201a29de9281467dbd",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "public/logo-24.png",
+				"size": 24,
+				"sha256": "8d69d19de4cb8dce0c78c57418f94ba10454189a923e6c06ba6f2b5ea8fbc7db",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 275
+			},
+			{
+				"path": "public/logo-80.png",
+				"size": 80,
+				"sha256": "0e531f5df3ed3ad734b27df90d91dc1e8b1a0e994bcd2d601d6191ccc2fc84a3",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 3978
+			},
+			{
+				"path": "public/favicon.png",
+				"size": 32,
+				"sha256": "3aa4a83cf26d429a2430aacf630ca4a116a300f05b99bb29b21f18b8f8ba3d94",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 555
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		},
+		"productScreenshotPreserved": true
+	},
+	{
+		"project": "pika",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "9859f7c9894ee64cfab064497ac24d3ab7a1ca21e614b7381d8ae2b37fc6f5a9",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "715d50b1ad7aee3efa80bed4305cdbfb54720ca5b955e06bd7c6b3d642ede70d",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "packages/web/public/logo-24.png",
+				"size": 24,
+				"sha256": "18d535d15bf867bc0b62ae2cdf4167d5cca32349d0a1b72115c1251227757399",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 261
+			},
+			{
+				"path": "packages/web/public/logo-80.png",
+				"size": 80,
+				"sha256": "93200519e056cac2da698a86d8cd0994690b404fabef3befa7d80ef84f0293cb",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 3892
+			},
+			{
+				"path": "packages/web/public/favicon.png",
+				"size": 32,
+				"sha256": "dd5cfbef035923cd01d8cdef4401549dc3ed1c778c54ce55eee4bc1eea019592",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 501
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "packages/web/public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/web/public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/web/public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "packages/web/public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "packages/web/public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		},
+		"retainedSourceBytes": true
+	},
+	{
+		"project": "backy",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "08c74ba1a809f284d9a6364b626c07e7598f584383fcbac3ed952dd43d226d0f",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "e9f5e7da85ac99d1709354c071f05ca8e8eb51de49eea1e3e866eeacd2f2cd24",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "apps/web/public/logo-24.png",
+				"size": 24,
+				"sha256": "9de1d49edc4a1f9fe141bf1286e5159c27c22ff340d5ccdefde31e86f9de741e",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 319
+			},
+			{
+				"path": "apps/web/public/logo-80.png",
+				"size": 80,
+				"sha256": "6a7c74938c1dcbe17cad2d52d3eb272697e50ea551d25c32f3b893d8eca7a844",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 4344
+			},
+			{
+				"path": "apps/web/public/favicon.png",
+				"size": 32,
+				"sha256": "5918d84f95c4c6cfeb7c023a0496795e2c52d25d4718cf37971ff790bbe39dc5",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 617
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "apps/web/public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "apps/web/public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "apps/web/public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "apps/web/public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "apps/web/public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		}
+	},
+	{
+		"project": "gecko",
+		"study": "2026-09-07-01",
+		"finishing": "01",
+		"masters": {
+			"logo.png": {
+				"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "293ebb96796478b1fe70e16a8c1b948351970b92972d819d1423946f96174e85",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "0f0df46ddc11d2823b0767c8a97c549cf43732580a19202a05c2d197deadda38",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "apps/web-dashboard/public/logo-24.png",
+				"size": 24,
+				"sha256": "6c076cc50b12c49ed4ce17645f00e7e0a01cbac828212b8a75af2be773e0e05f",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 254
+			},
+			{
+				"path": "apps/web-dashboard/public/logo-80.png",
+				"size": 80,
+				"sha256": "d8565c706223179cc373f8bf7824f44348bc4dc5dacb95b4bfe4a829b89738dc",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 3934
+			},
+			{
+				"path": "apps/web-dashboard/src/app/icon.png",
+				"size": 32,
+				"sha256": "fbb5bcb6909baf8e9514349e7a56fd0a6a14571ebeba07123e6a73dae71523ed",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 508
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "apps/web-dashboard/src/app/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "apps/web-dashboard/src/app/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "apps/web-dashboard/src/app/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "apps/web-dashboard/src/app/apple-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "apps/web-dashboard/src/app/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		},
+		"retainedSourceBytes": true,
+		"macOS": {
+			"canvas": "assets/brand/app-icon-macos.png",
+			"canvasSize": [1024, 1024],
+			"tileSize": [824, 824],
+			"inset": [100, 100],
+			"appIconEntries": [
+				{
+					"name": "icon_16x16.png",
+					"size": 16
+				},
+				{
+					"name": "icon_16x16@2x.png",
+					"size": 32
+				},
+				{
+					"name": "icon_32x32.png",
+					"size": 32
+				},
+				{
+					"name": "icon_32x32@2x.png",
+					"size": 64
+				},
+				{
+					"name": "icon_128x128.png",
+					"size": 128
+				},
+				{
+					"name": "icon_128x128@2x.png",
+					"size": 256
+				},
+				{
+					"name": "icon_256x256.png",
+					"size": 256
+				},
+				{
+					"name": "icon_256x256@2x.png",
+					"size": 512
+				},
+				{
+					"name": "icon_512x512.png",
+					"size": 512
+				},
+				{
+					"name": "icon_512x512@2x.png",
+					"size": 1024
+				}
+			],
+			"retainedMenuTemplates": {
+				"apps/mac-client/Gecko/Resources/Assets.xcassets/MenuBarIcon.imageset/menubar-icon.png": "816af90f440057ca1811185b10ad9677a98c5510e9e729fd92199198684eb635",
+				"apps/mac-client/Gecko/Resources/Assets.xcassets/MenuBarIcon.imageset/menubar-icon@2x.png": "e7b464640017a6a83a503536314efa8642341fe6a8afae1904477b090b15dfcd"
+			},
+			"aboutPresentationSizes": [128, 256, 384],
+			"newTemplates": []
+		}
+	},
+	{
+		"project": "otter",
+		"study": "2026-09-07-01",
+		"finishing": "02",
+		"masters": {
+			"logo.png": {
+				"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon.png": {
+				"sha256": "aa95f02a68e9546d95e5097d3f41dd9da292f02f700027f1cafd6dcf4e362787",
+				"width": 2048,
+				"height": 2048
+			},
+			"assets/brand/icon-rounded.png": {
+				"sha256": "4a6cd289cd8721668d3b2e19636002b385745849551613b744097f47348f9caa",
+				"width": 2048,
+				"height": 2048
+			}
+		},
+		"readme": {
+			"path": "README.md",
+			"image": "assets/brand/icon-rounded.png",
+			"width": 128
+		},
+		"transparentPngs": [
+			{
+				"path": "packages/web/public/logo-24.png",
+				"size": 24,
+				"sha256": "19736c6ffd04b6d2bdc2e44903eae5073679bbe99cd0f9bdc70a6b6efee8a83b",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 284
+			},
+			{
+				"path": "packages/web/public/logo-80.png",
+				"size": 80,
+				"sha256": "39d415dc03e57b9d1b75f18dc51c0aa9748ddb064fbed54bba1afea2b84ab86f",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 3909
+			},
+			{
+				"path": "packages/web/public/favicon.png",
+				"size": 32,
+				"sha256": "f5c4cfeefb354d82ebde23bad5c5e660ac82353175cf8a41d3bf325baf635a10",
+				"exactWholeMasterResize": true,
+				"zeroAlphaPixels": 542
+			}
+		],
+		"icoEntries": [
+			{
+				"path": "packages/web/public/favicon.ico",
+				"size": [16, 16],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/web/public/favicon.ico",
+				"size": [32, 32],
+				"exactWholeMasterResize": true
+			},
+			{
+				"path": "packages/web/public/favicon.ico",
+				"size": [48, 48],
+				"exactWholeMasterResize": true
+			}
+		],
+		"touch": {
+			"path": "packages/web/public/apple-touch-icon.png",
+			"size": [180, 180],
+			"opaqueSquare": true
+		},
+		"social": {
+			"path": "packages/web/public/opengraph-image.png",
+			"size": [1200, 630],
+			"source": "assets/brand/icon-rounded.png"
+		}
+	}
+]
