@@ -14,10 +14,9 @@ for (const button of viewButtons) {
 		const view = button.dataset.view;
 		document.body.dataset.view = view;
 		candidate.src = candidate.dataset[view];
-		candidateLink.href = candidate.dataset[view].replace(
-			"-1024.png",
-			"-2048.png",
-		);
+		candidateLink.href =
+			candidate.dataset[`${view}Full`] ??
+			candidate.dataset[view].replace("-1024.png", "-2048.png");
 		for (const option of viewButtons)
 			option.setAttribute("aria-pressed", String(option === button));
 	});
@@ -38,9 +37,10 @@ for (const button of document.querySelectorAll("button[data-color]")) {
 
 const prompt = document.querySelector("#generation-prompt");
 try {
-	const response = await fetch("./prompt.txt");
+	const response = await fetch(prompt.dataset.source ?? "./prompt.txt");
 	if (!response.ok) throw new Error(`HTTP ${response.status}`);
 	prompt.textContent = await response.text();
 } catch {
-	prompt.textContent = "Use the Exact prompt download link to read prompt.txt.";
+	prompt.textContent =
+		"Use the archive download links to read the process record.";
 }

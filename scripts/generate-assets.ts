@@ -32,22 +32,40 @@ for (const project of projects) {
 		const root = `public${family.root}`;
 		const study = `artwork/logo-family/${project.id}/${family.id}`;
 		const finishing = `${study}/finishing/${family.finishing}`;
-		const response: { output: { path: string } } = JSON.parse(
-			await readFile(`${study}/response.json`, "utf8"),
-		);
+		const retained = family.method === "retained-original";
+		const sourceRecord = JSON.parse(
+			await readFile(
+				`${study}/${retained ? "source" : "response"}.json`,
+				"utf8",
+			),
+		) as { output?: { path: string }; artwork?: { path: string } };
+		const sourcePath = retained
+			? sourceRecord.artwork?.path
+			: sourceRecord.output?.path;
+		if (!sourcePath) throw new Error(`Missing study source: ${project.id}`);
+		const nativeSize = family.foreground.width;
 		await mkdir(root, { recursive: true });
 		const files = [];
 		for (const [name, source] of [
 			[
 				"transparent.png",
-				`${finishing}/exports/${project.id}-transparent-2048.png`,
+				`${finishing}/exports/${project.id}-transparent-${nativeSize}.png`,
 			],
-			["icon.png", `${finishing}/exports/${project.id}-icon-2048.png`],
-			["rounded.png", `${finishing}/exports/${project.id}-rounded-2048.png`],
-			["white.png", `${finishing}/exports/${project.id}-white-2048.png`],
+			["icon.png", `${finishing}/exports/${project.id}-icon-${nativeSize}.png`],
+			[
+				"rounded.png",
+				`${finishing}/exports/${project.id}-rounded-${nativeSize}.png`,
+			],
+			[
+				"white.png",
+				`${finishing}/exports/${project.id}-white-${nativeSize}.png`,
+			],
 			["background.png", `${finishing}/background.png`],
-			["raw.png", `${study}/${response.output.path}`],
-			["prompt.txt", `${study}/prompt.txt`],
+			[retained ? "source.png" : "raw.png", `${study}/${sourcePath}`],
+			[
+				retained ? "brief.txt" : "prompt.txt",
+				`${study}/${retained ? "brief.txt" : "prompt.txt"}`,
+			],
 		] as const) {
 			const data = await readFile(source);
 			const destination = `${root}/${name}`;

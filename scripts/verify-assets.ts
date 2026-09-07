@@ -39,6 +39,16 @@ for (const project of projects) {
 			project.family.previous.sha256
 		)
 			throw new Error(`Previous identity changed: ${project.id}`);
+		if (project.family.method === "retained-original") {
+			const source = await readFile(`${root}/source.png`);
+			if (
+				project.family.model ||
+				!master.equals(source) ||
+				!source.equals(previous) ||
+				!source.equals(original)
+			)
+				throw new Error(`Retained original was modified: ${project.id}`);
+		}
 		for (const size of [32, 64, 160, 1024]) {
 			const meta = await sharp(`${root}/icon-${size}.webp`).metadata();
 			if (meta.width !== size || meta.height !== size)

@@ -8,7 +8,38 @@ function sha256(bytes) {
 	return createHash("sha256").update(bytes).digest("hex");
 }
 
-function extractWhite(rgb, width, height, settings) {
+async function makeMatteProtection(width, height, regions) {
+	if (!regions?.length) return null;
+	const polygons = regions.map(({ name, points }) => {
+		if (
+			!name ||
+			!Array.isArray(points) ||
+			points.length < 3 ||
+			points.some(
+				(point) =>
+					!Array.isArray(point) ||
+					point.length !== 2 ||
+					point.some(
+						(value) => !Number.isFinite(value) || value < 0 || value > 2048,
+					),
+			)
+		)
+			throw new Error(
+				"Matte protection requires named polygons in native 2048 coordinates.",
+			);
+		return `<polygon points="${points.map((point) => point.join(",")).join(" ")}" fill="white"/>`;
+	});
+	return sharp(
+		Buffer.from(
+			`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 2048 2048"><rect width="2048" height="2048" fill="black"/>${polygons.join("")}</svg>`,
+		),
+	)
+		.extractChannel(0)
+		.raw()
+		.toBuffer();
+}
+
+function extractWhite(rgb, width, height, settings, protection = null) {
 	const count = width * height;
 	const background = new Uint8Array(count);
 	const queue = new Uint32Array(count);
@@ -26,7 +57,7 @@ function extractWhite(rgb, width, height, settings) {
 		if (x < width - 1 && index < count - width) visit(index + width + 1);
 	};
 	const visitWhite = (index) => {
-		if (background[index]) return;
+		if (background[index] || (protection && protection[index] > 0)) return;
 		const start = index * 3;
 		const low = Math.min(rgb[start], rgb[start + 1], rgb[start + 2]);
 		const high = Math.max(rgb[start], rgb[start + 1], rgb[start + 2]);
@@ -42,6 +73,26 @@ function extractWhite(rgb, width, height, settings) {
 	for (let y = 1; y < height - 1; y++) {
 		visitWhite(y * width);
 		visitWhite(y * width + width - 1);
+	}
+	for (const point of settings.backgroundSeedsAt2048 ?? []) {
+		if (
+			!Array.isArray(point) ||
+			point.length !== 2 ||
+			point.some(
+				(value) => !Number.isFinite(value) || value < 0 || value >= 2048,
+			)
+		)
+			throw new Error(
+				"Background seeds must be valid native 2048 coordinates.",
+			);
+		const index =
+			Math.floor((point[1] * height) / 2048) * width +
+			Math.floor((point[0] * width) / 2048);
+		visitWhite(index);
+		if (!background[index])
+			throw new Error(
+				"An interior background seed does not match the sampled white matte.",
+			);
 	}
 	while (head < tail) neighbors(queue[head++], visitWhite);
 	let backgroundPixels = tail;
@@ -153,6 +204,8 @@ function extractWhite(rgb, width, height, settings) {
 					opacity = Math.max(0.01, Math.min(1, dot / foregroundEnergy));
 			}
 		}
+		if (protection?.[index])
+			opacity = Math.max(opacity, protection[index] / 255);
 		alpha[index] = Math.round(opacity * 255);
 		if (alpha[index] < 255) softPixels++;
 		for (let channel = 0; channel < 3; channel++) {
@@ -232,14 +285,52 @@ async function makeShadow(alpha, width, height, settings) {
 		.toBuffer();
 }
 
-async function placeLayer(bytes, width, height, scale) {
-	if (scale === 1) return bytes;
+async function placeLayer(bytes, width, height, framing = {}) {
+	const scale = framing.scale ?? 1;
+	const offset = framing.offsetAt2048 ?? [0, 0];
+	if (offset.length !== 2 || offset.some((value) => !Number.isFinite(value)))
+		throw new Error(
+			"Placement offset must contain two finite pixel coordinates.",
+		);
+	if (scale === 1 && offset.every((value) => value === 0)) return bytes;
 	const placedWidth = Math.round(width * scale);
 	const placedHeight = Math.round(height * scale);
-	const resized = await sharp(bytes)
-		.resize(placedWidth, placedHeight)
-		.png()
-		.toBuffer();
+	const left =
+		Math.floor((width - placedWidth) / 2) +
+		Math.round((offset[0] * width) / 2048);
+	const top =
+		Math.floor((height - placedHeight) / 2) +
+		Math.round((offset[1] * height) / 2048);
+	const cropLeft = Math.max(0, -left);
+	const cropTop = Math.max(0, -top);
+	const cropWidth = Math.min(placedWidth - cropLeft, width - Math.max(0, left));
+	const cropHeight = Math.min(
+		placedHeight - cropTop,
+		height - Math.max(0, top),
+	);
+	if (cropWidth <= 0 || cropHeight <= 0)
+		throw new Error(
+			"Placement moves the complete foreground outside the canvas.",
+		);
+	const resized =
+		scale === 1
+			? bytes
+			: await sharp(bytes).resize(placedWidth, placedHeight).png().toBuffer();
+	const placed =
+		cropLeft ||
+		cropTop ||
+		cropWidth !== placedWidth ||
+		cropHeight !== placedHeight
+			? await sharp(resized)
+					.extract({
+						left: cropLeft,
+						top: cropTop,
+						width: cropWidth,
+						height: cropHeight,
+					})
+					.png()
+					.toBuffer()
+			: resized;
 	return sharp({
 		create: {
 			width,
@@ -250,9 +341,9 @@ async function placeLayer(bytes, width, height, scale) {
 	})
 		.composite([
 			{
-				input: resized,
-				left: Math.floor((width - placedWidth) / 2),
-				top: Math.floor((height - placedHeight) / 2),
+				input: placed,
+				left: Math.max(0, left),
+				top: Math.max(0, top),
 			},
 		])
 		.png()
@@ -351,25 +442,30 @@ if (!runArgument || !/^\d{2}$/.test(pass ?? ""))
 		"Usage: bun finish_study.mjs <study-directory> <finishing-pass: 01>",
 	);
 const run = path.resolve(runArgument);
-const response = JSON.parse(
-	await readFile(path.join(run, "response.json"), "utf8"),
-);
-if (response.status !== "succeeded")
-	throw new Error("No successful source generation.");
-const reviewBytes = await readFile(path.join(run, "raw-review.json"));
-const review = JSON.parse(reviewBytes);
+const settingsBytes = await readFile(path.join(run, "presentation.json"));
+const settings = JSON.parse(settingsBytes);
+const retained = settings.sourceMode === "retained-transparent";
+const sourceRecordName = retained ? "source.json" : "response.json";
+const sourceRecordBytes = await readFile(path.join(run, sourceRecordName));
+const sourceRecord = JSON.parse(sourceRecordBytes);
 if (
-	review.status !== "approved" ||
-	review.imageSha256 !== response.output.sha256
+	retained
+		? sourceRecord.kind !== "retained-original" ||
+			sourceRecord.generationCalls !== 0
+		: sourceRecord.status !== "succeeded"
 )
+	throw new Error("A recorded original or successful generation is required.");
+const source = retained ? sourceRecord.artwork : sourceRecord.output;
+const reviewName = retained ? "source-review.json" : "raw-review.json";
+const reviewBytes = await readFile(path.join(run, reviewName));
+const review = JSON.parse(reviewBytes);
+if (review.status !== "approved" || review.imageSha256 !== source.sha256)
 	throw new Error(
 		"Owner approval of this exact raw image is required before finishing.",
 	);
-const settingsBytes = await readFile(path.join(run, "presentation.json"));
-const settings = JSON.parse(settingsBytes);
-const sourceBytes = await readFile(path.join(run, response.output.path));
-if (sha256(sourceBytes) !== response.output.sha256)
-	throw new Error("Raw output differs from its recorded generation hash.");
+const sourceBytes = await readFile(path.join(run, source.path));
+if (sha256(sourceBytes) !== source.sha256)
+	throw new Error("Source artwork differs from its recorded hash.");
 const destination = path.join(run, "finishing", pass);
 try {
 	await stat(destination);
@@ -385,12 +481,54 @@ const { data: rgb, info } = await sharp(sourceBytes)
 const { width, height } = info;
 if (width !== height)
 	throw new Error("This icon study requires a square master.");
-const { rgba, alpha, statistics } = extractWhite(
-	rgb,
-	width,
-	height,
-	settings.matte,
-);
+let protection = null;
+let foreground;
+let alpha;
+let statistics;
+if (retained) {
+	const metadata = await sharp(sourceBytes).metadata();
+	if (!metadata.hasAlpha || metadata.format !== "png")
+		throw new Error("Retained artwork must be an existing transparent PNG.");
+	if (
+		(settings.framing?.scale ?? 1) !== 1 ||
+		(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0) ||
+		settings.framing?.continuation
+	)
+		throw new Error("A retained original cannot be repositioned or redrawn.");
+	foreground = sourceBytes;
+	alpha = await sharp(sourceBytes).extractChannel(3).raw().toBuffer();
+	const backgroundPixels = alpha.filter((value) => value === 0).length;
+	if (!backgroundPixels || !alpha.some((value) => value === 255))
+		throw new Error(
+			"Inspect the original: expected transparent and opaque pixels.",
+		);
+	statistics = {
+		backgroundPixels,
+		foregroundPixels: width * height - backgroundPixels,
+		softEdgePixels: alpha.filter((value) => value > 0 && value < 255).length,
+		foregroundByteIdentical: true,
+	};
+} else {
+	protection = await makeMatteProtection(
+		width,
+		height,
+		settings.matte.foregroundRegionsAt2048,
+	);
+	const extracted = extractWhite(
+		rgb,
+		width,
+		height,
+		settings.matte,
+		protection,
+	);
+	alpha = extracted.alpha;
+	statistics = extracted.statistics;
+	foreground = await sharp(extracted.rgba, {
+		raw: { width, height, channels: 4 },
+	})
+		.png()
+		.toBuffer();
+}
 await mkdir(path.join(destination, "exports"), { recursive: true });
 await mkdir(path.join(destination, "previews"));
 const files = [];
@@ -399,12 +537,20 @@ async function save(name, bytes) {
 	files.push({ path: name, bytes: bytes.length, sha256: sha256(bytes) });
 }
 await save("settings.json", settingsBytes);
-await save("raw-review.json", reviewBytes);
+await save(reviewName, reviewBytes);
+if (retained) await save(sourceRecordName, sourceRecordBytes);
 await save("tool-snapshot.mjs", await readFile(new URL(import.meta.url)));
-const foreground = await sharp(rgba, { raw: { width, height, channels: 4 } })
-	.png()
-	.toBuffer();
-await save("extracted-foreground.png", foreground);
+if (protection)
+	await save(
+		"matte-protection-mask.png",
+		await sharp(protection, { raw: { width, height, channels: 1 } })
+			.png()
+			.toBuffer(),
+	);
+await save(
+	retained ? "retained-foreground.png" : "extracted-foreground.png",
+	foreground,
+);
 await save(
 	"alpha-mask.png",
 	await sharp(alpha, { raw: { width, height, channels: 1 } })
@@ -443,16 +589,76 @@ if (
 	placementScale > 1
 )
 	throw new Error("Foreground placement scale must be between 0.5 and 1.");
-const placedForeground = await placeLayer(
+let placedForeground = await placeLayer(
 	foreground,
 	width,
 	height,
-	placementScale,
+	settings.framing,
 );
-const presentationAlpha =
-	placementScale === 1
-		? alpha
-		: await sharp(placedForeground).extractChannel(3).raw().toBuffer();
+let continuationReport = null;
+const continuation = settings.framing?.continuation;
+if (continuation) {
+	const bytes = await readFile(path.resolve(run, continuation.path));
+	if (sha256(bytes) !== continuation.sha256)
+		throw new Error("Edge continuation differs from its recorded hash.");
+	const metadata = await sharp(bytes).metadata();
+	if (
+		metadata.format !== "svg" ||
+		metadata.width !== 2048 ||
+		metadata.height !== 2048
+	)
+		throw new Error(
+			"Edge continuation must be a native 2048-square SVG layer.",
+		);
+	const layer = await sharp(bytes).resize(width, height).png().toBuffer();
+	await save("edge-continuation.svg", bytes);
+	await save("edge-continuation.png", layer);
+	await save("placed-source.png", placedForeground);
+	const sourcePixels = await sharp(placedForeground)
+		.ensureAlpha()
+		.raw()
+		.toBuffer();
+	placedForeground = await sharp(layer)
+		.composite([{ input: placedForeground }])
+		.png()
+		.toBuffer();
+	const finishedPixels = await sharp(placedForeground)
+		.ensureAlpha()
+		.raw()
+		.toBuffer();
+	let addedPixels = 0;
+	let opaquePixelsPreserved = 0;
+	for (let index = 0; index < width * height; index++) {
+		const at = index * 4;
+		if (sourcePixels[at + 3] === 255) {
+			if (
+				!sourcePixels
+					.subarray(at, at + 4)
+					.equals(finishedPixels.subarray(at, at + 4))
+			)
+				throw new Error("Edge continuation changed an opaque approved pixel.");
+			opaquePixelsPreserved++;
+		}
+		if (sourcePixels[at + 3] === 0 && finishedPixels[at + 3] >= 16)
+			addedPixels++;
+	}
+	if (!addedPixels)
+		throw new Error("Edge continuation adds no visible contour.");
+	continuationReport = {
+		path: continuation.path,
+		sha256: continuation.sha256,
+		description: continuation.description,
+		addedPixels,
+		opaquePixelsPreserved,
+	};
+}
+const placementChanged =
+	placementScale !== 1 ||
+	(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0) ||
+	Boolean(continuation);
+const presentationAlpha = placementChanged
+	? await sharp(placedForeground).extractChannel(3).raw().toBuffer()
+	: alpha;
 const placement = inspectPlacement(
 	presentationAlpha,
 	width,
@@ -467,7 +673,7 @@ if (
 	throw new Error(
 		`Insufficient rounded-corner clearance: ${placement.minimumRoundedEdgeClearance.toFixed(1)} pixels`,
 	);
-if (placementScale !== 1) {
+if (placementChanged) {
 	await save("foreground-placement.png", placedForeground);
 	await save(
 		"presentation-alpha-mask.png",
@@ -490,7 +696,7 @@ for (const light of settings.emission ?? []) {
 	if (!/^[a-z0-9-]+$/.test(light.name))
 		throw new Error("Emission names must be lowercase filename-safe labels.");
 	const result = await makeEmission(rgb, alpha, width, height, light);
-	const layer = await placeLayer(result.layer, width, height, placementScale);
+	const layer = await placeLayer(result.layer, width, height, settings.framing);
 	await save(`glow-${light.name}-mask.png`, result.mask);
 	await save(`glow-${light.name}.png`, layer);
 	emissions.push({ input: layer, blend: light.blend });
@@ -513,8 +719,13 @@ const rounded = await sharp(square)
 	.png()
 	.toBuffer();
 for (const size of settings.exportSizes) {
-	if (size > width)
-		throw new Error("Exports may not upscale the native master.");
+	if (
+		size > width &&
+		!(retained && settings.upscaledExportSizes?.includes(size))
+	)
+		throw new Error(
+			"Upscaled exports require an explicit retained-original record.",
+		);
 	for (const [kind, bytes] of [
 		["transparent", placedForeground],
 		["icon", square],
@@ -558,17 +769,31 @@ await save(
 				toolSha256: sha256(await readFile(new URL(import.meta.url))),
 				sharp: sharp.versions.sharp,
 				input: {
-					path: `../../${response.output.path}`,
+					path: `../../${source.path}`,
 					sha256: sha256(sourceBytes),
 					width,
 					height,
 				},
-				method:
-					"Border-connected near-white extraction; recipe-specific edge alpha matting and color decontamination. Enclosed highlights and disconnected artwork are preserved. No global white deletion or subject cropping.",
+				method: retained
+					? "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing."
+					: "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+				...(retained
+					? {
+							generationCalls: 0,
+							upscaledExportSizes: settings.exportSizes.filter(
+								(size) => size > width,
+							),
+						}
+					: {}),
 				settings,
 				statistics,
-				placement: { scale: placementScale, ...placement },
+				placement: {
+					scale: placementScale,
+					offsetAt2048: settings.framing?.offsetAt2048 ?? [0, 0],
+					...placement,
+				},
 				emission: emissionReports,
+				...(continuationReport ? { continuation: continuationReport } : {}),
 				files,
 			},
 			null,

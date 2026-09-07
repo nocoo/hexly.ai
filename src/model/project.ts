@@ -25,7 +25,8 @@ export interface LogoFamily {
 	finishing: string;
 	root: string;
 	archive: string;
-	model: string;
+	method?: "retained-original";
+	model?: string;
 	foreground: {
 		subject?: Record<Locale, string>;
 		original: string;
