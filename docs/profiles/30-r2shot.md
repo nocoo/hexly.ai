@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ### The same playful turn
 
-The dolphin, curled tail, camera, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.
+The dolphin, curled tail, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.
 
 海豚、卷曲尾鳍、视角和原有边距全部保留。完整轮廓位于圆角之内，没有裁切或补画。
 

@@ -5,7 +5,7 @@ The familiar dolphin, carried by a quiet teal current.
 This is a presentation-only refinement. No image model was called; there is no generation prompt or provider request/response. Keep the original animal, expression, pose, canvas, colors, facets, and existing accents byte-for-byte. Do not add another accessory.
 
 The same playful turn
-The dolphin, curled tail, camera, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.
+The dolphin, curled tail, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.
 
 Every original facet
 Cyan, turquoise, blue, and pale belly planes remain the original transparent artwork. The bright eyes and sweeping tail keep their existing gesture; no new decoration or model generation was needed.
