@@ -136,3 +136,20 @@ Each project has its own `artwork/logo-family/<project>/<study>/review.html` and
 All nine foregrounds remain unscaled and unmoved in the family masters. Eight have zero visible rounded-mask intersections. Neo retains its original lower shoulder entry: the mask meets 3,798 terminal shoulder pixels (about 0.14% of the visible foreground), while facial features and ears remain clear. This is an explicitly inspected original boundary relationship, not a changed transparent source. Native app icons use their own platform insets; a full composition is never declared maskable without verifying its safe region.
 
 The [usage SOP](07-logo-usage-sop.md) and each source repository's `assets/brand/README.md` record actual consumers, source commits, and platform exceptions. [Batch evidence](../artwork/logo-family/audits/2026-09-07-retained/) records exact bytes, foreground sizes, ICO entries, native assets, and browser/publication checks.
+
+## Viewfinder framing repairs — 2026-09-07
+
+Wooly, Noheir, Raven, and Life.ai were regenerated to repair hard circular or rectangular bust cuts while preserving their liked animals, expressions, and palettes. The square is a viewfinder catching a quiet decisive moment: natural fleece, shoulders, or a wing root continue beyond the lower frame. No stretched necks or repeated edge rows are used.
+
+The owner explicitly delegated inspection for this named batch. Each study records the instruction, exact raw hash, and acceptance source; no unseen image is labeled as personally reviewed by the owner. Four Azure gpt-image-2 calls produced four native 2048 × 2048 images.
+
+| Project | Selected study / pass | Background | Protected feature clearance | Individual review |
+| --- | --- | --- | --- | --- |
+| Wooly | `2026-09-07-02 / 01` | Wool cloud folds | 199.5 px | [Review](https://hexly.ai/logos/wooly) |
+| Noheir | `2026-09-07-02 / 02` | Quiet terraces | 148.5 px | [Review](https://hexly.ai/logos/noheir) |
+| Raven | `2026-09-07-04 / 02` | Quill pennants | 148.5 px | [Review](https://hexly.ai/logos/raven) |
+| Life.ai | `2026-09-07-01 / 02` | Riverbank ripples | 239.5 px | [Review](https://hexly.ai/logos/life-ai) |
+
+Clearance is measured from alpha ≥16 pixels in named conservative regions to the actual 23% rounded outline. All protected features exceed 128 px and have zero clipped pixels. Lower shoulder/wing entries are intentional and recorded separately. Noheir, Raven, and Life.ai have small source-sampled continuation layers behind the inset source; every opaque placed source pixel is preserved. Wooly uses its natural lower fleece without continuation.
+
+Wooly retains Wool cloud folds; Noheir retains Quiet terraces. Raven’s pointed Quill pennants and Life.ai’s elliptical Riverbank ripples use distinct geometry. Fully opaque extracted colors match their raw pixels. Light/dark edge evidence, all ten sizes, source consumers, and browser/publication checks live in the [framing audit](../artwork/logo-family/audits/2026-09-07-framing/).

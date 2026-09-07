@@ -1,0 +1,82 @@
+{
+	"project": "raven",
+	"study": "2026-09-07-04",
+	"finishing": "02",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "bda85a414525de14ce551d234dbdc44161b447d8cdae0d88f7c6f026382bd32e",
+			"exactSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "4ee7bf35d7a313219f2157233e5475a758ecade16ce465e02f60a1661d7ae781",
+			"exactSelectedMaster": true
+		}
+	],
+	"smallPngs": [
+		{
+			"path": "packages/dashboard/public/logo-24.png",
+			"size": 24,
+			"transparentPixels": 215,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "4638dd28c9417e744bf53e938fbd34bc075d0510a49dbbb957a82fdacaa85191"
+		},
+		{
+			"path": "packages/dashboard/public/logo-80.png",
+			"size": 80,
+			"transparentPixels": 3034,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "242d965588a2e3e489020b6026e7149ea09e56a578539e8581c562716ed3640f"
+		},
+		{
+			"path": "packages/dashboard/src/app/icon.png",
+			"size": 32,
+			"transparentPixels": 413,
+			"alphaExtrema": [0, 255],
+			"matchesTransparentMasterResize": true,
+			"sha256": "81d6db6b319c2cd9d8ebb0ed1ac484896cfedc89d5fc0c06fe2103c0eb74d715"
+		}
+	],
+	"favicon": {
+		"path": "packages/dashboard/src/app/favicon.ico",
+		"sha256": "f3c1534740221ef39957a864e2cf625b24106390670956990aeddd99822191b4",
+		"entries": [
+			{
+				"size": 16,
+				"transparentPixels": 80,
+				"matchesTransparentMasterResize": true
+			},
+			{
+				"size": 32,
+				"transparentPixels": 413,
+				"matchesTransparentMasterResize": true
+			}
+		]
+	},
+	"touch": {
+		"path": "packages/dashboard/src/app/apple-icon.png",
+		"size": 180,
+		"squarePresentation": true,
+		"opaque": true
+	},
+	"installed": [],
+	"social": {
+		"path": "packages/dashboard/src/app/opengraph-image.png",
+		"size": [1200, 630],
+		"opaque": true,
+		"source": "assets/brand/icon-rounded.png"
+	},
+	"readme": {
+		"path": "README.md",
+		"target": "assets/brand/icon-rounded.png"
+	},
+	"status": "Source assets installed and verified; commit, push, and browser evidence recorded separately."
+}
