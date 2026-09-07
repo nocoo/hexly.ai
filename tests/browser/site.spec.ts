@@ -225,7 +225,9 @@ test("keeps repository clicks separate and supports card links in another tab", 
 		.getByRole("link", { name: "View logo: Pew" })
 		.click({ button: "middle" });
 	const detail = await detailPage;
-	await expect(detail).toHaveURL(/\/logos\/pew$/);
+	await detail.waitForURL(/\/logos\/pew$/, {
+		waitUntil: "domcontentloaded",
+	});
 	await expect(detail.locator("#identity-title")).toContainText("Pew");
 	await expect(page).toHaveURL(/\/$/);
 	await detail.close();
