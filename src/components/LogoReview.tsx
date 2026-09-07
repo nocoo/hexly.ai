@@ -42,9 +42,11 @@ export function LogoReview({
 					<p>
 						{family?.method === "retained-original"
 							? t.retainedComparison
-							: family
-								? t.comparisonDescription
-								: t.artwork}
+							: family?.series === "material"
+								? t.materialComparison
+								: family
+									? t.comparisonDescription
+									: t.artwork}
 					</p>
 					<fieldset className="view-switch" aria-label={t.presentation}>
 						{(["icon", "transparent", "white"] as const).map((value) => (

@@ -36,10 +36,10 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🐬 R2Shot](30-r2shot.md) | Adopted family | #24c4bd | #ffffff |
 | [🪶 Shrike](31-shrike.md) | Adopted family | #86502c | #fffbf9 |
 | [🐙 Hooky](32-hooky.md) | Adopted family | #9666b7 | #ffffff |
-| [🔲 Dotty](33-dotty.md) | Original asset | #16181d | #f3f4f6 |
+| [🔲 Dotty](33-dotty.md) | Adopted family | #16181d | #f3f4f6 |
 | [🐑 Wooly](34-wooly.md) | Adopted family | #dd3ca7 | #eeeff2 |
-| [🧩 Matrix](35-matrix.md) | Profile emoji | #00ff41 | #050505 |
-| [🎨 Basalt](36-basalt.md) | Original asset | #3c83f6 | #eeeff2 |
+| [🧩 Matrix](35-matrix.md) | Adopted family | #00ff41 | #050505 |
+| [🎨 Basalt](36-basalt.md) | Adopted family | #0a6099 | #eeeff2 |
 | [🛡️ Surety](37-surety.md) | Adopted family | #ed511d | #eeeff2 |
 | [🧬 Life.ai](38-life-ai.md) | Adopted family | #3c83f6 | #eeeff2 |
 | [🚀 Echo](39-echo.md) | Profile emoji | #f01315 | transparent |

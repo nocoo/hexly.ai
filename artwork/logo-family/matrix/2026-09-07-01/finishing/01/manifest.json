@@ -1,0 +1,432 @@
+{
+	"createdAt": "2026-09-07T05:31:14.743Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "d6d796220a394219bb4ee8efb048376bf08cd7c5840a1a31a38155aeb98033bb",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "matrix",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/matrix.png",
+		"background": {
+			"base": "#e2eee7",
+			"light": "#f4faf7",
+			"shade": "#cddfd8",
+			"motif": "#799b8b",
+			"grainAmplitude": 0.42,
+			"grainSeed": 60907351,
+			"motifOpacity": 0.26,
+			"highlightOpacity": 0.42,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Circuit routing grid",
+				"description": "Pale mint engineering paper with fine 24-unit cells, 96-unit backplane divisions, stepped routing paths and terminal vias around the outer field.",
+				"layers": [
+					{
+						"d": "M12 0V1024M0 12H1024M36 0V1024M0 36H1024M60 0V1024M0 60H1024M84 0V1024M0 84H1024M108 0V1024M0 108H1024M132 0V1024M0 132H1024M156 0V1024M0 156H1024M180 0V1024M0 180H1024M204 0V1024M0 204H1024M228 0V1024M0 228H1024M252 0V1024M0 252H1024M276 0V1024M0 276H1024M300 0V1024M0 300H1024M324 0V1024M0 324H1024M348 0V1024M0 348H1024M372 0V1024M0 372H1024M396 0V1024M0 396H1024M420 0V1024M0 420H1024M444 0V1024M0 444H1024M468 0V1024M0 468H1024M492 0V1024M0 492H1024M516 0V1024M0 516H1024M540 0V1024M0 540H1024M564 0V1024M0 564H1024M588 0V1024M0 588H1024M612 0V1024M0 612H1024M636 0V1024M0 636H1024M660 0V1024M0 660H1024M684 0V1024M0 684H1024M708 0V1024M0 708H1024M732 0V1024M0 732H1024M756 0V1024M0 756H1024M780 0V1024M0 780H1024M804 0V1024M0 804H1024M828 0V1024M0 828H1024M852 0V1024M0 852H1024M876 0V1024M0 876H1024M900 0V1024M0 900H1024M924 0V1024M0 924H1024M948 0V1024M0 948H1024M972 0V1024M0 972H1024M996 0V1024M0 996H1024M1020 0V1024M0 1020H1024",
+						"tone": "motif",
+						"strokeWidth": 0.4
+					},
+					{
+						"d": "M12 0V1024M0 12H1024M108 0V1024M0 108H1024M204 0V1024M0 204H1024M300 0V1024M0 300H1024M396 0V1024M0 396H1024M492 0V1024M0 492H1024M588 0V1024M0 588H1024M684 0V1024M0 684H1024M780 0V1024M0 780H1024M876 0V1024M0 876H1024M972 0V1024M0 972H1024",
+						"tone": "motif",
+						"strokeWidth": 0.75
+					},
+					{
+						"d": "M-12 140H128L164 176H284M-12 164H116L152 200H228M52-12V52L88 88H180L212 120H300M1018 400H938L902 436V620L870 652H810M1050 424H950L926 448V644L894 676H846M84 1036V896L120 860H264M108 1036V912L144 876H252M596 1036V956L632 920H756L796 880H872",
+						"tone": "motif",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M281 176a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M225 200a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M297 120a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M807 652a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M843 676a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M261 860a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M249 876a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M869 880a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",
+						"tone": "motif",
+						"strokeWidth": 0.85
+					},
+					{
+						"d": "M52 52h14m-7-7v14M972 76h14m-7-7v14M44 956h14m-7-7v14M960 940h14m-7-7v14",
+						"tone": "motif",
+						"strokeWidth": 0.7
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					39,
+					66,
+					56
+				],
+				"opacity": 0.2,
+				"blurAt2048": 78,
+				"projectionScale": [
+					0.98,
+					0.38
+				],
+				"offsetAt2048": [
+					28,
+					510
+				]
+			},
+			{
+				"color": [
+					39,
+					66,
+					56
+				],
+				"opacity": 0.13,
+				"blurAt2048": 36,
+				"projectionScale": [
+					0.82,
+					0.26
+				],
+				"offsetAt2048": [
+					12,
+					503
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.8112,
+			"offsetAt2048": [
+				-11,
+				-35
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "The whole opaque block is placed uniformly inside the rounded tile. A shared target width of 1516 px and height of 1280 px keeps consistent perceived scale and room for the independent projected floor shadow. No material pieces move independently."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected near-white extraction preserves all solid surface details; no global white deletion."
+		},
+		"emission": [
+			{
+				"name": "lower-circuit-spill",
+				"color": [
+					54,
+					210,
+					121
+				],
+				"opacity": 0.3,
+				"blurAt2048": 25,
+				"blend": "over",
+				"mask": {
+					"ellipseAt2048": [
+						1024,
+						1530,
+						860,
+						315
+					],
+					"minimumRed": 0,
+					"minimumGreen": 140,
+					"maximumBlue": 110,
+					"minimumWarmth": -255
+				},
+				"note": "Only bright green traces inside the native lower sidewall region feed this separately archived subtle outer spill; the transparent master contains no external light."
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 2380787,
+		"foregroundPixels": 1813517,
+		"softEdgePixels": 9524,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 107,
+			"top": 168,
+			"right": 1967,
+			"bottom": 1745
+		}
+	},
+	"placement": {
+		"scale": 0.8112,
+		"offsetAt2048": [
+			-11,
+			-35
+		],
+		"bounds": {
+			"left": 268,
+			"top": 294,
+			"right": 1777,
+			"bottom": 1573
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 268.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [
+		{
+			"name": "lower-circuit-spill",
+			"selectedPixels": 1699,
+			"renderedAlpha": 112257,
+			"maskCoordinates": "Native source pixels, before icon placement"
+		}
+	],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 4462,
+			"sha256": "27434d4a9d268ebc32a14cf2d37cb485c61cdc5072a15621285f92d24d385d28"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1191,
+			"sha256": "9ef2430ee7725a842786d784c6ee445324210e568a1fa70d1561633b02c28639"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4866497,
+			"sha256": "4f82135798561f5754bd3f9cb4067bf2e14a7a3e4beca035331275ebf8de0f4b"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 56714,
+			"sha256": "dc0cae369fe6b9fb9ef6294f1ec6170f49f4d735c44cb9b87a2838ccb4bfad05"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 2572,
+			"sha256": "ba20645fccf33a67cf145311801432b9964659a22537a81a387f43c185564b49"
+		},
+		{
+			"path": "background.png",
+			"bytes": 281847,
+			"sha256": "210f6f50a60ac97ec296fda48f20df7bf8c22f4d8d5a26f98259763eb9591f76"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3271736,
+			"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 65225,
+			"sha256": "b6accf10f1d68ce269ac40812099bfd9c627dc359a0f6ce2eab2d00fc07ca525"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 133741,
+			"sha256": "64642004f8c785869bc2e626e33999557ce20372ac652021d51aa3b23e7a830a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 69021,
+			"sha256": "c8f53df56113772368b0b52a4e53ed0efb63faa9b0ed462b46361b069ceb40dd"
+		},
+		{
+			"path": "glow-lower-circuit-spill-mask.png",
+			"bytes": 15671,
+			"sha256": "8028af96996ecdd86d15ae792e34d44eb68cc19c37cb2e1f42f13c40582a28ab"
+		},
+		{
+			"path": "glow-lower-circuit-spill.png",
+			"bytes": 20462,
+			"sha256": "99654a7b70b8c32ea2b64367e759d2aace039eda81e009f2de220296a97ea11e"
+		},
+		{
+			"path": "exports/matrix-transparent-2048.png",
+			"bytes": 3271736,
+			"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8"
+		},
+		{
+			"path": "exports/matrix-icon-2048.png",
+			"bytes": 3680978,
+			"sha256": "cfca56f6199c4e5eee4f6e1eae1a0868bbaf6283cf6b32e23e1c8bfb23c559db"
+		},
+		{
+			"path": "exports/matrix-rounded-2048.png",
+			"bytes": 3684259,
+			"sha256": "32718620d15e7435f15c853ea88b796370d44b958b6512fc336c42bb61e27d7e"
+		},
+		{
+			"path": "exports/matrix-transparent-1024.png",
+			"bytes": 827897,
+			"sha256": "50d2d969796f4b45dd4b0297c6a1316b989de71dba949acb48ebb6fe41639c7f"
+		},
+		{
+			"path": "exports/matrix-icon-1024.png",
+			"bytes": 1088219,
+			"sha256": "765f4fb028a660d0e523d44fae09be5639ed6ee0313a1ebfebef86c908a8bf6f"
+		},
+		{
+			"path": "exports/matrix-rounded-1024.png",
+			"bytes": 1099340,
+			"sha256": "6efb039bb639a1c2888ca01475eb117b5426dc3cff0fc61cdb0e049e2cf4c2c4"
+		},
+		{
+			"path": "exports/matrix-transparent-512.png",
+			"bytes": 210521,
+			"sha256": "905efcfa9d09675437c9abc8a0f3b8cdbf1f157d2cde16aca32045af8633c98f"
+		},
+		{
+			"path": "exports/matrix-icon-512.png",
+			"bytes": 318059,
+			"sha256": "46ef335e4862aa0f13129f9950c866a6482a92517832e581576d6e5d4d55278f"
+		},
+		{
+			"path": "exports/matrix-rounded-512.png",
+			"bytes": 323471,
+			"sha256": "e873bc27f853303fc985d9ea569e7b8f4ffd8031f8cdea4b1ce3adfa4b253c7d"
+		},
+		{
+			"path": "exports/matrix-transparent-256.png",
+			"bytes": 54172,
+			"sha256": "91d5922fdbb613e6c8dae88bc5c079baf44009183cad435bff169f92b7076fd1"
+		},
+		{
+			"path": "exports/matrix-icon-256.png",
+			"bytes": 91881,
+			"sha256": "9beaf9bd0b1a9a0583bbe2bd3743fd624799c2896fc65fbd2ccbc95cb43621a1"
+		},
+		{
+			"path": "exports/matrix-rounded-256.png",
+			"bytes": 94627,
+			"sha256": "35f97e26163cb3bcbad3285f8edc71ed40f4c780d8e3e909b82f0286043eca1a"
+		},
+		{
+			"path": "exports/matrix-transparent-128.png",
+			"bytes": 14473,
+			"sha256": "2fd0b9057fda5a847f8e85b7155a238361c62a4638452d34196531084d51fb3c"
+		},
+		{
+			"path": "exports/matrix-icon-128.png",
+			"bytes": 26723,
+			"sha256": "4644f388a54ac0e5f3992bfdd019bca8d48a9bee6f63d5c3ca4a250a60413c3f"
+		},
+		{
+			"path": "exports/matrix-rounded-128.png",
+			"bytes": 28283,
+			"sha256": "ce9ce88446819d16081b7840a149c980d37e4c57d501454afc291d65a2854dee"
+		},
+		{
+			"path": "exports/matrix-transparent-64.png",
+			"bytes": 4173,
+			"sha256": "ec7f2e5126a840a9fdb58f6d17147b0e7c1b02a257e1b242b6073a26380c0d6c"
+		},
+		{
+			"path": "exports/matrix-icon-64.png",
+			"bytes": 8358,
+			"sha256": "19a917391ac1694a47fba5d1a236c7ffab491c73db23a16d1725751957e48119"
+		},
+		{
+			"path": "exports/matrix-rounded-64.png",
+			"bytes": 8947,
+			"sha256": "7456bcb8d2216e62ae1714cdeb51e320340798491cd3f9acb822887e3150b16f"
+		},
+		{
+			"path": "exports/matrix-transparent-48.png",
+			"bytes": 2530,
+			"sha256": "7af2ac7d84d7d2764ca9c525f488e4e8f15d8b8852652bbb1e2e7bae13262411"
+		},
+		{
+			"path": "exports/matrix-icon-48.png",
+			"bytes": 5205,
+			"sha256": "56507a09cf11467159c7876a0f63486e1c26ea21ae942a08ffd9594d2c962122"
+		},
+		{
+			"path": "exports/matrix-rounded-48.png",
+			"bytes": 5678,
+			"sha256": "12dcad91b221d8d8ab4785fd410618a394418d5b182aa85ff9f8f78b1ef4394b"
+		},
+		{
+			"path": "exports/matrix-transparent-32.png",
+			"bytes": 1366,
+			"sha256": "c7c372ade509b8f9fa607a27b182c65b41af749b9bef8743e5ff099214d13b79"
+		},
+		{
+			"path": "exports/matrix-icon-32.png",
+			"bytes": 2668,
+			"sha256": "d8fef6c8b7fea01724ffa07ed33dabd49105a89729d2cc989f43d570ad714395"
+		},
+		{
+			"path": "exports/matrix-rounded-32.png",
+			"bytes": 2894,
+			"sha256": "df5ab69760701ccd38e8ccef80d19ddf7d6a5bec801d0a272b0d39d85caa6beb"
+		},
+		{
+			"path": "exports/matrix-transparent-24.png",
+			"bytes": 917,
+			"sha256": "b2ceb33373e05dc2ac6785a8495a4381e68c68d18cbc61949dfd0162482cca34"
+		},
+		{
+			"path": "exports/matrix-icon-24.png",
+			"bytes": 1699,
+			"sha256": "2334df7f0355252945c516eb27f78890b14d5ab07e151b7f9ef353453502bd26"
+		},
+		{
+			"path": "exports/matrix-rounded-24.png",
+			"bytes": 1859,
+			"sha256": "71cdee598c8362b47648cf52e3824f9608611fd5b137c9e9d2c1bce944860c94"
+		},
+		{
+			"path": "exports/matrix-transparent-16.png",
+			"bytes": 540,
+			"sha256": "ce14997da2dd3bec5866ec3008610703fd06d29a297b5b067175d7fa8a3760c1"
+		},
+		{
+			"path": "exports/matrix-icon-16.png",
+			"bytes": 900,
+			"sha256": "1a9e82911f8e405920382b97af17c9615fe691df4ed8d4e6c5a2566c6e35397d"
+		},
+		{
+			"path": "exports/matrix-rounded-16.png",
+			"bytes": 969,
+			"sha256": "eb4dda0a5498c7e3a3ac39a68ec14ed557a7528beee4e076a10a4205442dc808"
+		},
+		{
+			"path": "exports/matrix-white-2048.png",
+			"bytes": 2909978,
+			"sha256": "a6494132c48a6be4f0ed86754901194089d898659a5bfe9b2f143e824b6e335d"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 749379,
+			"sha256": "302e06e53d56f83d888983c8a411f8492290e3ab7ce0dbdad410ce0ac4482e2f"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 737675,
+			"sha256": "864c2ebba9ee90ab94b2be7677b8d8e2ec0f44549915440c470a56544ae26708"
+		}
+	]
+}

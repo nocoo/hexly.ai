@@ -1,0 +1,762 @@
+{
+	"checkedAt": "2026-09-07T05:53:09.108Z",
+	"projects": {
+		"dotty": {
+			"baseURL": "http://127.0.0.1:7002",
+			"arrangements": [
+				{
+					"route": "/",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-sidebar-light.png"
+				},
+				{
+					"route": "/",
+					"theme": "light",
+					"viewport": "desktop-collapsed",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-collapsed-light.png"
+				},
+				{
+					"route": "/login",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-login-light.png"
+				},
+				{
+					"route": "/badge-login",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [24, 24],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-badge-login-light.png"
+				},
+				{
+					"route": "/",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-sidebar-dark.png"
+				},
+				{
+					"route": "/",
+					"theme": "dark",
+					"viewport": "desktop-collapsed",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-collapsed-dark.png"
+				},
+				{
+					"route": "/login",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-login-dark.png"
+				},
+				{
+					"route": "/badge-login",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [24, 24],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-badge-login-dark.png"
+				},
+				{
+					"route": "/",
+					"viewport": "mobile-navigation",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/dotty-mobile-navigation.png"
+				}
+			],
+			"assets": [
+				{
+					"path": "/logo-128.png",
+					"sha256": "35fab1a0cb167800a83886efa00f84bb5796af4582a0a10f283116ea6b48567f"
+				},
+				{
+					"path": "/logo-256.png",
+					"sha256": "e61347c29a67a5b804ea9cd3dda60fd21d96d6b8370289d85674827379999485"
+				},
+				{
+					"path": "/favicon.png",
+					"sha256": "ad9398cee065a1c5cce93d6c0b8a8e6a9093c7d01e379ef05bebaf2c6822c594"
+				},
+				{
+					"path": "/favicon.ico",
+					"sha256": "609a2406fa22a6211bce381090db911adb4204cc591ed7284da9072bbe10800d"
+				},
+				{
+					"path": "/apple-touch-icon.png",
+					"sha256": "f89d58395db6df7accbbfaeb1c4ccdb0693686082829512c72d114cd8493db34"
+				},
+				{
+					"path": "/opengraph-image.png",
+					"sha256": "628f26220f20b91c35cfe08d1d3d6a9a045b2858147bc1ac795eb9cc25877b32"
+				}
+			],
+			"pageErrors": [],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon.ico",
+					"sizes": ""
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"sizes": "180x180"
+				}
+			]
+		},
+		"matrix": {
+			"baseURL": "http://127.0.0.1:7013",
+			"arrangements": [
+				{
+					"route": "/",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/matrix-sidebar-dark.png"
+				},
+				{
+					"route": "/login",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/matrix-login-dark.png"
+				},
+				{
+					"route": "/loading",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgb(5, 5, 5)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/matrix-loading-dark.png"
+				},
+				{
+					"route": "/",
+					"viewport": "mobile-navigation",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/matrix-mobile-navigation.png"
+				}
+			],
+			"assets": [
+				{
+					"path": "/logo-128.png",
+					"sha256": "6cccb757e4fd3ff163ee59c031944be0fa9df080ddd4b1633ded1525109730f1"
+				},
+				{
+					"path": "/logo-256.png",
+					"sha256": "f138b26d1025875baa376682f94e68f0c869a16cc025964324984521bb610bbc"
+				},
+				{
+					"path": "/favicon.png",
+					"sha256": "13610fbd6f346a420f9cc9b34e44add06a3b2431d0458c5db75aba556bd06af7"
+				},
+				{
+					"path": "/favicon.ico",
+					"sha256": "481c31b24914fcf79342bb3f34dc053c01f0e0666ff30d14a30fd0e461ed2663"
+				},
+				{
+					"path": "/apple-touch-icon.png",
+					"sha256": "2071c926f3b1ec7968d1d5eb3e5ef9254e88a572ae22e572bccf26c49761bdec"
+				},
+				{
+					"path": "/opengraph-image.png",
+					"sha256": "e41c3c713b0203cd62c1df85595dade2351952ed8e52e633fb63983bc24f6ac1"
+				}
+			],
+			"pageErrors": [],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon.ico",
+					"sizes": ""
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"sizes": "180x180"
+				}
+			]
+		},
+		"basalt": {
+			"baseURL": "http://127.0.0.1:7003",
+			"arrangements": [
+				{
+					"route": "/",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-sidebar-light.png"
+				},
+				{
+					"route": "/",
+					"theme": "light",
+					"viewport": "desktop-collapsed",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-collapsed-light.png"
+				},
+				{
+					"route": "/login",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-login-light.png"
+				},
+				{
+					"route": "/ui/basalt-mark",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"tag": "svg",
+							"source": null,
+							"embedded": true,
+							"decoded": true,
+							"cssSize": [20, 20],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgb(255, 255, 255)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"tag": "svg",
+							"source": null,
+							"embedded": true,
+							"decoded": true,
+							"cssSize": [20, 20],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgb(255, 255, 255)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-ui-basalt-mark-light.png"
+				},
+				{
+					"route": "/ui/loading-screen",
+					"theme": "light",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-ui-loading-screen-light.png"
+				},
+				{
+					"route": "/",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-sidebar-dark.png"
+				},
+				{
+					"route": "/",
+					"theme": "dark",
+					"viewport": "desktop-collapsed",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-collapsed-dark.png"
+				},
+				{
+					"route": "/login",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [96, 96],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-login-dark.png"
+				},
+				{
+					"route": "/ui/basalt-mark",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"tag": "svg",
+							"source": null,
+							"embedded": true,
+							"decoded": true,
+							"cssSize": [20, 20],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgb(36, 36, 36)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"tag": "svg",
+							"source": null,
+							"embedded": true,
+							"decoded": true,
+							"cssSize": [20, 20],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgb(36, 36, 36)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-ui-basalt-mark-dark.png"
+				},
+				{
+					"route": "/ui/loading-screen",
+					"theme": "dark",
+					"viewport": "desktop",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-ui-loading-screen-dark.png"
+				},
+				{
+					"route": "/",
+					"viewport": "mobile-navigation",
+					"marks": [
+						{
+							"tag": "IMG",
+							"source": "/logo-128.png",
+							"embedded": false,
+							"decoded": true,
+							"cssSize": [28, 28],
+							"background": "rgba(0, 0, 0, 0)",
+							"radius": "0px",
+							"filter": "none",
+							"mask": "none",
+							"parentBackground": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/basalt-mobile-navigation.png"
+				}
+			],
+			"assets": [
+				{
+					"path": "/logo-128.png",
+					"sha256": "d42b3f9915ed85dac05bc10160adca27e79bab26bd2c58a30e5755bb3c351b27"
+				},
+				{
+					"path": "/logo-256.png",
+					"sha256": "043640dfe1896950662f30d4f7d261dc78381954ee095b8c287cc3f280a85473"
+				},
+				{
+					"path": "/favicon.png",
+					"sha256": "6ce31bbd1e6fb8021585135d63b1293be87f499cd7828bb2956d9ccd51d02e09"
+				},
+				{
+					"path": "/favicon.ico",
+					"sha256": "095379d7910373580cec90a8b127257b6d656224eea413ddf41a85597976e606"
+				},
+				{
+					"path": "/apple-touch-icon.png",
+					"sha256": "2a20a7f764c05c6489f8e3968c45e74eb61629733636995b3ebc78900d99b8db"
+				},
+				{
+					"path": "/opengraph-image.png",
+					"sha256": "18a73a972bcad64f2a470f4fa698909b293083136903fc021d3e83224610804f"
+				}
+			],
+			"pageErrors": [],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"sizes": "32x32"
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon.ico",
+					"sizes": ""
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"sizes": "180x180"
+				}
+			]
+		}
+	},
+	"browser": "152.0.7977.83"
+}

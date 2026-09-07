@@ -1,0 +1,102 @@
+{
+	"project": "matrix",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/matrix.png",
+	"background": {
+		"base": "#e2eee7",
+		"light": "#f4faf7",
+		"shade": "#cddfd8",
+		"motif": "#799b8b",
+		"grainAmplitude": 0.42,
+		"grainSeed": 60907351,
+		"motifOpacity": 0.26,
+		"highlightOpacity": 0.42,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Circuit routing grid",
+			"description": "Pale mint engineering paper with fine 24-unit cells, 96-unit backplane divisions, stepped routing paths and terminal vias around the outer field.",
+			"layers": [
+				{
+					"d": "M12 0V1024M0 12H1024M36 0V1024M0 36H1024M60 0V1024M0 60H1024M84 0V1024M0 84H1024M108 0V1024M0 108H1024M132 0V1024M0 132H1024M156 0V1024M0 156H1024M180 0V1024M0 180H1024M204 0V1024M0 204H1024M228 0V1024M0 228H1024M252 0V1024M0 252H1024M276 0V1024M0 276H1024M300 0V1024M0 300H1024M324 0V1024M0 324H1024M348 0V1024M0 348H1024M372 0V1024M0 372H1024M396 0V1024M0 396H1024M420 0V1024M0 420H1024M444 0V1024M0 444H1024M468 0V1024M0 468H1024M492 0V1024M0 492H1024M516 0V1024M0 516H1024M540 0V1024M0 540H1024M564 0V1024M0 564H1024M588 0V1024M0 588H1024M612 0V1024M0 612H1024M636 0V1024M0 636H1024M660 0V1024M0 660H1024M684 0V1024M0 684H1024M708 0V1024M0 708H1024M732 0V1024M0 732H1024M756 0V1024M0 756H1024M780 0V1024M0 780H1024M804 0V1024M0 804H1024M828 0V1024M0 828H1024M852 0V1024M0 852H1024M876 0V1024M0 876H1024M900 0V1024M0 900H1024M924 0V1024M0 924H1024M948 0V1024M0 948H1024M972 0V1024M0 972H1024M996 0V1024M0 996H1024M1020 0V1024M0 1020H1024",
+					"tone": "motif",
+					"strokeWidth": 0.4
+				},
+				{
+					"d": "M12 0V1024M0 12H1024M108 0V1024M0 108H1024M204 0V1024M0 204H1024M300 0V1024M0 300H1024M396 0V1024M0 396H1024M492 0V1024M0 492H1024M588 0V1024M0 588H1024M684 0V1024M0 684H1024M780 0V1024M0 780H1024M876 0V1024M0 876H1024M972 0V1024M0 972H1024",
+					"tone": "motif",
+					"strokeWidth": 0.75
+				},
+				{
+					"d": "M-12 140H128L164 176H284M-12 164H116L152 200H228M52-12V52L88 88H180L212 120H300M1018 400H938L902 436V620L870 652H810M1050 424H950L926 448V644L894 676H846M84 1036V896L120 860H264M108 1036V912L144 876H252M596 1036V956L632 920H756L796 880H872",
+					"tone": "motif",
+					"strokeWidth": 1
+				},
+				{
+					"d": "M281 176a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M225 200a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M297 120a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M807 652a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M843 676a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M261 860a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M249 876a3 3 0 1 0 6 0a3 3 0 1 0 -6 0M869 880a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",
+					"tone": "motif",
+					"strokeWidth": 0.85
+				},
+				{
+					"d": "M52 52h14m-7-7v14M972 76h14m-7-7v14M44 956h14m-7-7v14M960 940h14m-7-7v14",
+					"tone": "motif",
+					"strokeWidth": 0.7
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [39, 66, 56],
+			"opacity": 0.2,
+			"blurAt2048": 78,
+			"projectionScale": [0.98, 0.38],
+			"offsetAt2048": [28, 510]
+		},
+		{
+			"color": [39, 66, 56],
+			"opacity": 0.13,
+			"blurAt2048": 36,
+			"projectionScale": [0.82, 0.26],
+			"offsetAt2048": [12, 503]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.8112,
+		"offsetAt2048": [-11, -35],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "The whole opaque block is placed uniformly inside the rounded tile. A shared target width of 1516 px and height of 1280 px keeps consistent perceived scale and room for the independent projected floor shadow. No material pieces move independently."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected near-white extraction preserves all solid surface details; no global white deletion."
+	},
+	"emission": [
+		{
+			"name": "lower-circuit-spill",
+			"color": [54, 210, 121],
+			"opacity": 0.3,
+			"blurAt2048": 25,
+			"blend": "over",
+			"mask": {
+				"ellipseAt2048": [1024, 1530, 860, 315],
+				"minimumRed": 0,
+				"minimumGreen": 140,
+				"maximumBlue": 110,
+				"minimumWarmth": -255
+			},
+			"note": "Only bright green traces inside the native lower sidewall region feed this separately archived subtle outer spill; the transparent master contains no external light."
+		}
+	]
+}

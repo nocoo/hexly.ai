@@ -1,0 +1,94 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels within the extracted boundary; selected by visible material role, not average color or invented site tokens."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Obsidian",
+				"zh": "黑曜石"
+			},
+			"role": "primary",
+			"color": "#17191c",
+			"pixel": [601, 1192],
+			"rgb": [23, 25, 28],
+			"sourceSha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8"
+		},
+		{
+			"label": {
+				"en": "Emerald",
+				"zh": "祖母绿"
+			},
+			"role": "accent",
+			"color": "#0a6648",
+			"pixel": [616, 1095],
+			"rgb": [10, 102, 72],
+			"sourceSha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8"
+		},
+		{
+			"label": {
+				"en": "Ruby",
+				"zh": "红宝石"
+			},
+			"role": "accent",
+			"color": "#9e1c2b",
+			"pixel": [849, 483],
+			"rgb": [158, 28, 43],
+			"sourceSha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8"
+		},
+		{
+			"label": {
+				"en": "Amber",
+				"zh": "琥珀"
+			},
+			"role": "accent",
+			"color": "#e4a228",
+			"pixel": [1007, 257],
+			"rgb": [228, 162, 40],
+			"sourceSha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8"
+		},
+		{
+			"label": {
+				"en": "Gold trim",
+				"zh": "金色镶边"
+			},
+			"role": "accent",
+			"color": "#b58e4d",
+			"pixel": [1402, 797],
+			"rgb": [181, 142, 77],
+			"sourceSha256": "3b270748ea023171243256cd655de0ff134d4430cd092dc3a86ba20fe9509af8"
+		}
+	],
+	"presentation": {
+		"base": "#ede6d8",
+		"light": "#faf7ee",
+		"shade": "#dbd1c0",
+		"motif": "#a8987e",
+		"pattern": "Corner tower construction grid",
+		"status": "Adopted under the owner-authorized material batch; Basalt follows the explicit architectural correction."
+	},
+	"website": {
+		"primary": "#0a6099",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f",
+		"evidence": {
+			"primary": {
+				"value": "204 88% 32%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-primary"
+			},
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/basalt/src/styles/tokens.css --basalt-foreground"
+			}
+		},
+		"repositoryRevision": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+		"status": "Existing v2.1.0 product tokens from the concurrent owner release. The material artwork does not recolor the product."
+	}
+}

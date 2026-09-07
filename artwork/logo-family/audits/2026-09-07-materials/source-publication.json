@@ -1,0 +1,1248 @@
+{
+	"checkedAt": "2026-09-07T06:15:51.051735+00:00",
+	"scope": ["dotty", "matrix", "basalt"],
+	"projects": [
+		{
+			"project": "dotty",
+			"repository": "https://github.com/nocoo/dotty",
+			"sourceAdoptionCommit": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+			"publishedMainCommit": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+			"ci": {
+				"conclusion": "success",
+				"createdAt": "2026-09-07T05:54:01Z",
+				"databaseId": 34088561068,
+				"headSha": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+				"jobs": [
+					{
+						"databaseId": 101637245774,
+						"name": "ci / L1+G1+G2",
+						"status": "completed",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/dotty/actions/runs/34088561068/job/101637245774",
+						"startedAt": "2026-09-07T05:54:03Z",
+						"completedAt": "2026-09-07T05:54:33Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install extra dirs",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "G2: Install gitleaks",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: Gitleaks detect",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Pre-command",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G1: Typecheck",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G1: Lint",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "L1: Unit tests",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Upload coverage",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: Install osv-scanner",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: OSV dependency scan",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Complete job",
+								"status": "completed",
+								"conclusion": "success"
+							}
+						]
+					},
+					{
+						"databaseId": 101637246468,
+						"name": "ci / L2 API E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/dotty/actions/runs/34088561068/job/101637246468",
+						"startedAt": "2026-09-07T05:54:02Z",
+						"completedAt": "2026-09-07T05:54:01Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101637246623,
+						"name": "ci / L3 Browser E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/dotty/actions/runs/34088561068/job/101637246623",
+						"startedAt": "2026-09-07T05:54:02Z",
+						"completedAt": "2026-09-07T05:54:01Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101637246720,
+						"name": "ci / Worker Tests",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/dotty/actions/runs/34088561068/job/101637246720",
+						"startedAt": "2026-09-07T05:54:02Z",
+						"completedAt": "2026-09-07T05:54:01Z",
+						"steps": []
+					}
+				],
+				"status": "completed",
+				"updatedAt": "2026-09-07T05:54:34Z",
+				"url": "https://github.com/nocoo/dotty/actions/runs/34088561068",
+				"workflowName": "CI"
+			},
+			"release": {
+				"conclusion": "success",
+				"createdAt": "2026-09-07T05:54:36Z",
+				"databaseId": 34088595735,
+				"headSha": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+				"jobs": [
+					{
+						"databaseId": 101637351633,
+						"name": "Deploy Worker (main)",
+						"status": "completed",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/dotty/actions/runs/34088595735/job/101637351633",
+						"startedAt": "2026-09-07T05:54:38Z",
+						"completedAt": "2026-09-07T05:54:52Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout main HEAD that CI validated",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Read package.json version",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Build site (into dist/)",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Deploy Worker",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Summary",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Checkout main HEAD that CI validated",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Complete job",
+								"status": "completed",
+								"conclusion": "success"
+							}
+						]
+					},
+					{
+						"databaseId": 101637352653,
+						"name": "Deploy Worker (tagged)",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/dotty/actions/runs/34088595735/job/101637352653",
+						"startedAt": "2026-09-07T05:54:37Z",
+						"completedAt": "2026-09-07T05:54:36Z",
+						"steps": []
+					}
+				],
+				"status": "completed",
+				"updatedAt": "2026-09-07T05:54:52Z",
+				"url": "https://github.com/nocoo/dotty/actions/runs/34088595735",
+				"workflowName": "Release"
+			},
+			"sourceAssets": [
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/dotty/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 2227338,
+					"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+					"result": "exact-match",
+					"path": "logo.png",
+					"expectedSha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/dotty/1becb8026f44a20d9827cd5b4f100b6fb09836fe/assets/brand/icon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 2569912,
+					"sha256": "3805d754d3d4d78191e7fa5f883a23b96f2289d5100723481fa882b0d0f6ce20",
+					"result": "exact-match",
+					"path": "assets/brand/icon.png",
+					"expectedSha256": "3805d754d3d4d78191e7fa5f883a23b96f2289d5100723481fa882b0d0f6ce20"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/dotty/1becb8026f44a20d9827cd5b4f100b6fb09836fe/assets/brand/icon-rounded.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 2575282,
+					"sha256": "9e47936711f8795123c0381ffd456b4fd743a4844912aee2607ec124847dd106",
+					"result": "exact-match",
+					"path": "assets/brand/icon-rounded.png",
+					"expectedSha256": "9e47936711f8795123c0381ffd456b4fd743a4844912aee2607ec124847dd106"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/dotty/1becb8026f44a20d9827cd5b4f100b6fb09836fe/assets/brand/background.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 243111,
+					"sha256": "2f347689bd1ba0163679d6e3edd18135390036549f3f346765afa0e453ea3dc2",
+					"result": "exact-match",
+					"path": "assets/brand/background.png",
+					"expectedSha256": "2f347689bd1ba0163679d6e3edd18135390036549f3f346765afa0e453ea3dc2"
+				}
+			],
+			"publicAssets": [
+				{
+					"url": "https://dotty.hexly.ai/logo-24.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1093,
+					"sha256": "e6c7709d01ff248715fb0b7126b9a6f1194f2e82ac0cfdb7b5e8fba08536fb5f",
+					"result": "exact-match",
+					"path": "public/logo-24.png",
+					"expectedSha256": "e6c7709d01ff248715fb0b7126b9a6f1194f2e82ac0cfdb7b5e8fba08536fb5f"
+				},
+				{
+					"url": "https://dotty.hexly.ai/logo-32.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1630,
+					"sha256": "ad9398cee065a1c5cce93d6c0b8a8e6a9093c7d01e379ef05bebaf2c6822c594",
+					"result": "exact-match",
+					"path": "public/logo-32.png",
+					"expectedSha256": "ad9398cee065a1c5cce93d6c0b8a8e6a9093c7d01e379ef05bebaf2c6822c594"
+				},
+				{
+					"url": "https://dotty.hexly.ai/logo-48.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 2879,
+					"sha256": "6d5e42e8a0d0b7447f4cb8b4dfa7a5ca68a80624450ddf8b4afe73a6a48181ac",
+					"result": "exact-match",
+					"path": "public/logo-48.png",
+					"expectedSha256": "6d5e42e8a0d0b7447f4cb8b4dfa7a5ca68a80624450ddf8b4afe73a6a48181ac"
+				},
+				{
+					"url": "https://dotty.hexly.ai/logo-64.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 4753,
+					"sha256": "3d5c638d167b77df4b694b1030405dc6be91e4ce14d3b7fc1b1f988ef42a9ac7",
+					"result": "exact-match",
+					"path": "public/logo-64.png",
+					"expectedSha256": "3d5c638d167b77df4b694b1030405dc6be91e4ce14d3b7fc1b1f988ef42a9ac7"
+				},
+				{
+					"url": "https://dotty.hexly.ai/logo-80.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 6931,
+					"sha256": "5edc1d459a3c0845abcbb093b7a93f5a38511e1d4abdd8cf36767235fb09c3a9",
+					"result": "exact-match",
+					"path": "public/logo-80.png",
+					"expectedSha256": "5edc1d459a3c0845abcbb093b7a93f5a38511e1d4abdd8cf36767235fb09c3a9"
+				},
+				{
+					"url": "https://dotty.hexly.ai/logo-128.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 15126,
+					"sha256": "35fab1a0cb167800a83886efa00f84bb5796af4582a0a10f283116ea6b48567f",
+					"result": "exact-match",
+					"path": "public/logo-128.png",
+					"expectedSha256": "35fab1a0cb167800a83886efa00f84bb5796af4582a0a10f283116ea6b48567f"
+				},
+				{
+					"url": "https://dotty.hexly.ai/logo-256.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 44745,
+					"sha256": "e61347c29a67a5b804ea9cd3dda60fd21d96d6b8370289d85674827379999485",
+					"result": "exact-match",
+					"path": "public/logo-256.png",
+					"expectedSha256": "e61347c29a67a5b804ea9cd3dda60fd21d96d6b8370289d85674827379999485"
+				},
+				{
+					"url": "https://dotty.hexly.ai/favicon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1630,
+					"sha256": "ad9398cee065a1c5cce93d6c0b8a8e6a9093c7d01e379ef05bebaf2c6822c594",
+					"result": "exact-match",
+					"path": "public/favicon.png",
+					"expectedSha256": "ad9398cee065a1c5cce93d6c0b8a8e6a9093c7d01e379ef05bebaf2c6822c594"
+				},
+				{
+					"url": "https://dotty.hexly.ai/favicon.ico",
+					"status": 200,
+					"contentType": "image/vnd.microsoft.icon",
+					"bytes": 11051,
+					"sha256": "609a2406fa22a6211bce381090db911adb4204cc591ed7284da9072bbe10800d",
+					"result": "exact-match",
+					"path": "public/favicon.ico",
+					"expectedSha256": "609a2406fa22a6211bce381090db911adb4204cc591ed7284da9072bbe10800d"
+				},
+				{
+					"url": "https://dotty.hexly.ai/apple-touch-icon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 36682,
+					"sha256": "f89d58395db6df7accbbfaeb1c4ccdb0693686082829512c72d114cd8493db34",
+					"result": "exact-match",
+					"path": "public/apple-touch-icon.png",
+					"expectedSha256": "f89d58395db6df7accbbfaeb1c4ccdb0693686082829512c72d114cd8493db34"
+				},
+				{
+					"url": "https://dotty.hexly.ai/opengraph-image.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 260157,
+					"sha256": "628f26220f20b91c35cfe08d1d3d6a9a045b2858147bc1ac795eb9cc25877b32",
+					"result": "exact-match",
+					"path": "public/opengraph-image.png",
+					"expectedSha256": "628f26220f20b91c35cfe08d1d3d6a9a045b2858147bc1ac795eb9cc25877b32"
+				}
+			],
+			"publicDocument": {
+				"url": "https://dotty.hexly.ai",
+				"status": 200,
+				"contentType": "text/html",
+				"bytes": 2049,
+				"sha256": "94beeac2efc365749e05a7e98d545550a72a1f48864a80efcba80e72a5286945",
+				"result": "received"
+			},
+			"status": "deployed"
+		},
+		{
+			"project": "matrix",
+			"repository": "https://github.com/nocoo/matrix",
+			"sourceAdoptionCommit": "8e6f9add035b35505576f161d95393c0b8b31e07",
+			"publishedMainCommit": "8e6f9add035b35505576f161d95393c0b8b31e07",
+			"ci": {
+				"conclusion": "success",
+				"createdAt": "2026-09-07T05:54:02Z",
+				"databaseId": 34088562440,
+				"headSha": "8e6f9add035b35505576f161d95393c0b8b31e07",
+				"jobs": [
+					{
+						"databaseId": 101637253869,
+						"name": "ci / L1+G1+G2",
+						"status": "completed",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/matrix/actions/runs/34088562440/job/101637253869",
+						"startedAt": "2026-09-07T05:54:06Z",
+						"completedAt": "2026-09-07T05:54:35Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install extra dirs",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "G2: Install gitleaks",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: Gitleaks detect",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Pre-command",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G1: Typecheck",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G1: Lint",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "L1: Unit tests",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Upload coverage",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: Install osv-scanner",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: OSV dependency scan",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Complete job",
+								"status": "completed",
+								"conclusion": "success"
+							}
+						]
+					},
+					{
+						"databaseId": 101637254689,
+						"name": "ci / L2 API E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/matrix/actions/runs/34088562440/job/101637254689",
+						"startedAt": "2026-09-07T05:54:04Z",
+						"completedAt": "2026-09-07T05:54:04Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101637254860,
+						"name": "ci / L3 Browser E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/matrix/actions/runs/34088562440/job/101637254860",
+						"startedAt": "2026-09-07T05:54:04Z",
+						"completedAt": "2026-09-07T05:54:04Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101637255081,
+						"name": "ci / Worker Tests",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/matrix/actions/runs/34088562440/job/101637255081",
+						"startedAt": "2026-09-07T05:54:04Z",
+						"completedAt": "2026-09-07T05:54:04Z",
+						"steps": []
+					}
+				],
+				"status": "completed",
+				"updatedAt": "2026-09-07T05:54:36Z",
+				"url": "https://github.com/nocoo/matrix/actions/runs/34088562440",
+				"workflowName": "CI"
+			},
+			"release": {
+				"conclusion": "success",
+				"createdAt": "2026-09-07T05:54:38Z",
+				"databaseId": 34088597782,
+				"headSha": "8e6f9add035b35505576f161d95393c0b8b31e07",
+				"jobs": [
+					{
+						"databaseId": 101637358408,
+						"name": "Deploy Worker (tagged)",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/matrix/actions/runs/34088597782/job/101637358408",
+						"startedAt": "2026-09-07T05:54:39Z",
+						"completedAt": "2026-09-07T05:54:38Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101637358480,
+						"name": "Deploy Worker (main)",
+						"status": "completed",
+						"conclusion": "success",
+						"url": "https://github.com/nocoo/matrix/actions/runs/34088597782/job/101637358480",
+						"startedAt": "2026-09-07T05:54:41Z",
+						"completedAt": "2026-09-07T05:54:58Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout main HEAD that CI validated",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Read package.json version",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Build site (into dist)",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Deploy Worker",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Summary",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Post Checkout main HEAD that CI validated",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Complete job",
+								"status": "completed",
+								"conclusion": "success"
+							}
+						]
+					}
+				],
+				"status": "completed",
+				"updatedAt": "2026-09-07T05:54:59Z",
+				"url": "https://github.com/nocoo/matrix/actions/runs/34088597782",
+				"workflowName": "Release"
+			},
+			"sourceAssets": [
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/matrix/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3271736,
+					"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+					"result": "exact-match",
+					"path": "logo.png",
+					"expectedSha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/matrix/8e6f9add035b35505576f161d95393c0b8b31e07/assets/brand/icon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3680978,
+					"sha256": "cfca56f6199c4e5eee4f6e1eae1a0868bbaf6283cf6b32e23e1c8bfb23c559db",
+					"result": "exact-match",
+					"path": "assets/brand/icon.png",
+					"expectedSha256": "cfca56f6199c4e5eee4f6e1eae1a0868bbaf6283cf6b32e23e1c8bfb23c559db"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/matrix/8e6f9add035b35505576f161d95393c0b8b31e07/assets/brand/icon-rounded.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3684259,
+					"sha256": "32718620d15e7435f15c853ea88b796370d44b958b6512fc336c42bb61e27d7e",
+					"result": "exact-match",
+					"path": "assets/brand/icon-rounded.png",
+					"expectedSha256": "32718620d15e7435f15c853ea88b796370d44b958b6512fc336c42bb61e27d7e"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/matrix/8e6f9add035b35505576f161d95393c0b8b31e07/assets/brand/background.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 281847,
+					"sha256": "210f6f50a60ac97ec296fda48f20df7bf8c22f4d8d5a26f98259763eb9591f76",
+					"result": "exact-match",
+					"path": "assets/brand/background.png",
+					"expectedSha256": "210f6f50a60ac97ec296fda48f20df7bf8c22f4d8d5a26f98259763eb9591f76"
+				}
+			],
+			"publicAssets": [
+				{
+					"url": "https://matrix.hexly.ai/logo-24.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 966,
+					"sha256": "2652554ec21293890e940ed264fff909cf0bf207db3213930fee451809661db3",
+					"result": "exact-match",
+					"path": "public/logo-24.png",
+					"expectedSha256": "2652554ec21293890e940ed264fff909cf0bf207db3213930fee451809661db3"
+				},
+				{
+					"url": "https://matrix.hexly.ai/logo-32.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1426,
+					"sha256": "13610fbd6f346a420f9cc9b34e44add06a3b2431d0458c5db75aba556bd06af7",
+					"result": "exact-match",
+					"path": "public/logo-32.png",
+					"expectedSha256": "13610fbd6f346a420f9cc9b34e44add06a3b2431d0458c5db75aba556bd06af7"
+				},
+				{
+					"url": "https://matrix.hexly.ai/logo-48.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 2627,
+					"sha256": "1882be819c85295320111c9f80db8dbaf78c723d287ee872366d2a19b0bf633e",
+					"result": "exact-match",
+					"path": "public/logo-48.png",
+					"expectedSha256": "1882be819c85295320111c9f80db8dbaf78c723d287ee872366d2a19b0bf633e"
+				},
+				{
+					"url": "https://matrix.hexly.ai/logo-64.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 4265,
+					"sha256": "da9cbd9b97b1088ee6a33894e247cc46dd6b5a0ce668761567b62f48fc265179",
+					"result": "exact-match",
+					"path": "public/logo-64.png",
+					"expectedSha256": "da9cbd9b97b1088ee6a33894e247cc46dd6b5a0ce668761567b62f48fc265179"
+				},
+				{
+					"url": "https://matrix.hexly.ai/logo-80.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 6305,
+					"sha256": "a3406fe6d965448c51222eeb56dc9080fb5487203cfed8eb9a103770f3714fe9",
+					"result": "exact-match",
+					"path": "public/logo-80.png",
+					"expectedSha256": "a3406fe6d965448c51222eeb56dc9080fb5487203cfed8eb9a103770f3714fe9"
+				},
+				{
+					"url": "https://matrix.hexly.ai/logo-128.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 14677,
+					"sha256": "6cccb757e4fd3ff163ee59c031944be0fa9df080ddd4b1633ded1525109730f1",
+					"result": "exact-match",
+					"path": "public/logo-128.png",
+					"expectedSha256": "6cccb757e4fd3ff163ee59c031944be0fa9df080ddd4b1633ded1525109730f1"
+				},
+				{
+					"url": "https://matrix.hexly.ai/logo-256.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 54146,
+					"sha256": "f138b26d1025875baa376682f94e68f0c869a16cc025964324984521bb610bbc",
+					"result": "exact-match",
+					"path": "public/logo-256.png",
+					"expectedSha256": "f138b26d1025875baa376682f94e68f0c869a16cc025964324984521bb610bbc"
+				},
+				{
+					"url": "https://matrix.hexly.ai/favicon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1426,
+					"sha256": "13610fbd6f346a420f9cc9b34e44add06a3b2431d0458c5db75aba556bd06af7",
+					"result": "exact-match",
+					"path": "public/favicon.png",
+					"expectedSha256": "13610fbd6f346a420f9cc9b34e44add06a3b2431d0458c5db75aba556bd06af7"
+				},
+				{
+					"url": "https://matrix.hexly.ai/favicon.ico",
+					"status": 200,
+					"contentType": "image/vnd.microsoft.icon",
+					"bytes": 9936,
+					"sha256": "481c31b24914fcf79342bb3f34dc053c01f0e0666ff30d14a30fd0e461ed2663",
+					"result": "exact-match",
+					"path": "public/favicon.ico",
+					"expectedSha256": "481c31b24914fcf79342bb3f34dc053c01f0e0666ff30d14a30fd0e461ed2663"
+				},
+				{
+					"url": "https://matrix.hexly.ai/apple-touch-icon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 42460,
+					"sha256": "2071c926f3b1ec7968d1d5eb3e5ef9254e88a572ae22e572bccf26c49761bdec",
+					"result": "exact-match",
+					"path": "public/apple-touch-icon.png",
+					"expectedSha256": "2071c926f3b1ec7968d1d5eb3e5ef9254e88a572ae22e572bccf26c49761bdec"
+				},
+				{
+					"url": "https://matrix.hexly.ai/opengraph-image.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 372605,
+					"sha256": "e41c3c713b0203cd62c1df85595dade2351952ed8e52e633fb63983bc24f6ac1",
+					"result": "exact-match",
+					"path": "public/opengraph-image.png",
+					"expectedSha256": "e41c3c713b0203cd62c1df85595dade2351952ed8e52e633fb63983bc24f6ac1"
+				}
+			],
+			"publicDocument": {
+				"url": "https://matrix.hexly.ai",
+				"status": 200,
+				"contentType": "text/html",
+				"bytes": 1670,
+				"sha256": "3a6894201cc8ebe7c92da4cf38d764df765486dd1de7267b4b8057ba5f211e80",
+				"result": "received"
+			},
+			"status": "deployed"
+		},
+		{
+			"project": "basalt",
+			"repository": "https://github.com/nocoo/basalt",
+			"sourceAdoptionCommit": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+			"publishedMainCommit": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+			"ci": {
+				"conclusion": "",
+				"createdAt": "2026-09-07T06:06:02Z",
+				"databaseId": 34089346612,
+				"headSha": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+				"jobs": [
+					{
+						"databaseId": 101639508914,
+						"name": "Package Gates & Consumers",
+						"status": "completed",
+						"conclusion": "failure",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089346612/job/101639508914",
+						"startedAt": "2026-09-07T06:06:04Z",
+						"completedAt": "2026-09-07T06:07:53Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Node",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install Playwright Chromium with system dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Build package artifacts",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Check package types",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Check package tarball",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Run publint",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Run consumer gate tailwind",
+								"status": "completed",
+								"conclusion": "failure"
+							},
+							{
+								"name": "Run consumer gate standalone",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Run consumer gate next",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Run consumer gate heavy",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Run consumer gate docs",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Validate Library and Example interactions",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Post Setup Node",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "Post Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Complete job",
+								"status": "completed",
+								"conclusion": "success"
+							}
+						]
+					},
+					{
+						"databaseId": 101639509592,
+						"name": "ci / L1+G1+G2",
+						"status": "in_progress",
+						"conclusion": "",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089346612/job/101639509592",
+						"startedAt": "2026-09-07T06:06:19Z",
+						"completedAt": "0001-01-01T00:00:00Z",
+						"steps": [
+							{
+								"name": "Set up job",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Checkout",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Setup Bun",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install dependencies",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Install extra dirs",
+								"status": "completed",
+								"conclusion": "skipped"
+							},
+							{
+								"name": "G2: Install gitleaks",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G2: Gitleaks detect",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "Pre-command",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G1: Typecheck",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "G1: Lint",
+								"status": "completed",
+								"conclusion": "success"
+							},
+							{
+								"name": "L1: Unit tests",
+								"status": "in_progress",
+								"conclusion": ""
+							},
+							{
+								"name": "Upload coverage",
+								"status": "pending",
+								"conclusion": ""
+							},
+							{
+								"name": "G2: Install osv-scanner",
+								"status": "pending",
+								"conclusion": ""
+							},
+							{
+								"name": "G2: OSV dependency scan",
+								"status": "pending",
+								"conclusion": ""
+							},
+							{
+								"name": "Post Setup Bun",
+								"status": "pending",
+								"conclusion": ""
+							},
+							{
+								"name": "Post Checkout",
+								"status": "pending",
+								"conclusion": ""
+							}
+						]
+					},
+					{
+						"databaseId": 101639509610,
+						"name": "ci / L2 API E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089346612/job/101639509610",
+						"startedAt": "2026-09-07T06:06:02Z",
+						"completedAt": "2026-09-07T06:06:18Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101639509695,
+						"name": "ci / Worker Tests",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089346612/job/101639509695",
+						"startedAt": "2026-09-07T06:06:02Z",
+						"completedAt": "2026-09-07T06:06:18Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101639509745,
+						"name": "ci / L3 Browser E2E",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089346612/job/101639509745",
+						"startedAt": "2026-09-07T06:06:02Z",
+						"completedAt": "2026-09-07T06:06:18Z",
+						"steps": []
+					}
+				],
+				"status": "in_progress",
+				"updatedAt": "2026-09-07T06:06:20Z",
+				"url": "https://github.com/nocoo/basalt/actions/runs/34089346612",
+				"workflowName": "CI"
+			},
+			"release": {
+				"conclusion": "skipped",
+				"createdAt": "2026-09-07T06:06:20Z",
+				"databaseId": 34089369385,
+				"headSha": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+				"jobs": [
+					{
+						"databaseId": 101639572750,
+						"name": "Deploy Worker (tagged)",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089369385/job/101639572750",
+						"startedAt": "2026-09-07T06:06:21Z",
+						"completedAt": "2026-09-07T06:06:20Z",
+						"steps": []
+					},
+					{
+						"databaseId": 101639598875,
+						"name": "Deploy Worker (main)",
+						"status": "completed",
+						"conclusion": "skipped",
+						"url": "https://github.com/nocoo/basalt/actions/runs/34089369385/job/101639598875",
+						"startedAt": "2026-09-07T06:06:29Z",
+						"completedAt": "2026-09-07T06:06:20Z",
+						"steps": []
+					}
+				],
+				"status": "completed",
+				"updatedAt": "2026-09-07T06:06:31Z",
+				"url": "https://github.com/nocoo/basalt/actions/runs/34089369385",
+				"workflowName": "Release"
+			},
+			"sourceAssets": [
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3445051,
+					"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+					"result": "exact-match",
+					"path": "logo.png",
+					"expectedSha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/9e226aa5c1376351ec76a659b1a33a8139892b4b/assets/brand/icon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3751552,
+					"sha256": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1",
+					"result": "exact-match",
+					"path": "assets/brand/icon.png",
+					"expectedSha256": "f6516abde3895efedbc598b1033863fa2c6bcc82f839f429bb931233dfc049a1"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/9e226aa5c1376351ec76a659b1a33a8139892b4b/assets/brand/icon-rounded.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3754162,
+					"sha256": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9",
+					"result": "exact-match",
+					"path": "assets/brand/icon-rounded.png",
+					"expectedSha256": "e0e2e63b3e0718272a699c87ecffdb18a8c37878ef7c498b68fe0fc31fcbe4d9"
+				},
+				{
+					"url": "https://raw.githubusercontent.com/nocoo/basalt/9e226aa5c1376351ec76a659b1a33a8139892b4b/assets/brand/background.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 273933,
+					"sha256": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840",
+					"result": "exact-match",
+					"path": "assets/brand/background.png",
+					"expectedSha256": "077aae4a98af19e472af7b3f874359045dad725e678bd1945b69836ea2a1c840"
+				}
+			],
+			"publicAssets": [
+				{
+					"url": "https://basaltui.com/logo-24.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1177,
+					"sha256": "d763fd7c3081018f1964e312a3bf7cb5f96f4d27a0b68e51ea22fa0b184c8922",
+					"result": "exact-match",
+					"path": "public/logo-24.png",
+					"expectedSha256": "d763fd7c3081018f1964e312a3bf7cb5f96f4d27a0b68e51ea22fa0b184c8922"
+				},
+				{
+					"url": "https://basaltui.com/logo-32.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1809,
+					"sha256": "6ce31bbd1e6fb8021585135d63b1293be87f499cd7828bb2956d9ccd51d02e09",
+					"result": "exact-match",
+					"path": "public/logo-32.png",
+					"expectedSha256": "6ce31bbd1e6fb8021585135d63b1293be87f499cd7828bb2956d9ccd51d02e09"
+				},
+				{
+					"url": "https://basaltui.com/logo-48.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 3479,
+					"sha256": "71c9f0e7f133d32ea55ddcf7a93c6eeb517a7e84a80d02cd928acb9cfb104551",
+					"result": "exact-match",
+					"path": "public/logo-48.png",
+					"expectedSha256": "71c9f0e7f133d32ea55ddcf7a93c6eeb517a7e84a80d02cd928acb9cfb104551"
+				},
+				{
+					"url": "https://basaltui.com/logo-64.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 5582,
+					"sha256": "b029916957f53dac41ece3a53b177335271dba64e399e9103759b46e47a0450f",
+					"result": "exact-match",
+					"path": "public/logo-64.png",
+					"expectedSha256": "b029916957f53dac41ece3a53b177335271dba64e399e9103759b46e47a0450f"
+				},
+				{
+					"url": "https://basaltui.com/logo-80.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 8194,
+					"sha256": "85944459689d6b172a6159c4e38583bb83471ab1063b259ff884beafbdc69bd8",
+					"result": "exact-match",
+					"path": "public/logo-80.png",
+					"expectedSha256": "85944459689d6b172a6159c4e38583bb83471ab1063b259ff884beafbdc69bd8"
+				},
+				{
+					"url": "https://basaltui.com/logo-128.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 18683,
+					"sha256": "d42b3f9915ed85dac05bc10160adca27e79bab26bd2c58a30e5755bb3c351b27",
+					"result": "exact-match",
+					"path": "public/logo-128.png",
+					"expectedSha256": "d42b3f9915ed85dac05bc10160adca27e79bab26bd2c58a30e5755bb3c351b27"
+				},
+				{
+					"url": "https://basaltui.com/logo-256.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 66488,
+					"sha256": "043640dfe1896950662f30d4f7d261dc78381954ee095b8c287cc3f280a85473",
+					"result": "exact-match",
+					"path": "public/logo-256.png",
+					"expectedSha256": "043640dfe1896950662f30d4f7d261dc78381954ee095b8c287cc3f280a85473"
+				},
+				{
+					"url": "https://basaltui.com/favicon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 1809,
+					"sha256": "6ce31bbd1e6fb8021585135d63b1293be87f499cd7828bb2956d9ccd51d02e09",
+					"result": "exact-match",
+					"path": "public/favicon.png",
+					"expectedSha256": "6ce31bbd1e6fb8021585135d63b1293be87f499cd7828bb2956d9ccd51d02e09"
+				},
+				{
+					"url": "https://basaltui.com/favicon.ico",
+					"status": 200,
+					"contentType": "image/vnd.microsoft.icon",
+					"bytes": 12788,
+					"sha256": "095379d7910373580cec90a8b127257b6d656224eea413ddf41a85597976e606",
+					"result": "exact-match",
+					"path": "public/favicon.ico",
+					"expectedSha256": "095379d7910373580cec90a8b127257b6d656224eea413ddf41a85597976e606"
+				},
+				{
+					"url": "https://basaltui.com/apple-touch-icon.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 43697,
+					"sha256": "2a20a7f764c05c6489f8e3968c45e74eb61629733636995b3ebc78900d99b8db",
+					"result": "exact-match",
+					"path": "public/apple-touch-icon.png",
+					"expectedSha256": "2a20a7f764c05c6489f8e3968c45e74eb61629733636995b3ebc78900d99b8db"
+				},
+				{
+					"url": "https://basaltui.com/opengraph-image.png",
+					"status": 200,
+					"contentType": "image/png",
+					"bytes": 354597,
+					"sha256": "18a73a972bcad64f2a470f4fa698909b293083136903fc021d3e83224610804f",
+					"result": "exact-match",
+					"path": "public/opengraph-image.png",
+					"expectedSha256": "18a73a972bcad64f2a470f4fa698909b293083136903fc021d3e83224610804f"
+				}
+			],
+			"publicDocument": {
+				"url": "https://basaltui.com",
+				"status": 200,
+				"contentType": "text/html",
+				"bytes": 2914,
+				"sha256": "41c4d9c022b1c0e9d13b8f40d44a4e71ba3635fa6cde50465608e1e9489a3cf6",
+				"result": "received"
+			},
+			"status": "awaiting-ci-or-deployment",
+			"originalLogoCommit": "8e41ff077391e76d07df786b15c655138ef58989",
+			"integrationEvidence": "basalt-release-integration.json",
+			"supersededRun": {
+				"id": 34088872848,
+				"conclusion": "cancelled",
+				"reason": "Superseded by the owner’s v2.1.0 integration on main; the old revision was not redeployed."
+			}
+		}
+	]
+}

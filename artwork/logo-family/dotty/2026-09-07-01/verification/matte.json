@@ -1,0 +1,32 @@
+{
+	"sourceSha256": "6bb29358898d47113926cf6bd398c6561122c094c636a07f263aa927ca616baa",
+	"extractionSha256": "7b454c5f58391f81ad6df14516a408b9c655246ded072bf545e60930908c70be",
+	"opaquePixelsChecked": 1773964,
+	"changedOpaquePixels": 0,
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal RGB from the native outer eight-pixel border. Exterior-connected extraction only; opaque material white is preserved. Dotty uses threshold 245 after inspecting white cells, and removes eight outside residue components totaling 131 pixels."
+	},
+	"statistics": {
+		"backgroundPixels": 2411705,
+		"foregroundPixels": 1782599,
+		"softEdgePixels": 8635,
+		"removedComponents": 8,
+		"removedComponentPixels": 131,
+		"bounds": {
+			"left": 111,
+			"top": 203,
+			"right": 1963,
+			"bottom": 1759
+		}
+	},
+	"visualInspection": "Light and dark edge previews inspected; enclosed specular highlights and internal material/architectural shadows are preserved. Dotty calibration protects opaque white checker cells; its eight removed exterior residue components are separately inspected. No global near-white deletion."
+}
