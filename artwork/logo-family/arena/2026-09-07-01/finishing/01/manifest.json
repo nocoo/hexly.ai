@@ -1,0 +1,399 @@
+{
+	"createdAt": "2026-09-07T10:11:58.034Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "5f6923caeb83d8bafe3414610bf0b30f7e7cc5783cd04caecd972c086945a39a",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "arena",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/arena.png",
+		"background": {
+			"base": "#d4c1a7",
+			"light": "#eee0c8",
+			"shade": "#bca88e",
+			"motif": "#8c7254",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907026,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Paired debate arcs",
+				"description": "Two offset dial arcs with alternating short speaking-turn marks on warm oak-toned paper.",
+				"layers": [
+					{
+						"d": "M15 140a105 105 0 1 1 210 0",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M-25 140a145 145 0 1 1 290 0",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M-75 140a195 195 0 1 1 390 0",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M760 880a105 105 0 1 1 210 0",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M720 880a145 145 0 1 1 290 0",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M670 880a195 195 0 1 1 390 0",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M784 107h45M835 139h45M784 171h45M135 836h45M186 868h45M135 900h45",
+						"tone": "motif",
+						"strokeWidth": 2
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					140,
+					114,
+					84
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					568
+				]
+			},
+			{
+				"color": [
+					140,
+					114,
+					84
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					563
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.819181,
+			"offsetAt2048": [
+				-8,
+				55
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2144160,
+		"foregroundPixels": 2050144,
+		"softEdgePixels": 12290,
+		"removedComponents": 26,
+		"removedComponentPixels": 265,
+		"bounds": {
+			"left": 33,
+			"top": 190,
+			"right": 2034,
+			"bottom": 1674
+		}
+	},
+	"placement": {
+		"scale": 0.819181,
+		"offsetAt2048": [
+			-8,
+			55
+		],
+		"bounds": {
+			"left": 204,
+			"top": 395,
+			"right": 1843,
+			"bottom": 1610
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 204.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2473,
+			"sha256": "9b076956696844229c84dc59ce8c8d8f86d7686af24dfb9d7df0c474455f999c"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 681,
+			"sha256": "b97f687364431253ce31516860ba50d763daad953ede9768a0bef5e2a2a1239a"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5281535,
+			"sha256": "dada599e0d81711b77b52034c0594c2305120cf9e1ea9c32e141f25ab2a4f244"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 64663,
+			"sha256": "9c26db1c2446ece272719df47da40f218929d5d254875bc54743731afcf4206e"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1166,
+			"sha256": "3ed10c7e5c72560b2d4438d17fa5dc9685f4a5eec2b59a48f5d8ba7480858115"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1804011,
+			"sha256": "5c7e4666c708df0ff1f7d149e73d13a5a4c3e50600943ab1c7c3c6c79843b0a2"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3658121,
+			"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 71471,
+			"sha256": "cfabc56e8e63955dd8a0780c225b4a8bf3693d59c7f04464aa536a2cb6490728"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 134550,
+			"sha256": "af3984a7c0e2198f7825765075e15ca4e0ad172224e5f820aeec747f497747a3"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 64486,
+			"sha256": "3014f228c9a7e9e20add78796cfe1a7e14c9474a928dd1c8d3219310bafdcde8"
+		},
+		{
+			"path": "exports/arena-transparent-2048.png",
+			"bytes": 3658121,
+			"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59"
+		},
+		{
+			"path": "exports/arena-icon-2048.png",
+			"bytes": 5254614,
+			"sha256": "177ee60b1c3bff747ced49864edbdbe851b56b330fee78df1a08c7c928e7f269"
+		},
+		{
+			"path": "exports/arena-rounded-2048.png",
+			"bytes": 5187184,
+			"sha256": "b7ab60b0ffa7c3af962a7edfbcfb182b8c79c94c48d567dd59cf2ba9215f993e"
+		},
+		{
+			"path": "exports/arena-transparent-1024.png",
+			"bytes": 919149,
+			"sha256": "2a520d77e1850f8ffdbd69b5519bb6caa13b8e6e87491410e7a19f86bd326ab0"
+		},
+		{
+			"path": "exports/arena-icon-1024.png",
+			"bytes": 1258654,
+			"sha256": "fe51769b1c8d336e959a159d483c98ed44df0bc2efd302a30dbdff93bd64168e"
+		},
+		{
+			"path": "exports/arena-rounded-1024.png",
+			"bytes": 1260928,
+			"sha256": "88011aec26d915f2339f46ad4bca5ed36e84198360d1658d4d0b5675e6d608a7"
+		},
+		{
+			"path": "exports/arena-transparent-512.png",
+			"bytes": 235243,
+			"sha256": "7b601884656172f06e38fd4ef0e59b36c014a4f2a0ac12d995b3bf80ac6af6ce"
+		},
+		{
+			"path": "exports/arena-icon-512.png",
+			"bytes": 350747,
+			"sha256": "8064d99e321a2b5a1e2869e29e5cd3c37e1a90bd7f6eda13398fb9eee53730bf"
+		},
+		{
+			"path": "exports/arena-rounded-512.png",
+			"bytes": 353181,
+			"sha256": "2a194b7f5aa23f9d5f2be304aa5ef2c17907239b34c905c3d1f20aab33616465"
+		},
+		{
+			"path": "exports/arena-transparent-256.png",
+			"bytes": 63084,
+			"sha256": "76474e42c19f0fe0c302a8d338ad5a08c4858c6e9d00f3a456c8dbac880833c7"
+		},
+		{
+			"path": "exports/arena-icon-256.png",
+			"bytes": 83014,
+			"sha256": "1ea2189a9bd38a9b085591d9dec704cdb4b1c90f05eb404592a0cec2004f5b70"
+		},
+		{
+			"path": "exports/arena-rounded-256.png",
+			"bytes": 86415,
+			"sha256": "12c97734f221a2e5cfb5af457605f336d4ce7173e756069fe57be09dcfb323ab"
+		},
+		{
+			"path": "exports/arena-transparent-128.png",
+			"bytes": 17703,
+			"sha256": "28735e2d923ec2e9e1590102b1601de758f23a26f7e8131d2bfc6df28055168b"
+		},
+		{
+			"path": "exports/arena-icon-128.png",
+			"bytes": 24400,
+			"sha256": "f326b8c89049bd1ee448ad331d6eb69d01d15a32241ef9b67a4e3d086b7c3021"
+		},
+		{
+			"path": "exports/arena-rounded-128.png",
+			"bytes": 26086,
+			"sha256": "1b5f81b9b1b6d37575ca9c130b782ea4ba14b0d8d40ae1c4bd0d2e5ef4f0e534"
+		},
+		{
+			"path": "exports/arena-transparent-64.png",
+			"bytes": 5301,
+			"sha256": "898c6f1d83f3847cbe7834d1cb5ece333a03b208bbe39a6f54d985d2dd332adc"
+		},
+		{
+			"path": "exports/arena-icon-64.png",
+			"bytes": 8122,
+			"sha256": "fe64d3fb95dbfbdaffc5b679456250f388af504d5e09cd85864cdea51b9b786a"
+		},
+		{
+			"path": "exports/arena-rounded-64.png",
+			"bytes": 8813,
+			"sha256": "bc6efa4d6b761dc5ab396671665900dfa1a21f2ca03000b19288607c79dea365"
+		},
+		{
+			"path": "exports/arena-transparent-48.png",
+			"bytes": 3342,
+			"sha256": "be3259bbbcda8edd104261d3e4c4b6cd9f6aed3d3f9b7aa06edfac64a71cc906"
+		},
+		{
+			"path": "exports/arena-icon-48.png",
+			"bytes": 5061,
+			"sha256": "61399484cb8e7121f272636982af07a8d1c75c6cedb536fb30be89d8d69c8072"
+		},
+		{
+			"path": "exports/arena-rounded-48.png",
+			"bytes": 5563,
+			"sha256": "51646faba078a43b2a5e3e459e1d9ba512d41ec11945b4764a53ee102a599db0"
+		},
+		{
+			"path": "exports/arena-transparent-32.png",
+			"bytes": 1777,
+			"sha256": "e236dcb85b7a2ff8dce3cf93c1cc6a1eba3f6db72879417a59b6170920194309"
+		},
+		{
+			"path": "exports/arena-icon-32.png",
+			"bytes": 2700,
+			"sha256": "83fce84c434f7f3d2a988b20823c7f134300916356c91947346b3163186530e7"
+		},
+		{
+			"path": "exports/arena-rounded-32.png",
+			"bytes": 2972,
+			"sha256": "6c5705e77d9ee681f9f46122a85d992fd8b3601c10bf824fc3070915f289285d"
+		},
+		{
+			"path": "exports/arena-transparent-24.png",
+			"bytes": 1211,
+			"sha256": "ce21f0cef4d3ad1b589ea70b979ae8fb6350a9013410e0505bb793db1517e6c5"
+		},
+		{
+			"path": "exports/arena-icon-24.png",
+			"bytes": 1737,
+			"sha256": "173c3976f9fd2d96ec25aa189ab83e755f17e5e07a1a198d2fa197449b321cef"
+		},
+		{
+			"path": "exports/arena-rounded-24.png",
+			"bytes": 1908,
+			"sha256": "e70ceddaeec3c93434c0da3827662a8cf9586b8ba8b54b2d61717b380e5cce1f"
+		},
+		{
+			"path": "exports/arena-transparent-16.png",
+			"bytes": 654,
+			"sha256": "d16539b7871cbdf2223ecb28bae1273e570e25e02d35e6dc9048f7b4c73f0a90"
+		},
+		{
+			"path": "exports/arena-icon-16.png",
+			"bytes": 929,
+			"sha256": "8f40a5bd97825c6e7316c526daaf4338171102ed5e4e59797e7aea3e18e7053c"
+		},
+		{
+			"path": "exports/arena-rounded-16.png",
+			"bytes": 998,
+			"sha256": "df91cb7c963f418727d3db5b956b209afe15c578493839a3f3d8e50e7f7bd88d"
+		},
+		{
+			"path": "exports/arena-white-2048.png",
+			"bytes": 3399026,
+			"sha256": "24ac6df9e7844d40723de2524ae46c3201060691bc56e9475a6010444f8cb2fc"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 870852,
+			"sha256": "1c6552b2c3fb52d012e2ea39501b995b2b0679d2cb0a4277af84061de0ed3280"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 865105,
+			"sha256": "75b606ad0bc0d33d61fa9ff0e7b1129a507889743a34521bbb71db2b22f23ad1"
+		}
+	]
+}

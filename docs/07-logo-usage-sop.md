@@ -115,3 +115,28 @@ Basalt’s site branding is isolated from unrelated ongoing development in the o
 The owner’s concurrent v2.1.0 release subsequently integrated Basalt’s branding at [`9e226aa5c1`](https://github.com/nocoo/basalt/commit/9e226aa5c1376351ec76a659b1a33a8139892b4b), preserving all exact masters and consumer assets. The active profile follows its verified homepage `https://basaltui.com` and current theme tokens. [Integration evidence](../artwork/logo-family/audits/2026-09-07-materials/basalt-release-integration.json) distinguishes that release from the isolated logo adoption above.
 
 The Hexly material rollout passed Quality & Deploy at [`c90bd95d7e`](https://github.com/nocoo/hexly.ai/commit/c90bd95d7eeaef4b468e23729b545ebd15c1f671). The [production audit](../artwork/logo-family/audits/2026-09-07-materials/hexly-publication.json) verifies all three individual pages, exact master and native-generation bytes, downloads, both presentation themes, transparent small marks and Refined ordering. All three source projects passed CI and deployment. Basalt’s separate v2.1.0 release completed at [`514d94892b`](https://github.com/nocoo/basalt/commit/514d94892b9f55984dcd3cda0d9408ebecfcba9b); all eleven served application and platform files match the selected corner-tower derivatives, and its recorded website theme tokens remain unchanged. [Source publication evidence](../artwork/logo-family/audits/2026-09-07-materials/source-publication.json) records those outcomes separately.
+
+## Remaining project adoption — 2026-09-07
+
+The twelve studies below replace their source repository's actual identity consumers and the Hexly catalogue together. Root `logo.png` is the exact selected transparent foreground; `assets/brand/icon.png` and `icon-rounded.png` are large presentation masters. README marks sit above existing screenshots or videos. Source `assets/brand/source.json`, role-specific derivative records and a numbered logo-usage guide document every replacement.
+
+| Project | Subject | Source commit | Native | Comparison |
+| --- | --- | --- | --- | --- |
+| pokepocket | Red-capped trainer turning with a Poké Ball | `019798f1c8` | 960 px | [/logos/pokepocket](https://hexly.ai/logos/pokepocket) |
+| dogfight | Titanium F-22 desk model caught in a banking turn | `b5ab075a96` | 2048 px | [/logos/dogfight](https://hexly.ai/logos/dogfight) |
+| pew-game | Walnut and brass prairie arcade joystick | `ee68b2dead` | 2048 px | [/logos/pew-game](https://hexly.ai/logos/pew-game) |
+| signoff-now | Petrol enamel mechanical tally counter | `51b679fba8` | 2048 px | [/logos/signoff-now](https://hexly.ai/logos/signoff-now) |
+| unseal | An opened green enamel and brass padlock | `61a55cdb43` | 2048 px | [/logos/unseal](https://hexly.ai/logos/unseal) |
+| flow | Celadon mechanical keycap with a Chinese character | `f4a9e9464d` | 2048 px | [/logos/flow](https://hexly.ai/logos/flow) |
+| arena | Walnut dual-dial chess clock | `4a9efd6690` | 2048 px | [/logos/arena](https://hexly.ai/logos/arena) |
+| echo | A brass and navy pocket compass | `59730aa033` | 2048 px | [/logos/echo](https://hexly.ai/logos/echo) |
+| deca | A midnight teal rotary desk telephone | `1f41b41255` | 2048 px | [/logos/deca](https://hexly.ai/logos/deca) |
+| runner | Emerald enamel mechanical stopwatch | `a5d7861753` | 2048 px | [/logos/runner](https://hexly.ai/logos/runner) |
+| geekhub | A folded newspaper in a forest-green reading folio | `d45713b5d3` | 2048 px | [/logos/geekhub](https://hexly.ai/logos/geekhub) |
+| ipsafe | A green network cable tester with a short patch lead | `d8a28afb9e` | 2048 px | [/logos/ipsafe](https://hexly.ai/logos/ipsafe) |
+
+PokePocket, Dogfight and Flow use PNG favicon metadata; PokePocket's two in-app header marks use its transparent character. Pew Game replaces its previous generated cowboy icon route with a static transparent PNG. Signoff and Arena replace both sidebar states; Arena also replaces the login badge and its main mark. Runner updates dashboard marks, all favicon sizes and separate square PWA sources. GeekHub replaces its existing header/login/favicons while preserving user/content feed identities. Unseal, Echo, Deca and IPSafe have no browser application brand surface; their root/logo/README/brand documentation are the relevant consumers.
+
+PokePocket is a `reference-adaptation`, not `retained-original`: the supplied JPEG is a new source, distinct from the former app favicon. Its 960 px native resolution and extraction history are preserved; 1024/2048 exports are labeled upscales. A byte-preserved original still requires exact agreement between previous source, root logo and transparent master. Do not weaken that check to accommodate an adapted illustration.
+
+[Source assets](../artwork/logo-family/audits/2026-09-07-objects/selected-studies.json), [source browser evidence](../artwork/logo-family/audits/2026-09-07-objects/source-browser.json), and [publication results](../artwork/logo-family/audits/2026-09-07-objects/source-publication.json) record installation, commit and publication as separate facts. Signoff's profile and site description are corrected to developer/Git activity analytics.

@@ -1,0 +1,449 @@
+{
+	"createdAt": "2026-09-07T10:00:12.286Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "signoff-now",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/signoff-now.png",
+		"background": {
+			"base": "#c4d2da",
+			"light": "#e5edf0",
+			"shade": "#aabfcd",
+			"motif": "#698698",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907022,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Activity ledgers",
+				"description": "Stepped tally bars, grouped count strokes and sparse ledger baselines on blue-gray paper.",
+				"layers": [
+					{
+						"d": "M60 150v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M79 159v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M98 168v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M117 177v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M136 186v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M54 194l100 -37",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M840 150v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M859 159v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M878 168v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M897 177v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M916 186v55",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M834 194l100 -37",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M35 90h954",
+						"tone": "motif",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M35 124h954",
+						"tone": "motif",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M35 886h954",
+						"tone": "motif",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M35 920h954",
+						"tone": "motif",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M72 800h64v-34h68v-51h62v-42",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					105,
+					134,
+					152
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					696
+				]
+			},
+			{
+				"color": [
+					105,
+					134,
+					152
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					691
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.874862,
+			"offsetAt2048": [
+				-15,
+				21
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2228777,
+		"foregroundPixels": 1965527,
+		"softEdgePixels": 11813,
+		"removedComponents": 26,
+		"removedComponentPixels": 237,
+		"bounds": {
+			"left": 290,
+			"top": 74,
+			"right": 1791,
+			"bottom": 1879
+		}
+	},
+	"placement": {
+		"scale": 0.874862,
+		"offsetAt2048": [
+			-15,
+			21
+		],
+		"bounds": {
+			"left": 367,
+			"top": 213,
+			"right": 1680,
+			"bottom": 1793
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 213.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3195,
+			"sha256": "f332a1783e00df33be97919e0c4f257a84b51a98c00825507bcd72fbe287f211"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 879,
+			"sha256": "84b5230a8fc218505961a5e8c535be3de4f4323e3f17d37502b33c46b8c84053"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5040531,
+			"sha256": "5c9017f664f25133f19e06c9ea8b284354bab42195355935fbcdf0f8303f8e4a"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 63171,
+			"sha256": "44f57f56ba17726b24fb4b4e540cbeffd304b128f40effb6982c8627a6a98b46"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1902,
+			"sha256": "2e834882ba75f123c3042c04fb22956f037092a1c46232d11c98fede969c906e"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1795671,
+			"sha256": "260cf65b2a27cf45d1a1f8d498d70a643e8f91ee3fdef0c1db7da559736ea189"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3963278,
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 77110,
+			"sha256": "1177625c9714782fc25535d89652c764efeef5c88daac65f39b34e839134cf16"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 132425,
+			"sha256": "30b3f51b6e005e3e86c9c41b51087dd11257ed2d83c022b4496c36a6d1fe3eca"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 67995,
+			"sha256": "f0ad5870cbe5abf0b86675bb0da66bf1aa30910f5cb3e5cad138f1f862ac422a"
+		},
+		{
+			"path": "exports/signoff-now-transparent-2048.png",
+			"bytes": 3963278,
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+		},
+		{
+			"path": "exports/signoff-now-icon-2048.png",
+			"bytes": 5537041,
+			"sha256": "b13e360b3e5ce4314d357d7fbcd287e149eba119e5d59b7722ccfae058694930"
+		},
+		{
+			"path": "exports/signoff-now-rounded-2048.png",
+			"bytes": 5468537,
+			"sha256": "90ca8a6666438b4facd4c31e9e3b8c242884ed9dd1b00e698615a2ff0e4fb518"
+		},
+		{
+			"path": "exports/signoff-now-transparent-1024.png",
+			"bytes": 1007167,
+			"sha256": "f651d21c7b38e84126acaff40d428a38e1d372a4312248174b09c877bb592da9"
+		},
+		{
+			"path": "exports/signoff-now-icon-1024.png",
+			"bytes": 1330722,
+			"sha256": "51dd4b2bd500ec49a6f4052e852cc8bf9486219f35eaf251eeb753ac49e794d9"
+		},
+		{
+			"path": "exports/signoff-now-rounded-1024.png",
+			"bytes": 1334185,
+			"sha256": "b362506a205fb8306984bdacabb6ad3fda9867a7acdb854d9801db3517fb5d67"
+		},
+		{
+			"path": "exports/signoff-now-transparent-512.png",
+			"bytes": 266458,
+			"sha256": "087d9c9e18c880f334956deff9ee713e8e076aee83bb30bee62d6debacac1792"
+		},
+		{
+			"path": "exports/signoff-now-icon-512.png",
+			"bytes": 380203,
+			"sha256": "3ef8d9401673a9d98748a7f7258ce67514584b806e00c576154b249eecc6beca"
+		},
+		{
+			"path": "exports/signoff-now-rounded-512.png",
+			"bytes": 382371,
+			"sha256": "33cd5847c4f8d8b0b10eb48084e7949f88352b3acf74697afecb0685f90ce79a"
+		},
+		{
+			"path": "exports/signoff-now-transparent-256.png",
+			"bytes": 73628,
+			"sha256": "56ff4d79cd1f6724fae38e5488e1aeb5cf37bc63d0d56cd491496ad7ed0d9120"
+		},
+		{
+			"path": "exports/signoff-now-icon-256.png",
+			"bytes": 91136,
+			"sha256": "5590367409f4a44b956b5fe362180b369969321add6e92196f9be83fc4ac8758"
+		},
+		{
+			"path": "exports/signoff-now-rounded-256.png",
+			"bytes": 94878,
+			"sha256": "da4960091ec9c66bdd6260a7928e9ac61ac1958d753bf4bebdffa13231e3a946"
+		},
+		{
+			"path": "exports/signoff-now-transparent-128.png",
+			"bytes": 20453,
+			"sha256": "281e3685a23fb240a5448ca9b4c662443b1ddec26c6cf71a7d8cf6ac09fef8bf"
+		},
+		{
+			"path": "exports/signoff-now-icon-128.png",
+			"bytes": 26811,
+			"sha256": "5573b980865579b274e8a7d241113586f836ba2297f0edaebe2ce631007620ce"
+		},
+		{
+			"path": "exports/signoff-now-rounded-128.png",
+			"bytes": 28810,
+			"sha256": "d064f5db1f3e4304833f2f79b19219b06c1d2c59e4957e3463825efa3c057467"
+		},
+		{
+			"path": "exports/signoff-now-transparent-64.png",
+			"bytes": 5908,
+			"sha256": "91ac748744520dc2cc394f0a8ca3f72945690fbf222f6158bb478895fc9c92c6"
+		},
+		{
+			"path": "exports/signoff-now-icon-64.png",
+			"bytes": 8784,
+			"sha256": "b597b3061cb53768d5affd936a5c7f88fb83884a75999f7c69c25f679723e58a"
+		},
+		{
+			"path": "exports/signoff-now-rounded-64.png",
+			"bytes": 9467,
+			"sha256": "641cb943390562a3b2e519693edd0abff6dca9bd96bf205cd7cbd82edba5d429"
+		},
+		{
+			"path": "exports/signoff-now-transparent-48.png",
+			"bytes": 3662,
+			"sha256": "a3cf8735d9f9ab52ce11595407d465ac0991572381b861a09c3f693ab22b3f2a"
+		},
+		{
+			"path": "exports/signoff-now-icon-48.png",
+			"bytes": 5355,
+			"sha256": "6499a5cddeb1701ca172ebb2d7e4df69cfe559726042bbf290d78d455ca64369"
+		},
+		{
+			"path": "exports/signoff-now-rounded-48.png",
+			"bytes": 5876,
+			"sha256": "a8cfce871807d813e5993851c74c196b3d3b7aa722fc31eabe0101883b2ea678"
+		},
+		{
+			"path": "exports/signoff-now-transparent-32.png",
+			"bytes": 1899,
+			"sha256": "2cdbaed93e9b2e22ebcf80e3dd463c563b162065a4a2d2d1a12a532599824501"
+		},
+		{
+			"path": "exports/signoff-now-icon-32.png",
+			"bytes": 2855,
+			"sha256": "9c9d2c310b67d0eec5aa52a59fc2d4838d6ec53b98b5c8275c9635ef55ce3d9f"
+		},
+		{
+			"path": "exports/signoff-now-rounded-32.png",
+			"bytes": 3085,
+			"sha256": "3a76f85f5ab8609619bc9c4a5690fc4e173a770532a37668a025864246e05e1a"
+		},
+		{
+			"path": "exports/signoff-now-transparent-24.png",
+			"bytes": 1235,
+			"sha256": "b4b7d7740aaa543c342bde7ec2f3ea0697e7f819c7339a2e6c7f24aebd1ea6d3"
+		},
+		{
+			"path": "exports/signoff-now-icon-24.png",
+			"bytes": 1803,
+			"sha256": "c53c99ad16fd48e85230d9be942048adf5ab419dcb78acd28f601d4d72121736"
+		},
+		{
+			"path": "exports/signoff-now-rounded-24.png",
+			"bytes": 1969,
+			"sha256": "553c6849d35c09d8c0f6904a88b7d41c66c082ec434bc562c61f7b184d7eab09"
+		},
+		{
+			"path": "exports/signoff-now-transparent-16.png",
+			"bytes": 702,
+			"sha256": "e0e62fefc1405f9251c3ef0b128c7f80d9813a7a9f7dfa50acd6a7dd6376c889"
+		},
+		{
+			"path": "exports/signoff-now-icon-16.png",
+			"bytes": 942,
+			"sha256": "6d06db571b8e66084ec6418c1e304151452730f457926bffd45f0e4b26b7c486"
+		},
+		{
+			"path": "exports/signoff-now-rounded-16.png",
+			"bytes": 997,
+			"sha256": "0a82e4963a828c60ad2bb0e3423fd1f516acb3febf143ddc0b4273fabe5e420a"
+		},
+		{
+			"path": "exports/signoff-now-white-2048.png",
+			"bytes": 3666257,
+			"sha256": "1b235bb369ea1bcb95d3425265a1edd6c52bcc0b16913be6f4dfb88702ab8333"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 944921,
+			"sha256": "377f116a405dacfc6494cb0a7f9f09d7b14a774950135d5f5a8d210053f7b62f"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 940788,
+			"sha256": "9a0011f8906ee24c9e26b42f72b9f413d888c34a18d6b44dc65ffe286e332254"
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"source": {
+		"path": "source/reference.jpg",
+		"sha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774",
+		"width": 960,
+		"height": 960,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Cap red",
+				"zh": "帽子红"
+			},
+			"role": "primary",
+			"color": "#f55d5c",
+			"pixel": [327, 140],
+			"rgb": [245, 93, 92],
+			"sourceSha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774"
+		},
+		{
+			"label": {
+				"en": "Ink charcoal",
+				"zh": "墨线深灰"
+			},
+			"role": "accent",
+			"color": "#2e2836",
+			"pixel": [520, 164],
+			"rgb": [46, 40, 54],
+			"sourceSha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774"
+		},
+		{
+			"label": {
+				"en": "Warm ivory",
+				"zh": "暖象牙白"
+			},
+			"role": "accent",
+			"color": "#fafafa",
+			"pixel": [450, 327],
+			"rgb": [250, 250, 250],
+			"sourceSha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774"
+		},
+		{
+			"label": {
+				"en": "Skin warmth",
+				"zh": "肤色暖光"
+			},
+			"role": "accent",
+			"color": "#fae6cd",
+			"pixel": [487, 572],
+			"rgb": [250, 230, 205],
+			"sourceSha256": "806f144dbb40ec472d07ddf6cb9cbdb79501e01565bdc3f7049fe453027fc774"
+		}
+	],
+	"presentation": {
+		"base": "#af4b4a",
+		"light": "#c67668",
+		"shade": "#913e42",
+		"motif": "#682933",
+		"pattern": "Pocket orbits",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#294138",
+		"background": "#f7f8f2",
+		"ink": "#163e34",
+		"evidence": {
+			"primary": {
+				"value": "#294138",
+				"source": "src/styles.css --ink"
+			},
+			"background": {
+				"value": "#f7f8f2",
+				"source": "src/styles.css :root background"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}

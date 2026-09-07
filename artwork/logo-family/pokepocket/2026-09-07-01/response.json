@@ -1,0 +1,8 @@
+{
+	"status": "failed",
+	"finishedAt": "2026-09-07T09:44:52.696895+00:00",
+	"elapsedSeconds": 157.69,
+	"errorType": "HTTPError",
+	"httpStatus": 400,
+	"detail": "{\n  \"error\": {\n    \"message\": \"Your request was rejected by the safety system. If you believe this is an error, contact us at Azure support ticket and include the request ID 3feee368-5edc-443d-92bb-30d6abbb32ce.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": null,\n    \"code\": \"moderation_blocked\",\n    \"moderation_details\": {\n      \"moderation_stage\": \"output\",\n      \"categories\": [\n        \"other\"\n      ]\n    }\n  }\n}"
+}

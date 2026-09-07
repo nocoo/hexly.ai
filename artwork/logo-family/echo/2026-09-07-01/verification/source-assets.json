@@ -1,0 +1,37 @@
+{
+	"repo": "/Users/nocoo/workspace/personal/echo",
+	"masters": [
+		{
+			"path": "logo.png",
+			"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"sha256": "49ad152a8f3dc35694d374bd3f176128aa073c22f4ecf73b7aa402e1c2ce6884",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"sha256": "83cc2795133f81a9870390fa197db60f66f257e00ef49e54eadd2a64f913d8ff",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		},
+		{
+			"path": "assets/brand/background.png",
+			"sha256": "b14eae13644102ae8f56efd600d5566806c37ea8813d0234877b7297fafb99b9",
+			"dimensions": [2048, 2048],
+			"matchesSelectedMaster": true
+		}
+	],
+	"derivatives": [],
+	"icoEntries": [],
+	"readmeUsesRoundedPresentation": true,
+	"consumers": [
+		"README only: this CLI/API repository has no application logo surface or browser metadata"
+	],
+	"usageGuide": "docs/08-logo-usage.md",
+	"publication": "Source installation, commit, push and deployment are separate facts; see adoption.json and the batch publication report."
+}
