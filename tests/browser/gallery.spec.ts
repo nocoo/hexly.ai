@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
 import rawProjects from "../../src/data/projects.json" with { type: "json" };
 import type { Project } from "../../src/model/project";
@@ -124,9 +125,14 @@ for (const id of projects
 				{ exact: true },
 			)
 			.click();
-		await expect(page.locator(".generation-prompt")).toContainText(
-			project.title,
+		const prompt = await readFile(
+			new URL(
+				`../../public${family.root}/${retained ? "brief" : "prompt"}.txt`,
+				import.meta.url,
+			),
+			"utf8",
 		);
+		await expect(page.locator(".generation-prompt")).toHaveText(prompt);
 		await expect(page.locator(".reference-grid")).toHaveCount(0);
 		await expect(
 			page.getByText("View the presentation references", { exact: true }),
