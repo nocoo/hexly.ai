@@ -7,7 +7,8 @@
 5. [Versioning and releases](05-release.md)
 6. [Animal logo family and versioned studies](06-logo-family.md)
 7. [Logo usage and adoption SOP](07-logo-usage-sop.md)
-8. [Project profiles](profiles/README.md)
-9. [Source snapshots](sources/README.md)
+8. [Four new project identities](08-new-project-identities.md)
+9. [Project profiles](profiles/README.md)
+10. [Source snapshots](sources/README.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

@@ -20,11 +20,11 @@ if (!frogie) throw new Error("Frogie is required as the reference identity.");
 
 describe("the imported project catalogue", () => {
 	it("includes every unique profile entry with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(66);
+		expect(projects).toHaveLength(70);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(52);
+		).toHaveLength(56);
 	});
 	it("finds projects by English, Chinese, emoji, repository name, and animal", () => {
 		for (const query of [
@@ -56,9 +56,9 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(46);
+		expect(counts.all).toBe(50);
 		expect(counts.archive).toBe(20);
-		expect(counts.games).toBe(4);
+		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);
 		expect(filterProjects(projects, "", "archive")).toEqual(
 			projects.filter((project) => project.archived),
