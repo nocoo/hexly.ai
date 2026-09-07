@@ -13,7 +13,9 @@ export function LogoArchive({
 }) {
 	const t = copy[locale];
 	const retained = family.method === "retained-original";
-	const textFile = retained ? "brief.txt" : "prompt.txt";
+	const adapted = family.method === "reference-adaptation";
+	const supplied = retained || adapted;
+	const textFile = supplied ? "brief.txt" : "prompt.txt";
 	const [prompt, setPrompt] = useState("");
 	const [failed, setFailed] = useState(false);
 	useEffect(() => {
@@ -39,8 +41,12 @@ export function LogoArchive({
 			<div className="review-section-heading">
 				<h3 id="archive-title">{t.archive}</h3>
 				<p>
-					{retained ? t.retainedArtwork : family.model} ·{" "}
-					{family.foreground.width} × {family.foreground.height}
+					{adapted
+						? t.adaptedArtwork
+						: retained
+							? t.retainedArtwork
+							: family.model}{" "}
+					· {family.foreground.width} × {family.foreground.height}
 				</p>
 			</div>
 			<div className="download-links">
@@ -50,11 +56,15 @@ export function LogoArchive({
 					[t.roundedDownload, `${family.root}/rounded.png`],
 					[t.whiteDownload, `${family.root}/white.png`],
 					[
-						retained ? t.retainedSource : t.rawDownload,
-						`${family.root}/${retained ? "source" : "raw"}.png`,
+						adapted
+							? t.adaptedSource
+							: retained
+								? t.retainedSource
+								: t.rawDownload,
+						`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : "raw.png"}`,
 					],
 					[
-						retained ? t.briefDownload : t.promptDownload,
+						supplied ? t.briefDownload : t.promptDownload,
 						`${family.root}/${textFile}`,
 					],
 				].map(([label, href]) => (
@@ -73,13 +83,13 @@ export function LogoArchive({
 				))}
 			</div>
 			<details>
-				<summary>{retained ? t.briefTitle : t.promptTitle}</summary>
+				<summary>{supplied ? t.briefTitle : t.promptTitle}</summary>
 				<pre className="generation-prompt">
 					{failed
-						? retained
+						? supplied
 							? t.briefFailed
 							: t.promptFailed
-						: prompt || (retained ? t.briefLoading : t.promptLoading)}
+						: prompt || (supplied ? t.briefLoading : t.promptLoading)}
 				</pre>
 			</details>
 			<a

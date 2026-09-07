@@ -471,18 +471,21 @@ const run = path.resolve(runArgument);
 const settingsBytes = await readFile(path.join(run, "presentation.json"));
 const settings = JSON.parse(settingsBytes);
 const retained = settings.sourceMode === "retained-transparent";
-const sourceRecordName = retained ? "source.json" : "response.json";
+const adapted = settings.sourceMode === "prepared-transparent";
+const supplied = retained || adapted;
+const sourceRecordName = supplied ? "source.json" : "response.json";
 const sourceRecordBytes = await readFile(path.join(run, sourceRecordName));
 const sourceRecord = JSON.parse(sourceRecordBytes);
 if (
-	retained
-		? sourceRecord.kind !== "retained-original" ||
+	supplied
+		? sourceRecord.kind !==
+				(adapted ? "reference-adaptation" : "retained-original") ||
 			sourceRecord.generationCalls !== 0
 		: sourceRecord.status !== "succeeded"
 )
 	throw new Error("A recorded original or successful generation is required.");
-const source = retained ? sourceRecord.artwork : sourceRecord.output;
-const reviewName = retained ? "source-review.json" : "raw-review.json";
+const source = supplied ? sourceRecord.artwork : sourceRecord.output;
+const reviewName = supplied ? "source-review.json" : "raw-review.json";
 const reviewBytes = await readFile(path.join(run, reviewName));
 const review = JSON.parse(reviewBytes);
 if (review.status !== "approved" || review.imageSha256 !== source.sha256)
@@ -492,6 +495,14 @@ if (review.status !== "approved" || review.imageSha256 !== source.sha256)
 const sourceBytes = await readFile(path.join(run, source.path));
 if (sha256(sourceBytes) !== source.sha256)
 	throw new Error("Source artwork differs from its recorded hash.");
+if (adapted) {
+	const reference = sourceRecord.reference;
+	if (!reference?.path || !reference.sha256)
+		throw new Error("A prepared illustration requires its original reference.");
+	const bytes = await readFile(path.join(run, reference.path));
+	if (sha256(bytes) !== reference.sha256)
+		throw new Error("Illustration reference differs from its recorded hash.");
+}
 const destination = path.join(run, "finishing", pass);
 try {
 	await stat(destination);
@@ -511,14 +522,15 @@ let protection = null;
 let foreground;
 let alpha;
 let statistics;
-if (retained) {
+if (supplied) {
 	const metadata = await sharp(sourceBytes).metadata();
 	if (!metadata.hasAlpha || metadata.format !== "png")
 		throw new Error("Retained artwork must be an existing transparent PNG.");
 	if (
-		(settings.framing?.scale ?? 1) !== 1 ||
-		(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0) ||
-		settings.framing?.continuation
+		retained &&
+		((settings.framing?.scale ?? 1) !== 1 ||
+			(settings.framing?.offsetAt2048 ?? []).some((value) => value !== 0) ||
+			settings.framing?.continuation)
 	)
 		throw new Error("A retained original cannot be repositioned or redrawn.");
 	foreground = sourceBytes;
@@ -564,7 +576,7 @@ async function save(name, bytes) {
 }
 await save("settings.json", settingsBytes);
 await save(reviewName, reviewBytes);
-if (retained) await save(sourceRecordName, sourceRecordBytes);
+if (supplied) await save(sourceRecordName, sourceRecordBytes);
 await save("tool-snapshot.mjs", await readFile(new URL(import.meta.url)));
 if (protection)
 	await save(
@@ -747,10 +759,10 @@ const rounded = await sharp(square)
 for (const size of settings.exportSizes) {
 	if (
 		size > width &&
-		!(retained && settings.upscaledExportSizes?.includes(size))
+		!(supplied && settings.upscaledExportSizes?.includes(size))
 	)
 		throw new Error(
-			"Upscaled exports require an explicit retained-original record.",
+			"Upscaled exports require an explicit supplied-artwork record.",
 		);
 	for (const [kind, bytes] of [
 		["transparent", placedForeground],
@@ -800,9 +812,11 @@ await save(
 					width,
 					height,
 				},
-				method: retained
-					? "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing."
-					: "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+				method: adapted
+					? "Transparent illustration prepared from an archived supplied reference. Native extraction and its derivation are recorded in source.json; uniform placement and explicit upscale exports do not add native detail. Background and shadow layers are separate."
+					: retained
+						? "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing."
+						: "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
 				...(retained
 					? {
 							generationCalls: 0,
