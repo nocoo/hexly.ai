@@ -20,17 +20,17 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🐦‍⬛ Raven](14-raven.md) | Adopted family | #6341c8 | #eeeff2 |
 | [🦇 Bat](15-bat.md) | Adopted family | #df497b | #eeeff2 |
 | [🎶 Lyre](16-lyre.md) | Adopted family | #883720 | #eeeff2 |
-| [🎮 Poké Pocket](17-pokepocket.md) | Original asset | #294138 | #f7f8f2 |
-| [✈️ Dogfight](18-dogfight.md) | Original asset | #c0e9dc | #101c27 |
+| [🎮 Poké Pocket](17-pokepocket.md) | Adopted family | #294138 | #f7f8f2 |
+| [✈️ Dogfight](18-dogfight.md) | Adopted family | #c0e9dc | #101c27 |
 | [🧸 Gaga](19-gaga.md) | Adopted family | #4c5342 | #f3f0e8 |
-| [🤠 Pew Game](20-pew-game.md) | Profile emoji | #755942 | #111111 |
+| [🤠 Pew Game](20-pew-game.md) | Adopted family | #583b2c | #111111 |
 | [🐔 Rooster](21-rooster.md) | Adopted family | #ba7522 | transparent |
 | [🐍 Snaky](22-snaky.md) | Adopted family | #8bbc3f | transparent |
-| [✍️ signoff.now](23-signoff-now.md) | Profile emoji | #00a4f0 | #edf0f2 |
-| [🔓 Unseal](24-unseal.md) | Profile emoji | #94935f | transparent |
-| [🌊 Flow](25-flow.md) | Original asset | #171717 | #ffffff |
+| [✍️ signoff.now](23-signoff-now.md) | Adopted family | #00a4f0 | #edf0f2 |
+| [🔓 Unseal](24-unseal.md) | Adopted family | #4e5b4b | #bdcebd |
+| [🌊 Flow](25-flow.md) | Adopted family | #171717 | #ffffff |
 | [🔔 Codo](26-codo.md) | Adopted family | #349078 | transparent |
-| [🏟️ Arena](27-arena.md) | Profile emoji | #7430e8 | #eeeff2 |
+| [🏟️ Arena](27-arena.md) | Adopted family | #7430e8 | #eeeff2 |
 | [🦉 Owl](28-owl.md) | Adopted family | #93816a | transparent |
 | [🦋 Xray](29-xray.md) | Adopted family | #3653e2 | #eeeff2 |
 | [🐬 R2Shot](30-r2shot.md) | Adopted family | #24c4bd | #ffffff |
@@ -42,14 +42,14 @@ All 66 unique entries from the GitHub profile are represented. Project metadata 
 | [🎨 Basalt](36-basalt.md) | Adopted family | #0a6099 | #eeeff2 |
 | [🛡️ Surety](37-surety.md) | Adopted family | #ed511d | #eeeff2 |
 | [🧬 Life.ai](38-life-ai.md) | Adopted family | #3c83f6 | #eeeff2 |
-| [🚀 Echo](39-echo.md) | Profile emoji | #f01315 | transparent |
-| [🧭 Deca](40-deca.md) | Profile emoji | #d9060a | transparent |
-| [⏰ Runner](41-runner.md) | Original asset | #14501f | #020202 |
+| [🚀 Echo](39-echo.md) | Adopted family | #192d3e | #bfd4d7 |
+| [🧭 Deca](40-deca.md) | Adopted family | #1c323c | #c2ced6 |
+| [⏰ Runner](41-runner.md) | Adopted family | #0e442f | #c2ceb4 |
 | [🔗 Zhe](42-zhe.md) | Adopted family | #7c3bed | #eeeff2 |
-| [📰 GeekHub](43-geekhub.md) | Original asset | #1cce7b | #ffffff |
+| [📰 GeekHub](43-geekhub.md) | Adopted family | #1cce7b | #ffffff |
 | [💾 CCBackup](44-ccbackup.md) | Profile emoji | #609acf | transparent |
 | [💰 Noheir](45-noheir.md) | Adopted family | #25aff4 | #eeeff2 |
-| [🛡️ IPSafe](46-ipsafe.md) | Profile emoji | #fe9686 | transparent |
+| [🛡️ IPSafe](46-ipsafe.md) | Adopted family | #315040 | #bbd2c7 |
 | [🩺 Uptime Kuma Skill](47-uptime-kuma-skill.md) | Profile emoji | #444444 | transparent |
 | [📨 Teams Workflow](48-microsoft-teams-send-as-workflow.md) | Profile emoji | #124e80 | transparent |
 | [🖼️ Image Stitch](49-image-stitch.md) | Profile emoji | #ddb42d | transparent |

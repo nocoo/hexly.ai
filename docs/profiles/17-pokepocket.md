@@ -11,19 +11,19 @@
 - Chinese: GB / GBC / GBA 游戏收藏盘，支持浏览器游玩与本地存档。
 - Profile section: Games
 - Profile revision: `bf9076bff46ea58fba5885a9185cce8b71f9b09a`
-- Repository revision inspected: `48894ea4a1712c755d1bb60a9766a5f67bf15221`
+- Repository revision inspected: `019798f1c8fae7a6e7c0beb2368279c9980c7188`
 
 ## Current logo
 
 ![Poké Pocket source identity](../../public/logos/display/pokepocket-160.webp)
 
 - Type: Original project artwork, copied without modification
-- Subject: Existing application mark
-- [Source](https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg): `public/favicon.svg`
-- [Preserved asset](../../public/logos/originals/pokepocket.svg)
-- Original dimensions: 64 × 64
-- Original size: 352 bytes
-- SHA-256: `45996e3f23bd37f18ea26b35ee2dc3f13174da07a2aa7fcffbb1a17167d62e29`
+- Subject: Red-capped trainer turning with a Poké Ball
+- [Source](https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png): `logo.png`
+- [Preserved asset](../../public/logos/originals/pokepocket-family-2026-09-07-03-01.png)
+- Original dimensions: 960 × 960
+- Original size: 547985 bytes
+- SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -33,14 +33,64 @@
 | --- | --- | --- |
 | primary | `#294138` | src/styles.css --ink: #294138 |
 | background | `#f7f8f2` | src/styles.css :root background: #f7f8f2 |
-| accent | `#163e34` | Preserved project artwork, sampled pixel |
-| accent | `#f7f8ee` | Preserved project artwork, sampled pixel |
-| accent | `#bada88` | Preserved project artwork, sampled pixel |
+| accent | `#f55d5c` | Native pokepocket 806f144dbb40, sampled sRGB pixel (327, 140); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+| accent | `#2e2836` | Native pokepocket 806f144dbb40, sampled sRGB pixel (520, 164); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+| accent | `#fafafa` | Native pokepocket 806f144dbb40, sampled sRGB pixel (450, 327); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+| accent | `#fae6cd` | Native pokepocket 806f144dbb40, sampled sRGB pixel (487, 572); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Future family notes
+## Refined identity
 
-Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
+![Poké Pocket refined preview](../../public/logos/family/pokepocket/2026-09-07-03/01/icon-160.webp)
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. No new logo is generated in phase one.
+- Status: Adopted in the source project; updated 2026-09-07.
+- Study `2026-09-07-03`, finishing `01`
+- Refined subject: Red-capped trainer turning with a Poké Ball
+- Site path: `/logos/pokepocket`; [local gallery](https://index.dev.hexly.ai/logos/pokepocket)
+- [Static review HTML](../../artwork/logo-family/pokepocket/2026-09-07-03/review.html)
+- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pokepocket/2026-09-07-03)
+- [Transparent foreground](../../public/logos/family/pokepocket/2026-09-07-03/01/transparent.png); SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
+- [Square icon](../../public/logos/family/pokepocket/2026-09-07-03/01/icon.png), [rounded icon](../../public/logos/family/pokepocket/2026-09-07-03/01/rounded.png), [white version](../../public/logos/family/pokepocket/2026-09-07-03/01/white.png)
+- [Original illustration](../../public/logos/family/pokepocket/2026-09-07-03/01/source.jpg), [presentation brief](../../public/logos/family/pokepocket/2026-09-07-03/01/brief.txt), [public asset checksums](../../public/logos/family/pokepocket/2026-09-07-03/01/manifest.json)
+- [Previous original](../../public/logos/originals/pokepocket.svg), copied from [its immutable source](https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg)
+- Previous SHA-256: `45996e3f23bd37f18ea26b35ee2dc3f13174da07a2aa7fcffbb1a17167d62e29`
+- The owner-supplied illustration is extracted and uniformly reframed at native 960 × 960. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 960 px are explicitly recorded upscales; the native master retains its recorded resolution.
+- Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
+
+### Refined palette
+
+| Role | Value | Evidence |
+| --- | --- | --- |
+| background | `#af4b4a` | Adopted Poké Pocket presentation, 2026-09-07-03/01; background.base in archived settings.json |
+| primary | `#f55d5c` | Native pokepocket 806f144dbb40, sampled sRGB pixel (327, 140); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+| accent | `#2e2836` | Native pokepocket 806f144dbb40, sampled sRGB pixel (520, 164); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+| accent | `#fafafa` | Native pokepocket 806f144dbb40, sampled sRGB pixel (450, 327); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+| accent | `#fae6cd` | Native pokepocket 806f144dbb40, sampled sRGB pixel (487, 572); artwork/logo-family/pokepocket/2026-09-07-03/palette.json |
+
+### A backward glance
+
+The supplied trainer turns toward the viewer with a complete raised ball beside the face. One uniform inset protects the cap and fingers while the lower jacket and forearm enter naturally through the frame.
+
+参考人物回头看向观者，完整举球动作紧邻脸部。整体等比缩放为帽子和手指留白，下方外套与前臂自然延伸出取景框。
+
+### The original illustration
+
+The supplied 960 px illustration retains its red cap, charcoal ink contours, ivory clothing and calm expression. Extraction removes only the beige field; larger exports are explicitly resampled.
+
+保留 960 像素原插画的红帽、深色墨线、象牙色衣服与平静表情；提取时只去除米色底，较大尺寸明确标注为放大导出。
+
+### Pocket orbits
+
+Offset interrupted ball orbits and short curved seams, impressed into a warm vermilion paper field. The field, grain and contact shadow are independent of transparent app marks.
+
+朱红纸面上的偏心球体轨道与弧形接缝，呼应口袋里的冒险。 底色、颗粒与接触阴影均独立于透明应用标记。
+
+Small-size observation: At 128/64 px, the red cap, face and raised red-white ball remain clear. At 32/24/16 px, the compact silhouette and dominant colors carry recognition; fine material detail, printed marks and background lines naturally merge. Native source: 960 px; 1024/2048 exports are resampling, not new detail.
+
+## Further refinements
+
+Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset.
+
+Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.

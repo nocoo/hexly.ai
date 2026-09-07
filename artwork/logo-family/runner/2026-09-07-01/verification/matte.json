@@ -1,0 +1,34 @@
+{
+	"sourceSha256": "d52f1b25e37de86f00be2902408597b743867e4435d4b505aa1c4bb11ef1fa5c",
+	"extractionSha256": "fabded615234d06ab9f3746b61ef93bd06159323ceed1448477b96a7acd7cccb",
+	"opaquePixelsChecked": 2248531,
+	"changedOpaquePixels": 0,
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"backgroundSeedsAt2048": [[1703, 316], [1384, 275]],
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+	},
+	"statistics": {
+		"backgroundPixels": 1932440,
+		"foregroundPixels": 2261864,
+		"softEdgePixels": 13333,
+		"removedComponents": 9,
+		"removedComponentPixels": 149,
+		"bounds": {
+			"left": 153,
+			"top": 64,
+			"right": 1899,
+			"bottom": 1919
+		}
+	},
+	"inspection": "Transparent light/dark specimens and rounded presentation inspected. White/ivory physical surfaces, metal reflections, interior recesses and opaque printed details preserved. Enclosed background seeds are explicitly recorded where used."
+}

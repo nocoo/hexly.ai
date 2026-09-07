@@ -1,0 +1,73 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "6535caedb328983ddebee550be9a1da65fd248743130d031e39a6108339ad5b9",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Forest leather",
+				"zh": "森林绿皮革"
+			},
+			"role": "primary",
+			"color": "#1e3a2c",
+			"pixel": [831, 332],
+			"rgb": [30, 58, 44],
+			"sourceSha256": "6535caedb328983ddebee550be9a1da65fd248743130d031e39a6108339ad5b9"
+		},
+		{
+			"label": {
+				"en": "Ivory newsprint",
+				"zh": "象牙色报纸"
+			},
+			"role": "accent",
+			"color": "#dacdb1",
+			"pixel": [1613, 1224],
+			"rgb": [218, 205, 177],
+			"sourceSha256": "6535caedb328983ddebee550be9a1da65fd248743130d031e39a6108339ad5b9"
+		},
+		{
+			"label": {
+				"en": "Copper clip",
+				"zh": "铜夹"
+			},
+			"role": "accent",
+			"color": "#b37d58",
+			"pixel": [1668, 374],
+			"rgb": [179, 125, 88],
+			"sourceSha256": "6535caedb328983ddebee550be9a1da65fd248743130d031e39a6108339ad5b9"
+		}
+	],
+	"presentation": {
+		"base": "#d0d3bb",
+		"light": "#e8ead6",
+		"shade": "#b7bea2",
+		"motif": "#85916d",
+		"pattern": "Collected columns",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#1cce7b",
+		"background": "#ffffff",
+		"ink": "#0f1729",
+		"evidence": {
+			"background": {
+				"value": "0 0% 100%",
+				"source": "src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "222 47% 11%",
+				"source": "src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "152 76% 46%",
+				"source": "src/app/globals.css --primary"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}

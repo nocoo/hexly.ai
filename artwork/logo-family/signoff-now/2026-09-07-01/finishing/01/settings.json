@@ -1,0 +1,145 @@
+{
+	"project": "signoff-now",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/signoff-now.png",
+	"background": {
+		"base": "#c4d2da",
+		"light": "#e5edf0",
+		"shade": "#aabfcd",
+		"motif": "#698698",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907022,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Activity ledgers",
+			"description": "Stepped tally bars, grouped count strokes and sparse ledger baselines on blue-gray paper.",
+			"layers": [
+				{
+					"d": "M60 150v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M79 159v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M98 168v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M117 177v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M136 186v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M54 194l100 -37",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M840 150v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M859 159v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M878 168v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M897 177v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M916 186v55",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M834 194l100 -37",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M35 90h954",
+					"tone": "motif",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M35 124h954",
+					"tone": "motif",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M35 886h954",
+					"tone": "motif",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M35 920h954",
+					"tone": "motif",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M72 800h64v-34h68v-51h62v-42",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [105, 134, 152],
+			"opacity": 0.25,
+			"blurAt2048": 66,
+			"projectionScale": [0.94, 0.3],
+			"offsetAt2048": [20, 696]
+		},
+		{
+			"color": [105, 134, 152],
+			"opacity": 0.17,
+			"blurAt2048": 28,
+			"projectionScale": [0.78, 0.17],
+			"offsetAt2048": [6, 691]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.874862,
+		"offsetAt2048": [-15, 21],
+		"intentionalEdges": [],
+		"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+		"minimumClearanceAt2048": 128
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+	}
+}

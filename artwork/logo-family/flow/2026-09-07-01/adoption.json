@@ -1,0 +1,44 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"method": "generated",
+	"study": "flow/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/flow",
+	"sourceCommit": "f4a9e9464d64184b793240adff182e08c04997e1",
+	"masters": {
+		"logo.png": {
+			"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23",
+			"source": "artwork/logo-family/flow/2026-09-07-01/finishing/01/exports/flow-transparent-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "ff8aa8ea1a05c952bfeec2134cd8875f786969c0f0723b47deb45fc70491d2c5",
+			"source": "artwork/logo-family/flow/2026-09-07-01/finishing/01/exports/flow-icon-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "64a74bcca98938f411ab9a510b56cf06e86e397104003e2346347ad94d37f395",
+			"source": "artwork/logo-family/flow/2026-09-07-01/finishing/01/exports/flow-rounded-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "4741a5ab12a3fd64dd13eded90894fc1eeddce7ac0f3c43735f070dabd80280b",
+			"source": "artwork/logo-family/flow/2026-09-07-01/finishing/01/background.png",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/docs/01-logo-usage.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/flow",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/flow/2026-09-07-01/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-objects/source-publication.json",
+		"note": "Source installation, commit, push, and deployment are verified separately in the batch publication record."
+	}
+}

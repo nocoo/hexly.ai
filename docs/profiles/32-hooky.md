@@ -55,7 +55,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - [Previous original](../../public/logos/originals/hooky.png), copied from [its immutable source](https://github.com/nocoo/hooky/blob/fadcde05a823356775a9c27005a701d6d107e955/assets/hooky-max.png)
 - Previous SHA-256: `7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62`
 - Original artwork retained byte-for-byte at native 900 × 900. Zero image-generation calls; only background, grain, and shadow layers were composed.
-- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 900 px are explicitly recorded upscales; the native transparent master is unchanged.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 900 px are explicitly recorded upscales; the native master retains its recorded resolution.
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
 ### Refined palette

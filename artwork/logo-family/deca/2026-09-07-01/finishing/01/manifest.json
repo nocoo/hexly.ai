@@ -1,0 +1,390 @@
+{
+	"createdAt": "2026-09-07T10:12:02.425Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "5be6d36eea8352e312d65cd0a77832d46630625320781c79c6e0a97e772d789f",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "deca",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/deca.png",
+		"background": {
+			"base": "#c2ced6",
+			"light": "#e0e9ed",
+			"shade": "#a8bdc7",
+			"motif": "#698594",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907039,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Switchboard paths",
+				"description": "Three rounded switchboard routing paths with discrete paired terminals in cool blue-gray paper.",
+				"layers": [
+					{
+						"d": "M-20 72H80q40 0 40 40V760q0 40 40 40H1060",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M-20 120H128q40 0 40 40V715q0 40 40 40H1060",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M-20 168H176q40 0 40 40V670q0 40 40 40H1060",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M822 55h22v22h-22ZM867 100h22v22h-22ZM912 145h22v22h-22Z",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					105,
+					133,
+					148
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					628
+				]
+			},
+			{
+				"color": [
+					105,
+					133,
+					148
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					623
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.876537,
+			"offsetAt2048": [
+				7,
+				22
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"backgroundSeedsAt2048": [
+				[
+					515,
+					806
+				]
+			],
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2417878,
+		"foregroundPixels": 1776426,
+		"softEdgePixels": 16521,
+		"removedComponents": 18,
+		"removedComponentPixels": 290,
+		"bounds": {
+			"left": 80,
+			"top": 213,
+			"right": 1950,
+			"bottom": 1738
+		}
+	},
+	"placement": {
+		"scale": 0.876537,
+		"offsetAt2048": [
+			7,
+			22
+		],
+		"bounds": {
+			"left": 203,
+			"top": 334,
+			"right": 1842,
+			"bottom": 1671
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 203.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2252,
+			"sha256": "9c4e4338ab7036333b5e6b0c32137e1dbf89d5628f25756f03bec2f13c2d4187"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 699,
+			"sha256": "12cf41f54e4c17c6b571d6606dc08d8cfe7661d0ce89ad99d746d4da45065d5a"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4648955,
+			"sha256": "4ba252ea1da9c9ee8a90bb7470d43ebe11197baede5caad56ad85170906e8225"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 84859,
+			"sha256": "bcfef44b2e747b6df19fd8fe56ecfbbbe187d976bd8f153b1b8ef09b904dc870"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 889,
+			"sha256": "ed745733fcdfe06b0fc68f91d5455f7478cff708c347349bc9033fd9232079b1"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1800260,
+			"sha256": "d9c313fb5691bf1e3fa1e6b1aaacc0b70461cc630654cd23398c09066c6655c5"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3665035,
+			"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 101502,
+			"sha256": "fc08670639a350def086c19448b8f93b9c3763b6e39a955ef304d9b81ee0ecbd"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 184031,
+			"sha256": "0d0ef64296e148ce2fd7800b117e5d3d714360771ca7564009d09be944de0dfd"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 91203,
+			"sha256": "682669790ebb211661fe1867c100f6704f9e174bed15b2e7bae9b12f5b84cfb0"
+		},
+		{
+			"path": "exports/deca-transparent-2048.png",
+			"bytes": 3665035,
+			"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+		},
+		{
+			"path": "exports/deca-icon-2048.png",
+			"bytes": 5358411,
+			"sha256": "b6281bdc5ac357a99f05bf4579530b71365aaa7751d1b633694e0700463e178d"
+		},
+		{
+			"path": "exports/deca-rounded-2048.png",
+			"bytes": 5291500,
+			"sha256": "f01d5f3278c4811a1ac4e1d92092fc410cf02e8d953356b361c1a532e24923af"
+		},
+		{
+			"path": "exports/deca-transparent-1024.png",
+			"bytes": 928547,
+			"sha256": "1dba476efa9e3bb6d1c21d934d74dd9bed2b360038096862cab45f4494cf17f9"
+		},
+		{
+			"path": "exports/deca-icon-1024.png",
+			"bytes": 1293679,
+			"sha256": "e509e1707402b006575fc81a1faabdf730605b173190e74d437536071bc28958"
+		},
+		{
+			"path": "exports/deca-rounded-1024.png",
+			"bytes": 1297048,
+			"sha256": "6e3a33c866616872092db744331e02827173e6ff62833ca713f978c70d1a4cbe"
+		},
+		{
+			"path": "exports/deca-transparent-512.png",
+			"bytes": 244998,
+			"sha256": "bdd51361cd3998f0719e035c18affb7dc878dc749fc1ebac3e77c9684addac3b"
+		},
+		{
+			"path": "exports/deca-icon-512.png",
+			"bytes": 369268,
+			"sha256": "344c2c25cd1ea4fe5eef887896846add3cf6e95d0921072e3da646df4a3de607"
+		},
+		{
+			"path": "exports/deca-rounded-512.png",
+			"bytes": 371147,
+			"sha256": "1be4cb48df2eb941b888018e7c564dd19003d1f1e56f6e0f6620ffd45fef0d8b"
+		},
+		{
+			"path": "exports/deca-transparent-256.png",
+			"bytes": 68362,
+			"sha256": "09ec19100076ac3d359021892aaf27f842a1b62f6dea33529102049feb89f39f"
+		},
+		{
+			"path": "exports/deca-icon-256.png",
+			"bytes": 90265,
+			"sha256": "240ff1fecebbede18744f260718fa5766a5c08dc49c4d443ff8dd8b660998306"
+		},
+		{
+			"path": "exports/deca-rounded-256.png",
+			"bytes": 94175,
+			"sha256": "b884ebc60cc1c64c355025f35c81123a3ec1f8635c6038f9ce1d8984e8ebcfe8"
+		},
+		{
+			"path": "exports/deca-transparent-128.png",
+			"bytes": 19386,
+			"sha256": "25341c0cda055f600706b8cd833de36de4838cd75a7442238e9f7ef5c605f6dc"
+		},
+		{
+			"path": "exports/deca-icon-128.png",
+			"bytes": 27380,
+			"sha256": "e7a8598dedb83487aa31d23bba210a470b57dd0d8b4a15c2e29f5ffc013e0a3d"
+		},
+		{
+			"path": "exports/deca-rounded-128.png",
+			"bytes": 29331,
+			"sha256": "98e34b6d173db850aa22ac075726772c36ab07fb94e93c013e9835e267d72f06"
+		},
+		{
+			"path": "exports/deca-transparent-64.png",
+			"bytes": 5754,
+			"sha256": "65947e08a506fc2146ec5a0676f68b0a2132a54e71fa7fe82d3f2d9a83b2ad6f"
+		},
+		{
+			"path": "exports/deca-icon-64.png",
+			"bytes": 8984,
+			"sha256": "029a6bd3dd863bdbd35f976474a7ab59d8da1a69caf14dcd5e37ed4fe25bc7fd"
+		},
+		{
+			"path": "exports/deca-rounded-64.png",
+			"bytes": 9661,
+			"sha256": "ab534adf7c399520e7b3815c7c6ab36858887008cd7be4d94e0909cea5846bf1"
+		},
+		{
+			"path": "exports/deca-transparent-48.png",
+			"bytes": 3542,
+			"sha256": "1c174621c979b74deb0edd7b30714f938a564c7d5c6fd08b07b1927d507286aa"
+		},
+		{
+			"path": "exports/deca-icon-48.png",
+			"bytes": 5470,
+			"sha256": "813b295b708cdce533ce7f6e9b7b59d6ec55531e4546c28af18337a83fbfc538"
+		},
+		{
+			"path": "exports/deca-rounded-48.png",
+			"bytes": 5945,
+			"sha256": "87fe475b1d102d3f1cef4d2b62ad80442f39f691c829df56eff1d636af6347e8"
+		},
+		{
+			"path": "exports/deca-transparent-32.png",
+			"bytes": 1838,
+			"sha256": "32ce152325de54fa06499aedbe108878b27649088ec8478457cdeb9a74a199ed"
+		},
+		{
+			"path": "exports/deca-icon-32.png",
+			"bytes": 2845,
+			"sha256": "1dbd9c56ec55d204b0f326266487b88eee97470e1615b43058f7030cfcd9ee12"
+		},
+		{
+			"path": "exports/deca-rounded-32.png",
+			"bytes": 3060,
+			"sha256": "bf6c169d3989216b285967f3033cef773a5fab9f710757c7b988596227b57aa7"
+		},
+		{
+			"path": "exports/deca-transparent-24.png",
+			"bytes": 1207,
+			"sha256": "bf2d6fd8dcd3d10aa4c97ccb21d564cec6b330eec10d8ffaf79373db2ddcb9f6"
+		},
+		{
+			"path": "exports/deca-icon-24.png",
+			"bytes": 1823,
+			"sha256": "584f459fb2a3b116d40ac60614b5cc027384b252bb34427121d75b6b2a4b08c0"
+		},
+		{
+			"path": "exports/deca-rounded-24.png",
+			"bytes": 1969,
+			"sha256": "71f4357b9278389a0bdbf4f18de46bbf35c4ba7d592d95b5b51fdf98a2e52c51"
+		},
+		{
+			"path": "exports/deca-transparent-16.png",
+			"bytes": 692,
+			"sha256": "8aef96586ecf82dd965147081ed2f19182c425f520b970cb9afbff37d79de4dc"
+		},
+		{
+			"path": "exports/deca-icon-16.png",
+			"bytes": 958,
+			"sha256": "6ed134b953d7614a76aad9b3dd8d05bf42382870e8337a0b6d21565173ec5e1d"
+		},
+		{
+			"path": "exports/deca-rounded-16.png",
+			"bytes": 1010,
+			"sha256": "182583db66fdfde211fa9c1f2ed1ba44f8ad9e366895a5c769de9cca1ed683db"
+		},
+		{
+			"path": "exports/deca-white-2048.png",
+			"bytes": 3380526,
+			"sha256": "5858e58b943a5f506b878bf478701e51b1d3f5fa0c9354636dbd3285098e96f4"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 873613,
+			"sha256": "37564637b57648e018620caec708d320696acb261cb8efe2bf0e53b582a6a32e"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 863887,
+			"sha256": "2efc1d7434e120af731c2cd4650761f4f9e8a7d2a4ccb0a63ce1b8570a0f852e"
+		}
+	]
+}

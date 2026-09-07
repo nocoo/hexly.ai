@@ -89,6 +89,6 @@ Small-size observation: At 128/64 px the checker rhythm, rounded thickness and h
 
 ## Further refinements
 
-This is an owner-directed material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct pale engineering presentation. The animal-series drawing and accessory rules do not apply.
+This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply.
 
 Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.

@@ -1,0 +1,73 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "5f6923caeb83d8bafe3414610bf0b30f7e7cc5783cd04caecd972c086945a39a",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Walnut case",
+				"zh": "胡桃木机身"
+			},
+			"role": "primary",
+			"color": "#67442b",
+			"pixel": [1307, 528],
+			"rgb": [103, 68, 43],
+			"sourceSha256": "5f6923caeb83d8bafe3414610bf0b30f7e7cc5783cd04caecd972c086945a39a"
+		},
+		{
+			"label": {
+				"en": "Ivory dials",
+				"zh": "象牙色钟盘"
+			},
+			"role": "accent",
+			"color": "#dcccaa",
+			"pixel": [580, 909],
+			"rgb": [220, 204, 170],
+			"sourceSha256": "5f6923caeb83d8bafe3414610bf0b30f7e7cc5783cd04caecd972c086945a39a"
+		},
+		{
+			"label": {
+				"en": "Brass controls",
+				"zh": "黄铜按钮"
+			},
+			"role": "accent",
+			"color": "#947544",
+			"pixel": [1498, 257],
+			"rgb": [148, 117, 68],
+			"sourceSha256": "5f6923caeb83d8bafe3414610bf0b30f7e7cc5783cd04caecd972c086945a39a"
+		}
+	],
+	"presentation": {
+		"base": "#d4c1a7",
+		"light": "#eee0c8",
+		"shade": "#bca88e",
+		"motif": "#8c7254",
+		"pattern": "Paired debate arcs",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#7430e8",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f",
+		"evidence": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "packages/web/src/app/globals.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "packages/web/src/app/globals.css --foreground"
+			},
+			"primary": {
+				"value": "262 80% 55%",
+				"source": "packages/web/src/app/globals.css --primary"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}

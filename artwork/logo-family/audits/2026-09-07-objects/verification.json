@@ -1,0 +1,71 @@
+{
+	"checkedAt": "2026-09-07T11:21:01.090519+00:00",
+	"generation": {
+		"attemptedRequests": 13,
+		"successfulNativeGenerations": 11,
+		"nativeGeneratedSize": [2048, 2048],
+		"failedRequests": {
+			"pokepocket": 2
+		},
+		"adaptation": {
+			"project": "pokepocket",
+			"nativeSize": [960, 960],
+			"modelCallInSelectedStudy": false,
+			"upscaledExports": [1024, 2048]
+		}
+	},
+	"sourceAssets": {
+		"projects": 12,
+		"browserApplications": 8,
+		"cliApiOnly": 4,
+		"transparentSmallMarks": true,
+		"readmePresentation": "Separate rounded backgrounds",
+		"evidence": "source-browser.json"
+	},
+	"catalogueBrowser": {
+		"projects": 12,
+		"arrangementsPerProject": 4,
+		"completeStaticAndViteReviews": true,
+		"result": "passed",
+		"evidence": "browser-review.json"
+	},
+	"quality": {
+		"typecheck": "passed",
+		"unit": {
+			"files": 8,
+			"tests": 56,
+			"statements": 100,
+			"branches": 100,
+			"functions": 100,
+			"lines": 100,
+			"coverageScope": "Configured model, isolation and release-policy scope"
+		},
+		"http": {
+			"tests": 56,
+			"result": "passed"
+		},
+		"browser": {
+			"tests": 124,
+			"result": "passed"
+		},
+		"runOrder": "L2 HTTP completed before L3 browser started",
+		"lint": "passed"
+	},
+	"scope": {
+		"activeUnrefined": ["hexly-ai"],
+		"catalogueEntries": 66,
+		"sourceArtworkEntries": 52,
+		"activeRefined": 45,
+		"archivedAndOtherRecordsChanged": false,
+		"version": "0.2.0",
+		"releaseOrTagCreated": false
+	},
+	"assets": {
+		"sourceChecksums": 66,
+		"artworkDerivatives": 264,
+		"currentAndHistoricalPublicFamilyArchives": 49,
+		"frozenFinishingPasses": 83,
+		"result": "passed"
+	},
+	"archiveWhitespace": "The exact submitted physical-object prompt.txt files and their public copies intentionally retain the submitted trailing blank line. Git diff whitespace warnings are confined to these immutable provenance bytes; all other staged files pass git diff --check."
+}

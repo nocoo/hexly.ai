@@ -1,0 +1,420 @@
+{
+	"createdAt": "2026-09-07T10:12:08.775Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "949f4e0683eec804d9f2ff290ec0fa2f64957cb3f02c0b0234d0f4af5b0059b2",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "ipsafe",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/emoji/ipsafe.png",
+		"background": {
+			"base": "#bbd2c7",
+			"light": "#dcebe0",
+			"shade": "#9fbdae",
+			"motif": "#638c7c",
+			"grainAmplitude": 0.75,
+			"grainSeed": 60907045,
+			"motifOpacity": 0.25,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Connection lanes",
+				"description": "Paired port rectangles, guarded chevron lanes and three short status bars in quiet mint paper.",
+				"layers": [
+					{
+						"d": "M45 80h42v24H45ZM910 80h42v24h-42Z",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M45 140h42v24H45ZM910 140h42v24h-42Z",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M45 820h42v24H45ZM910 820h42v24h-42Z",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M45 880h42v24H45ZM910 880h42v24h-42Z",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M0 250l52 28 -52 28M1024 310l-52 28 52 28",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M0 350l52 28 -52 28M1024 410l-52 28 52 28",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M0 450l52 28 -52 28M1024 510l-52 28 52 28",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M0 550l52 28 -52 28M1024 610l-52 28 52 28",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M0 650l52 28 -52 28M1024 710l-52 28 52 28",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M130 920h72M220 920h72M310 920h72",
+						"tone": "motif",
+						"strokeWidth": 2.5
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					99,
+					140,
+					124
+				],
+				"opacity": 0.25,
+				"blurAt2048": 66,
+				"projectionScale": [
+					0.94,
+					0.3
+				],
+				"offsetAt2048": [
+					20,
+					696
+				]
+			},
+			{
+				"color": [
+					99,
+					140,
+					124
+				],
+				"opacity": 0.17,
+				"blurAt2048": 28,
+				"projectionScale": [
+					0.78,
+					0.17
+				],
+				"offsetAt2048": [
+					6,
+					691
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.900285,
+			"offsetAt2048": [
+				-55,
+				-13
+			],
+			"intentionalEdges": [],
+			"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+			"minimumClearanceAt2048": 128
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"backgroundSeedsAt2048": [
+				[
+					835,
+					419
+				]
+			],
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2737796,
+		"foregroundPixels": 1456508,
+		"softEdgePixels": 14228,
+		"removedComponents": 10,
+		"removedComponentPixels": 57,
+		"bounds": {
+			"left": 337,
+			"top": 139,
+			"right": 1833,
+			"bottom": 1893
+		}
+	},
+	"placement": {
+		"scale": 0.900285,
+		"offsetAt2048": [
+			-55,
+			-13
+		],
+		"bounds": {
+			"left": 350,
+			"top": 214,
+			"right": 1698,
+			"bottom": 1793
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 214.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2890,
+			"sha256": "1768f055e9cb1af4c22cefcd4eed413e8371246fa1ffcbb5f02d80871fdc774a"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 712,
+			"sha256": "402a80d88068ba9a7eed18c79fd35620edc2d54d69d4418432346c38c768318c"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 26602,
+			"sha256": "59534009ee2092b714999051c19c9e90076a9b3f8f22cce08fdfe535b9357cb8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3736626,
+			"sha256": "242de46950bf2ca2e6422fa9f436260df9fc3634680ab1d0d1a85899d320fcef"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 74594,
+			"sha256": "700c7d7e8081b7ef29d90f1cbba53e1b0eaa1d7f5ba837038331854c22ecc5b1"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1541,
+			"sha256": "f462512bc1a5ac16fac34a3b5b0b83ab8f0a00f6ef229e0c99b8194b93f7b140"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1769131,
+			"sha256": "b2c4670d39c43206ea6e61c58cbb9bd7afc1e9c3df87a51d11d0acc86ec3ae9d"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3104822,
+			"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 94837,
+			"sha256": "167cb1d38dc6d0a8948d0e48c116394ed931ae8b32536c564f3e940d8d353164"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 142575,
+			"sha256": "c5a560ccc12af45fd1f2fd6f5b4a40f7991a89ef5f179a3560254423ba2097be"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 69053,
+			"sha256": "1801e2d90d7930eea81cc1791c92d27f23a4cec0461c2e27bd8338968847c35e"
+		},
+		{
+			"path": "exports/ipsafe-transparent-2048.png",
+			"bytes": 3104822,
+			"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b"
+		},
+		{
+			"path": "exports/ipsafe-icon-2048.png",
+			"bytes": 4833456,
+			"sha256": "8cd6439c85171aeb83695f1024e1aa6a502985bd152bec3a3d6f2ca7f51f9c03"
+		},
+		{
+			"path": "exports/ipsafe-rounded-2048.png",
+			"bytes": 4764144,
+			"sha256": "4f671c319c84888a82007742a1478bafabc1766512bc7930d20b11f0e621264f"
+		},
+		{
+			"path": "exports/ipsafe-transparent-1024.png",
+			"bytes": 767954,
+			"sha256": "bdf88ef85e0733cf54ff163e876a6253d5d15dff530d81a56ff33f6465dbde55"
+		},
+		{
+			"path": "exports/ipsafe-icon-1024.png",
+			"bytes": 1118769,
+			"sha256": "1e3e0fe721ae9aa5d4f12bab19692d0ca242f7a4f96f471169b117fcdcb82e73"
+		},
+		{
+			"path": "exports/ipsafe-rounded-1024.png",
+			"bytes": 1121479,
+			"sha256": "cb226f4c6eade6e57bee7ab938faa8107197d5fee475a956b9058cfef7af30e7"
+		},
+		{
+			"path": "exports/ipsafe-transparent-512.png",
+			"bytes": 194077,
+			"sha256": "9eeea4e98b1d5d043235f1103466ef3e04e27fba4fa5260bfa51b58cc2fb023c"
+		},
+		{
+			"path": "exports/ipsafe-icon-512.png",
+			"bytes": 314848,
+			"sha256": "e19ed5370990d1a3e1907824af3bcba598cc9a5a8880edc7367444953342d009"
+		},
+		{
+			"path": "exports/ipsafe-rounded-512.png",
+			"bytes": 316938,
+			"sha256": "2b219f46444ccafceace87fc6a304e739ab793fd7a10a431f89d1f404c16da80"
+		},
+		{
+			"path": "exports/ipsafe-transparent-256.png",
+			"bytes": 52488,
+			"sha256": "96c178583f636cac3fdab6de6743aa452f63bd96f5fab9d330044b3a24c6814a"
+		},
+		{
+			"path": "exports/ipsafe-icon-256.png",
+			"bytes": 71059,
+			"sha256": "18b07213d71b4818c05323f669ea60330d842184efe706465bb65090830b5569"
+		},
+		{
+			"path": "exports/ipsafe-rounded-256.png",
+			"bytes": 74835,
+			"sha256": "8dbf263e474063f11c47683a26f551b25476550c4451b03fc006a8615c302238"
+		},
+		{
+			"path": "exports/ipsafe-transparent-128.png",
+			"bytes": 14936,
+			"sha256": "0166f7dea6ade56e859e7cf7614e0d7f198aa10936f035888438729c837dc224"
+		},
+		{
+			"path": "exports/ipsafe-icon-128.png",
+			"bytes": 21855,
+			"sha256": "0d99f13d61a112d3864442b3051afc508b0a97976333719ac51c7fd1e38cec0e"
+		},
+		{
+			"path": "exports/ipsafe-rounded-128.png",
+			"bytes": 23636,
+			"sha256": "ce6f428278dc92bf92266f91f0c31051632543855ac0cbe79a41083302fd0b37"
+		},
+		{
+			"path": "exports/ipsafe-transparent-64.png",
+			"bytes": 4510,
+			"sha256": "11dbf5ae4d10973ced79ecf4ed5ad420366041db86ef9a8fcdd1e94ff404ac55"
+		},
+		{
+			"path": "exports/ipsafe-icon-64.png",
+			"bytes": 7443,
+			"sha256": "b7d18d37c26946979b15e53f6684a941bbd518ccde4ae1bba04e94c8a9a6afae"
+		},
+		{
+			"path": "exports/ipsafe-rounded-64.png",
+			"bytes": 8157,
+			"sha256": "1125033f4d58ab4917a826d039ea1fcd3a8a37145c4b831cd778f4bb49bccdce"
+		},
+		{
+			"path": "exports/ipsafe-transparent-48.png",
+			"bytes": 2892,
+			"sha256": "eaf3c1f277c34c79d15b0375abdb836e216d3f3c9072b13fad53f2ebd68058e6"
+		},
+		{
+			"path": "exports/ipsafe-icon-48.png",
+			"bytes": 4633,
+			"sha256": "89f33e7b60e544d0e1d07627352bc26df133ef44d05d2a3ef2d2b0a7db5f13e7"
+		},
+		{
+			"path": "exports/ipsafe-rounded-48.png",
+			"bytes": 5155,
+			"sha256": "531f1e24f2b14139259939ccb439cd3407a7702ee6afd5149879b65ea2f3d137"
+		},
+		{
+			"path": "exports/ipsafe-transparent-32.png",
+			"bytes": 1565,
+			"sha256": "ab65d8b90b1ff5aa4f9ec416c056d95590498f37af07ead396090f1a94856cda"
+		},
+		{
+			"path": "exports/ipsafe-icon-32.png",
+			"bytes": 2582,
+			"sha256": "690a43ee3545aaffa0662377fcde5c47ca0b90d83c3f827fe16786666d79351e"
+		},
+		{
+			"path": "exports/ipsafe-rounded-32.png",
+			"bytes": 2815,
+			"sha256": "d63cbd58f8336ff93222897fa044f775fbbef2931c9e2029776a74c8723d7116"
+		},
+		{
+			"path": "exports/ipsafe-transparent-24.png",
+			"bytes": 1075,
+			"sha256": "be993766a34cfa85f0c569be8484d33f21b68afe1042fd54f2c5f376724fd21a"
+		},
+		{
+			"path": "exports/ipsafe-icon-24.png",
+			"bytes": 1660,
+			"sha256": "92331d79cc6b0dfbf9866994f3bdaaa9555a68f2b302fd86c29e58430eb83011"
+		},
+		{
+			"path": "exports/ipsafe-rounded-24.png",
+			"bytes": 1827,
+			"sha256": "3ad9831c55272d5fefb9eb82ac3f95cd182f38e1481c85ebb077d558db331691"
+		},
+		{
+			"path": "exports/ipsafe-transparent-16.png",
+			"bytes": 645,
+			"sha256": "98a268e794e12bec3e0cc22191d76b7498bc9bc26822be0456ddec9ad485dd05"
+		},
+		{
+			"path": "exports/ipsafe-icon-16.png",
+			"bytes": 898,
+			"sha256": "e2f9838bad88573c83ec5d3a61a0f4d64098eb3e4ca20342bf0eb87905b8fbfa"
+		},
+		{
+			"path": "exports/ipsafe-rounded-16.png",
+			"bytes": 958,
+			"sha256": "cf80eba1ca3ed20a4dd75ae90c779f05e3d413b9875b77e592d12e5b9fab2a87"
+		},
+		{
+			"path": "exports/ipsafe-white-2048.png",
+			"bytes": 2800534,
+			"sha256": "d2906de806a0c22ee8ce597dfd76893d0d401cda1eaec7a48b60f976dca49db8"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 704841,
+			"sha256": "ac71fae9f1467d384af5f112bd53e6774e89aa350ad06431ea0ed27282801074"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 704434,
+			"sha256": "3926cd04554e385109d114230f04982b8b8196b1a691c61e1eb559e4dfd24a4e"
+		}
+	]
+}

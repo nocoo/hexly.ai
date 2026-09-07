@@ -1,0 +1,886 @@
+{
+	"checkedAt": "2026-09-07T11:12:03.708Z",
+	"baseURL": "https://index.dev.hexly.ai",
+	"browser": "152.0.7977.83",
+	"projects": {
+		"pokepocket": {
+			"route": "/logos/pokepocket",
+			"staticRoute": "/artwork/logo-family/pokepocket/2026-09-07-03/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/pokepocket-site-desktop-en-light.png",
+				"screenshots/pokepocket-static-desktop-en-light.png",
+				"screenshots/pokepocket-site-mobile-en-dark.png",
+				"screenshots/pokepocket-static-mobile-en-dark.png"
+			]
+		},
+		"dogfight": {
+			"route": "/logos/dogfight",
+			"staticRoute": "/artwork/logo-family/dogfight/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/dogfight-site-desktop-en-light.png",
+				"screenshots/dogfight-static-desktop-en-light.png",
+				"screenshots/dogfight-site-mobile-en-dark.png",
+				"screenshots/dogfight-static-mobile-en-dark.png"
+			]
+		},
+		"pew-game": {
+			"route": "/logos/pew-game",
+			"staticRoute": "/artwork/logo-family/pew-game/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/pew-game-site-desktop-en-light.png",
+				"screenshots/pew-game-static-desktop-en-light.png",
+				"screenshots/pew-game-site-mobile-en-dark.png",
+				"screenshots/pew-game-static-mobile-en-dark.png"
+			]
+		},
+		"signoff-now": {
+			"route": "/logos/signoff-now",
+			"staticRoute": "/artwork/logo-family/signoff-now/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/signoff-now-site-desktop-en-light.png",
+				"screenshots/signoff-now-static-desktop-en-light.png",
+				"screenshots/signoff-now-site-mobile-en-dark.png",
+				"screenshots/signoff-now-static-mobile-en-dark.png"
+			]
+		},
+		"unseal": {
+			"route": "/logos/unseal",
+			"staticRoute": "/artwork/logo-family/unseal/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/unseal-site-desktop-en-light.png",
+				"screenshots/unseal-static-desktop-en-light.png",
+				"screenshots/unseal-site-mobile-en-dark.png",
+				"screenshots/unseal-static-mobile-en-dark.png"
+			]
+		},
+		"flow": {
+			"route": "/logos/flow",
+			"staticRoute": "/artwork/logo-family/flow/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/flow-site-desktop-en-light.png",
+				"screenshots/flow-static-desktop-en-light.png",
+				"screenshots/flow-site-mobile-en-dark.png",
+				"screenshots/flow-static-mobile-en-dark.png"
+			]
+		},
+		"arena": {
+			"route": "/logos/arena",
+			"staticRoute": "/artwork/logo-family/arena/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/arena-site-desktop-en-light.png",
+				"screenshots/arena-static-desktop-en-light.png",
+				"screenshots/arena-site-mobile-en-dark.png",
+				"screenshots/arena-static-mobile-en-dark.png"
+			]
+		},
+		"echo": {
+			"route": "/logos/echo",
+			"staticRoute": "/artwork/logo-family/echo/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/echo-site-desktop-en-light.png",
+				"screenshots/echo-static-desktop-en-light.png",
+				"screenshots/echo-site-mobile-en-dark.png",
+				"screenshots/echo-static-mobile-en-dark.png"
+			]
+		},
+		"deca": {
+			"route": "/logos/deca",
+			"staticRoute": "/artwork/logo-family/deca/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/deca-site-desktop-en-light.png",
+				"screenshots/deca-static-desktop-en-light.png",
+				"screenshots/deca-site-mobile-en-dark.png",
+				"screenshots/deca-static-mobile-en-dark.png"
+			]
+		},
+		"runner": {
+			"route": "/logos/runner",
+			"staticRoute": "/artwork/logo-family/runner/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/runner-site-desktop-en-light.png",
+				"screenshots/runner-static-desktop-en-light.png",
+				"screenshots/runner-site-mobile-en-dark.png",
+				"screenshots/runner-static-mobile-en-dark.png"
+			]
+		},
+		"geekhub": {
+			"route": "/logos/geekhub",
+			"staticRoute": "/artwork/logo-family/geekhub/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/geekhub-site-desktop-en-light.png",
+				"screenshots/geekhub-static-desktop-en-light.png",
+				"screenshots/geekhub-site-mobile-en-dark.png",
+				"screenshots/geekhub-static-mobile-en-dark.png"
+			]
+		},
+		"ipsafe": {
+			"route": "/logos/ipsafe",
+			"staticRoute": "/artwork/logo-family/ipsafe/2026-09-07-01/review.html",
+			"arrangements": [
+				{
+					"name": "desktop-en-light",
+					"width": 1440,
+					"height": 1000,
+					"locale": "en",
+					"theme": "light",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "desktop-zh-dark",
+					"width": 1440,
+					"height": 1000,
+					"locale": "zh",
+					"theme": "dark",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-en-dark",
+					"width": 390,
+					"height": 844,
+					"locale": "en",
+					"theme": "dark",
+					"capture": true,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				},
+				{
+					"name": "mobile-zh-light",
+					"width": 390,
+					"height": 844,
+					"locale": "zh",
+					"theme": "light",
+					"capture": false,
+					"result": "passed",
+					"smallMarkWidths": [32, 16, 24, 16],
+					"comparisonModes": ["icon", "transparent", "white"],
+					"runtimeErrors": []
+				}
+			],
+			"screenshots": [
+				"screenshots/ipsafe-site-desktop-en-light.png",
+				"screenshots/ipsafe-static-desktop-en-light.png",
+				"screenshots/ipsafe-site-mobile-en-dark.png",
+				"screenshots/ipsafe-static-mobile-en-dark.png"
+			]
+		}
+	},
+	"index": [
+		{
+			"query": "",
+			"order": [
+				"frogie",
+				"pew",
+				"firefly",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy",
+				"otter",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"bat",
+				"lyre",
+				"pokepocket",
+				"dogfight",
+				"gaga",
+				"pew-game",
+				"rooster",
+				"snaky",
+				"signoff-now",
+				"unseal",
+				"flow",
+				"codo",
+				"arena",
+				"owl",
+				"xray",
+				"r2shot",
+				"shrike",
+				"hooky",
+				"dotty",
+				"wooly",
+				"matrix",
+				"basalt",
+				"surety",
+				"life-ai",
+				"echo",
+				"deca",
+				"runner",
+				"zhe",
+				"geekhub",
+				"noheir",
+				"ipsafe",
+				"hexly-ai"
+			],
+			"result": "passed"
+		},
+		{
+			"query": "?sort=az",
+			"order": [
+				"arena",
+				"backy",
+				"basalt",
+				"bat",
+				"bogo",
+				"codo",
+				"deca",
+				"dogfight",
+				"dotty",
+				"dove",
+				"echo",
+				"ellie",
+				"firefly",
+				"flow",
+				"frogie",
+				"gaga",
+				"gecko",
+				"geekhub",
+				"giraffe",
+				"hooky",
+				"ipsafe",
+				"life-ai",
+				"lyre",
+				"matrix",
+				"neo",
+				"noheir",
+				"otter",
+				"owl",
+				"pew",
+				"pew-game",
+				"pika",
+				"pokepocket",
+				"r2shot",
+				"raven",
+				"rooster",
+				"runner",
+				"shrike",
+				"signoff-now",
+				"snaky",
+				"steed",
+				"surety",
+				"unseal",
+				"wooly",
+				"xray",
+				"zhe",
+				"hexly-ai"
+			],
+			"result": "passed"
+		},
+		{
+			"query": "?category=design",
+			"order": ["dotty", "matrix", "basalt", "hexly-ai"],
+			"result": "passed"
+		},
+		{
+			"query": "?category=design&sort=az",
+			"order": ["basalt", "dotty", "matrix", "hexly-ai"],
+			"result": "passed"
+		},
+		{
+			"query": "?q=AI",
+			"order": [
+				"frogie",
+				"pew",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"lyre",
+				"pokepocket",
+				"pew-game",
+				"codo",
+				"xray",
+				"shrike",
+				"wooly",
+				"surety",
+				"life-ai",
+				"deca",
+				"runner",
+				"geekhub",
+				"noheir",
+				"hexly-ai"
+			],
+			"result": "passed"
+		}
+	],
+	"universe": {
+		"sources": [
+			"/logos/family/frogie/2026-09-06-01/03/icon-1024.webp",
+			"/logos/family/pew/2026-09-06-01/04/icon-1024.webp",
+			"/logos/family/firefly/2026-09-06-10/02/icon-160.webp",
+			"/logos/family/bogo/2026-09-07-05/04/icon-160.webp",
+			"/logos/family/steed/2026-09-07-02/01/icon-160.webp",
+			"/logos/family/ellie/2026-09-07-01/01/icon-160.webp"
+		],
+		"refinedOnly": true
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"project": "arena",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/arena.png",
+	"background": {
+		"base": "#d4c1a7",
+		"light": "#eee0c8",
+		"shade": "#bca88e",
+		"motif": "#8c7254",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907026,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Paired debate arcs",
+			"description": "Two offset dial arcs with alternating short speaking-turn marks on warm oak-toned paper.",
+			"layers": [
+				{
+					"d": "M15 140a105 105 0 1 1 210 0",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M-25 140a145 145 0 1 1 290 0",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M-75 140a195 195 0 1 1 390 0",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M760 880a105 105 0 1 1 210 0",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M720 880a145 145 0 1 1 290 0",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M670 880a195 195 0 1 1 390 0",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M784 107h45M835 139h45M784 171h45M135 836h45M186 868h45M135 900h45",
+					"tone": "motif",
+					"strokeWidth": 2
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [140, 114, 84],
+			"opacity": 0.25,
+			"blurAt2048": 66,
+			"projectionScale": [0.94, 0.3],
+			"offsetAt2048": [20, 568]
+		},
+		{
+			"color": [140, 114, 84],
+			"opacity": 0.17,
+			"blurAt2048": 28,
+			"projectionScale": [0.78, 0.17],
+			"offsetAt2048": [6, 563]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.819181,
+		"offsetAt2048": [-8, 55],
+		"intentionalEdges": [],
+		"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+		"minimumClearanceAt2048": 128
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+	}
+}
