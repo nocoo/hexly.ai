@@ -1,6 +1,6 @@
 # Animal logo family
 
-The family supports both new drawings and retained-original presentations. The current nine-project batch preserves R2Shot, Hooky, Zhe, Lyre, Shrike, Wooly, Noheir, Dove, and Neo exactly, with distinct tonal backgrounds and complete individual reviews. No image-generation call was made for this batch. Source adoption and publication evidence live in the project profiles and [usage SOP](07-logo-usage-sop.md). Earlier drawings, decisions, and finishing passes remain in their own archives.
+The family supports new drawings, retained-original presentations and owner-directed physical objects. Each identity has its own background motif and complete individual review. Source adoption and publication evidence live in the project profiles and [usage SOP](07-logo-usage-sop.md). Earlier drawings, decisions, and finishing passes remain in their own archives. The newest [four-project batch](08-new-project-identities.md) is a local preview with source adoption and publication still separate.
 
 ## Reading the references
 
@@ -207,3 +207,11 @@ Actual material colors are sampled at documented opaque native pixels. Website t
 The public record distinguishes generated material artwork, byte-preserved originals, and a supplied-illustration adaptation. Each has its own complete comparison and static review, native source download, honest dimensions, palette, small-size and edge specimens. Detailed evidence lives in [the batch archive](../artwork/logo-family/audits/2026-09-07-objects/brief.md).
 
 The twelve-identity rollout passed [Quality & Deploy](https://github.com/nocoo/hexly.ai/actions/runs/34117750734) at `c76591a174a4b31d23a0653f3e9aaaaaaec8b566`. [Production evidence](../artwork/logo-family/audits/2026-09-07-objects/hexly-publication.json) verifies all twelve routes and exact asset bytes. Source CI passes for all twelve repositories; source deployment outcomes, including Dogfight’s invalid-token dependency, remain explicit in the batch publication record.
+
+## Four newly catalogued identities — 2026-09-07
+
+Clip, Fundly, DreamRO and Meowth now have complete local Refined previews. Clip follows the owner's correction back to the liked ostrich with its brown hat and one colorful feather spray; its new close viewfinder gives the brim and feathers safe space while the natural neck enters from below. Fundly is a navy-and-ivory penguin holding binoculars. Meowth is a silver-blue American Shorthair with one continuous yarn gesture. Both animals retain connected flat facets and a single multicolored interest group. DreamRO uses a physical shield, bow and arrow, sword and gemstone staff under `family.series: "material"`.
+
+Five native 2048 × 2048 Image 2 results cover the four selections and Clip's rejected mantis. Selected studies are Clip `2026-09-07-02/01`, and Fundly, DreamRO and Meowth `2026-09-07-01/02`. Each project receives distinct motif geometry, exact native palette samples, separate source UI evidence, all ten sizes, independent layers, an individual static review and `/logos/<project>` comparison. The complete route table and production history are in [the batch record](../artwork/logo-family/audits/2026-09-07-new-four/README.md).
+
+The owner delegated raw acceptance and manual site verification. These four records use `family.status: "review"`; source repositories still contain their original artwork. No publication or standalone site verification is claimed. Small application/browser specimens use the transparent foreground, while large presentations use each project's own paper field.

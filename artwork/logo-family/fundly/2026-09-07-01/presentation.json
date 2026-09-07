@@ -1,0 +1,99 @@
+{
+	"project": "fundly",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/fundly.svg",
+	"background": {
+		"base": "#9aafbb",
+		"light": "#d5e0e3",
+		"shade": "#6d8397",
+		"motif": "#425c72",
+		"grainAmplitude": 0.8,
+		"grainSeed": 6090771,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.2,
+		"pattern": {
+			"name": "Far-horizon sightlines",
+			"description": "Broad offset horizon bands open toward the penguin's gaze, with short restrained sighting ticks in the distant negative space.",
+			"layers": [
+				{
+					"d": "M-96 247C161 115 492 141 699 219L676 264C454 195 190 171-94 301Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-91 305C182 159 445 189 686 261",
+					"tone": "motif",
+					"strokeWidth": 19
+				},
+				{
+					"d": "M-95 282C173 139 451 166 695 238",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				},
+				{
+					"d": "M-130 449C105 310 287 280 480 316",
+					"tone": "motif",
+					"strokeWidth": 7
+				},
+				{
+					"d": "M-115 462C108 329 286 300 477 334",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M84 92h52M110 66v52M207 124h28M221 110v28",
+					"tone": "motif",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M818 1070C937 908 1006 890 1120 926L1120 1059Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M841 1062C957 925 1026 916 1120 948",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				}
+			]
+		},
+		"status": "Designed local presentation; separate from the existing source website palette."
+	},
+	"matte": {
+		"minimumChannel": 240,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 10,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "The native matte includes faint colored ringing near the contour. A 240 minimum-channel exterior-connected threshold removes these pale fringe islands while keeping the warm ivory, silver fur, whiskers and physical metallic highlights. Only explicit enclosed background gaps are seeded; white eye/metal highlights remain protected by connectivity.",
+		"backgroundSeedReason": "No interior background seeds. The tiny enclosed whites are eye highlights and remain opaque, as does the entire ivory bib.",
+		"componentCleanupReason": "Recorded isolated components under 100 native pixels are exterior matte/antialias residue. The genuine animal/accessory or complete equipment assembly remains connected."
+	},
+	"shadows": [
+		{
+			"color": [66, 92, 114],
+			"opacity": 0.15,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [66, 92, 114],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [-228, 13],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform placement of the complete supplied foreground, preserving its intentional offset and every expressive feature or accessory. The natural faceted outline stays intact; no circular bust crop, stretched anatomy, independent part movement or synthetic continuation."
+	}
+}

@@ -1,0 +1,120 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc",
+		"colorSpace": "sRGB",
+		"sampling": "Exact native pixels at least four pixels inside the fully opaque extracted foreground; no averaging, resampling or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Slate blue",
+				"zh": "石板蓝"
+			},
+			"role": "primary",
+			"color": "#4c6073",
+			"pixel": [1180, 680],
+			"rgb": [76, 96, 115],
+			"sourceSha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc"
+		},
+		{
+			"label": {
+				"en": "Silver",
+				"zh": "银灰色"
+			},
+			"role": "accent",
+			"color": "#bdc2cc",
+			"pixel": [840, 710],
+			"rgb": [189, 194, 204],
+			"sourceSha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc"
+		},
+		{
+			"label": {
+				"en": "Warm ivory",
+				"zh": "暖象牙白"
+			},
+			"role": "accent",
+			"color": "#e8ded4",
+			"pixel": [800, 1300],
+			"rgb": [232, 222, 212],
+			"sourceSha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc"
+		},
+		{
+			"label": {
+				"en": "Amber eyes",
+				"zh": "琥珀眼"
+			},
+			"role": "accent",
+			"color": "#e3b265",
+			"pixel": [667, 930],
+			"rgb": [227, 178, 101],
+			"sourceSha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc"
+		},
+		{
+			"label": {
+				"en": "Yarn turquoise",
+				"zh": "毛线青色"
+			},
+			"role": "accent",
+			"color": "#2badb8",
+			"pixel": [1740, 1390],
+			"rgb": [43, 173, 184],
+			"sourceSha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc"
+		},
+		{
+			"label": {
+				"en": "Yarn coral",
+				"zh": "毛线珊瑚色"
+			},
+			"role": "accent",
+			"color": "#f1958d",
+			"pixel": [1650, 1220],
+			"rgb": [241, 149, 141],
+			"sourceSha256": "64e396c30a77f8e0966dadba1dcbb1efddf0f54b5ba0c9c06882241fc315d8dc"
+		}
+	],
+	"presentation": {
+		"base": "#b5a6bb",
+		"light": "#e1d8e2",
+		"shade": "#887591",
+		"motif": "#64516f",
+		"pattern": "Quiet yarn loops",
+		"status": "Selected local review presentation; source adoption and publication have not occurred."
+	},
+	"website": {
+		"primary": "#3c83f6",
+		"background": "#eeeff2",
+		"theme": {
+			"primary": {
+				"value": "#3c83f6",
+				"source": "apps/dashboard/src/index.css :root --primary: 217 91% 60%, converted to sRGB"
+			},
+			"background": {
+				"value": "#eeeff2",
+				"source": "apps/dashboard/src/index.css :root --background: 220 14% 94%, converted to sRGB"
+			},
+			"ink": {
+				"value": "#1f1f1f",
+				"source": "apps/dashboard/src/index.css :root --foreground: 0 0% 12%, converted to sRGB"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#3c83f6",
+				"role": "primary",
+				"source": "apps/dashboard/src/index.css :root --primary: 217 91% 60%, converted to sRGB"
+			},
+			{
+				"color": "#eeeff2",
+				"role": "background",
+				"source": "apps/dashboard/src/index.css :root --background: 220 14% 94%, converted to sRGB"
+			},
+			{
+				"color": "#1f1f1f",
+				"role": "accent",
+				"source": "apps/dashboard/src/index.css :root --foreground: 0 0% 12%, converted to sRGB"
+			}
+		],
+		"note": "Existing product theme evidence remains independent from the local artwork and designed paper presentation."
+	}
+}

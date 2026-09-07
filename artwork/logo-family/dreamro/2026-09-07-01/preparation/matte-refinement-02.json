@@ -1,0 +1,33 @@
+{
+	"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f",
+	"replacesPass": "01",
+	"newPass": "02",
+	"reason": "Visible near-white contour flecks in the first-pass dark presentation, most evident beneath Fundly’s feet and binoculars. Calibrate to the actual matte rather than accept white fringe.",
+	"matte": {
+		"minimumChannel": 240,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 10,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [[380, 676], [728, 1471]],
+		"calibrationNote": "The native matte includes faint colored ringing near the contour. A 240 minimum-channel exterior-connected threshold removes these pale fringe islands while keeping the warm ivory, silver fur, whiskers and physical metallic highlights. Only explicit enclosed background gaps are seeded; white eye/metal highlights remain protected by connectivity.",
+		"backgroundSeedReason": "The large bow/string/upper-shield gap and smaller lower bow/string gap are background. All white metal, gilding and gemstone highlights remain opaque.",
+		"componentCleanupReason": "Recorded isolated components under 100 native pixels are exterior matte/antialias residue. The genuine animal/accessory or complete equipment assembly remains connected."
+	},
+	"additionalBackgroundPixels": 5029,
+	"additionalBackgroundBounds": [154, 125, 1901, 1952],
+	"removedComponents": [],
+	"removedComponentPixels": 0,
+	"framing": {
+		"scale": 0.92947,
+		"offsetAt2048": [-17, -27],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform placement of the complete supplied foreground, preserving its intentional offset and every expressive feature or accessory. The natural faceted outline stays intact; no circular bust crop, stretched anatomy, independent part movement or synthetic continuation."
+	},
+	"presentationLayers": "Original placement, colors, motif and shadow settings remain unchanged."
+}

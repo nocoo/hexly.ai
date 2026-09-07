@@ -1,0 +1,51 @@
+{
+	"base": "#9eb88d",
+	"light": "#d6e2bb",
+	"shade": "#6b845e",
+	"motif": "#4a683e",
+	"grainAmplitude": 0.8,
+	"grainSeed": 6090770,
+	"motifOpacity": 0.18,
+	"highlightOpacity": 0.3,
+	"ribbonOpacity": 0.2,
+	"pattern": {
+		"name": "Leaf-vein relief",
+		"description": "Two asymmetrical leaf folds with branching veins, one entering from the upper right and one from the lower-right paper edge.",
+		"layers": [
+			{
+				"d": "M1115 -80C858 -32 667 138 654 390C844 362 1057 243 1115 -80Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M1092 -30C1002 97 830 247 686 361",
+				"tone": "motif",
+				"strokeWidth": 12
+			},
+			{
+				"d": "M843 226L868 79M905 166L1034 161M774 288L781 171M984 88L1069 74",
+				"tone": "motif",
+				"strokeWidth": 6
+			},
+			{
+				"d": "M1081 -40C991 89 817 233 675 351",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M720 1110C716 937 856 829 1090 762C1075 994 912 1102 720 1110Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M758 1099C820 976 921 892 1088 784M827 991L795 938M887 931L1006 976M960 873L955 817",
+				"tone": "motif",
+				"strokeWidth": 7
+			},
+			{
+				"d": "M748 1092C808 970 911 882 1078 775",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		]
+	},
+	"status": "Designed local presentation; separate from the existing source website palette."
+}
