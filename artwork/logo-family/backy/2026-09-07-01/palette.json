@@ -1,0 +1,119 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels, at least four pixels inside the retained/extracted boundary; named colors selected without averaging or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Olive",
+				"zh": "橄榄绿"
+			},
+			"role": "primary",
+			"color": "#818a45",
+			"pixel": [869, 1165],
+			"rgb": [129, 138, 69],
+			"sourceSha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14"
+		},
+		{
+			"label": {
+				"en": "Forest green",
+				"zh": "森林绿"
+			},
+			"role": "accent",
+			"color": "#344b2f",
+			"pixel": [551, 995],
+			"rgb": [52, 75, 47],
+			"sourceSha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14"
+		},
+		{
+			"label": {
+				"en": "Ochre",
+				"zh": "赭黄色"
+			},
+			"role": "accent",
+			"color": "#d5b455",
+			"pixel": [926, 772],
+			"rgb": [213, 180, 85],
+			"sourceSha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14"
+		},
+		{
+			"label": {
+				"en": "Leaf coral",
+				"zh": "叶片珊瑚色"
+			},
+			"role": "accent",
+			"color": "#d77656",
+			"pixel": [819, 435],
+			"rgb": [215, 118, 86],
+			"sourceSha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14"
+		},
+		{
+			"label": {
+				"en": "Leaf teal",
+				"zh": "叶片青色"
+			},
+			"role": "accent",
+			"color": "#518c99",
+			"pixel": [802, 474],
+			"rgb": [81, 140, 153],
+			"sourceSha256": "79f10e2d2a844de82f02db4cf373f9c6db64be0b8b2ddc7743b2f7d5e252cb14"
+		}
+	],
+	"presentation": {
+		"base": "#829178",
+		"light": "#ccd1a6",
+		"shade": "#4f6250",
+		"motif": "#384935",
+		"pattern": "Shell saddles",
+		"status": "Selected for the owner-authorized ten-project batch."
+	},
+	"website": {
+		"primary": "#2e8553",
+		"background": "#eeeff2",
+		"theme": {
+			"background": {
+				"value": "220 14% 94%",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "146 49% 35%",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#2e8553",
+				"role": "primary",
+				"source": "apps/web/src/index.css --primary: 146 49% 35%"
+			},
+			{
+				"color": "#eeeff2",
+				"role": "background",
+				"source": "apps/web/src/index.css --background: 220 14% 94%"
+			},
+			{
+				"color": "#f5f8f5",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#779952",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#285f46",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		],
+		"note": "Existing recorded product colors are separate from sampled artwork and the designed presentation."
+	}
+}

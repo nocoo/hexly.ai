@@ -1,0 +1,62 @@
+{
+	"project": "gecko",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#926d60",
+		"light": "#d4ad8b",
+		"shade": "#654842",
+		"motif": "#49312e",
+		"grainAmplitude": 1,
+		"grainSeed": 6090798,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Sandstone shelves",
+			"description": "Sandstone shelves: staggered broad rounded ledges with short rising seams on a warm clay field. Preserve the exact gecko artwork, every toe, its curled tail and native placement.",
+			"layers": [
+				{
+					"d": "M-92 129H230Q320 129 342 220H546Q616 220 626 284H1118V330H593Q587 261 526 261H306Q291 171 216 171H-92Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-92 177H212Q286 177 302 267H522Q582 267 588 336H1119",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-100 704H86Q160 704 184 767H323Q399 767 402 840H654Q719 840 743 897H1125V942H709Q691 882 627 882H360Q366 809 294 809H145Q124 748 63 748H-100Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-98 754H59Q119 754 141 815H288Q360 815 354 888H622Q685 888 704 948H1124",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M212 171L220 77M629 285L654 380M746 897L758 779",
+					"tone": "motif",
+					"strokeWidth": 8
+				}
+			]
+		},
+		"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+	},
+	"shadows": [
+		{
+			"color": [28, 27, 32],
+			"opacity": 0.14,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [24, 25, 29],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"original": "../../../../public/logos/originals/gecko.png"
+}

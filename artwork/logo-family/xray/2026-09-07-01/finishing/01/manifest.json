@@ -1,0 +1,354 @@
+{
+	"createdAt": "2026-09-07T03:31:28.080Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "xray",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#756584",
+			"light": "#b59dae",
+			"shade": "#473855",
+			"motif": "#342843",
+			"grainAmplitude": 1,
+			"grainSeed": 6090790,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.11,
+			"pattern": {
+				"name": "Wing-vein panels",
+				"description": "Wing-vein panels: broad interlocking unequal quadrilateral folds, inspired by butterfly wing veins, on a smoky plum field. Preserve every original pixel, antenna, wing tip, and native placement.",
+				"layers": [
+					{
+						"d": "M-80 88L384-77L215 314L-80 467Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-80 479L215 329L302 390L82 703L-80 706Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M395-75L529-75L753 188L550 375L333 234Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M755 192L1120 63L1120 276L860 480L668 397Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M783 761L1122 605L1122 798L873 1108L642 1108Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-78 880L295 749L468 1104H-78Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-75 475L219 319L336 234L550 378L755 191",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M643 1106L788 754L1125 599",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected independent presentation for the explicitly authorized ten-project batch."
+		},
+		"shadows": [
+			{
+				"color": [
+					28,
+					27,
+					32
+				],
+				"opacity": 0.14,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					25,
+					29
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"original": "../../../../public/logos/originals/xray.png"
+	},
+	"statistics": {
+		"backgroundPixels": 2658630,
+		"foregroundPixels": 1535674,
+		"softEdgePixels": 1526906,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 151,
+			"top": 282,
+			"right": 1896,
+			"bottom": 1790
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 124.60705814833375,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1780,
+			"sha256": "f95447c958be57bafabe94f61dfd5776e4ef655220b8bda8b487172284ada271"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 1237,
+			"sha256": "4a76ff493d47ec61273e77796441cef9b6bda422f7d3dd381900bb13405eab70"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1359,
+			"sha256": "5bb0db1ca8d3ccbd9cbe556cb0ad29afbe8d11a85cf32ced7d086fa80ce35eb7"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 294148,
+			"sha256": "f98ed13080630e4dc36e3376cf0e31ce8b5da8716c79e6f1839571f61ce71447"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1100,
+			"sha256": "d3d13df44de85795e78bae246dbf727c491c580f241981201bea250b5878cb7a"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2464641,
+			"sha256": "e9d9de3ce49881eda3308f53c05095a13664beaada720e0f614372055f9b3c60"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 204950,
+			"sha256": "135879168f87ee0984044306b2a14da1c74d653a1e6863b494c41d022dd47945"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 147098,
+			"sha256": "98a705c68154e792316d0c6bff8b7dfec9c2c1af0d5f9ca7fbcfc42da05cf37f"
+		},
+		{
+			"path": "exports/xray-transparent-2048.png",
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"path": "exports/xray-icon-2048.png",
+			"bytes": 5813747,
+			"sha256": "cdc6aa43110cc2ea7ead1520416b26a3153176e3a3ad6afe9185a576f7fbcd69"
+		},
+		{
+			"path": "exports/xray-rounded-2048.png",
+			"bytes": 5709824,
+			"sha256": "cfc96baa2fbd99fab5af9aca03e09de14beaf52920ff028d9b7a6ee0b579adce"
+		},
+		{
+			"path": "exports/xray-transparent-1024.png",
+			"bytes": 1079725,
+			"sha256": "832e32c1dc5db9b294bca97e17c827f0025d6bab1f22a4dacaddbabff2cac935"
+		},
+		{
+			"path": "exports/xray-icon-1024.png",
+			"bytes": 1533923,
+			"sha256": "85ab3b6eb1a553a9df5edc8a568ab89c851432414835ffdb70518852bb9caa10"
+		},
+		{
+			"path": "exports/xray-rounded-1024.png",
+			"bytes": 1522609,
+			"sha256": "553d08390d4b01e086e34bd840a6e5b1b6cce8c6edcbefaa1c7608d7d38f624f"
+		},
+		{
+			"path": "exports/xray-transparent-512.png",
+			"bytes": 289109,
+			"sha256": "6fa372a82a7dc0229ad38ebd1cd67e5e668093cc1cbdb0930390700477569324"
+		},
+		{
+			"path": "exports/xray-icon-512.png",
+			"bytes": 437897,
+			"sha256": "2b2bf5488d221c9210d7ea15af19233fd5f0cfe0baa4916b4c33418f64b1dc97"
+		},
+		{
+			"path": "exports/xray-rounded-512.png",
+			"bytes": 435729,
+			"sha256": "28468bc3f3187e2f3018f2fb34f1556bfaaf73516e28566abfe71378ee9f2fbd"
+		},
+		{
+			"path": "exports/xray-transparent-256.png",
+			"bytes": 82771,
+			"sha256": "5a3fee4d5f81656b1dea29d7a2c01f1a0e9cc7fa355ee41e9399ee0c0525e0c2"
+		},
+		{
+			"path": "exports/xray-icon-256.png",
+			"bytes": 110273,
+			"sha256": "e4c60915c42209f7c5b77b17be89d7d217130fa5f41778b3535496d94bc2f852"
+		},
+		{
+			"path": "exports/xray-rounded-256.png",
+			"bytes": 112223,
+			"sha256": "c2157cb736322ea313ac7ccf9bea7573d2a8ddf1e507b7ce488bc5b3faf3031a"
+		},
+		{
+			"path": "exports/xray-transparent-128.png",
+			"bytes": 24270,
+			"sha256": "c4229d3b2aae9ae5797018b7dacbdfb709e3cb43741a1aacf48bf99143ca32ea"
+		},
+		{
+			"path": "exports/xray-icon-128.png",
+			"bytes": 33650,
+			"sha256": "6b5dceb81cc6c0e792a1b9a1bca6f90fd9889255b71065ea5840c597ab3615c1"
+		},
+		{
+			"path": "exports/xray-rounded-128.png",
+			"bytes": 34752,
+			"sha256": "05f90d7d07779ce6953e7b35154855b67da806392be1066a754591cab514d82b"
+		},
+		{
+			"path": "exports/xray-transparent-64.png",
+			"bytes": 7033,
+			"sha256": "8d28693ed25a75a3c03518c24fbb2764a6037a432f9dbda73f61fdf720022771"
+		},
+		{
+			"path": "exports/xray-icon-64.png",
+			"bytes": 10261,
+			"sha256": "e548b985941d660463d9d37133f0db0ee3720a6fa91ce43f4580776ecc3439e3"
+		},
+		{
+			"path": "exports/xray-rounded-64.png",
+			"bytes": 10702,
+			"sha256": "3ef526991681f40fed060f73abbe05b8eec9ea8f04d2dae7dfea30dd693f1151"
+		},
+		{
+			"path": "exports/xray-transparent-48.png",
+			"bytes": 4340,
+			"sha256": "4c67d24d288726722bcedf3cecc012cc5687c5748a9dc7133f8e48f7543281a3"
+		},
+		{
+			"path": "exports/xray-icon-48.png",
+			"bytes": 6264,
+			"sha256": "a2b576ab96a41c2a97d02627f709515d316f3bb4d8b412a59ee39f3eb37776b4"
+		},
+		{
+			"path": "exports/xray-rounded-48.png",
+			"bytes": 6558,
+			"sha256": "4a0863d867b22f7be10986a1bedf33ccce1713797a4c7ad1e7dee722a018a6d3"
+		},
+		{
+			"path": "exports/xray-transparent-32.png",
+			"bytes": 2266,
+			"sha256": "3e6b048bc91485f2c7041e472b58a2b7cec6f3c6756519241007618cf259c1d3"
+		},
+		{
+			"path": "exports/xray-icon-32.png",
+			"bytes": 3194,
+			"sha256": "83954f04fb00261c2907ab618dc068a5776f4087ce58de5b222c4372b1451121"
+		},
+		{
+			"path": "exports/xray-rounded-32.png",
+			"bytes": 3292,
+			"sha256": "86e470ad8589533bfd1dca4355a9d83f84efd401b48ea29fc86a5144aa11f0cb"
+		},
+		{
+			"path": "exports/xray-transparent-24.png",
+			"bytes": 1446,
+			"sha256": "c10616c03a16538f1bc98ca49f831253afebdfda772c3d21503735e774e0585e"
+		},
+		{
+			"path": "exports/xray-icon-24.png",
+			"bytes": 1950,
+			"sha256": "53df7afca8cd6bf8b07e1c3eb1d585a274cea0566ccd837597c2698b2dda8986"
+		},
+		{
+			"path": "exports/xray-rounded-24.png",
+			"bytes": 2035,
+			"sha256": "946cf0a2437a7ed1a3e1d90c983dc9bb419bc51f7b6ca2d61d8398ef41eaf341"
+		},
+		{
+			"path": "exports/xray-transparent-16.png",
+			"bytes": 786,
+			"sha256": "6bede7e89fe2df88a3e5fe00d373ac12c9b55c4d2d8955a295d03c0e805d9c11"
+		},
+		{
+			"path": "exports/xray-icon-16.png",
+			"bytes": 957,
+			"sha256": "0ee7aa465e1a12c41279579f8887891ffae887a966f968b17b6fe5b50de1be10"
+		},
+		{
+			"path": "exports/xray-rounded-16.png",
+			"bytes": 998,
+			"sha256": "ea3bc3bcd2274332113e41b0c2c1ca8c5fb9f060fc831bb31ea04542d9c29432"
+		},
+		{
+			"path": "exports/xray-white-2048.png",
+			"bytes": 3640069,
+			"sha256": "5d3b180ef2b28e99b389df61cb349205942b7c78b2b553065db65b0bbe696bf2"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 991883,
+			"sha256": "2928d11bdcb8341ed4dab864031741e2be009d7bf68c8ae24fa765f49c08e538"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 983657,
+			"sha256": "30544095cb1773635575593bbeea4f976886f5c2cbd01c5b1e1a50f1fd0e0180"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"method": "Existing Gaga browser smoke suite against the actual built application in headless Chrome.",
+	"sourceCommit": "76260f08329784eead9b30912c7692b8ea0d3d56",
+	"result": "passed",
+	"checks": [
+		"All 64 toy routes",
+		"Pause, zoom, orbit, reset, follow, night, audio",
+		"Raycast, filters and activities",
+		"Keyboard and persistence",
+		"Desktop 720p and mobile touch layout",
+		"Reduced motion",
+		"No browser errors"
+	],
+	"smallBrandRole": "Browser favicon verified as transparent PNG and ICO; the in-game preview.jpg remains the product scene.",
+	"screenshots": [
+		{
+			"path": "source-browser/gaga-desktop.png",
+			"sha256": "e66a9d65dd57f693e47d35c85e7b16c0c8ee86e75d2a7c72cc61e6f08b884936"
+		},
+		{
+			"path": "source-browser/gaga-mobile.png",
+			"sha256": "9ac5d53f9a851b77c65e29de9d2d00975de13a6de01e3a668e5b77e08810e340"
+		},
+		{
+			"path": "source-browser/gaga-night.png",
+			"sha256": "c76eacec3eb5bd1df36d9177d55b8e05ff2fc9f984c98cc5578daf1d56fb7bea"
+		}
+	]
+}

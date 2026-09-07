@@ -114,3 +114,27 @@ Checksummed SVG inputs in `input/` are frozen drawing layers, like the rendered 
 | Noheir | [2026-09-07-02 / 02](noheir/2026-09-07-02/notes.md) | [Static HTML](noheir/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/noheir) |
 | Raven | [2026-09-07-04 / 02](raven/2026-09-07-04/notes.md) | [Static HTML](raven/2026-09-07-04/review.html) · [Site](https://hexly.ai/logos/raven) |
 | Life.ai | [2026-09-07-01 / 02](life-ai/2026-09-07-01/notes.md) | [Static HTML](life-ai/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/life-ai) |
+
+## Fifteen-project continuation — 2026-09-07
+
+The owner waived intermediate human confirmation for these named batches and authorized source replacement and publication. Twelve projects use newly generated artwork; Xray, Pika and Gecko keep the original transparent bytes and receive independent presentation layers. Every project keeps its own review page.
+
+| Project | Study / selected pass | Route | Static review | Catalogue |
+| --- | --- | --- | --- | --- |
+| surety | `2026-09-07-01 / 01` | Generated | [HTML](surety/2026-09-07-01/review.html) | [/surety](https://hexly.ai/logos/surety) |
+| owl | `2026-09-07-01 / 01` | Generated | [HTML](owl/2026-09-07-01/review.html) | [/owl](https://hexly.ai/logos/owl) |
+| ellie | `2026-09-07-01 / 01` | Generated | [HTML](ellie/2026-09-07-01/review.html) | [/ellie](https://hexly.ai/logos/ellie) |
+| giraffe | `2026-09-07-01 / 02` | Generated | [HTML](giraffe/2026-09-07-01/review.html) | [/giraffe](https://hexly.ai/logos/giraffe) |
+| steed | `2026-09-07-02 / 01` | Generated | [HTML](steed/2026-09-07-02/review.html) | [/steed](https://hexly.ai/logos/steed) |
+| xray | `2026-09-07-01 / 01` | Retained original | [HTML](xray/2026-09-07-01/review.html) | [/xray](https://hexly.ai/logos/xray) |
+| bat | `2026-09-07-01 / 02` | Generated | [HTML](bat/2026-09-07-01/review.html) | [/bat](https://hexly.ai/logos/bat) |
+| rooster | `2026-09-07-01 / 02` | Generated | [HTML](rooster/2026-09-07-01/review.html) | [/rooster](https://hexly.ai/logos/rooster) |
+| snaky | `2026-09-07-01 / 01` | Generated | [HTML](snaky/2026-09-07-01/review.html) | [/snaky](https://hexly.ai/logos/snaky) |
+| codo | `2026-09-07-01 / 01` | Generated | [HTML](codo/2026-09-07-01/review.html) | [/codo](https://hexly.ai/logos/codo) |
+| gaga | `2026-09-07-01 / 01` | Generated | [HTML](gaga/2026-09-07-01/review.html) | [/gaga](https://hexly.ai/logos/gaga) |
+| pika | `2026-09-07-01 / 01` | Retained original | [HTML](pika/2026-09-07-01/review.html) | [/pika](https://hexly.ai/logos/pika) |
+| backy | `2026-09-07-01 / 01` | Generated | [HTML](backy/2026-09-07-01/review.html) | [/backy](https://hexly.ai/logos/backy) |
+| gecko | `2026-09-07-01 / 01` | Retained original | [HTML](gecko/2026-09-07-01/review.html) | [/gecko](https://hexly.ai/logos/gecko) |
+| otter | `2026-09-07-01 / 02` | Generated | [HTML](otter/2026-09-07-01/review.html) | [/otter](https://hexly.ai/logos/otter) |
+
+The [redesign audit](audits/2026-09-07-redesign/) and [ten-project audit](audits/2026-09-07-next-ten/) record source consumers, actual browser/native captures and publication. Native source artwork, raw checkpoints, prompt/brief, reference provenance, all finishing layers and checksums remain archived. Source revisions and platform rules are listed in [the shared usage SOP](../../docs/07-logo-usage-sop.md#fifteen-identities--2026-09-07).

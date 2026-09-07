@@ -65,3 +65,33 @@ The current Wooly and Noheir identities supersede their earlier retained-origina
 Each source stores exact transparent/square/rounded masters and a brand usage guide. PNGs and both 16/32 ICO entries are verified against the selected transparent master. Large README/social presentations use their backgrounds. Life.ai’s former login circle and white filter are removed; its 192 px login image remains transparent because it is a UI mark rather than a PWA asset.
 
 See [the batch audit](../artwork/logo-family/audits/2026-09-07-framing/) and each study’s `adoption.json` for immutable source revisions, master hashes, round-corner measurements, browser captures, and publication evidence. Earlier originals, public archive roots, raw generations, and diagnostic passes remain preserved.
+
+## Fifteen identities — 2026-09-07
+
+The owner authorized two consecutive batches, including generation without an intermediate handoff, source replacement, README updates, push, and Hexly deployment. Surety, Owl, Ellie, Giraffe, Steed, Bat, Rooster, Snaky, Codo, Gaga, Backy, and Otter are redesigned. Xray, Pika, and Gecko retain their exact transparent artwork and native placement, with new project-specific backgrounds. All fifteen now have complete individual before/after pages and Refined entries.
+
+| Project | Route | Selected study / pass | Source commit | Individual page |
+| --- | --- | --- | --- | --- |
+| Surety | Redesigned | `2026-09-07-01 / 01` | [`f257e0977e`](https://github.com/nocoo/surety/commit/f257e0977e85358f9d02ed3f79a9fad8862e5117) | [Review](https://hexly.ai/logos/surety) |
+| Owl | Redesigned | `2026-09-07-01 / 01` | [`e1c69addb6`](https://github.com/nocoo/owl/commit/e1c69addb656e8907a8828001e1f5c103f3b9fbf) | [Review](https://hexly.ai/logos/owl) |
+| Ellie | Redesigned | `2026-09-07-01 / 01` | [`300b8540ea`](https://github.com/nocoo/ellie/commit/300b8540eac51ae21803a8d58ebffbe3d90efa24) | [Review](https://hexly.ai/logos/ellie) |
+| Giraffe | Redesigned | `2026-09-07-01 / 02` | [`c715434784`](https://github.com/nocoo/giraffe/commit/c71543478405f580e6dd36ebac18174f7ae6e474) | [Review](https://hexly.ai/logos/giraffe) |
+| Steed | Redesigned | `2026-09-07-02 / 01` | [`bcab1f113b`](https://github.com/nocoo/steed/commit/bcab1f113b9b7cde65898bbd23705c7dac339634) | [Review](https://hexly.ai/logos/steed) |
+| Xray | Retained original | `2026-09-07-01 / 01` | [`16175dc87e`](https://github.com/nocoo/xray/commit/16175dc87ef406e8cf3343ab8808b60e8f53cc8a) | [Review](https://hexly.ai/logos/xray) |
+| Bat | Redesigned | `2026-09-07-01 / 02` | [`46f5c95a6c`](https://github.com/nocoo/bat/commit/46f5c95a6c134487130e2a6d9336ec5e8895a0f7) | [Review](https://hexly.ai/logos/bat) |
+| Rooster | Redesigned | `2026-09-07-01 / 02` | [`8907933c08`](https://github.com/nocoo/rooster/commit/8907933c080ed86c6cbe15d9af5cdb0be86919d3) | [Review](https://hexly.ai/logos/rooster) |
+| Snaky | Redesigned | `2026-09-07-01 / 01` | [`5cd0790336`](https://github.com/nocoo/snaky/commit/5cd0790336d006f65555816fe29869d6e60ed376) | [Review](https://hexly.ai/logos/snaky) |
+| Codo | Redesigned | `2026-09-07-01 / 01` | [`c4d8982d8c`](https://github.com/nocoo/codo/commit/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a) | [Review](https://hexly.ai/logos/codo) |
+| Gaga | Redesigned | `2026-09-07-01 / 01` | [`76260f0832`](https://github.com/nocoo/gaga/commit/76260f08329784eead9b30912c7692b8ea0d3d56) | [Review](https://hexly.ai/logos/gaga) |
+| Pika | Retained original | `2026-09-07-01 / 01` | [`bb9b497372`](https://github.com/nocoo/pika/commit/bb9b497372809e5ca00eaef4b04e1aa51e4256a3) | [Review](https://hexly.ai/logos/pika) |
+| Backy | Redesigned | `2026-09-07-01 / 01` | [`5b23349c94`](https://github.com/nocoo/backy/commit/5b23349c94ac6778f2242a857386e8b01dac4f1c) | [Review](https://hexly.ai/logos/backy) |
+| Gecko | Retained original | `2026-09-07-01 / 01` | [`f259be7fe7`](https://github.com/nocoo/gecko/commit/f259be7fe740ce260c9257e2870b57dec8d9e7b3) | [Review](https://hexly.ai/logos/gecko) |
+| Otter | Redesigned | `2026-09-07-01 / 02` | [`0c87197fc9`](https://github.com/nocoo/otter/commit/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3) | [Review](https://hexly.ai/logos/otter) |
+
+Source `logo.png` and the separate square/rounded masters match their selected archive hashes. README headers use rounded presentations; small application marks and PNG/ICO favicons use transparent foregrounds. The app-icon canvas for Owl, Snaky, Codo, and Gecko contains an 824 px rounded tile centered inside a transparent 1024 px native canvas. Codo/Snaky animal templates are regenerated; Owl's semantic menu symbols and Gecko's retained templates preserve their existing status behavior.
+
+Codo's small notification mark uses the transparent hummingbird. Rooster receives its first dedicated project logo and README. The former small-image corner crops in Bat, Snaky, Codo and Gecko's About presentation are removed. Independent forum, per-project, and configured site identities remain separate.
+
+The [five-project audit](../artwork/logo-family/audits/2026-09-07-redesign/) and [ten-project audit](../artwork/logo-family/audits/2026-09-07-next-ten/) contain exact-master checks, real source component captures, size/alpha verification, and publication records. Each study retains its prompt or presentation brief, raw/source decision, sampled palette, all finishing passes, static review, and adoption record. The public catalogue paths use `/logos/<project>`.
+
+New full-body drawings maintain at least 128 px clearance against the actual rounded outline. Retained artwork keeps its existing native margins, including Pika's close outer sparks. Bat, Rooster and Otter pass 02 remove an inspected enclosed white matte pocket; previous passes remain immutable. Giraffe pass 02 adjusts placement by one pixel. Steed preserves one rejected generation and adopts its second native result. Across both batches, twelve projects were redrawn in thirteen native requests and three projects required no generation.
