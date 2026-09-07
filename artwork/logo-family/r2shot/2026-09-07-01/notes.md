@@ -20,6 +20,10 @@ Both review pages preserve the complete before/after layout; foregrounds deliber
 
 The entire retained silhouette remains inside the rounded boundary; no visible source pixels are clipped.
 
+## Description correction
+
+The original presentation brief incorrectly mentions a camera. The retained artwork contains the dolphin and its curled tail, with no camera prop. The current catalogue, project profile, and static comparison now describe only the visible elements. The originally published brief and its public checksum remain intact as the process record; this correction does not change any artwork or finishing pass.
+
 ## Source adoption
 
 Source commit: [`d69714a233`](https://github.com/nocoo/r2shot/commit/d69714a2332066c9c7b1792f919607a4b776eade). The exact retained foreground and selected presentation masters are installed and committed. See [adoption.json](adoption.json), the source usage guide, and the batch publication report for consumer and publication evidence.
