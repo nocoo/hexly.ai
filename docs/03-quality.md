@@ -37,7 +37,9 @@ Both tools check working-tree content; they do not snapshot partially staged fil
 
 Test runners start and terminate their own servers and do not reuse an existing server. L2 uses `.wrangler/http` for runtime state and L3 uses `.wrangler/browser`; the local review server remains independent. Even a static-only workerd process maintains internal SQLite state, so separate ports alone do not provide complete local isolation.
 
-Browser CI records the runner's Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines and preserves the test command's exit status. Inspect these diagnostics before rerunning a failure that loses the local server.
+Browser CI runs in its own job with Node.js 26.7.0, matching local development and deployment. The shared quality workflow has no Node.js version input and retains the other gates. Deployment requires both jobs to succeed; all browser journeys run with the existing three workers and zero retries.
+
+The browser job records its Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines, preserves the test command's exit status, and uploads the diagnostics, browser traces, and screenshots for seven days. Inspect this evidence before rerunning a failure that loses the local server. New-tab checks wait for navigation and `DOMContentLoaded` before inspecting the destination.
 
 ## Completion evidence
 
