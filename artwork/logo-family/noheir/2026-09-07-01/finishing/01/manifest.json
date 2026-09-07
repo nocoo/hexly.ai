@@ -1,0 +1,358 @@
+{
+	"createdAt": "2026-09-07T00:07:06.479Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "noheir",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#638783",
+			"light": "#a5c2b8",
+			"shade": "#3d625f",
+			"motif": "#254946",
+			"grainAmplitude": 1,
+			"grainSeed": 609077,
+			"motifOpacity": 0.19,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Quiet terraces",
+				"description": "Broad terraced contours turn around the upper-left and lower-right edges with softened right-angle bends. Unequal levels and short step transitions suggest a pressed landscape, rather than flowing waves or feather stripes.",
+				"layers": [
+					{
+						"d": "M-90 277H142Q208 277 208 205V149Q208 88 278 88H529V-80",
+						"tone": "motif",
+						"strokeWidth": 31
+					},
+					{
+						"d": "M-90 294H144Q225 294 225 205V151Q225 106 279 106H547V-80",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-91 454H49Q104 454 104 388V338Q104 307 149 307H297Q360 307 360 243V211Q360 168 424 168H725V-91",
+						"tone": "ribbon",
+						"strokeWidth": 30
+					},
+					{
+						"d": "M613 1102V925Q613 870 674 870H741Q802 870 802 812V729Q802 678 867 678H1120",
+						"tone": "motif",
+						"strokeWidth": 34
+					},
+					{
+						"d": "M633 1103V928Q633 890 676 890H743Q822 890 822 814V730Q822 698 869 698H1120",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M427 1100V1041Q427 983 494 983H521Q565 983 565 937V858Q565 795 623 795H717Q729 795 729 763V641Q729 562 811 562H1114",
+						"tone": "ribbon",
+						"strokeWidth": 23
+					}
+				]
+			},
+			"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+		},
+		"shadows": [
+			{
+				"color": [
+					31,
+					49,
+					48
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					24,
+					39,
+					38
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": []
+	},
+	"statistics": {
+		"backgroundPixels": 2091611,
+		"foregroundPixels": 2102693,
+		"softEdgePixels": 2089472,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 172,
+			"top": 202,
+			"right": 2047,
+			"bottom": 2028
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 0.5000000000000568,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2288,
+			"sha256": "9ab89b3991042b727fda8bcb15163e674298bd4d33f274110f935d111aab0311"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 660,
+			"sha256": "6d8c145acde92dcc0f05413596e281181e37f1c69a9ee5fe40aedc20ec9e7d55"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1011,
+			"sha256": "ea381fd61a2eed8029f6fa6b2bbb741276d407369abb98cfbbc0973f0c1c310b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 4210139,
+			"sha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 234313,
+			"sha256": "b2071ac5c4244f17bcd6cde27325a234dd66a7b876729bffd336b8958ad4b31c"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1313,
+			"sha256": "c8eac659e4b5518eead045419d2e4e5f179a8d4f2b0d4d06ba93a24fca4d0ff0"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2392641,
+			"sha256": "454ddfbeecf04a235ed632d55135657df3e58900a461f452f47c3624df33f359"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 181309,
+			"sha256": "5517aa23948da952cc58eca76b1be1dc15290302959d227e444d05e189b6099c"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 142142,
+			"sha256": "2bd3af87c76b6af241513d4252da99d0b707a1ec431d013c2d4a167fecdcffb0"
+		},
+		{
+			"path": "exports/noheir-transparent-2048.png",
+			"bytes": 4210139,
+			"sha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb"
+		},
+		{
+			"path": "exports/noheir-icon-2048.png",
+			"bytes": 5916990,
+			"sha256": "3ecf4b5efe261b8e8e8e1d31756f2289156b6f8572373bc7510b391431d97ebc"
+		},
+		{
+			"path": "exports/noheir-rounded-2048.png",
+			"bytes": 5820214,
+			"sha256": "3e61d21f3a56f015028371120bab361664b8f8a350d6460f755f0f7d39b47f23"
+		},
+		{
+			"path": "exports/noheir-transparent-1024.png",
+			"bytes": 1199712,
+			"sha256": "ea72275861f97002f9314ace9dc6e060707a514ef9a425ee0e61cf2d6c0c9341"
+		},
+		{
+			"path": "exports/noheir-icon-1024.png",
+			"bytes": 1535848,
+			"sha256": "6ad2e99903a56f0a9388bdaa12295104520b8c4422c714660538d71762ec5f52"
+		},
+		{
+			"path": "exports/noheir-rounded-1024.png",
+			"bytes": 1527292,
+			"sha256": "332f05909a4583bef9913750b5c005e03f9e89d17cbc2354e2f968e5a65b1c60"
+		},
+		{
+			"path": "exports/noheir-transparent-512.png",
+			"bytes": 304857,
+			"sha256": "88834bd290a3a810a0cb4ad094c2a67e7b173eb73b67c5476e3a5f3adff4688a"
+		},
+		{
+			"path": "exports/noheir-icon-512.png",
+			"bytes": 411782,
+			"sha256": "a4060500a34918f776485167559b93b644819ec35955ca95d8ed48ac6f8203de"
+		},
+		{
+			"path": "exports/noheir-rounded-512.png",
+			"bytes": 411200,
+			"sha256": "62a2a71bf1639d77fd13b6419e48029f53fbf7e03130cf7a74124f177e0774f5"
+		},
+		{
+			"path": "exports/noheir-transparent-256.png",
+			"bytes": 84832,
+			"sha256": "478e36d5a51b09d2100f7ab5fb5224d7a3e2002cff02091eefce3a5263dbf7e4"
+		},
+		{
+			"path": "exports/noheir-icon-256.png",
+			"bytes": 103616,
+			"sha256": "1340582a7eec1f50fd1e4ac7b775ccac958bb741ce26d3bdd06c3bdc6231df53"
+		},
+		{
+			"path": "exports/noheir-rounded-256.png",
+			"bytes": 106347,
+			"sha256": "088c72558bd8338fca43fc4d69c3920c18908203e6f3c4ae76676b674dbd76e8"
+		},
+		{
+			"path": "exports/noheir-transparent-128.png",
+			"bytes": 26448,
+			"sha256": "fd5d6779ab5971928108c04b0dd4af8df43dc9287620015c5e4d1103fc8ece8e"
+		},
+		{
+			"path": "exports/noheir-icon-128.png",
+			"bytes": 32875,
+			"sha256": "1207f71e9a276533d6d1fa20641433ce7aa85cdc1bb4706c5320f5bdb831cc70"
+		},
+		{
+			"path": "exports/noheir-rounded-128.png",
+			"bytes": 34426,
+			"sha256": "6263d63f3db283d98fbb5514779a6b891f86bd89fdf746b4f64fd42c8d25dc19"
+		},
+		{
+			"path": "exports/noheir-transparent-64.png",
+			"bytes": 8467,
+			"sha256": "fc0ae2ba17136838b13ad090f01633df4b78a97a792c787e5b859f34f1a8ea73"
+		},
+		{
+			"path": "exports/noheir-icon-64.png",
+			"bytes": 10773,
+			"sha256": "5878b85a241e937253eb855f9dce1a78748f0877f7ba4b639120b8babd3f520c"
+		},
+		{
+			"path": "exports/noheir-rounded-64.png",
+			"bytes": 11349,
+			"sha256": "b34e74ffc994932c33c6b492eb97efbd0f5f52f6a4e109631bc4ec8163fac686"
+		},
+		{
+			"path": "exports/noheir-transparent-48.png",
+			"bytes": 5165,
+			"sha256": "b7c6b19fca30bb0b08502f53ebea2025ac5f8659c325bb977781166546b1aea1"
+		},
+		{
+			"path": "exports/noheir-icon-48.png",
+			"bytes": 6564,
+			"sha256": "f31791fab3f899d08b37deaf4957418903710e517ba7f9667c0cf7fa3bb4c16c"
+		},
+		{
+			"path": "exports/noheir-rounded-48.png",
+			"bytes": 6952,
+			"sha256": "29022bc00f3ba680f48e4f15f237302e6d08f083e0915f83e9872899c65f42c5"
+		},
+		{
+			"path": "exports/noheir-transparent-32.png",
+			"bytes": 2623,
+			"sha256": "c90b9f0f112bbd815621b8f164ddb2691b9e8b53644f7e37b53d6001b47d966b"
+		},
+		{
+			"path": "exports/noheir-icon-32.png",
+			"bytes": 3273,
+			"sha256": "74c65b2d0cb583b513ff9758e34328d76ba691f56a66e7981ed3004f2f07c66f"
+		},
+		{
+			"path": "exports/noheir-rounded-32.png",
+			"bytes": 3425,
+			"sha256": "103de12ea4321bdaa69222b99c872e4adc2c86d78c3ea3a21f7616a06f5f207b"
+		},
+		{
+			"path": "exports/noheir-transparent-24.png",
+			"bytes": 1672,
+			"sha256": "36b1bc9dfcbdd99d4e7851d39edfc2cc7bc075d2d372a890fd0ad5a788dc992d"
+		},
+		{
+			"path": "exports/noheir-icon-24.png",
+			"bytes": 1960,
+			"sha256": "b4cafd1d0f93c5bd7d840e8bf9441d30ac1e55763c6f81d37a8e4d9357cd383f"
+		},
+		{
+			"path": "exports/noheir-rounded-24.png",
+			"bytes": 2084,
+			"sha256": "8986577392e24fb92196a47bc906bbdcbd394ee22da20e22425e3dec17dba00d"
+		},
+		{
+			"path": "exports/noheir-transparent-16.png",
+			"bytes": 910,
+			"sha256": "945d82edd42d175d858dad5987645c890c6fa3f70fc6a3536984ae268b519a1f"
+		},
+		{
+			"path": "exports/noheir-icon-16.png",
+			"bytes": 984,
+			"sha256": "adc1c8c65f4c7a71e3c8168077d813dfcb698817dad7007feeb7ef44c080572a"
+		},
+		{
+			"path": "exports/noheir-rounded-16.png",
+			"bytes": 1019,
+			"sha256": "39be08a0cad61a5b7b9d8e3ef4641182f7a9abebe5d2b952d4cd26065c9e7aac"
+		},
+		{
+			"path": "exports/noheir-white-2048.png",
+			"bytes": 4318901,
+			"sha256": "b7dc639436f0b4750ac9375ffeebe9333b216c3b38a528d4e4060f7bac4973e6"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1123200,
+			"sha256": "f74fc9b8cf9eb9ec1cf975062cab0b6675c79e736a2cdb32adb63fc206927d7c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1117607,
+			"sha256": "cbf4379c7d0363139d73222a2a5a0ed1ca565ced90897dfa27344176ea3abbb4"
+		}
+	]
+}

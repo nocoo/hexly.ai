@@ -1,0 +1,127 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4261802,
+		"repository": "https://github.com/nocoo/wooly",
+		"repositoryRevision": "348dac5c402063de8ef6cf69f8c93f8da43347bf",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/wooly/blob/348dac5c402063de8ef6cf69f8c93f8da43347bf/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Cream wool",
+				"zh": "奶油羊毛"
+			},
+			"color": "#f3e6c4",
+			"x": 961,
+			"y": 149,
+			"alpha": 254,
+			"source": "Original wooly 95798966dd1a, sampled sRGB pixel (961, 149); palette.json"
+		},
+		{
+			"label": {
+				"en": "Warm fleece",
+				"zh": "暖色羊毛"
+			},
+			"color": "#d4bc98",
+			"x": 1024,
+			"y": 143,
+			"alpha": 254,
+			"source": "Original wooly 95798966dd1a, sampled sRGB pixel (1024, 143); palette.json"
+		},
+		{
+			"label": {
+				"en": "Ear blush",
+				"zh": "耳朵浅棕"
+			},
+			"color": "#ac806c",
+			"x": 585,
+			"y": 768,
+			"alpha": 254,
+			"source": "Original wooly 95798966dd1a, sampled sRGB pixel (585, 768); palette.json"
+		},
+		{
+			"label": {
+				"en": "Tongue pink",
+				"zh": "舌头粉"
+			},
+			"color": "#ed9591",
+			"x": 1041,
+			"y": 1539,
+			"alpha": 254,
+			"source": "Original wooly 95798966dd1a, sampled sRGB pixel (1041, 1539); palette.json"
+		},
+		{
+			"label": {
+				"en": "Deep eye",
+				"zh": "深色眼睛"
+			},
+			"color": "#2d3f4d",
+			"x": 710,
+			"y": 871,
+			"alpha": 254,
+			"source": "Original wooly 95798966dd1a, sampled sRGB pixel (710, 871); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#ad8093",
+		"light": "#d6b2bd",
+		"shade": "#794f6d",
+		"motif": "#5f3455",
+		"grainAmplitude": 1,
+		"grainSeed": 609076,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.25,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Wool cloud folds",
+			"description": "Large scalloped seams gather at the left and lower edges like lightly pressed wool. The lobes remain open and uneven, avoiding both a repeated grid and the octopus curling channels.",
+			"layers": [
+				{
+					"d": "M-90 425C-3 407 4 343-25 305C65 343 131 281 114 216C198 245 241 191 222 122C312 158 371 82 340-42",
+					"tone": "motif",
+					"strokeWidth": 29
+				},
+				{
+					"d": "M-91 443C16 424 22 344-7 315C78 359 151 280 133 228C217 258 262 189 242 135C330 173 391 83 360-44",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M326 1091C337 1011 407 973 457 1018C436 923 510 875 573 908C566 824 637 789 698 833C722 748 808 744 854 803C892 729 981 746 1017 814C1060 785 1100 802 1126 845",
+					"tone": "motif",
+					"strokeWidth": 34
+				},
+				{
+					"d": "M344 1094C354 1026 414 995 474 1035C453 938 519 896 590 926C583 841 646 810 708 852C737 767 812 765 859 823C897 749 978 766 1024 833",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M779-93C759 9 806 63 877 43C864 131 938 169 1004 128C1007 210 1075 241 1131 206",
+					"tone": "ribbon",
+					"strokeWidth": 37
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"background": {
+			"value": "220 14% 94%",
+			"source": "src/app/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "src/app/globals.css --foreground"
+		},
+		"primary": {
+			"value": "320 70% 55%",
+			"source": "src/app/globals.css --primary"
+		}
+	}
+}

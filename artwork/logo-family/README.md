@@ -83,3 +83,21 @@ The Vite dev server serves each study's `review.html` through `index.dev.hexly.a
 Every finished study also supplies the same complete comparison at `/logos/<project>`, with working refresh/history/share links. Reference boards and their disclosure remain exclusive to static HTML and Git. The finishing archive delivers all transparent/square/rounded sizes from 2048 to 16 px, a pure-white master, and exact intermediate layers. Background-only passes preserve the transparent and white bytes and record comparisons under `previews/contrast-<pass>/`; frozen earlier passes and browser evidence remain intact.
 
 Full-body studies also record `framing.scale` and `framing.minimumClearanceAt2048`. The finisher checks visible pixels against the actual rounded outline, preserves the native unscaled extraction separately, and uses one consistent placement in every master. Optional `emission` entries save their native source masks and placed glow layers; rendered alpha must be nonzero. Firefly 10 finishing 02 is the first adopted example.
+
+## Retained-original batch
+
+Nine owner-selected originals received presentation-only refinements with zero image-generation calls. Each study has source/provenance records, a presentation brief, a distinct texture recipe, frozen finishing 01, native and small exports, an adoption record, and an individual review.
+
+| Project | Study | Review |
+| --- | --- | --- |
+| R2Shot | [2026-09-07-01](r2shot/2026-09-07-01/notes.md) | [Static HTML](r2shot/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/r2shot) |
+| Hooky | [2026-09-07-01](hooky/2026-09-07-01/notes.md) | [Static HTML](hooky/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/hooky) |
+| Zhe | [2026-09-07-01](zhe/2026-09-07-01/notes.md) | [Static HTML](zhe/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/zhe) |
+| Lyre | [2026-09-07-03](lyre/2026-09-07-03/notes.md) | [Static HTML](lyre/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/lyre) |
+| Shrike | [2026-09-07-01](shrike/2026-09-07-01/notes.md) | [Static HTML](shrike/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/shrike) |
+| Wooly | [2026-09-07-01](wooly/2026-09-07-01/notes.md) | [Static HTML](wooly/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/wooly) |
+| Noheir | [2026-09-07-01](noheir/2026-09-07-01/notes.md) | [Static HTML](noheir/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/noheir) |
+| Dove | [2026-09-07-03](dove/2026-09-07-03/notes.md) | [Static HTML](dove/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/dove) |
+| Neo | [2026-09-07-03](neo/2026-09-07-03/notes.md) | [Static HTML](neo/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/neo) |
+
+The retained route uses `source.json`, `source-review.json`, and `brief.txt`, with `sourceMode: "retained-transparent"`. Native foregrounds remain byte-identical. Public archives use `source.png` and `brief.txt`; R2Shot and Hooky keep their native 920/900 px masters. See [the family guide](../../docs/06-logo-family.md), [usage SOP](../../docs/07-logo-usage-sop.md), and [batch audit](audits/2026-09-07-retained/).

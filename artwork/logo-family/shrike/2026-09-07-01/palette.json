@@ -1,0 +1,120 @@
+{
+	"source": {
+		"path": "source/original.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3750012,
+		"repository": "https://github.com/nocoo/shrike",
+		"repositoryRevision": "9ca43106ca79f35f7b0ad77198b82150a2307b44",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png"
+	},
+	"samples": [
+		{
+			"label": {
+				"en": "Slate grey",
+				"zh": "石板灰"
+			},
+			"color": "#a0a1a6",
+			"x": 1363,
+			"y": 324,
+			"alpha": 253,
+			"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1363, 324); palette.json"
+		},
+		{
+			"label": {
+				"en": "Silver feather",
+				"zh": "银灰羽毛"
+			},
+			"color": "#c4c7ce",
+			"x": 1081,
+			"y": 284,
+			"alpha": 254,
+			"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1081, 284); palette.json"
+		},
+		{
+			"label": {
+				"en": "Eye mask",
+				"zh": "深色眼罩"
+			},
+			"color": "#1a1a18",
+			"x": 1091,
+			"y": 636,
+			"alpha": 254,
+			"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1091, 636); palette.json"
+		},
+		{
+			"label": {
+				"en": "Buff shoulder",
+				"zh": "浅褐肩羽"
+			},
+			"color": "#b7936f",
+			"x": 1197,
+			"y": 1367,
+			"alpha": 254,
+			"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1197, 1367); palette.json"
+		},
+		{
+			"label": {
+				"en": "Beak blue",
+				"zh": "鸟喙蓝灰"
+			},
+			"color": "#576475",
+			"x": 322,
+			"y": 801,
+			"alpha": 254,
+			"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (322, 801); palette.json"
+		}
+	],
+	"presentation": {
+		"base": "#718591",
+		"light": "#abbac1",
+		"shade": "#465c6b",
+		"motif": "#293f4e",
+		"grainAmplitude": 1,
+		"grainSeed": 609075,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Folded wings",
+			"description": "Broad angular wing pleats overlap at the top-left and lower-right edges. Irregular pointed folds and short inset seams form a slate paper relief with no curling or radial motif.",
+			"layers": [
+				{
+					"d": "M-95 13L327-82L176 116L-96 294Z M-82 325L196 150L108 349L-96 526Z M831 1100L1022 719L1115 760L1012 1110Z M530 1104L833 781L791 983L670 1120Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-89 295L182 117L333-81 M-90 528L114 351L202 151 M798 984L839 782 M839 1102L1029 721",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M581-91L776 51L1084 103L909-67Z M-85 741L133 614L64 836L-90 970Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M777 57L1083 109 M-88 974L70 838L139 614",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"evidence": "Designed in presentation.json; no claim that these colors were sampled from the animal."
+	},
+	"siteTheme": {
+		"background": {
+			"value": "oklch(0.99 0.005 53)",
+			"source": "src/app/globals.css --background"
+		},
+		"ink": {
+			"value": "oklch(0.25 0.04 53)",
+			"source": "src/app/globals.css --foreground"
+		},
+		"primary": {
+			"value": "oklch(0.486 0.088 52.8)",
+			"source": "src/app/globals.css --primary"
+		}
+	}
+}

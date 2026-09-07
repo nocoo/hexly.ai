@@ -1,0 +1,936 @@
+{
+	"r2shot": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [920, 920],
+		"sourceSha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "public/icons/icon16.png",
+				"size": 16,
+				"matchesTransparentSource": true,
+				"transparentPixels": 115,
+				"alphaRange": [0, 255],
+				"sha256": "e6ef0d93a15a060fb517c1d98afe70d19e563bbb8c2d30cc77de216a1b41186c"
+			},
+			{
+				"path": "public/icons/icon48.png",
+				"size": 48,
+				"matchesTransparentSource": true,
+				"transparentPixels": 1184,
+				"alphaRange": [0, 255],
+				"sha256": "494f1bdcafd1a8a81f1ff408720d5a593af46a5ec1c191bd6615e33328166799"
+			},
+			{
+				"path": "public/icons/icon128.png",
+				"size": 128,
+				"matchesTransparentSource": true,
+				"transparentPixels": 8806,
+				"alphaRange": [0, 255],
+				"sha256": "4cddbd279013b30b59f49be9ca3246ab9b8e7069cd89aeec6a859c9980c533a5"
+			},
+			{
+				"path": "public/icons/logo32.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 508,
+				"alphaRange": [0, 255],
+				"sha256": "d8d9eb614b81d3cf26f02db82b8d3f6a488a46e4e4e6da56c6c2d24f5389cd9d"
+			},
+			{
+				"path": "public/icons/logo64.png",
+				"size": 64,
+				"matchesTransparentSource": true,
+				"transparentPixels": 2138,
+				"alphaRange": [0, 255],
+				"sha256": "3affd7b5091fa8088e78f09e9372ecea936e35a1b71923bde41373a67923d072"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "bdf0edc38e82f0874859a8448c47486ac229f06891ece829a22576bf757ec300",
+			"assets/brand/icon-rounded.png": "07f6495a15134ae9aa570be90a7d01f94b54aaa6b85079c4d21eef23a502a673"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"width": "128",
+			"height": "128",
+			"alt": "R2Shot logo"
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 51,
+				"top": 49,
+				"right": 870,
+				"bottom": 870
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 49.5,
+			"clippedPixels": 0
+		}
+	},
+	"hooky": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [900, 900],
+		"sourceSha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "src/icons/icon16.png",
+				"size": 16,
+				"matchesTransparentSource": true,
+				"transparentPixels": 101,
+				"alphaRange": [0, 255],
+				"sha256": "15d02f5343ad65921fb25ad415fd5e988ccc262e946f7ec0696aa2e73a0f5851"
+			},
+			{
+				"path": "src/icons/icon24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 238,
+				"alphaRange": [0, 255],
+				"sha256": "3394aa8eebcba0086ec27e88e62de7fedcfd8b0d856aabe36b9392bb2b979c1f"
+			},
+			{
+				"path": "src/icons/icon32.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 452,
+				"alphaRange": [0, 255],
+				"sha256": "3038fbb51c62ff5ba47cf951c4bfaedaa4c9a0f7ceb8bd09402f49a686141faf"
+			},
+			{
+				"path": "src/icons/icon48.png",
+				"size": 48,
+				"matchesTransparentSource": true,
+				"transparentPixels": 1075,
+				"alphaRange": [0, 255],
+				"sha256": "9ad6f991143598bdaba53538b8a785169102d9e0eb0a3f9c91fbb8e871fb56bf"
+			},
+			{
+				"path": "src/icons/icon64.png",
+				"size": 64,
+				"matchesTransparentSource": true,
+				"transparentPixels": 1985,
+				"alphaRange": [0, 255],
+				"sha256": "bd172977529948f84726ec3afd27ba57db80172aebbc3422942cbf2e3764aca1"
+			},
+			{
+				"path": "src/icons/icon96.png",
+				"size": 96,
+				"matchesTransparentSource": true,
+				"transparentPixels": 4615,
+				"alphaRange": [0, 255],
+				"sha256": "ccf649994c9a34cc9a952d990793241fa98790d53d8cc47a96e70297cbd2dc6d"
+			},
+			{
+				"path": "src/icons/icon128.png",
+				"size": 128,
+				"matchesTransparentSource": true,
+				"transparentPixels": 8350,
+				"alphaRange": [0, 255],
+				"sha256": "98750e15a75814708d70d53a1ce99a28fb4ee1c43244e9a98b3876bca503b015"
+			},
+			{
+				"path": "src/icons/icon256.png",
+				"size": 256,
+				"matchesTransparentSource": true,
+				"transparentPixels": 34181,
+				"alphaRange": [0, 255],
+				"sha256": "8e5ccee98232a08ab96ba8217272a78d6ca566b2134c2fd85bf3a64e3e8e4faa"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "d618aa2a092ad61c031e68108b1927329d8c3619ad5441a0a7390d6396bf6f2d",
+			"assets/brand/icon-rounded.png": "2569bcc971dbbc5317405f9e855fad5678d829aa4aa1e72206162a2cf0e9b518"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"width": "128",
+			"height": "128",
+			"alt": "Hooky logo"
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 39,
+				"top": 57,
+				"right": 860,
+				"bottom": 860
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 39.5,
+			"clippedPixels": 0
+		}
+	},
+	"zhe": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "public/logo-24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 252,
+				"alphaRange": [0, 255],
+				"sha256": "348a5640106c47a57c322b51108524fc319051d872e1f1b2a83f13d8fb06f4ca"
+			},
+			{
+				"path": "public/logo-80.png",
+				"size": 80,
+				"matchesTransparentSource": true,
+				"transparentPixels": 3793,
+				"alphaRange": [0, 255],
+				"sha256": "add7a0d75fba89b155f3bed0337ac10d37f10ef7cd2e1b0a673defd658a7a002"
+			},
+			{
+				"path": "app/icon.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 514,
+				"alphaRange": [0, 255],
+				"sha256": "11b470e0413f77c4fae79c60ae076f8c2ed3cfa9d34d13d05f7a97abb27e5499"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "396762b02a10c8497b4bb423ea4c09ab1d81dd0b0615a5d85efdc60b70fe2964",
+			"assets/brand/icon-rounded.png": "3d71c1ed7f1570f18255aee2ed2a8c890e65da6529cc5e6064a595f941621404"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"width": "128",
+			"height": "128",
+			"alt": "Zhe logo"
+		},
+		"ico": [
+			{
+				"size": [16, 16],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			},
+			{
+				"size": [32, 32],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			}
+		],
+		"platform": {
+			"appleTouch": {
+				"path": "app/apple-icon.png",
+				"size": [180, 180],
+				"opaque": true
+			},
+			"social": {
+				"path": "app/opengraph-image.png",
+				"size": [1200, 630],
+				"mode": "RGB"
+			}
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 207,
+				"top": 207,
+				"right": 1843,
+				"bottom": 1839
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 199.47265439305858,
+			"clippedPixels": 0
+		}
+	},
+	"lyre": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "apps/web/public/logo-24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 217,
+				"alphaRange": [0, 255],
+				"sha256": "3a09fb3e5e8b58a7fa2abf14984d25d9249ca32da842bcdbd943f9f5b21b089a"
+			},
+			{
+				"path": "apps/web/public/logo-80.png",
+				"size": 80,
+				"matchesTransparentSource": true,
+				"transparentPixels": 3262,
+				"alphaRange": [0, 255],
+				"sha256": "efc6010097bdaf61f13f856abf34462bdc5d15d24f0e081b09c3fa6a951bd5e2"
+			},
+			{
+				"path": "apps/web/public/favicon.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 430,
+				"alphaRange": [0, 255],
+				"sha256": "faa62073377adb24e7bbc07d654c156f972b77030348e5453271fca41be026f3"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "9dc87df1c4dc2dc050eabdb9671559766ae1199b9d1bca2ebdd44f95d5ba4d87",
+			"assets/brand/icon-rounded.png": "3774bb6be2c0cd89fb69d17ac13ee0cade73962f424215cf8ec1413ba4b797cf"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"alt": "Lyre Logo",
+			"width": "128",
+			"height": "128"
+		},
+		"ico": [
+			{
+				"size": [16, 16],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			},
+			{
+				"size": [32, 32],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			}
+		],
+		"platform": {
+			"appleTouch": {
+				"path": "apps/web/public/apple-touch-icon.png",
+				"size": [180, 180],
+				"opaque": true
+			},
+			"social": {
+				"path": "apps/web/public/opengraph-image.png",
+				"size": [1200, 630],
+				"mode": "RGB"
+			}
+		},
+		"nativePngs": [
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_16.png",
+				"size": 16,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_32.png",
+				"size": 32,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_64.png",
+				"size": 64,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_128.png",
+				"size": 128,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_256.png",
+				"size": 256,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_512.png",
+				"size": 512,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/AppIcon.appiconset/icon_1024.png",
+				"size": 1024,
+				"matchesInsetPresentation": true
+			}
+		],
+		"preservedMenuBarMarks": [
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/TrayIcon.imageset/tray-icon@2x.png",
+				"sha256": "3e04bb439a5f874f19632bbaeb2668763572e462a6ac32639dbf2132768acbe4",
+				"unchanged": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/TrayIcon.imageset/tray-icon.png",
+				"sha256": "b6b2de338451ae4ff2f22b46b23efbf0bc224615b26b5280997b5dd2ffe2fb97",
+				"unchanged": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/TrayIconRecording.imageset/tray-icon-recording.png",
+				"sha256": "870de74df890ba1ca8ee5a2fc5d04881030f340591a85f6e389a6779f6fd56b9",
+				"unchanged": true
+			},
+			{
+				"path": "apps/macos/Lyre/Assets.xcassets/TrayIconRecording.imageset/tray-icon-recording@2x.png",
+				"sha256": "730e17278651350fc5a1dca4a8eb0d564631f52ed443f03db3897fc674ef7428",
+				"unchanged": true
+			}
+		],
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 183,
+				"top": 128,
+				"right": 1941,
+				"bottom": 1870
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 52.37638419370626,
+			"clippedPixels": 0
+		}
+	},
+	"shrike": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "public/logo-64.png",
+				"size": 64,
+				"matchesTransparentSource": true,
+				"transparentPixels": 1906,
+				"alphaRange": [0, 255],
+				"sha256": "5c737e0ae58d6c1cd5d62abecfe10174a3517ae34b98e88dcaaa8108d89b7956"
+			},
+			{
+				"path": "public/logo-128.png",
+				"size": 128,
+				"matchesTransparentSource": true,
+				"transparentPixels": 8247,
+				"alphaRange": [0, 255],
+				"sha256": "0f7027767b992fd7c28be68fefd7560222ff703bd4ec6c37e9a7aa82b5256506"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "8d394f7cbade80f4f03e588773494e53719df1232cc94908cf0bad9296ab4c74",
+			"assets/brand/icon-rounded.png": "d8f915badd89c8c289f644493ecada3132eef2118cec900a6d4f4ee55fa93e34"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"alt": "Shrike Logo",
+			"width": "128",
+			"height": "128"
+		},
+		"icns": [
+			{
+				"representation": [512, 512, 2],
+				"dimensions": [1024, 1024],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [512, 512, 1],
+				"dimensions": [512, 512],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [256, 256, 2],
+				"dimensions": [512, 512],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [256, 256, 1],
+				"dimensions": [256, 256],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [128, 128, 2],
+				"dimensions": [256, 256],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [128, 128, 1],
+				"dimensions": [128, 128],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [32, 32, 2],
+				"dimensions": [64, 64],
+				"matchesNativePresentation": true
+			},
+			{
+				"representation": [16, 16, 2],
+				"dimensions": [32, 32],
+				"matchesNativePresentation": true
+			}
+		],
+		"windowsIcoSizes": [
+			[16, 16],
+			[24, 24],
+			[32, 32],
+			[48, 48],
+			[64, 64],
+			[256, 256]
+		],
+		"androidSafeZones": [
+			{
+				"path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+				"radius": 32.72,
+				"safeRadius": 33.0
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+				"radius": 49.12,
+				"safeRadius": 49.5
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+				"radius": 130.33,
+				"safeRadius": 132.0
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+				"radius": 97.53,
+				"safeRadius": 99.0
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+				"radius": 65.52,
+				"safeRadius": 66.0
+			}
+		],
+		"androidMonochrome": [
+			{
+				"path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_monochrome.png",
+				"alphaRange": [0, 255],
+				"blackSilhouetteOnly": true
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_monochrome.png",
+				"alphaRange": [0, 255],
+				"blackSilhouetteOnly": true
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_monochrome.png",
+				"alphaRange": [0, 255],
+				"blackSilhouetteOnly": true
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_monochrome.png",
+				"alphaRange": [0, 255],
+				"blackSilhouetteOnly": true
+			},
+			{
+				"path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_monochrome.png",
+				"alphaRange": [0, 255],
+				"blackSilhouetteOnly": true
+			}
+		],
+		"nativePngs": [
+			{
+				"path": "src-tauri/icons/32x32.png",
+				"size": 32,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "src-tauri/icons/64x64.png",
+				"size": 64,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "src-tauri/icons/128x128.png",
+				"size": 128,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "src-tauri/icons/128x128@2x.png",
+				"size": 256,
+				"matchesInsetPresentation": true
+			},
+			{
+				"path": "src-tauri/icons/icon.png",
+				"size": 512,
+				"matchesInsetPresentation": true
+			}
+		],
+		"preservedMenuBarMarks": [
+			{
+				"path": "logo-menu.png",
+				"sha256": "a6267431087289e33230ffe3093dc8538f9ba988f24231890200a27cab6a18ab",
+				"unchanged": true
+			},
+			{
+				"path": "src-tauri/icons/tray-icon.png",
+				"sha256": "598a04ac65b15759505ee7731c4295ac97d50447c8b80f08d933914157fd7d34",
+				"unchanged": true
+			}
+		],
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 118,
+				"top": 271,
+				"right": 1989,
+				"bottom": 1844
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 58.50000000000006,
+			"clippedPixels": 0
+		}
+	},
+	"wooly": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "public/logo-24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 164,
+				"alphaRange": [0, 255],
+				"sha256": "90d5de4cec084855ed7a561eecec1ed370b6080abc9e1e15ece6aa93e9bd38cc"
+			},
+			{
+				"path": "public/logo-80.png",
+				"size": 80,
+				"matchesTransparentSource": true,
+				"transparentPixels": 2633,
+				"alphaRange": [0, 255],
+				"sha256": "72a76248a9f1082e910d8c5addc9f9392017f52cda958e9dde112fb823fa8cec"
+			},
+			{
+				"path": "src/app/icon.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 328,
+				"alphaRange": [0, 255],
+				"sha256": "ea4e276c8c29d1ab0652dc3445bde14254c06decef7b701dc3adf301ccec3287"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "80f28d046fb46270a2ea058c5b36188849c00895de8425ad3cf578850f1c8314",
+			"assets/brand/icon-rounded.png": "019e601eb2473e197b21333885c42559bd6067d36352bc5a0a31107ad34c2e90"
+		},
+		"readme": {
+			"path": "README.md",
+			"alt": "Wooly",
+			"src": "assets/brand/icon-rounded.png",
+			"width": "128",
+			"height": "128"
+		},
+		"ico": [
+			{
+				"size": [16, 16],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			},
+			{
+				"size": [32, 32],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			}
+		],
+		"platform": {
+			"appleTouch": {
+				"path": "src/app/apple-icon.png",
+				"size": [180, 180],
+				"opaque": true
+			},
+			"social": {
+				"path": "src/app/opengraph-image.png",
+				"size": [1200, 630],
+				"mode": "RGB"
+			}
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 179,
+				"top": 121,
+				"right": 2013,
+				"bottom": 2047
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 0.5000000000000568,
+			"clippedPixels": 0
+		}
+	},
+	"noheir": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "public/logo-24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 178,
+				"alphaRange": [0, 255],
+				"sha256": "58fc7aa725002039cc60d0bc2eebb7a5e6d41aad2ddcc1a62947e1996c10a192"
+			},
+			{
+				"path": "public/logo-32.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 359,
+				"alphaRange": [0, 255],
+				"sha256": "e055234eed08929c89ff23b588fd03a59cdbe06d1928222832e78c5e1cafe21d"
+			},
+			{
+				"path": "public/logo-64.png",
+				"size": 64,
+				"matchesTransparentSource": true,
+				"transparentPixels": 1734,
+				"alphaRange": [0, 255],
+				"sha256": "99f26e58f400bef50ce6bf0e52c070e900a8cfe1a37434f63580936cf4017cb6"
+			},
+			{
+				"path": "public/logo-80.png",
+				"size": 80,
+				"matchesTransparentSource": true,
+				"transparentPixels": 2815,
+				"alphaRange": [0, 255],
+				"sha256": "1c5f3dcd3318189c927d1838c924e55718341872d75a6c3372dc3f61eab5ce59"
+			},
+			{
+				"path": "public/logo-128.png",
+				"size": 128,
+				"matchesTransparentSource": true,
+				"transparentPixels": 7607,
+				"alphaRange": [0, 255],
+				"sha256": "07e393034669bc60498e78b448d329146bf4869c9542db29c3017bf53bb5f2da"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "3ecf4b5efe261b8e8e8e1d31756f2289156b6f8572373bc7510b391431d97ebc",
+			"assets/brand/icon-rounded.png": "3e61d21f3a56f015028371120bab361664b8f8a350d6460f755f0f7d39b47f23"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"alt": "Noheir Logo",
+			"width": "128",
+			"height": "128"
+		},
+		"ico": [
+			{
+				"size": [16, 16],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			},
+			{
+				"size": [32, 32],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			}
+		],
+		"platform": {
+			"appleTouch": {
+				"path": "public/logo-180.png",
+				"size": [180, 180],
+				"opaque": true
+			},
+			"social": {
+				"path": "public/opengraph-image.png",
+				"size": [1200, 630],
+				"mode": "RGB"
+			}
+		},
+		"installIcons": {
+			"files": [["public/logo-192.png", 192], ["public/icon-512.png", 512]],
+			"purpose": "any",
+			"maskableClaim": false
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 172,
+				"top": 202,
+				"right": 2047,
+				"bottom": 2028
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 0.5000000000000568,
+			"clippedPixels": 0
+		}
+	},
+	"dove": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "src/client/public/logo-24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 191,
+				"alphaRange": [0, 255],
+				"sha256": "90fa1048f83db4c5bc3fc5749895e59183d0f8621d1ea1ba71367a3d3bf18d40"
+			},
+			{
+				"path": "src/client/public/logo-80.png",
+				"size": 80,
+				"matchesTransparentSource": true,
+				"transparentPixels": 3097,
+				"alphaRange": [0, 255],
+				"sha256": "f0c67cd544bec458d70669e1b82ba6ed8f6b7d11954ad023977dc1dc2d800554"
+			},
+			{
+				"path": "src/client/public/favicon.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 388,
+				"alphaRange": [0, 255],
+				"sha256": "7d6392cba6b5f6ca72e9dfebb9147a59fa4d672d9b9eebabd191497e7f314306"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "fcafb6229474efe056d37bcee0b114acdf6c7d70da3a80c43609a5ca4af0e074",
+			"assets/brand/icon-rounded.png": "2d759d13fd984a8d89a5020a0afd85a460fbd6b444eb3ad8c0a2d6c44708fd06"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"alt": "Dove Logo",
+			"width": "128",
+			"height": "128"
+		},
+		"ico": [
+			{
+				"size": [16, 16],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			},
+			{
+				"size": [32, 32],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			}
+		],
+		"platform": {
+			"appleTouch": {
+				"path": "src/client/public/apple-touch-icon.png",
+				"size": [180, 180],
+				"opaque": true
+			},
+			"social": {
+				"path": "src/client/public/opengraph-image.png",
+				"size": [1200, 630],
+				"mode": "RGB"
+			}
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 153,
+				"top": 247,
+				"right": 1879,
+				"bottom": 1901
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": 146.50000000000006,
+			"clippedPixels": 0
+		}
+	},
+	"neo": {
+		"method": "retained-original",
+		"generationCalls": 0,
+		"nativeDimensions": [2048, 2048],
+		"sourceSha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"byteIdenticalTransparentMaster": true,
+		"smallMarks": [
+			{
+				"path": "public/logo-24.png",
+				"size": 24,
+				"matchesTransparentSource": true,
+				"transparentPixels": 118,
+				"alphaRange": [0, 255],
+				"sha256": "a07196895a3d9533ba6e1b9e89396aee6d7e7668b33b933f80570ff05291eb96"
+			},
+			{
+				"path": "public/logo-80.png",
+				"size": 80,
+				"matchesTransparentSource": true,
+				"transparentPixels": 2063,
+				"alphaRange": [0, 255],
+				"sha256": "1481cbe2fa2a7511123ff80e4bd4d1032801ab19884fefcb0d391b18271c4c6b"
+			},
+			{
+				"path": "app/icon.png",
+				"size": 32,
+				"matchesTransparentSource": true,
+				"transparentPixels": 254,
+				"alphaRange": [0, 255],
+				"sha256": "df5b252ccd8ba19888bb528beb21f8ecd5f74023bf89c22ea8537ad23069f699"
+			}
+		],
+		"masters": {
+			"assets/brand/icon.png": "2e836657fb25fd0ebdeff70c249e6042922d59adcce25dc288dc6864dfeb7b32",
+			"assets/brand/icon-rounded.png": "a4211243fdde65090cc3432563fba4b504dbfefe4033a6d8b99f92f17756012e"
+		},
+		"readme": {
+			"path": "README.md",
+			"src": "assets/brand/icon-rounded.png",
+			"alt": "Neo Logo",
+			"width": "128",
+			"height": "128"
+		},
+		"ico": [
+			{
+				"size": [16, 16],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			},
+			{
+				"size": [32, 32],
+				"matchesTransparentSource": true,
+				"alphaRange": [0, 255]
+			}
+		],
+		"platform": {
+			"appleTouch": {
+				"path": "app/apple-icon.png",
+				"size": [180, 180],
+				"opaque": true
+			},
+			"social": {
+				"path": "app/opengraph-image.png",
+				"size": [1200, 630],
+				"mode": "RGB"
+			}
+		},
+		"installIcons": {
+			"files": [["public/icon-192.png", 192], ["public/icon-512.png", 512]],
+			"purpose": "any",
+			"maskableClaim": false
+		},
+		"placement": {
+			"scale": 1,
+			"offsetAt2048": [0, 0],
+			"bounds": {
+				"left": 81,
+				"top": 202,
+				"right": 1968,
+				"bottom": 2047
+			},
+			"visibleAlphaThreshold": 16,
+			"minimumRoundedEdgeClearance": -31.177266927372727,
+			"clippedPixels": 3798
+		},
+		"intentionalRoundedIntersection": "Original terminal lower shoulders only; transparent master remains exact."
+	}
+}

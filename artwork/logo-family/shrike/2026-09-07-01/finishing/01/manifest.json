@@ -1,0 +1,346 @@
+{
+	"createdAt": "2026-09-07T00:06:59.950Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../source/original.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing.",
+	"generationCalls": 0,
+	"upscaledExportSizes": [],
+	"settings": {
+		"project": "shrike",
+		"sourceMode": "retained-transparent",
+		"background": {
+			"base": "#718591",
+			"light": "#abbac1",
+			"shade": "#465c6b",
+			"motif": "#293f4e",
+			"grainAmplitude": 1,
+			"grainSeed": 609075,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.12,
+			"pattern": {
+				"name": "Folded wings",
+				"description": "Broad angular wing pleats overlap at the top-left and lower-right edges. Irregular pointed folds and short inset seams form a slate paper relief with no curling or radial motif.",
+				"layers": [
+					{
+						"d": "M-95 13L327-82L176 116L-96 294Z M-82 325L196 150L108 349L-96 526Z M831 1100L1022 719L1115 760L1012 1110Z M530 1104L833 781L791 983L670 1120Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M-89 295L182 117L333-81 M-90 528L114 351L202 151 M798 984L839 782 M839 1102L1029 721",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M581-91L776 51L1084 103L909-67Z M-85 741L133 614L64 836L-90 970Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M777 57L1083 109 M-88 974L70 838L139 614",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+		},
+		"shadows": [
+			{
+				"color": [
+					35,
+					46,
+					54
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					28,
+					37,
+					43
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+		},
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": []
+	},
+	"statistics": {
+		"backgroundPixels": 2250430,
+		"foregroundPixels": 1943874,
+		"softEdgePixels": 1936680,
+		"foregroundByteIdentical": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 118,
+			"top": 271,
+			"right": 1989,
+			"bottom": 1844
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 58.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1909,
+			"sha256": "525dd9c4dfb9e20e1d602a38f8266e5e9ccaf55f082ffe29fb96ef8bbe2e0936"
+		},
+		{
+			"path": "source-review.json",
+			"bytes": 660,
+			"sha256": "00788e2afd5588de6f90dcce41ed4c090dacd59308206f155930f979d1c2a333"
+		},
+		{
+			"path": "source.json",
+			"bytes": 1011,
+			"sha256": "af023b2d50d073917a0aee111a09abf42cbad15df3326157df506b69e85d1ae6"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 25762,
+			"sha256": "32eacc5f26e30672413e7bab184aeb1c7c22d40d8215f8a1a8f289255cd86c88"
+		},
+		{
+			"path": "retained-foreground.png",
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 235188,
+			"sha256": "35f0333656117dab48700114569dacfbe33f44ee6cea541ae01c0fd59378540d"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 959,
+			"sha256": "19a7a2fad48bdfa69dc4150e212a1e5ed41248129b1428953297795f153276aa"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2391424,
+			"sha256": "06ad2e05fbe5e17e91da6a1a601ed31971a6d94431b2c19a46a1eba14e6ea406"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 177534,
+			"sha256": "da630451a2b74eaef0c23af1fc345a3a604302dd9a13e12c8022c20308ffe9e5"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 144925,
+			"sha256": "9b55d8ae74ae4bf2fec8a39c7c5e5653a831a68f4406aaca1ad07d5854d77ce3"
+		},
+		{
+			"path": "exports/shrike-transparent-2048.png",
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		{
+			"path": "exports/shrike-icon-2048.png",
+			"bytes": 5313092,
+			"sha256": "8d394f7cbade80f4f03e588773494e53719df1232cc94908cf0bad9296ab4c74"
+		},
+		{
+			"path": "exports/shrike-rounded-2048.png",
+			"bytes": 5217349,
+			"sha256": "d8f915badd89c8c289f644493ecada3132eef2118cec900a6d4f4ee55fa93e34"
+		},
+		{
+			"path": "exports/shrike-transparent-1024.png",
+			"bytes": 1092185,
+			"sha256": "3146ab72cca6d4c3a07566e712d1995e5898bd6cf1af2ba871d9848ac00bf0e8"
+		},
+		{
+			"path": "exports/shrike-icon-1024.png",
+			"bytes": 1455255,
+			"sha256": "643e37df0e6dacbf1b2076bffbf5bf1a0178eab3328df359b221db720017f289"
+		},
+		{
+			"path": "exports/shrike-rounded-1024.png",
+			"bytes": 1446047,
+			"sha256": "ac71a62789aaba2da0d9cc8888dab9c591dc515b94825ea19d9fb6d4255f73d9"
+		},
+		{
+			"path": "exports/shrike-transparent-512.png",
+			"bytes": 288314,
+			"sha256": "d82cfad231382f06a2990ff6b97772e802b227160b8a298449a6e44574536bf9"
+		},
+		{
+			"path": "exports/shrike-icon-512.png",
+			"bytes": 406982,
+			"sha256": "97cdf31d4649c2f2948230818a2062c3277993ee6a3af5b64ce33cbc8a93355c"
+		},
+		{
+			"path": "exports/shrike-rounded-512.png",
+			"bytes": 406079,
+			"sha256": "11f1b18187f39aa9e0651d1a528ccb3e3fe617d57e8a9ccd584eb02ef12262ac"
+		},
+		{
+			"path": "exports/shrike-transparent-256.png",
+			"bytes": 82646,
+			"sha256": "9f4cc3272693d4d22c0a9fc8288039668f069500a16f5baf31072c2495917434"
+		},
+		{
+			"path": "exports/shrike-icon-256.png",
+			"bytes": 104147,
+			"sha256": "826b26e4e97504d567aa9402d76a1efffd6559fb4b1d518c2551547941e52d19"
+		},
+		{
+			"path": "exports/shrike-rounded-256.png",
+			"bytes": 106750,
+			"sha256": "3e3e3535a01458986adce099de5a2a8691f8e396d833a3d242926730c7a1ec5d"
+		},
+		{
+			"path": "exports/shrike-transparent-128.png",
+			"bytes": 25954,
+			"sha256": "cb8d5d9a2a0d869b8caee1df5bf68e008f42bf12bd1824433dab938a693b909f"
+		},
+		{
+			"path": "exports/shrike-icon-128.png",
+			"bytes": 33555,
+			"sha256": "74ea499cfc96cc41fa6e3eeab0a69a61bcdc7f30972045eb855f889f7f4a14b2"
+		},
+		{
+			"path": "exports/shrike-rounded-128.png",
+			"bytes": 34739,
+			"sha256": "312311948e2b525ada34e5ce66a96f6b21a04cdf3393aad7c996e9fa2dbd74db"
+		},
+		{
+			"path": "exports/shrike-transparent-64.png",
+			"bytes": 7859,
+			"sha256": "726cfa6c621acda0f2c9184bf31ffe0ef6d74eee5dfb9f69d0e467fe97234df2"
+		},
+		{
+			"path": "exports/shrike-icon-64.png",
+			"bytes": 10469,
+			"sha256": "4f042f7927b9d10571c0148a21695231eb72f9922e2c8d7a4f04771fc044bafb"
+		},
+		{
+			"path": "exports/shrike-rounded-64.png",
+			"bytes": 10950,
+			"sha256": "ce559532c3b8505b1c5e78be1df30654b9ca0f15f213e240a0dadd8df35e72e9"
+		},
+		{
+			"path": "exports/shrike-transparent-48.png",
+			"bytes": 4773,
+			"sha256": "e1776cc4cf91980be047498deaa3b052bb8449982b30153e8397cad0942faf66"
+		},
+		{
+			"path": "exports/shrike-icon-48.png",
+			"bytes": 6296,
+			"sha256": "5d336bcd93d0e9dd34fb5ea3f73ad98b48770a5aec49f64d39c6bd3b116a827a"
+		},
+		{
+			"path": "exports/shrike-rounded-48.png",
+			"bytes": 6606,
+			"sha256": "6fc537cdc7a3b57b4460b963f68768ed03f1ec241c0d7c76b3e189fa607d9b99"
+		},
+		{
+			"path": "exports/shrike-transparent-32.png",
+			"bytes": 2426,
+			"sha256": "033dd0bd392a252ce8ad26596cf3c77d401a538bb96695b9a8e660ce12ecde79"
+		},
+		{
+			"path": "exports/shrike-icon-32.png",
+			"bytes": 3185,
+			"sha256": "c3d4b0fe612260f1b0f8c662cd9c4a3b7a15a156bf266cb8de70da78c8f5f6da"
+		},
+		{
+			"path": "exports/shrike-rounded-32.png",
+			"bytes": 3332,
+			"sha256": "36875a7e8c1d10d1b19e66aed839a4888749b52b09d77eb791032acc5486950c"
+		},
+		{
+			"path": "exports/shrike-transparent-24.png",
+			"bytes": 1531,
+			"sha256": "1c00918f8601879641742243a30fdcfb8a88f60fb3e58fd6b01cab677e7fdfb4"
+		},
+		{
+			"path": "exports/shrike-icon-24.png",
+			"bytes": 1920,
+			"sha256": "8175041f9069eb51c18cb5602cfc8894ee3f9c59f371f1ca59bfc866eaed6dba"
+		},
+		{
+			"path": "exports/shrike-rounded-24.png",
+			"bytes": 2024,
+			"sha256": "27cc26940e3849f86561bf2cbd0a0375dd8405f300a4760863f7f525b94ae844"
+		},
+		{
+			"path": "exports/shrike-transparent-16.png",
+			"bytes": 841,
+			"sha256": "752b86a14c33f5cb819bd74cf5ca9414e66992c4498d6f5b7d22e4db4e3b6629"
+		},
+		{
+			"path": "exports/shrike-icon-16.png",
+			"bytes": 957,
+			"sha256": "0ad483fdd0d245cdd264c85d03a99122075140960f0518bdcbc00532468ccc75"
+		},
+		{
+			"path": "exports/shrike-rounded-16.png",
+			"bytes": 999,
+			"sha256": "262907a8995d6706c2b885def4f8c9e9e9aa186465edb16ae520f6af5064b392"
+		},
+		{
+			"path": "exports/shrike-white-2048.png",
+			"bytes": 3661275,
+			"sha256": "81c75adf27b3ba51f7077324af7a8cb5395299274df9644afabb0509dff74acc"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1019379,
+			"sha256": "c2fa4b2765d9fef3a34c8a5d45634568bdb744e8085c559a1a4c3102e3b0a6cd"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1014276,
+			"sha256": "0a184f6cde245a6fe4aa9473d1ba5bbd01e3c0301ac6e4b7e8da793fac0d8fd9"
+		}
+	]
+}

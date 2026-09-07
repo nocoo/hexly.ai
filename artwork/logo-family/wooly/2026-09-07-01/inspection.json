@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4261802,
+		"repository": "https://github.com/nocoo/wooly",
+		"repositoryRevision": "348dac5c402063de8ef6cf69f8c93f8da43347bf",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/wooly/blob/348dac5c402063de8ef6cf69f8c93f8da43347bf/logo.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 179,
+			"top": 121,
+			"right": 2013,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 0.5000000000000568,
+		"clippedPixels": 0
+	},
+	"framingAssessment": "The original lower or right shoulder entry is retained; no visible source pixels are lost to the rounded mask.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/wooly",
+			"/artwork/logo-family/wooly/2026-09-07-01/review.html"
+		]
+	}
+}

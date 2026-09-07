@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3750012,
+		"repository": "https://github.com/nocoo/shrike",
+		"repositoryRevision": "9ca43106ca79f35f7b0ad77198b82150a2307b44",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 118,
+			"top": 271,
+			"right": 1989,
+			"bottom": 1844
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 58.50000000000006,
+		"clippedPixels": 0
+	},
+	"framingAssessment": "The entire retained silhouette remains inside the rounded boundary; no visible source pixels are clipped.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/shrike",
+			"/artwork/logo-family/shrike/2026-09-07-01/review.html"
+		]
+	}
+}

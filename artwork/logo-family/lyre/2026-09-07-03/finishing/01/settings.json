@@ -1,0 +1,70 @@
+{
+	"project": "lyre",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#a16850",
+		"light": "#d4a17d",
+		"shade": "#70422f",
+		"motif": "#512819",
+		"grainAmplitude": 1,
+		"grainSeed": 609074,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.11,
+		"pattern": {
+			"name": "Lyrebird fan",
+			"description": "A wide off-center feather fan opens from the lower-left beyond the canvas. Unequal curved ribs and a second clipped fan at the upper right suggest pressed paper feathers, without repeating parallel stripes.",
+			"layers": [
+				{
+					"d": "M-110 1090C-70 655 2 226 304-55L333-46C44 258-29 679-75 1101Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-90 1088C80 759 206 555 442 408C102 714 14 924-52 1107Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-92 1104C144 955 318 898 607 924C351 941 154 1027-57 1122Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-70 1100C-22 679 52 259 340-41 M-47 1108C23 925 112 716 449 413 M-53 1125C160 1033 354 947 609 931",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M1080-72C890 51 798 93 650 96C844 146 1000 50 1096-41Z M1089-32C945 112 942 231 985 326C970 178 1060 72 1110-3Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M653 102C846 152 1003 56 1099-35 M992 329C977 181 1067 75 1117 0",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+	},
+	"shadows": [
+		{
+			"color": [56, 33, 24],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [45, 26, 19],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": []
+}
