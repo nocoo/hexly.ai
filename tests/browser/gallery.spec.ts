@@ -15,6 +15,8 @@ for (const id of projects
 		if (!project?.family) throw new Error(`Missing refinement: ${id}`);
 		const family = project.family;
 		const retained = family.method === "retained-original";
+		const adapted = family.method === "reference-adaptation";
+		const supplied = retained || adapted;
 		await page.goto(`/logos/${id}`);
 		await expect(page.locator("#identity-title")).toContainText(project.title);
 		const repository = page
@@ -119,7 +121,7 @@ for (const id of projects
 			await expect(link).toHaveAttribute("href", family.foreground.original);
 		await page
 			.getByText(
-				retained
+				supplied
 					? "Read the presentation brief"
 					: "Read the exact generation prompt",
 				{ exact: true },
@@ -127,7 +129,7 @@ for (const id of projects
 			.click();
 		const prompt = await readFile(
 			new URL(
-				`../../public${family.root}/${retained ? "brief" : "prompt"}.txt`,
+				`../../public${family.root}/${supplied ? "brief" : "prompt"}.txt`,
 				import.meta.url,
 			),
 			"utf8",
@@ -139,11 +141,15 @@ for (const id of projects
 		).toHaveCount(0);
 		await expect(
 			page.getByRole("link", {
-				name: retained ? "Untouched original" : "Untouched generation",
+				name: adapted
+					? "Original illustration"
+					: retained
+						? "Untouched original"
+						: "Untouched generation",
 			}),
 		).toHaveAttribute(
 			"href",
-			`${family.root}/${retained ? "source" : "raw"}.png`,
+			`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : "raw.png"}`,
 		);
 		if (retained) {
 			await expect(

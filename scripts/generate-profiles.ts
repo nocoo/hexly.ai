@@ -21,6 +21,13 @@ for (const [position, project] of projects.entries()) {
 	const family = project.family;
 	const retained = family?.method === "retained-original";
 	const material = family?.series === "material";
+	const adapted = family?.method === "reference-adaptation";
+	const supplied = retained || adapted;
+	const sourceFile = adapted
+		? "source.jpg"
+		: retained
+			? "source.png"
+			: "raw.png";
 	const familySection = family
 		? `## Refined identity
 
@@ -33,11 +40,11 @@ ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en
 - [Full process archive](${family.archive})
 - [Transparent foreground](../../public${family.foreground.original}); SHA-256: \`${family.foreground.sha256}\`
 - [Square icon](../../public${family.root}/icon.png), [rounded icon](../../public${family.root}/rounded.png), [white version](../../public${family.root}/white.png)
-- [${retained ? "Untouched original" : "Untouched generation"}](../../public${family.root}/${retained ? "source" : "raw"}.png), [${retained ? "presentation brief" : "exact prompt"}](../../public${family.root}/${retained ? "brief" : "prompt"}.txt), [public asset checksums](../../public${family.root}/manifest.json)
+- [${adapted ? "Original illustration" : retained ? "Untouched original" : "Untouched generation"}](../../public${family.root}/${sourceFile}), [${supplied ? "presentation brief" : "exact prompt"}](../../public${family.root}/${supplied ? "brief" : "prompt"}.txt), [public asset checksums](../../public${family.root}/manifest.json)
 - [Previous original](../../public${family.previous.original}), copied from [its immutable source](${family.previous.sourceUrl})
 - Previous SHA-256: \`${family.previous.sha256}\`
-- ${retained ? `Original artwork retained byte-for-byte at native ${family.foreground.width} × ${family.foreground.height}. Zero image-generation calls; only background, grain, and shadow layers were composed.` : `Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.`}
-- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.${retained && family.foreground.width < 2048 ? ` Sizes above ${family.foreground.width} px are explicitly recorded upscales; the native transparent master is unchanged.` : ""}
+- ${adapted ? `The owner-supplied illustration is extracted and uniformly reframed at native ${family.foreground.width} × ${family.foreground.height}. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.` : retained ? `Original artwork retained byte-for-byte at native ${family.foreground.width} × ${family.foreground.height}. Zero image-generation calls; only background, grain, and shadow layers were composed.` : `Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.`}
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.${supplied && family.foreground.width < 2048 ? ` Sizes above ${family.foreground.width} px are explicitly recorded upscales; the native master retains its recorded resolution.` : ""}
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
 ### Refined palette
@@ -94,9 +101,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ${familySection}## ${family ? "Further refinements" : "Future family notes"}
 
-${material ? "This is an owner-directed material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct pale engineering presentation. The animal-series drawing and accessory rules do not apply." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
+${material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-${material ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}
+${material ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}
 `;
 	await writeFile(`docs/profiles/${name}`, content);
 }
