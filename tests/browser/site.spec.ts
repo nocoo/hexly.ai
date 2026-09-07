@@ -4,6 +4,10 @@ import projects from "../../src/data/projects.json" with { type: "json" };
 
 const active = projects.filter((project) => !project.archived);
 const archived = projects.filter((project) => project.archived);
+const tiers = [
+	active.filter((project) => project.family),
+	active.filter((project) => !project.family),
+];
 
 test("renders active projects with local logos, redraw badges, and working destinations", async ({
 	page,
@@ -30,7 +34,9 @@ test("renders active projects with local logos, redraw badges, and working desti
 			})),
 		),
 	).toEqual(
-		active.map((project) => ({ label: "GitHub", href: project.repository })),
+		tiers
+			.flat()
+			.map((project) => ({ label: "GitHub", href: project.repository })),
 	);
 	const refined = active.filter((project) => project.family);
 	await expect(page.locator(".refined-badge")).toHaveCount(refined.length);
@@ -91,7 +97,13 @@ test("combines search and categories, resets empty results, and sorts by name", 
 	await expect(search).toHaveValue("");
 	await page.getByLabel("Sort projects").selectOption("az");
 	const names = await page.locator(".project-card h3").allTextContents();
-	expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b)));
+	expect(names).toEqual(
+		tiers.flatMap((tier) =>
+			tier
+				.map((project) => project.title)
+				.toSorted((a, b) => a.localeCompare(b, "en")),
+		),
+	);
 	await expect(page).toHaveURL(/sort=az/);
 });
 
