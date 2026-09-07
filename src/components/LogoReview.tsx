@@ -39,7 +39,13 @@ export function LogoReview({
 		<div className="logo-review" data-presentation={view}>
 			<section aria-label={t.artwork}>
 				<div className="comparison-toolbar">
-					<p>{family ? t.comparisonDescription : t.artwork}</p>
+					<p>
+						{family?.method === "retained-original"
+							? t.retainedComparison
+							: family
+								? t.comparisonDescription
+								: t.artwork}
+					</p>
 					<fieldset className="view-switch" aria-label={t.presentation}>
 						{(["icon", "transparent", "white"] as const).map((value) => (
 							<button
@@ -150,7 +156,7 @@ export function LogoReview({
 					).map(([size, label]) => (
 						<figure key={size}>
 							<div className="size-well">
-								<Logo project={project} size={size} eager />
+								<Logo project={project} size={size} framed={size > 32} eager />
 							</div>
 							<figcaption>
 								<strong>{size} px</strong>

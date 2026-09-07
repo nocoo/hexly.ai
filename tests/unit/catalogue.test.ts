@@ -4,7 +4,6 @@ import {
 	catalogueProblems,
 	categoryCounts,
 	destination,
-	destinationHost,
 	filterProjects,
 	selectedProject,
 } from "../../src/model/catalogue";
@@ -74,13 +73,9 @@ describe("the imported project catalogue", () => {
 	});
 	it("uses evidenced website links and falls back to repository links", () => {
 		expect(destination(frogie)).toBe("https://github.com/nocoo/frogie");
-		expect(destinationHost(frogie)).toBe("github.com");
 		expect(destination({ ...frogie, website: "https://pew.md" })).toBe(
 			"https://pew.md",
 		);
-		expect(
-			destinationHost({ ...frogie, website: "https://www.example.com/tool" }),
-		).toBe("example.com");
 	});
 	it("rejects incomplete records, duplicate identities, unsafe URLs, and invalid image evidence", () => {
 		const damaged: Project = {
