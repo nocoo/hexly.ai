@@ -1,0 +1,742 @@
+{
+	"checkedAt": "2026-09-07T11:18:20.504Z",
+	"scope": "Actual built source applications on task-owned loopback servers. Dashboard data requests use offline fixtures; no personal data, OAuth provider login, or external messages are involved.",
+	"projects": {
+		"dogfight": {
+			"baseURL": "http://127.0.0.1:24561",
+			"route": "/",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/dogfight-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/dogfight-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/dogfight-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon.png",
+					"sha256": "2092ea38fcea7819fd18fcd0719165f879666dbdc9a616df76fc2a9e1f55a24b",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true
+		},
+		"pokepocket": {
+			"baseURL": "http://127.0.0.1:24560",
+			"route": "/",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [36, 36],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/pokepocket-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [36, 36],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/pokepocket-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [30, 30],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/pokepocket-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon.png",
+					"sha256": "a7d98bea58ef9626b728ab34e2f212d16cc21284844a91bee33c5a529729cd78",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true,
+			"gameHeader": "The second in-game header uses the same transparent source in committed App.tsx. No personal cartridge was opened for the logo audit."
+		},
+		"flow": {
+			"baseURL": "http://127.0.0.1:24562",
+			"route": "/",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/flow-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/flow-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/flow-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon.png",
+					"sha256": "a4639f74205a5a14d158cf4eb66b1d1311bed63a43f890f21f68848de32259ed",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true
+		},
+		"signoff-now": {
+			"baseURL": "http://127.0.0.1:24563",
+			"route": "/settings",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/signoff-now-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "light",
+					"viewport": "collapsed",
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/signoff-now-collapsed-light.png"
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/signoff-now-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": "collapsed",
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/signoff-now-collapsed-dark.png"
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/signoff-now-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon.png",
+					"sha256": "6e1048dbff206c3b8e29718750547912e8d45acb2b7f9fab8ec49b2a8f8f5e23",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true
+		},
+		"runner": {
+			"baseURL": "http://127.0.0.1:24564",
+			"route": "/settings",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [24, 24],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/runner-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [24, 24],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"src": "/logo-64.png",
+							"decoded": true,
+							"cssSize": [28, 28],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/runner-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/runner-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon-16.png",
+					"sha256": "bc8a559cfe89eb927365f88457321b432905fc567667add9a061ddecc3629d7f",
+					"served": true
+				},
+				{
+					"path": "/favicon-32.png",
+					"sha256": "c8f02e2c9c8ccfa5e40d2f90745d723c6a1791055fd01bdb0c235bffa327a74e",
+					"served": true
+				},
+				{
+					"path": "/favicon-48.png",
+					"sha256": "35d9a3a74931a43c4e0ccd50c8f8e79626cfb484f3baee6e4dd2e133fd0e48db",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/favicon-16.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon-32.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon-48.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon.ico",
+					"type": "image/x-icon"
+				}
+			],
+			"faviconMatchesSource": true
+		},
+		"pew-game": {
+			"baseURL": "http://127.0.0.1:24565",
+			"route": "/",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/pew-game-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/pew-game-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [],
+					"screenshot": "source-screenshots/pew-game-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/icon.png",
+					"sha256": "e1d00323c9c8a276f08ca297548e518f08066c8b753dbc58235ad6fc22277783",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "icon",
+					"href": "/icon.png",
+					"type": "image/png"
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true
+		},
+		"arena": {
+			"baseURL": "http://127.0.0.1:24566",
+			"route": "/login",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/_next/image?url=%2Flogo-32.png&w=32&q=75",
+							"decoded": true,
+							"cssSize": [16, 16],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"src": "/_next/image?url=%2Flogo-128.png&w=256&q=75",
+							"decoded": true,
+							"cssSize": [96, 96],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/arena-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/_next/image?url=%2Flogo-32.png&w=32&q=75",
+							"decoded": true,
+							"cssSize": [16, 16],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"src": "/_next/image?url=%2Flogo-128.png&w=256&q=75",
+							"decoded": true,
+							"cssSize": [96, 96],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/arena-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [
+						{
+							"src": "/_next/image?url=%2Flogo-32.png&w=32&q=75",
+							"decoded": true,
+							"cssSize": [16, 16],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						},
+						{
+							"src": "/_next/image?url=%2Flogo-128.png&w=256&q=75",
+							"decoded": true,
+							"cssSize": [96, 96],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "0px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/arena-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon.png",
+					"sha256": "2e735a83d3f86b7f4efded8ada19bd41fb450a7161354f0680615f038c329272",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "shortcut icon",
+					"href": "/favicon.ico",
+					"type": ""
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"type": ""
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true,
+			"authenticatedSidebar": "Both actual source sidebar branches and their transparent Next Image consumers pass source typechecking and native asset verification. Browser captures cover the public login surfaces; no personal database/session was used."
+		},
+		"geekhub": {
+			"baseURL": "http://127.0.0.1:24567",
+			"route": "/login",
+			"arrangements": [
+				{
+					"theme": "light",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/_next/image?url=%2Flogo-64.png&w=128&q=75",
+							"decoded": true,
+							"cssSize": [64, 64],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "9999px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/geekhub-desktop-light.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 1440,
+						"height": 1000
+					},
+					"marks": [
+						{
+							"src": "/_next/image?url=%2Flogo-64.png&w=128&q=75",
+							"decoded": true,
+							"cssSize": [64, 64],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "9999px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/geekhub-desktop-dark.png",
+					"pageErrors": []
+				},
+				{
+					"theme": "dark",
+					"viewport": {
+						"width": 390,
+						"height": 844
+					},
+					"marks": [
+						{
+							"src": "/_next/image?url=%2Flogo-64.png&w=128&q=75",
+							"decoded": true,
+							"cssSize": [64, 64],
+							"radius": "0px",
+							"mask": "none",
+							"background": "rgba(0, 0, 0, 0)",
+							"parentRadius": "9999px",
+							"parentOverflow": "visible"
+						}
+					],
+					"screenshot": "source-screenshots/geekhub-mobile-dark.png",
+					"pageErrors": []
+				}
+			],
+			"assets": [
+				{
+					"path": "/favicon.png",
+					"sha256": "a22c53b9503a38a8b5665b1f2d6663aba50f776a825a99666676fd6f18ef7c0c",
+					"served": true
+				}
+			],
+			"iconLinks": [
+				{
+					"rel": "shortcut icon",
+					"href": "/favicon.png",
+					"type": ""
+				},
+				{
+					"rel": "icon",
+					"href": "/favicon.png",
+					"type": ""
+				},
+				{
+					"rel": "apple-touch-icon",
+					"href": "/apple-touch-icon.png",
+					"type": ""
+				}
+			],
+			"faviconMatchesSource": true
+		},
+		"unseal": {
+			"applicationSurface": "CLI/API repository; root, README presentation and brand guide verified in the per-study source-assets.json. No browser header or favicon consumer exists."
+		},
+		"echo": {
+			"applicationSurface": "CLI/API repository; root, README presentation and brand guide verified in the per-study source-assets.json. No browser header or favicon consumer exists."
+		},
+		"deca": {
+			"applicationSurface": "CLI/API repository; root, README presentation and brand guide verified in the per-study source-assets.json. No browser header or favicon consumer exists."
+		},
+		"ipsafe": {
+			"applicationSurface": "CLI/API repository; root, README presentation and brand guide verified in the per-study source-assets.json. No browser header or favicon consumer exists."
+		}
+	},
+	"browser": "152.0.7977.83"
+}

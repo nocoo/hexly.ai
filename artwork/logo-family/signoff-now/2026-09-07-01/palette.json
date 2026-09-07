@@ -1,0 +1,73 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels at least four pixels inside the extracted boundary, selected by visible material role."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Petrol enamel",
+				"zh": "深蓝珐琅"
+			},
+			"role": "primary",
+			"color": "#2d506f",
+			"pixel": [1244, 644],
+			"rgb": [45, 80, 111],
+			"sourceSha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c"
+		},
+		{
+			"label": {
+				"en": "Brass plunger",
+				"zh": "黄铜按钮"
+			},
+			"role": "accent",
+			"color": "#9a825a",
+			"pixel": [1015, 95],
+			"rgb": [154, 130, 90],
+			"sourceSha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c"
+		},
+		{
+			"label": {
+				"en": "Ivory drums",
+				"zh": "象牙色数字轮"
+			},
+			"role": "accent",
+			"color": "#d8cdb1",
+			"pixel": [664, 1002],
+			"rgb": [216, 205, 177],
+			"sourceSha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c"
+		}
+	],
+	"presentation": {
+		"base": "#c4d2da",
+		"light": "#e5edf0",
+		"shade": "#aabfcd",
+		"motif": "#698698",
+		"pattern": "Activity ledgers",
+		"status": "Adopted under the owner-delegated remaining-project batch."
+	},
+	"website": {
+		"primary": "#00a4f0",
+		"background": "#edf0f2",
+		"ink": "#1f1f1f",
+		"evidence": {
+			"background": {
+				"value": "210 16% 94%",
+				"source": "apps/web/src/index.css --background"
+			},
+			"ink": {
+				"value": "0 0% 12%",
+				"source": "apps/web/src/index.css --foreground"
+			},
+			"primary": {
+				"value": "199 100% 47%",
+				"source": "apps/web/src/index.css --primary"
+			}
+		},
+		"status": "Existing website tokens preserved separately from the new logo palette."
+	}
+}

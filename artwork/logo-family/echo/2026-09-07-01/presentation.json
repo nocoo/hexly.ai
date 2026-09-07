@@ -1,0 +1,101 @@
+{
+	"project": "echo",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/emoji/echo.png",
+	"background": {
+		"base": "#bfd4d7",
+		"light": "#e1ece9",
+		"shade": "#a6bfc6",
+		"motif": "#6a9099",
+		"grainAmplitude": 0.75,
+		"grainSeed": 60907038,
+		"motifOpacity": 0.25,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Survey bearings",
+			"description": "Latitude arcs, a sparse meridian fan and short bearing marks in pale harbor-blue paper.",
+			"layers": [
+				{
+					"d": "M-60 360a180 125.99999999999999 0 1 1 360 0",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M-155 360a275 192.5 0 1 1 550 0",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M-260 360a380 266.0 0 1 1 760 0",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M-390 360a510 357.0 0 1 1 1020 0",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M690 -50Q520 500 690 1070",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M790 -50Q620 500 790 1070",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M890 -50Q720 500 890 1070",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M100 90l20 -20M132 104l20 -20M164 118l20 -20M832 922l20 -20M864 936l20 -20",
+					"tone": "motif",
+					"strokeWidth": 1.9
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [106, 144, 153],
+			"opacity": 0.25,
+			"blurAt2048": 66,
+			"projectionScale": [0.94, 0.3],
+			"offsetAt2048": [20, 696]
+		},
+		{
+			"color": [106, 144, 153],
+			"opacity": 0.17,
+			"blurAt2048": 28,
+			"projectionScale": [0.78, 0.17],
+			"offsetAt2048": [6, 691]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.909091,
+		"offsetAt2048": [-23, 35],
+		"intentionalEdges": [],
+		"note": "One uniform whole-object placement calibrated from the native silhouette, with at least 128 px clearance against the actual 23% rounded outline. Every projection and attached detail stays complete.",
+		"minimumClearanceAt2048": 128
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"backgroundSeedsAt2048": [[1560, 260]],
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction, preserving enclosed highlights. White surfaces and internal background gaps are inspected per object."
+	}
+}

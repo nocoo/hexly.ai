@@ -1,0 +1,44 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"method": "generated",
+	"study": "arena/2026-09-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/arena",
+	"sourceCommit": "4a9efd6690942dd1384fd807ba83c73e7c29c202",
+	"masters": {
+		"logo.png": {
+			"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59",
+			"source": "artwork/logo-family/arena/2026-09-07-01/finishing/01/exports/arena-transparent-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "177ee60b1c3bff747ced49864edbdbe851b56b330fee78df1a08c7c928e7f269",
+			"source": "artwork/logo-family/arena/2026-09-07-01/finishing/01/exports/arena-icon-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "b7ab60b0ffa7c3af962a7edfbcfb182b8c79c94c48d567dd59cf2ba9215f993e",
+			"source": "artwork/logo-family/arena/2026-09-07-01/finishing/01/exports/arena-rounded-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/background.png": {
+			"sha256": "5c7e4666c708df0ff1f7d149e73d13a5a4c3e50600943ab1c7c3c6c79843b0a2",
+			"source": "artwork/logo-family/arena/2026-09-07-01/finishing/01/background.png",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/arena/blob/4a9efd6690942dd1384fd807ba83c73e7c29c202/docs/02-logo-usage.md",
+	"verification": "verification/source-assets.json",
+	"framingVerification": "verification/framing.json",
+	"review": "https://hexly.ai/logos/arena",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/arena/2026-09-07-01/review.html",
+	"publication": {
+		"report": "../../audits/2026-09-07-objects/source-publication.json",
+		"note": "Source installation, commit, push, and deployment are verified separately in the batch publication record."
+	}
+}
