@@ -107,7 +107,7 @@
 }
 .identity-category {
 	margin: 0 0 14px;
-	font: 10px var(--mono);
+	font: 10px / 1.4 var(--mono);
 	color: var(--muted);
 }
 .identity-heading h2 {
@@ -149,6 +149,7 @@
 	align-items: end;
 	gap: 9px;
 	font-size: 11px;
+	line-height: 1.4;
 }
 .identity-meta > .mono {
 	font-size: 10px;
