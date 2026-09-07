@@ -41,6 +41,8 @@ Browser CI runs in its own job with Node.js 26.7.0, matching local development a
 
 The browser job records its Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines, preserves the test command's exit status, and uploads the diagnostics, browser traces, and screenshots for seven days. Inspect this evidence before rerunning a failure that loses the local server. New-tab checks wait for navigation and `DOMContentLoaded` before inspecting the destination.
 
+The [versioned Wrangler patch](../patches/README.md) prevents an abandoned client request from terminating the whole local server. L2 exercises this boundary with truncated upload connections and subsequent health requests. Failed forwards still return an error response, and all normal HTTP and browser assertions remain active.
+
 ## Completion evidence
 
 Verified locally on 2026-09-06 with Bun 1.4.0 and Node.js 26.7.0.
