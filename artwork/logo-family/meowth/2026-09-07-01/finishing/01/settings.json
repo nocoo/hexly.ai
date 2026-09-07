@@ -1,0 +1,81 @@
+{
+	"project": "meowth",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/meowth.png",
+	"background": {
+		"base": "#b5a6bb",
+		"light": "#e1d8e2",
+		"shade": "#887591",
+		"motif": "#64516f",
+		"grainAmplitude": 0.8,
+		"grainSeed": 6090773,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.2,
+		"pattern": {
+			"name": "Quiet yarn loops",
+			"description": "One broad looping yarn path turns through the upper-right paper, with a separate short lower-left return and slim relief edges.",
+			"layers": [
+				{
+					"d": "M1135 111C947-82 691-1 689 164C687 317 885 356 951 245C1017 134 849 77 802 174C754 274 876 409 1121 382",
+					"tone": "motif",
+					"strokeWidth": 33
+				},
+				{
+					"d": "M1142 91C947-103 668-26 668 163C667 334 897 379 971 254C1047 126 839 48 783 165C725 285 873 432 1120 403",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				},
+				{
+					"d": "M-111 701C58 625 159 676 151 784C143 892-7 879 22 790C51 701 255 797 303 1059",
+					"tone": "ribbon",
+					"strokeWidth": 47
+				},
+				{
+					"d": "M-104 677C81 598 185 669 175 787C165 925-37 899-1 782C38 655 285 794 326 1064",
+					"tone": "highlight",
+					"strokeWidth": 2.5
+				}
+			]
+		},
+		"status": "Designed local presentation; separate from the existing source website palette."
+	},
+	"matte": {
+		"minimumChannel": 247,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [[1675, 1324], [1263, 1845]],
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction and individually classified enclosed background gaps. Pale anatomy and physical highlights stay opaque.",
+		"backgroundSeedReason": "The exposed upper yarn-loop opening and the small gap beneath the paw are background. Eye highlights, pale muzzle planes and every connected whisker remain opaque.",
+		"componentCleanupReason": "All legitimate anatomy and the single accessory form the main connected component. Separately recorded sub-100-pixel islands are isolated near-white matte/antialias residue, including tiny colored pixels along native canvas borders."
+	},
+	"shadows": [
+		{
+			"color": [100, 81, 111],
+			"opacity": 0.15,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [100, 81, 111],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.886802,
+		"offsetAt2048": [12, -21],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform placement of the complete supplied foreground, preserving its intentional offset and every expressive feature or accessory. The natural faceted outline stays intact; no circular bust crop, stretched anatomy, independent part movement or synthetic continuation."
+	}
+}

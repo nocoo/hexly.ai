@@ -1,0 +1,44 @@
+{
+	"project": "clip",
+	"status": "review",
+	"study": "2026-09-07-02",
+	"finishing": "01",
+	"rawSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad",
+	"foregroundSha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983",
+	"generationCallsForProject": 2,
+	"ownerReviewedExactBytes": false,
+	"acceptance": "Owner-delegated batch acceptance, recorded against the exact native image.",
+	"sourceAdoption": "Not performed; source project artwork and source provenance remain unchanged.",
+	"publication": "Local only; no push or deployment.",
+	"siteVerification": "Deferred to the owner; no standalone site checks or browser windows.",
+	"review": "https://index.dev.hexly.ai/logos/clip",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/clip/2026-09-07-02/review.html",
+	"nativeSize": [2048, 2048],
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [-18, 103],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniformly inset the complete close portrait and align its existing natural neck entry with the lower viewfinder. The head, whole hat, complete feather spray and beak remain clear of rounded corners. No neck stretching, circular bust mask, independent part movement or continuation layer.",
+		"protectedFeatureRegionsAt2048": [
+			{
+				"name": "Complete face, beak, both eyes, entire hat and feather spray",
+				"bounds": [0, 0, 2048, 1610]
+			}
+		],
+		"minimumFeatureClearanceAt2048": 128
+	},
+	"finisherPlacement": {
+		"scale": 0.9,
+		"offsetAt2048": [-18, 103],
+		"bounds": {
+			"left": 225,
+			"top": 253,
+			"right": 1816,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 0.5000000000000568,
+		"clippedPixels": 0
+	}
+}

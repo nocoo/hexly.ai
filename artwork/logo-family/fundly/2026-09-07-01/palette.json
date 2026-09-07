@@ -1,0 +1,112 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6",
+		"colorSpace": "sRGB",
+		"sampling": "Exact native pixels at least four pixels inside the fully opaque extracted foreground; no averaging, resampling or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Midnight navy",
+				"zh": "午夜深蓝"
+			},
+			"role": "primary",
+			"color": "#192541",
+			"pixel": [1340, 214],
+			"rgb": [25, 37, 65],
+			"sourceSha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6"
+		},
+		{
+			"label": {
+				"en": "Indigo",
+				"zh": "靛蓝"
+			},
+			"role": "accent",
+			"color": "#27365c",
+			"pixel": [1520, 1100],
+			"rgb": [39, 54, 92],
+			"sourceSha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6"
+		},
+		{
+			"label": {
+				"en": "Warm ivory",
+				"zh": "暖象牙白"
+			},
+			"role": "accent",
+			"color": "#dfd2b8",
+			"pixel": [1180, 1280],
+			"rgb": [223, 210, 184],
+			"sourceSha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6"
+		},
+		{
+			"label": {
+				"en": "Aged brass",
+				"zh": "旧黄铜"
+			},
+			"role": "accent",
+			"color": "#80682e",
+			"pixel": [861, 1025],
+			"rgb": [128, 104, 46],
+			"sourceSha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6"
+		},
+		{
+			"label": {
+				"en": "Binocular teal",
+				"zh": "望远镜青色"
+			},
+			"role": "accent",
+			"color": "#335866",
+			"pixel": [908, 925],
+			"rgb": [51, 88, 102],
+			"sourceSha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6"
+		},
+		{
+			"label": {
+				"en": "Lens coral",
+				"zh": "镜片珊瑚色"
+			},
+			"role": "accent",
+			"color": "#cb615f",
+			"pixel": [1034, 1148],
+			"rgb": [203, 97, 95],
+			"sourceSha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6"
+		}
+	],
+	"presentation": {
+		"base": "#9aafbb",
+		"light": "#d5e0e3",
+		"shade": "#6d8397",
+		"motif": "#425c72",
+		"pattern": "Far-horizon sightlines",
+		"status": "Selected local review presentation; source adoption and publication have not occurred."
+	},
+	"website": {
+		"primary": "#e95d2b",
+		"background": "#e85d2a",
+		"theme": {
+			"primary": {
+				"value": "#e95d2b",
+				"source": "apps/web/src/globals.css :root --basalt-primary: 16 81% 54%, converted to sRGB"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#e95d2b",
+				"role": "primary",
+				"source": "apps/web/src/globals.css :root --basalt-primary: 16 81% 54%, converted to sRGB"
+			},
+			{
+				"color": "#e85d2a",
+				"role": "background",
+				"source": "apps/web/public/logo.svg background rect fill"
+			},
+			{
+				"color": "#ffffff",
+				"role": "accent",
+				"source": "apps/web/public/logo.svg foreground path fill"
+			}
+		],
+		"note": "Existing product theme evidence remains independent from the local artwork and designed paper presentation."
+	}
+}

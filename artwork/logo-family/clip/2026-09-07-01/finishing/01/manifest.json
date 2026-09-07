@@ -1,0 +1,418 @@
+{
+	"createdAt": "2026-09-07T12:33:14.586Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "40b388176d9cd09a46f1c9c09b956f3e103ce58749256624924e35cd99e97e98",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "clip",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/clip.png",
+		"background": {
+			"base": "#9eb88d",
+			"light": "#d6e2bb",
+			"shade": "#6b845e",
+			"motif": "#4a683e",
+			"grainAmplitude": 0.8,
+			"grainSeed": 6090770,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.2,
+			"pattern": {
+				"name": "Leaf-vein relief",
+				"description": "Two asymmetrical leaf folds with branching veins, one entering from the upper right and one from the lower-right paper edge.",
+				"layers": [
+					{
+						"d": "M1115 -80C858 -32 667 138 654 390C844 362 1057 243 1115 -80Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M1092 -30C1002 97 830 247 686 361",
+						"tone": "motif",
+						"strokeWidth": 12
+					},
+					{
+						"d": "M843 226L868 79M905 166L1034 161M774 288L781 171M984 88L1069 74",
+						"tone": "motif",
+						"strokeWidth": 6
+					},
+					{
+						"d": "M1081 -40C991 89 817 233 675 351",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M720 1110C716 937 856 829 1090 762C1075 994 912 1102 720 1110Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M758 1099C820 976 921 892 1088 784M827 991L795 938M887 931L1006 976M960 873L955 817",
+						"tone": "motif",
+						"strokeWidth": 7
+					},
+					{
+						"d": "M748 1092C808 970 911 882 1078 775",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					}
+				]
+			},
+			"status": "Designed local presentation; separate from the existing source website palette."
+		},
+		"matte": {
+			"minimumChannel": 247,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"backgroundSeedsAt2048": [
+				[
+					1378,
+					1631
+				],
+				[
+					1305,
+					1759
+				],
+				[
+					1487,
+					1416
+				]
+			],
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction and individually classified enclosed background gaps. Pale anatomy and physical highlights stay opaque.",
+			"backgroundSeedReason": "Three enclosed background spaces between the folded foreleg contours. Both enclosed white eye highlights remain opaque.",
+			"componentCleanupReason": "All legitimate anatomy and the single accessory form the main connected component. Separately recorded sub-100-pixel islands are isolated near-white matte/antialias residue, including tiny colored pixels along native canvas borders."
+		},
+		"shadows": [
+			{
+				"color": [
+					74,
+					104,
+					62
+				],
+				"opacity": 0.15,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					74,
+					104,
+					62
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.93,
+			"offsetAt2048": [
+				-16,
+				72
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "One uniform placement retains the mantis thorax and foreleg entering the bottom viewfinder. The complete head, two antennae and full paper-ribbon group are protected above native y=1450; no circular mask, stretched neck or contour repair.",
+			"protectedFeatureRegionsAt2048": [
+				{
+					"name": "Complete head, antennae and paper group",
+					"bounds": [
+						0,
+						0,
+						2048,
+						1450
+					]
+				}
+			],
+			"minimumFeatureClearanceAt2048": 128
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2730638,
+		"foregroundPixels": 1463666,
+		"softEdgePixels": 21522,
+		"removedComponents": 55,
+		"removedComponentPixels": 782,
+		"bounds": {
+			"left": 185,
+			"top": 47,
+			"right": 1823,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.93,
+		"offsetAt2048": [
+			-16,
+			72
+		],
+		"bounds": {
+			"left": 227,
+			"top": 186,
+			"right": 1751,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -58.78980588109613,
+		"clippedPixels": 4240
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3268,
+			"sha256": "231365d65df1e9ef0ab278bc6a7ad7cb23bf69e38fe4fe30bb28e0ba15a261f5"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1164,
+			"sha256": "47295eb35f143bc31b17aaf9f1191d64b00aed5b9917e7fbb748d9c1213ea359"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3011826,
+			"sha256": "6d5e3e5ae0ffd67db03121a0f9d2dceca0844c7734fc350b95de7e0e44195631"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 107275,
+			"sha256": "d3c3b42c00ffd81348aa49b7abc7566eb7bdbc438972cd2e4119a33b99ef86b4"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1225,
+			"sha256": "b748deacfb56ab46b64e77966589952d358539a21a3b212d7891d31834e17e4d"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2228840,
+			"sha256": "651380b4b4c8b1573dba7d6d3d11866399356b1466d3978d9be87f267800c455"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2782313,
+			"sha256": "f4a8e0565872af0d8ac606b5bb2219a9219104522c77e6e3bad0f13fefffe262"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 148536,
+			"sha256": "47f13a9c5096d9fded4e00939dc1589ce723df3cfa6889e2251c0ba6778d5405"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 277155,
+			"sha256": "fdac9e97624e445108700318e70daa82dd1702e262b36241ce26fc023897f3af"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 213964,
+			"sha256": "5891e04986eb28b765a5482de3ff0fa506ad88001cd92ccf59d08b566e1e6a48"
+		},
+		{
+			"path": "exports/clip-transparent-2048.png",
+			"bytes": 2782313,
+			"sha256": "f4a8e0565872af0d8ac606b5bb2219a9219104522c77e6e3bad0f13fefffe262"
+		},
+		{
+			"path": "exports/clip-icon-2048.png",
+			"bytes": 4825595,
+			"sha256": "87a17eab3437862b74139fdebaf1c6a2d05e59815708d2ce612e1f382bc93c3e"
+		},
+		{
+			"path": "exports/clip-rounded-2048.png",
+			"bytes": 4721639,
+			"sha256": "1ab47ae6f25ac4d34fbeb5b19effeaf5fb35b02a8292746c54c4155450011321"
+		},
+		{
+			"path": "exports/clip-transparent-1024.png",
+			"bytes": 763335,
+			"sha256": "ba67311bc33a7b15916639388688bfc3a1116d8804e8fa69194ca893091a8fe7"
+		},
+		{
+			"path": "exports/clip-icon-1024.png",
+			"bytes": 1221583,
+			"sha256": "999675049c40f091d7141b09df5f4ab0086df65b11ef11770f27337c32441b9d"
+		},
+		{
+			"path": "exports/clip-rounded-1024.png",
+			"bytes": 1210886,
+			"sha256": "014c56e594c4e750e4dbd404d560ee297a3fd68d08d7545bad7edd5c051f5c9d"
+		},
+		{
+			"path": "exports/clip-transparent-512.png",
+			"bytes": 229015,
+			"sha256": "09158cdcbdb86018d8277553a4932d82cad01725e0de1d5a4921cb75f81bf134"
+		},
+		{
+			"path": "exports/clip-icon-512.png",
+			"bytes": 387299,
+			"sha256": "4f832aee3c818eb7c33e37093b349188e2f3773202eda2223eb1be7586c06d56"
+		},
+		{
+			"path": "exports/clip-rounded-512.png",
+			"bytes": 384559,
+			"sha256": "74183552eb94f8fe7b3dcb746bcbcb3b413ac133aee7fb0aee4d9d333ac0cf3c"
+		},
+		{
+			"path": "exports/clip-transparent-256.png",
+			"bytes": 70371,
+			"sha256": "3e49af13e56b526c5aa43e9ac557ad91727a4cd09e810f6637b4e52d09da2e03"
+		},
+		{
+			"path": "exports/clip-icon-256.png",
+			"bytes": 97597,
+			"sha256": "55d59cbb376726fca4571401552e30ad9a2168de797d27045958dff59c9caf04"
+		},
+		{
+			"path": "exports/clip-rounded-256.png",
+			"bytes": 99350,
+			"sha256": "ca57e8c86512fd5456ee9f51fc9ad6b169184b7e6fd61165abb2cf488e883135"
+		},
+		{
+			"path": "exports/clip-transparent-128.png",
+			"bytes": 20864,
+			"sha256": "240a7d0ee1fe288990d2b6a025a67dcb816cc38fa78ce906157abfeb24d31c8f"
+		},
+		{
+			"path": "exports/clip-icon-128.png",
+			"bytes": 31109,
+			"sha256": "63076a021614ba497e1f926b78c8b95dea7dfeb798e4a0f54f65c309ce1526fe"
+		},
+		{
+			"path": "exports/clip-rounded-128.png",
+			"bytes": 32056,
+			"sha256": "eec3cf1a11474e2106f2204d84e0a8a5d136ecb6576fba067ff907fe49670057"
+		},
+		{
+			"path": "exports/clip-transparent-64.png",
+			"bytes": 6263,
+			"sha256": "7a1eefbf1c82ad12a8f43b0fd43a4df2b002819fa6e75b8d2372bf13e527d756"
+		},
+		{
+			"path": "exports/clip-icon-64.png",
+			"bytes": 9901,
+			"sha256": "8182fff33dcc4252237da0e73be1b41ee34f79b171e748e5bc88068c3421ab0f"
+		},
+		{
+			"path": "exports/clip-rounded-64.png",
+			"bytes": 10257,
+			"sha256": "52d01c200607565482dbf456bbe0f1f3b9a9901d5b42f859f1792bf83208240a"
+		},
+		{
+			"path": "exports/clip-transparent-48.png",
+			"bytes": 3855,
+			"sha256": "6f711a60c94af38a36f1cf361f378573e2f32f09877be322fc73e59f3f45e73a"
+		},
+		{
+			"path": "exports/clip-icon-48.png",
+			"bytes": 6061,
+			"sha256": "5074d36bb6a13a3df20783c5b2c98816b2a71c0f93959f4a235006afc3bf37f1"
+		},
+		{
+			"path": "exports/clip-rounded-48.png",
+			"bytes": 6310,
+			"sha256": "3b6e21e04e9ef7f6a9f67e35209d96585c30282bd53f20c940a37647b8331e2f"
+		},
+		{
+			"path": "exports/clip-transparent-32.png",
+			"bytes": 2042,
+			"sha256": "53bb11d06886bae05ea7803644ef634f24a87089451bfa218b6ba6b6dff92066"
+		},
+		{
+			"path": "exports/clip-icon-32.png",
+			"bytes": 3122,
+			"sha256": "95d23fcbe418d71078935182fafbbb6d5d6a853088bf89e5c77ac24caacbeae3"
+		},
+		{
+			"path": "exports/clip-rounded-32.png",
+			"bytes": 3265,
+			"sha256": "57ad0bec37506a365174caf6f4c36980fc11a91dfd82ff60709a931b7d83a2e0"
+		},
+		{
+			"path": "exports/clip-transparent-24.png",
+			"bytes": 1310,
+			"sha256": "72f51268579e6e1b2faa96561a6ce1cbe827e46a42100e4c2a25a1464526246f"
+		},
+		{
+			"path": "exports/clip-icon-24.png",
+			"bytes": 1901,
+			"sha256": "184f50ffacfc68ab57378b0d76f534802e668d8937b0a875c4929cdfa00f6f43"
+		},
+		{
+			"path": "exports/clip-rounded-24.png",
+			"bytes": 2010,
+			"sha256": "29043d17d8b6f55269322e6b88e4ac6b283ea19a12c3493c7b96b8edc76207d6"
+		},
+		{
+			"path": "exports/clip-transparent-16.png",
+			"bytes": 723,
+			"sha256": "28b5d74197f780b69c6ff3f297dbc5088c3d2bc517b2d3924915bdc431411398"
+		},
+		{
+			"path": "exports/clip-icon-16.png",
+			"bytes": 950,
+			"sha256": "0099e0d3b35e36feeb56d31246e90fb0703f3765b5647deec565f83cdcf1b6b2"
+		},
+		{
+			"path": "exports/clip-rounded-16.png",
+			"bytes": 990,
+			"sha256": "299b40b9d6416fcf62b8a965ec1cc333b32ba55fa5aa413e69df451efcf1e46f"
+		},
+		{
+			"path": "exports/clip-white-2048.png",
+			"bytes": 2567097,
+			"sha256": "1384853a9eeddb4d33b62d6bac392a54d3a69c30b64bffe255af237770ea03d7"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 720384,
+			"sha256": "8ca9f26e286d48c4969a31c9489a9408821d285d087841c98b84bf3ebaffa1e5"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 725939,
+			"sha256": "540c48da5253fbca649e5e07c7cee1f564866c57559e9e9abe43e940679de9f3"
+		}
+	]
+}

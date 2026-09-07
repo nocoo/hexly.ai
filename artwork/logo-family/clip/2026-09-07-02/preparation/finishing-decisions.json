@@ -1,0 +1,43 @@
+{
+	"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad",
+	"matte": {
+		"minimumChannel": 240,
+		"maximumChroma": 18,
+		"backgroundRgb": [250, 251, 251],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 10,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Modal native outer-eight-pixel near-white matte. Exterior-connected extraction at 240 removes pale boundary ringing without a global white deletion; warm anatomy and eye highlights remain opaque.",
+		"backgroundSeedReason": "No enclosed background gaps require seeds. The near-white interior pockets are the eyes and remain opaque.",
+		"componentCleanupReason": "The ostrich, hat and attached feather group form one connected foreground. Any separately recorded sub-100-pixel islands are matte residue, not decorative identity elements."
+	},
+	"nativeBounds": [156, 53, 1924, 2047],
+	"removedComponents": [
+		{
+			"pixels": 1,
+			"bounds": [445, 918, 445, 918],
+			"minimumRgb": [246, 248, 239],
+			"maximumRgb": [246, 248, 239]
+		}
+	],
+	"removedPixels": 1,
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [-18, 103],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniformly inset the complete close portrait and align its existing natural neck entry with the lower viewfinder. The head, whole hat, complete feather spray and beak remain clear of rounded corners. No neck stretching, circular bust mask, independent part movement or continuation layer.",
+		"protectedFeatureRegionsAt2048": [
+			{
+				"name": "Complete face, beak, both eyes, entire hat and feather spray",
+				"bounds": [0, 0, 2048, 1610]
+			}
+		],
+		"minimumFeatureClearanceAt2048": 128
+	},
+	"preliminaryProtectedFeatureClearance": 225.25000000000006,
+	"note": "Production measurements only; site verification is deferred to the owner."
+}

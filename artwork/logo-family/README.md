@@ -191,3 +191,16 @@ The batch archive is [audits/2026-09-07-objects/](audits/2026-09-07-objects/). E
 Eleven native 2048 px generations succeeded, one per physical-object project. PokePocket's two attempts failed at output moderation and returned no image; its selected study is an honest 960 px supplied-illustration extraction with documented resampling. Source app/header/favicon uses remain transparent, while README and platform presentations use the appropriate separate tile.
 
 [Publication evidence](audits/2026-09-07-objects/hexly-publication.json) records the successful Hexly rollout and all twelve production-byte checks. [Source CI and deployment outcomes](audits/2026-09-07-objects/source-publication.json) preserve retries, subsequent fixes, and Dogfight’s outstanding credential dependency.
+
+## Four new local studies — 2026-09-07
+
+| Project | Selected study / pass | Static review | Local catalogue |
+| --- | --- | --- | --- |
+| Clip | [2026-09-07-02 / 01](clip/2026-09-07-02/notes.md) | [HTML](clip/2026-09-07-02/review.html) | [/logos/clip](https://index.dev.hexly.ai/logos/clip) |
+| Fundly | [2026-09-07-01 / 02](fundly/2026-09-07-01/notes.md) | [HTML](fundly/2026-09-07-01/review.html) | [/logos/fundly](https://index.dev.hexly.ai/logos/fundly) |
+| DreamRO | [2026-09-07-01 / 02](dreamro/2026-09-07-01/notes.md) | [HTML](dreamro/2026-09-07-01/review.html) | [/logos/dreamro](https://index.dev.hexly.ai/logos/dreamro) |
+| Meowth | [2026-09-07-01 / 02](meowth/2026-09-07-01/notes.md) | [HTML](meowth/2026-09-07-01/review.html) | [/logos/meowth](https://index.dev.hexly.ai/logos/meowth) |
+
+Clip restores the familiar ostrich, hat and feather spray in an offset portrait with a natural lower neck entry. [The earlier mantis](clip/2026-09-07-01/notes.md) remains rejected history. Fundly's lowered binoculars and Meowth's yarn each supply one multicolored animal interest group; DreamRO follows the physical-object series with classical equipment in front of a shield.
+
+The four selected native 2048-square drawings came from five Image 2 calls. Every selected study has complete comparison modes, distinct paper relief, palette samples, all export sizes, transparent app/browser specimens and archived production layers. Source identities remain unchanged and `family.status` is `review`. Publication and site verification remain deferred to the owner. See [the batch record](audits/2026-09-07-new-four/README.md) for exact selections and the Clip correction.

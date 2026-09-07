@@ -1,0 +1,34 @@
+{
+	"repository": "https://github.com/nocoo/clip",
+	"checkout": "/Users/nocoo/workspace/personal/clip",
+	"revision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c",
+	"previousLogo": {
+		"kind": "original",
+		"original": "/logos/originals/clip.png",
+		"thumbnail": "/logos/display/clip-160.webp",
+		"display": "/logos/display/clip-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3160958,
+		"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009"
+	},
+	"theme": {
+		"primary": {
+			"value": "#6366f1",
+			"source": "packages/web/src/styles/global.css :root --color-accent"
+		},
+		"background": {
+			"value": "#0a0a0b",
+			"source": "packages/web/src/styles/global.css :root --color-bg"
+		},
+		"ink": {
+			"value": "#e4e4e7",
+			"source": "packages/web/src/styles/global.css :root --color-text"
+		}
+	},
+	"readmeSha256": "eb6658abf8fb2b9c6cd36ead62b1a7922af12d6ab7ad825df844a01996fff537",
+	"productContext": "Schema-driven CLI generation and API credential management."
+}

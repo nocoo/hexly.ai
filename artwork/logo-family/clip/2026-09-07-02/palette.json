@@ -1,0 +1,120 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad",
+		"colorSpace": "sRGB",
+		"sampling": "Exact native pixels at least four pixels inside the fully opaque extracted foreground; no averaging, resampling or recoloring."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Golden leather",
+				"zh": "金棕皮革"
+			},
+			"role": "primary",
+			"color": "#df9457",
+			"pixel": [820, 310],
+			"rgb": [223, 148, 87],
+			"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad"
+		},
+		{
+			"label": {
+				"en": "Sandstone",
+				"zh": "砂岩色"
+			},
+			"role": "accent",
+			"color": "#b3977a",
+			"pixel": [1130, 1620],
+			"rgb": [179, 151, 122],
+			"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad"
+		},
+		{
+			"label": {
+				"en": "Cocoa",
+				"zh": "可可色"
+			},
+			"role": "accent",
+			"color": "#542c1c",
+			"pixel": [1110, 500],
+			"rgb": [84, 44, 28],
+			"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad"
+		},
+		{
+			"label": {
+				"en": "Feather blue",
+				"zh": "羽毛蓝"
+			},
+			"role": "accent",
+			"color": "#67b8db",
+			"pixel": [1470, 325],
+			"rgb": [103, 184, 219],
+			"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad"
+		},
+		{
+			"label": {
+				"en": "Feather coral",
+				"zh": "羽毛珊瑚色"
+			},
+			"role": "accent",
+			"color": "#ec3536",
+			"pixel": [1330, 252],
+			"rgb": [236, 53, 54],
+			"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad"
+		},
+		{
+			"label": {
+				"en": "Feather violet",
+				"zh": "羽毛紫"
+			},
+			"role": "accent",
+			"color": "#aa438c",
+			"pixel": [1650, 235],
+			"rgb": [170, 67, 140],
+			"sourceSha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad"
+		}
+	],
+	"presentation": {
+		"base": "#baae91",
+		"light": "#e7dcc2",
+		"shade": "#8c7a5b",
+		"motif": "#65563b",
+		"pattern": "Windward feather relief",
+		"status": "Selected local review presentation; source adoption and publication have not occurred."
+	},
+	"website": {
+		"primary": "#6366f1",
+		"background": "#0a0a0b",
+		"theme": {
+			"primary": {
+				"value": "#6366f1",
+				"source": "packages/web/src/styles/global.css :root --color-accent"
+			},
+			"background": {
+				"value": "#0a0a0b",
+				"source": "packages/web/src/styles/global.css :root --color-bg"
+			},
+			"ink": {
+				"value": "#e4e4e7",
+				"source": "packages/web/src/styles/global.css :root --color-text"
+			}
+		},
+		"evidence": [
+			{
+				"color": "#6366f1",
+				"role": "primary",
+				"source": "packages/web/src/styles/global.css :root --color-accent"
+			},
+			{
+				"color": "#0a0a0b",
+				"role": "background",
+				"source": "packages/web/src/styles/global.css :root --color-bg"
+			},
+			{
+				"color": "#e4e4e7",
+				"role": "accent",
+				"source": "packages/web/src/styles/global.css :root --color-text"
+			}
+		],
+		"note": "Existing product theme evidence remains independent from the local artwork and designed paper presentation."
+	}
+}

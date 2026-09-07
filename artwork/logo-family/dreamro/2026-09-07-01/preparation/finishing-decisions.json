@@ -1,0 +1,416 @@
+{
+	"sourceSha256": "90e59a8dfbc8a35fa49cb6082238f3bf91f9163172a96dc8a1740cb79446c57f",
+	"matte": {
+		"minimumChannel": 247,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [[380, 676], [728, 1471]],
+		"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction and individually classified enclosed background gaps. Pale anatomy and physical highlights stay opaque.",
+		"backgroundSeedReason": "The large bow/string/upper-shield gap and smaller lower bow/string gap are background. All white metal, gilding and gemstone highlights remain opaque.",
+		"componentCleanupReason": "All legitimate anatomy and the single accessory form the main connected component. Separately recorded sub-100-pixel islands are isolated near-white matte/antialias residue, including tiny colored pixels along native canvas borders."
+	},
+	"nativeBounds": [154, 125, 1901, 1953],
+	"interiorGapDecision": "The large bow/string/upper-shield gap and smaller lower bow/string gap are background. All white metal, gilding and gemstone highlights remain opaque.",
+	"removedComponents": [
+		{
+			"pixels": 10,
+			"bounds": [194, 0, 198, 2],
+			"minimumRgb": [250, 253, 246],
+			"maximumRgb": [250, 253, 246]
+		},
+		{
+			"pixels": 4,
+			"bounds": [238, 0, 241, 0],
+			"minimumRgb": [250, 252, 246],
+			"maximumRgb": [251, 253, 246]
+		},
+		{
+			"pixels": 57,
+			"bounds": [445, 0, 456, 5],
+			"minimumRgb": [250, 253, 243],
+			"maximumRgb": [251, 253, 246]
+		},
+		{
+			"pixels": 84,
+			"bounds": [494, 0, 507, 6],
+			"minimumRgb": [250, 252, 242],
+			"maximumRgb": [251, 253, 246]
+		},
+		{
+			"pixels": 82,
+			"bounds": [543, 0, 554, 7],
+			"minimumRgb": [249, 252, 241],
+			"maximumRgb": [250, 254, 246]
+		},
+		{
+			"pixels": 49,
+			"bounds": [585, 0, 593, 6],
+			"minimumRgb": [250, 253, 244],
+			"maximumRgb": [251, 253, 246]
+		},
+		{
+			"pixels": 10,
+			"bounds": [626, 0, 629, 2],
+			"minimumRgb": [250, 252, 246],
+			"maximumRgb": [250, 252, 246]
+		},
+		{
+			"pixels": 14,
+			"bounds": [659, 0, 664, 2],
+			"minimumRgb": [250, 253, 246],
+			"maximumRgb": [250, 253, 246]
+		},
+		{
+			"pixels": 34,
+			"bounds": [736, 0, 743, 4],
+			"minimumRgb": [250, 253, 245],
+			"maximumRgb": [250, 253, 246]
+		},
+		{
+			"pixels": 25,
+			"bounds": [1013, 0, 1020, 3],
+			"minimumRgb": [250, 253, 245],
+			"maximumRgb": [251, 254, 246]
+		},
+		{
+			"pixels": 14,
+			"bounds": [1595, 138, 1597, 142],
+			"minimumRgb": [250, 250, 246],
+			"maximumRgb": [250, 250, 246]
+		},
+		{
+			"pixels": 3,
+			"bounds": [1461, 202, 1462, 204],
+			"minimumRgb": [248, 250, 246],
+			"maximumRgb": [248, 250, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1462, 207, 1462, 207],
+			"minimumRgb": [248, 250, 246],
+			"maximumRgb": [248, 250, 246]
+		},
+		{
+			"pixels": 6,
+			"bounds": [1473, 281, 1474, 283],
+			"minimumRgb": [249, 251, 246],
+			"maximumRgb": [249, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1478, 281, 1478, 281],
+			"minimumRgb": [247, 249, 246],
+			"maximumRgb": [247, 249, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1573, 293, 1573, 293],
+			"minimumRgb": [251, 250, 246],
+			"maximumRgb": [251, 250, 246]
+		},
+		{
+			"pixels": 4,
+			"bounds": [1461, 335, 1461, 338],
+			"minimumRgb": [247, 249, 246],
+			"maximumRgb": [249, 250, 246]
+		},
+		{
+			"pixels": 69,
+			"bounds": [146, 338, 150, 357],
+			"minimumRgb": [248, 250, 245],
+			"maximumRgb": [250, 250, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [311, 403, 311, 403],
+			"minimumRgb": [246, 247, 250],
+			"maximumRgb": [246, 247, 250]
+		},
+		{
+			"pixels": 4,
+			"bounds": [1529, 420, 1532, 420],
+			"minimumRgb": [246, 245, 246],
+			"maximumRgb": [247, 247, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [214, 426, 214, 426],
+			"minimumRgb": [246, 249, 246],
+			"maximumRgb": [246, 249, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1601, 431, 1601, 431],
+			"minimumRgb": [249, 249, 246],
+			"maximumRgb": [249, 249, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1870, 435, 1870, 435],
+			"minimumRgb": [248, 251, 246],
+			"maximumRgb": [248, 251, 246]
+		},
+		{
+			"pixels": 47,
+			"bounds": [1872, 448, 1878, 456],
+			"minimumRgb": [247, 247, 245],
+			"maximumRgb": [250, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1872, 458, 1872, 458],
+			"minimumRgb": [248, 249, 246],
+			"maximumRgb": [248, 249, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [439, 465, 439, 466],
+			"minimumRgb": [251, 250, 246],
+			"maximumRgb": [251, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1900, 471, 1900, 471],
+			"minimumRgb": [248, 251, 246],
+			"maximumRgb": [248, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [435, 505, 435, 505],
+			"minimumRgb": [248, 248, 246],
+			"maximumRgb": [248, 248, 246]
+		},
+		{
+			"pixels": 23,
+			"bounds": [1603, 538, 1603, 560],
+			"minimumRgb": [248, 250, 245],
+			"maximumRgb": [249, 251, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [313, 542, 313, 543],
+			"minimumRgb": [248, 249, 246],
+			"maximumRgb": [249, 249, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [314, 547, 314, 548],
+			"minimumRgb": [250, 251, 246],
+			"maximumRgb": [250, 251, 246]
+		},
+		{
+			"pixels": 3,
+			"bounds": [1761, 630, 1763, 630],
+			"minimumRgb": [250, 244, 253],
+			"maximumRgb": [251, 246, 255]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1673, 683, 1673, 683],
+			"minimumRgb": [248, 246, 249],
+			"maximumRgb": [248, 246, 249]
+		},
+		{
+			"pixels": 5,
+			"bounds": [316, 688, 316, 692],
+			"minimumRgb": [248, 250, 246],
+			"maximumRgb": [249, 251, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [315, 701, 315, 702],
+			"minimumRgb": [248, 251, 246],
+			"maximumRgb": [248, 251, 246]
+		},
+		{
+			"pixels": 13,
+			"bounds": [434, 706, 437, 710],
+			"minimumRgb": [247, 247, 246],
+			"maximumRgb": [248, 248, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [440, 710, 440, 711],
+			"minimumRgb": [246, 249, 248],
+			"maximumRgb": [246, 250, 248]
+		},
+		{
+			"pixels": 8,
+			"bounds": [315, 749, 315, 756],
+			"minimumRgb": [247, 249, 245],
+			"maximumRgb": [249, 250, 246]
+		},
+		{
+			"pixels": 6,
+			"bounds": [316, 763, 316, 768],
+			"minimumRgb": [247, 249, 243],
+			"maximumRgb": [249, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [317, 775, 317, 775],
+			"minimumRgb": [248, 251, 246],
+			"maximumRgb": [248, 251, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [246, 828, 246, 829],
+			"minimumRgb": [248, 250, 246],
+			"maximumRgb": [249, 250, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [246, 831, 246, 831],
+			"minimumRgb": [249, 251, 246],
+			"maximumRgb": [249, 251, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [462, 880, 463, 881],
+			"minimumRgb": [248, 249, 246],
+			"maximumRgb": [248, 250, 246]
+		},
+		{
+			"pixels": 3,
+			"bounds": [461, 883, 462, 884],
+			"minimumRgb": [248, 249, 246],
+			"maximumRgb": [248, 250, 246]
+		},
+		{
+			"pixels": 19,
+			"bounds": [456, 1033, 460, 1036],
+			"minimumRgb": [246, 247, 246],
+			"maximumRgb": [247, 249, 247]
+		},
+		{
+			"pixels": 1,
+			"bounds": [459, 1039, 459, 1039],
+			"minimumRgb": [249, 250, 246],
+			"maximumRgb": [249, 250, 246]
+		},
+		{
+			"pixels": 14,
+			"bounds": [450, 1201, 452, 1206],
+			"minimumRgb": [248, 249, 246],
+			"maximumRgb": [249, 250, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [454, 1201, 454, 1201],
+			"minimumRgb": [248, 248, 246],
+			"maximumRgb": [248, 248, 246]
+		},
+		{
+			"pixels": 6,
+			"bounds": [1460, 1294, 1461, 1297],
+			"minimumRgb": [248, 250, 246],
+			"maximumRgb": [250, 251, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [657, 1363, 657, 1364],
+			"minimumRgb": [246, 248, 248],
+			"maximumRgb": [246, 250, 248]
+		},
+		{
+			"pixels": 1,
+			"bounds": [718, 1441, 718, 1441],
+			"minimumRgb": [248, 246, 247],
+			"maximumRgb": [248, 246, 247]
+		},
+		{
+			"pixels": 23,
+			"bounds": [881, 1752, 884, 1757],
+			"minimumRgb": [249, 249, 246],
+			"maximumRgb": [250, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [882, 1775, 882, 1775],
+			"minimumRgb": [247, 250, 246],
+			"maximumRgb": [247, 250, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [880, 1783, 880, 1783],
+			"minimumRgb": [248, 251, 246],
+			"maximumRgb": [248, 251, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [1098, 1813, 1098, 1813],
+			"minimumRgb": [248, 248, 246],
+			"maximumRgb": [248, 248, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [1100, 1815, 1101, 1816],
+			"minimumRgb": [248, 248, 246],
+			"maximumRgb": [248, 248, 246]
+		},
+		{
+			"pixels": 1,
+			"bounds": [953, 1853, 953, 1853],
+			"minimumRgb": [249, 249, 246],
+			"maximumRgb": [249, 249, 246]
+		},
+		{
+			"pixels": 11,
+			"bounds": [1024, 1855, 1028, 1859],
+			"minimumRgb": [248, 249, 246],
+			"maximumRgb": [249, 252, 246]
+		},
+		{
+			"pixels": 2,
+			"bounds": [1020, 1864, 1021, 1865],
+			"minimumRgb": [249, 250, 246],
+			"maximumRgb": [249, 251, 246]
+		},
+		{
+			"pixels": 83,
+			"bounds": [1431, 2040, 1443, 2047],
+			"minimumRgb": [250, 252, 243],
+			"maximumRgb": [250, 253, 246]
+		},
+		{
+			"pixels": 69,
+			"bounds": [1386, 2041, 1397, 2047],
+			"minimumRgb": [250, 253, 244],
+			"maximumRgb": [251, 253, 246]
+		},
+		{
+			"pixels": 40,
+			"bounds": [1478, 2042, 1486, 2047],
+			"minimumRgb": [251, 253, 245],
+			"maximumRgb": [251, 253, 246]
+		},
+		{
+			"pixels": 35,
+			"bounds": [1343, 2043, 1351, 2047],
+			"minimumRgb": [250, 253, 245],
+			"maximumRgb": [250, 253, 246]
+		},
+		{
+			"pixels": 3,
+			"bounds": [0, 2046, 1, 2047],
+			"minimumRgb": [246, 250, 248],
+			"maximumRgb": [246, 251, 248]
+		}
+	],
+	"removedPixels": 920,
+	"placement": {
+		"scale": 0.92947,
+		"offsetAt2048": [-17, -27],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "One uniform placement of the complete supplied foreground, preserving its intentional offset and every expressive feature or accessory. The natural faceted outline stays intact; no circular bust crop, stretched anatomy, independent part movement or synthetic continuation."
+	},
+	"preliminaryRoundedClearance": 161.87151448879177,
+	"note": "Preparation metadata for producing the assets. Site/browser verification is deferred to the owner."
+}

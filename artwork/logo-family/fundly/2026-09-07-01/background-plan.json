@@ -1,0 +1,56 @@
+{
+	"base": "#9aafbb",
+	"light": "#d5e0e3",
+	"shade": "#6d8397",
+	"motif": "#425c72",
+	"grainAmplitude": 0.8,
+	"grainSeed": 6090771,
+	"motifOpacity": 0.18,
+	"highlightOpacity": 0.3,
+	"ribbonOpacity": 0.2,
+	"pattern": {
+		"name": "Far-horizon sightlines",
+		"description": "Broad offset horizon bands open toward the penguin's gaze, with short restrained sighting ticks in the distant negative space.",
+		"layers": [
+			{
+				"d": "M-96 247C161 115 492 141 699 219L676 264C454 195 190 171-94 301Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-91 305C182 159 445 189 686 261",
+				"tone": "motif",
+				"strokeWidth": 19
+			},
+			{
+				"d": "M-95 282C173 139 451 166 695 238",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M-130 449C105 310 287 280 480 316",
+				"tone": "motif",
+				"strokeWidth": 7
+			},
+			{
+				"d": "M-115 462C108 329 286 300 477 334",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M84 92h52M110 66v52M207 124h28M221 110v28",
+				"tone": "motif",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M818 1070C937 908 1006 890 1120 926L1120 1059Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M841 1062C957 925 1026 916 1120 948",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		]
+	},
+	"status": "Designed local presentation; separate from the existing source website palette."
+}

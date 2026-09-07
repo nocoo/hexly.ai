@@ -1,0 +1,397 @@
+{
+	"createdAt": "2026-09-07T12:33:15.521Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "fundly",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/fundly.svg",
+		"background": {
+			"base": "#9aafbb",
+			"light": "#d5e0e3",
+			"shade": "#6d8397",
+			"motif": "#425c72",
+			"grainAmplitude": 0.8,
+			"grainSeed": 6090771,
+			"motifOpacity": 0.18,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.2,
+			"pattern": {
+				"name": "Far-horizon sightlines",
+				"description": "Broad offset horizon bands open toward the penguin's gaze, with short restrained sighting ticks in the distant negative space.",
+				"layers": [
+					{
+						"d": "M-96 247C161 115 492 141 699 219L676 264C454 195 190 171-94 301Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M-91 305C182 159 445 189 686 261",
+						"tone": "motif",
+						"strokeWidth": 19
+					},
+					{
+						"d": "M-95 282C173 139 451 166 695 238",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M-130 449C105 310 287 280 480 316",
+						"tone": "motif",
+						"strokeWidth": 7
+					},
+					{
+						"d": "M-115 462C108 329 286 300 477 334",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M84 92h52M110 66v52M207 124h28M221 110v28",
+						"tone": "motif",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M818 1070C937 908 1006 890 1120 926L1120 1059Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M841 1062C957 925 1026 916 1120 948",
+						"tone": "highlight",
+						"strokeWidth": 2.5
+					}
+				]
+			},
+			"status": "Designed local presentation; separate from the existing source website palette."
+		},
+		"matte": {
+			"minimumChannel": 247,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Modal native outer-eight-pixel matte; exterior-connected extraction and individually classified enclosed background gaps. Pale anatomy and physical highlights stay opaque.",
+			"backgroundSeedReason": "No interior background seeds. The tiny enclosed whites are eye highlights and remain opaque, as does the entire ivory bib.",
+			"componentCleanupReason": "All legitimate anatomy and the single accessory form the main connected component. Separately recorded sub-100-pixel islands are isolated near-white matte/antialias residue, including tiny colored pixels along native canvas borders."
+		},
+		"shadows": [
+			{
+				"color": [
+					66,
+					92,
+					114
+				],
+				"opacity": 0.15,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					66,
+					92,
+					114
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				-228,
+				13
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "One uniform placement of the complete supplied foreground, preserving its intentional offset and every expressive feature or accessory. The natural faceted outline stays intact; no circular bust crop, stretched anatomy, independent part movement or synthetic continuation."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2988337,
+		"foregroundPixels": 1205967,
+		"softEdgePixels": 8827,
+		"removedComponents": 56,
+		"removedComponentPixels": 294,
+		"bounds": {
+			"left": 729,
+			"top": 147,
+			"right": 1894,
+			"bottom": 1846
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			-228,
+			13
+		],
+		"bounds": {
+			"left": 501,
+			"top": 160,
+			"right": 1666,
+			"bottom": 1857
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 160.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3144,
+			"sha256": "001169a04bb1b21f6701d798781fd65c0d6caa35fe238f258c3bb5c03061e747"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1083,
+			"sha256": "3947e7f97e57aadecb304b712af78736fcff2a267847477ae42389433a396f0a"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 1933285,
+			"sha256": "04f73b1dc18b56e94f97e817f81bba0e4ab7a54fdd62b6e9e685a434e47c79de"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 53240,
+			"sha256": "0b2d4f47025338bcdab950906722dbfb1d0712d3af3317ea251b47b25ba2a4d6"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1253,
+			"sha256": "b8e597487f52eeba455857a350b9097fc0b38d213f54fa28ef0a549ff1767309"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2190048,
+			"sha256": "3c977f2591dd325109193779768459faac820d0b00394a9a45a874cf5dc3a651"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 1933329,
+			"sha256": "68c9ea4ff458bebf747653439bfb3e182d2c2c2c08814308016c90cfd278900b"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 53232,
+			"sha256": "bde2d1fbeca8ff381aa565d9d82794a340ed4d0ad9ac4efd453d703dae2771f1"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 192808,
+			"sha256": "692fb56153539a19984cbcd84198407cb97357d7c275146a99d0c06a2555c50c"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 146448,
+			"sha256": "19f27a2582911b4963c99255bc4f2748eb6509f812d5d180ef888fd9b90b134a"
+		},
+		{
+			"path": "exports/fundly-transparent-2048.png",
+			"bytes": 1933329,
+			"sha256": "68c9ea4ff458bebf747653439bfb3e182d2c2c2c08814308016c90cfd278900b"
+		},
+		{
+			"path": "exports/fundly-icon-2048.png",
+			"bytes": 3805411,
+			"sha256": "e27e3f70d0829551d16b06fd3b551615d05d2c7a8732341ca5eae66b6c39dcd0"
+		},
+		{
+			"path": "exports/fundly-rounded-2048.png",
+			"bytes": 3715851,
+			"sha256": "9aac1eb41c1d3d98a0c01467511d89b92fef4264a103100db23e1d5b13a1e6a8"
+		},
+		{
+			"path": "exports/fundly-transparent-1024.png",
+			"bytes": 581165,
+			"sha256": "267babfa0fda62096e3d040105de8bab0b8544a6c8915eab206b3888b1d50867"
+		},
+		{
+			"path": "exports/fundly-icon-1024.png",
+			"bytes": 992710,
+			"sha256": "3bb5232fe1fafe105b310b461fe12c3655fbb6d43d38e1a7f7cdd9f61290f199"
+		},
+		{
+			"path": "exports/fundly-rounded-1024.png",
+			"bytes": 987784,
+			"sha256": "31311aa330a402fbf054c077c5034676860b9603991a45a5acc260f4ad633344"
+		},
+		{
+			"path": "exports/fundly-transparent-512.png",
+			"bytes": 182629,
+			"sha256": "e9bdba3fb4586fbbb2fdeade4ce9bdb73817c17a0b61ff3205d18c1c6bb0c5d5"
+		},
+		{
+			"path": "exports/fundly-icon-512.png",
+			"bytes": 332660,
+			"sha256": "53426a8b137973be203bd81f4964c6ee254dbec092406765ba477caa37712340"
+		},
+		{
+			"path": "exports/fundly-rounded-512.png",
+			"bytes": 331869,
+			"sha256": "adb25374387d37b98908cf4215efe195547044c29c5c7084897cbfa14b74d4be"
+		},
+		{
+			"path": "exports/fundly-transparent-256.png",
+			"bytes": 57753,
+			"sha256": "1e8df50da37b14226b928d6adf7012eadfe78e1ee8baf528887af2db7ed6da1e"
+		},
+		{
+			"path": "exports/fundly-icon-256.png",
+			"bytes": 81645,
+			"sha256": "91db6d692920fea307a76d2d94d8275105cca201cb491e9805fde5af87b14510"
+		},
+		{
+			"path": "exports/fundly-rounded-256.png",
+			"bytes": 84414,
+			"sha256": "65bbaf600e0c32aa93b4b90f82a92f0dfdc6cc61c3280323ca4993209120b704"
+		},
+		{
+			"path": "exports/fundly-transparent-128.png",
+			"bytes": 17522,
+			"sha256": "7cef866061e4e264ee96e37d855abc805cb895cc888a3b1ec49b3bc43542408a"
+		},
+		{
+			"path": "exports/fundly-icon-128.png",
+			"bytes": 26408,
+			"sha256": "5a2604f3850b1ebe23c1d37894ee351eb654a83bd20d6f511a858269e088e916"
+		},
+		{
+			"path": "exports/fundly-rounded-128.png",
+			"bytes": 27785,
+			"sha256": "4e05ff08de45631cf928aa630667b33fae18c0f18ef4c3131e19eef8e620258f"
+		},
+		{
+			"path": "exports/fundly-transparent-64.png",
+			"bytes": 5185,
+			"sha256": "970fba483ab019defdcf524d1192cb3e7fc3e40ffbabd0ecb8ef579fcfdc7557"
+		},
+		{
+			"path": "exports/fundly-icon-64.png",
+			"bytes": 8682,
+			"sha256": "37d352c6d38072c82b9899c9c8c5cb827ce37eeaba58d34ed5770730042b278f"
+		},
+		{
+			"path": "exports/fundly-rounded-64.png",
+			"bytes": 9268,
+			"sha256": "335c9100d7a7c13aa1bb4ada7a3f983fec6a77b6fa9fe9abb78fe91f4cc0485a"
+		},
+		{
+			"path": "exports/fundly-transparent-48.png",
+			"bytes": 3189,
+			"sha256": "384ffb81b3babe50abed603503b0c42d5549f929cb663397b342f30ca2bfad20"
+		},
+		{
+			"path": "exports/fundly-icon-48.png",
+			"bytes": 5291,
+			"sha256": "4c2af1c0f5b446ac18119a6a14650962e3064aa35a6c1e5d323269ce8e4cc70e"
+		},
+		{
+			"path": "exports/fundly-rounded-48.png",
+			"bytes": 5730,
+			"sha256": "66dd030dc036e33d642fdb6d10b47cedfb318152435826c8ae70e9347508b51c"
+		},
+		{
+			"path": "exports/fundly-transparent-32.png",
+			"bytes": 1697,
+			"sha256": "0832621fb4d460749b75036f2fb443c9248134c7851a183ead04e686a465cb9a"
+		},
+		{
+			"path": "exports/fundly-icon-32.png",
+			"bytes": 2915,
+			"sha256": "b8170effbd128bfad263b931c4bdc5ae51f6c4f8e0d1f69bde1e9acfbd443a08"
+		},
+		{
+			"path": "exports/fundly-rounded-32.png",
+			"bytes": 3089,
+			"sha256": "99706bdb42cddd9894e292c1def8484e182b918fbcbb0fe2ba94effdcca775a5"
+		},
+		{
+			"path": "exports/fundly-transparent-24.png",
+			"bytes": 1126,
+			"sha256": "e692f1dc3bdabee6f171cc748bc388173235ec0d788a4897f8b6f555ada1b3d0"
+		},
+		{
+			"path": "exports/fundly-icon-24.png",
+			"bytes": 1784,
+			"sha256": "07b632c9ab692ff5e5cc3a43196f87aa463b2a30e9180dd1741c1f630668a428"
+		},
+		{
+			"path": "exports/fundly-rounded-24.png",
+			"bytes": 1952,
+			"sha256": "dd79cb17e663c442521a470b308629fcf5b299e237db85308722154b13449a2f"
+		},
+		{
+			"path": "exports/fundly-transparent-16.png",
+			"bytes": 617,
+			"sha256": "569d7bd5688daee4ee1895dd1f02708231f877bd76d29ae405f00b769ba9ac1a"
+		},
+		{
+			"path": "exports/fundly-icon-16.png",
+			"bytes": 939,
+			"sha256": "d79ace9f7e9dc71529a810425467891f1e2ce7d57780111ee1a4abdec1968635"
+		},
+		{
+			"path": "exports/fundly-rounded-16.png",
+			"bytes": 1000,
+			"sha256": "10dd215ce252e5d6e0c44d9533d9f0b7baa8a7dd7b4eb22bc1e8d7501b46b004"
+		},
+		{
+			"path": "exports/fundly-white-2048.png",
+			"bytes": 1813986,
+			"sha256": "778abe608c010c3eac7a1492067bf1254170620a619ecd3c39c3a4546ce3c469"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 557072,
+			"sha256": "11f9f0ab218d6634915b17463c459de0986fe4c8adf4de4621998613faa0ae4d"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 554588,
+			"sha256": "ebb637fe3528deeac3881330187115ea74001304aa6f7489c6a9b5eaa53e51fe"
+		}
+	]
+}
