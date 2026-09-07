@@ -204,3 +204,11 @@ Eleven native 2048 px generations succeeded, one per physical-object project. Po
 Clip restores the familiar ostrich, hat and feather spray in an offset portrait with a natural lower neck entry. [The earlier mantis](clip/2026-09-07-01/notes.md) remains rejected history. Fundly's lowered binoculars and Meowth's yarn each supply one multicolored animal interest group; DreamRO follows the physical-object series with classical equipment in front of a shield.
 
 The four selected native 2048-square drawings came from five Image 2 calls. Every selected study has complete comparison modes, distinct paper relief, palette samples, all export sizes, transparent app/browser specimens and archived production layers. Source identities remain unchanged and `family.status` is `review`. Publication and site verification remain deferred to the owner. See [the batch record](audits/2026-09-07-new-four/README.md) for exact selections and the Clip correction.
+
+## Basalt marble and candy colors — 2026-09-08
+
+[Basalt study `2026-09-08-01 / 01`](basalt/2026-09-08-01/notes.md) preserves the selected corner tower and redraws its colors using the actual source project's candy palette. The low plinth and balustrade are white Hanbaiyu marble; blue, green, pink, pearl and yellow-gold brighten the roof and structural surfaces. The existing champagne construction grid and separate projected shadows preserve its architectural presentation.
+
+One Image 2 request returned one native 2048-square drawing, accepted under the continuing named-batch waiver without claiming owner review of the new bytes. The full tower has 219.5 px rounded-outline clearance. All master roles, ten export sizes, source-palette evidence, native samples and frozen finishing layers are preserved. [Static HTML](basalt/2026-09-08-01/review.html) and [the local Vite page](https://index.dev.hexly.ai/logos/basalt) compare it with the previously adopted dark tower. The new selection is `review`; source adoption and publication remain unchanged.
+
+The Meowth character redraw was paused by the owner after [two Azure attempts returned no image](meowth/2026-09-08-02/notes.md). The earlier silver-blue cat remains active; no alternate-provider request or replacement was made.

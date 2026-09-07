@@ -161,3 +161,9 @@ All twelve source adoption commits and necessary follow-up fixes are pushed, and
 ## New local previews — 2026-09-07
 
 Clip, Fundly, DreamRO and Meowth have complete [local family presentations](08-new-project-identities.md), with Refined badges and `family.status: "review"`. Their source repositories and README/application consumers still use the previous identities. All new transparent, square, rounded and pure-white masters and ten export sizes are archived for later adoption; the current task does not publish them or replace source consumers. Small local sidebar/browser specimens use transparent foregrounds, and large review panels use the separate project-specific paper backgrounds. Site verification is delegated to the owner.
+
+## Basalt local color revision — 2026-09-08
+
+Basalt's new [Hanbaiyu and candy-color presentation](09-basalt-color-study.md) is a local `review` selection. The source logo, README, embedded `BasaltMark`, navigation and platform assets still use the previously adopted obsidian tower. Its earlier source-adoption and publication records remain valid for that older artwork. A later adoption must replace all of those consumers from the newly selected exact masters, following the same surface-role table; this study alone does not claim that replacement.
+
+The local comparison supplies the complete transparent tower for sidebar/browser marks and a separate champagne tile for large presentations. A pale material is still opaque artwork: protect Hanbaiyu stone and its highlights during white-matte extraction, and seed only actual openings to the exterior. Keep the repository's raw candy swatches, semantic UI tokens and physically shaded native artwork samples as separate color evidence.
