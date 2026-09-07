@@ -1,0 +1,388 @@
+{
+	"createdAt": "2026-09-06T22:31:36.612Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "f59a11f558e963ee3b784196983798a140916e4c210503f31a5b637e3523595d",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "bogo",
+		"original": "../../../../public/logos/originals/bogo.png",
+		"background": {
+			"base": "#b7a186",
+			"light": "#e0ccaf",
+			"shade": "#958370",
+			"motif": "#6d5843",
+			"grainAmplitude": 1,
+			"grainSeed": 609071,
+			"status": "Designed mineral presentation for owner-approved Bogo study 05; independent of the unchanged blue UI theme.",
+			"motifOpacity": 0.14,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Mineral horn arches",
+				"description": "Offset broken polygonal arches with blunt beveled ends, recalling the buffalo horns without framing the face.",
+				"layers": [
+					{
+						"d": "M-34 327L99 161L219 89L246 124L131 195L9 351Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M29 447L174 268L303 190L321 217L194 300L63 471Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M96 544L235 382L338 319L353 341L256 407L123 564Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M771-18L855 53L1062 144L1048 173L831 82L748 9Z",
+						"tone": "motif"
+					},
+					{
+						"d": "M19 357L136 201L249 129",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M74 476L199 306L324 222",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M1054 186L828 92L744 19",
+						"tone": "highlight",
+						"strokeWidth": 3
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 237,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				251,
+				250,
+				250
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.985,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Sampled the study 05 exterior near-white matte. Keep enclosed eye highlights and all flower/leaf fragments; no component removal in the diagnostic pass."
+		},
+		"shadows": [
+			{
+				"color": [
+					109,
+					88,
+					67
+				],
+				"opacity": 0.14,
+				"blurAt2048": 30,
+				"offsetAt2048": [
+					8,
+					23
+				]
+			},
+			{
+				"color": [
+					109,
+					88,
+					67
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.82,
+			"offsetAt2048": [
+				-20,
+				0
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"note": "Diagnostic extraction and uniform placement. The source has cropped ear/horn and shoulder contours; inspect and complete these before adopting any export."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1267763,
+		"foregroundPixels": 2926541,
+		"softEdgePixels": 16345,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 85,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.82,
+		"offsetAt2048": [
+			-20,
+			0
+		],
+		"bounds": {
+			"left": 164,
+			"top": 254,
+			"right": 1842,
+			"bottom": 1862
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 81.11105365207885,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2333,
+			"sha256": "594cf8c55b6f1001b7dc76a0ab9692b5fab5078b1189ac5c0a52c84e29343e09"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1571,
+			"sha256": "33df86bb32c46345015872516f61a6e658642b3bab43eed137991b659dc183c1"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 21831,
+			"sha256": "f59a11f558e963ee3b784196983798a140916e4c210503f31a5b637e3523595d"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5088152,
+			"sha256": "d1f0604ae764f244f304a3efc2fab8d5cee7dbfc36f6470150cd7e2fa573a9cb"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 93122,
+			"sha256": "926138bb852af6b8a969d267ca2bb9de7967e36b2f8be89d74676476eecdfce9"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1050,
+			"sha256": "d89ef95802edfcb29b6f586135da034ce0c62db9c3c5e4c4faf4199ecba2af8b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2120015,
+			"sha256": "b4d91c822942e01f11a1dfec0c22ce8aa86ff97ba06728c1db230d52c4014301"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3790438,
+			"sha256": "0ccf812dd58aee609fbd5e6a14c9251723cec1900c0b9cd5736690e2f5968d94"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 115077,
+			"sha256": "dcd81fd20c130208baa8bc954eb6516f4e26f75c5232742fd7353121d80fcf8e"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 280005,
+			"sha256": "cdf335e99cbb2b1101b753b6063a4ff5b0621fb09b3e82fe10e6374fbe9be524"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 194119,
+			"sha256": "55781b4fcff456bca08921f1e9f1287adb9a3e70aca41b48b72e7ecf954e770a"
+		},
+		{
+			"path": "exports/bogo-transparent-2048.png",
+			"bytes": 3790438,
+			"sha256": "0ccf812dd58aee609fbd5e6a14c9251723cec1900c0b9cd5736690e2f5968d94"
+		},
+		{
+			"path": "exports/bogo-icon-2048.png",
+			"bytes": 5302164,
+			"sha256": "bff548031d4f4bc7c66ce9321871485fb0026649322477847d4f3679aebfeab2"
+		},
+		{
+			"path": "exports/bogo-rounded-2048.png",
+			"bytes": 5218838,
+			"sha256": "721fbb5a7dca76caaae4b12493357774667001af319b4127ff98c13d24a96276"
+		},
+		{
+			"path": "exports/bogo-transparent-1024.png",
+			"bytes": 1045430,
+			"sha256": "091ac531c6e1bd097664a18c14b1bc085792f99afcd62461d137f96f2b766285"
+		},
+		{
+			"path": "exports/bogo-icon-1024.png",
+			"bytes": 1398082,
+			"sha256": "812b1dd51d674e23171a32f7aa7ffbcb31a86efa7e8a8dda24a0855dfdf5f6c2"
+		},
+		{
+			"path": "exports/bogo-rounded-1024.png",
+			"bytes": 1394887,
+			"sha256": "356d3dcba808985132e7955d1b36f2b97eee11fa47e6c79f5c6e0143acce0679"
+		},
+		{
+			"path": "exports/bogo-transparent-512.png",
+			"bytes": 309745,
+			"sha256": "2fbb89e958a513bf8d69885cdc518bf0707094f0f3d6254a224a98341f8a2301"
+		},
+		{
+			"path": "exports/bogo-icon-512.png",
+			"bytes": 416616,
+			"sha256": "9f7768fecdf22ef391b20bddfc08b61734dbbcf7f565bc5befdb3d302d7e8aa6"
+		},
+		{
+			"path": "exports/bogo-rounded-512.png",
+			"bytes": 417408,
+			"sha256": "9464da3c9d0a478f85eadc9a19f701d386f140e72950894d9d9e423c44d24c42"
+		},
+		{
+			"path": "exports/bogo-transparent-256.png",
+			"bytes": 92377,
+			"sha256": "df36855e37ed2da8e71c250475a082c7ec7ed86131ef4a912ba7b93d16ad45b7"
+		},
+		{
+			"path": "exports/bogo-icon-256.png",
+			"bytes": 112224,
+			"sha256": "71746d06415897fe5dee0ae449ef0930092038e7e0f290ae1d8ca079b07f94df"
+		},
+		{
+			"path": "exports/bogo-rounded-256.png",
+			"bytes": 115284,
+			"sha256": "deb8aebd401023acf5c0b9a84640f74a327787206e0ae472bfe97d8cfdc0e1ae"
+		},
+		{
+			"path": "exports/bogo-transparent-128.png",
+			"bytes": 26959,
+			"sha256": "5de511bf17b91d23454814cc680d690eba5d24440bbcad761d7a897f74080954"
+		},
+		{
+			"path": "exports/bogo-icon-128.png",
+			"bytes": 33171,
+			"sha256": "66e75511a0240a642269954f101e985614379a8f26348903e92f37b5bbc9bcbf"
+		},
+		{
+			"path": "exports/bogo-rounded-128.png",
+			"bytes": 34808,
+			"sha256": "b42366b27edd756c96fedf4d15e2927f1573596c4ee60d14b9de64f66d489c1a"
+		},
+		{
+			"path": "exports/bogo-transparent-64.png",
+			"bytes": 7983,
+			"sha256": "5885e9dd7e7bf65bc5d769f278ec8af4d915a466468cc91e28e6416ae5e24e8e"
+		},
+		{
+			"path": "exports/bogo-icon-64.png",
+			"bytes": 10421,
+			"sha256": "7b6d737fac4d4a10d5693cc95a3638f217c9a909ef4eae0b63d975f8f48369c1"
+		},
+		{
+			"path": "exports/bogo-rounded-64.png",
+			"bytes": 11023,
+			"sha256": "3ba9d4e255cd1eb25b53e150f43afd5315b73c57689596d951dfe4abd2619884"
+		},
+		{
+			"path": "exports/bogo-transparent-48.png",
+			"bytes": 4900,
+			"sha256": "40fcc2c1221a939f3790e4458adecff59e261a54243fa6ee5f6b8da372a520d0"
+		},
+		{
+			"path": "exports/bogo-icon-48.png",
+			"bytes": 6298,
+			"sha256": "8a16002af12a21d526812fc65aaee17b7763d9ab33df3e2e0b56085317e84689"
+		},
+		{
+			"path": "exports/bogo-rounded-48.png",
+			"bytes": 6708,
+			"sha256": "8b80bdd6d0500aefbcffc0894e5729c36b6c0c68bc3545803dfb2d727b28b52f"
+		},
+		{
+			"path": "exports/bogo-transparent-32.png",
+			"bytes": 2502,
+			"sha256": "84ff8da8cb2d6e3eba3f31b09431cf3c4e05007fb8a4c9cb9e3ea07a0ba35d77"
+		},
+		{
+			"path": "exports/bogo-icon-32.png",
+			"bytes": 3217,
+			"sha256": "269ec53cc45368babdb1dfd485a732212c84bc14a80b19eb9a803d90c2371f71"
+		},
+		{
+			"path": "exports/bogo-rounded-32.png",
+			"bytes": 3365,
+			"sha256": "7c7dfe2711ad683a6e66f7cf2635aa01ab3179fe1fee5dd46392622235f1314c"
+		},
+		{
+			"path": "exports/bogo-transparent-24.png",
+			"bytes": 1616,
+			"sha256": "859d844a5337da927d5d40ac237f3d3915bc38d5faaf201a6f39c91d38983803"
+		},
+		{
+			"path": "exports/bogo-icon-24.png",
+			"bytes": 1947,
+			"sha256": "a48f261046cff9671a6152bbb091c4e023ae8e57651c3ab3d4ea37e9ba8d667c"
+		},
+		{
+			"path": "exports/bogo-rounded-24.png",
+			"bytes": 2065,
+			"sha256": "5bbc48f7a4e01a71479b316f6153beb7edacf28df97d3cb7ff125f717a47498a"
+		},
+		{
+			"path": "exports/bogo-transparent-16.png",
+			"bytes": 864,
+			"sha256": "a63fdf8949b1bcbd16bfff70bf2898a31b65e1caeae0c5653c279edc74aecc5e"
+		},
+		{
+			"path": "exports/bogo-icon-16.png",
+			"bytes": 980,
+			"sha256": "0832ee7ab2f432ad32539479b28d2919d0b0f70ad0d631a17a60379e0ef00b3f"
+		},
+		{
+			"path": "exports/bogo-rounded-16.png",
+			"bytes": 1021,
+			"sha256": "d46057c69b41fa6bc705805d42b33bdb3d55d6f7cefae661f3613d3331fc80a4"
+		},
+		{
+			"path": "exports/bogo-white-2048.png",
+			"bytes": 3563835,
+			"sha256": "da032dcca802b4a96f13c0f79b8c022225a6a3b3552c1426fc39e0e74848c7ec"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1002242,
+			"sha256": "17c804606218caf8f395be34b88fb2efdeac9ae3d7f4745ebfad7351d7eeea5c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 992956,
+			"sha256": "9e59a0c427b3ebb2e2247b6785c488d2303e3fd41bbe04d32767bf5152dd2046"
+		}
+	]
+}
