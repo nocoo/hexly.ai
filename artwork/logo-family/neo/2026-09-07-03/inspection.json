@@ -1,0 +1,46 @@
+{
+	"method": "retained-original",
+	"generationCalls": 0,
+	"source": {
+		"path": "source/original.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4237355,
+		"repository": "https://github.com/nocoo/neo",
+		"repositoryRevision": "97907273ddd9e52efc4ee9d3d640a51871d81970",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/neo/blob/97907273ddd9e52efc4ee9d3d640a51871d81970/logo.png"
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 81,
+			"top": 202,
+			"right": 1968,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -31.177266927372727,
+		"clippedPixels": 3798
+	},
+	"framingAssessment": "The retained native lower-shoulder entry intentionally meets the rounded base. Only terminal shoulder pixels intersect the rounded mask; ears, eyes, muzzle, tongue, and upper facial silhouette remain clear. The transparent source is unchanged.",
+	"foregroundDecision": "Preserve the owner-selected native canvas and exact transparent bytes.",
+	"presentationDecision": "Distinct tonal geometry, visible empty-area texture, fine grain, and a shallow shadow inspected on the rounded presentation.",
+	"sizeReview": "Passed in Chrome at actual 128/64 px app-icon, 32/16 px small-mark, 24 px sidebar, and 16 px tab sizes on both themes; original foreground is preserved.",
+	"browserReview": {
+		"checkedAt": "2026-09-07T00:52:21.311Z",
+		"evidence": "../../audits/2026-09-07-retained/browser-review.json",
+		"arrangements": [
+			"desktop-en-light",
+			"desktop-zh-dark",
+			"mobile-en-dark",
+			"mobile-zh-light"
+		],
+		"routes": [
+			"/logos/neo",
+			"/artwork/logo-family/neo/2026-09-07-03/review.html"
+		]
+	}
+}

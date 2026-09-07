@@ -1,0 +1,22 @@
+# R2Shot retained-original study
+
+The familiar dolphin, carried by a quiet teal current.
+
+This is a presentation-only refinement. No image model was called; there is no generation prompt or provider request/response. Keep the original animal, expression, pose, canvas, colors, facets, and existing accents byte-for-byte. Do not add another accessory.
+
+The same playful turn
+The dolphin, curled tail, camera, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.
+
+Every original facet
+Cyan, turquoise, blue, and pale belly planes remain the original transparent artwork. The bright eyes and sweeping tail keep their existing gesture; no new decoration or model generation was needed.
+
+A quiet teal wake
+Oblique wave crests follow the empty upper-right field. A deep teal gradient, fine grain, and shallow contact shadows give the retained flat artwork a tactile setting.
+
+Source: https://github.com/nocoo/r2shot/blob/761799416deb2a977eee92b2392746e16f6bc644/logo.png
+SHA-256: 17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1
+Native dimensions: 920 × 920
+
+Explicit Lanczos3 upscales: 2048, 1024 px. These are derivatives, not native artwork.
+
+The separate transparent master remains the source for small app marks and favicons. Large README and gallery presentations use the rounded icon. Keep an individual before/after page even though both sides use the same foreground. Label the completed identity Refined.

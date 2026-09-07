@@ -1,0 +1,80 @@
+{
+	"project": "r2shot",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#4d818c",
+		"light": "#8cbbc0",
+		"shade": "#35586c",
+		"motif": "#173f54",
+		"grainAmplitude": 1,
+		"grainSeed": 609071,
+		"motifOpacity": 0.19,
+		"highlightOpacity": 0.25,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Dolphin wake",
+			"description": "Three oblique wave crests sweep through the upper-right field; a shallow lower wake follows the dolphin tail. Raised edges use a small light offset, unlike the family stripe, orbit, and horn motifs.",
+			"layers": [
+				{
+					"d": "M340-90C520 128 663 183 1120 62L1130 105C699 237 482 180 302-69Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M518-85C658 53 836 58 1089-20L1110 23C823 121 635 105 480-67Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M490 122C699 331 887 269 1111 171L1120 208C879 324 678 386 462 156Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M305-67C483 182 699 240 1130 108",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M483-67C635 108 823 124 1110 26",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M463 159C678 389 879 327 1120 211",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M-90 831C139 871 184 1041 492 1090L455 1120C151 1067 90 919-92 867Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M-80 906C68 944 115 1013 242 1074",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+	},
+	"shadows": [
+		{
+			"color": [15, 39, 53],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [13, 30, 40],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+	},
+	"exportSizes": [2048, 1024, 920, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [2048, 1024]
+}

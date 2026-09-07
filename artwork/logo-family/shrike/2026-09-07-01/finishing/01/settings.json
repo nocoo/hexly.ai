@@ -1,0 +1,62 @@
+{
+	"project": "shrike",
+	"sourceMode": "retained-transparent",
+	"background": {
+		"base": "#718591",
+		"light": "#abbac1",
+		"shade": "#465c6b",
+		"motif": "#293f4e",
+		"grainAmplitude": 1,
+		"grainSeed": 609075,
+		"motifOpacity": 0.18,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Folded wings",
+			"description": "Broad angular wing pleats overlap at the top-left and lower-right edges. Irregular pointed folds and short inset seams form a slate paper relief with no curling or radial motif.",
+			"layers": [
+				{
+					"d": "M-95 13L327-82L176 116L-96 294Z M-82 325L196 150L108 349L-96 526Z M831 1100L1022 719L1115 760L1012 1110Z M530 1104L833 781L791 983L670 1120Z",
+					"tone": "motif"
+				},
+				{
+					"d": "M-89 295L182 117L333-81 M-90 528L114 351L202 151 M798 984L839 782 M839 1102L1029 721",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M581-91L776 51L1084 103L909-67Z M-85 741L133 614L64 836L-90 970Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M777 57L1083 109 M-88 974L70 838L139 614",
+					"tone": "highlight",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Selected for the owner-authorized presentation-only pass; site theme values remain separate."
+	},
+	"shadows": [
+		{
+			"color": [35, 46, 54],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [28, 37, 43],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"cornerRadius": 0.23,
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"note": "Owner-retained native framing. Preserve complete source bytes and original margins; inspect actual rounded-boundary clearance and require zero clipped visible pixels. The general 6.25% new-composition target does not reframe this explicitly retained original."
+	},
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": []
+}
