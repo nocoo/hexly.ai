@@ -13,6 +13,26 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `d8a28afb9ed85d4f3d1627738415a863f82b3629`
 
+## Project goal
+
+Check that a configured URL returns a successful HTTP response and optionally matches response content before starting a command, with project or user configuration and reusable Node.js APIs.
+
+在启动命令前，确认指定 URL 返回成功响应并按需匹配内容；支持项目或用户配置，以及可复用的 Node.js API。
+
+- [中文 README](https://github.com/nocoo/ipsafe/blob/main/README.md) · [English README](https://github.com/nocoo/ipsafe/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/ipsafe/tree/d8a28afb9ed85d4f3d1627738415a863f82b3629)
+- Source files: [`package.json`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/package.json), [`index.js`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/index.js), [`bin/ipsafe.js`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/bin/ipsafe.js), [`lib/ipsafe.js`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/lib/ipsafe.js), [`lib/check-safe.js`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/lib/check-safe.js), [`integrations/claude-code.js`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/integrations/claude-code.js), [`ipsafe.config.json`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/ipsafe.config.json), [`vitest.config.ts`](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/vitest.config.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| JavaScript / Node.js | CLI and CommonJS API | 命令行与 CommonJS API |
+| node:http / node:https | Pre-execution HTTP checks | 执行前 HTTP 检查 |
+| node:child_process | Command execution and output | 命令执行与输出 |
+| JSON / node:fs | Project and user configuration | 项目与用户配置 |
+| Vitest | Unit and simulated CLI tests | 单元与 CLI 模拟测试 |
+
 ## Current logo
 
 ![IPSafe source identity](../../public/logos/display/ipsafe-160.webp)

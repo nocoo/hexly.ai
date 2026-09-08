@@ -1,0 +1,124 @@
+{
+  "projectId": "clip",
+  "repository": "https://github.com/nocoo/clip",
+  "checkout": "/Users/nocoo/workspace/personal/clip",
+  "baselineRevision": "071d10dd71f913814a47a68047265883642c851c",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Turn an HTTP API definition in clip.yaml into an editable command-line client, with credentials stored separately for each tool.",
+      "zh": "将 clip.yaml 中的 HTTP API 定义转换为可编辑的命令行客户端，并按工具分别管理凭据。"
+    },
+    "techStack": [
+      {
+        "name": "Bun / TypeScript",
+        "role": {
+          "en": "CLI runtime and code generation",
+          "zh": "CLI 运行环境与代码生成"
+        }
+      },
+      {
+        "name": "commander",
+        "role": {
+          "en": "Generated commands and arguments",
+          "zh": "生成的命令与参数解析"
+        }
+      },
+      {
+        "name": "Zod / yaml",
+        "role": {
+          "en": "Schema parsing and validation",
+          "zh": "Schema 解析与校验"
+        }
+      },
+      {
+        "name": "@nocoo/base-cli",
+        "role": {
+          "en": "Browser login and local callback",
+          "zh": "浏览器登录与本机回调"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "Example and test APIs",
+          "zh": "示例与测试 API"
+        }
+      },
+      {
+        "name": "Astro",
+        "role": {
+          "en": "Static documentation site",
+          "zh": "静态文档站"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "071d10dd71f913814a47a68047265883642c851c",
+      "sources": [
+        "package.json",
+        "packages/cli/package.json",
+        "packages/cli/src/index.ts",
+        "packages/cli/src/schema/validator.ts",
+        "packages/cli/src/codegen/generator.ts",
+        "packages/cli/src/codegen/templates.ts",
+        "packages/cli/src/auth/storage.ts",
+        "packages/cli/src/commands/auth.ts",
+        "packages/cli/src/commands/install.ts",
+        "packages/cli/src/commands/test.ts",
+        "packages/web/package.json"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main; git pull --ff-only succeeded before investigation."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed; normal scripts/hooks path configured."
+    },
+    {
+      "check": "Unit tests",
+      "result": "217 tests across 13 files passed with required coverage."
+    },
+    {
+      "check": "Process and HTTP integration",
+      "result": "bun run test:e2e passed 16 tests; temporary CLIP_HOME, local fixtures and separate BUN_INSTALL. No human credential access, global install or production API calls."
+    },
+    {
+      "check": "Website",
+      "result": "GitHub homepage and site entry are null. Astro config contains clip.dev, but ownership/deployment is not verified; no website promoted."
+    },
+    {
+      "check": "Links, examples and website follow-up",
+      "result": "All 8 references per language resolve and bash examples match. Public clip.dev responds with title CLIP Inc. — IPに、第二の成長曲線を。 and no nocoo links; it is unrelated. Astro engine >=22.12.0; README recommends supported Node24."
+    },
+    {
+      "check": "Static documentation build",
+      "result": "bun run --cwd packages/web build passed and generated all five static routes."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "1c7e3e5c4ade8d65ec1850c9eeb2f57f2a083417",
+    "url": "https://github.com/nocoo/clip/commit/1c7e3e5c4ade8d65ec1850c9eeb2f57f2a083417",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both README byte sequences match local through GitHub Contents API at main; clean synchronized main.",
+    "hooks": "Normal pre-commit lint, typecheck and 217 coverage tests passed; pre-push 16 isolated E2E checks, gitleaks and OSV passed.",
+    "ci": {
+      "url": "https://github.com/nocoo/clip/actions/runs/34226167974",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "clip.review.md"
+  }
+}

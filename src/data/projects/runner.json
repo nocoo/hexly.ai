@@ -179,5 +179,69 @@
 			"zh": "128/64 px 能辨认祖母绿表盘与钢制表壳；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect their local run history and output through a CLI and Dashboard.",
+			"zh": "在 Mac 上定时执行 shell、OpenCode 和 HTTP 任务，通过 CLI 与本地 Dashboard 查看运行历史和输出。"
+		},
+		"techStack": [
+			{
+				"name": "Swift",
+				"role": {
+					"en": "CLI and task execution",
+					"zh": "命令行与任务执行"
+				}
+			},
+			{
+				"name": "launchd",
+				"role": {
+					"en": "macOS timer integration",
+					"zh": "macOS 定时触发"
+				}
+			},
+			{
+				"name": "SQLite / GRDB",
+				"role": {
+					"en": "Local run and task storage",
+					"zh": "本地运行与任务存储"
+				}
+			},
+			{
+				"name": "React / TypeScript",
+				"role": {
+					"en": "Local Dashboard",
+					"zh": "本地控制台"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Development server and CLI API bridge",
+					"zh": "开发服务与 CLI API 桥接"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Dashboard styling",
+					"zh": "控制台样式"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "d9d2a14828d20c6f27f4e44b3221d9d9a89190e1",
+			"sources": [
+				"runner-swift/Package.swift",
+				"runner-swift/Sources/Runner/Runner.swift",
+				"runner-swift/Sources/RunnerLib/CLICommands.swift",
+				"runner-swift/Sources/RunnerLib/SQLiteStorage.swift",
+				"runner-swift/Sources/RunnerLib/Executor.swift",
+				"dashboard/package.json",
+				"dashboard/src/api/vite-plugin-api.ts",
+				"launchd/com.runner.scheduler.plist"
+			]
+		}
 	}
 }

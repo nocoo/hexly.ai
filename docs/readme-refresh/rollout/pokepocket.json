@@ -1,0 +1,169 @@
+{
+  "projectId": "pokepocket",
+  "repository": "https://github.com/nocoo/pokepocket",
+  "checkout": "/Users/nocoo/workspace/personal/pokepocket",
+  "baselineRevision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection while keeping controls and progress for each ROM.",
+      "zh": "在浏览器卡带收藏盘中游玩自备的 GB、GBC、GBA 宝可梦，管理操作设置和每枚 ROM 的进度。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application and Worker logic",
+          "zh": "应用与 Worker 逻辑"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Cartridge collection and handheld controls",
+          "zh": "卡带收藏盘与掌机操作界面"
+        }
+      },
+      {
+        "name": "mGBA",
+        "role": {
+          "en": "GB, GBC, and GBA emulation core",
+          "zh": "GB、GBC 与 GBA 模拟器核心"
+        }
+      },
+      {
+        "name": "WebAssembly",
+        "role": {
+          "en": "Browser execution of the emulator",
+          "zh": "在浏览器运行模拟器"
+        }
+      },
+      {
+        "name": "IndexedDB",
+        "role": {
+          "en": "Local ROMs, battery saves, and save states",
+          "zh": "本地卡带、电池存档与即时存档"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Development server and application builds",
+          "zh": "开发服务器与应用构建"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Protected static hosting and application metadata",
+          "zh": "受访问控制保护的静态托管与应用信息"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Hosted site authentication",
+          "zh": "托管站点认证"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+      "sources": [
+        "package.json",
+        "src/App.tsx",
+        "src/data/editions.json",
+        "src/lib/emulator.ts",
+        "src/lib/cartridge.ts",
+        "src/lib/storage.ts",
+        "src/lib/settings.ts",
+        "src/lib/key-bindings.ts",
+        "src/lib/input.ts",
+        "scripts/local-roms.ts",
+        "scripts/run-l3.mjs",
+        "scripts/check-no-roms.mjs",
+        "worker/index.ts",
+        "vite.config.ts",
+        "wrangler.jsonc",
+        "THIRD_PARTY_NOTICES.md"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before investigation"
+    },
+    {
+      "command": "GitHub homepage, wrangler route, and anonymous HTTPS HEAD",
+      "result": "https://pokepocket.hexly.ai confirmed; anonymous HEAD returned 403 without Location. Access required; real SSO was not exercised."
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 135 lines after Prettier; relative links, balanced fences, package script names and git diff --check passed. Only README.md, docs/README.en.md and docs/README.md changed."
+    },
+    {
+      "command": "Browser runner prerequisite inspection",
+      "result": "Local run-l3 launches channel chrome, CI uses default Playwright Chromium. Required suite uses original fixtures and temporary signed Access tokens; optional suite requires private ROMs and was not run."
+    },
+    {
+      "command": "Normal hooks, pre-push pull, push and GitHub readback",
+      "result": "Commit-msg required lowercase subject; full normal retry succeeded. Static checks and coverage passed. Pre-push production build, ROM distribution check, OSV, gitleaks and all 40 HTTP tests passed. Main clean/synchronized and three documents byte-match remote. Browser optional ROM suite was not run."
+    },
+    {
+      "command": "Existing automatic Release browser stage",
+      "result": "Existing Release 34230523621 failed its required Chromium browser stage: 29 passed, one GBA snapshot regression hit the 60000 ms test timeout at tests/e2e/core-journeys.spec.ts:464 while clicking Pause. Unit, HTTP/integration and security stages succeeded; deploy skipped. No assertion or timeout changed; browser artifacts retained upstream."
+    },
+    {
+      "command": "gh run rerun 34230523621 --repo nocoo/pokepocket --failed",
+      "result": "Attempt 2 success: required browser, aggregate and Deploy Worker all passed. No version, source, assertion or timeout changed; first-attempt trace retained as history."
+    }
+  ],
+  "publication": {
+    "commit": "8698f1ac309b4f00d1cb5c5770fdfd79d212ff55",
+    "branch": "main",
+    "ci": [
+      {
+        "conclusion": "success",
+        "databaseId": 34230523621,
+        "name": "Release",
+        "status": "completed",
+        "url": "https://github.com/nocoo/pokepocket/actions/runs/34230523621"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 34230105197,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/pokepocket/actions/runs/34230105197"
+      }
+    ],
+    "remoteReadback": "README.md, docs/README.en.md and docs/README.md byte-match GitHub at the publication commit",
+    "logs": [
+      "/tmp/readme-refresh-20260908-apps-pokepocket-commit.log",
+      "/tmp/readme-refresh-20260908-apps-pokepocket-commit-retry.log",
+      "/tmp/readme-refresh-20260908-apps-pokepocket-push.log",
+      "/tmp/readme-refresh-20260908-apps-pokepocket-release-failure.log"
+    ],
+    "releaseHistory": [
+      {
+        "attempt": 1,
+        "result": "Existing Release 34230523621 failed its required Chromium browser stage: 29 passed, one GBA snapshot regression hit the 60000 ms test timeout at tests/e2e/core-journeys.spec.ts:464 while clicking Pause. Unit, HTTP/integration and security stages succeeded; deploy skipped. No assertion or timeout changed; browser artifacts retained upstream."
+      }
+    ],
+    "releaseRetry": {
+      "run": 34230523621,
+      "attempt": 2,
+      "conclusion": "success",
+      "completedAt": "2026-09-08T13:30:11Z",
+      "result": "Original failed jobs retried once with the same SHA, assertions, timeouts and code. Browser, aggregate and deploy all passed; no current release blocker."
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "pokepocket.review.md"
+  }
+}

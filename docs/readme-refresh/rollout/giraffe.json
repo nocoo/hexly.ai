@@ -1,0 +1,192 @@
+{
+  "projectId": "giraffe",
+  "repository": "https://github.com/nocoo/giraffe",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/giraffe",
+  "originalCheckout": "/Users/nocoo/workspace/personal/giraffe",
+  "baselineRevision": "d772268203e31098f7efa40a032afee2efa91916",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Review repositories, open work, alerts, and daily changes across GitHub accounts in a personal console with on-demand data refreshes.",
+      "zh": "在个人控制台查看多个 GitHub 账号的仓库、待办、告警和每日变化，按需同步 GitHub 数据。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application, Worker, and tooling logic",
+          "zh": "应用、Worker 与工具脚本逻辑"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Console pages and interactions",
+          "zh": "控制台页面与交互"
+        }
+      },
+      {
+        "name": "Basalt",
+        "role": {
+          "en": "Shared interface components",
+          "zh": "界面组件"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "Worker HTTP routes and middleware",
+          "zh": "Worker HTTP 路由与中间件"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "GitHub collection and static hosting",
+          "zh": "GitHub 数据采集与静态托管"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Accounts, encrypted PATs, and snapshots",
+          "zh": "账号、加密 PAT 与快照"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Deployment access and API identity",
+          "zh": "部署入口与 API 身份认证"
+        }
+      },
+      {
+        "name": "GitHub API",
+        "role": {
+          "en": "REST and GraphQL repository and notification data",
+          "zh": "REST 与 GraphQL 仓库和通知数据"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Local development and frontend builds",
+          "zh": "本地开发与前端构建"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "d772268203e31098f7efa40a032afee2efa91916",
+      "sources": [
+        "package.json",
+        "src/server/index.ts",
+        "src/server/env.ts",
+        "src/server/lib/token-crypto.ts",
+        "src/server/lib/db/schema.sql",
+        "src/server/routes/accounts.ts",
+        "src/server/routes/refresh.ts",
+        "src/server/routes/notifications.ts",
+        "src/server/lib/collect.ts",
+        "src/server/lib/github-map.ts",
+        "src/server/lib/insights.ts",
+        "src/server/lib/digest.ts",
+        "src/server/middleware/access.ts",
+        "src/server/middleware/origin.ts",
+        "src/server/lib/access-config.ts",
+        "src/server/lib/author-profile.ts",
+        "src/client/app.tsx",
+        "src/client/routes/settings.tsx",
+        "src/client/routes/repo-detail.tsx",
+        "src/client/viewmodels/accounts.ts",
+        "src/client/viewmodels/digest.ts",
+        "vite.config.ts",
+        "wrangler.toml",
+        "scripts/dev.ts",
+        "scripts/ensure-dev-vars.ts",
+        "scripts/run-e2e.ts",
+        "scripts/run-e2e-bdd.ts",
+        "dev.vars.example"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only in the assigned independent checkout",
+      "result": "Already up to date; clean synchronized main before investigation. Original checkout untouched."
+    },
+    {
+      "command": "GitHub homepage, wrangler route and anonymous HTTPS HEAD",
+      "result": "https://giraffe.hexly.ai confirmed; HTTP 302 redirects to the nocoo Cloudflare Access login. No real SSO session was exercised; redirect query/cookie values are not retained in the report."
+    },
+    {
+      "command": "bun install --frozen-lockfile",
+      "result": "Installed successfully with the existing Bun lockfile; normal Husky prepare enabled. No manifest or lockfile change."
+    },
+    {
+      "command": "bun run build",
+      "result": "Vite production build passed. Existing >500 kB chunk warning retained; build does not run type checking. No deployment performed."
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs are 115 lines. Relative links, balanced fences, package script names and git diff --check passed. Changes restricted to README.md, docs/README.en.md and docs/README.md."
+    },
+    {
+      "command": "Development and test runner inspection",
+      "result": "Documented real GitHub endpoint and mandatory replacement of the public example encryption key before entering a real PAT. HTTP/browser tests use isolated local D1 and GitHub stubs. Full normal hooks and CI remain for publication after root review."
+    },
+    {
+      "command": "Normal pre-commit checks",
+      "result": "Typecheck, lint, four existing gates and coverage all passed. 50 Vitest files / 173 tests passed; no skip or threshold change."
+    },
+    {
+      "command": "bunx playwright install chromium; bun run test:e2e:bdd",
+      "result": "Chromium available; the full existing browser runner passed its settings/PAT, repository list and repository detail journey using isolated local D1 and GitHub fixtures."
+    },
+    {
+      "command": "Pre-push pull and normal push hook",
+      "result": "Pulled successfully before pushing. Both existing HTTP suites passed (2 files / 2 end-to-end suites), and gitleaks plus gate:security passed. Main pushed normally."
+    },
+    {
+      "command": "GitHub remote readback and final worktree status",
+      "result": "Three documents byte-match GitHub at deb25d07c634c5122629346ddbc8741fde17e9e9. Main clean/synchronized; all API/browser test ports released. Original checkout untouched."
+    },
+    {
+      "command": "GitHub CI and existing automatic Release",
+      "result": "CI 34232364966 including L1/G1/G2, API and browser jobs passed. Existing automatic Release 34232475587 also success. No manual deployment or version change."
+    }
+  ],
+  "publication": {
+    "commit": "deb25d07c634c5122629346ddbc8741fde17e9e9",
+    "branch": "main",
+    "remoteReadback": "README.md, docs/README.en.md and docs/README.md byte-match GitHub at the publication commit",
+    "ci": [
+      {
+        "conclusion": "success",
+        "databaseId": 34232475587,
+        "name": "Release",
+        "status": "completed",
+        "url": "https://github.com/nocoo/giraffe/actions/runs/34232475587"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 34232364966,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/giraffe/actions/runs/34232364966"
+      }
+    ],
+    "logs": [
+      "/tmp/readme-refresh-20260908-apps-giraffe-commit.log",
+      "/tmp/readme-refresh-20260908-apps-giraffe-browser-install.log",
+      "/tmp/readme-refresh-20260908-apps-giraffe-browser.log",
+      "/tmp/readme-refresh-20260908-apps-giraffe-push.log"
+    ]
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "giraffe.review.md"
+  }
+}

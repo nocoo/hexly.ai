@@ -1,0 +1,135 @@
+{
+  "projectId": "flow",
+  "repository": "https://github.com/nocoo/flow",
+  "checkout": "/Users/nocoo/workspace/personal/flow",
+  "baselineRevision": "f4a9e9464d64184b793240adff182e08c04997e1",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Explore language-model Chinese pinyin conversion, text polishing, and chat in a browser using configurable OpenAI-compatible model services.",
+      "zh": "在浏览器中使用可配置的 OpenAI 兼容模型服务，试验中文拼音转换、文本润色和对话。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript / Bun",
+        "role": {
+          "en": "API runtime and workspaces",
+          "zh": "API 运行时与工作区"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "Chat, pinyin, polishing and settings endpoints",
+          "zh": "对话、拼音、润色与设置接口"
+        }
+      },
+      {
+        "name": "AI SDK / OpenAI Compatible",
+        "role": {
+          "en": "Streaming model calls",
+          "zh": "模型流式调用"
+        }
+      },
+      {
+        "name": "React / Vite",
+        "role": {
+          "en": "Browser interface and frontend builds",
+          "zh": "浏览器界面与前端构建"
+        }
+      },
+      {
+        "name": "Tailwind CSS / Radix UI",
+        "role": {
+          "en": "UI styles and components",
+          "zh": "界面样式与组件"
+        }
+      },
+      {
+        "name": "bun:sqlite",
+        "role": {
+          "en": "Local provider configuration",
+          "zh": "本地模型服务配置"
+        }
+      },
+      {
+        "name": "Vitest",
+        "role": {
+          "en": "Segmenter and utility tests",
+          "zh": "分词器与工具函数测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "f4a9e9464d64184b793240adff182e08c04997e1",
+      "sources": [
+        "package.json",
+        "apps/api/package.json",
+        "apps/api/src/index.ts",
+        "apps/api/src/pinyin-segmenter.ts",
+        "apps/api/src/provider.ts",
+        "apps/api/src/db.ts",
+        "apps/api/src/routes/settings.ts",
+        "apps/web/package.json",
+        "apps/web/src/lib/api.ts",
+        "apps/web/src/App.tsx",
+        "apps/web/src/components/streaming-card.tsx",
+        "apps/web/src/hooks/use-streaming-predict.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main, no ahead; git pull --ff-only returned Already up to date."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed with no lock changes and installed Husky."
+    },
+    {
+      "check": "Unit tests",
+      "result": "bun run test passed: 34 tests across API segmenter and frontend utility suites."
+    },
+    {
+      "check": "Isolated API smoke",
+      "result": "Copied current API source into a temporary directory with workspace dependencies; health and masked settings HTTP endpoints passed on a loopback ephemeral port. No existing DB accessed and no model requests sent."
+    },
+    {
+      "check": "Links and examples",
+      "result": "All local links exist; bash and TypeScript examples match; git diff --check passed."
+    },
+    {
+      "check": "Model and browser behavior",
+      "result": "Model-backed output and browser E2E were not run. README explicitly requires configuring a service and replacing hardcoded API_BASE for local use."
+    },
+    {
+      "check": "Normal pre-commit",
+      "result": "Frontend/API lint and typechecks passed."
+    },
+    {
+      "check": "Normal pre-push",
+      "result": "34 unit tests and frontend/API typechecks passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "b3e32a8b493360c96aeee0787a0c51e13cd226d2",
+    "url": "https://github.com/nocoo/flow/commit/b3e32a8b493360c96aeee0787a0c51e13cd226d2",
+    "pushed": true,
+    "prePushPull": "git pull --ff-only returned Already up to date; ahead commits were only this task README and, where recorded, root-approved check repair.",
+    "remoteReadback": "GitHub Contents API read back both READMEs at main; bytes match local.",
+    "ci": {
+      "url": "https://github.com/nocoo/flow/actions/runs/34224245871",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "flow.review.md"
+  }
+}

@@ -202,5 +202,76 @@
 			"zh": "128/64 px 能辨认红色摇杆、双按钮与木盒；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Play a keyboard-controlled pixel shooter in the browser, survive enemy waves with power-ups, and submit scores to a shared leaderboard.",
+			"zh": "在浏览器中用键盘游玩像素射击，收集道具、抵挡敌人波次，并将成绩提交到共享排行榜。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Game engine and rules",
+					"zh": "游戏引擎与规则"
+				}
+			},
+			{
+				"name": "Canvas 2D",
+				"role": {
+					"en": "Pixel rendering",
+					"zh": "像素画面绘制"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Game page and score APIs",
+					"zh": "游戏页面与成绩 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Game HUD and leaderboard",
+					"zh": "游戏状态界面与排行榜"
+				}
+			},
+			{
+				"name": "SQLite",
+				"role": {
+					"en": "Persistent scores",
+					"zh": "成绩持久化"
+				}
+			},
+			{
+				"name": "better-sqlite3",
+				"role": {
+					"en": "Server database access",
+					"zh": "服务端数据库访问"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Page and overlay styles",
+					"zh": "页面与叠层样式"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "71b4b8165874e1986f993706c6830cc60a8107bf",
+			"sources": [
+				"package.json",
+				"src/game/engine.ts",
+				"src/game/input.ts",
+				"src/game/player.ts",
+				"src/game/powerup.ts",
+				"src/lib/db.ts",
+				"src/lib/anticheat.ts",
+				"src/app/api/scores/route.ts"
+			]
+		}
 	}
 }

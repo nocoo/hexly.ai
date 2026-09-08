@@ -1,0 +1,156 @@
+{
+  "projectId": "dogfight",
+  "repository": "https://github.com/nocoo/dogfight",
+  "checkout": "/Users/nocoo/workspace/personal/dogfight",
+  "baselineRevision": "b5ab075a963a78516aaa351d6ca0178c64994729",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.",
+      "zh": "在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Flight and combat simulation",
+          "zh": "飞行与战斗模拟"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "HUD, mission flow, and settings",
+          "zh": "HUD、任务流程与设置"
+        }
+      },
+      {
+        "name": "Three.js",
+        "role": {
+          "en": "Procedural aircraft and 3D environment",
+          "zh": "程序化机体与三维环境"
+        }
+      },
+      {
+        "name": "WebGL",
+        "role": {
+          "en": "Browser 3D rendering",
+          "zh": "浏览器三维渲染"
+        }
+      },
+      {
+        "name": "Web Audio",
+        "role": {
+          "en": "Synthesized engine, weapon, and alert sounds",
+          "zh": "合成引擎、武器与警报音效"
+        }
+      },
+      {
+        "name": "localStorage",
+        "role": {
+          "en": "Highest winning score",
+          "zh": "胜利最高分"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Development and static builds",
+          "zh": "开发与静态构建"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Static game hosting",
+          "zh": "游戏静态托管"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "b5ab075a963a78516aaa351d6ca0178c64994729",
+      "sources": [
+        "package.json",
+        "src/App.tsx",
+        "src/game/simulation.ts",
+        "src/game/engine.ts",
+        "src/game/aircraft.ts",
+        "src/game/world.ts",
+        "src/game/clouds.ts",
+        "src/game/audio.ts",
+        "scripts/browser-smoke.mjs",
+        "vite.config.ts",
+        "wrangler.jsonc",
+        ".github/workflows/ci.yml"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before investigation"
+    },
+    {
+      "command": "GitHub homepage, wrangler route and HTTPS HEAD",
+      "result": "https://dogfight.hexly.ai confirmed; HTTP 200"
+    },
+    {
+      "command": "npm test",
+      "result": "1 file / 8 simulation tests passed. No application server or live game data used."
+    },
+    {
+      "command": "npm run build",
+      "result": "TypeScript and Vite production build passed; no deployment performed."
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 122 lines; relative links, fences, package scripts and git diff --check passed. Only README.md and docs/README.en.md changed."
+    },
+    {
+      "command": "Normal commit, pre-push pull, push and remote readback",
+      "result": "Two approved READMEs committed and pushed on main; working tree clean/synchronized and both documents byte-match GitHub. CI 34230692443 success. Existing automatic Release failed on Cloudflare credentials; logged separately."
+    }
+  ],
+  "publication": {
+    "commit": "20748048b4688ec9618219aec4008aff0f2c895c",
+    "branch": "main",
+    "ci": [
+      {
+        "conclusion": "failure",
+        "databaseId": 34230741603,
+        "name": "Release",
+        "status": "completed",
+        "url": "https://github.com/nocoo/dogfight/actions/runs/34230741603"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 34230692443,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/dogfight/actions/runs/34230692443"
+      }
+    ],
+    "remoteReadback": "README.md and docs/README.en.md byte-match GitHub at the publication commit",
+    "logs": [
+      "/tmp/readme-refresh-20260908-apps-dogfight-commit.log",
+      "/tmp/readme-refresh-20260908-apps-dogfight-push.log",
+      "/tmp/readme-refresh-20260908-apps-dogfight-release-failure.log"
+    ],
+    "releaseLimitation": "Existing auto-deploy failed with Cloudflare authentication error 10000 and invalid access token 9109. CI passed and README publication succeeded; no secrets or deployment configuration changed.",
+    "releaseAuthInvestigation": {
+      "effectiveTokenSource": "production environment (overrides repository secret with same name)",
+      "tokenSecretName": "CLOUDFLARE_API_TOKEN",
+      "effectiveTokenUpdatedAt": "2026-09-05T03:03:20Z",
+      "workflowMapping": "Same token/account secret names as successful DreamRO; no missing-name mapping found.",
+      "result": "Cloudflare rejects the effective token as invalid (9109 after 10000); metadata cannot distinguish expiry, revocation or incorrect contents.",
+      "minimalAction": "Root to review replacement of effective environment credentials with a verified token for the target account, then retry the original job. No code, version or secret change performed by Apps."
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "dogfight.review.md"
+  }
+}

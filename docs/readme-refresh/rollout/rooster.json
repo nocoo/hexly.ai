@@ -1,0 +1,130 @@
+{
+  "projectId": "rooster",
+  "repository": "https://github.com/nocoo/rooster",
+  "checkout": "/Users/nocoo/workspace/personal/rooster",
+  "baselineRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.",
+      "zh": "通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript / Node.js",
+        "role": {
+          "en": "Application server",
+          "zh": "应用服务端"
+        }
+      },
+      {
+        "name": "Preact / Signals",
+        "role": {
+          "en": "Chat interface and state",
+          "zh": "对话界面与状态管理"
+        }
+      },
+      {
+        "name": "Vite / Primer CSS",
+        "role": {
+          "en": "Frontend build and styling",
+          "zh": "前端构建与样式"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP API",
+          "zh": "HTTP 接口"
+        }
+      },
+      {
+        "name": "Socket.IO",
+        "role": {
+          "en": "Streaming chat events",
+          "zh": "流式对话事件"
+        }
+      },
+      {
+        "name": "SQLite",
+        "role": {
+          "en": "Local session and message storage",
+          "zh": "本地会话与消息存储"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3",
+      "sources": [
+        "package.json",
+        "packages/client/package.json",
+        "packages/server/package.json",
+        "packages/server/src/server.ts",
+        "packages/server/src/routes/sessions.ts",
+        "packages/server/src/routes/bridge.ts",
+        "packages/server/src/services/hermes/agent-bridge.ts",
+        "packages/client/src/state/chat.ts",
+        "packages/client/src/pages/admin/Profiles.tsx",
+        "packages/client/src/pages/admin/Settings.tsx",
+        "scripts/start-bridge.sh"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main; git pull --ff-only succeeded, no remote changes."
+    },
+    {
+      "check": "Dependencies and native ABI",
+      "result": "bun install --frozen-lockfile and bun run rebuild:native passed, no manifest or lock changes."
+    },
+    {
+      "check": "Unit and component tests",
+      "result": "bun run test passed: 68 files, 685 tests."
+    },
+    {
+      "check": "HTTP and Socket.IO integration tests",
+      "result": "bun run test:e2e passed: 6 files, 99 tests, simulated bridge and isolated storage."
+    },
+    {
+      "check": "Bridge lifecycle script",
+      "result": "bash scripts/test-bridge-lifecycle.sh passed: 13 assertions, temporary Unix sockets and dry run."
+    },
+    {
+      "check": "Links and parity",
+      "result": "11 local references per language exist; all bash examples match."
+    },
+    {
+      "check": "Live Hermes conversation",
+      "result": "Not run: documentation verification does not use personal agents, model credentials, or live sessions."
+    },
+    {
+      "check": "Normal pre-commit",
+      "result": "Lint, all typechecks, 685 Vitest coverage tests and isolated DB/uploads check passed."
+    },
+    {
+      "check": "Normal pre-push",
+      "result": "99 HTTP/Socket E2E tests, complete route-method coverage, OSV scan and gitleaks passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "9c9ab565554b75de86e3346fa66f4bca3725a83b",
+    "url": "https://github.com/nocoo/rooster/commit/9c9ab565554b75de86e3346fa66f4bca3725a83b",
+    "prePushPull": "git pull --ff-only returned Already up to date; origin/main..HEAD contained only this README commit.",
+    "remoteReadback": "GitHub Contents API read back both README files at main; bytes match local files.",
+    "ci": {
+      "url": "https://github.com/nocoo/rooster/actions/runs/34222213836",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "result": "已核对完整 README diff、英文正文、外部 Hermes/Python bridge 必需条件、loopback API、只读 Profiles/Models 与未接入页面、静态前端独立服务、本地 SQLite 和测试模拟范围。",
+    "record": "rooster.review.md"
+  }
+}

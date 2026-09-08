@@ -200,5 +200,122 @@
 			"zh": "完整鬃毛和蝴蝶距圆角边界至少保留 145.5 原生像素。小标使用透明狮子，16 px 时蝴蝶细节会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Organize household policies, coverage, payment schedules and medical visits.",
+			"zh": "集中整理家庭保单、保障范围、缴费计划和就诊记录。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application, CLI and shared logic",
+					"zh": "应用、CLI 与共享逻辑"
+				}
+			},
+			{
+				"name": "Bun workspaces",
+				"role": {
+					"en": "Dependencies, CLI runtime and scripts",
+					"zh": "依赖管理、CLI 运行时与脚本"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "SPA development and builds",
+					"zh": "SPA 开发与构建"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Household policy and medical-visit interface",
+					"zh": "家庭保单与就诊界面"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP API and authentication middleware",
+					"zh": "HTTP API 与认证中间件"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "API and static assets",
+					"zh": "API 与静态资源"
+				}
+			},
+			{
+				"name": "Drizzle ORM",
+				"role": {
+					"en": "Schema and data access",
+					"zh": "Schema 与数据访问"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Household, policy and medical records",
+					"zh": "家庭、保单与就诊数据"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Policy attachments",
+					"zh": "保单附件"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Browser authentication",
+					"zh": "浏览器身份认证"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767",
+			"sources": [
+				"package.json",
+				"apps/web/package.json",
+				"apps/web/vite.config.ts",
+				"apps/web/src/App.tsx",
+				"apps/web/src/app/policies/[id]/page.tsx",
+				"apps/web/src/app/settings/page.tsx",
+				"apps/worker/package.json",
+				"apps/worker/wrangler.toml",
+				"apps/worker/src/index.ts",
+				"apps/worker/src/middleware/access-auth.ts",
+				"apps/worker/src/middleware/api-key-auth.ts",
+				"apps/worker/src/middleware/is-localhost.ts",
+				"apps/worker/src/routes/auth-cli.ts",
+				"apps/worker/src/routes/policies.ts",
+				"apps/worker/src/routes/backup.ts",
+				"apps/worker/src/routes/settings.ts",
+				"apps/cli/package.json",
+				"apps/cli/src/config.ts",
+				"apps/cli/src/commands/auth.ts",
+				"apps/cli/src/commands/policies.ts",
+				"packages/db/src/index.ts",
+				"packages/db/src/schema.ts",
+				"packages/db/src/backup.ts",
+				"packages/db/src/types.ts",
+				"packages/api/src/lib/attachment-validation.ts",
+				"packages/api/src/renewal-calendar.ts",
+				"scripts/run-l2-http.ts",
+				"scripts/run-l3-server.ts",
+				"scripts/seed-remote.ts",
+				"apps/web/playwright.config.ts",
+				"drizzle.config.ts",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

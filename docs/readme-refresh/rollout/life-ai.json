@@ -1,0 +1,147 @@
+{
+  "projectId": "life-ai",
+  "repository": "https://github.com/nocoo/life.ai",
+  "checkout": "/Users/nocoo/workspace/personal/life.ai",
+  "baselineRevision": "56df330ee15eada49dd0f926e4e9e73775fdcfea",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Import personal health, location, and bookkeeping exports, then compare them through daily, monthly, and yearly views.",
+      "zh": "导入个人健康、位置足迹和记账导出文件，通过日、月、年视图对照查看。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Import scripts and application logic",
+          "zh": "导入脚本与应用逻辑"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Data processing and SQLite runtime",
+          "zh": "数据处理与 SQLite 运行环境"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Web dashboard and APIs",
+          "zh": "Web Dashboard 与 API"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Data views",
+          "zh": "数据视图"
+        }
+      },
+      {
+        "name": "SQLite",
+        "role": {
+          "en": "Local health, route, and finance databases",
+          "zh": "本地健康、轨迹与记账数据库"
+        }
+      },
+      {
+        "name": "Leaflet",
+        "role": {
+          "en": "Route maps",
+          "zh": "轨迹地图"
+        }
+      },
+      {
+        "name": "Recharts",
+        "role": {
+          "en": "Charts and trends",
+          "zh": "图表与趋势"
+        }
+      },
+      {
+        "name": "Zustand",
+        "role": {
+          "en": "Dashboard state",
+          "zh": "Dashboard 状态"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "56df330ee15eada49dd0f926e4e9e73775fdcfea",
+      "sources": [
+        "package.json",
+        "dashboard/package.json",
+        "dashboard/src/lib/db.ts",
+        "dashboard/src/lib/auth.ts",
+        "scripts/import/applehealth/cli.ts",
+        "scripts/import/footprint/cli.ts",
+        "scripts/import/pixiu/cli.ts",
+        "dashboard/src/views/day/day-page.tsx"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main"
+    },
+    {
+      "command": "bun run check:node",
+      "result": "Passed"
+    },
+    {
+      "command": "GitHub homepage metadata",
+      "result": "Empty; no independently verified public website, header contains language link only"
+    }
+  ],
+  "reviewResponse": {
+    "date": "2026-09-08",
+    "status": "approved",
+    "changes": [
+      "Added identical in-memory SQLite checks to both READMEs",
+      "Added bilingual docs/07-development.md with targeted native build fallback and updated docs/00-overview.md index",
+      "Verified the locked better-sqlite3 has bundled prebuilds and no install script; preserved install policy and manifests"
+    ],
+    "validation": "Relative links, fences, and git diff --check passed. Root previously passed SELECT 1 on the current Node runtime; fallback compilation was unnecessary and was not run."
+  },
+  "publication": {
+    "branch": "main",
+    "commit": "a4febb040f6294b79be0bf4558ddb94596e6d1d6",
+    "date": "2026-09-08",
+    "pullBeforePush": "Already up to date; only the README/development-guide commit was ahead",
+    "hooks": {
+      "preCommit": "passed",
+      "prePush": "passed",
+      "logs": [
+        "/tmp/readme-refresh-20260908-apps-life-ai-commit.log",
+        "/tmp/readme-refresh-20260908-apps-life-ai-push.log"
+      ]
+    },
+    "readback": {
+      "remote": "origin/main",
+      "files": [
+        "README.md",
+        "docs/README.en.md",
+        "docs/07-development.md"
+      ],
+      "result": "Remote raw bytes match local files"
+    },
+    "ci": [
+      {
+        "name": "CI",
+        "id": 34225726261,
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/life.ai/actions/runs/34225726261"
+      }
+    ]
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "life-ai.review.md"
+  }
+}

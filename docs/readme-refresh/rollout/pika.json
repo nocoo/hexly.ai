@@ -1,0 +1,176 @@
+{
+  "projectId": "pika",
+  "repository": "https://github.com/nocoo/pika",
+  "checkout": "/Users/nocoo/workspace/personal/pika",
+  "baselineRevision": "02487858f8c567a7e3c780cf951abc957c54623d",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Collect coding-agent sessions to search, read and organize across tools.",
+      "zh": "集中保存不同 AI 编程工具的会话，方便搜索、阅读和整理。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Shared types, parsers and API logic",
+          "zh": "共享类型、解析器与 API 逻辑"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "CLI runtime and workspace tooling",
+          "zh": "CLI 运行时与工作区工具"
+        }
+      },
+      {
+        "name": "@nocoo/base-cli",
+        "role": {
+          "en": "CLI commands and browser login",
+          "zh": "CLI 命令与浏览器登录"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "SPA development and builds",
+          "zh": "SPA 开发与构建"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Session browsing and management",
+          "zh": "会话阅读与管理界面"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP routing and middleware",
+          "zh": "HTTP 路由与中间件"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "API and static assets in one service",
+          "zh": "同一服务中的 API 与静态资源"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Session metadata and full-text search",
+          "zh": "会话元数据与全文搜索"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Compressed canonical messages and raw content",
+          "zh": "压缩后的标准化消息及原始内容"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Browser authentication",
+          "zh": "浏览器身份认证"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "02487858f8c567a7e3c780cf951abc957c54623d",
+      "sources": [
+        "package.json",
+        "packages/cli/package.json",
+        "packages/web/package.json",
+        "packages/web-worker/package.json",
+        "packages/cli/src/cli.ts",
+        "packages/cli/src/config/manager.ts",
+        "packages/cli/src/api/client.ts",
+        "packages/cli/src/commands/login.ts",
+        "packages/cli/src/commands/sync.ts",
+        "packages/cli/src/commands/sync-pipeline.ts",
+        "packages/cli/src/drivers/registry.ts",
+        "packages/core/src/constants.ts",
+        "packages/web/src/App.tsx",
+        "packages/web/src/pages/dashboard/sessions/page.tsx",
+        "packages/web/vite.config.ts",
+        "packages/web/vitest.config.ts",
+        "packages/web-worker/wrangler.toml",
+        "packages/web-worker/src/index.ts",
+        "packages/web-worker/src/middleware/access-auth.ts",
+        "packages/web-worker/src/middleware/api-key-auth.ts",
+        "packages/web-worker/src/routes/auth-cli.ts",
+        "packages/web-worker/src/api/ingest.ts",
+        "packages/web-worker/src/data/search.ts",
+        "packages/web-worker/test/e2e/global-setup.ts",
+        "scripts/migrations/001-init.sql",
+        "scripts/migrations/006-api-tokens.sql",
+        "packages/core/test/migration.test.ts",
+        ".github/workflows/ci.yml",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check; four docs relative links/anchors/images, newlines, bash syntax and manifest references",
+      "eight-section bilingual README order and identical shell examples",
+      "frozen workspace dependency install with normal Husky prepare",
+      "source CLI main/login/sync help without reading user sessions or initiating login",
+      "Bun in-memory SQLite migration test",
+      "unmodified local API E2E: migrations, synthetic user and Worker on 17022; runner stopped and variables file removed",
+      "web package React/TSX test suite with jsdom",
+      "npm 0.8.4 tarball read in memory confirms published login/sync/source/force behavior; package was not installed or executed",
+      "all source evidence paths exist at baseline",
+      "normal pre-commit coverage, typecheck, lint-staged and staged Gitleaks",
+      "normal pre-push build, local E2E, Gitleaks and OSV; repeated unchanged after transport failure",
+      "second pull, approved-one-commit guard, push and exact remote README readback",
+      "CI and automatic Worker Release success"
+    ],
+    "notRun": [
+      "real browser login, user-session discovery or sync",
+      "ordinary remote-bound development server or remote D1 migration"
+    ],
+    "limitations": [
+      "Default dev:all has remote=true production D1/R2; local API runner explicitly forces --local and separate persisted state.",
+      "--no-upload persists cursors and is not a side-effect-free preview.",
+      "CLI URLs are fixed in source and dev points to pika.dev.hexly.ai; development and production share cursors.json.",
+      "Production bearer-only auth is limited to /api/ingest/*; CLI CRUD commands lack the Access integration needed for their endpoints.",
+      "Trash route is still a placeholder although delete/restore APIs exist.",
+      "Default source discovery assumes macOS paths, with no CLI path override.",
+      "Sync uploads raw conversation content; no automatic secret-redaction feature is claimed.",
+      "Release does not apply D1 migrations; its reachability check accepts 200/401.",
+      "npm latest is 0.8.4 while repository CLI is 0.8.6; no package publication or version change in scope.",
+      "First push completed all checks but GitHub SSL transport disconnected before updating main. Pulled again and retried normal push with unchanged hooks; succeeded."
+    ]
+  },
+  "publication": {
+    "revision": "4fd439659cb7fef855b2207ef6c6a6d0f34d46da",
+    "branch": "main",
+    "remoteReadback": "both READMEs exact-byte verified via GitHub contents API",
+    "worktree": "clean, aligned with origin/main",
+    "ci": {
+      "runId": 34228650462,
+      "url": "https://github.com/nocoo/pika/actions/runs/34228650462",
+      "conclusion": "success"
+    },
+    "deployment": {
+      "runId": 34228747466,
+      "url": "https://github.com/nocoo/pika/actions/runs/34228747466",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "pika.review.md"
+  }
+}

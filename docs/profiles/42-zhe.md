@@ -13,6 +13,32 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `075c875936e9a244c147ff9d58452398bb1ef3cf`
 
+## Project goal
+
+Keep personal links, Markdown ideas, and nested todos together, with short-link sharing and unified search.
+
+集中整理个人链接、Markdown 想法和层级待办，通过短链接分享并统一搜索内容。
+
+- [中文 README](https://github.com/nocoo/zhe/blob/main/README.md) · [English README](https://github.com/nocoo/zhe/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/zhe/tree/967f6e738440ab0739697659c242652408d7155c)
+- Source files: [`package.json`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/package.json), [`worker/src/index.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/worker/src/index.ts), [`worker/wrangler.toml.example`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/worker/wrangler.toml.example), [`lib/db/d1-client.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/lib/db/d1-client.ts), [`lib/db/scoped/links.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/lib/db/scoped/links.ts), [`actions/ideas.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/actions/ideas.ts), [`actions/todos.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/actions/todos.ts), [`components/search-command-dialog.tsx`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/components/search-command-dialog.tsx), [`app/api/ai/suggest-link-org/route.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/app/api/ai/suggest-link-org/route.ts), [`cli/src/index.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/cli/src/index.ts), [`cli/src/api/client.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/cli/src/api/client.ts), [`auth.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/auth.ts), [`lib/auth-allowlist.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/lib/auth-allowlist.ts), [`scripts/test-stack.ts`](https://github.com/nocoo/zhe/blob/967f6e738440ab0739697659c242652408d7155c/scripts/test-stack.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application and CLI logic | 应用与 CLI 逻辑 |
+| Next.js | Web dashboard and APIs | Web 管理台与 API |
+| React | Interactive views | 交互视图 |
+| Cloudflare Workers | Redirects and D1 proxy | 短链接跳转与 D1 代理 |
+| Cloudflare D1 | User data | 用户数据 |
+| Cloudflare KV | Redirect cache | 跳转缓存 |
+| Cloudflare R2 | Uploaded files | 上传文件 |
+| Auth.js | Google sign-in | Google 登录 |
+| Bun | Dependency management and development tools | 依赖管理与开发工具 |
+| Node.js | CLI runtime | CLI 运行环境 |
+| Vercel AI SDK | Optional link organization suggestions | 可选的链接整理建议 |
+
 ## Current logo
 
 ![Zhe source identity](../../public/logos/display/zhe-160.webp)

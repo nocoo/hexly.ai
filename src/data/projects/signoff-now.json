@@ -183,5 +183,114 @@
 			"zh": "128/64 px 能辨认计数器机身、按钮与数字窗；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Help managers review registered developers’ Azure DevOps PR, review, and work item activity through daily scores, comparisons, and timelines, with data collected by a local CLI.",
+			"zh": "通过本地 CLI 采集已登记开发者的 Azure DevOps PR、评审和工作项活动，帮助管理者按日查看积分、人员对比与活动明细。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application, domain rules, and CLI logic",
+					"zh": "应用、领域规则与 CLI 逻辑"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Local collection runtime and monorepo tooling",
+					"zh": "本地采集运行时与 monorepo 工具"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Management pages, activity views, and dashboard",
+					"zh": "管理页面、活动视图与 Dashboard"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styling and themes",
+					"zh": "界面样式与主题"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP routes and authentication middleware",
+					"zh": "HTTP 路由与认证中间件"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Ingest API and SPA hosting",
+					"zh": "数据写入 API 与 SPA 托管"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Entities, settings, activities, and scores",
+					"zh": "实体、配置、活动与积分存储"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Web entry and management API identity",
+					"zh": "Web 入口与管理 API 身份认证"
+				}
+			},
+			{
+				"name": "Azure DevOps API",
+				"role": {
+					"en": "Pull request, review, and work item collection",
+					"zh": "PR、评审与工作项数据采集"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+			"sources": [
+				"package.json",
+				"apps/web/package.json",
+				"apps/collect/package.json",
+				"packages/worker/package.json",
+				"wrangler.toml",
+				"apps/web/vite.config.ts",
+				"apps/web/src/App.tsx",
+				"apps/web/src/views/DashboardPage.tsx",
+				"apps/web/src/views/activity/ActivityPage.tsx",
+				"apps/web/src/viewmodels/useDashboardViewModel.ts",
+				"apps/web/src/models/stats.ts",
+				"apps/collect/src/main.ts",
+				"apps/collect/src/config/env.ts",
+				"apps/collect/src/ado/client.ts",
+				"apps/collect/src/commands/run-collect.ts",
+				"apps/collect/src/commands/collect-flags.ts",
+				"apps/collect/src/commands/ingest-normalized.ts",
+				"apps/collect/src/ado/collect.ts",
+				"packages/domain/src/identity.ts",
+				"packages/domain/src/day-key.ts",
+				"packages/domain/src/transform/pr.ts",
+				"packages/domain/src/transform/wi.ts",
+				"packages/domain/src/constants.ts",
+				"packages/domain/src/score.ts",
+				"packages/worker/src/index.ts",
+				"packages/worker/src/routes/stats.ts",
+				"packages/worker/src/routes/settings.ts",
+				"packages/worker/src/middleware/entry-control.ts",
+				"packages/worker/src/middleware/access-auth.ts",
+				"packages/worker/src/middleware/access-principal.ts",
+				"packages/worker/src/middleware/pipeline-auth.ts",
+				"scripts/e2e-06-local.sh"
+			]
+		}
 	}
 }

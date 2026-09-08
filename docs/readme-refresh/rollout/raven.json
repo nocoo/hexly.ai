@@ -1,0 +1,170 @@
+{
+  "projectId": "raven",
+  "repository": "https://github.com/nocoo/raven",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/raven",
+  "baselineRevision": "a668dbf4fa318429e34686f7bf86731ca1494fd4",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Connect compatible clients to GitHub Copilot and custom model upstreams through a local API proxy, with request analytics and live diagnostics.",
+      "zh": "通过本机 API 代理将兼容客户端接入 GitHub Copilot 与自定义模型上游，并查看调用统计和实时诊断信息。"
+    },
+    "techStack": [
+      {
+        "name": "Bun / TypeScript / Hono",
+        "role": {
+          "en": "Proxy runtime, HTTP routing and SSE",
+          "zh": "代理运行环境、HTTP 路由与 SSE"
+        }
+      },
+      {
+        "name": "SQLite",
+        "role": {
+          "en": "Request records, keys, settings and providers",
+          "zh": "请求记录、密钥、设置与 provider"
+        }
+      },
+      {
+        "name": "Next.js / React",
+        "role": {
+          "en": "Dashboard and server routes",
+          "zh": "Dashboard 与服务端接口"
+        }
+      },
+      {
+        "name": "Basalt / Tailwind CSS",
+        "role": {
+          "en": "Components and styling",
+          "zh": "组件与样式"
+        }
+      },
+      {
+        "name": "SWR / Recharts",
+        "role": {
+          "en": "Data updates and analytics charts",
+          "zh": "数据更新与统计图表"
+        }
+      },
+      {
+        "name": "NextAuth / Google OAuth",
+        "role": {
+          "en": "Optional dashboard login",
+          "zh": "可选的 Dashboard 登录"
+        }
+      },
+      {
+        "name": "Zod / gpt-tokenizer",
+        "role": {
+          "en": "Validation and token estimates",
+          "zh": "校验与 token 估算"
+        }
+      },
+      {
+        "name": "socks / Tavily",
+        "role": {
+          "en": "Optional outbound proxy and web search",
+          "zh": "可选出站代理与网络搜索"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "a668dbf4fa318429e34686f7bf86731ca1494fd4",
+      "sources": [
+        "package.json",
+        "packages/proxy/package.json",
+        "packages/proxy/src/index.ts",
+        "packages/proxy/src/app.ts",
+        "packages/proxy/src/core/router.ts",
+        "packages/proxy/src/composition/strategy-registry.ts",
+        "packages/proxy/src/middleware.ts",
+        "packages/proxy/src/lib/token.ts",
+        "packages/proxy/src/lib/app-dirs.ts",
+        "packages/proxy/src/db/providers.ts",
+        "packages/dashboard/package.json",
+        "packages/dashboard/src/auth.ts",
+        "packages/dashboard/src/lib/proxy.ts",
+        "packages/dashboard/src/components/layout/sidebar.tsx"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync and isolation",
+      "result": "Fresh git pull --ff-only succeeded on clean main in the isolated checkout. The unrelated original raven checkout was not modified."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed with normal Husky. The locked npmmirror tarball stalled; retrieved the same gpt-tokenizer 4.0.0 archive from registry.npmjs.org, verified its exact SHA-512 against bun.lock, populated the missing Bun cache entry, then reran the unchanged frozen install. No lockfile, source, registry setting or hook change."
+    },
+    {
+      "check": "Unit tests and build",
+      "result": "Root-reviewed deterministic cache-refresh tests and an app-test fetch fixture resolved the intermittent baseline failure and accidental live model-directory requests. Original assertions, product implementation, thresholds, baseline and hooks remain unchanged. Full normal coverage gate passes 1985 proxy tests plus scripts tests with lib/ 97.53%. Both the separate test-fix commit and README commit passed all normal pre-commit stages. Dashboard tests/build already passed against an owned unavailable local proxy endpoint. Normal pre-push also passed coverage, security, architecture and full lint. Remote CI completed successfully."
+    },
+    {
+      "check": "External test scope",
+      "result": "Real API tests use an actual proxy and its configuration/database. Browser tests isolate the database but still initialize GitHub credentials. These runners are not invoked for documentation validation and are not required by normal commit/push hooks."
+    },
+    {
+      "check": "Links and bilingual examples",
+      "result": "All 14 local references per language resolve; Bash and dotenv blocks match. No 6DQ, test counts, coverage gates or hook governance in README."
+    },
+    {
+      "check": "Website and license",
+      "result": "GitHub homepage empty; no public site promoted. Root LICENSE is MIT."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "cd7f16e7829429f14855cbc615324f32db51e407",
+    "url": "https://github.com/nocoo/raven/commit/cd7f16e7829429f14855cbc615324f32db51e407",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only origin main succeeded; only the reviewed test-fix commit and README commit were ahead.",
+    "remoteReadback": "Both READMEs and both approved test files match local bytes through GitHub Contents API at main; clean synchronized main.",
+    "remoteFiles": [
+      {
+        "path": "README.md",
+        "bytes": 8157,
+        "sha256": "a2308465597700a47580bda90af687a707b1e1ba5d1c0c277a3ba4e2ff7a47f6"
+      },
+      {
+        "path": "docs/README.en.md",
+        "bytes": 8848,
+        "sha256": "25cb463d4e712058ac1cffdeb05633da0eb2d547d08270d6cc3d33f4b29fa4a1"
+      },
+      {
+        "path": "packages/proxy/test/app.test.ts",
+        "bytes": 10882,
+        "sha256": "357f201f7b570b20e06542d8f0da3780299bf41291cad9c882d20f3797a7ad11"
+      },
+      {
+        "path": "packages/proxy/test/lib/utils.test.ts",
+        "bytes": 24729,
+        "sha256": "6091e79c9e985694c9e93335c57b39a2caa25773d98c4e3ed92e34e11f213448"
+      }
+    ],
+    "hooks": "Normal pre-commit passed for each of the separate test and README commits. Normal pre-push passed coverage, security, architecture and full lint. After git fetch --refetch --no-filter restored all reachable history objects, the unchanged normal gate:security passed again: OSV no vulnerabilities and gitleaks no secrets across the complete 1361-commit history; zero reachable missing objects. Log /tmp/readme-raven-security-complete.log.",
+    "ci": {
+      "url": "https://github.com/nocoo/raven/actions/runs/34232519515",
+      "workflowName": "CI",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "versionUnchanged": "2.7.0"
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "raven.review.md"
+  },
+  "executionFix": {
+    "commit": "458d98f8133bb9dc2fc193b43f417c888dbdb5a2",
+    "scope": [
+      "packages/proxy/test/app.test.ts",
+      "packages/proxy/test/lib/utils.test.ts"
+    ],
+    "review": "raven.review.md",
+    "reason": "Deterministic stale model-cache behavior and no live upstream access in app factory tests."
+  }
+}

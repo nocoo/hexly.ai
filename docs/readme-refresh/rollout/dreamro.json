@@ -1,0 +1,145 @@
+{
+  "projectId": "dreamro",
+  "repository": "https://github.com/nocoo/dreamro",
+  "checkout": "/Users/nocoo/workspace/personal/dreamro",
+  "baselineRevision": "07185e854a59e320f8b2a45f6d50484186753c57",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Explore an RO-inspired single-player RPG in the browser, from character creation and quests to combat and local progress.",
+      "zh": "在浏览器中体验 RO 风格的单人 RPG，创建角色、探索地图、完成任务并保存进度。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Game logic and interface",
+          "zh": "游戏逻辑与界面"
+        }
+      },
+      {
+        "name": "Three.js",
+        "role": {
+          "en": "Procedural 3D characters, maps, and effects",
+          "zh": "程序化三维角色、地图与特效"
+        }
+      },
+      {
+        "name": "WebGL",
+        "role": {
+          "en": "Browser 3D rendering",
+          "zh": "浏览器三维渲染"
+        }
+      },
+      {
+        "name": "Web Audio",
+        "role": {
+          "en": "Synthesized music and sound effects",
+          "zh": "合成音乐与音效"
+        }
+      },
+      {
+        "name": "localStorage",
+        "role": {
+          "en": "Per-character saves and preferences",
+          "zh": "各角色存档与偏好"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Development and static builds",
+          "zh": "开发与静态构建"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Static game hosting",
+          "zh": "游戏静态托管"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "07185e854a59e320f8b2a45f6d50484186753c57",
+      "sources": [
+        "package.json",
+        "src/main.ts",
+        "src/data/jobs.ts",
+        "src/game/Game.ts",
+        "src/game/World.ts",
+        "src/game/Character.ts",
+        "src/game/Audio.ts",
+        "src/game/pathfinding.ts",
+        "src/game/state.ts",
+        "src/ui/HUD.ts",
+        "vite.config.ts",
+        "playwright.config.ts",
+        "wrangler.jsonc",
+        "CREDITS.md"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before investigation"
+    },
+    {
+      "command": "GitHub homepage, wrangler route and HTTPS HEAD",
+      "result": "https://dreamro.hexly.ai confirmed; HTTP 200"
+    },
+    {
+      "command": "npm run build",
+      "result": "TypeScript and Vite production build passed; existing Three.js >500 kB chunk warning retained. No deployment performed."
+    },
+    {
+      "command": "npm test -- --list",
+      "result": "Discovered 10 Playwright tests across 2 files; listing only, browser journeys not executed locally."
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 117 lines; relative links, fences, package scripts and git diff --check passed. English map names match current World.ts definitions."
+    },
+    {
+      "command": "Normal commit, pre-push pull and remote readback",
+      "result": "Committed two approved documents, pulled successfully and pushed main. Remote byte matches; main clean and synchronized. Browser CI running."
+    },
+    {
+      "command": "GitHub CI and existing automatic Release",
+      "result": "CI 34229891130 including full Chromium browser tests, typecheck and build passed; automatic Release 34230653965 also success."
+    }
+  ],
+  "publication": {
+    "commit": "92c77722d86b93926d9f7d9d80eacc297c101c44",
+    "branch": "main",
+    "remoteReadback": "README.md and docs/README.en.md byte-match GitHub at the publication commit",
+    "ci": [
+      {
+        "conclusion": "success",
+        "databaseId": 34230653965,
+        "name": "Release",
+        "status": "completed",
+        "url": "https://github.com/nocoo/dreamro/actions/runs/34230653965"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 34229891130,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/dreamro/actions/runs/34229891130"
+      }
+    ],
+    "logs": [
+      "/tmp/readme-refresh-20260908-apps-dreamro-commit.log",
+      "/tmp/readme-refresh-20260908-apps-dreamro-push.log"
+    ]
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "dreamro.review.md"
+  }
+}

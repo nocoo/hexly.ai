@@ -1,0 +1,168 @@
+{
+  "projectId": "zhe",
+  "repository": "https://github.com/nocoo/zhe",
+  "checkout": "/Users/nocoo/workspace/personal/zhe",
+  "baselineRevision": "967f6e738440ab0739697659c242652408d7155c",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Keep personal links, Markdown ideas, and nested todos together, with short-link sharing and unified search.",
+      "zh": "集中整理个人链接、Markdown 想法和层级待办，通过短链接分享并统一搜索内容。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application and CLI logic",
+          "zh": "应用与 CLI 逻辑"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Web dashboard and APIs",
+          "zh": "Web 管理台与 API"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Interactive views",
+          "zh": "交互视图"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Redirects and D1 proxy",
+          "zh": "短链接跳转与 D1 代理"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "User data",
+          "zh": "用户数据"
+        }
+      },
+      {
+        "name": "Cloudflare KV",
+        "role": {
+          "en": "Redirect cache",
+          "zh": "跳转缓存"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Uploaded files",
+          "zh": "上传文件"
+        }
+      },
+      {
+        "name": "Auth.js",
+        "role": {
+          "en": "Google sign-in",
+          "zh": "Google 登录"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Dependency management and development tools",
+          "zh": "依赖管理与开发工具"
+        }
+      },
+      {
+        "name": "Node.js",
+        "role": {
+          "en": "CLI runtime",
+          "zh": "CLI 运行环境"
+        }
+      },
+      {
+        "name": "Vercel AI SDK",
+        "role": {
+          "en": "Optional link organization suggestions",
+          "zh": "可选的链接整理建议"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "967f6e738440ab0739697659c242652408d7155c",
+      "sources": [
+        "package.json",
+        "worker/src/index.ts",
+        "worker/wrangler.toml.example",
+        "lib/db/d1-client.ts",
+        "lib/db/scoped/links.ts",
+        "actions/ideas.ts",
+        "actions/todos.ts",
+        "components/search-command-dialog.tsx",
+        "app/api/ai/suggest-link-org/route.ts",
+        "cli/src/index.ts",
+        "cli/src/api/client.ts",
+        "auth.ts",
+        "lib/auth-allowlist.ts",
+        "scripts/test-stack.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before investigation"
+    },
+    {
+      "command": "GitHub repository homepage and HTTPS HEAD",
+      "result": "https://zhe.to confirmed by homepage metadata and HTTP 200"
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 124 lines; relative links, fenced blocks, test script names, and git diff --check passed"
+    },
+    {
+      "command": "Source and test bootstrap review",
+      "result": "D1 proxy is required; API/browser tests are local and share 8788/18788. No live account or storage mutations performed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "commit": "ec4287860e953c489784f0939ea602740f910e15",
+    "date": "2026-09-08",
+    "pullBeforePush": "Already up to date; only the reviewed README commit was ahead",
+    "hooks": {
+      "preCommit": "passed",
+      "prePush": "passed",
+      "apiTests": "26 files / 205 cases passed against local test stack",
+      "logs": [
+        "/tmp/readme-refresh-20260908-apps-zhe-commit.log",
+        "/tmp/readme-refresh-20260908-apps-zhe-push.log"
+      ]
+    },
+    "readback": {
+      "remote": "origin/main",
+      "files": [
+        "README.md",
+        "docs/README.en.md"
+      ],
+      "result": "Remote bytes match local files; English raw request transient TLS EOF resolved through GitHub contents API"
+    },
+    "ci": [
+      {
+        "name": "CI",
+        "id": 34225860218,
+        "status": "completed",
+        "url": "https://github.com/nocoo/zhe/actions/runs/34225860218",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "zhe.review.md"
+  }
+}

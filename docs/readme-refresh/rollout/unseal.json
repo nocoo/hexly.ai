@@ -1,0 +1,112 @@
+{
+  "projectId": "unseal",
+  "repository": "https://github.com/nocoo/unseal",
+  "checkout": "/Users/nocoo/workspace/personal/unseal",
+  "baselineRevision": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Review quarantine results for apps in /Applications and select trusted apps for batch removal of the quarantine attribute.",
+      "zh": "查看 /Applications 内应用的隔离检测结果，选择可信应用后批量移除隔离属性。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript / Node.js",
+        "role": {
+          "en": "CLI logic and published-package runtime",
+          "zh": "CLI 逻辑与发布包运行环境"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Development and ESM bundling",
+          "zh": "开发运行与 ESM 打包"
+        }
+      },
+      {
+        "name": "Inquirer / chalk",
+        "role": {
+          "en": "Terminal selection and colors",
+          "zh": "终端选择与着色"
+        }
+      },
+      {
+        "name": "xattr / spctl / sudo",
+        "role": {
+          "en": "macOS attributes, assessment and permissions",
+          "zh": "macOS 属性、评估与权限操作"
+        }
+      },
+      {
+        "name": "Vitest",
+        "role": {
+          "en": "Module, flow and subprocess tests",
+          "zh": "模块、流程与子进程测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
+      "sources": [
+        "package.json",
+        "src/index.ts",
+        "src/scanner.ts",
+        "src/prompt.ts",
+        "src/sudo.ts",
+        "src/unseal.ts",
+        "src/exec.ts",
+        "src/debug.ts",
+        "vitest.config.ts",
+        "tests/exec.test.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main and fresh git pull --ff-only succeeded before investigation."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed with normal Husky setup."
+    },
+    {
+      "check": "Tests",
+      "result": "All 64 tests in seven files passed with existing coverage requirements. System modification paths are mocked; actual subprocess tests only use printf, false and a missing executable."
+    },
+    {
+      "check": "Build and CLI smoke",
+      "result": "Bun Node-target bundle built successfully; node dist/index.js --help and --version passed. No installed app scanned or modified."
+    },
+    {
+      "check": "Interactive fixture",
+      "result": "Ran bun run debug with-failure in a real TTY, accepted its two default selected fixtures, and observed one success and one failure with exit code 0. Static app list and fake executor prevented real sudo/xattr calls."
+    },
+    {
+      "check": "Package link and bilingual parity",
+      "result": "npm unseal0.3.0 is maintained by nocoo; description, bin and engines match the repository. Seven local references per language resolve, Bash examples match and the npm link precedes the language link."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "c93334a2e6618ed4b6856c9af4d2e3c30be875dc",
+    "url": "https://github.com/nocoo/unseal/commit/c93334a2e6618ed4b6856c9af4d2e3c30be875dc",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both README byte sequences match local through GitHub Contents API at main (3913 and 4346 bytes); clean synchronized main.",
+    "hooks": "Normal pre-commit passed coverage, typecheck and lint; normal pre-push passed tests, gitleaks and OSV. No app attributes modified.",
+    "ci": {
+      "url": "https://github.com/nocoo/unseal/actions/runs/34228339499",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "unseal.review.md"
+  }
+}

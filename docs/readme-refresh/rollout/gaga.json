@@ -1,0 +1,151 @@
+{
+  "projectId": "gaga",
+  "repository": "https://github.com/nocoo/gaga",
+  "checkout": "/Users/nocoo/workspace/personal/gaga",
+  "baselineRevision": "76260f08329784eead9b30912c7692b8ea0d3d56",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Watch and guide a virtual character through a browser playroom with animated toys, camera controls, and a daily discovery journal.",
+      "zh": "在浏览器玩耍空间中观察并引导虚拟角色探索玩具，调整视角并查看当天足迹。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Character behavior and application logic",
+          "zh": "角色行为与应用逻辑"
+        }
+      },
+      {
+        "name": "Three.js",
+        "role": {
+          "en": "Procedural playroom, character, and toys",
+          "zh": "程序化房间、角色与玩具"
+        }
+      },
+      {
+        "name": "WebGL",
+        "role": {
+          "en": "Browser 3D rendering",
+          "zh": "浏览器三维渲染"
+        }
+      },
+      {
+        "name": "Web Audio",
+        "role": {
+          "en": "Synthesized ambient music and toy sounds",
+          "zh": "合成环境音乐与玩具音效"
+        }
+      },
+      {
+        "name": "localStorage",
+        "role": {
+          "en": "Daily discovery journal",
+          "zh": "当天探索足迹"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Development and static builds",
+          "zh": "开发与静态构建"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Static application hosting",
+          "zh": "应用静态托管"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "76260f08329784eead9b30912c7692b8ea0d3d56",
+      "sources": [
+        "package.json",
+        "src/main.ts",
+        "src/ui/AppUI.ts",
+        "src/character/Explorer.ts",
+        "src/character/actions.ts",
+        "src/character/Taotao.ts",
+        "src/world/Playroom.ts",
+        "src/world/navigation.ts",
+        "src/world/toys/index.ts",
+        "src/audio/Soundscape.ts",
+        "scripts/smoke.mjs",
+        "vite.config.ts",
+        "wrangler.jsonc",
+        ".github/workflows/ci.yml"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before investigation"
+    },
+    {
+      "command": "GitHub homepage, wrangler route and HTTPS HEAD",
+      "result": "https://gaga.hexly.ai confirmed; HTTP 200"
+    },
+    {
+      "command": "npm run build",
+      "result": "TypeScript and Vite production build passed; no deployment performed."
+    },
+    {
+      "command": "npm run test:e2e",
+      "result": "Passed all existing browser checks using automatic loopback Vite server and a fresh browser. Verified toy routes/actions, castle and rocker queuing, camera, day/night, audio, journal persistence, HMR, touch and reduced motion. No browser errors; screenshots in ignored artifacts/."
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 121 lines; links, fences, package scripts and git diff --check passed. Only README.md and new docs/README.en.md changed."
+    },
+    {
+      "command": "Normal commit, pre-push pull, push and GitHub readback",
+      "result": "Committed the root-reviewed shortened test sections, pulled again and pushed main; worktree clean/synchronized, both READMEs byte-match GitHub. CI 34230957684 success. Existing automatic Release failed on Cloudflare credentials."
+    }
+  ],
+  "publication": {
+    "commit": "a6a8ddfeafe94d784bea83a8fbd4a674c009d701",
+    "branch": "main",
+    "ci": [
+      {
+        "conclusion": "failure",
+        "databaseId": 34230984895,
+        "name": "Release",
+        "status": "completed",
+        "url": "https://github.com/nocoo/gaga/actions/runs/34230984895"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 34230957684,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/gaga/actions/runs/34230957684"
+      }
+    ],
+    "remoteReadback": "README.md and docs/README.en.md byte-match GitHub at the publication commit",
+    "logs": [
+      "/tmp/readme-refresh-20260908-apps-gaga-commit.log",
+      "/tmp/readme-refresh-20260908-apps-gaga-push.log",
+      "/tmp/readme-refresh-20260908-apps-gaga-release-failure.log"
+    ],
+    "releaseLimitation": "Existing auto-deploy failed with Cloudflare authentication error 10000 and invalid access token 9109 for Worker gagaya. CI passed and README publication succeeded; no secrets or deployment configuration changed.",
+    "releaseAuthInvestigation": {
+      "effectiveTokenSource": "production environment (overrides repository secret with same name)",
+      "tokenSecretName": "CLOUDFLARE_API_TOKEN",
+      "effectiveTokenUpdatedAt": "2026-09-05T03:03:26Z",
+      "workflowMapping": "Same token/account secret names as successful DreamRO; no missing-name mapping found.",
+      "result": "Cloudflare rejects the effective token as invalid (9109 after 10000); metadata cannot distinguish expiry, revocation or incorrect contents.",
+      "minimalAction": "Root to review replacement of effective environment credentials with a verified token for the target account, then retry the original job. No code, version or secret change performed by Apps."
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "gaga.review.md"
+  }
+}

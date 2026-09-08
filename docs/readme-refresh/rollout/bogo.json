@@ -1,0 +1,182 @@
+{
+  "projectId": "bogo",
+  "repository": "https://github.com/nocoo/bogo",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/bogo",
+  "baselineRevision": "2e2d986edffd9d320a3e172f37affe5e3406cabe",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Keep reporting relationships, documents and revision history together in workspaces, with web and CLI access to the same knowledge base.",
+      "zh": "围绕人物和工作空间整理组织关系、文档和版本记录，并用网页与命令行维护同一份知识库。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript / Bun / Turborepo",
+        "role": {
+          "en": "Typed workspaces and local development",
+          "zh": "类型、工作区与本地开发"
+        }
+      },
+      {
+        "name": "Cloudflare Workers / Hono",
+        "role": {
+          "en": "HTTP API and authentication",
+          "zh": "HTTP API 与认证"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "People, documents, revisions, fields and views",
+          "zh": "人物、文档、版本、字段与视图存储"
+        }
+      },
+      {
+        "name": "React / Vite / Tailwind CSS",
+        "role": {
+          "en": "Web interface and styling",
+          "zh": "网页界面与样式"
+        }
+      },
+      {
+        "name": "React Query / React Router",
+        "role": {
+          "en": "Server data and navigation",
+          "zh": "服务端数据与页面导航"
+        }
+      },
+      {
+        "name": "React Flow / Dagre",
+        "role": {
+          "en": "Interactive reporting chart and layout",
+          "zh": "交互组织图与布局"
+        }
+      },
+      {
+        "name": "marked / js-yaml / @pierre/diffs",
+        "role": {
+          "en": "Markdown, frontmatter and revision comparison",
+          "zh": "Markdown、frontmatter 与版本差异"
+        }
+      },
+      {
+        "name": "clip",
+        "role": {
+          "en": "CLI generation from the API schema",
+          "zh": "从 API schema 生成 CLI"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "2e2d986edffd9d320a3e172f37affe5e3406cabe",
+      "sources": [
+        "package.json",
+        "packages/worker/package.json",
+        "packages/worker/src/index.ts",
+        "packages/worker/src/middleware/access-auth.ts",
+        "packages/worker/src/routes/workspaces.ts",
+        "packages/worker/src/routes/persons.ts",
+        "packages/worker/src/routes/documents.ts",
+        "packages/worker/src/routes/table-views.ts",
+        "packages/worker/wrangler.toml",
+        "packages/ui/package.json",
+        "packages/ui/src/App.tsx",
+        "packages/ui/src/components/document/VersionDiff.tsx",
+        "packages/ui/src/viewmodels/person/person-tree-layout.ts",
+        "packages/ui/src/viewmodels/table/use-table-grid.ts",
+        "packages/cli/scripts/build.ts",
+        "clip.yaml"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync and isolation",
+      "result": "Clean main and fresh git pull --ff-only succeeded in isolated checkout; original checkout with four unrelated commits untouched."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed with normal Husky; no lockfile changes."
+    },
+    {
+      "check": "Build",
+      "result": "bun run build passed shared TypeScript build and UI build. Existing bundle-size warning only; no tracked generated differences."
+    },
+    {
+      "check": "Unit coverage",
+      "result": "Existing full shared, Worker and UI unit coverage command passed all thresholds; exact test summaries in /tmp/readme-bogo-unit-tests.log."
+    },
+    {
+      "check": "Local fixture",
+      "result": "bun run seed:local applied all local migrations and loaded Northwind Labs in this isolated checkout. No remote database writes."
+    },
+    {
+      "check": "CLI and browser",
+      "result": "CLI source build and generated --help passed using a process-local clip launcher backed by synchronized clip source. All four Chromium browser tests passed with CI=1, local Worker port 27036 and an isolated .wrangler/e2e-pw D1. Deployment credentials were removed from the child process. Normal hooks subsequently passed, including the required CLI E2E cases; see the publication receipt."
+    },
+    {
+      "check": "Website, package and license",
+      "result": "Website HEAD returns Cloudflare Access login. Public npm @nocoo/bogo latest is 0.5.0 versus repository 0.8.1, matching nocoo maintainer/bin/repository. Root and CLI licenses are MIT; no real login performed."
+    },
+    {
+      "check": "Links and parity",
+      "result": "All 15 local references per language resolve; all Bash examples match. No 6DQ, fixed test counts or gate/hook governance in README."
+    },
+    {
+      "check": "Normal commit and push",
+      "result": "Unmodified hooks passed; pre-push executed all 77 local API tests, CLI schema generation and all three generated-CLI login/CRUD/revocation tests with BOGO_REQUIRE_CLI_E2E=1. Fresh pull before push; no source/version/lock changes."
+    },
+    {
+      "check": "Security log follow-up",
+      "result": "Complete normal gate:security rerun passed after git fetch --refetch --no-filter restored full history. OSV scanned 391 dependencies with no issues; gitleaks scanned all 332 commits with no leaks and no fetch errors. Initial partial scan is not used as evidence. Log /tmp/readme-bogo-security-complete.log."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "dfadc0a85813bef2caa67dfe1e97aa270f59940c",
+    "url": "https://github.com/nocoo/bogo/commit/dfadc0a85813bef2caa67dfe1e97aa270f59940c",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only origin main succeeded; only the reviewed README commit was ahead.",
+    "remoteReadback": "All three README byte sequences match local through GitHub Contents API at main (5921, 6351 and 2531 bytes); clean synchronized main.",
+    "hooks": "Normal pre-commit and pre-push passed unit coverage, types/lint, route/page checks, 77 local API tests, clip schema generation and all three CLI login/CRUD/revocation tests. After a transient partial-clone fetch error, the complete history was hydrated and the normal security gate rerun: OSV no issues, gitleaks all 332 commits scanned with no leaks or fetch errors. No checks skipped.",
+    "ci": {
+      "url": "https://github.com/nocoo/bogo/actions/runs/34231548174",
+      "workflowName": "CI",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "additionalCi": [
+      {
+        "url": "https://github.com/nocoo/bogo/actions/runs/34231654680",
+        "workflowName": "Release",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "remoteFiles": [
+      {
+        "path": "README.md",
+        "bytes": 5921,
+        "remoteBlob": "c2fab38399299248d1b696bd11e5cc116bf72272"
+      },
+      {
+        "path": "docs/README.en.md",
+        "bytes": 6351,
+        "remoteBlob": "255f3788e3075b22d672e4f16f274af810cd69f6"
+      },
+      {
+        "path": "docs/README.md",
+        "bytes": 2531,
+        "remoteBlob": "7a46a504727b22dd2c793f537e112e9f5c04228b"
+      }
+    ],
+    "versionUnchanged": "0.8.1"
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "bogo.review.md"
+  }
+}

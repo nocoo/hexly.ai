@@ -1,0 +1,178 @@
+{
+  "projectId": "surety",
+  "repository": "https://github.com/nocoo/surety",
+  "checkout": "/Users/nocoo/workspace/personal/surety",
+  "baselineRevision": "4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Organize household policies, coverage, payment schedules and medical visits.",
+      "zh": "集中整理家庭保单、保障范围、缴费计划和就诊记录。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application, CLI and shared logic",
+          "zh": "应用、CLI 与共享逻辑"
+        }
+      },
+      {
+        "name": "Bun workspaces",
+        "role": {
+          "en": "Dependencies, CLI runtime and scripts",
+          "zh": "依赖管理、CLI 运行时与脚本"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "SPA development and builds",
+          "zh": "SPA 开发与构建"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Household policy and medical-visit interface",
+          "zh": "家庭保单与就诊界面"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP API and authentication middleware",
+          "zh": "HTTP API 与认证中间件"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "API and static assets",
+          "zh": "API 与静态资源"
+        }
+      },
+      {
+        "name": "Drizzle ORM",
+        "role": {
+          "en": "Schema and data access",
+          "zh": "Schema 与数据访问"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Household, policy and medical records",
+          "zh": "家庭、保单与就诊数据"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Policy attachments",
+          "zh": "保单附件"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Browser authentication",
+          "zh": "浏览器身份认证"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767",
+      "sources": [
+        "package.json",
+        "apps/web/package.json",
+        "apps/web/vite.config.ts",
+        "apps/web/src/App.tsx",
+        "apps/web/src/app/policies/[id]/page.tsx",
+        "apps/web/src/app/settings/page.tsx",
+        "apps/worker/package.json",
+        "apps/worker/wrangler.toml",
+        "apps/worker/src/index.ts",
+        "apps/worker/src/middleware/access-auth.ts",
+        "apps/worker/src/middleware/api-key-auth.ts",
+        "apps/worker/src/middleware/is-localhost.ts",
+        "apps/worker/src/routes/auth-cli.ts",
+        "apps/worker/src/routes/policies.ts",
+        "apps/worker/src/routes/backup.ts",
+        "apps/worker/src/routes/settings.ts",
+        "apps/cli/package.json",
+        "apps/cli/src/config.ts",
+        "apps/cli/src/commands/auth.ts",
+        "apps/cli/src/commands/policies.ts",
+        "packages/db/src/index.ts",
+        "packages/db/src/schema.ts",
+        "packages/db/src/backup.ts",
+        "packages/db/src/types.ts",
+        "packages/api/src/lib/attachment-validation.ts",
+        "packages/api/src/renewal-calendar.ts",
+        "scripts/run-l2-http.ts",
+        "scripts/run-l3-server.ts",
+        "scripts/seed-remote.ts",
+        "apps/web/playwright.config.ts",
+        "drizzle.config.ts",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "clean synchronized main and safe pull before research",
+      "frozen workspace install with normal prepare",
+      "five docs links/anchors/images, newlines, shell syntax and script references; bilingual eight-section order and identical examples",
+      "unmodified local HTTP runner: policy CRUD/status transitions and attachment R2 upload/list/download/delete",
+      "CLI help; Playwright browser-suite discovery via unchanged script --list",
+      "npm package metadata and tarball source read in memory confirm published CLI login URL and data API behavior",
+      "local synthetic JSON export succeeded; restore failure reproduced in owned local D1 state, Worker stopped afterward",
+      "temporary synthetic ConfigManager confirms current logout merge write retains token; no user config touched",
+      "all evidence paths checked at baseline",
+      "normal pre-commit staged/lint/typecheck/unit checks and secrets",
+      "normal pre-push Vitest, in-memory Hono E2E, local D1/R2 HTTP E2E, Gitleaks and OSV",
+      "second pull, five-docs-only commit guard, main push and exact remote README readback",
+      "CI and automatic Worker deployment success"
+    ],
+    "notRun": [
+      "full Playwright browser execution",
+      "real Access login, personal policies or medical data, remote schema push, remote seed or Backy delivery"
+    ],
+    "limitations": [
+      "Default Vite proxy targets the hosted production API; dev token injection can read/write that service.",
+      "Single household dataset per instance; signed-in users are not separated by email at the data layer.",
+      "Custom API domains require adapting hardcoded machine-host checks as well as CLI URLs and edge Access policies.",
+      "JSON export excludes R2 bytes and API tokens but includes settings (which may include Backy secrets).",
+      "POST /api/backup currently omits D1 batch executor and fails at BEGIN TRANSACTION; not a working D1 restore path.",
+      "Current logout uses merge-writing ConfigManager and may leave saved token present; no server token revoke operation is performed.",
+      "Beneficiaries are read-only; attachments upload/file routes exist but CLI lacks upload and policy-transition subcommands.",
+      "Legacy .env.example, remote seed and old proxy plans are not current setup instructions.",
+      "Release does not apply schema changes; main checks HTTP 200 while tagged release also checks version."
+    ]
+  },
+  "publication": {
+    "revision": "9df59e70a7bef048bae8ef2ad1f04e926d5d2491",
+    "branch": "main",
+    "remoteReadback": "both README files exact-byte verified via GitHub contents API",
+    "worktree": "clean, aligned with origin/main",
+    "ci": {
+      "runId": 34228768358,
+      "url": "https://github.com/nocoo/surety/actions/runs/34228768358",
+      "conclusion": "success"
+    },
+    "deployment": {
+      "runId": 34229077544,
+      "url": "https://github.com/nocoo/surety/actions/runs/34229077544",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "decision": "approved",
+    "record": "surety.review.md",
+    "date": "2026-09-08"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "projectId": "pew-game",
+  "repository": "https://github.com/nocoo/pew-game",
+  "checkout": "/Users/nocoo/workspace/personal/pew-game",
+  "baselineRevision": "71b4b8165874e1986f993706c6830cc60a8107bf",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Play a keyboard-controlled pixel shooter in the browser, survive enemy waves with power-ups, and submit scores to a shared leaderboard.",
+      "zh": "在浏览器中用键盘游玩像素射击，收集道具、抵挡敌人波次，并将成绩提交到共享排行榜。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Game engine and rules",
+          "zh": "游戏引擎与规则"
+        }
+      },
+      {
+        "name": "Canvas 2D",
+        "role": {
+          "en": "Pixel rendering",
+          "zh": "像素画面绘制"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Game page and score APIs",
+          "zh": "游戏页面与成绩 API"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Game HUD and leaderboard",
+          "zh": "游戏状态界面与排行榜"
+        }
+      },
+      {
+        "name": "SQLite",
+        "role": {
+          "en": "Persistent scores",
+          "zh": "成绩持久化"
+        }
+      },
+      {
+        "name": "better-sqlite3",
+        "role": {
+          "en": "Server database access",
+          "zh": "服务端数据库访问"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Page and overlay styles",
+          "zh": "页面与叠层样式"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "71b4b8165874e1986f993706c6830cc60a8107bf",
+      "sources": [
+        "package.json",
+        "src/game/engine.ts",
+        "src/game/input.ts",
+        "src/game/player.ts",
+        "src/game/powerup.ts",
+        "src/lib/db.ts",
+        "src/lib/anticheat.ts",
+        "src/app/api/scores/route.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean main, no existing ahead commits"
+    },
+    {
+      "command": "bun run test:e2e",
+      "result": "Passed: 9 game-loop integration tests without Canvas"
+    },
+    {
+      "command": "GET https://pew.md and retained gameplay image",
+      "result": "Both returned 200"
+    },
+    {
+      "command": "Normal pre-commit",
+      "result": "Activated installed Husky (package has no prepare script), then TypeScript, ESLint, coverage tests and staged Gitleaks passed."
+    },
+    {
+      "command": "Normal pre-push",
+      "result": "Next.js build, unit tests, ESLint, game-loop integration tests and OSV passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "publisher": "root",
+    "readmeRevision": "f6bdd1fe647ac082bd901e2d4f77a7ad579d7ca6",
+    "prePushPull": "Already up to date; exactly one task commit ahead",
+    "push": "success",
+    "remoteReadback": "Both files read through GitHub Contents API at main; exact bytes matched.",
+    "ci": {
+      "runId": 34223154090,
+      "url": "https://github.com/nocoo/pew-game/actions/runs/34223154090",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "deployment": {
+      "status": "not_triggered",
+      "reason": "Current main workflow validates the application; no deployment workflow runs for this README commit."
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "pew-game.review.md"
+  }
+}

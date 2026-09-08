@@ -1,0 +1,129 @@
+{
+  "projectId": "runner",
+  "repository": "https://github.com/nocoo/runner",
+  "checkout": "/Users/nocoo/workspace/personal/runner",
+  "baselineRevision": "d9d2a14828d20c6f27f4e44b3221d9d9a89190e1",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect their local run history and output through a CLI and Dashboard.",
+      "zh": "在 Mac 上定时执行 shell、OpenCode 和 HTTP 任务，通过 CLI 与本地 Dashboard 查看运行历史和输出。"
+    },
+    "techStack": [
+      {
+        "name": "Swift",
+        "role": {
+          "en": "CLI and task execution",
+          "zh": "命令行与任务执行"
+        }
+      },
+      {
+        "name": "launchd",
+        "role": {
+          "en": "macOS timer integration",
+          "zh": "macOS 定时触发"
+        }
+      },
+      {
+        "name": "SQLite / GRDB",
+        "role": {
+          "en": "Local run and task storage",
+          "zh": "本地运行与任务存储"
+        }
+      },
+      {
+        "name": "React / TypeScript",
+        "role": {
+          "en": "Local Dashboard",
+          "zh": "本地控制台"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Development server and CLI API bridge",
+          "zh": "开发服务与 CLI API 桥接"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Dashboard styling",
+          "zh": "控制台样式"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "d9d2a14828d20c6f27f4e44b3221d9d9a89190e1",
+      "sources": [
+        "runner-swift/Package.swift",
+        "runner-swift/Sources/Runner/Runner.swift",
+        "runner-swift/Sources/RunnerLib/CLICommands.swift",
+        "runner-swift/Sources/RunnerLib/SQLiteStorage.swift",
+        "runner-swift/Sources/RunnerLib/Executor.swift",
+        "dashboard/package.json",
+        "dashboard/src/api/vite-plugin-api.ts",
+        "launchd/com.runner.scheduler.plist"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main, no ahead commits; git pull --ff-only returned Already up to date."
+    },
+    {
+      "check": "Swift build",
+      "result": "swift build --package-path runner-swift passed with existing unused-result warnings."
+    },
+    {
+      "check": "Isolated CLI example",
+      "result": "Built current source; init, validate, run sample, API polling, and output read passed in a temporary data directory."
+    },
+    {
+      "check": "Local links and bilingual examples",
+      "result": "13 local references per language exist; bash/json examples match."
+    },
+    {
+      "check": "Swift unit tests",
+      "result": "Initial CLT selection lacked Testing. Installed Xcode works with process-level DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer; full swift test --no-parallel passed 287 tests in 29 suites (33.17s)."
+    },
+    {
+      "check": "Dashboard dependency installation",
+      "result": "Frozen install rejects pre-existing package.json overrides / bun.lock mismatch. README uses bun install; verification uses --no-save to preserve lockfile."
+    },
+    {
+      "check": "Dashboard unit and component tests",
+      "result": "bun run --cwd dashboard test passed: 17 files, 236 tests. Dependencies installed with bun install --no-save; no lockfile changes."
+    },
+    {
+      "check": "Normal pre-commit parallel test diagnosis",
+      "result": "Initial normal commit stalled in MonitorTests.captureStderrAsync at readDataToEndOfFile; sample confirmed descriptor-capture wait. Root approved --no-parallel in both hooks and CI; the full suite remains enabled. First README commit attempt then hit two existing SQLite contention failures (ExecutorTests.swift:271 and :600); an unchanged normal retry passed, as did the complete normal pre-push run."
+    },
+    {
+      "check": "Normal commit and push",
+      "result": "Root-approved hook/CI repair committed separately as d65ee6f. Normal pre-commit passed 287 Swift and 236 Dashboard tests plus lint; normal pre-push passed the complete suites and lint again. Existing nonfatal SwiftLint warning remains. No bypass, skipped tests, version or dependency changes."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "687e5fbfbde9d38d59dfaa95a115ce7cbd088e4e",
+    "checkRepairCommit": "d65ee6f77acd7707f1d986f508c95e3c99caccb6",
+    "url": "https://github.com/nocoo/runner/commit/687e5fbfbde9d38d59dfaa95a115ce7cbd088e4e",
+    "pushed": true,
+    "prePushPull": "git pull --ff-only returned Already up to date; the only two ahead commits were the root-approved check repair and bilingual README.",
+    "remoteReadback": "GitHub Contents API at main returned both READMEs byte-for-byte identical to local; main is clean and synced.",
+    "ci": {
+      "url": "https://github.com/nocoo/runner/actions/runs/34224762540",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "runner.review.md"
+  }
+}

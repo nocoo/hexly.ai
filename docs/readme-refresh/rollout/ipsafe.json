@@ -1,0 +1,113 @@
+{
+  "projectId": "ipsafe",
+  "repository": "https://github.com/nocoo/ipsafe",
+  "checkout": "/Users/nocoo/workspace/personal/ipsafe",
+  "baselineRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Check that a configured URL returns a successful HTTP response and optionally matches response content before starting a command, with project or user configuration and reusable Node.js APIs.",
+      "zh": "在启动命令前，确认指定 URL 返回成功响应并按需匹配内容；支持项目或用户配置，以及可复用的 Node.js API。"
+    },
+    "techStack": [
+      {
+        "name": "JavaScript / Node.js",
+        "role": {
+          "en": "CLI and CommonJS API",
+          "zh": "命令行与 CommonJS API"
+        }
+      },
+      {
+        "name": "node:http / node:https",
+        "role": {
+          "en": "Pre-execution HTTP checks",
+          "zh": "执行前 HTTP 检查"
+        }
+      },
+      {
+        "name": "node:child_process",
+        "role": {
+          "en": "Command execution and output",
+          "zh": "命令执行与输出"
+        }
+      },
+      {
+        "name": "JSON / node:fs",
+        "role": {
+          "en": "Project and user configuration",
+          "zh": "项目与用户配置"
+        }
+      },
+      {
+        "name": "Vitest",
+        "role": {
+          "en": "Unit and simulated CLI tests",
+          "zh": "单元与 CLI 模拟测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
+      "sources": [
+        "package.json",
+        "index.js",
+        "bin/ipsafe.js",
+        "lib/ipsafe.js",
+        "lib/check-safe.js",
+        "integrations/claude-code.js",
+        "ipsafe.config.json",
+        "vitest.config.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main, no ahead; git pull --ff-only returned Already up to date."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed, normal Husky installed and lockfiles unchanged."
+    },
+    {
+      "check": "Unit tests",
+      "result": "bun run test passed: 89 tests in 3 files. Existing MaxListenersExceededWarning for repeated mocked command invocations; exit 0."
+    },
+    {
+      "check": "Isolated CLI smoke",
+      "result": "On temporary project configuration and loopback HTTP server, 200/content match executed a marker command, while 503 returned exit 1 and did not execute it. Temporary data removed; no global config changed."
+    },
+    {
+      "check": "npm installation source",
+      "result": "npm latest is 1.0.5, owned by nocoo. Read tarball without executing it: CLI and public helper modules match current main; core behavior matches with User-Agent helper and testability/comment differences. Repository remains 1.0.3; no release or version change."
+    },
+    {
+      "check": "Links and parity",
+      "result": "7 local references per language exist; bash/JSON examples match; git diff --check passed."
+    },
+    {
+      "check": "Normal commit and push",
+      "result": "Normal pre-commit 89-test coverage run passed; no pre-push hook exists. No skips, gate changes or version changes."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "8cbac66a06629c2d518fd735224e19fb72effcbe",
+    "url": "https://github.com/nocoo/ipsafe/commit/8cbac66a06629c2d518fd735224e19fb72effcbe",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both READMEs fetched through GitHub Contents API at main match local bytes. Working tree clean.",
+    "ci": {
+      "url": "https://github.com/nocoo/ipsafe/actions/runs/34225086087",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "ipsafe.review.md"
+  }
+}

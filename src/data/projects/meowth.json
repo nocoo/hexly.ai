@@ -199,5 +199,74 @@
 			"en": "At 32/16 px the tilted ears, silver tabby mask and amber eyes carry recognition. Fine whiskers and the two bends of the single yarn strand simplify. Sidebar and favicon marks use the transparent cat; large views may use the mauve presentation.",
 			"zh": "32/16 px 主要通过歪斜的双耳、银灰虎斑脸与琥珀眼识别；细胡须和同一根毛线的两个弯折会简化。侧栏和 favicon 使用透明猫咪，大图可使用灰紫色底纹展示。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Run locally installed coding CLIs through one web console and HTTP API, with streaming output and a record of their sessions.",
+			"zh": "通过同一个网页控制台与 HTTP 接口调用本机 coding CLI，查看流式输出并保存会话记录。"
+		},
+		"techStack": [
+			{
+				"name": "Go / Chi",
+				"role": {
+					"en": "Daemon, HTTP API and CLI subprocesses",
+					"zh": "daemon、HTTP 接口与 CLI 子进程"
+				}
+			},
+			{
+				"name": "SQLite / sqlc",
+				"role": {
+					"en": "Local tokens, sessions and events",
+					"zh": "本地 token、会话与事件"
+				}
+			},
+			{
+				"name": "React / TypeScript / Vite",
+				"role": {
+					"en": "Embedded dashboard",
+					"zh": "内嵌 Dashboard"
+				}
+			},
+			{
+				"name": "Basalt / Tailwind CSS",
+				"role": {
+					"en": "Components, themes and styling",
+					"zh": "组件、主题与样式"
+				}
+			},
+			{
+				"name": "React Markdown / remark-gfm",
+				"role": {
+					"en": "Chat and session content",
+					"zh": "聊天与会话内容展示"
+				}
+			},
+			{
+				"name": "pnpm / Turborepo",
+				"role": {
+					"en": "Frontend workspaces and builds",
+					"zh": "前端工作区与构建"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7",
+			"sources": [
+				"package.json",
+				"daemon/go.mod",
+				"daemon/cmd/meowthd/main.go",
+				"daemon/internal/agentfactory/agentfactory.go",
+				"daemon/internal/server/handlers/exec.go",
+				"daemon/internal/home/home.go",
+				"daemon/internal/remoteaccess/remoteaccess.go",
+				"daemon/internal/store/secret.go",
+				"apps/dashboard/package.json",
+				"apps/dashboard/vite.config.ts",
+				"apps/dashboard/src/models/chat.ts",
+				"apps/dashboard/src/lib/localStorage.ts",
+				"scripts/prepare-dashboard-embed.sh"
+			]
+		}
 	}
 }

@@ -1,0 +1,154 @@
+{
+  "projectId": "dotty",
+  "repository": "https://github.com/nocoo/dotty",
+  "checkout": "/Users/nocoo/workspace/personal/dotty",
+  "baselineRevision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Reuse dashboard layouts, controls, and charts to build data interfaces with a cool monochrome visual style.",
+      "zh": "复用看板布局、控件和图表，搭建采用冷色灰阶风格的数据界面。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Interface and viewmodel logic",
+          "zh": "界面与 viewmodel 逻辑"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Dashboard examples",
+          "zh": "看板示例"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "SPA development and build",
+          "zh": "SPA 开发与构建"
+        }
+      },
+      {
+        "name": "React Router",
+        "role": {
+          "en": "Client-side routes",
+          "zh": "客户端路由"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Themes and styling",
+          "zh": "主题与样式"
+        }
+      },
+      {
+        "name": "Radix UI",
+        "role": {
+          "en": "Interactive controls",
+          "zh": "交互控件"
+        }
+      },
+      {
+        "name": "Recharts",
+        "role": {
+          "en": "Data visualization",
+          "zh": "数据可视化"
+        }
+      },
+      {
+        "name": "i18next",
+        "role": {
+          "en": "Chinese and English interface",
+          "zh": "中英文界面"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Static asset hosting",
+          "zh": "静态资源托管"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+      "sources": [
+        "package.json",
+        "src/App.tsx",
+        "src/index.css",
+        "src/data/mock.ts",
+        "src/components/PixelBarChart.tsx",
+        "src/pages/NetworkOpsDashboardPage.tsx",
+        "src/pages/LoginPage.tsx",
+        "src/viewmodels/usePortfolioViewModel.ts",
+        "src/i18n/index.ts",
+        "vite.config.ts",
+        "wrangler.toml"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before investigation"
+    },
+    {
+      "command": "GitHub homepage and HTTPS HEAD",
+      "result": "https://dotty.hexly.ai confirmed; HTTP 200. A transient GraphQL connection reset was resolved by a direct retry."
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 101 lines; relative links, code fences, route names, script entries, and git diff --check passed"
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "commit": "f13a3aa2d2b3211c2f16537f3d6c0c5dfde8e4c1",
+    "date": "2026-09-08",
+    "pullBeforePush": "Already up to date; only the reviewed README commit was ahead",
+    "hooks": {
+      "preCommit": "passed: typecheck, lint, Vitest, gitleaks",
+      "prePush": "passed: production build, coverage, lint, OSV",
+      "unitTests": "21 files / 118 cases passed",
+      "logs": [
+        "/tmp/readme-refresh-20260908-apps-dotty-commit.log",
+        "/tmp/readme-refresh-20260908-apps-dotty-push.log"
+      ]
+    },
+    "readback": {
+      "remote": "origin/main",
+      "files": [
+        "README.md",
+        "docs/README.en.md"
+      ],
+      "result": "Remote bytes match local files; main synchronized"
+    },
+    "ci": [
+      {
+        "conclusion": "success",
+        "databaseId": 34226433824,
+        "name": "Release",
+        "status": "completed",
+        "url": "https://github.com/nocoo/dotty/actions/runs/34226433824"
+      },
+      {
+        "conclusion": "success",
+        "databaseId": 34226384424,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/dotty/actions/runs/34226384424"
+      }
+    ]
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "dotty.review.md"
+  }
+}

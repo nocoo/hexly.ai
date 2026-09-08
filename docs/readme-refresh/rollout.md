@@ -6,12 +6,14 @@
 
 首批的两份 README 与本站展示已经发布。此阶段逐项目重新同步和核实，不将旧初筛记录直接当作最新结论。
 
+用户在实施中追加：收尾对本站执行 `/su-release Y+1`，并调整 GitHub profile 顺序。本站最终按现有发布脚本从 0.4.6 升到 0.5.0，其他项目不改版本；Profile 在各原有分区内跟随本站排序，Games 放在第二个项目区域。详细记录见 [profile 排序与本站发布](profile-release.md)。
+
 ## 团队与批次
 
 | 工作线 | 初始批次 | 后续队列 |
 | --- | --- | --- |
-| 服务 / Workers | Echo、Noheir、Wooly、Dove | Ellie、Firefly、Backy、Pika、Surety、Bat、Otter、Lyre、signoff.now；同步状态处理后 Bogo、Frogie |
-| 桌面 / CLI | Runner、Rooster、Gecko、Codo | Owl、Flow、Hooky、IPSafe、Shrike、clip、Arena、Deca、Meowth、Unseal；同步状态处理后 Raven |
+| 服务 / Workers | Echo、Noheir、Wooly、Dove | Ellie、Firefly、Backy、Pika、Surety、Bat、Otter、Lyre、signoff.now；后续将 Bogo、Frogie 移交桌面 / CLI 工作线 |
+| 桌面 / CLI | Runner、Rooster、Gecko、Codo | Owl、Flow、Hooky、IPSafe、Shrike、clip、Arena、Deca、Meowth、Unseal；同步状态处理后 Raven；再接手 Bogo、Frogie |
 | Web / 应用 | Xray、R2Shot、Neo、Pew Game | Life.ai、Zhe、GeekHub、Dotty、Basalt、Matrix、Pew、Fundly、Poké Pocket、DreamRO、Dogfight、Gaga；同步状态处理后 Giraffe |
 | 主代理 | 复查同步例外；review 每个项目；合并本站资料 | 验证双语和证据、批准发布、跟踪 CI、生成本站 profiles、部署与线上检查 |
 
@@ -23,7 +25,7 @@
 2. 读取当前功能入口、manifest、配置、测试脚本和必要文档，核实用途、技术栈、首次运行条件及网站来源。明确旧文档漂移、已实现范围和真实限制。
 3. 根据 Snaky / Steed 模板写内容对应的中英文 README，修正英文相对路径。保留已有 Logo 和版本；必要的编号文档 / 索引遵循该仓库现有规则。
 4. 核对链接、示例、脚本入口和语言对应；按实际影响运行必要验证。文档变更不重复执行无关重型测试；正常提交和推送 hooks 必须运行，不能通过放宽断言、跳过 hook 或自动改版本取得通过。
-5. 提交 `<id>.md` 调查和 `<id>.json` 候选资料，通知主代理 review。主代理核对完整 README diff、关键代码依据和本站文案，明确批准后才提交 / 推送该项目。
+5. 提交 `<id>.md` 调查和 `<id>.json` 候选资料，通知主代理 review。主代理核对完整 README diff、关键代码依据和本站文案，明确批准后才提交 / 推送该项目。逐项书面意见位于 `rollout/<id>.review.md`，同样代表主代理复核决定；准备下一项时检查已经交审项目的 review 文件，按其中批准或修订意见继续。
 6. 发布前再次 pull、确认仅有本轮提交，再 push main；回读远端 README，记录提交、CI、部署与实际限制。本站只合并已经 review 并发布的资料。
 
 候选 JSON 包含 `projectId`、`repository`、`checkout`、`baselineRevision`、`status`、`overview`，以及 `validation`、`publication`。`overview` 使用正式 schema，`verified.sources` 为该项目实际文件路径，`verified.revision` 为同步后调查源码提交。`status` 按 `researching → ready_for_review → approved → published` 更新；真实无法继续时记录 `blocked` 和原因。不要往本站 JSON 里写未核实的候选资料。
@@ -40,6 +42,8 @@
 
 已复核 Giraffe 原有改动、Frogie / Raven 分叉和 Bogo 未推送提交，四项均保留原状态。已从最新远端 main 建立独立 clone 并 pull；路径、源提交和原始状态见[独立副本记录](isolated-checkouts.md)。对应工作线在这些副本处理 README，原仓库的工作区、分支和本地提交保持原样。
 
+Basalt 初次调查后出现另一项任务的 SEO 改动。主代理另建独立 clone、重新 pull 并迁入三份已批准文档；原库仅撤出了本任务文档差异，其他代码和暂存区保持原样。发布在独立副本完成，细节同见独立副本记录。
+
 ## 当前进度
 
-试点 2 / 49 已完成。剩余 47 项已授权实施，三条工作线均已开始。逐项目调查与候选资料放在 [rollout/](rollout/)；主代理复核意见和必要执行修复见 [review 台账](review-ledger.md)，最终发布清单随实施更新。
+试点 2 项与推广 47 项均已完成，共 49 个非归档仓库。全量推广阶段已批准 47 项、已推送 47 项；三条工作线的文稿任务已结束，本站进入 0.5.0 发布验收。逐项目调查与候选资料放在 [rollout/](rollout/)；主代理复核意见和必要执行修复见 [review 台账](review-ledger.md)，最终发布清单随实施更新。

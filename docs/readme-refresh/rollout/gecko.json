@@ -1,0 +1,154 @@
+{
+  "projectId": "gecko",
+  "repository": "https://github.com/nocoo/gecko",
+  "checkout": "/Users/nocoo/workspace/personal/gecko",
+  "baselineRevision": "f259be7fe740ce260c9257e2870b57dec8d9e7b3",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Record app and window usage on a Mac, review daily activity in a synced web dashboard, and optionally generate an AI-assisted daily review.",
+      "zh": "记录 Mac 上的应用和窗口使用时间，在同步后的 Web 控制台回看每日活动，并按需生成 AI 每日回顾。"
+    },
+    "techStack": [
+      {
+        "name": "Swift / SwiftUI",
+        "role": {
+          "en": "macOS tracking app",
+          "zh": "macOS 跟踪应用"
+        }
+      },
+      {
+        "name": "AppKit / AppleScript",
+        "role": {
+          "en": "Window and browser context",
+          "zh": "窗口与浏览器信息"
+        }
+      },
+      {
+        "name": "SQLite / GRDB",
+        "role": {
+          "en": "Local session storage",
+          "zh": "本地会话存储"
+        }
+      },
+      {
+        "name": "React / TypeScript",
+        "role": {
+          "en": "Activity dashboard",
+          "zh": "活动控制台"
+        }
+      },
+      {
+        "name": "vinext / Vite",
+        "role": {
+          "en": "Web pages and Node.js server",
+          "zh": "Web 页面与 Node.js 服务"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Synced data over the REST API",
+          "zh": "通过 REST API 存储同步数据"
+        }
+      },
+      {
+        "name": "NextAuth",
+        "role": {
+          "en": "Google sign-in",
+          "zh": "Google 登录"
+        }
+      },
+      {
+        "name": "AI SDK",
+        "role": {
+          "en": "Optional daily analysis",
+          "zh": "可选的每日分析"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "f259be7fe740ce260c9257e2870b57dec8d9e7b3",
+      "sources": [
+        "apps/mac-client/project.yml",
+        "apps/mac-client/Gecko/Sources/Services/TrackingEngine.swift",
+        "apps/mac-client/Gecko/Sources/Services/SettingsManager.swift",
+        "apps/mac-client/Gecko/Sources/Services/BrowserURLFetcher.swift",
+        "apps/mac-client/Gecko/Sources/Services/SyncService.swift",
+        "apps/web-dashboard/package.json",
+        "apps/web-dashboard/Dockerfile",
+        "apps/web-dashboard/src/lib/d1.ts",
+        "apps/web-dashboard/src/auth.ts",
+        "apps/web-dashboard/src/services/analyze-core.ts",
+        "apps/web-dashboard/src/lib/auto-analyze.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main, no ahead; git pull --ff-only succeeded."
+    },
+    {
+      "check": "Dependencies",
+      "result": "Root and apps/web-dashboard bun install --frozen-lockfile passed. Nested prepare logs no .git but root Husky initialized normally."
+    },
+    {
+      "check": "Web tests",
+      "result": "bun run --cwd apps/web-dashboard test passed: 62 files, 849 tests."
+    },
+    {
+      "check": "Links and parity",
+      "result": "14 local references in each language exist; bash examples match."
+    },
+    {
+      "check": "Website",
+      "result": "GET https://gecko.hexly.ai followed to /login, HTTP 200; URL also present in email-notification fallback."
+    },
+    {
+      "check": "Latest release",
+      "result": "GitHub API returned v1.12.0 with an empty assets array; README gives source build instructions."
+    },
+    {
+      "check": "Mac build/tests",
+      "result": "Initial default developer directory was CLT, so native checks were not run. Full Xcode is available at /Applications/Xcode.app/Contents/Developer; subsequent normal hooks will use process-level DEVELOPER_DIR."
+    },
+    {
+      "check": "HTTP and browser tests",
+      "result": "Commands and isolated SQLite/server setup verified from scripts; normal push hooks and CI pending review."
+    },
+    {
+      "check": "Normal pre-commit",
+      "result": "Web typecheck, lint-staged, Biome, toolchain smoke and 849 coverage tests passed. Native strict SwiftLint and xcodebuild unit tests passed using process-level full Xcode."
+    },
+    {
+      "check": "Normal pre-push",
+      "result": "88 HTTP integration tests passed, 6 optional real-AI tests skipped. gitleaks passed. OSV blocked push: image-size@2.0.2 with GHSA-5p2g-fcmc-qvqq and GHSA-w3rx-r6r6-pgpr; current ignores reported unused. No bypass or dependency changes."
+    },
+    {
+      "check": "Root-approved security follow-up",
+      "result": "Reviewed existing patchedDependencies regressions; finite renewal for the same two patched image-size advisories plus mandatory regression-before-scan check. Normal pre-commit Web/native passed again. Normal pre-push patch regression, OSV, gitleaks and 88 HTTP tests passed (6 optional real-AI skips). No dependency or app version change."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "b81e284aece4f2d21594c3282fdcb126e3f8fb4e",
+    "url": "https://github.com/nocoo/gecko/commit/b81e284aece4f2d21594c3282fdcb126e3f8fb4e",
+    "pushed": true,
+    "prePushPull": "git pull --ff-only returned Already up to date; ahead commits were only this task README and, where recorded, root-approved check repair.",
+    "remoteReadback": "GitHub Contents API read back both READMEs at main; bytes match local.",
+    "ci": {
+      "url": "https://github.com/nocoo/gecko/actions/runs/34224329253",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "checkRepairCommit": "14b43d95b0b901c0ca219a824a7ec84e7f0d541c"
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "gecko.review.md"
+  }
+}

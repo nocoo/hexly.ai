@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `9e226aa5c1376351ec76a659b1a33a8139892b4b`
 
+## Project goal
+
+Give React applications a consistent set of controls, layered surfaces, charts, and page layouts.
+
+为 React 应用提供统一的控件、分层表面、图表和页面布局。
+
+- [中文 README](https://github.com/nocoo/basalt/blob/main/README.md) · [English README](https://github.com/nocoo/basalt/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/basalt/tree/9b498d3feb8faaeee668229820801d527e07ccb3)
+- Source files: [`package.json`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/package.json), [`packages/basalt/package.json`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/packages/basalt/package.json), [`packages/basalt/src/index.ts`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/packages/basalt/src/index.ts), [`packages/basalt/src/components/date-picker.tsx`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/packages/basalt/src/components/date-picker.tsx), [`packages/basalt/src/components/data-table.tsx`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/packages/basalt/src/components/data-table.tsx), [`src/App.tsx`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/src/App.tsx), [`vite.config.ts`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/vite.config.ts), [`wrangler.toml`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/wrangler.toml), [`scripts/docs-gate.ts`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/scripts/docs-gate.ts), [`scripts/consumer-gate.ts`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/scripts/consumer-gate.ts), [`INTEGRATION.md`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/INTEGRATION.md), [`fixtures/README.md`](https://github.com/nocoo/basalt/blob/9b498d3feb8faaeee668229820801d527e07ccb3/fixtures/README.md)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Typed component APIs | 组件类型与 API |
+| React | Reusable UI components | 可复用 UI 组件 |
+| Radix UI | Accessible interaction primitives | 交互基础控件 |
+| Tailwind CSS | Optional utility-based styling | 可选的工具类样式 |
+| CSS | Tokens and standalone styles | 设计 tokens 与独立样式 |
+| Recharts | Chart components | 图表组件 |
+| Vite | Library and showcase builds | 组件库与示例站构建 |
+| Cloudflare Workers | Static showcase hosting | 示例站静态托管 |
+
 ## Current logo
 
 ![Basalt source identity](../../public/logos/display/basalt-160.webp)

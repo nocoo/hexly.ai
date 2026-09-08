@@ -257,5 +257,120 @@
 			"en": "At 24–32 px, the broad wings, amber abdomen, and small fire carry the identity. At 16 px, eyes, fine legs, and wood grain simplify into the warm silhouette.",
 			"zh": "在 24–32 px 下，展开的翅膀、琥珀色尾部与小篝火承担辨识度。缩到 16 px 时，眼睛、细腿与木纹会合并进暖色轮廓。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Write, publish and organize a personal blog through a web console and AI clients sharing the same content.",
+			"zh": "写作、发布和整理个人博客，让网页后台与 AI 客户端共用一套内容。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application code and scripts",
+					"zh": "应用代码与脚本"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Blog, admin console and server APIs",
+					"zh": "博客、后台与服务端 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Reading and administration interfaces",
+					"zh": "阅读与管理界面"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Page styles and themes",
+					"zh": "页面样式与主题"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "D1 proxy and search endpoints",
+					"zh": "D1 代理与搜索接口"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Blog records and full-text indexes",
+					"zh": "博客数据与全文索引"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Image storage through the S3 API",
+					"zh": "通过 S3 API 存储图片"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Google sign-in and admin sessions",
+					"zh": "Google 登录与管理会话"
+				}
+			},
+			{
+				"name": "MCP SDK",
+				"role": {
+					"en": "OAuth-protected writing tools",
+					"zh": "经过 OAuth 授权的写作工具"
+				}
+			},
+			{
+				"name": "Vercel AI SDK",
+				"role": {
+					"en": "Excerpts and link text generation",
+					"zh": "摘要与链接文本生成"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Dependencies, scripts and test runners",
+					"zh": "依赖、脚本与测试运行器"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "dcdea91001928e374c1a64db9290f8ec83ebbd5e",
+			"sources": [
+				"package.json",
+				"worker/package.json",
+				"worker/wrangler.toml",
+				"worker/src/index.ts",
+				"worker/src/fts.ts",
+				"src/lib/auth.ts",
+				"src/lib/auth-utils.ts",
+				"src/lib/r2-client.ts",
+				"src/lib/mcp/server.ts",
+				"src/lib/mcp/entities/author-post.ts",
+				"src/app/api/mcp/route.ts",
+				"src/app/api/comments/route.ts",
+				"src/app/api/search/route.ts",
+				"src/data/backup-export.ts",
+				"src/models/backup-schema.ts",
+				"src/services/post-service.ts",
+				"src/services/ai.ts",
+				"src/proxy.ts",
+				"scripts/migrations/db-adapter.ts",
+				"scripts/migrations/runner.ts",
+				"scripts/run-e2e.ts",
+				".github/workflows/ci.yml",
+				"docs/30-social-preview.md",
+				"LICENSE"
+			]
+		}
 	}
 }

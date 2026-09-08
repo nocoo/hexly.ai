@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `d69714a2332066c9c7b1792f919607a4b776eade`
 
+## Project goal
+
+Capture visible or vertically stitched web pages, upload them to your own R2 bucket, and copy a public image link for sharing.
+
+截取网页可见区域或纵向拼接长图，上传到自己的 R2 bucket，再复制公开图片链接用于分享。
+
+- [中文 README](https://github.com/nocoo/r2shot/blob/main/README.md) · [English README](https://github.com/nocoo/r2shot/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/r2shot/tree/7df57635f6efa955cd35ca9ee8de7c438c6450d6)
+- Source files: [`package.json`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/package.json), [`public/manifest.json`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/public/manifest.json), [`src/popup/Popup.tsx`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/src/popup/Popup.tsx), [`src/core/full-page-screenshot.ts`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/src/core/full-page-screenshot.ts), [`src/core/uploader.ts`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/src/core/uploader.ts), [`src/core/storage.ts`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/src/core/storage.ts), [`vite.config.ts`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/vite.config.ts), [`vitest.e2e.config.ts`](https://github.com/nocoo/r2shot/blob/7df57635f6efa955cd35ca9ee8de7c438c6450d6/vitest.e2e.config.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Extension logic | 扩展逻辑 |
+| React | Capture and settings interface | 截图与设置界面 |
+| Tailwind CSS | Interface styles | 界面样式 |
+| Vite | Extension bundling | 扩展构建 |
+| Chrome Manifest V3 | Browser extension APIs and background worker | 浏览器扩展 API 与后台服务 |
+| AWS SDK | S3 uploads and connection checks | S3 上传与连接检查 |
+| Cloudflare R2 | Screenshot storage | 截图存储 |
+
 ## Current logo
 
 ![R2Shot source identity](../../public/logos/display/r2shot-160.webp)

@@ -1,0 +1,126 @@
+{
+  "projectId": "xray",
+  "repository": "https://github.com/nocoo/xray",
+  "checkout": "/Users/nocoo/workspace/personal/xray",
+  "baselineRevision": "f0864583697a734b7279087b9a1de8d3a1a18bff",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Collect X / Twitter and custom-source content into watchlists, then read, translate, and save links from one timeline.",
+      "zh": "将 X / Twitter 与自定义来源的内容按关注列表收集，在同一时间线中阅读、翻译和保存链接。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "UI, API, and collection scripts",
+          "zh": "界面、API 与采集脚本"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Reading interface",
+          "zh": "阅读界面"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Web development and bundling",
+          "zh": "Web 开发与构建"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP API",
+          "zh": "HTTP API"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Application and ingest hosting",
+          "zh": "应用与内容接入托管"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Watchlists, content, and settings",
+          "zh": "关注列表、内容与设置存储"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Browser authentication",
+          "zh": "浏览器登录"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "f0864583697a734b7279087b9a1de8d3a1a18bff",
+      "sources": [
+        "package.json",
+        "packages/ui/package.json",
+        "packages/worker/package.json",
+        "packages/worker/wrangler.toml",
+        "packages/worker/src/index.ts",
+        "packages/worker/src/routes/ingest-push.ts",
+        "packages/worker/src/lib/ai-client.ts",
+        "scripts/refresh-watchlists.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean main, no pre-existing ahead commits"
+    },
+    {
+      "command": "bun run build:shared",
+      "result": "Passed (Turborepo cache hit)"
+    },
+    {
+      "command": "bun run refresh:watchlists -- --help",
+      "result": "Passed; collector not run"
+    },
+    {
+      "command": "HEAD https://xray.hexly.ai",
+      "result": "302 to Cloudflare Access login"
+    },
+    {
+      "command": "Normal pre-commit",
+      "result": "Biome, all workspace typechecks, configured coverage checks and staged Gitleaks passed."
+    },
+    {
+      "command": "Normal pre-push",
+      "result": "17 isolated HTTP tests, 42-route coverage check, repository Gitleaks and OSV passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "publisher": "root",
+    "readmeRevision": "c20488dc68be9646aea832e44b257d994a933b8b",
+    "prePushPull": "Already up to date; exactly one task commit ahead",
+    "push": "success",
+    "remoteReadback": "Both files read through GitHub Contents API at main; exact bytes matched.",
+    "ci": {
+      "runId": 34222664148,
+      "url": "https://github.com/nocoo/xray/actions/runs/34222664148",
+      "status": "in_progress"
+    },
+    "deployment": {
+      "status": "pending_ci"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "result": "Approved full bilingual README, code evidence and overview; normal hooks, pre-push pull and remote readback required.",
+    "record": "xray.review.md"
+  }
+}

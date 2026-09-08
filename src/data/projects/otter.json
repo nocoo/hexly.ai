@@ -200,5 +200,116 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 224.5 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Save macOS development settings and inventories as snapshots for inspection and migration.",
+			"zh": "保存 macOS 开发环境配置与清单快照，方便查看变化和迁移电脑。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "CLI, collectors, API and web application",
+					"zh": "CLI、采集器、API 与 Web 应用"
+				}
+			},
+			{
+				"name": "Node.js / @nocoo/base-cli",
+				"role": {
+					"en": "Command-line runtime, login and configuration",
+					"zh": "命令行运行、登录与配置"
+				}
+			},
+			{
+				"name": "Bun workspaces",
+				"role": {
+					"en": "Dependencies and development scripts",
+					"zh": "依赖管理与开发脚本"
+				}
+			},
+			{
+				"name": "Hono / Cloudflare Workers",
+				"role": {
+					"en": "Single Worker for API and static assets",
+					"zh": "单 Worker 提供 API 与静态资源"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Users, tokens, webhooks and snapshot indexes",
+					"zh": "用户、Token、Webhook 与快照索引"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Snapshot JSON and application icons",
+					"zh": "快照 JSON 与应用图标"
+				}
+			},
+			{
+				"name": "Vite / React",
+				"role": {
+					"en": "Snapshot browsing and JSON export",
+					"zh": "快照查看与 JSON 导出"
+				}
+			},
+			{
+				"name": "Cloudflare Access / jose",
+				"role": {
+					"en": "Browser identity and JWT verification",
+					"zh": "浏览器身份与 JWT 校验"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "74276e49d667df345cac4d6590e01469f35c1115",
+			"sources": [
+				"package.json",
+				"packages/cli/package.json",
+				"packages/core/package.json",
+				"packages/api/package.json",
+				"packages/web/package.json",
+				"packages/worker/package.json",
+				"packages/cli/src/cli.ts",
+				"packages/cli/src/commands/login.ts",
+				"packages/cli/src/commands/backup.ts",
+				"packages/cli/src/commands/snapshot.ts",
+				"packages/cli/src/config/manager.ts",
+				"packages/cli/src/storage/local.ts",
+				"packages/cli/src/collectors/index.ts",
+				"packages/cli/src/collectors/claude-config.ts",
+				"packages/cli/src/collectors/hermes.ts",
+				"packages/cli/src/collectors/shell-config.ts",
+				"packages/cli/src/utils/redact.ts",
+				"packages/cli/src/uploader/webhook.ts",
+				"packages/worker/src/index.ts",
+				"packages/worker/wrangler.toml",
+				"packages/api/src/app.ts",
+				"packages/api/src/middleware/access-auth.ts",
+				"packages/api/src/middleware/api-key-auth.ts",
+				"packages/api/src/routes/auth-cli.ts",
+				"packages/api/src/routes/api-snapshots.ts",
+				"packages/api/src/lib/snapshot-repo.ts",
+				"packages/api/src/routes/live.ts",
+				"packages/web/vite.config.ts",
+				"packages/web/src/pages/SnapshotsPage.tsx",
+				"packages/web/src/components/snapshot/export-section.tsx",
+				"scripts/run-api-e2e.ts",
+				"scripts/run-e2e-spa.ts",
+				"vitest.l2.config.ts",
+				"packages/cli/e2e/cli-binary.test.ts",
+				"packages/web/e2e/playwright.config.ts",
+				"playwright.config.ts",
+				"e2e/bdd/app.spec.ts",
+				".github/workflows/ci.yml",
+				".github/workflows/release.yml",
+				"scripts/release.ts",
+				"LICENSE"
+			]
+		}
 	}
 }

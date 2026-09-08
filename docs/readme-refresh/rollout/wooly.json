@@ -1,0 +1,153 @@
+{
+  "projectId": "wooly",
+  "repository": "https://github.com/nocoo/wooly",
+  "checkout": "/Users/nocoo/workspace/personal/wooly",
+  "baselineRevision": "611b99cc868dc3e90ff5b20f54785d0d858d10ed",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Keep household benefit accounts, usage cycles and redemption records together so family members can check remaining allowances, expiry and points.",
+      "zh": "集中记录家庭权益账户、使用周期与核销记录，方便核对剩余额度、到期时间和积分。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Benefit models and application logic",
+          "zh": "权益模型与应用逻辑"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Web pages and server-side data proxy",
+          "zh": "Web 页面与服务端数据代理"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Household dashboard and forms",
+          "zh": "家庭权益看板与表单"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Interface styles",
+          "zh": "界面样式"
+        }
+      },
+      {
+        "name": "Auth.js",
+        "role": {
+          "en": "Google sign-in and sessions",
+          "zh": "Google 登录与会话"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Dataset API and validation",
+          "zh": "数据集 API 与校验"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Shared household data storage",
+          "zh": "共享家庭数据存储"
+        }
+      },
+      {
+        "name": "Vitest",
+        "role": {
+          "en": "Models, ViewModels, routes and Worker tests",
+          "zh": "模型、视图模型、路由和 Worker 测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "611b99cc868dc3e90ff5b20f54785d0d858d10ed",
+      "sources": [
+        "package.json",
+        "worker/package.json",
+        "src/models/types.ts",
+        "src/models/cycle.ts",
+        "src/models/points.ts",
+        "src/viewmodels/usePointsDetailViewModel.ts",
+        "src/auth.ts",
+        "src/hooks/use-dataset-context.tsx",
+        "src/services/worker-client.ts",
+        "worker/src/routes/dataset.ts",
+        "worker/src/db/operations.ts",
+        "worker/wrangler.toml.example",
+        "scripts/dev.sh",
+        "e2e/bdd/app.spec.ts",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check",
+      "all four documents' relative links and README section order",
+      "bilingual bash example parity",
+      "root and Worker script references",
+      "isolated local D1 migrations from unchanged config template",
+      "website verified in release workflow and MIT license file",
+      "frozen root and Worker dependency installs with normal Husky prepare",
+      "normal pre-commit unit coverage, Worker/API tests, typecheck, staged lint, Gitleaks and source gates",
+      "normal pre-push build, unit/Worker/API tests, Worker types, lint/source gates and both OSV scans",
+      "published bilingual README byte-for-byte readback",
+      "GitHub deployment success"
+    ],
+    "notRun": [
+      "user development servers",
+      "manual production actions"
+    ],
+    "limitations": [
+      "One shared household dataset; full replacements do not merge concurrent edits.",
+      "Local sign-in still requires Google OAuth credentials.",
+      "Browser smoke test only covers the login page.",
+      "The combined dev script requires Bash 4.3+ and does not replace existing empty keys."
+    ]
+  },
+  "publication": {
+    "approvedBy": "root",
+    "branch": "main",
+    "commits": [
+      {
+        "revision": "76320dfee79e59ca9e14a02d944c1e933f0199c7",
+        "subject": "docs: refresh bilingual project readmes"
+      }
+    ],
+    "readmeRevision": "76320dfee79e59ca9e14a02d944c1e933f0199c7",
+    "push": "success",
+    "remoteReadback": [
+      "README.md",
+      "docs/README.en.md"
+    ],
+    "ci": {
+      "status": "completed",
+      "url": "https://github.com/nocoo/wooly/actions/runs/34222922047",
+      "runId": 34222922047,
+      "conclusion": "success"
+    },
+    "deployment": {
+      "status": "completed",
+      "scope": "Docker / VPS site; the independent Worker is not deployed by this workflow",
+      "url": "https://github.com/nocoo/wooly/actions/runs/34223039997",
+      "runId": 34223039997,
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "wooly.review.md"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "projectId": "owl",
+  "repository": "https://github.com/nocoo/owl",
+  "checkout": "/Users/nocoo/workspace/personal/owl",
+  "baselineRevision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Inspect Mac system metrics and processes from the menu bar, and detect recurring crashes, resource pressure, sleep problems, and device anomalies locally.",
+      "zh": "在菜单栏查看 Mac 系统指标与进程，在本机发现反复崩溃、资源压力、睡眠和设备异常。"
+    },
+    "techStack": [
+      {
+        "name": "Swift / Swift Concurrency",
+        "role": {
+          "en": "Local collection and detection logic",
+          "zh": "本地采集与检测逻辑"
+        }
+      },
+      {
+        "name": "SwiftUI / AppKit",
+        "role": {
+          "en": "Menu bar, metrics and settings UI",
+          "zh": "菜单栏、指标与设置界面"
+        }
+      },
+      {
+        "name": "macOS Unified Logging",
+        "role": {
+          "en": "System event stream",
+          "zh": "系统事件日志流"
+        }
+      },
+      {
+        "name": "IOKit / Mach / libproc",
+        "role": {
+          "en": "Hardware and process metrics",
+          "zh": "硬件与进程指标"
+        }
+      },
+      {
+        "name": "Objective-C / IOHID",
+        "role": {
+          "en": "Apple Silicon thermal sensors",
+          "zh": "Apple Silicon 温度传感器"
+        }
+      },
+      {
+        "name": "UserDefaults",
+        "role": {
+          "en": "Local preferences",
+          "zh": "本地偏好设置"
+        }
+      },
+      {
+        "name": "Swift Testing",
+        "role": {
+          "en": "Unit and pipeline integration tests",
+          "zh": "单元与检测管道集成测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf",
+      "sources": [
+        "Package.swift",
+        "Sources/Owl/OwlApp.swift",
+        "Sources/Owl/OwlEngine.swift",
+        "Sources/Owl/OwlNotifications.swift",
+        "Sources/OwlCore/Patterns/PatternCatalog.swift",
+        "Sources/OwlCore/Patterns/MetricsCatalog.swift",
+        "Sources/OwlCore/Services/SystemMetricsPoller.swift",
+        "Sources/OwlCore/Services/HIDTemperatureProvider.swift",
+        "Sources/OwlCore/Pipeline/AlertStateManager.swift",
+        "Sources/OwlCore/Settings/AppSettings.swift",
+        "scripts/build.sh"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main with no ahead commits; git pull --ff-only returned Already up to date."
+    },
+    {
+      "check": "Swift tests",
+      "result": "DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test passed: 662 tests in 56 suites. Includes constructed-log pipeline integration and available local sensor tests."
+    },
+    {
+      "check": "Release and website",
+      "result": "GitHub latest release v1.8.0 provides Owl-v1.8.0.dmg. Repository homepage and current site website field are empty; no website link invented."
+    },
+    {
+      "check": "Links and bilingual parity",
+      "result": "All local links exist; bash examples match between the two languages; git diff --check passed."
+    },
+    {
+      "check": "App installation and UI",
+      "result": "No app installed or launched and no login/notification preference changed. Signing, notarization and visual UI checks not performed."
+    },
+    {
+      "check": "Normal pre-commit",
+      "result": "Installed repository hooks; strict SwiftLint, 652 unit tests, required coverage and staged gitleaks passed with full Xcode."
+    },
+    {
+      "check": "Normal pre-push",
+      "result": "EndToEnd filter ran 11 tests in 2 suites; full repository gitleaks passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "cceca53d490ef08dcbb4b15a9f4004220d1cbc76",
+    "url": "https://github.com/nocoo/owl/commit/cceca53d490ef08dcbb4b15a9f4004220d1cbc76",
+    "pushed": true,
+    "prePushPull": "git pull --ff-only returned Already up to date; ahead commits were only this task README and, where recorded, root-approved check repair.",
+    "remoteReadback": "GitHub Contents API read back both READMEs at main; bytes match local.",
+    "ci": {
+      "url": "https://github.com/nocoo/owl/actions/runs/34224243868",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "owl.review.md"
+  }
+}

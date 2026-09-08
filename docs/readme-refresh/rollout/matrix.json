@@ -1,0 +1,156 @@
+{
+  "projectId": "matrix",
+  "repository": "https://github.com/nocoo/matrix",
+  "checkout": "/Users/nocoo/workspace/personal/matrix",
+  "baselineRevision": "f349c07e0a7ac73e337b54014a4c45790a20da94",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Reuse terminal-inspired controls, charts, and page templates to build green-on-black data dashboards.",
+      "zh": "复用终端风格的控件、图表和页面模板，搭建绿黑配色的数据看板。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Interface and viewmodel logic",
+          "zh": "界面与 viewmodel 逻辑"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Dashboard pages and reusable controls",
+          "zh": "看板页面与可复用控件"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "SPA development and build",
+          "zh": "SPA 开发与构建"
+        }
+      },
+      {
+        "name": "React Router",
+        "role": {
+          "en": "Client-side routes",
+          "zh": "客户端路由"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Theme variables and styling",
+          "zh": "主题变量与样式"
+        }
+      },
+      {
+        "name": "SVG",
+        "role": {
+          "en": "Charts and data visualization",
+          "zh": "图表与数据可视化"
+        }
+      },
+      {
+        "name": "Canvas",
+        "role": {
+          "en": "Animated character rain",
+          "zh": "动态字符雨"
+        }
+      },
+      {
+        "name": "i18next",
+        "role": {
+          "en": "Chinese and English interface",
+          "zh": "中英文界面"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Static asset hosting",
+          "zh": "静态资源托管"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "f349c07e0a7ac73e337b54014a4c45790a20da94",
+      "sources": [
+        "package.json",
+        "src/App.tsx",
+        "src/index.css",
+        "src/components/ui/DataVizComponents.tsx",
+        "src/components/ui/MatrixExtras.tsx",
+        "src/components/ui/RunnerComponents.tsx",
+        "src/data/mock.ts",
+        "src/viewmodels/useAccountsViewModel.ts",
+        "src/viewmodels/useLifeAiViewModel.ts",
+        "src/pages/LoginPage.tsx",
+        "src/i18n/index.ts",
+        "vite.config.ts",
+        "wrangler.toml"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean synchronized main before research"
+    },
+    {
+      "command": "GitHub homepage and HTTPS HEAD",
+      "result": "https://matrix.hexly.ai confirmed; HTTP 200"
+    },
+    {
+      "command": "README static validation",
+      "result": "Both READMEs 107 lines; relative links, test path, route names, code fences, and git diff --check passed"
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "commit": "252403134a2166e33d73d1dfbf730ccb33b79d31",
+    "date": "2026-09-08",
+    "pullBeforePush": "Already up to date; only reviewed README commit was ahead",
+    "hooks": {
+      "preCommit": "passed: typecheck, lint, unit/component tests, gitleaks",
+      "prePush": "passed: production build, coverage, lint, OSV",
+      "tests": "14 files / 638 cases passed",
+      "logs": [
+        "/tmp/readme-refresh-20260908-apps-matrix-commit.log",
+        "/tmp/readme-refresh-20260908-apps-matrix-push.log"
+      ]
+    },
+    "readback": {
+      "remote": "origin/main",
+      "files": [
+        "README.md",
+        "docs/README.en.md"
+      ],
+      "result": "Remote bytes match local files; main synchronized"
+    },
+    "ci": [
+      {
+        "name": "CI",
+        "databaseId": 34227361152,
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/matrix/actions/runs/34227361152"
+      },
+      {
+        "name": "Release",
+        "databaseId": 34227502342,
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/matrix/actions/runs/34227502342"
+      }
+    ]
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "matrix.review.md"
+  }
+}

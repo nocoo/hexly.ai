@@ -13,6 +13,27 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `1f41b41255b7184c307cb13693e94a6f45bbb9e1`
 
+## Project goal
+
+Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.
+
+通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。
+
+- [中文 README](https://github.com/nocoo/deca/blob/main/README.md) · [English README](https://github.com/nocoo/deca/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/deca/tree/37911d4cdf1c242c50c5d48d890a0e041c486d8b)
+- Source files: [`package.json`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/package.json), [`packages/gateway/cli.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/gateway/cli.ts), [`packages/gateway/serve.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/gateway/serve.ts), [`packages/gateway/src/gateway.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/gateway/src/gateway.ts), [`packages/gateway/src/adapter.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/gateway/src/adapter.ts), [`packages/agent/src/core/agent.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/agent/src/core/agent.ts), [`packages/agent/src/core/session.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/agent/src/core/session.ts), [`packages/agent/src/core/memory.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/agent/src/core/memory.ts), [`packages/agent/src/tools/builtin.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/agent/src/tools/builtin.ts), [`packages/storage/src/provider.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/storage/src/provider.ts), [`packages/storage/src/types.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/storage/src/types.ts), [`packages/http/src/server.ts`](https://github.com/nocoo/deca/blob/37911d4cdf1c242c50c5d48d890a0e041c486d8b/packages/http/src/server.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Bun / TypeScript | Local agent and workspaces | 本地 Agent 与工作区 |
+| Anthropic SDK | Model calls and tool protocol | 模型调用与工具协议 |
+| Hono | HTTP channel | HTTP 通道 |
+| discord.js | Discord bot channel | Discord 机器人通道 |
+| p-queue | Gateway request dispatch | Gateway 请求调度 |
+| JSONL / JSON / Markdown | Sessions, configuration and context files | 会话、配置与上下文文件 |
+
 ## Current logo
 
 ![Deca source identity](../../public/logos/display/deca-160.webp)

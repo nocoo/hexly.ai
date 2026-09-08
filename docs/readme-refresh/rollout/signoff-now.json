@@ -1,0 +1,199 @@
+{
+  "projectId": "signoff-now",
+  "repository": "https://github.com/nocoo/signoff.now",
+  "checkout": "/Users/nocoo/workspace/personal/signoff.now",
+  "baselineRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Help managers review registered developers’ Azure DevOps PR, review, and work item activity through daily scores, comparisons, and timelines, with data collected by a local CLI.",
+      "zh": "通过本地 CLI 采集已登记开发者的 Azure DevOps PR、评审和工作项活动，帮助管理者按日查看积分、人员对比与活动明细。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application, domain rules, and CLI logic",
+          "zh": "应用、领域规则与 CLI 逻辑"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Local collection runtime and monorepo tooling",
+          "zh": "本地采集运行时与 monorepo 工具"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Management pages, activity views, and dashboard",
+          "zh": "管理页面、活动视图与 Dashboard"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Interface styling and themes",
+          "zh": "界面样式与主题"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP routes and authentication middleware",
+          "zh": "HTTP 路由与认证中间件"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Ingest API and SPA hosting",
+          "zh": "数据写入 API 与 SPA 托管"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Entities, settings, activities, and scores",
+          "zh": "实体、配置、活动与积分存储"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Web entry and management API identity",
+          "zh": "Web 入口与管理 API 身份认证"
+        }
+      },
+      {
+        "name": "Azure DevOps API",
+        "role": {
+          "en": "Pull request, review, and work item collection",
+          "zh": "PR、评审与工作项数据采集"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+      "sources": [
+        "package.json",
+        "apps/web/package.json",
+        "apps/collect/package.json",
+        "packages/worker/package.json",
+        "wrangler.toml",
+        "apps/web/vite.config.ts",
+        "apps/web/src/App.tsx",
+        "apps/web/src/views/DashboardPage.tsx",
+        "apps/web/src/views/activity/ActivityPage.tsx",
+        "apps/web/src/viewmodels/useDashboardViewModel.ts",
+        "apps/web/src/models/stats.ts",
+        "apps/collect/src/main.ts",
+        "apps/collect/src/config/env.ts",
+        "apps/collect/src/ado/client.ts",
+        "apps/collect/src/commands/run-collect.ts",
+        "apps/collect/src/commands/collect-flags.ts",
+        "apps/collect/src/commands/ingest-normalized.ts",
+        "apps/collect/src/ado/collect.ts",
+        "packages/domain/src/identity.ts",
+        "packages/domain/src/day-key.ts",
+        "packages/domain/src/transform/pr.ts",
+        "packages/domain/src/transform/wi.ts",
+        "packages/domain/src/constants.ts",
+        "packages/domain/src/score.ts",
+        "packages/worker/src/index.ts",
+        "packages/worker/src/routes/stats.ts",
+        "packages/worker/src/routes/settings.ts",
+        "packages/worker/src/middleware/entry-control.ts",
+        "packages/worker/src/middleware/access-auth.ts",
+        "packages/worker/src/middleware/access-principal.ts",
+        "packages/worker/src/middleware/pipeline-auth.ts",
+        "scripts/e2e-06-local.sh"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only before investigation",
+      "result": "Already up to date; clean synchronized main at 51b679fba85d1a0cc81641e41f377ad77f867dd0."
+    },
+    {
+      "command": "Website and runtime configuration inspection",
+      "result": "https://signoff.hexly.ai is confirmed by wrangler.toml and the site catalog; anonymous HTTPS HEAD returned 403. No real Access session, Azure identity inspection, ADO collection, production ingest, or remote migration was performed."
+    },
+    {
+      "command": "bun install --frozen-lockfile",
+      "result": "Passed with existing lockfile and normal Husky prepare. Original checkout uses Bun 1.4.0 / Node 26.7.0; packageManager and CI remain pinned to Bun 1.3.6. No version or lockfile change."
+    },
+    {
+      "command": "bun run signoff -- --help; collect --help; ingest normalized --help; doctor --help",
+      "result": "All help commands passed without loading real configuration or contacting ADO. Confirmed argument forwarding and available subcommands."
+    },
+    {
+      "command": "bun run build:web --force",
+      "result": "Frontend typecheck and Vite production build passed with cache bypass; apps/web/dist built. No deployment performed."
+    },
+    {
+      "command": "bun run --cwd apps/gitinfo test:integration",
+      "result": "Passed 3 existing Git subprocess integration tests; no skips or modified assertions."
+    },
+    {
+      "command": "README static validation",
+      "result": "README.md 171 lines, docs/README.en.md 173 lines. Root edits to folding scope, team domain and shell-safe placeholders retained. Relative links/images and fences checked; git diff --check passed. Three documentation files only."
+    },
+    {
+      "command": "Existing local pipeline fixture",
+      "result": "Passed the unchanged fixture script in a fresh disposable checkout using workspace Wrangler 4.111.0 and --local-upstream localhost. Applied local migrations, seeded fake entities, fetched bootstrap, ingested a pr.merged fixture, and verified heatmap total 10 plus timeline. Initial unqualified root dev:worker used the production route Host and failed Access with HTTP 500; README startup now includes the verified local-upstream option. No auth or test assertion changes."
+    },
+    {
+      "command": "Normal publication hooks and CI",
+      "result": "Root final review approved. Normal pre-commit coverage and workspace type checks reused their valid Turborepo caches; root tsc passed and lint-staged had no matching source files for the Markdown-only change. A fresh pre-push pull succeeded; normal osv-scanner and gitleaks both passed. Main pushed and three files byte-match GitHub; CI 34236025103 completed successfully (typecheck, lint, unit coverage, gitleaks and OSV). Optional reusable-workflow API/browser/Worker jobs were not enabled by this repository and were skipped; the local pipeline fixture was verified separately. No Release workflow exists."
+    },
+    {
+      "command": "Documented workspace migration and Vite proxy startup",
+      "result": "Workspace-pinned Wrangler migration command exited 0. Vite7042 HTML, live, stats summary, and heatmap proxy all returned 200; fixture heatmap row total is 10. Both test servers terminated; original .data/.wrangler remain absent."
+    },
+    {
+      "command": "bun run test:coverage; bun run typecheck",
+      "result": "Both commands exited 0. Coverage reused 7 successful existing Turborepo task results; typecheck ran the root tsc entry and workspace checks. Normal commit hooks will still run unchanged."
+    },
+    {
+      "command": "Final GitHub CI",
+      "result": "CI 34236025103 success for commit 1d658480fe8e4fdd527fae437b7c8747537d86ef. The enabled quality job passed fresh installation, typecheck, lint, unit tests/coverage and both security scans. No Release workflow or manual deployment."
+    }
+  ],
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "signoff-now.review.md"
+  },
+  "publication": {
+    "commit": "1d658480fe8e4fdd527fae437b7c8747537d86ef",
+    "branch": "main",
+    "remoteReadback": "README.md, docs/README.en.md and docs/README.md byte-match GitHub at the publication commit",
+    "documents": {
+      "README.md": "d95f82dad9f08443cef69f17f5804d2837e770b47ce05f1785d8b207bfaf5a52",
+      "docs/README.en.md": "f9eca527571858c39ce0f1b09808244dca7bb25d340251deb0d52ce190777778",
+      "docs/README.md": "e22b289673873639bfa554f6df153d63dc458532091b5494253ad80e5fa6a201"
+    },
+    "ci": [
+      {
+        "conclusion": "success",
+        "databaseId": 34236025103,
+        "name": "CI",
+        "status": "completed",
+        "url": "https://github.com/nocoo/signoff.now/actions/runs/34236025103"
+      }
+    ],
+    "logs": [
+      "/tmp/readme-refresh-20260908-apps-signoff-now-build.log",
+      "/tmp/readme-refresh-20260908-apps-signoff-now-integration.log",
+      "/tmp/readme-refresh-20260908-apps-signoff-now-e2e.log",
+      "/tmp/readme-refresh-20260908-apps-signoff-now-e2e-retry.log",
+      "/tmp/readme-refresh-20260908-apps-signoff-now-commit.log",
+      "/tmp/readme-refresh-20260908-apps-signoff-now-push.log"
+    ]
+  }
+}

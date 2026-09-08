@@ -13,6 +13,32 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `70a4de51b9fe6f152805298c031ca92165754c40`
 
+## Project goal
+
+Write, publish and organize a personal blog through a web console and AI clients sharing the same content.
+
+写作、发布和整理个人博客，让网页后台与 AI 客户端共用一套内容。
+
+- [中文 README](https://github.com/nocoo/firefly/blob/main/README.md) · [English README](https://github.com/nocoo/firefly/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/firefly/tree/dcdea91001928e374c1a64db9290f8ec83ebbd5e)
+- Source files: [`package.json`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/package.json), [`worker/package.json`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/worker/package.json), [`worker/wrangler.toml`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/worker/wrangler.toml), [`worker/src/index.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/worker/src/index.ts), [`worker/src/fts.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/worker/src/fts.ts), [`src/lib/auth.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/lib/auth.ts), [`src/lib/auth-utils.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/lib/auth-utils.ts), [`src/lib/r2-client.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/lib/r2-client.ts), [`src/lib/mcp/server.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/lib/mcp/server.ts), [`src/lib/mcp/entities/author-post.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/lib/mcp/entities/author-post.ts), [`src/app/api/mcp/route.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/app/api/mcp/route.ts), [`src/app/api/comments/route.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/app/api/comments/route.ts), [`src/app/api/search/route.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/app/api/search/route.ts), [`src/data/backup-export.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/data/backup-export.ts), [`src/models/backup-schema.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/models/backup-schema.ts), [`src/services/post-service.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/services/post-service.ts), [`src/services/ai.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/services/ai.ts), [`src/proxy.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/src/proxy.ts), [`scripts/migrations/db-adapter.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/scripts/migrations/db-adapter.ts), [`scripts/migrations/runner.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/scripts/migrations/runner.ts), [`scripts/run-e2e.ts`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/scripts/run-e2e.ts), [`.github/workflows/ci.yml`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/.github/workflows/ci.yml), [`docs/30-social-preview.md`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/docs/30-social-preview.md), [`LICENSE`](https://github.com/nocoo/firefly/blob/dcdea91001928e374c1a64db9290f8ec83ebbd5e/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application code and scripts | 应用代码与脚本 |
+| Next.js | Blog, admin console and server APIs | 博客、后台与服务端 API |
+| React | Reading and administration interfaces | 阅读与管理界面 |
+| Tailwind CSS | Page styles and themes | 页面样式与主题 |
+| Cloudflare Workers | D1 proxy and search endpoints | D1 代理与搜索接口 |
+| Cloudflare D1 | Blog records and full-text indexes | 博客数据与全文索引 |
+| Cloudflare R2 | Image storage through the S3 API | 通过 S3 API 存储图片 |
+| Auth.js | Google sign-in and admin sessions | Google 登录与管理会话 |
+| MCP SDK | OAuth-protected writing tools | 经过 OAuth 授权的写作工具 |
+| Vercel AI SDK | Excerpts and link text generation | 摘要与链接文本生成 |
+| Bun | Dependencies, scripts and test runners | 依赖、脚本与测试运行器 |
+
 ## Current logo
 
 ![Firefly source identity](../../public/logos/display/firefly-160.webp)

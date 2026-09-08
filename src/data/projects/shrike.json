@@ -200,5 +200,79 @@
 			"en": "The beak and dark eye band carry the mark at small sizes. Menu bar template icons keep their existing monochrome silhouette; app, toolbar, and browser derivatives retain their distinct roles.",
 			"zh": "小尺寸由鸟喙与深色眼带承担识别。菜单栏模板图保留现有单色轮廓；应用、工具栏与浏览器图标分别按各自用途处理。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Back up selected files and development configurations on a Mac to Google Drive's local directory, with sync triggered from the app or a local HTTP request.",
+			"zh": "在 Mac 上将选定文件和开发配置备份到 Google Drive 的本地目录，通过应用或本机 HTTP 请求触发同步。"
+		},
+		"techStack": [
+			{
+				"name": "Tauri / Rust",
+				"role": {
+					"en": "Desktop app and file operations",
+					"zh": "桌面应用与文件操作"
+				}
+			},
+			{
+				"name": "Next.js / React",
+				"role": {
+					"en": "Statically exported desktop interface",
+					"zh": "静态导出的桌面界面"
+				}
+			},
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Frontend logic",
+					"zh": "前端逻辑"
+				}
+			},
+			{
+				"name": "Tailwind CSS / Radix UI",
+				"role": {
+					"en": "Styling and UI components",
+					"zh": "样式与界面组件"
+				}
+			},
+			{
+				"name": "Tokio / Axum",
+				"role": {
+					"en": "Local HTTP API",
+					"zh": "本机 HTTP 接口"
+				}
+			},
+			{
+				"name": "rsync",
+				"role": {
+					"en": "Incremental file copying",
+					"zh": "增量文件复制"
+				}
+			},
+			{
+				"name": "Tauri Store",
+				"role": {
+					"en": "Local settings and backup list",
+					"zh": "本地设置与备份列表"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "0fec187fc22742664925897400d0c1a62b2478bb",
+			"sources": [
+				"package.json",
+				"next.config.mjs",
+				"src-tauri/Cargo.toml",
+				"src-tauri/tauri.conf.json",
+				"src-tauri/src/lib.rs",
+				"src-tauri/src/types.rs",
+				"src-tauri/src/commands.rs",
+				"src-tauri/src/webhook.rs",
+				"src-tauri/src/sync/executor.rs",
+				"src/hooks/use-file-list.ts",
+				"src/components/settings-page.tsx"
+			]
+		}
 	}
 }
