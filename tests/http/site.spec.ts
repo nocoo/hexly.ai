@@ -169,6 +169,21 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	);
 	expect(page.match(/<h1>/g)?.length).toBe(1);
 	expect(page).toContain("https://hexly.ai/og/frogie.jpg");
+	const share = await request.get("/api/share/pew.json");
+	expect(share.status()).toBe(200);
+	expect(share.headers()["access-control-allow-origin"]).toBe("*");
+	expect(share.headers()["content-type"]).toContain("application/json");
+	const card = await share.json();
+	expect(card).toMatchObject({
+		id: "pew",
+		title: "Pew — hexly.ai",
+		image: { url: "https://hexly.ai/og/pew.jpg", width: 1200, height: 630 },
+	});
+	const index = await (await request.get("/api/share.json")).json();
+	expect(index.site).toBe("https://hexly.ai/api/share/hexly-ai.json");
+	expect(
+		index.projects.some((entry: { id: string }) => entry.id === "pew"),
+	).toBe(true);
 	const home = await (await request.get("/")).text();
 	expect(home).toContain("Active projects");
 	expect(home).toContain("Archived projects");

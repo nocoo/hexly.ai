@@ -1,6 +1,7 @@
 import { copy } from "../data/copy";
+import identity from "../data/site-identity.json" with { type: "json" };
 import { filterProjects } from "./catalogue";
-import type { Project } from "./project";
+import type { Locale, Project } from "./project";
 
 export const siteOrigin = "https://hexly.ai";
 
@@ -44,6 +45,113 @@ export function absoluteUrl(path: string): string {
 export function socialImage(project?: Project): string {
 	if (!project) return `${siteOrigin}/og.jpg`;
 	return `${siteOrigin}/og/${project.id}.jpg`;
+}
+
+export interface ShareImage {
+	url: string;
+	type: "image/jpeg";
+	width: number;
+	height: number;
+	alt: string;
+}
+
+export interface ShareCard {
+	id: string;
+	name: string;
+	emoji: string;
+	title: string;
+	description: Record<Locale, string>;
+	canonical: string;
+	image: ShareImage;
+	twitterCard: "summary_large_image";
+	siteName: string;
+	website: string | null;
+	repository: string;
+	archived: boolean;
+}
+
+export interface ShareIndex {
+	origin: string;
+	docs: string;
+	site: string;
+	projects: { id: string; name: string; href: string }[];
+}
+
+function shareImage(url: string, alt: string): ShareImage {
+	return {
+		url,
+		type: "image/jpeg",
+		width: 1200,
+		height: 630,
+		alt,
+	};
+}
+
+export function siteShareCard(): ShareCard {
+	return {
+		id: identity.id,
+		name: identity.title,
+		emoji: identity.emoji,
+		title: homeTitle,
+		description: {
+			en: homeDescription,
+			zh: copy.zh.heroDescription,
+		},
+		canonical: `${siteOrigin}/`,
+		image: shareImage(socialImage(), "hexly.ai mark on warm paper"),
+		twitterCard: "summary_large_image",
+		siteName: "hexly.ai",
+		website: identity.website,
+		repository: identity.repository,
+		archived: false,
+	};
+}
+
+export function projectShareCard(project: Project): ShareCard {
+	return {
+		id: project.id,
+		name: project.title,
+		emoji: project.emoji,
+		title: `${project.title} — hexly.ai`,
+		description: project.description,
+		canonical: absoluteUrl(`/logos/${project.id}`),
+		image: shareImage(socialImage(project), `${project.title} identity`),
+		twitterCard: "summary_large_image",
+		siteName: "hexly.ai",
+		website: project.website,
+		repository: project.repository,
+		archived: project.archived,
+	};
+}
+
+export function shareIndex(projects: Project[]): ShareIndex {
+	return {
+		origin: siteOrigin,
+		docs: "https://github.com/nocoo/hexly.ai/blob/main/docs/10-social-share.md",
+		site: absoluteUrl(`/api/share/${identity.id}.json`),
+		projects: projects.map((project) => ({
+			id: project.id,
+			name: project.title,
+			href: absoluteUrl(`/api/share/${project.id}.json`),
+		})),
+	};
+}
+
+export function shareFiles(
+	projects: Project[],
+): { fileName: string; source: string }[] {
+	const json = (value: unknown) => `${JSON.stringify(value)}\n`;
+	return [
+		{ fileName: "api/share.json", source: json(shareIndex(projects)) },
+		{
+			fileName: `api/share/${identity.id}.json`,
+			source: json(siteShareCard()),
+		},
+		...projects.map((project) => ({
+			fileName: `api/share/${project.id}.json`,
+			source: json(projectShareCard(project)),
+		})),
+	];
 }
 
 export function pageForPath(
@@ -116,6 +224,7 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Sitemap](${siteOrigin}/sitemap.xml)
 - [Crawler policy](${siteOrigin}/robots.txt)
 - [Project catalogue JSON](${siteOrigin}/data/projects.json)
+- [Share metadata API](${siteOrigin}/api/share.json)
 `;
 }
 
