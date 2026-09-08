@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.4.4] - 2026-09-08
+
+### Features
+
+- publish share metadata api ([39cc4b2](https://github.com/nocoo/hexly.ai/commit/39cc4b2e25b25195b3eab534245cb601cf66d02c))
+
+### Documentation
+
+- guide sites to reuse og cards ([20db6b6](https://github.com/nocoo/hexly.ai/commit/20db6b6836863c4e101eb58d081cfcbb04a039d0))
+
 ## [0.4.3] - 2026-09-08
 
 ### Features
