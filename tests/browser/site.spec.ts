@@ -237,6 +237,7 @@ test("keeps repository clicks separate and supports card links in another tab", 
 	);
 	await page.goto("/");
 	const card = page.locator('[data-project="pew"]');
+	await card.scrollIntoViewIfNeeded();
 	const repositoryPage = page.waitForEvent("popup");
 	await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
 	const repository = await repositoryPage;

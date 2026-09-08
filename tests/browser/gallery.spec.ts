@@ -1,9 +1,14 @@
 import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
 import rawProjects from "../../src/data/projects.json" with { type: "json" };
+import { filterProjects } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
 
 const projects = rawProjects as Project[];
+const ordered = filterProjects(projects, "", "all");
+const firstVisible = ordered[0];
+const frogieIndex = ordered.findIndex((project) => project.id === "frogie");
+const afterFrogie = ordered[frogieIndex + 1];
 
 for (const id of projects
 	.filter((project) => project.family)
@@ -175,17 +180,24 @@ for (const id of projects
 test("updates the identity path with pagination and browser history", async ({
 	page,
 }) => {
+	if (!afterFrogie) throw new Error("Frogie has no following identity.");
 	await page.goto("/logos/frogie");
 	await page.getByRole("button", { name: "Next identity" }).click();
-	await expect(page).toHaveURL(/\/logos\/pew$/);
-	await expect(page.locator("#identity-title")).toContainText("Pew");
+	await expect(page).toHaveURL(new RegExp(`/logos/${afterFrogie.id}$`));
+	await expect(page.locator("#identity-title")).toContainText(
+		afterFrogie.title,
+	);
 	await expect(page.locator(".previous-artwork")).toBeVisible();
 	await page.reload();
-	await expect(page.locator("#identity-title")).toContainText("Pew");
+	await expect(page.locator("#identity-title")).toContainText(
+		afterFrogie.title,
+	);
 	await page.getByRole("button", { name: "Previous identity" }).click();
 	await expect(page).toHaveURL(/\/logos\/frogie$/);
 	await page.goBack();
-	await expect(page.locator("#identity-title")).toContainText("Pew");
+	await expect(page.locator("#identity-title")).toContainText(
+		afterFrogie.title,
+	);
 });
 
 test("copies current palette colors and a reusable gallery link", async ({
@@ -364,9 +376,12 @@ test("keeps the artwork in place when descriptions wrap or projects change", asy
 test("searches the gallery, labels emoji identities, and recovers from empty or unknown selections", async ({
 	page,
 }) => {
+	if (!firstVisible) throw new Error("The catalogue has no visible projects.");
 	await page.goto("/logos/unknown-project");
-	await expect(page.locator("#identity-title")).toContainText("Frogie");
-	await expect(page).toHaveURL(/\/logos\/frogie$/);
+	await expect(page.locator("#identity-title")).toContainText(
+		firstVisible.title,
+	);
+	await expect(page).toHaveURL(new RegExp(`/logos/${firstVisible.id}$`));
 	const search = page.getByRole("searchbox", { name: "Search projects" });
 	await page
 		.getByRole("combobox", { name: "Project categories" })
