@@ -27,6 +27,7 @@ const shell = `<!doctype html><html><head>
 <meta property="og:description" content="old" />
 <meta property="og:url" content="https://hexly.ai/" />
 <meta property="og:image" content="https://hexly.ai/og.png" />
+<meta property="og:image:type" content="image/png" />
 <meta property="og:image:alt" content="old" />
 <meta name="twitter:title" content="old" />
 <meta name="twitter:description" content="old" />
@@ -80,8 +81,19 @@ describe("crawler discovery documents", () => {
 		expect(page.title).toBe("Frogie — hexly.ai");
 		expect(page.description).toBe(frogie.description.en);
 		expect(page.bodyHtml).toContain(frogie.repository);
-		expect(socialImage(frogie)).toContain("/icon.png");
+		expect(socialImage(frogie)).toBe("https://hexly.ai/og/frogie.jpg");
 		expect(absoluteUrl("/logos/pew")).toBe("https://hexly.ai/logos/pew");
+		const graph = home.jsonLd as {
+			"@graph": {
+				mainEntity: { name: string; numberOfItems: number };
+				hasPart: { name: string; numberOfItems: number };
+			}[];
+		};
+		expect(graph["@graph"][1]?.mainEntity.name).toBe("Active projects");
+		expect(graph["@graph"][1]?.hasPart.name).toBe("Archived projects");
+		expect(graph["@graph"][1]?.hasPart.numberOfItems).toBe(
+			projects.length - visible.length,
+		);
 	});
 	it("replaces the shared HTML shell with the selected page", () => {
 		const page = pageForPath("/logos/frogie", projects);
@@ -91,6 +103,9 @@ describe("crawler discovery documents", () => {
 		expect(html).toContain('href="https://hexly.ai/logos/frogie"');
 		expect(html).toContain('"@type":"SoftwareApplication"');
 		expect(html).toContain("<h1>Frogie 🐸</h1>");
+		expect(html.match(/<h1>/g)?.length).toBe(1);
+		expect(html).toContain('content="https://hexly.ai/og/frogie.jpg"');
+		expect(html).toContain('content="image/jpeg"');
 		expect(html).not.toContain("<title>old</title>");
 	});
 	it("escapes HTML in titles and unknown paths fall back to the gallery", () => {
