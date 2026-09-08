@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `5cd0790336d006f65555816fe29869d6e60ed376`
 
+## Project goal
+
+Help VPN and proxy users check destination egress IPs, HTTP latency and DNS resolvers in one place to see whether routing matches their expectations.
+
+让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、HTTP 延迟和 DNS 解析器，判断分流是否符合预期。
+
+- [中文 README](https://github.com/nocoo/snaky/blob/main/README.md) · [English README](https://github.com/nocoo/snaky/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/snaky/tree/5cd0790336d006f65555816fe29869d6e60ed376)
+- Source files: [`package.json`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/package.json), [`packages/cli/package.json`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/packages/cli/package.json), [`packages/cli/src/cli.ts`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/packages/cli/src/cli.ts), [`packages/cli/src/proxy.ts`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/packages/cli/src/proxy.ts), [`packages/cli/src/dns-leak/detect.ts`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/packages/cli/src/dns-leak/detect.ts), [`apps/macos/Package.swift`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/apps/macos/Package.swift), [`apps/macos/Sources/Snaky/SnakyApp.swift`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/apps/macos/Sources/Snaky/SnakyApp.swift), [`apps/macos/Sources/SnakyCore/Services/CLIBridge.swift`](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/apps/macos/Sources/SnakyCore/Services/CLIBridge.swift)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | CLI logic | CLI 逻辑 |
+| Node.js | Probe runtime | 探测运行时 |
+| React | Terminal UI | 终端界面 |
+| Ink | Terminal rendering | 终端渲染 |
+| Swift | macOS application | macOS 应用 |
+| SwiftUI | Menu bar UI | 菜单栏界面 |
+| AppKit | System integration | 系统集成 |
+
 ## Current logo
 
 ![Snaky source identity](../../public/logos/display/snaky-160.webp)

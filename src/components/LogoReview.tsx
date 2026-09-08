@@ -6,6 +6,7 @@ import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { LogoArchive } from "./LogoArchive";
 import { Palette } from "./Palette";
+import { ProjectOverview } from "./ProjectOverview";
 
 export function LogoReview({
 	project,
@@ -126,6 +127,8 @@ export function LogoReview({
 					</figure>
 				</div>
 			</section>
+
+			<ProjectOverview project={project} locale={locale} />
 
 			{family && (
 				<section className="direction-grid" aria-label={t.artDirection}>

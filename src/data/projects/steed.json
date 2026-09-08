@@ -7,6 +7,92 @@
 		"en": "A shared home for AI agents, their assets, and the relationships between them.",
 		"zh": "面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。"
 	},
+	"overview": {
+		"goal": {
+			"en": "Give users a shared inventory of agents, CLI tools and their bindings across hosts, so they can check status, ownership and business categories.",
+			"zh": "集中盘点多台主机上的 Agent、CLI 工具资源与绑定关系，帮助使用者核对运行状态、资源归属和业务分类。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Shared types",
+					"zh": "共享类型"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "CLI & host service",
+					"zh": "CLI 与主机服务"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Web console",
+					"zh": "Web 控制台"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Frontend build",
+					"zh": "前端构建"
+				}
+			},
+			{
+				"name": "React Flow",
+				"role": {
+					"en": "Relationship map",
+					"zh": "关系图"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "API routes",
+					"zh": "API 路由"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Application hosting",
+					"zh": "应用托管"
+				}
+			},
+			{
+				"name": "D1",
+				"role": {
+					"en": "Asset storage",
+					"zh": "资产存储"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Console access",
+					"zh": "控制台访问"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "bcab1f113b9b7cde65898bbd23705c7dac339634",
+			"sources": [
+				"package.json",
+				"apps/web/package.json",
+				"apps/web/worker/index.ts",
+				"apps/web/wrangler.toml",
+				"packages/api/src/server/router.ts",
+				"packages/worker/src/routes/bindings.ts",
+				"packages/cli/src/config/defaults.ts",
+				"packages/cli/src/service/scanner/data-source.ts",
+				"packages/cli/src/commands/init.ts"
+			]
+		}
+	},
 	"category": "ai",
 	"website": "https://steed.hexly.ai",
 	"websiteSource": "apps/web/wrangler.toml routes",
