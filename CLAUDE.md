@@ -19,7 +19,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 
 ## Project Invariants
 
-- Serve the Vite build through Workers Static Assets. There is no application server, database, authentication, or runtime GitHub dependency; `/api/live` is a static build artifact. The Worker only redirects `www.hexly.ai` to the apex and otherwise serves those assets.
+- Serve the Vite build through Workers Static Assets. There is no application server, database, authentication, or runtime GitHub dependency; `/api/live` and `/api/share` are static build artifacts. The Worker only redirects `www.hexly.ai` to the apex, canonicalizes a few legacy paths, adds CORS on share JSON, and otherwise serves those assets.
 - Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation state in both directory and gallery views.
 - Use `/logos/<project>` for identity routes and copied links. All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs on gallery pages.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.

@@ -10,7 +10,11 @@ import {
 	homeTitle,
 	llmsDocument,
 	pageForPath,
+	projectShareCard,
+	shareFiles,
+	shareIndex,
 	sitemapXml,
+	siteShareCard,
 	socialImage,
 } from "../../src/model/discovery";
 
@@ -58,6 +62,33 @@ describe("crawler discovery documents", () => {
 		expect(text).toContain(frogie.description.zh);
 		expect(text).toContain("/sitemap.xml");
 		expect(text).toContain("/data/projects.json");
+		expect(text).toContain("/api/share.json");
+	});
+	it("publishes share metadata for product sites", () => {
+		const pew = projects.find((project) => project.id === "pew");
+		if (!pew) throw new Error("Pew is required.");
+		const card = projectShareCard(pew);
+		expect(card.title).toBe("Pew — hexly.ai");
+		expect(card.image).toEqual({
+			url: "https://hexly.ai/og/pew.jpg",
+			type: "image/jpeg",
+			width: 1200,
+			height: 630,
+			alt: "Pew identity",
+		});
+		expect(card.website).toBe("https://pew.md");
+		expect(siteShareCard().id).toBe("hexly-ai");
+		expect(siteShareCard().image.url).toBe("https://hexly.ai/og.jpg");
+		const index = shareIndex(projects);
+		expect(index.projects).toHaveLength(projects.length);
+		expect(index.projects.find((entry) => entry.id === "pew")).toEqual({
+			id: "pew",
+			name: "Pew",
+			href: "https://hexly.ai/api/share/pew.json",
+		});
+		expect(shareFiles(projects).map((file) => file.fileName)).toContain(
+			"api/share/pew.json",
+		);
 	});
 	it("builds unique page metadata and readable HTML snapshots", () => {
 		const home = pageForPath("/", projects);
