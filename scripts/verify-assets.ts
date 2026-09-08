@@ -18,8 +18,15 @@ for (const project of projects) {
 		if (meta.width !== size || meta.height !== size)
 			throw new Error(`Incorrect derivative dimensions: ${project.id}/${size}`);
 	}
-	const social = await readFile(`public/og/${project.id}.jpg`);
-	if (social.byteLength > 400_000)
+	const social = await sharp(`public/og/${project.id}.jpg`).metadata();
+	if (
+		social.format !== "jpeg" ||
+		social.width !== 1200 ||
+		social.height !== 630
+	)
+		throw new Error(`Incorrect social image: ${project.id}`);
+	const socialBytes = await readFile(`public/og/${project.id}.jpg`);
+	if (socialBytes.byteLength > 400_000)
 		throw new Error(`Social image too large: ${project.id}`);
 	if (project.family) {
 		const root = `public${project.family.root}`;
@@ -87,6 +94,13 @@ for (const project of projects) {
 				);
 		}
 	}
+}
+{
+	const home = await sharp("public/og.jpg").metadata();
+	if (home.format !== "jpeg" || home.width !== 1200 || home.height !== 630)
+		throw new Error("Incorrect home social image");
+	if ((await readFile("public/og.jpg")).byteLength > 400_000)
+		throw new Error("Home social image too large");
 }
 console.info(
 	`Verified ${projects.length} source checksums, ${projects.length * 6} artwork derivatives, and all current family foregrounds and previews.`,
