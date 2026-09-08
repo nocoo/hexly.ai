@@ -42,7 +42,7 @@ test("renders active projects with local logos, redraw badges, and working desti
 		page.locator(".site-footer").getByRole("link", { name: "zheng li." }),
 	).toHaveAttribute("href", "https://lizheng.me/en/");
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-		"Small ideas.A little universe.",
+		"Small ideasA little universe.",
 	);
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
 	expect(
