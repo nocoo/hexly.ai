@@ -46,7 +46,7 @@ The package registry on this machine is filtered. Use a temporary allowed mirror
 
 ## Cloudflare Workers
 
-The application uses Workers Static Assets, with no database or server-side handler. `wrangler.jsonc` points at Vite's `dist` output and declares `hexly.ai` as the production custom domain. `/api/live` is build-generated static JSON containing the package version and Git revision.
+The application uses Workers Static Assets, with no database or server-side handler. `wrangler.jsonc` points at Vite's `dist` output and declares `hexly.ai` as the production custom domain. `/api/live` is build-generated static JSON containing the package version and Git revision. `/api/share.json` and `/api/share/<id>.json` are the same kind of artifact: Open Graph titles, bilingual descriptions, and 1200 × 630 image URLs for product sites. See [social share metadata](10-social-share.md).
 
 ```sh
 bun run build
