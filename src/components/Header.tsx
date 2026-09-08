@@ -37,6 +37,22 @@ export function Header({
 						hexly<span className="brand-domain">.ai</span>
 					</span>
 				</a>
+				<nav className="view-links" aria-label={t.views}>
+					<button
+						type="button"
+						onClick={() => onView("directory")}
+						aria-pressed={view === "directory"}
+					>
+						{t.directory}
+					</button>
+					<button
+						type="button"
+						onClick={() => onView("logos")}
+						aria-pressed={view === "logos"}
+					>
+						{t.gallery}
+					</button>
+				</nav>
 				<SurfaceLinks locale={locale} onPortfolio={home} />
 				<div className="preferences">
 					<button
@@ -59,24 +75,6 @@ export function Header({
 						<Icon name="moon" className="theme-moon" />
 					</button>
 				</div>
-			</div>
-			<div className="site-subheader">
-				<nav className="view-links shell" aria-label={t.views}>
-					<button
-						type="button"
-						onClick={() => onView("directory")}
-						aria-pressed={view === "directory"}
-					>
-						{t.directory}
-					</button>
-					<button
-						type="button"
-						onClick={() => onView("logos")}
-						aria-pressed={view === "logos"}
-					>
-						{t.gallery}
-					</button>
-				</nav>
 			</div>
 		</header>
 	);
