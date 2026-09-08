@@ -1,7 +1,7 @@
 import { copy } from "../data/copy";
 import { appVersion } from "../data/version";
 import type { Locale } from "../model/project";
-import { BrandMark } from "./Icon";
+import { FamilyBrand } from "./FamilyBrand";
 import { SurfaceLinks } from "./SurfaceLinks";
 
 export function Footer({
@@ -18,21 +18,7 @@ export function Footer({
 			<div className="site-footer-inner shell">
 				<div className="site-footer-body">
 					<div className="site-footer-identity">
-						<a
-							href="/"
-							className="brand"
-							onClick={(event) => {
-								event.preventDefault();
-								onHome();
-							}}
-							aria-label="hexly.ai"
-							lang="en"
-						>
-							<BrandMark />
-							<span>
-								hexly<span className="brand-domain">.ai</span>
-							</span>
-						</a>
+						<FamilyBrand locale={locale} />
 						<p lang="en">
 							{t.copyright.replace("{year}", String(year))}
 							{" · "}
