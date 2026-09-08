@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.4.3] - 2026-09-08
+
+### Features
+
+- redirect legacy project urls ([7ead711](https://github.com/nocoo/hexly.ai/commit/7ead71159bc4e891f8ca6cac87bf4dc5d7813eda))
+- typeset social share cards ([e95ec34](https://github.com/nocoo/hexly.ai/commit/e95ec3440bb1f5df0eeb05cd477b027021623c5e))
+
+### Fixes
+
+- drop extra h1 and label archives ([7f89cc1](https://github.com/nocoo/hexly.ai/commit/7f89cc1993abcac17e64789fc4522f0039567c2e))
+- hide header divider when menu wraps ([2fb3433](https://github.com/nocoo/hexly.ai/commit/2fb3433325e712e427f4921811b28453ffc31986))
+
+### Maintenance
+
+- shrink first-screen logos and og ([16a57b4](https://github.com/nocoo/hexly.ai/commit/16a57b43a78f76731aa5082eac99f8218b155946))
+
+### Tests
+
+- assert list labels on the home page ([d2c6ced](https://github.com/nocoo/hexly.ai/commit/d2c6ced0110b07b93ab5c84d76d3c71984a2b93e))
+
 ## [0.4.2] - 2026-09-08
 
 ### Fixes
