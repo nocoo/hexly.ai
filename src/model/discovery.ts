@@ -268,7 +268,7 @@ export function applyPageToHtml(html: string, page: DiscoveryPage): string {
 		);
 	next = next.replace(
 		/<noscript>[\s\S]*?<\/noscript>/,
-		"<noscript>hexly.ai is a collection of projects by Zheng Li. JavaScript is optional; this page already includes the heading and project list.</noscript>",
+		"<noscript><style>#root{visibility:visible}</style>hexly.ai is a collection of projects by Zheng Li. JavaScript is optional; this page already includes the heading and project list.</noscript>",
 	);
 	next = next.replace(
 		/<div id="root">[\s\S]*?<\/div>/,

@@ -81,6 +81,9 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: var(--site-topbar-offset);
 }
+#root {
+	visibility: visible;
+}
 body {
 	margin: 0;
 	min-width: 320px;
