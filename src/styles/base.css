@@ -604,13 +604,31 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	align-items: center;
 	gap: 24px;
 }
-.site-footer-identity .brand {
+.brand-wordmark {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
 	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	line-height: 1;
+	white-space: nowrap;
 	color: var(--ink);
 }
-.site-footer-identity .brand-mark {
-	width: 24px;
-	height: 27px;
+.brand-dot {
+	color: var(--accent);
+}
+.brand-grid {
+	display: grid;
+	grid-template-columns: 5px 5px;
+	gap: 3px;
+	margin-right: 13px;
+	transform: rotate(-5deg);
+}
+.brand-grid i {
+	width: 5px;
+	height: 5px;
+	background: var(--accent);
 }
 .site-footer-identity p {
 	margin: 0;
