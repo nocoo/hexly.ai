@@ -6,6 +6,10 @@
 
 - run worker first for www redirects ([34677b5](https://github.com/nocoo/hexly.ai/commit/34677b5fa13999fd4d73d2426880f813e2b9e8da))
 
+### Tests
+
+- allow small gallery scroll drift ([e969f30](https://github.com/nocoo/hexly.ai/commit/e969f30c59b4a13bfbc5c493a1014d727bb59ffe))
+
 ## [0.4.1] - 2026-09-08
 
 ### Fixes
