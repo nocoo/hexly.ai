@@ -19,9 +19,25 @@ test("renders active projects with local logos, redraw badges, and working desti
 	});
 	await page.goto("/");
 	await expect(page).toHaveTitle(/hexly.ai/);
-	await expect(page.locator(".version-pill")).toHaveText(
+	await expect(page.locator(".site-footer .site-version")).toHaveText(
 		`v${manifest.version}`,
 	);
+	const surfaces = page.getByRole("navigation", {
+		name: "Surfaces",
+		exact: true,
+	});
+	await expect(
+		surfaces.getByRole("link", { name: "Portfolio", exact: true }),
+	).toHaveAttribute("aria-current", "true");
+	await expect(
+		surfaces.getByRole("link", { name: "Play", exact: true }),
+	).toHaveAttribute("href", "https://lizheng.me/en/");
+	await expect(
+		surfaces.getByRole("link", { name: "Journal", exact: true }),
+	).toHaveAttribute("href", "https://lizheng.blog/");
+	await expect(
+		surfaces.getByRole("link", { name: "Résumé", exact: true }),
+	).toHaveAttribute("href", "https://lizheng.dev/en/");
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
 		"Small ideas.A little universe.",
 	);
@@ -116,7 +132,7 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(page.getByRole("heading", { level: 1 })).toContainText(
 		"一整个小宇宙。",
 	);
-	await page.getByRole("button", { name: "切换到深色主题" }).click();
+	await page.getByRole("button", { name: "主题：浅色；切换为深色" }).click();
 	await page.reload();
 	await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
 	await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
@@ -131,8 +147,8 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(
 		page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
 	).toHaveAttribute("href", "https://github.com/nocoo/frogie");
-	await page.getByRole("button", { name: "切换到浅色主题" }).click();
-	await page.getByRole("button", { name: "Switch to English" }).click();
+	await page.getByRole("button", { name: "主题：深色；切换为浅色" }).click();
+	await page.getByRole("button", { name: "切换为英文" }).click();
 	await page.reload();
 	await expect(page.locator("html")).toHaveAttribute("lang", "en");
 	await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
@@ -161,7 +177,10 @@ test("restores directory filters with browser back and reloads a shared identity
 		.getByRole("button", { name: "Logo gallery" })
 		.click();
 	await expect(page.locator(".picker-item")).toHaveCount(active.length);
-	await page.getByRole("link", { name: "hexly.ai", exact: true }).click();
+	await page
+		.locator(".site-header")
+		.getByRole("link", { name: "hexly.ai", exact: true })
+		.click();
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
 });
 
@@ -242,7 +261,7 @@ test.describe("system preferences", () => {
 		await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
 		await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 		await expect(
-			page.getByRole("button", { name: "切换到浅色主题" }),
+			page.getByRole("button", { name: "主题：深色；切换为浅色" }),
 		).toBeVisible();
 	});
 });
