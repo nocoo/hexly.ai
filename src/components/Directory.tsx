@@ -41,7 +41,10 @@ export function Directory({
 					<h1 id="hero-title">
 						{t.heroFirst}
 						<br />
-						<span>{t.heroSecond}</span>
+						<span className="outline-word">{t.heroSecond}</span>
+						<span className="headline-period">
+							{locale === "zh" ? "。" : "."}
+						</span>
 					</h1>
 					<p className="hero-description">{t.heroDescription}</p>
 					<div className="hero-actions">

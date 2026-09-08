@@ -39,8 +39,8 @@ export const copy = {
 		footerSurfaces: "Footer surfaces",
 		views: "Main navigation",
 		eyebrow: "AN INDEPENDENT COLLECTION BY ZHENG LI",
-		heroFirst: "Small ideas.",
-		heroSecond: "A little universe.",
+		heroFirst: "Small ideas",
+		heroSecond: "A little universe",
 		heroDescription:
 			"Useful tools, playful experiments, and things I wished existed. A growing collection of projects, made with care.",
 		explore: "Explore the collection",
@@ -172,7 +172,7 @@ export const copy = {
 		views: "主要导航",
 		eyebrow: "ZHENG LI 的个人项目集",
 		heroFirst: "一些小想法，",
-		heroSecond: "一整个小宇宙。",
+		heroSecond: "一整个小宇宙",
 		heroDescription:
 			"用得上的工具、好玩的实验，还有那些想要却找不到的东西。把一个个想法，慢慢做成自己的作品。",
 		explore: "探索项目集",
