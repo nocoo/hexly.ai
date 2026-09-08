@@ -193,5 +193,91 @@
 			"zh": "128/64 px 能辨认红帽、面孔与举起的红白球；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。 原始素材为 960 px；1024/2048 为放大导出，不代表新增细节。"
 		},
 		"method": "reference-adaptation"
+	},
+	"overview": {
+		"goal": {
+			"en": "Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection while keeping controls and progress for each ROM.",
+			"zh": "在浏览器卡带收藏盘中游玩自备的 GB、GBC、GBA 宝可梦，管理操作设置和每枚 ROM 的进度。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application and Worker logic",
+					"zh": "应用与 Worker 逻辑"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Cartridge collection and handheld controls",
+					"zh": "卡带收藏盘与掌机操作界面"
+				}
+			},
+			{
+				"name": "mGBA",
+				"role": {
+					"en": "GB, GBC, and GBA emulation core",
+					"zh": "GB、GBC 与 GBA 模拟器核心"
+				}
+			},
+			{
+				"name": "WebAssembly",
+				"role": {
+					"en": "Browser execution of the emulator",
+					"zh": "在浏览器运行模拟器"
+				}
+			},
+			{
+				"name": "IndexedDB",
+				"role": {
+					"en": "Local ROMs, battery saves, and save states",
+					"zh": "本地卡带、电池存档与即时存档"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Development server and application builds",
+					"zh": "开发服务器与应用构建"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Protected static hosting and application metadata",
+					"zh": "受访问控制保护的静态托管与应用信息"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Hosted site authentication",
+					"zh": "托管站点认证"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "461f4c3bb65480c43bdb5a8c27a054eba8da39ad",
+			"sources": [
+				"package.json",
+				"src/App.tsx",
+				"src/data/editions.json",
+				"src/lib/emulator.ts",
+				"src/lib/cartridge.ts",
+				"src/lib/storage.ts",
+				"src/lib/settings.ts",
+				"src/lib/key-bindings.ts",
+				"src/lib/input.ts",
+				"scripts/local-roms.ts",
+				"scripts/run-l3.mjs",
+				"scripts/check-no-roms.mjs",
+				"worker/index.ts",
+				"vite.config.ts",
+				"wrangler.jsonc",
+				"THIRD_PARTY_NOTICES.md"
+			]
+		}
 	}
 }

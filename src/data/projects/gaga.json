@@ -196,5 +196,82 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 183.5 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Watch and guide a virtual character through a browser playroom with animated toys, camera controls, and a daily discovery journal.",
+			"zh": "在浏览器玩耍空间中观察并引导虚拟角色探索玩具，调整视角并查看当天足迹。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Character behavior and application logic",
+					"zh": "角色行为与应用逻辑"
+				}
+			},
+			{
+				"name": "Three.js",
+				"role": {
+					"en": "Procedural playroom, character, and toys",
+					"zh": "程序化房间、角色与玩具"
+				}
+			},
+			{
+				"name": "WebGL",
+				"role": {
+					"en": "Browser 3D rendering",
+					"zh": "浏览器三维渲染"
+				}
+			},
+			{
+				"name": "Web Audio",
+				"role": {
+					"en": "Synthesized ambient music and toy sounds",
+					"zh": "合成环境音乐与玩具音效"
+				}
+			},
+			{
+				"name": "localStorage",
+				"role": {
+					"en": "Daily discovery journal",
+					"zh": "当天探索足迹"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Development and static builds",
+					"zh": "开发与静态构建"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Static application hosting",
+					"zh": "应用静态托管"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "76260f08329784eead9b30912c7692b8ea0d3d56",
+			"sources": [
+				"package.json",
+				"src/main.ts",
+				"src/ui/AppUI.ts",
+				"src/character/Explorer.ts",
+				"src/character/actions.ts",
+				"src/character/Taotao.ts",
+				"src/world/Playroom.ts",
+				"src/world/navigation.ts",
+				"src/world/toys/index.ts",
+				"src/audio/Soundscape.ts",
+				"scripts/smoke.mjs",
+				"vite.config.ts",
+				"wrangler.jsonc",
+				".github/workflows/ci.yml"
+			]
+		}
 	}
 }

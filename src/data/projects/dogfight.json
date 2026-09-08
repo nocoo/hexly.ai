@@ -183,5 +183,87 @@
 			"zh": "128/64 px 能辨认宽翼与琥珀座舱；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.",
+			"zh": "在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Flight and combat simulation",
+					"zh": "飞行与战斗模拟"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "HUD, mission flow, and settings",
+					"zh": "HUD、任务流程与设置"
+				}
+			},
+			{
+				"name": "Three.js",
+				"role": {
+					"en": "Procedural aircraft and 3D environment",
+					"zh": "程序化机体与三维环境"
+				}
+			},
+			{
+				"name": "WebGL",
+				"role": {
+					"en": "Browser 3D rendering",
+					"zh": "浏览器三维渲染"
+				}
+			},
+			{
+				"name": "Web Audio",
+				"role": {
+					"en": "Synthesized engine, weapon, and alert sounds",
+					"zh": "合成引擎、武器与警报音效"
+				}
+			},
+			{
+				"name": "localStorage",
+				"role": {
+					"en": "Highest winning score",
+					"zh": "胜利最高分"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Development and static builds",
+					"zh": "开发与静态构建"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Static game hosting",
+					"zh": "游戏静态托管"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "b5ab075a963a78516aaa351d6ca0178c64994729",
+			"sources": [
+				"package.json",
+				"src/App.tsx",
+				"src/game/simulation.ts",
+				"src/game/engine.ts",
+				"src/game/aircraft.ts",
+				"src/game/world.ts",
+				"src/game/clouds.ts",
+				"src/game/audio.ts",
+				"scripts/browser-smoke.mjs",
+				"vite.config.ts",
+				"wrangler.jsonc",
+				".github/workflows/ci.yml"
+			]
+		}
 	}
 }

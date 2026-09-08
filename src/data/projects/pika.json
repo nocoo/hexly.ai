@@ -200,5 +200,119 @@
 			"zh": "原有 2048 px 透明主体与位置保持完全一致，距圆角轮廓最近处为 26.5 px，没有像素被裁掉。细小切面与电光在 16 px 时会简化，小型 UI 与浏览器使用透明主体。"
 		},
 		"method": "retained-original"
+	},
+	"overview": {
+		"goal": {
+			"en": "Collect coding-agent sessions to search, read and organize across tools.",
+			"zh": "集中保存不同 AI 编程工具的会话，方便搜索、阅读和整理。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Shared types, parsers and API logic",
+					"zh": "共享类型、解析器与 API 逻辑"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "CLI runtime and workspace tooling",
+					"zh": "CLI 运行时与工作区工具"
+				}
+			},
+			{
+				"name": "@nocoo/base-cli",
+				"role": {
+					"en": "CLI commands and browser login",
+					"zh": "CLI 命令与浏览器登录"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "SPA development and builds",
+					"zh": "SPA 开发与构建"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Session browsing and management",
+					"zh": "会话阅读与管理界面"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP routing and middleware",
+					"zh": "HTTP 路由与中间件"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "API and static assets in one service",
+					"zh": "同一服务中的 API 与静态资源"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Session metadata and full-text search",
+					"zh": "会话元数据与全文搜索"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Compressed canonical messages and raw content",
+					"zh": "压缩后的标准化消息及原始内容"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Browser authentication",
+					"zh": "浏览器身份认证"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "02487858f8c567a7e3c780cf951abc957c54623d",
+			"sources": [
+				"package.json",
+				"packages/cli/package.json",
+				"packages/web/package.json",
+				"packages/web-worker/package.json",
+				"packages/cli/src/cli.ts",
+				"packages/cli/src/config/manager.ts",
+				"packages/cli/src/api/client.ts",
+				"packages/cli/src/commands/login.ts",
+				"packages/cli/src/commands/sync.ts",
+				"packages/cli/src/commands/sync-pipeline.ts",
+				"packages/cli/src/drivers/registry.ts",
+				"packages/core/src/constants.ts",
+				"packages/web/src/App.tsx",
+				"packages/web/src/pages/dashboard/sessions/page.tsx",
+				"packages/web/vite.config.ts",
+				"packages/web/vitest.config.ts",
+				"packages/web-worker/wrangler.toml",
+				"packages/web-worker/src/index.ts",
+				"packages/web-worker/src/middleware/access-auth.ts",
+				"packages/web-worker/src/middleware/api-key-auth.ts",
+				"packages/web-worker/src/routes/auth-cli.ts",
+				"packages/web-worker/src/api/ingest.ts",
+				"packages/web-worker/src/data/search.ts",
+				"packages/web-worker/test/e2e/global-setup.ts",
+				"scripts/migrations/001-init.sql",
+				"scripts/migrations/006-api-tokens.sql",
+				"packages/core/test/migration.test.ts",
+				".github/workflows/ci.yml",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

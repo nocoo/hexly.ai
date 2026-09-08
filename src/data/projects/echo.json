@@ -179,5 +179,88 @@
 			"zh": "128/64 px 能辨认金色罗盘外缘与红色指针；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Give network diagnostic tools IP location and network data, plus observations of DNS resolver exit addresses.",
+			"zh": "为网络诊断工具提供 IP 位置与运营商信息，并观察 DNS 解析器的出口地址。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "IP API and result collector",
+					"zh": "IP API 与结果收集服务"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Local API runtime and workspaces",
+					"zh": "本地 API 运行时与工作区管理"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "IP lookup HTTP routes",
+					"zh": "IP 查询 HTTP 路由"
+				}
+			},
+			{
+				"name": "Vercel",
+				"role": {
+					"en": "IP service hosting",
+					"zh": "IP 服务托管"
+				}
+			},
+			{
+				"name": "Go",
+				"role": {
+					"en": "Authoritative DNS probe",
+					"zh": "权威 DNS 探针"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "DNS result collection API",
+					"zh": "DNS 结果收集 API"
+				}
+			},
+			{
+				"name": "Cloudflare KV",
+				"role": {
+					"en": "Short-lived resolver observations",
+					"zh": "短期保存解析器观察记录"
+				}
+			},
+			{
+				"name": "Vitest",
+				"role": {
+					"en": "IP service unit and HTTP tests",
+					"zh": "IP 服务单元与 HTTP 测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "b7373ec8e5d09a59847b3b9aa04f73526a019a41",
+			"sources": [
+				"package.json",
+				"packages/ip-service/package.json",
+				"packages/ip-service/src/server.ts",
+				"packages/ip-service/src/services/ipLookup.ts",
+				"packages/ip-service/src/services/selectBest.ts",
+				"packages/ip-service/vercel.json",
+				"packages/collector/package.json",
+				"packages/collector/src/index.ts",
+				"packages/collector/wrangler.toml",
+				"packages/dns-probe/main.go",
+				"packages/dns-probe/go.mod",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

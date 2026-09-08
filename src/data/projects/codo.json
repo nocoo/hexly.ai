@@ -187,5 +187,74 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 149.94 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Deliver local script and Claude Code events as Mac desktop banners, keep project and session history, and optionally summarize notifications with an AI Guardian.",
+			"zh": "将本地脚本和 Claude Code 事件显示为 Mac 桌面横幅，保存项目与会话记录，并按需使用 AI Guardian 整理通知。"
+		},
+		"techStack": [
+			{
+				"name": "Swift / SwiftUI",
+				"role": {
+					"en": "Menu bar app and Dashboard",
+					"zh": "菜单栏应用与控制台"
+				}
+			},
+			{
+				"name": "AppKit",
+				"role": {
+					"en": "Custom desktop banners",
+					"zh": "桌面自绘横幅"
+				}
+			},
+			{
+				"name": "TypeScript / Bun",
+				"role": {
+					"en": "CLI and Guardian process",
+					"zh": "命令行与 Guardian 进程"
+				}
+			},
+			{
+				"name": "Unix sockets",
+				"role": {
+					"en": "Local event delivery",
+					"zh": "本地事件传输"
+				}
+			},
+			{
+				"name": "SQLite / Keychain",
+				"role": {
+					"en": "Event storage and API keys",
+					"zh": "事件存储与 API key"
+				}
+			},
+			{
+				"name": "Anthropic / OpenAI SDKs",
+				"role": {
+					"en": "Optional notification summaries",
+					"zh": "可选的通知摘要"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a",
+			"sources": [
+				"Package.swift",
+				"cli/codo.ts",
+				"guardian/package.json",
+				"guardian/classifier.ts",
+				"guardian/llm.ts",
+				"Sources/Codo/AppDelegate.swift",
+				"Sources/Codo/BannerProvider.swift",
+				"Sources/Codo/GuardianPathResolver.swift",
+				"Sources/CodoCore/EventStore.swift",
+				"Sources/CodoCore/GuardianSettings.swift",
+				"hooks/claude-hook.sh",
+				"scripts/build.sh",
+				"scripts/install.sh"
+			]
+		}
 	}
 }

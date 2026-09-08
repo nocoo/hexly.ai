@@ -197,5 +197,80 @@
 			"zh": "128/64 px 能辨认青瓷键帽与象牙色中字符号；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Explore language-model Chinese pinyin conversion, text polishing, and chat in a browser using configurable OpenAI-compatible model services.",
+			"zh": "在浏览器中使用可配置的 OpenAI 兼容模型服务，试验中文拼音转换、文本润色和对话。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Bun",
+				"role": {
+					"en": "API runtime and workspaces",
+					"zh": "API 运行时与工作区"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "Chat, pinyin, polishing and settings endpoints",
+					"zh": "对话、拼音、润色与设置接口"
+				}
+			},
+			{
+				"name": "AI SDK / OpenAI Compatible",
+				"role": {
+					"en": "Streaming model calls",
+					"zh": "模型流式调用"
+				}
+			},
+			{
+				"name": "React / Vite",
+				"role": {
+					"en": "Browser interface and frontend builds",
+					"zh": "浏览器界面与前端构建"
+				}
+			},
+			{
+				"name": "Tailwind CSS / Radix UI",
+				"role": {
+					"en": "UI styles and components",
+					"zh": "界面样式与组件"
+				}
+			},
+			{
+				"name": "bun:sqlite",
+				"role": {
+					"en": "Local provider configuration",
+					"zh": "本地模型服务配置"
+				}
+			},
+			{
+				"name": "Vitest",
+				"role": {
+					"en": "Segmenter and utility tests",
+					"zh": "分词器与工具函数测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "f4a9e9464d64184b793240adff182e08c04997e1",
+			"sources": [
+				"package.json",
+				"apps/api/package.json",
+				"apps/api/src/index.ts",
+				"apps/api/src/pinyin-segmenter.ts",
+				"apps/api/src/provider.ts",
+				"apps/api/src/db.ts",
+				"apps/api/src/routes/settings.ts",
+				"apps/web/package.json",
+				"apps/web/src/lib/api.ts",
+				"apps/web/src/App.tsx",
+				"apps/web/src/components/streaming-card.tsx",
+				"apps/web/src/hooks/use-streaming-predict.ts"
+			]
+		}
 	}
 }

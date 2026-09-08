@@ -13,6 +13,27 @@
 - Profile revision: `880737d35ff74923cc0c96873fccf9e09ea5e569`
 - Repository revision inspected: `15b4d902c71ec6184c7220f0fb50a29ca87e080d`
 
+## Project goal
+
+Run locally installed coding CLIs through one web console and HTTP API, with streaming output and a record of their sessions.
+
+通过同一个网页控制台与 HTTP 接口调用本机 coding CLI，查看流式输出并保存会话记录。
+
+- [中文 README](https://github.com/nocoo/meowth/blob/main/README.md) · [English README](https://github.com/nocoo/meowth/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/meowth/tree/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7)
+- Source files: [`package.json`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/package.json), [`daemon/go.mod`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/go.mod), [`daemon/cmd/meowthd/main.go`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/cmd/meowthd/main.go), [`daemon/internal/agentfactory/agentfactory.go`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/internal/agentfactory/agentfactory.go), [`daemon/internal/server/handlers/exec.go`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/internal/server/handlers/exec.go), [`daemon/internal/home/home.go`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/internal/home/home.go), [`daemon/internal/remoteaccess/remoteaccess.go`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/internal/remoteaccess/remoteaccess.go), [`daemon/internal/store/secret.go`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/daemon/internal/store/secret.go), [`apps/dashboard/package.json`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/apps/dashboard/package.json), [`apps/dashboard/vite.config.ts`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/apps/dashboard/vite.config.ts), [`apps/dashboard/src/models/chat.ts`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/apps/dashboard/src/models/chat.ts), [`apps/dashboard/src/lib/localStorage.ts`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/apps/dashboard/src/lib/localStorage.ts), [`scripts/prepare-dashboard-embed.sh`](https://github.com/nocoo/meowth/blob/803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7/scripts/prepare-dashboard-embed.sh)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Go / Chi | Daemon, HTTP API and CLI subprocesses | daemon、HTTP 接口与 CLI 子进程 |
+| SQLite / sqlc | Local tokens, sessions and events | 本地 token、会话与事件 |
+| React / TypeScript / Vite | Embedded dashboard | 内嵌 Dashboard |
+| Basalt / Tailwind CSS | Components, themes and styling | 组件、主题与样式 |
+| React Markdown / remark-gfm | Chat and session content | 聊天与会话内容展示 |
+| pnpm / Turborepo | Frontend workspaces and builds | 前端工作区与构建 |
+
 ## Current logo
 
 ![Meowth source identity](../../public/logos/display/meowth-160.webp)

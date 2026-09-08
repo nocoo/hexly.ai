@@ -13,6 +13,27 @@
 - Profile revision: `880737d35ff74923cc0c96873fccf9e09ea5e569`
 - Repository revision inspected: `d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c`
 
+## Project goal
+
+Turn an HTTP API definition in clip.yaml into an editable command-line client, with credentials stored separately for each tool.
+
+将 clip.yaml 中的 HTTP API 定义转换为可编辑的命令行客户端，并按工具分别管理凭据。
+
+- [中文 README](https://github.com/nocoo/clip/blob/main/README.md) · [English README](https://github.com/nocoo/clip/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/clip/tree/071d10dd71f913814a47a68047265883642c851c)
+- Source files: [`package.json`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/package.json), [`packages/cli/package.json`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/package.json), [`packages/cli/src/index.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/index.ts), [`packages/cli/src/schema/validator.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/schema/validator.ts), [`packages/cli/src/codegen/generator.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/codegen/generator.ts), [`packages/cli/src/codegen/templates.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/codegen/templates.ts), [`packages/cli/src/auth/storage.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/auth/storage.ts), [`packages/cli/src/commands/auth.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/commands/auth.ts), [`packages/cli/src/commands/install.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/commands/install.ts), [`packages/cli/src/commands/test.ts`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/cli/src/commands/test.ts), [`packages/web/package.json`](https://github.com/nocoo/clip/blob/071d10dd71f913814a47a68047265883642c851c/packages/web/package.json)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Bun / TypeScript | CLI runtime and code generation | CLI 运行环境与代码生成 |
+| commander | Generated commands and arguments | 生成的命令与参数解析 |
+| Zod / yaml | Schema parsing and validation | Schema 解析与校验 |
+| @nocoo/base-cli | Browser login and local callback | 浏览器登录与本机回调 |
+| Hono | Example and test APIs | 示例与测试 API |
+| Astro | Static documentation site | 静态文档站 |
+
 ## Current logo
 
 ![clip source identity](../../public/logos/display/clip-160.webp)

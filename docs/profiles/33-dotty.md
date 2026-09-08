@@ -13,6 +13,30 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `1becb8026f44a20d9827cd5b4f100b6fb09836fe`
 
+## Project goal
+
+Reuse dashboard layouts, controls, and charts to build data interfaces with a cool monochrome visual style.
+
+复用看板布局、控件和图表，搭建采用冷色灰阶风格的数据界面。
+
+- [中文 README](https://github.com/nocoo/dotty/blob/main/README.md) · [English README](https://github.com/nocoo/dotty/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/dotty/tree/1becb8026f44a20d9827cd5b4f100b6fb09836fe)
+- Source files: [`package.json`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/package.json), [`src/App.tsx`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/App.tsx), [`src/index.css`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/index.css), [`src/data/mock.ts`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/data/mock.ts), [`src/components/PixelBarChart.tsx`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/components/PixelBarChart.tsx), [`src/pages/NetworkOpsDashboardPage.tsx`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/pages/NetworkOpsDashboardPage.tsx), [`src/pages/LoginPage.tsx`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/pages/LoginPage.tsx), [`src/viewmodels/usePortfolioViewModel.ts`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/viewmodels/usePortfolioViewModel.ts), [`src/i18n/index.ts`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/src/i18n/index.ts), [`vite.config.ts`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/vite.config.ts), [`wrangler.toml`](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/wrangler.toml)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Interface and viewmodel logic | 界面与 viewmodel 逻辑 |
+| React | Dashboard examples | 看板示例 |
+| Vite | SPA development and build | SPA 开发与构建 |
+| React Router | Client-side routes | 客户端路由 |
+| Tailwind CSS | Themes and styling | 主题与样式 |
+| Radix UI | Interactive controls | 交互控件 |
+| Recharts | Data visualization | 数据可视化 |
+| i18next | Chinese and English interface | 中英文界面 |
+| Cloudflare Workers | Static asset hosting | 静态资源托管 |
+
 ## Current logo
 
 ![Dotty source identity](../../public/logos/display/dotty-160.webp)

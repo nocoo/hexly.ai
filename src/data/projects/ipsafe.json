@@ -179,5 +179,62 @@
 			"zh": "128/64 px 能辨认深色测试仪与象牙色线圈；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Check that a configured URL returns a successful HTTP response and optionally matches response content before starting a command, with project or user configuration and reusable Node.js APIs.",
+			"zh": "在启动命令前，确认指定 URL 返回成功响应并按需匹配内容；支持项目或用户配置，以及可复用的 Node.js API。"
+		},
+		"techStack": [
+			{
+				"name": "JavaScript / Node.js",
+				"role": {
+					"en": "CLI and CommonJS API",
+					"zh": "命令行与 CommonJS API"
+				}
+			},
+			{
+				"name": "node:http / node:https",
+				"role": {
+					"en": "Pre-execution HTTP checks",
+					"zh": "执行前 HTTP 检查"
+				}
+			},
+			{
+				"name": "node:child_process",
+				"role": {
+					"en": "Command execution and output",
+					"zh": "命令执行与输出"
+				}
+			},
+			{
+				"name": "JSON / node:fs",
+				"role": {
+					"en": "Project and user configuration",
+					"zh": "项目与用户配置"
+				}
+			},
+			{
+				"name": "Vitest",
+				"role": {
+					"en": "Unit and simulated CLI tests",
+					"zh": "单元与 CLI 模拟测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "d8a28afb9ed85d4f3d1627738415a863f82b3629",
+			"sources": [
+				"package.json",
+				"index.js",
+				"bin/ipsafe.js",
+				"lib/ipsafe.js",
+				"lib/check-safe.js",
+				"integrations/claude-code.js",
+				"ipsafe.config.json",
+				"vitest.config.ts"
+			]
+		}
 	}
 }

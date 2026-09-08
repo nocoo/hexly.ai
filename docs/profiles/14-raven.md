@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `c59fe3ad5a0aea2e849b2b9ee00be189091c9faf`
 
+## Project goal
+
+Connect compatible clients to GitHub Copilot and custom model upstreams through a local API proxy, with request analytics and live diagnostics.
+
+通过本机 API 代理将兼容客户端接入 GitHub Copilot 与自定义模型上游，并查看调用统计和实时诊断信息。
+
+- [中文 README](https://github.com/nocoo/raven/blob/main/README.md) · [English README](https://github.com/nocoo/raven/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/raven/tree/a668dbf4fa318429e34686f7bf86731ca1494fd4)
+- Source files: [`package.json`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/package.json), [`packages/proxy/package.json`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/package.json), [`packages/proxy/src/index.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/index.ts), [`packages/proxy/src/app.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/app.ts), [`packages/proxy/src/core/router.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/core/router.ts), [`packages/proxy/src/composition/strategy-registry.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/composition/strategy-registry.ts), [`packages/proxy/src/middleware.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/middleware.ts), [`packages/proxy/src/lib/token.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/lib/token.ts), [`packages/proxy/src/lib/app-dirs.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/lib/app-dirs.ts), [`packages/proxy/src/db/providers.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/proxy/src/db/providers.ts), [`packages/dashboard/package.json`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/dashboard/package.json), [`packages/dashboard/src/auth.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/dashboard/src/auth.ts), [`packages/dashboard/src/lib/proxy.ts`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/dashboard/src/lib/proxy.ts), [`packages/dashboard/src/components/layout/sidebar.tsx`](https://github.com/nocoo/raven/blob/a668dbf4fa318429e34686f7bf86731ca1494fd4/packages/dashboard/src/components/layout/sidebar.tsx)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Bun / TypeScript / Hono | Proxy runtime, HTTP routing and SSE | 代理运行环境、HTTP 路由与 SSE |
+| SQLite | Request records, keys, settings and providers | 请求记录、密钥、设置与 provider |
+| Next.js / React | Dashboard and server routes | Dashboard 与服务端接口 |
+| Basalt / Tailwind CSS | Components and styling | 组件与样式 |
+| SWR / Recharts | Data updates and analytics charts | 数据更新与统计图表 |
+| NextAuth / Google OAuth | Optional dashboard login | 可选的 Dashboard 登录 |
+| Zod / gpt-tokenizer | Validation and token estimates | 校验与 token 估算 |
+| socks / Tavily | Optional outbound proxy and web search | 可选出站代理与网络搜索 |
+
 ## Current logo
 
 ![Raven source identity](../../public/logos/display/raven-160.webp)

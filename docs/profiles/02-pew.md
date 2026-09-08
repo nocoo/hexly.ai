@@ -13,6 +13,34 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b`
 
+## Project goal
+
+Understand AI coding-tool usage through token and session statistics, with analysis by time, model, device, and project.
+
+汇总 AI 编程工具的 token 与会话统计，按时间、模型、设备和项目分析使用情况。
+
+- [中文 README](https://github.com/nocoo/pew/blob/main/README.md) · [English README](https://github.com/nocoo/pew/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/pew/tree/6eeccb962fe41a03e43c543592900673b9795211)
+- Source files: [`package.json`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/package.json), [`packages/cli/package.json`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/package.json), [`packages/web/package.json`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/package.json), [`packages/core/src/types.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/core/src/types.ts), [`packages/cli/src/bin.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/src/bin.ts), [`packages/cli/src/drivers/registry.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/src/drivers/registry.ts), [`packages/cli/src/commands/session-sync-helpers.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/src/commands/session-sync-helpers.ts), [`packages/cli/src/utils/hash-project-ref.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/src/utils/hash-project-ref.ts), [`packages/cli/src/commands/login.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/src/commands/login.ts), [`packages/cli/src/notifier/registry.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/cli/src/notifier/registry.ts), [`packages/web/src/lib/navigation.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/src/lib/navigation.ts), [`packages/web/src/lib/pricing.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/src/lib/pricing.ts), [`packages/web/src/lib/invite.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/src/lib/invite.ts), [`packages/web/src/lib/db.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/src/lib/db.ts), [`packages/web/src/lib/r2.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/src/lib/r2.ts), [`packages/web/src/auth.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/web/src/auth.ts), [`packages/worker/wrangler.toml`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/worker/wrangler.toml), [`packages/worker-read/wrangler.toml`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/worker-read/wrangler.toml), [`packages/worker-read/src/sync/orchestrator.ts`](https://github.com/nocoo/pew/blob/6eeccb962fe41a03e43c543592900673b9795211/packages/worker-read/src/sync/orchestrator.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | CLI, application, and shared data types | CLI、应用与共享数据类型 |
+| Node.js | Published CLI runtime | 已发布 CLI 的运行环境 |
+| Bun | Workspaces, collection runtime, and tests | 工作区、采集运行环境与测试 |
+| Next.js | Dashboard and application APIs | 仪表盘与应用 API |
+| React | Interactive analytics pages | 交互分析页面 |
+| Basalt | Reusable interface components | 界面组件 |
+| Tailwind CSS | Interface styling | 界面样式 |
+| Recharts | Usage charts | 用量图表 |
+| Auth.js | Google sign-in and sessions | Google 登录与会话 |
+| Cloudflare Workers | Ingestion, queries, and pricing synchronization | 数据写入、查询与价格同步 |
+| Cloudflare D1 | Usage and application data | 用量与应用数据 |
+| Cloudflare KV | Query and model-price caches | 查询与模型价格缓存 |
+| Cloudflare R2 | Team and organization logo storage | 团队与组织 Logo 存储 |
+
 ## Current logo
 
 ![Pew source identity](../../public/logos/display/pew-160.webp)

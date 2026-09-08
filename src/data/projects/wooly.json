@@ -200,5 +200,91 @@
 			"en": "At 32 px, the cream ears, dark eye, and pink tongue carry the identity. The wink and tiny fleece facets simplify at 16 px; sidebar and browser marks use the transparent foreground.",
 			"zh": "32 像素时，奶油色耳朵、深色眼睛和粉色舌头构成识别重点；16 像素时眨眼与细小羊毛切面会简化，侧栏和浏览器使用透明前景。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Keep household benefit accounts, usage cycles and redemption records together so family members can check remaining allowances, expiry and points.",
+			"zh": "集中记录家庭权益账户、使用周期与核销记录，方便核对剩余额度、到期时间和积分。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Benefit models and application logic",
+					"zh": "权益模型与应用逻辑"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Web pages and server-side data proxy",
+					"zh": "Web 页面与服务端数据代理"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Household dashboard and forms",
+					"zh": "家庭权益看板与表单"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styles",
+					"zh": "界面样式"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Google sign-in and sessions",
+					"zh": "Google 登录与会话"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Dataset API and validation",
+					"zh": "数据集 API 与校验"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Shared household data storage",
+					"zh": "共享家庭数据存储"
+				}
+			},
+			{
+				"name": "Vitest",
+				"role": {
+					"en": "Models, ViewModels, routes and Worker tests",
+					"zh": "模型、视图模型、路由和 Worker 测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "611b99cc868dc3e90ff5b20f54785d0d858d10ed",
+			"sources": [
+				"package.json",
+				"worker/package.json",
+				"src/models/types.ts",
+				"src/models/cycle.ts",
+				"src/models/points.ts",
+				"src/viewmodels/usePointsDetailViewModel.ts",
+				"src/auth.ts",
+				"src/hooks/use-dataset-context.tsx",
+				"src/services/worker-client.ts",
+				"worker/src/routes/dataset.ts",
+				"worker/src/db/operations.ts",
+				"worker/wrangler.toml.example",
+				"scripts/dev.sh",
+				"e2e/bdd/app.spec.ts",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

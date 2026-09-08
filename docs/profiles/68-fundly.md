@@ -13,6 +13,33 @@
 - Profile revision: `880737d35ff74923cc0c96873fccf9e09ea5e569`
 - Repository revision inspected: `6de762074e00011009f7604bbeeb7c0b04923c00`
 
+## Project goal
+
+Collect fund and market data for private research into Chinese funds, ETFs, stocks, and macro conditions.
+
+采集基金与市场数据，用于研究中国公募基金、ETF、股票与宏观环境。
+
+- [中文 README](https://github.com/nocoo/fundly/blob/main/README.md) · [English README](https://github.com/nocoo/fundly/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/fundly/tree/6de762074e00011009f7604bbeeb7c0b04923c00)
+- Source files: [`package.json`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/package.json), [`apps/web/package.json`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/package.json), [`apps/worker/package.json`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/worker/package.json), [`apps/web/src/lib/navigation.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/src/lib/navigation.ts), [`apps/worker/scripts/app.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/worker/scripts/app.ts), [`apps/worker/scripts/serve.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/worker/scripts/serve.ts), [`apps/worker/src/lib/auth-config.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/worker/src/lib/auth-config.ts), [`apps/worker/src/lib/auth-routes.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/worker/src/lib/auth-routes.ts), [`apps/worker/src/lib/selection-service.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/worker/src/lib/selection-service.ts), [`src/db/repo.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/src/db/repo.ts), [`src/metrics/screen-4433.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/src/metrics/screen-4433.ts), [`src/metrics/select-score.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/src/metrics/select-score.ts), [`src/metrics/selection-calc.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/src/metrics/selection-calc.ts), [`scripts/refresh-select.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/scripts/refresh-select.ts), [`scripts/fetch-macro.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/scripts/fetch-macro.ts), [`scripts/fetch-selection.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/scripts/fetch-selection.ts), [`apps/web/vite.config.ts`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/vite.config.ts), [`Dockerfile`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/Dockerfile), [`railway.toml`](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/railway.toml)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Collection, calculations, and application logic | 采集、计算与应用逻辑 |
+| Bun | Collection scripts, HTTP server, and tests | 采集脚本、HTTP 服务与测试 |
+| SQLite | Local market data and computed metrics | 本地市场数据与计算指标 |
+| React | Research pages and charts | 研究页面与图表 |
+| Vite | SPA development and build | SPA 开发与构建 |
+| React Router | Research-page navigation | 研究页面导航 |
+| Basalt | Interface components | 界面组件 |
+| Tailwind CSS | Interface styling | 界面样式 |
+| Recharts | Market and product charts | 市场与产品图表 |
+| Hono | Market, authentication, and backup APIs | 行情、认证与备份 API |
+| jose | OAuth state and session tokens | OAuth 状态与会话令牌 |
+| Railway | Bun hosting with a persistent data volume | Bun 服务与持久数据卷 |
+
 ## Current logo
 
 ![Fundly source identity](../../public/logos/display/fundly-160.webp)

@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `f4a9e9464d64184b793240adff182e08c04997e1`
 
+## Project goal
+
+Explore language-model Chinese pinyin conversion, text polishing, and chat in a browser using configurable OpenAI-compatible model services.
+
+在浏览器中使用可配置的 OpenAI 兼容模型服务，试验中文拼音转换、文本润色和对话。
+
+- [中文 README](https://github.com/nocoo/flow/blob/main/README.md) · [English README](https://github.com/nocoo/flow/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/flow/tree/f4a9e9464d64184b793240adff182e08c04997e1)
+- Source files: [`package.json`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/package.json), [`apps/api/package.json`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/api/package.json), [`apps/api/src/index.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/api/src/index.ts), [`apps/api/src/pinyin-segmenter.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/api/src/pinyin-segmenter.ts), [`apps/api/src/provider.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/api/src/provider.ts), [`apps/api/src/db.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/api/src/db.ts), [`apps/api/src/routes/settings.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/api/src/routes/settings.ts), [`apps/web/package.json`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/web/package.json), [`apps/web/src/lib/api.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/web/src/lib/api.ts), [`apps/web/src/App.tsx`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/web/src/App.tsx), [`apps/web/src/components/streaming-card.tsx`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/web/src/components/streaming-card.tsx), [`apps/web/src/hooks/use-streaming-predict.ts`](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/apps/web/src/hooks/use-streaming-predict.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript / Bun | API runtime and workspaces | API 运行时与工作区 |
+| Hono | Chat, pinyin, polishing and settings endpoints | 对话、拼音、润色与设置接口 |
+| AI SDK / OpenAI Compatible | Streaming model calls | 模型流式调用 |
+| React / Vite | Browser interface and frontend builds | 浏览器界面与前端构建 |
+| Tailwind CSS / Radix UI | UI styles and components | 界面样式与组件 |
+| bun:sqlite | Local provider configuration | 本地模型服务配置 |
+| Vitest | Segmenter and utility tests | 分词器与工具函数测试 |
+
 ## Current logo
 
 ![Flow source identity](../../public/logos/display/flow-160.webp)

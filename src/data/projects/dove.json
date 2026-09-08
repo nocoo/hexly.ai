@@ -200,5 +200,107 @@
 			"en": "The violet silhouette and pink blossom arc remain distinct at 32 px. At 16 px small petals and feather facets merge; use the transparent foreground for browser and sidebar marks.",
 			"zh": "32 像素时紫色轮廓与粉色花枝弧线仍能区分；16 像素时细花瓣与羽毛碎片会合并。浏览器和侧栏标记使用透明前景。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.",
+			"zh": "为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application and sending logic",
+					"zh": "应用与发送逻辑"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "API runtime and static asset hosting",
+					"zh": "API 运行时与静态资源托管"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "Dashboard API and webhook routes",
+					"zh": "管理 API 与 Webhook 路由"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Projects, templates, logs and sending state",
+					"zh": "项目、模板、日志与发送状态存储"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Email management dashboard",
+					"zh": "邮件管理界面"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Dashboard build",
+					"zh": "管理界面构建"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Administrator authentication",
+					"zh": "管理员身份验证"
+				}
+			},
+			{
+				"name": "Resend",
+				"role": {
+					"en": "API email sending backend",
+					"zh": "通过 API 发送邮件"
+				}
+			},
+			{
+				"name": "Cloudflare Email Routing",
+				"role": {
+					"en": "Email sending through the Worker binding",
+					"zh": "通过 Worker 绑定发送邮件"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Dependencies, scripts and HTTP tests",
+					"zh": "依赖、脚本与 HTTP 测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "a010ab2daf92fd3cda45dee41a18132f444d1780",
+			"sources": [
+				"package.json",
+				"vite.config.ts",
+				"wrangler.toml",
+				"src/server/index.ts",
+				"src/server/middleware/auth-session.ts",
+				"src/server/routes/webhook.ts",
+				"src/server/routes/templates.ts",
+				"src/server/routes/providers.ts",
+				"src/server/lib/email/provider.ts",
+				"src/lib/email/providers/resend.ts",
+				"src/lib/email/providers/cloudflare.ts",
+				"src/client/routes/projects/$id.tsx",
+				"src/server/schema.sql",
+				"scripts/setup-ci-env.ts",
+				"scripts/run-e2e.ts",
+				"playwright.config.ts",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

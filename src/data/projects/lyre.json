@@ -196,5 +196,136 @@
 			"en": "The eye, beak, and warm silhouette remain legible at sidebar size. Individual crest facets simplify at 16 px; use the transparent original for browser and menu bar marks.",
 			"zh": "侧栏尺寸仍能辨认眼睛、鸟喙和暖色轮廓；16 像素时羽冠碎片会简化，浏览器与菜单栏标识使用透明原图。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Manage recordings, transcribe speech and follow the text during audio playback.",
+			"zh": "管理录音、转写文字，并在回听时查看对应内容。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Bun",
+				"role": {
+					"en": "Web and API logic, workspaces and development scripts",
+					"zh": "Web 与 API 逻辑、工作区与开发脚本"
+				}
+			},
+			{
+				"name": "Vite / React / Basalt",
+				"role": {
+					"en": "Recording management, playback and transcript interface",
+					"zh": "录音管理、播放与转写界面"
+				}
+			},
+			{
+				"name": "Hono / Cloudflare Workers",
+				"role": {
+					"en": "API, static assets and scheduled job polling",
+					"zh": "API、静态资源与定时任务轮询"
+				}
+			},
+			{
+				"name": "Cloudflare D1 / Drizzle ORM",
+				"role": {
+					"en": "Recording metadata, transcripts, jobs and settings",
+					"zh": "录音资料、转写文字、任务与设置"
+				}
+			},
+			{
+				"name": "Aliyun OSS",
+				"role": {
+					"en": "Audio files and raw transcription results",
+					"zh": "音频文件与原始转写结果"
+				}
+			},
+			{
+				"name": "Aliyun DashScope",
+				"role": {
+					"en": "Asynchronous speech transcription",
+					"zh": "异步语音转写"
+				}
+			},
+			{
+				"name": "Vercel AI SDK / @nocoo/next-ai",
+				"role": {
+					"en": "Configurable model providers for summaries",
+					"zh": "可配置模型供应商的摘要生成"
+				}
+			},
+			{
+				"name": "Swift / SwiftUI",
+				"role": {
+					"en": "Native macOS menu bar application",
+					"zh": "原生 macOS 菜单栏应用"
+				}
+			},
+			{
+				"name": "ScreenCaptureKit / AVFoundation",
+				"role": {
+					"en": "System and microphone audio capture and encoding",
+					"zh": "系统与麦克风声音采集、编码"
+				}
+			},
+			{
+				"name": "Cloudflare Access / jose",
+				"role": {
+					"en": "Browser identity verification",
+					"zh": "浏览器身份校验"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e",
+			"sources": [
+				"package.json",
+				"bun.lock",
+				"apps/web/package.json",
+				"apps/web/vite.config.ts",
+				"apps/web/src/components/upload-dialog.tsx",
+				"apps/web/src/pages/recordings-list.tsx",
+				"apps/web/src/pages/recording-detail.tsx",
+				"apps/web/src/pages/settings.tsx",
+				"apps/api/package.json",
+				"apps/api/wrangler.toml",
+				"apps/api/src/index.ts",
+				"apps/api/src/lib/env.ts",
+				"apps/api/src/middleware/access-auth.ts",
+				"apps/api/src/middleware/bearer-auth.ts",
+				"apps/api/src/routes/recordings.ts",
+				"apps/api/src/routes/backy.ts",
+				"packages/api/package.json",
+				"packages/api/src/handlers/upload.ts",
+				"packages/api/src/handlers/recordings.ts",
+				"packages/api/src/handlers/jobs.ts",
+				"packages/api/src/handlers/settings-oss.ts",
+				"packages/api/src/handlers/settings-asr.ts",
+				"packages/api/src/handlers/settings-tokens.ts",
+				"packages/api/src/handlers/settings-backup.ts",
+				"packages/api/src/services/asr-provider.ts",
+				"packages/api/src/services/asr.ts",
+				"packages/api/src/services/job-processor.ts",
+				"packages/api/src/services/ai.ts",
+				"packages/api/src/services/backup.ts",
+				"packages/api/migrations/README.md",
+				"apps/macos/project.yml",
+				"apps/macos/Lyre/LyreApp.swift",
+				"apps/macos/Lyre/Audio/RecordingManager.swift",
+				"apps/macos/Lyre/Audio/AudioEncoder.swift",
+				"apps/macos/Lyre/Network/UploadManager.swift",
+				"apps/macos/Lyre/Config/AppConfig.swift",
+				"apps/macos/Lyre/Meeting/MeetingDetectionSettings.swift",
+				"apps/macos/LyreTests/RecordingE2ETests.swift",
+				"scripts/build-dmg.sh",
+				"scripts/run-e2e.ts",
+				"scripts/pre-push.ts",
+				"e2e/schema.sql",
+				"e2e/api/asr-multitrack.test.ts",
+				"playwright.config.ts",
+				".github/workflows/ci.yml",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

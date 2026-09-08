@@ -13,6 +13,27 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a`
 
+## Project goal
+
+Deliver local script and Claude Code events as Mac desktop banners, keep project and session history, and optionally summarize notifications with an AI Guardian.
+
+将本地脚本和 Claude Code 事件显示为 Mac 桌面横幅，保存项目与会话记录，并按需使用 AI Guardian 整理通知。
+
+- [中文 README](https://github.com/nocoo/codo/blob/main/README.md) · [English README](https://github.com/nocoo/codo/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/codo/tree/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a)
+- Source files: [`Package.swift`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/Package.swift), [`cli/codo.ts`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/cli/codo.ts), [`guardian/package.json`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/guardian/package.json), [`guardian/classifier.ts`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/guardian/classifier.ts), [`guardian/llm.ts`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/guardian/llm.ts), [`Sources/Codo/AppDelegate.swift`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/Sources/Codo/AppDelegate.swift), [`Sources/Codo/BannerProvider.swift`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/Sources/Codo/BannerProvider.swift), [`Sources/Codo/GuardianPathResolver.swift`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/Sources/Codo/GuardianPathResolver.swift), [`Sources/CodoCore/EventStore.swift`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/Sources/CodoCore/EventStore.swift), [`Sources/CodoCore/GuardianSettings.swift`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/Sources/CodoCore/GuardianSettings.swift), [`hooks/claude-hook.sh`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/hooks/claude-hook.sh), [`scripts/build.sh`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/scripts/build.sh), [`scripts/install.sh`](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/scripts/install.sh)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Swift / SwiftUI | Menu bar app and Dashboard | 菜单栏应用与控制台 |
+| AppKit | Custom desktop banners | 桌面自绘横幅 |
+| TypeScript / Bun | CLI and Guardian process | 命令行与 Guardian 进程 |
+| Unix sockets | Local event delivery | 本地事件传输 |
+| SQLite / Keychain | Event storage and API keys | 事件存储与 API key |
+| Anthropic / OpenAI SDKs | Optional notification summaries | 可选的通知摘要 |
+
 ## Current logo
 
 ![Codo source identity](../../public/logos/display/codo-160.webp)

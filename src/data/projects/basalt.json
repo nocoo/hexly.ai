@@ -220,5 +220,87 @@
 			"en": "At 128/64 px the colored roof tiers and white marble foundation remain distinct. At 32/24/16 px the mark relies on its blue-and-green stepped silhouette; latticework, veining and gold beads merge. The pale foundation softens on light interfaces, while sidebar and favicon specimens retain the transparent foreground.",
 			"zh": "128/64 px 下可分辨彩色重檐与白色石台；32/24/16 px 主要依靠蓝绿层叠轮廓，窗棂、石纹与金珠会合并。浅色界面上的白色基座会柔化，侧栏与 favicon 样例仍使用透明前景。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Give React applications a consistent set of controls, layered surfaces, charts, and page layouts.",
+			"zh": "为 React 应用提供统一的控件、分层表面、图表和页面布局。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Typed component APIs",
+					"zh": "组件类型与 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Reusable UI components",
+					"zh": "可复用 UI 组件"
+				}
+			},
+			{
+				"name": "Radix UI",
+				"role": {
+					"en": "Accessible interaction primitives",
+					"zh": "交互基础控件"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Optional utility-based styling",
+					"zh": "可选的工具类样式"
+				}
+			},
+			{
+				"name": "CSS",
+				"role": {
+					"en": "Tokens and standalone styles",
+					"zh": "设计 tokens 与独立样式"
+				}
+			},
+			{
+				"name": "Recharts",
+				"role": {
+					"en": "Chart components",
+					"zh": "图表组件"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Library and showcase builds",
+					"zh": "组件库与示例站构建"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Static showcase hosting",
+					"zh": "示例站静态托管"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "9b498d3feb8faaeee668229820801d527e07ccb3",
+			"sources": [
+				"package.json",
+				"packages/basalt/package.json",
+				"packages/basalt/src/index.ts",
+				"packages/basalt/src/components/date-picker.tsx",
+				"packages/basalt/src/components/data-table.tsx",
+				"src/App.tsx",
+				"vite.config.ts",
+				"wrangler.toml",
+				"scripts/docs-gate.ts",
+				"scripts/consumer-gate.ts",
+				"INTEGRATION.md",
+				"fixtures/README.md"
+			]
+		}
 	}
 }

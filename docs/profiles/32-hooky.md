@@ -13,6 +13,27 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a`
 
+## Project goal
+
+Send page URLs, titles, selections, and metadata to configured webhooks from Chrome, using a popup, context menu, or click-triggered rules.
+
+通过 Chrome 弹窗、右键菜单或点击触发的规则，将页面 URL、标题、选区和元数据发送到指定 Webhook。
+
+- [中文 README](https://github.com/nocoo/hooky/blob/main/README.md) · [English README](https://github.com/nocoo/hooky/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/hooky/tree/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a)
+- Source files: [`manifest.json`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/manifest.json), [`package.json`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/package.json), [`src/background.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/background.js), [`src/quicksend.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/quicksend.js), [`src/rules.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/rules.js), [`src/store.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/store.js), [`src/pagecontext.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/pagecontext.js), [`src/webhook.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/webhook.js), [`src/params.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/src/params.js), [`tests/e2e/extension.e2e.js`](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/tests/e2e/extension.e2e.js)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| JavaScript / HTML / CSS | Extension logic and UI | 扩展逻辑与界面 |
+| Chrome Extensions Manifest V3 | Service worker and browser integration | Service worker 与浏览器集成 |
+| chrome.storage.local | Local templates and rules | 本地模板与规则 |
+| Fetch API | Webhook requests | Webhook 请求 |
+| Vitest / jsdom | Unit and DOM tests | 单元与 DOM 测试 |
+| Puppeteer | Browser end-to-end tests | 浏览器端到端测试 |
+
 ## Current logo
 
 ![Hooky source identity](../../public/logos/display/hooky-160.webp)

@@ -13,6 +13,30 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `c71543478405f580e6dd36ebac18174f7ae6e474`
 
+## Project goal
+
+Review repositories, open work, alerts, and daily changes across GitHub accounts in a personal console with on-demand data refreshes.
+
+在个人控制台查看多个 GitHub 账号的仓库、待办、告警和每日变化，按需同步 GitHub 数据。
+
+- [中文 README](https://github.com/nocoo/giraffe/blob/main/README.md) · [English README](https://github.com/nocoo/giraffe/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/giraffe/tree/d772268203e31098f7efa40a032afee2efa91916)
+- Source files: [`package.json`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/package.json), [`src/server/index.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/index.ts), [`src/server/env.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/env.ts), [`src/server/lib/token-crypto.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/token-crypto.ts), [`src/server/lib/db/schema.sql`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/db/schema.sql), [`src/server/routes/accounts.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/routes/accounts.ts), [`src/server/routes/refresh.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/routes/refresh.ts), [`src/server/routes/notifications.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/routes/notifications.ts), [`src/server/lib/collect.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/collect.ts), [`src/server/lib/github-map.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/github-map.ts), [`src/server/lib/insights.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/insights.ts), [`src/server/lib/digest.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/digest.ts), [`src/server/middleware/access.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/middleware/access.ts), [`src/server/middleware/origin.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/middleware/origin.ts), [`src/server/lib/access-config.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/access-config.ts), [`src/server/lib/author-profile.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/server/lib/author-profile.ts), [`src/client/app.tsx`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/client/app.tsx), [`src/client/routes/settings.tsx`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/client/routes/settings.tsx), [`src/client/routes/repo-detail.tsx`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/client/routes/repo-detail.tsx), [`src/client/viewmodels/accounts.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/client/viewmodels/accounts.ts), [`src/client/viewmodels/digest.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/src/client/viewmodels/digest.ts), [`vite.config.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/vite.config.ts), [`wrangler.toml`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/wrangler.toml), [`scripts/dev.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/scripts/dev.ts), [`scripts/ensure-dev-vars.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/scripts/ensure-dev-vars.ts), [`scripts/run-e2e.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/scripts/run-e2e.ts), [`scripts/run-e2e-bdd.ts`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/scripts/run-e2e-bdd.ts), [`dev.vars.example`](https://github.com/nocoo/giraffe/blob/d772268203e31098f7efa40a032afee2efa91916/dev.vars.example)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application, Worker, and tooling logic | 应用、Worker 与工具脚本逻辑 |
+| React | Console pages and interactions | 控制台页面与交互 |
+| Basalt | Shared interface components | 界面组件 |
+| Hono | Worker HTTP routes and middleware | Worker HTTP 路由与中间件 |
+| Cloudflare Workers | GitHub collection and static hosting | GitHub 数据采集与静态托管 |
+| Cloudflare D1 | Accounts, encrypted PATs, and snapshots | 账号、加密 PAT 与快照 |
+| Cloudflare Access | Deployment access and API identity | 部署入口与 API 身份认证 |
+| GitHub API | REST and GraphQL repository and notification data | REST 与 GraphQL 仓库和通知数据 |
+| Vite | Local development and frontend builds | 本地开发与前端构建 |
+
 ## Current logo
 
 ![Giraffe source identity](../../public/logos/display/giraffe-160.webp)

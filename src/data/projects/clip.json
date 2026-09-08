@@ -199,5 +199,72 @@
 			"en": "The brim, beak and colorful feather silhouette carry the 32/16 px mark; individual eye facets and feather divisions soften at favicon size. Small app and browser marks use the transparent portrait, including its intentional lower neck entry.",
 			"zh": "32/16 px 主要依靠帽檐、喙与彩羽轮廓识别，眼部色块和羽毛分片在 favicon 尺寸会合并。小型应用和浏览器标记使用透明头像，并保留自然的下沿颈部入画。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Turn an HTTP API definition in clip.yaml into an editable command-line client, with credentials stored separately for each tool.",
+			"zh": "将 clip.yaml 中的 HTTP API 定义转换为可编辑的命令行客户端，并按工具分别管理凭据。"
+		},
+		"techStack": [
+			{
+				"name": "Bun / TypeScript",
+				"role": {
+					"en": "CLI runtime and code generation",
+					"zh": "CLI 运行环境与代码生成"
+				}
+			},
+			{
+				"name": "commander",
+				"role": {
+					"en": "Generated commands and arguments",
+					"zh": "生成的命令与参数解析"
+				}
+			},
+			{
+				"name": "Zod / yaml",
+				"role": {
+					"en": "Schema parsing and validation",
+					"zh": "Schema 解析与校验"
+				}
+			},
+			{
+				"name": "@nocoo/base-cli",
+				"role": {
+					"en": "Browser login and local callback",
+					"zh": "浏览器登录与本机回调"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "Example and test APIs",
+					"zh": "示例与测试 API"
+				}
+			},
+			{
+				"name": "Astro",
+				"role": {
+					"en": "Static documentation site",
+					"zh": "静态文档站"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "071d10dd71f913814a47a68047265883642c851c",
+			"sources": [
+				"package.json",
+				"packages/cli/package.json",
+				"packages/cli/src/index.ts",
+				"packages/cli/src/schema/validator.ts",
+				"packages/cli/src/codegen/generator.ts",
+				"packages/cli/src/codegen/templates.ts",
+				"packages/cli/src/auth/storage.ts",
+				"packages/cli/src/commands/auth.ts",
+				"packages/cli/src/commands/install.ts",
+				"packages/cli/src/commands/test.ts",
+				"packages/web/package.json"
+			]
+		}
 	}
 }

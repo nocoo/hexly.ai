@@ -187,5 +187,79 @@
 			"zh": "完整鸟身和羽毛距圆角边界至少 193.5 px。原生弹窗使用透明的 22 pt 小标，macOS 应用图标使用带平台留白的独立圆角底图。浏览器样例用于检视缩小效果。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Inspect Mac system metrics and processes from the menu bar, and detect recurring crashes, resource pressure, sleep problems, and device anomalies locally.",
+			"zh": "在菜单栏查看 Mac 系统指标与进程，在本机发现反复崩溃、资源压力、睡眠和设备异常。"
+		},
+		"techStack": [
+			{
+				"name": "Swift / Swift Concurrency",
+				"role": {
+					"en": "Local collection and detection logic",
+					"zh": "本地采集与检测逻辑"
+				}
+			},
+			{
+				"name": "SwiftUI / AppKit",
+				"role": {
+					"en": "Menu bar, metrics and settings UI",
+					"zh": "菜单栏、指标与设置界面"
+				}
+			},
+			{
+				"name": "macOS Unified Logging",
+				"role": {
+					"en": "System event stream",
+					"zh": "系统事件日志流"
+				}
+			},
+			{
+				"name": "IOKit / Mach / libproc",
+				"role": {
+					"en": "Hardware and process metrics",
+					"zh": "硬件与进程指标"
+				}
+			},
+			{
+				"name": "Objective-C / IOHID",
+				"role": {
+					"en": "Apple Silicon thermal sensors",
+					"zh": "Apple Silicon 温度传感器"
+				}
+			},
+			{
+				"name": "UserDefaults",
+				"role": {
+					"en": "Local preferences",
+					"zh": "本地偏好设置"
+				}
+			},
+			{
+				"name": "Swift Testing",
+				"role": {
+					"en": "Unit and pipeline integration tests",
+					"zh": "单元与检测管道集成测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf",
+			"sources": [
+				"Package.swift",
+				"Sources/Owl/OwlApp.swift",
+				"Sources/Owl/OwlEngine.swift",
+				"Sources/Owl/OwlNotifications.swift",
+				"Sources/OwlCore/Patterns/PatternCatalog.swift",
+				"Sources/OwlCore/Patterns/MetricsCatalog.swift",
+				"Sources/OwlCore/Services/SystemMetricsPoller.swift",
+				"Sources/OwlCore/Services/HIDTemperatureProvider.swift",
+				"Sources/OwlCore/Pipeline/AlertStateManager.swift",
+				"Sources/OwlCore/Settings/AppSettings.swift",
+				"scripts/build.sh"
+			]
+		}
 	}
 }

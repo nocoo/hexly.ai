@@ -183,5 +183,93 @@
 			"en": "At 128/64 px the checker rhythm, rounded thickness and hover shadow remain clear. At 32/24/16 px the transparent mark retains the alternating block silhouette; fine bevel reflections and drafting lines are deliberately left to the large presentation.",
 			"zh": "128/64 px 保留棋盘节奏、圆润厚度与悬浮阴影；32/24/16 px 透明图标以黑白交错轮廓为主，精细倒角反光与工程格线留给大尺寸展示。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Reuse dashboard layouts, controls, and charts to build data interfaces with a cool monochrome visual style.",
+			"zh": "复用看板布局、控件和图表，搭建采用冷色灰阶风格的数据界面。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Interface and viewmodel logic",
+					"zh": "界面与 viewmodel 逻辑"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Dashboard examples",
+					"zh": "看板示例"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "SPA development and build",
+					"zh": "SPA 开发与构建"
+				}
+			},
+			{
+				"name": "React Router",
+				"role": {
+					"en": "Client-side routes",
+					"zh": "客户端路由"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Themes and styling",
+					"zh": "主题与样式"
+				}
+			},
+			{
+				"name": "Radix UI",
+				"role": {
+					"en": "Interactive controls",
+					"zh": "交互控件"
+				}
+			},
+			{
+				"name": "Recharts",
+				"role": {
+					"en": "Data visualization",
+					"zh": "数据可视化"
+				}
+			},
+			{
+				"name": "i18next",
+				"role": {
+					"en": "Chinese and English interface",
+					"zh": "中英文界面"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Static asset hosting",
+					"zh": "静态资源托管"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe",
+			"sources": [
+				"package.json",
+				"src/App.tsx",
+				"src/index.css",
+				"src/data/mock.ts",
+				"src/components/PixelBarChart.tsx",
+				"src/pages/NetworkOpsDashboardPage.tsx",
+				"src/pages/LoginPage.tsx",
+				"src/viewmodels/usePortfolioViewModel.ts",
+				"src/i18n/index.ts",
+				"vite.config.ts",
+				"wrangler.toml"
+			]
+		}
 	}
 }

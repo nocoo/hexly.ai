@@ -13,6 +13,27 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `a5d786175358dee245773bd98af83eef4bbf5689`
 
+## Project goal
+
+Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect their local run history and output through a CLI and Dashboard.
+
+在 Mac 上定时执行 shell、OpenCode 和 HTTP 任务，通过 CLI 与本地 Dashboard 查看运行历史和输出。
+
+- [中文 README](https://github.com/nocoo/runner/blob/main/README.md) · [English README](https://github.com/nocoo/runner/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/runner/tree/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1)
+- Source files: [`runner-swift/Package.swift`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/runner-swift/Package.swift), [`runner-swift/Sources/Runner/Runner.swift`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/runner-swift/Sources/Runner/Runner.swift), [`runner-swift/Sources/RunnerLib/CLICommands.swift`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/runner-swift/Sources/RunnerLib/CLICommands.swift), [`runner-swift/Sources/RunnerLib/SQLiteStorage.swift`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/runner-swift/Sources/RunnerLib/SQLiteStorage.swift), [`runner-swift/Sources/RunnerLib/Executor.swift`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/runner-swift/Sources/RunnerLib/Executor.swift), [`dashboard/package.json`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/dashboard/package.json), [`dashboard/src/api/vite-plugin-api.ts`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/dashboard/src/api/vite-plugin-api.ts), [`launchd/com.runner.scheduler.plist`](https://github.com/nocoo/runner/blob/d9d2a14828d20c6f27f4e44b3221d9d9a89190e1/launchd/com.runner.scheduler.plist)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Swift | CLI and task execution | 命令行与任务执行 |
+| launchd | macOS timer integration | macOS 定时触发 |
+| SQLite / GRDB | Local run and task storage | 本地运行与任务存储 |
+| React / TypeScript | Local Dashboard | 本地控制台 |
+| Vite | Development server and CLI API bridge | 开发服务与 CLI API 桥接 |
+| Tailwind CSS | Dashboard styling | 控制台样式 |
+
 ## Current logo
 
 ![Runner source identity](../../public/logos/display/runner-160.webp)

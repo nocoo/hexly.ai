@@ -200,5 +200,98 @@
 			"en": "The cream blaze, paired horns, and coral muzzle stay legible at 32 px. Smaller color planes merge at 16 px; transparent marks serve the sidebar and browser, while installed icons use the square presentation.",
 			"zh": "32 像素时，奶油额纹、双角与珊瑚鼻尖仍然清晰；16 像素时细小色面合并。侧栏和浏览器使用透明图，安装图标使用方形展示版本。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Organize personal transactions, accounts and capital to review cash flow, allocation, returns and availability dates.",
+			"zh": "整理个人收支、账户和存量资金，查看现金流、资金配置、收益与可用日期。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application and financial calculations",
+					"zh": "应用与财务计算"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Web pages, Server Actions and MCP endpoints",
+					"zh": "Web 页面、Server Actions 与 MCP 入口"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Interactive finance views",
+					"zh": "财务交互界面"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Business API and SQL access",
+					"zh": "业务 API 与 SQL 访问"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Financial records and user settings",
+					"zh": "财务记录与用户设置存储"
+				}
+			},
+			{
+				"name": "Drizzle ORM",
+				"role": {
+					"en": "Database schema and repositories",
+					"zh": "数据模型与查询"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Google sign-in and sessions",
+					"zh": "Google 登录与会话"
+				}
+			},
+			{
+				"name": "MCP SDK",
+				"role": {
+					"en": "Authorized finance tools for clients",
+					"zh": "供客户端授权访问的财务工具"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Development, HTTP tests and Docker runtime",
+					"zh": "开发、HTTP 测试与 Docker 运行时"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "68d20b352d8873865f39d2da89e2d086fcb5e03d",
+			"sources": [
+				"package.json",
+				"worker/package.json",
+				"worker/wrangler.toml",
+				"worker/src/index.ts",
+				"worker/db/schema.ts",
+				"src/auth.ts",
+				"src/lib/navigation.ts",
+				"src/app/actions/import-actions.ts",
+				"src/app/actions/data-actions.ts",
+				"src/app/ai-insight/page.tsx",
+				"src/app/api/mcp/route.ts",
+				"src/lib/mcp/server.ts",
+				"scripts/run-e2e.ts",
+				"e2e/bdd/navigation.spec.ts",
+				".github/workflows/release.yml",
+				"Dockerfile"
+			]
+		}
 	}
 }

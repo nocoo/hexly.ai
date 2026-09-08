@@ -200,5 +200,125 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 145.5 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Collect Linux host metrics to inspect fleet status, alerts and infrastructure assets.",
+			"zh": "采集 Linux 主机指标，集中查看主机状态、告警与基础设施资产。"
+		},
+		"techStack": [
+			{
+				"name": "Rust",
+				"role": {
+					"en": "Linux host metric collection",
+					"zh": "Linux 主机指标采集"
+				}
+			},
+			{
+				"name": "Tokio / reqwest",
+				"role": {
+					"en": "Async collection and HTTPS upload",
+					"zh": "异步采集与 HTTPS 上报"
+				}
+			},
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Worker, dashboard and CLI logic",
+					"zh": "Worker、仪表盘与 CLI 逻辑"
+				}
+			},
+			{
+				"name": "Bun / Turborepo",
+				"role": {
+					"en": "Workspace dependencies and builds",
+					"zh": "工作区依赖与构建"
+				}
+			},
+			{
+				"name": "Hono / Cloudflare Workers",
+				"role": {
+					"en": "Ingestion, API, scheduled jobs and static assets",
+					"zh": "采集接入、API、定时任务与静态资源"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Metrics, alerts, events and assets",
+					"zh": "指标、告警、事件与资产数据"
+				}
+			},
+			{
+				"name": "Cloudflare KV",
+				"role": {
+					"en": "Optional caches for frequent queries",
+					"zh": "热点查询的可选缓存"
+				}
+			},
+			{
+				"name": "Vite / React",
+				"role": {
+					"en": "Dashboard interface and builds",
+					"zh": "仪表盘界面与构建"
+				}
+			},
+			{
+				"name": "Recharts",
+				"role": {
+					"en": "Metric trends",
+					"zh": "指标趋势图"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Browser authentication",
+					"zh": "浏览器认证"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "ab6984c18475e4c38723777f09f31e381d3e2f96",
+			"sources": [
+				"package.json",
+				"packages/ui/package.json",
+				"packages/ui/vite.config.ts",
+				"packages/ui/playwright.config.ts",
+				"packages/worker/package.json",
+				"packages/worker/wrangler.toml",
+				"packages/worker/src/index.ts",
+				"packages/worker/src/middleware/entry-control.ts",
+				"packages/worker/src/middleware/access-auth.ts",
+				"packages/worker/src/middleware/api-key.ts",
+				"packages/worker/src/routes/setup.ts",
+				"packages/worker/src/routes/cli-auth.ts",
+				"packages/worker/src/routes/monitoring.ts",
+				"packages/worker/src/routes/events-ingest.ts",
+				"packages/worker/src/routes/heartbeat.ts",
+				"packages/worker/src/adapters/d1/aggregation.ts",
+				"packages/worker/src/lib/host-meta-cache.ts",
+				"packages/worker/src/services/status.ts",
+				"packages/worker/test/e2e/global-setup.ts",
+				"packages/shared/src/settings.ts",
+				"packages/shared/src/alerts.ts",
+				"packages/cli/package.json",
+				"packages/cli/src/bin/bat-cli.ts",
+				"packages/cli/src/commands/login.ts",
+				"packages/cli/src/commands/service/run.ts",
+				"packages/cli/src/commands/service/install.ts",
+				"probe/Cargo.toml",
+				"probe/src/main.rs",
+				"probe/src/config.rs",
+				"probe/dist/bat-probe.service",
+				"probe/Dockerfile.build",
+				"scripts/l3-setup.sh",
+				"scripts/l3-webserver.sh",
+				".github/workflows/ci.yml",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

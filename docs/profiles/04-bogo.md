@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `77e211a294a885fff2830d0aba2e48a10299dff1`
 
+## Project goal
+
+Keep reporting relationships, documents and revision history together in workspaces, with web and CLI access to the same knowledge base.
+
+围绕人物和工作空间整理组织关系、文档和版本记录，并用网页与命令行维护同一份知识库。
+
+- [中文 README](https://github.com/nocoo/bogo/blob/main/README.md) · [English README](https://github.com/nocoo/bogo/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/bogo/tree/2e2d986edffd9d320a3e172f37affe5e3406cabe)
+- Source files: [`package.json`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/package.json), [`packages/worker/package.json`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/package.json), [`packages/worker/src/index.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/src/index.ts), [`packages/worker/src/middleware/access-auth.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/src/middleware/access-auth.ts), [`packages/worker/src/routes/workspaces.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/src/routes/workspaces.ts), [`packages/worker/src/routes/persons.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/src/routes/persons.ts), [`packages/worker/src/routes/documents.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/src/routes/documents.ts), [`packages/worker/src/routes/table-views.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/src/routes/table-views.ts), [`packages/worker/wrangler.toml`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/worker/wrangler.toml), [`packages/ui/package.json`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/ui/package.json), [`packages/ui/src/App.tsx`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/ui/src/App.tsx), [`packages/ui/src/components/document/VersionDiff.tsx`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/ui/src/components/document/VersionDiff.tsx), [`packages/ui/src/viewmodels/person/person-tree-layout.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/ui/src/viewmodels/person/person-tree-layout.ts), [`packages/ui/src/viewmodels/table/use-table-grid.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/ui/src/viewmodels/table/use-table-grid.ts), [`packages/cli/scripts/build.ts`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/packages/cli/scripts/build.ts), [`clip.yaml`](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/clip.yaml)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript / Bun / Turborepo | Typed workspaces and local development | 类型、工作区与本地开发 |
+| Cloudflare Workers / Hono | HTTP API and authentication | HTTP API 与认证 |
+| Cloudflare D1 | People, documents, revisions, fields and views | 人物、文档、版本、字段与视图存储 |
+| React / Vite / Tailwind CSS | Web interface and styling | 网页界面与样式 |
+| React Query / React Router | Server data and navigation | 服务端数据与页面导航 |
+| React Flow / Dagre | Interactive reporting chart and layout | 交互组织图与布局 |
+| marked / js-yaml / @pierre/diffs | Markdown, frontmatter and revision comparison | Markdown、frontmatter 与版本差异 |
+| clip | CLI generation from the API schema | 从 API schema 生成 CLI |
+
 ## Current logo
 
 ![Bogo source identity](../../public/logos/display/bogo-160.webp)

@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `16175dc87ef406e8cf3343ab8808b60e8f53cc8a`
 
+## Project goal
+
+Collect X / Twitter and custom-source content into watchlists, then read, translate, and save links from one timeline.
+
+将 X / Twitter 与自定义来源的内容按关注列表收集，在同一时间线中阅读、翻译和保存链接。
+
+- [中文 README](https://github.com/nocoo/xray/blob/main/README.md) · [English README](https://github.com/nocoo/xray/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/xray/tree/f0864583697a734b7279087b9a1de8d3a1a18bff)
+- Source files: [`package.json`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/package.json), [`packages/ui/package.json`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/packages/ui/package.json), [`packages/worker/package.json`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/packages/worker/package.json), [`packages/worker/wrangler.toml`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/packages/worker/wrangler.toml), [`packages/worker/src/index.ts`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/packages/worker/src/index.ts), [`packages/worker/src/routes/ingest-push.ts`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/packages/worker/src/routes/ingest-push.ts), [`packages/worker/src/lib/ai-client.ts`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/packages/worker/src/lib/ai-client.ts), [`scripts/refresh-watchlists.ts`](https://github.com/nocoo/xray/blob/f0864583697a734b7279087b9a1de8d3a1a18bff/scripts/refresh-watchlists.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | UI, API, and collection scripts | 界面、API 与采集脚本 |
+| React | Reading interface | 阅读界面 |
+| Vite | Web development and bundling | Web 开发与构建 |
+| Hono | HTTP API | HTTP API |
+| Cloudflare Workers | Application and ingest hosting | 应用与内容接入托管 |
+| Cloudflare D1 | Watchlists, content, and settings | 关注列表、内容与设置存储 |
+| Cloudflare Access | Browser authentication | 浏览器登录 |
+
 ## Current logo
 
 ![Xray source identity](../../public/logos/display/xray-160.webp)

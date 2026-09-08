@@ -13,6 +13,28 @@
 - Profile revision: `880737d35ff74923cc0c96873fccf9e09ea5e569`
 - Repository revision inspected: `07185e854a59e320f8b2a45f6d50484186753c57`
 
+## Project goal
+
+Explore an RO-inspired single-player RPG in the browser, from character creation and quests to combat and local progress.
+
+在浏览器中体验 RO 风格的单人 RPG，创建角色、探索地图、完成任务并保存进度。
+
+- [中文 README](https://github.com/nocoo/dreamro/blob/main/README.md) · [English README](https://github.com/nocoo/dreamro/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/dreamro/tree/07185e854a59e320f8b2a45f6d50484186753c57)
+- Source files: [`package.json`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/package.json), [`src/main.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/main.ts), [`src/data/jobs.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/data/jobs.ts), [`src/game/Game.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/game/Game.ts), [`src/game/World.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/game/World.ts), [`src/game/Character.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/game/Character.ts), [`src/game/Audio.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/game/Audio.ts), [`src/game/pathfinding.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/game/pathfinding.ts), [`src/game/state.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/game/state.ts), [`src/ui/HUD.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/src/ui/HUD.ts), [`vite.config.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/vite.config.ts), [`playwright.config.ts`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/playwright.config.ts), [`wrangler.jsonc`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/wrangler.jsonc), [`CREDITS.md`](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/CREDITS.md)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Game logic and interface | 游戏逻辑与界面 |
+| Three.js | Procedural 3D characters, maps, and effects | 程序化三维角色、地图与特效 |
+| WebGL | Browser 3D rendering | 浏览器三维渲染 |
+| Web Audio | Synthesized music and sound effects | 合成音乐与音效 |
+| localStorage | Per-character saves and preferences | 各角色存档与偏好 |
+| Vite | Development and static builds | 开发与静态构建 |
+| Cloudflare Workers | Static game hosting | 游戏静态托管 |
+
 ## Current logo
 
 ![DreamRO source identity](../../public/logos/display/dreamro-160.webp)

@@ -165,5 +165,73 @@
 			"zh": "128/64 px 能辨认听筒剪影与象牙色转盘；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.",
+			"zh": "通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。"
+		},
+		"techStack": [
+			{
+				"name": "Bun / TypeScript",
+				"role": {
+					"en": "Local agent and workspaces",
+					"zh": "本地 Agent 与工作区"
+				}
+			},
+			{
+				"name": "Anthropic SDK",
+				"role": {
+					"en": "Model calls and tool protocol",
+					"zh": "模型调用与工具协议"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP channel",
+					"zh": "HTTP 通道"
+				}
+			},
+			{
+				"name": "discord.js",
+				"role": {
+					"en": "Discord bot channel",
+					"zh": "Discord 机器人通道"
+				}
+			},
+			{
+				"name": "p-queue",
+				"role": {
+					"en": "Gateway request dispatch",
+					"zh": "Gateway 请求调度"
+				}
+			},
+			{
+				"name": "JSONL / JSON / Markdown",
+				"role": {
+					"en": "Sessions, configuration and context files",
+					"zh": "会话、配置与上下文文件"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "37911d4cdf1c242c50c5d48d890a0e041c486d8b",
+			"sources": [
+				"package.json",
+				"packages/gateway/cli.ts",
+				"packages/gateway/serve.ts",
+				"packages/gateway/src/gateway.ts",
+				"packages/gateway/src/adapter.ts",
+				"packages/agent/src/core/agent.ts",
+				"packages/agent/src/core/session.ts",
+				"packages/agent/src/core/memory.ts",
+				"packages/agent/src/tools/builtin.ts",
+				"packages/storage/src/provider.ts",
+				"packages/storage/src/types.ts",
+				"packages/http/src/server.ts"
+			]
+		}
 	}
 }

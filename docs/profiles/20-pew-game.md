@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `ee68b2dead3e5e698b2427d6a949e8e57c69d520`
 
+## Project goal
+
+Play a keyboard-controlled pixel shooter in the browser, survive enemy waves with power-ups, and submit scores to a shared leaderboard.
+
+在浏览器中用键盘游玩像素射击，收集道具、抵挡敌人波次，并将成绩提交到共享排行榜。
+
+- [中文 README](https://github.com/nocoo/pew-game/blob/main/README.md) · [English README](https://github.com/nocoo/pew-game/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/pew-game/tree/71b4b8165874e1986f993706c6830cc60a8107bf)
+- Source files: [`package.json`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/package.json), [`src/game/engine.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/engine.ts), [`src/game/input.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/input.ts), [`src/game/player.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/player.ts), [`src/game/powerup.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/powerup.ts), [`src/lib/db.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/lib/db.ts), [`src/lib/anticheat.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/lib/anticheat.ts), [`src/app/api/scores/route.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/app/api/scores/route.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Game engine and rules | 游戏引擎与规则 |
+| Canvas 2D | Pixel rendering | 像素画面绘制 |
+| Next.js | Game page and score APIs | 游戏页面与成绩 API |
+| React | Game HUD and leaderboard | 游戏状态界面与排行榜 |
+| SQLite | Persistent scores | 成绩持久化 |
+| better-sqlite3 | Server database access | 服务端数据库访问 |
+| Tailwind CSS | Page and overlay styles | 页面与叠层样式 |
+
 ## Current logo
 
 ![Pew Game source identity](../../public/logos/display/pew-game-160.webp)

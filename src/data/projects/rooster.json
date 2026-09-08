@@ -187,5 +187,72 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 172.5 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.",
+			"zh": "通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Node.js",
+				"role": {
+					"en": "Application server",
+					"zh": "应用服务端"
+				}
+			},
+			{
+				"name": "Preact / Signals",
+				"role": {
+					"en": "Chat interface and state",
+					"zh": "对话界面与状态管理"
+				}
+			},
+			{
+				"name": "Vite / Primer CSS",
+				"role": {
+					"en": "Frontend build and styling",
+					"zh": "前端构建与样式"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP API",
+					"zh": "HTTP 接口"
+				}
+			},
+			{
+				"name": "Socket.IO",
+				"role": {
+					"en": "Streaming chat events",
+					"zh": "流式对话事件"
+				}
+			},
+			{
+				"name": "SQLite",
+				"role": {
+					"en": "Local session and message storage",
+					"zh": "本地会话与消息存储"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3",
+			"sources": [
+				"package.json",
+				"packages/client/package.json",
+				"packages/server/package.json",
+				"packages/server/src/server.ts",
+				"packages/server/src/routes/sessions.ts",
+				"packages/server/src/routes/bridge.ts",
+				"packages/server/src/services/hermes/agent-bridge.ts",
+				"packages/client/src/state/chat.ts",
+				"packages/client/src/pages/admin/Profiles.tsx",
+				"packages/client/src/pages/admin/Settings.tsx",
+				"scripts/start-bridge.sh"
+			]
+		}
 	}
 }

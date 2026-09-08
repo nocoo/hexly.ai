@@ -253,5 +253,129 @@
 			"height": 2048,
 			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Understand AI coding-tool usage through token and session statistics, with analysis by time, model, device, and project.",
+			"zh": "汇总 AI 编程工具的 token 与会话统计，按时间、模型、设备和项目分析使用情况。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "CLI, application, and shared data types",
+					"zh": "CLI、应用与共享数据类型"
+				}
+			},
+			{
+				"name": "Node.js",
+				"role": {
+					"en": "Published CLI runtime",
+					"zh": "已发布 CLI 的运行环境"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Workspaces, collection runtime, and tests",
+					"zh": "工作区、采集运行环境与测试"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Dashboard and application APIs",
+					"zh": "仪表盘与应用 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Interactive analytics pages",
+					"zh": "交互分析页面"
+				}
+			},
+			{
+				"name": "Basalt",
+				"role": {
+					"en": "Reusable interface components",
+					"zh": "界面组件"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styling",
+					"zh": "界面样式"
+				}
+			},
+			{
+				"name": "Recharts",
+				"role": {
+					"en": "Usage charts",
+					"zh": "用量图表"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Google sign-in and sessions",
+					"zh": "Google 登录与会话"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Ingestion, queries, and pricing synchronization",
+					"zh": "数据写入、查询与价格同步"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Usage and application data",
+					"zh": "用量与应用数据"
+				}
+			},
+			{
+				"name": "Cloudflare KV",
+				"role": {
+					"en": "Query and model-price caches",
+					"zh": "查询与模型价格缓存"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Team and organization logo storage",
+					"zh": "团队与组织 Logo 存储"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "6eeccb962fe41a03e43c543592900673b9795211",
+			"sources": [
+				"package.json",
+				"packages/cli/package.json",
+				"packages/web/package.json",
+				"packages/core/src/types.ts",
+				"packages/cli/src/bin.ts",
+				"packages/cli/src/drivers/registry.ts",
+				"packages/cli/src/commands/session-sync-helpers.ts",
+				"packages/cli/src/utils/hash-project-ref.ts",
+				"packages/cli/src/commands/login.ts",
+				"packages/cli/src/notifier/registry.ts",
+				"packages/web/src/lib/navigation.ts",
+				"packages/web/src/lib/pricing.ts",
+				"packages/web/src/lib/invite.ts",
+				"packages/web/src/lib/db.ts",
+				"packages/web/src/lib/r2.ts",
+				"packages/web/src/auth.ts",
+				"packages/worker/wrangler.toml",
+				"packages/worker-read/wrangler.toml",
+				"packages/worker-read/src/sync/orchestrator.ts"
+			]
+		}
 	}
 }

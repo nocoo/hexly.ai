@@ -13,6 +13,27 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `8907933c080ed86c6cbe15d9af5cdb0be86919d3`
 
+## Project goal
+
+Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.
+
+通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。
+
+- [中文 README](https://github.com/nocoo/rooster/blob/main/README.md) · [English README](https://github.com/nocoo/rooster/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/rooster/tree/8907933c080ed86c6cbe15d9af5cdb0be86919d3)
+- Source files: [`package.json`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/package.json), [`packages/client/package.json`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/client/package.json), [`packages/server/package.json`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/server/package.json), [`packages/server/src/server.ts`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/server/src/server.ts), [`packages/server/src/routes/sessions.ts`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/server/src/routes/sessions.ts), [`packages/server/src/routes/bridge.ts`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/server/src/routes/bridge.ts), [`packages/server/src/services/hermes/agent-bridge.ts`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/server/src/services/hermes/agent-bridge.ts), [`packages/client/src/state/chat.ts`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/client/src/state/chat.ts), [`packages/client/src/pages/admin/Profiles.tsx`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/client/src/pages/admin/Profiles.tsx), [`packages/client/src/pages/admin/Settings.tsx`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/packages/client/src/pages/admin/Settings.tsx), [`scripts/start-bridge.sh`](https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/scripts/start-bridge.sh)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript / Node.js | Application server | 应用服务端 |
+| Preact / Signals | Chat interface and state | 对话界面与状态管理 |
+| Vite / Primer CSS | Frontend build and styling | 前端构建与样式 |
+| Hono | HTTP API | HTTP 接口 |
+| Socket.IO | Streaming chat events | 流式对话事件 |
+| SQLite | Local session and message storage | 本地会话与消息存储 |
+
 ## Current logo
 
 ![Rooster source identity](../../public/logos/display/rooster-160.webp)

@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `76260f08329784eead9b30912c7692b8ea0d3d56`
 
+## Project goal
+
+Watch and guide a virtual character through a browser playroom with animated toys, camera controls, and a daily discovery journal.
+
+在浏览器玩耍空间中观察并引导虚拟角色探索玩具，调整视角并查看当天足迹。
+
+- [中文 README](https://github.com/nocoo/gaga/blob/main/README.md) · [English README](https://github.com/nocoo/gaga/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/gaga/tree/76260f08329784eead9b30912c7692b8ea0d3d56)
+- Source files: [`package.json`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/package.json), [`src/main.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/main.ts), [`src/ui/AppUI.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/ui/AppUI.ts), [`src/character/Explorer.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/character/Explorer.ts), [`src/character/actions.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/character/actions.ts), [`src/character/Taotao.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/character/Taotao.ts), [`src/world/Playroom.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/world/Playroom.ts), [`src/world/navigation.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/world/navigation.ts), [`src/world/toys/index.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/world/toys/index.ts), [`src/audio/Soundscape.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/src/audio/Soundscape.ts), [`scripts/smoke.mjs`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/scripts/smoke.mjs), [`vite.config.ts`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/vite.config.ts), [`wrangler.jsonc`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/wrangler.jsonc), [`.github/workflows/ci.yml`](https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/.github/workflows/ci.yml)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Character behavior and application logic | 角色行为与应用逻辑 |
+| Three.js | Procedural playroom, character, and toys | 程序化房间、角色与玩具 |
+| WebGL | Browser 3D rendering | 浏览器三维渲染 |
+| Web Audio | Synthesized ambient music and toy sounds | 合成环境音乐与玩具音效 |
+| localStorage | Daily discovery journal | 当天探索足迹 |
+| Vite | Development and static builds | 开发与静态构建 |
+| Cloudflare Workers | Static application hosting | 应用静态托管 |
+
 ## Current logo
 
 ![Gaga source identity](../../public/logos/display/gaga-160.webp)

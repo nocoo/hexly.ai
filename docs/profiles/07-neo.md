@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `0d750484792449914b07e9b3e3404a823493f8a5`
 
+## Project goal
+
+Manage authentication secrets and TOTP codes in a browser, move data between authenticators, and maintain encrypted backup archives.
+
+在浏览器中管理认证密钥和 TOTP 验证码，在认证器之间迁移数据，并维护加密备份归档。
+
+- [中文 README](https://github.com/nocoo/neo/blob/main/README.md) · [English README](https://github.com/nocoo/neo/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/neo/tree/4e7a2ab145d021addf932c7a154416e99a8bf451)
+- Source files: [`package.json`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/package.json), [`auth.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/auth.ts), [`lib/db/d1-client.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/lib/db/d1-client.ts), [`lib/db/scoped.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/lib/db/scoped.ts), [`viewmodels/useSecretsViewModel.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/viewmodels/useSecretsViewModel.ts), [`models/backup-archive.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/models/backup-archive.ts), [`models/import-parsers.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/models/import-parsers.ts), [`app/sw.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/app/sw.ts), [`worker/src/index.ts`](https://github.com/nocoo/neo/blob/4e7a2ab145d021addf932c7a154416e99a8bf451/worker/src/index.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application and OTP logic | 应用与 OTP 逻辑 |
+| Next.js | Web application and server actions | Web 应用与服务端操作 |
+| React | Secret management interface | 密钥管理界面 |
+| Tailwind CSS | Interface styles | 界面样式 |
+| Cloudflare D1 | User-scoped data through the HTTP API | 经 HTTP API 存储用户数据 |
+| Auth.js | Google sign-in and sessions | Google 登录与会话 |
+| Web Crypto | TOTP and AES-GCM backup encryption | TOTP 与 AES-GCM 备份加密 |
+| Serwist | PWA caching and offline fallback | PWA 缓存与离线回退 |
+
 ## Current logo
 
 ![Neo source identity](../../public/logos/display/neo-160.webp)

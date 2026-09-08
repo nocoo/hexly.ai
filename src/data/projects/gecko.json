@@ -200,5 +200,86 @@
 			"zh": "原有 2048 px 透明主体与位置保持完全一致，距圆角轮廓最近处为 114.5 px，没有像素被裁掉。细小切面与电光在 16 px 时会简化，小型 UI 与浏览器使用透明主体。"
 		},
 		"method": "retained-original"
+	},
+	"overview": {
+		"goal": {
+			"en": "Record app and window usage on a Mac, review daily activity in a synced web dashboard, and optionally generate an AI-assisted daily review.",
+			"zh": "记录 Mac 上的应用和窗口使用时间，在同步后的 Web 控制台回看每日活动，并按需生成 AI 每日回顾。"
+		},
+		"techStack": [
+			{
+				"name": "Swift / SwiftUI",
+				"role": {
+					"en": "macOS tracking app",
+					"zh": "macOS 跟踪应用"
+				}
+			},
+			{
+				"name": "AppKit / AppleScript",
+				"role": {
+					"en": "Window and browser context",
+					"zh": "窗口与浏览器信息"
+				}
+			},
+			{
+				"name": "SQLite / GRDB",
+				"role": {
+					"en": "Local session storage",
+					"zh": "本地会话存储"
+				}
+			},
+			{
+				"name": "React / TypeScript",
+				"role": {
+					"en": "Activity dashboard",
+					"zh": "活动控制台"
+				}
+			},
+			{
+				"name": "vinext / Vite",
+				"role": {
+					"en": "Web pages and Node.js server",
+					"zh": "Web 页面与 Node.js 服务"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Synced data over the REST API",
+					"zh": "通过 REST API 存储同步数据"
+				}
+			},
+			{
+				"name": "NextAuth",
+				"role": {
+					"en": "Google sign-in",
+					"zh": "Google 登录"
+				}
+			},
+			{
+				"name": "AI SDK",
+				"role": {
+					"en": "Optional daily analysis",
+					"zh": "可选的每日分析"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "f259be7fe740ce260c9257e2870b57dec8d9e7b3",
+			"sources": [
+				"apps/mac-client/project.yml",
+				"apps/mac-client/Gecko/Sources/Services/TrackingEngine.swift",
+				"apps/mac-client/Gecko/Sources/Services/SettingsManager.swift",
+				"apps/mac-client/Gecko/Sources/Services/BrowserURLFetcher.swift",
+				"apps/mac-client/Gecko/Sources/Services/SyncService.swift",
+				"apps/web-dashboard/package.json",
+				"apps/web-dashboard/Dockerfile",
+				"apps/web-dashboard/src/lib/d1.ts",
+				"apps/web-dashboard/src/auth.ts",
+				"apps/web-dashboard/src/services/analyze-core.ts",
+				"apps/web-dashboard/src/lib/auto-analyze.ts"
+			]
+		}
 	}
 }

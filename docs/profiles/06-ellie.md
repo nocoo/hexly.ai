@@ -13,6 +13,32 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `300b8540eac51ae21803a8d58ebffbe3d90efa24`
 
+## Project goal
+
+Browse and maintain the Tongji Network forum, bringing historical Discuz content into a current community interface.
+
+浏览与维护同济网论坛，将 Discuz 历史内容接入新的社区界面。
+
+- [中文 README](https://github.com/nocoo/ellie/blob/main/README.md) · [English README](https://github.com/nocoo/ellie/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/ellie/tree/5b59a96419ca72d6a3b27fe004f08d79fec2728c)
+- Source files: [`package.json`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/package.json), [`apps/web/package.json`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/web/package.json), [`apps/admin/package.json`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/admin/package.json), [`apps/worker/package.json`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/worker/package.json), [`apps/worker/wrangler.toml`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/worker/wrangler.toml), [`apps/worker/src/index.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/worker/src/index.ts), [`apps/worker/src/middleware/apiKey.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/worker/src/middleware/apiKey.ts), [`apps/worker/src/handlers/search.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/worker/src/handlers/search.ts), [`apps/web/src/auth.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/web/src/auth.ts), [`apps/admin/src/auth.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/admin/src/auth.ts), [`apps/worker/.dev.vars.example`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/apps/worker/.dev.vars.example), [`packages/cli-rs/Cargo.toml`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/packages/cli-rs/Cargo.toml), [`packages/cli-rs/ellie-core/src/config.rs`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/packages/cli-rs/ellie-core/src/config.rs), [`packages/cli-rs/ellie-tui/src/app.rs`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/packages/cli-rs/ellie-tui/src/app.rs), [`packages/migrate/src/index.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/packages/migrate/src/index.ts), [`scripts/run-l2.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/scripts/run-l2.ts), [`scripts/run-l3-admin.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/scripts/run-l3-admin.ts), [`tests/e2e/fixtures/base.ts`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/tests/e2e/fixtures/base.ts), [`.github/workflows/release.yml`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/ellie/blob/5b59a96419ca72d6a3b27fe004f08d79fec2728c/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Applications, shared packages and migration tools | 应用、共享包与迁移工具 |
+| Next.js | Forum, admin console and server API proxies | 论坛、后台与服务端 API 代理 |
+| React | Community and administration interfaces | 社区与管理交互界面 |
+| Cloudflare Workers | Forum API and scheduled jobs | 论坛 API 与定时任务 |
+| Cloudflare D1 | Forum records and search indexes | 论坛数据与搜索索引 |
+| Cloudflare KV | Caches and runtime state | 缓存与运行状态 |
+| Cloudflare R2 | Uploaded files | 上传文件存储 |
+| Auth.js | Forum credentials and admin Google sessions | 论坛密码登录与后台 Google 会话 |
+| Rust | Terminal API client | 终端 API 客户端 |
+| ratatui | Terminal browsing interface | 终端浏览界面 |
+| Bun | Workspaces, SQLite migration and tests | 工作区、SQLite 迁移与测试 |
+
 ## Current logo
 
 ![Ellie source identity](../../public/logos/display/ellie-160.webp)

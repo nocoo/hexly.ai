@@ -13,6 +13,31 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `f257e0977e85358f9d02ed3f79a9fad8862e5117`
 
+## Project goal
+
+Organize household policies, coverage, payment schedules and medical visits.
+
+集中整理家庭保单、保障范围、缴费计划和就诊记录。
+
+- [中文 README](https://github.com/nocoo/surety/blob/main/README.md) · [English README](https://github.com/nocoo/surety/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/surety/tree/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767)
+- Source files: [`package.json`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/package.json), [`apps/web/package.json`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/web/package.json), [`apps/web/vite.config.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/web/vite.config.ts), [`apps/web/src/App.tsx`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/web/src/App.tsx), [`apps/web/src/app/policies/[id]/page.tsx`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/web/src/app/policies/[id]/page.tsx), [`apps/web/src/app/settings/page.tsx`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/web/src/app/settings/page.tsx), [`apps/worker/package.json`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/package.json), [`apps/worker/wrangler.toml`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/wrangler.toml), [`apps/worker/src/index.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/index.ts), [`apps/worker/src/middleware/access-auth.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/middleware/access-auth.ts), [`apps/worker/src/middleware/api-key-auth.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/middleware/api-key-auth.ts), [`apps/worker/src/middleware/is-localhost.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/middleware/is-localhost.ts), [`apps/worker/src/routes/auth-cli.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/routes/auth-cli.ts), [`apps/worker/src/routes/policies.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/routes/policies.ts), [`apps/worker/src/routes/backup.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/routes/backup.ts), [`apps/worker/src/routes/settings.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/worker/src/routes/settings.ts), [`apps/cli/package.json`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/cli/package.json), [`apps/cli/src/config.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/cli/src/config.ts), [`apps/cli/src/commands/auth.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/cli/src/commands/auth.ts), [`apps/cli/src/commands/policies.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/cli/src/commands/policies.ts), [`packages/db/src/index.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/packages/db/src/index.ts), [`packages/db/src/schema.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/packages/db/src/schema.ts), [`packages/db/src/backup.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/packages/db/src/backup.ts), [`packages/db/src/types.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/packages/db/src/types.ts), [`packages/api/src/lib/attachment-validation.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/packages/api/src/lib/attachment-validation.ts), [`packages/api/src/renewal-calendar.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/packages/api/src/renewal-calendar.ts), [`scripts/run-l2-http.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/scripts/run-l2-http.ts), [`scripts/run-l3-server.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/scripts/run-l3-server.ts), [`scripts/seed-remote.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/scripts/seed-remote.ts), [`apps/web/playwright.config.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/apps/web/playwright.config.ts), [`drizzle.config.ts`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/drizzle.config.ts), [`.github/workflows/release.yml`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/surety/blob/4deaf7e83ffb79a90eb1032a3a9cf91c35cdc767/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application, CLI and shared logic | 应用、CLI 与共享逻辑 |
+| Bun workspaces | Dependencies, CLI runtime and scripts | 依赖管理、CLI 运行时与脚本 |
+| Vite | SPA development and builds | SPA 开发与构建 |
+| React | Household policy and medical-visit interface | 家庭保单与就诊界面 |
+| Hono | HTTP API and authentication middleware | HTTP API 与认证中间件 |
+| Cloudflare Workers | API and static assets | API 与静态资源 |
+| Drizzle ORM | Schema and data access | Schema 与数据访问 |
+| Cloudflare D1 | Household, policy and medical records | 家庭、保单与就诊数据 |
+| Cloudflare R2 | Policy attachments | 保单附件 |
+| Cloudflare Access | Browser authentication | 浏览器身份认证 |
+
 ## Current logo
 
 ![Surety source identity](../../public/logos/display/surety-160.webp)

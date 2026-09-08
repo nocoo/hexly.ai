@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `e965214c3efe99f4c4b459e6716e2014184dc32d`
 
+## Project goal
+
+Work on local project directories through a web coding assistant, keeping conversations, tool execution, MCP tools and resumable sessions together.
+
+通过网页编程助手处理本地项目，把对话、工具执行、MCP 工具和可续接会话放在一起。
+
+- [中文 README](https://github.com/nocoo/frogie/blob/main/README.md) · [English README](https://github.com/nocoo/frogie/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/frogie/tree/79e16babfb6067dcd90ad59b900fa76ad282f35c)
+- Source files: [`package.json`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/package.json), [`packages/server/package.json`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/package.json), [`packages/web/package.json`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/web/package.json), [`packages/server/src/index.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/index.ts), [`packages/server/src/auth/middleware.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/auth/middleware.ts), [`packages/server/src/routes/settings.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/routes/settings.ts), [`packages/server/src/routes/sessions.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/routes/sessions.ts), [`packages/server/src/routes/ws-chat.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/routes/ws-chat.ts), [`packages/server/src/engine/frogie-agent.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/engine/frogie-agent.ts), [`packages/server/src/engine/builtin-tools.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/engine/builtin-tools.ts), [`packages/server/src/engine/session-sync.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/engine/session-sync.ts), [`packages/server/src/mcp/client.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/mcp/client.ts), [`packages/server/src/db/connection.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/server/src/db/connection.ts), [`packages/web/src/App.tsx`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/web/src/App.tsx), [`packages/web/src/pages/PromptsPage.tsx`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/web/src/pages/PromptsPage.tsx), [`packages/web/src/viewmodels/models.viewmodel.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/web/src/viewmodels/models.viewmodel.ts), [`packages/web/vite.config.ts`](https://github.com/nocoo/frogie/blob/79e16babfb6067dcd90ad59b900fa76ad282f35c/packages/web/vite.config.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript / Bun | Service code, runtime and builds | 服务代码、运行与构建 |
+| Hono / WebSocket | HTTP APIs and streaming conversation events | HTTP API 与流式会话事件 |
+| Anthropic SDK | Model calls and the custom tool loop | 模型调用与自定义工具循环 |
+| MCP TypeScript SDK | stdio connections and tool discovery | stdio 服务连接与工具发现 |
+| SQLite / JSON | Settings, session indexes and conversation files | 设置、会话索引与对话文件 |
+| React / Vite / Zustand | Web interface and client state | 网页界面与客户端状态 |
+| Tailwind CSS / Radix UI | Styling and interactive components | 样式与交互组件 |
+| react-markdown / remark-gfm / rehype-highlight | Markdown and code highlighting | Markdown 与代码高亮 |
+
 ## Current logo
 
 ![Frogie source identity](../../public/logos/display/frogie-160.webp)

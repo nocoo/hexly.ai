@@ -191,5 +191,76 @@
 			"zh": "原有 2048 px 透明主体与位置保持完全一致，距圆角轮廓最近处为 124.61 px，没有像素被裁掉。细小切面与电光在 16 px 时会简化，小型 UI 与浏览器使用透明主体。"
 		},
 		"method": "retained-original"
+	},
+	"overview": {
+		"goal": {
+			"en": "Collect X / Twitter and custom-source content into watchlists, then read, translate, and save links from one timeline.",
+			"zh": "将 X / Twitter 与自定义来源的内容按关注列表收集，在同一时间线中阅读、翻译和保存链接。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "UI, API, and collection scripts",
+					"zh": "界面、API 与采集脚本"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Reading interface",
+					"zh": "阅读界面"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Web development and bundling",
+					"zh": "Web 开发与构建"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP API",
+					"zh": "HTTP API"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Application and ingest hosting",
+					"zh": "应用与内容接入托管"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Watchlists, content, and settings",
+					"zh": "关注列表、内容与设置存储"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Browser authentication",
+					"zh": "浏览器登录"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "f0864583697a734b7279087b9a1de8d3a1a18bff",
+			"sources": [
+				"package.json",
+				"packages/ui/package.json",
+				"packages/worker/package.json",
+				"packages/worker/wrangler.toml",
+				"packages/worker/src/index.ts",
+				"packages/worker/src/routes/ingest-push.ts",
+				"packages/worker/src/lib/ai-client.ts",
+				"scripts/refresh-watchlists.ts"
+			]
+		}
 	}
 }

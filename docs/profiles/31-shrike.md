@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `0fec187fc22742664925897400d0c1a62b2478bb`
 
+## Project goal
+
+Back up selected files and development configurations on a Mac to Google Drive's local directory, with sync triggered from the app or a local HTTP request.
+
+在 Mac 上将选定文件和开发配置备份到 Google Drive 的本地目录，通过应用或本机 HTTP 请求触发同步。
+
+- [中文 README](https://github.com/nocoo/shrike/blob/main/README.md) · [English README](https://github.com/nocoo/shrike/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/shrike/tree/0fec187fc22742664925897400d0c1a62b2478bb)
+- Source files: [`package.json`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/package.json), [`next.config.mjs`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/next.config.mjs), [`src-tauri/Cargo.toml`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/Cargo.toml), [`src-tauri/tauri.conf.json`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/tauri.conf.json), [`src-tauri/src/lib.rs`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/src/lib.rs), [`src-tauri/src/types.rs`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/src/types.rs), [`src-tauri/src/commands.rs`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/src/commands.rs), [`src-tauri/src/webhook.rs`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/src/webhook.rs), [`src-tauri/src/sync/executor.rs`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src-tauri/src/sync/executor.rs), [`src/hooks/use-file-list.ts`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src/hooks/use-file-list.ts), [`src/components/settings-page.tsx`](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/src/components/settings-page.tsx)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Tauri / Rust | Desktop app and file operations | 桌面应用与文件操作 |
+| Next.js / React | Statically exported desktop interface | 静态导出的桌面界面 |
+| TypeScript | Frontend logic | 前端逻辑 |
+| Tailwind CSS / Radix UI | Styling and UI components | 样式与界面组件 |
+| Tokio / Axum | Local HTTP API | 本机 HTTP 接口 |
+| rsync | Incremental file copying | 增量文件复制 |
+| Tauri Store | Local settings and backup list | 本地设置与备份列表 |
+
 ## Current logo
 
 ![Shrike source identity](../../public/logos/display/shrike-160.webp)

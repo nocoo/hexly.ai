@@ -191,5 +191,122 @@
 			"en": "The navy-and-ivory silhouette and lowered binoculars remain the main small-size cues. At 16 px the individual lens colors and eye facets merge. The 24 px sidebar and 16 px browser samples use the transparent penguin without its paper tile.",
 			"zh": "深蓝与象牙白轮廓、放下的望远镜是小尺寸下的主要识别点；16 px 时镜片彩色与眼部色块会合并。24 px 侧栏和 16 px 浏览器样例采用不带纸面底图的透明企鹅。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Collect fund and market data for private research into Chinese funds, ETFs, stocks, and macro conditions.",
+			"zh": "采集基金与市场数据，用于研究中国公募基金、ETF、股票与宏观环境。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Collection, calculations, and application logic",
+					"zh": "采集、计算与应用逻辑"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Collection scripts, HTTP server, and tests",
+					"zh": "采集脚本、HTTP 服务与测试"
+				}
+			},
+			{
+				"name": "SQLite",
+				"role": {
+					"en": "Local market data and computed metrics",
+					"zh": "本地市场数据与计算指标"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Research pages and charts",
+					"zh": "研究页面与图表"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "SPA development and build",
+					"zh": "SPA 开发与构建"
+				}
+			},
+			{
+				"name": "React Router",
+				"role": {
+					"en": "Research-page navigation",
+					"zh": "研究页面导航"
+				}
+			},
+			{
+				"name": "Basalt",
+				"role": {
+					"en": "Interface components",
+					"zh": "界面组件"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styling",
+					"zh": "界面样式"
+				}
+			},
+			{
+				"name": "Recharts",
+				"role": {
+					"en": "Market and product charts",
+					"zh": "市场与产品图表"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "Market, authentication, and backup APIs",
+					"zh": "行情、认证与备份 API"
+				}
+			},
+			{
+				"name": "jose",
+				"role": {
+					"en": "OAuth state and session tokens",
+					"zh": "OAuth 状态与会话令牌"
+				}
+			},
+			{
+				"name": "Railway",
+				"role": {
+					"en": "Bun hosting with a persistent data volume",
+					"zh": "Bun 服务与持久数据卷"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "6de762074e00011009f7604bbeeb7c0b04923c00",
+			"sources": [
+				"package.json",
+				"apps/web/package.json",
+				"apps/worker/package.json",
+				"apps/web/src/lib/navigation.ts",
+				"apps/worker/scripts/app.ts",
+				"apps/worker/scripts/serve.ts",
+				"apps/worker/src/lib/auth-config.ts",
+				"apps/worker/src/lib/auth-routes.ts",
+				"apps/worker/src/lib/selection-service.ts",
+				"src/db/repo.ts",
+				"src/metrics/screen-4433.ts",
+				"src/metrics/select-score.ts",
+				"src/metrics/selection-calc.ts",
+				"scripts/refresh-select.ts",
+				"scripts/fetch-macro.ts",
+				"scripts/fetch-selection.ts",
+				"apps/web/vite.config.ts",
+				"Dockerfile",
+				"railway.toml"
+			]
+		}
 	}
 }
