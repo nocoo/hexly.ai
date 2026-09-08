@@ -197,6 +197,17 @@ test("restores directory filters with browser back and reloads a shared identity
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
 });
 
+test("hides the header preference rule when the surface menu wraps", async ({
+	page,
+}) => {
+	await page.goto("/");
+	const width = page.viewportSize()?.width ?? 0;
+	await expect(page.locator(".site-header .preferences")).toHaveCSS(
+		"border-left-width",
+		width <= 640 ? "0px" : "1px",
+	);
+});
+
 test("keeps archived projects accessible through their category and direct logo paths", async ({
 	page,
 }) => {
