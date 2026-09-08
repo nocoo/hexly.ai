@@ -1,0 +1,175 @@
+{
+  "projectId": "frogie",
+  "repository": "https://github.com/nocoo/frogie",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/frogie",
+  "baselineRevision": "79e16babfb6067dcd90ad59b900fa76ad282f35c",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Work on local project directories through a web coding assistant, keeping conversations, tool execution, MCP tools and resumable sessions together.",
+      "zh": "通过网页编程助手处理本地项目，把对话、工具执行、MCP 工具和可续接会话放在一起。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript / Bun",
+        "role": {
+          "en": "Service code, runtime and builds",
+          "zh": "服务代码、运行与构建"
+        }
+      },
+      {
+        "name": "Hono / WebSocket",
+        "role": {
+          "en": "HTTP APIs and streaming conversation events",
+          "zh": "HTTP API 与流式会话事件"
+        }
+      },
+      {
+        "name": "Anthropic SDK",
+        "role": {
+          "en": "Model calls and the custom tool loop",
+          "zh": "模型调用与自定义工具循环"
+        }
+      },
+      {
+        "name": "MCP TypeScript SDK",
+        "role": {
+          "en": "stdio connections and tool discovery",
+          "zh": "stdio 服务连接与工具发现"
+        }
+      },
+      {
+        "name": "SQLite / JSON",
+        "role": {
+          "en": "Settings, session indexes and conversation files",
+          "zh": "设置、会话索引与对话文件"
+        }
+      },
+      {
+        "name": "React / Vite / Zustand",
+        "role": {
+          "en": "Web interface and client state",
+          "zh": "网页界面与客户端状态"
+        }
+      },
+      {
+        "name": "Tailwind CSS / Radix UI",
+        "role": {
+          "en": "Styling and interactive components",
+          "zh": "样式与交互组件"
+        }
+      },
+      {
+        "name": "react-markdown / remark-gfm / rehype-highlight",
+        "role": {
+          "en": "Markdown and code highlighting",
+          "zh": "Markdown 与代码高亮"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "79e16babfb6067dcd90ad59b900fa76ad282f35c",
+      "sources": [
+        "package.json",
+        "packages/server/package.json",
+        "packages/web/package.json",
+        "packages/server/src/index.ts",
+        "packages/server/src/auth/middleware.ts",
+        "packages/server/src/routes/settings.ts",
+        "packages/server/src/routes/sessions.ts",
+        "packages/server/src/routes/ws-chat.ts",
+        "packages/server/src/engine/frogie-agent.ts",
+        "packages/server/src/engine/builtin-tools.ts",
+        "packages/server/src/engine/session-sync.ts",
+        "packages/server/src/mcp/client.ts",
+        "packages/server/src/db/connection.ts",
+        "packages/web/src/App.tsx",
+        "packages/web/src/pages/PromptsPage.tsx",
+        "packages/web/src/viewmodels/models.viewmodel.ts",
+        "packages/web/vite.config.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync and isolation",
+      "result": "Fresh git pull --ff-only succeeded before detailed investigation on clean isolated main. Original diverged checkout untouched."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile succeeded with normal Husky; source and lockfile unchanged."
+    },
+    {
+      "check": "Unit coverage",
+      "result": "bun run test:coverage passed 534 tests, with four existing Bun-native startup tests skipped by the Node-based runner. All current coverage thresholds passed. Log /tmp/readme-frogie-unit-tests.log."
+    },
+    {
+      "check": "Build",
+      "result": "bun run build passed server and frontend compilation; existing large-bundle and Vite native config-loader compatibility warnings retained. No tracked generated differences."
+    },
+    {
+      "check": "Isolated auth startup probe",
+      "result": "Actual startServer used an owned temporary SQLite/data directory and ephemeral ports. Real Hono Google routes with mocked token/userinfo replies plus Chromium verified the same-origin localhost callback and Secure session cookie. Anonymous settings access matched the documented authentication boundary. All temporary servers/data were cleaned up; no real Google/model requests or personal data. Log /tmp/readme-frogie-auth-probe.log."
+    },
+    {
+      "check": "Browser suite scope",
+      "result": "Default test:l3 was not run: it starts/reuses personal ~/.frogie and ports 7033/7034, lacks a login fixture and attempts real chat. README documents prerequisites instead of claiming this suite is isolated or passing."
+    },
+    {
+      "check": "Website and license",
+      "result": "GitHub metadata homepage is null; site project website is also null. frogie.dev.hexly.ai is a local development host, so only the language link appears. Actual LICENSE is MIT."
+    },
+    {
+      "check": "Links and parity",
+      "result": "All local image/document links resolve in both languages. Bash and dotenv examples match; fenced blocks balance. No README gate, hook or 6DQ material."
+    },
+    {
+      "check": "Normal commit and push",
+      "result": "Normal pre-commit passed types, lint and coverage. Fresh git pull --ff-only origin main before push succeeded with only the reviewed README commit ahead. Normal pre-push actually passed both scanners without warning-only failures. Logs /tmp/readme-frogie-commit.log and /tmp/readme-frogie-push.log."
+    },
+    {
+      "check": "Independent installed security scanners",
+      "result": "Installed osv-scanner scanned bun.lock (557 packages) with the repository configuration and found no issues. Installed gitleaks scanned the working tree (261.48 MB) and found no leaks. Both commands exited 0; logs /tmp/readme-frogie-osv.log and /tmp/readme-frogie-gitleaks.log. This is a working-tree scan, not a claim of full-history scanning."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "2ed89a295257f413969bae72ef50ece592e76f7a",
+    "url": "https://github.com/nocoo/frogie/commit/2ed89a295257f413969bae72ef50ece592e76f7a",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only origin main succeeded; only the reviewed README commit was ahead.",
+    "remoteReadback": "All three README byte sequences match local through GitHub Contents API at main (7744, 8573 and 1517 bytes); clean synchronized main.",
+    "remoteFiles": [
+      {
+        "path": "README.md",
+        "bytes": 7744,
+        "remoteBlob": "d84d87b1d78d2d466a149b1b289808462e39afec"
+      },
+      {
+        "path": "docs/README.en.md",
+        "bytes": 8573,
+        "remoteBlob": "057100b779c155b364f995a6d5a69bb3b1633cd8"
+      },
+      {
+        "path": "docs/README.md",
+        "bytes": 1517,
+        "remoteBlob": "2db1305f13b54481733af7da06c242f77a946489"
+      }
+    ],
+    "hooks": "Unmodified normal pre-commit passed types, lint and full current coverage. Normal pre-push actually passed OSV and gitleaks without scanner errors or warning-only failures. Independent installed scanner runs also passed: OSV 557 packages and gitleaks working tree 261.48 MB. No hook bypasses.",
+    "ci": {
+      "url": "https://github.com/nocoo/frogie/actions/runs/34232921532",
+      "workflowName": "CI",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "versionUnchanged": "0.1.1"
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "frogie.review.md"
+  }
+}

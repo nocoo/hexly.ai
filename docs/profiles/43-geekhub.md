@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c`
 
+## Project goal
+
+Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.
+
+集中阅读和整理 RSS 订阅，按需生成中文摘要与翻译。
+
+- [中文 README](https://github.com/nocoo/geekhub/blob/main/README.md) · [English README](https://github.com/nocoo/geekhub/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/geekhub/tree/ca7042dc77e4c64e317793b97a1c080c6fa8e567)
+- Source files: [`package.json`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/package.json), [`src/lib/feed-fetcher.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/lib/feed-fetcher.ts), [`src/lib/settings.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/lib/settings.ts), [`src/lib/supabase-server.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/lib/supabase-server.ts), [`src/lib/article-repository.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/lib/article-repository.ts), [`src/lib/rsshub.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/lib/rsshub.ts), [`src/contexts/AuthContext.tsx`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/contexts/AuthContext.tsx), [`src/app/api/ai/summarize/route.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/app/api/ai/summarize/route.ts), [`src/app/api/ai/translate/route.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/app/api/ai/translate/route.ts), [`src/components/ReaderView.tsx`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/src/components/ReaderView.tsx), [`supabase/migrations/20260113000000_schema.sql`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/supabase/migrations/20260113000000_schema.sql), [`scripts/run-api-e2e.sh`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/scripts/run-api-e2e.sh), [`tests/e2e/db-available.ts`](https://github.com/nocoo/geekhub/blob/ca7042dc77e4c64e317793b97a1c080c6fa8e567/tests/e2e/db-available.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application logic | 应用逻辑 |
+| Next.js | Web application and APIs | Web 应用与 API |
+| React | Reading interface | 阅读界面 |
+| Supabase | Authentication and database access | 认证与数据库访问 |
+| PostgreSQL | Feeds, articles, and reading state | 订阅、文章与阅读状态 |
+| Tailwind CSS | Interface styling | 界面样式 |
+| OpenAI SDK | Optional summaries and translations | 可选的摘要与翻译 |
+| rss-parser | RSS and Atom parsing | RSS 与 Atom 解析 |
+
 ## Current logo
 
 ![GeekHub source identity](../../public/logos/display/geekhub-160.webp)

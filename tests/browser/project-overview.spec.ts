@@ -79,9 +79,11 @@ for (const theme of ["light", "dark"] as const) {
 	});
 }
 
-test("removes the overview for unreviewed and archived projects without moving the artwork", async ({
+test("switches project overviews without moving artwork and keeps archived pages compatible", async ({
 	page,
 }) => {
+	const frogie = projects.find((project) => project.id === "frogie");
+	if (!frogie?.overview) throw new Error("Missing overview: frogie");
 	await page.goto("/logos/snaky");
 	await expect(page.locator(".project-overview")).toBeVisible();
 	const artworkTop = await page
@@ -89,7 +91,12 @@ test("removes the overview for unreviewed and archived projects without moving t
 		.evaluate((element) => element.getBoundingClientRect().top + scrollY);
 	await page.locator(".picker-item").filter({ hasText: "Frogie" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Frogie");
-	await expect(page.locator(".project-overview")).toHaveCount(0);
+	await expect(page.locator(".project-overview .project-goal > p")).toHaveText(
+		frogie.overview.goal.en,
+	);
+	await expect(page.locator(".project-overview .tech-name")).toHaveText(
+		frogie.overview.techStack.map((technology) => technology.name),
+	);
 	expect(
 		await page
 			.locator(".logo-review")

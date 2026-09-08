@@ -1,0 +1,136 @@
+{
+  "projectId": "codo",
+  "repository": "https://github.com/nocoo/codo",
+  "checkout": "/Users/nocoo/workspace/personal/codo",
+  "baselineRevision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Deliver local script and Claude Code events as Mac desktop banners, keep project and session history, and optionally summarize notifications with an AI Guardian.",
+      "zh": "将本地脚本和 Claude Code 事件显示为 Mac 桌面横幅，保存项目与会话记录，并按需使用 AI Guardian 整理通知。"
+    },
+    "techStack": [
+      {
+        "name": "Swift / SwiftUI",
+        "role": {
+          "en": "Menu bar app and Dashboard",
+          "zh": "菜单栏应用与控制台"
+        }
+      },
+      {
+        "name": "AppKit",
+        "role": {
+          "en": "Custom desktop banners",
+          "zh": "桌面自绘横幅"
+        }
+      },
+      {
+        "name": "TypeScript / Bun",
+        "role": {
+          "en": "CLI and Guardian process",
+          "zh": "命令行与 Guardian 进程"
+        }
+      },
+      {
+        "name": "Unix sockets",
+        "role": {
+          "en": "Local event delivery",
+          "zh": "本地事件传输"
+        }
+      },
+      {
+        "name": "SQLite / Keychain",
+        "role": {
+          "en": "Event storage and API keys",
+          "zh": "事件存储与 API key"
+        }
+      },
+      {
+        "name": "Anthropic / OpenAI SDKs",
+        "role": {
+          "en": "Optional notification summaries",
+          "zh": "可选的通知摘要"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a",
+      "sources": [
+        "Package.swift",
+        "cli/codo.ts",
+        "guardian/package.json",
+        "guardian/classifier.ts",
+        "guardian/llm.ts",
+        "Sources/Codo/AppDelegate.swift",
+        "Sources/Codo/BannerProvider.swift",
+        "Sources/Codo/GuardianPathResolver.swift",
+        "Sources/CodoCore/EventStore.swift",
+        "Sources/CodoCore/GuardianSettings.swift",
+        "hooks/claude-hook.sh",
+        "scripts/build.sh",
+        "scripts/install.sh"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main, no ahead; git pull --ff-only succeeded."
+    },
+    {
+      "check": "Dependencies",
+      "result": "Root and guardian bun install --frozen-lockfile passed without lock changes."
+    },
+    {
+      "check": "CLI tests",
+      "result": "cd cli && bun test passed: 79 tests."
+    },
+    {
+      "check": "Guardian tests",
+      "result": "cd guardian && bun test passed: 172 tests with mock model clients."
+    },
+    {
+      "check": "Build and Unix socket integration",
+      "result": "bash scripts/integration-test.sh built current Swift source and passed 35 checks using temporary home/socket."
+    },
+    {
+      "check": "Swift unit tests",
+      "result": "Initial CLT selection lacked Testing. With DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer, swift test passed: 169 tests in 31 suites. Existing Swift 6 concurrency warnings remain; no hook/test changes."
+    },
+    {
+      "check": "Links and parity",
+      "result": "15 local references in each language exist; bash and JSON examples match."
+    },
+    {
+      "check": "Native UI and installation",
+      "result": "Not run: UI script stops the existing app and requires visual confirmation; installation and personal app configuration were not changed."
+    },
+    {
+      "check": "Normal pre-commit",
+      "result": "Swift, CLI and Guardian tests, strict SwiftLint and Biome checks passed with process-level Xcode selection."
+    },
+    {
+      "check": "Normal pre-push",
+      "result": "All pre-commit layers reran and passed; 35 isolated Unix socket/hook integration checks passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "c1b4552e7ba36b99945b046164ccec64c928ff80",
+    "url": "https://github.com/nocoo/codo/commit/c1b4552e7ba36b99945b046164ccec64c928ff80",
+    "prePushPull": "git pull --ff-only returned Already up to date; only task README commit ahead.",
+    "remoteReadback": "GitHub Contents API read back both README files at main; bytes match local. One transient connection reset on English readback resolved on retry.",
+    "ci": {
+      "url": "https://github.com/nocoo/codo/actions/runs/34222356069",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "codo.review.md"
+  }
+}

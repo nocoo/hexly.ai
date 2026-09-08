@@ -1,0 +1,122 @@
+{
+  "projectId": "hooky",
+  "repository": "https://github.com/nocoo/hooky",
+  "checkout": "/Users/nocoo/workspace/personal/hooky",
+  "baselineRevision": "8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Send page URLs, titles, selections, and metadata to configured webhooks from Chrome, using a popup, context menu, or click-triggered rules.",
+      "zh": "通过 Chrome 弹窗、右键菜单或点击触发的规则，将页面 URL、标题、选区和元数据发送到指定 Webhook。"
+    },
+    "techStack": [
+      {
+        "name": "JavaScript / HTML / CSS",
+        "role": {
+          "en": "Extension logic and UI",
+          "zh": "扩展逻辑与界面"
+        }
+      },
+      {
+        "name": "Chrome Extensions Manifest V3",
+        "role": {
+          "en": "Service worker and browser integration",
+          "zh": "Service worker 与浏览器集成"
+        }
+      },
+      {
+        "name": "chrome.storage.local",
+        "role": {
+          "en": "Local templates and rules",
+          "zh": "本地模板与规则"
+        }
+      },
+      {
+        "name": "Fetch API",
+        "role": {
+          "en": "Webhook requests",
+          "zh": "Webhook 请求"
+        }
+      },
+      {
+        "name": "Vitest / jsdom",
+        "role": {
+          "en": "Unit and DOM tests",
+          "zh": "单元与 DOM 测试"
+        }
+      },
+      {
+        "name": "Puppeteer",
+        "role": {
+          "en": "Browser end-to-end tests",
+          "zh": "浏览器端到端测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a",
+      "sources": [
+        "manifest.json",
+        "package.json",
+        "src/background.js",
+        "src/quicksend.js",
+        "src/rules.js",
+        "src/store.js",
+        "src/pagecontext.js",
+        "src/webhook.js",
+        "src/params.js",
+        "tests/e2e/extension.e2e.js"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main with no ahead; git pull --ff-only returned Already up to date."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed without lock changes and installed Husky."
+    },
+    {
+      "check": "Unit and DOM tests",
+      "result": "bun run test passed: 277 tests in 14 files."
+    },
+    {
+      "check": "Browser E2E",
+      "result": "bun run test:e2e passed 34 assertions with a separate browser and ephemeral loopback webhook server; no personal browser profile or external webhook used."
+    },
+    {
+      "check": "Website",
+      "result": "Chrome Web Store URL from current site/source returned HTTP 200 at the same listing URL."
+    },
+    {
+      "check": "Links and parity",
+      "result": "13 local references per language exist; bash/JSON examples match; git diff --check passed."
+    },
+    {
+      "check": "Normal commit and push",
+      "result": "Pre-commit coverage, lint and normal pre-push unit tests/lint passed."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "44c66401dfe78fbfc1ebd80d545ce62eff048e35",
+    "url": "https://github.com/nocoo/hooky/commit/44c66401dfe78fbfc1ebd80d545ce62eff048e35",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both READMEs fetched through GitHub Contents API at main match local bytes. Working tree clean.",
+    "ci": {
+      "url": "https://github.com/nocoo/hooky/actions/runs/34225085452",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "hooky.review.md"
+  }
+}

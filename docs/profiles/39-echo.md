@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `59730aa033b97d0a9ff917b34a90bedef2a06c39`
 
+## Project goal
+
+Give network diagnostic tools IP location and network data, plus observations of DNS resolver exit addresses.
+
+为网络诊断工具提供 IP 位置与运营商信息，并观察 DNS 解析器的出口地址。
+
+- [中文 README](https://github.com/nocoo/echo/blob/main/README.md) · [English README](https://github.com/nocoo/echo/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/echo/tree/b7373ec8e5d09a59847b3b9aa04f73526a019a41)
+- Source files: [`package.json`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/package.json), [`packages/ip-service/package.json`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/ip-service/package.json), [`packages/ip-service/src/server.ts`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/ip-service/src/server.ts), [`packages/ip-service/src/services/ipLookup.ts`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/ip-service/src/services/ipLookup.ts), [`packages/ip-service/src/services/selectBest.ts`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/ip-service/src/services/selectBest.ts), [`packages/ip-service/vercel.json`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/ip-service/vercel.json), [`packages/collector/package.json`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/collector/package.json), [`packages/collector/src/index.ts`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/collector/src/index.ts), [`packages/collector/wrangler.toml`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/collector/wrangler.toml), [`packages/dns-probe/main.go`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/dns-probe/main.go), [`packages/dns-probe/go.mod`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/packages/dns-probe/go.mod), [`.github/workflows/release.yml`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/echo/blob/b7373ec8e5d09a59847b3b9aa04f73526a019a41/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | IP API and result collector | IP API 与结果收集服务 |
+| Bun | Local API runtime and workspaces | 本地 API 运行时与工作区管理 |
+| Hono | IP lookup HTTP routes | IP 查询 HTTP 路由 |
+| Vercel | IP service hosting | IP 服务托管 |
+| Go | Authoritative DNS probe | 权威 DNS 探针 |
+| Cloudflare Workers | DNS result collection API | DNS 结果收集 API |
+| Cloudflare KV | Short-lived resolver observations | 短期保存解析器观察记录 |
+| Vitest | IP service unit and HTTP tests | IP 服务单元与 HTTP 测试 |
+
 ## Current logo
 
 ![Echo source identity](../../public/logos/display/echo-160.webp)

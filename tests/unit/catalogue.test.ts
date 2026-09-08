@@ -33,6 +33,14 @@ describe("the imported project catalogue", () => {
 			projects.filter((project) => project.logo.kind === "original"),
 		).toHaveLength(55);
 	});
+	it("provides a verified goal and stack for every active project", () => {
+		expect(
+			active.filter((project) => !project.overview).map(({ id }) => id),
+		).toEqual([]);
+		for (const project of active) {
+			expect(catalogueProblems([project])).toEqual([]);
+		}
+	});
 	it("finds projects by English, Chinese, emoji, repository name, and animal", () => {
 		for (const query of [
 			"frogie",
@@ -127,7 +135,7 @@ describe("the imported project catalogue", () => {
 			"Invalid or duplicate id: ../bad",
 		);
 	});
-	it("accepts verified overviews alongside projects awaiting research", () => {
+	it("accepts verified overviews alongside legacy records without research", () => {
 		const reviewed = { ...frogie, overview };
 		expect(parseCatalogue([reviewed])).toEqual([reviewed]);
 		expect(catalogueProblems([{ ...frogie, overview: undefined }])).toEqual([]);

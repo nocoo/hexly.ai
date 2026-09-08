@@ -13,6 +13,26 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `61a55cdb4380bc9e5dbaada3390ef29c7be6b84a`
 
+## Project goal
+
+Review quarantine results for apps in /Applications and select trusted apps for batch removal of the quarantine attribute.
+
+查看 /Applications 内应用的隔离检测结果，选择可信应用后批量移除隔离属性。
+
+- [中文 README](https://github.com/nocoo/unseal/blob/main/README.md) · [English README](https://github.com/nocoo/unseal/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/unseal/tree/2f31f698e1de11409d48dcf9e543bbb8c0706a7b)
+- Source files: [`package.json`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/package.json), [`src/index.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/index.ts), [`src/scanner.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/scanner.ts), [`src/prompt.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/prompt.ts), [`src/sudo.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/sudo.ts), [`src/unseal.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/unseal.ts), [`src/exec.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/exec.ts), [`src/debug.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/src/debug.ts), [`vitest.config.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/vitest.config.ts), [`tests/exec.test.ts`](https://github.com/nocoo/unseal/blob/2f31f698e1de11409d48dcf9e543bbb8c0706a7b/tests/exec.test.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript / Node.js | CLI logic and published-package runtime | CLI 逻辑与发布包运行环境 |
+| Bun | Development and ESM bundling | 开发运行与 ESM 打包 |
+| Inquirer / chalk | Terminal selection and colors | 终端选择与着色 |
+| xattr / spctl / sudo | macOS attributes, assessment and permissions | macOS 属性、评估与权限操作 |
+| Vitest | Module, flow and subprocess tests | 模块、流程与子进程测试 |
+
 ## Current logo
 
 ![Unseal source identity](../../public/logos/display/unseal-160.webp)

@@ -1,0 +1,231 @@
+{
+  "projectId": "lyre",
+  "repository": "https://github.com/nocoo/lyre",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/lyre",
+  "baselineRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Manage recordings, transcribe speech and follow the text during audio playback.",
+      "zh": "管理录音、转写文字，并在回听时查看对应内容。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript / Bun",
+        "role": {
+          "en": "Web and API logic, workspaces and development scripts",
+          "zh": "Web 与 API 逻辑、工作区与开发脚本"
+        }
+      },
+      {
+        "name": "Vite / React / Basalt",
+        "role": {
+          "en": "Recording management, playback and transcript interface",
+          "zh": "录音管理、播放与转写界面"
+        }
+      },
+      {
+        "name": "Hono / Cloudflare Workers",
+        "role": {
+          "en": "API, static assets and scheduled job polling",
+          "zh": "API、静态资源与定时任务轮询"
+        }
+      },
+      {
+        "name": "Cloudflare D1 / Drizzle ORM",
+        "role": {
+          "en": "Recording metadata, transcripts, jobs and settings",
+          "zh": "录音资料、转写文字、任务与设置"
+        }
+      },
+      {
+        "name": "Aliyun OSS",
+        "role": {
+          "en": "Audio files and raw transcription results",
+          "zh": "音频文件与原始转写结果"
+        }
+      },
+      {
+        "name": "Aliyun DashScope",
+        "role": {
+          "en": "Asynchronous speech transcription",
+          "zh": "异步语音转写"
+        }
+      },
+      {
+        "name": "Vercel AI SDK / @nocoo/next-ai",
+        "role": {
+          "en": "Configurable model providers for summaries",
+          "zh": "可配置模型供应商的摘要生成"
+        }
+      },
+      {
+        "name": "Swift / SwiftUI",
+        "role": {
+          "en": "Native macOS menu bar application",
+          "zh": "原生 macOS 菜单栏应用"
+        }
+      },
+      {
+        "name": "ScreenCaptureKit / AVFoundation",
+        "role": {
+          "en": "System and microphone audio capture and encoding",
+          "zh": "系统与麦克风声音采集、编码"
+        }
+      },
+      {
+        "name": "Cloudflare Access / jose",
+        "role": {
+          "en": "Browser identity verification",
+          "zh": "浏览器身份校验"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e",
+      "sources": [
+        "package.json",
+        "bun.lock",
+        "apps/web/package.json",
+        "apps/web/vite.config.ts",
+        "apps/web/src/components/upload-dialog.tsx",
+        "apps/web/src/pages/recordings-list.tsx",
+        "apps/web/src/pages/recording-detail.tsx",
+        "apps/web/src/pages/settings.tsx",
+        "apps/api/package.json",
+        "apps/api/wrangler.toml",
+        "apps/api/src/index.ts",
+        "apps/api/src/lib/env.ts",
+        "apps/api/src/middleware/access-auth.ts",
+        "apps/api/src/middleware/bearer-auth.ts",
+        "apps/api/src/routes/recordings.ts",
+        "apps/api/src/routes/backy.ts",
+        "packages/api/package.json",
+        "packages/api/src/handlers/upload.ts",
+        "packages/api/src/handlers/recordings.ts",
+        "packages/api/src/handlers/jobs.ts",
+        "packages/api/src/handlers/settings-oss.ts",
+        "packages/api/src/handlers/settings-asr.ts",
+        "packages/api/src/handlers/settings-tokens.ts",
+        "packages/api/src/handlers/settings-backup.ts",
+        "packages/api/src/services/asr-provider.ts",
+        "packages/api/src/services/asr.ts",
+        "packages/api/src/services/job-processor.ts",
+        "packages/api/src/services/ai.ts",
+        "packages/api/src/services/backup.ts",
+        "packages/api/migrations/README.md",
+        "apps/macos/project.yml",
+        "apps/macos/Lyre/LyreApp.swift",
+        "apps/macos/Lyre/Audio/RecordingManager.swift",
+        "apps/macos/Lyre/Audio/AudioEncoder.swift",
+        "apps/macos/Lyre/Network/UploadManager.swift",
+        "apps/macos/Lyre/Config/AppConfig.swift",
+        "apps/macos/Lyre/Meeting/MeetingDetectionSettings.swift",
+        "apps/macos/LyreTests/RecordingE2ETests.swift",
+        "scripts/build-dmg.sh",
+        "scripts/run-e2e.ts",
+        "scripts/pre-push.ts",
+        "e2e/schema.sql",
+        "e2e/api/asr-multitrack.test.ts",
+        "playwright.config.ts",
+        ".github/workflows/ci.yml",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "clean original main and safe pull before research; independent clone and pull at matching baseline",
+      "frozen install with normal prepare after retrying a stalled task-owned download; no lockfile or manifest changes",
+      "Web build and unchanged unit test suite passed",
+      "unchanged local HTTP E2E runner passed; live ASR probe reported opt-out and made no external call",
+      "Playwright --list discovery only",
+      "macOS app build succeeded with full Xcode selected per command and a temporary DerivedData path; app not launched",
+      "synthetic local D1 backup export and import validated both insertion and update; restored folder verified and own fixture removed",
+      "own local Worker stopped; API/browser ports free on IPv4/IPv6; original local D1 state untouched",
+      "four-doc links, anchors, images, newlines, shell syntax, bilingual examples, eight-section order and scope verified",
+      "all evidence paths exist at baseline; git diff --check passed",
+      "GitHub latest release metadata read: v1.8.0 currently has no binary assets; no DMG download claimed",
+      "Both normal commits and final pre-push passed all gates: lint, 259 Vitest tests, typecheck, coverage, build, HTTP E2E, native suite and SwiftLint. Fresh pull before push; main pushed, all four remote documents and 16 code/config hashes verified. All four workspace versions remain 1.8.0.",
+      "Full Playwright browser suite passed in exact-commit CI; first L2 job failed before tests on registry HTTP4xx, with unchanged failed-job retry requested.",
+      "Unchanged L2 job rerun succeeded (CI34237051889 attempt2); automatic Release34237649853 completed successfully. No registry/lockfile/dependency change."
+    ],
+    "notRun": [
+      "real microphone/system capture, native app launch, uploads, OSS scans/cleanup, DashScope or model calls",
+      "DMG packaging, production migrations or manual Worker deployment"
+    ],
+    "limitations": [
+      "Original apps/api/.wrangler/state exists; local dev, API E2E and browser E2E share the same default test D1 state. e2e/schema.sql drops and recreates tables. Independent clone used.",
+      "Original hosted-test initialization and implicit live recording were resolved by the reviewed Debug empty-host and explicit opt-in patch; baseline finding and validation remain in lyre-native-isolation.md and lyre.review.md.",
+      "Original Xcode selection points at Command Line Tools; installed /Applications/Xcode.app works when selected with per-command DEVELOPER_DIR. Global selection unchanged.",
+      "Browser upload limit is 500 MiB; presign only validates audio MIME. Upload creates metadata but does not start transcription automatically.",
+      "ASR without DASHSCOPE_API_KEY uses mock results; this does not provide mocked OSS configuration. Some local HTTP cases accept expected configuration-error statuses.",
+      "Word playback requires original ASR JSON archived in OSS; archival is best-effort. Summary failure is independent of transcription completion.",
+      "Native recorder defaults to dual-track; upload attempts single-track downmix and falls back to the original on failure. Native config stores the Token in JSON, not Keychain.",
+      "Teams meeting detection defaults on, is optional and uses confirmation prompts before recording actions.",
+      "JSON backup includes settings and device token hashes, excludes OSS files and Worker secrets; import merges/updates by ID.",
+      "Recording APIs check user ownership, but Storage scans the entire OSS bucket and cleanup has no separate administrator role.",
+      "Backy pull webhook triggers a new push, not data restore. Machine requests need suitable Cloudflare Access edge policies before application auth.",
+      "Test environment OSS_BUCKET is still lyre; real credentials require a separate external bucket. Production migration files are in packages/api/migrations; Wrangler config does not set migrations_dir.",
+      "Release deploys main only after CI success, without D1 migrations or automatic DMG attachment; no deploy:test command."
+    ],
+    "nativeIsolation": {
+      "safeAndLiveBuildOnly": "Both build-for-testing passed; actual xctestrun host=1 and recording=0/1. Live configuration never executed. Release build passed.",
+      "sentinel": "6 cases / 9 parameter instances passed; empty-host sentinel was explicitly present in xcresult.",
+      "fullDefault": "231 passed, 0 failures, only 3 live recording cases skipped, no expected failures; 6 policy tests included.",
+      "runner": "6 Vitest policy cases plus fake-xcodebuild success, failure, explicit-live-without-capture, SIGINT and SIGTERM checks passed; awaited shutdown and diagnostic retention verified.",
+      "docs": "Root applied Services draft after runtime verification. Both normal commits and complete final pre-push passed; exact-commit CI and automatic Release also passed.",
+      "lint": "Initial hook caught generated DerivedData and Playwright report files. Biome now excludes the Git-ignored test-results and playwright-report artifact directories; the complete source lint passed without rule changes."
+    }
+  },
+  "publication": {
+    "commit": "3acc9494a246cc5e86888b42dc15535737390337",
+    "nativeIsolationCommit": "0e50ca0a07d2d383a4755047da4db2f9956106a3",
+    "branch": "main",
+    "remoteReadback": "All four documentation files byte-match the exact GitHub commit; all 16 approved execution-fix files match origin/main hashes. Main is clean and synchronized.",
+    "documents": {
+      "README.md": "54ae33303ec03d97803916d86fc8a9a7d6654df3d3ed5a966c8315ea4af75386",
+      "docs/README.en.md": "940b35ce579b314ca8d1c16a9a0026a5cde476e855744092a02f8b14ae6f59e6",
+      "docs/README.md": "8c8a5e221cfdea7725d2fb5ecb39a033781f9ee9408e9c8586b8c29b8b4181e1",
+      "docs/08-development.md": "0eab7a8ea21bc684633c82d69dd8d784b75fb97a794fe0030511323063515584"
+    },
+    "logs": [
+      "/tmp/readme-refresh-lyre-native-commit-retry.log",
+      "/tmp/readme-refresh-lyre-docs-commit.log",
+      "/tmp/readme-refresh-lyre-push.log"
+    ],
+    "ci": [
+      {
+        "databaseId": 34237051889,
+        "name": "CI",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/lyre/actions/runs/34237051889",
+        "attempt": 2
+      },
+      {
+        "databaseId": 34237649853,
+        "name": "Release",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/lyre/actions/runs/34237649853"
+      }
+    ],
+    "initialCi": {
+      "id": 34237051889,
+      "attempt": 1,
+      "result": "L1/static/security and full browser passed; L2 dependency installation failed with HTTP4xx for two existing Microsoft mirror tarballs. Failed job rerun unchanged; no source, lockfile or registry edits."
+    }
+  },
+  "publicationConstraints": [
+    "Parent approval required. Native isolation implementation is authorized by lyre-native-isolation.review.md; root currently owns source edits, Native performs read-only review, and Services owns the four docs. Do not invoke native tests or normal hooks until the staged parent approvals permit them. After the implemented runner is verified, update the native test documentation before final publication review. No live audio capture is authorized."
+  ],
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "lyre.review.md"
+  }
+}

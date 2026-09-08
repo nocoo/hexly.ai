@@ -1,0 +1,123 @@
+{
+  "projectId": "arena",
+  "repository": "https://github.com/nocoo/arena",
+  "checkout": "/Users/nocoo/workspace/personal/arena",
+  "baselineRevision": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Collect coding assistants’ proposals on a local discussion board, let a person record decisions, and return those checkpoints to assistants through a CLI.",
+      "zh": "在本机讨论看板汇集编码助手的方案，由人记录决策，再通过 CLI 将 checkpoint 提供给助手读取。"
+    },
+    "techStack": [
+      {
+        "name": "Bun / TypeScript",
+        "role": {
+          "en": "CLI and shared logic",
+          "zh": "CLI 与共享逻辑"
+        }
+      },
+      {
+        "name": "commander",
+        "role": {
+          "en": "CLI argument parsing",
+          "zh": "CLI 参数解析"
+        }
+      },
+      {
+        "name": "SQLite / Drizzle ORM",
+        "role": {
+          "en": "Local discussion data",
+          "zh": "本地讨论数据"
+        }
+      },
+      {
+        "name": "Next.js / React",
+        "role": {
+          "en": "Dashboard and server routes",
+          "zh": "看板与服务端路由"
+        }
+      },
+      {
+        "name": "NextAuth / Google OAuth",
+        "role": {
+          "en": "Dashboard login",
+          "zh": "看板登录"
+        }
+      },
+      {
+        "name": "Tailwind CSS / Radix UI",
+        "role": {
+          "en": "Styling and UI components",
+          "zh": "样式与界面组件"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93",
+      "sources": [
+        "package.json",
+        "packages/core/src/db/connection.ts",
+        "packages/core/src/services/arena.ts",
+        "packages/core/src/services/project-id.ts",
+        "packages/cli/src/index.ts",
+        "packages/cli/src/commands/pop.ts",
+        "packages/web/package.json",
+        "packages/web/src/auth.ts",
+        "packages/web/src/app/api/checkpoint/route.ts",
+        "packages/web/src/app/topic/[id]/topic-view.tsx"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main and git pull --ff-only succeeded before investigation."
+    },
+    {
+      "check": "Dependencies and core build",
+      "result": "bun install --frozen-lockfile and core tsc build passed."
+    },
+    {
+      "check": "Unit coverage",
+      "result": "39 core tests plus 31 CLI unit tests passed with repository coverage requirements."
+    },
+    {
+      "check": "Complete tests",
+      "result": "bun run test passed 39 core tests and 44 CLI tests, including real CLI subprocesses with temporary databases."
+    },
+    {
+      "check": "Distribution and license",
+      "result": "GitHub homepage null; no public website added. Actual LICENSE is MIT despite previous README saying Private."
+    },
+    {
+      "check": "Full build",
+      "result": "Root bun run build passed core, CLI and Next.js standalone build with seven app routes; no Google login or personal DB opened."
+    },
+    {
+      "check": "Links and bilingual examples",
+      "result": "All 6 references per language resolve; bash and dotenv code blocks match."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "b5c6a2439129628d8c11b81b9e9a1793f1bea461",
+    "url": "https://github.com/nocoo/arena/commit/b5c6a2439129628d8c11b81b9e9a1793f1bea461",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both README byte sequences match local through GitHub Contents API at main; clean synchronized main.",
+    "hooks": "Normal pre-commit passed; pre-push full core/CLI tests, workspace lint and security checks passed. Existing esbuild advisory filter unchanged.",
+    "ci": {
+      "url": "https://github.com/nocoo/arena/actions/runs/34226658696",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "arena.review.md"
+  }
+}

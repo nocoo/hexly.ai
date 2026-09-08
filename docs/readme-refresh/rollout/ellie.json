@@ -1,0 +1,173 @@
+{
+  "projectId": "ellie",
+  "repository": "https://github.com/nocoo/ellie",
+  "checkout": "/Users/nocoo/workspace/personal/ellie",
+  "baselineRevision": "5b59a96419ca72d6a3b27fe004f08d79fec2728c",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Browse and maintain the Tongji Network forum, bringing historical Discuz content into a current community interface.",
+      "zh": "浏览与维护同济网论坛，将 Discuz 历史内容接入新的社区界面。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Applications, shared packages and migration tools",
+          "zh": "应用、共享包与迁移工具"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Forum, admin console and server API proxies",
+          "zh": "论坛、后台与服务端 API 代理"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Community and administration interfaces",
+          "zh": "社区与管理交互界面"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Forum API and scheduled jobs",
+          "zh": "论坛 API 与定时任务"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Forum records and search indexes",
+          "zh": "论坛数据与搜索索引"
+        }
+      },
+      {
+        "name": "Cloudflare KV",
+        "role": {
+          "en": "Caches and runtime state",
+          "zh": "缓存与运行状态"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Uploaded files",
+          "zh": "上传文件存储"
+        }
+      },
+      {
+        "name": "Auth.js",
+        "role": {
+          "en": "Forum credentials and admin Google sessions",
+          "zh": "论坛密码登录与后台 Google 会话"
+        }
+      },
+      {
+        "name": "Rust",
+        "role": {
+          "en": "Terminal API client",
+          "zh": "终端 API 客户端"
+        }
+      },
+      {
+        "name": "ratatui",
+        "role": {
+          "en": "Terminal browsing interface",
+          "zh": "终端浏览界面"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Workspaces, SQLite migration and tests",
+          "zh": "工作区、SQLite 迁移与测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "5b59a96419ca72d6a3b27fe004f08d79fec2728c",
+      "sources": [
+        "package.json",
+        "apps/web/package.json",
+        "apps/admin/package.json",
+        "apps/worker/package.json",
+        "apps/worker/wrangler.toml",
+        "apps/worker/src/index.ts",
+        "apps/worker/src/middleware/apiKey.ts",
+        "apps/worker/src/handlers/search.ts",
+        "apps/web/src/auth.ts",
+        "apps/admin/src/auth.ts",
+        "apps/worker/.dev.vars.example",
+        "packages/cli-rs/Cargo.toml",
+        "packages/cli-rs/ellie-core/src/config.rs",
+        "packages/cli-rs/ellie-tui/src/app.rs",
+        "packages/migrate/src/index.ts",
+        "scripts/run-l2.ts",
+        "scripts/run-l3-admin.ts",
+        "tests/e2e/fixtures/base.ts",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check",
+      "four documents: relative links, images and README section order",
+      "bilingual shell examples, bash syntax and script references",
+      "isolated local D1 initialization from all unchanged Worker migrations",
+      "installed Worker CLI path verified",
+      "current forum and admin domains verified from release workflow; MIT license verified",
+      "frozen workspace dependency installation with normal Husky preparation",
+      "normal pre-commit: staged lint, all configured coverage checks, staged secret scan, isolated HTTP Worker tests",
+      "normal pre-push: typecheck, lint, coverage, Bun unit cases, local HTTP tests, JS/Rust dependency scans and secret scan",
+      "GitHub contents API exact-byte readback for Chinese and English README at published commit",
+      "clean main with origin/main in sync after push",
+      "CI and Release succeeded; both Docker sites passed workflow smoke checks"
+    ],
+    "notRun": [
+      "browser suites locally; CI browser checks passed",
+      "Rust external API integration (environment unset)",
+      "development servers, real Cap, Google OAuth or email verification",
+      "historical community data migration or production data writes"
+    ],
+    "limitations": [
+      "TUI covers browsing, local filtering and login; it has no post/reply actions.",
+      "Fresh configuration needs distinct forum/admin keys, Cap for web login and Dove for email verification.",
+      "Browser runners share local Worker state and the admin runner uses development port 7032.",
+      "Browser tests bypass the Cap UI and inject admin sessions; they do not verify Google OAuth or real mail delivery.",
+      "Historical docs retain outdated domains, CLI configuration and remote-test instructions; the new development guide identifies current entry points."
+    ]
+  },
+  "publication": {
+    "revision": "7271e3187fa9f9fc305c2e58647d2de4a50516f9",
+    "branch": "main",
+    "readmeReadback": "exact_match",
+    "ci": [
+      {
+        "id": 34224755255,
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/ellie/actions/runs/34224755255"
+      }
+    ],
+    "deployment": {
+      "id": 34225174210,
+      "status": "completed",
+      "url": "https://github.com/nocoo/ellie/actions/runs/34225174210",
+      "mechanism": "Release workflow deploys forum and admin Docker sites after main CI succeeds",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "ellie.review.md"
+  }
+}

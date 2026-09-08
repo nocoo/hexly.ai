@@ -196,5 +196,89 @@
 			"en": "At 32 px, the hooked beak, bright eye, and indigo silhouette remain the strongest cues. At 16 px the feather facets simplify into a dark profile with cool highlights.",
 			"zh": "32 像素时，弯喙、亮眼与靛蓝轮廓最易辨认；16 像素时羽毛切面会简化为带冷色高光的深色侧影。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Connect compatible clients to GitHub Copilot and custom model upstreams through a local API proxy, with request analytics and live diagnostics.",
+			"zh": "通过本机 API 代理将兼容客户端接入 GitHub Copilot 与自定义模型上游，并查看调用统计和实时诊断信息。"
+		},
+		"techStack": [
+			{
+				"name": "Bun / TypeScript / Hono",
+				"role": {
+					"en": "Proxy runtime, HTTP routing and SSE",
+					"zh": "代理运行环境、HTTP 路由与 SSE"
+				}
+			},
+			{
+				"name": "SQLite",
+				"role": {
+					"en": "Request records, keys, settings and providers",
+					"zh": "请求记录、密钥、设置与 provider"
+				}
+			},
+			{
+				"name": "Next.js / React",
+				"role": {
+					"en": "Dashboard and server routes",
+					"zh": "Dashboard 与服务端接口"
+				}
+			},
+			{
+				"name": "Basalt / Tailwind CSS",
+				"role": {
+					"en": "Components and styling",
+					"zh": "组件与样式"
+				}
+			},
+			{
+				"name": "SWR / Recharts",
+				"role": {
+					"en": "Data updates and analytics charts",
+					"zh": "数据更新与统计图表"
+				}
+			},
+			{
+				"name": "NextAuth / Google OAuth",
+				"role": {
+					"en": "Optional dashboard login",
+					"zh": "可选的 Dashboard 登录"
+				}
+			},
+			{
+				"name": "Zod / gpt-tokenizer",
+				"role": {
+					"en": "Validation and token estimates",
+					"zh": "校验与 token 估算"
+				}
+			},
+			{
+				"name": "socks / Tavily",
+				"role": {
+					"en": "Optional outbound proxy and web search",
+					"zh": "可选出站代理与网络搜索"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "a668dbf4fa318429e34686f7bf86731ca1494fd4",
+			"sources": [
+				"package.json",
+				"packages/proxy/package.json",
+				"packages/proxy/src/index.ts",
+				"packages/proxy/src/app.ts",
+				"packages/proxy/src/core/router.ts",
+				"packages/proxy/src/composition/strategy-registry.ts",
+				"packages/proxy/src/middleware.ts",
+				"packages/proxy/src/lib/token.ts",
+				"packages/proxy/src/lib/app-dirs.ts",
+				"packages/proxy/src/db/providers.ts",
+				"packages/dashboard/package.json",
+				"packages/dashboard/src/auth.ts",
+				"packages/dashboard/src/lib/proxy.ts",
+				"packages/dashboard/src/components/layout/sidebar.tsx"
+			]
+		}
 	}
 }

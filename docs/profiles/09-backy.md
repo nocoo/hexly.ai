@@ -13,6 +13,31 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `5b23349c94ac6778f2242a857386e8b01dac4f1c`
 
+## Project goal
+
+Collect application backups, inspect content and history by project, and retrieve original files.
+
+集中接收应用备份，按项目查看内容、追踪记录，并取回原始文件。
+
+- [中文 README](https://github.com/nocoo/backy/blob/main/README.md) · [English README](https://github.com/nocoo/backy/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/backy/tree/5b23349c94ac6778f2242a857386e8b01dac4f1c)
+- Source files: [`package.json`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/package.json), [`apps/web/package.json`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/web/package.json), [`apps/worker/package.json`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/package.json), [`apps/cli/src/index.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/cli/src/index.ts), [`apps/web/vite.config.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/web/vite.config.ts), [`apps/worker/wrangler.toml`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/wrangler.toml), [`apps/worker/src/index.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/src/index.ts), [`apps/worker/src/middleware/access-auth.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/src/middleware/access-auth.ts), [`apps/worker/src/middleware/is-localhost.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/src/middleware/is-localhost.ts), [`apps/worker/src/middleware/ctx.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/src/middleware/ctx.ts), [`packages/api/src/handlers/webhook.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/handlers/webhook.ts), [`packages/api/src/handlers/restore.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/handlers/restore.ts), [`packages/api/src/handlers/webhook-direct.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/handlers/webhook-direct.ts), [`packages/api/src/handlers/backups.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/handlers/backups.ts), [`packages/api/src/handlers/cron.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/handlers/cron.ts), [`packages/api/src/handlers/gc.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/handlers/gc.ts), [`packages/api/src/lib/direct-upload.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/lib/direct-upload.ts), [`packages/api/src/lib/backup/extractors.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/lib/backup/extractors.ts), [`packages/api/src/lib/db/schema.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/lib/db/schema.ts), [`packages/api/src/lib/r2/s3-adapter.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/packages/api/src/lib/r2/s3-adapter.ts), [`apps/worker/migrations/0001_direct_uploads.sql`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/apps/worker/migrations/0001_direct_uploads.sql), [`scripts/run-e2e.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/scripts/run-e2e.ts), [`scripts/run-e2e-bdd.ts`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/scripts/run-e2e-bdd.ts), [`.github/workflows/release.yml`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Shared types, API logic and scripts | 共享类型、API 逻辑与脚本 |
+| Bun workspaces | Workspace dependencies and local tooling | 工作区依赖与本地工具 |
+| Vite | Dashboard development and static builds | 管理界面开发与静态构建 |
+| React | Backup management interface | 备份管理界面 |
+| Hono | HTTP routes and middleware | HTTP 路由与中间件 |
+| Cloudflare Workers | API, scheduled jobs and static assets | API、定时任务与静态资源 |
+| Cloudflare D1 | Projects, backup metadata and logs | 项目、备份元数据与日志 |
+| Cloudflare R2 | Backup files and direct uploads | 备份文件与直传 |
+| AWS S3 SDK | Signed URLs and object copying | 签名 URL 与对象复制 |
+| Cloudflare Access | Dashboard sign-in | 管理界面登录 |
+
 ## Current logo
 
 ![Backy source identity](../../public/logos/display/backy-160.webp)

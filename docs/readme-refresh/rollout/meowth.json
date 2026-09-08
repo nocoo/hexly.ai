@@ -1,0 +1,128 @@
+{
+  "projectId": "meowth",
+  "repository": "https://github.com/nocoo/meowth",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/meowth",
+  "baselineRevision": "803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Run locally installed coding CLIs through one web console and HTTP API, with streaming output and a record of their sessions.",
+      "zh": "通过同一个网页控制台与 HTTP 接口调用本机 coding CLI，查看流式输出并保存会话记录。"
+    },
+    "techStack": [
+      {
+        "name": "Go / Chi",
+        "role": {
+          "en": "Daemon, HTTP API and CLI subprocesses",
+          "zh": "daemon、HTTP 接口与 CLI 子进程"
+        }
+      },
+      {
+        "name": "SQLite / sqlc",
+        "role": {
+          "en": "Local tokens, sessions and events",
+          "zh": "本地 token、会话与事件"
+        }
+      },
+      {
+        "name": "React / TypeScript / Vite",
+        "role": {
+          "en": "Embedded dashboard",
+          "zh": "内嵌 Dashboard"
+        }
+      },
+      {
+        "name": "Basalt / Tailwind CSS",
+        "role": {
+          "en": "Components, themes and styling",
+          "zh": "组件、主题与样式"
+        }
+      },
+      {
+        "name": "React Markdown / remark-gfm",
+        "role": {
+          "en": "Chat and session content",
+          "zh": "聊天与会话内容展示"
+        }
+      },
+      {
+        "name": "pnpm / Turborepo",
+        "role": {
+          "en": "Frontend workspaces and builds",
+          "zh": "前端工作区与构建"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "803b5b59d3dd0f24a0ffaa5e896c76567a40c1d7",
+      "sources": [
+        "package.json",
+        "daemon/go.mod",
+        "daemon/cmd/meowthd/main.go",
+        "daemon/internal/agentfactory/agentfactory.go",
+        "daemon/internal/server/handlers/exec.go",
+        "daemon/internal/home/home.go",
+        "daemon/internal/remoteaccess/remoteaccess.go",
+        "daemon/internal/store/secret.go",
+        "apps/dashboard/package.json",
+        "apps/dashboard/vite.config.ts",
+        "apps/dashboard/src/models/chat.ts",
+        "apps/dashboard/src/lib/localStorage.ts",
+        "scripts/prepare-dashboard-embed.sh"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main; fresh git pull --ff-only succeeded before source investigation."
+    },
+    {
+      "check": "Dependencies",
+      "result": "pnpm install --frozen-lockfile exited 0. An update-metadata request reported a network warning; dependencies were already current. Normal .husky/_ hooks retained."
+    },
+    {
+      "check": "Embedded build",
+      "result": "pnpm daemon:build passed Vite build, static resource copy and Go compilation; existing bundle-size warning only, no tracked generated diff."
+    },
+    {
+      "check": "Go tests",
+      "result": "pnpm daemon:test passed all 20 tested packages; one generated package has no tests. Optional real CLI smoke kept disabled by default."
+    },
+    {
+      "check": "Frontend tests",
+      "result": "Dashboard 511 tests in 81 files and shared 1 test in 1 file passed. Existing Node26 localStorage experimental warnings only."
+    },
+    {
+      "check": "Links and bilingual examples",
+      "result": "All 15 local references per language resolve; Bash and PowerShell blocks match. Vite requires Node ^20.19.0 or >=22.12.0; README recommends Node24LTS."
+    },
+    {
+      "check": "Website, distribution and license",
+      "result": "GitHub homepage null, v0.7.0 release assets empty. Local meowth.dev.hexly.ai is not a public website. MIT original code and the vendored Modified Apache2.0 terms are both linked without interpreting their applicability."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "b4adc3efa89cd44d353d2f0c7628b48873ff3b8b",
+    "url": "https://github.com/nocoo/meowth/commit/b4adc3efa89cd44d353d2f0c7628b48873ff3b8b",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both README byte sequences match local through GitHub Contents API at main; clean synchronized main.",
+    "hooks": "Normal pre-commit and pre-push passed vet/typecheck, Go and frontend coverage, all default local HTTP integration suites, OSV, gitleaks and govulncheck. MEOWTH_TEST_HOME pointed to an owned temporary directory, removed after the push. No real CLI smoke flags enabled.",
+    "ci": {
+      "url": "https://github.com/nocoo/meowth/actions/runs/34228091267",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "postPublicationCheckout": "Original checkout acquired unrelated Hermes discovery code and a README link after the reviewed publication. Preserved it; final byte/scope verification uses a new clean main clone, freshly pulled at the same published SHA."
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "meowth.review.md"
+  },
+  "originalCheckout": "/Users/nocoo/workspace/personal/meowth"
+}

@@ -200,5 +200,114 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 275.5 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Collect application backups, inspect content and history by project, and retrieve original files.",
+			"zh": "集中接收应用备份，按项目查看内容、追踪记录，并取回原始文件。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Shared types, API logic and scripts",
+					"zh": "共享类型、API 逻辑与脚本"
+				}
+			},
+			{
+				"name": "Bun workspaces",
+				"role": {
+					"en": "Workspace dependencies and local tooling",
+					"zh": "工作区依赖与本地工具"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Dashboard development and static builds",
+					"zh": "管理界面开发与静态构建"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Backup management interface",
+					"zh": "备份管理界面"
+				}
+			},
+			{
+				"name": "Hono",
+				"role": {
+					"en": "HTTP routes and middleware",
+					"zh": "HTTP 路由与中间件"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "API, scheduled jobs and static assets",
+					"zh": "API、定时任务与静态资源"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Projects, backup metadata and logs",
+					"zh": "项目、备份元数据与日志"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Backup files and direct uploads",
+					"zh": "备份文件与直传"
+				}
+			},
+			{
+				"name": "AWS S3 SDK",
+				"role": {
+					"en": "Signed URLs and object copying",
+					"zh": "签名 URL 与对象复制"
+				}
+			},
+			{
+				"name": "Cloudflare Access",
+				"role": {
+					"en": "Dashboard sign-in",
+					"zh": "管理界面登录"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "5b23349c94ac6778f2242a857386e8b01dac4f1c",
+			"sources": [
+				"package.json",
+				"apps/web/package.json",
+				"apps/worker/package.json",
+				"apps/cli/src/index.ts",
+				"apps/web/vite.config.ts",
+				"apps/worker/wrangler.toml",
+				"apps/worker/src/index.ts",
+				"apps/worker/src/middleware/access-auth.ts",
+				"apps/worker/src/middleware/is-localhost.ts",
+				"apps/worker/src/middleware/ctx.ts",
+				"packages/api/src/handlers/webhook.ts",
+				"packages/api/src/handlers/restore.ts",
+				"packages/api/src/handlers/webhook-direct.ts",
+				"packages/api/src/handlers/backups.ts",
+				"packages/api/src/handlers/cron.ts",
+				"packages/api/src/handlers/gc.ts",
+				"packages/api/src/lib/direct-upload.ts",
+				"packages/api/src/lib/backup/extractors.ts",
+				"packages/api/src/lib/db/schema.ts",
+				"packages/api/src/lib/r2/s3-adapter.ts",
+				"apps/worker/migrations/0001_direct_uploads.sql",
+				"scripts/run-e2e.ts",
+				"scripts/run-e2e-bdd.ts",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

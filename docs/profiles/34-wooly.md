@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `e516e1fbcbd146fcda6b80cf071bd5367e611afd`
 
+## Project goal
+
+Keep household benefit accounts, usage cycles and redemption records together so family members can check remaining allowances, expiry and points.
+
+集中记录家庭权益账户、使用周期与核销记录，方便核对剩余额度、到期时间和积分。
+
+- [中文 README](https://github.com/nocoo/wooly/blob/main/README.md) · [English README](https://github.com/nocoo/wooly/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/wooly/tree/611b99cc868dc3e90ff5b20f54785d0d858d10ed)
+- Source files: [`package.json`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/package.json), [`worker/package.json`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/worker/package.json), [`src/models/types.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/models/types.ts), [`src/models/cycle.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/models/cycle.ts), [`src/models/points.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/models/points.ts), [`src/viewmodels/usePointsDetailViewModel.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/viewmodels/usePointsDetailViewModel.ts), [`src/auth.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/auth.ts), [`src/hooks/use-dataset-context.tsx`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/hooks/use-dataset-context.tsx), [`src/services/worker-client.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/src/services/worker-client.ts), [`worker/src/routes/dataset.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/worker/src/routes/dataset.ts), [`worker/src/db/operations.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/worker/src/db/operations.ts), [`worker/wrangler.toml.example`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/worker/wrangler.toml.example), [`scripts/dev.sh`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/scripts/dev.sh), [`e2e/bdd/app.spec.ts`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/e2e/bdd/app.spec.ts), [`.github/workflows/release.yml`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/wooly/blob/611b99cc868dc3e90ff5b20f54785d0d858d10ed/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Benefit models and application logic | 权益模型与应用逻辑 |
+| Next.js | Web pages and server-side data proxy | Web 页面与服务端数据代理 |
+| React | Household dashboard and forms | 家庭权益看板与表单 |
+| Tailwind CSS | Interface styles | 界面样式 |
+| Auth.js | Google sign-in and sessions | Google 登录与会话 |
+| Cloudflare Workers | Dataset API and validation | 数据集 API 与校验 |
+| Cloudflare D1 | Shared household data storage | 共享家庭数据存储 |
+| Vitest | Models, ViewModels, routes and Worker tests | 模型、视图模型、路由和 Worker 测试 |
+
 ## Current logo
 
 ![Wooly source identity](../../public/logos/display/wooly-160.webp)

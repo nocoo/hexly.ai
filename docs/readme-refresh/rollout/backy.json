@@ -1,0 +1,168 @@
+{
+  "projectId": "backy",
+  "repository": "https://github.com/nocoo/backy",
+  "checkout": "/Users/nocoo/workspace/personal/backy",
+  "baselineRevision": "5b23349c94ac6778f2242a857386e8b01dac4f1c",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Collect application backups, inspect content and history by project, and retrieve original files.",
+      "zh": "集中接收应用备份，按项目查看内容、追踪记录，并取回原始文件。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Shared types, API logic and scripts",
+          "zh": "共享类型、API 逻辑与脚本"
+        }
+      },
+      {
+        "name": "Bun workspaces",
+        "role": {
+          "en": "Workspace dependencies and local tooling",
+          "zh": "工作区依赖与本地工具"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Dashboard development and static builds",
+          "zh": "管理界面开发与静态构建"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Backup management interface",
+          "zh": "备份管理界面"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP routes and middleware",
+          "zh": "HTTP 路由与中间件"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "API, scheduled jobs and static assets",
+          "zh": "API、定时任务与静态资源"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Projects, backup metadata and logs",
+          "zh": "项目、备份元数据与日志"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Backup files and direct uploads",
+          "zh": "备份文件与直传"
+        }
+      },
+      {
+        "name": "AWS S3 SDK",
+        "role": {
+          "en": "Signed URLs and object copying",
+          "zh": "签名 URL 与对象复制"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Dashboard sign-in",
+          "zh": "管理界面登录"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "5b23349c94ac6778f2242a857386e8b01dac4f1c",
+      "sources": [
+        "package.json",
+        "apps/web/package.json",
+        "apps/worker/package.json",
+        "apps/cli/src/index.ts",
+        "apps/web/vite.config.ts",
+        "apps/worker/wrangler.toml",
+        "apps/worker/src/index.ts",
+        "apps/worker/src/middleware/access-auth.ts",
+        "apps/worker/src/middleware/is-localhost.ts",
+        "apps/worker/src/middleware/ctx.ts",
+        "packages/api/src/handlers/webhook.ts",
+        "packages/api/src/handlers/restore.ts",
+        "packages/api/src/handlers/webhook-direct.ts",
+        "packages/api/src/handlers/backups.ts",
+        "packages/api/src/handlers/cron.ts",
+        "packages/api/src/handlers/gc.ts",
+        "packages/api/src/lib/direct-upload.ts",
+        "packages/api/src/lib/backup/extractors.ts",
+        "packages/api/src/lib/db/schema.ts",
+        "packages/api/src/lib/r2/s3-adapter.ts",
+        "apps/worker/migrations/0001_direct_uploads.sql",
+        "scripts/run-e2e.ts",
+        "scripts/run-e2e-bdd.ts",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check",
+      "four docs: relative links, images, final newlines, shell syntax and manifest references",
+      "bilingual shell examples and eight-section README order",
+      "frozen workspace dependency installation with normal Husky prepare",
+      "unmodified isolated API runner: local D1 schema initialization and marker, local R2 ingest/direct upload/complete/restore roundtrip, all HTTP cases passed",
+      "installed Wrangler source confirms explicit --local disables remote binding proxy creation",
+      "all evidence paths verified at baseline revision",
+      "normal pre-commit typechecks, staged checks, secret scan, route/page coverage checks and full unit coverage on retry",
+      "normal pre-push OSV dependency check",
+      "second pull, one-docs-commit guard, main push and exact-byte remote README readback"
+    ],
+    "notRun": [
+      "browser E2E locally",
+      "ordinary remote-bound development server",
+      "real Access login, production backup operations and scheduled callbacks"
+    ],
+    "limitations": [
+      "Default bun dev uses remote=true D1/R2 bindings; independent test runners explicitly force local mode.",
+      "Localhost auth shortcut requires request.cf to be absent; only the isolated runner should use E2E_SKIP_AUTH.",
+      "Restore returns a signed URL and does not import application data.",
+      "R2 bindings alone do not provide presigned URLs; S3 configuration is needed for downloads/direct uploads/copy.",
+      "CLI remains a placeholder.",
+      "Fresh production database provisioning is not implemented by the incremental migration or build command.",
+      "Schema initializer writes the test marker itself, so the marker alone is not proof of isolation.",
+      "Initial pre-commit S3 copy test timed out at 5 seconds using dummy account credentials; unmodified targeted test and full normal pre-commit retry passed. No hook or test changes."
+    ]
+  },
+  "publication": {
+    "revision": "59d53952558914c9bd0cfb5a950ecfe31598a86b",
+    "branch": "main",
+    "remoteReadback": "README.md and docs/README.en.md exact bytes verified via GitHub contents API",
+    "worktree": "clean, aligned with origin/main",
+    "ci": {
+      "runId": 34227241522,
+      "url": "https://github.com/nocoo/backy/actions/runs/34227241522",
+      "conclusion": "success"
+    },
+    "deployment": {
+      "runId": 34227335089,
+      "url": "https://github.com/nocoo/backy/actions/runs/34227335089",
+      "conclusion": "success",
+      "kind": "automatic Worker Release"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "backy.review.md"
+  }
+}

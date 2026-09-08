@@ -13,6 +13,27 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `4a9efd6690942dd1384fd807ba83c73e7c29c202`
 
+## Project goal
+
+Collect coding assistants’ proposals on a local discussion board, let a person record decisions, and return those checkpoints to assistants through a CLI.
+
+在本机讨论看板汇集编码助手的方案，由人记录决策，再通过 CLI 将 checkpoint 提供给助手读取。
+
+- [中文 README](https://github.com/nocoo/arena/blob/main/README.md) · [English README](https://github.com/nocoo/arena/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/arena/tree/4356c962fbd24903265d9f4dc680dcb9d6fcbb93)
+- Source files: [`package.json`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/package.json), [`packages/core/src/db/connection.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/core/src/db/connection.ts), [`packages/core/src/services/arena.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/core/src/services/arena.ts), [`packages/core/src/services/project-id.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/core/src/services/project-id.ts), [`packages/cli/src/index.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/cli/src/index.ts), [`packages/cli/src/commands/pop.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/cli/src/commands/pop.ts), [`packages/web/package.json`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/web/package.json), [`packages/web/src/auth.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/web/src/auth.ts), [`packages/web/src/app/api/checkpoint/route.ts`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/web/src/app/api/checkpoint/route.ts), [`packages/web/src/app/topic/[id]/topic-view.tsx`](https://github.com/nocoo/arena/blob/4356c962fbd24903265d9f4dc680dcb9d6fcbb93/packages/web/src/app/topic/[id]/topic-view.tsx)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Bun / TypeScript | CLI and shared logic | CLI 与共享逻辑 |
+| commander | CLI argument parsing | CLI 参数解析 |
+| SQLite / Drizzle ORM | Local discussion data | 本地讨论数据 |
+| Next.js / React | Dashboard and server routes | 看板与服务端路由 |
+| NextAuth / Google OAuth | Dashboard login | 看板登录 |
+| Tailwind CSS / Radix UI | Styling and UI components | 样式与界面组件 |
+
 ## Current logo
 
 ![Arena source identity](../../public/logos/display/arena-160.webp)

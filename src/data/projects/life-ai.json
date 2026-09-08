@@ -209,5 +209,83 @@
 			"en": "The broad caramel muzzle, red apple, and blue-purple glasses remain visible at 32 px. Closed eyes and small leaf facets simplify at 16 px; the 192 px login asset is also transparent.",
 			"zh": "32 像素时，焦糖宽鼻口、红苹果和蓝紫眼镜仍可辨认；16 像素时闭眼与细叶切面会简化，登录页的 192 像素资源也使用透明前景。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Import personal health, location, and bookkeeping exports, then compare them through daily, monthly, and yearly views.",
+			"zh": "导入个人健康、位置足迹和记账导出文件，通过日、月、年视图对照查看。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Import scripts and application logic",
+					"zh": "导入脚本与应用逻辑"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Data processing and SQLite runtime",
+					"zh": "数据处理与 SQLite 运行环境"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Web dashboard and APIs",
+					"zh": "Web Dashboard 与 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Data views",
+					"zh": "数据视图"
+				}
+			},
+			{
+				"name": "SQLite",
+				"role": {
+					"en": "Local health, route, and finance databases",
+					"zh": "本地健康、轨迹与记账数据库"
+				}
+			},
+			{
+				"name": "Leaflet",
+				"role": {
+					"en": "Route maps",
+					"zh": "轨迹地图"
+				}
+			},
+			{
+				"name": "Recharts",
+				"role": {
+					"en": "Charts and trends",
+					"zh": "图表与趋势"
+				}
+			},
+			{
+				"name": "Zustand",
+				"role": {
+					"en": "Dashboard state",
+					"zh": "Dashboard 状态"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "56df330ee15eada49dd0f926e4e9e73775fdcfea",
+			"sources": [
+				"package.json",
+				"dashboard/package.json",
+				"dashboard/src/lib/db.ts",
+				"dashboard/src/lib/auth.ts",
+				"scripts/import/applehealth/cli.ts",
+				"scripts/import/footprint/cli.ts",
+				"scripts/import/pixiu/cli.ts",
+				"dashboard/src/views/day/day-page.tsx"
+			]
+		}
 	}
 }

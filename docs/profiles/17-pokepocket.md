@@ -13,6 +13,29 @@
 - Profile revision: `bf9076bff46ea58fba5885a9185cce8b71f9b09a`
 - Repository revision inspected: `019798f1c8fae7a6e7c0beb2368279c9980c7188`
 
+## Project goal
+
+Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection while keeping controls and progress for each ROM.
+
+在浏览器卡带收藏盘中游玩自备的 GB、GBC、GBA 宝可梦，管理操作设置和每枚 ROM 的进度。
+
+- [中文 README](https://github.com/nocoo/pokepocket/blob/main/README.md) · [English README](https://github.com/nocoo/pokepocket/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/pokepocket/tree/461f4c3bb65480c43bdb5a8c27a054eba8da39ad)
+- Source files: [`package.json`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/package.json), [`src/App.tsx`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/App.tsx), [`src/data/editions.json`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/data/editions.json), [`src/lib/emulator.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/lib/emulator.ts), [`src/lib/cartridge.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/lib/cartridge.ts), [`src/lib/storage.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/lib/storage.ts), [`src/lib/settings.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/lib/settings.ts), [`src/lib/key-bindings.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/lib/key-bindings.ts), [`src/lib/input.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/src/lib/input.ts), [`scripts/local-roms.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/scripts/local-roms.ts), [`scripts/run-l3.mjs`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/scripts/run-l3.mjs), [`scripts/check-no-roms.mjs`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/scripts/check-no-roms.mjs), [`worker/index.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/worker/index.ts), [`vite.config.ts`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/vite.config.ts), [`wrangler.jsonc`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/wrangler.jsonc), [`THIRD_PARTY_NOTICES.md`](https://github.com/nocoo/pokepocket/blob/461f4c3bb65480c43bdb5a8c27a054eba8da39ad/THIRD_PARTY_NOTICES.md)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application and Worker logic | 应用与 Worker 逻辑 |
+| React | Cartridge collection and handheld controls | 卡带收藏盘与掌机操作界面 |
+| mGBA | GB, GBC, and GBA emulation core | GB、GBC 与 GBA 模拟器核心 |
+| WebAssembly | Browser execution of the emulator | 在浏览器运行模拟器 |
+| IndexedDB | Local ROMs, battery saves, and save states | 本地卡带、电池存档与即时存档 |
+| Vite | Development server and application builds | 开发服务器与应用构建 |
+| Cloudflare Workers | Protected static hosting and application metadata | 受访问控制保护的静态托管与应用信息 |
+| Cloudflare Access | Hosted site authentication | 托管站点认证 |
+
 ## Current logo
 
 ![Poké Pocket source identity](../../public/logos/display/pokepocket-160.webp)

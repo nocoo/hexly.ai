@@ -165,5 +165,64 @@
 			"zh": "128/64 px 能辨认打开的锁梁、绿色锁身和红纸封；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Review quarantine results for apps in /Applications and select trusted apps for batch removal of the quarantine attribute.",
+			"zh": "查看 /Applications 内应用的隔离检测结果，选择可信应用后批量移除隔离属性。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Node.js",
+				"role": {
+					"en": "CLI logic and published-package runtime",
+					"zh": "CLI 逻辑与发布包运行环境"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Development and ESM bundling",
+					"zh": "开发运行与 ESM 打包"
+				}
+			},
+			{
+				"name": "Inquirer / chalk",
+				"role": {
+					"en": "Terminal selection and colors",
+					"zh": "终端选择与着色"
+				}
+			},
+			{
+				"name": "xattr / spctl / sudo",
+				"role": {
+					"en": "macOS attributes, assessment and permissions",
+					"zh": "macOS 属性、评估与权限操作"
+				}
+			},
+			{
+				"name": "Vitest",
+				"role": {
+					"en": "Module, flow and subprocess tests",
+					"zh": "模块、流程与子进程测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "2f31f698e1de11409d48dcf9e543bbb8c0706a7b",
+			"sources": [
+				"package.json",
+				"src/index.ts",
+				"src/scanner.ts",
+				"src/prompt.ts",
+				"src/sudo.ts",
+				"src/unseal.ts",
+				"src/exec.ts",
+				"src/debug.ts",
+				"vitest.config.ts",
+				"tests/exec.test.ts"
+			]
+		}
 	}
 }

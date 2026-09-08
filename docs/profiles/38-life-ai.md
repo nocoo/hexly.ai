@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `b6f3e7f426315062e0492e00c4d9448bfa3b8031`
 
+## Project goal
+
+Import personal health, location, and bookkeeping exports, then compare them through daily, monthly, and yearly views.
+
+导入个人健康、位置足迹和记账导出文件，通过日、月、年视图对照查看。
+
+- [中文 README](https://github.com/nocoo/life.ai/blob/main/README.md) · [English README](https://github.com/nocoo/life.ai/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/life.ai/tree/56df330ee15eada49dd0f926e4e9e73775fdcfea)
+- Source files: [`package.json`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/package.json), [`dashboard/package.json`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/dashboard/package.json), [`dashboard/src/lib/db.ts`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/dashboard/src/lib/db.ts), [`dashboard/src/lib/auth.ts`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/dashboard/src/lib/auth.ts), [`scripts/import/applehealth/cli.ts`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/scripts/import/applehealth/cli.ts), [`scripts/import/footprint/cli.ts`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/scripts/import/footprint/cli.ts), [`scripts/import/pixiu/cli.ts`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/scripts/import/pixiu/cli.ts), [`dashboard/src/views/day/day-page.tsx`](https://github.com/nocoo/life.ai/blob/56df330ee15eada49dd0f926e4e9e73775fdcfea/dashboard/src/views/day/day-page.tsx)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Import scripts and application logic | 导入脚本与应用逻辑 |
+| Bun | Data processing and SQLite runtime | 数据处理与 SQLite 运行环境 |
+| Next.js | Web dashboard and APIs | Web Dashboard 与 API |
+| React | Data views | 数据视图 |
+| SQLite | Local health, route, and finance databases | 本地健康、轨迹与记账数据库 |
+| Leaflet | Route maps | 轨迹地图 |
+| Recharts | Charts and trends | 图表与趋势 |
+| Zustand | Dashboard state | Dashboard 状态 |
+
 ## Current logo
 
 ![Life.ai source identity](../../public/logos/display/life-ai-160.webp)

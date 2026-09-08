@@ -13,6 +13,31 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `7454e3d93d8345e5aa09dc778240b65dbbed69d0`
 
+## Project goal
+
+Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.
+
+为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。
+
+- [中文 README](https://github.com/nocoo/dove/blob/main/README.md) · [English README](https://github.com/nocoo/dove/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/dove/tree/a010ab2daf92fd3cda45dee41a18132f444d1780)
+- Source files: [`package.json`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/package.json), [`vite.config.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/vite.config.ts), [`wrangler.toml`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/wrangler.toml), [`src/server/index.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/index.ts), [`src/server/middleware/auth-session.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/middleware/auth-session.ts), [`src/server/routes/webhook.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/routes/webhook.ts), [`src/server/routes/templates.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/routes/templates.ts), [`src/server/routes/providers.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/routes/providers.ts), [`src/server/lib/email/provider.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/lib/email/provider.ts), [`src/lib/email/providers/resend.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/lib/email/providers/resend.ts), [`src/lib/email/providers/cloudflare.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/lib/email/providers/cloudflare.ts), [`src/client/routes/projects/$id.tsx`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/client/routes/projects/$id.tsx), [`src/server/schema.sql`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/src/server/schema.sql), [`scripts/setup-ci-env.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/scripts/setup-ci-env.ts), [`scripts/run-e2e.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/scripts/run-e2e.ts), [`playwright.config.ts`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/playwright.config.ts), [`.github/workflows/release.yml`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/dove/blob/a010ab2daf92fd3cda45dee41a18132f444d1780/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application and sending logic | 应用与发送逻辑 |
+| Cloudflare Workers | API runtime and static asset hosting | API 运行时与静态资源托管 |
+| Hono | Dashboard API and webhook routes | 管理 API 与 Webhook 路由 |
+| Cloudflare D1 | Projects, templates, logs and sending state | 项目、模板、日志与发送状态存储 |
+| React | Email management dashboard | 邮件管理界面 |
+| Vite | Dashboard build | 管理界面构建 |
+| Cloudflare Access | Administrator authentication | 管理员身份验证 |
+| Resend | API email sending backend | 通过 API 发送邮件 |
+| Cloudflare Email Routing | Email sending through the Worker binding | 通过 Worker 绑定发送邮件 |
+| Bun | Dependencies, scripts and HTTP tests | 依赖、脚本与 HTTP 测试 |
+
 ## Current logo
 
 ![Dove source identity](../../public/logos/display/dove-160.webp)

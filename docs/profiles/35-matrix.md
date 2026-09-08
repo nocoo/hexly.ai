@@ -13,6 +13,30 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `8e6f9add035b35505576f161d95393c0b8b31e07`
 
+## Project goal
+
+Reuse terminal-inspired controls, charts, and page templates to build green-on-black data dashboards.
+
+复用终端风格的控件、图表和页面模板，搭建绿黑配色的数据看板。
+
+- [中文 README](https://github.com/nocoo/matrix/blob/main/README.md) · [English README](https://github.com/nocoo/matrix/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/matrix/tree/f349c07e0a7ac73e337b54014a4c45790a20da94)
+- Source files: [`package.json`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/package.json), [`src/App.tsx`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/App.tsx), [`src/index.css`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/index.css), [`src/components/ui/DataVizComponents.tsx`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/components/ui/DataVizComponents.tsx), [`src/components/ui/MatrixExtras.tsx`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/components/ui/MatrixExtras.tsx), [`src/components/ui/RunnerComponents.tsx`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/components/ui/RunnerComponents.tsx), [`src/data/mock.ts`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/data/mock.ts), [`src/viewmodels/useAccountsViewModel.ts`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/viewmodels/useAccountsViewModel.ts), [`src/viewmodels/useLifeAiViewModel.ts`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/viewmodels/useLifeAiViewModel.ts), [`src/pages/LoginPage.tsx`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/pages/LoginPage.tsx), [`src/i18n/index.ts`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/src/i18n/index.ts), [`vite.config.ts`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/vite.config.ts), [`wrangler.toml`](https://github.com/nocoo/matrix/blob/f349c07e0a7ac73e337b54014a4c45790a20da94/wrangler.toml)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Interface and viewmodel logic | 界面与 viewmodel 逻辑 |
+| React | Dashboard pages and reusable controls | 看板页面与可复用控件 |
+| Vite | SPA development and build | SPA 开发与构建 |
+| React Router | Client-side routes | 客户端路由 |
+| Tailwind CSS | Theme variables and styling | 主题变量与样式 |
+| SVG | Charts and data visualization | 图表与数据可视化 |
+| Canvas | Animated character rain | 动态字符雨 |
+| i18next | Chinese and English interface | 中英文界面 |
+| Cloudflare Workers | Static asset hosting | 静态资源托管 |
+
 ## Current logo
 
 ![Matrix source identity](../../public/logos/display/matrix-160.webp)

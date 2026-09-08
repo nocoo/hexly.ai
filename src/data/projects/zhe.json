@@ -209,5 +209,110 @@
 			"en": "The golden body and cyan-pink wing group remain distinct at 32 px. At 16 px the antenna curls and smaller facets simplify into the overall silhouette; sidebar and browser marks use the transparent foreground.",
 			"zh": "32 像素时金色身体和青粉翅膀仍能区分；16 像素时触角卷曲与小碎片会融入整体轮廓。侧栏和浏览器标记继续使用透明前景。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Keep personal links, Markdown ideas, and nested todos together, with short-link sharing and unified search.",
+			"zh": "集中整理个人链接、Markdown 想法和层级待办，通过短链接分享并统一搜索内容。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application and CLI logic",
+					"zh": "应用与 CLI 逻辑"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Web dashboard and APIs",
+					"zh": "Web 管理台与 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Interactive views",
+					"zh": "交互视图"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Redirects and D1 proxy",
+					"zh": "短链接跳转与 D1 代理"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "User data",
+					"zh": "用户数据"
+				}
+			},
+			{
+				"name": "Cloudflare KV",
+				"role": {
+					"en": "Redirect cache",
+					"zh": "跳转缓存"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Uploaded files",
+					"zh": "上传文件"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Google sign-in",
+					"zh": "Google 登录"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Dependency management and development tools",
+					"zh": "依赖管理与开发工具"
+				}
+			},
+			{
+				"name": "Node.js",
+				"role": {
+					"en": "CLI runtime",
+					"zh": "CLI 运行环境"
+				}
+			},
+			{
+				"name": "Vercel AI SDK",
+				"role": {
+					"en": "Optional link organization suggestions",
+					"zh": "可选的链接整理建议"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "967f6e738440ab0739697659c242652408d7155c",
+			"sources": [
+				"package.json",
+				"worker/src/index.ts",
+				"worker/wrangler.toml.example",
+				"lib/db/d1-client.ts",
+				"lib/db/scoped/links.ts",
+				"actions/ideas.ts",
+				"actions/todos.ts",
+				"components/search-command-dialog.tsx",
+				"app/api/ai/suggest-link-org/route.ts",
+				"cli/src/index.ts",
+				"cli/src/api/client.ts",
+				"auth.ts",
+				"lib/auth-allowlist.ts",
+				"scripts/test-stack.ts"
+			]
+		}
 	}
 }

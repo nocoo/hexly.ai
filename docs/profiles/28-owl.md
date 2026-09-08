@@ -13,6 +13,28 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `e1c69addb656e8907a8828001e1f5c103f3b9fbf`
 
+## Project goal
+
+Inspect Mac system metrics and processes from the menu bar, and detect recurring crashes, resource pressure, sleep problems, and device anomalies locally.
+
+在菜单栏查看 Mac 系统指标与进程，在本机发现反复崩溃、资源压力、睡眠和设备异常。
+
+- [中文 README](https://github.com/nocoo/owl/blob/main/README.md) · [English README](https://github.com/nocoo/owl/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/owl/tree/e1c69addb656e8907a8828001e1f5c103f3b9fbf)
+- Source files: [`Package.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Package.swift), [`Sources/Owl/OwlApp.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/Owl/OwlApp.swift), [`Sources/Owl/OwlEngine.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/Owl/OwlEngine.swift), [`Sources/Owl/OwlNotifications.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/Owl/OwlNotifications.swift), [`Sources/OwlCore/Patterns/PatternCatalog.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/OwlCore/Patterns/PatternCatalog.swift), [`Sources/OwlCore/Patterns/MetricsCatalog.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/OwlCore/Patterns/MetricsCatalog.swift), [`Sources/OwlCore/Services/SystemMetricsPoller.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/OwlCore/Services/SystemMetricsPoller.swift), [`Sources/OwlCore/Services/HIDTemperatureProvider.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/OwlCore/Services/HIDTemperatureProvider.swift), [`Sources/OwlCore/Pipeline/AlertStateManager.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/OwlCore/Pipeline/AlertStateManager.swift), [`Sources/OwlCore/Settings/AppSettings.swift`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/Sources/OwlCore/Settings/AppSettings.swift), [`scripts/build.sh`](https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/scripts/build.sh)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Swift / Swift Concurrency | Local collection and detection logic | 本地采集与检测逻辑 |
+| SwiftUI / AppKit | Menu bar, metrics and settings UI | 菜单栏、指标与设置界面 |
+| macOS Unified Logging | System event stream | 系统事件日志流 |
+| IOKit / Mach / libproc | Hardware and process metrics | 硬件与进程指标 |
+| Objective-C / IOHID | Apple Silicon thermal sensors | Apple Silicon 温度传感器 |
+| UserDefaults | Local preferences | 本地偏好设置 |
+| Swift Testing | Unit and pipeline integration tests | 单元与检测管道集成测试 |
+
 ## Current logo
 
 ![Owl source identity](../../public/logos/display/owl-160.webp)

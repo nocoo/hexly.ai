@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `b5ab075a963a78516aaa351d6ca0178c64994729`
 
+## Project goal
+
+Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.
+
+在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。
+
+- [中文 README](https://github.com/nocoo/dogfight/blob/main/README.md) · [English README](https://github.com/nocoo/dogfight/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/dogfight/tree/b5ab075a963a78516aaa351d6ca0178c64994729)
+- Source files: [`package.json`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/package.json), [`src/App.tsx`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/App.tsx), [`src/game/simulation.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/game/simulation.ts), [`src/game/engine.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/game/engine.ts), [`src/game/aircraft.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/game/aircraft.ts), [`src/game/world.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/game/world.ts), [`src/game/clouds.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/game/clouds.ts), [`src/game/audio.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/src/game/audio.ts), [`scripts/browser-smoke.mjs`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/scripts/browser-smoke.mjs), [`vite.config.ts`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/vite.config.ts), [`wrangler.jsonc`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/wrangler.jsonc), [`.github/workflows/ci.yml`](https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/.github/workflows/ci.yml)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Flight and combat simulation | 飞行与战斗模拟 |
+| React | HUD, mission flow, and settings | HUD、任务流程与设置 |
+| Three.js | Procedural aircraft and 3D environment | 程序化机体与三维环境 |
+| WebGL | Browser 3D rendering | 浏览器三维渲染 |
+| Web Audio | Synthesized engine, weapon, and alert sounds | 合成引擎、武器与警报音效 |
+| localStorage | Highest winning score | 胜利最高分 |
+| Vite | Development and static builds | 开发与静态构建 |
+| Cloudflare Workers | Static game hosting | 游戏静态托管 |
+
 ## Current logo
 
 ![Dogfight source identity](../../public/logos/display/dogfight-160.webp)

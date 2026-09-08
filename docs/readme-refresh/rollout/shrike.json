@@ -1,0 +1,138 @@
+{
+  "projectId": "shrike",
+  "repository": "https://github.com/nocoo/shrike",
+  "checkout": "/Users/nocoo/workspace/personal/shrike",
+  "baselineRevision": "0fec187fc22742664925897400d0c1a62b2478bb",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Back up selected files and development configurations on a Mac to Google Drive's local directory, with sync triggered from the app or a local HTTP request.",
+      "zh": "在 Mac 上将选定文件和开发配置备份到 Google Drive 的本地目录，通过应用或本机 HTTP 请求触发同步。"
+    },
+    "techStack": [
+      {
+        "name": "Tauri / Rust",
+        "role": {
+          "en": "Desktop app and file operations",
+          "zh": "桌面应用与文件操作"
+        }
+      },
+      {
+        "name": "Next.js / React",
+        "role": {
+          "en": "Statically exported desktop interface",
+          "zh": "静态导出的桌面界面"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Frontend logic",
+          "zh": "前端逻辑"
+        }
+      },
+      {
+        "name": "Tailwind CSS / Radix UI",
+        "role": {
+          "en": "Styling and UI components",
+          "zh": "样式与界面组件"
+        }
+      },
+      {
+        "name": "Tokio / Axum",
+        "role": {
+          "en": "Local HTTP API",
+          "zh": "本机 HTTP 接口"
+        }
+      },
+      {
+        "name": "rsync",
+        "role": {
+          "en": "Incremental file copying",
+          "zh": "增量文件复制"
+        }
+      },
+      {
+        "name": "Tauri Store",
+        "role": {
+          "en": "Local settings and backup list",
+          "zh": "本地设置与备份列表"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "0fec187fc22742664925897400d0c1a62b2478bb",
+      "sources": [
+        "package.json",
+        "next.config.mjs",
+        "src-tauri/Cargo.toml",
+        "src-tauri/tauri.conf.json",
+        "src-tauri/src/lib.rs",
+        "src-tauri/src/types.rs",
+        "src-tauri/src/commands.rs",
+        "src-tauri/src/webhook.rs",
+        "src-tauri/src/sync/executor.rs",
+        "src/hooks/use-file-list.ts",
+        "src/components/settings-page.tsx"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main and git pull --ff-only succeeded before investigation."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed; normal Husky setup completed."
+    },
+    {
+      "check": "Frontend tests",
+      "result": "198 tests in 12 files passed."
+    },
+    {
+      "check": "Rust unit tests",
+      "result": "Locked cargo test --lib passed 117 tests."
+    },
+    {
+      "check": "Rust integration tests",
+      "result": "bun run test:e2e:rs passed; temporary filesystem fixtures and in-memory Axum router, no personal files or Google Drive login."
+    },
+    {
+      "check": "Distribution and site",
+      "result": "GitHub homepage empty; existing site entry null. Latest release v0.1.3 has no assets. Source build documented; no installer or site invented."
+    },
+    {
+      "check": "Static frontend build",
+      "result": "bun run build passed Next.js compilation, typecheck and static export; existing Node deprecation warning only."
+    },
+    {
+      "check": "Links and bilingual parity",
+      "result": "All 8 links/references per language resolve; bash code blocks match."
+    },
+    {
+      "check": "Normal commit and push",
+      "result": "Normal hooks passed TypeScript, ESLint, clippy, frontend/Rust tests and coverage, gitleaks and OSV. Existing OSV ignores unchanged; unused-ignore warnings remain. Build-generated next-env.d.ts restored before staging."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "847c03e03ba773255a099f79a26de97e490ae58b",
+    "url": "https://github.com/nocoo/shrike/commit/847c03e03ba773255a099f79a26de97e490ae58b",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded; only this README commit was ahead.",
+    "remoteReadback": "Both README byte sequences match local through GitHub Contents API at main; working tree clean.",
+    "ci": {
+      "url": "https://github.com/nocoo/shrike/actions/runs/34226029547",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "shrike.review.md"
+  }
+}

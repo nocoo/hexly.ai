@@ -13,6 +13,29 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `f259be7fe740ce260c9257e2870b57dec8d9e7b3`
 
+## Project goal
+
+Record app and window usage on a Mac, review daily activity in a synced web dashboard, and optionally generate an AI-assisted daily review.
+
+记录 Mac 上的应用和窗口使用时间，在同步后的 Web 控制台回看每日活动，并按需生成 AI 每日回顾。
+
+- [中文 README](https://github.com/nocoo/gecko/blob/main/README.md) · [English README](https://github.com/nocoo/gecko/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/gecko/tree/f259be7fe740ce260c9257e2870b57dec8d9e7b3)
+- Source files: [`apps/mac-client/project.yml`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/mac-client/project.yml), [`apps/mac-client/Gecko/Sources/Services/TrackingEngine.swift`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/mac-client/Gecko/Sources/Services/TrackingEngine.swift), [`apps/mac-client/Gecko/Sources/Services/SettingsManager.swift`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/mac-client/Gecko/Sources/Services/SettingsManager.swift), [`apps/mac-client/Gecko/Sources/Services/BrowserURLFetcher.swift`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/mac-client/Gecko/Sources/Services/BrowserURLFetcher.swift), [`apps/mac-client/Gecko/Sources/Services/SyncService.swift`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/mac-client/Gecko/Sources/Services/SyncService.swift), [`apps/web-dashboard/package.json`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/web-dashboard/package.json), [`apps/web-dashboard/Dockerfile`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/web-dashboard/Dockerfile), [`apps/web-dashboard/src/lib/d1.ts`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/web-dashboard/src/lib/d1.ts), [`apps/web-dashboard/src/auth.ts`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/web-dashboard/src/auth.ts), [`apps/web-dashboard/src/services/analyze-core.ts`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/web-dashboard/src/services/analyze-core.ts), [`apps/web-dashboard/src/lib/auto-analyze.ts`](https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/apps/web-dashboard/src/lib/auto-analyze.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| Swift / SwiftUI | macOS tracking app | macOS 跟踪应用 |
+| AppKit / AppleScript | Window and browser context | 窗口与浏览器信息 |
+| SQLite / GRDB | Local session storage | 本地会话存储 |
+| React / TypeScript | Activity dashboard | 活动控制台 |
+| vinext / Vite | Web pages and Node.js server | Web 页面与 Node.js 服务 |
+| Cloudflare D1 | Synced data over the REST API | 通过 REST API 存储同步数据 |
+| NextAuth | Google sign-in | Google 登录 |
+| AI SDK | Optional daily analysis | 可选的每日分析 |
+
 ## Current logo
 
 ![Gecko source identity](../../public/logos/display/gecko-160.webp)

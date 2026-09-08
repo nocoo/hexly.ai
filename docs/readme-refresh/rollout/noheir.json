@@ -1,0 +1,163 @@
+{
+  "projectId": "noheir",
+  "repository": "https://github.com/nocoo/noheir",
+  "checkout": "/Users/nocoo/workspace/personal/noheir",
+  "baselineRevision": "68d20b352d8873865f39d2da89e2d086fcb5e03d",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Organize personal transactions, accounts and capital to review cash flow, allocation, returns and availability dates.",
+      "zh": "整理个人收支、账户和存量资金，查看现金流、资金配置、收益与可用日期。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application and financial calculations",
+          "zh": "应用与财务计算"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Web pages, Server Actions and MCP endpoints",
+          "zh": "Web 页面、Server Actions 与 MCP 入口"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Interactive finance views",
+          "zh": "财务交互界面"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "Business API and SQL access",
+          "zh": "业务 API 与 SQL 访问"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Financial records and user settings",
+          "zh": "财务记录与用户设置存储"
+        }
+      },
+      {
+        "name": "Drizzle ORM",
+        "role": {
+          "en": "Database schema and repositories",
+          "zh": "数据模型与查询"
+        }
+      },
+      {
+        "name": "Auth.js",
+        "role": {
+          "en": "Google sign-in and sessions",
+          "zh": "Google 登录与会话"
+        }
+      },
+      {
+        "name": "MCP SDK",
+        "role": {
+          "en": "Authorized finance tools for clients",
+          "zh": "供客户端授权访问的财务工具"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Development, HTTP tests and Docker runtime",
+          "zh": "开发、HTTP 测试与 Docker 运行时"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "68d20b352d8873865f39d2da89e2d086fcb5e03d",
+      "sources": [
+        "package.json",
+        "worker/package.json",
+        "worker/wrangler.toml",
+        "worker/src/index.ts",
+        "worker/db/schema.ts",
+        "src/auth.ts",
+        "src/lib/navigation.ts",
+        "src/app/actions/import-actions.ts",
+        "src/app/actions/data-actions.ts",
+        "src/app/ai-insight/page.tsx",
+        "src/app/api/mcp/route.ts",
+        "src/lib/mcp/server.ts",
+        "scripts/run-e2e.ts",
+        "e2e/bdd/navigation.spec.ts",
+        ".github/workflows/release.yml",
+        "Dockerfile"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check",
+      "relative links and eight-section order",
+      "bilingual bash example parity",
+      "manifest script references",
+      "Wrangler migration CLI help",
+      "GitHub homepage and license metadata",
+      "frozen root and Worker dependency installs; normal Husky prepare",
+      "normal pre-commit unit coverage, Biome and TypeScript checks",
+      "normal pre-push unit coverage, Biome, OSV, Gitleaks and local HTTP E2E",
+      "published bilingual README byte-for-byte readback",
+      "GitHub CI success",
+      "GitHub deployment success"
+    ],
+    "notRun": [
+      "OAuth login",
+      "user development servers",
+      "manual production actions"
+    ],
+    "limitations": [
+      "Fresh setup needs Google OAuth credentials and a matching Worker token.",
+      "Browser suite checks only the public terms page.",
+      "JSON restore handles transactions and transfers only; investment logs and recurring expenses are not exported.",
+      "The public repository declares no license.",
+      "Current Cloudflare documentation retrieval returned HTTP 403; installed CLI help and source commands were checked."
+    ]
+  },
+  "publication": {
+    "approvedBy": "root",
+    "branch": "main",
+    "commits": [
+      {
+        "revision": "b7b64d05c067d36a1186ec0468664f9dc8633ab4",
+        "subject": "docs: refresh bilingual project readmes"
+      }
+    ],
+    "readmeRevision": "b7b64d05c067d36a1186ec0468664f9dc8633ab4",
+    "push": "success",
+    "remoteReadback": [
+      "README.md",
+      "docs/README.en.md"
+    ],
+    "ci": {
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/nocoo/noheir/actions/runs/34222399639",
+      "runId": 34222399639
+    },
+    "deployment": {
+      "status": "completed",
+      "url": "https://github.com/nocoo/noheir/actions/runs/34222519466",
+      "runId": 34222519466,
+      "scope": "Docker / VPS site; the independent Worker is not deployed by this workflow",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "result": "已核对完整 README diff、英文正文、文档索引、Next.js / Worker manifest，以及 CSV 同年份替换、JSON 仅恢复流水、AI 洞察规则计算、MCP POST JSON 实现和各层测试前提。",
+    "record": "noheir.review.md"
+  }
+}

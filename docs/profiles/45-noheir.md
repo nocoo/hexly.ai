@@ -13,6 +13,30 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `5e32426a6044436eee5c6b2894910666896a8b49`
 
+## Project goal
+
+Organize personal transactions, accounts and capital to review cash flow, allocation, returns and availability dates.
+
+整理个人收支、账户和存量资金，查看现金流、资金配置、收益与可用日期。
+
+- [中文 README](https://github.com/nocoo/noheir/blob/main/README.md) · [English README](https://github.com/nocoo/noheir/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/noheir/tree/68d20b352d8873865f39d2da89e2d086fcb5e03d)
+- Source files: [`package.json`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/package.json), [`worker/package.json`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/worker/package.json), [`worker/wrangler.toml`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/worker/wrangler.toml), [`worker/src/index.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/worker/src/index.ts), [`worker/db/schema.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/worker/db/schema.ts), [`src/auth.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/auth.ts), [`src/lib/navigation.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/lib/navigation.ts), [`src/app/actions/import-actions.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/app/actions/import-actions.ts), [`src/app/actions/data-actions.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/app/actions/data-actions.ts), [`src/app/ai-insight/page.tsx`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/app/ai-insight/page.tsx), [`src/app/api/mcp/route.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/app/api/mcp/route.ts), [`src/lib/mcp/server.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/src/lib/mcp/server.ts), [`scripts/run-e2e.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/scripts/run-e2e.ts), [`e2e/bdd/navigation.spec.ts`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/e2e/bdd/navigation.spec.ts), [`.github/workflows/release.yml`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/.github/workflows/release.yml), [`Dockerfile`](https://github.com/nocoo/noheir/blob/68d20b352d8873865f39d2da89e2d086fcb5e03d/Dockerfile)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Application and financial calculations | 应用与财务计算 |
+| Next.js | Web pages, Server Actions and MCP endpoints | Web 页面、Server Actions 与 MCP 入口 |
+| React | Interactive finance views | 财务交互界面 |
+| Cloudflare Workers | Business API and SQL access | 业务 API 与 SQL 访问 |
+| Cloudflare D1 | Financial records and user settings | 财务记录与用户设置存储 |
+| Drizzle ORM | Database schema and repositories | 数据模型与查询 |
+| Auth.js | Google sign-in and sessions | Google 登录与会话 |
+| MCP SDK | Authorized finance tools for clients | 供客户端授权访问的财务工具 |
+| Bun | Development, HTTP tests and Docker runtime | 开发、HTTP 测试与 Docker 运行时 |
+
 ## Current logo
 
 ![Noheir source identity](../../public/logos/display/noheir-160.webp)

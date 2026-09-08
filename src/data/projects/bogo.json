@@ -293,5 +293,91 @@
 			"en": "At 32 px, the broad golden horns, brown face, and colorful sprig carry the identity. At 16 px, the wink and separate petals simplify into the silhouette and a small rainbow accent.",
 			"zh": "在 32 px 下，宽阔的金色牛角、棕色脸部与彩色花枝承担辨识度。缩到 16 px 时，眨眼和独立花瓣会合并为轮廓与一小片彩色点缀。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Keep reporting relationships, documents and revision history together in workspaces, with web and CLI access to the same knowledge base.",
+			"zh": "围绕人物和工作空间整理组织关系、文档和版本记录，并用网页与命令行维护同一份知识库。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Bun / Turborepo",
+				"role": {
+					"en": "Typed workspaces and local development",
+					"zh": "类型、工作区与本地开发"
+				}
+			},
+			{
+				"name": "Cloudflare Workers / Hono",
+				"role": {
+					"en": "HTTP API and authentication",
+					"zh": "HTTP API 与认证"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "People, documents, revisions, fields and views",
+					"zh": "人物、文档、版本、字段与视图存储"
+				}
+			},
+			{
+				"name": "React / Vite / Tailwind CSS",
+				"role": {
+					"en": "Web interface and styling",
+					"zh": "网页界面与样式"
+				}
+			},
+			{
+				"name": "React Query / React Router",
+				"role": {
+					"en": "Server data and navigation",
+					"zh": "服务端数据与页面导航"
+				}
+			},
+			{
+				"name": "React Flow / Dagre",
+				"role": {
+					"en": "Interactive reporting chart and layout",
+					"zh": "交互组织图与布局"
+				}
+			},
+			{
+				"name": "marked / js-yaml / @pierre/diffs",
+				"role": {
+					"en": "Markdown, frontmatter and revision comparison",
+					"zh": "Markdown、frontmatter 与版本差异"
+				}
+			},
+			{
+				"name": "clip",
+				"role": {
+					"en": "CLI generation from the API schema",
+					"zh": "从 API schema 生成 CLI"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "2e2d986edffd9d320a3e172f37affe5e3406cabe",
+			"sources": [
+				"package.json",
+				"packages/worker/package.json",
+				"packages/worker/src/index.ts",
+				"packages/worker/src/middleware/access-auth.ts",
+				"packages/worker/src/routes/workspaces.ts",
+				"packages/worker/src/routes/persons.ts",
+				"packages/worker/src/routes/documents.ts",
+				"packages/worker/src/routes/table-views.ts",
+				"packages/worker/wrangler.toml",
+				"packages/ui/package.json",
+				"packages/ui/src/App.tsx",
+				"packages/ui/src/components/document/VersionDiff.tsx",
+				"packages/ui/src/viewmodels/person/person-tree-layout.ts",
+				"packages/ui/src/viewmodels/table/use-table-grid.ts",
+				"packages/cli/scripts/build.ts",
+				"clip.yaml"
+			]
+		}
 	}
 }

@@ -1,0 +1,180 @@
+{
+  "projectId": "firefly",
+  "repository": "https://github.com/nocoo/firefly",
+  "checkout": "/Users/nocoo/workspace/personal/firefly",
+  "baselineRevision": "dcdea91001928e374c1a64db9290f8ec83ebbd5e",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Write, publish and organize a personal blog through a web console and AI clients sharing the same content.",
+      "zh": "写作、发布和整理个人博客，让网页后台与 AI 客户端共用一套内容。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application code and scripts",
+          "zh": "应用代码与脚本"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Blog, admin console and server APIs",
+          "zh": "博客、后台与服务端 API"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Reading and administration interfaces",
+          "zh": "阅读与管理界面"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Page styles and themes",
+          "zh": "页面样式与主题"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "D1 proxy and search endpoints",
+          "zh": "D1 代理与搜索接口"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Blog records and full-text indexes",
+          "zh": "博客数据与全文索引"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Image storage through the S3 API",
+          "zh": "通过 S3 API 存储图片"
+        }
+      },
+      {
+        "name": "Auth.js",
+        "role": {
+          "en": "Google sign-in and admin sessions",
+          "zh": "Google 登录与管理会话"
+        }
+      },
+      {
+        "name": "MCP SDK",
+        "role": {
+          "en": "OAuth-protected writing tools",
+          "zh": "经过 OAuth 授权的写作工具"
+        }
+      },
+      {
+        "name": "Vercel AI SDK",
+        "role": {
+          "en": "Excerpts and link text generation",
+          "zh": "摘要与链接文本生成"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Dependencies, scripts and test runners",
+          "zh": "依赖、脚本与测试运行器"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "dcdea91001928e374c1a64db9290f8ec83ebbd5e",
+      "sources": [
+        "package.json",
+        "worker/package.json",
+        "worker/wrangler.toml",
+        "worker/src/index.ts",
+        "worker/src/fts.ts",
+        "src/lib/auth.ts",
+        "src/lib/auth-utils.ts",
+        "src/lib/r2-client.ts",
+        "src/lib/mcp/server.ts",
+        "src/lib/mcp/entities/author-post.ts",
+        "src/app/api/mcp/route.ts",
+        "src/app/api/comments/route.ts",
+        "src/app/api/search/route.ts",
+        "src/data/backup-export.ts",
+        "src/models/backup-schema.ts",
+        "src/services/post-service.ts",
+        "src/services/ai.ts",
+        "src/proxy.ts",
+        "scripts/migrations/db-adapter.ts",
+        "scripts/migrations/runner.ts",
+        "scripts/run-e2e.ts",
+        ".github/workflows/ci.yml",
+        "docs/30-social-preview.md",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check",
+      "four documents: relative links, images, final newlines and bash syntax",
+      "bilingual README command equality and eight-section order",
+      "all documented bun scripts verified in package manifests",
+      "root and independent Worker frozen dependency installations with normal prepare hook",
+      "all 19 migrations applied using unchanged local migration runner and temporary local Worker D1 state",
+      "all evidence paths verified at baseline revision",
+      "MIT license and public blog domain verified",
+      "normal pre-commit docs handling and normal pre-push coverage, lint, typecheck and security checks",
+      "GitHub contents API exact-byte match of both README files",
+      "clean main with origin/main aligned",
+      "Railway commit status reports successful website deployment",
+      "CI succeeded and Railway GitHub deployment status confirms success"
+    ],
+    "notRun": [
+      "HTTP/browser suites locally; corresponding CI jobs passed",
+      "real Google OAuth, model calls, production R2 uploads or Backy delivery",
+      "production migrations and WordPress data migration"
+    ],
+    "limitations": [
+      "Ordinary development R2 operations use the configured remote bucket; only the E2E runner uses a local filesystem adapter.",
+      "Local migrations are hardcoded to localhost:8787 and test-secret; generic migrate and migrate:status default to production.",
+      "MCP author scope is an operation scope with a caller-selected author_id, not a single-author identity binding.",
+      "Comments and replies are admin-only.",
+      "Backups omit R2 objects, AI authors and attribution, tokens and secrets; no complete restore route exists.",
+      "Repository contains CI only; current docs record Railway hosting and external host settings are not represented by an Actions deployment workflow."
+    ]
+  },
+  "publication": {
+    "revision": "bfa7e5259335d65fcc42936f59f134cef0650f39",
+    "branch": "main",
+    "readmeReadback": "exact_match",
+    "ci": [
+      {
+        "id": 34226012749,
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nocoo/firefly/actions/runs/34226012749"
+      }
+    ],
+    "deployment": {
+      "platform": "Railway",
+      "id": 6327522943,
+      "environment": "lizheng.blog / production",
+      "commitStatus": "success",
+      "context": "lizheng.blog -  lizheng.blog",
+      "description": "Success - lizheng.blog",
+      "state": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "firefly.review.md"
+  }
+}

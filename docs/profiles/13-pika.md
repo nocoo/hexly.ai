@@ -13,6 +13,31 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `bb9b497372809e5ca00eaef4b04e1aa51e4256a3`
 
+## Project goal
+
+Collect coding-agent sessions to search, read and organize across tools.
+
+集中保存不同 AI 编程工具的会话，方便搜索、阅读和整理。
+
+- [中文 README](https://github.com/nocoo/pika/blob/main/README.md) · [English README](https://github.com/nocoo/pika/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/pika/tree/02487858f8c567a7e3c780cf951abc957c54623d)
+- Source files: [`package.json`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/package.json), [`packages/cli/package.json`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/package.json), [`packages/web/package.json`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web/package.json), [`packages/web-worker/package.json`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/package.json), [`packages/cli/src/cli.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/cli.ts), [`packages/cli/src/config/manager.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/config/manager.ts), [`packages/cli/src/api/client.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/api/client.ts), [`packages/cli/src/commands/login.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/commands/login.ts), [`packages/cli/src/commands/sync.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/commands/sync.ts), [`packages/cli/src/commands/sync-pipeline.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/commands/sync-pipeline.ts), [`packages/cli/src/drivers/registry.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/cli/src/drivers/registry.ts), [`packages/core/src/constants.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/core/src/constants.ts), [`packages/web/src/App.tsx`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web/src/App.tsx), [`packages/web/src/pages/dashboard/sessions/page.tsx`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web/src/pages/dashboard/sessions/page.tsx), [`packages/web/vite.config.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web/vite.config.ts), [`packages/web/vitest.config.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web/vitest.config.ts), [`packages/web-worker/wrangler.toml`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/wrangler.toml), [`packages/web-worker/src/index.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/src/index.ts), [`packages/web-worker/src/middleware/access-auth.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/src/middleware/access-auth.ts), [`packages/web-worker/src/middleware/api-key-auth.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/src/middleware/api-key-auth.ts), [`packages/web-worker/src/routes/auth-cli.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/src/routes/auth-cli.ts), [`packages/web-worker/src/api/ingest.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/src/api/ingest.ts), [`packages/web-worker/src/data/search.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/src/data/search.ts), [`packages/web-worker/test/e2e/global-setup.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/web-worker/test/e2e/global-setup.ts), [`scripts/migrations/001-init.sql`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/scripts/migrations/001-init.sql), [`scripts/migrations/006-api-tokens.sql`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/scripts/migrations/006-api-tokens.sql), [`packages/core/test/migration.test.ts`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/packages/core/test/migration.test.ts), [`.github/workflows/ci.yml`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/.github/workflows/ci.yml), [`.github/workflows/release.yml`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/.github/workflows/release.yml), [`LICENSE`](https://github.com/nocoo/pika/blob/02487858f8c567a7e3c780cf951abc957c54623d/LICENSE)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Shared types, parsers and API logic | 共享类型、解析器与 API 逻辑 |
+| Bun | CLI runtime and workspace tooling | CLI 运行时与工作区工具 |
+| @nocoo/base-cli | CLI commands and browser login | CLI 命令与浏览器登录 |
+| Vite | SPA development and builds | SPA 开发与构建 |
+| React | Session browsing and management | 会话阅读与管理界面 |
+| Hono | HTTP routing and middleware | HTTP 路由与中间件 |
+| Cloudflare Workers | API and static assets in one service | 同一服务中的 API 与静态资源 |
+| Cloudflare D1 | Session metadata and full-text search | 会话元数据与全文搜索 |
+| Cloudflare R2 | Compressed canonical messages and raw content | 压缩后的标准化消息及原始内容 |
+| Cloudflare Access | Browser authentication | 浏览器身份认证 |
+
 ## Current logo
 
 ![Pika source identity](../../public/logos/display/pika-160.webp)

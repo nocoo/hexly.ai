@@ -183,5 +183,71 @@
 			"zh": "128/64 px 能辨认双象牙色钟盘与胡桃木边框；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Collect coding assistants’ proposals on a local discussion board, let a person record decisions, and return those checkpoints to assistants through a CLI.",
+			"zh": "在本机讨论看板汇集编码助手的方案，由人记录决策，再通过 CLI 将 checkpoint 提供给助手读取。"
+		},
+		"techStack": [
+			{
+				"name": "Bun / TypeScript",
+				"role": {
+					"en": "CLI and shared logic",
+					"zh": "CLI 与共享逻辑"
+				}
+			},
+			{
+				"name": "commander",
+				"role": {
+					"en": "CLI argument parsing",
+					"zh": "CLI 参数解析"
+				}
+			},
+			{
+				"name": "SQLite / Drizzle ORM",
+				"role": {
+					"en": "Local discussion data",
+					"zh": "本地讨论数据"
+				}
+			},
+			{
+				"name": "Next.js / React",
+				"role": {
+					"en": "Dashboard and server routes",
+					"zh": "看板与服务端路由"
+				}
+			},
+			{
+				"name": "NextAuth / Google OAuth",
+				"role": {
+					"en": "Dashboard login",
+					"zh": "看板登录"
+				}
+			},
+			{
+				"name": "Tailwind CSS / Radix UI",
+				"role": {
+					"en": "Styling and UI components",
+					"zh": "样式与界面组件"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "4356c962fbd24903265d9f4dc680dcb9d6fcbb93",
+			"sources": [
+				"package.json",
+				"packages/core/src/db/connection.ts",
+				"packages/core/src/services/arena.ts",
+				"packages/core/src/services/project-id.ts",
+				"packages/cli/src/index.ts",
+				"packages/cli/src/commands/pop.ts",
+				"packages/web/package.json",
+				"packages/web/src/auth.ts",
+				"packages/web/src/app/api/checkpoint/route.ts",
+				"packages/web/src/app/topic/[id]/topic-view.tsx"
+			]
+		}
 	}
 }

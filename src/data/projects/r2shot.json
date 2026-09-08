@@ -200,5 +200,76 @@
 			"en": "The curled blue silhouette and pale face stay recognizable at toolbar size. At 16 px, individual facets and eye highlights simplify; use the transparent foreground there. Native source: 920 px; 1024/2048 px exports are upscales.",
 			"zh": "卷曲的蓝色轮廓与浅色面部在工具栏尺寸仍可辨识。16 像素时碎片与眼部高光会合并，应使用透明前景。原图为 920 像素，1024、2048 为放大导出。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Capture visible or vertically stitched web pages, upload them to your own R2 bucket, and copy a public image link for sharing.",
+			"zh": "截取网页可见区域或纵向拼接长图，上传到自己的 R2 bucket，再复制公开图片链接用于分享。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Extension logic",
+					"zh": "扩展逻辑"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Capture and settings interface",
+					"zh": "截图与设置界面"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styles",
+					"zh": "界面样式"
+				}
+			},
+			{
+				"name": "Vite",
+				"role": {
+					"en": "Extension bundling",
+					"zh": "扩展构建"
+				}
+			},
+			{
+				"name": "Chrome Manifest V3",
+				"role": {
+					"en": "Browser extension APIs and background worker",
+					"zh": "浏览器扩展 API 与后台服务"
+				}
+			},
+			{
+				"name": "AWS SDK",
+				"role": {
+					"en": "S3 uploads and connection checks",
+					"zh": "S3 上传与连接检查"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Screenshot storage",
+					"zh": "截图存储"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "7df57635f6efa955cd35ca9ee8de7c438c6450d6",
+			"sources": [
+				"package.json",
+				"public/manifest.json",
+				"src/popup/Popup.tsx",
+				"src/core/full-page-screenshot.ts",
+				"src/core/uploader.ts",
+				"src/core/storage.ts",
+				"vite.config.ts",
+				"vitest.e2e.config.ts"
+			]
+		}
 	}
 }

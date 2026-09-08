@@ -200,5 +200,84 @@
 			"en": "The golden ears, dark nose, and open smile remain clear at 32 px. Finer coat planes simplify at 16 px. Sidebar and browser marks stay transparent; touch and install icons use platform-specific presentations.",
 			"zh": "32 像素时金色耳朵、深色鼻尖与张嘴笑容依然清晰；16 像素时细毛色面会合并。侧栏和浏览器保持透明，触屏与安装图标使用各自平台的展示版本。"
 		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Manage authentication secrets and TOTP codes in a browser, move data between authenticators, and maintain encrypted backup archives.",
+			"zh": "在浏览器中管理认证密钥和 TOTP 验证码，在认证器之间迁移数据，并维护加密备份归档。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application and OTP logic",
+					"zh": "应用与 OTP 逻辑"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Web application and server actions",
+					"zh": "Web 应用与服务端操作"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Secret management interface",
+					"zh": "密钥管理界面"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styles",
+					"zh": "界面样式"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "User-scoped data through the HTTP API",
+					"zh": "经 HTTP API 存储用户数据"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Google sign-in and sessions",
+					"zh": "Google 登录与会话"
+				}
+			},
+			{
+				"name": "Web Crypto",
+				"role": {
+					"en": "TOTP and AES-GCM backup encryption",
+					"zh": "TOTP 与 AES-GCM 备份加密"
+				}
+			},
+			{
+				"name": "Serwist",
+				"role": {
+					"en": "PWA caching and offline fallback",
+					"zh": "PWA 缓存与离线回退"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "4e7a2ab145d021addf932c7a154416e99a8bf451",
+			"sources": [
+				"package.json",
+				"auth.ts",
+				"lib/db/d1-client.ts",
+				"lib/db/scoped.ts",
+				"viewmodels/useSecretsViewModel.ts",
+				"models/backup-archive.ts",
+				"models/import-parsers.ts",
+				"app/sw.ts",
+				"worker/src/index.ts"
+			]
+		}
 	}
 }

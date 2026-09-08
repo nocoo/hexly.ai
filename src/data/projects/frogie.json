@@ -253,5 +253,92 @@
 			"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
 		}
 	},
-	"archived": false
+	"archived": false,
+	"overview": {
+		"goal": {
+			"en": "Work on local project directories through a web coding assistant, keeping conversations, tool execution, MCP tools and resumable sessions together.",
+			"zh": "通过网页编程助手处理本地项目，把对话、工具执行、MCP 工具和可续接会话放在一起。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Bun",
+				"role": {
+					"en": "Service code, runtime and builds",
+					"zh": "服务代码、运行与构建"
+				}
+			},
+			{
+				"name": "Hono / WebSocket",
+				"role": {
+					"en": "HTTP APIs and streaming conversation events",
+					"zh": "HTTP API 与流式会话事件"
+				}
+			},
+			{
+				"name": "Anthropic SDK",
+				"role": {
+					"en": "Model calls and the custom tool loop",
+					"zh": "模型调用与自定义工具循环"
+				}
+			},
+			{
+				"name": "MCP TypeScript SDK",
+				"role": {
+					"en": "stdio connections and tool discovery",
+					"zh": "stdio 服务连接与工具发现"
+				}
+			},
+			{
+				"name": "SQLite / JSON",
+				"role": {
+					"en": "Settings, session indexes and conversation files",
+					"zh": "设置、会话索引与对话文件"
+				}
+			},
+			{
+				"name": "React / Vite / Zustand",
+				"role": {
+					"en": "Web interface and client state",
+					"zh": "网页界面与客户端状态"
+				}
+			},
+			{
+				"name": "Tailwind CSS / Radix UI",
+				"role": {
+					"en": "Styling and interactive components",
+					"zh": "样式与交互组件"
+				}
+			},
+			{
+				"name": "react-markdown / remark-gfm / rehype-highlight",
+				"role": {
+					"en": "Markdown and code highlighting",
+					"zh": "Markdown 与代码高亮"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "79e16babfb6067dcd90ad59b900fa76ad282f35c",
+			"sources": [
+				"package.json",
+				"packages/server/package.json",
+				"packages/web/package.json",
+				"packages/server/src/index.ts",
+				"packages/server/src/auth/middleware.ts",
+				"packages/server/src/routes/settings.ts",
+				"packages/server/src/routes/sessions.ts",
+				"packages/server/src/routes/ws-chat.ts",
+				"packages/server/src/engine/frogie-agent.ts",
+				"packages/server/src/engine/builtin-tools.ts",
+				"packages/server/src/engine/session-sync.ts",
+				"packages/server/src/mcp/client.ts",
+				"packages/server/src/db/connection.ts",
+				"packages/web/src/App.tsx",
+				"packages/web/src/pages/PromptsPage.tsx",
+				"packages/web/src/viewmodels/models.viewmodel.ts",
+				"packages/web/vite.config.ts"
+			]
+		}
+	}
 }

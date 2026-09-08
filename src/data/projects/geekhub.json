@@ -183,5 +183,88 @@
 			"zh": "128/64 px 能辨认绿色阅读夹与层叠象牙色纸页；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.",
+			"zh": "集中阅读和整理 RSS 订阅，按需生成中文摘要与翻译。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Application logic",
+					"zh": "应用逻辑"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Web application and APIs",
+					"zh": "Web 应用与 API"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Reading interface",
+					"zh": "阅读界面"
+				}
+			},
+			{
+				"name": "Supabase",
+				"role": {
+					"en": "Authentication and database access",
+					"zh": "认证与数据库访问"
+				}
+			},
+			{
+				"name": "PostgreSQL",
+				"role": {
+					"en": "Feeds, articles, and reading state",
+					"zh": "订阅、文章与阅读状态"
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"role": {
+					"en": "Interface styling",
+					"zh": "界面样式"
+				}
+			},
+			{
+				"name": "OpenAI SDK",
+				"role": {
+					"en": "Optional summaries and translations",
+					"zh": "可选的摘要与翻译"
+				}
+			},
+			{
+				"name": "rss-parser",
+				"role": {
+					"en": "RSS and Atom parsing",
+					"zh": "RSS 与 Atom 解析"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "ca7042dc77e4c64e317793b97a1c080c6fa8e567",
+			"sources": [
+				"package.json",
+				"src/lib/feed-fetcher.ts",
+				"src/lib/settings.ts",
+				"src/lib/supabase-server.ts",
+				"src/lib/article-repository.ts",
+				"src/lib/rsshub.ts",
+				"src/contexts/AuthContext.tsx",
+				"src/app/api/ai/summarize/route.ts",
+				"src/app/api/ai/translate/route.ts",
+				"src/components/ReaderView.tsx",
+				"supabase/migrations/20260113000000_schema.sql",
+				"scripts/run-api-e2e.sh",
+				"tests/e2e/db-available.ts"
+			]
+		}
 	}
 }

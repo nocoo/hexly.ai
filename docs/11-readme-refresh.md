@@ -4,9 +4,11 @@
 
 2026-09-08 开始。以 `src/data/projects/*.json` 中 `archived: false` 为准，共 49 个项目；20 个归档项目不纳入。49 个仓库都能在本站上一级目录找到。本站自身不在项目目录中。
 
-首批已完成全部项目的初步比较，并整理、发布 Snaky 和 Steed。2026-09-08 用户确认试点，明确要求调用 agent team 实施其余项目，由主代理负责 review。剩余 47 个项目现已获准沿用模板改写、核实本站资料并直接推送 main。
+首批已完成全部项目的初步比较，并整理、发布 Snaky 和 Steed。2026-09-08 用户确认试点，明确要求调用 agent team 实施其余项目，由主代理负责 review。后续 47 个项目现已完成主代理复核、双语 README 发布与本站资料集成，共 49 个项目。
 
 用户已授权：调查前和推送前 pull；直接在各仓库 main 修改、提交、push；不修改版本号。不要求 PR。不改写 CLAUDE.md 中的质量制度。
+
+收尾追加授权：全部完成后，对本站执行 `/su-release Y+1`，即当前 `0.4.6 → 0.5.0`，通过现有 `scripts/release.ts` 发布、打 tag 并创建 GitHub Release。其他项目仍不修改版本。同步调整 `nocoo/nocoo` profile 的入口顺序，各分区内按本站当前默认排序，Games 移到 Recent Projects 后，作为第二个项目区域；所有涉及仓库均推送。
 
 ## 交付约定
 
@@ -15,7 +17,7 @@
 - 顶部有站点时并列显示「站点 · English」，站点在前；没有站点时只显示 English。站点必须有仓库配置或已有可核实来源。
 - 功能、依赖、启动方式和测试命令以同步后的代码与配置为依据。记录旧文档与实现的差异，不能把规划当成已完成功能。
 - 测试只解释实际存在的基础测试层及运行方法。README 不介绍 6DQ、覆盖率门槛、质量门禁、hook 制度；相关内容留在项目维护文档中。
-- 本站在首批项目 JSON 中增加中英文项目目标和技术栈资料，在详情页首组 Logo 大图下方显示，保持切换项目时大图位置稳定。技术栈使用可换行的文字 badges，兼容浅色、深色和移动端。
+- 本站在每个已核实项目 JSON 中增加中英文项目目标和技术栈资料，在详情页首组 Logo 大图下方显示，保持切换项目时大图位置稳定。技术栈使用可换行的文字 badges，兼容浅色、深色和移动端。
 - 每个项目资料保留核实日期、源代码提交和证据路径，便于继续整理和追溯。
 
 ## 执行步骤
@@ -26,15 +28,15 @@
 | 同步并初步调查 49 个仓库 | 完成初筛 | [完整比较清单](readme-refresh/inventory.md)；存在原有改动或分叉的例外单独记录 |
 | 核实 Snaky 并提炼模板 | 已推送，CI 通过 | [模板](readme-refresh/template.md)、[代码证据与测试记录](readme-refresh/snaky.md)；中英文 README 内容对应 |
 | 选择并核实第二个项目 | 已推送，CI / 自动部署通过 | 选择 Steed：原 40 行 README 缺少核心功能、启动与测试入口；[调查记录](readme-refresh/steed.md) |
-| 本站字段与详情页展示 | 已上线并核验 | 仅两份试点 JSON 添加 overview；双语目标、技术栈 badges、相应语言 README 入口 |
+| 本站字段与详情页展示 | 49 项资料已集成 | 全部非归档 JSON 添加 overview；双语目标、技术栈 badges、相应语言 README 入口，随 0.5.0 发布 |
 | 验证、复核并推送首批 | 完成 | 三仓库 main 已推送；本站 CI、部署及公开页面验证通过；[验证与交付记录](readme-refresh/validation.md) |
-| 用户确认后分批推广 | 已获确认，实施中 | Agent team 分工、逐项目 review 和发布进度见[推广记录](readme-refresh/rollout.md) |
+| 用户确认后分批推广 | 49 个仓库已推送 | Agent team 调查，主代理逐项 review；精确文稿摘要、CI 与限制见[推广记录](readme-refresh/rollout.md) |
 
 已确认的首批：[Snaky README](https://github.com/nocoo/snaky#readme) / [English](https://github.com/nocoo/snaky/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/snaky)，[Steed README](https://github.com/nocoo/steed#readme) / [English](https://github.com/nocoo/steed/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/steed)。后续进度以推广记录为准，首批调查和验证结果保留为历史基线。
 
 ## 调查原则
 
-README 行数只用于找候选，不能单独判定文档质量。比较项目用途、用户可用功能、安装与首次运行、开发依赖、各层测试入口、英文版和过时信息。初步调查负责排优先级；只有完成代码核实的首批项目才发布新的详细资料。
+README 行数只用于找候选，不能单独判定文档质量。比较项目用途、用户可用功能、安装与首次运行、开发依赖、各层测试入口、英文版和过时信息。初步调查负责排优先级；每个项目完成代码核实、主代理复核和 README 发布后，才把新资料纳入本站。
 
 仓库若有未提交修改、非 main 分支、分叉历史或 pull 失败，保留现场并记录原因，不覆盖用户工作。调查记录只收集公开代码和配置结构，不记录凭据或本地私有数据。
 
@@ -49,8 +51,16 @@ README 行数只用于找候选，不能单独判定文档质量。比较项目�
 
 ## 逐项目继续方式
 
-用户确认首批的结构、措辞和详情页后，每批整理 3–5 个项目。每个项目重新检查工作区并 pull，记录源提交，对照入口与测试修正过时事实，再写内容对应的双语 README。只有完成核实的项目才添加本站 `overview`。
+用户已确认首批的结构、措辞和详情页。本轮三条工作线已逐项目完成整理；后续更新继续逐项检查工作区并 pull，记录源提交，对照入口与测试修正过时事实，再写内容对应的双语 README。只有完成核实并发布的项目才添加本站 `overview`。
 
 每批检查相对链接、启动 / 测试命令、语言对应和功能边界，再运行受影响的站点检查。正常执行仓库 hooks，提交后再次 pull、确认仅有本轮待推送提交，再 push main；不改版本。记录提交、CI、部署结果以及仍需处理的真实限制。
 
 Giraffe 的已有改动、Frogie / Raven 的分叉、Bogo 的已有未推送提交在推广时重新核对。若仍有无关工作，则从最新远端 main 建立隔离 checkout，仅发布本轮 README 改动，保留原工作区和本地提交。
+
+## 全量交付与本站发版
+
+49 个非归档仓库的双语 README 已推送 main，并按精确提交回读。本站49个overview与生成profile齐全，20个归档记录、现有身份资料、颜色、排序和素材保持不变。GitHub profile已按本站相对顺序调整，Games位于第二个项目区域。
+
+本站完整单元/覆盖率、HTTP、桌面/移动浏览器检查通过；额外逐项核对49个详情页的中英文目标、技术名与用途、README链接，以及320px横向溢出，全部通过。发布前结果与0.5.0发布后证据入口见[发版验收记录](readme-refresh/release-0.5.0.md)。
+
+Gaga和Dogfight的README推送与CI成功，自动部署因现有Cloudflare生产凭据错误9109失败；这两项部署限制与本轮文稿发布分开记录，详见[凭据调查](readme-refresh/rollout/release-auth.md)。

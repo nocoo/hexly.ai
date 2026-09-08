@@ -1,0 +1,123 @@
+{
+  "projectId": "r2shot",
+  "repository": "https://github.com/nocoo/r2shot",
+  "checkout": "/Users/nocoo/workspace/personal/r2shot",
+  "baselineRevision": "7df57635f6efa955cd35ca9ee8de7c438c6450d6",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Capture visible or vertically stitched web pages, upload them to your own R2 bucket, and copy a public image link for sharing.",
+      "zh": "截取网页可见区域或纵向拼接长图，上传到自己的 R2 bucket，再复制公开图片链接用于分享。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Extension logic",
+          "zh": "扩展逻辑"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Capture and settings interface",
+          "zh": "截图与设置界面"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Interface styles",
+          "zh": "界面样式"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Extension bundling",
+          "zh": "扩展构建"
+        }
+      },
+      {
+        "name": "Chrome Manifest V3",
+        "role": {
+          "en": "Browser extension APIs and background worker",
+          "zh": "浏览器扩展 API 与后台服务"
+        }
+      },
+      {
+        "name": "AWS SDK",
+        "role": {
+          "en": "S3 uploads and connection checks",
+          "zh": "S3 上传与连接检查"
+        }
+      },
+      {
+        "name": "Cloudflare R2",
+        "role": {
+          "en": "Screenshot storage",
+          "zh": "截图存储"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "7df57635f6efa955cd35ca9ee8de7c438c6450d6",
+      "sources": [
+        "package.json",
+        "public/manifest.json",
+        "src/popup/Popup.tsx",
+        "src/core/full-page-screenshot.ts",
+        "src/core/uploader.ts",
+        "src/core/storage.ts",
+        "vite.config.ts",
+        "vitest.e2e.config.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean main, no existing ahead commits"
+    },
+    {
+      "command": "bun run test:e2e",
+      "result": "Passed: 7 workflow tests with mocked Chrome and S3 boundaries; no real upload"
+    },
+    {
+      "command": "GET Chrome Web Store listing",
+      "result": "200"
+    },
+    {
+      "command": "Normal pre-commit",
+      "result": "TypeScript, Biome, 159 tests and staged Gitleaks passed."
+    },
+    {
+      "command": "Normal pre-push",
+      "result": "Production extension build, coverage suite, Biome and OSV passed; entire log checked for earlier failures."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "publisher": "root",
+    "readmeRevision": "876ee4bfeebd80f4de4a9db6b99827e438cfecf6",
+    "prePushPull": "Already up to date; exactly one task commit ahead",
+    "push": "success",
+    "remoteReadback": "Both files read through GitHub Contents API at main; exact bytes matched.",
+    "ci": {
+      "runId": 34222786038,
+      "url": "https://github.com/nocoo/r2shot/actions/runs/34222786038",
+      "status": "queued"
+    },
+    "deployment": {
+      "status": "not_triggered",
+      "reason": "README push only; no extension store publication or version tag."
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "result": "已核对完整 README diff、英文正文、截图与纵向拼接边界、R2 自有存储、上传后点击复制、domain 拼接与 HeadBucket、本地存储、Manifest V3 和模拟工作流测试说明。",
+    "record": "r2shot.review.md"
+  }
+}

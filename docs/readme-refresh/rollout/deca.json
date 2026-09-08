@@ -1,0 +1,125 @@
+{
+  "projectId": "deca",
+  "repository": "https://github.com/nocoo/deca",
+  "checkout": "/Users/nocoo/workspace/personal/deca",
+  "baselineRevision": "37911d4cdf1c242c50c5d48d890a0e041c486d8b",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.",
+      "zh": "通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。"
+    },
+    "techStack": [
+      {
+        "name": "Bun / TypeScript",
+        "role": {
+          "en": "Local agent and workspaces",
+          "zh": "本地 Agent 与工作区"
+        }
+      },
+      {
+        "name": "Anthropic SDK",
+        "role": {
+          "en": "Model calls and tool protocol",
+          "zh": "模型调用与工具协议"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "HTTP channel",
+          "zh": "HTTP 通道"
+        }
+      },
+      {
+        "name": "discord.js",
+        "role": {
+          "en": "Discord bot channel",
+          "zh": "Discord 机器人通道"
+        }
+      },
+      {
+        "name": "p-queue",
+        "role": {
+          "en": "Gateway request dispatch",
+          "zh": "Gateway 请求调度"
+        }
+      },
+      {
+        "name": "JSONL / JSON / Markdown",
+        "role": {
+          "en": "Sessions, configuration and context files",
+          "zh": "会话、配置与上下文文件"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "37911d4cdf1c242c50c5d48d890a0e041c486d8b",
+      "sources": [
+        "package.json",
+        "packages/gateway/cli.ts",
+        "packages/gateway/serve.ts",
+        "packages/gateway/src/gateway.ts",
+        "packages/gateway/src/adapter.ts",
+        "packages/agent/src/core/agent.ts",
+        "packages/agent/src/core/session.ts",
+        "packages/agent/src/core/memory.ts",
+        "packages/agent/src/tools/builtin.ts",
+        "packages/storage/src/provider.ts",
+        "packages/storage/src/types.ts",
+        "packages/http/src/server.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "check": "Initial sync",
+      "result": "Clean main, git pull --ff-only succeeded before investigation."
+    },
+    {
+      "check": "Dependencies",
+      "result": "bun install --frozen-lockfile passed and normal Husky setup completed."
+    },
+    {
+      "check": "Unit tests",
+      "result": "All 1289 tests in 62 files across six packages passed. Vitest configurations exclude real-credential e2e/behavioral tests."
+    },
+    {
+      "check": "Local integration tests",
+      "result": "Storage 22, HTTP 9 and Terminal 6 E2E checks all passed using temporary data and local Echo processes. Unrelated inherited API_KEY was unset for HTTP fixtures; no provider or Discord credentials used."
+    },
+    {
+      "check": "External tests scope",
+      "result": "Agent, Discord and Gateway E2E can load personal provider/Discord credentials and send real messages. Not executed; documentation explains the prerequisites. Actual pre-push is unit tests plus lint, so no hook bypass is needed."
+    },
+    {
+      "check": "Website and license",
+      "result": "GitHub homepage empty; no public site added. Actual LICENSE is MIT."
+    },
+    {
+      "check": "Links and bilingual examples",
+      "result": "All 8 references per language resolve; bash examples match. Echo explicitly disables both Discord and terminal to avoid inherited channel settings."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "readmeCommit": "61b8cbc50c9e59305bba016c5d3008e540557f56",
+    "url": "https://github.com/nocoo/deca/commit/61b8cbc50c9e59305bba016c5d3008e540557f56",
+    "pushed": true,
+    "prePushPull": "Fresh git pull --ff-only succeeded after one transient GitHub SSL connection failure; only the README commit was ahead.",
+    "remoteReadback": "Both README byte sequences match local through GitHub Contents API at main; clean synchronized main.",
+    "hooks": "Normal pre-commit lint and unit coverage passed; pre-push unit tests and lint passed without external model or Discord tests.",
+    "ci": {
+      "url": "https://github.com/nocoo/deca/actions/runs/34227348442",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "deca.review.md"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "projectId": "dove",
+  "repository": "https://github.com/nocoo/dove",
+  "checkout": "/Users/nocoo/workspace/personal/dove",
+  "baselineRevision": "a010ab2daf92fd3cda45dee41a18132f444d1780",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.",
+      "zh": "为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application and sending logic",
+          "zh": "应用与发送逻辑"
+        }
+      },
+      {
+        "name": "Cloudflare Workers",
+        "role": {
+          "en": "API runtime and static asset hosting",
+          "zh": "API 运行时与静态资源托管"
+        }
+      },
+      {
+        "name": "Hono",
+        "role": {
+          "en": "Dashboard API and webhook routes",
+          "zh": "管理 API 与 Webhook 路由"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Projects, templates, logs and sending state",
+          "zh": "项目、模板、日志与发送状态存储"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Email management dashboard",
+          "zh": "邮件管理界面"
+        }
+      },
+      {
+        "name": "Vite",
+        "role": {
+          "en": "Dashboard build",
+          "zh": "管理界面构建"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Administrator authentication",
+          "zh": "管理员身份验证"
+        }
+      },
+      {
+        "name": "Resend",
+        "role": {
+          "en": "API email sending backend",
+          "zh": "通过 API 发送邮件"
+        }
+      },
+      {
+        "name": "Cloudflare Email Routing",
+        "role": {
+          "en": "Email sending through the Worker binding",
+          "zh": "通过 Worker 绑定发送邮件"
+        }
+      },
+      {
+        "name": "Bun",
+        "role": {
+          "en": "Dependencies, scripts and HTTP tests",
+          "zh": "依赖、脚本与 HTTP 测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "a010ab2daf92fd3cda45dee41a18132f444d1780",
+      "sources": [
+        "package.json",
+        "vite.config.ts",
+        "wrangler.toml",
+        "src/server/index.ts",
+        "src/server/middleware/auth-session.ts",
+        "src/server/routes/webhook.ts",
+        "src/server/routes/templates.ts",
+        "src/server/routes/providers.ts",
+        "src/server/lib/email/provider.ts",
+        "src/lib/email/providers/resend.ts",
+        "src/lib/email/providers/cloudflare.ts",
+        "src/client/routes/projects/$id.tsx",
+        "src/server/schema.sql",
+        "scripts/setup-ci-env.ts",
+        "scripts/run-e2e.ts",
+        "playwright.config.ts",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "git diff --check",
+      "four documents: relative links, images and README section order",
+      "bilingual bash parity, shell syntax and script references",
+      "fresh and repeated schema initialization in memory SQLite",
+      "explicit env-file precedence verified in installed Wrangler source",
+      "website verified from custom domain and release workflow; MIT license verified",
+      "frozen dependency install and normal Husky prepare",
+      "Vite build",
+      "test environment placeholders, local URL and free ports verified without printing secrets",
+      "normal pre-commit typecheck, staged lint, Gitleaks, route/page maps and unit coverage",
+      "normal pre-push local HTTP API E2E and OSV scan",
+      "published bilingual README byte-for-byte readback",
+      "GitHub CI and Worker deployment success"
+    ],
+    "notRun": [
+      "user development servers",
+      "real email sending",
+      "manual production actions"
+    ],
+    "limitations": [
+      "Default bun dev connects to production D1; local initialization requires --env test.",
+      "Dry-run switches apply only to the legacy Resend environment path, not selected providers.",
+      "Template test sends bypass webhook recipient rules, quotas, cooldown and send logs.",
+      "HTTP and browser tests share the checkout's local test D1 database.",
+      "Provider success does not establish inbox delivery; Access and real email delivery were not exercised."
+    ]
+  },
+  "publication": {
+    "approvedBy": "root",
+    "branch": "main",
+    "commits": [
+      {
+        "revision": "dc75e9604d15d1d6af7b7c6915271854b4d82428",
+        "subject": "docs: refresh bilingual project readmes"
+      }
+    ],
+    "readmeRevision": "dc75e9604d15d1d6af7b7c6915271854b4d82428",
+    "push": "success",
+    "remoteReadback": [
+      "README.md",
+      "docs/README.en.md"
+    ],
+    "ci": {
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/nocoo/dove/actions/runs/34223410858",
+      "runId": 34223410858
+    },
+    "deployment": {
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/nocoo/dove/actions/runs/34223484674",
+      "runId": 34223484674,
+      "scope": "Cloudflare Worker and static assets through GitHub CD"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "dove.review.md"
+  }
+}

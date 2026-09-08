@@ -1,0 +1,181 @@
+{
+  "projectId": "bat",
+  "repository": "https://github.com/nocoo/bat",
+  "checkout": "/Users/nocoo/workspace/personal/.readme-refresh-20260908/bat",
+  "baselineRevision": "ab6984c18475e4c38723777f09f31e381d3e2f96",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Collect Linux host metrics to inspect fleet status, alerts and infrastructure assets.",
+      "zh": "采集 Linux 主机指标，集中查看主机状态、告警与基础设施资产。"
+    },
+    "techStack": [
+      {
+        "name": "Rust",
+        "role": {
+          "en": "Linux host metric collection",
+          "zh": "Linux 主机指标采集"
+        }
+      },
+      {
+        "name": "Tokio / reqwest",
+        "role": {
+          "en": "Async collection and HTTPS upload",
+          "zh": "异步采集与 HTTPS 上报"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Worker, dashboard and CLI logic",
+          "zh": "Worker、仪表盘与 CLI 逻辑"
+        }
+      },
+      {
+        "name": "Bun / Turborepo",
+        "role": {
+          "en": "Workspace dependencies and builds",
+          "zh": "工作区依赖与构建"
+        }
+      },
+      {
+        "name": "Hono / Cloudflare Workers",
+        "role": {
+          "en": "Ingestion, API, scheduled jobs and static assets",
+          "zh": "采集接入、API、定时任务与静态资源"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "Metrics, alerts, events and assets",
+          "zh": "指标、告警、事件与资产数据"
+        }
+      },
+      {
+        "name": "Cloudflare KV",
+        "role": {
+          "en": "Optional caches for frequent queries",
+          "zh": "热点查询的可选缓存"
+        }
+      },
+      {
+        "name": "Vite / React",
+        "role": {
+          "en": "Dashboard interface and builds",
+          "zh": "仪表盘界面与构建"
+        }
+      },
+      {
+        "name": "Recharts",
+        "role": {
+          "en": "Metric trends",
+          "zh": "指标趋势图"
+        }
+      },
+      {
+        "name": "Cloudflare Access",
+        "role": {
+          "en": "Browser authentication",
+          "zh": "浏览器认证"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "ab6984c18475e4c38723777f09f31e381d3e2f96",
+      "sources": [
+        "package.json",
+        "packages/ui/package.json",
+        "packages/ui/vite.config.ts",
+        "packages/ui/playwright.config.ts",
+        "packages/worker/package.json",
+        "packages/worker/wrangler.toml",
+        "packages/worker/src/index.ts",
+        "packages/worker/src/middleware/entry-control.ts",
+        "packages/worker/src/middleware/access-auth.ts",
+        "packages/worker/src/middleware/api-key.ts",
+        "packages/worker/src/routes/setup.ts",
+        "packages/worker/src/routes/cli-auth.ts",
+        "packages/worker/src/routes/monitoring.ts",
+        "packages/worker/src/routes/events-ingest.ts",
+        "packages/worker/src/routes/heartbeat.ts",
+        "packages/worker/src/adapters/d1/aggregation.ts",
+        "packages/worker/src/lib/host-meta-cache.ts",
+        "packages/worker/src/services/status.ts",
+        "packages/worker/test/e2e/global-setup.ts",
+        "packages/shared/src/settings.ts",
+        "packages/shared/src/alerts.ts",
+        "packages/cli/package.json",
+        "packages/cli/src/bin/bat-cli.ts",
+        "packages/cli/src/commands/login.ts",
+        "packages/cli/src/commands/service/run.ts",
+        "packages/cli/src/commands/service/install.ts",
+        "probe/Cargo.toml",
+        "probe/src/main.rs",
+        "probe/src/config.rs",
+        "probe/dist/bat-probe.service",
+        "probe/Dockerfile.build",
+        "scripts/l3-setup.sh",
+        "scripts/l3-webserver.sh",
+        ".github/workflows/ci.yml",
+        ".github/workflows/release.yml",
+        "LICENSE"
+      ]
+    }
+  },
+  "validation": {
+    "passed": [
+      "clean original main and safe pull before source research; clean independent clone at identical baseline also pulled",
+      "frozen dependency installation with normal prepare in both checkouts; no dependency/config edits",
+      "shared/UI build in independent clone",
+      "unmodified API E2E in independent clone: local migrations, synthetic records and static assets; all tests passed; generated .dev.vars removed",
+      "source CLI --help without login or heartbeat",
+      "four docs links/anchors/images, newlines, shell syntax, scripts, bilingual code examples and eight-section order",
+      "all evidence paths verified at baseline",
+      "normal pre-commit TypeScript and Rust coverage, typechecks, staged secret scan and route/page checks",
+      "normal pre-push local API E2E plus JS/Rust OSV scans and Gitleaks",
+      "fresh pull and exact one-documentation-commit publication guard before normal main push",
+      "both README files exact-byte verified through GitHub contents API at published revision",
+      "original checkout safely fast-forwarded; ignored .dev.vars inode, size and modification time unchanged"
+    ],
+    "notRun": [
+      "full Playwright browser execution",
+      "real CLI login, service install, probe execution or VPS installation",
+      "manual Worker deploy or remote migration"
+    ],
+    "limitations": [
+      "Original Bat checkout contains ignored .dev.vars; API runner overwrites this file and never restores an existing value. Independent clone prevents original config changes.",
+      "Vite dev proxy is fixed to production browser endpoint with Access service-token injection; concurrently started local Worker is not its proxy target.",
+      "Machine routes and auth scopes differ from browser APIs; CLI is private workspace, with assets-scoped token.",
+      "CLI heartbeat repeats supplied running/stopped values, not process discovery; macOS install only writes plist, no launchctl execution.",
+      "Actual retention setting is 1/7/30 days for raw, hourly, tier2 snapshots and events; old raw7/hourly90 constants do not drive purge.",
+      "R2 binary and checksum URL HEAD requests all returned 403 in this environment, so distribution availability was not verified. Source-build alternative documented.",
+      "Release uploads no install.sh; main releases Worker with migrations, tag-only job publishes probe binaries; VPS upgrades remain manual.",
+      "Optional KV paths fall back to D1; isolated tests do not exercise production KV cache consistency.",
+      "L3 setup ignores individual SQL failures and non-CI Playwright may reuse existing port, so startup output alone is not test proof."
+    ]
+  },
+  "publication": {
+    "revision": "e47f762f986fa97ba686dc6df8518448b9e72542",
+    "branch": "main",
+    "remoteReadback": "both README files exact-byte verified via GitHub contents API",
+    "worktree": "independent and original checkouts clean, aligned with origin/main; original ignored configuration retained",
+    "ci": {
+      "runId": 34230125377,
+      "url": "https://github.com/nocoo/bat/actions/runs/34230125377",
+      "conclusion": "success"
+    },
+    "deployment": {
+      "runId": 34230436071,
+      "url": "https://github.com/nocoo/bat/actions/runs/34230436071",
+      "conclusion": "success"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "bat.review.md"
+  }
+}

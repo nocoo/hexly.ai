@@ -200,5 +200,116 @@
 			"zh": "象耳、眼睛、象牙、卷鼻与整架纸飞机距圆角边界至少 148.5 px，仅下方颈部穿过边框。管理后台使用透明小标，用户配置的论坛标识与 favicon 保持独立。"
 		},
 		"model": "gpt-image-2"
+	},
+	"overview": {
+		"goal": {
+			"en": "Browse and maintain the Tongji Network forum, bringing historical Discuz content into a current community interface.",
+			"zh": "浏览与维护同济网论坛，将 Discuz 历史内容接入新的社区界面。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "Applications, shared packages and migration tools",
+					"zh": "应用、共享包与迁移工具"
+				}
+			},
+			{
+				"name": "Next.js",
+				"role": {
+					"en": "Forum, admin console and server API proxies",
+					"zh": "论坛、后台与服务端 API 代理"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Community and administration interfaces",
+					"zh": "社区与管理交互界面"
+				}
+			},
+			{
+				"name": "Cloudflare Workers",
+				"role": {
+					"en": "Forum API and scheduled jobs",
+					"zh": "论坛 API 与定时任务"
+				}
+			},
+			{
+				"name": "Cloudflare D1",
+				"role": {
+					"en": "Forum records and search indexes",
+					"zh": "论坛数据与搜索索引"
+				}
+			},
+			{
+				"name": "Cloudflare KV",
+				"role": {
+					"en": "Caches and runtime state",
+					"zh": "缓存与运行状态"
+				}
+			},
+			{
+				"name": "Cloudflare R2",
+				"role": {
+					"en": "Uploaded files",
+					"zh": "上传文件存储"
+				}
+			},
+			{
+				"name": "Auth.js",
+				"role": {
+					"en": "Forum credentials and admin Google sessions",
+					"zh": "论坛密码登录与后台 Google 会话"
+				}
+			},
+			{
+				"name": "Rust",
+				"role": {
+					"en": "Terminal API client",
+					"zh": "终端 API 客户端"
+				}
+			},
+			{
+				"name": "ratatui",
+				"role": {
+					"en": "Terminal browsing interface",
+					"zh": "终端浏览界面"
+				}
+			},
+			{
+				"name": "Bun",
+				"role": {
+					"en": "Workspaces, SQLite migration and tests",
+					"zh": "工作区、SQLite 迁移与测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "5b59a96419ca72d6a3b27fe004f08d79fec2728c",
+			"sources": [
+				"package.json",
+				"apps/web/package.json",
+				"apps/admin/package.json",
+				"apps/worker/package.json",
+				"apps/worker/wrangler.toml",
+				"apps/worker/src/index.ts",
+				"apps/worker/src/middleware/apiKey.ts",
+				"apps/worker/src/handlers/search.ts",
+				"apps/web/src/auth.ts",
+				"apps/admin/src/auth.ts",
+				"apps/worker/.dev.vars.example",
+				"packages/cli-rs/Cargo.toml",
+				"packages/cli-rs/ellie-core/src/config.rs",
+				"packages/cli-rs/ellie-tui/src/app.rs",
+				"packages/migrate/src/index.ts",
+				"scripts/run-l2.ts",
+				"scripts/run-l3-admin.ts",
+				"tests/e2e/fixtures/base.ts",
+				".github/workflows/release.yml",
+				"LICENSE"
+			]
+		}
 	}
 }

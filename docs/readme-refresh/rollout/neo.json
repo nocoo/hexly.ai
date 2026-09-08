@@ -1,0 +1,133 @@
+{
+  "projectId": "neo",
+  "repository": "https://github.com/nocoo/neo",
+  "checkout": "/Users/nocoo/workspace/personal/neo",
+  "baselineRevision": "4e7a2ab145d021addf932c7a154416e99a8bf451",
+  "status": "published",
+  "overview": {
+    "goal": {
+      "en": "Manage authentication secrets and TOTP codes in a browser, move data between authenticators, and maintain encrypted backup archives.",
+      "zh": "在浏览器中管理认证密钥和 TOTP 验证码，在认证器之间迁移数据，并维护加密备份归档。"
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "role": {
+          "en": "Application and OTP logic",
+          "zh": "应用与 OTP 逻辑"
+        }
+      },
+      {
+        "name": "Next.js",
+        "role": {
+          "en": "Web application and server actions",
+          "zh": "Web 应用与服务端操作"
+        }
+      },
+      {
+        "name": "React",
+        "role": {
+          "en": "Secret management interface",
+          "zh": "密钥管理界面"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "role": {
+          "en": "Interface styles",
+          "zh": "界面样式"
+        }
+      },
+      {
+        "name": "Cloudflare D1",
+        "role": {
+          "en": "User-scoped data through the HTTP API",
+          "zh": "经 HTTP API 存储用户数据"
+        }
+      },
+      {
+        "name": "Auth.js",
+        "role": {
+          "en": "Google sign-in and sessions",
+          "zh": "Google 登录与会话"
+        }
+      },
+      {
+        "name": "Web Crypto",
+        "role": {
+          "en": "TOTP and AES-GCM backup encryption",
+          "zh": "TOTP 与 AES-GCM 备份加密"
+        }
+      },
+      {
+        "name": "Serwist",
+        "role": {
+          "en": "PWA caching and offline fallback",
+          "zh": "PWA 缓存与离线回退"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-08",
+      "revision": "4e7a2ab145d021addf932c7a154416e99a8bf451",
+      "sources": [
+        "package.json",
+        "auth.ts",
+        "lib/db/d1-client.ts",
+        "lib/db/scoped.ts",
+        "viewmodels/useSecretsViewModel.ts",
+        "models/backup-archive.ts",
+        "models/import-parsers.ts",
+        "app/sw.ts",
+        "worker/src/index.ts"
+      ]
+    }
+  },
+  "validation": [
+    {
+      "command": "git pull --ff-only",
+      "result": "Already up to date; clean main, no existing ahead commits"
+    },
+    {
+      "command": "Apply all four current schema SQL files to temporary in-memory SQLite",
+      "result": "Passed; secrets color/deleted_at and user_settings backup/Backy columns present"
+    },
+    {
+      "command": "GET https://neo.hexly.ai",
+      "result": "200"
+    },
+    {
+      "command": "Normal pre-commit",
+      "result": "Existing docs-only path accepted the README changes; no manual bypass."
+    },
+    {
+      "command": "Normal pre-push",
+      "result": "34 HTTP tests using the isolated E2eScopedDB passed, followed by OSV and Gitleaks. Test port was free before starting; only test-generated tsconfig additions were restored."
+    }
+  ],
+  "publication": {
+    "branch": "main",
+    "publisher": "root",
+    "readmeRevision": "8d3c7feb7fb75facdf20f850d4aeba75ebedd34b",
+    "prePushPull": "Already up to date; exactly one task commit ahead",
+    "push": "success",
+    "remoteReadback": "Both files read through GitHub Contents API at main; exact bytes matched.",
+    "ci": {
+      "runId": 34222938853,
+      "url": "https://github.com/nocoo/neo/actions/runs/34222938853",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "deployment": {
+      "runId": 34223050844,
+      "url": "https://github.com/nocoo/neo/actions/runs/34223050844",
+      "status": "in_progress"
+    }
+  },
+  "review": {
+    "reviewer": "root",
+    "date": "2026-09-08",
+    "decision": "approved",
+    "record": "neo.review.md"
+  }
+}
