@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.6] - 2026-09-08
+
+### Fixes
+
+- reveal the site after first content is ready ([3428ac5](https://github.com/nocoo/hexly.ai/commit/3428ac541cb9058dfedf9a8145f8d8f1448d1ac7))
+
 ## [0.4.5] - 2026-09-08
 
 ### Fixes
