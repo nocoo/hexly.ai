@@ -152,7 +152,7 @@ export function Directory({
 								project={project}
 								locale={locale}
 								onLogo={onLogo}
-								eager={index < 8}
+								eager={index < 3}
 							/>
 						))}
 					</div>

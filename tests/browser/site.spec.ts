@@ -67,8 +67,19 @@ test("renders active projects with local logos and working destinations", async 
 		const { id } = project;
 		await expect(
 			page.locator(`[data-project="${id}"] .logo-family img`),
-		).toHaveAttribute("src", new RegExp(`${project.family?.root}/icon-`));
+		).toHaveAttribute(
+			"src",
+			new RegExp(`${project.family?.root}/icon-256\\.webp$`),
+		);
 	}
+	await expect(page.locator(".project-card img").first()).toHaveAttribute(
+		"loading",
+		"eager",
+	);
+	await expect(page.locator(".project-card img").nth(3)).toHaveAttribute(
+		"loading",
+		"lazy",
+	);
 	await page.locator(".project-card img").evaluateAll(async (images) => {
 		await Promise.all(
 			images.map(async (node) => {

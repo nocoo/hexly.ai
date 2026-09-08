@@ -335,6 +335,9 @@
 .card-logo {
 	display: flex;
 	position: relative;
+	width: 100%;
+	aspect-ratio: 1;
+	flex-shrink: 0;
 }
 .card-logo .logo-tile {
 	transition: transform 200ms;
