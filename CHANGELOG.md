@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.5] - 2026-09-08
+
+### Fixes
+
+- hide prerender until stylesheet loads ([ea943cc](https://github.com/nocoo/hexly.ai/commit/ea943cc315cceb329242716d906624b461cc87d8))
+
 ## [0.4.4] - 2026-09-08
 
 ### Features
