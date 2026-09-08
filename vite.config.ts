@@ -1,9 +1,77 @@
 import { execFileSync } from "node:child_process";
-import { resolve } from "node:path";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
 import manifest from "./package.json" with { type: "json" };
 import { readProjects } from "./src/data/read-projects";
+import {
+	applyPageToHtml,
+	discoveryPages,
+	llmsDocument,
+	pageForPath,
+	sitemapXml,
+} from "./src/model/discovery";
+
+function discoveryAssets(): Plugin {
+	const pages = () => discoveryPages(readProjects());
+	return {
+		name: "discovery-assets",
+		transformIndexHtml: {
+			order: "post",
+			handler(html, ctx) {
+				const pathname = new URL(
+					ctx.originalUrl ?? ctx.path,
+					"http://localhost",
+				).pathname;
+				return applyPageToHtml(html, pageForPath(pathname, readProjects()));
+			},
+		},
+		configureServer(server) {
+			server.middlewares.use((request, response, next) => {
+				const pathname = new URL(request.url ?? "/", "http://localhost")
+					.pathname;
+				if (pathname === "/llms.txt") {
+					response.setHeader("Content-Type", "text/plain; charset=utf-8");
+					response.end(llmsDocument(readProjects()));
+					return;
+				}
+				if (pathname === "/sitemap.xml") {
+					response.setHeader("Content-Type", "application/xml; charset=utf-8");
+					response.end(sitemapXml(pages()));
+					return;
+				}
+				next();
+			});
+		},
+		generateBundle() {
+			this.emitFile({
+				type: "asset",
+				fileName: "llms.txt",
+				source: llmsDocument(readProjects()),
+			});
+			this.emitFile({
+				type: "asset",
+				fileName: "sitemap.xml",
+				source: sitemapXml(pages()),
+			});
+		},
+		writeBundle() {
+			const file = resolve("dist/index.html");
+			const html = readFileSync(file, "utf8");
+			for (const page of pages()) {
+				const rendered = applyPageToHtml(html, page);
+				if (page.path === "/") {
+					writeFileSync(file, rendered);
+					continue;
+				}
+				const target = resolve("dist", `${page.path.slice(1)}.html`);
+				mkdirSync(dirname(target), { recursive: true });
+				writeFileSync(target, rendered);
+			}
+		},
+	};
+}
 
 function catalogueAssets(): Plugin {
 	const build = () => `${JSON.stringify(readProjects())}\n`;
@@ -71,7 +139,7 @@ function releaseMetadata(): Plugin {
 }
 
 export default defineConfig({
-	plugins: [react(), catalogueAssets(), releaseMetadata()],
+	plugins: [react(), catalogueAssets(), discoveryAssets(), releaseMetadata()],
 	server: {
 		host: "127.0.0.1",
 		port: 7048,

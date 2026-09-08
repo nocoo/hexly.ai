@@ -98,6 +98,7 @@ test("combines search and categories, resets empty results, and sorts by name", 
 }) => {
 	await page.goto("/");
 	const search = page.getByRole("searchbox", { name: "Search projects" });
+	await expect(search).toBeVisible();
 	await page.keyboard.press("/");
 	await expect(search).toBeFocused();
 	await search.fill("pew");

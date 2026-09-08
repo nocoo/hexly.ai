@@ -42,7 +42,8 @@ export async function verifyDeployment(
 		const document = await get("/");
 		const html = await document.text();
 		if (
-			!html.includes('<div id="root"></div>') ||
+			!html.includes('id="root"') ||
+			!html.includes("<h1>") ||
 			!html.includes('href="https://hexly.ai/"')
 		) {
 			throw new Error("The production document does not match the directory.");

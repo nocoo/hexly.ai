@@ -34,7 +34,7 @@ function serve(
 				);
 			if (path === "/")
 				return new Response(
-					'<link href="https://hexly.ai/"><script src="/assets/main.js"></script><link href="/assets/main.css"><div id="root"></div>',
+					'<link href="https://hexly.ai/"><script src="/assets/main.js"></script><link href="/assets/main.css"><div id="root"><h1>Small ideas</h1></div>',
 					{ headers: { "content-type": "text/html" } },
 				);
 			if (path === "/assets/main.js")

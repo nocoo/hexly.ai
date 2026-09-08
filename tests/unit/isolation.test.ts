@@ -16,11 +16,18 @@ describe("static test isolation", () => {
 		"services",
 		"durable_objects",
 		"remote",
-		"main",
 	])("rejects %s until isolation is redesigned", (binding) => {
 		expect(() => assertStaticIsolation({ ...isolated, [binding]: [] })).toThrow(
 			"must not bind",
 		);
+	});
+	it("allows the static asset gateway and rejects other workers", () => {
+		expect(() =>
+			assertStaticIsolation({ ...isolated, main: "worker/gateway.ts" }),
+		).not.toThrow();
+		expect(() =>
+			assertStaticIsolation({ ...isolated, main: "worker/app.ts" }),
+		).toThrow("must not bind");
 	});
 	it.each([
 		{},

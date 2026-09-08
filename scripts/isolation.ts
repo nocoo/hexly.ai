@@ -1,8 +1,13 @@
 export function assertStaticIsolation(config: Record<string, unknown>): void {
 	const serialized = JSON.stringify(config);
 	const forbidden =
-		/"(?:d1_databases|r2_buckets|kv_namespaces|services|durable_objects|remote|main)"/;
+		/"(?:d1_databases|r2_buckets|kv_namespaces|services|durable_objects|remote)"/;
 	if (forbidden.test(serialized)) {
+		throw new Error(
+			"Static-site tests must not bind storage, remote services, or Worker code.",
+		);
+	}
+	if ("main" in config && config.main !== "worker/gateway.ts") {
 		throw new Error(
 			"Static-site tests must not bind storage, remote services, or Worker code.",
 		);
