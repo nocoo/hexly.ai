@@ -97,3 +97,13 @@ hexly.ai 第一次推送在 GitHub TLS 握手阶段失败，未触发远端更�
 - 两种语言的 README 链接分别指向 `docs/README.en.md` 和根 `README.md`；两个页面在 320 px 视口下均无横向溢出。
 
 Steed 的 Access 控制台不在本轮用真实账号进行业务操作。后续 47 个项目仍等待首批确认。
+
+### 补充记录提交的浏览器验证
+
+收尾文档提交 [`48e51b2`](https://github.com/nocoo/hexly.ai/commit/48e51b2fc260d114f733fc0581f2eeda80ad92b6) 只修改四份调查记录。它的[首次 CI](https://github.com/nocoo/hexly.ai/actions/runs/34216043001) 中，单元 / 静态 / 安全和 HTTP 检查通过，浏览器 161 / 162 通过。此前的 Steed 下载用例与 10 个资料展示用例全部通过；此次失败为既有移动端 `site.spec.ts:250` 的外链 / 中键新标签流程，30 秒内没有等到 `context.waitForEvent("page")`。
+
+该次 `browser-failure-evidence` 的 trace 和网络记录显示：`10:37:55.438 UTC` GitHub popup 正常创建并通过 URL 断言，`10:37:55.557` 关闭；随后先注册 page 事件，再中键点击正确的 `/logos/pew` 链接。`10:37:55.650` 已有新 pageId 发起该 URL 的 GET，HAR 记录 200、28.514 ms 和 bodySize 1566，但没有对应 page 事件、快照或后续资源请求。HAR 未保存解码正文，不能证明页面完成正文解析。全部 32 条网络记录均为 200，没有页面 JavaScript 或 console 错误。
+
+Wrangler 的最后一次 `Broken pipe` 出现在 `10:37:40.916 UTC`，比该用例开始早约 13.7 秒；用例期间没有这类错误、`Could not proxy` 或下载取消记录。isolate ID 保持不变。现有证据只能定位到新页面初始化或 Playwright 事件交付阶段，不能区分 Chromium 与 Playwright 的责任，也不能把这次失败归为前一次下载中断。
+
+原移动端用例在本地不改代码连续运行 12 次均通过：`bunx playwright test tests/browser/site.spec.ts --project=mobile --grep 'keeps repository clicks separate' --repeat-each=12`。保留原交互、测试断言、30 秒超时和零自动重试配置。本节通过单独文档提交补齐，后续提交的检查和部署结果可在 [main 的 Quality & Deploy 历史](https://github.com/nocoo/hexly.ai/actions/workflows/ci.yml?query=branch%3Amain) 按提交号定位；上面的公开页面检查对应已经部署成功的功能提交 `63279af`。
