@@ -5,7 +5,6 @@ import { readProjects, writeProjects } from "../src/data/read-projects";
 
 const projects = readProjects();
 await mkdir("public/logos/display", { recursive: true });
-await mkdir("public/og", { recursive: true });
 for (const project of projects) {
 	const source = await readFile(`public${project.logo.original}`);
 	const meta = await sharp(source).metadata();
@@ -118,29 +117,8 @@ for (const project of projects) {
 				.toFile(`${root}/${name}-1024.webp`);
 		}
 	}
-	const markPath = project.family
-		? `public${project.family.root}/icon.png`
-		: `public${project.logo.original}`;
-	const mark = await sharp(markPath)
-		.resize(420, 420, {
-			fit: "contain",
-			background: { r: 0, g: 0, b: 0, alpha: 0 },
-		})
-		.png()
-		.toBuffer();
-	await sharp({
-		create: {
-			width: 1200,
-			height: 630,
-			channels: 3,
-			background: "#f0f0e9",
-		},
-	})
-		.composite([{ input: mark, gravity: "center" }])
-		.jpeg({ quality: 80, mozjpeg: true })
-		.toFile(`public/og/${project.id}.jpg`);
 }
 writeProjects(projects);
 console.info(
-	`Built six preview sizes and social images for ${projects.length} identities; original bytes preserved.`,
+	`Built six preview sizes for ${projects.length} identities; original bytes preserved.`,
 );

@@ -26,12 +26,12 @@ const shell = `<!doctype html><html><head>
 <meta property="og:title" content="old" />
 <meta property="og:description" content="old" />
 <meta property="og:url" content="https://hexly.ai/" />
-<meta property="og:image" content="https://hexly.ai/og.png" />
-<meta property="og:image:type" content="image/png" />
+<meta property="og:image" content="https://hexly.ai/og.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:alt" content="old" />
 <meta name="twitter:title" content="old" />
 <meta name="twitter:description" content="old" />
-<meta name="twitter:image" content="https://hexly.ai/og.png" />
+<meta name="twitter:image" content="https://hexly.ai/og.jpg" />
 <meta name="twitter:image:alt" content="old" />
 <script type="application/ld+json">{}</script>
 </head><body><noscript>old</noscript><div id="root"></div></body></html>`;
@@ -81,6 +81,7 @@ describe("crawler discovery documents", () => {
 		expect(page.title).toBe("Frogie — hexly.ai");
 		expect(page.description).toBe(frogie.description.en);
 		expect(page.bodyHtml).toContain(frogie.repository);
+		expect(socialImage()).toBe("https://hexly.ai/og.jpg");
 		expect(socialImage(frogie)).toBe("https://hexly.ai/og/frogie.jpg");
 		expect(absoluteUrl("/logos/pew")).toBe("https://hexly.ai/logos/pew");
 		const graph = home.jsonLd as {
