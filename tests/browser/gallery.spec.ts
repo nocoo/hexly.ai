@@ -42,9 +42,13 @@ for (const id of projects
 			"src",
 			`${family.root}/icon-1024.webp`,
 		);
-		await page
-			.locator(".artwork-image")
-			.evaluate((node) => (node as HTMLImageElement).decode());
+		await expect(async () => {
+			await page.locator(".artwork-image").evaluate(async (node) => {
+				const image = node as HTMLImageElement;
+				if (!image.naturalWidth) throw new Error("Artwork image is not ready.");
+				await image.decode();
+			});
+		}).toPass();
 		await expect(page.locator(".asset-label")).toHaveText("Refined");
 		await expect(page.locator(".current-artwork figcaption")).toContainText(
 			family.status === "adopted" ? "Adopted family identity" : "Local preview",
@@ -65,10 +69,11 @@ for (const id of projects
 			await expect(mark).toHaveCSS("border-radius", "0px");
 			await expect(mark).toHaveCSS("box-shadow", "none");
 			await expect(mark.locator("img")).toHaveCSS("border-radius", "0px");
-			const transparentPixels = await mark
-				.locator("img")
-				.evaluate(async (node) => {
+			let transparentPixels = 0;
+			await expect(async () => {
+				transparentPixels = await mark.locator("img").evaluate(async (node) => {
 					const image = node as HTMLImageElement;
+					if (!image.naturalWidth) throw new Error("Mark image is not ready.");
 					await image.decode();
 					const canvas = document.createElement("canvas");
 					canvas.width = 32;
@@ -83,6 +88,7 @@ for (const id of projects
 					}
 					return count;
 				});
+			}).toPass();
 			expect(transparentPixels).toBeGreaterThan(128);
 		}
 		await expect(page.locator(".previous-artwork img")).toHaveAttribute(
