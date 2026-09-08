@@ -4,7 +4,7 @@
 
 2026-09-08 开始。以 `src/data/projects/*.json` 中 `archived: false` 为准，共 49 个项目；20 个归档项目不纳入。49 个仓库都能在本站上一级目录找到。本站自身不在项目目录中。
 
-本轮先对全部项目做 README 与仓库现状的初步比较，再完整整理 Snaky 和一个文档短板最明显的项目。首批结果由用户确认后，才修改其他项目的 README 和项目资料。
+首批已完成全部项目的初步比较，并整理、发布 Snaky 和 Steed。2026-09-08 用户确认试点，明确要求调用 agent team 实施其余项目，由主代理负责 review。剩余 47 个项目现已获准沿用模板改写、核实本站资料并直接推送 main。
 
 用户已授权：调查前和推送前 pull；直接在各仓库 main 修改、提交、push；不修改版本号。不要求 PR。不改写 CLAUDE.md 中的质量制度。
 
@@ -28,9 +28,9 @@
 | 选择并核实第二个项目 | 已推送，CI / 自动部署通过 | 选择 Steed：原 40 行 README 缺少核心功能、启动与测试入口；[调查记录](readme-refresh/steed.md) |
 | 本站字段与详情页展示 | 已上线并核验 | 仅两份试点 JSON 添加 overview；双语目标、技术栈 badges、相应语言 README 入口 |
 | 验证、复核并推送首批 | 完成 | 三仓库 main 已推送；本站 CI、部署及公开页面验证通过；[验证与交付记录](readme-refresh/validation.md) |
-| 用户确认后分批推广 | 等待首批确认 | 每批先同步、核实，再沿用模板整理 |
+| 用户确认后分批推广 | 已获确认，实施中 | Agent team 分工、逐项目 review 和发布进度见[推广记录](readme-refresh/rollout.md) |
 
-首批可直接复核：[Snaky README](https://github.com/nocoo/snaky#readme) / [English](https://github.com/nocoo/snaky/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/snaky)，[Steed README](https://github.com/nocoo/steed#readme) / [English](https://github.com/nocoo/steed/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/steed)。其余 47 个项目保留调查结果，尚未改写或推送。
+已确认的首批：[Snaky README](https://github.com/nocoo/snaky#readme) / [English](https://github.com/nocoo/snaky/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/snaky)，[Steed README](https://github.com/nocoo/steed#readme) / [English](https://github.com/nocoo/steed/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/steed)。后续进度以推广记录为准，首批调查和验证结果保留为历史基线。
 
 ## 调查原则
 
@@ -45,6 +45,7 @@ README 行数只用于找候选，不能单独判定文档质量。比较项目�
 - [Snaky 调查](readme-refresh/snaky.md)、[Steed 调查](readme-refresh/steed.md)
 - [验证与交付记录](readme-refresh/validation.md)
 - [调查原始记录](readme-refresh/surveys/)
+- [推广分工、复核与发布进度](readme-refresh/rollout.md)
 
 ## 逐项目继续方式
 
@@ -52,4 +53,4 @@ README 行数只用于找候选，不能单独判定文档质量。比较项目�
 
 每批检查相对链接、启动 / 测试命令、语言对应和功能边界，再运行受影响的站点检查。正常执行仓库 hooks，提交后再次 pull、确认仅有本轮待推送提交，再 push main；不改版本。记录提交、CI、部署结果以及仍需处理的真实限制。
 
-Giraffe 的已有改动、Frogie / Raven 的分叉、Bogo 的已有未推送提交不在这次 README 试点中处理。后续涉及这些仓库时先重新核对现场，不能覆盖或顺带发布已有工作。
+Giraffe 的已有改动、Frogie / Raven 的分叉、Bogo 的已有未推送提交在推广时重新核对。若仍有无关工作，则从最新远端 main 建立隔离 checkout，仅发布本轮 README 改动，保留原工作区和本地提交。
