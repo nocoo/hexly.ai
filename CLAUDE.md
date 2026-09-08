@@ -10,7 +10,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Fact | Where |
 |---|---|
 | Human docs | [README.md](README.md), [docs/README.md](docs/README.md) |
-| Catalogue | `src/data/projects.json`; public `nocoo/nocoo` profile and recorded repository evidence |
+| Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
 | Enforcement | `.husky/`, `scripts/gates.ts`, `.github/workflows/ci.yml`, test configs |

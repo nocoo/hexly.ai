@@ -1,0 +1,201 @@
+{
+	"id": "flow",
+	"repo": "flow",
+	"title": "Flow",
+	"emoji": "🌊",
+	"description": {
+		"en": "A Chinese pinyin input engine that brings language models into everyday typing.",
+		"zh": "把大语言模型带进日常输入的中文拼音引擎，支持智能分词与预测。"
+	},
+	"category": "everyday",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/flow",
+	"subject": "Celadon mechanical keycap with a Chinese character",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/flow-family-2026-09-07-01-01.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3201869,
+		"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23",
+		"thumbnail": "/logos/display/flow-160.webp",
+		"display": "/logos/display/flow-1024.webp"
+	},
+	"theme": {
+		"background": {
+			"value": "oklch(1 0 0)",
+			"source": "apps/web/src/index.css --background"
+		},
+		"ink": {
+			"value": "oklch(0.145 0 0)",
+			"source": "apps/web/src/index.css --foreground"
+		},
+		"primary": {
+			"value": "oklch(0.205 0 0)",
+			"source": "apps/web/src/index.css --primary"
+		}
+	},
+	"source": {
+		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileSection": "Recent Projects",
+		"description": "LLM-powered Chinese pinyin input method engine with DP segmentation",
+		"repositoryRevision": "f4a9e9464d64184b793240adff182e08c04997e1"
+	},
+	"colors": {
+		"primary": "#171717",
+		"background": "#ffffff",
+		"ink": "#0a0a0a",
+		"palette": [
+			{
+				"color": "#171717",
+				"role": "primary",
+				"source": "apps/web/src/index.css --primary: oklch(0.205 0 0)"
+			},
+			{
+				"color": "#ffffff",
+				"role": "background",
+				"source": "apps/web/src/index.css --background: oklch(1 0 0)"
+			},
+			{
+				"color": "#8ba48c",
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1045, 500); artwork/logo-family/flow/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#e2d7b7",
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1188, 731); artwork/logo-family/flow/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#2c2d27",
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1187, 1560); artwork/logo-family/flow/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#866540",
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (954, 1482); artwork/logo-family/flow/2026-09-07-01/palette.json",
+				"role": "accent"
+			}
+		]
+	},
+	"archived": false,
+	"family": {
+		"id": "2026-09-07-01",
+		"series": "material",
+		"finishing": "01",
+		"root": "/logos/family/flow/2026-09-07-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/flow/2026-09-07-01",
+		"status": "adopted",
+		"updated": "2026-09-07",
+		"foreground": {
+			"subject": {
+				"en": "Celadon mechanical keycap with a Chinese character",
+				"zh": "带汉字的青瓷机械键帽"
+			},
+			"original": "/logos/family/flow/2026-09-07-01/01/transparent.png",
+			"display": "/logos/family/flow/2026-09-07-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23"
+		},
+		"previous": {
+			"original": "/logos/originals/flow.svg",
+			"sourceUrl": "https://github.com/nocoo/flow/blob/9c225d805a09ab5fdbe4fa65486821057231fdcd/apps/web/public/favicon.svg",
+			"width": 48,
+			"height": 48,
+			"sha256": "a03a03e3e685fdf4d87541f9e7e83ffdc910018d3782d67847d740fadeea7d6f"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "The key rebounds",
+					"zh": "按键回弹的一刻"
+				},
+				"description": {
+					"en": "A single substantial keycap sits just above its compact mechanical switch. The elevated product view keeps 中 readable while revealing the switch foot and copper spring.",
+					"zh": "一颗厚实键帽位于紧凑机械轴体上方。斜上方镜头同时保留中字符号、轴体底座和铜色弹簧。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Celadon ceramic",
+					"zh": "青瓷键帽"
+				},
+				"description": {
+					"en": "Restrained glaze reflections and softly mottled celadon establish the physical ceramic. The ivory glyph remains opaque and the switch contributes a quiet dark base.",
+					"zh": "克制釉面反光与细腻青瓷色差表现真实陶瓷；象牙色汉字保持不透明，深色轴体形成稳定底座。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Pinyin key rhythm",
+					"zh": "拼音键序"
+				},
+				"description": {
+					"en": "Staggered rounded key outlines with a small sequence of rising and falling tone strokes in celadon paper. The field, grain and contact shadow are independent of transparent app marks.",
+					"zh": "青瓷色纸面上的错位圆角键位与起伏声调短线。 底色、颗粒与接触阴影均独立于透明应用标记。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#c4d8cf",
+				"role": "background",
+				"label": {
+					"en": "Pinyin key rhythm",
+					"zh": "拼音键序"
+				},
+				"source": "Adopted Flow presentation, 2026-09-07-01/01; background.base in archived settings.json"
+			},
+			{
+				"color": "#8ba48c",
+				"role": "primary",
+				"label": {
+					"en": "Celadon glaze",
+					"zh": "青瓷釉面"
+				},
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1045, 500); artwork/logo-family/flow/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#e2d7b7",
+				"role": "accent",
+				"label": {
+					"en": "Ivory character",
+					"zh": "象牙色汉字"
+				},
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1188, 731); artwork/logo-family/flow/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#2c2d27",
+				"role": "accent",
+				"label": {
+					"en": "Switch charcoal",
+					"zh": "深灰轴体"
+				},
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1187, 1560); artwork/logo-family/flow/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#866540",
+				"role": "accent",
+				"label": {
+					"en": "Copper spring",
+					"zh": "铜色弹簧"
+				},
+				"source": "Native flow 386f4e61218e, sampled sRGB pixel (954, 1482); artwork/logo-family/flow/2026-09-07-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 128/64 px, the celadon key and ivory 中 remain clear. At 32/24/16 px, the compact silhouette and dominant colors carry recognition; fine material detail, printed marks and background lines naturally merge.",
+			"zh": "128/64 px 能辨认青瓷键帽与象牙色中字符号；32/24/16 px 以紧凑轮廓和主色维持识别，精细材质、印记与背景线条自然合并。"
+		},
+		"model": "gpt-image-2"
+	}
+}

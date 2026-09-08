@@ -14,7 +14,7 @@ Use the nearby `lizheng.me` personal site as the available design reference: war
 
 | Path | Responsibility |
 | --- | --- |
-| `src/data/projects.json` | Reviewed catalogue, bilingual descriptions, links, colors, and provenance |
+| `src/data/projects/` | Reviewed catalogue, one JSON file per project, loaded by the page at `/data/projects.json` |
 | `src/data/project-order.json` | Directory series and dated GitHub stars/default-branch commit counts |
 | `src/model/` | Pure filtering, preferences, and navigation logic |
 | `src/components/` | Thin, accessible React views |

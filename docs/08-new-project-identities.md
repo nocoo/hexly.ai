@@ -11,7 +11,7 @@ Clip, Fundly, DreamRO and Meowth are now in the local catalogue with preserved s
 
 Animal studies use connected flat facets across the main anatomy, a clear dominant color family, one multicolored interest point and an off-center decisive moment. Meowth and Clip remain head portraits. DreamRO uses physically credible metal, timber, leather and gemstone materials without the animal fragmentation rule. The image model chooses the exact pose, overlap and camera distance within these directions.
 
-The catalogue remains in `src/data/projects.json`; append the four records so existing numbered profiles do not move. Preserve exact source images under `public/logos/originals/`, record repository and profile revisions, and keep website theme tokens separate from the new artwork and presentation palettes. The GitHub profile additions are local commits only.
+The catalogue remains in `src/data/projects/`; append the four records so existing numbered profiles do not move. Preserve exact source images under `public/logos/originals/`, record repository and profile revisions, and keep website theme tokens separate from the new artwork and presentation palettes. The GitHub profile additions are local commits only.
 
 Each selected study includes the exact prompt, references, authorization, native response, raw decision, independent extraction and presentation layers, all ten export sizes, a static `review.html`, and a complete `/logos/<project>` page. Small marks use transparent foregrounds; large tiles use the separate presentation. Original logos remain the before side and source provenance.
 

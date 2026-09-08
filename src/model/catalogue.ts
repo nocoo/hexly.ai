@@ -95,6 +95,24 @@ export function destination(project: Project): string {
 	return project.website ?? project.repository;
 }
 
+export const cataloguePath = "/data/projects.json";
+
+export function parseCatalogue(value: unknown): Project[] {
+	if (!Array.isArray(value)) throw new Error("Catalogue must be a JSON array.");
+	const projects = value as Project[];
+	const problems = catalogueProblems(projects);
+	if (problems.length > 0) throw new Error(problems.join("\n"));
+	return projects;
+}
+
+export async function loadProjects(
+	fetchImpl: (input: string) => Promise<Response>,
+): Promise<Project[]> {
+	const response = await fetchImpl(cataloguePath);
+	if (!response.ok) throw new Error(`Catalogue HTTP ${response.status}`);
+	return parseCatalogue(await response.json());
+}
+
 export function catalogueProblems(projects: Project[]): string[] {
 	const problems: string[] = [];
 	const ids = new Set<string>();
