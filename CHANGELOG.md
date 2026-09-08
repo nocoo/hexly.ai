@@ -29,6 +29,7 @@
 ### Tests
 
 - follow curated order in navigation ([6069039](https://github.com/nocoo/hexly.ai/commit/60690399d5f7c18d632715c98e17d0353b3cc771))
+- follow curated order in gallery journeys ([ca16f6e](https://github.com/nocoo/hexly.ai/commit/ca16f6e8f3169e81fe6ed5110cf02712f6875ddd))
 
 ## [0.3.0] - 2026-09-07
 
