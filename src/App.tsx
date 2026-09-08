@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
@@ -60,7 +60,7 @@ export function App() {
 		state.sort,
 	);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		document.documentElement.lang = locale === "zh" ? "zh-CN" : "en";
 		document.documentElement.dataset.theme = theme;
 		const themeMeta = document.querySelector('meta[name="theme-color"]');
@@ -69,6 +69,16 @@ export function App() {
 			theme === "dark" ? "#1e2824" : "#f0f0e9",
 		);
 	}, [locale, theme]);
+
+	useLayoutEffect(() => {
+		if (catalogue.status === "loading") return;
+		// Commit the full view (or its error state) before the stylesheet reveals it.
+		document.documentElement.dataset.appReady = "true";
+		window.dispatchEvent(new Event("hexly:app-ready"));
+		return () => {
+			delete document.documentElement.dataset.appReady;
+		};
+	}, [catalogue.status]);
 
 	useEffect(() => {
 		if (catalogue.status !== "ready") return;
@@ -199,7 +209,16 @@ export function App() {
 					<div className="empty-state">
 						<h2>{catalogue.status === "error" ? t.loadFailed : t.loading}</h2>
 						{catalogue.status === "error" ? (
-							<p>{t.loadFailedDescription}</p>
+							<>
+								<p>{t.loadFailedDescription}</p>
+								<button
+									type="button"
+									className="button button-primary"
+									onClick={() => window.location.reload()}
+								>
+									{t.reload}
+								</button>
+							</>
 						) : null}
 					</div>
 				</main>

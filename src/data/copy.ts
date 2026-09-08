@@ -64,6 +64,7 @@ export const copy = {
 		loading: "Loading the collection…",
 		loadFailed: "The collection could not be loaded.",
 		loadFailedDescription: "Refresh the page, or try again in a moment.",
+		reload: "Reload the page",
 		noResults: "Nothing here just yet.",
 		noResultsDescription:
 			"Try another name, a different category, or a little less specificity.",
@@ -200,6 +201,7 @@ export const copy = {
 		loading: "正在加载项目集…",
 		loadFailed: "项目集暂时无法加载。",
 		loadFailedDescription: "请刷新页面，或稍后再试。",
+		reload: "重新加载页面",
 		noResults: "还没有找到这个项目。",
 		noResultsDescription: "换个名字、选个分类，或者试试更简短的关键词。",
 		reset: "重置筛选",

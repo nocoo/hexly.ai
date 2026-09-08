@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
 		<style>
-			html { background: #f0f0e9; }
-			html[data-theme="dark"] { background: #1e2824; }
+			html { background: #f0f0e9; color: #30372e; color-scheme: light; }
+			html[data-theme="dark"] { background: #1e2824; color: #e6e9dc; color-scheme: dark; }
+			body { margin: 0; }
 			#root { visibility: hidden; }
+			#startup-error { display: none; max-width: 36rem; margin: 18vh auto; padding: 0 24px; font: 16px/1.6 system-ui, sans-serif; }
+			#startup-error button { color: inherit; font: inherit; background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer; }
+			html[data-startup-error] #root { display: none; }
+			html[data-startup-error] #startup-error { display: block; }
+			#startup-error [lang="zh-CN"], html[lang="zh-CN"] #startup-error [lang="en"] { display: none; }
+			html[lang="zh-CN"] #startup-error [lang="zh-CN"] { display: block; }
 		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#f0f0e9" />
+		<link rel="preload" href="/data/projects.json" as="fetch" crossorigin="anonymous" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -36,6 +44,10 @@
 	<body>
 		<noscript><style>#root{visibility:visible}</style></noscript>
     <div id="root"></div>
+		<div id="startup-error" role="alert">
+			<p lang="en">This page could not be loaded. <button type="button">Reload the page</button> to try again.</p>
+			<p lang="zh-CN">页面暂时无法加载。请<button type="button">重新加载页面</button>后再试。</p>
+		</div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
