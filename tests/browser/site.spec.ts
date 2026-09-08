@@ -38,6 +38,9 @@ test("renders active projects with local logos, redraw badges, and working desti
 	await expect(
 		surfaces.getByRole("link", { name: "Résumé", exact: true }),
 	).toHaveAttribute("href", "https://lizheng.dev/en/");
+	await expect(
+		page.locator(".site-footer").getByRole("link", { name: "zheng li." }),
+	).toHaveAttribute("href", "https://lizheng.me/en/");
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
 		"Small ideas.A little universe.",
 	);
