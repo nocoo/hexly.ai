@@ -13,6 +13,30 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `bcab1f113b9b7cde65898bbd23705c7dac339634`
 
+## Project goal
+
+Give users a shared inventory of agents, CLI tools and their bindings across hosts, so they can check status, ownership and business categories.
+
+集中盘点多台主机上的 Agent、CLI 工具资源与绑定关系，帮助使用者核对运行状态、资源归属和业务分类。
+
+- [中文 README](https://github.com/nocoo/steed/blob/main/README.md) · [English README](https://github.com/nocoo/steed/blob/main/docs/README.en.md)
+- Verified: 2026-09-08; [source revision](https://github.com/nocoo/steed/tree/bcab1f113b9b7cde65898bbd23705c7dac339634)
+- Source files: [`package.json`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/package.json), [`apps/web/package.json`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/apps/web/package.json), [`apps/web/worker/index.ts`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/apps/web/worker/index.ts), [`apps/web/wrangler.toml`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/apps/web/wrangler.toml), [`packages/api/src/server/router.ts`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/packages/api/src/server/router.ts), [`packages/worker/src/routes/bindings.ts`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/packages/worker/src/routes/bindings.ts), [`packages/cli/src/config/defaults.ts`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/packages/cli/src/config/defaults.ts), [`packages/cli/src/service/scanner/data-source.ts`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/packages/cli/src/service/scanner/data-source.ts), [`packages/cli/src/commands/init.ts`](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/packages/cli/src/commands/init.ts)
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+| TypeScript | Shared types | 共享类型 |
+| Bun | CLI & host service | CLI 与主机服务 |
+| React | Web console | Web 控制台 |
+| Vite | Frontend build | 前端构建 |
+| React Flow | Relationship map | 关系图 |
+| Hono | API routes | API 路由 |
+| Cloudflare Workers | Application hosting | 应用托管 |
+| D1 | Asset storage | 资产存储 |
+| Cloudflare Access | Console access | 控制台访问 |
+
 ## Current logo
 
 ![Steed source identity](../../public/logos/display/steed-160.webp)

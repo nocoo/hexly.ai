@@ -7,6 +7,77 @@
 		"en": "Know where your traffic goes. Inspect VPN routes, exit IPs, latency, and proxy rules.",
 		"zh": "弄清网络流量去了哪里，检查 VPN 路由、出口 IP、延迟与分流规则。"
 	},
+	"overview": {
+		"goal": {
+			"en": "Help VPN and proxy users check destination egress IPs, HTTP latency and DNS resolvers in one place to see whether routing matches their expectations.",
+			"zh": "让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、HTTP 延迟和 DNS 解析器，判断分流是否符合预期。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript",
+				"role": {
+					"en": "CLI logic",
+					"zh": "CLI 逻辑"
+				}
+			},
+			{
+				"name": "Node.js",
+				"role": {
+					"en": "Probe runtime",
+					"zh": "探测运行时"
+				}
+			},
+			{
+				"name": "React",
+				"role": {
+					"en": "Terminal UI",
+					"zh": "终端界面"
+				}
+			},
+			{
+				"name": "Ink",
+				"role": {
+					"en": "Terminal rendering",
+					"zh": "终端渲染"
+				}
+			},
+			{
+				"name": "Swift",
+				"role": {
+					"en": "macOS application",
+					"zh": "macOS 应用"
+				}
+			},
+			{
+				"name": "SwiftUI",
+				"role": {
+					"en": "Menu bar UI",
+					"zh": "菜单栏界面"
+				}
+			},
+			{
+				"name": "AppKit",
+				"role": {
+					"en": "System integration",
+					"zh": "系统集成"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-08",
+			"revision": "5cd0790336d006f65555816fe29869d6e60ed376",
+			"sources": [
+				"package.json",
+				"packages/cli/package.json",
+				"packages/cli/src/cli.ts",
+				"packages/cli/src/proxy.ts",
+				"packages/cli/src/dns-leak/detect.ts",
+				"apps/macos/Package.swift",
+				"apps/macos/Sources/Snaky/SnakyApp.swift",
+				"apps/macos/Sources/SnakyCore/Services/CLIBridge.swift"
+			]
+		}
+	},
 	"category": "tools",
 	"website": null,
 	"websiteSource": null,

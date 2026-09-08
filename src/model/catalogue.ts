@@ -1,5 +1,5 @@
 import projectOrder from "../data/project-order.json" with { type: "json" };
-import type { Category, Project } from "./project";
+import type { Category, Locale, Project } from "./project";
 
 const curatedOrder = new Map<string, number>(
 	[
@@ -113,6 +113,14 @@ export async function loadProjects(
 	return parseCatalogue(await response.json());
 }
 
+function hasText(value: unknown): value is string {
+	return typeof value === "string" && value.trim().length > 0;
+}
+
+function hasTranslations(value?: Record<Locale, string>): boolean {
+	return hasText(value?.en) && hasText(value?.zh);
+}
+
 export function catalogueProblems(projects: Project[]): string[] {
 	const problems: string[] = [];
 	const ids = new Set<string>();
@@ -127,6 +135,35 @@ export function catalogueProblems(projects: Project[]): string[] {
 			!project.description.zh
 		)
 			problems.push(`Incomplete identity: ${project.id}`);
+		const overview = project.overview;
+		if (overview !== undefined) {
+			if (
+				!hasTranslations(overview?.goal) ||
+				!Array.isArray(overview?.techStack) ||
+				overview.techStack.length === 0 ||
+				overview.techStack.some(
+					(technology) =>
+						!hasText(technology?.name) || !hasTranslations(technology?.role),
+				) ||
+				new Set(overview.techStack.map((technology) => technology.name))
+					.size !== overview.techStack.length
+			)
+				problems.push(`Incomplete project overview: ${project.id}`);
+			const verified = overview?.verified;
+			if (
+				!/^\d{4}-\d{2}-\d{2}$/.test(verified?.date ?? "") ||
+				!/^[a-f0-9]{40}$/.test(verified?.revision ?? "") ||
+				!Array.isArray(verified?.sources) ||
+				verified.sources.length === 0 ||
+				verified.sources.some(
+					(source) =>
+						!hasText(source) ||
+						source.startsWith("/") ||
+						source.split("/").includes(".."),
+				)
+			)
+				problems.push(`Invalid overview evidence: ${project.id}`);
+		}
 		if (
 			!categories.includes(project.category) ||
 			project.category === ("all" as Category)

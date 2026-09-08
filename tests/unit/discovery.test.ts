@@ -41,6 +41,28 @@ const shell = `<!doctype html><html><head>
 </head><body><noscript>old</noscript><div id="root"></div></body></html>`;
 
 describe("crawler discovery documents", () => {
+	it("includes researched goals and stack in readable HTML with escaped copy", () => {
+		const reviewed = {
+			...frogie,
+			overview: {
+				goal: { en: "Inspect <routes> & proxies.", zh: "检查路由。" },
+				techStack: [
+					{ name: "Swift & SwiftUI", role: { en: "Native <app>", zh: "应用" } },
+				],
+				verified: {
+					date: "2026-09-08",
+					revision: "a".repeat(40),
+					sources: ["Package.swift"],
+				},
+			},
+		};
+		const page = pageForPath("/logos/frogie", [reviewed]);
+		expect(page.bodyHtml).toContain("Project goal");
+		expect(page.bodyHtml).toContain("Inspect &lt;routes&gt; &amp; proxies.");
+		expect(page.bodyHtml).toContain("Swift &amp; SwiftUI");
+		expect(page.bodyHtml).toContain("Native &lt;app&gt;");
+		expect(page.bodyHtml).not.toContain("<routes>");
+	});
 	it("lists the homepage, gallery, and every project in the sitemap", () => {
 		const xml = sitemapXml(discoveryPages(projects));
 		expect(xml).toContain("<loc>https://hexly.ai/</loc>");

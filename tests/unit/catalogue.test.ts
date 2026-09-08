@@ -9,12 +9,21 @@ import {
 	parseCatalogue,
 	selectedProject,
 } from "../../src/model/catalogue";
-import type { Project } from "../../src/model/project";
+import type { Project, ProjectOverview } from "../../src/model/project";
 
 const projects = readProjects();
 const active = projects.filter((project) => !project.archived);
 const frogie = projects.find((project) => project.id === "frogie");
 if (!frogie) throw new Error("Frogie is required as the reference identity.");
+const overview: ProjectOverview = {
+	goal: { en: "Inspect network routes.", zh: "检查网络路由。" },
+	techStack: [{ name: "TypeScript", role: { en: "CLI", zh: "命令行" } }],
+	verified: {
+		date: "2026-09-08",
+		revision: "a".repeat(40),
+		sources: ["package.json", "src/index.ts"],
+	},
+};
 
 describe("the imported project catalogue", () => {
 	it("includes the listed projects with bilingual metadata and local assets", () => {
@@ -117,6 +126,43 @@ describe("the imported project catalogue", () => {
 		expect(() => parseCatalogue([{ ...frogie, id: "../bad" }])).toThrow(
 			"Invalid or duplicate id: ../bad",
 		);
+	});
+	it("accepts verified overviews alongside projects awaiting research", () => {
+		const reviewed = { ...frogie, overview };
+		expect(parseCatalogue([reviewed])).toEqual([reviewed]);
+		expect(catalogueProblems([{ ...frogie, overview: undefined }])).toEqual([]);
+	});
+	it.each([
+		null,
+		{ ...overview, goal: { en: " ", zh: "检查网络路由。" } },
+		{ ...overview, goal: { en: 123, zh: "检查网络路由。" } },
+		{ ...overview, techStack: null },
+		{ ...overview, techStack: [] },
+		{ ...overview, techStack: [null] },
+		{ ...overview, techStack: [{ name: " ", role: overview.goal }] },
+		{
+			...overview,
+			techStack: [{ name: "Swift", role: { en: "Native app" } }],
+		},
+		{ ...overview, techStack: [...overview.techStack, ...overview.techStack] },
+	])("rejects incomplete bilingual overviews: %j", (invalid) => {
+		expect(() => parseCatalogue([{ ...frogie, overview: invalid }])).toThrow(
+			"Incomplete project overview: frogie",
+		);
+	});
+	it.each([
+		undefined,
+		{ ...overview.verified, date: "yesterday" },
+		{ ...overview.verified, revision: "main" },
+		{ ...overview.verified, sources: null },
+		{ ...overview.verified, sources: [] },
+		{ ...overview.verified, sources: [" "] },
+		{ ...overview.verified, sources: ["/etc/config"] },
+		{ ...overview.verified, sources: ["../package.json"] },
+	])("requires dated, immutable source evidence: %j", (verified) => {
+		expect(() =>
+			parseCatalogue([{ ...frogie, overview: { ...overview, verified } }]),
+		).toThrow("Invalid overview evidence: frogie");
 	});
 	it("loads the catalogue through HTTP and surfaces fetch failures", async () => {
 		await expect(

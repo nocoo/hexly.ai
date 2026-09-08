@@ -11,6 +11,19 @@ export type Category =
 	| "extensions"
 	| "archive";
 
+export interface ProjectOverview {
+	goal: Record<Locale, string>;
+	techStack: {
+		name: string;
+		role: Record<Locale, string>;
+	}[];
+	verified: {
+		date: string;
+		revision: string;
+		sources: string[];
+	};
+}
+
 export interface PaletteColor {
 	color: string;
 	role: "primary" | "background" | "accent";
@@ -58,6 +71,7 @@ export interface Project {
 	title: string;
 	emoji: string;
 	description: Record<Locale, string>;
+	overview?: ProjectOverview;
 	category: Exclude<Category, "all">;
 	website: string | null;
 	websiteSource: string | null;

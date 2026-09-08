@@ -194,6 +194,65 @@
 	margin: 0;
 	min-width: 0;
 }
+.project-overview {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: 40px;
+	margin-top: 36px;
+	padding: 28px;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	background: var(--surface);
+}
+.project-overview h3 {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0 0 14px;
+}
+.project-goal > p {
+	font-size: 13px;
+	line-height: 1.9;
+	margin: 0;
+	color: var(--muted);
+}
+.project-readme {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 16px;
+	font-size: 12px;
+	text-underline-offset: 4px;
+}
+.tech-badges {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: start;
+	gap: 10px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.tech-badge {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 100%;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	overflow: hidden;
+	font-size: 11px;
+	line-height: 1.6;
+	overflow-wrap: anywhere;
+}
+.tech-name {
+	padding: 5px 9px;
+	background: var(--surface-soft);
+	font-family: var(--mono);
+}
+.tech-role {
+	padding: 5px 9px;
+	color: var(--muted);
+}
 .comparison-toolbar {
 	display: flex;
 	justify-content: space-between;
@@ -629,6 +688,15 @@
 }
 
 @media (max-width: 600px) {
+	.project-overview {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 24px;
+		margin-top: 24px;
+		padding: 20px;
+	}
+	.project-goal > p {
+		font-size: 12px;
+	}
 	.gallery-main {
 		padding-top: 26px;
 	}

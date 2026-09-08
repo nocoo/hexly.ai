@@ -417,7 +417,11 @@ function snapshotHtml(
 						`<li><a href="/logos/${entry.id}">${escapeHtml(entry.title)}</a> — ${escapeHtml(entry.description.en)}</li>`,
 				)
 				.join("")}</ul>`;
-	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav>${nav}</nav>${items}</main>`;
+	const overview = project?.overview;
+	const overviewHtml = overview
+		? `<section><h2>${copy.en.projectGoal}</h2><p>${escapeHtml(overview.goal.en)}</p><h2>${copy.en.techStack}</h2><ul>${overview.techStack.map((technology) => `<li>${escapeHtml(technology.name)} — ${escapeHtml(technology.role.en)}</li>`).join("")}</ul></section>`
+		: "";
+	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav>${nav}</nav>${items}${overviewHtml}</main>`;
 }
 
 function replaceMeta(
