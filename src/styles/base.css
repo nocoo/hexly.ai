@@ -81,7 +81,7 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: var(--site-topbar-offset);
 }
-#root {
+html[data-app-ready="true"] #root {
 	visibility: visible;
 }
 body {
