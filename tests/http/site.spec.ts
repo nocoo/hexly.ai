@@ -40,7 +40,7 @@ test("serves compiled code, styles, and self-hosted fonts with cache headers", a
 		if (extension === "css") {
 			const css = await response.text();
 			const fonts = [...new Set(css.match(/\/assets\/[^)" ]+\.woff2/g))];
-			expect(fonts).toHaveLength(2);
+			expect(fonts).toHaveLength(3);
 			for (const font of fonts) {
 				const fontResponse = await request.get(font);
 				expect(fontResponse.status()).toBe(200);
