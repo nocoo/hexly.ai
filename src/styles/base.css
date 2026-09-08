@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Space Grotesk Variable";
 	font-style: normal;
-	font-weight: 300 700;
+	font-weight: 100 900;
 	font-display: swap;
 	src: url("@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2")
 		format("woff2");
@@ -13,6 +13,14 @@
 	font-display: swap;
 	src: url("@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2")
 		format("woff2");
+}
+@font-face {
+	font-family: "Journey CJK";
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url("../fonts/journey-cjk.woff2") format("woff2");
+	unicode-range: U+3000-9FFF, U+FF00-FFEF;
 }
 
 :root {
@@ -26,9 +34,8 @@
 	--surface-soft: #e8ebdf;
 	--hover: #e2e6d8;
 	--shadow: #35442c;
-	--sans:
-		"Space Grotesk Variable", "PingFang SC", "Microsoft YaHei", sans-serif;
-	--mono: "Geist Mono Variable", "PingFang SC", monospace;
+	--sans: "Space Grotesk Variable", "Journey CJK", "PingFang SC", sans-serif;
+	--mono: "Geist Mono Variable", "Journey CJK", "PingFang SC", monospace;
 	--site-topbar-height: 88px;
 	--site-subheader-height: 48px;
 	--site-topbar-offset: calc(
@@ -167,14 +174,14 @@ a {
 	font-family: var(--mono);
 }
 .eyebrow {
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: 450;
-	letter-spacing: 0.055em;
+	letter-spacing: 0.06em;
 	line-height: 1.8;
 	color: var(--muted);
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 9px;
 }
 .tiny-square {
 	display: inline-block;
