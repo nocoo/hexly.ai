@@ -180,7 +180,7 @@ export function App() {
 					}}
 				/>
 			)}
-			<Footer locale={locale} />
+			<Footer locale={locale} onHome={() => view("directory")} />
 			<div
 				className={`toast ${toast ? "toast-visible" : ""}`}
 				role="status"

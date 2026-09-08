@@ -3,8 +3,6 @@ export type IconName =
 	| "search"
 	| "sun"
 	| "moon"
-	| "grid"
-	| "gallery"
 	| "close"
 	| "download"
 	| "link"
@@ -16,16 +14,14 @@ export type IconName =
 	| "folder"
 	| "settings"
 	| "left"
-	| "right";
+	| "right"
+	| "languages";
 
 const paths: Record<IconName, string> = {
 	arrow: "M5 19 19 5M5 5h14v14",
 	search: "m21 21-4.3-4.3M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0",
 	sun: "M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5M17 12a5 5 0 1 1-10 0 5 5 0 0 1 10 0",
 	moon: "M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z",
-	grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z",
-	gallery:
-		"M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm-1 13 5-5 5 5 3-3 5 5M16 7h.01",
 	close: "m6 6 12 12M6 18 18 6",
 	download: "M12 3v12m-5-5 5 5 5-5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5",
 	link: "M10 13a5 5 0 0 0 7 .3l3-3a5 5 0 0 0-7-7l-1.8 1.8M14 11a5 5 0 0 0-7-.3l-3 3a5 5 0 0 0 7 7l1.8-1.8",
@@ -42,6 +38,7 @@ const paths: Record<IconName, string> = {
 		"M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2",
 	left: "m14 6-6 6 6 6",
 	right: "m10 6 6 6-6 6",
+	languages: "m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6",
 };
 
 export function Icon({

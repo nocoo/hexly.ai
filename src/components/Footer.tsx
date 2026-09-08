@@ -1,43 +1,62 @@
 import { copy } from "../data/copy";
+import { appVersion } from "../data/version";
 import type { Locale } from "../model/project";
-import { BrandMark, Icon } from "./Icon";
+import { BrandMark } from "./Icon";
+import { SurfaceLinks } from "./SurfaceLinks";
 
-export function Footer({ locale }: { locale: Locale }) {
+export function Footer({
+	locale,
+	onHome,
+}: {
+	locale: Locale;
+	onHome: () => void;
+}) {
 	const t = copy[locale];
+	const year = new Date().getFullYear();
 	return (
-		<footer className="site-footer shell">
-			<div className="footer-credit">
-				<BrandMark />
-				<div>
-					<p>{t.footer}</p>
-					<span>{t.footerNote}</span>
+		<footer className="site-footer">
+			<div className="site-footer-inner shell">
+				<div className="site-footer-body">
+					<div className="site-footer-identity">
+						<a
+							href="/"
+							className="brand"
+							onClick={(event) => {
+								event.preventDefault();
+								onHome();
+							}}
+							aria-label="hexly.ai"
+							lang="en"
+						>
+							<BrandMark />
+							<span>
+								hexly<span className="brand-domain">.ai</span>
+							</span>
+						</a>
+						<p lang="en">
+							{t.copyright.replace("{year}", String(year))}
+							{" · "}
+							<span className="site-version">v{appVersion}</span>
+						</p>
+					</div>
+					<SurfaceLinks locale={locale} footer onPortfolio={onHome} />
 				</div>
 			</div>
-			<nav aria-label={locale === "en" ? "Elsewhere" : "更多链接"}>
-				<a href="https://lizheng.blog" target="_blank" rel="noreferrer">
-					{t.blog}
-					<Icon name="arrow" />
-				</a>
-				<a href="https://github.com/nocoo" target="_blank" rel="noreferrer">
-					{t.github}
-					<Icon name="arrow" />
-				</a>
-				<button
-					type="button"
-					onClick={() =>
-						window.scrollTo({
-							top: 0,
-							behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
-								.matches
-								? "instant"
-								: "smooth",
-						})
-					}
-					aria-label={t.top}
-				>
-					<Icon name="left" />
-				</button>
-			</nav>
+			<div className="site-footer-bottom">
+				<div className="site-footer-inner shell">
+					<span className="location-signature" lang="en">
+						<span className="location-dot" aria-hidden="true" />
+						{t.location}
+					</span>
+					<span className="footer-curiosity" lang="en">
+						{t.curiosity}
+					</span>
+					<a href="#main-content">
+						{t.top}
+						<span aria-hidden="true">↑</span>
+					</a>
+				</div>
+			</div>
 		</footer>
 	);
 }
