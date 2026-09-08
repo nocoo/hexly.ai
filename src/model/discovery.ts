@@ -42,7 +42,7 @@ export function absoluteUrl(path: string): string {
 }
 
 export function socialImage(project?: Project): string {
-	if (!project) return `${siteOrigin}/og.png`;
+	if (!project) return `${siteOrigin}/og.jpg`;
 	return `${siteOrigin}/og/${project.id}.jpg`;
 }
 

@@ -190,6 +190,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	for (const [path, type] of [
 		["/favicon.ico", "image/png"],
 		["/apple-touch-icon.png", "image/png"],
+		["/og.jpg", "image/jpeg"],
 		["/og.png", "image/png"],
 	] as const) {
 		const response = await request.get(path);
