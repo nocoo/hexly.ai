@@ -30,10 +30,8 @@
 		"Space Grotesk Variable", "PingFang SC", "Microsoft YaHei", sans-serif;
 	--mono: "Geist Mono Variable", "PingFang SC", monospace;
 	--site-topbar-height: 88px;
-	--site-subheader-height: 48px;
 	--site-topbar-offset: calc(
 		var(--site-topbar-height) +
-		var(--site-subheader-height) +
 		env(safe-area-inset-top, 0px)
 	);
 	font-family: var(--sans);
@@ -219,6 +217,12 @@ a {
 	color: var(--muted);
 	font-weight: 400;
 }
+.view-links {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	margin-right: auto;
+}
 .surface-links {
 	display: flex;
 	align-items: center;
@@ -232,20 +236,24 @@ a {
 	align-items: center;
 	min-height: 44px;
 	color: var(--muted);
-	font: 12px / 1 var(--mono);
 	text-decoration: none;
 	white-space: nowrap;
 	background: none;
 	border: 0;
 	padding: 0;
 }
-.site-header .surface-links a,
+.surface-links a {
+	font: 12px / 1 var(--mono);
+}
 .view-links button {
+	font-size: 13px;
+	letter-spacing: -0.2px;
+}
+.site-header .surface-links a {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
-html[lang="zh-CN"] .site-header .surface-links a,
-html[lang="zh-CN"] .view-links button {
+html[lang="zh-CN"] .site-header .surface-links a {
 	letter-spacing: 0.04em;
 	text-transform: none;
 }
@@ -263,6 +271,9 @@ html[lang="zh-CN"] .view-links button {
 	height: 1px;
 	background: var(--accent);
 }
+.view-links button[aria-pressed="true"]::after {
+	bottom: 12px;
+}
 .surface-links a:hover,
 .view-links button:hover {
 	color: var(--accent);
@@ -272,15 +283,6 @@ html[lang="zh-CN"] .view-links button {
 	outline: 2px solid color-mix(in srgb, var(--accent) 80%, var(--ink));
 	outline-offset: 4px;
 	border-radius: 3px;
-}
-.site-subheader {
-	border-top: 1px solid var(--line);
-}
-.view-links {
-	display: flex;
-	align-items: center;
-	gap: 28px;
-	height: var(--site-subheader-height);
 }
 .preferences {
 	display: flex;
@@ -739,9 +741,11 @@ html[lang="zh-CN"] .view-links button {
 	.site-header-inner {
 		gap: 22px;
 	}
-	.surface-links,
-	.view-links {
+	.surface-links {
 		gap: 18px;
+	}
+	.view-links {
+		gap: 14px;
 	}
 	.site-footer-identity {
 		gap: 20px;
@@ -764,13 +768,17 @@ html[lang="zh-CN"] .view-links button {
 	.site-header .brand {
 		font-size: 22px;
 	}
-	.surface-links,
-	.view-links {
+	.surface-links {
 		gap: 15px;
 	}
-	.surface-links a,
-	.view-links button {
+	.surface-links a {
 		font-size: 11px;
+	}
+	.view-links {
+		gap: 12px;
+	}
+	.view-links button {
+		font-size: 12px;
 	}
 	.icon-toggle {
 		width: 36px;
@@ -786,7 +794,7 @@ html[lang="zh-CN"] .view-links button {
 
 @media (max-width: 640px) {
 	:root {
-		--site-topbar-height: 108px;
+		--site-topbar-height: 148px;
 	}
 	.site-header-inner {
 		flex-wrap: wrap;
@@ -802,6 +810,13 @@ html[lang="zh-CN"] .view-links button {
 		flex: 0 0 100%;
 		margin: 0;
 		gap: 24px;
+	}
+	.site-header .view-links {
+		order: 6;
+		flex: 0 0 100%;
+		margin: 0;
+		gap: 24px;
+		min-height: 40px;
 	}
 	.site-footer {
 		margin-top: 48px;
