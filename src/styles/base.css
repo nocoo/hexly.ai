@@ -614,18 +614,23 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	gap: 24px;
 }
 .brand-wordmark {
+	--brand-accent: #bf5c3c;
 	display: flex;
 	align-items: center;
 	flex-shrink: 0;
-	font-size: 20px;
+	font-family: "Space Grotesk Variable", sans-serif;
+	font-size: 23px;
 	font-weight: 600;
 	letter-spacing: -1px;
+	text-decoration: none;
 	line-height: 1;
 	white-space: nowrap;
-	color: var(--ink);
+}
+[data-theme="dark"] .brand-wordmark {
+	--brand-accent: #e79670;
 }
 .brand-dot {
-	color: var(--accent);
+	color: var(--brand-accent);
 }
 .brand-grid {
 	display: grid;
@@ -637,7 +642,11 @@ html[lang="zh-CN"] .site-header .surface-links a {
 .brand-grid i {
 	width: 5px;
 	height: 5px;
-	background: var(--accent);
+	background: var(--brand-accent);
+}
+.site-footer-identity .brand-wordmark {
+	font-size: 20px;
+	color: var(--ink);
 }
 .site-footer-identity p {
 	margin: 0;
@@ -870,6 +879,18 @@ html[lang="zh-CN"] .site-header .surface-links a {
 @media (max-width: 480px) {
 	.site-header .brand {
 		font-size: 21px;
+	}
+	.brand-wordmark {
+		font-size: 21px;
+	}
+	.brand-grid {
+		margin-right: 9px;
+		grid-template-columns: 4px 4px;
+		gap: 2px;
+	}
+	.brand-grid i {
+		width: 4px;
+		height: 4px;
 	}
 }
 
