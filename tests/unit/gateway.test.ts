@@ -16,6 +16,18 @@ describe("the static asset gateway", () => {
 			"https://hexly.ai/logos/frogie?q=1",
 		);
 	});
+	it("redirects when the Host header is www", async () => {
+		const response = await worker.fetch(
+			new Request("https://hexly.ai/logos/frogie?q=1", {
+				headers: { Host: "www.hexly.ai" },
+			}),
+			{ ASSETS: assets },
+		);
+		expect(response.status).toBe(301);
+		expect(response.headers.get("Location")).toBe(
+			"https://hexly.ai/logos/frogie?q=1",
+		);
+	});
 	it("serves static assets on the canonical host", async () => {
 		const response = await worker.fetch(new Request("https://hexly.ai/"), {
 			ASSETS: assets,
