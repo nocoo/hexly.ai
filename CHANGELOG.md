@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.1] - 2026-09-08
+
+### Fixes
+
+- match me content width and header line ([a563b75](https://github.com/nocoo/hexly.ai/commit/a563b75d6fa3007de2c6f04c4cd7af721f0e4b83))
+
+### Features
+
+- load catalogue from project json files ([bf46dc7](https://github.com/nocoo/hexly.ai/commit/bf46dc7bd909b958b93c3e35633cd3a9817a6461))
+- prerender crawler pages and discovery docs ([e0ee040](https://github.com/nocoo/hexly.ai/commit/e0ee040d750bfdbf84eb345ecec1d3b617e2830e))
+
 ## [0.4.0] - 2026-09-08
 
 ### Documentation
