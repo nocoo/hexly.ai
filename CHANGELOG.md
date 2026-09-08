@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.4.0] - 2026-09-08
+
+### Documentation
+
+- archive paused meowth redraw ([4ccf687](https://github.com/nocoo/hexly.ai/commit/4ccf68781affb624765ee4404c832855d681c2ad))
+- drop refined badge from card contract ([bb2a7ba](https://github.com/nocoo/hexly.ai/commit/bb2a7ba4b59c4c1ccdd743bde74b20f4825b0ce2))
+
+### Features
+
+- brighten basalt with candy colors ([068e998](https://github.com/nocoo/hexly.ai/commit/068e99861296565b47145b2a3430535c854be18c))
+- order project directory by series and popularity ([b9a2e7c](https://github.com/nocoo/hexly.ai/commit/b9a2e7c4584152b18d74072e7cdd6113fa5a6d1a))
+- align chrome with family surfaces ([775fcbe](https://github.com/nocoo/hexly.ai/commit/775fcbe435d3a98c373e95e3e733eac49a9fb3e2))
+- use family wordmark in the footer ([a57fd08](https://github.com/nocoo/hexly.ai/commit/a57fd08a54a4c7acce8772dfc7c9c63ff0ab12c9))
+- match ME fonts and type sizes ([57b9f67](https://github.com/nocoo/hexly.ai/commit/57b9f67147547a560a028fe5eaf51b1216d07d18))
+- drop refined badges from project cards ([e3b1d1f](https://github.com/nocoo/hexly.ai/commit/e3b1d1f0e14a868485c6dfe096994c3a8331a45e))
+- match ME title period and selection ([6726989](https://github.com/nocoo/hexly.ai/commit/67269891e1aabd3cc9fd42ac00eb17e5e929a5de))
+
+### Fixes
+
+- tuck local views into the header ([dab550c](https://github.com/nocoo/hexly.ai/commit/dab550c2af6abae8a3dd906b5ba94a0aafe849de))
+- move local views under a short rule ([0492794](https://github.com/nocoo/hexly.ai/commit/0492794a12fe2ec7a60148a3c643ac90333b2c3c))
+- match family wordmark metrics in footer ([f247e53](https://github.com/nocoo/hexly.ai/commit/f247e53eca17df869fb66f227240c721224f862c))
+- paint header ai as secondary green ([92fdf6b](https://github.com/nocoo/hexly.ai/commit/92fdf6b9d20ca66d418ca9ef0e8022ff1a6b693b))
+- inset footer rules to content width ([d404f02](https://github.com/nocoo/hexly.ai/commit/d404f02e2edd71f5169ec9d40c7988ee36570bdf))
+
+### Tests
+
+- follow curated order in navigation ([6069039](https://github.com/nocoo/hexly.ai/commit/60690399d5f7c18d632715c98e17d0353b3cc771))
+
 ## [0.3.0] - 2026-09-07
 
 ### Documentation
