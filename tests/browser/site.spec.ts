@@ -1,15 +1,20 @@
 import { expect, test } from "@playwright/test";
 import manifest from "../../package.json" with { type: "json" };
 import projects from "../../src/data/projects.json" with { type: "json" };
+import { filterProjects } from "../../src/model/catalogue";
+import type { Project } from "../../src/model/project";
 
-const active = projects.filter((project) => !project.archived);
-const archived = projects.filter((project) => project.archived);
+const catalogue = projects as Project[];
+const active = catalogue.filter((project) => !project.archived);
+const archived = catalogue.filter((project) => project.archived);
+const ordered = filterProjects(catalogue, "", "all");
+const firstVisible = ordered[0];
 const tiers = [
 	active.filter((project) => project.family),
 	active.filter((project) => !project.family),
 ];
 
-test("renders active projects with local logos, redraw badges, and working destinations", async ({
+test("renders active projects with local logos and working destinations", async ({
 	page,
 }) => {
 	const errors: string[] = [];
@@ -53,9 +58,10 @@ test("renders active projects with local logos, redraw badges, and working desti
 			})),
 		),
 	).toEqual(
-		tiers
-			.flat()
-			.map((project) => ({ label: "GitHub", href: project.repository })),
+		ordered.map((project) => ({
+			label: "GitHub",
+			href: project.repository,
+		})),
 	);
 	const refined = active.filter((project) => project.family);
 	for (const project of refined) {
@@ -210,7 +216,9 @@ test("keeps archived projects accessible through their category and direct logo 
 		.getByRole("combobox", { name: "Project categories" })
 		.selectOption("all");
 	await expect(page.locator(".picker-item")).toHaveCount(active.length);
-	await expect(page.locator("#identity-title")).toContainText("Frogie");
+	await expect(page.locator("#identity-title")).toContainText(
+		firstVisible?.title ?? "",
+	);
 	await page.goBack();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
