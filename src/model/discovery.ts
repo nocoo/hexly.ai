@@ -43,10 +43,7 @@ export function absoluteUrl(path: string): string {
 
 export function socialImage(project?: Project): string {
 	if (!project) return `${siteOrigin}/og.png`;
-	if (project.family) return `${siteOrigin}${project.family.root}/icon.png`;
-	if (project.logo.original.endsWith(".png"))
-		return `${siteOrigin}${project.logo.original}`;
-	return `${siteOrigin}${project.logo.display}`;
+	return `${siteOrigin}/og/${project.id}.jpg`;
 }
 
 export function pageForPath(
@@ -135,6 +132,12 @@ export function applyPageToHtml(html: string, page: DiscoveryPage): string {
 	next = replaceMeta(next, "og:description", page.description, "property");
 	next = replaceMeta(next, "og:url", page.canonical, "property");
 	next = replaceMeta(next, "og:image", page.image, "property");
+	next = replaceMeta(
+		next,
+		"og:image:type",
+		page.image.endsWith(".jpg") ? "image/jpeg" : "image/png",
+		"property",
+	);
 	next = replaceMeta(next, "og:image:alt", page.imageAlt, "property");
 	next = replaceMeta(next, "twitter:title", page.title, "name");
 	next = replaceMeta(next, "twitter:description", page.description, "name");
@@ -156,7 +159,7 @@ export function applyPageToHtml(html: string, page: DiscoveryPage): string {
 		);
 	next = next.replace(
 		/<noscript>[\s\S]*?<\/noscript>/,
-		`<noscript>${page.bodyHtml}</noscript>`,
+		"<noscript>hexly.ai is a collection of projects by Zheng Li. JavaScript is optional; this page already includes the heading and project list.</noscript>",
 	);
 	next = next.replace(
 		/<div id="root">[\s\S]*?<\/div>/,
@@ -194,7 +197,11 @@ function homePage(projects: Project[]): DiscoveryPage {
 					name: homeTitle,
 					description: homeDescription,
 					isPartOf: { "@id": `${siteOrigin}/#website` },
-					mainEntity: itemList(visible),
+					mainEntity: itemList(visible, "Active projects"),
+					hasPart: itemList(
+						filterProjects(projects, "", "archive"),
+						"Archived projects",
+					),
 				},
 			],
 		},
@@ -225,7 +232,7 @@ function galleryPage(projects: Project[]): DiscoveryPage {
 			name: galleryTitle,
 			description,
 			isPartOf: { "@id": `${siteOrigin}/#website` },
-			mainEntity: itemList(visible),
+			mainEntity: itemList(visible, "Active identities"),
 		},
 	};
 }
@@ -263,9 +270,10 @@ function projectPage(project: Project): DiscoveryPage {
 	};
 }
 
-function itemList(projects: Project[]) {
+function itemList(projects: Project[], name: string) {
 	return {
 		"@type": "ItemList",
+		name,
 		numberOfItems: projects.length,
 		itemListElement: projects.map((project, index) => ({
 			"@type": "ListItem",
