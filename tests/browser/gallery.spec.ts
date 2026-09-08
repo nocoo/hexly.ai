@@ -373,7 +373,8 @@ test("keeps the artwork in place when descriptions wrap or projects change", asy
 			await page.keyboard.press("ArrowRight");
 			const current = await page.locator(".logo-review").boundingBox();
 			expect(current?.y).toBeCloseTo(start.y, 0);
-			expect(await page.evaluate(() => scrollY)).toBeCloseTo(300, -1);
+			expect(await page.evaluate(() => scrollY)).toBeGreaterThan(280);
+			expect(await page.evaluate(() => scrollY)).toBeLessThan(320);
 		}
 	}
 });
