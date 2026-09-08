@@ -129,7 +129,7 @@ for (const id of ["frogie", "pew", "pokepocket", "node-image-uploader"]) {
 test("serves genuine WebP artwork and small icon variants", async ({
 	request,
 }) => {
-	for (const size of [32, 64, 160, 1024]) {
+	for (const size of [32, 64, 160, 256, 512, 1024]) {
 		const response = await request.get(`/logos/display/pew-${size}.webp`);
 		expect(response.status()).toBe(200);
 		expect(response.headers()["content-type"]).toContain("image/webp");
@@ -167,6 +167,22 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	expect(page).not.toContain(
 		'<link rel="canonical" href="https://hexly.ai/" />',
 	);
+	expect(page.match(/<h1>/g)?.length).toBe(1);
+	expect(page).toContain("https://hexly.ai/og/frogie.jpg");
+	expect(page).toContain("Active projects");
+	expect(page).toContain("Archived projects");
+	const social = await request.get("/og/frogie.jpg");
+	expect(social.status()).toBe(200);
+	expect(social.headers()["content-type"]).toContain("image/jpeg");
+	expect((await social.body()).byteLength).toBeLessThan(400_000);
+	const projectsRedirect = await request.get("/projects", {
+		maxRedirects: 0,
+	});
+	expect(projectsRedirect.status()).toBe(301);
+	expect(projectsRedirect.headers().location).toMatch(/\/$/);
+	const frogieRedirect = await request.get("/frogie", { maxRedirects: 0 });
+	expect(frogieRedirect.status()).toBe(301);
+	expect(frogieRedirect.headers().location).toContain("/logos/frogie");
 	const favicon = await request.get("/favicon.svg");
 	expect(favicon.status()).toBe(200);
 	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");

@@ -11,13 +11,16 @@ for (const project of projects) {
 		createHash("sha256").update(original).digest("hex") !== project.logo.sha256
 	)
 		throw new Error(`Original checksum changed: ${project.id}`);
-	for (const size of [32, 64, 160, 1024]) {
+	for (const size of [32, 64, 160, 256, 512, 1024]) {
 		const meta = await sharp(
 			`public/logos/display/${project.id}-${size}.webp`,
 		).metadata();
 		if (meta.width !== size || meta.height !== size)
 			throw new Error(`Incorrect derivative dimensions: ${project.id}/${size}`);
 	}
+	const social = await readFile(`public/og/${project.id}.jpg`);
+	if (social.byteLength > 400_000)
+		throw new Error(`Social image too large: ${project.id}`);
 	if (project.family) {
 		const root = `public${project.family.root}`;
 		const foreground = project.family.foreground;
@@ -69,7 +72,7 @@ for (const project of projects) {
 					`Adapted illustration provenance changed: ${project.id}`,
 				);
 		}
-		for (const size of [32, 64, 160, 1024]) {
+		for (const size of [32, 64, 160, 256, 512, 1024]) {
 			const meta = await sharp(`${root}/icon-${size}.webp`).metadata();
 			if (meta.width !== size || meta.height !== size)
 				throw new Error(
@@ -86,7 +89,7 @@ for (const project of projects) {
 	}
 }
 console.info(
-	`Verified ${projects.length} source checksums, ${projects.length * 4} artwork derivatives, and all current family foregrounds and previews.`,
+	`Verified ${projects.length} source checksums, ${projects.length * 6} artwork derivatives, and all current family foregrounds and previews.`,
 );
 
 let publicArchives = 0;

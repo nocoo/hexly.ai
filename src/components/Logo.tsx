@@ -19,7 +19,18 @@ export function Logo({
 		"--project-color": project.colors.primary,
 		"--project-background": project.colors.background,
 	} as CSSProperties;
-	const pixels = size <= 16 ? 32 : size <= 32 ? 64 : size <= 80 ? 160 : 1024;
+	const pixels =
+		size <= 16
+			? 32
+			: size <= 32
+				? 64
+				: size <= 80
+					? 160
+					: size <= 128
+						? 256
+						: size <= 256
+							? 512
+							: 1024;
 	const src = project.family
 		? framed
 			? `${project.family.root}/icon-${pixels}.webp`
@@ -32,8 +43,8 @@ export function Logo({
 		>
 			<img
 				src={src}
-				width={size * 2}
-				height={size * 2}
+				width={size}
+				height={size}
 				alt=""
 				loading={eager ? "eager" : "lazy"}
 				decoding="async"
