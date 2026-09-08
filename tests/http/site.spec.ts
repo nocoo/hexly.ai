@@ -19,9 +19,17 @@ test("serves the built document and security policy through Workers HTTP", async
 	expect(response.headers()["content-security-policy"]).toContain(
 		"frame-ancestors 'none'",
 	);
+	expect(response.headers()["strict-transport-security"]).toContain(
+		"max-age=31536000",
+	);
 	const html = await response.text();
 	expect(html).toContain('href="https://hexly.ai/"');
-	expect(html).toContain('<div id="root"></div>');
+	expect(html).toContain('id="root"');
+	expect(html).toContain("<h1>");
+	expect(html).toContain("Frogie");
+	expect(html).toContain("https://lizheng.me/en/");
+	expect(html).toContain('property="og:image"');
+	expect(html).toContain("application/ld+json");
 	expect(html).not.toContain("/src/main.tsx");
 });
 
@@ -65,7 +73,7 @@ test("reloads gallery links and serves the external preference bootstrap", async
 		const response = await request.get(path);
 		expect(response.status(), path).toBe(200);
 		expect(response.headers()["content-type"]).toContain("text/html");
-		expect(await response.text()).toContain('<div id="root"></div>');
+		expect(await response.text()).toContain('id="root"');
 	}
 	const preferences = await request.get("/preferences.js");
 	expect(preferences.status()).toBe(200);
@@ -131,7 +139,7 @@ test("serves genuine WebP artwork and small icon variants", async ({
 	}
 });
 
-test("exposes the root domain to crawlers and supplies a favicon", async ({
+test("publishes crawler documents, unique project HTML, and real icons", async ({
 	request,
 }) => {
 	const robots = await request.get("/robots.txt");
@@ -141,10 +149,36 @@ test("exposes the root domain to crawlers and supplies a favicon", async ({
 	);
 	const sitemap = await request.get("/sitemap.xml");
 	expect(sitemap.status()).toBe(200);
-	expect(await sitemap.text()).toContain("<loc>https://hexly.ai/</loc>");
+	expect(sitemap.headers()["content-type"]).toContain("xml");
+	const map = await sitemap.text();
+	expect(map).toContain("<loc>https://hexly.ai/</loc>");
+	expect(map).toContain("<loc>https://hexly.ai/logos/frogie</loc>");
+	const llms = await request.get("/llms.txt");
+	expect(llms.status()).toBe(200);
+	expect(llms.headers()["content-type"]).toContain("text/plain");
+	expect(await llms.text()).toContain("https://lizheng.me/en/");
+	const frogie = await request.get("/logos/frogie");
+	expect(frogie.status()).toBe(200);
+	const page = await frogie.text();
+	expect(page).toContain("<title>Frogie — hexly.ai</title>");
+	expect(page).toContain(
+		'<link rel="canonical" href="https://hexly.ai/logos/frogie" />',
+	);
+	expect(page).not.toContain(
+		'<link rel="canonical" href="https://hexly.ai/" />',
+	);
 	const favicon = await request.get("/favicon.svg");
 	expect(favicon.status()).toBe(200);
 	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");
+	for (const [path, type] of [
+		["/favicon.ico", "image/png"],
+		["/apple-touch-icon.png", "image/png"],
+		["/og.png", "image/png"],
+	] as const) {
+		const response = await request.get(path);
+		expect(response.status(), path).toBe(200);
+		expect(response.headers()["content-type"], path).toContain(type);
+	}
 });
 
 for (const id of projects

@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { Icon } from "./components/Icon";
 import { copy } from "./data/copy";
 import { filterProjects, loadProjects } from "./model/catalogue";
+import { pageForPath } from "./model/discovery";
 import {
 	type DirectoryState,
 	navigationPath,
@@ -70,6 +71,12 @@ export function App() {
 	}, [locale, theme]);
 
 	useEffect(() => {
+		if (catalogue.status !== "ready") return;
+		const path = state.view === "directory" ? "/" : `/logos/${state.project}`;
+		document.title = pageForPath(path, projects).title;
+	}, [catalogue.status, projects, state.project, state.view]);
+
+	useEffect(() => {
 		let cancelled = false;
 		loadProjects(fetch)
 			.then((loaded) => {
@@ -99,15 +106,6 @@ export function App() {
 	}, [catalogue.status, state]);
 
 	useEffect(() => {
-		if (catalogue.status !== "ready") return;
-		const onPopState = () =>
-			setState(
-				parseNavigation(
-					window.location.pathname,
-					window.location.search,
-					projects,
-				),
-			);
 		const onKeyDown = (event: KeyboardEvent) => {
 			const target = event.target;
 			if (
@@ -124,13 +122,25 @@ export function App() {
 				searchRef.current?.focus();
 			}
 		};
-		window.addEventListener("popstate", onPopState);
 		window.addEventListener("keydown", onKeyDown);
 		return () => {
-			window.removeEventListener("popstate", onPopState);
 			window.removeEventListener("keydown", onKeyDown);
 			if (toastTimer.current) clearTimeout(toastTimer.current);
 		};
+	}, []);
+
+	useEffect(() => {
+		if (catalogue.status !== "ready") return;
+		const onPopState = () =>
+			setState(
+				parseNavigation(
+					window.location.pathname,
+					window.location.search,
+					projects,
+				),
+			);
+		window.addEventListener("popstate", onPopState);
+		return () => window.removeEventListener("popstate", onPopState);
 	}, [catalogue, projects]);
 
 	const navigate = (next: DirectoryState, replace = false) => {
