@@ -17,11 +17,7 @@ export function ProjectCard({
 }) {
 	const t = copy[locale];
 	return (
-		<article
-			className="project-card"
-			data-project={project.id}
-			data-refined={Boolean(project.family)}
-		>
+		<article className="project-card" data-project={project.id}>
 			<a
 				className="card-main"
 				href={`/logos/${project.id}`}
@@ -55,12 +51,6 @@ export function ProjectCard({
 					</p>
 				</div>
 				<div className="card-meta">
-					{project.family && (
-						<span className="refined-badge">
-							<Icon name="check" />
-							{t.refined}
-						</span>
-					)}
 					<span className="card-category">
 						{
 							categoryLabels[locale][
