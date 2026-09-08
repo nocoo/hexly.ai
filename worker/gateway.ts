@@ -5,7 +5,10 @@ interface Env {
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
 		const url = new URL(request.url);
-		if (url.hostname === "www.hexly.ai") {
+		const host = (request.headers.get("Host") ?? url.host)
+			.split(":")[0]
+			?.toLowerCase();
+		if (host === "www.hexly.ai") {
 			url.hostname = "hexly.ai";
 			url.protocol = "https:";
 			return new Response(null, {
