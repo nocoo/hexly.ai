@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.2] - 2026-09-08
+
+### Fixes
+
+- run worker first for www redirects ([34677b5](https://github.com/nocoo/hexly.ai/commit/34677b5fa13999fd4d73d2426880f813e2b9e8da))
+
 ## [0.4.1] - 2026-09-08
 
 ### Fixes
