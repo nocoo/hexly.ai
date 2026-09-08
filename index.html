@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+		<style>
+			html { background: #f0f0e9; }
+			html[data-theme="dark"] { background: #1e2824; }
+			#root { visibility: hidden; }
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#f0f0e9" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -29,7 +34,7 @@
     <title>hexly.ai — A little universe of projects</title>
   </head>
 	<body>
-		<noscript></noscript>
+		<noscript><style>#root{visibility:visible}</style></noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
