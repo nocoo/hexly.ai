@@ -1,4 +1,4 @@
-import projectOrder from "../data/project-order.json";
+import projectOrder from "../data/project-order.json" with { type: "json" };
 import type { Category, Project } from "./project";
 
 const curatedOrder = new Map<string, number>(
