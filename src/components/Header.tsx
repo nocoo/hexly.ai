@@ -22,43 +22,45 @@ export function Header({
 	const home = () => onView("directory");
 	return (
 		<header className="site-header">
-			<div className="site-header-inner shell">
-				<a
-					href="/"
-					className="brand"
-					onClick={(event) => {
-						event.preventDefault();
-						home();
-					}}
-					aria-label="hexly.ai"
-				>
-					<BrandMark />
-					<span>
-						hexly<span className="brand-dot">.</span>
-						<span className="brand-domain">ai</span>
-					</span>
-				</a>
-				<SurfaceLinks locale={locale} onPortfolio={home} />
-				<div className="preferences">
-					<button
-						className="icon-toggle"
-						type="button"
-						onClick={onLocale}
-						aria-label={t.language}
-						title={t.language}
+			<div className="site-header-bar">
+				<div className="site-header-inner shell">
+					<a
+						href="/"
+						className="brand"
+						onClick={(event) => {
+							event.preventDefault();
+							home();
+						}}
+						aria-label="hexly.ai"
 					>
-						<Icon name="languages" />
-					</button>
-					<button
-						type="button"
-						className="icon-toggle theme-toggle"
-						onClick={onTheme}
-						aria-label={theme === "light" ? t.light : t.dark}
-						title={theme === "light" ? t.light : t.dark}
-					>
-						<Icon name="sun" className="theme-sun" />
-						<Icon name="moon" className="theme-moon" />
-					</button>
+						<BrandMark />
+						<span>
+							hexly<span className="brand-dot">.</span>
+							<span className="brand-domain">ai</span>
+						</span>
+					</a>
+					<SurfaceLinks locale={locale} onPortfolio={home} />
+					<div className="preferences">
+						<button
+							className="icon-toggle"
+							type="button"
+							onClick={onLocale}
+							aria-label={t.language}
+							title={t.language}
+						>
+							<Icon name="languages" />
+						</button>
+						<button
+							type="button"
+							className="icon-toggle theme-toggle"
+							onClick={onTheme}
+							aria-label={theme === "light" ? t.light : t.dark}
+							title={theme === "light" ? t.light : t.dark}
+						>
+							<Icon name="sun" className="theme-sun" />
+							<Icon name="moon" className="theme-moon" />
+						</button>
+					</div>
 				</div>
 			</div>
 			<nav className="view-links shell" aria-label={t.views}>
