@@ -15,23 +15,26 @@
 }
 .hero h1 {
 	font-size: clamp(70px, 7.2vw, 104px);
+	font-weight: 500;
 	letter-spacing: -0.085em;
 	line-height: 1.03;
-	font-weight: 500;
-	margin: 0;
+	margin: 0 0 31px -5px;
 }
-.hero h1 > span {
-	color: #78846b;
+.outline-word {
+	color: #76816a;
 }
-[data-theme="dark"] .hero h1 > span {
+[data-theme="dark"] .outline-word {
 	color: #a9b59c;
+}
+.headline-period {
+	color: var(--accent);
 }
 .hero-description {
 	max-width: 420px;
 	font-size: 19px;
 	line-height: 1.65;
 	color: var(--muted);
-	margin: 21px 0 25px;
+	margin: 0 0 25px;
 	text-wrap: pretty;
 	letter-spacing: -0.035em;
 }
@@ -587,13 +590,14 @@
 	.hero h1 {
 		font-size: 60px;
 		letter-spacing: -0.075em;
+		margin: 0 0 20px;
 	}
 	.hero-description {
 		margin-inline: auto;
 		max-width: 340px;
 		font-size: 15px;
 		line-height: 1.8;
-		margin-top: 18px;
+		margin-top: 0;
 		margin-bottom: 22px;
 	}
 	.hero-actions {

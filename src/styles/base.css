@@ -139,8 +139,7 @@ a {
 	user-select: none;
 }
 ::selection {
-	color: var(--ink);
-	background: color-mix(in srgb, var(--accent) 23%, var(--page));
+	background: #a9bc9699;
 }
 .shell {
 	width: min(1232px, calc(100% - 80px));
@@ -212,19 +211,20 @@ a {
 	border-bottom: 1px solid var(--line);
 }
 .brand {
+	--brand-accent: #bf5c3c;
 	display: inline-flex;
 	align-items: center;
 	flex-shrink: 0;
 	gap: 11px;
+	font-family: "Space Grotesk Variable", sans-serif;
 	font-size: 23px;
 	font-weight: 600;
 	letter-spacing: -1px;
 	line-height: 1;
 	white-space: nowrap;
 }
-.brand-domain {
-	color: var(--muted);
-	font-weight: 400;
+[data-theme="dark"] .brand {
+	--brand-accent: #e79670;
 }
 .view-links {
 	display: flex;
