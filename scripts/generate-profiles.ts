@@ -67,6 +67,26 @@ Small-size observation: ${family.sizeNote.en}
 	const palette = project.colors.palette
 		.map((color) => `| ${color.role} | \`${color.color}\` | ${color.source} |`)
 		.join("\n");
+	const overview = project.overview;
+	const overviewSection = overview
+		? `## Project goal
+
+${overview.goal.en}
+
+${overview.goal.zh}
+
+- [中文 README](${project.repository}/blob/main/README.md) · [English README](${project.repository}/blob/main/docs/README.en.md)
+- Verified: ${overview.verified.date}; [source revision](${project.repository}/tree/${overview.verified.revision})
+- Source files: ${overview.verified.sources.map((path) => `[\`${path}\`](${project.repository}/blob/${overview.verified.revision}/${path})`).join(", ")}
+
+### Tech stack
+
+| Technology | Role | 用途 |
+| --- | --- | --- |
+${overview.techStack.map((technology) => `| ${technology.name} | ${technology.role.en} | ${technology.role.zh} |`).join("\n")}
+
+`
+		: "";
 	const content = `# ${project.emoji} ${project.title}
 
 ## Profile
@@ -82,7 +102,7 @@ Small-size observation: ${family.sizeNote.en}
 - Profile revision: \`${project.source.profileRevision}\`
 - Repository revision inspected: \`${project.source.repositoryRevision}\`
 
-## Current logo
+${overviewSection}## Current logo
 
 ![${project.title} source identity](../../public${project.logo.thumbnail})
 
