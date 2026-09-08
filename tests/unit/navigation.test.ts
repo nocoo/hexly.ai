@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import rawProjects from "../../src/data/projects.json";
+import { filterProjects } from "../../src/model/catalogue";
 import {
 	navigationPath,
 	openLogo,
@@ -9,6 +10,7 @@ import {
 import type { Project } from "../../src/model/project";
 
 const projects = rawProjects as Project[];
+const firstVisible = filterProjects(projects, "", "all")[0]?.id;
 const parse = (pathname: string, search = "") =>
 	parseNavigation(pathname, search, projects);
 
@@ -78,7 +80,7 @@ describe("shareable directory navigation", () => {
 			resolveNavigation({ ...state, query: "missing-project" }, projects)
 				.project,
 		).toBe("frogie");
-		expect(parse("/logos/missing-project").project).toBe("frogie");
+		expect(parse("/logos/missing-project").project).toBe(firstVisible);
 		expect(parseNavigation("/logos", "", []).project).toBe("frogie");
 	});
 });
