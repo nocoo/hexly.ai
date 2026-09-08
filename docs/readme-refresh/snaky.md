@@ -80,14 +80,14 @@ The root agent changed only those two test cases to use `vi.spyOn(globalThis, "f
 ### Publication prerequisites and hooks reviewed
 
 - `.husky/pre-commit` runs CLI typecheck, lint and unit tests. On hosts with full Xcode selected, it additionally builds Swift with warnings as errors, runs Swift tests and SwiftLint. Its existing developer-directory check omits those Swift checks on this Command Line Tools-only host; no local bypass was added.
-- `.husky/pre-push` builds the CLI and runs E2E tests, then checks Gitleaks and OSV when installed. Both tools are present locally at `/opt/homebrew/bin/gitleaks` and `/opt/homebrew/bin/osv-scanner`. It additionally runs Swift integration tests on full-Xcode hosts. The root agent will run the normal publication hooks while committing/pushing; this investigator has not committed or pushed.
-- `.github/workflows/ci.yml` uses Node 22, a frozen pnpm install, typecheck, lint, unit tests, build and E2E. Local build/E2E verification used Node 26.7.0 and pnpm 10.34.4; it is not a claim that Node 22 CI has already run for this uncommitted change.
+- `.husky/pre-push` builds the CLI and runs E2E tests, then checks Gitleaks and OSV when installed. Both tools are present locally at `/opt/homebrew/bin/gitleaks` and `/opt/homebrew/bin/osv-scanner`. It additionally runs Swift integration tests on full-Xcode hosts. The root agent completed these normal publication hooks successfully; see the final commits and CI link in [validation.md](validation.md).
+- `.github/workflows/ci.yml` uses Node 22, a frozen pnpm install, typecheck, lint, unit tests, build and E2E. Local build/E2E verification used Node 26.7.0 and pnpm 10.34.4. The published README commit subsequently passed the Node 22 CI run `34214028335`.
 - `xcode-select -p` was checked again and remains `/Library/Developer/CommandLineTools`. Swift tests and the native application were not run; current README states their full-Xcode and installed-CLI prerequisites.
 - `LICENSE` was read directly and confirms MIT, copyright 2026 Zheng Li.
 
-## Proposed catalogue copy
+## Catalogue copy
 
-- Goal (zh): 让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、连接延迟和 DNS 解析器，判断分流是否符合预期。
+- Goal (zh): 让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、HTTP 延迟和 DNS 解析器，判断分流是否符合预期。
 - Goal (en): Help VPN and proxy users check destination egress IPs, HTTP latency and DNS resolvers in one place to see whether routing matches their expectations.
 - Major technology badges: `TypeScript`, `Node.js`, `React`, `Ink`, `Swift`, `SwiftUI`, `AppKit`.
 - Capability boundary for future copy: describes observations and a configured/heuristic DNS verdict; does not guarantee privacy, configure VPN routing, provide a VPN service or measure throughput.

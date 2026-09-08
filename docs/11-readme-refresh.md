@@ -24,11 +24,13 @@
 | --- | --- | --- |
 | 同步本站并核对范围 | 完成 | 本站 main 已 pull；49 个未归档项目均有本地仓库 |
 | 同步并初步调查 49 个仓库 | 完成初筛 | [完整比较清单](readme-refresh/inventory.md)；存在原有改动或分叉的例外单独记录 |
-| 核实 Snaky 并提炼模板 | 完成改写 | [模板](readme-refresh/template.md)、[代码证据与测试记录](readme-refresh/snaky.md)；中英文 README 内容对应 |
-| 选择并核实第二个项目 | 完成改写 | 选择 Steed：原 40 行 README 缺少核心功能、启动与测试入口；[调查记录](readme-refresh/steed.md) |
-| 本站字段与详情页展示 | 完成并通过本地验证 | 仅两份试点 JSON 添加 overview；双语目标、技术栈 badges、相应语言 README 入口 |
-| 验证、复核并推送首批 | 进行中 | [验证与交付记录](readme-refresh/validation.md) |
+| 核实 Snaky 并提炼模板 | 已推送，CI 通过 | [模板](readme-refresh/template.md)、[代码证据与测试记录](readme-refresh/snaky.md)；中英文 README 内容对应 |
+| 选择并核实第二个项目 | 已推送，CI / 自动部署通过 | 选择 Steed：原 40 行 README 缺少核心功能、启动与测试入口；[调查记录](readme-refresh/steed.md) |
+| 本站字段与详情页展示 | 已上线并核验 | 仅两份试点 JSON 添加 overview；双语目标、技术栈 badges、相应语言 README 入口 |
+| 验证、复核并推送首批 | 完成 | 三仓库 main 已推送；本站 CI、部署及公开页面验证通过；[验证与交付记录](readme-refresh/validation.md) |
 | 用户确认后分批推广 | 等待首批确认 | 每批先同步、核实，再沿用模板整理 |
+
+首批可直接复核：[Snaky README](https://github.com/nocoo/snaky#readme) / [English](https://github.com/nocoo/snaky/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/snaky)，[Steed README](https://github.com/nocoo/steed#readme) / [English](https://github.com/nocoo/steed/blob/main/docs/README.en.md) / [详情页](https://hexly.ai/logos/steed)。其余 47 个项目保留调查结果，尚未改写或推送。
 
 ## 调查原则
 

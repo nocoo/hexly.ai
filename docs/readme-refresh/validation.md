@@ -66,8 +66,34 @@ Snaky 的 DNS 失败用例原先受本机解析器影响，将 `.invalid` 改写
 
 | 仓库 | 提交 / 推送 | 远端 CI / 部署 |
 | --- | --- | --- |
-| Snaky | [`a52d799`](https://github.com/nocoo/snaky/commit/a52d79904d5640c365839c021e2ddeb774c5da15) DNS 测试修复；[`5ef57af`](https://github.com/nocoo/snaky/commit/5ef57af407bc695ea710ae77eaa59432d6006373) 双语 README。再次 pull 无需更新，正常 hooks 通过后已 push main | [CI](https://github.com/nocoo/snaky/actions/runs/34214028335) 执行中 |
-| Steed | [`107256b`](https://github.com/nocoo/steed/commit/107256b7104a067133029f7f4b5a60a86efd717b) 双语 README 与入口文档。再次 pull 无需更新，正常 hooks 通过后已 push main | [CI](https://github.com/nocoo/steed/actions/runs/34214050472) 执行中 |
-| hexly.ai | 待提交 | 待验证；以成功 Deploy 和公开页面验证为准 |
+| Snaky | [`a52d799`](https://github.com/nocoo/snaky/commit/a52d79904d5640c365839c021e2ddeb774c5da15) DNS 测试修复；[`5ef57af`](https://github.com/nocoo/snaky/commit/5ef57af407bc695ea710ae77eaa59432d6006373) 双语 README。再次 pull 无需更新，正常 hooks 通过后已 push main | [CI 成功](https://github.com/nocoo/snaky/actions/runs/34214028335) |
+| Steed | [`107256b`](https://github.com/nocoo/steed/commit/107256b7104a067133029f7f4b5a60a86efd717b) 双语 README 与入口文档。再次 pull 无需更新，正常 hooks 通过后已 push main | [CI 成功](https://github.com/nocoo/steed/actions/runs/34214050472)；[自动部署成功](https://github.com/nocoo/steed/actions/runs/34214174101) |
+| hexly.ai | [`63279af`](https://github.com/nocoo/hexly.ai/commit/63279afc0321934ab8877ad9a1a5a93c115207d8) 展示、首批资料与全量调查；再次 pull 无需更新，正常 hooks 通过后已 push main | [Quality & Deploy 成功](https://github.com/nocoo/hexly.ai/actions/runs/34214404700/attempts/2)；同一提交第二次运行的浏览器 162 / 162 通过，自动部署与公开页面验证通过 |
 
-Steed 的 Access 控制台不在本轮用真实账号进行业务操作。hexly.ai 页面公开，发布后核对 `/api/live` 的提交号及两个项目的双语资料。最终交付后，后续 47 个项目仍等待首批确认。
+发布后通过 GitHub contents API 回读 Snaky、Steed 的四份 README，其 SHA-256 均与本地文件一致。三个仓库的包 manifest 和根锁文件与调查基线逐字节相同；Steed 各 workspace 的 manifest 也未改动。
+
+hexly.ai 第一次推送在 GitHub TLS 握手阶段失败，未触发远端更新。再次 pull 确认无需更新后重试成功，HTTP 与安全 hooks 正常执行，没有修改 Git 配置或跳过检查。
+
+### hexly.ai 首次 CI 的下载中断
+
+提交 `63279af` 的首次 CI 中，单元 / 静态 / 安全及 HTTP 检查通过，浏览器测试 161 / 162 通过，10 个新增资料用例全部通过。失败的是既有的桌面 Steed 原图下载用例（`tests/browser/gallery.spec.ts:180`）：`download.failure()` 返回 `"canceled"`，部署因此未执行。
+
+已下载该次运行的 `browser-failure-evidence` artifact（ID `10051314814`），核对 Playwright trace、页面快照和 `.wrangler/browser-ci.log`。以下时间均为 2026-09-08 UTC：
+
+- `10:16:58.479`：定位正确的 `steed-transparent.png` 下载链接；`10:16:58.510` 点击完成。
+- `10:16:59.170`：Wrangler 收到 `/logos/family/steed/2026-09-07-02/01/transparent.png` 请求，记录 `Could not proxy request to the UserWorker … Network connection lost.`。
+- `10:16:59.171`：浏览器发出 URL 和文件名均正确的 download 事件；`10:16:59.176` 报告取消。browser context 到 `10:17:00.222` 才开始关闭。
+
+记录支持 Wrangler 本地代理链路中的一次连接中断，不能确定由哪一端首先断开。trace 没有页面 JavaScript 异常；其中 41 个普通网络请求均为 200，但下载没有进入 network HAR，不能据此宣称它的响应或字节完整。Wrangler 后续 isolate ID 一致，未见重启或崩溃记录。
+
+在不改代码的情况下，原桌面下载用例本地连续运行 10 次均通过（`bunx playwright test tests/browser/gallery.spec.ts --project=desktop --grep 'compares refined steed ' --repeat-each=10`）。保留下载逻辑和断言，于 `10:23:30 UTC` 对原提交重跑失败 job；`10:28:39 UTC` 浏览器记录 162 / 162 通过，随后自动部署和整次 workflow 均成功。没有为这次中断修改组件、下载资源、断言或 CI 配置。
+
+### 公开站点核验
+
+2026-09-08 `10:31 UTC`（北京时间 18:31）对已发布的 `63279afc0321934ab8877ad9a1a5a93c115207d8` 执行以下只读检查：
+
+- `bun run verify:production` 通过：`https://hexly.ai/api/live` 返回版本 `0.4.6` 和预期完整提交号；页面、编译后的 JavaScript / CSS、原始 Logo 校验均通过。
+- 使用 Playwright 打开公开的 [Snaky](https://hexly.ai/logos/snaky) 和 [Steed](https://hexly.ai/logos/steed) 详情页。分别核对英文及切换后的中文目标、全部技术名称与本地化用途，与对应 JSON 一致。
+- 两种语言的 README 链接分别指向 `docs/README.en.md` 和根 `README.md`；两个页面在 320 px 视口下均无横向溢出。
+
+Steed 的 Access 控制台不在本轮用真实账号进行业务操作。后续 47 个项目仍等待首批确认。
