@@ -10,7 +10,7 @@ This is the shared logo-usage wiki for the personal-project family. The owner es
 | Sidebar, collapsed rail, small header, navigation mark | Transparent foreground | No baked-in tile, motif, external glow, CSS background, or additional circular/rounded crop |
 | Browser favicon, PNG or ICO | Transparent foreground | Preserve alpha in every size; small transparent corners on a background tile do not make it a foreground mark |
 | Apple touch, PWA, native app icon | Platform-specific derivative of the selected presentation | Follow the platform's masking contract; a browser favicon rule does not automatically apply to an OS app icon |
-| Social/Open Graph image | Selected presentation on the existing social canvas | Preserve the intended brand setting and the required output dimensions |
+| Social/Open Graph image | Selected presentation on the existing social canvas | Preserve the intended brand setting and the required output dimensions. Product sites should reuse `https://hexly.ai/og/<id>.jpg` through [the share API](10-social-share.md) rather than inventing a new 1200 × 630 crop |
 
 Root `logo.png` remains the canonical transparent master. Keep presentation masters separate, normally `assets/brand/icon.png` and `assets/brand/icon-rounded.png`. Conventional `logo-24.png` and `logo-80.png` app assets come from the foreground; a large background presentation has its own explicit path. An 80 px asset used in a 44 px header is still a small UI mark. Choose by the actual displayed role, not the source filename or resolution.
 
