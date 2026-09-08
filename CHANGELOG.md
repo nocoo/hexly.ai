@@ -24,6 +24,7 @@
 - match family wordmark metrics in footer ([f247e53](https://github.com/nocoo/hexly.ai/commit/f247e53eca17df869fb66f227240c721224f862c))
 - paint header ai as secondary green ([92fdf6b](https://github.com/nocoo/hexly.ai/commit/92fdf6b9d20ca66d418ca9ef0e8022ff1a6b693b))
 - inset footer rules to content width ([d404f02](https://github.com/nocoo/hexly.ai/commit/d404f02e2edd71f5169ec9d40c7988ee36570bdf))
+- mark catalogue json import for node ([837e732](https://github.com/nocoo/hexly.ai/commit/837e7320f7dae751ee9b8e97b16616db27823bd5))
 
 ### Tests
 
