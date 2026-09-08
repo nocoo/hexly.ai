@@ -1,0 +1,204 @@
+{
+	"id": "pika",
+	"repo": "pika",
+	"title": "Pika",
+	"emoji": "⚡",
+	"description": {
+		"en": "Replay, search, and rediscover your AI coding conversations.",
+		"zh": "回放、搜索和重新发现 AI 编程会话，让过去的思路更容易找回来。"
+	},
+	"category": "ai",
+	"website": "https://pika.hexly.ai",
+	"websiteSource": "packages/web-worker/wrangler.toml routes",
+	"repository": "https://github.com/nocoo/pika",
+	"subject": "Original yellow Pika with its complete lightning gesture",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/pika.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2575312,
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"thumbnail": "/logos/display/pika-160.webp",
+		"display": "/logos/display/pika-1024.webp"
+	},
+	"theme": {
+		"background": {
+			"value": "220 14% 94%",
+			"source": "packages/web/src/globals.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "packages/web/src/globals.css --foreground"
+		},
+		"primary": {
+			"value": "42 82% 42%",
+			"source": "packages/web/src/globals.css --primary"
+		}
+	},
+	"source": {
+		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileSection": "Recent Projects",
+		"description": "AI coding session replay and search — parse, upload, and full-text search",
+		"repositoryRevision": "bb9b497372809e5ca00eaef4b04e1aa51e4256a3"
+	},
+	"colors": {
+		"primary": "#c38e13",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f",
+		"palette": [
+			{
+				"color": "#c38e13",
+				"role": "primary",
+				"source": "packages/web/src/globals.css --primary: 42 82% 42%"
+			},
+			{
+				"color": "#eeeff2",
+				"role": "background",
+				"source": "packages/web/src/globals.css --background: 220 14% 94%"
+			},
+			{
+				"color": "#fdc904",
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#fdc904",
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#fdc904",
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json",
+				"role": "accent"
+			}
+		]
+	},
+	"archived": false,
+	"family": {
+		"id": "2026-09-07-01",
+		"finishing": "01",
+		"root": "/logos/family/pika/2026-09-07-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pika/2026-09-07-01",
+		"status": "adopted",
+		"updated": "2026-09-07",
+		"foreground": {
+			"subject": {
+				"en": "Original yellow Pika with its complete lightning gesture",
+				"zh": "保留原样的黄色 Pika 与完整闪电动作"
+			},
+			"original": "/logos/family/pika/2026-09-07-01/01/transparent.png",
+			"display": "/logos/family/pika/2026-09-07-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		"previous": {
+			"original": "/logos/originals/pika.png",
+			"sourceUrl": "https://github.com/nocoo/pika/blob/d9b12caf26a4715aca440d8a6fe1ed929adcadb3/logo.png",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Keep the charge",
+					"zh": "保留原来的动势"
+				},
+				"description": {
+					"en": "The original forward leap, ears, tail and lightning fragments remain exactly where they were. No source pixels, placement or colors are changed.",
+					"zh": "原来的前跃动作、耳朵、尾巴和闪电碎片全部保留原位，主体像素、位置与颜色均未改变。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Original yellow facets",
+					"zh": "原有的黄色切面"
+				},
+				"description": {
+					"en": "Golden-yellow and lemon facets retain their native contrast and small colored sparks. This pass adds presentation layers without a generation request.",
+					"zh": "金黄与柠檬黄色面保持原有对比和小块彩色电光。本轮只添加展示层，没有调用生图模型。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Charge steps",
+					"zh": "充电阶梯"
+				},
+				"description": {
+					"en": "Large offset zigzag steps cut through a deeper olive-gold field. Their low tonal contrast supports the original lightning gesture.",
+					"zh": "大块错位折线阶梯穿过较深的橄榄金色底纹，用克制的明暗层次承托原有闪电动作。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#918451",
+				"role": "background",
+				"label": {
+					"en": "Charge steps",
+					"zh": "充电阶梯"
+				},
+				"source": "Selected Pika presentation, 2026-09-07-01/01; background.base in archived settings.json"
+			},
+			{
+				"color": "#fdc904",
+				"role": "primary",
+				"label": {
+					"en": "Golden yellow",
+					"zh": "金黄色"
+				},
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#fdc904",
+				"role": "accent",
+				"label": {
+					"en": "Lemon",
+					"zh": "柠檬黄"
+				},
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#fdc904",
+				"role": "accent",
+				"label": {
+					"en": "Charcoal",
+					"zh": "炭灰色"
+				},
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#fdc904",
+				"role": "accent",
+				"label": {
+					"en": "Coral",
+					"zh": "珊瑚色"
+				},
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#fdc904",
+				"role": "accent",
+				"label": {
+					"en": "Electric blue",
+					"zh": "电光蓝"
+				},
+				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "The original 2048 px foreground and placement are retained exactly. Existing nearest rounded-outline clearance is 26.5 px with no clipped pixels. Fine facets and small sparks simplify at 16 px; app and browser marks use the transparent source.",
+			"zh": "原有 2048 px 透明主体与位置保持完全一致，距圆角轮廓最近处为 26.5 px，没有像素被裁掉。细小切面与电光在 16 px 时会简化，小型 UI 与浏览器使用透明主体。"
+		},
+		"method": "retained-original"
+	}
+}

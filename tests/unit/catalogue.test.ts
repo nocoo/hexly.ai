@@ -1,15 +1,17 @@
 import { describe, expect, it } from "vitest";
-import rawProjects from "../../src/data/projects.json";
+import { readProjects } from "../../src/data/read-projects";
 import {
 	catalogueProblems,
 	categoryCounts,
 	destination,
 	filterProjects,
+	loadProjects,
+	parseCatalogue,
 	selectedProject,
 } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
 
-const projects = rawProjects as Project[];
+const projects = readProjects();
 const active = projects.filter((project) => !project.archived);
 const frogie = projects.find((project) => project.id === "frogie");
 if (!frogie) throw new Error("Frogie is required as the reference identity.");
@@ -108,5 +110,26 @@ describe("the imported project catalogue", () => {
 				"Incomplete identity: frogie",
 			);
 		}
+	});
+	it("parses a published catalogue and rejects malformed payloads", () => {
+		expect(parseCatalogue(projects)).toEqual(projects);
+		expect(() => parseCatalogue({})).toThrow("Catalogue must be a JSON array.");
+		expect(() => parseCatalogue([{ ...frogie, id: "../bad" }])).toThrow(
+			"Invalid or duplicate id: ../bad",
+		);
+	});
+	it("loads the catalogue through HTTP and surfaces fetch failures", async () => {
+		await expect(
+			loadProjects(
+				async () =>
+					new Response(JSON.stringify(projects), {
+						status: 200,
+						headers: { "Content-Type": "application/json" },
+					}),
+			),
+		).resolves.toEqual(projects);
+		await expect(
+			loadProjects(async () => new Response("", { status: 404 })),
+		).rejects.toThrow("Catalogue HTTP 404");
 	});
 });

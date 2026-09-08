@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import rawProjects from "../../src/data/projects.json";
+import { readProjects } from "../../src/data/read-projects";
 import { filterProjects } from "../../src/model/catalogue";
 import {
 	navigationPath,
@@ -7,9 +7,8 @@ import {
 	parseNavigation,
 	resolveNavigation,
 } from "../../src/model/navigation";
-import type { Project } from "../../src/model/project";
 
-const projects = rawProjects as Project[];
+const projects = readProjects();
 const firstVisible = filterProjects(projects, "", "all")[0]?.id;
 const parse = (pathname: string, search = "") =>
 	parseNavigation(pathname, search, projects);

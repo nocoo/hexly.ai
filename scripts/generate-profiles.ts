@@ -1,9 +1,7 @@
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
-import type { Project } from "../src/model/project";
+import { mkdir, readdir, writeFile } from "node:fs/promises";
+import { readProjects } from "../src/data/read-projects";
 
-const projects: Project[] = JSON.parse(
-	await readFile("src/data/projects.json", "utf8"),
-);
+const projects = readProjects();
 await mkdir("docs/profiles", { recursive: true });
 const existingProfiles = await readdir("docs/profiles");
 let nextProfileNumber = Math.max(
@@ -13,7 +11,7 @@ let nextProfileNumber = Math.max(
 const index = [
 	"# Project profiles",
 	"",
-	`${projects.length} projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in \`src/data/projects.json\`; run \`bun run docs:profiles\` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.`,
+	`${projects.length} projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in \`src/data/projects/\`; run \`bun run docs:profiles\` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.`,
 	"",
 	"| Project | Catalogue artwork | Source primary | Source background |",
 	"| --- | --- | --- | --- |",

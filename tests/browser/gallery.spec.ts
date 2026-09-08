@@ -1,10 +1,9 @@
 import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
-import rawProjects from "../../src/data/projects.json" with { type: "json" };
+import { readProjects } from "../../src/data/read-projects";
 import { filterProjects } from "../../src/model/catalogue";
-import type { Project } from "../../src/model/project";
 
-const projects = rawProjects as Project[];
+const projects = readProjects();
 const ordered = filterProjects(projects, "", "all");
 const firstVisible = ordered[0];
 const frogieIndex = ordered.findIndex((project) => project.id === "frogie");
