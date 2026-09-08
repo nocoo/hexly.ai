@@ -226,6 +226,10 @@ a {
 [data-theme="dark"] .brand {
 	--brand-accent: #e79670;
 }
+.brand-domain {
+	color: var(--muted);
+	font-weight: 400;
+}
 .view-links {
 	display: flex;
 	align-items: center;

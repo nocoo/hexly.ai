@@ -34,7 +34,8 @@ export function Header({
 				>
 					<BrandMark />
 					<span>
-						hexly<span className="brand-dot">.</span>ai
+						hexly<span className="brand-dot">.</span>
+						<span className="brand-domain">ai</span>
 					</span>
 				</a>
 				<SurfaceLinks locale={locale} onPortfolio={home} />
