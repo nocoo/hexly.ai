@@ -169,8 +169,9 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	);
 	expect(page.match(/<h1>/g)?.length).toBe(1);
 	expect(page).toContain("https://hexly.ai/og/frogie.jpg");
-	expect(page).toContain("Active projects");
-	expect(page).toContain("Archived projects");
+	const home = await (await request.get("/")).text();
+	expect(home).toContain("Active projects");
+	expect(home).toContain("Archived projects");
 	const social = await request.get("/og/frogie.jpg");
 	expect(social.status()).toBe(200);
 	expect(social.headers()["content-type"]).toContain("image/jpeg");
