@@ -50,6 +50,20 @@ describe("the static asset gateway", () => {
 			"https://hexly.ai/logos/frogie?ref=1",
 		);
 	});
+	it("allows cross-origin reads of share metadata", async () => {
+		const pew = await worker.fetch(
+			new Request("https://hexly.ai/api/share/pew.json"),
+			{ ASSETS: assets },
+		);
+		expect(pew.status).toBe(200);
+		expect(pew.headers.get("Access-Control-Allow-Origin")).toBe("*");
+		const missing = await worker.fetch(
+			new Request("https://hexly.ai/api/share/not-a-project.json"),
+			{ ASSETS: assets },
+		);
+		expect(missing.status).toBe(404);
+		expect(missing.headers.get("Access-Control-Allow-Origin")).toBe("*");
+	});
 	it("leaves canonical identity paths unchanged", async () => {
 		const response = await worker.fetch(
 			new Request("https://hexly.ai/logos/frogie"),

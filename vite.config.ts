@@ -10,6 +10,7 @@ import {
 	discoveryPages,
 	llmsDocument,
 	pageForPath,
+	shareFiles,
 	sitemapXml,
 } from "./src/model/discovery";
 
@@ -41,6 +42,15 @@ function discoveryAssets(): Plugin {
 					response.end(sitemapXml(pages()));
 					return;
 				}
+				const share = shareFiles(readProjects()).find(
+					(file) => `/${file.fileName}` === pathname,
+				);
+				if (share && ["GET", "HEAD"].includes(request.method ?? "")) {
+					response.setHeader("Content-Type", "application/json; charset=utf-8");
+					response.setHeader("Access-Control-Allow-Origin", "*");
+					response.end(request.method === "HEAD" ? undefined : share.source);
+					return;
+				}
 				next();
 			});
 		},
@@ -55,6 +65,9 @@ function discoveryAssets(): Plugin {
 				fileName: "sitemap.xml",
 				source: sitemapXml(pages()),
 			});
+			for (const file of shareFiles(readProjects())) {
+				this.emitFile({ type: "asset", ...file });
+			}
 		},
 		writeBundle() {
 			const file = resolve("dist/index.html");
