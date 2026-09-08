@@ -10,6 +10,10 @@
 
 - guide sites to reuse og cards ([20db6b6](https://github.com/nocoo/hexly.ai/commit/20db6b6836863c4e101eb58d081cfcbb04a039d0))
 
+### Tests
+
+- wait longer for logo page tabs ([933fb0e](https://github.com/nocoo/hexly.ai/commit/933fb0e964574175b074a179e0f8481a49187eb3))
+
 ## [0.4.3] - 2026-09-08
 
 ### Features
