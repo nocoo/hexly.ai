@@ -1,0 +1,195 @@
+{
+	"id": "xray",
+	"repo": "xray",
+	"title": "Xray",
+	"emoji": "🦋",
+	"description": {
+		"en": "A closer look at your Twitter / X activity, with analytics and AI-powered reports.",
+		"zh": "深入查看 Twitter / X 动态，用数据分析与 AI 报告理解自己的内容。"
+	},
+	"category": "everyday",
+	"website": "https://xray.hexly.ai",
+	"websiteSource": "GitHub repository homepage",
+	"repository": "https://github.com/nocoo/xray",
+	"subject": "Original multicolored butterfly with complete spread wings",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/xray.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3318716,
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"thumbnail": "/logos/display/xray-160.webp",
+		"display": "/logos/display/xray-1024.webp"
+	},
+	"theme": {
+		"background": {
+			"value": "220 14% 94%",
+			"source": "packages/ui/src/index.css --background"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "packages/ui/src/index.css --foreground"
+		},
+		"primary": {
+			"value": "230 75% 55%",
+			"source": "packages/ui/src/index.css --primary"
+		}
+	},
+	"source": {
+		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileSection": "Recent Projects",
+		"description": "Personal Twitter/X analytics dashboard with AI-powered reporting",
+		"repositoryRevision": "16175dc87ef406e8cf3343ab8808b60e8f53cc8a"
+	},
+	"colors": {
+		"primary": "#3653e2",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f",
+		"palette": [
+			{
+				"color": "#3653e2",
+				"role": "primary",
+				"source": "packages/ui/src/index.css --primary: 230 75% 55%"
+			},
+			{
+				"color": "#eeeff2",
+				"role": "background",
+				"source": "packages/ui/src/index.css --background: 220 14% 94%"
+			},
+			{
+				"color": "#f6bc36",
+				"source": "Native xray 912d89234012, sampled sRGB pixel (1371, 523); artwork/logo-family/xray/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#961b54",
+				"source": "Native xray 912d89234012, sampled sRGB pixel (176, 366); artwork/logo-family/xray/2026-09-07-01/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#991c56",
+				"source": "Native xray 912d89234012, sampled sRGB pixel (178, 364); artwork/logo-family/xray/2026-09-07-01/palette.json",
+				"role": "accent"
+			}
+		]
+	},
+	"archived": false,
+	"family": {
+		"id": "2026-09-07-01",
+		"finishing": "01",
+		"root": "/logos/family/xray/2026-09-07-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/xray/2026-09-07-01",
+		"status": "adopted",
+		"updated": "2026-09-07",
+		"foreground": {
+			"subject": {
+				"en": "Original multicolored butterfly with complete spread wings",
+				"zh": "保留原样的多彩展翅蝴蝶"
+			},
+			"original": "/logos/family/xray/2026-09-07-01/01/transparent.png",
+			"display": "/logos/family/xray/2026-09-07-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		"previous": {
+			"original": "/logos/originals/xray.png",
+			"sourceUrl": "https://github.com/nocoo/xray/blob/c6653da2d564576c9fe85346477d2830ebeabdc0/packages/worker/static/logo.png",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Wings kept whole",
+					"zh": "完整保留双翼"
+				},
+				"description": {
+					"en": "The owner-selected butterfly keeps its exact native position, silhouette and colorful wing pattern. Both sides of the comparison use the same foreground.",
+					"zh": "保留原来蝴蝶的位置、轮廓与多彩翼纹。前后对比使用完全相同的透明主体。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "The original carries the color",
+					"zh": "色彩来自原图"
+				},
+				"description": {
+					"en": "Coral, gold, turquoise and violet facets remain untouched. This is a presentation pass with zero image-generation requests.",
+					"zh": "珊瑚、金黄、松石与紫色色面全部保留。本轮只完善展示，没有调用生图模型。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Wing-vein panels",
+					"zh": "蝶翼脉络底纹"
+				},
+				"description": {
+					"en": "Unequal, open wing-vein panels meet on a muted plum field. The broad seams and soft contact shadow let the vivid butterfly stay in front.",
+					"zh": "不等宽的开放翼脉面板铺在柔和梅紫底色上，宽阔接缝与浅接触阴影托起鲜艳的蝴蝶。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#756584",
+				"role": "background",
+				"label": {
+					"en": "Wing-vein panels",
+					"zh": "蝶翼脉络底纹"
+				},
+				"source": "Selected Xray presentation, 2026-09-07-01/01; background.base in archived settings.json"
+			},
+			{
+				"color": "#f24d31",
+				"role": "primary",
+				"label": {
+					"en": "Coral",
+					"zh": "珊瑚色"
+				},
+				"source": "Native xray 912d89234012, sampled sRGB pixel (424, 344); artwork/logo-family/xray/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#f6bc36",
+				"role": "accent",
+				"label": {
+					"en": "Golden yellow",
+					"zh": "金黄色"
+				},
+				"source": "Native xray 912d89234012, sampled sRGB pixel (1371, 523); artwork/logo-family/xray/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#961b54",
+				"role": "accent",
+				"label": {
+					"en": "Teal",
+					"zh": "青色"
+				},
+				"source": "Native xray 912d89234012, sampled sRGB pixel (176, 366); artwork/logo-family/xray/2026-09-07-01/palette.json"
+			},
+			{
+				"color": "#991c56",
+				"role": "accent",
+				"label": {
+					"en": "Violet",
+					"zh": "紫色"
+				},
+				"source": "Native xray 912d89234012, sampled sRGB pixel (178, 364); artwork/logo-family/xray/2026-09-07-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "The original 2048 px foreground and placement are retained exactly. Existing nearest rounded-outline clearance is 124.61 px with no clipped pixels. Fine facets and small sparks simplify at 16 px; app and browser marks use the transparent source.",
+			"zh": "原有 2048 px 透明主体与位置保持完全一致，距圆角轮廓最近处为 124.61 px，没有像素被裁掉。细小切面与电光在 16 px 时会简化，小型 UI 与浏览器使用透明主体。"
+		},
+		"method": "retained-original"
+	}
+}

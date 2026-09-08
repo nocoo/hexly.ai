@@ -5,8 +5,7 @@ import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { Icon } from "./components/Icon";
 import { copy } from "./data/copy";
-import rawProjects from "./data/projects.json";
-import { filterProjects } from "./model/catalogue";
+import { filterProjects, loadProjects } from "./model/catalogue";
 import {
 	type DirectoryState,
 	navigationPath,
@@ -20,7 +19,10 @@ import "./styles/base.css";
 import "./styles/directory.css";
 import "./styles/gallery.css";
 
-const projects = rawProjects as Project[];
+type CatalogueState =
+	| { status: "loading" }
+	| { status: "error" }
+	| { status: "ready"; projects: Project[] };
 
 function browserStorage(): Storage | null {
 	try {
@@ -31,8 +33,11 @@ function browserStorage(): Storage | null {
 }
 
 export function App() {
+	const [catalogue, setCatalogue] = useState<CatalogueState>({
+		status: "loading",
+	});
 	const [state, setState] = useState(() =>
-		parseNavigation(window.location.pathname, window.location.search, projects),
+		parseNavigation(window.location.pathname, window.location.search, []),
 	);
 	const [preferences, setPreferences] = useState(() =>
 		readPreferences(
@@ -46,6 +51,7 @@ export function App() {
 	const searchRef = useRef<HTMLInputElement>(null);
 	const { locale, theme } = preferences;
 	const t = copy[locale];
+	const projects = catalogue.status === "ready" ? catalogue.projects : [];
 	const visible = filterProjects(
 		projects,
 		state.query,
@@ -64,12 +70,36 @@ export function App() {
 	}, [locale, theme]);
 
 	useEffect(() => {
+		let cancelled = false;
+		loadProjects(fetch)
+			.then((loaded) => {
+				if (cancelled) return;
+				setCatalogue({ status: "ready", projects: loaded });
+				setState(
+					parseNavigation(
+						window.location.pathname,
+						window.location.search,
+						loaded,
+					),
+				);
+			})
+			.catch(() => {
+				if (!cancelled) setCatalogue({ status: "error" });
+			});
+		return () => {
+			cancelled = true;
+		};
+	}, []);
+
+	useEffect(() => {
+		if (catalogue.status !== "ready") return;
 		const path = navigationPath(state);
 		if (`${window.location.pathname}${window.location.search}` !== path)
 			window.history.replaceState(null, "", `${path}${window.location.hash}`);
-	}, [state]);
+	}, [catalogue.status, state]);
 
 	useEffect(() => {
+		if (catalogue.status !== "ready") return;
 		const onPopState = () =>
 			setState(
 				parseNavigation(
@@ -101,7 +131,7 @@ export function App() {
 			window.removeEventListener("keydown", onKeyDown);
 			if (toastTimer.current) clearTimeout(toastTimer.current);
 		};
-	}, []);
+	}, [catalogue, projects]);
 
 	const navigate = (next: DirectoryState, replace = false) => {
 		const resolved = resolveNavigation(next, projects);
@@ -154,7 +184,16 @@ export function App() {
 				onLocale={switchLocale}
 				onTheme={switchTheme}
 			/>
-			{state.view === "directory" ? (
+			{catalogue.status !== "ready" ? (
+				<main id="main-content" className="shell">
+					<div className="empty-state">
+						<h2>{catalogue.status === "error" ? t.loadFailed : t.loading}</h2>
+						{catalogue.status === "error" ? (
+							<p>{t.loadFailedDescription}</p>
+						) : null}
+					</div>
+				</main>
+			) : state.view === "directory" ? (
 				<Directory
 					projects={projects}
 					visible={visible}

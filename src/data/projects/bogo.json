@@ -1,0 +1,297 @@
+{
+	"id": "bogo",
+	"repo": "bogo",
+	"title": "Bogo",
+	"emoji": "📚",
+	"description": {
+		"en": "A personal knowledge home for documents, people, and the connections between them.",
+		"zh": "把文档、人物与工作空间放在一起，整理个人知识和它们之间的联系。"
+	},
+	"category": "everyday",
+	"website": "https://bogo.hexly.ai",
+	"websiteSource": "CLAUDE.md Live-check",
+	"repository": "https://github.com/nocoo/bogo",
+	"subject": "Winking faceted buffalo with a plain muzzle and one rainbow flower sprig",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/bogo-2026-09-07.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3637079,
+		"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+		"thumbnail": "/logos/display/bogo-160.webp",
+		"display": "/logos/display/bogo-1024.webp"
+	},
+	"theme": {
+		"background": {
+			"value": "oklch(0.94 0.012 230)",
+			"source": "packages/ui/src/index.css --background"
+		},
+		"ink": {
+			"value": "oklch(0.15 0.02 230)",
+			"source": "packages/ui/src/index.css --foreground"
+		},
+		"primary": {
+			"value": "oklch(0.45 0.2 250)",
+			"source": "packages/ui/src/index.css --primary"
+		}
+	},
+	"source": {
+		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileSection": "Recent Projects",
+		"description": "Personal knowledge base for documents, people, and workspaces — React + Hono + Cloudflare D1",
+		"repositoryRevision": "77e211a294a885fff2830d0aba2e48a10299dff1"
+	},
+	"colors": {
+		"primary": "#0051bd",
+		"background": "#e3edf2",
+		"ink": "#030d12",
+		"palette": [
+			{
+				"color": "#0051bd",
+				"role": "primary",
+				"source": "packages/ui/src/index.css --primary: oklch(0.45 0.2 250)"
+			},
+			{
+				"color": "#e3edf2",
+				"role": "background",
+				"source": "packages/ui/src/index.css --background: oklch(0.94 0.012 230)"
+			},
+			{
+				"color": "#b7a186",
+				"role": "background",
+				"label": {
+					"en": "Warm mineral",
+					"zh": "暖矿色"
+				},
+				"source": "Bogo study 05 local presentation, finishing 04; archived background.base and mineral horn arches"
+			},
+			{
+				"color": "#6d4c3c",
+				"role": "primary",
+				"label": {
+					"en": "Walnut",
+					"zh": "胡桃棕"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (980, 650); palette.json"
+			},
+			{
+				"color": "#fac15e",
+				"role": "accent",
+				"label": {
+					"en": "Horn gold",
+					"zh": "牛角金"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (449, 150); palette.json"
+			},
+			{
+				"color": "#4d3529",
+				"role": "accent",
+				"label": {
+					"en": "Deep brown",
+					"zh": "深褐"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1210, 830); palette.json"
+			},
+			{
+				"color": "#e43e3e",
+				"role": "accent",
+				"label": {
+					"en": "Coral",
+					"zh": "珊瑚红"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (236, 1300); palette.json"
+			},
+			{
+				"color": "#81b64f",
+				"role": "accent",
+				"label": {
+					"en": "Leaf",
+					"zh": "嫩叶绿"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1395, 1630); palette.json"
+			},
+			{
+				"color": "#0c7b6b",
+				"role": "accent",
+				"label": {
+					"en": "Teal",
+					"zh": "青绿"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1315, 1595); palette.json"
+			},
+			{
+				"color": "#0e8eb1",
+				"role": "accent",
+				"label": {
+					"en": "Blue",
+					"zh": "湖蓝"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1388, 1698); palette.json"
+			},
+			{
+				"color": "#863a9a",
+				"role": "accent",
+				"label": {
+					"en": "Violet",
+					"zh": "紫罗兰"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (371, 1800); palette.json"
+			}
+		]
+	},
+	"archived": false,
+	"family": {
+		"id": "2026-09-07-05",
+		"status": "adopted",
+		"updated": "2026-09-07",
+		"finishing": "04",
+		"root": "/logos/family/bogo/2026-09-07-05/04",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/bogo/2026-09-07-05",
+		"model": "Azure Foundry · gpt-image-2",
+		"foreground": {
+			"subject": {
+				"en": "Winking faceted buffalo with a plain muzzle and one rainbow flower sprig",
+				"zh": "自然探头的切面水牛，眨眼表情与一枝彩色花叶"
+			},
+			"original": "/logos/family/bogo/2026-09-07-05/04/transparent.png",
+			"display": "/logos/family/bogo/2026-09-07-05/04/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		"previous": {
+			"original": "/logos/originals/bogo.png",
+			"sourceUrl": "https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/logo.png",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "eeaf1c419feb02f3990451d642432dbf2fbda2c5ddd1d71269d804e3ce8dd3a1"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A close encounter",
+					"zh": "自然探头的瞬间"
+				},
+				"description": {
+					"en": "The face and flower sprig share a close portrait. A short natural neck enters through the lower frame, with room around the horns, ears, and the complete colorful gesture.",
+					"zh": "脸部与花枝组成紧凑的特写，短而自然的颈部从下方入画。牛角、耳朵和完整的彩色花枝四周留出空间，保留探头时的轻松神态。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "One bright gesture",
+					"zh": "趣味集中在一枝花上"
+				},
+				"description": {
+					"en": "Broad walnut and gold facets shape the head, curved horns, and relaxed shoulders. A plain muzzle keeps attention on the wink and the single mouth-held rainbow sprig.",
+					"zh": "胡桃棕与金色的大切面构成脸部、弯角和自然的肩线。鼻部保持干净，多彩装饰集中在嘴边的一枝花叶上。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Warm mineral relief",
+					"zh": "暖矿色的浅浮雕"
+				},
+				"description": {
+					"en": "Broken angular arches sit quietly in the warm mineral field. Fine grain and soft contact shadows give the flat facets a tactile setting.",
+					"zh": "断开的折线拱纹安静地铺在暖矿色底面上，细腻颗粒与柔和接触阴影，为平面的碎片带来触手可及的质感。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#b7a186",
+				"role": "background",
+				"label": {
+					"en": "Warm mineral",
+					"zh": "暖矿色"
+				},
+				"source": "Bogo study 05 local presentation, finishing 04; archived background.base and mineral horn arches"
+			},
+			{
+				"color": "#6d4c3c",
+				"role": "primary",
+				"label": {
+					"en": "Walnut",
+					"zh": "胡桃棕"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (980, 650); palette.json"
+			},
+			{
+				"color": "#fac15e",
+				"role": "accent",
+				"label": {
+					"en": "Horn gold",
+					"zh": "牛角金"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (449, 150); palette.json"
+			},
+			{
+				"color": "#4d3529",
+				"role": "accent",
+				"label": {
+					"en": "Deep brown",
+					"zh": "深褐"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1210, 830); palette.json"
+			},
+			{
+				"color": "#e43e3e",
+				"role": "accent",
+				"label": {
+					"en": "Coral",
+					"zh": "珊瑚红"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (236, 1300); palette.json"
+			},
+			{
+				"color": "#81b64f",
+				"role": "accent",
+				"label": {
+					"en": "Leaf",
+					"zh": "嫩叶绿"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1395, 1630); palette.json"
+			},
+			{
+				"color": "#0c7b6b",
+				"role": "accent",
+				"label": {
+					"en": "Teal",
+					"zh": "青绿"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1315, 1595); palette.json"
+			},
+			{
+				"color": "#0e8eb1",
+				"role": "accent",
+				"label": {
+					"en": "Blue",
+					"zh": "湖蓝"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (1388, 1698); palette.json"
+			},
+			{
+				"color": "#863a9a",
+				"role": "accent",
+				"label": {
+					"en": "Violet",
+					"zh": "紫罗兰"
+				},
+				"source": "Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (371, 1800); palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 32 px, the broad golden horns, brown face, and colorful sprig carry the identity. At 16 px, the wink and separate petals simplify into the silhouette and a small rainbow accent.",
+			"zh": "在 32 px 下，宽阔的金色牛角、棕色脸部与彩色花枝承担辨识度。缩到 16 px 时，眨眼和独立花瓣会合并为轮廓与一小片彩色点缀。"
+		}
+	}
+}

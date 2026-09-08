@@ -2,7 +2,9 @@ import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
 import sharp from "sharp";
 import manifest from "../../package.json" with { type: "json" };
-import projects from "../../src/data/projects.json" with { type: "json" };
+import { readProjects } from "../../src/data/read-projects";
+
+const projects = readProjects();
 
 test("serves the built document and security policy through Workers HTTP", async ({
 	request,
@@ -69,6 +71,15 @@ test("reloads gallery links and serves the external preference bootstrap", async
 	expect(preferences.status()).toBe(200);
 	expect(preferences.headers()["content-type"]).toContain("javascript");
 	expect(await preferences.text()).toContain("hexly:theme");
+});
+
+test("publishes the project catalogue as JSON", async ({ request }) => {
+	const response = await request.get("/data/projects.json");
+	expect(response.status()).toBe(200);
+	expect(response.headers()["content-type"]).toContain("application/json");
+	const body = await response.json();
+	expect(body).toHaveLength(projects.length);
+	expect(body[0]?.id).toBe("frogie");
 });
 
 test("reports the deployed version and revision without caching", async ({

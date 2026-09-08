@@ -9,6 +9,7 @@ export default defineConfig({
 			"**/bunfig.toml",
 			"**/tsconfig*.json",
 			// These inputs are read through a subprocess or fs, outside the import graph.
+			"**/src/data/projects/**",
 			"**/scripts/release.ts",
 			"**/artwork/logo-family/tools/**",
 			"**/public/logos/originals/hexly-ai.*",

@@ -1,0 +1,204 @@
+{
+	"id": "steed",
+	"repo": "steed",
+	"title": "Steed",
+	"emoji": "🐎",
+	"description": {
+		"en": "A shared home for AI agents, their assets, and the relationships between them.",
+		"zh": "面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。"
+	},
+	"category": "ai",
+	"website": "https://steed.hexly.ai",
+	"websiteSource": "apps/web/wrangler.toml routes",
+	"repository": "https://github.com/nocoo/steed",
+	"subject": "Chestnut horse portrait with an ivory blaze and one colorful bird",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/steed-family-2026-09-07-02-01.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3189966,
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"thumbnail": "/logos/display/steed-160.webp",
+		"display": "/logos/display/steed-1024.webp"
+	},
+	"theme": {
+		"background": {
+			"value": "180 10% 94%",
+			"source": "apps/web/src/index.css --background"
+		},
+		"ink": {
+			"value": "180 10% 10%",
+			"source": "apps/web/src/index.css --foreground"
+		},
+		"primary": {
+			"value": "175 70% 38%",
+			"source": "apps/web/src/index.css --primary"
+		}
+	},
+	"source": {
+		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileSection": "Recent Projects",
+		"description": "AI Hub for the multi-agent era — asset visibility and relationship management across agents",
+		"repositoryRevision": "bcab1f113b9b7cde65898bbd23705c7dac339634"
+	},
+	"colors": {
+		"primary": "#1da599",
+		"background": "#eef1f1",
+		"ink": "#171c1c",
+		"palette": [
+			{
+				"color": "#1da599",
+				"role": "primary",
+				"source": "apps/web/src/index.css --primary: 175 70% 38%"
+			},
+			{
+				"color": "#eef1f1",
+				"role": "background",
+				"source": "apps/web/src/index.css --background: 180 10% 94%"
+			},
+			{
+				"color": "#4d3428",
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1165, 638); artwork/logo-family/steed/2026-09-07-02/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#f3d2a9",
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1153, 982); artwork/logo-family/steed/2026-09-07-02/palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#309eaf",
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1632, 1233); artwork/logo-family/steed/2026-09-07-02/palette.json",
+				"role": "accent"
+			}
+		]
+	},
+	"archived": false,
+	"family": {
+		"id": "2026-09-07-02",
+		"finishing": "01",
+		"root": "/logos/family/steed/2026-09-07-02/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/steed/2026-09-07-02",
+		"status": "adopted",
+		"updated": "2026-09-07",
+		"foreground": {
+			"subject": {
+				"en": "Chestnut horse portrait with an ivory blaze and one colorful bird",
+				"zh": "栗棕色骏马头像、象牙白额纹与一只多彩小鸟"
+			},
+			"original": "/logos/family/steed/2026-09-07-02/01/transparent.png",
+			"display": "/logos/family/steed/2026-09-07-02/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		"previous": {
+			"original": "/logos/originals/steed.png",
+			"sourceUrl": "https://github.com/nocoo/steed/blob/1159f3769ec3c0a00a9a2bf32e914cf7cff00e33/logo.png",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A small visitor",
+					"zh": "一位小访客"
+				},
+				"description": {
+					"en": "The horse turns with relaxed ears and a soft muzzle. A small bird sits at the outer mane edge, visibly extending into negative space; natural shoulder anatomy continues below and to the right.",
+					"zh": "马儿转头，耳朵放松、口鼻柔和。一只小鸟停在鬃毛外缘，伸入留白；自然肩部向下方与右侧延续。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Chestnut, chocolate, ivory",
+					"zh": "栗棕、巧克力与象牙白"
+				},
+				"description": {
+					"en": "Broad chestnut coat planes meet a dark chocolate mane and a quiet ivory blaze. The single jewel-colored bird carries the multicolored detail.",
+					"zh": "宽阔栗棕毛色切面与深巧克力色鬃毛、安静的象牙白额纹相接。多彩细节集中在一只宝石色小鸟上。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Canter pleats",
+					"zh": "慢跑风褶"
+				},
+				"description": {
+					"en": "Unequal long wind folds lean across a deep petrol-teal field. Fine grain and shallow shadows separate the warm horse from its cooler setting.",
+					"zh": "长短不一的风褶斜穿深汽油青色底纹，细颗粒与浅阴影让暖色马儿从偏冷背景中显现。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#53817c",
+				"role": "background",
+				"label": {
+					"en": "Canter pleats",
+					"zh": "慢跑风褶"
+				},
+				"source": "Selected Steed presentation, 2026-09-07-02/01; background.base in archived settings.json"
+			},
+			{
+				"color": "#ba7135",
+				"role": "primary",
+				"label": {
+					"en": "Chestnut coat",
+					"zh": "栗棕毛色"
+				},
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (659, 480); artwork/logo-family/steed/2026-09-07-02/palette.json"
+			},
+			{
+				"color": "#4d3428",
+				"role": "accent",
+				"label": {
+					"en": "Chocolate mane",
+					"zh": "巧克力色鬃毛"
+				},
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1165, 638); artwork/logo-family/steed/2026-09-07-02/palette.json"
+			},
+			{
+				"color": "#f3d2a9",
+				"role": "accent",
+				"label": {
+					"en": "Ivory blaze",
+					"zh": "象牙白额纹"
+				},
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1153, 982); artwork/logo-family/steed/2026-09-07-02/palette.json"
+			},
+			{
+				"color": "#309eaf",
+				"role": "accent",
+				"label": {
+					"en": "Bird turquoise",
+					"zh": "小鸟松石色"
+				},
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1632, 1233); artwork/logo-family/steed/2026-09-07-02/palette.json"
+			},
+			{
+				"color": "#eb8361",
+				"role": "accent",
+				"label": {
+					"en": "Bird coral",
+					"zh": "小鸟珊瑚色"
+				},
+				"source": "Native steed 5ff814fe012b, sampled sRGB pixel (1459, 1107); artwork/logo-family/steed/2026-09-07-02/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "The complete ears, mane tips, face and bird retain at least 214.5 px of protected clearance. Only natural lower/right shoulder entries cross the frame. Two native requests were made: study 01 was rejected because its bird stayed inside the mane; study 02 is selected.",
+			"zh": "完整双耳、鬃毛尖、面部与小鸟保留至少 214.5 px 的保护留白，仅自然的下方与右侧肩部穿过边框。共生成两次：第一版小鸟陷在鬃毛内部，最终选择第二版。"
+		},
+		"model": "gpt-image-2"
+	}
+}

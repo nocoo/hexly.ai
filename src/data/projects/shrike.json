@@ -1,0 +1,204 @@
+{
+	"id": "shrike",
+	"repo": "shrike",
+	"title": "Shrike",
+	"emoji": "🪶",
+	"description": {
+		"en": "A small macOS menu bar app that keeps your files in sync with Google Drive.",
+		"zh": "轻巧的 macOS 菜单栏工具，把文件和文件夹同步到 Google Drive。"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/shrike",
+	"subject": "Shrike portrait",
+	"reference": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/shrike.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3750012,
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"thumbnail": "/logos/display/shrike-160.webp",
+		"display": "/logos/display/shrike-1024.webp"
+	},
+	"theme": {
+		"background": {
+			"value": "oklch(0.99 0.005 53)",
+			"source": "src/app/globals.css --background"
+		},
+		"ink": {
+			"value": "oklch(0.25 0.04 53)",
+			"source": "src/app/globals.css --foreground"
+		},
+		"primary": {
+			"value": "oklch(0.486 0.088 52.8)",
+			"source": "src/app/globals.css --primary"
+		}
+	},
+	"source": {
+		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileSection": "Recent Projects",
+		"description": "macOS menu bar utility that syncs files and folders to Google Drive via rsync",
+		"repositoryRevision": "0fec187fc22742664925897400d0c1a62b2478bb"
+	},
+	"colors": {
+		"primary": "#86502c",
+		"background": "#fffbf9",
+		"ink": "#311c0e",
+		"palette": [
+			{
+				"color": "#86502c",
+				"role": "primary",
+				"source": "src/app/globals.css --primary: oklch(0.486 0.088 52.8)"
+			},
+			{
+				"color": "#fffbf9",
+				"role": "background",
+				"source": "src/app/globals.css --background: oklch(0.99 0.005 53)"
+			},
+			{
+				"color": "#a0a2a6",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#1a1918",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			},
+			{
+				"color": "#c5c7ce",
+				"role": "accent",
+				"source": "Preserved project artwork, sampled pixel"
+			}
+		]
+	},
+	"archived": false,
+	"family": {
+		"id": "2026-09-07-01",
+		"finishing": "01",
+		"root": "/logos/family/shrike/2026-09-07-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/shrike/2026-09-07-01",
+		"method": "retained-original",
+		"status": "adopted",
+		"updated": "2026-09-07",
+		"foreground": {
+			"subject": {
+				"en": "Original grey faceted shrike with a dark eye mask",
+				"zh": "保留原图的灰色碎片化伯劳与深色眼罩"
+			},
+			"original": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+			"display": "/logos/family/shrike/2026-09-07-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		"previous": {
+			"original": "/logos/originals/shrike.png",
+			"sourceUrl": "https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Keep the watchful profile",
+					"zh": "保留警觉的侧影"
+				},
+				"description": {
+					"en": "The original head, hooked beak, eye mask, shoulders, and canvas are preserved exactly. The existing compact silhouette stays the source of every foreground size.",
+					"zh": "头部、钩状鸟喙、眼罩、肩羽和画布全部原样保留，现有紧凑轮廓是所有透明尺寸的唯一来源。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Silver facets, dark mask",
+					"zh": "银灰碎片与深色眼罩"
+				},
+				"description": {
+					"en": "The silver crown, charcoal eye band, blue-grey beak, and warm shoulder facets are untouched. No new ornament or image-generation call is needed for this retained identity.",
+					"zh": "银灰头顶、炭黑眼带、蓝灰鸟喙与暖色肩羽均未修改。这次沿用既有形象，不增加装饰或调用生图。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Angular paper folds",
+					"zh": "棱角分明的纸面折翼"
+				},
+				"description": {
+					"en": "Oversized angular pleats enter a slate field from opposite corners. Narrow edge highlights and a low shadow give the grey bird separation without adding a scene.",
+					"zh": "大幅折翼纹从对角进入石板色底面，细边高光和轻浅阴影让灰色主体清晰浮现，保持图标简洁。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#718591",
+				"role": "background",
+				"label": {
+					"en": "Folded wings",
+					"zh": "展示底色"
+				},
+				"source": "Selected Shrike presentation, finishing 01; background.base in archived settings.json"
+			},
+			{
+				"color": "#a0a1a6",
+				"label": {
+					"en": "Slate grey",
+					"zh": "石板灰"
+				},
+				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1363, 324); palette.json",
+				"role": "primary"
+			},
+			{
+				"color": "#c4c7ce",
+				"label": {
+					"en": "Silver feather",
+					"zh": "银灰羽毛"
+				},
+				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1081, 284); palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#1a1a18",
+				"label": {
+					"en": "Eye mask",
+					"zh": "深色眼罩"
+				},
+				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1091, 636); palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#b7936f",
+				"label": {
+					"en": "Buff shoulder",
+					"zh": "浅褐肩羽"
+				},
+				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1197, 1367); palette.json",
+				"role": "accent"
+			},
+			{
+				"color": "#576475",
+				"label": {
+					"en": "Beak blue",
+					"zh": "鸟喙蓝灰"
+				},
+				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (322, 801); palette.json",
+				"role": "accent"
+			}
+		],
+		"sizeNote": {
+			"en": "The beak and dark eye band carry the mark at small sizes. Menu bar template icons keep their existing monochrome silhouette; app, toolbar, and browser derivatives retain their distinct roles.",
+			"zh": "小尺寸由鸟喙与深色眼带承担识别。菜单栏模板图保留现有单色轮廓；应用、工具栏与浏览器图标分别按各自用途处理。"
+		}
+	}
+}

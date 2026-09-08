@@ -2,11 +2,9 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import sharp from "sharp";
-import type { Project } from "../src/model/project";
+import { readProjects } from "../src/data/read-projects";
 
-const projects: Project[] = JSON.parse(
-	await readFile("src/data/projects.json", "utf8"),
-);
+const projects = readProjects();
 for (const project of projects) {
 	const original = await readFile(`public${project.logo.original}`);
 	if (

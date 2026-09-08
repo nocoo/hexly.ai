@@ -15,5 +15,9 @@
   Content-Type: application/json; charset=utf-8
   Cache-Control: no-store
 
+/data/projects.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate
+
 https://hexly-ai.nocoo.workers.dev/*
   X-Robots-Tag: noindex

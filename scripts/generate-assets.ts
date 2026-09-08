@@ -1,11 +1,9 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import sharp from "sharp";
-import type { Project } from "../src/model/project";
+import { readProjects, writeProjects } from "../src/data/read-projects";
 
-const projects: Project[] = JSON.parse(
-	await readFile("src/data/projects.json", "utf8"),
-);
+const projects = readProjects();
 await mkdir("public/logos/display", { recursive: true });
 for (const project of projects) {
 	const source = await readFile(`public${project.logo.original}`);
@@ -120,10 +118,7 @@ for (const project of projects) {
 		}
 	}
 }
-await writeFile(
-	"src/data/projects.json",
-	`${JSON.stringify(projects, null, "\t")}\n`,
-);
+writeProjects(projects);
 console.info(
 	`Built four preview sizes for ${projects.length} identities; original bytes preserved.`,
 );

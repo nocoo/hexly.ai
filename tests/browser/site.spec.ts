@@ -1,10 +1,9 @@
 import { expect, test } from "@playwright/test";
 import manifest from "../../package.json" with { type: "json" };
-import projects from "../../src/data/projects.json" with { type: "json" };
+import { readProjects } from "../../src/data/read-projects";
 import { filterProjects } from "../../src/model/catalogue";
-import type { Project } from "../../src/model/project";
 
-const catalogue = projects as Project[];
+const catalogue = readProjects();
 const active = catalogue.filter((project) => !project.archived);
 const archived = catalogue.filter((project) => project.archived);
 const ordered = filterProjects(catalogue, "", "all");
