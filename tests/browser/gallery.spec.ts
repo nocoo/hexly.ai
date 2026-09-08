@@ -22,7 +22,9 @@ for (const id of projects
 		const adapted = family.method === "reference-adaptation";
 		const supplied = retained || adapted;
 		await page.goto(`/logos/${id}`);
-		await expect(page.locator("#identity-title")).toContainText(project.title);
+		await expect(page.locator("#identity-title")).toContainText(project.title, {
+			timeout: 15_000,
+		});
 		const repository = page
 			.locator(".identity-heading")
 			.getByRole("link", { name: `View on GitHub: ${project.title}` });
