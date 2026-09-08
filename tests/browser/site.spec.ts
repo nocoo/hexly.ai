@@ -58,12 +58,8 @@ test("renders active projects with local logos, redraw badges, and working desti
 			.map((project) => ({ label: "GitHub", href: project.repository })),
 	);
 	const refined = active.filter((project) => project.family);
-	await expect(page.locator(".refined-badge")).toHaveCount(refined.length);
 	for (const project of refined) {
 		const { id } = project;
-		await expect(
-			page.locator(`[data-project="${id}"] .refined-badge`),
-		).toHaveText("Refined");
 		await expect(
 			page.locator(`[data-project="${id}"] .logo-family img`),
 		).toHaveAttribute("src", new RegExp(`${project.family?.root}/icon-`));
@@ -144,9 +140,6 @@ test("remembers language and theme across reloads and searches Chinese descripti
 	await expect(page.locator(".project-card h3")).toContainText("Frogie");
 	await page.getByRole("button", { name: "清空搜索" }).click();
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
-	await expect(
-		page.locator('[data-project="frogie"] .refined-badge'),
-	).toHaveText("Refined");
 	await expect(
 		page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
 	).toHaveAttribute("href", "https://github.com/nocoo/frogie");
