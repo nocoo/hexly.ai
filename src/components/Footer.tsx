@@ -23,6 +23,8 @@ export function Footer({
 							{t.copyright.replace("{year}", String(year))}
 							{" · "}
 							<span className="site-version">v{appVersion}</span>
+							{" · "}
+							<a href="/llms.txt">{t.llms}</a>
 						</p>
 					</div>
 					<SurfaceLinks locale={locale} footer onPortfolio={onHome} />

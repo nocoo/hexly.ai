@@ -19,7 +19,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 
 ## Project Invariants
 
-- Serve the Vite build through Workers Static Assets. There is no application server, database, authentication, or runtime GitHub dependency; `/api/live` is a static build artifact.
+- Serve the Vite build through Workers Static Assets. There is no application server, database, authentication, or runtime GitHub dependency; `/api/live` is a static build artifact. The Worker only redirects `www.hexly.ai` to the apex and otherwise serves those assets.
 - Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation state in both directory and gallery views.
 - Use `/logos/<project>` for identity routes and copied links. All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs on gallery pages.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
@@ -37,7 +37,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 |---|---|
 | Client | React 19, Vite 8, TypeScript 7 strict |
 | Toolchain | Bun 1.4.0, exact dependencies and frozen `bun.lock`; browser CI and deployment pin Node.js 26.7.0 |
-| Hosting | Cloudflare Worker `hexly-ai`, static assets only |
+| Hosting | Cloudflare Worker `hexly-ai`, static assets plus a www→apex redirect |
 | Quality | Biome; Vitest L1; Playwright HTTP L2 and Chromium L3; OSV + Gitleaks |
 
 ```text

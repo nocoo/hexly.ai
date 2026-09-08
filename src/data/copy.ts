@@ -157,6 +157,7 @@ export const copy = {
 		copyright: "© {year} Zheng Li. All rights reserved.",
 		location: "MADE IN BEIJING",
 		curiosity: "WEB · MOBILE · AI",
+		llms: "llms.txt",
 		top: "Back to top",
 	},
 	zh: {
@@ -288,6 +289,7 @@ export const copy = {
 		copyright: "© {year} Zheng Li. All rights reserved.",
 		location: "MADE IN BEIJING",
 		curiosity: "WEB · MOBILE · AI",
+		llms: "llms.txt",
 		top: "返回顶部",
 	},
 };
