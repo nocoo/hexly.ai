@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.0] - 2026-09-08
+
+### Features
+
+- add bilingual project goals and stack for README pilots ([63279af](https://github.com/nocoo/hexly.ai/commit/63279afc0321934ab8877ad9a1a5a93c115207d8))
+- add verified overviews for all active projects ([71a1d0b](https://github.com/nocoo/hexly.ai/commit/71a1d0bc0bf824376e24ad7a700ef893d6fc9d7e))
+
+### Documentation
+
+- record README pilot publication and verification ([48e51b2](https://github.com/nocoo/hexly.ai/commit/48e51b2fc260d114f733fc0581f2eeda80ad92b6))
+- retain browser popup validation evidence ([496cbd0](https://github.com/nocoo/hexly.ai/commit/496cbd0abb880baf85291882e00c84efee27ed60))
+- record approved README rollout and review process ([62f63a6](https://github.com/nocoo/hexly.ai/commit/62f63a675f66be0e0eed83f73e1095f039cb1fd9))
+
 ## [0.4.6] - 2026-09-08
 
 ### Fixes
