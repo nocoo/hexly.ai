@@ -8,10 +8,6 @@ const active = catalogue.filter((project) => !project.archived);
 const archived = catalogue.filter((project) => project.archived);
 const ordered = filterProjects(catalogue, "", "all");
 const firstVisible = ordered[0];
-const tiers = [
-	active.filter((project) => project.family),
-	active.filter((project) => !project.family),
-];
 
 test("renders active projects with local logos and working destinations", async ({
 	page,
@@ -128,13 +124,10 @@ test("combines search and categories, resets empty results, and sorts by name", 
 	await search.press("Escape");
 	await expect(search).toHaveValue("");
 	await page.getByLabel("Sort projects").selectOption("az");
-	const names = await page.locator(".project-card h3").allTextContents();
-	expect(names).toEqual(
-		tiers.flatMap((tier) =>
-			tier
-				.map((project) => project.title)
-				.toSorted((a, b) => a.localeCompare(b, "en")),
-		),
+	await expect(page.locator(".project-card h3")).toHaveText(
+		active
+			.map((project) => project.title)
+			.toSorted((a, b) => a.localeCompare(b, "en")),
 	);
 	await expect(page).toHaveURL(/sort=az/);
 });
