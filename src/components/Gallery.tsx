@@ -1,4 +1,10 @@
-import { type RefObject, useCallback, useEffect } from "react";
+import {
+	type RefObject,
+	useCallback,
+	useEffect,
+	useLayoutEffect,
+	useRef,
+} from "react";
 import { categoryLabels, copy } from "../data/copy";
 import {
 	categories,
@@ -34,6 +40,33 @@ export function Gallery({
 	const counts = categoryCounts(projects);
 	const foreground = project?.family?.foreground ?? project?.logo;
 	const selectedIndex = visible.findIndex((item) => item.id === project?.id);
+	const pickerRef = useRef<HTMLDivElement>(null);
+	useLayoutEffect(() => {
+		const picker = pickerRef.current;
+		if (!picker) return;
+		const items = picker.querySelectorAll<HTMLButtonElement>(".picker-item");
+		const current = items[selectedIndex];
+		const last = items[visible.length - 1];
+		if (!current || !last) return;
+
+		const alignCurrent = () => {
+			// Leave enough trailing space for even the final project to align left.
+			picker.style.setProperty(
+				"--picker-last-width",
+				`${last.getBoundingClientRect().width}px`,
+			);
+			const inset = Number.parseFloat(getComputedStyle(picker).paddingLeft);
+			picker.scrollTo({
+				left: current.offsetLeft - inset,
+				behavior: "instant",
+			});
+		};
+		alignCurrent();
+		const observer = new ResizeObserver(alignCurrent);
+		observer.observe(picker);
+		for (const item of items) observer.observe(item);
+		return () => observer.disconnect();
+	}, [selectedIndex, visible]);
 	const move = useCallback(
 		(offset: number) => {
 			if (visible.length < 2) return;
@@ -111,7 +144,7 @@ export function Gallery({
 						/>
 					</div>
 				</div>
-				<div className="project-picker">
+				<div className="project-picker" ref={pickerRef}>
 					{visible.map((item) => (
 						<button
 							type="button"

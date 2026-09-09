@@ -20,14 +20,28 @@ export function Footer({
 					<div className="site-footer-identity">
 						<FamilyBrand locale={locale} />
 						<p lang="en">
-							{t.copyright.replace("{year}", String(year))}
-							{" · "}
-							<span className="site-version">v{appVersion}</span>
-							{" · "}
-							<a href="/llms.txt">{t.llms}</a>
+							<span className="footer-copyright-full">
+								{t.copyright.replace("{year}", String(year))}
+							</span>
+							<span className="footer-copyright-short">
+								{t.copyrightShort.replace("{year}", String(year))}
+							</span>
+							<span className="footer-meta">
+								{" · "}
+								<span className="site-version">v{appVersion}</span>
+								{" · "}
+								<a href="/llms.txt">{t.llms}</a>
+							</span>
 						</p>
 					</div>
 					<SurfaceLinks locale={locale} footer onPortfolio={onHome} />
+					<a
+						className="footer-mobile-top"
+						href="#main-content"
+						aria-label={t.top}
+					>
+						<span aria-hidden="true">↑</span>
+					</a>
 				</div>
 			</div>
 			<div className="site-footer-bottom">
