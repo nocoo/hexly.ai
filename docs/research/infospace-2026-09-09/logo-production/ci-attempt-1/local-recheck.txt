@@ -1,0 +1,11 @@
+
+Running 2 tests using 2 workers
+
+(node:78238) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:78239) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › tests/browser/site.spec.ts:243:1 › keeps repository clicks separate and supports card links in another tab (623ms)
+  ✓  1 [mobile] › tests/browser/site.spec.ts:243:1 › keeps repository clicks separate and supports card links in another tab (758ms)
+
+  2 passed (1.9s)
