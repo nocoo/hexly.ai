@@ -1,0 +1,91 @@
+{
+	"project": "showtime",
+	"date": "2026-09-10",
+	"sourceMode": "isolated-white",
+	"series": "material",
+	"repositoryState": "unborn",
+	"repositoryRevision": null,
+	"remoteNames": ["origin"],
+	"sources": [
+		{
+			"path": "README.md",
+			"snapshot": "input/README.md",
+			"bytes": 680,
+			"sha256": "84430544e07c57d92345979d33608b151245b36f295519c8ecca9f72456fa8c4"
+		},
+		{
+			"path": "Package.swift",
+			"snapshot": "input/Package.swift",
+			"bytes": 1053,
+			"sha256": "09554b6a327eba0ff53b9833ba1c557750dfe57d13f70cb8e7a178d36114751a"
+		},
+		{
+			"path": "Sources/Showtime/App/StudioView.swift",
+			"snapshot": "input/Sources/Showtime/App/StudioView.swift",
+			"bytes": 15517,
+			"sha256": "b6ba8293bdaa1efe13623e65e0d6c11d0ef77fc06a2f1dfdcdc422a583e38c54"
+		},
+		{
+			"path": "Sources/Showtime/App/StudioModel.swift",
+			"snapshot": "input/Sources/Showtime/App/StudioModel.swift",
+			"bytes": 16773,
+			"sha256": "20003f58d9b7806d6456c749f8e3dfa5a84fe8824a4bc78f925f4719776a9574"
+		},
+		{
+			"path": "Sources/Showtime/Recording/MovieRecorder.swift",
+			"snapshot": "input/Sources/Showtime/Recording/MovieRecorder.swift",
+			"bytes": 9943,
+			"sha256": "6eab1a5f7b2c94de8d62345327fb01c34e0b8d4831fdb29ad60cc80c7e4098b9"
+		},
+		{
+			"path": "Sources/ShowtimeCore/Script.swift",
+			"snapshot": "input/Sources/ShowtimeCore/Script.swift",
+			"bytes": 13434,
+			"sha256": "f0effb832ba267d76dae2adb996a13a7e5afc18d6644ccf37a1a6675f52e635f"
+		},
+		{
+			"path": "scripts/build.sh",
+			"snapshot": "input/scripts/build.sh",
+			"bytes": 1678,
+			"sha256": "76f085e449fa344363e5edb9f5c83e09ced6d56e90b087a8af6b028fa04239af"
+		},
+		{
+			"path": "scripts/make_icon.swift",
+			"snapshot": "input/scripts/make_icon.swift",
+			"bytes": 3467,
+			"sha256": "760621ce37e411433c60efed3d4a863f6e11b523e74053ddc152723b482dd646"
+		},
+		{
+			"path": "scripts/Info.plist",
+			"snapshot": "input/scripts/Info.plist",
+			"bytes": 1153,
+			"sha256": "24b9df914d0ea4e016fad916e91cdc295a90b8b34dbe57162cc9d19e96fc0a2f"
+		}
+	],
+	"previousArtwork": {
+		"path": ".build/Showtime.iconset/icon_512x512@2x.png",
+		"snapshot": "input/previous-app-icon.png",
+		"sha256": "8fe319552849e04934273d30a10b9bc1fc68ae94bb08182b5d372511e12feef9"
+	},
+	"orderedReferences": [
+		{
+			"index": 1,
+			"path": "artwork/logo-family/signoff-now/2026-09-07-01/raw/generated.png",
+			"role": "Material and lighting reference only; no subject or palette transfer.",
+			"sha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c",
+			"bytes": 3134824
+		},
+		{
+			"index": 2,
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"role": "Framing and tactile presentation hierarchy only; no animal or background transfer.",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683
+		}
+	],
+	"brandDirection": {
+		"primary": "#61BB46",
+		"basis": "Owner requested a green inspired by the upper stripe of the classic rainbow Apple logo; agent-selected sRGB design anchor."
+	},
+	"publication": "Deferred by owner; no source/profile revision is invented."
+}

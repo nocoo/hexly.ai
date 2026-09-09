@@ -6,6 +6,20 @@ import { readProjects } from "../src/data/read-projects";
 
 const projects = readProjects();
 for (const project of projects) {
+	const snapshot = project.overview?.verified.snapshot;
+	if (snapshot) {
+		const evidence = await readFile(snapshot.path);
+		if (createHash("sha256").update(evidence).digest("hex") !== snapshot.sha256)
+			throw new Error(`Local source snapshot changed: ${project.id}`);
+		const source = JSON.parse(evidence.toString()) as {
+			files: { archive: string; sha256: string }[];
+		};
+		for (const file of source.files) {
+			const bytes = await readFile(file.archive);
+			if (createHash("sha256").update(bytes).digest("hex") !== file.sha256)
+				throw new Error(`Archived local source changed: ${file.archive}`);
+		}
+	}
 	const original = await readFile(`public${project.logo.original}`);
 	if (
 		createHash("sha256").update(original).digest("hex") !== project.logo.sha256

@@ -17,6 +17,8 @@ const index = [
 	"| --- | --- | --- | --- |",
 ];
 for (const project of projects) {
+	const sourceLink = (url: string) =>
+		url.startsWith("/logos/") ? `../../public${url}` : url;
 	const name =
 		existingProfiles.find((name) => name.endsWith(`-${project.id}.md`)) ??
 		`${String(++nextProfileNumber).padStart(2, "0")}-${project.id}.md`;
@@ -48,7 +50,7 @@ ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en
 - [Transparent foreground](../../public${family.foreground.original}); SHA-256: \`${family.foreground.sha256}\`
 - [Square icon](../../public${family.root}/icon.png), [rounded icon](../../public${family.root}/rounded.png), [white version](../../public${family.root}/white.png)
 - [${adapted ? "Original illustration" : retained ? "Untouched original" : "Untouched generation"}](../../public${family.root}/${sourceFile}), [${supplied ? "presentation brief" : "exact prompt"}](../../public${family.root}/${supplied ? "brief" : "prompt"}.txt), [public asset checksums](../../public${family.root}/manifest.json)
-- [Previous original](../../public${family.previous.original}), copied from [its immutable source](${family.previous.sourceUrl})
+- [Previous original](../../public${family.previous.original}), copied from [${family.previous.sourceUrl.startsWith("/") ? "its preserved local source" : "its immutable source"}](${sourceLink(family.previous.sourceUrl)})
 - Previous SHA-256: \`${family.previous.sha256}\`
 - ${adapted ? `The owner-supplied illustration is extracted and uniformly reframed at native ${family.foreground.width} × ${family.foreground.height}. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.` : retained ? `Original artwork retained byte-for-byte at native ${family.foreground.width} × ${family.foreground.height}. Zero image-generation calls; only background, grain, and shadow layers were composed.` : `Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.`}
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.${supplied && family.foreground.width < 2048 ? ` Sizes above ${family.foreground.width} px are explicitly recorded upscales; the native master retains its recorded resolution.` : ""}
@@ -70,6 +72,17 @@ Small-size observation: ${family.sizeNote.en}
 		.map((color) => `| ${color.role} | \`${color.color}\` | ${color.source} |`)
 		.join("\n");
 	const overview = project.overview;
+	const snapshot = overview?.verified.snapshot;
+	const overviewEvidence = overview?.verified.revision
+		? `- [中文 README](${project.repository}/blob/main/README.md) · [English README](${project.repository}/blob/main/docs/README.en.md)
+- Verified: ${overview.verified.date}; [source revision](${project.repository}/tree/${overview.verified.revision})
+- Source files: ${overview.verified.sources.map((path) => `[\`${path}\`](${project.repository}/blob/${overview.verified.revision}/${path})`).join(", ")}`
+		: overview && snapshot
+			? `- Verified: ${overview.verified.date}; [preserved local source snapshot](../../${snapshot.path})
+- Snapshot SHA-256: \`${snapshot.sha256}\`
+- Source files: ${overview.verified.sources.map((path) => `\`${path}\``).join(", ")}
+- The source repository has no inspected commit yet. README publication and immutable repository links are deferred.`
+			: "";
 	const overviewSection = overview
 		? `## Project goal
 
@@ -77,9 +90,7 @@ ${overview.goal.en}
 
 ${overview.goal.zh}
 
-- [中文 README](${project.repository}/blob/main/README.md) · [English README](${project.repository}/blob/main/docs/README.en.md)
-- Verified: ${overview.verified.date}; [source revision](${project.repository}/tree/${overview.verified.revision})
-- Source files: ${overview.verified.sources.map((path) => `[\`${path}\`](${project.repository}/blob/${overview.verified.revision}/${path})`).join(", ")}
+${overviewEvidence}
 
 ### Tech stack
 
@@ -97,12 +108,12 @@ ${overview.techStack.map((technology) => `| ${technology.name} | ${technology.ro
 - Website: ${project.website ? `[${project.website}](${project.website})` : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
-- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})
 - English: ${project.description.en}
 - Chinese: ${project.description.zh}
 - Profile section: ${project.source.profileSection}
 - Profile revision: \`${project.source.profileRevision}\`
-- Repository revision inspected: \`${project.source.repositoryRevision}\`
+- Repository revision inspected: ${project.source.repositoryRevision ? `\`${project.source.repositoryRevision}\`` : "Initial source commit pending; see the local snapshot above"}
 
 ${overviewSection}## Current logo
 
@@ -110,7 +121,7 @@ ${overviewSection}## Current logo
 
 - Type: ${project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
-- [Source](${project.logo.sourceUrl}): \`${project.logo.sourcePath}\`
+- [Source](${sourceLink(project.logo.sourceUrl)}): \`${project.logo.sourcePath}\`
 - [Preserved asset](../../public${project.logo.original})
 - Original dimensions: ${project.logo.width} × ${project.logo.height}
 - Original size: ${project.logo.bytes} bytes
@@ -130,7 +141,7 @@ ${familySection}## ${family ? "Further refinements" : "Future family notes"}
 
 ${material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : toolWithoutStudy ? "Keep the current source mark and its provenance. For a future study, choose a recognizable physical object from the tool's actual function and follow the owner's material and composition direction. An animal or fragmented drawing is not required." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-${material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}
+${material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : snapshot ? " This entry uses the preserved local application artwork; any new study follows its own recorded review decision." : " No new logo is generated in phase one."}
 `;
 	await writeFile(`docs/profiles/${name}`, content);
 }

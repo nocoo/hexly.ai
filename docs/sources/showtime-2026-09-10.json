@@ -1,0 +1,96 @@
+{
+	"project": "showtime",
+	"capturedAt": "2026-09-09T23:01:08.246225+00:00",
+	"repository": {
+		"url": "https://github.com/nocoo/showtime",
+		"public": true,
+		"emptyAtRemoteInspection": true,
+		"revisionAtLocalCapture": null,
+		"verification": "gh repo view nocoo/showtime --json name,isEmpty,isPrivate,url,description"
+	},
+	"profile": {
+		"revision": "73203ef18b98ccf7cf03be7ef0ebf327bb8a743d",
+		"publication": "local commit; not pushed",
+		"snapshot": "docs/sources/nocoo-readme-2026-09-10-showtime.md",
+		"sha256": "0b24bce7b119449a0f7d1682b9c439e66bd4837e83317ae0967d110fd15b749b"
+	},
+	"files": [
+		{
+			"path": "README.md",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/README.md",
+			"bytes": 784,
+			"sha256": "19c725e67aeb7c8eed088cee1956839b82694a57be651d78f67002ede2a5fd75"
+		},
+		{
+			"path": "Package.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Package.swift",
+			"bytes": 1053,
+			"sha256": "09554b6a327eba0ff53b9833ba1c557750dfe57d13f70cb8e7a178d36114751a"
+		},
+		{
+			"path": "Sources/Showtime/App/StudioView.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Sources/Showtime/App/StudioView.swift",
+			"bytes": 16164,
+			"sha256": "6500800207e84bc63b5b72177a263157d0ac0346ff92982a655c3648001e5e5c"
+		},
+		{
+			"path": "Sources/Showtime/App/StudioModel.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Sources/Showtime/App/StudioModel.swift",
+			"bytes": 16779,
+			"sha256": "cc7024c2b0242ae9735650c65779684114187fd343eca42858fd9c3402fe503f"
+		},
+		{
+			"path": "Sources/Showtime/Browser/BrowserEngine.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Sources/Showtime/Browser/BrowserEngine.swift",
+			"bytes": 16896,
+			"sha256": "d54d9a7b6032f23c295c15b41178db6d6d00ce4aafe94de2189b096e8f091ad9"
+		},
+		{
+			"path": "Sources/Showtime/Director/Director.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Sources/Showtime/Director/Director.swift",
+			"bytes": 15506,
+			"sha256": "4a8ff60fea50ad4baaf6cd236f8210c1651116e567d9dc24ee21bdadce13837a"
+		},
+		{
+			"path": "Sources/Showtime/Recording/MovieRecorder.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Sources/Showtime/Recording/MovieRecorder.swift",
+			"bytes": 9943,
+			"sha256": "6eab1a5f7b2c94de8d62345327fb01c34e0b8d4831fdb29ad60cc80c7e4098b9"
+		},
+		{
+			"path": "Sources/ShowtimeCore/Script.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/Sources/ShowtimeCore/Script.swift",
+			"bytes": 13434,
+			"sha256": "f0effb832ba267d76dae2adb996a13a7e5afc18d6644ccf37a1a6675f52e635f"
+		},
+		{
+			"path": "scripts/showtime_cli.py",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/scripts/showtime_cli.py",
+			"bytes": 5887,
+			"sha256": "577d49455e3cede77058b304eb25aafe0f6ff7f442f7ba7692996c6febda087b"
+		},
+		{
+			"path": "scripts/showtime_mcp.py",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/scripts/showtime_mcp.py",
+			"bytes": 9078,
+			"sha256": "61689b044fda379bf2414ab74c9c1fedcdc3b87a776a6f7ea6bedab609b41336"
+		},
+		{
+			"path": "scripts/make_icon.swift",
+			"archive": "artwork/logo-family/showtime/2026-09-10-01/input/catalogue/scripts/make_icon.swift",
+			"bytes": 3540,
+			"sha256": "60ecfae5725be70fd97c298ecaf81e307aa4c3c97d283293578dd61d91d6b987"
+		}
+	],
+	"theme": {
+		"primary": "#4a8234",
+		"background": "#f6f8f4",
+		"ink": "#253126",
+		"source": "Sources/Showtime/App/StudioView.swift: Theme; independently updated during onboarding and preserved here"
+	},
+	"requestedArtworkGreen": {
+		"value": "#61bb46",
+		"source": "Owner requested green inspired by the top stripe of the classic rainbow Apple logo; agent-selected design anchor"
+	},
+	"scope": "Prepare the icon and storefront locally. Showtime README work and publication remain deferred."
+}

@@ -27,11 +27,11 @@ const overview: ProjectOverview = {
 
 describe("the imported project catalogue", () => {
 	it("includes the listed projects with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(70);
+		expect(projects).toHaveLength(71);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(56);
+		).toHaveLength(57);
 	});
 	it("provides a verified goal and stack for every active project", () => {
 		expect(
@@ -72,7 +72,7 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(50);
+		expect(counts.all).toBe(51);
 		expect(counts.archive).toBe(20);
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);
@@ -92,6 +92,23 @@ describe("the imported project catalogue", () => {
 		expect(selectedProject(projects, "pew")?.title).toBe("Pew");
 		expect(selectedProject(projects, "missing")).toBe(projects[0]);
 		expect(selectedProject([], "missing")).toBeNull();
+	});
+	it("places Showtime first in Tools while preserving the other curated positions", () => {
+		const tools = filterProjects(projects, "", "tools");
+		expect(tools[0]?.id).toBe("showtime");
+		expect(tools.slice(1)).toEqual(
+			filterProjects(
+				projects.filter((project) => project.id !== "showtime"),
+				"",
+				"tools",
+			),
+		);
+		const all = filterProjects(projects, "");
+		const showtimeIndex = all.findIndex((project) => project.id === "showtime");
+		expect(all[showtimeIndex + 1]?.id).toBe("infospace");
+		expect(filterProjects(projects, "", "tools", "az")).toEqual(
+			tools.toSorted((a, b) => a.title.localeCompare(b.title, "en")),
+		);
 	});
 	it("uses evidenced website links and falls back to repository links", () => {
 		expect(destination(frogie)).toBe("https://github.com/nocoo/frogie");
@@ -139,6 +156,34 @@ describe("the imported project catalogue", () => {
 		const reviewed = { ...frogie, overview };
 		expect(parseCatalogue([reviewed])).toEqual([reviewed]);
 		expect(catalogueProblems([{ ...frogie, overview: undefined }])).toEqual([]);
+	});
+	it("accepts an unpublished project only with a checksummed local snapshot", () => {
+		const verified = {
+			...overview.verified,
+			revision: null,
+			snapshot: {
+				path: "docs/sources/showtime-2026-09-10.json",
+				sha256: "b".repeat(64),
+			},
+		};
+		expect(
+			catalogueProblems([{ ...frogie, overview: { ...overview, verified } }]),
+		).toEqual([]);
+		for (const snapshot of [
+			undefined,
+			{ ...verified.snapshot, sha256: "missing" },
+			{ ...verified.snapshot, path: "../private.json" },
+			{ ...verified.snapshot, path: "https://example.com/source.json" },
+		]) {
+			expect(() =>
+				parseCatalogue([
+					{
+						...frogie,
+						overview: { ...overview, verified: { ...verified, snapshot } },
+					},
+				]),
+			).toThrow("Invalid overview evidence: frogie");
+		}
 	});
 	it.each([
 		null,

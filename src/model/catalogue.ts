@@ -14,6 +14,7 @@ const curatedOrder = new Map<string, number>(
 		...projectOrder.games,
 	].map((id, position) => [id, position]),
 );
+const featuredTools = new Set(projectOrder.featuredTools);
 
 export const categories: Category[] = [
 	"all",
@@ -61,8 +62,11 @@ export function filterProjects(
 	return result.toSorted((a, b) =>
 		sort === "az"
 			? a.title.localeCompare(b.title, "en")
-			: (curatedOrder.get(a.id) ?? curatedOrder.size) -
-				(curatedOrder.get(b.id) ?? curatedOrder.size),
+			: (category === "tools"
+					? Number(featuredTools.has(b.id)) - Number(featuredTools.has(a.id))
+					: 0) ||
+				(curatedOrder.get(a.id) ?? curatedOrder.size) -
+					(curatedOrder.get(b.id) ?? curatedOrder.size),
 	);
 }
 
@@ -150,9 +154,16 @@ export function catalogueProblems(projects: Project[]): string[] {
 			)
 				problems.push(`Incomplete project overview: ${project.id}`);
 			const verified = overview?.verified;
+			const localSnapshot = verified?.snapshot;
+			const validRevision =
+				verified?.revision === null
+					? /^docs\/sources\/[a-z0-9-]+\.json$/.test(
+							localSnapshot?.path ?? "",
+						) && /^[a-f0-9]{64}$/.test(localSnapshot?.sha256 ?? "")
+					: /^[a-f0-9]{40}$/.test(verified?.revision ?? "");
 			if (
 				!/^\d{4}-\d{2}-\d{2}$/.test(verified?.date ?? "") ||
-				!/^[a-f0-9]{40}$/.test(verified?.revision ?? "") ||
+				!validRevision ||
 				!Array.isArray(verified?.sources) ||
 				verified.sources.length === 0 ||
 				verified.sources.some(

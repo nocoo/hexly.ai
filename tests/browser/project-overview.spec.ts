@@ -4,6 +4,39 @@ import { readProjects } from "../../src/data/read-projects";
 
 const projects = readProjects();
 
+test("unpublished projects keep their overview without unavailable README links", async ({
+	page,
+}) => {
+	const frogie = projects.find((project) => project.id === "frogie");
+	if (!frogie?.overview) throw new Error("Missing overview: frogie");
+	const pending = {
+		...frogie,
+		overview: {
+			...frogie.overview,
+			verified: {
+				...frogie.overview.verified,
+				revision: null,
+				snapshot: {
+					path: "docs/sources/pending-project.json",
+					sha256: "a".repeat(64),
+				},
+			},
+		},
+	};
+	await page.route("**/data/projects.json", (route) =>
+		route.fulfill({ json: [pending] }),
+	);
+	await page.goto("/logos/frogie");
+	for (const locale of ["en", "zh"] as const) {
+		if (locale === "zh")
+			await page.getByRole("button", { name: "Switch to Chinese" }).click();
+		await expect(
+			page.locator(".project-overview .project-goal > p"),
+		).toHaveText(pending.overview.goal[locale]);
+		await expect(page.locator(".project-readme")).toHaveCount(0);
+	}
+});
+
 for (const theme of ["light", "dark"] as const) {
 	test.describe(`${theme} project overview`, () => {
 		test.use({ colorScheme: theme });

@@ -12,7 +12,8 @@
 10. [Social share metadata for product sites](10-social-share.md)
 11. [README refresh and project research](11-readme-refresh.md)
 12. [InfoSpace onboarding and logo study](12-infospace-onboarding.md)
-13. [Project profiles](profiles/README.md)
-14. [Source snapshots](sources/README.md)
+13. [Showtime onboarding and icon preparation](13-showtime-onboarding.md)
+14. [Project profiles](profiles/README.md)
+15. [Source snapshots](sources/README.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
