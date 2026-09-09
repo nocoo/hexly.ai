@@ -18,6 +18,7 @@
 
 - check alphabetical order across all active projects ([6813c9d](https://github.com/nocoo/hexly.ai/commit/6813c9d1e30fd649f05d08ee294e1441544ec0a5))
 - stabilize card popup transitions ([99dae88](https://github.com/nocoo/hexly.ai/commit/99dae881ce81c137afad73605ce8892762487d64))
+- await locale fonts before measuring gallery layout ([903bdd3](https://github.com/nocoo/hexly.ai/commit/903bdd37cfe63abe86edf3224c77e16fb7f1b02a))
 
 ### Documentation
 
