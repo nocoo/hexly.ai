@@ -94,6 +94,14 @@ After route confirmation, generate one native source and immediately show its un
 
 No repository version change is part of this addition. The hexly.ai `v0.5.0` release tag predates InfoSpace; this catalogue addition follows the normal `main` publication path without a new release tag.
 
+## Publication dependency repair
+
+The first push of the catalogue commit `df9b86012d43076f9a461ee8ac92ef050ca36155` was stopped by the required security gate. All 61 HTTP checks passed, but OSV found [GHSA-rgj7-g3m4-5g8c](https://osv.dev/GHSA-rgj7-g3m4-5g8c), published on 2026-09-08. The site remained at its previous remote and production revision during this failure.
+
+The root development dependency was already Sharp 0.35.4. The vulnerable copy came from `wrangler@4.129.0 → miniflare@5.20260903.0-alpha → sharp@0.35.2`. An exact root override now makes the whole graph use 0.35.4, and Bun regenerated the lockfile without the old Sharp package and its native binaries. The existing Wrangler patch and all gate commands remain unchanged.
+
+An ordinary install left the obsolete nested package in the local generated installation directory. That one unreferenced package was moved to a temporary backup, and a frozen install then verified the final graph. Both root and Miniflare resolution now point to Sharp 0.35.4 with libvips 8.18.6 and libheif 1.23.2. A native PNG conversion passed. TypeScript, full lint, isolation, OSV (210 locked packages, no issues) and Gitleaks also passed before retrying publication.
+
 ## Delivery progress
 
 - The README revision is published in `nocoo/infospace` at `86efacf28592243b9c7e12a2837d975eb190521f`; [its CI passed](https://github.com/nocoo/infospace/actions/runs/34299084163). The code and version remain at the inspected baseline.
@@ -101,4 +109,4 @@ No repository version change is part of this addition. The hexly.ai `v0.5.0` rel
 - The local site catalogue contains InfoSpace with its preserved source SVG, goal and seven stack badges. Asset generation, profile generation, TypeScript, full lint and all 92 existing unit tests passed.
 - Asset verification passed for all 70 source checksums, 420 derivatives, 54 historical public archives and 92 finishing passes. No unrelated artwork or project profile changed.
 - The [local browser review](research/infospace-2026-09-09/browser/report.json) passed all eight desktop/mobile, light/dark and English/Chinese overview combinations. It checked all seven badge labels and translated roles, both README links, zero horizontal overflow, the actual 50-card order, tools filtering, navigation and refresh. Root inspected the desktop English and 320 px dark Chinese captures. No browser page errors occurred.
-- The resulting site commit proceeds through the required pre-push HTTP/security checks and CI deployment before any claim of publication. The proposed new physical-object image remains ungenerated while the execution-route question is pending.
+- The catalogue commit and dependency repair proceed through the required pre-push HTTP/security checks and CI deployment before any claim of publication. The proposed new physical-object image remains ungenerated while the execution-route question is pending.

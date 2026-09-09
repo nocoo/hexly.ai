@@ -43,6 +43,8 @@ The browser job records its Node.js version and writes sanitized Wrangler diagno
 
 The [versioned Wrangler patch](../patches/README.md) prevents an abandoned client request from terminating the whole local server. L2 exercises this boundary with truncated upload connections and subsequent health requests. Failed forwards still return an error response, and all normal HTTP and browser assertions remain active.
 
+The root `sharp: 0.35.4` override also applies the image-decoder security fix to Miniflare. Wrangler 4.129.0 depends on Miniflare 5.20260903.0-alpha, which otherwise installs its own vulnerable Sharp 0.35.2 despite the root development dependency already being fixed. The override removes that second copy and its older native binaries from the lockfile; it does not suppress [GHSA-rgj7-g3m4-5g8c](https://osv.dev/GHSA-rgj7-g3m4-5g8c). Remove the override when the pinned upstream chain selects a fixed version on its own, then verify the regenerated lockfile, runtime resolution, HTTP/browser checks and OSV scan.
+
 ## Completion evidence
 
 Verified locally on 2026-09-06 with Bun 1.4.0 and Node.js 26.7.0.
