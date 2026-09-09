@@ -1,0 +1,301 @@
+{
+  "id": "infospace",
+  "repo": "infospace",
+  "title": "Info Space",
+  "emoji": "🗂️",
+  "description": {
+    "en": "Native SwiftUI workspace SDK with resizable grids and customizable information panels",
+    "zh": "原生 SwiftUI 工作区 SDK，支持可调整的网格和自定义信息面板"
+  },
+  "category": "tools",
+  "website": null,
+  "websiteSource": null,
+  "repository": "https://github.com/nocoo/infospace",
+  "subject": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+  "reference": false,
+  "logo": {
+    "kind": "original",
+    "original": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+    "sourcePath": "logo.png",
+    "sourceUrl": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+    "modified": false,
+    "width": 2048,
+    "height": 2048,
+    "bytes": 4365206,
+    "sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+    "thumbnail": "/logos/display/infospace-160.webp",
+    "display": "/logos/display/infospace-1024.webp"
+  },
+  "theme": {
+    "background": {
+      "value": "#13161c",
+      "source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.background, sRGB (0.075, 0.085, 0.11)"
+    },
+    "ink": {
+      "value": "#ffffff",
+      "source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.foreground"
+    },
+    "primary": {
+      "value": "#ffffff",
+      "source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.accent; selected by App/WorkspaceView.swift"
+    }
+  },
+  "source": {
+    "profileRevision": "e3e92cf41ced9400940b18904f1c97453f3b5903",
+    "profileSection": "Recent Projects",
+    "description": "Native SwiftUI workspace SDK with resizable grids and customizable information panels",
+    "repositoryRevision": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf"
+  },
+  "colors": {
+    "primary": "#ffffff",
+    "background": "#13161c",
+    "ink": "#ffffff",
+    "palette": [
+      {
+        "color": "#ffffff",
+        "role": "primary",
+        "source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.accent = .white"
+      },
+      {
+        "color": "#13161c",
+        "role": "background",
+        "source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.background, sRGB (0.075, 0.085, 0.11), rounded to 8-bit channels"
+      },
+      {
+        "color": "#373e55",
+        "role": "accent",
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1040, 1540); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#c1b6b1",
+        "role": "accent",
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1265, 810); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#5f6da3",
+        "role": "accent",
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (700, 700); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#689088",
+        "role": "accent",
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1420, 650); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#d8815c",
+        "role": "accent",
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (760, 1050); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#9d7ca8",
+        "role": "accent",
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1450, 1100); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      }
+    ]
+  },
+  "archived": false,
+  "overview": {
+    "goal": {
+      "en": "Give macOS app developers a reusable SwiftUI workspace for arranging their own content in resizable panels. The SDK handles grid geometry, snapping and panel identity; the included demo shows the interactions with sample content kept only for the current session.",
+      "zh": "为 macOS 应用开发者提供可复用的 SwiftUI 工作区，把自己的内容放进可调整大小的面板。SDK 处理网格几何、吸附与面板身份；附带演示应用展示这些交互，示例内容仅在本次运行中保留。"
+    },
+    "techStack": [
+      {
+        "name": "Swift",
+        "role": {
+          "en": "SDK and demo implementation with strict concurrency",
+          "zh": "SDK 与演示应用，启用严格并发检查"
+        }
+      },
+      {
+        "name": "SwiftUI",
+        "role": {
+          "en": "Reusable canvas, panels and workspace controls",
+          "zh": "可复用画布、面板与工作区控件"
+        }
+      },
+      {
+        "name": "AppKit",
+        "role": {
+          "en": "Native macOS window integration",
+          "zh": "macOS 原生窗口集成"
+        }
+      },
+      {
+        "name": "Observation",
+        "role": {
+          "en": "Observable layout and panel state",
+          "zh": "可观察的布局与面板状态"
+        }
+      },
+      {
+        "name": "Swift Package Manager",
+        "role": {
+          "en": "Core/UI libraries and compiled SDK examples",
+          "zh": "Core/UI 库与 SDK 示例编译"
+        }
+      },
+      {
+        "name": "XcodeGen",
+        "role": {
+          "en": "Generate the native demo app project",
+          "zh": "生成原生演示应用工程"
+        }
+      },
+      {
+        "name": "Swift Testing",
+        "role": {
+          "en": "Layout, identity and geometry tests",
+          "zh": "布局、身份与几何测试"
+        }
+      }
+    ],
+    "verified": {
+      "date": "2026-09-09",
+      "revision": "0d25de0f63e20979fd81c1c295e5bc84132efb3a",
+      "sources": [
+        "Package.swift",
+        "project.yml",
+        "Sources/InfoSpaceCore/InfoSpaceModel.swift",
+        "Sources/InfoSpaceUI/InfoSpaceCanvas.swift",
+        "Sources/InfoSpaceUI/InfoSpaceWindow.swift",
+        "Sources/InfoSpaceUI/NativeWindowAttachment.swift",
+        "Sources/InfoSpaceUI/InfoSpaceWorkspace.swift",
+        "App/DemoPanelContent.swift",
+        "scripts/check.sh"
+      ]
+    }
+  },
+  "family": {
+    "id": "2026-09-09-01",
+    "series": "material",
+    "finishing": "01",
+    "root": "/logos/family/infospace/2026-09-09-01/01",
+    "archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/infospace/2026-09-09-01",
+    "status": "adopted",
+    "updated": "2026-09-09",
+    "foreground": {
+      "subject": {
+        "en": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+        "zh": "带可调隔板与四色纸卡的靛蓝金属信息托盘"
+      },
+      "original": "/logos/family/infospace/2026-09-09-01/01/transparent.png",
+      "display": "/logos/family/infospace/2026-09-09-01/01/transparent-1024.webp",
+      "width": 2048,
+      "height": 2048,
+      "sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772"
+    },
+    "previous": {
+      "original": "/logos/originals/infospace.svg",
+      "sourceUrl": "https://github.com/nocoo/infospace/blob/0d25de0f63e20979fd81c1c295e5bc84132efb3a/logo.svg",
+      "width": 128,
+      "height": 128,
+      "sha256": "7540789c41a74c8553af6fe38b23aa3784753259038ff93dc8e7797f17582d03"
+    },
+    "direction": [
+      {
+        "aspect": "composition",
+        "title": {
+          "en": "Adjustable compartments",
+          "zh": "可调整的分区"
+        },
+        "description": {
+          "en": "One sliding divider separates four unequal bays. The larger terracotta paper stack shows how space can be allocated while the complete tray remains one compact object.",
+          "zh": "滑动隔板分出四个大小不同的区域，较大的陶土色纸卡区体现空间分配，完整托盘形成紧凑的整体。"
+        }
+      },
+      {
+        "aspect": "drawing",
+        "title": {
+          "en": "Metal and paper",
+          "zh": "金属与纸卡"
+        },
+        "description": {
+          "en": "An indigo anodized frame, brushed-metal fittings and matte paper stacks make the adjustable workspace tangible. Continuous material shading preserves the frame, reflections and paper edges.",
+          "zh": "靛蓝阳极氧化边框、拉丝金属配件与哑光纸卡，把可调整的工作区转化为实物。连续的材质明暗保留边框、反光和纸张边缘。"
+        }
+      },
+      {
+        "aspect": "presentation",
+        "title": {
+          "en": "Adjustable spaces",
+          "zh": "可调分区"
+        },
+        "description": {
+          "en": "Offset panel outlines and short alignment ticks sit on cool indigo-gray paper. The field, grain and projected shadows are separate layers, so the small application mark stays transparent.",
+          "zh": "冷靛灰纸面上排列错位的面板轮廓和短对齐刻线。底色、颗粒与投影独立保存，小尺寸应用标记使用透明图。"
+        }
+      }
+    ],
+    "palette": [
+      {
+        "color": "#c6cddd",
+        "role": "background",
+        "label": {
+          "en": "Adjustable spaces",
+          "zh": "可调分区"
+        },
+        "source": "Selected InfoSpace presentation, 2026-09-09-01/01; background.base in archived settings.json"
+      },
+      {
+        "color": "#373e55",
+        "role": "primary",
+        "label": {
+          "en": "Indigo metal",
+          "zh": "靛蓝金属"
+        },
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1040, 1540); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#c1b6b1",
+        "role": "accent",
+        "label": {
+          "en": "Brushed nickel",
+          "zh": "拉丝镍色"
+        },
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1265, 810); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#5f6da3",
+        "role": "accent",
+        "label": {
+          "en": "Indigo card",
+          "zh": "靛蓝纸卡"
+        },
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (700, 700); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#689088",
+        "role": "accent",
+        "label": {
+          "en": "Sea-green card",
+          "zh": "海绿纸卡"
+        },
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1420, 650); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#d8815c",
+        "role": "accent",
+        "label": {
+          "en": "Terracotta card",
+          "zh": "陶土色纸卡"
+        },
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (760, 1050); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      },
+      {
+        "color": "#9d7ca8",
+        "role": "accent",
+        "label": {
+          "en": "Lilac card",
+          "zh": "浅紫纸卡"
+        },
+        "source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1450, 1100); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+      }
+    ],
+    "sizeNote": {
+      "en": "At 128/64 px, the four compartments and central divider remain distinct. At 32/24/16 px, the divided silhouette and four colors carry recognition; paper grain, metal texture and the adjustment slot merge. The native toolbar uses a 22 pt transparent mark.",
+      "zh": "128/64 px 能分辨四个区域和中央隔板；32/24/16 px 由分区轮廓与四色保持识别，纸张颗粒、金属纹理与滑槽细节自然合并。原生工具栏使用 22 pt 透明标记。"
+    },
+    "model": "gpt-image-2"
+  }
+}

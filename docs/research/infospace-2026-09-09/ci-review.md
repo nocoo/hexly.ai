@@ -16,4 +16,10 @@ Remove the obsolete family groups from the existing browser test. Derive the exp
 
 The original run's `browser-failure-evidence` artifact contains desktop and mobile screenshots, error contexts and traces. It was downloaded to `/tmp/infospace-ci-browser-34300143663` for inspection. The failure diff and page snapshots agree on the two InfoSpace positions above. No production credentials or raw runtime diagnostics are copied into this report.
 
-After the correction, `bun run check:isolation` and `bunx playwright test tests/browser/site.spec.ts --grep 'combines search and categories'` passed locally: both desktop and mobile cases completed successfully. The full CI suite and the Deploy job are still required before publication is reported.
+After the correction, `bun run check:isolation` and `bunx playwright test tests/browser/site.spec.ts --grep 'combines search and categories'` passed locally: both desktop and mobile cases completed successfully.
+
+## Publication verification
+
+Revision `6813c9d1e30fd649f05d08ee294e1441544ec0a5` passed the full CI suite and Deploy in [Quality & Deploy 34300696343](https://github.com/nocoo/hexly.ai/actions/runs/34300696343). `gh run watch` exited successfully. The deployment's public verification and a separate `bun run verify:production` both confirmed `https://hexly.ai`, version `0.5.0`, the exact revision, compiled assets and original logo.
+
+An independent [production browser review](production/report.json) passed 12 checks: eight desktop/mobile, light/dark and English/Chinese overview combinations plus four order/filter/navigation/refresh groups. It verified seven stack badges, both README links, no horizontal overflow, 70 total projects, 50 active projects and no page errors. The default sequence contains DreamRO, InfoSpace and signoff.now in that order. Root inspected the archived desktop English and mobile Chinese captures. These checks cover the preserved source SVG, before approval and adoption of the physical-object image. The later [logo browser review](logo-browser/README.md) and [publication record](publication.json) record the replacement separately.

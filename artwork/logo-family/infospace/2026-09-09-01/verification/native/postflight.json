@@ -1,0 +1,29 @@
+{
+	"native_results": {
+		"xcode": {
+			"checks_passed": 36,
+			"checks_total": 36,
+			"captures_ok": 15,
+			"captures_total": 15,
+			"native_note_text": "\u8fd9\u6761\u7b14\u8bb0\u5728\u7f29\u653e\u540e\u4ecd\u7136\u4fdd\u7559\u3002",
+			"github_header_link": true,
+			"baseline_screenshot": "/tmp/infospace-toolbar-fix-20260909-nraltl8j/inspection-xcode/01-baseline.png"
+		},
+		"swiftpm": {
+			"checks_passed": 36,
+			"checks_total": 36,
+			"captures_ok": 15,
+			"captures_total": 15,
+			"native_note_text": "\u8fd9\u6761\u7b14\u8bb0\u5728\u7f29\u653e\u540e\u4ecd\u7136\u4fdd\u7559\u3002",
+			"github_header_link": true,
+			"baseline_screenshot": "/tmp/infospace-toolbar-fix-20260909-nraltl8j/inspection-swiftpm/01-baseline.png"
+		}
+	},
+	"verified_source_sha256": {
+		"App/AppResources.swift": "9fa2e07aae4d94b7d42760572760e4751d38d4b7b3890fb17008711c29b9ec34",
+		"App/WorkspaceToolbar.swift": "d86ed934a53d4fefa562d6a772eb4b7bf88c3dab982581bf681db4fe62d809fc"
+	},
+	"remaining_inspection_processes": [],
+	"xcode_select_after": "/Library/Developer/CommandLineTools",
+	"source_commit_after": "86efacf28592243b9c7e12a2837d975eb190521f"
+}

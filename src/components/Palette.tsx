@@ -15,16 +15,19 @@ export function Palette({
 	onCopy?: (value: string) => void;
 }) {
 	const t = copy[locale];
+	const swatches = Array.from(
+		new Map(colors.map((swatch) => [JSON.stringify(swatch), swatch])),
+	);
 	if (compact)
 		return (
 			<span
 				className="palette-mini"
 				role="img"
-				aria-label={`${t.palette}: ${colors.map((swatch) => swatch.color).join(", ")}`}
+				aria-label={`${t.palette}: ${swatches.map(([, swatch]) => swatch.color).join(", ")}`}
 			>
-				{colors.map((swatch) => (
+				{swatches.map(([key, swatch]) => (
 					<span
-						key={`${swatch.role}-${swatch.color}`}
+						key={key}
 						className={swatch.color === "transparent" ? "checkerboard" : ""}
 						style={{ backgroundColor: swatch.color }}
 						title={swatch.color}
@@ -34,10 +37,10 @@ export function Palette({
 		);
 	return (
 		<div className="palette-swatches">
-			{colors.map((swatch) => (
+			{swatches.map(([key, swatch]) => (
 				<button
 					type="button"
-					key={`${swatch.role}-${swatch.color}`}
+					key={key}
 					className="palette-swatch"
 					onClick={() => onCopy?.(swatch.color)}
 					aria-label={`${t.copyColor} ${swatch.color}`}

@@ -1,0 +1,75 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"method": "generated",
+	"study": "infospace/2026-09-09-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/infospace",
+	"sourceCommit": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf",
+	"masters": {
+		"logo.png": {
+			"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+			"source": "artwork/logo-family/infospace/2026-09-09-01/finishing/01/exports/infospace-transparent-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "b3f2b7defe36075d7259b6a8c62a83959589c16f85b93946f4e8c525eaa385f5",
+			"source": "artwork/logo-family/infospace/2026-09-09-01/finishing/01/exports/infospace-icon-2048.png",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "b59a0ac6ce87612f63445587bdcb1e1c5aabd559ddbdb57cdb63d9fe69eb99d4",
+			"source": "artwork/logo-family/infospace/2026-09-09-01/finishing/01/exports/infospace-rounded-2048.png",
+			"width": 2048,
+			"height": 2048
+		}
+	},
+	"sourceUsageGuide": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/assets/brand/README.md",
+	"consumers": {
+		"readme": [
+			"README.md -> assets/brand/icon-rounded.png",
+			"docs/README.en.md -> ../assets/brand/icon-rounded.png"
+		],
+		"toolbar": {
+			"view": "App/WorkspaceToolbar.swift",
+			"loader": "App/AppResources.swift: Bundle.image(forResource:) and Image(nsImage:)",
+			"points": 22,
+			"sourcePixels": [22, 44],
+			"resources": [
+				"App/Resources/ToolbarMark.png",
+				"App/Resources/ToolbarMark@2x.png"
+			],
+			"xcodeBuildOutput": "Contents/Resources/ToolbarMark.tiff",
+			"swiftpmBuildOutput": "InfoSpace_InfoSpaceApp.bundle/ToolbarMark{,@2x}.png",
+			"background": "transparent foreground without an extra mask"
+		},
+		"nativeIcon": {
+			"resource": "App/Resources/AppIcon.icns",
+			"insetMaster": "assets/brand/macos-icon.png",
+			"canvasPixels": 1024,
+			"roundedTilePixels": 824,
+			"representations": 10,
+			"decodedPixelSizes": [16, 32, 64, 128, 256, 512, 1024]
+		},
+		"screenshot": "docs/images/workspace.png"
+	},
+	"exceptions": [
+		"InfoSpace is a native macOS SDK/demo with no project website, browser favicon, touch icon or PWA manifest.",
+		"Brand resources belong only to the demonstration executable; Core and UI libraries remain resource-free."
+	],
+	"previousOriginal": "/logos/originals/infospace.svg",
+	"verification": "verification/source-assets.json",
+	"artworkVerification": "verification/artwork.json",
+	"nativeVerification": "verification/native/README.md",
+	"review": "https://hexly.ai/logos/infospace",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/infospace/2026-09-09-01/review.html",
+	"publication": {
+		"sourcePushed": true,
+		"sourceRun": "https://github.com/nocoo/infospace/actions/runs/34304157654",
+		"site": "pending verification of the Hexly deployment",
+		"report": "../../../../docs/research/infospace-2026-09-09/publication.json",
+		"sourceCI": "passed"
+	}
+}

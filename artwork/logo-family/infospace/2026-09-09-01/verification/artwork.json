@@ -1,0 +1,285 @@
+{
+	"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727",
+	"finishing": "01",
+	"opaquePixels": 1899220,
+	"changedOpaquePixels": 0,
+	"nontransparentBorderPixels": 0,
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"bounds": {
+			"left": 214,
+			"top": 270,
+			"right": 1852,
+			"bottom": 1696
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 195.50000000000006,
+		"clippedPixels": 0
+	},
+	"edgeSamples": [
+		{
+			"pixel": [1690, 1550],
+			"alpha": 255
+		},
+		{
+			"pixel": [1700, 1550],
+			"alpha": 255
+		},
+		{
+			"pixel": [1500, 1690],
+			"alpha": 255
+		},
+		{
+			"pixel": [1500, 1696],
+			"alpha": 0
+		},
+		{
+			"pixel": [1500, 1700],
+			"alpha": 0
+		}
+	],
+	"matting": "Exterior-connected extraction with a measured opaque-interior protection polygon. Local macOS Vision provided a contour hint, refined against native luminance transitions; no generated RGB was replaced. The first two diagnostic probes remain archived and are not selected.",
+	"exports": [
+		{
+			"file": "exports/infospace-transparent-2048.png",
+			"width": 2048,
+			"height": 2048,
+			"transparentPixels": 2291192,
+			"opaquePixels": 1899220,
+			"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772"
+		},
+		{
+			"file": "exports/infospace-icon-2048.png",
+			"width": 2048,
+			"height": 2048,
+			"transparentPixels": 0,
+			"opaquePixels": 4194304,
+			"sha256": "b3f2b7defe36075d7259b6a8c62a83959589c16f85b93946f4e8c525eaa385f5"
+		},
+		{
+			"file": "exports/infospace-rounded-2048.png",
+			"width": 2048,
+			"height": 2048,
+			"transparentPixels": 188616,
+			"opaquePixels": 4002157,
+			"sha256": "b59a0ac6ce87612f63445587bdcb1e1c5aabd559ddbdb57cdb63d9fe69eb99d4"
+		},
+		{
+			"file": "exports/infospace-transparent-1024.png",
+			"width": 1024,
+			"height": 1024,
+			"transparentPixels": 568603,
+			"opaquePixels": 471077,
+			"sha256": "cd00b8adc09b8687332fdadaef94c0fbfcbeef4b5884cafd2b058633945f687b"
+		},
+		{
+			"file": "exports/infospace-icon-1024.png",
+			"width": 1024,
+			"height": 1024,
+			"transparentPixels": 0,
+			"opaquePixels": 1048576,
+			"sha256": "34235c651f30772414d6c286a6e59008ffae600c9d8c86e0b127533272bb589a"
+		},
+		{
+			"file": "exports/infospace-rounded-1024.png",
+			"width": 1024,
+			"height": 1024,
+			"transparentPixels": 45538,
+			"opaquePixels": 998617,
+			"sha256": "674b1d21fac37db2e403beb6296de4eed608d3e10f6e960a3c4021eb36e9db58"
+		},
+		{
+			"file": "exports/infospace-transparent-512.png",
+			"width": 512,
+			"height": 512,
+			"transparentPixels": 141199,
+			"opaquePixels": 116790,
+			"sha256": "1c670fe039fb176fa505e76b02670d5c41351fcec309b758e3ad9c49254bba61"
+		},
+		{
+			"file": "exports/infospace-icon-512.png",
+			"width": 512,
+			"height": 512,
+			"transparentPixels": 0,
+			"opaquePixels": 262144,
+			"sha256": "3720af4c032a5bd93d85e95225a14a670a1c8e507955ec850522b22ee1b00dad"
+		},
+		{
+			"file": "exports/infospace-rounded-512.png",
+			"width": 512,
+			"height": 512,
+			"transparentPixels": 10905,
+			"opaquePixels": 249098,
+			"sha256": "534ca2b459bb9017f28be87c27230dae83f8ee3e94be7d36d785998eb67b77db"
+		},
+		{
+			"file": "exports/infospace-transparent-256.png",
+			"width": 256,
+			"height": 256,
+			"transparentPixels": 34702,
+			"opaquePixels": 28662,
+			"sha256": "06f356524cd0a7da7f2597b44a8f45a5d31b61938f5c3e7d124dd42e228d9ade"
+		},
+		{
+			"file": "exports/infospace-icon-256.png",
+			"width": 256,
+			"height": 256,
+			"transparentPixels": 0,
+			"opaquePixels": 65536,
+			"sha256": "3494f2a5372b7cacff880839a87e688dafcdec30d4ce3fd74d265b98dcc30db8"
+		},
+		{
+			"file": "exports/infospace-rounded-256.png",
+			"width": 256,
+			"height": 256,
+			"transparentPixels": 2536,
+			"opaquePixels": 62000,
+			"sha256": "59157136de34860f788c6feb0a9121e8ba4edf8bbee91d0ca90becb1917323eb"
+		},
+		{
+			"file": "exports/infospace-transparent-128.png",
+			"width": 128,
+			"height": 128,
+			"transparentPixels": 8396,
+			"opaquePixels": 6894,
+			"sha256": "20cb3a432bd302193248233c0ca1bc9cd803f7b55a10afe38ad1de2dd3b8ed95"
+		},
+		{
+			"file": "exports/infospace-icon-128.png",
+			"width": 128,
+			"height": 128,
+			"transparentPixels": 0,
+			"opaquePixels": 16384,
+			"sha256": "b473af1329dee30aa42e3f2a2f8d8ec2a907ba8430db9eade9a08d944077713e"
+		},
+		{
+			"file": "exports/infospace-rounded-128.png",
+			"width": 128,
+			"height": 128,
+			"transparentPixels": 548,
+			"opaquePixels": 15360,
+			"sha256": "5583fa93b4c336dd4781f59e5f89155a71ecdc8f70e111fea41c0b6f30119d6d"
+		},
+		{
+			"file": "exports/infospace-transparent-64.png",
+			"width": 64,
+			"height": 64,
+			"transparentPixels": 1953,
+			"opaquePixels": 1594,
+			"sha256": "f8d5e5e307e2f0d33c477e90790a0bc892698fedd93476d5568ce2ad478bc849"
+		},
+		{
+			"file": "exports/infospace-icon-64.png",
+			"width": 64,
+			"height": 64,
+			"transparentPixels": 0,
+			"opaquePixels": 4096,
+			"sha256": "71be2086f807178022608fee229f3fc834bf4ba68df6043201dcf07505f74d9f"
+		},
+		{
+			"file": "exports/infospace-rounded-64.png",
+			"width": 64,
+			"height": 64,
+			"transparentPixels": 92,
+			"opaquePixels": 3772,
+			"sha256": "8fcf730d71acf4160db0f7efc13f79660b7f8a98edda0ad0b7cbcb19c2a6510c"
+		},
+		{
+			"file": "exports/infospace-transparent-48.png",
+			"width": 48,
+			"height": 48,
+			"transparentPixels": 1051,
+			"opaquePixels": 849,
+			"sha256": "6e00d5285286c322b03177b9fba9ff438b83c0ff358e007254e236b50801e85b"
+		},
+		{
+			"file": "exports/infospace-icon-48.png",
+			"width": 48,
+			"height": 48,
+			"transparentPixels": 0,
+			"opaquePixels": 2304,
+			"sha256": "0e02470538d695d75ac2f08250ca0b8afb18f6c43cca948aca434b64cf61fe2e"
+		},
+		{
+			"file": "exports/infospace-rounded-48.png",
+			"width": 48,
+			"height": 48,
+			"transparentPixels": 48,
+			"opaquePixels": 2092,
+			"sha256": "afcee3a7a12e8483a87d9bb1f6e91fb922f240f3eabb141fafcae5f27f7b9336"
+		},
+		{
+			"file": "exports/infospace-transparent-32.png",
+			"width": 32,
+			"height": 32,
+			"transparentPixels": 420,
+			"opaquePixels": 341,
+			"sha256": "866761053f83eba2ce5d9b406733a7f429e82f354590952e8cb793c8b9fb2efc"
+		},
+		{
+			"file": "exports/infospace-icon-32.png",
+			"width": 32,
+			"height": 32,
+			"transparentPixels": 0,
+			"opaquePixels": 1024,
+			"sha256": "c16519f5fb8038a4d5dbb5266572ba646b27455712dcca66fc66db1b115566a6"
+		},
+		{
+			"file": "exports/infospace-rounded-32.png",
+			"width": 32,
+			"height": 32,
+			"transparentPixels": 16,
+			"opaquePixels": 920,
+			"sha256": "3b5873fb8a5987b37b4fa438949b7dd2f52b3354c0030a9be87359a64e9606a6"
+		},
+		{
+			"file": "exports/infospace-transparent-24.png",
+			"width": 24,
+			"height": 24,
+			"transparentPixels": 202,
+			"opaquePixels": 173,
+			"sha256": "e8ef76bf21b234c5a80a729f4b1717ed49956b69b79b433947825fd0e4d9b2c4"
+		},
+		{
+			"file": "exports/infospace-icon-24.png",
+			"width": 24,
+			"height": 24,
+			"transparentPixels": 0,
+			"opaquePixels": 576,
+			"sha256": "d179c0b511fc5b70f2a7fd7a39385091f1853c7c43a673f1f0ef046915958fc6"
+		},
+		{
+			"file": "exports/infospace-rounded-24.png",
+			"width": 24,
+			"height": 24,
+			"transparentPixels": 8,
+			"opaquePixels": 491,
+			"sha256": "69d2fed0ed03b667950018530dd517b8e58f3a1c53f93f35b377aadeb9bf1149"
+		},
+		{
+			"file": "exports/infospace-transparent-16.png",
+			"width": 16,
+			"height": 16,
+			"transparentPixels": 76,
+			"opaquePixels": 61,
+			"sha256": "3312550e2c076ee58e3d9c7be3ab65608e66359664da0bd542788265a2e78b89"
+		},
+		{
+			"file": "exports/infospace-icon-16.png",
+			"width": 16,
+			"height": 16,
+			"transparentPixels": 0,
+			"opaquePixels": 256,
+			"sha256": "c7bd8ba5623c4df4db3c3e4bae2ec183a56206f85415e59a81b62ee417ae07b5"
+		},
+		{
+			"file": "exports/infospace-rounded-16.png",
+			"width": 16,
+			"height": 16,
+			"transparentPixels": 4,
+			"opaquePixels": 212,
+			"sha256": "eb66eb963444daef489db307344d3aa146d057ce1c1e0f7de4b075cadb085db2"
+		}
+	]
+}
