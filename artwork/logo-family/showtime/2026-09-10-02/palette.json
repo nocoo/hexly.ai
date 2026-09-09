@@ -1,0 +1,67 @@
+{
+	"project": "showtime",
+	"study": "2026-09-10-02",
+	"finishing": "03",
+	"nativeSource": {
+		"path": "raw/generated.png",
+		"sha256": "0ff9ef4fa0f689a018f4dae092220dc6ebf80fe88828bdbc691081213bcf072a",
+		"width": 2048,
+		"height": 2048
+	},
+	"artworkSamples": [
+		{
+			"label": "Charcoal slate",
+			"x": 1080,
+			"y": 920,
+			"rgb": [43, 43, 43],
+			"hex": "#2b2b2b",
+			"alpha": 255
+		},
+		{
+			"label": "Ivory stripe",
+			"x": 1000,
+			"y": 390,
+			"rgb": [237, 230, 222],
+			"hex": "#ede6de",
+			"alpha": 255
+		},
+		{
+			"label": "White production marking",
+			"x": 850,
+			"y": 1250,
+			"rgb": [228, 221, 220],
+			"hex": "#e4dddc",
+			"alpha": 255
+		},
+		{
+			"label": "Brushed silver hinge",
+			"x": 500,
+			"y": 500,
+			"rgb": [140, 134, 133],
+			"hex": "#8c8685",
+			"alpha": 255
+		}
+	],
+	"presentation": {
+		"status": "selected under owner-authorized finishing",
+		"recipe": "presentation.json",
+		"colors": {
+			"base": "#dce8d1",
+			"light": "#f0f5e8",
+			"shade": "#c6d8ba",
+			"motif": "#61bb46",
+			"motifOpacity": 0.3,
+			"highlightOpacity": 0.36,
+			"ribbonOpacity": 0.18
+		}
+	},
+	"applicationTheme": {
+		"revision": "1fa4de8686166d4477ab78c7f3356aa8e19b403d",
+		"path": "Sources/Showtime/App/StudioView.swift",
+		"primary": "#4a8234",
+		"surface": "#f6f8f4",
+		"ink": "#253126",
+		"paleGreen": "#cfe8b5",
+		"note": "Published application tokens at the inspected revision, separate from artwork samples and designed presentation colors. Concurrent UI work belongs to Showtime Codex."
+	}
+}
