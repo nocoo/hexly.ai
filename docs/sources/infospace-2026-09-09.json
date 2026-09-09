@@ -1,0 +1,39 @@
+{
+	"date": "2026-09-09",
+	"repository": "nocoo/infospace",
+	"revision": "0d25de0f63e20979fd81c1c295e5bc84132efb3a",
+	"defaultBranch": "main",
+	"archived": false,
+	"isFork": false,
+	"website": null,
+	"description": "🗂️ Native SwiftUI workspace SDK with resizable grids and customizable information panels",
+	"metadataCommand": "gh repo view nocoo/infospace --json name,description,homepageUrl,isArchived,isFork,defaultBranchRef,url",
+	"profileRevision": "47d39a7882e16a17d62b9a4207b81480ba5afedd",
+	"original": {
+		"kind": "original",
+		"original": "/logos/originals/infospace.svg",
+		"sourcePath": "logo.svg",
+		"sourceUrl": "https://github.com/nocoo/infospace/blob/0d25de0f63e20979fd81c1c295e5bc84132efb3a/logo.svg",
+		"modified": false,
+		"width": 128,
+		"height": 128,
+		"bytes": 503,
+		"sha256": "7540789c41a74c8553af6fe38b23aa3784753259038ff93dc8e7797f17582d03",
+		"thumbnail": "/logos/display/infospace-160.webp",
+		"display": "/logos/display/infospace-1024.webp"
+	},
+	"applicationTheme": {
+		"background": {
+			"value": "#13161c",
+			"source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.background, sRGB (0.075, 0.085, 0.11)"
+		},
+		"ink": {
+			"value": "#ffffff",
+			"source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.foreground"
+		},
+		"primary": {
+			"value": "#ffffff",
+			"source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.accent; selected by App/WorkspaceView.swift"
+		}
+	}
+}
