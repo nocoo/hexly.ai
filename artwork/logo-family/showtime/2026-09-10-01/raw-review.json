@@ -1,6 +1,18 @@
 {
-	"status": "pending",
+	"status": "rejected",
 	"imageSha256": "2e74b4328dc1849f1cd0260fe808ea59c4431b9c281560093ea9b2819797449d",
 	"recordedAt": "2026-09-09T22:56:44.023630+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+	"nextStep": "Preserve this rejected study. Generate a new classic black-and-white lettered clapperboard in 2026-09-10-02; reserve green for the later presentation background.",
+	"history": [
+		{
+			"status": "pending",
+			"imageSha256": "2e74b4328dc1849f1cd0260fe808ea59c4431b9c281560093ea9b2819797449d",
+			"recordedAt": "2026-09-09T22:56:44.023630+00:00",
+			"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+		}
+	],
+	"decidedAt": "2026-09-09T23:19:08.790075+00:00",
+	"decisionSource": "owner feedback in conversation",
+	"ownerReviewedExactBytes": true,
+	"feedback": "这个场景版生成的不好，绿色场景版很奇怪，你重新生成一个。要求如下：1. 上面要有点字 2. 可以生成那种经典的，比如说黑白的就可以 3. 等它生成完之后，你再做底纹的时候，可以加一些绿色的元素，体现并呼应一下这个产品"
 }

@@ -1,0 +1,102 @@
+{
+	"project": "showtime",
+	"date": "2026-09-10",
+	"recordedAt": "2026-09-09T23:19:08.790075+00:00",
+	"sourceMode": "isolated-white",
+	"series": "material",
+	"repositoryRevision": "1fa4de8686166d4477ab78c7f3356aa8e19b403d",
+	"repositoryState": "committed",
+	"repositoryUrl": "https://github.com/nocoo/showtime",
+	"sources": [
+		{
+			"path": "README.md",
+			"snapshot": "input/README.md",
+			"bytes": 784,
+			"sha256": "19c725e67aeb7c8eed088cee1956839b82694a57be651d78f67002ede2a5fd75",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "Package.swift",
+			"snapshot": "input/Package.swift",
+			"bytes": 1053,
+			"sha256": "09554b6a327eba0ff53b9833ba1c557750dfe57d13f70cb8e7a178d36114751a",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "package.json",
+			"snapshot": "input/package.json",
+			"bytes": 359,
+			"sha256": "d501b5f0db0a76e06846416392151dafc7c53f171918387a21ef860ab0e22f98",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "Sources/ShowtimeCore/Script.swift",
+			"snapshot": "input/Sources/ShowtimeCore/Script.swift",
+			"bytes": 13434,
+			"sha256": "f0effb832ba267d76dae2adb996a13a7e5afc18d6644ccf37a1a6675f52e635f",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "Sources/Showtime/App/StudioView.swift",
+			"snapshot": "input/Sources/Showtime/App/StudioView.swift",
+			"bytes": 16164,
+			"sha256": "6500800207e84bc63b5b72177a263157d0ac0346ff92982a655c3648001e5e5c",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "Sources/Showtime/App/StudioModel.swift",
+			"snapshot": "input/Sources/Showtime/App/StudioModel.swift",
+			"bytes": 16779,
+			"sha256": "cc7024c2b0242ae9735650c65779684114187fd343eca42858fd9c3402fe503f",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "Sources/Showtime/Recording/MovieRecorder.swift",
+			"snapshot": "input/Sources/Showtime/Recording/MovieRecorder.swift",
+			"bytes": 9943,
+			"sha256": "6eab1a5f7b2c94de8d62345327fb01c34e0b8d4831fdb29ad60cc80c7e4098b9",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "scripts/build.sh",
+			"snapshot": "input/scripts/build.sh",
+			"bytes": 1942,
+			"sha256": "4eda8c8b5041a02a4ff8b4171ccca79c3fd9c44c3986c4f4d7bc195d67c3c4be",
+			"matchesRepositoryRevision": true
+		},
+		{
+			"path": "scripts/make_icon.swift",
+			"snapshot": "input/scripts/make_icon.swift",
+			"bytes": 3540,
+			"sha256": "60ecfae5725be70fd97c298ecaf81e307aa4c3c97d283293578dd61d91d6b987",
+			"matchesRepositoryRevision": true
+		}
+	],
+	"orderedReferences": [
+		{
+			"index": 1,
+			"path": "artwork/logo-family/signoff-now/2026-09-07-01/raw/generated.png",
+			"role": "Material and lighting reference only; no subject, text or palette transfer.",
+			"sha256": "34cda46e70101f541e9787e7d6472788ef55d0749a90151f0e4e1a04dc08c38c",
+			"bytes": 3134824
+		},
+		{
+			"index": 2,
+			"path": "artwork/logo-family/references/ref02.jpeg",
+			"role": "Compact framing and tactile quality only; no animal, tile or background transfer.",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683
+		}
+	],
+	"rejectedPreviousStudy": {
+		"path": "../2026-09-10-01/raw/generated.png",
+		"sha256": "2e74b4328dc1849f1cd0260fe808ea59c4431b9c281560093ea9b2819797449d",
+		"role": "Rejected historical evidence; not submitted as a reference."
+	},
+	"foregroundDirection": "Classic black-and-white physical clapperboard with SHOWTIME, ROLL, SCENE, TAKE and 01 lettering.",
+	"presentationDirection": {
+		"greenDesignAnchor": "#61BB46",
+		"role": "Later background accents only; no green foreground tint."
+	},
+	"captureBasis": "Exact copies of inspected working-tree files; matchesRepositoryRevision records whether each copy exists unchanged at the stated HEAD. Concurrent application work is owned by the Showtime Codex."
+}
