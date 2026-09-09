@@ -11,6 +11,7 @@
 
 - use patched sharp throughout the tooling graph ([9c8c969](https://github.com/nocoo/hexly.ai/commit/9c8c96941b72538cb008d28dd007291499bb9fc6))
 - align responsive navigation and gallery picker ([5a69c5f](https://github.com/nocoo/hexly.ai/commit/5a69c5f191d0e65a6859f1081193b696c772e539))
+- provide accessible mobile back-to-top content ([7518034](https://github.com/nocoo/hexly.ai/commit/751803498cecce6eb339e06e91ca14dd8b55f8d2))
 
 ### Tests
 
