@@ -30,6 +30,8 @@ The [static study](../artwork/logo-family/showtime/2026-09-10-02/review.html) an
 
 The [handoff](../artwork/logo-family/showtime/2026-09-10-02/handoff.json) supplies exact masters and hashes to Showtime's Codex in Herd, pane w2H:p1. It copied root `logo.png` and `logo-readme.png` byte-for-byte; both hashes were independently verified. This agent committed only README text in Showtime. Application consumers and the independent icon commit belong to Showtime Codex, which decides its own app release. Hexly's authorized release target is the explicit patch increment **0.5.2**, using the [release runbook](05-release.md).
 
+The owner subsequently took over application follow-up and explicitly instructed Hexly to publish immediately: “你不用去监控这个 App 了，我去接手就可以了，你这边直接发布就行”. Website publication therefore proceeds independently of the application's remaining work. The selected family remains `review` until a source adoption commit is verified; the historical source logo and snapshot are preserved. This status describes source adoption, while the exact raw artwork already has owner approval. README commit `9039ab8` is complete locally; this publication record does not claim its remote publication or an App release.
+
 ## Verification
 
 The preparation passes TypeScript, Biome, isolation and security gates, all 94 unit tests, all 62 HTTP tests and 28 affected desktop/mobile browser tests. Source snapshots, 71 original checksums, 426 display derivatives, 55 historical public archives and 93 finishing manifests verify successfully. The production build succeeds. Existing source identities, generated profiles and artwork remain unchanged outside the Showtime addition and directory index.
