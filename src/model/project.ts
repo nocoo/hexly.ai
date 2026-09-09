@@ -19,7 +19,8 @@ export interface ProjectOverview {
 	}[];
 	verified: {
 		date: string;
-		revision: string;
+		revision: string | null;
+		snapshot?: { path: string; sha256: string };
 		sources: string[];
 	};
 }
@@ -106,6 +107,6 @@ export interface Project {
 		profileRevision: string;
 		profileSection: string;
 		description: string;
-		repositoryRevision: string;
+		repositoryRevision: string | null;
 	};
 }

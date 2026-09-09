@@ -1,0 +1,143 @@
+{
+	"id": "showtime",
+	"repo": "showtime",
+	"title": "Showtime",
+	"emoji": "🎬",
+	"description": {
+		"en": "Native macOS browser for agent-directed product demo recordings",
+		"zh": "原生 macOS 演示浏览器，由 Agent 编排网页交互并录制产品演示"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/showtime",
+	"subject": "Initial purple browser window with a play symbol; green physical clapperboard study pending raw-image selection",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/showtime-initial.png",
+		"thumbnail": "/logos/display/showtime-160.webp",
+		"display": "/logos/display/showtime-1024.webp",
+		"sourcePath": ".build/Showtime.iconset/icon_512x512@2x.png",
+		"sourceUrl": "/logos/originals/showtime-initial.png",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 528759,
+		"sha256": "8fe319552849e04934273d30a10b9bc1fc68ae94bb08182b5d372511e12feef9"
+	},
+	"theme": {
+		"primary": {
+			"value": "#4a8234",
+			"source": "Sources/Showtime/App/StudioView.swift: Theme.accentHex; preserved local source snapshot"
+		},
+		"background": {
+			"value": "#f6f8f4",
+			"source": "Sources/Showtime/App/StudioView.swift: Theme.surface, sRGB (246, 248, 244)"
+		},
+		"ink": {
+			"value": "#253126",
+			"source": "Sources/Showtime/App/StudioView.swift: Theme.ink, sRGB (0.145, 0.192, 0.149), rounded to 8-bit channels"
+		}
+	},
+	"colors": {
+		"primary": "#4a8234",
+		"background": "#f6f8f4",
+		"ink": "#253126",
+		"palette": [
+			{
+				"color": "#4a8234",
+				"role": "primary",
+				"source": "Sources/Showtime/App/StudioView.swift: Theme.accentHex = #4A8234; docs/sources/showtime-2026-09-10.json"
+			},
+			{
+				"color": "#f6f8f4",
+				"role": "background",
+				"source": "Sources/Showtime/App/StudioView.swift: Theme.surface, sRGB (246, 248, 244)"
+			},
+			{
+				"color": "#cfe8b5",
+				"role": "accent",
+				"source": "Sources/Showtime/App/StudioView.swift: Theme.sprout, sRGB (207, 232, 181)"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "73203ef18b98ccf7cf03be7ef0ebf327bb8a743d",
+		"profileSection": "Recent Projects",
+		"description": "Native macOS browser for agent-directed product demo recordings",
+		"repositoryRevision": null
+	},
+	"overview": {
+		"goal": {
+			"en": "Turn scripted interactions with real webpages into product demo movies on macOS. Agents can direct pointer movement, clicks, typing, camera zoom and animated captions through JSON scripts, a CLI or MCP; the native browser exports MP4 without an audio track.",
+			"zh": "把真实网页上的脚本化交互制作成 macOS 产品演示视频。Agent 可通过 JSON 剧本、CLI 或 MCP 编排鼠标移动、点击、输入、镜头缩放和动态字幕，原生浏览器将演示导出为不含音轨的 MP4。"
+		},
+		"techStack": [
+			{
+				"name": "Swift",
+				"role": {
+					"en": "Native application and typed script execution",
+					"zh": "原生应用与类型化脚本执行"
+				}
+			},
+			{
+				"name": "SwiftUI / AppKit",
+				"role": {
+					"en": "macOS studio, inspector and window integration",
+					"zh": "macOS 演播室、检查器与窗口集成"
+				}
+			},
+			{
+				"name": "WebKit",
+				"role": {
+					"en": "Real webpages and browser interaction",
+					"zh": "真实网页渲染与浏览器交互"
+				}
+			},
+			{
+				"name": "AVFoundation",
+				"role": {
+					"en": "Frame composition and MP4 export",
+					"zh": "画面合成与 MP4 导出"
+				}
+			},
+			{
+				"name": "Python",
+				"role": {
+					"en": "Command-line client and MCP server",
+					"zh": "命令行客户端与 MCP 服务器"
+				}
+			},
+			{
+				"name": "JSON / MCP",
+				"role": {
+					"en": "Declarative choreography and agent tools",
+					"zh": "声明式演示编排与 Agent 工具"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-10",
+			"revision": null,
+			"snapshot": {
+				"path": "docs/sources/showtime-2026-09-10.json",
+				"sha256": "df845adc492a9f79c1a4df4089f060986991704e6ecad5684b2a2d9b1e751949"
+			},
+			"sources": [
+				"README.md",
+				"Package.swift",
+				"Sources/Showtime/App/StudioView.swift",
+				"Sources/Showtime/App/StudioModel.swift",
+				"Sources/Showtime/Browser/BrowserEngine.swift",
+				"Sources/Showtime/Director/Director.swift",
+				"Sources/Showtime/Recording/MovieRecorder.swift",
+				"Sources/ShowtimeCore/Script.swift",
+				"scripts/showtime_cli.py",
+				"scripts/showtime_mcp.py",
+				"scripts/make_icon.swift"
+			]
+		}
+	}
+}
