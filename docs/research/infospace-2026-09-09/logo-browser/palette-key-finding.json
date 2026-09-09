@@ -1,0 +1,27 @@
+{
+  "finding": "React duplicate palette keys while rendering the directory",
+  "keys": [
+    "accent-#bd9f6d",
+    "accent-#fdc904"
+  ],
+  "projects": [
+    "gecko",
+    "pika"
+  ],
+  "sourceChecks": [
+    {
+      "path": "src/components/Palette.tsx",
+      "matchesHEAD": false
+    },
+    {
+      "path": "src/data/projects/gecko.json",
+      "matchesHEAD": true
+    },
+    {
+      "path": "src/data/projects/pika.json",
+      "matchesHEAD": true
+    }
+  ],
+  "head": "6813c9d1e30fd649f05d08ee294e1441544ec0a5",
+  "scope": "Read-only review; no fixes applied."
+}

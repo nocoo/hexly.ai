@@ -1,0 +1,112 @@
+{
+  "started": "2026-09-09T02:43:32.936Z",
+  "finished": "2026-09-09T02:44:02.741Z",
+  "headless": true,
+  "paletteComponentSha256": "7a7d39852f67606cb3f825831abb4eed39cf9792d0b7f7e36f37e3d086882b2e",
+  "checks": [
+    {
+      "name": "site-desktop-light-en: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "icon",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-desktop-light-zh: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "icon",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-desktop-dark-en: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "transparent",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-desktop-dark-zh: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "transparent",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-mobile-light-en: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "icon",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-mobile-light-zh: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "icon",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-mobile-dark-en: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "white",
+        "toastAbsentFromScreenshots": true
+      }
+    },
+    {
+      "name": "site-mobile-dark-zh: current palette, clipboard and clean screenshots",
+      "passed": true,
+      "evidence": {
+        "colors": 7,
+        "clipboardValuesMatch": true,
+        "mode": "white",
+        "toastAbsentFromScreenshots": true
+      }
+    }
+  ],
+  "diagnostics": [],
+  "screenshots": [
+    "clean-site-desktop-light-en-icon-overview.png",
+    "clean-site-desktop-light-en-icon-comparison.png",
+    "clean-site-desktop-light-en-icon-full.png",
+    "clean-site-desktop-light-zh-icon-overview.png",
+    "clean-site-desktop-light-zh-icon-comparison.png",
+    "clean-site-desktop-dark-en-transparent-overview.png",
+    "clean-site-desktop-dark-en-transparent-comparison.png",
+    "clean-site-desktop-dark-zh-transparent-overview.png",
+    "clean-site-desktop-dark-zh-transparent-comparison.png",
+    "clean-site-desktop-dark-zh-transparent-full.png",
+    "clean-site-mobile-light-en-icon-overview.png",
+    "clean-site-mobile-light-en-icon-comparison.png",
+    "clean-site-mobile-light-en-icon-full.png",
+    "clean-site-mobile-light-zh-icon-overview.png",
+    "clean-site-mobile-light-zh-icon-comparison.png",
+    "clean-site-mobile-dark-en-white-overview.png",
+    "clean-site-mobile-dark-en-white-comparison.png",
+    "clean-site-mobile-dark-zh-white-overview.png",
+    "clean-site-mobile-dark-zh-white-comparison.png",
+    "clean-site-mobile-dark-zh-white-full.png"
+  ],
+  "passed": true
+}

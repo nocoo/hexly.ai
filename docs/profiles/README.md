@@ -26,7 +26,7 @@
 | [🤠 Pew Game](20-pew-game.md) | Adopted family | #583b2c | #111111 |
 | [🐔 Rooster](21-rooster.md) | Adopted family | #ba7522 | transparent |
 | [🐍 Snaky](22-snaky.md) | Adopted family | #8bbc3f | transparent |
-| [🗂️ Info Space](71-infospace.md) | Original asset | #ffffff | #13161c |
+| [🗂️ Info Space](71-infospace.md) | Adopted family | #ffffff | #13161c |
 | [✍️ signoff.now](23-signoff-now.md) | Adopted family | #00a4f0 | #edf0f2 |
 | [🔓 Unseal](24-unseal.md) | Adopted family | #4e5b4b | #bdcebd |
 | [🌊 Flow](25-flow.md) | Adopted family | #171717 | #ffffff |

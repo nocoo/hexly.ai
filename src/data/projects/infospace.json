@@ -11,18 +11,18 @@
 	"website": null,
 	"websiteSource": null,
 	"repository": "https://github.com/nocoo/infospace",
-	"subject": "Four colored information panels in a rounded grid",
+	"subject": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
 	"reference": false,
 	"logo": {
 		"kind": "original",
-		"original": "/logos/originals/infospace.svg",
-		"sourcePath": "logo.svg",
-		"sourceUrl": "https://github.com/nocoo/infospace/blob/0d25de0f63e20979fd81c1c295e5bc84132efb3a/logo.svg",
+		"original": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
 		"modified": false,
-		"width": 128,
-		"height": 128,
-		"bytes": 503,
-		"sha256": "7540789c41a74c8553af6fe38b23aa3784753259038ff93dc8e7797f17582d03",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4365206,
+		"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
 		"thumbnail": "/logos/display/infospace-160.webp",
 		"display": "/logos/display/infospace-1024.webp"
 	},
@@ -44,7 +44,7 @@
 		"profileRevision": "e3e92cf41ced9400940b18904f1c97453f3b5903",
 		"profileSection": "Recent Projects",
 		"description": "Native SwiftUI workspace SDK with resizable grids and customizable information panels",
-		"repositoryRevision": "0d25de0f63e20979fd81c1c295e5bc84132efb3a"
+		"repositoryRevision": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf"
 	},
 	"colors": {
 		"primary": "#ffffff",
@@ -62,24 +62,34 @@
 				"source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark.background, sRGB (0.075, 0.085, 0.11), rounded to 8-bit channels"
 			},
 			{
-				"color": "#94a3ff",
+				"color": "#373e55",
 				"role": "accent",
-				"source": "logo.svg at 0d25de0f63e20979fd81c1c295e5bc84132efb3a: indigo panel fill"
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1040, 1540); artwork/logo-family/infospace/2026-09-09-01/palette.json"
 			},
 			{
-				"color": "#75c2ab",
+				"color": "#c1b6b1",
 				"role": "accent",
-				"source": "logo.svg at 0d25de0f63e20979fd81c1c295e5bc84132efb3a: green panel fill"
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1265, 810); artwork/logo-family/infospace/2026-09-09-01/palette.json"
 			},
 			{
-				"color": "#e69970",
+				"color": "#5f6da3",
 				"role": "accent",
-				"source": "logo.svg at 0d25de0f63e20979fd81c1c295e5bc84132efb3a: terracotta panel fill"
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (700, 700); artwork/logo-family/infospace/2026-09-09-01/palette.json"
 			},
 			{
-				"color": "#ba96e3",
+				"color": "#689088",
 				"role": "accent",
-				"source": "logo.svg at 0d25de0f63e20979fd81c1c295e5bc84132efb3a: lilac panel fill"
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1420, 650); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#d8815c",
+				"role": "accent",
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (760, 1050); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#9d7ca8",
+				"role": "accent",
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1450, 1100); artwork/logo-family/infospace/2026-09-09-01/palette.json"
 			}
 		]
 	},
@@ -155,5 +165,137 @@
 				"scripts/check.sh"
 			]
 		}
+	},
+	"family": {
+		"id": "2026-09-09-01",
+		"series": "material",
+		"finishing": "01",
+		"root": "/logos/family/infospace/2026-09-09-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/infospace/2026-09-09-01",
+		"status": "adopted",
+		"updated": "2026-09-09",
+		"foreground": {
+			"subject": {
+				"en": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+				"zh": "带可调隔板与四色纸卡的靛蓝金属信息托盘"
+			},
+			"original": "/logos/family/infospace/2026-09-09-01/01/transparent.png",
+			"display": "/logos/family/infospace/2026-09-09-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772"
+		},
+		"previous": {
+			"original": "/logos/originals/infospace.svg",
+			"sourceUrl": "https://github.com/nocoo/infospace/blob/0d25de0f63e20979fd81c1c295e5bc84132efb3a/logo.svg",
+			"width": 128,
+			"height": 128,
+			"sha256": "7540789c41a74c8553af6fe38b23aa3784753259038ff93dc8e7797f17582d03"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Adjustable compartments",
+					"zh": "可调整的分区"
+				},
+				"description": {
+					"en": "One sliding divider separates four unequal bays. The larger terracotta paper stack shows how space can be allocated while the complete tray remains one compact object.",
+					"zh": "滑动隔板分出四个大小不同的区域，较大的陶土色纸卡区体现空间分配，完整托盘形成紧凑的整体。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Metal and paper",
+					"zh": "金属与纸卡"
+				},
+				"description": {
+					"en": "An indigo anodized frame, brushed-metal fittings and matte paper stacks make the adjustable workspace tangible. Continuous material shading preserves the frame, reflections and paper edges.",
+					"zh": "靛蓝阳极氧化边框、拉丝金属配件与哑光纸卡，把可调整的工作区转化为实物。连续的材质明暗保留边框、反光和纸张边缘。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Adjustable spaces",
+					"zh": "可调分区"
+				},
+				"description": {
+					"en": "Offset panel outlines and short alignment ticks sit on cool indigo-gray paper. The field, grain and projected shadows are separate layers, so the small application mark stays transparent.",
+					"zh": "冷靛灰纸面上排列错位的面板轮廓和短对齐刻线。底色、颗粒与投影独立保存，小尺寸应用标记使用透明图。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#c6cddd",
+				"role": "background",
+				"label": {
+					"en": "Adjustable spaces",
+					"zh": "可调分区"
+				},
+				"source": "Selected InfoSpace presentation, 2026-09-09-01/01; background.base in archived settings.json"
+			},
+			{
+				"color": "#373e55",
+				"role": "primary",
+				"label": {
+					"en": "Indigo metal",
+					"zh": "靛蓝金属"
+				},
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1040, 1540); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#c1b6b1",
+				"role": "accent",
+				"label": {
+					"en": "Brushed nickel",
+					"zh": "拉丝镍色"
+				},
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1265, 810); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#5f6da3",
+				"role": "accent",
+				"label": {
+					"en": "Indigo card",
+					"zh": "靛蓝纸卡"
+				},
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (700, 700); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#689088",
+				"role": "accent",
+				"label": {
+					"en": "Sea-green card",
+					"zh": "海绿纸卡"
+				},
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1420, 650); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#d8815c",
+				"role": "accent",
+				"label": {
+					"en": "Terracotta card",
+					"zh": "陶土色纸卡"
+				},
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (760, 1050); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			},
+			{
+				"color": "#9d7ca8",
+				"role": "accent",
+				"label": {
+					"en": "Lilac card",
+					"zh": "浅紫纸卡"
+				},
+				"source": "Native InfoSpace f35f20b193b2, sampled sRGB pixel (1450, 1100); artwork/logo-family/infospace/2026-09-09-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 128/64 px, the four compartments and central divider remain distinct. At 32/24/16 px, the divided silhouette and four colors carry recognition; paper grain, metal texture and the adjustment slot merge. The native toolbar uses a 22 pt transparent mark.",
+			"zh": "128/64 px 能分辨四个区域和中央隔板；32/24/16 px 由分区轮廓与四色保持识别，纸张颗粒、金属纹理与滑槽细节自然合并。原生工具栏使用 22 pt 透明标记。"
+		},
+		"model": "gpt-image-2"
 	}
 }

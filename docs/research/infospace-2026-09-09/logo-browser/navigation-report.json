@@ -1,0 +1,183 @@
+{
+  "started": "2026-09-09T02:39:53.555Z",
+  "finished": "2026-09-09T02:39:59.202Z",
+  "headless": true,
+  "checks": [
+    {
+      "name": "catalogue: InfoSpace begins tools group",
+      "passed": true,
+      "evidence": {
+        "active": 50,
+        "expectedOrder": [
+          "raven",
+          "pew",
+          "xray",
+          "firefly",
+          "bat",
+          "shrike",
+          "neo",
+          "backy",
+          "otter",
+          "gecko",
+          "dove",
+          "pika",
+          "lyre",
+          "codo",
+          "wooly",
+          "surety",
+          "life-ai",
+          "zhe",
+          "noheir",
+          "ellie",
+          "owl",
+          "r2shot",
+          "hooky",
+          "meowth",
+          "frogie",
+          "bogo",
+          "steed",
+          "fundly",
+          "clip",
+          "giraffe",
+          "snaky",
+          "rooster",
+          "gaga",
+          "dotty",
+          "matrix",
+          "basalt",
+          "pokepocket",
+          "dogfight",
+          "pew-game",
+          "dreamro",
+          "infospace",
+          "signoff-now",
+          "unseal",
+          "flow",
+          "arena",
+          "echo",
+          "deca",
+          "runner",
+          "geekhub",
+          "ipsafe"
+        ],
+        "expectedTools": [
+          "bat",
+          "shrike",
+          "backy",
+          "otter",
+          "dove",
+          "codo",
+          "zhe",
+          "owl",
+          "r2shot",
+          "hooky",
+          "clip",
+          "giraffe",
+          "snaky",
+          "infospace",
+          "signoff-now",
+          "unseal",
+          "echo",
+          "runner",
+          "ccbackup",
+          "ipsafe"
+        ],
+        "firstAfterAnimalTemplateGameSeries": "infospace",
+        "toolsFilterFirst": "bat",
+        "note": "The tools category retains animal-series entries; its first result is bat. Default-group placement is dreamro → infospace → signoff-now."
+      },
+      "validationPass": "corrected-curated-order-and-navigation-only"
+    },
+    {
+      "name": "site-desktop-light: refresh, preferences, history and first tools placement",
+      "passed": true,
+      "evidence": {
+        "activeOrderMatches": true,
+        "firstAfterRankedSeries": "infospace",
+        "neighbors": [
+          "dreamro",
+          "infospace",
+          "signoff-now"
+        ],
+        "toolsFilterFirst": "bat",
+        "directoryURL": "http://127.0.0.1:7048/?category=tools",
+        "galleryURL": "http://127.0.0.1:7048/logos/infospace",
+        "refresh": true,
+        "history": true,
+        "themeAndLocalePersist": true
+      },
+      "validationPass": "corrected-curated-order-and-navigation-only"
+    },
+    {
+      "name": "site-desktop-dark: refresh, preferences, history and first tools placement",
+      "passed": true,
+      "evidence": {
+        "activeOrderMatches": true,
+        "firstAfterRankedSeries": "infospace",
+        "neighbors": [
+          "dreamro",
+          "infospace",
+          "signoff-now"
+        ],
+        "toolsFilterFirst": "bat",
+        "directoryURL": "http://127.0.0.1:7048/?category=tools",
+        "galleryURL": "http://127.0.0.1:7048/logos/infospace",
+        "refresh": true,
+        "history": true,
+        "themeAndLocalePersist": true
+      },
+      "validationPass": "corrected-curated-order-and-navigation-only"
+    },
+    {
+      "name": "site-mobile-light: refresh, preferences, history and first tools placement",
+      "passed": true,
+      "evidence": {
+        "activeOrderMatches": true,
+        "firstAfterRankedSeries": "infospace",
+        "neighbors": [
+          "dreamro",
+          "infospace",
+          "signoff-now"
+        ],
+        "toolsFilterFirst": "bat",
+        "directoryURL": "http://127.0.0.1:7048/?category=tools",
+        "galleryURL": "http://127.0.0.1:7048/logos/infospace",
+        "refresh": true,
+        "history": true,
+        "themeAndLocalePersist": true
+      },
+      "validationPass": "corrected-curated-order-and-navigation-only"
+    },
+    {
+      "name": "site-mobile-dark: refresh, preferences, history and first tools placement",
+      "passed": true,
+      "evidence": {
+        "activeOrderMatches": true,
+        "firstAfterRankedSeries": "infospace",
+        "neighbors": [
+          "dreamro",
+          "infospace",
+          "signoff-now"
+        ],
+        "toolsFilterFirst": "bat",
+        "directoryURL": "http://127.0.0.1:7048/?category=tools",
+        "galleryURL": "http://127.0.0.1:7048/logos/infospace",
+        "refresh": true,
+        "history": true,
+        "themeAndLocalePersist": true
+      },
+      "validationPass": "corrected-curated-order-and-navigation-only"
+    }
+  ],
+  "diagnostics": [],
+  "screenshots": [
+    "site-desktop-light-directory-placement.png",
+    "site-desktop-light-tools-placement.png",
+    "site-desktop-dark-directory-placement.png",
+    "site-desktop-dark-tools-placement.png",
+    "site-mobile-light-directory-placement.png",
+    "site-mobile-light-tools-placement.png",
+    "site-mobile-dark-directory-placement.png",
+    "site-mobile-dark-tools-placement.png"
+  ]
+}
