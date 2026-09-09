@@ -1,0 +1,102 @@
+{
+	"project": "showtime",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/showtime-initial.png",
+	"background": {
+		"base": "#dce8d1",
+		"light": "#f0f5e8",
+		"shade": "#c6d8ba",
+		"motif": "#61bb46",
+		"grainAmplitude": 0.7,
+		"grainSeed": 60910002,
+		"motifOpacity": 0.3,
+		"highlightOpacity": 0.36,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Film gate and cue marks",
+			"description": "Open film-gate registration brackets, a narrow perforation rhythm and offset editing-cue lines on pale sage paper. Green belongs to this independent presentation, while the clapperboard stays black and ivory.",
+			"layers": [
+				{
+					"d": "M73 244V100H273 M752 100H951V262 M73 790V931H249 M780 931H951V762",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M76 245V103H273 M755 103H948V262 M76 790V928H249 M780 928H948V762",
+					"tone": "highlight",
+					"strokeWidth": 1.3
+				},
+				{
+					"d": "M56 334h22v15H56z M56 392h22v15H56z M56 450h22v15H56z M56 508h22v15H56z M56 566h22v15H56z M56 624h22v15H56z M56 682h22v15H56z",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M948 334h22v15H948z M948 392h22v15H948z M948 450h22v15H948z M948 508h22v15H948z M948 566h22v15H948z M948 624h22v15H948z M948 682h22v15H948z",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M132 221h208 M132 234h148 M667 873h202 M728 886h141",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M136 220h208 M136 233h148 M671 872h202 M732 885h141",
+					"tone": "highlight",
+					"strokeWidth": 0.8
+				},
+				{
+					"d": "M389 118h45 M411 96v45 M865 294h28 M879 280v28 M142 865h28 M156 851v28",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M115 161h22v8h-22z M893 842h22v8h-22z",
+					"tone": "motif"
+				},
+				{
+					"d": "M121 268H924V280H121z M124 905H901V911H124z",
+					"tone": "ribbon"
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [91, 120, 79],
+			"opacity": 0.19,
+			"blurAt2048": 48,
+			"offsetAt2048": [12, 28]
+		},
+		{
+			"color": [83, 111, 71],
+			"opacity": 0.13,
+			"blurAt2048": 16,
+			"offsetAt2048": [3, 10]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.92,
+		"offsetAt2048": [-8, 14],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "The complete board, raised stick and hinge share one uniform placement. Require at least 128 px clearance against the actual rounded outline without cropping or changing the native drawing."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 64,
+		"calibrationNote": "Modal native outer-eight-pixel matte is (251,252,252). Use only exterior-connected extraction; ivory stripes, printed lettering and metal highlights are opaque surfaces protected by the board's dark contour. Inspect all pale surfaces and the open gap between the sticks; do not globally delete white or remove unreviewed components. Inspected all 31 disconnected residue regions (215 native pixels, minimum RGB channel 241) on a native crop contact sheet. They are near-white exterior noise and fringe, not opaque lettering or physical details. The 64-pixel component threshold removes only these regions; the complete 2,164,172-pixel object remains connected.",
+		"cleanupEvidence": "inspection/cleanup-01.json"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"status": "failed",
+	"recordedAt": "2026-09-09T23:38:20.929725+00:00",
+	"error": "Insufficient rounded-corner clearance: 57.8 pixels",
+	"cause": "31 near-white disconnected native residue regions, including pixels along the top canvas edge.",
+	"inspection": "../../inspection/cleanup-01.json",
+	"nextPass": "02",
+	"files": [
+		{
+			"path": "alpha-mask.png",
+			"bytes": 58196,
+			"sha256": "2bee980f6c7c84ff2a079160f186bd388a7616d7315c763e60aa15f534540567"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1639424,
+			"sha256": "32e1123ee39167756323145196f02cf806b1a4044e37b7da5035caacc2737db6"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1666,
+			"sha256": "1f6695148c1f2c6867c2ad8398870c695b0cc446529903eb7ece22817d418f0d"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4452918,
+			"sha256": "f843d61338dbc5906e733fbbc6eec7b2a77dcfcb116e02e0f0a40ebe778a16ac"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 883,
+			"sha256": "3b99f6a92a0f175a08bfffe083a2adc817752e7818f0ce878eb31f36350754f0"
+		},
+		{
+			"path": "settings.json",
+			"bytes": 3179,
+			"sha256": "135a7d3f7e3571086a96f98f1e20cfd79e3f34c5f7ecfa02a9cb3d048787bc6c"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		}
+	]
+}

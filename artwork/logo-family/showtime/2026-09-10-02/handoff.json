@@ -1,0 +1,44 @@
+{
+	"createdAt": "2026-09-09T23:41:44.627951+00:00",
+	"study": "showtime/2026-09-10-02",
+	"finishing": "03",
+	"ownerDecision": "审查通过，继续",
+	"rawReview": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/raw-review.json",
+	"agentPane": "w2H:p1",
+	"files": [
+		{
+			"source": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/finishing/03/exports/showtime-transparent-2048.png",
+			"destination": "logo.png",
+			"role": "Canonical transparent master; small interface marks use foreground derivatives.",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+			"bytes": 3865252
+		},
+		{
+			"source": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/finishing/03/exports/showtime-rounded-2048.png",
+			"destination": "logo-readme.png",
+			"role": "Large README presentation; both READMEs already reference this root path.",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "a618e7ed11ca0499a1e7d5416893615574eb7bfb07fab31ad6a16b83bbfbbbb6",
+			"bytes": 5149307
+		},
+		{
+			"source": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/finishing/03/exports/showtime-icon-2048.png",
+			"destination": null,
+			"role": "Square presentation master for platform-specific native icon generation.",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "dac1159f54289eb8fd6e03b81b7c95565d970023b34eefc463346e01fb8b1d23",
+			"bytes": 5212157
+		}
+	],
+	"scope": "Showtime Codex installs root masters and actual Swift/macOS icon consumers, commits its icon work separately, and decides its own release. Hexly Codex owns both README documents, profile and Hexly publication.",
+	"validation": {
+		"minimumRoundedClearanceAt2048": 178.49950160704248,
+		"clippedPixels": 0,
+		"opaqueNativeRgbChanges": 0,
+		"standardExportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16]
+	}
+}

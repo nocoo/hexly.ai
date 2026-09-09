@@ -1,0 +1,71 @@
+{
+	"createdAt": "2026-09-09T23:48:42.460Z",
+	"base": "https://index.dev.hexly.ai",
+	"browser": "Google Chrome via Playwright",
+	"sourceApplicationStatus": "Root masters copied; application consumer commit pending",
+	"checks": [
+		{
+			"surface": "static review",
+			"layout": "desktop",
+			"modes": ["icon", "transparent", "white"],
+			"themes": ["light", "dark"],
+			"imageDecode": true,
+			"noHorizontalOverflow": true,
+			"exactPrompt": true,
+			"clipboard": "#61BB46",
+			"transparentDownloadSha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"surface": "catalogue",
+			"layout": "desktop",
+			"modes": ["icon", "transparent", "white"],
+			"languages": ["en", "zh"],
+			"themes": ["light", "dark"],
+			"imageDecode": true,
+			"noHorizontalOverflow": true,
+			"presentationReferencesExcluded": true,
+			"clipboard": "#61bb46",
+			"pageErrors": []
+		},
+		{
+			"surface": "static review",
+			"layout": "mobile",
+			"modes": ["icon", "transparent", "white"],
+			"themes": ["light", "dark"],
+			"imageDecode": true,
+			"noHorizontalOverflow": true,
+			"exactPrompt": true,
+			"clipboard": "#61BB46",
+			"transparentDownloadSha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"surface": "catalogue",
+			"layout": "mobile",
+			"modes": ["icon", "transparent", "white"],
+			"languages": ["en", "zh"],
+			"themes": ["light", "dark"],
+			"imageDecode": true,
+			"noHorizontalOverflow": true,
+			"presentationReferencesExcluded": true,
+			"clipboard": "#61bb46",
+			"pageErrors": []
+		}
+	],
+	"visualInspection": {
+		"reviewer": "Hexly Codex",
+		"screenshots": [
+			"catalogue-desktop-en-light.png",
+			"catalogue-mobile-zh-dark.png",
+			"static-desktop-light.png"
+		],
+		"findings": "The entire clapperboard, lettering and hinge remain visible on the pale green field. Transparent marks retain the striped stick and slate silhouette. Light/dark edge specimens show no visible detached white fringe. Mobile comparison, overview and technology labels fit their containers. Small production lettering merges at favicon sizes as documented."
+	},
+	"automatedGalleryRegression": {
+		"command": "bun run test:browser --grep 'compares refined showtime'",
+		"configuration": "playwright.config.ts",
+		"server": "isolated Wrangler test environment on 127.0.0.1:27048",
+		"projects": ["desktop", "mobile"],
+		"passed": 2,
+		"failed": 0
+	}
+}
