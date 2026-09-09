@@ -259,11 +259,14 @@ test("keeps repository clicks separate and supports card links in another tab", 
 	await expect(repository).toHaveURL("https://github.com/nocoo/pew");
 	await expect(page).toHaveURL(/\/$/);
 	await repository.close();
+	await context.unroute("https://github.com/nocoo/pew");
+	await page.bringToFront();
 	const detailPage = context.waitForEvent("page");
 	await card
 		.getByRole("link", { name: "View logo: Pew" })
 		.click({ button: "middle" });
 	const detail = await detailPage;
+	await detail.bringToFront();
 	await detail.waitForURL(/\/logos\/pew\/?$/, {
 		waitUntil: "domcontentloaded",
 		timeout: 15_000,
