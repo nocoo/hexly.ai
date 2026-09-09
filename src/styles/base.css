@@ -261,7 +261,7 @@ a {
 	border: 1px solid transparent;
 	border-radius: 8px;
 	background: transparent;
-	color: var(--muted);
+	color: color-mix(in srgb, var(--muted) 80%, var(--ink));
 	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: -0.2px;
