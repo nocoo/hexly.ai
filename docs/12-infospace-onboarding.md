@@ -1,0 +1,104 @@
+# InfoSpace onboarding
+
+## Scope and source baseline
+
+On 2026-09-09 the owner requested a local run check, a README review against the shared template, a new catalogue entry at the start of the tools group, and a refined physical-object logo. The logo must use continuous materials: no animal and no fragmented drawing.
+
+All repositories were clean on `main` when inspected. `git pull --ff-only origin main` succeeded before changes.
+
+| Repository | Inspected revision | Purpose |
+| --- | --- | --- |
+| `nocoo/infospace` | `0d25de0f63e20979fd81c1c295e5bc84132efb3a` | SDK, demo, README, original SVG and theme evidence |
+| `nocoo/hexly.ai` | `0221e4973dd66af3b17ebc42961f0321ead3be4e` | Catalogue and existing physical-object identities |
+| `nocoo/nocoo` | `47d39a7882e16a17d62b9a4207b81480ba5afedd` | Existing InfoSpace profile entry and description |
+
+GitHub metadata confirms a public, non-fork, non-archived repository with `main` as its default branch. No project website is configured. Catalogue navigation should open the repository; neither a presumed domain nor the local demo is a website.
+
+## Product findings
+
+InfoSpace is a native macOS workspace SDK and demonstration app. It supplies reusable layout and SwiftUI components so a host app can place its own information views in adjustable panels. It is not a hosted information service.
+
+| Finding | Source |
+| --- | --- |
+| Swift 6.3 tools, macOS 26+, Core/UI libraries and an executable | `Package.swift` |
+| Grid geometry, stable panel identities and observable layout state | `Sources/InfoSpaceCore/` |
+| Draggable dividers, snapping, panel controls and customizable content | `Sources/InfoSpaceUI/InfoSpaceCanvas.swift`, `SpacePanel.swift`, `SpaceResizeHandle.swift` |
+| Host-provided workspace regions, toolbar and footer | `InfoSpaceWorkspace.swift`, `InfoSpaceToolbar.swift`, `InfoSpaceFooter.swift` |
+| Native window integration | `InfoSpaceWindow.swift`, `NativeWindowAttachment.swift` |
+| Four kinds of sample content; note and task edits held in SwiftUI state | `App/DemoPanelContent.swift` |
+| A dark demo, adjustable grid and native menu shortcuts | `App/InfoSpaceApp.swift`, `App/WorkspaceView.swift` |
+| Core tests, compiled integration examples and native inspection script | `Tests/InfoSpaceCoreTests/`, `Examples/`, `scripts/check.sh`, `scripts/verify-ui.py` |
+
+`package.json` stores version and release metadata. Bun and Node.js are not application dependencies and do not belong in the product stack.
+
+The demo has no persistence across launches. Its sample inbox, progress and schedule are demonstration content, not connected services. Screenshot freezing during divider drag is not implemented. Public copy must retain these boundaries.
+
+## README review
+
+Both language versions already exist, including a root Chinese README and `docs/README.en.md`. The current root logo is a small four-panel SVG, not a finished physical-object identity.
+
+Required adjustments against [the shared template](readme-refresh/template.md):
+
+- Use the standard sequence: What it does, Features, Usage, Development, Tests, Stack, Documentation and License.
+- Keep the language link near the title. There is no verified website to precede it.
+- Move installation and shortcuts into Usage, and useful directory information into Development.
+- Remove the hardcoded passing-test badge and counts from the README.
+- Keep the actual commands for static checks, core tests, compiled examples and native UI inspection, with the necessary toolchain and GUI prerequisites.
+- Keep quality-policy, benchmark implementation and release-process detail out of the README. Do not describe 6DQ there.
+- Preserve equivalent facts, commands and relative links in both languages.
+
+## Local verification
+
+Verification passed against a clean archive of the inspected commit in a fresh temporary directory. The existing checkout's `.build/`, `.swiftpm/`, `.local/` and generated Xcode project were not used or changed. The complete [runtime review](research/infospace-2026-09-09/runtime.md) records the toolchain, commands, results and limits.
+
+| Check | Status |
+| --- | --- |
+| Xcode, Swift, XcodeGen and SwiftLint availability | Xcode 26.6, Swift 6.3.3, XcodeGen 2.46.0, SwiftLint 0.65.1 |
+| `./scripts/check.sh` | Passed: strict lint, 51 core tests, example compilation and SwiftPM Release build |
+| `./scripts/build.sh -quiet` | Passed: native Debug application bundle |
+| `python3 scripts/verify-ui.py --output <fresh-directory>` | Passed: 36 checks and 15 window captures |
+| Native app launch | Passed as part of the dedicated inspection process |
+
+Native inspection launched and closed its own demonstration window; the two existing app instances were left running. It uses events addressed to its own window, not system Accessibility end-to-end automation. Root reviewed the baseline and minimum-track screenshots and confirmed that narrow panels condense while the large panel keeps its content. The site's existing Vite server remains available at `https://index.dev.hexly.ai`.
+
+## Catalogue and profile plan
+
+Insert `infospace` immediately before `signoff-now` in the catalogue index. The existing sorter already places animals, templates and games first, then preserves the input order for the tools. This places InfoSpace first in that final group without changing the popularity snapshot or the relative order of any existing project. The profile generator matches existing filenames by stable ID, so the insertion does not renumber them. Use category `tools`, the existing `🗂️` emoji, the evidenced repository link, bilingual product facts and a verified overview.
+
+The GitHub profile already contained InfoSpace in Recent Projects. Commit `e3e92cf41ced9400940b18904f1c97453f3b5903` moves only that entry immediately before `signoff.now`, preserving its text, every other line and the Games section in its current position. The commit is pushed and recorded in the new catalogue entry. The [profile snapshot](sources/nocoo-readme-2026-09-09-infospace.json) records the targeted comparison.
+
+Preserve `logo.svg` byte-for-byte in the original-artwork archive. A future approved bitmap uses a new source filename and commit; do not rewrite the original SVG's history. A pending image must not be labeled adopted or published.
+
+## Logo direction and execution
+
+The proposed object is a compact desktop information tray with sliding dividers: a deep-indigo metal frame, four uneven bays with a few colored paper cards, and a small tactile adjustment handle. The movable partition represents resizing; the contained cards represent host-provided information. Broad, quiet surfaces and a readable silhouette should work at small sizes.
+
+Reference the real app for its four-panel relationship and muted indigo, green, terracotta and lilac palette. Reference the existing Signoff counter for believable metal, careful edges and restrained product lighting. The collection's presentation boards inform later paper texture and framing. Do not copy another project's subject or motif.
+
+The separate presentation will use a cool paper field with offset panel outlines and short alignment ticks. Its exact colors are design proposals until an accepted image is sampled. The actual demo background is `Color(red: 0.075, green: 0.085, blue: 0.11)` in `InfoSpaceTheme.dark`; its controls use a white accent. Keep application tokens separate from artwork samples.
+
+The [study brief](../artwork/logo-family/infospace/2026-09-09-01/brief.md) and [exact proposed prompt](../artwork/logo-family/infospace/2026-09-09-01/prompt.txt) are prepared before any generation call. This session has no built-in image-generation tool. The imagegen skill requires explicit confirmation before switching to an API route. No generation request has been made, and no prior batch waiver applies to InfoSpace.
+
+After route confirmation, generate one native source and immediately show its untouched bytes. The repository contract requires approval of that exact image before extraction, background composition, icon exports or catalogue use. Then create the transparent source, presentation masters, ten export sizes, full static and site reviews, and actual macOS app icon consumers.
+
+## Delivery checklist
+
+1. Complete the local verification and record actual outcomes.
+2. Review and apply matching Chinese and English README edits.
+3. Prepare catalogue metadata, ordering and profile synchronization.
+4. Generate and obtain the required raw-image decision.
+5. Finish and review the accepted logo at artwork, app-icon and small-icon sizes.
+6. Adopt the source logo, verify native consumers and record immutable provenance.
+7. Run asset/profile generators and required site checks; review all diffs.
+8. Complete authorized commits and pushes after a fresh pull; distinguish source pushes from site deployment in the delivery record.
+
+No repository version change is part of this addition. The hexly.ai `v0.5.0` release tag predates InfoSpace; this catalogue addition follows the normal `main` publication path without a new release tag.
+
+## Delivery progress
+
+- The README revision is published in `nocoo/infospace` at `86efacf28592243b9c7e12a2837d975eb190521f`; [its CI passed](https://github.com/nocoo/infospace/actions/runs/34299084163). The code and version remain at the inspected baseline.
+- The profile order is published at `e3e92cf41ced9400940b18904f1c97453f3b5903`.
+- The local site catalogue contains InfoSpace with its preserved source SVG, goal and seven stack badges. Asset generation, profile generation, TypeScript, full lint and all 92 existing unit tests passed.
+- Asset verification passed for all 70 source checksums, 420 derivatives, 54 historical public archives and 92 finishing passes. No unrelated artwork or project profile changed.
+- The [local browser review](research/infospace-2026-09-09/browser/report.json) passed all eight desktop/mobile, light/dark and English/Chinese overview combinations. It checked all seven badge labels and translated roles, both README links, zero horizontal overflow, the actual 50-card order, tools filtering, navigation and refresh. Root inspected the desktop English and 320 px dark Chinese captures. No browser page errors occurred.
+- The resulting site commit proceeds through the required pre-push HTTP/security checks and CI deployment before any claim of publication. The proposed new physical-object image remains ungenerated while the execution-route question is pending.
