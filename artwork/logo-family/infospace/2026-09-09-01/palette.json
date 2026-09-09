@@ -1,0 +1,93 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727",
+		"width": 2048,
+		"height": 2048,
+		"colorSpace": "sRGB",
+		"sampling": "Exact native opaque pixels by visible material role; alpha and RGB equality verified against the finished transparent master."
+	},
+	"artwork": [
+		{
+			"label": {
+				"en": "Indigo metal",
+				"zh": "靛蓝金属"
+			},
+			"role": "primary",
+			"color": "#373e55",
+			"pixel": [1040, 1540],
+			"rgb": [55, 62, 85],
+			"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727"
+		},
+		{
+			"label": {
+				"en": "Brushed nickel",
+				"zh": "拉丝镍色"
+			},
+			"role": "accent",
+			"color": "#c1b6b1",
+			"pixel": [1265, 810],
+			"rgb": [193, 182, 177],
+			"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727"
+		},
+		{
+			"label": {
+				"en": "Indigo card",
+				"zh": "靛蓝纸卡"
+			},
+			"role": "accent",
+			"color": "#5f6da3",
+			"pixel": [700, 700],
+			"rgb": [95, 109, 163],
+			"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727"
+		},
+		{
+			"label": {
+				"en": "Sea-green card",
+				"zh": "海绿纸卡"
+			},
+			"role": "accent",
+			"color": "#689088",
+			"pixel": [1420, 650],
+			"rgb": [104, 144, 136],
+			"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727"
+		},
+		{
+			"label": {
+				"en": "Terracotta card",
+				"zh": "陶土色纸卡"
+			},
+			"role": "accent",
+			"color": "#d8815c",
+			"pixel": [760, 1050],
+			"rgb": [216, 129, 92],
+			"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727"
+		},
+		{
+			"label": {
+				"en": "Lilac card",
+				"zh": "浅紫纸卡"
+			},
+			"role": "accent",
+			"color": "#9d7ca8",
+			"pixel": [1450, 1100],
+			"rgb": [157, 124, 168],
+			"sourceSha256": "f35f20b193b21bbe25cb6d2ab77412cb7051ed35de8e154249407a8735ece727"
+		}
+	],
+	"presentation": {
+		"base": "#c6cddd",
+		"light": "#e8ecf5",
+		"shade": "#a8b6cb",
+		"motif": "#657895",
+		"pattern": "Adjustable spaces",
+		"status": "Selected finishing 01 under the owner's complete adoption instruction; publication is tracked separately."
+	},
+	"application": {
+		"primary": "#ffffff",
+		"background": "#13161c",
+		"ink": "#ffffff",
+		"source": "Sources/InfoSpaceUI/InfoSpaceStyle.swift: InfoSpaceTheme.dark, selected by App/WorkspaceView.swift",
+		"status": "Existing native demo theme; no project website is configured. These tokens are independent of the artwork palette."
+	}
+}
