@@ -15,7 +15,9 @@ export type IconName =
 	| "settings"
 	| "left"
 	| "right"
-	| "languages";
+	| "languages"
+	| "grid"
+	| "image";
 
 const paths: Record<IconName, string> = {
 	arrow: "M5 19 19 5M5 5h14v14",
@@ -39,6 +41,9 @@ const paths: Record<IconName, string> = {
 	left: "m14 6-6 6 6 6",
 	right: "m10 6 6 6-6 6",
 	languages: "m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6",
+	grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z",
+	image:
+		"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2ZM3 16l5-5 4 4 3-3 6 6M15 7h.01",
 };
 
 export function Icon({

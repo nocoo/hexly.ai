@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
@@ -53,11 +53,9 @@ export function App() {
 	const { locale, theme } = preferences;
 	const t = copy[locale];
 	const projects = catalogue.status === "ready" ? catalogue.projects : [];
-	const visible = filterProjects(
-		projects,
-		state.query,
-		state.category,
-		state.sort,
+	const visible = useMemo(
+		() => filterProjects(projects, state.query, state.category, state.sort),
+		[projects, state.query, state.category, state.sort],
 	);
 
 	useLayoutEffect(() => {

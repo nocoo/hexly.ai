@@ -63,12 +63,18 @@
 	font-size: 11px;
 }
 .project-picker {
+	position: relative;
 	display: flex;
 	gap: 8px;
 	overflow-x: auto;
+	overflow-anchor: none;
 	padding: 5px 3px 10px;
 	scrollbar-width: thin;
 	scrollbar-color: var(--line) transparent;
+}
+.project-picker:not(:empty)::after {
+	content: "";
+	flex: 0 0 max(0px, calc(100% - var(--picker-last-width, 0px) - 8px));
 }
 .picker-item {
 	flex-shrink: 0;
