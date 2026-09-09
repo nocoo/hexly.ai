@@ -1,0 +1,58 @@
+{
+  "failedRun": "https://github.com/nocoo/hexly.ai/actions/runs/34305941705",
+  "revision": "6afc64de1425c46fe739d72dded2c02758f6bef0",
+  "browser": {
+    "passed": 163,
+    "failed": 1,
+    "total": 164
+  },
+  "failedTest": "[mobile] tests/browser/site.spec.ts:243 — keeps repository clicks separate and supports card links in another tab",
+  "failure": "The test timed out after 30000 ms waiting for the middle-click browser context page event after closing the GitHub popup.",
+  "documentRequests": [
+    {
+      "url": "http://127.0.0.1:27048/",
+      "status": 200,
+      "durationMs": 37.502,
+      "failure": null
+    },
+    {
+      "url": "https://github.com/nocoo/pew",
+      "status": 200,
+      "durationMs": 15.551,
+      "failure": null
+    },
+    {
+      "url": "http://127.0.0.1:27048/logos/pew",
+      "status": 200,
+      "durationMs": 56.629,
+      "failure": null
+    }
+  ],
+  "traceSha256": "ad04ba7d1cc44db9d361f900252bf871cdfa48630a570a0c2264c3397ea44db9",
+  "observations": [
+    "The application and public assets are byte-identical to the successfully deployed 1ecfb13; this run added only publication documentation.",
+    "Both failures reached /logos/pew with HTTP 200 after the middle click.",
+    "The later trace emitted the repository popup and close events but no subsequent page event within the test timeout.",
+    "The traces do not prove a specific Chromium or interception defect."
+  ],
+  "testChange": [
+    "Remove the completed GitHub request mock after closing its popup.",
+    "Activate the directory page before the real middle click.",
+    "Activate the resulting detail page before waiting for its document."
+  ],
+  "preserved": [
+    "Real middle-click action in both desktop and mobile projects",
+    "Repository destination and source-page URL assertions",
+    "Detail-page URL and Pew heading assertions",
+    "Existing 15000 ms navigation timeout, default test timeout, zero retries and all CI gates"
+  ],
+  "localVerification": {
+    "command": "bunx playwright test tests/browser/site.spec.ts --grep 'keeps repository clicks separate' --repeat-each 8",
+    "passed": 16,
+    "failed": 0,
+    "desktop": 8,
+    "mobile": 8,
+    "report": "focused-verification.txt"
+  },
+  "publication": "The GitHub Actions workflow attached to the commit containing this correction records full quality, browser and Deploy outcomes. Local repetition alone is not publication evidence."
+}
