@@ -6,7 +6,7 @@
 	"publishedSourceAndProfile": true,
 	"siteDeployment": "verified on https://hexly.ai",
 	"siteVersion": "0.5.0",
-	"newLogo": "Approved, finished, adopted and pushed to InfoSpace; Hexly deployment pending",
+	"newLogo": "Approved, adopted and pushed to InfoSpace; verified in Hexly production",
 	"successfulSiteRun": "https://github.com/nocoo/hexly.ai/actions/runs/34300696343",
 	"productionCommand": "bun run verify:production",
 	"productionCommandExitCode": 0,
@@ -38,5 +38,25 @@
 		"currentDiagnostics": 0,
 		"reviewedSourceSnapshotsMatch": true,
 		"ownerAccepted": true
+	},
+	"siteCommitScope": "The siteCommit and productionBrowserReport fields record the earlier SVG deployment; newLogoSiteCommit and newLogoProductionReport identify the approved image rollout.",
+	"newLogoSiteCommit": "1ecfb136894a3af509050aeaa1d14e5c04e8a9e5",
+	"newLogoSiteRun": "https://github.com/nocoo/hexly.ai/actions/runs/34304827154",
+	"newLogoSiteRunAttempt": 2,
+	"newLogoSiteCI": "passed",
+	"newLogoSiteDeploy": "passed",
+	"newLogoProductionReport": "logo-production/report.json",
+	"newLogoProductionCommandExitCode": 0,
+	"newLogoProductionAssetChecks": 17,
+	"newLogoPublishedSourceMatches": true,
+	"newLogoBrowserCI": {
+		"status": "passed",
+		"checks": 164,
+		"initialAttempt": {
+			"passed": 163,
+			"failed": 1,
+			"evidence": "logo-production/ci-attempt-1/report.json"
+		},
+		"rerun": "The complete browser job passed on the same commit with unchanged code, assertions and test configuration."
 	}
 }

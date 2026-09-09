@@ -1,0 +1,67 @@
+{
+  "run": "https://github.com/nocoo/hexly.ai/actions/runs/34304827154/attempts/1",
+  "revision": "1ecfb136894a3af509050aeaa1d14e5c04e8a9e5",
+  "browser": {
+    "passed": 163,
+    "failed": 1,
+    "total": 164
+  },
+  "failedTest": "[mobile] tests/browser/site.spec.ts:243 — keeps repository clicks separate and supports card links in another tab",
+  "failure": "page.waitForURL(/\\/logos\\/pew\\/?$/) exceeded 15000 ms for the middle-click tab",
+  "documentRequests": [
+    {
+      "url": "http://127.0.0.1:27048/",
+      "status": 200,
+      "failure": null,
+      "durationMs": 40.545
+    },
+    {
+      "url": "https://github.com/nocoo/pew",
+      "status": 200,
+      "failure": null,
+      "durationMs": 27.524
+    },
+    {
+      "url": "http://127.0.0.1:27048/logos/pew",
+      "status": 200,
+      "failure": null,
+      "durationMs": 24.016
+    }
+  ],
+  "localRecheck": {
+    "command": "bunx playwright test tests/browser/site.spec.ts --grep 'keeps repository clicks separate'",
+    "passed": 2,
+    "failed": 0,
+    "sourceAndAssertionsUnchanged": true
+  },
+  "action": "Rerun the failed remote job for the same commit. No timeouts, retries, assertions, configuration or application code were changed.",
+  "causalLimit": "The trace confirms a new page event and the correct detail-page HTTP 200 response, but does not establish why the browser navigation wait timed out.",
+  "files": {
+    "trace.zip": {
+      "bytes": 2179012,
+      "sha256": "77f9949d365123ba030de97ceb4412cd7c10629a56dbf66de9f05eba020dddb4"
+    },
+    "error-context.md": {
+      "bytes": 58409,
+      "sha256": "8365d30c94696b33ad6ebac22d007e0e48e137d5957ceb5c8b1d564752ce9cbf",
+      "originalSha256": "a149c2e18a081b18581c13c4232a415adefed5f8db880757ec23a86465ae7f18",
+      "normalization": "Removed trailing spaces from the readable Markdown copy. The original trace.zip and screenshot are unchanged."
+    },
+    "test-failed-1.png": {
+      "bytes": 1327217,
+      "sha256": "d207adaa9610a2bcde0cc293cbef2daf438334588899bc3bf6b37cbcccf6f4d0"
+    },
+    "local-recheck.txt": {
+      "bytes": 660,
+      "sha256": "bf420de9590d01954869b7130d3351b2cd5b8ccc445d4b94165df651caabdb18"
+    }
+  },
+  "remoteRecheck": {
+    "run": "https://github.com/nocoo/hexly.ai/actions/runs/34304827154/attempts/2",
+    "revision": "1ecfb136894a3af509050aeaa1d14e5c04e8a9e5",
+    "browserJob": 102320541424,
+    "browserConclusion": "success",
+    "completedAt": "2026-09-09T03:03:23Z",
+    "sameCodeAndAssertions": true
+  }
+}
