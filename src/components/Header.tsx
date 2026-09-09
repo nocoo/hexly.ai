@@ -39,6 +39,28 @@ export function Header({
 							<span className="brand-domain">ai</span>
 						</span>
 					</a>
+					<nav className="view-links" aria-label={t.views}>
+						<button
+							type="button"
+							onClick={() => onView("directory")}
+							aria-pressed={view === "directory"}
+							aria-label={t.directory}
+							title={t.directory}
+						>
+							<Icon name="grid" />
+							<span className="view-link-label">{t.directory}</span>
+						</button>
+						<button
+							type="button"
+							onClick={() => onView("logos")}
+							aria-pressed={view === "logos"}
+							aria-label={t.gallery}
+							title={t.gallery}
+						>
+							<Icon name="image" />
+							<span className="view-link-label">{t.gallery}</span>
+						</button>
+					</nav>
 					<SurfaceLinks locale={locale} onPortfolio={home} />
 					<div className="preferences">
 						<button
@@ -63,22 +85,6 @@ export function Header({
 					</div>
 				</div>
 			</div>
-			<nav className="view-links shell" aria-label={t.views}>
-				<button
-					type="button"
-					onClick={() => onView("directory")}
-					aria-pressed={view === "directory"}
-				>
-					{t.directory}
-				</button>
-				<button
-					type="button"
-					onClick={() => onView("logos")}
-					aria-pressed={view === "logos"}
-				>
-					{t.gallery}
-				</button>
-			</nav>
 		</header>
 	);
 }
