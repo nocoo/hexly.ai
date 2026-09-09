@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.5.1] - 2026-09-09
+
+### Features
+
+- add InfoSpace to the tools catalogue ([df9b860](https://github.com/nocoo/hexly.ai/commit/df9b86012d43076f9a461ee8ac92ef050ca36155))
+- adopt InfoSpace material identity ([1ecfb13](https://github.com/nocoo/hexly.ai/commit/1ecfb136894a3af509050aeaa1d14e5c04e8a9e5))
+
+### Fixes
+
+- use patched sharp throughout the tooling graph ([9c8c969](https://github.com/nocoo/hexly.ai/commit/9c8c96941b72538cb008d28dd007291499bb9fc6))
+- align responsive navigation and gallery picker ([5a69c5f](https://github.com/nocoo/hexly.ai/commit/5a69c5f191d0e65a6859f1081193b696c772e539))
+
+### Tests
+
+- check alphabetical order across all active projects ([6813c9d](https://github.com/nocoo/hexly.ai/commit/6813c9d1e30fd649f05d08ee294e1441544ec0a5))
+- stabilize card popup transitions ([99dae88](https://github.com/nocoo/hexly.ai/commit/99dae881ce81c137afad73605ce8892762487d64))
+
+### Documentation
+
+- record InfoSpace logo publication ([6afc64d](https://github.com/nocoo/hexly.ai/commit/6afc64de1425c46fe739d72dded2c02758f6bef0))
+
 ## [0.5.0] - 2026-09-08
 
 ### Features
