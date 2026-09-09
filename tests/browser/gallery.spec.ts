@@ -356,10 +356,11 @@ test("keeps the artwork in place when descriptions wrap or projects change", asy
 }) => {
 	if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
 	await page.goto("/logos/frogie");
-	await page.evaluate(() => document.fonts.ready);
 	for (const locale of ["en", "zh"]) {
 		if (locale === "zh")
 			await page.getByRole("button", { name: "Switch to Chinese" }).click();
+		// Switching locale loads the CJK font before layout can be measured.
+		await page.evaluate(() => document.fonts.ready);
 		await page.locator(".identity-github").focus();
 		await page.evaluate(() =>
 			window.scrollTo({ top: 300, behavior: "instant" }),
