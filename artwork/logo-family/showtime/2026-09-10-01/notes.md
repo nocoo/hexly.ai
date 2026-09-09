@@ -6,6 +6,6 @@ The untouched image shows a green enamel slate with a shallow three-quarter view
 
 The raw background is near-white and remains unmodified. Its exact matte and pale inlay boundaries must be assessed during finishing after approval. A later rounded presentation needs measured clearance, not an assumption based on the raw square.
 
-The raw file and native link were shown immediately. The owner was asked whether to use this image; `raw-review.json` remains pending. No derived artwork or full review page has been produced. Product-source capture and the baseline catalogue entry are independent preparations.
+The raw file and native link were shown immediately. The owner rejected this green-board direction and requested a fresh classic black-and-white clapperboard with some lettering, reserving green for the later presentation background. `raw-review.json` records the rejection, exact feedback and previous pending state. No derived artwork or full review page was produced from this image. Study `2026-09-10-02` contains the replacement request; this study and its raw bytes remain historical evidence.
 
 The source UI began a concurrent green-theme update during this task. Its new tokens are recorded in the separate catalogue source snapshot. The attempted theme edit did not apply and did not overwrite those changes. Showtime's staged initial files and README remain under the original development task.
