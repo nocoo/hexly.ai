@@ -1,0 +1,400 @@
+{
+	"createdAt": "2026-09-09T23:39:39.541Z",
+	"pass": "03",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "0ff9ef4fa0f689a018f4dae092220dc6ebf80fe88828bdbc691081213bcf072a",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "showtime",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/showtime-initial.png",
+		"background": {
+			"base": "#dce8d1",
+			"light": "#f0f5e8",
+			"shade": "#c6d8ba",
+			"motif": "#61bb46",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60910002,
+			"motifOpacity": 0.3,
+			"highlightOpacity": 0.36,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Film gate and cue marks",
+				"description": "Open film-gate registration brackets, a narrow perforation rhythm and offset editing-cue lines on pale sage paper. Green belongs to this independent presentation, while the clapperboard stays black and ivory.",
+				"layers": [
+					{
+						"d": "M73 244V100H273 M752 100H951V262 M73 790V931H249 M780 931H951V762",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M76 245V103H273 M755 103H948V262 M76 790V928H249 M780 928H948V762",
+						"tone": "highlight",
+						"strokeWidth": 1.3
+					},
+					{
+						"d": "M56 334h22v15H56z M56 392h22v15H56z M56 450h22v15H56z M56 508h22v15H56z M56 566h22v15H56z M56 624h22v15H56z M56 682h22v15H56z",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M948 334h22v15H948z M948 392h22v15H948z M948 450h22v15H948z M948 508h22v15H948z M948 566h22v15H948z M948 624h22v15H948z M948 682h22v15H948z",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M132 221h208 M132 234h148 M667 873h202 M728 886h141",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M136 220h208 M136 233h148 M671 872h202 M732 885h141",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M389 118h45 M411 96v45 M865 294h28 M879 280v28 M142 865h28 M156 851v28",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M115 161h22v8h-22z M893 842h22v8h-22z",
+						"tone": "motif"
+					},
+					{
+						"d": "M121 268H924V280H121z M124 905H901V911H124z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					91,
+					120,
+					79
+				],
+				"opacity": 0.19,
+				"blurAt2048": 48,
+				"offsetAt2048": [
+					12,
+					28
+				]
+			},
+			{
+				"color": [
+					83,
+					111,
+					71
+				],
+				"opacity": 0.13,
+				"blurAt2048": 16,
+				"offsetAt2048": [
+					3,
+					10
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.92,
+			"offsetAt2048": [
+				-8,
+				14
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "The complete board, raised stick and hinge share one uniform placement. Require at least 128 px clearance against the actual rounded outline without cropping or changing the native drawing."
+		},
+		"matte": {
+			"minimumChannel": 235,
+			"maximumChroma": 24,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Modal native outer-eight-pixel matte is (251,252,252). Pass 02 retained a few connected near-white fringe pixels below the board. A broader exterior-connected white range removes this matte residue while dark object contours protect opaque ivory stripes, lettering and metallic highlights. Edge unmatting uses a three-pixel band. No component removal in this pass; pass 01/02 cleanup analysis remains historical evidence. Validate the complete pale surfaces and every opaque native RGB pixel.",
+			"cleanupEvidence": "inspection/cleanup-01.json"
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2031440,
+		"foregroundPixels": 2162864,
+		"softEdgePixels": 13749,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 265,
+			"top": 90,
+			"right": 1822,
+			"bottom": 1881
+		}
+	},
+	"placement": {
+		"scale": 0.92,
+		"offsetAt2048": [
+			-8,
+			14
+		],
+		"bounds": {
+			"left": 317,
+			"top": 178,
+			"right": 1750,
+			"bottom": 1826
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 178.49950160704248,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3418,
+			"sha256": "6df358be758dff0310bc2e555ee94cabf655461eb3dd57d3c72c921c69540e1b"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 883,
+			"sha256": "3b99f6a92a0f175a08bfffe083a2adc817752e7818f0ce878eb31f36350754f0"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4452978,
+			"sha256": "e7c2e1b3fb01a72ae28674f7f7420fad7a5d75f130fea46544a85156a1996554"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 66735,
+			"sha256": "5008c2aec1c76eb759543015f7c6cec6010c25f6a1bdef027254249bb75394cb"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1666,
+			"sha256": "1f6695148c1f2c6867c2ad8398870c695b0cc446529903eb7ece22817d418f0d"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1639424,
+			"sha256": "32e1123ee39167756323145196f02cf806b1a4044e37b7da5035caacc2737db6"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3865252,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 90079,
+			"sha256": "98c862c83a07a1fc6ace24094346b46a107783d9f3ca3a1ac803e28e2dc0b9a2"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 215165,
+			"sha256": "b289cdd274f5f62721443b02b252f27bc75d6a561e0cc3c50277e0943b2709ba"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 146120,
+			"sha256": "66335bf37635125c7d0f69768f078873ee72b8509e42d3b69bacc213060d3d70"
+		},
+		{
+			"path": "exports/showtime-transparent-2048.png",
+			"bytes": 3865252,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"path": "exports/showtime-icon-2048.png",
+			"bytes": 5212157,
+			"sha256": "dac1159f54289eb8fd6e03b81b7c95565d970023b34eefc463346e01fb8b1d23"
+		},
+		{
+			"path": "exports/showtime-rounded-2048.png",
+			"bytes": 5149307,
+			"sha256": "a618e7ed11ca0499a1e7d5416893615574eb7bfb07fab31ad6a16b83bbfbbbb6"
+		},
+		{
+			"path": "exports/showtime-transparent-1024.png",
+			"bytes": 945463,
+			"sha256": "e19d7da7a6114ec06cc3d7c226772dfb7d98570a59a28e4a6875393fe66d4b45"
+		},
+		{
+			"path": "exports/showtime-icon-1024.png",
+			"bytes": 1231663,
+			"sha256": "ce3c794b152050de7a8adb76963b6a979bc43f26738a389dad299af824179ef8"
+		},
+		{
+			"path": "exports/showtime-rounded-1024.png",
+			"bytes": 1236744,
+			"sha256": "70fa02bc57355d44a01bec313bfc81f14265f7de335898738ab909fb8e539cc8"
+		},
+		{
+			"path": "exports/showtime-transparent-512.png",
+			"bytes": 240130,
+			"sha256": "19689699f0af65be5f985aa347d80c300b26587763698a921cb35c4acbc1ad88"
+		},
+		{
+			"path": "exports/showtime-icon-512.png",
+			"bytes": 342789,
+			"sha256": "d70fc5c4d40e19fa9d56689be0f4b6a927c50faddf9dd979bdcb3edb4b32861b"
+		},
+		{
+			"path": "exports/showtime-rounded-512.png",
+			"bytes": 345370,
+			"sha256": "6ed90957e55d2b60b46426920458afc7c9489b4a9d970a792d57ac6350232a73"
+		},
+		{
+			"path": "exports/showtime-transparent-256.png",
+			"bytes": 67570,
+			"sha256": "57ee244fe331582767257cb0d014d97b71ed731ec412c957786d105976a86adf"
+		},
+		{
+			"path": "exports/showtime-icon-256.png",
+			"bytes": 85852,
+			"sha256": "6190199ba1b4b993ceda638d600290a2e059205e9059c1436ddbf8aebba5efc7"
+		},
+		{
+			"path": "exports/showtime-rounded-256.png",
+			"bytes": 89655,
+			"sha256": "cd78faba0abebf003345c670137fd4474fd1994fc15c6bc8b6e720c738effdde"
+		},
+		{
+			"path": "exports/showtime-transparent-128.png",
+			"bytes": 20139,
+			"sha256": "778c8d300061fe508f54c89b5abbea3c4436b94602e3c7fb3971b914c220b955"
+		},
+		{
+			"path": "exports/showtime-icon-128.png",
+			"bytes": 26195,
+			"sha256": "1d0b1f916f34688a43d05e2b644104a2c40b525dd70336ab38853be7be2b2f96"
+		},
+		{
+			"path": "exports/showtime-rounded-128.png",
+			"bytes": 28017,
+			"sha256": "2ac2f6170ad5eeabfb520535c016cff82538da94588249409807956cfe20d1c6"
+		},
+		{
+			"path": "exports/showtime-transparent-64.png",
+			"bytes": 6195,
+			"sha256": "8e51a9b58a3a403cced9e48c4e379cd857c6540e00e97f19e0095bc83fd824c1"
+		},
+		{
+			"path": "exports/showtime-icon-64.png",
+			"bytes": 8448,
+			"sha256": "2619d066664ebacfd84f2200a78a4f86fb37b4698c0382ae7091d065ef4e6bb1"
+		},
+		{
+			"path": "exports/showtime-rounded-64.png",
+			"bytes": 9165,
+			"sha256": "65940c64f344ad0350013ed9a38eca0d52058606a5f843f2a7678bea0be82b3b"
+		},
+		{
+			"path": "exports/showtime-transparent-48.png",
+			"bytes": 3880,
+			"sha256": "e5b45edb59b42a07b07c8816c28552cc9708083df4243d49c4dd39ac4540db78"
+		},
+		{
+			"path": "exports/showtime-icon-48.png",
+			"bytes": 5368,
+			"sha256": "3e9e882021acbbe454c57e62f3f2a49d4adda94b85531c57d330f9a99a590afa"
+		},
+		{
+			"path": "exports/showtime-rounded-48.png",
+			"bytes": 5853,
+			"sha256": "8bf14c13c61b1fad240be45fab2c0cfd0e2ee5ba758bc9e5320a1bd86401ce87"
+		},
+		{
+			"path": "exports/showtime-transparent-32.png",
+			"bytes": 2077,
+			"sha256": "b937322ff6157a0752dcb35d214d10056cbb555f12e2479b6d1b9227f28d3bd8"
+		},
+		{
+			"path": "exports/showtime-icon-32.png",
+			"bytes": 2836,
+			"sha256": "a38922c844f0156aeeeb21e4fd6c3580c21747808a3706cc98acee1fbbdba297"
+		},
+		{
+			"path": "exports/showtime-rounded-32.png",
+			"bytes": 3045,
+			"sha256": "277cd3666ade4c38a2c91c7a1c2f693bb219e50babfe10bb8d9ed33dcab3bc58"
+		},
+		{
+			"path": "exports/showtime-transparent-24.png",
+			"bytes": 1357,
+			"sha256": "9f70fcf6a5553d510f8e8a8f7f13b15a75f2dc6bbcb63566150db8ec2da9d8a4"
+		},
+		{
+			"path": "exports/showtime-icon-24.png",
+			"bytes": 1821,
+			"sha256": "295ca26d09dc98bed581dd689f64eabe0601a6a6219a20f926a4b0f22b1e3431"
+		},
+		{
+			"path": "exports/showtime-rounded-24.png",
+			"bytes": 1980,
+			"sha256": "ed2bb0de9e61876846aaf958f298b3080514e23923d3a4b33e5b81ea018b845e"
+		},
+		{
+			"path": "exports/showtime-transparent-16.png",
+			"bytes": 767,
+			"sha256": "f8e35a29bfe4f09c1daa648ed3d8d87801f2c04037b7ea12d9efd69818476dab"
+		},
+		{
+			"path": "exports/showtime-icon-16.png",
+			"bytes": 979,
+			"sha256": "d8fba35c478db672ed51345c334eb63f4fc73193a87700ae0ac6a6af9abf5eab"
+		},
+		{
+			"path": "exports/showtime-rounded-16.png",
+			"bytes": 1020,
+			"sha256": "672fb028a14da3593806f3814ae77e7a69cfedd2b765084d77d9149f6838e108"
+		},
+		{
+			"path": "exports/showtime-white-2048.png",
+			"bytes": 3495235,
+			"sha256": "963ffe7ecb90121115781c4818b2d913a3ca23b3bd6326fc26c9c41c2c03113a"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 874566,
+			"sha256": "a65f62f6ddd16a85ff5b27c6dce940ed7d7c3938df1c6c210a272276a451273a"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 864644,
+			"sha256": "6db5c96adb8fc38e1c9d8a761c0321ae9ece6ba574e556211096d9c7c5a46835"
+		}
+	]
+}

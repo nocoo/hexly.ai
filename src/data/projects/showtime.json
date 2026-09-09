@@ -11,7 +11,7 @@
 	"website": null,
 	"websiteSource": null,
 	"repository": "https://github.com/nocoo/showtime",
-	"subject": "Initial purple browser window with a play symbol; green physical clapperboard study pending raw-image selection",
+	"subject": "Initial purple browser/play identity retained as source evidence while the approved classic clapperboard is applied by the Showtime Codex",
 	"reference": false,
 	"archived": false,
 	"logo": {
@@ -138,6 +138,129 @@
 				"scripts/showtime_mcp.py",
 				"scripts/make_icon.swift"
 			]
+		}
+	},
+	"family": {
+		"id": "2026-09-10-02",
+		"series": "material",
+		"finishing": "03",
+		"model": "gpt-image-2",
+		"root": "/logos/family/showtime/2026-09-10-02/03",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/showtime/2026-09-10-02",
+		"status": "review",
+		"updated": "2026-09-10",
+		"foreground": {
+			"subject": {
+				"en": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge",
+				"zh": "带 SHOWTIME 字样、场次数字与拉丝金属铰链的经典黑白场记板"
+			},
+			"original": "/logos/family/showtime/2026-09-10-02/03/transparent.png",
+			"display": "/logos/family/showtime/2026-09-10-02/03/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		"previous": {
+			"original": "/logos/originals/showtime-initial.png",
+			"sourceUrl": "/logos/originals/showtime-initial.png",
+			"width": 1024,
+			"height": 1024,
+			"sha256": "8fe319552849e04934273d30a10b9bc1fc68ae94bb08182b5d372511e12feef9"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Just before the clap",
+					"zh": "开拍前一刻"
+				},
+				"description": {
+					"en": "A raised upper stick and broad, mostly frontal slate form one compact object. The complete hinge and corners remain visible, with 178.5 px of clearance against the final rounded outline.",
+					"zh": "抬起的上板与接近正面的宽阔板面构成紧凑整体，铰链和所有边角保持完整，与最终圆角边界至少相距 178.5 px。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Black slate, real lettering",
+					"zh": "黑白板面与场记文字"
+				},
+				"description": {
+					"en": "Matte charcoal, ivory diagonal inlays and brushed silver preserve the classic physical slate. SHOWTIME and ROLL / SCENE / TAKE markings belong to the object; every fully opaque extracted native pixel retains its original RGB.",
+					"zh": "哑光炭黑、象牙白斜条与拉丝金属保留经典实物质感，SHOWTIME 和 ROLL / SCENE / TAKE 文字印在板面上；提取后所有完全不透明的原生像素均保持原 RGB。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Green film registration",
+					"zh": "绿色胶片定位纹样"
+				},
+				"description": {
+					"en": "Sparse film-gate brackets, perforation marks and editing cues sit on pale sage paper. Green stays in the independent background and soft shadows; the small interface mark uses the transparent board.",
+					"zh": "浅鼠尾草绿纸面搭配稀疏的取景定位线、胶片齿孔和剪辑标记。绿色留在独立底纹与柔和投影里，小尺寸界面标记使用透明场记板。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#dce8d1",
+				"role": "background",
+				"label": {
+					"en": "Sage film field",
+					"zh": "浅绿胶片底纹"
+				},
+				"source": "Designed presentation; artwork/logo-family/showtime/2026-09-10-02/presentation.json, finishing 03. Kept separate from native artwork and application theme tokens."
+			},
+			{
+				"color": "#2b2b2b",
+				"role": "primary",
+				"label": {
+					"en": "Charcoal slate",
+					"zh": "炭黑板面"
+				},
+				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (1080, 920); artwork/logo-family/showtime/2026-09-10-02/palette.json"
+			},
+			{
+				"color": "#ede6de",
+				"role": "accent",
+				"label": {
+					"en": "Ivory stripe",
+					"zh": "象牙白斜条"
+				},
+				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (1000, 390); artwork/logo-family/showtime/2026-09-10-02/palette.json"
+			},
+			{
+				"color": "#e4dddc",
+				"role": "accent",
+				"label": {
+					"en": "White lettering",
+					"zh": "白色场记文字"
+				},
+				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (850, 1250); artwork/logo-family/showtime/2026-09-10-02/palette.json"
+			},
+			{
+				"color": "#8c8685",
+				"role": "accent",
+				"label": {
+					"en": "Brushed silver",
+					"zh": "拉丝金属"
+				},
+				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (500, 500); artwork/logo-family/showtime/2026-09-10-02/palette.json"
+			},
+			{
+				"color": "#61bb46",
+				"role": "accent",
+				"label": {
+					"en": "Green cue marks",
+					"zh": "绿色定位标记"
+				},
+				"source": "Owner-requested green design anchor used only by the separate background motif at 30% opacity; presentation.json."
+			}
+		],
+		"sizeNote": {
+			"en": "The title and three production fields read at large sizes. At 32/24/16 px, the lifted striped stick and slate silhouette carry recognition; the small field labels and material grain merge. Sidebar and browser specimens show identity scale; Showtime itself is a native macOS app.",
+			"zh": "大尺寸可读片名与三栏场记信息；32/24/16 px 主要依靠抬起的斜条上板和场记板轮廓识别，细小栏名与材质纹理会合并。侧栏和浏览器示例用于检查标记尺寸，Showtime 本身是原生 macOS 应用。"
 		}
 	}
 }
