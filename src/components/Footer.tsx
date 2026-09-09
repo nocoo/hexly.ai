@@ -40,6 +40,7 @@ export function Footer({
 						href="#main-content"
 						aria-label={t.top}
 					>
+						<span className="sr-only">{t.top}</span>
 						<span aria-hidden="true">↑</span>
 					</a>
 				</div>
