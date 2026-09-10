@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.2] - 2026-09-10
+
+### Features
+
+- prepare Showtime and its green clapperboard study ([97e1491](https://github.com/nocoo/hexly.ai/commit/97e1491d29e494dde683193b2ff49faf61e4bf85))
+- regenerate Showtime as a classic lettered clapperboard ([3f8c9a6](https://github.com/nocoo/hexly.ai/commit/3f8c9a65613326436591e5f231e008584cfe0914))
+- finish the approved Showtime clapperboard and green presentation ([009ab14](https://github.com/nocoo/hexly.ai/commit/009ab14e7b9cb7f6b4f15a2823abfcdafdc23f6f))
+- adopt Showtime icon and publish bilingual project links ([66903bd](https://github.com/nocoo/hexly.ai/commit/66903bd14bf133728ef6c588e42bd7e338432ab8))
+
+### Documentation
+
+- record Showtime handoff and independent website publication ([50b9541](https://github.com/nocoo/hexly.ai/commit/50b9541602ccbfb4a3ea658e8e0e577fd205f6b6))
+
 ## [0.5.1] - 2026-09-09
 
 ### Features
