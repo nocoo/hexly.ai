@@ -11,55 +11,55 @@
 	"website": null,
 	"websiteSource": null,
 	"repository": "https://github.com/nocoo/showtime",
-	"subject": "Initial purple browser/play identity retained as source evidence while the approved classic clapperboard is applied by the Showtime Codex",
+	"subject": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge",
 	"reference": false,
 	"archived": false,
 	"logo": {
 		"kind": "original",
-		"original": "/logos/originals/showtime-initial.png",
+		"original": "/logos/originals/showtime-family-2026-09-10-02-03.png",
 		"thumbnail": "/logos/display/showtime-160.webp",
 		"display": "/logos/display/showtime-1024.webp",
-		"sourcePath": ".build/Showtime.iconset/icon_512x512@2x.png",
-		"sourceUrl": "/logos/originals/showtime-initial.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
 		"modified": false,
-		"width": 1024,
-		"height": 1024,
-		"bytes": 528759,
-		"sha256": "8fe319552849e04934273d30a10b9bc1fc68ae94bb08182b5d372511e12feef9"
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3865252,
+		"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
 	},
 	"theme": {
 		"primary": {
 			"value": "#4a8234",
-			"source": "Sources/Showtime/App/StudioView.swift: Theme.accentHex; preserved local source snapshot"
+			"source": "Sources/Showtime/App/StudioTheme.swift: Theme.accentHex = #4A8234; source icon commit 9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 		},
 		"background": {
-			"value": "#f6f8f4",
-			"source": "Sources/Showtime/App/StudioView.swift: Theme.surface, sRGB (246, 248, 244)"
+			"value": "#f4f6f2",
+			"source": "Sources/Showtime/App/StudioTheme.swift: Theme.surface, sRGB (244, 246, 242); source icon commit 9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 		},
 		"ink": {
 			"value": "#253126",
-			"source": "Sources/Showtime/App/StudioView.swift: Theme.ink, sRGB (0.145, 0.192, 0.149), rounded to 8-bit channels"
+			"source": "Sources/Showtime/App/StudioTheme.swift: Theme.ink, sRGB (37, 49, 38); source icon commit 9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 		}
 	},
 	"colors": {
 		"primary": "#4a8234",
-		"background": "#f6f8f4",
+		"background": "#f4f6f2",
 		"ink": "#253126",
 		"palette": [
 			{
 				"color": "#4a8234",
 				"role": "primary",
-				"source": "Sources/Showtime/App/StudioView.swift: Theme.accentHex = #4A8234; docs/sources/showtime-2026-09-10.json"
+				"source": "Sources/Showtime/App/StudioTheme.swift: Theme.accentHex = #4A8234; source icon commit 9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 			},
 			{
-				"color": "#f6f8f4",
+				"color": "#f4f6f2",
 				"role": "background",
-				"source": "Sources/Showtime/App/StudioView.swift: Theme.surface, sRGB (246, 248, 244)"
+				"source": "Sources/Showtime/App/StudioTheme.swift: Theme.surface, sRGB (244, 246, 242); source icon commit 9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 			},
 			{
 				"color": "#cfe8b5",
 				"role": "accent",
-				"source": "Sources/Showtime/App/StudioView.swift: Theme.sprout, sRGB (207, 232, 181)"
+				"source": "Sources/Showtime/App/StudioTheme.swift: Theme.sprout, sRGB (207, 232, 181); source icon commit 9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 			}
 		]
 	},
@@ -67,7 +67,7 @@
 		"profileRevision": "73203ef18b98ccf7cf03be7ef0ebf327bb8a743d",
 		"profileSection": "Recent Projects",
 		"description": "Native macOS browser for agent-directed product demo recordings",
-		"repositoryRevision": null
+		"repositoryRevision": "9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
 	},
 	"overview": {
 		"goal": {
@@ -120,13 +120,14 @@
 		],
 		"verified": {
 			"date": "2026-09-10",
-			"revision": null,
+			"revision": "9039ab8265198c7c2e1cf314e0fc1a55efa801a4",
 			"snapshot": {
 				"path": "docs/sources/showtime-2026-09-10.json",
 				"sha256": "df845adc492a9f79c1a4df4089f060986991704e6ecad5684b2a2d9b1e751949"
 			},
 			"sources": [
 				"README.md",
+				"docs/README.en.md",
 				"Package.swift",
 				"Sources/Showtime/App/StudioView.swift",
 				"Sources/Showtime/App/StudioModel.swift",
@@ -147,7 +148,7 @@
 		"model": "gpt-image-2",
 		"root": "/logos/family/showtime/2026-09-10-02/03",
 		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/showtime/2026-09-10-02",
-		"status": "review",
+		"status": "adopted",
 		"updated": "2026-09-10",
 		"foreground": {
 			"subject": {

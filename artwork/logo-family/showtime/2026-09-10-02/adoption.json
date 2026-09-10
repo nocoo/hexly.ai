@@ -1,0 +1,77 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"study": "showtime/2026-09-10-02",
+	"finishing": "03",
+	"sourceRepository": "https://github.com/nocoo/showtime",
+	"sourceCommit": "9a8c7c89ec078ba17539d76522952d3f4af3d0f7",
+	"readmeCommit": "9039ab8265198c7c2e1cf314e0fc1a55efa801a4",
+	"profileCommit": "73203ef18b98ccf7cf03be7ef0ebf327bb8a743d",
+	"masters": [
+		{
+			"source": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/finishing/03/exports/showtime-transparent-2048.png",
+			"destination": "logo.png",
+			"role": "Canonical transparent master; small interface marks use foreground derivatives.",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+			"bytes": 3865252
+		},
+		{
+			"source": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/finishing/03/exports/showtime-rounded-2048.png",
+			"destination": "logo-readme.png",
+			"role": "Large README presentation; both READMEs already reference this root path.",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "a618e7ed11ca0499a1e7d5416893615574eb7bfb07fab31ad6a16b83bbfbbbb6",
+			"bytes": 5149307
+		},
+		{
+			"source": "/Users/nocoo/workspace/personal/hexly.ai/artwork/logo-family/showtime/2026-09-10-02/finishing/03/exports/showtime-icon-2048.png",
+			"destination": null,
+			"role": "Square presentation master for platform-specific native icon generation.",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "dac1159f54289eb8fd6e03b81b7c95565d970023b34eefc463346e01fb8b1d23",
+			"bytes": 5212157
+		}
+	],
+	"sourceAdoptionEvidence": {
+		"basis": "Showtime Codex report in this conversation",
+		"transparentToolbarVisible": true,
+		"runningApplicationIcon": "green-background clapperboard",
+		"sourceCommitComplete": true,
+		"push": "Source agent confirmed successful push of origin/main, including README commit 9039ab8.",
+		"independentAppVerification": "Owner took over; Hexly stopped monitoring the App.",
+		"sourcePushed": true,
+		"sourceUsageGuide": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/docs/branding.md",
+		"toolbar": {
+			"resource": "Sources/Showtime/Resources/Brand/ShowtimeMark.png",
+			"sourcePixels": 256,
+			"consumer": "StudioView.swift: Image(nsImage: AppResources.brandMark)",
+			"loader": "AppResources.swift: Showtime_Showtime.bundle/ShowtimeMark.png"
+		},
+		"nativeIcon": {
+			"master": "assets/app-icon-master.png",
+			"generator": "scripts/make_icon.swift",
+			"canvasPixels": 1024,
+			"tilePixels": 824,
+			"insetPixels": 100,
+			"representations": 10,
+			"alphaRoundTrip": "all 10 consistent",
+			"pixelRoundTrip": "8 modern PNG representations identical",
+			"startup": "ShowtimeApp.swift sets NSApp.applicationIconImage",
+			"buildAndCodesign": "source agent reported Release build and codesign --verify --deep --strict passed"
+		},
+		"sourceAgentScreenshots": [
+			"/Users/nocoo/workspace/personal/showtime/artifacts/icon-native-window-verified.png",
+			"/Users/nocoo/workspace/personal/showtime/artifacts/icon-running-app.png"
+		],
+		"sourceAgentRoundTripReport": "/Users/nocoo/workspace/personal/showtime/artifacts/icon-roundtrip-details.json"
+	},
+	"sitePublication": {
+		"version": "0.5.2",
+		"acceptance": "Owner will verify after publication; no post-deployment endpoint or browser checks by this agent.",
+		"instruction": "先进行简单发布，发布之后我来验证，你不需要去验证发布"
+	}
+}
