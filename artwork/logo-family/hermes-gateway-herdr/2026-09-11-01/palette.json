@@ -1,0 +1,63 @@
+{
+	"project": "hermes-gateway-herdr",
+	"study": "2026-09-11-01",
+	"finishing": "01",
+	"nativeSource": {
+		"path": "raw/generated.png",
+		"sha256": "7991518e28d32082f552ae15d98be7279361257d60c1aaef0fd1e4668e3e20f9",
+		"width": 2048,
+		"height": 2048
+	},
+	"artworkSamples": [
+		{
+			"label": "Petrol enamel",
+			"x": 1050,
+			"y": 800,
+			"rgb": [44, 63, 82],
+			"hex": "#2c3f52",
+			"alpha": 255
+		},
+		{
+			"label": "Brushed brass",
+			"x": 1120,
+			"y": 305,
+			"rgb": [176, 140, 94],
+			"hex": "#b08c5e",
+			"alpha": 255
+		},
+		{
+			"label": "Ivory terminal inlay",
+			"x": 1100,
+			"y": 1230,
+			"rgb": [233, 220, 194],
+			"hex": "#e9dcc2",
+			"alpha": 255
+		},
+		{
+			"label": "Green status glass",
+			"x": 1570,
+			"y": 400,
+			"rgb": [5, 86, 11],
+			"hex": "#05560b",
+			"alpha": 255
+		}
+	],
+	"presentation": {
+		"status": "adopted locally under owner-authorized finishing",
+		"recipe": "presentation.json",
+		"colors": {
+			"base": "#dfe8ec",
+			"light": "#f1f6f7",
+			"shade": "#c7d7de",
+			"motif": "#7899a9",
+			"motifOpacity": 0.3,
+			"highlightOpacity": 0.4,
+			"ribbonOpacity": 0.16
+		}
+	},
+	"applicationTheme": {
+		"revision": "3cdecbf420e51232fe6e4ac790a8f51d42fe6e71",
+		"path": null,
+		"note": "No application or website theme is evidenced. The CLI and development manifest do not define UI tokens; the previous editorial emoji is not a theme."
+	}
+}

@@ -1,0 +1,94 @@
+{
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"project": "hermes-gateway-herdr",
+	"original": "../../../../public/logos/emoji/hermes-gateway-herdr.png",
+	"background": {
+		"base": "#dfe8ec",
+		"light": "#f1f6f7",
+		"shade": "#c7d7de",
+		"motif": "#7899a9",
+		"grainAmplitude": 0.7,
+		"grainSeed": 60911002,
+		"motifOpacity": 0.3,
+		"highlightOpacity": 0.4,
+		"ribbonOpacity": 0.16,
+		"pattern": {
+			"name": "Paired panes and a returning route",
+			"description": "Two unequal pane outlines and a single returning route form a shallow technical relief on pale blue-gray paper. Open corners and short terminal ticks keep the pattern subordinate to the solid brass gateway.",
+			"layers": [
+				{
+					"d": "M111 324V155h326 M603 155h301v287 M904 619v251H662 M386 870H111V585",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				},
+				{
+					"d": "M114 324V158h323 M603 158h298v284 M901 619v248H662 M386 867H114V585",
+					"tone": "highlight",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M159 268v-66h257 M651 202h205v174 M856 685v137H697 M335 822H159V639",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M137 499H82V93h340 M736 93h204v827H575 M575 920l24-12 M575 920l24 12",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M140 502H85V96h337 M736 96h201v821H575",
+					"tone": "highlight",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M193 182h52 M193 190h30 M774 840h52 M796 848h30 M103 370h17 M103 399h17 M103 428h17 M895 492h17 M895 521h17 M895 550h17",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M135 126h161v7H135z M725 891h153v7H725z",
+					"tone": "ribbon"
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [80, 105, 117],
+			"opacity": 0.17,
+			"blurAt2048": 48,
+			"offsetAt2048": [14, 670],
+			"projectionScale": [0.88, 0.2]
+		},
+		{
+			"color": [68, 96, 108],
+			"opacity": 0.12,
+			"blurAt2048": 16,
+			"offsetAt2048": [6, 14]
+		}
+	],
+	"framing": {
+		"scale": 0.91,
+		"offsetAt2048": [-6, -4],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Place the complete brass frame, both feet, hinges, door and status lens as one uniformly scaled group. Require 128 px minimum clearance from the rounded outline; no structural cropping or extra emission."
+	},
+	"matte": {
+		"minimumChannel": 235,
+		"maximumChroma": 24,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 9,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [[1365, 1000]],
+		"calibrationNote": "The modal outer-eight-pixel matte is (251,252,252). The real opening behind the ajar door samples (252,252,253); seed that connected opening only. Preserve ivory prompt inlays, enamel reflections, brass highlights and the solid green glass lens. No component removal or global white deletion."
+	}
+}

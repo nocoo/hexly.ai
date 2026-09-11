@@ -1,0 +1,96 @@
+{
+	"recordedAt": "2026-09-11T10:31:25.075621+00:00",
+	"status": "completed locally",
+	"scope": "Owner-approved Coffee and Hermes Gateway logos, bilingual source READMEs, GitHub profile additions, Tools catalogue entries, project profiles and complete local reviews.",
+	"intakeRevision": "53366596bd8526239eec374162e32ef310c8cda8",
+	"repositories": {
+		"coffee": {
+			"localRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09",
+			"transparentSha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+			"adoption": "artwork/logo-family/coffee/2026-09-11-01/adoption.json",
+			"pushed": false,
+			"deployed": false
+		},
+		"hermes-gateway-herdr": {
+			"localRevision": "f14ddf11bf4ac4912830f0a7259fdd8a769e5a41",
+			"transparentSha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+			"adoption": "artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/adoption.json",
+			"pushed": false,
+			"deployed": false
+		},
+		"nocoo": {
+			"localRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+			"pushed": false
+		}
+	},
+	"catalogue": {
+		"projects": 73,
+		"active": 53,
+		"archived": 20,
+		"independentImages": 59,
+		"emojiIdentities": 14,
+		"categoryForBoth": "tools"
+	},
+	"checks": {
+		"assetsBuild": "passed",
+		"profilesGenerated": 73,
+		"sourceChecksums": 73,
+		"artworkDerivatives": 438,
+		"publicFamilyArchives": 58,
+		"finishingManifests": 97,
+		"typecheck": "passed",
+		"biome": "passed",
+		"isolation": "passed; local runtimes with no production bindings",
+		"unitTests": 94,
+		"coverage": {
+			"statements": 99.62,
+			"branches": 98.36,
+			"functions": 100,
+			"lines": 99.58
+		},
+		"httpTests": 65,
+		"focusedBrowserTests": 6,
+		"coffee": {
+			"validate": "passed",
+			"unitTests": 24,
+			"affectedBrowserTests": 6,
+			"consumerBrowserChecks": 13,
+			"servedAssetHashes": 7
+		},
+		"gateway": {
+			"committedMasters": 3,
+			"readmeImageTargets": 2,
+			"runtime": "No runtime change or real integration run; existing offline evidence remains historical."
+		}
+	},
+	"reviews": [
+		{
+			"project": "coffee",
+			"evidence": "artwork/logo-family/coffee/2026-09-11-01/inspection/review-browser/checks.json",
+			"cases": 12,
+			"modeChecks": 36,
+			"distinctExactDownloads": 12,
+			"downloadClickChecks": 4,
+			"status": "passed"
+		},
+		{
+			"project": "hermes-gateway-herdr",
+			"evidence": "artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/inspection/review-browser/checks.json",
+			"cases": 12,
+			"modeChecks": 36,
+			"distinctExactDownloads": 12,
+			"downloadClickChecks": 4,
+			"status": "passed"
+		}
+	],
+	"preservation": "preservation.json",
+	"originalSources": "Both original filenames/hashes and intake source snapshots remain unchanged. Every opaque extracted native RGB pixel is preserved.",
+	"themeCorrection": "Only recorded application theme tokens appear in the website-theme row; a material palette does not create a website theme.",
+	"publication": {
+		"pushed": false,
+		"deployed": false,
+		"remoteRepositoryDescriptionsChanged": false,
+		"preexistingGatewayImplementationCommitsPreserved": 11,
+		"note": "No push or deployment was requested. Existing Gateway implementation commits remain local."
+	}
+}

@@ -19,6 +19,9 @@ export function LogoReview({
 }) {
 	const t = copy[locale];
 	const { family } = project;
+	const themeRoles = (["primary", "background"] as const).filter(
+		(role) => project.theme[role],
+	);
 	const foreground = family?.foreground ?? project.logo;
 	const [view, setView] = useState<"icon" | "transparent" | "white">("icon");
 	const tileStyle = {
@@ -213,17 +216,15 @@ export function LogoReview({
 					onCopy={onCopy}
 				/>
 				<p className="review-caption">{t.copyHint}</p>
-				{family && (
+				{family && themeRoles.length > 0 && (
 					<p className="theme-palette">
 						{t.themePalette}
-						<span>
-							<i style={{ backgroundColor: project.colors.primary }} />
-							{project.colors.primary}
-						</span>
-						<span>
-							<i style={{ backgroundColor: project.colors.background }} />
-							{project.colors.background}
-						</span>
+						{themeRoles.map((role) => (
+							<span key={role} title={project.theme[role]?.source}>
+								<i style={{ backgroundColor: project.colors[role] }} />
+								{project.colors[role]}
+							</span>
+						))}
 					</p>
 				)}
 			</section>

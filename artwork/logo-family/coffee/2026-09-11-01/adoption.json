@@ -1,0 +1,153 @@
+{
+	"recordedAt": "2026-09-11T10:14:59.306680+00:00",
+	"project": "coffee",
+	"study": "2026-09-11-01",
+	"finishing": "01",
+	"status": "adopted locally",
+	"decision": {
+		"ownerMessage": "通过，继续",
+		"rawSha256": "b195d997f71efda0ce9a232b952adb767e45716bdb33d6c29fb1bb331503d8c9",
+		"record": "raw-review.json"
+	},
+	"sourceRepository": "https://github.com/nocoo/coffee",
+	"sourceRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09",
+	"profileRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+	"masterFiles": [
+		{
+			"path": "logo.png",
+			"role": "transparent",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"role": "icon",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 5756219,
+			"sha256": "2e781520ad77b86f9a0190093096adb8a322a32c0c901deadab4da057ee97904"
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"role": "rounded",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 5695474,
+			"sha256": "e21430985eb062c5b6366644dd7c3ef412c04915e37781a08087e5e8d6a52c33"
+		},
+		{
+			"path": "assets/brand/background.png",
+			"role": "Independent presentation background for platform-safe PWA placement",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 1666532,
+			"sha256": "179c4fc87afec72ed2b1f14171429a0f0729abf9029c7311b1ba1ad98bdf9a2c"
+		}
+	],
+	"committedMasterBytesVerified": true,
+	"sourceTextFiles": [
+		{
+			"path": "README.md",
+			"sha256": "58d8ba67972d00e627b058fe0e6af3fcc1b3ab33933ed4c2229bde38076b59f2"
+		},
+		{
+			"path": "docs/README.en.md",
+			"sha256": "3aa2b04b23ef5c57b03e1fbdd9005d49dc69f9eaef3b579eb4474eb4f71d63b6"
+		},
+		{
+			"path": "assets/brand/README.md",
+			"sha256": "2206b46f2545dfc67b4fdcbeb7ed4053f9fe0e4da01434e8eb457ffd1c2a87c8"
+		},
+		{
+			"path": "assets/brand/source.json",
+			"sha256": "c7eef67897746a7966b9601b599addf84c62ac209f24c9536d36339868ccf8a0"
+		},
+		{
+			"path": "src/components/shared.tsx",
+			"sha256": "26fd07955a10f463d301fcd71eb1ac89128b152e893dd8a9e924ee688b175c78"
+		},
+		{
+			"path": "src/styles.css",
+			"sha256": "7b54e67ce903be6f3b7e6e8b65d180284fcafa85491cbb8520fa85309c54ddff"
+		},
+		{
+			"path": "scripts/render-assets.mjs",
+			"sha256": "d0bbb0229ab788945d30c6fe95bde757670ab93c0371498a5890b7a47a562ad9"
+		},
+		{
+			"path": "index.html",
+			"sha256": "6ee93185af173d5dae0ddfea8359e017a48610e1ed139abbe1862e71f448d058"
+		},
+		{
+			"path": "public/404.html",
+			"sha256": "7a02bbb643e3ad1504390bb065bb83737647c9fba5645e9bb02c37ea1d46c1cb"
+		},
+		{
+			"path": "public/manifest.webmanifest",
+			"sha256": "07b39043f5c76e20ec338235cdc96a3ba77f70a0e63e586a3ca0f6417ea8d158"
+		}
+	],
+	"previous": {
+		"original": "/logos/originals/coffee-initial.png",
+		"sourceUrl": "https://github.com/nocoo/coffee/blob/a6f179b1f530b1511e276eae6d3989a43c08a833/public/icon-512.png",
+		"width": 512,
+		"height": 512,
+		"sha256": "63c37f0e536e01f3d0cf0f6750d8be01e1f957a91b1f862f5778241b460cda20"
+	},
+	"consumers": {
+		"readmes": {
+			"README.md": "assets/brand/icon-rounded.png",
+			"docs/README.en.md": "../assets/brand/icon-rounded.png"
+		},
+		"application": [
+			"src/components/shared.tsx — Logo for responsive header, footer, loading view and exhibition",
+			"src/styles.css — responsive brand-mark dimensions without crop or background",
+			"public/logo-80.png"
+		],
+		"browser": [
+			"index.html",
+			"public/404.html",
+			"public/favicon-16.png",
+			"public/favicon.png"
+		],
+		"platform": [
+			"public/icon-192.png",
+			"public/icon-512.png",
+			"public/icon-maskable-512.png",
+			"public/manifest.webmanifest"
+		],
+		"social": ["scripts/render-assets.mjs", "public/og.png — 1536x1024"],
+		"exceptions": [
+			"No ICO consumer.",
+			"The distinct maskable PWA source uniformly places the complete foreground at 94% on the independent background; maximum radius 805.43 px is within the 819.2 px safe circle.",
+			"Existing application theme tokens are retained."
+		]
+	},
+	"review": {
+		"catalogue": "https://index.dev.hexly.ai/logos/coffee",
+		"static": "https://index.dev.hexly.ai/artwork/logo-family/coffee/2026-09-11-01/review.html"
+	},
+	"verification": {
+		"nativeAndExports": "inspection/finishing-01.json",
+		"source": {
+			"command": "bun run validate",
+			"lint": "passed",
+			"typecheck": "passed",
+			"unitTests": 24,
+			"buildAndBudgets": "passed",
+			"affectedBrowserTests": 6,
+			"consumerBrowserChecks": 13,
+			"evidence": "inspection/source-browser/checks.json"
+		},
+		"reviewBrowser": "inspection/review-browser/checks.json",
+		"catalogueThemeEvidence": "Coffee retains its recorded application tokens; Gateway has no website-theme row. Verified in the focused browser regression and complete review checks."
+	},
+	"publication": {
+		"pushed": false,
+		"deployed": false,
+		"githubDescriptionsUpdated": false,
+		"scope": "Local delivery. No push, deployment or remote metadata update requested in this session."
+	}
+}

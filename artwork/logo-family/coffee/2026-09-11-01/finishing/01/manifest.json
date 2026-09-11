@@ -1,0 +1,399 @@
+{
+	"createdAt": "2026-09-11T10:01:10.223Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "b195d997f71efda0ce9a232b952adb767e45716bdb33d6c29fb1bb331503d8c9",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"project": "coffee",
+		"original": "../../../../public/logos/originals/coffee-initial.png",
+		"background": {
+			"base": "#ecdeda",
+			"light": "#faf1eb",
+			"shade": "#ddc5c2",
+			"motif": "#b88179",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60911001,
+			"motifOpacity": 0.28,
+			"highlightOpacity": 0.4,
+			"ribbonOpacity": 0.16,
+			"pattern": {
+				"name": "Broken cupping rings and tasting spokes",
+				"description": "Interrupted, gently offset cupping rings with short radial tasting marks, impressed into pale rose and oat paper. The open arcs sit in the surrounding field; no generic wheel labels or repeated family stencil.",
+				"layers": [
+					{
+						"d": "M151 355A388 388 0 0 1 675 151 M778 208A388 388 0 0 1 874 322 M902 632A388 388 0 0 1 694 876 M558 907A388 388 0 0 1 161 724",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M154 356A385 385 0 0 1 675 154 M780 211A385 385 0 0 1 871 323 M899 632A385 385 0 0 1 693 873 M558 904A385 385 0 0 1 164 724",
+						"tone": "highlight",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M205 281A347 347 0 0 1 584 174 M764 266A347 347 0 0 1 831 352 M852 650A347 347 0 0 1 641 859 M450 866A347 347 0 0 1 219 749",
+						"tone": "motif",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M349 143l10 23 M434 116l5 27 M523 110v25 M611 120l-5 25 M691 147l-10 23 M763 190l-16 21 M826 249l-20 17 M134 689l23-10 M183 777l20-16 M249 846l16-20 M327 896l10-23 M413 927l5-25 M514 937v-27 M612 926l-5-25",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M350 143l10 23 M435 116l5 27 M524 110v25 M612 120l-5 25 M692 147l-10 23 M764 190l-16 21 M827 249l-20 17",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M217 180A437 437 0 0 1 360 105L362 111A431 431 0 0 0 222 184z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M720 902A430 430 0 0 0 855 786L861 790A437 437 0 0 1 723 908z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					130,
+					91,
+					80
+				],
+				"opacity": 0.18,
+				"blurAt2048": 54,
+				"offsetAt2048": [
+					8,
+					490
+				],
+				"projectionScale": [
+					0.88,
+					0.22
+				]
+			},
+			{
+				"color": [
+					127,
+					89,
+					76
+				],
+				"opacity": 0.12,
+				"blurAt2048": 17,
+				"offsetAt2048": [
+					2,
+					12
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.86,
+			"offsetAt2048": [
+				-10,
+				-10
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniformly inset the complete cup, handle, saucer and teaspoon. The native spoon and saucer approach the side borders; retain the whole assembly and require 128 px clearance from the actual rounded outline."
+		},
+		"matte": {
+			"minimumChannel": 235,
+			"maximumChroma": 24,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [
+				[
+					1740,
+					740
+				]
+			],
+			"calibrationNote": "The modal outer-eight-pixel matte is (251,252,252); the inspected handle opening has the same RGB. Seed only that real opening, retaining cream ceramic, milk foam, peach highlights and brass as physical surfaces. Exterior-connected extraction and a three-pixel unmatting band; no global white deletion or component removal."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2061263,
+		"foregroundPixels": 2133041,
+		"softEdgePixels": 17439,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 72,
+			"top": 272,
+			"right": 2007,
+			"bottom": 1767
+		}
+	},
+	"placement": {
+		"scale": 0.86,
+		"offsetAt2048": [
+			-10,
+			-10
+		],
+		"bounds": {
+			"left": 194,
+			"top": 367,
+			"right": 1859,
+			"bottom": 1652
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 188.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3313,
+			"sha256": "398565151cf5e9192fea6f148aceafd394954e83797c210dbca061063f0973bb"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1656,
+			"sha256": "1555aa69b18d6fda6df3fb9874f3815b10fcadac7fc9db9b4fc930718057d493"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5698296,
+			"sha256": "7832fa50832594291b34c52eae25554f28d661e18f519f64cadd08de8d39746a"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 78948,
+			"sha256": "461fc7366ea4ec5874b0ac3db2f915d372630aa39f2de7dc9e28e23d99de1fd9"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1685,
+			"sha256": "06de0a6143fa1ffa8783fa453918b12f884b3a9829340a41d590387aa5903c5e"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1666532,
+			"sha256": "179c4fc87afec72ed2b1f14171429a0f0729abf9029c7311b1ba1ad98bdf9a2c"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 90966,
+			"sha256": "6c99f42491e422a638497527679ec1d14230e518d20315f9be8f3a23188fb534"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 99993,
+			"sha256": "24847e555715943bfdce79cca8319c8391576e8a2509299ca85d242e197ad494"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 156129,
+			"sha256": "300b1d67f17ba64f9101b3fff82843f5d7e32b249f397e5b884235f1b86d3473"
+		},
+		{
+			"path": "exports/coffee-transparent-2048.png",
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "exports/coffee-icon-2048.png",
+			"bytes": 5756219,
+			"sha256": "2e781520ad77b86f9a0190093096adb8a322a32c0c901deadab4da057ee97904"
+		},
+		{
+			"path": "exports/coffee-rounded-2048.png",
+			"bytes": 5695474,
+			"sha256": "e21430985eb062c5b6366644dd7c3ef412c04915e37781a08087e5e8d6a52c33"
+		},
+		{
+			"path": "exports/coffee-transparent-1024.png",
+			"bytes": 1130960,
+			"sha256": "2bce49ea1299cd2fcb4084dcc015d4ac62546108c32cad5e0ac44d9033dd4583"
+		},
+		{
+			"path": "exports/coffee-icon-1024.png",
+			"bytes": 1411087,
+			"sha256": "14f4ae16bb4fb2ec4086cd7810e2c213e2b1430518b5675e59dddebb0231bb33"
+		},
+		{
+			"path": "exports/coffee-rounded-1024.png",
+			"bytes": 1416640,
+			"sha256": "b1f274d2437b816e4fa63c8c59ae0e7acdc0d6e7e74025b9b6c9060ea065e005"
+		},
+		{
+			"path": "exports/coffee-transparent-512.png",
+			"bytes": 298428,
+			"sha256": "8df4df164bdc522ae8156ea1b01c3793784daf7b39a08dc65824f172b76edf01"
+		},
+		{
+			"path": "exports/coffee-icon-512.png",
+			"bytes": 401710,
+			"sha256": "d00045487c64e239bf7ffba5eafc93de17717cde8c36cb1ccb0f48f59d68ba24"
+		},
+		{
+			"path": "exports/coffee-rounded-512.png",
+			"bytes": 404146,
+			"sha256": "312c1a82475615ded626aeb7d55b92f106d7ef2c539552fd71df3c3083cc1c9f"
+		},
+		{
+			"path": "exports/coffee-transparent-256.png",
+			"bytes": 81854,
+			"sha256": "9af99f813ca32ed4a21e07ed8218ca05ed4c745da7324c6e89e94ab04c3f8136"
+		},
+		{
+			"path": "exports/coffee-icon-256.png",
+			"bytes": 97840,
+			"sha256": "41b3852e84e4a0b815dca6e1dbdcf5d30613043b064d7130cd2cd3c016da421e"
+		},
+		{
+			"path": "exports/coffee-rounded-256.png",
+			"bytes": 101754,
+			"sha256": "582254e83bdd4c0f9bc5551ed60a60a724503807f64e9a8cc809019948fa5092"
+		},
+		{
+			"path": "exports/coffee-transparent-128.png",
+			"bytes": 22724,
+			"sha256": "01c75a5ec74fe8ce32416a541918c513b2adbe14f4ad383b9db942fa0721d705"
+		},
+		{
+			"path": "exports/coffee-icon-128.png",
+			"bytes": 27978,
+			"sha256": "6870971fd9c85357c3e3ff0e7023145bdc3b4f47ac8fb56b16712df7a4a33fa5"
+		},
+		{
+			"path": "exports/coffee-rounded-128.png",
+			"bytes": 29923,
+			"sha256": "a95d29c3b41b3a0d61f7ef77bbea14553e86b9ba0125a687d3ad476bcc36f39f"
+		},
+		{
+			"path": "exports/coffee-transparent-64.png",
+			"bytes": 6498,
+			"sha256": "fb3ac7f3d0136d0655d3c27b0e8001d099caecd1565d413cfde6f326935bd7ee"
+		},
+		{
+			"path": "exports/coffee-icon-64.png",
+			"bytes": 8525,
+			"sha256": "bbdec0b778b10213d02785285875b6259bc5f2cb92071bd34c1fe097231b92ea"
+		},
+		{
+			"path": "exports/coffee-rounded-64.png",
+			"bytes": 9308,
+			"sha256": "1c3bbbf006480ad939d4b9cb36598c3c8b32271a75af7da9ef73c95f3f5729bd"
+		},
+		{
+			"path": "exports/coffee-transparent-48.png",
+			"bytes": 3965,
+			"sha256": "46591f8bd107582beeb353660ef821c0ae968b6f52c7acf76ffabb353e72fafa"
+		},
+		{
+			"path": "exports/coffee-icon-48.png",
+			"bytes": 5204,
+			"sha256": "8afe60ce4e90dbca3d5ac35eb476c809151878e12300d679ceeea16ff8abc1e5"
+		},
+		{
+			"path": "exports/coffee-rounded-48.png",
+			"bytes": 5783,
+			"sha256": "ac48e7d4dbf8dcd10acab0e917e2ee199f6513731e98c346d633c12b45fef25f"
+		},
+		{
+			"path": "exports/coffee-transparent-32.png",
+			"bytes": 2052,
+			"sha256": "706fe4791847da6ced34653226bff459e5f8f17e02641db1af7b423e7877955f"
+		},
+		{
+			"path": "exports/coffee-icon-32.png",
+			"bytes": 2756,
+			"sha256": "cea6cb3f49f2374c8111c1e0f9c4256bd091c25b3dffdbff3d12c0286feddcc3"
+		},
+		{
+			"path": "exports/coffee-rounded-32.png",
+			"bytes": 2979,
+			"sha256": "75a73217cc2b637e2a28a280d9552dbf8e0a6172ee28cdd5bc454e04077d6ac8"
+		},
+		{
+			"path": "exports/coffee-transparent-24.png",
+			"bytes": 1329,
+			"sha256": "43b52334072b3963699033517adf25756bdbd452342d535d45a50102a4087559"
+		},
+		{
+			"path": "exports/coffee-icon-24.png",
+			"bytes": 1728,
+			"sha256": "c64cd5edaece7cc9911dc1481f967e2fadaadb86c8e434f6c11768f61d17b59c"
+		},
+		{
+			"path": "exports/coffee-rounded-24.png",
+			"bytes": 1931,
+			"sha256": "6d57487e54bf2a59fcfb83a2adcfc9fa11627f51fedc58a6a36f7ea46526b8d6"
+		},
+		{
+			"path": "exports/coffee-transparent-16.png",
+			"bytes": 736,
+			"sha256": "73ba261bc46b767a55b9bcc5b2a9deb89d2dff15b212e7d8a784253ecad7e2fb"
+		},
+		{
+			"path": "exports/coffee-icon-16.png",
+			"bytes": 920,
+			"sha256": "1781da5be9c9b2a8c885de8d611574ce854ab0aaa80140af66e5c40b9b235e5c"
+		},
+		{
+			"path": "exports/coffee-rounded-16.png",
+			"bytes": 982,
+			"sha256": "8d906a86fdd548fc0c5908af876d8bd6b5cd8388b4c8d9bf576261e6bd58ed2a"
+		},
+		{
+			"path": "exports/coffee-white-2048.png",
+			"bytes": 4169194,
+			"sha256": "b6c63ab8d447847295391f42edd3ec9c2b164fdbc0511262a1beb3a114a28bcf"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1087601,
+			"sha256": "e256981f603e37584fdf3903ebf270841230983b02f5e9e7798b54efb706ae5d"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1091896,
+			"sha256": "3d40c6345093a9c3425fd0f994cbf5d8f6592345287215094cf616eb41c84a66"
+		}
+	]
+}

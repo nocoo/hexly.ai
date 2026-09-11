@@ -213,8 +213,10 @@ One Image 2 request returned one native 2048-square drawing, accepted under the 
 
 The Meowth character redraw was paused by the owner after [two Azure attempts returned no image](meowth/2026-09-08-02/notes.md). The earlier silver-blue cat remains active; no alternate-provider request or replacement was made.
 
-## Coffee and Hermes Gateway intake — 2026-09-11
+## Coffee and Hermes Gateway adoption — 2026-09-11
 
-Two new Tools entries have native 2048-square Image 2 outputs at the mandatory raw checkpoint. [Coffee](coffee/2026-09-11-01/brief.md) proposes a peach ceramic cup, saucer and brass spoon; [Hermes Gateway](hermes-gateway-herdr/2026-09-11-01/brief.md) proposes a brass frame, ajar blue door and a green status lens. Each study preserves the exact prompt, reference hashes, inspected source files, authorization and untouched response.
+The owner approved both displayed native 2048-square Image 2 outputs with “通过，继续”. [Coffee](coffee/2026-09-11-01/review.html) uses a peach ceramic cup, latte leaf, saucer and brass spoon on rose/oat paper with broken cupping rings. [Hermes Gateway](hermes-gateway-herdr/2026-09-11-01/review.html) uses a brass frame, ajar blue enamel door, ivory terminal inlay and green status lens on blue-gray pane relief. Both select finishing `01` under their `2026-09-11-01` study.
 
-Both `raw-review.json` records remain pending. The owner has been shown the original bytes; no acceptance, extraction, finishing or source adoption is claimed. The local catalogue uses Coffee's preserved bean-and-sparkle icon and the new profile's editorial Gateway emoji. See [the onboarding record](../../docs/14-new-tools-onboarding.md) for bilingual README commits, source-publication boundaries and intake validation.
+Exact-byte raw decisions preserve the preceding pending checkpoint. Native opaque RGB is unchanged, the real handle/frame openings are transparent, and rounded-outline clearances are 188.5 and 205.5 px. All ten sizes, four master roles, independent backgrounds/shadows, sampled palettes and complete static/catalogue reviews are retained. Coffee's original bean-and-sparkle icon and Gateway's editorial emoji remain unchanged as the previous identities.
+
+Local source adoption is recorded in [Coffee](coffee/2026-09-11-01/adoption.json) at `0f0b9acd71` and [Gateway](hermes-gateway-herdr/2026-09-11-01/adoption.json) at `f14ddf11bf`. Both README languages use the selected rounded presentation; Coffee's actual application and browser marks use transparent derivatives. See [the onboarding record](../../docs/14-new-tools-onboarding.md) for validation, profiles and local publication scope.
