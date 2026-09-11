@@ -1,6 +1,6 @@
 # Project profiles
 
-71 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
+73 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
@@ -75,3 +75,5 @@
 | [🪴 Fundly](68-fundly.md) | Refined preview | #e95d2b | #e85d2a |
 | [🌸 DreamRO](69-dreamro.md) | Refined preview | #a98c57 | #f4f1e5 |
 | [🐱 Meowth](70-meowth.md) | Refined preview | #3c83f6 | #eeeff2 |
+| [☕ Coffee](73-coffee.md) | Original asset | #c7d9a9 | #f8f6f0 |
+| [🚪 Hermes Gateway for Herdr](74-hermes-gateway-herdr.md) | Profile emoji | #855032 | transparent |

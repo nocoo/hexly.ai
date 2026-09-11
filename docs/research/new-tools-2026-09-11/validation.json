@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-11",
+  "scope": "Local catalogue and README intake using existing identities; both new native images await exact-byte owner confirmation",
+  "repositories": {
+    "nocoo": {
+      "localRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+      "pushedByThisTask": false
+    },
+    "coffee": {
+      "localRevision": "d8e90515dbd36f3bad7530c226c7849f90b9ed04",
+      "pushedByThisTask": false
+    },
+    "hermes-gateway-herdr": {
+      "localRevision": "1cc8ac27ea9aecb6263d99a9cd26ae859168200a",
+      "pushedByThisTask": false
+    }
+  },
+  "preservedGatewayImplementationCommits": 11,
+  "sourceReadmes": {
+    "localizedFiles": 4,
+    "localLinksVerified": 80,
+    "missingLocalLinks": 0,
+    "gatewayLauncherHelp": "passed; no real Herdr or Hermes endpoint invoked"
+  },
+  "checks": {
+    "assetsBuild": "passed",
+    "profiles": 73,
+    "sourceChecksums": 73,
+    "displayDerivatives": 438,
+    "historicalPublicArchives": 56,
+    "historicalFinishingPasses": 95,
+    "typecheck": "passed",
+    "biome": "passed",
+    "isolation": "passed",
+    "unitTests": 94,
+    "coverage": {
+      "statements": 99.62,
+      "branches": 98.36,
+      "functions": 100,
+      "lines": 99.58
+    },
+    "httpTests": 63,
+    "affectedBrowserTests": 28,
+    "newProjectBrowserCases": 16,
+    "dependencyAudit": "passed; 210 locked packages",
+    "gitHistorySecrets": "passed",
+    "priorCatalogueRecordsUnchanged": 71
+  },
+  "browserEvidence": "docs/research/new-tools-2026-09-11/browser/checks.json",
+  "rawReview": {
+    "coffee": "pending",
+    "hermes-gateway-herdr": "pending"
+  },
+  "generatedImagesPublished": false,
+  "sourceLogosReplaced": false,
+  "deployed": false
+}

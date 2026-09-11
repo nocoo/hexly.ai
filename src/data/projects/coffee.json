@@ -1,0 +1,156 @@
+{
+	"id": "coffee",
+	"repo": "coffee",
+	"title": "Coffee",
+	"emoji": "☕",
+	"description": {
+		"en": "Bilingual coffee flavor wheel, origin atlas, brewing lab and tasting journal",
+		"zh": "双语咖啡风味轮、产地地图、冲煮实验室与本地品鉴手记"
+	},
+	"category": "tools",
+	"website": "https://coffee.hexly.ai",
+	"websiteSource": "Repository homepage, README.md and wrangler.jsonc at a6f179b1f530b1511e276eae6d3989a43c08a833; HTTPS returned 200 on 2026-09-11",
+	"repository": "https://github.com/nocoo/coffee",
+	"subject": "Dark-green six-point sparkle with a coffee bean, the original application icon",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/coffee-initial.png",
+		"sourcePath": "public/icon-512.png",
+		"sourceUrl": "https://github.com/nocoo/coffee/blob/a6f179b1f530b1511e276eae6d3989a43c08a833/public/icon-512.png",
+		"modified": false,
+		"width": 512,
+		"height": 512,
+		"bytes": 12915,
+		"sha256": "63c37f0e536e01f3d0cf0f6750d8be01e1f957a91b1f862f5778241b460cda20",
+		"thumbnail": "/logos/display/coffee-160.webp",
+		"display": "/logos/display/coffee-1024.webp"
+	},
+	"theme": {
+		"primary": {
+			"value": "#c7d9a9",
+			"source": "src/styles.css :root --accent at a6f179b1f530b1511e276eae6d3989a43c08a833"
+		},
+		"background": {
+			"value": "#f8f6f0",
+			"source": "src/styles.css :root --bg at a6f179b1f530b1511e276eae6d3989a43c08a833"
+		},
+		"ink": {
+			"value": "#36352f",
+			"source": "src/styles.css :root --ink at a6f179b1f530b1511e276eae6d3989a43c08a833"
+		}
+	},
+	"colors": {
+		"primary": "#c7d9a9",
+		"background": "#f8f6f0",
+		"ink": "#36352f",
+		"palette": [
+			{
+				"color": "#c7d9a9",
+				"role": "primary",
+				"source": "src/styles.css :root --accent at a6f179b1f530b1511e276eae6d3989a43c08a833"
+			},
+			{
+				"color": "#f8f6f0",
+				"role": "background",
+				"source": "src/styles.css :root --bg at a6f179b1f530b1511e276eae6d3989a43c08a833"
+			},
+			{
+				"color": "#f2d5d9",
+				"role": "accent",
+				"source": "src/styles.css :root --pink at a6f179b1f530b1511e276eae6d3989a43c08a833"
+			},
+			{
+				"color": "#d9c9f0",
+				"role": "accent",
+				"source": "src/styles.css :root --illustration at a6f179b1f530b1511e276eae6d3989a43c08a833"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+		"profileSection": "Recent Projects",
+		"description": "Bilingual coffee flavor wheel, origin atlas, brewing lab and tasting journal",
+		"repositoryRevision": "a6f179b1f530b1511e276eae6d3989a43c08a833"
+	},
+	"overview": {
+		"goal": {
+			"en": "Explore coffee through an original interactive flavor wheel, compare origins and brewing recipes, and record tasting notes locally. Bilingual learning paths and a slow exhibition mode support sensory practice and shop displays.",
+			"zh": "通过原创交互风味轮认识咖啡，对照产地与冲煮配方，并在本地记录品鉴手记。双语学习路径与慢速展示模式支持感官练习和店铺大屏。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / React",
+				"role": {
+					"en": "Bilingual interface and content model",
+					"zh": "双语界面与内容模型"
+				}
+			},
+			{
+				"name": "Three.js / React Three Fiber",
+				"role": {
+					"en": "Interactive 3D flavor wheel with an SVG alternative",
+					"zh": "交互式 3D 风味轮与 SVG 轻量视图"
+				}
+			},
+			{
+				"name": "Vite / Bun",
+				"role": {
+					"en": "Development and static builds",
+					"zh": "开发与静态构建"
+				}
+			},
+			{
+				"name": "History API / localStorage",
+				"role": {
+					"en": "Navigation, preferences and local tasting notes",
+					"zh": "导航、偏好与本地品鉴手记"
+				}
+			},
+			{
+				"name": "Web Audio API",
+				"role": {
+					"en": "Opt-in synthesized ambience",
+					"zh": "主动开启的合成环境音"
+				}
+			},
+			{
+				"name": "Cloudflare Workers Static Assets",
+				"role": {
+					"en": "Static delivery",
+					"zh": "静态站点分发"
+				}
+			},
+			{
+				"name": "Vitest / Playwright",
+				"role": {
+					"en": "Data, calculation, storage and browser tests",
+					"zh": "数据、计算、存储与浏览器测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-11",
+			"revision": "d8e90515dbd36f3bad7530c226c7849f90b9ed04",
+			"snapshot": {
+				"path": "docs/sources/coffee-2026-09-11.json",
+				"sha256": "c6cfcf33a6250f711316cd78014a932a4c6b09675c67ed9298a4c0fc4388bad4"
+			},
+			"sources": [
+				"README.md",
+				"docs/README.en.md",
+				"package.json",
+				"src/styles.css",
+				"src/App.tsx",
+				"src/components/shared.tsx",
+				"src/lib/core.ts",
+				"src/lib/journal.ts",
+				"docs/architecture.md",
+				"scripts/render-assets.mjs",
+				"public/icon-512.png",
+				"wrangler.jsonc"
+			]
+		}
+	}
+}
