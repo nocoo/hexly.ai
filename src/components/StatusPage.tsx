@@ -3,6 +3,7 @@ import {
 	type RefObject,
 	useEffect,
 	useId,
+	useMemo,
 	useRef,
 	useState,
 } from "react";
@@ -19,18 +20,10 @@ import {
 	type StatusSnapshot,
 	sampleTotals,
 } from "../model/status";
+import { formatStatusTime } from "../model/time-zone";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { SearchField } from "./SearchField";
-
-function dateLabel(time: number, locale: Locale, withTime = false) {
-	return new Intl.DateTimeFormat(locale === "zh" ? "zh-CN" : "en-GB", {
-		month: "short",
-		day: "numeric",
-		...(withTime ? { hour: "2-digit", minute: "2-digit", hour12: false } : {}),
-		timeZone: "UTC",
-	}).format(time);
-}
 
 function percentage(value: number | null) {
 	return value === null ? "—" : `${value.toFixed(value === 100 ? 0 : 2)}%`;
@@ -42,12 +35,14 @@ function StatusHistory({
 	now,
 	hours,
 	locale,
+	timeZone,
 }: {
 	service: StatusService;
 	title: string;
 	now: number;
 	hours: number;
 	locale: Locale;
+	timeZone: string;
 }) {
 	const t = statusCopy[locale];
 	const slots = historySlots(service.history, now, hours);
@@ -57,7 +52,8 @@ function StatusHistory({
 	const index = Math.min(selected ?? slots.length - 1, slots.length - 1);
 	const slot = slots[index];
 	if (!slot) return null;
-	const label = `${dateLabel(slot.time, locale, true)} UTC · ${slot.data ? `${slot.data.passed}/${slot.data.total} ${t.passed}` : t.noData}`;
+	const date = formatStatusTime(slot.time, locale, timeZone, true);
+	const label = `${date} · ${slot.data ? `${slot.data.passed}/${slot.data.total} ${t.passed}` : t.noData}`;
 	return (
 		<div
 			className="status-history"
@@ -120,7 +116,9 @@ function StatusHistory({
 						} as CSSProperties
 					}
 				>
-					<span>{dateLabel(slot.time, locale, true)} UTC</span>
+					<span>
+						<time dateTime={new Date(slot.time).toISOString()}>{date}</time>
+					</span>
 					<strong>
 						{slot.data
 							? `${slot.data.passed}/${slot.data.total} ${t.passed}`
@@ -138,12 +136,14 @@ function ServiceRow({
 	now,
 	hours,
 	locale,
+	timeZone,
 }: {
 	project: Project;
 	service: StatusService;
 	now: number;
 	hours: number;
 	locale: Locale;
+	timeZone: string;
 }) {
 	const t = statusCopy[locale];
 	const [expanded, setExpanded] = useState(false);
@@ -181,6 +181,7 @@ function ServiceRow({
 						now={now}
 						hours={hours}
 						locale={locale}
+						timeZone={timeZone}
 					/>
 					<div className="status-history-meta">
 						<span>
@@ -232,9 +233,13 @@ function ServiceRow({
 						<div>
 							<dt>{t.checkedAt}</dt>
 							<dd>
-								{latest
-									? `${dateLabel(latest.checkedAt, locale, true)} UTC`
-									: t.awaiting}
+								{latest ? (
+									<time dateTime={new Date(latest.checkedAt).toISOString()}>
+										{formatStatusTime(latest.checkedAt, locale, timeZone, true)}
+									</time>
+								) : (
+									t.awaiting
+								)}
 							</dd>
 						</div>
 						<div>
@@ -259,12 +264,16 @@ function ServiceRow({
 export function StatusPage({
 	projects,
 	locale,
+	timeZonePreference,
+	onTimeZone,
 	query,
 	searchRef,
 	onQuery,
 }: {
 	projects: Project[];
 	locale: Locale;
+	timeZonePreference: string;
+	onTimeZone: (timeZone: string) => void;
 	query: string;
 	searchRef: RefObject<HTMLInputElement | null>;
 	onQuery: (query: string) => void;
@@ -277,6 +286,22 @@ export function StatusPage({
 	const [now, setNow] = useState(Date.now);
 	const [filter, setFilter] = useState<"all" | "attention">("all");
 	const [hours, setHours] = useState(168);
+	const browserTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	const timeZone =
+		timeZonePreference === "local" ? browserTimeZone : timeZonePreference;
+	const timeZones = useMemo(
+		() =>
+			[
+				...new Set([
+					browserTimeZone,
+					timeZone,
+					...Intl.supportedValuesOf("timeZone"),
+				]),
+			]
+				.filter((zone) => zone !== "UTC")
+				.sort(),
+		[browserTimeZone, timeZone],
+	);
 
 	useEffect(() => {
 		const controller = new AbortController();
@@ -427,6 +452,32 @@ export function StatusPage({
 						<span className="headline-period">.</span>
 					</h1>
 					<p className="status-description">{t.description}</p>
+					<div className="status-timezone">
+						<label htmlFor="status-timezone">
+							<Icon name="clock" />
+							{t.timeZone}
+						</label>
+						<div className="sort-control">
+							<select
+								id="status-timezone"
+								value={timeZonePreference}
+								onChange={(event) => onTimeZone(event.target.value)}
+							>
+								<option value="local">
+									{t.localTime} · {browserTimeZone.replaceAll("_", " ")}
+								</option>
+								<option value="UTC">UTC</option>
+								<optgroup label={t.allTimeZones}>
+									{timeZones.map((zone) => (
+										<option key={zone} value={zone}>
+											{zone.replaceAll("_", " ")}
+										</option>
+									))}
+								</optgroup>
+							</select>
+							<Icon name="chevron" />
+						</div>
+					</div>
 				</div>
 				<div
 					className={`status-signal status-${summaryStatus}`}
@@ -522,9 +573,16 @@ export function StatusPage({
 					<div className="status-update">
 						<span className={`status-update-dot status-${summaryStatus}`} />
 						<span>
-							{latestTime
-								? `${t.updated} ${dateLabel(latestTime, locale, true)} UTC`
-								: t.awaiting}
+							{latestTime ? (
+								<>
+									{t.updated}{" "}
+									<time dateTime={new Date(latestTime).toISOString()}>
+										{formatStatusTime(latestTime, locale, timeZone, true)}
+									</time>
+								</>
+							) : (
+								t.awaiting
+							)}
 						</span>
 						<button
 							type="button"
@@ -603,6 +661,7 @@ export function StatusPage({
 							now={now}
 							hours={hours}
 							locale={locale}
+							timeZone={timeZone}
 						/>
 					))}
 					{visible.length === 0 && (
@@ -624,7 +683,9 @@ export function StatusPage({
 					)}
 				</div>
 				<div className="status-timeline-labels">
-					<span>{dateLabel(now - hours * 3_600_000, locale)}</span>
+					<span>
+						{formatStatusTime(now - hours * 3_600_000, locale, timeZone)}
+					</span>
 					<span>{t.hourLegend}</span>
 					<span>{t.now}</span>
 				</div>

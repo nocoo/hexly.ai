@@ -7,7 +7,7 @@ import {
 	savePreference,
 } from "../../src/model/preferences";
 
-describe("language and theme preferences", () => {
+describe("language, theme, and time-zone preferences", () => {
 	it("honors explicit settings before the browser's preferences", () => {
 		expect(resolveLocale("en", "zh-CN")).toBe("en");
 		expect(resolveLocale("zh", "en-US")).toBe("zh");
@@ -20,19 +20,27 @@ describe("language and theme preferences", () => {
 	});
 	it("reads saved preferences and remains usable with blocked storage", () => {
 		const storage = {
-			getItem: (key: string) => (key === preferenceKeys.locale ? "zh" : "dark"),
+			getItem: (key: string) =>
+				({
+					[preferenceKeys.locale]: "zh",
+					[preferenceKeys.theme]: "dark",
+					[preferenceKeys.timeZone]: "Asia/Shanghai",
+				})[key] ?? null,
 		};
 		expect(readPreferences(storage, "en", false)).toEqual({
 			locale: "zh",
 			theme: "dark",
+			timeZone: "Asia/Shanghai",
 		});
 		expect(readPreferences(null, "en", true)).toEqual({
 			locale: "en",
 			theme: "dark",
+			timeZone: "local",
 		});
 		expect(readPreferences({ getItem: () => null }, "zh", false)).toEqual({
 			locale: "zh",
 			theme: "light",
+			timeZone: "local",
 		});
 		expect(
 			readPreferences(
@@ -44,7 +52,7 @@ describe("language and theme preferences", () => {
 				"en",
 				false,
 			),
-		).toEqual({ locale: "en", theme: "light" });
+		).toEqual({ locale: "en", theme: "light", timeZone: "local" });
 	});
 	it("saves settings while treating storage failure as non-fatal", () => {
 		const values = new Map<string, string>();

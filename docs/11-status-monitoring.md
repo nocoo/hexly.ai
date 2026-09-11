@@ -96,6 +96,13 @@ status. Latency represents this Cloudflare probe, not a global average.
   timestamps so the UI can detect staleness even from a cached response.
 - The React page uses the site's existing typography, themes, bilingual copy,
   navigation, project logos, and accessible controls.
+- The top time-zone selector defaults to the browser's current IANA time zone
+  and remembers a manual choice. Local follows the browser again. Last-check
+  times, service details, hourly tooltips, and date labels use that choice.
+  `Intl.DateTimeFormat` supplies each timestamp's actual offset, including
+  daylight-saving transitions. Storage, hourly buckets, rolling windows, and
+  availability calculations remain UTC; changing the display never regroups
+  observations or changes totals.
 - Provide system summary, service rows, seven-day history, response times, and
   endpoint integration details. All displayed history comes from real samples.
 - Bind `status.hexly.ai` as another custom domain on the existing Worker and

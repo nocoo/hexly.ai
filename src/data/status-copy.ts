@@ -5,6 +5,9 @@ export const statusCopy = {
 		description: "A live pulse on our little universe of tools and services.",
 		cadence: "CHECKED EVERY 5 MINUTES",
 		retention: "7 DAYS OF HISTORY",
+		timeZone: "Time zone",
+		localTime: "Local",
+		allTimeZones: "All time zones",
 		operational: "Operational",
 		degraded: "Degraded",
 		down: "Unavailable",
@@ -67,7 +70,7 @@ export const statusCopy = {
 		method:
 			"We check each active website’s /api/live endpoint every five minutes. A successful check requires a healthy JSON response. History is kept for seven days.",
 		methodDetail:
-			"Availability is the share of recorded checks that passed. Gaps remain unmeasured; a quiet bar does not mean a healthy service. Times are shown in UTC.",
+			"Availability is the share of recorded checks that passed. Gaps remain unmeasured; a quiet bar does not mean a healthy service. Times follow your selected time zone.",
 		methodScope:
 			"Archived projects are excluded. Response times reflect the Cloudflare monitoring location.",
 		totalActive: "active projects",
@@ -91,6 +94,9 @@ export const statusCopy = {
 		description: "看看这个小宇宙里，每个工具与服务的近况。",
 		cadence: "每 5 分钟检查一次",
 		retention: "保留最近 7 天记录",
+		timeZone: "时区",
+		localTime: "当前时区",
+		allTimeZones: "全部时区",
 		operational: "运行正常",
 		degraded: "服务降级",
 		down: "暂不可用",
@@ -149,7 +155,7 @@ export const statusCopy = {
 		method:
 			"每 5 分钟检查一次活跃网站的 /api/live 接口，返回健康的 JSON 响应才算通过。记录滚动保留 7 天。",
 		methodDetail:
-			"通过率以实际记录的检查为准。缺失时段保持空白，空白并不代表正常。所有时间均以 UTC 显示。",
+			"通过率以实际记录的检查为准。缺失时段保持空白，空白并不代表正常。时间按所选时区显示。",
 		methodScope: "已归档项目不参与监测。响应时间来自 Cloudflare 的探测位置。",
 		totalActive: "个活跃项目",
 		reasons: {
