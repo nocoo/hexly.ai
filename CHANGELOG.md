@@ -6,6 +6,14 @@
 
 - display timestamps in the selected time zone ([3eae747](https://github.com/nocoo/hexly.ai/commit/3eae747debcf646a40c96b03b3a61ae39c2e5761))
 
+### Tests
+
+- activate native navigation tab when opening it ([a51071a](https://github.com/nocoo/hexly.ai/commit/a51071aadd9c62e383cf8033ef9ce89f8254d453))
+
+### Documentation
+
+- sync pew-game 0.2.0 catalogue and profile ([6478e86](https://github.com/nocoo/hexly.ai/commit/6478e867f2163d0f054b9ccc3a7b1c9712b74856))
+
 ## [0.5.5] - 2026-09-11
 
 ### Features
