@@ -4,24 +4,24 @@
 
 - Repository: [nocoo/pew-game](https://github.com/nocoo/pew-game)
 - Website: [https://pew.hexly.ai](https://pew.hexly.ai)
-- Website evidence: nocoo/nocoo README.md Games section
+- Website evidence: wrangler.jsonc custom domain; nocoo/nocoo README.md Games section
 - Category: games
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
-- English: A pixel-art prairie shooter with twin-stick action and a high-score leaderboard.
-- Chinese: 像素风格的草原双摇杆射击游戏，闯关、闪避，再挑战排行榜。
+- English: Pixel art prairie shooter with an all-time leaderboard
+- Chinese: 像素风草原射击游戏，支持键盘与触控操作，挑战历史排行榜。
 - Profile section: Games
-- Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
-- Repository revision inspected: `ee68b2dead3e5e698b2427d6a949e8e57c69d520`
+- Profile revision: `512b3c3d56e264464b0a906979d598fddf86b27a`
+- Repository revision inspected: `5200316563da59252505ece261388e4c89266017`
 
 ## Project goal
 
-Play a keyboard-controlled pixel shooter in the browser, survive enemy waves with power-ups, and submit scores to a shared leaderboard.
+Play a pixel prairie shooter with keyboard or touch controls, survive enemy waves with power-ups, and save scores to an all-time leaderboard.
 
-在浏览器中用键盘游玩像素射击，收集道具、抵挡敌人波次，并将成绩提交到共享排行榜。
+用键盘或触控方向键游玩像素草原射击，收集道具、抵挡敌人波次，并将成绩保存到历史排行榜。
 
 - [中文 README](https://github.com/nocoo/pew-game/blob/main/README.md) · [English README](https://github.com/nocoo/pew-game/blob/main/docs/README.en.md)
-- Verified: 2026-09-08; [source revision](https://github.com/nocoo/pew-game/tree/71b4b8165874e1986f993706c6830cc60a8107bf)
-- Source files: [`package.json`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/package.json), [`src/game/engine.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/engine.ts), [`src/game/input.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/input.ts), [`src/game/player.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/player.ts), [`src/game/powerup.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/game/powerup.ts), [`src/lib/db.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/lib/db.ts), [`src/lib/anticheat.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/lib/anticheat.ts), [`src/app/api/scores/route.ts`](https://github.com/nocoo/pew-game/blob/71b4b8165874e1986f993706c6830cc60a8107bf/src/app/api/scores/route.ts)
+- Verified: 2026-09-12; [source revision](https://github.com/nocoo/pew-game/tree/5200316563da59252505ece261388e4c89266017)
+- Source files: [`README.md`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/README.md), [`package.json`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/package.json), [`wrangler.jsonc`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/wrangler.jsonc), [`worker/index.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/worker/index.ts), [`migrations/0001_scores.sql`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/migrations/0001_scores.sql), [`src/game/engine.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/game/engine.ts), [`src/game/input.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/game/input.ts), [`src/game/player.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/game/player.ts), [`src/game/powerup.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/game/powerup.ts), [`src/lib/db.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/lib/db.ts), [`src/lib/anticheat.ts`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/lib/anticheat.ts), [`src/components/GameCanvas.tsx`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/components/GameCanvas.tsx), [`src/components/NameInput.tsx`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/components/NameInput.tsx), [`src/app/globals.css`](https://github.com/nocoo/pew-game/blob/5200316563da59252505ece261388e4c89266017/src/app/globals.css)
 
 ### Tech stack
 
@@ -29,11 +29,11 @@ Play a keyboard-controlled pixel shooter in the browser, survive enemy waves wit
 | --- | --- | --- |
 | TypeScript | Game engine and rules | 游戏引擎与规则 |
 | Canvas 2D | Pixel rendering | 像素画面绘制 |
-| Next.js | Game page and score APIs | 游戏页面与成绩 API |
-| React | Game HUD and leaderboard | 游戏状态界面与排行榜 |
-| SQLite | Persistent scores | 成绩持久化 |
-| better-sqlite3 | Server database access | 服务端数据库访问 |
-| Tailwind CSS | Page and overlay styles | 页面与叠层样式 |
+| Next.js | Static page export | 页面静态导出 |
+| React | Game HUD, touch controls, and leaderboard | 游戏状态、触控操作与排行榜 |
+| Cloudflare Workers | Static assets, health, and score APIs | 静态资源、健康检查与成绩 API |
+| Cloudflare D1 | Persistent rankings and duplicate submission protection | 排名持久化与重复提交保护 |
+| CSS | Responsive arcade layout and styling | 响应式街机布局与样式 |
 
 ## Current logo
 
@@ -54,7 +54,7 @@ Play a keyboard-controlled pixel shooter in the browser, survive enemy waves wit
 | Role | Value | Evidence |
 | --- | --- | --- |
 | primary | `#583b2c` | Native pew-game ab0299e6617c, sampled sRGB pixel (850, 1360); artwork/logo-family/pew-game/2026-09-07-01/palette.json |
-| background | `#111111` | src/app/globals.css --background: #111111 |
+| background | `#191714` | src/app/globals.css --background: #191714 |
 | accent | `#651b19` | Native pew-game ab0299e6617c, sampled sRGB pixel (818, 344); artwork/logo-family/pew-game/2026-09-07-01/palette.json |
 | accent | `#836b42` | Native pew-game ab0299e6617c, sampled sRGB pixel (1328, 1038); artwork/logo-family/pew-game/2026-09-07-01/palette.json |
 | accent | `#da9438` | Native pew-game ab0299e6617c, sampled sRGB pixel (1253, 928); artwork/logo-family/pew-game/2026-09-07-01/palette.json |

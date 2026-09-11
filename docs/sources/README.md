@@ -10,6 +10,7 @@ Ocelot's [September 11 snapshot](ocelot-2026-09-11.json) captures the published 
 6. [InfoSpace repository, original logo and native theme evidence](infospace-2026-09-09.json)
 7. [Profile with InfoSpace leading the tools](nocoo-readme-2026-09-09-infospace.md) · [Revision and targeted-order check](nocoo-readme-2026-09-09-infospace.json)
 8. [Showtime initial local source and repository evidence](showtime-2026-09-10.json) · [Profile addition snapshot](nocoo-readme-2026-09-10-showtime.md)
+9. [Pew Game profile after the 0.2.0 update](nocoo-readme-2026-09-12-pew-game.md), from profile commit `512b3c3d56e264464b0a906979d598fddf86b27a`. The catalogue records source commit `5200316563da59252505ece261388e4c89266017`, its Worker/D1 architecture, touch controls, and actual CSS colors. The existing logo and family artwork keep their original provenance.
 
 The catalogue contains every unique project from the original import, hexly.ai from the v0.1.0 update, and the four local additions. Repeated entries such as Unseal are deduplicated. Original image paths and repository revisions are recorded in each project profile; unchanged entries retain their import provenance. The September 6 repository-status snapshot contains separately dated September 7 records for the four additions.
 
