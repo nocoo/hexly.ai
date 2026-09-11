@@ -1,6 +1,6 @@
 # hexly.ai
 
-Bilingual personal project directory and logo gallery, preserving current artwork and evidenced color palettes.
+Bilingual project directory, preserved logo gallery, and public service status.
 Profile: ts-worker-web. Direction: [docs/01-overview.md](docs/01-overview.md). Frameworks must not rewrite this file.
 
 ## Sources of Truth
@@ -13,14 +13,17 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
+| Status | `src/model/status.ts`, `worker/status.ts`, [storage and scheduling](docs/11-status-monitoring.md) |
 | Enforcement | `.husky/`, `scripts/gates.ts`, `.github/workflows/ci.yml`, test configs |
 | Secrets | GitHub Actions secrets; local `.env*` and `.dev.vars*` are gitignored; never track values |
 | Accidents | [Retrospective.md](Retrospective.md); machine rules stay in global `AGENTS.md` and `rules/` |
 
 ## Project Invariants
 
-- Serve the Vite build through Workers Static Assets. There is no application server, database, authentication, or runtime GitHub dependency; `/api/live` and `/api/share` are static build artifacts. The Worker only redirects `www.hexly.ai` to the apex, canonicalizes a few legacy paths, adds CORS on share JSON, and otherwise serves those assets.
-- Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation state in both directory and gallery views.
+- Serve the Vite build through the existing Worker and Static Assets. `/api/live` and `/api/share` remain build artifacts. The gateway also runs status Cron and reads D1; there is no authentication or runtime GitHub dependency.
+- The catalogue is the monitor list: only non-archived independent HTTPS websites, at their origin plus `/api/live`. Exclude store/distribution links. D1 `hexly-status` uses `STATUS_DB`; Cron runs every five minutes. Each write deletes checks older than seven days, reads apply the same cutoff, and `(project_id, slot)` prevents duplicates.
+- Visitors only read observations. Missing/stale checks remain unknown; HTML fallbacks, redirects, and login pages are never healthy. Local mock data is labeled and must never seed production.
+- Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation in directory, gallery, and status views.
 - Use `/logos/<project>` for identity routes and copied links. All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs on gallery pages.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
 - Every project needs a stable slug, title, bilingual descriptions, emoji, verified links, logo provenance, and evidenced foreground/background colors. Follow the identity rules; do not infer websites or invent palettes.
@@ -37,17 +40,19 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 |---|---|
 | Client | React 19, Vite 8, TypeScript 7 strict |
 | Toolchain | Bun 1.4.0, exact dependencies and frozen `bun.lock`; browser CI and deployment pin Node.js 26.7.0 |
-| Hosting | Cloudflare Worker `hexly-ai`, static assets plus a www→apex redirect |
+| Hosting | Worker `hexly-ai`, Static Assets, Cron, and D1 `hexly-status`; apex/www/status custom domains |
 | Quality | Biome; Vitest L1; Playwright HTTP L2 and Chromium L3; OSV + Gitleaks |
 
 ```text
 src/data/          catalogue, bilingual copy, version
-src/model/         filtering, preferences, navigation, types
+src/model/         filtering, preferences, navigation, status, types
 src/App.tsx        browser state and view orchestration
 src/components/    accessible React views
 src/styles/        design tokens and view styles
 public/logos/      original backups, emoji identities, WebP derivatives
-scripts/           asset/profile generators, verification, gates, release
+worker/            gateway, scheduled probes, D1 status queries
+migrations/        D1 schema
+scripts/           local mock D1, asset/profile generators, verification, gates, release
 tests/             unit/, http/, browser/
 docs/              numbered guides, profiles/, sources/, deployment/
 artwork/           versioned logo studies, references, raw outputs, finishing
@@ -84,7 +89,7 @@ Run the asset/profile generation sequence after intentional catalogue or artwork
 | L3 UI | Desktop/mobile journeys, both languages/themes, gallery, accessibility | enforced | CI `test:browser`; `playwright.config.ts` |
 | G1 static | TypeScript strict and Biome with zero errors or warnings | enforced | Pre-commit `lint:staged`; CI full typecheck/lint |
 | G2 security | OSV locked dependencies and Gitleaks; missing tools fail | enforced | Pre-push `check:security`; CI |
-| D1 isolation | Loopback servers, separate state, no storage or remote bindings | enforced | `check:isolation`, `scripts/isolation.ts`, Playwright configs |
+| D1 isolation | Local-only SQLite D1, fake IDs, separate state, no public probes or remote bindings | enforced | `check:isolation`, `scripts/isolation.ts`, Playwright configs |
 | Assets / build | Source checksums, WebP sizes, Vite build, Wrangler dry run | enforced | CI `assets:check`, L2/L3 build, `deploy:check` |
 | Content / docs | Profile synchronization, provenance, numbered docs when behavior changes | manual | Review catalogue changes against identity rules and source evidence |
 
@@ -96,18 +101,46 @@ Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Play
 | Purpose | Port | Runtime state / access |
 |---|---|---|
 | Vite dev | 7048 | `https://index.dev.hexly.ai` through Caddy to loopback |
+| Dev Worker | 37048 | `.wrangler/dev`; inspector 38048; SQLite D1 demo data |
 | L2 HTTP | 17048 | `.wrangler/http`; inspector 18048 |
 | L3 browser | 27048 | `.wrangler/browser`; inspector 28048 |
 | Workers preview | 37048 | `.wrangler/preview`; inspector 38048 |
 
-D1 denotes test isolation, not a database requirement. Tests use `--env test --local`, own their servers, and never reuse dev servers. Production/preview commands explicitly select `--env ""`. Runbook: [docs/04-development.md](docs/04-development.md).
+`bun run dev` builds the target manifest, migrates/seeds local SQLite D1, and starts both servers; review `/status`. Demo records refresh every five minutes. Restart after catalogue changes. Tests use `--env test --local`; dev/preview use `--env dev --local`. Fake database IDs, separate persistence paths, and disabled live probes keep all local environments isolated. Production commands select `--env ""`. Worker types are generated into ignored `.wrangler/types.d.ts` and checked separately from browser DOM types. Runbook: [docs/04-development.md](docs/04-development.md).
 
 ## Operations / Release
 
 - Entry: `bun run release` or `bun run release -- patch|minor|major|X.Y.Z` from clean `main`, with GitHub write access. Dry run is read-only. Version policy and recovery: [docs/05-release.md](docs/05-release.md).
 - The release script updates version/changelog, pushes `main`, waits for that commit's successful quality and Deploy jobs, verifies production, then creates an annotated tag and GitHub Release. Published tags are immutable.
-- `Quality & Deploy` automatically deploys trusted `main` after all gates. Use this path for routine publication; manual `bun run deploy` also exists. Actions secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
-- Production: `https://hexly.ai`; preview: `https://hexly-ai.nocoo.workers.dev` (`noindex`). `bun run verify:production` verifies version/revision, document, compiled assets, and original logo. Keep apex migration/rollback details in the deployment runbook.
+- `Quality & Deploy` applies D1 migrations, then deploys trusted `main` after all gates. Use this path for routine publication; manual `bun run deploy` follows the same order. Actions secrets: `CLOUDFLARE_API_TOKEN` (already has D1 access), `CLOUDFLARE_ACCOUNT_ID`.
+- Production: `https://hexly.ai` and `https://status.hexly.ai`; preview: `https://hexly-ai.nocoo.workers.dev` (`noindex`). `bun run verify:production` checks version/revision, document, status page and live D1 feed, compiled assets, and original logo. Keep routing and rollback details in the runbook.
+
+## Adding a project: complete the whole path
+
+Use the shared `zhengli-update-github-readme` skill. A new project is complete
+when its source repository, GitHub profile, hexly catalogue, identity/provenance,
+project documentation, public website, and status coverage agree.
+
+1. Inspect the source README, actual logo/theme, Git status, and release path.
+   Preserve unrelated work and never publish someone else's unpushed commits.
+2. For a public site, provide an unauthenticated, uncached `GET /api/live` with
+   JSON `status: "ok"` and the current top-level `version`. Existing `name` or
+   `component` conventions may remain. Dynamic services check core dependencies
+   and return an appropriate failure status; static sites generate their health
+   JSON during the production build. Verify production, not just Vite dev.
+3. Update the source repository description and `nocoo/nocoo` profile entry,
+   retaining established emoji and section/order conventions. Record the profile
+   revision before citing it in catalogue provenance.
+4. Add the project JSON and index entry, archive its actual artwork and palette
+   evidence, and run `assets:build`, `docs:profiles`, and `assets:check`. Use the
+   logo skill when identity creation or promotion is in scope.
+5. Validate and publish the source and this site within the user's authorization.
+   A health-only correction uses Z+1. After the next Cron run, verify the exact
+   endpoint and current result at `status.hexly.ai`; disclose real failures.
+
+Desktop apps and libraries without a website do not need a synthetic endpoint.
+Do not create a separate D1 monitor entry, deploy a second status Worker, or
+require a running browser to keep monitoring alive.
 
 ## Retrospective
 
