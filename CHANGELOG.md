@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.4] - 2026-09-11
+
+### Features
+
+- add Ocelot with its approved animal identity ([b832734](https://github.com/nocoo/hexly.ai/commit/b832734b7225c500d95c508fda5fa3da9d2f06b3))
+
 ## [0.5.3] - 2026-09-11
 
 ### Features
