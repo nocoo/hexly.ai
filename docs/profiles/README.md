@@ -23,7 +23,7 @@
 | [🎮 Poké Pocket](17-pokepocket.md) | Adopted family | #294138 | #f7f8f2 |
 | [✈️ Dogfight](18-dogfight.md) | Adopted family | #c0e9dc | #101c27 |
 | [🧸 Gaga](19-gaga.md) | Adopted family | #4c5342 | #f3f0e8 |
-| [🤠 Pew Game](20-pew-game.md) | Adopted family | #583b2c | #111111 |
+| [🤠 Pew Game](20-pew-game.md) | Adopted family | #583b2c | #191714 |
 | [🐔 Rooster](21-rooster.md) | Adopted family | #ba7522 | transparent |
 | [🐍 Snaky](22-snaky.md) | Adopted family | #8bbc3f | transparent |
 | [🎬 Showtime](72-showtime.md) | Adopted family | #4a8234 | #f4f6f2 |

@@ -4,12 +4,12 @@
 	"title": "Pew Game",
 	"emoji": "🤠",
 	"description": {
-		"en": "A pixel-art prairie shooter with twin-stick action and a high-score leaderboard.",
-		"zh": "像素风格的草原双摇杆射击游戏，闯关、闪避，再挑战排行榜。"
+		"en": "Pixel art prairie shooter with an all-time leaderboard",
+		"zh": "像素风草原射击游戏，支持键盘与触控操作，挑战历史排行榜。"
 	},
 	"category": "games",
 	"website": "https://pew.hexly.ai",
-	"websiteSource": "nocoo/nocoo README.md Games section",
+	"websiteSource": "wrangler.jsonc custom domain; nocoo/nocoo README.md Games section",
 	"repository": "https://github.com/nocoo/pew-game",
 	"subject": "Walnut and brass prairie arcade joystick",
 	"reference": false,
@@ -28,24 +28,24 @@
 	},
 	"theme": {
 		"background": {
-			"value": "#111111",
+			"value": "#191714",
 			"source": "src/app/globals.css --background"
 		},
 		"ink": {
-			"value": "#eeeeee",
+			"value": "#f1eadb",
 			"source": "src/app/globals.css --foreground"
 		}
 	},
 	"source": {
-		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
+		"profileRevision": "512b3c3d56e264464b0a906979d598fddf86b27a",
 		"profileSection": "Games",
-		"description": "Pixel art twin-stick prairie shooter with leaderboard ([Play](https://pew.hexly.ai))",
-		"repositoryRevision": "ee68b2dead3e5e698b2427d6a949e8e57c69d520"
+		"description": "Pixel art prairie shooter with an all-time leaderboard ([Play](https://pew.hexly.ai))",
+		"repositoryRevision": "5200316563da59252505ece261388e4c89266017"
 	},
 	"colors": {
 		"primary": "#583b2c",
-		"background": "#111111",
-		"ink": "#eeeeee",
+		"background": "#191714",
+		"ink": "#f1eadb",
 		"palette": [
 			{
 				"color": "#583b2c",
@@ -53,9 +53,9 @@
 				"source": "Native pew-game ab0299e6617c, sampled sRGB pixel (850, 1360); artwork/logo-family/pew-game/2026-09-07-01/palette.json"
 			},
 			{
-				"color": "#111111",
+				"color": "#191714",
 				"role": "background",
-				"source": "src/app/globals.css --background: #111111"
+				"source": "src/app/globals.css --background: #191714"
 			},
 			{
 				"color": "#651b19",
@@ -205,8 +205,8 @@
 	},
 	"overview": {
 		"goal": {
-			"en": "Play a keyboard-controlled pixel shooter in the browser, survive enemy waves with power-ups, and submit scores to a shared leaderboard.",
-			"zh": "在浏览器中用键盘游玩像素射击，收集道具、抵挡敌人波次，并将成绩提交到共享排行榜。"
+			"en": "Play a pixel prairie shooter with keyboard or touch controls, survive enemy waves with power-ups, and save scores to an all-time leaderboard.",
+			"zh": "用键盘或触控方向键游玩像素草原射击，收集道具、抵挡敌人波次，并将成绩保存到历史排行榜。"
 		},
 		"techStack": [
 			{
@@ -226,51 +226,57 @@
 			{
 				"name": "Next.js",
 				"role": {
-					"en": "Game page and score APIs",
-					"zh": "游戏页面与成绩 API"
+					"en": "Static page export",
+					"zh": "页面静态导出"
 				}
 			},
 			{
 				"name": "React",
 				"role": {
-					"en": "Game HUD and leaderboard",
-					"zh": "游戏状态界面与排行榜"
+					"en": "Game HUD, touch controls, and leaderboard",
+					"zh": "游戏状态、触控操作与排行榜"
 				}
 			},
 			{
-				"name": "SQLite",
+				"name": "Cloudflare Workers",
 				"role": {
-					"en": "Persistent scores",
-					"zh": "成绩持久化"
+					"en": "Static assets, health, and score APIs",
+					"zh": "静态资源、健康检查与成绩 API"
 				}
 			},
 			{
-				"name": "better-sqlite3",
+				"name": "Cloudflare D1",
 				"role": {
-					"en": "Server database access",
-					"zh": "服务端数据库访问"
+					"en": "Persistent rankings and duplicate submission protection",
+					"zh": "排名持久化与重复提交保护"
 				}
 			},
 			{
-				"name": "Tailwind CSS",
+				"name": "CSS",
 				"role": {
-					"en": "Page and overlay styles",
-					"zh": "页面与叠层样式"
+					"en": "Responsive arcade layout and styling",
+					"zh": "响应式街机布局与样式"
 				}
 			}
 		],
 		"verified": {
-			"date": "2026-09-08",
-			"revision": "71b4b8165874e1986f993706c6830cc60a8107bf",
+			"date": "2026-09-12",
+			"revision": "5200316563da59252505ece261388e4c89266017",
 			"sources": [
+				"README.md",
 				"package.json",
+				"wrangler.jsonc",
+				"worker/index.ts",
+				"migrations/0001_scores.sql",
 				"src/game/engine.ts",
 				"src/game/input.ts",
 				"src/game/player.ts",
 				"src/game/powerup.ts",
 				"src/lib/db.ts",
 				"src/lib/anticheat.ts",
-				"src/app/api/scores/route.ts"
+				"src/components/GameCanvas.tsx",
+				"src/components/NameInput.tsx",
+				"src/app/globals.css"
 			]
 		}
 	}
