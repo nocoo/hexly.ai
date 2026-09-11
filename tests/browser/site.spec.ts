@@ -272,9 +272,10 @@ test("keeps repository clicks separate and supports native card navigation", asy
 		return;
 	}
 	const detailPage = context.waitForEvent("page");
+	// Open the native tab in front so Chromium initializes it before the page event.
 	await card
 		.getByRole("link", { name: "View logo: Pew" })
-		.click({ button: "middle" });
+		.click({ button: "middle", modifiers: ["Shift"] });
 	const detail = await detailPage;
 	await detail.bringToFront();
 	await detail.waitForURL(/\/logos\/pew\/?$/, {
