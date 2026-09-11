@@ -14,6 +14,10 @@
 
 - sync pew-game 0.2.0 catalogue and profile ([6478e86](https://github.com/nocoo/hexly.ai/commit/6478e867f2163d0f054b9ccc3a7b1c9712b74856))
 
+### Fixes
+
+- point geekhub status at current site ([7a50171](https://github.com/nocoo/hexly.ai/commit/7a50171d7ed4ded9ae6b4404f09a187434eabc9d))
+
 ## [0.5.5] - 2026-09-11
 
 ### Features
