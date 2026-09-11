@@ -6,6 +6,14 @@
 
 - add service status monitoring with Cloudflare D1 ([49fb970](https://github.com/nocoo/hexly.ai/commit/49fb970cbec472010709b943e1c28d0768a31603))
 
+### Fixes
+
+- create the Worker types output directory ([4052a74](https://github.com/nocoo/hexly.ai/commit/4052a743faff89293a4f33935ca2e7caf6a07ed4))
+
+### Documentation
+
+- include status in project onboarding ([791d74a](https://github.com/nocoo/hexly.ai/commit/791d74ac9b69d16a75fc4482e16a90f7405e79e7))
+
 ## [0.5.4] - 2026-09-11
 
 ### Features
