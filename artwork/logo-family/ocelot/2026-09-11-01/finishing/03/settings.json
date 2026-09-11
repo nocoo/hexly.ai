@@ -1,0 +1,121 @@
+{
+	"project": "ocelot",
+	"sourceMode": "isolated-white",
+	"original": "./input/public/favicon.svg",
+	"cornerRadius": 0.23,
+	"exportSizes": [
+		2048,
+		1024,
+		512,
+		256,
+		128,
+		64,
+		48,
+		32,
+		24,
+		16
+	],
+	"background": {
+		"base": "#e7d4b7",
+		"light": "#f8edd8",
+		"shade": "#c6ad86",
+		"motif": "#917451",
+		"grainAmplitude": 0.8,
+		"grainSeed": 60911003,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.34,
+		"ribbonOpacity": 0.17,
+		"pattern": {
+			"name": "Ocelot rosettes and turned page edges",
+			"description": "Unequal broken almond rosettes occupy the upper-left paper field. A separate asymmetric fan of page edges sweeps through the lower-right space, connecting the spotted reader to its folded-paper accent without repeating another project's pattern geometry.",
+			"layers": [
+				{
+					"d": "M-23 92C60-9 174-21 239 57 M246 78C191 191 63 235-22 179 M28 326C93 223 199 217 249 277 M251 299C196 398 91 416 35 366",
+					"tone": "motif",
+					"strokeWidth": 9
+				},
+				{
+					"d": "M-24 87C62-14 177-26 242 52 M243 83C189 195 61 239-26 183 M27 321C94 218 201 212 252 272 M247 304C194 402 88 420 31 370",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M65 102C108 55 162 40 195 65 M188 94C157 143 106 163 73 147 M95 324C125 280 170 265 202 282",
+					"tone": "ribbon",
+					"strokeWidth": 7
+				},
+				{
+					"d": "M1070 530C951 612 957 713 885 781C830 833 753 858 691 1056 M1087 590C1005 639 1002 745 931 815C858 887 806 886 747 1065 M1095 658C1047 711 1040 776 986 836C920 909 851 922 806 1074",
+					"tone": "motif",
+					"strokeWidth": 2.5
+				},
+				{
+					"d": "M1073 534C955 616 961 717 889 785C834 837 757 862 695 1060 M1090 594C1009 643 1006 749 935 819C862 891 810 890 751 1069 M1098 662C1051 715 1044 780 990 840C924 913 855 926 810 1078",
+					"tone": "highlight",
+					"strokeWidth": 1.5
+				},
+				{
+					"d": "M853 558C896 483 964 451 1024 479 M1026 499C989 589 923 626 876 613",
+					"tone": "ribbon",
+					"strokeWidth": 12
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [
+				101,
+				70,
+				40
+			],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [
+				10,
+				24
+			]
+		},
+		{
+			"color": [
+				87,
+				60,
+				30
+			],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [
+				2,
+				7
+			]
+		}
+	],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"intentionalEdges": [
+			"bottom",
+			"lower-left"
+		],
+		"note": "Preserve the approved native viewfinder and all opaque pixels. The shoulder continues beyond the bottom and lower-left frame. Measure ears, eyes, muzzle, whiskers and the complete paper bird separately from this intentional anatomical entry; no shrink, neck extension or additional crop."
+	},
+	"matte": {
+		"minimumChannel": 232,
+		"maximumChroma": 16,
+		"backgroundRgb": [
+			250,
+			251,
+			251
+		],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"calibrationNote": "The modal exterior matte is (250,251,251). Pass 01 retained 19 near-neutral islands; pass 02 reduced this to one eight-pixel blue-white island at x=0..1, y=1432..1435 with RGB as low as (233,236,243). Pass 03 admits this evidenced exterior matte into the border-connected extraction. Warm ivory anatomy and whiskers remain distinct by chroma; enclosed eye highlights stay opaque. No component-size deletion, repositioning or native opaque recoloring is applied."
+	}
+}

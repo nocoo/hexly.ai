@@ -1,5 +1,7 @@
 # Source snapshots
 
+Ocelot's [September 11 snapshot](ocelot-2026-09-11.json) captures the published branding commit, both README languages, implementation and theme evidence, repository metadata, the exact GitHub profile entry, and its animal-order statistics. The prior SVG and original intake remain archived separately in the study. No deployed Ocelot homepage is claimed.
+
 1. [GitHub profile at import](01-github-profile.md)
 2. [GitHub profile at v0.1.0](02-github-profile-v0.1.0.md)
 3. [GitHub profile after PokéPocket copy update](03-github-profile-pokepocket.md)

@@ -1,0 +1,377 @@
+{
+	"createdAt": "2026-09-11T11:32:15.282Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "ocelot",
+		"sourceMode": "isolated-white",
+		"original": "./input/public/favicon.svg",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#e7d4b7",
+			"light": "#f8edd8",
+			"shade": "#c6ad86",
+			"motif": "#917451",
+			"grainAmplitude": 0.8,
+			"grainSeed": 60911003,
+			"motifOpacity": 0.22,
+			"highlightOpacity": 0.34,
+			"ribbonOpacity": 0.17,
+			"pattern": {
+				"name": "Ocelot rosettes and turned page edges",
+				"description": "Unequal broken almond rosettes occupy the upper-left paper field. A separate asymmetric fan of page edges sweeps through the lower-right space, connecting the spotted reader to its folded-paper accent without repeating another project's pattern geometry.",
+				"layers": [
+					{
+						"d": "M-23 92C60-9 174-21 239 57 M246 78C191 191 63 235-22 179 M28 326C93 223 199 217 249 277 M251 299C196 398 91 416 35 366",
+						"tone": "motif",
+						"strokeWidth": 9
+					},
+					{
+						"d": "M-24 87C62-14 177-26 242 52 M243 83C189 195 61 239-26 183 M27 321C94 218 201 212 252 272 M247 304C194 402 88 420 31 370",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M65 102C108 55 162 40 195 65 M188 94C157 143 106 163 73 147 M95 324C125 280 170 265 202 282",
+						"tone": "ribbon",
+						"strokeWidth": 7
+					},
+					{
+						"d": "M1070 530C951 612 957 713 885 781C830 833 753 858 691 1056 M1087 590C1005 639 1002 745 931 815C858 887 806 886 747 1065 M1095 658C1047 711 1040 776 986 836C920 909 851 922 806 1074",
+						"tone": "motif",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M1073 534C955 616 961 717 889 785C834 837 757 862 695 1060 M1090 594C1009 643 1006 749 935 819C862 891 810 890 751 1069 M1098 662C1051 715 1044 780 990 840C924 913 855 926 810 1078",
+						"tone": "highlight",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M853 558C896 483 964 451 1024 479 M1026 499C989 589 923 626 876 613",
+						"tone": "ribbon",
+						"strokeWidth": 12
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					101,
+					70,
+					40
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					87,
+					60,
+					30
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"note": "Preserve the approved native viewfinder and all opaque pixels. The shoulder continues beyond the bottom and lower-left frame. Measure ears, eyes, muzzle, whiskers and the complete paper bird separately from this intentional anatomical entry; no shrink, neck extension or additional crop."
+		},
+		"matte": {
+			"minimumChannel": 244,
+			"maximumChroma": 9,
+			"backgroundRgb": [
+				250,
+				251,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "The modal near-white outer-eight-pixel matte is (250,251,251). Exterior-connected extraction keeps warm ivory muzzle planes and pale whiskers distinct through their chroma, preserves enclosed eye highlights and retains all components including the independent paper bird."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2228552,
+		"foregroundPixels": 1965752,
+		"softEdgePixels": 11343,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 1960,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 1960,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47647
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3164,
+			"sha256": "3233ee646f3f175fd11aee59b0b09284e423205b1d5122b0caf3a57b37345b3f"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 2084,
+			"sha256": "eec1f7bc6ff929575c9010ac32e4f94f2973a5a4b1a01c7f690b735543896ade"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4585444,
+			"sha256": "544a0782138722198b3d4726cdda0e46cff3a1440fabc09c19cb03de6b31d25f"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 69235,
+			"sha256": "2abb49bf85c2347c1b78e4e40437128526a1ec1555bc929e0f152dabb9892bfc"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1626,
+			"sha256": "5661e9b850a4dc46d89d2a9569e51b1009a427d4a0c3ec45b3c326db7951791f"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2078853,
+			"sha256": "df19f25c8b61ab355d2217f369eaee1711057f01ae68f0430a5447f08f764b66"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 208553,
+			"sha256": "247e48f7a7e0ecdb8db492e0837ac2e0dbf63ed17997b4c9fd4ede96973c3c9a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 167403,
+			"sha256": "ff8a15449a5b10b613cc9cccb20a9c8ab4ad1d2833f5491ccfb1586a9fdf623a"
+		},
+		{
+			"path": "exports/ocelot-transparent-2048.png",
+			"bytes": 4585444,
+			"sha256": "544a0782138722198b3d4726cdda0e46cff3a1440fabc09c19cb03de6b31d25f"
+		},
+		{
+			"path": "exports/ocelot-icon-2048.png",
+			"bytes": 6178815,
+			"sha256": "7fbeedfeab26ecb348a0481e49b7d938b9ffadac82de0804c7bb8c5a3fb454ac"
+		},
+		{
+			"path": "exports/ocelot-rounded-2048.png",
+			"bytes": 6011421,
+			"sha256": "bbb8a64e5b2c48d8dbabe7a3e5fe66d609dfebc7209c1e4bf7db20609145b9c8"
+		},
+		{
+			"path": "exports/ocelot-transparent-1024.png",
+			"bytes": 1252814,
+			"sha256": "fbb9116d69141cdcc7495b7eea4bf644c57a39156ef47a255002002d7fe08dbd"
+		},
+		{
+			"path": "exports/ocelot-icon-1024.png",
+			"bytes": 1603591,
+			"sha256": "1a9a5bd523ffd77fb17a24defe748972fde246338ad6d65c9fb2826266232018"
+		},
+		{
+			"path": "exports/ocelot-rounded-1024.png",
+			"bytes": 1576256,
+			"sha256": "3c6dce0555d496e375ba94935f53e5fb307a6604effbe341945264133e9bbfda"
+		},
+		{
+			"path": "exports/ocelot-transparent-512.png",
+			"bytes": 356743,
+			"sha256": "50a2e6c52496b3d74dd9246896d2e56a1f28934904138e9798bfb8f46da22ccc"
+		},
+		{
+			"path": "exports/ocelot-icon-512.png",
+			"bytes": 478056,
+			"sha256": "d51e57b150354bfcb8414ef3729a9ba499c3e50f78f421b28929ea67f63a97cb"
+		},
+		{
+			"path": "exports/ocelot-rounded-512.png",
+			"bytes": 471444,
+			"sha256": "f1b37c53b4578fa2befb4a563d81369aa3f957c1935a002c91499933c3a2e715"
+		},
+		{
+			"path": "exports/ocelot-transparent-256.png",
+			"bytes": 103330,
+			"sha256": "1dc87bf4a24bef64695007cd6b9aaa3bbfad8578f9da24c52adb0e0e6c733b19"
+		},
+		{
+			"path": "exports/ocelot-icon-256.png",
+			"bytes": 124425,
+			"sha256": "9b6b46bf8b07e009f5c8f177ded0a83020ab4d18d12b84898a076d4796a33216"
+		},
+		{
+			"path": "exports/ocelot-rounded-256.png",
+			"bytes": 124940,
+			"sha256": "d51863af095bd2ec55f5a9d43ad767b390ff9091ceef511fa28d4a3790271b81"
+		},
+		{
+			"path": "exports/ocelot-transparent-128.png",
+			"bytes": 28705,
+			"sha256": "66d06e7482353906366f5021afc54567f2bdecf843bf3cd9f3daeda5e1450506"
+		},
+		{
+			"path": "exports/ocelot-icon-128.png",
+			"bytes": 35825,
+			"sha256": "fc8db61809328b143392997ad18a5c3d8f65424e4abf60f74810d8b916f946c7"
+		},
+		{
+			"path": "exports/ocelot-rounded-128.png",
+			"bytes": 36446,
+			"sha256": "ad00b2e91983ab27bba5f54d3c7f38ffc6fa8fc937d371b0d244e0113cbf4747"
+		},
+		{
+			"path": "exports/ocelot-transparent-64.png",
+			"bytes": 8156,
+			"sha256": "2d2a5e05757d11200b65443dda74d7b5ed93d1e0cf918714edf601b44112dd35"
+		},
+		{
+			"path": "exports/ocelot-icon-64.png",
+			"bytes": 10693,
+			"sha256": "f6f2ac52b515a2556114b7db104e0428fdec482bdfbf862d966b07bdbb129a2c"
+		},
+		{
+			"path": "exports/ocelot-rounded-64.png",
+			"bytes": 11008,
+			"sha256": "55aa3be925bf988a302ce725924c5fea7ce25c73c832b44df1d40aabd4eb2078"
+		},
+		{
+			"path": "exports/ocelot-transparent-48.png",
+			"bytes": 4925,
+			"sha256": "a107f81ec86558b0fc3eb8d6bffc60782c97e4db535e1352517f0f1468b7cf53"
+		},
+		{
+			"path": "exports/ocelot-icon-48.png",
+			"bytes": 6320,
+			"sha256": "f787dbfe9ba8cd6df661ecf6c18d4d46529ba119a54e183c095a91545baf709c"
+		},
+		{
+			"path": "exports/ocelot-rounded-48.png",
+			"bytes": 6567,
+			"sha256": "cf31548219284941df1f7637a04e2e8062f3f8d60b3ced8169dd391094901cad"
+		},
+		{
+			"path": "exports/ocelot-transparent-32.png",
+			"bytes": 2503,
+			"sha256": "ba58f62976367d749267c5add02e7e2b5781d1a753dc3bc52f803f1e452b7ac9"
+		},
+		{
+			"path": "exports/ocelot-icon-32.png",
+			"bytes": 3193,
+			"sha256": "bf33c5b622b728048c1191a084d4330373369b479d9d8d09f3217cd1d228d430"
+		},
+		{
+			"path": "exports/ocelot-rounded-32.png",
+			"bytes": 3293,
+			"sha256": "4e376e3574a39b45bd172e132cb069ea00bcb7e82d40e32040242bac390de7aa"
+		},
+		{
+			"path": "exports/ocelot-transparent-24.png",
+			"bytes": 1560,
+			"sha256": "14b0d478f3bc98601def5694ef7da6789139ddcd251bd09c79d7fe2990390485"
+		},
+		{
+			"path": "exports/ocelot-icon-24.png",
+			"bytes": 1935,
+			"sha256": "a8d8641d946e3410ad2440c69a80537d6f88304d0354363e348ab8c133b9a954"
+		},
+		{
+			"path": "exports/ocelot-rounded-24.png",
+			"bytes": 2042,
+			"sha256": "f801871497136d343ccadbb0903c1932be45093d5a9c4cc4f19ca34a275eacb8"
+		},
+		{
+			"path": "exports/ocelot-transparent-16.png",
+			"bytes": 856,
+			"sha256": "f1ec8968a5a5389353f14741c5c3809894e1f340a1b0d94e0ad50241497787d7"
+		},
+		{
+			"path": "exports/ocelot-icon-16.png",
+			"bytes": 963,
+			"sha256": "4cb4f32b9ae78e73c36757911caaddcc16af859c1b27a009d6a29ae77638a2b4"
+		},
+		{
+			"path": "exports/ocelot-rounded-16.png",
+			"bytes": 1010,
+			"sha256": "0c238dd2848a2d0a9fb9479deaa6a532d230b9b3dd464ba182a5ebd5e46daff1"
+		},
+		{
+			"path": "exports/ocelot-white-2048.png",
+			"bytes": 4394301,
+			"sha256": "dd89687362d0e58f1f1aae0c8c9e6275c00036eefeec78d50b54030eb1e073fc"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1198757,
+			"sha256": "eb328bea1a7e3b9fbc60afe53d416ff34d531f7f25dc5ea86c74b360bebebeed"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1200360,
+			"sha256": "afb6ec277ecddd4735e85b84117d857b22f7280b4abeb11f2176e2f6c689195a"
+		}
+	]
+}

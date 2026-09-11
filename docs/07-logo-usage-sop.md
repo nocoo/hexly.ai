@@ -194,3 +194,18 @@ Coffee's ordinary square presentation extends beyond a circular PWA safe area by
 Both complete reviews retain before/after, all three modes, themes, small-size specimens, sampled palette, light/dark edges, downloads and exact prompts. Reference boards appear only in static study HTML. Source commits and `family.status: "adopted"` establish local adoption; GitHub profile publishing, repository descriptions and deployments remain separate. See [onboarding](14-new-tools-onboarding.md) for the unchanged source snapshots and validation.
 
 The gallery's website-theme row requires recorded theme tokens. An adopted artwork primary or designed paper color cannot establish a website theme. Coffee keeps its evidenced green/cream tokens; Gateway shows its material/presentation palette without a website-theme row.
+
+## Ocelot animal adoption — 2026-09-11
+
+The owner-approved `2026-09-11-01 / 03` study is published in Ocelot at [`9d27eea583`](https://github.com/nocoo/ocelot/commit/9d27eea583794ccda07dd2454c2a40302f86e227). The GitHub profile and description use 🐆 and the matching read-only GitHub/Obsidian reader summary. Ocelot joins the animal display family while retaining the Tools product category and its actual cool blue-gray website tokens.
+
+| Consumer | Selected asset and evidence |
+| --- | --- |
+| Root identity | Exact 2048 px transparent `logo.png`; original SVG preserved in Hexly |
+| Chinese/English README | Exact `assets/brand/icon-rounded.png`, shown at 128 px; refreshed synthetic reader screenshots |
+| Expanded sidebar, collapsed rail, article footer, empty reader, mobile drawer | Shared `src/views/Mark.tsx`, transparent `public/logo-{80,160}.png`, displayed at 36/23/57 px without an extra mask, background, filter or opacity reduction |
+| Browser | Transparent PNGs at 16/32 px; obsolete SVG reference removed; no ICO consumer |
+| Apple touch | Square 180 px presentation with platform masking |
+| Social | Shared `https://hexly.ai/og/ocelot.jpg`; no invented Ocelot deployment URL |
+
+The complete [static study](../artwork/logo-family/ocelot/2026-09-11-01/review.html) and [/logos/ocelot](https://hexly.ai/logos/ocelot) retain the old SVG, all three presentation modes, actual sizes, native palette evidence, edge views and exact downloads. Reference boards stay in static HTML. [Source browser checks](../artwork/logo-family/ocelot/2026-09-11-01/inspection/source-browser/checks.json) cover eight states and five served assets in both themes. The source passed its pre-commit and pre-push hooks, 147 unit tests and four affected browser journeys. Ocelot itself remains undeployed; Hexly release monitoring was explicitly waived.
