@@ -1,0 +1,141 @@
+{
+	"recordedAt": "2026-09-11T11:49:21.467495+00:00",
+	"project": "ocelot",
+	"study": "2026-09-11-01",
+	"finishing": "03",
+	"status": "adopted and published in source",
+	"decision": {
+		"ownerMessage": "可以，继续，去ocelot按规范替换logo，readme等，写入gh profile，继续做我们的页面发版z+1",
+		"rawSha256": "4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a",
+		"record": "raw-review.json"
+	},
+	"sourceRepository": "https://github.com/nocoo/ocelot",
+	"sourceRevision": "9d27eea583794ccda07dd2454c2a40302f86e227",
+	"profileRevision": "63fcd1383c1b1eca0f4471c47000feab852ab953",
+	"masterFiles": [
+		{
+			"path": "logo.png",
+			"role": "transparent",
+			"derivedFrom": "finishing/03/exports/ocelot-transparent-2048.png",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4575584,
+			"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+			"clearPixels": 2231284,
+			"opaquePixels": 1953070
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"role": "square presentation",
+			"derivedFrom": "finishing/03/exports/ocelot-icon-2048.png",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 6172345,
+			"sha256": "2ca4ee7de5f6906c527b0e22967bd7bea4604762c8d342d2300e2156049922dc",
+			"clearPixels": 0,
+			"opaquePixels": 4194304
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"role": "rounded presentation",
+			"derivedFrom": "finishing/03/exports/ocelot-rounded-2048.png",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 6004904,
+			"sha256": "51bc8925acb727be327d7af376bbf77f867c93964b858490c098bfc480c577ba",
+			"clearPixels": 188616,
+			"opaquePixels": 4002157
+		},
+		{
+			"path": "assets/brand/background.png",
+			"role": "independent paper background",
+			"derivedFrom": "finishing/03/background.png",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 2078853,
+			"sha256": "df19f25c8b61ab355d2217f369eaee1711057f01ae68f0430a5447f08f764b66",
+			"clearPixels": 0,
+			"opaquePixels": 4194304
+		}
+	],
+	"committedMasterBytesVerified": true,
+	"previous": {
+		"original": "/logos/originals/ocelot-initial.svg",
+		"sourceUrl": "https://github.com/nocoo/ocelot/blob/b2d89fd134464ab2812a08e6e46703c7cdddd44d/public/favicon.svg",
+		"width": 64,
+		"height": 64,
+		"sha256": "15feb95dae2e98e98cb6f173ae619db6ba65815c71932f19506e708dd42fc5d6"
+	},
+	"sourceSnapshot": "docs/sources/ocelot-2026-09-11.json",
+	"consumers": {
+		"readmes": {
+			"README.md": "assets/brand/icon-rounded.png",
+			"docs/README.en.md": "../assets/brand/icon-rounded.png"
+		},
+		"application": [
+			"src/views/Mark.tsx",
+			"src/views/styles.css",
+			"public/logo-80.png",
+			"public/logo-160.png"
+		],
+		"browser": ["index.html", "public/favicon-16.png", "public/favicon-32.png"],
+		"platform": ["public/apple-touch-icon.png — square 180 px"],
+		"social": ["index.html — https://hexly.ai/og/ocelot.jpg"],
+		"exceptions": [
+			"No ICO, PWA or native app consumer",
+			"Cloudflare Access login is an independent service identity",
+			"Ocelot production is not deployed"
+		]
+	},
+	"review": {
+		"catalogue": "https://index.dev.hexly.ai/logos/ocelot",
+		"static": "https://index.dev.hexly.ai/artwork/logo-family/ocelot/2026-09-11-01/review.html"
+	},
+	"verification": {
+		"nativeAndExports": "inspection/finishing-03.json",
+		"sourceBrowser": "inspection/source-browser/checks.json",
+		"source": {
+			"lint": "passed",
+			"typecheck": "passed through source pre-commit",
+			"affectedBrowserTests": 4,
+			"consumerStates": 8,
+			"unitCoverage": {
+				"statements": 100,
+				"branches": 98.34,
+				"functions": 100,
+				"lines": 100,
+				"gate": "passed with source pre-push hook enabled"
+			},
+			"unitTests": 147
+		},
+		"reviewBrowser": "inspection/review-browser/checks.json",
+		"preservation": "inspection/preservation.json",
+		"site": {
+			"static": "passed",
+			"unitTests": 94,
+			"unitCoverage": {
+				"statements": 99.62,
+				"branches": 98.36,
+				"functions": 100,
+				"lines": 99.58
+			},
+			"browserJourneys": 2,
+			"reviewCases": 12,
+			"presentationModeChecks": 36,
+			"sourceChecksums": 74,
+			"displayDerivatives": 444,
+			"publicFamilyArchives": 59,
+			"finishingPasses": 100
+		}
+	},
+	"publication": {
+		"sourcePushed": true,
+		"profilePushed": true,
+		"githubDescriptionUpdated": true,
+		"hexlyReleaseTarget": "v0.5.4",
+		"hexlyReleaseStatus": "Publication is recorded by the v0.5.4 tag and GitHub Release; no production-deployment success claim is made",
+		"deploymentMonitoring": "Waived explicitly by the owner",
+		"productionAcceptance": "Waived explicitly by the owner",
+		"hexlyRelease": "https://github.com/nocoo/hexly.ai/releases/tag/v0.5.4"
+	}
+}

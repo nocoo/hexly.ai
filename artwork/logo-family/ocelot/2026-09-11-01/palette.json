@@ -1,0 +1,143 @@
+{
+	"project": "ocelot",
+	"study": "2026-09-11-01",
+	"finishing": "03",
+	"nativeSource": {
+		"path": "raw/generated.png",
+		"sha256": "4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a",
+		"width": 2048,
+		"height": 2048
+	},
+	"artworkSamples": [
+		{
+			"label": "Warm gold",
+			"zh": "暖金色",
+			"x": 1000,
+			"y": 600,
+			"rgb": [219, 165, 93],
+			"hex": "#dba55d",
+			"alpha": 255
+		},
+		{
+			"label": "Sand facet",
+			"zh": "砂色切面",
+			"x": 940,
+			"y": 540,
+			"rgb": [231, 176, 112],
+			"hex": "#e7b070",
+			"alpha": 255
+		},
+		{
+			"label": "Ivory muzzle",
+			"zh": "象牙色口鼻",
+			"x": 1260,
+			"y": 1200,
+			"rgb": [236, 219, 190],
+			"hex": "#ecdbbe",
+			"alpha": 255
+		},
+		{
+			"label": "Dark markings",
+			"zh": "深色斑纹",
+			"x": 650,
+			"y": 1080,
+			"rgb": [28, 24, 20],
+			"hex": "#1c1814",
+			"alpha": 255
+		},
+		{
+			"label": "Coral bird",
+			"zh": "珊瑚色纸鸟",
+			"x": 1690,
+			"y": 550,
+			"rgb": [237, 128, 82],
+			"hex": "#ed8052",
+			"alpha": 255
+		},
+		{
+			"label": "Saffron wing",
+			"zh": "藏红花色纸翼",
+			"x": 1855,
+			"y": 480,
+			"rgb": [232, 164, 70],
+			"hex": "#e8a446",
+			"alpha": 255
+		},
+		{
+			"label": "Teal fold",
+			"zh": "青绿色折面",
+			"x": 1790,
+			"y": 590,
+			"rgb": [43, 102, 114],
+			"hex": "#2b6672",
+			"alpha": 255
+		}
+	],
+	"presentation": {
+		"recipe": "finishing/03/settings.json",
+		"colors": {
+			"base": "#e7d4b7",
+			"light": "#f8edd8",
+			"shade": "#c6ad86",
+			"motif": "#917451",
+			"grainAmplitude": 0.8,
+			"grainSeed": 60911003,
+			"motifOpacity": 0.22,
+			"highlightOpacity": 0.34,
+			"ribbonOpacity": 0.17,
+			"pattern": {
+				"name": "Ocelot rosettes and turned page edges",
+				"description": "Unequal broken almond rosettes occupy the upper-left paper field. A separate asymmetric fan of page edges sweeps through the lower-right space, connecting the spotted reader to its folded-paper accent without repeating another project's pattern geometry.",
+				"layers": [
+					{
+						"d": "M-23 92C60-9 174-21 239 57 M246 78C191 191 63 235-22 179 M28 326C93 223 199 217 249 277 M251 299C196 398 91 416 35 366",
+						"tone": "motif",
+						"strokeWidth": 9
+					},
+					{
+						"d": "M-24 87C62-14 177-26 242 52 M243 83C189 195 61 239-26 183 M27 321C94 218 201 212 252 272 M247 304C194 402 88 420 31 370",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M65 102C108 55 162 40 195 65 M188 94C157 143 106 163 73 147 M95 324C125 280 170 265 202 282",
+						"tone": "ribbon",
+						"strokeWidth": 7
+					},
+					{
+						"d": "M1070 530C951 612 957 713 885 781C830 833 753 858 691 1056 M1087 590C1005 639 1002 745 931 815C858 887 806 886 747 1065 M1095 658C1047 711 1040 776 986 836C920 909 851 922 806 1074",
+						"tone": "motif",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M1073 534C955 616 961 717 889 785C834 837 757 862 695 1060 M1090 594C1009 643 1006 749 935 819C862 891 810 890 751 1069 M1098 662C1051 715 1044 780 990 840C924 913 855 926 810 1078",
+						"tone": "highlight",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M853 558C896 483 964 451 1024 479 M1026 499C989 589 923 626 876 613",
+						"tone": "ribbon",
+						"strokeWidth": 12
+					}
+				]
+			}
+		}
+	},
+	"applicationTheme": {
+		"revision": "9d27eea583794ccda07dd2454c2a40302f86e227",
+		"path": "src/views/styles.css",
+		"light": {
+			"primary": "#435e73",
+			"background": "#fefefd",
+			"rail": "#f3f5f7",
+			"ink": "#283440"
+		},
+		"dark": {
+			"primary": "#a3bbcd",
+			"background": "#151c24",
+			"rail": "#12161c",
+			"ink": "#d8e0e7"
+		},
+		"note": "Published application tokens. Rail resolves the Basalt L0 HSL token; artwork and presentation colors remain separate."
+	}
+}

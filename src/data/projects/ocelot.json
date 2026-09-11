@@ -1,0 +1,390 @@
+{
+	"id": "ocelot",
+	"repo": "ocelot",
+	"title": "Ocelot",
+	"emoji": "🐆",
+	"description": {
+		"en": "Read-only Obsidian reader for public and private GitHub vaults",
+		"zh": "面向 GitHub 公开与私有知识库的只读 Obsidian 阅读器"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/ocelot",
+	"subject": "Warm-gold faceted ocelot watching a colorful paper bird",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4575584,
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"thumbnail": "/logos/display/ocelot-160.webp",
+		"display": "/logos/display/ocelot-1024.webp"
+	},
+	"theme": {
+		"primary": {
+			"value": "#435e73",
+			"source": "src/views/styles.css :root --accent at 9d27eea583794ccda07dd2454c2a40302f86e227"
+		},
+		"background": {
+			"value": "#fefefd",
+			"source": "src/views/styles.css :root --paper at 9d27eea583794ccda07dd2454c2a40302f86e227"
+		},
+		"ink": {
+			"value": "#283440",
+			"source": "src/views/styles.css :root --ink at 9d27eea583794ccda07dd2454c2a40302f86e227"
+		}
+	},
+	"colors": {
+		"primary": "#435e73",
+		"background": "#fefefd",
+		"ink": "#283440",
+		"palette": [
+			{
+				"color": "#435e73",
+				"role": "primary",
+				"source": "src/views/styles.css :root --accent at 9d27eea583794ccda07dd2454c2a40302f86e227"
+			},
+			{
+				"color": "#fefefd",
+				"role": "background",
+				"source": "src/views/styles.css :root --paper at 9d27eea583794ccda07dd2454c2a40302f86e227"
+			},
+			{
+				"color": "#283440",
+				"role": "accent",
+				"source": "src/views/styles.css :root --ink at 9d27eea583794ccda07dd2454c2a40302f86e227"
+			},
+			{
+				"color": "#e7d4b7",
+				"role": "background",
+				"label": {
+					"en": "Sand paper",
+					"zh": "砂色纸底"
+				},
+				"source": "Owner-authorized Ocelot presentation 2026-09-11-01/03; background.base in archived settings.json"
+			},
+			{
+				"color": "#dba55d",
+				"role": "accent",
+				"label": {
+					"en": "Warm gold",
+					"zh": "暖金色"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1000, 600); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#e7b070",
+				"role": "accent",
+				"label": {
+					"en": "Sand facet",
+					"zh": "砂色切面"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (940, 540); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#ecdbbe",
+				"role": "accent",
+				"label": {
+					"en": "Ivory muzzle",
+					"zh": "象牙色口鼻"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1260, 1200); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#1c1814",
+				"role": "accent",
+				"label": {
+					"en": "Dark markings",
+					"zh": "深色斑纹"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (650, 1080); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#ed8052",
+				"role": "accent",
+				"label": {
+					"en": "Coral bird",
+					"zh": "珊瑚色纸鸟"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1690, 550); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#e8a446",
+				"role": "accent",
+				"label": {
+					"en": "Saffron wing",
+					"zh": "藏红花色纸翼"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1855, 480); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#2b6672",
+				"role": "accent",
+				"label": {
+					"en": "Teal fold",
+					"zh": "青绿色折面"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1790, 590); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#917451",
+				"role": "accent",
+				"label": {
+					"en": "Rosette relief",
+					"zh": "斑纹浮雕"
+				},
+				"source": "Designed independent background motif, 22% opacity; artwork/logo-family/ocelot/2026-09-11-01/finishing/03/settings.json"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "63fcd1383c1b1eca0f4471c47000feab852ab953",
+		"profileSection": "Recent Projects",
+		"description": "Read-only Obsidian reader for public and private GitHub vaults",
+		"repositoryRevision": "9d27eea583794ccda07dd2454c2a40302f86e227"
+	},
+	"overview": {
+		"goal": {
+			"en": "Read public and private Obsidian vaults from GitHub in a quiet, single-user web reader. Browse folders, follow wiki links and outlines, render math and diagrams, and apply new Git revisions explicitly while the source vault stays read-only. Production configuration is prepared; no deployed homepage is verified.",
+			"zh": "在安静的单用户网页阅读器里阅读 GitHub 上的公开和私有 Obsidian 知识库。浏览目录、跟随双链与大纲、查看公式图表，并主动应用新的 Git 版本，源知识库始终只读。生产配置已准备，尚无已验证的线上入口。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / React / Vite",
+				"role": {
+					"en": "MVVM web reader and static frontend builds",
+					"zh": "MVVM 网页阅读器与静态前端构建"
+				}
+			},
+			{
+				"name": "Basalt 2.1.7 / Pierre Trees",
+				"role": {
+					"en": "Controls, application layout and virtualized vault navigation",
+					"zh": "控件、应用布局与知识库虚拟目录"
+				}
+			},
+			{
+				"name": "react-markdown / unified",
+				"role": {
+					"en": "GFM, frontmatter, Obsidian links, callouts and sanitized HTML",
+					"zh": "GFM、frontmatter、Obsidian 链接、提示块与 HTML 清理"
+				}
+			},
+			{
+				"name": "KaTeX / Mermaid",
+				"role": {
+					"en": "Mathematical notation and diagrams",
+					"zh": "数学公式与图表"
+				}
+			},
+			{
+				"name": "Cloudflare Workers / Access",
+				"role": {
+					"en": "Owner authentication and read-only GitHub requests",
+					"zh": "所有者身份验证与只读 GitHub 请求"
+				}
+			},
+			{
+				"name": "Cloudflare D1 / private R2",
+				"role": {
+					"en": "Repository metadata and a rebuildable private cache",
+					"zh": "仓库元数据与可重建的私有缓存"
+				}
+			},
+			{
+				"name": "Vitest / Playwright / Biome",
+				"role": {
+					"en": "Runtime coverage, browser accessibility and static checks",
+					"zh": "运行时代码覆盖率、浏览器无障碍与静态检查"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-11",
+			"revision": "9d27eea583794ccda07dd2454c2a40302f86e227",
+			"snapshot": {
+				"path": "docs/sources/ocelot-2026-09-11.json",
+				"sha256": "fdbc9fe9d0edf548fd4e34c6d7e45b680a02ca85f6b43bf028cab0a18d8bfc0d"
+			},
+			"sources": [
+				"README.md",
+				"docs/README.en.md",
+				"AGENTS.md",
+				"package.json",
+				"src/views/styles.css",
+				"src/views/Mark.tsx",
+				"src/views/App.tsx",
+				"src/views/Markdown.tsx",
+				"src/views/NavigationTree.tsx",
+				"src/viewmodels/reader.ts",
+				"worker/index.ts",
+				"worker/app.ts",
+				"worker/auth.ts",
+				"worker/github.ts",
+				"worker/store.ts",
+				"docs/02-github-auth-cache-and-sync.md",
+				"docs/06-running-and-deployment.md",
+				"docs/08-visual-identity.md",
+				"assets/brand/provenance.json",
+				"index.html",
+				"wrangler.jsonc"
+			]
+		}
+	},
+	"family": {
+		"id": "2026-09-11-01",
+		"finishing": "03",
+		"root": "/logos/family/ocelot/2026-09-11-01/03",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ocelot/2026-09-11-01",
+		"status": "adopted",
+		"updated": "2026-09-11",
+		"model": "gpt-image-2",
+		"foreground": {
+			"subject": {
+				"en": "Warm-gold faceted ocelot watching a colorful paper bird",
+				"zh": "凝望彩色折纸鸟的暖金色碎片豹猫"
+			},
+			"original": "/logos/family/ocelot/2026-09-11-01/03/transparent.png",
+			"display": "/logos/family/ocelot/2026-09-11-01/03/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+		},
+		"previous": {
+			"original": "/logos/originals/ocelot-initial.svg",
+			"sourceUrl": "https://github.com/nocoo/ocelot/blob/b2d89fd134464ab2812a08e6e46703c7cdddd44d/public/favicon.svg",
+			"width": 64,
+			"height": 64,
+			"sha256": "15feb95dae2e98e98cb6f173ae619db6ba65815c71932f19506e708dd42fc5d6"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A glance at a paper bird",
+					"zh": "回望一只纸鸟"
+				},
+				"description": {
+					"en": "The ocelot turns toward the upper-right bird with both eyes visible. Its shoulder enters naturally through the bottom and lower-left frame. Both ears and the complete bird clear the rounded outline; the nearest bird tip retains 62.9 px of space.",
+					"zh": "豹猫转向右上方的纸鸟，双眼清晰可见。肩部自然延伸出底边与左下边框，双耳和纸鸟均完整保留，鸟翼尖距实际圆角边界最近为 62.9 px。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Gold facets and dark rosettes",
+					"zh": "金色切面与深色斑纹"
+				},
+				"description": {
+					"en": "Connected irregular planes run across the face, ears and shoulder. Dark elongated spots, amber eyes and ivory whiskers keep the species readable. One coral, saffron and teal folded-paper bird supplies the secondary gesture; native opaque RGB is unchanged.",
+					"zh": "连贯的不规则平面贯穿脸部、耳朵与肩颈，深色长斑、琥珀色双眼和象牙色胡须保留物种特征。珊瑚、藏红花与青绿色折纸鸟形成唯一的彩色趣味点，不透明像素保留原生 RGB。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Rosettes and turned pages",
+					"zh": "斑纹与翻页"
+				},
+				"description": {
+					"en": "Broken almond rosettes sit in the upper-left negative space while asymmetric page curves sweep through the lower-right. Sand paper, fine grain and two shallow shadows remain independent of the transparent mark. The application keeps its cool blue-gray theme.",
+					"zh": "左上留白铺陈断开的杏仁形斑纹，右下以不对称曲线呼应翻页。砂色纸底、细颗粒和两层浅阴影独立于透明标记，应用保留原有的冷蓝灰配色。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#e7d4b7",
+				"role": "background",
+				"label": {
+					"en": "Sand paper",
+					"zh": "砂色纸底"
+				},
+				"source": "Owner-authorized Ocelot presentation 2026-09-11-01/03; background.base in archived settings.json"
+			},
+			{
+				"color": "#dba55d",
+				"role": "primary",
+				"label": {
+					"en": "Warm gold",
+					"zh": "暖金色"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1000, 600); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#e7b070",
+				"role": "accent",
+				"label": {
+					"en": "Sand facet",
+					"zh": "砂色切面"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (940, 540); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#ecdbbe",
+				"role": "accent",
+				"label": {
+					"en": "Ivory muzzle",
+					"zh": "象牙色口鼻"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1260, 1200); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#1c1814",
+				"role": "accent",
+				"label": {
+					"en": "Dark markings",
+					"zh": "深色斑纹"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (650, 1080); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#ed8052",
+				"role": "accent",
+				"label": {
+					"en": "Coral bird",
+					"zh": "珊瑚色纸鸟"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1690, 550); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#e8a446",
+				"role": "accent",
+				"label": {
+					"en": "Saffron wing",
+					"zh": "藏红花色纸翼"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1855, 480); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#2b6672",
+				"role": "accent",
+				"label": {
+					"en": "Teal fold",
+					"zh": "青绿色折面"
+				},
+				"source": "Native Ocelot output SHA-256 4c73d8f8bc72c14e02260cbddd8c49d8aa6c526c53d5aad449eb30d764f61d3a; opaque sRGB pixel (1790, 590); artwork/logo-family/ocelot/2026-09-11-01/palette.json"
+			},
+			{
+				"color": "#917451",
+				"role": "accent",
+				"label": {
+					"en": "Rosette relief",
+					"zh": "斑纹浮雕"
+				},
+				"source": "Designed independent background motif, 22% opacity; artwork/logo-family/ocelot/2026-09-11-01/finishing/03/settings.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 128/64 px the two eyes, dark markings and paper bird remain distinct. At 32/24/16 px the warm feline profile carries recognition; whiskers, small spots and bird folds merge. App navigation and browser tabs use the full transparent foreground.",
+			"zh": "128/64 px 可辨认双眼、深色斑纹和折纸鸟；32/24/16 px 主要依靠暖色猫科侧脸轮廓识别，胡须、小斑点与纸鸟折面会合并。应用导航和浏览器页签使用完整透明前景。"
+		}
+	}
+}
