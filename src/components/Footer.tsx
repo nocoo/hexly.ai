@@ -7,9 +7,11 @@ import { SurfaceLinks } from "./SurfaceLinks";
 export function Footer({
 	locale,
 	onHome,
+	homeHref = "/",
 }: {
 	locale: Locale;
 	onHome: () => void;
+	homeHref?: string;
 }) {
 	const t = copy[locale];
 	const year = new Date().getFullYear();
@@ -34,7 +36,12 @@ export function Footer({
 							</span>
 						</p>
 					</div>
-					<SurfaceLinks locale={locale} footer onPortfolio={onHome} />
+					<SurfaceLinks
+						locale={locale}
+						footer
+						portfolioHref={homeHref}
+						onPortfolio={onHome}
+					/>
 					<a
 						className="footer-mobile-top"
 						href="#main-content"

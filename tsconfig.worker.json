@@ -1,0 +1,11 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": { "lib": ["ES2023"], "types": [] },
+	"include": [
+		"worker",
+		".wrangler/types.d.ts",
+		"tests/unit/gateway.test.ts",
+		"tests/unit/status-worker.test.ts"
+	],
+	"exclude": []
+}

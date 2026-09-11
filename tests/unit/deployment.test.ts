@@ -9,6 +9,14 @@ const revision = "a".repeat(40);
 const retry = { attempts: 3, delayMs: 0 };
 const logoPath = identity.logo.original;
 const logo = readFileSync(`public${logoPath}`);
+const status = {
+	mode: "live",
+	generatedAt: 1,
+	windowStart: 0,
+	intervalSeconds: 300,
+	retentionDays: 7,
+	services: [],
+};
 
 function serve(
 	override: (path: string) => Response | undefined = () => undefined,
@@ -22,6 +30,9 @@ function serve(
 			requests.push(path);
 			const replacement = override(path);
 			if (replacement) return replacement;
+			if (path === "/api/status") return Response.json(status);
+			if (path === "/status")
+				return new Response("<title>Service status — hexly.ai</title>");
 			if (path === "/api/live")
 				return Response.json(
 					{
@@ -69,6 +80,8 @@ describe("production deployment verification", () => {
 		await verifyDeployment(origin, revision, retry);
 		for (const path of [
 			"/api/live",
+			"/api/status",
+			"/status",
 			"/",
 			"/assets/main.css",
 			"/assets/main.js",
@@ -128,5 +141,25 @@ describe("production deployment verification", () => {
 			"full Git revision",
 		);
 		expect(requests).toEqual([]);
+	});
+	it("rejects demo data on production and a missing status view", async () => {
+		serve((path) =>
+			path === "/api/status"
+				? Response.json({ ...status, mode: "demo" })
+				: undefined,
+		);
+		await expect(
+			verifyDeployment(origin, revision, retry),
+		).rejects.toMatchObject({
+			cause: { message: "Production must not serve demo status data." },
+		});
+		serve((path) =>
+			path === "/status" ? new Response("<title>Directory</title>") : undefined,
+		);
+		await expect(
+			verifyDeployment(origin, revision, retry),
+		).rejects.toMatchObject({
+			cause: { message: "The production status page is missing." },
+		});
 	});
 });

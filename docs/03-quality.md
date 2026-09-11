@@ -11,9 +11,21 @@ This structure is established before product implementation. Source: nmem `af0da
 | G2 | OSV dependency audit and Gitleaks secret scanning | `bun run check:security` | Pre-push and CI |
 | D1 | Independent loopback test servers, no production resource bindings, and no remote services | `bun run check:isolation` | Before integration/browser tests |
 
-The D1 dimension denotes test isolation, not a Cloudflare D1 database. External storage isolation is **not applicable** because this application is static and has no storage bindings. The configuration check rejects newly added remote/storage bindings until an explicit isolated design is implemented.
+The D1 quality dimension denotes test isolation. The status feature also uses a
+Cloudflare D1 database, isolated explicitly: development and tests have dedicated
+names, fake local database IDs, no routes or Cron triggers, and modes that disable
+public probes. `check:isolation` rejects inherited production settings and
+unreviewed remote bindings. All CLI fixtures use `--local`.
 
-L1 coverage includes executable model logic, release policy, and isolation rules. A temporary-repository test runs the actual release dry-run command and verifies that files and Git refs stay unchanged. Thin React presentation components, static catalogue data, and build-tool entry points are not included in the model coverage denominator. L3 validates those views through actual user journeys.
+L1 coverage includes executable model logic, release policy, and isolation rules.
+Status Worker tests exercise bounded probes with fake HTTP responses and real
+Wrangler SQLite D1 with `remoteBindings: false` and `persist: false`. They verify
+deduplication, transactional writes, seven-day query cutoffs, cleanup during
+failures, and exclusion of removed or changed endpoints. A temporary-repository
+test runs the actual release dry-run command and verifies that files and Git refs
+stay unchanged. Thin React presentation components, static catalogue data, and
+build-tool entry points are not included in the model coverage denominator. L3
+validates those views through actual user journeys.
 
 ## Commit feedback
 
@@ -35,7 +47,11 @@ Both tools check working-tree content; they do not snapshot partially staged fil
 | L3 browser tests | 27048 |
 | Manual Workers preview | 37048 |
 
-Test runners start and terminate their own servers and do not reuse an existing server. L2 uses `.wrangler/http` for runtime state and L3 uses `.wrangler/browser`; the local review server remains independent. Even a static-only workerd process maintains internal SQLite state, so separate ports alone do not provide complete local isolation.
+Test runners apply migrations, seed mock status observations, then start and
+terminate their own servers without reusing an existing server. L2 uses
+`.wrangler/http` and L3 uses `.wrangler/browser`; local development uses
+`.wrangler/dev` and manual Worker preview uses `.wrangler/preview`. Separate ports
+and separate SQLite persistence directories keep these environments independent.
 
 Browser CI runs in its own job with Node.js 26.7.0, matching local development and deployment. The shared quality workflow has no Node.js version input and retains the other gates. Deployment requires both jobs to succeed; all browser journeys run with the existing three workers and zero retries.
 

@@ -27,6 +27,7 @@ export const copy = {
 	en: {
 		directory: "Projects",
 		gallery: "Logo gallery",
+		status: "Status",
 		skip: "Skip to content",
 		dark: "Theme: Dark. Switch to light theme.",
 		light: "Theme: Light. Switch to dark theme.",
@@ -168,6 +169,7 @@ export const copy = {
 	zh: {
 		directory: "项目导航",
 		gallery: "Logo 图鉴",
+		status: "服务状态",
 		skip: "跳到主要内容",
 		dark: "主题：深色；切换为浅色",
 		light: "主题：浅色；切换为深色",
