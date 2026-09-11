@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3] - 2026-09-11
+
+### Features
+
+- add Coffee and Hermes Gateway tools with logo studies ([5336659](https://github.com/nocoo/hexly.ai/commit/53366596bd8526239eec374162e32ef310c8cda8))
+- adopt Coffee and Hermes Gateway identities ([ad348c1](https://github.com/nocoo/hexly.ai/commit/ad348c1409e471fb8a4eda9919b50006dab5d7f5))
+
 ## [0.5.2] - 2026-09-10
 
 ### Features
