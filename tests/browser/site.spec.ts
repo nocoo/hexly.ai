@@ -240,9 +240,10 @@ test("keeps archived projects accessible through their category and direct logo 
 	);
 });
 
-test("keeps repository clicks separate and supports card links in another tab", async ({
+test("keeps repository clicks separate and supports native card navigation", async ({
 	page,
 	context,
+	isMobile,
 }) => {
 	await context.route("https://github.com/nocoo/pew", (route) =>
 		route.fulfill({
@@ -261,6 +262,15 @@ test("keeps repository clicks separate and supports card links in another tab", 
 	await repository.close();
 	await context.unroute("https://github.com/nocoo/pew");
 	await page.bringToFront();
+	if (isMobile) {
+		// Touch browsers have no native middle-click gesture.
+		await card.getByRole("link", { name: "View logo: Pew" }).tap();
+		await expect(page).toHaveURL(/\/logos\/pew\/?$/);
+		await expect(page.locator("#identity-title")).toContainText("Pew");
+		await page.goBack();
+		await expect(page).toHaveURL(/\/$/);
+		return;
+	}
 	const detailPage = context.waitForEvent("page");
 	await card
 		.getByRole("link", { name: "View logo: Pew" })
