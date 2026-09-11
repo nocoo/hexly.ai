@@ -35,3 +35,9 @@ The pinned-runtime run still failed, but its complete artifact exposed `ProxyCon
 ## 2026-09-07: Bogo's approved identity was missing from publication
 
 The scoped publication checkout still contained Bogo's original catalogue entry, while the owner's local main retained the approved study `2026-09-07-05`, finishing `04`. Restore that exact entry, original backup, display assets, public finishing, study archive, and generated profile together. When publishing from a separate checkout, carry the selected identity and its complete delivery files together; a local adoption alone does not update the deployed catalogue. The owner requested direct restoration and will review the live result.
+
+## 2026-09-12: Native background-tab event stalled browser CI
+
+Run `34652381938` passed 187 of 188 browser checks, including status time zones. The remaining directory test completed its middle click and fetched `/logos/pew` plus the new page's assets with HTTP 200, but Chromium never delivered the context's `page` event. Waiting for that event before calling `bringToFront()` left the test unable to activate the tab; the trace does not establish Chromium's underlying cause.
+
+The test now uses native Shift + middle click to open the tab in front at creation. It still checks the real link gesture, destination, rendered identity, and unchanged parent URL with the existing timeouts and zero retries. Browser CI and deployment remain required.
