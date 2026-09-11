@@ -14,6 +14,10 @@
 
 - include status in project onboarding ([791d74a](https://github.com/nocoo/hexly.ai/commit/791d74ac9b69d16a75fc4482e16a90f7405e79e7))
 
+### Tests
+
+- use touch input for mobile card navigation ([5409bc3](https://github.com/nocoo/hexly.ai/commit/5409bc33d09aede6484086164d72bf5058c934e3))
+
 ## [0.5.4] - 2026-09-11
 
 ### Features
