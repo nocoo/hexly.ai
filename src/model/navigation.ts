@@ -27,7 +27,11 @@ export function parseNavigation(
 		category = "archive";
 	return resolveNavigation(
 		{
-			view: route ? "logos" : "directory",
+			view: /^\/status\/?$/.test(pathname)
+				? "status"
+				: route
+					? "logos"
+					: "directory",
 			category,
 			query: params.get("q") ?? "",
 			sort: params.get("sort") === "az" ? "az" : "curated",
@@ -41,7 +45,7 @@ export function resolveNavigation(
 	state: DirectoryState,
 	projects: Project[],
 ): DirectoryState {
-	if (state.view === "directory") return state;
+	if (state.view !== "logos") return state;
 	const selected = selectedProject(
 		filterProjects(projects, state.query, state.category, state.sort),
 		state.project,
@@ -55,7 +59,12 @@ export function navigationPath(state: DirectoryState): string {
 	if (state.query) params.set("q", state.query);
 	if (state.sort !== "curated") params.set("sort", state.sort);
 	const search = params.toString();
-	const pathname = state.view === "logos" ? `/logos/${state.project}` : "/";
+	const pathname =
+		state.view === "status"
+			? "/status"
+			: state.view === "logos"
+				? `/logos/${state.project}`
+				: "/";
 	return search ? `${pathname}?${search}` : pathname;
 }
 

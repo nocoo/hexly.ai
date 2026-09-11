@@ -1,51 +1,57 @@
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { assertStaticIsolation } from "../../scripts/isolation";
+import { assertLocalIsolation } from "../../scripts/isolation";
 
-const isolated = {
-	env: { test: { name: "hexly-ai-test", routes: [], workers_dev: false } },
-};
+const config = () => JSON.parse(readFileSync("wrangler.jsonc", "utf8"));
 
-describe("static test isolation", () => {
-	it("allows a static-only project with an explicit test environment", () => {
-		expect(() => assertStaticIsolation(isolated)).not.toThrow();
+describe("local test isolation", () => {
+	it("allows the reviewed config with isolated local D1 environments", () => {
+		expect(() => assertLocalIsolation(config())).not.toThrow();
 	});
 	it.each([
-		"d1_databases",
 		"r2_buckets",
 		"kv_namespaces",
 		"services",
 		"durable_objects",
 		"remote",
-	])("rejects %s until isolation is redesigned", (binding) => {
-		expect(() => assertStaticIsolation({ ...isolated, [binding]: [] })).toThrow(
+	])("rejects unreviewed %s bindings", (binding) => {
+		expect(() => assertLocalIsolation({ ...config(), [binding]: [] })).toThrow(
 			"must not bind",
 		);
 	});
-	it("allows the static asset gateway and rejects other workers", () => {
+	it("rejects an unreviewed entry point and missing environments", () => {
 		expect(() =>
-			assertStaticIsolation({ ...isolated, main: "worker/gateway.ts" }),
-		).not.toThrow();
-		expect(() =>
-			assertStaticIsolation({ ...isolated, main: "worker/app.ts" }),
-		).toThrow("must not bind");
+			assertLocalIsolation({ ...config(), main: "worker/other.ts" }),
+		).toThrow("reviewed gateway");
+		expect(() => assertLocalIsolation({ ...config(), env: undefined })).toThrow(
+			"must be isolated",
+		);
 	});
 	it.each([
-		{},
-		{ env: {} },
-		{ env: { test: {} } },
-		{ env: { test: { name: "hexly-ai", workers_dev: false } } },
-		{ env: { test: { name: "hexly-ai-test", workers_dev: true } } },
-	])("rejects a missing or deployable test environment", (config) => {
-		expect(() => assertStaticIsolation(config)).toThrow("must be isolated");
-	});
-	it.each([undefined, ["hexly.ai"]])(
-		"rejects inherited production routes",
-		(routes) => {
-			expect(() =>
-				assertStaticIsolation({
-					env: { test: { ...isolated.env.test, routes } },
-				}),
-			).toThrow("production routes");
+		{ name: "hexly-ai" },
+		{ workers_dev: true },
+		{ routes: undefined },
+		{ routes: ["hexly.ai"] },
+		{ triggers: undefined },
+		{ triggers: { crons: ["*/5 * * * *"] } },
+		{ vars: undefined },
+		{ vars: { STATUS_MODE: "live" } },
+		{ d1_databases: undefined },
+		{ d1_databases: [] },
+		{ d1_databases: [{}] },
+		{ d1_databases: [{ binding: "STATUS_DB", database_name: "hexly-status" }] },
+		{
+			d1_databases: [
+				{
+					binding: "STATUS_DB",
+					database_name: "hexly-status-test",
+					database_id: "production-id",
+				},
+			],
 		},
-	);
+	])("rejects inherited or production test settings: %j", (patch) => {
+		const value = config();
+		Object.assign(value.env.test, patch);
+		expect(() => assertLocalIsolation(value)).toThrow();
+	});
 });

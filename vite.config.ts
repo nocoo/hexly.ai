@@ -13,6 +13,7 @@ import {
 	shareFiles,
 	sitemapXml,
 } from "./src/model/discovery";
+import { statusTargets } from "./src/model/status";
 
 function discoveryAssets(): Plugin {
 	const pages = () => discoveryPages(readProjects());
@@ -113,6 +114,11 @@ function catalogueAssets(): Plugin {
 				fileName: "data/projects.json",
 				source: build(),
 			});
+			this.emitFile({
+				type: "asset",
+				fileName: "data/status-targets.json",
+				source: JSON.stringify(statusTargets(readProjects())),
+			});
 		},
 	};
 }
@@ -158,6 +164,7 @@ export default defineConfig({
 		port: 7048,
 		strictPort: true,
 		allowedHosts: ["index.dev.hexly.ai"],
+		proxy: { "/api/status": "http://127.0.0.1:37048" },
 	},
 	build: { target: "es2022" },
 });

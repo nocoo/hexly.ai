@@ -102,7 +102,12 @@ jobs:
         run: |
           current_revision=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)
           test "$current_revision" = "$GITHUB_SHA"
-      - name: Deploy Workers Static Assets
+      - name: Apply status database migrations
+        run: bunx wrangler d1 migrations apply STATUS_DB --env "" --remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy Worker and custom domains
         run: bunx wrangler deploy --env ""
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

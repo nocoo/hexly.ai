@@ -1,8 +1,5 @@
 import projectIds from "../src/data/projects/index.json" with { type: "json" };
-
-interface Env {
-	ASSETS: { fetch: (request: Request) => Promise<Response> };
-}
+import { runStatusChecks, statusResponse } from "./status";
 
 const slugs = new Set(projectIds);
 
@@ -27,7 +24,14 @@ function shareResponse(
 }
 
 export default {
-	async fetch(request: Request, env: Env): Promise<Response> {
+	async scheduled(controller: ScheduledController, env: Env): Promise<void> {
+		await runStatusChecks(env, controller.scheduledTime);
+	},
+	async fetch(
+		request: Request,
+		env: Env,
+		ctx?: ExecutionContext,
+	): Promise<Response> {
 		const url = new URL(request.url);
 		const host = (request.headers.get("Host") ?? url.host)
 			.split(":")[0]
@@ -36,9 +40,23 @@ export default {
 		if (host === "www.hexly.ai") {
 			url.hostname = "hexly.ai";
 			url.protocol = "https:";
+			url.port = "";
 			changed = true;
 		}
 		const path = url.pathname.replace(/\/+$/, "") || "/";
+		if (host === "status.hexly.ai" && path === "/") {
+			url.pathname = "/status";
+			return env.ASSETS.fetch(new Request(url, request));
+		}
+		if (
+			host === "status.hexly.ai" &&
+			(path === "/projects" || /^\/logos(?:\/[a-z0-9-]+)?$/.test(path))
+		) {
+			url.hostname = "hexly.ai";
+			url.protocol = "https:";
+			url.port = "";
+			return Response.redirect(url.toString(), 302);
+		}
 		if (path === "/projects") {
 			url.pathname = "/";
 			changed = true;
@@ -54,6 +72,27 @@ export default {
 				status: 301,
 				headers: { Location: url.toString() },
 			});
+		}
+		if (path === "/api/status") {
+			if (!["GET", "HEAD"].includes(request.method))
+				return Response.json(
+					{ error: "Method not allowed" },
+					{ status: 405, headers: { Allow: "GET, HEAD" } },
+				);
+			const key = new Request(`${url.origin}/api/status`);
+			const cached =
+				env.STATUS_MODE === "live"
+					? await caches.default.match(key)
+					: undefined;
+			const response = cached ?? (await statusResponse(env));
+			if (!cached && response.ok && env.STATUS_MODE === "live" && ctx)
+				ctx.waitUntil(caches.default.put(key, response.clone()));
+			return request.method === "HEAD"
+				? new Response(null, {
+						status: response.status,
+						headers: response.headers,
+					})
+				: response;
 		}
 		if (path === "/api/share.json" || path.startsWith("/api/share/")) {
 			const id = /^\/api\/share\/([a-z0-9]+(?:-[a-z0-9]+)*)\.json$/.exec(
@@ -73,4 +112,4 @@ export default {
 		}
 		return env.ASSETS.fetch(request);
 	},
-};
+} satisfies ExportedHandler<Env>;

@@ -10,6 +10,7 @@ export function Header({
 	onView,
 	onLocale,
 	onTheme,
+	homeHref = "/",
 }: {
 	view: View;
 	locale: Locale;
@@ -17,6 +18,7 @@ export function Header({
 	onView: (view: View) => void;
 	onLocale: () => void;
 	onTheme: () => void;
+	homeHref?: string;
 }) {
 	const t = copy[locale];
 	const home = () => onView("directory");
@@ -25,7 +27,7 @@ export function Header({
 			<div className="site-header-bar">
 				<div className="site-header-inner shell">
 					<a
-						href="/"
+						href={homeHref}
 						className="brand"
 						onClick={(event) => {
 							event.preventDefault();
@@ -60,8 +62,22 @@ export function Header({
 							<Icon name="image" />
 							<span className="view-link-label">{t.gallery}</span>
 						</button>
+						<button
+							type="button"
+							onClick={() => onView("status")}
+							aria-pressed={view === "status"}
+							aria-label={t.status}
+							title={t.status}
+						>
+							<Icon name="activity" />
+							<span className="view-link-label">{t.status}</span>
+						</button>
 					</nav>
-					<SurfaceLinks locale={locale} onPortfolio={home} />
+					<SurfaceLinks
+						locale={locale}
+						portfolioHref={homeHref}
+						onPortfolio={home}
+					/>
 					<div className="preferences">
 						<button
 							className="icon-toggle"

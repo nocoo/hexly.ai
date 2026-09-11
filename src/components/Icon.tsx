@@ -17,7 +17,11 @@ export type IconName =
 	| "right"
 	| "languages"
 	| "grid"
-	| "image";
+	| "image"
+	| "activity"
+	| "refresh"
+	| "clock"
+	| "info";
 
 const paths: Record<IconName, string> = {
 	arrow: "M5 19 19 5M5 5h14v14",
@@ -44,6 +48,10 @@ const paths: Record<IconName, string> = {
 	grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z",
 	image:
 		"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2ZM3 16l5-5 4 4 3-3 6 6M15 7h.01",
+	activity: "M2 12h5l3-8 4 16 3-8h5",
+	refresh: "M20 7v5h-5M4 17v-5h5M6 6a8 8 0 0 1 13 3M18 18a8 8 0 0 1-13-3",
+	clock: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 7v5l3 2",
+	info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7h.01",
 };
 
 export function Icon({

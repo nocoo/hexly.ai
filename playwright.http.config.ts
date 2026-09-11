@@ -10,8 +10,7 @@ export default defineConfig({
 	outputDir: ".test-results/http",
 	use: { baseURL: "http://127.0.0.1:17048" },
 	webServer: {
-		command:
-			"bunx wrangler dev --env test --local --ip 127.0.0.1 --port 17048 --inspector-port 18048 --persist-to .wrangler/http",
+		command: "bun scripts/local-status.ts http",
 		url: "http://127.0.0.1:17048",
 		reuseExistingServer: false,
 		timeout: 60000,

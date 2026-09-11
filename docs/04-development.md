@@ -24,6 +24,18 @@ bun run dev
 
 Vite explicitly allows `index.dev.hexly.ai`. HTTPS websocket upgrades pass through Caddy for hot-module replacement.
 
+`bun run dev` first builds the catalogue manifest, then starts Vite on `7048` and
+a local Wrangler Worker on `37048`. `/api/status` is proxied to that Worker.
+The script applies D1 migrations and seeds seven days of deterministic demo
+checks into Wrangler's SQLite database in `.wrangler/dev`. The page at `/status`
+labels those observations as demo data. The fixture refreshes every five minutes
+while the development server runs. Both processes stop together on Ctrl-C.
+
+Development and test bindings use local-only database IDs, `--local`, and no
+Cron triggers. Their scheduled handler only exercises cleanup; it never probes
+public websites. Restart `bun run dev` after changing the catalogue so the
+Worker's built target manifest and mock history are regenerated.
+
 Review the directory at `https://index.dev.hexly.ai/`, with identities at `/logos/frogie` and `/logos/pew`. `/logos` opens the default identity. Vite serves these client paths directly; Workers uses its configured SPA fallback for the same paths. Share links contain the project in the pathname. Archived identities also load directly, for example `/logos/uptime-kuma-skill`.
 
 Each candidate's complete static review remains available at `/artwork/logo-family/<project>/<study>/review.html` in the dev server. Static study HTML includes the presentation references; the React site omits that disclosure. A local review round finishes with local commits only when push and deployment are out of scope.
@@ -46,7 +58,14 @@ The package registry on this machine is filtered. Use a temporary allowed mirror
 
 ## Cloudflare Workers
 
-The application uses Workers Static Assets, with no database or server-side handler. `wrangler.jsonc` points at Vite's `dist` output and declares `hexly.ai` as the production custom domain. `/api/live` is build-generated static JSON containing the package version and Git revision. `/api/share.json` and `/api/share/<id>.json` are the same kind of artifact: Open Graph titles, bilingual descriptions, and 1200 × 630 image URLs for product sites. See [social share metadata](10-social-share.md).
+The application uses Workers Static Assets behind `worker/gateway.ts`. The same
+Worker runs five-minute status checks and reads D1 database `hexly-status` through
+the `STATUS_DB` binding. `wrangler.jsonc` declares `hexly.ai`, `www.hexly.ai`, and
+`status.hexly.ai`; the status subdomain serves `/status` at its root. See
+[status storage and scheduling](11-status-monitoring.md) for retention and
+monitoring semantics. `/api/live` remains build-generated static JSON containing
+the package version and Git revision. `/api/share.json` and `/api/share/<id>.json`
+remain generated sharing metadata; see [social share metadata](10-social-share.md).
 
 ```sh
 bun run build
@@ -57,7 +76,11 @@ bun run deploy
 
 The local preview uses port `37048`, inspector port `38048`, and `.wrangler/preview` for runtime state. Deployment commands explicitly select the top-level production configuration with `--env ""`; tests use `--env test`. Deployment requires the account's normal Cloudflare credentials.
 
-GitHub Actions automatically deploys `main` after all quality checks pass, then verifies the public version, revision, document, compiled assets, and original logo. See [versioning and releases](05-release.md) for credentials and the release command.
+GitHub Actions applies pending D1 migrations and deploys `main` after all quality
+checks pass, then verifies the public version, revision, document, compiled
+assets, and original logo. `bun run deploy` follows the same migration-before-
+deployment order. The existing CD token has D1 access. See
+[versioning and releases](05-release.md) for credentials and the release command.
 
 ## Apex migration from Vercel
 

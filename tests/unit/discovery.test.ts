@@ -71,7 +71,8 @@ describe("crawler discovery documents", () => {
 		expect(xml).toContain(
 			"<loc>https://hexly.ai/logos/uptime-kuma-skill</loc>",
 		);
-		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 2);
+		expect(xml).toContain("<loc>https://hexly.ai/status</loc>");
+		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 3);
 	});
 	it("writes a plain-text index with series links and both languages", () => {
 		const text = llmsDocument(projects);

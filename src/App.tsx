@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { Icon } from "./components/Icon";
+import { StatusPage } from "./components/StatusPage";
 import { copy } from "./data/copy";
 import { filterProjects, loadProjects } from "./model/catalogue";
 import { pageForPath } from "./model/discovery";
@@ -19,6 +20,7 @@ import type { Project, View } from "./model/project";
 import "./styles/base.css";
 import "./styles/directory.css";
 import "./styles/gallery.css";
+import "./styles/status.css";
 
 type CatalogueState =
 	| { status: "loading" }
@@ -33,12 +35,29 @@ function browserStorage(): Storage | null {
 	}
 }
 
+function isStatusDomain() {
+	return window.location.hostname === "status.hexly.ai";
+}
+
+function locationPath() {
+	return isStatusDomain() && window.location.pathname === "/"
+		? "/status"
+		: window.location.pathname;
+}
+
+function viewPath(next: DirectoryState) {
+	return isStatusDomain() && next.view === "status"
+		? navigationPath(next).replace(/^\/status/, "/")
+		: navigationPath(next);
+}
+
 export function App() {
+	const statusDomain = isStatusDomain();
 	const [catalogue, setCatalogue] = useState<CatalogueState>({
 		status: "loading",
 	});
 	const [state, setState] = useState(() =>
-		parseNavigation(window.location.pathname, window.location.search, []),
+		parseNavigation(locationPath(), window.location.search, []),
 	);
 	const [preferences, setPreferences] = useState(() =>
 		readPreferences(
@@ -80,7 +99,12 @@ export function App() {
 
 	useEffect(() => {
 		if (catalogue.status !== "ready") return;
-		const path = state.view === "directory" ? "/" : `/logos/${state.project}`;
+		const path =
+			state.view === "status"
+				? "/status"
+				: state.view === "directory"
+					? "/"
+					: `/logos/${state.project}`;
 		document.title = pageForPath(path, projects).title;
 	}, [catalogue.status, projects, state.project, state.view]);
 
@@ -91,11 +115,7 @@ export function App() {
 				if (cancelled) return;
 				setCatalogue({ status: "ready", projects: loaded });
 				setState(
-					parseNavigation(
-						window.location.pathname,
-						window.location.search,
-						loaded,
-					),
+					parseNavigation(locationPath(), window.location.search, loaded),
 				);
 			})
 			.catch(() => {
@@ -108,7 +128,7 @@ export function App() {
 
 	useEffect(() => {
 		if (catalogue.status !== "ready") return;
-		const path = navigationPath(state);
+		const path = viewPath(state);
 		if (`${window.location.pathname}${window.location.search}` !== path)
 			window.history.replaceState(null, "", `${path}${window.location.hash}`);
 	}, [catalogue.status, state]);
@@ -141,11 +161,7 @@ export function App() {
 		if (catalogue.status !== "ready") return;
 		const onPopState = () =>
 			setState(
-				parseNavigation(
-					window.location.pathname,
-					window.location.search,
-					projects,
-				),
+				parseNavigation(locationPath(), window.location.search, projects),
 			);
 		window.addEventListener("popstate", onPopState);
 		return () => window.removeEventListener("popstate", onPopState);
@@ -153,11 +169,15 @@ export function App() {
 
 	const navigate = (next: DirectoryState, replace = false) => {
 		const resolved = resolveNavigation(next, projects);
+		if (statusDomain && resolved.view !== "status") {
+			window.location.assign(`https://hexly.ai${navigationPath(resolved)}`);
+			return;
+		}
 		setState(resolved);
 		window.history[replace ? "replaceState" : "pushState"](
 			null,
 			"",
-			navigationPath(resolved),
+			viewPath(resolved),
 		);
 		if (next.view !== state.view)
 			window.scrollTo({ top: 0, behavior: "instant" });
@@ -195,6 +215,7 @@ export function App() {
 				{t.skip}
 			</a>
 			<Header
+				homeHref={statusDomain ? "https://hexly.ai/" : "/"}
 				view={state.view}
 				locale={locale}
 				theme={theme}
@@ -220,6 +241,14 @@ export function App() {
 						) : null}
 					</div>
 				</main>
+			) : state.view === "status" ? (
+				<StatusPage
+					projects={projects}
+					locale={locale}
+					query={state.query}
+					searchRef={searchRef}
+					onQuery={(query) => change({ query })}
+				/>
 			) : state.view === "directory" ? (
 				<Directory
 					projects={projects}
@@ -246,7 +275,11 @@ export function App() {
 					}}
 				/>
 			)}
-			<Footer locale={locale} onHome={() => view("directory")} />
+			<Footer
+				locale={locale}
+				homeHref={statusDomain ? "https://hexly.ai/" : "/"}
+				onHome={() => view("directory")}
+			/>
 			<div
 				className={`toast ${toast ? "toast-visible" : ""}`}
 				role="status"

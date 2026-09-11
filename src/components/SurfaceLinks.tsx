@@ -6,10 +6,12 @@ export function SurfaceLinks({
 	locale,
 	footer = false,
 	onPortfolio,
+	portfolioHref = "/",
 }: {
 	locale: Locale;
 	footer?: boolean;
 	onPortfolio: () => void;
+	portfolioHref?: string;
 }) {
 	const t = copy[locale];
 	const names: Record<SurfaceId, string> = {
@@ -28,7 +30,7 @@ export function SurfaceLinks({
 				return (
 					<a
 						key={id}
-						href={surfaceHref(id, locale)}
+						href={current ? portfolioHref : surfaceHref(id, locale)}
 						data-surface-link={id}
 						aria-current={current ? "true" : undefined}
 						lang={locale === "zh" ? "zh-CN" : "en"}

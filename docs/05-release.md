@@ -33,10 +33,14 @@ Repository Actions secrets:
 
 | Name | Purpose |
 | --- | --- |
-| `CLOUDFLARE_API_TOKEN` | Deploy Worker assets and the `hexly.ai` custom domain |
+| `CLOUDFLARE_API_TOKEN` | Migrate `hexly-status`, deploy the Worker, Cron, assets, and custom domains |
 | `CLOUDFLARE_ACCOUNT_ID` | Select the Cloudflare account |
 
-The token needs Workers deployment permissions on the account, Workers Routes permissions for the zone, and the read permissions Wrangler requires for account/zone discovery. Keep token values in GitHub Secrets; local interactive Wrangler authentication is independent.
+The token needs Workers deployment and D1 write permissions on the account,
+Workers Routes permissions for the zone, and the read permissions Wrangler
+requires for account/zone discovery. The existing CD token already has D1 access.
+Keep token values in GitHub Secrets; local interactive Wrangler authentication
+is independent. Apply migrations before deploying Worker code that uses them.
 
 The workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. The Deploy job runs only for `main`, after both the reusable quality workflow and the separate browser job succeed. Browser testing and deployment pin Node.js 26.7.0. Deployment checks out the same Git SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the Wrangler step.
 

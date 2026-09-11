@@ -2,6 +2,7 @@ import { copy } from "../data/copy";
 import identity from "../data/site-identity.json" with { type: "json" };
 import { filterProjects } from "./catalogue";
 import type { Locale, Project } from "./project";
+import { healthEndpoint } from "./status";
 
 export const siteOrigin = "https://hexly.ai";
 
@@ -159,6 +160,7 @@ export function pageForPath(
 	projects: Project[],
 ): DiscoveryPage {
 	const path = pathname.replace(/\/$/, "") || "/";
+	if (path === "/status") return statusPage(projects);
 	const match = /^\/logos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
 	if (!match) return homePage(projects);
 	const id = match[1];
@@ -171,6 +173,7 @@ export function discoveryPages(projects: Project[]): DiscoveryPage[] {
 	return [
 		homePage(projects),
 		galleryPage(projects),
+		statusPage(projects),
 		...projects.map((project) => projectPage(project)),
 	];
 }
@@ -199,6 +202,7 @@ Public pages welcome search and AI crawlers. JavaScript is not required to read 
 
 - [hexly.ai](${siteOrigin}/): ${homeDescription}
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
+- [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
 
 ${visible.map((project) => link(project, "en")).join("\n")}
 
@@ -206,6 +210,7 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 
 - [hexly.ai](${siteOrigin}/): ${copy.zh.heroDescription}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
+- [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
 
 ${visible.map((project) => link(project, "zh")).join("\n")}
 
@@ -342,6 +347,36 @@ function galleryPage(projects: Project[]): DiscoveryPage {
 			description,
 			isPartOf: { "@id": `${siteOrigin}/#website` },
 			mainEntity: itemList(visible, "Active identities"),
+		},
+	};
+}
+
+function statusPage(projects: Project[]): DiscoveryPage {
+	const title = "Service status — hexly.ai";
+	const description =
+		"Live health checks for the Hexly universe. Active websites are checked every five minutes, with seven days of availability history.";
+	const canonical = `${siteOrigin}/status`;
+	return {
+		path: "/status",
+		title,
+		description,
+		canonical,
+		image: socialImage(),
+		imageAlt: "hexly.ai mark on warm paper",
+		heading: "Service status.",
+		bodyHtml: snapshotHtml(
+			"Service status.",
+			description,
+			"/status",
+			projects.filter((project) => healthEndpoint(project)),
+		),
+		jsonLd: {
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			url: canonical,
+			name: title,
+			description,
+			isPartOf: { "@id": `${siteOrigin}/#website` },
 		},
 	};
 }

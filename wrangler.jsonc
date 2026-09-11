@@ -11,16 +11,52 @@
 	},
 	"routes": [
 		{ "pattern": "hexly.ai", "custom_domain": true },
-		{ "pattern": "www.hexly.ai", "custom_domain": true }
+		{ "pattern": "www.hexly.ai", "custom_domain": true },
+		{ "pattern": "status.hexly.ai", "custom_domain": true }
+	],
+	"vars": { "STATUS_MODE": "live" },
+	"triggers": { "crons": ["*/5 * * * *"] },
+	"d1_databases": [
+		{
+			"binding": "STATUS_DB",
+			"database_name": "hexly-status",
+			"database_id": "4d79ab15-804e-4b4c-893d-796986eaf954",
+			"migrations_dir": "migrations"
+		}
 	],
 	"workers_dev": true,
 	"dev": { "ip": "127.0.0.1", "port": 37048 },
 	"observability": { "enabled": true },
 	"env": {
+		"dev": {
+			"name": "hexly-ai-dev",
+			"routes": [],
+			"workers_dev": false,
+			"vars": { "STATUS_MODE": "demo" },
+			"triggers": { "crons": [] },
+			"d1_databases": [
+				{
+					"binding": "STATUS_DB",
+					"database_name": "hexly-status-dev",
+					"database_id": "00000000-0000-0000-0000-000000000004",
+					"migrations_dir": "migrations"
+				}
+			]
+		},
 		"test": {
 			"name": "hexly-ai-test",
 			"routes": [],
-			"workers_dev": false
+			"workers_dev": false,
+			"vars": { "STATUS_MODE": "test" },
+			"triggers": { "crons": [] },
+			"d1_databases": [
+				{
+					"binding": "STATUS_DB",
+					"database_name": "hexly-status-test",
+					"database_id": "00000000-0000-0000-0000-000000000005",
+					"migrations_dir": "migrations"
+				}
+			]
 		}
 	}
 }

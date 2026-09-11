@@ -15,7 +15,8 @@
 13. [Showtime onboarding and icon preparation](13-showtime-onboarding.md)
 14. [Coffee and Hermes Gateway onboarding](14-new-tools-onboarding.md)
 15. [Ocelot onboarding and animal identity](15-ocelot-onboarding.md)
-16. [Project profiles](profiles/README.md)
-17. [Source snapshots](sources/README.md)
+16. [Status monitoring: D1, Cron, retention, and local mock data](11-status-monitoring.md)
+17. [Project profiles](profiles/README.md)
+18. [Source snapshots](sources/README.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

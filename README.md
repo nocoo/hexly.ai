@@ -28,6 +28,7 @@
 ## 功能
 
 - **项目导航** — 按分类浏览、搜索中英文名称与描述，访问已核实的站点或源码仓库。
+- **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
 - **Logo 画廊** — 宽幅新旧对照，图标、透明和白底视图，128 / 64 / 32 / 16 px 尺寸与侧栏、浏览器场景；浅深底色检查、可复制色板、生成提示词或展示说明，以及原始文件下载。Refined 项目在列表、分类和搜索结果中优先展示。
 - **真实色板** — 展示项目的前景色、背景色与点缀色，点击复制颜色值。
 - **原标备份** — 下载保留原始字节的图像，追溯来源路径、提交版本与 SHA-256。
@@ -42,7 +43,7 @@
 
 | 命令 | 用途 |
 | --- | --- |
-| `bun run dev` | 启动 Vite 开发服务，端口 7048 |
+| `bun run dev` | 启动 Vite 7048 与 Wrangler 37048，自动初始化本地 SQLite D1 模拟数据 |
 | `bun run build` | 构建静态站点和版本元数据 |
 | `bun run preview:worker` | 在本地 Workers 运行时预览构建结果 |
 | `bun run gate:commit` | 静态分析、单元测试覆盖率和暂存区密钥检查 |
@@ -66,7 +67,9 @@ hexly.ai/
 │   ├── App.tsx           # 状态与交互编排
 │   └── styles/           # 主题、布局和图标展示
 ├── public/logos/         # 原图、Emoji 和 WebP 预览
-├── scripts/             # 资源生成、质量门控和发布
+├── scripts/             # 本地模拟库、资源生成、质量门控和发布
+├── worker/              # 路由、Status API 与定时健康检查
+├── migrations/          # D1 表结构迁移
 ├── tests/               # 单元、HTTP 与浏览器测试
 ├── docs/                # 规则、部署、来源快照和项目档案
 ├── .github/workflows/   # CI 与自动部署
@@ -80,6 +83,7 @@ hexly.ai/
 | [React 19](https://react.dev/) · [TypeScript 7](https://www.typescriptlang.org/) | 界面与类型约束 |
 | [Vite 8](https://vite.dev/) · [Bun 1.4](https://bun.sh/) | 开发、构建与脚本 |
 | [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/) | 静态资源托管与自定义域名 |
+| [Cloudflare D1](https://developers.cloudflare.com/d1/) · [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/) | 状态记录、每 5 分钟探测和 7 天自动清理 |
 | [Sharp](https://sharp.pixelplumbing.com/) | 图像尺寸转换与原图校验 |
 | [Vitest](https://vitest.dev/) · [Playwright](https://playwright.dev/) | 单元、HTTP 与浏览器测试 |
 | [Biome](https://biomejs.dev/) · [OSV](https://google.github.io/osv-scanner/) · [Gitleaks](https://github.com/gitleaks/gitleaks) | 格式、静态分析和安全检查 |
@@ -96,6 +100,10 @@ bun run dev
 ```
 
 默认地址为 `http://127.0.0.1:7048`。本机通过 Caddy 使用 **[index.dev.hexly.ai](https://index.dev.hexly.ai)**，配置见[开发与部署](docs/04-development.md)。
+
+本地状态页位于 `/status`，通过真实 Worker API 读取 Wrangler 的 SQLite D1。
+开发脚本自动载入 7 天模拟记录，页面明确标注模拟数据；本地不会探测生产站点。
+存储和定时方案见[Status 实现说明](docs/11-status-monitoring.md)。
 
 项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建会生成首页与 `/logos/<project>` 的 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap，以及产品站可复用的 [`/api/share`](https://hexly.ai/api/share.json) 分享元数据。接入说明见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建直接使用仓库内的资源，不依赖相邻项目或运行时 GitHub 请求。
 

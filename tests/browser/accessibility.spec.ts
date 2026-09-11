@@ -7,6 +7,7 @@ for (const theme of ["light", "dark"] as const) {
 		for (const [view, path] of [
 			["directory", "/"],
 			["gallery", "/logos/frogie"],
+			["status", "/status"],
 		] as const) {
 			test(`${view} has accessible content and fits the viewport`, async ({
 				page,
@@ -15,6 +16,8 @@ for (const theme of ["light", "dark"] as const) {
 				if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
 				await page.goto(path);
 				await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+				if (view === "status")
+					await expect(page.locator(".status-demo")).toBeVisible();
 				if (isMobile)
 					await page.getByRole("button", { name: "Switch to Chinese" }).click();
 				await page.evaluate(() => document.fonts.ready);

@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { setTimeout } from "node:timers/promises";
 import manifest from "../package.json";
 import identity from "../src/data/site-identity.json";
+import { parseStatusSnapshot } from "../src/model/status";
 
 export async function verifyDeployment(
 	origin: URL,
@@ -38,6 +39,18 @@ export async function verifyDeployment(
 			response.headers.get("cache-control") !== "no-store"
 		) {
 			throw new Error("Release metadata must be JSON and uncached.");
+		}
+		const snapshot = parseStatusSnapshot(
+			await (await get("/api/status")).json(),
+		);
+		if (snapshot.mode !== "live")
+			throw new Error("Production must not serve demo status data.");
+		if (
+			!(await (await get("/status")).text()).includes(
+				"<title>Service status — hexly.ai</title>",
+			)
+		) {
+			throw new Error("The production status page is missing.");
 		}
 		const document = await get("/");
 		const html = await document.text();
@@ -77,7 +90,7 @@ export async function verifyDeployment(
 		try {
 			await checkRelease();
 			console.info(
-				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, compiled assets, and original logo.`,
+				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, status page and live D1 feed, compiled assets, and original logo.`,
 			);
 			return;
 		} catch (error) {
