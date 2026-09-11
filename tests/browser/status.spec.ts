@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
-import { statusTargets } from "../../src/model/status";
+import { type StatusSnapshot, statusTargets } from "../../src/model/status";
 
 const targets = statusTargets(readProjects());
 
@@ -33,7 +33,7 @@ test("navigates to status, filters services, and inspects hourly history and the
 	await history.focus();
 	await history.press("ArrowLeft");
 	await expect(service.getByRole("tooltip")).toContainText("checks passed");
-	await expect(history).toHaveAttribute("aria-valuetext", /UTC/);
+	await expect(history).toHaveAttribute("aria-valuetext", /GMT/);
 	await search.fill("no-such-service");
 	await expect(page.getByText("No services match this view.")).toBeVisible();
 	await page.getByRole("button", { name: "Clear filters" }).click();
@@ -47,6 +47,82 @@ test("navigates to status, filters services, and inspects hourly history and the
 	expect((await refreshed).status()).toBe(200);
 	await page.reload();
 	await expect(page.locator("#status-title")).toHaveText("Service status.");
+});
+
+test.describe("status display time zones", () => {
+	test.use({ timezoneId: "Asia/Shanghai" });
+
+	test("defaults to local time, converts every date, and preserves UTC history and preferences", async ({
+		page,
+		request,
+	}) => {
+		const checkedAt = Date.parse("2026-09-11T20:50:00Z");
+		await page.clock.setFixedTime(checkedAt);
+		const snapshot: StatusSnapshot = await (
+			await request.get("/api/status")
+		).json();
+		await page.route("**/api/status", (route) =>
+			route.fulfill({
+				json: {
+					...snapshot,
+					services: snapshot.services.map((service) => ({
+						...service,
+						latest: service.latest ? { ...service.latest, checkedAt } : null,
+					})),
+				},
+			}),
+		);
+		await page.goto("/status");
+		const zone = page.getByRole("combobox", { name: "Time zone" });
+		await expect(zone).toHaveValue("local");
+		await expect(zone.locator("option:checked")).toContainText("Asia/Shanghai");
+		const updated = page.locator(".status-update time");
+		await expect(updated).toContainText("04:50 GMT+8");
+		await expect(updated).toHaveText(/^12 Sep/);
+		await expect(updated).toHaveAttribute(
+			"datetime",
+			"2026-09-11T20:50:00.000Z",
+		);
+		const axis = page.locator(".status-timeline-labels > span").first();
+		await expect(axis).toHaveText(/^5 Sep/);
+		const metrics = await page.locator(".status-metrics").innerText();
+		const bars = await page
+			.locator(".status-bar")
+			.evaluateAll((elements) => elements.map((element) => element.className));
+		const service = page.locator('[data-service="backy"]');
+		await service.getByRole("button", { name: /Backy: Operational/ }).click();
+		await expect(service.locator(".status-service-detail time")).toContainText(
+			"04:50 GMT+8",
+		);
+		await service.getByRole("slider").focus();
+		await expect(service.getByRole("tooltip")).toContainText("04:00 GMT+8");
+		await zone.selectOption("UTC");
+		await expect(updated).toContainText("20:50 GMT");
+		await expect(updated).toHaveText(/^11 Sep/);
+		await expect(axis).toHaveText(/^4 Sep/);
+		await expect(service.locator(".status-service-detail time")).toContainText(
+			"20:50 GMT",
+		);
+		await expect(page.locator(".status-metrics")).toHaveText(metrics, {
+			useInnerText: true,
+		});
+		expect(
+			await page
+				.locator(".status-bar")
+				.evaluateAll((elements) =>
+					elements.map((element) => element.className),
+				),
+		).toEqual(bars);
+		await service.getByRole("slider").focus();
+		await expect(service.getByRole("tooltip")).toContainText("20:00 GMT");
+		await page.reload();
+		await expect(zone).toHaveValue("UTC");
+		await expect(updated).toContainText("20:50 GMT");
+		await zone.selectOption("Asia/Tokyo");
+		await expect(updated).toContainText("05:50 GMT+9");
+		await zone.selectOption("local");
+		await expect(updated).toContainText("04:50 GMT+8");
+	});
 });
 
 test("does not present an empty or stale feed as healthy", async ({

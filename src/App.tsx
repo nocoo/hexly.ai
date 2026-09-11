@@ -69,7 +69,7 @@ export function App() {
 	const [toast, setToast] = useState("");
 	const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 	const searchRef = useRef<HTMLInputElement>(null);
-	const { locale, theme } = preferences;
+	const { locale, theme, timeZone } = preferences;
 	const t = copy[locale];
 	const projects = catalogue.status === "ready" ? catalogue.projects : [];
 	const visible = useMemo(
@@ -198,6 +198,10 @@ export function App() {
 		savePreference(browserStorage(), "theme", next);
 		setPreferences((current) => ({ ...current, theme: next }));
 	};
+	const switchTimeZone = (next: string) => {
+		savePreference(browserStorage(), "timeZone", next);
+		setPreferences((current) => ({ ...current, timeZone: next }));
+	};
 	const copyValue = async (value: string) => {
 		try {
 			await navigator.clipboard.writeText(value);
@@ -245,6 +249,8 @@ export function App() {
 				<StatusPage
 					projects={projects}
 					locale={locale}
+					timeZonePreference={timeZone}
+					onTimeZone={switchTimeZone}
 					query={state.query}
 					searchRef={searchRef}
 					onQuery={(query) => change({ query })}

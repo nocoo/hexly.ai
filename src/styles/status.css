@@ -48,6 +48,9 @@
 	gap: 40px;
 	padding-block: 54px 44px;
 }
+.status-intro > div:first-child {
+	min-width: 0;
+}
 .status-intro .eyebrow {
 	margin: 0 0 23px;
 	font-size: 10px;
@@ -72,6 +75,50 @@
 	line-height: 1.7;
 	margin: 0;
 	letter-spacing: -0.025em;
+}
+.status-timezone {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	color: var(--muted);
+	font: 10px var(--mono);
+}
+.status-timezone label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	white-space: nowrap;
+}
+.status-timezone label .icon {
+	width: 13px;
+	height: 13px;
+}
+.status-timezone .sort-control {
+	position: relative;
+	inset: auto;
+	width: 260px;
+	min-width: 0;
+	flex-shrink: 1;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	background: var(--surface);
+}
+.status-timezone select {
+	width: 100%;
+	max-width: none;
+	min-height: 36px;
+	padding: 7px 31px 7px 11px;
+	font: inherit;
+	text-overflow: ellipsis;
+}
+.status-timezone .sort-control > .icon {
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.status-timezone .sort-control:hover {
+	border-color: var(--muted);
 }
 .status-signal {
 	display: flex;
