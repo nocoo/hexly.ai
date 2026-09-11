@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.6] - 2026-09-11
+
+### Features
+
+- display timestamps in the selected time zone ([3eae747](https://github.com/nocoo/hexly.ai/commit/3eae747debcf646a40c96b03b3a61ae39c2e5761))
+
 ## [0.5.5] - 2026-09-11
 
 ### Features
