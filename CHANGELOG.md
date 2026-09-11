@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.5] - 2026-09-11
+
+### Features
+
+- add service status monitoring with Cloudflare D1 ([49fb970](https://github.com/nocoo/hexly.ai/commit/49fb970cbec472010709b943e1c28d0768a31603))
+
 ## [0.5.4] - 2026-09-11
 
 ### Features
