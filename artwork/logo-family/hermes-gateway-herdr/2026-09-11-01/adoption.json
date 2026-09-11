@@ -1,0 +1,103 @@
+{
+	"recordedAt": "2026-09-11T10:14:59.413553+00:00",
+	"project": "hermes-gateway-herdr",
+	"study": "2026-09-11-01",
+	"finishing": "01",
+	"status": "adopted locally",
+	"decision": {
+		"ownerMessage": "通过，继续",
+		"rawSha256": "7991518e28d32082f552ae15d98be7279361257d60c1aaef0fd1e4668e3e20f9",
+		"record": "raw-review.json"
+	},
+	"sourceRepository": "https://github.com/nocoo/hermes-gateway-herdr",
+	"sourceRevision": "f14ddf11bf4ac4912830f0a7259fdd8a769e5a41",
+	"profileRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+	"masterFiles": [
+		{
+			"path": "logo.png",
+			"role": "transparent",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "assets/brand/icon.png",
+			"role": "icon",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 5672655,
+			"sha256": "aa2f56454488ffe1ff07146ad5ac4c85ec8613f496f3c2323a71ac864567a66f"
+		},
+		{
+			"path": "assets/brand/icon-rounded.png",
+			"role": "rounded",
+			"width": 2048,
+			"height": 2048,
+			"bytes": 5612115,
+			"sha256": "40ff1e6d78bed722f87c6579dc0857874896fd74154fd7e8267ed45f3b8f7d44"
+		}
+	],
+	"committedMasterBytesVerified": true,
+	"sourceTextFiles": [
+		{
+			"path": "README.md",
+			"sha256": "614b453758c1fee29074c06b263c33b8af6caebd87348a1b6bd3f930e713c6c8"
+		},
+		{
+			"path": "docs/README.en.md",
+			"sha256": "a9258860fb9c0fefd75ec367bf0eb8cfd5f6eb7974979179575358c0258e4da6"
+		},
+		{
+			"path": "assets/brand/README.md",
+			"sha256": "7eca47ba0687bf38bddab681ee9966f647ed3b5f41859bffa2cb32b332b66479"
+		},
+		{
+			"path": "assets/brand/source.json",
+			"sha256": "a49e23dfc92ad50996d8571740e7357acf0513813b27c7028115dcbd7da3d6f1"
+		}
+	],
+	"previous": {
+		"original": "/logos/emoji/hermes-gateway-herdr.png",
+		"sourceUrl": "https://github.com/nocoo/nocoo/blob/4a0c394a79c8f4d24a11f8d9907d5c797e6b7718/README.md",
+		"width": 1024,
+		"height": 1024,
+		"sha256": "df84f29fc92535512e00cef39272d782a7b9a7f588f104fb85d5383720e6e3a5"
+	},
+	"consumers": {
+		"readmes": {
+			"README.md": "assets/brand/icon-rounded.png",
+			"docs/README.en.md": "../assets/brand/icon-rounded.png"
+		},
+		"application": [],
+		"browser": [],
+		"platform": [],
+		"social": [],
+		"exceptions": [
+			"CLI and development manifest only; no UI, favicon, ICO, platform icon or website theme is evidenced.",
+			"The development manifest and runtime implementation are unchanged.",
+			"Eleven pre-existing unpublished implementation commits remain local. No plugin installation, real Gateway start or user Profile change occurred."
+		]
+	},
+	"review": {
+		"catalogue": "https://index.dev.hexly.ai/logos/hermes-gateway-herdr",
+		"static": "https://index.dev.hexly.ai/artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/review.html"
+	},
+	"verification": {
+		"nativeAndExports": "inspection/finishing-01.json",
+		"source": {
+			"exactMasters": 3,
+			"readmeTargets": 2,
+			"result": "All selected source master bytes match the finishing archive and committed files; both README headers reference the selected rounded presentation.",
+			"runtimeTests": "Branding-only change; the existing 84-test offline evidence was not rerun and real integration remains unverified."
+		},
+		"reviewBrowser": "inspection/review-browser/checks.json",
+		"catalogueThemeEvidence": "Coffee retains its recorded application tokens; Gateway has no website-theme row. Verified in the focused browser regression and complete review checks."
+	},
+	"publication": {
+		"pushed": false,
+		"deployed": false,
+		"githubDescriptionsUpdated": false,
+		"scope": "Local delivery. No push, deployment or remote metadata update requested in this session."
+	}
+}

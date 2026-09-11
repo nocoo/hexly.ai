@@ -31,7 +31,7 @@ describe("the imported project catalogue", () => {
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(58);
+		).toHaveLength(59);
 	});
 	it("provides a verified goal and stack for every active project", () => {
 		expect(

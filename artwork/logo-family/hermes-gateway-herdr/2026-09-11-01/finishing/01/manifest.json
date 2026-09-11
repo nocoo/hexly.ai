@@ -1,0 +1,400 @@
+{
+	"createdAt": "2026-09-11T10:01:37.873Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "7991518e28d32082f552ae15d98be7279361257d60c1aaef0fd1e4668e3e20f9",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"project": "hermes-gateway-herdr",
+		"original": "../../../../public/logos/emoji/hermes-gateway-herdr.png",
+		"background": {
+			"base": "#dfe8ec",
+			"light": "#f1f6f7",
+			"shade": "#c7d7de",
+			"motif": "#7899a9",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60911002,
+			"motifOpacity": 0.3,
+			"highlightOpacity": 0.4,
+			"ribbonOpacity": 0.16,
+			"pattern": {
+				"name": "Paired panes and a returning route",
+				"description": "Two unequal pane outlines and a single returning route form a shallow technical relief on pale blue-gray paper. Open corners and short terminal ticks keep the pattern subordinate to the solid brass gateway.",
+				"layers": [
+					{
+						"d": "M111 324V155h326 M603 155h301v287 M904 619v251H662 M386 870H111V585",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M114 324V158h323 M603 158h298v284 M901 619v248H662 M386 867H114V585",
+						"tone": "highlight",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M159 268v-66h257 M651 202h205v174 M856 685v137H697 M335 822H159V639",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M137 499H82V93h340 M736 93h204v827H575 M575 920l24-12 M575 920l24 12",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M140 502H85V96h337 M736 96h201v821H575",
+						"tone": "highlight",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M193 182h52 M193 190h30 M774 840h52 M796 848h30 M103 370h17 M103 399h17 M103 428h17 M895 492h17 M895 521h17 M895 550h17",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M135 126h161v7H135z M725 891h153v7H725z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					80,
+					105,
+					117
+				],
+				"opacity": 0.17,
+				"blurAt2048": 48,
+				"offsetAt2048": [
+					14,
+					670
+				],
+				"projectionScale": [
+					0.88,
+					0.2
+				]
+			},
+			{
+				"color": [
+					68,
+					96,
+					108
+				],
+				"opacity": 0.12,
+				"blurAt2048": 16,
+				"offsetAt2048": [
+					6,
+					14
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.91,
+			"offsetAt2048": [
+				-6,
+				-4
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Place the complete brass frame, both feet, hinges, door and status lens as one uniformly scaled group. Require 128 px minimum clearance from the rounded outline; no structural cropping or extra emission."
+		},
+		"matte": {
+			"minimumChannel": 235,
+			"maximumChroma": 24,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [
+				[
+					1365,
+					1000
+				]
+			],
+			"calibrationNote": "The modal outer-eight-pixel matte is (251,252,252). The real opening behind the ajar door samples (252,252,253); seed that connected opening only. Preserve ivory prompt inlays, enamel reflections, brass highlights and the solid green glass lens. No component removal or global white deletion."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2154327,
+		"foregroundPixels": 2039977,
+		"softEdgePixels": 23981,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 400,
+			"top": 129,
+			"right": 1695,
+			"bottom": 1913
+		}
+	},
+	"placement": {
+		"scale": 0.91,
+		"offsetAt2048": [
+			-6,
+			-4
+		],
+		"bounds": {
+			"left": 450,
+			"top": 205,
+			"right": 1629,
+			"bottom": 1829
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 205.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2979,
+			"sha256": "1026dce28d226b4a0aa2e1a73b12ebcc0f10e25f651234cce43f1529e90cb289"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1632,
+			"sha256": "127c47a922e9814dc55517080dd85155d8f9f3c39775c925df97393b10df9e3e"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5141474,
+			"sha256": "0e11f530904504bfbe619138562c3c775b8a52d944c7573267213c81dc9cc3e3"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 99958,
+			"sha256": "942bee85fd5e189cfd9c1d207057e9cb015b974e0fafbd5dda18749ec973ffe8"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1377,
+			"sha256": "e15863b323699120ba6bda5dc53fa0ab522dab14ea7685d5777e5a98b6bcffd8"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1607885,
+			"sha256": "f27c81aab6ef2c67723a1c8406ebd86890ea24cd283f20311ba00c1a6b0de6d3"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 109185,
+			"sha256": "ab2a529764ca908d0cae4e44042af564df2f4951cb5b82654724447e32d002e2"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 91272,
+			"sha256": "5c9b47620a6c4a67572c47306a08721ab45ea9a1ff08d8e15083c11aa88daff0"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 145916,
+			"sha256": "95186c34e15ab8117ecdfb7e25e53905d602fd923aa1c188ecdb2ceed62707bc"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-2048.png",
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-2048.png",
+			"bytes": 5672655,
+			"sha256": "aa2f56454488ffe1ff07146ad5ac4c85ec8613f496f3c2323a71ac864567a66f"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-2048.png",
+			"bytes": 5612115,
+			"sha256": "40ff1e6d78bed722f87c6579dc0857874896fd74154fd7e8267ed45f3b8f7d44"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-1024.png",
+			"bytes": 1071595,
+			"sha256": "0f4e7709a3f9c0b21492d47ffda57881ecb10e2674aefee0523cdbee4550b04e"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-1024.png",
+			"bytes": 1334989,
+			"sha256": "8bcbaf77a178fe9222bbeeedb4a44f26e813e1e0debfe26161c9fee3d3ec353b"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-1024.png",
+			"bytes": 1340537,
+			"sha256": "81cc1b261a4a3fc0c5809586e7eabf2446ca6742d6e5633fb015748d6fc4173f"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-512.png",
+			"bytes": 273879,
+			"sha256": "6f6bf8bd7f6190570ae376d01d8a603c7f89664c504cdd3546ac78c99f0102b9"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-512.png",
+			"bytes": 371053,
+			"sha256": "5dabef0c0311d6480ca882eeac4a85c137dd24a887e082c1119c3c4aec57ec7e"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-512.png",
+			"bytes": 373681,
+			"sha256": "e8ea55c0e3e3bfcefb4b3e7c4f559959ffd4b7fbeb3f033a18ea33210c6214f3"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-256.png",
+			"bytes": 74661,
+			"sha256": "e6a0579c383aa78739d87442e230b58ad21220fc335a402aec3e8d992be51b18"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-256.png",
+			"bytes": 89901,
+			"sha256": "18291f2c9e9bfbbb397f935b661e838cf80b2a35ec1a46aae582dfde05d7543b"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-256.png",
+			"bytes": 93815,
+			"sha256": "5cbbe1fba4bfea6c88514e68df31bb4fd3385a0ca563fdab79b37f3b28517596"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-128.png",
+			"bytes": 20710,
+			"sha256": "0c0a20d4b3ff3dcd3ce905940266faa7b995b00a6478eeeb596deabe3ee58bf7"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-128.png",
+			"bytes": 26469,
+			"sha256": "8062dd401edab0606ec098e76db34adefa5d8527fcd00e15b3f7db56088f9578"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-128.png",
+			"bytes": 28382,
+			"sha256": "5085a0440dc49500cd452387df9e4ffef3e3c573645af69aa6f012e5ea450371"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-64.png",
+			"bytes": 6033,
+			"sha256": "17a4c83f9175303d191b9e06b65de22b20e28c4587194677d4773b9a2dc14758"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-64.png",
+			"bytes": 8095,
+			"sha256": "69893c854537a389e4caf3d58db10607d2bbe713deed2b2d98cf7e9a8626921f"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-64.png",
+			"bytes": 8890,
+			"sha256": "91e0f38409cfcabccfe6eeed31e1a7a769b0235531c18da75c7fb996f9a36f1a"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-48.png",
+			"bytes": 3822,
+			"sha256": "8ac2b4fd13a8623febeabcd95916248f3c6772b1282b2c5c80df6774594523bf"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-48.png",
+			"bytes": 5242,
+			"sha256": "0656ceddd4b694beeb705f5144a55aed7b714918f288fa9644ed4ca8cdb42e63"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-48.png",
+			"bytes": 5765,
+			"sha256": "21b055e55c7df74321e1339eb422c31b54312bd96ad4d530e992f8cb2b86879d"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-32.png",
+			"bytes": 2036,
+			"sha256": "a09ed2a2e60a607c0aee98c173629b541e41bc902685b6dbfa63906874ce566e"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-32.png",
+			"bytes": 2778,
+			"sha256": "ef283e25585200a6402b603a0a41aa3753f768a46222cc16774a22652cbc727b"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-32.png",
+			"bytes": 3028,
+			"sha256": "399fea4251d48edf64915df61ae06b5a1db96f608cfb59219c3d383b42d3041f"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-24.png",
+			"bytes": 1322,
+			"sha256": "e6d8c45e41dd5d1b6018719af76b9f7ba2c149cce4dae054d415a6575a54bee5"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-24.png",
+			"bytes": 1807,
+			"sha256": "6c2128775b40dcd6f13844190a0617849bcf0d82f516aeab61ab14ccd778e890"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-24.png",
+			"bytes": 1947,
+			"sha256": "a844d218d80f8f0ae58f9c4f70efcb3fe2293b997fb982155ff98f0de0cd9f98"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-transparent-16.png",
+			"bytes": 719,
+			"sha256": "a949581d84749c14084805800f4c9499f3107e72ab733a5e62a74475002e9c21"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-icon-16.png",
+			"bytes": 943,
+			"sha256": "e562a949864f9b8d753312c48e7fbe6b5d0bad9cdca14ba06dd4e59e239dca78"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-rounded-16.png",
+			"bytes": 989,
+			"sha256": "bec674ff2d5d0aee9fc0a8094bdfe7e465e589c6b851191ac7a9b8a3f22af564"
+		},
+		{
+			"path": "exports/hermes-gateway-herdr-white-2048.png",
+			"bytes": 4060978,
+			"sha256": "ed6dc92a850094c3fd681c99b70a182904a11d56cdaf602ee760021d15ce7352"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1020122,
+			"sha256": "de7b6a19f14f1f29463425200a11bfab94080a74440923b5c90251940a5dbd4d"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1015082,
+			"sha256": "eefa81b8428f2f30303e1509be526d94b7bb70868dae681e8f863a1e4e20fc98"
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"project": "coffee",
+	"study": "2026-09-11-01",
+	"finishing": "01",
+	"nativeSource": {
+		"path": "raw/generated.png",
+		"sha256": "b195d997f71efda0ce9a232b952adb767e45716bdb33d6c29fb1bb331503d8c9",
+		"width": 2048,
+		"height": 2048
+	},
+	"artworkSamples": [
+		{
+			"label": "Peach ceramic",
+			"x": 880,
+			"y": 970,
+			"rgb": [198, 134, 100],
+			"hex": "#c68664",
+			"alpha": 255
+		},
+		{
+			"label": "Cream rim",
+			"x": 1100,
+			"y": 305,
+			"rgb": [234, 208, 182],
+			"hex": "#ead0b6",
+			"alpha": 255
+		},
+		{
+			"label": "Milk leaf",
+			"x": 1000,
+			"y": 470,
+			"rgb": [239, 229, 215],
+			"hex": "#efe5d7",
+			"alpha": 255
+		},
+		{
+			"label": "Espresso crema",
+			"x": 760,
+			"y": 530,
+			"rgb": [177, 99, 40],
+			"hex": "#b16328",
+			"alpha": 255
+		},
+		{
+			"label": "Brass spoon",
+			"x": 1120,
+			"y": 1430,
+			"rgb": [174, 130, 85],
+			"hex": "#ae8255",
+			"alpha": 255
+		}
+	],
+	"presentation": {
+		"status": "adopted locally under owner-authorized finishing",
+		"recipe": "presentation.json",
+		"colors": {
+			"base": "#ecdeda",
+			"light": "#faf1eb",
+			"shade": "#ddc5c2",
+			"motif": "#b88179",
+			"motifOpacity": 0.28,
+			"highlightOpacity": 0.4,
+			"ribbonOpacity": 0.16
+		}
+	},
+	"applicationTheme": {
+		"revision": "a6f179b1f530b1511e276eae6d3989a43c08a833",
+		"path": "src/styles.css",
+		"primary": "#c7d9a9",
+		"background": "#f8f6f0",
+		"ink": "#36352f",
+		"pink": "#f2d5d9",
+		"illustration": "#d9c9f0",
+		"note": "Existing application tokens, separate from the new artwork and its designed presentation."
+	}
+}

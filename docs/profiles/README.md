@@ -75,5 +75,5 @@
 | [🪴 Fundly](68-fundly.md) | Refined preview | #e95d2b | #e85d2a |
 | [🌸 DreamRO](69-dreamro.md) | Refined preview | #a98c57 | #f4f1e5 |
 | [🐱 Meowth](70-meowth.md) | Refined preview | #3c83f6 | #eeeff2 |
-| [☕ Coffee](73-coffee.md) | Original asset | #c7d9a9 | #f8f6f0 |
-| [🚪 Hermes Gateway for Herdr](74-hermes-gateway-herdr.md) | Profile emoji | #855032 | transparent |
+| [☕ Coffee](73-coffee.md) | Adopted family | #c7d9a9 | #f8f6f0 |
+| [🚪 Hermes Gateway for Herdr](74-hermes-gateway-herdr.md) | Adopted family | #2c3f52 | #dfe8ec |

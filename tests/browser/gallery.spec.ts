@@ -9,6 +9,25 @@ const firstVisible = ordered[0];
 const frogieIndex = ordered.findIndex((project) => project.id === "frogie");
 const afterFrogie = ordered[frogieIndex + 1];
 
+test("shows evidenced website colors separately from a tool's artwork palette", async ({
+	page,
+}) => {
+	await page.goto("/logos/coffee");
+	await expect(page.locator(".theme-palette")).toContainText("#c7d9a9");
+	await expect(page.locator(".theme-palette")).toContainText("#f8f6f0");
+	await expect(
+		page.getByRole("button", { name: "Copy color #c68664", exact: true }),
+	).toBeVisible();
+	await page.goto("/logos/hermes-gateway-herdr");
+	await expect(page.locator("#identity-title")).toContainText(
+		"Hermes Gateway for Herdr",
+	);
+	await expect(
+		page.getByRole("button", { name: "Copy color #2c3f52", exact: true }),
+	).toBeVisible();
+	await expect(page.locator(".theme-palette")).toHaveCount(0);
+});
+
 for (const id of projects
 	.filter((project) => project.family)
 	.map((project) => project.id)) {
