@@ -212,3 +212,9 @@ The four selected native 2048-square drawings came from five Image 2 calls. Ever
 One Image 2 request returned one native 2048-square drawing, accepted under the continuing named-batch waiver without claiming owner review of the new bytes. The full tower has 219.5 px rounded-outline clearance. All master roles, ten export sizes, source-palette evidence, native samples and frozen finishing layers are preserved. [Static HTML](basalt/2026-09-08-01/review.html) and [the local Vite page](https://index.dev.hexly.ai/logos/basalt) compare it with the previously adopted dark tower. The new selection is `review`; source adoption and publication remain unchanged.
 
 The Meowth character redraw was paused by the owner after [two Azure attempts returned no image](meowth/2026-09-08-02/notes.md). The earlier silver-blue cat remains active; no alternate-provider request or replacement was made.
+
+## Coffee and Hermes Gateway intake — 2026-09-11
+
+Two new Tools entries have native 2048-square Image 2 outputs at the mandatory raw checkpoint. [Coffee](coffee/2026-09-11-01/brief.md) proposes a peach ceramic cup, saucer and brass spoon; [Hermes Gateway](hermes-gateway-herdr/2026-09-11-01/brief.md) proposes a brass frame, ajar blue door and a green status lens. Each study preserves the exact prompt, reference hashes, inspected source files, authorization and untouched response.
+
+Both `raw-review.json` records remain pending. The owner has been shown the original bytes; no acceptance, extraction, finishing or source adoption is claimed. The local catalogue uses Coffee's preserved bean-and-sparkle icon and the new profile's editorial Gateway emoji. See [the onboarding record](../../docs/14-new-tools-onboarding.md) for bilingual README commits, source-publication boundaries and intake validation.

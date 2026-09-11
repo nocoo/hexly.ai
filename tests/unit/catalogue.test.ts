@@ -27,11 +27,11 @@ const overview: ProjectOverview = {
 
 describe("the imported project catalogue", () => {
 	it("includes the listed projects with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(71);
+		expect(projects).toHaveLength(73);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(57);
+		).toHaveLength(58);
 	});
 	it("provides a verified goal and stack for every active project", () => {
 		expect(
@@ -72,7 +72,7 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(51);
+		expect(counts.all).toBe(53);
 		expect(counts.archive).toBe(20);
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);

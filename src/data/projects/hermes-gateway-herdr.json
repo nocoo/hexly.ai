@@ -1,0 +1,136 @@
+{
+	"id": "hermes-gateway-herdr",
+	"repo": "hermes-gateway-herdr",
+	"title": "Hermes Gateway for Herdr",
+	"emoji": "🚪",
+	"description": {
+		"en": "Dedicated Hermes Gateway supervision inside a real Herdr pane",
+		"zh": "在真实 Herdr pane 内监督专用 Hermes Gateway，离线核心已实现"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/hermes-gateway-herdr",
+	"subject": "Editorial door emoji from the new GitHub profile entry; no independent source logo at intake",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "emoji",
+		"original": "/logos/emoji/hermes-gateway-herdr.png",
+		"sourcePath": "nocoo/nocoo README.md — new editorial project emoji",
+		"sourceUrl": "https://github.com/nocoo/nocoo/blob/4a0c394a79c8f4d24a11f8d9907d5c797e6b7718/README.md",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 218458,
+		"sha256": "df84f29fc92535512e00cef39272d782a7b9a7f588f104fb85d5383720e6e3a5",
+		"thumbnail": "/logos/display/hermes-gateway-herdr-160.webp",
+		"display": "/logos/display/hermes-gateway-herdr-1024.webp"
+	},
+	"theme": {},
+	"colors": {
+		"primary": "#855032",
+		"background": "transparent",
+		"ink": "#643a23",
+		"palette": [
+			{
+				"color": "#855032",
+				"role": "primary",
+				"source": "Native Apple Color Emoji door rendered by artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/render-previous.swift; editorial profile identity, not a website theme; sRGB pixel (512, 512)"
+			},
+			{
+				"color": "transparent",
+				"role": "background",
+				"source": "Native Apple Color Emoji door rendered by artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/render-previous.swift; editorial profile identity, not a website theme; transparent canvas"
+			},
+			{
+				"color": "#9c5e3b",
+				"role": "accent",
+				"source": "Native Apple Color Emoji door rendered by artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/render-previous.swift; editorial profile identity, not a website theme; sRGB pixel (365, 500)"
+			},
+			{
+				"color": "#643a23",
+				"role": "accent",
+				"source": "Native Apple Color Emoji door rendered by artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/render-previous.swift; editorial profile identity, not a website theme; sRGB pixel (674, 540)"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+		"profileSection": "Recent Projects",
+		"description": "Dedicated Hermes Gateway supervision inside a real Herdr pane",
+		"repositoryRevision": "3cdecbf420e51232fe6e4ac790a8f51d42fe6e71"
+	},
+	"overview": {
+		"goal": {
+			"en": "Keep one dedicated Hermes Gateway under explicit supervision inside its owning Herdr pane. The offline core implements lifecycle control, identity checks, duplicate prevention and JSON diagnostics; real Herdr/Hermes integration remains unverified.",
+			"zh": "让一个专用 Hermes Gateway 在所属 Herdr pane 内接受明确监督。离线核心已实现生命周期控制、身份核验、实例去重与 JSON 诊断，真实 Herdr/Hermes 集成仍待验证。"
+		},
+		"techStack": [
+			{
+				"name": "Python",
+				"role": {
+					"en": "Controller, pane supervisor and CLI",
+					"zh": "Controller、pane supervisor 与命令行"
+				}
+			},
+			{
+				"name": "Unix sockets / JSONL",
+				"role": {
+					"en": "Bounded Herdr and Hermes control exchanges",
+					"zh": "有时限的 Herdr 与 Hermes 控制通信"
+				}
+			},
+			{
+				"name": "flock / atomic JSON",
+				"role": {
+					"en": "Singleton locks, persistent intent and request deduplication",
+					"zh": "单例锁、持久意图与请求去重"
+				}
+			},
+			{
+				"name": "psutil / PyYAML",
+				"role": {
+					"en": "Process identity and Profile configuration checks",
+					"zh": "进程身份与专用 Profile 配置预检"
+				}
+			},
+			{
+				"name": "Herdr plugin TOML",
+				"role": {
+					"en": "Development hooks, actions and pane registration",
+					"zh": "开发用 hooks、actions 与 pane 注册"
+				}
+			},
+			{
+				"name": "unittest",
+				"role": {
+					"en": "Isolated fake-process and RPC tests",
+					"zh": "隔离的假进程与 RPC 测试"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-11",
+			"revision": "1cc8ac27ea9aecb6263d99a9cd26ae859168200a",
+			"snapshot": {
+				"path": "docs/sources/hermes-gateway-herdr-2026-09-11.json",
+				"sha256": "9685cbeb3875707831ab3032f82dd6cfab380e06d5ccb929be20c5f5edcaf6ee"
+			},
+			"sources": [
+				"README.md",
+				"docs/README.en.md",
+				"requirements.txt",
+				"herdr-plugin.toml",
+				"src/hermes_gateway_herdr/config.py",
+				"src/hermes_gateway_herdr/cli.py",
+				"src/hermes_gateway_herdr/controller.py",
+				"src/hermes_gateway_herdr/supervisor.py",
+				"src/hermes_gateway_herdr/rpc.py",
+				"tests/run.py",
+				"examples/README.md",
+				"docs/12-离线实现与验证.md"
+			]
+		}
+	}
+}
