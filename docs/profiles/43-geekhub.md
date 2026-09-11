@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/geekhub](https://github.com/nocoo/geekhub)
-- Website: [https://geekhub.vercel.app](https://geekhub.vercel.app)
-- Website evidence: GitHub repository homepage
+- Website: [https://geekhub.hexly.ai](https://geekhub.hexly.ai)
+- Website evidence: GitHub repository homepage; README.md and wrangler.jsonc at 7126e9a368a1b70336ccb508f28a8465ce3bf165
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A self-hosted RSS reader with AI summaries and translation.
