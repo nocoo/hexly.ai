@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.9.0] - 2026-09-12
+
+### Features
+
+- redesign Snail with generated animal brand assets ([a3e2573](https://github.com/nocoo/hexly.ai/commit/a3e257311fec177cf2e2fd61bdb69dd13b68d408))
+
 ## [0.8.0] - 2026-09-12
 
 ### Features
