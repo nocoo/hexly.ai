@@ -2,6 +2,7 @@ import { type CSSProperties, useState } from "react";
 import { categoryLabels, copy } from "../data/copy";
 import { destination } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
+import { BrandKit } from "./BrandKit";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { LogoArchive } from "./LogoArchive";
@@ -40,95 +41,101 @@ export function LogoReview({
 
 	return (
 		<div className="logo-review" data-presentation={view}>
-			<section aria-label={t.artwork}>
-				<div className="comparison-toolbar">
-					<p>
-						{family?.method === "retained-original"
-							? t.retainedComparison
-							: family?.method === "reference-adaptation"
-								? t.adaptedComparison
-								: family?.series === "material"
-									? t.materialComparison
-									: family
-										? t.comparisonDescription
-										: t.artwork}
-					</p>
-					<fieldset className="view-switch" aria-label={t.presentation}>
-						{(["icon", "transparent", "white"] as const).map((value) => (
-							<button
-								type="button"
-								key={value}
-								aria-pressed={view === value}
-								onClick={() => setView(value)}
-							>
-								{value === "white" ? t.pureWhite : t[value]}
-							</button>
-						))}
-					</fieldset>
-				</div>
-				<div className={`comparison-grid ${family ? "" : "comparison-single"}`}>
-					{family && (
-						<figure className="previous-artwork">
+			{project.brandKit ? (
+				<BrandKit project={project} kit={project.brandKit} locale={locale} />
+			) : (
+				<section aria-label={t.artwork}>
+					<div className="comparison-toolbar">
+						<p>
+							{family?.method === "retained-original"
+								? t.retainedComparison
+								: family?.method === "reference-adaptation"
+									? t.adaptedComparison
+									: family?.series === "material"
+										? t.materialComparison
+										: family
+											? t.comparisonDescription
+											: t.artwork}
+						</p>
+						<fieldset className="view-switch" aria-label={t.presentation}>
+							{(["icon", "transparent", "white"] as const).map((value) => (
+								<button
+									type="button"
+									key={value}
+									aria-pressed={view === value}
+									onClick={() => setView(value)}
+								>
+									{value === "white" ? t.pureWhite : t[value]}
+								</button>
+							))}
+						</fieldset>
+					</div>
+					<div
+						className={`comparison-grid ${family ? "" : "comparison-single"}`}
+					>
+						{family && (
+							<figure className="previous-artwork">
+								<div className="art-well">
+									<a
+										className="review-tile previous-tile"
+										style={tileStyle}
+										href={family.previous.original}
+										target="_blank"
+										rel="noreferrer"
+										aria-label={`${t.openOriginal}: ${t.previousArtwork}`}
+									>
+										<img
+											src={`${family.root}/previous-1024.webp`}
+											alt={`${project.title} — ${t.previousArtwork}`}
+											width={1024}
+											height={1024}
+										/>
+									</a>
+								</div>
+								<figcaption>
+									<strong>{t.previousArtwork}</strong>
+									<a
+										href={family.previous.sourceUrl}
+										target="_blank"
+										rel="noreferrer"
+									>
+										{t.previousSource} ↗
+									</a>
+								</figcaption>
+							</figure>
+						)}
+						<figure className="current-artwork">
 							<div className="art-well">
 								<a
-									className="review-tile previous-tile"
+									className={`review-tile ${family ? "family-tile" : "baseline-tile"}`}
 									style={tileStyle}
-									href={family.previous.original}
+									href={currentDownload}
 									target="_blank"
 									rel="noreferrer"
-									aria-label={`${t.openOriginal}: ${t.previousArtwork}`}
+									aria-label={t.openOriginal}
 								>
 									<img
-										src={`${family.root}/previous-1024.webp`}
-										alt={`${project.title} — ${t.previousArtwork}`}
+										className="artwork-image"
+										src={currentImage}
 										width={1024}
 										height={1024}
+										alt={`${project.title} — ${family?.foreground.subject?.[locale] ?? project.subject}`}
+										fetchPriority="high"
 									/>
 								</a>
 							</div>
 							<figcaption>
-								<strong>{t.previousArtwork}</strong>
-								<a
-									href={family.previous.sourceUrl}
-									target="_blank"
-									rel="noreferrer"
-								>
-									{t.previousSource} ↗
-								</a>
+								<strong>{family ? t.refinedArtwork : t.currentArtwork}</strong>
+								<span>
+									{family
+										? `${family.status === "adopted" ? t.approved : t.localReview} · ${family.updated}`
+										: t.preserved}
+								</span>
 							</figcaption>
 						</figure>
-					)}
-					<figure className="current-artwork">
-						<div className="art-well">
-							<a
-								className={`review-tile ${family ? "family-tile" : "baseline-tile"}`}
-								style={tileStyle}
-								href={currentDownload}
-								target="_blank"
-								rel="noreferrer"
-								aria-label={t.openOriginal}
-							>
-								<img
-									className="artwork-image"
-									src={currentImage}
-									width={1024}
-									height={1024}
-									alt={`${project.title} — ${family?.foreground.subject?.[locale] ?? project.subject}`}
-									fetchPriority="high"
-								/>
-							</a>
-						</div>
-						<figcaption>
-							<strong>{family ? t.refinedArtwork : t.currentArtwork}</strong>
-							<span>
-								{family
-									? `${family.status === "adopted" ? t.approved : t.localReview} · ${family.updated}`
-									: t.preserved}
-							</span>
-						</figcaption>
-					</figure>
-				</div>
-			</section>
+					</div>
+				</section>
+			)}
 
 			{family && (
 				<section className="direction-grid" aria-label={t.artDirection}>
@@ -240,13 +247,21 @@ export function LogoReview({
 						<figure key={surface}>
 							<a
 								className={`alpha-well alpha-${surface}`}
-								href={foreground.original}
+								href={
+									project.brandKit
+										? `${project.brandKit.root}/mark-${surface}.svg`
+										: foreground.original
+								}
 								target="_blank"
 								rel="noreferrer"
 								aria-label={`${t.openOriginal}: ${surface === "light" ? t.white : t.black}`}
 							>
 								<img
-									src={foreground.display}
+									src={
+										project.brandKit
+											? `${project.brandKit.root}/mark-${surface}.svg`
+											: foreground.display
+									}
 									alt={`${project.title} — ${surface === "light" ? t.lightSetting : t.darkSetting}`}
 									loading="lazy"
 									width={1024}

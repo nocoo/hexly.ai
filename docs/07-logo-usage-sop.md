@@ -16,6 +16,12 @@ Root `logo.png` remains the canonical transparent master. Keep presentation mast
 
 All variants retain the approved subject placement, proportions, colors, and safe margins. Do not stretch a neck, enlarge a face, trim an accessory, invert colors, or add a new crop to fit a consumer. Intentional neck/shoulder entry remains part of the approved drawing. Light and dark surfaces use the same foreground.
 
+Native vector kits follow the same surface roles. Use the supplied explicit
+light/dark variants for an application theme and the adaptive transparent SVG
+for browser tabs. Preserve wordmark outlines and clear space. A public Hexly
+kit is an asset handoff, not proof of adoption in its source repository. See
+[Snail's versioned SVG/PNG/ICO guide](18-snail-brand.md).
+
 ## Adoption procedure
 
 1. **Identify the exact selected pass and scope.** Read the raw-image or retained-source decision, presentation selection, and current owner instructions. Record the study, finishing pass, hashes, and whether source adoption and publication are authorized. Finishing an accepted image needs no new generation or approval round. A new model output follows the raw checkpoint.

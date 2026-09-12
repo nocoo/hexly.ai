@@ -1,0 +1,191 @@
+{
+	"id": "snail",
+	"repo": "snail",
+	"title": "Snail",
+	"emoji": "🐌",
+	"description": {
+		"en": "A private library to collect, organize and play videos",
+		"zh": "私人视频收藏、分类与播放库"
+	},
+	"category": "everyday",
+	"website": "https://snail.hexly.ai",
+	"websiteSource": "docs/sources/snail-2026-09-12-handoff.md: owner and source-agent confirmed deployment target; product still in development at brand handoff",
+	"repository": "https://github.com/nocoo/snail",
+	"subject": "A coiled snail shell, a forward carrying line and one terracotta point",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/snail-v1-0-0.svg",
+		"thumbnail": "/logos/display/snail-160.webp",
+		"display": "/logos/display/snail-1024.webp",
+		"sourcePath": "artwork/brands/snail/v1.0.0/mark.svg",
+		"sourceUrl": "/brands/snail/v1.0.0/mark-light.svg",
+		"modified": false,
+		"width": 256,
+		"height": 256,
+		"bytes": 632,
+		"sha256": "bd936c17cf3d2c64c09150a7e4d7fd07206278505f781a8e4eb162fac2bdb00a"
+	},
+	"theme": {},
+	"colors": {
+		"primary": "#30372e",
+		"background": "#f0f0e9",
+		"ink": "#30372e",
+		"palette": [
+			{
+				"color": "#30372e",
+				"role": "primary",
+				"label": {
+					"en": "Hexly ink",
+					"zh": "Hexly 墨色"
+				},
+				"source": "Hexly src/styles/base.css at a55baf21a2f0842c0580098e54d4479e41847593; artwork/brands/snail/v1.0.0/tokens.json; proposed Snail brand tokens, not a claim of deployed UI adoption"
+			},
+			{
+				"color": "#f0f0e9",
+				"role": "background",
+				"label": {
+					"en": "Hexly paper",
+					"zh": "Hexly 纸色"
+				},
+				"source": "Hexly src/styles/base.css at a55baf21a2f0842c0580098e54d4479e41847593; artwork/brands/snail/v1.0.0/tokens.json; proposed Snail brand tokens, not a claim of deployed UI adoption"
+			},
+			{
+				"color": "#bf5c3c",
+				"role": "accent",
+				"label": {
+					"en": "Terracotta point",
+					"zh": "陶土红点"
+				},
+				"source": "Hexly src/styles/base.css at a55baf21a2f0842c0580098e54d4479e41847593; artwork/brands/snail/v1.0.0/tokens.json; proposed Snail brand tokens, not a claim of deployed UI adoption"
+			},
+			{
+				"color": "#1e2824",
+				"role": "accent",
+				"label": {
+					"en": "Night paper",
+					"zh": "夜间纸色"
+				},
+				"source": "Hexly src/styles/base.css at a55baf21a2f0842c0580098e54d4479e41847593; artwork/brands/snail/v1.0.0/tokens.json; proposed Snail brand tokens, not a claim of deployed UI adoption"
+			},
+			{
+				"color": "#e6e9dc",
+				"role": "accent",
+				"label": {
+					"en": "Night ink",
+					"zh": "夜间墨色"
+				},
+				"source": "Hexly src/styles/base.css at a55baf21a2f0842c0580098e54d4479e41847593; artwork/brands/snail/v1.0.0/tokens.json; proposed Snail brand tokens, not a claim of deployed UI adoption"
+			},
+			{
+				"color": "#e79670",
+				"role": "accent",
+				"label": {
+					"en": "Night terracotta",
+					"zh": "夜间陶土色"
+				},
+				"source": "Hexly src/styles/base.css at a55baf21a2f0842c0580098e54d4479e41847593; artwork/brands/snail/v1.0.0/tokens.json; proposed Snail brand tokens, not a claim of deployed UI adoption"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": null,
+		"profileSection": "Hexly-only commissioning; profile unchanged",
+		"description": "A private library to collect, organize and play videos",
+		"repositoryRevision": null
+	},
+	"overview": {
+		"goal": {
+			"en": "Build a private home for videos worth returning to: collect them, organize them into categories and tags, then browse and play them in one library. Snail is in development toward its first v0.1.0 release; the stack below is the source team’s confirmed implementation plan. This page publishes its Hexly brand identity independently of the product release.",
+			"zh": "为值得回看的视频建立私人资料库：收藏、分类、打标签，再集中浏览与播放。Snail 正在开发首个 v0.1.0 版本，下方是源团队确认的实现技术栈。本页先独立发布 Hexly 品牌档案，产品发布由 Snail 团队完成。"
+		},
+		"techStack": [
+			{
+				"name": "Vite · React 19 · TypeScript 7",
+				"role": {
+					"en": "Planned responsive library interface",
+					"zh": "计划用于响应式资料库界面"
+				}
+			},
+			{
+				"name": "Basalt 2.1.7 · Biome",
+				"role": {
+					"en": "Confirmed shared components and tooling",
+					"zh": "已确认的共享控件与工程工具"
+				}
+			},
+			{
+				"name": "Cloudflare Worker · Access",
+				"role": {
+					"en": "Planned assets, API and private access",
+					"zh": "计划用于静态资源、API 与私人访问控制"
+				}
+			},
+			{
+				"name": "D1 · Private R2",
+				"role": {
+					"en": "Planned catalogue metadata and media storage",
+					"zh": "计划用于分类元数据与私有媒体存储"
+				}
+			},
+			{
+				"name": "OpenCLI Connector",
+				"role": {
+					"en": "Planned authorized local import bridge",
+					"zh": "计划用于经授权的本机导入桥"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-12",
+			"revision": null,
+			"snapshot": {
+				"path": "docs/sources/snail-2026-09-12.json",
+				"sha256": "8031caed240887e1b885daf915a1eca4f2551eedc25f93893e82a9da1399d438"
+			},
+			"sources": ["docs/sources/snail-2026-09-12-handoff.md"]
+		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/snail/v1.0.0",
+		"sourceAdoptionRevision": null,
+		"description": {
+			"en": "A collection kept close. A film found again. A quiet coiled shell, a carrying line, and one warm point — drawn in the Hexly family language.",
+			"zh": "把收藏留在身边，让好片随时重逢。回旋的壳、向前的底线和一枚温暖红点，共同构成 Hexly 家族里的 Snail。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "One point of focus",
+					"zh": "只留一个焦点"
+				},
+				"description": {
+					"en": "The coil holds the collection; the terracotta point looks ahead. Keep both strokes and the point together. Use ink for small text and the real Hexly light/dark palettes.",
+					"zh": "回旋收拢收藏，陶土红点望向前方。保留完整线条与红点，正文用墨色，明暗版本沿用真实 Hexly 色板。"
+				}
+			},
+			{
+				"title": {
+					"en": "Room around the mark",
+					"zh": "给标志留出呼吸"
+				},
+				"description": {
+					"en": "Keep one point diameter clear around the artwork: 24 units in a 256-unit canvas. Preserve its viewBox, proportions and outlined Space Grotesk wordmark.",
+					"zh": "图形四周至少留一枚红点直径：256 单位画布中的 24 单位。保留 viewBox、原始比例和转曲后的 Space Grotesk 字标。"
+				}
+			},
+			{
+				"title": {
+					"en": "Small, still Snail",
+					"zh": "缩小，仍是 Snail"
+				},
+				"description": {
+					"en": "Mark 16px minimum; 24px preferred in navigation. Wordmark ≥72px wide; lockup ≥160px. Tabs use transparent SVG/ICO, app launchers use the square presentation.",
+					"zh": "标志最小 16px，导航推荐 24px；字标宽度至少 72px，组合至少 160px。页签用透明 SVG/ICO，应用启动图标用方形展示版。"
+				}
+			}
+		]
+	}
+}

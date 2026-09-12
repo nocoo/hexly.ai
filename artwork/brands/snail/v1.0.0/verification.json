@@ -1,0 +1,49 @@
+{
+	"reviewedAt": "2026-09-12T13:39:26.432Z",
+	"reviewer": "Hexly integration agent",
+	"ownerReviewedExactBytes": false,
+	"method": "Original vector identity; no image-generation raw-review checkpoint",
+	"brandVersion": "1.0.0",
+	"basis": "Actual Hexly tokens/font/mark and the owner’s native SVG product-identity brief",
+	"nativeDeliveryFiles": 40,
+	"nativeDeliveryBytes": 258893,
+	"checks": {
+		"typecheck": "passed",
+		"build": "passed",
+		"lint": "passed",
+		"unit": {
+			"files": 19,
+			"tests": 240,
+			"coverage": {
+				"statements": 99.54,
+				"branches": 98.57,
+				"functions": 100,
+				"lines": 100
+			}
+		},
+		"http": 71,
+		"browser": 218,
+		"ico": "All 6 PNG-backed entries decoded with alpha",
+		"visual": "Desktop/mobile, light/dark, native wordmark, clear space and favicon inspected; no horizontal overflow or axe violations",
+		"existingAssets": "All 59 existing public family archives and 100 finishing passes verified unchanged",
+		"sourceHealth": {
+			"endpoint": "https://snail.hexly.ai/api/live",
+			"checkedAt": "2026-09-12T13:35:29.929Z",
+			"status": "down",
+			"error": "network",
+			"interpretation": "Source application not deployed at this observation; no monitor history was seeded"
+		}
+	},
+	"evidence": [
+		{
+			"path": "artwork/brands/snail/v1.0.0/contact-sheet.webp",
+			"bytes": 91052,
+			"sha256": "700e245035d3c34e4b5147700e3d27b0df833b0793aac1baa1d6f704e5bca36b"
+		},
+		{
+			"path": "artwork/brands/snail/v1.0.0/visual-review.json",
+			"bytes": 478,
+			"sha256": "cbb741c75383c9602178105c993b0019c861fa4180909cf383e0c432a60ab9c0"
+		}
+	]
+}

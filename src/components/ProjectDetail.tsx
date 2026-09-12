@@ -293,7 +293,9 @@ export function ProjectDetail({
 												: t.emoji}
 								</span>
 								<span className="mono">
-									{foreground?.width} × {foreground?.height}
+									{project.brandKit
+										? `SVG · v${project.brandKit.version}`
+										: `${foreground?.width} × ${foreground?.height}`}
 									{project.family && ` · ${project.family.updated}`}
 								</span>
 							</div>

@@ -120,6 +120,16 @@ export interface Project {
 		sha256: string;
 	};
 	family?: LogoFamily;
+	brandKit?: {
+		version: string;
+		root: string;
+		sourceAdoptionRevision: string | null;
+		description: Record<Locale, string>;
+		guidelines: {
+			title: Record<Locale, string>;
+			description: Record<Locale, string>;
+		}[];
+	};
 	theme: Partial<
 		Record<"primary" | "background" | "ink", { value: string; source: string }>
 	>;
@@ -130,7 +140,7 @@ export interface Project {
 		palette: PaletteColor[];
 	};
 	source: {
-		profileRevision: string;
+		profileRevision: string | null;
 		profileSection: string;
 		description: string;
 		repositoryRevision: string | null;
