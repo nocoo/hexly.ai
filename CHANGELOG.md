@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0] - 2026-09-12
+
+### Features
+
+- compose video templates and project detail pages ([9abbf69](https://github.com/nocoo/hexly.ai/commit/9abbf693107da3ac9f5c00356f0f3aaf2bfcf2a1))
+- publish versioned project recordings through R2 ([f2f6c04](https://github.com/nocoo/hexly.ai/commit/f2f6c04d5048bf69cc3e2fb8e798ef431ca91b3b))
+
 ## [0.6.0] - 2026-09-12
 
 ### Maintenance
