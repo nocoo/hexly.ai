@@ -18,6 +18,7 @@
 		"deploy:check": "wrangler deploy --env \"\" --dry-run",
 		"verify:production": "bun scripts/verify-deployment.ts",
 		"release": "bun scripts/release.ts",
+		"media:r2": "bun scripts/media-r2.ts",
 		"types": "mkdir -p .wrangler && wrangler types .wrangler/types.d.ts --env \"\" --strict-vars false",
 		"typecheck": "bun run types && tsc --noEmit && tsc --noEmit -p tsconfig.worker.json && bun run --cwd packages/video-kit typecheck",
 		"lint": "biome check --error-on-warnings .",

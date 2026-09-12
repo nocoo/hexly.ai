@@ -1,3 +1,4 @@
+import mediaStorage from "../data/media-storage.json" with { type: "json" };
 import projectOrder from "../data/project-order.json" with { type: "json" };
 import type { Category, Locale, Project } from "./project";
 
@@ -134,8 +135,7 @@ function mediaUrl(value: unknown): boolean {
 		return (
 			(value.startsWith("/")
 				? !value.startsWith("//") && url.origin === "https://hexly.ai"
-				: value.startsWith("https://") &&
-					url.origin === "https://media.hexly.ai") &&
+				: value.startsWith("https://") && url.origin === mediaStorage.origin) &&
 			!url.username &&
 			!url.password &&
 			!url.hash
@@ -174,6 +174,8 @@ export function catalogueProblems(projects: Project[]): string[] {
 								!hasText(video.language) ||
 								!hasText(video.version) ||
 								!hasText(video.source) ||
+								(video.captionsBurnedIn !== undefined &&
+									typeof video.captionsBurnedIn !== "boolean") ||
 								!/^[a-f0-9]{64}$/.test(video.sha256) ||
 								(video.captions !== undefined &&
 									(!Array.isArray(video.captions) ||

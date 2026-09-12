@@ -1,13 +1,32 @@
 import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
+import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
 import { filterProjects } from "../../src/model/catalogue";
 
-const projects = readProjects();
+// Brand checks stay local; recorded media is exercised in project-media.spec.ts.
+const projects = readProjects().map((project) => ({
+	...project,
+	media: undefined,
+}));
 const ordered = filterProjects(projects, "", "all");
 const firstVisible = ordered[0];
 const frogieIndex = ordered.findIndex((project) => project.id === "frogie");
 const afterFrogie = ordered[frogieIndex + 1];
+
+test.beforeEach(async ({ page }) => {
+	// The initial crawler snapshot can request its poster before React mounts.
+	await page.route(`${storage.origin}/**`, (route) =>
+		route.fulfill({
+			contentType: "image/svg+xml",
+			headers: { "Access-Control-Allow-Origin": "*" },
+			body: '<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"/>',
+		}),
+	);
+	await page.route("**/data/projects.json", (route) =>
+		route.fulfill({ json: projects }),
+	);
+});
 
 test("shows evidenced website colors separately from a tool's artwork palette", async ({
 	page,

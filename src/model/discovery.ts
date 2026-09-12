@@ -557,7 +557,7 @@ function snapshotHtml(
 		project?.media?.videos
 			?.map(
 				(video) =>
-					`<figure id="video-${escapeHtml(video.id)}"><a href="${escapeHtml(video.src)}"><img src="${escapeHtml(video.poster)}" alt="${escapeHtml(video.title.en)}" width="960" height="540" loading="lazy" />${escapeHtml(video.title.en)}</a></figure>`,
+					`<figure id="video-${escapeHtml(video.id)}"><a href="${escapeHtml(video.src)}"><img crossorigin="anonymous" src="${escapeHtml(video.poster)}" alt="${escapeHtml(video.title.en)}" width="960" height="540" loading="lazy" />${escapeHtml(video.title.en)}</a></figure>`,
 			)
 			.join("") ?? "";
 	const screenshotsHtml =

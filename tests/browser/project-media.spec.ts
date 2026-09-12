@@ -5,7 +5,11 @@ import { readProjects } from "../../src/data/read-projects";
 import type { Project } from "../../src/model/project";
 import { screenshotFixture, videoFixture } from "../fixtures/project-media";
 
-const projects = readProjects();
+// Exercise media locally; real catalogue recordings must not become CI downloads.
+const projects = readProjects().map((project) => ({
+	...project,
+	media: undefined,
+}));
 const poster =
 	'<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540"><rect width="960" height="540" fill="#f0f0e9"/><rect x="120" y="80" width="720" height="360" rx="18" fill="#fbfbf8" stroke="#d5d8ca"/><circle cx="165" cy="125" r="8" fill="#bf5c3c"/><text x="200" y="134" font-size="28" fill="#30382f">Local playback fixture</text><path d="M165 180H780M165 220H650" stroke="#d5d8ca" stroke-width="12"/></svg>';
 
@@ -21,7 +25,7 @@ async function mockMedia(page: Page, media: Project["media"], clip?: Buffer) {
 	await page.route("**/test-media/poster.svg", (route) =>
 		route.fulfill({ contentType: "image/svg+xml", body: poster }),
 	);
-	await page.route("https://media.hexly.ai/test/**", (route) => {
+	await page.route("https://h.no.mt/test/**", (route) => {
 		requests.push(route.request().url());
 		return route.request().url().endsWith(".vtt")
 			? route.fulfill({
@@ -50,6 +54,7 @@ async function mockMedia(page: Page, media: Project["media"], clip?: Buffer) {
 test("projects without media have a complete detail and no empty video sections", async ({
 	page,
 }) => {
+	await mockMedia(page, undefined);
 	await page.goto("/projects/frogie");
 	await expect(page.locator("#identity-title")).toContainText("Frogie");
 	await expect(page.locator(".project-media")).toHaveCount(0);
@@ -153,6 +158,18 @@ test("clicks a poster to fetch and play real media with captions and native cont
 	await page
 		.locator(".project-media")
 		.screenshot({ path: testInfo.outputPath("native-video.png") });
+	await page.unroute("**/data/projects.json");
+	await mockMedia(
+		page,
+		{
+			videos: [{ ...videoFixture, captionsBurnedIn: true }],
+		},
+		clip,
+	);
+	await page.reload();
+	await play.click();
+	await expect(video.locator("track")).toHaveCount(2);
+	await expect(video.locator("track[default]")).toHaveCount(0);
 });
 
 test("filters recorded projects, selects multiple videos and restores hash history", async ({
@@ -162,7 +179,7 @@ test("filters recorded projects, selects multiple videos and restores hash histo
 		...videoFixture,
 		id: "walkthrough",
 		title: { en: "Walkthrough sample", zh: "操作示例" },
-		src: "https://media.hexly.ai/test/walkthrough.webm",
+		src: "https://h.no.mt/test/walkthrough.webm",
 	};
 	const requests = await mockMedia(page, {
 		videos: [videoFixture, second],

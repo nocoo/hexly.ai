@@ -20,5 +20,6 @@
 18. [Source snapshots](sources/README.md)
 19. [Video Kit: composable openings, content, endings and themes](16-video-kit.md)
 20. [Project detail, recorded media and canonical routes](17-project-media.md)
+21. [R2 media operations skill](../.agents/skills/hexly-r2-media/SKILL.md) and [publication receipts](media/)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

@@ -57,12 +57,11 @@ Local preview: `https://index.dev.hexly.ai/api/share/pew.json`.
 
 Keep the product's own `og:url`, canonical link, and `og:title` for that origin. Sharing `https://pew.md/` should unfurl Pew's URL with hexly's image, not rewrite the link to `/projects/pew`.
 
-The local route update changes project canonicals from `/logos/<id>` to
+The route update changes project canonicals from `/logos/<id>` to
 `/projects/<id>`. Old pages redirect to the detail's brand anchor. Existing
 `/api/share` and `/og` URLs and image bytes remain unchanged. The build updates
 sitemap, crawler snapshots and JSON-LD from the same source; `/logos` remains a
-secondary collection page and `/templates` describes reusable designs. These
-route changes are not yet published.
+secondary collection page and `/templates` describes reusable designs.
 
 Do not use `/logos/display/*-1024.webp` or family `icon-1024.webp` as `og:image`. Those are square identity marks, not 1200 × 630 cards.
 

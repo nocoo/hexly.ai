@@ -1,6 +1,6 @@
 # Hexly Video Kit
 
-Private, reusable React/Remotion compositions for the Hexly family. **2.0.0 is currently local and unpublished.** Consumers of the published 1.0.0 kit must keep their pinned checkout; this schema intentionally breaks with that version.
+Private, reusable React/Remotion compositions for the Hexly family. **Kit 2.0.0 ships with site v0.7.0.** Consumers of the published 1.0.0 kit must keep their pinned checkout until they explicitly migrate; this schema intentionally breaks with that version. Pin the site release's Git SHA when adopting the new kit; it is not an npm package release.
 
 One project supplies every design. Choose a cover, a content layout, an ending and a canvas theme independently. The website, Vite preview, Remotion composition and slide exporter all render the same source. There are **250 base combinations**, before individual scene overrides.
 
@@ -43,7 +43,7 @@ bun run video:dev            # http://127.0.0.1:7440, independent Vite preview
 bun run video:studio         # http://localhost:7441, Remotion compositions
 ```
 
-`/templates` has three component families. Each card shows the selected catalogue project through the actual composition. In a project preview, choose the opening/content/ending and theme. Changing a component seeks to that part. A theme change pauses playback and preserves the current frame; switching Video/Deck preserves the current scene. Previews start paused and respect the system reduced-motion preference. No MP4 is loaded, generated or uploaded by the website.
+`/templates` has three component families. Each card shows the selected catalogue project through the actual composition. In a project preview, choose the opening/content/ending and theme. Changing a component seeks to that part. A theme change pauses playback and preserves the current frame; switching Video/Deck preserves the current scene. Previews start paused and respect the system reduced-motion preference. Template previews do not load, generate or upload MP4 files. Finished project recordings are a separate, optional feature of `/projects/<id>`.
 
 The project, three base choices, theme and selected view are shareable URL parameters. PNG/JPEG/WebP screenshots (up to 8 MB) stay in the browser and are embedded in a downloaded setup. They are deliberately not placed in URLs or persisted across projects. The site adapter in `src/model/videos.ts` reads the catalogue once; there are no per-project/per-template configuration copies. Catalogue facts are snapshots, never a live health claim.
 

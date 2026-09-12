@@ -35,6 +35,7 @@ export interface ProjectVideo {
 	version: string;
 	sha256: string;
 	source: string;
+	captionsBurnedIn?: boolean;
 	captions?: { src: string; language: string; label: string }[];
 }
 

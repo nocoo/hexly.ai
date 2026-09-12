@@ -27,7 +27,7 @@ describe("optional project media", () => {
 			catalogueProblems([{ ...base, media: { videos: [], screenshots: [] } }]),
 		).toEqual([]);
 		const all = projects.map((project) =>
-			project.id === base.id ? withMedia : project,
+			project.id === base.id ? withMedia : { ...project, media: undefined },
 		);
 		expect(
 			filterProjects(all, "", "all", "curated", true).map((p) => p.id),
@@ -56,6 +56,7 @@ describe("optional project media", () => {
 		["missing version", { version: "" }],
 		["missing source", { source: "" }],
 		["invalid checksum", { sha256: "not-a-hash" }],
+		["invalid burned-in flag", { captionsBurnedIn: "yes" }],
 		["missing poster", { poster: "" }],
 		["invalid captions", { captions: {} }],
 		["empty caption", { captions: [null] }],
@@ -86,12 +87,14 @@ describe("optional project media", () => {
 	});
 	it.each([
 		"javascript:alert(1)",
-		"http://media.hexly.ai/movie.mp4",
+		"http://h.no.mt/movie.mp4",
 		"https://unapproved.example/movie.mp4",
-		"//media.hexly.ai/movie.mp4",
-		"https://media.hexly.ai@evil.example/movie.mp4",
-		"https://user:pass@media.hexly.ai/movie.mp4",
-		"https://media.hexly.ai/movie.mp4#fragment",
+		"https://media.hexly.ai/movie.mp4",
+		"https://h.no.mt.evil.example/movie.mp4",
+		"//h.no.mt/movie.mp4",
+		"https://h.no.mt@evil.example/movie.mp4",
+		"https://user:pass@h.no.mt/movie.mp4",
+		"https://h.no.mt/movie.mp4#fragment",
 		"/\\evil.example/movie.mp4",
 		"/has space.mp4",
 		"https://[invalid",
@@ -106,7 +109,7 @@ describe("optional project media", () => {
 	it("accepts safe local files and the media origin, including query strings", () => {
 		for (const src of [
 			"/recordings/clip.mp4",
-			"https://media.hexly.ai/projects/clip.mp4?v=1",
+			"https://h.no.mt/projects/clip.mp4?v=1",
 		]) {
 			expect(
 				catalogueProblems([
