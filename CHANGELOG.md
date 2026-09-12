@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.10.0] - 2026-09-12
+
+### Features
+
+- complete 54 project brand archives with preserved original identities ([77f5360](https://github.com/nocoo/hexly.ai/commit/77f53604cfb10fc1213afbbaf4cbcbb04453139b))
+
 ## [0.9.0] - 2026-09-12
 
 ### Features
