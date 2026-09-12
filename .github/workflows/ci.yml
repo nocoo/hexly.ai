@@ -1,116 +1,40 @@
 name: Quality & Deploy
+
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
   quality:
-    uses: nocoo/base-ci/.github/workflows/bun-quality.yml@830346a575841cee2808abab6001d0bfa8980c1a
+    uses: nocoo/base-ci/.github/workflows/quality.yml@3d2e9e55fdd60aa756df454ded53ef6d06d6653f
     with:
-      bun-version: "1.4.0"
-      pre-command: bun run assets:check
-      test-command: bun run test:coverage
-      lint-command: bun run lint
-      typecheck-command: bun run typecheck && bun run check:isolation
-      enable-security: "true"
-      enable-l2: "true"
-      l2-command: bun run test:http && bun run deploy:check
+      runtime-version: "1.4.0"
+      node-version: "26.7.0"
+      install-policy: "project"
+      coverage-path: "coverage"
+      prepare-command: "bun run assets:check"
+      test-command: "bun run test:coverage"
+      lint-command: "bun run lint"
+      typecheck-command: "bun run typecheck && bun run check:isolation"
+      l2: true
+      l2-command: "bun run test:http && bun run deploy:check"
+
   browser:
     name: L3 Browser E2E
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - name: Checkout verified revision
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: ${{ github.sha }}
-      - name: Set up Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: "26.7.0"
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
-        with:
-          bun-version: "1.4.0"
-      - name: Install locked dependencies
-        run: bun install --frozen-lockfile
-      - name: Install Playwright browser
-        run: bunx playwright install --with-deps chromium
-      - name: Verify archived assets
-        run: bun run assets:check
-      - name: Run browser tests
-        env:
-          CI: "true"
-          WRANGLER_LOG_PATH: .wrangler/browser-ci.log
-          WRANGLER_LOG_SANITIZE: "true"
-        run: |
-          node --version
-          if bun run test:browser; then
-            exit 0
-          else
-            browser_exit_code=$?
-            if [ -f .wrangler/browser-ci.log ]; then
-              tail -n 300 .wrangler/browser-ci.log
-            fi
-            exit "$browser_exit_code"
-          fi
-      - name: Preserve browser failure evidence
-        if: failure()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-        with:
-          name: browser-failure-evidence
-          path: |
-            .test-results/browser/
-            .wrangler/browser-ci.log
-          include-hidden-files: true
-          retention-days: 7
-  deploy:
-    name: Deploy
-    needs: [quality, browser]
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    concurrency:
-      group: hexly-ai-production
-      cancel-in-progress: false
-    environment:
-      name: production
-      url: https://hexly.ai
-    steps:
-      - name: Checkout verified revision
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: ${{ github.sha }}
-      - name: Set up Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: "26.7.0"
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
-        with:
-          bun-version: "1.4.0"
-      - name: Install locked dependencies
-        run: bun install --frozen-lockfile
-      - name: Build production assets
-        run: bun run build && bun run deploy:check
-      - name: Reject a superseded revision
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          current_revision=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)
-          test "$current_revision" = "$GITHUB_SHA"
-      - name: Apply status database migrations
-        run: bunx wrangler d1 migrations apply STATUS_DB --env "" --remote
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Deploy Worker and custom domains
-        run: bunx wrangler deploy --env ""
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Verify production release
-        run: bun run verify:production
+    uses: nocoo/base-ci/.github/workflows/test-job.yml@3d2e9e55fdd60aa756df454ded53ef6d06d6653f
+    with:
+      runtime-version: "1.4.0"
+      node-version: "26.7.0"
+      install-policy: "project"
+      browser: "chromium"
+      timeout-minutes: 15
+      pre-command: "bun run assets:check"
+      command: "bun run test:browser"
+      env-json: '{"CI":"true","WRANGLER_LOG_PATH":".wrangler/browser-ci.log","WRANGLER_LOG_SANITIZE":"true"}'
+      artifact-name: browser-failure-evidence
+      artifact-path: ".test-results/browser/\n.wrangler/browser-ci.log"
