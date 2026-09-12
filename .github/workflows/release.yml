@@ -2,7 +2,7 @@ name: Release
 
 on:
   workflow_run:
-    workflows: ["Quality & Deploy"]
+    workflows: ["CI"]
     types: [completed]
     branches: [main]
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
     uses: nocoo/base-ci/.github/workflows/deploy-worker.yml@ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f
     with:
       expected-workflow-path: ".github/workflows/ci.yml"
-      expected-workflow-name: "Quality & Deploy"
+      expected-workflow-name: "CI"
       source-run-id: ${{ github.event_name == 'workflow_run' && format('{0}', github.event.workflow_run.id) || inputs.source-run-id }}
       allowed-source-events: "push,workflow_dispatch"
       runtime-version: "1.4.0"
@@ -38,8 +38,8 @@ jobs:
         bun run deploy:check
       wrangler-version: "4.129.0"
       d1-migrations: true
-      d1-command: "d1 migrations apply STATUS_DB --env \"\" --remote"
-      deploy-command: "deploy --env \"\""
+      d1-command: "d1 migrations apply STATUS_DB --env= --remote"
+      deploy-command: "deploy --env="
       environment: production
       concurrency-group: hexly-ai-production
       timeout-minutes: 15
