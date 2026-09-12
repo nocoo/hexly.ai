@@ -28,7 +28,7 @@
 ## 功能
 
 - **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
-- **模板** — 本地新版在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。模板预览与项目成片分开；当前路由和 v2 改动仅在本地，尚未发布。
+- **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。模板预览与项目成片分开。
 - **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
 - **Logo 图鉴** — `/logos` 是项目下的图片墙，点击进入项目详情的 `#brand`。保留新旧对照、图标/透明/白底视图、实际尺寸、场景、色板、生成提示词和原始文件下载。
 - **真实色板** — 展示项目的前景色、背景色与点缀色，点击复制颜色值。
@@ -38,7 +38,7 @@
 
 ## 安装
 
-直接访问 **[hexly.ai](https://hexly.ai)**，无需安装或登录。本次结构调整请在本地 [index.dev.hexly.ai](https://index.dev.hexly.ai) review。
+直接访问 **[hexly.ai](https://hexly.ai)**，无需安装或登录。开发预览使用本地 [index.dev.hexly.ai](https://index.dev.hexly.ai)。
 
 ## 命令一览
 
@@ -111,11 +111,11 @@ bun run dev
 开发脚本自动载入 7 天模拟记录，页面明确标注模拟数据；本地不会探测生产站点。
 存储和定时方案见[Status 实现说明](docs/11-status-monitoring.md)。
 
-Video Kit 使用站点的真实 Logo、字体与明暗色板。封面、正文、片尾独立组合，正文包含标题、章节、内容与 CTA，片尾沿用官方 Logo reveal。卡片与播放预览共用客户端画布，旧的示例成片和下载资源已从本地新版移除；最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
+Video Kit 使用站点的真实 Logo、字体与明暗色板。封面、正文、片尾独立组合，正文包含标题、章节、内容与 CTA，片尾沿用官方 Logo reveal。卡片与播放预览共用客户端画布，旧的示例成片和下载资源已移除；最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
 
 项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建为项目、图鉴、模板和状态生成 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap、JSON-LD 和 [`/api/share`](https://hexly.ai/api/share.json) 元数据；项目 canonical 为 `/projects/<id>`。旧 `/logos/<id>`、`/<id>` 与 `/videos/*` 链接有兼容跳转。分享接入见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建直接使用仓库内的资源，不依赖相邻项目或运行时 GitHub 请求。
 
-已有高清 Logo、截图和历史素材继续保留在 Git，由 Workers Static Assets 提供。后续成片通过同一项目 JSON 的可选 `media` 字段引用外部文件；`media.hexly.ai` 已纳入代码的 URL/CSP 边界，但本次没有创建 R2 资源，也未添加任何项目成片。字段、上传前准备与路由说明见 [项目媒体](docs/17-project-media.md)。
+已有高清 Logo、截图和历史素材继续保留在 Git，由 Workers Static Assets 提供。新增成片、封面与字幕存放在 R2 `hexlyai`，通过 `https://h.no.mt` 访问，按项目、视频、版本和文件校验值区分路径；同一项目 JSON 的可选 `media` 字段提供详情页入口。上传与 URL 获取使用 `bun run media:r2`，默认只生成计划，明确加 `--upload` 才上传并校验 CDN 文件。维护方式见[项目 R2 skill](.agents/skills/hexly-r2-media/SKILL.md)，字段与路由见[项目媒体](docs/17-project-media.md)。
 
 ## 测试
 

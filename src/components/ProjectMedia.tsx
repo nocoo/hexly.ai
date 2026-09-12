@@ -17,9 +17,11 @@ function VideoPlayer({
 	const [started, setStarted] = useState(false);
 	const [failed, setFailed] = useState(false);
 	const t = copy[locale];
-	const defaultCaption =
-		video.captions?.find((track) => track.language.split("-")[0] === locale) ??
-		video.captions?.[0];
+	const defaultCaption = video.captionsBurnedIn
+		? undefined
+		: (video.captions?.find(
+				(track) => track.language.split("-")[0] === locale,
+			) ?? video.captions?.[0]);
 	return (
 		<figure className="project-film" id={`video-${video.id}`}>
 			<div className="project-video-stage">
@@ -55,6 +57,7 @@ function VideoPlayer({
 						onClick={() => setStarted(true)}
 					>
 						<img
+							crossOrigin="anonymous"
 							src={video.poster}
 							alt=""
 							width={1920}
@@ -131,6 +134,7 @@ export function ProjectMedia({
 							aria-current={active?.id === video.id ? "true" : undefined}
 						>
 							<img
+								crossOrigin="anonymous"
 								src={video.poster}
 								alt=""
 								width={320}

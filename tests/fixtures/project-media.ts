@@ -4,7 +4,7 @@ import type { ProjectScreenshot, ProjectVideo } from "../../src/model/project";
 export const videoFixture: ProjectVideo = {
 	id: "introduction",
 	title: { en: "Playback sample", zh: "播放示例" },
-	src: "https://media.hexly.ai/test/introduction.webm",
+	src: "https://h.no.mt/test/introduction.webm",
 	poster: "/test-media/poster.svg",
 	durationSeconds: 3,
 	language: "en",
@@ -13,12 +13,12 @@ export const videoFixture: ProjectVideo = {
 	source: "Test-only canvas recording",
 	captions: [
 		{
-			src: "https://media.hexly.ai/test/en.vtt",
+			src: "https://h.no.mt/test/en.vtt",
 			language: "en",
 			label: "English",
 		},
 		{
-			src: "https://media.hexly.ai/test/zh.vtt",
+			src: "https://h.no.mt/test/zh.vtt",
 			language: "zh-CN",
 			label: "中文",
 		},

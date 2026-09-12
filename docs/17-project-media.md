@@ -1,8 +1,9 @@
 # 17 · Projects, templates and recorded media
 
-This change is local and unpublished. Existing tracked logos, large screenshots,
-historical artwork and source exports keep their bytes and paths in Git and
-Workers Static Assets. No R2 bucket, domain or project movie was created.
+Existing tracked logos, large screenshots, historical artwork and source exports
+keep their bytes and paths in Git and Workers Static Assets. New approved
+recordings use the owner's R2 bucket `hexlyai` and its public custom domain
+`https://h.no.mt`. Only metadata and versioned publication receipts enter Git.
 
 ## Navigation and canonical routes
 
@@ -54,22 +55,23 @@ the example hash, metadata and paths with verified values before adoption.
     "videos": [{
       "id": "introduction",
       "title": { "en": "Project introduction", "zh": "项目介绍" },
-      "src": "https://media.hexly.ai/projects/example/v1/introduction.mp4",
-      "poster": "https://media.hexly.ai/projects/example/v1/poster.webp",
+      "src": "https://h.no.mt/projects/example/videos/introduction/v1.0.0/film-0123456789ab.mp4",
+      "poster": "https://h.no.mt/projects/example/videos/introduction/v1.0.0/poster-0123456789ab.webp",
       "durationSeconds": 92,
       "language": "en",
       "version": "1.0.0",
       "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-      "source": "Consumer repository, production revision and licensed asset record",
+      "source": "docs/media/example/introduction/v1.0.0.json",
+      "captionsBurnedIn": false,
       "captions": [{
-        "src": "https://media.hexly.ai/projects/example/v1/en.vtt",
+        "src": "https://h.no.mt/projects/example/videos/introduction/v1.0.0/en-0123456789ab.vtt",
         "language": "en",
         "label": "English"
       }]
     }],
     "screenshots": [{
       "id": "workspace",
-      "src": "https://media.hexly.ai/projects/example/v1/workspace.webp",
+      "src": "/screenshots/example/workspace.webp",
       "alt": { "en": "The project workspace", "zh": "项目工作区" },
       "width": 1920,
       "height": 1080
@@ -80,39 +82,60 @@ the example hash, metadata and paths with verified values before adoption.
 
 Videos require a unique stable ID, bilingual title, file and poster URLs,
 duration, language, version, SHA-256 and a provenance reference. Caption tracks
-are optional but should accompany narrated or spoken content. Screenshots
+are optional but should accompany narrated or spoken content. Set
+`captionsBurnedIn: true` for a film whose picture already includes captions;
+its optional native tracks start off to avoid overlapping the existing text.
+Screenshots
 require a unique ID, bilingual alt text and intrinsic dimensions. Either list
 may be absent. Do not invent content to fill the UI.
 
 The browser requests only the poster before a click. Playback mounts a native
 `video` with controls, inline mobile playback, `preload="metadata"`, and caption
-tracks. It prefers captions in the selected site language. Failed playback has
+tracks. It prefers captions in the selected site language unless the picture
+already has burned-in captions. Failed playback has
 a direct-file fallback. There is no automatic playback on page entry and no
 server rendering or media proxy on the Hexly Worker.
 
-## Future R2 publication boundary
+Poster images in the crawler HTML, React view and video element all use
+`crossorigin="anonymous"`. Keeping their request modes consistent prevents the
+browser from reusing a non-CORS poster response when playback begins.
+
+## R2 publication boundary
 
 The code accepts safe same-origin paths and explicit HTTPS URLs on
-`media.hexly.ai`; CSP permits that same origin for images, video and subtitle
+`h.no.mt`; CSP permits that same origin for images, video and subtitle
 requests. Credentials, fragments, protocol-relative URLs and other origins are
-rejected. This is support for a future public R2 custom domain, **not a claim
-that the domain or bucket is configured**.
+rejected. [`src/data/media-storage.json`](../src/data/media-storage.json) is the
+bucket/origin source for validation and the upload command. The R2 custom
+domain serves files directly; the site Worker has no R2 binding or media proxy.
+
+Read the [project R2 skill](../.agents/skills/hexly-r2-media/SKILL.md) before
+maintenance. It records the owner's existing CORS policy, storage layout,
+permission boundary, versioning, verification and URL recovery. The seven-day
+lifecycle rule aborts unfinished multipart uploads only; published media do
+not expire. The D1 status retention policy is unrelated.
 
 When media publication is separately authorized:
 
 1. Prepare an H.264/AAC MP4 with `yuv420p` and `-movflags +faststart`, a small
    WebP poster and real WebVTT captions. Keep source recordings/production logs
    in the consumer's archive, outside this repository's deployable assets.
-2. Use immutable versioned or content-hashed object paths. Upload only approved
+2. Use `projects/<project>/videos/<video-id>/v<X.Y.Z>/<name>-<hash>.<ext>`.
+   `bun run media:r2 -- --project <project> --video <video-id> --version X.Y.Z
+   --file /path/to/file` prints a local plan with the key and public URL. Add
+   `--upload` when uploading is authorized. Upload only approved
    final media, retain the source/version/checksum, and do not overwrite an
    existing object's bytes.
-3. Attach the public R2 custom domain. Set correct `Content-Type`,
-   `Cache-Control: public, max-age=31536000, immutable`, and CORS permitting
-   `GET`/`HEAD` from `https://hexly.ai` and the intended local review origin.
-   Allow `Range`; expose `Accept-Ranges`, `Content-Range` and `Content-Length`.
+3. The existing custom domain and CORS policy are already configured by the
+   owner. The helper sets correct `Content-Type` and
+   `Cache-Control: public, max-age=31536000, immutable`, then verifies the full
+   file's bytes from the CDN. Verify CORS with `Origin: https://hexly.ai` and
+   `Origin: https://index.dev.hexly.ai`; the existing wildcard rules allow both.
    Native cross-origin playback and caption tracks require CORS. Check a real
    range request returns `206` before attaching a recording to the catalogue.
-4. Verify the file and poster, then add one catalogue record. Do not duplicate
+4. Save the source revision and per-file URL/hash/size in
+   `docs/media/<project>/<video-id>/v<version>.json`, then add one active
+   catalogue record. Do not duplicate
    recordings in the template manifest or move existing Git-tracked imagery.
 
 R2 stores and serves files; it does not produce adaptive renditions. Progressive

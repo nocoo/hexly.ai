@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Build a fast, bilingual project directory at `hexly.ai`, with reusable templates and public service status as the other main sections. Project details combine the introduction, optional recorded media/screenshots, technical overview and preserved identity archive. The logo wall is a secondary catalogue view. The current route reorganization is local and unpublished; see [project media and routes](17-project-media.md).
+Build a fast, bilingual project directory at `hexly.ai`, with reusable templates and public service status as the other main sections. Project details combine the introduction, optional recorded media/screenshots, technical overview and preserved identity archive. The logo wall is a secondary catalogue view. Finished recordings use the separate R2 media origin; see [project media and routes](17-project-media.md).
 
 The source catalogue is the public `nocoo/nocoo` GitHub profile. Preserve its project names, emojis, and meaning when editing descriptions or translating them. Deduplicate projects that occur in more than one section. All shows active repositories by default; Archived exposes archived repositories recorded in the repository-status snapshot. The owner requested that hexly.ai itself be omitted from the site directory; its separate brand record is in `src/data/site-identity.json`. Existing product categories retain their membership, including archived entries where applicable. Category counts therefore overlap with Archived.
 
@@ -46,7 +46,7 @@ The project header exposes GitHub and the recorded website, followed by section 
 5. Add the identity gallery, large artwork, size specimens, palettes, and source downloads.
 6. Validate all six dimensions, configure Caddy, document results, and start the review server.
 
-When commits are authorized, use atomic Conventional Commits on `main`. The current review is local only: no commit, push or deployment.
+Use atomic Conventional Commits on `main`. Publish authorized releases through `bun run release`, following [the release procedure](05-release.md).
 
 ## Animal family
 

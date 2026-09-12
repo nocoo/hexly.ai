@@ -1,6 +1,6 @@
 # 16 · Hexly Video Kit
 
-The current worktree contains the local, unpublished 2.0.0 composition kit. The website release remains v0.6.0 until a new publication is explicitly requested. Hermes-on-Herdr continues using its own checkout pinned to `e1b220a7643e8275134b0bff0a11d703c047abbe`; none of its scripts, voices, logs or films belong here.
+The 2.0.0 composition kit provides independent openings, content layouts and endings in both site themes. Website and kit versions remain separate. The recorded Hermes-on-Herdr film uses its own checkout of kit 1.0.0 pinned to `e1b220a7643e8275134b0bff0a11d703c047abbe`; its production source stays in the consumer repository. Finished films can appear in project details through the [R2 media catalogue](17-project-media.md), without adding their scripts, voices, logs or binaries here.
 
 ## One family, independent parts
 

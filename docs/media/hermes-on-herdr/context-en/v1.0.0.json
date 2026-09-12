@@ -1,0 +1,59 @@
+{
+	"project": "hermes-on-herdr",
+	"video": "context-en",
+	"version": "1.0.0",
+	"verifiedAt": "2026-09-12T10:27:04Z",
+	"bucket": "hexlyai",
+	"origin": "https://h.no.mt",
+	"source": {
+		"repository": "https://github.com/nocoo/hermes-on-herdr",
+		"revision": "ff33fcbc158553aec667243700c18f05b4a2ae52",
+		"production": "video/20260912T142005+0800",
+		"videoPath": "public/review/hermes-on-herdr-context-en.mp4",
+		"posterPath": "public/review/poster.png",
+		"captionsPath": "public/audio/narration-en.vtt",
+		"kitVersion": "1.0.0",
+		"kitRevision": "e1b220a7643e8275134b0bff0a11d703c047abbe"
+	},
+	"durationSeconds": 96.5,
+	"width": 1920,
+	"height": 1080,
+	"fps": 30,
+	"language": "en",
+	"captionsBurnedIn": true,
+	"cacheControl": "public, max-age=31536000, immutable",
+	"assets": {
+		"video": {
+			"key": "projects/hermes-on-herdr/videos/context-en/v1.0.0/hermes-on-herdr-context-en-bfb53aae6ebd.mp4",
+			"url": "https://h.no.mt/projects/hermes-on-herdr/videos/context-en/v1.0.0/hermes-on-herdr-context-en-bfb53aae6ebd.mp4",
+			"sha256": "bfb53aae6ebdf484cd8dfb8d757f738c0a712046a1ee8b361e2bd4b41d78e31a",
+			"bytes": 5663298,
+			"contentType": "video/mp4"
+		},
+		"poster": {
+			"key": "projects/hermes-on-herdr/videos/context-en/v1.0.0/poster-84e3cae23b44.png",
+			"url": "https://h.no.mt/projects/hermes-on-herdr/videos/context-en/v1.0.0/poster-84e3cae23b44.png",
+			"sha256": "84e3cae23b44b4bb7641bad672e72b801e531bff2636ae9d0059012f76d65749",
+			"bytes": 126852,
+			"contentType": "image/png"
+		},
+		"captions": {
+			"key": "projects/hermes-on-herdr/videos/context-en/v1.0.0/narration-en-6cbe07350a32.vtt",
+			"url": "https://h.no.mt/projects/hermes-on-herdr/videos/context-en/v1.0.0/narration-en-6cbe07350a32.vtt",
+			"sha256": "6cbe07350a32d5042c36adcfaf2c358faffb7610fd2533fd1a2a194973e4c816",
+			"bytes": 1668,
+			"contentType": "text/vtt; charset=utf-8"
+		}
+	},
+	"verification": {
+		"publicSha256Matches": true,
+		"rangeStatus": 206,
+		"range": "bytes 0-1023/5663298",
+		"allowedOrigins": [
+			"https://hexly.ai",
+			"https://www.hexly.ai",
+			"https://index.dev.hexly.ai"
+		],
+		"unrelatedOriginAllowed": false
+	}
+}
