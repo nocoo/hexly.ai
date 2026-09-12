@@ -18,9 +18,9 @@ test("shows evidenced website colors separately from a tool's artwork palette", 
 	await expect(
 		page.getByRole("button", { name: "Copy color #c68664", exact: true }),
 	).toBeVisible();
-	await page.goto("/logos/hermes-gateway-herdr");
+	await page.goto("/logos/hermes-on-herdr");
 	await expect(page.locator("#identity-title")).toContainText(
-		"Hermes Gateway for Herdr",
+		"hermes on herdr",
 	);
 	await expect(
 		page.getByRole("button", { name: "Copy color #2c3f52", exact: true }),

@@ -1,46 +1,47 @@
-# 🚪 Hermes Gateway for Herdr
+# 🚪 hermes on herdr
 
 ## Profile
 
-- Repository: [nocoo/hermes-gateway-herdr](https://github.com/nocoo/hermes-gateway-herdr)
+- Repository: [nocoo/hermes-on-herdr](https://github.com/nocoo/hermes-on-herdr)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: No; [repository status evidence](../../docs/sources/hermes-gateway-herdr-2026-09-11.json)
-- English: Dedicated Hermes Gateway supervision inside a real Herdr pane
-- Chinese: 在真实 Herdr pane 内监督专用 Hermes Gateway，离线核心已实现
+- Archived repository: No; [repository status evidence](../../docs/sources/hermes-on-herdr-2026-09-12.json)
+- English: Run Hermes in Herdr with optional monitoring
+- Chinese: 在 Herdr 中运行 Hermes，按需打开监控面板
 - Profile section: Recent Projects
-- Profile revision: `4a0c394a79c8f4d24a11f8d9907d5c797e6b7718`
-- Repository revision inspected: `f14ddf11bf4ac4912830f0a7259fdd8a769e5a41`
+- Profile revision: `a8474b5831d2725296ecd54947c81dbef88f3435`
+- Repository revision inspected: `49b1e011781fbefc7567349862090f7463aaf2f1`
 
 ## Project goal
 
-Keep one dedicated Hermes Gateway under explicit supervision inside its owning Herdr pane. The offline core implements lifecycle control, identity checks, duplicate prevention and JSON diagnostics; real Herdr/Hermes integration remains unverified.
+Run a dedicated Hermes Gateway inside Herdr with explicit lifecycle control, persistent pause intent and JSON diagnostics. A compact startup page opens an optional hqtui monitor for multiple Profiles, with live status, CPU and memory trends.
 
-让一个专用 Hermes Gateway 在所属 Herdr pane 内接受明确监督。离线核心已实现生命周期控制、身份核验、实例去重与 JSON 诊断，真实 Herdr/Hermes 集成仍待验证。
+在 Herdr 内运行专用 Hermes Gateway，提供明确的生命周期控制、持久暂停意图与 JSON 诊断。启动时先显示简洁状态页，按需打开 hqtui 面板，查看多个 Profile 的实时状态、CPU 和内存趋势。
 
-- [中文 README](https://github.com/nocoo/hermes-gateway-herdr/blob/main/README.md) · [English README](https://github.com/nocoo/hermes-gateway-herdr/blob/main/docs/README.en.md)
-- Verified: 2026-09-11; [source revision](https://github.com/nocoo/hermes-gateway-herdr/tree/1cc8ac27ea9aecb6263d99a9cd26ae859168200a)
-- Source files: [`README.md`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/README.md), [`docs/README.en.md`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/docs/README.en.md), [`requirements.txt`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/requirements.txt), [`herdr-plugin.toml`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/herdr-plugin.toml), [`src/hermes_gateway_herdr/config.py`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/src/hermes_gateway_herdr/config.py), [`src/hermes_gateway_herdr/cli.py`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/src/hermes_gateway_herdr/cli.py), [`src/hermes_gateway_herdr/controller.py`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/src/hermes_gateway_herdr/controller.py), [`src/hermes_gateway_herdr/supervisor.py`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/src/hermes_gateway_herdr/supervisor.py), [`src/hermes_gateway_herdr/rpc.py`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/src/hermes_gateway_herdr/rpc.py), [`tests/run.py`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/tests/run.py), [`examples/README.md`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/examples/README.md), [`docs/12-离线实现与验证.md`](https://github.com/nocoo/hermes-gateway-herdr/blob/1cc8ac27ea9aecb6263d99a9cd26ae859168200a/docs/12-离线实现与验证.md)
+- [中文 README](https://github.com/nocoo/hermes-on-herdr/blob/main/README.md) · [English README](https://github.com/nocoo/hermes-on-herdr/blob/main/docs/README.en.md)
+- Verified: 2026-09-12; [source revision](https://github.com/nocoo/hermes-on-herdr/tree/49b1e011781fbefc7567349862090f7463aaf2f1)
+- Source files: [`README.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/README.md), [`docs/README.en.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/docs/README.en.md), [`docs/README.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/docs/README.md), [`requirements.txt`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/requirements.txt), [`herdr-plugin.toml`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/herdr-plugin.toml), [`src/hermes_gateway_herdr/config.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/config.py), [`src/hermes_gateway_herdr/cli.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/cli.py), [`src/hermes_gateway_herdr/controller.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/controller.py), [`src/hermes_gateway_herdr/supervisor.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/supervisor.py), [`src/hermes_gateway_herdr/rpc.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/rpc.py), [`src/hermes_gateway_herdr/dashboard.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/dashboard.py), [`src/hermes_gateway_herdr/dashboard_view.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/dashboard_view.py), [`src/hermes_gateway_herdr/monitor.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/src/hermes_gateway_herdr/monitor.py), [`vendor/README.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/vendor/README.md), [`tests/run.py`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/tests/run.py), [`examples/README.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/examples/README.md), [`docs/12-离线实现与验证.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/docs/12-离线实现与验证.md), [`docs/13-cherry接入与验证.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/docs/13-cherry接入与验证.md), [`docs/14-hqtui监控面板.md`](https://github.com/nocoo/hermes-on-herdr/blob/49b1e011781fbefc7567349862090f7463aaf2f1/docs/14-hqtui监控面板.md)
 
 ### Tech stack
 
 | Technology | Role | 用途 |
 | --- | --- | --- |
 | Python | Controller, pane supervisor and CLI | Controller、pane supervisor 与命令行 |
+| hqtui | Optional responsive terminal dashboard and startup status page | 按需打开的自适应终端监控面板与启动状态页 |
 | Unix sockets / JSONL | Bounded Herdr and Hermes control exchanges | 有时限的 Herdr 与 Hermes 控制通信 |
 | flock / atomic JSON | Singleton locks, persistent intent and request deduplication | 单例锁、持久意图与请求去重 |
-| psutil / PyYAML | Process identity and Profile configuration checks | 进程身份与专用 Profile 配置预检 |
+| psutil / PyYAML | Process identity, resource sampling and Profile configuration checks | 进程身份、资源采样与专用 Profile 配置预检 |
 | Herdr plugin TOML | Development hooks, actions and pane registration | 开发用 hooks、actions 与 pane 注册 |
-| unittest | Isolated fake-process and RPC tests | 隔离的假进程与 RPC 测试 |
+| unittest | Isolated process, RPC and terminal interaction tests | 隔离的进程、RPC 与终端交互测试 |
 
 ## Current logo
 
-![Hermes Gateway for Herdr source identity](../../public/logos/display/hermes-gateway-herdr-160.webp)
+![hermes on herdr source identity](../../public/logos/display/hermes-on-herdr-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens
-- [Source](https://github.com/nocoo/hermes-gateway-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png): `logo.png`
+- [Source](https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png)
 - Original dimensions: 2048 × 2048
 - Original size: 4337945 bytes
@@ -63,12 +64,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Refined identity
 
-![Hermes Gateway for Herdr refined preview](../../public/logos/family/hermes-gateway-herdr/2026-09-11-01/01/icon-160.webp)
+![hermes on herdr refined preview](../../public/logos/family/hermes-gateway-herdr/2026-09-11-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-11.
 - Study `2026-09-11-01`, finishing `01`
 - Refined subject: Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens
-- Site path: `/logos/hermes-gateway-herdr`; [local gallery](https://index.dev.hexly.ai/logos/hermes-gateway-herdr)
+- Site path: `/logos/hermes-on-herdr`; [local gallery](https://index.dev.hexly.ai/logos/hermes-on-herdr)
 - [Static review HTML](../../artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hermes-gateway-herdr/2026-09-11-01)
 - [Transparent foreground](../../public/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png); SHA-256: `ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719`

@@ -3,6 +3,7 @@
 ## Current identities
 
 - Keep a stable lowercase, hyphenated asset slug; the display name may retain punctuation and brand capitalization.
+- An explicit project rename may change the catalogue slug and public route. Preserve the profile number and add Static Assets redirects for former page URLs. Historical artwork paths and export prefixes come from `family.root`, independently of the current catalogue ID; original bytes, checksums and past study records remain unchanged.
 - Each project has a title, English and Chinese descriptions, its existing emoji, a source repository, a category, an explicit repository `archived` flag, a logo record, a foreground/accent color, and a background color.
 - Record archive status from repository metadata, independently of the GitHub profile's Legacy section. All excludes archived repositories; Archived selects them across all existing categories. Keep product categories and put redraw status on the card.
 - A project website must come from its repository metadata, README, or deployment configuration. Do not construct presumed live domains from repository names.

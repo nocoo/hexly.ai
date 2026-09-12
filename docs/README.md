@@ -13,7 +13,7 @@
 11. [README refresh and project research](11-readme-refresh.md)
 12. [InfoSpace onboarding and logo study](12-infospace-onboarding.md)
 13. [Showtime onboarding and icon preparation](13-showtime-onboarding.md)
-14. [Coffee and Hermes Gateway onboarding](14-new-tools-onboarding.md)
+14. [Coffee and hermes on herdr onboarding](14-new-tools-onboarding.md)
 15. [Ocelot onboarding and animal identity](15-ocelot-onboarding.md)
 16. [Status monitoring: D1, Cron, retention, and local mock data](11-status-monitoring.md)
 17. [Project profiles](profiles/README.md)

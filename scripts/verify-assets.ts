@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
 
@@ -74,7 +74,7 @@ for (const project of projects) {
 		if (project.family.method === "reference-adaptation") {
 			const source = JSON.parse(
 				await readFile(
-					`artwork/logo-family/${project.id}/${project.family.id}/source.json`,
+					`artwork/logo-family/${relative("/logos/family", dirname(project.family.root))}/source.json`,
 					"utf8",
 				),
 			) as { reference: { sha256: string; width: number; height: number } };
