@@ -21,6 +21,36 @@ for (const project of projects) {
 		}
 	}
 	const original = await readFile(`public${project.logo.original}`);
+	if (project.brandKit) {
+		const kit = project.brandKit;
+		const manifest = JSON.parse(
+			await readFile(`public${kit.root}/manifest.json`, "utf8"),
+		);
+		if (manifest.project !== project.id || manifest.version !== kit.version)
+			throw new Error(`Brand manifest disagrees with catalogue: ${project.id}`);
+		for (const name of [
+			"mark-light.svg",
+			"mark-dark.svg",
+			"wordmark-light.svg",
+			"wordmark-dark.svg",
+			"lockup-light.svg",
+			"lockup-dark.svg",
+			"icon-light.svg",
+			"icon-dark.svg",
+			"favicon.svg",
+			"favicon.ico",
+			"guide.md",
+			"license.txt",
+			"space-grotesk-ofl.txt",
+		]) {
+			if (
+				!manifest.files.some(
+					(file: { path: string }) => file.path === `${kit.root}/${name}`,
+				)
+			)
+				throw new Error(`Missing brand delivery: ${project.id}/${name}`);
+		}
+	}
 	if (
 		createHash("sha256").update(original).digest("hex") !== project.logo.sha256
 	)
@@ -121,6 +151,24 @@ console.info(
 );
 
 let publicArchives = 0;
+for await (const path of new Bun.Glob("public/brands/*/v*/manifest.json").scan(
+	".",
+)) {
+	const manifest: { files: { path: string; bytes: number; sha256: string }[] } =
+		JSON.parse(await readFile(path, "utf8"));
+	for (const file of manifest.files) {
+		if (
+			`public${file.path}` !== `${dirname(path)}/${file.path.split("/").pop()}`
+		)
+			throw new Error(`Brand file escapes its version: ${file.path}`);
+		const data = await readFile(`public${file.path}`);
+		if (
+			data.length !== file.bytes ||
+			createHash("sha256").update(data).digest("hex") !== file.sha256
+		)
+			throw new Error(`Brand archive changed: ${file.path}`);
+	}
+}
 for await (const path of new Bun.Glob(
 	"public/logos/family/**/manifest.json",
 ).scan(".")) {

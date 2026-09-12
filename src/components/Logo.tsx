@@ -36,13 +36,16 @@ export function Logo({
 			? `${project.family.root}/icon-${pixels}.webp`
 			: project.family.foreground.display
 		: `/logos/display/${project.id}-${pixels}.webp`;
+	const kit = project.brandKit;
+	const kitAsset = framed ? "icon" : "mark";
 	return (
 		<span
-			className={`${framed ? "logo-tile" : "logo-plain"} ${project.family && framed ? "logo-family" : ""} ${className}`}
+			className={`${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""} ${className}`}
 			style={style}
 		>
 			<img
-				src={src}
+				src={kit ? `${kit.root}/${kitAsset}-light.svg` : src}
+				className={kit ? "logo-theme-light" : undefined}
 				width={size}
 				height={size}
 				alt=""
@@ -50,6 +53,18 @@ export function Logo({
 				decoding="async"
 				draggable={false}
 			/>
+			{kit && (
+				<img
+					className="logo-theme-dark"
+					src={`${kit.root}/${kitAsset}-dark.svg`}
+					width={size}
+					height={size}
+					alt=""
+					loading={eager ? "eager" : "lazy"}
+					decoding="async"
+					draggable={false}
+				/>
+			)}
 		</span>
 	);
 }

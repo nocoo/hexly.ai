@@ -38,6 +38,26 @@ Refined presentation tiles include their own background and contact shadows. Lar
 
 Every completed candidate has a static `review.html` and a complete `/logos/<project>` before/after page, plus all master and small-size exports. Presentation reference boards appear only in static study HTML and Git. Background-only adjustments require a new finishing pass and byte-identical transparent/white masters. Preserve historical public manifests and verify them even after the catalogue selects a newer pass. Follow the current session's local-only or publication authorization.
 
+## Commissioned vector brand kits
+
+An explicit brief for a new scalable product identity can use original SVG
+construction, with exact site tokens and licensed font outlines. Preserve the
+native masters and design history in `artwork/brands/<project>/v<version>/` and
+curated web exports under `public/brands/<project>/v<version>/`. The optional
+catalogue `brandKit` keeps its immutable root/version and a separate, nullable
+source-adoption revision. Do not fabricate an old source logo, model response,
+raw-image approval or source adoption to fit the image-study schema.
+
+Supply light/dark marks, wordmarks, lockups, app icons, transparent SVG/ICO
+favicons, explicit usage/size rules, license notices and per-file SHA-256. Keep
+the original SVG backup under `public/logos/originals/`. Use the shared detail,
+palette and small-size views; the standalone specimen guide supplements them.
+See [Snail v1.0.0](18-snail-brand.md), the first native vector kit.
+
+When the owner limits work to Hexly, record a null profile revision and document
+the boundary. Source-project adoption and profile maintenance remain separate
+work; a pending implementation is not described as a deployed application.
+
 ## Profile maintenance reference
 
 The canonical maintenance skill is `workflow/agents/skills/zhengli-update-github-readme/SKILL.md`, with a reference entry in `nocoo/skills/zhengli-update-github-readme/SKILL.md`. The metadata convention is also recorded in nmem: `e42a5dde-192d-495f-bc21-4d303cabeb3a`.

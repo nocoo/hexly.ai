@@ -152,6 +152,24 @@ export function catalogueProblems(projects: Project[]): string[] {
 		if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id) || ids.has(project.id))
 			problems.push(`Invalid or duplicate id: ${project.id}`);
 		ids.add(project.id);
+		const kit = project.brandKit;
+		if (
+			kit !== undefined &&
+			(!kit ||
+				!/^\d+\.\d+\.\d+$/.test(kit.version) ||
+				kit.root !== `/brands/${project.id}/v${kit.version}` ||
+				(kit.sourceAdoptionRevision !== null &&
+					!/^[a-f0-9]{40}$/.test(kit.sourceAdoptionRevision)) ||
+				!hasTranslations(kit.description) ||
+				!Array.isArray(kit.guidelines) ||
+				kit.guidelines.length === 0 ||
+				kit.guidelines.some(
+					(item) =>
+						!hasTranslations(item?.title) ||
+						!hasTranslations(item?.description),
+				))
+		)
+			problems.push(`Invalid brand kit: ${project.id}`);
 		const media = project.media;
 		if (media !== undefined) {
 			if (!media || typeof media !== "object" || Array.isArray(media)) {

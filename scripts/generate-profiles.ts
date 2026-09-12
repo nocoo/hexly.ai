@@ -19,13 +19,29 @@ const index = [
 ];
 for (const project of projects) {
 	const sourceLink = (url: string) =>
-		url.startsWith("/logos/") ? `../../public${url}` : url;
+		url.startsWith("/") ? `../../public${url}` : url;
 	const name =
 		existingProfiles.find((name) => name.endsWith(`-${project.id}.md`)) ??
 		`${String(++nextProfileNumber).padStart(2, "0")}-${project.id}.md`;
 	index.push(
-		`| [${project.emoji} ${project.title}](${name}) | ${project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
+		`| [${project.emoji} ${project.title}](${name}) | ${project.brandKit ? "Original vector kit" : project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);
+	const kit = project.brandKit;
+	const kitSection = kit
+		? `## Native vector brand kit
+
+- Brand version: \`${kit.version}\`; [public archive](https://hexly.ai/projects/${project.id}#brand).
+- [Light lockup](../../public${kit.root}/lockup-light.svg), [dark lockup](../../public${kit.root}/lockup-dark.svg), [favicon](../../public${kit.root}/favicon.svg).
+- [Complete usage and integration guide](../../public${kit.root}/guide.md), [standalone specimens](../../public${kit.root}/review.html), [all exports and SHA-256](../../public${kit.root}/manifest.json).
+- Source adoption: ${kit.sourceAdoptionRevision ? `recorded at \`${kit.sourceAdoptionRevision}\`` : "separate source-team handoff; no adoption commit is claimed"}.
+- Original geometry and archive code use MIT; the actual Space Grotesk font uses SIL OFL 1.1. No image generation, tracing or third-party icon was used.
+
+${kit.description.en}
+
+${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n\n${item.description.zh}`).join("\n\n")}
+
+`
+		: "";
 	const family = project.family;
 	const retained = family?.method === "retained-original";
 	const material = family?.series === "material";
@@ -113,14 +129,14 @@ ${overview.techStack.map((technology) => `| ${technology.name} | ${technology.ro
 - English: ${project.description.en}
 - Chinese: ${project.description.zh}
 - Profile section: ${project.source.profileSection}
-- Profile revision: \`${project.source.profileRevision}\`
+- Profile revision: ${project.source.profileRevision ? `\`${project.source.profileRevision}\`` : "Not modified under this task's Hexly-only scope"}
 - Repository revision inspected: ${project.source.repositoryRevision ? `\`${project.source.repositoryRevision}\`` : "Initial source commit pending; see the local snapshot above"}
 
 ${overviewSection}## Current logo
 
 ![${project.title} source identity](../../public${project.logo.thumbnail})
 
-- Type: ${project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
+- Type: ${kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
 - [Source](${sourceLink(project.logo.sourceUrl)}): \`${project.logo.sourcePath}\`
 - [Preserved asset](../../public${project.logo.original})
@@ -138,11 +154,11 @@ ${palette}
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-${familySection}## ${family ? "Further refinements" : "Future family notes"}
+${kitSection}${familySection}## ${family || kit ? "Further refinements" : "Future family notes"}
 
-${material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : toolWithoutStudy ? "Keep the current source mark and its provenance. For a future study, choose a recognizable physical object from the tool's actual function and follow the owner's material and composition direction. An animal or fragmented drawing is not required." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
+${kit ? "Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow." : material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : toolWithoutStudy ? "Keep the current source mark and its provenance. For a future study, choose a recognizable physical object from the tool's actual function and follow the owner's material and composition direction. An animal or fragmented drawing is not required." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-${material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${family ? " Preserve this reviewed composition and its archived predecessors." : snapshot ? " This entry uses the preserved local application artwork; any new study follows its own recorded review decision." : " No new logo is generated in phase one."}
+${kit ? "Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide." : material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${kit ? " The source team integrates the exact published files and records its own adoption revision." : family ? " Preserve this reviewed composition and its archived predecessors." : snapshot ? " This entry uses the preserved local application artwork; any new study follows its own recorded review decision." : " No new logo is generated in phase one."}
 `;
 	await writeFile(`docs/profiles/${name}`, content);
 }
