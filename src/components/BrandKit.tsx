@@ -1,5 +1,42 @@
+import { brandAsset } from "../model/brand";
 import type { Locale, Project } from "../model/project";
 import "../styles/brand-kits.css";
+
+export function BrandHero({
+	kit,
+	locale,
+}: {
+	kit: NonNullable<Project["brandKit"]>;
+	locale: Locale;
+}) {
+	if (!kit.hero) return null;
+	return (
+		<figure className="brand-hero">
+			<picture>
+				<source
+					media="(max-width: 640px)"
+					srcSet={`${kit.root}/hero-square.webp`}
+					width={1024}
+					height={1024}
+				/>
+				<img
+					src={`${kit.root}/hero.webp`}
+					width={kit.hero.width}
+					height={kit.hero.height}
+					alt={kit.hero.alt[locale]}
+					fetchPriority="high"
+					decoding="async"
+				/>
+			</picture>
+			<figcaption>
+				<span>{kit.hero.caption[locale]}</span>
+				<a href={`${kit.root}/hero.png`} download>
+					{locale === "zh" ? "下载图像" : "Download artwork"} ↗
+				</a>
+			</figcaption>
+		</figure>
+	);
+}
 
 export function BrandKit({
 	project,
@@ -12,6 +49,7 @@ export function BrandKit({
 }) {
 	const zh = locale === "zh";
 	const label = zh ? "品牌资产" : "Brand assets";
+	const generated = kit.method === "gpt-image-2";
 	return (
 		<section className="brand-kit" aria-label={label}>
 			<div className="brand-kit-intro">
@@ -32,17 +70,17 @@ export function BrandKit({
 									? "02 / 夜间"
 									: "02 / After hours"}
 						</span>
-						<a href={`${kit.root}/lockup-${theme}.svg`} download>
+						<a href={brandAsset(kit, "lockup", theme)} download>
 							<img
-								src={`${kit.root}/lockup-${theme}.svg`}
+								src={brandAsset(kit, "lockup", theme)}
 								width={454}
 								height={192}
 								alt={`${project.title} — ${theme === "light" ? (zh ? "浅色字标组合" : "light logo and wordmark") : zh ? "深色字标组合" : "dark logo and wordmark"}`}
 							/>
 						</a>
 						<figcaption>
-							Space Grotesk 600 ·{" "}
-							{theme === "light" ? "#30372e / #bf5c3c" : "#e6e9dc / #e79670"}
+							Space Grotesk 600 · {theme === "light" ? "#30372e" : "#e6e9dc"}
+							{!generated && ` / ${theme === "light" ? "#bf5c3c" : "#e79670"}`}
 						</figcaption>
 					</figure>
 				))}
@@ -62,33 +100,42 @@ export function BrandKit({
 				<div className="review-section-heading">
 					<h3>{label}</h3>
 					<p>
-						{zh
-							? "原生 SVG · 透明 PNG · 真实多尺寸 ICO"
-							: "Native SVG · Transparent PNG · Multi-size ICO"}
+						{generated
+							? zh
+								? "GPT Image 图像 · 转曲字标 · 透明 PNG · 多尺寸 ICO"
+								: "GPT Image artwork · Outlined type · Transparent PNG · Multi-size ICO"
+							: zh
+								? "原生 SVG · 透明 PNG · 真实多尺寸 ICO"
+								: "Native SVG · Transparent PNG · Multi-size ICO"}
 					</p>
 				</div>
 				<div className="brand-kit-assets">
-					{[
-						["mark", zh ? "标志" : "Mark"],
-						["wordmark", zh ? "字标" : "Wordmark"],
-						["lockup", zh ? "组合" : "Lockup"],
-						["icon", zh ? "图标" : "App icon"],
-					].map(([file, name]) => (
+					{(
+						[
+							["mark", zh ? "标志" : "Mark"],
+							["wordmark", zh ? "字标" : "Wordmark"],
+							["lockup", zh ? "组合" : "Lockup"],
+							["icon", zh ? "图标" : "App icon"],
+						] as const
+					).map(([file, name]) => (
 						<div key={file}>
 							<span>
-								{name} <small>SVG</small>
+								{name}{" "}
+								<small>
+									{generated && file !== "wordmark" ? "PNG" : "SVG"}
+								</small>
 							</span>
 							<a
-								href={`${kit.root}/${file}-light.svg`}
+								href={brandAsset(kit, file, "light")}
 								download
-								aria-label={`${name} SVG — ${zh ? "浅色" : "light"}`}
+								aria-label={`${name} ${generated && file !== "wordmark" ? "PNG" : "SVG"} — ${zh ? "浅色" : "light"}`}
 							>
 								{zh ? "浅色" : "Light"} ↓
 							</a>
 							<a
-								href={`${kit.root}/${file}-dark.svg`}
+								href={brandAsset(kit, file, "dark")}
 								download
-								aria-label={`${name} SVG — ${zh ? "深色" : "dark"}`}
+								aria-label={`${name} ${generated && file !== "wordmark" ? "PNG" : "SVG"} — ${zh ? "深色" : "dark"}`}
 							>
 								{zh ? "深色" : "Dark"} ↓
 							</a>
@@ -97,7 +144,14 @@ export function BrandKit({
 				</div>
 				<div className="download-links">
 					{[
-						["favicon.svg", "Favicon SVG"],
+						...(generated
+							? [
+									["logo.png", zh ? "透明主文件" : "Transparent master"],
+									["hero.png", zh ? "原幅 Hero" : "Full-frame hero"],
+									["texture-light.svg", zh ? "浅色底纹" : "Paper texture"],
+									["texture-dark.svg", zh ? "深色底纹" : "Night texture"],
+								]
+							: [["favicon.svg", "Favicon SVG"]]),
 						["favicon.ico", "Favicon ICO"],
 						["logo-light.png", zh ? "浅色 PNG" : "Light PNG"],
 						["logo-dark.png", zh ? "深色 PNG" : "Dark PNG"],
@@ -131,9 +185,22 @@ export function BrandKit({
 							? "源项目已记录资产集成版本。"
 							: "Asset adoption is recorded in the source project."
 						: zh
-							? `Hexly 原创矢量档案；源项目集成由 ${project.title} 团队独立完成。`
-							: "Original Hexly vector archive; source-project integration is a separate handoff."}
+							? `${generated ? "GPT Image 2 生成动物主视觉" : "Hexly 原创矢量档案"}；源项目集成由 ${project.title} 团队独立完成。`
+							: `${generated ? "Animal artwork generated with GPT Image 2" : "Original Hexly vector archive"}; source-project integration is a separate handoff.`}
 				</p>
+				{kit.previousVersion && (
+					<p className="review-caption">
+						<a
+							href={`/brands/${project.id}/v${kit.previousVersion}/review.html`}
+						>
+							{zh ? "历史版本" : "Previous identity"} · v{kit.previousVersion} ↗
+						</a>
+						{" · "}
+						{zh
+							? "原始资产与来源记录完整保留。"
+							: "Original assets and provenance preserved."}
+					</p>
+				)}
 			</div>
 		</section>
 	);

@@ -228,3 +228,19 @@ The owner approved the native gold fragmented ocelot portrait and its single cor
 Passes 01 and 02 preserve the matte-cleanup iterations. Pass 03 retains exactly two visible foreground components, the animal and bird, without component-size deletion. Its 1,953,070 fully opaque pixels keep their native RGB. The complete bird clears the actual rounded boundary by 62.9 px. Sand paper, broken almond rosettes, turned-page curves, grain and two shadows remain independent, with all ten export sizes archived.
 
 [Source adoption](ocelot/2026-09-11-01/adoption.json) is published at `9d27eea583`; [the profile addition](https://github.com/nocoo/nocoo/commit/63fcd1383c1b1eca0f4471c47000feab852ab953) matches the factual reader description. Source consumers use transparent UI/favicon marks, a square touch icon and rounded bilingual README artwork. The original SVG and native generation remain unchanged. See [Ocelot onboarding](../../docs/15-ocelot-onboarding.md) for the source checks, exact snapshot and publication scope.
+
+## Snail — generated replacement, 2026-09-13
+
+Six Azure OpenAI gpt-image-2 requests preserve three native square candidates
+and three independently composed wide heroes. The selected Returning pair is
+[01 / finishing 01](snail/2026-09-13-01/review.html) and native Hero 04.
+All original requests, prompts, reference hashes, responses and PNGs remain
+under `snail/2026-09-13-{01..06}`. Selection is owner-delegated agent acceptance,
+not owner review of the new bytes; Grok's different preference is recorded.
+
+The complete 2.0.0 kit, sampled colors, exporter, license and specimen source
+live under `artwork/brands/snail/v2.0.0/`. The transparent animal keeps all
+opaque pixels and native placement. Repeatable light/dark textures are separate
+authored support graphics; wordmarks reuse licensed outlines. The old v1 SVG
+kit and its source adoption stay intact. Snail adoption of v2 remains separate;
+see [the handoff guide](../../docs/18-snail-brand.md).

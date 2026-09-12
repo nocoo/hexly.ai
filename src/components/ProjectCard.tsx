@@ -1,4 +1,6 @@
+import type { CSSProperties } from "react";
 import { categoryLabels, copy } from "../data/copy";
+import { brandTexture } from "../model/brand";
 import type { Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
@@ -19,7 +21,12 @@ export function ProjectCard({
 }) {
 	const t = copy[locale];
 	return (
-		<article className="project-card" data-project={project.id}>
+		<article
+			className="project-card"
+			data-project={project.id}
+			data-brand-artwork={project.brandKit?.method}
+			style={brandTexture(project.brandKit) as CSSProperties}
+		>
 			<a
 				className="card-main"
 				href={`/projects/${project.id}${artworkOnly ? "#brand" : ""}`}

@@ -1,0 +1,79 @@
+{
+	"project": "snail",
+	"original": "../../../../public/logos/originals/snail-v1-0-0.svg",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#f0f0e9",
+		"light": "#f8f8f2",
+		"shade": "#e8ebdf",
+		"motif": "#bf5c3c",
+		"grainAmplitude": 1,
+		"grainSeed": 60913,
+		"status": "Snail 2.0.0 commissioned paper presentation; separate from the generated animal and source application release",
+		"motifOpacity": 0.085,
+		"highlightOpacity": 0.38,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Returning paths",
+			"description": "A broken polygon spiral drifts into a low continuous trail; original Snail-specific geometry, independent of the animal foreground.",
+			"layers": [
+				{
+					"d": "M -96 286 L -58 168 L 26 79 L 136 38 L 242 54 L 326 119 L 357 203 L 338 284 L 278 338 L 206 349 L 142 318 L 110 259 L 122 199 L 167 162 L 218 166 L 250 201 L 249 242 L 222 265 L 191 259",
+					"tone": "motif",
+					"strokeWidth": 9
+				},
+				{
+					"d": "M -87 287 L -49 172 L 30 88 L 138 47 L 238 63 L 318 124 L 348 204 L 330 279 L 274 330 L 207 340 L 148 311 L 119 258 L 130 204 L 169 171 L 214 175 L 241 205 L 240 238 L 219 256 L 195 251",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M 481 1127 C 611 964 755 1042 891 923 S 1094 803 1164 845",
+					"tone": "motif",
+					"strokeWidth": 8
+				},
+				{
+					"d": "M 475 1107 C 601 947 746 1025 882 906 S 1085 786 1155 828",
+					"tone": "highlight",
+					"strokeWidth": 3
+				},
+				{
+					"d": "M 702 -76 L 846 22 L 990 -50 L 1180 134",
+					"tone": "ribbon",
+					"strokeWidth": 24
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 235,
+		"maximumChroma": 24,
+		"backgroundRgb": [251, 252, 251],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.97,
+		"maximumMatteEnergy": 1200
+	},
+	"shadows": [
+		{
+			"color": [48, 55, 46],
+			"opacity": 0.1,
+			"blurAt2048": 24,
+			"offsetAt2048": [7, 17]
+		},
+		{
+			"color": [48, 55, 46],
+			"opacity": 0.07,
+			"blurAt2048": 6,
+			"offsetAt2048": [1, 5]
+		}
+	],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128
+	},
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16]
+}

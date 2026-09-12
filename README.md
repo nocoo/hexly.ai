@@ -23,7 +23,7 @@
 
 [hexly.ai](https://hexly.ai) 是我的个人项目导航站，也是项目视觉身份的收藏柜。它从 [GitHub profile](https://github.com/nocoo) 整理项目名称、描述与 Emoji，保存各仓库的实际 Logo 和色板，让散落的工具、游戏与实验有一个统一入口。
 
-目前收录 75 个项目，备份 61 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Logo 家族同时支持重绘、原图规范化与原生矢量身份：[Snail 品牌档案](https://hexly.ai/projects/snail#brand) 提供沿用 Hexly 字体与色板的明暗 SVG、字标、应用图标、favicon 和完整使用规范。
+目前收录 75 个项目，备份 61 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Logo 家族支持重绘、原图规范化与版本化品牌资产：[Snail 2.0 品牌档案](https://hexly.ai/projects/snail#brand) 使用真实 GPT Image 生成的碎片蜗牛，提供独立方形/宽幅构图、明暗底纹、真实字体字标、透明图标和 favicon；完整保留上一版 SVG 与全部生成来源记录。
 
 ## 功能
 

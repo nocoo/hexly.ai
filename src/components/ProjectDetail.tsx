@@ -1,4 +1,5 @@
 import {
+	type CSSProperties,
 	type RefObject,
 	useCallback,
 	useEffect,
@@ -6,9 +7,11 @@ import {
 	useRef,
 } from "react";
 import { categoryLabels, copy } from "../data/copy";
+import { brandTexture } from "../model/brand";
 import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import type { Category, Locale, Project } from "../model/project";
+import { BrandHero } from "./BrandKit";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { LogoReview } from "./LogoReview";
@@ -152,7 +155,12 @@ export function ProjectDetail({
 			</nav>
 
 			{project ? (
-				<section className="identity-detail" aria-labelledby="identity-title">
+				<section
+					className="identity-detail"
+					aria-labelledby="identity-title"
+					data-brand-artwork={project.brandKit?.method}
+					style={brandTexture(project.brandKit) as CSSProperties}
+				>
 					<div className="identity-heading">
 						<Logo project={project} size={72} framed={false} eager />
 						<div className="identity-summary">
@@ -232,6 +240,9 @@ export function ProjectDetail({
 							</div>
 						</div>
 					</div>
+					{project.brandKit?.hero && (
+						<BrandHero kit={project.brandKit} locale={locale} />
+					)}
 					<nav className="project-section-nav" aria-label={t.projectSections}>
 						<div>
 							{project.media?.videos?.length ||
@@ -294,7 +305,7 @@ export function ProjectDetail({
 								</span>
 								<span className="mono">
 									{project.brandKit
-										? `SVG · v${project.brandKit.version}`
+										? `${project.brandKit.method === "gpt-image-2" ? "GPT Image · PNG" : "SVG"} · v${project.brandKit.version}`
 										: `${foreground?.width} × ${foreground?.height}`}
 									{project.family && ` · ${project.family.updated}`}
 								</span>

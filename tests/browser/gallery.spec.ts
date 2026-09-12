@@ -90,7 +90,11 @@ for (const id of projects
 		}).toPass();
 		await expect(page.locator(".asset-label")).toHaveText("Refined");
 		await expect(page.locator(".current-artwork figcaption")).toContainText(
-			family.status === "adopted" ? "Adopted family identity" : "Local preview",
+			family.status === "adopted"
+				? "Adopted family identity"
+				: project.brandKit?.method === "gpt-image-2"
+					? "Source adoption pending"
+					: "Local preview",
 		);
 		for (const [selector, size] of [
 			[".size-grid figure:nth-child(1) .logo-tile", 128],

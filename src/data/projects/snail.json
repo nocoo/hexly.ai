@@ -148,12 +148,26 @@
 		}
 	},
 	"brandKit": {
-		"version": "1.0.0",
-		"root": "/brands/snail/v1.0.0",
+		"version": "2.0.0",
+		"root": "/brands/snail/v2.0.0",
+		"method": "gpt-image-2",
+		"previousVersion": "1.0.0",
+		"hero": {
+			"width": 2560,
+			"height": 1024,
+			"alt": {
+				"en": "A faceted terracotta snail moving toward one red point on a quiet spiral paper field",
+				"zh": "陶土色碎片蜗牛朝向一枚红点，衬以浅色螺旋纸纹"
+			},
+			"caption": {
+				"en": "Keep a moment. Find it again.",
+				"zh": "留住值得重逢的画面。"
+			}
+		},
 		"sourceAdoptionRevision": null,
 		"description": {
-			"en": "A collection kept close. A film found again. A quiet coiled shell, a carrying line, and one warm point — drawn in the Hexly family language.",
-			"zh": "把收藏留在身边，让好片随时重逢。回旋的壳、向前的底线和一枚温暖红点，共同构成 Hexly 家族里的 Snail。"
+			"en": "A collection kept close. A moment found again. A broad terracotta shell, connected ink-and-olive facets and one red point bring Snail into the Hexly animal family.",
+			"zh": "把收藏留在身边，让好片随时重逢。宽阔的陶土螺壳、连贯的墨绿碎片与一枚红点，让 Snail 成为 Hexly 动物家族的一员。"
 		},
 		"guidelines": [
 			{
@@ -162,18 +176,18 @@
 					"zh": "只留一个焦点"
 				},
 				"description": {
-					"en": "The coil holds the collection; the terracotta point looks ahead. Keep both strokes and the point together. Use ink for small text and the real Hexly light/dark palettes.",
-					"zh": "回旋收拢收藏，陶土红点望向前方。保留完整线条与红点，正文用墨色，明暗版本沿用真实 Hexly 色板。"
+					"en": "Preserve the full snail and its single forward red point. Keep the native animal colors; use the real Hexly palettes for text and surfaces. The point is not a health indicator.",
+					"zh": "保留完整蜗牛与前方唯一红点。动物沿用原生色彩，文字与界面使用真实 Hexly 色板；红点不代表运行状态。"
 				}
 			},
 			{
 				"title": {
-					"en": "Room around the mark",
-					"zh": "给标志留出呼吸"
+					"en": "Keep the whole frame",
+					"zh": "保留完整构图"
 				},
 				"description": {
-					"en": "Keep one point diameter clear around the artwork: 24 units in a 256-unit canvas. Preserve its viewBox, proportions and outlined Space Grotesk wordmark.",
-					"zh": "图形四周至少留一枚红点直径：256 单位画布中的 24 单位。保留 viewBox、原始比例和转曲后的 Space Grotesk 字标。"
+					"en": "Square Icon and wide Hero were generated independently. Keep their native proportions and at least 6.25% clear space. Use the separate square on mobile, without cropping the wide image.",
+					"zh": "方形 Icon 与宽幅 Hero 分别生成。保持原始比例与至少 6.25% 留白；手机使用独立方形版本，不裁剪横幅。"
 				}
 			},
 			{
@@ -182,10 +196,132 @@
 					"zh": "缩小，仍是 Snail"
 				},
 				"description": {
-					"en": "Mark 16px minimum; 24px preferred in navigation. Wordmark ≥72px wide; lockup ≥160px. Tabs use transparent SVG/ICO, app launchers use the square presentation.",
-					"zh": "标志最小 16px，导航推荐 24px；字标宽度至少 72px，组合至少 160px。页签用透明 SVG/ICO，应用启动图标用方形展示版。"
+					"en": "Mark 16px minimum; 24px preferred in navigation. Wordmark ≥72px, lockup ≥160px. Use transparent PNG/ICO for small marks; quiet, repeatable paper textures stay separate.",
+					"zh": "标志最小 16px，导航推荐 24px；字标宽度至少 72px，组合至少 160px。小标记使用透明 PNG/ICO，低对比可平铺纸纹独立使用。"
 				}
 			}
 		]
+	},
+	"family": {
+		"id": "2026-09-13-01",
+		"finishing": "01",
+		"root": "/logos/family/snail/2026-09-13-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/snail/2026-09-13-01",
+		"status": "review",
+		"updated": "2026-09-13",
+		"model": "gpt-image-2",
+		"foreground": {
+			"subject": {
+				"en": "A complete faceted terracotta snail returning to one red point",
+				"zh": "朝向一枚红点的完整陶土色碎片蜗牛"
+			},
+			"original": "/logos/family/snail/2026-09-13-01/01/transparent.png",
+			"display": "/logos/family/snail/2026-09-13-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "5a37ddc71323760f5a444d96bd345501be6a6622af4e2f92dee4886d4e9d0b72"
+		},
+		"previous": {
+			"original": "/logos/originals/snail-v1-0-0.svg",
+			"sourceUrl": "/brands/snail/v1.0.0/mark-light.svg",
+			"width": 256,
+			"height": 256,
+			"sha256": "bd936c17cf3d2c64c09150a7e4d7fd07206278505f781a8e4eb162fac2bdb00a"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Returning to a moment",
+					"zh": "回到值得重逢的画面"
+				},
+				"description": {
+					"en": "A low complete snail moves toward a single red point. Its broad shell and steady silhouette retain native rounded-outline clearance of 145.5px at 2048px, without resizing, moving or cropping the animal.",
+					"zh": "低伏的完整蜗牛朝向一枚红点。宽壳与稳定轮廓在原生 2048px 画布上距实际圆角边界至少 145.5px，没有缩放、移动或裁切主体。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Connected, irregular facets",
+					"zh": "连贯的不规则切面"
+				},
+				"description": {
+					"en": "Terracotta shell planes spiral inward while ink-and-olive fragments follow the body. Azure OpenAI GPT Image 2 generated the artwork; all 1,227,417 opaque pixels remain identical after transparent extraction. This is raster artwork, not a native SVG.",
+					"zh": "陶土壳面向内回旋，墨绿碎片顺着身体连接。主视觉由 Azure OpenAI GPT Image 2 生成，透明提取后 1,227,417 个不透明像素保持原样；这是位图作品，不是原生 SVG。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "A quiet returning path",
+					"zh": "安静回旋的轨迹"
+				},
+				"description": {
+					"en": "A polygon spiral and returning trail live on separate paper layers. Light and dark 512px seamless textures use Hexly tokens at 3.8% ink and 3.2% accent opacity. The wide Hero is a separate native 2560×1024 generation.",
+					"zh": "多边形螺旋与回返轨迹置于独立纸纹层。明暗两款 512px 无缝底纹沿用 Hexly 色板，墨色透明度 3.8%、重点色 3.2%；宽幅 Hero 为独立原生 2560×1024 生成。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#f0f0e9",
+				"role": "background",
+				"label": {
+					"en": "Hexly paper",
+					"zh": "Hexly 纸色"
+				},
+				"source": "src/styles/base.css and the independent Snail finishing/01/settings.json background.base"
+			},
+			{
+				"color": "#c46435",
+				"role": "primary",
+				"label": {
+					"en": "Terracotta shell",
+					"zh": "陶土螺壳"
+				},
+				"source": "Native Snail output SHA-256 43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568; opaque sRGB pixel (620, 1250); artwork/brands/snail/v2.0.0/palette.json"
+			},
+			{
+				"color": "#943d25",
+				"role": "accent",
+				"label": {
+					"en": "Shell shadow",
+					"zh": "壳内暗面"
+				},
+				"source": "Native Snail output SHA-256 43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568; opaque sRGB pixel (660, 610); artwork/brands/snail/v2.0.0/palette.json"
+			},
+			{
+				"color": "#e79f6f",
+				"role": "accent",
+				"label": {
+					"en": "Sunlit facet",
+					"zh": "浅色切面"
+				},
+				"source": "Native Snail output SHA-256 43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568; opaque sRGB pixel (780, 890); artwork/brands/snail/v2.0.0/palette.json"
+			},
+			{
+				"color": "#64604a",
+				"role": "accent",
+				"label": {
+					"en": "Olive ink",
+					"zh": "橄榄墨色"
+				},
+				"source": "Native Snail output SHA-256 43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568; opaque sRGB pixel (1480, 1260); artwork/brands/snail/v2.0.0/palette.json"
+			},
+			{
+				"color": "#bf5333",
+				"role": "accent",
+				"label": {
+					"en": "Returning point",
+					"zh": "重逢红点"
+				},
+				"source": "Native Snail output SHA-256 43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568; opaque sRGB pixel (1875, 1040); artwork/brands/snail/v2.0.0/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 128/64px the spiral, head and red point remain distinct. At 32/24/16px the broad shell and low silhouette carry recognition; small facets, antennae and the point soften. Navigation and browser tabs use the complete transparent foreground, without an extra mask.",
+			"zh": "128/64px 可辨认螺旋、头部与红点；32/24/16px 主要依靠宽壳和低伏轮廓识别，小切面、触角与红点会柔化。导航和页签使用完整透明前景，不另加遮罩。"
+		}
 	}
 }
