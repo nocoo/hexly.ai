@@ -1,16 +1,16 @@
 {
-	"id": "hermes-gateway-herdr",
-	"repo": "hermes-gateway-herdr",
-	"title": "Hermes Gateway for Herdr",
+	"id": "hermes-on-herdr",
+	"repo": "hermes-on-herdr",
+	"title": "hermes on herdr",
 	"emoji": "🚪",
 	"description": {
-		"en": "Dedicated Hermes Gateway supervision inside a real Herdr pane",
-		"zh": "在真实 Herdr pane 内监督专用 Hermes Gateway，离线核心已实现"
+		"en": "Run Hermes in Herdr with optional monitoring",
+		"zh": "在 Herdr 中运行 Hermes，按需打开监控面板"
 	},
 	"category": "tools",
 	"website": null,
 	"websiteSource": null,
-	"repository": "https://github.com/nocoo/hermes-gateway-herdr",
+	"repository": "https://github.com/nocoo/hermes-on-herdr",
 	"subject": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens",
 	"reference": false,
 	"archived": false,
@@ -18,14 +18,14 @@
 		"kind": "original",
 		"original": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
 		"sourcePath": "logo.png",
-		"sourceUrl": "https://github.com/nocoo/hermes-gateway-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
+		"sourceUrl": "https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
 		"modified": false,
 		"width": 2048,
 		"height": 2048,
 		"bytes": 4337945,
 		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
-		"thumbnail": "/logos/display/hermes-gateway-herdr-160.webp",
-		"display": "/logos/display/hermes-gateway-herdr-1024.webp"
+		"thumbnail": "/logos/display/hermes-on-herdr-160.webp",
+		"display": "/logos/display/hermes-on-herdr-1024.webp"
 	},
 	"theme": {},
 	"colors": {
@@ -90,15 +90,15 @@
 		]
 	},
 	"source": {
-		"profileRevision": "4a0c394a79c8f4d24a11f8d9907d5c797e6b7718",
+		"profileRevision": "a8474b5831d2725296ecd54947c81dbef88f3435",
 		"profileSection": "Recent Projects",
-		"description": "Dedicated Hermes Gateway supervision inside a real Herdr pane",
-		"repositoryRevision": "f14ddf11bf4ac4912830f0a7259fdd8a769e5a41"
+		"description": "Run Hermes in Herdr with optional monitoring",
+		"repositoryRevision": "49b1e011781fbefc7567349862090f7463aaf2f1"
 	},
 	"overview": {
 		"goal": {
-			"en": "Keep one dedicated Hermes Gateway under explicit supervision inside its owning Herdr pane. The offline core implements lifecycle control, identity checks, duplicate prevention and JSON diagnostics; real Herdr/Hermes integration remains unverified.",
-			"zh": "让一个专用 Hermes Gateway 在所属 Herdr pane 内接受明确监督。离线核心已实现生命周期控制、身份核验、实例去重与 JSON 诊断，真实 Herdr/Hermes 集成仍待验证。"
+			"en": "Run a dedicated Hermes Gateway inside Herdr with explicit lifecycle control, persistent pause intent and JSON diagnostics. A compact startup page opens an optional hqtui monitor for multiple Profiles, with live status, CPU and memory trends.",
+			"zh": "在 Herdr 内运行专用 Hermes Gateway，提供明确的生命周期控制、持久暂停意图与 JSON 诊断。启动时先显示简洁状态页，按需打开 hqtui 面板，查看多个 Profile 的实时状态、CPU 和内存趋势。"
 		},
 		"techStack": [
 			{
@@ -106,6 +106,13 @@
 				"role": {
 					"en": "Controller, pane supervisor and CLI",
 					"zh": "Controller、pane supervisor 与命令行"
+				}
+			},
+			{
+				"name": "hqtui",
+				"role": {
+					"en": "Optional responsive terminal dashboard and startup status page",
+					"zh": "按需打开的自适应终端监控面板与启动状态页"
 				}
 			},
 			{
@@ -125,8 +132,8 @@
 			{
 				"name": "psutil / PyYAML",
 				"role": {
-					"en": "Process identity and Profile configuration checks",
-					"zh": "进程身份与专用 Profile 配置预检"
+					"en": "Process identity, resource sampling and Profile configuration checks",
+					"zh": "进程身份、资源采样与专用 Profile 配置预检"
 				}
 			},
 			{
@@ -139,21 +146,22 @@
 			{
 				"name": "unittest",
 				"role": {
-					"en": "Isolated fake-process and RPC tests",
-					"zh": "隔离的假进程与 RPC 测试"
+					"en": "Isolated process, RPC and terminal interaction tests",
+					"zh": "隔离的进程、RPC 与终端交互测试"
 				}
 			}
 		],
 		"verified": {
-			"date": "2026-09-11",
-			"revision": "1cc8ac27ea9aecb6263d99a9cd26ae859168200a",
+			"date": "2026-09-12",
+			"revision": "49b1e011781fbefc7567349862090f7463aaf2f1",
 			"snapshot": {
-				"path": "docs/sources/hermes-gateway-herdr-2026-09-11.json",
-				"sha256": "9685cbeb3875707831ab3032f82dd6cfab380e06d5ccb929be20c5f5edcaf6ee"
+				"path": "docs/sources/hermes-on-herdr-2026-09-12.json",
+				"sha256": "d061dd2960f44ca9820747f8ee9d7f856b68c28966bcb2b04b77d579076d81e0"
 			},
 			"sources": [
 				"README.md",
 				"docs/README.en.md",
+				"docs/README.md",
 				"requirements.txt",
 				"herdr-plugin.toml",
 				"src/hermes_gateway_herdr/config.py",
@@ -161,9 +169,15 @@
 				"src/hermes_gateway_herdr/controller.py",
 				"src/hermes_gateway_herdr/supervisor.py",
 				"src/hermes_gateway_herdr/rpc.py",
+				"src/hermes_gateway_herdr/dashboard.py",
+				"src/hermes_gateway_herdr/dashboard_view.py",
+				"src/hermes_gateway_herdr/monitor.py",
+				"vendor/README.md",
 				"tests/run.py",
 				"examples/README.md",
-				"docs/12-离线实现与验证.md"
+				"docs/12-离线实现与验证.md",
+				"docs/13-cherry接入与验证.md",
+				"docs/14-hqtui监控面板.md"
 			]
 		}
 	},

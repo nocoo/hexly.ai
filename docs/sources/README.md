@@ -1,5 +1,7 @@
 # Source snapshots
 
+The [September 12 hermes on herdr capture](hermes-on-herdr-2026-09-12.json) records its renamed repository, published README update and unchanged logo provenance. The matching [GitHub profile snapshot](nocoo-readme-2026-09-12-hermes-on-herdr.md) comes from `a8474b5831d2725296ecd54947c81dbef88f3435`. Earlier Gateway snapshots retain the name and implementation state observed at intake.
+
 Ocelot's [September 11 snapshot](ocelot-2026-09-11.json) captures the published branding commit, both README languages, implementation and theme evidence, repository metadata, the exact GitHub profile entry, and its animal-order statistics. The prior SVG and original intake remain archived separately in the study. No deployed Ocelot homepage is claimed.
 
 1. [GitHub profile at import](01-github-profile.md)

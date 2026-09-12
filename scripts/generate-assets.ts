@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { basename, dirname, relative } from "node:path";
 import sharp from "sharp";
 import { readProjects, writeProjects } from "../src/data/read-projects";
 
@@ -28,7 +29,9 @@ for (const project of projects) {
 	if (project.family) {
 		const family = project.family;
 		const root = `public${family.root}`;
-		const study = `artwork/logo-family/${project.id}/${family.id}`;
+		const studyPath = relative("/logos/family", dirname(family.root));
+		const artworkId = basename(dirname(studyPath));
+		const study = `artwork/logo-family/${studyPath}`;
 		const finishing = `${study}/finishing/${family.finishing}`;
 		const retained = family.method === "retained-original";
 		const adapted = family.method === "reference-adaptation";
@@ -55,16 +58,16 @@ for (const project of projects) {
 		for (const [name, source] of [
 			[
 				"transparent.png",
-				`${finishing}/exports/${project.id}-transparent-${nativeSize}.png`,
+				`${finishing}/exports/${artworkId}-transparent-${nativeSize}.png`,
 			],
-			["icon.png", `${finishing}/exports/${project.id}-icon-${nativeSize}.png`],
+			["icon.png", `${finishing}/exports/${artworkId}-icon-${nativeSize}.png`],
 			[
 				"rounded.png",
-				`${finishing}/exports/${project.id}-rounded-${nativeSize}.png`,
+				`${finishing}/exports/${artworkId}-rounded-${nativeSize}.png`,
 			],
 			[
 				"white.png",
-				`${finishing}/exports/${project.id}-white-${nativeSize}.png`,
+				`${finishing}/exports/${artworkId}-white-${nativeSize}.png`,
 			],
 			["background.png", `${finishing}/background.png`],
 			[
@@ -95,7 +98,7 @@ for (const project of projects) {
 		}
 		await writeFile(
 			`${root}/manifest.json`,
-			`${JSON.stringify({ study: `${project.id}/${family.id}`, finishing: family.finishing, status: family.status, files }, null, "\t")}\n`,
+			`${JSON.stringify({ study: studyPath, finishing: family.finishing, status: family.status, files }, null, "\t")}\n`,
 		);
 		for (const size of [32, 64, 160, 256, 512, 1024]) {
 			await sharp(`${root}/icon.png`)

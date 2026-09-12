@@ -76,5 +76,5 @@
 | [🌸 DreamRO](69-dreamro.md) | Refined preview | #a98c57 | #f4f1e5 |
 | [🐱 Meowth](70-meowth.md) | Refined preview | #3c83f6 | #eeeff2 |
 | [☕ Coffee](73-coffee.md) | Adopted family | #c7d9a9 | #f8f6f0 |
-| [🚪 Hermes Gateway for Herdr](74-hermes-gateway-herdr.md) | Adopted family | #2c3f52 | #dfe8ec |
+| [🚪 hermes on herdr](74-hermes-on-herdr.md) | Adopted family | #2c3f52 | #dfe8ec |
 | [🐆 Ocelot](75-ocelot.md) | Adopted family | #435e73 | #fefefd |

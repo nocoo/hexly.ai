@@ -1,4 +1,16 @@
-# Coffee and Hermes Gateway onboarding
+# Coffee and hermes on herdr onboarding
+
+## hermes on herdr rename — 2026-09-12
+
+The current brand is **hermes on herdr**, with repository and command name `hermes-on-herdr`. [The source documentation update](https://github.com/nocoo/hermes-on-herdr/commit/49b1e011781fbefc7567349862090f7463aaf2f1) reorganizes the Chinese and English READMEs, configuration guide, documentation index and brand guide. The shared description is “Run Hermes in Herdr with optional monitoring” / “在 Herdr 中运行 Hermes，按需打开监控面板”. GitHub metadata and the [published profile revision](https://github.com/nocoo/nocoo/commit/a8474b5831d2725296ecd54947c81dbef88f3435) use the same door emoji and English description.
+
+The current implementation supervises a dedicated Gateway inside Herdr, presents startup status and opens an hqtui monitor on request. Its documented default sampling interval is two seconds. Saved offline evidence records 153 passing tests; cherry reached READY and the user confirmed messaging, with a standalone read-only dashboard preview also recorded. Embedded activation, cold start, shutdown cleanup, explicit pane interaction, Linux and live handoff retain their documented pending checks. The project has no independent public website or status-monitor target.
+
+The current gallery is [/logos/hermes-on-herdr](https://hexly.ai/logos/hermes-on-herdr). Former gallery and short URLs redirect there. Catalogue order and profile number 74 remain stable. The September 11 artwork stays under `hermes-gateway-herdr/2026-09-11-01/01`; original bytes, source commit `f14ddf11bf4ac4912830f0a7259fdd8a769e5a41`, checksums and historical manifests are preserved. Asset and profile generators resolve that archive from `family.root`, so the public brand can change independently of artwork provenance.
+
+The [current source capture](sources/hermes-on-herdr-2026-09-12.json) and [profile snapshot](sources/nocoo-readme-2026-09-12-hermes-on-herdr.md) record the published revisions. The intake and adoption records below describe the September 11 state and remain historical.
+
+## Original intake — 2026-09-11
 
 The September 11 intake found two newly created, non-fork public repositories missing from the catalogue: `nocoo/coffee` and `nocoo/hermes-gateway-herdr`. Both belong to Tools at the owner's request. Append their records to the catalogue index so the prior entries retain their order and numbered profile paths.
 
