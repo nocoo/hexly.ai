@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.8.0] - 2026-09-12
+
+### Features
+
+- add Snail vector identity and project archive ([0af2770](https://github.com/nocoo/hexly.ai/commit/0af2770338f7e0a8ba63a1f12e4bd91468e6591d))
+
 ## [0.7.0] - 2026-09-12
 
 ### Features
