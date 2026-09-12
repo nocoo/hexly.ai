@@ -1,0 +1,367 @@
+{
+	"createdAt": "2026-09-12T18:34:29.280Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "snail",
+		"original": "../../../../public/logos/originals/snail-v1-0-0.svg",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#f0f0e9",
+			"light": "#f8f8f2",
+			"shade": "#e8ebdf",
+			"motif": "#bf5c3c",
+			"grainAmplitude": 1,
+			"grainSeed": 60913,
+			"status": "Snail 2.0.0 commissioned paper presentation; separate from the generated animal and source application release",
+			"motifOpacity": 0.085,
+			"highlightOpacity": 0.38,
+			"ribbonOpacity": 0.22,
+			"pattern": {
+				"name": "Returning paths",
+				"description": "A broken polygon spiral drifts into a low continuous trail; original Snail-specific geometry, independent of the animal foreground.",
+				"layers": [
+					{
+						"d": "M -96 286 L -58 168 L 26 79 L 136 38 L 242 54 L 326 119 L 357 203 L 338 284 L 278 338 L 206 349 L 142 318 L 110 259 L 122 199 L 167 162 L 218 166 L 250 201 L 249 242 L 222 265 L 191 259",
+						"tone": "motif",
+						"strokeWidth": 9
+					},
+					{
+						"d": "M -87 287 L -49 172 L 30 88 L 138 47 L 238 63 L 318 124 L 348 204 L 330 279 L 274 330 L 207 340 L 148 311 L 119 258 L 130 204 L 169 171 L 214 175 L 241 205 L 240 238 L 219 256 L 195 251",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M 481 1127 C 611 964 755 1042 891 923 S 1094 803 1164 845",
+						"tone": "motif",
+						"strokeWidth": 8
+					},
+					{
+						"d": "M 475 1107 C 601 947 746 1025 882 906 S 1085 786 1155 828",
+						"tone": "highlight",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M 702 -76 L 846 22 L 990 -50 L 1180 134",
+						"tone": "ribbon",
+						"strokeWidth": 24
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 235,
+			"maximumChroma": 24,
+			"backgroundRgb": [
+				251,
+				252,
+				251
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.97,
+			"maximumMatteEnergy": 1200
+		},
+		"shadows": [
+			{
+				"color": [
+					48,
+					55,
+					46
+				],
+				"opacity": 0.1,
+				"blurAt2048": 24,
+				"offsetAt2048": [
+					7,
+					17
+				]
+			},
+			{
+				"color": [
+					48,
+					55,
+					46
+				],
+				"opacity": 0.07,
+				"blurAt2048": 6,
+				"offsetAt2048": [
+					1,
+					5
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"minimumClearanceAt2048": 128
+		},
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 2956764,
+		"foregroundPixels": 1237540,
+		"softEdgePixels": 10123,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 158,
+			"top": 415,
+			"right": 1902,
+			"bottom": 1572
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 158,
+			"top": 415,
+			"right": 1902,
+			"bottom": 1572
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 145.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2214,
+			"sha256": "e0e5153437a04c9097422cd1c46823b3f6f6ad1c1b09a42fa3816399a032d84e"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 690,
+			"sha256": "9459e1f50c7e7f141dc17a421e1cf558ca52801d92b38a28e6102225c4a73f7e"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2582119,
+			"sha256": "5a37ddc71323760f5a444d96bd345501be6a6622af4e2f92dee4886d4e9d0b72"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 59304,
+			"sha256": "1b6ae9148f48e2a872b310405686e3931698a0eee80c93bc3c1c6be6870eda12"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1296,
+			"sha256": "b7fa4bd8b09414192c0aba3e5a26b74a0ef64838a36090ace4166ba3a4af48df"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1682584,
+			"sha256": "444fba88c69a74bdb1599c31551049799e3b9b507159534ddd0618ad78a6fcdd"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 127737,
+			"sha256": "ffa61bdc2b4162b221ffbb27db2ddd599966d15473a43d39ccfa2ed7bf5d8505"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 90860,
+			"sha256": "290bbe96af7634c51749e3bc96b9e739b246962e4a65983d1812510f4fe7c8ec"
+		},
+		{
+			"path": "exports/snail-transparent-2048.png",
+			"bytes": 2582119,
+			"sha256": "5a37ddc71323760f5a444d96bd345501be6a6622af4e2f92dee4886d4e9d0b72"
+		},
+		{
+			"path": "exports/snail-icon-2048.png",
+			"bytes": 4087794,
+			"sha256": "951f1b055e205779d9ab9628f4b9cc0201f13caff37e4c822f3b6ce4da16e7a7"
+		},
+		{
+			"path": "exports/snail-rounded-2048.png",
+			"bytes": 4021082,
+			"sha256": "ce51dabdddb2bdbde5dce4e6dfe0729297e790a77b0a756d4888a81a68194f4a"
+		},
+		{
+			"path": "exports/snail-transparent-1024.png",
+			"bytes": 700201,
+			"sha256": "6fd93c9c579211b244f5cda2d2fa0997c830011f21f79290636f25e40d9d8bbc"
+		},
+		{
+			"path": "exports/snail-icon-1024.png",
+			"bytes": 999271,
+			"sha256": "53f5c1db3e64ad6e816083388fb496ef57f515370e502873737ed239f4a88caa"
+		},
+		{
+			"path": "exports/snail-rounded-1024.png",
+			"bytes": 1000361,
+			"sha256": "757ef7449a60d76f50b41f64d095a2f13af5619955d85a762ca21b1e08fa3d7f"
+		},
+		{
+			"path": "exports/snail-transparent-512.png",
+			"bytes": 202029,
+			"sha256": "746a33095c347d830eab10ee2fa3f18ec37828d12208f121ea9c637f42c65829"
+		},
+		{
+			"path": "exports/snail-icon-512.png",
+			"bytes": 293003,
+			"sha256": "3e34e422183ce82f5d9f21d9adaf3e8521d0ab80de60bd938fedfab0c7141acd"
+		},
+		{
+			"path": "exports/snail-rounded-512.png",
+			"bytes": 295138,
+			"sha256": "2bdcec92320ef64b74fd2d5a0adc07d053745016587be60e7d8dc28f2d7706eb"
+		},
+		{
+			"path": "exports/snail-transparent-256.png",
+			"bytes": 61770,
+			"sha256": "db8f775d618d716afda64bcf77e2afc4e8fbd25bb0e4290a8ec810ae7766dad6"
+		},
+		{
+			"path": "exports/snail-icon-256.png",
+			"bytes": 74802,
+			"sha256": "50620dc3ece14a6cb65a91e7b3197d937dd5a3e9f6128b4c0114e05f3735f2e0"
+		},
+		{
+			"path": "exports/snail-rounded-256.png",
+			"bytes": 77941,
+			"sha256": "6a58a25a797a0cb98d638f86589ce5cbc49ab06e5dc10784d0e53d4e1a00279d"
+		},
+		{
+			"path": "exports/snail-transparent-128.png",
+			"bytes": 18461,
+			"sha256": "c39ddde4d22c6cc238f74e891b72e7e5dee478a50c38d710da39dbf5ec306eeb"
+		},
+		{
+			"path": "exports/snail-icon-128.png",
+			"bytes": 22370,
+			"sha256": "b9940c1a684cdc6abc07407ed012addfbf59e99dc70b33e6cc4a2227c78e9259"
+		},
+		{
+			"path": "exports/snail-rounded-128.png",
+			"bytes": 24034,
+			"sha256": "35badcf068d0e40ac759ce1411460d4e030082c72781c48ec0ee4c87c4ae784e"
+		},
+		{
+			"path": "exports/snail-transparent-64.png",
+			"bytes": 5551,
+			"sha256": "93325d4f3725d8211eeb8885ee3e07297c7df066d6ef3566960053da167fd6f8"
+		},
+		{
+			"path": "exports/snail-icon-64.png",
+			"bytes": 6958,
+			"sha256": "d6a3d33c8e491d4b2b91a6f28b367c08b97f051c74fe926608fd00688144e733"
+		},
+		{
+			"path": "exports/snail-rounded-64.png",
+			"bytes": 7641,
+			"sha256": "7763db4592607992ac46a1a3a62863e2846d7acf5773db3610e5d97f6f54ff5b"
+		},
+		{
+			"path": "exports/snail-transparent-48.png",
+			"bytes": 3434,
+			"sha256": "e60a4be3aca7b0a159d5881facc7f647cd922607e83c8a9211e657a35a3c934d"
+		},
+		{
+			"path": "exports/snail-icon-48.png",
+			"bytes": 4439,
+			"sha256": "10f4c2fe7a3eeafd882259b6e5301acc351c7061dd11030d16a0fc46acd83ed4"
+		},
+		{
+			"path": "exports/snail-rounded-48.png",
+			"bytes": 4936,
+			"sha256": "1eec97bbed109a1ea8578937227366f59a57bf887d94c1b35d718a7b755b8fb4"
+		},
+		{
+			"path": "exports/snail-transparent-32.png",
+			"bytes": 1837,
+			"sha256": "a97cbd836cb176b5c30019fb139ec7c60b08249448d26a4d4ebe616d18d84db6"
+		},
+		{
+			"path": "exports/snail-icon-32.png",
+			"bytes": 2371,
+			"sha256": "b0b301ebef3d4f82b15a17f59cebef5ec79bd3b40e6e541f675391d7b51c0c97"
+		},
+		{
+			"path": "exports/snail-rounded-32.png",
+			"bytes": 2595,
+			"sha256": "4460a83f46db6a3138ca2ee1c3ee969e9246e2011920ae8b52cca502752de364"
+		},
+		{
+			"path": "exports/snail-transparent-24.png",
+			"bytes": 1197,
+			"sha256": "38566ce8b0ad5e71d70a306d2e7e6ef4589d0502f5eaf7338dbe6e0253902dfc"
+		},
+		{
+			"path": "exports/snail-icon-24.png",
+			"bytes": 1508,
+			"sha256": "f9f1e2b4710e26afcccd93018bc42d52e36bdb332263423de8c4807e3490e3dc"
+		},
+		{
+			"path": "exports/snail-rounded-24.png",
+			"bytes": 1707,
+			"sha256": "70e3279ecde94734ba083b3a715d0562b4c9a8b6ce617630ca78ed6a24e07982"
+		},
+		{
+			"path": "exports/snail-transparent-16.png",
+			"bytes": 691,
+			"sha256": "a53cfa39b3136a50564831d932f4b715d290260c4eb124e1caa4ff96f30151a9"
+		},
+		{
+			"path": "exports/snail-icon-16.png",
+			"bytes": 835,
+			"sha256": "cea6ef8da1f2f747459724124f04fafac82f8691eb0328d9f5f7e75b66757772"
+		},
+		{
+			"path": "exports/snail-rounded-16.png",
+			"bytes": 908,
+			"sha256": "84185318acf2da2b8c00d8b9fa7c355353e1e1b5834bd21f3060f93ca684d24d"
+		},
+		{
+			"path": "exports/snail-white-2048.png",
+			"bytes": 2464715,
+			"sha256": "ecff4876a479bb9ddaad49ac80549d0b19c0c19dbd9957896e2437ad0cb4c06b"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 679846,
+			"sha256": "eb8aca71fe7d39dff7d5881a5d6d6300fc639c3672e5e0e81a817ec3ebe9642d"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 671721,
+			"sha256": "f99356dccf81558545e6ae067a1224c528324f076113484fab4f8c30eea6a5e9"
+		}
+	]
+}

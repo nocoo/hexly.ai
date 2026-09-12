@@ -52,7 +52,15 @@ Supply light/dark marks, wordmarks, lockups, app icons, transparent SVG/ICO
 favicons, explicit usage/size rules, license notices and per-file SHA-256. Keep
 the original SVG backup under `public/logos/originals/`. Use the shared detail,
 palette and small-size views; the standalone specimen guide supplements them.
-See [Snail v1.0.0](18-snail-brand.md), the first native vector kit.
+Snail v1.0.0 remains the first native vector kit and is preserved as history.
+
+A generated replacement can pair the existing `family` record with a versioned
+`brandKit.method: "gpt-image-2"`. Deliver real PNG/WebP artwork, native wide and
+square compositions, independently authored repeatable theme textures, and
+licensed wordmark outlines. Keep the full family comparison and exact image
+checkpoints; do not call a raster or SVG wrapper a native vector. Previous kit
+exports remain immutable. Source-adoption status is independent of Hexly brand
+publication. See [Snail 2.0.0 and its preserved v1 history](18-snail-brand.md).
 
 When the owner limits work to Hexly, record a null profile revision and document
 the boundary. Source-project adoption and profile maintenance remain separate

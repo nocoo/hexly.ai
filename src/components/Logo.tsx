@@ -36,7 +36,7 @@ export function Logo({
 			? `${project.family.root}/icon-${pixels}.webp`
 			: project.family.foreground.display
 		: `/logos/display/${project.id}-${pixels}.webp`;
-	const kit = project.brandKit;
+	const kit = project.family ? undefined : project.brandKit;
 	const kitAsset = framed ? "icon" : "mark";
 	return (
 		<span

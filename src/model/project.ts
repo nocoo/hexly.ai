@@ -123,6 +123,14 @@ export interface Project {
 	brandKit?: {
 		version: string;
 		root: string;
+		method?: "gpt-image-2";
+		previousVersion?: string;
+		hero?: {
+			width: number;
+			height: number;
+			alt: Record<Locale, string>;
+			caption: Record<Locale, string>;
+		};
 		sourceAdoptionRevision: string | null;
 		description: Record<Locale, string>;
 		guidelines: {

@@ -1,0 +1,76 @@
+{
+	"measuredAt": "2026-09-12T18:59:45.890Z",
+	"contrastMethod": "WCAG sRGB relative luminance; every composited texture pixel on both actual UI surfaces",
+	"textureTextRule": "Use existing ink for all text on patterned surfaces. Muted on patterned light page can fall below 4.5:1 and is not used.",
+	"textureContrast": [
+		{
+			"theme": "light",
+			"checks": [
+				{
+					"surface": "page",
+					"text": "ink",
+					"minimumContrast": 10.133,
+					"usedForPatternedText": true
+				},
+				{
+					"surface": "page",
+					"text": "muted",
+					"minimumContrast": 4.26,
+					"usedForPatternedText": false
+				},
+				{
+					"surface": "surface",
+					"text": "ink",
+					"minimumContrast": 10.821,
+					"usedForPatternedText": true
+				},
+				{
+					"surface": "surface",
+					"text": "muted",
+					"minimumContrast": 4.549,
+					"usedForPatternedText": false
+				}
+			]
+		},
+		{
+			"theme": "dark",
+			"checks": [
+				{
+					"surface": "page",
+					"text": "ink",
+					"minimumContrast": 11.218,
+					"usedForPatternedText": true
+				},
+				{
+					"surface": "page",
+					"text": "muted",
+					"minimumContrast": 5.73,
+					"usedForPatternedText": false
+				},
+				{
+					"surface": "surface",
+					"text": "ink",
+					"minimumContrast": 9.759,
+					"usedForPatternedText": true
+				},
+				{
+					"surface": "surface",
+					"text": "muted",
+					"minimumContrast": 4.985,
+					"usedForPatternedText": false
+				}
+			]
+		}
+	],
+	"foregroundComponentsAtAlpha16": [1234789, 2746],
+	"opaqueEquality": {
+		"pixels": 1227417,
+		"changed": 0,
+		"source": "export.ts and key unit test"
+	},
+	"nativeHero": {
+		"width": 2560,
+		"height": 1024,
+		"crop": false
+	}
+}

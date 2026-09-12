@@ -1,0 +1,83 @@
+{
+	"reviewedAt": "2026-09-12T19:02:22.148Z",
+	"origin": "https://index.dev.hexly.ai",
+	"checks": [
+		{
+			"mode": "desktop",
+			"theme": "light",
+			"systemTheme": "dark",
+			"frame": {
+				"source": "https://index.dev.hexly.ai/brands/snail/v2.0.0/hero.webp",
+				"width": 2560,
+				"height": 1024,
+				"renderedWidth": 1366,
+				"renderedHeight": 546.390625
+			},
+			"card": {
+				"texture": "url(\"https://index.dev.hexly.ai/brands/snail/v2.0.0/texture-light.svg\")",
+				"text": "rgb(48, 55, 46)"
+			},
+			"overflow": false,
+			"errors": []
+		},
+		{
+			"mode": "desktop",
+			"theme": "dark",
+			"systemTheme": "light",
+			"frame": {
+				"source": "https://index.dev.hexly.ai/brands/snail/v2.0.0/hero.webp",
+				"width": 2560,
+				"height": 1024,
+				"renderedWidth": 1366,
+				"renderedHeight": 546.390625
+			},
+			"card": {
+				"texture": "url(\"https://index.dev.hexly.ai/brands/snail/v2.0.0/texture-dark.svg\")",
+				"text": "rgb(230, 233, 220)"
+			},
+			"overflow": false,
+			"errors": []
+		},
+		{
+			"mode": "mobile",
+			"theme": "light",
+			"systemTheme": "dark",
+			"frame": {
+				"source": "https://index.dev.hexly.ai/brands/snail/v2.0.0/hero-square.webp",
+				"width": 1024,
+				"height": 1024,
+				"renderedWidth": 344,
+				"renderedHeight": 344
+			},
+			"card": {
+				"texture": "url(\"https://index.dev.hexly.ai/brands/snail/v2.0.0/texture-light.svg\")",
+				"text": "rgb(48, 55, 46)"
+			},
+			"overflow": false,
+			"errors": []
+		},
+		{
+			"mode": "mobile",
+			"theme": "dark",
+			"systemTheme": "light",
+			"frame": {
+				"source": "https://index.dev.hexly.ai/brands/snail/v2.0.0/hero-square.webp",
+				"width": 1024,
+				"height": 1024,
+				"renderedWidth": 344,
+				"renderedHeight": 344
+			},
+			"card": {
+				"texture": "url(\"https://index.dev.hexly.ai/brands/snail/v2.0.0/texture-dark.svg\")",
+				"text": "rgb(230, 233, 220)"
+			},
+			"overflow": false,
+			"errors": []
+		}
+	],
+	"staticStudy": {
+		"status": 200,
+		"title": "hexly.ai — A little universe of projects",
+		"decoded": true
+	}
+}

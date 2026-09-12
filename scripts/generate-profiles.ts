@@ -1,6 +1,7 @@
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import { dirname, relative } from "node:path";
 import { readProjects } from "../src/data/read-projects";
+import { brandAsset } from "../src/model/brand";
 
 const projects = readProjects();
 await mkdir("docs/profiles", { recursive: true });
@@ -24,17 +25,19 @@ for (const project of projects) {
 		existingProfiles.find((name) => name.endsWith(`-${project.id}.md`)) ??
 		`${String(++nextProfileNumber).padStart(2, "0")}-${project.id}.md`;
 	index.push(
-		`| [${project.emoji} ${project.title}](${name}) | ${project.brandKit ? "Original vector kit" : project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
+		`| [${project.emoji} ${project.title}](${name}) | ${project.brandKit ? (project.brandKit.method === "gpt-image-2" ? "GPT Image animal kit" : "Original vector kit") : project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);
 	const kit = project.brandKit;
+	const generatedKit = kit?.method === "gpt-image-2";
 	const kitSection = kit
-		? `## Native vector brand kit
+		? `## ${generatedKit ? "GPT Image animal brand kit" : "Native vector brand kit"}
 
 - Brand version: \`${kit.version}\`; [public archive](https://hexly.ai/projects/${project.id}#brand).
-- [Light lockup](../../public${kit.root}/lockup-light.svg), [dark lockup](../../public${kit.root}/lockup-dark.svg), [favicon](../../public${kit.root}/favicon.svg).
+- [Light lockup](../../public${brandAsset(kit, "lockup", "light")}), [dark lockup](../../public${brandAsset(kit, "lockup", "dark")}), [favicon](../../public${kit.root}/favicon.${generatedKit ? "ico" : "svg"}).
 - [Complete usage and integration guide](../../public${kit.root}/guide.md), [standalone specimens](../../public${kit.root}/review.html), [all exports and SHA-256](../../public${kit.root}/manifest.json).
 - Source adoption: ${kit.sourceAdoptionRevision ? `recorded at \`${kit.sourceAdoptionRevision}\`` : "separate source-team handoff; no adoption commit is claimed"}.
-- Original geometry and archive code use MIT; the actual Space Grotesk font uses SIL OFL 1.1. No image generation, tracing or third-party icon was used.
+- ${generatedKit ? "The animal and wide hero are Azure OpenAI GPT Image 2 raster generations, with original requests, responses and raw bytes preserved. Transparent extraction and format exports do not make native SVG. Authored textures and archive code use MIT; the unchanged Space Grotesk wordmark uses SIL OFL 1.1. The asset license records the generated-output rights." : "Original geometry and archive code use MIT; the actual Space Grotesk font uses SIL OFL 1.1. No image generation, tracing or third-party icon was used."}
+${kit.previousVersion ? `- [Previous v${kit.previousVersion} identity](../../public/brands/${project.id}/v${kit.previousVersion}/review.html) remains immutable.\n` : ""}
 
 ${kit.description.en}
 
@@ -59,7 +62,7 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 
 ![${project.title} refined preview](../../public${family.root}/icon-160.webp)
 
-- Status: ${family.status === "adopted" ? "Adopted in the source project" : "Local review; this finishing pass has not been adopted in the source project"}; updated ${family.updated}.
+- Status: ${family.status === "adopted" ? "Adopted in the source project" : generatedKit ? "Brand selected; source-project adoption pending" : "Local review; this finishing pass has not been adopted in the source project"}; updated ${family.updated}.
 - Study \`${family.id}\`, finishing \`${family.finishing}\`
 ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en}\n` : ""}- Site path: \`/projects/${project.id}#brand\`; [local gallery](https://index.dev.hexly.ai/projects/${project.id}#brand)
 - [Static review HTML](../../artwork/logo-family/${relative("/logos/family", dirname(family.root))}/review.html)
@@ -136,7 +139,7 @@ ${overviewSection}## Current logo
 
 ![${project.title} source identity](../../public${project.logo.thumbnail})
 
-- Type: ${kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
+- Type: ${generatedKit ? "Preserved source identity; the current Hexly GPT Image animal is documented separately below" : kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
 - [Source](${sourceLink(project.logo.sourceUrl)}): \`${project.logo.sourcePath}\`
 - [Preserved asset](../../public${project.logo.original})
@@ -156,7 +159,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ${kitSection}${familySection}## ${family || kit ? "Further refinements" : "Future family notes"}
 
-${kit ? "Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow." : material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : toolWithoutStudy ? "Keep the current source mark and its provenance. For a future study, choose a recognizable physical object from the tool's actual function and follow the owner's material and composition direction. An animal or fragmented drawing is not required." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
+${generatedKit ? "Preserve the selected native square and wide compositions, original raster colors, transparent silhouette and one-point hierarchy. Do not crop, recolor or trace the generated animal and describe it as native SVG. Keep repeatable textures separate. Published brand versions and rejected candidates remain immutable." : kit ? "Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow." : material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : toolWithoutStudy ? "Keep the current source mark and its provenance. For a future study, choose a recognizable physical object from the tool's actual function and follow the owner's material and composition direction. An animal or fragmented drawing is not required." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
 ${kit ? "Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide." : material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${kit ? " The source team integrates the exact published files and records its own adoption revision." : family ? " Preserve this reviewed composition and its archived predecessors." : snapshot ? " This entry uses the preserved local application artwork; any new study follows its own recorded review decision." : " No new logo is generated in phase one."}
 `;

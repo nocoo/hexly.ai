@@ -1,0 +1,42 @@
+{
+	"startedAt": "2026-09-12T18:30:40.605704+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/edits",
+	"method": "POST",
+	"contentType": "multipart/form-data",
+	"parameters": {
+		"model": "gpt-image-2",
+		"size": "2560x1024",
+		"quality": "high",
+		"n": "1",
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "d66a039c5a8ad7165425f156304b7a6449197f1045ee7c43132dce115e860231",
+	"images": [
+		{
+			"index": 1,
+			"path": "../2026-09-13-01/raw/generated.png",
+			"sha256": "43ae626e6bd0c8090ded7ad671da944a007ffc4a365844137b30bda1574ce568",
+			"bytes": 1796840,
+			"mime": "image/png"
+		},
+		{
+			"index": 2,
+			"path": "../../frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e",
+			"bytes": 5418502,
+			"mime": "image/png"
+		},
+		{
+			"index": 3,
+			"path": "../../../../public/logos/family/ocelot/2026-09-11-01/03/icon.png",
+			"sha256": "2ca4ee7de5f6906c527b0e22967bd7bea4604762c8d342d2300e2156049922dc",
+			"bytes": 6172345,
+			"mime": "image/png"
+		}
+	],
+	"transportReference": "workflow/agents/skills/azure-gpt-image-cover/scripts/generate.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}

@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
+import { brandAsset } from "../src/model/brand";
 
 const projects = readProjects();
 for (const project of projects) {
@@ -28,27 +29,31 @@ for (const project of projects) {
 		);
 		if (manifest.project !== project.id || manifest.version !== kit.version)
 			throw new Error(`Brand manifest disagrees with catalogue: ${project.id}`);
-		for (const name of [
-			"mark-light.svg",
-			"mark-dark.svg",
-			"wordmark-light.svg",
-			"wordmark-dark.svg",
-			"lockup-light.svg",
-			"lockup-dark.svg",
-			"icon-light.svg",
-			"icon-dark.svg",
-			"favicon.svg",
-			"favicon.ico",
-			"guide.md",
-			"license.txt",
-			"space-grotesk-ofl.txt",
+		for (const asset of [
+			...(["mark", "wordmark", "lockup", "icon"] as const).flatMap((name) => [
+				brandAsset(kit, name, "light"),
+				brandAsset(kit, name, "dark"),
+			]),
+			...(kit.method === "gpt-image-2"
+				? [
+						"hero.png",
+						"hero.webp",
+						"hero-square.webp",
+						"texture-light.svg",
+						"texture-dark.svg",
+						"provenance.json",
+					]
+				: ["favicon.svg"]
+			).map((name) => `${kit.root}/${name}`),
+			...[
+				"favicon.ico",
+				"guide.md",
+				"license.txt",
+				"space-grotesk-ofl.txt",
+			].map((name) => `${kit.root}/${name}`),
 		]) {
-			if (
-				!manifest.files.some(
-					(file: { path: string }) => file.path === `${kit.root}/${name}`,
-				)
-			)
-				throw new Error(`Missing brand delivery: ${project.id}/${name}`);
+			if (!manifest.files.some((file: { path: string }) => file.path === asset))
+				throw new Error(`Missing brand delivery: ${asset}`);
 		}
 	}
 	if (

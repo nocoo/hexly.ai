@@ -38,12 +38,21 @@ export function LogoReview({
 		family && view !== "transparent"
 			? `${family.root}/${view === "icon" ? "icon" : "white"}.png`
 			: foreground.original;
+	const familyStatus =
+		family?.status === "adopted"
+			? t.approved
+			: project.brandKit?.method === "gpt-image-2"
+				? locale === "zh"
+					? "品牌已选定 · 等待源项目集成"
+					: "Brand selected · Source adoption pending"
+				: t.localReview;
 
 	return (
 		<div className="logo-review" data-presentation={view}>
-			{project.brandKit ? (
+			{project.brandKit && (
 				<BrandKit project={project} kit={project.brandKit} locale={locale} />
-			) : (
+			)}
+			{(!project.brandKit || family) && (
 				<section aria-label={t.artwork}>
 					<div className="comparison-toolbar">
 						<p>
@@ -127,9 +136,7 @@ export function LogoReview({
 							<figcaption>
 								<strong>{family ? t.refinedArtwork : t.currentArtwork}</strong>
 								<span>
-									{family
-										? `${family.status === "adopted" ? t.approved : t.localReview} · ${family.updated}`
-										: t.preserved}
+									{family ? `${familyStatus} · ${family.updated}` : t.preserved}
 								</span>
 							</figcaption>
 						</figure>
@@ -248,7 +255,7 @@ export function LogoReview({
 							<a
 								className={`alpha-well alpha-${surface}`}
 								href={
-									project.brandKit
+									project.brandKit && !family
 										? `${project.brandKit.root}/mark-${surface}.svg`
 										: foreground.original
 								}
@@ -258,7 +265,7 @@ export function LogoReview({
 							>
 								<img
 									src={
-										project.brandKit
+										project.brandKit && !family
 											? `${project.brandKit.root}/mark-${surface}.svg`
 											: foreground.display
 									}

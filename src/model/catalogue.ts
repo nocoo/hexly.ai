@@ -158,6 +158,20 @@ export function catalogueProblems(projects: Project[]): string[] {
 			(!kit ||
 				!/^\d+\.\d+\.\d+$/.test(kit.version) ||
 				kit.root !== `/brands/${project.id}/v${kit.version}` ||
+				(kit.method !== undefined && kit.method !== "gpt-image-2") ||
+				(kit.previousVersion !== undefined &&
+					(!/^\d+\.\d+\.\d+$/.test(kit.previousVersion) ||
+						kit.previousVersion === kit.version)) ||
+				(kit.method === "gpt-image-2" &&
+					(!project.family || !kit.hero || !kit.previousVersion)) ||
+				(kit.hero !== undefined &&
+					(!kit.hero ||
+						!Number.isInteger(kit.hero.width) ||
+						!Number.isInteger(kit.hero.height) ||
+						kit.hero.width <= 0 ||
+						kit.hero.height <= 0 ||
+						!hasTranslations(kit.hero.alt) ||
+						!hasTranslations(kit.hero.caption))) ||
 				(kit.sourceAdoptionRevision !== null &&
 					!/^[a-f0-9]{40}$/.test(kit.sourceAdoptionRevision)) ||
 				!hasTranslations(kit.description) ||

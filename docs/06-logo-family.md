@@ -221,3 +221,21 @@ The owner delegated raw acceptance and manual site verification. These four reco
 Basalt now has a local [Hanbaiyu and candy-color study](09-basalt-color-study.md). The owner-liked corner-tower architecture stays recognizable, with white marble replacing the black foundation and the source project's existing iMac / iPhone 5C-inspired palette guiding its colored surfaces. One native 2048-square request produced study `2026-09-08-01`, finishing `01`; uniform 80% placement leaves 219.5 px minimum rounded-outline clearance. Basalt keeps its own champagne construction-grid geometry and separate hover shadows.
 
 The complete [local comparison](https://index.dev.hexly.ai/logos/basalt) and [static review](../artwork/logo-family/basalt/2026-09-08-01/review.html) use the previously adopted dark tower as the before image. The new family selection is `review`; the source repository and historical publication remain on the earlier obsidian identity. [Palette references](../artwork/logo-family/basalt/2026-09-08-01/palette-reference.json), native samples, masks, all sizes and finishing history are archived separately. No source replacement or publication is claimed for this local correction.
+
+## Snail animal replacement — 2026-09-13
+
+The owner rejected the native v1 identity and commissioned a generated fragmented
+snail. Six real Azure OpenAI gpt-image-2 calls produced three native 2048-square
+options and three independent 2560 × 1024 heroes. Codex selected Returning 01 and
+Hero 04 under delegated batch acceptance; all alternatives and actual request
+records remain archived. The square's native placement clears the rounded edge
+by 145.5px, with 1,227,417 opaque pixels preserved and no crop/recolor/reposition.
+
+The [complete study](../artwork/logo-family/snail/2026-09-13-01/review.html),
+[versioned specimens](https://hexly.ai/brands/snail/v2.0.0/review.html) and
+[project archive](https://hexly.ai/projects/snail#brand) keep previous/current,
+three modes, all sizes, palette, transparent edges, exact prompts and downloads.
+Brand 2.0.0 adds native wide/square Hero sources, PNG lockups, unchanged Space
+Grotesk outlines and separate low-contrast repeating spiral/trail textures.
+Source adoption is pending; v1 assets and adoption remain historical facts.
+See [the handoff](18-snail-brand.md) for paths, license and source ownership.

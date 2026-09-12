@@ -1,0 +1,214 @@
+{
+	"reviewedAt": "2026-09-12T19:05:12.339Z",
+	"reviewer": "Codex / Hexly integration",
+	"ownerReviewedExactBytes": false,
+	"baseline": "352eb2652d4e11c876ef84152fc8e02f8d5ed331",
+	"brandVersion": "2.0.0",
+	"scope": "Only hexly.ai; v2 Snail source adoption and product release are separate",
+	"generation": {
+		"provider": "Azure OpenAI v1 images/edits",
+		"model": "gpt-image-2",
+		"requests": 6,
+		"selectedSquare": "2026-09-13-01",
+		"selectedHero": "2026-09-13-04",
+		"nativeDimensions": [[2048, 2048], [2560, 1024]],
+		"cropped": false,
+		"recolored": false,
+		"nativePlacement": {
+			"scale": 1,
+			"offset": [0, 0]
+		},
+		"originalC2paRetained": true
+	},
+	"delivery": {
+		"files": 49,
+		"bytes": 32219305,
+		"root": "https://hexly.ai/brands/snail/v2.0.0",
+		"manifestSha256": "e563c69e9dbcb1acb105fe0aa0bcfcd4692bbf548aa599d03e14a1a4053493f1",
+		"previousVersion": "1.0.0",
+		"previousManifestSha256": "11b8203d41030ad5317b94fd8a2a19d7a7b1077f174410b89caea4fd0d082ec8"
+	},
+	"checks": {
+		"typecheck": "passed",
+		"lint": "passed",
+		"build": "passed",
+		"isolation": "passed",
+		"unit": {
+			"files": 19,
+			"tests": 243,
+			"coverage": {
+				"statements": 99.54,
+				"branches": 98.63,
+				"functions": 100,
+				"lines": 100
+			}
+		},
+		"http": {
+			"tests": 72,
+			"result": "passed; includes all v1/v2 bytes, cache headers and family archive"
+		},
+		"browser": {
+			"fullSuite": {
+				"total": 222,
+				"passed": 220,
+				"failed": 2,
+				"reason": "Standalone specimens initially linked to a nonexistent historical Frogie pass URL"
+			},
+			"repair": "Use the preserved public Frogie icon whose SHA-256 exactly matches submitted finishing 02",
+			"affectedRerun": {
+				"tests": 4,
+				"passed": 4
+			},
+			"scope": "Desktop/mobile, English/Chinese, both themes, asset roles, decoded images, downloads, clipboard, no overflow and zero axe violations; final CI runs the complete suite again"
+		},
+		"security": "OSV and Gitleaks commands passed; hooks and CI rerun on the committed revision",
+		"deployDryRun": "passed; production deployment is a later release step",
+		"visual": "Reviewed six-panel site contact sheet and native full-frame family comparison; separate complete static study decoded successfully",
+		"pixelMeasurement": "inspection/pixels.json; 0 changed opaque pixels, exactly 2 foreground components, supported ink text contrast at least 9.759:1"
+	},
+	"peerReviews": {
+		"Grok": {
+			"pane": "w1:p7",
+			"mode": "read-only images and snapshots",
+			"result": "Pass; dark body recedes at small sizes while the shell remains recognizable. Earlier preference for candidate 02 is preserved, without blocking the selected Returning pair."
+		},
+		"Pi": {
+			"pane": "w1:p8",
+			"mode": "read-only source and provenance",
+			"result": "No integration blockers reported. Codex records that the mobile presentation includes separate finishing layers; only the raw wide PNG is completely uncomposited."
+		}
+	},
+	"publication": "No local build alone establishes publication. The release helper must verify the matching successful CI/Deploy and actual production URLs before the final SHA handoff.",
+	"evidence": [
+		{
+			"path": "artwork/brands/snail/v2.0.0/contact-sheet.webp",
+			"bytes": 116714,
+			"sha256": "9ad5085eaf4b612b797eef0ed6120f5380cba82f661bd9d3f5b476905c4d3184"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/family-contact-sheet.webp",
+			"bytes": 78376,
+			"sha256": "9475e38a930af4790d5527520f4f7139574fe92e012ea8b92385793d4914e2a0"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/browser.json",
+			"bytes": 2017,
+			"sha256": "be3707a3ceea2759cf00168ac516183109adcfd14a9845799871e72da6f4f9ca"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-dark-brand.webp",
+			"bytes": 57562,
+			"sha256": "aef0733c34ec4fe8c3c96bff47e6fc6a40f6206760e02b49aa935b6b652148c6"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-dark-comparison.webp",
+			"bytes": 52712,
+			"sha256": "a350af2b694a46a5b799ccf55203ef8f832f1d6bcca9baf03ab51132fac3d116"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-dark-detail.webp",
+			"bytes": 53114,
+			"sha256": "79ab5bd6af984fbda435562e8efb35bb8d67fe9d4503ad91dc978fe19f69f703"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-dark-directory.webp",
+			"bytes": 52928,
+			"sha256": "cea3bd418c58243a21a3413223d1f4747101b0d225f26ba8ecd26370ac9de5e8"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-dark-edges.webp",
+			"bytes": 52246,
+			"sha256": "474e6d174e377b61d6976a04094976b4d7bc2ce26bc9354ad0cbc22c1ad1977f"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-light-brand.webp",
+			"bytes": 55362,
+			"sha256": "ed46a8da3c8294f2310f43a23b9123b845e68808da745d6634be116274fb27f0"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-light-comparison.webp",
+			"bytes": 49604,
+			"sha256": "45b97106e12c8f82983a081df2698fa1b54695e747e8350eb05e32a3cb637abf"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-light-detail.webp",
+			"bytes": 52112,
+			"sha256": "b1fd363eb33473fc834abf4d1a513c42a64509ea4da3f036567d064d05e8a2b3"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-light-directory.webp",
+			"bytes": 50646,
+			"sha256": "956c5d0c19efc3f1348395f30e624c45ed48e36fada284bf5b808c1b09573edd"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/desktop-light-edges.webp",
+			"bytes": 51270,
+			"sha256": "a30288f581e3a517908c94d2ff198b1bd61d11b362d57ab18adb2f69aba4961e"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-dark-brand.webp",
+			"bytes": 24212,
+			"sha256": "939395f8327717a4faf0baf23bf9dac7c703d65fcafd08351af874fd4d71969a"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-dark-comparison.webp",
+			"bytes": 33306,
+			"sha256": "39e0631fc9755e6e1833c0dde4c1d0344a9de598e088c81f1d866c5a522bb5cf"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-dark-detail.webp",
+			"bytes": 24096,
+			"sha256": "5e79b164f81cfee0624b919156bbce1bad5e7aad52ab4ee3442c6e994f5390c1"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-dark-directory.webp",
+			"bytes": 24716,
+			"sha256": "ab48a64730cd773f4c41e74dd5f70b2480bd02f738acfd2f4708af453abe18ed"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-dark-edges.webp",
+			"bytes": 23104,
+			"sha256": "1dc9a632500565b18d06778b667a319ea2baf9fe4e6ec6031bc360368269b7c2"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-light-brand.webp",
+			"bytes": 23626,
+			"sha256": "295b4ebd5ae1c331681285b2275ea027e81e6fe57f3bd99b000292814bf08958"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-light-comparison.webp",
+			"bytes": 32398,
+			"sha256": "24d4d04646e7de24c1aa35de238251c1b26a7293c5106d99a929887e94580720"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-light-detail.webp",
+			"bytes": 23876,
+			"sha256": "bcd2c1cefb085b6cf3ebb24af2f087e3266c5d705e92a4d5220141c8c2414a84"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-light-directory.webp",
+			"bytes": 24542,
+			"sha256": "f40462106b39191a2156c69220b57884a5cf4924afb85a742c9a7edeb775fea4"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/mobile-light-edges.webp",
+			"bytes": 22608,
+			"sha256": "92f76a384fe2c185c49729558229350af17f72c611d577c708145ee8f28a76c5"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/pixels.json",
+			"bytes": 1650,
+			"sha256": "3a5f7e194bd1b7b00be9ca0f7a5022f7fc0a0e5e69c4f180439144a14dd32265"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/inspection/standalone-light.webp",
+			"bytes": 277168,
+			"sha256": "d0fb31565c0682dbd1e31261288f231c63781a507fd0daa5ac2bff5ebec3690f"
+		},
+		{
+			"path": "artwork/brands/snail/v2.0.0/square-comparison.webp",
+			"bytes": 88904,
+			"sha256": "69bca3d7d569254a89f317c3065dc91ab0c1ca44bdeef45c34ecf59b9400244b"
+		}
+	]
+}

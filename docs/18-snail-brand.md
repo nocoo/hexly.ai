@@ -1,109 +1,140 @@
-# Snail — original vector identity and catalogue handoff
+# Snail — generated animal identity and source-team handoff
 
-Snail is a private video collection, organization and playback library. Its
-public repository was created on 2026-09-12; the source team is implementing the
-first product release. This change publishes the **brand**, independently of
-that application release.
+Snail is a private library for collecting, organizing and playing videos. Its
+current Hexly identity is **brand 2.0.0**, a fragmented terracotta snail with an
+ink-and-olive body and one forward red point. The owner rejected v1.0.0 and
+commissioned actual GPT Image animal artwork. The old vector kit remains an
+immutable historical version.
 
-## Scope and ownership
+## Scope and source status
 
-The owner explicitly limited all repository writes to `hexly.ai`. The starting
-branch was clean `main`, equal to `origin/main`, at
-`a55baf21a2f0842c0580098e54d4479e41847593` (site v0.7.0). Snail Codex `w36:p1`
-confirmed through Herdr that it writes only `snail` and keeps a provisional asset
-slot until the fixed Hexly publication is handed over. The Snail source and
-GitHub profile were not modified by this task.
+Only `hexly.ai` is written. The starting branch was clean `main`, equal to
+`origin/main`, at `352eb2652d4e11c876ef84152fc8e02f8d5ed331` (site v0.8.0).
+Codex owns integration and publication. Grok `w1:p7` and Pi `w1:p8` supplied
+read-only candidate and integration reviews. Snail Codex `w36:p1` owns all writes
+in its own repository; no profile text change is needed for this logo replacement.
 
-The [product handoff](sources/snail-2026-09-12-handoff.md) and its
-[checksummed snapshot](sources/snail-2026-09-12.json) record the actual public
-repository, intended website and confirmed implementation plan. Null source and
-profile revisions are deliberate: no unavailable source commit, adoption or
-profile update is invented.
+Snail's latest owner-relayed source report identifies application main
+`fd5b6842d5090347e9296f9f591b77d17ee21f10`, a deployed **0.1.0 candidate** with
+successful CI/deployment and anonymous JSON health. Authenticated upload and
+Connector acceptance are pending normal owner login; there is no product tag or
+GitHub Release. This report is attribution, not a claim of new production tests
+by the Hexly brand task. The earlier [initial product snapshot](sources/snail-2026-09-12.json)
+and [handoff](sources/snail-2026-09-12-handoff.md) remain unchanged.
 
-## Design
+The v1 brand was published at Hexly `352eb2652d4e11c876ef84152fc8e02f8d5ed331`
+and separately adopted by Snail at
+`fe5f72e8a0d960a81acadc5704a04e1c4ed4f607`. **v2 source adoption is pending**.
+The catalogue therefore retains `family.status: "review"` and a null v2
+`brandKit.sourceAdoptionRevision`. The UI says “Brand selected · Source adoption
+pending,” avoiding a false application adoption or a misleading local-only label.
 
-The mark is an original, editable vector: a coiled shell, a low carrying line
-and one terracotta point. A private collection is its core idea; the forward
-gesture suggests returning to a chosen film. It has no borrowed Eagle geometry,
-raster tracing or image-model generation. The explicit scalable product-identity
-brief follows native vector construction rather than a generated animal study.
+## Generation, selection and finishing
 
-- Paper/ink/terracotta come unchanged from `src/styles/base.css` at the baseline
-  above. Dark variants use the actual site dark palette.
-- The wordmark is **Snail**, in the site's Space Grotesk 600 with -1/23 em
-  tracking. Exact glyphs are outlined; SVG marks need no runtime font request.
-- The main mark has a 256-unit canvas, 22-unit rounded strokes and one 24-unit
-  point. Clear space is at least one point diameter around the visible artwork.
-- Minimum sizes: mark 16px (24px recommended), wordmark 72px wide, lockup 160px
-  wide. The smallest coil softens at favicon size; the silhouette remains primary.
-- Transparent navigation marks and favicons stay separate from square app
-  presentations. The favicon ICO is a real six-entry container with alpha.
+Six successful Azure OpenAI v1 `/images/edits` requests used `gpt-image-2`, quality
+`high`. Runs `2026-09-13-01` to `03` are native 2048-square animal candidates;
+runs `04` to `06` are independent native 2560 × 1024 compositions. Each request
+retains the exact prompt, reference order and hashes, actual request ID,
+sanitized response, original PNG/C2PA bytes and its raw-review decision.
 
-## Paths and version
+Square references are the real Frogie finishing 02, Pew finishing 04 and Ocelot
+finishing 03 assets. Heroes use their corresponding square first, then Frogie
+and Ocelot. Eagle and the old Snail symbol were not submitted to the model.
+Codex selected **Returning (01) + Hero (04)** under the owner's delegated batch
+acceptance. The owner did not review the exact new bytes. Grok preferred Turning
+(02) for expression; the [selection record](../artwork/brands/snail/v2.0.0/selection.json)
+retains that disagreement and the small-size/framing rationale.
 
-| Purpose | Path |
+Finishing `01` uses exterior-connected near-white extraction. It retains the
+separate red point and all animal anatomy, adds independent paper, spiral/trail,
+grain and shallow shadows, and leaves the native frame at scale 1 and offset
+[0, 0]. **1,227,417 fully opaque pixels are identical** to the source;
+10,123 boundary pixels carry alpha. Actual rounded-outline clearance is
+145.5px against the 128px requirement. No crop, repositioning, recoloring,
+geometry retouch or post-generation composition repair was performed.
+
+The wide Hero PNG is the untouched model output. WebP conversion retains its
+entire frame. Narrow screens use the independent square presentation, not a
+crop of the wide image. The animal remains raster: there is no native or traced
+animal SVG. The wordmark reuses the exact licensed Space Grotesk 600 outlines;
+512px repeatable spiral/trail SVG textures are independently authored support
+geometry and have separate light/dark token variants.
+
+## Files and public entry points
+
+| Purpose | Location |
 | --- | --- |
-| Project catalogue | `src/data/projects/snail.json` |
-| Canonical detail and brand section | `https://hexly.ai/projects/snail#brand` |
-| Native master, font outline tool, export recipe, design history | `artwork/brands/snail/v1.0.0/` |
-| Immutable SVG/PNG/ICO/font/license exports | `public/brands/snail/v1.0.0/` |
-| Public standalone specimens | `https://hexly.ai/brands/snail/v1.0.0/review.html` |
-| Public usage guide | `https://hexly.ai/brands/snail/v1.0.0/guide.md` |
-| Exact files, bytes and SHA-256 | `https://hexly.ai/brands/snail/v1.0.0/manifest.json` |
-| Preserved original | `public/logos/originals/snail-v1-0-0.svg` |
-| Site share card | `https://hexly.ai/og/snail.jpg` |
+| Catalogue and single status source | `src/data/projects/snail.json` |
+| Project, responsive Hero and complete brand review | https://hexly.ai/projects/snail#brand |
+| Brand recipe, selection, measurements and review source | `artwork/brands/snail/v2.0.0/` |
+| All six requests and untouched candidates | `artwork/logo-family/snail/2026-09-13-{01..06}/` |
+| Selected frozen extraction and ten export sizes | `artwork/logo-family/snail/2026-09-13-01/finishing/01/` |
+| Complete local study | `artwork/logo-family/snail/2026-09-13-01/review.html` |
+| Immutable public kit | `public/brands/snail/v2.0.0/` |
+| Standalone specimens | https://hexly.ai/brands/snail/v2.0.0/review.html |
+| All kit files, byte lengths and SHA-256 | https://hexly.ai/brands/snail/v2.0.0/manifest.json |
+| Usage, clear space, sizes, theme and integration guide | https://hexly.ai/brands/snail/v2.0.0/guide.md |
+| Exact generation, selection and processing provenance | https://hexly.ai/brands/snail/v2.0.0/provenance.json |
+| Existing family comparison/export interface | `/logos/family/snail/2026-09-13-01/01/` |
+| New original backup | `public/logos/originals/snail-v2-0-0.png` |
+| Preserved previous kit | https://hexly.ai/brands/snail/v1.0.0/review.html |
+| Regenerated share image | https://hexly.ai/og/snail.jpg |
 
-The **brand version is 1.0.0**, separate from both the Hexly site version and the
-Snail product version. The native-kit record is optional; existing image-study
-archives keep their previous paths, artwork, comparison views and adoption status.
-`BrandKit` extends the existing detail's `#brand` section with native wordmark
-specimens, practical usage rules, downloads and provenance. Existing small-size,
-palette and light/dark edge reviews remain shared.
+The old manifest SHA-256 remains
+`11b8203d41030ad5317b94fd8a2a19d7a7b1077f174410b89caea4fd0d082ec8`;
+the old mark is
+`bd936c17cf3d2c64c09150a7e4d7fd07206278505f781a8e4eb162fac2bdb00a`.
+Its source masters, original backup, font resources and published exports are
+not rewritten. `project.logo` preserves that source provenance; `family` drives
+new default cards, directory/gallery, detail, transparent previews, templates
+and share images.
 
-The catalogue remains the only project and health-target source. Snail joins the
-animal display family, the Everyday product category, and automatically produces
-`https://snail.hexly.ai/api/live`. The endpoint is a confirmed deployment target;
-health is never seeded or claimed from a login page. Snail owns its public health
-implementation and precise Access exception. An unknown/down/unconfigured result
-before its deployment does not remove the catalogue entry.
+## Usage and maintenance
 
-Sitemap, crawler HTML, JSON-LD, share metadata and llms.txt derive from the new
-catalogue entry. The standalone specimen page is `noindex` and canonicalizes to
-the project detail. `/brands/*` serves only versioned files with immutable cache
-headers; original historical assets keep their existing cache policy.
+Use full transparent PNGs in navigation and the six-entry ICO in browser tabs.
+Keep tile backgrounds and rounding for large presentations. Mark minimum is
+16px, navigation preference 24px, wordmark minimum 72px and lockup minimum 160px.
+A 16px specimen prioritizes shell/silhouette; small antennae, facets and the
+point soften. Do not invent extra points, filters or masks to compensate.
 
-## License and maintenance
+UI colors and font remain the actual Hexly paper/ink/terracotta system.
+`palette.json` separately records sampled raster colors and source coordinates.
+The decorative 512px texture uses 3.8% ink and 3.2% accent, transparent boundaries
+and 360–480 CSS-pixel repeat size. Cards and the archive choose it from the actual
+site theme; all wordmark descenders retain their full bounds.
 
-Original Snail geometry and code follow this repository's MIT license. The
-unchanged Space Grotesk font and notices use SIL OFL 1.1. `tokens.json`, the guide
-and manifest record their sources and checksums. The official Hexly endorsement
-mark copies the exact existing paths, independently of the Snail mark.
+`brandKit.method: "gpt-image-2"` selects PNG assets, while native kits retain SVG
+compatibility. `BrandKit` supplements the existing complete family comparison:
+previous/current, three presentation modes, all small sizes, palette, edge
+inspection and exact prompt/downloads. Reference boards stay in static specimens
+and Git, outside the React product archive. The Hero is separate optional brand
+metadata, never a screenshot or a fabricated product video.
 
-For revisions, create a new brand version and retain the old directory. The export
-script refuses to overwrite a committed version. `assets:check` verifies both the
-active kit's delivery and all historical native-kit manifest hashes. The profile
-generator distinguishes this commissioned vector identity from generated artwork
-and from source-project adoption.
+The exporter refuses an already committed version. Any later export-byte change
+requires a new version; preserve all earlier raw studies and frozen finishing
+passes. Format mutable source files before exporting, then run asset/profile
+regeneration and verify every historical manifest. Do not format frozen
+finishing or sanitized request/response records.
 
-## Downstream handoff
+Authored code/texture and any owner-held generated-output rights use the MIT
+notice in the kit; Azure generation and rights limits are stated explicitly.
+Space Grotesk retains its original SIL OFL 1.1 notices. The unmodified Hexly mark
+is supplied as a separate endorsement resource, not confused with Snail.
 
-After the normal site release, send `w36:p1` the actual published full Git SHA,
-brand version, public manifest/guide URLs, and the main SVG/PNG/favicon paths.
-Snail should pin that Git SHA, copy selected **exact** bytes into its own repo,
-verify the manifest hashes, retain MIT/OFL notices and record an adoption commit.
-App theme toggles choose explicit light/dark assets; the adaptive favicon follows
-the browser's system theme. No Snail scripts, private videos, tokens or application
-implementation are part of this Hexly archive.
+## Verification and handoff
 
-Local typecheck, lint, build, isolation, asset verification, 240 unit tests,
-71 HTTP tests and 218 browser tests passed. The ICO's six entries decode with
-alpha. Desktop/mobile light/dark inspection found no horizontal overflow,
-browser errors or axe violations; the standalone specimen sheet passed too.
-The [contact sheet](../artwork/brands/snail/v1.0.0/contact-sheet.webp) and
-[verification record](../artwork/brands/snail/v1.0.0/verification.json) preserve
-the actual review. Original family assets and previous project profiles are
-unchanged. A bounded public Snail health probe reported `down/network` before
-the application's deployment, without writing mock or backfilled observations.
+Meaningful checks cover generated-kit schema and native-kit compatibility,
+old/new asset hashes, native dimensions, opaque-pixel equality, real ICO entries,
+transparent texture seams, desktop/mobile and light/dark review, bilingual UI,
+no overflow, true downloads, clipboard and accessibility. The archive records
+actual visual snapshots and results under `artwork/brands/snail/v2.0.0/` outside
+frozen finishing. Repository quality gates and the normal release pipeline are
+required; no source product health observation is seeded or changed by this work.
 
-The final release SHA and production result are sent only after successful CI,
-the matching Deploy job and an actual production document/asset smoke.
+After the matching successful CI and Deploy jobs, verify the production detail,
+manifest and actual asset bytes. Send `w36:p1` the **published full Hexly SHA**,
+brand 2.0.0, immutable URLs and manifest SHA-256. Snail should pin that commit,
+copy selected exact bytes, preserve MIT/OFL and record its own adoption commit.
+App and OS themes may differ: choose wordmark/texture by the app theme; the
+transparent animal and favicon are theme neutral. A pending authentication gate
+must not be dismissed by this brand publication.

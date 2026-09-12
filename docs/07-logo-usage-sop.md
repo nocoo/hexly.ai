@@ -215,3 +215,24 @@ The owner-approved `2026-09-11-01 / 03` study is published in Ocelot at [`9d27ee
 | Social | Shared `https://hexly.ai/og/ocelot.jpg`; no invented Ocelot deployment URL |
 
 The complete [static study](../artwork/logo-family/ocelot/2026-09-11-01/review.html) and [/logos/ocelot](https://hexly.ai/logos/ocelot) retain the old SVG, all three presentation modes, actual sizes, native palette evidence, edge views and exact downloads. Reference boards stay in static HTML. [Source browser checks](../artwork/logo-family/ocelot/2026-09-11-01/inspection/source-browser/checks.json) cover eight states and five served assets in both themes. The source passed its pre-commit and pre-push hooks, 147 unit tests and four affected browser journeys. Ocelot itself remains undeployed; Hexly release monitoring was explicitly waived.
+
+## Snail brand 2.0.0 — Hexly-only handoff, 2026-09-13
+
+The previous 1.0.0 vector kit remains published and was separately adopted by
+Snail at `fe5f72e8a0d960a81acadc5704a04e1c4ed4f607`. The owner rejected that
+identity and commissioned a fragmented GPT Image snail. The replacement's
+`family.status` stays `review` until Snail records its own v2 adoption. This task
+changes only Hexly, never source-app consumers or a pending product release.
+
+Use `brands/snail/v2.0.0/logo.png` as the transparent native master, sized
+`mark-*.png` for navigation and the real transparent six-entry `favicon.ico`.
+The animal is theme neutral; select outlined wordmarks and authored spiral/trail
+textures from the actual app theme. Square/rounded presentations and the native
+wide Hero are large-use assets. Mobile uses a separate generated square rather
+than cropping the Hero. No extra dot, filter, mask or synthetic animal SVG.
+
+The [guide](../public/brands/snail/v2.0.0/guide.md),
+[manifest](../public/brands/snail/v2.0.0/manifest.json) and
+[handoff record](18-snail-brand.md) give full source history, exact hashes,
+minimum sizes and license. Send the published Hexly SHA and URLs to `w36:p1`
+after production verification; Snail owns exact-byte copying and adoption.
