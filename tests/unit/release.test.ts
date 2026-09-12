@@ -11,6 +11,7 @@ import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
 	chooseVersion,
+	deploymentRunFor,
 	parseVersion,
 	releaseNotes,
 	releaseOptions,
@@ -24,6 +25,28 @@ const baseline = {
 	changedLines: 1,
 	now,
 };
+
+it("waits for the deployment triggered by the exact successful CI run and revision", () => {
+	const current = {
+		databaseId: 20,
+		headSha: "a".repeat(40),
+		displayTitle: "Deploy CI 10",
+		event: "workflow_run",
+	};
+	expect(
+		deploymentRunFor(
+			[
+				{ ...current, databaseId: 21, displayTitle: "Deploy CI 9" },
+				{ ...current, databaseId: 22, headSha: "b".repeat(40) },
+				{ ...current, databaseId: 23, event: "workflow_dispatch" },
+				current,
+			],
+			10,
+			current.headSha,
+		),
+	).toBe(20);
+	expect(deploymentRunFor([], 10, current.headSha)).toBeUndefined();
+});
 
 describe("release version policy", () => {
 	it("publishes an untagged first version without inventing a bump", () => {
