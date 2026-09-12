@@ -959,6 +959,9 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	}
 	.site-header .surface-links {
 		gap: 12px;
+		max-width: 100%;
+		overflow-x: auto;
+		scrollbar-width: none;
 	}
 	.view-links {
 		gap: 2px;
@@ -1008,6 +1011,16 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	.site-header .surface-links a {
 		font-size: 10px;
 		letter-spacing: 0.03em;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+	.view-links .view-link-label {
+		display: none;
+	}
+	.view-links button {
+		width: 36px;
+		padding: 0;
 	}
 }
 

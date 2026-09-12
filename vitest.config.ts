@@ -2,7 +2,10 @@ import { configDefaults, defineConfig } from "vitest/config";
 
 export default defineConfig({
 	test: {
-		include: ["tests/unit/**/*.test.ts"],
+		include: [
+			"tests/unit/**/*.test.ts",
+			"packages/video-kit/tests/**/*.test.ts",
+		],
 		forceRerunTriggers: [
 			...configDefaults.forceRerunTriggers,
 			"**/bun.lock",
@@ -13,6 +16,8 @@ export default defineConfig({
 			"**/scripts/release.ts",
 			"**/artwork/logo-family/tools/**",
 			"**/public/logos/originals/hexly-ai.*",
+			"**/packages/video-kit/public/**",
+			"**/packages/video-kit/vendor/**",
 		],
 		coverage: {
 			provider: "v8",

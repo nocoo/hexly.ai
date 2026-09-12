@@ -1,6 +1,6 @@
 # hexly.ai
 
-Bilingual project directory, preserved logo gallery, and public service status.
+Bilingual project directory, preserved logo gallery, public service status, and reusable Video Kit.
 Profile: ts-worker-web. Direction: [docs/01-overview.md](docs/01-overview.md). Frameworks must not rewrite this file.
 
 ## Sources of Truth
@@ -14,6 +14,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
 | Status | `src/model/status.ts`, `worker/status.ts`, [storage and scheduling](docs/11-status-monitoring.md) |
+| Video Kit | `packages/video-kit/`, `src/data/videos.json`, [family and publication rules](docs/16-video-kit.md) |
 | Enforcement | `.husky/`, `scripts/gates.ts`, `.github/workflows/ci.yml`, test configs |
 | Secrets | GitHub Actions secrets; local `.env*` and `.dev.vars*` are gitignored; never track values |
 | Accidents | [Retrospective.md](Retrospective.md); machine rules stay in global `AGENTS.md` and `rules/` |
@@ -25,6 +26,9 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - Visitors only read observations. Missing/stale checks remain unknown; HTML fallbacks, redirects, and login pages are never healthy. Local mock data is labeled and must never seed production.
 - Status timestamps, hourly buckets, retention, and availability calculations remain UTC. Display times in the browser's current time zone by default; the top selector remembers an explicit choice, and Local follows the browser. Use `Intl` for date-specific offsets and daylight-saving transitions.
 - Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation in directory, gallery, and status views.
+- `/videos` adapts the existing catalogue once for all five templates and Video/Deck views. Keep the official Hexly mark/wordmark, licensed fonts, paper/ink/terracotta tokens, red-dot restraint and shared motion primitives. Deck and reduced motion show settled states; previews start paused.
+- Shared template code belongs in `packages/video-kit`; project-specific scripts, voices, scenes, production logs and finished films belong to their consumer. Consumers pin a published Git SHA. The package is private, not an npm release. Preserve concurrent handoffs and stop on unknown writes.
+- Publish only reviewed hash-named WebP/MP4/PPTX/PDF from the public video manifest. Keep renderer caches, full frames and temporary inputs outside public assets. `video:check` verifies hashes, a 20 MB per-file / 40 MB collection budget and no undeclared files. Bump immutable asset paths with kit versions.
 - Keep gallery artwork in place when switching projects or languages. Mobile title sizing must fit the available width without changing the heading height between projects; verify the full gallery browser suite after changing its layout.
 - Use `/logos/<project>` for identity routes and copied links. All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs on gallery pages.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
@@ -53,6 +57,8 @@ src/App.tsx        browser state and view orchestration
 src/components/    accessible React views
 src/styles/        design tokens and view styles
 public/logos/      original backups, emoji identities, WebP derivatives
+public/video-assets/ reviewed video sample and deck downloads
+packages/video-kit/ five templates, shared brand/motion, schema, player, renderer
 worker/            gateway, scheduled probes, D1 status queries
 migrations/        D1 schema
 scripts/           local mock D1, asset/profile generators, verification, gates, release
@@ -77,9 +83,15 @@ bun run test:browser
 bun run check:security
 bun run assets:build && bun run docs:profiles && bun run assets:check
 bun run release -- --dry-run
+bun run video:dev
+bun run video:studio
+bun run video:render -- --project pew --template studio --mode all
+bun run video:check
 ```
 
 Run the asset/profile generation sequence after intentional catalogue or artwork changes; ordinary builds use checked-in assets. Read [docs/05-release.md](docs/05-release.md) before publishing.
+
+Video exports require Chrome/Chromium and FFmpeg. Real PPTX/PDF contain image-backed pages, with editable native PPTX speaker notes. See the [kit README](packages/video-kit/README.md) for schema/API, export commands, dependency/brand licenses and the reproducible PptxGenJS dependency pruning. Never suppress its known dependency advisory instead of removing the unused vulnerable code.
 
 ## Verification
 

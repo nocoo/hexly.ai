@@ -4,6 +4,7 @@ import { dirname, resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
 import manifest from "./package.json" with { type: "json" };
+import { videoSiteAssets } from "./scripts/video-site-assets";
 import { readProjects } from "./src/data/read-projects";
 import {
 	applyPageToHtml,
@@ -158,7 +159,13 @@ function releaseMetadata(): Plugin {
 }
 
 export default defineConfig({
-	plugins: [react(), catalogueAssets(), discoveryAssets(), releaseMetadata()],
+	plugins: [
+		react(),
+		catalogueAssets(),
+		videoSiteAssets(),
+		discoveryAssets(),
+		releaseMetadata(),
+	],
 	server: {
 		host: "127.0.0.1",
 		port: 7048,
