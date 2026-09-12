@@ -120,6 +120,8 @@ Video exports require Chrome/Chromium and FFmpeg. Real PPTX/PDF contain image-ba
 Pre-commit runs only staged-file Biome and affected unit tests, concurrently and without coverage. Vitest selects tests from staged, unstaged, and untracked Git changes; configuration/dependency changes and inputs read outside the import graph trigger all unit tests. Documentation/artwork-only changes with no related tests pass without running the suite. Full typecheck, lint, coverage, isolation, security, and integration/browser checks remain in CI; pre-push runs L2 + G2.
 Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Playwright enforces `forbidOnly`. Hooks read working-tree content, without index snapshots or stdin-ref-range validation. Review the staged diff explicitly.
 
+Status browser tests pin the browser clock to the fixed SQLite demo's latest sample; deliberate stale fixtures use that same clock. Long CI runs must not age all demo services into unknown states. The maintained Wrangler development-proxy patch retries a disconnected read once, with fault-injection coverage; writes, canceled requests, upgrades and actual HTTP failures are never replayed. See `patches/README.md`.
+
 ## Resources / Isolation
 
 | Purpose | Port | Runtime state / access |

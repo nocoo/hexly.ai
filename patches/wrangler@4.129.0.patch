@@ -1,18 +1,31 @@
 diff --git a/templates/startDevWorker/ProxyWorker.ts b/templates/startDevWorker/ProxyWorker.ts
-index 59b507d72fea2aed32dee4fdcc3fa5c04418cda1..df4149a435c2d2143994f20dd3a4960fd41a4a11 100644
+index 59b507d72fea2aed32dee4fdcc3fa5c04418cda1..af3df7a0e4264192add9151fa530249156cebf31 100644
 --- a/templates/startDevWorker/ProxyWorker.ts
 +++ b/templates/startDevWorker/ProxyWorker.ts
-@@ -165,6 +165,9 @@ export class ProxyWorker implements DurableObject {
+@@ -165,6 +165,22 @@ export class ProxyWorker implements DurableObject {
  
  			// explicitly NOT await-ing this promise, we are in a loop and want to process the whole queue quickly + synchronously
  			void fetch(userWorkerUrl, new Request(request, { headers }))
++				.catch((error: Error) => {
++					// One retry for a lost read connection; never replay writes or upgrades.
++					if (
++						(request.method === "GET" || request.method === "HEAD") &&
++						!request.signal.aborted &&
++						!request.headers.has("Upgrade") &&
++						error.message === "Network connection lost." &&
++						isSameUserWorkerOrigin(userWorkerUrl, this.proxyData?.userWorkerUrl)
++					) {
++						return fetch(userWorkerUrl, new Request(request, { headers }));
++					}
++					throw error;
++				})
 +				.catch((error: Error) => {
 +					throw new UserWorkerFetchError(error);
 +				})
  				.then(async (res) => {
  					res = new Response(res.body, res);
  					rewriteUrlRelatedHeaders(res.headers, innerUrl, outerUrl);
-@@ -197,6 +200,25 @@ export class ProxyWorker implements DurableObject {
+@@ -197,6 +213,25 @@ export class ProxyWorker implements DurableObject {
  					if (
  						isSameUserWorkerOrigin(userWorkerUrl, this.proxyData?.userWorkerUrl)
  					) {
@@ -38,7 +51,7 @@ index 59b507d72fea2aed32dee4fdcc3fa5c04418cda1..df4149a435c2d2143994f20dd3a4960f
  						void sendMessageToProxyController(this.env, {
  							type: "error",
  							error: {
-@@ -284,6 +306,13 @@ function isRequestForLiveReloadWebsocket(req: Request): boolean {
+@@ -284,6 +319,13 @@ function isRequestForLiveReloadWebsocket(req: Request): boolean {
  	return isWebSocketUpgrade && websocketProtocol === LIVE_RELOAD_PROTOCOL;
  }
  
@@ -53,21 +66,33 @@ index 59b507d72fea2aed32dee4fdcc3fa5c04418cda1..df4149a435c2d2143994f20dd3a4960f
  	env: Env,
  	message: ProxyWorkerOutgoingRequestBody
 diff --git a/wrangler-dist/ProxyWorker.js b/wrangler-dist/ProxyWorker.js
-index 2631ee69aa0d96a99d35e7e1d0535c50019c45ec..b6255d49660a2a8ce3f0af4da35284556542c388 100644
+index 2631ee69aa0d96a99d35e7e1d0535c50019c45ec..f05a82439d9cd8de5e23148a1cbad34a0c18987d 100644
 --- a/wrangler-dist/ProxyWorker.js
 +++ b/wrangler-dist/ProxyWorker.js
-@@ -139,7 +139,9 @@ var ProxyWorker = class {
+@@ -139,7 +139,21 @@ var ProxyWorker = class {
            headers.set(key, value);
          }
        }
 -      void fetch(userWorkerUrl, new Request(request, { headers })).then(async (res) => {
 +      void fetch(userWorkerUrl, new Request(request, { headers })).catch((error) => {
++        // One retry for a lost read connection; never replay writes or upgrades.
++        if (
++          (request.method === "GET" || request.method === "HEAD") &&
++          !request.signal.aborted &&
++          !request.headers.has("Upgrade") &&
++          error.message === "Network connection lost." &&
++          isSameUserWorkerOrigin(userWorkerUrl, this.proxyData?.userWorkerUrl)
++        ) {
++          return fetch(userWorkerUrl, new Request(request, { headers }));
++        }
++        throw error;
++      }).catch((error) => {
 +        throw new UserWorkerFetchError(error);
 +      }).then(async (res) => {
          res = new Response(res.body, res);
          rewriteUrlRelatedHeaders(res.headers, innerUrl, outerUrl);
          await checkForPreviewTokenError(res, this.env, proxyData);
-@@ -154,6 +156,24 @@ var ProxyWorker = class {
+@@ -154,6 +168,24 @@ var ProxyWorker = class {
          deferredResponse.resolve(res);
        }).catch((error) => {
          if (isSameUserWorkerOrigin(userWorkerUrl, this.proxyData?.userWorkerUrl)) {
@@ -92,7 +117,7 @@ index 2631ee69aa0d96a99d35e7e1d0535c50019c45ec..b6255d49660a2a8ce3f0af4da3528455
            void sendMessageToProxyController(this.env, {
              type: "error",
              error: {
-@@ -213,6 +233,12 @@ function isRequestForLiveReloadWebsocket(req) {
+@@ -213,6 +245,12 @@ function isRequestForLiveReloadWebsocket(req) {
    const isWebSocketUpgrade = req.headers.get("Upgrade") === "websocket";
    return isWebSocketUpgrade && websocketProtocol === LIVE_RELOAD_PROTOCOL;
  }

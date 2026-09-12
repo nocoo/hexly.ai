@@ -4,6 +4,18 @@ import { type StatusSnapshot, statusTargets } from "../../src/model/status";
 
 const targets = statusTargets(readProjects());
 
+test.beforeEach(async ({ page, request }) => {
+	const snapshot: StatusSnapshot = await (
+		await request.get("/api/status")
+	).json();
+	const sampledAt = Math.max(
+		...snapshot.services.map((service) => service.latest?.checkedAt ?? 0),
+	);
+	expect(sampledAt).toBeGreaterThan(0);
+	// Demo D1 is seeded once; slow CI must not age the fixture into a different state.
+	await page.clock.setFixedTime(sampledAt + 10_000);
+});
+
 test("navigates to status, filters services, and inspects hourly history and the latest check", async ({
 	page,
 }) => {
@@ -139,6 +151,7 @@ test("does not present an empty or stale feed as healthy", async ({
 	).toBeVisible();
 	await expect(page.locator(".status-bar.status-operational")).toHaveCount(0);
 	await page.unroute("**/api/status");
+	const now = await page.evaluate(() => Date.now());
 	await page.route("**/api/status", (route) =>
 		route.fulfill({
 			json: {
@@ -147,7 +160,7 @@ test("does not present an empty or stale feed as healthy", async ({
 					(service: { latest: object | null }) => ({
 						...service,
 						latest: service.latest
-							? { ...service.latest, checkedAt: Date.now() - 900_000 }
+							? { ...service.latest, checkedAt: now - 900_000 }
 							: null,
 					}),
 				),
