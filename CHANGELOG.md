@@ -5,6 +5,7 @@
 ### Fixes
 
 - align hermes on herdr branding ([2fa67fa](https://github.com/nocoo/hexly.ai/commit/2fa67fa78d7cd2941dc75929c48fe3f232382321))
+- keep mobile gallery titles compact and stable ([e0906a9](https://github.com/nocoo/hexly.ai/commit/e0906a9fdff54cb49583554b969ad93bac505384))
 
 ## [0.5.6] - 2026-09-11
 
