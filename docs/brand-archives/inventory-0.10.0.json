@@ -1,0 +1,2853 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-13",
+	"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"siteVersion": "0.9.0",
+	"targetVersion": "0.10.0",
+	"sources": [
+		"src/data/projects/index.json",
+		"src/data/projects/*.json",
+		"src/model/catalogue.ts",
+		"src/model/routes.ts",
+		"https://hexly.ai/data/projects.json",
+		"https://hexly.ai/sitemap.xml",
+		"https://hexly.ai/api/live"
+	],
+	"productionComparison": {
+		"sameOrderedIds": true,
+		"exactCatalogueContentEqual": true,
+		"all75CanonicalRoutesInSitemap": true,
+		"version": "0.9.0",
+		"revision": "d600805f7c2833d601bc32d6e3db0b02360eb0c6"
+	},
+	"counts": {
+		"total": 75,
+		"active": 55,
+		"target": 54,
+		"archived": 20
+	},
+	"batches": {
+		"animal": 24,
+		"retained": 10,
+		"adapted": 1,
+		"material": 19
+	},
+	"snailBaseline": {
+		"v2ManifestSha256": "e563c69e9dbcb1acb105fe0aa0bcfcd4692bbf548aa599d03e14a1a4053493f1",
+		"v1ManifestSha256": "11b8203d41030ad5317b94fd8a2a19d7a7b1077f174410b89caea4fd0d082ec8"
+	},
+	"projects": [
+		{
+			"id": "frogie",
+			"title": "Frogie",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/frogie",
+			"catalogueSha256": "3aed987716338c019a3c1e38dea8e434b43f4f32b08227f42ebb95c485e71988",
+			"original": {
+				"path": "/logos/originals/frogie-2026-09-06.png",
+				"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "Azure Foundry · gpt-image-2",
+			"identity": "Full-body green frog with musical notes",
+			"familyRoot": "/logos/family/frogie/2026-09-06-01/03",
+			"sourceArchive": "artwork/logo-family/frogie/2026-09-06-01",
+			"foreground": {
+				"original": "/logos/family/frogie/2026-09-06-01/03/transparent.png",
+				"display": "/logos/family/frogie/2026-09-06-01/03/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+			},
+			"pattern": "Frogie leaf rhythm",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/frogie-2026-09-06.png",
+				"campaignArtwork": "/logos/family/frogie/2026-09-06-01/03/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "66d912aa8a9aba0dcc8c41ad1235f17b30860bc501a2a82b83109e88614865a0"
+		},
+		{
+			"id": "pew",
+			"title": "Pew",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/pew",
+			"catalogueSha256": "1ae30f128f6da4c484e254185fd15aa106b5a5cf6b3a7255ac6db2a8ff133a2f",
+			"original": {
+				"path": "/logos/originals/pew-2026-09-07.png",
+				"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "Azure Foundry · gpt-image-2",
+			"identity": "Zebra portrait with a rainbow tongue",
+			"familyRoot": "/logos/family/pew/2026-09-06-01/04",
+			"sourceArchive": "artwork/logo-family/pew/2026-09-06-01",
+			"foreground": {
+				"original": "/logos/family/pew/2026-09-06-01/04/transparent.png",
+				"display": "/logos/family/pew/2026-09-06-01/04/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+			},
+			"pattern": "Zebra rhythm",
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/pew-2026-09-07.png",
+				"campaignArtwork": "/logos/family/pew/2026-09-06-01/04/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "93d50a8817d0d3ffc543adac68b951c548fb6c9993ec6c86a83fe8550e48f44b"
+		},
+		{
+			"id": "firefly",
+			"title": "Firefly",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/firefly",
+			"catalogueSha256": "6d702f32ff01ac0e88c070d910da31d901e3e78b7b416decdfa14c98eb28b34d",
+			"original": {
+				"path": "/logos/originals/firefly-2026-09-06.png",
+				"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "Azure Foundry · gpt-image-2",
+			"identity": "Broad-winged faceted firefly with a small campfire",
+			"familyRoot": "/logos/family/firefly/2026-09-06-10/02",
+			"sourceArchive": "artwork/logo-family/firefly/2026-09-06-10",
+			"foreground": {
+				"subject": {
+					"en": "Broad-winged faceted firefly with a small campfire",
+					"zh": "展开双翼的切面萤火虫，与一小簇篝火"
+				},
+				"original": "/logos/family/firefly/2026-09-06-10/02/transparent.png",
+				"display": "/logos/family/firefly/2026-09-06-10/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+			},
+			"pattern": "Midnight crescent and drifting clouds",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/firefly-2026-09-06.png",
+				"campaignArtwork": "/logos/family/firefly/2026-09-06-10/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "75ead14cd5d7f93ddf03ec8d2f46fdcc610626852e52e2cd663439f2afee8955"
+		},
+		{
+			"id": "bogo",
+			"title": "Bogo",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/bogo",
+			"catalogueSha256": "549d2288b7133f5e16988bb9a102eb37fd7065a3cc4da7832aef1f7fa6b1f4ae",
+			"original": {
+				"path": "/logos/originals/bogo-2026-09-07.png",
+				"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "Azure Foundry · gpt-image-2",
+			"identity": "Winking faceted buffalo with a plain muzzle and one rainbow flower sprig",
+			"familyRoot": "/logos/family/bogo/2026-09-07-05/04",
+			"sourceArchive": "artwork/logo-family/bogo/2026-09-07-05",
+			"foreground": {
+				"subject": {
+					"en": "Winking faceted buffalo with a plain muzzle and one rainbow flower sprig",
+					"zh": "自然探头的切面水牛，眨眼表情与一枝彩色花叶"
+				},
+				"original": "/logos/family/bogo/2026-09-07-05/04/transparent.png",
+				"display": "/logos/family/bogo/2026-09-07-05/04/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+			},
+			"pattern": "Mineral horn arches",
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/bogo-2026-09-07.png",
+				"campaignArtwork": "/logos/family/bogo/2026-09-07-05/04/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "e6f6c2bd62cca5090649f371156d7472b3177a2642683efd061cf9b8b904d82b"
+		},
+		{
+			"id": "steed",
+			"title": "Steed",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/steed",
+			"catalogueSha256": "1180439dda1110e45e593f93860297f6510a6f641ef0c3dbea15ad0a3b680498",
+			"original": {
+				"path": "/logos/originals/steed-family-2026-09-07-02-01.png",
+				"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Chestnut horse portrait with an ivory blaze and one colorful bird",
+			"familyRoot": "/logos/family/steed/2026-09-07-02/01",
+			"sourceArchive": "artwork/logo-family/steed/2026-09-07-02",
+			"foreground": {
+				"subject": {
+					"en": "Chestnut horse portrait with an ivory blaze and one colorful bird",
+					"zh": "栗棕色骏马头像、象牙白额纹与一只多彩小鸟"
+				},
+				"original": "/logos/family/steed/2026-09-07-02/01/transparent.png",
+				"display": "/logos/family/steed/2026-09-07-02/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+			},
+			"pattern": "Canter pleats",
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/steed-family-2026-09-07-02-01.png",
+				"campaignArtwork": "/logos/family/steed/2026-09-07-02/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "3df99b9bbd5784784669287db353af6bdc7fb78207438e42d5f0ae9481d966bd"
+		},
+		{
+			"id": "ellie",
+			"title": "Ellie",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/ellie",
+			"catalogueSha256": "d535ec4e5baca633896c4afb2b049de5f96d2d68e8a8f814dfefd11a03ed95b9",
+			"original": {
+				"path": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+				"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Mineral-gray elephant portrait with a curled trunk and one paper airplane",
+			"familyRoot": "/logos/family/ellie/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/ellie/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Mineral-gray elephant portrait with a curled trunk and one paper airplane",
+					"zh": "矿石灰大象头像、卷起的鼻子与一架纸飞机"
+				},
+				"original": "/logos/family/ellie/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/ellie/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+			},
+			"pattern": "Mineral listening folds",
+			"intentionalEdges": [
+				"bottom"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/ellie/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "3997ee29f8e2ca1874e38532376e8136bbd29f5aa203e16853e393d101890bf8"
+		},
+		{
+			"id": "neo",
+			"title": "Neo",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/neo",
+			"catalogueSha256": "8b5eaa361b9aa7484357232e0a6189aed37f9899cb820760c6efe0276dd6127e",
+			"original": {
+				"path": "/logos/originals/neo.png",
+				"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original golden faceted retriever with a relaxed smile",
+			"familyRoot": "/logos/family/neo/2026-09-07-03/01",
+			"sourceArchive": "artwork/logo-family/neo/2026-09-07-03",
+			"foreground": {
+				"subject": {
+					"en": "Original golden faceted retriever with a relaxed smile",
+					"zh": "保留原图的金色碎片化寻回犬与放松笑容"
+				},
+				"original": "/logos/family/neo/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/neo/2026-09-07-03/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+			},
+			"pattern": "Folded sunlight",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/neo.png",
+				"campaignArtwork": "/logos/family/neo/2026-09-07-03/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "46a00cc115dd55fba915eb8fd536d95a404365193b9c2a800193b1375a23913e"
+		},
+		{
+			"id": "giraffe",
+			"title": "Giraffe",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/giraffe",
+			"catalogueSha256": "25363cfe560d880561bf582cebc2913eed43033c748d876b6d613f66576f0c11",
+			"original": {
+				"path": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+				"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Honey-colored giraffe portrait nibbling one colorful acacia sprig",
+			"familyRoot": "/logos/family/giraffe/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/giraffe/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Honey-colored giraffe portrait nibbling one colorful acacia sprig",
+					"zh": "轻咬一枝多彩金合欢叶的蜜金色长颈鹿头像"
+				},
+				"original": "/logos/family/giraffe/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/giraffe/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+			},
+			"pattern": "Acacia canopy relief",
+			"intentionalEdges": [
+				"bottom"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/giraffe/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "b6084f109d4922a2777a053e28bbfcc50cfcd0d6d8bce4af2aef0984bda13e31"
+		},
+		{
+			"id": "backy",
+			"title": "Backy",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/backy",
+			"catalogueSha256": "98785d67c7ebc6a0412f352ca80fb6a994e10bfe034014e2e524d6c5303d0951",
+			"original": {
+				"path": "/logos/originals/backy-family-2026-09-07-01-01.png",
+				"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Small olive tortoise with one folded multicolored leaf on its shell",
+			"familyRoot": "/logos/family/backy/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/backy/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Small olive tortoise with one folded multicolored leaf on its shell",
+					"zh": "橄榄色小陆龟，龟壳上托着一片折叠的多彩叶子"
+				},
+				"original": "/logos/family/backy/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/backy/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+			},
+			"pattern": "Shell saddles",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/backy-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/backy/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "bf2d36f0d839a5599adedc58837b6624bafce7e27516cf6737b0189ed8504a95"
+		},
+		{
+			"id": "otter",
+			"title": "Otter",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/otter",
+			"catalogueSha256": "46e065c59202d04e3cfbe8d086a4f1abd956b653c498010731a4c7941c59cc5a",
+			"original": {
+				"path": "/logos/originals/otter-family-2026-09-07-01-02.png",
+				"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Brown otter in a relaxed curl holding one colorful river shell",
+			"familyRoot": "/logos/family/otter/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/otter/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Brown otter in a relaxed curl holding one colorful river shell",
+					"zh": "棕色水獭放松蜷起身体，捧着一枚多彩贝壳"
+				},
+				"original": "/logos/family/otter/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/otter/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933"
+			},
+			"pattern": "Riverbank sweeps",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/otter-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/otter/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "99904020b5c642f279a89b52afc2bf41c369f0bd4b72585f34aef2c70bb337d0"
+		},
+		{
+			"id": "gecko",
+			"title": "Gecko",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/gecko",
+			"catalogueSha256": "85a8861bfc90ecb7a0c3295fd3e1a3da5dcb6b97f8bc37add87de4c6c0874373",
+			"original": {
+				"path": "/logos/originals/gecko.png",
+				"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original sandstone-colored gecko with a complete curled tail and toes",
+			"familyRoot": "/logos/family/gecko/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/gecko/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original sandstone-colored gecko with a complete curled tail and toes",
+					"zh": "保留原样的砂岩色壁虎，卷尾和脚趾完整可见"
+				},
+				"original": "/logos/family/gecko/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/gecko/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3"
+			},
+			"pattern": "Sandstone shelves",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/gecko.png",
+				"campaignArtwork": "/logos/family/gecko/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "19adbdf4a5d92822723bc113ecd6788ace87128a2e100bf4f878d75caf425976"
+		},
+		{
+			"id": "dove",
+			"title": "Dove",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/dove",
+			"catalogueSha256": "4d1df88dc62c72d8257e551fdc947e6d759090be6d187429ebc35e1d203d17b4",
+			"original": {
+				"path": "/logos/originals/dove.png",
+				"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original violet and teal faceted dove with pink blossoms",
+			"familyRoot": "/logos/family/dove/2026-09-07-03/01",
+			"sourceArchive": "artwork/logo-family/dove/2026-09-07-03",
+			"foreground": {
+				"subject": {
+					"en": "Original violet and teal faceted dove with pink blossoms",
+					"zh": "保留原图的紫青色碎片化鸽子与粉色花枝"
+				},
+				"original": "/logos/family/dove/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/dove/2026-09-07-03/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+			},
+			"pattern": "Pressed petals",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/dove.png",
+				"campaignArtwork": "/logos/family/dove/2026-09-07-03/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "5c6a8659a6bf5c984810271531a8a38c9105c7083ab4cbc555ed773961e38779"
+		},
+		{
+			"id": "pika",
+			"title": "Pika",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/pika",
+			"catalogueSha256": "d1229bbc6af261d35345886530228c2ef9acdc4af0a6ff1eca2e78b214161ba1",
+			"original": {
+				"path": "/logos/originals/pika.png",
+				"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original yellow Pika with its complete lightning gesture",
+			"familyRoot": "/logos/family/pika/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/pika/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original yellow Pika with its complete lightning gesture",
+					"zh": "保留原样的黄色 Pika 与完整闪电动作"
+				},
+				"original": "/logos/family/pika/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/pika/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+			},
+			"pattern": "Charge steps",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/pika.png",
+				"campaignArtwork": "/logos/family/pika/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "8208cd7fee66f0c9520052c60b021f1ab84e871559781c63c301362b87d4663e"
+		},
+		{
+			"id": "raven",
+			"title": "Raven",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/raven",
+			"catalogueSha256": "9dc3e1b72927f66395ee85df43d897ec87b568cf73ec40a72b77b214b7bb062e",
+			"original": {
+				"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+				"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents",
+			"familyRoot": "/logos/family/raven/2026-09-07-04/02",
+			"sourceArchive": "artwork/logo-family/raven/2026-09-07-04",
+			"foreground": {
+				"subject": {
+					"en": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents",
+					"zh": "向右看的靛蓝渡鸦，保留碎片眼睛、紫色羽毛与薄荷点缀"
+				},
+				"original": "/logos/family/raven/2026-09-07-04/02/transparent.png",
+				"display": "/logos/family/raven/2026-09-07-04/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+			},
+			"pattern": "Quill pennants",
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/raven-family-2026-09-07-04-02.png",
+				"campaignArtwork": "/logos/family/raven/2026-09-07-04/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "8162e9de65bf17ba9a7092834721e92b1142047c85aa34ed2ed7a01c25e79a2e"
+		},
+		{
+			"id": "bat",
+			"title": "Bat",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/bat",
+			"catalogueSha256": "6808e9138247d7d81545e23137f85ef582d025ac628bf02857ba54e7e407b3d3",
+			"original": {
+				"path": "/logos/originals/bat-family-2026-09-07-01-02.png",
+				"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Upright plum bat with folded wings and one colorful fig",
+			"familyRoot": "/logos/family/bat/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/bat/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Upright plum bat with folded wings and one colorful fig",
+					"zh": "正向站立、收翼的梅紫蝙蝠与一颗多彩无花果"
+				},
+				"original": "/logos/family/bat/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/bat/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d"
+			},
+			"pattern": "Dusk scallops",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/bat-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/bat/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "4e320ce6f3c60e799c2a983caa3db85df8e28842ac450f49305f1f38bbea415f"
+		},
+		{
+			"id": "lyre",
+			"title": "Lyre",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/lyre",
+			"catalogueSha256": "bc910755c3f1709ba2a65f68a15756880cb6af8dcfb8083647b82981785de6b1",
+			"original": {
+				"path": "/logos/originals/lyre.png",
+				"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original chestnut faceted lyrebird with a curled feather crest",
+			"familyRoot": "/logos/family/lyre/2026-09-07-03/01",
+			"sourceArchive": "artwork/logo-family/lyre/2026-09-07-03",
+			"foreground": {
+				"subject": {
+					"en": "Original chestnut faceted lyrebird with a curled feather crest",
+					"zh": "保留原图的栗色碎片化琴鸟与卷曲羽冠"
+				},
+				"original": "/logos/family/lyre/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/lyre/2026-09-07-03/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+			},
+			"pattern": "Lyrebird fan",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/lyre.png",
+				"campaignArtwork": "/logos/family/lyre/2026-09-07-03/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "de8965da5c10617525bf4df686880988100f8e9152de9909a2bec547fcb15505"
+		},
+		{
+			"id": "pokepocket",
+			"title": "Poké Pocket",
+			"scope": "target",
+			"category": "games",
+			"canonical": "https://hexly.ai/projects/pokepocket",
+			"catalogueSha256": "bc2129a69068b645de8edec4431cee504d93c4be383c6f8499b1861144a84514",
+			"original": {
+				"path": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+				"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+			},
+			"batch": "adapted",
+			"sourceMethod": "reference-adaptation",
+			"model": null,
+			"identity": "Red-capped trainer turning with a Poké Ball",
+			"familyRoot": "/logos/family/pokepocket/2026-09-07-03/01",
+			"sourceArchive": "artwork/logo-family/pokepocket/2026-09-07-03",
+			"foreground": {
+				"subject": {
+					"en": "Red-capped trainer turning with a Poké Ball",
+					"zh": "红帽少年回头举起精灵球"
+				},
+				"original": "/logos/family/pokepocket/2026-09-07-03/01/transparent.png",
+				"display": "/logos/family/pokepocket/2026-09-07-03/01/transparent-1024.webp",
+				"width": 960,
+				"height": 960,
+				"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+			},
+			"pattern": "Pocket orbits",
+			"intentionalEdges": [
+				"bottom: jacket and lower forearm continue naturally through the viewfinder"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+				"campaignArtwork": "/logos/family/pokepocket/2026-09-07-03/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "94fb65eeebfedeae1f8256053bf62cf796397e2c2f758762a5c4d9f1bbfcd9e3"
+		},
+		{
+			"id": "dogfight",
+			"title": "Dogfight",
+			"scope": "target",
+			"category": "games",
+			"canonical": "https://hexly.ai/projects/dogfight",
+			"catalogueSha256": "c470da67a0d044a10263b10847c62ec1456a9fc7ae86000a84b589df87d320ef",
+			"original": {
+				"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+				"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Titanium F-22 desk model caught in a banking turn",
+			"familyRoot": "/logos/family/dogfight/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/dogfight/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Titanium F-22 desk model caught in a banking turn",
+					"zh": "掠过镜头的钛灰 F-22 模型"
+				},
+				"original": "/logos/family/dogfight/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/dogfight/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4"
+			},
+			"pattern": "Banking vectors",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/dogfight/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "d823439dadc169ab0e71a57bb2f88fbb1a977a23723dc3be9e6c491b74bfb352"
+		},
+		{
+			"id": "gaga",
+			"title": "Gaga",
+			"scope": "target",
+			"category": "games",
+			"canonical": "https://hexly.ai/projects/gaga",
+			"catalogueSha256": "171cee88c516f995d7710c3f3112b5f391c4ef8407477d70f37c2229703bbaba",
+			"original": {
+				"path": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+				"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Naturally crouched biscuit-colored rabbit with one colorful carrot",
+			"familyRoot": "/logos/family/gaga/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/gaga/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Naturally crouched biscuit-colored rabbit with one colorful carrot",
+					"zh": "自然蹲伏的饼干色小兔与一根多彩胡萝卜"
+				},
+				"original": "/logos/family/gaga/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/gaga/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+			},
+			"pattern": "Playroom folds",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/gaga/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "2dd0cb0b013e051879a08df46fab6f033d8bfaff495d7318cfa160e4650319db"
+		},
+		{
+			"id": "pew-game",
+			"title": "Pew Game",
+			"scope": "target",
+			"category": "games",
+			"canonical": "https://hexly.ai/projects/pew-game",
+			"catalogueSha256": "c9315c60cb6fb23de0c439e549ee91243b41c175c6dc3b879a6b79bc21d7320b",
+			"original": {
+				"path": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+				"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Walnut and brass prairie arcade joystick",
+			"familyRoot": "/logos/family/pew-game/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/pew-game/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Walnut and brass prairie arcade joystick",
+					"zh": "胡桃木与黄铜的西部街机摇杆"
+				},
+				"original": "/logos/family/pew-game/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/pew-game/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90"
+			},
+			"pattern": "Prairie suntracks",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/pew-game/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "8bf22e0029f618c143a7acdad0b02d36d40a74d5adbd887dd47cb8de887a41f6"
+		},
+		{
+			"id": "rooster",
+			"title": "Rooster",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/rooster",
+			"catalogueSha256": "da42f2efa4eab7c096790f287ddbbfe24028ac3126fb12b589544f3a67cc51f2",
+			"original": {
+				"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+				"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Copper rooster lifting one foot beside a multicolored morning glory",
+			"familyRoot": "/logos/family/rooster/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/rooster/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Copper rooster lifting one foot beside a multicolored morning glory",
+					"zh": "铜金色公鸡抬起一只脚，靠近一朵多彩牵牛花"
+				},
+				"original": "/logos/family/rooster/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/rooster/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f"
+			},
+			"pattern": "Dawn terraces",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/rooster/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "02ce0b333310c40d0701b171a4d3fe194a064135aa4ff9a16774111db42c1604"
+		},
+		{
+			"id": "snaky",
+			"title": "Snaky",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/snaky",
+			"catalogueSha256": "a641b2444b37462ec6a24ead20cc7116086edf540fc47d180c670e5fdc358675",
+			"original": {
+				"path": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+				"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Green snake in a natural coil with one multicolored forked tongue",
+			"familyRoot": "/logos/family/snaky/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/snaky/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Green snake in a natural coil with one multicolored forked tongue",
+					"zh": "自然盘坐的绿色小蛇与一条多彩分叉舌头"
+				},
+				"original": "/logos/family/snaky/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/snaky/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+			},
+			"pattern": "Meadow bends",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/snaky/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "183c6fcf74510178a9c4a9c60bf5d871b0294a69698cd1335347b17a7a13915b"
+		},
+		{
+			"id": "showtime",
+			"title": "Showtime",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/showtime",
+			"catalogueSha256": "bd705ae6b40e3478aaa5d8847080c6888e5f251376e7e501ec8758c7fcd3679c",
+			"original": {
+				"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+				"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge",
+			"familyRoot": "/logos/family/showtime/2026-09-10-02/03",
+			"sourceArchive": "artwork/logo-family/showtime/2026-09-10-02",
+			"foreground": {
+				"subject": {
+					"en": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge",
+					"zh": "带 SHOWTIME 字样、场次数字与拉丝金属铰链的经典黑白场记板"
+				},
+				"original": "/logos/family/showtime/2026-09-10-02/03/transparent.png",
+				"display": "/logos/family/showtime/2026-09-10-02/03/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+			},
+			"pattern": "Film gate and cue marks",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+				"campaignArtwork": "/logos/family/showtime/2026-09-10-02/03/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "881b00137d46ca4a917a39c1abafa5cc9b7cfaa40590381aa564d6d0609fa5c5"
+		},
+		{
+			"id": "infospace",
+			"title": "Info Space",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/infospace",
+			"catalogueSha256": "96abadcd038c2507a1b43a0c9180fa1845743e7af495fdaf5b3be127ced9cfc6",
+			"original": {
+				"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+				"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+			"familyRoot": "/logos/family/infospace/2026-09-09-01/01",
+			"sourceArchive": "artwork/logo-family/infospace/2026-09-09-01",
+			"foreground": {
+				"subject": {
+					"en": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+					"zh": "带可调隔板与四色纸卡的靛蓝金属信息托盘"
+				},
+				"original": "/logos/family/infospace/2026-09-09-01/01/transparent.png",
+				"display": "/logos/family/infospace/2026-09-09-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772"
+			},
+			"pattern": "Adjustable spaces",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+				"campaignArtwork": "/logos/family/infospace/2026-09-09-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "211dccfa2a96a4ab1a99cb0b207f9547a49ee91e099283b28d6e7e68a69a991f"
+		},
+		{
+			"id": "signoff-now",
+			"title": "signoff.now",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/signoff-now",
+			"catalogueSha256": "ab72f907c26ecb0e26698c19faa8ba8ac77146e37dc293af10f551914bcc1039",
+			"original": {
+				"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+				"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Petrol enamel mechanical tally counter",
+			"familyRoot": "/logos/family/signoff-now/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/signoff-now/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Petrol enamel mechanical tally counter",
+					"zh": "深蓝珐琅机械计数器"
+				},
+				"original": "/logos/family/signoff-now/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/signoff-now/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+			},
+			"pattern": "Activity ledgers",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/signoff-now/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "e8337b571ff12930a19e4867d77842dab4d128af377ebb98db57d36c56d971c7"
+		},
+		{
+			"id": "unseal",
+			"title": "Unseal",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/unseal",
+			"catalogueSha256": "6401c1d7732d0d3e8c45624efdc06350b1778bda3368b8aba3e8f3d7165c3fb1",
+			"original": {
+				"path": "/logos/originals/unseal-family-2026-09-07-01-01.png",
+				"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "An opened green enamel and brass padlock",
+			"familyRoot": "/logos/family/unseal/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/unseal/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "An opened green enamel and brass padlock",
+					"zh": "刚刚开启的绿珐琅黄铜挂锁"
+				},
+				"original": "/logos/family/unseal/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/unseal/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b"
+			},
+			"pattern": "Released seams",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/unseal-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/unseal/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "87a04abdb7d0e4b4764976cb44ce5b430f0ed059b030c4ba075b0197a1a3f8d3"
+		},
+		{
+			"id": "flow",
+			"title": "Flow",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/flow",
+			"catalogueSha256": "0c911e49f7caf579fd35d1ad8cc694c98dbb61edad4285e3d13df5ab01acd205",
+			"original": {
+				"path": "/logos/originals/flow-family-2026-09-07-01-01.png",
+				"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Celadon mechanical keycap with a Chinese character",
+			"familyRoot": "/logos/family/flow/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/flow/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Celadon mechanical keycap with a Chinese character",
+					"zh": "带汉字的青瓷机械键帽"
+				},
+				"original": "/logos/family/flow/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/flow/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23"
+			},
+			"pattern": "Pinyin key rhythm",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/flow-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/flow/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "95777b364a33f06b7a53d449493129bbfa8b0b2aa73124895246c1022593c7c6"
+		},
+		{
+			"id": "codo",
+			"title": "Codo",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/codo",
+			"catalogueSha256": "c1a52232ad785646b10426ad561b69d45aee665f15ef9d23cb5a9d6ae462d4ca",
+			"original": {
+				"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+				"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Vivid faceted hummingbird hovering at one coral bell flower",
+			"familyRoot": "/logos/family/codo/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/codo/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Vivid faceted hummingbird hovering at one coral bell flower",
+					"zh": "色彩鲜明的切面蜂鸟悬停在一朵珊瑚色钟形花旁"
+				},
+				"original": "/logos/family/codo/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/codo/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+			},
+			"pattern": "Petal pockets",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/codo-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/codo/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "d8a0094da74204e06f2eabc3da3e2d7acada544cc0d944907df0e81679c57812"
+		},
+		{
+			"id": "arena",
+			"title": "Arena",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/arena",
+			"catalogueSha256": "970bc0b9077c8965029f749292e3ce7949b5fc839c9dd544e0dc8db96507497a",
+			"original": {
+				"path": "/logos/originals/arena-family-2026-09-07-01-01.png",
+				"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Walnut dual-dial chess clock",
+			"familyRoot": "/logos/family/arena/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/arena/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Walnut dual-dial chess clock",
+					"zh": "胡桃木双盘棋钟"
+				},
+				"original": "/logos/family/arena/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/arena/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59"
+			},
+			"pattern": "Paired debate arcs",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/arena-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/arena/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "7b34ae1df12214c00a211bddf197b325a2144ed6bc7bab813bb86bbfaa049f40"
+		},
+		{
+			"id": "owl",
+			"title": "Owl",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/owl",
+			"catalogueSha256": "ad077d50d209e17e12491ae1811d2888f106a196b5893062e129a39307c6c344",
+			"original": {
+				"path": "/logos/originals/owl-family-2026-09-07-01-01.png",
+				"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Compact tawny owl holding one multicolored feather",
+			"familyRoot": "/logos/family/owl/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/owl/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Compact tawny owl holding one multicolored feather",
+					"zh": "衔着一根多彩羽毛的灰褐色猫头鹰"
+				},
+				"original": "/logos/family/owl/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/owl/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8"
+			},
+			"pattern": "Night aperture relief",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/owl-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/owl/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "ffb91259e2e8e3a2d420a8c1d2d8faf5deca7321fc9cb9b2259024b3cb5b49ab"
+		},
+		{
+			"id": "xray",
+			"title": "Xray",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/xray",
+			"catalogueSha256": "f4569684f0aeba81bf41dc3c730c1b6fb9a2f4f387e68ad5ea6c5ed570e3d699",
+			"original": {
+				"path": "/logos/originals/xray.png",
+				"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original multicolored butterfly with complete spread wings",
+			"familyRoot": "/logos/family/xray/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/xray/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original multicolored butterfly with complete spread wings",
+					"zh": "保留原样的多彩展翅蝴蝶"
+				},
+				"original": "/logos/family/xray/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/xray/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+			},
+			"pattern": "Wing-vein panels",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/xray.png",
+				"campaignArtwork": "/logos/family/xray/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "bb4d2f66dce42cd9f46771f098d36e3cd3c484882da343fdfc6b2ed09a2de771"
+		},
+		{
+			"id": "r2shot",
+			"title": "R2Shot",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/r2shot",
+			"catalogueSha256": "92a7f075b55027654b666426570333ecfa1d2113d9958d055919093f8f4be6bc",
+			"original": {
+				"path": "/logos/originals/r2shot.png",
+				"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original blue faceted dolphin with a curled tail",
+			"familyRoot": "/logos/family/r2shot/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/r2shot/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original blue faceted dolphin with a curled tail",
+					"zh": "保留原图的蓝色碎片化海豚与卷曲尾鳍"
+				},
+				"original": "/logos/family/r2shot/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/r2shot/2026-09-07-01/01/transparent-1024.webp",
+				"width": 920,
+				"height": 920,
+				"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1"
+			},
+			"pattern": "Dolphin wake",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/r2shot.png",
+				"campaignArtwork": "/logos/family/r2shot/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "a48d3074f1adf38620601a7d11caaf5a4bf97d4340cf9b18bf4d8e058556cf0f"
+		},
+		{
+			"id": "shrike",
+			"title": "Shrike",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/shrike",
+			"catalogueSha256": "516d0f2918461008533a6a3bb0a8e1ea09394f036c1180bb0deaac4f2e82245d",
+			"original": {
+				"path": "/logos/originals/shrike.png",
+				"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original grey faceted shrike with a dark eye mask",
+			"familyRoot": "/logos/family/shrike/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/shrike/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original grey faceted shrike with a dark eye mask",
+					"zh": "保留原图的灰色碎片化伯劳与深色眼罩"
+				},
+				"original": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/shrike/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+			},
+			"pattern": "Folded wings",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/shrike.png",
+				"campaignArtwork": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "7759a1d0e21a64a207fc0ade1b9329f5330b9cd3854b4d88872f3e508c78e2de"
+		},
+		{
+			"id": "hooky",
+			"title": "Hooky",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/hooky",
+			"catalogueSha256": "c332f93c819e5e61b6f1c499ef9363022edc76efcd1dcaabac82a2dce389926f",
+			"original": {
+				"path": "/logos/originals/hooky.png",
+				"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original pink faceted octopus with curled arms",
+			"familyRoot": "/logos/family/hooky/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/hooky/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original pink faceted octopus with curled arms",
+					"zh": "保留原图的粉色碎片化章鱼与卷曲腕足"
+				},
+				"original": "/logos/family/hooky/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/hooky/2026-09-07-01/01/transparent-1024.webp",
+				"width": 900,
+				"height": 900,
+				"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+			},
+			"pattern": "Tidal hooks",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/hooky.png",
+				"campaignArtwork": "/logos/family/hooky/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "32ba947bb152b609e5ff51319095a0aaa11e2f7ffe610cd8172c397b357492c7"
+		},
+		{
+			"id": "dotty",
+			"title": "Dotty",
+			"scope": "target",
+			"category": "design",
+			"canonical": "https://hexly.ai/projects/dotty",
+			"catalogueSha256": "f6d75c285c6b249a57c825d5d9be22a7f9d9458ed223d37471b5ac15413edcf5",
+			"original": {
+				"path": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+				"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Floating black-and-white checker ceramic block",
+			"familyRoot": "/logos/family/dotty/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/dotty/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Floating black-and-white checker ceramic block",
+					"zh": "悬浮的黑白棋盘陶瓷方砖"
+				},
+				"original": "/logos/family/dotty/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/dotty/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e"
+			},
+			"pattern": "Precision drafting grid",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/dotty/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "74d4f30883d2ba9b67622d00a1948637ce449879e4196236d70393fec11665a7"
+		},
+		{
+			"id": "wooly",
+			"title": "Wooly",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/wooly",
+			"catalogueSha256": "ae57caa9d7a5bfdd0b3e044f7506fb60acd0372d53f7cafbfe36fcafe64025e2",
+			"original": {
+				"path": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+				"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Cream faceted sheep with three curls, a wink, and a pink tongue",
+			"familyRoot": "/logos/family/wooly/2026-09-07-02/01",
+			"sourceArchive": "artwork/logo-family/wooly/2026-09-07-02",
+			"foreground": {
+				"subject": {
+					"en": "Cream faceted sheep with three curls, a wink, and a pink tongue",
+					"zh": "奶油色碎片绵羊，保留三缕卷毛、眨眼和粉色舌头"
+				},
+				"original": "/logos/family/wooly/2026-09-07-02/01/transparent.png",
+				"display": "/logos/family/wooly/2026-09-07-02/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+			},
+			"pattern": "Wool cloud folds",
+			"intentionalEdges": [
+				"bottom"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+				"campaignArtwork": "/logos/family/wooly/2026-09-07-02/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "9d41a1f0ffd00af9a774c34925cf0a42caa483ebfe6628360c4e24012709e634"
+		},
+		{
+			"id": "matrix",
+			"title": "Matrix",
+			"scope": "target",
+			"category": "design",
+			"canonical": "https://hexly.ai/projects/matrix",
+			"catalogueSha256": "d92241e4781a253c3b83c9ba2d83ae0ec90464924c14b9838f8a915403555b7b",
+			"original": {
+				"path": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Floating black-and-green layered circuit deck",
+			"familyRoot": "/logos/family/matrix/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/matrix/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Floating black-and-green layered circuit deck",
+					"zh": "悬浮的黑绿多层电路甲板"
+				},
+				"original": "/logos/family/matrix/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/matrix/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8"
+			},
+			"pattern": "Circuit routing grid",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/matrix/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "b97f39c7802db67b98d13b917b6f3e0b5476fe1445cb4caa71d85f257371d222"
+		},
+		{
+			"id": "basalt",
+			"title": "Basalt",
+			"scope": "target",
+			"category": "design",
+			"canonical": "https://hexly.ai/projects/basalt",
+			"catalogueSha256": "58c7a5128b0987b8b326316d08f1f76076704e1a4a7da4494d29afad4e871a10",
+			"original": {
+				"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+				"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A candy-colored Forbidden City corner tower on white Hanbaiyu marble",
+			"familyRoot": "/logos/family/basalt/2026-09-08-01/01",
+			"sourceArchive": "artwork/logo-family/basalt/2026-09-08-01",
+			"foreground": {
+				"subject": {
+					"en": "A candy-colored Forbidden City corner tower on white Hanbaiyu marble",
+					"zh": "汉白玉基座上的糖果色故宫角楼"
+				},
+				"original": "/logos/family/basalt/2026-09-08-01/01/transparent.png",
+				"display": "/logos/family/basalt/2026-09-08-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7"
+			},
+			"pattern": "Corner tower construction grid",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+				"campaignArtwork": "/logos/family/basalt/2026-09-08-01/01/transparent.png",
+				"sameBytes": false,
+				"sourceAdoption": "review",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "1f556125ab2500d0fb0c17ee137f5f2902164928a4365ec1c2d9f984999fc507"
+		},
+		{
+			"id": "surety",
+			"title": "Surety",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/surety",
+			"catalogueSha256": "5705003bf757def0a3802d757628fa008dbd40a3538a6f6d43d22ed8aa83721d",
+			"original": {
+				"path": "/logos/originals/surety-family-2026-09-07-01-01.png",
+				"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Amber lion portrait with one multicolored butterfly",
+			"familyRoot": "/logos/family/surety/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/surety/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Amber lion portrait with one multicolored butterfly",
+					"zh": "琥珀色狮子头像与一只多彩蝴蝶"
+				},
+				"original": "/logos/family/surety/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/surety/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+			},
+			"pattern": "Amber fan relief",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/surety-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/surety/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "aad8727379a869c0f2bac7fbabcf99784a31729ab1945eae8b0eb23e19145610"
+		},
+		{
+			"id": "life-ai",
+			"title": "Life.ai",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/life-ai",
+			"catalogueSha256": "d4cc44e49e247da4db43fe2731222522068795e882f7a4ebb9a6a2231d09463a",
+			"original": {
+				"path": "/logos/originals/life-ai-family-2026-09-07-01-02.png",
+				"sha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Caramel capybara with closed eyes, blue-purple glasses, and an apple with leaves",
+			"familyRoot": "/logos/family/life-ai/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/life-ai/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Caramel capybara with closed eyes, blue-purple glasses, and an apple with leaves",
+					"zh": "闭眼的焦糖色水豚，保留蓝紫镜框、苹果和叶片"
+				},
+				"original": "/logos/family/life-ai/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/life-ai/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca"
+			},
+			"pattern": "Riverbank ripples",
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/life-ai-family-2026-09-07-01-02.png",
+				"campaignArtwork": "/logos/family/life-ai/2026-09-07-01/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "451754f97554b4c8b2f7587b0d28667be0528e2aaebf18be4a5483f1df819731"
+		},
+		{
+			"id": "echo",
+			"title": "Echo",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/echo",
+			"catalogueSha256": "edb612468a4732d50d729458a137045b42fc7175935e6587eabae059775b6671",
+			"original": {
+				"path": "/logos/originals/echo-family-2026-09-07-01-01.png",
+				"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A brass and navy pocket compass",
+			"familyRoot": "/logos/family/echo/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/echo/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A brass and navy pocket compass",
+					"zh": "黄铜与深蓝的袖珍罗盘"
+				},
+				"original": "/logos/family/echo/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/echo/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d"
+			},
+			"pattern": "Survey bearings",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/echo-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/echo/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "63f026c1a4bbcaa613818c420669431e470512181e5a527b04b930f097331373"
+		},
+		{
+			"id": "deca",
+			"title": "Deca",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/deca",
+			"catalogueSha256": "16b32b8766369d515c18d5346c665f0fa033023c88cff693275001ae600f7ca3",
+			"original": {
+				"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+				"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A midnight teal rotary desk telephone",
+			"familyRoot": "/logos/family/deca/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/deca/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A midnight teal rotary desk telephone",
+					"zh": "午夜青色旋转拨号电话"
+				},
+				"original": "/logos/family/deca/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/deca/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+			},
+			"pattern": "Switchboard paths",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/deca-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/deca/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "0ab9df880c31b039c50661695187e9b28c58ae44b087e466d932665a72acecfa"
+		},
+		{
+			"id": "runner",
+			"title": "Runner",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/runner",
+			"catalogueSha256": "7971be53ef0ca6a0271a29fe6f3ac031b42b3daaa88ea92a5fe81fe36978762b",
+			"original": {
+				"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+				"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Emerald enamel mechanical stopwatch",
+			"familyRoot": "/logos/family/runner/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/runner/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Emerald enamel mechanical stopwatch",
+					"zh": "祖母绿珐琅机械秒表"
+				},
+				"original": "/logos/family/runner/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/runner/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347"
+			},
+			"pattern": "Scheduled minutes",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/runner-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/runner/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "a92e023784174c1b3609c42255fcd7a019b14a241dc491486e7e7966a47765ac"
+		},
+		{
+			"id": "zhe",
+			"title": "Zhe",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/zhe",
+			"catalogueSha256": "3eaee872ece7a797d8f79ae88bfff9fc76f2d98946835d890e9ec49ce54a860c",
+			"original": {
+				"path": "/logos/originals/zhe.png",
+				"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+			},
+			"batch": "retained",
+			"sourceMethod": "retained-original",
+			"model": null,
+			"identity": "Original golden faceted bee with multicolored wings",
+			"familyRoot": "/logos/family/zhe/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/zhe/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "Original golden faceted bee with multicolored wings",
+					"zh": "保留原图的金色碎片化蜜蜂与多彩翅膀"
+				},
+				"original": "/logos/family/zhe/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/zhe/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+			},
+			"pattern": "Beeswax cells",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/zhe.png",
+				"campaignArtwork": "/logos/family/zhe/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "5e06f0f4c6b135432e5dfcffd9e15ef5713fae5d929fc6f822845eff366159a9"
+		},
+		{
+			"id": "geekhub",
+			"title": "GeekHub",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/geekhub",
+			"catalogueSha256": "bcbcfae5bc2332a8fb7550584f053e2bd8e2106dde47ccd6c0de8fa8ce54ef28",
+			"original": {
+				"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+				"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A folded newspaper in a forest-green reading folio",
+			"familyRoot": "/logos/family/geekhub/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/geekhub/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A folded newspaper in a forest-green reading folio",
+					"zh": "森林绿阅读夹中的折叠报纸"
+				},
+				"original": "/logos/family/geekhub/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/geekhub/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545"
+			},
+			"pattern": "Collected columns",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/geekhub/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "24e9f2fd98056973435dee10014f34da6b08e36cfca7c3935188282af65f54aa"
+		},
+		{
+			"id": "ccbackup",
+			"title": "CCBackup",
+			"scope": "archived-preserved",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/ccbackup",
+			"catalogueSha256": "14cd4a1a9a017a14bafd4a8f4a70a7bd602993c63bfaccce0b09a1caa3c50d3d",
+			"original": {
+				"path": "/logos/emoji/ccbackup.png",
+				"sha256": "1bb8d48c887782be257b7221e84f16579cd775a9922b5c98a2b0bd32d598f2fa"
+			},
+			"protectedMetadataSha256": "aa26d0697f4fa97914f870d90c02bc7ba452e1c34c11946ea827dfbaaaf7bf9c"
+		},
+		{
+			"id": "noheir",
+			"title": "Noheir",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/noheir",
+			"catalogueSha256": "9658350492ee5a52e6efa79367e541e19294e7b6c12be858dc09204265c6b02f",
+			"original": {
+				"path": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+				"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Copper and cream cow with complete horns, blue eyes, and a coral muzzle",
+			"familyRoot": "/logos/family/noheir/2026-09-07-02/02",
+			"sourceArchive": "artwork/logo-family/noheir/2026-09-07-02",
+			"foreground": {
+				"subject": {
+					"en": "Copper and cream cow with complete horns, blue eyes, and a coral muzzle",
+					"zh": "铜棕与奶油色奶牛，完整保留牛角、蓝眼睛和珊瑚鼻尖"
+				},
+				"original": "/logos/family/noheir/2026-09-07-02/02/transparent.png",
+				"display": "/logos/family/noheir/2026-09-07-02/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+			},
+			"pattern": "Quiet terraces",
+			"intentionalEdges": [
+				"bottom",
+				"lower-right"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+				"campaignArtwork": "/logos/family/noheir/2026-09-07-02/02/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "70c3689f82947ab21fa8522bc2556501663f3cd21c8df84d5b91f295d53f4f5f"
+		},
+		{
+			"id": "ipsafe",
+			"title": "IPSafe",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/ipsafe",
+			"catalogueSha256": "dde3ad5cf7ce986f7b63410894445dddd98891e97e88f1fcb2a0fbdf7742e7e5",
+			"original": {
+				"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+				"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A green network cable tester with a short patch lead",
+			"familyRoot": "/logos/family/ipsafe/2026-09-07-01/01",
+			"sourceArchive": "artwork/logo-family/ipsafe/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A green network cable tester with a short patch lead",
+					"zh": "带短跳线的绿色网线测试仪"
+				},
+				"original": "/logos/family/ipsafe/2026-09-07-01/01/transparent.png",
+				"display": "/logos/family/ipsafe/2026-09-07-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b"
+			},
+			"pattern": "Connection lanes",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+				"campaignArtwork": "/logos/family/ipsafe/2026-09-07-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "fc50dc37c210abff84113633de3012a11e4d60416d23a90d5cbe8dedd7dfc995"
+		},
+		{
+			"id": "uptime-kuma-skill",
+			"title": "Uptime Kuma Skill",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/uptime-kuma-skill",
+			"catalogueSha256": "98ce7f0ba3d5e6db762463e3d4ab341ce41c936173b45acf1164d7785309d5f9",
+			"original": {
+				"path": "/logos/emoji/uptime-kuma-skill.png",
+				"sha256": "c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5"
+			},
+			"protectedMetadataSha256": "8e70c1f2e9a3c0306e7279057118fce6aac55d5cf0434d5a761fe454b3b6bb6d"
+		},
+		{
+			"id": "microsoft-teams-send-as-workflow",
+			"title": "Teams Workflow",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/microsoft-teams-send-as-workflow",
+			"catalogueSha256": "959373292a2964137c58ba82ac8aadf006fca7150125e4f86410afff88203353",
+			"original": {
+				"path": "/logos/emoji/microsoft-teams-send-as-workflow.png",
+				"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d"
+			},
+			"protectedMetadataSha256": "e0425299961096df01d52ea0e5a1b72337448d5a923123d0e1c67538e28e6e41"
+		},
+		{
+			"id": "image-stitch",
+			"title": "Image Stitch",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/image-stitch",
+			"catalogueSha256": "53e657307cbc7ff23d25d44d0b165a47b8b747f3249891a90c5b90dcc2fa5268",
+			"original": {
+				"path": "/logos/emoji/image-stitch.png",
+				"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4"
+			},
+			"protectedMetadataSha256": "c92076f19f5eba70c5ca0fbd80cf84f0e384dd4eeb31bfbb8f53f376563b51ae"
+		},
+		{
+			"id": "skill-faster-whisper",
+			"title": "Faster Whisper",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/skill-faster-whisper",
+			"catalogueSha256": "c4386e93f26ed430475856d58b4288ec2d225cfa9434f3f3827e8a650a4524ee",
+			"original": {
+				"path": "/logos/emoji/skill-faster-whisper.png",
+				"sha256": "fe2151b4426e09c6d6b153580e4962f112b342bd01f5bab0b6d4ba83961ba4a6"
+			},
+			"protectedMetadataSha256": "52b674e16db28cfdc499b16a559a0592aa27eff7b2026c05c17edda751c30839"
+		},
+		{
+			"id": "skill-task-notifier",
+			"title": "Task Notifier",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/skill-task-notifier",
+			"catalogueSha256": "69b8d21bd2928d522fb7fd579eb13c45e080b3da7d2b830951b443434a194433",
+			"original": {
+				"path": "/logos/emoji/skill-task-notifier.png",
+				"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d"
+			},
+			"protectedMetadataSha256": "df5d054ec65dcc291aef00f600c53983b67a7bacac1ea93abc7339ed0ec6000b"
+		},
+		{
+			"id": "mcp-work-history",
+			"title": "Work History MCP",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/mcp-work-history",
+			"catalogueSha256": "f46550dbc0c52b0af657f975e5ced24406bcd5e7369dd15efadb3a56e3cf0c6b",
+			"original": {
+				"path": "/logos/emoji/mcp-work-history.png",
+				"sha256": "cd0c3ef6a10e2311e6b444336d336c93e8fa0b316dbd5175b0c133e944649c7b"
+			},
+			"protectedMetadataSha256": "b93af2701056846a0ea5a8048f0409c3ae9350ff5982280d8e7d38fb2b623fb0"
+		},
+		{
+			"id": "mcp-make-sound",
+			"title": "Make Sound MCP",
+			"scope": "archived-preserved",
+			"category": "extensions",
+			"canonical": "https://hexly.ai/projects/mcp-make-sound",
+			"catalogueSha256": "6d8ea24c976279cbbc9ea5b2db2bff10fc1b0aaf6afd1106f181d74373030e5c",
+			"original": {
+				"path": "/logos/emoji/mcp-make-sound.png",
+				"sha256": "e351632c7148db3536754e8d5e7f63120b16097fa22dff75d4e1138845cfa0b8"
+			},
+			"protectedMetadataSha256": "9846c10aa1877e81133670913c0f3f497dbd396dad8dbcabc1c1b3836d6548c3"
+		},
+		{
+			"id": "infoviz",
+			"title": "InfoViz",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/infoviz",
+			"catalogueSha256": "917db578bf5c16af17ff523cb3cfa89eaeaed3b2c468ecda12cbdc5210a94248",
+			"original": {
+				"path": "/logos/originals/infoviz.png",
+				"sha256": "6572c1eabfc4a5159cb71dcda4f70a5f2078fb88205ad40b77a604508d317f9c"
+			},
+			"protectedMetadataSha256": "66b98bb539d9323100c378a2217bd10f0c8241b349fc387f4bd5e9ba65951eca"
+		},
+		{
+			"id": "jsinst",
+			"title": "JSInst",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/jsinst",
+			"catalogueSha256": "27d30d079438abc8db476b2ca440f2b3fed6508329352a11eff8a72aa71f5c3e",
+			"original": {
+				"path": "/logos/emoji/jsinst.png",
+				"sha256": "fc80f6fe41b78073d17d73637336fb95637e2f8c3e1796b75488cc819d76543a"
+			},
+			"protectedMetadataSha256": "346ebc187f1cca46f24909e909b83675fdb27b0b015e22276fef11e2fe104d37"
+		},
+		{
+			"id": "infoviz-builder",
+			"title": "InfoViz Builder",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/infoviz-builder",
+			"catalogueSha256": "3fd29dff0b891d2f2c551a797ee22b353dda4ea374015b55606771f64b4eff91",
+			"original": {
+				"path": "/logos/originals/infoviz-builder.png",
+				"sha256": "53537d273b2f8638e4715dc8c4c2ed12c9ccbf4b63c666289b06e21c0651d493"
+			},
+			"protectedMetadataSha256": "48f67a803e335ad94c96cc755fd42c881971afb4a15c537b600655d446c0a430"
+		},
+		{
+			"id": "nodehub",
+			"title": "NodeHub",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/nodehub",
+			"catalogueSha256": "74cdb26c0363ba52ae7eabf6afd81da78161d2192df4cd5ae9dd56260a9a0402",
+			"original": {
+				"path": "/logos/originals/nodehub.png",
+				"sha256": "ccdffc2057cbd73eb24549cb97667542a99c6a7a5a34848359caa675ac6ec223"
+			},
+			"protectedMetadataSha256": "d996ae768ae26ed48d5135b8645216e068d4062ab83edaa519a549ea73531663"
+		},
+		{
+			"id": "huran-cc",
+			"title": "huran.cc",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/huran-cc",
+			"catalogueSha256": "af3baa46c50592cdbba142c19f52476818ada5818e191846d2a8af00f90cc021",
+			"original": {
+				"path": "/logos/originals/huran-cc.png",
+				"sha256": "91d20c9117ae3166c1e4e911c07717246966fb456ec10150af2deb379045f0c7"
+			},
+			"protectedMetadataSha256": "b1a9686d526c9c3d84014f319b48baf12f84ab6bf26af60c291097fe8f44d77a"
+		},
+		{
+			"id": "doc-doctor-com",
+			"title": "Doc Doctor",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/doc-doctor-com",
+			"catalogueSha256": "c58dd44da864e7f8b684439779231d6c994e27268cc79d6a40570af7324c8b89",
+			"original": {
+				"path": "/logos/originals/doc-doctor-com.png",
+				"sha256": "3df40dd3972a8ea4b85362b84a2c10d2f7fa20564d0aa1d7975a74ab4862b283"
+			},
+			"protectedMetadataSha256": "c3adc71f2d43fecd566c396aeaf55ac05a295ed73ee43c26051fead1d22bd972"
+		},
+		{
+			"id": "nodeviz",
+			"title": "NodeViz",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/nodeviz",
+			"catalogueSha256": "7a8c7dd37668673de61730873e61f08e3f2a8c006d303a1d13b514dac4066f16",
+			"original": {
+				"path": "/logos/emoji/nodeviz.png",
+				"sha256": "dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51"
+			},
+			"protectedMetadataSha256": "47c365b53cd52ab90cb03913ca3d7f0b9b67664bb99be085ad6a5e2ef531c77a"
+		},
+		{
+			"id": "express-spa",
+			"title": "Express SPA",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/express-spa",
+			"catalogueSha256": "60ea4d89e2117ed46c72fd17b96ffb01310d5b4524d0a531e88471fb5990e1c1",
+			"original": {
+				"path": "/logos/emoji/express-spa.png",
+				"sha256": "7c0923ee71d9cad5f78561072378c0a2e121a23db05528fbd62cc93b23fe2f26"
+			},
+			"protectedMetadataSha256": "92305fe651ace8e677879eb1d764c032da36ce134253810e128cbb6bbf487dee"
+		},
+		{
+			"id": "discuz-recovery",
+			"title": "Discuz Recovery",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/discuz-recovery",
+			"catalogueSha256": "6fb90f1c8c60776dc1cbfbb50786da9405cda3fe6f820a3859b25c1b7fe19e0a",
+			"original": {
+				"path": "/logos/emoji/discuz-recovery.png",
+				"sha256": "dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51"
+			},
+			"protectedMetadataSha256": "18ec298de3ad8bdc8532755ae8ef42c4da760d06332393e84a2dc32b3389ac72"
+		},
+		{
+			"id": "feedmaid",
+			"title": "Feedmaid",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/feedmaid",
+			"catalogueSha256": "40c46711994e6dbd3786f568a2394a16ea3e52a2d3490196cc5b59e7feac0dae",
+			"original": {
+				"path": "/logos/emoji/feedmaid.png",
+				"sha256": "ad705222d130c788d2ad7decc43a79eb8a1f2e8e6c64a54fadfc8891f8101bc5"
+			},
+			"protectedMetadataSha256": "1f8aba92b7e485139070fe83396937597840670683ae2f762fbf154ed0bef63c"
+		},
+		{
+			"id": "infoviz-ios",
+			"title": "InfoViz iOS",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/infoviz-ios",
+			"catalogueSha256": "de118c2101fa31f3f59702e5470371383f85dbbc9e160a5c42c3910ee4aa44b5",
+			"original": {
+				"path": "/logos/originals/infoviz-ios.png",
+				"sha256": "56ce71863c1e9e493bf8da07654fd98107bc82c70150bd12311e4dc27d417934"
+			},
+			"protectedMetadataSha256": "39ebcab3879b8bba5fbd61ff45349a163be10ecf46c0f8f36b3e5dfa6026da91"
+		},
+		{
+			"id": "node-image-uploader",
+			"title": "Image Uploader",
+			"scope": "archived-preserved",
+			"category": "archive",
+			"canonical": "https://hexly.ai/projects/node-image-uploader",
+			"catalogueSha256": "93c6d12766a97b842c26a82a6548dbeab08da79da0e99fa0d497f3986cc5e405",
+			"original": {
+				"path": "/logos/emoji/node-image-uploader.png",
+				"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4"
+			},
+			"protectedMetadataSha256": "ff6b7d5c9e05a563d9ad45c81f9fed273454cbfff9e80680a6d47a1675d4099d"
+		},
+		{
+			"id": "clip",
+			"title": "clip",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/clip",
+			"catalogueSha256": "27df68fd3f6f4e7b9f295b475e703d6798c0423cb5678827e8d2fd11e409dab1",
+			"original": {
+				"path": "/logos/originals/clip.png",
+				"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "An amber-eyed ostrich in a brown hat with one bright feather cluster",
+			"familyRoot": "/logos/family/clip/2026-09-07-02/01",
+			"sourceArchive": "artwork/logo-family/clip/2026-09-07-02",
+			"foreground": {
+				"subject": {
+					"en": "An amber-eyed ostrich in a brown hat with one bright feather cluster",
+					"zh": "戴棕色宽檐帽的琥珀眼鸵鸟，帽上留一簇多彩羽毛"
+				},
+				"original": "/logos/family/clip/2026-09-07-02/01/transparent.png",
+				"display": "/logos/family/clip/2026-09-07-02/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983"
+			},
+			"pattern": "Windward feather relief",
+			"intentionalEdges": [
+				"bottom"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/clip.png",
+				"campaignArtwork": "/logos/family/clip/2026-09-07-02/01/transparent.png",
+				"sameBytes": false,
+				"sourceAdoption": "review",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "4008b93b31b19371289803cc3d192ba82fe78b6d8522002b3116e2f932c13ea2"
+		},
+		{
+			"id": "fundly",
+			"title": "Fundly",
+			"scope": "target",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/fundly",
+			"catalogueSha256": "475311fbc760c040bddb101f25f7cd1bfe59ff99120ce1bfb63c9d157cfbbdbb",
+			"original": {
+				"path": "/logos/originals/fundly.svg",
+				"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A worldly navy-and-ivory penguin holding binoculars",
+			"familyRoot": "/logos/family/fundly/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/fundly/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A worldly navy-and-ivory penguin holding binoculars",
+					"zh": "手持望远镜、见多识广的深蓝与象牙白企鹅"
+				},
+				"original": "/logos/family/fundly/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/fundly/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f"
+			},
+			"pattern": "Far-horizon sightlines",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/fundly.svg",
+				"campaignArtwork": "/logos/family/fundly/2026-09-07-01/02/transparent.png",
+				"sameBytes": false,
+				"sourceAdoption": "review",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "11eb32686dac1c671baa060f1064e308af8da814e219e5de1ff7c37a11c6199f"
+		},
+		{
+			"id": "dreamro",
+			"title": "DreamRO",
+			"scope": "target",
+			"category": "games",
+			"canonical": "https://hexly.ai/projects/dreamro",
+			"catalogueSha256": "247f00070551c86e803ca692d909ee2d10b6c147831fc8b490da17fc76e68213",
+			"original": {
+				"path": "/logos/originals/dreamro.png",
+				"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A crafted shield behind a bow and arrow, sword and magic staff",
+			"familyRoot": "/logos/family/dreamro/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/dreamro/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A crafted shield behind a bow and arrow, sword and magic staff",
+					"zh": "盾牌在后，弓箭、长剑与魔法杖在前的精制武器徽记"
+				},
+				"original": "/logos/family/dreamro/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/dreamro/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "e25c8837590746aeab75cc9cd26e0cf10a6f1e03f0909e6b9db44b92e2951f52"
+			},
+			"pattern": "Parchment heraldic lattice",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/dreamro.png",
+				"campaignArtwork": "/logos/family/dreamro/2026-09-07-01/02/transparent.png",
+				"sameBytes": false,
+				"sourceAdoption": "review",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "4fa732e2ab9e3c877fbbadde92b7ae227caf7d7fc2ad8469d898903c1c9eafe2"
+		},
+		{
+			"id": "meowth",
+			"title": "Meowth",
+			"scope": "target",
+			"category": "ai",
+			"canonical": "https://hexly.ai/projects/meowth",
+			"catalogueSha256": "a91ac9637b2d9a94a312534812b606aeba1c0f60c3ec77e0e5175286bd2a612b",
+			"original": {
+				"path": "/logos/originals/meowth.png",
+				"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A silver-blue American Shorthair head playing with one yarn loop",
+			"familyRoot": "/logos/family/meowth/2026-09-07-01/02",
+			"sourceArchive": "artwork/logo-family/meowth/2026-09-07-01",
+			"foreground": {
+				"subject": {
+					"en": "A silver-blue American Shorthair head playing with one yarn loop",
+					"zh": "拨弄一圈彩色毛线的银蓝美短猫头像"
+				},
+				"original": "/logos/family/meowth/2026-09-07-01/02/transparent.png",
+				"display": "/logos/family/meowth/2026-09-07-01/02/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378"
+			},
+			"pattern": "Quiet yarn loops",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/meowth.png",
+				"campaignArtwork": "/logos/family/meowth/2026-09-07-01/02/transparent.png",
+				"sameBytes": false,
+				"sourceAdoption": "review",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "291339f6e8dcd299a37f5705449ba6147b255fae673e44a25b4d3d2203bd2d87"
+		},
+		{
+			"id": "coffee",
+			"title": "Coffee",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/coffee",
+			"catalogueSha256": "d652eaf1e8a387e30a54c186e865ba0a7fb012c65f9e10a3a431eac1b16ddd4e",
+			"original": {
+				"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+				"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Peach ceramic cup, latte leaf, saucer and brass teaspoon",
+			"familyRoot": "/logos/family/coffee/2026-09-11-01/01",
+			"sourceArchive": "artwork/logo-family/coffee/2026-09-11-01",
+			"foreground": {
+				"subject": {
+					"en": "Peach ceramic cup, latte leaf, saucer and brass teaspoon",
+					"zh": "桃色陶杯、叶形拉花、杯碟与黄铜茶匙"
+				},
+				"original": "/logos/family/coffee/2026-09-11-01/01/transparent.png",
+				"display": "/logos/family/coffee/2026-09-11-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+			},
+			"pattern": "Broken cupping rings and tasting spokes",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+				"campaignArtwork": "/logos/family/coffee/2026-09-11-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "a10cabcbbfac5f09f3a91c507814af3dcaa03224e6c6996e6b70c9db6f659743"
+		},
+		{
+			"id": "hermes-on-herdr",
+			"title": "hermes on herdr",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/hermes-on-herdr",
+			"catalogueSha256": "1a8cf22d1faec17997dcb8d1158e54cb7fc06dffbafb67330c55b3533ff7b935",
+			"original": {
+				"path": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+				"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+			},
+			"batch": "material",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens",
+			"familyRoot": "/logos/family/hermes-gateway-herdr/2026-09-11-01/01",
+			"sourceArchive": "artwork/logo-family/hermes-gateway-herdr/2026-09-11-01",
+			"foreground": {
+				"subject": {
+					"en": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens",
+					"zh": "拉丝黄铜门框、微开的深蓝珐琅门、象牙色终端嵌字与绿色状态灯"
+				},
+				"original": "/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png",
+				"display": "/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+			},
+			"pattern": "Paired panes and a returning route",
+			"intentionalEdges": [],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+				"campaignArtwork": "/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "88ddee20104d29510cd3772feadb8c6ab9f7642e8b0b9b29088198d23387ce71"
+		},
+		{
+			"id": "ocelot",
+			"title": "Ocelot",
+			"scope": "target",
+			"category": "tools",
+			"canonical": "https://hexly.ai/projects/ocelot",
+			"catalogueSha256": "f32ad2042a8438195ef0f93e5261327f3a996724c6488c7c3e6e4020e83f4f97",
+			"original": {
+				"path": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+				"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "Warm-gold faceted ocelot watching a colorful paper bird",
+			"familyRoot": "/logos/family/ocelot/2026-09-11-01/03",
+			"sourceArchive": "artwork/logo-family/ocelot/2026-09-11-01",
+			"foreground": {
+				"subject": {
+					"en": "Warm-gold faceted ocelot watching a colorful paper bird",
+					"zh": "凝望彩色折纸鸟的暖金色碎片豹猫"
+				},
+				"original": "/logos/family/ocelot/2026-09-11-01/03/transparent.png",
+				"display": "/logos/family/ocelot/2026-09-11-01/03/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+			},
+			"pattern": "Ocelot rosettes and turned page edges",
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"gapsBefore": [
+				"wide and mobile Hero compositions",
+				"seamless light and dark textures",
+				"outlined wordmark and theme lockups",
+				"consolidated mark, icon and real ICO exports",
+				"versioned brand manifest, usage guide and rights disclosure"
+			],
+			"officialVersusCampaign": {
+				"officialProjectIdentity": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+				"campaignArtwork": "/logos/family/ocelot/2026-09-11-01/03/transparent.png",
+				"sameBytes": true,
+				"sourceAdoption": "adopted",
+				"rule": "Original shapes and colors preserved independently; kit publication does not change product adoption."
+			},
+			"protectedMetadataSha256": "5aa8fa70a852d0c67bbc7f977bbc342691c6882713eae39a1096b80b4348d070"
+		},
+		{
+			"id": "snail",
+			"title": "Snail",
+			"scope": "benchmark-preserved",
+			"category": "everyday",
+			"canonical": "https://hexly.ai/projects/snail",
+			"catalogueSha256": "aeb0f56b33c2c95105cd594006699c427203547b81ec98503691ef6a4d8bf7af",
+			"original": {
+				"path": "/logos/originals/snail-v1-0-0.svg",
+				"sha256": "bd936c17cf3d2c64c09150a7e4d7fd07206278505f781a8e4eb162fac2bdb00a"
+			},
+			"batch": "animal",
+			"sourceMethod": "gpt-image-2",
+			"model": "gpt-image-2",
+			"identity": "A complete faceted terracotta snail returning to one red point",
+			"familyRoot": "/logos/family/snail/2026-09-13-01/01",
+			"sourceArchive": "artwork/logo-family/snail/2026-09-13-01",
+			"foreground": {
+				"subject": {
+					"en": "A complete faceted terracotta snail returning to one red point",
+					"zh": "朝向一枚红点的完整陶土色碎片蜗牛"
+				},
+				"original": "/logos/family/snail/2026-09-13-01/01/transparent.png",
+				"display": "/logos/family/snail/2026-09-13-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "5a37ddc71323760f5a444d96bd345501be6a6622af4e2f92dee4886d4e9d0b72"
+			},
+			"pattern": "Returning paths",
+			"intentionalEdges": [],
+			"gapsBefore": [],
+			"existingBrandVersion": "2.0.0",
+			"protectedMetadataSha256": "4fe3251bc00ada67117412026fa5d677c73d462a2cc0d3cf681ec2c1ffb89364"
+		}
+	],
+	"colorAndIdentityScope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	}
+}

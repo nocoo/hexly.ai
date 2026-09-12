@@ -22,5 +22,6 @@
 20. [Project detail, recorded media and canonical routes](17-project-media.md)
 21. [R2 media operations skill](../.agents/skills/hexly-r2-media/SKILL.md) and [publication receipts](media/)
 22. [Snail generated animal brand, v1 history and source-team handoff](18-snail-brand.md)
+23. [Complete family archives, original identity and Hexly campaign scope](19-family-brand-archives.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

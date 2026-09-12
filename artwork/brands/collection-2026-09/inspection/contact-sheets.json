@@ -1,0 +1,548 @@
+{
+	"purpose": "Complete existing artwork and typography on both Hexly themes; contact sheets are scaled inspection composites, not campaign output masters",
+	"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"manifests": [
+		{
+			"project": "frogie",
+			"path": "public/brands/frogie/v1.0.0/manifest.json",
+			"sha256": "9c7e1ddc6c041c803bbea368e3b67de3771e500ffd9df33d801206858f11dba3"
+		},
+		{
+			"project": "pew",
+			"path": "public/brands/pew/v1.0.0/manifest.json",
+			"sha256": "3c887b4744917d7a6e943011c6dc8776e48b25c878cdafd271060fbf5e5f9ec1"
+		},
+		{
+			"project": "firefly",
+			"path": "public/brands/firefly/v1.0.0/manifest.json",
+			"sha256": "d7fb1a2226dd80bc04ff888f127f41ee143c9d33237f4226766c84dcec5bc39d"
+		},
+		{
+			"project": "bogo",
+			"path": "public/brands/bogo/v1.0.0/manifest.json",
+			"sha256": "a9001ae45cb49e369018b962121d9d7d90771670f68dd647275192b6c2bb7dad"
+		},
+		{
+			"project": "steed",
+			"path": "public/brands/steed/v1.0.0/manifest.json",
+			"sha256": "72a724ace9eff372af9fe736528196900bedefc004d0062579df2f890cbb8b24"
+		},
+		{
+			"project": "ellie",
+			"path": "public/brands/ellie/v1.0.0/manifest.json",
+			"sha256": "59ff861f2b1e5d8fc6c60ef110bf7c5eb24bda9659dd74b5f7c55eafd17aa75c"
+		},
+		{
+			"project": "neo",
+			"path": "public/brands/neo/v1.0.0/manifest.json",
+			"sha256": "ef160197f5750bd609abe0f5ca5885c428b4bee3c2c5e1d2bb1d079c9da65b1a"
+		},
+		{
+			"project": "giraffe",
+			"path": "public/brands/giraffe/v1.0.0/manifest.json",
+			"sha256": "dba985c1f01d1eff465ffca8b14dc8acab7465a4b9ffa0d876fcee66a794abea"
+		},
+		{
+			"project": "backy",
+			"path": "public/brands/backy/v1.0.0/manifest.json",
+			"sha256": "029e181db0592f4696a9cd0f7f8a79d64cb302f59e6930341facad04dd77904f"
+		},
+		{
+			"project": "otter",
+			"path": "public/brands/otter/v1.0.0/manifest.json",
+			"sha256": "9ae4475359ce35ef114462441ef98c5b7a206ffbc1fd9a92678204b80444316f"
+		},
+		{
+			"project": "gecko",
+			"path": "public/brands/gecko/v1.0.0/manifest.json",
+			"sha256": "5a3c2287c42d49d95fc352faa67ad9fdf9d2fac3ef39073b1657e5e8962c7229"
+		},
+		{
+			"project": "dove",
+			"path": "public/brands/dove/v1.0.0/manifest.json",
+			"sha256": "3d21fe506c569846b90e45d0c1d164414222c2443406ac6f7bba2773f03fe1a7"
+		},
+		{
+			"project": "pika",
+			"path": "public/brands/pika/v1.0.0/manifest.json",
+			"sha256": "ef1aad7bbb61a5f7e2230a46fc4f53ef6989f72b98f5a84a6bb50277adea6dcd"
+		},
+		{
+			"project": "raven",
+			"path": "public/brands/raven/v1.0.0/manifest.json",
+			"sha256": "167cffd895b81e436868e2fb8099cf3db0c3b49de0b95cb824d557f69e05fd45"
+		},
+		{
+			"project": "bat",
+			"path": "public/brands/bat/v1.0.0/manifest.json",
+			"sha256": "b6a26ef50aa43f9972208cfda141ec997a79fc0523a52d953e72c32c0bbc9a97"
+		},
+		{
+			"project": "lyre",
+			"path": "public/brands/lyre/v1.0.0/manifest.json",
+			"sha256": "8fea827e1961de64b8021a316c1ccfd9f741ef65e18dd73c8f354c0bc99b6817"
+		},
+		{
+			"project": "pokepocket",
+			"path": "public/brands/pokepocket/v1.0.0/manifest.json",
+			"sha256": "d9650e21522e1441e9eb2c790ba56169a8691af52ef9f137455cae6a790ff1b6"
+		},
+		{
+			"project": "dogfight",
+			"path": "public/brands/dogfight/v1.0.0/manifest.json",
+			"sha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+		},
+		{
+			"project": "gaga",
+			"path": "public/brands/gaga/v1.0.0/manifest.json",
+			"sha256": "9f494c159c9a464f5ab1135577c1d97c8f4e0beeed4c2598c615c48f2d654ced"
+		},
+		{
+			"project": "pew-game",
+			"path": "public/brands/pew-game/v1.0.0/manifest.json",
+			"sha256": "e367ff9d8d28c46e17e8b65e1cae732038dd61cf4c7db65133f1bac96cea4c5f"
+		},
+		{
+			"project": "rooster",
+			"path": "public/brands/rooster/v1.0.0/manifest.json",
+			"sha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+		},
+		{
+			"project": "snaky",
+			"path": "public/brands/snaky/v1.0.0/manifest.json",
+			"sha256": "a89eb7b01412aa2f8d79b3b007e5f1bb4a36acc94cec1f80209453aa10dae648"
+		},
+		{
+			"project": "showtime",
+			"path": "public/brands/showtime/v1.0.0/manifest.json",
+			"sha256": "86ee82731567d382e5e625ac1ef09b99e96f8acd4fd28241573a22cd8b0c84d8"
+		},
+		{
+			"project": "infospace",
+			"path": "public/brands/infospace/v1.0.0/manifest.json",
+			"sha256": "42205956aa29c5b355dddb89a4b8b826f31d4b4d443b9e8379e5beaba10c1757"
+		},
+		{
+			"project": "signoff-now",
+			"path": "public/brands/signoff-now/v1.0.0/manifest.json",
+			"sha256": "d0a9d0532ef2f096c1406500a98b987fb0e3c81c7dc6f59c4f12715d447fb2b9"
+		},
+		{
+			"project": "unseal",
+			"path": "public/brands/unseal/v1.0.0/manifest.json",
+			"sha256": "a558ea617cee2b5e1a849336924c5b005a0ef98f92f58445c1977f462cb47b9c"
+		},
+		{
+			"project": "flow",
+			"path": "public/brands/flow/v1.0.0/manifest.json",
+			"sha256": "5f26106f3d434d7c82041181ee216870a25ea34356458d1b81810c6b6c68818a"
+		},
+		{
+			"project": "codo",
+			"path": "public/brands/codo/v1.0.0/manifest.json",
+			"sha256": "80692d289d0160104fe7251fe0b0ff391301b09da9cbe9b3d39216329aeeba40"
+		},
+		{
+			"project": "arena",
+			"path": "public/brands/arena/v1.0.0/manifest.json",
+			"sha256": "e30791a2474fae00edbf71ec0fcdc3deaa2a1711edface01b59dbb3a161ef5ac"
+		},
+		{
+			"project": "owl",
+			"path": "public/brands/owl/v1.0.0/manifest.json",
+			"sha256": "918dcfef439476111243b62825016d58aebfc81bb98aa3f2a249303db1364a8d"
+		},
+		{
+			"project": "xray",
+			"path": "public/brands/xray/v1.0.0/manifest.json",
+			"sha256": "2f62205b056b7c99e4afbf84f5fe3ee5fbedd8a70c1e4fd28f29365dac1c613e"
+		},
+		{
+			"project": "r2shot",
+			"path": "public/brands/r2shot/v1.0.0/manifest.json",
+			"sha256": "67e7075c12c6e23bca65394803d5d2f5d00755c936c4db65fbcb16f4d580a324"
+		},
+		{
+			"project": "shrike",
+			"path": "public/brands/shrike/v1.0.0/manifest.json",
+			"sha256": "ce70e9760a7f99c361f681c9645b735722667733ce334a88d9abea27fb5afb0f"
+		},
+		{
+			"project": "hooky",
+			"path": "public/brands/hooky/v1.0.0/manifest.json",
+			"sha256": "df53dc334a8853d2abedcda6b412d0696a4ab06577768c0fc30d2f6fb60f36b6"
+		},
+		{
+			"project": "dotty",
+			"path": "public/brands/dotty/v1.0.0/manifest.json",
+			"sha256": "2b8c7cf9e20f2825289632d3af0a9537f2aed9f99e6ba3f0c6023793cc106930"
+		},
+		{
+			"project": "wooly",
+			"path": "public/brands/wooly/v1.0.0/manifest.json",
+			"sha256": "8004bcbe9c29916193d2f756dfd883b2d27d91e5d5083febccb70c9e41a51d48"
+		},
+		{
+			"project": "matrix",
+			"path": "public/brands/matrix/v1.0.0/manifest.json",
+			"sha256": "76a5a9a10d1b3d611d84e3619dea129a841d3bedf4087cd4f7e905404b589c38"
+		},
+		{
+			"project": "basalt",
+			"path": "public/brands/basalt/v1.0.0/manifest.json",
+			"sha256": "5f2d3eeb1f7b2b4422e2ca9f67d54e694d411af7cdb072d1b530ee1e997aa505"
+		},
+		{
+			"project": "surety",
+			"path": "public/brands/surety/v1.0.0/manifest.json",
+			"sha256": "3252b9e934cf33d00e6b438494a59e638714c0e684b937ca4ce37db0ed09b714"
+		},
+		{
+			"project": "life-ai",
+			"path": "public/brands/life-ai/v1.0.0/manifest.json",
+			"sha256": "d7c49d162b5275bd7f10f5cdec1977fd5adafadd8b2022823f15d9764bffed09"
+		},
+		{
+			"project": "echo",
+			"path": "public/brands/echo/v1.0.0/manifest.json",
+			"sha256": "ee88d8ae0eb7c639d514a2ddc6b2b7b94f8cdc131f94062a62337aa8e588bccd"
+		},
+		{
+			"project": "deca",
+			"path": "public/brands/deca/v1.0.0/manifest.json",
+			"sha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+		},
+		{
+			"project": "runner",
+			"path": "public/brands/runner/v1.0.0/manifest.json",
+			"sha256": "d962ceb8b99acc629d0cbe640beaced233426c4bd02bc07e798946cc7b41cba6"
+		},
+		{
+			"project": "zhe",
+			"path": "public/brands/zhe/v1.0.0/manifest.json",
+			"sha256": "fad6854a35915541d29bd01d068a40ce83738d9d0ecea2a8bf14384d9048ebe1"
+		},
+		{
+			"project": "geekhub",
+			"path": "public/brands/geekhub/v1.0.0/manifest.json",
+			"sha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+		},
+		{
+			"project": "noheir",
+			"path": "public/brands/noheir/v1.0.0/manifest.json",
+			"sha256": "5a7afc1dd7bc1a12fc8e5e4d8f0299a43caa9fdc01e4916d7c55f52aec46bffe"
+		},
+		{
+			"project": "ipsafe",
+			"path": "public/brands/ipsafe/v1.0.0/manifest.json",
+			"sha256": "c69e4d9e1b3ce869aa955473a7884bebc00a33d63f92d3cfaef43bc6713ae9c8"
+		},
+		{
+			"project": "clip",
+			"path": "public/brands/clip/v1.0.0/manifest.json",
+			"sha256": "e3aad2bc4963ea57fa3cf35359a099afb7bd3c2e82dc44a96cb9e3190dfcd909"
+		},
+		{
+			"project": "fundly",
+			"path": "public/brands/fundly/v1.0.0/manifest.json",
+			"sha256": "b079c51c6034b6bd8ca9df868a2c03b5681984426b54c4c88e89a763109600af"
+		},
+		{
+			"project": "dreamro",
+			"path": "public/brands/dreamro/v1.0.0/manifest.json",
+			"sha256": "2cbe10ef2201355378dad5f5605c2116f9eb265bdde8e1010ed759bc664e3278"
+		},
+		{
+			"project": "meowth",
+			"path": "public/brands/meowth/v1.0.0/manifest.json",
+			"sha256": "bc1df0217468580df55f4c867a626fc855955d41c74c59fd5e4356a0b7befd86"
+		},
+		{
+			"project": "coffee",
+			"path": "public/brands/coffee/v1.0.0/manifest.json",
+			"sha256": "dfbbf78b0d15b0d1d08a7668c4d44aa5b948bb0091db43fc35a90a913149b428"
+		},
+		{
+			"project": "hermes-on-herdr",
+			"path": "public/brands/hermes-on-herdr/v1.0.0/manifest.json",
+			"sha256": "941aa8902f762892529b50c086d5d16ed66308dd52d47f5c821f68d47b1db16d"
+		},
+		{
+			"project": "ocelot",
+			"path": "public/brands/ocelot/v1.0.0/manifest.json",
+			"sha256": "8aa57fe7bb4fb79184badc817b35319ad4f7a7cc21efd7d1d532daee3ba4daad"
+		}
+	],
+	"files": [
+		{
+			"path": "wide-01.webp",
+			"sha256": "ed4d75659c98d3eeb7bffdc6562453429dd0114a250e099753f672f073d777d3",
+			"projects": [
+				"frogie",
+				"pew",
+				"firefly",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy"
+			]
+		},
+		{
+			"path": "mobile-01.webp",
+			"sha256": "c6dba0ee5be0bb1fc9bdb6fe8ac360a44234bbd76db7dafddf5934faaf2bc807",
+			"projects": [
+				"frogie",
+				"pew",
+				"firefly",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy"
+			]
+		},
+		{
+			"path": "lockups-01.webp",
+			"sha256": "21c803a8f37c93bc485d34698593259879e4981a19be2eff4dc5f8e8e3ca2b94",
+			"projects": [
+				"frogie",
+				"pew",
+				"firefly",
+				"bogo",
+				"steed",
+				"ellie",
+				"neo",
+				"giraffe",
+				"backy"
+			]
+		},
+		{
+			"path": "wide-02.webp",
+			"sha256": "3a0699a1f3cd0e81f9c4dbee25f4e981bd1c7c2a74330f45b5b9bbc46f237878",
+			"projects": [
+				"otter",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"bat",
+				"lyre",
+				"pokepocket",
+				"dogfight"
+			]
+		},
+		{
+			"path": "mobile-02.webp",
+			"sha256": "d810c35b5dcd231e5ab9ef663af5f58df4c8826429b0c64cab40e38a00c1344a",
+			"projects": [
+				"otter",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"bat",
+				"lyre",
+				"pokepocket",
+				"dogfight"
+			]
+		},
+		{
+			"path": "lockups-02.webp",
+			"sha256": "b50dd82d9a48c729d66a14df3e1e7ec157dacb056016c1bee9c9d3e72bf6d255",
+			"projects": [
+				"otter",
+				"gecko",
+				"dove",
+				"pika",
+				"raven",
+				"bat",
+				"lyre",
+				"pokepocket",
+				"dogfight"
+			]
+		},
+		{
+			"path": "wide-03.webp",
+			"sha256": "59773a9064de16f3467fb77d3a0d2b7e0e1c5e066483f980cf4767aeab958780",
+			"projects": [
+				"gaga",
+				"pew-game",
+				"rooster",
+				"snaky",
+				"showtime",
+				"infospace",
+				"signoff-now",
+				"unseal",
+				"flow"
+			]
+		},
+		{
+			"path": "mobile-03.webp",
+			"sha256": "aec13d1abbeeac0025607788862e15572be0d2e1fd22525fe7f2cfdd291b5290",
+			"projects": [
+				"gaga",
+				"pew-game",
+				"rooster",
+				"snaky",
+				"showtime",
+				"infospace",
+				"signoff-now",
+				"unseal",
+				"flow"
+			]
+		},
+		{
+			"path": "lockups-03.webp",
+			"sha256": "b2f7a1c46e222a3c4d1afd6f61604d9e96b24f778f39b91c080f5ca3e8860ff3",
+			"projects": [
+				"gaga",
+				"pew-game",
+				"rooster",
+				"snaky",
+				"showtime",
+				"infospace",
+				"signoff-now",
+				"unseal",
+				"flow"
+			]
+		},
+		{
+			"path": "wide-04.webp",
+			"sha256": "1470987cf2dbdf6d432a9466d8ca20b6b387ac77c4c271a6c4971e863a16f24b",
+			"projects": [
+				"codo",
+				"arena",
+				"owl",
+				"xray",
+				"r2shot",
+				"shrike",
+				"hooky",
+				"dotty",
+				"wooly"
+			]
+		},
+		{
+			"path": "mobile-04.webp",
+			"sha256": "b77614005bd8d9dcfcbba691125a4edcb509fb7b6d6a1b0afbf036863da25eae",
+			"projects": [
+				"codo",
+				"arena",
+				"owl",
+				"xray",
+				"r2shot",
+				"shrike",
+				"hooky",
+				"dotty",
+				"wooly"
+			]
+		},
+		{
+			"path": "lockups-04.webp",
+			"sha256": "40cb0f55107a04cecef684ef37d6f52ce26c9bacafa1644f3a86cf648851d12a",
+			"projects": [
+				"codo",
+				"arena",
+				"owl",
+				"xray",
+				"r2shot",
+				"shrike",
+				"hooky",
+				"dotty",
+				"wooly"
+			]
+		},
+		{
+			"path": "wide-05.webp",
+			"sha256": "649cf957b20020a6cf79da802f787d2232a82030bab4bb872dcc5dd47e76db8d",
+			"projects": [
+				"matrix",
+				"basalt",
+				"surety",
+				"life-ai",
+				"echo",
+				"deca",
+				"runner",
+				"zhe",
+				"geekhub"
+			]
+		},
+		{
+			"path": "mobile-05.webp",
+			"sha256": "1bd46d2cab0dbb495babf4f1922bf526f6e11f564aff897581c039269b3fd982",
+			"projects": [
+				"matrix",
+				"basalt",
+				"surety",
+				"life-ai",
+				"echo",
+				"deca",
+				"runner",
+				"zhe",
+				"geekhub"
+			]
+		},
+		{
+			"path": "lockups-05.webp",
+			"sha256": "7e75fe9146b29ee870c82346af5b04a1d4c7c7bfaf888d5276aa0a6f3b6289a9",
+			"projects": [
+				"matrix",
+				"basalt",
+				"surety",
+				"life-ai",
+				"echo",
+				"deca",
+				"runner",
+				"zhe",
+				"geekhub"
+			]
+		},
+		{
+			"path": "wide-06.webp",
+			"sha256": "b8db4c667e389e09984a1144e8af419f7d87f4df1316e1734c9cbad444031eb1",
+			"projects": [
+				"noheir",
+				"ipsafe",
+				"clip",
+				"fundly",
+				"dreamro",
+				"meowth",
+				"coffee",
+				"hermes-on-herdr",
+				"ocelot"
+			]
+		},
+		{
+			"path": "mobile-06.webp",
+			"sha256": "9f840f987fea061ff5e878724fa1c6541d141ed8784d346048ac9b6ca8f489c0",
+			"projects": [
+				"noheir",
+				"ipsafe",
+				"clip",
+				"fundly",
+				"dreamro",
+				"meowth",
+				"coffee",
+				"hermes-on-herdr",
+				"ocelot"
+			]
+		},
+		{
+			"path": "lockups-06.webp",
+			"sha256": "5eaf5f5b9b7c35021252dc52fcc058632220b08e37c8103ffd9d7ef963ce01ed",
+			"projects": [
+				"noheir",
+				"ipsafe",
+				"clip",
+				"fundly",
+				"dreamro",
+				"meowth",
+				"coffee",
+				"hermes-on-herdr",
+				"ocelot"
+			]
+		}
+	]
+}

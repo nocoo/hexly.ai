@@ -1,0 +1,128 @@
+{
+	"schemaVersion": 1,
+	"project": "r2shot",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Capture. Share. Carry on.",
+		"zh": "截下这一刻，轻松分享。"
+	},
+	"description": {
+		"en": "Blue faceted dolphin with a curled tail.",
+		"zh": "蓝色碎片化海豚与卷曲尾鳍。"
+	},
+	"foreground": {
+		"path": "/logos/family/r2shot/2026-09-07-01/01/transparent.png",
+		"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"width": 920,
+		"height": 920
+	},
+	"pattern": {
+		"name": {
+			"en": "Dolphin wake",
+			"zh": "海豚尾波"
+		},
+		"description": {
+			"en": "Three oblique wave crests and a low returning wake follow the dolphin’s curled tail.",
+			"zh": "三道斜向浪峰与低缓回流顺着海豚卷尾延伸，留下轻快的游动轨迹。"
+		},
+		"source": "artwork/logo-family/r2shot/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "fc8986df6b282f231700dbef14fc056202bba172a32d32cc0b034dec50cf3d98",
+		"layers": [
+			{
+				"d": "M340-90C520 128 663 183 1120 62L1130 105C699 237 482 180 302-69Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M518-85C658 53 836 58 1089-20L1110 23C823 121 635 105 480-67Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M490 122C699 331 887 269 1111 171L1120 208C879 324 678 386 462 156Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M305-67C483 182 699 240 1130 108",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M483-67C635 108 823 124 1110 26",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M463 159C678 389 879 327 1120 211",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-90 831C139 871 184 1041 492 1090L455 1120C151 1067 90 919-92 867Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-80 906C68 944 115 1013 242 1074",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-92.0, -90.0, 1130.0, 1120.0],
+		"transform": {
+			"scale": 0.353518821603928,
+			"x": 72.52373158756137,
+			"y": 73.93780687397708,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "R2Shot",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 478.573,
+		"height": 133.92,
+		"glyphBoundsUnits": [69.499755859375, -14, 3259.308646824049, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/r2shot.png",
+		"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"width": 920,
+		"height": 920,
+		"sourceUrl": "https://github.com/nocoo/r2shot/blob/d69714a2332066c9c7b1792f919607a4b776eade/logo.png",
+		"repositoryRevision": "d69714a2332066c9c7b1792f919607a4b776eade"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "clip",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/clip#brand",
+	"root": "https://hexly.ai/brands/clip/v1.0.0",
+	"source": "artwork/brands/clip/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/clip.png",
+		"export": "/brands/clip/v1.0.0/official-logo.png",
+		"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+		"bytes": 3160958,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "963e9e0e52d168d56139a609fa918166741f14a9d80acddfe399f9f3dae334d6",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 482,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+		"sourceRepositoryRevision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/clip/2026-09-07-02/01/transparent.png",
+		"export": "/brands/clip/v1.0.0/logo.png",
+		"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983",
+		"bytes": 2528861,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "4ff5d89c58a21bd394df8828109efa163c255754d0005051cbe966c074dadb36",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 711,
+			"left": 0
+		},
+		"sameBytesAsOfficial": false,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "review",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/clip/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 57917,
+			"sha256": "8a070ec54072eb27c0f646d488ff7957f33829bcf7d201a0aae4ac3556ce1091"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 116273,
+			"sha256": "97b9dad6c8755b3b983b5d8832767b597be5a8d95bad2177a73dcc85a6480de0"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6632,
+			"sha256": "6e3bda03c9522f734d9c500e1fb62165e6e885e127a33dc25bf1076df55a79b5"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 775281,
+			"sha256": "76737b6acded3dd112c8cf20b2892752ee6104e922c42c38600029e44b00e230"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 67814,
+			"sha256": "bb0720421e60d59fde34ee7da262638771d15248ac1e5bb49ef16c2b64aa3814"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 58310,
+			"sha256": "900525945724540cd892daffe3adafac26fb2a2306e858b9438a1339cd923401"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 58736,
+			"sha256": "da163abf3b00f1812b15bafce187854c3eb55463aa8846c22b14eecec52fbb21"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 775940,
+			"sha256": "a9ec79202cf55f394b6b03f384670e87844c3a519da6c58d9bd08a1ecebecaec"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 67888,
+			"sha256": "a1c6786c333b27ce8d39c80bcfb3728d4d4d84f10252a3c520058a34ee5c3c0e"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 70397,
+			"sha256": "0f3127001af4a0cd39fb4b412185aca1941da5106ea99ce112d45ae18dc1541f"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 253622,
+			"sha256": "c8664a766ff8adc3194bffd2ce91716b58b078eedc44ec73ec9c0003bc2cb1f8"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2578146,
+			"sha256": "7e0a8bba82073340a51c71e96ef9a802c2ca5956bb7bfa9726894400222e1db7"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 386982,
+			"sha256": "a03e1b8ade55bb0ac30cc50e36cf82ac57b16008d8d3fb9f71de90bd9bf5aabe"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4248389,
+			"sha256": "3a560bee022b6fc41780193df13d95d2f9a053ac0fc0aba42a5e5c14b82e5ced"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1791,
+			"sha256": "15a307201687010c3c2dc8027bf0de323d63cb8ddf0843b7fff796fa2c1f1118"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 161801,
+			"sha256": "e408f8a731e0061c919d4e8b7ec5a4e65f82609d49cf7449a8122d5398dccaba"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 161558,
+			"sha256": "10e3f8483de841d55b0ec531f8ba9cf8c8f57e83e1a0ebe1cdb3f089cb12d5fc"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 761591,
+			"sha256": "0aabce41e08349838d768fd7880a464d20b1a69c86edebc04092156098144b2c"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 761591,
+			"sha256": "0aabce41e08349838d768fd7880a464d20b1a69c86edebc04092156098144b2c"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2528861,
+			"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 761591,
+			"sha256": "0aabce41e08349838d768fd7880a464d20b1a69c86edebc04092156098144b2c"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 23416,
+			"sha256": "bbd879a7cc93dcfc84cbd3b85011b657ac525da25e8cc0381728e6b6491e2e1d"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 769,
+			"sha256": "d1311b6d67365b8bf36bf1b5440cd3291003aa9a5e367816715bff557756b7dd"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1398,
+			"sha256": "8ec1b00bed076fd37a21c4da6e9dec55d3482073c9701b1e1e3e5b9b8309ca1a"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 78704,
+			"sha256": "bbed6ecf12b2b066d104639132d81967ac0a503ff0ee8469c908d8fbaa080b0f"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2163,
+			"sha256": "0b30942070f1d66326f811361302c6e67b9be81e66a56dd41b71f2664405ebd4"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4220,
+			"sha256": "a7584f4e8ea82b3343b8f52de5686309f492bdbd98a4ea6f40dcc5dc18a2786a"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 247041,
+			"sha256": "7a9ec3215341832c5d5860ca6147dcb80dc07bb2b95a677b3631589898ef5b0a"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6899,
+			"sha256": "fad0c0d45efd802ec6a15c030f469629c527eb11fa06d6a93f93101c5ab95352"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2528861,
+			"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2528861,
+			"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3160958,
+			"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4187,
+			"sha256": "23422d617400c2b844ebc8a772d553e1f21b9f032e3a26f29daf91470ef1afc7"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8253,
+			"sha256": "5a203c0230367e678b8163666283686212f5f7bc04031b28a5a4738afedf7530"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15015,
+			"sha256": "6d3ebb1d9e24b5c61e81d3832a5bb10895c824e5660efc1520b49729903d4e9b"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9859,
+			"sha256": "95d3545ddaa1128bb1819098cfd829c26410e2334a10a766e666d01da9805555"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1256,
+			"sha256": "2ab3caaed7ec6c20da407a5d46053cbefb0d0cef8fba0ad0a3632b01380861ff"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8548,
+			"sha256": "a2d1eda27c9e7950c155a70c0b62ab8aecde7d99e7c6eaae37a6ab4852988c97"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1257,
+			"sha256": "ee1e2e317e7b7978f6351e135a97f62811b8dda111cf7842a4fed2c702beaaf3"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3584,
+			"sha256": "8b1c5db636bf876c2fd9a3959d6ae6af762ddaebec318363b9a57ff0c547abec"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2346013,
+			"sha256": "c8c66df9980c79d13f3608d11313fd003d079f279ce79a401caaea03a5458bfe"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4503,
+			"sha256": "838d4290f17c5a80df6794afa5a6c3b3477b4dcfd7246ca921d608e73c125d64"
+		},
+		{
+			"path": "/brands/clip/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4503,
+			"sha256": "244a9321d9433487aa25eb2632084f87dda44a7e70af1e74fbbcccfdec18723e"
+		}
+	]
+}

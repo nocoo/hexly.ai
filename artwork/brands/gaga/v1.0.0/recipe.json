@@ -1,0 +1,119 @@
+{
+	"schemaVersion": 1,
+	"project": "gaga",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A little room for wonder.",
+		"zh": "在小小房间，发现大大世界。"
+	},
+	"description": {
+		"en": "Naturally crouched biscuit-colored rabbit with one colorful carrot.",
+		"zh": "自然蹲伏的饼干色小兔与一根多彩胡萝卜。"
+	},
+	"foreground": {
+		"path": "/logos/family/gaga/2026-09-07-01/01/transparent.png",
+		"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Playroom folds",
+			"zh": "玩具房折纸"
+		},
+		"description": {
+			"en": "Rounded paper-block outlines and one open fold leave the loose, playful arrangement of a small playroom.",
+			"zh": "圆润纸块与一道开放折线松散排列，像小小玩具房里随手摆开的积木。"
+		},
+		"source": "artwork/logo-family/gaga/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "ba41cbbbb0c823af30403a1f5114e2ba8562bd6283d7f346bbed6b42c40c61a6",
+		"layers": [
+			{
+				"d": "M-64 53H180Q218 53 218 91V239Q218 277 180 277H-64V239H153Q178 239 178 214V114Q178 94 153 94H-64Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-67 283H182Q224 283 224 241V88Q224 47 182 47",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M647-75H874Q915-75 915-34V176Q915 217 874 217H744V178H850Q875 178 875 153V-7Q875-34 849-34H647Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M754 1106V893Q754 851 796 851H1103V890H824Q797 890 797 916V1106Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M746 1105V891Q746 843 794 843H1105",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-104 574C88 434 267 523 260 684C255 811 85 841 142 1053",
+				"tone": "ribbon",
+				"strokeWidth": 48
+			}
+		],
+		"bounds": [-104.0, -75.0, 1105.0, 1106.0],
+		"transform": {
+			"scale": 0.3573200992555831,
+			"x": 77.16129032258064,
+			"y": 71.8014888337469,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Gaga",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 346.82,
+		"height": 159.96,
+		"glyphBoundsUnits": [52.4498291015625, -200, 2301.165315047554, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+		"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/logo.png",
+		"repositoryRevision": "76260f08329784eead9b30912c7692b8ea0d3d56"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

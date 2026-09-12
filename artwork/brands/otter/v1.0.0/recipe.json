@@ -1,0 +1,121 @@
+{
+	"schemaVersion": 1,
+	"project": "otter",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Keep your working world.",
+		"zh": "留住熟悉的工作环境。"
+	},
+	"description": {
+		"en": "Brown otter in a relaxed curl holding one colorful river shell.",
+		"zh": "棕色水獭放松蜷起身体，捧着一枚多彩贝壳。"
+	},
+	"foreground": {
+		"path": "/logos/family/otter/2026-09-07-01/02/transparent.png",
+		"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Riverbank sweeps",
+			"zh": "河岸回流"
+		},
+		"description": {
+			"en": "Two offset eddies meet a low riverbank contour, following the otter’s relaxed curl.",
+			"zh": "两道错开的回流与低缓河岸相接，顺着水獭蜷起的身体轻轻转弯。"
+		},
+		"source": "artwork/logo-family/otter/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "2d0219e3ea20fbe7da5b4bb527775db33ca366946fe338eefc4b60d98de22253",
+		"layers": [
+			{
+				"d": "M-90 33C216 127 393-51 642 35C745 71 816 181 739 265C636 378 503 290 544 218C574 166 643 204 619 238",
+				"tone": "motif",
+				"strokeWidth": 40
+			},
+			{
+				"d": "M-91 59C209 153 399-20 631 61C712 89 780 177 716 246C635 333 535 277 567 231",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M1124 472C868 512 1017 685 832 700C630 716 615 920 781 995C880 1039 1035 1011 1125 1100",
+				"tone": "ribbon",
+				"strokeWidth": 66
+			},
+			{
+				"d": "M1127 434C813 482 988 650 829 664C581 687 575 939 765 1030",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-93 876C71 852 129 1032 383 1024L388 1122H-91Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-91 871C72 845 135 1025 387 1017",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-93.0, 10.775696194907113, 1127.0, 1122.0],
+		"transform": {
+			"scale": 0.3540983606557377,
+			"x": 72.9311475409836,
+			"y": 55.44299149336072,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Otter",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 354.632,
+		"height": 133.92,
+		"glyphBoundsUnits": [52.4498291015625, -14, 2356.9623837678328, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/otter-family-2026-09-07-01-02.png",
+		"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/otter/blob/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3/logo.png",
+		"repositoryRevision": "0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

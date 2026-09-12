@@ -1,0 +1,122 @@
+{
+	"schemaVersion": 1,
+	"project": "infospace",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "A place for every piece.",
+		"zh": "让每条信息各有位置。"
+	},
+	"description": {
+		"en": "Indigo metal information tray with adjustable dividers and four colored paper stacks.",
+		"zh": "带可调隔板与四色纸卡的靛蓝金属信息托盘。"
+	},
+	"foreground": {
+		"path": "/logos/family/infospace/2026-09-09-01/01/transparent.png",
+		"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Adjustable spaces",
+			"zh": "可调分区"
+		},
+		"description": {
+			"en": "Unequal panel outlines and short alignment ticks echo the tray’s adjustable dividers.",
+			"zh": "大小不同的分区框与短定位线，呼应信息托盘可以调整的隔板。"
+		},
+		"source": "artwork/logo-family/infospace/2026-09-09-01/finishing/01/settings.json",
+		"sourceSha256": "3daf347fdf3ea46e7d9d8f6ea7968484ba724c62f8c7f851cc31ab211fc6240a",
+		"layers": [
+			{
+				"d": "M56 54h244v112H56z M332 78h284v118H332z M700 58h260v148H700z",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M42 232h82v408H42z M924 290h60v426h-60z",
+				"tone": "motif",
+				"strokeWidth": 1.05
+			},
+			{
+				"d": "M48 858h250v108H48z M328 886h286v92H328z M650 874h308v94H650z",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M54 52h244v112 M330 76h284v118 M698 56h260v148 M46 856h250v108 M326 884h286v92 M648 872h308v94",
+				"tone": "highlight",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M288 40v16 M306 40v16 M320 68h16 M320 86h16 M686 46h16 M686 64h16 M40 222h16 M40 240h16 M912 278v16 M930 278v16 M286 846v16 M304 846v16 M316 874h16 M316 892h16 M636 862h16 M636 880h16",
+				"tone": "motif",
+				"strokeWidth": 1.7
+			},
+			{
+				"d": "M144 78h108 M372 102h196 M740 82h160 M90 936h144 M362 950h196 M690 940h216",
+				"tone": "ribbon",
+				"strokeWidth": 2
+			}
+		],
+		"bounds": [40.0, 40.0, 984.0, 978.0],
+		"transform": {
+			"scale": 0.4576271186440678,
+			"x": 21.694915254237287,
+			"y": 23.067796610169495,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Info Space",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 685.341,
+		"height": 159.96,
+		"glyphBoundsUnits": [69.499755859375, -200, 4736.220615552819, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+		"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+		"repositoryRevision": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

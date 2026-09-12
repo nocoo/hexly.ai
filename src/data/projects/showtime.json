@@ -263,5 +263,75 @@
 			"en": "The title and three production fields read at large sizes. At 32/24/16 px, the lifted striped stick and slate silhouette carry recognition; the small field labels and material grain merge. Sidebar and browser specimens show identity scale; Showtime itself is a native macOS app.",
 			"zh": "大尺寸可读片名与三栏场记信息；32/24/16 px 主要依靠抬起的斜条上板和场记板轮廓识别，细小栏名与材质纹理会合并。侧栏和浏览器示例用于检查标记尺寸，Showtime 本身是原生 macOS 应用。"
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/showtime/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 1151,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Film gate and cue marks",
+				"zh": "片门与场记"
+			},
+			"description": {
+				"en": "Open film-gate brackets, a narrow perforation rhythm and offset cue lines recall the work of editing.",
+				"zh": "开放的片门定位角、窄窄的齿孔节奏与错开的提示线，保留剪辑台上的工作痕迹。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge on a Hexly campaign canvas",
+				"zh": "带 SHOWTIME 字样、场次数字与拉丝金属铰链的经典黑白场记板，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "Give the work its moment.",
+				"zh": "把产品最好的一刻留下。"
+			}
+		},
+		"description": {
+			"en": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge.",
+			"zh": "带 SHOWTIME 字样、场次数字与拉丝金属铰链的经典黑白场记板。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥116px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 116px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

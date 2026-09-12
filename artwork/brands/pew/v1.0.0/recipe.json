@@ -1,0 +1,123 @@
+{
+	"schemaVersion": 1,
+	"project": "pew",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A rhythm made of work.",
+		"zh": "让投入留下节奏。"
+	},
+	"description": {
+		"en": "Zebra portrait with a rainbow tongue.",
+		"zh": "探入画面的斑马头像，伸出一小段彩虹舌头。"
+	},
+	"foreground": {
+		"path": "/logos/family/pew/2026-09-06-01/04/transparent.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Zebra rhythm",
+			"zh": "斑马节奏"
+		},
+		"description": {
+			"en": "Three tapered sweeps carry the zebra’s stripe rhythm into the surrounding space, with unequal gaps and open ends.",
+			"zh": "三道渐细的曲线疏密错落，将斑马条纹的节奏延伸到留白中。"
+		},
+		"source": "artwork/logo-family/pew/2026-09-06-01/finishing/04/settings.json",
+		"sourceSha256": "96bba3743a7ddf03a5a5764f7ec05c5834e7e03d7e4e3d464bcfbc05c452f3c3",
+		"layers": [
+			{
+				"d": "M-76 365C63 283 96 165 137-64H207C185 179 141 318-49 462Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-89 594C154 484 254 208 285-61H349C323 241 223 503-53 673Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-73 812C215 685 385 336 410-49H455C473 312 319 692-11 879Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-63 471C141 321 183 180 206-60",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-65 681C224 506 323 245 352-60",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-31 891C320 699 473 315 458-49",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-88 1007C157 919 293 792 392 610C325 821 184 988 2 1090Z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [-89.0, -64.0, 459.00181094261325, 1090.0],
+		"transform": {
+			"scale": 0.37435008665511266,
+			"x": 186.74489500554205,
+			"y": 63.95840554592721,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom", "lower-right"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Pew",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 280.163,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 1842.093405018682, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pew-2026-09-07.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
+		"repositoryRevision": "5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

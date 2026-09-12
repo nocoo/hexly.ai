@@ -20,6 +20,16 @@
 
 ## Regenerating previews and profiles
 
+The original project's Logo shape, proportions, colors and exact bytes are
+authoritative. Hexly's paper/ink/terracotta palette, typography, red point and
+editorial composition apply only to the Hexly archive and Hexly-authored
+promotional material. Independent product websites retain their complete
+palettes, themes and UI; an archive update is not a product design migration.
+A small local accent may quote an evidenced Logo color, but never recolor the
+Logo itself. Keep `officialProjectIdentity` separate from
+`campaignInterpretation` in every collected kit, including future generated
+Heroes. A campaign interpretation does not establish product adoption.
+
 `src/data/projects/` is the reviewed source of truth, with one JSON file per project and `index.json` for catalogue order. The first import has 65 projects, 42 preserved source images, and 23 existing profile emojis. Emoji identities were rendered with the macOS Apple Color Emoji font and are stored separately in `public/logos/emoji/`; they are not represented as recovered original logos. The site loads the published catalogue from `/data/projects.json`.
 
 After intentionally editing a project's asset or metadata, run `bun run assets:build`, `bun run docs:profiles`, and `bun run assets:check`. The image command reads only the checked-in source files, preserves their bytes, and recreates the 32/64/160/1024 px display versions. Ordinary builds use the checked-in derivatives and do not access sibling repositories or GitHub.
@@ -65,6 +75,14 @@ publication. See [Snail 2.0.0 and its preserved v1 history](18-snail-brand.md).
 When the owner limits work to Hexly, record a null profile revision and document
 the boundary. Source-project adoption and profile maintenance remain separate
 work; a pending implementation is not described as a deployed application.
+
+Existing artwork can use `brandKit.method: "archived-artwork"` with explicit
+`scope: "hexly-campaign"`. The [complete archive guide](19-family-brand-archives.md)
+defines schema-v2 manifests, full-canvas wide/mobile compositions, independently
+repeatable theme textures, exact original-file and decoded-pixel checks, and
+immutable export tools. No new generation is claimed for such a composition.
+Keep original source rights separate from MIT-authored support work and OFL
+typography. Snail's published v1/v2 files keep their original schema and bytes.
 
 ## Profile maintenance reference
 

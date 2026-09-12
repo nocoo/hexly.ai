@@ -1,0 +1,122 @@
+{
+	"schemaVersion": 1,
+	"project": "owl",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Notice what matters.",
+		"zh": "看见日志里值得留意的变化。"
+	},
+	"description": {
+		"en": "Compact tawny owl holding one multicolored feather.",
+		"zh": "衔着一根多彩羽毛的灰褐色猫头鹰。"
+	},
+	"foreground": {
+		"path": "/logos/family/owl/2026-09-07-01/01/transparent.png",
+		"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Night aperture relief",
+			"zh": "夜间孔径"
+		},
+		"description": {
+			"en": "Interrupted crescents and two rectangular notches suggest an observatory aperture opening into the night.",
+			"zh": "断续月牙与两处矩形缺口组成观测孔径，像镜头缓缓打开夜色。"
+		},
+		"source": "artwork/logo-family/owl/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "78aa33c0ff68df235396a7988ad70ef8734c92817790aeb23ef2a91498fea898",
+		"layers": [
+			{
+				"d": "M1138 917C859 1040 661 902 694 681L726 681L726 578C739 423 862 329 1038 371L1124 392",
+				"tone": "motif",
+				"strokeWidth": 38
+			},
+			{
+				"d": "M1141 940C836 1068 637 905 671 662L704 662L704 575C720 402 860 307 1047 350",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M1160 713C1033 809 920 756 924 645L947 645L947 610C954 551 1017 521 1084 552",
+				"tone": "ribbon",
+				"strokeWidth": 34
+			},
+			{
+				"d": "M-100 127H63V173C196 179 266 92 240-69",
+				"tone": "motif",
+				"strokeWidth": 33
+			},
+			{
+				"d": "M-100 149H45V194C209 204 290 93 262-71",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-76 406C164 454 348 285 329 78H291V-78",
+				"tone": "ribbon",
+				"strokeWidth": 29
+			}
+		],
+		"bounds": [-100.0, -78.0, 1160.0, 984.7927640800765],
+		"transform": {
+			"scale": 0.34285714285714286,
+			"x": 74.28571428571428,
+			"y": 100.54981187198689,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Owl",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 243.427,
+		"height": 133.92,
+		"glyphBoundsUnits": [52.4498291015625, -14, 1562.6440641983695, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/owl-family-2026-09-07-01-01.png",
+		"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/logo.png",
+		"repositoryRevision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"project": "bat",
+	"brandVersion": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/bat-family-2026-09-07-01-02.png",
+		"export": "/brands/bat/v1.0.0/official-logo.png",
+		"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+		"bytes": 2092682,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "60ff960d46d5cad67e02c738b09a17498607ad59bf0088b1a9112fbb3f8ec143",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/bat/blob/46f5c95a6c134487130e2a6d9336ec5e8895a0f7/logo.png",
+		"sourceRepositoryRevision": "46f5c95a6c134487130e2a6d9336ec5e8895a0f7",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/bat/2026-09-07-01/02/transparent.png",
+		"export": "/brands/bat/v1.0.0/logo.png",
+		"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+		"bytes": 2092682,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "60ff960d46d5cad67e02c738b09a17498607ad59bf0088b1a9112fbb3f8ec143",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"generation": {
+		"provider": "Azure OpenAI / Foundry",
+		"model": "gpt-image-2",
+		"batch": "2026-09-07-01",
+		"requestId": "b863119e-564c-42c8-a78a-af7ab45283a0",
+		"promptSha256": "68aa57c56f440fb586b7701e09873f047cc6e45069a5c5c58133106cf396154c",
+		"raw": {
+			"path": "/logos/family/bat/2026-09-07-01/02/raw.png",
+			"bytes": 1698932,
+			"sha256": "1935dbb8272ecb7e1d601042fc687f8b88f1ea72cdb8e6bb20f13182be08b3ce",
+			"width": 2048,
+			"height": 2048
+		},
+		"originallyGeneratedAt": "2026-09-07T03:16:07.973855+00:00",
+		"madeInThisRelease": false
+	},
+	"records": [
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/request.json",
+			"sha256": "28e157e6bb6fd0b269985e81c03bee2a71e13dfad752e4b744c3206b6d4f08a8",
+			"bytes": 1519,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/request.json"
+		},
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/response.json",
+			"sha256": "851c2f773e1652724b42b87e76e3da42efd534116ec234435905dadceaf5d0e0",
+			"bytes": 839,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/response.json"
+		},
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/prompt.txt",
+			"sha256": "68aa57c56f440fb586b7701e09873f047cc6e45069a5c5c58133106cf396154c",
+			"bytes": 4391,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/prompt.txt"
+		},
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/raw-review.json",
+			"sha256": "eae1153697d1198ec7d6940486850133e0cef818f80db679cd22991669a478b8",
+			"bytes": 2250,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/raw-review.json"
+		},
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/authorization.json",
+			"sha256": "eacc3e4bf02d0fecf25023f53d2aa9325a7f79f5baa0e30b41a486f5c13081ad",
+			"bytes": 1372,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/authorization.json"
+		},
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/finishing/02/manifest.json",
+			"sha256": "8e94dba59df87c27667d317ee797fa535aed8d255d6cebba4a85fdd842c91b46",
+			"bytes": 10880,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/finishing/02/manifest.json"
+		},
+		{
+			"path": "artwork/logo-family/bat/2026-09-07-01/finishing/02/settings.json",
+			"sha256": "e8c5ae488c17e77b907892b1e5f2d208835954e04fb5d38a7f59a4a050ea202e",
+			"bytes": 2935,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/bat/2026-09-07-01/finishing/02/settings.json"
+		}
+	],
+	"sourceRights": "Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.",
+	"hero": {
+		"method": "authored-composition",
+		"newGenerationCalls": 0,
+		"nativeGPTOutput": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"texture": {
+		"method": "Authored SVG support graphic from the project's distinct archived pattern; not a logo tracing",
+		"name": {
+			"en": "Dusk scallops",
+			"zh": "暮色翼弧"
+		},
+		"description": {
+			"en": "Interrupted scalloped folds echo the bat’s wings, with broad lobes and short, offset seams.",
+			"zh": "断续的扇贝形弧线取自蝙蝠翼缘，宽弧与短接缝在暮色中轻轻展开。"
+		},
+		"source": "artwork/logo-family/bat/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "e8c5ae488c17e77b907892b1e5f2d208835954e04fb5d38a7f59a4a050ea202e",
+		"layers": [
+			{
+				"d": "M-88 138Q59 28 199 165Q326 44 475 184Q643 67 776 205Q952 91 1120 210L1120 262Q956 144 780 259Q642 120 478 238Q327 95 203 219Q57 81-88 193Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-87 198Q58 86 204 224Q329 102 479 243Q644 127 780 264Q952 153 1123 268",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-93 541Q62 428 180 535Q325 446 431 573L366 616Q279 518 180 589Q63 483-93 595Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M600 875Q711 743 836 858Q979 754 1133 891L1133 946Q980 810 837 913Q715 799 651 918Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M654 925Q715 808 838 922Q979 820 1134 954",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-93, 89.01214574898785, 1134, 954],
+		"transform": {
+			"scale": 0.35207823960880197,
+			"x": 72.74327628361857,
+			"y": 72.38905991704857,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"finishing": {
+		"archive": "artwork/logo-family/bat/2026-09-07-01/finishing/02",
+		"sourceAdoptionUnchanged": true
+	},
+	"build": {
+		"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+		"recipe": "artwork/brands/bat/v1.0.0/recipe.json",
+		"recipeSha256": "76efa622c245b2b3acd881f2e3b187eaa858938cd9273dff59911f7a6811adbc",
+		"tool": "artwork/brands/collection-2026-09/export.ts",
+		"toolSha256": "5f44dfe0f67d0846a84995d3bd030484a9757168336e7f82f3aefe2e2bff46ce",
+		"typographyTool": "artwork/brands/collection-2026-09/outline.py",
+		"typographyToolSha256": "a75ef37be4e93aa7454293339cdac247aadd406086dd42639a327d5ce8f611cd",
+		"sharp": "0.35.4"
+	}
+}

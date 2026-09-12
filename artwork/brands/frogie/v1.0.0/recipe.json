@@ -1,0 +1,102 @@
+{
+	"schemaVersion": 1,
+	"project": "frogie",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Ideas, in good company.",
+		"zh": "让想法与伙伴相聚。"
+	},
+	"description": {
+		"en": "Full-body green frog with musical notes.",
+		"zh": "全身入镜的绿色青蛙，身旁跃动着彩色音符。"
+	},
+	"foreground": {
+		"path": "/logos/family/frogie/2026-09-06-01/03/transparent.png",
+		"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Pond voices",
+			"zh": "池塘声纹"
+		},
+		"description": {
+			"en": "Unequal lily-leaf arcs meet three listening ripples, echoing the frog and its musical notes.",
+			"zh": "大小不一的睡莲弧线与三道声波相遇，呼应青蛙身旁的彩色音符。"
+		},
+		"source": "Authored for this collection; retains the frog and musical-note semantics",
+		"sourceSha256": "226fed245a2f5fcb68d2442bb4e600d811c4f68deaca7d7207eb4763f56e581d",
+		"layers": [
+			{
+				"d": "M90 290C28 246 34 156 104 108L146 198 90 290Z M188 192C138 133 174 62 245 51L248 146Z M278 160C294 86 375 69 426 130L341 174Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M78 382Q188 302 289 354T458 362 M67 408Q186 328 291 380T464 388 M86 438Q190 366 288 410T446 422",
+				"tone": "highlight"
+			}
+		],
+		"bounds": [47.21612611179351, 51.0, 464.0, 438.0],
+		"transform": {
+			"scale": 1.036508432943533,
+			"x": -8.939912885799345,
+			"y": 2.5736881453061926,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Frogie",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 408.269,
+		"height": 158.98,
+		"glyphBoundsUnits": [
+			69.499755859375, -200, 2757.1336590310802, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/frogie-2026-09-06.png",
+		"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png",
+		"repositoryRevision": "e965214c3efe99f4c4b459e6716e2014184dc32d"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,123 @@
+{
+	"schemaVersion": 1,
+	"project": "codo",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A small signal, right on time.",
+		"zh": "恰好此刻，一声轻提醒。"
+	},
+	"description": {
+		"en": "Vivid faceted hummingbird hovering at one coral bell flower.",
+		"zh": "色彩鲜明的切面蜂鸟悬停在一朵珊瑚色钟形花旁。"
+	},
+	"foreground": {
+		"path": "/logos/family/codo/2026-09-07-01/01/transparent.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Petal pockets",
+			"zh": "花瓣口袋"
+		},
+		"description": {
+			"en": "Three asymmetric petal pockets and fine, offset seams echo the bell flower beside the hummingbird.",
+			"zh": "三片不对称的花瓣与细细错开的接缝，呼应蜂鸟身旁的钟形花。"
+		},
+		"source": "artwork/logo-family/codo/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "d0f477bb57abee5a2775eb6607728d45e439e3ac9d0143e98ca6446a0dcc66ea",
+		"layers": [
+			{
+				"d": "M-92 106C125 34 319 68 413 267C255 274 99 245-92 348Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-89 355C102 252 256 282 420 275",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M788-97C882 53 758 217 622 280C801 335 1004 212 1119 10V-97Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M621 287C810 344 1013 221 1125 13",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M779 714C942 670 1073 751 1120 988V1124H850C710 1006 704 855 779 714Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M773 709C696 850 702 1006 844 1127",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-74 810C60 719 222 766 279 948C110 1013 58 1109-74 1115Z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [-92.0, -97.0, 1125.0, 1127.0],
+		"transform": {
+			"scale": 0.35294117647058826,
+			"x": 73.70588235294116,
+			"y": 74.23529411764704,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Codo",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 350.691,
+		"height": 133.92,
+		"glyphBoundsUnits": [52.4498291015625, -14, 2328.8153394616165, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+		"repositoryRevision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

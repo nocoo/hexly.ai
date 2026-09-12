@@ -1,0 +1,114 @@
+{
+	"schemaVersion": 1,
+	"project": "rooster",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A clear start for every agent.",
+		"zh": "让智能体的每一天清晰开始。"
+	},
+	"description": {
+		"en": "Copper rooster lifting one foot beside a multicolored morning glory.",
+		"zh": "铜金色公鸡抬起一只脚，靠近一朵多彩牵牛花。"
+	},
+	"foreground": {
+		"path": "/logos/family/rooster/2026-09-07-01/02/transparent.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Dawn terraces",
+			"zh": "晨光梯田"
+		},
+		"description": {
+			"en": "Unequal stepped bands and rising folds suggest terraces catching the first light of morning.",
+			"zh": "高低错落的阶带与向上折线，像梯田迎来清晨的第一束光。"
+		},
+		"source": "artwork/logo-family/rooster/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "fffff99fecd4855562c1a00e9e46ffe73e1a268ae19a9e3f2308cf15c5954435",
+		"layers": [
+			{
+				"d": "M-97 81H234V125H396V175H558V228H770V278H1121V323H735V276H518V224H354V175H191V129H-97Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-94 135H187V181H350V230H514V282H731V329H1120",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-97 616H99V666H222V722H351V766H523V812H749V862H1123V909H710V859H483V815H309V771H181V717H56V668H-97Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-96 671H53V722H177V777H304V821H478V865H704V915H1122",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M753-84H855V26H990V78H1110V123H952V75H809V-27H753Z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [-97.0, -84.0, 1123.0, 915.0],
+		"transform": {
+			"scale": 0.3540983606557377,
+			"x": 74.34754098360656,
+			"y": 108.87213114754098,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Rooster",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 515.351,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 3522.0058620287027, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+		"repositoryRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

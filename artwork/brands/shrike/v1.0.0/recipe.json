@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 1,
+	"project": "shrike",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Keep your files in step.",
+		"zh": "让文件始终步调一致。"
+	},
+	"description": {
+		"en": "Grey faceted shrike with a dark eye mask.",
+		"zh": "灰色碎片化伯劳与深色眼罩。"
+	},
+	"foreground": {
+		"path": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Folded wings",
+			"zh": "折翼层片"
+		},
+		"description": {
+			"en": "Broad angular pleats and short inset seams echo folded wings at opposite corners of the canvas.",
+			"zh": "宽阔折面与内收短缝在画面对角相互呼应，像伯劳安静收拢的双翼。"
+		},
+		"source": "artwork/logo-family/shrike/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "525dd9c4dfb9e20e1d602a38f8266e5e9ccaf55f082ffe29fb96ef8bbe2e0936",
+		"layers": [
+			{
+				"d": "M-95 13L327-82L176 116L-96 294Z M-82 325L196 150L108 349L-96 526Z M831 1100L1022 719L1115 760L1012 1110Z M530 1104L833 781L791 983L670 1120Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-89 295L182 117L333-81 M-90 528L114 351L202 151 M798 984L839 782 M839 1102L1029 721",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M581-91L776 51L1084 103L909-67Z M-85 741L133 614L64 836L-90 970Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M777 57L1083 109 M-88 974L70 838L139 614",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-96.0, -91.0, 1115.0, 1120.0],
+		"transform": {
+			"scale": 0.35672997522708505,
+			"x": 74.24607762180017,
+			"y": 72.46242774566474,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Shrike",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 411.909,
+		"height": 133.92,
+		"glyphBoundsUnits": [37.499755859375, -14, 2751.1336590310802, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/shrike.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"repositoryRevision": "0fec187fc22742664925897400d0c1a62b2478bb"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

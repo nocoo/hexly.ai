@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "steed",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/steed#brand",
+	"root": "https://hexly.ai/brands/steed/v1.0.0",
+	"source": "artwork/brands/steed/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/steed-family-2026-09-07-02-01.png",
+		"export": "/brands/steed/v1.0.0/official-logo.png",
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"bytes": 3189966,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "46a488e99620ef31cd24171daab4376205391f8a4de0cee02444fba99c375980",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1516,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
+		"sourceRepositoryRevision": "bcab1f113b9b7cde65898bbd23705c7dac339634",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/steed/2026-09-07-02/01/transparent.png",
+		"export": "/brands/steed/v1.0.0/logo.png",
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"bytes": 3189966,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "46a488e99620ef31cd24171daab4376205391f8a4de0cee02444fba99c375980",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1516,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/steed/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 56685,
+			"sha256": "8f74c474834f0c88a7efca6bbca401ad12f81a67b2d12b1146fc8f6569e8a400"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 116205,
+			"sha256": "85e66113da549a486b315f8fe57e2bf6527e7246812354f6afb8bb68af101573"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6498,
+			"sha256": "3e5cf21cae4a344fc9a9b8d98de20bbf8bffdb407b397bcf5fce227109976115"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 934465,
+			"sha256": "f705d77e7a5b6ce7f437fe78d9c3e2523439cba2717ddd8e49964b80ca41d84a"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 72180,
+			"sha256": "0a758db92a1c36bb44afd9dfe6a603bb1db5f2a1b61ad26b0f46391b9c69974b"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 56440,
+			"sha256": "0f0f0c317dd7653995b50f30c2fb48439d29ba0b9e5af4780adae861b40aacb7"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59620,
+			"sha256": "92f582b4baeb61142a51be4135b3c0c9a5c15d290cdba85ed64c1747f4466211"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 938086,
+			"sha256": "310840e3e4762bfb35e8ca44470e393165972984f85ca63a3b7c0f44f3e47f19"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 73738,
+			"sha256": "572108ced701aa7af7dff5262e52b4bc5b352020dc504116e7e82f8318bfe89f"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 69010,
+			"sha256": "cea610e872b6e192da0be4e386c051b4da5853745cf45f761a92a62be40a5912"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 272351,
+			"sha256": "f2240d62fc6c6b5df50967734c6c3c6b221e661b70c4799dac48abdfdd589be0"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3236994,
+			"sha256": "ef27702aa43bcd782993037c97545c71ffb76b1d42bc254482728b8b15404ed6"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 405600,
+			"sha256": "307e9a360d20f89687ae92a8089ee708aac16d701bef23a983976a01c7a4ecc4"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4999003,
+			"sha256": "2e9ca2540081fb4f35f5014fb1afe4be2c8a0877ad7715878f25f5bc58264999"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "71ac921f79b6181403f9cadab994939df9066a7dc0cecfb5c57b028e2ee410f8"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 179553,
+			"sha256": "a350d9331b5bcc6e74548e47a15727ee7d56efcde05a165dfcf37f8acabb4a50"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 178924,
+			"sha256": "1f55e12d6177742f92ec00f23e517000658eb76c4dda477e8f5a26d0fb6865f7"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 898092,
+			"sha256": "a45fc27435a091b6bf627a18638dc49fc62e05b484f59861bb5cc1ba41f9cdae"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 898092,
+			"sha256": "a45fc27435a091b6bf627a18638dc49fc62e05b484f59861bb5cc1ba41f9cdae"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 898092,
+			"sha256": "a45fc27435a091b6bf627a18638dc49fc62e05b484f59861bb5cc1ba41f9cdae"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 22704,
+			"sha256": "d7547dff9c85e0836654a1bdebe3afc3819839c228d00ddac4be1ba35880c1f6"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 730,
+			"sha256": "4be1466352484cc80e8a905a348424d411840b52319496845244c3b2a2a38864"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1293,
+			"sha256": "5caace5b1e50f0a474237a5e7ad302061c728ecab90370ea03a21f5007a43a03"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 80139,
+			"sha256": "a0655b745affc7b977a0c3dc0423f48d442628cf583aa625c777969d98ebb992"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2037,
+			"sha256": "7ddff6563ff9b29372920192171a9c1cd1ae429dbf9ee10f5a011cb2c3010470"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3979,
+			"sha256": "4f3e5c8c488e7e09fc1e3c954a2ff5e4266d4502a1fd32fbdd5e8a79bebb32b7"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 269319,
+			"sha256": "ad7cb8c7f6839edf1be3e31ca4fab08d0e0c5b16c8c3b423238f1f684c497f69"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6514,
+			"sha256": "fb9c5faccd2b971cc796c139526f8a208f9f5da3218dfadbcd73bd7a9711540f"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3189966,
+			"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 2726,
+			"sha256": "32304a306cc7265b008951e0e6061f350137ecdac92647412fcfd53180f24b42"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7817,
+			"sha256": "4d8a85164d44a6955ce7142d47b0305d4c13e963cec5e11d0f6248f4b050279b"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 13533,
+			"sha256": "30d2712db6be8f8da0220e1a735e21dc2098b676e7b8b3f5cf99d76ebe1ac86b"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 14534,
+			"sha256": "a2590443279e9441bafa79611dd968dc4584d5db94d75154f8ae9098d47a6b91"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1028,
+			"sha256": "99cddb551f5359371c673c8548e7c4a2e86922bb2943d1197ee470f305f20e6c"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 12519,
+			"sha256": "299ec69a9b82331cb092b4c0fe424a83707326ff967dfcc2f190acded9da6661"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1029,
+			"sha256": "17117dd0f24ba60f0fa97df45b8454d432d2784c313f070e5e90da4268147b58"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3334,
+			"sha256": "e32bdea3000efc38aec3cde2b80fa1daa87be70916766ebb4852a58716899488"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2980620,
+			"sha256": "63f3a19bc1c9580d85ff9c52a7b747a1a113ed6e170b7868bdbfe4f3dbe91d82"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 8051,
+			"sha256": "a3f5d713d54f816bee86176e66c4de17d6a0325f2809b0c1beba7c1ee315f0e7"
+		},
+		{
+			"path": "/brands/steed/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 8051,
+			"sha256": "05686a7cb49d59eb225a07a560783f43d6317c2f8828c1a0c485c0d507fa5521"
+		}
+	]
+}

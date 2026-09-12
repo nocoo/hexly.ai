@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "frogie",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/frogie#brand",
+	"root": "https://hexly.ai/brands/frogie/v1.0.0",
+	"source": "artwork/brands/frogie/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/frogie-2026-09-06.png",
+		"export": "/brands/frogie/v1.0.0/official-logo.png",
+		"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+		"bytes": 3588507,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "33da2681091fabc3efb46344446682b3ececdd718fe0488de647a5b8e6faba8f",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png",
+		"sourceRepositoryRevision": "e965214c3efe99f4c4b459e6716e2014184dc32d",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/frogie/2026-09-06-01/03/transparent.png",
+		"export": "/brands/frogie/v1.0.0/logo.png",
+		"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+		"bytes": 3588507,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "33da2681091fabc3efb46344446682b3ececdd718fe0488de647a5b8e6faba8f",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/frogie/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 61350,
+			"sha256": "551d136099079fe8989103f44b3605e6f27d85894e95c5d7e162b4aae1fe6a8e"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 126945,
+			"sha256": "9a27c8cd8cfc1c82e3ba1c4c82ab9c201c0fc07a3d5b5178d63627515e805d67"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6410,
+			"sha256": "72962e26cc1990a58e39c1de1251faa961fa4fb2c406ba9016d14bed8600a1d6"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 842399,
+			"sha256": "84edf4c5e2e4f2d36433be6e30b9554790a018d64716bc7a0814af87b842685a"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 73390,
+			"sha256": "6b4feedd7c5a77a56e7e64a5abaf738deff6ae459a81a02b3f6744d807e5e5a9"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59622,
+			"sha256": "7af0dd43989b102e17b914f52901918cc8fc293e579a6d9fc63eef67205ef76e"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57500,
+			"sha256": "dbf5ceff6c4bf6c917b3621b1344012f1ebbab0bdd29c5985e1eb88d5ccc7c27"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 841772,
+			"sha256": "0f7eeffcb5e09ac56823e66b4c9414b1e4ddfc3be6830c772c5026f2a7043218"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 71414,
+			"sha256": "2aa153ca821830539b91756919560810bdf1e477fd0232a37fd568dbfc54d919"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 75681,
+			"sha256": "9a2956e77184be45d6184be4eba473a772fc573333600ca9fc92857ab610a385"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 292089,
+			"sha256": "7c2d1386a5fcbee754cbf2240db8c950811f437ad2082e6361612e8d24843734"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3643899,
+			"sha256": "2c3e21f690310e60de79063f7e63ff1d6665537fd1084cfeeefdfd93953eafca"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 426178,
+			"sha256": "693bede680f4a05924c74147a5a2d7a5c703b490332bdab86995507061f67931"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5555134,
+			"sha256": "d1df7b7901af384a3eed8ccdf326d474159ee766e6384990b4e938f33696b2cc"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "3c92c3db9ab67475a197d24078b24125ad5c8bce53e4676e987ee06b6efa5213"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 186343,
+			"sha256": "301ab5ad6a8801bf680b1e58a335039db3e944a473419f4556d913917c96c6af"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 186331,
+			"sha256": "59fc06762f0499d3bd79e4fd43d41ba57e91086ddbf8467e77a698d1d8aeccda"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 972658,
+			"sha256": "5b1229b3d6ed7e4a08116bcbe88362af3e78d2ea982cb119e336dc3e9213b8f8"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 972658,
+			"sha256": "5b1229b3d6ed7e4a08116bcbe88362af3e78d2ea982cb119e336dc3e9213b8f8"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3588507,
+			"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 972658,
+			"sha256": "5b1229b3d6ed7e4a08116bcbe88362af3e78d2ea982cb119e336dc3e9213b8f8"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 25154,
+			"sha256": "e4aa3481db48096a6ef17de07e85e52c66500d4a58dd1c2377bd6ec31ecf81c5"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 829,
+			"sha256": "3aef4aa0e541dff93bedb05a1dea55d9743f3cdc78777e9a853e55a39946c697"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1509,
+			"sha256": "b78d6473bc732b14fc55043065884ac3428df6546df6ca62e60be9c95d14c106"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 86632,
+			"sha256": "9c86f9fcf35bde244421ca7573ccd55878731527c5482af76a32ea84a1e4e363"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2340,
+			"sha256": "3c616084a1d57372ebf69ca4d01a6f186f8fd5daf5eb46c76d86a8ef02be7483"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4559,
+			"sha256": "c5291d9a5001ad5206ceefa275ee34ee8991e2718cbd973fd18fe3684910e16b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 288146,
+			"sha256": "611a0c92f5f8b0020d85d2439b601bc375de79c90a892d5b23b208056d993948"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7329,
+			"sha256": "08e7d9e6691b23a52e8b96cf9ba9b5b7a3e9efc9ac0a221ca18f41fd5a9edfd1"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3588507,
+			"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3588507,
+			"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3588507,
+			"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 5304,
+			"sha256": "38c66a06fdafb49e623cbcd16031f2a591d5905d9057f5aff16deee0a29db70b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7110,
+			"sha256": "342fc0c7a19eb89766f423ceef064bd6d10ddbfdf539d6e1eccba8376de91abc"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15995,
+			"sha256": "0e07b14f4eed002b8fae0fa19a88502159a48069a09feeab6571b0e0229421db"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9598,
+			"sha256": "ab7ce5d9aa707540b2278c4988b883beb4e970de9671e0139a4dad7f63079d37"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 802,
+			"sha256": "ffa00f63ac451cc9f885e4b04d61dcc15edd1452bb90952e915090e4cb960662"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8244,
+			"sha256": "0147e5fb391de4d5f115245f3eb5bec01becbfa1f3ae5b487bfe4c036b00a94b"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 803,
+			"sha256": "7c01c6fd795aeef42fd20c5c6e4a327f011f45db853ac3c43bb8919b93430d02"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3369,
+			"sha256": "6c42680b41462b4cded45b1b03aadf5905c4afe3eab6b3f2283a3b1b0e312b45"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3387872,
+			"sha256": "be335d2c2470b3001f588f2e94475b0d0ece30224aa7bd7f28ed468444859b3e"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6729,
+			"sha256": "e63ebf6ef55b1bab8dc49632c98fffe37f98bcf52cbf5e212d6ca6aa4f2dc817"
+		},
+		{
+			"path": "/brands/frogie/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6729,
+			"sha256": "345c0bbbc7c4dd14a99e0fd8249e95a5766551eb89cae465fade2436e226ba4f"
+		}
+	]
+}

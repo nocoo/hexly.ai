@@ -3,7 +3,8 @@ import { readFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
-import { brandAsset } from "../src/model/brand";
+import { brandAsset, rasterBrand } from "../src/model/brand";
+import { brandManifestProblems } from "../src/model/brand-manifest";
 
 const projects = readProjects();
 for (const project of projects) {
@@ -29,12 +30,25 @@ for (const project of projects) {
 		);
 		if (manifest.project !== project.id || manifest.version !== kit.version)
 			throw new Error(`Brand manifest disagrees with catalogue: ${project.id}`);
+		if (kit.method === "archived-artwork") {
+			const problems = brandManifestProblems(manifest);
+			if (problems.length)
+				throw new Error(`${project.id}: ${problems.join("; ")}`);
+			if (
+				manifest.officialProjectIdentity.sha256 !== project.logo.sha256 ||
+				manifest.campaignInterpretation.sha256 !==
+					project.family?.foreground.sha256
+			)
+				throw new Error(
+					`Brand identity roles disagree with original sources: ${project.id}`,
+				);
+		}
 		for (const asset of [
 			...(["mark", "wordmark", "lockup", "icon"] as const).flatMap((name) => [
 				brandAsset(kit, name, "light"),
 				brandAsset(kit, name, "dark"),
 			]),
-			...(kit.method === "gpt-image-2"
+			...(rasterBrand(kit)
 				? [
 						"hero.png",
 						"hero.webp",
@@ -45,6 +59,11 @@ for (const project of projects) {
 					]
 				: ["favicon.svg"]
 			).map((name) => `${kit.root}/${name}`),
+			...(kit.hero?.themed
+				? ["hero-dark.png", "hero-dark.webp", "hero-square-dark.webp"].map(
+						(name) => `${kit.root}/${name}`,
+					)
+				: []),
 			...[
 				"favicon.ico",
 				"guide.md",

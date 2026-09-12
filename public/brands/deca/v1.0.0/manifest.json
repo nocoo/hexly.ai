@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "deca",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/deca#brand",
+	"root": "https://hexly.ai/brands/deca/v1.0.0",
+	"source": "artwork/brands/deca/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+		"export": "/brands/deca/v1.0.0/official-logo.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"bytes": 3665035,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"sourceRepositoryRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/deca/2026-09-07-01/01/transparent.png",
+		"export": "/brands/deca/v1.0.0/logo.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"bytes": 3665035,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/deca/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 51165,
+			"sha256": "56e43fcf58fbe44666386af8a90cdb313c162a749197458b92d0a88dd2c2013a"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 99676,
+			"sha256": "db610509b67961decdfc08ddf9d284fcb082ba64f1986e548e14e9059357c477"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6423,
+			"sha256": "b0520beff0e97b1fa2fcbf4115312e1926bf816ecfd66a02288ccde709e679d8"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 789649,
+			"sha256": "83e9963e0e52794a4832ab471131f15d88d5cf0f43f62b3823a60cdd5c21a59a"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57914,
+			"sha256": "1f5a5c9650df840bd0ffc1f125d4b6cf0532f59870af019d7237d424c7dda98e"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47422,
+			"sha256": "bd5979d267b56c19d0db118252e70b4c91c2433ed1c225ee9203951b432de65b"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 45982,
+			"sha256": "c2d8c2b30bcc522ee636308b9574e4e7da6f19f0bdc31380fe789a422e8761db"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 792625,
+			"sha256": "424e7927d56c28d7b11367259cc358f96df464f45fe60dd1d9ab87966e90bac1"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57620,
+			"sha256": "58b807996af3224f810f930622626778f3560eb57e6ad03cbeabb575ceec24c0"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 61784,
+			"sha256": "039db9f948025dc76976a7775b4f83277491251087177f58462c1366baff3ffc"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 244945,
+			"sha256": "c99d234641861da740fe2af53fe2c518494308897d5c7deddceb3850034c1eaa"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3686971,
+			"sha256": "d6d2d94463878a75be9a455b8843ad811d73824ed394bb83a7099d0afecc345b"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 369268,
+			"sha256": "344c2c25cd1ea4fe5eef887896846add3cf6e95d0921072e3da646df4a3de607"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5358411,
+			"sha256": "b6281bdc5ac357a99f05bf4579530b71365aaa7751d1b633694e0700463e178d"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1791,
+			"sha256": "5ee20c2b723643fe764991b75c543de955fd296fce0130246e475f3c9d3ab1b4"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 157087,
+			"sha256": "9fb1af6667dce943d93b47df4a9274ac87e0963bbde36adc44f01ad92229d458"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 156572,
+			"sha256": "0d47abd085f5b6c529eac758a03673d0adf686a9778de332713a9660bf70142d"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 928547,
+			"sha256": "1dba476efa9e3bb6d1c21d934d74dd9bed2b360038096862cab45f4494cf17f9"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 928547,
+			"sha256": "1dba476efa9e3bb6d1c21d934d74dd9bed2b360038096862cab45f4494cf17f9"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3665035,
+			"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 928547,
+			"sha256": "1dba476efa9e3bb6d1c21d934d74dd9bed2b360038096862cab45f4494cf17f9"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 19386,
+			"sha256": "25341c0cda055f600706b8cd833de36de4838cd75a7442238e9f7ef5c605f6dc"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 692,
+			"sha256": "8aef96586ecf82dd965147081ed2f19182c425f520b970cb9afbff37d79de4dc"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1207,
+			"sha256": "bf2d6fd8dcd3d10aa4c97ccb21d564cec6b330eec10d8ffaf79373db2ddcb9f6"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 68362,
+			"sha256": "09ec19100076ac3d359021892aaf27f842a1b62f6dea33529102049feb89f39f"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1838,
+			"sha256": "32ce152325de54fa06499aedbe108878b27649088ec8478457cdeb9a74a199ed"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3542,
+			"sha256": "1c174621c979b74deb0edd7b30714f938a564c7d5c6fd08b07b1927d507286aa"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 244998,
+			"sha256": "bdd51361cd3998f0719e035c18affb7dc878dc749fc1ebac3e77c9684addac3b"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5754,
+			"sha256": "65947e08a506fc2146ec5a0676f68b0a2132a54e71fa7fe82d3f2d9a83b2ad6f"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3665035,
+			"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3665035,
+			"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3665035,
+			"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 2767,
+			"sha256": "bcda0f0bb3aff457d2c5d7dd429d5ad754baec8e711828bbb505094e6fd19d88"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7664,
+			"sha256": "3b7b269f38352450edfcb734e3252e695ebf527bc2e8bc78b6743e7ab9e15e99"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 13427,
+			"sha256": "170c86c4978fc0ea88b4102461d4e07a8ae3485913c8e6b29bdca8c37f4bb97b"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 3123,
+			"sha256": "5c7196effa8242aad69ca85732abc0616d2c8dd5b247ac39a4609fb4767445c9"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 733,
+			"sha256": "c79fd5d7376ebb97291cffc907db4bb4c9182d0faaef7746bc5185c4e3df8b39"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 2920,
+			"sha256": "675cd99adc9933d574f569b9821b7045d671965fdbe964702a7e0566bb12ccb2"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 734,
+			"sha256": "931630062ee22d732f2296186d482e0743fdd222bb839a9fd9193e097bf105a8"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 2792,
+			"sha256": "8b5054e5c7dd74d08f62b2637831b76f719d7d1c148e3594a074ca3f4e68e1d4"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3380526,
+			"sha256": "5858e58b943a5f506b878bf478701e51b1d3f5fa0c9354636dbd3285098e96f4"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6694,
+			"sha256": "8e42b2ec1a9a497575e7d0485061d29233e610c0e88c0cfde316c2f3849d300b"
+		},
+		{
+			"path": "/brands/deca/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6694,
+			"sha256": "fe66da137f473f2d9fa4ca734c30ee7960e325783c2e641bf00d33bdca83edfc"
+		}
+	]
+}

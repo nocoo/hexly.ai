@@ -277,5 +277,75 @@
 				"CREDITS.md"
 			]
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/dreamro/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 1094,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Parchment heraldic lattice",
+				"zh": "羊皮纸纹章"
+			},
+			"description": {
+				"en": "Interlaced lozenges and short corner stitches recall crafted heraldry around the shield and weapons.",
+				"zh": "交织菱格与短短的角部缝线，围绕盾牌和武器留下手作纹章的质感。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "A crafted shield behind a bow and arrow, sword and magic staff on a Hexly campaign canvas",
+				"zh": "盾牌在后，弓箭、长剑与魔法杖在前的精制武器徽记，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "Return to a world of adventure.",
+				"zh": "回到心中的冒险世界。"
+			}
+		},
+		"description": {
+			"en": "Crafted shield behind a bow and arrow, sword and magic staff.",
+			"zh": "盾牌在后，弓箭、长剑与魔法杖在前的精制武器徽记。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥107px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 107px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

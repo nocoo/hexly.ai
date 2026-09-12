@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 1,
+	"project": "dove",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Every message finds a way.",
+		"zh": "让每封邮件都有去处。"
+	},
+	"description": {
+		"en": "Violet and teal faceted dove with pink blossoms.",
+		"zh": "紫青色碎片化鸽子与粉色花枝。"
+	},
+	"foreground": {
+		"path": "/logos/family/dove/2026-09-07-03/01/transparent.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Pressed petals",
+			"zh": "压印花瓣"
+		},
+		"description": {
+			"en": "Sparse, elongated petal outlines lean at different angles, carrying the blossom motif into the empty space.",
+			"zh": "细长花瓣以不同角度疏落排列，把鸽子身旁的花枝延伸成轻盈底纹。"
+		},
+		"source": "artwork/logo-family/dove/2026-09-07-03/finishing/01/settings.json",
+		"sourceSha256": "b117e15a5786c77c59321b40111f5274e838c671c55608a610d0337bd74e81b8",
+		"layers": [
+			{
+				"d": "M-48 375C-48 183 88 49 243 37C206 181 115 311-48 375Z M669-48C804-9 833 94 797 215C695 160 643 58 669-48Z M962 359C947 176 1041 60 1144 45C1150 204 1088 310 962 359Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-41 378C122 314 213 184 250 40 M804 218C702 163 650 61 676-45 M969 362C1095 313 1157 207 1151 48",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M771 1101C760 965 833 874 963 829C990 960 920 1076 771 1101Z M-55 841C102 814 213 875 262 995C100 1018 13 953-55 841Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M778 1104C927 1079 997 963 970 832 M-52 848C16 960 103 1025 265 1002",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-55.0, -48.0, 1151.3974029702918, 1104.0],
+		"transform": {
+			"scale": 0.35809095654248374,
+			"x": 59.69500260983662,
+			"y": 66.9279749455686,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Dove",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 337.584,
+		"height": 131.96,
+		"glyphBoundsUnits": [46.3499755859375, -14, 2229.0901807702103, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dove.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+		"repositoryRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

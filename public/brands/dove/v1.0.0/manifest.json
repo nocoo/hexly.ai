@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "dove",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/dove#brand",
+	"root": "https://hexly.ai/brands/dove/v1.0.0",
+	"source": "artwork/brands/dove/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/dove.png",
+		"export": "/brands/dove/v1.0.0/official-logo.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"bytes": 4062349,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+		"sourceRepositoryRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/dove/2026-09-07-03/01/transparent.png",
+		"export": "/brands/dove/v1.0.0/logo.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"bytes": 4062349,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/dove/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 61638,
+			"sha256": "9324b7ab37a94c1535764188aa9b7628e4bdcebc2edc9c372f52079ea8d85e08"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 141845,
+			"sha256": "6bb9dc418c936e2afe2e91ce9dc194fb5c77b60cc1a54cb73720c8261f705a91"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6396,
+			"sha256": "5491d3ede1245c583bcf0409e65227ca6d12b1b067faeb51e94e1604a07bf3a0"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1060654,
+			"sha256": "a232f27abc7db8021dc793234169cdce5ea5ebe6d300919dae83a1a262c93849"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 77952,
+			"sha256": "2cf6fc979bf8d928fa089690388847af8750f764c6bcbf529260e8fd658d2e65"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 66420,
+			"sha256": "31ca8940b68696abd6c4879d93d64d1aacc601514cd7884c755f0b43e692d260"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 65912,
+			"sha256": "e447c96636ab5a05d6268c33bd149fa1b12b62dcee0206273537208ffa14c6c8"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1053329,
+			"sha256": "a13d7f0e88b1905986fefcaf41d4bc6d837644305e163a3b0cd5472674a71673"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 76750,
+			"sha256": "e1896efafc9f92c216e9a38b03229adbcb6759797ef1824deeda27fbced75c28"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 76521,
+			"sha256": "36c3bded66572e92eddc500d428641e83592ed8683c87a3da0b22a954f68b953"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 341726,
+			"sha256": "bcffbcb4ddc65e3bb8eda29a269c46a5ff66c61217fedae81a876f6590507971"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4569825,
+			"sha256": "0dc4482a06011753c297df10674318bd86c882dcede71323d1e0ff93b5616abd"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 466318,
+			"sha256": "1eee8fb6f2703c0fcaaaec6a440e46699ea5bb3f4cccd3d5fdded588d3467057"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 6338009,
+			"sha256": "fcafb6229474efe056d37bcee0b114acdf6c7d70da3a80c43609a5ca4af0e074"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1753,
+			"sha256": "2662c68fb13e89902ba0028e8082caf25fb59c37cc56bc80f436d9af7c40e48b"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 214045,
+			"sha256": "4449502d500cf43f96c8353fbe059b5398b6e0e1e4df981b657276c24eb61e3d"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 214002,
+			"sha256": "65c86b6b528344c26aebe075470fcc6b7e8be667bc7599049398bd3b8a76a09c"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1276090,
+			"sha256": "b76ac2ee9c67011cc4f85f0c994dd2fe8cb18873cdd0d742b97dc20ff74d8e26"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1276090,
+			"sha256": "b76ac2ee9c67011cc4f85f0c994dd2fe8cb18873cdd0d742b97dc20ff74d8e26"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1276090,
+			"sha256": "b76ac2ee9c67011cc4f85f0c994dd2fe8cb18873cdd0d742b97dc20ff74d8e26"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 28058,
+			"sha256": "9868e6308eebb179397019e514aad8154cda6a165a3ff0ca0b814564acb983f4"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 853,
+			"sha256": "65ca24df06ba6aa9308de019c8cba1a5dd8b4c883686dd76e48886dfa38ef9cf"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1591,
+			"sha256": "00cccadedb3640966a7dd54a272d60e5e3e9203f65f810eb3b41d26ed6d913fd"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 97289,
+			"sha256": "b18010b23d9ea43a68a994b7680f6afb812eabe6b6e97897b5dbc3b1da207382"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2516,
+			"sha256": "8b2bd9c5e44677f67361a18ef9f985f0dd4e79b4dda2bb80bf8765e039927da6"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4891,
+			"sha256": "6b7f7cef90e5175da7b73fc18452d8d881dd39a3f87ededc0a803cf0574bb4e5"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 341573,
+			"sha256": "90bca4a429da7fcf0c2ca88534fecd9c0531b8cca86b2cc50646760d038d1602"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 8136,
+			"sha256": "2db7967e896f679a0621191e5be4973807e52bde20172ecfe25fe47a326e4817"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 4062349,
+			"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6237,
+			"sha256": "e3f4bf4713930d16fd91f956a1bba453c0911d4c95781c64e9e8e8cea2de9636"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10454,
+			"sha256": "fd6cbf988d9e6979228174cda0f5216024e5ddceadb4f0df92dceddea2f8c0e3"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10051,
+			"sha256": "d411f13cefef2d0afd95699573ec287aaa09145407f35acf1a66bbdb4e00b816"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1051,
+			"sha256": "4fb066497413c4d5f21ccddc0aab1ff3a6fd9fba530fdd1cb51dede0a4056558"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8832,
+			"sha256": "05bcee6690a825f43e07361005678922cad5ecbe42d3694f29171d26a8ea5a60"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1052,
+			"sha256": "d68af1edb0823c4438bbb49ff6eef5b678630de415cfe3dfaa8f8a3678fcdcae"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3097,
+			"sha256": "8170c21507720c812a4227319d457a075b3c41ca8023b3d05b0e5ce29730f1b7"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 4292879,
+			"sha256": "53afafa48f067a23090272b18f4f0bf6325b23917b2eca8ff7d353ccab8f2fbf"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4537,
+			"sha256": "d107e18aa1d6f51b8138b05fc5ab0743707e86d67f9fad8c90c568c8d9058c89"
+		},
+		{
+			"path": "/brands/dove/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4537,
+			"sha256": "f4c1f240ffbd1df2fb20732a8f17102c85a02b2e802e992e72519f589be7df90"
+		}
+	]
+}

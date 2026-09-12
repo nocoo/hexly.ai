@@ -20,7 +20,10 @@ const withMedia: Project = {
 describe("optional project media", () => {
 	it("accepts projects with or without media and filters only finished-video entries", () => {
 		expect(
-			parseCatalogue([base, { ...withMedia, id: "media-fixture" }]),
+			parseCatalogue([
+				base,
+				{ ...withMedia, id: "media-fixture", brandKit: undefined },
+			]),
 		).toHaveLength(2);
 		expect(catalogueProblems([{ ...base, media: {} }])).toEqual([]);
 		expect(

@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "rooster",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/rooster#brand",
+	"root": "https://hexly.ai/brands/rooster/v1.0.0",
+	"source": "artwork/brands/rooster/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+		"export": "/brands/rooster/v1.0.0/official-logo.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"bytes": 2780156,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+		"sourceRepositoryRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/rooster/2026-09-07-01/02/transparent.png",
+		"export": "/brands/rooster/v1.0.0/logo.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"bytes": 2780156,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/rooster/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 53247,
+			"sha256": "b4843c1b06e7c5a1e5714ff2ad7de70d7ad4449f3fd34b1ef3aa1399b4b1ba8d"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 97214,
+			"sha256": "fbd7e2dd430cad1010701a0d66f6253f9e84fabd1e41930f78541eeca5da502a"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6463,
+			"sha256": "b23ab5b8a18763bf852f903bbf77d009005cd2b15647e6b287771dba8fa79618"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 651827,
+			"sha256": "b449a76a3b5ab69828b662f4f58c06291f5c83a6197af348cd421fcac30e4a5b"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 56798,
+			"sha256": "24215e646938bc3fe97eb3f7ba0b6f0432929f280f2cfab7da17956d8b6e9095"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 43180,
+			"sha256": "cbe4da4a3b5dbdee1ce60279138d125e10faa85916574eebed349c7170691763"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47136,
+			"sha256": "13d43e45bb0e814dc0bea8e77f475bfcb94a45bc79e9b3d264f01c74834d5860"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 658536,
+			"sha256": "923b4817ce9061e4ca205cb6398bb69291948d7c84a0a5e6f46b1f2d3bbcff27"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59204,
+			"sha256": "70cf4f10bfe298ffd64038f79259893af727e14351e7eda30b77435af44faddf"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 65548,
+			"sha256": "133d7a99f737dbe1d0e07ae540d0399168bb3b1a5604708c09a104b135b6d359"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 220129,
+			"sha256": "ca7be8d9762785d599d2580f967723bc4de8a892d02fd9250e1f878afcc948d6"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2803418,
+			"sha256": "f1acce3c4c9d0fb57aadc0bc4397126f7d5f2cdb1a5d07759b06d5de599c7286"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 387525,
+			"sha256": "2fc88626621a4d478f3f7e1f031f50b981144a4624019bcb9c52a9fbe7b79f30"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4925623,
+			"sha256": "6e243ede05a040b2d4fc09f15a293ee03b8958ea0f7571ba35df9b08c5f97643"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1794,
+			"sha256": "266fc27f08989b8706e582239c157cc83814cc2b7009b362b78161680f032a9d"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 149707,
+			"sha256": "014d7fbc4220bfede00230b1de79a2a11f630a3c2a842918291e1deeacc135ed"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 149071,
+			"sha256": "4d0e82ff3ae3d494756fa3d09f49fdc47b9d952fec3abeef4cc7439eb8019569"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 751039,
+			"sha256": "5d82987fcbc995fc029bfa0e34f7c8ab3849ccd21564ddcbd518dd0eb2b363ad"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 751039,
+			"sha256": "5d82987fcbc995fc029bfa0e34f7c8ab3849ccd21564ddcbd518dd0eb2b363ad"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2780156,
+			"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 751039,
+			"sha256": "5d82987fcbc995fc029bfa0e34f7c8ab3849ccd21564ddcbd518dd0eb2b363ad"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 19276,
+			"sha256": "0c94443a1bbdfde1f7115ddd88aa7af70d1917732c25d07355fe5238dd851bf8"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 679,
+			"sha256": "576e240ad07d3d8e60b35b663fd000adf24e09c2469557da804d98c9f32a5542"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1243,
+			"sha256": "f037448be96db3fe933c33f471a02a451f62ab7bbe7952a943ffac1575cfe129"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 66007,
+			"sha256": "d456177de7f151405d5de3fde92d3bfe14bce48dc2615bab09abf13da1611f76"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1867,
+			"sha256": "af3b4c37eae3d8f5e6c6c5d15c8d99ab03e3d038738c7ff22085e6138a144230"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3573,
+			"sha256": "cf9aede4a89895f826be67066205c022d919e078425d156e63fe6ed22ee28a73"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 220103,
+			"sha256": "f570c34195992dc5725f57d89c533aefdf0a42d026358e84b5baa3f2ed86fdd7"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5710,
+			"sha256": "af1f6a5bb8e1f075d0c57c3a51570173b540dff289ee1816afe00532c659eac5"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2780156,
+			"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2780156,
+			"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2780156,
+			"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4332,
+			"sha256": "cc65348e59549ad58286d97f9d083121cd460479c9af4f933ddb3e2d75f3c7c3"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7753,
+			"sha256": "6b4366587fae1fe8127ff32e5909eecea6047d4fc5c0c7f9da5593b1b8798164"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15139,
+			"sha256": "95694a743fe79624b92e4e667b96f0eb1aa844e227722793f9257b2fc37815aa"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 3489,
+			"sha256": "522556d07e35d42d7dcda7e6609bf5d17716f26495f02af54bd5a86ef1f7ec25"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 952,
+			"sha256": "4028c457f68d8f38f88abb20fe72a95b937d0adb4b361b14a0638f3c303afaf4"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 3445,
+			"sha256": "0f66a02a4c87ff63f02ac57b789c1b4ebd46267ffdc1a1e28efc4ed5c5f8a82f"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 953,
+			"sha256": "8ce8a9c86fc5cb4211e9a27371c710a43249ca30a969036d696e68b84791ddd4"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3321,
+			"sha256": "8a7acc506a8f704814a7c73d8e85e861fa376683d43dc9112e8a03b321e6cb67"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2591095,
+			"sha256": "b3e5e968e333b8e6f6eda05bbcd59d2529cdca40bc1511126b764a28cbf6d9e5"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 9275,
+			"sha256": "49184083bb2e013936051238228de1e53ef3fcb5cffa9a53034df86e4e779a69"
+		},
+		{
+			"path": "/brands/rooster/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 9275,
+			"sha256": "99a40e99838200f572612315297bc97edec9e2863f7a7acc30ed22288ba47773"
+		}
+	]
+}

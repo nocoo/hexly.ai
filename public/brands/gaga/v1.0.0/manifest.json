@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "gaga",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/gaga#brand",
+	"root": "https://hexly.ai/brands/gaga/v1.0.0",
+	"source": "artwork/brands/gaga/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+		"export": "/brands/gaga/v1.0.0/official-logo.png",
+		"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+		"bytes": 2357751,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "acefff7ae83f21c28183adbd0a8ffb4c4ce7fdec235bc2d426afd93754b793ac",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/logo.png",
+		"sourceRepositoryRevision": "76260f08329784eead9b30912c7692b8ea0d3d56",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/gaga/2026-09-07-01/01/transparent.png",
+		"export": "/brands/gaga/v1.0.0/logo.png",
+		"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+		"bytes": 2357751,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "acefff7ae83f21c28183adbd0a8ffb4c4ce7fdec235bc2d426afd93754b793ac",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/gaga/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 53705,
+			"sha256": "707591e265f74a170fba68b583e17aad1ff06a38ca740c0e842ca9cac1049ba7"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 96454,
+			"sha256": "37c04638644b94f428652450a564e35d3cb8923e0e962cd3b3c5459215fae55c"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6461,
+			"sha256": "11ccb16e6c8879cd8115d8a6027dae30a300378c06b0991560cfac45d2ffe131"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 602637,
+			"sha256": "b27e0c26c48ffaafa5530756dd596c0afc01060384ea05a6e8001523735e684f"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47362,
+			"sha256": "2f7e782c2a465c5108f321b34f01cdade7e0ce2b663b75443835eea53ab72080"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 36834,
+			"sha256": "32891cb79ea182c484647e2bacf0c98b3665e0b57498378830c0b00dad3fe11f"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 34172,
+			"sha256": "0046a72d108ef0c8303c2f11219dcdc29f5420c4ee44a0717443ff0285549aec"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 598489,
+			"sha256": "e6d50a13a74c9cf9a380e6afab1695aca0b8e6b74312e6d62a5dc8c5cff1368a"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 44210,
+			"sha256": "1c4d10e99804a89c64cc97a65a6daf73b9d79c5568a074f623a1b4c1fcab8d37"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 64763,
+			"sha256": "cc77199f8adfa05300087badf4536aead4a2b3018de496b3c8e7ab5cbeddc51f"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 210430,
+			"sha256": "5fc747e39d8fa790db6ab232075a2603eb26092d00bfca0fa27b502469d7bdb6"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2404373,
+			"sha256": "b25fdee1018508c7103ed22bb4cd11e995a9e26cbb86c457980e3a96c111b374"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 364470,
+			"sha256": "a1c0162c6a16532acda09cd58df7aa515f47b2e385452435ffaac2f28f7644da"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4427824,
+			"sha256": "31b3e11e13361cfc212148686bef79e26fcef9f0f942105fa7f82041953bcf43"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1791,
+			"sha256": "23db6b5a13b01eba02feaf428825c4d4b5275e00df3d3a6dbaf949add5c9d822"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 139940,
+			"sha256": "0dc883b4740e0b1224b0af6f1b3082358def411dbcd880f6a783c248799277af"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 140387,
+			"sha256": "7b4438fba2cd941b016c6a602ebfecd5e9d3469d193c03f98feb00156580de3c"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 663427,
+			"sha256": "f65713001c88b1980d56a7c7a0f0c5e74c03f2e5dc64e300eb53919ad467137e"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 663427,
+			"sha256": "f65713001c88b1980d56a7c7a0f0c5e74c03f2e5dc64e300eb53919ad467137e"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2357751,
+			"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 663427,
+			"sha256": "f65713001c88b1980d56a7c7a0f0c5e74c03f2e5dc64e300eb53919ad467137e"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 19554,
+			"sha256": "41cdb3d6e74bd58620f3f7b763aaf00ef9559af191a745fec1f50524b30da335"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 742,
+			"sha256": "88d587f1201bd756a328d46f420c80787e59cea8782d2f19f18a0f43d989272f"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1297,
+			"sha256": "54c34bcb1899d4414e1e9d4d16016094e5b292801824d92f0822d1c2044c5e46"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 64494,
+			"sha256": "4d0b0aadc0d8fb83fd181684b8fcc7983c6d2edcf9441946b4fc6e3e84c835b7"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1962,
+			"sha256": "23f4f3d9aed6303f47d20b86c318f99fdda918417a7594bd68b8b92fc9e1fb15"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3677,
+			"sha256": "c94ec902c9b14598de77ed6ef61b2a3bcd54f9e5eed039dd67e82b32208185af"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 205024,
+			"sha256": "ed8d2b48b58f8a2831171a82a1cc5948d2cb51457b2415325ff6656b610901b8"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5923,
+			"sha256": "f841f163a7db17517a8d586cef84bc6895f4da187516c66bb0a8a3e76502e836"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2357751,
+			"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2357751,
+			"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2357751,
+			"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4508,
+			"sha256": "97a7d59d9bddb911bab6ea3be7cf21ebe753bd5b37dcd06569c19da164977c3e"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7837,
+			"sha256": "d807fb2700b1606ae95499a28b51c6751e83e25a4c68b106a8089ac84d0f11ed"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15252,
+			"sha256": "6e7c77bc8687061fa7b8ef6b236b22c08570e687726af4cab2f1bc8cf1374699"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5524,
+			"sha256": "2574820c1745c5a47e2e033519449e0efc703b122fda0d4672527f8961026947"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1018,
+			"sha256": "1137fcea4bc1c69267c9f3ac58dadca5b9d9433538e13c853d628731a79621e8"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4916,
+			"sha256": "7bbd82065b2cc190293bd41e2e7a4996c1de005f4f1dab84d3e439890900bdcf"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1019,
+			"sha256": "7414ba6ae4641c3149933614d47fd70153d11cfd20e42eb549a4cf2f4abbcd28"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3285,
+			"sha256": "b8a4a57fcb8e2a0ec770dda24331f69efd768c19b255b0ac6f62244d987aaf95"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2193016,
+			"sha256": "5b5d3b6f9215a8167a4b6510e8899238d6ec1bdf9a363bd441ae6d98926a0e30"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 8110,
+			"sha256": "6b08088b81bbef5d105b1ee3284e93d8ef10f3f5acd3cbca9a4fe65488a4b98a"
+		},
+		{
+			"path": "/brands/gaga/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 8110,
+			"sha256": "1c75a7b07485548e1cf2acec5ea7af3bfe6b8506a3a55d9e1c731c65b45b7e44"
+		}
+	]
+}

@@ -123,11 +123,18 @@ export interface Project {
 	brandKit?: {
 		version: string;
 		root: string;
-		method?: "gpt-image-2";
+		method?: "gpt-image-2" | "archived-artwork";
+		scope?: "hexly-campaign";
 		previousVersion?: string;
+		lockup?: { width: number; height: number };
+		texture?: {
+			name: Record<Locale, string>;
+			description: Record<Locale, string>;
+		};
 		hero?: {
 			width: number;
 			height: number;
+			themed?: boolean;
 			alt: Record<Locale, string>;
 			caption: Record<Locale, string>;
 		};

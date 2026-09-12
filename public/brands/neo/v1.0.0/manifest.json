@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "neo",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/neo#brand",
+	"root": "https://hexly.ai/brands/neo/v1.0.0",
+	"source": "artwork/brands/neo/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/neo.png",
+		"export": "/brands/neo/v1.0.0/official-logo.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"bytes": 4237355,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "e033e674d024a43207e63bbfb4c8b15b6059e95f6de3337fe14f49a870f568e5",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1457,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png",
+		"sourceRepositoryRevision": "0d750484792449914b07e9b3e3404a823493f8a5",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/neo/2026-09-07-03/01/transparent.png",
+		"export": "/brands/neo/v1.0.0/logo.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"bytes": 4237355,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "e033e674d024a43207e63bbfb4c8b15b6059e95f6de3337fe14f49a870f568e5",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1457,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/neo/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 72034,
+			"sha256": "fdaa71e0b53d12a4f133a199c7d59a8fcb7176c5ca43f9d2db0006286fc63f1d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 175118,
+			"sha256": "e2c15af400215ad6b35f3ecfabdbea51eb90c3985c4dce4e983dd790dab4da16"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6425,
+			"sha256": "0125e04ab2f7493cbfa0572999d0a1c0a77f9df5fdb137924fbdc4ca7a8aea6c"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1507267,
+			"sha256": "7b4c6653ab3bfaf795fae3c1038cd58e85ed7b8bd8fa5c9c217d7abba8354a72"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 70078,
+			"sha256": "7742b50f43fcc3c169ea5b887d49b99c514b237f0c1f939fdcb32474b185144d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 58464,
+			"sha256": "d23d8dfed5d1448aa736209f89f791ac749492ad29e714e63ff80b6a860ff24c"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57386,
+			"sha256": "937350e10e6f1b12a4e9ef968eb85f2656ddefc8ebb43d53cb679a6e0e7b6933"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1500950,
+			"sha256": "36c0f4632fd9d6ee89186691513fdb54d26112ed4d2a08fce5019787a6a62082"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 68258,
+			"sha256": "24d146355fab9df02ee677f2d8a42a2262f2074c2ba3bc6af967ba8ee3dd9c61"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 87372,
+			"sha256": "5cb73213685dbfd2f30d18d7b66ec0a4ec005c48921a95c35ce2fd3360c7c4c4"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 423756,
+			"sha256": "26a279aba77dc4dc9f81689820b0df7ac8c808c64132e7666355c5c208f8610a"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4706731,
+			"sha256": "2e85fef7d964408686f30f1ad7fa3ef58b6b0f53e9f26f5d95b0c393682ec4f7"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 514405,
+			"sha256": "6f7edfd3c96bfde007588b9dae9c48dde6ed2c22ef3e9e5a6cd818a63cdce1ce"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5892045,
+			"sha256": "2e836657fb25fd0ebdeff70c249e6042922d59adcce25dc288dc6864dfeb7b32"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1752,
+			"sha256": "3f7d120a006d265320a1e5b8f7f6c0a9b66963153e9f273d081744de7153f2c7"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 262034,
+			"sha256": "2528a6e410e67ee4a128fb9dcae36e1ebf03bad00a0d69a7cc45e2b1f222385c"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 261968,
+			"sha256": "1383589817efeee3b351b4a3b090260c0a92bf9d183cdc16d054eb33a9931cc0"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1506396,
+			"sha256": "4ead65595289eb11cfe3e41d8b3848b8fa1a55edcb91df227d989de3834d3f2f"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1506396,
+			"sha256": "4ead65595289eb11cfe3e41d8b3848b8fa1a55edcb91df227d989de3834d3f2f"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1506396,
+			"sha256": "4ead65595289eb11cfe3e41d8b3848b8fa1a55edcb91df227d989de3834d3f2f"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 34940,
+			"sha256": "bedda0fba6ab1dab4a5cbb473a8f69655250610612804dfa5a30111ae5a176fc"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 961,
+			"sha256": "46460cb1affc4d60af601773de02069a03646d40a9dbaf5775a4cf62a1e1030f"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1805,
+			"sha256": "15ba4d403f31d9573c814a5f0afdaee869ce3cf4f6b651b283b23f97f3c14117"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 120295,
+			"sha256": "e421e17d8233aa0fe74e2acface25d490eb72d52d38fb3f068f24aada9e87cc1"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2914,
+			"sha256": "be376d493881ddc06a8f3f8322ac6204b7fe6c2ac11819158f1f7379a94d6545"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5892,
+			"sha256": "37f3591b4fcd9ec41337857d5b06438b9551642dff103c5f2a032238df93e5ee"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 423789,
+			"sha256": "561ec2c511dd7eb6157a8558edce4054a719d2bf95f26955a818394c33aeb715"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 10014,
+			"sha256": "b5965220ed9137ad9737ec6e100976ebe453055c24297bdf7b0778c491123179"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 4237355,
+			"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6099,
+			"sha256": "5af06f9ddeb7aef2b5e5fe95d61357b8943db21b607b3f4465d17499e9afc3d6"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10460,
+			"sha256": "a218034cc772a9b3b096e7eb13241714ae01e19135d3aef14f33e349eaccee1b"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10672,
+			"sha256": "2e190b85f09643f089c84ca82178c1c26d2f3587351c8a902eeb9adb0da80f61"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 958,
+			"sha256": "3baccce20eadbdb8c312964034af78519abf162d590859a0c9443e77411ab0dd"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9014,
+			"sha256": "33f138f5aa03b6b828e2748642fdfce29b72e130e16e5f5d22dd8777b0693b4b"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 959,
+			"sha256": "111892e45bc7bde9d4aa0c0157fab973f36761c8134a1f2846bbfee4512176a3"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3103,
+			"sha256": "34da41ccd309d4f120af270bf68b523aecce4112d9478bd28d78c449733f5730"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 4542672,
+			"sha256": "97d27b454d4d9d08acc1e3e3d48165eb20220dc19a69079d5d0b325ff4ad62d5"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3735,
+			"sha256": "9d36fba47357fbe4998f42a7c25a3939717cfa4b6bf977a206ac1330793b9765"
+		},
+		{
+			"path": "/brands/neo/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3735,
+			"sha256": "3ea9204a160b55ef8f44b65686da5ac6536d6a5ecbe4a2f3a5a513aee39ff0af"
+		}
+	]
+}

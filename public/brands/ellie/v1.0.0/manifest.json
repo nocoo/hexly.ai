@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "ellie",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/ellie#brand",
+	"root": "https://hexly.ai/brands/ellie/v1.0.0",
+	"source": "artwork/brands/ellie/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+		"export": "/brands/ellie/v1.0.0/official-logo.png",
+		"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+		"bytes": 2690184,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "f7e7d2e9e16a7cbf2b511fda50e8016165e61b9349c9a941817560ea7c1510a7",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 992,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/ellie/blob/300b8540eac51ae21803a8d58ebffbe3d90efa24/logo.png",
+		"sourceRepositoryRevision": "300b8540eac51ae21803a8d58ebffbe3d90efa24",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/ellie/2026-09-07-01/01/transparent.png",
+		"export": "/brands/ellie/v1.0.0/logo.png",
+		"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+		"bytes": 2690184,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "f7e7d2e9e16a7cbf2b511fda50e8016165e61b9349c9a941817560ea7c1510a7",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 992,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/ellie/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 58655,
+			"sha256": "ebec154fa09ca704324e4c3417904294ed89e8177695d7e973261dff15f00505"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 116284,
+			"sha256": "8ca734605d5ca0974d63773c2a7ebdb3ac635f1c5dd823b8ca54892b08f689d9"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6530,
+			"sha256": "caa839d5b107b2bd72a7f6daf67450b83205238d722fd9bec76fb633898332e3"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 808068,
+			"sha256": "1d50add5c79c55f9e3cfa03220b3b74ba8bfaad39de233927d7b34ca0d9b770f"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 56186,
+			"sha256": "e072b646430d892d440623b2bc6b9a9a67ddc373ace8a74e4d988d29882575de"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 45246,
+			"sha256": "441c2e57270e8b9579b6f9a71edaa67951eb9a8800d1643a13cbc8a6af734576"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 46012,
+			"sha256": "aed8b3cf775f6da8109d9b8f1a24ca3dbcc9a1bea0bcc4ca16189dff2820ef15"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 808852,
+			"sha256": "10a5d3f6a8dd5861f07770dee40aaa491997876f6f63709bb1a5ecd18ba25b79"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57040,
+			"sha256": "53b34e16af84b15a0910339687d9389fbf4ea373280571917cfff1f366bd67c1"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 69624,
+			"sha256": "05ba2fead1bf7195a8b2a54226394f1bae9240c5c6642785e98175fd4f5e2e71"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 251011,
+			"sha256": "c84ba453ce0833218dbbbff3a9bedb6763233a1bcf4e70cc846c37437cc2baca"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2738741,
+			"sha256": "a474957f31335aa6f85251b04f00646d79e0ba517ed1ad7223aac304333c1a5c"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 382479,
+			"sha256": "d4f9e0886c79f97e6282b6611d94e53134fcae7e432d6bf1a601006bf8998e5f"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4475532,
+			"sha256": "2b9d33da5dbab34e5bb8b1066337fca856afb6a6a1d1702d7477abd644bc512b"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "c3a34a9db57857b4507da4e3aae8a91283c32755b036afdcbff360859cd04cc6"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 162431,
+			"sha256": "056ef1cee67003b3348bccfc98be318d363f3341b2b2638d5805a0ec2c3e88f4"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 162404,
+			"sha256": "95de4e1610bb081acdf4c76a2b209e8f1a3afc0c3d50803b7453ac366acc9929"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 780970,
+			"sha256": "5eb277ee3734f209132451e391c4af6860958ae13e20bca54c277aa67b3beeb0"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 780970,
+			"sha256": "5eb277ee3734f209132451e391c4af6860958ae13e20bca54c277aa67b3beeb0"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 780970,
+			"sha256": "5eb277ee3734f209132451e391c4af6860958ae13e20bca54c277aa67b3beeb0"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 23561,
+			"sha256": "380ae37ab97d5e51946ab6849753519392f60bc7d4daa457a04fff1d766aa781"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 765,
+			"sha256": "d36d8583cd91d84baa193f010818599e92e626e924cbe24228891082ab942943"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1412,
+			"sha256": "917d2e972f27ac14dfef9734b875c8309d83c715e09a2ee2a87714de2a1217ad"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 78252,
+			"sha256": "ace6ba75a6d60725660361d9ad53e20f5a9aaee4e333d393676595be41b86142"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2217,
+			"sha256": "1b4b0e349303752bad604c867d4e2ee1ab67047775933e37ccc3698689a12651"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4329,
+			"sha256": "0fc0290dec7613fe4d67cd4ec32053e8ee3fc0ddb9f63b2997626e664f024572"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 245919,
+			"sha256": "49ea2fac7790b6f86477a77dff0f5317351f9fcfbe7953978f8ae1810a7206ed"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7058,
+			"sha256": "7dc9931e9bf95e3574467dd426f84e797c10c7b411d9481eca1959e1befc7d0f"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2690184,
+			"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4535,
+			"sha256": "61dd499947af4aeca889a15c49fa50ca7d08ea3fc04097dd8070407902303c0f"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7780,
+			"sha256": "f4b0f923e205ca3ab9a897139c04221f5f765e2cd5c11662846201124e4499ee"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15393,
+			"sha256": "cc1c08128b11aa87404cacaad6e41867343b00a7d6bc9b2b4be89dbc453ab550"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 12504,
+			"sha256": "482d9c1b0b9bc37d88ab7499d880a8510b21f540ff0b1754639e0453b954602c"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 903,
+			"sha256": "95744b4530026e41aff91aefc8444c45de292bdf1be0452e2540392bab2ff24f"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10620,
+			"sha256": "294db3b6af699fcac48b82a110c2dec54d3169576a214d733d5bd9dfe0535736"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 904,
+			"sha256": "129bb0ef9c9060f5ff785ee0bf967d4f81b3d314bf8a2d896ffaf5ce48d96a6d"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3350,
+			"sha256": "02e5ae66eb07375457554f0762c61360dd24417b3e9cb24276f838d764057aa3"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2520937,
+			"sha256": "26265552f83dcc7d7a9e8fedc1927c393db91df64b5d43c321993acf1a10475e"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3052,
+			"sha256": "f16c37bbb21939809fa3933ba978a1d503026bb971038eead2e5eb6b194662e9"
+		},
+		{
+			"path": "/brands/ellie/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3052,
+			"sha256": "945cc1619b42b0fdaa87c7afc31e741baf8c37a2a12656b333d407ad41d36892"
+		}
+	]
+}

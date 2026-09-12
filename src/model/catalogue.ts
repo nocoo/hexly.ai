@@ -158,18 +158,39 @@ export function catalogueProblems(projects: Project[]): string[] {
 			(!kit ||
 				!/^\d+\.\d+\.\d+$/.test(kit.version) ||
 				kit.root !== `/brands/${project.id}/v${kit.version}` ||
-				(kit.method !== undefined && kit.method !== "gpt-image-2") ||
+				(kit.method !== undefined &&
+					kit.method !== "gpt-image-2" &&
+					kit.method !== "archived-artwork") ||
+				(kit.scope !== undefined && kit.scope !== "hexly-campaign") ||
 				(kit.previousVersion !== undefined &&
 					(!/^\d+\.\d+\.\d+$/.test(kit.previousVersion) ||
 						kit.previousVersion === kit.version)) ||
 				(kit.method === "gpt-image-2" &&
 					(!project.family || !kit.hero || !kit.previousVersion)) ||
+				(kit.method === "archived-artwork" &&
+					(!project.family ||
+						!kit.hero?.themed ||
+						!kit.lockup ||
+						!kit.texture ||
+						kit.scope !== "hexly-campaign")) ||
+				(kit.lockup !== undefined &&
+					(!kit.lockup ||
+						!Number.isInteger(kit.lockup.width) ||
+						!Number.isInteger(kit.lockup.height) ||
+						kit.lockup.width <= 0 ||
+						kit.lockup.height <= 0)) ||
+				(kit.texture !== undefined &&
+					(!kit.texture ||
+						!hasTranslations(kit.texture.name) ||
+						!hasTranslations(kit.texture.description))) ||
 				(kit.hero !== undefined &&
 					(!kit.hero ||
 						!Number.isInteger(kit.hero.width) ||
 						!Number.isInteger(kit.hero.height) ||
 						kit.hero.width <= 0 ||
 						kit.hero.height <= 0 ||
+						(kit.hero.themed !== undefined &&
+							typeof kit.hero.themed !== "boolean") ||
 						!hasTranslations(kit.hero.alt) ||
 						!hasTranslations(kit.hero.caption))) ||
 				(kit.sourceAdoptionRevision !== null &&

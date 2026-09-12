@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "noheir",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/noheir#brand",
+	"root": "https://hexly.ai/brands/noheir/v1.0.0",
+	"source": "artwork/brands/noheir/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+		"export": "/brands/noheir/v1.0.0/official-logo.png",
+		"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+		"bytes": 3801133,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "bb76d3ee3bfe5268f2d8b0e6d00efe5d896e8de47dd376de87579ebfee811fe4",
+		"edgePixels": {
+			"top": 0,
+			"right": 1112,
+			"bottom": 896,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png",
+		"sourceRepositoryRevision": "5e32426a6044436eee5c6b2894910666896a8b49",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/noheir/2026-09-07-02/02/transparent.png",
+		"export": "/brands/noheir/v1.0.0/logo.png",
+		"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+		"bytes": 3801133,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "bb76d3ee3bfe5268f2d8b0e6d00efe5d896e8de47dd376de87579ebfee811fe4",
+		"edgePixels": {
+			"top": 0,
+			"right": 1112,
+			"bottom": 896,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/noheir/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 58023,
+			"sha256": "8d6124c4d18a2aab0926d26aa323acea366c021980b6cdb36b5563d224545761"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 124560,
+			"sha256": "f32cba4cf6d8fb4f011bb72cbf33f65829d03ff33178e71a23b84f8afb7ed76b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6501,
+			"sha256": "165915ec898feb414397f37ca8fc8bd228447a40ed997399ac0f7cf3c9f17fe3"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 983791,
+			"sha256": "4e129f9fdcb36d0e048a1c67c5d8dd8a77ac9cd348b36429f84e5e4fa0d1e29b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59220,
+			"sha256": "ac3c96894fc75c91fce3a4b8130dbbf01399e2e61f5ff514424c4cc96fe2d58f"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 48892,
+			"sha256": "8bcdab5b16436fb56d5f9707b336c7322024e629301f65297fedb6418f195472"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 48282,
+			"sha256": "523a2abf8f545c0a4adee7ca8684129d7fbb428de7c2edd45bb0f80c0697b085"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 983897,
+			"sha256": "9c39ed0be607d8d2620e1722736b119114fc046196bdb157df19638fb75c9b49"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57372,
+			"sha256": "a44dffff9514b74f2e696a5ecb15e2f02aaf408199fa889c6782c22d08f4a0b3"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 68807,
+			"sha256": "7aef52a2a302ee8d14c16f84f0d6adb6f7136eddfbd1250a64050064a2f505e2"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 271551,
+			"sha256": "90766340f3731dc1efdecc47caf9214fde7031d0d8ac393e90debe72510ec885"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3819087,
+			"sha256": "2ccb1d103bf31771cf71bc34d38f51359cffe74e83addd15187cb074de7dc0df"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 382156,
+			"sha256": "91c78752439995ff036476d7ed2f8a35ac32f70b05488e5aeb5bb0fc7b89016c"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5294363,
+			"sha256": "19c3326070dd5f9d3ca86d09fed9fd529bb7650f01cca587cd6e77a552defa1e"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "7defbb36781ee5203de9940a6c990a38068f628ac07a5cb7c3f620ed8a5d2353"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 183070,
+			"sha256": "69bfbe7a00b6e5c4cfeb44e34ffa09e07254ba467c77d43958cbafb9b587676e"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 182807,
+			"sha256": "78d328c9478c5e1a12e0f292b45cc31a6c63a3f3277292afcb547cad95670bf1"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 975386,
+			"sha256": "debc70ef8cd0a6b9aa31d8745af1ade4f097f51fbb89eec0364cee3c8205b69b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 975386,
+			"sha256": "debc70ef8cd0a6b9aa31d8745af1ade4f097f51fbb89eec0364cee3c8205b69b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3801133,
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 975386,
+			"sha256": "debc70ef8cd0a6b9aa31d8745af1ade4f097f51fbb89eec0364cee3c8205b69b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 25465,
+			"sha256": "5f85163b5919f1edb612b03c49dc2e13ff3e64c704c84946aa7ec297257d0354"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 854,
+			"sha256": "55b224faa407d111db04afc7914f3f80b645b6eac93d5ee061f457dcf68ff2c5"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1537,
+			"sha256": "adfe7244eee3982fc14950129f7978ff192ac0f4d8e189d4ac38c3c5b848fa48"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 83090,
+			"sha256": "0c0fd96bda16ed19d6137ff474b2b3925842094acf2b55145e1ecc4e5c82de5b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2444,
+			"sha256": "30240b40b24066bc433083bbc0e7cf707813763ded34f38f50ec5e5780af9a99"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4805,
+			"sha256": "769fd5347db6064ebc48b76f252aab3b6eb92def541a2987f35c7d301d48cb66"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 270875,
+			"sha256": "15ce86d263a2459bec1b78190848b25ca5719386f27e1c4529f07fd436e21a9b"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7800,
+			"sha256": "54eed45c4e11c25e24e1384ab4ae9c03c93d76bd3eabbb0afacac1abb83ec343"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3801133,
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3801133,
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3801133,
+			"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 3368,
+			"sha256": "1fa1d002ec13ac8a20608af14d3e63a9a6ab133ccc20fa8b9a39b2544727b9cc"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8024,
+			"sha256": "936a13d777e7caf671416a1e03b93be32de6b159d7934a425363ee1f1635d01c"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14210,
+			"sha256": "38bf7626a571ed1767664f092f5d2edcecb61be419a137177af6aa86c47e6c58"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 6111,
+			"sha256": "62798fc418379f31b39adb8f71ac1bbdff6aae3b93618cf9fbc16386bb226afc"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1099,
+			"sha256": "d6ebfe76c9c8e7e37b9535e286d014e32d435cfa2392fd3c460507efae2366a0"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5439,
+			"sha256": "614263f2ed412f850309a3fb26d0a1514cd185a248a50be83e853e78051ae39d"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1100,
+			"sha256": "61cfac8fa86d632b5818dfb72faed4f608c1d5ca3d5614f4a986d2aedcd10b37"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3325,
+			"sha256": "2800ed18fb6b57d5bb9893973001548d385737b07db724d9ff29e42131c24014"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3593038,
+			"sha256": "e908fb86b4058ade71550c62a769e1550d04485b9ee94b1b9dcce6445b37936c"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5771,
+			"sha256": "bb055a442c5c44dba3247fa062cad0fe3e98659a7e925b2f8b856d80fa6a1a7d"
+		},
+		{
+			"path": "/brands/noheir/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5771,
+			"sha256": "ecfca394aba5f143560750ed64113640b83eca425905f356fee43320257c21f1"
+		}
+	]
+}

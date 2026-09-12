@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "snaky",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/snaky#brand",
+	"root": "https://hexly.ai/brands/snaky/v1.0.0",
+	"source": "artwork/brands/snaky/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+		"export": "/brands/snaky/v1.0.0/official-logo.png",
+		"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+		"bytes": 2958177,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "828aa7fce80d2a0b999d68686ce4dda89778a8de88f29c1b06441504f5ffea46",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png",
+		"sourceRepositoryRevision": "5cd0790336d006f65555816fe29869d6e60ed376",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/snaky/2026-09-07-01/01/transparent.png",
+		"export": "/brands/snaky/v1.0.0/logo.png",
+		"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+		"bytes": 2958177,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "828aa7fce80d2a0b999d68686ce4dda89778a8de88f29c1b06441504f5ffea46",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/snaky/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 58402,
+			"sha256": "57e8181cb49213be187b3b02dc3fca5bd5571fa53a8336abfa925a3e6c546aa1"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 114480,
+			"sha256": "9f7050a7a6340381470a5213f5c799b324282ea9468fcd1267cb7bf6f01d00ea"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6454,
+			"sha256": "41da5ef1a098de91e678c60627210223fa9a82db6dec5f03c2bb047ded264ad5"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 744139,
+			"sha256": "29d69ea0299e365d7ec1c74b9398dd6df71aac57dac126779f7d1e5a45439def"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 61326,
+			"sha256": "b4d5e95e3dcc6ed8b56454691161f6f4754d9370ff53c4d3335f025178654b2a"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 48278,
+			"sha256": "fad6ccf3cf9f09acab2a5de670109b16857a6a6ebd5471f3b30c52f7dddc04ff"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47182,
+			"sha256": "7dbd79d78131270488230c7a0fdddead146dc1a4bddc588ec6a47377c47466b1"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 741673,
+			"sha256": "f6dc8c44e23b955752d7eca35554ceaaa1d63702a5430b12a79c1e2075812841"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 60200,
+			"sha256": "536fbd0daecd6691a349431d55fb237c468d7691a7d342466f33a181bda065f1"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 72534,
+			"sha256": "5fb5e6a4b8d9eebfe560281cd834dbe39224cfa79357df8b65c54de35ebdff02"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 263188,
+			"sha256": "047fba3b63621b73444a7d6461f89f914d747e3fc65783377dd0a9577c9df8ea"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3009337,
+			"sha256": "052a5f57d61f73984a4f1a1bb5df30fac54f8f291a875ff93d7239aafd7006fe"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 418668,
+			"sha256": "8c95d1abefda7ff912bdf0efe3c1dd660ad2b33c423b2f2c15e9582e8340cc54"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4949221,
+			"sha256": "f1a0bab24253e83d85b261d1686e5bd05e4cd4178da8c1d91bc0cb57d338e060"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "81c2765e07c2aa876ff477ecdb335745eb53e911e2b86ed4b6d9f213b6a2bc49"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 169752,
+			"sha256": "618a86e24eda05dd8796b517702dd86f100eb42609527b328a98ddfb32ff9c69"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 170025,
+			"sha256": "4adc7abaae2fc726b666ae02781a52b60f166c48270905e7e987b23122727cf0"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 833202,
+			"sha256": "77cf2439adc468fa9e06677e5a6adf34867fb06a90abb37551047b17f250073d"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 833202,
+			"sha256": "77cf2439adc468fa9e06677e5a6adf34867fb06a90abb37551047b17f250073d"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2958177,
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 833202,
+			"sha256": "77cf2439adc468fa9e06677e5a6adf34867fb06a90abb37551047b17f250073d"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 22539,
+			"sha256": "a6284e5197c6df557307ce5b89dc444ea58913677d0bdc439d283200e7c1b664"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 773,
+			"sha256": "6b952445cda88a5892bfa655e0bf00b28cd27bbdf740af4a9f3a035f06d4ab9e"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1361,
+			"sha256": "70729e4b80eef319dcd714b903008abc203228b6a57459ed9db2159821c56255"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 78482,
+			"sha256": "43c49020583871b839ef544389b1f86df0387cfa5ef3d79f1869b25febab06a5"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2084,
+			"sha256": "9a823093c4ef2a5d6a960624117cf91b3bdf0d506166c68c58dde227fab778e9"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3971,
+			"sha256": "616f2ae585f1353fcc69b57db2f31cc2eb723ac968492277953b7991efbc283d"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 256659,
+			"sha256": "770c338402f5d636ac6f4c4abfcf8150f3eaf21c7b806b558c06ea09a9caa8e0"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6529,
+			"sha256": "f232ba02401e56aa78992fbcceea404548b73f714784b1673a5bab4d2c6d22d4"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2958177,
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2958177,
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2958177,
+			"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4494,
+			"sha256": "a3274251d94897369b9be39e83cf22ebc975a0b6d11cb7f9a912aa0083ac6b7d"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7920,
+			"sha256": "332ec38e08f98401232a989cab13f3293e66119e3db11fda289e4df138f6ccc8"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15264,
+			"sha256": "ece326abd322891359aa755dca4cc9107f114865db12d2d07b3f558762bdbbac"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9703,
+			"sha256": "43c6b776d22158a06c29ee6734883252452ce78fc3adbef30aebdf44facf1eec"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 993,
+			"sha256": "63a676fca9cfb524049b07753ee09578969b4802c9aa94e3f6e8ac3ed6e10736"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8345,
+			"sha256": "a5f4222980cf2181f26bae4211bd453144e01a2ef2194b32ec593e1835f689dd"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 994,
+			"sha256": "cde4dac0b987fab6c0f7d42a8627a8c05174162b0fee0c92281ea666d3cc3d39"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3299,
+			"sha256": "5735338b36f4ed1dc29e4e93b02e43b17016a7923e9f8dc81776562759fb6937"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2767809,
+			"sha256": "594062856bbb81723f3bbc04a1c3f75fb1f3989bf770231d26b2a8a9996001fe"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7333,
+			"sha256": "794baaa1381858152caad1eacf6c7b629c2f5a371a60dc49148100efa2c7acf6"
+		},
+		{
+			"path": "/brands/snaky/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7333,
+			"sha256": "48091107105357f7b7b3748e86620fc3a22bc92ab9875db99e974557a17ce60e"
+		}
+	]
+}

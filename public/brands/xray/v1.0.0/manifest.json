@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "xray",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/xray#brand",
+	"root": "https://hexly.ai/brands/xray/v1.0.0",
+	"source": "artwork/brands/xray/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/xray.png",
+		"export": "/brands/xray/v1.0.0/official-logo.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"bytes": 3318716,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "6c680b22721615c4ac5a9ffdcb4265f0f2adb8b59f8d8e68fcc5c71ae2c83979",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/logo.png",
+		"sourceRepositoryRevision": "16175dc87ef406e8cf3343ab8808b60e8f53cc8a",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/xray/2026-09-07-01/01/transparent.png",
+		"export": "/brands/xray/v1.0.0/logo.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"bytes": 3318716,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "6c680b22721615c4ac5a9ffdcb4265f0f2adb8b59f8d8e68fcc5c71ae2c83979",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/xray/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 59082,
+			"sha256": "401af017f154527ddf5c19c5c20875114500fa3871d47d34d071ddf525212efe"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 121568,
+			"sha256": "9c8b6ce975e08d7c1bf367f51d0b87831c9eb63f5e95a3451b7b37f33f24a9ab"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6391,
+			"sha256": "b67429e5b691fa742eb9d8c05349a9b73a176173bdb00e4ac84b049fb05edb8e"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 916490,
+			"sha256": "4bfc1e614830bbff964031b0a601fbcc039664d81951c44dcd5ba3564c690d85"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 64608,
+			"sha256": "f9258bcde227ce313f5199bec03bbde8eb0064f7ffcd42882c27a7a3c0943ded"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 50330,
+			"sha256": "a1b2762cee21369980daac7a1d1acd98bfe43bafb98a2e5628b2a26ce5a7f455"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 51160,
+			"sha256": "c43501ff77d19d3e9683099bd7069f7fad699eb118ceafc58ff065c56e164916"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 921933,
+			"sha256": "3bec9dad817c3a9a2b8fc5dc66889fd9a3f7ea198acb7428b9cbb866315366b3"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 64940,
+			"sha256": "e940c8d3d68429b17bbd8cf09d226e94991d102b87f819638622042d5b517adb"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 73110,
+			"sha256": "24bfb218d1dc83e283b8ca70fe7c60ab2a109420abf7e93afa21415ecdc98ab2"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 289643,
+			"sha256": "115013f158cc7e95f218ee1ae01eb352eeda420db424172e574a2d2f011e812c"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3853622,
+			"sha256": "7ee304a2a5965a1b7618528911ecbee515d59258a53c303f00dc993d1190511e"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 437897,
+			"sha256": "2b2bf5488d221c9210d7ea15af19233fd5f0cfe0baa4916b4c33418f64b1dc97"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5813747,
+			"sha256": "cdc6aa43110cc2ea7ead1520416b26a3153176e3a3ad6afe9185a576f7fbcd69"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1753,
+			"sha256": "f574cbc98e0d1461f97bf66a13701ee3e3726a660bae3ea404a05ae99b574494"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 180646,
+			"sha256": "925e20e27ce4e64888df7ab9bb0675fe90a5a6c3452470ff6e5e35ef7ccaa4b8"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 180534,
+			"sha256": "b4e1e575df4660bac4dc17b8612e4d63073c388c6e4c4218413b0efafc12e968"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1079725,
+			"sha256": "832e32c1dc5db9b294bca97e17c827f0025d6bab1f22a4dacaddbabff2cac935"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1079725,
+			"sha256": "832e32c1dc5db9b294bca97e17c827f0025d6bab1f22a4dacaddbabff2cac935"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1079725,
+			"sha256": "832e32c1dc5db9b294bca97e17c827f0025d6bab1f22a4dacaddbabff2cac935"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 24270,
+			"sha256": "c4229d3b2aae9ae5797018b7dacbdfb709e3cb43741a1aacf48bf99143ca32ea"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 786,
+			"sha256": "6bede7e89fe2df88a3e5fe00d373ac12c9b55c4d2d8955a295d03c0e805d9c11"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1446,
+			"sha256": "c10616c03a16538f1bc98ca49f831253afebdfda772c3d21503735e774e0585e"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 82771,
+			"sha256": "5a3fee4d5f81656b1dea29d7a2c01f1a0e9cc7fa355ee41e9399ee0c0525e0c2"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2266,
+			"sha256": "3e6b048bc91485f2c7041e472b58a2b7cec6f3c6756519241007618cf259c1d3"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4340,
+			"sha256": "4c67d24d288726722bcedf3cecc012cc5687c5748a9dc7133f8e48f7543281a3"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 289109,
+			"sha256": "6fa372a82a7dc0229ad38ebd1cd67e5e668093cc1cbdb0930390700477569324"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7033,
+			"sha256": "8d28693ed25a75a3c03518c24fbb2764a6037a432f9dbda73f61fdf720022771"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3318716,
+			"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6586,
+			"sha256": "7cc0fb270ee3871b78b44108af7ecfa449f993a83a9f0f290ef7625123c1c3ea"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10455,
+			"sha256": "6b16f37d9f745ece662875e6dd5a397f62bdf71697c439303a19b4ef10d000a2"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 14131,
+			"sha256": "97bde46b9ba7e75d1f04bfe0c9ab4e498f44a6254de9bb78d5b031875b462c35"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 948,
+			"sha256": "75a8af517102d3defa9141b764fea6a7a39d46c6f4ff5dd965d706149e120e71"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 11935,
+			"sha256": "3975d063dc3cdc95ba48053abd797375291afe650d947aad08d3550deb7f6fa3"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 949,
+			"sha256": "ca763658a7a2f09ce3f5fc9f2459fd411930f718e7a90459ff0d119e93881b06"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3011,
+			"sha256": "bdd689de7a91352d311f2c72c7fbf0e320034148454b903d1f47835599fdcefd"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3640069,
+			"sha256": "5d3b180ef2b28e99b389df61cb349205942b7c78b2b553065db65b0bbe696bf2"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4561,
+			"sha256": "fcf1065d6affd0a254df55b13d80168f41a4326815b4c1e0fa8a17d7fd6c7c3f"
+		},
+		{
+			"path": "/brands/xray/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4561,
+			"sha256": "1f9ae8f473281a31535832a3de6b6776a3ad1f638fe0d5cfc06e394f1d5abbf4"
+		}
+	]
+}

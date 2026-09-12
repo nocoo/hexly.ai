@@ -1,0 +1,469 @@
+{
+	"schemaVersion": 1,
+	"kind": "local-acceptance",
+	"recordedAt": "2026-09-12T21:52:48+00:00",
+	"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"targetSiteVersion": "0.10.0",
+	"productionVerified": false,
+	"publicationEvidence": "The v0.10.0 GitHub Release and linked exact-SHA CI/Deploy runs; this is the preceding local acceptance record.",
+	"counts": {
+		"total": 75,
+		"active": 55,
+		"target": 54,
+		"archived": 20
+	},
+	"scope": {
+		"repository": "nocoo/hexly.ai",
+		"productRepositoriesModified": false,
+		"githubProfileModified": false,
+		"officialIdentityRecolored": false,
+		"officialIdentityGeometryChanged": false,
+		"originalBytesAndRGBAProtected": true,
+		"productUIPalettesChanged": false,
+		"campaignReplacesOfficialIdentity": false,
+		"newImageGenerationCalls": 0,
+		"snailSourceAndAssetDiff": []
+	},
+	"commands": [
+		{
+			"command": "bun run typecheck",
+			"result": "passed",
+			"localLog": "typecheck.log",
+			"logSha256": "87ae13159eda39669c12ce62f184ea295b446bc70a9aa8daef904fac30a3a305"
+		},
+		{
+			"command": "bun run lint",
+			"result": "passed",
+			"localLog": "lint.log",
+			"logSha256": "240da75727e65b80cb6ebdc80caaae2a54570602c21f629ed48a640a89851b49"
+		},
+		{
+			"command": "bun run test:coverage",
+			"result": "301 passed; 20 files; statements 99.58%, branches 98.85%, functions 100%, lines 100%",
+			"localLog": "coverage.log",
+			"logSha256": "ef3755f20719d063aeea7b06328af5b1bfdbb1c34285ad4f3d9ffc50c1dfa918"
+		},
+		{
+			"command": "bun run test:http",
+			"result": "127 passed",
+			"localLog": "http-full.log",
+			"logSha256": "42a07692a89d180b5474492a2478ad18fbf5b289f6e1b860b17eff7b10e609ab"
+		},
+		{
+			"command": "bun run test:browser",
+			"result": "346 passed",
+			"localLog": "browser-full.log",
+			"logSha256": "854e4c766657aeae691e6704e4a5a6c6e62bf99e0b9480cfe4e96d3f77e6d011"
+		},
+		{
+			"command": "bun run assets:build",
+			"result": "passed",
+			"localLog": "assets-build.log",
+			"logSha256": "4b58192ceccfc3c355d5322c69c89a7fe4462bd04581b1577b6958cceb280571"
+		},
+		{
+			"command": "bun run assets:check",
+			"result": "passed",
+			"localLog": "assets-check.log",
+			"logSha256": "5314107f2729f52a157d6aa5b4c39cfa3f0b55df2cec45f0382310960c4f12e9"
+		},
+		{
+			"command": "bun run deploy:check",
+			"result": "passed; dry run only",
+			"localLog": "deploy-check.log",
+			"logSha256": "7013aa2922d4eb1e33e1592ddd664f62956debe2c757e5130be537b4614eb0c8"
+		},
+		{
+			"command": "bun run check:security",
+			"result": "passed; OSV 484 packages; Gitleaks no leaks",
+			"localLog": "security.log",
+			"logSha256": "1a112db8c02b3636d76cc36e1f2af6c5824603cf0933b067913c834a598e68e6"
+		}
+	],
+	"build": "Vite production build passed as part of the HTTP and browser commands; Wrangler dry run passed on built assets.",
+	"visualReview": {
+		"reviewer": "Coordinating Codex agent",
+		"ownerPerCompositionApprovalClaimed": false,
+		"contactSheetManifest": "contact-sheets.json",
+		"contactSheetManifestSha256": "55fb41a3036c292fd0e2badca930fa155a5442a717c12f43ac1224403e43728b",
+		"contactSheetsInspected": 18,
+		"projectsInspected": 54,
+		"themes": ["light", "dark"],
+		"axes": [
+			"full-frame wide Hero",
+			"independently composed mobile Hero",
+			"complete outlined wordmark and lockup"
+		],
+		"readOnlyReviewers": [
+			"w1:p7 Grok: identity/schema/licensing",
+			"w1:p8 Pi: visual/metadata consistency"
+		],
+		"browser": "Chromium",
+		"browserCaptureManifest": "browser-captures.json",
+		"browserCaptureManifestSha256": "e6ca870a649b2894ecbc5c47ee9d298a77b737f03ac3bb131befa1caafa100db",
+		"browserCaptures": [
+			{
+				"project": "frogie",
+				"device": "desktop",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-frogie-desktop-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "7546e4ebc7d4491fc9e6caf0a6d721fee4ab830ae9dc1e107f239196e79c4163"
+			},
+			{
+				"project": "frogie",
+				"device": "desktop",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-frogie-desktop-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "2f16c2283fb8e91efac8ce6aa39b89f8894d43ccbc9a1553523eb2e4f43cc075"
+			},
+			{
+				"project": "frogie",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-frogie-desktop-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "4311d5eb9ae7183b38b717af200a13a4d131ccb6438af68980306748dc415463"
+			},
+			{
+				"project": "frogie",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-frogie-desktop-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "073a462aa7b562e30156ca1e51d16d523861d38c4431c16472dfb07b18fc0d47"
+			},
+			{
+				"project": "matrix",
+				"device": "desktop",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-matrix-desktop-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "0fe75e0650bfa25f410e2e318cbac54e89947fce78db71e00afa5dde2e151037"
+			},
+			{
+				"project": "matrix",
+				"device": "desktop",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-matrix-desktop-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "7fe2471b730f169407ebac22cc4819f463c167a4406f36311424bb1384b1a175"
+			},
+			{
+				"project": "matrix",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-matrix-desktop-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "28652d766b243b09c7ea1b65ed581b0577b935d3a293cf70048a25df16e962f7"
+			},
+			{
+				"project": "matrix",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-matrix-desktop-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "3a4ab9bcdc879d2108ce63bc827cb664e7c9c60f702964dbd3e42adabd01d18b"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "desktop",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-hermes-on-herdr-desktop-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "09c6807e9bfe7fe119716373171fd7085a3de29bbcb48cebde13c18bed8ed837"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "desktop",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-hermes-on-herdr-desktop-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "9f61554df08f3e13cfc8793785a904298ceb733eb86aa5acea4b2589a68c1dd3"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-hermes-on-herdr-desktop-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "3e314fd0447667c4b65994ce558dae1fb81d39666687754a07a5cc8502e5e462"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-hermes-on-herdr-desktop-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "b0e04dbaffd0f9660c984a2914ad9a71483a9ebd99f3b66c084b83dfb2496b79"
+			},
+			{
+				"project": "snail",
+				"device": "desktop",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-snail-desktop-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "ef6fe39dbefe21b510ff7ab0cc2e6ed153b84de61165c7aafc2318afe43fb8fa"
+			},
+			{
+				"project": "snail",
+				"device": "desktop",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-snail-desktop-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "ae209f75973d1f6d99accca40aaba6e799a30254087c3c9f0a3f6f68ed88a4df"
+			},
+			{
+				"project": "snail",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-snail-desktop-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "4eea965a6a17cbd0cedb19c32cd16ef49d5588f936853a65a132bab745c2910c"
+			},
+			{
+				"project": "snail",
+				"device": "desktop",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-snail-desktop-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "706e04e783931532f8739279439da4bee57c077709a627f233be026c25f26434"
+			},
+			{
+				"project": "frogie",
+				"device": "mobile",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-frogie-mobile-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "78db149866c96a42473d2a15108f6a591e3b4f19b624a8a9d149c061e0c998a2"
+			},
+			{
+				"project": "frogie",
+				"device": "mobile",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-frogie-mobile-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "cf1b2e44f612b4a502d3b0e6878b2d8083d5036a5bc05eb64f922657eb5a0cda"
+			},
+			{
+				"project": "frogie",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-frogie-mobile-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "cbc8a78a89ae42c3315733545d58c1d1d0ab97656aa41e593c7eb6c90e083c9d"
+			},
+			{
+				"project": "frogie",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-frogie-mobile-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "eefe3792ce1c251838ddc78e96588534a3a8ef66f519b64a4178f5a7ac068d9c"
+			},
+			{
+				"project": "matrix",
+				"device": "mobile",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-matrix-mobile-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "909a96d41e00774df2a28f09336c87207bfc881af9c5337f04072327a8afc364"
+			},
+			{
+				"project": "matrix",
+				"device": "mobile",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-matrix-mobile-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "88ea8f6926ddb1d194fb8859b275c75dc0212053266a04958a1e3f3fe9637b1a"
+			},
+			{
+				"project": "matrix",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-matrix-mobile-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "376fb1de63aa345fe91e1643869e76fb32776348dd3edbac85beb031ae5eb9f2"
+			},
+			{
+				"project": "matrix",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-matrix-mobile-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "8b73a0f2ab5fa41b9cbe0b9e35dd2af4d79c2b049d6bc0b3ea170a594475f5d4"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "mobile",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-hermes-on-herdr-mobile-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "a8f6624a5f0693c5a5bc94e933a8adfc8740703fd375a2d2c0aaa582b4f5c356"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "mobile",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-hermes-on-herdr-mobile-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "84a6744198f398d0559ec4dceb0ad20828e3a89b309709e9978f713d6cc819b7"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-hermes-on-herdr-mobile-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "d5e4d865c595aec951ee0ae21ac75133a596919f90140c12e996ff740b1004d1"
+			},
+			{
+				"project": "hermes-on-herdr",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-hermes-on-herdr-mobile-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "6ed7ebc6ae09e2fb863d686a457d1c2d609e999ffc4325b9bb72e0c66765a98c"
+			},
+			{
+				"project": "snail",
+				"device": "mobile",
+				"theme": "light",
+				"area": "intro",
+				"path": "browser-snail-mobile-light-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "27acab80405be893179d25ffb63542e582447e695c20f8296d20b641248e5784"
+			},
+			{
+				"project": "snail",
+				"device": "mobile",
+				"theme": "light",
+				"area": "assets",
+				"path": "browser-snail-mobile-light-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "c273a4845c1ec38a3bb008fc798ef3410598818d28ae8a924dd34903401f7bd8"
+			},
+			{
+				"project": "snail",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "intro",
+				"path": "browser-snail-mobile-dark-intro.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "212881c703b10847dc6c28fec37efbe3d8202d8dda77776d8f6edcaae24921bd"
+			},
+			{
+				"project": "snail",
+				"device": "mobile",
+				"theme": "dark",
+				"area": "assets",
+				"path": "browser-snail-mobile-dark-assets.webp",
+				"status": 200,
+				"overflow": false,
+				"errors": [],
+				"sha256": "4a91b8a3b377fe88f619e7032b1d19ffd6e2c3fcef9f5cc85522bd6670edc513"
+			}
+		],
+		"automatedNarrowViewport": {
+			"width": 320,
+			"height": 740
+		}
+	},
+	"limitations": [
+		"No Safari/Firefox claim.",
+		"Fine facets soften naturally at favicon scale.",
+		"Original-artwork licensing remains subject to historical evidence; preserved imagery is not relicensed by the support-code MIT license.",
+		"Source-frame portrait entries are intentional; no anatomy was invented or source canvas cropped."
+	]
+}

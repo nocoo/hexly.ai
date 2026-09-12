@@ -1,0 +1,172 @@
+{
+	"schemaVersion": 1,
+	"project": "unseal",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "Open the way forward.",
+		"zh": "解开隔离，继续前行。"
+	},
+	"description": {
+		"en": "Opened green enamel and brass padlock.",
+		"zh": "刚刚开启的绿珐琅黄铜挂锁。"
+	},
+	"foreground": {
+		"path": "/logos/family/unseal/2026-09-07-01/01/transparent.png",
+		"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Released seams",
+			"zh": "打开的接缝"
+		},
+		"description": {
+			"en": "Separated perforations and folded-tab outlines suggest a seal that has just been opened.",
+			"zh": "断开的齿孔线与翻起的封签轮廓，留下封条刚被打开的轻巧痕迹。"
+		},
+		"source": "artwork/logo-family/unseal/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "43b6a65448238513b01b46d11dd39d9576554bb0e9e74ac17a293fc0bb9f9afa",
+		"layers": [
+			{
+				"d": "M104 30v27M132 42v27M896 30v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 101v27M132 113v27M896 101v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 172v27M132 184v27M896 172v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 243v27M132 255v27M896 243v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 314v27M132 326v27M896 314v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 385v27M132 397v27M896 385v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 456v27M132 468v27M896 456v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 527v27M132 539v27M896 527v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 598v27M132 610v27M896 598v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 669v27M132 681v27M896 669v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 740v27M132 752v27M896 740v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 811v27M132 823v27M896 811v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 882v27M132 894v27M896 882v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 953v27M132 965v27M896 953v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M104 1024v27M132 1036v27M896 1024v27",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M0 806h212l72 -72M805 0v154l89 64M32 823h170l56 -56",
+				"tone": "motif",
+				"strokeWidth": 2.2
+			}
+		],
+		"bounds": [0.0, 0.0, 896.0, 1063.0],
+		"transform": {
+			"scale": 0.4063969896519285,
+			"x": 73.93414863593603,
+			"y": 40.0,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Unseal",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 434.368,
+		"height": 131.96,
+		"glyphBoundsUnits": [65.1497802734375, -14, 2939.209281589674, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/unseal-family-2026-09-07-01-01.png",
+		"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/unseal/blob/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a/logo.png",
+		"repositoryRevision": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

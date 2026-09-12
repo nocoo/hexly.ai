@@ -1,7 +1,7 @@
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import { dirname, relative } from "node:path";
 import { readProjects } from "../src/data/read-projects";
-import { brandAsset } from "../src/model/brand";
+import { brandAsset, brandSourceLabel } from "../src/model/brand";
 
 const projects = readProjects();
 await mkdir("docs/profiles", { recursive: true });
@@ -25,18 +25,19 @@ for (const project of projects) {
 		existingProfiles.find((name) => name.endsWith(`-${project.id}.md`)) ??
 		`${String(++nextProfileNumber).padStart(2, "0")}-${project.id}.md`;
 	index.push(
-		`| [${project.emoji} ${project.title}](${name}) | ${project.brandKit ? (project.brandKit.method === "gpt-image-2" ? "GPT Image animal kit" : "Original vector kit") : project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
+		`| [${project.emoji} ${project.title}](${name}) | ${project.brandKit?.method === "archived-artwork" ? `${brandSourceLabel(project, "en")} campaign kit` : project.brandKit ? (project.brandKit.method === "gpt-image-2" ? "GPT Image animal kit" : "Original vector kit") : project.family ? (project.family.status === "adopted" ? "Adopted family" : "Refined preview") : project.logo.kind === "original" ? "Original asset" : "Profile emoji"} | ${project.colors.primary} | ${project.colors.background} |`,
 	);
 	const kit = project.brandKit;
 	const generatedKit = kit?.method === "gpt-image-2";
+	const collected = kit?.method === "archived-artwork";
 	const kitSection = kit
-		? `## ${generatedKit ? "GPT Image animal brand kit" : "Native vector brand kit"}
+		? `## ${collected ? "Hexly campaign brand archive" : generatedKit ? "GPT Image animal brand kit" : "Native vector brand kit"}
 
 - Brand version: \`${kit.version}\`; [public archive](https://hexly.ai/projects/${project.id}#brand).
-- [Light lockup](../../public${brandAsset(kit, "lockup", "light")}), [dark lockup](../../public${brandAsset(kit, "lockup", "dark")}), [favicon](../../public${kit.root}/favicon.${generatedKit ? "ico" : "svg"}).
+- [Light lockup](../../public${brandAsset(kit, "lockup", "light")}), [dark lockup](../../public${brandAsset(kit, "lockup", "dark")}), [favicon](../../public${kit.root}/favicon.${generatedKit || collected ? "ico" : "svg"}).
 - [Complete usage and integration guide](../../public${kit.root}/guide.md), [standalone specimens](../../public${kit.root}/review.html), [all exports and SHA-256](../../public${kit.root}/manifest.json).
 - Source adoption: ${kit.sourceAdoptionRevision ? `recorded at \`${kit.sourceAdoptionRevision}\`` : "separate source-team handoff; no adoption commit is claimed"}.
-- ${generatedKit ? "The animal and wide hero are Azure OpenAI GPT Image 2 raster generations, with original requests, responses and raw bytes preserved. Transparent extraction and format exports do not make native SVG. Authored textures and archive code use MIT; the unchanged Space Grotesk wordmark uses SIL OFL 1.1. The asset license records the generated-output rights." : "Original geometry and archive code use MIT; the actual Space Grotesk font uses SIL OFL 1.1. No image generation, tracing or third-party icon was used."}
+- ${collected ? "Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt." : generatedKit ? "The animal and wide hero are Azure OpenAI GPT Image 2 raster generations, with original requests, responses and raw bytes preserved. Transparent extraction and format exports do not make native SVG. Authored textures and archive code use MIT; the unchanged Space Grotesk wordmark uses SIL OFL 1.1. The asset license records the generated-output rights." : "Original geometry and archive code use MIT; the actual Space Grotesk font uses SIL OFL 1.1. No image generation, tracing or third-party icon was used."}
 ${kit.previousVersion ? `- [Previous v${kit.previousVersion} identity](../../public/brands/${project.id}/v${kit.previousVersion}/review.html) remains immutable.\n` : ""}
 
 ${kit.description.en}

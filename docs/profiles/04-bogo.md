@@ -40,7 +40,7 @@ Keep reporting relationships, documents and revision history together in workspa
 
 ![Bogo source identity](../../public/logos/display/bogo-160.webp)
 
-- Type: Original project artwork, copied without modification
+- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Winking faceted buffalo with a plain muzzle and one rainbow flower sprig
 - [Source](https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/bogo-2026-09-07.png)
@@ -67,6 +67,35 @@ Keep reporting relationships, documents and revision history together in workspa
 | accent | `#863a9a` | Bogo native generation 40919d744626f8def06dcc98ebfd7b85d3474e00387d7edf68b0591ca6b8a1db, sampled sRGB pixel (371, 1800); palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Hexly campaign brand archive
+
+- Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/bogo#brand).
+- [Light lockup](../../public/brands/bogo/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/bogo/v1.0.0/lockup-dark.png), [favicon](../../public/brands/bogo/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](../../public/brands/bogo/v1.0.0/guide.md), [standalone specimens](../../public/brands/bogo/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/bogo/v1.0.0/manifest.json).
+- Source adoption: separate source-team handoff; no adoption commit is claimed.
+- Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
+
+
+Winking faceted buffalo with a plain muzzle and one rainbow flower sprig.
+
+### Identity keeps its colors
+
+Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.
+
+项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。
+
+### A complete composition
+
+Keep the existing portrait's natural frame entry. The full square is placed against the baseline; no anatomy is extended, trimmed or masked. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.
+
+保留原头像自然入框的边界，将完整方形画布贴齐基线；不补画、不截取解剖结构。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。
+
+### A mark, not a tile
+
+Navigation 24px preferred, 16px minimum. Wordmark ≥54px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.
+
+导航推荐 24px，最小 16px。字标宽度至少 54px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。
 
 ## Refined identity
 
@@ -123,6 +152,6 @@ Small-size observation: At 32 px, the broad golden horns, brown face, and colorf
 
 ## Further refinements
 
-Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
+Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.
+Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

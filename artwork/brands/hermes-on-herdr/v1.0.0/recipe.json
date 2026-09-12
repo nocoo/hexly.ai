@@ -1,0 +1,126 @@
+{
+	"schemaVersion": 1,
+	"project": "hermes-on-herdr",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "An open door to your agents.",
+		"zh": "推开连接智能体的门。"
+	},
+	"description": {
+		"en": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens.",
+		"zh": "拉丝黄铜门框、微开的深蓝珐琅门、象牙色终端嵌字与绿色状态灯。"
+	},
+	"foreground": {
+		"path": "/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png",
+		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Paired panes and a returning route",
+			"zh": "双窗与回返路线"
+		},
+		"description": {
+			"en": "Two unequal pane outlines and a returning route echo the open gateway and its terminal inlay.",
+			"zh": "两扇大小不同的窗框与一条回返路线，呼应微开的门及门上的终端嵌字。"
+		},
+		"source": "artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/finishing/01/settings.json",
+		"sourceSha256": "1026dce28d226b4a0aa2e1a73b12ebcc0f10e25f651234cce43f1529e90cb289",
+		"layers": [
+			{
+				"d": "M111 324V155h326 M603 155h301v287 M904 619v251H662 M386 870H111V585",
+				"tone": "motif",
+				"strokeWidth": 1.6
+			},
+			{
+				"d": "M114 324V158h323 M603 158h298v284 M901 619v248H662 M386 867H114V585",
+				"tone": "highlight",
+				"strokeWidth": 1.1
+			},
+			{
+				"d": "M159 268v-66h257 M651 202h205v174 M856 685v137H697 M335 822H159V639",
+				"tone": "motif",
+				"strokeWidth": 1.1
+			},
+			{
+				"d": "M137 499H82V93h340 M736 93h204v827H575 M575 920l24-12 M575 920l24 12",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M140 502H85V96h337 M736 96h201v821H575",
+				"tone": "highlight",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M193 182h52 M193 190h30 M774 840h52 M796 848h30 M103 370h17 M103 399h17 M103 428h17 M895 492h17 M895 521h17 M895 550h17",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M135 126h161v7H135z M725 891h153v7H725z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [82.0, 93.0, 940.0, 932.0],
+		"transform": {
+			"scale": 0.5034965034965035,
+			"x": -1.2867132867133364,
+			"y": -2.0419580419580825,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "hermes on herdr",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 1038.884,
+		"height": 131.96,
+		"glyphBoundsUnits": [73.1497802734375, -14, 7265.179775072183, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
+		"repositoryRevision": "49b1e011781fbefc7567349862090f7463aaf2f1"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

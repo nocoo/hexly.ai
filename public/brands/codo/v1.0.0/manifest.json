@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "codo",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/codo#brand",
+	"root": "https://hexly.ai/brands/codo/v1.0.0",
+	"source": "artwork/brands/codo/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+		"export": "/brands/codo/v1.0.0/official-logo.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"bytes": 1902979,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+		"sourceRepositoryRevision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/codo/2026-09-07-01/01/transparent.png",
+		"export": "/brands/codo/v1.0.0/logo.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"bytes": 1902979,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/codo/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 45880,
+			"sha256": "fd604db4b426cc784f22072fcccb40f30b8970c8bf7ea6e79a6ed454cac16d49"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 68458,
+			"sha256": "17a693b3e42595cdb3f9251c06413cd3470689d8adf4a1e3e22da901a6f402a5"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6443,
+			"sha256": "8a717cc1fb1d5864ba3a0bf12fec089ba4fc674647a2998c684bee84ecd2e932"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 505416,
+			"sha256": "a2a1d2882a9a7a2f9e6d23c90c2aa44306ffd077393787812fea9ffb97b25bad"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 53982,
+			"sha256": "5e8d70f54b7733b9cdb2c083ca40d1f76a9a5f632225bba541e3395222292830"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 40668,
+			"sha256": "0be0c64655f4e5caba05daf8be44d0d652dc89f9e40b252f395de230a27038a8"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 40968,
+			"sha256": "0448744b486543ff803aaf1fb0511d49159624976094068be3d155c5239f70e2"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 508534,
+			"sha256": "9d4347bd33c816039410a37148919a4f5f5b770fe547ed2a6f6b559716c7322a"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 53908,
+			"sha256": "5ff3384d209fc420f35c8878b84d942ee49f1905a3f339553792a8e2d6693847"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 57235,
+			"sha256": "57659574cb2fff08b52b51a480ef0985539c9853ed73f54ff09cc6d74dc05c32"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 165505,
+			"sha256": "31d21302ecb1f305161ee98cc5193c621eabacc4e54ce2ba816fbc6bfd85ce89"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 1974687,
+			"sha256": "7c5fb81016f3a5744bab847de3e3dd46b162a2672e90087ad7739992d360d238"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 355559,
+			"sha256": "550c6fc8025d1906e0097a1c5327721c7c855ce39541348ca3969cda189b4e79"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4416629,
+			"sha256": "7468b1cefd8e6483759a5e9b31f34c7ed0243f8d021fda097d8f03be96f500ff"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1791,
+			"sha256": "bfc260fb9b5cef56e88f58e50d6b2806ef33847dd0be4b52074a37348ea05c6b"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 106638,
+			"sha256": "6a022026a43b5d8818005ffb11e945725d3f3dae759ed366ee7001b65d51ed8f"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 106278,
+			"sha256": "b1341c9c751aa3f8184c55d2009c9c893bb0dbf5ee7afa627feb209466919da0"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 537273,
+			"sha256": "fc6c31e0f6936eabc83e8a9e8e297a38c70f50746c21a508aa41ae88147b66ae"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 537273,
+			"sha256": "fc6c31e0f6936eabc83e8a9e8e297a38c70f50746c21a508aa41ae88147b66ae"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 1902979,
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 537273,
+			"sha256": "fc6c31e0f6936eabc83e8a9e8e297a38c70f50746c21a508aa41ae88147b66ae"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 13381,
+			"sha256": "e6ae25014eee1c440de38e067843894acb4194419d0113d4d6ad9d110549e864"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 582,
+			"sha256": "a9709d9d700b082eea926ca1983c27d00bf69d7ca5572a419b837d8e4842e8a7"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 984,
+			"sha256": "72fe732afb95d62b6c18af0058489cd37ff333f58694d65b58a4fb61c8077792"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 46030,
+			"sha256": "b197ec74c1daa0660ad46eb951e6950fa08016934fde151eb332cdfba4a74bc2"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1492,
+			"sha256": "925a1a5ae4c2cf051c5b1aeba0c032066759174a8d86e46d86192202094aa746"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2682,
+			"sha256": "47e1a57ae878f1e8fe02c2975d29710d404567ad0c7debc83d8269061f2d6af2"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 158919,
+			"sha256": "6d7be603a104782c541e512b139e6d03ab8fcb57ce482e134dc5cd0f0f0c33f1"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4189,
+			"sha256": "3683bee3a957f561a6591804b8a6f7b73ab3977e34b972e15ce2aeafe2d04b9c"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 1902979,
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 1902979,
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 1902979,
+			"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4650,
+			"sha256": "95c4a64a9d7fc8f423b792107617858fcbb869a70ee6d73f769b00df8dec22b1"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7814,
+			"sha256": "1cbe2dd8cc52dad6b92c1675fd161fe90fe5bd50765842b0048b9e4fcb259106"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15374,
+			"sha256": "412a69170ebcf1c42141224a91846a1c08cab327fdf50199772476316252397e"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9884,
+			"sha256": "870ae78b9aee52051c4b2a7272d4e155a3316e8b9ddc843548633a40c47be037"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 979,
+			"sha256": "436bcf3a1f4d2ebfe99842dce0eb0d5483ba4a6e1a246b3f5ca1762f586c1932"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8465,
+			"sha256": "addfc4f3e55f33c3e9ee53e355d7cd2a8a38f066f0ecbca2c369baafc8b50d16"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 980,
+			"sha256": "3ce0c2bce67e3014673df036b2b0f4f91875b1495be959d085e7c853559da774"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3247,
+			"sha256": "ee8974d3eb94032ac61b2d82ad9c5ae8ea1a472cf0690c244469024264efdf9a"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 1744729,
+			"sha256": "818b5990e6765ef7e35c4624048665d4d8e3ff00141862ff91d9906ee4f23756"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6292,
+			"sha256": "e254f897c4395612a9d118c98243d2e69c0c90fa557d80a1e418f60854522ad0"
+		},
+		{
+			"path": "/brands/codo/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6292,
+			"sha256": "eab825a6255c016d552c1afaa2878c4ea1170e616b1185654f185cae8c73e61e"
+		}
+	]
+}

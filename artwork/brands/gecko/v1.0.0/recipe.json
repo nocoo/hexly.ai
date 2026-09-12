@@ -1,0 +1,115 @@
+{
+	"schemaVersion": 1,
+	"project": "gecko",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "A little perspective on time.",
+		"zh": "让屏幕时间有迹可循。"
+	},
+	"description": {
+		"en": "Sandstone-colored gecko with a complete curled tail and toes.",
+		"zh": "砂岩色壁虎，卷尾和脚趾完整可见。"
+	},
+	"foreground": {
+		"path": "/logos/family/gecko/2026-09-07-01/01/transparent.png",
+		"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Sandstone shelves",
+			"zh": "砂岩层台"
+		},
+		"description": {
+			"en": "Staggered sandstone ledges and short rising seams recall the surfaces beneath the gecko’s toes.",
+			"zh": "错层的砂岩台面与短短的纵向接缝，呼应壁虎脚趾攀附的岩面。"
+		},
+		"source": "artwork/logo-family/gecko/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "16fb536f99c2af82e17f5de62501a23e912e797305f8e043786d99d24fd357e4",
+		"layers": [
+			{
+				"d": "M-92 129H230Q320 129 342 220H546Q616 220 626 284H1118V330H593Q587 261 526 261H306Q291 171 216 171H-92Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-92 177H212Q286 177 302 267H522Q582 267 588 336H1119",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-100 704H86Q160 704 184 767H323Q399 767 402 840H654Q719 840 743 897H1125V942H709Q691 882 627 882H360Q366 809 294 809H145Q124 748 63 748H-100Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-98 754H59Q119 754 141 815H288Q360 815 354 888H622Q685 888 704 948H1124",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M212 171L220 77M629 285L654 380M746 897L758 779",
+				"tone": "motif",
+				"strokeWidth": 8
+			}
+		],
+		"bounds": [-100.0, 77.0, 1125.0, 948.0],
+		"transform": {
+			"scale": 0.3526530612244898,
+			"x": 75.26530612244898,
+			"y": 75.26530612244898,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Gecko",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 413.764,
+		"height": 133.92,
+		"glyphBoundsUnits": [52.4498291015625, -14, 2779.3370785920515, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/gecko.png",
+		"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/logo.png",
+		"repositoryRevision": "f259be7fe740ce260c9257e2870b57dec8d9e7b3"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

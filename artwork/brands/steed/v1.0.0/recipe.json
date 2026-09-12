@@ -1,0 +1,114 @@
+{
+	"schemaVersion": 1,
+	"project": "steed",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Room for every agent.",
+		"zh": "让每个智能体各得其所。"
+	},
+	"description": {
+		"en": "Chestnut horse portrait with an ivory blaze and one colorful bird.",
+		"zh": "栗棕色骏马头像、象牙白额纹与一只多彩小鸟。"
+	},
+	"foreground": {
+		"path": "/logos/family/steed/2026-09-07-02/01/transparent.png",
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Canter pleats",
+			"zh": "奔跑褶线"
+		},
+		"description": {
+			"en": "Three unequal wind folds lean into a canter, with long curves and offset seams suggesting forward movement.",
+			"zh": "三道长短不同的折线顺风倾斜，以错落的接缝呼应骏马轻快向前的姿态。"
+		},
+		"source": "artwork/logo-family/steed/2026-09-07-02/finishing/01/settings.json",
+		"sourceSha256": "30c1b5937866cea07d260df57d569e7861b5af13d1ae7c1137f052a47e72baf6",
+		"layers": [
+			{
+				"d": "M-103 1130C22 916 87 652 279 445C401 313 433 157 395-103L575-103C560 149 481 332 356 480C189 679 114 933 89 1130Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M95 1131C129 922 202 681 367 487C495 336 574 146 583-103",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M259 1135C292 884 446 734 608 655C813 555 914 303 891-104L1093-104C1080 323 938 559 720 708C551 821 442 975 433 1135Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M433 1135C451 970 560 822 729 712C947 569 1087 331 1101-98",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M762 1116C790 993 913 936 1113 895V1016C974 1038 916 1070 899 1116Z",
+				"tone": "motif"
+			}
+		],
+		"bounds": [-103.0, -104.0, 1113.0, 1135.0],
+		"transform": {
+			"scale": 0.3486682808716707,
+			"x": 79.92251815980632,
+			"y": 76.26150121065376,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom", "lower-right"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Steed",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 393.457,
+		"height": 133.92,
+		"glyphBoundsUnits": [37.499755859375, -14, 2619.3370785920515, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/steed-family-2026-09-07-02-01.png",
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
+		"repositoryRevision": "bcab1f113b9b7cde65898bbd23705c7dac339634"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

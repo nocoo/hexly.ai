@@ -1,0 +1,118 @@
+{
+	"schemaVersion": 1,
+	"project": "lyre",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Every word, in its own time.",
+		"zh": "每个词，都有准确的时刻。"
+	},
+	"description": {
+		"en": "Chestnut faceted lyrebird with a curled feather crest.",
+		"zh": "栗色碎片化琴鸟与卷曲羽冠。"
+	},
+	"foreground": {
+		"path": "/logos/family/lyre/2026-09-07-03/01/transparent.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Lyrebird fan",
+			"zh": "琴鸟扇羽"
+		},
+		"description": {
+			"en": "Unequal curved ribs form two off-center feather fans, leaving generous space between their open edges.",
+			"zh": "长短不同的弧形羽肋组成两片偏心扇羽，开口之间保留宽松的呼吸空间。"
+		},
+		"source": "artwork/logo-family/lyre/2026-09-07-03/finishing/01/settings.json",
+		"sourceSha256": "3fdac73e22134134698d822e95b4b7f4b30ba8febce42975b8e7272c58dfd46f",
+		"layers": [
+			{
+				"d": "M-110 1090C-70 655 2 226 304-55L333-46C44 258-29 679-75 1101Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-90 1088C80 759 206 555 442 408C102 714 14 924-52 1107Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-92 1104C144 955 318 898 607 924C351 941 154 1027-57 1122Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-70 1100C-22 679 52 259 340-41 M-47 1108C23 925 112 716 449 413 M-53 1125C160 1033 354 947 609 931",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M1080-72C890 51 798 93 650 96C844 146 1000 50 1096-41Z M1089-32C945 112 942 231 985 326C970 178 1060 72 1110-3Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M653 102C846 152 1003 56 1099-35 M992 329C977 181 1067 75 1117 0",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-110.0, -72.0, 1117.0, 1125.0],
+		"transform": {
+			"scale": 0.35207823960880197,
+			"x": 78.72860635696821,
+			"y": 70.63080684596576,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Lyre",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 295.843,
+		"height": 158.0,
+		"glyphBoundsUnits": [69.499755859375, -200, 1954.0901807702105, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/lyre.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+		"repositoryRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

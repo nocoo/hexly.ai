@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "hermes-on-herdr",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/hermes-on-herdr#brand",
+	"root": "https://hexly.ai/brands/hermes-on-herdr/v1.0.0",
+	"source": "artwork/brands/hermes-on-herdr/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+		"export": "/brands/hermes-on-herdr/v1.0.0/official-logo.png",
+		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+		"bytes": 4337945,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "800ee7781835fe6fd6f6cbff3bd4d5fa038a0305cdc1f7b0aaa66a0b4b82f96e",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
+		"sourceRepositoryRevision": "49b1e011781fbefc7567349862090f7463aaf2f1",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png",
+		"export": "/brands/hermes-on-herdr/v1.0.0/logo.png",
+		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+		"bytes": 4337945,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "800ee7781835fe6fd6f6cbff3bd4d5fa038a0305cdc1f7b0aaa66a0b4b82f96e",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 51311,
+			"sha256": "8ea836fc88c5747b71310b3b2ec5ab31f16377a214779f64f17a67bd42d9181e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 108083,
+			"sha256": "7348d3e30689b6e591af00cf6d45619650fe3f787d5b811123412c380e02a040"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6552,
+			"sha256": "2d7e77680fdf3c7a857f5ffc5f6c16b62a66f2eb577b89c7590e91e990a9607e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 921941,
+			"sha256": "34c5e0b6478bbd629748694ef7f2d766e9559e6e637e485b0aa1ee27cc17bc0a"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57962,
+			"sha256": "dc4350edd561212a4ee509d0fbea0112d612d7937f0dcdc23fe9c5bf9b820aea"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 42084,
+			"sha256": "a86b6d32570a58b981af09bf305fba8b615b3626de593c8949c81c7f85856dfa"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 42114,
+			"sha256": "bb064c37383e79ace5c2632e05d91a98cfa893014c0b8d2a2e30dc0384e97cff"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 925958,
+			"sha256": "e92dbf904f908ba51f33f36c526c12dc6fc55b2266493d238143a1e54ddbffe9"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 55734,
+			"sha256": "e9d5ef5d3779adff8b5a80ba584b45afc232d2c38ee9bf7bf5cfb273ea44108a"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 61161,
+			"sha256": "001aa72cb1c88dce32b5636a9260dffd34b74bcaae0758e27f30050a798ffc62"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 273838,
+			"sha256": "bf7302cc59610cd662189bd11352683965cb07a3f1daa5a0b7a07a5c66f9f715"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4363423,
+			"sha256": "a5ced2b99164fd5e71f273ead7c300e0067a1be302de30e5112bc8c85c94d689"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 371053,
+			"sha256": "5dabef0c0311d6480ca882eeac4a85c137dd24a887e082c1119c3c4aec57ec7e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5672655,
+			"sha256": "aa2f56454488ffe1ff07146ad5ac4c85ec8613f496f3c2323a71ac864567a66f"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1802,
+			"sha256": "3f0a920dbdb0fca010361f7e60c8f6013eab197c023638e6bd80257449141976"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 193342,
+			"sha256": "7ad8cd6326a4e82c1c877dc113fa19d48d271b7cd505941f4068668b8ca2c7ef"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 192617,
+			"sha256": "b5b5499555a049cf8abd2ade353b79c9b114cd987c43c2dd59f7f3585fd8d727"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1071595,
+			"sha256": "0f4e7709a3f9c0b21492d47ffda57881ecb10e2674aefee0523cdbee4550b04e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1071595,
+			"sha256": "0f4e7709a3f9c0b21492d47ffda57881ecb10e2674aefee0523cdbee4550b04e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1071595,
+			"sha256": "0f4e7709a3f9c0b21492d47ffda57881ecb10e2674aefee0523cdbee4550b04e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 20710,
+			"sha256": "0c0a20d4b3ff3dcd3ce905940266faa7b995b00a6478eeeb596deabe3ee58bf7"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 719,
+			"sha256": "a949581d84749c14084805800f4c9499f3107e72ab733a5e62a74475002e9c21"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1322,
+			"sha256": "e6d8c45e41dd5d1b6018719af76b9f7ba2c149cce4dae054d415a6575a54bee5"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 74661,
+			"sha256": "e6a0579c383aa78739d87442e230b58ad21220fc335a402aec3e8d992be51b18"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2036,
+			"sha256": "a09ed2a2e60a607c0aee98c173629b541e41bc902685b6dbfa63906874ce566e"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3822,
+			"sha256": "8ac2b4fd13a8623febeabcd95916248f3c6772b1282b2c5c80df6774594523bf"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 273879,
+			"sha256": "6f6bf8bd7f6190570ae376d01d8a603c7f89664c504cdd3546ac78c99f0102b9"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6033,
+			"sha256": "17a4c83f9175303d191b9e06b65de22b20e28c4587194677d4773b9a2dc14758"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 4337945,
+			"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 3375,
+			"sha256": "1a74136708de560a5a7d16fc6f4bea47b3d534c1ec6cc085487945ad15b6b49a"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8588,
+			"sha256": "212d92f21c3870476ccd50310c1e020ddb21105bee1a88a06459fbc13b9a8109"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14414,
+			"sha256": "d74c52c264dcb62730f0ed3765aac0324fe4d6da905ff5e4a0bbef26136c5fb7"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4839,
+			"sha256": "32f692557715c743ff18ecc5dd444600eac6021aa3eade8e783e8cb346c8b045"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1141,
+			"sha256": "c604f68eca3dcc3a73f42fb5a5688e067320aaae0ab9ea3a0c2eaac7dd462e05"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4621,
+			"sha256": "247d8abf203dd1dd0847c7021d0ab5d6eac250260ec6c62c617790f2b528ba37"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1142,
+			"sha256": "40d335a9a927e158bde8d299939413d9ec466afbd1d14f7bf68363d6f0910f09"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3835,
+			"sha256": "402f5f64881d7dbf7a8305ee5289dbd80b7c6f232ce27e223d02de0225afe1df"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 4060978,
+			"sha256": "ed6dc92a850094c3fd681c99b70a182904a11d56cdaf602ee760021d15ce7352"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 15661,
+			"sha256": "4ba71be751d844bd2d0fa3202b890fb904116eb5a8dfb6041557f4546da5dc1d"
+		},
+		{
+			"path": "/brands/hermes-on-herdr/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 15661,
+			"sha256": "068618186bfca94fbf7fee57f029ae99f14823df0ee6d2e79bed77a885ff6df8"
+		}
+	]
+}

@@ -1,0 +1,179 @@
+{
+	"schemaVersion": 1,
+	"project": "signoff-now",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "Make activity visible.",
+		"zh": "让开发活动清楚可见。"
+	},
+	"description": {
+		"en": "Petrol enamel mechanical tally counter.",
+		"zh": "深蓝珐琅机械计数器。"
+	},
+	"foreground": {
+		"path": "/logos/family/signoff-now/2026-09-07-01/01/transparent.png",
+		"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Activity ledgers",
+			"zh": "活动账页"
+		},
+		"description": {
+			"en": "Stepped tally bars, grouped count strokes and sparse ledger lines turn activity into a readable rhythm.",
+			"zh": "阶梯式计数条、成组短划与稀疏账页线，将开发活动整理为清楚的节奏。"
+		},
+		"source": "artwork/logo-family/signoff-now/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "f332a1783e00df33be97919e0c4f257a84b51a98c00825507bcd72fbe287f211",
+		"layers": [
+			{
+				"d": "M60 150v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M79 159v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M98 168v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M117 177v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M136 186v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M54 194l100 -37",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M840 150v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M859 159v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M878 168v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M897 177v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M916 186v55",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M834 194l100 -37",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M35 90h954",
+				"tone": "motif",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M35 124h954",
+				"tone": "motif",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M35 886h954",
+				"tone": "motif",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M35 920h954",
+				"tone": "motif",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M72 800h64v-34h68v-51h62v-42",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			}
+		],
+		"bounds": [35.0, 90.0, 989.0, 920.0],
+		"transform": {
+			"scale": 0.4528301886792453,
+			"x": 24.15094339622641,
+			"y": 27.320754716981128,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "signoff.now",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 775.143,
+		"height": 158.98,
+		"glyphBoundsUnits": [
+			44.099853515625, -200, 5352.267318062161, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+		"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/logo.png",
+		"repositoryRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

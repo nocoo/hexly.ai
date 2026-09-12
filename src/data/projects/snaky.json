@@ -258,5 +258,75 @@
 			"zh": "完整动物和兴趣点距离真实圆角轮廓至少 198.5 px。十种导出尺寸保持同一组等比位置，小型 UI 与浏览器使用透明主体；细小切面和装饰细节在 16 px 时会简化。"
 		},
 		"model": "gpt-image-2"
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/snaky/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 823,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Meadow bends",
+				"zh": "草地弯道"
+			},
+			"description": {
+				"en": "Broad S-shaped channels turn at different intervals, following a route without enclosing the snake.",
+				"zh": "宽阔的 S 形通道以不同间距转弯，像流量路径延伸经过，而不把小蛇圈住。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Green snake in a natural coil with one multicolored forked tongue on a Hexly campaign canvas",
+				"zh": "自然盘坐的绿色小蛇与一条多彩分叉舌头，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "See the route before you go.",
+				"zh": "出发之前，看清流量去向。"
+			}
+		},
+		"description": {
+			"en": "Green snake in a natural coil with one multicolored forked tongue.",
+			"zh": "自然盘坐的绿色小蛇与一条多彩分叉舌头。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 62px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

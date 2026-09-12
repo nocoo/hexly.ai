@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "showtime",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/showtime#brand",
+	"root": "https://hexly.ai/brands/showtime/v1.0.0",
+	"source": "artwork/brands/showtime/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+		"export": "/brands/showtime/v1.0.0/official-logo.png",
+		"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+		"bytes": 3865252,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
+		"sourceRepositoryRevision": "9a8c7c89ec078ba17539d76522952d3f4af3d0f7",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/showtime/2026-09-10-02/03/transparent.png",
+		"export": "/brands/showtime/v1.0.0/logo.png",
+		"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+		"bytes": 3865252,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/showtime/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 48913,
+			"sha256": "58d51b927506a3e6914af9826167ebfa4a1c7dfc19613b52845ec16d6d284939"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 100730,
+			"sha256": "ea9c88c8b161fdf293ff61495bc1fb42686a31b8b56269605683f60019b1e882"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6527,
+			"sha256": "440b38bc9b7646c5ae5c254cb684392a254f45056defe3a9996d77afc90e7c46"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 822551,
+			"sha256": "639b4710ec72175822bc4f6037c42b18d612911e490912d60fa34215bbc03bc8"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 72046,
+			"sha256": "aebcbe260d2d8d68ee5b557cf8ffa93564b4f42597ebaad8a3a20c16bc907d21"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 55262,
+			"sha256": "b4d3693fd7a16844189c5c2d4cc8808e4915f9b8680946d19aa1b9ce29ac54a4"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 55372,
+			"sha256": "a3bdd4a4ba8ad5df8a3969a46ba27f689ff540b8a0e6ef855e08cb21a45dce12"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 825730,
+			"sha256": "fa96acc5144ec9d370392928c0cc5a4a5234bbd80ae08e273a9d384480646e34"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 70234,
+			"sha256": "b23df7b930e9ddc513df27759615d5d93448959379a3dc126e45bbf6829030ac"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 58325,
+			"sha256": "70c58b920952bdaaff720b6bd7d2c76bc5a73b7081d225e1597d461a720360f6"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 239254,
+			"sha256": "3a80bd2e077dfad34dd51fc40ca357c25fae73a1079ae17883cc18a87ad25a13"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3875571,
+			"sha256": "f47525f890f38029ba6e17299377ef21db8ec54294a0b5266341068e1af46520"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 342789,
+			"sha256": "d70fc5c4d40e19fa9d56689be0f4b6a927c50faddf9dd979bdcb3edb4b32861b"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5212157,
+			"sha256": "dac1159f54289eb8fd6e03b81b7c95565d970023b34eefc463346e01fb8b1d23"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1795,
+			"sha256": "18000ada9e6cca782cc781d55d9a8b21c38d038f749021a36506cc64aef84f00"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 166317,
+			"sha256": "58e7bb0e9219fbf53976c9289dc5d6a23b52b6acceaa8057223c9bc0d5a723ea"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 165947,
+			"sha256": "fa66be080b513f2999875190463684bbe5bffe8b0dcf4e17ce43303fddf746b7"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 945463,
+			"sha256": "e19d7da7a6114ec06cc3d7c226772dfb7d98570a59a28e4a6875393fe66d4b45"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 945463,
+			"sha256": "e19d7da7a6114ec06cc3d7c226772dfb7d98570a59a28e4a6875393fe66d4b45"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3865252,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 945463,
+			"sha256": "e19d7da7a6114ec06cc3d7c226772dfb7d98570a59a28e4a6875393fe66d4b45"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 20139,
+			"sha256": "778c8d300061fe508f54c89b5abbea3c4436b94602e3c7fb3971b914c220b955"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 767,
+			"sha256": "f8e35a29bfe4f09c1daa648ed3d8d87801f2c04037b7ea12d9efd69818476dab"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1357,
+			"sha256": "9f70fcf6a5553d510f8e8a8f7f13b15a75f2dc6bbcb63566150db8ec2da9d8a4"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 67570,
+			"sha256": "57ee244fe331582767257cb0d014d97b71ed731ec412c957786d105976a86adf"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2077,
+			"sha256": "b937322ff6157a0752dcb35d214d10056cbb555f12e2479b6d1b9227f28d3bd8"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3880,
+			"sha256": "e5b45edb59b42a07b07c8816c28552cc9708083df4243d49c4dd39ac4540db78"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 240130,
+			"sha256": "19689699f0af65be5f985aa347d80c300b26587763698a921cb35c4acbc1ad88"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6195,
+			"sha256": "8e51a9b58a3a403cced9e48c4e379cd857c6540e00e97f19e0095bc83fd824c1"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3865252,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3865252,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3865252,
+			"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4006,
+			"sha256": "a4da77fae9fe23cd6b434162d9ad093aef39ae6cbe26cad47ba7ede87f598d0c"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8280,
+			"sha256": "378c6c29ca444187ff02551e7cd9da37b5bdb5c27016b1e8d165cf2ec6c48e13"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15021,
+			"sha256": "cab6c44ef98510f3d2b160a83241caca92e3f1672d5c28ead481b5c84c00ac55"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4466,
+			"sha256": "702ab4920297b2100e1d604faff847e2efb9a4d85eb89499f0b307bc1a729f56"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1325,
+			"sha256": "21789d2dc349d447c929946e719eaad9bb3414964f1d93533a3223fc4f2d4157"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4232,
+			"sha256": "920a73fa23ff512e49ac0c5bf6b09079756804550b2e9a7317df65bb790f4495"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1326,
+			"sha256": "acc2a4b1b5f6a4605d6b9af11ad4f44399646a284a4061c98406508917769524"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3421,
+			"sha256": "1ea748570fe8acceada645c8da92ad1011b0ca0d69751361d24c0de036ccacab"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3495235,
+			"sha256": "963ffe7ecb90121115781c4818b2d913a3ca23b3bd6326fc26c9c41c2c03113a"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 9915,
+			"sha256": "5fac9aa7c91d3226f811f528f30b598b2e9b733da6699ca3d4486c8d6d601d8d"
+		},
+		{
+			"path": "/brands/showtime/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 9915,
+			"sha256": "b6f1310192a7353ee6f41006dfbd676af93d1656507866dfdb3b753d73188cb0"
+		}
+	]
+}

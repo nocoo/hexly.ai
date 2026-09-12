@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "fundly",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/fundly#brand",
+	"root": "https://hexly.ai/brands/fundly/v1.0.0",
+	"source": "artwork/brands/fundly/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/fundly.svg",
+		"export": "/brands/fundly/v1.0.0/official-logo.svg",
+		"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+		"bytes": 456,
+		"width": 32,
+		"height": 32,
+		"channels": 4,
+		"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+		"edgePixels": {
+			"top": 24,
+			"right": 24,
+			"bottom": 24,
+			"left": 24
+		},
+		"sourceUrl": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+		"sourceRepositoryRevision": "6de762074e00011009f7604bbeeb7c0b04923c00",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/fundly/2026-09-07-01/02/transparent.png",
+		"export": "/brands/fundly/v1.0.0/logo.png",
+		"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f",
+		"bytes": 1928579,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "d65c30e99247f3cdf1c19569f5f08fdb15f1fc54ac98d2bb249a89c899e703b7",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": false,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "review",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/fundly/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 49382,
+			"sha256": "8b6e806d535fd1cf512bf858637136abff8a3fa5d0ee47da7a352eef831c00a3"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 85834,
+			"sha256": "f0765344311709eee40d17c490ad9768879ca00f1232119341b34fd090085222"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6587,
+			"sha256": "19a5c3174f2e2567b894b75d523fcf43f21261c7a8158d5cb38d17510f516332"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 531587,
+			"sha256": "bb8e1104eae12e0d11d7ee454188d5a81cc8f716758318873ca31c0c1d19e966"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 43800,
+			"sha256": "ece4a509e15b6b3293b8035aa33c6297f2d7e275a77c0535358efd2f5a495d60"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 33454,
+			"sha256": "56a2e17bc98c1c7e2129ed0fd7d9fde7b20c4169addcfca30837dc81231c89da"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 35362,
+			"sha256": "5d03cf51e81f32620dd7a34653be86b7d88425aecb576431d7f117a3780ab976"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 534046,
+			"sha256": "8249741579e4c62f2304f4ad3b11696e3e82bbcc77b82a5646f2a0c51f9293ac"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 45362,
+			"sha256": "e5babaea526976d320d08be203ebd699f073f807b350e5153e66fed5a9b34282"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 59190,
+			"sha256": "868bf07786e709bf8474e53b5f4594689e042ed7c3bc1355d56466b65b7d4beb"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 185952,
+			"sha256": "47f647e8378f6743dacb0d21e0c5729218c395eb84a77a217ca017a38eaf3810"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 1986387,
+			"sha256": "7f1a58e457518cb11323878400140c1a3c84134c31f64a332fd6bf25a53ad878"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 332180,
+			"sha256": "e7b77e2ed10c25461ffbd6ff0950f16894feb1b8abda54e93bc7c6f0fcf27a69"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 3797735,
+			"sha256": "3442701ed91923fbc746922c26bfcefd8027c9ec4c8b0a7c7fc9b95b5ace991d"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "b0225d5ff22e26949d3e8870fcad595070598a87cc6f332ac65bdfd64f8e2323"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 122929,
+			"sha256": "9a26249b0d51f04413c41cac777d695f37b6e31b82aa440c7ec56b76793b88f1"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 122668,
+			"sha256": "922eadd6bd6fb3122a4079bd251ae4ab131646d071e812376cbc90315feb1a48"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 578858,
+			"sha256": "124b19aad9fb57dfa8b65655ad83a2d701f72a1af769d441502980717c2b0d10"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 578858,
+			"sha256": "124b19aad9fb57dfa8b65655ad83a2d701f72a1af769d441502980717c2b0d10"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 1928579,
+			"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 578858,
+			"sha256": "124b19aad9fb57dfa8b65655ad83a2d701f72a1af769d441502980717c2b0d10"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 17483,
+			"sha256": "514e002bbdab88b7299e678ca99de8fa8c21f99d71126718294730292cd8fe66"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 622,
+			"sha256": "c8450e68e8821507d33739358c69c009008a2dcd5d87003a9f07af1cba44f03a"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1127,
+			"sha256": "535b74a2c755899031c7d76f6e0fb9b98a1cb1ca5ff103aff14574adb3514050"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 57589,
+			"sha256": "7fe5fd1b57d06f7576a1a18ebc3c02150fca76c6b3967601949c404218fb43b7"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1695,
+			"sha256": "8ed014093cb043ac3f27bffa79e61424a636ac543539770d5df68a723b9c0ad4"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3189,
+			"sha256": "ec7bc21b1d57ab53518341cf309b472a73e8c111c5105c0b5fea864adaecc613"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 182056,
+			"sha256": "b1319cafbfac110818dc459f5a8eaf534f17dcf600661dd1f675614cc5ba6f82"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5154,
+			"sha256": "f1be94f47cf6a3564efcbdd0b9acbc2c03589356f1c5afad285be9ac64b87e3c"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 1928579,
+			"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 1928579,
+			"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/official-logo.svg",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 456,
+			"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4643,
+			"sha256": "bebf03836c0e20036df03831cf73275f17c27293b8072372d911c9ca620e22c9"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7922,
+			"sha256": "131e63ff7d2f36dc2ee921ee0d36cca83b56b623034aa6b6de690d1223ac14b2"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15399,
+			"sha256": "c54fc95f677a4db65b999cd35312d3c12a429e16183e44814b2b81b394d9a002"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 6974,
+			"sha256": "76b093e0b1ab22933f94ba2bb4fd7b941f47437a3eb6bd281a88b164e32a32f4"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 955,
+			"sha256": "865b78276833c9977a7dfba6e89b6a9396e8294d09c5c1bb62cd6606514e2ff0"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5858,
+			"sha256": "edbdcc9343b32f5ce2bcf8b1379ba76264bd810d321a6211f6c60e5423c299b8"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 956,
+			"sha256": "8b866d9ab394854974250f19d823513f89f354c07d3f91a6f2ccb087a4035ff7"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3597,
+			"sha256": "d26fbbaec53211673b5d4cba54b93944c365134f801c24fcbbdc198e18388dab"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 1806130,
+			"sha256": "a3e5e53a08f10fc9b51b86b17114f5f2f6c4e151b12c32a03459d2b0b75d7034"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5079,
+			"sha256": "c005774b9b2dde468b2be492cb32386801309148e51bb486b74be65f50b566eb"
+		},
+		{
+			"path": "/brands/fundly/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5079,
+			"sha256": "fd301af09747e32c0d7cd05dc8e6387c5265933d88d753e251b9690e23e2755a"
+		}
+	]
+}

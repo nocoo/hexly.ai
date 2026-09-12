@@ -1,0 +1,142 @@
+{
+	"schemaVersion": 1,
+	"project": "ipsafe",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "Check the connection first.",
+		"zh": "先确认连接，再安心执行。"
+	},
+	"description": {
+		"en": "Green network cable tester with a short patch lead.",
+		"zh": "带短跳线的绿色网线测试仪。"
+	},
+	"foreground": {
+		"path": "/logos/family/ipsafe/2026-09-07-01/01/transparent.png",
+		"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Connection lanes",
+			"zh": "连线通道"
+		},
+		"description": {
+			"en": "Paired port outlines, guarded chevron lanes and short status bars describe a connection being checked.",
+			"zh": "成对端口、折向通道与短状态条，描出一次正在核验的连接。"
+		},
+		"source": "artwork/logo-family/ipsafe/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "1768f055e9cb1af4c22cefcd4eed413e8371246fa1ffcbb5f02d80871fdc774a",
+		"layers": [
+			{
+				"d": "M45 80h42v24H45ZM910 80h42v24h-42Z",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M45 140h42v24H45ZM910 140h42v24h-42Z",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M45 820h42v24H45ZM910 820h42v24h-42Z",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M45 880h42v24H45ZM910 880h42v24h-42Z",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M0 250l52 28 -52 28M1024 310l-52 28 52 28",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M0 350l52 28 -52 28M1024 410l-52 28 52 28",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M0 450l52 28 -52 28M1024 510l-52 28 52 28",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M0 550l52 28 -52 28M1024 610l-52 28 52 28",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M0 650l52 28 -52 28M1024 710l-52 28 52 28",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M130 920h72M220 920h72M310 920h72",
+				"tone": "motif",
+				"strokeWidth": 2.5
+			}
+		],
+		"bounds": [0.0, 80.0, 1024.0, 920.0],
+		"transform": {
+			"scale": 0.421875,
+			"x": 40.0,
+			"y": 45.0625,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "IPSafe",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 414.569,
+		"height": 133.92,
+		"glyphBoundsUnits": [69.499755859375, -14, 2802.1336590310802, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+		"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png",
+		"repositoryRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

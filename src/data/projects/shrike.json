@@ -274,5 +274,75 @@
 				"src/components/settings-page.tsx"
 			]
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/shrike/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 899,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Folded wings",
+				"zh": "折翼层片"
+			},
+			"description": {
+				"en": "Broad angular pleats and short inset seams echo folded wings at opposite corners of the canvas.",
+				"zh": "宽阔折面与内收短缝在画面对角相互呼应，像伯劳安静收拢的双翼。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Original grey faceted shrike with a dark eye mask on a Hexly campaign canvas",
+				"zh": "保留原图的灰色碎片化伯劳与深色眼罩，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "Keep your files in step.",
+				"zh": "让文件始终步调一致。"
+			}
+		},
+		"description": {
+			"en": "Grey faceted shrike with a dark eye mask.",
+			"zh": "灰色碎片化伯劳与深色眼罩。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥74px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 74px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

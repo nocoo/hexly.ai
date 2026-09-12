@@ -1,0 +1,112 @@
+{
+	"schemaVersion": 1,
+	"project": "dotty",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "Make a point of clarity.",
+		"zh": "用清晰的黑白，呈现信息。"
+	},
+	"description": {
+		"en": "Floating black-and-white checker ceramic block.",
+		"zh": "悬浮的黑白棋盘陶瓷方砖。"
+	},
+	"foreground": {
+		"path": "/logos/family/dotty/2026-09-07-01/01/transparent.png",
+		"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Precision drafting grid",
+			"zh": "精密绘图网格"
+		},
+		"description": {
+			"en": "Fine Cartesian subdivisions, stronger construction lines and registration crosses give the checker block a drafting ground.",
+			"zh": "细密坐标线、较强的基准线与定位十字，为黑白陶瓷方砖铺开一张绘图纸。"
+		},
+		"source": "artwork/logo-family/dotty/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "77520c503c05065806aafe7e8f939a087fd05774bb2cbcc454b741fdeb8c8035",
+		"layers": [
+			{
+				"d": "M16 0V1024M0 16H1024M48 0V1024M0 48H1024M80 0V1024M0 80H1024M112 0V1024M0 112H1024M144 0V1024M0 144H1024M176 0V1024M0 176H1024M208 0V1024M0 208H1024M240 0V1024M0 240H1024M272 0V1024M0 272H1024M304 0V1024M0 304H1024M336 0V1024M0 336H1024M368 0V1024M0 368H1024M400 0V1024M0 400H1024M432 0V1024M0 432H1024M464 0V1024M0 464H1024M496 0V1024M0 496H1024M528 0V1024M0 528H1024M560 0V1024M0 560H1024M592 0V1024M0 592H1024M624 0V1024M0 624H1024M656 0V1024M0 656H1024M688 0V1024M0 688H1024M720 0V1024M0 720H1024M752 0V1024M0 752H1024M784 0V1024M0 784H1024M816 0V1024M0 816H1024M848 0V1024M0 848H1024M880 0V1024M0 880H1024M912 0V1024M0 912H1024M944 0V1024M0 944H1024M976 0V1024M0 976H1024M1008 0V1024M0 1008H1024",
+				"tone": "motif",
+				"strokeWidth": 0.48
+			},
+			{
+				"d": "M48 0V1024M0 48H1024M176 0V1024M0 176H1024M304 0V1024M0 304H1024M432 0V1024M0 432H1024M560 0V1024M0 560H1024M688 0V1024M0 688H1024M816 0V1024M0 816H1024M944 0V1024M0 944H1024",
+				"tone": "motif",
+				"strokeWidth": 0.9
+			},
+			{
+				"d": "M73 80H87M80 73V87M937 80H951M944 73V87M73 944H87M80 937V951M937 944H951M944 937V951M201 816H215M208 809V823M809 208H823M816 201V215",
+				"tone": "motif",
+				"strokeWidth": 1
+			},
+			{
+				"d": "M48 192V80H160M864 944H976V832M80 912H272M80 908V920M92 908V915M104 908V915M116 908V915M128 908V920M140 908V915M152 908V915M164 908V915M176 908V920M188 908V915M200 908V915M212 908V915M224 908V920M236 908V915M248 908V915M260 908V915M272 908V920",
+				"tone": "motif",
+				"strokeWidth": 0.75
+			}
+		],
+		"bounds": [0.0, 0.0, 1024.0, 1024.0],
+		"transform": {
+			"scale": 0.421875,
+			"x": 40.0,
+			"y": 40.0,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Dotty",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 383.92,
+		"height": 158.0,
+		"glyphBoundsUnits": [46.3499755859375, -200, 2560.0622372834578, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+		"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png",
+		"repositoryRevision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}
