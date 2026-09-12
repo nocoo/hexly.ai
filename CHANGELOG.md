@@ -6,6 +6,10 @@
 
 - complete 54 project brand archives with preserved original identities ([77f5360](https://github.com/nocoo/hexly.ai/commit/77f53604cfb10fc1213afbbaf4cbcbb04453139b))
 
+### Fixes
+
+- stabilize local proxy reads and status browser time ([413f53d](https://github.com/nocoo/hexly.ai/commit/413f53dd48b1ce8e8dddd255aba5c44e9d29df07))
+
 ## [0.9.0] - 2026-09-12
 
 ### Features
