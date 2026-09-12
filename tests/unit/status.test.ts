@@ -50,6 +50,17 @@ const snapshot: StatusSnapshot = {
 };
 
 describe("status coverage and navigation", () => {
+	it("includes the three deployed Hexly sites at their exact health paths", () => {
+		const targets = statusTargets(readProjects());
+		for (const id of ["gecko", "neo", "wooly"]) {
+			expect(targets.filter((target) => target.id === id)).toEqual([
+				{ id, endpoint: `https://${id}.hexly.ai/api/live` },
+			]);
+		}
+		const wooly = targets.find((target) => target.id === "wooly");
+		expect(wooly?.endpoint).toBe("https://wooly.hexly.ai/api/live");
+		expect(wooly?.endpoint).not.toContain("/login");
+	});
 	it.each([
 		null,
 		"",

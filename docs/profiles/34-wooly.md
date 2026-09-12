@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/wooly](https://github.com/nocoo/wooly)
-- Website: No current website verified; navigation opens the repository.
-- Website evidence: Not applicable
+- Website: [https://wooly.hexly.ai](https://wooly.hexly.ai)
+- Website evidence: Owner-confirmed Docker/jp2 deployment, 2026-09-12; public /api/live (never /login) verified in docs/sources/status-targets-2026-09-12.json
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Keep family perks in sight: card rewards, memberships, insurance, and expiry dates.
