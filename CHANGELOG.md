@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.7] - 2026-09-12
+
+### Fixes
+
+- align hermes on herdr branding ([2fa67fa](https://github.com/nocoo/hexly.ai/commit/2fa67fa78d7cd2941dc75929c48fe3f232382321))
+
 ## [0.5.6] - 2026-09-11
 
 ### Features
