@@ -1,5 +1,3 @@
-export type Bump = "patch" | "minor" | "major";
-
 export function parseVersion(value: string): [number, number, number] {
 	if (!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(value)) {
 		throw new Error(`Expected an X.Y.Z version, received: ${value}`);
