@@ -1,0 +1,122 @@
+{
+	"schemaVersion": 1,
+	"project": "snaky",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "See the route before you go.",
+		"zh": "出发之前，看清流量去向。"
+	},
+	"description": {
+		"en": "Green snake in a natural coil with one multicolored forked tongue.",
+		"zh": "自然盘坐的绿色小蛇与一条多彩分叉舌头。"
+	},
+	"foreground": {
+		"path": "/logos/family/snaky/2026-09-07-01/01/transparent.png",
+		"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Meadow bends",
+			"zh": "草地弯道"
+		},
+		"description": {
+			"en": "Broad S-shaped channels turn at different intervals, following a route without enclosing the snake.",
+			"zh": "宽阔的 S 形通道以不同间距转弯，像流量路径延伸经过，而不把小蛇圈住。"
+		},
+		"source": "artwork/logo-family/snaky/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "a3a0adddb9f5e67a8ba61daccb69d2ef4ac5f23a8222a73fb26c86ecfad6b55b",
+		"layers": [
+			{
+				"d": "M-108 147C95 25 217 133 356 109S590-15 739 3C936 27 909 227 1121 159",
+				"tone": "motif",
+				"strokeWidth": 48
+			},
+			{
+				"d": "M-108 174C93 53 219 160 359 137S592 13 738 31C925 55 913 256 1123 187",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-112 581C96 428 251 561 219 733C181 935 8 961 25 1124",
+				"tone": "ribbon",
+				"strokeWidth": 73
+			},
+			{
+				"d": "M-111 623C91 472 206 571 180 729C147 922-37 955-18 1128",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M661 1124C496 904 737 832 874 873C1036 923 1142 790 1107 641",
+				"tone": "ribbon",
+				"strokeWidth": 49
+			},
+			{
+				"d": "M635 1140C457 901 737 803 883 846C1030 890 1114 780 1080 649",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-112.0, 0.845314004603182, 1123.0, 1140.0],
+		"transform": {
+			"scale": 0.3497975708502024,
+			"x": 79.17732793522268,
+			"y": 56.46754022267672,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Snaky",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 408.399,
+		"height": 159.96,
+		"glyphBoundsUnits": [37.499755859375, -200, 2726.0622372834578, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+		"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png",
+		"repositoryRevision": "5cd0790336d006f65555816fe29869d6e60ed376"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -329,5 +329,75 @@
 			"en": "At 128/64 px, the brass frame, enamel door and terminal prompt remain readable. At 32/24/16 px, the door silhouette and brass-blue contrast carry recognition; hinges, lens and inlay detail merge. Sidebar and browser specimens demonstrate scale; the source currently supplies a CLI and development manifest.",
 			"zh": "128/64 px 可辨认黄铜门框、珐琅门面与终端提示符；32/24/16 px 依靠门框轮廓和金蓝对比识别，铰链、状态灯与嵌字细节会合并。侧栏和浏览器示例仅展示尺寸，源项目目前提供 CLI 与开发用 manifest。"
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/hermes-on-herdr/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 1589,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Paired panes and a returning route",
+				"zh": "双窗与回返路线"
+			},
+			"description": {
+				"en": "Two unequal pane outlines and a returning route echo the open gateway and its terminal inlay.",
+				"zh": "两扇大小不同的窗框与一条回返路线，呼应微开的门及门上的终端嵌字。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens on a Hexly campaign canvas",
+				"zh": "拉丝黄铜门框、微开的深蓝珐琅门、象牙色终端嵌字与绿色状态灯，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "An open door to your agents.",
+				"zh": "推开连接智能体的门。"
+			}
+		},
+		"description": {
+			"en": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens.",
+			"zh": "拉丝黄铜门框、微开的深蓝珐琅门、象牙色终端嵌字与绿色状态灯。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥189px wide; lockup ≥199px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 189px，组合至少 199px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

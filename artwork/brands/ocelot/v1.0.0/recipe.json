@@ -1,0 +1,122 @@
+{
+	"schemaVersion": 1,
+	"project": "ocelot",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A quiet place for your notes.",
+		"zh": "让笔记，有一个安静的阅读空间。"
+	},
+	"description": {
+		"en": "Warm-gold faceted ocelot watching a colorful paper bird.",
+		"zh": "凝望彩色折纸鸟的暖金色碎片豹猫。"
+	},
+	"foreground": {
+		"path": "/logos/family/ocelot/2026-09-11-01/03/transparent.png",
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Ocelot rosettes and turned page edges",
+			"zh": "豹斑与翻页折角"
+		},
+		"description": {
+			"en": "Broken almond rosettes meet a fan of turned page edges, linking the spotted reader to its paper bird.",
+			"zh": "断开的杏仁形豹斑与翻页折角相遇，把豹猫的斑纹连接到彩色纸鸟。"
+		},
+		"source": "artwork/logo-family/ocelot/2026-09-11-01/finishing/03/settings.json",
+		"sourceSha256": "a264e8a33f3614062793395cc841c8e151b42fe49e1339a1156a13400be8d3f9",
+		"layers": [
+			{
+				"d": "M-23 92C60-9 174-21 239 57 M246 78C191 191 63 235-22 179 M28 326C93 223 199 217 249 277 M251 299C196 398 91 416 35 366",
+				"tone": "motif",
+				"strokeWidth": 9
+			},
+			{
+				"d": "M-24 87C62-14 177-26 242 52 M243 83C189 195 61 239-26 183 M27 321C94 218 201 212 252 272 M247 304C194 402 88 420 31 370",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M65 102C108 55 162 40 195 65 M188 94C157 143 106 163 73 147 M95 324C125 280 170 265 202 282",
+				"tone": "ribbon",
+				"strokeWidth": 7
+			},
+			{
+				"d": "M1070 530C951 612 957 713 885 781C830 833 753 858 691 1056 M1087 590C1005 639 1002 745 931 815C858 887 806 886 747 1065 M1095 658C1047 711 1040 776 986 836C920 909 851 922 806 1074",
+				"tone": "motif",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M1073 534C955 616 961 717 889 785C834 837 757 862 695 1060 M1090 594C1009 643 1006 749 935 819C862 891 810 890 751 1069 M1098 662C1051 715 1044 780 990 840C924 913 855 926 810 1078",
+				"tone": "highlight",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M853 558C896 483 964 451 1024 479 M1026 499C989 589 923 626 876 613",
+				"tone": "ribbon",
+				"strokeWidth": 12
+			}
+		],
+		"bounds": [-26.0, 1.2183343694114654, 1098.0, 1078.0],
+		"transform": {
+			"scale": 0.38434163701067614,
+			"x": 49.9928825622776,
+			"y": 48.60572933826259,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom", "lower-left"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Ocelot",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 432.52,
+		"height": 133.92,
+		"glyphBoundsUnits": [52.4498291015625, -14, 2913.308646824049, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png",
+		"repositoryRevision": "9d27eea583794ccda07dd2454c2a40302f86e227"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

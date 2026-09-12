@@ -1,0 +1,172 @@
+{
+	"schemaVersion": 1,
+	"project": "pew-game",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "A little courage on the prairie.",
+		"zh": "在像素草原，再来一局。"
+	},
+	"description": {
+		"en": "Walnut and brass prairie arcade joystick.",
+		"zh": "胡桃木与黄铜的西部街机摇杆。"
+	},
+	"foreground": {
+		"path": "/logos/family/pew-game/2026-09-07-01/02/transparent.png",
+		"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Prairie suntracks",
+			"zh": "草原日轨"
+		},
+		"description": {
+			"en": "A low rising sun, short grass cuts and joystick-like arcs bring the prairie into the arcade frame.",
+			"zh": "低低升起的太阳、短草线与摇杆弧轨，把西部草原带进街机画框。"
+		},
+		"source": "artwork/logo-family/pew-game/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "d97e5aa4d6be9fc54381b1d9d93b59e3c51377733f945d5bfbde491bdf498e0a",
+		"layers": [
+			{
+				"d": "M20 900a160 160 0 0 1 320 0",
+				"tone": "motif",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M-40 900a220 220 0 0 1 440 0",
+				"tone": "motif",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M-120 900a300 300 0 0 1 600 0",
+				"tone": "motif",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M60 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M143 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M226 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M309 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M392 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M475 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M558 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M641 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M724 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M807 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M890 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M973 995l8 -34 6 21 12 -47",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			},
+			{
+				"d": "M806 50q70 50 125 145M779 65q72 55 122 150",
+				"tone": "highlight",
+				"strokeWidth": 2.2
+			}
+		],
+		"bounds": [-120.0, 50.0, 999.0, 995.0],
+		"transform": {
+			"scale": 0.38605898123324395,
+			"x": 86.32707774798928,
+			"y": 54.284182305630026,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Pew Game",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 659.435,
+		"height": 133.92,
+		"glyphBoundsUnits": [69.499755859375, -14, 4551.17713729195, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+		"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/pew-game/blob/ee68b2dead3e5e698b2427d6a949e8e57c69d520/logo.png",
+		"repositoryRevision": "5200316563da59252505ece261388e4c89266017"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

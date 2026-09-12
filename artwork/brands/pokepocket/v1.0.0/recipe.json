@@ -1,0 +1,119 @@
+{
+	"schemaVersion": 1,
+	"project": "pokepocket",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "reference-adaptation",
+	"series": "character",
+	"caption": {
+		"en": "A whole childhood in your pocket.",
+		"zh": "把童年的冒险装进口袋。"
+	},
+	"description": {
+		"en": "Red-capped trainer turning with a Poké Ball.",
+		"zh": "红帽少年回头举起精灵球。"
+	},
+	"foreground": {
+		"path": "/logos/family/pokepocket/2026-09-07-03/01/transparent.png",
+		"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+		"width": 960,
+		"height": 960
+	},
+	"pattern": {
+		"name": {
+			"en": "Pocket orbits",
+			"zh": "口袋环轨"
+		},
+		"description": {
+			"en": "Interrupted ball orbits and short curved seams recall the trainer’s small, familiar keepsake.",
+			"zh": "断开的球形环轨与短弧接缝，呼应少年手中那枚熟悉的精灵球。"
+		},
+		"source": "artwork/logo-family/pokepocket/2026-09-07-03/finishing/01/settings.json",
+		"sourceSha256": "01278c0b97cab65eb2d4bb7a94fa0d088c1c20227e65f702a1ffb65ce73a05d9",
+		"layers": [
+			{
+				"d": "M-30 235a190 190 0 1 1 328.7 129.2",
+				"tone": "motif",
+				"strokeWidth": 3.0
+			},
+			{
+				"d": "M-100 235a260 260 0 1 1 449.8 176.8",
+				"tone": "motif",
+				"strokeWidth": 3.0
+			},
+			{
+				"d": "M-205 235a365 365 0 1 1 631.5 248.2",
+				"tone": "motif",
+				"strokeWidth": 3.0
+			},
+			{
+				"d": "M-310 235a470 470 0 1 1 813.1 319.6",
+				"tone": "motif",
+				"strokeWidth": 3.0
+			},
+			{
+				"d": "M720 820q115 -32 230 18M705 838q130 -34 250 19",
+				"tone": "highlight",
+				"strokeWidth": 3.2
+			}
+		],
+		"bounds": [-310.0028109515525, -236.65810434740808, 955.0, 857.0],
+		"transform": {
+			"scale": 0.3415012174360654,
+			"x": 145.86633734855758,
+			"y": 150.07624370402164,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": [
+			"bottom: jacket and lower forearm continue naturally through the viewfinder"
+		],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Poké Pocket",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 796.738,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 5531.917342476224, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+		"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+		"width": 960,
+		"height": 960,
+		"sourceUrl": "https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png",
+		"repositoryRevision": "019798f1c8fae7a6e7c0beb2368279c9980c7188"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,126 @@
+{
+	"schemaVersion": 1,
+	"project": "xray",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Look a little closer.",
+		"zh": "把动态看得更清楚。"
+	},
+	"description": {
+		"en": "Multicolored butterfly with complete spread wings.",
+		"zh": "多彩展翅蝴蝶。"
+	},
+	"foreground": {
+		"path": "/logos/family/xray/2026-09-07-01/01/transparent.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Wing-vein panels",
+			"zh": "翅脉分区"
+		},
+		"description": {
+			"en": "Unequal, interlocking wing panels follow the butterfly’s veins without repeating its colored silhouette.",
+			"zh": "大小不同的翅脉分区相互衔接，沿着蝴蝶的纹理展开，不重复彩色主体。"
+		},
+		"source": "artwork/logo-family/xray/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "f95447c958be57bafabe94f61dfd5776e4ef655220b8bda8b487172284ada271",
+		"layers": [
+			{
+				"d": "M-80 88L384-77L215 314L-80 467Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-80 479L215 329L302 390L82 703L-80 706Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M395-75L529-75L753 188L550 375L333 234Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M755 192L1120 63L1120 276L860 480L668 397Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M783 761L1122 605L1122 798L873 1108L642 1108Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-78 880L295 749L468 1104H-78Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-75 475L219 319L336 234L550 378L755 191",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M643 1106L788 754L1125 599",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-80.0, -77.0, 1125.0, 1108.0],
+		"transform": {
+			"scale": 0.35850622406639004,
+			"x": 68.68049792531122,
+			"y": 71.19004149377594,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Xray",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 311.593,
+		"height": 158.0,
+		"glyphBoundsUnits": [24.4498291015625, -200, 2021.540498153023, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/xray.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/logo.png",
+		"repositoryRevision": "16175dc87ef406e8cf3343ab8808b60e8f53cc8a"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

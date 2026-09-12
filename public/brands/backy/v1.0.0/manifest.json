@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "backy",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/backy#brand",
+	"root": "https://hexly.ai/brands/backy/v1.0.0",
+	"source": "artwork/brands/backy/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/backy-family-2026-09-07-01-01.png",
+		"export": "/brands/backy/v1.0.0/official-logo.png",
+		"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+		"bytes": 2447370,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "49f884dafacfb6da547e5c951c5ee9fe475828902dcb703aa26461125e2238bd",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/logo.png",
+		"sourceRepositoryRevision": "5b23349c94ac6778f2242a857386e8b01dac4f1c",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/backy/2026-09-07-01/01/transparent.png",
+		"export": "/brands/backy/v1.0.0/logo.png",
+		"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+		"bytes": 2447370,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "49f884dafacfb6da547e5c951c5ee9fe475828902dcb703aa26461125e2238bd",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/backy/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 52024,
+			"sha256": "9561d2857880c4aed5c5dc2fa8c0ca6a6c9cbc1ae8005f739d5714732d343434"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 89175,
+			"sha256": "97d9041a4b77a68b07db620791babd4aba65c01cc7b5fe0398f293bbad9bc272"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6443,
+			"sha256": "20a6b941b7d9cab9b13b3ec1485b218414f8895ff231433387cafdaa754306c7"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 627983,
+			"sha256": "8acb2464d27bf4e3509613ed955c04a6de313aaf2587ad5ede7e8e3b6ffbf42e"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 56954,
+			"sha256": "9cb4a8da7bf8550f16f2ab640f538c332b63a61facbd8cf659fbcca35b5fc1d1"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 42734,
+			"sha256": "35c536762794c69386ed7ac0d415374078b9ef3b7ba494651adfe17d6f05db42"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 43094,
+			"sha256": "bc7045f54477531b31e5117930d48507e53bd5ff0d655de4d4a86b4467ce6e59"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 630009,
+			"sha256": "cd2fd791d9679a3a419e53c3dc058e08d994558881586af031fe63540236460e"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57234,
+			"sha256": "ea3fd54ede91a3cc87488bc37137dbc5be23d069d9296b97909bc5cbb0e28d6f"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 63727,
+			"sha256": "087c5cb13e8ca7e1fffc081420b1f8c9183e8a135ce411d6d77e36a93c0a62a7"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 212577,
+			"sha256": "d743b403282cc74e48f2b71d939f77c891fdb728dc3fd31b96b833700c5a4137"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2514289,
+			"sha256": "390140806e1f9454eaf5e6e0350a40ef39a83ab266447c783eec7e0971b1ad78"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 376202,
+			"sha256": "185e2295b49dfc531dd5298bce3a186aee253b7ec0b83ab715688b02424b4856"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4589842,
+			"sha256": "08c74ba1a809f284d9a6364b626c07e7598f584383fcbac3ed952dd43d226d0f"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "b8bf6ee29f57be0c5b2fe65bd266f115995b3df655867c86c1787fbae8ea8b09"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 136465,
+			"sha256": "7ddff8c4ae83c14352ea0448228279565f2d12a9d671ed7635f9bacf35abbe48"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 135884,
+			"sha256": "9888292b17b1cfbb0fb49a344021e307512f0a86c73fb91853bf6bb7fbc45d52"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 684123,
+			"sha256": "b0dcbf3dbab2acf6a7a4db7ca647f21a0820cd7c20f3f1bdd0934090243dcf8e"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 684123,
+			"sha256": "b0dcbf3dbab2acf6a7a4db7ca647f21a0820cd7c20f3f1bdd0934090243dcf8e"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2447370,
+			"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 684123,
+			"sha256": "b0dcbf3dbab2acf6a7a4db7ca647f21a0820cd7c20f3f1bdd0934090243dcf8e"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 17320,
+			"sha256": "059af4f59aca815a86af4f21aee466a90f5e6a8a627816f676800b032d72e68a"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 631,
+			"sha256": "e1c224af9875a81442287f3eb2684abd3bcffd62fcb5fa66e653271282101565"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1097,
+			"sha256": "7f482bd5dff64fc5ebbda60b804895a19068a169912f9ded93261bca7e1ea7a2"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 61353,
+			"sha256": "239d982cda91a311c6fd81b69238a7ce2d38da6785dd07cfce73f3bb656ea5a8"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1649,
+			"sha256": "59dd77ecdabb820c156269ebce15a32e140f41b881595ce66f31e23646865f53"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3068,
+			"sha256": "26c2430b913f29b83acdf8997cd6c8bdef7fae890565a73eba71630e1fb72aad"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 206115,
+			"sha256": "96b4f5ab1b0c2fc7b12db54db2024638f5e33abb49329b8d4543c9a9af0ec83b"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5052,
+			"sha256": "8fcb8bb332e8eab1699d0a0a401eba0aee69735b343056b764205984fbe27024"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2447370,
+			"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2447370,
+			"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2447370,
+			"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4459,
+			"sha256": "98e81f77eaf9f9d9e938dc56cda28dbb177d23eb36e3ec43068c7b2610b35ff0"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7807,
+			"sha256": "95d455cec0e195463d21981c50f3ed6c097b35469c76aa90004d0732a23abd55"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15227,
+			"sha256": "cc3de3b59f280fbfc4aeec58af7ed7a7d9be34106122e3f8ca4b5c7bf2b5845f"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10308,
+			"sha256": "33fe9adf669dbe9937452239610a5831b996d90bfff6df4ed3c3f2dbd1ca4411"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 910,
+			"sha256": "03097c04feb279dd402fc992b1ed73310e83edd79685ed7b8eb1b6b8213b0637"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8734,
+			"sha256": "9a362ff5dc6d48712470eff083232acfbea41127a4ebfb29bfb7e60901f34b62"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 911,
+			"sha256": "d1252ce142f057c90d32471ed9fa0184343608287917c1517470c04c571328e0"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3285,
+			"sha256": "924dc0a43003a4133f69193dc711ac779cefd1bbdcd18c81503a23a68f2a8b51"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2296149,
+			"sha256": "1f22de82fcbb54af780cf0ecd2cca6db01349172939450295843152e8dc9f3e1"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7520,
+			"sha256": "68bd9fdede3b0d6663ffe80177c6c39e541e266d46b93cb214f1c5af26071969"
+		},
+		{
+			"path": "/brands/backy/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7520,
+			"sha256": "08e9efc60fd72a7db75de3b61652052a175b4dfa10d37208ec95f5e985f30f17"
+		}
+	]
+}

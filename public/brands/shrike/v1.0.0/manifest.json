@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "shrike",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/shrike#brand",
+	"root": "https://hexly.ai/brands/shrike/v1.0.0",
+	"source": "artwork/brands/shrike/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/shrike.png",
+		"export": "/brands/shrike/v1.0.0/official-logo.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"bytes": 3750012,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"sourceRepositoryRevision": "0fec187fc22742664925897400d0c1a62b2478bb",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+		"export": "/brands/shrike/v1.0.0/logo.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"bytes": 3750012,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/shrike/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 58488,
+			"sha256": "c6a47d77be58c8bcfdc14ceaded1200cc4d0f2224490897c202de3cb7c83a2fb"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 124601,
+			"sha256": "6cd38d7b12adf17c4f2e90cc6537694f3320d6afe2781c69823b7431016d4e82"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6381,
+			"sha256": "e6bc3af199b3b92e438729a6dea39360c57dc281db17a431369196d32ad62ae8"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 944885,
+			"sha256": "0c296bc67821bfb05d965439bbf90c1779a5fac7b364fb1acf243fe6269ba8ac"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 53628,
+			"sha256": "dd70182d2907228dc7f99d06028691856c061e43e7ef50d0fb98bf9e4a28a590"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 38122,
+			"sha256": "bc0f3031461f6cb70d6853dfff8036a84386dd7670dd8617a3de52f2c0c647c5"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 37654,
+			"sha256": "fadd6bdda3e8b256a4d1e622ca5d31b9ae492ec888525cd90427c3e430c2fdff"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 948761,
+			"sha256": "df5140118ca4f2c6cd28fe6fc9c7b4fff7df2f04b9cfa458d8e78ede5cb8fb28"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 52500,
+			"sha256": "2b5ff75a0495066e834626eaf3cab5eaddd34b6d9c2f95909a52df309438b950"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 69173,
+			"sha256": "882177255584fcb917d782318452cc26beeaacf974ce0029863420ca59b71ca2"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 288665,
+			"sha256": "6d6d789268078992899a307f248ddddcef33253aea340d8430cab6507293d04b"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3762864,
+			"sha256": "36e244fdb94e0c0af702158415aa14d4062824f68f21d62c4bae49de47927f58"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 406982,
+			"sha256": "97cdf31d4649c2f2948230818a2062c3277993ee6a3af5b64ce33cbc8a93355c"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5313092,
+			"sha256": "8d394f7cbade80f4f03e588773494e53719df1232cc94908cf0bad9296ab4c74"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1755,
+			"sha256": "20d319057979c97759c7792011c9a6aa8bf917f336bd344086662168205bd638"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 186123,
+			"sha256": "bb48772686b1b86f28da4c405aa016b2d6ce74b0eab2f2aca98149059f9e86fc"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 185840,
+			"sha256": "05af661c4a1e3ef24a4fdb669a9e0aa4309526b0d2172351e38eabffeb619b53"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1092185,
+			"sha256": "3146ab72cca6d4c3a07566e712d1995e5898bd6cf1af2ba871d9848ac00bf0e8"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1092185,
+			"sha256": "3146ab72cca6d4c3a07566e712d1995e5898bd6cf1af2ba871d9848ac00bf0e8"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1092185,
+			"sha256": "3146ab72cca6d4c3a07566e712d1995e5898bd6cf1af2ba871d9848ac00bf0e8"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 25954,
+			"sha256": "cb8d5d9a2a0d869b8caee1df5bf68e008f42bf12bd1824433dab938a693b909f"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 841,
+			"sha256": "752b86a14c33f5cb819bd74cf5ca9414e66992c4498d6f5b7d22e4db4e3b6629"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1531,
+			"sha256": "1c00918f8601879641742243a30fdcfb8a88f60fb3e58fd6b01cab677e7fdfb4"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 82646,
+			"sha256": "9f4cc3272693d4d22c0a9fc8288039668f069500a16f5baf31072c2495917434"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2426,
+			"sha256": "033dd0bd392a252ce8ad26596cf3c77d401a538bb96695b9a8e660ce12ecde79"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4773,
+			"sha256": "e1776cc4cf91980be047498deaa3b052bb8449982b30153e8397cad0942faf66"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 288314,
+			"sha256": "d82cfad231382f06a2990ff6b97772e802b227160b8a298449a6e44574536bf9"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7859,
+			"sha256": "726cfa6c621acda0f2c9184bf31ffe0ef6d74eee5dfb9f69d0e467fe97234df2"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3750012,
+			"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6125,
+			"sha256": "da4ecf13592bd5839587364ab75d025ee71dda065a606c98842e5bc00c5280a2"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10447,
+			"sha256": "8f57ba5d06edaf6fd5d84e0eed3b6f81beacd47827235dbc7e2f828451dfd15f"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 12513,
+			"sha256": "b0f0ff2ddca240707e13b712501440fe2e7dd7565545e4755886ab462ed15e70"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 933,
+			"sha256": "be2aa00398a69e8ed0db75c0fa196f6e8e4504e802f088bebd04cd63bdd2ea7a"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10365,
+			"sha256": "72fa8fec978256d991ef288f236bd9527145658fa8d23f6072c3f578825d6d86"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 934,
+			"sha256": "29adca9986305d12c2633be642773936235952645f70b1531da30ee5ae9476ad"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3120,
+			"sha256": "504f96b9c82f894c7aacdf9d6016c6aa9e2cf4cbd2c3ee06f84120c1cea0d313"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3661275,
+			"sha256": "81c75adf27b3ba51f7077324af7a8cb5395299274df9644afabb0509dff74acc"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6783,
+			"sha256": "b6fffec128e3da61b3cabe6f0b6a50d5a5febfcb572ccb7fc2a430f2b07f955e"
+		},
+		{
+			"path": "/brands/shrike/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6783,
+			"sha256": "27e357a3dc0893472e8285ca032b89590887f49d30b09700f0aacc163978526a"
+		}
+	]
+}

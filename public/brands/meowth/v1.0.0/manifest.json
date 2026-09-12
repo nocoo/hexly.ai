@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "meowth",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/meowth#brand",
+	"root": "https://hexly.ai/brands/meowth/v1.0.0",
+	"source": "artwork/brands/meowth/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/meowth.png",
+		"export": "/brands/meowth/v1.0.0/official-logo.png",
+		"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541",
+		"bytes": 3003934,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "35b79c80456e1e3b9580f9eb61008ea5bda18714c254fc7d948dd0b296b18387",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png",
+		"sourceRepositoryRevision": "15b4d902c71ec6184c7220f0fb50a29ca87e080d",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/meowth/2026-09-07-01/02/transparent.png",
+		"export": "/brands/meowth/v1.0.0/logo.png",
+		"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378",
+		"bytes": 2779031,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "1b4e8a6eae1cc907d174149e820446ced5043f2f6491484ebdda588c9338d2cb",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": false,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "review",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/meowth/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 56685,
+			"sha256": "d388e459218c50cf798adc1cc2321848ad32ebec8b135c2195dad6c39ecd0ecd"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 116657,
+			"sha256": "63bde397960f63508e61ce826d39a529628a3ab56072e063fc22373c4d18daae"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6561,
+			"sha256": "386535518e3e8e1fa0b2cc3e7f58114be7a0355a2dab968c83a1d255e7aad333"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 743887,
+			"sha256": "12f3787571481c190610b81c9510a3c1cf2b8fefad252e34123d5e22177d136f"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 66952,
+			"sha256": "3ad7ca5b33752a20b28911d8ae8a1062d83c2f469c67f87cc2185da69ad74b3e"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 52470,
+			"sha256": "ea639e3d61ea56213c2bdaa29f32f88cd46f4ada61bd43d61ecc8cd2b9ee75c6"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 52100,
+			"sha256": "c129d967f93efa5e7cdddcfc602a19d13a8980cc0a14867e3da2cde611187ea2"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 740581,
+			"sha256": "86db2e02a514773510cc26e3661efa405902efcb0db1aa523fadefa112358e5d"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 65972,
+			"sha256": "dff50301e225ca419e512ba4986f476676d6da100101062ced8d58ed6f9b27ec"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 69115,
+			"sha256": "6ea055c8fdba2b3c095d6d69259604eb3b5650a5d7add0edfaea73ef4214490a"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 264425,
+			"sha256": "c8bf486fefa57be9874e872775230f52d5a801f9a8c8fd09642c36cdfa27786f"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2817646,
+			"sha256": "62c62496232bbfed1f397875d4eb1db028198bb47c14426c063018d2e6a9ee08"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 393566,
+			"sha256": "fb0f39252e010b2fed0df883bbcd6d0c43f8dabba8b204fe95d8a01938e8ab93"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4479655,
+			"sha256": "2a6411110cd68b6a5b38bbefe9325d515276e7f50ec257d8c6a5520bc6d4b10a"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "a8070ab9b1b18a5d1f8ebcf04a130469363816494c9813be627b10cb8c3557d6"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 180672,
+			"sha256": "a2cebf35ab5c8c7b6fc869facdbf5d833b055c16747ead0f93e848bd0273feb4"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 180998,
+			"sha256": "bfeeb43809aa8fb4753b83fca88dc6d23512e55274031d84d573ee06ab534ff4"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 821815,
+			"sha256": "60ae75c6848d1a97440cb3deec21955a444b4a6a5ab2ea7a56849e8331b683dd"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 821815,
+			"sha256": "60ae75c6848d1a97440cb3deec21955a444b4a6a5ab2ea7a56849e8331b683dd"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2779031,
+			"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 821815,
+			"sha256": "60ae75c6848d1a97440cb3deec21955a444b4a6a5ab2ea7a56849e8331b683dd"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 22991,
+			"sha256": "3159c1b3bfe931d7066d39427c7617b54be91bb947252ed33065d2b16ff9849d"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 742,
+			"sha256": "27fcad007b317072926b23d480371bd74a2950a342ec3fb62825ac954d800259"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1360,
+			"sha256": "f6186dbe1089a920c7b3ca01c8acb2d73a64582bf36fbab6c388e08c550ee224"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 80035,
+			"sha256": "c39d35b1634b601b02c790c2e021cb895ec72df7e2f467d720fc86638056e38a"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2083,
+			"sha256": "6b6c4a3954ffff9183ba019ef4ea64988cb2d56084d3ebd7b9243b2843bca5ba"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4050,
+			"sha256": "6be54518415f10915ce29277a75a38aaf362032fcff999b010011451124468d5"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 259577,
+			"sha256": "aac64bdc62a6b287df23cef05c2c38f09279fca0476cc163a1157a8c260cc62c"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6654,
+			"sha256": "2f41584d8c129c79f77604f4c7073f3ba3f6c039690faee6fe54b32af4eb4247"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2779031,
+			"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2779031,
+			"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3003934,
+			"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 5043,
+			"sha256": "87eaacb1f1afd3fe0f7c31f327368f9b962af8f8166c7e4d44de836d28a67aae"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7758,
+			"sha256": "e3e78a4e166d819f15a79f4407f41ccc25ee1f89b56a0c3adbeb7e16adfe485c"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15822,
+			"sha256": "b2e74dd5ff63224ae1e6e4942b478cacf05a8e4f5d4a05f163c3b23903d13506"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9631,
+			"sha256": "437cb4608f78a76b434d1247fc63bc584c912025d8eb91b38f3916137cbe3364"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 970,
+			"sha256": "beb18c48d7797ee454c16efe2fa3f53c5cb41da8ae687da98faf6ec321f9441f"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8500,
+			"sha256": "47fb35cf1f53e2ae9a84e971986b3df5883c8eb4b410e3cb7e2975974de9b23c"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 971,
+			"sha256": "19f56b54c71526487f4319433b3f3cd13b3383dffabdf4faebd2d6593f3f38ab"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3584,
+			"sha256": "3fae8c2bfe97d36e1afb46e072ee45aa042b469f31bc3bfd2724274f32946b22"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2582419,
+			"sha256": "88ef7b2c8ba5a731b2b239731232a6c5e960f98741cbcf3d7708ba26c7eaffc5"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5609,
+			"sha256": "84556f04031d8d091ff825ef50823350f1a7f834e76fc86ab7b65c39b4924bbc"
+		},
+		{
+			"path": "/brands/meowth/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5609,
+			"sha256": "43804e0b1cbc0f6064f877c724247cf7aba6cb9c0aa6fd4840aba3d9c1da7677"
+		}
+	]
+}

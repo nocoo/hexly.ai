@@ -1,0 +1,114 @@
+{
+	"schemaVersion": 1,
+	"project": "dogfight",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "One turn changes the sky.",
+		"zh": "一次转向，改写天空。"
+	},
+	"description": {
+		"en": "Titanium F-22 desk model caught in a banking turn.",
+		"zh": "掠过镜头的钛灰 F-22 模型。"
+	},
+	"foreground": {
+		"path": "/logos/family/dogfight/2026-09-07-01/02/transparent.png",
+		"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Banking vectors",
+			"zh": "盘旋向量"
+		},
+		"description": {
+			"en": "Three swept flight lanes cross short altitude ticks, following the aircraft’s banking turn.",
+			"zh": "三条掠过的航线穿过短刻度，顺着战机侧倾转弯的方向延伸。"
+		},
+		"source": "artwork/logo-family/dogfight/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "72536777887bda24d81785479b97167748f1cfed247557d0c731b39490d8df31",
+		"layers": [
+			{
+				"d": "M-100 820Q350 750 1100 50",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M-100 905Q350 835 1100 135",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M-100 1010Q350 940 1100 240",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M85 135l42 -24M100 159l28 -16M116 183l42 -24M886 804l42 -24M902 828l28 -16M918 852l42 -24",
+				"tone": "motif",
+				"strokeWidth": 2.1
+			}
+		],
+		"bounds": [-100.0, 50.0, 1100.0, 1010.0],
+		"transform": {
+			"scale": 0.36,
+			"x": 76.0,
+			"y": 65.20000000000002,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Dogfight",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 582.34,
+		"height": 158.98,
+		"glyphBoundsUnits": [
+			46.3499755859375, -200, 3977.352125084919, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+		"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+		"repositoryRevision": "b5ab075a963a78516aaa351d6ca0178c64994729"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

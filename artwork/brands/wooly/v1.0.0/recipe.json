@@ -1,0 +1,117 @@
+{
+	"schemaVersion": 1,
+	"project": "wooly",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Keep the good things in sight.",
+		"zh": "让家人的权益和期限一目了然。"
+	},
+	"description": {
+		"en": "Cream faceted sheep with three curls, a wink, and a pink tongue.",
+		"zh": "奶油色碎片绵羊，保留三缕卷毛、眨眼和粉色舌头。"
+	},
+	"foreground": {
+		"path": "/logos/family/wooly/2026-09-07-02/01/transparent.png",
+		"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Wool cloud folds",
+			"zh": "羊毛云褶"
+		},
+		"description": {
+			"en": "Large, uneven scallops gather into open folds, carrying the sheep’s soft curls into the margins.",
+			"zh": "大小不一的圆弧聚成开放褶线，把绵羊柔软的卷毛延伸到页边。"
+		},
+		"source": "artwork/logo-family/wooly/2026-09-07-02/finishing/01/settings.json",
+		"sourceSha256": "558420063d8091646e32f6b6f2ca1158ac0af03489d62aa158251142ef7a113b",
+		"layers": [
+			{
+				"d": "M-90 425C-3 407 4 343-25 305C65 343 131 281 114 216C198 245 241 191 222 122C312 158 371 82 340-42",
+				"tone": "motif",
+				"strokeWidth": 29
+			},
+			{
+				"d": "M-91 443C16 424 22 344-7 315C78 359 151 280 133 228C217 258 262 189 242 135C330 173 391 83 360-44",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M326 1091C337 1011 407 973 457 1018C436 923 510 875 573 908C566 824 637 789 698 833C722 748 808 744 854 803C892 729 981 746 1017 814C1060 785 1100 802 1126 845",
+				"tone": "motif",
+				"strokeWidth": 34
+			},
+			{
+				"d": "M344 1094C354 1026 414 995 474 1035C453 938 519 896 590 926C583 841 646 810 708 852C737 767 812 765 859 823C897 749 978 766 1024 833",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M779-93C759 9 806 63 877 43C864 131 938 169 1004 128C1007 210 1075 241 1131 206",
+				"tone": "ribbon",
+				"strokeWidth": 37
+			}
+		],
+		"bounds": [-91.0, -93.0, 1131.0, 1094.0],
+		"transform": {
+			"scale": 0.353518821603928,
+			"x": 72.17021276595744,
+			"y": 79.06382978723403,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Wooly",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 412.144,
+		"height": 158.0,
+		"glyphBoundsUnits": [31.7498779296875, -200, 2747.0622372834578, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+		"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/wooly/blob/e516e1fbcbd146fcda6b80cf071bd5367e611afd/logo.png",
+		"repositoryRevision": "e516e1fbcbd146fcda6b80cf071bd5367e611afd"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "surety",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/surety#brand",
+	"root": "https://hexly.ai/brands/surety/v1.0.0",
+	"source": "artwork/brands/surety/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/surety-family-2026-09-07-01-01.png",
+		"export": "/brands/surety/v1.0.0/official-logo.png",
+		"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+		"bytes": 3212224,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "d66ac892d3346d06bc9333c664a89795b9f83ad324d78905e44e879cc0333783",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/surety/blob/f257e0977e85358f9d02ed3f79a9fad8862e5117/logo.png",
+		"sourceRepositoryRevision": "f257e0977e85358f9d02ed3f79a9fad8862e5117",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/surety/2026-09-07-01/01/transparent.png",
+		"export": "/brands/surety/v1.0.0/logo.png",
+		"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+		"bytes": 3212224,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "d66ac892d3346d06bc9333c664a89795b9f83ad324d78905e44e879cc0333783",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/surety/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 62777,
+			"sha256": "402c62653325a061e052110628da51d2a932033b5e65070586f1a0a0b544e37a"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 129086,
+			"sha256": "8621ceee71bd8e35ddbc1985f421424eaa44a412cce5eef9f46024fe003abc4f"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6435,
+			"sha256": "1b48d13dd6f039af514bc1ecd0fd0328b259bf1c2041de38ef4a28a215fa0252"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 854996,
+			"sha256": "76cfe6ce72fb7a96ab94a26b9fa0a14d6db24c6ea1053ec96945cc8c9a872f55"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 76056,
+			"sha256": "83f1a37039e75d88d7171d2f4b3e1c29bf135a546299c36badd147680c979949"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 58220,
+			"sha256": "577f4bf25ed00158bdeec122ea6e1b33586226c1148569a770348bb50552d2bc"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 58710,
+			"sha256": "4ec35111211c38769a357d12aa7a81a7e181d141b0ab15ffc75197117e2e7dbc"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 855373,
+			"sha256": "ca1298c7fce9e842622200ff67e8666187cbe5f1639e70ad48966f4e50cd3e47"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 76386,
+			"sha256": "581b0c7fce74b57b19453650f6d3e1039f667fda89dc34f715297441c3034b61"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 76638,
+			"sha256": "cd56b1ec824ba3294e8d5ab7462109ea9030b311b0a5d6ad8a86b69bedf199b9"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 292153,
+			"sha256": "a68c36255fa3a03bc8fb7cde1c204f1af116a5ea87b7dde227c5af092fad50d3"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3253537,
+			"sha256": "d95e50bf928273f70e99ae3a51483009faa7827ec5a84f35a29f9728c2f0dad8"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 432396,
+			"sha256": "8d43dc2292ba7d46da307ceee5ab3e5e6dd5c69e2ea50eff04a7fa67ab16dada"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5015552,
+			"sha256": "587a4c30fd62c32927fc51b03911ad3dd287de18e3e1731ca05d8eb841c68c54"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "5481924268c606223a97daac66afb5a737be11c16a434af5a80729208ae22047"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 191096,
+			"sha256": "a26592192f6a821376d698dc30aeeb81d87427f12fa3924f987c7a9e6ae8016c"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 190843,
+			"sha256": "e5f042b1eac1d4fe9b825a25cfe56bcbb22d62d48708a25bcdfdd89d11f9235d"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 921888,
+			"sha256": "ea6ba89772870c7d501f8677fe0262d59a49c57aa2baa670510578c9ef8e5d54"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 921888,
+			"sha256": "ea6ba89772870c7d501f8677fe0262d59a49c57aa2baa670510578c9ef8e5d54"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 921888,
+			"sha256": "ea6ba89772870c7d501f8677fe0262d59a49c57aa2baa670510578c9ef8e5d54"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 25317,
+			"sha256": "2811007ec59a3d2a54c9cfcf6442c1b979ca5c952b0f235d47d10e02f14e7d2b"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 785,
+			"sha256": "db7d65b94336b65f838efa8dd1a9f8e8c4b2060e4da868d59d8ae44410602632"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1463,
+			"sha256": "df009b944811db71e12d3c61635ebfa7352b0fc6b3f8a732b2af8f92cbb855fe"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 88864,
+			"sha256": "48ce77cff8992e1a30eb05734138e23c546e724ed3fc05a75d521c4b8db94e7b"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2284,
+			"sha256": "f4d345afd7d10e7cda6503da60db99a6e630afef8e7ef0fc21997e67ac882cca"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4409,
+			"sha256": "d3adfbe480d8d6831b19562612e03d7350984507fc43448ac96c59e0fc4bcdd5"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 289151,
+			"sha256": "0c4fc193db0300e51f85ae4760d0bf1075e6fb6dccc93ed84c26840f8d02e7d0"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7325,
+			"sha256": "51f49e47f806d6276ed26f3eb747fbd8fbe167ede6dacba9844471f5004ae61a"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3212224,
+			"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4380,
+			"sha256": "a17f59cbc3dd57843a43353183fb11c67aa9e1149fdb9380a0568e670904d718"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7750,
+			"sha256": "87cc1edbffb759d7d183dd3de0eaadfd8668fc347cbd4c3252fa9bfc27e93f43"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15099,
+			"sha256": "effc470b7d5a1fa77b29e0d77310d64a923d49c15b2d04b4a4d8e9b38fff30b2"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 22199,
+			"sha256": "96f58943583f20ffb4679b429c5bd77e72d2b692e5759399243d91f1e24d297b"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 858,
+			"sha256": "66dd03c6d74ecacf19e0cf64484dcecd4e63132820f44b1fd71bf9291f6a0d37"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 18837,
+			"sha256": "c41b3891f7f4a72ac9fecd88d948b3f620089999d702f64da05f2d305ee8593b"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 859,
+			"sha256": "ca57bb46ce609d638a31a889104a3a4122cfc8df8809311db8a11f19ff1cdd55"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3343,
+			"sha256": "638acf709f0a27252d5b3543374e2cd36e8b2243cd295813a677eb7232b33497"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3006181,
+			"sha256": "0b5d3bfdba1c4abeb7b6fe48128ca606af3c8886fba07fe8f22a4673e5931246"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7435,
+			"sha256": "260998f45474e425e63a336dc2f3c813dea875e4a0f47f37eb32ec5f28628611"
+		},
+		{
+			"path": "/brands/surety/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7435,
+			"sha256": "94e121dd97266b9c81191bf6971b6c890e538df836ec15fe0162c911bd44b72a"
+		}
+	]
+}

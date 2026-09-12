@@ -1,0 +1,389 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "pokepocket",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/pokepocket#brand",
+	"root": "https://hexly.ai/brands/pokepocket/v1.0.0",
+	"source": "artwork/brands/pokepocket/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+		"export": "/brands/pokepocket/v1.0.0/official-logo.png",
+		"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+		"bytes": 547985,
+		"width": 960,
+		"height": 960,
+		"channels": 4,
+		"rgbaSha256": "76708e8fe45e7fb0e0d2bbf96e61002ca6a4246b88b3a52a309192a69ff7540d",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 619,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png",
+		"sourceRepositoryRevision": "019798f1c8fae7a6e7c0beb2368279c9980c7188",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/pokepocket/2026-09-07-03/01/transparent.png",
+		"export": "/brands/pokepocket/v1.0.0/logo.png",
+		"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+		"bytes": 547985,
+		"width": 960,
+		"height": 960,
+		"channels": 4,
+		"rgbaSha256": "76708e8fe45e7fb0e0d2bbf96e61002ca6a4246b88b3a52a309192a69ff7540d",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 619,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "reference-adaptation",
+		"series": "character",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 1,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 1,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/pokepocket/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 45052,
+			"sha256": "f9a947464f77bbab4bd03b035002cfef8672cc9d13bfd6fa598749181cf3d4cb"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 86064,
+			"sha256": "98d1a0e3cb96d506e13120b0db2817e50c8c90ef85e5d4345361e1f041341588"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6385,
+			"sha256": "1192f806b15a97ee40e7646884919f598413f4edaf607a60eacdaf376c0f8088"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 648818,
+			"sha256": "7b3e8d418d51cf3782bd47c0f212a410080e6a43984656c35d347f3176c69c46"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 68204,
+			"sha256": "28c194e06859ae74585f89dafa713486bf5ae7d77377284250d0d35adb173f53"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 50228,
+			"sha256": "133fb68aaec03f97660672f72fb0efb248b3fac2595ac7b8504317021adabd90"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 55010,
+			"sha256": "6f31b53f93dc0e6619ee5b3a0be4d8a5684a2d51292fb3179a5621865d85706c"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 655512,
+			"sha256": "fad56b03145d97c3cd417c1f3bf0ba295b8f4ddd32d3b930feb50ffb7ffeab92"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 71684,
+			"sha256": "f2e56ef3fe62688bef434860b6acd9c57f801d4f356d4170ad6e115d1f681e6e"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 53825,
+			"sha256": "a1fd66abaf0ed9a7c7b4a203b0235b2b31a998a571fc121df6390e1d6c753779"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 186644,
+			"sha256": "f6bc869d743d92adba17d951de5381e118aca416cf316b7bf3e0036b41e9519a"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 554112,
+			"sha256": "d910ca00b50acc923aa696f6e1562d79d0db772f8a7a8f8873751046d94327c0"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 305856,
+			"sha256": "440bbedab1f2adaacedbfef7331c7ced41e7a9cf6fb8cacb30978fcc4e7f5d8d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 934771,
+			"sha256": "53346d03834b1aa20f454fef669c21a613fdd7a59f1960501b54ab57a722a621"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1688,
+			"sha256": "b197c64528a5e76c45a60d258dad0d935c24162cc5aa41b00cb6e4eee6d1dc0f"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 135335,
+			"sha256": "aa2df28ed8dfd50e1d510745d4a764c5db45ee39b2b13b2d0e61bf21d08b84be"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 134976,
+			"sha256": "921387e92bb3ced41f00f18556d02fd57cec2a9c20923d9b083e40c94ef725d8"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 547985,
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 547985,
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 547985,
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 17853,
+			"sha256": "10ab829d53982531e6cdee031c1a0e16f809a532c35273d7d65f82c67bfe1c7a"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 721,
+			"sha256": "bd96ef992ca5a73f56c8a25b60f8c2987b77999fbe1b2d5bd022551af6705267"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1263,
+			"sha256": "e2df0f10a13aa4f139143f13a03e128d2841d2d42398499cc5e7609ef6f72c25"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 55906,
+			"sha256": "98ccc0f7dbb1420304f0645663b21ef86ed9c554eb917c7dd8908f539b5d68ea"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1941,
+			"sha256": "43447dcf48f76794853fcf4087d2e6a9125424f670df1b15cc7f3ba89271a87d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3697,
+			"sha256": "62c161ec15e796cc7d4363b722d4b14118665c81adc143fca53414f0b7997049"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 183105,
+			"sha256": "67e4ea1ce8e92de91557652ff2af798f5e2fe77717f895bd8cf0c31ba60952ce"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5844,
+			"sha256": "1f2c5238fda6ffbb87eeb1c1bb10f41af15a15db3d7baa99cfb83862fd05ab9a"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 547985,
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 547985,
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 547985,
+			"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6460,
+			"sha256": "5410abeab78081e1a227223e31200a10d720cc5266c54bbbf74cc7ec613a7a63"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10510,
+			"sha256": "0f07bcef872cda415bac9f67463849bc8115cb5d63fd1f2cd8eaa2323ebecc4b"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8875,
+			"sha256": "56a760bae0448cbeafd7795b1531aa521410dcbfbb570868a5361f22a3e7f571"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 811,
+			"sha256": "e00f66dd6affc1f86ae992e0fdafa9780affe1dab62c733f7d4a5ac69857c3d7"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 7413,
+			"sha256": "7e573f53d8cb7f39bcf17686c2172d444c2681ff05afdfe1d62d405cc7cc8f0c"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 812,
+			"sha256": "11dd4b31297cc245076f2c7c0e83fd98afbe4a5a0ebe10d8e37c877c9d4e23ad"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3099,
+			"sha256": "f8a1d120f3c484aaceebdedd0d7c13bda84393ac24a83945cf73a0d9b2697e6a"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 503154,
+			"sha256": "db458322b5395edd6353fa0a8cc0e85b1ebf0f2db5e68f28f852626a28c58475"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 11431,
+			"sha256": "17b6449774aea45e6918d10fe2c64933c24d35b18c89edcadec61fd84e0b1fce"
+		},
+		{
+			"path": "/brands/pokepocket/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 11431,
+			"sha256": "0c6943e05c9e6f5d942e84fa3159cb607186b5c8f7e3ccf63d0465eafd40fac6"
+		}
+	]
+}

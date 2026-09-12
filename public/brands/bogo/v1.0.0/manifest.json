@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "bogo",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/bogo#brand",
+	"root": "https://hexly.ai/brands/bogo/v1.0.0",
+	"source": "artwork/brands/bogo/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/bogo-2026-09-07.png",
+		"export": "/brands/bogo/v1.0.0/official-logo.png",
+		"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+		"bytes": 3637079,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "0e65a5f9f626a218390f9e483657a774beb85b81abbdc43e751958194c12f384",
+		"edgePixels": {
+			"top": 0,
+			"right": 229,
+			"bottom": 1304,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png",
+		"sourceRepositoryRevision": "77e211a294a885fff2830d0aba2e48a10299dff1",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/bogo/2026-09-07-05/04/transparent.png",
+		"export": "/brands/bogo/v1.0.0/logo.png",
+		"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+		"bytes": 3637079,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "0e65a5f9f626a218390f9e483657a774beb85b81abbdc43e751958194c12f384",
+		"edgePixels": {
+			"top": 0,
+			"right": 229,
+			"bottom": 1304,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/bogo/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 60228,
+			"sha256": "93306ffe520aecff457e3063d2ddc2371eaca127dc8a2d6117672d46655fc98d"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 131956,
+			"sha256": "94054cda3a563032262a059d0b775b1aba550b08a5bdf3326939956a2bb173e4"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6505,
+			"sha256": "315080a8eeae1a29052cd2cdb8e4f784bf1d8e55c5742f99d278dee0825e7c2f"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 988775,
+			"sha256": "3207033f557eb301d178be262c0e71c425884da319acdcdb0e540710143b4183"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 68984,
+			"sha256": "b77af3b28959b098f8ac44ad4d8f43d1dffd9f2c1a4f72c1edc9b2a143ae65a0"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59732,
+			"sha256": "29380413cdcb8f44ace59e8ced619b70a823263fa6e4ee73a90a8cb76463d0ff"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 62264,
+			"sha256": "824669896e3fbc3256615b47abfa32d7b6d7cb3c9feb20097542050acda891ac"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 995911,
+			"sha256": "ecbe6d672ec5ce66d60ce03f58b39e456664c0130ec68f27d4d397c5f34abdfc"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 70698,
+			"sha256": "450f96dbf333d749c8ef131cfa89d9db7af6d40d37a137486b6e153f27d2f16b"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 72151,
+			"sha256": "1ad14d5fbb1b0b9b3b0181d5d7a470ec87a347da43ad963e48c7d074029b68b5"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 298226,
+			"sha256": "4c53200e6d23522ece1f0f86f38518cd7356c15fa6adeec459209d285b2025af"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3645585,
+			"sha256": "018131cfe8fc9a0b0e45fdf6945be276b9cf605b2acd8e0d94694ad955f2320b"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 405641,
+			"sha256": "6bdd14a414c9dcc3b17db05377364832d50d7392befee16d641f0d23f3cf43c5"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5154256,
+			"sha256": "4063fb82588f5fe1221b32e530fddfd979a7b0414ffd0a49c896db6c020940e6"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1791,
+			"sha256": "f1727229849380b2a6ff243d9d4970610a74ed2b23675438292f6601cd6be312"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 195434,
+			"sha256": "4cc8414d51f579652c4acb848daa8776f06875c7a3617f55de950d6a5086013a"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 194692,
+			"sha256": "ca87b6e888f7bcde7b9247a99f31a01e509c3f55dcd845a30b332c5a4fea3fb0"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1008723,
+			"sha256": "158be191b46446ab3a894e809a706619aa7560fee6bea4ec43f659498288b412"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1008723,
+			"sha256": "158be191b46446ab3a894e809a706619aa7560fee6bea4ec43f659498288b412"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3637079,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1008723,
+			"sha256": "158be191b46446ab3a894e809a706619aa7560fee6bea4ec43f659498288b412"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 26172,
+			"sha256": "3ce10e6ea77ba742776ecb3fab825bbfd47474829cc7363ffe0622fc55e48452"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 817,
+			"sha256": "4d13c469f3c95081a8f16b4778f1b395efb579a6040bd5ba483dfed1f060c8da"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1517,
+			"sha256": "8023b1f516bd6529ead011aec1aef499a450783aec11ac3185202df65132fc9c"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 89907,
+			"sha256": "d2185d7adc938ac8dc7d0d99f5e12904e95f4d1fb5dd3cfe63d862ac462dccd3"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2421,
+			"sha256": "9161288d494297330f01d751a200aafe15fd5ec47fab860f65147d565dc0ced9"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4746,
+			"sha256": "8483e07a1d37cee3479c4412fdcf6b369cc335611c9588657aa81a06252c0d92"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 299525,
+			"sha256": "2deaf4acae8e52b31e5b902376d31fd0721b3b666c276d052d2988bbb666fc84"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7791,
+			"sha256": "88624d6907665a1723a9012a9741ddd9620e152d5770568fd199a1d40dd89ca6"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3637079,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3637079,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3637079,
+			"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 2210,
+			"sha256": "faddb6d6a2223334b236066875fa91906f77456ca08bf25688b25e1a24b7cd3a"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7430,
+			"sha256": "0b97a61a9f2346095ea65198315a46e6a10554caa5673c5675a3ea4a8638a245"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 13033,
+			"sha256": "08e8a173e29514cfb76010be8906991c4b78a29995119e242f8eb42d8423948a"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 6791,
+			"sha256": "395b28bccf25545deb7ba2b8f50435bd706ae71fe15f13dd8ec1c0862fec9d06"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 904,
+			"sha256": "855da9c6090d5f7b278400b0f812622f714500ff925dbb67b99bf88de49592d9"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5754,
+			"sha256": "fc3ab66041d49fa63a0066a98c51248792891e401561cb885d5b6f54b6edc3cb"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 905,
+			"sha256": "42031baf31a277a477886d5c8a52b7317256cbc9cfb1f53bd568d84cf1edba01"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 4193,
+			"sha256": "d4dff85046dc4e738c69807e6e998b5d2007575a553fa5e490b0fcbee0061c27"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3414868,
+			"sha256": "b33c5429a4ef3b4825af89e7d8b7c81dd8c6c3797e9ebfd7089034857bff8275"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7059,
+			"sha256": "94cab9945463c29a17791a0f7d3b025f9fc29bb696fd5a6aa2bdc210e1baddbe"
+		},
+		{
+			"path": "/brands/bogo/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7059,
+			"sha256": "e85a7e9371bb47df17e94fa0a5424b2963397b52c4dff864b5540720ac21b260"
+		}
+	]
+}

@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "ocelot",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/ocelot#brand",
+	"root": "https://hexly.ai/brands/ocelot/v1.0.0",
+	"source": "artwork/brands/ocelot/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+		"export": "/brands/ocelot/v1.0.0/official-logo.png",
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"bytes": 4575584,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "8ec4bfdfbaa5d2b42f07ec1e9baf77ed39d8cb6e69d4c87c85ab56af41ee2e75",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1131,
+			"left": 607
+		},
+		"sourceUrl": "https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png",
+		"sourceRepositoryRevision": "9d27eea583794ccda07dd2454c2a40302f86e227",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/ocelot/2026-09-11-01/03/transparent.png",
+		"export": "/brands/ocelot/v1.0.0/logo.png",
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"bytes": 4575584,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "8ec4bfdfbaa5d2b42f07ec1e9baf77ed39d8cb6e69d4c87c85ab56af41ee2e75",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1131,
+			"left": 607
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/ocelot/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 66422,
+			"sha256": "f937e75de59b1319cbb136bb26d9dd6604502f894b11d5ec33a36668e2ce30f8"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 148129,
+			"sha256": "0e691880353a5ae1e237f0977141aa2e6f2e38a63ea4d992aad64eb11e91c0af"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6539,
+			"sha256": "4a26d3e1297b42ad03558eb5a10bd9cab304e3aa13e0629dbd9bf5429a959ca0"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1244794,
+			"sha256": "27605298e66ec1bf4e935371f3ce12f2dd7ca5cc288226bbdedf8e2163e5263e"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 97304,
+			"sha256": "54c8a8d9f1834014819ec119d9024658e554f3a24a1794a5972420bab9dc76e6"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 86326,
+			"sha256": "ed268412fb0445fa1080f9aee5e3f346af155fbdfb6a16df0101bace1eeca955"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 84844,
+			"sha256": "5d39e038bac9650e7ab3f83c128ac1d248e085d52d2683dee72a943c2fa5508a"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1242718,
+			"sha256": "7b6089e5af994d38c4c70ba96178c5c7beea316bfa94e645b6469845c58d5689"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 94652,
+			"sha256": "8fe7345745f2eaf3789b9c45996f5c733f3ae67f16f23f2556496856dcd6f52b"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 81694,
+			"sha256": "0db732b257e7f157166afe4808da411a2c7ad50453063eed4885fb60535564d5"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 361840,
+			"sha256": "e27c8d16f49da3fd489378ebc880e77f029b8f1225d6be2da53a743ea5f3e099"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4645047,
+			"sha256": "f0a61feb19eba52f3f1e4fba9d4ea9686e60b31494e275f1ae66399de7f3d313"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 477765,
+			"sha256": "538c4aefa371825b9ccacf3ad83e99ca79e49c9a6bab55c284705b2939cc22aa"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 6172345,
+			"sha256": "2ca4ee7de5f6906c527b0e22967bd7bea4604762c8d342d2300e2156049922dc"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "cd85134cc37fc42f0afc334cec2260939f00d959426be3abd33609acc0edb578"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 230622,
+			"sha256": "01e344b618157eb47facf1e23e52e1265493f5bce62bb16cd6c3559d5dde9085"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 230511,
+			"sha256": "2116ddd10024e4a7ccec2b249728aa7d989c2a349503ae4787bc90c348ee9650"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1250395,
+			"sha256": "8dd4a20944435ed27976ac8b4bca57a818bce3979b63f701c678456fa2c1718f"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1250395,
+			"sha256": "8dd4a20944435ed27976ac8b4bca57a818bce3979b63f701c678456fa2c1718f"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 4575584,
+			"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1250395,
+			"sha256": "8dd4a20944435ed27976ac8b4bca57a818bce3979b63f701c678456fa2c1718f"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 28615,
+			"sha256": "9d6fb8f40c3474ea1b6bd0ef8d5528705320f9de2e873d69f8ab0025e63d0f17"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 852,
+			"sha256": "d8ac156969c9ed7292f3a0d1d65ad573be0241e831ef369851dfbcd30441d835"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1550,
+			"sha256": "c73b6c42c6659eb88d0c5294c1cb824eeb7bf4ac7ac169c4ca088a4e61f2a9a8"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 103072,
+			"sha256": "86436c8e1289931108f4d68b7054b9dec5435223a82e75526ebf81b8d2793499"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2486,
+			"sha256": "c41a51c2d1a96bf8266acddda114fbae5428775d0b715bd11b2fb7f84417627d"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4892,
+			"sha256": "63e0b7ea7a7088fe572a557924b2fcb83e44f9213ab72ee07056c27627ca6b6b"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 356152,
+			"sha256": "b1e08b825c376a2098fc75e6935ff35b668efae1c26c5873392236dddfbcb7f2"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 8110,
+			"sha256": "37a063ecb9a98e2f9b506533aa380f8073c78ed190d8888841923591696b314d"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4575584,
+			"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4575584,
+			"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 4575584,
+			"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 6274,
+			"sha256": "33e28033d18fcef5815ee8a8fb5fbaecd780384652eecd90a3abf3ad0b6e5acc"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8027,
+			"sha256": "a764e4285644f8ee16176bc181ec742dbe106bfadcd88451856ab079b1edc945"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 17080,
+			"sha256": "6af5b90a101743c0614c85eb42cab3f1e7caba21e1732a8d0881f9b66bd5fe86"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 11070,
+			"sha256": "b0b1991ee36a331349cceee8e4417666100a615d50e2b223f53e6b86c9529fe3"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1409,
+			"sha256": "02ae0e6be7c111eee954e3919f5872c5dda850329e4b1581810d4f822dc8e6a8"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9684,
+			"sha256": "256a486bfeb7ff78db1e19003f260c40e503e3bb6c9614c826ed582d63d9163b"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1410,
+			"sha256": "7037390b32e8d2ff9722b2ec4d48d5f4dfe2c8a923c721c3f1cc7fe96f54b6b7"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 4591,
+			"sha256": "1d86e49392d9d0ee76827d37bffdb8abf88e9309afb6249098cc1beee2e51df3"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 4385587,
+			"sha256": "4e6fdaac43b2d13bf843e4d7e6399e26f396bd66dc60162363d3a569cad5a74b"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6957,
+			"sha256": "3903ef5ad8048269ac1da2b15ce06bda2dbc29ec966b346630111919afe893f5"
+		},
+		{
+			"path": "/brands/ocelot/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6957,
+			"sha256": "1dfb1b08284de3000c60750f39519cb101bf88520b117ae879d56aab5f62cbc9"
+		}
+	]
+}

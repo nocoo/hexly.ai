@@ -1,0 +1,229 @@
+{
+	"project": "clip",
+	"brandVersion": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/clip.png",
+		"export": "/brands/clip/v1.0.0/official-logo.png",
+		"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+		"bytes": 3160958,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "963e9e0e52d168d56139a609fa918166741f14a9d80acddfe399f9f3dae334d6",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 482,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+		"sourceRepositoryRevision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/clip/2026-09-07-02/01/transparent.png",
+		"export": "/brands/clip/v1.0.0/logo.png",
+		"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983",
+		"bytes": 2528861,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "4ff5d89c58a21bd394df8828109efa163c255754d0005051cbe966c074dadb36",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 711,
+			"left": 0
+		},
+		"sameBytesAsOfficial": false,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "review",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"generation": {
+		"provider": "Azure OpenAI / Foundry",
+		"model": "gpt-image-2",
+		"batch": "2026-09-07-02",
+		"requestId": "a4ae70d0-6c39-4d49-8635-f6ceb2f4783f",
+		"promptSha256": "23422d617400c2b844ebc8a772d553e1f21b9f032e3a26f29daf91470ef1afc7",
+		"raw": {
+			"path": "/logos/family/clip/2026-09-07-02/01/raw.png",
+			"bytes": 2050765,
+			"sha256": "a1268bdaffd6bbeee757d840f7485b718181e199faa503d1cfeb98d104c6f9ad",
+			"width": 2048,
+			"height": 2048
+		},
+		"originallyGeneratedAt": "2026-09-07T12:40:47.612495+00:00",
+		"madeInThisRelease": false
+	},
+	"records": [
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/request.json",
+			"sha256": "0167b7c6e2086de85029d6b9a9af7c3a3fbfedfdc8fc4120f22ff203c9ea7637",
+			"bytes": 1520,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/request.json"
+		},
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/response.json",
+			"sha256": "fea52eefa7ea1644db15ed6557a379a5f1f04069311da1a86ecc7425e264b83a",
+			"bytes": 839,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/response.json"
+		},
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/prompt.txt",
+			"sha256": "23422d617400c2b844ebc8a772d553e1f21b9f032e3a26f29daf91470ef1afc7",
+			"bytes": 4187,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/prompt.txt"
+		},
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/raw-review.json",
+			"sha256": "1e91b4755b154692c76106df136b7bbe488e31554b6d220c692a8be2d52726ab",
+			"bytes": 1325,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/raw-review.json"
+		},
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/authorization.json",
+			"sha256": "412793a9aa9154db2b83dc1c51537f3452e30fefe52feba7c5fa9b3a09f6c87c",
+			"bytes": 1797,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/authorization.json"
+		},
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/finishing/01/manifest.json",
+			"sha256": "47a63b3ee05dfae5ba1ec7ea89e882cc124a06bdfc0a21024b92ea137b7b6dd1",
+			"bytes": 11748,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/finishing/01/manifest.json"
+		},
+		{
+			"path": "artwork/logo-family/clip/2026-09-07-02/finishing/01/settings.json",
+			"sha256": "9e095f1fa254f6ebb8c2379f06ae4398556a39c31995da8a450b0b9678a8d580",
+			"bytes": 3718,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/clip/2026-09-07-02/finishing/01/settings.json"
+		}
+	],
+	"sourceRights": "Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.",
+	"hero": {
+		"method": "authored-composition",
+		"newGenerationCalls": 0,
+		"nativeGPTOutput": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"texture": {
+		"method": "Authored SVG support graphic from the project's distinct archived pattern; not a logo tracing",
+		"name": {
+			"en": "Windward feather relief",
+			"zh": "迎风羽纹"
+		},
+		"description": {
+			"en": "Long curved quills and gently splayed barbs carry the hat feather’s windward motion into the paper.",
+			"zh": "长羽轴与轻轻张开的羽枝顺风舒展，延续鸵鸟帽上那簇彩羽的动势。"
+		},
+		"source": "artwork/logo-family/clip/2026-09-07-02/finishing/01/settings.json",
+		"sourceSha256": "9e095f1fa254f6ebb8c2379f06ae4398556a39c31995da8a450b0b9678a8d580",
+		"layers": [
+			{
+				"d": "M-112 467C21 271 155 119 411 40L427 74C199 142 51 292-83 487Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-112 468C28 269 169 126 424 59",
+				"tone": "motif",
+				"strokeWidth": 11
+			},
+			{
+				"d": "M-119 450C20 252 159 109 418 43",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M30 300C12 247-6 225-42 211M94 223C84 157 68 132 39 111M168 161C169 99 157 68 141 40M253 115C269 61 275 27 270-7",
+				"tone": "motif",
+				"strokeWidth": 5
+			},
+			{
+				"d": "M28 326C93 328 133 339 166 365M90 250C163 256 207 271 236 292M166 184C228 186 272 195 301 213",
+				"tone": "motif",
+				"strokeWidth": 5
+			},
+			{
+				"d": "M34 337C99 341 138 353 169 377M100 264C169 270 210 284 240 305M175 198C235 199 275 210 305 226",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M847 1143C826 1003 896 874 1100 785",
+				"tone": "ribbon",
+				"strokeWidth": 29
+			},
+			{
+				"d": "M858 1142C839 1008 909 880 1105 797M873 990C929 1007 962 1031 984 1073M925 916C984 927 1027 949 1051 976",
+				"tone": "motif",
+				"strokeWidth": 6
+			},
+			{
+				"d": "M836 1141C816 996 884 864 1093 774",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		],
+		"bounds": [-119, -7, 1105, 1143],
+		"transform": {
+			"scale": 0.35294117647058826,
+			"x": 82,
+			"y": 55.529411764705856,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"finishing": {
+		"archive": "artwork/logo-family/clip/2026-09-07-02/finishing/01",
+		"sourceAdoptionUnchanged": true
+	},
+	"build": {
+		"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+		"recipe": "artwork/brands/clip/v1.0.0/recipe.json",
+		"recipeSha256": "42a2c92610fa782b270e69b133bd87cb9819a84490150df81f3bb1c613593d98",
+		"tool": "artwork/brands/collection-2026-09/export.ts",
+		"toolSha256": "5f44dfe0f67d0846a84995d3bd030484a9757168336e7f82f3aefe2e2bff46ce",
+		"typographyTool": "artwork/brands/collection-2026-09/outline.py",
+		"typographyToolSha256": "a75ef37be4e93aa7454293339cdac247aadd406086dd42639a327d5ce8f611cd",
+		"sharp": "0.35.4"
+	}
+}

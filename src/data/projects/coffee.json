@@ -329,5 +329,75 @@
 			"en": "At 128/64 px, the cup, handle, latte leaf and brass spoon remain distinct. At 32/24/16 px, the warm cup-and-saucer silhouette carries recognition; the incised bean, milk details and paper relief merge. Application headers and browser marks use the transparent foreground.",
 			"zh": "128/64 px 可辨认杯身、把手、拉花和黄铜茶匙；32/24/16 px 主要依靠暖色杯碟轮廓识别，豆纹、奶泡细节与纸面纹理会合并。应用页头和浏览器标记使用透明前景。"
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/coffee/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 939,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Broken cupping rings and tasting spokes",
+				"zh": "杯测环与风味辐线"
+			},
+			"description": {
+				"en": "Interrupted cupping rings and short tasting spokes echo the cup and the language of flavor.",
+				"zh": "断续杯测环与短风味辐线，呼应咖啡杯及风味记录的语言。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Peach ceramic cup, latte leaf, saucer and brass teaspoon on a Hexly campaign canvas",
+				"zh": "桃色陶杯、叶形拉花、杯碟与黄铜茶匙，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "Make time for a good cup.",
+				"zh": "留一点时间，喝一杯好咖啡。"
+			}
+		},
+		"description": {
+			"en": "Peach ceramic cup, latte leaf, saucer and brass teaspoon.",
+			"zh": "桃色陶杯、叶形拉花、杯碟与黄铜茶匙。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥81px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 81px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

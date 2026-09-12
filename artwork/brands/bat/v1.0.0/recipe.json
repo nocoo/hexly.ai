@@ -1,0 +1,114 @@
+{
+	"schemaVersion": 1,
+	"project": "bat",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A quiet watch through the night.",
+		"zh": "安静守望每台服务器。"
+	},
+	"description": {
+		"en": "Upright plum bat with folded wings and one colorful fig.",
+		"zh": "正向站立、收翼的梅紫蝙蝠与一颗多彩无花果。"
+	},
+	"foreground": {
+		"path": "/logos/family/bat/2026-09-07-01/02/transparent.png",
+		"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Dusk scallops",
+			"zh": "暮色翼弧"
+		},
+		"description": {
+			"en": "Interrupted scalloped folds echo the bat’s wings, with broad lobes and short, offset seams.",
+			"zh": "断续的扇贝形弧线取自蝙蝠翼缘，宽弧与短接缝在暮色中轻轻展开。"
+		},
+		"source": "artwork/logo-family/bat/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "e8c5ae488c17e77b907892b1e5f2d208835954e04fb5d38a7f59a4a050ea202e",
+		"layers": [
+			{
+				"d": "M-88 138Q59 28 199 165Q326 44 475 184Q643 67 776 205Q952 91 1120 210L1120 262Q956 144 780 259Q642 120 478 238Q327 95 203 219Q57 81-88 193Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-87 198Q58 86 204 224Q329 102 479 243Q644 127 780 264Q952 153 1123 268",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-93 541Q62 428 180 535Q325 446 431 573L366 616Q279 518 180 589Q63 483-93 595Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M600 875Q711 743 836 858Q979 754 1133 891L1133 946Q980 810 837 913Q715 799 651 918Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M654 925Q715 808 838 922Q979 820 1134 954",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-93.0, 89.01214574898785, 1134.0, 954.0],
+		"transform": {
+			"scale": 0.35207823960880197,
+			"x": 72.74327628361857,
+			"y": 72.38905991704857,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Bat",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 244.715,
+		"height": 131.96,
+		"glyphBoundsUnits": [46.3499755859375, -14, 1565.7434294327445, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/bat-family-2026-09-07-01-02.png",
+		"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/bat/blob/46f5c95a6c134487130e2a6d9336ec5e8895a0f7/logo.png",
+		"repositoryRevision": "46f5c95a6c134487130e2a6d9336ec5e8895a0f7"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

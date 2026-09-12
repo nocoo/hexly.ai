@@ -1,0 +1,122 @@
+{
+	"schemaVersion": 1,
+	"project": "backy",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A safe place to return to.",
+		"zh": "总有一份安心的备份。"
+	},
+	"description": {
+		"en": "Small olive tortoise with one folded multicolored leaf on its shell.",
+		"zh": "橄榄色小陆龟，龟壳上托着一片折叠的多彩叶子。"
+	},
+	"foreground": {
+		"path": "/logos/family/backy/2026-09-07-01/01/transparent.png",
+		"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Shell saddles",
+			"zh": "龟壳叠弧"
+		},
+		"description": {
+			"en": "Unequal shell plates and interrupted seams form a sheltered rhythm around the small tortoise.",
+			"zh": "大小不同的龟甲轮廓与断续接缝，围绕小陆龟形成稳妥、舒缓的节奏。"
+		},
+		"source": "artwork/logo-family/backy/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "5e9afe020caefee765b7447629e88a58b813f6b038890a62d9b57e4ced83473e",
+		"layers": [
+			{
+				"d": "M-84 59L178-48L338 108L288 337L50 412L-84 299Z",
+				"tone": "motif",
+				"strokeWidth": 30
+			},
+			{
+				"d": "M-80 38L184-72L362 103L310 357L46 437",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M653-84L920-35L1108 144L1054 370L830 399L689 235Z",
+				"tone": "ribbon",
+				"strokeWidth": 42
+			},
+			{
+				"d": "M849 706L1112 774L1150 1022L940 1125L719 973L714 831Z",
+				"tone": "motif",
+				"strokeWidth": 34
+			},
+			{
+				"d": "M844 684L1130 757L1166 1034L944 1149L696 984L690 820Z",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-113 712L89 681L248 854L187 1108L-110 1120",
+				"tone": "ribbon",
+				"strokeWidth": 46
+			}
+		],
+		"bounds": [-113.0, -84.0, 1166.0, 1149.0],
+		"transform": {
+			"scale": 0.3377638780297107,
+			"x": 78.16731821735732,
+			"y": 76.14073494917906,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Backy",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 411.22,
+		"height": 158.0,
+		"glyphBoundsUnits": [46.3499755859375, -200, 2755.0622372834578, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/backy-family-2026-09-07-01-01.png",
+		"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/logo.png",
+		"repositoryRevision": "5b23349c94ac6778f2242a857386e8b01dac4f1c"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

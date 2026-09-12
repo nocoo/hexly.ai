@@ -25,6 +25,8 @@
 
 目前收录 75 个项目，备份 61 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Logo 家族支持重绘、原图规范化与版本化品牌资产：[Snail 2.0 品牌档案](https://hexly.ai/projects/snail#brand) 使用真实 GPT Image 生成的碎片蜗牛，提供独立方形/宽幅构图、明暗底纹、真实字体字标、透明图标和 favicon；完整保留上一版 SVG 与全部生成来源记录。
 
+55 个正式项目均有完整品牌包。除保留的 Snail 外，其余 54 个档案整理已有动物、实物或原作，补齐明暗 Hero、手机独立构图、各自的可平铺底纹、转曲字标、图标、favicon 和可校验下载。项目原标的形状、原色与字节不变；Hexly 的页面与宣发色系只用于本站和 Hexly 制作的物料，各产品站点继续保有自己的色板和主题。完整清单、来源差异及维护方式见[品牌档案指南](docs/19-family-brand-archives.md)。
+
 ## 功能
 
 - **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
@@ -141,6 +143,7 @@ D1 在质量表中表示测试隔离维度；监控使用 Cloudflare D1 数据�
 - [版本与发布流程](docs/05-release.md)
 - [项目详情、媒体与路由](docs/17-project-media.md)
 - [项目档案与色板](docs/profiles/README.md)
+- [完整品牌档案、原标与宣发作用域](docs/19-family-brand-archives.md)
 - [来源快照](docs/sources/README.md)
 - [Changelog](CHANGELOG.md)
 

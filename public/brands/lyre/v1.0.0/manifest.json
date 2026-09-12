@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "lyre",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/lyre#brand",
+	"root": "https://hexly.ai/brands/lyre/v1.0.0",
+	"source": "artwork/brands/lyre/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/lyre.png",
+		"export": "/brands/lyre/v1.0.0/official-logo.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"bytes": 3656299,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+		"sourceRepositoryRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/lyre/2026-09-07-03/01/transparent.png",
+		"export": "/brands/lyre/v1.0.0/logo.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"bytes": 3656299,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/lyre/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 61989,
+			"sha256": "c5e2dfd22c9916c4193f20db8a64d7bf4f882c915e70b63db2acf223b3907054"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 129463,
+			"sha256": "6cee46d8546afd6f14c720e3a97c09b4001a4675de4ff63feda08f07c96a72c0"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6403,
+			"sha256": "e4abad152f22769fc62465d27c21447c61435c2042b8ede4c4deaeaffe0ec3f3"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 986069,
+			"sha256": "8b9dca6a1298af966e2906ea81aae9fea762884c08d94bcad90cffdb9aa063dc"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 64288,
+			"sha256": "99a86d832e732f7baf326c0d852dc74a36f499336229ade6e5b61dbfb0346029"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 50934,
+			"sha256": "4751008b93d44e48173a0ba63a85ca9efb9a03221e8cfcbd95b5058341ad3e50"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 51426,
+			"sha256": "eb136baae2b75542dfbf0ecc69d18ee4c15ea3f280c06500c3eb796c4ae4e897"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 994484,
+			"sha256": "65a8e1dfeb6f472194f00e8324c9392c2484a78208d45fb8a3325be058ac8d86"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 64422,
+			"sha256": "db7bfa51807cba11c47f6f74d890f4f8df25cf75f3543f713fc0fdd4ed01c77e"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 74510,
+			"sha256": "ec125a2f60a522c7ceb0e24194e8dee8a3dee6dad69a0e6f6ab75d235fdeb3c2"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 305320,
+			"sha256": "50f99dba699da03d18e155677589f30ff15d5fa10f59ba96746631e1dd758b12"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4008858,
+			"sha256": "f9504ef16779b96cc180a7cacd0f4d9271c1d91598265f65b53d54a095378729"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 439310,
+			"sha256": "28bc4535b8df1814afc09f82734cf56f983e9d1167d40ea19ef40b53ec36bbdd"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5728432,
+			"sha256": "9dc87df1c4dc2dc050eabdb9671559766ae1199b9d1bca2ebdd44f95d5ba4d87"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1753,
+			"sha256": "d1d970610661000ff5a6943831daeeceb7dd38c78e33fbe4c54b7c8396e75fdd"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 187881,
+			"sha256": "6fb98be660e9226ca2212d1e4230babafea11e1b18805431e6ccc3dbf0021049"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 187688,
+			"sha256": "b6268f0c33c2b1087012ebc220ed6dd910418d701e8c80485743aa53e91a930b"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1158547,
+			"sha256": "8c111e4b01299a3ea5f21528f88971b96988239a6e24166860818c5346d83495"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1158547,
+			"sha256": "8c111e4b01299a3ea5f21528f88971b96988239a6e24166860818c5346d83495"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3656299,
+			"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1158547,
+			"sha256": "8c111e4b01299a3ea5f21528f88971b96988239a6e24166860818c5346d83495"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 26279,
+			"sha256": "f9f49dd05f065110d83020f3c9718d4783fa4adad6939a366e5ca3ac2945698a"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 838,
+			"sha256": "95e08c0310076625878c3d513e4138a60db3b65bfc1bc3eced26dcb3b42813b1"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1544,
+			"sha256": "9885081e92f343be7adfd5aff8a1d0ab98ee3857470cffb550da588a8b3b09d9"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 87396,
+			"sha256": "77e68e578a773b4990260fe20d95f7499abe837b27e7d5e6a20884c0b25e2001"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2380,
+			"sha256": "0c038e1740f0b1d643693517604177cbca40f1e497a7377f1f053baf4d0055ad"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4725,
+			"sha256": "57df4e136b22e679c8faacff3173e0f7e7faae6e19781429e6c50e11bdadf69a"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 304114,
+			"sha256": "5bba54db4a0177da552a5f017bc8e8d450b6115bfb5395e84cd90e637fc44217"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7743,
+			"sha256": "57269c01befda926b2dce68dba0893418c4fa92fcd4996420d54ea9b9e2c7dc8"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3656299,
+			"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3656299,
+			"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3656299,
+			"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6315,
+			"sha256": "c8d834e8cf6ae9d682967e7a4d144e75ba3b252c32facd1fb9afa1d421e2a65e"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10456,
+			"sha256": "2df8d75eb9a9ab6995677ed91f18f7f6ddf089868001473d5b57c5e3a27a327f"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 15415,
+			"sha256": "bb59fd62702c9b35cee311d2a745ac1b8334c4245e3839bd9e8271d834a9af89"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1078,
+			"sha256": "e954eea30f5daeb7cab6bdce2d56dc1977da776c918690f9a96e98b7c1048a7b"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 12847,
+			"sha256": "b7e57213f5de62b1d4245794b14bb2121132440f1de5a5077796ab1e1ade5298"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1079,
+			"sha256": "dbe6b29eaf66df2ae051251bf10c75d3a04b8934e597ae6318f4c1f654d6fabc"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3082,
+			"sha256": "7aa047934e07b6d706898db7a31bad8748427529fa78ba2cc610de4b5d7492a2"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3888151,
+			"sha256": "79b10f954ff20beced313c7f483e50e821495168cf0488d170d07050a40381d4"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3700,
+			"sha256": "6571618f130b7bacba3a8389194973e9f051bc4d87f91a1ac3efa73b81a5b8a3"
+		},
+		{
+			"path": "/brands/lyre/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3700,
+			"sha256": "687bda3c80bee0d0eacc7d57ec5581061dc73b9a315250eb8ec5edd674024327"
+		}
+	]
+}

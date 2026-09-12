@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "wooly",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/wooly#brand",
+	"root": "https://hexly.ai/brands/wooly/v1.0.0",
+	"source": "artwork/brands/wooly/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+		"export": "/brands/wooly/v1.0.0/official-logo.png",
+		"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+		"bytes": 3895425,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "47800dea8a7cca3d7510610802fa0d0569fd68c77170a47832dd6f3e2e0d6861",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1584,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/wooly/blob/e516e1fbcbd146fcda6b80cf071bd5367e611afd/logo.png",
+		"sourceRepositoryRevision": "e516e1fbcbd146fcda6b80cf071bd5367e611afd",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/wooly/2026-09-07-02/01/transparent.png",
+		"export": "/brands/wooly/v1.0.0/logo.png",
+		"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+		"bytes": 3895425,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "47800dea8a7cca3d7510610802fa0d0569fd68c77170a47832dd6f3e2e0d6861",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1584,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/wooly/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 60644,
+			"sha256": "b3f8f594b423fc0af294f9633f39589b71abdd4de24825ea45ed69611cbac936"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 128706,
+			"sha256": "d3309be9cd4dab516dc49e771991f16d1925183a86d9095c8b7513101e697ada"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6508,
+			"sha256": "26a52fc2c37b4f20fae4d3f55ce46edd1d581b0ace0aa4b857796244ef60d6ae"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1024474,
+			"sha256": "ad7e1fa7f02cf83381fd1993ce56b994f68acb55e3fe562ff4c1e32adcaf0ac2"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57338,
+			"sha256": "096274a2f815bd5083bae3a8d2054a54adce8144b127cddbbb4698d6eecefc80"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 46570,
+			"sha256": "000eb574b07a86a86b800bee70d962cd1354b810c4b6217cdf3d53caf65170b2"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 41910,
+			"sha256": "7f0ad5821827c5380eaf578df3765b8b3f07bab0d09a2b28b08a9156f29f951b"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1012850,
+			"sha256": "a83023083dd1671d5c2c6e61be58fc889e0fcce93ec175eb941f209042903ac4"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 51186,
+			"sha256": "a5f51dc7734cb9bf91572cb5eec25e0d723c39a31aa0fe89b888fa63ac13fff0"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 71819,
+			"sha256": "7ff07f0e2151f4ffe37f2e443f967badd2907886221cc6ff82641406d6a3a252"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 289742,
+			"sha256": "d5d87bf53ad68cf0951cff83246c7870a20d0860ee19b8922904ba108913b697"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3933430,
+			"sha256": "429c8b46a74603b2a2161f3e6452660b45831abf47238e0446dca1a2846b0827"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 401387,
+			"sha256": "2ce9b33256c21a47005c4e06c7bb22f4fcd4c741ab7285a9e79abc6f1b47d465"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5480010,
+			"sha256": "920f2ef9641359f00c1c7ff48db32291886d9a2445b44d921911a0a65ecfe4e1"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "06a4b01ea6c4fe0c252af2b73e4cbfa8d2f3f4f67d6e8156e4693742e606b639"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 190581,
+			"sha256": "a5db7bafe51a4d09e78a3b186f4305d40ce6a541783086562268eba7f30f1c49"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 191089,
+			"sha256": "203f3b2c9e450044cf26c40f4b0f632c5c09842731a35bdda365941c91165e7d"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1010870,
+			"sha256": "9cf044d8a54c832c8aab9f4f7932269165771037463c9b88d061a765ad99ee0b"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1010870,
+			"sha256": "9cf044d8a54c832c8aab9f4f7932269165771037463c9b88d061a765ad99ee0b"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3895425,
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1010870,
+			"sha256": "9cf044d8a54c832c8aab9f4f7932269165771037463c9b88d061a765ad99ee0b"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 25851,
+			"sha256": "dd9281ba2623ac1ff70036e5cf26d90d250b462b20e1baecf3d3dae9dae2bd58"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 838,
+			"sha256": "063648596c584115e6d72195300fc3ded30f03c81afd05be3ab6901583235c25"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1506,
+			"sha256": "4dc78a9753b14b490dd3dc24fba6deeca38df0b592b58919eff61ffe01def9b6"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 87213,
+			"sha256": "450a11fd5c49dd578ab2af1e19d6561ff5337304fb6c32f5160bf423b0f59134"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2383,
+			"sha256": "6dfeda018bd38fd8be86d5ca7d730326c195b23bf64d0a1ee372776c99e47aa6"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4670,
+			"sha256": "eaa40a36bbf86ff24518c195426f265c14deaa4aa0cf94dbd4eaeea201a3895f"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 284639,
+			"sha256": "50837cb356f2361600e509d0f1f8bcef49e231b18c4f50fe4f2574c5e70d86e2"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7649,
+			"sha256": "56332c34c4fdc43ab0a84bdf2437a82aecdd9742628bc3cdf70ef672965f9318"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3895425,
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3895425,
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3895425,
+			"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 3266,
+			"sha256": "523964785ea9097d86271a8ae2c18d39f3dddd5ee5f896a6c058db83999bbd0e"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8018,
+			"sha256": "e6ad07329bb46777cf80f292956f00375f2eeeb1b84b71f23b7fc4f435603bb1"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14075,
+			"sha256": "edf70530925d83f14d8967a0455d891c420326780078b0de1ff755fe1fbe623f"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8537,
+			"sha256": "675c0fc80adb58bd855319974411b3c59e5ea19f0cc5d1f9a3f4ce063e4b4d60"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1183,
+			"sha256": "2874c041480d81d91b02bebee358e47ff5820ef4ca94b3c7afa3319a3b26a373"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 7615,
+			"sha256": "5129c51e70f9a704a5b3bd701b59b0da853825fffa164adfbc54b811b3a847d1"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1184,
+			"sha256": "dc0ce9cd707845a1f1749c6fcfe88df76f747a5a3908fae9dc46a18d5118c150"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3304,
+			"sha256": "2ab273284ce72d7dabba73abe245d2db4f5330b3a416a5ff46fba483c2374a8f"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3660805,
+			"sha256": "c1129eceb0107106175dab74634ed97d9685db25ce192e6d78ac2c682c88853f"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5139,
+			"sha256": "28e5a28c589d5fb433762370581d202663ba499285787eec941bc345ebebee2f"
+		},
+		{
+			"path": "/brands/wooly/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5139,
+			"sha256": "874a18aa8b27a2d79d9dcdc628b725841abe186705e775d422cf31bba5d48fad"
+		}
+	]
+}

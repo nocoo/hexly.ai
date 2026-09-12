@@ -1,0 +1,126 @@
+{
+	"schemaVersion": 1,
+	"project": "surety",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Keep what protects you.",
+		"zh": "把守护家人的保障收好。"
+	},
+	"description": {
+		"en": "Amber lion portrait with one multicolored butterfly.",
+		"zh": "琥珀色狮子头像与一只多彩蝴蝶。"
+	},
+	"foreground": {
+		"path": "/logos/family/surety/2026-09-07-01/01/transparent.png",
+		"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Amber fan relief",
+			"zh": "琥珀扇面"
+		},
+		"description": {
+			"en": "Unequal fan rays spread from a low, off-center pivot, quietly echoing the lion’s broad mane.",
+			"zh": "长短不同的扇形射线从偏低的支点展开，轻轻呼应狮子宽阔的鬃毛。"
+		},
+		"source": "artwork/logo-family/surety/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "f75f8b6f50bba78ea56412025aa0eaade491b58303a63cc40dc0926cd6e0ff6d",
+		"layers": [
+			{
+				"d": "M347 1100L-110 412L-110 210Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M351 1100L-102 195L-49-100L102-100Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M358 1100L190-100L371-100Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M365 1100L533-100L724-100Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M372 1100L888-96L1114-96Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M380 1100L1133 159L1133 390Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M358 1100L378-100",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M373 1100L1115-93",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-110.0, -100.0, 1133.0, 1100.0],
+		"transform": {
+			"scale": 0.3475462590506838,
+			"x": 78.23008849557522,
+			"y": 82.22687047465809,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Surety",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 443.472,
+		"height": 159.96,
+		"glyphBoundsUnits": [37.499755859375, -200, 2976.5839764138927, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/surety-family-2026-09-07-01-01.png",
+		"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/surety/blob/f257e0977e85358f9d02ed3f79a9fad8862e5117/logo.png",
+		"repositoryRevision": "f257e0977e85358f9d02ed3f79a9fad8862e5117"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

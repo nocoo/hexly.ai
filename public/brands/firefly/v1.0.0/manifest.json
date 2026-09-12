@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "firefly",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/firefly#brand",
+	"root": "https://hexly.ai/brands/firefly/v1.0.0",
+	"source": "artwork/brands/firefly/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/firefly-2026-09-06.png",
+		"export": "/brands/firefly/v1.0.0/official-logo.png",
+		"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759",
+		"bytes": 2583578,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "c5c4bb38f0c78b094c2c72b7f84478618fd17544c6eecf97a27ad1747c6d3df6",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png",
+		"sourceRepositoryRevision": "70a4de51b9fe6f152805298c031ca92165754c40",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/firefly/2026-09-06-10/02/transparent.png",
+		"export": "/brands/firefly/v1.0.0/logo.png",
+		"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759",
+		"bytes": 2583578,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "c5c4bb38f0c78b094c2c72b7f84478618fd17544c6eecf97a27ad1747c6d3df6",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/firefly/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 37196,
+			"sha256": "4b4b7fa85296b40e6539724d3cb7c36d4ea0ddd66a3e09a394bab9342a4df26d"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 88661,
+			"sha256": "9788b23894cad7fd044dde30a9b28f6083809b3f6f7041ce2ad32520ec27c0a1"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6472,
+			"sha256": "3f3ed25dd954b288fc7552fb96285892d9731e5ebccf0306de5858d070da9a17"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 602281,
+			"sha256": "5032f0b492b05c03907241542463b44c0aeb9ccc860c0c0aa76eae4749b4e6b4"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 54488,
+			"sha256": "32310e008041455d81b609a46122a257dad40f397e25f40c766cb2904044ab69"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 46100,
+			"sha256": "01beb9b92e947bef1464927e0e5bfb12c0fd096f7b388745e014d6a27b797f9f"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 45596,
+			"sha256": "e95f11425751850f4ea61cf4a0939920c543512de57aa059af50e6de06f305fc"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 602292,
+			"sha256": "c86c94fc6625bc6b9c00beec26e5d29b4db9be49cf3027b807dd05fe9d190a59"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 53558,
+			"sha256": "b46ffd3881160dffebbb23b28094fcbba56f3265adf14dc98aae2e45ff0b31e4"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 45592,
+			"sha256": "44b7a6313065f9a4013f47e068232641f378fc0f4a801821228d03e607a42663"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 207266,
+			"sha256": "659d6968acd1d05caf7fe748749de9c4a477b666f117d9e61176a83e0b113e44"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2623822,
+			"sha256": "41535f465bd19fde3428c33a227cdc29a53a90b50220a985c89749874cecc29d"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 305006,
+			"sha256": "e08a95476a90587dc940b7a108d5deab39bfaebcadfc033fc060e65aa07cf34e"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 3973346,
+			"sha256": "5b44f514117c0e7471e60fcd628880c3c7116a9d597e9d1f944aaa621318992e"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1794,
+			"sha256": "41e3120085c85a739d1568baadd63eb1a459c39a3a6401cd2c4bee8eb6d12c32"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 131242,
+			"sha256": "42ac5195501a899c7ded4b1f98265dba1f4db45c3c549e0e945aaf0e36de0230"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 131311,
+			"sha256": "b490d345c7747c8615e1df0af78f91999e6f038857f3cfcf64ebff13eea06ae3"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 698807,
+			"sha256": "eabd716b923fd331ab1eddff6a4f1f42d04f9b1a1cc6989466cae31f28a1a57f"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 698807,
+			"sha256": "eabd716b923fd331ab1eddff6a4f1f42d04f9b1a1cc6989466cae31f28a1a57f"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2583578,
+			"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 698807,
+			"sha256": "eabd716b923fd331ab1eddff6a4f1f42d04f9b1a1cc6989466cae31f28a1a57f"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 17579,
+			"sha256": "6896a83e3fa2a220a24408c201ae361d90bff1edea62a1b7d11180dfe6568eb2"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 674,
+			"sha256": "7677bff204dbd41927875e7287e6d0258ee4f5b3390ebdb4a48344b16e1ed3c0"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1202,
+			"sha256": "39ffca8d9ffcde51841dfd09520339a16921d8c98b82a876d2aefdd60b7254f3"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 59828,
+			"sha256": "082d3db02d68a800160ca9c62317c050458433fffc4cb12cbe37e59673ecdd6b"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1813,
+			"sha256": "8f231431061d2b0df666b4204ce74bb3d3048800e212073b18be079ec0774cf7"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3353,
+			"sha256": "3fa2bd3291810b777cd075076ea9fb2e6dba045d647e1e54adb03972af930716"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 203340,
+			"sha256": "41b422350eaab8b91ebaa40eb1bbcabc863ef3248aebe119544866a567389f2f"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5312,
+			"sha256": "ba34b0a1894c8d1314d9ec362a92bf689cfb77a8f0fc1ddbd7fb5c68533f0d75"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2583578,
+			"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2583578,
+			"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2583578,
+			"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 5624,
+			"sha256": "9cb9a649c75b73ccc515463198142bf86f6fbd591bd16c7c68b82e843f9a0418"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7749,
+			"sha256": "b57cc86f04e6b76b957847347d5c7486ff0f41886b83fec7def924a21a94272a"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 16397,
+			"sha256": "4c27e8bed846564c5210099d8d3be4284f54070110f9dac11dbebbb01ffe3b42"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 3764,
+			"sha256": "7ee9c3781f95a4eaadc7182d4dd8123c39ede4769970331ae5be964e211c563b"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1191,
+			"sha256": "8aa946835d610af7ec98e32f4ffa53c5a7686186e0cba759b9990785210ddc89"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 3419,
+			"sha256": "f5fdf414632595ced79908d0b61f626632c360d865ddba37b3a8790aaa92f291"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1192,
+			"sha256": "939323b5b75ad46697af698693d9e284afd144e944652784b71978b4a8259e2e"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3702,
+			"sha256": "a324d2402e5fe71eaff5c29586eadb32dccdfc0eed87155f0034b8f9dda5bee0"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2380781,
+			"sha256": "a7df2ca3180cdd1a1ee6fe57787cc753ce125786dd01744610dfb00d92878793"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5034,
+			"sha256": "84f612433bdd43603c9d87c46de7d457a79aed216c836a28bb3dad951f74b1d6"
+		},
+		{
+			"path": "/brands/firefly/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5034,
+			"sha256": "efa6e59d007eab5a6ebd62d88c7c136ad1ef3d49f85441ff0ba67d348644cfbd"
+		}
+	]
+}

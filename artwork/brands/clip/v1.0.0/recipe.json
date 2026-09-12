@@ -1,0 +1,138 @@
+{
+	"schemaVersion": 1,
+	"project": "clip",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "From a schema to a command.",
+		"zh": "让一份定义，成为可用的命令。"
+	},
+	"description": {
+		"en": "Amber-eyed ostrich in a brown hat with one bright feather cluster.",
+		"zh": "戴棕色宽檐帽的琥珀眼鸵鸟，帽上留一簇多彩羽毛。"
+	},
+	"foreground": {
+		"path": "/logos/family/clip/2026-09-07-02/01/transparent.png",
+		"sha256": "3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Windward feather relief",
+			"zh": "迎风羽纹"
+		},
+		"description": {
+			"en": "Long curved quills and gently splayed barbs carry the hat feather’s windward motion into the paper.",
+			"zh": "长羽轴与轻轻张开的羽枝顺风舒展，延续鸵鸟帽上那簇彩羽的动势。"
+		},
+		"source": "artwork/logo-family/clip/2026-09-07-02/finishing/01/settings.json",
+		"sourceSha256": "9e095f1fa254f6ebb8c2379f06ae4398556a39c31995da8a450b0b9678a8d580",
+		"layers": [
+			{
+				"d": "M-112 467C21 271 155 119 411 40L427 74C199 142 51 292-83 487Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-112 468C28 269 169 126 424 59",
+				"tone": "motif",
+				"strokeWidth": 11
+			},
+			{
+				"d": "M-119 450C20 252 159 109 418 43",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M30 300C12 247-6 225-42 211M94 223C84 157 68 132 39 111M168 161C169 99 157 68 141 40M253 115C269 61 275 27 270-7",
+				"tone": "motif",
+				"strokeWidth": 5
+			},
+			{
+				"d": "M28 326C93 328 133 339 166 365M90 250C163 256 207 271 236 292M166 184C228 186 272 195 301 213",
+				"tone": "motif",
+				"strokeWidth": 5
+			},
+			{
+				"d": "M34 337C99 341 138 353 169 377M100 264C169 270 210 284 240 305M175 198C235 199 275 210 305 226",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M847 1143C826 1003 896 874 1100 785",
+				"tone": "ribbon",
+				"strokeWidth": 29
+			},
+			{
+				"d": "M858 1142C839 1008 909 880 1105 797M873 990C929 1007 962 1031 984 1073M925 916C984 927 1027 949 1051 976",
+				"tone": "motif",
+				"strokeWidth": 6
+			},
+			{
+				"d": "M836 1141C816 996 884 864 1093 774",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		],
+		"bounds": [-119.0, -7.0, 1105.0, 1143.0],
+		"transform": {
+			"scale": 0.35294117647058826,
+			"x": 82.0,
+			"y": 55.529411764705856,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "clip",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 245.033,
+		"height": 158.98,
+		"glyphBoundsUnits": [
+			49.1497802734375, -200, 1570.8153394616168, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/clip.png",
+		"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+		"repositoryRevision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": false,
+		"familyStatus": "review",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

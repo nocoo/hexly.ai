@@ -1,0 +1,125 @@
+{
+	"schemaVersion": 1,
+	"project": "pika",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Find the conversation again.",
+		"zh": "找回那段有用的对话。"
+	},
+	"description": {
+		"en": "Yellow Pika with its complete lightning gesture.",
+		"zh": "黄色 Pika 与完整闪电动作。"
+	},
+	"foreground": {
+		"path": "/logos/family/pika/2026-09-07-01/01/transparent.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Charge steps",
+			"zh": "闪电阶梯"
+		},
+		"description": {
+			"en": "Broad angular charge paths and interrupted zigzags follow the energy of the original lightning gesture.",
+			"zh": "宽阔的折线与断续锯齿顺着闪电的方向展开，保留 Pika 原有的灵动节奏。"
+		},
+		"source": "artwork/logo-family/pika/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "d895ff4ffbf7611fd72237a128d7e737b6948471cf67fc1a60dca207c1e77c56",
+		"layers": [
+			{
+				"d": "M-100 118L224 16L180 225L475 130L408 402L334 425L382 226L78 324L132 129L-100 199Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-101 206L124 139L69 334L373 236L326 433",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M813-88L707 254L963 175L824 498L905 473L1097 62L825 147L897-88Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M810 508L950 188L693 268L800-86",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-89 959L251 830L208 1093H310L373 686L-89 857Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M733 1120L790 875L1114 768V669L705 807L627 1120Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M618 1119L698 800L1114 660",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-101.0, -88.0, 1114.0, 1120.0],
+		"transform": {
+			"scale": 0.35555555555555557,
+			"x": 75.9111111111111,
+			"y": 72.53333333333333,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Pika",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 280.733,
+		"height": 132.94,
+		"glyphBoundsUnits": [
+			69.499755859375, -14, 1846.1653150475543, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pika.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+		"repositoryRevision": "bb9b497372809e5ca00eaef4b04e1aa51e4256a3"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

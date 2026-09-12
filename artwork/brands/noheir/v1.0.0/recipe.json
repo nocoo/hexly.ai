@@ -1,0 +1,124 @@
+{
+	"schemaVersion": 1,
+	"project": "noheir",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "See the whole picture.",
+		"zh": "看清家里的每一笔。"
+	},
+	"description": {
+		"en": "Copper and cream cow with complete horns, blue eyes, and a coral muzzle.",
+		"zh": "铜棕与奶油色奶牛，完整保留牛角、蓝眼睛和珊瑚鼻尖。"
+	},
+	"foreground": {
+		"path": "/logos/family/noheir/2026-09-07-02/02/transparent.png",
+		"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Quiet terraces",
+			"zh": "安静梯田"
+		},
+		"description": {
+			"en": "Broad terraced contours turn through unequal levels, echoing the calm breadth of the cow’s silhouette.",
+			"zh": "宽阔等高线沿不同层级缓缓转弯，呼应奶牛轮廓的稳重与从容。"
+		},
+		"source": "artwork/logo-family/noheir/2026-09-07-02/finishing/02/settings.json",
+		"sourceSha256": "a7c821c684c82c3c533202ac2271f53aa7d369b6d6e0394b66521210169dc5c4",
+		"layers": [
+			{
+				"d": "M-90 277H142Q208 277 208 205V149Q208 88 278 88H529V-80",
+				"tone": "motif",
+				"strokeWidth": 31
+			},
+			{
+				"d": "M-90 294H144Q225 294 225 205V151Q225 106 279 106H547V-80",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-91 454H49Q104 454 104 388V338Q104 307 149 307H297Q360 307 360 243V211Q360 168 424 168H725V-91",
+				"tone": "ribbon",
+				"strokeWidth": 30
+			},
+			{
+				"d": "M613 1102V925Q613 870 674 870H741Q802 870 802 812V729Q802 678 867 678H1120",
+				"tone": "motif",
+				"strokeWidth": 34
+			},
+			{
+				"d": "M633 1103V928Q633 890 676 890H743Q822 890 822 814V730Q822 698 869 698H1120",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M427 1100V1041Q427 983 494 983H521Q565 983 565 937V858Q565 795 623 795H717Q729 795 729 763V641Q729 562 811 562H1114",
+				"tone": "ribbon",
+				"strokeWidth": 23
+			}
+		],
+		"bounds": [-91.0, -91.0, 1120.0, 1103.0],
+		"transform": {
+			"scale": 0.35672997522708505,
+			"x": 72.46242774566474,
+			"y": 75.49463253509495,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom", "lower-right"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Noheir",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 425.818,
+		"height": 132.94,
+		"glyphBoundsUnits": [
+			69.499755859375, -14, 2882.4841228982677, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+		"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png",
+		"repositoryRevision": "5e32426a6044436eee5c6b2894910666896a8b49"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

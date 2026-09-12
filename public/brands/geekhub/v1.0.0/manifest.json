@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "geekhub",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/geekhub#brand",
+	"root": "https://hexly.ai/brands/geekhub/v1.0.0",
+	"source": "artwork/brands/geekhub/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+		"export": "/brands/geekhub/v1.0.0/official-logo.png",
+		"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+		"bytes": 4053576,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+		"sourceRepositoryRevision": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/geekhub/2026-09-07-01/01/transparent.png",
+		"export": "/brands/geekhub/v1.0.0/logo.png",
+		"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+		"bytes": 4053576,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/geekhub/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 45282,
+			"sha256": "64a69ff1d5ca955dd0934af58289882c15b1e4e8e87eab6ed3e0f6531ada6bfc"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 90478,
+			"sha256": "61d26024f44212b24bb1ba2b312d609f0be802aa6637b2b46374f78de96f7611"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6441,
+			"sha256": "798adc6755934ddf67614d876e88a0ddb6b3d3a64d7303c9ea26e43612f1369f"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 838581,
+			"sha256": "8f2a5c15e9af7db09cbcaad00e9a68fa482e9860898ddc90831864d0cd4f92b1"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 92162,
+			"sha256": "db0c96cb636a0e584a7593af02ffd7ea91ed59d4fd13b7c6333d5644776eec60"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 73656,
+			"sha256": "102ce39dcb77339774e7045d10e362e04a00ea4099f97664bdc661a268195100"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 73920,
+			"sha256": "a5e034665b1bc065e7e3022000a2207d885e628b009884b62aa1127dfa6941d7"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 841737,
+			"sha256": "05cf92f1a6c98774894c1bc2cf8c4b28bfdb83ee588b2bce5583889b50e011c2"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 90474,
+			"sha256": "a4edebcfa52c34c45fbab259e9ce08d6b5475464e647fc21baf8d3dbb2932548"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 54555,
+			"sha256": "cb3ec91aeec0246da69a2d473c5dcbfd2f111cb03df4c35f56e0350365476f45"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 245799,
+			"sha256": "49e8841535e77c68ee8cde4f7704955ec0089572b9e11a53650a214ece2d139e"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4082283,
+			"sha256": "037f798c40fcf77615f13f4a4e853a83c25f37e47d1161acf64c537380d5bec7"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 355628,
+			"sha256": "a6397a557a55e5d8f1385701e4d99af0dcd8893b4a13fe39ff7d0aa5d41f0f1e"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5633386,
+			"sha256": "31e57d1cc23e7af4452163410ca297ade45dd738d645ee4655d167a62840bc33"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1794,
+			"sha256": "9a8bb35d6374e1c3125a7d8369eef3c73bc9b827f1d9687d55b1248898c4a0f2"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 161033,
+			"sha256": "fd55cc7528379d1c239272b20c4bf693bd7965e1fd54613e099f98c52d5fc961"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 160531,
+			"sha256": "d0b8b1a41a56f369a1f1fc822e8cfd4dfb91b5a862d88f60a1ac9e056f7adb93"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 980098,
+			"sha256": "e7587db38614c53b98ea0f1a4218a6d74d306bfc81410269256dd5deaacee66e"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 980098,
+			"sha256": "e7587db38614c53b98ea0f1a4218a6d74d306bfc81410269256dd5deaacee66e"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 4053576,
+			"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 980098,
+			"sha256": "e7587db38614c53b98ea0f1a4218a6d74d306bfc81410269256dd5deaacee66e"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 16846,
+			"sha256": "32f72d18c376921f85ab145d0427ab220dbbaeda5d66001ffa7a97b0ddfd45b9"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 670,
+			"sha256": "af63408ee9f44517ce373bf7555bdd5a93f4c98156c2a91448f2d5ce13eb3899"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1152,
+			"sha256": "e8460cca5443d0188ae305b9639ae65a60f4ee95620d2dd4db2cb92dded60d77"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 63102,
+			"sha256": "be995e1671788f62f07a51f4d08e71d7539deb116896fdb8f378d39b4bf89fa0"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1705,
+			"sha256": "4a1b6c34e635479b7c93ca5db7886cc2f76963eac9f728423f3b50313266a351"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3122,
+			"sha256": "6d3fcc7901707e87702499b9f7da6340133c27c538c918194ac124e8bec5fbd6"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 243725,
+			"sha256": "95184e967938e9c39bef5cb8401fd841c6f375a8ed1663270b4353cac44d8d13"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4931,
+			"sha256": "5717720d8f68d8b5863ae1e95deb7eff2ac0b38ad0b7cb36c42d980862fa29a1"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4053576,
+			"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4053576,
+			"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 4053576,
+			"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 2837,
+			"sha256": "f35c5ef88a32ac80d2e43f0c99807e99cbfc5fbbaac87890f5de6459e69dd6f7"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 11512,
+			"sha256": "87a4fa7147f1605497e50dbd83e5694dab582d7da254d81e98c959f8e1f4985a"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 13575,
+			"sha256": "c09f5a40c567561b5828598cedbc80894591fb3303b1c53fff292e3a235700f2"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4045,
+			"sha256": "ff824fffc6e5a9d0fc5c0dc681638704457ebfa85d5d36e02a2363c67661eee0"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1819,
+			"sha256": "2f1b95148f5d3aa1ca5eb8189391d0a7a3322bf0c862b6d01074e5f593d55819"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 3376,
+			"sha256": "ed0434b3b221eb39043d1c67a899fa6032b972b0ee20e294256732cf85db4eb1"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1820,
+			"sha256": "b248172c85904f41930b53959f95609c9bb22eda34f26375dc978c69ac5a4277"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 2822,
+			"sha256": "a71623e31e8452e50d16dd9d2a65a0963db729b0f83609cc0234a4840ee30865"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3847057,
+			"sha256": "29d743858c9e75931bb4908467d9bdce0df749c26fd3a699c044ba125eff2845"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7946,
+			"sha256": "456cb8253e899ff9b9b989653004d7abeb3ec35db7d194a6a07fc36bab2493bd"
+		},
+		{
+			"path": "/brands/geekhub/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7946,
+			"sha256": "dd0c7276f1c887924e6779e3c55e09c71889cd22c07aed19e03c4131f6fbae5c"
+		}
+	]
+}

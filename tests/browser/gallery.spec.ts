@@ -216,7 +216,9 @@ for (const id of projects
 			expect(family.previous.sha256).toBe(project.logo.sha256);
 		}
 		const downloadEvent = page.waitForEvent("download");
-		await page.getByRole("link", { name: "Download original" }).click();
+		await page
+			.getByRole("link", { name: "Download original", exact: true })
+			.click();
 		const download = await downloadEvent;
 		expect(download.suggestedFilename()).toBe(`${id}-transparent.png`);
 		expect(await download.failure()).toBeNull();

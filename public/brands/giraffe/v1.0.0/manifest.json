@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "giraffe",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/giraffe#brand",
+	"root": "https://hexly.ai/brands/giraffe/v1.0.0",
+	"source": "artwork/brands/giraffe/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+		"export": "/brands/giraffe/v1.0.0/official-logo.png",
+		"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+		"bytes": 3073843,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "774800377f2c972039f9999a476d3a784145289317203d21b840f520def78b32",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 646,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png",
+		"sourceRepositoryRevision": "c71543478405f580e6dd36ebac18174f7ae6e474",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/giraffe/2026-09-07-01/02/transparent.png",
+		"export": "/brands/giraffe/v1.0.0/logo.png",
+		"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+		"bytes": 3073843,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "774800377f2c972039f9999a476d3a784145289317203d21b840f520def78b32",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 646,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/giraffe/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 53701,
+			"sha256": "de999047ecbc34ee59091563e019a0d6584881e6a750998cc9bb5da65881078d"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 105591,
+			"sha256": "8074f702464883029d6ea252fd4caea0884cb475ce7affa2633bbd845e0b08b4"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6496,
+			"sha256": "4e54a182b1d13c67663fa1327fb63314bde0f931a3a11de008c1dfdc76781ee6"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 853407,
+			"sha256": "17bccc1ab9bdb15881da432eb62e90aa8b07afb46a4f0a6f425c741e695f152f"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 73422,
+			"sha256": "0ee93c5ce392d6e26937a4cacdc9cf1e1bfdd14903eaa28ac8fc1542fcb4f314"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 60976,
+			"sha256": "ca82d795da787ad7e8e4b88ac4f88cb3dfaa69c8c4ef3a94646b0ede1ad9e27d"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59876,
+			"sha256": "23d53cdf8d991dbb31c9db3fc7aac7ae5bf4c8965489571be67cc862db948135"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 853959,
+			"sha256": "c02aa5eac5f9867b5727ecc3e2731c9160e81a0a7d38c34f1a8192fab3216097"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 71404,
+			"sha256": "79e851884ae3b5afa48baf7255db19db78c1507554d152bb78eb9768a1f8745a"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 66405,
+			"sha256": "3a958df3f96ec42a5e81fe714cd56b78b21a20a5c6e33513a76e7a6fc5e98c5f"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 253291,
+			"sha256": "857a69f283dad14414d5ee48c78a14b85478ddd316e7eb2ceb2cb6dd534d8b86"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3112052,
+			"sha256": "3ffb8768b7b989b9ac9b0021d8ad4b0fbe698b859fa92840e760753185470767"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 396669,
+			"sha256": "58f74fa45dfa9653ccacd6ee5798c00e3dba617bc23a85c069374f693727f0c8"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5113187,
+			"sha256": "a0a891160f779acc998e77af4d92bd2517494de36e252f80a0ca0261fb704686"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1794,
+			"sha256": "a7fe91fd1920cbf6cacd34efedf8887d24d7267e8d85706098a44fdbc92c6824"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 163224,
+			"sha256": "7707c02bd0ae7a4ac8e7cbe384dbe4e04fe41cbed4ce007137a285389f784298"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 163227,
+			"sha256": "5cd59e969d6b9f715826bf91b45046a91e3a55dc77d8e8b6e1e70c0963ab63ab"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 854555,
+			"sha256": "6cd35092677d369de9e56122396c297474edc4032eb8336c9d92b7afd91d9838"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 854555,
+			"sha256": "6cd35092677d369de9e56122396c297474edc4032eb8336c9d92b7afd91d9838"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3073843,
+			"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 854555,
+			"sha256": "6cd35092677d369de9e56122396c297474edc4032eb8336c9d92b7afd91d9838"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 20665,
+			"sha256": "e65009efc16e8a19df9f5460f5d9716710fc7955b35856b729a5253372da1f5a"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 741,
+			"sha256": "8aecf9d2edfd65e8c2c58aff43c056907844634142aa643cb0c69057cf74334b"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1324,
+			"sha256": "5a74e8f4aa1e63e50a6228e876533f7a79a34195c80ae864c0a6af04eaaee013"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 72196,
+			"sha256": "869152183e7d20bdc94e8cb2f73984b45bfc341de44c344e662c7092c8920214"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1973,
+			"sha256": "3ccbe007e062670892417be7a87b414192acad4986d8def2c1475f8ce34d25cf"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3779,
+			"sha256": "eba40fd755b7a7726586bad7b1ce727a9a69337e1f42e8af143154ed0485574b"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 249166,
+			"sha256": "f7ac8c55de34a7905117a444e182141f5acf12ecfdcbce127ee8c68c77806546"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6135,
+			"sha256": "76d58a308fe7d0900b029ac5c6a812a7a86d221b1d42dcd9d219d30206687490"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3073843,
+			"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3073843,
+			"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3073843,
+			"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4449,
+			"sha256": "d86b99a41198d3d868c99c3dfe0da65122b8a6596b17c2ad3f7be05b43a1623e"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8011,
+			"sha256": "8db7fd3c85023e469a401bc5a2f26f4dbb4d664eaa4883c4e6829cb93cdc82f5"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15289,
+			"sha256": "5fd224476976061f6dd5ef5d3004d443b815078ee9ee8d9dbb44203704689921"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5745,
+			"sha256": "12dcd60861fbf83750a727e8df52fd7f4d03b041c96a49d73fd47de5958eede5"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 996,
+			"sha256": "5e30f77327adf7ebaed42cf67492989097385f2cc3bffbb6b71b84f54cadc01c"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4847,
+			"sha256": "d7925bba087748e1f479dc4981bd6bd7a7358fcde97b072ee9c6c73f11ca1a4a"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 997,
+			"sha256": "07ad6d661c125901f2c4066585a38fe99a29ff113d4d631d92031c88762c95c9"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3363,
+			"sha256": "c120ff649bf90ef4d535f433583e38b484dce4a205e9346bd12c8806704c34fe"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2872905,
+			"sha256": "5d686634946fdb67b68a0939778703e4d7ab29434b585da0fc5ed42d0796b157"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7722,
+			"sha256": "37430a55cf91c1e25f8c9e25e8c8f2f94ea0d8fb8a619a0cfe368771deb0e45f"
+		},
+		{
+			"path": "/brands/giraffe/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7722,
+			"sha256": "01b3a46d98b1aebe2dc933e7f77d2d85b7c68761e58589f35683eb7bef90ac6f"
+		}
+	]
+}

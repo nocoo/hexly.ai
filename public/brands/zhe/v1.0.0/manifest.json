@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "zhe",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/zhe#brand",
+	"root": "https://hexly.ai/brands/zhe/v1.0.0",
+	"source": "artwork/brands/zhe/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/zhe.png",
+		"export": "/brands/zhe/v1.0.0/official-logo.png",
+		"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+		"bytes": 3100798,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "b4a1805a9e5a92f52acf313fbc856a3a57946b8ea3e62556a1dac3e46c3ccc33",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/zhe/blob/075c875936e9a244c147ff9d58452398bb1ef3cf/logo.png",
+		"sourceRepositoryRevision": "075c875936e9a244c147ff9d58452398bb1ef3cf",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/zhe/2026-09-07-01/01/transparent.png",
+		"export": "/brands/zhe/v1.0.0/logo.png",
+		"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+		"bytes": 3100798,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "b4a1805a9e5a92f52acf313fbc856a3a57946b8ea3e62556a1dac3e46c3ccc33",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/zhe/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 57836,
+			"sha256": "862514b96d04a0c203d0da0094afaa9cd433512f9bb93f83e745050fcac3c2cc"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 108148,
+			"sha256": "29d7646736ecd83bc5674e10ac4752022eee984aa9d125b994db8b7f3c283cc8"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6365,
+			"sha256": "92fb580a02fdd69dd74d9d74ad1f4223c1df1007342c59eab98356069a5ab42a"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 774759,
+			"sha256": "b1ff380c6f474b2a651005bdaa50d7d50f056d3790ab151f5f7081a1fb92d388"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 61406,
+			"sha256": "cd10466270e70bf581a9c28d5e357a94e29b729e8e2a751e9febd1a5c7cec2e9"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 49342,
+			"sha256": "b1be78973c6b1a0e8c47e0a5538572e57c53dedd5bf777534a14b759989f7fc3"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 48024,
+			"sha256": "18ce9c7982042b9a2291047a9d70fee9b2a30f6fcade93af20d906f97fede062"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 762669,
+			"sha256": "54d3106350d2671fe218fbdb479a5cd2f2c6712f120531ad794f303b85b09aba"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59442,
+			"sha256": "43067c1708a0ad25e85480442b0907d512114f941b122d1f3af33c84b59dae60"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 70566,
+			"sha256": "d14bc65ffd6364cc5b936cd991b6fc630eb2e482f7f47eeea87e509bbdbab54b"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 251953,
+			"sha256": "4b9280bc873a492a6e5ca01d8f659ea826e0470000a0a5cb8afb013149faed4b"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3702966,
+			"sha256": "4b9b30518e6c46175abb7572a4e1fe0d896e6346464e2a935366680c0db78134"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 410191,
+			"sha256": "037b2a75f45c50e941bfd07cc2e3b6b9215ef654fbdb0cad4bba039f0f620c9e"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5769660,
+			"sha256": "396762b02a10c8497b4bb423ea4c09ab1d81dd0b0615a5d85efdc60b70fe2964"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1752,
+			"sha256": "1538aca0216d235af73275cb284de2fe90f2460f51ff1b172811544b5663f125"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 156014,
+			"sha256": "673b3875635a07db64d0a744a6bcd31ee893294806b6091d659789422123f681"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 156043,
+			"sha256": "345d247a7b11d16e47a9f3b11835318478b23d0e196d337c6205582dccffb9fd"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 897817,
+			"sha256": "9e6477604be88314a466c8b21a6b85e1852e2cf92dc7ed5cf2435ec1df268033"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 897817,
+			"sha256": "9e6477604be88314a466c8b21a6b85e1852e2cf92dc7ed5cf2435ec1df268033"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3100798,
+			"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 897817,
+			"sha256": "9e6477604be88314a466c8b21a6b85e1852e2cf92dc7ed5cf2435ec1df268033"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 21756,
+			"sha256": "81f2dde311d368ddf8299f76a49a3a7d1708276a0463d1981d35b0195b63a2dd"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 793,
+			"sha256": "756097ead5ac3289f889b9ccc6d861f0d6db62bf89796ac43c80752f1c3adbfd"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1403,
+			"sha256": "b7f9b8b062f8415a6242714bbf8413d5caaf0d3d5c235803d127ea9b1e10242e"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 72651,
+			"sha256": "6601eddb47a6ad4f5f5c20bc784fd364aff95e21041ac7caf98b902cc81e15ec"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2137,
+			"sha256": "71466f4484d2b19b552a9cfe8c4e261514f8cd2827398fd3680831fe2426966d"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4102,
+			"sha256": "fbbd6130f3bec5e0ce44278a149db2bf95306159b5f62db964746d18be69074a"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 247987,
+			"sha256": "b4e4304f8b949008be4cc861852326ee252b3aa9c530ea4ab78021082be90f04"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6607,
+			"sha256": "a3b2df8f9cbad905c14ba2b4830cb614cd6de0636b8c07f49a5930749d46cf6f"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3100798,
+			"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3100798,
+			"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3100798,
+			"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6165,
+			"sha256": "b2bbb37c140fc7c75d0dde24156480f712a07c4d2e86beb8ba795d330f0a2e2a"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10384,
+			"sha256": "0bb66cd23c90a668854da7c833eb2892caa418a02c42c5953ac7d04166ba1a06"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9516,
+			"sha256": "4416341c7a79caa68376c293a8536c250f195f97825e5553e99d24d649a8e69a"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1037,
+			"sha256": "36260b335430435b4b4c6fdf2408ecb497e8280a0343701e7d4f6d886e8d6a0b"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8284,
+			"sha256": "dd750cd10168c1b58b1a5eb2e45f9900ac947ff6c8fa40d28f9121a292d1e38b"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1038,
+			"sha256": "1fe41190c6ea7888a4c3fc69b21f978837957a25d1023909953efcbf53b7b5ac"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3282,
+			"sha256": "ccdf99fdcf9bc65a9e97a71664202e3da0d2172c5fbfe74a4ea318e3a88f666c"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3376294,
+			"sha256": "4be43cd1cc39d4ddb0396e144f4c377b8c59790592bb18ed2526f1f19d389372"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3067,
+			"sha256": "80f64c7b4fe31b2dd20a712802c5073c7c54595a3c69702088269c21deef8bf2"
+		},
+		{
+			"path": "/brands/zhe/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3067,
+			"sha256": "ac7867a2db09be5068666e4780f08513a9fc6c029348f1b5f09df1aa2b907323"
+		}
+	]
+}

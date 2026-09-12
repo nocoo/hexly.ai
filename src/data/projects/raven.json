@@ -280,5 +280,75 @@
 				"packages/dashboard/src/components/layout/sidebar.tsx"
 			]
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/raven/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 893,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Quill pennants",
+				"zh": "羽翎旗面"
+			},
+			"description": {
+				"en": "Staggered pointed feathers and a separate slender quill suggest an open, asymmetric fan.",
+				"zh": "尖羽错落排开，细长羽轴独立转向，形成不闭合的偏心扇面。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents on a Hexly campaign canvas",
+				"zh": "向右看的靛蓝渡鸦，保留碎片眼睛、紫色羽毛与薄荷点缀，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "One connection, more possibilities.",
+				"zh": "一个连接，更多可能。"
+			}
+		},
+		"description": {
+			"en": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents.",
+			"zh": "向右看的靛蓝渡鸦，保留碎片眼睛、紫色羽毛与薄荷点缀。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Keep the existing portrait's natural frame entry. The full square is placed against the baseline; no anatomy is extended, trimmed or masked. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留原头像自然入框的边界，将完整方形画布贴齐基线；不补画、不截取解剖结构。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥73px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 73px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

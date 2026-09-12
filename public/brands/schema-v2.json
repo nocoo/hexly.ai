@@ -1,0 +1,146 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://hexly.ai/brands/schema-v2.json",
+	"title": "Hexly campaign archive manifest, version 2",
+	"description": "Hexly page and promotional surfaces only. Official project identity, campaign interpretation and independent product UI have separate scopes. Generated campaign artwork never silently replaces a project Logo.",
+	"type": "object",
+	"required": [
+		"schemaVersion",
+		"project",
+		"version",
+		"method",
+		"root",
+		"canonical",
+		"scope",
+		"officialProjectIdentity",
+		"campaignInterpretation",
+		"hero",
+		"files"
+	],
+	"properties": {
+		"schemaVersion": { "const": 2 },
+		"project": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+		"version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+		"method": { "const": "archived-artwork" },
+		"root": {
+			"type": "string",
+			"pattern": "^https://hexly\\.ai/brands/[a-z0-9-]+/v[0-9.]+$"
+		},
+		"canonical": {
+			"type": "string",
+			"pattern": "^https://hexly\\.ai/projects/[a-z0-9-]+#brand$"
+		},
+		"scope": {
+			"type": "object",
+			"required": [
+				"id",
+				"appliesTo",
+				"productUIChanged",
+				"officialIdentityRecolored",
+				"campaignReplacesOfficialIdentity"
+			],
+			"properties": {
+				"id": { "const": "hexly-campaign" },
+				"appliesTo": {
+					"type": "array",
+					"minItems": 1,
+					"items": { "type": "string", "minLength": 1 }
+				},
+				"productUIChanged": { "const": false },
+				"officialIdentityRecolored": { "const": false },
+				"campaignReplacesOfficialIdentity": { "const": false }
+			}
+		},
+		"officialProjectIdentity": {
+			"allOf": [{ "$ref": "#/$defs/identity" }],
+			"required": ["role", "modified"],
+			"properties": {
+				"role": { "const": "official-project-identity" },
+				"modified": { "const": false }
+			}
+		},
+		"campaignInterpretation": {
+			"allOf": [{ "$ref": "#/$defs/identity" }],
+			"required": [
+				"role",
+				"sameBytesAsOfficial",
+				"sourceMethod",
+				"sourceAdoptionStatus",
+				"replacesOfficialIdentity",
+				"newGenerationCalls"
+			],
+			"properties": {
+				"role": { "const": "hexly-campaign-interpretation" },
+				"sameBytesAsOfficial": { "type": "boolean" },
+				"sourceMethod": {
+					"enum": ["gpt-image-2", "retained-original", "reference-adaptation"]
+				},
+				"sourceAdoptionStatus": { "enum": ["review", "adopted"] },
+				"replacesOfficialIdentity": { "const": false },
+				"newGenerationCalls": { "const": 0 }
+			}
+		},
+		"hero": {
+			"type": "object",
+			"required": [
+				"method",
+				"nativeGPTOutput",
+				"crop",
+				"recolor",
+				"placements"
+			],
+			"properties": {
+				"method": { "const": "authored-composition" },
+				"nativeGPTOutput": { "const": false },
+				"crop": { "const": false },
+				"recolor": { "const": false },
+				"placements": { "type": "object", "required": ["wide", "square"] }
+			}
+		},
+		"files": {
+			"type": "array",
+			"minItems": 1,
+			"items": { "$ref": "#/$defs/file" }
+		}
+	},
+	"$defs": {
+		"sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+		"identity": {
+			"type": "object",
+			"required": [
+				"path",
+				"export",
+				"sha256",
+				"rgbaSha256",
+				"bytes",
+				"width",
+				"height"
+			],
+			"properties": {
+				"path": { "type": "string", "pattern": "^/(logos|brands)/" },
+				"export": {
+					"type": "string",
+					"pattern": "^/brands/[a-z0-9-]+/v[0-9.]+/[^/]+$"
+				},
+				"sha256": { "$ref": "#/$defs/sha256" },
+				"rgbaSha256": { "$ref": "#/$defs/sha256" },
+				"bytes": { "type": "integer", "minimum": 1 },
+				"width": { "type": "integer", "minimum": 1 },
+				"height": { "type": "integer", "minimum": 1 }
+			}
+		},
+		"file": {
+			"type": "object",
+			"required": ["path", "role", "bytes", "sha256"],
+			"properties": {
+				"path": {
+					"type": "string",
+					"pattern": "^/brands/[a-z0-9-]+/v[0-9.]+/[^/]+$"
+				},
+				"role": { "type": "string", "minLength": 1 },
+				"bytes": { "type": "integer", "minimum": 1 },
+				"sha256": { "$ref": "#/$defs/sha256" }
+			}
+		}
+	}
+}

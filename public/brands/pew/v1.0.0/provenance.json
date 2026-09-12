@@ -1,0 +1,210 @@
+{
+	"project": "pew",
+	"brandVersion": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/pew-2026-09-07.png",
+		"export": "/brands/pew/v1.0.0/official-logo.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"bytes": 3043802,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+		"edgePixels": {
+			"top": 0,
+			"right": 551,
+			"bottom": 911,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
+		"sourceRepositoryRevision": "5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/pew/2026-09-06-01/04/transparent.png",
+		"export": "/brands/pew/v1.0.0/logo.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"bytes": 3043802,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+		"edgePixels": {
+			"top": 0,
+			"right": 551,
+			"bottom": 911,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"generation": {
+		"provider": "Azure OpenAI / Foundry",
+		"model": "gpt-image-2",
+		"batch": "2026-09-06-01",
+		"requestId": "fb7cb69d-803e-4c72-9b86-ceb5aa1ba5ed",
+		"promptSha256": "e0026ba34745983744b7769fca1740286666ba95dc9c45ec36949550e704a0ec",
+		"raw": {
+			"path": "/logos/family/pew/2026-09-06-01/04/raw.png",
+			"bytes": 2127739,
+			"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b",
+			"width": 2048,
+			"height": 2048
+		},
+		"originallyGeneratedAt": "2026-09-06T08:28:58.307179+00:00",
+		"madeInThisRelease": false
+	},
+	"records": [
+		{
+			"path": "artwork/logo-family/pew/2026-09-06-01/request.json",
+			"sha256": "4f64c118953c6be30e89a31711321999173e460dd649bf807dfab1b129fe5e2c",
+			"bytes": 1519,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/pew/2026-09-06-01/request.json"
+		},
+		{
+			"path": "artwork/logo-family/pew/2026-09-06-01/response.json",
+			"sha256": "ad2db9a0b39ec518bbd23bf9adcfe0ac8329960025a40ee8dbdbc96238ad56fa",
+			"bytes": 846,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/pew/2026-09-06-01/response.json"
+		},
+		{
+			"path": "artwork/logo-family/pew/2026-09-06-01/prompt.txt",
+			"sha256": "e0026ba34745983744b7769fca1740286666ba95dc9c45ec36949550e704a0ec",
+			"bytes": 7087,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/pew/2026-09-06-01/prompt.txt"
+		},
+		{
+			"path": "artwork/logo-family/pew/2026-09-06-01/raw-review.json",
+			"sha256": "19d5bc9d03f8c96a62215533f240b37dae9f10109893de25cb7801ecf1bcfe04",
+			"bytes": 437,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/pew/2026-09-06-01/raw-review.json"
+		},
+		{
+			"path": "artwork/logo-family/pew/2026-09-06-01/finishing/04/manifest.json",
+			"sha256": "c7ec7b74e9511e8099e1463fa54450d03fada79483bd6ba540c8cd86b724f346",
+			"bytes": 9567,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/pew/2026-09-06-01/finishing/04/manifest.json"
+		},
+		{
+			"path": "artwork/logo-family/pew/2026-09-06-01/finishing/04/settings.json",
+			"sha256": "96bba3743a7ddf03a5a5764f7ec05c5834e7e03d7e4e3d464bcfbc05c452f3c3",
+			"bytes": 2407,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/pew/2026-09-06-01/finishing/04/settings.json"
+		}
+	],
+	"sourceRights": "Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.",
+	"hero": {
+		"method": "authored-composition",
+		"newGenerationCalls": 0,
+		"nativeGPTOutput": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"texture": {
+		"method": "Authored SVG support graphic from the project's distinct archived pattern; not a logo tracing",
+		"name": {
+			"en": "Zebra rhythm",
+			"zh": "斑马节奏"
+		},
+		"description": {
+			"en": "Three tapered sweeps carry the zebra’s stripe rhythm into the surrounding space, with unequal gaps and open ends.",
+			"zh": "三道渐细的曲线疏密错落，将斑马条纹的节奏延伸到留白中。"
+		},
+		"source": "artwork/logo-family/pew/2026-09-06-01/finishing/04/settings.json",
+		"sourceSha256": "96bba3743a7ddf03a5a5764f7ec05c5834e7e03d7e4e3d464bcfbc05c452f3c3",
+		"layers": [
+			{
+				"d": "M-76 365C63 283 96 165 137-64H207C185 179 141 318-49 462Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-89 594C154 484 254 208 285-61H349C323 241 223 503-53 673Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-73 812C215 685 385 336 410-49H455C473 312 319 692-11 879Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-63 471C141 321 183 180 206-60",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-65 681C224 506 323 245 352-60",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-31 891C320 699 473 315 458-49",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-88 1007C157 919 293 792 392 610C325 821 184 988 2 1090Z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [-89, -64, 459.00181094261325, 1090],
+		"transform": {
+			"scale": 0.37435008665511266,
+			"x": 186.74489500554205,
+			"y": 63.95840554592721,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"finishing": {
+		"archive": "artwork/logo-family/pew/2026-09-06-01/finishing/04",
+		"sourceAdoptionUnchanged": true
+	},
+	"build": {
+		"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+		"recipe": "artwork/brands/pew/v1.0.0/recipe.json",
+		"recipeSha256": "16c090f4d3d96bc10c73a236b010d9e065f4fb7fa609564c1326f047bdb171aa",
+		"tool": "artwork/brands/collection-2026-09/export.ts",
+		"toolSha256": "5f44dfe0f67d0846a84995d3bd030484a9757168336e7f82f3aefe2e2bff46ce",
+		"typographyTool": "artwork/brands/collection-2026-09/outline.py",
+		"typographyToolSha256": "a75ef37be4e93aa7454293339cdac247aadd406086dd42639a327d5ce8f611cd",
+		"sharp": "0.35.4"
+	}
+}

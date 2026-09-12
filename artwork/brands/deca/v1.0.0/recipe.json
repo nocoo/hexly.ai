@@ -1,0 +1,112 @@
+{
+	"schemaVersion": 1,
+	"project": "deca",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "A familiar line to your agents.",
+		"zh": "用熟悉的方式，接通智能体。"
+	},
+	"description": {
+		"en": "Midnight teal rotary desk telephone.",
+		"zh": "午夜青色旋转拨号电话。"
+	},
+	"foreground": {
+		"path": "/logos/family/deca/2026-09-07-01/01/transparent.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Switchboard paths",
+			"zh": "交换台线路"
+		},
+		"description": {
+			"en": "Three rounded routing paths connect paired terminals, recalling a telephone switchboard.",
+			"zh": "三条圆转线路连接成对端点，呼应旋转电话背后的交换台。"
+		},
+		"source": "artwork/logo-family/deca/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "9c4e4338ab7036333b5e6b0c32137e1dbf89d5628f25756f03bec2f13c2d4187",
+		"layers": [
+			{
+				"d": "M-20 72H80q40 0 40 40V760q0 40 40 40H1060",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M-20 120H128q40 0 40 40V715q0 40 40 40H1060",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M-20 168H176q40 0 40 40V670q0 40 40 40H1060",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M822 55h22v22h-22ZM867 100h22v22h-22ZM912 145h22v22h-22Z",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			}
+		],
+		"bounds": [-20.0, 55.0, 1060.0, 800.0],
+		"transform": {
+			"scale": 0.4,
+			"x": 48.0,
+			"y": 85.0,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Deca",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 341.794,
+		"height": 131.96,
+		"glyphBoundsUnits": [46.3499755859375, -14, 2259.165315047554, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"repositoryRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,507 @@
+{
+	"project": "runner",
+	"brandVersion": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+		"export": "/brands/runner/v1.0.0/official-logo.png",
+		"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+		"bytes": 4230760,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png",
+		"sourceRepositoryRevision": "a5d786175358dee245773bd98af83eef4bbf5689",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/runner/2026-09-07-01/01/transparent.png",
+		"export": "/brands/runner/v1.0.0/logo.png",
+		"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+		"bytes": 4230760,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"generation": {
+		"provider": "Azure OpenAI / Foundry",
+		"model": "gpt-image-2",
+		"batch": "2026-09-07-01",
+		"requestId": "0dc87e5e-ff45-4586-981a-38f829b88460",
+		"promptSha256": "f15d36ff4fe14c7b7dd1b73af29b868ef98aa339839d0cb7c2aded667741eec7",
+		"raw": {
+			"path": "/logos/family/runner/2026-09-07-01/01/raw.png",
+			"bytes": 3875299,
+			"sha256": "d52f1b25e37de86f00be2902408597b743867e4435d4b505aa1c4bb11ef1fa5c",
+			"width": 2048,
+			"height": 2048
+		},
+		"originallyGeneratedAt": "2026-09-07T09:59:08.536607+00:00",
+		"madeInThisRelease": false
+	},
+	"records": [
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/request.json",
+			"sha256": "a304e756c1b06bba95dc1cd805c1dd641aa79aae33cd3d414021c52d82c6a092",
+			"bytes": 1288,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/request.json"
+		},
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/response.json",
+			"sha256": "67c20904280707a91515ccfc2ab8924aaea02c8df073c0bb745440fd684bbf81",
+			"bytes": 839,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/response.json"
+		},
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/prompt.txt",
+			"sha256": "f15d36ff4fe14c7b7dd1b73af29b868ef98aa339839d0cb7c2aded667741eec7",
+			"bytes": 2718,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/prompt.txt"
+		},
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/raw-review.json",
+			"sha256": "0cd2436266b43af2f9e1539b3ce8cefc49bd4581dc66daa65d3a973f479bfd2b",
+			"bytes": 764,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/raw-review.json"
+		},
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/authorization.json",
+			"sha256": "c2ae1602459093f80252729356f31ca10445c0dfce4cc87a62f85b98f9d6ddbe",
+			"bytes": 837,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/authorization.json"
+		},
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/finishing/01/manifest.json",
+			"sha256": "1f2431c685edf6fc3d9a93ecde8d52872c65c4d34ff6002997dd24828075a702",
+			"bytes": 16284,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/finishing/01/manifest.json"
+		},
+		{
+			"path": "artwork/logo-family/runner/2026-09-07-01/finishing/01/settings.json",
+			"sha256": "9b41f0cd0121a1025004c59341099cb4560add37906bf0d03ed01fe6edede11a",
+			"bytes": 7895,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/runner/2026-09-07-01/finishing/01/settings.json"
+		}
+	],
+	"sourceRights": "Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.",
+	"hero": {
+		"method": "authored-composition",
+		"newGenerationCalls": 0,
+		"nativeGPTOutput": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"texture": {
+		"method": "Authored SVG support graphic from the project's distinct archived pattern; not a logo tracing",
+		"name": {
+			"en": "Scheduled minutes",
+			"zh": "排程刻度"
+		},
+		"description": {
+			"en": "An interrupted minute track, an offset timing arc and grouped launch ticks make time visible.",
+			"zh": "断续分针轨道、偏心计时弧与成组启动刻度，让时间安排清楚可见。"
+		},
+		"source": "artwork/logo-family/runner/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "9b41f0cd0121a1025004c59341099cb4560add37906bf0d03ed01fe6edede11a",
+		"layers": [
+			{
+				"d": "M121 475a414 414 0 1 1 724.5 273.24",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M87 475a448 448 0 1 1 784.0 295.68",
+				"tone": "motif",
+				"strokeWidth": 1.5
+			},
+			{
+				"d": "M1005.00 475.00l14.00 0.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M1002.43 524.13l5.97 0.63",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M994.73 572.72l5.87 1.25",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M982.00 620.24l5.71 1.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M964.37 666.17l5.48 2.44",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M942.03 710.00l12.12 7.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M915.24 751.26l4.85 3.53",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M884.28 789.49l4.46 4.01",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M849.49 824.28l4.01 4.46",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M811.26 855.24l3.53 4.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M770.00 882.03l7.00 12.12",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M726.17 904.37l2.44 5.48",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M680.24 922.00l1.85 5.71",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M632.72 934.73l1.25 5.87",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M584.13 942.43l0.63 5.97",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M535.00 945.00l0.00 14.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M485.87 942.43l-0.63 5.97",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M437.28 934.73l-1.25 5.87",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M389.76 922.00l-1.85 5.71",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M343.83 904.37l-2.44 5.48",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M300.00 882.03l-7.00 12.12",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M258.74 855.24l-3.53 4.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M220.51 824.28l-4.01 4.46",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M185.72 789.49l-4.46 4.01",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M154.76 751.26l-4.85 3.53",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M127.97 710.00l-12.12 7.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M105.63 666.17l-5.48 2.44",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M88.00 620.24l-5.71 1.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M75.27 572.72l-5.87 1.25",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M67.57 524.13l-5.97 0.63",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M65.00 475.00l-14.00 0.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M67.57 425.87l-5.97 -0.63",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M75.27 377.28l-5.87 -1.25",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M88.00 329.76l-5.71 -1.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M105.63 283.83l-5.48 -2.44",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M127.97 240.00l-12.12 -7.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M154.76 198.74l-4.85 -3.53",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M185.72 160.51l-4.46 -4.01",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M220.51 125.72l-4.01 -4.46",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M258.74 94.76l-3.53 -4.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M300.00 67.97l-7.00 -12.12",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M343.83 45.63l-2.44 -5.48",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M389.76 28.00l-1.85 -5.71",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M437.28 15.27l-1.25 -5.87",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M485.87 7.57l-0.63 -5.97",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M535.00 5.00l-0.00 -14.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M584.13 7.57l0.63 -5.97",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M632.72 15.27l1.25 -5.87",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M680.24 28.00l1.85 -5.71",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M726.17 45.63l2.44 -5.48",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M770.00 67.97l7.00 -12.12",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M811.26 94.76l3.53 -4.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M849.49 125.72l4.01 -4.46",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M884.28 160.51l4.46 -4.01",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M915.24 198.74l4.85 -3.53",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M942.03 240.00l12.12 -7.00",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M964.37 283.83l5.48 -2.44",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M982.00 329.76l5.71 -1.85",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M994.73 377.28l5.87 -1.25",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M1002.43 425.87l5.97 -0.63",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			}
+		],
+		"bounds": [51, -9, 1019, 959],
+		"transform": {
+			"scale": 0.4462809917355372,
+			"x": 17.239669421487605,
+			"y": 44.01652892561984,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"finishing": {
+		"archive": "artwork/logo-family/runner/2026-09-07-01/finishing/01",
+		"sourceAdoptionUnchanged": true
+	},
+	"build": {
+		"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+		"recipe": "artwork/brands/runner/v1.0.0/recipe.json",
+		"recipeSha256": "b343605e306b02834df69c7ba0f39f714dbc2bd608590b4315eb7c7138d2ac2f",
+		"tool": "artwork/brands/collection-2026-09/export.ts",
+		"toolSha256": "5f44dfe0f67d0846a84995d3bd030484a9757168336e7f82f3aefe2e2bff46ce",
+		"typographyTool": "artwork/brands/collection-2026-09/outline.py",
+		"typographyToolSha256": "a75ef37be4e93aa7454293339cdac247aadd406086dd42639a327d5ce8f611cd",
+		"sharp": "0.35.4"
+	}
+}

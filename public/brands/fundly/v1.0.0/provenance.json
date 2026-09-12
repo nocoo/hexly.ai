@@ -1,0 +1,223 @@
+{
+	"project": "fundly",
+	"brandVersion": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/fundly.svg",
+		"export": "/brands/fundly/v1.0.0/official-logo.svg",
+		"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+		"bytes": 456,
+		"width": 32,
+		"height": 32,
+		"channels": 4,
+		"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+		"edgePixels": {
+			"top": 24,
+			"right": 24,
+			"bottom": 24,
+			"left": 24
+		},
+		"sourceUrl": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+		"sourceRepositoryRevision": "6de762074e00011009f7604bbeeb7c0b04923c00",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/fundly/2026-09-07-01/02/transparent.png",
+		"export": "/brands/fundly/v1.0.0/logo.png",
+		"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f",
+		"bytes": 1928579,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "d65c30e99247f3cdf1c19569f5f08fdb15f1fc54ac98d2bb249a89c899e703b7",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": false,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "review",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"generation": {
+		"provider": "Azure OpenAI / Foundry",
+		"model": "gpt-image-2",
+		"batch": "2026-09-07-01",
+		"requestId": "182e1421-f696-4802-8307-21d4db47b810",
+		"promptSha256": "bebf03836c0e20036df03831cf73275f17c27293b8072372d911c9ca620e22c9",
+		"raw": {
+			"path": "/logos/family/fundly/2026-09-07-01/02/raw.png",
+			"bytes": 1490901,
+			"sha256": "967f052960b265d4e6bbfa6b9ba60ec5412063fa9ec420f28a1d16d3aa8699a6",
+			"width": 2048,
+			"height": 2048
+		},
+		"originallyGeneratedAt": "2026-09-07T12:18:03.177718+00:00",
+		"madeInThisRelease": false
+	},
+	"records": [
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/request.json",
+			"sha256": "60b30776d24616999d924cf854b6e71ef1e55ae7e5384aa9340e0a537b73263c",
+			"bytes": 1525,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/request.json"
+		},
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/response.json",
+			"sha256": "9f508acf9ad4cc3c78683a0bad74d5bc0128e6d6cd607e6493c6875736aef9ec",
+			"bytes": 839,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/response.json"
+		},
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/prompt.txt",
+			"sha256": "bebf03836c0e20036df03831cf73275f17c27293b8072372d911c9ca620e22c9",
+			"bytes": 4643,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/prompt.txt"
+		},
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/raw-review.json",
+			"sha256": "3947e7f97e57aadecb304b712af78736fcff2a267847477ae42389433a396f0a",
+			"bytes": 1083,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/raw-review.json"
+		},
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/authorization.json",
+			"sha256": "d6921afc1f77e2cafe1cb0380b017f4826d9de9aa26103c448391599b76be2a9",
+			"bytes": 1407,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/authorization.json"
+		},
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/finishing/02/manifest.json",
+			"sha256": "d82b22f4d77babee92900f1300975c8bfabf5f8ab3d0f77c691193c1eca6eed5",
+			"bytes": 11290,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/finishing/02/manifest.json"
+		},
+		{
+			"path": "artwork/logo-family/fundly/2026-09-07-01/finishing/02/settings.json",
+			"sha256": "16e59edfd0e685398ca7dbf3cabb6d91273988617f454bd3ca857122322be793",
+			"bytes": 3258,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/fundly/2026-09-07-01/finishing/02/settings.json"
+		}
+	],
+	"sourceRights": "Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.",
+	"hero": {
+		"method": "authored-composition",
+		"newGenerationCalls": 0,
+		"nativeGPTOutput": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"texture": {
+		"method": "Authored SVG support graphic from the project's distinct archived pattern; not a logo tracing",
+		"name": {
+			"en": "Far-horizon sightlines",
+			"zh": "远眺视线"
+		},
+		"description": {
+			"en": "Broad horizon bands open toward the penguin’s gaze, with restrained sighting ticks in the distance.",
+			"zh": "宽阔地平线朝企鹅的视线展开，远处只留少量观测刻度。"
+		},
+		"source": "artwork/logo-family/fundly/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "16e59edfd0e685398ca7dbf3cabb6d91273988617f454bd3ca857122322be793",
+		"layers": [
+			{
+				"d": "M-96 247C161 115 492 141 699 219L676 264C454 195 190 171-94 301Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-91 305C182 159 445 189 686 261",
+				"tone": "motif",
+				"strokeWidth": 19
+			},
+			{
+				"d": "M-95 282C173 139 451 166 695 238",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M-130 449C105 310 287 280 480 316",
+				"tone": "motif",
+				"strokeWidth": 7
+			},
+			{
+				"d": "M-115 462C108 329 286 300 477 334",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M84 92h52M110 66v52M207 124h28M221 110v28",
+				"tone": "motif",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M818 1070C937 908 1006 890 1120 926L1120 1059Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M841 1062C957 925 1026 916 1120 948",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		],
+		"bounds": [-130, 66, 1120, 1070],
+		"transform": {
+			"scale": 0.3456,
+			"x": 84.928,
+			"y": 59.69919999999999,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"finishing": {
+		"archive": "artwork/logo-family/fundly/2026-09-07-01/finishing/02",
+		"sourceAdoptionUnchanged": true
+	},
+	"build": {
+		"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+		"recipe": "artwork/brands/fundly/v1.0.0/recipe.json",
+		"recipeSha256": "384eee6cd6a85604181a55fb4b692b78b33ee8c62905d0d3641102a50e9be1ee",
+		"tool": "artwork/brands/collection-2026-09/export.ts",
+		"toolSha256": "5f44dfe0f67d0846a84995d3bd030484a9757168336e7f82f3aefe2e2bff46ce",
+		"typographyTool": "artwork/brands/collection-2026-09/outline.py",
+		"typographyToolSha256": "a75ef37be4e93aa7454293339cdac247aadd406086dd42639a327d5ce8f611cd",
+		"sharp": "0.35.4"
+	}
+}

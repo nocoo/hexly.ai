@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "signoff-now",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/signoff-now#brand",
+	"root": "https://hexly.ai/brands/signoff-now/v1.0.0",
+	"source": "artwork/brands/signoff-now/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+		"export": "/brands/signoff-now/v1.0.0/official-logo.png",
+		"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+		"bytes": 3963278,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "29dd63381dfdda91cf723593090cc28bd1fea16c4e0d525d4ea9bb61a5ad0e03",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/logo.png",
+		"sourceRepositoryRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/signoff-now/2026-09-07-01/01/transparent.png",
+		"export": "/brands/signoff-now/v1.0.0/logo.png",
+		"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+		"bytes": 3963278,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "29dd63381dfdda91cf723593090cc28bd1fea16c4e0d525d4ea9bb61a5ad0e03",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/signoff-now/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 51577,
+			"sha256": "21efa0991c836fe845321721c3b284a1e9916a2e8d0bee06473a94101cd1cd2e"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 106354,
+			"sha256": "2f4fed7b9ef303ca7c67998959007ca75c323896551e593131cc7d2adba4e63a"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6449,
+			"sha256": "5df66c4deb55b70cf1ad15bf1887f66cec32dda40fe665ddb079b23b287f54cf"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 854469,
+			"sha256": "e59f10135c5f10dee8db4b7a3e7e82970b75503dd23a8ac35d586dee27e96b3f"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 63364,
+			"sha256": "365f258a9d1dcf3df924baeb971a291342de48ee2112e30ae4327baefddd7dd9"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 48942,
+			"sha256": "ff696fc6c6d88b30272462271f391b17108b75a0eacf1c9489f84f5771b2e478"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47310,
+			"sha256": "6017b8d29e973af5b9fb4caefdce6a8d1e3a04ff766d96b09aa563e02ca29207"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 856706,
+			"sha256": "45382e30ecfe036ed3e25160f384b10cec8913f8800b379fdc5e1b04c885b340"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 60262,
+			"sha256": "e595678dfe4b83db847462f7b781dbfcd4f591b873ca63684b2e80d0c7931c9c"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 63145,
+			"sha256": "236b5c59ec50c310cee2d5e03c470aa31267bc630967869279dfeb0af1210e68"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 268178,
+			"sha256": "255797103e3f4da20a4332aac01c69b1e2f61bb8d77e0f33e399e59846189780"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3992621,
+			"sha256": "1abdebbeac922638b59da3b952fa35cc53a2d8b0bfd786d8eed576fab435ffb5"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 380203,
+			"sha256": "3ef8d9401673a9d98748a7f7258ce67514584b806e00c576154b249eecc6beca"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5537041,
+			"sha256": "b13e360b3e5ce4314d357d7fbcd287e149eba119e5d59b7722ccfae058694930"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1798,
+			"sha256": "e70d6d77f05ae00a57a0360ec3002afd2f0590812b7839d24140972f4ae22211"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 177386,
+			"sha256": "9d8d608ffb82bb3a3d0cb066268b139d36151d98e1d275e3363b93b0234e4481"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 176957,
+			"sha256": "bfcfebd5041786afcea816a524a31c676f6b17c0c867fd058dea27794f6f7cb4"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1007167,
+			"sha256": "f651d21c7b38e84126acaff40d428a38e1d372a4312248174b09c877bb592da9"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1007167,
+			"sha256": "f651d21c7b38e84126acaff40d428a38e1d372a4312248174b09c877bb592da9"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3963278,
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1007167,
+			"sha256": "f651d21c7b38e84126acaff40d428a38e1d372a4312248174b09c877bb592da9"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 20453,
+			"sha256": "281e3685a23fb240a5448ca9b4c662443b1ddec26c6cf71a7d8cf6ac09fef8bf"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 702,
+			"sha256": "e0e62fefc1405f9251c3ef0b128c7f80d9813a7a9f7dfa50acd6a7dd6376c889"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1235,
+			"sha256": "b4b7d7740aaa543c342bde7ec2f3ea0697e7f819c7339a2e6c7f24aebd1ea6d3"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 73628,
+			"sha256": "56ff4d79cd1f6724fae38e5488e1aeb5cf37bc63d0d56cd491496ad7ed0d9120"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1899,
+			"sha256": "2cdbaed93e9b2e22ebcf80e3dd463c563b162065a4a2d2d1a12a532599824501"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3662,
+			"sha256": "a3cf8735d9f9ab52ce11595407d465ac0991572381b861a09c3f693ab22b3f2a"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 266458,
+			"sha256": "087d9c9e18c880f334956deff9ee713e8e076aee83bb30bee62d6debacac1792"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5908,
+			"sha256": "91ac748744520dc2cc394f0a8ca3f72945690fbf222f6158bb478895fc9c92c6"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3963278,
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3963278,
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3963278,
+			"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 2877,
+			"sha256": "e1b4a6b60f041cc8b1f31d700ea7511fdae517e61763428a8eb67365dbe9c7f7"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8815,
+			"sha256": "ebf26edb8e650af6b654b133f92d27157293ee4a0f0db2c4fcb2d24da86e1d82"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 13636,
+			"sha256": "1fa78eb83e4f288ed4a671050fd04991afd6fa5894b87aaafdaaef67b3962b43"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 2570,
+			"sha256": "fec05ddd350e07dc6a9ebbebb9a46b685f9eae01d9905e469f60be071b764dfd"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 981,
+			"sha256": "e1f4b4a8603b6c1937f8b7eb28a79dd7b310bf95c101485b6a13b2e963b721e0"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 2439,
+			"sha256": "114cf967572f808e5acead35b487e8b7925040376542ee9e60f29b4e8589135e"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 982,
+			"sha256": "1de2e34718fd597e25aa5d0727b18c922c51d83a2504e3b54f8d94cd744c9786"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 2878,
+			"sha256": "f5f2582a53671a8aa5b3a922dcaea6fc2108a002bfd97e433a6ec9902f8b47f4"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3666257,
+			"sha256": "1b235bb369ea1bcb95d3425265a1edd6c52bcc0b16913be6f4dfb88702ab8333"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 11696,
+			"sha256": "7723206fe59296bdf4c564d19566dd2dbe32448ee2b35968de1858a6e1529323"
+		},
+		{
+			"path": "/brands/signoff-now/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 11696,
+			"sha256": "861844ccea53dd396bb6766bcb1e2b00cde49ba766480cb9b4c7ff67f84fd1f0"
+		}
+	]
+}

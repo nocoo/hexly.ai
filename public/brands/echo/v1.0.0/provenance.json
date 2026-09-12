@@ -1,0 +1,237 @@
+{
+	"project": "echo",
+	"brandVersion": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/echo-family-2026-09-07-01-01.png",
+		"export": "/brands/echo/v1.0.0/official-logo.png",
+		"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+		"bytes": 5170077,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "bebeeb294d53708267fe2816fdfccfc76fb60ce7a13151ea00c92179ff723d3d",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/logo.png",
+		"sourceRepositoryRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/echo/2026-09-07-01/01/transparent.png",
+		"export": "/brands/echo/v1.0.0/logo.png",
+		"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+		"bytes": 5170077,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "bebeeb294d53708267fe2816fdfccfc76fb60ce7a13151ea00c92179ff723d3d",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"generation": {
+		"provider": "Azure OpenAI / Foundry",
+		"model": "gpt-image-2",
+		"batch": "2026-09-07-01",
+		"requestId": "26ff594f-28db-4342-9be9-2eefc02931cb",
+		"promptSha256": "06dd90042bab49e3a1c83db025093d675e4b37a3120ec40a8e240db196d9bbe2",
+		"raw": {
+			"path": "/logos/family/echo/2026-09-07-01/01/raw.png",
+			"bytes": 4358726,
+			"sha256": "bce159d3b8a5b853cebb62f894b07f68c68aec8ffbc6d79bd9b7f47ac69cde25",
+			"width": 2048,
+			"height": 2048
+		},
+		"originallyGeneratedAt": "2026-09-07T09:56:42.298308+00:00",
+		"madeInThisRelease": false
+	},
+	"records": [
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/request.json",
+			"sha256": "7bcd32c028344d20c89ba7f70763512f2f3e541a285d74a4b1a88491ac55a324",
+			"bytes": 1288,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/request.json"
+		},
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/response.json",
+			"sha256": "6b09f7e78f42e4263a4cbb0cb681153caaf86a7116bbac824e46578e46e343a8",
+			"bytes": 839,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/response.json"
+		},
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/prompt.txt",
+			"sha256": "06dd90042bab49e3a1c83db025093d675e4b37a3120ec40a8e240db196d9bbe2",
+			"bytes": 2745,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/prompt.txt"
+		},
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/raw-review.json",
+			"sha256": "f5e24e6b8d1cd35d4d79ce5652375f3832dad94bf114243490192eeb4d306263",
+			"bytes": 683,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/raw-review.json"
+		},
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/authorization.json",
+			"sha256": "2386536a22d9726c900b495d9710f95ea3ab64263bd9c77e70924a7a73d20301",
+			"bytes": 837,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/authorization.json"
+		},
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/finishing/01/manifest.json",
+			"sha256": "b4e74bea7d0f516acf7b921acee25710c539f1ae5793bfaabc46cf68e0501a3a",
+			"bytes": 10681,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/finishing/01/manifest.json"
+		},
+		{
+			"path": "artwork/logo-family/echo/2026-09-07-01/finishing/01/settings.json",
+			"sha256": "00da444820aa2d977bc82fa405a77f91af32a9847116d14f67d15518b4b6006a",
+			"bytes": 2640,
+			"url": "https://github.com/nocoo/hexly.ai/blob/d600805f7c2833d601bc32d6e3db0b02360eb0c6/artwork/logo-family/echo/2026-09-07-01/finishing/01/settings.json"
+		}
+	],
+	"sourceRights": "Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.",
+	"hero": {
+		"method": "authored-composition",
+		"newGenerationCalls": 0,
+		"nativeGPTOutput": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"texture": {
+		"method": "Authored SVG support graphic from the project's distinct archived pattern; not a logo tracing",
+		"name": {
+			"en": "Survey bearings",
+			"zh": "勘测方位"
+		},
+		"description": {
+			"en": "Latitude arcs, a sparse meridian fan and short bearing marks extend the compass’s sense of direction.",
+			"zh": "纬线弧、稀疏经线与短方位刻度，将罗盘的方向感延伸到画面之外。"
+		},
+		"source": "artwork/logo-family/echo/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "00da444820aa2d977bc82fa405a77f91af32a9847116d14f67d15518b4b6006a",
+		"layers": [
+			{
+				"d": "M-60 360a180 125.99999999999999 0 1 1 360 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M-155 360a275 192.5 0 1 1 550 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M-260 360a380 266.0 0 1 1 760 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M-390 360a510 357.0 0 1 1 1020 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M690 -50Q520 500 690 1070",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M790 -50Q620 500 790 1070",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M890 -50Q720 500 890 1070",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M100 90l20 -20M132 104l20 -20M164 118l20 -20M832 922l20 -20M864 936l20 -20",
+				"tone": "motif",
+				"strokeWidth": 1.9
+			}
+		],
+		"bounds": [-390, -50, 890, 1070],
+		"transform": {
+			"scale": 0.3375,
+			"x": 171.625,
+			"y": 83.875,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"finishing": {
+		"archive": "artwork/logo-family/echo/2026-09-07-01/finishing/01",
+		"sourceAdoptionUnchanged": true
+	},
+	"build": {
+		"baseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+		"recipe": "artwork/brands/echo/v1.0.0/recipe.json",
+		"recipeSha256": "409e619a4c677574845a599c967ff62436f93269eb9bb3f880d1bd4cfdd698e7",
+		"tool": "artwork/brands/collection-2026-09/export.ts",
+		"toolSha256": "5f44dfe0f67d0846a84995d3bd030484a9757168336e7f82f3aefe2e2bff46ce",
+		"typographyTool": "artwork/brands/collection-2026-09/outline.py",
+		"typographyToolSha256": "a75ef37be4e93aa7454293339cdac247aadd406086dd42639a327d5ce8f611cd",
+		"sharp": "0.35.4"
+	}
+}

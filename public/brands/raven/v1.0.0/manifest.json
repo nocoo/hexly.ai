@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "raven",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/raven#brand",
+	"root": "https://hexly.ai/brands/raven/v1.0.0",
+	"source": "artwork/brands/raven/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+		"export": "/brands/raven/v1.0.0/official-logo.png",
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"bytes": 2327803,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "a9943f772e250c4f7b6a9dad5a10163327a4219d7f9384f7363ee02c99f8d7c6",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1764,
+			"left": 296
+		},
+		"sourceUrl": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+		"sourceRepositoryRevision": "c59fe3ad5a0aea2e849b2b9ee00be189091c9faf",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/raven/2026-09-07-04/02/transparent.png",
+		"export": "/brands/raven/v1.0.0/logo.png",
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"bytes": 2327803,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "a9943f772e250c4f7b6a9dad5a10163327a4219d7f9384f7363ee02c99f8d7c6",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1764,
+			"left": 296
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/raven/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 62379,
+			"sha256": "fd63a303953c3704d5b74db94494ee86f60390f183079657cfcd1a2b045cdc0b"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 128269,
+			"sha256": "04036ea2db937f9e51939f236552a7e71bcc5b3b201319a259c1fde1e28cd3fa"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6505,
+			"sha256": "297d305581276e4e3641630eb98927892a145fc68bb913f5d286c9fc9cd3d79e"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 785657,
+			"sha256": "bf23e80222aa5acdcfcee966765799591db433ad1af96f5440aed129efc39397"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 63920,
+			"sha256": "2a52b0e5c557439c410646541fa7993f5ffd6d1c5fd4fdb09191817874c75488"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 51300,
+			"sha256": "7a3064f273d942021e23f2c9028a5f9b65ce7055224e9f450a9b1c3c601405de"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 53288,
+			"sha256": "025cc1c685c703dfa351bdd8cf4b811c0a1914d68fa3eb10f1eaa5befe47a9ad"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 786135,
+			"sha256": "9be417ecdaecc5d5ee2ee6df4415c24256fad407c888bc9ab696cef842d62dd9"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 65226,
+			"sha256": "85b76e6531377b8778a3eeaf62ec8cecc7344853b56f228b2fe40b1006ccd718"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 74810,
+			"sha256": "013aec512fd435e71a552499fcbd6a2887c21bf1910539087b3649a998f3e594"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 261882,
+			"sha256": "f2c38a2b2bd1b4c3172d5515e6fe90c8686e7520453bc63f36cab8fee6fbae68"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2357069,
+			"sha256": "49be5b0f3056b411eab5b3529f1c94f6b880ed6e26a5de25f1cc0048bb2e693c"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 377073,
+			"sha256": "15ccf8874f446f1f49ab3097a2b9aa395348052ce5f9124e5f8fd9ccc88ae3f8"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 3848317,
+			"sha256": "bda85a414525de14ce551d234dbdc44161b447d8cdae0d88f7c6f026382bd32e"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "679e719a26ab9375dda8f95883515f77f84e58b7c94cdd55f552c53d975b60e2"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 179490,
+			"sha256": "922d1dc36bf4ab44d7ea74aced62cbb0f6ca55f2ec42076c1a3ed1313e939e0a"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 178952,
+			"sha256": "c9326da531275c5d9508330188e30d8b6f0a8b95ecab2a3dde47dbdf6e996ac3"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 757191,
+			"sha256": "7dcdb85fb5f09bd0544f11a73a6a060d584a8cc54819c69b98a2fddd9cd1b961"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 757191,
+			"sha256": "7dcdb85fb5f09bd0544f11a73a6a060d584a8cc54819c69b98a2fddd9cd1b961"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2327803,
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 757191,
+			"sha256": "7dcdb85fb5f09bd0544f11a73a6a060d584a8cc54819c69b98a2fddd9cd1b961"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 26406,
+			"sha256": "a40051b2af651c871619953002e9da51d4b8f3d7e25651ce194b0c2101ce357d"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 789,
+			"sha256": "3403ec520133ef39cb46ad126068ceb64080d9b537798486ce8dc8c78e000901"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1423,
+			"sha256": "38410b45b4b2afaad14dbdfd25fccadf9e9a23930dc42d0956e53d1dd169151e"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 86450,
+			"sha256": "0dbdfe6205e879a71e8f4defcf39940739cee9dd9c20ed5a59884a2f550f7302"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2286,
+			"sha256": "0e2c1107a4584cb0909a7fdd4b0ac784772763622089e3ed0a58bad9f880c2b5"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4569,
+			"sha256": "611f9a60b2bb11d69dcf2660a0c1c453a938580a6f3d305c2018c2964f69c076"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 259900,
+			"sha256": "7a8bef4f03e3445ce997b81d05de1d3efaf11d0ee6007978bb0504b764459127"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7667,
+			"sha256": "64b8bf5e053909c640d1af1a1baecc91595a22946583f549f15da69a18734258"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2327803,
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2327803,
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2327803,
+			"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 3241,
+			"sha256": "0b901e8d3ae718957e76e6920e94e8676cf2c1cd3439a1a3c0609f88a928155a"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7769,
+			"sha256": "afac986b8e9b2e9e569e2820a40e49182f995b7e9e567f11aab2a600f385e492"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14089,
+			"sha256": "eb5aec8e761e7a433213052f4cf19201a6946975168c23b6ad74f37e78d731db"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 9801,
+			"sha256": "95ee3320d391eef69979314a28bc0ff2de01cd7468089d76988e6063f7b5568a"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 922,
+			"sha256": "118716631f7818441fd0314af7a998d2989a252ee725d068282d75fb1bc5690d"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8435,
+			"sha256": "2ba7d590f7317022a2e17f49c0b47bbd0b0947d1ba0a18e39f2c9ed0ca955d4a"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 923,
+			"sha256": "ff0492f4205f77afe165ec8c43b4529882e9f97bf73af4041ab9b00371e37128"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3312,
+			"sha256": "00a57310e9afb676a9a3d8f428636a5c85a1268f29fbab0a96dfef377fc53998"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2171434,
+			"sha256": "55a7fadcc43fb46d2d88b9222d0af37d01ebc2c2077af90f97ea16941dba08bc"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6376,
+			"sha256": "2d75662dce8cbbe037612a2b9d22cd7d54645e9aa407c89b8c6b328e12989c28"
+		},
+		{
+			"path": "/brands/raven/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6376,
+			"sha256": "ad805768f5e281090bb0b3ebe810e7da5dc3a36f1767ed0078d5f9517ad0d2d2"
+		}
+	]
+}

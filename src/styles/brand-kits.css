@@ -1,17 +1,43 @@
-[data-brand-artwork="gpt-image-2"] {
+:is(
+	[data-brand-artwork="gpt-image-2"],
+	[data-brand-artwork="archived-artwork"]
+) {
 	--brand-texture: var(--brand-texture-light);
 }
-[data-theme="dark"] [data-brand-artwork="gpt-image-2"] {
+[data-theme="dark"]
+	:is(
+		[data-brand-artwork="gpt-image-2"],
+		[data-brand-artwork="archived-artwork"]
+	) {
 	--brand-texture: var(--brand-texture-dark);
 }
-.project-card[data-brand-artwork="gpt-image-2"] .card-main {
+.project-card:is(
+		[data-brand-artwork="gpt-image-2"],
+		[data-brand-artwork="archived-artwork"]
+	)
+	.card-main {
 	background-image: var(--brand-texture);
 	background-size: 360px 360px;
 }
-.project-card[data-brand-artwork="gpt-image-2"] .project-description,
-.project-card[data-brand-artwork="gpt-image-2"] .card-category,
-.project-card[data-brand-artwork="gpt-image-2"] .card-main:hover h3,
-[data-brand-artwork="gpt-image-2"] .brand-kit-intro .eyebrow {
+.project-card:is(
+		[data-brand-artwork="gpt-image-2"],
+		[data-brand-artwork="archived-artwork"]
+	)
+	.project-description,
+.project-card:is(
+		[data-brand-artwork="gpt-image-2"],
+		[data-brand-artwork="archived-artwork"]
+	)
+	.card-category,
+.project-card:is(
+		[data-brand-artwork="gpt-image-2"],
+		[data-brand-artwork="archived-artwork"]
+	)
+	.card-main:hover
+	h3,
+:is([data-brand-artwork="gpt-image-2"], [data-brand-artwork="archived-artwork"])
+	.brand-kit-intro
+	.eyebrow {
 	color: var(--ink);
 }
 .brand-hero {
@@ -41,7 +67,8 @@
 	flex-shrink: 0;
 	text-underline-offset: 4px;
 }
-[data-brand-artwork="gpt-image-2"] .brand-kit-intro {
+:is([data-brand-artwork="gpt-image-2"], [data-brand-artwork="archived-artwork"])
+	.brand-kit-intro {
 	max-width: none;
 	padding: 28px 32px;
 	margin-bottom: 28px;
@@ -51,7 +78,9 @@
 	background-image: var(--brand-texture);
 	background-size: 480px 480px;
 }
-[data-brand-artwork="gpt-image-2"] .brand-kit-intro > p {
+:is([data-brand-artwork="gpt-image-2"], [data-brand-artwork="archived-artwork"])
+	.brand-kit-intro
+	> p {
 	max-width: 720px;
 }
 .brand-kit + section {
@@ -61,11 +90,35 @@
 	max-width: 720px;
 	padding-block: 12px 30px;
 }
-.brand-kit-intro > p:last-child {
+.brand-kit-intro > p:not(.eyebrow):not(.brand-scope-note) {
 	font-size: clamp(19px, 2.2vw, 26px);
 	line-height: 1.5;
 	letter-spacing: -0.025em;
 	margin: 16px 0 0;
+}
+.brand-kit-intro > .brand-scope-note {
+	font: 12px / 1.8 var(--sans);
+	letter-spacing: 0;
+}
+.brand-official-source {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin: 0 0 28px;
+	font-size: 12px;
+	line-height: 1.7;
+}
+.brand-official-source img {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+	border-radius: 0;
+}
+.brand-official-source a {
+	margin-left: auto;
+	text-decoration: underline;
+	text-underline-offset: 4px;
 }
 .brand-kit-specimens {
 	display: grid;
@@ -91,10 +144,12 @@
 	padding-block: 14px;
 }
 .brand-kit-light {
+	--muted: #68705f;
 	background: #f8f8f2;
 	color: #30372e;
 }
 .brand-kit-dark {
+	--muted: #a0aa9a;
 	background: #1e2824;
 	color: #e6e9dc;
 }
@@ -174,7 +229,11 @@
 		padding: 14px 16px;
 		font-size: 10px;
 	}
-	[data-brand-artwork="gpt-image-2"] .brand-kit-intro {
+	:is(
+			[data-brand-artwork="gpt-image-2"],
+			[data-brand-artwork="archived-artwork"]
+		)
+		.brand-kit-intro {
 		padding: 20px;
 	}
 	.brand-kit-specimens,
@@ -193,5 +252,61 @@
 	}
 	.brand-kit-provenance {
 		gap: 10px 16px;
+	}
+}
+
+.brand-hero picture.logo-theme-dark {
+	display: none;
+}
+[data-theme="dark"] .brand-hero picture.logo-theme-light {
+	display: none;
+}
+[data-theme="dark"] .brand-hero picture.logo-theme-dark {
+	display: block;
+}
+.brand-texture-study {
+	margin-block: 36px;
+}
+.brand-texture-specimens {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+}
+.brand-texture-specimens figure {
+	margin: 0;
+	border: 1px solid var(--line);
+	border-radius: 18px;
+	overflow: hidden;
+}
+.brand-texture-specimens figure > div {
+	height: 176px;
+	background-size: 256px 256px;
+}
+.brand-texture-specimens figcaption {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 20px;
+	font: 11px / 1.6 var(--mono);
+}
+.brand-texture-specimens a {
+	text-underline-offset: 4px;
+	text-decoration: underline;
+}
+.brand-kit-specimens img {
+	max-height: 220px;
+	object-fit: contain;
+}
+@media (max-width: 640px) {
+	.brand-texture-specimens {
+		gap: 12px;
+	}
+	.brand-texture-specimens figure > div {
+		height: 140px;
+	}
+	.brand-texture-specimens figcaption {
+		padding: 12px;
+	}
+	.brand-kit-specimens img {
+		max-height: 180px;
 	}
 }

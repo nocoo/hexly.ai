@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "coffee",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/coffee#brand",
+	"root": "https://hexly.ai/brands/coffee/v1.0.0",
+	"source": "artwork/brands/coffee/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+		"export": "/brands/coffee/v1.0.0/official-logo.png",
+		"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+		"bytes": 4374884,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png",
+		"sourceRepositoryRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/coffee/2026-09-11-01/01/transparent.png",
+		"export": "/brands/coffee/v1.0.0/logo.png",
+		"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+		"bytes": 4374884,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/coffee/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 54010,
+			"sha256": "cd62c278d4d1a93cdd45b0d5b0e2dc130924f22a93572cd2b89b405d7dc80214"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 117931,
+			"sha256": "e2c3627e518ce578a1fa63b0c868a7e1140c4533deb6ffe4145e6cb092fcdbc9"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6480,
+			"sha256": "a95e90a8f89065791d3176e3c2d8549369bb126f99a16a7eab2e122fb4abfa39"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 981208,
+			"sha256": "74da21c1c91d3e7d3b43aadc27e3b7f994551a4957731c2357ed15fee4918a60"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 64264,
+			"sha256": "a5b7db97c8d9df854f233b8a01f1454b2271cb7a2b416476abc9b886e2ce939b"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47510,
+			"sha256": "000447b1f34a1b00d1a0adfdea6d9587557180c29a2f2d82cc5071adb99e3964"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 46534,
+			"sha256": "ee27660d44cb57b45bb76bc2e3d37aaa15c298e81a8c033f3913aa8de123de0c"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 987865,
+			"sha256": "deefe2c9f15262080052580c548d2a7beb7ce6a009bb4ecdb4dac7cebd113ad3"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 63110,
+			"sha256": "9a55b7d625f9af71515315d651ecf12c2b836221283715deff64f619e48253e4"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 66137,
+			"sha256": "744b6fad40fdcae30bc6bf78e1b739f11edd78fab65687642fb443bed93b2bfb"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 308902,
+			"sha256": "3fbb369bb785531065c5d75b435c0fc8aefd5aeab9c1334c0b52fb3e21f57ca1"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 4446536,
+			"sha256": "f39170af026a548d1db1ed152ba90667de1d215683cbf6a2a3a9707f10d1c48d"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 401710,
+			"sha256": "d00045487c64e239bf7ffba5eafc93de17717cde8c36cb1ccb0f48f59d68ba24"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5756219,
+			"sha256": "2e781520ad77b86f9a0190093096adb8a322a32c0c901deadab4da057ee97904"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "6d57bb42c58a3964bea12a381555b8c8edfdf62dd4230de8f08d9c9b83b5867e"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 191335,
+			"sha256": "b058267998f8588056fd55012d90b26595fa27863efa8596e20c90c9bea9d1ad"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 191187,
+			"sha256": "025fee58e21951469a6eb9bad5b6f2eb96144e4e1b7c069c71007d0ed9ca97d5"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1130960,
+			"sha256": "2bce49ea1299cd2fcb4084dcc015d4ac62546108c32cad5e0ac44d9033dd4583"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1130960,
+			"sha256": "2bce49ea1299cd2fcb4084dcc015d4ac62546108c32cad5e0ac44d9033dd4583"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1130960,
+			"sha256": "2bce49ea1299cd2fcb4084dcc015d4ac62546108c32cad5e0ac44d9033dd4583"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 22724,
+			"sha256": "01c75a5ec74fe8ce32416a541918c513b2adbe14f4ad383b9db942fa0721d705"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 736,
+			"sha256": "73ba261bc46b767a55b9bcc5b2a9deb89d2dff15b212e7d8a784253ecad7e2fb"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1329,
+			"sha256": "43b52334072b3963699033517adf25756bdbd452342d535d45a50102a4087559"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 81854,
+			"sha256": "9af99f813ca32ed4a21e07ed8218ca05ed4c745da7324c6e89e94ab04c3f8136"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2052,
+			"sha256": "706fe4791847da6ced34653226bff459e5f8f17e02641db1af7b423e7877955f"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3965,
+			"sha256": "46591f8bd107582beeb353660ef821c0ae968b6f52c7acf76ffabb353e72fafa"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 298428,
+			"sha256": "8df4df164bdc522ae8156ea1b01c3793784daf7b39a08dc65824f172b76edf01"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6498,
+			"sha256": "fb3ac7f3d0136d0655d3c27b0e8001d099caecd1565d413cfde6f326935bd7ee"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 4374884,
+			"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 3349,
+			"sha256": "6e1a0e549fee1e9bf4e411e597bce922187f0b35c71c36918152ddc898e25536"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8590,
+			"sha256": "b1dc5587f102e6cdb5df99bc4f3d8792a55991e708509d068fabd8aebad213da"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14118,
+			"sha256": "7e4e315cc2cfc38d6d363f2a1f0b2aa85fa513eeb90106efc4becbe9475ee9f0"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 11951,
+			"sha256": "cd9626ce02bc5ad9c9120509cce5608627c3479a7c4d99fc434e0394d8896c4d"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1471,
+			"sha256": "cc41ca17a24220f8139f336861dc9f00b9868cd95df129023fbe60f0c4d7846b"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10148,
+			"sha256": "0e219ab2778f71860429868383985db8f3d97e1501e5f1d94575eac62488944f"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1472,
+			"sha256": "52ebc783db759b2683662c25ff72f5f1fdfd8760fd06f77dcd8beedaed30f8b9"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3959,
+			"sha256": "a55abda0f67197d3da9e247411e1ac27aa306aaadedaba7b23ecd510b7a0a45d"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 4169194,
+			"sha256": "b6c63ab8d447847295391f42edd3ec9c2b164fdbc0511262a1beb3a114a28bcf"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7217,
+			"sha256": "89f19892594d96a8f1a7d3e99b936accf767b2bdcc25534af36e7f938a13aef2"
+		},
+		{
+			"path": "/brands/coffee/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 7217,
+			"sha256": "2e3e8a0cac739e6fb786db66c100a0229b07fa193516e4b63fc350fa90ee53a7"
+		}
+	]
+}

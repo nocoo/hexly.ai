@@ -1,0 +1,123 @@
+{
+	"schemaVersion": 1,
+	"project": "raven",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "One connection, more possibilities.",
+		"zh": "一个连接，更多可能。"
+	},
+	"description": {
+		"en": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents.",
+		"zh": "向右看的靛蓝渡鸦，保留碎片眼睛、紫色羽毛与薄荷点缀。"
+	},
+	"foreground": {
+		"path": "/logos/family/raven/2026-09-07-04/02/transparent.png",
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Quill pennants",
+			"zh": "羽翎旗面"
+		},
+		"description": {
+			"en": "Staggered pointed feathers and a separate slender quill suggest an open, asymmetric fan.",
+			"zh": "尖羽错落排开，细长羽轴独立转向，形成不闭合的偏心扇面。"
+		},
+		"source": "artwork/logo-family/raven/2026-09-07-04/finishing/02/settings.json",
+		"sourceSha256": "d61b6ac7cef70ba58e10ec233a08fcac36c9342ee7d025d965e547848214797a",
+		"layers": [
+			{
+				"d": "M-61 311L18 173L239 44L352-32L251 107L62 231Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-63 507L41 356L253 215L400 83L310 259L110 400Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-26 657L93 553L250 482L393 347L317 522L164 597Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M18 235L249 111L353-30",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M52 407L309 263L401 84",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M736-83C773 58 859 135 1086 194L980 215C828 174 746 114 715-11Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M739-32C776 103 859 159 1066 205",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-63.0, -83.0, 1086.0, 657.0],
+		"transform": {
+			"scale": 0.37597911227154046,
+			"x": 63.686684073107045,
+			"y": 148.0939947780679,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom", "lower-left"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Raven",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 401.472,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 2708.587200662364, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+		"repositoryRevision": "c59fe3ad5a0aea2e849b2b9ee00be189091c9faf"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

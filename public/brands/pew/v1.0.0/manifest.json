@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "pew",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/pew#brand",
+	"root": "https://hexly.ai/brands/pew/v1.0.0",
+	"source": "artwork/brands/pew/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/pew-2026-09-07.png",
+		"export": "/brands/pew/v1.0.0/official-logo.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"bytes": 3043802,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+		"edgePixels": {
+			"top": 0,
+			"right": 551,
+			"bottom": 911,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
+		"sourceRepositoryRevision": "5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/pew/2026-09-06-01/04/transparent.png",
+		"export": "/brands/pew/v1.0.0/logo.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"bytes": 3043802,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+		"edgePixels": {
+			"top": 0,
+			"right": 551,
+			"bottom": 911,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/pew/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 67817,
+			"sha256": "16d8979322f9e5e0d32e38607c56ca0256c691a9be74cfe6775f44fde08c6dc5"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 144942,
+			"sha256": "ea8cc47bf82c6d0f189d758ae2e28de50f6a5660da5330bf671e7e7bc34c2d33"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6460,
+			"sha256": "b84a15c30199475a9438ea7461cac9879f001475e7fa318bb0369479385c0d49"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 996910,
+			"sha256": "78d2070f0fdf25983fb19611e81ab40b1cb69780c9ff57bc82b145c7e2b62826"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 93104,
+			"sha256": "0e38959b469c067480783ea98aa36c5c679230976f7d524cf07ce43a761e4499"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 79004,
+			"sha256": "fc4f979525b4fe8025b41436c7f24ac894cf986e4c75b540ccfc94b86dc75c7c"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 78394,
+			"sha256": "b5b6de661a75a3cf79e4bb2f797a94d3789e2fcf49008d7b43c257c329495366"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 994557,
+			"sha256": "799513f6a48a8f999b285b70de18b083ca64f9a4fd6ca0e3dd3cebc16de1d00a"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 92098,
+			"sha256": "55ca0c557912e6c878acae6d89a2a4e17cfcc1a37b6992d7227fcebfd0e82ab5"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 80010,
+			"sha256": "60cd90812d68feb764ebf732554d8ff24e8cd7c3bf5e08277c181908d4c8a05f"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 320263,
+			"sha256": "ae73ed3b3599d2cfe8e7599a80f06609ee6792e09f8d35f16be75b0065cf1f3a"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3085240,
+			"sha256": "07579346e7b4d75d1940a64264a7abaea0efbad91eb343b36337270f7096487e"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 425040,
+			"sha256": "7ab8c7d26894f060b07a7f0e5c75dacfd5261848a7a7a9193e5cce067a160f6b"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4459362,
+			"sha256": "d3734589bc3d7062c7473421a44570ff7cdd2744a813c756dd2a7eacb4e1f29a"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1790,
+			"sha256": "87e272852df57e706c1e5d56d8f187308dcb74bc0d193e0dd3a55bc5528a04ce"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 211850,
+			"sha256": "122a85ca22b85bf2e6190c28d3e05fd3837e3b9979e6b18ac7f71768edda2bb7"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 211971,
+			"sha256": "54e55140e3aacf5583bb6b267ff25928968468f114b6456692733a8ac07a491f"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 974056,
+			"sha256": "7cb275a2f3c9d8e03dfd312b123aa2dae26d0209723b9d2a75aacc203d47ca78"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 974056,
+			"sha256": "7cb275a2f3c9d8e03dfd312b123aa2dae26d0209723b9d2a75aacc203d47ca78"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 974056,
+			"sha256": "7cb275a2f3c9d8e03dfd312b123aa2dae26d0209723b9d2a75aacc203d47ca78"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 29031,
+			"sha256": "aefb8357a831b668a76d41f2ebdbcbec6302c945abd1f16a07ac8ef3d77d6fde"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 841,
+			"sha256": "7bea66ee0fb0186b43f558206015c2a0833d3a039dcdf02f840f2d5c9ea0a434"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1526,
+			"sha256": "8d6c96b31b6ee435916eaad0c28e1ffa1828f74f6816b589e9a9c81f46b9da3b"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 99157,
+			"sha256": "9e6aa90ebb1e5fb6fd66eb4bfac35c0ef6bc8205854a2262eda973832d5a0159"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2499,
+			"sha256": "7fc3ecb16c23f88b23b0f544f7c6a917063d0fcbc0cf1a31d1d24e4b282b3fb8"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4998,
+			"sha256": "9335a5f7ca63528f5d359df7af7d696264e0888a5bc08e526cf58f5ddf65c087"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 318616,
+			"sha256": "79bde7125b5d45ec51f07b96ee2644b8b960763b83f596f90da4f1f9562ba08a"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 8314,
+			"sha256": "6aa9ba10c85c34402239cff35de2647841c9e5a77b319453cedc807157498bb6"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3043802,
+			"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 7087,
+			"sha256": "e0026ba34745983744b7769fca1740286666ba95dc9c45ec36949550e704a0ec"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7462,
+			"sha256": "498e98cbfa7dcab01c175ee543c1c6b09827f517bdc4a293854fed0eb481d93a"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 17779,
+			"sha256": "160ea912a8948e20fbab2ef5a946bcbc8c098ccfbdad2255c2bb06db702e0ee1"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 15133,
+			"sha256": "79d5bdf1de65447c6d41978cb83134c07e2767da7b3095e27835b2daa988f3a5"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 965,
+			"sha256": "2101bcd2b98e74d05021e5a4d7b61dd0a6110e0b31af49c0b9881056eb7c2c16"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 12706,
+			"sha256": "6ade6cc0797838333e87bbb9fc5643056221733cb5fcc3aeb4833356c1fcedc5"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 966,
+			"sha256": "41d009914c672754ecf26e05bc2d73a97c172d69eca1ccb17264b3da56f66cd7"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3319,
+			"sha256": "df6473d0cbdfa9f999974054250c5ce731002e39b5ef8967a10addcadf845f8c"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2854245,
+			"sha256": "5d489e823c135d7e3725292d35a5bfa0d53b4eb3e8b0852d4f1a552d54e58f83"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3328,
+			"sha256": "504ec5e6a6a73ef2ccc0788431d17e37169a8e635abc3720217660aceb08bd2c"
+		},
+		{
+			"path": "/brands/pew/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3328,
+			"sha256": "9ce085359dd491f9b9dc47772e792be83c58c214300002b074c4a00ca9a31cd7"
+		}
+	]
+}

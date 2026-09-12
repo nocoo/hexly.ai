@@ -1,0 +1,132 @@
+{
+	"schemaVersion": 1,
+	"project": "echo",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"caption": {
+		"en": "Know where you are.",
+		"zh": "清楚知道，此刻从哪里连接。"
+	},
+	"description": {
+		"en": "Brass and navy pocket compass.",
+		"zh": "黄铜与深蓝的袖珍罗盘。"
+	},
+	"foreground": {
+		"path": "/logos/family/echo/2026-09-07-01/01/transparent.png",
+		"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Survey bearings",
+			"zh": "勘测方位"
+		},
+		"description": {
+			"en": "Latitude arcs, a sparse meridian fan and short bearing marks extend the compass’s sense of direction.",
+			"zh": "纬线弧、稀疏经线与短方位刻度，将罗盘的方向感延伸到画面之外。"
+		},
+		"source": "artwork/logo-family/echo/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "00da444820aa2d977bc82fa405a77f91af32a9847116d14f67d15518b4b6006a",
+		"layers": [
+			{
+				"d": "M-60 360a180 125.99999999999999 0 1 1 360 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M-155 360a275 192.5 0 1 1 550 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M-260 360a380 266.0 0 1 1 760 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M-390 360a510 357.0 0 1 1 1020 0",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M690 -50Q520 500 690 1070",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M790 -50Q620 500 790 1070",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M890 -50Q720 500 890 1070",
+				"tone": "motif",
+				"strokeWidth": 1.2
+			},
+			{
+				"d": "M100 90l20 -20M132 104l20 -20M164 118l20 -20M832 922l20 -20M864 936l20 -20",
+				"tone": "motif",
+				"strokeWidth": 1.9
+			}
+		],
+		"bounds": [-390.0, -50.0, 890.0, 1070.0],
+		"transform": {
+			"scale": 0.3375,
+			"x": 171.625,
+			"y": 83.875,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Echo",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 329.404,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 2193.8153394616165, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/echo-family-2026-09-07-01-01.png",
+		"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/logo.png",
+		"repositoryRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

@@ -1,0 +1,125 @@
+{
+	"schemaVersion": 1,
+	"project": "ellie",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Make room for conversation.",
+		"zh": "为认真交流留出空间。"
+	},
+	"description": {
+		"en": "Mineral-gray elephant portrait with a curled trunk and one paper airplane.",
+		"zh": "矿石灰大象头像、卷起的鼻子与一架纸飞机。"
+	},
+	"foreground": {
+		"path": "/logos/family/ellie/2026-09-07-01/01/transparent.png",
+		"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Mineral listening folds",
+			"zh": "倾听折面"
+		},
+		"description": {
+			"en": "Broad angular panels gather along open diagonal seams, echoing the elephant’s ears and the paper airplane’s folds.",
+			"zh": "宽阔的折面沿斜向接缝展开，呼应象耳的轮廓与纸飞机的折痕。"
+		},
+		"source": "artwork/logo-family/ellie/2026-09-07-01/finishing/01/settings.json",
+		"sourceSha256": "1730f9e4a9a28a3c2077dd242b67d758c74a38a9998e43963384d759223e5f19",
+		"layers": [
+			{
+				"d": "M-120 539L318-106L501-106L57 510Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-85 546L510-107",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M194-102L580 323L858 111L1134 263L1134 74L871-77L591 136L377-102Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M585 321L861 109L1122 255",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M628 1120L799 903L1110 827L1110 959L885 1008L802 1120Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M621 1110L790 887L1111 813",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-94 750L208 689L72 1088L-93 1088Z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [-120.0, -107.0, 1134.0, 1120.0],
+		"transform": {
+			"scale": 0.3444976076555024,
+			"x": 81.33971291866027,
+			"y": 81.51196172248802,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Ellie",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 260.356,
+		"height": 132.94,
+		"glyphBoundsUnits": [
+			69.499755859375, -14, 1700.6119199006453, 707.00048828125
+		],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+		"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/ellie/blob/300b8540eac51ae21803a8d58ebffbe3d90efa24/logo.png",
+		"repositoryRevision": "300b8540eac51ae21803a8d58ebffbe3d90efa24"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

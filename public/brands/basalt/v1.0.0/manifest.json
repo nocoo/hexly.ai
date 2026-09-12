@@ -1,0 +1,413 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "basalt",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/basalt#brand",
+	"root": "https://hexly.ai/brands/basalt/v1.0.0",
+	"source": "artwork/brands/basalt/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+		"export": "/brands/basalt/v1.0.0/official-logo.png",
+		"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+		"bytes": 3445051,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "cf680d91bf6028626966ea6a9b22de0ad53cdb9c7c60e29f519219d3079977f5",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
+		"sourceRepositoryRevision": "9e226aa5c1376351ec76a659b1a33a8139892b4b",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/basalt/2026-09-08-01/01/transparent.png",
+		"export": "/brands/basalt/v1.0.0/logo.png",
+		"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7",
+		"bytes": 3884976,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "0a041e450710e8788f5c7e4031e5c78c55c888ba7b03ced0f972bfb2621094df",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": false,
+		"sourceMethod": "gpt-image-2",
+		"series": "material",
+		"sourceAdoptionStatus": "review",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 1376,
+					"y": 96,
+					"width": 904,
+					"height": 768,
+					"radius": 64
+				}
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": {
+					"x": 64,
+					"y": 96,
+					"width": 896,
+					"height": 864,
+					"radius": 48
+				}
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/basalt/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 49674,
+			"sha256": "3d57a70896f7e07898a335f4e23c05e00f1001ff2a64c492b41aedcd881cfade"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 102031,
+			"sha256": "9d3377c9599976dc5a4d0e4758f24a7583a04964ca9e199ac291814d4a9217a2"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6611,
+			"sha256": "aba1de4e508f4b67ca32ddfe7fdca3349bab4d32d09b7e2d0a649b6bfeb41b87"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 872623,
+			"sha256": "68872e39af7d2a8b05ff62f91f53d9a6a7a8ce9ee1a5f0258e6df4458255f189"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 137552,
+			"sha256": "f3bd14b2486771d259ef0ca1608c4ab8e765979429e905fb892c26cb19d4a9a0"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 103956,
+			"sha256": "6f074c8cd711d778a559e64433cda49264ce391486145ea316d921a5f42b6b0b"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 105072,
+			"sha256": "85554b8d937a9a5452800d5cb41f9028de6a1c089d1b1ecef4a2f7af1756e088"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 883458,
+			"sha256": "494788056e571b73fb8df1fdb9ecdbe6b17496687039f1d68e7b7bcc6ed835d8"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 138216,
+			"sha256": "f41cc154917c8c9e92c6663a358d9c0b7af750e04df33eb35050cac99ce95fbd"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 60294,
+			"sha256": "6b9ea6643cb76dcaf445ab2cbad5d7501fb68757e26512f85c1bbfa5479d98af"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 278072,
+			"sha256": "616499767e36df3f8d0c06d24c99be8d461a26106a3b01d53bf3a401126ffcf0"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 3960315,
+			"sha256": "4556545937addb1e9eac92464b705c471fcea09c7b0dffda84a7aa8978457101"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 335369,
+			"sha256": "3b9f482b19f0f0ac88fbbd98b8347cd5a0af44ff849dbcd98a9f9a6d3a8abda8"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4149616,
+			"sha256": "6435729ff1f21dc099080253cfc4e01f9704fd940f7d97075878fa563e39897f"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "a62fe6ce36cf66f7cae3e054db0ac7fd10f2af789ceb0f4b1376a0ff36055627"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 167555,
+			"sha256": "652b5349469bf30757c2e8a0d6ba0ad6a962f9f6a471e065a48f9cbcd128314d"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 168115,
+			"sha256": "6dbf32bbcb1d08024f31d7b28c7f99b6f4dfa99e4b9db181cd2ca8f3c8dac1e8"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1016090,
+			"sha256": "c0c5114841a588f90ebbc6c3969e29c618006ce1c41e5e2eedbbda00ac1da9c3"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1016090,
+			"sha256": "c0c5114841a588f90ebbc6c3969e29c618006ce1c41e5e2eedbbda00ac1da9c3"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3884976,
+			"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1016090,
+			"sha256": "c0c5114841a588f90ebbc6c3969e29c618006ce1c41e5e2eedbbda00ac1da9c3"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 19337,
+			"sha256": "acc9876096466e1b07674559cba7f42c4eb76edcc1833c795d75d9aaa56fe442"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 671,
+			"sha256": "35d88d81094ca7a20a2dd873e307b75cc020e6ea04bb9b195ccf5c98129c1c0c"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1184,
+			"sha256": "3a7fe2348fa2288119908581a0b6789d553dc3bb4f59878070cd029871c62d7a"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 70983,
+			"sha256": "1e5fc761178de8fb9ce7b04b2bce1aadb321cb621774fb5063d6c9066fb020f6"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1819,
+			"sha256": "5fee2f35c6225d4334df9f14187ba4b8f45303c920c22dd40b51ec956bfe42d5"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3480,
+			"sha256": "e1327d94951cbc3e0810d6d7a8203d3937bf4b3e369337c5603687714e0d3a3f"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 265965,
+			"sha256": "7eda6f5e484bce36d410437dd694554bc2100f778d7a6469b23f97b6ab541cff"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5639,
+			"sha256": "8de13908ecb5cfcc5f697caee693b318be2bc9c226eeabc02397df1047637101"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3884976,
+			"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3884976,
+			"sha256": "97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3445051,
+			"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 3448,
+			"sha256": "e09aa72eaa9253ac87a3c2807e85ad74aa70edb767b6f3e0cddbe9676e6701a8"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8985,
+			"sha256": "47f6a18687522eade4e060bd700934bc255a626a109d6824f55b67dfd363c1b8"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14268,
+			"sha256": "336e47d4df428b61f37165571fcc4053b18df298e8035b6b0a137deff0687f19"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 13417,
+			"sha256": "43344adbb3521578b3c00f0b11f345ad30b0ba3a3a72150d9199e83f996f21f4"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1877,
+			"sha256": "dee5709390c5820b81fcaa26fe3caab2b221582afefb084e030817141ead5cf6"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 12402,
+			"sha256": "6bef06b6670423b70aa46308a4e3068c67b9a1a9cfead69eb82a48c97ce1ebf5"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1878,
+			"sha256": "9f90281fccb1e3f3f20c9ca7a9b43f039ea05bcf586aca4de3d1696d9ed31af6"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3606,
+			"sha256": "3fb911f26dd95a389267bd96d1d38ca9a45187d4122f74f6ea022c5551f87454"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3448316,
+			"sha256": "4adfafd5224e47f50343c9fdd5ed5bdd8ba3bb7deb41fa61e535eeeed9f21502"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 9106,
+			"sha256": "301125d17c6830c640a5d18a71baa2f25a99148cd7f7dc60cabac2a6f1f26947"
+		},
+		{
+			"path": "/brands/basalt/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 9106,
+			"sha256": "340b40974a665e341c68f693f5a0f217388ef5d4b6245a8b00622f190c50319d"
+		}
+	]
+}

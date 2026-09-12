@@ -372,5 +372,75 @@
 				"LICENSE"
 			]
 		}
+	},
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/firefly/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": null,
+		"lockup": {
+			"width": 825,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Midnight crescent and drifting clouds",
+				"zh": "夜空与流云"
+			},
+			"description": {
+				"en": "An off-center crescent, sparse stars and broad cloud contours leave a quiet sky around the firefly.",
+				"zh": "偏心月牙、零星星光与舒展的流云，在萤火虫周围留出安静的夜空。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Broad-winged faceted firefly with a small campfire on a Hexly campaign canvas",
+				"zh": "展开双翼的切面萤火虫，与一小簇篝火，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "A small light, a lasting story.",
+				"zh": "微光亮起，故事留下。"
+			}
+		},
+		"description": {
+			"en": "Broad-winged faceted firefly with a small campfire.",
+			"zh": "展开双翼的切面萤火虫，与一小簇篝火。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 62px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
+				}
+			}
+		]
 	}
 }

@@ -42,7 +42,7 @@ Manage email templates for personal projects, send notifications through webhook
 
 ![Dove source identity](../../public/logos/display/dove-160.webp)
 
-- Type: Original project artwork, copied without modification
+- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Dove portrait with pink blossoms
 - [Source](https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png): `logo.png`
 - [Preserved asset](../../public/logos/originals/dove.png)
@@ -63,6 +63,35 @@ Manage email templates for personal projects, send notifications through webhook
 | accent | `#fbcbc6` | Preserved project artwork, sampled pixel |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Hexly campaign brand archive
+
+- Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/dove#brand).
+- [Light lockup](../../public/brands/dove/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/dove/v1.0.0/lockup-dark.png), [favicon](../../public/brands/dove/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](../../public/brands/dove/v1.0.0/guide.md), [standalone specimens](../../public/brands/dove/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/dove/v1.0.0/manifest.json).
+- Source adoption: separate source-team handoff; no adoption commit is claimed.
+- Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
+
+
+Violet and teal faceted dove with pink blossoms.
+
+### Identity keeps its colors
+
+Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.
+
+项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。
+
+### A complete composition
+
+Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.
+
+保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。
+
+### A mark, not a tile
+
+Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.
+
+导航推荐 24px，最小 16px。字标宽度至少 62px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。
 
 ## Refined identity
 
@@ -116,6 +145,6 @@ Small-size observation: The violet silhouette and pink blossom arc remain distin
 
 ## Further refinements
 
-Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
+Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.
+Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

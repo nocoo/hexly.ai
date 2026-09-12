@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "otter",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/otter#brand",
+	"root": "https://hexly.ai/brands/otter/v1.0.0",
+	"source": "artwork/brands/otter/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/otter-family-2026-09-07-01-02.png",
+		"export": "/brands/otter/v1.0.0/official-logo.png",
+		"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+		"bytes": 2941233,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "1caf168d0eb1043f5f868d5d1d891ab4dd5e7ab09b8e0d2384ede73720e1bf49",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/otter/blob/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3/logo.png",
+		"sourceRepositoryRevision": "0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/otter/2026-09-07-01/02/transparent.png",
+		"export": "/brands/otter/v1.0.0/logo.png",
+		"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+		"bytes": 2941233,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "1caf168d0eb1043f5f868d5d1d891ab4dd5e7ab09b8e0d2384ede73720e1bf49",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/otter/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 54570,
+			"sha256": "c154e06a3a7ce7b40a87c01d2c0409c094e86c5e1038f494159e9d615b72c2c5"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 98741,
+			"sha256": "18cb2e9a8537a6817aa9388ceee6e82d2423f4a78bb319914644bc3577bf503f"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6431,
+			"sha256": "5b20a109a00a604312f3a24976e462e35d54e4d8c423b8c745ad2d48de560152"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 695284,
+			"sha256": "2ac5db444725d8d467beb1701ef683f2410e4136bcb4d98b89189867424f3b55"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 51562,
+			"sha256": "53f005b441fc21902c26fb0adf3560dedf5b928fe3c725a39de9a4b330d26200"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 39426,
+			"sha256": "920699666ac352a6477cfbc0a98baf36b14fff0f0fa4ab8f9c1eb1f6d9d4cc58"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 41844,
+			"sha256": "f19fe31a2af6adaab301f08dae4d8dfe7716ee2f33dfa020825a8b0396972d17"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 701086,
+			"sha256": "eb2dcf6a1abd8b28f07577f019aa92b8d449b743ccd265b3381ab593f3ca4b72"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 53760,
+			"sha256": "e948f4d34d4eae19d287b25cfc256a634dff1f90d06a46ea2af550af018590d4"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 66312,
+			"sha256": "f7844d0f964929900c2b7ada5e00e60c31f9016780a6dcaac26d9434dba66f6c"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 227847,
+			"sha256": "42d4c2339745bff3d7c69b1d378448c32efbe5fd6293eb3e3b2546c50a8be2bf"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2976551,
+			"sha256": "d3cf67facf6ad18acda4a254a2d9532c3b4352e9bc757e14e00d7ad1ef120a4a"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 392139,
+			"sha256": "765e454913239eade8d0c3501162a5ee3ae952ef0d4a6b2541181b2babdc1bc3"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 5026378,
+			"sha256": "aa95f02a68e9546d95e5097d3f41dd9da292f02f700027f1cafd6dcf4e362787"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1792,
+			"sha256": "0ec86d98b9662ed2df4eb6dc0869e97ae177139f94a3611f66a6ca736f1eefa3"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 149364,
+			"sha256": "a9d44581074de73ea24144efc6c751d3e17a09653cc2296dba5ca4ab46909e82"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 148668,
+			"sha256": "c0bf2b1b0af2950af85f9b7f7686f63f38367361b0b8f3941680ce6a34ef7cc0"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 782449,
+			"sha256": "6cf56dd5b1da2d76d8ba4b2fcb10d096688457cd2a0e661930008f1af38bfd7c"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 782449,
+			"sha256": "6cf56dd5b1da2d76d8ba4b2fcb10d096688457cd2a0e661930008f1af38bfd7c"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2941233,
+			"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 782449,
+			"sha256": "6cf56dd5b1da2d76d8ba4b2fcb10d096688457cd2a0e661930008f1af38bfd7c"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 19457,
+			"sha256": "65cf9effd030bf1c26cebd8216746071c90f4728adf73cc4bfc8366df0d3117d"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 676,
+			"sha256": "3e118f050a0948721a535f645eed387b9d694a2db98e750f86fa28d320d2ae50"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1218,
+			"sha256": "0b80ebae9b89e97e80844e8c91626864c893af66c227508019275fbb682e21b6"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 67385,
+			"sha256": "cba6da8fd8d50ff9df15de292cf4e2ac9e65852a8bb03eb8dab383b5ed696d16"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1863,
+			"sha256": "b550d8b002354442f127b8c6024291bb97936c201de318f493053a5adb6626dc"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3513,
+			"sha256": "547086b4599d46be09f82136665ae0e2e2f11ea8aa15b88e68eb9e2342f554f7"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 226950,
+			"sha256": "dac61ca072b8d38a4743303e7b06c376a0e1710591f484777d321f076d11af4d"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5745,
+			"sha256": "1b63c56590001cb636c10c71fb0079ce9ac1c7d08ddcba8794efc38f6f50bf3b"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2941233,
+			"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2941233,
+			"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2941233,
+			"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/prompt.txt",
+			"role": "Exact historical generation prompt; this release made no image-model call",
+			"bytes": 4616,
+			"sha256": "5705ac304e68c3cab56cdde04f433e9a44c61ae29d9cb7c81a62c04cbf26e8a4"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7909,
+			"sha256": "6d066393738d9091b77ee60f44b534f201fb9fad716f356ead1f3c60f23966bc"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15356,
+			"sha256": "36800d2ee7a6f08b7a4004829dafbdc07aaf6bda0c0c88d8e7054a0d284f4e36"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10053,
+			"sha256": "d84b1509af7c04925ecd82f387e47a436d9e4fefdc992d551c0f122326affa8a"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1032,
+			"sha256": "bf6ddea7a9a9b93f48281965a83cc9e28651b3cdc30619601184a82ed9101695"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8639,
+			"sha256": "ec9082f4dae185be181d8faa5c366d691c2070c6294c2362951ac13b4971b35f"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1033,
+			"sha256": "9915dc946f0a19add5c8b40d112c86fa9df97ce1bf410d369395fadb713dd130"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3291,
+			"sha256": "027b2fb435eff7353acdbe165cc0b3ad6e6fe29616b5f9b9c3a970ba3006b1d9"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2767030,
+			"sha256": "d615b0ff2e37dc15647389307703bb15c8bf4cda65537d5181da59b0438254d2"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4503,
+			"sha256": "1e3b36074aa3682492474368af926a245eb39e2541091ad3695513faafe9e120"
+		},
+		{
+			"path": "/brands/otter/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4503,
+			"sha256": "b9a34161bb20aa90c11d6f6969f842050162fee7f551a00cb5f00085b1b319a3"
+		}
+	]
+}

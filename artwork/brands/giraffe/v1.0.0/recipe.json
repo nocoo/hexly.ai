@@ -1,0 +1,133 @@
+{
+	"schemaVersion": 1,
+	"project": "giraffe",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A longer view of your work.",
+		"zh": "把项目看得更远一些。"
+	},
+	"description": {
+		"en": "Honey-colored giraffe portrait nibbling one colorful acacia sprig.",
+		"zh": "轻咬一枝多彩金合欢叶的蜜金色长颈鹿头像。"
+	},
+	"foreground": {
+		"path": "/logos/family/giraffe/2026-09-07-01/02/transparent.png",
+		"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Acacia canopy relief",
+			"zh": "金合欢树冠"
+		},
+		"description": {
+			"en": "Staggered acacia canopies and angled stems echo the small sprig held by the giraffe.",
+			"zh": "错落的金合欢树冠与倾斜枝干，呼应长颈鹿轻咬的那一枝彩叶。"
+		},
+		"source": "artwork/logo-family/giraffe/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "ffb109a376f56ecc727994066d9a9da8839e8846c6b9db7d6240279870b14cdf",
+		"layers": [
+			{
+				"d": "M-83 176C1 92 147 72 250 123C291 91 364 106 416 172L422 198H-83Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M-80 202H420",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M227 197L216 324L159 412M216 324L308 389",
+				"tone": "motif",
+				"strokeWidth": 19
+			},
+			{
+				"d": "M704 329C779 253 922 230 1066 276L1139 329V353H700Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M707 355H1134",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M908 355L925 492L1030 587M925 492L853 557",
+				"tone": "ribbon",
+				"strokeWidth": 20
+			},
+			{
+				"d": "M704 988C825 906 1008 917 1130 1008V1048H707Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M709 1050H1122",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-114 738C-3 661 143 670 256 748V774H-114Z",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [-114.0, 95.1914198291484, 1139.0, 1050.0],
+		"transform": {
+			"scale": 0.34477254588986433,
+			"x": 79.30407023144454,
+			"y": 58.58471932713803,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["bottom"],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Giraffe",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 450.069,
+		"height": 133.92,
+		"glyphBoundsUnits": [52.4498291015625, -14, 3038.655398161515, 714],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+		"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png",
+		"repositoryRevision": "c71543478405f580e6dd36ebac18174f7ae6e474"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

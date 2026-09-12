@@ -1,0 +1,112 @@
+{
+	"schemaVersion": 1,
+	"project": "meowth",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "Many agents, one place.",
+		"zh": "把不同智能体，接到一起。"
+	},
+	"description": {
+		"en": "Silver-blue American Shorthair head playing with one yarn loop.",
+		"zh": "拨弄一圈彩色毛线的银蓝美短猫头像。"
+	},
+	"foreground": {
+		"path": "/logos/family/meowth/2026-09-07-01/02/transparent.png",
+		"sha256": "5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Quiet yarn loops",
+			"zh": "毛线回环"
+		},
+		"description": {
+			"en": "One broad yarn loop and a short returning line echo the cat’s single playful gesture.",
+			"zh": "一道宽松毛线环与短回线，呼应猫咪拨弄毛线的那个小动作。"
+		},
+		"source": "artwork/logo-family/meowth/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "5c8545bdf51ea4415066e7a01a21501a7228dcdaa87d9d42537a9466dabed85b",
+		"layers": [
+			{
+				"d": "M1135 111C947-82 691-1 689 164C687 317 885 356 951 245C1017 134 849 77 802 174C754 274 876 409 1121 382",
+				"tone": "motif",
+				"strokeWidth": 33
+			},
+			{
+				"d": "M1142 91C947-103 668-26 668 163C667 334 897 379 971 254C1047 126 839 48 783 165C725 285 873 432 1120 403",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M-111 701C58 625 159 676 151 784C143 892-7 879 22 790C51 701 255 797 303 1059",
+				"tone": "ribbon",
+				"strokeWidth": 47
+			},
+			{
+				"d": "M-104 677C81 598 185 669 175 787C165 925-37 899-1 782C38 655 285 794 326 1064",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		],
+		"bounds": [-111.0, -21.921244613685815, 1142.0, 1064.0],
+		"transform": {
+			"scale": 0.34477254588986433,
+			"x": 78.26975259377494,
+			"y": 76.35992724385963,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Meowth",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 532.725,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 3646.108939792799, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/meowth.png",
+		"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png",
+		"repositoryRevision": "15b4d902c71ec6184c7220f0fb50a29ca87e080d"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": false,
+		"familyStatus": "review",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

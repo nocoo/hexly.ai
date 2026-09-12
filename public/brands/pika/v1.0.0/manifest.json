@@ -1,0 +1,395 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "pika",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/pika#brand",
+	"root": "https://hexly.ai/brands/pika/v1.0.0",
+	"source": "artwork/brands/pika/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/pika.png",
+		"export": "/brands/pika/v1.0.0/official-logo.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"bytes": 2575312,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "eb0b6d340814453446719fdb25a356e8409980a029ab89d445b50a866d10bca3",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+		"sourceRepositoryRevision": "bb9b497372809e5ca00eaef4b04e1aa51e4256a3",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/pika/2026-09-07-01/01/transparent.png",
+		"export": "/brands/pika/v1.0.0/logo.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"bytes": 2575312,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "eb0b6d340814453446719fdb25a356e8409980a029ab89d445b50a866d10bca3",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.4296875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.421875,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/pika/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 55762,
+			"sha256": "da94235da26fac6de7567b0b228917b672c4228442e501334287c88f54ec34a5"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 98545,
+			"sha256": "1a5ec1f78bd34418f8edcf3ebb63bca4e1ca4e7067fed25867eab4cea0223f4f"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6392,
+			"sha256": "2bd91f46db06224eaa5d567d75fcf49cebbe7ae552c6092e41daaf3034f77cb8"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 657187,
+			"sha256": "95ecd01a5fbdf6f8cb827393066c3a02a556e7961a1cf4d57598caa3e5c4d224"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 67588,
+			"sha256": "c49296254b9e25c3523771225e9b1e44be5855934d1b98a3cb65fb1becec40ee"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 51780,
+			"sha256": "9dcff31b925d2e78236014df623a7b03b2890fca0ed4ccb006bac9ed8b27b99e"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 52258,
+			"sha256": "dc17e866a3fe63d07a33545d6d67ad37ddee0031aa67bb55ca9ab8796520a40c"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 665542,
+			"sha256": "c12278d6302823a7604fa8ff6a106bf84c9eff6c2e7e54388dfe1315e83e8e8a"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 68302,
+			"sha256": "7916b49d1f4a017aee023631109f8269e9abf0c1cc0f4a654280703ce82e3c7a"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 66313,
+			"sha256": "09a20724945af28dd04b3d45e55f30f1a15ac021f6c3c50657e2fba0fa01c744"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 210478,
+			"sha256": "758be09d78528fdf1849b6b47f24c572433ea647bdd6a06aaa94e77b2878f4d7"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2542180,
+			"sha256": "bd2235a776c36c26beb3e002625cc411c9349ba6be1128d6c291afb9e7ec5b46"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 379443,
+			"sha256": "78b17bb590e2824e06707828f67a728393b5e141fcfa22211f8db54db9cc1ebf"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4719628,
+			"sha256": "9859f7c9894ee64cfab064497ac24d3ab7a1ca21e614b7381d8ae2b37fc6f5a9"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1753,
+			"sha256": "a24433db1f6e3528ce5a047d0aa6883ac16251f096d04c0a3b6a0762db2b87b5"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 135700,
+			"sha256": "35a95a9424ce3dcfc089a801f939318b7d91d75df172fcd9662e327d897793c9"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 135775,
+			"sha256": "93f653635b1d3f4d1fb9174d19f8c6fc6f18eb5438a57fbc512003c0c4c64852"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 751841,
+			"sha256": "ec2525dc56838121486f384d9677bb23f8cf0477de94a55054d0e823a4b85216"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 751841,
+			"sha256": "ec2525dc56838121486f384d9677bb23f8cf0477de94a55054d0e823a4b85216"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 751841,
+			"sha256": "ec2525dc56838121486f384d9677bb23f8cf0477de94a55054d0e823a4b85216"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 20738,
+			"sha256": "2ed517673a79be38386c5cd15ce9009b6a058ba8a990ec3f157f1e26e2b4d333"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 768,
+			"sha256": "b360f2fd3ce71151dff6067e27207a9e5f260600f94acd5fd9fee968229b451e"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1384,
+			"sha256": "6d5fe39ae95ee0f566579b4d28c05140dada4f18a360cd923f0724e4af5ed6bd"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 64222,
+			"sha256": "4c64aba2534839e4585dced75e00827cd5a84143e9af0183a5fc2d0f8c7251fa"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2145,
+			"sha256": "257105396ed0be965562fe3f5ecf2c7a33930eadfd235a1749c6f8d8224954c8"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4048,
+			"sha256": "f7659a077d136501bfa516ab6c2be6a3ae96ad571d92f1314781fb69f909fe89"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 209625,
+			"sha256": "3ff9dd8a64979cfc899d51ac6cac1cd55fe4dd3d95017fd897e180402b056b4f"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6522,
+			"sha256": "57afa2c01deb5adf68c72cb0ccdf7a11ff52ce94cdbaa33e739885375ef346c5"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2575312,
+			"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6602,
+			"sha256": "d102ae8bcb8aa867c71acf31f9cc3fdd532c8561b7a52ff6eb520c9a5dc7cd2b"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10427,
+			"sha256": "9b20410c9c1dafecbff170a0bd74ab6c4050cf85f05fa7d348127b05a0df8908"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 11929,
+			"sha256": "fc1d781dd9ced66a06bad6d6794857c1eb0114cf133506371d72be03bc8d3e57"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 964,
+			"sha256": "02df8474026037ee3a3663ef4ec6cd31d19254e9f5f03ddcf786dc87c756f896"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 10012,
+			"sha256": "c7f9bae7abd61d3b0bd18d3b2d4ac9208fe3a7b9eb32911bf0dd37b7d5d2a123"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 965,
+			"sha256": "086c18eed8fc4d5e11a1a217b799f3d402bcb132a1173c0d87a59a96ba835034"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3295,
+			"sha256": "ce0d3fce8886c25c2e910b98573eca5137a4d4c191d1ae760d880ae149335113"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2300889,
+			"sha256": "12b7cd33a53f06785da4185772ce42c4d1ecc2192def78a4731c9a21f8b7e3ee"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4495,
+			"sha256": "c0b8f7fd83cd2b9ac7619c62aec8e354066826a04dfacf00b8cbf7613acc3b2b"
+		},
+		{
+			"path": "/brands/pika/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 4495,
+			"sha256": "af5c41a4a0f3f2a2849b14456f31a202f80ab52187c126f225663a902a7b1688"
+		}
+	]
+}

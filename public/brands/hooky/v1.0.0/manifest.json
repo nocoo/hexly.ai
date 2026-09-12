@@ -1,0 +1,389 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "hooky",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/hooky#brand",
+	"root": "https://hexly.ai/brands/hooky/v1.0.0",
+	"source": "artwork/brands/hooky/v1.0.0",
+	"brandBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/hooky.png",
+		"export": "/brands/hooky/v1.0.0/official-logo.png",
+		"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+		"bytes": 667627,
+		"width": 900,
+		"height": 900,
+		"channels": 4,
+		"rgbaSha256": "30e826f26fe439a647490f322cd7d4a164c59bd8ebe3261bd4620b9b143f9572",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/logo.png",
+		"sourceRepositoryRevision": "8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/hooky/2026-09-07-01/01/transparent.png",
+		"export": "/brands/hooky/v1.0.0/logo.png",
+		"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+		"bytes": 667627,
+		"width": 900,
+		"height": 900,
+		"channels": 4,
+		"rgbaSha256": "30e826f26fe439a647490f322cd7d4a164c59bd8ebe3261bd4620b9b143f9572",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 0,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "retained-original",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 880,
+				"left": 1400,
+				"top": 40,
+				"scale": 0.9777777777777777,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 864,
+				"left": 80,
+				"top": 120,
+				"scale": 0.96,
+				"crop": false,
+				"recolor": false,
+				"entry": false,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/hooky/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 62409,
+			"sha256": "106d6daa02307076cb172cdf7902fb6303bc576ce35aadf5c42d1e9d63f59547"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 138142,
+			"sha256": "cea6c9e0abcf85c0c45a5b30c4cfdd60c152abb54a56626f88a75fdcd691753b"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6385,
+			"sha256": "7f9d1d4d8670a657b5d84342f44a6d3b19df932231dc1c8b4dfbfae7f0645eb7"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 847210,
+			"sha256": "6336847c1a9d081786cfb49e060a11dcf1bd5005d86c9202413f7f6facbad2b1"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 57384,
+			"sha256": "32fea3bf1e6471e3807c3199704f6943e7b39ee786a6f8f023955e1df4f2232c"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 47256,
+			"sha256": "53936d179e88228a2b141d6305bd37471f5b6b11178a5c3040fc85ee9f553cb1"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 44048,
+			"sha256": "cbfc874c211417c30104fdd8d6c82a370f2d9a869f3ac6c97d8e51d91a8f57ce"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 817698,
+			"sha256": "51418e9c9df9af0caaddd472b9e87d0653de4db3407be3bb4ec4f90ec70ab875"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 54222,
+			"sha256": "97cab024f447916225326cdf5f7d78c6ca5cf5a3c1ff66190b7bb055db135095"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 75469,
+			"sha256": "61ddd2a7fc1159de98b941d869fbcad95a7f0a8c648c392f48a5f4d063428dfe"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 300447,
+			"sha256": "02d2b5733417e5e1acdebacb0490cae833d2c475054cecbcb4a438d0bc03d2a3"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 707700,
+			"sha256": "0bb53f0666055a220b9eec04e28df2fd8ce0e3b08e07a4b4963b2e30484d23ad"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 427944,
+			"sha256": "ead9728f362b772bb8f240da3c9a464c1508435a4be02e3406558ac53830b664"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 1063369,
+			"sha256": "d618aa2a092ad61c031e68108b1927329d8c3619ad5441a0a7390d6396bf6f2d"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1754,
+			"sha256": "7ef037991b96606dd71d5935c20061784f80b53abbcbb0c2531a655fd44cda73"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 194876,
+			"sha256": "25547a67d1c072ebce32f86b6905ed0e35ecc31884f7072c69e41da9b479a140"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 195200,
+			"sha256": "a397d265603571e4733075724137f07b5a534b3dce706b19ec9a062ae2659836"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 709939,
+			"sha256": "53195fb0f705f404323ce3df602fdbdd862adf4c2ee333e1dfd3ca40f438ddd8"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 709939,
+			"sha256": "53195fb0f705f404323ce3df602fdbdd862adf4c2ee333e1dfd3ca40f438ddd8"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 667627,
+			"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 28348,
+			"sha256": "b02ec02a6e4ea2a48745220719914dee6c0c9c066aaee71ae2a1c83f64bd76ab"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 920,
+			"sha256": "99b1d22d623e1b4fa3d95f5ab03055ff32d10d74ead4379c2f631a0367329733"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1658,
+			"sha256": "8697f91bdf47ee0596cfe8f687d5ee6712cc0ed9cc68498efcee853a58901c05"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 92348,
+			"sha256": "9e1108a3d02e388f640e6a5c3c531ae03c9007cb0e36b8b1b009df0c1a3bf16c"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2636,
+			"sha256": "60d0e4d21fb18b722210b005c2a16dd3667aee4f8bb78b2a6d0aa902df5d1519"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5254,
+			"sha256": "83889edcd22df0cfee07c7433ae4262ed1f076391bb328d59dc17153bca2acf9"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 297068,
+			"sha256": "176b000defe17fc7f1ffab0bd005f0811c253ed13b2cab63dbea009b06cfc11b"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 8534,
+			"sha256": "4e6bf40131b3953b572b52bbe14413ae7bcc3afc498592c15119f8bcfb69fdce"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 667627,
+			"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 667627,
+			"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 667627,
+			"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 6490,
+			"sha256": "51e3e0c82a3fe9d6ad90d979e73346e38358651842291880a3ef36703cb2b063"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 10431,
+			"sha256": "4440917c4ef0bdcb20d30addb980e73645dbdee1c4d690aaa1c7d15108988b56"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 7955,
+			"sha256": "00f491d5daa980ad01bfe8ad1c2349a1cf2ff734f3ee0a2264018e1dfc7aa116"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1066,
+			"sha256": "ced135ffdf9bee52bc0639aba317d2df863622efd097a528012654814e0fd6be"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 6953,
+			"sha256": "0f1e8459c5fc324a0d8d20276af3e6fe6bccf505ee7f45b6cddbf2f71ef0c75c"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1067,
+			"sha256": "89a9e60e969a014944a7523633e97f9316bb1e6d5c7f70b322249e6686daafbd"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3080,
+			"sha256": "344a5f3cd1d93ef479d5e66c8094d66b1425515f6da9638af43b80b8e4eb7cc9"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 627584,
+			"sha256": "31f9abb9f551fcfc2a1ed1b59393c54fdbb0f814ded38fd0f746c8d357ae0be6"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5148,
+			"sha256": "3ed58a73d739ccadb173a36a125a6edbe52c145d9a75f9b84a6fc016e26565c7"
+		},
+		{
+			"path": "/brands/hooky/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 5148,
+			"sha256": "de07ed8d982dd7cf97f56188306828ca94868f608bb62055806be651dd8175f8"
+		}
+	]
+}

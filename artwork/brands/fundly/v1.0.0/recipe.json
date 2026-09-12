@@ -1,0 +1,130 @@
+{
+	"schemaVersion": 1,
+	"project": "fundly",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"caption": {
+		"en": "A measured view of the market.",
+		"zh": "以从容的视野，观察基金。"
+	},
+	"description": {
+		"en": "Worldly navy-and-ivory penguin holding binoculars.",
+		"zh": "手持望远镜、见多识广的深蓝与象牙白企鹅。"
+	},
+	"foreground": {
+		"path": "/logos/family/fundly/2026-09-07-01/02/transparent.png",
+		"sha256": "e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Far-horizon sightlines",
+			"zh": "远眺视线"
+		},
+		"description": {
+			"en": "Broad horizon bands open toward the penguin’s gaze, with restrained sighting ticks in the distance.",
+			"zh": "宽阔地平线朝企鹅的视线展开，远处只留少量观测刻度。"
+		},
+		"source": "artwork/logo-family/fundly/2026-09-07-01/finishing/02/settings.json",
+		"sourceSha256": "16e59edfd0e685398ca7dbf3cabb6d91273988617f454bd3ca857122322be793",
+		"layers": [
+			{
+				"d": "M-96 247C161 115 492 141 699 219L676 264C454 195 190 171-94 301Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-91 305C182 159 445 189 686 261",
+				"tone": "motif",
+				"strokeWidth": 19
+			},
+			{
+				"d": "M-95 282C173 139 451 166 695 238",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			},
+			{
+				"d": "M-130 449C105 310 287 280 480 316",
+				"tone": "motif",
+				"strokeWidth": 7
+			},
+			{
+				"d": "M-115 462C108 329 286 300 477 334",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M84 92h52M110 66v52M207 124h28M221 110v28",
+				"tone": "motif",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M818 1070C937 908 1006 890 1120 926L1120 1059Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M841 1062C957 925 1026 916 1120 948",
+				"tone": "highlight",
+				"strokeWidth": 2.5
+			}
+		],
+		"bounds": [-130.0, 66.0, 1120.0, 1070.0],
+		"transform": {
+			"scale": 0.3456,
+			"x": 84.928,
+			"y": 59.69919999999999,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Fundly",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 440.812,
+		"height": 158.0,
+		"glyphBoundsUnits": [69.499755859375, -200, 2989.5839764138927, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/fundly.svg",
+		"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+		"width": 32,
+		"height": 32,
+		"sourceUrl": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+		"repositoryRevision": "6de762074e00011009f7604bbeeb7c0b04923c00"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": false,
+		"familyStatus": "review",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

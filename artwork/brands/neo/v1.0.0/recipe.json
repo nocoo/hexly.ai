@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 1,
+	"project": "neo",
+	"brandVersion": "1.0.0",
+	"siteBaseline": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+	"method": "archived-artwork",
+	"sourceMethod": "retained-original",
+	"series": "animal",
+	"caption": {
+		"en": "Your codes, kept close.",
+		"zh": "验证码，安心放在身边。"
+	},
+	"description": {
+		"en": "Golden faceted retriever with a relaxed smile.",
+		"zh": "金色碎片化寻回犬与放松笑容。"
+	},
+	"foreground": {
+		"path": "/logos/family/neo/2026-09-07-03/01/transparent.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Folded sunlight",
+			"zh": "折叠日光"
+		},
+		"description": {
+			"en": "Wide, asymmetric rays enter from opposite corners, like sunlight folded across a sheet of paper.",
+			"zh": "宽窄不同的光线从对角进入，像日光在纸上折出几道安静的痕迹。"
+		},
+		"source": "artwork/logo-family/neo/2026-09-07-03/finishing/01/settings.json",
+		"sourceSha256": "59473e198874c70af552f911c6722e6ef91d606e6848a8aa897e86388b8de9d9",
+		"layers": [
+			{
+				"d": "M637-90L751-90L488 278L388 323Z M871-80L1028-55L711 279L636 294Z M1078 73L1131 199L868 349L813 329Z",
+				"tone": "motif"
+			},
+			{
+				"d": "M394 328L494 283L757-85 M642 299L717 284L1034-50 M819 334L874 354L1137 204",
+				"tone": "highlight",
+				"strokeWidth": 3
+			},
+			{
+				"d": "M-98 790L-48 924L203 742L231 680Z M-36 1101L131 1101L287 894L264 823Z M330 1120L452 1134L442 939L403 900Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M-44 930L209 748L237 686 M136 1106L293 899L270 828 M458 1134L448 939L409 900",
+				"tone": "highlight",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [-98.0, -90.0, 1137.0, 1134.0],
+		"transform": {
+			"scale": 0.3497975708502024,
+			"x": 74.28016194331985,
+			"y": 73.40566801619434,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": [],
+		"minimumFrameInset": 0
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Neo",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 263.951,
+		"height": 131.96,
+		"glyphBoundsUnits": [69.499755859375, -14, 1726.293600331182, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/neo.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png",
+		"repositoryRevision": "0d750484792449914b07e9b3e3404a823493f8a5"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The archived Hexly family artwork, reused without recoloring or redrawing. Hero and theme texture are Hexly-only promotional compositions."
+	}
+}

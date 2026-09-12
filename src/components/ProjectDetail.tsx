@@ -7,7 +7,7 @@ import {
 	useRef,
 } from "react";
 import { categoryLabels, copy } from "../data/copy";
-import { brandTexture } from "../model/brand";
+import { brandSourceLabel, brandTexture } from "../model/brand";
 import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import type { Category, Locale, Project } from "../model/project";
@@ -305,7 +305,7 @@ export function ProjectDetail({
 								</span>
 								<span className="mono">
 									{project.brandKit
-										? `${project.brandKit.method === "gpt-image-2" ? "GPT Image · PNG" : "SVG"} · v${project.brandKit.version}`
+										? `${brandSourceLabel(project, locale)} · v${project.brandKit.version}`
 										: `${foreground?.width} × ${foreground?.height}`}
 									{project.family && ` · ${project.family.updated}`}
 								</span>
