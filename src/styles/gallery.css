@@ -755,13 +755,8 @@
 		margin-bottom: 10px;
 	}
 	.identity-heading h2 {
-		font-size: 46px;
-		letter-spacing: -2px;
-	}
-	.identity-name {
-		overflow: visible;
-		overflow-wrap: anywhere;
-		white-space: normal;
+		font-size: clamp(28px, 8vw, 46px);
+		letter-spacing: -0.04em;
 	}
 	.identity-emoji {
 		font-size: 23px;
