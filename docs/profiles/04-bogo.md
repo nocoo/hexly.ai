@@ -75,7 +75,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-05`, finishing `04`
 - Refined subject: Winking faceted buffalo with a plain muzzle and one rainbow flower sprig
-- Site path: `/logos/bogo`; [local gallery](https://index.dev.hexly.ai/logos/bogo)
+- Site path: `/projects/bogo#brand`; [local gallery](https://index.dev.hexly.ai/projects/bogo#brand)
 - [Static review HTML](../../artwork/logo-family/bogo/2026-09-07-05/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/bogo/2026-09-07-05)
 - [Transparent foreground](../../public/logos/family/bogo/2026-09-07-05/04/transparent.png); SHA-256: `54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1`

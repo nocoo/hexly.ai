@@ -2,6 +2,7 @@ import type { RefObject } from "react";
 import { categoryLabels, copy } from "../data/copy";
 import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
+import { navigationPath } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
@@ -15,7 +16,7 @@ export function Directory({
 	locale,
 	searchRef,
 	onChange,
-	onLogo,
+	onProject,
 }: {
 	projects: Project[];
 	visible: Project[];
@@ -23,71 +24,95 @@ export function Directory({
 	locale: Locale;
 	searchRef: RefObject<HTMLInputElement | null>;
 	onChange: (patch: Partial<DirectoryState>) => void;
-	onLogo: (id: string) => void;
+	onProject: (id: string, anchor?: string) => void;
 }) {
 	const t = copy[locale];
 	const counts = categoryCounts(projects);
+	const logos = state.view === "logos";
 	const faces = projects
 		.filter((project) => project.family && !project.archived)
 		.slice(0, 6);
 	return (
-		<main id="main-content" className="shell directory-main">
-			<section className="hero" aria-labelledby="hero-title">
-				<div className="hero-copy">
-					<p className="eyebrow">
-						<span className="tiny-square" />
-						{t.eyebrow}
-					</p>
-					<h1 id="hero-title">
-						{t.heroFirst}
-						<br />
-						<span className="outline-word">{t.heroSecond}</span>
-						<span className="headline-period">
-							{locale === "zh" ? "。" : "."}
-						</span>
-					</h1>
-					<p className="hero-description">{t.heroDescription}</p>
-					<div className="hero-actions">
-						<a className="button button-primary" href="#collection">
-							{t.explore}
-							<Icon name="right" />
-						</a>
-						<button
-							type="button"
-							className="text-button"
-							onClick={() => onLogo("frogie")}
-						>
-							{t.meet}
-							<Icon name="arrow" />
-						</button>
+		<main
+			id="main-content"
+			className={`shell directory-main ${logos ? "logo-wall-main" : ""}`}
+		>
+			{logos ? (
+				<div className="gallery-heading">
+					<div>
+						<p className="eyebrow">
+							<span className="tiny-square" />
+							{t.galleryEyebrow}
+						</p>
+						<h1>{t.galleryTitle}</h1>
 					</div>
+					<p>{t.galleryDescription}</p>
 				</div>
-				<div className="hero-art">
-					<div className="orbit orbit-one" />
-					<div className="orbit orbit-two" />
-					<div className="orbit orbit-three" />
-					<div className="orbit-dot dot-one" />
-					<div className="orbit-dot dot-two" />
-					<span className="art-cross cross-one">+</span>
-					<span className="art-cross cross-two">+</span>
-					{faces.map((project, index) => (
-						<button
-							type="button"
-							className={`floating-logo float-${index}`}
-							key={project.id}
-							aria-label={`${t.viewLogo}: ${project.title}`}
-							onClick={() => onLogo(project.id)}
-						>
-							<Logo project={project} size={index < 2 ? 104 : 80} eager />
-						</button>
-					))}
-					<span className="hero-art-caption">
-						<span />
-						{t.heroNote}
-						<span />
-					</span>
-				</div>
-			</section>
+			) : (
+				<section className="hero" aria-labelledby="hero-title">
+					<div className="hero-copy">
+						<p className="eyebrow">
+							<span className="tiny-square" />
+							{t.eyebrow}
+						</p>
+						<h1 id="hero-title">
+							{t.heroFirst}
+							<br />
+							<span className="outline-word">{t.heroSecond}</span>
+							<span className="headline-period">
+								{locale === "zh" ? "。" : "."}
+							</span>
+						</h1>
+						<p className="hero-description">{t.heroDescription}</p>
+						<div className="hero-actions">
+							<a className="button button-primary" href="#collection">
+								{t.explore}
+								<Icon name="right" />
+							</a>
+							<button
+								type="button"
+								className="text-button"
+								onClick={() =>
+									onChange({
+										view: "logos",
+										category: "all",
+										query: "",
+										anchor: undefined,
+									})
+								}
+							>
+								{t.meet}
+								<Icon name="arrow" />
+							</button>
+						</div>
+					</div>
+					<div className="hero-art">
+						<div className="orbit orbit-one" />
+						<div className="orbit orbit-two" />
+						<div className="orbit orbit-three" />
+						<div className="orbit-dot dot-one" />
+						<div className="orbit-dot dot-two" />
+						<span className="art-cross cross-one">+</span>
+						<span className="art-cross cross-two">+</span>
+						{faces.map((project, index) => (
+							<button
+								type="button"
+								className={`floating-logo float-${index}`}
+								key={project.id}
+								aria-label={`${t.viewProject}: ${project.title}`}
+								onClick={() => onProject(project.id)}
+							>
+								<Logo project={project} size={index < 2 ? 104 : 80} eager />
+							</button>
+						))}
+						<span className="hero-art-caption">
+							<span />
+							{t.heroNote}
+							<span />
+						</span>
+					</div>
+				</section>
+			)}
 			<section
 				className="collection"
 				id="collection"
@@ -107,6 +132,46 @@ export function Directory({
 						locale={locale}
 						inputRef={searchRef}
 					/>
+				</div>
+				<div className="collection-views">
+					<nav className="view-switch" aria-label={t.browseAs}>
+						{(["directory", "logos"] as const).map((view) => (
+							<a
+								key={view}
+								href={navigationPath({ ...state, view, anchor: "collection" })}
+								aria-current={state.view === view ? "page" : undefined}
+								onClick={(event) => {
+									if (
+										event.button ||
+										event.metaKey ||
+										event.ctrlKey ||
+										event.shiftKey ||
+										event.altKey
+									)
+										return;
+									event.preventDefault();
+									onChange({ view, anchor: "collection" });
+								}}
+							>
+								<Icon name={view === "logos" ? "image" : "grid"} />
+								{view === "logos" ? t.gallery : t.directory}
+							</a>
+						))}
+					</nav>
+					{(state.withVideo ||
+						projects.some((project) => project.media?.videos?.length)) && (
+						<label className="media-filter">
+							<input
+								type="checkbox"
+								checked={state.withVideo ?? false}
+								onChange={(event) =>
+									onChange({ withVideo: event.target.checked })
+								}
+							/>
+							<Icon name="play" />
+							{t.withVideo}
+						</label>
+					)}
 				</div>
 				<div className="collection-toolbar">
 					<fieldset className="category-tabs" aria-label={t.categories}>
@@ -145,13 +210,14 @@ export function Directory({
 					{t.showing} {visible.length} {t.of} {projects.length} {t.projects}
 				</p>
 				{visible.length ? (
-					<div className="project-grid">
+					<div className={logos ? "logo-wall" : "project-grid"}>
 						{visible.map((project, index) => (
 							<ProjectCard
 								key={project.id}
 								project={project}
 								locale={locale}
-								onLogo={onLogo}
+								onProject={onProject}
+								artworkOnly={logos}
 								eager={index < 3}
 							/>
 						))}
@@ -164,7 +230,9 @@ export function Directory({
 						<button
 							className="button button-secondary"
 							type="button"
-							onClick={() => onChange({ category: "all", query: "" })}
+							onClick={() =>
+								onChange({ category: "all", query: "", withVideo: undefined })
+							}
 						>
 							{t.reset}
 						</button>

@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Titanium F-22 desk model caught in a banking turn
-- Site path: `/logos/dogfight`; [local gallery](https://index.dev.hexly.ai/logos/dogfight)
+- Site path: `/projects/dogfight#brand`; [local gallery](https://index.dev.hexly.ai/projects/dogfight#brand)
 - [Static review HTML](../../artwork/logo-family/dogfight/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dogfight/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/dogfight/2026-09-07-01/02/transparent.png); SHA-256: `274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4`

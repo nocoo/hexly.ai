@@ -1,207 +1,134 @@
 # Hexly Video Kit
 
-Five expressions of the same Hexly identity. One project configuration drives a
-Remotion timeline, an interactive browser preview, and a paginated deck.
+Private, reusable React/Remotion compositions for the Hexly family. **2.0.0 is currently local and unpublished.** Consumers of the published 1.0.0 kit must keep their pinned checkout; this schema intentionally breaks with that version.
 
-**Version 1.0.0** · [Online library](https://hexly.ai/videos) ·
-[Family rules](../../docs/16-video-kit.md) · [Credits and licenses](CREDITS.md)
+One project supplies every design. Choose a cover, a content layout, an ending and a canvas theme independently. The website, Vite preview, Remotion composition and slide exporter all render the same source. There are **250 base combinations**, before individual scene overrides.
 
-| Template | Composition ID | Use and composition |
-| --- | --- | --- |
-| Launch | `Hexly-launch` | Product launches; generous left-aligned type and layered paper cards. |
-| Studio | `Hexly-studio` | Technical stories; softly lit dimensional objects in the same paper/terracotta palette. |
-| Editorial | `Hexly-editorial` | Research and longer explanations; rules, folios, figures and denser copy. |
-| Pulse | `Hexly-pulse` | Data and status updates; bounded panels with sourced facts. Catalogue facts are explicitly snapshots, not live health. |
-| Essential | `Hexly-essential` | Short brand announcements; centered typography and quiet negative space. |
+## The designs
 
-Every template supports Intro, Title, Chapter, Content, CTA, LogoReveal and
-Outro. The supplied 33-second film is a seven-component sampler, not an authored
-product advertisement. Reorder or repeat scene kinds with unique IDs to compose
-a longer film. Landscape is 1920 × 1080 at 30 fps; portrait is 1080 × 1920.
+| Content layout | Composition | Use |
+|---|---|---|
+| Launch | Generous type beside a large project image; the original clear launch language. | Releases and introductions |
+| Essential | Centered words, one quiet focal point and open space. | Announcements and invitations |
+| Showcase | A panoramic product window under a concise title/caption row. | Screenshots, interfaces and demos |
+| Columns | A strong thesis on one side, supporting detail and sourced facts on the other. | Explanations and research |
+| Bento | A large story module, project art and three subordinate fact modules. | Overviews and updates |
 
-## Run the previews
+| Opening | Composition and motion |
+|---|---|
+| Signal | Red point, centered title, short note; sequential type entrances. |
+| Frame | A wide product window above a bold title/caption band; shallow perspective settles into a readable frame. |
+| Index | Oversized folio, project name and opening note; aligned typographic entrances. |
+| Horizon | Wide headline above a full-width paper field, with a small project object at the edge. |
+| Stack | Layered paper settles behind one clean title card. |
 
-From the hexly.ai repository, with Bun 1.4.0 and the checked-in lockfile:
+| Ending | Composition and motion |
+|---|---|
+| Signature | The official mark alone, its full wordmark, then the caption. |
+| Line | A large project headline, a red line that finishes at the edge, and a Hexly signature that settles at the lower left. |
+| Frame | A layered paper end card, pairing the Hexly signature with the project identity and destination. |
+| Split | Two paper fields; the mark expands into a left-hand signature, then the project and destination appear on the right. |
+| Colophon | An oversized signature between fine rules and a small colophon. |
+
+Every design supports `light` and `dark`, using the real site palettes. These are two themes of every component, not separate component counts. The five content layouts support title, chapter, content and CTA scenes; openings and endings do not depend on the chosen content layout. `LogoReveal` also remains available as a standalone component.
+
+## Local preview
+
+From the repository root:
 
 ```sh
 bun install --frozen-lockfile
-bun run dev                         # https://index.dev.hexly.ai/videos
-bun run video:dev                   # http://127.0.0.1:7440, standalone Vite demo
-bun run video:studio                # http://localhost:7441, five Remotion compositions
-bun run video:build                 # standalone production Vite build
+bun run dev                  # https://index.dev.hexly.ai/templates, local SQLite D1
+bun run video:dev            # http://127.0.0.1:7440, independent Vite preview
+bun run video:studio         # http://localhost:7441, Remotion compositions
 ```
 
-The standalone demo uses `examples/hexly.json`. It can switch all five templates
-between Video and Deck. The main site adapts its existing project catalogue via
-`src/model/videos.ts`: selecting a project supplies its real name, bilingual
-summary, source logo, links, technology list and dated facts to every template.
-An optional PNG/JPEG/WebP screenshot stays in the browser. Downloading the setup
-includes that image and the selected format/motion preference in the film JSON.
+`/templates` has three component families. Each card shows the selected catalogue project through the actual composition. In a project preview, choose the opening/content/ending and theme. Changing a component seeks to that part. A theme change pauses playback and preserves the current frame; switching Video/Deck preserves the current scene. Previews start paused and respect the system reduced-motion preference. No MP4 is loaded, generated or uploaded by the website.
 
-The site lazily loads the preview player. It never runs a server renderer.
-Download links labeled as standard samples always refer to the prebuilt Hexly
-sampler; use the downloaded project setup for your own final film or deck.
+The project, three base choices, theme and selected view are shareable URL parameters. PNG/JPEG/WebP screenshots (up to 8 MB) stay in the browser and are embedded in a downloaded setup. They are deliberately not placed in URLs or persisted across projects. The site adapter in `src/model/videos.ts` reads the catalogue once; there are no per-project/per-template configuration copies. Catalogue facts are snapshots, never a live health claim.
 
-## Render video and real slides
+## Project configuration and API
 
-Install FFmpeg (`ffmpeg` and `ffprobe`) and Chromium/Chrome for offline rendering.
-The renderer uses the local macOS Chrome when present; otherwise Remotion uses
-its managed browser. `CHROME_PATH` can select an installed executable.
-
-```sh
-# One real catalogue project, all artifacts. Choose a fresh output directory.
-bun run video:render -- --project pew --template studio --locale zh \
-  --mode all --scale 1 --out /tmp/pew-studio-production
-
-# Reproduce the content, screenshot and settings downloaded from /videos.
-bun run video:render -- --props /path/to/pew-studio.json \
-  --mode deck --scale 1 --out /tmp/pew-studio-deck
-
-# Supply a screenshot directly without changing the catalogue.
-bun run video:render -- --project bogo --template launch \
-  --screenshot /path/to/screenshot.png --mode all --out /tmp/bogo-launch
-
-# All five standard examples, or use --example editorial for just one.
-bun run video:examples -- --mode all --out /tmp/hexly-five-examples
-```
-
-`--mode all|video|deck|stills` selects exports. `--scale 0.5` is the default
-960 × 540 preview; `--scale 1` renders full resolution. Each output contains a
-template subdirectory:
-
-```text
-studio/
-  sample.mp4           # all/video: H.264, yuv420p, BT.709, 30 fps, silent
-  deck.pptx            # all/deck: image-backed slides with editable speaker notes
-  deck.pdf             # all/deck: matching image-backed PDF pages
-  frames/*.png         # every scene, settled and readable
-  poster.webp
-  contact-sheet.webp
-  decoded-frame.png    # all/video: decoded from the actual MP4
-  render.json          # dimensions, timeline, props SHA-256, artifact hashes
-```
-
-PPTX/PDF preserve the rendered composition as an image. Slide elements are not
-individually editable. PPTX has editable native speaker notes containing scene
-text, CTA URL and project evidence; PDF has image pages, not tagged/selectable
-text. The browser also exposes a readable scene transcript. These are real
-PPTX/PDF exports, not renamed images or promises of later conversion.
-
-Output directories are never overwritten. The root wrapper copies only the
-selected project's public images and licensed fonts into ignored `.video-work/`.
-The package renderer accepts `--props` and `--public-dir` for independent projects:
-
-```sh
-bun packages/video-kit/scripts/render.ts --props /path/to/film.json \
-  --public-dir /path/to/film-public --mode all --out /tmp/film-output
-```
-
-Place `public/video-kit/1.0.0/hexly/` from this package under that public directory
-alongside the project's referenced images. HTTPS images are supported, but local
-images make offline renders reproducible.
-
-## Configuration and API
-
-`src/schema.ts` owns validation. The site serves JSON Schema documents at
-[`/videos/film-v1.schema.json`](https://hexly.ai/videos/film-v1.schema.json) and
-[`/videos/manifest-v1.schema.json`](https://hexly.ai/videos/manifest-v1.schema.json).
-Use `parseFilm()` for runtime validation; it additionally rejects duplicate scene
-IDs and CTA scenes without an HTTPS destination.
-
-| Field | Contract |
-| --- | --- |
-| `schemaVersion` | `1` |
-| `template` | `launch`, `studio`, `editorial`, `pulse`, `essential` |
-| `format`, `fps`, `motion` | `landscape` or `portrait`; `30`; `full` or `reduced` |
-| `project` | `id`, `name`, `summary`, HTTPS `repository`, nullable `website`, optional `logo`/`screenshot`, evidenced `colors`, `technologies`, labeled `facts`, `sourceNote` |
-| `scenes` | 1–24 scenes; each has unique `id`, `kind`, 4–30 second `duration`, `title`, `eyebrow`, `body`, optional `link` |
-
-Text limits and asset constraints are in the schema. Break long editorial
-material across scenes. Each scene's duration includes its entrance and reading
-hold. Motion is deterministic from the frame number; there are no random or
-wall-clock-driven effects.
+The strict schema is `src/schema.ts`. The site emits `/templates/film-v2.schema.json` and `/templates/manifest-v2.schema.json`.
 
 ```tsx
-import { Film, createProjectFilm, durationFor, dimensions } from '@hexly/video-kit';
-import { VideoPreview } from '@hexly/video-kit/player';
-import '@hexly/video-kit/site.css';
-import project from './project.json';
+import { createProjectFilm, Film, parseFilm } from '@hexly/video-kit';
+import { FilmStill, VideoPreview } from '@hexly/video-kit/player';
 
-const config = createProjectFilm(project, 'studio', 'en');
-// A single change also changes the deck layout:
-const editorial = { ...config, template: 'editorial' as const };
+const config = createProjectFilm(project, 'showcase', 'en', {
+  theme: 'dark',
+  opening: 'stack',
+  ending: 'split',
+});
 
-// Remotion Composition / Sequence can render Film with this config.
-// Metadata: durationFor(config), dimensions(config.format), config.fps.
-export const Preview = () => <VideoPreview config={editorial} view="deck" />;
+// Optional: independently change any title/chapter/content/CTA scene.
+const mixed = parseFilm({
+  ...config,
+  scenes: config.scenes.map(scene => scene.id === 'title'
+    ? { ...scene, template: 'columns' }
+    : scene),
+});
+
+<Film {...mixed} />;
+<VideoPreview config={mixed} view="video" focusScene="content" />;
+<FilmStill config={mixed} scene="content" />;
+// For repeated scene kinds, address the exact timeline frame:
+<FilmStill config={mixed} frame={391} />;
 ```
 
-`VideoPreview` accepts `config`, `locale`, `view`, `onView`, `onConfigChange` and
-optional `clip`/`poster`. Controlled `view` switches video and paginated deck.
-An optional clip must depict that exact config; the site keeps the standard
-sampler separate from project previews.
+`VideoPreview` accepts `locale`, controlled `view`/`onView`, `focusScene` and `onConfigChange`. The latter emits the effective setup, including frame format and reduced motion. Import the player lazily in a host website. Rendering dependencies never enter the browser bundle.
 
-The main export also provides `Intro`, `Title`, `Chapter`, `Content`, `CTA`,
-`LogoReveal`, `Outro`, `BrandMark`, `BrandLockup`, `HexlyReveal`, `RedDot`,
-`family`, `hexly`, `palettes`, `themes`, `ease`, `entrance` and `revealState`.
-Scene components take `SceneProps` (title, eyebrow/body/link, template, motion,
-project, index and optional custom children). Render them inside Remotion's
-composition context. Browser code imports the player separately; it must never
-import `scripts/render.ts` or the offline rendering/export dependencies.
+| Field | Contract |
+|---|---|
+| `schemaVersion` | `2` |
+| `template` | `launch`, `essential`, `showcase`, `columns`, `bento` |
+| `opening` | `signal`, `frame`, `index`, `horizon`, `stack` |
+| `ending` | `signature`, `line`, `frame`, `split`, `colophon` |
+| `theme` | `light` or `dark`, independent of the host website |
+| `format`, `fps`, `motion` | `landscape` (1920×1080) / `portrait` (1080×1920), 30 fps, `full` / `reduced` |
+| `project` | Stable ID, name, summary, repository, optional website/logo/screenshot, evidenced colors, technologies, facts and source note |
+| `scenes` | 1–24 unique IDs; kind, 4–30 second duration, title/eyebrow/body, optional HTTPS CTA link and optional content `template` override |
 
-## Publication and downstream projects
+`parseFilm()` validates copy lengths, URLs, image sources, unique scene IDs and CTA links. A v1 setup is rejected rather than silently reinterpreted. To migrate an authorized consumer, set schemaVersion 2, select a current content layout, add the three independent composition fields and review the result. Do not edit an ongoing consumer's frozen production.
 
-This is a private Bun workspace package, published in the **hexly.ai Git
-repository**, not on npm. Pin the complete published commit SHA. Keep a clean,
-dedicated checkout at that revision and refer to its `packages/video-kit` via a
-file dependency or copy the complete package, including fonts, vendor archive,
-credits and licenses, into a consumer workspace.
+The shared canvas uses **32 px edge chrome and 80 px content insets** at 1920×1080. Both themes, every layout and all transitions derive from shared tokens and frame numbers. `FitText` measures the actual licensed fonts and scales long text groups to their assigned cells without clipping or ellipsis. Preserve official geometry and wordmark ratios. No random palettes, distorted marks, spring bounce or particle filler. Brand sources and font permissions: [CREDITS.md](CREDITS.md) and [brand-source.json](brand-source.json).
 
-The shared boundary is this package, its schemas, the generic catalogue adapter
-and `/videos` library. Consumer scripts, voices, audio, product scenes, production
-logs and final films belong to that consumer's production archive. Hermes-on-Herdr
-can use these APIs after publication; no Hermes-specific production is bundled.
+The wordmark reveal clips horizontally and allows 25% vertical bleed above and below its line box. Preserve this space for the Space Grotesk `y` descender; a tight `overflow: hidden` wrapper cuts off the actual glyph even when DOM text bounds fit.
 
-Curated site media is separate: `src/data/videos.json` is the public manifest,
-`public/video-assets/video-kit/1.0.0/` holds reviewed standard samples. Add a
-finished project later through `manifest.projects` with its own unique ID,
-metadata, media and independent preview/source URLs. Never add a private script,
-audio source or render directory to this manifest.
-
-After reviewing all five standard renders:
+## Export without generating a video
 
 ```sh
-bun run video:assets -- --from /tmp/hexly-five-examples
-bunx biome format --write src/data/videos.json
-bun run video:check
+# From one real catalogue project. Chrome/Chromium is required.
+bun run video:render -- --project pew --template columns \
+  --theme dark --opening index --ending colophon \
+  --mode deck --scale 1 --out /tmp/pew-deck-v2
+
+# Consume the exact setup downloaded from the website.
+bun run video:render -- --props /path/to/project-setup.json \
+  --mode deck --scale 1 --out /tmp/my-deck-v2
+
+# Package-only example (works in an independent checkout of this package).
+bun run --cwd packages/video-kit render --example bento \
+  --theme light --opening frame --ending signature --mode deck
 ```
 
-The publisher verifies render hashes and copies only WebP/MP4/PPTX/PDF files with
-hash-bearing filenames. It rejects outputs over 20 MB per file. The checker caps
-the curated collection at 40 MB and rejects undeclared files. Versioned assets
-use immutable caching; manifests revalidate. Fonts are emitted explicitly by the
-Vite plugin. `.cache`, `.video-work`, frames and rendering logs never ship.
+`--mode deck` produces **real PPTX and PDF files**, seven image-backed pages in the standard example, plus native editable PPTX speaker notes. It never invokes the video encoder. `--mode stills` creates only the still frames, poster, contact sheet and audit report. `--mode video` or `all` explicitly opts into H.264 video generation and FFmpeg verification; those modes were not run for this local redesign. Default render scale is 0.5; use `--scale 1` for 1920×1080/1080×1920 exports. Slide content is rasterized; speaker notes are editable, slide elements are not separate editable shapes.
 
-Use a patch kit version for compatible fixes, minor for compatible additions,
-major for a broken schema/API or family change. Bump versioned asset paths with
-the kit; regenerate and review samples before marking them `ready`. Do not
-silently replace bytes at a published immutable path.
+Each render uses a fresh output directory, retains `render.json` with the exact theme/components and input hash, and writes under the chosen content layout ID. Files include `deck.pptx`, `deck.pdf`, `frames/`, `poster.webp`, `contact-sheet.webp`; a video opt-in adds `film.mp4`. Existing output folders are refused. Do not put render outputs under any site's `public/` or deploy them automatically.
 
-## Validation
+External consumers must copy this package's unchanged `public/video-kit/1.0.0/hexly/` font/license assets into their public root. `brandAssetVersion` remains 1.0.0 because those bytes have not changed; `kitVersion` and schema can evolve independently. Renderer `--public-dir` accepts a prepared local asset directory. The root wrapper handles catalogue artwork and downloaded embedded screenshots.
+
+## Review and asset boundaries
 
 ```sh
 bun run typecheck
-bun run test:coverage
+bun run video:build
 bun run video:check
-bun run test:http
-bun run test:browser
-bun run lint
-bun run check:security
-bun run deploy:check
+bun run video:review -- --out /tmp/hexly-v2-review
 ```
 
-The root tests cover the real catalogue × five templates × two languages,
-manifest/schema boundaries, official geometry, licensed font hashes, reveal
-timing, project selection, Video/Deck, screenshots, downloads and mobile access.
-Representative rendered frames and export verification live in
-[`docs/video-kit/1.0.0`](../../docs/video-kit/1.0.0/review.md).
+The last command requires the local site server. It captures all 30 settled component/theme frames, creates three contact sheets, checks text bounds and a 320 px Chinese view, and records that no movie was requested. It is a still review, not a video render. Human inspection of the sheets remains necessary; [the local review record](../../docs/video-kit/2.0.0/review.md) records actual observations.
+
+The public manifest contains only component metadata, supported themes and client-preview mode. There are no current sample movies, old posters, exported deck download links or orphan files in `public/video-assets`. Screenshots, contact sheets and representative deck proofs stay outside deployed assets. The five current layouts have no legacy aliases or hidden old implementations. Git tag `v0.6.0` preserves the original published kit and its old sample artifacts.
+
+The dependency set is unchanged. [The vendor record](vendor/pptxgenjs-source.json) documents the reproducible removal of PptxGenJS's unused vulnerable `image-size` dependency; its upstream JS/types/LICENSE remain original. Do not replace this archive with the unpruned package or suppress the advisory.

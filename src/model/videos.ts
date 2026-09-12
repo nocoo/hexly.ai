@@ -1,5 +1,5 @@
 import type {
-	VideoEntry,
+	CompositionOptions,
 	VideoManifest,
 	VideoProject,
 } from "@hexly/video-kit/schema";
@@ -10,10 +10,7 @@ import type { Locale, Project } from "./project";
 
 // The build validates this source with parseVideoManifest before emitting any assets.
 export const videoManifest = manifest as VideoManifest;
-export const videoEntries: VideoEntry[] = [
-	...videoManifest.templates,
-	...videoManifest.projects,
-];
+export const videoEntries = videoManifest.templates;
 export const findVideo = (id?: string) =>
 	videoEntries.find((entry) => entry.id === id);
 
@@ -39,6 +36,14 @@ export function projectForVideo(
 			.filter((color) => /^#[\da-f]{6}$/i.test(color))
 			.slice(0, 6),
 		technologies,
+		...(project?.media?.screenshots?.[0]
+			? {
+					screenshot: {
+						src: project.media.screenshots[0].src,
+						alt: project.media.screenshots[0].alt[locale],
+					},
+				}
+			: {}),
 		facts: snapshot
 			? [
 					{
@@ -87,9 +92,19 @@ export function videoHref(
 	id: string,
 	project?: string,
 	view: "video" | "deck" = "video",
+	options: Partial<CompositionOptions> & {
+		part?: "intro" | "content" | "outro";
+	} = {},
 ) {
 	const params = new URLSearchParams();
 	if (project && project !== "hexly-ai") params.set("project", project);
 	if (view === "deck") params.set("mode", "deck");
-	return `/videos/${id}${params.size ? `?${params}` : ""}`;
+	if (options.theme === "dark") params.set("theme", "dark");
+	if (options.opening && options.opening !== "signal")
+		params.set("opening", options.opening);
+	if (options.ending && options.ending !== "signature")
+		params.set("ending", options.ending);
+	if (options.part && options.part !== "content")
+		params.set("part", options.part);
+	return `/templates/${id}${params.size ? `?${params}` : ""}`;
 }

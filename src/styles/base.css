@@ -38,7 +38,7 @@
 	--mono: "Geist Mono Variable", "Journey CJK", "PingFang SC", monospace;
 	--site-layout-max: 1500px;
 	--site-gutter: 36px;
-	--site-topbar-height: 88px;
+	--site-topbar-height: 78px;
 	--site-subheader-height: 0px;
 	--site-topbar-offset: calc(
 		var(--site-topbar-height) +
@@ -218,7 +218,7 @@ a {
 	display: grid;
 	grid-template-columns: auto auto minmax(0, 1fr) auto;
 	align-items: center;
-	column-gap: 28px;
+	column-gap: 22px;
 	height: calc(var(--site-topbar-height) + var(--site-subheader-height));
 }
 .brand {
@@ -255,9 +255,9 @@ a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	gap: 7px;
+	gap: 6px;
 	min-height: 36px;
-	padding: 0 12px;
+	padding: 0 10px;
 	border: 1px solid transparent;
 	border-radius: 8px;
 	background: transparent;
@@ -292,7 +292,7 @@ a {
 .surface-links {
 	display: flex;
 	align-items: center;
-	gap: 28px;
+	gap: 22px;
 	margin-left: auto;
 }
 .site-header .surface-links {
@@ -844,8 +844,8 @@ html[lang="zh-CN"] .site-header .surface-links a {
 
 @media (max-width: 1000px) {
 	:root {
-		--site-topbar-height: 72px;
-		--site-subheader-height: 60px;
+		--site-topbar-height: 64px;
+		--site-subheader-height: 54px;
 	}
 	.site-header-inner {
 		grid-template-columns: minmax(0, 1fr) auto;
@@ -952,7 +952,7 @@ html[lang="zh-CN"] .site-header .surface-links a {
 
 @media (max-width: 560px) {
 	:root {
-		--site-topbar-height: 68px;
+		--site-topbar-height: 60px;
 	}
 	.site-header-inner {
 		column-gap: 12px;
@@ -969,13 +969,14 @@ html[lang="zh-CN"] .site-header .surface-links a {
 		border-radius: 9px;
 	}
 	.view-links button {
-		width: 36px;
+		width: auto;
 		min-height: 36px;
 		gap: 0;
-		padding: 0;
+		padding: 0 7px;
+		font-size: 11px;
 		border-radius: 6px;
 	}
-	.view-links .view-link-label {
+	.view-links button .icon {
 		display: none;
 	}
 }
@@ -1011,16 +1012,6 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	.site-header .surface-links a {
 		font-size: 10px;
 		letter-spacing: 0.03em;
-	}
-}
-
-@media (min-width: 1001px) and (max-width: 1200px) {
-	.view-links .view-link-label {
-		display: none;
-	}
-	.view-links button {
-		width: 36px;
-		padding: 0;
 	}
 }
 

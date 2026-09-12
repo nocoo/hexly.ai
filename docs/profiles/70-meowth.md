@@ -65,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: A silver-blue American Shorthair head playing with one yarn loop
-- Site path: `/logos/meowth`; [local gallery](https://index.dev.hexly.ai/logos/meowth)
+- Site path: `/projects/meowth#brand`; [local gallery](https://index.dev.hexly.ai/projects/meowth#brand)
 - [Static review HTML](../../artwork/logo-family/meowth/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/meowth/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/meowth/2026-09-07-01/02/transparent.png); SHA-256: `5d7236bab120c37ab93a929d182708bc1c07da14285925be50c95e868e6ec378`

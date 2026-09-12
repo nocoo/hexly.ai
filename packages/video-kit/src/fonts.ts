@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { staticFile, useDelayRender } from "remotion";
-import { kitVersion } from "./brand";
+import { brandAssetVersion } from "./brand";
 
 let fonts: Promise<void> | undefined;
 export function loadHexlyFonts() {
@@ -12,7 +12,7 @@ export function loadHexlyFonts() {
 		].map(async ([family, file]) => {
 			const face = new FontFace(
 				family ?? "",
-				`url(${staticFile(`video-kit/${kitVersion}/hexly/${file}`)})`,
+				`url(${staticFile(`video-kit/${brandAssetVersion}/hexly/${file}`)})`,
 				{ weight: "100 900" },
 			);
 			document.fonts.add(await face.load());

@@ -18,24 +18,24 @@ const env: Env = {
 describe("the static asset gateway", () => {
 	it("redirects www to the apex and keeps path and query", async () => {
 		const response = await worker.fetch(
-			new Request("https://www.hexly.ai/logos/frogie?q=1"),
+			new Request("https://www.hexly.ai/projects/frogie?q=1"),
 			env,
 		);
 		expect(response.status).toBe(301);
 		expect(response.headers.get("Location")).toBe(
-			"https://hexly.ai/logos/frogie?q=1",
+			"https://hexly.ai/projects/frogie?q=1",
 		);
 	});
 	it("redirects when the Host header is www", async () => {
 		const response = await worker.fetch(
-			new Request("https://hexly.ai/logos/frogie?q=1", {
+			new Request("https://hexly.ai/projects/frogie?q=1", {
 				headers: { Host: "www.hexly.ai" },
 			}),
 			env,
 		);
 		expect(response.status).toBe(301);
 		expect(response.headers.get("Location")).toBe(
-			"https://hexly.ai/logos/frogie?q=1",
+			"https://hexly.ai/projects/frogie?q=1",
 		);
 	});
 	it("redirects legacy project paths to canonical URLs", async () => {
@@ -51,14 +51,14 @@ describe("the static asset gateway", () => {
 		);
 		expect(frogie.status).toBe(301);
 		expect(frogie.headers.get("Location")).toBe(
-			"https://hexly.ai/logos/frogie",
+			"https://hexly.ai/projects/frogie",
 		);
 		const www = await worker.fetch(
 			new Request("https://www.hexly.ai/frogie?ref=1"),
 			env,
 		);
 		expect(www.headers.get("Location")).toBe(
-			"https://hexly.ai/logos/frogie?ref=1",
+			"https://hexly.ai/projects/frogie?ref=1",
 		);
 	});
 	it("allows cross-origin reads of share metadata", async () => {
@@ -75,9 +75,38 @@ describe("the static asset gateway", () => {
 		expect(missing.status).toBe(404);
 		expect(missing.headers.get("Access-Control-Allow-Origin")).toBe("*");
 	});
+	it("moves legacy pages and manifests with their query, leaving logo files intact", async () => {
+		for (const [before, after] of [
+			["/logos/frogie?q=frog&sort=az", "/projects/frogie?q=frog&sort=az#brand"],
+			["/videos?project=pew", "/templates?project=pew"],
+			["/videos/launch?mode=deck", "/templates/launch?mode=deck"],
+			["/videos/manifest.json", "/templates/manifest.json"],
+		]) {
+			const response = await worker.fetch(
+				new Request(`https://hexly.ai${before}`),
+				env,
+			);
+			expect(response.status).toBe(301);
+			expect(response.headers.get("Location")).toBe(`https://hexly.ai${after}`);
+		}
+		for (const path of [
+			"/logos",
+			"/logos/originals/pew.png",
+			"/logos/family/pew/manifest.json",
+			"/logos/display/pew-64.webp",
+			"/logos/emoji/uptime-kuma-skill.png",
+		]) {
+			const response = await worker.fetch(
+				new Request(`https://hexly.ai${path}`),
+				env,
+			);
+			expect(response.status).toBe(200);
+			expect(response.headers.get("Location")).toBeNull();
+		}
+	});
 	it("leaves canonical identity paths unchanged", async () => {
 		const response = await worker.fetch(
-			new Request("https://hexly.ai/logos/frogie"),
+			new Request("https://hexly.ai/projects/frogie"),
 			env,
 		);
 		expect(response.status).toBe(200);

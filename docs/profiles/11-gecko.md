@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original sandstone-colored gecko with a complete curled tail and toes
-- Site path: `/logos/gecko`; [local gallery](https://index.dev.hexly.ai/logos/gecko)
+- Site path: `/projects/gecko#brand`; [local gallery](https://index.dev.hexly.ai/projects/gecko#brand)
 - [Static review HTML](../../artwork/logo-family/gecko/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/gecko/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/gecko/2026-09-07-01/01/transparent.png); SHA-256: `8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3`

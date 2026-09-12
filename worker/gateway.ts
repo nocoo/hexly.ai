@@ -1,4 +1,5 @@
 import projectIds from "../src/data/projects/index.json" with { type: "json" };
+import { legacyRoute } from "../src/model/routes";
 import { runStatusChecks, statusResponse } from "./status";
 
 const slugs = new Set(projectIds);
@@ -43,29 +44,30 @@ export default {
 			url.port = "";
 			changed = true;
 		}
-		const path = url.pathname.replace(/\/+$/, "") || "/";
-		if (host === "status.hexly.ai" && path === "/") {
+		const originalPath = url.pathname.replace(/\/+$/, "") || "/";
+		if (host === "status.hexly.ai" && originalPath === "/") {
 			url.pathname = "/status";
 			return env.ASSETS.fetch(new Request(url, request));
 		}
+		const legacy = legacyRoute(originalPath);
+		if (legacy) {
+			url.pathname = legacy.path;
+			if (legacy.anchor && !url.hash) url.hash = legacy.anchor;
+			changed = true;
+		}
+		const path = url.pathname.replace(/\/+$/, "") || "/";
 		if (
 			host === "status.hexly.ai" &&
-			(path === "/projects" || /^\/logos(?:\/[a-z0-9-]+)?$/.test(path))
+			(legacy ||
+				path === "/logos" ||
+				/^\/projects\/[a-z0-9-]+$/.test(path) ||
+				path === "/templates" ||
+				path.startsWith("/templates/"))
 		) {
 			url.hostname = "hexly.ai";
 			url.protocol = "https:";
 			url.port = "";
 			return Response.redirect(url.toString(), 302);
-		}
-		if (path === "/projects") {
-			url.pathname = "/";
-			changed = true;
-		} else {
-			const slug = path.slice(1);
-			if (slug && !path.startsWith("/logos/") && slugs.has(slug)) {
-				url.pathname = `/logos/${slug}`;
-				changed = true;
-			}
 		}
 		if (changed) {
 			return new Response(null, {

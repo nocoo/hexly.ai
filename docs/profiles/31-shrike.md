@@ -68,7 +68,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original grey faceted shrike with a dark eye mask
-- Site path: `/logos/shrike`; [local gallery](https://index.dev.hexly.ai/logos/shrike)
+- Site path: `/projects/shrike#brand`; [local gallery](https://index.dev.hexly.ai/projects/shrike#brand)
 - [Static review HTML](../../artwork/logo-family/shrike/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/shrike/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/shrike/2026-09-07-01/01/transparent.png); SHA-256: `97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa`

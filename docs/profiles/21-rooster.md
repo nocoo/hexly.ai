@@ -67,7 +67,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Copper rooster lifting one foot beside a multicolored morning glory
-- Site path: `/logos/rooster`; [local gallery](https://index.dev.hexly.ai/logos/rooster)
+- Site path: `/projects/rooster#brand`; [local gallery](https://index.dev.hexly.ai/projects/rooster#brand)
 - [Static review HTML](../../artwork/logo-family/rooster/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/rooster/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/rooster/2026-09-07-01/02/transparent.png); SHA-256: `26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f`

@@ -1,5 +1,7 @@
 // Sourced from hexly.ai at e8dbbca; see brand-source.json and CREDITS.md.
-export const kitVersion = "1.0.0";
+export const kitVersion = "2.0.0";
+// Brand assets are unchanged. Keep their immutable URLs independent of layout versions.
+export const brandAssetVersion = "1.0.0";
 export const palettes = {
 	light: {
 		page: "#f0f0e9",
@@ -46,43 +48,26 @@ export const hexly = {
 	},
 } as const;
 
-export const themes = {
+export const layouts = {
 	launch: {
-		palette: palettes.light,
 		label: "Launch",
 		enter: 0.7,
 		stagger: 0.12,
 	},
-	studio: {
-		palette: palettes.light,
-		label: "Studio",
-		enter: 0.9,
-		stagger: 0.14,
-	},
-	editorial: {
-		palette: palettes.light,
-		label: "Editorial",
-		enter: 0.65,
-		stagger: 0.1,
-	},
-	pulse: {
-		palette: palettes.light,
-		label: "Pulse",
-		enter: 0.55,
-		stagger: 0.09,
-	},
 	essential: {
-		palette: palettes.light,
 		label: "Essential",
 		enter: 0.8,
 		stagger: 0.14,
 	},
+	showcase: { label: "Showcase", enter: 0.85, stagger: 0.12 },
+	columns: { label: "Columns", enter: 0.7, stagger: 0.1 },
+	bento: { label: "Bento", enter: 0.8, stagger: 0.11 },
 } as const;
 
 // Site geometry and the existing warm location indicator; no new brand palette.
 export const family = {
 	radius: { small: 8, panel: 24, object: 28 },
-	space: { unit: 8, safe: 112 },
+	space: { unit: 8, edge: 32, safe: 80, top: 152, bottom: 110 },
 	dot: { color: "#bc7252", highlight: "#ffe1b4", glow: "#dd956b" },
 	motion: { travel: 18, settle: 0.7, transition: 0.32 },
 } as const;

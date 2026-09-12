@@ -97,28 +97,31 @@ export async function verifyDeployment(
 			);
 		}
 		const collection = parseVideoManifest(
-			await (await get("/videos/manifest.json")).json(),
+			await (await get("/templates/manifest.json")).json(),
 		);
 		if (
 			JSON.stringify(collection) !== JSON.stringify(parseVideoManifest(videos))
 		)
 			throw new Error("Production video manifest does not match this release.");
-		const library = await (await get("/videos")).text();
+		const schema = (await (
+			await get("/templates/film-v2.schema.json")
+		).json()) as { properties?: Record<string, unknown> };
+		if (
+			!["theme", "opening", "ending"].every(
+				(key) => key in (schema.properties ?? {}),
+			)
+		)
+			throw new Error("Video composition schema is missing.");
+		const library = await (await get("/templates")).text();
 		await Promise.all(
 			collection.templates.map(async (template) => {
-				if (!library.includes(`/videos/${template.id}`))
+				if (!library.includes(`/templates/${template.id}`))
 					throw new Error(`Video library is missing ${template.id}.`);
-				const html = await (await get(`/videos/${template.id}`)).text();
+				const html = await (await get(`/templates/${template.id}`)).text();
 				if (
 					!html.includes(`<title>${template.title} — Hexly Video Kit</title>`)
 				)
 					throw new Error(`Video template page is missing: ${template.id}`);
-				const poster = await (await get(template.poster.src)).arrayBuffer();
-				if (
-					createHash("sha256").update(new Uint8Array(poster)).digest("hex") !==
-					template.poster.sha256
-				)
-					throw new Error(`Video poster checksum mismatch: ${template.id}`);
 			}),
 		);
 	}
@@ -127,7 +130,7 @@ export async function verifyDeployment(
 		try {
 			await checkRelease();
 			console.info(
-				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, catalogue status targets and live D1 feed, compiled assets, original logo, five video pages and poster hashes.`,
+				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, catalogue status targets and live D1 feed, compiled assets, original logo, five video pages and composition schema.`,
 			);
 			return;
 		} catch (error) {

@@ -72,7 +72,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-01`, finishing `03`
-- Site path: `/logos/frogie`; [local gallery](https://index.dev.hexly.ai/logos/frogie)
+- Site path: `/projects/frogie#brand`; [local gallery](https://index.dev.hexly.ai/projects/frogie#brand)
 - [Static review HTML](../../artwork/logo-family/frogie/2026-09-06-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/frogie/2026-09-06-01)
 - [Transparent foreground](../../public/logos/family/frogie/2026-09-06-01/03/transparent.png); SHA-256: `752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b`

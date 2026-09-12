@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-04`, finishing `02`
 - Refined subject: Right-facing indigo raven with a faceted eye, violet feathers, and mint accents
-- Site path: `/logos/raven`; [local gallery](https://index.dev.hexly.ai/logos/raven)
+- Site path: `/projects/raven#brand`; [local gallery](https://index.dev.hexly.ai/projects/raven#brand)
 - [Static review HTML](../../artwork/logo-family/raven/2026-09-07-04/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/raven/2026-09-07-04)
 - [Transparent foreground](../../public/logos/family/raven/2026-09-07-04/02/transparent.png); SHA-256: `9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319`

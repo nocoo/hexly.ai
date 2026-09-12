@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-08.
 - Study `2026-09-08-01`, finishing `01`
 - Refined subject: A candy-colored Forbidden City corner tower on white Hanbaiyu marble
-- Site path: `/logos/basalt`; [local gallery](https://index.dev.hexly.ai/logos/basalt)
+- Site path: `/projects/basalt#brand`; [local gallery](https://index.dev.hexly.ai/projects/basalt#brand)
 - [Static review HTML](../../artwork/logo-family/basalt/2026-09-08-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/basalt/2026-09-08-01)
 - [Transparent foreground](../../public/logos/family/basalt/2026-09-08-01/01/transparent.png); SHA-256: `97144a6615113b5981454492776755d486183c219e5f1d8155f17572d21564e7`

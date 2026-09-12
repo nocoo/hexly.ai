@@ -40,25 +40,6 @@
 	margin-bottom: 18px;
 	flex-wrap: wrap;
 }
-.vk-mode {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 4px;
-}
-.vk-mode button {
-	min-height: 44px;
-	padding: 0 15px;
-	border: 1px solid transparent;
-	background: transparent;
-	border-radius: 7px;
-	font-size: 13px;
-	color: var(--vk-muted);
-}
-.vk-mode button[aria-pressed="true"] {
-	background: var(--vk-surface);
-	border-color: var(--vk-line);
-	color: var(--vk-ink);
-}
 .vk-format select {
 	background: var(--vk-page);
 	border: 1px solid var(--vk-line);
@@ -77,11 +58,6 @@
 }
 .vk-stage.vk-portrait {
 	width: min(100%, 410px);
-}
-.vk-stage video {
-	display: block;
-	width: 100%;
-	aspect-ratio: 16 / 9;
 }
 .vk-stage:fullscreen {
 	display: flex;
@@ -253,12 +229,12 @@
 .vk-view-tabs {
 	display: flex;
 	gap: 24px;
-	margin-bottom: 22px;
+	margin-bottom: 0;
 	border-bottom: 1px solid var(--vk-line);
 }
 .vk-view-tabs button {
 	min-height: 48px;
-	padding: 0 0 14px;
+	padding: 0 0 8px;
 	border: 0;
 	border-bottom: 2px solid transparent;
 	background: none;
@@ -305,12 +281,17 @@
 	.vk-toolbar {
 		gap: 8px;
 	}
-	.vk-mode button {
-		padding-inline: 10px;
+	.vk-format {
+		width: auto;
+	}
+	.vk-view-tabs {
+		gap: 15px;
+	}
+	.vk-view-tabs button {
 		font-size: 12px;
 	}
-	.vk-format {
-		width: 100%;
+	.vk-format select {
+		font-size: 11px;
 	}
 	.vk-format select {
 		width: 100%;
@@ -335,5 +316,27 @@
 @media (prefers-reduced-motion: reduce) {
 	.vk-preview {
 		scroll-behavior: auto;
+	}
+}
+@media (max-width: 540px) {
+	.vk-chapter-grid {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 116px;
+		grid-template-columns: none;
+		gap: 10px;
+		overflow-x: auto;
+		padding-bottom: 10px;
+		overscroll-behavior-inline: contain;
+	}
+	.vk-chapter-grid button {
+		padding: 14px;
+		gap: 16px;
+	}
+	.vk-chapters {
+		padding-top: 22px;
+	}
+	.vk-chapters h2 {
+		margin-bottom: 14px;
 	}
 }

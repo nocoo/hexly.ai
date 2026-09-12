@@ -1,90 +1,63 @@
-# Hexly Video Kit: family and publication contract
+# 16 · Hexly Video Kit
 
-The reusable kit lives in `packages/video-kit`; the website library is
-[`/videos`](https://hexly.ai/videos). The [package README](../packages/video-kit/README.md)
-documents runnable Vite/Remotion examples, configuration, components and real
-MP4/PPTX/PDF export commands. [Credits](../packages/video-kit/CREDITS.md) record
-asset permission and dependency licensing.
+The current worktree contains the local, unpublished 2.0.0 composition kit. The website release remains v0.6.0 until a new publication is explicitly requested. Hermes-on-Herdr continues using its own checkout pinned to `e1b220a7643e8275134b0bff0a11d703c047abbe`; none of its scripts, voices, logs or films belong here.
 
-## Family DNA
+## One family, independent parts
 
-| Invariant | Source and rule |
-| --- | --- |
-| Mark | Exact three paths, viewBox and stroke from `src/components/Icon.tsx`; uniform scaling only. No redraw, crop, warp, rotated logo plane or substituted personal wordmark. |
-| Wordmark | Space Grotesk, weight 600, `hexly` in ink, dot in terracotta, `ai` in muted ink at weight 400. Base size 23, letter spacing −1, mark gap 11. |
-| Type | Space Grotesk for statements; Geist Mono for labels, folios and metadata; the site's Noto Sans SC family for Chinese. Keep licensed local font bytes with the kit. |
-| Ground | Paper `#f0f0e9`, surface `#f8f8f2`, soft paper `#e8ebdf`. Every 1.0.0 template uses the light palette. Site dark mode surrounds the same light film canvas. |
-| Hierarchy | Ink `#30372e`, secondary `#68705f`, line `#d4d8cb`; terracotta `#bf5c3c` is an accent, not a body-text replacement. CTA uses ink on paper for contrast. |
-| Red dot | Existing location motif `#bc7252`; use one focal/section indicator. Do not scatter decorative dots or invent a particle system. A dot never replaces a text status label. |
-| Geometry | Eight-unit rhythm, 112-unit landscape safe margin, 8/24/28 radius scale. Deliberate borders and room around content. |
-| Motion | Shared quintic smoothstep, zero end velocity/acceleration, 18-unit entrance travel, 0.55–0.9 second settling and 0.09–0.14 second hierarchy delays. No spring overshoot, bounce or random drift. |
+The system has five openings, five content layouts and five endings, each in the site's light and dark themes. Selection is independent: 5 × 5 × 5 × 2 = 250 base compositions. Individual content scenes can also override the overall layout through `scene.template`.
 
-The source of these rules is `src/brand.ts` and `src/motion.ts` in the package,
-with provenance in `brand-source.json`. `BrandMark`, `BrandLockup`, `HexlyReveal`
-and `RedDot` are the shared primitives. Project colors and logos retain their
-catalogue provenance; the templates do not recolor the Hexly family around each
-project. Screenshots are contain-fit and optional.
+| Family | Designs |
+|---|---|
+| Opening | Signal, Frame, Index, Horizon, Stack |
+| Content | Launch, Essential, Showcase, Columns, Bento |
+| Ending | Signature, Line, Frame, Split, Colophon |
 
-Launch uses asymmetric paper cards; Studio adds restrained depth; Editorial adds
-folio and figure structure; Pulse emphasizes sourced facts; Essential removes
-secondary framing and centers a short statement. Density, composition and pace
-change; the brand language does not. Studio's three cuboids may move in depth,
-while official/project logo artwork remains on an independent front-facing panel.
+Launch and Essential retain their original typographic direction. The other content layouts are new implementations. The old three layouts, their aliases, current preview movies, posters and downloadable decks have been removed. Historical bytes remain available in Git tag `v0.6.0`, not the deployed preview surface.
 
-Logo reveals follow one sequence: official mark alone at the center; at 1.25s
-it moves left while the complete wordmark is exposed over 1.05s; at 2.5s the
-caption begins to appear. The whole lockup finishes centered. LogoReveal and
-Outro both use this primitive. Normal films can choose either closing component;
-the standard sampler demonstrates both.
+## Immutable design DNA
 
-Reduced motion shows settled composition states with no spatial transition.
-Deck always uses these settled states. The online player starts paused, follows
-`prefers-reduced-motion`, provides explicit play/seek and scene navigation, and
-keeps scene text in accessible DOM outside the film. Browser previews are not
-final renders; standard sample downloads are labeled separately from the selected
-project's configurable preview.
+| Element | Source and rule |
+|---|---|
+| Mark | The exact SVG paths, 0 0 36 40 viewBox, 33×36 dimensions and 1.6 stroke from `src/components/Icon.tsx`. No redraw or non-uniform scaling. |
+| Wordmark | Space Grotesk 600, 23 px base size, −1 px spacing, 11 px gap. `hexly` uses ink, the dot accent, `ai` muted/400. The reveal clips horizontally with 25% vertical bleed for glyph ink; never crop its descenders to the line box. |
+| Light | Paper #f0f0e9, ink #30372e, muted #68705f, accent #bf5c3c, surface #f8f8f2 and soft #e8ebdf, from `base.css`. |
+| Dark | Page #1e2824, ink #e6e9dc, muted #a0aa9a, accent #e79670, surface #27332c and soft #26352b, from `base.css`. |
+| Small copy | Blend the existing muted token with 16% ink where needed to keep small labels readable on soft paper. Do not invent a new palette. |
+| Fonts | The site's licensed Space Grotesk and Geist Mono; Noto Sans SC for Chinese, with OFL/source/hash evidence in the kit. |
+| Red point | The existing #bc7252 location motif; one useful focal point, line endpoint or terminal mark. Never decorative confetti. |
+| Geometry | Shared rounded panels, fine borders and an eight-pixel spacing unit. Chrome uses a 32 px edge inset; landscape content has an independent 80 px inset, 152 px top and 110 px bottom. |
+| Motion | One quintic smoothstep with zero endpoint velocity/acceleration; layered 18–32 px travel, no spring bounce. Frame perspective and paper layers settle deterministically from frame numbers. |
+| Signature | Official mark appears alone at the frame center, then moves left while the complete wordmark appears; product caption follows. Frame and Split finish in their left column; Line settles at the lower left. No personal FamilyBrand in the film. |
 
-## Ownership and static boundary
+Deck and reduced-motion modes use settled layouts. The player starts paused, carries no shared silent audio tags and loads no movie. All project artwork keeps its original proportions and colors; uploaded screenshots are contained, not cropped or silently used for another project. Text cells measure the loaded fonts and scale long Latin or Chinese copy as a group, without truncation or clipping.
+
+## Sources and boundaries
 
 ```text
-packages/video-kit/            shared brand, scenes, schema, player, offline renderer
-src/model/videos.ts            one catalogue-to-project adapter
-src/data/videos.json           public template/project metadata manifest
-src/components/Videos.tsx      library and project/template selection
-public/video-assets/           reviewed hash-named WebP/MP4/PPTX/PDF only
-docs/video-kit/1.0.0/           small visual regression/reference evidence
-.video-work/                   ignored project render inputs
-packages/video-kit/outputs/    ignored full renders
-packages/video-kit/.cache/     ignored Remotion cache
+packages/video-kit/src/schema.ts       strict v2 project/composition/manifest contracts
+packages/video-kit/src/brand.ts        real palettes, geometry and motion constants
+packages/video-kit/src/Identity.tsx    official mark, wordmark and reveal
+packages/video-kit/src/SceneElements.tsx shared canvas, edge chrome, typography and artwork
+packages/video-kit/src/Openings.tsx    five independent openings
+packages/video-kit/src/Scenes.tsx      five independent content layouts
+packages/video-kit/src/Endings.tsx     five independent endings
+packages/video-kit/src/Film.tsx        one timeline for preview, deck and offline render
+src/data/videos.json                  sole public collection metadata
+src/model/videos.ts                   single catalogue-to-project adapter
+src/components/Videos.tsx              collection and base composition selector
+scripts/video-site-assets.ts           font/license/schema/manifest public boundary
+scripts/review-video.ts                local browser still/contact-sheet review
+packages/video-kit/scripts/render.ts   explicit still/deck/video offline export
 ```
 
-`scripts/video-site-assets.ts` validates and emits public schemas/manifest and
-licensed fonts. It does not copy source production folders. `video:assets`
-publishes only four reviewed file types per template; `video:check` verifies
-hashes, byte budgets and the absence of undeclared files. Public assets use
-immutable versioned/hash paths; manifest and schema routes revalidate. No D1,
-Cron, queue, server rendering or new paid service is needed for the Video Kit.
+The manifest has no sample-media fields. `video:check` rejects media files in `public/video-assets`, validates all three five-member families, checks both themes and verifies licensed source bytes. Brand asset URLs keep version 1.0.0 while the layout kit is version 2.0.0. This avoids changing immutable font URLs for a layout-only edit.
 
-The separate status capability retains its existing D1 and five-minute Cron.
-Adding a monitored website updates only its existing catalogue record; it also
-becomes available to the single video project adapter automatically.
+`/templates` adapts the catalogue for all 15 component cards. The selector shows the chosen project in both preview modes; adding a screenshot stays client-side. URL state preserves the project, opening, content layout, ending, theme and part/view selection. Downloaded JSON also preserves the screenshot and effective motion/format choices. The player pauses on theme changes and keeps the current page. Old layouts are not redirected to an unrelated replacement.
 
-## Change and acceptance
+## Verification and export
 
-1. Review the live Git state and neighboring agents before edits. Preserve an
-   unknown or concurrent change; do not reset, stash or overwrite it.
-2. Change generic kit code independently of any product's production. Pin kit and
-   asset versions; consumers pin a published repository SHA.
-3. Validate types, schemas, manifest and representative interactions. Render one
-   representative film for each changed template and inspect decoded MP4 frames,
-   scene contact sheets, actual PPTX pages/notes and PDF page count. Compare them
-   with the site and the [1.0.0 reference](video-kit/1.0.0/review.md).
-4. Complete the existing lint/build/quality gates and atomic commits. Publish via
-   the normal site release; verify production routes, assets and Video/Deck with
-   project selection on desktop and mobile before reporting the published SHA.
+See the [kit README](../packages/video-kit/README.md) for executable commands and the complete API. Use `--mode deck` to create actual PPTX/PDF without regenerating a movie, or `--mode stills` for inspection frames. Video encoding requires the explicit `video` or `all` mode. Every output directory is fresh and separate from public assets.
 
-The Hermes handoff is limited to the published package/API and public library.
-Hermes scripts, voices, narration, custom scenes, production logs and final
-videos stay in its own production archive. `manifest.projects` can later link a
-separately approved finished project; the initial five-template release leaves
-that list empty.
+Tests cover all catalogue projects, all 250 base compositions, strict schema rejection, navigation round trips, actual brand assets, browser mixing/theme switches, screenshots/configuration parity and responsive accessibility. Browser review produces 30 real stills and three contact sheets. The [local review record](video-kit/2.0.0/review.md) distinguishes inspected frames and export proofs from movies, which are not regenerated for this task.
+
+There is no production deployment or new published SHA for this revision. A later release must follow the normal site release gates and the user's current publication authorization. Downstream productions remain pinned to their previously published source until then.

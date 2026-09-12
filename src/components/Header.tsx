@@ -45,7 +45,7 @@ export function Header({
 						<button
 							type="button"
 							onClick={() => onView("directory")}
-							aria-pressed={view === "directory"}
+							aria-pressed={["directory", "logos", "project"].includes(view)}
 							aria-label={t.directory}
 							title={t.directory}
 						>
@@ -54,13 +54,13 @@ export function Header({
 						</button>
 						<button
 							type="button"
-							onClick={() => onView("logos")}
-							aria-pressed={view === "logos"}
-							aria-label={t.gallery}
-							title={t.gallery}
+							onClick={() => onView("templates")}
+							aria-pressed={view === "templates"}
+							aria-label={t.templates}
+							title={t.templates}
 						>
 							<Icon name="image" />
-							<span className="view-link-label">{t.gallery}</span>
+							<span className="view-link-label">{t.templates}</span>
 						</button>
 						<button
 							type="button"
@@ -71,16 +71,6 @@ export function Header({
 						>
 							<Icon name="activity" />
 							<span className="view-link-label">{t.status}</span>
-						</button>
-						<button
-							type="button"
-							onClick={() => onView("videos")}
-							aria-pressed={view === "videos"}
-							aria-label={t.videos}
-							title={t.videos}
-						>
-							<Icon name="play" />
-							<span className="view-link-label">{t.videos}</span>
 						</button>
 					</nav>
 					<SurfaceLinks

@@ -15,9 +15,13 @@ export function ProjectOverview({
 	const readme = locale === "en" ? "docs/README.en.md" : "README.md";
 
 	return (
-		<section className="project-overview" aria-labelledby="project-goal-title">
+		<section
+			id="overview"
+			className="project-overview"
+			aria-labelledby="project-goal-title"
+		>
 			<div className="project-goal">
-				<h3 id="project-goal-title">{t.projectGoal}</h3>
+				<h2 id="project-goal-title">{t.projectGoal}</h2>
 				<p>{overview.goal[locale]}</p>
 				{overview.verified.revision && (
 					<a
@@ -32,7 +36,7 @@ export function ProjectOverview({
 				)}
 			</div>
 			<div className="project-stack">
-				<h3 id="project-stack-title">{t.techStack}</h3>
+				<h2 id="project-stack-title">{t.techStack}</h2>
 				<ul className="tech-badges" aria-labelledby="project-stack-title">
 					{overview.techStack.map((technology) => (
 						<li className="tech-badge" key={technology.name}>

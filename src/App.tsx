@@ -9,9 +9,9 @@ import {
 } from "react";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
-import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { Icon } from "./components/Icon";
+import { ProjectDetail } from "./components/ProjectDetail";
 import { StatusPage } from "./components/StatusPage";
 import { copy } from "./data/copy";
 import { filterProjects, loadProjects } from "./model/catalogue";
@@ -19,7 +19,7 @@ import { pageForPath } from "./model/discovery";
 import {
 	type DirectoryState,
 	navigationPath,
-	openLogo,
+	openProject,
 	parseNavigation,
 	resolveNavigation,
 } from "./model/navigation";
@@ -29,9 +29,12 @@ import "./styles/base.css";
 import "./styles/directory.css";
 import "./styles/gallery.css";
 import "./styles/status.css";
+import "./styles/projects.css";
 
-const Videos = lazy(() =>
-	import("./components/Videos").then((module) => ({ default: module.Videos })),
+const Templates = lazy(() =>
+	import("./components/Templates").then((module) => ({
+		default: module.Templates,
+	})),
 );
 
 type CatalogueState =
@@ -69,7 +72,12 @@ export function App() {
 		status: "loading",
 	});
 	const [state, setState] = useState(() =>
-		parseNavigation(locationPath(), window.location.search, []),
+		parseNavigation(
+			locationPath(),
+			window.location.search,
+			[],
+			window.location.hash,
+		),
 	);
 	const [preferences, setPreferences] = useState(() =>
 		readPreferences(
@@ -85,8 +93,15 @@ export function App() {
 	const t = copy[locale];
 	const projects = catalogue.status === "ready" ? catalogue.projects : [];
 	const visible = useMemo(
-		() => filterProjects(projects, state.query, state.category, state.sort),
-		[projects, state.query, state.category, state.sort],
+		() =>
+			filterProjects(
+				projects,
+				state.query,
+				state.category,
+				state.sort,
+				state.withVideo,
+			),
+		[projects, state.query, state.category, state.sort, state.withVideo],
 	);
 
 	useLayoutEffect(() => {
@@ -111,16 +126,34 @@ export function App() {
 
 	useEffect(() => {
 		if (catalogue.status !== "ready") return;
-		const path =
-			state.view === "videos"
-				? `/videos${state.video ? `/${state.video}` : ""}`
-				: state.view === "status"
-					? "/status"
-					: state.view === "directory"
-						? "/"
-						: `/logos/${state.project}`;
-		document.title = pageForPath(path, projects).title;
-	}, [catalogue.status, projects, state.project, state.view, state.video]);
+		const path = navigationPath(state).split(/[?#]/)[0] ?? "/";
+		const page = pageForPath(path, projects);
+		document.title = page.title;
+		document
+			.querySelector('link[rel="canonical"]')
+			?.setAttribute("href", page.canonical);
+		for (const [key, value] of [
+			["description", page.description],
+			["og:title", page.title],
+			["og:description", page.description],
+			["og:url", page.canonical],
+			["og:image", page.image],
+			["og:image:alt", page.imageAlt],
+			["twitter:title", page.title],
+			["twitter:description", page.description],
+			["twitter:image", page.image],
+			["twitter:image:alt", page.imageAlt],
+		] as const) {
+			document
+				.querySelector(`meta[name="${key}"],meta[property="${key}"]`)
+				?.setAttribute("content", value);
+		}
+		const structuredData = document.querySelector(
+			'script[type="application/ld+json"]',
+		);
+		if (structuredData)
+			structuredData.textContent = JSON.stringify(page.jsonLd);
+	}, [catalogue.status, projects, state]);
 
 	useEffect(() => {
 		let cancelled = false;
@@ -129,7 +162,12 @@ export function App() {
 				if (cancelled) return;
 				setCatalogue({ status: "ready", projects: loaded });
 				setState(
-					parseNavigation(locationPath(), window.location.search, loaded),
+					parseNavigation(
+						locationPath(),
+						window.location.search,
+						loaded,
+						window.location.hash,
+					),
 				);
 			})
 			.catch(() => {
@@ -143,8 +181,23 @@ export function App() {
 	useEffect(() => {
 		if (catalogue.status !== "ready") return;
 		const path = viewPath(state);
-		if (`${window.location.pathname}${window.location.search}` !== path)
-			window.history.replaceState(null, "", `${path}${window.location.hash}`);
+		if (
+			`${window.location.pathname}${window.location.search}${window.location.hash}` !==
+			path
+		)
+			window.history.replaceState(null, "", path);
+	}, [catalogue.status, state]);
+
+	useEffect(() => {
+		if (catalogue.status !== "ready" || !state.anchor) return;
+		const anchor = state.anchor;
+		// CSS owns smooth scrolling and the prefers-reduced-motion fallback.
+		const frame = requestAnimationFrame(() =>
+			document
+				.getElementById(anchor)
+				?.scrollIntoView({ block: "start", behavior: "auto" }),
+		);
+		return () => cancelAnimationFrame(frame);
 	}, [catalogue.status, state]);
 
 	useEffect(() => {
@@ -175,10 +228,19 @@ export function App() {
 		if (catalogue.status !== "ready") return;
 		const onPopState = () =>
 			setState(
-				parseNavigation(locationPath(), window.location.search, projects),
+				parseNavigation(
+					locationPath(),
+					window.location.search,
+					projects,
+					window.location.hash,
+				),
 			);
 		window.addEventListener("popstate", onPopState);
-		return () => window.removeEventListener("popstate", onPopState);
+		window.addEventListener("hashchange", onPopState);
+		return () => {
+			window.removeEventListener("popstate", onPopState);
+			window.removeEventListener("hashchange", onPopState);
+		};
 	}, [catalogue, projects]);
 
 	const navigate = (next: DirectoryState, replace = false) => {
@@ -193,11 +255,14 @@ export function App() {
 			"",
 			viewPath(resolved),
 		);
-		if (next.view !== state.view)
+		if (next.view !== state.view && !resolved.anchor)
 			window.scrollTo({ top: 0, behavior: "instant" });
 	};
 	const change = (patch: Partial<DirectoryState>) =>
-		navigate({ ...state, ...patch }, "query" in patch);
+		navigate(
+			{ ...state, ...(patch.view ? { anchor: undefined } : {}), ...patch },
+			"query" in patch,
+		);
 	const view = (next: View) => {
 		navigate({
 			...state,
@@ -205,6 +270,8 @@ export function App() {
 			category: "all",
 			query: "",
 			video: undefined,
+			anchor: undefined,
+			withVideo: undefined,
 		});
 		window.scrollTo({ top: 0, behavior: "instant" });
 	};
@@ -265,7 +332,7 @@ export function App() {
 						) : null}
 					</div>
 				</main>
-			) : state.view === "videos" ? (
+			) : state.view === "templates" ? (
 				<Suspense
 					fallback={
 						<main id="main-content" className="shell">
@@ -275,7 +342,7 @@ export function App() {
 						</main>
 					}
 				>
-					<Videos
+					<Templates
 						key={state.videoProject ?? "hexly-ai"}
 						projects={projects}
 						state={state}
@@ -293,7 +360,7 @@ export function App() {
 					searchRef={searchRef}
 					onQuery={(query) => change({ query })}
 				/>
-			) : state.view === "directory" ? (
+			) : state.view === "directory" || state.view === "logos" ? (
 				<Directory
 					projects={projects}
 					visible={visible}
@@ -301,13 +368,13 @@ export function App() {
 					locale={locale}
 					searchRef={searchRef}
 					onChange={change}
-					onLogo={(id) => {
+					onProject={(id, anchor) => {
 						const project = projects.find((item) => item.id === id);
-						if (project) navigate(openLogo(state, project));
+						if (project) navigate(openProject(state, project, anchor));
 					}}
 				/>
 			) : (
-				<Gallery
+				<ProjectDetail
 					projects={projects}
 					visible={visible}
 					state={state}

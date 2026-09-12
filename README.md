@@ -27,18 +27,18 @@
 
 ## 功能
 
-- **项目导航** — 按分类浏览、搜索中英文名称与描述，访问已核实的站点或源码仓库。
-- **Video Kit** — 在 [视频模板库](https://hexly.ai/videos) 选择任意目录项目，切换 Launch、Studio、Editorial、Pulse、Essential 五套 Hexly 家族模板；支持 Video/Deck 双预览、截图与配置下载，以及离线 MP4、PPTX、PDF 导出。
+- **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
+- **模板** — 本地新版在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。模板预览与项目成片分开；当前路由和 v2 改动仅在本地，尚未发布。
 - **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
-- **Logo 画廊** — 宽幅新旧对照，图标、透明和白底视图，128 / 64 / 32 / 16 px 尺寸与侧栏、浏览器场景；浅深底色检查、可复制色板、生成提示词或展示说明，以及原始文件下载。Refined 项目在列表、分类和搜索结果中优先展示。
+- **Logo 图鉴** — `/logos` 是项目下的图片墙，点击进入项目详情的 `#brand`。保留新旧对照、图标/透明/白底视图、实际尺寸、场景、色板、生成提示词和原始文件下载。
 - **真实色板** — 展示项目的前景色、背景色与点缀色，点击复制颜色值。
 - **原标备份** — 下载保留原始字节的图像，追溯来源路径、提交版本与 SHA-256。
 - **中英文与明暗主题** — 首次访问跟随系统偏好，之后记住手动选择。
-- **可分享的状态** — 搜索、分类、排序和选中的 Logo 保存在 URL 中，支持刷新与浏览器返回。
+- **可分享的状态** — 搜索、分类、排序、视频筛选、项目与章节保存在 URL 中，支持刷新与浏览器返回；`#` 平滑滚动遵循减少动态效果偏好。
 
 ## 安装
 
-直接访问 **[hexly.ai](https://hexly.ai)**，无需安装或登录。也可以打开 [Logo 画廊](https://hexly.ai/logos/frogie)。
+直接访问 **[hexly.ai](https://hexly.ai)**，无需安装或登录。本次结构调整请在本地 [index.dev.hexly.ai](https://index.dev.hexly.ai) review。
 
 ## 命令一览
 
@@ -54,7 +54,7 @@
 | `bun run assets:check` | 校验原图哈希和全部预览图 |
 | `bun run docs:profiles` | 从项目数据生成独立档案 |
 | `bun run video:dev` / `bun run video:studio` | 独立 Vite 预览 / Remotion Studio |
-| `bun run video:render -- --project pew --template studio --mode all` | 同一份项目数据导出视频和真实 PPTX/PDF |
+| `bun run video:render -- --project pew --template showcase --theme dark --opening stack --ending split --mode deck` | 按当前组合导出真实 PPTX/PDF；`--mode video` 才会生成视频 |
 | `bun run video:check` | 校验模板 manifest、公开素材哈希与体积边界 |
 | `bun run release -- --dry-run` | 预览版本与发布说明，不修改文件或远端 |
 | `bun run release -- 0.1.0` | 发布指定版本，等待 CI/CD 后创建 Tag 和 Release |
@@ -71,8 +71,8 @@ hexly.ai/
 │   ├── App.tsx           # 状态与交互编排
 │   └── styles/           # 主题、布局和图标展示
 ├── public/logos/         # 原图、Emoji 和 WebP 预览
-├── public/video-assets/  # 审核过的模板短片、封面与幻灯片
-├── packages/video-kit/  # 共享品牌、五套模板、播放器和离线渲染器
+├── packages/video-kit/   # 共享品牌、5/5/5 组合模板、播放器和离线渲染器
+├── .video-work/          # 本地截帧和导出证明；忽略，不进入部署
 ├── scripts/             # 本地模拟库、资源生成、质量门控和发布
 ├── worker/              # 路由、Status API 与定时健康检查
 ├── migrations/          # D1 表结构迁移
@@ -111,9 +111,11 @@ bun run dev
 开发脚本自动载入 7 天模拟记录，页面明确标注模拟数据；本地不会探测生产站点。
 存储和定时方案见[Status 实现说明](docs/11-status-monitoring.md)。
 
-Video Kit 使用站点的真实 Logo、字体与浅色/陶土色设计语言。每套包含前贴片、标题、章节、内容、CTA、Logo reveal 和后贴片。在线预览使用客户端轻量动画，标准示例下载使用预生成文件；项目最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
+Video Kit 使用站点的真实 Logo、字体与明暗色板。封面、正文、片尾独立组合，正文包含标题、章节、内容与 CTA，片尾沿用官方 Logo reveal。卡片与播放预览共用客户端画布，旧的示例成片和下载资源已从本地新版移除；最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
 
-项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建会生成首页与 `/logos/<project>` 的 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap，以及产品站可复用的 [`/api/share`](https://hexly.ai/api/share.json) 分享元数据。接入说明见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建直接使用仓库内的资源，不依赖相邻项目或运行时 GitHub 请求。
+项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建为项目、图鉴、模板和状态生成 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap、JSON-LD 和 [`/api/share`](https://hexly.ai/api/share.json) 元数据；项目 canonical 为 `/projects/<id>`。旧 `/logos/<id>`、`/<id>` 与 `/videos/*` 链接有兼容跳转。分享接入见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建直接使用仓库内的资源，不依赖相邻项目或运行时 GitHub 请求。
+
+已有高清 Logo、截图和历史素材继续保留在 Git，由 Workers Static Assets 提供。后续成片通过同一项目 JSON 的可选 `media` 字段引用外部文件；`media.hexly.ai` 已纳入代码的 URL/CSP 边界，但本次没有创建 R2 资源，也未添加任何项目成片。字段、上传前准备与路由说明见 [项目媒体](docs/17-project-media.md)。
 
 ## 测试
 
@@ -128,7 +130,7 @@ Video Kit 使用站点的真实 Logo、字体与浅色/陶土色设计语言。�
 | G2 | OSV 依赖漏洞与 Gitleaks 密钥扫描 |
 | D1 | 独立测试端口与状态目录，不绑定生产服务或存储 |
 
-D1 在这里表示测试隔离维度。本站无需数据库。首次运行浏览器测试前，执行 `bunx playwright install chromium`；完整门控还需要安装 `gitleaks` 和 `osv-scanner`。
+D1 在质量表中表示测试隔离维度；监控使用 Cloudflare D1 数据库，本地用隔离的 SQLite 模拟库。首次运行浏览器测试前，执行 `bunx playwright install chromium`；完整门控还需要安装 `gitleaks` 和 `osv-scanner`。
 
 ## 文档
 
@@ -137,6 +139,7 @@ D1 在这里表示测试隔离维度。本站无需数据库。首次运行浏�
 - [六维质量体系](docs/03-quality.md)
 - [本地开发与 Cloudflare 部署](docs/04-development.md)
 - [版本与发布流程](docs/05-release.md)
+- [项目详情、媒体与路由](docs/17-project-media.md)
 - [项目档案与色板](docs/profiles/README.md)
 - [来源快照](docs/sources/README.md)
 - [Changelog](CHANGELOG.md)

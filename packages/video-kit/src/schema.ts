@@ -2,11 +2,35 @@ import { z } from "zod";
 
 export const templateIds = [
 	"launch",
-	"studio",
-	"editorial",
-	"pulse",
 	"essential",
+	"showcase",
+	"columns",
+	"bento",
 ] as const;
+export const openingIds = [
+	"signal",
+	"frame",
+	"index",
+	"horizon",
+	"stack",
+] as const;
+export const endingIds = [
+	"signature",
+	"line",
+	"frame",
+	"split",
+	"colophon",
+] as const;
+export const themeIds = ["light", "dark"] as const;
+export const compositionSchema = z.strictObject({
+	theme: z.enum(themeIds),
+	opening: z.enum(openingIds),
+	ending: z.enum(endingIds),
+});
+export type CompositionOptions = z.infer<typeof compositionSchema>;
+export type VideoTheme = CompositionOptions["theme"];
+export type OpeningId = CompositionOptions["opening"];
+export type EndingId = CompositionOptions["ending"];
 export const sceneKinds = [
 	"intro",
 	"title",
@@ -67,10 +91,17 @@ export const sceneSchema = z.strictObject({
 	eyebrow: text(48),
 	body: text(500),
 	link: z.strictObject({ label: text(36).min(1), href: httpsUrl }).optional(),
+	template: z
+		.enum(templateIds)
+		.optional()
+		.describe(
+			"Override the content layout for this scene; opening and ending remain independent.",
+		),
 });
 
 export const filmSchema = z.strictObject({
-	schemaVersion: z.literal(1),
+	schemaVersion: z.literal(2),
+	...compositionSchema.shape,
 	template: z.enum(templateIds),
 	format: z.enum(["landscape", "portrait"]),
 	fps: z.literal(30),
@@ -121,82 +152,70 @@ const bilingual = z.strictObject({
 	en: text(240).min(1),
 	zh: text(240).min(1),
 });
-const publicAsset = z
-	.string()
-	.regex(/^\/video-assets\/[a-z0-9][a-z0-9/.-]*\.(webp|mp4|pptx|pdf)$/)
-	.refine(
-		(path) => !path.includes("..") && !path.includes("//"),
-		"Use a normalized public video asset path.",
-	);
-const asset = z.strictObject({
-	src: publicAsset,
-	bytes: z.number().int().positive(),
-	sha256: z.string().regex(/^[a-f0-9]{64}$/),
-	width: z.number().int().positive(),
-	height: z.number().int().positive(),
-});
 const metadata = {
-	id: slug,
 	title: text(80).min(1),
 	description: bilingual,
-	status: z.enum(["ready", "preview", "archived"]),
-	version: z.string().regex(/^\d+\.\d+\.\d+$/),
-	poster: asset,
-	clip: asset.extend({
-		duration: z.number().positive().max(120),
-		fps: z.literal(30),
-	}),
-	deck: z.strictObject({
-		pptx: asset,
-		pdf: asset,
-		pages: z.number().int().positive(),
-	}),
+	use: bilingual,
 };
 
 export const videoManifestSchema = z.strictObject({
-	schemaVersion: z.literal(1),
+	schemaVersion: z.literal(2),
 	kitVersion: z.string().regex(/^\d+\.\d+\.\d+$/),
+	preview: z.literal("client"),
+	themes: z.tuple([z.literal("light"), z.literal("dark")]),
 	templates: z
 		.array(
 			z.strictObject({
 				...metadata,
 				id: z.enum(templateIds),
 				kind: z.literal("template"),
-				mode: z.enum(["light", "dark"]),
-				use: bilingual,
+				status: z.enum(["ready", "preview"]),
 				formats: z.array(z.enum(["landscape", "portrait"])).min(1),
 				components: z.array(z.enum(sceneKinds)).min(1),
 			}),
 		)
 		.length(5),
-	projects: z.array(
-		z.strictObject({
-			...metadata,
-			kind: z.literal("project"),
-			template: z.enum(templateIds),
-			previewUrl: httpsUrl,
-			sourceUrl: httpsUrl,
-			published: z.iso.date(),
-		}),
-	),
+	openings: z
+		.array(
+			z.strictObject({
+				...metadata,
+				id: z.enum(openingIds),
+				kind: z.literal("opening"),
+			}),
+		)
+		.length(5),
+	endings: z
+		.array(
+			z.strictObject({
+				...metadata,
+				id: z.enum(endingIds),
+				kind: z.literal("ending"),
+			}),
+		)
+		.length(5),
 });
 export type VideoManifest = z.infer<typeof videoManifestSchema>;
 export type VideoEntry =
 	| VideoManifest["templates"][number]
-	| VideoManifest["projects"][number];
+	| VideoManifest["openings"][number]
+	| VideoManifest["endings"][number];
 
 export function parseVideoManifest(value: unknown): VideoManifest {
 	const manifest = videoManifestSchema.parse(value);
-	const entries = [...manifest.templates, ...manifest.projects];
-	if (new Set(entries.map((entry) => entry.id)).size !== entries.length)
-		throw new Error("Video IDs must be unique across templates and projects.");
+	for (const entries of [
+		manifest.templates,
+		manifest.openings,
+		manifest.endings,
+	])
+		if (new Set(entries.map((entry) => entry.id)).size !== entries.length)
+			throw new Error("Video IDs must be unique within each component family.");
 	return manifest;
 }
 
 /** Build-time JSON schemas; runtime parsers also check unique IDs and CTA links. */
 export function schemaDocuments() {
 	return {
-		"film-v1.schema.json": z.toJSONSchema(filmSchema),
-		"manifest-v1.schema.json": z.toJSONSchema(videoManifestSchema),
+		"film-v2.schema.json": z.toJSONSchema(filmSchema),
+		"manifest-v2.schema.json": z.toJSONSchema(videoManifestSchema),
 	};
 }

@@ -1,0 +1,196 @@
+{
+  "reviewedOn": "2026-09-12",
+  "kitVersion": "2.0.0",
+  "publication": "local, unpublished",
+  "sourceBase": "e1b220a7643e8275134b0bff0a11d703c047abbe",
+  "components": {
+    "count": 30,
+    "unique": 30,
+    "errors": [],
+    "movieRequests": [],
+    "overflow": [],
+    "rawDirectory": ".video-work/design-review-v2-wordmark"
+  },
+  "motion": {
+    "ending": "line",
+    "theme": "light",
+    "frames": [
+      15,
+      38,
+      53,
+      78,
+      100
+    ],
+    "rawDirectory": ".video-work/motion-review-v2-wordmark",
+    "note": "Signature settles before the red line draws. No video encoding."
+  },
+  "deck": {
+    "kitVersion": "2.0.0",
+    "theme": "dark",
+    "opening": "stack",
+    "ending": "split",
+    "template": "showcase",
+    "project": "hexly-ai",
+    "mode": "deck",
+    "startedAt": "2026-09-12T07:58:00.310Z",
+    "completedAt": "2026-09-12T07:58:08.078Z",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "d345d2ceebbf142ee8d6681acff2ab0e993356a8240031ff0fd352a24a8bcae1",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 30024,
+        "sha256": "0323faa065d7c81d5ec9857393b235fab68e74e07dc39d29602b2f2f63e33825"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 1032686,
+        "sha256": "44fcc764a0be5d682bb3aa6b2e9f56b1a8e292b23ae818fab9efa4d098351c8c"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 28872,
+        "sha256": "342020dbad455ca0ab40796ebdc300ce5d508734c7b4ade25d8459301b305d78"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 543709,
+        "sha256": "1e426f7c4f7546b152d38b3d899d675e2f15b9e1931f6de812f1b994d26173c1"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 94447,
+        "sha256": "588bc608ef3be98b4a2423981287f565b1d37e44e481f7ea045474ecb7a705d0"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 65317,
+        "sha256": "c930511ed9d96b935121d5a5ad211e937ef563324a4609e790ab74a6268a7d1d"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 112729,
+        "sha256": "1d08e0aac6c0cea01b387e26abbb1c9c3133ef8f3a1401e55149f6849fbd20e3"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 86491,
+        "sha256": "c9c318b229fc39a0f434d8b6db2e333b5bea5f4b0ce30216859348dc2cc935f6"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 117263,
+        "sha256": "e74358bb80fe3d687b1f9db9246d243a72fa7f557073833269582b19c6e26a65"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 56012,
+        "sha256": "370aa238bec45d28e4e0efd77087e2ddca57383f7cfb6009d54c99538f8c536b"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 423726,
+        "sha256": "7e2f2372e2bed676462a8345a62276369a3606c7f59765532dfeb71cf404174c"
+      }
+    ],
+    "output": ".video-work/deck-proof-v2-wordmark/showcase",
+    "pptxSlides": 7,
+    "pptxNotes": 7,
+    "pdfPages": 7,
+    "notesHaveSource": true,
+    "movies": 0
+  },
+  "tests": {
+    "unit": 171,
+    "http": 69,
+    "nonVideoBrowser": 188,
+    "videoBrowser": 14,
+    "lint": "pass",
+    "typecheck": "pass",
+    "siteBuild": "pass",
+    "kitBuild": "pass",
+    "frozenLockfile": "pass",
+    "videoBoundary": "pass"
+  },
+  "wordmark": {
+    "cause": "The line-height: 1 reveal container clipped the Space Grotesk y descender.",
+    "fix": "Horizontal clip-path with 25% vertical bleed. Original baseline, typography and mark geometry preserved.",
+    "beforeDirectory": ".video-work/wordmark-descender-probe",
+    "beforeMissingPixels": {
+      "colophon": 330,
+      "signature": 151,
+      "line": 71
+    },
+    "afterDirectory": ".video-work/wordmark-descender-fixed",
+    "afterMissingPixels": 0,
+    "pixelRegressionCases": 24,
+    "coverage": "Five endings and standalone logo, both themes, desktop/mobile, Video/Deck, including portrait logo.",
+    "spotChecks": [
+      "site header, light and dark",
+      "canvas corner lockup",
+      "standalone Vite header",
+      "five intermediate animation frames"
+    ],
+    "comparison": "wordmark.webp"
+  },
+  "navigation": {
+    "names": [
+      "Play",
+      "Journal",
+      "Résumé",
+      "Portfolio"
+    ],
+    "desktopImage": ".video-work/navigation-labels-restored-final/site-desktop.png",
+    "mobileReview": ".video-work/navigation-labels-checked",
+    "browserTests": 4,
+    "typecheck": "pass",
+    "build": "pass"
+  }
+}

@@ -67,7 +67,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Emerald enamel mechanical stopwatch
-- Site path: `/logos/runner`; [local gallery](https://index.dev.hexly.ai/logos/runner)
+- Site path: `/projects/runner#brand`; [local gallery](https://index.dev.hexly.ai/projects/runner#brand)
 - [Static review HTML](../../artwork/logo-family/runner/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/runner/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/runner/2026-09-07-01/01/transparent.png); SHA-256: `8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347`

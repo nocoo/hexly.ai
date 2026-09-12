@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-02`, finishing `02`
 - Refined subject: Copper and cream cow with complete horns, blue eyes, and a coral muzzle
-- Site path: `/logos/noheir`; [local gallery](https://index.dev.hexly.ai/logos/noheir)
+- Site path: `/projects/noheir#brand`; [local gallery](https://index.dev.hexly.ai/projects/noheir#brand)
 - [Static review HTML](../../artwork/logo-family/noheir/2026-09-07-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/noheir/2026-09-07-02)
 - [Transparent foreground](../../public/logos/family/noheir/2026-09-07-02/02/transparent.png); SHA-256: `26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff`

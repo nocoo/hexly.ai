@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-02`, finishing `01`
 - Refined subject: Cream faceted sheep with three curls, a wink, and a pink tongue
-- Site path: `/logos/wooly`; [local gallery](https://index.dev.hexly.ai/logos/wooly)
+- Site path: `/projects/wooly#brand`; [local gallery](https://index.dev.hexly.ai/projects/wooly#brand)
 - [Static review HTML](../../artwork/logo-family/wooly/2026-09-07-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/wooly/2026-09-07-02)
 - [Transparent foreground](../../public/logos/family/wooly/2026-09-07-02/01/transparent.png); SHA-256: `fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a`

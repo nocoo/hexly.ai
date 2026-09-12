@@ -66,7 +66,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: A midnight teal rotary desk telephone
-- Site path: `/logos/deca`; [local gallery](https://index.dev.hexly.ai/logos/deca)
+- Site path: `/projects/deca#brand`; [local gallery](https://index.dev.hexly.ai/projects/deca#brand)
 - [Static review HTML](../../artwork/logo-family/deca/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/deca/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/deca/2026-09-07-01/01/transparent.png); SHA-256: `329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262`

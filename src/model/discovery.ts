@@ -2,8 +2,9 @@ import { copy } from "../data/copy";
 import identity from "../data/site-identity.json" with { type: "json" };
 import { filterProjects } from "./catalogue";
 import type { Locale, Project } from "./project";
+import { legacyRoute } from "./routes";
 import { healthEndpoint } from "./status";
-import { findVideo, videoEntries } from "./videos";
+import { findVideo, videoEntries, videoManifest } from "./videos";
 
 export const siteOrigin = "https://hexly.ai";
 
@@ -118,7 +119,7 @@ export function projectShareCard(project: Project): ShareCard {
 		emoji: project.emoji,
 		title: `${project.title} — hexly.ai`,
 		description: project.description,
-		canonical: absoluteUrl(`/logos/${project.id}`),
+		canonical: absoluteUrl(`/projects/${project.id}`),
 		image: shareImage(socialImage(project), `${project.title} identity`),
 		twitterCard: "summary_large_image",
 		siteName: "hexly.ai",
@@ -162,16 +163,39 @@ export function pageForPath(
 	pathname: string,
 	projects: Project[],
 ): DiscoveryPage {
-	const path = pathname.replace(/\/$/, "") || "/";
+	const path =
+		(legacyRoute(pathname)?.path ?? pathname).replace(/\/$/, "") || "/";
 	if (path === "/status") return statusPage(projects);
-	const video = /^\/videos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
+	const video = /^\/templates(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
 	if (video) return videosPage(video[1]);
-	const match = /^\/logos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
+	if (path === "/logos") return galleryPage(projects);
+	const match = /^\/projects\/([a-z0-9]+(?:-[a-z0-9]+)*)$/.exec(path);
 	if (!match) return homePage(projects);
 	const id = match[1];
 	if (!id) return galleryPage(projects);
 	const project = projects.find((entry) => entry.id === id);
-	return project ? projectPage(project) : galleryPage(projects);
+	if (project) return projectPage(project);
+	return {
+		path,
+		title: "Project not found — hexly.ai",
+		description: "This project is not in the Hexly catalogue.",
+		canonical: absoluteUrl(path),
+		image: socialImage(),
+		imageAlt: "hexly.ai mark on warm paper",
+		heading: "Project not found.",
+		bodyHtml: snapshotHtml(
+			"Project not found.",
+			"Browse the project catalogue.",
+			path,
+			[],
+		),
+		jsonLd: {
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			url: absoluteUrl(path),
+			name: "Project not found",
+		},
+	};
 }
 
 export function discoveryPages(projects: Project[]): DiscoveryPage[] {
@@ -196,7 +220,7 @@ export function llmsDocument(projects: Project[]): string {
 	const visible = filterProjects(projects, "", "all");
 	const archived = filterProjects(projects, "", "archive");
 	const link = (project: Project, locale: "en" | "zh") =>
-		`- [${project.title}](${absoluteUrl(`/logos/${project.id}`)}): ${project.description[locale]}`;
+		`- [${project.title}](${absoluteUrl(`/projects/${project.id}`)}): ${project.description[locale]}`;
 	return `# ${homeTitle}
 
 > ${homeDescription}
@@ -210,7 +234,7 @@ Public pages welcome search and AI crawlers. JavaScript is not required to read 
 - [hexly.ai](${siteOrigin}/): ${homeDescription}
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
 - [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
-- [Video Kit](${siteOrigin}/videos): Five Hexly templates, project previews, video and PowerPoint/PDF exports.
+- [Video Kit](${siteOrigin}/templates): Mix five openings, five content layouts and five endings in two Hexly themes; client previews and local video/PPTX/PDF exports.
 
 ${visible.map((project) => link(project, "en")).join("\n")}
 
@@ -219,7 +243,7 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 - [hexly.ai](${siteOrigin}/): ${copy.zh.heroDescription}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
 - [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
-- [视频模板](${siteOrigin}/videos): 五套 Hexly 家族模板、项目预览、视频与 PPT/PDF 导出。
+- [视频模板](${siteOrigin}/templates): 五种封面、正文与片尾自由组合，均有 Hexly 明暗主题；客户端预览、本地视频与 PPTX/PDF 导出。
 
 ${visible.map((project) => link(project, "zh")).join("\n")}
 
@@ -239,7 +263,7 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Crawler policy](${siteOrigin}/robots.txt)
 - [Project catalogue JSON](${siteOrigin}/data/projects.json)
 - [Share metadata API](${siteOrigin}/api/share.json)
-- [Video manifest](${siteOrigin}/videos/manifest.json)
+- [Video manifest](${siteOrigin}/templates/manifest.json)
 `;
 }
 
@@ -409,19 +433,19 @@ function statusPage(projects: Project[]): DiscoveryPage {
 
 function videosPage(id?: string): DiscoveryPage {
 	const entry = findVideo(id);
-	const path = entry ? `/videos/${entry.id}` : "/videos";
+	const path = entry ? `/templates/${entry.id}` : "/templates";
 	const title = entry
 		? `${entry.title} — Hexly Video Kit`
-		: "Video Kit — hexly.ai";
+		: "Templates — hexly.ai";
 	const description =
 		entry?.description.en ??
-		"Five templates. One Hexly family. Turn any project into a video or a deck with the same content.";
+		"Five openings, five content layouts, five endings. Compose any Hexly project in light or dark, as a video or a deck.";
 	const canonical = absoluteUrl(path);
-	const image = entry ? absoluteUrl(entry.poster.src) : socialImage();
+	const image = socialImage();
 	const items = (entry ? [entry] : videoEntries)
 		.map(
 			(item) =>
-				`<li><a href="/videos/${item.id}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.description.en)}<p><a href="${item.clip.src}">MP4 sample</a> · <a href="${item.deck.pptx.src}">PowerPoint deck</a> · <a href="${item.deck.pdf.src}">PDF deck</a></p></li>`,
+				`<li><a href="/templates/${item.id}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.description.en)}</li>`,
 		)
 		.join("");
 	return {
@@ -430,20 +454,16 @@ function videosPage(id?: string): DiscoveryPage {
 		description,
 		canonical,
 		image,
-		imageAlt: entry
-			? `${entry.title} — Hexly Video Kit`
-			: "hexly.ai mark on warm paper",
-		imageWidth: entry?.poster.width,
-		imageHeight: entry?.poster.height,
-		heading: entry?.title ?? "Video Kit.",
+		imageAlt: "hexly.ai mark on warm paper",
+		heading: entry?.title ?? "Templates.",
 		bodyHtml: snapshotHtml(
-			entry?.title ?? "Video Kit.",
+			entry?.title ?? "Templates.",
 			description,
 			path,
 			[],
 		).replace(
 			"</main>",
-			`<nav><a href="/videos">All templates</a></nav><ul>${items}</ul><p><a href="/videos/manifest.json">Public manifest</a> · <a href="/videos/film-v1.schema.json">Project schema</a></p></main>`,
+			`<nav><a href="/templates">All components</a></nav><ul>${items}</ul><p>Interactive Video and Deck previews. Two themes. Independent opening, content and ending selections. Export a project setup for local MP4, PowerPoint and PDF rendering.</p><p><a href="/templates/manifest.json">Public manifest</a> · <a href="/templates/film-v2.schema.json">Project schema</a></p></main>`,
 		),
 		jsonLd: {
 			"@context": "https://schema.org",
@@ -453,25 +473,13 @@ function videosPage(id?: string): DiscoveryPage {
 			description,
 			image,
 			isPartOf: { "@id": `${siteOrigin}/#website` },
-			...(entry
-				? {
-						version: entry.version,
-						encoding: {
-							"@type": "VideoObject",
-							name: entry.title,
-							description,
-							thumbnailUrl: image,
-							contentUrl: absoluteUrl(entry.clip.src),
-							duration: `PT${entry.clip.duration}S`,
-						},
-					}
-				: {}),
+			...(entry ? { version: videoManifest.kitVersion } : {}),
 		},
 	};
 }
 
 function projectPage(project: Project): DiscoveryPage {
-	const path = `/logos/${project.id}`;
+	const path = `/projects/${project.id}`;
 	const canonical = absoluteUrl(path);
 	const image = socialImage(project);
 	return {
@@ -511,7 +519,7 @@ function itemList(projects: Project[], name: string) {
 		itemListElement: projects.map((project, index) => ({
 			"@type": "ListItem",
 			position: index + 1,
-			url: absoluteUrl(`/logos/${project.id}`),
+			url: absoluteUrl(`/projects/${project.id}`),
 			name: project.title,
 		})),
 	};
@@ -538,14 +546,35 @@ function snapshotHtml(
 		: `<ul>${projects
 				.map(
 					(entry) =>
-						`<li><a href="/logos/${entry.id}">${escapeHtml(entry.title)}</a> — ${escapeHtml(entry.description.en)}</li>`,
+						`<li><a href="/projects/${entry.id}">${escapeHtml(entry.title)}</a> — ${escapeHtml(entry.description.en)}</li>`,
 				)
 				.join("")}</ul>`;
 	const overview = project?.overview;
 	const overviewHtml = overview
-		? `<section><h2>${copy.en.projectGoal}</h2><p>${escapeHtml(overview.goal.en)}</p><h2>${copy.en.techStack}</h2><ul>${overview.techStack.map((technology) => `<li>${escapeHtml(technology.name)} — ${escapeHtml(technology.role.en)}</li>`).join("")}</ul></section>`
+		? `<section id="overview"><h2>${copy.en.projectGoal}</h2><p>${escapeHtml(overview.goal.en)}</p><h2>${copy.en.techStack}</h2><ul>${overview.techStack.map((technology) => `<li>${escapeHtml(technology.name)} — ${escapeHtml(technology.role.en)}</li>`).join("")}</ul></section>`
 		: "";
-	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav>${nav}</nav>${items}${overviewHtml}</main>`;
+	const videoHtml =
+		project?.media?.videos
+			?.map(
+				(video) =>
+					`<figure id="video-${escapeHtml(video.id)}"><a href="${escapeHtml(video.src)}"><img src="${escapeHtml(video.poster)}" alt="${escapeHtml(video.title.en)}" width="960" height="540" loading="lazy" />${escapeHtml(video.title.en)}</a></figure>`,
+			)
+			.join("") ?? "";
+	const screenshotsHtml =
+		project?.media?.screenshots
+			?.map(
+				(shot) =>
+					`<figure><a href="${escapeHtml(shot.src)}"><img src="${escapeHtml(shot.src)}" alt="${escapeHtml(shot.alt.en)}" width="${shot.width}" height="${shot.height}" loading="lazy" /></a><figcaption>${escapeHtml(shot.alt.en)}</figcaption></figure>`,
+			)
+			.join("") ?? "";
+	const mediaHtml =
+		videoHtml || screenshotsHtml
+			? `<section id="media"><h2>${copy.en.projectMedia}</h2>${videoHtml}${screenshotsHtml}</section>`
+			: "";
+	const brandHtml = project
+		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(project.family?.foreground.display ?? project.logo.display)}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(project.logo.original)}">Download original</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a></p></section>`
+		: "";
+	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
 }
 
 function replaceMeta(

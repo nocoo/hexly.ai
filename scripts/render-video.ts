@@ -9,6 +9,7 @@ import { dirname, join, resolve } from "node:path";
 import { parseArgs } from "node:util";
 import { createProjectFilm } from "@hexly/video-kit";
 import {
+	compositionSchema,
 	parseFilm,
 	templateIds,
 	type VideoProject,
@@ -21,6 +22,9 @@ const { values } = parseArgs({
 	options: {
 		project: { type: "string", default: "hexly-ai" },
 		template: { type: "string", default: "launch" },
+		theme: { type: "string", default: "light" },
+		opening: { type: "string", default: "signal" },
+		ending: { type: "string", default: "signature" },
 		locale: { type: "string", default: "en" },
 		props: { type: "string" },
 		screenshot: { type: "string" },
@@ -29,6 +33,9 @@ const { values } = parseArgs({
 		scale: { type: "string", default: "0.5" },
 	},
 });
+const output = values.out ? resolve(values.out) : undefined;
+if (output === resolve("public") || output?.startsWith(`${resolve("public")}/`))
+	throw new Error("Keep render outputs outside the site's public/ directory.");
 const template = templateIds.find((id) => id === values.template);
 if (!template) throw new Error("Unknown template.");
 const selected = readProjects().find(
@@ -65,7 +72,16 @@ if (values.screenshot) {
 }
 const film = values.props
 	? parseFilm(JSON.parse(readFileSync(resolve(values.props), "utf8")))
-	: createProjectFilm(project, template, locale);
+	: createProjectFilm(
+			project,
+			template,
+			locale,
+			compositionSchema.parse({
+				theme: values.theme,
+				opening: values.opening,
+				ending: values.ending,
+			}),
+		);
 const directory = resolve(
 	".video-work",
 	new Date().toISOString().replace(/[:.]/g, "-"),
@@ -98,7 +114,7 @@ const command = [
 	"--scale",
 	values.scale,
 ];
-if (values.out) command.push("--out", resolve(values.out));
+if (output) command.push("--out", output);
 process.exit(
 	await Bun.spawn(command, { stdout: "inherit", stderr: "inherit" }).exited,
 );

@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Amber lion portrait with one multicolored butterfly
-- Site path: `/logos/surety`; [local gallery](https://index.dev.hexly.ai/logos/surety)
+- Site path: `/projects/surety#brand`; [local gallery](https://index.dev.hexly.ai/projects/surety#brand)
 - [Static review HTML](../../artwork/logo-family/surety/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/surety/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/surety/2026-09-07-01/01/transparent.png); SHA-256: `cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314`

@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Walnut and brass prairie arcade joystick
-- Site path: `/logos/pew-game`; [local gallery](https://index.dev.hexly.ai/logos/pew-game)
+- Site path: `/projects/pew-game#brand`; [local gallery](https://index.dev.hexly.ai/projects/pew-game#brand)
 - [Static review HTML](../../artwork/logo-family/pew-game/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pew-game/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/pew-game/2026-09-07-01/02/transparent.png); SHA-256: `18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90`

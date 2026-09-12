@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Floating black-and-green layered circuit deck
-- Site path: `/logos/matrix`; [local gallery](https://index.dev.hexly.ai/logos/matrix)
+- Site path: `/projects/matrix#brand`; [local gallery](https://index.dev.hexly.ai/projects/matrix#brand)
 - [Static review HTML](../../artwork/logo-family/matrix/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/matrix/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/matrix/2026-09-07-01/01/transparent.png); SHA-256: `f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8`

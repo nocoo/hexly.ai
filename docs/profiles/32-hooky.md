@@ -67,7 +67,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original pink faceted octopus with curled arms
-- Site path: `/logos/hooky`; [local gallery](https://index.dev.hexly.ai/logos/hooky)
+- Site path: `/projects/hooky#brand`; [local gallery](https://index.dev.hexly.ai/projects/hooky#brand)
 - [Static review HTML](../../artwork/logo-family/hooky/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hooky/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/hooky/2026-09-07-01/01/transparent.png); SHA-256: `7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62`

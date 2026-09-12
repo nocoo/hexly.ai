@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Caramel capybara with closed eyes, blue-purple glasses, and an apple with leaves
-- Site path: `/logos/life-ai`; [local gallery](https://index.dev.hexly.ai/logos/life-ai)
+- Site path: `/projects/life-ai#brand`; [local gallery](https://index.dev.hexly.ai/projects/life-ai#brand)
 - [Static review HTML](../../artwork/logo-family/life-ai/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/life-ai/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/life-ai/2026-09-07-01/02/transparent.png); SHA-256: `dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca`

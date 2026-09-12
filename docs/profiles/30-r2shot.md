@@ -68,7 +68,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original blue faceted dolphin with a curled tail
-- Site path: `/logos/r2shot`; [local gallery](https://index.dev.hexly.ai/logos/r2shot)
+- Site path: `/projects/r2shot#brand`; [local gallery](https://index.dev.hexly.ai/projects/r2shot#brand)
 - [Static review HTML](../../artwork/logo-family/r2shot/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/r2shot/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/r2shot/2026-09-07-01/01/transparent.png); SHA-256: `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`

@@ -4,12 +4,12 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, test } from "vitest";
 import manifest from "../brand-source.json";
-import { hexly, palettes, themes } from "../src/brand";
+import { family, hexly, layouts, palettes } from "../src/brand";
 import { BrandLockup } from "../src/Identity";
 import { entrance, revealState } from "../src/motion";
 
 describe("the Hexly family contract", () => {
-	test("all five expressions retain the site's light tokens and actual brand geometry", () => {
+	test("all five layouts share both exact site palettes and brand geometry", () => {
 		const site = readFileSync(
 			new URL("../../../src/styles/base.css", import.meta.url),
 			"utf8",
@@ -18,10 +18,11 @@ describe("the Hexly family contract", () => {
 			new URL("../../../src/components/Icon.tsx", import.meta.url),
 			"utf8",
 		);
-		for (const color of Object.values(palettes.light))
-			expect(site).toContain(color);
-		for (const theme of Object.values(themes))
-			expect(theme.palette).toEqual(palettes.light);
+		for (const palette of Object.values(palettes))
+			for (const color of Object.values(palette)) expect(site).toContain(color);
+		expect(Object.keys(layouts)).toHaveLength(5);
+		expect(family.space.edge).toBeLessThan(family.space.safe);
+		expect(family.space.edge).toBe(32);
 		const html = renderToStaticMarkup(createElement(BrandLockup));
 		for (const path of manifest.paths) {
 			expect(icon).toContain(path);

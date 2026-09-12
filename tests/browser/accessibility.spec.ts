@@ -6,7 +6,8 @@ for (const theme of ["light", "dark"] as const) {
 		test.use({ colorScheme: theme });
 		for (const [view, path] of [
 			["directory", "/"],
-			["gallery", "/logos/frogie"],
+			["logo wall", "/logos"],
+			["gallery", "/projects/frogie"],
 			["status", "/status"],
 		] as const) {
 			test(`${view} has accessible content and fits the viewport`, async ({

@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Plugin } from "vite";
 import provenance from "../packages/video-kit/brand-source.json";
-import { kitVersion } from "../packages/video-kit/src/brand";
+import { brandAssetVersion } from "../packages/video-kit/src/brand";
 import {
 	parseVideoManifest,
 	schemaDocuments,
@@ -14,17 +14,17 @@ export function videoSiteAssets(): Plugin {
 	const json = (value: unknown) => `${JSON.stringify(value)}\n`;
 	const files = () => [
 		{
-			fileName: "videos/manifest.json",
+			fileName: "templates/manifest.json",
 			type: "application/json",
 			source: json(parseVideoManifest(manifest)),
 		},
 		...Object.entries(schemaDocuments()).map(([file, schema]) => ({
-			fileName: `videos/${file}`,
+			fileName: `templates/${file}`,
 			type: "application/schema+json",
 			source: json(schema),
 		})),
 		...provenance.assets.map((asset) => {
-			const fileName = `video-kit/${kitVersion}/hexly/${asset.file}`;
+			const fileName = `video-kit/${brandAssetVersion}/hexly/${asset.file}`;
 			return {
 				fileName,
 				type: asset.file.endsWith(".woff2")
@@ -39,7 +39,7 @@ export function videoSiteAssets(): Plugin {
 		configureServer(server) {
 			server.middlewares.use((request, response, next) => {
 				const path = new URL(request.url ?? "/", "http://localhost").pathname;
-				if (!path.startsWith("/videos/") && !path.startsWith("/video-kit/"))
+				if (!path.startsWith("/templates/") && !path.startsWith("/video-kit/"))
 					return next();
 				const file = files().find((item) => `/${item.fileName}` === path);
 				if (!file || !["GET", "HEAD"].includes(request.method ?? ""))

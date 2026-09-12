@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Celadon mechanical keycap with a Chinese character
-- Site path: `/logos/flow`; [local gallery](https://index.dev.hexly.ai/logos/flow)
+- Site path: `/projects/flow#brand`; [local gallery](https://index.dev.hexly.ai/projects/flow#brand)
 - [Static review HTML](../../artwork/logo-family/flow/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/flow/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/flow/2026-09-07-01/01/transparent.png); SHA-256: `d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23`

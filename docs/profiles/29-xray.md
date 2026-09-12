@@ -68,7 +68,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original multicolored butterfly with complete spread wings
-- Site path: `/logos/xray`; [local gallery](https://index.dev.hexly.ai/logos/xray)
+- Site path: `/projects/xray#brand`; [local gallery](https://index.dev.hexly.ai/projects/xray#brand)
 - [Static review HTML](../../artwork/logo-family/xray/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/xray/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/xray/2026-09-07-01/01/transparent.png); SHA-256: `912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023`

@@ -1,4 +1,5 @@
 import {
+	type CompositionOptions,
 	type FilmConfig,
 	parseFilm,
 	projectSchema,
@@ -11,12 +12,17 @@ export function createProjectFilm(
 	input: VideoProject,
 	template: TemplateId = "launch",
 	locale: "en" | "zh" = "en",
+	options: Partial<CompositionOptions> = {},
 ): FilmConfig {
 	const project = projectSchema.parse(input);
 	const zh = locale === "zh";
 	const destination = project.website ?? project.repository;
 	return parseFilm({
-		schemaVersion: 1,
+		schemaVersion: 2,
+		theme: "light",
+		opening: "signal",
+		ending: "signature",
+		...options,
 		template,
 		format: "landscape",
 		fps: 30,
@@ -27,7 +33,7 @@ export function createProjectFilm(
 				id: "intro",
 				kind: "intro",
 				duration: 5,
-				eyebrow: "A HEXLY PROJECT",
+				eyebrow: zh ? "一个 HEXLY 项目" : "A HEXLY PROJECT",
 				title: project.name,
 				body: project.summary,
 			},
@@ -43,7 +49,7 @@ export function createProjectFilm(
 				id: "chapter",
 				kind: "chapter",
 				duration: 4,
-				eyebrow: "01 / INSIDE THE PROJECT",
+				eyebrow: zh ? "01 / 走进项目" : "01 / INSIDE THE PROJECT",
 				title: zh ? "从想法到细节。" : "From idea\nto detail.",
 				body: zh ? `走进 ${project.name}` : `A closer look at ${project.name}.`,
 			},
@@ -81,7 +87,7 @@ export function createProjectFilm(
 				duration: 5,
 				eyebrow: "HEXLY",
 				title: project.name,
-				body: "hexly.ai",
+				body: "",
 			},
 		],
 	});

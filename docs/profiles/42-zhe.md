@@ -72,7 +72,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original golden faceted bee with multicolored wings
-- Site path: `/logos/zhe`; [local gallery](https://index.dev.hexly.ai/logos/zhe)
+- Site path: `/projects/zhe#brand`; [local gallery](https://index.dev.hexly.ai/projects/zhe#brand)
 - [Static review HTML](../../artwork/logo-family/zhe/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/zhe/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/zhe/2026-09-07-01/01/transparent.png); SHA-256: `a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046`

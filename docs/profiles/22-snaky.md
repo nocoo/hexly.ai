@@ -68,7 +68,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Green snake in a natural coil with one multicolored forked tongue
-- Site path: `/logos/snaky`; [local gallery](https://index.dev.hexly.ai/logos/snaky)
+- Site path: `/projects/snaky#brand`; [local gallery](https://index.dev.hexly.ai/projects/snaky#brand)
 - [Static review HTML](../../artwork/logo-family/snaky/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/snaky/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/snaky/2026-09-07-01/01/transparent.png); SHA-256: `4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630`

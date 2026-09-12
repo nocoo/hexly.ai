@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import manifest from "../../package.json";
+import { schemaDocuments } from "../../packages/video-kit/src/schema";
 import { verifyDeployment } from "../../scripts/verify-deployment";
 import { readProjects } from "../../src/data/read-projects";
 import identity from "../../src/data/site-identity.json";
@@ -64,18 +65,18 @@ function serve(
 					headers: { "content-type": "text/css" },
 				});
 			if (path === logoPath) return new Response(logo);
-			if (path === "/videos/manifest.json") return Response.json(videos);
-			if (path === "/videos")
+			if (path === "/templates/manifest.json") return Response.json(videos);
+			if (path === "/templates/film-v2.schema.json")
+				return Response.json(schemaDocuments()["film-v2.schema.json"]);
+			if (path === "/templates")
 				return new Response(
-					videos.templates.map((entry) => `/videos/${entry.id}`).join("\n"),
+					videos.templates.map((entry) => `/templates/${entry.id}`).join("\n"),
 				);
 			for (const entry of videos.templates) {
-				if (path === `/videos/${entry.id}`)
+				if (path === `/templates/${entry.id}`)
 					return new Response(
 						`<title>${entry.title} — Hexly Video Kit</title>`,
 					);
-				if (path === entry.poster.src)
-					return new Response(readFileSync(`public${path}`));
 			}
 			return new Response("Not found", { status: 404 });
 		}),
@@ -100,19 +101,19 @@ describe("production deployment verification", () => {
 			message: "Production status target is missing: wooly",
 		},
 		{
-			path: "/videos/manifest.json",
+			path: "/templates/manifest.json",
 			response: () => Response.json({ ...videos, kitVersion: "0.0.0" }),
 			message: "Production video manifest does not match this release.",
 		},
 		{
-			path: "/videos/studio",
+			path: "/templates/showcase",
 			response: () => new Response("<title>Directory</title>"),
-			message: "Video template page is missing: studio",
+			message: "Video template page is missing: showcase",
 		},
 		{
-			path: videos.templates[0]?.poster.src,
-			response: () => new Response("Incorrect poster"),
-			message: "Video poster checksum mismatch: launch",
+			path: "/templates/film-v2.schema.json",
+			response: () => Response.json({ properties: {} }),
+			message: "Video composition schema is missing.",
 		},
 	])(
 		"rejects incomplete published video/status assets at $path",

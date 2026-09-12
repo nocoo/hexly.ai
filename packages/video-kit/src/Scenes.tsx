@@ -1,662 +1,476 @@
-import type { CSSProperties, ReactNode } from "react";
+import { Ending } from "./Endings";
+import { HexlyReveal, RedDot } from "./Identity";
+import { Opening } from "./Openings";
 import {
-	AbsoluteFill,
-	Img,
-	staticFile,
-	useCurrentFrame,
-	useVideoConfig,
-} from "remotion";
-import { family, hexly, themes } from "./brand";
-import { useHexlyFonts } from "./fonts";
-import { BrandLockup, BrandMark, HexlyReveal, RedDot } from "./Identity";
-import { ease, entrance } from "./motion";
-import type {
-	Motion,
-	SceneConfig,
-	SceneKind,
-	TemplateId,
-	VideoProject,
-} from "./schema";
+	Action,
+	ArtPanel,
+	Body,
+	Canvas,
+	Chips,
+	ContentArea,
+	Eyebrow,
+	Facts,
+	FitText,
+	Heading,
+	mono,
+	ProjectArt,
+	type SceneProps,
+	type SceneState,
+	useScene,
+} from "./SceneElements";
+import type { SceneKind } from "./schema";
 
-export type SceneProps = Pick<SceneConfig, "title"> &
-	Partial<Pick<SceneConfig, "eyebrow" | "body" | "link">> & {
-		template?: TemplateId;
-		motion?: Motion;
-		index?: number;
-		project?: VideoProject;
-		children?: ReactNode;
-	};
+export type { SceneProps } from "./SceneElements";
+export { projectAsset } from "./SceneElements";
 
-export const projectAsset = (path: string) =>
-	/^(https:|data:)/.test(path) ? path : staticFile(path.replace(/^\//, ""));
-
-function ProjectArt({
-	project,
-	screenshot = false,
-}: {
-	project?: VideoProject;
-	screenshot?: boolean;
-}) {
-	const image = screenshot ? project?.screenshot : undefined;
+function Launch({ s }: { s: SceneState }) {
+	const art = s.kind === "content" || s.kind === "chapter";
 	return (
-		<div
-			style={{
-				display: "flex",
-				alignItems: "center",
-				justifyContent: "center",
-				width: "100%",
-				height: "100%",
-				padding: image ? 14 : 54,
-			}}
-		>
-			{image ? (
-				<Img
-					src={projectAsset(image.src)}
-					alt={image.alt}
-					style={{ width: "100%", height: "100%", objectFit: "contain" }}
-				/>
-			) : project?.logo ? (
-				<Img
-					src={projectAsset(project.logo)}
-					alt={project.name}
-					style={{ width: "100%", height: "100%", objectFit: "contain" }}
-				/>
-			) : (
-				<BrandMark scale={5.8} />
-			)}
-		</div>
-	);
-}
-
-function Cube({
-	side,
-	color,
-	style,
-}: {
-	side: number;
-	color: string;
-	style?: CSSProperties;
-}) {
-	const half = side / 2;
-	return (
-		<div
-			style={{
-				position: "absolute",
-				width: side,
-				height: side,
-				transformStyle: "preserve-3d",
-				...style,
-			}}
-		>
-			{[
-				{ id: "front", transform: `translateZ(${half}px)`, tint: color },
-				{
-					id: "right",
-					transform: `rotateY(90deg) translateZ(${half}px)`,
-					tint: `color-mix(in srgb, ${color} 85%, ${hexly.ink})`,
-				},
-				{
-					id: "top",
-					transform: `rotateX(90deg) translateZ(${half}px)`,
-					tint: `color-mix(in srgb, ${color} 65%, ${hexly.surface})`,
-				},
-				{
-					id: "left",
-					transform: `rotateY(-90deg) translateZ(${half}px)`,
-					tint: color,
-				},
-				{
-					id: "back",
-					transform: `rotateY(180deg) translateZ(${half}px)`,
-					tint: color,
-				},
-				{
-					id: "bottom",
-					transform: `rotateX(-90deg) translateZ(${half}px)`,
-					tint: color,
-				},
-			].map((face) => (
-				<div
-					key={face.id}
-					style={{
-						position: "absolute",
-						inset: 0,
-						borderRadius: family.radius.object,
-						transform: face.transform,
-						background: `linear-gradient(145deg, color-mix(in srgb, ${face.tint} 88%, ${hexly.surface}), ${face.tint})`,
-						border: `1px solid color-mix(in srgb, ${face.tint} 76%, ${hexly.ink})`,
-						backfaceVisibility: "hidden",
-						boxShadow: `inset 0 2px 5px ${hexly.surface}35`,
-					}}
-				/>
-			))}
-		</div>
-	);
-}
-
-function StudioArt({
-	progress,
-	project,
-}: {
-	progress: number;
-	project?: VideoProject;
-}) {
-	return (
-		<div
-			style={{
-				position: "relative",
-				width: 540,
-				height: 500,
-				perspective: 1400,
-			}}
-		>
-			<div
-				style={{
-					position: "absolute",
-					left: 20,
-					right: 0,
-					bottom: 4,
-					height: 100,
-					borderRadius: "50%",
-					background: `radial-gradient(ellipse, ${hexly.shadow}1b, transparent 68%)`,
-				}}
-			/>
-			<div
-				style={{
-					position: "absolute",
-					inset: 0,
-					transformStyle: "preserve-3d",
-					transform: `translateY(${(1 - progress) * 18}px) rotateX(-22deg) rotateY(${-28 + 6 * progress}deg)`,
-				}}
-			>
-				<Cube
-					side={172}
-					color={hexly.accent}
-					style={{
-						left: 55,
-						top: 220,
-						transform: `translateZ(${10 + progress * 6}px)`,
-					}}
-				/>
-				<Cube
-					side={136}
-					color={hexly.soft}
-					style={{ left: 264, top: 256, transform: "translateZ(-38px)" }}
-				/>
-				<Cube
-					side={128}
-					color={hexly.surface}
-					style={{
-						left: 214,
-						top: 28,
-						transform: `translateY(${(1 - progress) * 18}px) translateZ(-30px)`,
-					}}
-				/>
-			</div>
-			<div
-				style={{
-					position: "absolute",
-					right: 24,
-					top: 76,
-					width: 164,
-					height: 164,
-					background: hexly.surface,
-					border: `1px solid ${hexly.line}`,
-					borderRadius: family.radius.panel,
-					boxShadow: `0 20px 42px ${hexly.shadow}14`,
-					opacity: progress,
-				}}
-			>
-				<ProjectArt project={project} />
-			</div>
-		</div>
-	);
-}
-
-function Facts({
-	project,
-	compact = false,
-}: {
-	project?: VideoProject;
-	compact?: boolean;
-}) {
-	const facts = project?.facts ?? [
-		{ label: "FORMAT", value: "16:9" },
-		{ label: "FAMILY", value: "Hexly" },
-		{ label: "MOTION", value: "Measured" },
-	];
-	return (
-		<div
+		<ContentArea
+			s={s}
 			style={{
 				display: "grid",
-				gap: compact ? 18 : 22,
-				gridTemplateColumns: compact
-					? "1fr"
-					: `repeat(${Math.min(facts.length, 3)}, 1fr)`,
+				gridTemplateColumns: !s.portrait && art ? "1.65fr 1fr" : "1fr",
+				gridTemplateRows: s.portrait && art ? "minmax(0, 1fr) 650px" : "1fr",
+				gap: s.portrait ? 60 : 100,
+				alignItems: "center",
 			}}
 		>
-			{facts.slice(0, 3).map((fact) => (
-				<div
-					key={fact.label}
-					style={{ borderTop: `1px solid ${hexly.line}`, paddingTop: 25 }}
+			<FitText s={s}>
+				<Eyebrow
+					s={s}
+					style={{ display: "flex", alignItems: "center", gap: 16 }}
 				>
+					<RedDot size={12} />
+					{s.eyebrow}
+				</Eyebrow>
+				<Heading
+					s={s}
+					size={s.portrait ? 120 : 146}
+					style={{ maxWidth: 1520 }}
+				/>
+				<Body s={s} size={34} style={{ maxWidth: 1250 }} />
+				<Chips s={s} />
+				<Action s={s} />
+			</FitText>
+			{art ? (
+				s.kind === "chapter" ? (
 					<div
 						style={{
-							fontFamily: hexly.mono,
-							fontSize: 17,
-							color: hexly.muted,
-							letterSpacing: 1,
+							fontSize: s.portrait ? 330 : 370,
+							lineHeight: 1,
+							letterSpacing: "-0.09em",
+							color: s.p.accent,
+							textAlign: "center",
+							...s.move(0.25, 28),
 						}}
 					>
-						{fact.label.toUpperCase()}
+						01<span style={{ color: s.p.line }}>.</span>
 					</div>
-					<div
-						style={{
-							fontSize: compact ? 42 : 58,
-							lineHeight: 1.15,
-							fontWeight: 500,
-							letterSpacing: -2,
-							marginTop: 15,
-							overflowWrap: "anywhere",
-						}}
-					>
-						{fact.value}
-					</div>
-				</div>
-			))}
-		</div>
+				) : (
+					<ArtPanel s={s} layered style={{ height: s.portrait ? 650 : 590 }} />
+				)
+			) : null}
+		</ContentArea>
 	);
 }
 
-function Slate({
-	kind,
-	title,
-	eyebrow = "",
-	body = "",
-	link,
-	template = "launch",
-	motion = "full",
-	index = 0,
-	project,
-	children,
-}: SceneProps & { kind: SceneKind }) {
-	const frame = useCurrentFrame();
-	const { fps, width, height, durationInFrames } = useVideoConfig();
-	const ready = useHexlyFonts();
-	const theme = themes[template];
-	const p = theme.palette;
-	const portrait = height > width;
-	const reduced = motion === "reduced";
-	const essential = template === "essential";
-	const editorial = template === "editorial";
-	const pulse = template === "pulse";
-	const studio = template === "studio";
-	const content = kind === "content";
-	const pad = portrait ? 84 : family.space.safe;
-	const mono: CSSProperties = {
-		fontFamily: hexly.mono,
-		fontSize: portrait ? 25 : 20,
-		letterSpacing: 1.6,
-		lineHeight: 1.5,
-	};
-	const enter = (delay = 0) =>
-		entrance(frame, fps, theme.enter, delay, reduced);
-	const exit = reduced
-		? 1
-		: 1 -
-			ease(
-				(frame - durationInFrames + fps * family.motion.transition) /
-					(fps * family.motion.transition),
-			);
-	const move = (delay = 0): CSSProperties => ({
-		opacity: enter(delay) * exit,
-		transform: `translateY(${(1 - enter(delay)) * family.motion.travel}px)`,
-	});
-	const art = kind === "intro" || kind === "chapter" || content;
-	const split = art && (!essential || (content && !!project?.screenshot));
-	const centered = essential && !split;
-	const contentWidth = portrait
-		? width - pad * 2
-		: centered
-			? 1390
-			: split
-				? editorial
-					? 1020
-					: 1040
-				: 1510;
-	const titleSize =
-		(portrait ? 104 : essential ? 146 : editorial ? 118 : pulse ? 116 : 134) *
-		(title.length > 55 ? 0.65 : title.length > 30 ? 0.8 : 1);
-	const contentTop = portrait
-		? essential
-			? 580
-			: 338
-		: essential
-			? 336
-			: editorial
-				? 286
-				: pulse
-					? 312
-					: 326;
-	const artLeft = portrait ? 178 : 1328;
-	const artTop = portrait ? 1120 : editorial ? 316 : 334;
-	const artWidth = portrait ? 724 : 466;
-	const textColor = p.muted;
+function Essential({ s }: { s: SceneState }) {
+	const screenshot = s.kind === "content" && s.project?.screenshot;
 	return (
-		<AbsoluteFill
-			data-video-scene={kind}
-			data-template={template}
+		<ContentArea
+			s={s}
 			style={{
-				background: p.page,
-				color: p.ink,
-				fontFamily: hexly.sans,
-				overflow: "hidden",
-				opacity: ready ? 1 : 0,
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center",
+				justifyContent: "center",
+				textAlign: "center",
+				gap: screenshot ? 40 : 0,
 			}}
 		>
-			{editorial ? (
-				<div
-					style={{
-						position: "absolute",
-						left: pad,
-						right: pad,
-						top: 230,
-						borderTop: `1px solid ${p.ink}`,
-						display: "flex",
-						justifyContent: "space-between",
-						paddingTop: 16,
-						...mono,
-						fontSize: 17,
-						color: p.muted,
-					}}
-				>
-					<span>FIELD NOTES / {String(index + 1).padStart(2, "0")}</span>
-					<span>HEXLY COLLECTION</span>
-				</div>
-			) : pulse ? (
-				<div
-					style={{
-						position: "absolute",
-						inset: portrait ? "262px 56px 224px" : "250px 82px 174px",
-						border: `1px solid ${p.line}`,
-						borderRadius: family.radius.panel,
-						background: p.surface,
-					}}
-				/>
-			) : null}
-			<div
-				style={{
-					position: "absolute",
-					left: pad,
-					right: pad,
-					top: portrait ? 102 : 92,
-					display: "flex",
-					justifyContent: "space-between",
-					alignItems: "center",
-				}}
+			<FitText
+				s={s}
+				center
+				style={{ maxWidth: s.portrait ? "100%" : 1510, flex: 1 }}
 			>
-				<BrandLockup scale={portrait ? 2.1 : 1.7} />
-				<span style={{ ...mono, color: p.muted, fontSize: portrait ? 21 : 17 }}>
-					{theme.label.toUpperCase()} / {String(index + 1).padStart(2, "0")}
-				</span>
-			</div>
-			<div
-				style={{
-					position: "absolute",
-					left: centered ? (width - contentWidth) / 2 : pad + (pulse ? 32 : 0),
-					top: contentTop,
-					width: contentWidth - (pulse ? 56 : 0),
-					textAlign: centered ? "center" : "left",
-				}}
-			>
-				<div
+				<Eyebrow
+					s={s}
 					style={{
-						...mono,
 						display: "flex",
-						justifyContent: centered ? "center" : "start",
 						alignItems: "center",
+						justifyContent: "center",
 						gap: 16,
-						color: p.muted,
-						marginBottom: 30,
-						...move(0.04),
 					}}
 				>
 					<RedDot size={12} />
-					{eyebrow || kind.toUpperCase()}
-				</div>
-				<div
-					data-video-title
-					style={{
-						margin: 0,
-						fontSize: titleSize,
-						letterSpacing: "-0.052em",
-						fontWeight: 500,
-						lineHeight: 1.05,
-						whiteSpace: "pre-line",
-						overflowWrap: "anywhere",
-						...move(theme.stagger),
-					}}
-				>
-					{title}
-				</div>
-				{body ? (
-					<div
-						data-video-body
-						style={{
-							marginTop: editorial ? 30 : 36,
-							maxWidth: essential ? undefined : portrait ? 850 : 945,
-							color: textColor,
-							fontSize:
-								body.length > 260 ? 26 : portrait ? 34 : editorial ? 29 : 31,
-							lineHeight: 1.55,
-							whiteSpace: "pre-line",
-							...move(theme.stagger * 2),
-						}}
-					>
-						{body}
-					</div>
-				) : null}
-				{content && project?.technologies.length ? (
-					<div
-						style={{
-							display: "flex",
-							flexWrap: "wrap",
-							justifyContent: essential ? "center" : "start",
-							gap: 12,
-							marginTop: 32,
-							...move(theme.stagger * 3),
-						}}
-					>
-						{project.technologies.map((name) => (
-							<span
-								key={name}
-								style={{
-									fontFamily: hexly.mono,
-									fontSize: portrait ? 23 : 20,
-									lineHeight: 1.4,
-									padding: "10px 15px",
-									border: `1px solid ${p.line}`,
-									borderRadius: family.radius.small,
-								}}
-							>
-								{name}
-							</span>
-						))}
-					</div>
-				) : null}
-				{kind === "cta" && link ? (
-					<div
-						style={{
-							marginTop: portrait ? 68 : 56,
-							...move(theme.stagger * 3),
-						}}
-					>
-						<div
-							style={{
-								display: "inline-flex",
-								alignItems: "center",
-								gap: 40,
-								background: p.ink,
-								color: p.page,
-								fontSize: portrait ? 31 : 28,
-								borderRadius: family.radius.small,
-								padding: "24px 34px",
-							}}
-						>
-							{link.label}
-							<span aria-hidden="true">↗</span>
-						</div>
-						<div
-							style={{
-								...mono,
-								color: textColor,
-								fontSize: portrait ? 24 : 21,
-								marginTop: 28,
-								overflowWrap: "anywhere",
-							}}
-						>
-							{link.href.replace(/^https:\/\//, "").replace(/\/$/, "")}
-						</div>
-					</div>
-				) : null}
-			</div>
-			{split ? (
-				<div
-					style={{
-						position: "absolute",
-						left: artLeft,
-						top: artTop,
-						width: artWidth,
-						...(!studio ? move(theme.stagger * 2) : {}),
-					}}
-				>
-					{children ??
-						(pulse && !(content && project?.screenshot) ? (
-							<div style={{ padding: "6px 22px" }}>
-								<Facts project={project} compact />
-								<p
-									style={{
-										...mono,
-										fontSize: 15,
-										color: p.muted,
-										lineHeight: 1.6,
-										marginTop: 35,
-									}}
-								>
-									{project?.sourceNote}
-								</p>
-							</div>
-						) : studio && !project?.screenshot ? (
-							<StudioArt
-								progress={enter(theme.stagger * 2)}
-								project={project}
-							/>
-						) : kind === "chapter" && !studio ? (
-							<div
-								style={{
-									fontSize: portrait ? 300 : 320,
-									lineHeight: 1,
-									letterSpacing: -24,
-									fontWeight: 400,
-									color: p.accent,
-								}}
-							>
-								01<span style={{ color: p.line }}>.</span>
-							</div>
-						) : (
-							<div
-								style={{
-									position: "relative",
-									width: "100%",
-									height: editorial ? 430 : 470,
-								}}
-							>
-								{!editorial ? (
-									<div
-										style={{
-											position: "absolute",
-											inset: "20px -18px -18px 20px",
-											background: p.soft,
-											border: `1px solid ${p.line}`,
-											borderRadius: family.radius.panel,
-										}}
-									/>
-								) : null}
-								<div
-									style={{
-										position: "absolute",
-										inset: 0,
-										background: p.surface,
-										border: `1px solid ${p.line}`,
-										borderRadius: editorial
-											? family.radius.small
-											: family.radius.panel,
-										overflow: "hidden",
-									}}
-								>
-									<ProjectArt
-										project={project}
-										screenshot={content || kind === "intro"}
-									/>
-								</div>
-								{editorial ? (
-									<div
-										style={{
-											position: "absolute",
-											top: "100%",
-											paddingTop: 20,
-											fontFamily: hexly.mono,
-											fontSize: 16,
-											lineHeight: 1.6,
-											color: p.muted,
-										}}
-									>
-										FIG. 01 /{" "}
-										{project?.screenshot
-											? project.screenshot.alt
-											: (project?.name ?? "HEXLY IDENTITY")}
-									</div>
-								) : null}
-							</div>
-						))}
-				</div>
-			) : (
-				children
-			)}
-			{!essential ? (
-				<div
-					style={{
-						position: "absolute",
-						left: pad,
-						right: pad,
-						bottom: portrait ? 166 : 146,
-						height: 1,
-						background: p.line,
-					}}
+					{s.eyebrow}
+				</Eyebrow>
+				<Heading s={s} size={s.portrait ? 124 : screenshot ? 112 : 162} />
+				<Body
+					s={s}
+					size={34}
+					style={{ maxWidth: 1260, marginInline: "auto" }}
 				/>
+				<Action s={s} />
+			</FitText>
+			{screenshot ? (
+				<div
+					style={{
+						width: "min(100%, 1300px)",
+						minHeight: 220,
+						height: s.portrait ? 620 : 380,
+						flexShrink: 0,
+						...s.move(0.32),
+					}}
+				>
+					<ProjectArt s={s} style={{ padding: 0 }} />
+				</div>
 			) : null}
-			<div
-				style={{
-					position: "absolute",
-					left: pad,
-					right: pad,
-					bottom: portrait ? 100 : 86,
-					display: "flex",
-					justifyContent: "space-between",
-					gap: 32,
-					color: textColor,
-					...mono,
-					fontSize: portrait ? 20 : 17,
-				}}
-			>
-				<span>SMALL IDEAS. A LITTLE UNIVERSE.</span>
-				<span>HEXLY.AI</span>
-			</div>
-		</AbsoluteFill>
+		</ContentArea>
 	);
 }
 
-export const Intro = (props: SceneProps) => <Slate {...props} kind="intro" />;
+function Showcase({ s }: { s: SceneState }) {
+	const art = s.kind === "content";
+	return (
+		<ContentArea
+			s={s}
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				gap: s.portrait ? 48 : 40,
+			}}
+		>
+			<div
+				style={{
+					display: "grid",
+					gridTemplateColumns: s.portrait || !art ? "1fr" : "1.1fr 0.85fr",
+					gridTemplateRows: s.portrait && art ? "1fr 1fr" : "1fr",
+					height: s.portrait
+						? art
+							? 540
+							: 380
+						: art
+							? (s.body?.length ?? 0) > 260
+								? 340
+								: 190
+							: 300,
+					flexShrink: 0,
+					gap: 42,
+					alignItems: "end",
+				}}
+			>
+				<FitText s={s}>
+					<Eyebrow s={s} />
+					<Heading s={s} size={s.portrait ? 126 : art ? 116 : 154} />
+				</FitText>
+				{art ? (
+					<FitText s={s}>
+						<Body s={s} size={29} style={{ marginTop: 0 }} />
+					</FitText>
+				) : null}
+			</div>
+			<div
+				style={{
+					flex: 1,
+					minHeight: 0,
+					position: "relative",
+					background: s.p.surface,
+					border: `1px solid ${s.p.line}`,
+					borderRadius: 24,
+					overflow: "hidden",
+					display: "flex",
+					flexDirection: "column",
+					...s.move(0.22, 30),
+				}}
+			>
+				<div
+					style={{
+						display: "flex",
+						alignItems: "center",
+						gap: 14,
+						padding: "18px 25px",
+						borderBottom: `1px solid ${s.p.line}`,
+						...mono,
+						fontSize: 15,
+						color: s.muted,
+					}}
+				>
+					<RedDot size={9} />
+					<span>{s.project?.name ?? "HEXLY"}</span>
+					<span style={{ marginLeft: "auto" }}>
+						{String(s.index + 1).padStart(2, "0")} / {s.kind.toUpperCase()}
+					</span>
+				</div>
+				{art ? (
+					<div style={{ flex: 1, minHeight: 0, padding: s.portrait ? 22 : 16 }}>
+						<ProjectArt s={s} style={{ padding: 0 }} />
+					</div>
+				) : (
+					<div
+						style={{
+							flex: 1,
+							minHeight: 0,
+							padding: s.portrait ? 52 : 70,
+							display: "flex",
+							flexDirection:
+								s.kind === "chapter" && !s.portrait ? "row" : "column",
+							justifyContent: "center",
+							alignItems: s.kind === "chapter" ? "center" : undefined,
+							gap: s.kind === "chapter" ? 58 : 0,
+						}}
+					>
+						{s.kind === "chapter" ? (
+							<div
+								style={{
+									fontSize: 180,
+									letterSpacing: "-0.07em",
+									color: s.p.accent,
+									lineHeight: 1,
+									flexShrink: 0,
+								}}
+							>
+								01.
+							</div>
+						) : null}
+						<FitText s={s} style={{ flex: 1 }}>
+							<Body
+								s={s}
+								size={s.portrait ? 44 : 50}
+								style={{ maxWidth: 1450, marginTop: 0 }}
+							/>
+							<Action s={s} />
+						</FitText>
+					</div>
+				)}
+			</div>
+		</ContentArea>
+	);
+}
+
+function Columns({ s }: { s: SceneState }) {
+	return (
+		<ContentArea
+			s={s}
+			style={{
+				display: "grid",
+				gridTemplateColumns: s.portrait ? "1fr" : "0.85fr 1.25fr",
+				gridTemplateRows: s.portrait
+					? "minmax(0, 0.75fr) minmax(0, 1.25fr)"
+					: "1fr",
+				gap: s.portrait ? 46 : 86,
+			}}
+		>
+			<div
+				style={{
+					position: "relative",
+					padding: s.portrait ? 48 : 52,
+					background: s.p.soft,
+					borderRadius: 22,
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "space-between",
+					gap: 46,
+				}}
+			>
+				<FitText s={s} style={{ flex: 1 }}>
+					<Eyebrow s={s} />
+					<Heading s={s} size={s.portrait ? 114 : 122} />
+				</FitText>
+				<div
+					style={{
+						display: "flex",
+						alignItems: "end",
+						justifyContent: "space-between",
+						...s.move(0.2),
+					}}
+				>
+					<span
+						style={{
+							fontSize: s.portrait ? 106 : 186,
+							fontWeight: 400,
+							lineHeight: 0.9,
+							letterSpacing: "-0.08em",
+							color: s.p.accent,
+						}}
+					>
+						{String(s.index + 1).padStart(2, "0")}
+					</span>
+					<span style={{ ...mono, fontSize: 15, color: s.muted }}>
+						HEXLY / NOTES
+					</span>
+				</div>
+			</div>
+			<FitText s={s}>
+				{s.project?.screenshot && s.kind === "content" ? (
+					<div style={{ height: s.portrait ? 350 : 300, marginBottom: 28 }}>
+						<ProjectArt s={s} style={{ padding: 0 }} />
+					</div>
+				) : null}
+				<Body
+					s={s}
+					size={s.project?.screenshot ? 32 : s.portrait ? 38 : 42}
+					style={{ marginTop: 0, color: s.p.ink }}
+				/>
+				<Action s={s} />
+				{s.kind === "content" ? (
+					<div style={{ marginTop: 44 }}>
+						<Facts s={s} />
+						<Chips s={s} />
+						<p
+							style={{
+								...mono,
+								fontSize: 14,
+								letterSpacing: 0,
+								color: s.muted,
+								marginTop: 24,
+							}}
+						>
+							{s.project?.sourceNote}
+						</p>
+					</div>
+				) : (
+					<div
+						style={{
+							height: 1,
+							marginTop: 50,
+							background: s.p.line,
+							transform: `scaleX(${s.enter(0.38)})`,
+							transformOrigin: "left",
+						}}
+					/>
+				)}
+			</FitText>
+		</ContentArea>
+	);
+}
+
+function Bento({ s }: { s: SceneState }) {
+	const facts = s.project?.facts.slice(0, 3) ?? [];
+	return (
+		<ContentArea
+			s={s}
+			style={{
+				display: "grid",
+				gridTemplateColumns: s.portrait
+					? "1fr 1fr"
+					: "repeat(3, minmax(0, 1fr))",
+				gridTemplateRows: s.portrait
+					? "minmax(0, 1.2fr) minmax(0, 1fr) 154px 138px"
+					: "minmax(0, 1fr) 190px",
+				gap: 22,
+			}}
+		>
+			<div
+				style={{
+					gridColumn: "span 2",
+					border: `1px solid ${s.p.line}`,
+					background: s.p.surface,
+					borderRadius: 24,
+					padding: s.portrait ? 45 : 48,
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "center",
+					minHeight: 0,
+				}}
+			>
+				<FitText s={s}>
+					<Eyebrow
+						s={s}
+						style={{ display: "flex", alignItems: "center", gap: 16 }}
+					>
+						<RedDot size={10} />
+						{s.eyebrow}
+					</Eyebrow>
+					<Heading s={s} size={s.portrait ? 116 : 128} />
+					<Body s={s} size={31} />
+					<Chips s={s} />
+					<Action s={s} compact />
+				</FitText>
+			</div>
+			<div
+				style={{
+					gridColumn: s.portrait ? "span 2" : undefined,
+					borderRadius: 24,
+					border: `1px solid ${s.p.line}`,
+					background: s.p.soft,
+					overflow: "hidden",
+					...s.move(0.18, 26),
+				}}
+			>
+				<ProjectArt
+					s={s}
+					style={{ padding: s.project?.screenshot ? 20 : 66 }}
+				/>
+			</div>
+			{facts.length ? (
+				facts.map((fact, i) => (
+					<div
+						key={fact.label}
+						style={{
+							borderRadius: 24,
+							border: `1px solid ${s.p.line}`,
+							background: s.p.surface,
+							padding: s.portrait ? 26 : 32,
+							gridColumn: s.portrait && i === 2 ? "span 2" : undefined,
+							display: "flex",
+							flexDirection: "column",
+							justifyContent: "space-between",
+							gap: 18,
+							...s.move(0.27 + i * 0.09),
+						}}
+					>
+						<span style={{ ...mono, fontSize: 16, color: s.muted }}>
+							{fact.label.toUpperCase()}
+						</span>
+						<span
+							style={{
+								fontSize: fact.value.length > 16 ? 29 : 44,
+								lineHeight: 1.1,
+								letterSpacing: "-0.04em",
+								overflowWrap: "anywhere",
+							}}
+						>
+							{fact.value}
+						</span>
+					</div>
+				))
+			) : (
+				<div
+					style={{
+						gridColumn: "1 / -1",
+						...mono,
+						color: s.muted,
+						padding: 30,
+						borderTop: `1px solid ${s.p.line}`,
+					}}
+				>
+					{s.project?.repository.replace(/^https:\/\//, "") ?? "HEXLY.AI"}
+				</div>
+			)}
+		</ContentArea>
+	);
+}
+
+const contentLayouts = {
+	launch: Launch,
+	essential: Essential,
+	showcase: Showcase,
+	columns: Columns,
+	bento: Bento,
+};
+function Slate(props: SceneProps & { kind: SceneKind }) {
+	const s = useScene(props, props.kind);
+	const Layout = contentLayouts[s.template];
+	return (
+		<Canvas s={s}>
+			<Layout s={s} />
+			{props.children}
+		</Canvas>
+	);
+}
+export const Intro = Opening;
 export const Title = (props: SceneProps) => <Slate {...props} kind="title" />;
 export const Chapter = (props: SceneProps) => (
 	<Slate {...props} kind="chapter" />
@@ -665,16 +479,10 @@ export const Content = (props: SceneProps) => (
 	<Slate {...props} kind="content" />
 );
 export const CTA = (props: SceneProps) => <Slate {...props} kind="cta" />;
-export const LogoReveal = ({ title, template, motion }: SceneProps) => (
-	<HexlyReveal template={template} motion={motion} caption={title} />
+export const LogoReveal = ({ title, theme, motion }: SceneProps) => (
+	<HexlyReveal theme={theme} motion={motion} caption={title} />
 );
-export const Outro = ({ title, body, template, motion }: SceneProps) => (
-	<HexlyReveal
-		template={template}
-		motion={motion}
-		caption={[...new Set([title, body].filter(Boolean))].join(" · ")}
-	/>
-);
+export const Outro = Ending;
 export const sceneComponents = {
 	intro: Intro,
 	title: Title,

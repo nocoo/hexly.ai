@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-02`, finishing `01`
 - Refined subject: Chestnut horse portrait with an ivory blaze and one colorful bird
-- Site path: `/logos/steed`; [local gallery](https://index.dev.hexly.ai/logos/steed)
+- Site path: `/projects/steed#brand`; [local gallery](https://index.dev.hexly.ai/projects/steed#brand)
 - [Static review HTML](../../artwork/logo-family/steed/2026-09-07-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/steed/2026-09-07-02)
 - [Transparent foreground](../../public/logos/family/steed/2026-09-07-02/01/transparent.png); SHA-256: `a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44`

@@ -26,7 +26,7 @@ test("unpublished projects keep their overview without unavailable README links"
 	await page.route("**/data/projects.json", (route) =>
 		route.fulfill({ json: [pending] }),
 	);
-	await page.goto("/logos/frogie");
+	await page.goto("/projects/frogie");
 	for (const locale of ["en", "zh"] as const) {
 		if (locale === "zh")
 			await page.getByRole("button", { name: "Switch to Chinese" }).click();
@@ -49,7 +49,7 @@ for (const theme of ["light", "dark"] as const) {
 				if (!project?.overview) throw new Error(`Missing overview: ${id}`);
 				const overview = project.overview;
 				if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
-				await page.goto(`/logos/${id}`);
+				await page.goto(`/projects/${id}`);
 				await expect(page.locator("#identity-title")).toContainText(
 					project.title,
 				);
@@ -117,11 +117,12 @@ test("switches project overviews without moving artwork and keeps archived pages
 }) => {
 	const frogie = projects.find((project) => project.id === "frogie");
 	if (!frogie?.overview) throw new Error("Missing overview: frogie");
-	await page.goto("/logos/snaky");
+	await page.goto("/projects/snaky#brand");
 	await expect(page.locator(".project-overview")).toBeVisible();
+	await expect(page.locator("#brand")).toBeInViewport();
 	const artworkTop = await page
 		.locator(".logo-review")
-		.evaluate((element) => element.getBoundingClientRect().top + scrollY);
+		.evaluate((element) => element.getBoundingClientRect().top);
 	await page.locator(".picker-item").filter({ hasText: "Frogie" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Frogie");
 	await expect(page.locator(".project-overview .project-goal > p")).toHaveText(
@@ -130,12 +131,14 @@ test("switches project overviews without moving artwork and keeps archived pages
 	await expect(page.locator(".project-overview .tech-name")).toHaveText(
 		frogie.overview.techStack.map((technology) => technology.name),
 	);
-	expect(
-		await page
-			.locator(".logo-review")
-			.evaluate((element) => element.getBoundingClientRect().top + scrollY),
-	).toBeCloseTo(artworkTop, 0);
-	await page.goto("/logos/uptime-kuma-skill");
+	await expect
+		.poll(() =>
+			page
+				.locator(".logo-review")
+				.evaluate((element) => element.getBoundingClientRect().top),
+		)
+		.toBeCloseTo(artworkTop, 0);
+	await page.goto("/projects/uptime-kuma-skill");
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
 	);

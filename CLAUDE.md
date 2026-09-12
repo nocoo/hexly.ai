@@ -11,6 +11,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 |---|---|
 | Human docs | [README.md](README.md), [docs/README.md](docs/README.md) |
 | Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
+| Project media / routes | Optional `Project.media` in the same catalogue; [routes and media boundary](docs/17-project-media.md) |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
 | Status | `src/model/status.ts`, `worker/status.ts`, [storage and scheduling](docs/11-status-monitoring.md) |
@@ -25,15 +26,17 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - The catalogue is the monitor list: only non-archived independent HTTPS websites, at their origin plus `/api/live`. Exclude store/distribution links. D1 `hexly-status` uses `STATUS_DB`; Cron runs every five minutes. Each write deletes checks older than seven days, reads apply the same cutoff, and `(project_id, slot)` prevents duplicates.
 - Visitors only read observations. Missing/stale checks remain unknown; HTML fallbacks, redirects, and login pages are never healthy. Local mock data is labeled and must never seed production.
 - Status timestamps, hourly buckets, retention, and availability calculations remain UTC. Display times in the browser's current time zone by default; the top selector remembers an explicit choice, and Local follows the browser. Use `Intl` for date-specific offsets and daylight-saving transitions.
-- Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation in directory, gallery, and status views.
-- `/videos` adapts the existing catalogue once for all five templates and Video/Deck views. Keep the official Hexly mark/wordmark, licensed fonts, paper/ink/terracotta tokens, red-dot restraint and shared motion primitives. Deck and reduced motion show settled states; previews start paused.
+- Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation. Main navigation is Projects / Templates / Status (项目 / 模板 / 状态); retain Play / Journal / Résumé / Portfolio as the related-site links.
+- `/templates` adapts the existing catalogue once for five content layouts, five independent openings, five independent endings and Video/Deck views. Both film themes use the actual site light/dark palettes; canvas theme is independent of the surrounding site theme. Preserve composition choices in navigation and exported v2 configuration. Keep the official Hexly mark/wordmark, licensed fonts, paper/ink/terracotta tokens, red-dot restraint and shared motion primitives. Deck and reduced motion show settled states; previews start paused.
 - Shared template code belongs in `packages/video-kit`; project-specific scripts, voices, scenes, production logs and finished films belong to their consumer. Consumers pin a published Git SHA. The package is private, not an npm release. Preserve concurrent handoffs and stop on unknown writes.
-- Publish only reviewed hash-named WebP/MP4/PPTX/PDF from the public video manifest. Keep renderer caches, full frames and temporary inputs outside public assets. `video:check` verifies hashes, a 20 MB per-file / 40 MB collection budget and no undeclared files. Bump immutable asset paths with kit versions.
-- Keep gallery artwork in place when switching projects or languages. Mobile title sizing must fit the available width without changing the heading height between projects; verify the full gallery browser suite after changing its layout.
-- Use `/logos/<project>` for identity routes and copied links. All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs on gallery pages.
+- The video manifest is metadata only. Cards and previews use the same client composition; do not return obsolete sample movies, posters or deck downloads to `public/video-assets`. `video:check` verifies the 5/5/5 manifest, both themes, licensed asset hashes and the absence of rendered media. Keep frames, decks, movies and renderer caches outside public assets. Brand assets keep their separate immutable version when their bytes are unchanged.
+- `/` is the project catalogue, `/logos` its secondary image wall, and `/projects/<project>` the detail. Details contain introduction, optional media, overview, then the complete `#brand` archive. Old `/logos/<project>` links redirect to that brand anchor; `/videos` and its paths redirect to `/templates`, retaining query parameters. Use the shared `src/model/routes.ts`; do not redirect logo asset directories. Keep generated sitemap, HTML snapshots, JSON-LD, canonical/share records, `llms.txt`, and runtime metadata on canonical routes.
+- Brand browsing keeps the `#brand` section aligned when changing projects or languages. Hash navigation uses native smooth scrolling and respects reduced motion; do not override it with instant scrolling. Keep logo/wordmark descenders visible and long headings within the viewport. Verify the full gallery browser suite after changing its layout.
+- Finished recordings belong to optional `media.videos` on their project's existing JSON, never one copy per template. Render a poster before user-initiated native playback; include actual captions when available. Screenshot-only projects work without a video. Omit the section, badge and filter when there is no relevant media. New large recordings use a separately configured media origin; do not add them to Git or Static Assets. The `media.hexly.ai` integration is currently a local code boundary, not a provisioned R2 service.
+- All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs in the brand archive.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
 - Every project needs a stable slug, title, bilingual descriptions, emoji, verified links, logo provenance, and evidenced foreground/background colors. Follow the identity rules; do not infer websites or invent palettes.
-- Keep original logo bytes and SHA-256 provenance in `public/logos/originals/`. Emoji identities live separately in `public/logos/emoji/`. Derivatives must preserve artwork proportions and colors.
+- Keep existing high-resolution logos, screenshots, source artwork, paths and SHA-256 provenance in Git and Static Assets; do not migrate or rewrite that history for the new media structure. Original logos remain in `public/logos/originals/`, emoji identities in `public/logos/emoji/`. Derivatives must preserve artwork proportions and colors.
 - For an authorized project rename, update its catalogue ID and route while preserving the numbered profile. Locate historical artwork through `family.root`; preserve archive paths, export names, original bytes and checksums. Redirect former page URLs with Static Assets `_redirects`.
 - Synchronize catalogue changes with the GitHub profile using the workflow skill `zhengli-update-github-readme` (`../workflow/agents/skills/zhengli-update-github-readme/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
 - Preserve the current identity baseline. Animal-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
@@ -57,8 +60,7 @@ src/App.tsx        browser state and view orchestration
 src/components/    accessible React views
 src/styles/        design tokens and view styles
 public/logos/      original backups, emoji identities, WebP derivatives
-public/video-assets/ reviewed video sample and deck downloads
-packages/video-kit/ five templates, shared brand/motion, schema, player, renderer
+packages/video-kit/ 5/5/5 composable designs, shared brand/motion, v2 schema, player, renderer
 worker/            gateway, scheduled probes, D1 status queries
 migrations/        D1 schema
 scripts/           local mock D1, asset/profile generators, verification, gates, release
@@ -85,7 +87,8 @@ bun run assets:build && bun run docs:profiles && bun run assets:check
 bun run release -- --dry-run
 bun run video:dev
 bun run video:studio
-bun run video:render -- --project pew --template studio --mode all
+bun run video:render -- --project pew --template showcase --theme dark --opening stack --ending split --mode deck
+bun run video:review
 bun run video:check
 ```
 
