@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.6.0] - 2026-09-12
+
+### Maintenance
+
+- migrate workflows to base-ci ([51d9029](https://github.com/nocoo/hexly.ai/commit/51d90297a8767d46c5e7b4496d594ca98d7fb431))
+- pin base-ci to verified sha ([d37e101](https://github.com/nocoo/hexly.ai/commit/d37e101ef375ed54d05e1523f719028137d0d2f0))
+- pin base-ci to ad43150 ([0762e0b](https://github.com/nocoo/hexly.ai/commit/0762e0b881714c1aa5098f22c25aad2a33929f05))
+
+### Fixes
+
+- align shared release workflow inputs ([862332a](https://github.com/nocoo/hexly.ai/commit/862332a40d30f625e97dac6952519d94478d00d2))
+- monitor gecko neo and wooly health ([5b7f8cb](https://github.com/nocoo/hexly.ai/commit/5b7f8cb05002c47b0c3d4ebdb4dd0b291964ed3d))
+- await the verified release workflow ([ab1873a](https://github.com/nocoo/hexly.ai/commit/ab1873a3b996a670680371dfe32eb4f4e615dc3f))
+
+### Features
+
+- add five Hexly video templates and previews ([5775de8](https://github.com/nocoo/hexly.ai/commit/5775de8c304c1211ee25cb8fc177ed88e36ea0df))
+
 ## [0.5.7] - 2026-09-12
 
 ### Fixes
