@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/gecko](https://github.com/nocoo/gecko)
-- Website: No current website verified; navigation opens the repository.
-- Website evidence: Not applicable
+- Website: [https://gecko.hexly.ai](https://gecko.hexly.ai)
+- Website evidence: Owner-confirmed Railway deployment, 2026-09-12; public /api/live verified in docs/sources/status-targets-2026-09-12.json
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A little perspective on your screen time, with a Mac tracker and a synced dashboard.

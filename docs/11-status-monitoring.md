@@ -32,6 +32,31 @@ runtime dependency or separately deployed status application is needed.
 - Keep projects without a site visible in a separate coverage section, outside
   availability calculations. Archived projects are not displayed or probed.
 
+### Deployment inventory correction, 2026-09-12
+
+The owner confirmed three existing Hexly-family deployments. Their catalogue
+`website` fields now supply these targets through the same `healthEndpoint` →
+`statusTargets` → build manifest → scheduled Worker path:
+
+| Project ID | Public health endpoint | Deployment |
+| --- | --- | --- |
+| gecko | `https://gecko.hexly.ai/api/live` | Railway |
+| neo | `https://neo.hexly.ai/api/live` | Docker/jp2 |
+| wooly | `https://wooly.hexly.ai/api/live` | Docker/jp2 |
+
+Their existing animal-series membership and catalogue order are preserved. No
+separate target list, database registration, grouping, or probe behavior was
+added. Wooly must use `/api/live`, never `/login`; a catalogue-backed unit test
+asserts that exact URL. The HTTP suite checks that the built Worker feed uses
+the catalogue targets.
+
+[The bounded unauthenticated smoke record](sources/status-targets-2026-09-12.json)
+uses the production probe implementation: manual redirects, an eight-second
+timeout, a 64 KiB body limit, and at most two attempts. All three returned valid
+HTTP 200 health JSON. No Access policy change was needed or made. These requests
+did not write D1; production observations begin with the scheduled Cron after
+deployment. Future failures remain visible under the existing status semantics.
+
 The catalogue on 2026-09-11 contains 54 active projects, including 28 independent
 websites and three distribution-page links. At this size, seven days contains at
 most `28 × 12 × 24 × 7 = 56,448` scheduled check records, before retries. Retries

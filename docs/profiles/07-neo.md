@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/neo](https://github.com/nocoo/neo)
-- Website: No current website verified; navigation opens the repository.
-- Website evidence: Not applicable
+- Website: [https://neo.hexly.ai](https://neo.hexly.ai)
+- Website evidence: Owner-confirmed Docker/jp2 deployment, 2026-09-12; public /api/live verified in docs/sources/status-targets-2026-09-12.json
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Your two-factor codes, together. Encrypted storage, easy imports, and offline access.
