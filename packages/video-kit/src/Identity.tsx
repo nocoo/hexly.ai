@@ -5,10 +5,10 @@ import {
 	useDelayRender,
 	useVideoConfig,
 } from "remotion";
-import { family, hexly, type Palette, palettes, themes } from "./brand";
+import { family, hexly, type Palette, palettes } from "./brand";
 import { useHexlyFonts } from "./fonts";
 import { revealState } from "./motion";
-import type { Motion, TemplateId } from "./schema";
+import type { Motion, VideoTheme } from "./schema";
 
 export function BrandMark({
 	scale = 1,
@@ -47,7 +47,7 @@ export function wordmarkStyle(scale: number, palette: Palette): CSSProperties {
 		fontSize: hexly.wordmark.size * scale,
 		fontWeight: hexly.wordmark.weight,
 		letterSpacing: hexly.wordmark.letterSpacing * scale,
-		lineHeight: 1,
+		lineHeight: hexly.wordmark.lineHeight,
 		whiteSpace: "nowrap",
 		color: palette.ink,
 	};
@@ -115,18 +115,24 @@ export function RedDot({
 
 export function HexlyReveal({
 	caption,
-	template = "launch",
+	theme = "light",
 	motion = "full",
 	scale: requestedScale,
+	background,
+	centerX,
+	centerY,
 }: {
 	caption?: string;
-	template?: TemplateId;
+	theme?: VideoTheme;
 	motion?: Motion;
 	scale?: number;
+	background?: string;
+	centerX?: number;
+	centerY?: number;
 }) {
 	const frame = useCurrentFrame();
 	const { fps, width, height } = useVideoConfig();
-	const palette = themes[template].palette;
+	const palette = palettes[theme];
 	const scale = requestedScale ?? (width < height ? 4.2 : 5.2);
 	const ready = useHexlyFonts();
 	const ref = useRef<HTMLSpanElement>(null);
@@ -143,13 +149,19 @@ export function HexlyReveal({
 	const state = revealState(frame, fps, motion === "reduced");
 	const markWidth = hexly.mark.width * scale;
 	const gap = hexly.wordmark.gap * scale;
+	const middle =
+		height / 2 + ((centerY ?? height / 2) - height / 2) * state.expand;
 	const left =
-		width / 2 - markWidth / 2 - ((textWidth + gap) / 2) * state.expand;
+		width / 2 -
+		markWidth / 2 -
+		((textWidth + gap) / 2) * state.expand +
+		((centerX ?? width / 2) - width / 2) * state.expand;
 	return (
 		<AbsoluteFill
 			data-scene="logo"
+			data-video-theme={theme}
 			style={{
-				background: palette.page,
+				background: background ?? palette.page,
 				fontFamily: hexly.sans,
 				opacity: ready && textWidth ? 1 : 0,
 			}}
@@ -159,7 +171,7 @@ export function HexlyReveal({
 				style={{
 					position: "absolute",
 					left,
-					top: height / 2 - (hexly.mark.height * scale) / 2,
+					top: middle - (hexly.mark.height * scale) / 2,
 					opacity: state.mark,
 					transform: `translateY(${(1 - state.mark) * 14}px)`,
 				}}
@@ -171,8 +183,9 @@ export function HexlyReveal({
 				style={{
 					position: "absolute",
 					left: left + markWidth + gap,
-					top: height / 2 - (hexly.wordmark.size * scale) / 2,
-					overflow: "hidden",
+					top: middle - (hexly.wordmark.size * scale) / 2,
+					// Reveal horizontally; Space Grotesk's y extends below its line box.
+					clipPath: "inset(-25% 0)",
 					width: state.expand * (textWidth + 2),
 					opacity: state.expand,
 				}}
@@ -189,11 +202,12 @@ export function HexlyReveal({
 					data-hexly-caption
 					style={{
 						position: "absolute",
-						top: height / 2 + (hexly.mark.height * scale) / 2 + 62,
+						top: middle + (hexly.mark.height * scale) / 2 + 62,
 						left: width * 0.1,
 						width: width * 0.8,
 						textAlign: "center",
 						fontSize: width < height ? 30 : 28,
+						overflowWrap: "anywhere",
 						lineHeight: 1.5,
 						color: palette.muted,
 						opacity: state.caption,

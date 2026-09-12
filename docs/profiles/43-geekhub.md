@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: A folded newspaper in a forest-green reading folio
-- Site path: `/logos/geekhub`; [local gallery](https://index.dev.hexly.ai/logos/geekhub)
+- Site path: `/projects/geekhub#brand`; [local gallery](https://index.dev.hexly.ai/projects/geekhub#brand)
 - [Static review HTML](../../artwork/logo-family/geekhub/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/geekhub/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/geekhub/2026-09-07-01/01/transparent.png); SHA-256: `7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545`

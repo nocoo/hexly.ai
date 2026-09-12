@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-03`, finishing `01`
 - Refined subject: Red-capped trainer turning with a Poké Ball
-- Site path: `/logos/pokepocket`; [local gallery](https://index.dev.hexly.ai/logos/pokepocket)
+- Site path: `/projects/pokepocket#brand`; [local gallery](https://index.dev.hexly.ai/projects/pokepocket#brand)
 - [Static review HTML](../../artwork/logo-family/pokepocket/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pokepocket/2026-09-07-03)
 - [Transparent foreground](../../public/logos/family/pokepocket/2026-09-07-03/01/transparent.png); SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`

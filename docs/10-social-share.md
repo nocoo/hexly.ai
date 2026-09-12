@@ -27,7 +27,7 @@ curl -s https://hexly.ai/api/share/pew.json
     "en": "A contribution graph for the AI-native era. See your coding tokens tell a story.",
     "zh": "AI 时代的贡献图，把不同编程工具的 Token 使用记录变成可见的轨迹。"
   },
-  "canonical": "https://hexly.ai/logos/pew",
+  "canonical": "https://hexly.ai/projects/pew",
   "image": {
     "url": "https://hexly.ai/og/pew.jpg",
     "type": "image/jpeg",
@@ -52,10 +52,17 @@ Local preview: `https://index.dev.hexly.ai/api/share/pew.json`.
 | `image.url`, `image.type`, `image.width`, `image.height`, `image.alt` | Always. This is the typeset share card. |
 | `description.en` / `description.zh` | Use when the product has no stronger page-specific summary. |
 | `name` | Product title. Prefer this over `title` on the product origin. |
-| `title` | hexly.ai gallery title (`Name — hexly.ai`). Use on hexly pages, not as the product homepage title. |
-| `canonical` | hexly.ai gallery URL. Do **not** copy this onto the product origin. |
+| `title` | hexly.ai project title (`Name — hexly.ai`). Use on hexly pages, not as the product homepage title. |
+| `canonical` | hexly.ai project-detail URL. Do **not** copy this onto the product origin. |
 
-Keep the product's own `og:url`, canonical link, and `og:title` for that origin. Sharing `https://pew.md/` should unfurl Pew's URL with hexly's image, not rewrite the link to `/logos/pew`.
+Keep the product's own `og:url`, canonical link, and `og:title` for that origin. Sharing `https://pew.md/` should unfurl Pew's URL with hexly's image, not rewrite the link to `/projects/pew`.
+
+The local route update changes project canonicals from `/logos/<id>` to
+`/projects/<id>`. Old pages redirect to the detail's brand anchor. Existing
+`/api/share` and `/og` URLs and image bytes remain unchanged. The build updates
+sitemap, crawler snapshots and JSON-LD from the same source; `/logos` remains a
+secondary collection page and `/templates` describes reusable designs. These
+route changes are not yet published.
 
 Do not use `/logos/display/*-1024.webp` or family `icon-1024.webp` as `og:image`. Those are square identity marks, not 1200 × 630 cards.
 

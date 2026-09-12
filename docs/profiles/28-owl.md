@@ -68,7 +68,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Compact tawny owl holding one multicolored feather
-- Site path: `/logos/owl`; [local gallery](https://index.dev.hexly.ai/logos/owl)
+- Site path: `/projects/owl#brand`; [local gallery](https://index.dev.hexly.ai/projects/owl#brand)
 - [Static review HTML](../../artwork/logo-family/owl/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/owl/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/owl/2026-09-07-01/01/transparent.png); SHA-256: `c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8`

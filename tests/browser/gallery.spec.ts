@@ -12,13 +12,13 @@ const afterFrogie = ordered[frogieIndex + 1];
 test("shows evidenced website colors separately from a tool's artwork palette", async ({
 	page,
 }) => {
-	await page.goto("/logos/coffee");
+	await page.goto("/projects/coffee");
 	await expect(page.locator(".theme-palette")).toContainText("#c7d9a9");
 	await expect(page.locator(".theme-palette")).toContainText("#f8f6f0");
 	await expect(
 		page.getByRole("button", { name: "Copy color #c68664", exact: true }),
 	).toBeVisible();
-	await page.goto("/logos/hermes-on-herdr");
+	await page.goto("/projects/hermes-on-herdr");
 	await expect(page.locator("#identity-title")).toContainText(
 		"hermes on herdr",
 	);
@@ -40,7 +40,7 @@ for (const id of projects
 		const retained = family.method === "retained-original";
 		const adapted = family.method === "reference-adaptation";
 		const supplied = retained || adapted;
-		await page.goto(`/logos/${id}`);
+		await page.goto(`/projects/${id}`);
 		await expect(page.locator("#identity-title")).toContainText(project.title, {
 			timeout: 15_000,
 		});
@@ -207,9 +207,11 @@ test("updates the identity path with pagination and browser history", async ({
 	page,
 }) => {
 	if (!afterFrogie) throw new Error("Frogie has no following identity.");
-	await page.goto("/logos/frogie");
-	await page.getByRole("button", { name: "Next identity" }).click();
-	await expect(page).toHaveURL(new RegExp(`/logos/${afterFrogie.id}$`));
+	await page.goto("/projects/frogie");
+	await page.getByRole("button", { name: "Next project" }).click();
+	await expect(page).toHaveURL(
+		new RegExp(`/projects/${afterFrogie.id}#brand$`),
+	);
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
 	);
@@ -218,8 +220,8 @@ test("updates the identity path with pagination and browser history", async ({
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
 	);
-	await page.getByRole("button", { name: "Previous identity" }).click();
-	await expect(page).toHaveURL(/\/logos\/frogie$/);
+	await page.getByRole("button", { name: "Previous project" }).click();
+	await expect(page).toHaveURL(/\/projects\/frogie#brand$/);
 	await page.goBack();
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
@@ -231,7 +233,7 @@ test("copies current palette colors and a reusable gallery link", async ({
 	context,
 }) => {
 	await context.grantPermissions(["clipboard-read", "clipboard-write"]);
-	await page.goto("/logos/pew");
+	await page.goto("/projects/pew");
 	await page
 		.getByRole("button", { name: "Copy color #bfb2cf", exact: true })
 		.click();
@@ -239,9 +241,9 @@ test("copies current palette colors and a reusable gallery link", async ({
 	expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
 		"#bfb2cf",
 	);
-	await page.getByRole("button", { name: "Copy gallery link" }).click();
+	await page.getByRole("button", { name: "Copy project link" }).click();
 	const link = await page.evaluate(() => navigator.clipboard.readText());
-	expect(new URL(link).pathname).toBe("/logos/pew");
+	expect(new URL(link).pathname).toBe("/projects/pew");
 	expect(new URL(link).search).toBe("");
 	await page.goto(link);
 	await expect(page.locator("#identity-title")).toContainText("Pew");
@@ -250,34 +252,34 @@ test("copies current palette colors and a reusable gallery link", async ({
 test("browses filtered identities with arrow keys, wraps, and preserves history", async ({
 	page,
 }) => {
-	await page.goto("/logos/pew?q=pew&sort=az");
+	await page.goto("/projects/pew?q=pew&sort=az");
 	await expect(page.locator(".picker-item")).toHaveCount(2);
 	await expect(
-		page.getByRole("button", { name: "Previous identity" }),
+		page.getByRole("button", { name: "Previous project" }),
 	).toHaveAttribute("aria-keyshortcuts", "ArrowLeft");
 	await expect(
-		page.getByRole("button", { name: "Next identity" }),
+		page.getByRole("button", { name: "Next project" }),
 	).toHaveAttribute("aria-keyshortcuts", "ArrowRight");
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(/\/logos\/pew-game\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#brand$/);
 	await expect(page.locator("#identity-title")).toContainText("Pew Game");
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(/\/logos\/pew\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az#brand$/);
 	await page.keyboard.press("ArrowLeft");
-	await expect(page).toHaveURL(/\/logos\/pew-game\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#brand$/);
 	await page.goBack();
-	await expect(page).toHaveURL(/\/logos\/pew\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az#brand$/);
 	await page.goForward();
-	await expect(page).toHaveURL(/\/logos\/pew-game\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#brand$/);
 	await page
 		.getByRole("combobox", { name: "Project categories" })
 		.selectOption("games");
 	await expect(page.locator(".picker-item")).toHaveCount(1);
 	await expect(
-		page.getByRole("button", { name: "Next identity" }),
+		page.getByRole("button", { name: "Next project" }),
 	).toBeDisabled();
 	await expect(
-		page.getByRole("button", { name: "Previous identity" }),
+		page.getByRole("button", { name: "Previous project" }),
 	).toBeDisabled();
 	await page.locator(".identity-github").focus();
 	const singleUrl = page.url();
@@ -295,7 +297,7 @@ test("browses filtered identities with arrow keys, wraps, and preserves history"
 test("keeps arrow keys in editable controls and ignores modified or handled keys", async ({
 	page,
 }) => {
-	await page.goto("/logos/pew?q=pew");
+	await page.goto("/projects/pew?q=pew");
 	const url = page.url();
 	const search = page.getByRole("searchbox", { name: "Search projects" });
 	await search.focus();
@@ -369,34 +371,44 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 	await expect(page).toHaveURL(/\/$/);
 });
 
-test("keeps the artwork in place when descriptions wrap or projects change", async ({
+test("keeps the brand section aligned while switching projects and languages", async ({
 	page,
 	isMobile,
 }) => {
 	if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
-	await page.goto("/logos/frogie");
+	await page.goto("/projects/frogie#brand");
 	for (const locale of ["en", "zh"]) {
 		if (locale === "zh")
 			await page.getByRole("button", { name: "Switch to Chinese" }).click();
-		// Switching locale loads the CJK font before layout can be measured.
 		await page.evaluate(() => document.fonts.ready);
-		await page.locator(".identity-github").focus();
-		await page.evaluate(() =>
-			window.scrollTo({ top: 300, behavior: "instant" }),
-		);
-		const start = await page.locator(".logo-review").boundingBox();
-		if (!start) throw new Error("Missing artwork review");
-		await page.locator(".identity-description").evaluate((element) => {
-			element.textContent = `${element.textContent} `.repeat(10);
-		});
-		const wrapped = await page.locator(".logo-review").boundingBox();
-		expect(wrapped?.y).toBeCloseTo(start.y, 0);
+		await page
+			.locator("#brand")
+			.evaluate((element) => element.scrollIntoView());
+		await page.locator('.picker-item[aria-pressed="true"]').focus();
+		const start = await page
+			.locator("#brand")
+			.evaluate((element) => element.getBoundingClientRect().top);
+		expect(start).toBeGreaterThan(0);
 		for (let index = 0; index < 7; index += 1) {
 			await page.keyboard.press("ArrowRight");
-			const current = await page.locator(".logo-review").boundingBox();
-			expect(current?.y).toBeCloseTo(start.y, 0);
-			expect(await page.evaluate(() => scrollY)).toBeGreaterThan(280);
-			expect(await page.evaluate(() => scrollY)).toBeLessThan(320);
+			await expect(page).toHaveURL(/#brand$/);
+			// Native scrolling rounds positions; section edges retain fractional pixels.
+			await expect
+				.poll(() =>
+					page
+						.locator("#brand")
+						.evaluate(
+							(element, top) =>
+								Math.abs(element.getBoundingClientRect().top - top),
+							start,
+						),
+				)
+				.toBeLessThanOrEqual(1);
+			expect(
+				await page.evaluate(
+					() => document.documentElement.scrollWidth <= innerWidth,
+				),
+			).toBe(true);
 		}
 	}
 });
@@ -405,11 +417,14 @@ test("searches the gallery, labels emoji identities, and recovers from empty or 
 	page,
 }) => {
 	if (!firstVisible) throw new Error("The catalogue has no visible projects.");
-	await page.goto("/logos/unknown-project");
-	await expect(page.locator("#identity-title")).toContainText(
-		firstVisible.title,
+	await page.goto("/projects/unknown-project");
+	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+		"Project not found.",
 	);
-	await expect(page).toHaveURL(new RegExp(`/logos/${firstVisible.id}$`));
+	await expect(page).toHaveURL(/\/projects\/unknown-project$/);
+	await page.getByRole("button", { name: "Reset filters" }).click();
+	await expect(page.locator(".project-card")).toHaveCount(ordered.length);
+	await page.goto(`/projects/${firstVisible.id}#brand`);
 	const search = page.getByRole("searchbox", { name: "Search projects" });
 	await page
 		.getByRole("combobox", { name: "Project categories" })
@@ -439,5 +454,5 @@ test("searches the gallery, labels emoji identities, and recovers from empty or 
 	);
 	await page.locator(".picker-item").filter({ hasText: "Backy" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Backy");
-	await expect(page).toHaveURL(/\/logos\/backy$/);
+	await expect(page).toHaveURL(/\/projects\/backy#brand$/);
 });

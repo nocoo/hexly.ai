@@ -87,11 +87,11 @@ test("renders active projects with local logos and working destinations", async 
 	});
 	await expect(page.locator('[data-project="pew"] .card-main')).toHaveAttribute(
 		"href",
-		"/logos/pew",
+		"/projects/pew",
 	);
 	await expect(
 		page.locator('[data-project="frogie"] .card-main'),
-	).toHaveAttribute("href", "/logos/frogie");
+	).toHaveAttribute("href", "/projects/frogie");
 	expect(
 		await page.evaluate(
 			() => document.documentElement.scrollWidth <= innerWidth,
@@ -167,9 +167,9 @@ test("restores directory filters with browser back and reloads a shared identity
 	await page.getByRole("searchbox", { name: "Search projects" }).fill("pew");
 	await page
 		.locator('[data-project="pew"]')
-		.getByRole("link", { name: "View logo: Pew", exact: true })
+		.getByRole("link", { name: "View project: Pew", exact: true })
 		.click({ position: { x: 8, y: 8 } });
-	await expect(page).toHaveURL(/\/logos\/pew$/);
+	await expect(page).toHaveURL(/\/projects\/pew$/);
 	await expect(page.locator("#identity-title")).toContainText("Pew");
 	await page.reload();
 	await expect(page.locator("#identity-title")).toContainText("Pew");
@@ -179,10 +179,17 @@ test("restores directory filters with browser back and reloads a shared identity
 	).toHaveValue("pew");
 	await expect(page.locator(".project-card")).toHaveCount(2);
 	await page
-		.getByRole("navigation", { name: "Main navigation" })
-		.getByRole("button", { name: "Logo gallery" })
+		.getByRole("navigation", { name: "Browse projects" })
+		.getByRole("link", { name: "Logo wall" })
 		.click();
-	await expect(page.locator(".picker-item")).toHaveCount(active.length);
+	await expect(page).toHaveURL(/\/logos\?q=pew#collection$/);
+	await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
+	await expect(page.locator(".logo-wall .project-description")).toHaveCount(0);
+	await page.locator('[data-project="pew"] .card-main').click();
+	await expect(page).toHaveURL(/\/projects\/pew#brand$/);
+	await expect(page.locator("#brand")).toBeInViewport();
+	await page.goBack();
+	await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
 	await page
 		.locator(".site-header")
 		.getByRole("link", { name: "hexly.ai", exact: true })
@@ -212,13 +219,15 @@ test("keeps archived projects accessible through their category and direct logo 
 	await expect(page.locator(".project-card")).toHaveCount(archived.length);
 	await page
 		.locator('[data-project="uptime-kuma-skill"]')
-		.getByRole("link", { name: "View logo: Uptime Kuma Skill" })
+		.getByRole("link", { name: "View project: Uptime Kuma Skill" })
 		.click();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
 	);
-	await expect(page).toHaveURL(/\/logos\/uptime-kuma-skill\?category=archive$/);
-	await page.goto("/logos/uptime-kuma-skill");
+	await expect(page).toHaveURL(
+		/\/projects\/uptime-kuma-skill\?category=archive$/,
+	);
+	await page.goto("/projects/uptime-kuma-skill");
 	await page.reload();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
@@ -264,8 +273,8 @@ test("keeps repository clicks separate and supports native card navigation", asy
 	await page.bringToFront();
 	if (isMobile) {
 		// Touch browsers have no native middle-click gesture.
-		await card.getByRole("link", { name: "View logo: Pew" }).tap();
-		await expect(page).toHaveURL(/\/logos\/pew\/?$/);
+		await card.getByRole("link", { name: "View project: Pew" }).tap();
+		await expect(page).toHaveURL(/\/projects\/pew\/?$/);
 		await expect(page.locator("#identity-title")).toContainText("Pew");
 		await page.goBack();
 		await expect(page).toHaveURL(/\/$/);
@@ -274,11 +283,11 @@ test("keeps repository clicks separate and supports native card navigation", asy
 	const detailPage = context.waitForEvent("page");
 	// Open the native tab in front so Chromium initializes it before the page event.
 	await card
-		.getByRole("link", { name: "View logo: Pew" })
+		.getByRole("link", { name: "View project: Pew" })
 		.click({ button: "middle", modifiers: ["Shift"] });
 	const detail = await detailPage;
 	await detail.bringToFront();
-	await detail.waitForURL(/\/logos\/pew\/?$/, {
+	await detail.waitForURL(/\/projects\/pew\/?$/, {
 		waitUntil: "domcontentloaded",
 		timeout: 15_000,
 	});

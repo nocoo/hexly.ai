@@ -72,7 +72,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Mineral-gray elephant portrait with a curled trunk and one paper airplane
-- Site path: `/logos/ellie`; [local gallery](https://index.dev.hexly.ai/logos/ellie)
+- Site path: `/projects/ellie#brand`; [local gallery](https://index.dev.hexly.ai/projects/ellie#brand)
 - [Static review HTML](../../artwork/logo-family/ellie/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ellie/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/ellie/2026-09-07-01/01/transparent.png); SHA-256: `85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d`

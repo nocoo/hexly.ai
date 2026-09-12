@@ -1,6 +1,6 @@
 export type Locale = "en" | "zh";
 export type Theme = "light" | "dark";
-export type View = "directory" | "logos" | "status" | "videos";
+export type View = "directory" | "logos" | "project" | "templates" | "status";
 export type Category =
 	| "all"
 	| "ai"
@@ -23,6 +23,27 @@ export interface ProjectOverview {
 		snapshot?: { path: string; sha256: string };
 		sources: string[];
 	};
+}
+
+export interface ProjectVideo {
+	id: string;
+	title: Record<Locale, string>;
+	src: string;
+	poster: string;
+	durationSeconds: number;
+	language: string;
+	version: string;
+	sha256: string;
+	source: string;
+	captions?: { src: string; language: string; label: string }[];
+}
+
+export interface ProjectScreenshot {
+	id: string;
+	src: string;
+	alt: Record<Locale, string>;
+	width: number;
+	height: number;
 }
 
 export interface PaletteColor {
@@ -73,6 +94,10 @@ export interface Project {
 	emoji: string;
 	description: Record<Locale, string>;
 	overview?: ProjectOverview;
+	media?: {
+		videos?: ProjectVideo[];
+		screenshots?: ProjectScreenshot[];
+	};
 	category: Exclude<Category, "all">;
 	website: string | null;
 	websiteSource: string | null;

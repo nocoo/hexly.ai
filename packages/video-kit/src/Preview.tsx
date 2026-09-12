@@ -6,14 +6,14 @@ import {
 	durationFor,
 	type FilmConfig,
 	parseFilm,
+	type SceneKind,
 	timelineFor,
 } from "./schema";
 import "./site.css";
 
 const labels = {
 	en: {
-		clip: "Rendered sample",
-		live: "Interactive preview",
+		live: "Live canvas",
 		format: "Frame format",
 		landscape: "Landscape · 16:9",
 		portrait: "Portrait · 9:16",
@@ -22,19 +22,19 @@ const labels = {
 		play: "Play preview",
 		pause: "Pause preview",
 		seek: "Seek preview",
-		scenes: "Explore the components",
+		scenes: "The sequence",
 		transcript: "Scene text",
 		loading: "Loading the preview…",
 		error: "The preview could not load. Reload the page to try again.",
-		silent: "Silent sample · on-screen text below",
+		silent: "Browser preview · no rendered video",
 		fullscreen: "Full screen",
-		intro: "Intro",
+		intro: "Opening",
 		title: "Title",
 		chapter: "Chapter",
 		content: "Content",
 		cta: "Call to action",
 		logo: "Logo reveal",
-		outro: "Outro",
+		outro: "Ending",
 		video: "Video Preview",
 		deck: "Deck / PPT Preview",
 		previous: "Previous slide",
@@ -42,8 +42,7 @@ const labels = {
 		slide: "Slide",
 	},
 	zh: {
-		clip: "渲染短片",
-		live: "交互预览",
+		live: "实时画面",
 		format: "画面比例",
 		landscape: "横屏 · 16:9",
 		portrait: "竖屏 · 9:16",
@@ -52,19 +51,19 @@ const labels = {
 		play: "播放预览",
 		pause: "暂停预览",
 		seek: "预览进度",
-		scenes: "逐一探索组件",
+		scenes: "画面顺序",
 		transcript: "场景文字",
 		loading: "正在加载预览…",
 		error: "预览暂时无法加载，请刷新页面重试。",
-		silent: "无声示例 · 画面文字见下方",
+		silent: "浏览器预览 · 无预渲染视频",
 		fullscreen: "全屏",
-		intro: "前贴片",
+		intro: "封面",
 		title: "标题",
 		chapter: "章节",
-		content: "内容",
+		content: "正文",
 		cta: "行动引导",
 		logo: "标志揭幕",
-		outro: "后贴片",
+		outro: "片尾",
 		video: "视频预览",
 		deck: "Deck / PPT 预览",
 		previous: "上一页",
@@ -85,42 +84,57 @@ function useReducedMotion() {
 	}, []);
 	return reduced;
 }
-
 const timecode = (frame: number, fps: number) => {
 	const seconds = Math.floor(frame / fps);
 	return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 };
 
-/** Lazy-load this export in a website. Rendering tools are never imported here. */
+/** Static composition, not an old movie poster. Uses the exact same content and layout as the player. */
+export function FilmStill({
+	config,
+	scene = "content",
+	frame,
+}: {
+	config: FilmConfig;
+	scene?: SceneKind;
+	frame?: number;
+}) {
+	const size = dimensions(config.format);
+	const chapter = timelineFor(config).find((item) => item.kind === scene);
+	return (
+		<Thumbnail
+			component={Film}
+			inputProps={{ ...config, motion: "reduced" }}
+			frameToDisplay={frame ?? (chapter?.from ?? 0) + 1}
+			durationInFrames={durationFor(config)}
+			fps={config.fps}
+			compositionWidth={size.width}
+			compositionHeight={size.height}
+			style={{ width: "100%", aspectRatio: `${size.width} / ${size.height}` }}
+		/>
+	);
+}
+
+/** Preview is entirely client-side. Export tools and pre-rendered movies are never imported here. */
 export function VideoPreview({
 	config,
 	locale = "en",
-	clip,
-	poster,
 	view = "video",
 	onView,
 	onConfigChange,
+	focusScene = "intro",
 }: {
 	config: FilmConfig;
 	locale?: "en" | "zh";
-	clip?: string;
-	poster?: string;
 	view?: "video" | "deck";
 	onView?: (view: "video" | "deck") => void;
 	onConfigChange?: (config: FilmConfig) => void;
+	focusScene?: SceneKind;
 }) {
 	const t = labels[locale];
 	const systemReduced = useReducedMotion();
 	const [reduce, setReduce] = useState(config.motion === "reduced");
 	const [format, setFormat] = useState(config.format);
-	const [mode, setMode] = useState<"clip" | "live">(
-		clip && !systemReduced ? "clip" : "live",
-	);
-	const [frame, setFrame] = useState(45);
-	const [playing, setPlaying] = useState(false);
-	const player = useRef<PlayerRef>(null);
-	const video = useRef<HTMLVideoElement>(null);
-	const stage = useRef<HTMLDivElement>(null);
 	const reduced = reduce || systemReduced;
 	const film = useMemo(
 		() =>
@@ -129,6 +143,15 @@ export function VideoPreview({
 	);
 	const chapters = useMemo(() => timelineFor(film), [film]);
 	const duration = durationFor(film);
+	const focused =
+		chapters.find((chapter) => chapter.kind === focusScene) ?? chapters[0];
+	const focusFrame =
+		(focused?.from ?? 0) +
+		Math.min(100, (focused?.durationInFrames ?? 120) - 1);
+	const [frame, setFrame] = useState(focusFrame);
+	const [playing, setPlaying] = useState(false);
+	const player = useRef<PlayerRef>(null);
+	const stage = useRef<HTMLDivElement>(null);
 	const size = dimensions(format);
 	const active = chapters.findLast((chapter) => chapter.from <= frame)?.id;
 	const slide = Math.max(
@@ -136,13 +159,11 @@ export function VideoPreview({
 		chapters.findIndex((chapter) => chapter.id === active),
 	);
 	const deck = view === "deck";
-	const live = mode === "live" || reduced || !clip;
 	useEffect(() => {
 		onConfigChange?.(film);
 	}, [film, onConfigChange]);
-
 	useEffect(() => {
-		if (!live || deck) return;
+		if (deck) return;
 		const p = player.current;
 		if (!p) return;
 		const update = ({ detail }: { detail: { frame: number } }) =>
@@ -159,95 +180,73 @@ export function VideoPreview({
 			p.removeEventListener("pause", pause);
 			p.removeEventListener("ended", pause);
 		};
-	}, [live, deck]);
-	// biome-ignore lint/correctness/useExhaustiveDependencies: Reset playback when display settings change, including external history navigation.
+	}, [deck]);
+	// biome-ignore lint/correctness/useExhaustiveDependencies: A composition selection seeks its own representative scene; theme/view changes preserve the current scene.
 	useEffect(() => {
 		player.current?.pause();
-		video.current?.pause();
+		player.current?.seekTo(focusFrame);
+		setFrame(focusFrame);
 		setPlaying(false);
-	}, [reduced, format, deck]);
-
+	}, [focusFrame, config.template, config.opening, config.ending]);
+	// biome-ignore lint/correctness/useExhaustiveDependencies: Pause on presentation settings changes while preserving the user's frame.
+	useEffect(() => {
+		player.current?.pause();
+		setPlaying(false);
+	}, [reduced, format, deck, config.theme]);
 	const pause = () => {
 		player.current?.pause();
-		video.current?.pause();
 		setPlaying(false);
-	};
-	const switchMode = (next: "clip" | "live") => {
-		pause();
-		setMode(next);
 	};
 	const seek = (next: number) => {
 		pause();
 		setFrame(next);
-		if (!live) setMode("live");
-		else player.current?.seekTo(next);
+		player.current?.seekTo(next);
 	};
-
+	const seekSlide = (index: number) => {
+		const chapter = chapters[index];
+		if (chapter)
+			seek(chapter.from + Math.min(100, chapter.durationInFrames - 1));
+	};
 	return (
 		<div className="vk-preview" data-motion={reduced ? "reduced" : "full"}>
-			{onView ? (
-				<fieldset
-					className="vk-view-tabs"
-					aria-label={locale === "en" ? "Presentation view" : "演示视图"}
-				>
-					<button
-						type="button"
-						aria-pressed={!deck}
-						onClick={() => {
-							pause();
-							onView("video");
-						}}
-					>
-						{t.video}
-					</button>
-					<button
-						type="button"
-						aria-pressed={deck}
-						onClick={() => {
-							pause();
-							onView("deck");
-						}}
-					>
-						{t.deck}
-					</button>
-				</fieldset>
-			) : null}
 			<div className="vk-toolbar">
-				{deck ? (
-					<span className="vk-deck-label">
-						{t.slide} {slide + 1} / {chapters.length}
-					</span>
-				) : (
+				{onView ? (
 					<fieldset
-						className="vk-mode"
-						aria-label={locale === "en" ? "Preview mode" : "预览模式"}
+						className="vk-view-tabs"
+						aria-label={locale === "en" ? "Presentation view" : "演示视图"}
 					>
-						{clip && !reduced ? (
-							<button
-								type="button"
-								aria-pressed={!live}
-								onClick={() => switchMode("clip")}
-							>
-								{t.clip}
-							</button>
-						) : null}
 						<button
 							type="button"
-							aria-pressed={live}
-							onClick={() => switchMode("live")}
+							aria-pressed={!deck}
+							onClick={() => {
+								pause();
+								onView("video");
+							}}
 						>
-							{t.live}
+							{t.video}
+						</button>
+						<button
+							type="button"
+							aria-pressed={deck}
+							onClick={() => {
+								pause();
+								onView("deck");
+							}}
+						>
+							{t.deck}
 						</button>
 					</fieldset>
+				) : (
+					<span className="vk-deck-label">{t.live}</span>
 				)}
 				<label className="vk-format">
 					<span className="vk-sr-only">{t.format}</span>
 					<select
-						value={live || deck ? format : "landscape"}
+						aria-label={t.format}
+						value={format}
 						onChange={(event) => {
 							pause();
 							setFormat(event.target.value as FilmConfig["format"]);
-							setMode("live");
 						}}
 					>
 						<option value="landscape">{t.landscape}</option>
@@ -256,24 +255,12 @@ export function VideoPreview({
 				</label>
 			</div>
 			<div
-				className={`vk-stage ${(live || deck) && format === "portrait" ? "vk-portrait" : ""}`}
+				className={`vk-stage ${format === "portrait" ? "vk-portrait" : ""}`}
 				ref={stage}
 			>
 				{deck ? (
-					<Thumbnail
-						component={Film}
-						inputProps={{ ...film, motion: "reduced" }}
-						frameToDisplay={(chapters[slide]?.from ?? 0) + 1}
-						durationInFrames={duration}
-						fps={film.fps}
-						compositionWidth={size.width}
-						compositionHeight={size.height}
-						style={{
-							width: "100%",
-							aspectRatio: `${size.width} / ${size.height}`,
-						}}
-					/>
-				) : live ? (
+					<FilmStill config={film} frame={(chapters[slide]?.from ?? 0) + 1} />
+				) : (
 					<Player
 						ref={player}
 						component={Film}
@@ -306,37 +293,13 @@ export function VideoPreview({
 							</p>
 						)}
 					/>
-				) : (
-					<video
-						muted
-						ref={video}
-						src={clip}
-						poster={poster}
-						controls
-						playsInline
-						preload="none"
-						aria-label={t.clip}
-						onLoadedMetadata={(event) => {
-							event.currentTarget.currentTime = frame / film.fps;
-						}}
-						onTimeUpdate={(event) =>
-							setFrame(
-								Math.min(
-									duration - 1,
-									Math.floor(event.currentTarget.currentTime * film.fps),
-								),
-							)
-						}
-					>
-						{t.silent}
-					</video>
 				)}
 				{deck ? (
 					<div className="vk-deck-controls">
 						<button
 							type="button"
 							disabled={slide === 0}
-							onClick={() => seek((chapters[slide - 1]?.from ?? 0) + 1)}
+							onClick={() => seekSlide(slide - 1)}
 						>
 							{t.previous}
 						</button>
@@ -346,12 +309,12 @@ export function VideoPreview({
 						<button
 							type="button"
 							disabled={slide === chapters.length - 1}
-							onClick={() => seek((chapters[slide + 1]?.from ?? 0) + 1)}
+							onClick={() => seekSlide(slide + 1)}
 						>
 							{t.next}
 						</button>
 					</div>
-				) : live ? (
+				) : (
 					<div className="vk-controls">
 						<button
 							type="button"
@@ -388,7 +351,7 @@ export function VideoPreview({
 							<span aria-hidden="true">⛶</span>
 						</button>
 					</div>
-				) : null}
+				)}
 			</div>
 			{!deck ? (
 				<div className="vk-preferences">
@@ -412,7 +375,7 @@ export function VideoPreview({
 							key={chapter.id}
 							type="button"
 							aria-pressed={active === chapter.id}
-							onClick={() => seek(chapter.from + 1)}
+							onClick={() => seekSlide(index)}
 						>
 							<span className="vk-chapter-index">
 								{String(index + 1).padStart(2, "0")}

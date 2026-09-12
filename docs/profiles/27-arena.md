@@ -67,7 +67,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Walnut dual-dial chess clock
-- Site path: `/logos/arena`; [local gallery](https://index.dev.hexly.ai/logos/arena)
+- Site path: `/projects/arena#brand`; [local gallery](https://index.dev.hexly.ai/projects/arena#brand)
 - [Static review HTML](../../artwork/logo-family/arena/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/arena/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/arena/2026-09-07-01/01/transparent.png); SHA-256: `84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59`

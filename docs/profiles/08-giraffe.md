@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Honey-colored giraffe portrait nibbling one colorful acacia sprig
-- Site path: `/logos/giraffe`; [local gallery](https://index.dev.hexly.ai/logos/giraffe)
+- Site path: `/projects/giraffe#brand`; [local gallery](https://index.dev.hexly.ai/projects/giraffe#brand)
 - [Static review HTML](../../artwork/logo-family/giraffe/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/giraffe/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/giraffe/2026-09-07-01/02/transparent.png); SHA-256: `68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339`

@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-03`, finishing `01`
 - Refined subject: Original golden faceted retriever with a relaxed smile
-- Site path: `/logos/neo`; [local gallery](https://index.dev.hexly.ai/logos/neo)
+- Site path: `/projects/neo#brand`; [local gallery](https://index.dev.hexly.ai/projects/neo#brand)
 - [Static review HTML](../../artwork/logo-family/neo/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/neo/2026-09-07-03)
 - [Transparent foreground](../../public/logos/family/neo/2026-09-07-03/01/transparent.png); SHA-256: `2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d`

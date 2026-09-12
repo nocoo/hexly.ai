@@ -1,232 +1,22 @@
 {
-	"schemaVersion": 1,
-	"kitVersion": "1.0.0",
+	"schemaVersion": 2,
+	"kitVersion": "2.0.0",
+	"preview": "client",
+	"themes": ["light", "dark"],
 	"templates": [
 		{
 			"id": "launch",
+			"kind": "template",
 			"title": "Launch",
 			"description": {
-				"en": "A clear first impression. Generous type, warm paper, and a product in focus.",
-				"zh": "清新的产品发布：大字、暖纸与聚焦的产品画面。"
+				"en": "An open, generous layout. A clear headline and the product beside it.",
+				"zh": "舒展的发布版式。清楚的标题，与产品并肩出现。"
+			},
+			"use": {
+				"en": "Product launches, feature introductions.",
+				"zh": "产品发布、功能介绍。"
 			},
 			"status": "ready",
-			"version": "1.0.0",
-			"poster": {
-				"src": "/video-assets/video-kit/1.0.0/launch/poster-49a3d0494c4e.webp",
-				"bytes": 12090,
-				"sha256": "49a3d0494c4e905e9c908cfe951cd76bd38ef1cfa2625d28fac2cf66c270f87f",
-				"width": 960,
-				"height": 540
-			},
-			"clip": {
-				"src": "/video-assets/video-kit/1.0.0/launch/sample-a5710a84ff19.mp4",
-				"bytes": 1931985,
-				"sha256": "a5710a84ff190e9c6f419426ffac0825fc737c40de523b0097f96c766aa044e7",
-				"width": 960,
-				"height": 540,
-				"duration": 33,
-				"fps": 30
-			},
-			"deck": {
-				"pptx": {
-					"src": "/video-assets/video-kit/1.0.0/launch/deck-0a5f35b2dba3.pptx",
-					"bytes": 301295,
-					"sha256": "0a5f35b2dba38446a4787330c7388fb31bf81a6057b8a046efd9648facc2cf76",
-					"width": 960,
-					"height": 540
-				},
-				"pdf": {
-					"src": "/video-assets/video-kit/1.0.0/launch/deck-b8362966d43c.pdf",
-					"bytes": 117828,
-					"sha256": "b8362966d43c071974d5709221c06fb1b4d2ca74d9f08d0b7fec9c6064e397c6",
-					"width": 960,
-					"height": 540
-				},
-				"pages": 7
-			},
-			"kind": "template",
-			"mode": "light",
-			"use": {
-				"en": "Product launches, new features, quick introductions.",
-				"zh": "产品发布、新功能与快速介绍。"
-			},
-			"formats": ["landscape", "portrait"],
-			"components": [
-				"intro",
-				"title",
-				"chapter",
-				"content",
-				"cta",
-				"logo",
-				"outro"
-			]
-		},
-		{
-			"id": "studio",
-			"title": "Studio",
-			"description": {
-				"en": "Soft dimensional objects make technical ideas tangible, in the same Hexly palette.",
-				"zh": "用柔和的立体物件讲清技术，色彩仍来自 Hexly。"
-			},
-			"status": "ready",
-			"version": "1.0.0",
-			"poster": {
-				"src": "/video-assets/video-kit/1.0.0/studio/poster-faf2e03d0604.webp",
-				"bytes": 12992,
-				"sha256": "faf2e03d06047412e8f87d7148c1d2104e0b71054ed30dadd1d9c3fe569d454f",
-				"width": 960,
-				"height": 540
-			},
-			"clip": {
-				"src": "/video-assets/video-kit/1.0.0/studio/sample-488f32e2a432.mp4",
-				"bytes": 2035788,
-				"sha256": "488f32e2a432a3627ac19f15c4d92840b0f0c6d789602e02b31ddeaec4f68bf3",
-				"width": 960,
-				"height": 540,
-				"duration": 33,
-				"fps": 30
-			},
-			"deck": {
-				"pptx": {
-					"src": "/video-assets/video-kit/1.0.0/studio/deck-1113acf1ac5e.pptx",
-					"bytes": 417627,
-					"sha256": "1113acf1ac5ea85960c5cea43dcdae9a90343596bbacb91ca513197d25e728a3",
-					"width": 960,
-					"height": 540
-				},
-				"pdf": {
-					"src": "/video-assets/video-kit/1.0.0/studio/deck-de4b5b805a56.pdf",
-					"bytes": 192277,
-					"sha256": "de4b5b805a56c2aa7510a151eb55e1762be054484bc72a87e81b38bb32e89e93",
-					"width": 960,
-					"height": 540
-				},
-				"pages": 7
-			},
-			"kind": "template",
-			"mode": "light",
-			"use": {
-				"en": "Technical stories, systems, workflows.",
-				"zh": "技术叙事、系统架构与工作流。"
-			},
-			"formats": ["landscape", "portrait"],
-			"components": [
-				"intro",
-				"title",
-				"chapter",
-				"content",
-				"cta",
-				"logo",
-				"outro"
-			]
-		},
-		{
-			"id": "editorial",
-			"title": "Editorial",
-			"description": {
-				"en": "An ordered field of notes, figures, and room for a longer thought.",
-				"zh": "用章节、图注与有序版面，容纳更长的思考。"
-			},
-			"status": "ready",
-			"version": "1.0.0",
-			"poster": {
-				"src": "/video-assets/video-kit/1.0.0/editorial/poster-728146446861.webp",
-				"bytes": 12662,
-				"sha256": "7281464468618c56f44abf7be3d1799e50444def9928634478ea1624761ea36c",
-				"width": 960,
-				"height": 540
-			},
-			"clip": {
-				"src": "/video-assets/video-kit/1.0.0/editorial/sample-8bb454564312.mp4",
-				"bytes": 1902008,
-				"sha256": "8bb454564312112569f08c3a2e63125c03abb82ce761a3d41df0b998e4767749",
-				"width": 960,
-				"height": 540,
-				"duration": 33,
-				"fps": 30
-			},
-			"deck": {
-				"pptx": {
-					"src": "/video-assets/video-kit/1.0.0/editorial/deck-1cde9557e0d4.pptx",
-					"bytes": 305026,
-					"sha256": "1cde9557e0d47600846934e06e932acd99d689fd94680d7ceda374e0eaab1591",
-					"width": 960,
-					"height": 540
-				},
-				"pdf": {
-					"src": "/video-assets/video-kit/1.0.0/editorial/deck-2c5c3206efbc.pdf",
-					"bytes": 119752,
-					"sha256": "2c5c3206efbc84485e7a39ed36eba80a1d41909435ef4fd56a271fe500c8edcd",
-					"width": 960,
-					"height": 540
-				},
-				"pages": 7
-			},
-			"kind": "template",
-			"mode": "light",
-			"use": {
-				"en": "Research, walkthroughs, considered long-form stories.",
-				"zh": "研究说明、深入导览与长内容。"
-			},
-			"formats": ["landscape", "portrait"],
-			"components": [
-				"intro",
-				"title",
-				"chapter",
-				"content",
-				"cta",
-				"logo",
-				"outro"
-			]
-		},
-		{
-			"id": "pulse",
-			"title": "Pulse",
-			"description": {
-				"en": "A calm, precise frame for project facts and measured updates.",
-				"zh": "以清楚、平静的网格展示项目数据与进展。"
-			},
-			"status": "ready",
-			"version": "1.0.0",
-			"poster": {
-				"src": "/video-assets/video-kit/1.0.0/pulse/poster-ea0bb3f9cb33.webp",
-				"bytes": 13230,
-				"sha256": "ea0bb3f9cb33b084402d16cf4171c8004bd7262c53f4fd2482a8fe52fc9de9f8",
-				"width": 960,
-				"height": 540
-			},
-			"clip": {
-				"src": "/video-assets/video-kit/1.0.0/pulse/sample-32a0e9cd909d.mp4",
-				"bytes": 1940018,
-				"sha256": "32a0e9cd909de78fb8286003a562d5d0aacdca31e7ede296a380492baa4846e0",
-				"width": 960,
-				"height": 540,
-				"duration": 33,
-				"fps": 30
-			},
-			"deck": {
-				"pptx": {
-					"src": "/video-assets/video-kit/1.0.0/pulse/deck-6dbe041b39ca.pptx",
-					"bytes": 314354,
-					"sha256": "6dbe041b39ca6225644797321dcf011ace6b856c1781400d1ea1a446e345589c",
-					"width": 960,
-					"height": 540
-				},
-				"pdf": {
-					"src": "/video-assets/video-kit/1.0.0/pulse/deck-95770a510da2.pdf",
-					"bytes": 129089,
-					"sha256": "95770a510da2de71521127d57b90c416d13c55e842095582edbc57cd0ea0cb00",
-					"width": 960,
-					"height": 540
-				},
-				"pages": 7
-			},
-			"kind": "template",
-			"mode": "light",
-			"use": {
-				"en": "Data snapshots, status briefings, release updates.",
-				"zh": "数据快照、状态简报与版本更新。"
-			},
 			"formats": ["landscape", "portrait"],
 			"components": [
 				"intro",
@@ -240,52 +30,89 @@
 		},
 		{
 			"id": "essential",
+			"kind": "template",
 			"title": "Essential",
 			"description": {
-				"en": "A few words, a quiet focal point, and the unmistakable Hexly signature.",
-				"zh": "少量文字、一处焦点，以及清晰的 Hexly 签名。"
+				"en": "Only the words that matter. Centered type and unhurried space.",
+				"zh": "只留下重要的文字。居中的排字，从容的留白。"
+			},
+			"use": {
+				"en": "Announcements, invitations, a single clear message.",
+				"zh": "品牌公告、邀请、单一观点。"
 			},
 			"status": "ready",
-			"version": "1.0.0",
-			"poster": {
-				"src": "/video-assets/video-kit/1.0.0/essential/poster-5ae7edd28e31.webp",
-				"bytes": 10072,
-				"sha256": "5ae7edd28e3161c1fd1018189334f7c14fef2227677eb46f4e173a448508e72f",
-				"width": 960,
-				"height": 540
-			},
-			"clip": {
-				"src": "/video-assets/video-kit/1.0.0/essential/sample-259e854dc228.mp4",
-				"bytes": 1912125,
-				"sha256": "259e854dc228b2719884d96f04e4a2a4c0e6049c9354026216805fdca6518d68",
-				"width": 960,
-				"height": 540,
-				"duration": 33,
-				"fps": 30
-			},
-			"deck": {
-				"pptx": {
-					"src": "/video-assets/video-kit/1.0.0/essential/deck-e4ec4be1096d.pptx",
-					"bytes": 290457,
-					"sha256": "e4ec4be1096dddaf33f5d22fa2c77e76bf9e028fcdb8299fabcf32b3fb277a6e",
-					"width": 960,
-					"height": 540
-				},
-				"pdf": {
-					"src": "/video-assets/video-kit/1.0.0/essential/deck-217146625cfd.pdf",
-					"bytes": 107279,
-					"sha256": "217146625cfdbc5a9f4739d5c4b3e7e5bcc27b2eed7f93d0aa23fc2d81a082a1",
-					"width": 960,
-					"height": 540
-				},
-				"pages": 7
-			},
+			"formats": ["landscape", "portrait"],
+			"components": [
+				"intro",
+				"title",
+				"chapter",
+				"content",
+				"cta",
+				"logo",
+				"outro"
+			]
+		},
+		{
+			"id": "showcase",
 			"kind": "template",
-			"mode": "light",
-			"use": {
-				"en": "Brand announcements, invitations, short messages.",
-				"zh": "品牌公告、邀请与简短消息。"
+			"title": "Showcase",
+			"description": {
+				"en": "Give the product the room. A panoramic canvas, with a precise caption.",
+				"zh": "把大部分画面交给产品，配上一句准确的说明。"
 			},
+			"use": {
+				"en": "Screenshots, interfaces, demos and visual work.",
+				"zh": "界面截图、演示、视觉作品。"
+			},
+			"status": "ready",
+			"formats": ["landscape", "portrait"],
+			"components": [
+				"intro",
+				"title",
+				"chapter",
+				"content",
+				"cta",
+				"logo",
+				"outro"
+			]
+		},
+		{
+			"id": "columns",
+			"kind": "template",
+			"title": "Columns",
+			"description": {
+				"en": "One idea, two perspectives. A strong thesis beside its supporting detail.",
+				"zh": "两栏承载一个想法。一侧提出观点，一侧展开细节。"
+			},
+			"use": {
+				"en": "Explanations, research notes, comparisons.",
+				"zh": "深入说明、研究笔记、观点论述。"
+			},
+			"status": "ready",
+			"formats": ["landscape", "portrait"],
+			"components": [
+				"intro",
+				"title",
+				"chapter",
+				"content",
+				"cta",
+				"logo",
+				"outro"
+			]
+		},
+		{
+			"id": "bento",
+			"kind": "template",
+			"title": "Bento",
+			"description": {
+				"en": "A composed set of modules. Story, identity and sourced facts, in one view.",
+				"zh": "有主次的模块编排。同屏容纳叙述、标识与真实资料。"
+			},
+			"use": {
+				"en": "Project overviews, feature sets, progress reports.",
+				"zh": "项目总览、功能集合、进展汇报。"
+			},
+			"status": "ready",
 			"formats": ["landscape", "portrait"],
 			"components": [
 				"intro",
@@ -298,5 +125,138 @@
 			]
 		}
 	],
-	"projects": []
+	"openings": [
+		{
+			"id": "signal",
+			"kind": "opening",
+			"title": "Signal",
+			"description": {
+				"en": "A single red point opens into a confident, centered title.",
+				"zh": "一个红点，引出居中舒展的标题。"
+			},
+			"use": {
+				"en": "A direct first impression.",
+				"zh": "清楚直接的开场。"
+			}
+		},
+		{
+			"id": "frame",
+			"kind": "opening",
+			"title": "Frame",
+			"description": {
+				"en": "A wide product frame, anchored by a bold title and a precise caption band.",
+				"zh": "大幅产品画面，下方用鲜明标题与图注稳稳收住。"
+			},
+			"use": {
+				"en": "Put the product up front.",
+				"zh": "以产品画面开场。"
+			}
+		},
+		{
+			"id": "index",
+			"kind": "opening",
+			"title": "Index",
+			"description": {
+				"en": "A large folio, an oversized name, and an opening note.",
+				"zh": "大号页码、鲜明的项目名、一段开篇笔记。"
+			},
+			"use": {
+				"en": "A chaptered story or a considered introduction.",
+				"zh": "有章节的故事与深入介绍。"
+			}
+		},
+		{
+			"id": "horizon",
+			"kind": "opening",
+			"title": "Horizon",
+			"description": {
+				"en": "A wide headline meets a quiet horizon of warm paper.",
+				"zh": "宽阔标题，与暖纸地平线相遇。"
+			},
+			"use": {
+				"en": "A launch with an expansive sense of space.",
+				"zh": "开阔、舒展的项目发布。"
+			}
+		},
+		{
+			"id": "stack",
+			"kind": "opening",
+			"title": "Stack",
+			"description": {
+				"en": "Layered paper settles into a carefully typeset title card.",
+				"zh": "叠放的纸张落稳，呈现精心排布的标题卡。"
+			},
+			"use": {
+				"en": "An invitation, a collection, a new body of work.",
+				"zh": "邀请、作品集、新的创作。"
+			}
+		}
+	],
+	"endings": [
+		{
+			"id": "signature",
+			"kind": "ending",
+			"title": "Signature",
+			"description": {
+				"en": "The official mark, the full wordmark, then the final thought.",
+				"zh": "官方标志、完整字标，最后留下一句话。"
+			},
+			"use": {
+				"en": "A quiet, definitive signature.",
+				"zh": "安静、明确的落款。"
+			}
+		},
+		{
+			"id": "line",
+			"kind": "ending",
+			"title": "Line",
+			"description": {
+				"en": "The project takes the final headline. A red line leads to a small Hexly signature.",
+				"zh": "用项目名收束全片，一条红线引向左下方的品牌落款。"
+			},
+			"use": {
+				"en": "Give a story a sense of completion.",
+				"zh": "为故事画上句号。"
+			}
+		},
+		{
+			"id": "frame",
+			"kind": "ending",
+			"title": "Frame",
+			"description": {
+				"en": "A paper end card pairs the project identity with the Hexly signature.",
+				"zh": "纸质尾卡上，项目标识与 Hexly 签名相互呼应。"
+			},
+			"use": {
+				"en": "A tangible, collectable final frame.",
+				"zh": "有质感、值得保留的最后一帧。"
+			}
+		},
+		{
+			"id": "split",
+			"kind": "ending",
+			"title": "Split",
+			"description": {
+				"en": "Two paper fields meet. The shared signature connects them.",
+				"zh": "两片纸色相接，由同一品牌签名连接。"
+			},
+			"use": {
+				"en": "Leave the door open to the next idea.",
+				"zh": "为下一个想法留下入口。"
+			}
+		},
+		{
+			"id": "colophon",
+			"kind": "ending",
+			"title": "Colophon",
+			"description": {
+				"en": "A bold signature between fine rules and a restrained colophon.",
+				"zh": "大幅签名，夹在纤细边线与克制的刊记之间。"
+			},
+			"use": {
+				"en": "Long-form work, research and collections.",
+				"zh": "长内容、研究、系列作品。"
+			}
+		}
+	]
 }

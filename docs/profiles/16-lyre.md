@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-03`, finishing `01`
 - Refined subject: Original chestnut faceted lyrebird with a curled feather crest
-- Site path: `/logos/lyre`; [local gallery](https://index.dev.hexly.ai/logos/lyre)
+- Site path: `/projects/lyre#brand`; [local gallery](https://index.dev.hexly.ai/projects/lyre#brand)
 - [Static review HTML](../../artwork/logo-family/lyre/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/lyre/2026-09-07-03)
 - [Transparent foreground](../../public/logos/family/lyre/2026-09-07-03/01/transparent.png); SHA-256: `1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a`

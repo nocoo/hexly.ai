@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-11.
 - Study `2026-09-11-01`, finishing `01`
 - Refined subject: Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens
-- Site path: `/logos/hermes-on-herdr`; [local gallery](https://index.dev.hexly.ai/logos/hermes-on-herdr)
+- Site path: `/projects/hermes-on-herdr#brand`; [local gallery](https://index.dev.hexly.ai/projects/hermes-on-herdr#brand)
 - [Static review HTML](../../artwork/logo-family/hermes-gateway-herdr/2026-09-11-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hermes-gateway-herdr/2026-09-11-01)
 - [Transparent foreground](../../public/logos/family/hermes-gateway-herdr/2026-09-11-01/01/transparent.png); SHA-256: `ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719`

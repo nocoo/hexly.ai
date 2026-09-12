@@ -32,6 +32,7 @@ export function filterProjects(
 	query: string,
 	category: Category = "all",
 	sort: "curated" | "az" = "curated",
+	withVideo = false,
 ): Project[] {
 	const terms = query
 		.normalize("NFKC")
@@ -40,6 +41,7 @@ export function filterProjects(
 		.split(/\s+/)
 		.filter(Boolean);
 	const result = projects.filter((project) => {
+		if (withVideo && !project.media?.videos?.length) return false;
 		if (category === "archive") {
 			if (!project.archived) return false;
 		} else {
@@ -125,6 +127,24 @@ function hasTranslations(value?: Record<Locale, string>): boolean {
 	return hasText(value?.en) && hasText(value?.zh);
 }
 
+function mediaUrl(value: unknown): boolean {
+	if (typeof value !== "string" || /[\s\\]/.test(value)) return false;
+	try {
+		const url = new URL(value, "https://hexly.ai");
+		return (
+			(value.startsWith("/")
+				? !value.startsWith("//") && url.origin === "https://hexly.ai"
+				: value.startsWith("https://") &&
+					url.origin === "https://media.hexly.ai") &&
+			!url.username &&
+			!url.password &&
+			!url.hash
+		);
+	} catch {
+		return false;
+	}
+}
+
 export function catalogueProblems(projects: Project[]): string[] {
 	const problems: string[] = [];
 	const ids = new Set<string>();
@@ -132,6 +152,64 @@ export function catalogueProblems(projects: Project[]): string[] {
 		if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id) || ids.has(project.id))
 			problems.push(`Invalid or duplicate id: ${project.id}`);
 		ids.add(project.id);
+		const media = project.media;
+		if (media !== undefined) {
+			if (!media || typeof media !== "object" || Array.isArray(media)) {
+				problems.push(`Invalid project media: ${project.id}`);
+			} else {
+				const videos = media.videos;
+				if (
+					videos !== undefined &&
+					(!Array.isArray(videos) ||
+						videos.some(
+							(video) =>
+								!video ||
+								!hasText(video.id) ||
+								!/^([a-z0-9]+-)*[a-z0-9]+$/.test(video.id) ||
+								!hasTranslations(video.title) ||
+								!mediaUrl(video.src) ||
+								!mediaUrl(video.poster) ||
+								!Number.isFinite(video.durationSeconds) ||
+								video.durationSeconds <= 0 ||
+								!hasText(video.language) ||
+								!hasText(video.version) ||
+								!hasText(video.source) ||
+								!/^[a-f0-9]{64}$/.test(video.sha256) ||
+								(video.captions !== undefined &&
+									(!Array.isArray(video.captions) ||
+										video.captions.some(
+											(track) =>
+												!track ||
+												!mediaUrl(track.src) ||
+												!hasText(track.language) ||
+												!hasText(track.label),
+										))),
+						) ||
+						new Set(videos.map((video) => video.id)).size !== videos.length)
+				)
+					problems.push(`Invalid project videos: ${project.id}`);
+				const screenshots = media.screenshots;
+				if (
+					screenshots !== undefined &&
+					(!Array.isArray(screenshots) ||
+						screenshots.some(
+							(screenshot) =>
+								!screenshot ||
+								!hasText(screenshot.id) ||
+								!/^([a-z0-9]+-)*[a-z0-9]+$/.test(screenshot.id) ||
+								!mediaUrl(screenshot.src) ||
+								!hasTranslations(screenshot.alt) ||
+								!Number.isInteger(screenshot.width) ||
+								!Number.isInteger(screenshot.height) ||
+								screenshot.width <= 0 ||
+								screenshot.height <= 0,
+						) ||
+						new Set(screenshots.map((shot) => shot.id)).size !==
+							screenshots.length)
+				)
+					problems.push(`Invalid project screenshots: ${project.id}`);
+			}
+		}
 		if (
 			!project.title ||
 			!project.emoji ||

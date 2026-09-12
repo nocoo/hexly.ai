@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-09.
 - Study `2026-09-09-01`, finishing `01`
 - Refined subject: Indigo metal information tray with adjustable dividers and four colored paper stacks
-- Site path: `/logos/infospace`; [local gallery](https://index.dev.hexly.ai/logos/infospace)
+- Site path: `/projects/infospace#brand`; [local gallery](https://index.dev.hexly.ai/projects/infospace#brand)
 - [Static review HTML](../../artwork/logo-family/infospace/2026-09-09-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/infospace/2026-09-09-01)
 - [Transparent foreground](../../public/logos/family/infospace/2026-09-09-01/01/transparent.png); SHA-256: `3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772`

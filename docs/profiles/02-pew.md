@@ -77,7 +77,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-01`, finishing `04`
-- Site path: `/logos/pew`; [local gallery](https://index.dev.hexly.ai/logos/pew)
+- Site path: `/projects/pew#brand`; [local gallery](https://index.dev.hexly.ai/projects/pew#brand)
 - [Static review HTML](../../artwork/logo-family/pew/2026-09-06-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pew/2026-09-06-01)
 - [Transparent foreground](../../public/logos/family/pew/2026-09-06-01/04/transparent.png); SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`

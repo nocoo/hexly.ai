@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Petrol enamel mechanical tally counter
-- Site path: `/logos/signoff-now`; [local gallery](https://index.dev.hexly.ai/logos/signoff-now)
+- Site path: `/projects/signoff-now#brand`; [local gallery](https://index.dev.hexly.ai/projects/signoff-now#brand)
 - [Static review HTML](../../artwork/logo-family/signoff-now/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/signoff-now/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/signoff-now/2026-09-07-01/01/transparent.png); SHA-256: `942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4`

@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-03`, finishing `01`
 - Refined subject: Original violet and teal faceted dove with pink blossoms
-- Site path: `/logos/dove`; [local gallery](https://index.dev.hexly.ai/logos/dove)
+- Site path: `/projects/dove#brand`; [local gallery](https://index.dev.hexly.ai/projects/dove#brand)
 - [Static review HTML](../../artwork/logo-family/dove/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dove/2026-09-07-03)
 - [Transparent foreground](../../public/logos/family/dove/2026-09-07-03/01/transparent.png); SHA-256: `25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa`

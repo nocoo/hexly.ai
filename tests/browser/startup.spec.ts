@@ -22,7 +22,7 @@ for (const scenario of [
 	},
 	{
 		name: "Chinese gallery",
-		path: "/logos/frogie",
+		path: "/projects/frogie",
 		locale: "zh-CN",
 		colorScheme: "dark",
 		view: ".gallery-main",
@@ -101,14 +101,16 @@ test("offers a working retry when the client script fails", async ({
 	page,
 }) => {
 	await page.route(clientScript, (route) => route.abort());
-	await page.goto("/logos/frogie?sort=az", { waitUntil: "domcontentloaded" });
+	await page.goto("/projects/frogie?sort=az", {
+		waitUntil: "domcontentloaded",
+	});
 	await expect(page.locator("#startup-error")).toBeVisible();
 	await expect(page.locator("#root")).not.toBeVisible();
 	await page.unroute(clientScript);
 	await page.getByRole("button", { name: "Reload the page" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Frogie");
 	await expect(page.locator(".gallery-main")).toBeVisible();
-	await expect(page).toHaveURL(/\/logos\/frogie\?sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/frogie\?sort=az$/);
 	await expect(page.locator("#startup-error")).not.toBeVisible();
 });
 

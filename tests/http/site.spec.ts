@@ -65,10 +65,10 @@ test("reloads gallery links and serves the external preference bootstrap", async
 }) => {
 	for (const path of [
 		"/logos",
-		"/logos/frogie",
-		"/logos/pew",
-		"/logos/firefly",
-		"/logos/uptime-kuma-skill",
+		"/projects/frogie",
+		"/projects/pew",
+		"/projects/firefly",
+		"/projects/uptime-kuma-skill",
 	]) {
 		const response = await request.get(path);
 		expect(response.status(), path).toBe(200);
@@ -152,17 +152,30 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	expect(sitemap.headers()["content-type"]).toContain("xml");
 	const map = await sitemap.text();
 	expect(map).toContain("<loc>https://hexly.ai/</loc>");
-	expect(map).toContain("<loc>https://hexly.ai/logos/frogie</loc>");
+	expect(map).toContain("<loc>https://hexly.ai/projects/frogie</loc>");
+	for (const path of [
+		"logos",
+		"templates",
+		"status",
+		"templates/launch",
+		"templates/essential",
+		"templates/showcase",
+		"templates/columns",
+		"templates/bento",
+	])
+		expect(map).toContain(`<loc>https://hexly.ai/${path}</loc>`);
+	expect(map).not.toContain("https://hexly.ai/logos/");
+	expect(map).not.toContain("https://hexly.ai/videos");
 	const llms = await request.get("/llms.txt");
 	expect(llms.status()).toBe(200);
 	expect(llms.headers()["content-type"]).toContain("text/plain");
 	expect(await llms.text()).toContain("https://lizheng.me/en/");
-	const frogie = await request.get("/logos/frogie");
+	const frogie = await request.get("/projects/frogie");
 	expect(frogie.status()).toBe(200);
 	const page = await frogie.text();
 	expect(page).toContain("<title>Frogie — hexly.ai</title>");
 	expect(page).toContain(
-		'<link rel="canonical" href="https://hexly.ai/logos/frogie" />',
+		'<link rel="canonical" href="https://hexly.ai/projects/frogie" />',
 	);
 	expect(page).not.toContain(
 		'<link rel="canonical" href="https://hexly.ai/" />',
@@ -177,6 +190,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	expect(card).toMatchObject({
 		id: "pew",
 		title: "Pew — hexly.ai",
+		canonical: "https://hexly.ai/projects/pew",
 		image: { url: "https://hexly.ai/og/pew.jpg", width: 1200, height: 630 },
 	});
 	const index = await (await request.get("/api/share.json")).json();
@@ -198,7 +212,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	expect(projectsRedirect.headers().location).toMatch(/\/$/);
 	const frogieRedirect = await request.get("/frogie", { maxRedirects: 0 });
 	expect(frogieRedirect.status()).toBe(301);
-	expect(frogieRedirect.headers().location).toContain("/logos/frogie");
+	expect(frogieRedirect.headers().location).toContain("/projects/frogie");
 	const favicon = await request.get("/favicon.svg");
 	expect(favicon.status()).toBe(200);
 	expect(favicon.headers()["content-type"]).toContain("image/svg+xml");
@@ -212,6 +226,38 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 		expect(response.status(), path).toBe(200);
 		expect(response.headers()["content-type"], path).toContain(type);
 	}
+});
+
+test("redirects legacy pages and template metadata without touching archived logos", async ({
+	request,
+}) => {
+	for (const [before, after] of [
+		["/logos/pew?q=pew", "/projects/pew?q=pew#brand"],
+		["/logos/hermes-gateway-herdr", "/projects/hermes-on-herdr#brand"],
+		["/videos?project=pew", "/templates?project=pew"],
+		[
+			"/videos/launch?project=pew&mode=deck",
+			"/templates/launch?project=pew&mode=deck",
+		],
+		["/videos/manifest.json", "/templates/manifest.json"],
+	] as const) {
+		const response = await request.get(before, { maxRedirects: 0 });
+		expect(response.status(), before).toBe(301);
+		const location = new URL(response.headers().location ?? "", response.url());
+		expect(
+			`${location.pathname}${location.search}${location.hash}`,
+			before,
+		).toBe(after);
+	}
+	const oldManifest = await request.get("/videos/manifest.json");
+	expect(oldManifest.headers()["content-type"]).toContain("application/json");
+	expect((await oldManifest.json()).templates).toHaveLength(5);
+	const logo = await request.get("/logos/display/pew-64.webp", {
+		maxRedirects: 0,
+	});
+	expect(logo.status()).toBe(200);
+	expect(logo.headers().location).toBeUndefined();
+	expect(logo.headers()["content-type"]).toContain("image/webp");
 });
 
 for (const id of projects

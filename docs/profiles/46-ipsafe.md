@@ -66,7 +66,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: A green network cable tester with a short patch lead
-- Site path: `/logos/ipsafe`; [local gallery](https://index.dev.hexly.ai/logos/ipsafe)
+- Site path: `/projects/ipsafe#brand`; [local gallery](https://index.dev.hexly.ai/projects/ipsafe#brand)
 - [Static review HTML](../../artwork/logo-family/ipsafe/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ipsafe/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/ipsafe/2026-09-07-01/01/transparent.png); SHA-256: `1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b`

@@ -14,7 +14,27 @@ import {
 	shareFiles,
 	sitemapXml,
 } from "./src/model/discovery";
+import { legacyRoute } from "./src/model/routes";
 import { statusTargets } from "./src/model/status";
+
+function canonicalRoutes(): Plugin {
+	return {
+		name: "canonical-routes",
+		configureServer(server) {
+			server.middlewares.use((request, response, next) => {
+				const url = new URL(request.url ?? "/", "http://localhost");
+				const redirect = legacyRoute(url.pathname);
+				if (!redirect) return next();
+				url.pathname = redirect.path;
+				if (redirect.anchor) url.hash = redirect.anchor;
+				response.writeHead(301, {
+					Location: `${url.pathname}${url.search}${url.hash}`,
+				});
+				response.end();
+			});
+		},
+	};
+}
 
 function discoveryAssets(): Plugin {
 	const pages = () => discoveryPages(readProjects());
@@ -161,6 +181,7 @@ function releaseMetadata(): Plugin {
 export default defineConfig({
 	plugins: [
 		react(),
+		canonicalRoutes(),
 		catalogueAssets(),
 		videoSiteAssets(),
 		discoveryAssets(),

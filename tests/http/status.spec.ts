@@ -55,10 +55,10 @@ test("serves both status entry points and keeps family logo assets on the status
 	});
 	expect(logo.status()).toBe(200);
 	expect(logo.headers()["content-type"]).toContain("image/webp");
-	const gallery = await request.get("/logos/pika", {
+	const gallery = await request.get("/projects/pika", {
 		headers: { Host: "status.hexly.ai" },
 		maxRedirects: 0,
 	});
 	expect(gallery.status()).toBe(302);
-	expect(gallery.headers().location).toBe("https://hexly.ai/logos/pika");
+	expect(gallery.headers().location).toBe("https://hexly.ai/projects/pika");
 });

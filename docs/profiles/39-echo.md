@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: A brass and navy pocket compass
-- Site path: `/logos/echo`; [local gallery](https://index.dev.hexly.ai/logos/echo)
+- Site path: `/projects/echo#brand`; [local gallery](https://index.dev.hexly.ai/projects/echo#brand)
 - [Static review HTML](../../artwork/logo-family/echo/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/echo/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/echo/2026-09-07-01/01/transparent.png); SHA-256: `ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d`

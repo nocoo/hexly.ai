@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Small olive tortoise with one folded multicolored leaf on its shell
-- Site path: `/logos/backy`; [local gallery](https://index.dev.hexly.ai/logos/backy)
+- Site path: `/projects/backy#brand`; [local gallery](https://index.dev.hexly.ai/projects/backy#brand)
 - [Static review HTML](../../artwork/logo-family/backy/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/backy/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/backy/2026-09-07-01/01/transparent.png); SHA-256: `a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef`

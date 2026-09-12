@@ -70,7 +70,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Floating black-and-white checker ceramic block
-- Site path: `/logos/dotty`; [local gallery](https://index.dev.hexly.ai/logos/dotty)
+- Site path: `/projects/dotty#brand`; [local gallery](https://index.dev.hexly.ai/projects/dotty#brand)
 - [Static review HTML](../../artwork/logo-family/dotty/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dotty/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/dotty/2026-09-07-01/01/transparent.png); SHA-256: `ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e`

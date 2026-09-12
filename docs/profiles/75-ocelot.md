@@ -75,7 +75,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-11.
 - Study `2026-09-11-01`, finishing `03`
 - Refined subject: Warm-gold faceted ocelot watching a colorful paper bird
-- Site path: `/logos/ocelot`; [local gallery](https://index.dev.hexly.ai/logos/ocelot)
+- Site path: `/projects/ocelot#brand`; [local gallery](https://index.dev.hexly.ai/projects/ocelot#brand)
 - [Static review HTML](../../artwork/logo-family/ocelot/2026-09-11-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ocelot/2026-09-11-01)
 - [Transparent foreground](../../public/logos/family/ocelot/2026-09-11-01/03/transparent.png); SHA-256: `c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5`

@@ -68,7 +68,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Naturally crouched biscuit-colored rabbit with one colorful carrot
-- Site path: `/logos/gaga`; [local gallery](https://index.dev.hexly.ai/logos/gaga)
+- Site path: `/projects/gaga#brand`; [local gallery](https://index.dev.hexly.ai/projects/gaga#brand)
 - [Static review HTML](../../artwork/logo-family/gaga/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/gaga/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/gaga/2026-09-07-01/01/transparent.png); SHA-256: `3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076`

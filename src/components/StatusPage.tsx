@@ -710,7 +710,7 @@ export function StatusPage({
 						<p>{t.coverageNote}</p>
 						<div>
 							{unmonitored.map((project) => (
-								<a key={project.id} href={`/logos/${project.id}`}>
+								<a key={project.id} href={`/projects/${project.id}`}>
 									<Logo project={project} size={24} />
 									<span>{project.title}</span>
 									<Icon name="arrow" />

@@ -65,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: An opened green enamel and brass padlock
-- Site path: `/logos/unseal`; [local gallery](https://index.dev.hexly.ai/logos/unseal)
+- Site path: `/projects/unseal#brand`; [local gallery](https://index.dev.hexly.ai/projects/unseal#brand)
 - [Static review HTML](../../artwork/logo-family/unseal/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/unseal/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/unseal/2026-09-07-01/01/transparent.png); SHA-256: `8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b`

@@ -36,13 +36,13 @@ Cron triggers. Their scheduled handler only exercises cleanup; it never probes
 public websites. Restart `bun run dev` after changing the catalogue so the
 Worker's built target manifest and mock history are regenerated.
 
-Review the directory at `https://index.dev.hexly.ai/`, with identities at `/logos/frogie` and `/logos/pew`. `/logos` opens the default identity. Vite serves these client paths directly; Workers uses its configured SPA fallback for the same paths. Share links contain the project in the pathname. Archived identities also load directly, for example `/logos/uptime-kuma-skill`.
+Review the catalogue at `https://index.dev.hexly.ai/`, with details at `/projects/frogie` and `/projects/pew`. `/logos` is the image wall; each detail's `#brand` contains its complete identity archive. Archived projects also load directly, for example `/projects/uptime-kuma-skill`. The shared route helper redirects old logo pages and `/videos` paths in both Vite and Workers while preserving asset URLs. Hash links animate smoothly unless reduced motion is enabled. Sitemap, `llms.txt`, HTML snapshots and share records use canonical paths.
 
 Each candidate's complete static review remains available at `/artwork/logo-family/<project>/<study>/review.html` in the dev server. Static study HTML includes the presentation references; the React site omits that disclosure. A local review round finishes with local commits only when push and deployment are out of scope.
 
 ## Video templates
 
-`https://index.dev.hexly.ai/videos` uses the same project catalogue, site controls
+`https://index.dev.hexly.ai/templates` uses the same project catalogue, site controls
 and responsive shell. It has five templates, a project chooser, optional local
 screenshots and Video/Deck views. `bun run video:dev` serves the standalone demo
 on loopback 7440; `bun run video:studio` opens the five Remotion compositions on
@@ -51,7 +51,7 @@ on loopback 7440; `bun run video:studio` opens the five Remotion compositions on
 Final video/deck rendering stays offline, with Chrome/Chromium and FFmpeg:
 
 ```sh
-bun run video:render -- --project pew --template studio --locale zh --mode all
+bun run video:render -- --project pew --template showcase --theme light --opening signal --ending signature --locale zh --mode deck
 ```
 
 Use a fresh `--out` directory for each production. The default half-scale sample
@@ -59,7 +59,9 @@ is 960 × 540; `--scale 1` produces 1920 × 1080. The same scenes export actual
 PPTX/PDF image pages with native PPTX notes. See the [kit README](../packages/video-kit/README.md)
 for configurations, screenshots, independent consumers and reviewed-asset
 publication. Never copy `.video-work`, `.cache` or full render folders into the
-site build.
+site build. Finished recordings are optional metadata on project details, not
+template previews. Their R2 origin is not provisioned by the current local
+change; see [media support and publication boundary](17-project-media.md).
 
 ## Quality commands
 

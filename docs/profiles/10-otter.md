@@ -69,7 +69,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Brown otter in a relaxed curl holding one colorful river shell
-- Site path: `/logos/otter`; [local gallery](https://index.dev.hexly.ai/logos/otter)
+- Site path: `/projects/otter#brand`; [local gallery](https://index.dev.hexly.ai/projects/otter#brand)
 - [Static review HTML](../../artwork/logo-family/otter/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/otter/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/otter/2026-09-07-01/02/transparent.png); SHA-256: `8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933`

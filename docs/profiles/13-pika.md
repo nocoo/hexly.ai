@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
 - Refined subject: Original yellow Pika with its complete lightning gesture
-- Site path: `/logos/pika`; [local gallery](https://index.dev.hexly.ai/logos/pika)
+- Site path: `/projects/pika#brand`; [local gallery](https://index.dev.hexly.ai/projects/pika#brand)
 - [Static review HTML](../../artwork/logo-family/pika/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pika/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/pika/2026-09-07-01/01/transparent.png); SHA-256: `2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b`

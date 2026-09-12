@@ -65,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-10.
 - Study `2026-09-10-02`, finishing `03`
 - Refined subject: Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge
-- Site path: `/logos/showtime`; [local gallery](https://index.dev.hexly.ai/logos/showtime)
+- Site path: `/projects/showtime#brand`; [local gallery](https://index.dev.hexly.ai/projects/showtime#brand)
 - [Static review HTML](../../artwork/logo-family/showtime/2026-09-10-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/showtime/2026-09-10-02)
 - [Transparent foreground](../../public/logos/family/showtime/2026-09-10-02/03/transparent.png); SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`

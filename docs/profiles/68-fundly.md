@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: A worldly navy-and-ivory penguin holding binoculars
-- Site path: `/logos/fundly`; [local gallery](https://index.dev.hexly.ai/logos/fundly)
+- Site path: `/projects/fundly#brand`; [local gallery](https://index.dev.hexly.ai/projects/fundly#brand)
 - [Static review HTML](../../artwork/logo-family/fundly/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/fundly/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/fundly/2026-09-07-01/02/transparent.png); SHA-256: `e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f`

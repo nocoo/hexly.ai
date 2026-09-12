@@ -66,7 +66,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: A crafted shield behind a bow and arrow, sword and magic staff
-- Site path: `/logos/dreamro`; [local gallery](https://index.dev.hexly.ai/logos/dreamro)
+- Site path: `/projects/dreamro#brand`; [local gallery](https://index.dev.hexly.ai/projects/dreamro#brand)
 - [Static review HTML](../../artwork/logo-family/dreamro/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dreamro/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/dreamro/2026-09-07-01/02/transparent.png); SHA-256: `e25c8837590746aeab75cc9cd26e0cf10a6f1e03f0909e6b9db44b92e2951f52`

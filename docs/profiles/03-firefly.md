@@ -76,7 +76,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-10`, finishing `02`
 - Refined subject: Broad-winged faceted firefly with a small campfire
-- Site path: `/logos/firefly`; [local gallery](https://index.dev.hexly.ai/logos/firefly)
+- Site path: `/projects/firefly#brand`; [local gallery](https://index.dev.hexly.ai/projects/firefly#brand)
 - [Static review HTML](../../artwork/logo-family/firefly/2026-09-06-10/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/firefly/2026-09-06-10)
 - [Transparent foreground](../../public/logos/family/firefly/2026-09-06-10/02/transparent.png); SHA-256: `a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759`

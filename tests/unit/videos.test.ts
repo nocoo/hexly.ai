@@ -3,10 +3,13 @@ import { createProjectFilm } from "../../packages/video-kit/src/project";
 import {
 	dimensions,
 	durationFor,
+	endingIds,
+	openingIds,
 	parseFilm,
 	parseVideoManifest,
 	schemaDocuments,
 	templateIds,
+	themeIds,
 	timelineFor,
 } from "../../packages/video-kit/src/schema";
 import { readProjects } from "../../src/data/read-projects";
@@ -76,7 +79,7 @@ describe("one project source for five video and deck templates", () => {
 			expect(() =>
 				parseFilm({ ...film, project: { ...film.project, logo } }),
 			).toThrow();
-		expect(schemaDocuments()["film-v1.schema.json"].properties).toHaveProperty(
+		expect(schemaDocuments()["film-v2.schema.json"].properties).toHaveProperty(
 			"scenes",
 		);
 	});
@@ -87,7 +90,7 @@ describe("one project source for five video and deck templates", () => {
 		]);
 		expect(
 			manifest.templates.every(
-				(entry) => entry.status === "ready" && entry.deck.pages === 7,
+				(entry) => entry.status === "ready" && entry.components.length === 7,
 			),
 		).toBe(true);
 		expect(() =>
@@ -99,16 +102,22 @@ describe("one project source for five video and deck templates", () => {
 				templates: Array(5).fill(manifest.templates[0]),
 			}),
 		).toThrow("unique");
+		expect(manifest.openings.map((entry) => entry.id)).toEqual([...openingIds]);
+		expect(manifest.endings.map((entry) => entry.id)).toEqual([...endingIds]);
+		expect(manifest.themes).toEqual(["light", "dark"]);
+		expect(manifest.preview).toBe("client");
 		expect(() =>
 			parseVideoManifest({
 				...manifest,
 				templates: manifest.templates.map((entry) => ({
 					...entry,
-					poster: { ...entry.poster, src: "/video-assets/../secret.webp" },
+					clip: "/old.mp4",
 				})),
 			}),
 		).toThrow();
-		expect(findVideo("studio")?.title).toBe("Studio");
+		for (const id of ["studio", "editorial", "pulse"])
+			expect(findVideo(id)).toBeUndefined();
+		expect(findVideo("showcase")?.title).toBe("Showcase");
 		expect(findVideo("unknown")).toBeUndefined();
 		expect(findVideo()).toBeUndefined();
 	});
@@ -119,30 +128,109 @@ describe("one project source for five video and deck templates", () => {
 				const url = new URL(path, "https://hexly.ai");
 				const state = parseNavigation(url.pathname, url.search, projects);
 				expect(state).toMatchObject({
-					view: "videos",
+					view: "templates",
 					video: template,
 					videoProject: "bogo",
 					videoMode: mode,
 				});
 				expect(navigationPath(state)).toBe(path);
 			}
-		expect(videoHref("launch", "hexly-ai")).toBe("/videos/launch");
-		expect(videoHref("launch")).toBe("/videos/launch");
-		expect(navigationPath(parseNavigation("/videos", "", projects))).toBe(
-			"/videos",
+		expect(videoHref("launch", "hexly-ai")).toBe("/templates/launch");
+		expect(videoHref("launch")).toBe("/templates/launch");
+		expect(navigationPath(parseNavigation("/templates", "", projects))).toBe(
+			"/templates",
 		);
 	});
-	it("emits template-specific crawlable pages and correct poster metadata", () => {
-		const shell =
-			'<title>old</title><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><div id="root"></div></head>';
-		for (const template of videoManifest.templates) {
-			const page = pageForPath(`/videos/${template.id}`, projects);
-			expect(page.canonical).toBe(`https://hexly.ai/videos/${template.id}`);
-			expect(page.bodyHtml).toContain(template.deck.pptx.src);
-			const html = applyPageToHtml(shell, page);
-			expect(html).toContain("image/webp");
-			expect(html).toContain(`content="${template.poster.width}"`);
+	it("preserves the library family when changing projects or reloading", () => {
+		for (const family of ["openings", "endings"] as const) {
+			const state = parseNavigation(
+				"/templates",
+				`?family=${family}`,
+				projects,
+			);
+			const path = navigationPath({ ...state, videoProject: "bogo" });
+			expect(path).toBe(`/templates?family=${family}&project=bogo`);
+			const url = new URL(path, "https://hexly.ai");
+			expect(parseNavigation(url.pathname, url.search, projects)).toMatchObject(
+				{
+					videoFamily: family,
+					videoProject: "bogo",
+				},
+			);
 		}
-		expect(pageForPath("/videos/unknown", projects).path).toBe("/videos");
+		expect(
+			parseNavigation("/templates", "?family=unknown", projects).videoFamily,
+		).toBe("templates");
+	});
+	it("round-trips all 250 compositions without duplicating the story", () => {
+		const project = projectForVideo(
+			projects.find((item) => item.id === "bogo"),
+			"en",
+		);
+		const base = createProjectFilm(project);
+		for (const template of templateIds)
+			for (const opening of openingIds)
+				for (const ending of endingIds)
+					for (const theme of themeIds) {
+						const options = { opening, ending, theme };
+						const film = createProjectFilm(project, template, "en", options);
+						expect(parseFilm(JSON.parse(JSON.stringify(film)))).toEqual(film);
+						expect(film.scenes).toEqual(base.scenes);
+						const url = new URL(
+							videoHref(template, project.id, "deck", {
+								...options,
+								part: "outro",
+							}),
+							"https://hexly.ai",
+						);
+						const state = parseNavigation(url.pathname, url.search, projects);
+						expect(state).toMatchObject({
+							video: template,
+							videoOpening: opening,
+							videoEnding: ending,
+							videoTheme: theme,
+							videoPart: "outro",
+						});
+						expect(navigationPath(state)).toBe(url.pathname + url.search);
+					}
+		expect(
+			parseFilm({ ...base, scenes: [{ ...base.scenes[3], template: "bento" }] })
+				.scenes[0]?.template,
+		).toBe("bento");
+		for (const patch of [
+			{ theme: "blue" },
+			{ opening: "unknown" },
+			{ ending: "unknown" },
+			{ schemaVersion: 1 },
+			{ template: "studio" },
+			{ template: "editorial" },
+			{ template: "pulse" },
+		])
+			expect(() => parseFilm({ ...base, ...patch })).toThrow();
+		expect(
+			parseNavigation(
+				"/templates/launch",
+				"?theme=blue&opening=../&ending=unknown&part=unknown",
+				projects,
+			),
+		).toMatchObject({
+			videoTheme: "light",
+			videoOpening: "signal",
+			videoEnding: "signature",
+			videoPart: "content",
+		});
+	});
+	it("emits crawlable component pages without advertising obsolete movies or decks", () => {
+		const shell = '<title>old</title><div id="root"></div></head>';
+		for (const template of videoManifest.templates) {
+			const page = pageForPath(`/templates/${template.id}`, projects);
+			expect(page.canonical).toBe(`https://hexly.ai/templates/${template.id}`);
+			expect(page.bodyHtml).toContain("/templates/film-v2.schema.json");
+			const html = applyPageToHtml(shell, page);
+			expect(html).toContain(template.title);
+			expect(html).not.toContain(".mp4");
+			expect(JSON.stringify(page.jsonLd)).not.toContain("VideoObject");
+		}
+		expect(pageForPath("/templates/unknown", projects).path).toBe("/templates");
 	});
 });

@@ -24,6 +24,7 @@ import example from "../examples/hexly.json";
 import { hexly, kitVersion } from "../src/brand";
 import { createProjectFilm } from "../src/project";
 import {
+	compositionSchema,
 	type FilmConfig,
 	parseFilm,
 	templateIds,
@@ -34,6 +35,9 @@ const { values } = parseArgs({
 	args: process.argv.slice(2).filter((arg) => arg !== "--"),
 	options: {
 		example: { type: "string" },
+		theme: { type: "string", default: "light" },
+		opening: { type: "string", default: "signal" },
+		ending: { type: "string", default: "signature" },
 		props: { type: "string" },
 		out: { type: "string" },
 		"public-dir": { type: "string" },
@@ -68,7 +72,18 @@ const films = values.props
 	: (selected === "all"
 			? templateIds
 			: [selected as FilmConfig["template"]]
-		).map((id) => createProjectFilm(example, id));
+		).map((id) =>
+			createProjectFilm(
+				example,
+				id,
+				"en",
+				compositionSchema.parse({
+					theme: values.theme,
+					opening: values.opening,
+					ending: values.ending,
+				}),
+			),
+		);
 mkdirSync(output, { recursive: true });
 const publicDir = resolve(values["public-dir"] ?? join(root, "public"));
 const browserExecutable =
@@ -204,7 +219,7 @@ for (const film of films) {
 	}
 	if (mode === "all" || mode === "video") {
 		let bucket = -1;
-		const target = join(destination, "sample.mp4");
+		const target = join(destination, "film.mp4");
 		await renderMedia({
 			...common,
 			inputProps: film,
@@ -277,6 +292,9 @@ for (const film of films) {
 		});
 	const report = {
 		kitVersion,
+		theme: film.theme,
+		opening: film.opening,
+		ending: film.ending,
 		template: film.template,
 		project: film.project.id,
 		mode,

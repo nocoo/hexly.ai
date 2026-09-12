@@ -1,4 +1,11 @@
-export { family, hexly, kitVersion, palettes, themes } from "./brand";
+export {
+	brandAssetVersion,
+	family,
+	hexly,
+	kitVersion,
+	layouts,
+	palettes,
+} from "./brand";
 export { Film } from "./Film";
 export { loadHexlyFonts, useHexlyFonts } from "./fonts";
 export { BrandLockup, BrandMark, HexlyReveal, RedDot } from "./Identity";
@@ -15,13 +22,21 @@ export {
 	Title,
 } from "./Scenes";
 export {
+	type CompositionOptions,
 	dimensions,
 	durationFor,
+	type EndingId,
+	endingIds,
 	type FilmConfig,
 	filmSchema,
+	type OpeningId,
+	openingIds,
 	parseFilm,
 	type SceneConfig,
+	type TemplateId,
 	templateIds,
+	themeIds,
 	timelineFor,
 	type VideoProject,
+	type VideoTheme,
 } from "./schema";

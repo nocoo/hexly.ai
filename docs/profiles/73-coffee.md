@@ -72,7 +72,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-11.
 - Study `2026-09-11-01`, finishing `01`
 - Refined subject: Peach ceramic cup, latte leaf, saucer and brass teaspoon
-- Site path: `/logos/coffee`; [local gallery](https://index.dev.hexly.ai/logos/coffee)
+- Site path: `/projects/coffee#brand`; [local gallery](https://index.dev.hexly.ai/projects/coffee#brand)
 - [Static review HTML](../../artwork/logo-family/coffee/2026-09-11-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/coffee/2026-09-11-01)
 - [Transparent foreground](../../public/logos/family/coffee/2026-09-11-01/01/transparent.png); SHA-256: `d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124`

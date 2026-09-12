@@ -65,7 +65,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-02`, finishing `01`
 - Refined subject: An amber-eyed ostrich in a brown hat with one bright feather cluster
-- Site path: `/logos/clip`; [local gallery](https://index.dev.hexly.ai/logos/clip)
+- Site path: `/projects/clip#brand`; [local gallery](https://index.dev.hexly.ai/projects/clip#brand)
 - [Static review HTML](../../artwork/logo-family/clip/2026-09-07-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/clip/2026-09-07-02)
 - [Transparent foreground](../../public/logos/family/clip/2026-09-07-02/01/transparent.png); SHA-256: `3399eb7f9ed54899845c6d686ad3c498c253b369e61b8acee4e41fd161158983`

@@ -17,6 +17,7 @@ import {
 	siteShareCard,
 	socialImage,
 } from "../../src/model/discovery";
+import { screenshotFixture, videoFixture } from "../fixtures/project-media";
 
 const projects = readProjects();
 const frogie = projects.find((project) => project.id === "frogie");
@@ -56,7 +57,7 @@ describe("crawler discovery documents", () => {
 				},
 			},
 		};
-		const page = pageForPath("/logos/frogie", [reviewed]);
+		const page = pageForPath("/projects/frogie", [reviewed]);
 		expect(page.bodyHtml).toContain("Project goal");
 		expect(page.bodyHtml).toContain("Inspect &lt;routes&gt; &amp; proxies.");
 		expect(page.bodyHtml).toContain("Swift &amp; SwiftUI");
@@ -67,13 +68,15 @@ describe("crawler discovery documents", () => {
 		const xml = sitemapXml(discoveryPages(projects));
 		expect(xml).toContain("<loc>https://hexly.ai/</loc>");
 		expect(xml).toContain("<loc>https://hexly.ai/logos</loc>");
-		expect(xml).toContain("<loc>https://hexly.ai/logos/frogie</loc>");
+		expect(xml).toContain("<loc>https://hexly.ai/projects/frogie</loc>");
 		expect(xml).toContain(
-			"<loc>https://hexly.ai/logos/uptime-kuma-skill</loc>",
+			"<loc>https://hexly.ai/projects/uptime-kuma-skill</loc>",
 		);
 		expect(xml).toContain("<loc>https://hexly.ai/status</loc>");
 		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 9);
-		expect(xml).toContain("<loc>https://hexly.ai/videos/studio</loc>");
+		expect(xml).toContain("<loc>https://hexly.ai/templates/showcase</loc>");
+		expect(xml).not.toContain("hexly.ai/videos");
+		expect(xml).not.toContain("hexly.ai/logos/");
 	});
 	it("writes a plain-text index with series links and both languages", () => {
 		const text = llmsDocument(projects);
@@ -82,7 +85,7 @@ describe("crawler discovery documents", () => {
 		expect(text).toContain("https://lizheng.blog/");
 		expect(text).toContain("https://lizheng.dev/en/");
 		expect(text).not.toContain("[Portfolio](https://hexly.ai/)");
-		expect(text).toContain("/logos/frogie");
+		expect(text).toContain("/projects/frogie");
 		expect(text).toContain(frogie.description.zh);
 		expect(text).toContain("/sitemap.xml");
 		expect(text).toContain("/data/projects.json");
@@ -92,6 +95,7 @@ describe("crawler discovery documents", () => {
 		const pew = projects.find((project) => project.id === "pew");
 		if (!pew) throw new Error("Pew is required.");
 		const card = projectShareCard(pew);
+		expect(card.canonical).toBe("https://hexly.ai/projects/pew");
 		expect(card.title).toBe("Pew — hexly.ai");
 		expect(card.image).toEqual({
 			url: "https://hexly.ai/og/pew.jpg",
@@ -117,7 +121,7 @@ describe("crawler discovery documents", () => {
 	it("builds unique page metadata and readable HTML snapshots", () => {
 		const home = pageForPath("/", projects);
 		const gallery = pageForPath("/logos/", projects);
-		const page = pageForPath("/logos/frogie", projects);
+		const page = pageForPath("/projects/frogie", projects);
 		expect(home.canonical).toBe("https://hexly.ai/");
 		expect(home.heading).toBe(homeHeading);
 		expect(home.bodyHtml).toContain("<h1>");
@@ -132,13 +136,13 @@ describe("crawler discovery documents", () => {
 			)["@graph"][1]?.mainEntity.numberOfItems,
 		).toBe(visible.length);
 		expect(gallery.canonical).toBe("https://hexly.ai/logos");
-		expect(page.canonical).toBe("https://hexly.ai/logos/frogie");
+		expect(page.canonical).toBe("https://hexly.ai/projects/frogie");
 		expect(page.title).toBe("Frogie — hexly.ai");
 		expect(page.description).toBe(frogie.description.en);
 		expect(page.bodyHtml).toContain(frogie.repository);
 		expect(socialImage()).toBe("https://hexly.ai/og.jpg");
 		expect(socialImage(frogie)).toBe("https://hexly.ai/og/frogie.jpg");
-		expect(absoluteUrl("/logos/pew")).toBe("https://hexly.ai/logos/pew");
+		expect(absoluteUrl("/projects/pew")).toBe("https://hexly.ai/projects/pew");
 		const graph = home.jsonLd as {
 			"@graph": {
 				mainEntity: { name: string; numberOfItems: number };
@@ -152,11 +156,11 @@ describe("crawler discovery documents", () => {
 		);
 	});
 	it("replaces the shared HTML shell with the selected page", () => {
-		const page = pageForPath("/logos/frogie", projects);
+		const page = pageForPath("/projects/frogie", projects);
 		const html = applyPageToHtml(shell, page);
 		expect(html).toContain("<title>Frogie — hexly.ai</title>");
 		expect(html).toContain(`content="${frogie.description.en}"`);
-		expect(html).toContain('href="https://hexly.ai/logos/frogie"');
+		expect(html).toContain('href="https://hexly.ai/projects/frogie"');
 		expect(html).toContain('"@type":"SoftwareApplication"');
 		expect(html).toContain("<h1>Frogie 🐸</h1>");
 		expect(html.match(/<h1>/g)?.length).toBe(1);
@@ -164,11 +168,48 @@ describe("crawler discovery documents", () => {
 		expect(html).toContain('content="image/jpeg"');
 		expect(html).not.toContain("<title>old</title>");
 	});
-	it("escapes HTML in titles and unknown paths fall back to the gallery", () => {
+	it("escapes HTML in titles and identifies unknown projects", () => {
 		expect(escapeHtml('A & B <C> "D"')).toBe(
 			"A &amp; B &lt;C&gt; &quot;D&quot;",
 		);
 		expect(pageForPath("/missing", projects).path).toBe("/");
-		expect(pageForPath("/logos/not-a-project", projects).path).toBe("/logos");
+		expect(pageForPath("/projects/not-a-project", projects)).toMatchObject({
+			path: "/projects/not-a-project",
+			title: "Project not found — hexly.ai",
+		});
+	});
+	it("canonicalizes aliases without changing archived asset links", () => {
+		const page = pageForPath("/projects/frogie", projects);
+		expect(pageForPath("/logos/frogie", projects)).toEqual(page);
+		expect(pageForPath("/frogie", projects)).toEqual(page);
+		expect(pageForPath("/videos/launch", projects)).toEqual(
+			pageForPath("/templates/launch", projects),
+		);
+		expect(page.bodyHtml).toContain(`href="${frogie.logo.original}"`);
+		expect(page.bodyHtml).toContain(
+			`href="${escapeHtml(frogie.logo.sourceUrl)}"`,
+		);
+	});
+	it("makes optional media readable to crawlers and escapes its metadata", () => {
+		const video = {
+			...videoFixture,
+			title: { en: 'A <video> & "demo"', zh: "示例" },
+		};
+		const page = pageForPath("/projects/frogie", [
+			{ ...frogie, media: { videos: [video] } },
+		]);
+		expect(page.bodyHtml).toContain('id="video-introduction"');
+		expect(page.bodyHtml).toContain("A &lt;video&gt; &amp; &quot;demo&quot;");
+		expect(page.bodyHtml).toContain(`href="${video.src}"`);
+		expect(page.bodyHtml).not.toContain("A <video>");
+		expect(pageForPath("/projects/frogie", projects).bodyHtml).not.toContain(
+			'id="video-',
+		);
+		const screenshot = pageForPath("/projects/frogie", [
+			{ ...frogie, media: { screenshots: [screenshotFixture] } },
+		]);
+		expect(screenshot.bodyHtml).toContain('id="media"');
+		expect(screenshot.bodyHtml).toContain(`alt="${screenshotFixture.alt.en}"`);
+		expect(screenshot.bodyHtml).not.toContain('id="video-');
 	});
 });

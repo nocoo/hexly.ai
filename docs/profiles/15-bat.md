@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
 - Refined subject: Upright plum bat with folded wings and one colorful fig
-- Site path: `/logos/bat`; [local gallery](https://index.dev.hexly.ai/logos/bat)
+- Site path: `/projects/bat#brand`; [local gallery](https://index.dev.hexly.ai/projects/bat#brand)
 - [Static review HTML](../../artwork/logo-family/bat/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/bat/2026-09-07-01)
 - [Transparent foreground](../../public/logos/family/bat/2026-09-07-01/02/transparent.png); SHA-256: `882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d`
