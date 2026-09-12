@@ -115,7 +115,7 @@ Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Play
 
 - Entry: `bun run release` or `bun run release -- patch|minor|major|X.Y.Z` from clean `main`, with GitHub write access. Dry run is read-only. Version policy and recovery: [docs/05-release.md](docs/05-release.md).
 - The release script updates version/changelog, pushes `main`, waits for that commit's successful quality and Deploy jobs, verifies production, then creates an annotated tag and GitHub Release. Published tags are immutable.
-- `Quality & Deploy` applies D1 migrations, then deploys trusted `main` after all gates. Use this path for routine publication; manual `bun run deploy` follows the same order. Actions secrets: `CLOUDFLARE_API_TOKEN` (already has D1 access), `CLOUDFLARE_ACCOUNT_ID`.
+- `ci.yml` (`CI`) runs all gates. Its successful trusted `main` run triggers `release.yml` (`Release`), which applies D1 migrations and deploys that source SHA. The release helper matches `Deploy CI <source-run-id>` and requires `Deploy / Deploy Worker` success. Use this path for routine publication; manual `bun run deploy` follows the same migration order. Actions secrets: `CLOUDFLARE_API_TOKEN` (already has D1 access), `CLOUDFLARE_ACCOUNT_ID`.
 - Production: `https://hexly.ai` and `https://status.hexly.ai`; preview: `https://hexly-ai.nocoo.workers.dev` (`noindex`). `bun run verify:production` checks version/revision, document, status page and live D1 feed, compiled assets, and original logo. Keep routing and rollback details in the runbook.
 
 ## Adding a project: complete the whole path

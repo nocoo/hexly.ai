@@ -21,7 +21,7 @@ Run from a clean `main` checkout. The script rejects malformed versions, package
 2. Select the version and generate grouped notes from commits since the preceding version tag.
 3. Update the package version, validate `bun.lock` with `bun install --lockfile-only --frozen-lockfile`, and insert or replace that version's `CHANGELOG.md` section. Bun does not store the root package version in this lockfile; frozen mode prevents a temporary local registry mirror from rewriting dependency sources.
 4. Commit only the manifest, lockfile, and changelog. Local Git hooks remain enabled.
-5. Push `main` and watch the matching `ci.yml` run for that exact commit. All six quality dimensions must pass before the Deploy job.
+5. Push `main` and watch `ci.yml` (`CI`) for that exact commit. Then wait for its `release.yml` (`Release`) run, named `Deploy CI <source-run-id>`. Require the same revision and the successful `Deploy / Deploy Worker` job before verifying production or tagging.
 6. Verify `https://hexly.ai/api/live`, the root document, compiled JavaScript/CSS, and the archived hexly.ai logo checksum.
 7. Create and push an annotated `vX.Y.Z` tag on the verified commit, then create its GitHub Release with the generated notes and workflow link.
 
@@ -42,6 +42,10 @@ requires for account/zone discovery. The existing CD token already has D1 access
 Keep token values in GitHub Secrets; local interactive Wrangler authentication
 is independent. Apply migrations before deploying Worker code that uses them.
 
-The workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. The Deploy job runs only for `main`, after both the reusable quality workflow and the separate browser job succeed. Browser testing and deployment pin Node.js 26.7.0. Deployment checks out the same Git SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the Wrangler step.
+The CI workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. The separate release workflow is triggered by successful trusted `main` CI, or manually with an explicit successful source run ID. Its source verification requires both reusable quality and browser jobs. Browser testing and deployment pin Node.js 26.7.0. Deployment checks out the verified source SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the Wrangler step.
+
+The local release helper matches deployment by source CI run ID, Git SHA and
+`workflow_run` event. It does not treat CI completion, an unrelated manual deploy,
+or a skipped deployment as publication. GitHub Release notes link both runs.
 
 After publication, inspect the actual remote workflow and public metadata. A successful local build or accepted upload alone is not release completion.

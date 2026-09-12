@@ -3,6 +3,8 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
 	chooseVersion,
+	type DeploymentRun,
+	deploymentRunFor,
 	releaseNotes,
 	releaseOptions,
 	updateChangelog,
@@ -177,13 +179,53 @@ await run(
 	"--interval",
 	"10",
 );
+let deployRunId: number | undefined;
+for (let attempt = 0; attempt < 18; attempt++) {
+	const runs: DeploymentRun[] = JSON.parse(
+		await output(
+			"gh",
+			"run",
+			"list",
+			"--repo",
+			repository,
+			"--workflow",
+			"release.yml",
+			"--commit",
+			revision,
+			"--event",
+			"workflow_run",
+			"--json",
+			"databaseId,headSha,displayTitle,event",
+			"--limit",
+			"10",
+		),
+	);
+	deployRunId = deploymentRunFor(runs, runId, revision);
+	if (deployRunId) break;
+	await Bun.sleep(10_000);
+}
+if (!deployRunId)
+	throw new Error(
+		`No deployment run found for CI ${runId} at ${revision}. No tag was created.`,
+	);
+await run(
+	"gh",
+	"run",
+	"watch",
+	String(deployRunId),
+	"--repo",
+	repository,
+	"--exit-status",
+	"--interval",
+	"10",
+);
 const workflow: { jobs: { name: string; conclusion: string }[]; url: string } =
 	JSON.parse(
 		await output(
 			"gh",
 			"run",
 			"view",
-			String(runId),
+			String(deployRunId),
 			"--repo",
 			repository,
 			"--json",
@@ -192,7 +234,8 @@ const workflow: { jobs: { name: string; conclusion: string }[]; url: string } =
 	);
 if (
 	!workflow.jobs.some(
-		(job) => job.name === "Deploy" && job.conclusion === "success",
+		(job) =>
+			job.name === "Deploy / Deploy Worker" && job.conclusion === "success",
 	)
 ) {
 	throw new Error("Production deployment did not succeed. No tag was created.");
@@ -205,7 +248,7 @@ try {
 	const notesFile = join(temporary, "notes.md");
 	await writeFile(
 		notesFile,
-		`${notes}\n\n[Verified CI and deployment](${workflow.url})\n`,
+		`${notes}\n\n[Quality](https://github.com/${repository}/actions/runs/${runId}) · [Verified deployment](${workflow.url})\n`,
 	);
 	await run(
 		"gh",

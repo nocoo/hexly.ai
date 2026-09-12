@@ -1,5 +1,25 @@
 export type Bump = "patch" | "minor" | "major";
 
+export interface DeploymentRun {
+	databaseId: number;
+	headSha: string;
+	displayTitle: string;
+	event: string;
+}
+
+export function deploymentRunFor(
+	runs: DeploymentRun[],
+	sourceRunId: number,
+	revision: string,
+) {
+	return runs.find(
+		(run) =>
+			run.headSha === revision &&
+			run.event === "workflow_run" &&
+			run.displayTitle === `Deploy CI ${sourceRunId}`,
+	)?.databaseId;
+}
+
 export function parseVersion(value: string): [number, number, number] {
 	if (!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(value)) {
 		throw new Error(`Expected an X.Y.Z version, received: ${value}`);
