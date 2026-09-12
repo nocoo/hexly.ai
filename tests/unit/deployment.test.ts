@@ -2,7 +2,10 @@ import { readFileSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import manifest from "../../package.json";
 import { verifyDeployment } from "../../scripts/verify-deployment";
+import { readProjects } from "../../src/data/read-projects";
 import identity from "../../src/data/site-identity.json";
+import videos from "../../src/data/videos.json";
+import { statusTargets } from "../../src/model/status";
 
 const origin = new URL("https://deployment.example.test");
 const revision = "a".repeat(40);
@@ -15,7 +18,11 @@ const status = {
 	windowStart: 0,
 	intervalSeconds: 300,
 	retentionDays: 7,
-	services: [],
+	services: statusTargets(readProjects()).map((target) => ({
+		...target,
+		latest: null,
+		history: [],
+	})),
 };
 
 function serve(
@@ -57,6 +64,19 @@ function serve(
 					headers: { "content-type": "text/css" },
 				});
 			if (path === logoPath) return new Response(logo);
+			if (path === "/videos/manifest.json") return Response.json(videos);
+			if (path === "/videos")
+				return new Response(
+					videos.templates.map((entry) => `/videos/${entry.id}`).join("\n"),
+				);
+			for (const entry of videos.templates) {
+				if (path === `/videos/${entry.id}`)
+					return new Response(
+						`<title>${entry.title} — Hexly Video Kit</title>`,
+					);
+				if (path === entry.poster.src)
+					return new Response(readFileSync(`public${path}`));
+			}
 			return new Response("Not found", { status: 404 });
 		}),
 	);
@@ -69,6 +89,40 @@ afterEach(() => {
 });
 
 describe("production deployment verification", () => {
+	it.each([
+		{
+			path: "/api/status",
+			response: () =>
+				Response.json({
+					...status,
+					services: status.services.filter((service) => service.id !== "wooly"),
+				}),
+			message: "Production status target is missing: wooly",
+		},
+		{
+			path: "/videos/manifest.json",
+			response: () => Response.json({ ...videos, kitVersion: "0.0.0" }),
+			message: "Production video manifest does not match this release.",
+		},
+		{
+			path: "/videos/studio",
+			response: () => new Response("<title>Directory</title>"),
+			message: "Video template page is missing: studio",
+		},
+		{
+			path: videos.templates[0]?.poster.src,
+			response: () => new Response("Incorrect poster"),
+			message: "Video poster checksum mismatch: launch",
+		},
+	])(
+		"rejects incomplete published video/status assets at $path",
+		async ({ path, response, message }) => {
+			serve((request) => (request === path ? response() : undefined));
+			await expect(
+				verifyDeployment(origin, revision, retry),
+			).rejects.toMatchObject({ cause: { message } });
+		},
+	);
 	it("rechecks the whole release when CSS is not ready after metadata", async () => {
 		let cssRequests = 0;
 		const requests = serve((path) => {

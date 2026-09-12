@@ -1,0 +1,622 @@
+[
+  {
+    "kitVersion": "1.0.0",
+    "template": "launch",
+    "project": "hexly-ai",
+    "mode": "all",
+    "startedAt": "2026-09-12T05:15:47.971Z",
+    "completedAt": "2026-09-12T05:17:15.947Z",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "3a284725387a70f60ba682ea95a0e9fba679d633279796b624d9fa7ce7b8e854",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 12090,
+        "sha256": "49a3d0494c4e905e9c908cfe951cd76bd38ef1cfa2625d28fac2cf66c270f87f"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 301295,
+        "sha256": "0a5f35b2dba38446a4787330c7388fb31bf81a6057b8a046efd9648facc2cf76"
+      },
+      {
+        "file": "sample.mp4",
+        "bytes": 1931985,
+        "sha256": "a5710a84ff190e9c6f419426ffac0825fc737c40de523b0097f96c766aa044e7"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 25548,
+        "sha256": "d4e2afb086db4505d1521e1fb1176d94e011a72a00a4b8764aa8e47fdbab823b"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 117828,
+        "sha256": "b8362966d43c071974d5709221c06fb1b4d2ca74d9f08d0b7fec9c6064e397c6"
+      },
+      {
+        "file": "decoded-frame.png",
+        "bytes": 85186,
+        "sha256": "f34b48fd1be53125adb740f74cd8fe18e823ec2ff0d2d17fedde5ef397627c46"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 38194,
+        "sha256": "85ad6b3f0711d573595434bdfae3d80d50735c76d9d9be769af4b24b6d81b7f0"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 18558,
+        "sha256": "b03b4957e9436176c4c3ee8dde3b1907d3f0b59f348d24a71170dccf58ff14ed"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 34511,
+        "sha256": "ff3c530e4fad7c04fadf3aa8e5363ee3ca208752120f0e3c73d2a8a777da0361"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 36457,
+        "sha256": "3a80c3339cd41d2ba623cb954366d1bff1cdb4561878fcd1ae5b3b4ec6ebed76"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 40254,
+        "sha256": "079ced9051f10a29f02a97b3693a32c51c46af874f41dbaf883fb2ee8899fb60"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 20328,
+        "sha256": "74e27d4743cdae9f55698e39eb13c470012e0615f6f970d826445725f1607a1e"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 36275,
+        "sha256": "fd8740eca3cbf57670db6c8f3b9d92e23104c762cac7c905fd6dc1cc288fe6db"
+      }
+    ]
+  },
+  {
+    "kitVersion": "1.0.0",
+    "template": "studio",
+    "project": "hexly-ai",
+    "mode": "all",
+    "startedAt": "2026-09-12T05:17:15.948Z",
+    "completedAt": "2026-09-12T05:18:44.289Z",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "6c5a8b89b9d5327ca421d177fee3241907567205510970fd394f924b4c22d069",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 12992,
+        "sha256": "faf2e03d06047412e8f87d7148c1d2104e0b71054ed30dadd1d9c3fe569d454f"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 417627,
+        "sha256": "1113acf1ac5ea85960c5cea43dcdae9a90343596bbacb91ca513197d25e728a3"
+      },
+      {
+        "file": "sample.mp4",
+        "bytes": 2035788,
+        "sha256": "488f32e2a432a3627ac19f15c4d92840b0f0c6d789602e02b31ddeaec4f68bf3"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 26368,
+        "sha256": "78bffdeb2862a5f79309204ff95c84480f32b95f9459ead50926c7e0b1d9db50"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 192277,
+        "sha256": "de4b5b805a56c2aa7510a151eb55e1762be054484bc72a87e81b38bb32e89e93"
+      },
+      {
+        "file": "decoded-frame.png",
+        "bytes": 98866,
+        "sha256": "66274726de4f6b689dbc35b23928adb6226ceaf23680949583b7ec26ee6822e1"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 76122,
+        "sha256": "513cdbc2ef4e756c90f408bb4bb7bb566e8bcce18d7cdd418edb63dc8f7e664b"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 18558,
+        "sha256": "b03b4957e9436176c4c3ee8dde3b1907d3f0b59f348d24a71170dccf58ff14ed"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 73613,
+        "sha256": "18137432ceb024a7ac8ca4b4778ab12f02ed8e208828cd73a3730037748523d6"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 36540,
+        "sha256": "9eb5deb50dcc30da3b1eee00b1ee7253b1ecde5060f0cf657f9b5b362cefaae7"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 40332,
+        "sha256": "a072932bbb0c6fb0dc78562bfd7d89d63ff2efb61920a31b6ad0e609cc12e2ee"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 20328,
+        "sha256": "74e27d4743cdae9f55698e39eb13c470012e0615f6f970d826445725f1607a1e"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 75416,
+        "sha256": "5072cf8638cd9e4651d4994177af5439515be8a0a428255c995e6960dbfe00f2"
+      }
+    ]
+  },
+  {
+    "kitVersion": "1.0.0",
+    "template": "editorial",
+    "project": "hexly-ai",
+    "mode": "all",
+    "startedAt": "2026-09-12T05:18:44.289Z",
+    "completedAt": "2026-09-12T05:20:12.411Z",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "b6e29f6a2c3715e46b4417a586b42de3fc8a4faaa3300d7a3a96f03701b383a0",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 12662,
+        "sha256": "7281464468618c56f44abf7be3d1799e50444def9928634478ea1624761ea36c"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 305026,
+        "sha256": "1cde9557e0d47600846934e06e932acd99d689fd94680d7ceda374e0eaab1591"
+      },
+      {
+        "file": "sample.mp4",
+        "bytes": 1902008,
+        "sha256": "8bb454564312112569f08c3a2e63125c03abb82ce761a3d41df0b998e4767749"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 25668,
+        "sha256": "2496fa8a2d925323c079dbdaa61a7aab4c3cfcbf7d7b0c61d659d0b72555a0bc"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 119752,
+        "sha256": "2c5c3206efbc84485e7a39ed36eba80a1d41909435ef4fd56a271fe500c8edcd"
+      },
+      {
+        "file": "decoded-frame.png",
+        "bytes": 85823,
+        "sha256": "9b57915e9a60fc4670287f6880a0c9c33d93e3f9dbebb582d5fd0ef514602fdf"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 38828,
+        "sha256": "fa6a59277736e435809aa5354eeaadb05ec346558b6d4c5bdc6754a78838691c"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 18558,
+        "sha256": "b03b4957e9436176c4c3ee8dde3b1907d3f0b59f348d24a71170dccf58ff14ed"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 35684,
+        "sha256": "21a268519ef3f44885e039cb8cc122d0bea244ffb68645872ed1536a1222a127"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 37420,
+        "sha256": "eb770053df428b53e5e98983aa4319f1fe7b448e9f52f827fdde63fabcfc522a"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 39999,
+        "sha256": "6f2058a80efcc69fc8dbfc7df61be38895f1ed07d0a605814b24d49e8e4a1f39"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 20328,
+        "sha256": "74e27d4743cdae9f55698e39eb13c470012e0615f6f970d826445725f1607a1e"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 37488,
+        "sha256": "8f30ed34787747ef5942cac025fbfdb1a5826398efb49c726eaca7b39843f357"
+      }
+    ]
+  },
+  {
+    "kitVersion": "1.0.0",
+    "template": "pulse",
+    "project": "hexly-ai",
+    "mode": "all",
+    "startedAt": "2026-09-12T05:20:12.411Z",
+    "completedAt": "2026-09-12T05:21:41.471Z",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "fc7a99dfb3eaca431729eca6e01f8f0a14acf3ccdb030409a628b4d398f79510",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 13230,
+        "sha256": "ea0bb3f9cb33b084402d16cf4171c8004bd7262c53f4fd2482a8fe52fc9de9f8"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 314354,
+        "sha256": "6dbe041b39ca6225644797321dcf011ace6b856c1781400d1ea1a446e345589c"
+      },
+      {
+        "file": "sample.mp4",
+        "bytes": 1940018,
+        "sha256": "32a0e9cd909de78fb8286003a562d5d0aacdca31e7ede296a380492baa4846e0"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 24236,
+        "sha256": "72b49e3223f40e75969f4b7a5508aa9ad5dec83690a2231fbcfa943b2677b44b"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 129089,
+        "sha256": "95770a510da2de71521127d57b90c416d13c55e842095582edbc57cd0ea0cb00"
+      },
+      {
+        "file": "decoded-frame.png",
+        "bytes": 93103,
+        "sha256": "a006b9a81b6fe18aa4e9a13c47b82d101d4e354d95ac95b3e4cb1af38599b237"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 42156,
+        "sha256": "4141a40396a1b5aec27ff4ab0100fdb7712159ccf50ccc7cbb8621907f1134ee"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 18558,
+        "sha256": "b03b4957e9436176c4c3ee8dde3b1907d3f0b59f348d24a71170dccf58ff14ed"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 40825,
+        "sha256": "91149652669073dca4c76656e2b17ce3aeb51b4de0bc29c711d1cba4931d5e90"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 35150,
+        "sha256": "fea5d03025fcf8cb2b81eedfcf6bdb8d5ba686a976cf4bd377e7560f0b8c9c28"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 38106,
+        "sha256": "c8d55ab7ae58024d423e29c9c1bc2b52be6aff325664dca80da6a003bc543457"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 20328,
+        "sha256": "74e27d4743cdae9f55698e39eb13c470012e0615f6f970d826445725f1607a1e"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 42514,
+        "sha256": "5692a111a3c35da3bb140e2ddbc14899ed69f0bbd39931d4dedae6b8ab6766af"
+      }
+    ]
+  },
+  {
+    "kitVersion": "1.0.0",
+    "template": "essential",
+    "project": "hexly-ai",
+    "mode": "all",
+    "startedAt": "2026-09-12T05:21:41.472Z",
+    "completedAt": "2026-09-12T05:23:09.164Z",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "6e93117a6e3f17d7af84534c27fc513beaefb8d90bcfd44ea006a72ca66f1aa9",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 10072,
+        "sha256": "5ae7edd28e3161c1fd1018189334f7c14fef2227677eb46f4e173a448508e72f"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 290457,
+        "sha256": "e4ec4be1096dddaf33f5d22fa2c77e76bf9e028fcdb8299fabcf32b3fb277a6e"
+      },
+      {
+        "file": "sample.mp4",
+        "bytes": 1912125,
+        "sha256": "259e854dc228b2719884d96f04e4a2a4c0e6049c9354026216805fdca6518d68"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 22940,
+        "sha256": "4751d6d19115d41ddcf8f89bf794d235410a500d805303f32f37cd1f51867b15"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 107279,
+        "sha256": "217146625cfdbc5a9f4739d5c4b3e7e5bcc27b2eed7f93d0aa23fc2d81a082a1"
+      },
+      {
+        "file": "decoded-frame.png",
+        "bytes": 65780,
+        "sha256": "7ab65d417838543d9d945ed21ce760e064a0fab16bd634350692dc3538b470e4"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 34410,
+        "sha256": "c0e932c9aab38f7d6991224799ff0ab0e64611b1c819adbea70bcf8d70c0a423"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 18558,
+        "sha256": "b03b4957e9436176c4c3ee8dde3b1907d3f0b59f348d24a71170dccf58ff14ed"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 30798,
+        "sha256": "3b52ea92f6233efd716947925dd4f68d7e3c3e32a461299fcb50b433c40bee2b"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 37263,
+        "sha256": "fd4fbf80d06d1c3fac449a78e65c01f74242a6de5a74d7ba9f580d7db7253ffc"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 39817,
+        "sha256": "8d7acd1bd81df9d5266f2472ca034b43f182e1a82920a862baf3f40829153885"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 20328,
+        "sha256": "74e27d4743cdae9f55698e39eb13c470012e0615f6f970d826445725f1607a1e"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 32562,
+        "sha256": "4ce4f7cfd1c4f9c27aa6bf1b5bfbd0e5374842613a96ed71f49fb71e367bddec"
+      }
+    ]
+  }
+]

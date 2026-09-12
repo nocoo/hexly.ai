@@ -1,6 +1,6 @@
 export type Locale = "en" | "zh";
 export type Theme = "light" | "dark";
-export type View = "directory" | "logos" | "status";
+export type View = "directory" | "logos" | "status" | "videos";
 export type Category =
 	| "all"
 	| "ai"

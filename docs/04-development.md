@@ -40,6 +40,27 @@ Review the directory at `https://index.dev.hexly.ai/`, with identities at `/logo
 
 Each candidate's complete static review remains available at `/artwork/logo-family/<project>/<study>/review.html` in the dev server. Static study HTML includes the presentation references; the React site omits that disclosure. A local review round finishes with local commits only when push and deployment are out of scope.
 
+## Video templates
+
+`https://index.dev.hexly.ai/videos` uses the same project catalogue, site controls
+and responsive shell. It has five templates, a project chooser, optional local
+screenshots and Video/Deck views. `bun run video:dev` serves the standalone demo
+on loopback 7440; `bun run video:studio` opens the five Remotion compositions on
+7441. `bun run video:build` builds the independent Vite preview.
+
+Final video/deck rendering stays offline, with Chrome/Chromium and FFmpeg:
+
+```sh
+bun run video:render -- --project pew --template studio --locale zh --mode all
+```
+
+Use a fresh `--out` directory for each production. The default half-scale sample
+is 960 × 540; `--scale 1` produces 1920 × 1080. The same scenes export actual
+PPTX/PDF image pages with native PPTX notes. See the [kit README](../packages/video-kit/README.md)
+for configurations, screenshots, independent consumers and reviewed-asset
+publication. Never copy `.video-work`, `.cache` or full render folders into the
+site build.
+
 ## Quality commands
 
 ```sh

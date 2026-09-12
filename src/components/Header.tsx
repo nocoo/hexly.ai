@@ -72,6 +72,16 @@ export function Header({
 							<Icon name="activity" />
 							<span className="view-link-label">{t.status}</span>
 						</button>
+						<button
+							type="button"
+							onClick={() => onView("videos")}
+							aria-pressed={view === "videos"}
+							aria-label={t.videos}
+							title={t.videos}
+						>
+							<Icon name="play" />
+							<span className="view-link-label">{t.videos}</span>
+						</button>
 					</nav>
 					<SurfaceLinks
 						locale={locale}

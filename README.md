@@ -23,11 +23,12 @@
 
 [hexly.ai](https://hexly.ai) 是我的个人项目导航站，也是项目视觉身份的收藏柜。它从 [GitHub profile](https://github.com/nocoo) 整理项目名称、描述与 Emoji，保存各仓库的实际 Logo 和色板，让散落的工具、游戏与实验有一个统一入口。
 
-目前收录 70 个项目，备份 56 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Logo 家族同时支持重绘与原图规范化：保留喜欢的动物，补充专属底纹和展示版本，原图与完整过程都留在档案中。
+目前收录 74 个项目，备份 60 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Logo 家族同时支持重绘与原图规范化：保留喜欢的动物，补充专属底纹和展示版本，原图与完整过程都留在档案中。
 
 ## 功能
 
 - **项目导航** — 按分类浏览、搜索中英文名称与描述，访问已核实的站点或源码仓库。
+- **Video Kit** — 在 [视频模板库](https://hexly.ai/videos) 选择任意目录项目，切换 Launch、Studio、Editorial、Pulse、Essential 五套 Hexly 家族模板；支持 Video/Deck 双预览、截图与配置下载，以及离线 MP4、PPTX、PDF 导出。
 - **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
 - **Logo 画廊** — 宽幅新旧对照，图标、透明和白底视图，128 / 64 / 32 / 16 px 尺寸与侧栏、浏览器场景；浅深底色检查、可复制色板、生成提示词或展示说明，以及原始文件下载。Refined 项目在列表、分类和搜索结果中优先展示。
 - **真实色板** — 展示项目的前景色、背景色与点缀色，点击复制颜色值。
@@ -52,6 +53,9 @@
 | `bun run assets:build` | 生成 32 / 64 / 160 / 1024 px WebP 预览 |
 | `bun run assets:check` | 校验原图哈希和全部预览图 |
 | `bun run docs:profiles` | 从项目数据生成独立档案 |
+| `bun run video:dev` / `bun run video:studio` | 独立 Vite 预览 / Remotion Studio |
+| `bun run video:render -- --project pew --template studio --mode all` | 同一份项目数据导出视频和真实 PPTX/PDF |
+| `bun run video:check` | 校验模板 manifest、公开素材哈希与体积边界 |
 | `bun run release -- --dry-run` | 预览版本与发布说明，不修改文件或远端 |
 | `bun run release -- 0.1.0` | 发布指定版本，等待 CI/CD 后创建 Tag 和 Release |
 | `bun run verify:production` | 核实生产版本、Git 提交、页面与资源 |
@@ -67,6 +71,8 @@ hexly.ai/
 │   ├── App.tsx           # 状态与交互编排
 │   └── styles/           # 主题、布局和图标展示
 ├── public/logos/         # 原图、Emoji 和 WebP 预览
+├── public/video-assets/  # 审核过的模板短片、封面与幻灯片
+├── packages/video-kit/  # 共享品牌、五套模板、播放器和离线渲染器
 ├── scripts/             # 本地模拟库、资源生成、质量门控和发布
 ├── worker/              # 路由、Status API 与定时健康检查
 ├── migrations/          # D1 表结构迁移
@@ -104,6 +110,8 @@ bun run dev
 本地状态页位于 `/status`，通过真实 Worker API 读取 Wrangler 的 SQLite D1。
 开发脚本自动载入 7 天模拟记录，页面明确标注模拟数据；本地不会探测生产站点。
 存储和定时方案见[Status 实现说明](docs/11-status-monitoring.md)。
+
+Video Kit 使用站点的真实 Logo、字体与浅色/陶土色设计语言。每套包含前贴片、标题、章节、内容、CTA、Logo reveal 和后贴片。在线预览使用客户端轻量动画，标准示例下载使用预生成文件；项目最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
 
 项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建会生成首页与 `/logos/<project>` 的 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap，以及产品站可复用的 [`/api/share`](https://hexly.ai/api/share.json) 分享元数据。接入说明见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建直接使用仓库内的资源，不依赖相邻项目或运行时 GitHub 请求。
 

@@ -3,6 +3,7 @@ import identity from "../data/site-identity.json" with { type: "json" };
 import { filterProjects } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { healthEndpoint } from "./status";
+import { findVideo, videoEntries } from "./videos";
 
 export const siteOrigin = "https://hexly.ai";
 
@@ -19,6 +20,8 @@ export interface DiscoveryPage {
 	canonical: string;
 	image: string;
 	imageAlt: string;
+	imageWidth?: number;
+	imageHeight?: number;
 	heading: string;
 	bodyHtml: string;
 	jsonLd: unknown;
@@ -161,6 +164,8 @@ export function pageForPath(
 ): DiscoveryPage {
 	const path = pathname.replace(/\/$/, "") || "/";
 	if (path === "/status") return statusPage(projects);
+	const video = /^\/videos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
+	if (video) return videosPage(video[1]);
 	const match = /^\/logos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
 	if (!match) return homePage(projects);
 	const id = match[1];
@@ -174,6 +179,8 @@ export function discoveryPages(projects: Project[]): DiscoveryPage[] {
 		homePage(projects),
 		galleryPage(projects),
 		statusPage(projects),
+		videosPage(),
+		...videoEntries.map((entry) => videosPage(entry.id)),
 		...projects.map((project) => projectPage(project)),
 	];
 }
@@ -203,6 +210,7 @@ Public pages welcome search and AI crawlers. JavaScript is not required to read 
 - [hexly.ai](${siteOrigin}/): ${homeDescription}
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
 - [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
+- [Video Kit](${siteOrigin}/videos): Five Hexly templates, project previews, video and PowerPoint/PDF exports.
 
 ${visible.map((project) => link(project, "en")).join("\n")}
 
@@ -211,6 +219,7 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 - [hexly.ai](${siteOrigin}/): ${copy.zh.heroDescription}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
 - [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
+- [视频模板](${siteOrigin}/videos): 五套 Hexly 家族模板、项目预览、视频与 PPT/PDF 导出。
 
 ${visible.map((project) => link(project, "zh")).join("\n")}
 
@@ -230,6 +239,7 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Crawler policy](${siteOrigin}/robots.txt)
 - [Project catalogue JSON](${siteOrigin}/data/projects.json)
 - [Share metadata API](${siteOrigin}/api/share.json)
+- [Video manifest](${siteOrigin}/videos/manifest.json)
 `;
 }
 
@@ -249,7 +259,23 @@ export function applyPageToHtml(html: string, page: DiscoveryPage): string {
 	next = replaceMeta(
 		next,
 		"og:image:type",
-		page.image.endsWith(".jpg") ? "image/jpeg" : "image/png",
+		page.image.endsWith(".jpg")
+			? "image/jpeg"
+			: page.image.endsWith(".webp")
+				? "image/webp"
+				: "image/png",
+		"property",
+	);
+	next = replaceMeta(
+		next,
+		"og:image:width",
+		String(page.imageWidth ?? 1200),
+		"property",
+	);
+	next = replaceMeta(
+		next,
+		"og:image:height",
+		String(page.imageHeight ?? 630),
 		"property",
 	);
 	next = replaceMeta(next, "og:image:alt", page.imageAlt, "property");
@@ -377,6 +403,69 @@ function statusPage(projects: Project[]): DiscoveryPage {
 			name: title,
 			description,
 			isPartOf: { "@id": `${siteOrigin}/#website` },
+		},
+	};
+}
+
+function videosPage(id?: string): DiscoveryPage {
+	const entry = findVideo(id);
+	const path = entry ? `/videos/${entry.id}` : "/videos";
+	const title = entry
+		? `${entry.title} — Hexly Video Kit`
+		: "Video Kit — hexly.ai";
+	const description =
+		entry?.description.en ??
+		"Five templates. One Hexly family. Turn any project into a video or a deck with the same content.";
+	const canonical = absoluteUrl(path);
+	const image = entry ? absoluteUrl(entry.poster.src) : socialImage();
+	const items = (entry ? [entry] : videoEntries)
+		.map(
+			(item) =>
+				`<li><a href="/videos/${item.id}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.description.en)}<p><a href="${item.clip.src}">MP4 sample</a> · <a href="${item.deck.pptx.src}">PowerPoint deck</a> · <a href="${item.deck.pdf.src}">PDF deck</a></p></li>`,
+		)
+		.join("");
+	return {
+		path,
+		title,
+		description,
+		canonical,
+		image,
+		imageAlt: entry
+			? `${entry.title} — Hexly Video Kit`
+			: "hexly.ai mark on warm paper",
+		imageWidth: entry?.poster.width,
+		imageHeight: entry?.poster.height,
+		heading: entry?.title ?? "Video Kit.",
+		bodyHtml: snapshotHtml(
+			entry?.title ?? "Video Kit.",
+			description,
+			path,
+			[],
+		).replace(
+			"</main>",
+			`<nav><a href="/videos">All templates</a></nav><ul>${items}</ul><p><a href="/videos/manifest.json">Public manifest</a> · <a href="/videos/film-v1.schema.json">Project schema</a></p></main>`,
+		),
+		jsonLd: {
+			"@context": "https://schema.org",
+			"@type": entry ? "CreativeWork" : "CollectionPage",
+			url: canonical,
+			name: title,
+			description,
+			image,
+			isPartOf: { "@id": `${siteOrigin}/#website` },
+			...(entry
+				? {
+						version: entry.version,
+						encoding: {
+							"@type": "VideoObject",
+							name: entry.title,
+							description,
+							thumbnailUrl: image,
+							contentUrl: absoluteUrl(entry.clip.src),
+							duration: `PT${entry.clip.duration}S`,
+						},
+					}
+				: {}),
 		},
 	};
 }

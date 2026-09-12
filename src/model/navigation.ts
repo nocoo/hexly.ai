@@ -7,6 +7,9 @@ export interface DirectoryState {
 	query: string;
 	sort: "curated" | "az";
 	project: string;
+	video?: string;
+	videoProject?: string;
+	videoMode?: "video" | "deck";
 }
 
 export function parseNavigation(
@@ -16,6 +19,7 @@ export function parseNavigation(
 ): DirectoryState {
 	const params = new URLSearchParams(search);
 	const route = /^\/logos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?\/?$/.exec(pathname);
+	const video = /^\/videos(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?\/?$/.exec(pathname);
 	const project = route?.[1] ?? "frogie";
 	let category =
 		categories.find((item) => item === params.get("category")) ?? "all";
@@ -27,15 +31,27 @@ export function parseNavigation(
 		category = "archive";
 	return resolveNavigation(
 		{
-			view: /^\/status\/?$/.test(pathname)
-				? "status"
-				: route
-					? "logos"
-					: "directory",
+			view: video
+				? "videos"
+				: /^\/status\/?$/.test(pathname)
+					? "status"
+					: route
+						? "logos"
+						: "directory",
 			category,
 			query: params.get("q") ?? "",
 			sort: params.get("sort") === "az" ? "az" : "curated",
 			project,
+			...(video
+				? {
+						video: video[1],
+						videoProject: params.get("project") ?? "hexly-ai",
+						videoMode:
+							params.get("mode") === "deck"
+								? ("deck" as const)
+								: ("video" as const),
+					}
+				: {}),
 		},
 		projects,
 	);
@@ -55,6 +71,13 @@ export function resolveNavigation(
 
 export function navigationPath(state: DirectoryState): string {
 	const params = new URLSearchParams();
+	if (state.view === "videos") {
+		if (state.videoProject && state.videoProject !== "hexly-ai")
+			params.set("project", state.videoProject);
+		if (state.videoMode === "deck") params.set("mode", "deck");
+		const path = `/videos${state.video ? `/${state.video}` : ""}`;
+		return params.size ? `${path}?${params}` : path;
+	}
 	if (state.category !== "all") params.set("category", state.category);
 	if (state.query) params.set("q", state.query);
 	if (state.sort !== "curated") params.set("sort", state.sort);

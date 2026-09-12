@@ -1,4 +1,12 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import {
+	lazy,
+	Suspense,
+	useEffect,
+	useLayoutEffect,
+	useMemo,
+	useRef,
+	useState,
+} from "react";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
@@ -21,6 +29,10 @@ import "./styles/base.css";
 import "./styles/directory.css";
 import "./styles/gallery.css";
 import "./styles/status.css";
+
+const Videos = lazy(() =>
+	import("./components/Videos").then((module) => ({ default: module.Videos })),
+);
 
 type CatalogueState =
 	| { status: "loading" }
@@ -100,13 +112,15 @@ export function App() {
 	useEffect(() => {
 		if (catalogue.status !== "ready") return;
 		const path =
-			state.view === "status"
-				? "/status"
-				: state.view === "directory"
-					? "/"
-					: `/logos/${state.project}`;
+			state.view === "videos"
+				? `/videos${state.video ? `/${state.video}` : ""}`
+				: state.view === "status"
+					? "/status"
+					: state.view === "directory"
+						? "/"
+						: `/logos/${state.project}`;
 		document.title = pageForPath(path, projects).title;
-	}, [catalogue.status, projects, state.project, state.view]);
+	}, [catalogue.status, projects, state.project, state.view, state.video]);
 
 	useEffect(() => {
 		let cancelled = false;
@@ -185,7 +199,13 @@ export function App() {
 	const change = (patch: Partial<DirectoryState>) =>
 		navigate({ ...state, ...patch }, "query" in patch);
 	const view = (next: View) => {
-		navigate({ ...state, view: next, category: "all", query: "" });
+		navigate({
+			...state,
+			view: next,
+			category: "all",
+			query: "",
+			video: undefined,
+		});
 		window.scrollTo({ top: 0, behavior: "instant" });
 	};
 	const switchLocale = () => {
@@ -245,6 +265,24 @@ export function App() {
 						) : null}
 					</div>
 				</main>
+			) : state.view === "videos" ? (
+				<Suspense
+					fallback={
+						<main id="main-content" className="shell">
+							<div className="empty-state" role="status">
+								{t.loading}
+							</div>
+						</main>
+					}
+				>
+					<Videos
+						key={state.videoProject ?? "hexly-ai"}
+						projects={projects}
+						state={state}
+						locale={locale}
+						onChange={change}
+					/>
+				</Suspense>
 			) : state.view === "status" ? (
 				<StatusPage
 					projects={projects}

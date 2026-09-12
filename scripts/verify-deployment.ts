@@ -2,8 +2,11 @@ import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { setTimeout } from "node:timers/promises";
 import manifest from "../package.json";
+import { parseVideoManifest } from "../packages/video-kit/src/schema";
+import { readProjects } from "../src/data/read-projects";
 import identity from "../src/data/site-identity.json";
-import { parseStatusSnapshot } from "../src/model/status";
+import videos from "../src/data/videos.json";
+import { parseStatusSnapshot, statusTargets } from "../src/model/status";
 
 export async function verifyDeployment(
 	origin: URL,
@@ -45,6 +48,15 @@ export async function verifyDeployment(
 		);
 		if (snapshot.mode !== "live")
 			throw new Error("Production must not serve demo status data.");
+		for (const target of statusTargets(readProjects())) {
+			if (
+				!snapshot.services.some(
+					(service) =>
+						service.id === target.id && service.endpoint === target.endpoint,
+				)
+			)
+				throw new Error(`Production status target is missing: ${target.id}`);
+		}
 		if (
 			!(await (await get("/status")).text()).includes(
 				"<title>Service status — hexly.ai</title>",
@@ -84,13 +96,38 @@ export async function verifyDeployment(
 				"The production logo does not match the archived original.",
 			);
 		}
+		const collection = parseVideoManifest(
+			await (await get("/videos/manifest.json")).json(),
+		);
+		if (
+			JSON.stringify(collection) !== JSON.stringify(parseVideoManifest(videos))
+		)
+			throw new Error("Production video manifest does not match this release.");
+		const library = await (await get("/videos")).text();
+		await Promise.all(
+			collection.templates.map(async (template) => {
+				if (!library.includes(`/videos/${template.id}`))
+					throw new Error(`Video library is missing ${template.id}.`);
+				const html = await (await get(`/videos/${template.id}`)).text();
+				if (
+					!html.includes(`<title>${template.title} — Hexly Video Kit</title>`)
+				)
+					throw new Error(`Video template page is missing: ${template.id}`);
+				const poster = await (await get(template.poster.src)).arrayBuffer();
+				if (
+					createHash("sha256").update(new Uint8Array(poster)).digest("hex") !==
+					template.poster.sha256
+				)
+					throw new Error(`Video poster checksum mismatch: ${template.id}`);
+			}),
+		);
 	}
 
 	for (let attempt = 1; attempt <= attempts; attempt++) {
 		try {
 			await checkRelease();
 			console.info(
-				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, status page and live D1 feed, compiled assets, and original logo.`,
+				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, catalogue status targets and live D1 feed, compiled assets, original logo, five video pages and poster hashes.`,
 			);
 			return;
 		} catch (error) {

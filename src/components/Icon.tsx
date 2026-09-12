@@ -21,6 +21,7 @@ export type IconName =
 	| "activity"
 	| "refresh"
 	| "clock"
+	| "play"
 	| "info";
 
 const paths: Record<IconName, string> = {
@@ -51,6 +52,7 @@ const paths: Record<IconName, string> = {
 	activity: "M2 12h5l3-8 4 16 3-8h5",
 	refresh: "M20 7v5h-5M4 17v-5h5M6 6a8 8 0 0 1 13 3M18 18a8 8 0 0 1-13-3",
 	clock: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 7v5l3 2",
+	play: "m9 5 11 7-11 7V5ZM4 4v16",
 	info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7h.01",
 };
 
