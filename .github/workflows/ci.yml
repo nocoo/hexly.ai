@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   quality:
-    uses: nocoo/base-ci/.github/workflows/quality.yml@3d2e9e55fdd60aa756df454ded53ef6d06d6653f
+    uses: nocoo/base-ci/.github/workflows/quality.yml@2857469cc5206e7a4988171a1282209617996a67
     with:
       runtime-version: "1.4.0"
       node-version: "26.7.0"
@@ -20,13 +20,17 @@ jobs:
       prepare-command: "bun run assets:check"
       test-command: "bun run test:coverage"
       lint-command: "bun run lint"
-      typecheck-command: "bun run typecheck && bun run check:isolation"
+      typecheck-command: |
+        bun run typecheck
+        bun run check:isolation
       l2: true
-      l2-command: "bun run test:http && bun run deploy:check"
+      l2-command: |
+        bun run test:http
+        bun run deploy:check
 
   browser:
     name: L3 Browser E2E
-    uses: nocoo/base-ci/.github/workflows/test-job.yml@3d2e9e55fdd60aa756df454ded53ef6d06d6653f
+    uses: nocoo/base-ci/.github/workflows/test-job.yml@2857469cc5206e7a4988171a1282209617996a67
     with:
       runtime-version: "1.4.0"
       node-version: "26.7.0"
@@ -35,6 +39,13 @@ jobs:
       timeout-minutes: 15
       pre-command: "bun run assets:check"
       command: "bun run test:browser"
-      env-json: '{"CI":"true","WRANGLER_LOG_PATH":".wrangler/browser-ci.log","WRANGLER_LOG_SANITIZE":"true"}'
+      env-json: |-
+        {
+          "CI": "true",
+          "WRANGLER_LOG_PATH": ".wrangler/browser-ci.log",
+          "WRANGLER_LOG_SANITIZE": "true"
+        }
       artifact-name: browser-failure-evidence
-      artifact-path: ".test-results/browser/\n.wrangler/browser-ci.log"
+      artifact-path: |
+        .test-results/browser/
+        .wrangler/browser-ci.log
