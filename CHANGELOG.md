@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.12.1] - 2026-09-13
+
+### Maintenance
+
+- remove redundant browsing controls ([ced4a5e](https://github.com/nocoo/hexly.ai/commit/ced4a5e9df6beee1e1931ec0dd4d245c74f0e3a6))
+
+### Fixes
+
+- remove dark edges around video playback ([44c2490](https://github.com/nocoo/hexly.ai/commit/44c2490eab5e730b38d0b40096cc3e6ba29b29b9))
+
+### Features
+
+- add page guides and reusable outro handoffs ([ce7bd2f](https://github.com/nocoo/hexly.ai/commit/ce7bd2fa90242a9a83c676596739f11cbc0b61ea))
+
 ## [0.12.0] - 2026-09-13
 
 ### Features
