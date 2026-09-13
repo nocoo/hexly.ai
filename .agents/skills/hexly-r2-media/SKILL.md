@@ -81,10 +81,10 @@ bun run assets:check-tracked
 
 # After preparing authorized new files and project metadata:
 bun run assets:r2 -- inventory
-bun run assets:r2 -- plan --project snail
-bun run assets:r2 -- publish --project snail --upload
-bun run assets:r2 -- verify --project snail
-bun run assets:r2 -- url /brands/snail/v2.0.0/mark-light.png
+bun run assets:r2 -- plan --project frogie
+bun run assets:r2 -- publish --project frogie --upload
+bun run assets:r2 -- verify --project frogie
+bun run assets:r2 -- url /brands/frogie/v1.0.0/favicon.ico
 
 # A single new screenshot (default is a dry-run; --upload publishes):
 bun run media:r2 -- --project zhe --kind screenshots --asset library \
@@ -107,6 +107,9 @@ records its receipts automatically in `docs/assets/publication.jsonl`.
 Snail retired from the catalogue on 2026-09-13. Its inventoried historical assets
 remain available for hydration and verification; use an active project such as
 Zhe for new single-file material publication.
+Batch `plan`, `url`, `verify` and `hydrate` also accept project IDs retained in
+the inventory. Publication still requires a current catalogue entry; retirement
+does not reopen a product or authorize new files under its historical identity.
 
 The batch helper uses Wrangler's active authentication in memory and the same R2
 object HTTP endpoint as Wrangler. It freezes each file's checked bytes in memory,

@@ -36,7 +36,8 @@ jobs:
       node-version: "26.7.0"
       install-policy: "project"
       browser: "chromium"
-      timeout-minutes: 15
+      # A fresh checkout restores the archived fixtures from R2 before browser tests.
+      timeout-minutes: 25
       pre-command: "bun run assets:check"
       command: "bun run test:browser"
       env-json: |-

@@ -39,6 +39,11 @@ Package, Vite/Vitest configuration, Bun lock/configuration, and TypeScript confi
 
 The material guard reads the Git index; lint and unit tests check working-tree content and do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
 
+Fresh CI checkouts hydrate the complete archived fixtures from R2 before asset
+and browser checks. The browser job has a 25-minute total budget for this added
+setup; individual test timeouts, three workers, zero retries and all assertions
+remain unchanged. Ordinary builds do not hydrate the archive.
+
 ## Port boundaries
 
 | Purpose | Port |

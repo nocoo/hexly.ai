@@ -21,6 +21,38 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("keeps retired materials discoverable without reopening project publication", () => {
+		expect(readProjects().some((project) => project.id === "snail")).toBe(
+			false,
+		);
+		const run = (...args: string[]) =>
+			spawnSync("bun", ["scripts/asset-storage.ts", ...args], {
+				encoding: "utf8",
+			});
+		const plan = run("plan", "--project", "snail");
+		expect(plan.status).toBe(0);
+		expect(JSON.parse(plan.stdout).objects).toBeGreaterThan(0);
+		const url = run(
+			"url",
+			"/brands/snail/v2.0.0/favicon.ico",
+			"--project",
+			"snail",
+		);
+		expect(url.status).toBe(0);
+		expect(url.stdout).toContain(
+			"https://h.no.mt/brands/snail/v2.0.0/favicon.ico",
+		);
+		for (const [command, project] of [
+			["publish", "snail"],
+			["plan", "unregistered-project"],
+		] as const) {
+			const rejected = run(command, "--project", project);
+			expect(rejected.status).not.toBe(0);
+			expect(rejected.stderr).toContain(
+				`Unknown catalogue project: ${project}`,
+			);
+		}
+	});
 	it("rejects forced material additions while preserving source files and local hydration", () => {
 		const directory = mkdtempSync(join(tmpdir(), "hexly-tracked-assets-test-"));
 		const script = resolve("scripts/asset-storage.ts");
