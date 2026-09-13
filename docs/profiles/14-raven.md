@@ -38,12 +38,12 @@ Connect compatible clients to GitHub Copilot and custom model upstreams through 
 
 ## Current logo
 
-![Raven source identity](../../public/logos/display/raven-160.webp)
+![Raven source identity](https://h.no.mt/projects/raven/identity/v1.0.0/raven-160-4d17e04f2f66.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Purple-indigo raven portrait
 - [Source](https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/raven-family-2026-09-07-04-02.png)
+- [Preserved asset](https://h.no.mt/projects/raven/identity/v1.0.0/raven-family-2026-09-07-04-02-9b5f6ee551ad.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2327803 bytes
 - SHA-256: `9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319`
@@ -65,8 +65,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/raven#brand).
-- [Light lockup](../../public/brands/raven/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/raven/v1.0.0/lockup-dark.png), [favicon](../../public/brands/raven/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/raven/v1.0.0/guide.md), [standalone specimens](../../public/brands/raven/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/raven/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/raven/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/raven/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/raven/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/raven/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/raven/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/raven/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -93,7 +93,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥73px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Raven refined preview](../../public/logos/family/raven/2026-09-07-04/02/icon-160.webp)
+![Raven refined preview](https://h.no.mt/logos/family/raven/2026-09-07-04/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-04`, finishing `02`
@@ -101,10 +101,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥73px wide; lockup ≥160px.
 - Site path: `/projects/raven#brand`; [local gallery](https://index.dev.hexly.ai/projects/raven#brand)
 - [Static review HTML](../../artwork/logo-family/raven/2026-09-07-04/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/raven/2026-09-07-04)
-- [Transparent foreground](../../public/logos/family/raven/2026-09-07-04/02/transparent.png); SHA-256: `9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319`
-- [Square icon](../../public/logos/family/raven/2026-09-07-04/02/icon.png), [rounded icon](../../public/logos/family/raven/2026-09-07-04/02/rounded.png), [white version](../../public/logos/family/raven/2026-09-07-04/02/white.png)
-- [Untouched generation](../../public/logos/family/raven/2026-09-07-04/02/raw.png), [exact prompt](../../public/logos/family/raven/2026-09-07-04/02/prompt.txt), [public asset checksums](../../public/logos/family/raven/2026-09-07-04/02/manifest.json)
-- [Previous original](../../public/logos/originals/raven.png), copied from [its immutable source](https://github.com/nocoo/raven/blob/2e082931954fc48131177c57138c6956b1cd67c9/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/raven/2026-09-07-04/02/transparent.png); SHA-256: `9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319`
+- [Square icon](https://h.no.mt/logos/family/raven/2026-09-07-04/02/icon.png), [rounded icon](https://h.no.mt/logos/family/raven/2026-09-07-04/02/rounded.png), [white version](https://h.no.mt/logos/family/raven/2026-09-07-04/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/raven/2026-09-07-04/02/raw.png), [exact prompt](https://h.no.mt/logos/family/raven/2026-09-07-04/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/raven/2026-09-07-04/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/raven-4de4df89c83e.png), copied from [its immutable source](https://github.com/nocoo/raven/blob/2e082931954fc48131177c57138c6956b1cd67c9/logo.png)
 - Previous SHA-256: `4de4df89c83e1fe24a02c6446e158793ccef0edfb7e4ee953a538edcf2004bf8`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

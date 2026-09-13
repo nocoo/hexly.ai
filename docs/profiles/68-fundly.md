@@ -42,12 +42,12 @@ Collect fund and market data for private research into Chinese funds, ETFs, stoc
 
 ## Current logo
 
-![Fundly source identity](../../public/logos/display/fundly-160.webp)
+![Fundly source identity](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-160-5a81ce80d48f.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: White flame on an orange rounded square
 - [Source](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg): `apps/web/public/logo.svg`
-- [Preserved asset](../../public/logos/originals/fundly.svg)
+- [Preserved asset](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-08ec45808b94.svg)
 - Original dimensions: 32 × 32
 - Original size: 456 bytes
 - SHA-256: `08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8`
@@ -67,8 +67,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/fundly#brand).
-- [Light lockup](../../public/brands/fundly/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/fundly/v1.0.0/lockup-dark.png), [favicon](../../public/brands/fundly/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/fundly/v1.0.0/guide.md), [standalone specimens](../../public/brands/fundly/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/fundly/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/fundly/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/fundly/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/fundly/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/fundly/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/fundly/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/fundly/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -95,7 +95,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥67px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Fundly refined preview](../../public/logos/family/fundly/2026-09-07-01/02/icon-160.webp)
+![Fundly refined preview](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/icon-160.webp)
 
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
@@ -103,10 +103,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥67px wide; lockup ≥160px.
 - Site path: `/projects/fundly#brand`; [local gallery](https://index.dev.hexly.ai/projects/fundly#brand)
 - [Static review HTML](../../artwork/logo-family/fundly/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/fundly/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/fundly/2026-09-07-01/02/transparent.png); SHA-256: `e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f`
-- [Square icon](../../public/logos/family/fundly/2026-09-07-01/02/icon.png), [rounded icon](../../public/logos/family/fundly/2026-09-07-01/02/rounded.png), [white version](../../public/logos/family/fundly/2026-09-07-01/02/white.png)
-- [Untouched generation](../../public/logos/family/fundly/2026-09-07-01/02/raw.png), [exact prompt](../../public/logos/family/fundly/2026-09-07-01/02/prompt.txt), [public asset checksums](../../public/logos/family/fundly/2026-09-07-01/02/manifest.json)
-- [Previous original](../../public/logos/originals/fundly.svg), copied from [its immutable source](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg)
+- [Transparent foreground](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/transparent.png); SHA-256: `e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f`
+- [Square icon](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/manifest.json)
+- [Previous original](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-08ec45808b94.svg), copied from [its immutable source](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg)
 - Previous SHA-256: `08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

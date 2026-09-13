@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![InfoViz source identity](../../public/logos/display/infoviz-160.webp)
+![InfoViz source identity](https://h.no.mt/projects/infoviz/identity/v1.0.0/infoviz-160-83ad63f03c94.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
 - [Source](https://github.com/nocoo/infoviz/blob/dc41fd2d23ac9f82c998b3072758c09a86d9b004/images/infoviz_logo@2x.png): `images/infoviz_logo@2x.png`
-- [Preserved asset](../../public/logos/originals/infoviz.png)
+- [Preserved asset](https://h.no.mt/projects/infoviz/identity/v1.0.0/infoviz-6572c1eabfc4.png)
 - Original dimensions: 600 × 207
 - Original size: 24045 bytes
 - SHA-256: `6572c1eabfc4a5159cb71dcda4f70a5f2078fb88205ad40b77a604508d317f9c`

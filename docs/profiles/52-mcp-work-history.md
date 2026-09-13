@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Work History MCP source identity](../../public/logos/display/mcp-work-history-160.webp)
+![Work History MCP source identity](https://h.no.mt/projects/mcp-work-history/identity/v1.0.0/mcp-work-history-160-6b982bcb5462.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/mcp-work-history.png)
+- [Preserved asset](https://h.no.mt/projects/mcp-work-history/identity/v1.0.0/mcp-work-history-cd0c3ef6a10e.png)
 - Original dimensions: 1024 × 1024
 - Original size: 384558 bytes
 - SHA-256: `cd0c3ef6a10e2311e6b444336d336c93e8fa0b316dbd5175b0c133e944649c7b`

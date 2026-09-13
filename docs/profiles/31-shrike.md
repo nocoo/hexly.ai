@@ -37,12 +37,12 @@ Back up selected files and development configurations on a Mac to Google Drive's
 
 ## Current logo
 
-![Shrike source identity](../../public/logos/display/shrike-160.webp)
+![Shrike source identity](https://h.no.mt/projects/shrike/identity/v1.0.0/shrike-160-de4fe5816899.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Shrike portrait
 - [Source](https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/shrike.png)
+- [Preserved asset](https://h.no.mt/projects/shrike/identity/v1.0.0/shrike-97692ebf5b78.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3750012 bytes
 - SHA-256: `97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa`
@@ -64,8 +64,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/shrike#brand).
-- [Light lockup](../../public/brands/shrike/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/shrike/v1.0.0/lockup-dark.png), [favicon](../../public/brands/shrike/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/shrike/v1.0.0/guide.md), [standalone specimens](../../public/brands/shrike/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/shrike/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/shrike/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/shrike/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/shrike/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/shrike/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/shrike/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/shrike/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -92,7 +92,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥74px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Shrike refined preview](../../public/logos/family/shrike/2026-09-07-01/01/icon-160.webp)
+![Shrike refined preview](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -100,10 +100,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥74px wide; lockup ≥160px.
 - Site path: `/projects/shrike#brand`; [local gallery](https://index.dev.hexly.ai/projects/shrike#brand)
 - [Static review HTML](../../artwork/logo-family/shrike/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/shrike/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/shrike/2026-09-07-01/01/transparent.png); SHA-256: `97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa`
-- [Square icon](../../public/logos/family/shrike/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/shrike/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/shrike/2026-09-07-01/01/white.png)
-- [Untouched original](../../public/logos/family/shrike/2026-09-07-01/01/source.png), [presentation brief](../../public/logos/family/shrike/2026-09-07-01/01/brief.txt), [public asset checksums](../../public/logos/family/shrike/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/shrike.png), copied from [its immutable source](https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/transparent.png); SHA-256: `97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa`
+- [Square icon](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/white.png)
+- [Untouched original](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/source.png), [presentation brief](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/shrike/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/projects/shrike/identity/v1.0.0/shrike-97692ebf5b78.png), copied from [its immutable source](https://github.com/nocoo/shrike/blob/9ca43106ca79f35f7b0ad77198b82150a2307b44/logo.png)
 - Previous SHA-256: `97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa`
 - Original artwork retained byte-for-byte at native 2048 × 2048. Zero image-generation calls; only background, grain, and shadow layers were composed.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

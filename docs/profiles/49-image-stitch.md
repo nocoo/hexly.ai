@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Image Stitch source identity](../../public/logos/display/image-stitch-160.webp)
+![Image Stitch source identity](https://h.no.mt/projects/image-stitch/identity/v1.0.0/image-stitch-160-62abc087836b.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/image-stitch.png)
+- [Preserved asset](https://h.no.mt/projects/image-stitch/identity/v1.0.0/image-stitch-a8577c72f3b0.png)
 - Original dimensions: 1024 × 1024
 - Original size: 559822 bytes
 - SHA-256: `a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4`

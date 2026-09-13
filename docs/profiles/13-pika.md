@@ -40,12 +40,12 @@ Collect coding-agent sessions to search, read and organize across tools.
 
 ## Current logo
 
-![Pika source identity](../../public/logos/display/pika-160.webp)
+![Pika source identity](https://h.no.mt/projects/pika/identity/v1.0.0/pika-160-f93791196d7c.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Original yellow Pika with its complete lightning gesture
 - [Source](https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/pika.png)
+- [Preserved asset](https://h.no.mt/projects/pika/identity/v1.0.0/pika-2dc5121317e8.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2575312 bytes
 - SHA-256: `2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b`
@@ -67,8 +67,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/pika#brand).
-- [Light lockup](../../public/brands/pika/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/pika/v1.0.0/lockup-dark.png), [favicon](../../public/brands/pika/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/pika/v1.0.0/guide.md), [standalone specimens](../../public/brands/pika/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/pika/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/pika/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/pika/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/pika/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/pika/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/pika/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/pika/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -95,7 +95,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥51px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Pika refined preview](../../public/logos/family/pika/2026-09-07-01/01/icon-160.webp)
+![Pika refined preview](https://h.no.mt/logos/family/pika/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -103,10 +103,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥51px wide; lockup ≥160px.
 - Site path: `/projects/pika#brand`; [local gallery](https://index.dev.hexly.ai/projects/pika#brand)
 - [Static review HTML](../../artwork/logo-family/pika/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pika/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/pika/2026-09-07-01/01/transparent.png); SHA-256: `2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b`
-- [Square icon](../../public/logos/family/pika/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/pika/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/pika/2026-09-07-01/01/white.png)
-- [Untouched original](../../public/logos/family/pika/2026-09-07-01/01/source.png), [presentation brief](../../public/logos/family/pika/2026-09-07-01/01/brief.txt), [public asset checksums](../../public/logos/family/pika/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/pika.png), copied from [its immutable source](https://github.com/nocoo/pika/blob/d9b12caf26a4715aca440d8a6fe1ed929adcadb3/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/pika/2026-09-07-01/01/transparent.png); SHA-256: `2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b`
+- [Square icon](https://h.no.mt/logos/family/pika/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/pika/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/pika/2026-09-07-01/01/white.png)
+- [Untouched original](https://h.no.mt/logos/family/pika/2026-09-07-01/01/source.png), [presentation brief](https://h.no.mt/logos/family/pika/2026-09-07-01/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/pika/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/projects/pika/identity/v1.0.0/pika-2dc5121317e8.png), copied from [its immutable source](https://github.com/nocoo/pika/blob/d9b12caf26a4715aca440d8a6fe1ed929adcadb3/logo.png)
 - Previous SHA-256: `2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b`
 - Original artwork retained byte-for-byte at native 2048 × 2048. Zero image-generation calls; only background, grain, and shadow layers were composed.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

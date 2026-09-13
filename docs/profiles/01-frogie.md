@@ -38,12 +38,12 @@ Work on local project directories through a web coding assistant, keeping conver
 
 ## Current logo
 
-![Frogie source identity](../../public/logos/display/frogie-160.webp)
+![Frogie source identity](https://h.no.mt/projects/frogie/identity/v1.0.0/frogie-160-c6b4863dd838.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Full-body green frog with musical notes
 - [Source](https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/frogie-2026-09-06.png)
+- [Preserved asset](https://h.no.mt/projects/frogie/identity/v1.0.0/frogie-2026-09-06-752fae79301d.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3588507 bytes
 - SHA-256: `752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b`
@@ -69,8 +69,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/frogie#brand).
-- [Light lockup](../../public/brands/frogie/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/frogie/v1.0.0/lockup-dark.png), [favicon](../../public/brands/frogie/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/frogie/v1.0.0/guide.md), [standalone specimens](../../public/brands/frogie/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/frogie/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/frogie/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/frogie/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/frogie/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/frogie/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/frogie/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/frogie/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -97,17 +97,17 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Frogie refined preview](../../public/logos/family/frogie/2026-09-06-01/03/icon-160.webp)
+![Frogie refined preview](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-01`, finishing `03`
 - Site path: `/projects/frogie#brand`; [local gallery](https://index.dev.hexly.ai/projects/frogie#brand)
 - [Static review HTML](../../artwork/logo-family/frogie/2026-09-06-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/frogie/2026-09-06-01)
-- [Transparent foreground](../../public/logos/family/frogie/2026-09-06-01/03/transparent.png); SHA-256: `752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b`
-- [Square icon](../../public/logos/family/frogie/2026-09-06-01/03/icon.png), [rounded icon](../../public/logos/family/frogie/2026-09-06-01/03/rounded.png), [white version](../../public/logos/family/frogie/2026-09-06-01/03/white.png)
-- [Untouched generation](../../public/logos/family/frogie/2026-09-06-01/03/raw.png), [exact prompt](../../public/logos/family/frogie/2026-09-06-01/03/prompt.txt), [public asset checksums](../../public/logos/family/frogie/2026-09-06-01/03/manifest.json)
-- [Previous original](../../public/logos/originals/frogie.png), copied from [its immutable source](https://github.com/nocoo/frogie/blob/3643e162ef3e3b784a1f8a7c88bd433fae0d5e45/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/transparent.png); SHA-256: `752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b`
+- [Square icon](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/icon.png), [rounded icon](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/rounded.png), [white version](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/raw.png), [exact prompt](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/frogie/2026-09-06-01/03/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/frogie-cf53c0a17c5a.png), copied from [its immutable source](https://github.com/nocoo/frogie/blob/3643e162ef3e3b784a1f8a7c88bd433fae0d5e45/logo.png)
 - Previous SHA-256: `cf53c0a17c5a025dcfa4b3b1eb50e1088a62aa89c1d51813881f8a751c61fbb6`
 - Generation: Azure Foundry · gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

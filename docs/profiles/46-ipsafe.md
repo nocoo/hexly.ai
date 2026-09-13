@@ -35,12 +35,12 @@ Check that a configured URL returns a successful HTTP response and optionally ma
 
 ## Current logo
 
-![IPSafe source identity](../../public/logos/display/ipsafe-160.webp)
+![IPSafe source identity](https://h.no.mt/projects/ipsafe/identity/v1.0.0/ipsafe-160-fad1a905b228.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: A green network cable tester with a short patch lead
 - [Source](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/ipsafe-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/ipsafe/identity/v1.0.0/ipsafe-family-2026-09-07-01-01-1cad3a55e3b0.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3104822 bytes
 - SHA-256: `1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b`
@@ -62,8 +62,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/ipsafe#brand).
-- [Light lockup](../../public/brands/ipsafe/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/ipsafe/v1.0.0/lockup-dark.png), [favicon](../../public/brands/ipsafe/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/ipsafe/v1.0.0/guide.md), [standalone specimens](../../public/brands/ipsafe/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/ipsafe/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/ipsafe/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/ipsafe/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/ipsafe/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/ipsafe/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/ipsafe/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/ipsafe/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -90,7 +90,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥75px wide; lockup ≥160px.
 
 ## Refined identity
 
-![IPSafe refined preview](../../public/logos/family/ipsafe/2026-09-07-01/01/icon-160.webp)
+![IPSafe refined preview](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -98,10 +98,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥75px wide; lockup ≥160px.
 - Site path: `/projects/ipsafe#brand`; [local gallery](https://index.dev.hexly.ai/projects/ipsafe#brand)
 - [Static review HTML](../../artwork/logo-family/ipsafe/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ipsafe/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/ipsafe/2026-09-07-01/01/transparent.png); SHA-256: `1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b`
-- [Square icon](../../public/logos/family/ipsafe/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/ipsafe/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/ipsafe/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/ipsafe/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/ipsafe/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/ipsafe/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/emoji/ipsafe.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
+- [Transparent foreground](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/transparent.png); SHA-256: `1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b`
+- [Square icon](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/ipsafe/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/ipsafe-cfb96dff0fac.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
 - Previous SHA-256: `cfb96dff0fac916f28c150e67adb746fb6b5c6adbe54286f66e23095bb5c239d`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![CCBackup source identity](../../public/logos/display/ccbackup-160.webp)
+![CCBackup source identity](https://h.no.mt/projects/ccbackup/identity/v1.0.0/ccbackup-160-07ec1e3752ef.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/ccbackup.png)
+- [Preserved asset](https://h.no.mt/projects/ccbackup/identity/v1.0.0/ccbackup-1bb8d48c8877.png)
 - Original dimensions: 1024 × 1024
 - Original size: 200904 bytes
 - SHA-256: `1bb8d48c887782be257b7221e84f16579cd775a9922b5c98a2b0bd32d598f2fa`

@@ -36,12 +36,12 @@ Build a private home for videos worth returning to: collect them, organize them 
 
 ## Current logo
 
-![Snail source identity](../../public/logos/display/snail-160.webp)
+![Snail source identity](https://h.no.mt/projects/snail/identity/v1.0.0/snail-160-32814ee530b2.webp)
 
 - Type: Preserved source identity; the current Hexly GPT Image animal is documented separately below
 - Subject: A coiled snail shell, a forward carrying line and one terracotta point
-- [Source](../../public/brands/snail/v1.0.0/mark-light.svg): `artwork/brands/snail/v1.0.0/mark.svg`
-- [Preserved asset](../../public/logos/originals/snail-v1-0-0.svg)
+- [Source](https://h.no.mt/brands/snail/v1.0.0/mark-light.svg): `artwork/brands/snail/v1.0.0/mark.svg`
+- [Preserved asset](https://h.no.mt/projects/snail/identity/v1.0.0/snail-v1-0-0-bd936c17cf3d.svg)
 - Original dimensions: 256 × 256
 - Original size: 632 bytes
 - SHA-256: `bd936c17cf3d2c64c09150a7e4d7fd07206278505f781a8e4eb162fac2bdb00a`
@@ -64,11 +64,11 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## GPT Image animal brand kit
 
 - Brand version: `2.0.0`; [public archive](https://hexly.ai/projects/snail#brand).
-- [Light lockup](../../public/brands/snail/v2.0.0/lockup-light.png), [dark lockup](../../public/brands/snail/v2.0.0/lockup-dark.png), [favicon](../../public/brands/snail/v2.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/snail/v2.0.0/guide.md), [standalone specimens](../../public/brands/snail/v2.0.0/review.html), [all exports and SHA-256](../../public/brands/snail/v2.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/snail/v2.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/snail/v2.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/snail/v2.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/snail/v2.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/snail/v2.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/snail/v2.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - The animal and wide hero are Azure OpenAI GPT Image 2 raster generations, with original requests, responses and raw bytes preserved. Transparent extraction and format exports do not make native SVG. Authored textures and archive code use MIT; the unchanged Space Grotesk wordmark uses SIL OFL 1.1. The asset license records the generated-output rights.
-- [Previous v1.0.0 identity](../../public/brands/snail/v1.0.0/review.html) remains immutable.
+- [Previous v1.0.0 identity](https://hexly.ai/brands/snail/v1.0.0/review.html) remains immutable.
 
 
 A collection kept close. A moment found again. A broad terracotta shell, connected ink-and-olive facets and one red point bring Snail into the Hexly animal family.
@@ -93,7 +93,7 @@ Mark 16px minimum; 24px preferred in navigation. Wordmark ≥72px, lockup ≥160
 
 ## Refined identity
 
-![Snail refined preview](../../public/logos/family/snail/2026-09-13-01/01/icon-160.webp)
+![Snail refined preview](https://h.no.mt/logos/family/snail/2026-09-13-01/01/icon-160.webp)
 
 - Status: Brand selected; source-project adoption pending; updated 2026-09-13.
 - Study `2026-09-13-01`, finishing `01`
@@ -101,10 +101,10 @@ Mark 16px minimum; 24px preferred in navigation. Wordmark ≥72px, lockup ≥160
 - Site path: `/projects/snail#brand`; [local gallery](https://index.dev.hexly.ai/projects/snail#brand)
 - [Static review HTML](../../artwork/logo-family/snail/2026-09-13-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/snail/2026-09-13-01)
-- [Transparent foreground](../../public/logos/family/snail/2026-09-13-01/01/transparent.png); SHA-256: `5a37ddc71323760f5a444d96bd345501be6a6622af4e2f92dee4886d4e9d0b72`
-- [Square icon](../../public/logos/family/snail/2026-09-13-01/01/icon.png), [rounded icon](../../public/logos/family/snail/2026-09-13-01/01/rounded.png), [white version](../../public/logos/family/snail/2026-09-13-01/01/white.png)
-- [Untouched generation](../../public/logos/family/snail/2026-09-13-01/01/raw.png), [exact prompt](../../public/logos/family/snail/2026-09-13-01/01/prompt.txt), [public asset checksums](../../public/logos/family/snail/2026-09-13-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/snail-v1-0-0.svg), copied from [its preserved local source](../../public/brands/snail/v1.0.0/mark-light.svg)
+- [Transparent foreground](https://h.no.mt/logos/family/snail/2026-09-13-01/01/transparent.png); SHA-256: `5a37ddc71323760f5a444d96bd345501be6a6622af4e2f92dee4886d4e9d0b72`
+- [Square icon](https://h.no.mt/logos/family/snail/2026-09-13-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/snail/2026-09-13-01/01/rounded.png), [white version](https://h.no.mt/logos/family/snail/2026-09-13-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/snail/2026-09-13-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/snail/2026-09-13-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/snail/2026-09-13-01/01/manifest.json)
+- [Previous original](https://h.no.mt/projects/snail/identity/v1.0.0/snail-v1-0-0-bd936c17cf3d.svg), copied from [its preserved local source](https://h.no.mt/brands/snail/v1.0.0/mark-light.svg)
 - Previous SHA-256: `bd936c17cf3d2c64c09150a7e4d7fd07206278505f781a8e4eb162fac2bdb00a`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

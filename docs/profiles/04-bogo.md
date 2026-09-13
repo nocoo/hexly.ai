@@ -38,12 +38,12 @@ Keep reporting relationships, documents and revision history together in workspa
 
 ## Current logo
 
-![Bogo source identity](../../public/logos/display/bogo-160.webp)
+![Bogo source identity](https://h.no.mt/projects/bogo/identity/v1.0.0/bogo-160-f655bd506413.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Winking faceted buffalo with a plain muzzle and one rainbow flower sprig
 - [Source](https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/bogo-2026-09-07.png)
+- [Preserved asset](https://h.no.mt/projects/bogo/identity/v1.0.0/bogo-2026-09-07-54bff5a21a25.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3637079 bytes
 - SHA-256: `54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1`
@@ -71,8 +71,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/bogo#brand).
-- [Light lockup](../../public/brands/bogo/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/bogo/v1.0.0/lockup-dark.png), [favicon](../../public/brands/bogo/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/bogo/v1.0.0/guide.md), [standalone specimens](../../public/brands/bogo/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/bogo/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/bogo/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/bogo/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/bogo/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/bogo/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/bogo/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/bogo/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -99,7 +99,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥54px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Bogo refined preview](../../public/logos/family/bogo/2026-09-07-05/04/icon-160.webp)
+![Bogo refined preview](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-05`, finishing `04`
@@ -107,10 +107,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥54px wide; lockup ≥160px.
 - Site path: `/projects/bogo#brand`; [local gallery](https://index.dev.hexly.ai/projects/bogo#brand)
 - [Static review HTML](../../artwork/logo-family/bogo/2026-09-07-05/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/bogo/2026-09-07-05)
-- [Transparent foreground](../../public/logos/family/bogo/2026-09-07-05/04/transparent.png); SHA-256: `54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1`
-- [Square icon](../../public/logos/family/bogo/2026-09-07-05/04/icon.png), [rounded icon](../../public/logos/family/bogo/2026-09-07-05/04/rounded.png), [white version](../../public/logos/family/bogo/2026-09-07-05/04/white.png)
-- [Untouched generation](../../public/logos/family/bogo/2026-09-07-05/04/raw.png), [exact prompt](../../public/logos/family/bogo/2026-09-07-05/04/prompt.txt), [public asset checksums](../../public/logos/family/bogo/2026-09-07-05/04/manifest.json)
-- [Previous original](../../public/logos/originals/bogo.png), copied from [its immutable source](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/transparent.png); SHA-256: `54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1`
+- [Square icon](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/icon.png), [rounded icon](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/rounded.png), [white version](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/raw.png), [exact prompt](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/bogo/2026-09-07-05/04/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/bogo-eeaf1c419feb.png), copied from [its immutable source](https://github.com/nocoo/bogo/blob/2e2d986edffd9d320a3e172f37affe5e3406cabe/logo.png)
 - Previous SHA-256: `eeaf1c419feb02f3990451d642432dbf2fbda2c5ddd1d71269d804e3ce8dd3a1`
 - Generation: Azure Foundry · gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

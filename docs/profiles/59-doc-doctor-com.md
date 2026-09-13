@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Doc Doctor source identity](../../public/logos/display/doc-doctor-com-160.webp)
+![Doc Doctor source identity](https://h.no.mt/projects/doc-doctor-com/identity/v1.0.0/doc-doctor-com-160-89a0eda6f34c.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
 - [Source](https://github.com/nocoo/doc-doctor.com/blob/a6f0de28d2118aeb75bdbd40100ded26ec5ade74/public/favicon.png): `public/favicon.png`
-- [Preserved asset](../../public/logos/originals/doc-doctor-com.png)
+- [Preserved asset](https://h.no.mt/projects/doc-doctor-com/identity/v1.0.0/doc-doctor-com-3df40dd3972a.png)
 - Original dimensions: 128 × 128
 - Original size: 2327 bytes
 - SHA-256: `3df40dd3972a8ea4b85362b84a2c10d2f7fa20564d0aa1d7975a74ab4862b283`

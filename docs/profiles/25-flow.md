@@ -37,12 +37,12 @@ Explore language-model Chinese pinyin conversion, text polishing, and chat in a 
 
 ## Current logo
 
-![Flow source identity](../../public/logos/display/flow-160.webp)
+![Flow source identity](https://h.no.mt/projects/flow/identity/v1.0.0/flow-160-0bcd51496742.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Celadon mechanical keycap with a Chinese character
 - [Source](https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/flow-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/flow/identity/v1.0.0/flow-family-2026-09-07-01-01-d08f2ee2cb2c.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3201869 bytes
 - SHA-256: `d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23`
@@ -65,8 +65,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/flow#brand).
-- [Light lockup](../../public/brands/flow/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/flow/v1.0.0/lockup-dark.png), [favicon](../../public/brands/flow/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/flow/v1.0.0/guide.md), [standalone specimens](../../public/brands/flow/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/flow/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/flow/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/flow/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/flow/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/flow/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/flow/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/flow/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -93,7 +93,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥56px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Flow refined preview](../../public/logos/family/flow/2026-09-07-01/01/icon-160.webp)
+![Flow refined preview](https://h.no.mt/logos/family/flow/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -101,10 +101,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥56px wide; lockup ≥160px.
 - Site path: `/projects/flow#brand`; [local gallery](https://index.dev.hexly.ai/projects/flow#brand)
 - [Static review HTML](../../artwork/logo-family/flow/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/flow/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/flow/2026-09-07-01/01/transparent.png); SHA-256: `d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23`
-- [Square icon](../../public/logos/family/flow/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/flow/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/flow/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/flow/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/flow/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/flow/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/flow.svg), copied from [its immutable source](https://github.com/nocoo/flow/blob/9c225d805a09ab5fdbe4fa65486821057231fdcd/apps/web/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/logos/family/flow/2026-09-07-01/01/transparent.png); SHA-256: `d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23`
+- [Square icon](https://h.no.mt/logos/family/flow/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/flow/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/flow/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/flow/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/flow/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/flow/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/flow-a03a03e3e685.svg), copied from [its immutable source](https://github.com/nocoo/flow/blob/9c225d805a09ab5fdbe4fa65486821057231fdcd/apps/web/public/favicon.svg)
 - Previous SHA-256: `a03a03e3e685fdf4d87541f9e7e83ffdc910018d3782d67847d740fadeea7d6f`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

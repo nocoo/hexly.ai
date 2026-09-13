@@ -38,12 +38,12 @@ Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection 
 
 ## Current logo
 
-![Poké Pocket source identity](../../public/logos/display/pokepocket-160.webp)
+![Poké Pocket source identity](https://h.no.mt/projects/pokepocket/identity/v1.0.0/pokepocket-160-eeca099f387a.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Red-capped trainer turning with a Poké Ball
 - [Source](https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/pokepocket-family-2026-09-07-03-01.png)
+- [Preserved asset](https://h.no.mt/projects/pokepocket/identity/v1.0.0/pokepocket-family-2026-09-07-03-01-eed19029ccc4.png)
 - Original dimensions: 960 × 960
 - Original size: 547985 bytes
 - SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
@@ -66,8 +66,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/pokepocket#brand).
-- [Light lockup](../../public/brands/pokepocket/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/pokepocket/v1.0.0/lockup-dark.png), [favicon](../../public/brands/pokepocket/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/pokepocket/v1.0.0/guide.md), [standalone specimens](../../public/brands/pokepocket/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/pokepocket/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/pokepocket/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/pokepocket/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/pokepocket/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/pokepocket/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/pokepocket/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/pokepocket/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -94,7 +94,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥145px wide; lockup ≥166px
 
 ## Refined identity
 
-![Poké Pocket refined preview](../../public/logos/family/pokepocket/2026-09-07-03/01/icon-160.webp)
+![Poké Pocket refined preview](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-03`, finishing `01`
@@ -102,10 +102,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥145px wide; lockup ≥166px
 - Site path: `/projects/pokepocket#brand`; [local gallery](https://index.dev.hexly.ai/projects/pokepocket#brand)
 - [Static review HTML](../../artwork/logo-family/pokepocket/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pokepocket/2026-09-07-03)
-- [Transparent foreground](../../public/logos/family/pokepocket/2026-09-07-03/01/transparent.png); SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
-- [Square icon](../../public/logos/family/pokepocket/2026-09-07-03/01/icon.png), [rounded icon](../../public/logos/family/pokepocket/2026-09-07-03/01/rounded.png), [white version](../../public/logos/family/pokepocket/2026-09-07-03/01/white.png)
-- [Original illustration](../../public/logos/family/pokepocket/2026-09-07-03/01/source.jpg), [presentation brief](../../public/logos/family/pokepocket/2026-09-07-03/01/brief.txt), [public asset checksums](../../public/logos/family/pokepocket/2026-09-07-03/01/manifest.json)
-- [Previous original](../../public/logos/originals/pokepocket.svg), copied from [its immutable source](https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/transparent.png); SHA-256: `eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d`
+- [Square icon](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/icon.png), [rounded icon](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/rounded.png), [white version](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/white.png)
+- [Original illustration](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/source.jpg), [presentation brief](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/pokepocket/2026-09-07-03/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/pokepocket-45996e3f23bd.svg), copied from [its immutable source](https://github.com/nocoo/pokepocket/blob/48894ea4a1712c755d1bb60a9766a5f67bf15221/public/favicon.svg)
 - Previous SHA-256: `45996e3f23bd37f18ea26b35ee2dc3f13174da07a2aa7fcffbb1a17167d62e29`
 - The owner-supplied illustration is extracted and uniformly reframed at native 960 × 960. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 960 px are explicitly recorded upscales; the native master retains its recorded resolution.

@@ -39,12 +39,12 @@ Reuse terminal-inspired controls, charts, and page templates to build green-on-b
 
 ## Current logo
 
-![Matrix source identity](../../public/logos/display/matrix-160.webp)
+![Matrix source identity](https://h.no.mt/projects/matrix/identity/v1.0.0/matrix-160-395d7911f344.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Floating black-and-green layered circuit deck
 - [Source](https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/matrix-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/matrix/identity/v1.0.0/matrix-family-2026-09-07-01-01-f9490707d630.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3271736 bytes
 - SHA-256: `f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8`
@@ -67,8 +67,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/matrix#brand).
-- [Light lockup](../../public/brands/matrix/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/matrix/v1.0.0/lockup-dark.png), [favicon](../../public/brands/matrix/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/matrix/v1.0.0/guide.md), [standalone specimens](../../public/brands/matrix/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/matrix/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/matrix/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/matrix/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/matrix/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/matrix/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/matrix/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/matrix/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -95,7 +95,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥78px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Matrix refined preview](../../public/logos/family/matrix/2026-09-07-01/01/icon-160.webp)
+![Matrix refined preview](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -103,10 +103,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥78px wide; lockup ≥160px.
 - Site path: `/projects/matrix#brand`; [local gallery](https://index.dev.hexly.ai/projects/matrix#brand)
 - [Static review HTML](../../artwork/logo-family/matrix/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/matrix/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/matrix/2026-09-07-01/01/transparent.png); SHA-256: `f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8`
-- [Square icon](../../public/logos/family/matrix/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/matrix/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/matrix/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/matrix/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/matrix/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/matrix/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/emoji/matrix.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
+- [Transparent foreground](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/transparent.png); SHA-256: `f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8`
+- [Square icon](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/matrix/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/matrix-21d9c4ed49be.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
 - Previous SHA-256: `21d9c4ed49bedc6010a787ae1a16c2b7e982be264dc5c3e446a2fe9ad122e8b3`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

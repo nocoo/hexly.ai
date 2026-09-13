@@ -41,12 +41,12 @@ Write, publish and organize a personal blog through a web console and AI clients
 
 ## Current logo
 
-![Firefly source identity](../../public/logos/display/firefly-160.webp)
+![Firefly source identity](https://h.no.mt/projects/firefly/identity/v1.0.0/firefly-160-438d800efb22.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Broad-winged faceted firefly with a small campfire
 - [Source](https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/firefly-2026-09-06.png)
+- [Preserved asset](https://h.no.mt/projects/firefly/identity/v1.0.0/firefly-2026-09-06-a2c29a6601fb.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2583578 bytes
 - SHA-256: `a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759`
@@ -72,8 +72,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/firefly#brand).
-- [Light lockup](../../public/brands/firefly/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/firefly/v1.0.0/lockup-dark.png), [favicon](../../public/brands/firefly/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/firefly/v1.0.0/guide.md), [standalone specimens](../../public/brands/firefly/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/firefly/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/firefly/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/firefly/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/firefly/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/firefly/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/firefly/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/firefly/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -100,7 +100,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Firefly refined preview](../../public/logos/family/firefly/2026-09-06-10/02/icon-160.webp)
+![Firefly refined preview](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-10`, finishing `02`
@@ -108,10 +108,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px.
 - Site path: `/projects/firefly#brand`; [local gallery](https://index.dev.hexly.ai/projects/firefly#brand)
 - [Static review HTML](../../artwork/logo-family/firefly/2026-09-06-10/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/firefly/2026-09-06-10)
-- [Transparent foreground](../../public/logos/family/firefly/2026-09-06-10/02/transparent.png); SHA-256: `a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759`
-- [Square icon](../../public/logos/family/firefly/2026-09-06-10/02/icon.png), [rounded icon](../../public/logos/family/firefly/2026-09-06-10/02/rounded.png), [white version](../../public/logos/family/firefly/2026-09-06-10/02/white.png)
-- [Untouched generation](../../public/logos/family/firefly/2026-09-06-10/02/raw.png), [exact prompt](../../public/logos/family/firefly/2026-09-06-10/02/prompt.txt), [public asset checksums](../../public/logos/family/firefly/2026-09-06-10/02/manifest.json)
-- [Previous original](../../public/logos/originals/firefly.png), copied from [its immutable source](https://github.com/nocoo/firefly/blob/94a16050f87867458d530e63442b99229603e72b/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/transparent.png); SHA-256: `a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759`
+- [Square icon](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/icon.png), [rounded icon](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/rounded.png), [white version](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/raw.png), [exact prompt](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/firefly/2026-09-06-10/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/firefly-2c07a3d70ee7.png), copied from [its immutable source](https://github.com/nocoo/firefly/blob/94a16050f87867458d530e63442b99229603e72b/logo.png)
 - Previous SHA-256: `2c07a3d70ee783d69d2f839ad7f3bc0ca340804a6e66e2702fbe0bc36a845269`
 - Generation: Azure Foundry · gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

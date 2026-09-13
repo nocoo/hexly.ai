@@ -36,12 +36,12 @@ Deliver local script and Claude Code events as Mac desktop banners, keep project
 
 ## Current logo
 
-![Codo source identity](../../public/logos/display/codo-160.webp)
+![Codo source identity](https://h.no.mt/projects/codo/identity/v1.0.0/codo-160-a96fa266f9cc.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Vivid faceted hummingbird hovering at one coral bell flower
 - [Source](https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/codo-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/codo/identity/v1.0.0/codo-family-2026-09-07-01-01-67456a5040ec.png)
 - Original dimensions: 2048 × 2048
 - Original size: 1902979 bytes
 - SHA-256: `67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf`
@@ -63,8 +63,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/codo#brand).
-- [Light lockup](../../public/brands/codo/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/codo/v1.0.0/lockup-dark.png), [favicon](../../public/brands/codo/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/codo/v1.0.0/guide.md), [standalone specimens](../../public/brands/codo/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/codo/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/codo/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/codo/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/codo/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/codo/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/codo/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/codo/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -91,7 +91,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Codo refined preview](../../public/logos/family/codo/2026-09-07-01/01/icon-160.webp)
+![Codo refined preview](https://h.no.mt/logos/family/codo/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -99,10 +99,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px.
 - Site path: `/projects/codo#brand`; [local gallery](https://index.dev.hexly.ai/projects/codo#brand)
 - [Static review HTML](../../artwork/logo-family/codo/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/codo/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/codo/2026-09-07-01/01/transparent.png); SHA-256: `67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf`
-- [Square icon](../../public/logos/family/codo/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/codo/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/codo/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/codo/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/codo/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/codo/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/codo.png), copied from [its immutable source](https://github.com/nocoo/codo/blob/66df73c4141f3e01a89fd6693f574d1d75fc5e4a/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/codo/2026-09-07-01/01/transparent.png); SHA-256: `67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf`
+- [Square icon](https://h.no.mt/logos/family/codo/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/codo/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/codo/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/codo/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/codo/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/codo/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/codo-d078deff35f8.png), copied from [its immutable source](https://github.com/nocoo/codo/blob/66df73c4141f3e01a89fd6693f574d1d75fc5e4a/logo.png)
 - Previous SHA-256: `d078deff35f8dfc10b8b7192ab3ec8f6603de460ae1a3d3d632731281e62bc74`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

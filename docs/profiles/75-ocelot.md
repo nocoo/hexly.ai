@@ -37,12 +37,12 @@ Read public and private Obsidian vaults from GitHub in a quiet, single-user web 
 
 ## Current logo
 
-![Ocelot source identity](../../public/logos/display/ocelot-160.webp)
+![Ocelot source identity](https://h.no.mt/projects/ocelot/identity/v1.0.0/ocelot-160-ef26140991e8.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Warm-gold faceted ocelot watching a colorful paper bird
 - [Source](https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/ocelot-family-2026-09-11-01-03.png)
+- [Preserved asset](https://h.no.mt/projects/ocelot/identity/v1.0.0/ocelot-family-2026-09-11-01-03-c593f3d70908.png)
 - Original dimensions: 2048 × 2048
 - Original size: 4575584 bytes
 - SHA-256: `c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5`
@@ -71,8 +71,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/ocelot#brand).
-- [Light lockup](../../public/brands/ocelot/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/ocelot/v1.0.0/lockup-dark.png), [favicon](../../public/brands/ocelot/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/ocelot/v1.0.0/guide.md), [standalone specimens](../../public/brands/ocelot/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/ocelot/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/ocelot/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/ocelot/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/ocelot/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/ocelot/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/ocelot/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/ocelot/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -99,7 +99,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥78px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Ocelot refined preview](../../public/logos/family/ocelot/2026-09-11-01/03/icon-160.webp)
+![Ocelot refined preview](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-11.
 - Study `2026-09-11-01`, finishing `03`
@@ -107,10 +107,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥78px wide; lockup ≥160px.
 - Site path: `/projects/ocelot#brand`; [local gallery](https://index.dev.hexly.ai/projects/ocelot#brand)
 - [Static review HTML](../../artwork/logo-family/ocelot/2026-09-11-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/ocelot/2026-09-11-01)
-- [Transparent foreground](../../public/logos/family/ocelot/2026-09-11-01/03/transparent.png); SHA-256: `c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5`
-- [Square icon](../../public/logos/family/ocelot/2026-09-11-01/03/icon.png), [rounded icon](../../public/logos/family/ocelot/2026-09-11-01/03/rounded.png), [white version](../../public/logos/family/ocelot/2026-09-11-01/03/white.png)
-- [Untouched generation](../../public/logos/family/ocelot/2026-09-11-01/03/raw.png), [exact prompt](../../public/logos/family/ocelot/2026-09-11-01/03/prompt.txt), [public asset checksums](../../public/logos/family/ocelot/2026-09-11-01/03/manifest.json)
-- [Previous original](../../public/logos/originals/ocelot-initial.svg), copied from [its immutable source](https://github.com/nocoo/ocelot/blob/b2d89fd134464ab2812a08e6e46703c7cdddd44d/public/favicon.svg)
+- [Transparent foreground](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/transparent.png); SHA-256: `c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5`
+- [Square icon](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/icon.png), [rounded icon](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/rounded.png), [white version](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/raw.png), [exact prompt](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/ocelot/2026-09-11-01/03/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/ocelot-initial-15feb95dae2e.svg), copied from [its immutable source](https://github.com/nocoo/ocelot/blob/b2d89fd134464ab2812a08e6e46703c7cdddd44d/public/favicon.svg)
 - Previous SHA-256: `15feb95dae2e98e98cb6f173ae619db6ba65815c71932f19506e708dd42fc5d6`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

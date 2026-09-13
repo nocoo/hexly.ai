@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Uptime Kuma Skill source identity](../../public/logos/display/uptime-kuma-skill-160.webp)
+![Uptime Kuma Skill source identity](https://h.no.mt/projects/uptime-kuma-skill/identity/v1.0.0/uptime-kuma-skill-160-d37aa8977f35.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/uptime-kuma-skill.png)
+- [Preserved asset](https://h.no.mt/projects/uptime-kuma-skill/identity/v1.0.0/uptime-kuma-skill-c75d48ae2f84.png)
 - Original dimensions: 1024 × 1024
 - Original size: 271935 bytes
 - SHA-256: `c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5`

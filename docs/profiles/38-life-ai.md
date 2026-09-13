@@ -38,12 +38,12 @@ Import personal health, location, and bookkeeping exports, then compare them thr
 
 ## Current logo
 
-![Life.ai source identity](../../public/logos/display/life-ai-160.webp)
+![Life.ai source identity](https://h.no.mt/projects/life-ai/identity/v1.0.0/life-ai-160-ed521ab203ea.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Capybara portrait with an apple
 - [Source](https://github.com/nocoo/life.ai/blob/b6f3e7f426315062e0492e00c4d9448bfa3b8031/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/life-ai-family-2026-09-07-01-02.png)
+- [Preserved asset](https://h.no.mt/projects/life-ai/identity/v1.0.0/life-ai-family-2026-09-07-01-02-dc9f9d0a07ac.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2268740 bytes
 - SHA-256: `dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca`
@@ -65,8 +65,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/life-ai#brand).
-- [Light lockup](../../public/brands/life-ai/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/life-ai/v1.0.0/lockup-dark.png), [favicon](../../public/brands/life-ai/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/life-ai/v1.0.0/guide.md), [standalone specimens](../../public/brands/life-ai/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/life-ai/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/life-ai/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/life-ai/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/life-ai/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/life-ai/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/life-ai/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/life-ai/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -93,7 +93,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥71px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Life.ai refined preview](../../public/logos/family/life-ai/2026-09-07-01/02/icon-160.webp)
+![Life.ai refined preview](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
@@ -101,10 +101,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥71px wide; lockup ≥160px.
 - Site path: `/projects/life-ai#brand`; [local gallery](https://index.dev.hexly.ai/projects/life-ai#brand)
 - [Static review HTML](../../artwork/logo-family/life-ai/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/life-ai/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/life-ai/2026-09-07-01/02/transparent.png); SHA-256: `dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca`
-- [Square icon](../../public/logos/family/life-ai/2026-09-07-01/02/icon.png), [rounded icon](../../public/logos/family/life-ai/2026-09-07-01/02/rounded.png), [white version](../../public/logos/family/life-ai/2026-09-07-01/02/white.png)
-- [Untouched generation](../../public/logos/family/life-ai/2026-09-07-01/02/raw.png), [exact prompt](../../public/logos/family/life-ai/2026-09-07-01/02/prompt.txt), [public asset checksums](../../public/logos/family/life-ai/2026-09-07-01/02/manifest.json)
-- [Previous original](../../public/logos/originals/life-ai.png), copied from [its immutable source](https://github.com/nocoo/life.ai/blob/4e23d62f401ba4aa2fab39956b49312e5818d50d/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/transparent.png); SHA-256: `dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca`
+- [Square icon](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/life-ai/2026-09-07-01/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/life-ai-306b58b66435.png), copied from [its immutable source](https://github.com/nocoo/life.ai/blob/4e23d62f401ba4aa2fab39956b49312e5818d50d/logo.png)
 - Previous SHA-256: `306b58b664359d913e95828db42a754cfc1dfa1b6b007db5b6ed33f3d63d726d`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

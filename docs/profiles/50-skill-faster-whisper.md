@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Faster Whisper source identity](../../public/logos/display/skill-faster-whisper-160.webp)
+![Faster Whisper source identity](https://h.no.mt/projects/skill-faster-whisper/identity/v1.0.0/skill-faster-whisper-160-5b85f40509ae.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/skill-faster-whisper.png)
+- [Preserved asset](https://h.no.mt/projects/skill-faster-whisper/identity/v1.0.0/skill-faster-whisper-fe2151b4426e.png)
 - Original dimensions: 1024 × 1024
 - Original size: 518181 bytes
 - SHA-256: `fe2151b4426e09c6d6b153580e4962f112b342bd01f5bab0b6d4ba83961ba4a6`

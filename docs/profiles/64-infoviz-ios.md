@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![InfoViz iOS source identity](../../public/logos/display/infoviz-ios-160.webp)
+![InfoViz iOS source identity](https://h.no.mt/projects/infoviz/identity/v1.0.0/infoviz-ios-160-869658267c04.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
 - [Source](https://github.com/nocoo/infoviz-ios/blob/ee531d46fb38177bc908c8b6a12ff344cb5c4d75/www/images/infoviz_logo.png): `www/images/infoviz_logo.png`
-- [Preserved asset](../../public/logos/originals/infoviz-ios.png)
+- [Preserved asset](https://h.no.mt/projects/infoviz-ios/identity/v1.0.0/infoviz-ios-56ce71863c1e.png)
 - Original dimensions: 300 × 103
 - Original size: 11382 bytes
 - SHA-256: `56ce71863c1e9e493bf8da07654fd98107bc82c70150bd12311e4dc27d417934`

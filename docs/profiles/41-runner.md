@@ -36,12 +36,12 @@ Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect
 
 ## Current logo
 
-![Runner source identity](../../public/logos/display/runner-160.webp)
+![Runner source identity](https://h.no.mt/projects/runner/identity/v1.0.0/runner-160-68a1f2bd2fc8.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Emerald enamel mechanical stopwatch
 - [Source](https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/runner-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/runner/identity/v1.0.0/runner-family-2026-09-07-01-01-8a388497c330.png)
 - Original dimensions: 2048 × 2048
 - Original size: 4230760 bytes
 - SHA-256: `8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347`
@@ -63,8 +63,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/runner#brand).
-- [Light lockup](../../public/brands/runner/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/runner/v1.0.0/lockup-dark.png), [favicon](../../public/brands/runner/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/runner/v1.0.0/guide.md), [standalone specimens](../../public/brands/runner/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/runner/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/runner/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/runner/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/runner/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/runner/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/runner/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/runner/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -91,7 +91,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥86px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Runner refined preview](../../public/logos/family/runner/2026-09-07-01/01/icon-160.webp)
+![Runner refined preview](https://h.no.mt/logos/family/runner/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -99,10 +99,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥86px wide; lockup ≥160px.
 - Site path: `/projects/runner#brand`; [local gallery](https://index.dev.hexly.ai/projects/runner#brand)
 - [Static review HTML](../../artwork/logo-family/runner/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/runner/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/runner/2026-09-07-01/01/transparent.png); SHA-256: `8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347`
-- [Square icon](../../public/logos/family/runner/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/runner/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/runner/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/runner/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/runner/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/runner/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/runner.png), copied from [its immutable source](https://github.com/nocoo/runner/blob/3bd26f260c1dedf63faf4a616421b8592b975be0/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/runner/2026-09-07-01/01/transparent.png); SHA-256: `8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347`
+- [Square icon](https://h.no.mt/logos/family/runner/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/runner/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/runner/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/runner/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/runner/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/runner/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/runner-2f87f9f05f3f.png), copied from [its immutable source](https://github.com/nocoo/runner/blob/3bd26f260c1dedf63faf4a616421b8592b975be0/logo.png)
 - Previous SHA-256: `2f87f9f05f3f2fe6ca573cf0504a9414396b83f6bb675f4b547e8462cc50aa3b`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
