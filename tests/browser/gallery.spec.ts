@@ -1,8 +1,9 @@
 import { readFile } from "node:fs/promises";
-import { expect, test } from "@playwright/test";
 import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
+import { assetUrl } from "../../src/model/assets";
 import { filterProjects } from "../../src/model/catalogue";
+import { expect, test } from "./fixtures";
 
 // Brand checks stay local; recorded media is exercised in project-media.spec.ts.
 const projects = readProjects().map((project) => ({
@@ -16,12 +17,14 @@ const afterFrogie = ordered[frogieIndex + 1];
 
 test.beforeEach(async ({ page }) => {
 	// The initial crawler snapshot can request its poster before React mounts.
-	await page.route(`${storage.origin}/**`, (route) =>
-		route.fulfill({
-			contentType: "image/svg+xml",
-			headers: { "Access-Control-Allow-Origin": "*" },
-			body: '<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"/>',
-		}),
+	await page.route(
+		`${storage.origin}/projects/hermes-on-herdr/videos/**`,
+		(route) =>
+			route.fulfill({
+				contentType: "image/svg+xml",
+				headers: { "Access-Control-Allow-Origin": "*" },
+				body: '<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"/>',
+			}),
 	);
 	await page.route("**/data/projects.json", (route) =>
 		route.fulfill({ json: projects }),
@@ -79,7 +82,7 @@ for (const id of projects
 		}
 		await expect(page.locator(".artwork-image")).toHaveAttribute(
 			"src",
-			`${family.root}/icon-1024.webp`,
+			assetUrl(`${family.root}/icon-1024.webp`),
 		);
 		await expect(async () => {
 			await page.locator(".artwork-image").evaluate(async (node) => {
@@ -118,12 +121,17 @@ for (const id of projects
 					const image = node as HTMLImageElement;
 					if (!image.naturalWidth) throw new Error("Mark image is not ready.");
 					await image.decode();
+					// Read the same displayed CDN bytes with CORS before inspecting pixels.
+					const readable = new Image();
+					readable.crossOrigin = "anonymous";
+					readable.src = image.currentSrc;
+					await readable.decode();
 					const canvas = document.createElement("canvas");
 					canvas.width = 32;
 					canvas.height = 32;
 					const context = canvas.getContext("2d");
 					if (!context) throw new Error("Canvas context unavailable");
-					context.drawImage(image, 0, 0, 32, 32);
+					context.drawImage(readable, 0, 0, 32, 32);
 					const pixels = context.getImageData(0, 0, 32, 32).data;
 					let count = 0;
 					for (let offset = 3; offset < pixels.length; offset += 4) {
@@ -136,7 +144,7 @@ for (const id of projects
 		}
 		await expect(page.locator(".previous-artwork img")).toHaveAttribute(
 			"src",
-			`${family.root}/previous-1024.webp`,
+			assetUrl(`${family.root}/previous-1024.webp`),
 		);
 		for (const [name, value] of [
 			["White", "white"],
@@ -152,17 +160,21 @@ for (const id of projects
 			);
 			await expect(page.locator(".artwork-image")).toHaveAttribute(
 				"src",
-				value === "icon"
-					? `${family.root}/icon-1024.webp`
-					: family.foreground.display,
+				assetUrl(
+					value === "icon"
+						? `${family.root}/icon-1024.webp`
+						: family.foreground.display,
+				),
 			);
 			await expect(
 				page.locator(".current-artwork .review-tile"),
 			).toHaveAttribute(
 				"href",
-				value === "transparent"
-					? family.foreground.original
-					: `${family.root}/${value}.png`,
+				assetUrl(
+					value === "transparent"
+						? family.foreground.original
+						: `${family.root}/${value}.png`,
+				),
 			);
 		}
 		await expect(page.locator(".sidebar-sample")).toContainText(
@@ -170,9 +182,15 @@ for (const id of projects
 		);
 		await expect(page.locator(".alpha-grid img")).toHaveCount(2);
 		for (const image of await page.locator(".alpha-grid img").all())
-			await expect(image).toHaveAttribute("src", family.foreground.display);
+			await expect(image).toHaveAttribute(
+				"src",
+				assetUrl(family.foreground.display),
+			);
 		for (const link of await page.locator(".alpha-grid a").all())
-			await expect(link).toHaveAttribute("href", family.foreground.original);
+			await expect(link).toHaveAttribute(
+				"href",
+				assetUrl(family.foreground.original),
+			);
 		await page
 			.getByText(
 				supplied
@@ -203,7 +221,9 @@ for (const id of projects
 			}),
 		).toHaveAttribute(
 			"href",
-			`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : "raw.png"}`,
+			assetUrl(
+				`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : "raw.png"}`,
+			),
 		);
 		if (retained) {
 			await expect(
@@ -224,7 +244,7 @@ for (const id of projects
 		expect(await download.failure()).toBeNull();
 		await expect(
 			page.getByRole("link", { name: "View asset source" }),
-		).toHaveAttribute("href", project.logo.sourceUrl);
+		).toHaveAttribute("href", assetUrl(project.logo.sourceUrl));
 	});
 }
 
@@ -463,7 +483,7 @@ test("searches the gallery, labels emoji identities, and recovers from empty or 
 	await expect(page.locator(".identity-footer")).toContainText("profile emoji");
 	await expect(
 		page.getByRole("link", { name: "Download identity" }),
-	).toHaveAttribute("href", "/logos/emoji/uptime-kuma-skill.png");
+	).toHaveAttribute("href", assetUrl("/logos/emoji/uptime-kuma-skill.png"));
 	expect(
 		await page.evaluate(
 			() => document.documentElement.scrollWidth <= innerWidth,

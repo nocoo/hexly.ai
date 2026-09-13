@@ -1,4 +1,5 @@
 import projectIds from "../src/data/projects/index.json" with { type: "json" };
+import { assetKeyForPath, assetUrl } from "../src/model/assets";
 import { legacyRoute } from "../src/model/routes";
 import { runStatusChecks, statusResponse } from "./status";
 
@@ -45,6 +46,20 @@ export default {
 			changed = true;
 		}
 		const originalPath = url.pathname.replace(/\/+$/, "") || "/";
+		if (env.STATUS_MODE === "live" && assetKeyForPath(url.pathname)) {
+			if (!["GET", "HEAD"].includes(request.method))
+				return new Response(null, {
+					status: 405,
+					headers: { Allow: "GET, HEAD" },
+				});
+			return new Response(null, {
+				status: 302,
+				headers: {
+					Location: assetUrl(`${url.pathname}${url.search}`),
+					"Cache-Control": "public, max-age=300",
+				},
+			});
+		}
 		if (host === "status.hexly.ai" && originalPath === "/") {
 			url.pathname = "/status";
 			return env.ASSETS.fetch(new Request(url, request));

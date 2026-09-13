@@ -89,8 +89,8 @@ describe("versioned brand identities", () => {
 			`${kit.root}/wordmark-dark.svg`,
 		);
 		expect(brandTexture(kit)).toEqual({
-			"--brand-texture-light": `url("${kit.root}/texture-light.svg")`,
-			"--brand-texture-dark": `url("${kit.root}/texture-dark.svg")`,
+			"--brand-texture-light": `url("https://h.no.mt${kit.root}/texture-light.svg")`,
+			"--brand-texture-dark": `url("https://h.no.mt${kit.root}/texture-dark.svg")`,
 		});
 		expect(brandTexture(nativeKit)).toBeUndefined();
 		expect(brandTexture(undefined)).toBeUndefined();

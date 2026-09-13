@@ -1,5 +1,6 @@
 import { copy } from "../data/copy";
 import identity from "../data/site-identity.json" with { type: "json" };
+import { assetUrl } from "./assets";
 import { filterProjects } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { legacyRoute } from "./routes";
@@ -48,8 +49,8 @@ export function absoluteUrl(path: string): string {
 }
 
 export function socialImage(project?: Project): string {
-	if (!project) return `${siteOrigin}/og.jpg`;
-	return `${siteOrigin}/og/${project.id}.jpg`;
+	if (!project) return assetUrl(`${siteOrigin}/og.jpg`);
+	return assetUrl(`${siteOrigin}/og/${project.id}.jpg`);
 }
 
 export interface ShareImage {
@@ -557,14 +558,14 @@ function snapshotHtml(
 		project?.media?.videos
 			?.map(
 				(video) =>
-					`<figure id="video-${escapeHtml(video.id)}"><a href="${escapeHtml(video.src)}"><img crossorigin="anonymous" src="${escapeHtml(video.poster)}" alt="${escapeHtml(video.title.en)}" width="960" height="540" loading="lazy" />${escapeHtml(video.title.en)}</a></figure>`,
+					`<figure id="video-${escapeHtml(video.id)}"><a href="${escapeHtml(assetUrl(video.src))}"><img crossorigin="anonymous" src="${escapeHtml(assetUrl(video.poster))}" alt="${escapeHtml(video.title.en)}" width="960" height="540" loading="lazy" />${escapeHtml(video.title.en)}</a></figure>`,
 			)
 			.join("") ?? "";
 	const screenshotsHtml =
 		project?.media?.screenshots
 			?.map(
 				(shot) =>
-					`<figure><a href="${escapeHtml(shot.src)}"><img src="${escapeHtml(shot.src)}" alt="${escapeHtml(shot.alt.en)}" width="${shot.width}" height="${shot.height}" loading="lazy" /></a><figcaption>${escapeHtml(shot.alt.en)}</figcaption></figure>`,
+					`<figure><a href="${escapeHtml(assetUrl(shot.src))}"><img src="${escapeHtml(assetUrl(shot.src))}" alt="${escapeHtml(shot.alt.en)}" width="${shot.width}" height="${shot.height}" loading="lazy" /></a><figcaption>${escapeHtml(shot.alt.en)}</figcaption></figure>`,
 			)
 			.join("") ?? "";
 	const mediaHtml =
@@ -572,7 +573,7 @@ function snapshotHtml(
 			? `<section id="media"><h2>${copy.en.projectMedia}</h2>${videoHtml}${screenshotsHtml}</section>`
 			: "";
 	const brandHtml = project
-		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(project.family?.foreground.display ?? project.logo.display)}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(project.logo.original)}">Download original</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a></p></section>`
+		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.family?.foreground.display ?? project.logo.display))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">Download original</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a></p></section>`
 		: "";
 	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
 }

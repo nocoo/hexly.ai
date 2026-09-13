@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
+import { assetUrl } from "../../src/model/assets";
 import { filterProjects } from "../../src/model/catalogue";
 import {
 	absoluteUrl,
@@ -98,7 +99,7 @@ describe("crawler discovery documents", () => {
 		expect(card.canonical).toBe("https://hexly.ai/projects/pew");
 		expect(card.title).toBe("Pew — hexly.ai");
 		expect(card.image).toEqual({
-			url: "https://hexly.ai/og/pew.jpg",
+			url: assetUrl("/og/pew.jpg"),
 			type: "image/jpeg",
 			width: 1200,
 			height: 630,
@@ -106,7 +107,7 @@ describe("crawler discovery documents", () => {
 		});
 		expect(card.website).toBe("https://pew.md");
 		expect(siteShareCard().id).toBe("hexly-ai");
-		expect(siteShareCard().image.url).toBe("https://hexly.ai/og.jpg");
+		expect(siteShareCard().image.url).toBe(assetUrl("/og.jpg"));
 		const index = shareIndex(projects);
 		expect(index.projects).toHaveLength(projects.length);
 		expect(index.projects.find((entry) => entry.id === "pew")).toEqual({
@@ -140,8 +141,8 @@ describe("crawler discovery documents", () => {
 		expect(page.title).toBe("Frogie — hexly.ai");
 		expect(page.description).toBe(frogie.description.en);
 		expect(page.bodyHtml).toContain(frogie.repository);
-		expect(socialImage()).toBe("https://hexly.ai/og.jpg");
-		expect(socialImage(frogie)).toBe("https://hexly.ai/og/frogie.jpg");
+		expect(socialImage()).toBe(assetUrl("/og.jpg"));
+		expect(socialImage(frogie)).toBe(assetUrl("/og/frogie.jpg"));
 		expect(absoluteUrl("/projects/pew")).toBe("https://hexly.ai/projects/pew");
 		const graph = home.jsonLd as {
 			"@graph": {
@@ -164,7 +165,7 @@ describe("crawler discovery documents", () => {
 		expect(html).toContain('"@type":"SoftwareApplication"');
 		expect(html).toContain("<h1>Frogie 🐸</h1>");
 		expect(html.match(/<h1>/g)?.length).toBe(1);
-		expect(html).toContain('content="https://hexly.ai/og/frogie.jpg"');
+		expect(html).toContain(`content="${assetUrl("/og/frogie.jpg")}"`);
 		expect(html).toContain('content="image/jpeg"');
 		expect(html).not.toContain("<title>old</title>");
 	});
@@ -185,7 +186,7 @@ describe("crawler discovery documents", () => {
 		expect(pageForPath("/videos/launch", projects)).toEqual(
 			pageForPath("/templates/launch", projects),
 		);
-		expect(page.bodyHtml).toContain(`href="${frogie.logo.original}"`);
+		expect(page.bodyHtml).toContain(`href="${assetUrl(frogie.logo.original)}"`);
 		expect(page.bodyHtml).toContain(
 			`href="${escapeHtml(frogie.logo.sourceUrl)}"`,
 		);

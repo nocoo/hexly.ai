@@ -1,130 +1,149 @@
 ---
 name: hexly-r2-media
-description: Manage this repository's hexlyai R2 media bucket at h.no.mt. Upload approved project videos, posters and captions under immutable project/video/version paths, obtain verified public URLs, and maintain the project catalogue and publication records.
+description: Publish and maintain Hexly project materials in the hexlyai R2 bucket at h.no.mt. Use for logos, brand packages, screenshots, fonts, recorded media, downloads, asset URLs, local hydration and asset onboarding. Preserve immutable bytes, identity rights and versioned receipts; keep renderer caches private and outside deployment.
 ---
 
-# Hexly project media
+# Hexly R2 materials
 
-Use this skill for Hexly's recorded project media, including replacing a film
-with a new version, retrieving its URLs, or checking an existing upload. The
-Video Kit's reusable templates stay separate from finished recordings.
+Read `CLAUDE.md`, [the execution/recovery plan](../../../docs/20-r2-assets-execution.md)
+and [the material contract](../../../docs/21-asset-storage.md). The owner authorized
+R2 migration, publication, then Git history reduction on 2026-09-13. This replaces
+the older instruction to retain all binary materials in Git/Workers Static Assets.
+Ordinary asset tasks do not authorize another history rewrite or object deletion.
 
-## Actual resources
+## Actual service and records
 
-- Cloudflare account: **Zheng Li Workspace**.
-- Bucket: **`hexlyai`**, APAC, Standard storage.
-- Public origin: **`https://h.no.mt`**, active custom domain, minimum TLS 1.2.
-- Machine-readable bucket/origin: [`src/data/media-storage.json`](../../../src/data/media-storage.json).
-  Read this before using a remembered hostname. `media.hexly.ai` and
-  `hexly-media` were proposals and are not this service.
-- The site links to R2 directly. Do not add an R2 binding or a media proxy to
-  the Hexly Worker. Existing tracked logos/screenshots remain in Git and
-  Workers Static Assets with their original paths and bytes.
-- The owner's CORS configuration, checked 2026-09-12, allows
-  `https://*.dev.hexly.ai`, `https://*.hexly.ai`, `https://hexly.ai`,
-  `https://lizheng.dev`, `https://lizheng.me`, and `https://lizheng.blog`;
-  methods GET/HEAD/PUT/POST/DELETE, all request headers, exposed
-  ETag/Content-Length/Content-Type, max age 1800 seconds. Preserve it unless
-  the task includes changing it. CORS does not grant anonymous upload access.
-- The only observed lifecycle rule aborts incomplete multipart uploads after
-  seven days. Completed media have no expiry. The status D1 seven-day retention
-  rule does not apply to these files.
+- Source of truth: [`src/data/media-storage.json`](../../../src/data/media-storage.json).
+  Bucket **hexlyai**, origin **https://h.no.mt**, Zheng Li Workspace, APAC Standard.
+  Use the custom domain, never a remembered proposed hostname or S3/r2.dev URL.
+- Direct CDN delivery; the existing Worker serves pages/code/APIs and redirects
+  legacy asset addresses. It has no media binding or streaming proxy.
+- [`docs/assets/inventory.json`](../../../docs/assets/inventory.json) maps source
+  paths to object keys, public paths, bytes, SHA-256, MIME, project and provenance.
+  `src/data/asset-routes.json` is its generated loose-file URL map; versioned
+  brand/family/video-font directories preserve their public relative paths.
+- `docs/assets/publication.jsonl` records completed full-byte CDN checks. Existing
+  project-film receipts remain in `docs/media/<project>/<video-id>/v<version>.json`.
+  `Project.media.videos` references an active film once, independent of templates.
+- Existing source rights, official Logo bytes/colors and campaign distinction
+  remain authoritative. R2 hosting grants no new license. Keep provenance,
+  generation prompts/model/source hashes and OFL/MIT notices with their source.
+- Completed objects have no expiry. The sole seven-day lifecycle rule aborts
+  incomplete multipart uploads; it does not delete assets or films.
 
-## Keys, versions and records
+## Paths and versions
+
+Project IDs come from `src/data/projects/index.json`; `hexly-ai` is the shared
+site identity. Asset versions are independent of site/app/Video Kit versions.
 
 ```text
-projects/<catalogue-id>/videos/<video-id>/v<X.Y.Z>/<filename>-<sha256-first-12>.<ext>
+brands/<project>/v<X.Y.Z>/...                             # complete brand package
+logos/family/<historical-project>/<batch>/<pass>/...    # frozen historical exports
+video-kit/<asset-version>/hexly/...                     # licensed template fonts
+projects/<project>/videos/<film>/v<X.Y.Z>/<name>-<hash12>.<ext>
+projects/<project>/<kind>/<asset>/v<X.Y.Z>/<name>-<hash12>.<ext>
+shared/site/v<X.Y.Z>/<name>-<hash12>.<ext>                 # site material / loose aliases
+archives/sources/v1.0.0/<sha256>.<ext>                    # migrated historical source bytes
 ```
 
-The project ID comes from `src/data/projects/<id>.json`. A video ID identifies
-one film, for example `context-en`; its version is independent of the app,
-website and Video Kit versions. Start a film at `1.0.0`, and increment its
-version for a revised publication. Keep previous URLs working. Hashes make
-individual object URLs immutable; never replace different bytes at an old key.
+Frozen packages keep every byte and internal relative path, including their
+original manifest root/canonical fields. The CDN origin is delivery metadata;
+never rewrite published manifests simply to change hostname. New/changed assets
+need new immutable keys; preserve earlier receipts and URLs. Original project
+identity and Hexly campaign interpretations are separate roles.
 
-Keep a small publication receipt at
-`docs/media/<project>/<video-id>/v<version>.json`: source repository/revision and
-production directory, duration, upload date, each file's key, public URL,
-SHA-256, byte size and Content-Type. Do not put narration, production logs,
-MP4/audio binaries or renderer caches in this repository. The active film is
-referenced once in the existing project's `media.videos`; old receipts remain
-available for maintenance and rollback.
+HTML comparison pages and their JS/CSS remain application documents on hexly.ai.
+The R2 copy is the unchanged source/download archive, not a new canonical page.
+Never globally set Vite's base to the CDN or place renderer outputs in public/.
 
-## Inspect or upload
+## Inspect, publish, recover
 
-Run from the repository root using its installed Bun and Wrangler. Read the
-repository's CLAUDE.md and [media contract](../../../docs/17-project-media.md).
-Honor the current request: inspection and the default command below are
-read-only; an upload request authorizes the named files, and a release request
-authorizes the site's normal release workflow. Do not request the same approval
-again, or infer permission to change other buckets, CORS or unrelated files.
+Run from the repository root with installed Bun/Wrangler:
 
 ```sh
-wrangler whoami
-wrangler r2 bucket info hexlyai --json
-wrangler r2 bucket domain list hexlyai
-wrangler r2 bucket cors list hexlyai
-wrangler r2 bucket lifecycle list hexlyai
+# Inspect only; never print authentication tokens.
+bunx wrangler whoami
+bunx wrangler r2 bucket info hexlyai --json
+bunx wrangler r2 bucket domain list hexlyai
+bunx wrangler r2 bucket cors list hexlyai
+bunx wrangler r2 bucket lifecycle list hexlyai
 
-# Local plan only: validate, hash and print the exact future URL.
-bun run media:r2 -- --project hermes-on-herdr --video context-en \
-  --version 1.0.0 --file /absolute/path/hermes-on-herdr-context-en.mp4
+# Restore missing material files, preserving any existing local edits.
+bun run assets:hydrate
+bun run assets:r2 -- hydrate --project snail
 
-# Add --upload only within the user's upload authorization.
+# After preparing authorized new files and project metadata:
+bun run assets:r2 -- inventory
+bun run assets:r2 -- plan --project snail
+bun run assets:r2 -- publish --project snail --upload
+bun run assets:r2 -- verify --project snail
+bun run assets:r2 -- url /brands/snail/v2.0.0/mark-light.png
+
+# A single new screenshot (default is a dry-run; --upload publishes):
+bun run media:r2 -- --project snail --kind screenshots --asset library \
+  --version 1.0.0 --file /absolute/path/library.webp
+
+# Existing film workflow remains compatible; default is a local dry-run.
 bun run media:r2 -- --project hermes-on-herdr --video context-en \
-  --version 1.0.0 --file /absolute/path/hermes-on-herdr-context-en.mp4 --upload
+  --version 1.0.0 --file /absolute/path/film.mp4
+# Add --upload only within an upload/publication task.
 ```
 
-Repeat for the approved poster and real WebVTT file under the same video/version.
-The helper freezes the input in a temporary directory, sets its MIME type and
-`Cache-Control: public, max-age=31536000, immutable`, and verifies the full file
-through the public CDN. A matching existing object is reused; unexpected HTTP
-responses or different public bytes stop the operation. It does not overwrite
-an existing object, rewrite the source or automatically publish the website.
-Use its printed URL, not an S3 API endpoint or r2.dev URL. It never needs token
-values in source, arguments or output. If Wrangler rejects a large file, use
-authenticated S3 multipart upload for that exact key and verify the same hash;
-do not add a new proxy service.
+The single-file helper prints the verified result; it does not silently register
+a new catalogue asset. Save its URL/key/bytes/SHA, independent version, source
+revision, license and verification time in
+`docs/media/<project>/<video-id>/v<version>.json` for films, or
+`docs/assets/<project>/<kind>/<asset-id>/v<version>.json` for other single files.
+Add the catalogue reference only after this receipt exists. Batch publication
+records its receipts automatically in `docs/assets/publication.jsonl`.
 
-Before upload, inspect the original with ffprobe: H.264/AAC MP4, 16:9 dimensions
-and moov before mdat give predictable progressive playback. Use the supplied
-approved export; do not silently regenerate or transcode it. Preserve supplied
-posters and caption timing. If the picture already has burned-in captions, set
-`captionsBurnedIn: true` so the optional native caption track starts off.
+The batch helper uses Wrangler's active authentication in memory and the same R2
+object HTTP endpoint as Wrangler. It freezes each file's checked bytes in memory,
+limits concurrency and write rate, retries transient network failures at most
+three times, stops on authorization/checksum failures, and records successful
+GET byte/MIME verification. A repository lock prevents overlapping local upload
+runs. Existing objects are verified and reused. This is a single-writer workflow:
+HEAD-before-PUT is not an atomic distributed conditional write. Coordinate other
+writers of the same published package; different bytes must never be overwritten.
 
-## Verify, integrate and retrieve
+For an interrupted run, confirm the lock's PID is no longer the uploader before
+removing that stale lock. Keep its receipts and rerun the same bounded command.
+Receipts allow resumption; use `verify` for a fresh current availability check.
+Do not start a second writer or repeat an unresolved 401/403 indefinitely.
+If an uploaded URL still returns a cached 404, inspect Cache-Status/Age and
+compare a unique-query GET against the expected SHA. Wait for expiry or purge
+only that URL with existing zone permissions, then verify the bare URL before
+resuming. A successful cache-busted response alone does not prove the bare URL
+is ready. Never overwrite correct bytes to fix an edge-cache response.
 
-1. Check public HEAD/GET, SHA-256, correct MIME and cache headers. For MP4, a
-   request with `Range: bytes=0-1023` must return 206 with the expected bytes.
-   Check CORS with the actual production and local review origins; curl without
-   an Origin header does not test browser CORS.
-2. Add the active film to `src/data/projects/<id>.json` using the existing
-   `ProjectVideo` type: bilingual title, src, poster, actual duration, language,
-   video version, MP4 checksum, receipt path as source, and real captions.
-   Keep the CDN allowlist and `public/_headers` CSP aligned with the storage
-   origin. There is no per-template copy of the film.
-3. Use the actual local HTTPS page to verify poster-first loading, play, seek,
-   captions, and mobile layout. CI browser tests intercept media and must not
-   depend on Cloudflare or download real films.
-4. Publish only when requested, using `bun run release -- minor` for Y+1 (or
-   the requested version), after committing the intended work and running the
-   relevant checks. Follow `docs/05-release.md`; verify the exact production
-   revision and `/projects/<id>#video-<video-id>` after deployment.
+`--scope public` is the default; `--scope all` also handles inventoried source
+archives. Do not upload arbitrary temporary directories. Source duplicates can
+recover from the same hashed object. Hydrated files/cache are disposable local
+working material; their verified R2 objects and small source records are durable.
 
-To recover URLs, read `media.videos` for the active version and the matching
-`docs/media/` receipt for every published asset. The URL is always the storage
-origin plus `/` plus its key. Wrangler currently has no object-list command;
-do not invent `wrangler r2 object list`. Use receipts/Git history, or an already
-authorized S3 client for a bucket inventory. Metadata is not proof an object is
-healthy: verify its public response when diagnosing a failure.
+## Integrate and verify
 
-For a 403 with Cloudflare error 1010, compare curl and a real browser before
-changing permissions: this zone rejected Python urllib's default client during
-the first publication while curl and the CDN uploader worked. Preserve TLS
-verification and existing security policies.
+1. Prepare authoritative identity and license/provenance records before export.
+   Preserve full compositions, original colors and exact Logo hashes.
+2. Publish and verify the approved inventory. Retrieve addresses with `url`;
+   never hand-build or guess a URL. Catalogue paths identify original assets;
+   `src/model/assets.ts` resolves their delivery URL. Use `AssetLink` for material
+   downloads so cross-origin browser behavior still produces the original file.
+3. Keep fonts/media MIME, cache metadata, CSP and actual browser CORS aligned.
+   R2 does not inherit `_headers`. The owner's CORS policy is preserved: actual
+   GET/HEAD checks passed for hexly.ai, status.hexly.ai and index.dev.hexly.ai.
+   Check new origins explicitly. Dev review uses the existing HTTPS domain.
+4. Existing recorded media stays H.264/AAC, moov-before-mdat, original approved
+   export. Check HEAD/GET, full checksum, and Range bytes=0-1023 returning 206.
+   Preserve posters, real captions and captionsBurnedIn; no silent transcode.
+5. Run assets:check and relevant model/HTTP/browser checks. Browser fixtures use
+   CDN URLs with verified local bytes, avoiding live Cloudflare dependencies.
+   The production build rejects material binaries and enforces a 20 MiB budget.
+6. Complete catalogue/profile/onboarding work only in authorized repositories.
+   This migration itself changes hexly.ai only. Publish through docs/05-release.md
+   and verify exact SHA/version, canonical pages, old asset URLs and direct CDN.
 
-Changing the active catalogue entry is the normal rollback. Removal from the
-site is not permission to delete the public object. For an explicitly requested
-delete, first identify the exact receipt/key and all references; use
-`wrangler r2 object delete hexlyai/<key> --remote` only for those named objects.
-Never apply a blanket lifecycle expiration to published videos.
+Rolling back an active catalogue reference does not delete its R2 object. Object
+removal requires a specifically authorized list and a reference check. Never add
+blanket lifecycle expiration or commit movie/large-image binaries. Preserve old
+Git-revision maps and external history backups described in the execution plan.

@@ -1,6 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
+import { assetUrl } from "../../src/model/assets";
+import { expect, test } from "./fixtures";
 
 const targets = readProjects().filter(
 	(project) => project.brandKit?.method === "archived-artwork",
@@ -50,7 +51,7 @@ for (const project of targets) {
 			);
 			await expect(page.locator(".brand-official-source img")).toHaveAttribute(
 				"src",
-				project.logo.original,
+				assetUrl(project.logo.original),
 			);
 			await expect(page.locator(".brand-official-source img")).toHaveCSS(
 				"opacity",

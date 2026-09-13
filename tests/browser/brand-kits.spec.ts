@@ -1,6 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
+import { assetUrl } from "../../src/model/assets";
+import { expect, test } from "./fixtures";
 
 const snail = readProjects().find((project) => project.id === "snail");
 if (!snail?.brandKit || !snail.family)
@@ -36,7 +37,7 @@ test("browses Snail's bilingual brand archive, theme variants and real downloads
 	await expect(page.locator(".project-readme")).toHaveCount(0);
 	await expect(page.locator(".brand-hero img")).toHaveAttribute(
 		"src",
-		`${kit.root}/hero.webp`,
+		assetUrl(`${kit.root}/hero.webp`),
 	);
 	await expect
 		.poll(() =>
@@ -56,7 +57,7 @@ test("browses Snail's bilingual brand archive, theme variants and real downloads
 				await page.locator(".theme-toggle").click();
 			await expect(
 				page.locator(".identity-heading .logo-plain img"),
-			).toHaveAttribute("src", foreground.display);
+			).toHaveAttribute("src", assetUrl(foreground.display));
 			await expect(page.locator(".brand-kit-intro")).toHaveCSS(
 				"background-image",
 				new RegExp(`texture-${theme}\\.svg`),
@@ -69,7 +70,7 @@ test("browses Snail's bilingual brand archive, theme variants and real downloads
 				await image.evaluate((node: HTMLImageElement) => node.decode());
 			await expect(page.locator(`.brand-kit-${theme} img`)).toHaveAttribute(
 				"src",
-				`${kit.root}/lockup-${theme}.png`,
+				assetUrl(`${kit.root}/lockup-${theme}.png`),
 			);
 			expect(
 				await page.evaluate(

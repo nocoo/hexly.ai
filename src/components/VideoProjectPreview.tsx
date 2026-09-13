@@ -1,4 +1,4 @@
-import { createProjectFilm } from "@hexly/video-kit";
+import { createProjectFilm, HexlyFontOrigin } from "@hexly/video-kit";
 import { VideoPreview } from "@hexly/video-kit/player";
 import type {
 	CompositionOptions,
@@ -7,6 +7,7 @@ import type {
 	VideoProject,
 } from "@hexly/video-kit/schema";
 import { useMemo, useState } from "react";
+import storage from "../data/media-storage.json";
 import { videoCopy } from "../data/video-copy";
 import type { Locale } from "../model/project";
 
@@ -48,14 +49,16 @@ export default function VideoProjectPreview({
 	};
 	return (
 		<>
-			<VideoPreview
-				config={film}
-				locale={locale}
-				view={view}
-				onView={onView}
-				onConfigChange={setRenderConfig}
-				focusScene={focusScene}
-			/>
+			<HexlyFontOrigin.Provider value={storage.origin}>
+				<VideoPreview
+					config={film}
+					locale={locale}
+					view={view}
+					onView={onView}
+					onConfigChange={setRenderConfig}
+					focusScene={focusScene}
+				/>
+			</HexlyFontOrigin.Provider>
 			<div className="video-export">
 				<div>
 					<h2>{t.render}</h2>

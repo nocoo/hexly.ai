@@ -1,7 +1,9 @@
 import { type CSSProperties, useState } from "react";
 import { categoryLabels, copy } from "../data/copy";
+import { assetUrl } from "../model/assets";
 import { destination } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
+import { AssetLink } from "./AssetLink";
 import { BrandKit } from "./BrandKit";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
@@ -85,7 +87,7 @@ export function LogoReview({
 						{family && (
 							<figure className="previous-artwork">
 								<div className="art-well">
-									<a
+									<AssetLink
 										className="review-tile previous-tile"
 										style={tileStyle}
 										href={family.previous.original}
@@ -94,28 +96,28 @@ export function LogoReview({
 										aria-label={`${t.openOriginal}: ${t.previousArtwork}`}
 									>
 										<img
-											src={`${family.root}/previous-1024.webp`}
+											src={assetUrl(`${family.root}/previous-1024.webp`)}
 											alt={`${project.title} — ${t.previousArtwork}`}
 											width={1024}
 											height={1024}
 										/>
-									</a>
+									</AssetLink>
 								</div>
 								<figcaption>
 									<strong>{t.previousArtwork}</strong>
-									<a
+									<AssetLink
 										href={family.previous.sourceUrl}
 										target="_blank"
 										rel="noreferrer"
 									>
 										{t.previousSource} ↗
-									</a>
+									</AssetLink>
 								</figcaption>
 							</figure>
 						)}
 						<figure className="current-artwork">
 							<div className="art-well">
-								<a
+								<AssetLink
 									className={`review-tile ${family ? "family-tile" : "baseline-tile"}`}
 									style={tileStyle}
 									href={currentDownload}
@@ -125,13 +127,13 @@ export function LogoReview({
 								>
 									<img
 										className="artwork-image"
-										src={currentImage}
+										src={assetUrl(currentImage)}
 										width={1024}
 										height={1024}
 										alt={`${project.title} — ${family?.foreground.subject?.[locale] ?? project.subject}`}
 										fetchPriority="high"
 									/>
-								</a>
+								</AssetLink>
 							</div>
 							<figcaption>
 								<strong>{family ? t.refinedArtwork : t.currentArtwork}</strong>
@@ -252,7 +254,7 @@ export function LogoReview({
 				<div className="alpha-grid">
 					{(["light", "dark"] as const).map((surface) => (
 						<figure key={surface}>
-							<a
+							<AssetLink
 								className={`alpha-well alpha-${surface}`}
 								href={
 									project.brandKit && !family
@@ -264,17 +266,17 @@ export function LogoReview({
 								aria-label={`${t.openOriginal}: ${surface === "light" ? t.white : t.black}`}
 							>
 								<img
-									src={
+									src={assetUrl(
 										project.brandKit && !family
 											? `${project.brandKit.root}/mark-${surface}.svg`
-											: foreground.display
-									}
+											: foreground.display,
+									)}
 									alt={`${project.title} — ${surface === "light" ? t.lightSetting : t.darkSetting}`}
 									loading="lazy"
 									width={1024}
 									height={1024}
 								/>
-							</a>
+							</AssetLink>
 							<figcaption>
 								<strong>{surface === "light" ? t.white : t.black}</strong>
 								<span>

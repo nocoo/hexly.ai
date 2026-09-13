@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { copy } from "../data/copy";
+import { assetUrl } from "../model/assets";
 import type { Locale, LogoFamily, Project } from "../model/project";
+import { AssetLink } from "./AssetLink";
 
 export function LogoArchive({
 	family,
@@ -22,7 +24,7 @@ export function LogoArchive({
 		const controller = new AbortController();
 		setPrompt("");
 		setFailed(false);
-		fetch(`${family.root}/${textFile}`, { signal: controller.signal })
+		fetch(assetUrl(`${family.root}/${textFile}`), { signal: controller.signal })
 			.then((response) => {
 				if (!response.ok) throw new Error(`HTTP ${response.status}`);
 				return response.text();
@@ -68,7 +70,7 @@ export function LogoArchive({
 						`${family.root}/${textFile}`,
 					],
 				].map(([label, href]) => (
-					<a
+					<AssetLink
 						key={href}
 						href={href}
 						download={
@@ -79,7 +81,7 @@ export function LogoArchive({
 					>
 						{label}
 						<span aria-hidden="true">↗</span>
-					</a>
+					</AssetLink>
 				))}
 			</div>
 			<details>
@@ -92,14 +94,14 @@ export function LogoArchive({
 						: prompt || (supplied ? t.briefLoading : t.promptLoading)}
 				</pre>
 			</details>
-			<a
+			<AssetLink
 				className="process-link"
 				href={family.archive}
 				target="_blank"
 				rel="noreferrer"
 			>
 				{t.archiveSource} ↗
-			</a>
+			</AssetLink>
 		</section>
 	);
 }

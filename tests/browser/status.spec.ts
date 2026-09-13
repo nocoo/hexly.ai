@@ -1,6 +1,6 @@
-import { expect, test } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
 import { type StatusSnapshot, statusTargets } from "../../src/model/status";
+import { expect, test } from "./fixtures";
 
 const targets = statusTargets(readProjects());
 

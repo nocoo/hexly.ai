@@ -1,8 +1,4 @@
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import type { Plugin } from "vite";
-import provenance from "../packages/video-kit/brand-source.json";
-import { brandAssetVersion } from "../packages/video-kit/src/brand";
 import {
 	parseVideoManifest,
 	schemaDocuments,
@@ -23,16 +19,6 @@ export function videoSiteAssets(): Plugin {
 			type: "application/schema+json",
 			source: json(schema),
 		})),
-		...provenance.assets.map((asset) => {
-			const fileName = `video-kit/${brandAssetVersion}/hexly/${asset.file}`;
-			return {
-				fileName,
-				type: asset.file.endsWith(".woff2")
-					? "font/woff2"
-					: "text/plain; charset=utf-8",
-				source: readFileSync(resolve("packages/video-kit/public", fileName)),
-			};
-		}),
 	];
 	return {
 		name: "video-kit-public-assets",

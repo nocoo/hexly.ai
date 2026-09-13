@@ -1,6 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
+import { expect, test } from "./fixtures";
 
 const projects = readProjects();
 

@@ -7,7 +7,7 @@ export {
 	palettes,
 } from "./brand";
 export { Film } from "./Film";
-export { loadHexlyFonts, useHexlyFonts } from "./fonts";
+export { HexlyFontOrigin, loadHexlyFonts, useHexlyFonts } from "./fonts";
 export { BrandLockup, BrandMark, HexlyReveal, RedDot } from "./Identity";
 export { clamp, ease, entrance, revealState } from "./motion";
 export { createProjectFilm } from "./project";

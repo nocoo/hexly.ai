@@ -1,9 +1,11 @@
 # 17 · Projects, templates and recorded media
 
-Existing tracked logos, large screenshots, historical artwork and source exports
-keep their bytes and paths in Git and Workers Static Assets. New approved
-recordings use the owner's R2 bucket `hexlyai` and its public custom domain
-`https://h.no.mt`. Only metadata and versioned publication receipts enter Git.
+All independently served materials, including existing logos, screenshots,
+historical artwork and recordings, use the owner's R2 bucket `hexlyai` at
+`https://h.no.mt`. Canonical paths, bytes, hashes and provenance stay unchanged;
+old site asset URLs redirect to the CDN. Git keeps source records and receipts,
+and binary working files hydrate from the inventory. See the
+[storage contract](21-asset-storage.md) and [authorized migration](20-r2-assets-execution.md).
 
 ## Navigation and canonical routes
 
@@ -135,8 +137,8 @@ When media publication is separately authorized:
    range request returns `206` before attaching a recording to the catalogue.
 4. Save the source revision and per-file URL/hash/size in
    `docs/media/<project>/<video-id>/v<version>.json`, then add one active
-   catalogue record. Do not duplicate
-   recordings in the template manifest or move existing Git-tracked imagery.
+   catalogue record. Do not duplicate recordings in the template manifest;
+   existing imagery follows the shared R2 inventory and hydration contract.
 
 R2 stores and serves files; it does not produce adaptive renditions. Progressive
 MP4 with faststart is the initial path for short recordings. If long films or

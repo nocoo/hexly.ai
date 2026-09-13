@@ -1,0 +1,164 @@
+{
+  "observedAt": "2026-09-13T00:26:16.088095+00:00",
+  "stage": "local pre-publication acceptance",
+  "unit": {
+    "passed": 318,
+    "statements": 99.59,
+    "branches": 98.73,
+    "functions": 100,
+    "lines": 100
+  },
+  "http": {
+    "passed": 127
+  },
+  "browser": {
+    "passed": 348,
+    "supplementalMediaPassed": 12,
+    "engines": [
+      "Chromium desktop",
+      "Chromium mobile emulation"
+    ]
+  },
+  "otherChecks": [
+    "typecheck",
+    "Biome",
+    "assets:check",
+    "OSV",
+    "Gitleaks",
+    "Wrangler deploy dry-run"
+  ],
+  "workerAssets": {
+    "files": 466,
+    "bytes": 3422182,
+    "baselineBytes": 3147514699
+  },
+  "render": {
+    "kitVersion": "2.0.0",
+    "theme": "light",
+    "opening": "signal",
+    "ending": "signature",
+    "template": "launch",
+    "project": "snail",
+    "mode": "all",
+    "startedAt": "2026-09-13T00:17:34.070Z",
+    "completedAt": "2026-09-13T00:19:08.524Z",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "durationInFrames": 990,
+    "pages": [
+      {
+        "id": "intro",
+        "kind": "intro",
+        "from": 0,
+        "durationInFrames": 150
+      },
+      {
+        "id": "title",
+        "kind": "title",
+        "from": 150,
+        "durationInFrames": 120
+      },
+      {
+        "id": "chapter",
+        "kind": "chapter",
+        "from": 270,
+        "durationInFrames": 120
+      },
+      {
+        "id": "content",
+        "kind": "content",
+        "from": 390,
+        "durationInFrames": 180
+      },
+      {
+        "id": "cta",
+        "kind": "cta",
+        "from": 570,
+        "durationInFrames": 150
+      },
+      {
+        "id": "logo",
+        "kind": "logo",
+        "from": 720,
+        "durationInFrames": 120
+      },
+      {
+        "id": "outro",
+        "kind": "outro",
+        "from": 840,
+        "durationInFrames": 150
+      }
+    ],
+    "propsSha256": "704e60eff1bbdf3bec43e889823ae6b352187c6190b86e8b77ef6b00b017ee99",
+    "artifacts": [
+      {
+        "file": "poster.webp",
+        "bytes": 7946,
+        "sha256": "fce4ca6bd62f4e72a8d1fdcc398de6d0162d5e1c54dc1abfd08bbcdddd629735"
+      },
+      {
+        "file": "film.mp4",
+        "bytes": 1963150,
+        "sha256": "b9b8c1eb421501d6602f65525a1bccd5e8b955ccd06e5ddd4c06433c6257a004"
+      },
+      {
+        "file": "deck.pptx",
+        "bytes": 330851,
+        "sha256": "3ee5b6abae0bb3995489f3fc6c94d5223227bc915a4efe7194241d0e4a4c6a38"
+      },
+      {
+        "file": "contact-sheet.webp",
+        "bytes": 24962,
+        "sha256": "912b8e7dc8064508320d1f6293871e2ddc91342bbeb19e7516997b39a82fc861"
+      },
+      {
+        "file": "deck.pdf",
+        "bytes": 155194,
+        "sha256": "8c01ae0d7c4a497b074fdcf2fcfcbca35192b55f7a5f49c604375e7316ed7d8e"
+      },
+      {
+        "file": "decoded-frame.png",
+        "bytes": 57149,
+        "sha256": "781c38ba8e0e97e3da88f073528be57950871977e6f8fa8c4557fc19e0074172"
+      },
+      {
+        "file": "frames/03-chapter.png",
+        "bytes": 39260,
+        "sha256": "f59ffea825246bddc9fb199e6c8a50e3f99a86044422be81de8dafc13c2b994b"
+      },
+      {
+        "file": "frames/07-outro.png",
+        "bytes": 19062,
+        "sha256": "e5d87794b63b431f2a3fe78683ffaa1e3598db51b7ea414d775038eedf66e108"
+      },
+      {
+        "file": "frames/01-intro.png",
+        "bytes": 28059,
+        "sha256": "610a06ea4585a4b62746126c8a2562364babe2a4d6b3b1c1571ffb6d11e2f3ac"
+      },
+      {
+        "file": "frames/05-cta.png",
+        "bytes": 36638,
+        "sha256": "612dd8fe9363f9425b2c7b67074e21a09dfe280accce433e86f02358242fdaee"
+      },
+      {
+        "file": "frames/02-title.png",
+        "bytes": 37631,
+        "sha256": "e72bfd7ca539e25ed1509049e1b4a4ec19c2c9a500cf84137215f570bc32a99e"
+      },
+      {
+        "file": "frames/06-logo.png",
+        "bytes": 20381,
+        "sha256": "ba94423edf360549cc8eb57945709fb5e612812d7dfa8d38f113527abc3a3c9b"
+      },
+      {
+        "file": "frames/04-content.png",
+        "bytes": 73319,
+        "sha256": "fbf7f6397768ac880c6efa91330de3a426d1b3c9158c2974a89d24ab48a57a8f"
+      }
+    ]
+  },
+  "externalEvidence": "/Users/nocoo/backups/hexly.ai/r2-migration-20260913T080642/validation",
+  "production": "pending"
+}

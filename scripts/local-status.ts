@@ -1,6 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { readProjects } from "../src/data/read-projects";
 import { CHECK_INTERVAL, RETENTION, statusTargets } from "../src/model/status";
+import { localAssets } from "./local-assets";
 
 const profiles = {
 	dev: { env: "dev", port: 37048, inspector: 38048 },
@@ -73,6 +74,7 @@ async function seed(env: string, directory: string) {
 export async function startLocalStatus(profile: LocalProfile) {
 	const { env, port, inspector } = profiles[profile];
 	const directory = `.wrangler/${profile}`;
+	const assetsDirectory = await localAssets(profile);
 	await mkdir(directory, { recursive: true });
 	await execute([
 		"d1",
@@ -96,6 +98,8 @@ export async function startLocalStatus(profile: LocalProfile) {
 			"--env",
 			env,
 			"--local",
+			"--assets",
+			assetsDirectory,
 			"--ip",
 			"127.0.0.1",
 			"--port",
