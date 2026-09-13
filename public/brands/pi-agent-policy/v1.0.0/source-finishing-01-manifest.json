@@ -1,0 +1,403 @@
+{
+	"createdAt": "2026-09-13T23:09:08.453Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "71582aad00f1f98416c900fa5ebc134a2b63136205da0411452931cc48260c85",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "pi-agent-policy",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#e5e3d9",
+			"light": "#f3f1e8",
+			"shade": "#cbcabe",
+			"motif": "#979b8f",
+			"grainAmplitude": 0.65,
+			"grainSeed": 60914003,
+			"motifOpacity": 0.24,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Interrupted contacts and a single return",
+				"description": "Paired contact stops and one returning trace, pressed into warm mineral paper. The open circuit and short reset path echo bounded recovery; their geometry belongs to this instrument, without copying another project's circuit grid.",
+				"layers": [
+					{
+						"d": "M116 318V220Q116 174 162 174H286 M306 160V188 M336 160V188 M358 174H414Q446 174 446 206V236",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M119 318V221Q119 177 163 177H286 M309 160V188 M339 160V188 M358 177H413Q443 177 443 207V236",
+						"tone": "highlight",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M864 212H902V306 M886 328H916 M886 356H916 M902 378V504 M116 622V716Q116 758 158 758H220",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M867 215H899V306 M886 331H916 M886 359H916 M899 378V504 M119 622V715Q119 755 159 755H220",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M332 860H546Q592 860 592 906H748Q816 906 816 838V790 M801 804L816 789L831 804 M234 742V774 M258 742V774 M282 758H332",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M332 857H547Q595 857 595 903H748Q813 903 813 838V797 M235 742V774 M259 742V774 M282 755H332",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M127 215Q129 186 159 185H211V190H160Q135 190 132 215z M754 894Q803 891 804 841H809Q808 896 754 899z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					104,
+					104,
+					90
+				],
+				"opacity": 0.18,
+				"blurAt2048": 58,
+				"projectionScale": [
+					0.88,
+					0.22
+				],
+				"offsetAt2048": [
+					8,
+					598
+				]
+			},
+			{
+				"color": [
+					96,
+					98,
+					87
+				],
+				"opacity": 0.1,
+				"blurAt2048": 18,
+				"offsetAt2048": [
+					3,
+					12
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				-90,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniformly inset and center the complete housing, button and both brass contacts. Preserve every part and its proportions; no crop, extension or recoloring. Require at least 128 px clearance from the actual rounded outline."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 24,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [
+				[
+					1840,
+					870
+				],
+				[
+					1840,
+					1285
+				]
+			],
+			"calibrationNote": "Modal native outer-eight-pixel matte is (251,252,252), with small channel variation. Both inspected terminal holes contain near-white matte: (251,252,252) at (1840,870), (252,251,253) at (1840,1285). Seed those real holes only. Preserve the enclosed ivory face, metal highlights and button. Exterior-connected extraction and a three-pixel unmatting band; no global white deletion or component removal."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2258085,
+		"foregroundPixels": 1936219,
+		"softEdgePixels": 16555,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 303,
+			"top": 229,
+			"right": 1955,
+			"bottom": 1793
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			-90,
+			0
+		],
+		"bounds": {
+			"left": 284,
+			"top": 308,
+			"right": 1771,
+			"bottom": 1716
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 276.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3274,
+			"sha256": "e5147e8d9411cf31797fe1d8007e89582874f2a7c84367e1b31b59d463c39383"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 550,
+			"sha256": "7a02acb6ce93c00904462ccb6bda497a12f4efc7f07cae1de186f000ac58ad61"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4790560,
+			"sha256": "c35b36e02bca41507fac4a6723d480207ce6c874883ea6f0fbd148da648135ca"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 77904,
+			"sha256": "8369869987c1e8e78b66c5f23fffd89e40f0fb59b7f6cd2d67dd37523277dd4c"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1586,
+			"sha256": "1b336ddf21da0f1e3e20f93bf8ffca80ac14c8ec8ae11dd49f1ccb8500f3b2b9"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1446791,
+			"sha256": "da34d39b2e1cc3b683249665498b0403e7df85d9d36e60993dd2dcd670138f93"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3982512,
+			"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 89727,
+			"sha256": "a34f7fbb5250c387cc22f393705a7971f0f7f6cdddf36bd38590e4fbdc883d56"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 90599,
+			"sha256": "8e2ee5d791828a9e0090796470e8293b6071a9e0d91be37028ce61e124738149"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 129483,
+			"sha256": "eb697fb25cd4dbd616f9e4ab1830730b2ce81da9e79923c8103a73a9935d9728"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-2048.png",
+			"bytes": 3982512,
+			"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-2048.png",
+			"bytes": 5200365,
+			"sha256": "71086131e5a52059641cb1cc8c7ab95f326f8ccf27e08f80627c06a08effae6d"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-2048.png",
+			"bytes": 5143598,
+			"sha256": "66b189431ca39c51a6894ae05c4326b3a622c9e30a80286487bf425efd1dbccd"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-1024.png",
+			"bytes": 987474,
+			"sha256": "9fb3f1ff6dd13b60691d7f4058483526ea8e53edf83722cac239d93ccdc4a63f"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-1024.png",
+			"bytes": 1205593,
+			"sha256": "a7e482a452fb0d652ddc6b198dab4adbc7ec09c49c56c8288d40a0f3c983965c"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-1024.png",
+			"bytes": 1212695,
+			"sha256": "11b72e6d925a0813ec666e3f9e893215a83815fc480df90c770320097d5e8221"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-512.png",
+			"bytes": 249421,
+			"sha256": "a2e8fa60d6b58135bc50388660c6f2a304ec21e4e50b56d4d02267a19d4c260d"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-512.png",
+			"bytes": 336311,
+			"sha256": "94e3704744bbeac82e2042c51d0d49c8bd7f50b782457404ab76ff6b898f4ec1"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-512.png",
+			"bytes": 339331,
+			"sha256": "a5fdadeada5c93afe679a7c638f343536d68738008eb4360fe8413c66850b5b4"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-256.png",
+			"bytes": 68281,
+			"sha256": "a062a2d01400f266a100cc1d3eab9eb062fb84e01e651d0470a79a22a3401379"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-256.png",
+			"bytes": 81449,
+			"sha256": "5f1e7a106e9aef07725312503492856f6a44c172c27f9516f4abb58e07c88cd3"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-256.png",
+			"bytes": 85234,
+			"sha256": "f4312857d26aac2066ccdb54c81403e0cffc85e5f000785b7af14f5856684583"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-128.png",
+			"bytes": 19409,
+			"sha256": "ab400722d238e4eba89a5a8a30f2126cd233b91209ca953b1862eb30375d6f20"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-128.png",
+			"bytes": 23895,
+			"sha256": "6cf1490b0ba0a061672e4ed316799f8ab30630d387abc9db8ae3e4624af874cc"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-128.png",
+			"bytes": 25779,
+			"sha256": "602968a28d99ae53696f916afa40a2cc4e9eb5d81138026f37b78dd3dbc1d403"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-64.png",
+			"bytes": 5944,
+			"sha256": "52174fa94dd7bf2fb5a85d9b111d8dab398c04d0641220e020128fad4153fdd7"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-64.png",
+			"bytes": 7651,
+			"sha256": "e37007b64afcacc8bc91d2ca0bbd1681a41ade05bbf1f223261ccd90c8bb833e"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-64.png",
+			"bytes": 8400,
+			"sha256": "9f3716e0b5fafb1845ab4f3d70e20ca74a6df59b68b1051032522ca7907f4996"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-48.png",
+			"bytes": 3655,
+			"sha256": "7f09f03aa6a812ba0fd40a846974f2fe1914348eae65463dbe506e4446836984"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-48.png",
+			"bytes": 4791,
+			"sha256": "f35245b41d66d1289604e7110d44b3f0c8a9c8ef6e4192e19561ef419462ca60"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-48.png",
+			"bytes": 5328,
+			"sha256": "f1de24b2b6e35cac0ef27a5bac70da4efce0c453f8ec583b4eb34dbfb6250a6d"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-32.png",
+			"bytes": 1928,
+			"sha256": "203abbbc8664907bff4b1b8818ef62f6d4e8a0e091030632e3310d88632883f9"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-32.png",
+			"bytes": 2645,
+			"sha256": "34e1ee48396912b632c11cbb0a56fc25e504f859b68f67be4d0212142a406662"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-32.png",
+			"bytes": 2862,
+			"sha256": "caa142f5893510d48cf30a0766d7aaaf3fc1704f5ff2970f13c974e50aef596f"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-24.png",
+			"bytes": 1273,
+			"sha256": "0013d871c2d5edcd92a2243f5da009a86d491e895c24ad1be05ff8be2bec0345"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-24.png",
+			"bytes": 1667,
+			"sha256": "20d161dd61cd056594013ac06f0de488084f3c14b6627689e9debeac8f785511"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-24.png",
+			"bytes": 1858,
+			"sha256": "60ef2ff07beae9c034398db2656585d047470c616ae8fe3bd25942c01eb8c5a6"
+		},
+		{
+			"path": "exports/pi-agent-policy-transparent-16.png",
+			"bytes": 708,
+			"sha256": "a3801db278601803ed50116b2c0570b2749da4d11aaeb0c631b33c5b070d8d36"
+		},
+		{
+			"path": "exports/pi-agent-policy-icon-16.png",
+			"bytes": 895,
+			"sha256": "8f06ddb8bada7c986002e683e14912518900df5ea62054aa02c39bbfb597e12b"
+		},
+		{
+			"path": "exports/pi-agent-policy-rounded-16.png",
+			"bytes": 964,
+			"sha256": "38c720d045ccbbef6c5bfbe28f65da7616d73c8d91c185d4bf780dde7a7e9f57"
+		},
+		{
+			"path": "exports/pi-agent-policy-white-2048.png",
+			"bytes": 3750998,
+			"sha256": "b116d5c18d2b1d3da9499e58862710c32869f9edc78dad7e6530a604a3ea930f"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 943917,
+			"sha256": "2128b06c16599f373301f1b9adc322cfc01e131e23c64bc891495beb2e222a13"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 939535,
+			"sha256": "a8140a41e15e217078ca1bec321f84f5495f15ac9f4951ed308d82c4faa70994"
+		}
+	]
+}

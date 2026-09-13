@@ -1,0 +1,88 @@
+{
+	"checkedAt": "2026-09-13T23:25:55.881Z",
+	"browser": "Playwright Chromium",
+	"origin": "http://127.0.0.1:7048",
+	"materialDelivery": "Production CDN URLs with exact local inventory bytes; production availability verified separately",
+	"checks": [
+		{
+			"kind": "site",
+			"device": "desktop",
+			"theme": "light",
+			"viewport": [1440, 1000],
+			"overflow": false,
+			"imagesDecoded": 70,
+			"screenshot": "site-desktop-light.png",
+			"sha256": "bfa3cae16af5368b9a5232b06140cdcfabda6766c3ee5286d4cefb5ee463243f"
+		},
+		{
+			"kind": "site",
+			"device": "desktop",
+			"theme": "dark",
+			"viewport": [1440, 1000],
+			"overflow": false,
+			"imagesDecoded": 70,
+			"screenshot": "site-desktop-dark.png",
+			"sha256": "34b8ea3dc78842997bbb38c21b08ce1db37370e9ec8303ee399f122742889a12"
+		},
+		{
+			"kind": "study",
+			"device": "desktop",
+			"theme": "light",
+			"viewport": [1440, 1000],
+			"overflow": false,
+			"imagesDecoded": 10,
+			"screenshot": "study-desktop-light.png",
+			"sha256": "176afbdb8bac765d496353c7e045694296f1d8354b202c40202c108ec8aca471"
+		},
+		{
+			"kind": "study",
+			"device": "desktop",
+			"theme": "dark",
+			"viewport": [1440, 1000],
+			"overflow": false,
+			"imagesDecoded": 10,
+			"screenshot": "study-desktop-dark.png",
+			"sha256": "108f6df56c0e67fedcb4c03eb51fec16d5d0f851d65decc71974b159088da6b4"
+		},
+		{
+			"kind": "site",
+			"device": "mobile",
+			"theme": "light",
+			"viewport": [320, 740],
+			"overflow": false,
+			"imagesDecoded": 70,
+			"screenshot": "site-mobile-light.png",
+			"sha256": "92aaf2f4b61ebd1fb5170a42e836f03d5e94e52d16ef9dc4546e4610582d8972"
+		},
+		{
+			"kind": "site",
+			"device": "mobile",
+			"theme": "dark",
+			"viewport": [320, 740],
+			"overflow": false,
+			"imagesDecoded": 70,
+			"screenshot": "site-mobile-dark.png",
+			"sha256": "66544ce50cb3ef22c95250abc3dc026710b460da028931a54a79a8ea8637dd8d"
+		},
+		{
+			"kind": "study",
+			"device": "mobile",
+			"theme": "light",
+			"viewport": [320, 740],
+			"overflow": false,
+			"imagesDecoded": 10,
+			"screenshot": "study-mobile-light.png",
+			"sha256": "c0973625d875bac04b7273402bcea04d2975f537b2f46106dbe34abeaf66726f"
+		},
+		{
+			"kind": "study",
+			"device": "mobile",
+			"theme": "dark",
+			"viewport": [320, 740],
+			"overflow": false,
+			"imagesDecoded": 10,
+			"screenshot": "study-mobile-dark.png",
+			"sha256": "2ed2c2ed6fe558071a5319a4f8ea6e5d4865340fccbe836572c998de3fa194c4"
+		}
+	]
+}

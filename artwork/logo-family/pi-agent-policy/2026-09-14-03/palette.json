@@ -1,0 +1,112 @@
+{
+	"project": "pi-agent-policy",
+	"study": "2026-09-14-03",
+	"finishing": "01",
+	"nativeSource": {
+		"path": "raw/generated.png",
+		"sha256": "71582aad00f1f98416c900fa5ebc134a2b63136205da0411452931cc48260c85",
+		"width": 2048,
+		"height": 2048
+	},
+	"artworkSamples": [
+		{
+			"label": "Graphite housing",
+			"x": 1070,
+			"y": 360,
+			"rgb": [114, 111, 108],
+			"hex": "#726f6c",
+			"alpha": 255
+		},
+		{
+			"label": "Ivory face",
+			"x": 655,
+			"y": 700,
+			"rgb": [227, 218, 202],
+			"hex": "#e3daca",
+			"alpha": 255
+		},
+		{
+			"label": "Terracotta enamel",
+			"x": 610,
+			"y": 1100,
+			"rgb": [170, 56, 31],
+			"hex": "#aa381f",
+			"alpha": 255
+		},
+		{
+			"label": "Warm steel reflection",
+			"x": 1030,
+			"y": 885,
+			"rgb": [213, 198, 178],
+			"hex": "#d5c6b2",
+			"alpha": 255
+		},
+		{
+			"label": "Brass contact",
+			"x": 1810,
+			"y": 800,
+			"rgb": [160, 124, 75],
+			"hex": "#a07c4b",
+			"alpha": 255
+		}
+	],
+	"presentation": {
+		"status": "Owner-authorized finishing; source adoption is recorded separately",
+		"recipe": "presentation.json",
+		"colors": {
+			"base": "#e5e3d9",
+			"light": "#f3f1e8",
+			"shade": "#cbcabe",
+			"motif": "#979b8f",
+			"grainAmplitude": 0.65,
+			"grainSeed": 60914003,
+			"motifOpacity": 0.24,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Interrupted contacts and a single return",
+				"description": "Paired contact stops and one returning trace, pressed into warm mineral paper. The open circuit and short reset path echo bounded recovery; their geometry belongs to this instrument, without copying another project's circuit grid.",
+				"layers": [
+					{
+						"d": "M116 318V220Q116 174 162 174H286 M306 160V188 M336 160V188 M358 174H414Q446 174 446 206V236",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M119 318V221Q119 177 163 177H286 M309 160V188 M339 160V188 M358 177H413Q443 177 443 207V236",
+						"tone": "highlight",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M864 212H902V306 M886 328H916 M886 356H916 M902 378V504 M116 622V716Q116 758 158 758H220",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M867 215H899V306 M886 331H916 M886 359H916 M899 378V504 M119 622V715Q119 755 159 755H220",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M332 860H546Q592 860 592 906H748Q816 906 816 838V790 M801 804L816 789L831 804 M234 742V774 M258 742V774 M282 758H332",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M332 857H547Q595 857 595 903H748Q813 903 813 838V797 M235 742V774 M259 742V774 M282 755H332",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M127 215Q129 186 159 185H211V190H160Q135 190 132 215z M754 894Q803 891 804 841H809Q808 896 754 899z",
+						"tone": "ribbon"
+					}
+				]
+			}
+		}
+	},
+	"applicationTheme": {
+		"revision": "352e8b9551e569f33f73273a20aa2ca66d06c2e5",
+		"note": "No product UI or evidenced application palette. These are native artwork samples and a separate designed Hexly presentation, not recovered product tokens."
+	}
+}
