@@ -15,8 +15,10 @@ import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 describe("R2 material delivery", () => {
 	it("retries a disconnected response body and stops on conflicting bytes", async () => {
 		const bytes = new TextEncoder().encode("complete fixture");
+		const template = readInventory().files[0];
+		if (!template) throw new Error("Missing asset fixture");
 		const file = {
-			...readInventory().files[0],
+			...template,
 			bytes: bytes.length,
 			sha256: digest(bytes),
 		};
