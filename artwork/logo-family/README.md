@@ -28,7 +28,7 @@ Each study keeps its brief, exact prompt, sanitized request/response metadata, u
 
 Previous originals retain their filenames and checksums. Every new raw image stops for owner confirmation before extraction, backgrounds, derivatives, or catalogue integration. Its `raw-review.json` starts pending and records the decision for those exact bytes. After raw approval, finished candidates receive a curated local preview in `public/logos/family/<project>/<study>/<pass>/`, with a truthful review status and a separate candidate foreground record. The full workshop and intermediate artwork stay outside Vite's production asset directory. Source adoption and publication follow the current session's authorization.
 
-Generation uses the Azure Foundry endpoint and `api-key` authentication documented in `workflow/agents/skills/azure-gpt-image-cover/SKILL.md`. Credentials are supplied by workflow's direnv environment. No credentials or raw authenticated HTTP headers belong in this directory.
+Generation uses the Azure Foundry endpoint and `api-key` authentication documented in `workflow/agents/skills/agi-image-generation/SKILL.md`. Credentials are supplied by workflow's direnv environment. No credentials or raw authenticated HTTP headers belong in this directory.
 
 The workflow skill `zhengli-project-logo` captures the family rules, prompt template, review requirements, and source/site promotion flow.
 
