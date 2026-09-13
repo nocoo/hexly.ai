@@ -6,12 +6,47 @@ import {
 	authenticatedRequest,
 	digest,
 	readInventory,
+	verifiedBytes,
 	verifiedPublication,
 } from "../../scripts/asset-storage";
 import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("retries a disconnected response body and stops on conflicting bytes", async () => {
+		const bytes = new TextEncoder().encode("complete fixture");
+		const file = {
+			...readInventory().files[0],
+			bytes: bytes.length,
+			sha256: digest(bytes),
+		};
+		const request = vi
+			.fn()
+			.mockResolvedValueOnce(
+				new Response(
+					new ReadableStream({
+						start(controller) {
+							controller.error(new Error("Disconnected body fixture"));
+						},
+					}),
+				),
+			)
+			.mockResolvedValueOnce(
+				new Response(bytes, { headers: { "Content-Type": file.contentType } }),
+			);
+		vi.stubGlobal("fetch", request);
+		try {
+			expect(await verifiedBytes(file)).toEqual(bytes);
+			expect(request).toHaveBeenCalledTimes(2);
+			request.mockReset().mockResolvedValue(new Response("wrong bytes"));
+			await expect(verifiedBytes(file)).rejects.toThrow(
+				"checksum/size mismatch",
+			);
+			expect(request).toHaveBeenCalledTimes(1);
+		} finally {
+			vi.unstubAllGlobals();
+		}
+	});
 	it("recovers an expired credential once, but stops on denied or changed-account access", async () => {
 		const auth = { token: "expired-fixture", account: "fixture-account" };
 		const operation = vi
