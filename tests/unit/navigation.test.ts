@@ -21,7 +21,10 @@ describe("shareable directory navigation", () => {
 			project: "frogie",
 		});
 		expect(
-			parse("/", "?view=logos&category=wrong&sort=wrong&project=../bad"),
+			parse(
+				"/",
+				"?view=logos&category=wrong&sort=wrong&project=../bad&media=video",
+			),
 		).toEqual(parse("/"));
 		for (const path of ["/projects/../bad", "/projects/UPPER", "/unknown"])
 			expect(parse(path)).toEqual(parse("/"));
@@ -30,7 +33,7 @@ describe("shareable directory navigation", () => {
 		for (const state of [
 			parse("/projects/pew", "?category=ai&sort=az"),
 			parse("/", "?q=智能体&category=ai&sort=az"),
-			parse("/logos", "?media=video&sort=az"),
+			parse("/logos", "?sort=az"),
 			parse("/projects/pew", "", "#brand"),
 			parse("/projects/pew", "", "#video-introduction"),
 		]) {
@@ -101,6 +104,8 @@ describe("shareable directory navigation", () => {
 		expect(
 			parse("/projects/pew", "?media=invalid", "#../bad").anchor,
 		).toBeUndefined();
-		expect(parse("/projects/pew", "?media=invalid").withVideo).toBeUndefined();
+		expect(navigationPath(parse("/logos", "?media=video&sort=az"))).toBe(
+			"/logos?sort=az",
+		);
 	});
 });

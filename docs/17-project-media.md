@@ -11,7 +11,7 @@ and binary working files hydrate from the inventory. See the
 
 | Entry | Route | Content |
 | --- | --- | --- |
-| Projects / 项目 | `/` | Existing catalogue, search, categories, optional With video filter |
+| Projects / 项目 | `/` | Project catalogue, search, categories and sort |
 | Logo wall / 图鉴 | `/logos` | Secondary image view of the same catalogue |
 | Project detail | `/projects/<id>` | Introduction, optional media, overview, brand archive |
 | Templates / 模板 | `/templates` and `/templates/<id>` | Configurable Video Kit compositions and Video/Deck previews |

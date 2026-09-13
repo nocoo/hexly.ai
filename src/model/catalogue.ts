@@ -33,7 +33,6 @@ export function filterProjects(
 	query: string,
 	category: Category = "all",
 	sort: "curated" | "az" = "curated",
-	withVideo = false,
 ): Project[] {
 	const terms = query
 		.normalize("NFKC")
@@ -42,7 +41,6 @@ export function filterProjects(
 		.split(/\s+/)
 		.filter(Boolean);
 	const result = projects.filter((project) => {
-		if (withVideo && !project.media?.videos?.length) return false;
 		if (category === "archive") {
 			if (!project.archived) return false;
 		} else {

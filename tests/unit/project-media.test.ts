@@ -1,10 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
-import {
-	catalogueProblems,
-	filterProjects,
-	parseCatalogue,
-} from "../../src/model/catalogue";
+import { catalogueProblems, parseCatalogue } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
 import { projectForVideo } from "../../src/model/videos";
 import { screenshotFixture, videoFixture } from "../fixtures/project-media";
@@ -18,7 +14,7 @@ const withMedia: Project = {
 };
 
 describe("optional project media", () => {
-	it("accepts projects with or without media and filters only finished-video entries", () => {
+	it("accepts projects with or without media", () => {
 		expect(
 			parseCatalogue([
 				base,
@@ -28,23 +24,6 @@ describe("optional project media", () => {
 		expect(catalogueProblems([{ ...base, media: {} }])).toEqual([]);
 		expect(
 			catalogueProblems([{ ...base, media: { videos: [], screenshots: [] } }]),
-		).toEqual([]);
-		const all = projects.map((project) =>
-			project.id === base.id ? withMedia : { ...project, media: undefined },
-		);
-		expect(
-			filterProjects(all, "", "all", "curated", true).map((p) => p.id),
-		).toEqual(["pew"]);
-		expect(filterProjects(all, "unmatched", "all", "az", true)).toEqual([]);
-		expect(filterProjects(all, "", "games", "az", true)).toEqual([]);
-		expect(
-			filterProjects(
-				[{ ...base, media: { screenshots: [screenshotFixture] } }],
-				"",
-				"all",
-				"curated",
-				true,
-			),
 		).toEqual([]);
 	});
 	it.each([

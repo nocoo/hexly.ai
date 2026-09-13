@@ -123,7 +123,6 @@ export function ProjectDetail({
 							view: "directory",
 							query: "",
 							category: "all",
-							withVideo: undefined,
 						});
 					}}
 				>
@@ -146,7 +145,6 @@ export function ProjectDetail({
 							view: "logos",
 							query: "",
 							category: "all",
-							withVideo: undefined,
 						});
 					}}
 				>
@@ -356,7 +354,6 @@ export function ProjectDetail({
 											onChange({
 												category: "all",
 												query: "",
-												withVideo: undefined,
 												anchor: "brand",
 											})
 										}
@@ -445,7 +442,6 @@ export function ProjectDetail({
 								view: "directory",
 								query: "",
 								category: "all",
-								withVideo: undefined,
 							})
 						}
 					>

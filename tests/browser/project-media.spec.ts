@@ -64,12 +64,6 @@ test("projects without media have a complete detail and no empty video sections"
 	).toHaveCount(0);
 	await expect(page.locator("#overview")).toBeVisible();
 	await expect(page.locator("#brand")).toBeVisible();
-	await page.goto("/");
-	await expect(page.locator(".project-card").first()).toBeVisible();
-	await expect(page.locator(".card-video")).toHaveCount(0);
-	await expect(page.getByRole("checkbox", { name: "With video" })).toHaveCount(
-		0,
-	);
 });
 
 test("clicks a poster to fetch and play real media with captions and native controls", async ({
@@ -173,7 +167,7 @@ test("clicks a poster to fetch and play real media with captions and native cont
 	await expect(video.locator("track[default]")).toHaveCount(0);
 });
 
-test("filters recorded projects, selects multiple videos and restores hash history", async ({
+test("opens recordings from project details, selects videos and restores hash history", async ({
 	page,
 }, testInfo) => {
 	const second = {
@@ -186,11 +180,19 @@ test("filters recorded projects, selects multiple videos and restores hash histo
 		videos: [videoFixture, second],
 		screenshots: [screenshotFixture],
 	});
-	await page.goto("/");
-	await page.getByRole("checkbox", { name: "With video" }).check();
-	await expect(page.locator(".project-card")).toHaveCount(1);
-	await expect(page).toHaveURL(/\?media=video$/);
-	await page.locator(".card-video").click();
+	await page.goto("/?media=video");
+	await expect(page.locator(".project-card")).toHaveCount(
+		projects.filter((project) => !project.archived).length,
+	);
+	await expect(page).toHaveURL(/\/$/);
+	await expect(page.getByRole("checkbox", { name: "With video" })).toHaveCount(
+		0,
+	);
+	await expect(page.locator(".card-video")).toHaveCount(0);
+	await page.locator('[data-project="pew"] .card-main').click();
+	await page
+		.locator('.project-video-list a[href="#video-introduction"]')
+		.click();
 	await expect(page).toHaveURL(/\/projects\/pew#video-introduction$/);
 	await expect(page.locator(".project-screenshots img")).toHaveAttribute(
 		"alt",
