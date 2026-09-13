@@ -92,6 +92,9 @@ exact legacy build is required. For current materials, prefer the checked R2
 inventory and hydration commands.
 
 The final remote main/tag/Release/production SHA and ordinary-clone measurements
-are recorded in the verification artifact attached to the maintenance release.
+are recorded in the [verification artifact](https://github.com/nocoo/hexly.ai/releases/download/v0.11.1/verification.json)
+attached to the maintenance release. The recorded 6,894,635-byte isolated pack
+is not a pre/post network timing comparison; no ordinary clone was timed before
+the migration.
 See [the execution plan](20-r2-assets-execution.md) and
 [the storage contract](21-asset-storage.md) for publication and rollback rules.

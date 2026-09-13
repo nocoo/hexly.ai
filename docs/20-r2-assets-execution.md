@@ -95,16 +95,16 @@ Worker, R2 Worker binding, D1 registry, bucket or CDN domain is necessary.
 - [x] Preserve a complete external Git bundle/mirror and original ref inventory;
   verify the bundle and its SHA-256 before removing anything. Archive binary
   source materials and a path/hash recovery index independently of Git history.
-- [ ] Remove hydrated binary materials from the current tracked tree while
+- [x] Remove hydrated binary materials from the current tracked tree while
   retaining manifests, source records, licenses, scripts and recovery commands.
   Verify a fresh checkout can build/test/render from verified asset hydration.
-- [ ] In an isolated copy, filter only inventoried material paths/blobs across
+- [x] In an isolated copy, filter only inventoried material paths/blobs across
   intended branches/tags; preserve code history, authors and commit messages.
   Save old/new commit and ref maps. Inspect exact changes before publishing.
 - [ ] Push explicit refs with leases against the recorded remote SHAs. No
   blind mirror push, concurrent pushes or permanent transport configuration.
   A normal clone must not fetch old large blobs through retained tags.
-- [ ] This owner-authorized migration is a one-time exception to immutable Git
+- [x] This owner-authorized migration is a one-time exception to immutable Git
   tag targets: document affected historical release SHAs and retain their
   original refs in the external backup. Asset version keys/bytes stay immutable.
 - [ ] Re-run trusted CI/CD for rewritten main and verify production's new SHA;
@@ -155,3 +155,18 @@ step has already happened.
 - After that acceptance, another session published the Snail-retirement merge `fcfd6c9c328b608abf14159cf378fa42d4a82d3c`. History work paused to inspect the source and remote; main was fast-forwarded to preserve it. The current catalogue has 74 projects, with Snail's original records, complete assets and old-route redirects preserved. The concurrent worktree and all private branch refs remain untouched.
 - Latest complete backup: `pre-history-full.bundle`, 3,623,654,386 bytes, SHA-256 `be206e810abbc302ea93faae407f48fa91478f8069d8870a0020dece8ea2c2dd`; bundle verification passed. `pre-history-state-final.json` records all 37 local refs and the 28 intended remote branch/tag refs. Earlier snapshots are retained too.
 - Before untracking, all 8,314 current material binaries (6,927,584,962 bytes) matched both their Git blob and inventoried SHA-256/size/MIME publication receipt. They were removed only from the index; every local working file remains. The historical filter list contains 8,341 exact material paths. SVG/code/provenance and the required vendored `.tgz` remain tracked. The Git guard rejects even force-added material binaries.
+
+- The independent mirror retained 267 commits and all 28 intended remote branch/tag refs. Every retained commit tree, author/committer, message, parent order and annotated tag description matched the original after excluding the 8,341 material paths. `git fsck --full` passed, no alternates exist, and the required vendored code archive remains. Pack size is 6,894,635 bytes. [Commit/ref maps and audit](assets/history-20260913/summary.json) describe the exact filtering inputs; original private worktrees were not rewritten.
+- An independent checkout of the filtered history, with zero material binaries, completed its frozen install and build. It contains 3,807 source files / 29,117,526 bytes; its build emits 348 files / 3,412,315 bytes. This is a local structural proof, not an ordinary remote-clone timing measurement.
+
+## Final publication evidence
+
+The one-time maintenance release is `v0.11.1`. Its
+[verification artifact](https://github.com/nocoo/hexly.ai/releases/download/v0.11.1/verification.json)
+records the subsequent leased push, actual remote refs, CI/deployment, exact live
+revision, historical Release reconciliation and ordinary remote-clone measurement.
+This artifact is completed only after those operations succeed; the source-tree
+checkpoints above do not substitute for that final evidence.
+
+- The independent checkout restored a verified fixture tree: 2,264 cache payloads accumulated during actual CDN hydration; the remaining 4,176 payloads reused independently hashed original working materials. The stopped local reader left no partial files, and all asset checks passed. This is explicitly cache-assisted local validation; final CI performs its own complete cold restoration from R2.
+- Fresh-source recovery validation produced a Frogie Launch MP4 (960×540, 30 fps, 990 frames/33 seconds), seven-page PPTX/PDF, decoded frame and contact sheet; the images were inspected. The optional full archive remains outside Git and deployment. Retired Snail inventory is now available to read-only plan/URL/verify/hydrate commands; new publication still requires a current catalogue entry. CI preserves per-test assertions/timeouts and gives its browser job 25 minutes to include initial archive restoration.

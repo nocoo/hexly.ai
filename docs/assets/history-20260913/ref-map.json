@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "scope": "All 4 remote branches and 24 annotated release tags; original private local branches/worktrees stay in the external backup and original checkout.",
+  "mainNote": "Filtered main includes the new tracking-guard commit. Later maintenance commits and the actual published main object are recorded in the release verification artifact.",
+  "refs": [
+    {
+      "ref": "refs/heads/co/20260911-hexly",
+      "remoteBeforeObject": "b460e7c489034c217ed2e0b8fb5c65a3f4202843",
+      "remoteBeforeCommit": "b460e7c489034c217ed2e0b8fb5c65a3f4202843",
+      "equivalentRetainedCommit": "082a698498c9fc64642e2e4e8f0eaad42ec94526",
+      "filterInputObject": "b460e7c489034c217ed2e0b8fb5c65a3f4202843",
+      "filterInputCommit": "b460e7c489034c217ed2e0b8fb5c65a3f4202843",
+      "filteredObject": "082a698498c9fc64642e2e4e8f0eaad42ec94526",
+      "filteredCommit": "082a698498c9fc64642e2e4e8f0eaad42ec94526"
+    },
+    {
+      "ref": "refs/heads/co/20260913-hexly-ai-cleanup",
+      "remoteBeforeObject": "db943b59ed2515265df86523c7b3645830f694c2",
+      "remoteBeforeCommit": "db943b59ed2515265df86523c7b3645830f694c2",
+      "equivalentRetainedCommit": "2a527ef4676e2377dd6cdd6686c744e1c8a6050d",
+      "filterInputObject": "db943b59ed2515265df86523c7b3645830f694c2",
+      "filterInputCommit": "db943b59ed2515265df86523c7b3645830f694c2",
+      "filteredObject": "2a527ef4676e2377dd6cdd6686c744e1c8a6050d",
+      "filteredCommit": "2a527ef4676e2377dd6cdd6686c744e1c8a6050d"
+    },
+    {
+      "ref": "refs/heads/codex/retire-snail-20260913",
+      "remoteBeforeObject": "be7010192d95d52e74882d0c423e3d5535cf974f",
+      "remoteBeforeCommit": "be7010192d95d52e74882d0c423e3d5535cf974f",
+      "equivalentRetainedCommit": "0f1b64813fcb50d54b5b8cc9088cdddeb481abc1",
+      "filterInputObject": "be7010192d95d52e74882d0c423e3d5535cf974f",
+      "filterInputCommit": "be7010192d95d52e74882d0c423e3d5535cf974f",
+      "filteredObject": "0f1b64813fcb50d54b5b8cc9088cdddeb481abc1",
+      "filteredCommit": "0f1b64813fcb50d54b5b8cc9088cdddeb481abc1"
+    },
+    {
+      "ref": "refs/heads/main",
+      "remoteBeforeObject": "fcfd6c9c328b608abf14159cf378fa42d4a82d3c",
+      "remoteBeforeCommit": "fcfd6c9c328b608abf14159cf378fa42d4a82d3c",
+      "equivalentRetainedCommit": "c5a72abb52fbc4f609f251fc840428add92ec255",
+      "filterInputObject": "42144aea5b31f666773750992b0a531f5c9ea8db",
+      "filterInputCommit": "42144aea5b31f666773750992b0a531f5c9ea8db",
+      "filteredObject": "e1341674b8cd78b890f9cd5a237fd876675e44df",
+      "filteredCommit": "e1341674b8cd78b890f9cd5a237fd876675e44df"
+    },
+    {
+      "ref": "refs/tags/v0.1.0",
+      "remoteBeforeObject": "5284765533c0f765bb3fac134525deaa37209e62",
+      "remoteBeforeCommit": "3734a01a32dfd6d85e957c25a6f2656f5c04d051",
+      "equivalentRetainedCommit": "8b3b9f8a7eddb7e8f3a33094410aab0f4a281e1c",
+      "filterInputObject": "5284765533c0f765bb3fac134525deaa37209e62",
+      "filterInputCommit": "3734a01a32dfd6d85e957c25a6f2656f5c04d051",
+      "filteredObject": "00e0dea594432b977b5b5e2ef3280119a98b1622",
+      "filteredCommit": "8b3b9f8a7eddb7e8f3a33094410aab0f4a281e1c"
+    },
+    {
+      "ref": "refs/tags/v0.10.0",
+      "remoteBeforeObject": "13e6f12582002a81eb0ad48b1872c95119d3ecad",
+      "remoteBeforeCommit": "91fb69d32f835c301d3427550fd84eb03ef8cb50",
+      "equivalentRetainedCommit": "c3cbe2499ec6b7841db40317ca4a3c80c291599e",
+      "filterInputObject": "13e6f12582002a81eb0ad48b1872c95119d3ecad",
+      "filterInputCommit": "91fb69d32f835c301d3427550fd84eb03ef8cb50",
+      "filteredObject": "dd185f1c0ed467a601a5cc8f76cadd2a46da1bc1",
+      "filteredCommit": "c3cbe2499ec6b7841db40317ca4a3c80c291599e"
+    },
+    {
+      "ref": "refs/tags/v0.11.0",
+      "remoteBeforeObject": "01ac00a65d17c90249ec7bdb6df91a68ee7594af",
+      "remoteBeforeCommit": "517fafdaf99674b2aeb07fc5908184ac928d26d8",
+      "equivalentRetainedCommit": "dbf4384cf443c033e74c0a79e11940e76215a3c4",
+      "filterInputObject": "01ac00a65d17c90249ec7bdb6df91a68ee7594af",
+      "filterInputCommit": "517fafdaf99674b2aeb07fc5908184ac928d26d8",
+      "filteredObject": "0aa6c59a224246c49e254ed9c1f06d055fde541d",
+      "filteredCommit": "dbf4384cf443c033e74c0a79e11940e76215a3c4"
+    },
+    {
+      "ref": "refs/tags/v0.2.0",
+      "remoteBeforeObject": "d9b84a04f12f1a8ee71933f29655e44e7ddf0b1e",
+      "remoteBeforeCommit": "fcbb019b628e44453de795a3919e47aeb2f7781b",
+      "equivalentRetainedCommit": "004241953a45eed18bbf7a97a9c4b09e92c9f7c0",
+      "filterInputObject": "d9b84a04f12f1a8ee71933f29655e44e7ddf0b1e",
+      "filterInputCommit": "fcbb019b628e44453de795a3919e47aeb2f7781b",
+      "filteredObject": "9dc7ef55f804ac95fd1c9acfe37bdaec498ea271",
+      "filteredCommit": "004241953a45eed18bbf7a97a9c4b09e92c9f7c0"
+    },
+    {
+      "ref": "refs/tags/v0.3.0",
+      "remoteBeforeObject": "9583cc6f844c1f7ca89538e3337d822a2661de20",
+      "remoteBeforeCommit": "06fcc130ae0d90d12751c8df344c0be4cef49f64",
+      "equivalentRetainedCommit": "1afc44892330c78714bb427614ca0680b9dfef5b",
+      "filterInputObject": "9583cc6f844c1f7ca89538e3337d822a2661de20",
+      "filterInputCommit": "06fcc130ae0d90d12751c8df344c0be4cef49f64",
+      "filteredObject": "0c26f6918dcf41543cf19978ac63c37b3692bb32",
+      "filteredCommit": "1afc44892330c78714bb427614ca0680b9dfef5b"
+    },
+    {
+      "ref": "refs/tags/v0.4.0",
+      "remoteBeforeObject": "e6051e1f61ee1130f9a059b27f3482d9fdfd3c2e",
+      "remoteBeforeCommit": "88c207fd1e52e90594fc2a9a0f66d449d46c3816",
+      "equivalentRetainedCommit": "ae9e4da7eb97bfe04e77031a250790e5a05b0ebe",
+      "filterInputObject": "e6051e1f61ee1130f9a059b27f3482d9fdfd3c2e",
+      "filterInputCommit": "88c207fd1e52e90594fc2a9a0f66d449d46c3816",
+      "filteredObject": "eba0592f9246f6ce1c110e0e4723d6c9509ec28c",
+      "filteredCommit": "ae9e4da7eb97bfe04e77031a250790e5a05b0ebe"
+    },
+    {
+      "ref": "refs/tags/v0.4.1",
+      "remoteBeforeObject": "a0f7b46a83bddffe3088e96d96b1550a4e0196fa",
+      "remoteBeforeCommit": "affa5f483bb65b4cc727061dab1991f0862daf37",
+      "equivalentRetainedCommit": "5556beba5a378f79c7af87de6118a60466ee86fd",
+      "filterInputObject": "a0f7b46a83bddffe3088e96d96b1550a4e0196fa",
+      "filterInputCommit": "affa5f483bb65b4cc727061dab1991f0862daf37",
+      "filteredObject": "4b359cc91db16a4ae127f3e34becc73cf9fc118c",
+      "filteredCommit": "5556beba5a378f79c7af87de6118a60466ee86fd"
+    },
+    {
+      "ref": "refs/tags/v0.4.2",
+      "remoteBeforeObject": "91dd649c6fe2e43b0d34b6c96331c823f59e6b86",
+      "remoteBeforeCommit": "1542bab12c442b8da7d7e6aa78c654d42b8530c3",
+      "equivalentRetainedCommit": "0070e3884bc20e0a301bdb4b8f14c701d0dd71ed",
+      "filterInputObject": "91dd649c6fe2e43b0d34b6c96331c823f59e6b86",
+      "filterInputCommit": "1542bab12c442b8da7d7e6aa78c654d42b8530c3",
+      "filteredObject": "c7a263e6970edf3ff1ec639dfe190fb62f768869",
+      "filteredCommit": "0070e3884bc20e0a301bdb4b8f14c701d0dd71ed"
+    },
+    {
+      "ref": "refs/tags/v0.4.3",
+      "remoteBeforeObject": "a97e971a0be2c10bf1aff44dd1cec8b18dd46cd0",
+      "remoteBeforeCommit": "883f9f104283617e71cd0a49f0bb090a942388a2",
+      "equivalentRetainedCommit": "8d43cddb77592474238bcd27b2ed11b6cd095d8d",
+      "filterInputObject": "a97e971a0be2c10bf1aff44dd1cec8b18dd46cd0",
+      "filterInputCommit": "883f9f104283617e71cd0a49f0bb090a942388a2",
+      "filteredObject": "95d3253697054537b7a51a55a1f17edb587814d5",
+      "filteredCommit": "8d43cddb77592474238bcd27b2ed11b6cd095d8d"
+    },
+    {
+      "ref": "refs/tags/v0.4.4",
+      "remoteBeforeObject": "7ca206adcebde4f62f1de75f60030bfd38b3cfc2",
+      "remoteBeforeCommit": "ad6f3499127d0836be09a0af02e852b10b5bbc75",
+      "equivalentRetainedCommit": "f8816fb74f55dfd2637704691422a1923800fa6b",
+      "filterInputObject": "7ca206adcebde4f62f1de75f60030bfd38b3cfc2",
+      "filterInputCommit": "ad6f3499127d0836be09a0af02e852b10b5bbc75",
+      "filteredObject": "6aca3a5ae78dc91c34501805952bac967e18ab24",
+      "filteredCommit": "f8816fb74f55dfd2637704691422a1923800fa6b"
+    },
+    {
+      "ref": "refs/tags/v0.4.5",
+      "remoteBeforeObject": "1fb084765fe1186a554e2738ccf70ebb40264e9a",
+      "remoteBeforeCommit": "43fbd4fe92d09f58b5ed9a859210c837d0728a12",
+      "equivalentRetainedCommit": "0db485f1e37aa1cef4c096fb7bf6ab0113143d8a",
+      "filterInputObject": "1fb084765fe1186a554e2738ccf70ebb40264e9a",
+      "filterInputCommit": "43fbd4fe92d09f58b5ed9a859210c837d0728a12",
+      "filteredObject": "1afc98fc20ee82062c97ee7fe8089b05b5a0bea6",
+      "filteredCommit": "0db485f1e37aa1cef4c096fb7bf6ab0113143d8a"
+    },
+    {
+      "ref": "refs/tags/v0.4.6",
+      "remoteBeforeObject": "93f1f18d7e57ec3fabfccfd505c9cad4ee823dd3",
+      "remoteBeforeCommit": "29f1518d928ada5965400177b4ff7291e4ac0cc9",
+      "equivalentRetainedCommit": "07b3642415454a4253fa8d86216a501fb0eafc8e",
+      "filterInputObject": "93f1f18d7e57ec3fabfccfd505c9cad4ee823dd3",
+      "filterInputCommit": "29f1518d928ada5965400177b4ff7291e4ac0cc9",
+      "filteredObject": "f22c996365b9eacbca6d23a14ac4a0dd8649e679",
+      "filteredCommit": "07b3642415454a4253fa8d86216a501fb0eafc8e"
+    },
+    {
+      "ref": "refs/tags/v0.5.0",
+      "remoteBeforeObject": "b9fcf2c863b30e9517ce0945ba028807de740591",
+      "remoteBeforeCommit": "0221e4973dd66af3b17ebc42961f0321ead3be4e",
+      "equivalentRetainedCommit": "3883fc34f8a1a4d355264a22ae8e9bf67b746251",
+      "filterInputObject": "b9fcf2c863b30e9517ce0945ba028807de740591",
+      "filterInputCommit": "0221e4973dd66af3b17ebc42961f0321ead3be4e",
+      "filteredObject": "49dd1687413d6f8746d1afa2c68f2a1d53254c38",
+      "filteredCommit": "3883fc34f8a1a4d355264a22ae8e9bf67b746251"
+    },
+    {
+      "ref": "refs/tags/v0.5.1",
+      "remoteBeforeObject": "425f74712ee7227280e1b4515537fcb4dd36a2b8",
+      "remoteBeforeCommit": "cc4c39c45a6ff0e685a5c2676249e9fb6c1da492",
+      "equivalentRetainedCommit": "70d4799c3f1263a9c08c7968eb0b7d8415eefc51",
+      "filterInputObject": "425f74712ee7227280e1b4515537fcb4dd36a2b8",
+      "filterInputCommit": "cc4c39c45a6ff0e685a5c2676249e9fb6c1da492",
+      "filteredObject": "727615125c0bf82bb603b1678baec512e97367e0",
+      "filteredCommit": "70d4799c3f1263a9c08c7968eb0b7d8415eefc51"
+    },
+    {
+      "ref": "refs/tags/v0.5.2",
+      "remoteBeforeObject": "281dbcb70d0b6d38a0f43bc397d015c05e54f458",
+      "remoteBeforeCommit": "9106296d62ed01d0b3f0df2a386089ff3aae602e",
+      "equivalentRetainedCommit": "9bd2e709e5fffb39618be6f51005e866bef8832e",
+      "filterInputObject": "281dbcb70d0b6d38a0f43bc397d015c05e54f458",
+      "filterInputCommit": "9106296d62ed01d0b3f0df2a386089ff3aae602e",
+      "filteredObject": "86025d898a07885ad45d8a4aceff8cf412c32b4a",
+      "filteredCommit": "9bd2e709e5fffb39618be6f51005e866bef8832e"
+    },
+    {
+      "ref": "refs/tags/v0.5.3",
+      "remoteBeforeObject": "43b3d2f749df4922437594bff797ebb7c809ff1e",
+      "remoteBeforeCommit": "970d5aa83d9589aef4449e47365bce5e292490f1",
+      "equivalentRetainedCommit": "b416ddd7cfb0246fb9f73100d0488723cd1ab299",
+      "filterInputObject": "43b3d2f749df4922437594bff797ebb7c809ff1e",
+      "filterInputCommit": "970d5aa83d9589aef4449e47365bce5e292490f1",
+      "filteredObject": "7de355a0034767263246cc0c9b12bf728f667c0c",
+      "filteredCommit": "b416ddd7cfb0246fb9f73100d0488723cd1ab299"
+    },
+    {
+      "ref": "refs/tags/v0.5.4",
+      "remoteBeforeObject": "16dd90e5f2ff48bbecfe71838f650e8606830907",
+      "remoteBeforeCommit": "4c41d05e86aea669bad3733f2c0d9c37abb2039f",
+      "equivalentRetainedCommit": "5f4f679483e231d721f1eb897ef919242cbe083d",
+      "filterInputObject": "16dd90e5f2ff48bbecfe71838f650e8606830907",
+      "filterInputCommit": "4c41d05e86aea669bad3733f2c0d9c37abb2039f",
+      "filteredObject": "cf3d8b37b0c0714630683c87635bfdb2080ad131",
+      "filteredCommit": "5f4f679483e231d721f1eb897ef919242cbe083d"
+    },
+    {
+      "ref": "refs/tags/v0.5.5",
+      "remoteBeforeObject": "ddd10f178f6fe2af9bdcd5defdb3bc7e84ea3e61",
+      "remoteBeforeCommit": "07c87b88d3e064ead3035afc3cb13e8dd6c9d02c",
+      "equivalentRetainedCommit": "040fa0ca90287fa34554e8a7aaadc31f40ea72d0",
+      "filterInputObject": "ddd10f178f6fe2af9bdcd5defdb3bc7e84ea3e61",
+      "filterInputCommit": "07c87b88d3e064ead3035afc3cb13e8dd6c9d02c",
+      "filteredObject": "fe63257571807058073df42d6599c74a1fd531fb",
+      "filteredCommit": "040fa0ca90287fa34554e8a7aaadc31f40ea72d0"
+    },
+    {
+      "ref": "refs/tags/v0.5.6",
+      "remoteBeforeObject": "f110e46f556f18a395540adf341ba94cb8441d48",
+      "remoteBeforeCommit": "8bddfc9ca2ab6b970a8f8b7ead7b595f5ab5e1a5",
+      "equivalentRetainedCommit": "62d2609f58e98285ac45802ed0614aa927d6f9e7",
+      "filterInputObject": "f110e46f556f18a395540adf341ba94cb8441d48",
+      "filterInputCommit": "8bddfc9ca2ab6b970a8f8b7ead7b595f5ab5e1a5",
+      "filteredObject": "72d7673a0b78cbcd6fad513fd0e7c3929bef84c6",
+      "filteredCommit": "62d2609f58e98285ac45802ed0614aa927d6f9e7"
+    },
+    {
+      "ref": "refs/tags/v0.5.7",
+      "remoteBeforeObject": "1ecf8c324c2e2f8931fc2ef2d134dabc6a5c2d16",
+      "remoteBeforeCommit": "e8dbbca8a25ca25215acbe22d241f403235096c8",
+      "equivalentRetainedCommit": "d95a7f4be071317cf7a1b27a5b5a7faa95ffba27",
+      "filterInputObject": "1ecf8c324c2e2f8931fc2ef2d134dabc6a5c2d16",
+      "filterInputCommit": "e8dbbca8a25ca25215acbe22d241f403235096c8",
+      "filteredObject": "5e10e62ade280aa1c68ef27f35e56f90889b3f0b",
+      "filteredCommit": "d95a7f4be071317cf7a1b27a5b5a7faa95ffba27"
+    },
+    {
+      "ref": "refs/tags/v0.6.0",
+      "remoteBeforeObject": "f70705b8a650d99ae2035ed3dc59871ec5b4e071",
+      "remoteBeforeCommit": "e1b220a7643e8275134b0bff0a11d703c047abbe",
+      "equivalentRetainedCommit": "2dd7d79b98a25ef11198039e319325949ba1d2be",
+      "filterInputObject": "f70705b8a650d99ae2035ed3dc59871ec5b4e071",
+      "filterInputCommit": "e1b220a7643e8275134b0bff0a11d703c047abbe",
+      "filteredObject": "ce94875c3b19eb7a799fe9e9e530b544cece1804",
+      "filteredCommit": "2dd7d79b98a25ef11198039e319325949ba1d2be"
+    },
+    {
+      "ref": "refs/tags/v0.7.0",
+      "remoteBeforeObject": "6d512964a8bf1de2b120c1a76aca50350a6a9503",
+      "remoteBeforeCommit": "a55baf21a2f0842c0580098e54d4479e41847593",
+      "equivalentRetainedCommit": "fef40cbe031f3aef4c77e2bc35dd240e2e002300",
+      "filterInputObject": "6d512964a8bf1de2b120c1a76aca50350a6a9503",
+      "filterInputCommit": "a55baf21a2f0842c0580098e54d4479e41847593",
+      "filteredObject": "10f4734cab5d7e3cc40fb4de4db89534bfa7038d",
+      "filteredCommit": "fef40cbe031f3aef4c77e2bc35dd240e2e002300"
+    },
+    {
+      "ref": "refs/tags/v0.8.0",
+      "remoteBeforeObject": "5d1efa9730f1a2cac4e238791cf19637368c6982",
+      "remoteBeforeCommit": "352eb2652d4e11c876ef84152fc8e02f8d5ed331",
+      "equivalentRetainedCommit": "c448578f97158ea8898236bbddd9fe6f0fb0aac9",
+      "filterInputObject": "5d1efa9730f1a2cac4e238791cf19637368c6982",
+      "filterInputCommit": "352eb2652d4e11c876ef84152fc8e02f8d5ed331",
+      "filteredObject": "b3d275a3df8716b6747864531d21200c26c2f9f7",
+      "filteredCommit": "c448578f97158ea8898236bbddd9fe6f0fb0aac9"
+    },
+    {
+      "ref": "refs/tags/v0.9.0",
+      "remoteBeforeObject": "0d25dc7dd2ef066bd9d677dbfcc67d88307631c7",
+      "remoteBeforeCommit": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+      "equivalentRetainedCommit": "f3a7cc5ee74fe5ae984fc3ccd887b8e6654d4d38",
+      "filterInputObject": "0d25dc7dd2ef066bd9d677dbfcc67d88307631c7",
+      "filterInputCommit": "d600805f7c2833d601bc32d6e3db0b02360eb0c6",
+      "filteredObject": "3a1ed208d512ae172e516bbaccff4b77a73b9911",
+      "filteredCommit": "f3a7cc5ee74fe5ae984fc3ccd887b8e6654d4d38"
+    }
+  ]
+}

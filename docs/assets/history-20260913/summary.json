@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "stage": "isolated history filtering audited before leased publication",
+  "observedAt": "2026-09-13T03:29:46.842191+00:00",
+  "ownerAuthorization": "2026-09-13: release and verify the R2 migration, then reduce Git history",
+  "acceptedR2Release": "517fafdaf99674b2aeb07fc5908184ac928d26d8",
+  "preservedSubsequentMain": "fcfd6c9c328b608abf14159cf378fa42d4a82d3c",
+  "cleanupCommitBeforeFiltering": "42144aea5b31f666773750992b0a531f5c9ea8db",
+  "cleanupCommitAfterFiltering": "e1341674b8cd78b890f9cd5a237fd876675e44df",
+  "filter": {
+    "observedAt": "2026-09-13T03:23:26.596000+00:00",
+    "commitsPreserved": 267,
+    "authorsMessagesAndParentsPreserved": true,
+    "allRetainedCommitTreesPreserved": true,
+    "annotatedTagMetadataPreserved": true,
+    "sourceTreesPreservedForRefs": 28,
+    "historicalMaterialPathsRemaining": 0,
+    "vendorArchivePreserved": true,
+    "alternates": false,
+    "remainingBlobs": 4601,
+    "remainingLogicalBlobBytes": 45160125,
+    "packBytes": 6894635
+  },
+  "gitBefore": {
+    "packedBytes": 3623820288,
+    "removedHistoricalMaterialPaths": 8341,
+    "untrackedWorkingMaterials": 8314,
+    "localWorkingMaterialBytesPreserved": 6927584962,
+    "ordinaryRemoteCloneDuration": "not measured before migration"
+  },
+  "filteredCheckout": {
+    "observedAt": "2026-09-13T03:25:16.967075+00:00",
+    "kind": "independent local filtered checkout, not a remote-clone benchmark",
+    "sourceRevision": "e1341674b8cd78b890f9cd5a237fd876675e44df",
+    "materialFilesBeforeInstall": 0,
+    "sourceFiles": 3807,
+    "sourceBytes": 29117526,
+    "alternates": false,
+    "checkout": "/var/folders/hh/5b1tphh13wbg8hj9jj_bxbqr0000gn/T/hexly-r2-history-b4h9q1q9/publication",
+    "bun install --frozen-lockfile": {
+      "passed": true,
+      "seconds": 2.94
+    },
+    "bun run build": {
+      "passed": true,
+      "seconds": 1.707
+    },
+    "bun run assets:check-tracked": {
+      "passed": true,
+      "seconds": 0.054
+    },
+    "distFiles": 348,
+    "distBytes": 3412315
+  },
+  "backupDirectory": "/Users/nocoo/backups/hexly.ai/r2-migration-20260913T080642",
+  "backups": [
+    {
+      "createdAt": "2026-09-13T03:16:22.133691+00:00",
+      "file": "pre-history-full.bundle",
+      "bytes": 3623654386,
+      "sha256": "be206e810abbc302ea93faae407f48fa91478f8069d8870a0020dece8ea2c2dd",
+      "verified": true,
+      "state": "pre-history-state-final.json",
+      "containsCompleteHistory": true
+    },
+    {
+      "createdAt": "2026-09-13T03:21:36.308955+00:00",
+      "file": "cleanup.bundle",
+      "head": "42144aea5b31f666773750992b0a531f5c9ea8db",
+      "bytes": 104226,
+      "sha256": "5339e6b7fd2c3dda8d9333a8125a75499606e1f2bc4f317c190c17ff5512490b",
+      "verified": true,
+      "prerequisiteTag": "v0.11.0",
+      "prerequisiteArchive": "pre-history-full.bundle"
+    }
+  ],
+  "sourceArchives": {
+    "inventory": "../inventory.json",
+    "receipts": "../publication.jsonl",
+    "objects": 8193,
+    "sourcePaths": 9342,
+    "storedBytes": 5181182625,
+    "receiptsSha256": "6d5a2118e0b4807c234e56ea811120d9482881d8c59f9c6e1790d01fe9e09cc3"
+  },
+  "signatureNotice": "The originally signed initial commit is retained in the full backup. A rewritten object cannot preserve its original GitHub signature.",
+  "publicationVerification": "https://github.com/nocoo/hexly.ai/releases/download/v0.11.1/verification.json",
+  "maps": {
+    "commit-map.tsv": {
+      "bytes": 21902,
+      "sha256": "298e46e0c9307983b461f1ab86ebb857802844ede5f0d945d3a252e9cc86bae2"
+    },
+    "ref-map.json": {
+      "bytes": 15704,
+      "sha256": "8d6a8d43faf6d4046ab1dceb2edcedcfb5fdd336177ae8e041c8d12e965eeb5d"
+    }
+  },
+  "localMaterialRecovery": {
+    "completedAt": "2026-09-13T03:39:12.602593+00:00",
+    "cacheReusedAfterRealCdnRestoration": 2264,
+    "seededPayloads": 4176,
+    "seededBytes": 2191896701,
+    "source": "Previously full-byte verified original working materials, matched against the same immutable R2 inventory and publication receipts.",
+    "repairedOwnedPartialFiles": [],
+    "coldGithubCiVerification": "pending, separate from this local cache reuse"
+  },
+  "localChecks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "assets": "74 current source identities, 60 public family archives, 101 finishing passes and the licensed 5/5/5 Video Kit passed",
+    "retiredInventoryCliTestsPassed": 9,
+    "render": {
+      "sourceRevision": "8e68c8c13499be6f562ae02afdb06662538b7fa1",
+      "kitVersion": "2.0.0",
+      "project": "frogie",
+      "width": 960,
+      "height": 540,
+      "fps": 30,
+      "durationInFrames": 990,
+      "pages": 7,
+      "artifacts": [
+        {
+          "file": "poster.webp",
+          "bytes": 9394,
+          "sha256": "3dae817f51fbd8c9dd0bab6dbf950c2866573715b0319673097cc5a3f8c85dcb"
+        },
+        {
+          "file": "film.mp4",
+          "bytes": 2049115,
+          "sha256": "0505777b8851dc89af2c749d20bf432e533150f90bcc7b5a4b9da616c4af7568"
+        },
+        {
+          "file": "deck.pptx",
+          "bytes": 353313,
+          "sha256": "d87d983b40a1f8fef577f8df74bef2728a372c34d904b5cd6eb51f74bc4e9a5c"
+        },
+        {
+          "file": "contact-sheet.webp",
+          "bytes": 27224,
+          "sha256": "735b76c7f26369ad76f14f8329acc2a61d6cd60062f5228398cf22c2f767d6bb"
+        },
+        {
+          "file": "deck.pdf",
+          "bytes": 177115,
+          "sha256": "0b2ee16b0c906440cbb93443cdadda856b18cd183d1e731632d2302d1c9165fc"
+        },
+        {
+          "file": "decoded-frame.png",
+          "bytes": 66300,
+          "sha256": "01d5e786ac28330ef569369c4a09b203fa722a175c3af36a9bd908b8b832774f"
+        },
+        {
+          "file": "frames/03-chapter.png",
+          "bytes": 39405,
+          "sha256": "b55edc8fec6c6f5034a85d04e2e7a66074eb968d63674053d7d52347e731880f"
+        },
+        {
+          "file": "frames/07-outro.png",
+          "bytes": 19220,
+          "sha256": "b87f264f104919e5948f753d73184e985c4f72610a0a3345b46d26261fcc61b2"
+        },
+        {
+          "file": "frames/01-intro.png",
+          "bytes": 31700,
+          "sha256": "7e6b468a8e2384073aa0ff75f711872344f2a9567d76a2328453f7e6a5b77d6e"
+        },
+        {
+          "file": "frames/05-cta.png",
+          "bytes": 37408,
+          "sha256": "78fd0a31487b773a91c4b818d8aa809f9e755105effca66f1e605504d46da724"
+        },
+        {
+          "file": "frames/02-title.png",
+          "bytes": 39899,
+          "sha256": "585f62f2ee28aa7d5891f7f2907336218c1aa7a9e17b9362e2491cdecb0a5b4b"
+        },
+        {
+          "file": "frames/06-logo.png",
+          "bytes": 20381,
+          "sha256": "ba94423edf360549cc8eb57945709fb5e612812d7dfa8d38f113527abc3a3c9b"
+        },
+        {
+          "file": "frames/04-content.png",
+          "bytes": 88629,
+          "sha256": "a7a28493cdf5b558ed528fa9b6a26f6d9572e5c10dce1634b76dbdf4b78650b7"
+        }
+      ],
+      "contactSheetAndDecodedFrameInspected": true
+    }
+  }
+}
