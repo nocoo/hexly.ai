@@ -19,15 +19,15 @@ index.dev.hexly.ai {
 
 ```sh
 bun install
-bun run assets:hydrate
 bun run dev
 ```
 
 Vite explicitly allows `index.dev.hexly.ai`. HTTPS websocket upgrades pass through Caddy for hot-module replacement.
 
 Website images, fonts and downloads resolve directly to `https://h.no.mt`.
-Hydrate material files for local archive authoring, offline rendering and tests;
-ordinary builds need only tracked code and metadata. Browser/HTTP tests use an
+Hydrate material files with `bun run assets:hydrate` for local archive authoring,
+offline Worker previews and tests; ordinary development/builds need only tracked
+code and metadata. Browser/HTTP tests use an
 isolated local asset tree outside `dist` and do not depend on live CDN requests.
 The Worker deployment contains no material binaries and is limited to 20 MiB.
 See [asset storage and recovery](21-asset-storage.md).

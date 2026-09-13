@@ -39,6 +39,7 @@ From the repository root:
 ```sh
 bun install --frozen-lockfile
 bun run dev                  # https://index.dev.hexly.ai/templates, local SQLite D1
+bun run assets:r2 -- hydrate --project hexly-ai  # licensed fonts for standalone/offline preview
 bun run video:dev            # http://127.0.0.1:7440, independent Vite preview
 bun run video:studio         # http://localhost:7441, Remotion compositions
 ```
@@ -116,7 +117,7 @@ bun run --cwd packages/video-kit render --example bento \
 
 Each render uses a fresh output directory, retains `render.json` with the exact theme/components and input hash, and writes under the chosen content layout ID. Files include `deck.pptx`, `deck.pdf`, `frames/`, `poster.webp`, `contact-sheet.webp`; a video opt-in adds `film.mp4`. Existing output folders are refused. Do not put render outputs under any site's `public/` or deploy them automatically.
 
-External consumers must copy this package's unchanged `public/video-kit/1.0.0/hexly/` font/license assets into their public root. `brandAssetVersion` remains 1.0.0 because those bytes have not changed; `kitVersion` and schema can evolve independently. Renderer `--public-dir` accepts a prepared local asset directory. The root wrapper handles catalogue artwork and downloaded embedded screenshots.
+External consumers must hydrate and copy this package's unchanged `public/video-kit/1.0.0/hexly/` font/license assets into their public root. They are indexed by path and SHA-256 in the repository's R2 inventory; Git does not need binary fonts. `brandAssetVersion` remains 1.0.0 because those bytes have not changed; `kitVersion` and schema can evolve independently. Renderer `--public-dir` accepts a prepared local asset directory. The root wrapper hydrates the selected catalogue artwork and fonts, then renders from an isolated local directory. Host websites may wrap previews in the exported `HexlyFontOrigin.Provider` with the configured CDN origin; standalone rendering defaults to local fonts.
 
 ## Review and asset boundaries
 

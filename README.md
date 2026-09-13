@@ -108,11 +108,12 @@ hexly.ai/
 git clone https://github.com/nocoo/hexly.ai.git
 cd hexly.ai
 bun install --frozen-lockfile
-bun run assets:hydrate
 bun run dev
 ```
 
 默认地址为 `http://127.0.0.1:7048`。本机通过 Caddy 使用 **[index.dev.hexly.ai](https://index.dev.hexly.ai)**，配置见[开发与部署](docs/04-development.md)。
+
+日常开发直接读取 CDN 素材，不必先下载整个历史图库。修改品牌、运行完整测试或做离线资源预览前，再执行 `bun run assets:hydrate`；单个项目可用 `bun run assets:r2 -- hydrate --project snail` 恢复。
 
 本地状态页位于 `/status`，通过真实 Worker API 读取 Wrangler 的 SQLite D1。
 开发脚本自动载入 7 天模拟记录，页面明确标注模拟数据；本地不会探测生产站点。
