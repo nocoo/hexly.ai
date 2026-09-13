@@ -608,7 +608,14 @@ if (import.meta.main) {
 		throw new Error("Scope must be public or all.");
 	if (
 		values.project &&
-		![...readProjects().map((p) => p.id), "hexly-ai"].includes(values.project)
+		![...readProjects().map((p) => p.id), "hexly-ai"].includes(
+			values.project,
+		) &&
+		!(
+			["plan", "url", "verify", "hydrate"].includes(command ?? "") &&
+			existsSync(inventoryPath) &&
+			readInventory().files.some((file) => file.project === values.project)
+		)
 	)
 		throw new Error(`Unknown catalogue project: ${values.project}`);
 	const limit = values.limit === undefined ? undefined : Number(values.limit);
