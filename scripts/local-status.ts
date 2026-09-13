@@ -74,7 +74,9 @@ async function seed(env: string, directory: string) {
 export async function startLocalStatus(profile: LocalProfile) {
 	const { env, port, inspector } = profiles[profile];
 	const directory = `.wrangler/${profile}`;
-	const assetsDirectory = await localAssets(profile);
+	// Vite serves development pages/material URLs; its Worker only needs the small build and D1.
+	const assetsDirectory =
+		profile === "dev" ? "dist" : await localAssets(profile);
 	await mkdir(directory, { recursive: true });
 	await execute([
 		"d1",
