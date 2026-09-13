@@ -146,7 +146,11 @@ describe("complete Hexly campaign archives", () => {
 					}
 				expect(edgeAlpha).toBe(0);
 				expect(maxAlpha).toBeGreaterThan(0);
-				expect(maxAlpha).toBeLessThanOrEqual(16);
+				if (p.id === "pi-agent-policy" && kit.version === "1.0.1") {
+					// Only this explicit pilot gets stronger support linework.
+					expect(maxAlpha).toBeGreaterThanOrEqual(70);
+					expect(maxAlpha).toBeLessThanOrEqual(150);
+				} else expect(maxAlpha).toBeLessThanOrEqual(16);
 				for (const square of [false, true]) {
 					const placement = m.hero.placements[square ? "square" : "wide"];
 					expect(placement.left).toBeGreaterThanOrEqual(0);

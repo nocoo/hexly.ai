@@ -244,12 +244,13 @@ export async function inventory() {
 			},
 		);
 	}
-	// Source copies with identical bytes can recover from a published export.
+	// New source copies may reuse exports; existing recovery URLs stay frozen.
 	const publicByHash = new Map(
 		files.filter((f) => f.path).map((f) => [f.sha256, f.key]),
 	);
 	for (const file of files)
-		if (!file.path) file.key = publicByHash.get(file.sha256) ?? file.key;
+		if (!file.path && !previousSources.has(file.source))
+			file.key = publicByHash.get(file.sha256) ?? file.key;
 	const document: AssetInventory = {
 		schemaVersion: 1,
 		sourceRevision:

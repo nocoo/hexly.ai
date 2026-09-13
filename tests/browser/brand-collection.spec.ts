@@ -65,6 +65,17 @@ for (const project of targets) {
 			await page.locator(".brand-kit-specimens").scrollIntoViewIfNeeded();
 			for (const image of await page.locator(".brand-kit-specimens img").all())
 				await image.evaluate((node: HTMLImageElement) => node.decode());
+			if (project.id === "pi-agent-policy") {
+				const tiles = page.locator(".brand-texture-specimens figure > div");
+				for (const tile of await tiles.all()) {
+					const area = await tile.boundingBox();
+					expect(area?.height).toBeGreaterThanOrEqual(256);
+					expect(area?.width).toBeGreaterThanOrEqual(256);
+				}
+				await page.locator(".brand-texture-study").screenshot({
+					path: testInfo.outputPath(`texture-${theme}.png`),
+				});
+			}
 			expect(
 				await page.evaluate(
 					() => document.documentElement.scrollWidth <= innerWidth,

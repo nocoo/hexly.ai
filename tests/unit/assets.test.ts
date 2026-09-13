@@ -1,5 +1,6 @@
 import { execFileSync, spawnSync } from "node:child_process";
 import {
+	mkdirSync,
 	mkdtempSync,
 	readFileSync,
 	realpathSync,
@@ -7,7 +8,7 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import {
 	assetKey,
@@ -21,6 +22,84 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("keeps existing source recovery URLs when a new kit duplicates the same bytes", () => {
+		const directory = mkdtempSync(
+			join(tmpdir(), "hexly-inventory-version-test-"),
+		);
+		const script = resolve("scripts/asset-storage.ts");
+		const localVars = execFileSync("git", ["rev-parse", "--local-env-vars"], {
+			encoding: "utf8",
+		})
+			.trim()
+			.split("\n");
+		const env = Object.fromEntries(
+			Object.entries(process.env).filter(([name]) => !localVars.includes(name)),
+		);
+		const git = (...args: string[]) =>
+			execFileSync("git", args, { cwd: directory, env, stdio: "ignore" });
+		const write = (path: string, body: string) => {
+			mkdirSync(dirname(join(directory, path)), { recursive: true });
+			writeFileSync(join(directory, path), body);
+		};
+		const inventory = () => {
+			const result = spawnSync("bun", [script, "inventory"], {
+				cwd: directory,
+				env,
+				encoding: "utf8",
+			});
+			expect(result.status, result.stderr).toBe(0);
+			return JSON.parse(
+				readFileSync(join(directory, "docs/assets/inventory.json"), "utf8"),
+			);
+		};
+		try {
+			git("init", "-b", "main");
+			git(
+				"-c",
+				"user.name=Fixture",
+				"-c",
+				"user.email=fixture@example.test",
+				"commit",
+				"--allow-empty",
+				"-m",
+				"fixture",
+			);
+			write("src/data/projects/index.json", "[]");
+			for (const path of [
+				"src/fonts/journey-cjk.woff2",
+				"node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+				"node_modules/@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2",
+			])
+				write(path, `font fixture ${path}`);
+			write(
+				"public/brands/pi-agent-policy/v1.0.0/logo.png",
+				"same image fixture",
+			);
+			write("artwork/old/logo.png", "same image fixture");
+			const previous = inventory().files.find(
+				(f: { source: string }) => f.source === "artwork/old/logo.png",
+			);
+			expect(previous.key).toBe("brands/pi-agent-policy/v1.0.0/logo.png");
+			write(
+				"public/brands/pi-agent-policy/v1.0.1/logo.png",
+				"same image fixture",
+			);
+			write("artwork/new/logo.png", "same image fixture");
+			const next = inventory();
+			expect(
+				next.files.find(
+					(f: { source: string }) => f.source === previous.source,
+				),
+			).toEqual(previous);
+			expect(
+				next.files.find(
+					(f: { source: string }) => f.source === "artwork/new/logo.png",
+				).key,
+			).toBe("brands/pi-agent-policy/v1.0.1/logo.png");
+		} finally {
+			rmSync(directory, { recursive: true, force: true });
+		}
+	});
 	it("keeps retired materials discoverable without reopening project publication", () => {
 		expect(readProjects().some((project) => project.id === "snail")).toBe(
 			false,

@@ -33,12 +33,12 @@ Install once in the Pi user directory to apply declarative tool policies across 
 
 ## Current logo
 
-![Pi Agent Policy source identity](https://hexly.ai/logos/display/pi-agent-policy-160.webp)
+![Pi Agent Policy source identity](https://h.no.mt/projects/pi-agent-policy/identity/v1.0.0/pi-agent-policy-160-219e2b72a80e.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved
 - Subject: Compact graphite push-to-reset instrument with an ivory face, terracotta button and brass contacts
 - [Source](https://github.com/nocoo/pi-agent-policy/blob/ba73409bd7326fa1a425e5faa918a285cde42de5/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/originals/pi-agent-policy-family-2026-09-14-03-01.png)
+- [Preserved asset](https://h.no.mt/projects/pi-agent-policy/identity/v1.0.0/pi-agent-policy-family-2026-09-14-03-01-c090785742f2.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3982512 bytes
 - SHA-256: `c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611`
@@ -60,11 +60,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Hexly campaign brand archive
 
-- Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/pi-agent-policy#brand).
-- [Light lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/pi-agent-policy/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](https://h.no.mt/brands/pi-agent-policy/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/pi-agent-policy/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/pi-agent-policy/v1.0.0/manifest.json).
+- Brand version: `1.0.1`; [public archive](https://hexly.ai/projects/pi-agent-policy#brand).
+- [Light lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.1/lockup-light.png), [dark lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.1/lockup-dark.png), [favicon](https://h.no.mt/brands/pi-agent-policy/v1.0.1/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/pi-agent-policy/v1.0.1/guide.md), [standalone specimens](https://hexly.ai/brands/pi-agent-policy/v1.0.1/review.html), [all exports and SHA-256](https://h.no.mt/brands/pi-agent-policy/v1.0.1/manifest.json).
 - Source adoption: recorded at `ba73409bd7326fa1a425e5faa918a285cde42de5`.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
+- [Previous v1.0.0 archive](https://hexly.ai/brands/pi-agent-policy/v1.0.0/review.html) remains immutable.
 
 
 A graphite reset instrument for user-level Pi tool policies and bounded recovery.
@@ -138,6 +139,6 @@ Small-size observation: The graphite silhouette and red control remain legible a
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve the approved raster, original colors, complete silhouette, and exact generation/finishing records. Supporting textures remain separate. Published versions are immutable; generated raster artwork is not native SVG.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

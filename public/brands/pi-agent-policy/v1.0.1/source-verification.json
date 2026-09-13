@@ -1,0 +1,25 @@
+{
+	"project": "pi-agent-policy",
+	"study": "2026-09-14-03",
+	"finishing": "01",
+	"rawSha256": "71582aad00f1f98416c900fa5ebc134a2b63136205da0411452931cc48260c85",
+	"opaquePixels": 1919664,
+	"changedOpaquePixels": 0,
+	"terminalOpeningsTransparent": true,
+	"verifiedFinishingFiles": 44,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [-90, 0],
+		"bounds": {
+			"left": 284,
+			"top": 308,
+			"right": 1771,
+			"bottom": 1716
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 276.50000000000006,
+		"clippedPixels": 0
+	},
+	"method": "Byte/hash checks for every finishing file; per-pixel comparison of fully opaque extracted RGB with the native image before uniform placement; measured rounded-outline clearance and native terminal-hole alpha checks."
+}
