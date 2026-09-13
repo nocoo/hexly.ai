@@ -5,6 +5,7 @@ import {
 } from "../packages/video-kit/src/schema";
 import examples from "../src/data/template-examples.json" with { type: "json" };
 import manifest from "../src/data/videos.json";
+import { standardOutros } from "../src/model/agent-guide";
 
 /** Public metadata and verified CDN references; render outputs never enter the build. */
 export function videoSiteAssets(): Plugin {
@@ -19,6 +20,11 @@ export function videoSiteAssets(): Plugin {
 			fileName: "templates/examples.json",
 			type: "application/json",
 			source: json(examples),
+		},
+		{
+			fileName: "templates/outros.json",
+			type: "application/json",
+			source: json(standardOutros),
 		},
 		...Object.entries(schemaDocuments()).map(([file, schema]) => ({
 			fileName: `templates/${file}`,

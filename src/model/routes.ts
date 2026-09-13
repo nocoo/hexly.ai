@@ -1,4 +1,6 @@
-import projectIds from "../data/projects/index.json";
+import projectIds from "../data/projects/index.json" with { type: "json" };
+
+export const siteOrigin = "https://hexly.ai";
 
 const projects = new Set(projectIds);
 

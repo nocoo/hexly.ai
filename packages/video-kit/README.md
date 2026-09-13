@@ -46,12 +46,13 @@ bun run video:studio         # http://localhost:7441, Remotion compositions
 
 `/templates` has three component families. Each card shows the selected catalogue project through the actual composition. In a project preview, choose the opening/content/ending and theme. Changing a component seeks to that part. A theme change pauses playback and preserves the current frame; switching Video/Deck preserves the current scene. Previews start paused and respect the system reduced-motion preference. Template previews do not load, generate or upload MP4 files. Finished project recordings are a separate, optional feature of `/projects/<id>`.
 
-The site's separate [finished examples](https://hexly.ai/templates#examples)
-offer five silent, light-theme brand endings from the Workflow consumer, with
-R2 MP4 downloads and full-canvas 4K stills captured directly from its HTML.
-They remain fixed recordings when project or preview-theme controls change.
-Their [manifest](https://hexly.ai/templates/examples.json) is separate from
-the component manifest; see [source and publication records](../../docs/24-standard-outro-examples.md).
+The site's [standard outros](https://hexly.ai/templates#outros) are five ready-to-use,
+project-independent Hexly endings. Download and append an existing MP4 without
+regenerating it, or use its full-canvas HTML-rendered 4K still for a closing slide.
+All five are light and silent, and remain fixed when preview controls change.
+Their [manifest](https://hexly.ai/templates/outros.json) is separate from the
+component manifest. Each clip offers a copyable Agent handoff with exact files
+and hashes; see [source and publication records](../../docs/24-standard-outro-examples.md).
 
 The project, three base choices, theme and selected view are shareable URL parameters. PNG/JPEG/WebP screenshots (up to 8 MB) stay in the browser and are embedded in a downloaded setup. They are deliberately not placed in URLs or persisted across projects. The site adapter in `src/model/videos.ts` reads the catalogue once; there are no per-project/per-template configuration copies. Catalogue facts are snapshots, never a live health claim.
 

@@ -7,7 +7,7 @@ import manifest from "../../src/data/template-examples.json" with {
 import { expect, test } from "./fixtures";
 
 for (const colorScheme of ["light", "dark"] as const) {
-	test(`browses finished examples in ${colorScheme} without fetching movies or changing the recording theme`, async ({
+	test(`browses standard outros in ${colorScheme} without fetching movies or changing the recording theme`, async ({
 		page,
 	}, testInfo) => {
 		await page.emulateMedia({ colorScheme });
@@ -15,11 +15,11 @@ for (const colorScheme of ["light", "dark"] as const) {
 		page.on("request", (request) => {
 			if (request.url().endsWith(".mp4")) movies.push(request.url());
 		});
-		await page.goto("/templates#examples");
-		await expect(page).toHaveURL(/\/templates#examples$/);
-		const section = page.locator("#examples");
+		await page.goto("/templates#outros");
+		await expect(page).toHaveURL(/\/templates#outros$/);
+		const section = page.locator("#outros");
 		await expect(
-			section.getByRole("heading", { name: "Finished examples" }),
+			section.getByRole("heading", { name: "Standard outros" }),
 		).toBeInViewport();
 		await expect(section.locator("[data-template-example]")).toHaveCount(5);
 		await expect(page.locator("video")).toHaveCount(0);
@@ -42,7 +42,7 @@ for (const colorScheme of ["light", "dark"] as const) {
 			),
 		).toBe(true);
 		const scan = await new AxeBuilder({ page })
-			.include("#examples")
+			.include("#outros")
 			.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
 			.analyze();
 		expect(scan.violations).toEqual([]);
@@ -51,7 +51,7 @@ for (const colorScheme of ["light", "dark"] as const) {
 		});
 		await page.getByRole("button", { name: "Switch to Chinese" }).click();
 		await expect(
-			section.getByRole("heading", { name: "成片范例" }),
+			section.getByRole("heading", { name: "标准片尾" }),
 		).toBeVisible();
 		await expect(section).toContainText("均为浅色、无声");
 		await page.getByLabel("选择项目", { exact: true }).selectOption("bogo");
@@ -72,21 +72,15 @@ for (const colorScheme of ["light", "dark"] as const) {
 	});
 }
 
-test("keeps each template's matching ending and an anchor back to all five examples", async ({
+test("offers every standard outro on every template and preserves the old anchor", async ({
 	page,
 }) => {
 	for (const example of manifest.examples) {
-		await page.goto(`/templates/${example.template}#examples`);
-		await expect(page.locator("[data-template-example]")).toHaveCount(1);
-		await expect(page.locator("[data-template-example]")).toHaveAttribute(
-			"data-template-example",
-			example.video.id,
-		);
-		await expect(
-			page.getByRole("link", { name: "All five examples" }),
-		).toHaveAttribute("href", "/templates#examples");
+		await page.goto(`/templates/${example.template}#outros`);
+		await expect(page.locator("[data-template-example]")).toHaveCount(5);
+		await expect(page.locator("#outros")).toContainText("any project");
 	}
-	await page.getByRole("link", { name: "All five examples" }).click();
+	await page.goto("/templates#examples");
 	await expect(page.locator("[data-template-example]")).toHaveCount(5);
 	await expect(page.locator("#template-examples-title")).toBeInViewport();
 });

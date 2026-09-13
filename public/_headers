@@ -37,6 +37,10 @@
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=0, must-revalidate
 
+/agents/*
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate
+
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
   Cache-Control: public, max-age=0, must-revalidate

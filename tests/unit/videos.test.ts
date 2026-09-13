@@ -229,7 +229,7 @@ describe("one project source for five video and deck templates", () => {
 			const html = applyPageToHtml(shell, page);
 			expect(html).toContain(template.title);
 			expect(html).not.toContain("/video-assets/");
-			expect(html).toContain("/templates/examples.json");
+			expect(html).toContain("/templates/outros.json");
 			expect(JSON.stringify(page.jsonLd)).not.toContain("VideoObject");
 		}
 		expect(pageForPath("/templates/unknown", projects).path).toBe("/templates");

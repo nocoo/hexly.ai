@@ -1,0 +1,28 @@
+export const agentCopy = {
+	en: {
+		region: "For agents",
+		hint: "Exact files, source records and instructions. Ready to hand over.",
+		read: "Read the integration guide",
+		copy: "Copy instructions",
+		copyOutro: "Copy for agent",
+		copyPrompt: "Copy exact prompt",
+		copyBrief: "Copy presentation brief",
+		copied: "Copied",
+		failed: "Copy failed. Open the text below and select it to copy manually.",
+		markdown: "Plain Markdown",
+		index: "Agent index",
+	},
+	zh: {
+		region: "交给 Agent",
+		hint: "原始文件、来源记录与使用说明，一键交接。",
+		read: "阅读集成说明",
+		copy: "复制使用说明",
+		copyOutro: "复制给 Agent",
+		copyPrompt: "复制原始 Prompt",
+		copyBrief: "复制设计说明",
+		copied: "已复制",
+		failed: "复制失败，请展开下方文本，选中后手动复制。",
+		markdown: "纯 Markdown",
+		index: "Agent 索引",
+	},
+};

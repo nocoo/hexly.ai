@@ -4,6 +4,7 @@ import { parseVideoManifest } from "../../packages/video-kit/src/schema";
 import examples from "../../src/data/template-examples.json" with {
 	type: "json",
 };
+import { standardOutros } from "../../src/model/agent-guide";
 
 test("serves the client-only composition manifest, five pages, v2 schema and licensed fonts", async ({
 	request,
@@ -34,7 +35,7 @@ test("serves the client-only composition manifest, five pages, v2 schema and lic
 	expect((await font.body()).byteLength).toBeGreaterThan(100_000);
 });
 
-test("serves the five R2 examples separately from the configurable component manifest", async ({
+test("serves reusable standard outros and preserves the original file index", async ({
 	request,
 }) => {
 	const response = await request.get("/templates/examples.json");
@@ -42,6 +43,11 @@ test("serves the five R2 examples separately from the configurable component man
 	expect(response.headers()["content-type"]).toContain("application/json");
 	expect(response.headers()["cache-control"]).toContain("must-revalidate");
 	expect(await response.json()).toEqual(examples);
+	const reusable = await request.get("/templates/outros.json");
+	expect(reusable.ok()).toBe(true);
+	expect(reusable.headers()["content-type"]).toContain("application/json");
+	expect(reusable.headers()["cache-control"]).toContain("must-revalidate");
+	expect(await reusable.json()).toEqual(standardOutros);
 	const html = await (await request.get("/templates")).text();
 	for (const example of examples.examples) {
 		expect(html).toContain(example.video.src);

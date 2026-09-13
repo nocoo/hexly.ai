@@ -32,7 +32,8 @@
 ## 功能
 
 - **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
-- **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。另有 [5 个标准片尾成片范例](https://hexly.ai/templates#examples)，可播放并下载 R2 原始 MP4 与 HTML 渲染的 4K 静帧。
+- **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。[5 个标准片尾](https://hexly.ai/templates#outros)可跨项目直接拼接使用，无需重新生成，提供原始 MP4、HTML 渲染的 4K 静帧和一键 Agent 交接说明。
+- **Agent 使用** — 每个正式页面提供可复制的使用说明、纯 Markdown 与 HTML 发现链接；项目档案的原始 Prompt / 设计说明可直接复制。[维护约定](docs/25-agent-guides.md)。
 - **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
 - **Logo 图鉴** — `/logos` 是项目下的图片墙，点击进入项目详情的 `#brand`。保留新旧对照、图标/透明/白底视图、实际尺寸、场景、色板、生成提示词和原始文件下载。
 - **真实色板** — 展示项目的前景色、背景色与点缀色，点击复制颜色值。

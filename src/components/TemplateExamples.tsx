@@ -1,24 +1,18 @@
-import examples from "../data/template-examples.json" with { type: "json" };
+import { agentCopy } from "../data/agent-copy";
 import { videoCopy } from "../data/video-copy";
+import { outroInstructions, standardOutros } from "../model/agent-guide";
 import type { Locale } from "../model/project";
 import { AssetLink } from "./AssetLink";
+import { CopyButton } from "./CopyButton";
 import { VideoPlayer } from "./ProjectMedia";
 
-export function TemplateExamples({
-	locale,
-	template,
-}: {
-	locale: Locale;
-	template?: string;
-}) {
+export function TemplateExamples({ locale }: { locale: Locale }) {
 	const t = videoCopy[locale];
-	const entries = examples.examples.filter(
-		(example) => !template || example.template === template,
-	);
+	const entries = standardOutros.outros;
 	return (
 		<section
 			className="template-examples"
-			id="examples"
+			id="outros"
 			aria-labelledby="template-examples-title"
 			onPlayCapture={(event) => {
 				for (const player of event.currentTarget.querySelectorAll("video")) {
@@ -26,21 +20,16 @@ export function TemplateExamples({
 				}
 			}}
 		>
+			<span id="examples" className="anchor-alias" aria-hidden="true" />
 			<div className="detail-section-heading">
 				<div>
 					<p className="eyebrow">{t.examplesEyebrow}</p>
 					<h2 id="template-examples-title">{t.examples}</h2>
 					<p>{t.examplesDescription}</p>
 				</div>
-				{template ? (
-					<a className="video-examples-jump" href="/templates#examples">
-						{t.allExamples} ↗
-					</a>
-				) : (
-					<span className="mono">
-						{String(entries.length).padStart(2, "0")} MP4
-					</span>
-				)}
+				<span className="mono">
+					{String(entries.length).padStart(2, "0")} MP4
+				</span>
 			</div>
 			<div className="template-example-grid">
 				{entries.map((example) => (
@@ -69,11 +58,22 @@ export function TemplateExamples({
 							>
 								{t.exampleLink} ↗
 							</AssetLink>
+							<CopyButton
+								text={outroInstructions(example)}
+								locale={locale}
+								label={agentCopy[locale].copyOutro}
+							/>
 						</div>
+						<details className="outro-guide">
+							<summary>{t.outroUse}</summary>
+							<pre className="agent-instructions" lang="en">
+								{outroInstructions(example)}
+							</pre>
+						</details>
 					</article>
 				))}
 			</div>
-			<a className="template-examples-manifest" href="/templates/examples.json">
+			<a className="template-examples-manifest" href="/templates/outros.json">
 				{t.examplesManifest} ↗
 			</a>
 		</section>

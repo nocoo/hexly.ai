@@ -95,7 +95,9 @@ export function ProjectDetail({
 			if (
 				target instanceof HTMLElement &&
 				(target.isContentEditable ||
-					target.closest("input, textarea, select, video, .project-media"))
+					target.closest(
+						"input, textarea, select, video, .project-media, .agent-region, .identity-archive",
+					))
 			)
 				return;
 			event.preventDefault();

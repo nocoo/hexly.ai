@@ -322,7 +322,7 @@ export function Templates({
 							<p>
 								{t.description}
 								<br />
-								<a className="video-examples-jump" href="#examples">
+								<a className="video-examples-jump" href="#outros">
 									{t.examples} ↓
 								</a>
 							</p>
@@ -440,7 +440,7 @@ export function Templates({
 					</div>
 				</>
 			)}
-			<TemplateExamples locale={locale} template={entry?.id} />
+			<TemplateExamples locale={locale} />
 			<div className="video-resource-links">
 				<a href={source}>{t.docs} ↗</a>
 				<a href="/templates/film-v2.schema.json">{t.schema} ↗</a>
