@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "project": "hexly-ai",
+  "video": "standard-outro-product-launch",
+  "version": "2.0.0",
+  "bucket": "hexlyai",
+  "origin": "https://h.no.mt",
+  "source": {
+    "repository": "https://github.com/nocoo/workflow",
+    "revision": "6b89bb9765f9845d57d6d38f2572f1c9152ecae2",
+    "revisionStatusAtImport": "local commit; source repository not pushed or modified by Hexly",
+    "package": "video-templates/hexly-bumpers/2.0.0",
+    "upstreamRevision": "f4d36c99ca95d5959e93a7e04687a56d210abcb0",
+    "kitVersion": "2.0.0",
+    "brandAssetVersion": "1.0.0",
+    "provenance": "docs/media/hexly-ai/standard-outros/v2.0.0.json",
+    "videoPath": "video-templates/hexly-bumpers/2.0.0/out/hexly-brand-outros-20260913/product-launch/hexly-product-launch-outro.mp4",
+    "renderRecord": "video-templates/hexly-bumpers/2.0.0/out/hexly-brand-outros-20260913/product-launch/render.json",
+    "renderRecordSha256": "afdb39a96e881a8e8f7b53c6a028f35d66fda5a9a5e5861f7c107b952993ec66"
+  },
+  "preset": "product-launch",
+  "kind": "outro",
+  "theme": "light",
+  "audio": "none",
+  "visibleText": "hexly.ai",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "durationSeconds": 6,
+  "durationInFrames": 180,
+  "composition": {
+    "template": "launch",
+    "ending": "signature"
+  },
+  "config": {
+    "schemaVersion": 2,
+    "preset": "product-launch",
+    "theme": "light",
+    "duration": 6,
+    "motion": "full"
+  },
+  "probe": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationSeconds": 6,
+    "audioStreams": 0,
+    "faststart": true
+  },
+  "assets": {
+    "video": {
+      "key": "projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-d15a944c1e26.mp4",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-d15a944c1e26.mp4",
+      "filename": "hexly-product-launch-outro.mp4",
+      "sha256": "d15a944c1e2650edfd0f414e967ec17d5f2eb3f2059dd8ba5894c652122d9762",
+      "bytes": 151281,
+      "contentType": "video/mp4",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:40:10.739Z"
+    },
+    "poster": {
+      "key": "projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-poster-68ce6b6de192.webp",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-poster-68ce6b6de192.webp",
+      "filename": "hexly-product-launch-outro-poster.webp",
+      "sha256": "68ce6b6de192b1de34de132393d0370a6b2f7056003b07d0a0cf78dfe4960b83",
+      "bytes": 7966,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:40:14.907Z"
+    },
+    "still": {
+      "key": "projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-frame-100-4k-7dd99bac7ea3.png",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-frame-100-4k-7dd99bac7ea3.png",
+      "filename": "hexly-product-launch-outro-frame-100-4k.png",
+      "sha256": "7dd99bac7ea36932601cababc6f60ed00d412f1dd328c06f5d738e0c38b703bd",
+      "bytes": 149286,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:40:17.756Z"
+    }
+  },
+  "posterProvenance": {
+    "method": "HTML composition screenshot",
+    "composition": "HexlyOutro",
+    "frame": 100,
+    "scale": 2,
+    "derivedFromVideo": false,
+    "cropped": false,
+    "png": {
+      "width": 3840,
+      "height": 2160
+    },
+    "webp": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "verification": {
+    "publicSha256Matches": true,
+    "verifiedAt": "2026-09-13T09:43:43.001913+00:00",
+    "http": [
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-d15a944c1e26.mp4",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-d15a944c1e26.mp4",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "video/mp4",
+            "bytes": 151281,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "video/mp4",
+            "bytes": 151281,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": {
+          "status": 206,
+          "contentRange": "bytes 0-1023/151281",
+          "sha256": "d6ce52ca961d18fb11367ce3065a3beac096d1152152b71243a28de93c41a390",
+          "matchesOriginalBytes": true
+        }
+      },
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-poster-68ce6b6de192.webp",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-poster-68ce6b6de192.webp",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 7966,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 7966,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": null
+      },
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-frame-100-4k-7dd99bac7ea3.png",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-frame-100-4k-7dd99bac7ea3.png",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "image/png",
+            "bytes": 149286,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "image/png",
+            "bytes": 149286,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": null
+      }
+    ]
+  }
+}

@@ -3,9 +3,10 @@ import {
 	parseVideoManifest,
 	schemaDocuments,
 } from "../packages/video-kit/src/schema";
+import examples from "../src/data/template-examples.json" with { type: "json" };
 import manifest from "../src/data/videos.json";
 
-/** Explicit public boundary: licensed fonts, schemas and metadata, never render outputs. */
+/** Public metadata and verified CDN references; render outputs never enter the build. */
 export function videoSiteAssets(): Plugin {
 	const json = (value: unknown) => `${JSON.stringify(value)}\n`;
 	const files = () => [
@@ -13,6 +14,11 @@ export function videoSiteAssets(): Plugin {
 			fileName: "templates/manifest.json",
 			type: "application/json",
 			source: json(parseVideoManifest(manifest)),
+		},
+		{
+			fileName: "templates/examples.json",
+			type: "application/json",
+			source: json(examples),
 		},
 		...Object.entries(schemaDocuments()).map(([file, schema]) => ({
 			fileName: `templates/${file}`,

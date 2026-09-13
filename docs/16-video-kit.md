@@ -12,7 +12,7 @@ The system has five openings, five content layouts and five endings, each in the
 | Content | Launch, Essential, Showcase, Columns, Bento |
 | Ending | Signature, Line, Frame, Split, Colophon |
 
-Launch and Essential retain their original typographic direction. The other content layouts are new implementations. The old three layouts, their aliases, current preview movies, posters and downloadable decks have been removed. Historical bytes remain available in Git tag `v0.6.0`, not the deployed preview surface.
+Launch and Essential retain their original typographic direction. The other content layouts are new implementations. The old three layouts, their aliases, preview movies, posters and downloadable decks have been removed. Historical binaries remain recoverable from the verified original-history backup; see [Git recovery](23-git-history-recovery.md).
 
 ## Immutable design DNA
 
@@ -43,8 +43,10 @@ packages/video-kit/src/Scenes.tsx      five independent content layouts
 packages/video-kit/src/Endings.tsx     five independent endings
 packages/video-kit/src/Film.tsx        one timeline for preview, deck and offline render
 src/data/videos.json                  sole public collection metadata
+src/data/template-examples.json       separate verified R2 example references
 src/model/videos.ts                   single catalogue-to-project adapter
-src/components/Videos.tsx              collection and base composition selector
+src/components/Templates.tsx           collection and base composition selector
+src/components/TemplateExamples.tsx    poster-first finished examples and downloads
 scripts/video-site-assets.ts           font/license/schema/manifest public boundary
 scripts/review-video.ts                local browser still/contact-sheet review
 packages/video-kit/scripts/render.ts   explicit still/deck/video offline export
@@ -54,10 +56,20 @@ The manifest has no sample-media fields. `video:check` rejects media files in `p
 
 `/templates` adapts the catalogue for all 15 component cards. The selector shows the chosen project in both preview modes; adding a screenshot stays client-side. URL state preserves the project, opening, content layout, ending, theme and part/view selection. Downloaded JSON also preserves the screenshot and effective motion/format choices. The player pauses on theme changes and keeps the current page. Old layouts are not redirected to an unrelated replacement.
 
+`/templates#examples` additionally presents five approved, pre-rendered Hexly
+brand endings. These light, silent MP4s stay independent of the selected project
+and preview theme. Each template detail shows its matching example. The files,
+posters and HTML-rendered 4K stills live on R2; `/templates/examples.json` contains
+their verified references. Native playback begins after a click. Source and
+publication details: [standard outro examples](24-standard-outro-examples.md).
+
 ## Verification and export
 
 See the [kit README](../packages/video-kit/README.md) for executable commands and the complete API. Use `--mode deck` to create actual PPTX/PDF without regenerating a movie, or `--mode stills` for inspection frames. Video encoding requires the explicit `video` or `all` mode. Every output directory is fresh and separate from public assets.
 
 Tests cover all catalogue projects, all 250 base compositions, strict schema rejection, navigation round trips, actual brand assets, browser mixing/theme switches, screenshots/configuration parity and responsive accessibility. Browser review produces 30 real stills and three contact sheets. The [local review record](video-kit/2.0.0/review.md) distinguishes inspected frames and export proofs from movies, which are not regenerated for this task.
 
-There is no production deployment or new published SHA for this revision. A later release must follow the normal site release gates and the user's current publication authorization. Downstream productions remain pinned to their previously published source until then.
+The local redesign record predates publication. Current publication follows the
+site's GitHub Releases and exact revision at `/api/live`; downstream productions
+pin a published source SHA. The five Workflow-made examples consume kit 2.0.0
+at site v0.11.1 and do not change the shared component implementation.

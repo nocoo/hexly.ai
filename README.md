@@ -32,7 +32,7 @@
 ## 功能
 
 - **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
-- **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。模板预览与项目成片分开。
+- **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。另有 [5 个标准片尾成片范例](https://hexly.ai/templates#examples)，可播放并下载 R2 原始 MP4 与 HTML 渲染的 4K 静帧。
 - **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
 - **Logo 图鉴** — `/logos` 是项目下的图片墙，点击进入项目详情的 `#brand`。保留新旧对照、图标/透明/白底视图、实际尺寸、场景、色板、生成提示词和原始文件下载。
 - **真实色板** — 展示项目的前景色、背景色与点缀色，点击复制颜色值。
@@ -120,7 +120,7 @@ bun run dev
 开发脚本自动载入 7 天模拟记录，页面明确标注模拟数据；本地不会探测生产站点。
 存储和定时方案见[Status 实现说明](docs/11-status-monitoring.md)。
 
-Video Kit 使用站点的真实 Logo、字体与明暗色板。封面、正文、片尾独立组合，正文包含标题、章节、内容与 CTA，片尾沿用官方 Logo reveal。卡片与播放预览共用客户端画布，旧的示例成片和下载资源已移除；最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
+Video Kit 使用站点的真实 Logo、字体与明暗色板。封面、正文、片尾独立组合，正文包含标题、章节、内容与 CTA，片尾沿用官方 Logo reveal。组件预览共用客户端画布，最终渲染在本地运行；已完成的品牌片尾作为独立 R2 范例展示，不随项目或主题选择变化。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
 
 项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建为项目、图鉴、模板和状态生成 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap、JSON-LD 和 [`/api/share`](https://hexly.ai/api/share.json) 元数据；项目 canonical 为 `/projects/<id>`。旧 `/logos/<id>`、`/<id>` 与 `/videos/*` 链接有兼容跳转。分享接入见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建只需代码和元数据；本地素材按 inventory 恢复，不依赖相邻项目或运行时 GitHub 请求。
 
@@ -151,6 +151,7 @@ D1 在质量表中表示测试隔离维度；监控使用 Cloudflare D1 数据�
 - [项目详情、媒体与路由](docs/17-project-media.md)
 - [R2 资源存储与维护](docs/21-asset-storage.md)
 - [Git 历史裁剪、旧版本与素材恢复](docs/23-git-history-recovery.md)
+- [标准片尾范例、高清静帧与 R2 发布](docs/24-standard-outro-examples.md)
 - [项目档案与色板](docs/profiles/README.md)
 - [完整品牌档案、原标与宣发作用域](docs/19-family-brand-archives.md)
 - [来源快照](docs/sources/README.md)

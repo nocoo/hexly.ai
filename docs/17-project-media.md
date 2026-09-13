@@ -20,6 +20,10 @@ and binary working files hydrate from the inventory. See the
 Play / Journal / Résumé / Portfolio remain the related-site links. Templates
 describe reusable designs; finished recordings appear in the relevant project
 detail. Projects with no media have no empty player or placeholder section.
+Approved shared Hexly brand endings are a separate collection on
+`/templates#examples`, with references in `src/data/template-examples.json` and
+receipts under `docs/media/hexly-ai/`; see [the example runbook](24-standard-outro-examples.md).
+They do not create synthetic catalogue projects or duplicate product recordings.
 Screenshot-only entries are supported. The first catalogue screenshot also
 feeds the template adapter; an uploaded browser screenshot can override it.
 

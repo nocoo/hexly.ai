@@ -1,5 +1,8 @@
 import { copy } from "../data/copy";
 import identity from "../data/site-identity.json" with { type: "json" };
+import templateExamples from "../data/template-examples.json" with {
+	type: "json",
+};
 import { assetUrl } from "./assets";
 import { filterProjects } from "./catalogue";
 import type { Locale, Project } from "./project";
@@ -236,6 +239,7 @@ Public pages welcome search and AI crawlers. JavaScript is not required to read 
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
 - [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
 - [Video Kit](${siteOrigin}/templates): Mix five openings, five content layouts and five endings in two Hexly themes; client previews and local video/PPTX/PDF exports.
+- [Finished brand endings](${siteOrigin}/templates#examples): Five silent, light-theme Hexly MP4 examples and HTML-rendered 4K stills, served from the media CDN.
 
 ${visible.map((project) => link(project, "en")).join("\n")}
 
@@ -245,6 +249,7 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
 - [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
 - [视频模板](${siteOrigin}/templates): 五种封面、正文与片尾自由组合，均有 Hexly 明暗主题；客户端预览、本地视频与 PPTX/PDF 导出。
+- [成片范例](${siteOrigin}/templates#examples): 五个浅色无声 Hexly 片尾，提供 MP4 与从 HTML 渲染的 4K 高清静帧。
 
 ${visible.map((project) => link(project, "zh")).join("\n")}
 
@@ -265,6 +270,7 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Project catalogue JSON](${siteOrigin}/data/projects.json)
 - [Share metadata API](${siteOrigin}/api/share.json)
 - [Video manifest](${siteOrigin}/templates/manifest.json)
+- [Finished example files and provenance](${siteOrigin}/templates/examples.json)
 `;
 }
 
@@ -449,6 +455,13 @@ function videosPage(id?: string): DiscoveryPage {
 				`<li><a href="/templates/${item.id}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.description.en)}</li>`,
 		)
 		.join("");
+	const examples = templateExamples.examples
+		.filter((example) => !entry || example.template === entry.id)
+		.map(
+			(example) =>
+				`<li><a href="${escapeHtml(example.video.src)}">${escapeHtml(example.video.title.en)} — MP4</a> · <a href="${escapeHtml(example.still.src)}">4K still</a></li>`,
+		)
+		.join("");
 	return {
 		path,
 		title,
@@ -464,7 +477,7 @@ function videosPage(id?: string): DiscoveryPage {
 			[],
 		).replace(
 			"</main>",
-			`<nav><a href="/templates">All components</a></nav><ul>${items}</ul><p>Interactive Video and Deck previews. Two themes. Independent opening, content and ending selections. Export a project setup for local MP4, PowerPoint and PDF rendering.</p><p><a href="/templates/manifest.json">Public manifest</a> · <a href="/templates/film-v2.schema.json">Project schema</a></p></main>`,
+			`<nav><a href="/templates">All components</a></nav><ul>${items}</ul><p>Interactive Video and Deck previews. Two themes. Independent opening, content and ending selections. Export a project setup for local MP4, PowerPoint and PDF rendering.</p><section id="examples"><h2>Finished examples</h2><p>Hexly brand endings. Light theme, silent, six seconds. Original MP4s and full-canvas 4K stills rendered from HTML.</p><ul>${examples}</ul><a href="/templates/examples.json">Example files and provenance</a></section><p><a href="/templates/manifest.json">Public manifest</a> · <a href="/templates/film-v2.schema.json">Project schema</a></p></main>`,
 		),
 		jsonLd: {
 			"@context": "https://schema.org",

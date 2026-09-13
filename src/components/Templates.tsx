@@ -5,7 +5,7 @@ import type {
 	VideoEntry,
 	VideoProject,
 } from "@hexly/video-kit/schema";
-import { lazy, Suspense, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { videoCopy } from "../data/video-copy";
 import type { DirectoryState } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
@@ -16,6 +16,7 @@ import {
 	videoManifest,
 } from "../model/videos";
 import { Icon } from "./Icon";
+import { TemplateExamples } from "./TemplateExamples";
 import "../styles/videos.css";
 
 const ProjectPreview = lazy(() => import("./VideoProjectPreview"));
@@ -40,6 +41,11 @@ export function Templates({
 	onChange: (patch: Partial<DirectoryState>) => void;
 }) {
 	const t = videoCopy[locale];
+	useEffect(() => {
+		if (!state.anchor) return;
+		// The template route is lazy-loaded after App's initial anchor effect.
+		document.getElementById(state.anchor)?.scrollIntoView({ block: "start" });
+	}, [state.anchor]);
 	const selected = projects.find(
 		(project) => project.id === state.videoProject,
 	);
@@ -160,6 +166,7 @@ export function Templates({
 		},
 	];
 	const cardTarget = (item: VideoEntry) => ({
+		anchor: undefined,
 		video: item.kind === "template" ? item.id : "launch",
 		...(item.kind === "opening"
 			? { videoOpening: item.id, videoPart: "intro" as const }
@@ -312,7 +319,13 @@ export function Templates({
 								<br />
 								<span>{t.titleEnd}</span>
 							</h1>
-							<p>{t.description}</p>
+							<p>
+								{t.description}
+								<br />
+								<a className="video-examples-jump" href="#examples">
+									{t.examples} ↓
+								</a>
+							</p>
 						</div>
 						<div className="video-intro-note" aria-hidden="true">
 							<div className="video-combination-figure">
@@ -427,6 +440,7 @@ export function Templates({
 					</div>
 				</>
 			)}
+			<TemplateExamples locale={locale} template={entry?.id} />
 			<div className="video-resource-links">
 				<a href={source}>{t.docs} ↗</a>
 				<a href="/templates/film-v2.schema.json">{t.schema} ↗</a>

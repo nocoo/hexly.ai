@@ -45,8 +45,16 @@ export const videoCopy = {
 		part: "Component family",
 		exportDeck: "PPTX / PDF",
 		exportVideo: "MP4",
-		previewOnly:
-			"Every card shows your selected project. No pre-rendered samples.",
+		previewOnly: "Live compositions using your selected project and theme.",
+		examplesEyebrow: "READY TO USE",
+		examples: "Finished examples",
+		examplesDescription:
+			"Hexly brand endings, in light and without audio. Play or download the original clip, or take a 4K still.",
+		allExamples: "All five examples",
+		downloadExample: "Download MP4",
+		downloadStill: "4K still",
+		exampleLink: "Direct link",
+		examplesManifest: "Example files & provenance",
 	},
 	zh: {
 		eyebrow: "HEXLY 视频设计工具箱",
@@ -94,6 +102,15 @@ export const videoCopy = {
 		part: "组件类型",
 		exportDeck: "PPTX / PDF",
 		exportVideo: "MP4",
-		previewOnly: "每张卡片都使用所选项目，没有预渲染样片。",
+		previewOnly: "使用所选项目与主题，实时呈现组合效果。",
+		examplesEyebrow: "即取即用",
+		examples: "成片范例",
+		examplesDescription:
+			"可直接使用的 Hexly 品牌片尾，均为浅色、无声。播放或下载原片，也可取走 4K 高清静帧。",
+		allExamples: "全部五个范例",
+		downloadExample: "下载 MP4",
+		downloadStill: "4K 高清图",
+		exampleLink: "视频直链",
+		examplesManifest: "范例文件与来源",
 	},
 };

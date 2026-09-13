@@ -2,13 +2,17 @@ import { test as base, expect } from "@playwright/test";
 import { readInventory } from "../../scripts/asset-storage";
 import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
+import examples from "../../src/data/template-examples.json" with {
+	type: "json",
+};
 
 const assets = new Map(readInventory().files.map((file) => [file.key, file]));
-const posters = new Set(
-	readProjects().flatMap(
+const posters = new Set([
+	...readProjects().flatMap(
 		(project) => project.media?.videos?.map((video) => video.poster) ?? [],
 	),
-);
+	...examples.examples.map((example) => example.video.poster),
+]);
 
 /** Exercise production CDN URLs using verified local bytes; no live service dependency. */
 export const test = base.extend<{ assetFixtures: undefined }>({

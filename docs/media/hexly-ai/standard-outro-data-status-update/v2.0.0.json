@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "project": "hexly-ai",
+  "video": "standard-outro-data-status-update",
+  "version": "2.0.0",
+  "bucket": "hexlyai",
+  "origin": "https://h.no.mt",
+  "source": {
+    "repository": "https://github.com/nocoo/workflow",
+    "revision": "6b89bb9765f9845d57d6d38f2572f1c9152ecae2",
+    "revisionStatusAtImport": "local commit; source repository not pushed or modified by Hexly",
+    "package": "video-templates/hexly-bumpers/2.0.0",
+    "upstreamRevision": "f4d36c99ca95d5959e93a7e04687a56d210abcb0",
+    "kitVersion": "2.0.0",
+    "brandAssetVersion": "1.0.0",
+    "provenance": "docs/media/hexly-ai/standard-outros/v2.0.0.json",
+    "videoPath": "video-templates/hexly-bumpers/2.0.0/out/hexly-brand-outros-20260913/data-status-update/hexly-data-status-update-outro.mp4",
+    "renderRecord": "video-templates/hexly-bumpers/2.0.0/out/hexly-brand-outros-20260913/data-status-update/render.json",
+    "renderRecordSha256": "77b4cfe099145d76277504319249e688b571a025df2525dfb589efb3d6a0ff91"
+  },
+  "preset": "data-status-update",
+  "kind": "outro",
+  "theme": "light",
+  "audio": "none",
+  "visibleText": "hexly.ai",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "durationSeconds": 6,
+  "durationInFrames": 180,
+  "composition": {
+    "template": "bento",
+    "ending": "frame"
+  },
+  "config": {
+    "schemaVersion": 2,
+    "preset": "data-status-update",
+    "theme": "light",
+    "duration": 6,
+    "motion": "full"
+  },
+  "probe": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationSeconds": 6,
+    "audioStreams": 0,
+    "faststart": true
+  },
+  "assets": {
+    "video": {
+      "key": "projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-cf74ded8e9f7.mp4",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-cf74ded8e9f7.mp4",
+      "filename": "hexly-data-status-update-outro.mp4",
+      "sha256": "cf74ded8e9f718d2cf518d25d11b4de143b44981ca890e75518c6918eed430ca",
+      "bytes": 167257,
+      "contentType": "video/mp4",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:42:45.883Z"
+    },
+    "poster": {
+      "key": "projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-poster-c80f816a7b21.webp",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-poster-c80f816a7b21.webp",
+      "filename": "hexly-data-status-update-outro-poster.webp",
+      "sha256": "c80f816a7b21d882c7c9a27468046e4b12e1dc4057a3cd8e4eaa8a6346d641ce",
+      "bytes": 7980,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:42:47.764Z"
+    },
+    "still": {
+      "key": "projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-frame-100-4k-893efbb1e7f3.png",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-frame-100-4k-893efbb1e7f3.png",
+      "filename": "hexly-data-status-update-outro-frame-100-4k.png",
+      "sha256": "893efbb1e7f3b4cdb79f77d6a81413c043e8b6928f5abc914864e0f20e1cfc8b",
+      "bytes": 209618,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:42:50.778Z"
+    }
+  },
+  "posterProvenance": {
+    "method": "HTML composition screenshot",
+    "composition": "HexlyOutro",
+    "frame": 100,
+    "scale": 2,
+    "derivedFromVideo": false,
+    "cropped": false,
+    "png": {
+      "width": 3840,
+      "height": 2160
+    },
+    "webp": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "verification": {
+    "publicSha256Matches": true,
+    "verifiedAt": "2026-09-13T09:43:43.001913+00:00",
+    "http": [
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-cf74ded8e9f7.mp4",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-cf74ded8e9f7.mp4",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "video/mp4",
+            "bytes": 167257,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "video/mp4",
+            "bytes": 167257,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": {
+          "status": 206,
+          "contentRange": "bytes 0-1023/167257",
+          "sha256": "3842e8dcaad0cfd9caf54ce23fec0dd7e58eeb95463b625386e8f84018ef8432",
+          "matchesOriginalBytes": true
+        }
+      },
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-poster-c80f816a7b21.webp",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-poster-c80f816a7b21.webp",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 7980,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 7980,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": null
+      },
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-frame-100-4k-893efbb1e7f3.png",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-frame-100-4k-893efbb1e7f3.png",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "image/png",
+            "bytes": 209618,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "image/png",
+            "bytes": 209618,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": null
+      }
+    ]
+  }
+}

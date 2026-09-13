@@ -228,7 +228,8 @@ describe("one project source for five video and deck templates", () => {
 			expect(page.bodyHtml).toContain("/templates/film-v2.schema.json");
 			const html = applyPageToHtml(shell, page);
 			expect(html).toContain(template.title);
-			expect(html).not.toContain(".mp4");
+			expect(html).not.toContain("/video-assets/");
+			expect(html).toContain("/templates/examples.json");
 			expect(JSON.stringify(page.jsonLd)).not.toContain("VideoObject");
 		}
 		expect(pageForPath("/templates/unknown", projects).path).toBe("/templates");
