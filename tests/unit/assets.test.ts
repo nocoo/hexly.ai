@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it, vi } from "vitest";
 import {
 	assetKey,
+	authenticatedRequest,
 	digest,
 	readInventory,
 	verifiedPublication,
@@ -11,6 +12,49 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("recovers an expired credential once, but stops on denied or changed-account access", async () => {
+		const auth = { token: "expired-fixture", account: "fixture-account" };
+		const operation = vi
+			.fn()
+			.mockResolvedValueOnce(new Response("Expired", { status: 401 }))
+			.mockResolvedValueOnce(new Response("Uploaded"));
+		const result = await authenticatedRequest(auth, operation, () => ({
+			token: "renewed-fixture",
+			account: "fixture-account",
+		}));
+		expect(result.status).toBe(200);
+		expect(operation.mock.calls).toEqual([
+			["expired-fixture"],
+			["renewed-fixture"],
+		]);
+		expect(auth.token).toBe("renewed-fixture");
+		operation
+			.mockReset()
+			.mockResolvedValue(new Response("Denied", { status: 401 }));
+		await expect(
+			authenticatedRequest(auth, operation, () => ({ ...auth })),
+		).rejects.toThrow("without a credential refresh");
+		expect(operation).toHaveBeenCalledTimes(1);
+		operation
+			.mockReset()
+			.mockResolvedValue(new Response("Denied", { status: 401 }));
+		await expect(
+			authenticatedRequest(auth, operation, () => ({
+				token: "another-fixture",
+				account: "different-account",
+			})),
+		).rejects.toThrow("account changed");
+		expect(operation).toHaveBeenCalledTimes(1);
+		operation
+			.mockReset()
+			.mockImplementation(async () => new Response("Denied", { status: 401 }));
+		const denied = await authenticatedRequest(auth, operation, () => ({
+			token: "rotated-but-denied-fixture",
+			account: auth.account,
+		}));
+		expect(denied.status).toBe(401);
+		expect(operation).toHaveBeenCalledTimes(2);
+	});
 	it("keeps page navigation separate from immutable asset transport", () => {
 		for (const path of [
 			"/",
@@ -18,6 +62,9 @@ describe("R2 material delivery", () => {
 			"/logos/snail",
 			"/templates",
 			"/api/live",
+			"/brands/snail/v2.0.0/review",
+			"/brands/snail/v2.0.0/",
+			"/logos/family/frogie/batch/review",
 			"/brands/snail/v2.0.0/review.html",
 			"/brands/snail/v2.0.0/review.js",
 			"//untrusted.test/a.png",
