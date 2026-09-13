@@ -1,6 +1,6 @@
 # Project profiles
 
-75 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
+74 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
@@ -78,4 +78,3 @@
 | [☕ Coffee](73-coffee.md) | GPT Image · Object campaign kit | #c7d9a9 | #f8f6f0 |
 | [🚪 hermes on herdr](74-hermes-on-herdr.md) | GPT Image · Object campaign kit | #2c3f52 | #dfe8ec |
 | [🐆 Ocelot](75-ocelot.md) | GPT Image · Animal campaign kit | #435e73 | #fefefd |
-| [🐌 Snail](76-snail.md) | GPT Image animal kit | #30372e | #f0f0e9 |

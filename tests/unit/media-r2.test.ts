@@ -39,14 +39,14 @@ describe("versioned R2 media", () => {
 		const image = join(directory, "Library Cover.webp");
 		await writeFile(image, bytes);
 		const material = await planMedia({
-			project: "snail",
+			project: "zhe",
 			kind: "screenshots",
 			asset: "library",
 			version: "1.2.0",
 			file: image,
 		});
 		expect(material.key).toMatch(
-			/^projects\/snail\/screenshots\/library\/v1\.2\.0\/library-cover-[a-f0-9]{12}\.webp$/,
+			/^projects\/zhe\/screenshots\/library\/v1\.2\.0\/library-cover-[a-f0-9]{12}\.webp$/,
 		);
 		expect(material).toMatchObject({
 			kind: "screenshots",
@@ -58,7 +58,7 @@ describe("versioned R2 media", () => {
 		).rejects.toThrow();
 		await expect(
 			planMedia({
-				project: "snail",
+				project: "zhe",
 				kind: "../../bad",
 				asset: "library",
 				version: "1.0.0",
@@ -94,6 +94,7 @@ describe("versioned R2 media", () => {
 	it.each([
 		{ project: "../hermes-on-herdr" },
 		{ project: "not-a-catalogue-project" },
+		{ project: "snail" },
 		{ video: "../../overwrite" },
 		{ version: "latest" },
 		{ version: "01.0.0" },

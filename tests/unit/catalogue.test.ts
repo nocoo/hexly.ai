@@ -26,12 +26,18 @@ const overview: ProjectOverview = {
 };
 
 describe("the imported project catalogue", () => {
+	it("omits Snail after its bookmark and Connector capabilities merge into Zhe", () => {
+		expect(projects.some((project) => project.id === "snail")).toBe(false);
+		expect(projects.find((project) => project.id === "zhe")?.website).toBe(
+			"https://zhe.to",
+		);
+	});
 	it("includes the listed projects with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(75);
+		expect(projects).toHaveLength(74);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(61);
+		).toHaveLength(60);
 	});
 	it("provides a verified goal and stack for every active project", () => {
 		expect(
@@ -72,7 +78,7 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(55);
+		expect(counts.all).toBe(54);
 		expect(counts.archive).toBe(20);
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);

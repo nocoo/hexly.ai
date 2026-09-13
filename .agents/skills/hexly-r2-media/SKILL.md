@@ -83,7 +83,7 @@ bun run assets:r2 -- verify --project snail
 bun run assets:r2 -- url /brands/snail/v2.0.0/mark-light.png
 
 # A single new screenshot (default is a dry-run; --upload publishes):
-bun run media:r2 -- --project snail --kind screenshots --asset library \
+bun run media:r2 -- --project zhe --kind screenshots --asset library \
   --version 1.0.0 --file /absolute/path/library.webp
 
 # Existing film workflow remains compatible; default is a local dry-run.
@@ -99,6 +99,10 @@ revision, license and verification time in
 `docs/assets/<project>/<kind>/<asset-id>/v<version>.json` for other single files.
 Add the catalogue reference only after this receipt exists. Batch publication
 records its receipts automatically in `docs/assets/publication.jsonl`.
+
+Snail retired from the catalogue on 2026-09-13. Its inventoried historical assets
+remain available for hydration and verification; use an active project such as
+Zhe for new single-file material publication.
 
 The batch helper uses Wrangler's active authentication in memory and the same R2
 object HTTP endpoint as Wrangler. It freezes each file's checked bytes in memory,
