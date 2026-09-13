@@ -22,6 +22,7 @@
 ### Tests
 
 - require an inventoried stream verification fixture ([9e96e31](https://github.com/nocoo/hexly.ai/commit/9e96e316c7474867881f204a0b93069069c003cc))
+- run native navigation in full Chromium headless ([3001f0a](https://github.com/nocoo/hexly.ai/commit/3001f0a1e42a27acd29a2951408458586e74b806))
 
 ## [0.10.0] - 2026-09-12
 
