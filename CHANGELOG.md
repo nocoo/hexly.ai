@@ -7,6 +7,14 @@
 - support first identities and product-specific art direction ([285d287](https://github.com/nocoo/hexly.ai/commit/285d287d6a945b3e75d6bef79f3fd92a3e509af4))
 - publish Pi Agent Policy material identity and brand archive ([9ba5515](https://github.com/nocoo/hexly.ai/commit/9ba5515f8a13ffc8c4de00cccda54ce5d15ba2a4))
 
+### Maintenance
+
+- update image generation skill references ([9336028](https://github.com/nocoo/hexly.ai/commit/93360284152ff5ec747f5791dafc091fcd3fcf7f))
+
+### Fixes
+
+- make Pi Agent Policy texture specimens readable ([b409230](https://github.com/nocoo/hexly.ai/commit/b4092305c8e511cc7bb4e7c78b067c8ce267eccb))
+
 ## [0.12.1] - 2026-09-13
 
 ### Maintenance
