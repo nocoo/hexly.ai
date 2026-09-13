@@ -55,7 +55,7 @@ Finishing 03 deepens the base to `#BBCB9E`, with light `#DCE6C6`, shade `#9DAF7D
 ## Generation and finishing
 
 1. Save the brief, exact prompt, and ordered reference roles before requesting an image. The original defines identity. For the first Frogie study, images 2 and 3 were presentation references. Subsequent studies use the approved Frogie as image 2 for drawing language, followed by the two presentation references.
-2. Use Azure Foundry / OpenAI v1 with `gpt-image-2`, the existing workflow `azure-gpt-image-cover` skill's `api-key` authentication, and credentials loaded through direnv.
+2. Use Azure Foundry / OpenAI v1 with `gpt-image-2`, the existing workflow `agi-image-generation` skill's `api-key` authentication, and credentials loaded through direnv.
 3. Request one high-quality 2048 × 2048 PNG on uniform pure white. The reference-guided request uses `/images/edits`. Verify the decoded dimensions; do not describe an upscale as native generation.
 4. Preserve the returned PNG bytes, prompt, reference hashes, sanitized request, response metadata, request ID, and usage. Never save a key or authenticated headers.
 5. **Immediately show the untouched returned image for owner confirmation.** The generator writes `raw-review.json` with a pending status and the exact image hash. Do not extract, clean, composite, resize, build a full review page, or integrate that image before confirmation. Record the owner's actual decision; rejected images and feedback stay in their original studies. A replacement is a new pending study.

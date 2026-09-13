@@ -101,7 +101,7 @@ def main():
         "promptFile": "prompt.txt",
         "promptSha256": hashlib.sha256(prompt.encode()).hexdigest(),
         "images": references,
-        "transportReference": "workflow/agents/skills/azure-gpt-image-cover/scripts/generate.py",
+        "transportReference": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
         "documentation": "https://developers.openai.com/api/docs/guides/image-generation",
     })
     request = Request(url, data=b"".join(parts), method="POST", headers={
