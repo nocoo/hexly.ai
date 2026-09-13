@@ -64,27 +64,6 @@ export function Directory({
 							</span>
 						</h1>
 						<p className="hero-description">{t.heroDescription}</p>
-						<div className="hero-actions">
-							<a className="button button-primary" href="#collection">
-								{t.explore}
-								<Icon name="right" />
-							</a>
-							<button
-								type="button"
-								className="text-button"
-								onClick={() =>
-									onChange({
-										view: "logos",
-										category: "all",
-										query: "",
-										anchor: undefined,
-									})
-								}
-							>
-								{t.meet}
-								<Icon name="arrow" />
-							</button>
-						</div>
 					</div>
 					<div className="hero-art">
 						<div className="orbit orbit-one" />
@@ -133,46 +112,30 @@ export function Directory({
 						inputRef={searchRef}
 					/>
 				</div>
-				<div className="collection-views">
-					<nav className="view-switch" aria-label={t.browseAs}>
-						{(["directory", "logos"] as const).map((view) => (
-							<a
-								key={view}
-								href={navigationPath({ ...state, view, anchor: "collection" })}
-								aria-current={state.view === view ? "page" : undefined}
-								onClick={(event) => {
-									if (
-										event.button ||
-										event.metaKey ||
-										event.ctrlKey ||
-										event.shiftKey ||
-										event.altKey
-									)
-										return;
-									event.preventDefault();
-									onChange({ view, anchor: "collection" });
-								}}
-							>
-								<Icon name={view === "logos" ? "image" : "grid"} />
-								{view === "logos" ? t.gallery : t.directory}
-							</a>
-						))}
-					</nav>
-					{(state.withVideo ||
-						projects.some((project) => project.media?.videos?.length)) && (
-						<label className="media-filter">
-							<input
-								type="checkbox"
-								checked={state.withVideo ?? false}
-								onChange={(event) =>
-									onChange({ withVideo: event.target.checked })
-								}
-							/>
-							<Icon name="play" />
-							{t.withVideo}
-						</label>
-					)}
-				</div>
+				<nav className="collection-views view-switch" aria-label={t.browseAs}>
+					{(["directory", "logos"] as const).map((view) => (
+						<a
+							key={view}
+							href={navigationPath({ ...state, view, anchor: "collection" })}
+							aria-current={state.view === view ? "page" : undefined}
+							onClick={(event) => {
+								if (
+									event.button ||
+									event.metaKey ||
+									event.ctrlKey ||
+									event.shiftKey ||
+									event.altKey
+								)
+									return;
+								event.preventDefault();
+								onChange({ view, anchor: "collection" });
+							}}
+						>
+							<Icon name={view === "logos" ? "image" : "grid"} />
+							{view === "logos" ? t.gallery : t.directory}
+						</a>
+					))}
+				</nav>
 				<div className="collection-toolbar">
 					<fieldset className="category-tabs" aria-label={t.categories}>
 						{categories.map((category) => (
@@ -230,9 +193,7 @@ export function Directory({
 						<button
 							className="button button-secondary"
 							type="button"
-							onClick={() =>
-								onChange({ category: "all", query: "", withVideo: undefined })
-							}
+							onClick={() => onChange({ category: "all", query: "" })}
 						>
 							{t.reset}
 						</button>

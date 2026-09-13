@@ -9,7 +9,6 @@ export interface DirectoryState {
 	sort: "curated" | "az";
 	project: string;
 	anchor?: string;
-	withVideo?: boolean;
 	video?: string;
 	videoProject?: string;
 	videoMode?: "video" | "deck";
@@ -59,7 +58,6 @@ export function parseNavigation(
 			sort: params.get("sort") === "az" ? "az" : "curated",
 			project,
 			...(anchor ? { anchor } : {}),
-			...(params.get("media") === "video" ? { withVideo: true } : {}),
 			...(video
 				? {
 						video: video[1],
@@ -103,13 +101,7 @@ export function resolveNavigation(
 	if (state.view !== "project" || !projects.some((p) => p.id === state.project))
 		return state;
 	const selected = selectedProject(
-		filterProjects(
-			projects,
-			state.query,
-			state.category,
-			state.sort,
-			state.withVideo,
-		),
+		filterProjects(projects, state.query, state.category, state.sort),
 		state.project,
 	);
 	return { ...state, project: selected?.id ?? state.project };
@@ -136,8 +128,6 @@ export function navigationPath(state: DirectoryState): string {
 	if (state.category !== "all") params.set("category", state.category);
 	if (state.query) params.set("q", state.query);
 	if (state.sort !== "curated") params.set("sort", state.sort);
-	if (state.withVideo && ["directory", "logos", "project"].includes(state.view))
-		params.set("media", "video");
 	const search = params.toString();
 	const pathname =
 		state.view === "status"
@@ -161,7 +151,6 @@ export function openProject(
 		project: project.id,
 		category: project.archived ? "archive" : "all",
 		query: "",
-		withVideo: undefined,
 		anchor,
 	};
 }

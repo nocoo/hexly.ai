@@ -93,15 +93,8 @@ export function App() {
 	const t = copy[locale];
 	const projects = catalogue.status === "ready" ? catalogue.projects : [];
 	const visible = useMemo(
-		() =>
-			filterProjects(
-				projects,
-				state.query,
-				state.category,
-				state.sort,
-				state.withVideo,
-			),
-		[projects, state.query, state.category, state.sort, state.withVideo],
+		() => filterProjects(projects, state.query, state.category, state.sort),
+		[projects, state.query, state.category, state.sort],
 	);
 
 	useLayoutEffect(() => {
@@ -271,7 +264,6 @@ export function App() {
 			query: "",
 			video: undefined,
 			anchor: undefined,
-			withVideo: undefined,
 		});
 		window.scrollTo({ top: 0, behavior: "instant" });
 	};

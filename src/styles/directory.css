@@ -34,14 +34,9 @@
 	font-size: 19px;
 	line-height: 1.65;
 	color: var(--muted);
-	margin: 0 0 25px;
+	margin: 0;
 	text-wrap: pretty;
 	letter-spacing: -0.035em;
-}
-.hero-actions {
-	display: flex;
-	align-items: center;
-	gap: 23px;
 }
 .hero-art {
 	position: relative;
@@ -546,16 +541,6 @@
 	.hero-description {
 		font-size: 16px;
 	}
-	.hero-actions {
-		gap: 15px;
-	}
-	.hero-actions .button {
-		padding-inline: 13px;
-		font-size: 11px;
-	}
-	.hero-actions .text-button {
-		font-size: 11px;
-	}
 	.collection-toolbar {
 		position: relative;
 		padding-bottom: 44px;
@@ -600,12 +585,6 @@
 		max-width: 340px;
 		font-size: 15px;
 		line-height: 1.8;
-		margin-top: 0;
-		margin-bottom: 22px;
-	}
-	.hero-actions {
-		justify-content: center;
-		gap: 19px;
 	}
 	.hero-art {
 		align-self: center;
@@ -692,13 +671,6 @@
 	.hero-art {
 		transform: scale(0.62);
 		margin-block: -40px -65px;
-	}
-	.hero-actions {
-		gap: 12px;
-	}
-	.hero-actions .button {
-		padding-inline: 10px;
-		font-size: 10px;
 	}
 	.card-main {
 		padding: 14px;

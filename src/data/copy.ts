@@ -30,7 +30,6 @@ export const copy = {
 		status: "Status",
 		templates: "Templates",
 		browseAs: "Browse projects",
-		withVideo: "With video",
 		viewProject: "View project",
 		projectSections: "Project sections",
 		projectNotFound: "Project not found.",
@@ -61,8 +60,6 @@ export const copy = {
 		heroSecond: "A little universe",
 		heroDescription:
 			"Useful tools, playful experiments, and things I wished existed. A growing collection of projects, made with care.",
-		explore: "Explore the collection",
-		meet: "Meet the logos",
 		heroNote: "A FEW FAMILIAR FACES",
 		collection: "The collection",
 		collectionDescription: "Pick something that sparks your curiosity.",
@@ -189,7 +186,6 @@ export const copy = {
 		status: "状态",
 		templates: "模板",
 		browseAs: "项目浏览方式",
-		withVideo: "有视频",
 		viewProject: "查看项目",
 		projectSections: "项目章节",
 		projectNotFound: "未找到这个项目。",
@@ -219,8 +215,6 @@ export const copy = {
 		heroSecond: "一整个小宇宙",
 		heroDescription:
 			"用得上的工具、好玩的实验，还有那些想要却找不到的东西。把一个个想法，慢慢做成自己的作品。",
-		explore: "探索项目集",
-		meet: "认识这些小伙伴",
 		heroNote: "几位熟悉的小伙伴",
 		collection: "我的项目集",
 		collectionDescription: "随便逛逛，找到让你好奇的那一个。",

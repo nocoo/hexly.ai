@@ -77,28 +77,6 @@ export function ProjectCard({
 					/>
 				</div>
 			</a>
-			{project.media?.videos?.[0] && (
-				<a
-					className="card-video"
-					href={`/projects/${project.id}#video-${project.media.videos[0].id}`}
-					aria-label={`${t.playVideo}: ${project.title}`}
-					onClick={(event) => {
-						if (
-							event.button ||
-							event.metaKey ||
-							event.ctrlKey ||
-							event.shiftKey ||
-							event.altKey
-						)
-							return;
-						event.preventDefault();
-						onProject(project.id, `video-${project.media?.videos?.[0]?.id}`);
-					}}
-				>
-					<Icon name="play" />
-					<span>{t.withVideo}</span>
-				</a>
-			)}
 			{!artworkOnly && (
 				<a
 					className="card-github"
