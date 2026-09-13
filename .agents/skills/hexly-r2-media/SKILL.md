@@ -109,6 +109,12 @@ runs. Existing objects are verified and reused. This is a single-writer workflow
 HEAD-before-PUT is not an atomic distributed conditional write. Coordinate other
 writers of the same published package; different bytes must never be overwritten.
 
+Wrangler may return a token near the end of its lifetime. On HTTP 401 the helper
+asks Wrangler for current credentials and retries once only when the token has
+actually changed and the account is unchanged. An unchanged/denied credential,
+changed account or second failure stops publication; it never loops on missing
+permissions. Credential values stay in memory and outside receipts/logs.
+
 For an interrupted run, confirm the lock's PID is no longer the uploader before
 removing that stale lock. Keep its receipts and rerun the same bounded command.
 Receipts allow resumption; use `verify` for a fresh current availability check.

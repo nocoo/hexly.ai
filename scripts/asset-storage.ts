@@ -420,6 +420,27 @@ function credentials() {
 	return { token: auth.token, account };
 }
 
+/** Wrangler may supply a nearly expired OAuth token. Retry once only if it actually rotates. */
+export async function authenticatedRequest(
+	auth: { token: string; account: string },
+	operation: (token: string) => Promise<Response>,
+	refresh = credentials,
+) {
+	const usedToken = auth.token;
+	const response = await operation(usedToken);
+	if (response.status !== 401) return response;
+	await response.arrayBuffer();
+	const renewed = refresh();
+	if (renewed.account !== auth.account)
+		throw new Error("Authenticated account changed; stopped.");
+	if (renewed.token === usedToken)
+		throw new Error(
+			"R2 authorization failed without a credential refresh; stopped.",
+		);
+	auth.token = renewed.token;
+	return operation(renewed.token);
+}
+
 export async function publish(files: StoredAsset[], concurrency: number) {
 	await mkdir(".wrangler", { recursive: true });
 	const lockPath = ".wrangler/assets-publish.lock";
@@ -468,20 +489,22 @@ export async function publish(files: StoredAsset[], concurrency: number) {
 						auth = refreshed;
 						authenticatedAt = Date.now();
 					}
-					const response = await retry(() =>
-						request(
-							`https://api.cloudflare.com/client/v4/accounts/${auth.account}/r2/buckets/${storage.bucket}/objects/${file.key}`,
-							{
-								method: "PUT",
-								body: bytes,
-								headers: {
-									Authorization: `Bearer ${auth.token}`,
-									"Content-Type": file.contentType,
-									"Content-Length": String(file.bytes),
-									"Cache-Control": cacheControl,
-									"cf-r2-data-catalog-check": "true",
+					const response = await authenticatedRequest(auth, (token) =>
+						retry(() =>
+							request(
+								`https://api.cloudflare.com/client/v4/accounts/${auth.account}/r2/buckets/${storage.bucket}/objects/${file.key}`,
+								{
+									method: "PUT",
+									body: bytes,
+									headers: {
+										Authorization: `Bearer ${token}`,
+										"Content-Type": file.contentType,
+										"Content-Length": String(file.bytes),
+										"Cache-Control": cacheControl,
+										"cf-r2-data-catalog-check": "true",
+									},
 								},
-							},
+							),
 						),
 					);
 					if (!response.ok)
