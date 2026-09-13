@@ -1,5 +1,6 @@
 import { type AnchorHTMLAttributes, useState } from "react";
 import { assetUrl } from "../model/assets";
+import { downloadAsset } from "./download-asset";
 
 /** Cross-origin download attributes alone do not download: fetch the approved CDN bytes. */
 export function AssetLink({
@@ -39,22 +40,10 @@ export function AssetLink({
 					setBusy(true);
 					setFailed(false);
 					try {
-						// Explicit downloads must not be mistaken for Chromium's reserved favicon request.
-						const resource = new URL(url);
-						resource.searchParams.set("download", "1");
-						const response = await fetch(resource, {
-							signal: AbortSignal.timeout(120_000),
-						});
-						if (!response.ok) throw new Error(`HTTP ${response.status}`);
-						const objectUrl = URL.createObjectURL(await response.blob());
-						const anchor = document.createElement("a");
-						anchor.href = objectUrl;
-						anchor.download =
-							typeof download === "string" && download
-								? download
-								: (new URL(url).pathname.split("/").pop() ?? "asset");
-						anchor.click();
-						window.setTimeout(() => URL.revokeObjectURL(objectUrl), 10_000);
+						await downloadAsset(
+							url,
+							typeof download === "string" ? download : undefined,
+						);
 					} catch (error) {
 						console.error("Asset download failed", error);
 						setFailed(true);

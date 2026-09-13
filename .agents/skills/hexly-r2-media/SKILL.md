@@ -55,6 +55,9 @@ identity and Hexly campaign interpretations are separate roles.
 HTML comparison pages and their JS/CSS remain application documents on hexly.ai.
 The R2 copy is the unchanged source/download archive, not a new canonical page.
 Never globally set Vite's base to the CDN or place renderer outputs in public/.
+Standalone review navigation gets a shared download module at the presentation
+boundary; raw HTTP fetches still return the original checksummed HTML. Keep
+this distinction and its Vary/no-store headers when changing the gateway.
 
 ## Inspect, publish, recover
 

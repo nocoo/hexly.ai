@@ -1,7 +1,12 @@
 import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
-import { describe, expect, it } from "vitest";
-import { assetKey, digest, readInventory } from "../../scripts/asset-storage";
+import { describe, expect, it, vi } from "vitest";
+import {
+	assetKey,
+	digest,
+	readInventory,
+	verifiedPublication,
+} from "../../scripts/asset-storage";
 import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
@@ -73,6 +78,49 @@ describe("R2 material delivery", () => {
 			expect(result.stderr).toMatch(
 				/Scope must|Unknown catalogue project|Limit must/,
 			);
+		}
+	});
+	it("requires the canonical CDN bytes after a cached 404 and rejects conflicting origin bytes", async () => {
+		const bytes = new TextEncoder().encode("asset fixture");
+		const file = {
+			...readInventory().files[0],
+			source: "public/fixture.png",
+			key: "fixture.png",
+			bytes: bytes.length,
+			sha256: digest(bytes),
+			contentType: "image/png",
+			project: "hexly-ai",
+			role: "hexly-campaign" as const,
+			version: "1.0.0",
+			provenance: "test fixture",
+		};
+		const response = (body: Uint8Array<ArrayBuffer>) =>
+			new Response(body, { headers: { "Content-Type": "image/png" } });
+		const request = vi
+			.fn()
+			.mockResolvedValueOnce(new Response("Not found", { status: 404 }))
+			.mockResolvedValueOnce(response(bytes))
+			.mockResolvedValueOnce(response(bytes));
+		vi.stubGlobal("fetch", request);
+		try {
+			expect(await verifiedPublication(file, 0)).toEqual(bytes);
+			expect(
+				request.mock.calls.map(([url]) => String(url).split("?")[0]),
+			).toEqual(Array(3).fill("https://h.no.mt/fixture.png"));
+			expect(request.mock.calls[1]?.[0]).toContain("?inspect=");
+			expect(request.mock.calls[2]?.[0]).toBe("https://h.no.mt/fixture.png");
+			request
+				.mockReset()
+				.mockResolvedValueOnce(new Response("Not found", { status: 404 }))
+				.mockResolvedValueOnce(
+					response(new TextEncoder().encode("wrong bytes")),
+				);
+			await expect(verifiedPublication(file, 0)).rejects.toThrow(
+				"checksum/size mismatch",
+			);
+			expect(request).toHaveBeenCalledTimes(2);
+		} finally {
+			vi.unstubAllGlobals();
 		}
 	});
 	it("versions loose files by bytes while preserving package-relative paths", () => {

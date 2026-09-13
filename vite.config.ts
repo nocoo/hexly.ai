@@ -197,5 +197,19 @@ export default defineConfig({
 		allowedHosts: ["index.dev.hexly.ai"],
 		proxy: { "/api/status": "http://127.0.0.1:37048" },
 	},
-	build: { target: "es2022" },
+	build: {
+		target: "es2022",
+		rolldownOptions: {
+			input: {
+				index: resolve("index.html"),
+				"material-downloads": resolve("src/material-downloads.ts"),
+			},
+			output: {
+				entryFileNames: (chunk) =>
+					chunk.name === "material-downloads"
+						? "material-downloads.js"
+						: "assets/[name]-[hash].js",
+			},
+		},
+	},
 });

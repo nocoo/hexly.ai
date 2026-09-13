@@ -127,6 +127,38 @@ export default {
 			}
 			return cors(await env.ASSETS.fetch(request));
 		}
-		return env.ASSETS.fetch(request);
+		let response = await env.ASSETS.fetch(request);
+		const reviewDocument =
+			path.startsWith("/brands/") &&
+			/\/review(?:\.html)?$/.test(path) &&
+			response.status === 200 &&
+			response.headers.get("Content-Type")?.includes("text/html");
+		if (reviewDocument) {
+			response = new Response(response.body, response);
+			response.headers.append("Vary", "Accept, Sec-Fetch-Dest");
+		}
+		if (
+			request.method === "GET" &&
+			reviewDocument &&
+			(request.headers.get("Sec-Fetch-Dest") === "document" ||
+				request.headers.get("Accept")?.includes("text/html")) &&
+			response.status === 200
+		) {
+			// Enhance the browser view, preserving raw fetch/download responses and all frozen source bytes.
+			const enhanced = new HTMLRewriter()
+				.on("body", {
+					element(element) {
+						element.append(
+							'<script type="module" src="/material-downloads.js"></script>',
+							{ html: true },
+						);
+					},
+				})
+				.transform(response);
+			enhanced.headers.delete("ETag");
+			enhanced.headers.set("Cache-Control", "no-store");
+			return enhanced;
+		}
+		return response;
 	},
 } satisfies ExportedHandler<Env>;

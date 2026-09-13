@@ -13,6 +13,13 @@ Main-site image, font and material-download references use the CDN directly.
 Historical comparison HTML and its JS/CSS remain on hexly.ai, preserving their
 exact bytes, relative references and canonical project navigation.
 
+Browser navigation to a standalone brand review receives a streamed module tag
+for the shared CDN download handler. This view uses `no-store` and varies by
+`Accept`/`Sec-Fetch-Dest`; ordinary raw fetches keep the original HTML bytes and
+hashes. The source files and their R2 archive copies are never edited. This
+keeps native download buttons usable after cross-origin redirects without a
+Worker media proxy or modifications to a frozen brand package.
+
 R2 serves images, textures, fonts, videos/audio/captions and downloadable brand
 packages. Package source copies may include HTML/code, but these are not new page
 canonicals. Public manifests retain their original root and original checksums;

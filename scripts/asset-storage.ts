@@ -339,6 +339,32 @@ export async function verifiedBytes(file: StoredAsset, url = publicUrl(file)) {
 	return bytes;
 }
 
+/** A cached pre-upload miss may outlive a successful write; receipts require the bare URL too. */
+export async function verifiedPublication(file: StoredAsset, delayMs = 60_000) {
+	try {
+		return await verifiedBytes(file);
+	} catch (error) {
+		if (!(error instanceof Error) || !error.message.startsWith("HTTP 404:"))
+			throw error;
+	}
+	await verifiedBytes(file, `${publicUrl(file)}?inspect=${randomUUID()}`);
+	console.info(
+		`Origin bytes verified; waiting at most three cache-expiry intervals for the canonical URL: ${file.key}`,
+	);
+	for (let attempt = 0; attempt < 3; attempt++) {
+		await setTimeout(delayMs);
+		try {
+			return await verifiedBytes(file);
+		} catch (error) {
+			if (!(error instanceof Error) || !error.message.startsWith("HTTP 404:"))
+				throw error;
+		}
+	}
+	throw new Error(
+		`Canonical URL still returns HTTP 404 after bounded cache wait: ${file.key}`,
+	);
+}
+
 async function pool<T>(
 	items: T[],
 	operation: (item: T) => Promise<void>,
@@ -462,7 +488,7 @@ export async function publish(files: StoredAsset[], concurrency: number) {
 						throw new Error(`R2 upload HTTP ${response.status}: ${file.key}`);
 					await response.arrayBuffer();
 				}
-				await verifiedBytes(file);
+				await verifiedPublication(file);
 				await appendFile(
 					receiptPath,
 					`${JSON.stringify({ key: file.key, url: publicUrl(file), sha256: file.sha256, bytes: file.bytes, contentType: file.contentType, verifiedAt: new Date().toISOString(), action: exists.status === 200 ? "reused" : "uploaded" })}\n`,
