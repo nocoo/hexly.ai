@@ -8,6 +8,7 @@ import { siteAssets } from "./scripts/site-assets";
 import { videoSiteAssets } from "./scripts/video-site-assets";
 import { readProjects } from "./src/data/read-projects";
 import {
+	agentFiles,
 	applyPageToHtml,
 	discoveryPages,
 	llmsDocument,
@@ -65,6 +66,22 @@ function discoveryAssets(): Plugin {
 					response.end(sitemapXml(pages()));
 					return;
 				}
+				if (
+					pathname.startsWith("/agents/") &&
+					["GET", "HEAD"].includes(request.method ?? "")
+				) {
+					const file = agentFiles(readProjects()).find(
+						(item) => `/${item.fileName}` === pathname,
+					);
+					response.setHeader("Content-Type", "text/markdown; charset=utf-8");
+					response.statusCode = file ? 200 : 404;
+					response.end(
+						request.method === "HEAD"
+							? undefined
+							: (file?.source ?? "Agent guide not found.\n"),
+					);
+					return;
+				}
 				const share = shareFiles(readProjects()).find(
 					(file) => `/${file.fileName}` === pathname,
 				);
@@ -89,6 +106,9 @@ function discoveryAssets(): Plugin {
 				source: sitemapXml(pages()),
 			});
 			for (const file of shareFiles(readProjects())) {
+				this.emitFile({ type: "asset", ...file });
+			}
+			for (const file of agentFiles(readProjects())) {
 				this.emitFile({ type: "asset", ...file });
 			}
 		},

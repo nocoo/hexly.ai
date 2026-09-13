@@ -43,10 +43,10 @@ packages/video-kit/src/Scenes.tsx      five independent content layouts
 packages/video-kit/src/Endings.tsx     five independent endings
 packages/video-kit/src/Film.tsx        one timeline for preview, deck and offline render
 src/data/videos.json                  sole public collection metadata
-src/data/template-examples.json       separate verified R2 example references
+src/data/template-examples.json       historical source of verified standard-outro records
 src/model/videos.ts                   single catalogue-to-project adapter
 src/components/Templates.tsx           collection and base composition selector
-src/components/TemplateExamples.tsx    poster-first finished examples and downloads
+src/components/TemplateExamples.tsx    ready-to-use standard outros and Agent handoffs
 scripts/video-site-assets.ts           font/license/schema/manifest public boundary
 scripts/review-video.ts                local browser still/contact-sheet review
 packages/video-kit/scripts/render.ts   explicit still/deck/video offline export
@@ -56,12 +56,15 @@ The manifest has no sample-media fields. `video:check` rejects media files in `p
 
 `/templates` adapts the catalogue for all 15 component cards. The selector shows the chosen project in both preview modes; adding a screenshot stays client-side. URL state preserves the project, opening, content layout, ending, theme and part/view selection. Downloaded JSON also preserves the screenshot and effective motion/format choices. The player pauses on theme changes and keeps the current page. Old layouts are not redirected to an unrelated replacement.
 
-`/templates#examples` additionally presents five approved, pre-rendered Hexly
-brand endings. These light, silent MP4s stay independent of the selected project
-and preview theme. Each template detail shows its matching example. The files,
-posters and HTML-rendered 4K stills live on R2; `/templates/examples.json` contains
-their verified references. Native playback begins after a click. Source and
-publication details: [standard outro examples](24-standard-outro-examples.md).
+`/templates#outros` presents five ready-to-use standard Hexly endings. Append any
+original clip to any project without configuring or regenerating it. All five
+appear on every template detail. These light, silent MP4s stay independent of
+project/theme controls. Files, posters and HTML-rendered 4K stills live on R2;
+`/templates/outros.json` provides references, hashes and reuse semantics. The old
+`#examples` anchor and `/templates/examples.json` index remain compatible.
+Native playback begins after a click. Every page and clip has copyable Agent
+instructions. See [standard outros](24-standard-outro-examples.md) and
+[Agent guides](25-agent-guides.md).
 
 ## Verification and export
 

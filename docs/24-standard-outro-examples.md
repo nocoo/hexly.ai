@@ -1,10 +1,11 @@
-# 24 · Standard outro examples
+# 24 · Standard outros
 
 Five existing Hexly-only brand endings from `../workflow` are presented at
-[Templates → Finished examples](https://hexly.ai/templates#examples). A template
-detail shows its corresponding example. These are fixed light, silent recordings;
-the project and canvas-theme controls continue to operate the separate client
-composition previews.
+[Templates → Standard outros](https://hexly.ai/templates#outros). Every template
+detail offers all five. These are ready-to-use, project-independent endings:
+download and append an existing clip without configuring or regenerating it.
+The light, silent movies are fixed; project and theme controls operate the
+separate client composition previews. `#examples` remains a compatible anchor.
 
 ## Files and source
 
@@ -95,16 +96,19 @@ returns the exact `projects/hexly-ai/videos/<id>/v<version>/<name>-<hash12>.<ext
 key and public URL. Changed bytes require new immutable addresses. Preserve the
 original source records and completed objects.
 
-`src/data/template-examples.json` is the active example list, emitted unchanged
-at [/templates/examples.json](https://hexly.ai/templates/examples.json). Add a
-verified receipt before adding a reference. The existing `src/data/videos.json`
+`src/data/template-examples.json` retains the historical file records. The
+canonical [/templates/outros.json](https://hexly.ai/templates/outros.json)
+derives its `outros` array from them, with explicit project-independent,
+reuse-as-is semantics. The old `/templates/examples.json` stays compatible.
+Add a verified receipt before adding a reference. The existing `src/data/videos.json`
 continues to describe the configurable component collection; product recordings
 continue to live in their own catalogue entries. No synthetic project is added.
 
 The shared native player loads only its poster before a user clicks. Only one
-example plays at a time. Downloads use `AssetLink` so the browser saves the
+clip plays at a time. Downloads use `AssetLink` so the browser saves the
 original CDN bytes; a separate direct link remains available. MP4 and 4K PNG
-links also appear in the crawler HTML and `llms.txt` links the example manifest.
+links also appear in crawler HTML, the page's Agent guide and `llms.txt`. Each
+clip includes copyable reuse instructions with exact URLs and hashes.
 The sitemap retains the canonical `/templates` and five template routes: a hash
 section, JSON index and media files are not additional page canonicals.
 
@@ -119,8 +123,8 @@ existing object was overwritten.
 
 The unit/HTTP tests cover receipt consistency, fixed source and HTML capture
 provenance, public manifests, canonical discovery and anchor navigation. Browser
-checks cover the five examples, per-template selection, poster-first loading,
+checks cover all five clips on every template page, poster-first loading,
 mobile/desktop, light/dark, Chinese, accessible controls, downloads and failure
 fallbacks. Native playback uses the existing tested project-media component.
 Release follows [the normal exact-SHA workflow](05-release.md); verify the live
-`/api/live`, `/templates#examples`, example manifest and CDN playback afterward.
+`/api/live`, `/templates#outros`, standard-outro manifest and CDN playback afterward.

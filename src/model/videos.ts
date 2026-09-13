@@ -3,9 +3,9 @@ import type {
 	VideoManifest,
 	VideoProject,
 } from "@hexly/video-kit/schema";
-import order from "../data/project-order.json";
-import identity from "../data/site-identity.json";
-import manifest from "../data/videos.json";
+import order from "../data/project-order.json" with { type: "json" };
+import identity from "../data/site-identity.json" with { type: "json" };
+import manifest from "../data/videos.json" with { type: "json" };
 import { assetUrl } from "./assets";
 import type { Locale, Project } from "./project";
 

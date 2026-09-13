@@ -12,7 +12,7 @@ import { navigationPath, parseNavigation } from "../../src/model/navigation";
 
 const projects = readProjects();
 
-describe("published standard outro examples", () => {
+describe("published reusable standard outros", () => {
 	it("keeps five original MP4s and HTML stills tied to immutable publication receipts", () => {
 		expect(manifest.examples).toHaveLength(5);
 		expect(new Set(manifest.examples.map((example) => example.ending))).toEqual(
@@ -90,7 +90,11 @@ describe("published standard outro examples", () => {
 	});
 
 	it("preserves example anchors alongside composition and theme choices", () => {
-		for (const hash of ["#examples", "#video-standard-outro-product-launch"]) {
+		for (const hash of [
+			"#outros",
+			"#examples",
+			"#video-standard-outro-product-launch",
+		]) {
 			const query = "?project=bogo&theme=dark&ending=line";
 			const state = parseNavigation("/templates/launch", query, projects, hash);
 			expect(navigationPath(state)).toBe(`/templates/launch${query}${hash}`);

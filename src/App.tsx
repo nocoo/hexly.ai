@@ -7,6 +7,7 @@ import {
 	useRef,
 	useState,
 } from "react";
+import { AgentGuide } from "./components/AgentGuide";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -14,6 +15,7 @@ import { Icon } from "./components/Icon";
 import { ProjectDetail } from "./components/ProjectDetail";
 import { StatusPage } from "./components/StatusPage";
 import { copy } from "./data/copy";
+import { agentGuidePath } from "./model/agent-guide";
 import { filterProjects, loadProjects } from "./model/catalogue";
 import { pageForPath } from "./model/discovery";
 import {
@@ -30,6 +32,7 @@ import "./styles/directory.css";
 import "./styles/gallery.css";
 import "./styles/status.css";
 import "./styles/projects.css";
+import "./styles/agents.css";
 
 const Templates = lazy(() =>
 	import("./components/Templates").then((module) => ({
@@ -125,6 +128,9 @@ export function App() {
 		document
 			.querySelector('link[rel="canonical"]')
 			?.setAttribute("href", page.canonical);
+		document
+			.querySelector('link[rel="alternate"][type="text/markdown"]')
+			?.setAttribute("href", agentGuidePath(page.path));
 		for (const [key, value] of [
 			["description", page.description],
 			["og:title", page.title],
@@ -376,6 +382,13 @@ export function App() {
 					onCopy={(value) => {
 						void copyValue(value);
 					}}
+				/>
+			)}
+			{catalogue.status === "ready" && (
+				<AgentGuide
+					path={navigationPath(state)}
+					projects={projects}
+					locale={locale}
 				/>
 			)}
 			<Footer

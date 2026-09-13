@@ -1,0 +1,128 @@
+.agent-region {
+	margin-block: 64px 48px;
+	scroll-margin-top: 24px;
+}
+.agent-guide-heading {
+	border-top: 1px solid var(--line);
+	padding-top: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.agent-guide-heading h2 {
+	font-size: 20px;
+	font-weight: 450;
+	letter-spacing: -0.5px;
+	margin: 0;
+}
+.agent-guide-heading p {
+	font-size: 12px;
+	line-height: 1.8;
+	color: var(--muted);
+	margin: 8px 0 0;
+}
+.agent-region summary,
+.outro-guide summary {
+	cursor: pointer;
+	font-size: 12px;
+	padding-block: 16px;
+}
+.agent-region summary:focus-visible,
+.outro-guide summary:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 4px;
+}
+.agent-instructions {
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	font: 11px / 1.85 var(--mono);
+	color: var(--ink);
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	padding: 22px;
+	margin: 0 0 16px;
+}
+.agent-resource-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 24px;
+}
+.agent-resource-links a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	font-size: 12px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+.copy-control {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: start;
+}
+.copy-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 10px 14px;
+	border: 1px solid var(--line);
+	border-radius: 8px;
+	background: var(--surface);
+	color: var(--ink);
+	font-size: 12px;
+	white-space: nowrap;
+}
+.copy-button:hover {
+	border-color: var(--muted);
+}
+.copy-button:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+.copy-button .icon {
+	width: 15px;
+	height: 15px;
+}
+.copy-failure {
+	max-width: 32ch;
+	margin-top: 8px;
+	font-size: 12px;
+	line-height: 1.6;
+	color: var(--muted);
+}
+.prompt-copy {
+	display: flex;
+	justify-content: end;
+	margin-block: 16px;
+}
+.template-example-links .copy-button {
+	border-color: transparent;
+	background: transparent;
+	padding-inline: 0;
+}
+.template-example-links .copy-button:hover {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+.template-examples {
+	position: relative;
+}
+.anchor-alias {
+	position: absolute;
+	top: 0;
+	scroll-margin-top: 24px;
+}
+@media (max-width: 600px) {
+	.agent-guide-heading {
+		align-items: start;
+		flex-direction: column;
+		gap: 16px;
+	}
+	.agent-instructions {
+		padding: 16px;
+	}
+}

@@ -6,6 +6,7 @@ export type IconName =
 	| "close"
 	| "download"
 	| "link"
+	| "copy"
 	| "check"
 	| "chevron"
 	| "github"
@@ -32,6 +33,7 @@ const paths: Record<IconName, string> = {
 	close: "m6 6 12 12M6 18 18 6",
 	download: "M12 3v12m-5-5 5 5 5-5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5",
 	link: "M10 13a5 5 0 0 0 7 .3l3-3a5 5 0 0 0-7-7l-1.8 1.8M14 11a5 5 0 0 0-7-.3l-3 3a5 5 0 0 0 7 7l1.8-1.8",
+	copy: "M8 8h12v13H8zM16 8V3H3v13h5",
 	check: "m5 12 4 4L19 6",
 	chevron: "m7 10 5 5 5-5",
 	github:

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { agentCopy } from "../data/agent-copy";
 import { copy } from "../data/copy";
 import { assetUrl } from "../model/assets";
 import type { Locale, LogoFamily, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
+import { CopyButton } from "./CopyButton";
 
 export function LogoArchive({
 	family,
@@ -83,6 +85,17 @@ export function LogoArchive({
 						<span aria-hidden="true">↗</span>
 					</AssetLink>
 				))}
+			</div>
+			<div className="prompt-copy">
+				<CopyButton
+					text={failed ? "" : prompt}
+					locale={locale}
+					label={
+						supplied
+							? agentCopy[locale].copyBrief
+							: agentCopy[locale].copyPrompt
+					}
+				/>
 			</div>
 			<details>
 				<summary>{supplied ? t.briefTitle : t.promptTitle}</summary>

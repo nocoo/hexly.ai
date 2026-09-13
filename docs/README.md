@@ -27,6 +27,7 @@
 25. [Material storage, CDN delivery, local hydration and asset onboarding](21-asset-storage.md)
 26. [Snail retirement, Zhe migration and preserved brand history](22-snail-retirement.md)
 27. [Git history recovery, revision maps and material hydration](23-git-history-recovery.md)
-28. [Standard outro examples, HTML stills and R2 publication](24-standard-outro-examples.md)
+28. [Standard outros, HTML stills and R2 publication](24-standard-outro-examples.md)
+29. [Agent guides, exact prompts and direct asset reuse](25-agent-guides.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

@@ -1,16 +1,14 @@
 import { copy } from "../data/copy";
 import identity from "../data/site-identity.json" with { type: "json" };
-import templateExamples from "../data/template-examples.json" with {
-	type: "json",
-};
+import { agentGuide, agentGuidePath, standardOutros } from "./agent-guide";
 import { assetUrl } from "./assets";
 import { filterProjects } from "./catalogue";
 import type { Locale, Project } from "./project";
-import { legacyRoute } from "./routes";
+import { legacyRoute, siteOrigin } from "./routes";
 import { healthEndpoint } from "./status";
 import { findVideo, videoEntries, videoManifest } from "./videos";
 
-export const siteOrigin = "https://hexly.ai";
+export { siteOrigin } from "./routes";
 
 export const homeTitle = "hexly.ai — A little universe of projects";
 export const homeDescription =
@@ -220,11 +218,18 @@ export function sitemapXml(pages: DiscoveryPage[]): string {
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>\n`;
 }
 
+export function agentFiles(projects: Project[]) {
+	return discoveryPages(projects).map((page) => {
+		const guide = agentGuide(page.path, projects);
+		return { fileName: guide.path.slice(1), source: guide.body };
+	});
+}
+
 export function llmsDocument(projects: Project[]): string {
 	const visible = filterProjects(projects, "", "all");
 	const archived = filterProjects(projects, "", "archive");
 	const link = (project: Project, locale: "en" | "zh") =>
-		`- [${project.title}](${absoluteUrl(`/projects/${project.id}`)}): ${project.description[locale]}`;
+		`- [${project.title}](${absoluteUrl(`/projects/${project.id}`)}): ${project.description[locale]} [Agent guide](${siteOrigin}/agents/projects/${project.id}.md)`;
 	return `# ${homeTitle}
 
 > ${homeDescription}
@@ -233,13 +238,24 @@ export function llmsDocument(projects: Project[]): string {
 
 Public pages welcome search and AI crawlers. JavaScript is not required to read this file, the sitemap, or the HTML snapshots.
 
+## Agent guides
+
+Every catalogue, project, template and status page includes a copyable integration guide and a matching Markdown document, discoverable through an HTML alternate link.
+
+- [Catalogue guide](${siteOrigin}/agents/index.md)
+- [Identity gallery guide](${siteOrigin}/agents/logos.md)
+- [Templates and standard-outro guide](${siteOrigin}/agents/templates.md)
+- [Status guide](${siteOrigin}/agents/status.md)
+
+Reuse the published standard outro MP4s directly across Hexly projects. They do not need to be regenerated or configured for each product. Existing Logo prompts are historical source records, not a requirement to recreate approved assets.
+
 ## English
 
 - [hexly.ai](${siteOrigin}/): ${homeDescription}
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
 - [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
 - [Video Kit](${siteOrigin}/templates): Mix five openings, five content layouts and five endings in two Hexly themes; client previews and local video/PPTX/PDF exports.
-- [Finished brand endings](${siteOrigin}/templates#examples): Five silent, light-theme Hexly MP4 examples and HTML-rendered 4K stills, served from the media CDN.
+- [Standard outros](${siteOrigin}/templates#outros): Five ready-to-use, project-independent Hexly endings. Download and append the original MP4, or use the HTML-rendered 4K still in a deck. Light, silent; no regeneration needed.
 
 ${visible.map((project) => link(project, "en")).join("\n")}
 
@@ -249,7 +265,7 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
 - [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
 - [视频模板](${siteOrigin}/templates): 五种封面、正文与片尾自由组合，均有 Hexly 明暗主题；客户端预览、本地视频与 PPTX/PDF 导出。
-- [成片范例](${siteOrigin}/templates#examples): 五个浅色无声 Hexly 片尾，提供 MP4 与从 HTML 渲染的 4K 高清静帧。
+- [标准片尾](${siteOrigin}/templates#outros): 五个跨项目通用的 Hexly 片尾，直接拼接 MP4 或在幻灯片中使用 HTML 渲染的 4K 高清图，无需重新生成。均为浅色、无声。
 
 ${visible.map((project) => link(project, "zh")).join("\n")}
 
@@ -270,7 +286,8 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Project catalogue JSON](${siteOrigin}/data/projects.json)
 - [Share metadata API](${siteOrigin}/api/share.json)
 - [Video manifest](${siteOrigin}/templates/manifest.json)
-- [Finished example files and provenance](${siteOrigin}/templates/examples.json)
+- [Standard outro files and provenance](${siteOrigin}/templates/outros.json)
+- [Legacy file index](${siteOrigin}/templates/examples.json)
 `;
 }
 
@@ -318,6 +335,12 @@ export function applyPageToHtml(html: string, page: DiscoveryPage): string {
 		/<link rel="canonical" href="[^"]*"\s*\/?>/,
 		`<link rel="canonical" href="${escapeHtml(page.canonical)}" />`,
 	);
+	const agentLink = `<link rel="alternate" type="text/markdown" href="${escapeHtml(agentGuidePath(page.path))}" title="Agent guide" />`;
+	const agentPattern =
+		/<link rel="alternate" type="text\/markdown" href="[^"]*" title="Agent guide"\s*\/?>/;
+	next = agentPattern.test(next)
+		? next.replace(agentPattern, agentLink)
+		: next.replace("</head>", `${agentLink}\n</head>`);
 	if (next.includes('type="application/ld+json"'))
 		next = next.replace(
 			/<script type="application\/ld\+json">[\s\S]*?<\/script>/,
@@ -455,8 +478,7 @@ function videosPage(id?: string): DiscoveryPage {
 				`<li><a href="/templates/${item.id}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.description.en)}</li>`,
 		)
 		.join("");
-	const examples = templateExamples.examples
-		.filter((example) => !entry || example.template === entry.id)
+	const outros = standardOutros.outros
 		.map(
 			(example) =>
 				`<li><a href="${escapeHtml(example.video.src)}">${escapeHtml(example.video.title.en)} — MP4</a> · <a href="${escapeHtml(example.still.src)}">4K still</a></li>`,
@@ -477,7 +499,7 @@ function videosPage(id?: string): DiscoveryPage {
 			[],
 		).replace(
 			"</main>",
-			`<nav><a href="/templates">All components</a></nav><ul>${items}</ul><p>Interactive Video and Deck previews. Two themes. Independent opening, content and ending selections. Export a project setup for local MP4, PowerPoint and PDF rendering.</p><section id="examples"><h2>Finished examples</h2><p>Hexly brand endings. Light theme, silent, six seconds. Original MP4s and full-canvas 4K stills rendered from HTML.</p><ul>${examples}</ul><a href="/templates/examples.json">Example files and provenance</a></section><p><a href="/templates/manifest.json">Public manifest</a> · <a href="/templates/film-v2.schema.json">Project schema</a></p></main>`,
+			`<nav><a href="/templates">All components</a></nav><ul>${items}</ul><p>Interactive Video and Deck previews. Two themes. Independent opening, content and ending selections. Export a project setup for local MP4, PowerPoint and PDF rendering.</p><section id="outros"><span id="examples"></span><h2>Standard outros</h2><p>Five ready-to-use Hexly brand endings for any project. Download and append the original clip; no setup or regeneration needed. Light, silent, six seconds, with HTML-rendered 4K stills for decks.</p><ul>${outros}</ul><a href="/templates/outros.json">Standard files and provenance</a></section><p><a href="/templates/manifest.json">Public manifest</a> · <a href="/templates/film-v2.schema.json">Project schema</a></p></main>`,
 		),
 		jsonLd: {
 			"@context": "https://schema.org",
@@ -588,7 +610,9 @@ function snapshotHtml(
 	const brandHtml = project
 		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.family?.foreground.display ?? project.logo.display))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">Download original</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a></p></section>`
 		: "";
-	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
+	const guide = agentGuide(current, project ? [project] : projects);
+	const agentHtml = `<section id="agent-guide"><h2>For agents</h2><details><summary>Read the integration guide</summary><pre>${escapeHtml(guide.body)}</pre></details><p><a href="${escapeHtml(guide.path)}" rel="alternate" type="text/markdown">Plain Markdown</a> · <a href="/llms.txt">Agent index</a></p></section>`;
+	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}${agentHtml}</main>`;
 }
 
 function replaceMeta(
