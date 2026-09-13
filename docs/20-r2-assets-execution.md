@@ -61,11 +61,11 @@ Worker, R2 Worker binding, D1 registry, bucket or CDN domain is necessary.
 ### B. Copy and verify before switching delivery
 
 - [x] Check bucket/domain/authentication; inspect actual CORS/cache behavior.
-- [ ] Pilot Snail, animal and non-animal archives, fonts, downloads and existing
+- [x] Pilot Snail, animal and non-animal archives, fonts, downloads and existing
   video behavior. Preserve all historical URLs and checksummed manifests.
-- [ ] Upload full public inventory; verify size/MIME and complete SHA-256.
+- [x] Upload full public inventory; verify size/MIME and complete SHA-256.
   Persist bounded retry results so interrupted operations can resume.
-- [ ] Set MIME/cache metadata and necessary font CSP/CORS. R2 does not inherit
+- [x] Set MIME/cache metadata and necessary font CSP/CORS. R2 does not inherit
   Worker `_headers`; test actual Origin, download behavior and MP4 Range 206.
 
 ### C. Application and build boundary
@@ -134,7 +134,11 @@ step has already happened.
 - OAuth has R2 object access. Zone cache-purge permission returned HTTP 401; no cache policy or zone permissions were changed. Existing published bytes remain immutable.
 - Account API upload throttling returned 429; the uploader stopped after bounded retries with receipts intact. Added account headroom and shared Retry-After cooldown before resuming.
 
-- Local acceptance: 318 unit tests, 99.59% statements / 98.73% branches / 100% functions and lines; 127 HTTP tests; 348 desktop/mobile browser tests and 12 focused media checks after the fixture isolation refinement. Typecheck, lint, asset checks, OSV and Gitleaks passed.
-- Complete Worker asset boundary (including discovery snapshots): 466 files, 3,422,182 bytes; deploy dry-run Worker upload 81.80 KiB (17.59 KiB gzip). No material binaries enter dist.
+- Final local acceptance: 319 unit tests, 99.59% statements / 98.73% branches / 100% functions and lines; 127 HTTP tests; 352 desktop/mobile browser tests. Typecheck, lint, asset checks, OSV and Gitleaks passed. The standalone Snail/Frogie download checks cover actual downloaded bytes and unchanged raw HTML hashes.
+- Complete Worker asset boundary (including discovery snapshots): 350 regular files, 3,430,448 bytes; Wrangler reports 468 scanned entries including directories. Deploy dry-run Worker upload 82.74 KiB (17.91 KiB gzip). No material binaries enter dist.
 - Actual Snail Launch validation export: 960×540, 30 fps, 990 frames (33 seconds), seven deck pages, MP4/PPTX/PDF and decoded-frame/contact-sheet inspection passed. Validation outputs stay outside Git/deployment.
 - One canonical Snail texture URL briefly retained an earlier cached 404 after its R2 write. A unique-query GET matched the expected SHA; the bare URL later returned 200 after cache expiry and matched too. No object was overwritten and no cache-policy/permission change was needed; resumed from receipts.
+
+- Sparse fresh-checkout proof: frozen install/build passed without material working files; 11 missing sample payloads hydrated from CDN with hashes checked. Actual dev started and returned a demo status feed (HTTP 200, 32 services) without hydrating the full archive.
+
+- Public publication completed: 4,510 immutable objects / 3,145,538,350 bytes, every complete CDN response checked against the inventory SHA-256 and MIME. `docs/assets/publication.jsonl` contains the per-object evidence; source-only archives and production deployment remain separate pending checkpoints.

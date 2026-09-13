@@ -1,8 +1,8 @@
 {
-  "observedAt": "2026-09-13T00:26:16.088095+00:00",
+  "observedAt": "2026-09-13T00:53:44.346550+00:00",
   "stage": "local pre-publication acceptance",
   "unit": {
-    "passed": 318,
+    "passed": 319,
     "statements": 99.59,
     "branches": 98.73,
     "functions": 100,
@@ -12,12 +12,12 @@
     "passed": 127
   },
   "browser": {
-    "passed": 348,
-    "supplementalMediaPassed": 12,
+    "passed": 352,
     "engines": [
       "Chromium desktop",
       "Chromium mobile emulation"
-    ]
+    ],
+    "standaloneDownloads": "Snail and Frogie, desktop/mobile; original favicon bytes and raw archived HTML hashes"
   },
   "otherChecks": [
     "typecheck",
@@ -28,9 +28,12 @@
     "Wrangler deploy dry-run"
   ],
   "workerAssets": {
-    "files": 466,
-    "bytes": 3422182,
-    "baselineBytes": 3147514699
+    "files": 350,
+    "bytes": 3430448,
+    "baselineBytes": 3147514699,
+    "wranglerScannedEntries": 468,
+    "workerUploadKiB": 82.74,
+    "workerGzipKiB": 17.91
   },
   "render": {
     "kitVersion": "2.0.0",
@@ -160,5 +163,20 @@
     ]
   },
   "externalEvidence": "/Users/nocoo/backups/hexly.ai/r2-migration-20260913T080642/validation",
-  "production": "pending"
+  "production": "pending",
+  "freshCheckoutProof": {
+    "path": "/tmp/hexly-r2-build-proof",
+    "materialFilesAbsent": true,
+    "install": "passed",
+    "build": "passed",
+    "sampleHydration": "11 missing payloads verified from CDN",
+    "devStatus": "HTTP 200, demo mode, 32 services, no complete archive hydration"
+  },
+  "publicPublication": {
+    "objects": 4510,
+    "bytes": 3145538350,
+    "fullByteSha256Verified": true,
+    "completedAt": "2026-09-13T00:58:06.565Z",
+    "receipts": "docs/assets/publication.jsonl"
+  }
 }
