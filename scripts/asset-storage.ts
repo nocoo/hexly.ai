@@ -277,7 +277,7 @@ export async function retry<T>(operation: () => Promise<T>): Promise<T> {
 			if (
 				attempt >= 2 ||
 				(error instanceof Error &&
-					/mismatch|changed|conflict|HTTP 40[013]/i.test(error.message))
+					/mismatch|changed|conflict|HTTP 40[0134]/i.test(error.message))
 			)
 				throw error;
 			const delay = Math.max(
@@ -325,18 +325,27 @@ async function request(url: string, init: RequestInit = {}) {
 }
 let apiRetryAt = 0;
 export async function verifiedBytes(file: StoredAsset, url = publicUrl(file)) {
-	const response = await retry(() => request(url));
-	if (response.status !== 200)
-		throw new Error(`HTTP ${response.status}: ${url}`);
-	const bytes = new Uint8Array(await response.arrayBuffer());
-	if (bytes.length !== file.bytes || digest(bytes) !== file.sha256)
-		throw new Error(`Asset checksum/size mismatch: ${file.source}`);
-	if (
-		response.headers.get("content-type")?.split(";")[0] !==
-		file.contentType.split(";")[0]
-	)
-		throw new Error(`Asset MIME mismatch: ${file.source}`);
-	return bytes;
+	try {
+		return await retry(async () => {
+			const response = await request(url);
+			if (response.status !== 200)
+				throw new Error(`HTTP ${response.status}: ${url}`);
+			const bytes = new Uint8Array(await response.arrayBuffer());
+			if (bytes.length !== file.bytes || digest(bytes) !== file.sha256)
+				throw new Error(`Asset checksum/size mismatch: ${file.source}`);
+			if (
+				response.headers.get("content-type")?.split(";")[0] !==
+				file.contentType.split(";")[0]
+			)
+				throw new Error(`Asset MIME mismatch: ${file.source}`);
+			return bytes;
+		});
+	} catch (cause) {
+		throw new Error(
+			`${cause instanceof Error ? cause.message : String(cause)} [${file.key}]`,
+			{ cause },
+		);
+	}
 }
 
 /** A cached pre-upload miss may outlive a successful write; receipts require the bare URL too. */
@@ -549,7 +558,7 @@ export async function hydrate(files: StoredAsset[], concurrency: number) {
 				const local = copies.find((f) => existsSync(f.source));
 				const bytes = local
 					? new Uint8Array(await readFile(local.source))
-					: await retry(() => verifiedBytes(file));
+					: await verifiedBytes(file);
 				if (digest(bytes) !== file.sha256)
 					throw new Error(`Hydration checksum mismatch: ${file.source}`);
 				await writeFile(cached, bytes);
@@ -642,7 +651,7 @@ if (import.meta.main) {
 			await pool(
 				files,
 				async (file) => {
-					await retry(() => verifiedBytes(file));
+					await verifiedBytes(file);
 					if (++count % 100 === 0)
 						console.info(`Verified ${count}/${files.length}`);
 				},

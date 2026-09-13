@@ -108,6 +108,9 @@ GET byte/MIME verification. A repository lock prevents overlapping local upload
 runs. Existing objects are verified and reused. This is a single-writer workflow:
 HEAD-before-PUT is not an atomic distributed conditional write. Coordinate other
 writers of the same published package; different bytes must never be overwritten.
+Verification retries cover the complete response body, including a disconnect
+after successful headers. Exhausted retries report the exact object key; cached
+404 handling remains separate, and wrong bytes or MIME stop immediately.
 
 Wrangler may return a token near the end of its lifetime. On HTTP 401 the helper
 asks Wrangler for current credentials and retries once only when the token has
