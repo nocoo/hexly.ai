@@ -202,6 +202,8 @@
 }
 .project-video-stage {
 	position: relative;
+	/* Keep the border outside the 16:9 canvas to avoid thin letterbox edges. */
+	box-sizing: content-box;
 	aspect-ratio: 16 / 9;
 	background: var(--surface-soft);
 	border: 1px solid var(--line);
@@ -212,7 +214,7 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	background: #101712;
+	background: transparent;
 }
 .project-video-poster {
 	width: 100%;
