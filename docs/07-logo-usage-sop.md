@@ -248,3 +248,17 @@ The [guide](../public/brands/snail/v2.0.0/guide.md),
 [handoff record](18-snail-brand.md) give full source history, exact hashes,
 minimum sizes and license. Send the published Hexly SHA and URLs to `w36:p1`
 after production verification; Snail owns exact-byte copying and adoption.
+
+## Pi Agent Policy first identity — 2026-09-14
+
+The owner approved study `2026-09-14-03 / 01`, a graphite reset instrument in
+the material tool series. Source commit `ba73409bd7326fa1a425e5faa918a285cde42de5`
+adopts the exact transparent 2048px master as `logo.png`; both READMEs use the
+rounded 512px presentation at 128px. The extension has no separate application
+UI or website. Do not invent browser, sidebar or live-status consumers.
+
+`family.previous: null` records its first independent Logo. The rejected animal
+and unselected rocker are source history, never old official identities.
+The [onboarding guide](26-pi-agent-policy-onboarding.md) links the complete kit,
+source hashes, provenance and private-repository boundary. Brand 1.0.0, package
+0.1.2 and the Hexly site release remain independent versions.

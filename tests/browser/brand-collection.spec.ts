@@ -15,6 +15,7 @@ const representatives = new Set([
 	"fundly",
 	"hermes-on-herdr",
 	"pokepocket",
+	"pi-agent-policy",
 ]);
 
 for (const project of targets) {
@@ -130,12 +131,17 @@ for (const project of targets.filter((p) => representatives.has(p.id))) {
 			);
 			expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 		}
-		await expect(page.locator(".comparison")).toContainText(
-			"Project identity / Original bytes",
-		);
-		await expect(page.locator(".comparison")).toContainText(
-			"Hexly family / Campaign artwork",
-		);
+		if (project.family?.previous === null) {
+			await expect(page.locator(".comparison figure")).toHaveCount(1);
+			await expect(page.locator(".comparison")).toContainText("First identity");
+		} else {
+			await expect(page.locator(".comparison")).toContainText(
+				"Project identity / Original bytes",
+			);
+			await expect(page.locator(".comparison")).toContainText(
+				"Hexly family / Campaign artwork",
+			);
+		}
 		if (project.id === "pokepocket")
 			await expect(
 				page

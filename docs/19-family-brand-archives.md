@@ -203,3 +203,13 @@ The feature commit and site v0.10.0 release commit are separate. Follow
 [the release workflow](05-release.md): exact-SHA CI and Deploy, production
 version/revision and HTTP verification, then annotated tag and GitHub Release.
 The release record is the authority for publication; a local export is not.
+
+## New projects after the frozen collection
+
+Use [the single-project tools](../artwork/brands/tools/README.md) for a new
+project/version. The collection commands above remain a historical recipe;
+do not rerun them over published kits. Pi Agent Policy adds an approved material
+tool identity and brand 1.0.0 after Snail's catalogue retirement. Its separate
+[onboarding record](26-pi-agent-policy-onboarding.md) preserves source adoption,
+actual new-image provenance and the campaign-only scope. Existing collection
+metadata and Snail's historical assets remain unchanged.

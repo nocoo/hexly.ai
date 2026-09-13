@@ -19,10 +19,12 @@ import type { Project } from "../../src/model/project";
 const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const projects = readProjects();
+const baselineProjects = projects.filter((p) => p.id !== "pi-agent-policy");
 const targetIds = inventory.projects
 	.filter((p) => p.scope === "target")
 	.map((p) => p.id);
 const targets = projects.filter((p) => targetIds.includes(p.id));
+const kits = projects.filter((p) => p.brandKit?.method === "archived-artwork");
 const manifest = (project: Project) =>
 	readFile(`public${project.brandKit?.root}/manifest.json`, "utf8").then(
 		JSON.parse,
@@ -30,13 +32,14 @@ const manifest = (project: Project) =>
 
 describe("complete Hexly campaign archives", () => {
 	it("preserves baseline identity metadata and assets after retiring Snail from the catalogue", async () => {
-		expect(projects.map((p) => p.id)).toEqual(
+		expect(baselineProjects.map((p) => p.id)).toEqual(
 			inventory.projects.filter((p) => p.id !== "snail").map((p) => p.id),
 		);
 		expect(targets).toHaveLength(54);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(54);
+		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(54);
+		expect(projects.filter((p) => !p.archived)).toHaveLength(55);
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
-		for (const p of [...projects, retiredSnail as Project]) {
+		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
 			const { brandKit, ...original } = p;
 			const isTarget = targetIds.includes(p.id);
@@ -63,7 +66,7 @@ describe("complete Hexly campaign archives", () => {
 		expect(catalogueProblems(projects)).toEqual([]);
 	});
 
-	it.each(targets)(
+	it.each(kits)(
 		"$id preserves original file/pixel colors, real formats, complete Hero pixels and verifiable downloads",
 		async (p) => {
 			const kit = p.brandKit;

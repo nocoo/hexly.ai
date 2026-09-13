@@ -5,7 +5,7 @@
 3. [Six-dimensional quality system](03-quality.md)
 4. [Local development and Cloudflare deployment](04-development.md)
 5. [Versioning and releases](05-release.md)
-6. [Animal logo family and versioned studies](06-logo-family.md)
+6. [Project logo family and versioned studies](06-logo-family.md)
 7. [Logo usage and adoption SOP](07-logo-usage-sop.md)
 8. [Four new project identities](08-new-project-identities.md)
 9. [Basalt marble and candy color study](09-basalt-color-study.md)
@@ -29,5 +29,6 @@
 27. [Git history recovery, revision maps and material hydration](23-git-history-recovery.md)
 28. [Standard outros, HTML stills and R2 publication](24-standard-outro-examples.md)
 29. [Agent guides, exact prompts and direct asset reuse](25-agent-guides.md)
+30. [Pi Agent Policy onboarding and first material identity](26-pi-agent-policy-onboarding.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
