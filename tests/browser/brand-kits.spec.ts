@@ -1,94 +1,28 @@
 import AxeBuilder from "@axe-core/playwright";
-import { readProjects } from "../../src/data/read-projects";
-import { assetUrl } from "../../src/model/assets";
+import snail from "../../docs/sources/snail-retired-2026-09-13.json" with {
+	type: "json",
+};
 import { expect, test } from "./fixtures";
 
-const snail = readProjects().find((project) => project.id === "snail");
 if (!snail?.brandKit || !snail.family)
 	throw new Error("Missing Snail animal kit");
 const kit = snail.brandKit;
-const foreground = snail.family.foreground;
 
-test("browses Snail's bilingual brand archive, theme variants and real downloads", async ({
+test("removes Snail from the directory and forwards its project page to Zhe", async ({
 	page,
 	isMobile,
 }) => {
 	if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
 	await page.goto("/?q=snail");
-	await expect(
-		page.locator('[data-project="snail"] .card-main'),
-	).toHaveAttribute("href", "/projects/snail");
-	for (const theme of ["light", "dark"]) {
-		if ((await page.locator("html").getAttribute("data-theme")) !== theme)
-			await page.locator(".theme-toggle").click();
-		await expect(page.locator('[data-project="snail"] .card-main')).toHaveCSS(
-			"background-image",
-			new RegExp(`texture-${theme}\\.svg`),
-		);
-		await expect(
-			page.locator('[data-project="snail"] .project-description'),
-		).toHaveCSS(
-			"color",
-			theme === "light" ? "rgb(48, 55, 46)" : "rgb(230, 233, 220)",
-		);
-	}
-	await page.locator('[data-project="snail"] .card-main').click();
-	await expect(page.locator("#identity-title")).toContainText("Snail");
-	await expect(page.locator(".project-readme")).toHaveCount(0);
-	await expect(page.locator(".brand-hero img")).toHaveAttribute(
-		"src",
-		assetUrl(`${kit.root}/hero.webp`),
-	);
-	await expect
-		.poll(() =>
-			page
-				.locator(".brand-hero img")
-				.evaluate((image: HTMLImageElement) => image.currentSrc),
-		)
-		.toContain(isMobile ? "hero-square.webp" : "/hero.webp");
-	const hero = await page.locator(".brand-hero img").boundingBox();
-	if (!hero) throw new Error("Missing hero frame");
-	expect(hero.width / hero.height).toBeCloseTo(isMobile ? 1 : 2.5, 1);
-	for (const locale of ["en", "zh"] as const) {
-		if (locale === "zh")
-			await page.getByRole("button", { name: "Switch to Chinese" }).click();
-		for (const theme of ["light", "dark"] as const) {
-			if ((await page.locator("html").getAttribute("data-theme")) !== theme)
-				await page.locator(".theme-toggle").click();
-			await expect(
-				page.locator(".identity-heading .logo-plain img"),
-			).toHaveAttribute("src", assetUrl(foreground.display));
-			await expect(page.locator(".brand-kit-intro")).toHaveCSS(
-				"background-image",
-				new RegExp(`texture-${theme}\\.svg`),
-			);
-			await expect(page.locator(".brand-kit")).toContainText(
-				locale === "en" ? "One point of focus" : "只留一个焦点",
-			);
-			await page.locator(".brand-kit-specimens").scrollIntoViewIfNeeded();
-			for (const image of await page.locator(".brand-kit-specimens img").all())
-				await image.evaluate((node: HTMLImageElement) => node.decode());
-			await expect(page.locator(`.brand-kit-${theme} img`)).toHaveAttribute(
-				"src",
-				assetUrl(`${kit.root}/lockup-${theme}.png`),
-			);
-			expect(
-				await page.evaluate(
-					() => document.documentElement.scrollWidth <= innerWidth,
-				),
-			).toBe(true);
-		}
-	}
-	await expect(
-		page.locator(`.brand-kit a[href="/brands/snail/v1.0.0/review.html"]`),
-	).toHaveCount(1);
-	const pendingDownload = page.waitForEvent("download");
-	await page.locator('.brand-kit a[href$="/favicon.ico"]').click();
-	expect((await pendingDownload).suggestedFilename()).toBe("favicon.ico");
-	const results = await new AxeBuilder({ page })
-		.include(".brand-kit")
-		.analyze();
-	expect(results.violations).toEqual([]);
+	await expect(page.locator('[data-project="snail"]')).toHaveCount(0);
+	await page.goto("/projects/snail");
+	await expect(page).toHaveURL(/\/projects\/zhe$/);
+	await expect(page.locator("#identity-title")).toContainText("Zhe");
+	expect(
+		await page.evaluate(
+			() => document.documentElement.scrollWidth <= innerWidth,
+		),
+	).toBe(true);
 });
 
 test("the standalone Snail study keeps full compositions, transparent small marks and traceable downloads", async ({

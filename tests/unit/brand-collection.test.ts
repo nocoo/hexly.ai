@@ -3,6 +3,9 @@ import { readFile } from "node:fs/promises";
 import sharp from "sharp";
 import { describe, expect, it } from "vitest";
 import inventory from "../../docs/brand-archives/inventory-0.10.0.json";
+import retiredSnail from "../../docs/sources/snail-retired-2026-09-13.json" with {
+	type: "json",
+};
 import { readProjects } from "../../src/data/read-projects";
 import {
 	brandAsset,
@@ -26,14 +29,14 @@ const manifest = (project: Project) =>
 	);
 
 describe("complete Hexly campaign archives", () => {
-	it("covers every current project without inventing projects, changing product identity/UI metadata, or touching Snail", async () => {
+	it("preserves baseline identity metadata and assets after retiring Snail from the catalogue", async () => {
 		expect(projects.map((p) => p.id)).toEqual(
-			inventory.projects.map((p) => p.id),
+			inventory.projects.filter((p) => p.id !== "snail").map((p) => p.id),
 		);
 		expect(targets).toHaveLength(54);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(55);
+		expect(projects.filter((p) => !p.archived)).toHaveLength(54);
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
-		for (const p of projects) {
+		for (const p of [...projects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
 			const { brandKit, ...original } = p;
 			const isTarget = targetIds.includes(p.id);

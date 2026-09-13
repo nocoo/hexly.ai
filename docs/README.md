@@ -25,5 +25,6 @@
 23. [Complete family archives, original identity and Hexly campaign scope](19-family-brand-archives.md)
 24. [R2 asset migration, publication and Git history reduction](20-r2-assets-execution.md)
 25. [Material storage, CDN delivery, local hydration and asset onboarding](21-asset-storage.md)
+26. [Snail retirement, Zhe migration and preserved brand history](22-snail-retirement.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

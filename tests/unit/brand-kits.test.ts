@@ -2,13 +2,16 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import sharp from "sharp";
 import { describe, expect, it } from "vitest";
+import retiredSnail from "../../docs/sources/snail-retired-2026-09-13.json" with {
+	type: "json",
+};
 import { readProjects } from "../../src/data/read-projects";
 import { brandAsset, brandTexture } from "../../src/model/brand";
 import { catalogueProblems } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
-import { healthEndpoint } from "../../src/model/status";
+import { healthEndpoint, statusTargets } from "../../src/model/status";
 
-const snail = readProjects().find((project) => project.id === "snail");
+const snail = retiredSnail as Project;
 if (!snail?.brandKit) throw new Error("Missing Snail brand handoff");
 const project = snail;
 const kit = snail.brandKit;
@@ -20,6 +23,9 @@ describe("versioned brand identities", () => {
 		expect(project.source.profileRevision).toBeNull();
 		expect(project.overview?.verified.revision).toBeNull();
 		expect(healthEndpoint(project)).toBe("https://snail.hexly.ai/api/live");
+		expect(statusTargets(readProjects()).some(({ id }) => id === "snail")).toBe(
+			false,
+		);
 		expect(kit.version).toBe("2.0.0");
 		expect(project.family?.status).toBe("review");
 		expect(project.family?.previous.sha256).toBe(project.logo.sha256);
