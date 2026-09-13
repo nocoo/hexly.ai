@@ -51,12 +51,13 @@
 | `bun run dev` | 启动 Vite 7048 与 Wrangler 37048，自动初始化本地 SQLite D1 模拟数据 |
 | `bun run build` | 构建静态站点和版本元数据 |
 | `bun run preview:worker` | 在本地 Workers 运行时预览构建结果 |
-| `bun run gate:commit` | 静态分析、单元测试覆盖率和暂存区密钥检查 |
+| `bun run gate:commit` | Git 素材边界、暂存区静态检查和受影响单元测试 |
 | `bun run gate:push` | HTTP 集成测试、依赖漏洞和 Git 历史密钥检查 |
 | `bun run test:browser` | 运行桌面与移动端浏览器测试 |
 | `bun run assets:build` | 生成 32 / 64 / 160 / 1024 px WebP 预览 |
 | `bun run assets:check` | 校验原图哈希和全部预览图 |
 | `bun run assets:hydrate` | 从 R2 按哈希恢复缺失的本地素材，不覆盖已有改动 |
+| `bun run assets:check-tracked` | 防止素材二进制重新进入 Git，包括强制添加 |
 | `bun run docs:profiles` | 从项目数据生成独立档案 |
 | `bun run video:dev` / `bun run video:studio` | 独立 Vite 预览 / Remotion Studio |
 | `bun run video:render -- --project pew --template showcase --theme dark --opening stack --ending split --mode deck` | 按当前组合导出真实 PPTX/PDF；`--mode video` 才会生成视频 |
@@ -148,6 +149,8 @@ D1 在质量表中表示测试隔离维度；监控使用 Cloudflare D1 数据�
 - [本地开发与 Cloudflare 部署](docs/04-development.md)
 - [版本与发布流程](docs/05-release.md)
 - [项目详情、媒体与路由](docs/17-project-media.md)
+- [R2 资源存储与维护](docs/21-asset-storage.md)
+- [Git 历史裁剪、旧版本与素材恢复](docs/23-git-history-recovery.md)
 - [项目档案与色板](docs/profiles/README.md)
 - [完整品牌档案、原标与宣发作用域](docs/19-family-brand-archives.md)
 - [来源快照](docs/sources/README.md)

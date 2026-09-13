@@ -10,6 +10,9 @@ and [the material contract](../../../docs/21-asset-storage.md). The owner author
 R2 migration, publication, then Git history reduction on 2026-09-13. This replaces
 the older instruction to retain all binary materials in Git/Workers Static Assets.
 Ordinary asset tasks do not authorize another history rewrite or object deletion.
+For a fresh checkout or an old pinned revision, use the
+[Git recovery guide](../../../docs/23-git-history-recovery.md). Keep original
+provenance SHAs; the published commit map connects them to the smaller history.
 
 ## Actual service and records
 
@@ -74,6 +77,7 @@ bunx wrangler r2 bucket lifecycle list hexlyai
 # Restore missing material files, preserving any existing local edits.
 bun run assets:hydrate
 bun run assets:r2 -- hydrate --project snail
+bun run assets:check-tracked
 
 # After preparing authorized new files and project metadata:
 bun run assets:r2 -- inventory
@@ -136,6 +140,13 @@ is ready. Never overwrite correct bytes to fix an edge-cache response.
 archives. Do not upload arbitrary temporary directories. Source duplicates can
 recover from the same hashed object. Hydrated files/cache are disposable local
 working material; their verified R2 objects and small source records are durable.
+
+Material images, fonts, films/audio, ZIP, PDF and PPTX files are ignored by Git.
+Pre-commit and CI also inspect the index, so `git add -f` cannot bypass this
+boundary. Keep SVG geometry, manifests, licenses and publication receipts in Git.
+The inventory scans approved material directories even when files are ignored;
+do not force-add a binary to make it discoverable. The vendored `.tgz` code
+dependency is retained and is not a material export.
 
 ## Integrate and verify
 

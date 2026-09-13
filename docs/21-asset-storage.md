@@ -27,11 +27,13 @@ canonical identity and delivery origin are distinct. Never rewrite a frozen
 manifest or recolor an official project Logo during an infrastructure migration.
 
 Git retains source code, SVG source geometry, project/brand manifests, provenance,
-prompts, licenses, inventory and publication receipts. Existing binary originals
-are retained during the migration; after production acceptance they are removed
-from tracked files/history into verified object storage and the full external Git
-backup. The local material tree can be hydrated for authoring and tests. No
-movie, render cache or newly generated large binary belongs in a commit.
+prompts, licenses, inventory and publication receipts. After the verified
+v0.11.0 R2 release, binary materials were removed from the index while preserving
+every local working file. Immutable R2 objects and the verified external Git
+bundle retain their bytes. The [history recovery guide](23-git-history-recovery.md)
+records the source-history boundary and old/new revision maps. The local material
+tree can be hydrated for authoring and tests. No movie, render cache or newly
+generated material binary belongs in a commit.
 
 ## One inventory and one transport configuration
 
@@ -61,6 +63,7 @@ bun run assets:r2 -- plan
 bun run assets:r2 -- url /brands/snail/v2.0.0/mark-light.png
 bun run assets:r2 -- hydrate --project snail
 bun run assets:hydrate
+bun run assets:check-tracked
 bun run assets:check
 bun run build
 ```
@@ -69,6 +72,10 @@ Hydration restores missing inventoried files and verifies downloaded bytes. It
 preserves any existing local edits; `assets:check` then catches unwanted changed
 identity/archive bytes. `.wrangler/asset-cache` caches content by SHA-256 and is
 never deployed. Authoring commands can hydrate just the project they need.
+
+The Git index guard runs in pre-commit and before CI hydration. It rejects
+material binaries even when force-added; `.gitignore` alone is not enforcement.
+SVG source and the required PptxGenJS `.tgz` code dependency remain tracked.
 
 The browser fixtures intercept the real CDN paths and serve local verified
 assets. The local Worker serves an isolated hard-linked material tree outside
