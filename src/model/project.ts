@@ -72,13 +72,14 @@ export interface LogoFamily {
 		height: number;
 		sha256: string;
 	};
+	/** Null when source intake confirms there was no earlier independent logo. */
 	previous: {
 		original: string;
 		sourceUrl: string;
 		width: number;
 		height: number;
 		sha256: string;
-	};
+	} | null;
 	direction: {
 		aspect: "composition" | "drawing" | "presentation";
 		title: Record<Locale, string>;

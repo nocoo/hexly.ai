@@ -28,7 +28,7 @@ describe("versioned brand identities", () => {
 		);
 		expect(kit.version).toBe("2.0.0");
 		expect(project.family?.status).toBe("review");
-		expect(project.family?.previous.sha256).toBe(project.logo.sha256);
+		expect(project.family?.previous?.sha256).toBe(project.logo.sha256);
 		expect(
 			catalogueProblems([
 				{

@@ -11,12 +11,41 @@
 - Record the source repository, source path, revision, file dimensions, and SHA-256. Record whether the source was a checked-out revision or a locally modified asset.
 - An explicitly requested entry for an uncommitted project uses a null inspected revision and a checksummed local snapshot under `docs/sources/`. Preserve each inspected file and verify its hash with the assets. Keep README links hidden until an inspected source commit exists; never invent a commit or an available README. Original application artwork can link to its preserved local asset while remote source provenance is pending.
 - When an approved family replaces a logo, keep the previous original's filename and hash stable. Store the replacement with a versioned filename, record a source revision containing those exact bytes, and add its presentation/history metadata under `family`.
+- For a project's first independent Logo, record `family.previous: null` only after checking the source intake. Show a single first-identity specimen and preserve its generation/approval history; do not invent an earlier emoji, source image, or replacement claim to fill a comparison panel. Existing redesigns keep their exact predecessor and source link.
 - Local refinements use `family.status: "review"` and their own `foreground` paths, native dimensions, and checksum. Keep `project.logo` tied to the actual source repository. All candidate artwork views and downloads must use that candidate foreground. A Refined badge describes the drawing, not adoption or deployment.
 - Derive display sizes without redrawing, recoloring, stretching, or cropping original artwork. Transparent padding and rounded-square presentation are display treatments.
 - If no independent image exists, preserve the profile emoji as the current identity. Clearly record that it is an emoji identity, not a recovered original logo.
 - Read colors from actual theme tokens where available. Otherwise sample the actual logo and record that method. Do not invent an unverified brand palette for a project with no source evidence.
 - Display palette values as selectable/copyable hex colors. Include foreground/accent, background, and evidenced supplementary colors.
 - Keep source descriptions and translations factual. Avoid adding features or deployment claims that the source does not support.
+
+## Choosing a new identity
+
+The owner confirmed these product-type defaults on 2026-09-14. Inspect the
+repository's actual purpose and primary interaction before writing an image brief.
+
+| Product type | Default subject and treatment |
+|---|---|
+| Tools: CLI utilities, scripts, libraries, agent extensions | A purpose-related physical object rendered in skeuomorphic 3D; `family.series: "material"` |
+| Web SaaS services used primarily in a browser | A recognizable animal in the fragmented animal family |
+| Native macOS applications, including native menu-bar utilities | A bird in the same animal family |
+
+A repository name or a documentation/landing website does not determine the
+series: a CLI tool stays a tool even when it has a website, while a native macOS
+utility follows the native-app default. Keep the catalogue's product category
+separate from its visual series; existing approved exceptions remain valid.
+
+Choose the particular object, animal or bird to fit the product's purpose and
+existing identity. Animal and bird studies use connected flat facets and their
+anatomy/interest-point rules. Material studies use believable physical volume,
+construction and surfaces. Each project still needs its own motif, truthful
+palette evidence, generation history, exact-byte approval and size/theme review.
+
+Explicit owner art direction overrides these defaults. They apply to new identity
+work; do not retroactively replace or recolor approved Logos. Hexly campaign
+styling remains separate from independent product UI and source identity rights.
+See [the project contract](../CLAUDE.md#brand-direction-by-product-type) and
+[the family guide](06-logo-family.md).
 
 ## Regenerating previews and profiles
 

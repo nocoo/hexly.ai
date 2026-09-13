@@ -21,6 +21,7 @@ export function LogoReview({
 }) {
 	const t = copy[locale];
 	const { family } = project;
+	const firstIdentity = family?.previous === null;
 	const themeRoles = (["primary", "background"] as const).filter(
 		(role) => project.theme[role],
 	);
@@ -58,15 +59,17 @@ export function LogoReview({
 				<section aria-label={t.artwork}>
 					<div className="comparison-toolbar">
 						<p>
-							{family?.method === "retained-original"
-								? t.retainedComparison
-								: family?.method === "reference-adaptation"
-									? t.adaptedComparison
-									: family?.series === "material"
-										? t.materialComparison
-										: family
-											? t.comparisonDescription
-											: t.artwork}
+							{firstIdentity
+								? t.firstIdentityDescription
+								: family?.method === "retained-original"
+									? t.retainedComparison
+									: family?.method === "reference-adaptation"
+										? t.adaptedComparison
+										: family?.series === "material"
+											? t.materialComparison
+											: family
+												? t.comparisonDescription
+												: t.artwork}
 						</p>
 						<fieldset className="view-switch" aria-label={t.presentation}>
 							{(["icon", "transparent", "white"] as const).map((value) => (
@@ -82,9 +85,9 @@ export function LogoReview({
 						</fieldset>
 					</div>
 					<div
-						className={`comparison-grid ${family ? "" : "comparison-single"}`}
+						className={`comparison-grid ${family?.previous ? "" : "comparison-single"}`}
 					>
-						{family && (
+						{family?.previous && (
 							<figure className="previous-artwork">
 								<div className="art-well">
 									<AssetLink
@@ -136,7 +139,13 @@ export function LogoReview({
 								</AssetLink>
 							</div>
 							<figcaption>
-								<strong>{family ? t.refinedArtwork : t.currentArtwork}</strong>
+								<strong>
+									{firstIdentity
+										? t.firstIdentity
+										: family
+											? t.refinedArtwork
+											: t.currentArtwork}
+								</strong>
 								<span>
 									{family ? `${familyStatus} · ${family.updated}` : t.preserved}
 								</span>

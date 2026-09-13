@@ -107,12 +107,13 @@ for (const project of projects) {
 			meta.height !== foreground.height
 		)
 			throw new Error(`Refined foreground changed: ${project.id}`);
-		const previous = await readFile(
-			`public${project.family.previous.original}`,
-		);
+		const previous = project.family.previous
+			? await readFile(`public${project.family.previous.original}`)
+			: null;
 		if (
+			previous &&
 			createHash("sha256").update(previous).digest("hex") !==
-			project.family.previous.sha256
+				project.family.previous?.sha256
 		)
 			throw new Error(`Previous identity changed: ${project.id}`);
 		if (project.family.method === "retained-original") {
@@ -120,6 +121,7 @@ for (const project of projects) {
 			if (
 				project.family.model ||
 				!master.equals(source) ||
+				!previous ||
 				!source.equals(previous) ||
 				!source.equals(original)
 			)
@@ -154,7 +156,11 @@ for (const project of projects) {
 					`Incorrect family icon dimensions: ${project.id}/${size}`,
 				);
 		}
-		for (const name of ["previous", "background", "transparent"]) {
+		for (const name of [
+			...(project.family.previous ? ["previous"] : []),
+			"background",
+			"transparent",
+		]) {
 			const meta = await sharp(`${root}/${name}-1024.webp`).metadata();
 			if (meta.width !== 1024 || meta.height !== 1024)
 				throw new Error(

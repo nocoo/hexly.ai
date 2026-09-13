@@ -142,10 +142,17 @@ for (const id of projects
 			}).toPass();
 			expect(transparentPixels).toBeGreaterThan(128);
 		}
-		await expect(page.locator(".previous-artwork img")).toHaveAttribute(
-			"src",
-			assetUrl(`${family.root}/previous-1024.webp`),
-		);
+		if (family.previous) {
+			await expect(page.locator(".previous-artwork img")).toHaveAttribute(
+				"src",
+				assetUrl(`${family.root}/previous-1024.webp`),
+			);
+		} else {
+			await expect(page.locator(".previous-artwork")).toHaveCount(0);
+			await expect(page.locator(".current-artwork figcaption")).toContainText(
+				"First identity",
+			);
+		}
 		for (const [name, value] of [
 			["White", "white"],
 			["Transparent", "transparent"],
@@ -233,7 +240,7 @@ for (const id of projects
 				"Original artwork retained",
 			);
 			expect(family.foreground.sha256).toBe(project.logo.sha256);
-			expect(family.previous.sha256).toBe(project.logo.sha256);
+			expect(family.previous?.sha256).toBe(project.logo.sha256);
 		}
 		const downloadEvent = page.waitForEvent("download");
 		await page

@@ -1,4 +1,4 @@
-# Animal logo family
+# Project logo family
 
 Storage follows the [R2 material contract](21-asset-storage.md): the paths below
 remain the authoring/recovery layout, with binary originals and reference boards
@@ -6,7 +6,7 @@ hydrated from the immutable inventory. Source records, prompts, attribution and
 SVG geometry stay in Git. The 2026-09-13 storage instruction supersedes earlier
 binary-in-Git requirements without changing any reviewed artwork or scope.
 
-The family supports new drawings, retained-original presentations and owner-directed physical objects. Each identity has its own background motif and complete individual review. Source adoption and publication evidence live in the project profiles and [usage SOP](07-logo-usage-sop.md). Earlier drawings, decisions, and finishing passes remain in their own archives. The newest [four-project batch](08-new-project-identities.md) is a local preview with source adoption and publication still separate.
+The family supports animal/bird drawings, retained-original presentations and physical-object identities. For new identities, tools default to skeuomorphic 3D objects, Web SaaS to animals, and native macOS applications to birds. Choose by actual product purpose and primary interaction; explicit owner direction and existing approved identities take precedence. The [product-type rules](02-identity-rules.md#choosing-a-new-identity) define this scope. Each identity has its own background motif and complete individual review. Source adoption and publication evidence live in the project profiles and [usage SOP](07-logo-usage-sop.md). Earlier drawings, decisions, and finishing passes remain in their own archives. The newest [four-project batch](08-new-project-identities.md) is a local preview with source adoption and publication still separate.
 
 ## Reading the references
 
@@ -22,6 +22,10 @@ The owner's `ref01.jpeg` and `ref02.jpeg` are archived in [the workshop](../artw
 Measured empty-background patches from `ref02.jpeg` are warm gray `#ACA59F`, ice blue `#EDF1F8`, blush `#FBCED3`, golden yellow `#FBC96A`, and peach `#FCAE8A`. These are JPEG sample averages, not recovered design tokens. Native coordinates and the sampling method are saved in [background-samples.json](../artwork/logo-family/references/background-samples.json).
 
 ## Drawing rules
+
+The following facet, anatomy and interest-point rules apply to animal and bird
+studies. Physical-object studies use believable 3D construction and materials;
+they share the generation, approval, finishing and archive requirements.
 
 - Build the animal from contiguous irregular polygons and triangles with clean shared edges. Flat colors within each plane describe volume through differences in hue and lightness.
 - Show these facets across the animal's main surfaces. Smooth sculptural anatomy with a small patch of colorful inlays is insufficient, even when the presentation has tactile depth.
