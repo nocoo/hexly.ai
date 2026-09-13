@@ -8,6 +8,7 @@ export function assetKeyForPath(path: string): string | null {
 	if (
 		!/^\/[a-zA-Z0-9/_.-]+$/.test(path) ||
 		path.split("/").includes("..") ||
+		!/\.[a-zA-Z0-9]+$/.test(path) ||
 		/\.(html|js|css)$/.test(path)
 	)
 		return null;

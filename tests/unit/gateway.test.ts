@@ -51,7 +51,10 @@ describe("the static asset gateway", () => {
 		expect(write.status).toBe(405);
 		for (const path of [
 			"/projects/snail",
+			"/brands/snail/v2.0.0/review",
+			"/brands/snail/v2.0.0/",
 			"/brands/snail/v2.0.0/review.html",
+			"/logos/family/frogie/batch/review",
 			"/brands/snail/v2.0.0/review.js",
 			"/brands/snail/v2.0.0/review.css",
 		])
