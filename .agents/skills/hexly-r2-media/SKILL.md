@@ -27,7 +27,7 @@ provenance SHAs; the published commit map connects them to the smaller history.
   brand/family/video-font directories preserve their public relative paths.
 - `docs/assets/publication.jsonl` records completed full-byte CDN checks. Existing
   project-film receipts remain in `docs/media/<project>/<video-id>/v<version>.json`.
-  `Project.media.videos` references an active film once, independent of templates.
+`Project.media.videos` references an active film once, independent of templates.
 - Existing source rights, official Logo bytes/colors and campaign distinction
   remain authoritative. R2 hosting grants no new license. Keep provenance,
   generation prompts/model/source hashes and OFL/MIT notices with their source.
@@ -103,6 +103,18 @@ revision, license and verification time in
 `docs/assets/<project>/<kind>/<asset-id>/v<version>.json` for other single files.
 Add the catalogue reference only after this receipt exists. Batch publication
 records its receipts automatically in `docs/assets/publication.jsonl`.
+
+Curated Hexly template examples use project `hexly-ai` and film IDs such as
+`standard-outro-product-launch`. Their active references live in
+`src/data/template-examples.json`, exposed as `/templates/examples.json` and
+displayed at `/templates#examples`; they are not project recordings or fields
+in the configurable component manifest. See [the example runbook](../../../docs/24-standard-outro-examples.md).
+Keep the consumer's source revision and import-time publication status truthful.
+For HTML-produced examples, capture the matching HTML composition directly for
+a full-canvas 4K PNG and a small WebP poster; do not extract a compressed MP4
+frame. Record the composition, frame, scale, source/config hashes and both image
+hashes. Upload the unchanged MP4, poster and 4K still together, then verify their
+receipts, Range/CORS and user-initiated site playback/downloads.
 
 Snail retired from the catalogue on 2026-09-13. Its inventoried historical assets
 remain available for hydration and verification; use an active project such as

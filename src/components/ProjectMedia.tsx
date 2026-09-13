@@ -9,12 +9,14 @@ function duration(seconds: number) {
 	return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
 }
 
-function VideoPlayer({
+export function VideoPlayer({
 	video,
 	locale,
+	meta,
 }: {
 	video: ProjectVideo;
 	locale: Locale;
+	meta?: string;
 }) {
 	const [started, setStarted] = useState(false);
 	const [failed, setFailed] = useState(false);
@@ -79,7 +81,8 @@ function VideoPlayer({
 			<figcaption>
 				<strong>{video.title[locale]}</strong>
 				<span className="mono">
-					{video.language.toUpperCase()} · {duration(video.durationSeconds)}
+					{meta ??
+						`${video.language.toUpperCase()} · ${duration(video.durationSeconds)}`}
 				</span>
 			</figcaption>
 			{failed && (

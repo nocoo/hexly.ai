@@ -1,0 +1,178 @@
+{
+	"schemaVersion": 1,
+	"collection": "hexly-brand-outros",
+	"version": "2.0.0",
+	"kitVersion": "2.0.0",
+	"source": {
+		"repository": "https://github.com/nocoo/workflow",
+		"revision": "6b89bb9765f9845d57d6d38f2572f1c9152ecae2",
+		"revisionStatusAtImport": "local commit; source repository not pushed or modified by Hexly",
+		"package": "video-templates/hexly-bumpers/2.0.0",
+		"upstreamRevision": "f4d36c99ca95d5959e93a7e04687a56d210abcb0",
+		"kitVersion": "2.0.0",
+		"brandAssetVersion": "1.0.0",
+		"provenance": "docs/media/hexly-ai/standard-outros/v2.0.0.json"
+	},
+	"examples": [
+		{
+			"video": {
+				"id": "standard-outro-product-launch",
+				"title": {
+					"en": "Product launch",
+					"zh": "产品发布"
+				},
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-d15a944c1e26.mp4",
+				"poster": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-poster-68ce6b6de192.webp",
+				"durationSeconds": 6,
+				"language": "zxx",
+				"version": "2.0.0",
+				"sha256": "d15a944c1e2650edfd0f414e967ec17d5f2eb3f2059dd8ba5894c652122d9762",
+				"source": "docs/media/hexly-ai/standard-outro-product-launch/v2.0.0.json"
+			},
+			"kind": "outro",
+			"template": "launch",
+			"ending": "signature",
+			"theme": "light",
+			"audio": "none",
+			"width": 1920,
+			"height": 1080,
+			"fps": 30,
+			"still": {
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-product-launch/v2.0.0/hexly-product-launch-outro-frame-100-4k-7dd99bac7ea3.png",
+				"sha256": "7dd99bac7ea36932601cababc6f60ed00d412f1dd328c06f5d738e0c38b703bd",
+				"width": 3840,
+				"height": 2160,
+				"sourceFrame": 100,
+				"source": "html-composition"
+			}
+		},
+		{
+			"video": {
+				"id": "standard-outro-dimensional-technical-story",
+				"title": {
+					"en": "Dimensional technical story",
+					"zh": "技术叙事"
+				},
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-25c08974bb9a.mp4",
+				"poster": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-poster-86a3ba67ea7e.webp",
+				"durationSeconds": 6,
+				"language": "zxx",
+				"version": "2.0.0",
+				"sha256": "25c08974bb9a54f9264c166d5fbbd465767a14e54713a0660747395723002b21",
+				"source": "docs/media/hexly-ai/standard-outro-dimensional-technical-story/v2.0.0.json"
+			},
+			"kind": "outro",
+			"template": "showcase",
+			"ending": "split",
+			"theme": "light",
+			"audio": "none",
+			"width": 1920,
+			"height": 1080,
+			"fps": 30,
+			"still": {
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-frame-100-4k-9347e62926cc.png",
+				"sha256": "9347e62926cc846d356b3fb6656ee31660493692137b416c402f0bafaac98de0",
+				"width": 3840,
+				"height": 2160,
+				"sourceFrame": 100,
+				"source": "html-composition"
+			}
+		},
+		{
+			"video": {
+				"id": "standard-outro-editorial-long-form",
+				"title": {
+					"en": "Editorial long-form",
+					"zh": "编辑长内容"
+				},
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-editorial-long-form/v2.0.0/hexly-editorial-long-form-outro-e9d5dfc30697.mp4",
+				"poster": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-editorial-long-form/v2.0.0/hexly-editorial-long-form-outro-poster-8e484b17f2f8.webp",
+				"durationSeconds": 6,
+				"language": "zxx",
+				"version": "2.0.0",
+				"sha256": "e9d5dfc30697281d901b75b4f6f3c1ebc919d6a3a5ba3d301c50283f1be3cfa3",
+				"source": "docs/media/hexly-ai/standard-outro-editorial-long-form/v2.0.0.json"
+			},
+			"kind": "outro",
+			"template": "columns",
+			"ending": "colophon",
+			"theme": "light",
+			"audio": "none",
+			"width": 1920,
+			"height": 1080,
+			"fps": 30,
+			"still": {
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-editorial-long-form/v2.0.0/hexly-editorial-long-form-outro-frame-100-4k-8378150c8608.png",
+				"sha256": "8378150c86088de2ea0e57c747a8ea879efd78f8c174abd922b24aeadcafce6d",
+				"width": 3840,
+				"height": 2160,
+				"sourceFrame": 100,
+				"source": "html-composition"
+			}
+		},
+		{
+			"video": {
+				"id": "standard-outro-data-status-update",
+				"title": {
+					"en": "Data/status update",
+					"zh": "数据与状态更新"
+				},
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-cf74ded8e9f7.mp4",
+				"poster": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-poster-c80f816a7b21.webp",
+				"durationSeconds": 6,
+				"language": "zxx",
+				"version": "2.0.0",
+				"sha256": "cf74ded8e9f718d2cf518d25d11b4de143b44981ca890e75518c6918eed430ca",
+				"source": "docs/media/hexly-ai/standard-outro-data-status-update/v2.0.0.json"
+			},
+			"kind": "outro",
+			"template": "bento",
+			"ending": "frame",
+			"theme": "light",
+			"audio": "none",
+			"width": 1920,
+			"height": 1080,
+			"fps": 30,
+			"still": {
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-data-status-update/v2.0.0/hexly-data-status-update-outro-frame-100-4k-893efbb1e7f3.png",
+				"sha256": "893efbb1e7f3b4cdb79f77d6a81413c043e8b6928f5abc914864e0f20e1cfc8b",
+				"width": 3840,
+				"height": 2160,
+				"sourceFrame": 100,
+				"source": "html-composition"
+			}
+		},
+		{
+			"video": {
+				"id": "standard-outro-minimal-brand-announcement",
+				"title": {
+					"en": "Minimal brand announcement",
+					"zh": "极简品牌公告"
+				},
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-minimal-brand-announcement/v2.0.0/hexly-minimal-brand-announcement-outro-1bddfbede10b.mp4",
+				"poster": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-minimal-brand-announcement/v2.0.0/hexly-minimal-brand-announcement-outro-poster-cda51fb0e029.webp",
+				"durationSeconds": 6,
+				"language": "zxx",
+				"version": "2.0.0",
+				"sha256": "1bddfbede10ba59c0893c94129a100ff84d074478b81b1e738d735ac53c5b4b2",
+				"source": "docs/media/hexly-ai/standard-outro-minimal-brand-announcement/v2.0.0.json"
+			},
+			"kind": "outro",
+			"template": "essential",
+			"ending": "line",
+			"theme": "light",
+			"audio": "none",
+			"width": 1920,
+			"height": 1080,
+			"fps": 30,
+			"still": {
+				"src": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-minimal-brand-announcement/v2.0.0/hexly-minimal-brand-announcement-outro-frame-100-4k-3f1a0a6aa362.png",
+				"sha256": "3f1a0a6aa362c9aaca0635d02d102a64ab8dc9fa8abc92e41a4b15dc20445348",
+				"width": 3840,
+				"height": 2160,
+				"sourceFrame": 100,
+				"source": "html-composition"
+			}
+		}
+	]
+}

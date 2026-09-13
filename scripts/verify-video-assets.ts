@@ -42,5 +42,5 @@ if (
 		"Pre-rendered video assets are no longer part of the preview. Keep renders outside public/.",
 	);
 process.stdout.write(
-	"Verified 5 openings, 5 content layouts, 5 endings, both themes and licensed assets; no pre-rendered media.\n",
+	"Verified 5 openings, 5 content layouts, 5 endings, both themes and licensed assets; no rendered media in public assets.\n",
 );

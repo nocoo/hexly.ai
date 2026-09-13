@@ -131,7 +131,7 @@ export function navigationPath(state: DirectoryState): string {
 		if (state.videoPart && state.videoPart !== "content")
 			params.set("part", state.videoPart);
 		const path = `/templates${state.video ? `/${state.video}` : ""}`;
-		return params.size ? `${path}?${params}` : path;
+		return `${path}${params.size ? `?${params}` : ""}${state.anchor ? `#${state.anchor}` : ""}`;
 	}
 	if (state.category !== "all") params.set("category", state.category);
 	if (state.query) params.set("q", state.query);

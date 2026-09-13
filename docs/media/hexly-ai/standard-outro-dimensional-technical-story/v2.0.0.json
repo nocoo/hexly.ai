@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "project": "hexly-ai",
+  "video": "standard-outro-dimensional-technical-story",
+  "version": "2.0.0",
+  "bucket": "hexlyai",
+  "origin": "https://h.no.mt",
+  "source": {
+    "repository": "https://github.com/nocoo/workflow",
+    "revision": "6b89bb9765f9845d57d6d38f2572f1c9152ecae2",
+    "revisionStatusAtImport": "local commit; source repository not pushed or modified by Hexly",
+    "package": "video-templates/hexly-bumpers/2.0.0",
+    "upstreamRevision": "f4d36c99ca95d5959e93a7e04687a56d210abcb0",
+    "kitVersion": "2.0.0",
+    "brandAssetVersion": "1.0.0",
+    "provenance": "docs/media/hexly-ai/standard-outros/v2.0.0.json",
+    "videoPath": "video-templates/hexly-bumpers/2.0.0/out/hexly-brand-outros-20260913/dimensional-technical-story/hexly-dimensional-technical-story-outro.mp4",
+    "renderRecord": "video-templates/hexly-bumpers/2.0.0/out/hexly-brand-outros-20260913/dimensional-technical-story/render.json",
+    "renderRecordSha256": "454b7a49e17ec3637d0673d837b74031885e50814d53add71bb90919cc9d95d4"
+  },
+  "preset": "dimensional-technical-story",
+  "kind": "outro",
+  "theme": "light",
+  "audio": "none",
+  "visibleText": "hexly.ai",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "durationSeconds": 6,
+  "durationInFrames": 180,
+  "composition": {
+    "template": "showcase",
+    "ending": "split"
+  },
+  "config": {
+    "schemaVersion": 2,
+    "preset": "dimensional-technical-story",
+    "theme": "light",
+    "duration": 6,
+    "motion": "full"
+  },
+  "probe": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationSeconds": 6,
+    "audioStreams": 0,
+    "faststart": true
+  },
+  "assets": {
+    "video": {
+      "key": "projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-25c08974bb9a.mp4",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-25c08974bb9a.mp4",
+      "filename": "hexly-dimensional-technical-story-outro.mp4",
+      "sha256": "25c08974bb9a54f9264c166d5fbbd465767a14e54713a0660747395723002b21",
+      "bytes": 100904,
+      "contentType": "video/mp4",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:40:19.962Z"
+    },
+    "poster": {
+      "key": "projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-poster-86a3ba67ea7e.webp",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-poster-86a3ba67ea7e.webp",
+      "filename": "hexly-dimensional-technical-story-outro-poster.webp",
+      "sha256": "86a3ba67ea7e0a4a202bcedcb651b8e73103c944a812a65252028b4de6de6995",
+      "bytes": 6442,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:40:22.113Z"
+    },
+    "still": {
+      "key": "projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-frame-100-4k-9347e62926cc.png",
+      "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-frame-100-4k-9347e62926cc.png",
+      "filename": "hexly-dimensional-technical-story-outro-frame-100-4k.png",
+      "sha256": "9347e62926cc846d356b3fb6656ee31660493692137b416c402f0bafaac98de0",
+      "bytes": 154553,
+      "contentType": "image/png",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "verifiedAt": "2026-09-13T09:40:25.302Z"
+    }
+  },
+  "posterProvenance": {
+    "method": "HTML composition screenshot",
+    "composition": "HexlyOutro",
+    "frame": 100,
+    "scale": 2,
+    "derivedFromVideo": false,
+    "cropped": false,
+    "png": {
+      "width": 3840,
+      "height": 2160
+    },
+    "webp": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "verification": {
+    "publicSha256Matches": true,
+    "verifiedAt": "2026-09-13T09:43:43.001913+00:00",
+    "http": [
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-25c08974bb9a.mp4",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-25c08974bb9a.mp4",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "video/mp4",
+            "bytes": 100904,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "video/mp4",
+            "bytes": 100904,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": {
+          "status": 206,
+          "contentRange": "bytes 0-1023/100904",
+          "sha256": "85f84b022b2296cdd1ca27a834d38762fd6b8d63739f0cb24ed0572d733ea82c",
+          "matchesOriginalBytes": true
+        }
+      },
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-poster-86a3ba67ea7e.webp",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-poster-86a3ba67ea7e.webp",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 6442,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 6442,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": null
+      },
+      {
+        "key": "projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-frame-100-4k-9347e62926cc.png",
+        "url": "https://h.no.mt/projects/hexly-ai/videos/standard-outro-dimensional-technical-story/v2.0.0/hexly-dimensional-technical-story-outro-frame-100-4k-9347e62926cc.png",
+        "head": [
+          {
+            "origin": "https://hexly.ai",
+            "status": 200,
+            "contentType": "image/png",
+            "bytes": 154553,
+            "allowOrigin": "https://hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          },
+          {
+            "origin": "https://index.dev.hexly.ai",
+            "status": 200,
+            "contentType": "image/png",
+            "bytes": 154553,
+            "allowOrigin": "https://index.dev.hexly.ai",
+            "cacheControl": "public, max-age=31536000, immutable"
+          }
+        ],
+        "range": null
+      }
+    ]
+  }
+}
