@@ -25,7 +25,7 @@ Run from a clean `main` checkout. The script rejects malformed versions, package
 6. Verify `https://hexly.ai/api/live`, the root document, compiled JavaScript/CSS, and the archived hexly.ai logo checksum.
 7. Create and push an annotated `vX.Y.Z` tag on the verified commit, then create its GitHub Release with the generated notes and workflow link.
 
-If CI or deployment fails, no tag is created. Fix the problem, commit it, and rerun the same explicit version; the changelog section is replaced rather than duplicated. If GitHub Release creation alone fails after the tag was pushed, create the missing release from that existing tag with `gh release create --verify-tag` and a notes file. Never move a published tag.
+If CI or deployment fails, no tag is created. Fix the problem, commit it, and rerun the same explicit version; the changelog section is replaced rather than duplicated. If GitHub Release creation alone fails after the tag was pushed, create the missing release from that existing tag with `gh release create --verify-tag` and a notes file. Published tags are immutable in ordinary releases. The owner's 2026-09-13 history-reduction instruction is a single recorded exception: only after R2 publication/production acceptance and a verified external backup may historical ref targets be rewritten. Preserve old/new ref maps and verify the replacement deployment; see [the execution plan](20-r2-assets-execution.md).
 
 ## CI/CD credentials and isolation
 

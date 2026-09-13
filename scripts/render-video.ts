@@ -16,6 +16,7 @@ import {
 } from "@hexly/video-kit/schema";
 import { readProjects } from "../src/data/read-projects";
 import { projectForVideo } from "../src/model/videos";
+import { hydrate, publicUrl, readInventory } from "./asset-storage";
 
 const { values } = parseArgs({
 	args: process.argv.slice(2).filter((arg) => arg !== "--"),
@@ -88,10 +89,25 @@ const directory = resolve(
 );
 const publicDir = join(directory, "public");
 mkdirSync(publicDir, { recursive: true });
+const assets = readInventory().files;
+const references = [film.project.logo, film.project.screenshot?.src];
+const needed = assets.filter(
+	(file) =>
+		file.path?.startsWith("/video-kit/") ||
+		references.some(
+			(url) => url && (url === file.path || url === publicUrl(file)),
+		),
+);
+await hydrate(needed, 4);
 cpSync("packages/video-kit/public/video-kit", join(publicDir, "video-kit"), {
 	recursive: true,
 });
-for (const path of [film.project.logo, film.project.screenshot?.src]) {
+for (const [field, url] of [
+	["logo", film.project.logo],
+	["screenshot", film.project.screenshot?.src],
+] as const) {
+	const asset = needed.find((file) => url === publicUrl(file));
+	const path = asset?.path ?? url;
 	if (!path?.startsWith("/")) continue;
 	const source = resolve("public", path.slice(1));
 	if (!source.startsWith(`${resolve("public")}/`) || !existsSync(source))
@@ -99,6 +115,8 @@ for (const path of [film.project.logo, film.project.screenshot?.src]) {
 	const target = join(publicDir, path.slice(1));
 	mkdirSync(dirname(target), { recursive: true });
 	cpSync(source, target);
+	if (field === "logo") film.project.logo = path;
+	else if (film.project.screenshot) film.project.screenshot.src = path;
 }
 const input = join(directory, "project.json");
 writeFileSync(input, `${JSON.stringify(film, null, 2)}\n`);

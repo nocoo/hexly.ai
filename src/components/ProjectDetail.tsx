@@ -11,6 +11,7 @@ import { brandSourceLabel, brandTexture } from "../model/brand";
 import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import type { Category, Locale, Project } from "../model/project";
+import { AssetLink } from "./AssetLink";
 import { BrandHero } from "./BrandKit";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
@@ -106,7 +107,7 @@ export function ProjectDetail({
 	return (
 		<main id="main-content" className="shell gallery-main project-detail-main">
 			<nav className="detail-breadcrumb" aria-label={t.browseAs}>
-				<a
+				<AssetLink
 					href="/"
 					onClick={(event) => {
 						if (
@@ -128,8 +129,8 @@ export function ProjectDetail({
 				>
 					<Icon name="left" />
 					{t.back}
-				</a>
-				<a
+				</AssetLink>
+				<AssetLink
 					href="/logos"
 					onClick={(event) => {
 						if (
@@ -151,7 +152,7 @@ export function ProjectDetail({
 				>
 					<Icon name="image" />
 					{t.gallery}
-				</a>
+				</AssetLink>
 			</nav>
 
 			{project ? (
@@ -186,7 +187,7 @@ export function ProjectDetail({
 						<div className="identity-meta">
 							<div className="identity-links">
 								{project.website && (
-									<a
+									<AssetLink
 										className="button button-secondary identity-website"
 										href={project.website}
 										target="_blank"
@@ -196,9 +197,9 @@ export function ProjectDetail({
 										<Icon name="globe" />
 										{t.visit}
 										<Icon name="arrow" />
-									</a>
+									</AssetLink>
 								)}
-								<a
+								<AssetLink
 									className="button button-secondary identity-github"
 									href={project.repository}
 									target="_blank"
@@ -208,7 +209,7 @@ export function ProjectDetail({
 									<Icon name="github" />
 									GitHub
 									<Icon name="arrow" />
-								</a>
+								</AssetLink>
 							</div>
 							<div className="identity-pagination">
 								<span className="mono">
@@ -247,12 +248,14 @@ export function ProjectDetail({
 						<div>
 							{project.media?.videos?.length ||
 							project.media?.screenshots?.length ? (
-								<a href="#media">{t.projectMedia}</a>
+								<AssetLink href="#media">{t.projectMedia}</AssetLink>
 							) : null}
-							{project.overview && <a href="#overview">{t.overview}</a>}
-							<a href="#brand">{t.brand}</a>
+							{project.overview && (
+								<AssetLink href="#overview">{t.overview}</AssetLink>
+							)}
+							<AssetLink href="#brand">{t.brand}</AssetLink>
 						</div>
-						<a
+						<AssetLink
 							className="project-template-link"
 							href={`/templates?project=${project.id}`}
 							onClick={(event) => {
@@ -274,7 +277,7 @@ export function ProjectDetail({
 						>
 							{t.useTemplate}
 							<Icon name="arrow" />
-						</a>
+						</AssetLink>
 					</nav>
 					<ProjectMedia
 						key={project.id}
@@ -389,18 +392,18 @@ export function ProjectDetail({
 						<div className="identity-footer">
 							<p>
 								{project.logo.kind === "original" ? t.preserved : t.emojiNote}
-								<a
+								<AssetLink
 									href={project.logo.sourceUrl}
 									target="_blank"
 									rel="noreferrer"
 								>
 									{t.sourceAsset}
 									<Icon name="arrow" />
-								</a>
+								</AssetLink>
 							</p>
 							<div className="identity-actions">
 								{!project.family && (
-									<a
+									<AssetLink
 										className="button button-secondary"
 										href={project.logo.original}
 										download
@@ -409,7 +412,7 @@ export function ProjectDetail({
 										{project.logo.kind === "original"
 											? t.download
 											: t.downloadEmoji}
-									</a>
+									</AssetLink>
 								)}
 								<button
 									className="button button-secondary"

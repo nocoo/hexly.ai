@@ -6,6 +6,7 @@ import type {
 import order from "../data/project-order.json";
 import identity from "../data/site-identity.json";
 import manifest from "../data/videos.json";
+import { assetUrl } from "./assets";
 import type { Locale, Project } from "./project";
 
 // The build validates this source with parseVideoManifest before emitting any assets.
@@ -31,7 +32,7 @@ export function projectForVideo(
 		logo:
 			p.id === identity.id
 				? undefined
-				: (project?.family?.foreground.display ?? p.logo.display),
+				: assetUrl(project?.family?.foreground.display ?? p.logo.display),
 		colors: [...new Set(p.colors.palette.map((item) => item.color))]
 			.filter((color) => /^#[\da-f]{6}$/i.test(color))
 			.slice(0, 6),
@@ -39,7 +40,7 @@ export function projectForVideo(
 		...(project?.media?.screenshots?.[0]
 			? {
 					screenshot: {
-						src: project.media.screenshots[0].src,
+						src: assetUrl(project.media.screenshots[0].src),
 						alt: project.media.screenshots[0].alt[locale],
 					},
 				}

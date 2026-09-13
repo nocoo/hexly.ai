@@ -4,6 +4,7 @@ import { dirname, resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
 import manifest from "./package.json" with { type: "json" };
+import { siteAssets } from "./scripts/site-assets";
 import { videoSiteAssets } from "./scripts/video-site-assets";
 import { readProjects } from "./src/data/read-projects";
 import {
@@ -179,7 +180,9 @@ function releaseMetadata(): Plugin {
 }
 
 export default defineConfig({
+	publicDir: false,
 	plugins: [
+		siteAssets(),
 		react(),
 		canonicalRoutes(),
 		catalogueAssets(),

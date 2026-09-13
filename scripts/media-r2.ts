@@ -6,11 +6,11 @@ import { tmpdir } from "node:os";
 import { basename, extname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import storage from "../src/data/media-storage.json";
+import storage from "../src/data/media-storage.json" with { type: "json" };
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const cacheControl = "public, max-age=31536000, immutable";
-const types: Record<string, string> = {
+export const cacheControl = "public, max-age=31536000, immutable";
+export const mediaTypes: Record<string, string> = {
 	".mp4": "video/mp4",
 	".webm": "video/webm",
 	".png": "image/png",
@@ -18,25 +18,75 @@ const types: Record<string, string> = {
 	".jpeg": "image/jpeg",
 	".webp": "image/webp",
 	".vtt": "text/vtt; charset=utf-8",
+	".svg": "image/svg+xml",
+	".ico": "image/x-icon",
+	".woff2": "font/woff2",
+	".woff": "font/woff",
+	".ttf": "font/ttf",
+	".otf": "font/otf",
+	".gif": "image/gif",
+	".avif": "image/avif",
+	".mp3": "audio/mpeg",
+	".wav": "audio/wav",
+	".pdf": "application/pdf",
+	".pptx":
+		"application/vnd.openxmlformats-officedocument.presentationml.presentation",
+	".zip": "application/zip",
+	".json": "application/json; charset=utf-8",
+	".txt": "text/plain; charset=utf-8",
+	".md": "text/plain; charset=utf-8",
+	".html": "text/html; charset=utf-8",
+	".js": "text/javascript; charset=utf-8",
+	".css": "text/css; charset=utf-8",
 };
 
 export async function planMedia(input: {
 	project: string;
-	video: string;
+	video?: string;
+	kind?: string;
+	asset?: string;
 	version: string;
 	file: string;
 }) {
 	const { project, video, version, file } = input;
-	if (![project, video].every((id) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)))
-		throw new Error("Use catalogue and video IDs made of lowercase slugs.");
-	if (!existsSync(join(root, "src/data/projects", `${project}.json`)))
+	const kind = video ? "videos" : input.kind;
+	const assetId = video ?? input.asset;
+	if (
+		!assetId ||
+		![project, assetId].every((id) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))
+	)
+		throw new Error("Use catalogue and asset IDs made of lowercase slugs.");
+	if (
+		!kind ||
+		![
+			"videos",
+			"identity",
+			"heroes",
+			"textures",
+			"screenshots",
+			"social",
+			"fonts",
+			"audio",
+			"documents",
+		].includes(kind) ||
+		(video && (input.kind || input.asset))
+	)
+		throw new Error(
+			"Use --video, or --kind and --asset, with a supported material kind.",
+		);
+	if (
+		project !== "hexly-ai" &&
+		!existsSync(join(root, "src/data/projects", `${project}.json`))
+	)
 		throw new Error(`Unknown catalogue project: ${project}`);
 	if (!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(version))
-		throw new Error("Use the video's independent X.Y.Z version, without v.");
+		throw new Error("Use the asset's independent X.Y.Z version, without v.");
 	const extension = extname(file).toLowerCase();
-	const contentType = types[extension];
+	const contentType = mediaTypes[extension];
 	if (!contentType)
-		throw new Error("Use MP4, WebM, PNG, JPEG, WebP or WebVTT.");
+		throw new Error(
+			"Unsupported material format; see mediaTypes in scripts/media-r2.ts.",
+		);
 	const source = await stat(file);
 	if (!source.isFile() || source.size === 0)
 		throw new Error("Upload a non-empty media file.");
@@ -47,8 +97,12 @@ export async function planMedia(input: {
 		.toLowerCase()
 		.replace(/[^a-z0-9]+/g, "-")
 		.replace(/^-|-$/g, "");
-	const key = `projects/${project}/videos/${video}/v${version}/${stem || "asset"}-${sha256.slice(0, 12)}${extension}`;
+	const key = `projects/${project}/${kind}/${assetId}/v${version}/${stem || "asset"}-${sha256.slice(0, 12)}${extension}`;
 	return {
+		project,
+		kind,
+		asset: assetId,
+		version,
 		bucket: storage.bucket,
 		key,
 		url: `${storage.origin}/${key}`,
@@ -130,17 +184,19 @@ if (import.meta.main) {
 		options: {
 			project: { type: "string" },
 			video: { type: "string" },
+			kind: { type: "string" },
+			asset: { type: "string" },
 			version: { type: "string" },
 			file: { type: "string" },
 			upload: { type: "boolean", default: false },
 		},
 	});
-	const { project, video, version, file } = values;
-	if (!project || !video || !version || !file)
+	const { project, video, kind, asset, version, file } = values;
+	if (!project || !(video || (kind && asset)) || !version || !file)
 		throw new Error(
-			"Required: --project <id> --video <id> --version X.Y.Z --file <path>. Add --upload to publish.",
+			"Required: --project <id> (--video <id> | --kind <kind> --asset <id>) --version X.Y.Z --file <path>. Add --upload to publish.",
 		);
-	const input = { project, video, version, file: resolve(file) };
+	const input = { project, video, kind, asset, version, file: resolve(file) };
 	if (!values.upload) {
 		console.info(JSON.stringify(await planMedia(input), null, 2));
 	} else {

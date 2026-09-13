@@ -1,4 +1,4 @@
-import { createProjectFilm } from "@hexly/video-kit";
+import { createProjectFilm, HexlyFontOrigin } from "@hexly/video-kit";
 import { FilmStill } from "@hexly/video-kit/player";
 import type {
 	CompositionOptions,
@@ -6,6 +6,7 @@ import type {
 	VideoProject,
 } from "@hexly/video-kit/schema";
 import { useMemo } from "react";
+import storage from "../data/media-storage.json";
 import type { Locale } from "../model/project";
 
 export default function VideoCardPreview({
@@ -37,15 +38,17 @@ export default function VideoCardPreview({
 		[project, entry, locale, options],
 	);
 	return (
-		<FilmStill
-			config={film}
-			scene={
-				entry.kind === "opening"
-					? "intro"
-					: entry.kind === "ending"
-						? "outro"
-						: "content"
-			}
-		/>
+		<HexlyFontOrigin.Provider value={storage.origin}>
+			<FilmStill
+				config={film}
+				scene={
+					entry.kind === "opening"
+						? "intro"
+						: entry.kind === "ending"
+							? "outro"
+							: "content"
+				}
+			/>
+		</HexlyFontOrigin.Provider>
 	);
 }

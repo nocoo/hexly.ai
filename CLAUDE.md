@@ -12,7 +12,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Human docs | [README.md](README.md), [docs/README.md](docs/README.md) |
 | Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
 | Project media / routes | Optional `Project.media` in the same catalogue; [routes and media boundary](docs/17-project-media.md) |
-| R2 media operations | Bucket/origin in `src/data/media-storage.json`; [project skill](.agents/skills/hexly-r2-media/SKILL.md), `scripts/media-r2.ts`, and versioned receipts in `docs/media/` |
+| R2 material operations | Bucket/origin in `src/data/media-storage.json`; [project skill](.agents/skills/hexly-r2-media/SKILL.md), [storage contract](docs/21-asset-storage.md), `docs/assets/inventory.json` and publication receipts; existing film receipts in `docs/media/` |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Complete brand archives | [inventory and scope](docs/brand-archives/README.md), [maintenance guide](docs/19-family-brand-archives.md), `public/brands/schema-v2.json` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
@@ -38,7 +38,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs in the brand archive.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
 - Every project needs a stable slug, title, bilingual descriptions, emoji, verified links, logo provenance, and evidenced foreground/background colors. Follow the identity rules; do not infer websites or invent palettes.
-- Keep existing high-resolution logos, screenshots, source artwork, paths and SHA-256 provenance in Git and Static Assets; do not migrate or rewrite that history for the new media structure. Original logos remain in `public/logos/originals/`, emoji identities in `public/logos/emoji/`. Derivatives must preserve artwork proportions and colors.
+- All independently served material uses R2 `hexlyai` / `https://h.no.mt`. Preserve immutable Logo/brand bytes, paths, hashes, licenses and provenance; source records/SVG geometry remain in Git, binary working files hydrate from the inventory. HTML/code, APIs and discovery documents stay on the Worker. Use `assetUrl` for transport and `AssetLink` for cross-origin downloads. Production builds exclude media and enforce 20 MiB. See [migration and authorized history reduction](docs/20-r2-assets-execution.md); the 2026-09-13 owner instruction supersedes the earlier Git/Static Assets retention rule.
 - Original project identity shapes, proportions, colors and file bytes are authoritative. Hexly paper/ink/terracotta, fonts, red points and composition apply only to Hexly project archives and Hexly-authored campaigns, videos, decks and social graphics. Independent products keep their own complete palettes, themes and UI. A campaign Hero or family study never silently replaces a product Logo.
 - For an authorized project rename, update its catalogue ID and route while preserving the numbered profile. Locate historical artwork through `family.root`; preserve archive paths, export names, original bytes and checksums. Redirect former page URLs with Static Assets `_redirects`.
 - Synchronize catalogue changes with the GitHub profile using the workflow skill `zhengli-update-github-readme` (`../workflow/agents/skills/zhengli-update-github-readme/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
@@ -64,7 +64,7 @@ src/model/         filtering, preferences, navigation, status, types
 src/App.tsx        browser state and view orchestration
 src/components/    accessible React views
 src/styles/        design tokens and view styles
-public/logos/      original backups, emoji identities, WebP derivatives
+public/logos/      hydrated original/emoji/derived materials; source records remain tracked
 packages/video-kit/ 5/5/5 composable designs, shared brand/motion, v2 schema, player, renderer
 worker/            gateway, scheduled probes, D1 status queries
 migrations/        D1 schema
@@ -88,7 +88,9 @@ bun run test:coverage
 bun run test:http
 bun run test:browser
 bun run check:security
+bun run assets:hydrate
 bun run assets:build && bun run docs:profiles && bun run assets:check
+bun run assets:r2 -- plan
 bun run release -- --dry-run
 bun run video:dev
 bun run video:studio
@@ -137,7 +139,7 @@ Status browser tests pin the browser clock to the fixed SQLite demo's latest sam
 ## Operations / Release
 
 - Entry: `bun run release` or `bun run release -- patch|minor|major|X.Y.Z` from clean `main`, with GitHub write access. Dry run is read-only. Version policy and recovery: [docs/05-release.md](docs/05-release.md).
-- The release script updates version/changelog, pushes `main`, waits for that commit's successful quality and Deploy jobs, verifies production, then creates an annotated tag and GitHub Release. Published tags are immutable.
+- The release script updates version/changelog, pushes `main`, waits for that commit's successful quality and Deploy jobs, verifies production, then creates an annotated tag and GitHub Release. Published tags are immutable except for the explicitly owner-authorized 2026-09-13 history reduction, after production acceptance and a verified external backup; preserve its old/new ref maps and re-verify the rewritten deployment.
 - `ci.yml` (`CI`) runs all gates. Its successful trusted `main` run triggers `release.yml` (`Release`), which applies D1 migrations and deploys that source SHA. The release helper matches `Deploy CI <source-run-id>` and requires `Deploy / Deploy Worker` success. Use this path for routine publication; manual `bun run deploy` follows the same migration order. Actions secrets: `CLOUDFLARE_API_TOKEN` (already has D1 access), `CLOUDFLARE_ACCOUNT_ID`.
 - Production: `https://hexly.ai` and `https://status.hexly.ai`; preview: `https://hexly-ai.nocoo.workers.dev` (`noindex`). `bun run verify:production` checks version/revision, document, status page and live D1 feed, compiled assets, and original logo. Keep routing and rollback details in the runbook.
 
@@ -158,8 +160,10 @@ project documentation, public website, and status coverage agree.
    retaining established emoji and section/order conventions. Record the profile
    revision before citing it in catalogue provenance.
 4. Add the project JSON and index entry, archive its actual artwork and palette
-   evidence, and run `assets:build`, `docs:profiles`, and `assets:check`. Use the
-   logo skill when identity creation or promotion is in scope.
+   evidence, and run `assets:build`, `docs:profiles`, and `assets:check`. Read the
+   project R2 skill: inventory, publish and verify the new versioned materials
+   before release. Keep binary working files out of Git/deploy and save receipts.
+   Use the logo skill when identity creation or promotion is in scope.
 5. Validate and publish the source and this site within the user's authorization.
    A health-only correction uses Z+1. After the next Cron run, verify the exact
    endpoint and current result at `status.hexly.ai`; disclose real failures.

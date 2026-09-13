@@ -35,6 +35,37 @@ afterEach(() => {
 afterAll(() => rm(directory, { recursive: true, force: true }));
 
 describe("versioned R2 media", () => {
+	it("separates new project material kinds and independent versions", async () => {
+		const image = join(directory, "Library Cover.webp");
+		await writeFile(image, bytes);
+		const material = await planMedia({
+			project: "snail",
+			kind: "screenshots",
+			asset: "library",
+			version: "1.2.0",
+			file: image,
+		});
+		expect(material.key).toMatch(
+			/^projects\/snail\/screenshots\/library\/v1\.2\.0\/library-cover-[a-f0-9]{12}\.webp$/,
+		);
+		expect(material).toMatchObject({
+			kind: "screenshots",
+			version: "1.2.0",
+			contentType: "image/webp",
+		});
+		await expect(
+			planMedia({ ...input, kind: "screenshots" }),
+		).rejects.toThrow();
+		await expect(
+			planMedia({
+				project: "snail",
+				kind: "../../bad",
+				asset: "library",
+				version: "1.0.0",
+				file: image,
+			}),
+		).rejects.toThrow();
+	});
 	it("produces stable URLs from bytes and separates project, film and version", async () => {
 		const sha256 = createHash("sha256").update(bytes).digest("hex");
 		expect(asset).toMatchObject({

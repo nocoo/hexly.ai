@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { assetUrl } from "../../src/model/assets";
 import worker from "../../worker/gateway";
 
 const assets = {
@@ -16,6 +17,49 @@ const env: Env = {
 };
 
 describe("the static asset gateway", () => {
+	it("redirects legacy materials directly to R2 in production while keeping archived HTML/code and page routes", async () => {
+		const live = Object.assign(Object.create(env), {
+			STATUS_MODE: "live",
+		}) as Env;
+		for (const host of ["hexly.ai", "www.hexly.ai", "status.hexly.ai"]) {
+			for (const path of [
+				"/logos/originals/pew.png",
+				"/brands/snail/v2.0.0/manifest.json",
+				"/video-kit/1.0.0/hexly/space-grotesk.woff2",
+			]) {
+				for (const method of ["GET", "HEAD"]) {
+					const response = await worker.fetch(
+						new Request(`https://${host}${path}?ref=old`, { method }),
+						live,
+					);
+					expect(response.status).toBe(302);
+					expect(response.headers.get("Location")).toBe(
+						assetUrl(`${path}?ref=old`),
+					);
+					expect(response.headers.get("Cache-Control")).toBe(
+						"public, max-age=300",
+					);
+				}
+			}
+		}
+		const write = await worker.fetch(
+			new Request("https://hexly.ai/brands/snail/v2.0.0/mark-light.png", {
+				method: "POST",
+			}),
+			live,
+		);
+		expect(write.status).toBe(405);
+		for (const path of [
+			"/projects/snail",
+			"/brands/snail/v2.0.0/review.html",
+			"/brands/snail/v2.0.0/review.js",
+			"/brands/snail/v2.0.0/review.css",
+		])
+			expect(
+				(await worker.fetch(new Request(`https://hexly.ai${path}`), live))
+					.status,
+			).toBe(200);
+	});
 	it("redirects www to the apex and keeps path and query", async () => {
 		const response = await worker.fetch(
 			new Request("https://www.hexly.ai/projects/frogie?q=1"),

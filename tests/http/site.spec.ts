@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 import sharp from "sharp";
 import manifest from "../../package.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
+import { assetUrl } from "../../src/model/assets";
 
 const projects = readProjects();
 
@@ -49,10 +50,12 @@ test("serves compiled code, styles, and self-hosted fonts with cache headers", a
 		expect(response.headers()["cache-control"]).toContain("immutable");
 		if (extension === "css") {
 			const css = await response.text();
-			const fonts = [...new Set(css.match(/\/assets\/[^)" ]+\.woff2/g))];
+			const fonts = [
+				...new Set(css.match(/https:\/\/h\.no\.mt\/[^)" ]+\.woff2/g)),
+			];
 			expect(fonts).toHaveLength(3);
 			for (const font of fonts) {
-				const fontResponse = await request.get(font);
+				const fontResponse = await request.get(new URL(font).pathname);
 				expect(fontResponse.status()).toBe(200);
 				expect(fontResponse.headers()["content-type"]).toContain("font/woff2");
 			}
@@ -181,7 +184,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 		'<link rel="canonical" href="https://hexly.ai/" />',
 	);
 	expect(page.match(/<h1>/g)?.length).toBe(1);
-	expect(page).toContain("https://hexly.ai/og/frogie.jpg");
+	expect(page).toContain(assetUrl("/og/frogie.jpg"));
 	const share = await request.get("/api/share/pew.json");
 	expect(share.status()).toBe(200);
 	expect(share.headers()["access-control-allow-origin"]).toBe("*");
@@ -191,7 +194,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 		id: "pew",
 		title: "Pew — hexly.ai",
 		canonical: "https://hexly.ai/projects/pew",
-		image: { url: "https://hexly.ai/og/pew.jpg", width: 1200, height: 630 },
+		image: { url: assetUrl("/og/pew.jpg"), width: 1200, height: 630 },
 	});
 	const index = await (await request.get("/api/share.json")).json();
 	expect(index.site).toBe("https://hexly.ai/api/share/hexly-ai.json");

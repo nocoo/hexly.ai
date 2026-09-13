@@ -1,3 +1,4 @@
+import { assetUrl } from "./assets";
 import type { Locale, Project, Theme } from "./project";
 
 type Kit = NonNullable<Project["brandKit"]>;
@@ -24,8 +25,8 @@ export function brandAsset(
 export function brandTexture(kit: Project["brandKit"]) {
 	return kit && rasterBrand(kit)
 		? {
-				"--brand-texture-light": `url("${kit.root}/texture-light.svg")`,
-				"--brand-texture-dark": `url("${kit.root}/texture-dark.svg")`,
+				"--brand-texture-light": `url("${assetUrl(`${kit.root}/texture-light.svg`)}")`,
+				"--brand-texture-dark": `url("${assetUrl(`${kit.root}/texture-dark.svg`)}")`,
 			}
 		: undefined;
 }

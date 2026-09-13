@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { assetUrl } from "../model/assets";
 import type { Project } from "../model/project";
 
 export function Logo({
@@ -44,7 +45,7 @@ export function Logo({
 			style={style}
 		>
 			<img
-				src={kit ? `${kit.root}/${kitAsset}-light.svg` : src}
+				src={assetUrl(kit ? `${kit.root}/${kitAsset}-light.svg` : src)}
 				className={kit ? "logo-theme-light" : undefined}
 				width={size}
 				height={size}
@@ -56,7 +57,7 @@ export function Logo({
 			{kit && (
 				<img
 					className="logo-theme-dark"
-					src={`${kit.root}/${kitAsset}-dark.svg`}
+					src={assetUrl(`${kit.root}/${kitAsset}-dark.svg`)}
 					width={size}
 					height={size}
 					alt=""

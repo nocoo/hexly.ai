@@ -27,6 +27,8 @@
 
 55 个正式项目均有完整品牌包。除保留的 Snail 外，其余 54 个档案整理已有动物、实物或原作，补齐明暗 Hero、手机独立构图、各自的可平铺底纹、转曲字标、图标、favicon 和可校验下载。项目原标的形状、原色与字节不变；Hexly 的页面与宣发色系只用于本站和 Hexly 制作的物料，各产品站点继续保有自己的色板和主题。完整清单、来源差异及维护方式见[品牌档案指南](docs/19-family-brand-archives.md)。
 
+素材由已有 R2 `hexlyai` 经 `https://h.no.mt` 提供，站点 Worker 只部署页面、代码与元数据。品牌原件与许可按哈希保留；本地开发可运行 `bun run assets:hydrate` 恢复素材，维护方式见[资源存储指南](docs/21-asset-storage.md)。
+
 ## 功能
 
 - **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
@@ -54,6 +56,7 @@
 | `bun run test:browser` | 运行桌面与移动端浏览器测试 |
 | `bun run assets:build` | 生成 32 / 64 / 160 / 1024 px WebP 预览 |
 | `bun run assets:check` | 校验原图哈希和全部预览图 |
+| `bun run assets:hydrate` | 从 R2 按哈希恢复缺失的本地素材，不覆盖已有改动 |
 | `bun run docs:profiles` | 从项目数据生成独立档案 |
 | `bun run video:dev` / `bun run video:studio` | 独立 Vite 预览 / Remotion Studio |
 | `bun run video:render -- --project pew --template showcase --theme dark --opening stack --ending split --mode deck` | 按当前组合导出真实 PPTX/PDF；`--mode video` 才会生成视频 |
@@ -91,6 +94,7 @@ hexly.ai/
 | [React 19](https://react.dev/) · [TypeScript 7](https://www.typescriptlang.org/) | 界面与类型约束 |
 | [Vite 8](https://vite.dev/) · [Bun 1.4](https://bun.sh/) | 开发、构建与脚本 |
 | [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/) | 静态资源托管与自定义域名 |
+| [Cloudflare R2](https://developers.cloudflare.com/r2/) | 图像、字体、品牌包与成片的 CDN 存储 |
 | [Cloudflare D1](https://developers.cloudflare.com/d1/) · [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/) | 状态记录、每 5 分钟探测和 7 天自动清理 |
 | [Sharp](https://sharp.pixelplumbing.com/) | 图像尺寸转换与原图校验 |
 | [Vitest](https://vitest.dev/) · [Playwright](https://playwright.dev/) | 单元、HTTP 与浏览器测试 |
@@ -104,6 +108,7 @@ hexly.ai/
 git clone https://github.com/nocoo/hexly.ai.git
 cd hexly.ai
 bun install --frozen-lockfile
+bun run assets:hydrate
 bun run dev
 ```
 
@@ -115,9 +120,9 @@ bun run dev
 
 Video Kit 使用站点的真实 Logo、字体与明暗色板。封面、正文、片尾独立组合，正文包含标题、章节、内容与 CTA，片尾沿用官方 Logo reveal。卡片与播放预览共用客户端画布，旧的示例成片和下载资源已移除；最终渲染在本地运行。PPTX/PDF 页面保留渲染图像，PPTX 附有可编辑的演讲者备注。完整命令、参数 schema、组件 API、许可与下游接入边界见 [Video Kit 文档](packages/video-kit/README.md)。
 
-项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建为项目、图鉴、模板和状态生成 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap、JSON-LD 和 [`/api/share`](https://hexly.ai/api/share.json) 元数据；项目 canonical 为 `/projects/<id>`。旧 `/logos/<id>`、`/<id>` 与 `/videos/*` 链接有兼容跳转。分享接入见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建直接使用仓库内的资源，不依赖相邻项目或运行时 GitHub 请求。
+项目资料按项目拆在 [`src/data/projects/`](src/data/projects/)，页面启动时加载 `/data/projects.json`。构建为项目、图鉴、模板和状态生成 HTML 快照、[`/llms.txt`](https://hexly.ai/llms.txt)、sitemap、JSON-LD 和 [`/api/share`](https://hexly.ai/api/share.json) 元数据；项目 canonical 为 `/projects/<id>`。旧 `/logos/<id>`、`/<id>` 与 `/videos/*` 链接有兼容跳转。分享接入见 [`docs/10-social-share.md`](docs/10-social-share.md)。更新 GitHub profile 时，同时更新本站的数据、Logo 备份和色板，再生成预览与档案。普通构建只需代码和元数据；本地素材按 inventory 恢复，不依赖相邻项目或运行时 GitHub 请求。
 
-已有高清 Logo、截图和历史素材继续保留在 Git，由 Workers Static Assets 提供。新增成片、封面与字幕存放在 R2 `hexlyai`，通过 `https://h.no.mt` 访问，按项目、视频、版本和文件校验值区分路径；同一项目 JSON 的可选 `media` 字段提供详情页入口。上传与 URL 获取使用 `bun run media:r2`，默认只生成计划，明确加 `--upload` 才上传并校验 CDN 文件。维护方式见[项目 R2 skill](.agents/skills/hexly-r2-media/SKILL.md)，字段与路由见[项目媒体](docs/17-project-media.md)。
+高清 Logo、截图、历史素材、字体和成片均由 R2 `hexlyai` 经 `https://h.no.mt` 提供。已发布品牌包保留原始路径与字节，新素材按项目、类型、版本和哈希区分；项目 JSON 的可选 `media` 字段提供成片入口。批量 inventory、上传、校验和恢复使用 `bun run assets:r2`；单项上传使用 `bun run media:r2`，默认只生成计划，明确加 `--upload` 才发布。Git 保留代码、SVG 源文件、元数据、许可与校验记录；大二进制有 R2 副本及外部历史备份。维护方式见[项目 R2 skill](.agents/skills/hexly-r2-media/SKILL.md)，字段与路由见[项目媒体](docs/17-project-media.md)。
 
 ## 测试
 

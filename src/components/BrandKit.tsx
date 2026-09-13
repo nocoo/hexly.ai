@@ -1,3 +1,4 @@
+import { assetUrl } from "../model/assets";
 import {
 	brandAsset,
 	brandFormat,
@@ -5,6 +6,7 @@ import {
 	rasterBrand,
 } from "../model/brand";
 import type { Locale, Project } from "../model/project";
+import { AssetLink } from "./AssetLink";
 import "../styles/brand-kits.css";
 
 export function BrandHero({
@@ -27,12 +29,16 @@ export function BrandHero({
 				>
 					<source
 						media="(max-width: 640px)"
-						srcSet={`${kit.root}/hero-square${theme === "dark" ? "-dark" : ""}.webp`}
+						srcSet={assetUrl(
+							`${kit.root}/hero-square${theme === "dark" ? "-dark" : ""}.webp`,
+						)}
 						width={1024}
 						height={1024}
 					/>
 					<img
-						src={`${kit.root}/hero${theme === "dark" ? "-dark" : ""}.webp`}
+						src={assetUrl(
+							`${kit.root}/hero${theme === "dark" ? "-dark" : ""}.webp`,
+						)}
 						width={kit.hero?.width}
 						height={kit.hero?.height}
 						alt={kit.hero?.alt[locale]}
@@ -44,14 +50,14 @@ export function BrandHero({
 			<figcaption>
 				<span>{kit.hero.caption[locale]}</span>
 				{themes.map((theme) => (
-					<a
+					<AssetLink
 						key={theme}
 						className={kit.hero?.themed ? `logo-theme-${theme}` : undefined}
 						href={`${kit.root}/hero${theme === "dark" ? "-dark" : ""}.png`}
 						download
 					>
 						{locale === "zh" ? "下载图像" : "Download artwork"} ↗
-					</a>
+					</AssetLink>
 				))}
 			</figcaption>
 		</figure>
@@ -89,7 +95,7 @@ export function BrandKit({
 			{collected && (
 				<p className="brand-official-source">
 					<img
-						src={project.logo.original}
+						src={assetUrl(project.logo.original)}
 						alt=""
 						width={32}
 						height={32}
@@ -98,9 +104,9 @@ export function BrandKit({
 					<span>
 						{zh ? "项目身份 · 原始文件" : "Project identity · Original bytes"}
 					</span>
-					<a href={project.logo.original} download>
+					<AssetLink href={project.logo.original} download>
 						{zh ? "下载原始 Logo" : "Download original Logo"} ↓
-					</a>
+					</AssetLink>
 				</p>
 			)}
 			<div className="brand-kit-specimens">
@@ -115,14 +121,14 @@ export function BrandKit({
 									? "02 / 夜间"
 									: "02 / After hours"}
 						</span>
-						<a href={brandAsset(kit, "lockup", theme)} download>
+						<AssetLink href={brandAsset(kit, "lockup", theme)} download>
 							<img
-								src={brandAsset(kit, "lockup", theme)}
+								src={assetUrl(brandAsset(kit, "lockup", theme))}
 								width={kit.lockup?.width ?? 454}
 								height={kit.lockup?.height ?? 192}
 								alt={`${project.title} — ${theme === "light" ? (zh ? "浅色字标组合" : "light logo and wordmark") : zh ? "深色字标组合" : "dark logo and wordmark"}`}
 							/>
-						</a>
+						</AssetLink>
 						<figcaption>
 							Space Grotesk 600 · {theme === "light" ? "#30372e" : "#e6e9dc"}
 							{!raster && ` / ${theme === "light" ? "#bf5c3c" : "#e79670"}`}
@@ -144,7 +150,7 @@ export function BrandKit({
 							<figure key={theme} className={`brand-kit-${theme}`}>
 								<div
 									style={{
-										backgroundImage: `url("${kit.root}/texture-${theme}.svg")`,
+										backgroundImage: `url("${assetUrl(`${kit.root}/texture-${theme}.svg`)}")`,
 									}}
 								/>
 								<figcaption>
@@ -157,9 +163,9 @@ export function BrandKit({
 												? "夜纸"
 												: "Night"}
 									</span>
-									<a href={`${kit.root}/texture-${theme}.svg`} download>
+									<AssetLink href={`${kit.root}/texture-${theme}.svg`} download>
 										SVG ↓
-									</a>
+									</AssetLink>
 								</figcaption>
 							</figure>
 						))}
@@ -203,20 +209,20 @@ export function BrandKit({
 							<span>
 								{name} <small>{brandFormat(kit, file).toUpperCase()}</small>
 							</span>
-							<a
+							<AssetLink
 								href={brandAsset(kit, file, "light")}
 								download
 								aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "浅色" : "light"}`}
 							>
 								{zh ? "浅色" : "Light"} ↓
-							</a>
-							<a
+							</AssetLink>
+							<AssetLink
 								href={brandAsset(kit, file, "dark")}
 								download
 								aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "深色" : "dark"}`}
 							>
 								{zh ? "深色" : "Dark"} ↓
-							</a>
+							</AssetLink>
 						</div>
 					))}
 				</div>
@@ -239,26 +245,26 @@ export function BrandKit({
 							zh ? "全部文件与 SHA-256" : "All files & SHA-256",
 						],
 					].map(([file, name]) => (
-						<a key={file} href={`${kit.root}/${file}`} download>
+						<AssetLink key={file} href={`${kit.root}/${file}`} download>
 							{name}
 							<span aria-hidden="true">↓</span>
-						</a>
+						</AssetLink>
 					))}
 				</div>
 				<p className="brand-kit-provenance">
-					<a href={`${kit.root}/guide.md`}>
+					<AssetLink href={`${kit.root}/guide.md`}>
 						{zh ? "完整规范与集成方式" : "Usage & integration"} ↗
-					</a>
-					<a href={`${kit.root}/review.html`}>
+					</AssetLink>
+					<AssetLink href={`${kit.root}/review.html`}>
 						{zh ? "独立品牌样张" : "Standalone specimens"} ↗
-					</a>
-					<a href={`${kit.root}/license.txt`}>
+					</AssetLink>
+					<AssetLink href={`${kit.root}/license.txt`}>
 						{zh ? "许可与来源" : "License & source"}
-					</a>{" "}
+					</AssetLink>{" "}
 					·{" "}
-					<a href={`${kit.root}/space-grotesk-ofl.txt`}>
+					<AssetLink href={`${kit.root}/space-grotesk-ofl.txt`}>
 						Space Grotesk / SIL OFL 1.1
-					</a>
+					</AssetLink>
 				</p>
 				<p className="review-caption">
 					{collected
@@ -275,11 +281,11 @@ export function BrandKit({
 				</p>
 				{kit.previousVersion && (
 					<p className="review-caption">
-						<a
+						<AssetLink
 							href={`/brands/${project.id}/v${kit.previousVersion}/review.html`}
 						>
 							{zh ? "历史版本" : "Previous identity"} · v{kit.previousVersion} ↗
-						</a>
+						</AssetLink>
 						{" · "}
 						{zh
 							? "原始资产与来源记录完整保留。"

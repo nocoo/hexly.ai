@@ -3,23 +3,21 @@
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: swap;
-	src: url("@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2")
-		format("woff2");
+	src: url("/fonts/space-grotesk.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Geist Mono Variable";
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: swap;
-	src: url("@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2")
-		format("woff2");
+	src: url("/fonts/geist-mono.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Journey CJK";
 	font-style: normal;
 	font-weight: 400 700;
 	font-display: swap;
-	src: url("../fonts/journey-cjk.woff2") format("woff2");
+	src: url("/fonts/journey-cjk.woff2") format("woff2");
 	unicode-range: U+3000-9FFF, U+FF00-FFEF;
 }
 

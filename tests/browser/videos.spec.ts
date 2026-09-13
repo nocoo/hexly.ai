@@ -1,5 +1,4 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
 import sharp from "sharp";
 import {
 	endingIds,
@@ -10,6 +9,7 @@ import workflow from "../../src/data/projects/microsoft-teams-send-as-workflow.j
 	type: "json",
 };
 import { videoCopy } from "../../src/data/video-copy";
+import { expect, test } from "./fixtures";
 
 test("the collection shows the chosen project in 5 openings, 5 layouts and 5 endings, in both themes", async ({
 	page,

@@ -1,9 +1,10 @@
 import { createHash } from "node:crypto";
 import AxeBuilder from "@axe-core/playwright";
-import { expect, type Page, test } from "@playwright/test";
+import type { Page } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
 import type { Project } from "../../src/model/project";
 import { screenshotFixture, videoFixture } from "../fixtures/project-media";
+import { expect, test } from "./fixtures";
 
 // Exercise media locally; real catalogue recordings must not become CI downloads.
 const projects = readProjects().map((project) => ({

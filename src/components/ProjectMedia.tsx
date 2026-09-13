@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { copy } from "../data/copy";
+import { assetUrl } from "../model/assets";
 import type { Locale, Project, ProjectVideo } from "../model/project";
+import { AssetLink } from "./AssetLink";
 import { Icon } from "./Icon";
 
 function duration(seconds: number) {
@@ -33,8 +35,8 @@ function VideoPlayer({
 						playsInline
 						preload="metadata"
 						crossOrigin="anonymous"
-						poster={video.poster}
-						src={video.src}
+						poster={assetUrl(video.poster)}
+						src={assetUrl(video.src)}
 						aria-label={video.title[locale]}
 						onError={() => setFailed(true)}
 					>
@@ -42,7 +44,7 @@ function VideoPlayer({
 							<track
 								key={track.src}
 								kind="captions"
-								src={track.src}
+								src={assetUrl(track.src)}
 								srcLang={track.language}
 								label={track.label}
 								default={track === defaultCaption}
@@ -58,7 +60,7 @@ function VideoPlayer({
 					>
 						<img
 							crossOrigin="anonymous"
-							src={video.poster}
+							src={assetUrl(video.poster)}
 							alt=""
 							width={1920}
 							height={1080}
@@ -83,9 +85,9 @@ function VideoPlayer({
 			{failed && (
 				<p className="project-video-error" role="alert">
 					{t.videoFailed}{" "}
-					<a href={video.src} target="_blank" rel="noreferrer">
+					<AssetLink href={video.src} target="_blank" rel="noreferrer">
 						{t.openVideo} ↗
-					</a>
+					</AssetLink>
 				</p>
 			)}
 		</figure>
@@ -128,14 +130,14 @@ export function ProjectMedia({
 			{videos.length > 1 && (
 				<nav className="project-video-list" aria-label={t.videoList}>
 					{videos.map((video) => (
-						<a
+						<AssetLink
 							key={video.id}
 							href={`#video-${video.id}`}
 							aria-current={active?.id === video.id ? "true" : undefined}
 						>
 							<img
 								crossOrigin="anonymous"
-								src={video.poster}
+								src={assetUrl(video.poster)}
 								alt=""
 								width={320}
 								height={180}
@@ -146,7 +148,7 @@ export function ProjectMedia({
 								<strong>{video.title[locale]}</strong>
 								<span className="mono">{duration(video.durationSeconds)}</span>
 							</span>
-						</a>
+						</AssetLink>
 					))}
 				</nav>
 			)}
@@ -154,21 +156,21 @@ export function ProjectMedia({
 				<section className="project-screenshots" aria-label={t.screenshots}>
 					{screenshots.map((shot) => (
 						<figure key={shot.id}>
-							<a
+							<AssetLink
 								href={shot.src}
 								target="_blank"
 								rel="noreferrer"
 								aria-label={`${t.openOriginal}: ${shot.alt[locale]}`}
 							>
 								<img
-									src={shot.src}
+									src={assetUrl(shot.src)}
 									alt={shot.alt[locale]}
 									width={shot.width}
 									height={shot.height}
 									loading="lazy"
 									decoding="async"
 								/>
-							</a>
+							</AssetLink>
 							<figcaption>{shot.alt[locale]}</figcaption>
 						</figure>
 					))}
