@@ -22,7 +22,7 @@ import { cacheControl, mediaTypes } from "./media-r2";
 export const inventoryPath = "docs/assets/inventory.json";
 const receiptPath = "docs/assets/publication.jsonl";
 const binary =
-	/\.(?:png|jpe?g|webp|avif|gif|ico|woff2?|ttf|otf|zip|pdf|pptx|mp[34]|wav|webm)$/i;
+	/\.(?:png|jpe?g|webp|avif|gif|ico|woff2?|ttf|otf|zip|pdf|pptx|mp[34]|wav|webm|mov|m4v|mkv)$/i;
 const appFiles = new Set([
 	"_headers",
 	"_redirects",
@@ -57,6 +57,19 @@ export const digest = (bytes: Uint8Array) =>
 	createHash("sha256").update(bytes).digest("hex");
 export const publicUrl = (asset: Pick<StoredAsset, "key">) =>
 	`${storage.origin}/${asset.key}`;
+
+/** Inspect the index too: .gitignore alone cannot prevent a forced add. */
+export function checkTrackedAssets() {
+	const paths = execFileSync("git", ["ls-files", "-z"], { encoding: "utf8" })
+		.split("\0")
+		.filter((path) => binary.test(path));
+	if (paths.length)
+		throw new Error(
+			`Tracked material binaries (${paths.length}):\n${paths.slice(0, 12).join("\n")}\nPublish materials to R2 and keep their inventory/provenance in Git; see docs/21-asset-storage.md.`,
+		);
+	console.info("No material binaries are tracked in Git.");
+}
+
 export function readInventory(): AssetInventory {
 	const data = JSON.parse(
 		readFileSync(inventoryPath, "utf8"),
@@ -601,7 +614,8 @@ if (import.meta.main) {
 	const limit = values.limit === undefined ? undefined : Number(values.limit);
 	if (limit !== undefined && (!Number.isSafeInteger(limit) || limit < 1))
 		throw new Error("Limit must be a positive integer.");
-	if (command === "inventory") await inventory();
+	if (command === "check-tracked") checkTrackedAssets();
+	else if (command === "inventory") await inventory();
 	else {
 		const data = readInventory();
 		const selected = data.files.filter(
@@ -668,7 +682,7 @@ if (import.meta.main) {
 			);
 		} else
 			throw new Error(
-				"Expected inventory, plan, url <path>, publish --upload, verify, or hydrate; --scope public|all.",
+				"Expected check-tracked, inventory, plan, url <path>, publish --upload, verify, or hydrate; --scope public|all.",
 			);
 	}
 }

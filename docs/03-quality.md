@@ -29,14 +29,15 @@ validates those views through actual user journeys.
 
 ## Commit feedback
 
-`bun run gate:commit` runs only these two checks in parallel:
+`bun run gate:commit` runs these three checks in parallel:
 
+- `assets:check-tracked`: reject material binaries in the Git index, including forced additions. SVG source and the required vendored code archive remain allowed. CI repeats this check before asset hydration.
 - `lint:staged`: Biome checks staged paths with zero warnings, without rewriting files. Commits containing only ignored or unsupported files pass when there is nothing to lint.
 - `test:changed`: Vitest runs unit tests affected by uncommitted Git changes, without coverage. This includes staged, unstaged, and untracked files. Documentation/artwork changes without related tests do not run the suite.
 
 Package, Vite/Vitest configuration, Bun lock/configuration, and TypeScript configuration changes trigger all unit tests. The release CLI and the directory's original logo also trigger the full suite because tests read them through a subprocess or filesystem rather than an import. These triggers are declared in `vitest.config.ts`.
 
-Both tools check working-tree content; they do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
+The material guard reads the Git index; lint and unit tests check working-tree content and do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
 
 ## Port boundaries
 

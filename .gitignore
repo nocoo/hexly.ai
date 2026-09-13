@@ -12,7 +12,23 @@ playwright-report/
 
 .video-work/
 
-# New recordings belong in the consumer archive or object storage.
+# Materials hydrate from immutable R2 objects; track source/provenance instead.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.avif
+*.gif
+*.ico
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.zip
+*.pdf
+*.pptx
+*.mp3
+*.wav
 *.mp4
 *.webm
 *.mov

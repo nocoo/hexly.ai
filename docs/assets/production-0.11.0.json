@@ -1,6 +1,6 @@
 {
   "observedAt": "2026-09-13T01:50:48.873093+00:00",
-  "stage": "production implementation and complete R2 publication verified; final release bookkeeping pending",
+  "stage": "accepted formal R2 release, before authorized history reduction",
   "validatedImplementationRevision": "d64fbe8f9609a5b969013493ebb44c3ee8d09524",
   "version": "0.11.0",
   "ci": "https://github.com/nocoo/hexly.ai/actions/runs/34730886883",
@@ -93,5 +93,28 @@
     "fullByteSha256AndMimeVerified": true,
     "receipts": "docs/assets/publication.jsonl",
     "receiptsSha256": "6d5a2118e0b4807c234e56ea811120d9482881d8c59f9c6e1790d01fe9e09cc3"
+  },
+  "finalRelease": {
+    "acceptedAt": "2026-09-13T03:13:05.087007+00:00",
+    "revision": "517fafdaf99674b2aeb07fc5908184ac928d26d8",
+    "version": "0.11.0",
+    "tagObject": "01ac00a65d17c90249ec7bdb6df91a68ee7594af",
+    "tagCommit": "517fafdaf99674b2aeb07fc5908184ac928d26d8",
+    "ciRun": 34734198150,
+    "deploymentRun": 34734720132,
+    "deploymentJob": "Deploy / Deploy Worker: success",
+    "workerVersion": "0da49cd9-bfb8-4e10-a11d-eacd8a8e5827",
+    "release": "https://github.com/nocoo/hexly.ai/releases/tag/v0.11.0",
+    "releaseId": 387777796,
+    "projects": 75,
+    "browserObservations": 28,
+    "initialTlsFailures": 6,
+    "unresolvedFailures": 0,
+    "contactSheetInspected": true,
+    "evidenceDirectory": "/Users/nocoo/backups/hexly.ai/r2-migration-20260913T080642/validation/release-0.11.0",
+    "acceptanceRecordSha256": "ba5776ea613e25baf093267a5d7d3ad97d9fbc98dd7395759930158e824a52eb",
+    "unitPassed": 321,
+    "httpPassed": 127,
+    "browserPassed": 352
   }
 }

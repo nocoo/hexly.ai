@@ -81,18 +81,18 @@ Worker, R2 Worker binding, D1 registry, bucket or CDN domain is necessary.
 
 ### D. Publish and production acceptance (must precede history work)
 
-- [ ] Commit functional change independently; release the next minor version
+- [x] Commit functional change independently; release the next minor version
   through `docs/05-release.md`, preserving its exact-SHA CI/CD gates.
-- [ ] Verify main/tag/Release/live revision and all asset references/old URLs;
+- [x] Verify main/tag/Release/live revision and all asset references/old URLs;
   inspect representative desktop/mobile/light/dark pages, fonts, downloads,
   templates, media, canonical metadata and sitemap.
-- [ ] Save production evidence and the pre-migration rollback baseline.
+- [x] Save production evidence and the pre-migration rollback baseline.
 
 ### E. Authorized history reduction, after checkpoint D
 
-- [ ] Recheck worktree, remote branches/tags and concurrent activity. Stop on
+- [x] Recheck worktree, remote branches/tags and concurrent activity. Stop on
   unknown changes; never reset/stash/overwrite another session's work.
-- [ ] Preserve a complete external Git bundle/mirror and original ref inventory;
+- [x] Preserve a complete external Git bundle/mirror and original ref inventory;
   verify the bundle and its SHA-256 before removing anything. Archive binary
   source materials and a path/hash recovery index independently of Git history.
 - [ ] Remove hydrated binary materials from the current tracked tree while
@@ -149,3 +149,9 @@ step has already happened.
 - One source-archive run stopped on a response-body timeout after 7,129 successful receipts. The helper now retries the complete body, names an exhausted object's key, preserves permanent checksum/MIME failures, and avoids nested retry loops. A disconnected-body regression passed; publication resumed with four workers and the existing receipts, without overlapping uploaders or disabling TLS checks.
 
 - Full public/source publication completed at `2026-09-13T02:12:23.758Z`: 8,193 objects, 9,342 source paths, 5181182625 stored bytes. Every key has a matching complete-byte SHA-256/MIME/size receipt; no uploader remains active. A Wrangler account lookup briefly failed during OAuth renewal; a subsequent authenticated same-account lookup succeeded, and the last 269 objects resumed from receipts. No permission, CORS, lifecycle or TLS-validation setting changed.
+
+
+- Formal v0.11.0 published at `517fafdaf99674b2aeb07fc5908184ac928d26d8`: CI `34734198150`, Deploy `34734720132`, annotated tag and [GitHub Release](https://github.com/nocoo/hexly.ai/releases/tag/v0.11.0). Production reports the exact revision; Worker version `0da49cd9-bfb8-4e10-a11d-eacd8a8e5827`. All 352 browser CI checks passed using full Chromium. Final production checks verified 75 project pages, sitemap membership and original Logo hashes, three historical font aliases, movie Range/CORS and 28 real-CDN browser observations; six initial TLS handshakes passed bounded rechecks. The contact sheet was inspected. Evidence: `validation/release-0.11.0/` in the external backup.
+- After that acceptance, another session published the Snail-retirement merge `fcfd6c9c328b608abf14159cf378fa42d4a82d3c`. History work paused to inspect the source and remote; main was fast-forwarded to preserve it. The current catalogue has 74 projects, with Snail's original records, complete assets and old-route redirects preserved. The concurrent worktree and all private branch refs remain untouched.
+- Latest complete backup: `pre-history-full.bundle`, 3,623,654,386 bytes, SHA-256 `be206e810abbc302ea93faae407f48fa91478f8069d8870a0020dece8ea2c2dd`; bundle verification passed. `pre-history-state-final.json` records all 37 local refs and the 28 intended remote branch/tag refs. Earlier snapshots are retained too.
+- Before untracking, all 8,314 current material binaries (6,927,584,962 bytes) matched both their Git blob and inventoried SHA-256/size/MIME publication receipt. They were removed only from the index; every local working file remains. The historical filter list contains 8,341 exact material paths. SVG/code/provenance and the required vendored `.tgz` remain tracked. The Git guard rejects even force-added material binaries.

@@ -26,5 +26,6 @@
 24. [R2 asset migration, publication and Git history reduction](20-r2-assets-execution.md)
 25. [Material storage, CDN delivery, local hydration and asset onboarding](21-asset-storage.md)
 26. [Snail retirement, Zhe migration and preserved brand history](22-snail-retirement.md)
+27. [Git history recovery, revision maps and material hydration](23-git-history-recovery.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

@@ -13,6 +13,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
 | Project media / routes | Optional `Project.media` in the same catalogue; [routes and media boundary](docs/17-project-media.md) |
 | R2 material operations | Bucket/origin in `src/data/media-storage.json`; [project skill](.agents/skills/hexly-r2-media/SKILL.md), [storage contract](docs/21-asset-storage.md), `docs/assets/inventory.json` and publication receipts; existing film receipts in `docs/media/` |
+| Git history / recovery | [Recovery guide](docs/23-git-history-recovery.md); preserve original bundles and commit/ref maps; never merge the old binary history back |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Complete brand archives | [inventory and scope](docs/brand-archives/README.md), [maintenance guide](docs/19-family-brand-archives.md), `public/brands/schema-v2.json` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
@@ -100,7 +101,7 @@ bun run video:check
 bun run media:r2 -- --project hermes-on-herdr --video context-en --version 1.0.0 --file /path/to/film.mp4
 ```
 
-Run the asset/profile generation sequence after intentional catalogue or artwork changes; ordinary builds use checked-in assets. Read [docs/05-release.md](docs/05-release.md) before publishing.
+Run the asset/profile generation sequence after intentional catalogue or artwork changes; ordinary builds use checked-in metadata and CDN materials. `bun run assets:check-tracked` rejects material binaries in the Git index, including forced additions; keep SVG source and the required vendored code archive. Read [docs/05-release.md](docs/05-release.md) before publishing.
 
 Video exports require Chrome/Chromium and FFmpeg. Real PPTX/PDF contain image-backed pages, with editable native PPTX speaker notes. See the [kit README](packages/video-kit/README.md) for schema/API, export commands, dependency/brand licenses and the reproducible PptxGenJS dependency pruning. Never suppress its known dependency advisory instead of removing the unused vulnerable code.
 
@@ -119,7 +120,7 @@ Video exports require Chrome/Chromium and FFmpeg. Real PPTX/PDF contain image-ba
 | Assets / build | Source checksums, WebP sizes, Vite build, Wrangler dry run | enforced | CI `assets:check`, L2/L3 build, `deploy:check` |
 | Content / docs | Profile synchronization, provenance, numbered docs when behavior changes | manual | Review catalogue changes against identity rules and source evidence |
 
-Pre-commit runs only staged-file Biome and affected unit tests, concurrently and without coverage. Vitest selects tests from staged, unstaged, and untracked Git changes; configuration/dependency changes and inputs read outside the import graph trigger all unit tests. Documentation/artwork-only changes with no related tests pass without running the suite. Full typecheck, lint, coverage, isolation, security, and integration/browser checks remain in CI; pre-push runs L2 + G2.
+Pre-commit runs the tracked-material guard, staged-file Biome and affected unit tests concurrently, without coverage. Vitest selects tests from staged, unstaged, and untracked Git changes; configuration/dependency changes and inputs read outside the import graph trigger all unit tests. Documentation/artwork-only changes with no related tests pass without running the suite. CI repeats the material guard before hydration. Full typecheck, lint, coverage, isolation, security, and integration/browser checks remain in CI; pre-push runs L2 + G2.
 Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Playwright enforces `forbidOnly`. Hooks read working-tree content, without index snapshots or stdin-ref-range validation. Review the staged diff explicitly.
 
 Browser tests use the full Chromium build's current headless mode (`channel: "chromium"`), preserving native tab navigation; CI must install `chromium` without `--only-shell`. Status browser tests pin the browser clock to the fixed SQLite demo's latest sample; deliberate stale fixtures use that same clock. Long CI runs must not age all demo services into unknown states. The maintained Wrangler development-proxy patch retries a disconnected read once, with fault-injection coverage; writes, canceled requests, upgrades and actual HTTP failures are never replayed. See `patches/README.md`.

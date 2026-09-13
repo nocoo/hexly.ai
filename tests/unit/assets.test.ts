@@ -1,5 +1,13 @@
-import { spawnSync } from "node:child_process";
-import { readFileSync } from "node:fs";
+import { execFileSync, spawnSync } from "node:child_process";
+import {
+	mkdtempSync,
+	readFileSync,
+	realpathSync,
+	rmSync,
+	writeFileSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import {
 	assetKey,
@@ -13,6 +21,61 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("rejects forced material additions while preserving source files and local hydration", () => {
+		const directory = mkdtempSync(join(tmpdir(), "hexly-tracked-assets-test-"));
+		const script = resolve("scripts/asset-storage.ts");
+		const repositoryVariables = new Set(
+			execFileSync("git", ["rev-parse", "--local-env-vars"], {
+				encoding: "utf8",
+			})
+				.trim()
+				.split("\n"),
+		);
+		const env = Object.fromEntries(
+			Object.entries(process.env).filter(
+				([name]) => !repositoryVariables.has(name),
+			),
+		);
+		const git = (...args: string[]) =>
+			execFileSync("git", args, {
+				cwd: directory,
+				encoding: "utf8",
+				env,
+			}).trim();
+		const check = () =>
+			spawnSync("bun", [script, "check-tracked"], {
+				cwd: directory,
+				encoding: "utf8",
+				env,
+			});
+		try {
+			git("init", "-b", "main");
+			expect(git("rev-parse", "--absolute-git-dir")).toBe(
+				realpathSync(join(directory, ".git")),
+			);
+			for (const [path, bytes] of [
+				[".gitignore", "*.PNG\n"],
+				["identity.svg", '<svg xmlns="http://www.w3.org/2000/svg"/>'],
+				["dependency.tgz", "required vendored code fixture"],
+				["new logo.PNG", "hydrated material fixture"],
+			] as const)
+				writeFileSync(join(directory, path), bytes);
+			git("add", "--", ".gitignore", "identity.svg", "dependency.tgz");
+			expect(check().status).toBe(0);
+			git("add", "-f", "--", "new logo.PNG");
+			const rejected = check();
+			expect(rejected.status).not.toBe(0);
+			expect(rejected.stderr).toContain("Tracked material binaries (1)");
+			expect(rejected.stderr).toContain("new logo.PNG");
+			git("rm", "--cached", "--", "new logo.PNG");
+			expect(check().status).toBe(0);
+			expect(readFileSync(join(directory, "new logo.PNG"), "utf8")).toBe(
+				"hydrated material fixture",
+			);
+		} finally {
+			rmSync(directory, { recursive: true, force: true });
+		}
+	});
 	it("retries a disconnected response body and stops on conflicting bytes", async () => {
 		const bytes = new TextEncoder().encode("complete fixture");
 		const template = readInventory().files[0];
