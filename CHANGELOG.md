@@ -10,10 +10,18 @@
 
 - start development without hydrating archived assets ([1c88834](https://github.com/nocoo/hexly.ai/commit/1c8883419d4a5245f44cd84856af022b3d97300e))
 - preserve standalone material downloads across CDN delivery ([025a468](https://github.com/nocoo/hexly.ai/commit/025a4684e12394b6eaf8055c73728e1899e867e2))
+- keep canonical brand review pages on the Worker ([40006c9](https://github.com/nocoo/hexly.ai/commit/40006c96bf6374bae9ae4651fc5afaa9fe0d48b3))
+- resume R2 uploads after verified credential rotation ([d64fbe8](https://github.com/nocoo/hexly.ai/commit/d64fbe8f9609a5b969013493ebb44c3ee8d09524))
+- verify complete asset bodies within bounded retries ([a77e18a](https://github.com/nocoo/hexly.ai/commit/a77e18affee7423353636af7c82d27f322ca0b6d))
 
 ### Documentation
 
 - record verified public R2 migration and local acceptance ([1d808fa](https://github.com/nocoo/hexly.ai/commit/1d808fabd016ceab7038dc2422a3b500efc676b0))
+- publish complete R2 recovery records and CDN archive links ([209c795](https://github.com/nocoo/hexly.ai/commit/209c79546dcd07695ef266cf4044ca343db764a2))
+
+### Tests
+
+- require an inventoried stream verification fixture ([9e96e31](https://github.com/nocoo/hexly.ai/commit/9e96e316c7474867881f204a0b93069069c003cc))
 
 ## [0.10.0] - 2026-09-12
 
