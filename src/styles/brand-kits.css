@@ -292,6 +292,28 @@
 	text-underline-offset: 4px;
 	text-decoration: underline;
 }
+/* Pi Agent Policy pilots a clearer texture without changing other archives. */
+[data-project="pi-agent-policy"][data-brand-artwork]
+:is(.card-main, .brand-kit-intro, .brand-hero figcaption) {
+	background-image:
+		linear-gradient(
+			color-mix(in srgb, var(--surface) 55%, transparent),
+			color-mix(in srgb, var(--surface) 55%, transparent)
+		),
+		var(--brand-texture);
+}
+[data-project="pi-agent-policy"] .brand-texture-specimens figure > div {
+	height: 256px;
+	background-position: center;
+}
+[data-project="pi-agent-policy"] .brand-texture-specimens figcaption {
+	flex-direction: row;
+}
+@media (max-width: 640px) {
+	[data-project="pi-agent-policy"] .brand-texture-specimens {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
 .brand-kit-specimens img {
 	max-height: 220px;
 	object-fit: contain;

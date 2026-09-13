@@ -38,6 +38,12 @@ describe("Pi Agent Policy onboarding", () => {
 	it("preserves the approved first Logo and truthful generation/adoption records", async () => {
 		const source = await json("docs/sources/pi-agent-policy-2026-09-14.json");
 		const provenance = await json(`${root}/provenance.json`);
+		const profile = await readFile(
+			"docs/profiles/77-pi-agent-policy.md",
+			"utf8",
+		);
+		expect(profile).toContain("Owner-approved GPT Image raster identity");
+		expect(profile).not.toContain("Original vector identity commissioned");
 		expect(source).toMatchObject({
 			visibility: "private",
 			packageVersion: "0.1.2",
@@ -87,5 +93,50 @@ describe("Pi Agent Policy onboarding", () => {
 			firstIndependentIdentity: true,
 			sourceAdoptionRevision: source.sourceAdoptionRevision,
 		});
+	});
+
+	it("keeps the published 1.0.0 package and all identity/Hero bytes when refining texture visibility", async () => {
+		const parentRoot = "public/brands/pi-agent-policy/v1.0.0";
+		expect(sha(await readFile(`${parentRoot}/manifest.json`))).toBe(
+			"eef04f8b568759b2e6623dd41607a323ce5829c50792b288037938e3bf1e5d56",
+		);
+		const parent = await json(`${parentRoot}/manifest.json`);
+		const current = await json(`${root}/manifest.json`);
+		const permitted = new Set([
+			"texture-light.svg",
+			"texture-dark.svg",
+			"texture-light.png",
+			"texture-dark.png",
+			"tokens.json",
+			"provenance.json",
+			"guide.md",
+			"review.html",
+			"review.css",
+		]);
+		for (const file of parent.files) {
+			const name = file.path.split("/").at(-1);
+			expect(sha(await readFile(`public${file.path}`)), file.path).toBe(
+				file.sha256,
+			);
+			if (!permitted.has(name))
+				expect(sha(await readFile(`${root}/${name}`)), name).toBe(file.sha256);
+		}
+		expect(current.files).toHaveLength(parent.files.length);
+		for (const theme of ["light", "dark"]) {
+			const before = await readFile(
+				`${parentRoot}/texture-${theme}.svg`,
+				"utf8",
+			);
+			const after = await readFile(`${root}/texture-${theme}.svg`, "utf8");
+			expect(after.match(/<path d="[^"]*"/g)).toEqual(
+				before.match(/<path d="[^"]*"/g),
+			);
+		}
+		const oldProvenance = await json(`${parentRoot}/provenance.json`);
+		for (const key of ["tool", "recipe", "typographyTool"])
+			expect(sha(await readFile(oldProvenance.build[key]))).toBe(
+				oldProvenance.build[`${key}Sha256`],
+			);
+		expect(project.brandKit?.previousVersion).toBe("1.0.0");
 	});
 });

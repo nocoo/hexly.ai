@@ -284,7 +284,12 @@ export function BrandKit({
 						<AssetLink
 							href={`/brands/${project.id}/v${kit.previousVersion}/review.html`}
 						>
-							{zh ? "历史版本" : "Previous identity"} · v{kit.previousVersion} ↗
+							{zh
+								? "历史版本"
+								: collected
+									? "Previous archive"
+									: "Previous identity"}{" "}
+							· v{kit.previousVersion} ↗
 						</AssetLink>
 						{" · "}
 						{zh

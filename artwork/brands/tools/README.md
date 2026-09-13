@@ -40,3 +40,10 @@ It does not imply the identity was never generated: the recipe explicitly
 records whether generation happened for this onboarding, and provenance keeps
 the actual model/prompt/raw/approval. Source adoption and package release are
 separate. Record real commits; do not invent a previous Logo or a future SHA.
+
+Pi Agent Policy 1.0.1 is a texture-only presentation pilot. Its versioned
+`artwork/brands/pi-agent-policy/v1.0.1/refine.ts` inherits and checksums the
+published 1.0.0 kit, preserving 50 files exactly while refining texture strokes
+and specimen layout. It keeps historical tool hashes intact and rejects any
+existing, inventoried or committed output. Do not rerun the generic exporter on
+a published kit or spread this contrast change to other projects implicitly.

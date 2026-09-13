@@ -1,0 +1,216 @@
+{
+	"checkedAt": "2026-09-13T23:44:02.621Z",
+	"materialDelivery": "CDN URLs fulfilled with actual local bytes; production smoke recorded separately",
+	"origin": "http://127.0.0.1:7048",
+	"checks": [
+		{
+			"kind": "site",
+			"device": "desktop",
+			"theme": "light",
+			"viewport": [1440, 1000],
+			"tiles": [
+				{
+					"x": 37,
+					"y": 432.78125,
+					"width": 672,
+					"height": 256
+				},
+				{
+					"x": 731,
+					"y": 432.78125,
+					"width": 672,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "site-desktop-light.png",
+			"sha256": "3624ca7970528116c8e562319235d1d90cdd17e2154863d47dd32c09694473f6"
+		},
+		{
+			"kind": "site",
+			"device": "desktop",
+			"theme": "dark",
+			"viewport": [1440, 1000],
+			"tiles": [
+				{
+					"x": 37,
+					"y": 432.78125,
+					"width": 672,
+					"height": 256
+				},
+				{
+					"x": 731,
+					"y": 432.78125,
+					"width": 672,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "site-desktop-dark.png",
+			"sha256": "d29caea37475aeb5a1796173fbf0764b89d7365b3a83a44cbd7f6c171e8724a4"
+		},
+		{
+			"kind": "standalone",
+			"device": "desktop",
+			"theme": "light",
+			"viewport": [1440, 1000],
+			"tiles": [
+				{
+					"x": 151,
+					"y": 409.6875,
+					"width": 556,
+					"height": 256
+				},
+				{
+					"x": 733,
+					"y": 409.6875,
+					"width": 556,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "standalone-desktop-light.png",
+			"sha256": "1e327857e6c4e23d40a8fe5644b4adf5df7aabef8b23458de3987d5a432e4c36"
+		},
+		{
+			"kind": "standalone",
+			"device": "desktop",
+			"theme": "dark",
+			"viewport": [1440, 1000],
+			"tiles": [
+				{
+					"x": 151,
+					"y": 409.6875,
+					"width": 556,
+					"height": 256
+				},
+				{
+					"x": 733,
+					"y": 409.6875,
+					"width": 556,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "standalone-desktop-dark.png",
+			"sha256": "73c85ca69e694d1c587a7abd96e66661bc4eacc07ed4403edf734aa7376d713e"
+		},
+		{
+			"kind": "site",
+			"device": "mobile",
+			"theme": "light",
+			"viewport": [320, 1200],
+			"tiles": [
+				{
+					"x": 23,
+					"y": 450.5,
+					"width": 274,
+					"height": 256
+				},
+				{
+					"x": 23,
+					"y": 759.5,
+					"width": 274,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "site-mobile-light.png",
+			"sha256": "ec26ba34e269d22924b9684e081cb5c33795cdcc218c6b2362f40f782372c51a"
+		},
+		{
+			"kind": "site",
+			"device": "mobile",
+			"theme": "dark",
+			"viewport": [320, 1200],
+			"tiles": [
+				{
+					"x": 23,
+					"y": 450.5,
+					"width": 274,
+					"height": 256
+				},
+				{
+					"x": 23,
+					"y": 759.5,
+					"width": 274,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "site-mobile-dark.png",
+			"sha256": "b475463e8ed60f8ba25b131856d6bdba6cf6e19edbc4bad6e2ba1dd07b2dd3d4"
+		},
+		{
+			"kind": "standalone",
+			"device": "mobile",
+			"theme": "light",
+			"viewport": [320, 1200],
+			"tiles": [
+				{
+					"x": 17,
+					"y": 402.390625,
+					"width": 286,
+					"height": 256
+				},
+				{
+					"x": 17,
+					"y": 734.78125,
+					"width": 286,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "standalone-mobile-light.png",
+			"sha256": "50c6766c98fa7a8737fa191995b7d48f8d6d53b3dbf845033db72936052a144e"
+		},
+		{
+			"kind": "standalone",
+			"device": "mobile",
+			"theme": "dark",
+			"viewport": [320, 1200],
+			"tiles": [
+				{
+					"x": 17,
+					"y": 402.390625,
+					"width": 286,
+					"height": 256
+				},
+				{
+					"x": 17,
+					"y": 734.78125,
+					"width": 286,
+					"height": 256
+				}
+			],
+			"axeViolations": 0,
+			"overflow": false,
+			"screenshot": "standalone-mobile-dark.png",
+			"sha256": "dcafa086dfd698b5a7347d969e3b33bd52ef7200368af72d8c7548f87f36f432"
+		}
+	],
+	"contrast": [
+		{
+			"theme": "light",
+			"minimumInkContrast": 8.299878908528791,
+			"minimumMutedContrast": 3.489133794341343,
+			"surfaceVeil": 0.55,
+			"method": "Worst texture pixel composited over actual surface; full ink is used by text-bearing patterned components."
+		},
+		{
+			"theme": "dark",
+			"minimumInkContrast": 6.5816894129320795,
+			"minimumMutedContrast": 3.3620171078863774,
+			"surfaceVeil": 0.55,
+			"method": "Worst texture pixel composited over actual surface; full ink is used by text-bearing patterned components."
+		}
+	],
+	"comparisonSha256": "5ca6307b35c0b12d574d3ab499c7dbf8052a11f74cd7b141d06d81b7b65cf7ea"
+}

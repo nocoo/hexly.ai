@@ -16,11 +16,12 @@ private; no private source-code or source-document snapshot is published here.
 | Source | `nocoo/pi-agent-policy`, package 0.1.2 unchanged |
 | Source Logo/README adoption | `ba73409bd7326fa1a425e5faa918a285cde42de5` |
 | GitHub Profile entry | `fb6a46a799607ddd99832ab82a9afc374df2e580` |
-| Independent brand version | 1.0.0 |
+| Independent project identity | 1.0.0 |
+| Hexly campaign archive | 1.0.1; texture visibility refinement |
 | Planned site patch | 0.12.2, separate release commit |
 | Public project archive | `https://hexly.ai/projects/pi-agent-policy#brand` |
-| Material root | `https://h.no.mt/brands/pi-agent-policy/v1.0.0/` |
-| Canonical manifest | `/brands/pi-agent-policy/v1.0.0/manifest.json` |
+| Material root | `https://h.no.mt/brands/pi-agent-policy/v1.0.1/` |
+| Canonical manifest | `/brands/pi-agent-policy/v1.0.1/manifest.json` |
 | Static study | `artwork/logo-family/pi-agent-policy/2026-09-14-03/review.html` |
 
 Publication receipts and the actual site Release establish availability, not
@@ -83,7 +84,7 @@ Publish and retrieve materials with the [R2 skill](../.agents/skills/hexly-r2-me
 bun run assets:r2 -- plan --project pi-agent-policy --scope all
 bun run assets:r2 -- publish --project pi-agent-policy --scope all --upload
 bun run assets:r2 -- verify --project pi-agent-policy --scope all
-bun run assets:r2 -- url /brands/pi-agent-policy/v1.0.0/logo.png
+bun run assets:r2 -- url /brands/pi-agent-policy/v1.0.1/logo.png
 ```
 
 Scope `all` preserves the original rejected/unselected source studies as well as
@@ -120,3 +121,53 @@ and full-Hero contact sheet preserve those results. R2 publication completed
 119 verified objects for 136 local paths; receipts retain the actual hashes and
 anonymous CDN GET checks. Source and Profile main branches were pushed; the
 site version is established separately by its normal release evidence.
+
+## Texture visibility pilot — archive 1.0.1
+
+Before the site release completed, the owner asked to make this project's
+"Interrupted contacts and a single return" specimen easier to see. The 1.0.0
+tiles had 1.7/1.4px strokes at 3.6/2.2% opacity; the 256px display halved their
+line width, while the short sample and mobile columns hid parts of the motif.
+
+Archive 1.0.1 preserves the exact paths and uses 4.8/3px strokes at 30/25%
+opacity, or 2.4/1.5 CSS px in the sample. Both themes show a full 256px repeat
+height; phone specimens stack vertically. A 55% surface-color veil keeps the
+texture underneath card/intro/caption text softer without dimming text. These
+rules are scoped to `data-project="pi-agent-policy"`; other project pages and
+their published assets are unchanged. The sample is decorative, not a health
+indicator, and has 37px of completely clear perimeter in its original tile.
+
+Only nine package files change: the two SVG/PNG texture pairs, their tokens,
+provenance, guide and standalone HTML/CSS. The other 50 files, including all
+Logo/wordmark/icon/Hero/font bytes and generation records, match 1.0.0 exactly.
+The original Hero images retain their quieter background. The official/source
+identity is still 1.0.0 and requires no new source adoption. Every 1.0.0 URL and
+its manifest SHA remain immutable; the new provenance keeps the old build-tool
+hashes and explicitly records the inherited package.
+
+The one-project authoring command is
+`bun artwork/brands/pi-agent-policy/v1.0.1/refine.ts`. It verifies the frozen
+parent, checks texture geometry/transparent perimeter and unchanged image
+hashes, and refuses existing output or an inventoried/committed version. Use a
+new explicit version for another refinement. The generic and historical kit
+exporters remain unchanged; this pilot is not a blanket family redesign.
+
+The initial release CI for `8905bab9` was deliberately cancelled before deploy
+and tagging to include this correction. Workflow's independent skill-reference
+rename `93360284` was reviewed and preserved; its CI was also cancelled before
+deploy. Resume the still-untagged **explicit 0.12.2**, not another patch bump.
+
+Acceptance for this refinement: 62 project/collection unit tests and 10 R2
+tests passed, plus 128 desktop/mobile gallery and Pi archive browser tests.
+Eight focused site/standalone captures cover both themes at desktop and 320px
+width. Text-bearing patterned areas retain full Hexly ink, with minimum
+composited contrast 8.30:1 in light and 6.58:1 in dark; the muted token is not
+used over these patterns. The complete source/asset and Video Kit checks passed,
+and the build contains 3.88 MB of application documents/code with no materials.
+
+The batch inventory now preserves existing source recovery keys when another
+kit exports identical bytes; only new source rows can select a duplicate public
+object. A real temporary-repository regression check covers this case. All
+previous inventory rows are byte-for-byte equivalent; the pilot adds 73 paths
+and objects, including its visual evidence. R2 publication verified these new
+objects and retained all existing receipts.

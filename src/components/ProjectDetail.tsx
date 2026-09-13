@@ -159,6 +159,7 @@ export function ProjectDetail({
 				<section
 					className="identity-detail"
 					aria-labelledby="identity-title"
+					data-project={project.id}
 					data-brand-artwork={project.brandKit?.method}
 					style={brandTexture(project.brandKit) as CSSProperties}
 				>
