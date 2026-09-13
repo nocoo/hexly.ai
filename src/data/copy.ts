@@ -67,6 +67,9 @@ export const copy = {
 		categories: "Project categories",
 		refined: "Refined",
 		refinedArtwork: "Refined identity",
+		firstIdentity: "First identity",
+		firstIdentityDescription:
+			"The first identity created for this project. No previous logo existed.",
 		localReview: "Local preview",
 		search: "Search projects",
 		searchPlaceholder: "Find a project…",
@@ -222,6 +225,8 @@ export const copy = {
 		categories: "项目分类",
 		refined: "Refined",
 		refinedArtwork: "优化后的 Logo",
+		firstIdentity: "首个品牌标识",
+		firstIdentityDescription: "为这个项目首次建立品牌，此前没有独立 Logo。",
 		localReview: "本地预览",
 		search: "搜索项目",
 		searchPlaceholder: "找一个项目…",

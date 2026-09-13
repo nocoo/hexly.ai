@@ -266,7 +266,7 @@ test("redirects legacy pages and template metadata without touching archived log
 for (const id of projects
 	.filter((project) => project.family)
 	.map((project) => project.id)) {
-	test(`serves the complete ${id} refinement and preserved predecessor`, async ({
+	test(`serves the complete ${id} identity archive and recorded history`, async ({
 		request,
 	}) => {
 		const family = projects.find((project) => project.id === id)?.family;
@@ -285,10 +285,14 @@ for (const id of projects
 				file.sha256,
 			);
 		}
-		const original = await (await request.get(family.previous.original)).body();
-		expect(createHash("sha256").update(original).digest("hex")).toBe(
-			family.previous.sha256,
-		);
+		if (family.previous) {
+			const original = await (
+				await request.get(family.previous.original)
+			).body();
+			expect(createHash("sha256").update(original).digest("hex")).toBe(
+				family.previous.sha256,
+			);
+		}
 		const icon = await sharp(
 			await (await request.get(`${family.root}/icon.png`)).body(),
 		).metadata();

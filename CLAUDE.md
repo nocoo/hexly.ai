@@ -45,12 +45,32 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - Original project identity shapes, proportions, colors and file bytes are authoritative. Hexly paper/ink/terracotta, fonts, red points and composition apply only to Hexly project archives and Hexly-authored campaigns, videos, decks and social graphics. Independent products keep their own complete palettes, themes and UI. A campaign Hero or family study never silently replaces a product Logo.
 - For an authorized project rename, update its catalogue ID and route while preserving the numbered profile. Locate historical artwork through `family.root`; preserve archive paths, export names, original bytes and checksums. Redirect former page URLs with Static Assets `_redirects`.
 - Synchronize catalogue changes with the GitHub profile using the workflow skill `zhengli-update-github-readme` (`../workflow/agents/skills/zhengli-update-github-readme/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
-- Preserve the current identity baseline. Animal-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
+- Preserve the current identity baseline. Logo-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Choose new subjects by the product-type defaults below. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
 - Immediately show each new Image 2 result for raw-image confirmation, unless the owner explicitly delegates acceptance for a named batch. Record the exact waiver and agent inspection without claiming owner review of unseen bytes. Require an approved `raw-review.json` for those exact bytes before extraction, compositing, derivatives, or catalogue integration. Every animal needs visible connected facets and one interest point outside its main mass; every project's background needs distinct motif geometry.
 - Every finished study has static review HTML and a complete site comparison. Keep `family.status` and its separate foreground truthful to source adoption; `project.logo` remains source provenance. Presentation reference boards appear only in static HTML and Git. Background-only passes preserve exact transparent/white bytes.
 - Follow [the logo usage SOP](docs/07-logo-usage-sop.md): large README presentations may use backgrounds; sidebar and browser marks use transparent foregrounds without extra masking. Verify actual consumers and distinguish local adoption from publication.
 - Versioned brand kits use optional `brandKit` metadata, `artwork/brands/<id>/v<version>/` source records and immutable `public/brands/<id>/v<version>/` exports. Native kits retain SVG; `method: "gpt-image-2"` combines the complete `family` comparison with raster marks/lockups, licensed outlined wordmarks, independently generated wide/square Hero sources and separate repeatable theme textures. Never call a generated raster a native SVG. Preserve real Hexly tokens, font notices, all previous versions and checksummed manifests; run mutable source formatting before export. Keep source adoption and the product release separate from brand publication; a Hexly-only handoff may have null source/profile revisions. See [Snail's versioned handoff](docs/18-snail-brand.md). Exact-byte image-generation checkpoints apply to generated artwork.
 - `method: "archived-artwork"` packages existing artwork without new generation. Use the schema-v2 roles `officialProjectIdentity` and `campaignInterpretation`, explicit `scope: "hexly-campaign"`, and exact file/decoded RGBA hashes. Wide and mobile Heroes are independently authored compositions of the full source canvas. Keep per-project motif geometry distinct. `brand-collection` tests protect the complete catalogue baseline, original colors, historical paths and Snail v1/v2; they also check both themes, narrow screens and downloads. Never format copied `official-logo.*` source bytes; Biome excludes those immutable files, while tests enforce them.
+
+## Brand direction by product type
+
+Read the actual product purpose and primary interaction before choosing a new
+identity. The owner's defaults are:
+
+| Product type | Default identity direction |
+|---|---|
+| Tools: CLI utilities, scripts, libraries, agent extensions | Skeuomorphic 3D physical objects that relate to the tool's purpose; `family.series: "material"` |
+| Web SaaS services used primarily in a browser | Recognizable animals in the established fragmented animal family |
+| Native macOS applications, including native menu-bar utilities | Birds within the established animal family |
+
+Classify by the product itself, not its repository name. A tool's documentation
+or landing website does not make it a Web SaaS service. Animal/bird facet and
+anatomy rules apply to those series; material objects use believable 3D volume,
+construction and materials. All series share the archive, review and usage
+standards in [the identity rules](docs/02-identity-rules.md).
+
+Explicit owner direction takes precedence. These are defaults for new identities,
+not a request to redesign existing approved Logos or change their colors.
 
 ## Stack / Layout
 

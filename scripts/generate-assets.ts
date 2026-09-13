@@ -106,11 +106,13 @@ for (const project of projects) {
 				.webp({ quality: 88, effort: 5 })
 				.toFile(`${root}/icon-${size}.webp`);
 		}
-		for (const [name, path] of [
+		const previewSources: [string, string][] = [
 			["background", `${root}/background.png`],
-			["previous", `public${project.family.previous.original}`],
 			["transparent", `${root}/transparent.png`],
-		]) {
+		];
+		if (family.previous)
+			previewSources.push(["previous", `public${family.previous.original}`]);
+		for (const [name, path] of previewSources) {
 			await sharp(path)
 				.resize(1024, 1024, {
 					fit: "contain",
