@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.11.0] - 2026-09-13
+
+### Features
+
+- serve site materials from verified R2 storage ([224e7aa](https://github.com/nocoo/hexly.ai/commit/224e7aa391159e6c67d50f722e07339bfec02b0e))
+
+### Fixes
+
+- start development without hydrating archived assets ([1c88834](https://github.com/nocoo/hexly.ai/commit/1c8883419d4a5245f44cd84856af022b3d97300e))
+- preserve standalone material downloads across CDN delivery ([025a468](https://github.com/nocoo/hexly.ai/commit/025a4684e12394b6eaf8055c73728e1899e867e2))
+
+### Documentation
+
+- record verified public R2 migration and local acceptance ([1d808fa](https://github.com/nocoo/hexly.ai/commit/1d808fabd016ceab7038dc2422a3b500efc676b0))
+
 ## [0.10.0] - 2026-09-12
 
 ### Features
