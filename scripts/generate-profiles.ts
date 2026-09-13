@@ -1,6 +1,7 @@
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import { dirname, relative } from "node:path";
 import { readProjects } from "../src/data/read-projects";
+import { assetUrl } from "../src/model/assets";
 import { brandAsset, brandSourceLabel } from "../src/model/brand";
 
 const projects = readProjects();
@@ -19,8 +20,10 @@ const index = [
 	"| --- | --- | --- | --- |",
 ];
 for (const project of projects) {
-	const sourceLink = (url: string) =>
-		url.startsWith("/") ? `../../public${url}` : url;
+	const sourceLink = (url: string) => {
+		const resolved = assetUrl(url);
+		return resolved.startsWith("/") ? `https://hexly.ai${resolved}` : resolved;
+	};
 	const name =
 		existingProfiles.find((name) => name.endsWith(`-${project.id}.md`)) ??
 		`${String(++nextProfileNumber).padStart(2, "0")}-${project.id}.md`;
@@ -34,11 +37,11 @@ for (const project of projects) {
 		? `## ${collected ? "Hexly campaign brand archive" : generatedKit ? "GPT Image animal brand kit" : "Native vector brand kit"}
 
 - Brand version: \`${kit.version}\`; [public archive](https://hexly.ai/projects/${project.id}#brand).
-- [Light lockup](../../public${brandAsset(kit, "lockup", "light")}), [dark lockup](../../public${brandAsset(kit, "lockup", "dark")}), [favicon](../../public${kit.root}/favicon.${generatedKit || collected ? "ico" : "svg"}).
-- [Complete usage and integration guide](../../public${kit.root}/guide.md), [standalone specimens](../../public${kit.root}/review.html), [all exports and SHA-256](../../public${kit.root}/manifest.json).
+- [Light lockup](${sourceLink(brandAsset(kit, "lockup", "light"))}), [dark lockup](${sourceLink(brandAsset(kit, "lockup", "dark"))}), [favicon](${sourceLink(`${kit.root}/favicon.${generatedKit || collected ? "ico" : "svg"}`)}).
+- [Complete usage and integration guide](${sourceLink(`${kit.root}/guide.md`)}), [standalone specimens](${sourceLink(`${kit.root}/review.html`)}), [all exports and SHA-256](${sourceLink(`${kit.root}/manifest.json`)}).
 - Source adoption: ${kit.sourceAdoptionRevision ? `recorded at \`${kit.sourceAdoptionRevision}\`` : "separate source-team handoff; no adoption commit is claimed"}.
 - ${collected ? "Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt." : generatedKit ? "The animal and wide hero are Azure OpenAI GPT Image 2 raster generations, with original requests, responses and raw bytes preserved. Transparent extraction and format exports do not make native SVG. Authored textures and archive code use MIT; the unchanged Space Grotesk wordmark uses SIL OFL 1.1. The asset license records the generated-output rights." : "Original geometry and archive code use MIT; the actual Space Grotesk font uses SIL OFL 1.1. No image generation, tracing or third-party icon was used."}
-${kit.previousVersion ? `- [Previous v${kit.previousVersion} identity](../../public/brands/${project.id}/v${kit.previousVersion}/review.html) remains immutable.\n` : ""}
+${kit.previousVersion ? `- [Previous v${kit.previousVersion} identity](${sourceLink(`/brands/${project.id}/v${kit.previousVersion}/review.html`)}) remains immutable.\n` : ""}
 
 ${kit.description.en}
 
@@ -61,17 +64,17 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 	const familySection = family
 		? `## Refined identity
 
-![${project.title} refined preview](../../public${family.root}/icon-160.webp)
+![${project.title} refined preview](${sourceLink(`${family.root}/icon-160.webp`)})
 
 - Status: ${family.status === "adopted" ? "Adopted in the source project" : generatedKit ? "Brand selected; source-project adoption pending" : "Local review; this finishing pass has not been adopted in the source project"}; updated ${family.updated}.
 - Study \`${family.id}\`, finishing \`${family.finishing}\`
 ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en}\n` : ""}- Site path: \`/projects/${project.id}#brand\`; [local gallery](https://index.dev.hexly.ai/projects/${project.id}#brand)
 - [Static review HTML](../../artwork/logo-family/${relative("/logos/family", dirname(family.root))}/review.html)
 - [Full process archive](${family.archive})
-- [Transparent foreground](../../public${family.foreground.original}); SHA-256: \`${family.foreground.sha256}\`
-- [Square icon](../../public${family.root}/icon.png), [rounded icon](../../public${family.root}/rounded.png), [white version](../../public${family.root}/white.png)
-- [${adapted ? "Original illustration" : retained ? "Untouched original" : "Untouched generation"}](../../public${family.root}/${sourceFile}), [${supplied ? "presentation brief" : "exact prompt"}](../../public${family.root}/${supplied ? "brief" : "prompt"}.txt), [public asset checksums](../../public${family.root}/manifest.json)
-- [Previous original](../../public${family.previous.original}), copied from [${family.previous.sourceUrl.startsWith("/") ? "its preserved local source" : "its immutable source"}](${sourceLink(family.previous.sourceUrl)})
+- [Transparent foreground](${sourceLink(family.foreground.original)}); SHA-256: \`${family.foreground.sha256}\`
+- [Square icon](${sourceLink(`${family.root}/icon.png`)}), [rounded icon](${sourceLink(`${family.root}/rounded.png`)}), [white version](${sourceLink(`${family.root}/white.png`)})
+- [${adapted ? "Original illustration" : retained ? "Untouched original" : "Untouched generation"}](${sourceLink(`${family.root}/${sourceFile}`)}), [${supplied ? "presentation brief" : "exact prompt"}](${sourceLink(`${family.root}/${supplied ? "brief" : "prompt"}.txt`)}), [public asset checksums](${sourceLink(`${family.root}/manifest.json`)})
+- [Previous original](${sourceLink(family.previous.original)}), copied from [${family.previous.sourceUrl.startsWith("/") ? "its preserved local source" : "its immutable source"}](${sourceLink(family.previous.sourceUrl)})
 - Previous SHA-256: \`${family.previous.sha256}\`
 - ${adapted ? `The owner-supplied illustration is extracted and uniformly reframed at native ${family.foreground.width} × ${family.foreground.height}. This is a documented reference adaptation, not a generated portrait. The untouched JPEG and complete extraction history remain archived.` : retained ? `Original artwork retained byte-for-byte at native ${family.foreground.width} × ${family.foreground.height}. Zero image-generation calls; only background, grain, and shadow layers were composed.` : `Generation: ${family.model}, native ${family.foreground.width} × ${family.foreground.height}; transparent extraction and presentation are separate finishing steps.`}
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.${supplied && family.foreground.width < 2048 ? ` Sizes above ${family.foreground.width} px are explicitly recorded upscales; the native master retains its recorded resolution.` : ""}
@@ -138,12 +141,12 @@ ${overview.techStack.map((technology) => `| ${technology.name} | ${technology.ro
 
 ${overviewSection}## Current logo
 
-![${project.title} source identity](../../public${project.logo.thumbnail})
+![${project.title} source identity](${sourceLink(project.logo.thumbnail)})
 
 - Type: ${generatedKit ? "Preserved source identity; the current Hexly GPT Image animal is documented separately below" : kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
 - [Source](${sourceLink(project.logo.sourceUrl)}): \`${project.logo.sourcePath}\`
-- [Preserved asset](../../public${project.logo.original})
+- [Preserved asset](${sourceLink(project.logo.original)})
 - Original dimensions: ${project.logo.width} × ${project.logo.height}
 - Original size: ${project.logo.bytes} bytes
 - SHA-256: \`${project.logo.sha256}\`

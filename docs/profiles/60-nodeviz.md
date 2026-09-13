@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![NodeViz source identity](../../public/logos/display/nodeviz-160.webp)
+![NodeViz source identity](https://h.no.mt/projects/nodeviz/identity/v1.0.0/nodeviz-160-7521607d6b90.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/nodeviz.png)
+- [Preserved asset](https://h.no.mt/projects/nodeviz/identity/v1.0.0/nodeviz-dbc4c45f02f9.png)
 - Original dimensions: 1024 × 1024
 - Original size: 252854 bytes
 - SHA-256: `dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51`

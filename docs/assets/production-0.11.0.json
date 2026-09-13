@@ -1,0 +1,97 @@
+{
+  "observedAt": "2026-09-13T01:50:48.873093+00:00",
+  "stage": "production implementation and complete R2 publication verified; final release bookkeeping pending",
+  "validatedImplementationRevision": "d64fbe8f9609a5b969013493ebb44c3ee8d09524",
+  "version": "0.11.0",
+  "ci": "https://github.com/nocoo/hexly.ai/actions/runs/34730886883",
+  "deployment": "https://github.com/nocoo/hexly.ai/actions/runs/34731353263",
+  "deploymentJob": "Deploy / Deploy Worker: success",
+  "cdnObjects": 4510,
+  "legacyAssetRedirects": 4343,
+  "legacyFontAliases": 3,
+  "projects": 75,
+  "originalLogoSha256Checks": 75,
+  "sitemapMembershipChecks": 75,
+  "movieRange": {
+    "status": 206,
+    "bytes": 1024,
+    "corsOrigin": "https://hexly.ai"
+  },
+  "browser": {
+    "observations": 28,
+    "devices": [
+      "desktop",
+      "mobile"
+    ],
+    "projects": [
+      "snail",
+      "frogie",
+      "basalt"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "layouts": [
+      "launch",
+      "essential",
+      "showcase",
+      "columns",
+      "bento"
+    ],
+    "views": [
+      "Video Preview",
+      "Deck / PPT Preview"
+    ],
+    "standaloneDownloads": [
+      "snail/v2.0.0/favicon.ico",
+      "frogie/v1.0.0/favicon.ico"
+    ],
+    "downloadHashes": "matched",
+    "fonts": "loaded",
+    "pageErrors": []
+  },
+  "initialReadFailures": {
+    "count": 39,
+    "types": [
+      "local TLS verification error",
+      "large response timeout"
+    ],
+    "boundedHttp11Rechecks": "39 passed, zero unresolved; original failure observations retained"
+  },
+  "evidence": {
+    "externalDirectory": "/Users/nocoo/backups/hexly.ai/r2-migration-20260913T080642/validation",
+    "files": {
+      "hexly-r2-production.json": {
+        "bytes": 2441855,
+        "sha256": "38c1ce5dc6509505109daceb03bae18582bec33c6627c8f708825d69f6b51932"
+      },
+      "hexly-r2-production-rechecks.json": {
+        "bytes": 11473,
+        "sha256": "549afa9aea762b2caec25a7138997892d3a798a69bca30e95db8d17a86e8a022"
+      },
+      "hexly-r2-production-fixed-browser/results.json": {
+        "bytes": 5147,
+        "sha256": "b1d763b267769efc4e2bd6dd6c10e8599837cd57ea1726e368c1bbb07612570f"
+      }
+    }
+  },
+  "followupLocalChecks": {
+    "unitPassed": 321,
+    "statements": 99.59,
+    "branches": 98.74,
+    "functions": 100,
+    "lines": 100,
+    "typecheck": "passed"
+  },
+  "sourceArchivePublication": {
+    "objects": 8193,
+    "sourcePaths": 9342,
+    "objectBytes": 5181182625,
+    "sourceBytes": 6932836101,
+    "completedAt": "2026-09-13T02:12:23.758Z",
+    "fullByteSha256AndMimeVerified": true,
+    "receipts": "docs/assets/publication.jsonl",
+    "receiptsSha256": "6d5a2118e0b4807c234e56ea811120d9482881d8c59f9c6e1790d01fe9e09cc3"
+  }
+}

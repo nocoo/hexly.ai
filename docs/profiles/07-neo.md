@@ -38,12 +38,12 @@ Manage authentication secrets and TOTP codes in a browser, move data between aut
 
 ## Current logo
 
-![Neo source identity](../../public/logos/display/neo-160.webp)
+![Neo source identity](https://h.no.mt/projects/neo/identity/v1.0.0/neo-160-1003fcb81839.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Golden retriever portrait
 - [Source](https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/neo.png)
+- [Preserved asset](https://h.no.mt/projects/neo/identity/v1.0.0/neo-2939c3edb084.png)
 - Original dimensions: 2048 × 2048
 - Original size: 4237355 bytes
 - SHA-256: `2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d`
@@ -65,8 +65,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/neo#brand).
-- [Light lockup](../../public/brands/neo/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/neo/v1.0.0/lockup-dark.png), [favicon](../../public/brands/neo/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/neo/v1.0.0/guide.md), [standalone specimens](../../public/brands/neo/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/neo/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/neo/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/neo/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/neo/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/neo/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/neo/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/neo/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -93,7 +93,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥48px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Neo refined preview](../../public/logos/family/neo/2026-09-07-03/01/icon-160.webp)
+![Neo refined preview](https://h.no.mt/logos/family/neo/2026-09-07-03/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-03`, finishing `01`
@@ -101,10 +101,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥48px wide; lockup ≥160px.
 - Site path: `/projects/neo#brand`; [local gallery](https://index.dev.hexly.ai/projects/neo#brand)
 - [Static review HTML](../../artwork/logo-family/neo/2026-09-07-03/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/neo/2026-09-07-03)
-- [Transparent foreground](../../public/logos/family/neo/2026-09-07-03/01/transparent.png); SHA-256: `2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d`
-- [Square icon](../../public/logos/family/neo/2026-09-07-03/01/icon.png), [rounded icon](../../public/logos/family/neo/2026-09-07-03/01/rounded.png), [white version](../../public/logos/family/neo/2026-09-07-03/01/white.png)
-- [Untouched original](../../public/logos/family/neo/2026-09-07-03/01/source.png), [presentation brief](../../public/logos/family/neo/2026-09-07-03/01/brief.txt), [public asset checksums](../../public/logos/family/neo/2026-09-07-03/01/manifest.json)
-- [Previous original](../../public/logos/originals/neo.png), copied from [its immutable source](https://github.com/nocoo/neo/blob/856e487050327aa471ff9761c9d111822f2b46db/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/neo/2026-09-07-03/01/transparent.png); SHA-256: `2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d`
+- [Square icon](https://h.no.mt/logos/family/neo/2026-09-07-03/01/icon.png), [rounded icon](https://h.no.mt/logos/family/neo/2026-09-07-03/01/rounded.png), [white version](https://h.no.mt/logos/family/neo/2026-09-07-03/01/white.png)
+- [Untouched original](https://h.no.mt/logos/family/neo/2026-09-07-03/01/source.png), [presentation brief](https://h.no.mt/logos/family/neo/2026-09-07-03/01/brief.txt), [public asset checksums](https://h.no.mt/logos/family/neo/2026-09-07-03/01/manifest.json)
+- [Previous original](https://h.no.mt/projects/neo/identity/v1.0.0/neo-2939c3edb084.png), copied from [its immutable source](https://github.com/nocoo/neo/blob/856e487050327aa471ff9761c9d111822f2b46db/logo.png)
 - Previous SHA-256: `2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d`
 - Original artwork retained byte-for-byte at native 2048 × 2048. Zero image-generation calls; only background, grain, and shadow layers were composed.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

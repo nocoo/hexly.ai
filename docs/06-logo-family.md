@@ -1,5 +1,11 @@
 # Animal logo family
 
+Storage follows the [R2 material contract](21-asset-storage.md): the paths below
+remain the authoring/recovery layout, with binary originals and reference boards
+hydrated from the immutable inventory. Source records, prompts, attribution and
+SVG geometry stay in Git. The 2026-09-13 storage instruction supersedes earlier
+binary-in-Git requirements without changing any reviewed artwork or scope.
+
 The family supports new drawings, retained-original presentations and owner-directed physical objects. Each identity has its own background motif and complete individual review. Source adoption and publication evidence live in the project profiles and [usage SOP](07-logo-usage-sop.md). Earlier drawings, decisions, and finishing passes remain in their own archives. The newest [four-project batch](08-new-project-identities.md) is a local preview with source adoption and publication still separate.
 
 ## Reading the references

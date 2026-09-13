@@ -52,8 +52,11 @@ authored layouts of complete existing images, not native GPT Image outputs.
 | Source and usage | `manifest.json`, `provenance.json`, `tokens.json`, `guide.md`, `license.txt`, exact historical prompt when applicable |
 | Independent specimen page | `review.html`, CSS/JS, exact official Hexly mark, actual font files and OFL notices |
 
-There are 48–50 exported files per project, plus its manifest. Full-size source
-masters remain in Git and Workers Static Assets, as requested. Browsing loads
+There are 48–50 exported files per project, plus its manifest. The original
+v0.10.0 rollout retained masters in Git and Workers Static Assets. The owner's
+2026-09-13 [R2 migration](20-r2-assets-execution.md) moves those unchanged bytes
+to `hexlyai` / `h.no.mt`; metadata, source SVG geometry and licenses remain in
+Git, and local binary paths hydrate from the inventory. Browsing loads
 the WebP Hero and appropriate small marks; it does not load all master downloads
 or perform runtime rendering. There is no new movie, render cache, storage
 binding or production image service.
@@ -162,12 +165,19 @@ The frozen collection tooling is `artwork/brands/collection-2026-09/`.
 Before these roots are committed, the authoring sequence is:
 
 ```sh
+bun run assets:hydrate
 uv run --with fonttools==4.60.1 --with brotli==1.1.0 python artwork/brands/collection-2026-09/outline.py
 # Format only the target recipes and mutable tool sources before export.
 bun artwork/brands/collection-2026-09/export.ts
 bun run assets:build
 bun run docs:profiles
 bun run assets:check
+# Read the project R2 skill; replace snail with the selected project ID.
+# Inspect and publish only the new approved version.
+bun run assets:r2 -- inventory
+bun run assets:r2 -- plan --project snail
+bun run assets:r2 -- publish --project snail --upload
+bun run assets:r2 -- verify --project snail
 ```
 
 The exporter accepts target IDs to inspect one uncommitted kit; both tools

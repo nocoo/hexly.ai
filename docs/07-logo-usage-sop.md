@@ -1,5 +1,10 @@
 # Logo usage and adoption SOP
 
+For Hexly storage and download addresses, use the [project R2 skill](../.agents/skills/hexly-r2-media/SKILL.md)
+and [material contract](21-asset-storage.md). Local binary paths below are restored
+from the inventory; original bytes, attribution, source adoption records and
+other products' consumer paths keep their existing meaning.
+
 The [Hexly campaign archive scope](19-family-brand-archives.md) is separate from
 product adoption. Hexly pages and promotional materials share Hexly typography,
 paper/ink surfaces and a restrained red point; project Logos retain their

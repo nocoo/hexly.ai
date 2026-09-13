@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Make Sound MCP source identity](../../public/logos/display/mcp-make-sound-160.webp)
+![Make Sound MCP source identity](https://h.no.mt/projects/mcp-make-sound/identity/v1.0.0/mcp-make-sound-160-ae81384608c6.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/mcp-make-sound.png)
+- [Preserved asset](https://h.no.mt/projects/mcp-make-sound/identity/v1.0.0/mcp-make-sound-e351632c7148.png)
 - Original dimensions: 1024 × 1024
 - Original size: 574400 bytes
 - SHA-256: `e351632c7148db3536754e8d5e7f63120b16097fa22dff75d4e1138845cfa0b8`

@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Teams Workflow source identity](../../public/logos/display/microsoft-teams-send-as-workflow-160.webp)
+![Teams Workflow source identity](https://h.no.mt/projects/microsoft-teams-send-as-workflow/identity/v1.0.0/microsoft-teams-send-as-workflow-160-06fc37107b03.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/microsoft-teams-send-as-workflow.png)
+- [Preserved asset](https://h.no.mt/projects/microsoft-teams-send-as-workflow/identity/v1.0.0/microsoft-teams-send-as-workflow-21be414c56a9.png)
 - Original dimensions: 1024 × 1024
 - Original size: 353526 bytes
 - SHA-256: `21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d`

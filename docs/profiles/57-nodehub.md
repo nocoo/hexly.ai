@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![NodeHub source identity](../../public/logos/display/nodehub-160.webp)
+![NodeHub source identity](https://h.no.mt/projects/nodehub/identity/v1.0.0/nodehub-160-d1ab891ee085.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application mark
 - [Source](https://github.com/nocoo/nodehub/blob/9d9ba8f91c98d9eb7fce99226f9a2a40fad085dd/public/assets/images/favicon.png): `public/assets/images/favicon.png`
-- [Preserved asset](../../public/logos/originals/nodehub.png)
+- [Preserved asset](https://h.no.mt/projects/nodehub/identity/v1.0.0/nodehub-ccdffc2057cb.png)
 - Original dimensions: 1024 × 1024
 - Original size: 220294 bytes
 - SHA-256: `ccdffc2057cbd73eb24549cb97667542a99c6a7a5a34848359caa675ac6ec223`

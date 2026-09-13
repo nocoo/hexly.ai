@@ -40,12 +40,12 @@ Collect application backups, inspect content and history by project, and retriev
 
 ## Current logo
 
-![Backy source identity](../../public/logos/display/backy-160.webp)
+![Backy source identity](https://h.no.mt/projects/backy/identity/v1.0.0/backy-160-e2da2dab5a8b.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Small olive tortoise with one folded multicolored leaf on its shell
 - [Source](https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/backy-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/backy/identity/v1.0.0/backy-family-2026-09-07-01-01-a89f2303bd3f.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2447370 bytes
 - SHA-256: `a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef`
@@ -67,8 +67,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/backy#brand).
-- [Light lockup](../../public/brands/backy/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/backy/v1.0.0/lockup-dark.png), [favicon](../../public/brands/backy/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/backy/v1.0.0/guide.md), [standalone specimens](../../public/brands/backy/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/backy/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/backy/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/backy/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/backy/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/backy/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/backy/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/backy/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -95,7 +95,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Backy refined preview](../../public/logos/family/backy/2026-09-07-01/01/icon-160.webp)
+![Backy refined preview](https://h.no.mt/logos/family/backy/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -103,10 +103,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px.
 - Site path: `/projects/backy#brand`; [local gallery](https://index.dev.hexly.ai/projects/backy#brand)
 - [Static review HTML](../../artwork/logo-family/backy/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/backy/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/backy/2026-09-07-01/01/transparent.png); SHA-256: `a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef`
-- [Square icon](../../public/logos/family/backy/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/backy/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/backy/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/backy/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/backy/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/backy/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/backy.png), copied from [its immutable source](https://github.com/nocoo/backy/blob/8bf91fc7dcad5abe51323bdcc1e39f0906faa55a/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/backy/2026-09-07-01/01/transparent.png); SHA-256: `a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef`
+- [Square icon](https://h.no.mt/logos/family/backy/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/backy/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/backy/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/backy/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/backy/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/backy/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/backy-297d5e88c914.png), copied from [its immutable source](https://github.com/nocoo/backy/blob/8bf91fc7dcad5abe51323bdcc1e39f0906faa55a/logo.png)
 - Previous SHA-256: `297d5e88c91484612d1fc34aed41b01b872f1bd24fd92a8fcdd49d0eb7801ef0`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

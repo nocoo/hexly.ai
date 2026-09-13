@@ -35,12 +35,12 @@ Review quarantine results for apps in /Applications and select trusted apps for 
 
 ## Current logo
 
-![Unseal source identity](../../public/logos/display/unseal-160.webp)
+![Unseal source identity](https://h.no.mt/projects/unseal/identity/v1.0.0/unseal-160-f0351dd11810.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: An opened green enamel and brass padlock
 - [Source](https://github.com/nocoo/unseal/blob/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/unseal-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/unseal/identity/v1.0.0/unseal-family-2026-09-07-01-01-8868c38b0315.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2323865 bytes
 - SHA-256: `8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b`
@@ -61,8 +61,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/unseal#brand).
-- [Light lockup](../../public/brands/unseal/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/unseal/v1.0.0/lockup-dark.png), [favicon](../../public/brands/unseal/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/unseal/v1.0.0/guide.md), [standalone specimens](../../public/brands/unseal/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/unseal/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/unseal/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/unseal/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/unseal/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/unseal/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/unseal/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/unseal/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -89,7 +89,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥79px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Unseal refined preview](../../public/logos/family/unseal/2026-09-07-01/01/icon-160.webp)
+![Unseal refined preview](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -97,10 +97,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥79px wide; lockup ≥160px.
 - Site path: `/projects/unseal#brand`; [local gallery](https://index.dev.hexly.ai/projects/unseal#brand)
 - [Static review HTML](../../artwork/logo-family/unseal/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/unseal/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/unseal/2026-09-07-01/01/transparent.png); SHA-256: `8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b`
-- [Square icon](../../public/logos/family/unseal/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/unseal/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/unseal/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/unseal/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/unseal/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/unseal/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/emoji/unseal.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
+- [Transparent foreground](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/transparent.png); SHA-256: `8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b`
+- [Square icon](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/unseal/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/unseal-67157ad6394c.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
 - Previous SHA-256: `67157ad6394cd71c60b4b19632cfa0883c2159aeeb8ea6146f51330f42eb19f9`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

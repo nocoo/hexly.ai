@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Express SPA source identity](../../public/logos/display/express-spa-160.webp)
+![Express SPA source identity](https://h.no.mt/projects/express-spa/identity/v1.0.0/express-spa-160-282304bbbee0.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/express-spa.png)
+- [Preserved asset](https://h.no.mt/projects/express-spa/identity/v1.0.0/express-spa-7c0923ee71d9.png)
 - Original dimensions: 1024 × 1024
 - Original size: 509124 bytes
 - SHA-256: `7c0923ee71d9cad5f78561072378c0a2e121a23db05528fbd62cc93b23fe2f26`

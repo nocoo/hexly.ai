@@ -36,12 +36,12 @@ Turn scripted interactions with real webpages into product demo movies on macOS.
 
 ## Current logo
 
-![Showtime source identity](../../public/logos/display/showtime-160.webp)
+![Showtime source identity](https://h.no.mt/projects/showtime/identity/v1.0.0/showtime-160-00cc0d5bcb17.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge
 - [Source](https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/showtime-family-2026-09-10-02-03.png)
+- [Preserved asset](https://h.no.mt/projects/showtime/identity/v1.0.0/showtime-family-2026-09-10-02-03-2e797a60a634.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3865252 bytes
 - SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`
@@ -61,8 +61,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/showtime#brand).
-- [Light lockup](../../public/brands/showtime/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/showtime/v1.0.0/lockup-dark.png), [favicon](../../public/brands/showtime/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/showtime/v1.0.0/guide.md), [standalone specimens](../../public/brands/showtime/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/showtime/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/showtime/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/showtime/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/showtime/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/showtime/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/showtime/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/showtime/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -89,7 +89,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥116px wide; lockup ≥160px
 
 ## Refined identity
 
-![Showtime refined preview](../../public/logos/family/showtime/2026-09-10-02/03/icon-160.webp)
+![Showtime refined preview](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-10.
 - Study `2026-09-10-02`, finishing `03`
@@ -97,10 +97,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥116px wide; lockup ≥160px
 - Site path: `/projects/showtime#brand`; [local gallery](https://index.dev.hexly.ai/projects/showtime#brand)
 - [Static review HTML](../../artwork/logo-family/showtime/2026-09-10-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/showtime/2026-09-10-02)
-- [Transparent foreground](../../public/logos/family/showtime/2026-09-10-02/03/transparent.png); SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`
-- [Square icon](../../public/logos/family/showtime/2026-09-10-02/03/icon.png), [rounded icon](../../public/logos/family/showtime/2026-09-10-02/03/rounded.png), [white version](../../public/logos/family/showtime/2026-09-10-02/03/white.png)
-- [Untouched generation](../../public/logos/family/showtime/2026-09-10-02/03/raw.png), [exact prompt](../../public/logos/family/showtime/2026-09-10-02/03/prompt.txt), [public asset checksums](../../public/logos/family/showtime/2026-09-10-02/03/manifest.json)
-- [Previous original](../../public/logos/originals/showtime-initial.png), copied from [its preserved local source](../../public/logos/originals/showtime-initial.png)
+- [Transparent foreground](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/transparent.png); SHA-256: `2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704`
+- [Square icon](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/icon.png), [rounded icon](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/rounded.png), [white version](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/raw.png), [exact prompt](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/showtime/2026-09-10-02/03/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/showtime-initial-8fe319552849.png), copied from [its preserved local source](https://h.no.mt/shared/site/v1.0.0/showtime-initial-8fe319552849.png)
 - Previous SHA-256: `8fe319552849e04934273d30a10b9bc1fc68ae94bb08182b5d372511e12feef9`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

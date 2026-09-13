@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="hexly.ai logo" width="128" height="128" />
+  <img src="https://h.no.mt/shared/site/v1.0.0/hexly-ai-c69b5e7a341e.png" alt="hexly.ai logo" width="128" height="128" />
 </p>
 <h1 align="center">hexly.ai</h1>
 <p align="center">
@@ -15,7 +15,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-788164?style=flat-square" alt="MIT License" /></a>
 </p>
 
-![项目导航站预览](docs/screenshots/directory-light.png)
+![项目导航站预览](https://h.no.mt/archives/sources/v1.0.0/35084de2cf9bff5ad2ebcdac662fef7bfdac088a48fbdc7aaa358753a0607d8c.png)
 
 ---
 

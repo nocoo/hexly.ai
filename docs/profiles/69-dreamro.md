@@ -37,12 +37,12 @@ Explore an RO-inspired single-player RPG in the browser, from character creation
 
 ## Current logo
 
-![DreamRO source identity](../../public/logos/display/dreamro-160.webp)
+![DreamRO source identity](https://h.no.mt/projects/dreamro/identity/v1.0.0/dreamro-160-5f4a3bb9e8f5.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Gold compass star with a smaller sage star
 - [Source](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/dreamro.png)
+- [Preserved asset](https://h.no.mt/projects/dreamro/identity/v1.0.0/dreamro-142e1c21c3e2.png)
 - Original dimensions: 512 × 512
 - Original size: 17371 bytes
 - SHA-256: `142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc`
@@ -62,8 +62,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/dreamro#brand).
-- [Light lockup](../../public/brands/dreamro/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/dreamro/v1.0.0/lockup-dark.png), [favicon](../../public/brands/dreamro/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/dreamro/v1.0.0/guide.md), [standalone specimens](../../public/brands/dreamro/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/dreamro/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/dreamro/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/dreamro/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/dreamro/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/dreamro/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/dreamro/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/dreamro/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -90,7 +90,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥107px wide; lockup ≥160px
 
 ## Refined identity
 
-![DreamRO refined preview](../../public/logos/family/dreamro/2026-09-07-01/02/icon-160.webp)
+![DreamRO refined preview](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/icon-160.webp)
 
 - Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
@@ -98,10 +98,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥107px wide; lockup ≥160px
 - Site path: `/projects/dreamro#brand`; [local gallery](https://index.dev.hexly.ai/projects/dreamro#brand)
 - [Static review HTML](../../artwork/logo-family/dreamro/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/dreamro/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/dreamro/2026-09-07-01/02/transparent.png); SHA-256: `e25c8837590746aeab75cc9cd26e0cf10a6f1e03f0909e6b9db44b92e2951f52`
-- [Square icon](../../public/logos/family/dreamro/2026-09-07-01/02/icon.png), [rounded icon](../../public/logos/family/dreamro/2026-09-07-01/02/rounded.png), [white version](../../public/logos/family/dreamro/2026-09-07-01/02/white.png)
-- [Untouched generation](../../public/logos/family/dreamro/2026-09-07-01/02/raw.png), [exact prompt](../../public/logos/family/dreamro/2026-09-07-01/02/prompt.txt), [public asset checksums](../../public/logos/family/dreamro/2026-09-07-01/02/manifest.json)
-- [Previous original](../../public/logos/originals/dreamro.png), copied from [its immutable source](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/transparent.png); SHA-256: `e25c8837590746aeab75cc9cd26e0cf10a6f1e03f0909e6b9db44b92e2951f52`
+- [Square icon](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/dreamro/2026-09-07-01/02/manifest.json)
+- [Previous original](https://h.no.mt/projects/dreamro/identity/v1.0.0/dreamro-142e1c21c3e2.png), copied from [its immutable source](https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png)
 - Previous SHA-256: `142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

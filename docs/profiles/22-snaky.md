@@ -37,12 +37,12 @@ Help VPN and proxy users check destination egress IPs, HTTP latency and DNS reso
 
 ## Current logo
 
-![Snaky source identity](../../public/logos/display/snaky-160.webp)
+![Snaky source identity](https://h.no.mt/projects/snaky/identity/v1.0.0/snaky-160-c3515cb205ec.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Green snake in a natural coil with one multicolored forked tongue
 - [Source](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/snaky-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/snaky/identity/v1.0.0/snaky-family-2026-09-07-01-01-4b2ea7f80bf0.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2958177 bytes
 - SHA-256: `4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630`
@@ -64,8 +64,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/snaky#brand).
-- [Light lockup](../../public/brands/snaky/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/snaky/v1.0.0/lockup-dark.png), [favicon](../../public/brands/snaky/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/snaky/v1.0.0/guide.md), [standalone specimens](../../public/brands/snaky/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/snaky/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/snaky/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/snaky/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/snaky/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/snaky/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/snaky/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/snaky/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -92,7 +92,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Snaky refined preview](../../public/logos/family/snaky/2026-09-07-01/01/icon-160.webp)
+![Snaky refined preview](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -100,10 +100,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px.
 - Site path: `/projects/snaky#brand`; [local gallery](https://index.dev.hexly.ai/projects/snaky#brand)
 - [Static review HTML](../../artwork/logo-family/snaky/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/snaky/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/snaky/2026-09-07-01/01/transparent.png); SHA-256: `4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630`
-- [Square icon](../../public/logos/family/snaky/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/snaky/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/snaky/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/snaky/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/snaky/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/snaky/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/originals/snaky.png), copied from [its immutable source](https://github.com/nocoo/snaky/blob/a930a0e4883ee23e0eef0e7287d0efd06080533b/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/transparent.png); SHA-256: `4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630`
+- [Square icon](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/snaky/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/snaky-ab232e170e4c.png), copied from [its immutable source](https://github.com/nocoo/snaky/blob/a930a0e4883ee23e0eef0e7287d0efd06080533b/logo.png)
 - Previous SHA-256: `ab232e170e4c4d8da05a0b0851c5e6082adc679aede2481a3a99897956bb2e4b`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

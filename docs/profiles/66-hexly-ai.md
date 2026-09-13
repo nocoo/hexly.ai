@@ -17,12 +17,12 @@ Historical site identity. Removed from the displayed catalogue at the owner’s 
 
 ## Current logo
 
-![hexly.ai source identity](../../public/logos/display/hexly-ai-160.webp)
+![hexly.ai source identity](https://h.no.mt/shared/site/v1.0.0/hexly-ai-160-766cf0460ee9.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Terracotta faceted hexagon
 - [Source](https://github.com/nocoo/hexly.ai/blob/dbdb9d8ea428ac73764503bc09916b97c8ca999e/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/hexly-ai.png)
+- [Preserved asset](https://h.no.mt/shared/site/v1.0.0/hexly-ai-c69b5e7a341e.png)
 - Original dimensions: 1024 × 1024
 - Original size: 53585 bytes
 - SHA-256: `c69b5e7a341eabc3de296db4d1b8dcff314f04c7652b86fd1dc217b1f42628d0`

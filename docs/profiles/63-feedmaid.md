@@ -15,12 +15,12 @@
 
 ## Current logo
 
-![Feedmaid source identity](../../public/logos/display/feedmaid-160.webp)
+![Feedmaid source identity](https://h.no.mt/projects/feedmaid/identity/v1.0.0/feedmaid-160-ace3644e5636.webp)
 
 - Type: Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found
 - Subject: Existing profile emoji
 - [Source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md): `nocoo/nocoo README.md — existing project emoji`
-- [Preserved asset](../../public/logos/emoji/feedmaid.png)
+- [Preserved asset](https://h.no.mt/projects/feedmaid/identity/v1.0.0/feedmaid-ad705222d130.png)
 - Original dimensions: 1024 × 1024
 - Original size: 335132 bytes
 - SHA-256: `ad705222d130c788d2ad7decc43a79eb8a1f2e8e6c64a54fadfc8891f8101bc5`

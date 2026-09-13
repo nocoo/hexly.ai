@@ -38,12 +38,12 @@ Give network diagnostic tools IP location and network data, plus observations of
 
 ## Current logo
 
-![Echo source identity](../../public/logos/display/echo-160.webp)
+![Echo source identity](https://h.no.mt/projects/echo/identity/v1.0.0/echo-160-f1517ce6afb9.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: A brass and navy pocket compass
 - [Source](https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/echo-family-2026-09-07-01-01.png)
+- [Preserved asset](https://h.no.mt/projects/echo/identity/v1.0.0/echo-family-2026-09-07-01-01-ba7421a11db8.png)
 - Original dimensions: 2048 × 2048
 - Original size: 5170077 bytes
 - SHA-256: `ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d`
@@ -65,8 +65,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/echo#brand).
-- [Light lockup](../../public/brands/echo/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/echo/v1.0.0/lockup-dark.png), [favicon](../../public/brands/echo/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/echo/v1.0.0/guide.md), [standalone specimens](../../public/brands/echo/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/echo/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/echo/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/echo/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/echo/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/echo/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/echo/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/echo/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -93,7 +93,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥60px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Echo refined preview](../../public/logos/family/echo/2026-09-07-01/01/icon-160.webp)
+![Echo refined preview](https://h.no.mt/logos/family/echo/2026-09-07-01/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `01`
@@ -101,10 +101,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥60px wide; lockup ≥160px.
 - Site path: `/projects/echo#brand`; [local gallery](https://index.dev.hexly.ai/projects/echo#brand)
 - [Static review HTML](../../artwork/logo-family/echo/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/echo/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/echo/2026-09-07-01/01/transparent.png); SHA-256: `ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d`
-- [Square icon](../../public/logos/family/echo/2026-09-07-01/01/icon.png), [rounded icon](../../public/logos/family/echo/2026-09-07-01/01/rounded.png), [white version](../../public/logos/family/echo/2026-09-07-01/01/white.png)
-- [Untouched generation](../../public/logos/family/echo/2026-09-07-01/01/raw.png), [exact prompt](../../public/logos/family/echo/2026-09-07-01/01/prompt.txt), [public asset checksums](../../public/logos/family/echo/2026-09-07-01/01/manifest.json)
-- [Previous original](../../public/logos/emoji/echo.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
+- [Transparent foreground](https://h.no.mt/logos/family/echo/2026-09-07-01/01/transparent.png); SHA-256: `ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d`
+- [Square icon](https://h.no.mt/logos/family/echo/2026-09-07-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/echo/2026-09-07-01/01/rounded.png), [white version](https://h.no.mt/logos/family/echo/2026-09-07-01/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/echo/2026-09-07-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/echo/2026-09-07-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/echo/2026-09-07-01/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/echo-b7a3eb2ada12.png), copied from [its immutable source](https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md)
 - Previous SHA-256: `b7a3eb2ada128f64271d7a91ceab4d58ff4589bdca20c07fb056270454dc68ca`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

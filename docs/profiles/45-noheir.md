@@ -39,12 +39,12 @@ Organize personal transactions, accounts and capital to review cash flow, alloca
 
 ## Current logo
 
-![Noheir source identity](../../public/logos/display/noheir-160.webp)
+![Noheir source identity](https://h.no.mt/projects/noheir/identity/v1.0.0/noheir-160-6d7ab3366f73.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Cow portrait
 - [Source](https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/noheir-family-2026-09-07-02-02.png)
+- [Preserved asset](https://h.no.mt/projects/noheir/identity/v1.0.0/noheir-family-2026-09-07-02-02-26d9720f81d6.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3801133 bytes
 - SHA-256: `26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff`
@@ -66,8 +66,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/noheir#brand).
-- [Light lockup](../../public/brands/noheir/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/noheir/v1.0.0/lockup-dark.png), [favicon](../../public/brands/noheir/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/noheir/v1.0.0/guide.md), [standalone specimens](../../public/brands/noheir/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/noheir/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/noheir/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/noheir/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/noheir/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/noheir/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/noheir/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/noheir/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -94,7 +94,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥77px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Noheir refined preview](../../public/logos/family/noheir/2026-09-07-02/02/icon-160.webp)
+![Noheir refined preview](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-02`, finishing `02`
@@ -102,10 +102,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥77px wide; lockup ≥160px.
 - Site path: `/projects/noheir#brand`; [local gallery](https://index.dev.hexly.ai/projects/noheir#brand)
 - [Static review HTML](../../artwork/logo-family/noheir/2026-09-07-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/noheir/2026-09-07-02)
-- [Transparent foreground](../../public/logos/family/noheir/2026-09-07-02/02/transparent.png); SHA-256: `26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff`
-- [Square icon](../../public/logos/family/noheir/2026-09-07-02/02/icon.png), [rounded icon](../../public/logos/family/noheir/2026-09-07-02/02/rounded.png), [white version](../../public/logos/family/noheir/2026-09-07-02/02/white.png)
-- [Untouched generation](../../public/logos/family/noheir/2026-09-07-02/02/raw.png), [exact prompt](../../public/logos/family/noheir/2026-09-07-02/02/prompt.txt), [public asset checksums](../../public/logos/family/noheir/2026-09-07-02/02/manifest.json)
-- [Previous original](../../public/logos/originals/noheir.png), copied from [its immutable source](https://github.com/nocoo/noheir/blob/1041610cf06562bb04911e39f4356690f6256f57/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/transparent.png); SHA-256: `26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff`
+- [Square icon](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/icon.png), [rounded icon](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/rounded.png), [white version](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/raw.png), [exact prompt](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/noheir/2026-09-07-02/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/noheir-2ed854204cbc.png), copied from [its immutable source](https://github.com/nocoo/noheir/blob/1041610cf06562bb04911e39f4356690f6256f57/logo.png)
 - Previous SHA-256: `2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

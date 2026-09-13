@@ -39,12 +39,12 @@ Review repositories, open work, alerts, and daily changes across GitHub accounts
 
 ## Current logo
 
-![Giraffe source identity](../../public/logos/display/giraffe-160.webp)
+![Giraffe source identity](https://h.no.mt/projects/giraffe/identity/v1.0.0/giraffe-160-67d64315736a.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Honey-colored giraffe portrait nibbling one colorful acacia sprig
 - [Source](https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/giraffe-family-2026-09-07-01-02.png)
+- [Preserved asset](https://h.no.mt/projects/giraffe/identity/v1.0.0/giraffe-family-2026-09-07-01-02-68144efac72c.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3073843 bytes
 - SHA-256: `68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339`
@@ -66,8 +66,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/giraffe#brand).
-- [Light lockup](../../public/brands/giraffe/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/giraffe/v1.0.0/lockup-dark.png), [favicon](../../public/brands/giraffe/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/giraffe/v1.0.0/guide.md), [standalone specimens](../../public/brands/giraffe/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/giraffe/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/giraffe/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/giraffe/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/giraffe/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/giraffe/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/giraffe/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/giraffe/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -94,7 +94,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥81px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Giraffe refined preview](../../public/logos/family/giraffe/2026-09-07-01/02/icon-160.webp)
+![Giraffe refined preview](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
@@ -102,10 +102,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥81px wide; lockup ≥160px.
 - Site path: `/projects/giraffe#brand`; [local gallery](https://index.dev.hexly.ai/projects/giraffe#brand)
 - [Static review HTML](../../artwork/logo-family/giraffe/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/giraffe/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/giraffe/2026-09-07-01/02/transparent.png); SHA-256: `68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339`
-- [Square icon](../../public/logos/family/giraffe/2026-09-07-01/02/icon.png), [rounded icon](../../public/logos/family/giraffe/2026-09-07-01/02/rounded.png), [white version](../../public/logos/family/giraffe/2026-09-07-01/02/white.png)
-- [Untouched generation](../../public/logos/family/giraffe/2026-09-07-01/02/raw.png), [exact prompt](../../public/logos/family/giraffe/2026-09-07-01/02/prompt.txt), [public asset checksums](../../public/logos/family/giraffe/2026-09-07-01/02/manifest.json)
-- [Previous original](../../public/logos/originals/giraffe.png), copied from [its immutable source](https://github.com/nocoo/giraffe/blob/13083cd48ff37f4d47f1b5848d980eaa72fba80f/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/transparent.png); SHA-256: `68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339`
+- [Square icon](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/giraffe/2026-09-07-01/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/giraffe-169ba1ff6951.png), copied from [its immutable source](https://github.com/nocoo/giraffe/blob/13083cd48ff37f4d47f1b5848d980eaa72fba80f/logo.png)
 - Previous SHA-256: `169ba1ff6951014dd9fdedb750bc4d65d7099c250eb1f941570bfb3c509db0fe`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

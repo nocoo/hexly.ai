@@ -43,12 +43,12 @@ Understand AI coding-tool usage through token and session statistics, with analy
 
 ## Current logo
 
-![Pew source identity](../../public/logos/display/pew-160.webp)
+![Pew source identity](https://h.no.mt/projects/pew/identity/v1.0.0/pew-160-8a20ee60dfbb.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Zebra portrait with a rainbow tongue
 - [Source](https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/pew-2026-09-07.png)
+- [Preserved asset](https://h.no.mt/projects/pew/identity/v1.0.0/pew-2026-09-07-5c002bb5dcfb.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3043802 bytes
 - SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`
@@ -74,8 +74,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/pew#brand).
-- [Light lockup](../../public/brands/pew/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/pew/v1.0.0/lockup-dark.png), [favicon](../../public/brands/pew/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/pew/v1.0.0/guide.md), [standalone specimens](../../public/brands/pew/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/pew/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/pew/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/pew/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/pew/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/pew/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/pew/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/pew/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -102,17 +102,17 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥51px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Pew refined preview](../../public/logos/family/pew/2026-09-06-01/04/icon-160.webp)
+![Pew refined preview](https://h.no.mt/logos/family/pew/2026-09-06-01/04/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-06-01`, finishing `04`
 - Site path: `/projects/pew#brand`; [local gallery](https://index.dev.hexly.ai/projects/pew#brand)
 - [Static review HTML](../../artwork/logo-family/pew/2026-09-06-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pew/2026-09-06-01)
-- [Transparent foreground](../../public/logos/family/pew/2026-09-06-01/04/transparent.png); SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`
-- [Square icon](../../public/logos/family/pew/2026-09-06-01/04/icon.png), [rounded icon](../../public/logos/family/pew/2026-09-06-01/04/rounded.png), [white version](../../public/logos/family/pew/2026-09-06-01/04/white.png)
-- [Untouched generation](../../public/logos/family/pew/2026-09-06-01/04/raw.png), [exact prompt](../../public/logos/family/pew/2026-09-06-01/04/prompt.txt), [public asset checksums](../../public/logos/family/pew/2026-09-06-01/04/manifest.json)
-- [Previous original](../../public/logos/originals/pew.png), copied from [its immutable source](https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/pew/2026-09-06-01/04/transparent.png); SHA-256: `5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb`
+- [Square icon](https://h.no.mt/logos/family/pew/2026-09-06-01/04/icon.png), [rounded icon](https://h.no.mt/logos/family/pew/2026-09-06-01/04/rounded.png), [white version](https://h.no.mt/logos/family/pew/2026-09-06-01/04/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/pew/2026-09-06-01/04/raw.png), [exact prompt](https://h.no.mt/logos/family/pew/2026-09-06-01/04/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/pew/2026-09-06-01/04/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/pew-2b94fa9b0b05.png), copied from [its immutable source](https://github.com/nocoo/pew/blob/44351912506d0584bf59fdcefaec9b4e2be7eeef/logo.png)
 - Previous SHA-256: `2b94fa9b0b0521008a08caa3bae34552f68785fd591c8dc578ceee943addc35e`
 - Generation: Azure Foundry · gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

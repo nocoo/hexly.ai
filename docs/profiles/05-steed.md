@@ -39,12 +39,12 @@ Give users a shared inventory of agents, CLI tools and their bindings across hos
 
 ## Current logo
 
-![Steed source identity](../../public/logos/display/steed-160.webp)
+![Steed source identity](https://h.no.mt/projects/steed/identity/v1.0.0/steed-160-9338a3bb05b4.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Chestnut horse portrait with an ivory blaze and one colorful bird
 - [Source](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/steed-family-2026-09-07-02-01.png)
+- [Preserved asset](https://h.no.mt/projects/steed/identity/v1.0.0/steed-family-2026-09-07-02-01-a58914242de4.png)
 - Original dimensions: 2048 × 2048
 - Original size: 3189966 bytes
 - SHA-256: `a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44`
@@ -66,8 +66,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/steed#brand).
-- [Light lockup](../../public/brands/steed/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/steed/v1.0.0/lockup-dark.png), [favicon](../../public/brands/steed/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/steed/v1.0.0/guide.md), [standalone specimens](../../public/brands/steed/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/steed/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/steed/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/steed/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/steed/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/steed/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/steed/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/steed/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -94,7 +94,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥71px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Steed refined preview](../../public/logos/family/steed/2026-09-07-02/01/icon-160.webp)
+![Steed refined preview](https://h.no.mt/logos/family/steed/2026-09-07-02/01/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-02`, finishing `01`
@@ -102,10 +102,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥71px wide; lockup ≥160px.
 - Site path: `/projects/steed#brand`; [local gallery](https://index.dev.hexly.ai/projects/steed#brand)
 - [Static review HTML](../../artwork/logo-family/steed/2026-09-07-02/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/steed/2026-09-07-02)
-- [Transparent foreground](../../public/logos/family/steed/2026-09-07-02/01/transparent.png); SHA-256: `a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44`
-- [Square icon](../../public/logos/family/steed/2026-09-07-02/01/icon.png), [rounded icon](../../public/logos/family/steed/2026-09-07-02/01/rounded.png), [white version](../../public/logos/family/steed/2026-09-07-02/01/white.png)
-- [Untouched generation](../../public/logos/family/steed/2026-09-07-02/01/raw.png), [exact prompt](../../public/logos/family/steed/2026-09-07-02/01/prompt.txt), [public asset checksums](../../public/logos/family/steed/2026-09-07-02/01/manifest.json)
-- [Previous original](../../public/logos/originals/steed.png), copied from [its immutable source](https://github.com/nocoo/steed/blob/1159f3769ec3c0a00a9a2bf32e914cf7cff00e33/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/steed/2026-09-07-02/01/transparent.png); SHA-256: `a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44`
+- [Square icon](https://h.no.mt/logos/family/steed/2026-09-07-02/01/icon.png), [rounded icon](https://h.no.mt/logos/family/steed/2026-09-07-02/01/rounded.png), [white version](https://h.no.mt/logos/family/steed/2026-09-07-02/01/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/steed/2026-09-07-02/01/raw.png), [exact prompt](https://h.no.mt/logos/family/steed/2026-09-07-02/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/steed/2026-09-07-02/01/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/steed-9543be6d4d51.png), copied from [its immutable source](https://github.com/nocoo/steed/blob/1159f3769ec3c0a00a9a2bf32e914cf7cff00e33/logo.png)
 - Previous SHA-256: `9543be6d4d51cca7174ddd485f1bfd87540c22c79c52c8f1186a1fb0efac1719`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

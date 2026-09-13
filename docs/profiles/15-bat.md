@@ -40,12 +40,12 @@ Collect Linux host metrics to inspect fleet status, alerts and infrastructure as
 
 ## Current logo
 
-![Bat source identity](../../public/logos/display/bat-160.webp)
+![Bat source identity](https://h.no.mt/projects/bat/identity/v1.0.0/bat-160-5e4c272e4d54.webp)
 
 - Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
 - Subject: Upright plum bat with folded wings and one colorful fig
 - [Source](https://github.com/nocoo/bat/blob/46f5c95a6c134487130e2a6d9336ec5e8895a0f7/logo.png): `logo.png`
-- [Preserved asset](../../public/logos/originals/bat-family-2026-09-07-01-02.png)
+- [Preserved asset](https://h.no.mt/projects/bat/identity/v1.0.0/bat-family-2026-09-07-01-02-882034b5b3e7.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2092682 bytes
 - SHA-256: `882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d`
@@ -67,8 +67,8 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/bat#brand).
-- [Light lockup](../../public/brands/bat/v1.0.0/lockup-light.png), [dark lockup](../../public/brands/bat/v1.0.0/lockup-dark.png), [favicon](../../public/brands/bat/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](../../public/brands/bat/v1.0.0/guide.md), [standalone specimens](../../public/brands/bat/v1.0.0/review.html), [all exports and SHA-256](../../public/brands/bat/v1.0.0/manifest.json).
+- [Light lockup](https://h.no.mt/brands/bat/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/bat/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/bat/v1.0.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/bat/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/bat/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/bat/v1.0.0/manifest.json).
 - Source adoption: separate source-team handoff; no adoption commit is claimed.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
 
@@ -95,7 +95,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥45px wide; lockup ≥160px.
 
 ## Refined identity
 
-![Bat refined preview](../../public/logos/family/bat/2026-09-07-01/02/icon-160.webp)
+![Bat refined preview](https://h.no.mt/logos/family/bat/2026-09-07-01/02/icon-160.webp)
 
 - Status: Adopted in the source project; updated 2026-09-07.
 - Study `2026-09-07-01`, finishing `02`
@@ -103,10 +103,10 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥45px wide; lockup ≥160px.
 - Site path: `/projects/bat#brand`; [local gallery](https://index.dev.hexly.ai/projects/bat#brand)
 - [Static review HTML](../../artwork/logo-family/bat/2026-09-07-01/review.html)
 - [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/bat/2026-09-07-01)
-- [Transparent foreground](../../public/logos/family/bat/2026-09-07-01/02/transparent.png); SHA-256: `882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d`
-- [Square icon](../../public/logos/family/bat/2026-09-07-01/02/icon.png), [rounded icon](../../public/logos/family/bat/2026-09-07-01/02/rounded.png), [white version](../../public/logos/family/bat/2026-09-07-01/02/white.png)
-- [Untouched generation](../../public/logos/family/bat/2026-09-07-01/02/raw.png), [exact prompt](../../public/logos/family/bat/2026-09-07-01/02/prompt.txt), [public asset checksums](../../public/logos/family/bat/2026-09-07-01/02/manifest.json)
-- [Previous original](../../public/logos/originals/bat.png), copied from [its immutable source](https://github.com/nocoo/bat/blob/99e48ef72afeaf178422c17875728128fe06615c/logo.png)
+- [Transparent foreground](https://h.no.mt/logos/family/bat/2026-09-07-01/02/transparent.png); SHA-256: `882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d`
+- [Square icon](https://h.no.mt/logos/family/bat/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/bat/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/bat/2026-09-07-01/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/bat/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/bat/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/bat/2026-09-07-01/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/bat-24b80b738e84.png), copied from [its immutable source](https://github.com/nocoo/bat/blob/99e48ef72afeaf178422c17875728128fe06615c/logo.png)
 - Previous SHA-256: `24b80b738e8425f05eac0e83a9a78ece9d22c7390fc56a33d50c7fdc0a05ee62`
 - Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
