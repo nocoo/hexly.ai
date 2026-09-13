@@ -53,7 +53,7 @@ terminate their own servers without reusing an existing server. L2 uses
 `.wrangler/dev` and manual Worker preview uses `.wrangler/preview`. Separate ports
 and separate SQLite persistence directories keep these environments independent.
 
-Browser CI runs in its own job with Node.js 26.7.0, matching local development and deployment. The shared quality workflow has no Node.js version input and retains the other gates. Deployment requires both jobs to succeed; all browser journeys run with the existing three workers and zero retries.
+Browser CI runs in its own job with Node.js 26.7.0, matching local development and deployment. `channel: "chromium"` selects the full Chromium build's current headless mode; install `chromium` without `--only-shell`. The default headless shell stalled native popup initialization during the R2 release, so the original real-link journey now runs in the full browser. Deployment requires both quality and browser jobs to succeed; all journeys retain three workers and zero retries.
 
 The browser job records its Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines, preserves the test command's exit status, and uploads the diagnostics, browser traces, and screenshots for seven days. Inspect this evidence before rerunning a failure that loses the local server. New-tab checks wait for navigation and `DOMContentLoaded` before inspecting the destination.
 

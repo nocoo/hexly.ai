@@ -9,6 +9,8 @@ export default defineConfig({
 	reporter: "list",
 	outputDir: ".test-results/browser",
 	use: {
+		// Exercise native tabs in the full Chromium browser's current headless mode.
+		channel: "chromium",
 		baseURL: "http://127.0.0.1:27048",
 		locale: "en-US",
 		colorScheme: "light",
