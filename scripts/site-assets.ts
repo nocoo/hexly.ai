@@ -69,6 +69,8 @@ export function siteAssets(): Plugin {
 				);
 				if (!file || file.endsWith("_headers") || file.endsWith("_redirects"))
 					return next();
+				if (file.endsWith("/review.html"))
+					response.setHeader("Vary", "Accept, Sec-Fetch-Dest");
 				response.setHeader(
 					"Content-Type",
 					file.endsWith(".html")
@@ -80,7 +82,16 @@ export function siteAssets(): Plugin {
 								: "text/plain; charset=utf-8",
 				);
 				response.end(
-					request.method === "HEAD" ? undefined : readFileSync(file),
+					request.method === "HEAD"
+						? undefined
+						: file.endsWith("/review.html") &&
+								(request.headers["sec-fetch-dest"] === "document" ||
+									request.headers.accept?.includes("text/html"))
+							? readFileSync(file, "utf8").replace(
+									"</body>",
+									'<script type="module" src="/src/material-downloads.ts"></script></body>',
+								)
+							: readFileSync(file),
 				);
 			});
 		},
