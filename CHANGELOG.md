@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.12.0] - 2026-09-13
+
+### Features
+
+- publish standard Hexly outro examples from R2 ([fdb142b](https://github.com/nocoo/hexly.ai/commit/fdb142bf4055882771bc7a0fd1cb99ee77d918cc))
+
 ## [0.11.1] - 2026-09-13
 
 ### Maintenance
