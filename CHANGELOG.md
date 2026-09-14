@@ -5,6 +5,7 @@
 ### Fixes
 
 - tie Pi Agent Policy texture to its reset workflow ([b353e63](https://github.com/nocoo/hexly.ai/commit/b353e631d30b5a69dcca4dff363282fb28d315a5))
+- scope a verified public R2 path out of credential findings ([f8c3cac](https://github.com/nocoo/hexly.ai/commit/f8c3cac322169c84fcb2a09af2308e2b7ca7bc5a))
 
 ## [0.12.2] - 2026-09-13
 
