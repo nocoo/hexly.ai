@@ -6,6 +6,10 @@
 
 - adopt Pi generated textures and document reusable surface design ([f65ab1c](https://github.com/nocoo/hexly.ai/commit/f65ab1cbb79a8508c32bb677f80f47540232039c))
 
+### Fixes
+
+- scope public brand object keys out of credential findings ([77ec05e](https://github.com/nocoo/hexly.ai/commit/77ec05e3344b29ebef812b7b9eac704f48738b2d))
+
 ## [0.12.3] - 2026-09-14
 
 ### Fixes
