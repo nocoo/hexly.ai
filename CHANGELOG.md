@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.12.4] - 2026-09-14
+
+### Features
+
+- adopt Pi generated textures and document reusable surface design ([f65ab1c](https://github.com/nocoo/hexly.ai/commit/f65ab1cbb79a8508c32bb677f80f47540232039c))
+
 ## [0.12.3] - 2026-09-14
 
 ### Fixes
