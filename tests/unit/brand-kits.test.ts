@@ -100,6 +100,21 @@ describe("versioned brand identities", () => {
 		});
 		expect(brandTexture(nativeKit)).toBeUndefined();
 		expect(brandTexture(undefined)).toBeUndefined();
+		expect(
+			brandTexture({
+				...kit,
+				texture: {
+					name: { en: "Surface", zh: "底纹" },
+					description: { en: "Generated surface", zh: "生成底纹" },
+					format: "webp",
+					display: "single",
+					model: "gpt-image-2.5-flare",
+				},
+			}),
+		).toEqual({
+			"--brand-texture-light": `url("https://h.no.mt${kit.root}/texture-light.webp")`,
+			"--brand-texture-dark": `url("https://h.no.mt${kit.root}/texture-dark.webp")`,
+		});
 	});
 	it("preserves historical SVGs and reuses exact font outlines, never a fake SVG animal", async () => {
 		const oldRoot = "public/brands/snail/v1.0.0";

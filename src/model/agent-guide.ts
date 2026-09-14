@@ -88,6 +88,18 @@ export function agentGuide(
 				label: "Brand asset manifest",
 				href: assetUrl(`${project.brandKit.root}/manifest.json`),
 			});
+			if (project.brandKit.texture?.model) {
+				instructions.push(
+					`The decorative surface was generated with ${project.brandKit.texture.model}. Reuse its approved PNG/WebP; it is separate from the original Logo. Display one complete canvas without repetition or cropping. Exact light/dark prompts and generation receipts are in the brand archive.`,
+				);
+				for (const theme of ["light", "dark"])
+					resources.push({
+						label: `Exact ${theme} surface prompt`,
+						href: assetUrl(
+							`${project.brandKit.root}/texture-${theme}-prompt.txt`,
+						),
+					});
+			}
 		}
 		for (const video of project.media?.videos ?? [])
 			instructions.push(

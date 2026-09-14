@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
-import { brandAsset, rasterBrand } from "../src/model/brand";
+import { brandAsset, brandTextureAsset, rasterBrand } from "../src/model/brand";
 import { brandManifestProblems } from "../src/model/brand-manifest";
 
 const projects = readProjects();
@@ -49,16 +49,12 @@ for (const project of projects) {
 				brandAsset(kit, name, "dark"),
 			]),
 			...(rasterBrand(kit)
-				? [
-						"hero.png",
-						"hero.webp",
-						"hero-square.webp",
-						"texture-light.svg",
-						"texture-dark.svg",
-						"provenance.json",
-					]
+				? ["hero.png", "hero.webp", "hero-square.webp", "provenance.json"]
 				: ["favicon.svg"]
 			).map((name) => `${kit.root}/${name}`),
+			...(rasterBrand(kit)
+				? [brandTextureAsset(kit, "light"), brandTextureAsset(kit, "dark")]
+				: []),
 			...(kit.hero?.themed
 				? ["hero-dark.png", "hero-dark.webp", "hero-square-dark.webp"].map(
 						(name) => `${kit.root}/${name}`,

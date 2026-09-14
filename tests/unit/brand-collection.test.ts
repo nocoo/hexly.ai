@@ -127,34 +127,48 @@ describe("complete Hexly campaign archives", () => {
 						],
 					).toBe(0);
 				}
-				const texture = await sharp(`public${kit.root}/texture-${theme}.png`)
-					.ensureAlpha()
-					.raw()
-					.toBuffer({ resolveWithObject: true });
-				expect(texture.info).toMatchObject({
-					width: 512,
-					height: 512,
-					channels: 4,
-				});
-				let edgeAlpha = 0,
-					maxAlpha = 0;
-				for (let y = 0; y < 512; y++)
-					for (let x = 0; x < 512; x++) {
-						const a = texture.data[(y * 512 + x) * 4 + 3] ?? 0;
-						maxAlpha = Math.max(maxAlpha, a);
-						if (x === 0 || x === 511 || y === 0 || y === 511) edgeAlpha += a;
+				if (kit.texture?.format === "webp") {
+					for (const ext of ["png", "webp"]) {
+						const texture = await sharp(
+							`public${kit.root}/texture-${theme}.${ext}`,
+						).metadata();
+						expect(texture).toMatchObject({ width: 1024, height: 1024 });
 					}
-				expect(edgeAlpha).toBe(0);
-				expect(maxAlpha).toBeGreaterThan(0);
-				if (p.id === "pi-agent-policy" && kit.version === "1.0.2") {
-					// Product-specific etched contacts; the shared collection stays quiet.
-					expect(maxAlpha).toBeGreaterThanOrEqual(100);
-					expect(maxAlpha).toBeLessThanOrEqual(220);
-				} else if (p.id === "pi-agent-policy" && kit.version === "1.0.1") {
-					// Only this explicit pilot gets stronger support linework.
-					expect(maxAlpha).toBeGreaterThanOrEqual(70);
-					expect(maxAlpha).toBeLessThanOrEqual(150);
-				} else expect(maxAlpha).toBeLessThanOrEqual(16);
+					expect(m.texture).toMatchObject({
+						model: "gpt-image-2.5-flare",
+						repeat: false,
+						crop: false,
+					});
+				} else {
+					const texture = await sharp(`public${kit.root}/texture-${theme}.png`)
+						.ensureAlpha()
+						.raw()
+						.toBuffer({ resolveWithObject: true });
+					expect(texture.info).toMatchObject({
+						width: 512,
+						height: 512,
+						channels: 4,
+					});
+					let edgeAlpha = 0,
+						maxAlpha = 0;
+					for (let y = 0; y < 512; y++)
+						for (let x = 0; x < 512; x++) {
+							const a = texture.data[(y * 512 + x) * 4 + 3] ?? 0;
+							maxAlpha = Math.max(maxAlpha, a);
+							if (x === 0 || x === 511 || y === 0 || y === 511) edgeAlpha += a;
+						}
+					expect(edgeAlpha).toBe(0);
+					expect(maxAlpha).toBeGreaterThan(0);
+					if (p.id === "pi-agent-policy" && kit.version === "1.0.2") {
+						// Product-specific etched contacts; the shared collection stays quiet.
+						expect(maxAlpha).toBeGreaterThanOrEqual(100);
+						expect(maxAlpha).toBeLessThanOrEqual(220);
+					} else if (p.id === "pi-agent-policy" && kit.version === "1.0.1") {
+						// Only this explicit pilot gets stronger support linework.
+						expect(maxAlpha).toBeGreaterThanOrEqual(70);
+						expect(maxAlpha).toBeLessThanOrEqual(150);
+					} else expect(maxAlpha).toBeLessThanOrEqual(16);
+				}
 				for (const square of [false, true]) {
 					const placement = m.hero.placements[square ? "square" : "wide"];
 					expect(placement.left).toBeGreaterThanOrEqual(0);

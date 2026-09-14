@@ -1,8 +1,10 @@
-import { readFileSync } from "node:fs";
+import { createReadStream, existsSync, readFileSync, statSync } from "node:fs";
+import { extname } from "node:path";
 import type { Plugin } from "vite";
 import storage from "../src/data/media-storage.json" with { type: "json" };
 import { assetKeyForPath, assetUrl } from "../src/model/assets";
 import { filesIn } from "./asset-storage";
+import { mediaTypes } from "./media-r2";
 
 const applicationFiles = new Set([
 	"public/_headers",
@@ -17,15 +19,22 @@ export function applicationPublicFiles() {
 }
 
 export function siteAssets(): Plugin {
+	let localMaterials = false;
 	return {
 		name: "r2-site-materials",
 		enforce: "pre",
+		configResolved(config) {
+			localMaterials =
+				config.command === "serve" &&
+				config.mode === "development" &&
+				config.env.VITE_LOCAL_MATERIALS === "1";
+		},
 		transform(code, id) {
 			if (!id.endsWith(".css")) return;
 			return code.replace(
 				/url\((["']?)(\/[^\s)'"?]+)\1\)/g,
 				(match, quote: string, path: string) => {
-					const url = assetUrl(path);
+					const url = localMaterials ? path : assetUrl(path);
 					return url === path ? match : `url(${quote}${url}${quote})`;
 				},
 			);
@@ -36,7 +45,7 @@ export function siteAssets(): Plugin {
 				html: html.replace(
 					/\b(href|src)="(\/[^" ]+)"/g,
 					(_match, attribute: string, path: string) =>
-						`${attribute}="${assetUrl(path)}"`,
+						`${attribute}="${localMaterials ? path : assetUrl(path)}"`,
 				),
 				tags: [
 					{
@@ -57,8 +66,20 @@ export function siteAssets(): Plugin {
 				if (!["GET", "HEAD"].includes(request.method ?? "")) return next();
 				const key = assetKeyForPath(url.pathname);
 				if (key) {
+					const file = `public${url.pathname}`;
+					if (localMaterials && existsSync(file) && statSync(file).isFile()) {
+						response.writeHead(200, {
+							"Content-Type":
+								mediaTypes[extname(file)] ?? "application/octet-stream",
+							"Content-Length": statSync(file).size,
+							"Cache-Control": "no-store",
+						});
+						if (request.method === "HEAD") response.end();
+						else createReadStream(file).pipe(response);
+						return;
+					}
 					response.writeHead(302, {
-						Location: assetUrl(`${url.pathname}${url.search}`),
+						Location: `${storage.origin}/${key}${url.search}`,
 						"Cache-Control": "public, max-age=300",
 					});
 					response.end();

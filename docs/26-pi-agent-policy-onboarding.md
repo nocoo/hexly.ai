@@ -1,5 +1,59 @@
 # Pi Agent Policy onboarding
 
+## Approved generated surface — campaign 1.0.3
+
+On 2026-09-14 the owner approved the final local page, authorized this project's
+publication and requested a reusable project skill. The
+[texture skill](../.agents/skills/hexly-brand-textures/SKILL.md) records the actual
+Flare workflow, full-canvas treatment, visibility/contrast and versioned delivery.
+It also records the owner's subsequent direction: animal/bird backgrounds use
+habitat-related leaves and restrained flowers; 3D tools use meaningful materials
+from their working environment. This release changes Pi only.
+
+R2 publication added **68 verified objects / 38,867,578 bytes**, with receipts
+from `2026-09-14T02:09:14.636Z` to `2026-09-14T02:10:01.207Z`.
+All **328** current and historical Pi objects passed full-byte/MIME verification.
+The 9,619 pre-existing inventory records and all older receipts remain unchanged.
+Canonical manifest: `https://h.no.mt/brands/pi-agent-policy/v1.0.3/manifest.json`,
+SHA-256 `1beff6c43a487be2da989f6631d074ca3f29fd4a42fbc1f7983f03b68b3d8d40`.
+Website patch **0.12.4** uses the normal exact-SHA CI/deploy/tag sequence;
+the [GitHub Release](https://github.com/nocoo/hexly.ai/releases/tag/v0.12.4)
+establishes its completed site publication. The final page is
+`https://hexly.ai/projects/pi-agent-policy#texture`.
+
+Export-time local scope and raw approvals in the frozen kit describe their
+creation time. Later R2 receipts and the site Release establish publication;
+those historical source records are not rewritten.
+
+## Local generated-surface acceptance, 2026-09-14
+
+The owner approved both new Flare raw images and requested the final local page
+before publication. [Source recipe](../artwork/brands/pi-agent-policy/v1.0.3/recipe.json)
+and [generation study](../artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/brief.md)
+preserve the exact prompts, requests, responses, PNGs, hashes and decision.
+The instrument Logo remains identity 1.0.0 and retains its approved bytes.
+
+The shallow service-mat grid, contact seats and terracotta return are actual
+`gpt-image-2.5-flare` raster generations. Each 1024px PNG is untouched; WebP is
+a same-size delivery encoding. The native grooves reach the top edge, so the
+page uses one complete material canvas instead of claiming a seamless repeat.
+Both standalone and site specimens preserve the full square. The text surfaces
+use a quiet contained background, keeping opaque text and full Logo contrast.
+Existing Heroes, original Logo, icons, fonts and prior archives stay unchanged.
+
+Local entry: `https://index.dev.hexly.ai/projects/pi-agent-policy#texture`.
+`VITE_LOCAL_MATERIALS=1` in ignored `.env.development.local` serves new material from this
+checkout; production continues to use R2. Original PNG, generation prompt and
+manifest links are usable locally. Publication follows the verified R2 inventory
+and normal website release process; no npm operation is involved.
+
+Local desktop/390px/320px checks passed in both themes, with original PNG
+download hashes, zero tested accessibility violations and minimum text contrast
+4.89:1. Dark text on the generated material uses Hexly light-surface `#f8f8f2`;
+the approved image pixels and the 45% decorative opacity stay unchanged.
+128 gallery/browser tests, key unit checks, typecheck, lint, asset verification
+and build passed. [Inspection record](../artwork/brands/pi-agent-policy/v1.0.3/inspection/browser.json).
+
 Pi Agent Policy is a user-level Pi extension for declarative tool rules and
 bounded recovery. Its default repair allowance is shared across policy repair
 and eligible terminal continuation for one original user input. It is neither

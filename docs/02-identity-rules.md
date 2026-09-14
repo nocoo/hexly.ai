@@ -47,9 +47,29 @@ styling remains separate from independent product UI and source identity rights.
 See [the project contract](../CLAUDE.md#brand-direction-by-product-type) and
 [the family guide](06-logo-family.md).
 
+### Image model selection
+
+For new image requests, the owner selected `gpt-image-2.5-sunburst` for Logos and
+primary identities and `gpt-image-2.5-flare` for secondary decorative assets such
+as background textures on 2026-09-14. Use the current Workflow
+`agi-image-generation` skill and record the actual selected deployment, prompt,
+response and untouched raster hash. Flare is already authorized for this scope;
+do not silently substitute models or reinterpret historical `gpt-image-2`
+generations as Sunburst. Generated raster textures remain distinct from authored
+SVG geometry. Preserve the raw-image review checkpoint and immutable versions.
+
 ## Regenerating previews and profiles
 
 ### Product-specific material analogy
+
+Use the [project texture skill](../.agents/skills/hexly-brand-textures/SKILL.md)
+for new surfaces and approved rollouts. Animals and birds use leaves/foliage
+appropriate to their actual habitat. Flowers are optional and restrained;
+their scale, saturation and contrast must not compete with the original Logo.
+Do not substitute arbitrary tropical leaves, unrelated flowers or the tool
+family's grids and contact traces. Skeuomorphic 3D tools instead use a credible
+working material tied to their function. The accepted Pi Agent Policy 1.0.3
+study supplies a material-tool precedent, not a common motif for every project.
 
 Research the product's job before drawing its supporting texture. Name the
 interaction, a credible physical context, and the marks that belong there.
@@ -63,8 +83,9 @@ specification or a claim of system isolation. Record the geometry, colors,
 opacity, source facts and rendering scale in the versioned recipe. Inspect real
 mobile/desktop sizes in both themes, with enough visibility in empty regions
 and readable text over any background layer. Preserve approved Logo bytes and
-all previous texture versions. A new support texture does not require another
-image-generation request or a source-product identity update.
+all previous texture versions. Reusing an approved surface needs no new image
+request; new raster generations follow the model and raw-review policy above.
+A support-texture update does not require a source-product identity update.
 
 The original project's Logo shape, proportions, colors and exact bytes are
 authoritative. Hexly's paper/ink/terracotta palette, typography, red point and

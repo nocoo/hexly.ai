@@ -1,0 +1,43 @@
+{
+	"inspectedAt": "2026-09-14T01:46:28.296Z",
+	"stage": "untouched-raw-review",
+	"generationCalls": 2,
+	"model": "gpt-image-2.5-flare",
+	"nativeOutputs": [
+		{
+			"theme": "light",
+			"nativeSize": [1024, 1024],
+			"bytes": 1519834,
+			"sha256": "283f67fc038c88d091bad45d2bbbebb2511a7e710ffb1f35d60cdb2089ea62de",
+			"localHttpUrl": "https://index.dev.hexly.ai/artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/light/raw.png",
+			"localHttpBytesMatch": true,
+			"agentInspectedRaw": true,
+			"ownerReviewedExactBytes": false,
+			"altered": false,
+			"finding": "Pale matte material, clear pressed grid, contact seats and muted terracotta inlay. The larger groove meets the top edge; not accepted as a seamless repeating tile."
+		},
+		{
+			"theme": "dark",
+			"nativeSize": [1024, 1024],
+			"bytes": 1514835,
+			"sha256": "8559b1f8151f1abe1c14a58758d733b798385defb4ce7b0ec8b720debf2cb25d",
+			"localHttpUrl": "https://index.dev.hexly.ai/artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/dark/raw.png",
+			"localHttpBytesMatch": true,
+			"agentInspectedRaw": true,
+			"ownerReviewedExactBytes": false,
+			"altered": false,
+			"finding": "Pine-charcoal matte material, visible engraved grid and muted terracotta inlay. Independent native composition; the larger groove meets the top edge. Not accepted as a seamless repeating tile."
+		}
+	],
+	"originalCampaign": {
+		"version": "1.0.2",
+		"manifestSha256": "05aa4e1ac09a47689e6d55a7620531ee459c2d6b2251e8001e6a52483cc6082e",
+		"filesVerifiedUnchanged": 59,
+		"approvedIdentitySha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611"
+	},
+	"derivativesCreated": false,
+	"siteIntegration": false,
+	"r2Uploaded": false,
+	"published": false,
+	"nextStep": "Owner raw-image decision; do not claim tiling readiness or substitute these candidates into the catalogue yet."
+}

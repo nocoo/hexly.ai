@@ -95,7 +95,8 @@ describe("Pi Agent Policy onboarding", () => {
 		});
 	});
 
-	it("keeps both published textures and all identity/Hero bytes when authoring the service mat", async () => {
+	it("keeps the published SVG service-mat archives and their exact identity/Hero bytes", async () => {
+		const root = "public/brands/pi-agent-policy/v1.0.2";
 		const parentRoot = "public/brands/pi-agent-policy/v1.0.0";
 		expect(sha(await readFile(`${parentRoot}/manifest.json`))).toBe(
 			"eef04f8b568759b2e6623dd41607a323ce5829c50792b288037938e3bf1e5d56",
@@ -152,7 +153,7 @@ describe("Pi Agent Policy onboarding", () => {
 			expect(sha(await readFile(oldProvenance.build[key]))).toBe(
 				oldProvenance.build[`${key}Sha256`],
 			);
-		expect(project.brandKit?.previousVersion).toBe("1.0.1");
+		expect(project.brandKit?.previousVersion).toBe("1.0.2");
 		const provenance = await json(`${root}/provenance.json`);
 		expect(provenance.texture.productEvidence.repositoryRevision).toBe(
 			project.source.repositoryRevision,
@@ -165,5 +166,61 @@ describe("Pi Agent Policy onboarding", () => {
 			gridPitchPx: 32,
 			specimenTileCssPx: 256,
 		});
+	});
+
+	it("uses approved Flare raster surfaces without changing the Logo or claiming seamless SVG", async () => {
+		expect(project.brandKit?.texture).toMatchObject({
+			format: "webp",
+			display: "single",
+			model: "gpt-image-2.5-flare",
+		});
+		const manifest = await json(`${root}/manifest.json`);
+		const previous = await json(
+			"public/brands/pi-agent-policy/v1.0.2/manifest.json",
+		);
+		expect(manifest.texture).toMatchObject({
+			method: "gpt-image",
+			repeat: false,
+			crop: false,
+			newGenerationCalls: 2,
+		});
+		for (const file of previous.files) {
+			expect(sha(await readFile(`public${file.path}`))).toBe(file.sha256);
+			const name = file.path.split("/").at(-1);
+			if (
+				!/^(texture-|tokens\.json|provenance\.json|guide\.md|review\.(html|css)|license\.txt)/.test(
+					name,
+				)
+			)
+				expect(sha(await readFile(`${root}/${name}`)), name).toBe(file.sha256);
+		}
+		for (const theme of ["light", "dark"]) {
+			const approval = await json(
+				`${root}/source-texture-${theme}-raw-review.json`,
+			);
+			const request = await json(
+				`${root}/source-texture-${theme}-request.json`,
+			);
+			const response = await json(
+				`${root}/source-texture-${theme}-response.json`,
+			);
+			expect(approval).toMatchObject({
+				status: "approved",
+				ownerReviewedExactBytes: true,
+			});
+			expect(request.parameters.model).toBe("gpt-image-2.5-flare");
+			expect(sha(await readFile(`${root}/texture-${theme}.png`))).toBe(
+				approval.imageSha256,
+			);
+			expect(approval.imageSha256).toBe(response.outputs[0].sha256);
+			expect(sha(await readFile(`${root}/texture-${theme}-prompt.txt`))).toBe(
+				request.promptSha256,
+			);
+			expect(
+				manifest.files.some((file: { path: string }) =>
+					file.path.endsWith(`texture-${theme}.svg`),
+				),
+			).toBe(false);
+		}
 	});
 });

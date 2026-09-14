@@ -1,0 +1,67 @@
+{
+	"project": "pi-agent-policy",
+	"version": "1.0.3",
+	"parentManifestSha256": "05aa4e1ac09a47689e6d55a7620531ee459c2d6b2251e8001e6a52483cc6082e",
+	"manifestSha256": "1beff6c43a487be2da989f6631d074ca3f29fd4a42fbc1f7983f03b68b3d8d40",
+	"files": 67,
+	"changedFiles": [
+		"guide.md",
+		"license.txt",
+		"manifest.json",
+		"provenance.json",
+		"review.css",
+		"review.html",
+		"source-texture-dark-raw-review.json",
+		"source-texture-dark-request.json",
+		"source-texture-dark-response.json",
+		"source-texture-light-raw-review.json",
+		"source-texture-light-request.json",
+		"source-texture-light-response.json",
+		"texture-dark-prompt.txt",
+		"texture-dark.png",
+		"texture-dark.webp",
+		"texture-light-prompt.txt",
+		"texture-light.png",
+		"texture-light.webp",
+		"tokens.json"
+	],
+	"approvedIdentitySha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+	"generatedSurfaces": [
+		{
+			"theme": "light",
+			"requestId": "e3b5a9d1-7e87-4861-b915-f303604ab73f",
+			"request": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/light/request.json",
+			"response": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/light/response.json",
+			"approval": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/light/raw-review.json",
+			"raw": {
+				"path": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/light/raw.png",
+				"export": "/brands/pi-agent-policy/v1.0.3/texture-light.png",
+				"sha256": "283f67fc038c88d091bad45d2bbbebb2511a7e710ffb1f35d60cdb2089ea62de",
+				"bytes": 1519834,
+				"width": 1024,
+				"height": 1024
+			},
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"requestId": "ab49e455-6bf9-404e-8b71-317327f3218f",
+			"request": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/dark/request.json",
+			"response": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/dark/response.json",
+			"approval": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/dark/raw-review.json",
+			"raw": {
+				"path": "artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/dark/raw.png",
+				"export": "/brands/pi-agent-policy/v1.0.3/texture-dark.png",
+				"sha256": "8559b1f8151f1abe1c14a58758d733b798385defb4ce7b0ec8b720debf2cb25d",
+				"bytes": 1514835,
+				"width": 1024,
+				"height": 1024
+			},
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"newGenerationCalls": 2,
+	"published": false
+}

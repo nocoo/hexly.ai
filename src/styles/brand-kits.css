@@ -266,6 +266,7 @@
 }
 .brand-texture-study {
 	margin-block: 36px;
+	scroll-margin-top: calc(var(--site-topbar-offset) + 24px);
 }
 .brand-texture-specimens {
 	display: grid;
@@ -317,6 +318,41 @@
 .brand-kit-specimens img {
 	max-height: 220px;
 	object-fit: contain;
+}
+/* A generated material sample is a whole canvas, not a repeating SVG tile. */
+[data-texture-display="single"] .brand-texture-specimens figure > div {
+	height: auto;
+	aspect-ratio: 1;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+[data-texture-display="single"][data-brand-artwork]
+	:is(.card-main, .brand-kit-intro, .brand-hero figcaption) {
+	position: relative;
+	isolation: isolate;
+	background-image: none;
+}
+[data-texture-display="single"][data-brand-artwork]
+	:is(.card-main, .brand-kit-intro, .brand-hero figcaption)::before {
+	content: "";
+	position: absolute;
+	inset-block: 0;
+	right: 0;
+	aspect-ratio: 1;
+	max-width: 100%;
+	z-index: -1;
+	border-radius: inherit;
+	background: var(--brand-texture) right center / contain no-repeat;
+	mask-image: linear-gradient(to right, transparent, #000 24%);
+	opacity: 0.45;
+	pointer-events: none;
+}
+[data-theme="dark"]
+	[data-texture-display="single"][data-brand-artwork]
+	:is(.card-main, .brand-kit-intro, .brand-hero figcaption) {
+	--ink: #f8f8f2;
+	color: var(--ink);
 }
 @media (max-width: 640px) {
 	.brand-texture-specimens {

@@ -30,5 +30,6 @@
 28. [Standard outros, HTML stills and R2 publication](24-standard-outro-examples.md)
 29. [Agent guides, exact prompts and direct asset reuse](25-agent-guides.md)
 30. [Pi Agent Policy onboarding and first material identity](26-pi-agent-policy-onboarding.md)
+31. [Project background texture skill: habitat foliage and tool materials](../.agents/skills/hexly-brand-textures/SKILL.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

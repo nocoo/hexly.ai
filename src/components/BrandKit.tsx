@@ -3,6 +3,7 @@ import {
 	brandAsset,
 	brandFormat,
 	brandSourceLabel,
+	brandTextureAsset,
 	rasterBrand,
 } from "../model/brand";
 import type { Locale, Project } from "../model/project";
@@ -139,6 +140,8 @@ export function BrandKit({
 			{kit.texture && (
 				<section
 					className="brand-texture-study"
+					data-texture-display={kit.texture.display}
+					id="texture"
 					aria-label={zh ? "底纹设计" : "Texture design"}
 				>
 					<div className="review-section-heading">
@@ -150,7 +153,7 @@ export function BrandKit({
 							<figure key={theme} className={`brand-kit-${theme}`}>
 								<div
 									style={{
-										backgroundImage: `url("${assetUrl(`${kit.root}/texture-${theme}.svg`)}")`,
+										backgroundImage: `url("${assetUrl(brandTextureAsset(kit, theme))}")`,
 									}}
 								/>
 								<figcaption>
@@ -163,13 +166,44 @@ export function BrandKit({
 												? "夜纸"
 												: "Night"}
 									</span>
-									<AssetLink href={`${kit.root}/texture-${theme}.svg`} download>
-										SVG ↓
+									<AssetLink
+										href={
+											kit.texture?.model
+												? `${kit.root}/texture-${theme}.png`
+												: brandTextureAsset(kit, theme)
+										}
+										download
+									>
+										{kit.texture?.model
+											? "PNG"
+											: (kit.texture?.format ?? "svg").toUpperCase()}{" "}
+										↓
 									</AssetLink>
 								</figcaption>
 							</figure>
 						))}
 					</div>
+					{kit.texture?.model && (
+						<p className="brand-kit-provenance">
+							<span>
+								GPT Image ·{" "}
+								{kit.texture?.model.endsWith("flare") ? "Flare" : "Sunburst"}
+							</span>
+							{(["light", "dark"] as const).map((theme) => (
+								<AssetLink
+									key={theme}
+									href={`${kit.root}/texture-${theme}-prompt.txt`}
+								>
+									{zh
+										? theme === "light"
+											? "浅色原始 Prompt"
+											: "深色原始 Prompt"
+										: `${theme === "light" ? "Paper" : "Night"} generation prompt`}{" "}
+									↗
+								</AssetLink>
+							))}
+						</p>
+					)}
 				</section>
 			)}
 			<div className="direction-grid">
@@ -232,8 +266,14 @@ export function BrandKit({
 							? [
 									["logo.png", zh ? "透明主文件" : "Transparent master"],
 									["hero.png", zh ? "原幅 Hero" : "Full-frame hero"],
-									["texture-light.svg", zh ? "浅色底纹" : "Paper texture"],
-									["texture-dark.svg", zh ? "深色底纹" : "Night texture"],
+									[
+										`texture-light.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
+										zh ? "浅色底纹" : "Paper texture",
+									],
+									[
+										`texture-dark.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
+										zh ? "深色底纹" : "Night texture",
+									],
 								]
 							: [["favicon.svg", "Favicon SVG"]]),
 						["favicon.ico", "Favicon ICO"],
@@ -269,8 +309,8 @@ export function BrandKit({
 				<p className="review-caption">
 					{collected
 						? zh
-							? "已有主视觉完整保留；Hero 为独立版式合成，未重新生成图像。本次品牌包由 Hexly 发布，产品仓库与原有采用记录保持独立。"
-							: "Existing artwork preserved in full. Heroes are authored compositions, with no new image generation. This Hexly kit is published independently of product repositories and their prior adoption records."
+							? "已有主视觉完整保留；Hero 为独立版式合成，未重新生成图像。品牌包由 Hexly 维护，产品仓库与原有采用记录保持独立。"
+							: "Existing artwork preserved in full. Heroes are authored compositions, with no new image generation. Hexly maintains this kit independently of product repositories and their prior adoption records."
 						: kit.sourceAdoptionRevision
 							? zh
 								? "源项目已记录资产集成版本。"

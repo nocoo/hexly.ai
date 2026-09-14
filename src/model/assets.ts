@@ -28,5 +28,17 @@ export function assetUrl(value: string): string {
 		: value;
 	const path = relative.split(/[?#]/)[0] ?? "";
 	const key = assetKeyForPath(path);
+	const env = (
+		import.meta as ImportMeta & {
+			env?: { DEV?: boolean; MODE?: string; VITE_LOCAL_MATERIALS?: string };
+		}
+	).env;
+	if (
+		key &&
+		env?.DEV &&
+		env.MODE === "development" &&
+		env.VITE_LOCAL_MATERIALS === "1"
+	)
+		return relative;
 	return key ? `${storage.origin}/${key}${relative.slice(path.length)}` : value;
 }

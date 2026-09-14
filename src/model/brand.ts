@@ -25,10 +25,14 @@ export function brandAsset(
 export function brandTexture(kit: Project["brandKit"]) {
 	return kit && rasterBrand(kit)
 		? {
-				"--brand-texture-light": `url("${assetUrl(`${kit.root}/texture-light.svg`)}")`,
-				"--brand-texture-dark": `url("${assetUrl(`${kit.root}/texture-dark.svg`)}")`,
+				"--brand-texture-light": `url("${assetUrl(brandTextureAsset(kit, "light"))}")`,
+				"--brand-texture-dark": `url("${assetUrl(brandTextureAsset(kit, "dark"))}")`,
 			}
 		: undefined;
+}
+
+export function brandTextureAsset(kit: Kit, theme: Theme) {
+	return `${kit.root}/texture-${theme}.${kit.texture?.format ?? "svg"}`;
 }
 
 export function brandSourceLabel(project: Project, locale: Locale) {

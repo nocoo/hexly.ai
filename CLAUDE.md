@@ -15,6 +15,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | R2 material operations | Bucket/origin in `src/data/media-storage.json`; [project skill](.agents/skills/hexly-r2-media/SKILL.md), [storage contract](docs/21-asset-storage.md), `docs/assets/inventory.json` and publication receipts; existing film receipts in `docs/media/` |
 | Git history / recovery | [Recovery guide](docs/23-git-history-recovery.md); preserve original bundles and commit/ref maps; never merge the old binary history back |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
+| Brand background textures | [Project texture skill](.agents/skills/hexly-brand-textures/SKILL.md): habitat-related foliage for animals/birds, meaningful working materials for 3D tools, exact Flare evidence and readable light/dark presentation |
 | Complete brand archives | [inventory and scope](docs/brand-archives/README.md), [maintenance guide](docs/19-family-brand-archives.md), `public/brands/schema-v2.json` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
 | Status | `src/model/status.ts`, `worker/status.ts`, [storage and scheduling](docs/11-status-monitoring.md) |
@@ -72,6 +73,14 @@ standards in [the identity rules](docs/02-identity-rules.md).
 Explicit owner direction takes precedence. These are defaults for new identities,
 not a request to redesign existing approved Logos or change their colors.
 
+For new GPT Image requests, the owner's 2026-09-14 model policy is
+`gpt-image-2.5-sunburst` for Logos and primary identity artwork, and
+`gpt-image-2.5-flare` for secondary decoration such as support textures. Read the
+current Workflow `agi-image-generation` skill and select the deployment explicitly;
+the owner has already authorized Flare for this decorative scope. Preserve the
+actual model in each receipt and all historical model records. Model choice does
+not replace the exact-byte raw-image checkpoint or imply asset publication.
+
 Backgrounds need the same product research as Logos. Connect the product's core
 interaction to a plausible material or working environment, then choose its
 grain, grid or markings: a folio may suggest leather grain; an engineering sheet
@@ -80,6 +89,13 @@ grid with an open contact and one reset route, echoing rules, interception and a
 shared repair allowance. Record that analogy in the recipe/guide. Make it visible
 at actual display size, quieter beneath text, and do not reuse a generic stencil
 or spread a single project's presentation update to the rest of the catalogue.
+
+Animals and birds use botanical backgrounds suited to their real environment:
+related leaves and foliage first, with flowers used sparingly and in quiet colors
+that do not compete with the Logo. Keep these distinct from 3D tool surfaces;
+do not assign every animal the same vegetation or an instrument grid. Follow the
+[project texture skill](.agents/skills/hexly-brand-textures/SKILL.md) for generation,
+full-canvas/repeat decisions, composition, contrast, archiving and publication.
 
 ## Stack / Layout
 

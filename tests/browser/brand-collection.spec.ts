@@ -46,9 +46,15 @@ for (const project of targets) {
 			const box = await hero.boundingBox();
 			if (!box) throw new Error("Missing visible hero");
 			expect(box.width / box.height).toBeCloseTo(isMobile ? 1 : 2.5, 1);
-			await expect(page.locator(".brand-kit-intro")).toHaveCSS(
-				"background-image",
-				new RegExp(`texture-${theme}\\.svg`),
+			const surface = await page
+				.locator(".brand-kit-intro")
+				.evaluate(
+					(node, single) =>
+						getComputedStyle(node, single ? "::before" : null).backgroundImage,
+					kit.texture?.display === "single",
+				);
+			expect(surface).toMatch(
+				new RegExp(`texture-${theme}\\.${kit.texture?.format ?? "svg"}`),
 			);
 			await expect(page.locator(".brand-official-source img")).toHaveAttribute(
 				"src",
