@@ -3,7 +3,7 @@
 ## Profile
 
 - Repository: [nocoo/hooky](https://github.com/nocoo/hooky)
-- Website: [https://chromewebstore.google.com/detail/hooky/almccnkbhfhckimediabjimflnbfbeeo](https://chromewebstore.google.com/detail/hooky/almccnkbhfhckimediabjimflnbfbeeo)
+- Install from Chrome Web Store: [https://chromewebstore.google.com/detail/hooky/almccnkbhfhckimediabjimflnbfbeeo](https://chromewebstore.google.com/detail/hooky/almccnkbhfhckimediabjimflnbfbeeo)
 - Website evidence: Chrome Web Store link in repository README.md at 8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a
 - Category: tools
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
@@ -12,6 +12,17 @@
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a`
+
+## Product screenshots
+
+Ordered, optional project previews; the detail page opens originals in a keyboard-accessible Lightbox. Original product colors and complete compositions are preserved.
+
+- Send page context to a webhook from the browser popup. / 从浏览器弹窗，把当前页面内容发送到 Webhook。 (1280 × 800)
+  - [Original](https://h.no.mt/projects/hooky/screenshots/store-01/v1.0.0/original-f82541e8c45c.png) · [Page preview](https://h.no.mt/projects/hooky/screenshots/store-01/v1.0.0/preview-7e6407b5dc43.webp) · [Thumbnail](https://h.no.mt/projects/hooky/screenshots/store-01/v1.0.0/thumbnail-674623fe315d.webp) · [Source, rights and hashes](../../docs/assets/hooky/screenshots/store-01/v1.0.0.json)
+- Build reusable webhook templates with page variables and a request preview. / 使用页面变量与请求预览，创建可复用的 Webhook 模板。 (1280 × 800)
+  - [Original](https://h.no.mt/projects/hooky/screenshots/store-02/v1.0.0/original-974cb0ad01ae.png) · [Page preview](https://h.no.mt/projects/hooky/screenshots/store-02/v1.0.0/preview-f49d81df7082.webp) · [Thumbnail](https://h.no.mt/projects/hooky/screenshots/store-02/v1.0.0/thumbnail-aab3c8bb4999.webp) · [Source, rights and hashes](../../docs/assets/hooky/screenshots/store-02/v1.0.0.json)
+- Match a page to the right webhook with Quick Send rules. / 用快速发送规则，将页面匹配到合适的 Webhook。 (1280 × 800)
+  - [Original](https://h.no.mt/projects/hooky/screenshots/store-03/v1.0.0/original-9725adc1eb5c.png) · [Page preview](https://h.no.mt/projects/hooky/screenshots/store-03/v1.0.0/preview-90566c13fd8b.webp) · [Thumbnail](https://h.no.mt/projects/hooky/screenshots/store-03/v1.0.0/thumbnail-5d0a45ca9d81.webp) · [Source, rights and hashes](../../docs/assets/hooky/screenshots/store-03/v1.0.0.json)
 
 ## Project goal
 

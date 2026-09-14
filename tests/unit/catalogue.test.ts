@@ -5,6 +5,7 @@ import {
 	categoryCounts,
 	destination,
 	filterProjects,
+	isChromeWebStoreProject,
 	loadProjects,
 	parseCatalogue,
 	selectedProject,
@@ -26,6 +27,22 @@ const overview: ProjectOverview = {
 };
 
 describe("the imported project catalogue", () => {
+	it("recognizes the two evidenced Chrome store destinations without duplicating URLs", () => {
+		expect(
+			projects
+				.filter(isChromeWebStoreProject)
+				.map(({ id }) => id)
+				.sort(),
+		).toEqual(["hooky", "r2shot"]);
+		for (const website of [
+			null,
+			"https://hexly.ai",
+			"https://chromewebstore.google.com.example.com/detail/hooky",
+			"https://example.com/?store=https://chromewebstore.google.com/detail/hooky",
+		]) {
+			expect(isChromeWebStoreProject({ website })).toBe(false);
+		}
+	});
 	it("omits Snail after its bookmark and Connector capabilities merge into Zhe", () => {
 		expect(projects.some((project) => project.id === "snail")).toBe(false);
 		expect(projects.find((project) => project.id === "zhe")?.website).toBe(

@@ -2,7 +2,10 @@ import { readFile } from "node:fs/promises";
 import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
-import { filterProjects } from "../../src/model/catalogue";
+import {
+	filterProjects,
+	isChromeWebStoreProject,
+} from "../../src/model/catalogue";
 import { expect, test } from "./fixtures";
 
 // Brand checks stay local; recorded media is exercised in project-media.spec.ts.
@@ -73,7 +76,12 @@ for (const id of projects
 		await expect(repository).toHaveText("GitHub");
 		await expect(repository).toHaveAttribute("href", project.repository);
 		const website = page.locator(".identity-website");
-		if (project.website) {
+		if (isChromeWebStoreProject(project)) {
+			await expect(website).toHaveCount(0);
+			await expect(
+				page.getByRole("link", { name: `Add to Chrome: ${project.title}` }),
+			).toHaveAttribute("href", project.website ?? "");
+		} else if (project.website) {
 			await expect(website).toBeVisible();
 			await expect(website).toHaveText("Visit website");
 			await expect(website).toHaveAttribute("href", project.website);
@@ -255,15 +263,31 @@ for (const id of projects
 	});
 }
 
-test("updates the identity path with pagination and browser history", async ({
+test("uses one top project picker and preserves browser history", async ({
 	page,
 }) => {
 	if (!afterFrogie) throw new Error("Frogie has no following identity.");
 	await page.goto("/projects/frogie");
-	await page.getByRole("button", { name: "Next project" }).click();
-	await expect(page).toHaveURL(
-		new RegExp(`/projects/${afterFrogie.id}#brand$`),
-	);
+	await expect(
+		page.locator(".identity-pagination, .detail-breadcrumb"),
+	).toHaveCount(0);
+	await expect(page.locator("#brand .gallery-selector")).toHaveCount(0);
+	expect(
+		await page
+			.locator(".picker-heading")
+			.evaluate(
+				(element) =>
+					element === document.querySelector("main")?.firstElementChild,
+			),
+	).toBe(true);
+	await expect(
+		page.locator(".picker-heading").getByRole("searchbox"),
+	).toBeInViewport();
+	await page
+		.locator(".picker-item")
+		.filter({ hasText: afterFrogie.title })
+		.click();
+	await expect(page).toHaveURL(new RegExp(`/projects/${afterFrogie.id}$`));
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
 	);
@@ -272,11 +296,130 @@ test("updates the identity path with pagination and browser history", async ({
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
 	);
-	await page.getByRole("button", { name: "Previous project" }).click();
-	await expect(page).toHaveURL(/\/projects\/frogie#brand$/);
+	await page.locator(".picker-item").filter({ hasText: "Frogie" }).click();
+	await expect(page).toHaveURL(/\/projects\/frogie$/);
 	await page.goBack();
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
+	);
+});
+
+test("pins only the carousel and centers the selected project, including both ends and resized views", async ({
+	page,
+}) => {
+	const middle = ordered[Math.floor(ordered.length / 2)];
+	const last = ordered.at(-1);
+	if (!firstVisible || !middle || !last)
+		throw new Error("The picker needs its catalogue.");
+	const centerError = () =>
+		page.locator('.picker-item[aria-pressed="true"]').evaluate((element) => {
+			const item = element.getBoundingClientRect();
+			const carousel = element.parentElement?.getBoundingClientRect();
+			return carousel
+				? Math.abs(
+						item.left + item.width / 2 - carousel.left - carousel.width / 2,
+					)
+				: Infinity;
+		});
+	await page.goto(`/projects/${middle.id}`);
+	await page.evaluate(() => document.fonts.ready);
+	await expect.poll(centerError).toBeLessThanOrEqual(1);
+	await page.locator('.project-section-nav a[href="#brand"]').click();
+	await expect
+		.poll(() =>
+			page.locator(".gallery-selector").evaluate((element) => {
+				const header = document
+					.querySelector(".site-header")
+					?.getBoundingClientRect();
+				return header
+					? Math.abs(element.getBoundingClientRect().top - header.bottom)
+					: Infinity;
+			}),
+		)
+		.toBeLessThanOrEqual(1);
+	await expect(page.locator(".picker-heading")).not.toBeInViewport();
+	await expect
+		.poll(() =>
+			page
+				.locator("#brand")
+				.evaluate((element) =>
+					Math.abs(
+						element.getBoundingClientRect().top -
+							(document
+								.querySelector(".gallery-selector")
+								?.getBoundingClientRect().bottom ?? 0) -
+							20,
+					),
+				),
+		)
+		.toBeLessThanOrEqual(1);
+	for (const project of [firstVisible, last, middle]) {
+		await page
+			.locator(".picker-item")
+			.nth(ordered.findIndex((item) => item.id === project.id))
+			.click();
+		await expect(page.locator("#identity-title")).toContainText(project.title);
+		await expect.poll(centerError).toBeLessThanOrEqual(1);
+	}
+	await page.setViewportSize({ width: 320, height: 740 });
+	await expect.poll(centerError).toBeLessThanOrEqual(1);
+	await page.getByRole("searchbox").fill("pew");
+	await expect(page.locator(".picker-item")).toHaveCount(2);
+	await expect.poll(centerError).toBeLessThanOrEqual(1);
+});
+
+test("offers the official installation badge for both Chrome extensions in light, dark and Chinese", async ({
+	page,
+}) => {
+	for (const id of ["hooky", "r2shot"]) {
+		const project = projects.find((item) => item.id === id);
+		if (!project?.website) throw new Error(`Missing store URL: ${id}`);
+		await page.goto(`/projects/${id}`);
+		const badge = page.locator(".identity-chrome-store");
+		await expect(badge).toHaveAttribute(
+			"aria-label",
+			`Add to Chrome: ${project.title}`,
+		);
+		await expect(badge).toHaveAttribute("href", project.website);
+		await expect(badge).toHaveAttribute("target", "_blank");
+		await expect(page.locator(".identity-website")).toHaveCount(0);
+		await expect(page.locator(".identity-github")).toHaveAttribute(
+			"href",
+			project.repository,
+		);
+		for (const theme of ["light", "dark"]) {
+			await page.evaluate(
+				(value) => (document.documentElement.dataset.theme = value),
+				theme,
+			);
+			await badge.locator("img").evaluate(async (node) => {
+				const image = node as HTMLImageElement;
+				await image.decode();
+				if (image.naturalWidth !== 340 || image.naturalHeight !== 96)
+					throw new Error("Official badge did not decode intact.");
+			});
+			await expect(badge.locator("img")).toHaveCSS("width", "170px");
+			await expect(badge.locator("img")).toHaveCSS("height", "48px");
+			expect(
+				await page.evaluate(
+					() => document.documentElement.scrollWidth <= innerWidth,
+				),
+			).toBe(true);
+		}
+	}
+	await page.getByRole("button", { name: "Switch to Chinese" }).click();
+	await expect(page.locator(".identity-chrome-store")).toHaveAttribute(
+		"aria-label",
+		"添加至 Chrome: R2Shot",
+	);
+	await page.locator('.project-section-nav a[href="#brand"]').click();
+	await expect(page).toHaveURL(/#brand$/);
+	await page.getByRole("searchbox").fill("hooky");
+	await expect(page).toHaveURL(/\/projects\/hooky\?q=hooky$/);
+	await expect(page.locator(".gallery-selector")).toBeInViewport();
+	await expect(page.locator(".identity-chrome-store")).toHaveAttribute(
+		"aria-label",
+		"添加至 Chrome: Hooky",
 	);
 });
 
@@ -307,32 +450,27 @@ test("browses filtered identities with arrow keys, wraps, and preserves history"
 	await page.goto("/projects/pew?q=pew&sort=az");
 	await expect(page.locator(".picker-item")).toHaveCount(2);
 	await expect(
-		page.getByRole("button", { name: "Previous project" }),
-	).toHaveAttribute("aria-keyshortcuts", "ArrowLeft");
-	await expect(
-		page.getByRole("button", { name: "Next project" }),
-	).toHaveAttribute("aria-keyshortcuts", "ArrowRight");
+		page.locator('.picker-item[aria-pressed="true"]'),
+	).toHaveAttribute("aria-keyshortcuts", "ArrowLeft ArrowRight");
+	await expect(page.locator(".identity-pagination")).toHaveCount(0);
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#brand$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az$/);
 	await expect(page.locator("#identity-title")).toContainText("Pew Game");
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az#brand$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az$/);
 	await page.keyboard.press("ArrowLeft");
-	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#brand$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az$/);
 	await page.goBack();
-	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az#brand$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az$/);
 	await page.goForward();
-	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#brand$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az$/);
 	await page
 		.getByRole("combobox", { name: "Project categories" })
 		.selectOption("games");
 	await expect(page.locator(".picker-item")).toHaveCount(1);
 	await expect(
-		page.getByRole("button", { name: "Next project" }),
-	).toBeDisabled();
-	await expect(
-		page.getByRole("button", { name: "Previous project" }),
-	).toBeDisabled();
+		page.locator('.picker-item[aria-pressed="true"]'),
+	).not.toHaveAttribute("aria-keyshortcuts");
 	await page.locator(".identity-github").focus();
 	const singleUrl = page.url();
 	const historyLength = await page.evaluate(() => history.length);
@@ -436,7 +574,11 @@ test("keeps the brand section aligned while switching projects and languages", a
 		await page
 			.locator("#brand")
 			.evaluate((element) => element.scrollIntoView());
-		await page.locator('.picker-item[aria-pressed="true"]').focus();
+		await page
+			.locator('.picker-item[aria-pressed="true"]')
+			.evaluate((element) =>
+				(element as HTMLElement).focus({ preventScroll: true }),
+			);
 		const start = await page
 			.locator("#brand")
 			.evaluate((element) => element.getBoundingClientRect().top);
@@ -506,5 +648,5 @@ test("searches the gallery, labels emoji identities, and recovers from empty or 
 	);
 	await page.locator(".picker-item").filter({ hasText: "Backy" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Backy");
-	await expect(page).toHaveURL(/\/projects\/backy#brand$/);
+	await expect(page).toHaveURL(/\/projects\/backy$/);
 });

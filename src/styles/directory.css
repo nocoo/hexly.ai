@@ -367,7 +367,7 @@
 	opacity: 1;
 	transform: translateY(0);
 }
-.card-github {
+.card-external {
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -387,11 +387,11 @@
 		background 150ms,
 		border-color 150ms;
 }
-.card-github .icon {
+.card-external .icon {
 	width: 13px;
 	height: 13px;
 }
-.card-github:hover {
+.card-external:hover {
 	background: var(--hover);
 	border-color: var(--muted);
 }
@@ -504,7 +504,7 @@
 		gap: 16px;
 		grid-template-columns: 88px minmax(0, 1fr);
 	}
-	.card-github {
+	.card-external {
 		top: 18px;
 		right: 18px;
 	}
@@ -677,7 +677,7 @@
 		gap: 14px;
 		grid-template-columns: 80px minmax(0, 1fr);
 	}
-	.card-github {
+	.card-external {
 		top: 14px;
 		right: 14px;
 	}

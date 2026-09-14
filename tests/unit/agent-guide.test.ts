@@ -21,6 +21,40 @@ import {
 const projects = readProjects();
 
 describe("page-specific agent handoffs", () => {
+	it("describes Chrome store links as installation destinations in HTML and agent handoffs", () => {
+		for (const id of ["hooky", "r2shot"]) {
+			const project = projects.find((p) => p.id === id);
+			const guide = agentGuide(`/projects/${id}`, projects);
+			expect(guide.body).toContain(
+				`Install from Chrome Web Store: ${project?.website}`,
+			);
+			expect(guide.body).not.toContain(`Website: ${project?.website}`);
+			expect(pageForPath(`/projects/${id}`, projects).bodyHtml).toContain(
+				`href="${project?.website}">Add to Chrome</a>`,
+			);
+		}
+	});
+	it("exposes optional screenshot originals, smaller previews and provenance to agents", () => {
+		for (const id of ["hooky", "r2shot"]) {
+			const project = projects.find((p) => p.id === id);
+			const guide = agentGuide(`/projects/${id}`, projects);
+			const page = pageForPath(`/projects/${id}`, projects);
+			for (const shot of project?.media?.screenshots ?? []) {
+				expect(guide.body).toContain(assetUrl(shot.src));
+				expect(guide.body).toContain(assetUrl(shot.preview ?? shot.src));
+				expect(guide.body).toContain(`${shot.width} × ${shot.height}`);
+				expect(page.bodyHtml).toContain(
+					`<img crossorigin="anonymous" src="${assetUrl(shot.preview ?? shot.src)}"`,
+				);
+				expect(page.bodyHtml).toContain(`href="${assetUrl(shot.src)}"`);
+				expect(
+					guide.resources.some((resource) =>
+						resource.href.endsWith(shot.source ?? "missing"),
+					),
+				).toBe(true);
+			}
+		}
+	});
 	it("publishes one discoverable Markdown guide per canonical page from the same content", () => {
 		const pages = discoveryPages(projects);
 		const files = agentFiles(projects);

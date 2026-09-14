@@ -26,7 +26,31 @@ and receipts under `docs/media/hexly-ai/`; see [the standard-outro runbook](24-s
 These endings can be reused directly across projects, without regeneration.
 They do not create synthetic catalogue projects or duplicate product recordings.
 Screenshot-only entries are supported. The first catalogue screenshot also
-feeds the template adapter; an uploaded browser screenshot can override it.
+feeds the template adapter, using its lightweight preview when supplied; an
+uploaded browser screenshot can override it. The brand Hero lives inside the
+later `#brand` archive, leaving product media directly after the introduction.
+
+Every project detail shares the same top browser: Select a project, category
+(All projects) and search, followed by the horizontal project list. The site
+header's Projects link returns to the catalogue; there is no second breadcrumb
+or previous/next toolbar. Only the carousel sticks below the existing site
+navigation; its label/category/search row scrolls away. The selected project
+automatically centers, including the first/last item and after resizing or
+filtering. Reduced motion uses immediate horizontal alignment. Section anchors
+account for the carousel's measured height, keeping headings visible below it.
+Choosing or filtering a project here returns to its
+introduction. Arrow-key browsing preserves an explicit `#brand` anchor when
+comparing identities. The optional-media layout applies to the entire catalogue;
+new screenshot batches only need the existing per-project data and receipts.
+
+Chrome Web Store URLs in the existing `website` field are installation
+destinations. Hooky and R2Shot use the official store badge on their details,
+with bilingual Add to Chrome accessibility labels; their catalogue cards link
+directly to the store through the compact Chrome action. Ordinary sites retain
+Visit website, and details retain the GitHub source link. Google badge bytes and
+rights are recorded in
+[`docs/assets/hexly-ai/badges/chrome-web-store/v1.0.0.json`](assets/hexly-ai/badges/chrome-web-store/v1.0.0.json).
+This classification does not change status monitoring or project source data.
 
 `#media`, `#video-<video-id>`, `#overview` and `#brand` select page sections.
 Native CSS smooth scrolling handles links and history; reduced motion uses
@@ -78,7 +102,10 @@ the example hash, metadata and paths with verified values before adoption.
     }],
     "screenshots": [{
       "id": "workspace",
-      "src": "/screenshots/example/workspace.webp",
+      "src": "/screenshots/example/workspace/v1.0.0/original.png",
+      "preview": "/screenshots/example/workspace/v1.0.0/preview.webp",
+      "thumbnail": "/screenshots/example/workspace/v1.0.0/thumbnail.webp",
+      "source": "docs/assets/example/screenshots/workspace/v1.0.0.json",
       "alt": { "en": "The project workspace", "zh": "项目工作区" },
       "width": 1920,
       "height": 1080
@@ -92,9 +119,25 @@ duration, language, version, SHA-256 and a provenance reference. Caption tracks
 are optional but should accompany narrated or spoken content. Set
 `captionsBurnedIn: true` for a film whose picture already includes captions;
 its optional native tracks start off to avoid overlapping the existing text.
-Screenshots
-require a unique ID, bilingual alt text and intrinsic dimensions. Either list
-may be absent. Do not invent content to fill the UI.
+Screenshots require a unique ID, bilingual alt text, original URL and intrinsic
+dimensions. Optional `preview` and `thumbnail` URLs keep browsing light; each
+falls back to `src`. Optional `source` points to a versioned screenshot receipt
+containing source revision, rights and original/derivative hashes. New R2 intakes
+provide all three. Either list may be absent or empty; no placeholder is rendered.
+
+The screenshot gallery preserves full images of different aspect ratios. A click
+opens the full-resolution original in a native modal with a focused viewing area.
+Multiple images have bottom thumbnails, previous/next buttons, arrow keys and
+Home/End navigation; a single image omits those controls. Escape closes the dialog,
+background scrolling is locked, and focus returns to the opening link. Modified
+clicks and the dialog's original-file link remain ordinary original-image links.
+Mobile thumbnails scroll independently, and reduced motion removes transitions.
+
+Hooky and R2Shot each import three existing `materials/2.0.0/store/screenshots/`
+images from pinned source revisions. Their independent Hexly screenshot version
+is `1.0.0`; original PNGs remain byte-identical, with uncropped WebP and thumbnail
+derivatives. The [screenshot maintenance runbook](../.agents/skills/hexly-r2-media/references/project-screenshots.md)
+records exact directories, upload scope, URL recovery and extensible intake steps.
 
 The browser requests only the poster before a click. Playback mounts a native
 `video` with controls, inline mobile playback, `preload="metadata"`, and caption
@@ -106,6 +149,9 @@ server rendering or media proxy on the Hexly Worker.
 Poster images in the crawler HTML, React view and video element all use
 `crossorigin="anonymous"`. Keeping their request modes consistent prevents the
 browser from reusing a non-CORS poster response when playback begins.
+Screenshot previews, originals and thumbnails use that same anonymous mode in
+crawler HTML and React. This preserves subsequent CORS fetches and canvas/export
+reuse when a browser has already cached the preview image.
 
 ## R2 publication boundary
 

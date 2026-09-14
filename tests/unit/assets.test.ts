@@ -22,6 +22,34 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("keeps screenshot versions and project namespaces independent of identity assets", () => {
+		const hash = "a".repeat(64);
+		expect(
+			assetKey(
+				"/screenshots/hooky/store-01/v1.2.0/original.png",
+				hash,
+				"hooky",
+			),
+		).toBe(
+			"projects/hooky/screenshots/store-01/v1.2.0/original-aaaaaaaaaaaa.png",
+		);
+		expect(
+			assetKey(
+				"/screenshots/r2shot/workspace/v2.0.0/thumbnail.webp",
+				hash,
+				"r2shot",
+			),
+		).toBe(
+			"projects/r2shot/screenshots/workspace/v2.0.0/thumbnail-aaaaaaaaaaaa.webp",
+		);
+		expect(() =>
+			assetKey(
+				"/screenshots/hooky/store-01/v1.0.0/original.png",
+				hash,
+				"r2shot",
+			),
+		).toThrow("Screenshot path and catalogue project disagree");
+	});
 	it("keeps test-mode URLs on R2 when the local preview flag is present", () => {
 		const path = "/brands/pi-agent-policy/v1.0.3/texture-light.webp";
 		try {
@@ -328,6 +356,27 @@ describe("R2 material delivery", () => {
 			for (const alias of file.aliases ?? [])
 				expect(assetKeyForPath(alias)).toBe(file.key);
 		}
+	});
+	it("keeps the official Chrome store badge bytes and third-party rights distinct", () => {
+		const badge = readInventory().files.find(
+			(file) =>
+				file.path === "/badges/chrome-web-store/v1.0.0/chrome-web-store.png",
+		);
+		expect(badge?.role).toBe("third-party-badge");
+		expect(badge?.sha256).toBe(
+			"fbf289fca885e58a1507cc8c69a9df68f35e83e683825b3ad6cd617b0a17d79c",
+		);
+		expect(digest(readFileSync(badge?.source ?? ""))).toBe(badge?.sha256);
+		const receipt = JSON.parse(readFileSync(badge?.provenance ?? "", "utf8"));
+		expect(receipt.source.rightsHolder).toBe("Google LLC");
+		expect(receipt.source.guidance).toBe(
+			"https://developer.chrome.com/docs/webstore/branding",
+		);
+		expect(receipt.files[0]).toMatchObject({
+			width: 340,
+			height: 96,
+			sha256: badge?.sha256,
+		});
 	});
 	it("rejects invalid CLI selectors before any upload or hydration", () => {
 		for (const args of [

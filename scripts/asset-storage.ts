@@ -42,6 +42,8 @@ export interface StoredAsset {
 	role:
 		| "official-project-identity"
 		| "hexly-campaign"
+		| "project-media"
+		| "third-party-badge"
 		| "licensed-font"
 		| "source-archive";
 	provenance: string;
@@ -141,6 +143,16 @@ export function assetKey(path: string, sha256: string, project: string) {
 	const stem = basename(path, extname(path))
 		.toLowerCase()
 		.replace(/[^a-z0-9-]+/g, "-");
+	const screenshot = path.match(
+		/^\/screenshots\/([a-z0-9-]+)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//,
+	);
+	if (screenshot) {
+		if (screenshot[1] !== project)
+			throw new Error(
+				`Screenshot path and catalogue project disagree: ${path}`,
+			);
+		return `projects/${project}/screenshots/${screenshot[2]}/v${screenshot[3]}/${stem}-${sha256.slice(0, 12)}${extension}`;
+	}
 	const prefix =
 		project === "hexly-ai" ? "shared/site" : `projects/${project}/identity`;
 	return `${prefix}/v1.0.0/${stem}-${sha256.slice(0, 12)}${extension}`;
@@ -211,6 +223,10 @@ export async function inventory() {
 			identity;
 		const official =
 			path === project.logo.original || /\/official-logo\./.test(source);
+		const screenshot = path?.match(
+			/^\/screenshots\/([a-z0-9-]+)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//,
+		);
+		const badge = path?.match(/^\/badges\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//);
 		files.push(
 			old ?? {
 				source,
@@ -229,18 +245,26 @@ export async function inventory() {
 				project: project.id,
 				role: official
 					? "official-project-identity"
-					: /\.(woff2?|ttf|otf)$/.test(source)
-						? "licensed-font"
-						: path
-							? "hexly-campaign"
-							: "source-archive",
+					: badge
+						? "third-party-badge"
+						: screenshot
+							? "project-media"
+							: /\.(woff2?|ttf|otf)$/.test(source)
+								? "licensed-font"
+								: path
+									? "hexly-campaign"
+									: "source-archive",
 				provenance: official
 					? project.logo.sourceUrl
-					: path?.startsWith("/brands/")
-						? `${dirname(path)}/provenance.json`
-						: path?.startsWith("/video-kit/")
-							? "packages/video-kit/brand-source.json"
-							: "docs/02-identity-rules.md",
+					: badge
+						? `docs/assets/hexly-ai/badges/${badge[1]}/v${badge[2]}.json`
+						: screenshot
+							? `docs/assets/${project.id}/screenshots/${screenshot[2]}/v${screenshot[3]}.json`
+							: path?.startsWith("/brands/")
+								? `${dirname(path)}/provenance.json`
+								: path?.startsWith("/video-kit/")
+									? "packages/video-kit/brand-source.json"
+									: "docs/02-identity-rules.md",
 			},
 		);
 	}

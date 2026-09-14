@@ -3,7 +3,7 @@
 ## Profile
 
 - Repository: [nocoo/r2shot](https://github.com/nocoo/r2shot)
-- Website: [https://chromewebstore.google.com/detail/r2shot/chhcpjnlcbomogddjockcpjjpiijogha](https://chromewebstore.google.com/detail/r2shot/chhcpjnlcbomogddjockcpjjpiijogha)
+- Install from Chrome Web Store: [https://chromewebstore.google.com/detail/r2shot/chhcpjnlcbomogddjockcpjjpiijogha](https://chromewebstore.google.com/detail/r2shot/chhcpjnlcbomogddjockcpjjpiijogha)
 - Website evidence: Chrome Web Store link in repository README.md at d69714a2332066c9c7b1792f919607a4b776eade
 - Category: tools
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
@@ -12,6 +12,17 @@
 - Profile section: Recent Projects
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `d69714a2332066c9c7b1792f919607a4b776eade`
+
+## Product screenshots
+
+Ordered, optional project previews; the detail page opens originals in a keyboard-accessible Lightbox. Original product colors and complete compositions are preserved.
+
+- Capture the current page and upload it to your R2 bucket. / 截取当前页面，并上传到自己的 R2 存储桶。 (1280 × 800)
+  - [Original](https://h.no.mt/projects/r2shot/screenshots/store-01/v1.0.0/original-af7721524488.png) · [Page preview](https://h.no.mt/projects/r2shot/screenshots/store-01/v1.0.0/preview-ab639ba73e6d.webp) · [Thumbnail](https://h.no.mt/projects/r2shot/screenshots/store-01/v1.0.0/thumbnail-939e4ccb4bab.webp) · [Source, rights and hashes](../../docs/assets/r2shot/screenshots/store-01/v1.0.0.json)
+- Configure your storage, image quality and full-page capture limit. / 配置存储、画质与长页面截图范围。 (1280 × 800)
+  - [Original](https://h.no.mt/projects/r2shot/screenshots/store-02/v1.0.0/original-a2690191a16b.png) · [Page preview](https://h.no.mt/projects/r2shot/screenshots/store-02/v1.0.0/preview-ba7d2c9c01ee.webp) · [Thumbnail](https://h.no.mt/projects/r2shot/screenshots/store-02/v1.0.0/thumbnail-2def4a3ffac2.webp) · [Source, rights and hashes](../../docs/assets/r2shot/screenshots/store-02/v1.0.0.json)
+- Capture a full page and copy a link to the uploaded image. / 截取完整页面，一键复制已上传图片的链接。 (1280 × 800)
+  - [Original](https://h.no.mt/projects/r2shot/screenshots/store-03/v1.0.0/original-964687b81e9e.png) · [Page preview](https://h.no.mt/projects/r2shot/screenshots/store-03/v1.0.0/preview-d4c0e6eab46a.webp) · [Thumbnail](https://h.no.mt/projects/r2shot/screenshots/store-03/v1.0.0/thumbnail-8df1896116d3.webp) · [Source, rights and hashes](../../docs/assets/r2shot/screenshots/store-03/v1.0.0.json)
 
 ## Project goal
 

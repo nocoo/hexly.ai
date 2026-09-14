@@ -1,5 +1,6 @@
 import examples from "../data/template-examples.json" with { type: "json" };
 import { assetUrl } from "./assets";
+import { isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { siteOrigin } from "./routes";
 import { healthEndpoint } from "./status";
@@ -60,7 +61,7 @@ export function agentGuide(
 		instructions.push(
 			project.description.en,
 			`Project ID: ${project.id}. Catalogue state: ${project.archived ? "archived" : "active"}. This is not a product release or health assertion.`,
-			`Repository: ${project.repository}\nWebsite: ${project.website ?? "not listed"}`,
+			`Repository: ${project.repository}\n${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ?? "not listed"}`,
 			`Original project identity: ${assetUrl(project.logo.original)}\nOriginal SHA-256: ${project.logo.sha256}\nSource: ${project.logo.sourceUrl}`,
 			"Reuse the approved downloadable files. Preserve the original Logo geometry, proportions, colors and bytes. Hexly campaign styling belongs to this archive and Hexly promotional material; the product's own palette and UI remain independent.",
 		);
@@ -105,6 +106,16 @@ export function agentGuide(
 			instructions.push(
 				`Project recording: ${video.title.en}\nMP4: ${assetUrl(video.src)}\nSHA-256: ${video.sha256}\nVersion: ${video.version}`,
 			);
+		for (const shot of project.media?.screenshots ?? []) {
+			instructions.push(
+				`Project screenshot: ${shot.alt.en}\nOriginal: ${assetUrl(shot.src)}\nDimensions: ${shot.width} × ${shot.height}${shot.preview ? `\nPage preview: ${assetUrl(shot.preview)}` : ""}${shot.thumbnail ? `\nThumbnail: ${assetUrl(shot.thumbnail)}` : ""}\nPreserve the full image and its original product colors; these are product materials, not a new Logo or a product-release assertion.`,
+			);
+			if (shot.source)
+				resources.push({
+					label: `Screenshot ${shot.id}: source, license and SHA-256 receipts`,
+					href: `https://github.com/nocoo/hexly.ai/blob/main/${shot.source}`,
+				});
+		}
 		const endpoint = healthEndpoint(project);
 		if (endpoint)
 			instructions.push(
@@ -188,6 +199,7 @@ export function agentGuide(
 			"The default directory excludes archived projects. An entry being listed does not prove its product is released or its website is healthy. Read the status API for observed health.",
 			"Reuse original brand assets and preserve their geometry, proportions, colors, license and provenance. Hexly campaign artwork is labelled separately from official project identity. Do not recolor a project's Logo or transfer the Hexly promotional palette into its product UI.",
 			"Use existing project recordings when media.videos is present. Otherwise omit the video section. Standard Hexly outros are already rendered and can be used across projects without regeneration.",
+			"Optional media.screenshots contains ordered product previews. Use preview/thumbnail derivatives for browsing, src for the full-resolution original, and source for versioned provenance and hashes. Preserve aspect ratios and omit this section when the list is absent or empty.",
 		);
 		resources.push(
 			{

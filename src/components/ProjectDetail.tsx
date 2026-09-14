@@ -7,8 +7,13 @@ import {
 	useRef,
 } from "react";
 import { categoryLabels, copy } from "../data/copy";
+import { assetUrl } from "../model/assets";
 import { brandSourceLabel, brandTexture } from "../model/brand";
-import { categories, categoryCounts } from "../model/catalogue";
+import {
+	categories,
+	categoryCounts,
+	isChromeWebStoreProject,
+} from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import type { Category, Locale, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
@@ -41,42 +46,66 @@ export function ProjectDetail({
 	const project = projects.find((item) => item.id === state.project);
 	const counts = categoryCounts(projects);
 	const foreground = project?.family?.foreground ?? project?.logo;
+	const chromeStore = project ? isChromeWebStoreProject(project) : false;
 	const selectedIndex = visible.findIndex((item) => item.id === project?.id);
 	const pickerRef = useRef<HTMLDivElement>(null);
 	useLayoutEffect(() => {
 		const picker = pickerRef.current;
 		if (!picker) return;
+		const root = document.documentElement;
 		const items = picker.querySelectorAll<HTMLButtonElement>(".picker-item");
 		const current = items[selectedIndex];
+		const first = items[0];
 		const last = items[visible.length - 1];
-		if (!current || !last) return;
+		if (!current || !first || !last) return;
 
 		const alignCurrent = () => {
-			// Leave enough trailing space for even the final project to align left.
+			// Both edge projects need enough space to sit at the carousel's center.
+			picker.style.setProperty(
+				"--picker-first-width",
+				`${first.getBoundingClientRect().width}px`,
+			);
 			picker.style.setProperty(
 				"--picker-last-width",
 				`${last.getBoundingClientRect().width}px`,
 			);
-			const inset = Number.parseFloat(getComputedStyle(picker).paddingLeft);
+			root.style.setProperty(
+				"--project-carousel-height",
+				`${picker.parentElement?.offsetHeight ?? 0}px`,
+			);
 			picker.scrollTo({
-				left: current.offsetLeft - inset,
-				behavior: "instant",
+				left:
+					current.offsetLeft +
+					current.getBoundingClientRect().width / 2 -
+					picker.clientWidth / 2,
+				behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+					? "instant"
+					: "smooth",
 			});
 		};
+		if (picker.contains(document.activeElement))
+			current.focus({ preventScroll: true });
 		alignCurrent();
 		const observer = new ResizeObserver(alignCurrent);
 		observer.observe(picker);
 		for (const item of items) observer.observe(item);
-		return () => observer.disconnect();
+		return () => {
+			observer.disconnect();
+			root.style.removeProperty("--project-carousel-height");
+		};
 	}, [selectedIndex, visible]);
 	const move = useCallback(
 		(offset: number) => {
 			if (visible.length < 2) return;
 			const next =
 				visible[(selectedIndex + offset + visible.length) % visible.length];
-			if (next) onChange({ project: next.id, anchor: "brand" });
+			if (next)
+				onChange({
+					project: next.id,
+					anchor: state.anchor === "brand" ? "brand" : undefined,
+				});
 		},
-		[visible, selectedIndex, onChange],
+		[visible, selectedIndex, onChange, state.anchor],
 	);
 	useEffect(() => {
 		const onKeyDown = (event: KeyboardEvent) => {
@@ -108,51 +137,78 @@ export function ProjectDetail({
 	}, [move, visible.length]);
 	return (
 		<main id="main-content" className="shell gallery-main project-detail-main">
-			<nav className="detail-breadcrumb" aria-label={t.browseAs}>
-				<AssetLink
-					href="/"
-					onClick={(event) => {
-						if (
-							event.button ||
-							event.metaKey ||
-							event.ctrlKey ||
-							event.shiftKey ||
-							event.altKey
-						)
-							return;
-						event.preventDefault();
-						onChange({
-							view: "directory",
-							query: "",
-							category: "all",
-						});
-					}}
-				>
-					<Icon name="left" />
-					{t.back}
-				</AssetLink>
-				<AssetLink
-					href="/logos"
-					onClick={(event) => {
-						if (
-							event.button ||
-							event.metaKey ||
-							event.ctrlKey ||
-							event.shiftKey ||
-							event.altKey
-						)
-							return;
-						event.preventDefault();
-						onChange({
-							view: "logos",
-							query: "",
-							category: "all",
-						});
-					}}
-				>
-					<Icon name="image" />
-					{t.gallery}
-				</AssetLink>
+			<div className="picker-heading">
+				<span>
+					{t.selectProject}{" "}
+					<span className="mono">
+						{visible.length}/{projects.length}
+					</span>
+				</span>
+				<div className="picker-controls">
+					<select
+						className="picker-category"
+						aria-label={t.categories}
+						value={state.category}
+						onChange={(event) =>
+							onChange({
+								category: event.target.value as Category,
+								anchor: undefined,
+							})
+						}
+					>
+						{categories.map((category) => (
+							<option key={category} value={category}>
+								{categoryLabels[locale][category]} · {counts[category]}
+							</option>
+						))}
+					</select>
+					<SearchField
+						value={state.query}
+						onChange={(query) => onChange({ query, anchor: undefined })}
+						locale={locale}
+						inputRef={searchRef}
+					/>
+				</div>
+			</div>
+			{visible.length === 0 && (
+				<div className="empty-state">
+					<h3>{t.noResults}</h3>
+					<p>{t.noResultsDescription}</p>
+					<button
+						type="button"
+						className="button button-secondary"
+						onClick={() =>
+							onChange({
+								category: "all",
+								query: "",
+								anchor: undefined,
+							})
+						}
+					>
+						{t.reset}
+					</button>
+				</div>
+			)}
+			<nav className="gallery-selector" aria-label={t.selectProject}>
+				<div className="project-picker" ref={pickerRef}>
+					{visible.map((item) => (
+						<button
+							type="button"
+							key={item.id}
+							className="picker-item"
+							aria-pressed={project?.id === item.id}
+							aria-keyshortcuts={
+								project?.id === item.id && visible.length > 1
+									? "ArrowLeft ArrowRight"
+									: undefined
+							}
+							onClick={() => onChange({ project: item.id, anchor: undefined })}
+						>
+							<Logo project={item} size={32} framed={false} />
+							<span>{item.title}</span>
+						</button>
+					))}
+				</div>
 			</nav>
 
 			{project ? (
@@ -190,15 +246,34 @@ export function ProjectDetail({
 							<div className="identity-links">
 								{project.website && (
 									<AssetLink
-										className="button button-secondary identity-website"
+										className={
+											chromeStore
+												? "identity-chrome-store"
+												: "button button-secondary identity-website"
+										}
 										href={project.website}
 										target="_blank"
 										rel="noreferrer"
-										aria-label={`${t.visit}: ${project.title}`}
+										aria-label={`${chromeStore ? t.addToChrome : t.visit}: ${project.title}`}
+										title={chromeStore ? t.addToChrome : undefined}
 									>
-										<Icon name="globe" />
-										{t.visit}
-										<Icon name="arrow" />
+										{chromeStore ? (
+											<img
+												src={assetUrl(
+													"/badges/chrome-web-store/v1.0.0/chrome-web-store.png",
+												)}
+												alt={t.chromeWebStore}
+												width={340}
+												height={96}
+												crossOrigin="anonymous"
+											/>
+										) : (
+											<>
+												<Icon name="globe" />
+												{t.visit}
+												<Icon name="arrow" />
+											</>
+										)}
 									</AssetLink>
 								)}
 								<AssetLink
@@ -213,39 +288,8 @@ export function ProjectDetail({
 									<Icon name="arrow" />
 								</AssetLink>
 							</div>
-							<div className="identity-pagination">
-								<span className="mono">
-									{String(selectedIndex + 1).padStart(2, "0")} /{" "}
-									{visible.length}
-								</span>
-								<button
-									className="icon-button"
-									type="button"
-									aria-label={t.previous}
-									aria-keyshortcuts="ArrowLeft"
-									title={`${t.previous} (←)`}
-									disabled={visible.length < 2}
-									onClick={() => move(-1)}
-								>
-									<Icon name="left" />
-								</button>
-								<button
-									className="icon-button"
-									type="button"
-									aria-label={t.next}
-									aria-keyshortcuts="ArrowRight"
-									title={`${t.next} (→)`}
-									disabled={visible.length < 2}
-									onClick={() => move(1)}
-								>
-									<Icon name="right" />
-								</button>
-							</div>
 						</div>
 					</div>
-					{project.brandKit?.hero && (
-						<BrandHero kit={project.brandKit} locale={locale} />
-					)}
 					<nav className="project-section-nav" aria-label={t.projectSections}>
 						<div>
 							{project.media?.videos?.length ||
@@ -316,74 +360,10 @@ export function ProjectDetail({
 								</span>
 							</div>
 						</div>
-						<aside className="gallery-selector" aria-label={t.selectProject}>
-							<div className="picker-heading">
-								<span>
-									{t.selectProject}{" "}
-									<span className="mono">
-										{visible.length}/{projects.length}
-									</span>
-								</span>
-								<div className="picker-controls">
-									<select
-										className="picker-category"
-										aria-label={t.categories}
-										value={state.category}
-										onChange={(event) =>
-											onChange({ category: event.target.value as Category })
-										}
-									>
-										{categories.map((category) => (
-											<option key={category} value={category}>
-												{categoryLabels[locale][category]} · {counts[category]}
-											</option>
-										))}
-									</select>
-									<SearchField
-										value={state.query}
-										onChange={(query) => onChange({ query })}
-										locale={locale}
-										inputRef={searchRef}
-									/>
-								</div>
-							</div>
-							{visible.length === 0 && (
-								<div className="empty-state">
-									<h3>{t.noResults}</h3>
-									<p>{t.noResultsDescription}</p>
-									<button
-										type="button"
-										className="button button-secondary"
-										onClick={() =>
-											onChange({
-												category: "all",
-												query: "",
-												anchor: "brand",
-											})
-										}
-									>
-										{t.reset}
-									</button>
-								</div>
-							)}
-							<div className="project-picker" ref={pickerRef}>
-								{visible.map((item) => (
-									<button
-										type="button"
-										key={item.id}
-										className="picker-item"
-										aria-pressed={project?.id === item.id}
-										onClick={() =>
-											onChange({ project: item.id, anchor: "brand" })
-										}
-									>
-										<Logo project={item} size={32} framed={false} />
-										<span>{item.title}</span>
-									</button>
-								))}
-							</div>
-						</aside>
 
+						{project.brandKit?.hero && (
+							<BrandHero kit={project.brandKit} locale={locale} />
+						)}
 						<LogoReview
 							key={project.id}
 							project={project}

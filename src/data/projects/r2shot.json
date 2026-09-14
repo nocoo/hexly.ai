@@ -341,5 +341,48 @@
 				}
 			}
 		]
+	},
+	"media": {
+		"screenshots": [
+			{
+				"id": "store-01",
+				"src": "/screenshots/r2shot/store-01/v1.0.0/original.png",
+				"preview": "/screenshots/r2shot/store-01/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/r2shot/store-01/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/r2shot/screenshots/store-01/v1.0.0.json",
+				"alt": {
+					"en": "Capture the current page and upload it to your R2 bucket.",
+					"zh": "截取当前页面，并上传到自己的 R2 存储桶。"
+				},
+				"width": 1280,
+				"height": 800
+			},
+			{
+				"id": "store-02",
+				"src": "/screenshots/r2shot/store-02/v1.0.0/original.png",
+				"preview": "/screenshots/r2shot/store-02/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/r2shot/store-02/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/r2shot/screenshots/store-02/v1.0.0.json",
+				"alt": {
+					"en": "Configure your storage, image quality and full-page capture limit.",
+					"zh": "配置存储、画质与长页面截图范围。"
+				},
+				"width": 1280,
+				"height": 800
+			},
+			{
+				"id": "store-03",
+				"src": "/screenshots/r2shot/store-03/v1.0.0/original.png",
+				"preview": "/screenshots/r2shot/store-03/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/r2shot/store-03/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/r2shot/screenshots/store-03/v1.0.0.json",
+				"alt": {
+					"en": "Capture a full page and copy a link to the uploaded image.",
+					"zh": "截取完整页面，一键复制已上传图片的链接。"
+				},
+				"width": 1280,
+				"height": 800
+			}
+		]
 	}
 }

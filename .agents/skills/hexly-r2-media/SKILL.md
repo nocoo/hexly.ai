@@ -10,6 +10,12 @@ and [the material contract](../../../docs/21-asset-storage.md). The owner author
 R2 migration, publication, then Git history reduction on 2026-09-13. This replaces
 the older instruction to retain all binary materials in Git/Workers Static Assets.
 Ordinary asset tasks do not authorize another history rewrite or object deletion.
+For optional project screenshots, store captures and Lightbox galleries, read the
+[screenshot runbook](references/project-screenshots.md). It covers source intake,
+original/preview/thumbnail files, independent versions and catalogue integration;
+Hooky and R2Shot are the first real examples. R2 upload authorization and website
+release authorization remain separate; a local-review task may publish its
+named R2 objects while leaving the website unpushed and undeployed.
 For a fresh checkout or an old pinned revision, use the
 [Git recovery guide](../../../docs/23-git-history-recovery.md). Keep original
 provenance SHAs; the published commit map connects them to the smaller history.
@@ -103,6 +109,13 @@ revision, license and verification time in
 `docs/assets/<project>/<kind>/<asset-id>/v<version>.json` for other single files.
 Add the catalogue reference only after this receipt exists. Batch publication
 records its receipts automatically in `docs/assets/publication.jsonl`.
+
+Screenshot galleries use hydrated paths
+`public/screenshots/<project>/<image-id>/v<X.Y.Z>/{original.<ext>,preview.webp,thumbnail.webp}`.
+The inventory maps each to `projects/<project>/screenshots/<image-id>/v<X.Y.Z>/<name>-<hash12>.<ext>`
+with role `project-media` and its corresponding screenshot receipt. Product UI
+and store compositions retain their own colors and source rights; they are not
+Logo replacements or newly generated Hexly campaign identities.
 
 Curated Hexly template examples use project `hexly-ai` and film IDs such as
 `standard-outro-product-launch`. Their active references live in

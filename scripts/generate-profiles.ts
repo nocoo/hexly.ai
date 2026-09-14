@@ -3,6 +3,7 @@ import { dirname, relative } from "node:path";
 import { readProjects } from "../src/data/read-projects";
 import { assetUrl } from "../src/model/assets";
 import { brandAsset, brandSourceLabel } from "../src/model/brand";
+import { isChromeWebStoreProject } from "../src/model/catalogue";
 
 const projects = readProjects();
 await mkdir("docs/profiles", { recursive: true });
@@ -127,12 +128,22 @@ ${overview.techStack.map((technology) => `| ${technology.name} | ${technology.ro
 
 `
 		: "";
+	const screenshots = project.media?.screenshots ?? [];
+	const screenshotsSection = screenshots.length
+		? `## Product screenshots
+
+Ordered, optional project previews; the detail page opens originals in a keyboard-accessible Lightbox. Original product colors and complete compositions are preserved.
+
+${screenshots.map((shot) => `- ${shot.alt.en} / ${shot.alt.zh} (${shot.width} × ${shot.height})\n  - [Original](${sourceLink(shot.src)})${shot.preview ? ` · [Page preview](${sourceLink(shot.preview)})` : ""}${shot.thumbnail ? ` · [Thumbnail](${sourceLink(shot.thumbnail)})` : ""}${shot.source ? ` · [Source, rights and hashes](../../${shot.source})` : ""}`).join("\n")}
+
+`
+		: "";
 	const content = `# ${project.emoji} ${project.title}
 
 ## Profile
 
 - Repository: [nocoo/${project.repo}](${project.repository})
-- Website: ${project.website ? `[${project.website}](${project.website})` : "No current website verified; navigation opens the repository."}
+- ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
 - Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})
@@ -142,7 +153,7 @@ ${overview.techStack.map((technology) => `| ${technology.name} | ${technology.ro
 - Profile revision: ${project.source.profileRevision ? `\`${project.source.profileRevision}\`` : "Not modified under this task's Hexly-only scope"}
 - Repository revision inspected: ${project.source.repositoryRevision ? `\`${project.source.repositoryRevision}\`` : "Initial source commit pending; see the local snapshot above"}
 
-${overviewSection}## Current logo
+${screenshotsSection}${overviewSection}## Current logo
 
 ![${project.title} source identity](${sourceLink(project.logo.thumbnail)})
 

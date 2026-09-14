@@ -1,0 +1,138 @@
+{
+	"schemaVersion": 1,
+	"project": "hooky",
+	"kind": "screenshots",
+	"asset": "store-01",
+	"version": "1.0.0",
+	"role": "project-media",
+	"importedAt": "2026-09-14T02:49:48.215Z",
+	"bucket": "hexlyai",
+	"origin": "https://h.no.mt",
+	"source": {
+		"repository": "https://github.com/nocoo/hooky",
+		"revision": "7ab9c8a23895ae836b49545f962fcf169e097970",
+		"path": "materials/2.0.0/store/screenshots/hooky-screenshots-01-1280x800.png",
+		"url": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/2.0.0/store/screenshots/hooky-screenshots-01-1280x800.png",
+		"materialsVersion": "2.0.0",
+		"artworkManifest": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/2.0.0/artwork-manifest.json",
+		"sha256": "f82541e8c45ce86a800957e7cf50a7c5aa4bf16840b31e2651d7b3f69995b1f9",
+		"bytes": 857259,
+		"modifiedAt": "2026-09-14T01:38:31.620Z",
+		"capture": {
+			"description": "Actual extension UI in Chrome 152; synthetic configuration. Shared sample-page JPEGs captured by R2Shot.",
+			"provenance": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/source/captures/provenance.json"
+		},
+		"composition": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/source/layouts/hooky-screenshots-01-1280x800.html",
+		"decoration": {
+			"provider": "Azure OpenAI",
+			"model": "gpt-image-2.5-sunburst",
+			"purpose": "Decorative scenery; no generated logos, interface elements, or lettering",
+			"generation": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/source/prompts/generation.json",
+			"prompt": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/source/prompts/hooky.txt",
+			"sha256": "cdf85e3ca61f383d367e78211fd666be94726a2c0b62c286f5c9d86ab9142ee1"
+		},
+		"rights": {
+			"license": "MIT",
+			"copyright": "Copyright (c) 2026 Zheng Li",
+			"source": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/LICENSE",
+			"localNotice": "docs/assets/hooky/screenshots/LICENSE",
+			"fonts": [
+				{
+					"name": "Space Grotesk",
+					"license": "SIL OFL 1.1",
+					"notice": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/source/brand/space-grotesk-ofl.txt"
+				},
+				{
+					"name": "Geist Mono",
+					"license": "SIL OFL 1.1",
+					"notice": "https://github.com/nocoo/hooky/blob/7ab9c8a23895ae836b49545f962fcf169e097970/materials/source/brand/geist-mono-ofl.txt"
+				}
+			]
+		},
+		"note": "Existing product-owned store composition with real extension UI and synthetic/demo configuration. Imported for Hexly presentation without cropping or recoloring. This is not a claim of live service or store-release acceptance; no image generation was performed by this import."
+	},
+	"alt": {
+		"en": "Send page context to a webhook from the browser popup.",
+		"zh": "从浏览器弹窗，把当前页面内容发送到 Webhook。"
+	},
+	"artifacts": [
+		{
+			"variant": "original",
+			"path": "/screenshots/hooky/store-01/v1.0.0/original.png",
+			"key": "projects/hooky/screenshots/store-01/v1.0.0/original-f82541e8c45c.png",
+			"url": "https://h.no.mt/projects/hooky/screenshots/store-01/v1.0.0/original-f82541e8c45c.png",
+			"width": 1280,
+			"height": 800,
+			"bytes": 857259,
+			"sha256": "f82541e8c45ce86a800957e7cf50a7c5aa4bf16840b31e2651d7b3f69995b1f9",
+			"contentType": "image/png",
+			"transform": "unchanged source bytes"
+		},
+		{
+			"variant": "preview",
+			"path": "/screenshots/hooky/store-01/v1.0.0/preview.webp",
+			"key": "projects/hooky/screenshots/store-01/v1.0.0/preview-7e6407b5dc43.webp",
+			"url": "https://h.no.mt/projects/hooky/screenshots/store-01/v1.0.0/preview-7e6407b5dc43.webp",
+			"width": 1280,
+			"height": 800,
+			"bytes": 69744,
+			"sha256": "7e6407b5dc4327ad04ecba1a884d87944cc50a2d1af50fba49227fd92622dc1e",
+			"contentType": "image/webp",
+			"derivedFrom": "f82541e8c45ce86a800957e7cf50a7c5aa4bf16840b31e2651d7b3f69995b1f9",
+			"transform": {
+				"tool": "sharp",
+				"version": "0.35.4",
+				"fit": "inside",
+				"width": 1600,
+				"height": 1600,
+				"withoutEnlargement": true,
+				"webpQuality": 92,
+				"effort": 6,
+				"crop": false,
+				"recolor": false
+			}
+		},
+		{
+			"variant": "thumbnail",
+			"path": "/screenshots/hooky/store-01/v1.0.0/thumbnail.webp",
+			"key": "projects/hooky/screenshots/store-01/v1.0.0/thumbnail-674623fe315d.webp",
+			"url": "https://h.no.mt/projects/hooky/screenshots/store-01/v1.0.0/thumbnail-674623fe315d.webp",
+			"width": 320,
+			"height": 200,
+			"bytes": 5724,
+			"sha256": "674623fe315de2e756cf5b35e9ae5e190092cc37d2e0a181132a176cf0a821a1",
+			"contentType": "image/webp",
+			"derivedFrom": "f82541e8c45ce86a800957e7cf50a7c5aa4bf16840b31e2651d7b3f69995b1f9",
+			"transform": {
+				"tool": "sharp",
+				"version": "0.35.4",
+				"fit": "inside",
+				"width": 320,
+				"height": 320,
+				"withoutEnlargement": true,
+				"webpQuality": 82,
+				"effort": 6,
+				"crop": false,
+				"recolor": false
+			}
+		}
+	],
+	"publication": {
+		"state": "verified",
+		"receipt": "docs/assets/publication.jsonl",
+		"objects": [
+			{
+				"key": "projects/hooky/screenshots/store-01/v1.0.0/original-f82541e8c45c.png",
+				"verifiedAt": "2026-09-14T02:50:28.080Z"
+			},
+			{
+				"key": "projects/hooky/screenshots/store-01/v1.0.0/preview-7e6407b5dc43.webp",
+				"verifiedAt": "2026-09-14T02:50:28.732Z"
+			},
+			{
+				"key": "projects/hooky/screenshots/store-01/v1.0.0/thumbnail-674623fe315d.webp",
+				"verifiedAt": "2026-09-14T02:50:28.134Z"
+			}
+		]
+	}
+}

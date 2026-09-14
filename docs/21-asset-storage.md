@@ -98,6 +98,23 @@ CDN URLs. Existing local/consumer-supplied images continue to work.
 
 ## New projects and changed materials
 
+Optional project screenshots use
+`public/screenshots/<project>/<image-id>/v<X.Y.Z>/{original.<ext>,preview.webp,thumbnail.webp}`
+locally. The inventory assigns role `project-media` and the versioned
+`projects/<project>/screenshots/<image-id>/v<X.Y.Z>/<name>-<hash12>.<ext>` R2 keys.
+Source, rights, checksums, transformations and publication evidence live in
+`docs/assets/<project>/screenshots/<image-id>/v<X.Y.Z>.json`. These original product
+materials keep their colors and complete canvases; they are separate from brand
+identities and Hexly campaign interpretations. See the
+[screenshot runbook](../.agents/skills/hexly-r2-media/references/project-screenshots.md)
+for intake, Lightbox fields and the initial Hooky/R2Shot examples.
+
+Official distribution badges use `public/badges/<badge-id>/v<X.Y.Z>/` for local
+hydration, the existing `shared/site/` hashed R2 delivery keys, and inventory role
+`third-party-badge`. Keep source/rights/version records in
+`docs/assets/hexly-ai/badges/<badge-id>/v<X.Y.Z>.json`. A store badge does not
+inherit the repository's MIT license or become a Hexly campaign identity.
+
 1. Read the catalogue, original identity rules and source rights. Use the stable
    project ID; prepare source/provenance in versioned directories.
 2. Export public brand material to `public/brands/<id>/v<X.Y.Z>/`. Existing

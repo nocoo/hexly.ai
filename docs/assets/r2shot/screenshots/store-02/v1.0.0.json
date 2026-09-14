@@ -1,0 +1,138 @@
+{
+	"schemaVersion": 1,
+	"project": "r2shot",
+	"kind": "screenshots",
+	"asset": "store-02",
+	"version": "1.0.0",
+	"role": "project-media",
+	"importedAt": "2026-09-14T02:49:48.585Z",
+	"bucket": "hexlyai",
+	"origin": "https://h.no.mt",
+	"source": {
+		"repository": "https://github.com/nocoo/r2shot",
+		"revision": "89cd7217a35af6cc5890bee02e9e97a7febfd1a8",
+		"path": "materials/2.0.0/store/screenshots/r2shot-screenshots-02-1280x800.png",
+		"url": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/2.0.0/store/screenshots/r2shot-screenshots-02-1280x800.png",
+		"materialsVersion": "2.0.0",
+		"artworkManifest": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/2.0.0/artwork-manifest.json",
+		"sha256": "a2690191a16be853f49e1bf185600195c459b7a8b8f87d8407bb39adb6aa8ce4",
+		"bytes": 517654,
+		"modifiedAt": "2026-09-14T01:38:29.503Z",
+		"capture": {
+			"description": "Actual installed ZIP in Chrome; synthetic R2 responses. See verification/chrome-extension.json.",
+			"provenance": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/source/captures/provenance.json"
+		},
+		"composition": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/source/layouts/r2shot-screenshots-02-1280x800.html",
+		"decoration": {
+			"provider": "Azure OpenAI",
+			"model": "gpt-image-2.5-sunburst",
+			"purpose": "Decorative scenery; no generated logos, interface elements, or lettering",
+			"generation": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/source/prompts/generation.json",
+			"prompt": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/source/prompts/r2shot.txt",
+			"sha256": "028ba3152c7eb6202ec7bc54f0a403b08cd86b24b4192cfbe7800e250ca2ba19"
+		},
+		"rights": {
+			"license": "MIT",
+			"copyright": "Copyright (c) 2026 Zheng Li",
+			"source": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/LICENSE",
+			"localNotice": "docs/assets/r2shot/screenshots/LICENSE",
+			"fonts": [
+				{
+					"name": "Space Grotesk",
+					"license": "SIL OFL 1.1",
+					"notice": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/source/brand/space-grotesk-ofl.txt"
+				},
+				{
+					"name": "Geist Mono",
+					"license": "SIL OFL 1.1",
+					"notice": "https://github.com/nocoo/r2shot/blob/89cd7217a35af6cc5890bee02e9e97a7febfd1a8/materials/source/brand/geist-mono-ofl.txt"
+				}
+			]
+		},
+		"note": "Existing product-owned store composition with real extension UI and synthetic/demo configuration. Imported for Hexly presentation without cropping or recoloring. This is not a claim of live service or store-release acceptance; no image generation was performed by this import."
+	},
+	"alt": {
+		"en": "Configure your storage, image quality and full-page capture limit.",
+		"zh": "配置存储、画质与长页面截图范围。"
+	},
+	"artifacts": [
+		{
+			"variant": "original",
+			"path": "/screenshots/r2shot/store-02/v1.0.0/original.png",
+			"key": "projects/r2shot/screenshots/store-02/v1.0.0/original-a2690191a16b.png",
+			"url": "https://h.no.mt/projects/r2shot/screenshots/store-02/v1.0.0/original-a2690191a16b.png",
+			"width": 1280,
+			"height": 800,
+			"bytes": 517654,
+			"sha256": "a2690191a16be853f49e1bf185600195c459b7a8b8f87d8407bb39adb6aa8ce4",
+			"contentType": "image/png",
+			"transform": "unchanged source bytes"
+		},
+		{
+			"variant": "preview",
+			"path": "/screenshots/r2shot/store-02/v1.0.0/preview.webp",
+			"key": "projects/r2shot/screenshots/store-02/v1.0.0/preview-ba7d2c9c01ee.webp",
+			"url": "https://h.no.mt/projects/r2shot/screenshots/store-02/v1.0.0/preview-ba7d2c9c01ee.webp",
+			"width": 1280,
+			"height": 800,
+			"bytes": 54824,
+			"sha256": "ba7d2c9c01eefd6cf437da50f77c8417fee7e98ed6c8475aa5a983e684cfd155",
+			"contentType": "image/webp",
+			"derivedFrom": "a2690191a16be853f49e1bf185600195c459b7a8b8f87d8407bb39adb6aa8ce4",
+			"transform": {
+				"tool": "sharp",
+				"version": "0.35.4",
+				"fit": "inside",
+				"width": 1600,
+				"height": 1600,
+				"withoutEnlargement": true,
+				"webpQuality": 92,
+				"effort": 6,
+				"crop": false,
+				"recolor": false
+			}
+		},
+		{
+			"variant": "thumbnail",
+			"path": "/screenshots/r2shot/store-02/v1.0.0/thumbnail.webp",
+			"key": "projects/r2shot/screenshots/store-02/v1.0.0/thumbnail-2def4a3ffac2.webp",
+			"url": "https://h.no.mt/projects/r2shot/screenshots/store-02/v1.0.0/thumbnail-2def4a3ffac2.webp",
+			"width": 320,
+			"height": 200,
+			"bytes": 4330,
+			"sha256": "2def4a3ffac2ef0816a39335a581d6dbf49769fb87ad30c2b7eca10a0e7e096e",
+			"contentType": "image/webp",
+			"derivedFrom": "a2690191a16be853f49e1bf185600195c459b7a8b8f87d8407bb39adb6aa8ce4",
+			"transform": {
+				"tool": "sharp",
+				"version": "0.35.4",
+				"fit": "inside",
+				"width": 320,
+				"height": 320,
+				"withoutEnlargement": true,
+				"webpQuality": 82,
+				"effort": 6,
+				"crop": false,
+				"recolor": false
+			}
+		}
+	],
+	"publication": {
+		"state": "verified",
+		"receipt": "docs/assets/publication.jsonl",
+		"objects": [
+			{
+				"key": "projects/r2shot/screenshots/store-02/v1.0.0/original-a2690191a16b.png",
+				"verifiedAt": "2026-09-14T02:50:35.856Z"
+			},
+			{
+				"key": "projects/r2shot/screenshots/store-02/v1.0.0/preview-ba7d2c9c01ee.webp",
+				"verifiedAt": "2026-09-14T02:50:36.242Z"
+			},
+			{
+				"key": "projects/r2shot/screenshots/store-02/v1.0.0/thumbnail-2def4a3ffac2.webp",
+				"verifiedAt": "2026-09-14T02:50:36.904Z"
+			}
+		]
+	}
+}

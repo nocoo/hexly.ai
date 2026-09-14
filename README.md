@@ -23,15 +23,15 @@
 
 [hexly.ai](https://hexly.ai) 是我的个人项目导航站，也是项目视觉身份的收藏柜。它从 [GitHub profile](https://github.com/nocoo) 整理项目名称、描述与 Emoji，保存各仓库的实际 Logo 和色板，让散落的工具、游戏与实验有一个统一入口。
 
-目前收录 74 个项目，备份其中 60 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Snail 的收藏增强功能并入 [Zhe](https://hexly.ai/projects/zhe)，原项目退出目录；[Snail 2.0 历史品牌档案](https://hexly.ai/brands/snail/v2.0.0/review.html) 继续保留碎片蜗牛、独立方形/宽幅构图、明暗底纹、真实字体字标、透明图标和 favicon，以及上一版 SVG 与全部生成来源记录。
+目前收录 75 个项目，备份其中 61 份原始图像；其余 14 个项目沿用已有 Emoji，并明确标注来源。所有项目都有中英文介绍、颜色依据和独立档案。Snail 的收藏增强功能并入 [Zhe](https://hexly.ai/projects/zhe)，原项目退出目录；[Snail 2.0 历史品牌档案](https://hexly.ai/brands/snail/v2.0.0/review.html) 继续保留碎片蜗牛、独立方形/宽幅构图、明暗底纹、真实字体字标、透明图标和 favicon，以及上一版 SVG 与全部生成来源记录。
 
-54 个正式项目均有完整品牌包，整理已有动物、实物或原作，补齐明暗 Hero、手机独立构图、各自的可平铺底纹、转曲字标、图标、favicon 和可校验下载。项目原标的形状、原色与字节不变；Hexly 的页面与宣发色系只用于本站和 Hexly 制作的物料，各产品站点继续保有自己的色板和主题。完整清单、来源差异及维护方式见[品牌档案指南](docs/19-family-brand-archives.md)；Snail 退役后的路径与保留范围见[退役记录](docs/22-snail-retirement.md)。
+55 个正式项目均有完整品牌包，整理已有动物、实物或原作，补齐明暗 Hero、手机独立构图、各自的可平铺底纹、转曲字标、图标、favicon 和可校验下载。项目原标的形状、原色与字节不变；Hexly 的页面与宣发色系只用于本站和 Hexly 制作的物料，各产品站点继续保有自己的色板和主题。完整清单、来源差异及维护方式见[品牌档案指南](docs/19-family-brand-archives.md)；Snail 退役后的路径与保留范围见[退役记录](docs/22-snail-retirement.md)。
 
 素材由已有 R2 `hexlyai` 经 `https://h.no.mt` 提供，站点 Worker 只部署页面、代码与元数据。品牌原件与许可按哈希保留；本地开发可运行 `bun run assets:hydrate` 恢复素材，维护方式见[资源存储指南](docs/21-asset-storage.md)。
 
 ## 功能
 
-- **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 展示项目介绍、已有成片/截图、技术概览与完整品牌档案。有视频时显示封面，点击才加载播放器；没有视频时直接展示项目内容。
+- **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 顶部集中选择项目、分类和搜索，下方依次展示项目介绍、可选成片/截图、技术概览与品牌档案。Hooky/R2Shot 提供官方 Chrome 商店安装入口。视频点击封面才加载；截图保持完整比例，点开高清 Lightbox，以底部缩略图或方向键切换、Esc 关闭。没有媒体时自然接到项目内容。[截图与 R2 维护方式](.agents/skills/hexly-r2-media/references/project-screenshots.md)。
 - **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。[5 个标准片尾](https://hexly.ai/templates#outros)可跨项目直接拼接使用，无需重新生成，提供原始 MP4、HTML 渲染的 4K 静帧和一键 Agent 交接说明。
 - **Agent 使用** — 每个正式页面提供可复制的使用说明、纯 Markdown 与 HTML 发现链接；项目档案的原始 Prompt / 设计说明可直接复制。[维护约定](docs/25-agent-guides.md)。
 - **服务状态** — 在 [status.hexly.ai](https://status.hexly.ai) 查看活跃网站的 `/api/live`，每 5 分钟检查一次，保留最近 7 天记录，支持小时历史、响应时间和异常筛选。
