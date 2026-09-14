@@ -42,6 +42,14 @@ describe("complete Hexly campaign archives", () => {
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
 			const { brandKit, ...original } = p;
+			// Optional screenshot galleries were added after this identity baseline.
+			// Preserve its other metadata, including the pre-existing video records.
+			if (original.media?.screenshots) {
+				const { screenshots, ...historicalMedia } = original.media;
+				if (Object.keys(historicalMedia).length)
+					original.media = historicalMedia;
+				else delete original.media;
+			}
 			const isTarget = targetIds.includes(p.id);
 			expect(sha(JSON.stringify(isTarget ? original : p)), p.id).toBe(
 				baseline?.protectedMetadataSha256,
