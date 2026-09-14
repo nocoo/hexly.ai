@@ -49,6 +49,23 @@ See [the project contract](../CLAUDE.md#brand-direction-by-product-type) and
 
 ## Regenerating previews and profiles
 
+### Product-specific material analogy
+
+Research the product's job before drawing its supporting texture. Name the
+interaction, a credible physical context, and the marks that belong there.
+Leather grain can suit a folio; graph squares can suit a blueprint. Those are
+analogies to choose deliberately, not interchangeable default backgrounds.
+
+Pi Agent Policy's campaign archive 1.0.2 uses an instrument service mat: a fine
+locating lattice for declared rules, an open contact for intercepted tool calls,
+and one marked return for the shared repair allowance. It is not an electrical
+specification or a claim of system isolation. Record the geometry, colors,
+opacity, source facts and rendering scale in the versioned recipe. Inspect real
+mobile/desktop sizes in both themes, with enough visibility in empty regions
+and readable text over any background layer. Preserve approved Logo bytes and
+all previous texture versions. A new support texture does not require another
+image-generation request or a source-product identity update.
+
 The original project's Logo shape, proportions, colors and exact bytes are
 authoritative. Hexly's paper/ink/terracotta palette, typography, red point and
 editorial composition apply only to the Hexly archive and Hexly-authored

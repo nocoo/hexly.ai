@@ -171,3 +171,41 @@ object. A real temporary-repository regression check covers this case. All
 previous inventory rows are byte-for-byte equivalent; the pilot adds 73 paths
 and objects, including its visual evidence. R2 publication verified these new
 objects and retained all existing receipts.
+
+## Product analogy — campaign archive 1.0.2
+
+The owner asked for the surface to follow the product's purpose, as leather
+grain belongs to a folio or fine squares belong to a blueprint. Pi Agent Policy
+now uses an instrument service mat, connected to its approved reset instrument:
+a locating lattice for declared rules, an open contact for an intercepted call,
+and a single terracotta return for the shared repair allowance. It is a visual
+analogy, not a hardware schematic, health signal or system-isolation claim.
+
+The [versioned recipe](../artwork/brands/pi-agent-policy/v1.0.2/recipe.json)
+records the product-source revision, evidence files, geometry, hierarchy and
+exact line weights/opacities. The independent identity stays 1.0.0. The new
+native SVG/PNG support textures have a 512px tile, 32px lattice pitch and a
+13px measured transparent perimeter. At the 256px display size, the contact and
+return strokes read as 1.8px and 1.5px, above the 0.9px lattice. Both themes use
+the recorded Hexly tokens; text surfaces retain their 55% surface-color veil.
+
+Only eight presentation files change; 51 files, including all approved Logo,
+Hero, icon, font and generation/adoption records, match 1.0.1 byte for byte.
+The old 1.0.0 and 1.0.1 packages remain immutable. No new image was generated.
+The authoring script refuses existing, inventoried or committed output.
+
+The local acceptance includes 62 brand/identity tests, four repository browser
+journeys and eight additional site/standalone captures across desktop/320px and
+both themes. Actual text colors checked against every composited texture pixel
+have minimum contrast 6.86:1 (light) and 4.90:1 (dark). Axe reported no brand-kit
+violations; SVG downloads retain exact bytes. Typecheck, lint, asset checks and
+build passed. The deployment boundary is 3,902,663 bytes, with no material
+binaries. See [browser evidence](../artwork/brands/pi-agent-policy/v1.0.2/inspection/browser.json)
+and [file verification](../artwork/brands/pi-agent-policy/v1.0.2/verification.json).
+
+R2 publication completed for all 260 Pi objects, including 68 new package and
+inspection objects. Canonical CDN responses were checked after cached 404s
+expired; a successful query-string response was not treated as final acceptance.
+The active manifest is `https://h.no.mt/brands/pi-agent-policy/v1.0.2/manifest.json`,
+SHA-256 `05aa4e1ac09a47689e6d55a7620531ee459c2d6b2251e8001e6a52483cc6082e`.
+Receipts remain in `docs/assets/publication.jsonl`; site publication is separate.

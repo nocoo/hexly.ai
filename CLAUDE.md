@@ -72,6 +72,15 @@ standards in [the identity rules](docs/02-identity-rules.md).
 Explicit owner direction takes precedence. These are defaults for new identities,
 not a request to redesign existing approved Logos or change their colors.
 
+Backgrounds need the same product research as Logos. Connect the product's core
+interaction to a plausible material or working environment, then choose its
+grain, grid or markings: a folio may suggest leather grain; an engineering sheet
+may suggest a measured lattice. Pi Agent Policy's service mat pairs a locating
+grid with an open contact and one reset route, echoing rules, interception and a
+shared repair allowance. Record that analogy in the recipe/guide. Make it visible
+at actual display size, quieter beneath text, and do not reuse a generic stencil
+or spread a single project's presentation update to the rest of the catalogue.
+
 ## Stack / Layout
 
 | Component | Choice |
