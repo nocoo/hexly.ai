@@ -11,6 +11,10 @@
 - preserve identity baselines alongside optional media ([f7eeeb4](https://github.com/nocoo/hexly.ai/commit/f7eeeb49ec29f711541db2020c3e544e51d5cda8))
 - recognize truncated public object locator matches ([68c6883](https://github.com/nocoo/hexly.ai/commit/68c6883a37c2fd8932a70438ae7020a4f56b914e))
 
+### Tests
+
+- align overview navigation with the shared picker ([dcf4a90](https://github.com/nocoo/hexly.ai/commit/dcf4a90be5770fffade052858975282ab92cb0f7))
+
 ## [0.12.4] - 2026-09-14
 
 ### Features
