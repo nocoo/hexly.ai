@@ -67,3 +67,18 @@ Before resuming release CI, this configuration passed 16 repeated desktop/mobile
 CI `34794991731` stopped the v0.12.3 candidate at `679543c4c86cd6cbf6ed4566733ca2c908866647` when Gitleaks reported `generic-api-key` on the unchanged public font-license key `brands/dogfight/v1.0.0/space-grotesk-ofl.txt`. The matched value was only the public directory `brands/dogfight/`. A public GET returned the expected OFL document and SHA-256 `18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943`. Scanning a clean Git archive reproduced the CI finding; the local Git-history scan had passed.
 
 The exception now requires both that exact non-secret match and the inventory path, and applies only to `generic-api-key`. Gitleaks 8.30.1 then passed the clean snapshot, still detected a synthetic credential inside the same inventory, and still detected the reported fragment on stdin outside that path. The default rules, other files, historical assets and published bytes remain unchanged. Check whole-tree scanning as well as Git history when investigating an inventory false positive; do not exempt the inventory wholesale.
+
+The v0.12.4 candidate `3caaa394c9b4ca248baa4692f3cbac75b83fa33c`
+reproduced the same issue in CI `34798454011`, this time matching the public
+directory fragment `brands/meowth/v` in the inventory's key field. It resolves
+to 61 existing inventory records; none is a credential. A clean Git archive
+reproduced the directory-scan result with the same pinned Gitleaks 8.30.1.
+
+The exception now recognizes the `key` field's public `brands/<project>/`
+namespace, still restricted by `AND` to this inventory and `generic-api-key`.
+This handles truncated directory-scan matches without adding a project name
+after each inventory expansion. The complete tracked snapshot passes. Two
+synthetic credential fields (`key` and `api_key`) inside the inventory are still
+detected, and the identical inventory copied outside the allowed file path
+still produces a finding. No brand bytes, asset records or other scan rules
+changed; the failed candidate remains untagged.
