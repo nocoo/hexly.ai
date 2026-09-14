@@ -9,6 +9,7 @@
 ### Fixes
 
 - preserve identity baselines alongside optional media ([f7eeeb4](https://github.com/nocoo/hexly.ai/commit/f7eeeb49ec29f711541db2020c3e544e51d5cda8))
+- recognize truncated public object locator matches ([68c6883](https://github.com/nocoo/hexly.ai/commit/68c6883a37c2fd8932a70438ae7020a4f56b914e))
 
 ## [0.12.4] - 2026-09-14
 
