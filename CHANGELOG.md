@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.14.0] - 2026-09-14
+
+### Features
+
+- publish project-specific texture packs ([93a380c](https://github.com/nocoo/hexly.ai/commit/93a380cfd22a68fdad312b98874fdce8aae2ba33))
+
 ## [0.13.0] - 2026-09-14
 
 ### Features
