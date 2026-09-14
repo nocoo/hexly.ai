@@ -180,7 +180,16 @@ export function catalogueProblems(projects: Project[]): string[] {
 				(kit.texture !== undefined &&
 					(!kit.texture ||
 						!hasTranslations(kit.texture.name) ||
-						!hasTranslations(kit.texture.description))) ||
+						!hasTranslations(kit.texture.description) ||
+						(kit.texture.format !== undefined &&
+							!["svg", "webp"].includes(kit.texture.format)) ||
+						(kit.texture.display !== undefined &&
+							!["repeat", "single"].includes(kit.texture.display)) ||
+						(kit.texture.model !== undefined &&
+							(!["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"].includes(
+								kit.texture.model,
+							) ||
+								kit.texture.format !== "webp")))) ||
 				(kit.hero !== undefined &&
 					(!kit.hero ||
 						!Number.isInteger(kit.hero.width) ||

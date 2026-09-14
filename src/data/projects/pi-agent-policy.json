@@ -256,9 +256,9 @@
 		}
 	},
 	"brandKit": {
-		"version": "1.0.2",
-		"root": "/brands/pi-agent-policy/v1.0.2",
-		"previousVersion": "1.0.1",
+		"version": "1.0.3",
+		"root": "/brands/pi-agent-policy/v1.0.3",
+		"previousVersion": "1.0.2",
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": "ba73409bd7326fa1a425e5faa918a285cde42de5",
@@ -268,13 +268,16 @@
 		},
 		"texture": {
 			"name": {
-				"en": "A workbench for one reset",
-				"zh": "一次复位的工作台"
+				"en": "A surface made for a reset",
+				"zh": "为一次复位，留下纹理"
 			},
 			"description": {
-				"en": "An instrument service mat: a fine locating grid, an open contact and one marked return. The grid echoes declared rules, the break an intercepted tool call, and the terracotta trace the single shared repair allowance.",
-				"zh": "借用精密仪器检修垫的语言：细密定位栅格、断开的触点、一条标记清楚的返回线。栅格对应声明式规则，断口对应被拦截的工具调用，陶土色回路对应共用的一次修复机会。"
-			}
+				"en": "A precision service mat, with pressed locating squares, recessed contacts and a terracotta return trace. Rules become a measured grid; recovery becomes one considered path.",
+				"zh": "精密检修垫上的压印方格、凹入触点与陶土色返回轨迹。用定位栅格承载规则，用一条有节制的路径表达恢复。"
+			},
+			"format": "webp",
+			"display": "single",
+			"model": "gpt-image-2.5-flare"
 		},
 		"hero": {
 			"width": 2400,

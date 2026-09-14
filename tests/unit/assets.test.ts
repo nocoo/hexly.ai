@@ -22,6 +22,15 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("keeps test-mode URLs on R2 when the local preview flag is present", () => {
+		const path = "/brands/pi-agent-policy/v1.0.3/texture-light.webp";
+		try {
+			vi.stubEnv("VITE_LOCAL_MATERIALS", "1");
+			expect(assetUrl(path)).toBe(`https://h.no.mt${path}`);
+		} finally {
+			vi.unstubAllEnvs();
+		}
+	});
 	it("keeps existing source recovery URLs when a new kit duplicates the same bytes", () => {
 		const directory = mkdtempSync(
 			join(tmpdir(), "hexly-inventory-version-test-"),

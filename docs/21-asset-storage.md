@@ -82,6 +82,15 @@ assets. The local Worker serves an isolated hard-linked material tree outside
 dist; this tree is never part of production. The production gateway redirect
 logic has separate unit/production checks. Local D1 isolation is unchanged.
 
+For an approved local candidate that has not been uploaded, set
+`VITE_LOCAL_MATERIALS=1` in the ignored `.env.development.local` and run the existing Vite
+development server. In development only, material references stay on the local
+origin and the server streams existing `public/` files with `no-store`; missing
+files retain the normal CDN fallback. Production builds and test mode keep CDN
+URLs even when this local flag is present. This is a preview mode, not an upload
+receipt or a change to the Worker deployment boundary. Publish and verify the
+new version before a website release.
+
 `video:render` hydrates and copies the selected project images and licensed fonts
 into an isolated renderer public directory. It rewrites only the temporary render
 configuration to local paths; exported website configurations retain their real

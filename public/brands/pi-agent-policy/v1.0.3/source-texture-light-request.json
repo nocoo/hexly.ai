@@ -1,0 +1,19 @@
+{
+	"startedAt": "2026-09-14T01:43:01.287118+00:00",
+	"provider": "Azure OpenAI",
+	"endpointPath": "/openai/v1/images/generations",
+	"method": "POST",
+	"parameters": {
+		"model": "gpt-image-2.5-flare",
+		"size": "1024x1024",
+		"n": 1,
+		"quality": "high"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "f6c3bbd3cbb0d71c78d3bf68607dad745df66142f87a45e14a71f02476fe4401",
+	"referenceImages": [],
+	"helper": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+	"helperSha256": "2701b552012f669a93b09c89baf9daa623537d41f7e176ab5a40c2ec016f84df",
+	"helperModified": false,
+	"modelSelection": "Owner explicitly selected Flare for decorative backgrounds."
+}

@@ -131,6 +131,9 @@ export interface Project {
 		texture?: {
 			name: Record<Locale, string>;
 			description: Record<Locale, string>;
+			format?: "svg" | "webp";
+			display?: "repeat" | "single";
+			model?: "gpt-image-2.5-flare" | "gpt-image-2.5-sunburst";
 		};
 		hero?: {
 			width: number;
