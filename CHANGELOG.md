@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.13.0] - 2026-09-14
+
+### Features
+
+- unify detail navigation and R2 screenshot galleries ([799a63d](https://github.com/nocoo/hexly.ai/commit/799a63d95876df0e45eca7992f01911e6316bf3d))
+
 ## [0.12.4] - 2026-09-14
 
 ### Features
