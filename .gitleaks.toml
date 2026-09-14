@@ -20,8 +20,8 @@ description = "Public brand and family-object locators in the R2 inventory key f
 condition = "AND"
 targetRules = ["generic-api-key"]
 paths = ['''(^|/)docs/assets/inventory\.json$''']
-regexTarget = "line"
+regexTarget = "match"
 # Directory scanning can end a finding partway through a long JSON chunk.
 # Keep the exception tied to this field, namespace, file and rule; credentials
 # elsewhere in the inventory and brand paths in other files remain scanned.
-regexes = ['''^\s*"key":\s*"(?:brands/[a-z0-9-]+/|logos/family/[a-z0-9-]+/)[A-Za-z0-9/_.-]*"?,?\s*$''']
+regexes = ['''^key": "(?:brands|logos/family)/[a-z0-9-]+(?:/[A-Za-z0-9/_.-]*)?"?$''']
