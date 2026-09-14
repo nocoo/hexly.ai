@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.12.3] - 2026-09-14
+
+### Fixes
+
+- tie Pi Agent Policy texture to its reset workflow ([b353e63](https://github.com/nocoo/hexly.ai/commit/b353e631d30b5a69dcca4dff363282fb28d315a5))
+
 ## [0.12.2] - 2026-09-13
 
 ### Features
