@@ -112,7 +112,7 @@ for (const theme of ["light", "dark"] as const) {
 	});
 }
 
-test("switches project overviews without moving artwork and keeps archived pages compatible", async ({
+test("switches to the project introduction and keeps archived pages compatible", async ({
 	page,
 }) => {
 	const frogie = projects.find((project) => project.id === "frogie");
@@ -120,9 +120,6 @@ test("switches project overviews without moving artwork and keeps archived pages
 	await page.goto("/projects/snaky#brand");
 	await expect(page.locator(".project-overview")).toBeVisible();
 	await expect(page.locator("#brand")).toBeInViewport();
-	const artworkTop = await page
-		.locator(".logo-review")
-		.evaluate((element) => element.getBoundingClientRect().top);
 	await page.locator(".picker-item").filter({ hasText: "Frogie" }).click();
 	await expect(page.locator("#identity-title")).toContainText("Frogie");
 	await expect(page.locator(".project-overview .project-goal > p")).toHaveText(
@@ -131,13 +128,8 @@ test("switches project overviews without moving artwork and keeps archived pages
 	await expect(page.locator(".project-overview .tech-name")).toHaveText(
 		frogie.overview.techStack.map((technology) => technology.name),
 	);
-	await expect
-		.poll(() =>
-			page
-				.locator(".logo-review")
-				.evaluate((element) => element.getBoundingClientRect().top),
-		)
-		.toBeCloseTo(artworkTop, 0);
+	expect(new URL(page.url()).hash).toBe("");
+	await expect(page.locator("#identity-title")).toBeInViewport();
 	await page.goto("/projects/uptime-kuma-skill");
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
