@@ -1,0 +1,118 @@
+{
+	"project": "image-stitch",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "A continuous mount", "zh": "接续的裱面" },
+		"motif": "A photograph conservator's mounting surface: matte linen-backed archival paper, gently stepped overlapping mount seams and sparse paired alignment corners. Long vertical continuation suggested by the seams. No photograph, frame object, cutting instructions, text or UI.",
+		"description": {
+			"en": "Matte linen-backed archival paper, gently stepped overlapping mount seams and sparse paired alignment corners.",
+			"zh": "亚麻衬裱纸的搭接边与成对对齐角把长图的连续关系变成材质，完整照片仍由原项目呈现。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Turn overlapping scrolling screenshots into one continuous image.",
+			"zh": "把有重叠区域的滚动截图，拼成一张连贯的长图。"
+		},
+		"purpose": {
+			"en": "Turn overlapping scrolling screenshots into one continuous image.",
+			"zh": "把有重叠区域的滚动截图，拼成一张连贯的长图。"
+		},
+		"source": "src/data/projects/image-stitch.json",
+		"inspectedRevision": "316ec44397c3446cb7c324040394bf056b1bd5d9"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/image-stitch.png",
+		"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4",
+		"rgbaSha256": "6a1e0cf1ea1ae6c2f3e3d1673856cc926a826dc974e518a69f372911bd65aa54",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 559822,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f5a50de1-6c59-460e-8aad-22786be28ce4",
+			"source": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/image-stitch/v1.0.0/source-light-request.json",
+			"response": "/textures/image-stitch/v1.0.0/source-light-response.json",
+			"prompt": "/textures/image-stitch/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/image-stitch/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/image-stitch/v1.0.0/texture-light.png",
+				"sha256": "b6004439c99decec46fb00f3277460bf0ecb8fdc0e44f7ffcedf7a19622b6d71",
+				"bytes": 1842687,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "de6bc41a-ceee-4a7f-9660-5f585a52a4c9",
+			"source": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/image-stitch/v1.0.0/source-dark-request.json",
+			"response": "/textures/image-stitch/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/image-stitch/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/image-stitch/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/image-stitch/v1.0.0/texture-dark.png",
+				"sha256": "69e1f256fb3b18a5115e13df4844984f8305580d3495e20cc8b4a85738584818",
+				"bytes": 1650248,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.43
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.782059270864021,
+		"darkMinimum": 6.470866506415867,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:00:33.249Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

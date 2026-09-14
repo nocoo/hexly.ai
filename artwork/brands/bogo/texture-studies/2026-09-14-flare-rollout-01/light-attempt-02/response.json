@@ -1,0 +1,13 @@
+{
+	"status": "http-error",
+	"httpStatus": 429,
+	"requestId": "fad8a274-7fd4-49e3-b8d4-98fc55df9d51",
+	"retryAfter": "25",
+	"providerErrorCode": "RateLimitReached",
+	"providerMessage": "Your requests to gpt-image-2.5-flare for gpt-image-2.5-flare in East US 2 have exceeded the call rate limit for your current AIServices S0 pricing tier. This request was for ImageGenerations_Create under OpenAI Language Model Instance API. Please retry after 25 seconds. To increase your default rate limit, visit: https://aka.ms/oai/quotaincrease.",
+	"finishedAt": "2026-09-14T04:00:38.738196+00:00",
+	"elapsedSeconds": 0.95,
+	"outputs": [],
+	"automaticRetry": false,
+	"note": "Only sanitized diagnostic fields are retained. Authentication headers are omitted. No image received; provider billing outcome is not asserted."
+}

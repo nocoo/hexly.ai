@@ -1,0 +1,122 @@
+{
+	"project": "pew-game",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "At the arcade bench", "zh": "街机工作台" },
+		"motif": "A handmade walnut arcade work surface: straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right. Quiet warm sand tones, no decorative prairie illustration, literal joystick, buttons, numbers or text.",
+		"description": {
+			"en": "Straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right.",
+			"zh": "顺直胡桃木纹、旧黄铜压边与两道浅弧沟承接手作街机的触感，把动作空间留给摇杆原标。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Pixel art prairie shooter with an all-time leaderboard",
+			"zh": "像素风草原射击游戏，支持键盘与触控操作，挑战历史排行榜。"
+		},
+		"purpose": {
+			"en": "Play a pixel prairie shooter with keyboard or touch controls, survive enemy waves with power-ups, and save scores to an all-time leaderboard.",
+			"zh": "用键盘或触控方向键游玩像素草原射击，收集道具、抵挡敌人波次，并将成绩保存到历史排行榜。"
+		},
+		"source": "src/data/projects/pew-game.json",
+		"inspectedRevision": "5200316563da59252505ece261388e4c89266017"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+		"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90",
+		"rgbaSha256": "04badff30d4e5f12298057074c1d6da23ee1e03c82f4f621057e2a2b45cf1135",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3907401,
+		"source": "https://github.com/nocoo/pew-game/blob/ee68b2dead3e5e698b2427d6a949e8e57c69d520/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pew-game/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "e367ff9d8d28c46e17e8b65e1cae732038dd61cf4c7db65133f1bac96cea4c5f"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ea42938c-70c4-4dfc-a007-827ea2778874",
+			"source": "artwork/brands/pew-game/texture-studies/2026-09-14-flare-rollout-01/light-attempt-04",
+			"request": "/textures/pew-game/v1.0.0/source-light-request.json",
+			"response": "/textures/pew-game/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pew-game/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pew-game/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pew-game/v1.0.0/texture-light.png",
+				"sha256": "3019f1804798da1340f793a699c5af64ef4058411ab25d9381d225621a5e6bbc",
+				"bytes": 1394256,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fa6ddbee-d0db-4271-8263-493e20595d4c",
+			"source": "artwork/brands/pew-game/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-04",
+			"request": "/textures/pew-game/v1.0.0/source-dark-request.json",
+			"response": "/textures/pew-game/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pew-game/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pew-game/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pew-game/v1.0.0/texture-dark.png",
+				"sha256": "c82e7fc26b1f157ae85142e331cd37d188f8d8c281ceed8ce7cf37d184fcc7b1",
+				"bytes": 1399084,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.44
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.720515177989466,
+		"darkMinimum": 4.7408212180884615,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:26:59.196Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

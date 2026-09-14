@@ -58,6 +58,16 @@ Install once in the Pi user directory to apply declarative tool policies across 
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current campaign texture
+
+- A surface made for a reset / 为一次复位，留下纹理: A precision service mat, with pressed locating squares, recessed contacts and a terracotta return trace. Rules become a measured grid; recovery becomes one considered path.
+- 精密检修垫上的压印方格、凹入触点与陶土色返回轨迹。用定位栅格承载规则，用一条有节制的路径表达恢复。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Approved surface retained in the current identity kit.
+- [Paper PNG](https://h.no.mt/brands/pi-agent-policy/v1.0.3/texture-light.png) · [Night PNG](https://h.no.mt/brands/pi-agent-policy/v1.0.3/texture-dark.png) · [Exact paper prompt](https://h.no.mt/brands/pi-agent-policy/v1.0.3/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/brands/pi-agent-policy/v1.0.3/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/brands/pi-agent-policy/v1.0.3/manifest.json) · [Usage/rights](https://h.no.mt/brands/pi-agent-policy/v1.0.3/guide.md) · [Full-canvas specimens](https://hexly.ai/brands/pi-agent-policy/v1.0.3/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.3`; [public archive](https://hexly.ai/projects/pi-agent-policy#brand).

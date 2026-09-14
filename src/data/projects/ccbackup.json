@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/ccbackup/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A place for a copy", "zh": "副本归位" },
+		"description": {
+			"en": "Matte molded polymer with fine parallel ribs, shallow offset rectangular index recesses and a few precise archival tab notches.",
+			"zh": "细肋聚合物、矩形索引凹位与档案卡槽承接软盘表情所代表的备份工作，保持现有身份不变。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
+	}
 }

@@ -107,10 +107,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A leaf along for the ride",
-					"zh": "搭便车的小叶子"
-				},
+				"title": { "en": "A leaf along for the ride", "zh": "搭便车的小叶子" },
 				"description": {
 					"en": "A compact tortoise pauses during a slow step and turns toward the viewer. A domed shell, short neck and natural feet give it a clear whole-animal silhouette.",
 					"zh": "紧凑的小陆龟在缓慢迈步时停下，转头看向镜头。圆拱龟壳、短颈和自然脚掌形成清晰的全身轮廓。"
@@ -129,10 +126,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Shell saddles",
-					"zh": "龟壳弧面"
-				},
+				"title": { "en": "Shell saddles", "zh": "龟壳弧面" },
 				"description": {
 					"en": "Unequal broad scute impressions cross a deep sage field. Interrupted seams and soft contact shadows echo the shell with room to breathe.",
 					"zh": "大小不一的宽阔盾片压纹铺过深鼠尾草色底纹，断开的接缝与浅接触阴影呼应龟壳，并保留充分留白。"
@@ -143,55 +137,37 @@
 			{
 				"color": "#829178",
 				"role": "background",
-				"label": {
-					"en": "Shell saddles",
-					"zh": "龟壳弧面"
-				},
+				"label": { "en": "Shell saddles", "zh": "龟壳弧面" },
 				"source": "Selected Backy presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#818a45",
 				"role": "primary",
-				"label": {
-					"en": "Olive",
-					"zh": "橄榄绿"
-				},
+				"label": { "en": "Olive", "zh": "橄榄绿" },
 				"source": "Native backy 79f10e2d2a84, sampled sRGB pixel (869, 1165); artwork/logo-family/backy/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#344b2f",
 				"role": "accent",
-				"label": {
-					"en": "Forest green",
-					"zh": "森林绿"
-				},
+				"label": { "en": "Forest green", "zh": "森林绿" },
 				"source": "Native backy 79f10e2d2a84, sampled sRGB pixel (551, 995); artwork/logo-family/backy/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#d5b455",
 				"role": "accent",
-				"label": {
-					"en": "Ochre",
-					"zh": "赭黄色"
-				},
+				"label": { "en": "Ochre", "zh": "赭黄色" },
 				"source": "Native backy 79f10e2d2a84, sampled sRGB pixel (926, 772); artwork/logo-family/backy/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#d77656",
 				"role": "accent",
-				"label": {
-					"en": "Leaf coral",
-					"zh": "叶片珊瑚色"
-				},
+				"label": { "en": "Leaf coral", "zh": "叶片珊瑚色" },
 				"source": "Native backy 79f10e2d2a84, sampled sRGB pixel (819, 435); artwork/logo-family/backy/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#518c99",
 				"role": "accent",
-				"label": {
-					"en": "Leaf teal",
-					"zh": "叶片青色"
-				},
+				"label": { "en": "Leaf teal", "zh": "叶片青色" },
 				"source": "Native backy 79f10e2d2a84, sampled sRGB pixel (802, 474); artwork/logo-family/backy/2026-09-07-01/palette.json"
 			}
 		],
@@ -230,10 +206,7 @@
 			},
 			{
 				"name": "React",
-				"role": {
-					"en": "Backup management interface",
-					"zh": "备份管理界面"
-				}
+				"role": { "en": "Backup management interface", "zh": "备份管理界面" }
 			},
 			{
 				"name": "Hono",
@@ -272,10 +245,7 @@
 			},
 			{
 				"name": "Cloudflare Access",
-				"role": {
-					"en": "Dashboard sign-in",
-					"zh": "管理界面登录"
-				}
+				"role": { "en": "Dashboard sign-in", "zh": "管理界面登录" }
 			}
 		],
 		"verified": {
@@ -316,15 +286,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 831,
-			"height": 416
-		},
+		"lockup": { "width": 831, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Shell saddles",
-				"zh": "龟壳叠弧"
-			},
+			"name": { "en": "Shell saddles", "zh": "龟壳叠弧" },
 			"description": {
 				"en": "Unequal shell plates and interrupted seams form a sheltered rhythm around the small tortoise.",
 				"zh": "大小不同的龟甲轮廓与断续接缝，围绕小陆龟形成稳妥、舒缓的节奏。"
@@ -349,35 +313,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 63px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/backy/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Shelter in the scrub", "zh": "灌丛小憩" },
+		"description": {
+			"en": "Broad ribbed plantain leaves, rounded low mallow leaves and a few dry grass seeds.",
+			"zh": "车前叶的筋脉、低矮锦葵叶和干草籽贴近地面，给小陆龟留下一片有遮蔽的灌丛。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
 	}
 }

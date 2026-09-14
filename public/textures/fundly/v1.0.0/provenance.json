@@ -1,0 +1,122 @@
+{
+	"project": "fundly",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "A coastal lookout", "zh": "海岸瞭望处" },
+		"motif": "A vegetated subantarctic coastal interpretation for an unspecified penguin: coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head. Record this as a plausible broad campaign habitat, not a species claim. No tropical plants, flowers, ice emblem or penguin.",
+		"description": {
+			"en": "Coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head.",
+			"zh": "粗壮丛生草与少量海岸草本小叶构成瞭望处。采用合理的亚南极植被联想，不断言企鹅的具体物种。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "China mutual-fund browser and ranking tool with local SQLite and Railway",
+			"zh": "中国公募基金浏览与排名工具，采用本地 SQLite 存储并部署于 Railway。"
+		},
+		"purpose": {
+			"en": "Collect fund and market data for private research into Chinese funds, ETFs, stocks, and macro conditions.",
+			"zh": "采集基金与市场数据，用于研究中国公募基金、ETF、股票与宏观环境。"
+		},
+		"source": "src/data/projects/fundly.json",
+		"inspectedRevision": "6de762074e00011009f7604bbeeb7c0b04923c00"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/fundly.svg",
+		"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+		"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+		"width": 32,
+		"height": 32,
+		"bytes": 456,
+		"source": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/fundly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "b079c51c6034b6bd8ca9df868a2c03b5681984426b54c4c88e89a763109600af"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ad8631e8-e6e0-4fc3-a4b1-91f8dd316999",
+			"source": "artwork/brands/fundly/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/fundly/v1.0.0/source-light-request.json",
+			"response": "/textures/fundly/v1.0.0/source-light-response.json",
+			"prompt": "/textures/fundly/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/fundly/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/fundly/v1.0.0/texture-light.png",
+				"sha256": "daf4b50a587e1078791b5e0d254d0500664f4aadda411978fb1d5281025c3af4",
+				"bytes": 1701067,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7f799215-b700-4a52-bbf9-660c93660793",
+			"source": "artwork/brands/fundly/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/fundly/v1.0.0/source-dark-request.json",
+			"response": "/textures/fundly/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/fundly/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/fundly/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/fundly/v1.0.0/texture-dark.png",
+				"sha256": "7680cde8b6f6d60839fc84e9ee41bacaf304dfc24b2433daeec2ac71950be087",
+				"bytes": 1458665,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.32
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.7060102233266,
+		"darkMinimum": 5.323943305056805,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:20:43.621Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

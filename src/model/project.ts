@@ -59,6 +59,25 @@ export interface PaletteColor {
 	label?: Record<Locale, string>;
 }
 
+export interface TextureDescription {
+	name: Record<Locale, string>;
+	description: Record<Locale, string>;
+	format?: "svg" | "webp";
+	display?: "repeat" | "single";
+	model?: "gpt-image-2.5-flare" | "gpt-image-2.5-sunburst";
+}
+
+/** Decorative campaign material has its own version; identity kits stay frozen. */
+export interface ProjectTexture extends TextureDescription {
+	version: string;
+	root: string;
+	scope: "hexly-campaign";
+	format: "webp";
+	display: "single";
+	model: "gpt-image-2.5-flare" | "gpt-image-2.5-sunburst";
+	surfaceOpacity: number;
+}
+
 export interface LogoFamily {
 	id: string;
 	status: "review" | "adopted";
@@ -126,6 +145,7 @@ export interface Project {
 		sha256: string;
 	};
 	family?: LogoFamily;
+	brandTexture?: ProjectTexture;
 	brandKit?: {
 		version: string;
 		root: string;
@@ -133,13 +153,7 @@ export interface Project {
 		scope?: "hexly-campaign";
 		previousVersion?: string;
 		lockup?: { width: number; height: number };
-		texture?: {
-			name: Record<Locale, string>;
-			description: Record<Locale, string>;
-			format?: "svg" | "webp";
-			display?: "repeat" | "single";
-			model?: "gpt-image-2.5-flare" | "gpt-image-2.5-sunburst";
-		};
+		texture?: TextureDescription;
 		hero?: {
 			width: number;
 			height: number;

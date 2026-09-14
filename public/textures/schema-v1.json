@@ -1,0 +1,310 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://hexly.ai/textures/schema-v1.json",
+	"title": "Hexly independently versioned campaign texture pack",
+	"description": "Generated decoration for Hexly pages and promotional materials. Official identity hashes and colors, independent product UI, archived state and historical kits remain unchanged. Cross-field path/theme and exact-byte checks are enforced by the repository.",
+	"type": "object",
+	"required": [
+		"schemaVersion",
+		"kind",
+		"project",
+		"version",
+		"root",
+		"canonical",
+		"scope",
+		"catalogue",
+		"officialProjectIdentity",
+		"existingKit",
+		"generations",
+		"files"
+	],
+	"properties": {
+		"schemaVersion": {
+			"const": 1
+		},
+		"kind": {
+			"const": "hexly-project-texture"
+		},
+		"project": {
+			"type": "string",
+			"pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+		},
+		"version": {
+			"type": "string",
+			"pattern": "^\\d+\\.\\d+\\.\\d+$"
+		},
+		"root": {
+			"type": "string",
+			"minLength": 1
+		},
+		"canonical": {
+			"type": "string",
+			"minLength": 1
+		},
+		"scope": {
+			"type": "object",
+			"required": [
+				"id",
+				"productUIChanged",
+				"officialIdentityChanged",
+				"officialIdentityRecolored",
+				"campaignReplacesOfficialIdentity"
+			],
+			"properties": {
+				"id": {
+					"const": "hexly-campaign"
+				},
+				"productUIChanged": {
+					"const": false
+				},
+				"officialIdentityChanged": {
+					"const": false
+				},
+				"officialIdentityRecolored": {
+					"const": false
+				},
+				"campaignReplacesOfficialIdentity": {
+					"const": false
+				}
+			}
+		},
+		"catalogue": {
+			"type": "object",
+			"required": [
+				"root",
+				"version",
+				"scope",
+				"name",
+				"description",
+				"format",
+				"display",
+				"model",
+				"surfaceOpacity"
+			],
+			"properties": {
+				"root": {
+					"type": "string",
+					"minLength": 1
+				},
+				"version": {
+					"type": "string",
+					"pattern": "^\\d+\\.\\d+\\.\\d+$"
+				},
+				"scope": {
+					"const": "hexly-campaign"
+				},
+				"name": {
+					"type": "object",
+					"required": ["en", "zh"],
+					"properties": {
+						"en": {
+							"type": "string",
+							"minLength": 1
+						},
+						"zh": {
+							"type": "string",
+							"minLength": 1
+						}
+					}
+				},
+				"description": {
+					"type": "object",
+					"required": ["en", "zh"],
+					"properties": {
+						"en": {
+							"type": "string",
+							"minLength": 1
+						},
+						"zh": {
+							"type": "string",
+							"minLength": 1
+						}
+					}
+				},
+				"format": {
+					"const": "webp"
+				},
+				"display": {
+					"const": "single"
+				},
+				"model": {
+					"enum": ["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"]
+				},
+				"surfaceOpacity": {
+					"type": "number",
+					"exclusiveMinimum": 0,
+					"maximum": 1
+				}
+			}
+		},
+		"officialProjectIdentity": {
+			"type": "object",
+			"required": [
+				"path",
+				"sha256",
+				"rgbaSha256",
+				"bytes",
+				"width",
+				"height",
+				"source",
+				"kind"
+			],
+			"properties": {
+				"path": {
+					"type": "string",
+					"minLength": 1
+				},
+				"sha256": {
+					"type": "string",
+					"pattern": "^[a-f0-9]{64}$"
+				},
+				"rgbaSha256": {
+					"type": "string",
+					"pattern": "^[a-f0-9]{64}$"
+				},
+				"bytes": {
+					"type": "integer",
+					"minimum": 1
+				},
+				"width": {
+					"type": "integer",
+					"minimum": 1
+				},
+				"height": {
+					"type": "integer",
+					"minimum": 1
+				},
+				"source": {
+					"type": "string",
+					"minLength": 1
+				},
+				"kind": {
+					"type": "string",
+					"minLength": 1
+				}
+			}
+		},
+		"existingKit": {
+			"type": ["object", "null"]
+		},
+		"generations": {
+			"type": "array",
+			"minItems": 2,
+			"maxItems": 2,
+			"items": {
+				"type": "object",
+				"required": [
+					"theme",
+					"model",
+					"provider",
+					"source",
+					"request",
+					"response",
+					"prompt",
+					"approval",
+					"raw",
+					"acceptance",
+					"ownerReviewedExactBytes",
+					"crop",
+					"recolor"
+				],
+				"properties": {
+					"theme": {
+						"enum": ["light", "dark"]
+					},
+					"model": {
+						"enum": ["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"]
+					},
+					"provider": {
+						"const": "Azure OpenAI"
+					},
+					"source": {
+						"type": "string",
+						"minLength": 1
+					},
+					"request": {
+						"type": "string",
+						"minLength": 1
+					},
+					"response": {
+						"type": "string",
+						"minLength": 1
+					},
+					"prompt": {
+						"type": "string",
+						"minLength": 1
+					},
+					"approval": {
+						"type": "string",
+						"minLength": 1
+					},
+					"requestId": {
+						"type": ["string", "null"]
+					},
+					"acceptance": {
+						"enum": ["delegated-agent", "owner"]
+					},
+					"ownerReviewedExactBytes": {
+						"type": "boolean"
+					},
+					"crop": {
+						"const": false
+					},
+					"recolor": {
+						"const": false
+					},
+					"raw": {
+						"type": "object",
+						"required": ["path", "sha256", "bytes", "width", "height"],
+						"properties": {
+							"path": {
+								"type": "string",
+								"minLength": 1
+							},
+							"sha256": {
+								"type": "string",
+								"pattern": "^[a-f0-9]{64}$"
+							},
+							"bytes": {
+								"type": "integer",
+								"minimum": 1
+							},
+							"width": {
+								"const": 1024
+							},
+							"height": {
+								"const": 1024
+							}
+						}
+					}
+				}
+			}
+		},
+		"files": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "object",
+				"required": ["path", "role", "bytes", "sha256"],
+				"properties": {
+					"path": {
+						"type": "string",
+						"pattern": "^/textures/[a-z0-9-]+/v\\d+\\.\\d+\\.\\d+/[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+					},
+					"role": {
+						"type": "string",
+						"minLength": 1
+					},
+					"bytes": {
+						"type": "integer",
+						"minimum": 1
+					},
+					"sha256": {
+						"type": "string",
+						"pattern": "^[a-f0-9]{64}$"
+					}
+				}
+			}
+		}
+	}
+}

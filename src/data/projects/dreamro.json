@@ -28,18 +28,12 @@
 		"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc"
 	},
 	"theme": {
-		"primary": {
-			"value": "#a98c57",
-			"source": "src/styles.css :root --gold"
-		},
+		"primary": { "value": "#a98c57", "source": "src/styles.css :root --gold" },
 		"background": {
 			"value": "#f4f1e5",
 			"source": "src/styles.css :root background"
 		},
-		"ink": {
-			"value": "#4c5c51",
-			"source": "src/styles.css :root --ink"
-		}
+		"ink": { "value": "#4c5c51", "source": "src/styles.css :root --ink" }
 	},
 	"colors": {
 		"primary": "#a98c57",
@@ -120,10 +114,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Parchment heraldic lattice",
-					"zh": "羊皮纸纹章格"
-				},
+				"title": { "en": "Parchment heraldic lattice", "zh": "羊皮纸纹章格" },
 				"description": {
 					"en": "Pale parchment carries a fine interlaced lozenge lattice and small heraldic corner stitches. A separate projected shadow lifts the shield and weapons gently from the page. Bright metal highlights remain in the foreground; the paper and shadow remain independent.",
 					"zh": "浅羊皮纸铺有精细交织菱格与小型纹章角饰，独立的投影让盾牌和武器轻轻浮起。金属高光保留在前景，纸面与阴影各自独立。"
@@ -134,64 +125,43 @@
 			{
 				"color": "#dccfad",
 				"role": "background",
-				"label": {
-					"en": "Parchment heraldic lattice",
-					"zh": "羊皮纸纹章格"
-				},
+				"label": { "en": "Parchment heraldic lattice", "zh": "羊皮纸纹章格" },
 				"source": "Selected local presentation, dreamro/2026-09-07-01/02; background.base in archived settings.json"
 			},
 			{
 				"color": "#5c6456",
 				"role": "primary",
-				"label": {
-					"en": "Forest timber",
-					"zh": "森林色木材"
-				},
+				"label": { "en": "Forest timber", "zh": "森林色木材" },
 				"source": "Native dreamro 90e59a8dfbc8, sampled sRGB pixel (824, 656); artwork/logo-family/dreamro/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e3be8e",
 				"role": "accent",
-				"label": {
-					"en": "Antique gold",
-					"zh": "古金色"
-				},
+				"label": { "en": "Antique gold", "zh": "古金色" },
 				"source": "Native dreamro 90e59a8dfbc8, sampled sRGB pixel (994, 252); artwork/logo-family/dreamro/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e2dfdb",
 				"role": "accent",
-				"label": {
-					"en": "Polished steel",
-					"zh": "抛光钢色"
-				},
+				"label": { "en": "Polished steel", "zh": "抛光钢色" },
 				"source": "Native dreamro 90e59a8dfbc8, sampled sRGB pixel (1200, 1050); artwork/logo-family/dreamro/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#29170b",
 				"role": "accent",
-				"label": {
-					"en": "Dark bow wood",
-					"zh": "深色弓木"
-				},
+				"label": { "en": "Dark bow wood", "zh": "深色弓木" },
 				"source": "Native dreamro 90e59a8dfbc8, sampled sRGB pixel (285, 750); artwork/logo-family/dreamro/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#382cbe",
 				"role": "accent",
-				"label": {
-					"en": "Amethyst",
-					"zh": "紫晶色"
-				},
+				"label": { "en": "Amethyst", "zh": "紫晶色" },
 				"source": "Native dreamro 90e59a8dfbc8, sampled sRGB pixel (1770, 480); artwork/logo-family/dreamro/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#31221e",
 				"role": "accent",
-				"label": {
-					"en": "Dark leather",
-					"zh": "深色皮革"
-				},
+				"label": { "en": "Dark leather", "zh": "深色皮革" },
 				"source": "Native dreamro 90e59a8dfbc8, sampled sRGB pixel (495, 1170); artwork/logo-family/dreamro/2026-09-07-01/palette.json"
 			}
 		],
@@ -209,10 +179,7 @@
 		"techStack": [
 			{
 				"name": "TypeScript",
-				"role": {
-					"en": "Game logic and interface",
-					"zh": "游戏逻辑与界面"
-				}
+				"role": { "en": "Game logic and interface", "zh": "游戏逻辑与界面" }
 			},
 			{
 				"name": "Three.js",
@@ -223,10 +190,7 @@
 			},
 			{
 				"name": "WebGL",
-				"role": {
-					"en": "Browser 3D rendering",
-					"zh": "浏览器三维渲染"
-				}
+				"role": { "en": "Browser 3D rendering", "zh": "浏览器三维渲染" }
 			},
 			{
 				"name": "Web Audio",
@@ -251,10 +215,7 @@
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "Static game hosting",
-					"zh": "游戏静态托管"
-				}
+				"role": { "en": "Static game hosting", "zh": "游戏静态托管" }
 			}
 		],
 		"verified": {
@@ -284,15 +245,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 1094,
-			"height": 416
-		},
+		"lockup": { "width": 1094, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Parchment heraldic lattice",
-				"zh": "羊皮纸纹章"
-			},
+			"name": { "en": "Parchment heraldic lattice", "zh": "羊皮纸纹章" },
 			"description": {
 				"en": "Interlaced lozenges and short corner stitches recall crafted heraldry around the shield and weapons.",
 				"zh": "交织菱格与短短的角部缝线，围绕盾牌和武器留下手作纹章的质感。"
@@ -317,35 +272,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥107px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 107px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/dreamro/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A maker's parchment", "zh": "匠人的羊皮纸" },
+		"description": {
+			"en": "Fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions.",
+			"zh": "洁净羊皮纸、斜向皮绳槽与浅锤纹金属压边承接盾牌道具的制作感，不另造徽章或武器主体。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.31
 	}
 }

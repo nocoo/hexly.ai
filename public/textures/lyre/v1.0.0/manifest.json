@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "lyre",
+	"version": "1.0.0",
+	"root": "/textures/lyre/v1.0.0",
+	"canonical": "https://hexly.ai/projects/lyre#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/lyre/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Under the fern canopy", "zh": "蕨下回声" },
+		"description": {
+			"en": "Finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip.",
+			"zh": "树蕨细叶、桉树长叶与一枚嫩蕨卷承接琴鸟的湿润林地，把声音的层次藏进叶片重叠处。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.41
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/lyre.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3656299,
+		"source": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/lyre/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8fea827e1961de64b8021a316c1ccfd9f741ef65e18dd73c8f354c0bc99b6817"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "002a3189-9624-4f2a-88c8-cb1ed839dab9",
+			"source": "artwork/brands/lyre/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/lyre/v1.0.0/source-light-request.json",
+			"response": "/textures/lyre/v1.0.0/source-light-response.json",
+			"prompt": "/textures/lyre/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/lyre/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/lyre/v1.0.0/texture-light.png",
+				"sha256": "6bfaa902af01fa5ba65db40fcc3a52e46d1aa30ef434d00da0e4fa7ea97c1759",
+				"bytes": 1718392,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d1e70e7e-6832-488c-98d7-7f475a27b42b",
+			"source": "artwork/brands/lyre/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/lyre/v1.0.0/source-dark-request.json",
+			"response": "/textures/lyre/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/lyre/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/lyre/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/lyre/v1.0.0/texture-dark.png",
+				"sha256": "a2697be87bcf09d9902983b0c87f53a2122adef977f0e03e5de41712167113c1",
+				"bytes": 1567982,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/lyre/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1718392,
+			"sha256": "6bfaa902af01fa5ba65db40fcc3a52e46d1aa30ef434d00da0e4fa7ea97c1759"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 210010,
+			"sha256": "0df7b5b4002656762c3c614923843813621cd62dc943eced8a1f4045b829fbb8"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 11850,
+			"sha256": "a82c938d2c0f973dad4492dfdde1d63db56c1f84dab12bd59abc1efa4182dd6c"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2883,
+			"sha256": "37c33e3cd41d7f8278c76e07ab3f005974c85fa3c05c56204f467efba3e260a2"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8a0f824aad8ea8a3fe1a7173a0a84200bc828e69946cba6cd4c0d0196930eeee"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "7270a5d7031a09f2ae86e4fc0a8065c19e712b177873e61e1a2a12e04e5fd167"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1025,
+			"sha256": "e95ac8b2d67345daa66263623193686cc2544b52a4a92993b4d0c9682b74c898"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1567982,
+			"sha256": "a2697be87bcf09d9902983b0c87f53a2122adef977f0e03e5de41712167113c1"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 157306,
+			"sha256": "2c203f559f468734d0b33032e59045ef3da5ea97669f67eef7c4aaac77c250ac"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9928,
+			"sha256": "922b5f6d4d8041ed465584e2acb52a521bce5d6195cc0d4d0c57558873610602"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2964,
+			"sha256": "0fd16be47f0f8e7aa48d8b810856b8597953a9b6ce98b2c16e9c83847d00a9da"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "c48f6d170a7ff037e52abd2e6b8540efdd18d6fcef7348d403dcfa6d43a63560"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "563c9e693a1854b92928688df3b895ba39b436607400af624a6108da52be8ce7"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1025,
+			"sha256": "15598bb4703ed16f9c8d04a64f3860daab45f4ae79e53c3d415fa8ccea89693a"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5198,
+			"sha256": "f2a7bff2fceb7e7b96c67760652b6627a4932d78a353a693c4163c2c5191fa16"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1373,
+			"sha256": "066647e30eeabc43ade28dffc193faab41a16676058dc9ac40c16bd5c862ac6f"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "dd62acf3089586f1c78a40a8dfd46ab57a9f8920069622c4b7a860fcf2d7dca8"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2522,
+			"sha256": "0f44ad5cc70c4e4b64785bc6be03ccb6d6bb77bfbda2182787b3f4bd84d534ed"
+		},
+		{
+			"path": "/textures/lyre/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3501,
+			"sha256": "620fc48cbac097e3e9b2bac0fa19cc880eba8309ad374de815fd0c702f10cf92"
+		}
+	]
+}

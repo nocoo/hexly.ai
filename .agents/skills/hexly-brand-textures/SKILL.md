@@ -8,6 +8,11 @@ description: Design, generate, review and integrate product-specific light/dark 
 Create a recognizable supporting surface for the selected project, with visible
 detail at actual page size and quiet, readable text areas. Work in hexly.ai;
 texture work does not change a product's Logo, palette or independent website.
+Default every rollout to non-archived projects. Archived entries receive basic
+support only: preserve completed textures, existing pages/downloads and provenance,
+but do not generate, replace or complete missing surfaces without an explicit
+owner exception for that archived project. Preserve unfinished source evidence
+without treating it as approved production art.
 Read [CLAUDE.md](../../../CLAUDE.md),
 [identity rules](../../../docs/02-identity-rules.md), the selected project's
 `src/data/projects/<id>.json` and actual `src/styles/base.css` tokens first.
@@ -54,6 +59,11 @@ state, security guarantee or literal technical diagram.
   relief or natural surface detail, spacious composition and lines that remain
   visible around 250–320 CSS px. Avoid a UI screenshot, central emblem, text,
   frame, noisy grunge or a second focal object. Keep dark detail legible.
+  Keep material prompts separate from botanical prose: even a shared phrase
+  such as "leaf veins" can pull tool outputs toward unwanted foliage. For a
+  working surface, ask for an orthographic continuous material with marks pressed
+  into it, rather than props arranged on a sheet. Reject plant ornaments or
+  literal objects when they contradict that project's brief.
 - Request the intended complete native canvas. For the current square specimen
   UI, native 1024×1024 is the proven starting size. If repetition is wanted,
   request edge continuity and interior clearance in the prompt. That request
@@ -67,6 +77,13 @@ state, security guarantee or literal technical diagram.
   The pilot's wrapper is an example, not a batch runner to replay under Pi's ID.
   Preserve failed/unknown outcomes; do not silently retry paid calls or change
   model after an error.
+  Use [the recorded batch runner](scripts/generate.py) when useful. It defaults
+  to a dry run and one worker with 35 seconds between starts; the 2026-09-14
+  provider returned a limit of two requests per minute. Read current returned
+  limits/Retry-After rather than assuming this quota is permanent. The runner
+  stops scheduling on 429/401/403. Inspect failures before explicitly choosing
+  a later attempt, keep successful outputs, and preserve the old prompt when
+  writing a revised prompt in a new attempt directory.
 - Show untouched outputs and record exact-byte owner approval (or an explicit
   delegated acceptance) in `raw-review.json` before production derivatives or
   integration. Reuse approval already given for those bytes; publication
@@ -99,14 +116,21 @@ new integration prose as an original generation prompt.
 
 ## Version, review, publish
 
-Create a new campaign version under `artwork/brands/<id>/v<X.Y.Z>/` and
-`public/brands/<id>/v<X.Y.Z>/`. Preserve old packages, original Logo hashes and
-decoded colors, fonts, icons and Hero bytes unless their change is authorized.
-Keep identity/source adoption independent of the campaign version. Record
-parent manifest hash, changed files, generation/derivative relationship, licenses
-and file hashes. Format mutable source first; frozen/inventoried exports must not
-be rerun or reformatted. Export-time local status remains a historical fact;
-later upload receipts and site release establish publication.
+For a texture-only change, use an **independent texture pack**, not a copied
+identity kit: `public/textures/<id>/v<X.Y.Z>/` maps to
+`projects/<id>/textures/v<X.Y.Z>/` in R2. Select it with optional
+`Project.brandTexture`; `brandKit.texture` remains the historical fallback.
+Read [the pack runbook](references/independent-packs.md) for schema, export,
+discovery and publication. Existing animal Logos still get habitat foliage even
+when the product is a tool; archive status never changes as a side effect.
+The batch runner excludes archived entries even when an old inventory lists them
+for generation. Reuse reviewed completed outputs without new generation.
+
+Full identity/campaign revisions still use `artwork/brands/<id>/v<X.Y.Z>/` and
+`public/brands/<id>/v<X.Y.Z>/`. Preserve old packages, original Logo/RGBA hashes,
+fonts, icons and Hero bytes. Format mutable source before export; never rewrite
+inventoried or published bytes. Export-time state is historical; upload receipts
+and the site release establish later publication.
 
 For a local review, use `VITE_LOCAL_MATERIALS=1` in ignored
 `.env.development.local` and the existing `https://index.dev.hexly.ai` server.

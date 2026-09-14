@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "snaky",
+	"version": "1.0.0",
+	"root": "/textures/snaky/v1.0.0",
+	"canonical": "https://hexly.ai/projects/snaky#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/snaky/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "The meadow bends", "zh": "草叶转弯" },
+		"description": {
+			"en": "Narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads.",
+			"zh": "细草叶与车前长叶缓慢交错，草甸边缘的弯折自然呼应蛇的行进，也让路径有处可寻。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+		"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+		"rgbaSha256": "828aa7fce80d2a0b999d68686ce4dda89778a8de88f29c1b06441504f5ffea46",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2958177,
+		"source": "https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/snaky/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "a89eb7b01412aa2f8d79b3b007e5f1bb4a36acc94cec1f80209453aa10dae648"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "637cb6dd-09f9-4d8b-be5f-767cb5c6f593",
+			"source": "artwork/brands/snaky/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/snaky/v1.0.0/source-light-request.json",
+			"response": "/textures/snaky/v1.0.0/source-light-response.json",
+			"prompt": "/textures/snaky/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/snaky/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/snaky/v1.0.0/texture-light.png",
+				"sha256": "6d88ca724a47d1d92977bb3cf4287f205eb2285821c6e7b05b19941f621e31f2",
+				"bytes": 1563409,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c4d454fc-d796-4d3c-80ad-2d00655b2593",
+			"source": "artwork/brands/snaky/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/snaky/v1.0.0/source-dark-request.json",
+			"response": "/textures/snaky/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/snaky/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/snaky/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/snaky/v1.0.0/texture-dark.png",
+				"sha256": "25914a5e724f2841b07ade392dc66796d8b0fb4a551cc7598c5bf3a4184739e7",
+				"bytes": 1407301,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/snaky/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1563409,
+			"sha256": "6d88ca724a47d1d92977bb3cf4287f205eb2285821c6e7b05b19941f621e31f2"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 150274,
+			"sha256": "494031829fbef43c5dff14c2e99a1b2401aff9cf7015969867a6ea02a7ab36c3"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8974,
+			"sha256": "38ee155c12a7d8d3cf4a06953f0fd34cd864be85875781991c2f9093a95db9df"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2891,
+			"sha256": "2c416ef885926fb82cbca96ba492537cd013d577a92fc6ef21ef0f92c1c7b906"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8563c30389d9d4f9e607206eeaf361141e207a1f300d3c67e4af4de3c64e7637"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d8a52d7073a90695c85474208ca1c435f9ab1f7d504bc4a52b9eb4301912523f"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1041,
+			"sha256": "fdf3d498d7ee2a80bba36932a6b4cf0abd756b6a24631d650d6a27c9cf53ff2f"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1407301,
+			"sha256": "25914a5e724f2841b07ade392dc66796d8b0fb4a551cc7598c5bf3a4184739e7"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 98212,
+			"sha256": "67e3bbd878225d56c31da7ea4f6b520b3431bedfebe06ca469a9bab387e2bd9a"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6804,
+			"sha256": "49d3944d397e504c416eed48503dd4d324b6a0de5bfa7ddc02fc5ac6c9139c42"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2972,
+			"sha256": "1673e81c567e44503c9bfde24b4f50b61bbc32a548e2fad7f10a57bc2be9ada4"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "fbf7b877a434c8a81840eacadf05f706f40db46777f2796ae66a58dd25dedafc"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "79025568406c911f6b3c1780e4b3abb7619911561e94359677a7bcc5d34f9fc7"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1041,
+			"sha256": "807352384f2e7c2fe7a0257bb70d6e0780ccadeda9c88abe6c9bc862a6374452"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5428,
+			"sha256": "3e71a80d4693b5ab1951826f171bf767ba6087399465e0bffdc7ab8ff6810f54"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1451,
+			"sha256": "791708d8c67181401f361aac343dca0221683f051562ec90f1ddc9566147416a"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "891b551ded277bf097fa3a3970ff8f0346056f525dc511fb7452af207390a5fd"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2531,
+			"sha256": "dd24d48d12709e216aa0b64d7eb47fe75a22138c9a4eb156ceb711cfc0749f2a"
+		},
+		{
+			"path": "/textures/snaky/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3510,
+			"sha256": "c745ac8f03c09701b1854127db2beb39218bb43d0470ef2e766ef1349fd134be"
+		}
+	]
+}

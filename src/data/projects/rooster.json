@@ -94,10 +94,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The first morning step",
-					"zh": "清晨的第一步"
-				},
+				"title": { "en": "The first morning step", "zh": "清晨的第一步" },
 				"description": {
 					"en": "A rooster pauses halfway through a step and turns toward a morning-glory flower. Its comb, full tail and toes form one complete, compact animal.",
 					"zh": "公鸡迈步途中停下，转向一朵牵牛花。鸡冠、完整尾羽与脚趾构成紧凑而完整的主体。"
@@ -105,10 +102,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Copper at dawn",
-					"zh": "晨光里的铜金色"
-				},
+				"title": { "en": "Copper at dawn", "zh": "晨光里的铜金色" },
 				"description": {
 					"en": "Copper and ochre planes lead, with a natural red comb and deep green tail. One faceted flower carries the small multicolored interest point.",
 					"zh": "铜金与赭黄色面成为主调，配自然红色鸡冠和深绿尾羽。唯一的多彩兴趣点集中在一朵切面花上。"
@@ -116,10 +110,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Dawn terraces",
-					"zh": "晨光台阶"
-				},
+				"title": { "en": "Dawn terraces", "zh": "晨光台阶" },
 				"description": {
 					"en": "Low stepped paper terraces cross a warm ochre field. Their different heights give a quiet sunrise rhythm without creating a literal landscape.",
 					"zh": "低矮的阶梯纸面横穿温暖赭色底纹，不等高的层次带来日出般的节奏，保持图标界面的简洁。"
@@ -130,55 +121,37 @@
 			{
 				"color": "#9c8460",
 				"role": "background",
-				"label": {
-					"en": "Dawn terraces",
-					"zh": "晨光台阶"
-				},
+				"label": { "en": "Dawn terraces", "zh": "晨光台阶" },
 				"source": "Selected Rooster presentation, 2026-09-07-01/02; background.base in archived settings.json"
 			},
 			{
 				"color": "#ba7522",
 				"role": "primary",
-				"label": {
-					"en": "Copper",
-					"zh": "铜金色"
-				},
+				"label": { "en": "Copper", "zh": "铜金色" },
 				"source": "Native rooster eec0319d4326, sampled sRGB pixel (1102, 731); artwork/logo-family/rooster/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#f0cf8d",
 				"role": "accent",
-				"label": {
-					"en": "Cream",
-					"zh": "奶油色"
-				},
+				"label": { "en": "Cream", "zh": "奶油色" },
 				"source": "Native rooster eec0319d4326, sampled sRGB pixel (862, 459); artwork/logo-family/rooster/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#274e3c",
 				"role": "accent",
-				"label": {
-					"en": "Forest green",
-					"zh": "森林绿"
-				},
+				"label": { "en": "Forest green", "zh": "森林绿" },
 				"source": "Native rooster eec0319d4326, sampled sRGB pixel (1325, 656); artwork/logo-family/rooster/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#dc777d",
 				"role": "accent",
-				"label": {
-					"en": "Flower coral",
-					"zh": "花瓣珊瑚色"
-				},
+				"label": { "en": "Flower coral", "zh": "花瓣珊瑚色" },
 				"source": "Native rooster eec0319d4326, sampled sRGB pixel (551, 521); artwork/logo-family/rooster/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#786a9f",
 				"role": "accent",
-				"label": {
-					"en": "Flower violet",
-					"zh": "花瓣紫色"
-				},
+				"label": { "en": "Flower violet", "zh": "花瓣紫色" },
 				"source": "Native rooster eec0319d4326, sampled sRGB pixel (403, 500); artwork/logo-family/rooster/2026-09-07-01/palette.json"
 			}
 		],
@@ -196,38 +169,20 @@
 		"techStack": [
 			{
 				"name": "TypeScript / Node.js",
-				"role": {
-					"en": "Application server",
-					"zh": "应用服务端"
-				}
+				"role": { "en": "Application server", "zh": "应用服务端" }
 			},
 			{
 				"name": "Preact / Signals",
-				"role": {
-					"en": "Chat interface and state",
-					"zh": "对话界面与状态管理"
-				}
+				"role": { "en": "Chat interface and state", "zh": "对话界面与状态管理" }
 			},
 			{
 				"name": "Vite / Primer CSS",
-				"role": {
-					"en": "Frontend build and styling",
-					"zh": "前端构建与样式"
-				}
+				"role": { "en": "Frontend build and styling", "zh": "前端构建与样式" }
 			},
-			{
-				"name": "Hono",
-				"role": {
-					"en": "HTTP API",
-					"zh": "HTTP 接口"
-				}
-			},
+			{ "name": "Hono", "role": { "en": "HTTP API", "zh": "HTTP 接口" } },
 			{
 				"name": "Socket.IO",
-				"role": {
-					"en": "Streaming chat events",
-					"zh": "流式对话事件"
-				}
+				"role": { "en": "Streaming chat events", "zh": "流式对话事件" }
 			},
 			{
 				"name": "SQLite",
@@ -261,15 +216,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 1018,
-			"height": 416
-		},
+		"lockup": { "width": 1018, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Dawn terraces",
-				"zh": "晨光梯田"
-			},
+			"name": { "en": "Dawn terraces", "zh": "晨光梯田" },
 			"description": {
 				"en": "Unequal stepped bands and rising folds suggest terraces catching the first light of morning.",
 				"zh": "高低错落的阶带与向上折线，像梯田迎来清晨的第一束光。"
@@ -294,35 +243,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥94px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 94px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/rooster/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Morning-glory leaves", "zh": "晨间牵牛叶" },
+		"description": {
+			"en": "Heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom.",
+			"zh": "心形牵牛叶与一段松弛卷须沿庭院展开，只保留一枚安静花苞，承接公鸡的清晨气息。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
 	}
 }

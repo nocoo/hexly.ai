@@ -107,10 +107,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The guardian pauses",
-					"zh": "守护者的片刻"
-				},
+				"title": { "en": "The guardian pauses", "zh": "守护者的片刻" },
 				"description": {
 					"en": "The complete irregular mane frames a quiet head turn. A butterfly beside the nose adds a single secondary focus; the whole group sits safely inside the rounded tile.",
 					"zh": "完整而自然的鬃毛围住安静转动的脸，鼻尖旁的蝴蝶成为唯一的兴趣点。整组主体在圆角内保留留白。"
@@ -118,10 +115,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Amber takes the lead",
-					"zh": "让琥珀色成为主角"
-				},
+				"title": { "en": "Amber takes the lead", "zh": "让琥珀色成为主角" },
 				"description": {
 					"en": "Broad honey and umber planes describe the face and mane. The former tiger identity is replaced by a recognizable lion, with color concentrated in one small butterfly.",
 					"zh": "大块蜜金与深棕色面描绘脸部和鬃毛。旧虎形标识替换为清晰的狮子，多彩点缀集中在一只小蝴蝶上。"
@@ -129,10 +123,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Folded amber fan",
-					"zh": "琥珀折扇底纹"
-				},
+				"title": { "en": "Folded amber fan", "zh": "琥珀折扇底纹" },
 				"description": {
 					"en": "Unequal fan folds spread from a low off-center pivot. Deeper ochre, fine grain and shallow shadows give the mane separation without competing with its expression.",
 					"zh": "不等宽的扇形折面从偏下方展开，较深赭色、细颗粒和浅阴影托起鬃毛，同时保留表情的主导地位。"
@@ -143,55 +134,37 @@
 			{
 				"color": "#9b865c",
 				"role": "background",
-				"label": {
-					"en": "Amber fan relief",
-					"zh": "琥珀折扇底纹"
-				},
+				"label": { "en": "Amber fan relief", "zh": "琥珀折扇底纹" },
 				"source": "Selected Surety presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#cc8330",
 				"role": "primary",
-				"label": {
-					"en": "Honey face",
-					"zh": "蜂蜜色面"
-				},
+				"label": { "en": "Honey face", "zh": "蜂蜜色面" },
 				"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1280, 708); artwork/logo-family/surety/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#754321",
 				"role": "accent",
-				"label": {
-					"en": "Umber mane",
-					"zh": "深棕鬃毛"
-				},
+				"label": { "en": "Umber mane", "zh": "深棕鬃毛" },
 				"source": "Native surety ae84f2009fb7, sampled sRGB pixel (466, 1388); artwork/logo-family/surety/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#edcfa7",
 				"role": "accent",
-				"label": {
-					"en": "Cream muzzle",
-					"zh": "奶油鼻口"
-				},
+				"label": { "en": "Cream muzzle", "zh": "奶油鼻口" },
 				"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1466, 1263); artwork/logo-family/surety/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#19989b",
 				"role": "accent",
-				"label": {
-					"en": "Butterfly teal",
-					"zh": "蝶翼青色"
-				},
+				"label": { "en": "Butterfly teal", "zh": "蝶翼青色" },
 				"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1778, 915); artwork/logo-family/surety/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#6f4584",
 				"role": "accent",
-				"label": {
-					"en": "Butterfly violet",
-					"zh": "蝶翼紫色"
-				},
+				"label": { "en": "Butterfly violet", "zh": "蝶翼紫色" },
 				"source": "Native surety ae84f2009fb7, sampled sRGB pixel (1770, 1105); artwork/logo-family/surety/2026-09-07-01/palette.json"
 			}
 		],
@@ -223,10 +196,7 @@
 			},
 			{
 				"name": "Vite",
-				"role": {
-					"en": "SPA development and builds",
-					"zh": "SPA 开发与构建"
-				}
+				"role": { "en": "SPA development and builds", "zh": "SPA 开发与构建" }
 			},
 			{
 				"name": "React",
@@ -244,17 +214,11 @@
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "API and static assets",
-					"zh": "API 与静态资源"
-				}
+				"role": { "en": "API and static assets", "zh": "API 与静态资源" }
 			},
 			{
 				"name": "Drizzle ORM",
-				"role": {
-					"en": "Schema and data access",
-					"zh": "Schema 与数据访问"
-				}
+				"role": { "en": "Schema and data access", "zh": "Schema 与数据访问" }
 			},
 			{
 				"name": "Cloudflare D1",
@@ -265,17 +229,11 @@
 			},
 			{
 				"name": "Cloudflare R2",
-				"role": {
-					"en": "Policy attachments",
-					"zh": "保单附件"
-				}
+				"role": { "en": "Policy attachments", "zh": "保单附件" }
 			},
 			{
 				"name": "Cloudflare Access",
-				"role": {
-					"en": "Browser authentication",
-					"zh": "浏览器身份认证"
-				}
+				"role": { "en": "Browser authentication", "zh": "浏览器身份认证" }
 			}
 		],
 		"verified": {
@@ -324,15 +282,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 855,
-			"height": 416
-		},
+		"lockup": { "width": 855, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Amber fan relief",
-				"zh": "琥珀扇面"
-			},
+			"name": { "en": "Amber fan relief", "zh": "琥珀扇面" },
 			"description": {
 				"en": "Unequal fan rays spread from a low, off-center pivot, quietly echoing the lion’s broad mane.",
 				"zh": "长短不同的扇形射线从偏低的支点展开，轻轻呼应狮子宽阔的鬃毛。"
@@ -357,35 +309,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥67px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 67px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/surety/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Shelter at the grass edge", "zh": "草边的庇护" },
+		"description": {
+			"en": "Substantial grass tufts, small oval combretum leaves and a sparse fan of dry seed heads.",
+			"zh": "草丛、椭圆灌木叶与疏散穗头在草原边缘围出庇护处，承接狮子的可靠气质。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.34
 	}
 }

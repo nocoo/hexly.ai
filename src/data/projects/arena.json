@@ -108,10 +108,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A measured exchange",
-					"zh": "有节奏的交锋"
-				},
+				"title": { "en": "A measured exchange", "zh": "有节奏的交锋" },
 				"description": {
 					"en": "Two ivory faces share one broad walnut chess clock, with a brass plunger above each side. The paired mechanism gives agent debate and human checkpoints a tangible metaphor.",
 					"zh": "两面象牙色钟盘共用一座宽阔胡桃木棋钟，各配黄铜按钮，以双侧计时比喻 Agent 讨论与人工检查点。"
@@ -119,10 +116,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Walnut and ivory dials",
-					"zh": "胡桃木与象牙色钟盘"
-				},
+				"title": { "en": "Walnut and ivory dials", "zh": "胡桃木与象牙色钟盘" },
 				"description": {
 					"en": "Natural wood grain, opaque dial faces and crisp metal rims carry the detail. One complete compact object remains legible as the camera pulls back.",
 					"zh": "天然木纹、不透明钟盘和清晰金属包边构成细节；镜头拉远时仍是一件完整、紧凑、易识别的实物。"
@@ -130,10 +124,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Paired debate arcs",
-					"zh": "对话双弧"
-				},
+				"title": { "en": "Paired debate arcs", "zh": "对话双弧" },
 				"description": {
 					"en": "Two offset dial arcs with alternating short speaking-turn marks on warm oak-toned paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "暖色纸面上的双侧计时弧线与交错回合短刻度。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -144,37 +135,25 @@
 			{
 				"color": "#d4c1a7",
 				"role": "background",
-				"label": {
-					"en": "Paired debate arcs",
-					"zh": "对话双弧"
-				},
+				"label": { "en": "Paired debate arcs", "zh": "对话双弧" },
 				"source": "Adopted Arena presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#67442b",
 				"role": "primary",
-				"label": {
-					"en": "Walnut case",
-					"zh": "胡桃木机身"
-				},
+				"label": { "en": "Walnut case", "zh": "胡桃木机身" },
 				"source": "Native arena 5f6923caeb83, sampled sRGB pixel (1307, 528); artwork/logo-family/arena/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#dcccaa",
 				"role": "accent",
-				"label": {
-					"en": "Ivory dials",
-					"zh": "象牙色钟盘"
-				},
+				"label": { "en": "Ivory dials", "zh": "象牙色钟盘" },
 				"source": "Native arena 5f6923caeb83, sampled sRGB pixel (580, 909); artwork/logo-family/arena/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#947544",
 				"role": "accent",
-				"label": {
-					"en": "Brass controls",
-					"zh": "黄铜按钮"
-				},
+				"label": { "en": "Brass controls", "zh": "黄铜按钮" },
 				"source": "Native arena 5f6923caeb83, sampled sRGB pixel (1498, 257); artwork/logo-family/arena/2026-09-07-01/palette.json"
 			}
 		],
@@ -192,24 +171,15 @@
 		"techStack": [
 			{
 				"name": "Bun / TypeScript",
-				"role": {
-					"en": "CLI and shared logic",
-					"zh": "CLI 与共享逻辑"
-				}
+				"role": { "en": "CLI and shared logic", "zh": "CLI 与共享逻辑" }
 			},
 			{
 				"name": "commander",
-				"role": {
-					"en": "CLI argument parsing",
-					"zh": "CLI 参数解析"
-				}
+				"role": { "en": "CLI argument parsing", "zh": "CLI 参数解析" }
 			},
 			{
 				"name": "SQLite / Drizzle ORM",
-				"role": {
-					"en": "Local discussion data",
-					"zh": "本地讨论数据"
-				}
+				"role": { "en": "Local discussion data", "zh": "本地讨论数据" }
 			},
 			{
 				"name": "Next.js / React",
@@ -220,17 +190,11 @@
 			},
 			{
 				"name": "NextAuth / Google OAuth",
-				"role": {
-					"en": "Dashboard login",
-					"zh": "看板登录"
-				}
+				"role": { "en": "Dashboard login", "zh": "看板登录" }
 			},
 			{
 				"name": "Tailwind CSS / Radix UI",
-				"role": {
-					"en": "Styling and UI components",
-					"zh": "样式与界面组件"
-				}
+				"role": { "en": "Styling and UI components", "zh": "样式与界面组件" }
 			}
 		],
 		"verified": {
@@ -256,15 +220,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 885,
-			"height": 416
-		},
+		"lockup": { "width": 885, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Paired debate arcs",
-				"zh": "对弈双弧"
-			},
+			"name": { "en": "Paired debate arcs", "zh": "对弈双弧" },
 			"description": {
 				"en": "Two offset dial arcs alternate with short speaking-turn marks, giving each side room to respond.",
 				"zh": "两道错开的表盘弧线与短短的轮次刻度交替出现，为对话双方各留一席。"
@@ -289,35 +247,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥72px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 72px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/arena/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Two considered turns", "zh": "两步之间" },
+		"description": {
+			"en": "Fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions.",
+			"zh": "细织毛毡上的双侧计时弧与浅浅行棋压线，给比较、辩论和决定各留一点从容。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
 	}
 }

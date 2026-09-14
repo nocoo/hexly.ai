@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "skill-faster-whisper",
+	"version": "1.0.0",
+	"root": "/textures/skill-faster-whisper/v1.0.0",
+	"canonical": "https://hexly.ai/projects/skill-faster-whisper#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/skill-faster-whisper/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Acoustic felt", "zh": "收声毡面" },
+		"description": {
+			"en": "Densely woven acoustic felt, shallow elongated pill-shaped perforation rows and a few low-amplitude embossed horizontal wave fragments.",
+			"zh": "细织吸音毡与稀疏长孔收住声音，轻浅横向波纹呼应语音转写而不生成虚构转录内容。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/skill-faster-whisper.png",
+		"sha256": "fe2151b4426e09c6d6b153580e4962f112b342bd01f5bab0b6d4ba83961ba4a6",
+		"rgbaSha256": "01581bef928405fcc7a39ae737f543cf359952f0c3cbd49d0f680760655eea81",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 518181,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "01642fa0-6891-4ab6-a6fa-22b7ec1ad62d",
+			"source": "artwork/brands/skill-faster-whisper/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/skill-faster-whisper/v1.0.0/source-light-request.json",
+			"response": "/textures/skill-faster-whisper/v1.0.0/source-light-response.json",
+			"prompt": "/textures/skill-faster-whisper/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/skill-faster-whisper/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/skill-faster-whisper/v1.0.0/texture-light.png",
+				"sha256": "5d10373a66f6dc4c108a2b8581707c1bf316f87aa406ae8ad1898160433e9673",
+				"bytes": 2007267,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "dbeaa6bf-f9ab-4eb1-9fbe-55c07afa4e17",
+			"source": "artwork/brands/skill-faster-whisper/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/skill-faster-whisper/v1.0.0/source-dark-request.json",
+			"response": "/textures/skill-faster-whisper/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/skill-faster-whisper/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/skill-faster-whisper/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/skill-faster-whisper/v1.0.0/texture-dark.png",
+				"sha256": "83d37efdd15cb1b4f9d4053e8da25b906ccb031d3ff365f9cc88b2a914358e91",
+				"bytes": 1941278,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2007267,
+			"sha256": "5d10373a66f6dc4c108a2b8581707c1bf316f87aa406ae8ad1898160433e9673"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 326750,
+			"sha256": "6a40b17771a123faa4e352dc814c58594bb36740f12fa784262589ed68febdec"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16260,
+			"sha256": "381276da0b6851f5fb0b9f6ccbc80a9c2b9e86d59c6e3b6a0b796f7aa63fe498"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2723,
+			"sha256": "f0c6e7485b8cae0649b384ddf1fb8f5c1dcb062e7b91e465a7c669bf1f6da3b0"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "851c1e88186f1f1372002a2d24b0672fe3e20347a64b63ff4a5d9f6675394cbd"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "a326bddcda89c72f83e31ae9c23f3203a323a9bac4c8ccfba79bcf6351c493bd"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1093,
+			"sha256": "f7ed4fae012491ca3fca0dd387de6a431b934d1917e68f7435bd430234d4acbb"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1941278,
+			"sha256": "83d37efdd15cb1b4f9d4053e8da25b906ccb031d3ff365f9cc88b2a914358e91"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 314560,
+			"sha256": "aee649930cf054a3698a5828abee3edc8986eefc77d32f3767f72c5696b10e8e"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 11212,
+			"sha256": "effc3e18797368f960fa10b2c0cabf3500195729c5f94fd466b53423fc989fc5"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2799,
+			"sha256": "bca3f7713e446c7f8a0a4b356961876239db999ba632be28d800ebb7fc31e0fa"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "a59cbee039b436b0e85c5106ea842fbd9dd6caa7e034e8d0d80557f44c42c9ec"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "6917d9819081b6dcee1b0bf9e4560307f1a3a2444d445843acc6f0a4ee6b88e0"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1093,
+			"sha256": "14ad7515826d824333db2d979f7d78e842882e414943dea16ba8f107f42dce31"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5299,
+			"sha256": "c43a9765e0790aa8540b4bdaf45af2d00c49dfa04b74b051be2df20a5a09d6e8"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1328,
+			"sha256": "a82a238852fc9d527ec7663c4c921764d3a535846cccfb0638e1b33328d7a5c3"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1767,
+			"sha256": "9540e237aa655f8a02335bff812995d53ee916e08831fdd54082f6594a9eb5ab"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2645,
+			"sha256": "8e329bfdbfa77fe712cbb31a5f01478c5bc64c86621bf47ffbd4c087dd0bade8"
+		},
+		{
+			"path": "/textures/skill-faster-whisper/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3735,
+			"sha256": "2779991ecb6ae0e57c36724d6f1e7ab729735a0222d97d104c28d41a307c4681"
+		}
+	]
+}

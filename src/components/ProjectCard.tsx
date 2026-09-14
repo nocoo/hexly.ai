@@ -27,8 +27,10 @@ export function ProjectCard({
 			className="project-card"
 			data-project={project.id}
 			data-brand-artwork={project.brandKit?.method}
-			data-texture-display={project.brandKit?.texture?.display}
-			style={brandTexture(project.brandKit) as CSSProperties}
+			data-texture-display={
+				project.brandTexture?.display ?? project.brandKit?.texture?.display
+			}
+			style={brandTexture(project) as CSSProperties}
 		>
 			<a
 				className="card-main"

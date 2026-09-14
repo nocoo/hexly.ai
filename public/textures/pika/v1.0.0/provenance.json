@@ -1,0 +1,122 @@
+{
+	"project": "pika",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "fictional-animal",
+		"language": "habitat-botanical",
+		"name": { "en": "A woodland pause", "zh": "林间片刻" },
+		"motif": "A woodland interpretation for the existing fictional yellow electric rodent, not a biological pika claim: soft fern tips, hazel leaves and a few moss-like low leaf sprays. Angular leaf tips suggest alert energy. No lightning glyph, cartoon character, animal, flowers or yellow field.",
+		"description": {
+			"en": "Soft fern tips, hazel leaves and a few moss-like low leaf sprays.",
+			"zh": "榛树叶、蕨尖与低矮苔叶围出林间空地，呼应现有虚构角色的活力，不把它误认成真实鼠兔。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Replay, search, and rediscover your AI coding conversations.",
+			"zh": "回放、搜索和重新发现 AI 编程会话，让过去的思路更容易找回来。"
+		},
+		"purpose": {
+			"en": "Collect coding-agent sessions to search, read and organize across tools.",
+			"zh": "集中保存不同 AI 编程工具的会话，方便搜索、阅读和整理。"
+		},
+		"source": "src/data/projects/pika.json",
+		"inspectedRevision": "bb9b497372809e5ca00eaef4b04e1aa51e4256a3"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pika.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"rgbaSha256": "eb0b6d340814453446719fdb25a356e8409980a029ab89d445b50a866d10bca3",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2575312,
+		"source": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pika/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ef1aad7bbb61a5f7e2230a46fc4f53ef6989f72b98f5a84a6bb50277adea6dcd"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4ddbc573-3f3e-4b07-8dbc-6943e62c7323",
+			"source": "artwork/brands/pika/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/pika/v1.0.0/source-light-request.json",
+			"response": "/textures/pika/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pika/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pika/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pika/v1.0.0/texture-light.png",
+				"sha256": "e5234b545902ab6919ff1b7023ce750fbb3eeb593fbdf6a443a47d2fc375c1e4",
+				"bytes": 1706873,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2816d024-d608-4a49-99c9-26d6cdc6cca8",
+			"source": "artwork/brands/pika/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/pika/v1.0.0/source-dark-request.json",
+			"response": "/textures/pika/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pika/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pika/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pika/v1.0.0/texture-dark.png",
+				"sha256": "1f43cd3647c8c7db245a9f94e17dd2a69cea8d2d1da1e32bf3cd8f127f19c4de",
+				"bytes": 1498107,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.35
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.955553057045039,
+		"darkMinimum": 4.756424457992702,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:24:01.240Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

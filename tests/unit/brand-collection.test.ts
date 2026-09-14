@@ -41,7 +41,8 @@ describe("complete Hexly campaign archives", () => {
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
-			const { brandKit, ...original } = p;
+			const { brandTexture, ...beforeTextures } = p;
+			const { brandKit, ...original } = beforeTextures;
 			// Optional screenshot galleries were added after this identity baseline.
 			// Preserve its other metadata, including the pre-existing video records.
 			if (original.media?.screenshots) {
@@ -51,9 +52,10 @@ describe("complete Hexly campaign archives", () => {
 				else delete original.media;
 			}
 			const isTarget = targetIds.includes(p.id);
-			expect(sha(JSON.stringify(isTarget ? original : p)), p.id).toBe(
-				baseline?.protectedMetadataSha256,
-			);
+			expect(
+				sha(JSON.stringify(isTarget ? original : beforeTextures)),
+				p.id,
+			).toBe(baseline?.protectedMetadataSha256);
 			expect(sha(await readFile(`public${p.logo.original}`)), p.id).toBe(
 				baseline?.original.sha256,
 			);
@@ -365,7 +367,7 @@ describe("complete Hexly campaign archives", () => {
 			expect(brandAsset(project.brandKit, "icon", "dark")).toMatch(
 				/icon-dark\.png$/,
 			);
-			expect(brandTexture(project.brandKit)).toBeDefined();
+			expect(brandTexture(project)).toBeDefined();
 		}
 		const native = { ...p, brandKit: undefined };
 		expect(brandSourceLabel(native, "en")).toBe("Original vector");

@@ -94,26 +94,30 @@ describe("versioned brand identities", () => {
 		expect(brandAsset(kit, "wordmark", "dark")).toBe(
 			`${kit.root}/wordmark-dark.svg`,
 		);
-		expect(brandTexture(kit)).toEqual({
+		expect(brandTexture({ brandKit: kit })).toEqual({
 			"--brand-texture-light": `url("https://h.no.mt${kit.root}/texture-light.svg")`,
 			"--brand-texture-dark": `url("https://h.no.mt${kit.root}/texture-dark.svg")`,
+			"--brand-texture-opacity": 0.45,
 		});
-		expect(brandTexture(nativeKit)).toBeUndefined();
-		expect(brandTexture(undefined)).toBeUndefined();
+		expect(brandTexture({ brandKit: nativeKit })).toBeUndefined();
+		expect(brandTexture({})).toBeUndefined();
 		expect(
 			brandTexture({
-				...kit,
-				texture: {
-					name: { en: "Surface", zh: "底纹" },
-					description: { en: "Generated surface", zh: "生成底纹" },
-					format: "webp",
-					display: "single",
-					model: "gpt-image-2.5-flare",
+				brandKit: {
+					...kit,
+					texture: {
+						name: { en: "Surface", zh: "底纹" },
+						description: { en: "Generated surface", zh: "生成底纹" },
+						format: "webp",
+						display: "single",
+						model: "gpt-image-2.5-flare",
+					},
 				},
 			}),
 		).toEqual({
 			"--brand-texture-light": `url("https://h.no.mt${kit.root}/texture-light.webp")`,
 			"--brand-texture-dark": `url("https://h.no.mt${kit.root}/texture-dark.webp")`,
+			"--brand-texture-opacity": 0.45,
 		});
 	});
 	it("preserves historical SVGs and reuses exact font outlines, never a fake SVG animal", async () => {

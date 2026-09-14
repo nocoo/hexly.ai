@@ -16,6 +16,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Git history / recovery | [Recovery guide](docs/23-git-history-recovery.md); preserve original bundles and commit/ref maps; never merge the old binary history back |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Brand background textures | [Project texture skill](.agents/skills/hexly-brand-textures/SKILL.md): habitat-related foliage for animals/birds, meaningful working materials for 3D tools, exact Flare evidence and readable light/dark presentation |
+| Independent texture packs | Optional `Project.brandTexture`, `public/textures/<id>/v<version>/`, R2 `projects/<id>/textures/v<version>/`; [maintenance and rollout](docs/27-project-textures.md). Keep identity kits and original Logo/RGBA bytes unchanged. |
 | Complete brand archives | [inventory and scope](docs/brand-archives/README.md), [maintenance guide](docs/19-family-brand-archives.md), `public/brands/schema-v2.json` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
 | Status | `src/model/status.ts`, `worker/status.ts`, [storage and scheduling](docs/11-status-monitoring.md) |
@@ -42,6 +43,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 - Chrome Web Store destinations use an installation CTA, not Visit website. Derive this from the existing verified `website` URL (currently Hooky and R2Shot), never a second hardcoded URL list. The detail uses the unchanged official Google store badge and bilingual Add to Chrome labels; catalogue cards use a compact Chrome install link. Keep the badge's original proportions/colors, Google rights receipt, R2 delivery and the source GitHub link on the detail. Store links remain excluded from health targets.
 - Finished recordings belong to optional `media.videos` on their project's existing JSON, never one copy per template. Render a poster before user-initiated native playback; include actual captions when available, defaulting them off when `captionsBurnedIn` is true. Screenshot-only projects work without a video. Omit empty media sections. Catalogue browsing uses search, categories and sort; recordings appear on project details without a video filter or overlaid card badges. Approved new media use R2 `hexlyai` at `https://h.no.mt`, with immutable project/video/version/hash paths. Read the project R2 skill before media operations, keep versioned upload receipts in `docs/media/`, and never add movie binaries to Git or Static Assets. Preserve the owner's CORS policy and completed objects; the seven-day rule only aborts incomplete multipart uploads. No Worker R2 binding or media proxy is needed.
 - All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs in the brand archive.
+- Archived projects receive basic support only. Exclude them by default from all batch enrichment, redesign, brand/texture/media creation and catalogue-cleanup initiatives. Preserve their archived state, existing pages, links, downloads, licenses and provenance; fix shared compatibility or access regressions when necessary. Keep work already completed, but do not fill gaps, regenerate assets or expand their presentation unless the owner explicitly names an archived project for that work. “All projects” in future maintenance tasks means non-archived projects unless explicitly overridden.
 - Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
 - Every project needs a stable slug, title, bilingual descriptions, emoji, verified links, logo provenance, and evidenced foreground/background colors. Follow the identity rules; do not infer websites or invent palettes.
 - All independently served material uses R2 `hexlyai` / `https://h.no.mt`. Preserve immutable Logo/brand bytes, paths, hashes, licenses and provenance; source records/SVG geometry remain in Git, binary working files hydrate from the inventory. HTML/code, APIs and discovery documents stay on the Worker. Use `assetUrl` for transport and `AssetLink` for cross-origin downloads. Production builds exclude media and enforce 20 MiB. See [migration and authorized history reduction](docs/20-r2-assets-execution.md); the 2026-09-13 owner instruction supersedes the earlier Git/Static Assets retention rule.
@@ -98,6 +100,14 @@ that do not compete with the Logo. Keep these distinct from 3D tool surfaces;
 do not assign every animal the same vegetation or an instrument grid. Follow the
 [project texture skill](.agents/skills/hexly-brand-textures/SKILL.md) for generation,
 full-canvas/repeat decisions, composition, contrast, archiving and publication.
+
+Texture-only changes have independent pack versions. Resolve `brandTexture`
+before legacy `brandKit.texture`; do not duplicate an unchanged brand kit to
+replace its decoration. Keep generated full-canvas PNG, full/320px WebP,
+exact prompts, sanitized generation receipts, acceptance, license and manifest
+together. Card backgrounds use only the measured-opacity pseudo-element; clear
+the old repeated image. Update Agent guides/profiles from the same catalogue,
+preserving completed archived entries without unarchiving or further enriching them.
 
 ## Stack / Layout
 

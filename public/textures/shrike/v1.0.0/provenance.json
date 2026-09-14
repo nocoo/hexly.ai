@@ -1,0 +1,122 @@
+{
+	"project": "shrike",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "A hawthorn lookout", "zh": "山楂枝上的守望" },
+		"motif": "A hedgerow perch for a shrike: small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries. An angular branching outline along the right edge; no bird, prey, flowers or feather motif.",
+		"description": {
+			"en": "Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.",
+			"zh": "有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A small macOS menu bar app that keeps your files in sync with Google Drive.",
+			"zh": "轻巧的 macOS 菜单栏工具，把文件和文件夹同步到 Google Drive。"
+		},
+		"purpose": {
+			"en": "Back up selected files and development configurations on a Mac to Google Drive's local directory, with sync triggered from the app or a local HTTP request.",
+			"zh": "在 Mac 上将选定文件和开发配置备份到 Google Drive 的本地目录，通过应用或本机 HTTP 请求触发同步。"
+		},
+		"source": "src/data/projects/shrike.json",
+		"inspectedRevision": "0fec187fc22742664925897400d0c1a62b2478bb"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/shrike.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3750012,
+		"source": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/shrike/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ce70e9760a7f99c361f681c9645b735722667733ce334a88d9abea27fb5afb0f"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ca486d76-9be4-46a4-b1dd-6611c71fd03a",
+			"source": "artwork/brands/shrike/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/shrike/v1.0.0/source-light-request.json",
+			"response": "/textures/shrike/v1.0.0/source-light-response.json",
+			"prompt": "/textures/shrike/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/shrike/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/shrike/v1.0.0/texture-light.png",
+				"sha256": "bd84ffe24aa0581c4adcb9e9dd6cf9dd64ef80aeae9fcb14e596cbfa05a982ee",
+				"bytes": 1652587,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0f63ddeb-6c6a-4459-8dec-6f7948a7da54",
+			"source": "artwork/brands/shrike/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/shrike/v1.0.0/source-dark-request.json",
+			"response": "/textures/shrike/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/shrike/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/shrike/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/shrike/v1.0.0/texture-dark.png",
+				"sha256": "881830e1b24ae132879128410af4d44bea9dddf0de7886afcf10685e7c1f911f",
+				"bytes": 1474985,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.71796744429599,
+		"darkMinimum": 4.855528588611517,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:39:56.851Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

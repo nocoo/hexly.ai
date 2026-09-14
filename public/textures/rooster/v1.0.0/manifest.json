@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "rooster",
+	"version": "1.0.0",
+	"root": "/textures/rooster/v1.0.0",
+	"canonical": "https://hexly.ai/projects/rooster#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/rooster/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Morning-glory leaves", "zh": "晨间牵牛叶" },
+		"description": {
+			"en": "Heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom.",
+			"zh": "心形牵牛叶与一段松弛卷须沿庭院展开，只保留一枚安静花苞，承接公鸡的清晨气息。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2780156,
+		"source": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/rooster/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fe4bacb7-0fad-4707-b444-5dbf314d3e25",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/rooster/v1.0.0/source-light-request.json",
+			"response": "/textures/rooster/v1.0.0/source-light-response.json",
+			"prompt": "/textures/rooster/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/rooster/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.0/texture-light.png",
+				"sha256": "2a714f8c0dddfe6d5c8d2635921519cc4d41e40b4f23c9865e57ccb6900f3cd7",
+				"bytes": 1623121,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "dd9d1c71-6772-4366-8c2a-6f725871d194",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/rooster/v1.0.0/source-dark-request.json",
+			"response": "/textures/rooster/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/rooster/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/rooster/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.0/texture-dark.png",
+				"sha256": "075e27a7ba8ed9d12f7f2535c5a2e641836c52336892b35c88bb513f642da3ac",
+				"bytes": 1382208,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/rooster/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1623121,
+			"sha256": "2a714f8c0dddfe6d5c8d2635921519cc4d41e40b4f23c9865e57ccb6900f3cd7"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 175724,
+			"sha256": "d956c5e709de3257cb7b3a00f7468c76b42669bb5fc2188b3fbe796b81e40a8f"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8800,
+			"sha256": "2dacd5abb15c14f1c58317fa0918ab1a6e1db797da5769d2d01494eaf62d3edf"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2880,
+			"sha256": "82acbb0d50cd1661bbfc81c3c8ec321bdd670f200d7e6f50eaff2d5a14df2d52"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "e8eb5a67aa09bdd2df4b8e493f80e35666f2c297bc9ecbfd7da4b6d5bb0775bd"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "91fdcdccaaf47626754c6f4ceae6f1bc62ed7c823f1e8793463f0d11b960c7ac"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1044,
+			"sha256": "f6d54a3ef370e95dfd47cad1cdbe45fd368f960ebb3a43275c1e20ee28e6e56e"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1382208,
+			"sha256": "075e27a7ba8ed9d12f7f2535c5a2e641836c52336892b35c88bb513f642da3ac"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 100302,
+			"sha256": "e0eae5f95a07b44ffe84293e0e33c19ca10d4d9679e9311cac184aa0d3ab74b0"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6190,
+			"sha256": "b0aa8e83fe70bb89d85cf4faf5aa623b2629c1092006d00e31a680650fcd6d2b"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2961,
+			"sha256": "2e340617d1563fe9d4fd3f95516347e11a18895a34808ee4c50139e2a982029a"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "cb9476e22f7aea59b03e589fc0b8d9c8f4c6c1d8e8f2bee3593d40779ed89e47"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "6bf6b9324d5d9fd27fec92750914bbae4e8f9ac29bf2404bcb06958e2840c879"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1044,
+			"sha256": "916331f8c1df96456ac736197d096c8546ae876a32d13cfa321ef07a0d174b0d"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5437,
+			"sha256": "24273c4371ca9ad7a3c27540b9c6ea8eede29d292e5c4f2b8abbe4b0d189ae31"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1447,
+			"sha256": "c50cab835b3039fe69dcaeb1f86c2d631574c9ec9e0daa6cee08d11b33a73d05"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "a4ebf182a048f5bb480a75210b36e9290d367d9e09affbabc27112e58f4f8ffd"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2537,
+			"sha256": "58616b55487ec55f15da409790bf6eb39c155f43f499f3ef7ed7bf0a61913ce6"
+		},
+		{
+			"path": "/textures/rooster/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3544,
+			"sha256": "7080fd596e852fccdff9424c0ece98c03bcaa0ffbdea5f47dc249bd7dd1f1961"
+		}
+	]
+}

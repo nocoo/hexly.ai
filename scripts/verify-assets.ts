@@ -4,7 +4,10 @@ import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
 import { brandAsset, brandTextureAsset, rasterBrand } from "../src/model/brand";
-import { brandManifestProblems } from "../src/model/brand-manifest";
+import {
+	brandManifestProblems,
+	textureManifestProblems,
+} from "../src/model/brand-manifest";
 
 const projects = readProjects();
 for (const project of projects) {
@@ -23,6 +26,23 @@ for (const project of projects) {
 		}
 	}
 	const original = await readFile(`public${project.logo.original}`);
+	if (project.brandTexture) {
+		const texture = project.brandTexture;
+		const manifest = JSON.parse(
+			await readFile(`public${texture.root}/manifest.json`, "utf8"),
+		);
+		const problems = textureManifestProblems(manifest);
+		if (
+			problems.length ||
+			manifest.project !== project.id ||
+			manifest.version !== texture.version ||
+			JSON.stringify(manifest.catalogue) !== JSON.stringify(texture) ||
+			manifest.officialProjectIdentity.sha256 !== project.logo.sha256
+		)
+			throw new Error(
+				`Texture manifest disagrees with catalogue: ${project.id}: ${problems.join("; ")}`,
+			);
+	}
 	if (project.brandKit) {
 		const kit = project.brandKit;
 		const manifest = JSON.parse(
@@ -53,7 +73,12 @@ for (const project of projects) {
 				: ["favicon.svg"]
 			).map((name) => `${kit.root}/${name}`),
 			...(rasterBrand(kit)
-				? [brandTextureAsset(kit, "light"), brandTextureAsset(kit, "dark")]
+				? (["light", "dark"] as const).map((theme) =>
+						brandTextureAsset(
+							{ root: kit.root, format: kit.texture?.format },
+							theme,
+						),
+					)
 				: []),
 			...(kit.hero?.themed
 				? ["hero-dark.png", "hero-dark.webp", "hero-square-dark.webp"].map(
@@ -177,9 +202,9 @@ console.info(
 );
 
 let publicArchives = 0;
-for await (const path of new Bun.Glob("public/brands/*/v*/manifest.json").scan(
-	".",
-)) {
+for await (const path of new Bun.Glob(
+	"public/{brands,textures}/*/v*/manifest.json",
+).scan(".")) {
 	const manifest: { files: { path: string; bytes: number; sha256: string }[] } =
 		JSON.parse(await readFile(path, "utf8"));
 	for (const file of manifest.files) {

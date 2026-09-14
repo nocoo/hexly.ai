@@ -1,0 +1,118 @@
+{
+	"project": "jsinst",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "Measurement traces", "zh": "测量轨迹" },
+		"motif": "A software-instrumentation analogue in a precision electrical measurement pad: matte microstipple, interrupted calibration rulings and short carefully stepped trace grooves. No lightning icon, oscilloscope screen, electrical hazard emblem, digits or functional circuit.",
+		"description": {
+			"en": "Matte microstipple, interrupted calibration rulings and short carefully stepped trace grooves.",
+			"zh": "细颗粒测量垫的断续标定线与短阶梯槽，把性能观测转成克制的工具表面。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "JavaScript instrumentation and performance analysis tools.",
+			"zh": "用于 JavaScript 代码插桩与性能分析的工具集。"
+		},
+		"purpose": {
+			"en": "JavaScript instrumentation and performance analysis tools.",
+			"zh": "用于 JavaScript 代码插桩与性能分析的工具集。"
+		},
+		"source": "src/data/projects/jsinst.json",
+		"inspectedRevision": "56dd9f140b1d79ab3ca9b4a9ad6c04098f9f4693"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/jsinst.png",
+		"sha256": "fc80f6fe41b78073d17d73637336fb95637e2f8c3e1796b75488cc819d76543a",
+		"rgbaSha256": "6eb9a02b1a43c1c84db402bf63f417a6dcfacf4a7b3834125bdc24c86f52b25d",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 187921,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "22633a1e-f32c-416a-b958-71344cb2ecf8",
+			"source": "artwork/brands/jsinst/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/jsinst/v1.0.0/source-light-request.json",
+			"response": "/textures/jsinst/v1.0.0/source-light-response.json",
+			"prompt": "/textures/jsinst/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/jsinst/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/jsinst/v1.0.0/texture-light.png",
+				"sha256": "f22ae82029cc77c57a42bdf11d252f614eb00efd84511eb27427a01f2eac3af6",
+				"bytes": 2043641,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "86b272e0-e79a-425b-999a-567fd8de49fd",
+			"source": "artwork/brands/jsinst/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/jsinst/v1.0.0/source-dark-request.json",
+			"response": "/textures/jsinst/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/jsinst/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/jsinst/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/jsinst/v1.0.0/texture-dark.png",
+				"sha256": "49135a3c7cc856395214b02ab4d704fc3901d12de304a98bf45c2a5489566117",
+				"bytes": 1714386,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.72160024669005,
+		"darkMinimum": 5.689402355460963,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:20:37.343Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -1,0 +1,122 @@
+{
+	"project": "life-ai",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "A river garden", "zh": "河岸小园" },
+		"motif": "A plausible capybara wetland: broad rounded water-hyacinth leaves without blossoms, slender reed leaves and several smaller floating wetland leaves. Low overlapping pairs and one rising stem echo relaxed waterside life, without fruit, animals or literal ripples.",
+		"description": {
+			"en": "Broad rounded water-hyacinth leaves without blossoms, slender reed leaves and several smaller floating wetland leaves.",
+			"zh": "圆润水生叶与细芦苇贴着河岸生长，宽窄相间的叶片承接水豚松弛而完整的日常。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Bring health, places, and spending into one personal picture.",
+			"zh": "把健康指标、位置足迹和消费记录，汇成一幅个人生活图景。"
+		},
+		"purpose": {
+			"en": "Import personal health, location, and bookkeeping exports, then compare them through daily, monthly, and yearly views.",
+			"zh": "导入个人健康、位置足迹和记账导出文件，通过日、月、年视图对照查看。"
+		},
+		"source": "src/data/projects/life-ai.json",
+		"inspectedRevision": "b6f3e7f426315062e0492e00c4d9448bfa3b8031"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/life-ai-family-2026-09-07-01-02.png",
+		"sha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca",
+		"rgbaSha256": "ac41d4be1752ec55ec12353ceed8fc06f8dc218bf6b2ebc108044ddfdfbecb23",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2268740,
+		"source": "https://github.com/nocoo/life.ai/blob/b6f3e7f426315062e0492e00c4d9448bfa3b8031/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/life-ai/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d7c49d162b5275bd7f10f5cdec1977fd5adafadd8b2022823f15d9764bffed09"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4f1a9415-996b-41a0-bc07-285c27df1e70",
+			"source": "artwork/brands/life-ai/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/life-ai/v1.0.0/source-light-request.json",
+			"response": "/textures/life-ai/v1.0.0/source-light-response.json",
+			"prompt": "/textures/life-ai/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/life-ai/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/life-ai/v1.0.0/texture-light.png",
+				"sha256": "2793e18b3ea064364bdf88e51b4eff7bbeee0a54e2780422961fcf90850c17c8",
+				"bytes": 1588930,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "91fb204d-648c-4530-960d-ab8ac0896aec",
+			"source": "artwork/brands/life-ai/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/life-ai/v1.0.0/source-dark-request.json",
+			"response": "/textures/life-ai/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/life-ai/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/life-ai/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/life-ai/v1.0.0/texture-dark.png",
+				"sha256": "2cf657db28c9dd54965f5d0bdc0b814bf8f66744a22661bd51cf720c6400fbe6",
+				"bytes": 1411517,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.32
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.4929740715293836,
+		"darkMinimum": 4.795380564468087,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:48:42.340Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

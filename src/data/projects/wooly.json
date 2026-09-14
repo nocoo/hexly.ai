@@ -108,10 +108,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A mischievous pause",
-					"zh": "俏皮的一瞬"
-				},
+				"title": { "en": "A mischievous pause", "zh": "俏皮的一瞬" },
 				"description": {
 					"en": "A portrait viewfinder catches the same wink and tongue as broad, natural fleece enters from below. The curls and ears have room inside the rounded frame.",
 					"zh": "取景框捕捉熟悉的眨眼和吐舌，宽厚而自然的羊毛从下方进入画面。卷毛和耳朵在圆角内保留充分余量。"
@@ -130,10 +127,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Wool cloud folds",
-					"zh": "羊毛云纹"
-				},
+				"title": { "en": "Wool cloud folds", "zh": "羊毛云纹" },
 				"description": {
 					"en": "The selected deeper rose field keeps its uneven scalloped folds, fine grain, and shallow shadows. The background stays separate from the transparent animal.",
 					"zh": "沿用较深玫瑰底色、不均匀的云状褶皱、细颗粒与浅阴影，背景和透明动物独立保存。"
@@ -144,55 +138,37 @@
 			{
 				"color": "#ad8093",
 				"role": "background",
-				"label": {
-					"en": "Wool cloud folds",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Wool cloud folds", "zh": "展示底色" },
 				"source": "Selected Wooly presentation, 2026-09-07-02/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#f3e6c4",
 				"role": "primary",
-				"label": {
-					"en": "Cream wool",
-					"zh": "奶油羊毛"
-				},
+				"label": { "en": "Cream wool", "zh": "奶油羊毛" },
 				"source": "Native wooly 02c5ec40e8c1, sampled sRGB pixel (1254, 770); artwork/logo-family/wooly/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#d4bc98",
 				"role": "accent",
-				"label": {
-					"en": "Oat fleece",
-					"zh": "燕麦羊毛"
-				},
+				"label": { "en": "Oat fleece", "zh": "燕麦羊毛" },
 				"source": "Native wooly 02c5ec40e8c1, sampled sRGB pixel (538, 1304); artwork/logo-family/wooly/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#ac806c",
 				"role": "accent",
-				"label": {
-					"en": "Ear rose",
-					"zh": "耳朵玫瑰棕"
-				},
+				"label": { "en": "Ear rose", "zh": "耳朵玫瑰棕" },
 				"source": "Native wooly 02c5ec40e8c1, sampled sRGB pixel (1618, 562); artwork/logo-family/wooly/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#ef9790",
 				"role": "accent",
-				"label": {
-					"en": "Tongue pink",
-					"zh": "舌头粉"
-				},
+				"label": { "en": "Tongue pink", "zh": "舌头粉" },
 				"source": "Native wooly 02c5ec40e8c1, sampled sRGB pixel (934, 1576); artwork/logo-family/wooly/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#2c3441",
 				"role": "accent",
-				"label": {
-					"en": "Deep eye",
-					"zh": "深色眼睛"
-				},
+				"label": { "en": "Deep eye", "zh": "深色眼睛" },
 				"source": "Native wooly 02c5ec40e8c1, sampled sRGB pixel (733, 846); artwork/logo-family/wooly/2026-09-07-02/palette.json"
 			}
 		],
@@ -230,10 +206,7 @@
 			},
 			{
 				"name": "Tailwind CSS",
-				"role": {
-					"en": "Interface styles",
-					"zh": "界面样式"
-				}
+				"role": { "en": "Interface styles", "zh": "界面样式" }
 			},
 			{
 				"name": "Auth.js",
@@ -293,15 +266,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 831,
-			"height": 416
-		},
+		"lockup": { "width": 831, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Wool cloud folds",
-				"zh": "羊毛云褶"
-			},
+			"name": { "en": "Wool cloud folds", "zh": "羊毛云褶" },
 			"description": {
 				"en": "Large, uneven scallops gather into open folds, carrying the sheep’s soft curls into the margins.",
 				"zh": "大小不一的圆弧聚成开放褶线，把绵羊柔软的卷毛延伸到页边。"
@@ -326,35 +293,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Keep the existing portrait's natural frame entry. The full square is placed against the baseline; no anatomy is extended, trimmed or masked. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留原头像自然入框的边界，将完整方形画布贴齐基线；不补画、不截取解剖结构。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 63px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/wooly/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Clover on the hillside", "zh": "坡地三叶草" },
+		"description": {
+			"en": "Rounded white-clover leaflets, long ryegrass blades and a few soft grass seed spikes.",
+			"zh": "圆润白三叶草与黑麦草铺在缓坡上，以草叶的层次承接绵羊，避免把羊毛纹直接复制成背景。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
 	}
 }

@@ -1,5 +1,6 @@
 import examples from "../data/template-examples.json" with { type: "json" };
 import { assetUrl } from "./assets";
+import { projectTexture } from "./brand";
 import { isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { siteOrigin } from "./routes";
@@ -65,6 +66,10 @@ export function agentGuide(
 			`Original project identity: ${assetUrl(project.logo.original)}\nOriginal SHA-256: ${project.logo.sha256}\nSource: ${project.logo.sourceUrl}`,
 			"Reuse the approved downloadable files. Preserve the original Logo geometry, proportions, colors and bytes. Hexly campaign styling belongs to this archive and Hexly promotional material; the product's own palette and UI remain independent.",
 		);
+		if (project.archived)
+			instructions.push(
+				"Archived project: basic support only. Preserve existing pages, links, downloads, licenses and provenance, including already completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.",
+			);
 		if (project.family) {
 			const family = project.family;
 			const supplied = !!family.method;
@@ -89,17 +94,37 @@ export function agentGuide(
 				label: "Brand asset manifest",
 				href: assetUrl(`${project.brandKit.root}/manifest.json`),
 			});
-			if (project.brandKit.texture?.model) {
-				instructions.push(
-					`The decorative surface was generated with ${project.brandKit.texture.model}. Reuse its approved PNG/WebP; it is separate from the original Logo. Display one complete canvas without repetition or cropping. Exact light/dark prompts and generation receipts are in the brand archive.`,
-				);
-				for (const theme of ["light", "dark"])
-					resources.push({
+		}
+		const texture = projectTexture(project);
+		if (texture?.model) {
+			instructions.push(
+				`Current decorative surface: ${texture.name.en}, generated with ${texture.model}. Reuse its approved PNG/WebP; it is separate from the original Logo. Display one complete canvas without repetition or cropping. Exact light/dark prompts and generation receipts are in the texture archive.`,
+			);
+			for (const theme of ["light", "dark"])
+				resources.push(
+					{
+						label: `${theme} surface: original PNG`,
+						href: assetUrl(`${texture.root}/texture-${theme}.png`),
+					},
+					{
 						label: `Exact ${theme} surface prompt`,
-						href: assetUrl(
-							`${project.brandKit.root}/texture-${theme}-prompt.txt`,
-						),
-					});
+						href: assetUrl(`${texture.root}/texture-${theme}-prompt.txt`),
+					},
+				);
+			if (project.brandTexture) {
+				instructions.push(
+					`Texture pack v${project.brandTexture.version} has its own version, independent of the identity kit and application. Existing kit textures remain historical. Keep the active pack's manifest and use its measured surface opacity ${project.brandTexture.surfaceOpacity} on a separate background layer; Logo and text stay fully opaque.`,
+				);
+				resources.push(
+					{
+						label: "Active texture manifest and hashes",
+						href: assetUrl(`${texture.root}/manifest.json`),
+					},
+					{
+						label: "Texture usage and license",
+						href: assetUrl(`${texture.root}/guide.md`),
+					},
+				);
 			}
 		}
 		for (const video of project.media?.videos ?? [])
@@ -200,6 +225,7 @@ export function agentGuide(
 			"Reuse original brand assets and preserve their geometry, proportions, colors, license and provenance. Hexly campaign artwork is labelled separately from official project identity. Do not recolor a project's Logo or transfer the Hexly promotional palette into its product UI.",
 			"Use existing project recordings when media.videos is present. Otherwise omit the video section. Standard Hexly outros are already rendered and can be used across projects without regeneration.",
 			"Optional media.screenshots contains ordered product previews. Use preview/thumbnail derivatives for browsing, src for the full-resolution original, and source for versioned provenance and hashes. Preserve aspect ratios and omit this section when the list is absent or empty.",
+			"Optional brandTexture selects an independently versioned Hexly campaign surface; otherwise use brandKit.texture. Follow each project's Agent guide for the active light/dark PNGs, exact prompts and manifest. Reuse accepted textures as whole canvases and keep original identity colors, product UI and archived state unchanged.",
 		);
 		resources.push(
 			{

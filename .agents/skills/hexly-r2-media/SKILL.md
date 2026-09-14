@@ -10,6 +10,10 @@ and [the material contract](../../../docs/21-asset-storage.md). The owner author
 R2 migration, publication, then Git history reduction on 2026-09-13. This replaces
 the older instruction to retain all binary materials in Git/Workers Static Assets.
 Ordinary asset tasks do not authorize another history rewrite or object deletion.
+Archived catalogue projects receive basic support only. Preserve their existing
+objects, URLs and receipts; exclude them from new asset/media enrichment and bulk
+redesigns unless the owner explicitly includes a named archived project. Completed
+work may be retained, while unapproved source evidence stays historical.
 For optional project screenshots, store captures and Lightbox galleries, read the
 [screenshot runbook](references/project-screenshots.md). It covers source intake,
 original/preview/thumbnail files, independent versions and catalogue integration;
@@ -47,6 +51,7 @@ site identity. Asset versions are independent of site/app/Video Kit versions.
 
 ```text
 brands/<project>/v<X.Y.Z>/...                             # complete brand package
+projects/<project>/textures/v<X.Y.Z>/...                  # independent decorative pack
 logos/family/<historical-project>/<batch>/<pass>/...    # frozen historical exports
 video-kit/<asset-version>/hexly/...                     # licensed template fonts
 projects/<project>/videos/<film>/v<X.Y.Z>/<name>-<hash12>.<ext>
@@ -116,6 +121,19 @@ The inventory maps each to `projects/<project>/screenshots/<image-id>/v<X.Y.Z>/<
 with role `project-media` and its corresponding screenshot receipt. Product UI
 and store compositions retain their own colors and source rights; they are not
 Logo replacements or newly generated Hexly campaign identities.
+
+Texture-only changes use `public/textures/<project>/v<X.Y.Z>/` locally and the
+matching `projects/<project>/textures/v<X.Y.Z>/` R2 package. Filenames stay stable
+inside this immutable version; do not copy the unchanged identity kit or add a
+second hash suffix. `Project.brandTexture` selects the current pack independently
+of `brandKit`; old kit surfaces and the approved Pi pilot remain available.
+Publish both raw PNGs, full and 320px WebPs, exact theme prompts, sanitized
+request/response/review records, guide, license, provenance and manifest. Raw
+source duplicates deduplicate against the published PNG hash. Never inventory a
+still-running writer's partial output. Standalone `review.html` remains a Worker
+document with shared download enhancement; its source archive can live in R2.
+Read [the texture pack runbook](../hexly-brand-textures/references/independent-packs.md)
+for generation, delegated acceptance, schema and archive coverage.
 
 Curated Hexly template examples use project `hexly-ai` and film IDs such as
 `standard-outro-product-launch`. Their active references live in

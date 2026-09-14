@@ -130,10 +130,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Hanbaiyu and candy color",
-					"zh": "汉白玉与糖果色"
-				},
+				"title": { "en": "Hanbaiyu and candy color", "zh": "汉白玉与糖果色" },
 				"description": {
 					"en": "Opaque white marble replaces the black plinth and balustrade. Blue and green roof surfaces, pink columns, pearl structure and yellow-gold details translate Basalt’s existing candy palette into a crafted miniature. Veining, latticework and small bevels retain physical depth under broad studio light.",
 					"zh": "白色汉白玉替换黑色基座与栏杆；蓝绿屋面、粉色立柱、珍珠色构件与金黄细节，把 Basalt 现有糖果色板转化为精工微缩建筑。石材纹理、窗棂和小倒角在宽柔光下保留真实层次。"
@@ -164,55 +161,37 @@
 			{
 				"color": "#5ac2f6",
 				"role": "primary",
-				"label": {
-					"en": "Candy blue",
-					"zh": "糖果蓝"
-				},
+				"label": { "en": "Candy blue", "zh": "糖果蓝" },
 				"source": "Native basalt 0acb99561768, sampled sRGB pixel (638, 850); artwork/logo-family/basalt/2026-09-08-01/palette.json"
 			},
 			{
 				"color": "#8dd35a",
 				"role": "accent",
-				"label": {
-					"en": "Fresh green",
-					"zh": "鲜绿"
-				},
+				"label": { "en": "Fresh green", "zh": "鲜绿" },
 				"source": "Native basalt 0acb99561768, sampled sRGB pixel (935, 575); artwork/logo-family/basalt/2026-09-08-01/palette.json"
 			},
 			{
 				"color": "#f694b2",
 				"role": "accent",
-				"label": {
-					"en": "Soft pink",
-					"zh": "柔粉"
-				},
+				"label": { "en": "Soft pink", "zh": "柔粉" },
 				"source": "Native basalt 0acb99561768, sampled sRGB pixel (780, 1350); artwork/logo-family/basalt/2026-09-08-01/palette.json"
 			},
 			{
 				"color": "#eec14b",
 				"role": "accent",
-				"label": {
-					"en": "Finial gold",
-					"zh": "宝顶金"
-				},
+				"label": { "en": "Finial gold", "zh": "宝顶金" },
 				"source": "Native basalt 0acb99561768, sampled sRGB pixel (1026, 209); artwork/logo-family/basalt/2026-09-08-01/palette.json"
 			},
 			{
 				"color": "#edeeeb",
 				"role": "accent",
-				"label": {
-					"en": "Hanbaiyu white",
-					"zh": "汉白玉白"
-				},
+				"label": { "en": "Hanbaiyu white", "zh": "汉白玉白" },
 				"source": "Native basalt 0acb99561768, sampled sRGB pixel (842, 1763); artwork/logo-family/basalt/2026-09-08-01/palette.json"
 			},
 			{
 				"color": "#d3d7d8",
 				"role": "accent",
-				"label": {
-					"en": "Pearl structure",
-					"zh": "珍珠色构件"
-				},
+				"label": { "en": "Pearl structure", "zh": "珍珠色构件" },
 				"source": "Native basalt 0acb99561768, sampled sRGB pixel (960, 717); artwork/logo-family/basalt/2026-09-08-01/palette.json"
 			}
 		],
@@ -229,17 +208,11 @@
 		"techStack": [
 			{
 				"name": "TypeScript",
-				"role": {
-					"en": "Typed component APIs",
-					"zh": "组件类型与 API"
-				}
+				"role": { "en": "Typed component APIs", "zh": "组件类型与 API" }
 			},
 			{
 				"name": "React",
-				"role": {
-					"en": "Reusable UI components",
-					"zh": "可复用 UI 组件"
-				}
+				"role": { "en": "Reusable UI components", "zh": "可复用 UI 组件" }
 			},
 			{
 				"name": "Radix UI",
@@ -264,10 +237,7 @@
 			},
 			{
 				"name": "Recharts",
-				"role": {
-					"en": "Chart components",
-					"zh": "图表组件"
-				}
+				"role": { "en": "Chart components", "zh": "图表组件" }
 			},
 			{
 				"name": "Vite",
@@ -278,10 +248,7 @@
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "Static showcase hosting",
-					"zh": "示例站静态托管"
-				}
+				"role": { "en": "Static showcase hosting", "zh": "示例站静态托管" }
 			}
 		],
 		"verified": {
@@ -309,15 +276,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 911,
-			"height": 416
-		},
+		"lockup": { "width": 911, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Corner tower construction grid",
-				"zh": "角楼建造网格"
-			},
+			"name": { "en": "Corner tower construction grid", "zh": "角楼建造网格" },
 			"description": {
 				"en": "Datum lines, roof-elevation strokes and dimension ticks recall the precision behind the corner tower.",
 				"zh": "基准线、屋顶立面笔画与尺寸刻度，呼应角楼结构背后的精密秩序。"
@@ -342,35 +303,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥76px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 76px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/basalt/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Stone and joinery", "zh": "石与榫" },
+		"description": {
+			"en": "Pale Hanbaiyu-like microcrystalline grain, shallow stepped joinery rebates and a few asymmetric roof-bracket alignment notches.",
+			"zh": "细磨石材的微晶、阶式榫槽与少量斗拱定位刻痕，呼应角楼模型精密而耐看的构造。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

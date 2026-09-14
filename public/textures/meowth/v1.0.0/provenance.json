@@ -1,0 +1,122 @@
+{
+	"project": "meowth",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "A windowsill garden", "zh": "窗边小花园" },
+		"motif": "A domestic cat's safe windowsill-garden interpretation: rounded softly serrated catmint leaves, a few slender oat-grass blades and delicate branching stems. Compact airy groupings suggest a quiet home. No flowers, yarn loops, paw prints, cartoon coins or cat silhouette.",
+		"description": {
+			"en": "Rounded softly serrated catmint leaves, a few slender oat-grass blades and delicate branching stems.",
+			"zh": "柔软猫薄荷叶与细燕麦草在窗边疏散生长，承接家猫的安静日常，不把毛线或爪印再铺满背景。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Local bridge for five coding-agent CLIs with HTTP control and a web dashboard",
+			"zh": "把五种本机编程 Agent CLI 接入统一 HTTP 服务，并提供网页管理面板。"
+		},
+		"purpose": {
+			"en": "Run locally installed coding CLIs through one web console and HTTP API, with streaming output and a record of their sessions.",
+			"zh": "通过同一个网页控制台与 HTTP 接口调用本机 coding CLI，查看流式输出并保存会话记录。"
+		},
+		"source": "src/data/projects/meowth.json",
+		"inspectedRevision": "15b4d902c71ec6184c7220f0fb50a29ca87e080d"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/meowth.png",
+		"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541",
+		"rgbaSha256": "35b79c80456e1e3b9580f9eb61008ea5bda18714c254fc7d948dd0b296b18387",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3003934,
+		"source": "https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/meowth/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "bc1df0217468580df55f4c867a626fc855955d41c74c59fd5e4356a0b7befd86"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "779f5f48-ce55-4656-8747-0a8f78f45067",
+			"source": "artwork/brands/meowth/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/meowth/v1.0.0/source-light-request.json",
+			"response": "/textures/meowth/v1.0.0/source-light-response.json",
+			"prompt": "/textures/meowth/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/meowth/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/meowth/v1.0.0/texture-light.png",
+				"sha256": "214c199765e4d71ab42375ffc979280fbb0af6b10cbad4de836f20f418a96fe6",
+				"bytes": 1645634,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a2d9513d-13bc-45ea-abc8-de2f669dcf50",
+			"source": "artwork/brands/meowth/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/meowth/v1.0.0/source-dark-request.json",
+			"response": "/textures/meowth/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/meowth/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/meowth/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/meowth/v1.0.0/texture-dark.png",
+				"sha256": "400cce87585a48723dbe5ec1b2d5611b526a12871918b7809244d8427e7496d2",
+				"bytes": 1462388,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.35
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.105013732905297,
+		"darkMinimum": 4.778795329587923,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:25:00.056Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

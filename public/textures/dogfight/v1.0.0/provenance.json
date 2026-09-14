@@ -1,0 +1,122 @@
+{
+	"project": "dogfight",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Banked alloy", "zh": "倾斜合金" },
+		"motif": "A satin titanium aircraft-model work surface: diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain. Subtle banked angles imply the desk model's turn. Not a real aircraft blueprint; no aircraft, weapons, targets, labels or interface.",
+		"description": {
+			"en": "Diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain.",
+			"zh": "斜向金属拼缝、少量齐平铆点与细腻拉丝呼应桌面战机模型的转弯，是材质联想而非真实飞机图纸。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "An arcade dogfight in the browser. Take an F-22 into a sky full of Su-35s.",
+			"zh": "驾驶 F-22 迎战苏-35，在浏览器里体验街机风格的三维空战。"
+		},
+		"purpose": {
+			"en": "Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.",
+			"zh": "在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。"
+		},
+		"source": "src/data/projects/dogfight.json",
+		"inspectedRevision": "b5ab075a963a78516aaa351d6ca0178c64994729"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+		"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+		"rgbaSha256": "d38c25f33fdb61ccca5e59c92e846e72b5cf06b3f66eea2008393f6fd3ac0064",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2743288,
+		"source": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dogfight/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c19649c6-2aeb-4000-99e7-bca792bafa96",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/dogfight/v1.0.0/source-light-request.json",
+			"response": "/textures/dogfight/v1.0.0/source-light-response.json",
+			"prompt": "/textures/dogfight/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.0/texture-light.png",
+				"sha256": "0b797131f62b5bbd62a16d014beacbd9e6e6060a73353512f53b6c131ddf0725",
+				"bytes": 1724106,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2aeda49d-3dc7-4b6c-b2d4-9e56dcfda228",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/dogfight/v1.0.0/source-dark-request.json",
+			"response": "/textures/dogfight/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/dogfight/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.0/texture-dark.png",
+				"sha256": "912c1d1b0694613b48dce993e1a43621cc75585eebe38c7685f0b65cbf530154",
+				"bytes": 1589678,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.32
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.772082880466827,
+		"darkMinimum": 5.0478284700636,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:28:40.442Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

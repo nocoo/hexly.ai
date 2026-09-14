@@ -60,6 +60,13 @@ Project guides link original identity files and checksums, optional family
 artwork, kit manifests and optional project recordings. They preserve the
 distinction between official project identity and Hexly campaign artwork.
 
+Optional `brandTexture` selects a separately versioned current campaign surface;
+`brandKit.texture` remains the legacy fallback. Project guides list both native
+PNGs, exact light/dark generation prompts, the active manifest and usage guide,
+including for kitless archived entries. They state that accepted files can be
+reused directly and that texture versions do not change the original identity,
+product UI or application release. See [independent textures](27-project-textures.md).
+
 The existing **Read the exact generation prompt** archive now has a copy action
 for its original fetched text. Retained/supplied artwork continues to expose a
 **presentation brief**, not a fabricated generation prompt. Reuse and integration

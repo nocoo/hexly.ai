@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "infospace",
+	"version": "1.0.0",
+	"root": "/textures/infospace/v1.0.0",
+	"canonical": "https://hexly.ai/projects/infospace#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/infospace/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Dividers with room to move", "zh": "可移动的隔页" },
+		"description": {
+			"en": "Dense fine wool felt, shallow offset divider slots, rounded paper-edge steps and alternating unequal rectangular compartments suggested only at the edges.",
+			"zh": "细密羊毛毡上的错位隔板槽与纸边台阶，让可调整的信息分区成为可触摸的工作表面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.43
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+		"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+		"rgbaSha256": "86f99fbc319481ec964495407e06d4f645f2934acc9db98b31d583cdf94898f2",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4365206,
+		"source": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/infospace/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "42205956aa29c5b355dddb89a4b8b826f31d4b4d443b9e8379e5beaba10c1757"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "928f3300-ede7-4a46-8102-d366b1dec134",
+			"source": "artwork/brands/infospace/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/infospace/v1.0.0/source-light-request.json",
+			"response": "/textures/infospace/v1.0.0/source-light-response.json",
+			"prompt": "/textures/infospace/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/infospace/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/infospace/v1.0.0/texture-light.png",
+				"sha256": "3bff0d506e85745f6528d1bfe63bf22dabacef03da027c6a221abafeb9105621",
+				"bytes": 1763011,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8038e86c-f2f4-495a-89ab-005281a8c5a5",
+			"source": "artwork/brands/infospace/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/infospace/v1.0.0/source-dark-request.json",
+			"response": "/textures/infospace/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/infospace/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/infospace/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/infospace/v1.0.0/texture-dark.png",
+				"sha256": "c29acf8f12c09e4642f7309bfb4048d4354a5d7d00d9c0b0f12c21271185c444",
+				"bytes": 1828115,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/infospace/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1763011,
+			"sha256": "3bff0d506e85745f6528d1bfe63bf22dabacef03da027c6a221abafeb9105621"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 252716,
+			"sha256": "db7afba31b251014c8e94d1bdc232afdaf22866ef713b31be5e2b3083466cb3e"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8016,
+			"sha256": "f5c401edc5cb3775ebe217b551ec39487376b26fb4b5e19d81e7952dbe5ce06c"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2730,
+			"sha256": "62efd8c9162cb15e286b538c7b788237ab06db14553be54d4cce113555681f79"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "246684ed71ddc4a8d09cad5cba8703d71f48cc7deec7281ec2cd79d09d084fe9"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "4bd19ff621296a8c6996b1e6fc28497f624a307913aed4da975e4d75894ac7c3"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1058,
+			"sha256": "7301c468106a8b8fef4b2e13374f054fffa16bb2d46ee17c11268b9b7a63d2d5"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1828115,
+			"sha256": "c29acf8f12c09e4642f7309bfb4048d4354a5d7d00d9c0b0f12c21271185c444"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 280292,
+			"sha256": "15192dfa852e0cceef9b42b73e4152aa6aa5e68b2a4dc1dd6826416f543a7e1f"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7046,
+			"sha256": "1ece8870cd920c924b1a46d6b678cfa76eec265fdb2040d80ca4060c17a2f575"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2806,
+			"sha256": "5ccc7c20eb7e33a83b46f89ff4dcd84751ed4dccbf42990b312e158aec8a73c4"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "024c8946fadb89490621ca77959d940595cfdd58b2f1e0d8cc08d3f97e51eadc"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "251e18045752f28598dbd1edf6c47e0e80831a3f3d71e6bc301f0cd42bff67f8"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1058,
+			"sha256": "988336b17b11c48f5e7c2de7463ff6cbea2295b61daeb9b9313b587d1abbb181"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5778,
+			"sha256": "0c8708986f53afd59d68105c291fd52ff9499e8634f4d971fea5228d790cf7ce"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1597,
+			"sha256": "2f9a82267061376c4e0cdcb79c93b2bcb705c976165ee35b82e515996a7bc3ae"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1763,
+			"sha256": "dccb1ebac0b67e9c3c98e420cef9eb2059000b4c09b4fc4b2a464408a1c05f04"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2620,
+			"sha256": "0474f3e93dd2b8c3e6573cc202f8638832d2fcfb57fcc3100cd52d8318caf4a6"
+		},
+		{
+			"path": "/textures/infospace/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3653,
+			"sha256": "ee05c33cf8c8f946dbfbeb1328ba5c51600cc2220d84d180f9388dd40475724d"
+		}
+	]
+}

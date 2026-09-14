@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "wooly",
+	"version": "1.0.0",
+	"root": "/textures/wooly/v1.0.0",
+	"canonical": "https://hexly.ai/projects/wooly#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/wooly/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Clover on the hillside", "zh": "坡地三叶草" },
+		"description": {
+			"en": "Rounded white-clover leaflets, long ryegrass blades and a few soft grass seed spikes.",
+			"zh": "圆润白三叶草与黑麦草铺在缓坡上，以草叶的层次承接绵羊，避免把羊毛纹直接复制成背景。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+		"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+		"rgbaSha256": "47800dea8a7cca3d7510610802fa0d0569fd68c77170a47832dd6f3e2e0d6861",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3895425,
+		"source": "https://github.com/nocoo/wooly/blob/e516e1fbcbd146fcda6b80cf071bd5367e611afd/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/wooly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8004bcbe9c29916193d2f756dfd883b2d27d91e5d5083febccb70c9e41a51d48"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c7a61a34-1ddc-4565-b2b6-53e32f82070b",
+			"source": "artwork/brands/wooly/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/wooly/v1.0.0/source-light-request.json",
+			"response": "/textures/wooly/v1.0.0/source-light-response.json",
+			"prompt": "/textures/wooly/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/wooly/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/wooly/v1.0.0/texture-light.png",
+				"sha256": "7063518288e84585cd823110832df768e8e5d9e8da3013881a801f531b5dd8c1",
+				"bytes": 1620725,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f5593582-6571-4034-9a5d-ddfa340350dd",
+			"source": "artwork/brands/wooly/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/wooly/v1.0.0/source-dark-request.json",
+			"response": "/textures/wooly/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/wooly/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/wooly/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/wooly/v1.0.0/texture-dark.png",
+				"sha256": "82ce463f2e44c45eb26cde2d0ca57f4ff7c5f05d413281a089d987382e8acaee",
+				"bytes": 1416850,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/wooly/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1620725,
+			"sha256": "7063518288e84585cd823110832df768e8e5d9e8da3013881a801f531b5dd8c1"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 164118,
+			"sha256": "3f40c66e0ca84f1d57c5b42930d920b8c858ad09841ccb553d927e70b91d5ce5"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10548,
+			"sha256": "af6886bd9fe238d18c75374e7f35de2123116ae527601b96919b0c9f2cef1241"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2880,
+			"sha256": "7fed1c5b8ec49bd0e8c472565ffb4816d0c9904246472000a0926d63a72597b3"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "1f517fa3f1d5a8dee9c93d354fade884f9faa9da3c907aac1934523f835fe449"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "df30ac5b2d4ff1a8424b9cc39f21f468c5591037e55e39af5ac1bf9e10bc1157"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1064,
+			"sha256": "972bfaa668eef176629ab14053b92f6f76b243d210583743e98ddd4b1ff6e208"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1416850,
+			"sha256": "82ce463f2e44c45eb26cde2d0ca57f4ff7c5f05d413281a089d987382e8acaee"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 106652,
+			"sha256": "8651b7255101e95751a88a9173b54106b59b8e0d171971b65f45ad1e3b2caaaa"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7680,
+			"sha256": "d979f5d30e80e2effb42497aef3fffd3b7223dfdcca96c6ae8b116cd40c62277"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2961,
+			"sha256": "4ebf5f361d8c8de23cd9d31414e706e04225ff1e012d17ecf23ea8a794c3ae36"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "4297bbf8b590b7e0c9f87ab7c29773d29404c832daf4b585b9916e3f4c9331bd"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "dc9e5b7b43abe51ef1b7bdbe065c79d66c5a9a2fbda8afda50708c19d068e07e"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1054,
+			"sha256": "49039100e486452115728e03936cb3fd9843fc0da7b1d84b7ca1a2353256b026"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5379,
+			"sha256": "c45f4e62472aed12018354d485b6213b381549992b7feb7b03c4af7a94a8936d"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1444,
+			"sha256": "1530540a38ce66407a0bac2d85c804701465d23a9159a7e2b808e084defb363b"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "306ef56279be6f874b74cc4666e717e53c17f47ea8c42eb903747a67f8a10535"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2532,
+			"sha256": "8a2538d2d1f22ba5062e22cf8d9bd4da9982c707c13b3409194421fafabfa290"
+		},
+		{
+			"path": "/textures/wooly/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3523,
+			"sha256": "f7364606302eba2a1b06fdc67f62ce1b0244297ea9ce54c70c773855b1de1338"
+		}
+	]
+}

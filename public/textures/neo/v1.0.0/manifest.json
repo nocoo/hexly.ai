@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "neo",
+	"version": "1.0.0",
+	"root": "/textures/neo/v1.0.0",
+	"canonical": "https://hexly.ai/projects/neo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/neo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A familiar garden", "zh": "熟悉的庭院" },
+		"description": {
+			"en": "Soft apple-tree leaves, a few clover leaflets and two rounded fallen leaves.",
+			"zh": "苹果树叶与少量三叶草构成熟悉的庭院，承接金毛犬温和的性格，也给私人资料留出安稳的空间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/neo.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"rgbaSha256": "e033e674d024a43207e63bbfb4c8b15b6059e95f6de3337fe14f49a870f568e5",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4237355,
+		"source": "https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/neo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ef160197f5750bd609abe0f5ca5885c428b4bee3c2c5e1d2bb1d079c9da65b1a"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "65a62d04-c6f3-4531-803f-b327d4896ecc",
+			"source": "artwork/brands/neo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/neo/v1.0.0/source-light-request.json",
+			"response": "/textures/neo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/neo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/neo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/neo/v1.0.0/texture-light.png",
+				"sha256": "06071c6a2b87a446a1b44c490b7b3460373f3dc0f65a17c2fa2a5092bc3a667b",
+				"bytes": 1623668,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1c42d6a8-3367-4134-9eb3-0ba4010aa623",
+			"source": "artwork/brands/neo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/neo/v1.0.0/source-dark-request.json",
+			"response": "/textures/neo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/neo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/neo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/neo/v1.0.0/texture-dark.png",
+				"sha256": "df08cb4b89f9c2609227b1e0389a24668fc65ead40d3d4c7a6de62d10b5dd048",
+				"bytes": 1484308,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/neo/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1623668,
+			"sha256": "06071c6a2b87a446a1b44c490b7b3460373f3dc0f65a17c2fa2a5092bc3a667b"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 181888,
+			"sha256": "c837afd5145240ceb780373f711c215d4d33ad8c27bfac758621ad16301c2b91"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7226,
+			"sha256": "b6872c6262801dbc798b37280cad468ae52c5a35d855d45bd6a324c39c266f78"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2864,
+			"sha256": "3c3d2293e2ce45e6b7a55aa5f350717c70c15fd6a154f42b9ed1cf9c3ebec9ff"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "afabed74e0645fa46fef8673c614114a44b09b61886053b8114bcf9555c8b294"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d40a6bd68ce6f7c9efe0a48bd952eae070381f6dc7cfec6126741504989c4585"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1060,
+			"sha256": "e6fe3955cdf5b2ac25f31778bcf2d1c23673db986aa3e50d432ba18604bb1fcd"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1484308,
+			"sha256": "df08cb4b89f9c2609227b1e0389a24668fc65ead40d3d4c7a6de62d10b5dd048"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 142620,
+			"sha256": "6f908d468e0f5f01271f0cbed26ebbcca6f1a955085f0e301f67ac4cae41a2cb"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6938,
+			"sha256": "e12778d2fa67cdc832e66d24304a0c5f84b24313da251b98c729d11b84f9cd8f"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2945,
+			"sha256": "ee2b4d49d59a1cf2658e1ca2268289ea47bb26f608c00e50e3879bb616581dab"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "5db5f41c86f16496f041019600e6ed381de5e39615bba9cd690c0a3317228140"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "702c661bcb1184445757c0858870b1c9fd09767c54f62b69bd8e3816891fe849"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1060,
+			"sha256": "d79e88549ed8cd2b27d6047b706c456a478dcbc5cac315ff894454c17be83bfe"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5303,
+			"sha256": "c9b582fb3e502f860d75226d5bcde0315e23877e6fb5b15fd09bb2ad54382c1e"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1411,
+			"sha256": "9a58bf9a3f7d3fee97b96078e74a4c55d68532436dcf7b0f300cc36c5c185d69"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "5a1ea463f4c3e21d8b35a09d7c351848fdcb696fc3564576173bb265e2e61486"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2516,
+			"sha256": "42bfd2ae91b710e4cd4470753ff7b6aef5c7fdfa18d93564458c4283b333263b"
+		},
+		{
+			"path": "/textures/neo/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3477,
+			"sha256": "1b66867e1209595d628cbc253499e48390add5ffb9fcd74e3f417cd46e0ae048"
+		}
+	]
+}

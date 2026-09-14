@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "bat",
+	"version": "1.0.0",
+	"root": "/textures/bat/v1.0.0",
+	"canonical": "https://hexly.ai/projects/bat#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/bat/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Fig leaves at dusk", "zh": "暮色无花果" },
+		"description": {
+			"en": "Large three-lobed fig leaves with soft radiating veins and a few small new leaves.",
+			"zh": "三裂无花果叶伸展出清楚的叶脉，疏散嫩叶承接蝙蝠身旁的无花果，避免另设醒目的果实主体。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/bat-family-2026-09-07-01-02.png",
+		"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+		"rgbaSha256": "60ff960d46d5cad67e02c738b09a17498607ad59bf0088b1a9112fbb3f8ec143",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2092682,
+		"source": "https://github.com/nocoo/bat/blob/46f5c95a6c134487130e2a6d9336ec5e8895a0f7/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/bat/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "b6a26ef50aa43f9972208cfda141ec997a79fc0523a52d953e72c32c0bbc9a97"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6bc1cd68-c105-4d17-815e-14c41107a79f",
+			"source": "artwork/brands/bat/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/bat/v1.0.0/source-light-request.json",
+			"response": "/textures/bat/v1.0.0/source-light-response.json",
+			"prompt": "/textures/bat/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/bat/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/bat/v1.0.0/texture-light.png",
+				"sha256": "da7555208cd4224cef04662c44c84b55c3711a0ab4f904ef33395ca8ff273518",
+				"bytes": 1693785,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b50d9073-551f-42dc-9c16-5af27651f08e",
+			"source": "artwork/brands/bat/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/bat/v1.0.0/source-dark-request.json",
+			"response": "/textures/bat/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/bat/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/bat/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/bat/v1.0.0/texture-dark.png",
+				"sha256": "a7466b82155eb7642304ba79524c9b207672c89d83869fd3035a0252c4f6822a",
+				"bytes": 1469864,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/bat/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1693785,
+			"sha256": "da7555208cd4224cef04662c44c84b55c3711a0ab4f904ef33395ca8ff273518"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 202046,
+			"sha256": "ad0f0313c92a3d65a9be25e84878eb03a5cb385fb3a64acbbc5c42c1bd8dbdfe"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8936,
+			"sha256": "f580b27090613fa4e69e27bae5fee3302893202e852fc8c95bf85a45ce9874d6"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2873,
+			"sha256": "ef5c3f46e2a09a2df9d145531b0e6721126784adcddc1f4af77322d703b3764b"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "1e00e47c5c5386c26fe2ff45c0a261a65275f1d283204245c600960b1c4f8cf5"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c0e896920a89103d967b504b01938f23793c6918eab729d46b090633c1276eee"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1049,
+			"sha256": "5572fe6b9cfe42ef3ab255c9bbb2146be90b1768d63eab1d4df1eb642f8d4312"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1469864,
+			"sha256": "a7466b82155eb7642304ba79524c9b207672c89d83869fd3035a0252c4f6822a"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 131568,
+			"sha256": "494d6cb8f55ced4e3837152fdc9f5d491accc6433c1b34d6abd157a2720678cc"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7374,
+			"sha256": "876845c22d4b30311e9097aa48a6d99ae65c4cebf299f43cdfbbb8bf242fb4d4"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2954,
+			"sha256": "e4fb149c293f08d7cb824ab3138934ab65089e8404bec9ebef292aa5388d89de"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "fb573433e8e5f5b83260264b7db587e802f57c0cd86bbd0968d813d99bffc18f"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "434fef183d5f28f1b57e517d2a8f95f5ca8da62a674e09c1d55535a241ed017e"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1049,
+			"sha256": "47a2aa5db3bad99d5bcda7ec35ab83a57dc918ebc9acdb2320478a9feaa80675"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5258,
+			"sha256": "09fdd72a6b42b5509f14a8f5c61fbf8964aab3dbe03b10eeb4a6c2b9109d4842"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1371,
+			"sha256": "e67d0747ae1d676ee1bf3e6e821e439b3f0d83ebdb67cedbc99d1636fa0e008e"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "e4355c5f46a65c030b788847b9b06d71fdf8985cf7360fa63eeca65de281c294"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2520,
+			"sha256": "9c01cb3b9d355a19f30fdb034cb5b6d5bd92acc58bc5c948134de54354d3f96a"
+		},
+		{
+			"path": "/textures/bat/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3483,
+			"sha256": "e6c539369aed81ab63cae6adbf2c3a4f1070622bd4b96222e8ba3427b463b97a"
+		}
+	]
+}

@@ -1,0 +1,122 @@
+{
+	"project": "pew",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Savanna in stripes", "zh": "草原条序" },
+		"motif": "Open African grassland: upright bunchgrass blades and fine oat-like seed heads bent in alternating directions, with one sparse acacia leaflet spray. Long tapered botanical bands suggest the zebra's rhythm without drawing stripes, animals or an instrument grid.",
+		"description": {
+			"en": "Upright bunchgrass blades and fine oat-like seed heads bent in alternating directions, with one sparse acacia leaflet spray.",
+			"zh": "疏密相间的草叶和细小穗头延续斑马的节奏，一枝金合欢小叶留出开阔草原的空气。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A contribution graph for the AI-native era. See your coding tokens tell a story.",
+			"zh": "AI 时代的贡献图，把不同编程工具的 Token 使用记录变成可见的轨迹。"
+		},
+		"purpose": {
+			"en": "Understand AI coding-tool usage through token and session statistics, with analysis by time, model, device, and project.",
+			"zh": "汇总 AI 编程工具的 token 与会话统计，按时间、模型、设备和项目分析使用情况。"
+		},
+		"source": "src/data/projects/pew.json",
+		"inspectedRevision": "5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pew-2026-09-07.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3043802,
+		"source": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pew/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "3c887b4744917d7a6e943011c6dc8776e48b25c878cdafd271060fbf5e5f9ec1"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2c32b661-78ab-49f6-b64d-aa55535d689c",
+			"source": "artwork/brands/pew/texture-studies/2026-09-14-flare-rollout-01/light",
+			"request": "/textures/pew/v1.0.0/source-light-request.json",
+			"response": "/textures/pew/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pew/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pew/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pew/v1.0.0/texture-light.png",
+				"sha256": "5215d7d1b1ac1589810d673b1c86483ee1e9ce15b2a5a962dcd74dd5b26e38e7",
+				"bytes": 1587822,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "420a44b0-e18b-4095-8f80-afbd459a5a79",
+			"source": "artwork/brands/pew/texture-studies/2026-09-14-flare-rollout-01/dark",
+			"request": "/textures/pew/v1.0.0/source-dark-request.json",
+			"response": "/textures/pew/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pew/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pew/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pew/v1.0.0/texture-dark.png",
+				"sha256": "bb3401da68d49c008a2e56dadf662ad8fe95eb27c975615e3352d8a5d33319ef",
+				"bytes": 1401912,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.4
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.775033958515993,
+		"darkMinimum": 4.763767607202697,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:10:43.063Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

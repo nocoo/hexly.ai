@@ -1,0 +1,118 @@
+{
+	"project": "skill-task-notifier",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "Dispatch board", "zh": "任务派送板" },
+		"motif": "A tidy physical dispatch surface: very fine pressed cork-paper grain, shallow horizontal task-lane dividers and two small offset docket-tab impressions. A tiny restrained terracotta notch suggests attention without glowing or claiming task status. No text, envelope, stamps or icons.",
+		"description": {
+			"en": "Very fine pressed cork-paper grain, shallow horizontal task-lane dividers and two small offset docket-tab impressions.",
+			"zh": "压实软木纸与横向派送分隔、错位票签凹痕承接任务通知，少量色点只作视觉提醒。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Keep track of running tasks and get notified when their status changes.",
+			"zh": "跟踪正在执行的任务，在状态变化时收到通知。"
+		},
+		"purpose": {
+			"en": "Keep track of running tasks and get notified when their status changes.",
+			"zh": "跟踪正在执行的任务，在状态变化时收到通知。"
+		},
+		"source": "src/data/projects/skill-task-notifier.json",
+		"inspectedRevision": "a095190b42b95b14e3b692cc50bb7eba082e2299"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/skill-task-notifier.png",
+		"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+		"rgbaSha256": "dec445c95f1eac5a42a184a3f5995edc7fbb07ce3cfe713623032df458b4d093",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 353526,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a9fb4c85-4308-48ee-b87c-c2eabfdf0159",
+			"source": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/skill-task-notifier/v1.0.0/source-light-request.json",
+			"response": "/textures/skill-task-notifier/v1.0.0/source-light-response.json",
+			"prompt": "/textures/skill-task-notifier/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/skill-task-notifier/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/skill-task-notifier/v1.0.0/texture-light.png",
+				"sha256": "83636057066174d09dca9eab5219c7f14209dc76f2fa387df79a6020197ed523",
+				"bytes": 1939211,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "49b58dd3-952a-4c14-9621-57b01965717c",
+			"source": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/skill-task-notifier/v1.0.0/source-dark-request.json",
+			"response": "/textures/skill-task-notifier/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/skill-task-notifier/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/skill-task-notifier/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/skill-task-notifier/v1.0.0/texture-dark.png",
+				"sha256": "07f518ead66b79bc125a21d47f05e14394a6a0bf982b6d3db91470a32c7ea40a",
+				"bytes": 1822492,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.39
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.704582631822859,
+		"darkMinimum": 5.975952475797422,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:03:55.138Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

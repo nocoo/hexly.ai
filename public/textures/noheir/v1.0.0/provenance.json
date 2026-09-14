@@ -1,0 +1,122 @@
+{
+	"project": "noheir",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Pasture rows", "zh": "牧草成行" },
+		"motif": "A dairy-cow pasture without assuming breed: broad alfalfa leaf triplets, meadow-grass blades and loose oat seed panicles. Gentle low horizontal arrangements suggest a cared-for field, with no financial ledger grid, coins, cow spots, flowers or animal.",
+		"description": {
+			"en": "Broad alfalfa leaf triplets, meadow-grass blades and loose oat seed panicles.",
+			"zh": "苜蓿三出叶、牧草与松散燕麦穗自然成行，把奶牛身边有照料的草地延伸成安稳的背景。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A clear view of your money: income, spending, assets, and the bigger picture.",
+			"zh": "从收入、支出到资产，用一个清晰的视角理解自己的财务。"
+		},
+		"purpose": {
+			"en": "Organize personal transactions, accounts and capital to review cash flow, allocation, returns and availability dates.",
+			"zh": "整理个人收支、账户和存量资金，查看现金流、资金配置、收益与可用日期。"
+		},
+		"source": "src/data/projects/noheir.json",
+		"inspectedRevision": "5e32426a6044436eee5c6b2894910666896a8b49"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+		"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+		"rgbaSha256": "bb76d3ee3bfe5268f2d8b0e6d00efe5d896e8de47dd376de87579ebfee811fe4",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3801133,
+		"source": "https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/noheir/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5a7afc1dd7bc1a12fc8e5e4d8f0299a43caa9fdc01e4916d7c55f52aec46bffe"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a1e1f1a3-2a3b-4715-9647-551a90cfa2db",
+			"source": "artwork/brands/noheir/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/noheir/v1.0.0/source-light-request.json",
+			"response": "/textures/noheir/v1.0.0/source-light-response.json",
+			"prompt": "/textures/noheir/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/noheir/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/noheir/v1.0.0/texture-light.png",
+				"sha256": "f2ea7612b826875bf3207f3b83261c28404aa69565e3168f307f1cdaf2861220",
+				"bytes": 1651281,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8d668e52-fa30-43f0-a9d8-7ba1b7d42a74",
+			"source": "artwork/brands/noheir/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/noheir/v1.0.0/source-dark-request.json",
+			"response": "/textures/noheir/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/noheir/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/noheir/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/noheir/v1.0.0/texture-dark.png",
+				"sha256": "993732b42f2b61437abf4927f4fd6acc969795ae6a273e1ef4718ab889072c66",
+				"bytes": 1515435,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.787280411887124,
+		"darkMinimum": 4.795906624319753,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:56:41.122Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -108,10 +108,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A calm, balanced moment",
-					"zh": "平静而平衡的一瞬"
-				},
+				"title": { "en": "A calm, balanced moment", "zh": "平静而平衡的一瞬" },
 				"description": {
 					"en": "The broad muzzle and relaxed closed eyes stay dominant. A natural short neck and shoulder enter from the lower left, leaving the whole apple, ear, and outer glasses arm inside the safe frame.",
 					"zh": "宽鼻口与放松闭眼仍是主体，短颈和肩部从左下自然进入画面，完整苹果、耳朵和外侧镜框都留在安全范围内。"
@@ -130,10 +127,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Riverbank ripples",
-					"zh": "水岸涟漪"
-				},
+				"title": { "en": "Riverbank ripples", "zh": "水岸涟漪" },
 				"description": {
 					"en": "Broken elliptical water rings and one quiet leaf-vein impression fill a warm sand field. The broad tonal texture gives the portrait a calm setting without becoming a scene.",
 					"zh": "断续椭圆水纹与一处安静叶脉落在暖沙色底面上，以宽阔同色纹理衬托平静头像。"
@@ -144,64 +138,43 @@
 			{
 				"color": "#b7aa8e",
 				"role": "background",
-				"label": {
-					"en": "Riverbank ripples",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Riverbank ripples", "zh": "展示底色" },
 				"source": "Selected Life.ai presentation, 2026-09-07-01/02; background.base in archived settings.json"
 			},
 			{
 				"color": "#c18d57",
 				"role": "primary",
-				"label": {
-					"en": "Caramel coat",
-					"zh": "焦糖毛色"
-				},
+				"label": { "en": "Caramel coat", "zh": "焦糖毛色" },
 				"source": "Native life-ai 705264fc5b59, sampled sRGB pixel (1101, 935); artwork/logo-family/life-ai/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#694936",
 				"role": "accent",
-				"label": {
-					"en": "Cocoa facets",
-					"zh": "可可色块"
-				},
+				"label": { "en": "Cocoa facets", "zh": "可可色块" },
 				"source": "Native life-ai 705264fc5b59, sampled sRGB pixel (1086, 1860); artwork/logo-family/life-ai/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e1412e",
 				"role": "accent",
-				"label": {
-					"en": "Apple red",
-					"zh": "苹果红"
-				},
+				"label": { "en": "Apple red", "zh": "苹果红" },
 				"source": "Native life-ai 705264fc5b59, sampled sRGB pixel (1079, 312); artwork/logo-family/life-ai/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#77a848",
 				"role": "accent",
-				"label": {
-					"en": "Leaf green",
-					"zh": "叶绿"
-				},
+				"label": { "en": "Leaf green", "zh": "叶绿" },
 				"source": "Native life-ai 705264fc5b59, sampled sRGB pixel (1205, 111); artwork/logo-family/life-ai/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#276da5",
 				"role": "accent",
-				"label": {
-					"en": "Blue glasses",
-					"zh": "蓝色镜框"
-				},
+				"label": { "en": "Blue glasses", "zh": "蓝色镜框" },
 				"source": "Native life-ai 705264fc5b59, sampled sRGB pixel (999, 918); artwork/logo-family/life-ai/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#793ca6",
 				"role": "accent",
-				"label": {
-					"en": "Purple glasses",
-					"zh": "紫色镜框"
-				},
+				"label": { "en": "Purple glasses", "zh": "紫色镜框" },
 				"source": "Native life-ai 705264fc5b59, sampled sRGB pixel (1732, 721); artwork/logo-family/life-ai/2026-09-07-01/palette.json"
 			}
 		],
@@ -232,18 +205,9 @@
 			},
 			{
 				"name": "Next.js",
-				"role": {
-					"en": "Web dashboard and APIs",
-					"zh": "Web Dashboard 与 API"
-				}
+				"role": { "en": "Web dashboard and APIs", "zh": "Web Dashboard 与 API" }
 			},
-			{
-				"name": "React",
-				"role": {
-					"en": "Data views",
-					"zh": "数据视图"
-				}
-			},
+			{ "name": "React", "role": { "en": "Data views", "zh": "数据视图" } },
 			{
 				"name": "SQLite",
 				"role": {
@@ -251,26 +215,14 @@
 					"zh": "本地健康、轨迹与记账数据库"
 				}
 			},
-			{
-				"name": "Leaflet",
-				"role": {
-					"en": "Route maps",
-					"zh": "轨迹地图"
-				}
-			},
+			{ "name": "Leaflet", "role": { "en": "Route maps", "zh": "轨迹地图" } },
 			{
 				"name": "Recharts",
-				"role": {
-					"en": "Charts and trends",
-					"zh": "图表与趋势"
-				}
+				"role": { "en": "Charts and trends", "zh": "图表与趋势" }
 			},
 			{
 				"name": "Zustand",
-				"role": {
-					"en": "Dashboard state",
-					"zh": "Dashboard 状态"
-				}
+				"role": { "en": "Dashboard state", "zh": "Dashboard 状态" }
 			}
 		],
 		"verified": {
@@ -294,15 +246,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 879,
-			"height": 416
-		},
+		"lockup": { "width": 879, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Riverbank ripples",
-				"zh": "河岸涟漪"
-			},
+			"name": { "en": "Riverbank ripples", "zh": "河岸涟漪" },
 			"description": {
 				"en": "Broken horizontal water rings meet a single leaf vein, recalling the capybara’s unhurried riverbank.",
 				"zh": "断开的横向水环与一脉叶纹相遇，留住水豚河岸旁不慌不忙的气息。"
@@ -327,35 +273,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Keep the existing portrait's natural frame entry. The full square is placed against the baseline; no anatomy is extended, trimmed or masked. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留原头像自然入框的边界，将完整方形画布贴齐基线；不补画、不截取解剖结构。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥71px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 71px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/life-ai/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A river garden", "zh": "河岸小园" },
+		"description": {
+			"en": "Broad rounded water-hyacinth leaves without blossoms, slender reed leaves and several smaller floating wetland leaves.",
+			"zh": "圆润水生叶与细芦苇贴着河岸生长，宽窄相间的叶片承接水豚松弛而完整的日常。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
 	}
 }

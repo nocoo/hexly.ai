@@ -41,7 +41,7 @@ Reuse terminal-inspired controls, charts, and page templates to build green-on-b
 
 ![Matrix source identity](https://h.no.mt/projects/matrix/identity/v1.0.0/matrix-160-395d7911f344.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Floating black-and-green layered circuit deck
 - [Source](https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/matrix/identity/v1.0.0/matrix-family-2026-09-07-01-01-f9490707d630.png)
@@ -63,6 +63,16 @@ Reuse terminal-inspired controls, charts, and page templates to build green-on-b
 | accent | `#b2f6cb` | Native matrix d6d796220a39, sampled sRGB pixel (973, 864); artwork/logo-family/matrix/2026-09-07-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Quiet routing / 安静的布线: Shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones.
+- 复合板上的浅刻通道、小孔与错位覆膜区保留电路材质的秩序，避免发光线条压过主视觉。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.3.
+- [Paper PNG](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/matrix/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/matrix/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/matrix/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -144,6 +154,6 @@ Small-size observation: At 128/64 px the deck shape, green routing and layered r
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

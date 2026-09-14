@@ -1,0 +1,122 @@
+{
+	"project": "coffee",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Cupping paper and glaze", "zh": "杯测纸与釉" },
+		"motif": "A coffee tasting work surface: fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size. Only a tiny muted warm brown accent. No cup, coffee beans, botanical illustration, text, wheel graphic or dark stains.",
+		"description": {
+			"en": "Fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size.",
+			"zh": "杯测纸纤维、细瓷釉与两道不完整的浅环痕呼应品饮过程，咖啡杯原标仍是唯一主体。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Bilingual coffee flavor wheel, origin atlas, brewing lab and tasting journal",
+			"zh": "双语咖啡风味轮、产地地图、冲煮实验室与本地品鉴手记"
+		},
+		"purpose": {
+			"en": "Explore coffee through an original interactive flavor wheel, compare origins and brewing recipes, and record tasting notes locally. Bilingual learning paths and a slow exhibition mode support sensory practice and shop displays.",
+			"zh": "通过原创交互风味轮认识咖啡，对照产地与冲煮配方，并在本地记录品鉴手记。双语学习路径与慢速展示模式支持感官练习和店铺大屏。"
+		},
+		"source": "src/data/projects/coffee.json",
+		"inspectedRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+		"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+		"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4374884,
+		"source": "https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/coffee/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "dfbbf78b0d15b0d1d08a7668c4d44aa5b948bb0091db43fc35a90a913149b428"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8856fdec-b263-47fb-beb9-7d1306757ed1",
+			"source": "artwork/brands/coffee/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/coffee/v1.0.0/source-light-request.json",
+			"response": "/textures/coffee/v1.0.0/source-light-response.json",
+			"prompt": "/textures/coffee/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/coffee/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/coffee/v1.0.0/texture-light.png",
+				"sha256": "d0f1e604fe76fe33f8032b57b4d7a86c7ca26a8faa5dceaf5685baddad9d2ef5",
+				"bytes": 1933700,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "92b5a9e8-93c4-4bec-a0f1-f99a13bde6fe",
+			"source": "artwork/brands/coffee/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/coffee/v1.0.0/source-dark-request.json",
+			"response": "/textures/coffee/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/coffee/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/coffee/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/coffee/v1.0.0/texture-dark.png",
+				"sha256": "c4a1e2e7819298517323386bc6a1b1677bfe154c536229580d97f936cf04ec15",
+				"bytes": 1956463,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.41
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.740887241534887,
+		"darkMinimum": 5.135222854143339,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:25:01.824Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

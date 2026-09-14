@@ -1,0 +1,122 @@
+{
+	"project": "gaga",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "A small garden to explore", "zh": "小兔菜圃" },
+		"motif": "A domestic rabbit's safe garden setting: feathery carrot fronds, soft clover leaves and a few broad dandelion leaves. A playful but calm low arrangement with rounded gaps between leaves. No carrots as focal objects, toys, flowers or animals.",
+		"description": {
+			"en": "Feathery carrot fronds, soft clover leaves and a few broad dandelion leaves.",
+			"zh": "轻盈胡萝卜缨、三叶草与蒲公英叶散落成小小菜圃，用柔软的间距承接兔子的探索欲。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A tiny 3D playroom where Taotao can explore, wander, and discover toys.",
+			"zh": "给陶陶的小小三维玩具房，自由走动，探索喜欢的玩具。"
+		},
+		"purpose": {
+			"en": "Watch and guide a virtual character through a browser playroom with animated toys, camera controls, and a daily discovery journal.",
+			"zh": "在浏览器玩耍空间中观察并引导虚拟角色探索玩具，调整视角并查看当天足迹。"
+		},
+		"source": "src/data/projects/gaga.json",
+		"inspectedRevision": "76260f08329784eead9b30912c7692b8ea0d3d56"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+		"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+		"rgbaSha256": "acefff7ae83f21c28183adbd0a8ffb4c4ce7fdec235bc2d426afd93754b793ac",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2357751,
+		"source": "https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/gaga/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "9f494c159c9a464f5ab1135577c1d97c8f4e0beeed4c2598c615c48f2d654ced"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6395d90e-a90d-4f53-8f13-efea51e5b6c5",
+			"source": "artwork/brands/gaga/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/gaga/v1.0.0/source-light-request.json",
+			"response": "/textures/gaga/v1.0.0/source-light-response.json",
+			"prompt": "/textures/gaga/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/gaga/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/gaga/v1.0.0/texture-light.png",
+				"sha256": "44ca6b80a2cbe9a5fa01df4630ed881216c56518331c95e942eaf6d678985db9",
+				"bytes": 1678373,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4f34b853-83e7-4010-b1ed-04d59c279a66",
+			"source": "artwork/brands/gaga/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/gaga/v1.0.0/source-dark-request.json",
+			"response": "/textures/gaga/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/gaga/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/gaga/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/gaga/v1.0.0/texture-dark.png",
+				"sha256": "5f7728df80f8a441893e3d9ec5bf22fb3c641ac6ec7b66dbd26addce87859d9b",
+				"bytes": 1469467,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.773609416207786,
+		"darkMinimum": 5.670100399804907,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:28:42.608Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

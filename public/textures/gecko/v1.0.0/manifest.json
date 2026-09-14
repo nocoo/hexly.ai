@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "gecko",
+	"version": "1.0.0",
+	"root": "/textures/gecko/v1.0.0",
+	"canonical": "https://hexly.ai/projects/gecko#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/gecko/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A warm stone garden", "zh": "暖石叶隙" },
+		"description": {
+			"en": "Small fleshy stonecrop leaves on branching stems, narrow aloe-like leaf tips and sparse dry grass.",
+			"zh": "景天小叶、细窄肉质叶尖与干草从暖石边的缝隙生长，呼应壁虎亲近地面的生活环境。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.36
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/gecko.png",
+		"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+		"rgbaSha256": "b406b0ca8fdb6f42efd992039159ee19245cedff52b8f72d2216a79ca2db68c3",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2799098,
+		"source": "https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/gecko/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5a3c2287c42d49d95fc352faa67ad9fdf9d2fac3ef39073b1657e5e8962c7229"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e78e4e03-595c-4ddc-8534-719e100777f0",
+			"source": "artwork/brands/gecko/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/gecko/v1.0.0/source-light-request.json",
+			"response": "/textures/gecko/v1.0.0/source-light-response.json",
+			"prompt": "/textures/gecko/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/gecko/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/gecko/v1.0.0/texture-light.png",
+				"sha256": "e70270e38fcb8481ea9c49a79a23b2b18b62f1919719270ef6bb69450a5b7de3",
+				"bytes": 1689309,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "56bcbdee-fe88-4cc4-bd9b-6237e345b3a4",
+			"source": "artwork/brands/gecko/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/gecko/v1.0.0/source-dark-request.json",
+			"response": "/textures/gecko/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/gecko/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/gecko/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/gecko/v1.0.0/texture-dark.png",
+				"sha256": "e3320414834ad2ca528adf8d1a4719cd7898fb72b1da7873a851e05ddd27162c",
+				"bytes": 1480967,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/gecko/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1689309,
+			"sha256": "e70270e38fcb8481ea9c49a79a23b2b18b62f1919719270ef6bb69450a5b7de3"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 192018,
+			"sha256": "6a40003ac337367fc3d39d54477392807cd70d047070edba021c11370d8f6855"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12822,
+			"sha256": "52a1b7a12174c20f81b999502f6658fefa45d288fbe3290285c8303dfec327b0"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2885,
+			"sha256": "e898997e62dc5a4e2e68b72ec5aa6ab1ae2071021adeca47f5a76f0b9f6a11df"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "4496f980262b9b95573eeb54f44b653cca9dff61b79d0f3c2a3af5052def8933"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "7661c75106bda3da603962375009c14b94c7a0f4eaed42e77a5584432277b316"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1039,
+			"sha256": "d32497b5e729557395a6fb25e9c7811a60140a76cafe3b043a7c881926cc3c67"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1480967,
+			"sha256": "e3320414834ad2ca528adf8d1a4719cd7898fb72b1da7873a851e05ddd27162c"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 134814,
+			"sha256": "505b22b479589f2cf40725f060e1fd5eb59f40cfb8352920d7978bfb52ce5b3c"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9228,
+			"sha256": "4c2aa23bbf226ad22c158a1c52dacc4b97b60e70b029d065c89058f563777afd"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2966,
+			"sha256": "05cd4f59288413dd13945d77df2914b92db93817a241af131be36a9765cdcd19"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "c05a5f0871bb9dd24a3610bcb2d617006121eeb76f6714570368196347985933"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "75cda4b63505dfd6fe70992f387b9d432adda7c94c18dae3331a7f8e3080f9ff"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1039,
+			"sha256": "7096e67faa545b76e4d934e134930d313b1b8d1808dc9a82b3dce41050c0bb26"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5373,
+			"sha256": "da30943c0f3e4131639bb4b3b239e8d6ba163fe05ee79c6bab2aa744805d9216"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1439,
+			"sha256": "af6d8445b11aa449468ccfd0a818d1dd32c39080edd77690788acaa598ebe3c7"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "cf42210a1b79602907e16d8d7a1e7c8220331b9a65915ef4093bbfc3f2bbfb10"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2533,
+			"sha256": "f6864e2797e0b99ef5536fec1762dc5acd22bc93ada40013f6788ee3e8f6f4fd"
+		},
+		{
+			"path": "/textures/gecko/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3518,
+			"sha256": "e5f516db4bee6d958fdd1c6b036b14cc809e133e3d71790627e1886de79ede9a"
+		}
+	]
+}

@@ -1,0 +1,67 @@
+{
+	"recordedAt": "2026-09-14T04:26:45.368027+00:00",
+	"publicationState": "Local unpublished records; no raw image bytes, prompts, requests or responses changed.",
+	"changes": [
+		{
+			"source": "artwork/brands/frogie/texture-studies/2026-09-14-flare-rollout-01/dark/raw-review.json",
+			"beforeSha256": "5bdd09a556469efd6c61029ec74281402f272b45b9ff41f872b2e612357c2b46",
+			"afterSha256": "66371d254742ecc49ddd41b60fa20c97f74aed7ee69d1e3d330342a3dfb7f77f",
+			"originalRecord": {
+				"status": "approved",
+				"imageSha256": "c85e73fbedb334d8f5af43cf948b06b0ff7101e1a7d09da1662983cf6f93a4f4",
+				"recordedAt": "2026-09-14T03:57:07.330436+00:00",
+				"ownerReviewedExactBytes": false,
+				"scope": "Hexly campaign decoration only; original Logo unchanged.",
+				"nextStep": "Exact bytes accepted for whole-canvas exports, measured contrast and responsive review.",
+				"reviewedAt": "2026-09-14T04:08:43.774Z",
+				"acceptance": "delegated-agent",
+				"authorization": "docs/brand-textures/2026-09-14/inventory.json#authorization",
+				"inspection": {
+					"contactSheet": "artwork/brand-textures/2026-09-14/inspection/contact-7b60ce5ab6b2.webp",
+					"contactSheetSha256": "999e4334ddefbcae323f9c0d050c54288ee75aa72c8fcfeb65e0c49b7f12cd7c",
+					"fullCanvas": true,
+					"observations": [
+						"Complete square with distinct broad lily pads, reed blades and duckweed; quiet upper-left paper field.",
+						"Soft but readable leaf veins and raised edges; dark pads remain visible against the forest-green paper.",
+						"No text, animal emblem, bright flowers or tool markings; use one complete canvas, not a tile."
+					],
+					"nativeSizeInspected": true,
+					"productionCrop": false,
+					"repeat": false
+				}
+			},
+			"reason": "Clarify which exact theme was inspected at native size, preserving the contact-sheet approval decision.",
+			"previousPreparedManifestSha256": "8a27f9e9f8a275da23f5b33691449e6d1b229b253141fe9259d6e361ac2378a1",
+			"preparedManifestSha256": "84ae1ebf834d14304a1bc3e8c25916f064019323832f0aaee5dce1e9764191d7"
+		},
+		{
+			"source": "artwork/brands/feedmaid/texture-studies/2026-09-14-flare-rollout-01/light/raw-review.json",
+			"beforeSha256": "7c2c63e57d36c847e3e36a77cc334c1e5c8478cb5fdc086e5d1bc1a4e19e96fd",
+			"afterSha256": "8437aa9ea5328ba5008838c343e19d52f09eb9098de3a1b2d715587643dd40a4",
+			"originalRecord": {
+				"status": "rejected",
+				"imageSha256": "fffde6a71cd7a7559644c7c2cec29fd6420db4746af9231c322d014de2399eee",
+				"recordedAt": "2026-09-14T03:58:12.541201+00:00",
+				"ownerReviewedExactBytes": false,
+				"scope": "Hexly campaign decoration only; original Logo unchanged.",
+				"nextStep": "Do not export or adopt. Preserve this rejected output and explicitly revise the next attempt prompt.",
+				"reviewedAt": "2026-09-14T04:08:44.819Z",
+				"acceptance": "delegated-agent",
+				"authorization": "docs/brand-textures/2026-09-14/inventory.json#authorization",
+				"inspection": {
+					"contactSheet": "artwork/brand-textures/2026-09-14/inspection/contact-415fbfe21b31.webp",
+					"contactSheetSha256": "bb6624006a3c698c840ab63cef976c833623c4446545abef635756e393ac9477",
+					"fullCanvas": true,
+					"observations": [
+						"Both outputs introduce multiple large decorative leaves and a literal envelope despite the material brief.",
+						"Readable and well-crafted, but they blur the owner's tool versus botanical-family distinction; regenerate from a focused enamel-and-stationery-surface direction."
+					],
+					"nativeSizeInspected": true,
+					"productionCrop": false,
+					"repeat": false
+				}
+			},
+			"reason": "Clarify which exact theme was inspected at native size, preserving the contact-sheet approval decision."
+		}
+	]
+}

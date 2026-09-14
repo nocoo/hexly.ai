@@ -13,54 +13,27 @@
 			"zh": "让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、HTTP 延迟和 DNS 解析器，判断分流是否符合预期。"
 		},
 		"techStack": [
-			{
-				"name": "TypeScript",
-				"role": {
-					"en": "CLI logic",
-					"zh": "CLI 逻辑"
-				}
-			},
+			{ "name": "TypeScript", "role": { "en": "CLI logic", "zh": "CLI 逻辑" } },
 			{
 				"name": "Node.js",
-				"role": {
-					"en": "Probe runtime",
-					"zh": "探测运行时"
-				}
+				"role": { "en": "Probe runtime", "zh": "探测运行时" }
 			},
-			{
-				"name": "React",
-				"role": {
-					"en": "Terminal UI",
-					"zh": "终端界面"
-				}
-			},
+			{ "name": "React", "role": { "en": "Terminal UI", "zh": "终端界面" } },
 			{
 				"name": "Ink",
-				"role": {
-					"en": "Terminal rendering",
-					"zh": "终端渲染"
-				}
+				"role": { "en": "Terminal rendering", "zh": "终端渲染" }
 			},
 			{
 				"name": "Swift",
-				"role": {
-					"en": "macOS application",
-					"zh": "macOS 应用"
-				}
+				"role": { "en": "macOS application", "zh": "macOS 应用" }
 			},
 			{
 				"name": "SwiftUI",
-				"role": {
-					"en": "Menu bar UI",
-					"zh": "菜单栏界面"
-				}
+				"role": { "en": "Menu bar UI", "zh": "菜单栏界面" }
 			},
 			{
 				"name": "AppKit",
-				"role": {
-					"en": "System integration",
-					"zh": "系统集成"
-				}
+				"role": { "en": "System integration", "zh": "系统集成" }
 			}
 		],
 		"verified": {
@@ -165,10 +138,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The coil becomes the frame",
-					"zh": "用盘坐形成构图"
-				},
+				"title": { "en": "The coil becomes the frame", "zh": "用盘坐形成构图" },
 				"description": {
 					"en": "The liked green face returns above a natural compact coil. The old circular ring is gone; the tapering tail and tongue remain complete.",
 					"zh": "保留喜爱的绿色脸部形象，以自然紧凑的盘坐承托。旧圆环被移除，尾尖和舌头保持完整。"
@@ -176,10 +146,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Leaf green and cream",
-					"zh": "嫩绿与奶油色"
-				},
+				"title": { "en": "Leaf green and cream", "zh": "嫩绿与奶油色" },
 				"description": {
 					"en": "Connected chartreuse, leaf-green and teal facets describe the body. A cream belly clarifies the coil, while one rainbow tongue adds a single outward gesture.",
 					"zh": "相连的黄绿、嫩绿与青色色面描绘身体，奶油色腹部让盘绕关系更清晰，一条彩色舌头向外伸展。"
@@ -187,10 +154,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Meadow bends",
-					"zh": "草地弯折"
-				},
+				"title": { "en": "Meadow bends", "zh": "草地弯折" },
 				"description": {
 					"en": "Open S-shaped relief bends travel around a moss-green field. Broad, uneven paths support the coil without enclosing it in another ring.",
 					"zh": "开放的 S 形浮雕弯折穿过苔绿色底纹，宽阔而不等距的路径呼应盘绕动作，保留开放留白。"
@@ -201,55 +165,37 @@
 			{
 				"color": "#778e57",
 				"role": "background",
-				"label": {
-					"en": "Meadow bends",
-					"zh": "草地弯折"
-				},
+				"label": { "en": "Meadow bends", "zh": "草地弯折" },
 				"source": "Selected Snaky presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#8bbc3f",
 				"role": "primary",
-				"label": {
-					"en": "Leaf green",
-					"zh": "嫩叶绿"
-				},
+				"label": { "en": "Leaf green", "zh": "嫩叶绿" },
 				"source": "Native snaky 2283c4fb8964, sampled sRGB pixel (342, 1252); artwork/logo-family/snaky/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#c6dc5b",
 				"role": "accent",
-				"label": {
-					"en": "Chartreuse",
-					"zh": "黄绿色"
-				},
+				"label": { "en": "Chartreuse", "zh": "黄绿色" },
 				"source": "Native snaky 2283c4fb8964, sampled sRGB pixel (1573, 407); artwork/logo-family/snaky/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e6c88f",
 				"role": "accent",
-				"label": {
-					"en": "Cream",
-					"zh": "奶油色"
-				},
+				"label": { "en": "Cream", "zh": "奶油色" },
 				"source": "Native snaky 2283c4fb8964, sampled sRGB pixel (796, 562); artwork/logo-family/snaky/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#d96e6b",
 				"role": "accent",
-				"label": {
-					"en": "Tongue coral",
-					"zh": "舌头珊瑚色"
-				},
+				"label": { "en": "Tongue coral", "zh": "舌头珊瑚色" },
 				"source": "Native snaky 2283c4fb8964, sampled sRGB pixel (1483, 606); artwork/logo-family/snaky/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#8779b3",
 				"role": "accent",
-				"label": {
-					"en": "Tongue violet",
-					"zh": "舌头紫色"
-				},
+				"label": { "en": "Tongue violet", "zh": "舌头紫色" },
 				"source": "Native snaky 2283c4fb8964, sampled sRGB pixel (1811, 784); artwork/logo-family/snaky/2026-09-07-01/palette.json"
 			}
 		],
@@ -265,15 +211,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 823,
-			"height": 416
-		},
+		"lockup": { "width": 823, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Meadow bends",
-				"zh": "草地弯道"
-			},
+			"name": { "en": "Meadow bends", "zh": "草地弯道" },
 			"description": {
 				"en": "Broad S-shaped channels turn at different intervals, following a route without enclosing the snake.",
 				"zh": "宽阔的 S 形通道以不同间距转弯，像流量路径延伸经过，而不把小蛇圈住。"
@@ -298,35 +238,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 62px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/snaky/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "The meadow bends", "zh": "草叶转弯" },
+		"description": {
+			"en": "Narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads.",
+			"zh": "细草叶与车前长叶缓慢交错，草甸边缘的弯折自然呼应蛇的行进，也让路径有处可寻。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
 	}
 }

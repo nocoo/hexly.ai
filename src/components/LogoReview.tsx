@@ -5,6 +5,7 @@ import { destination } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
 import { BrandKit } from "./BrandKit";
+import { BrandTexture } from "./BrandTexture";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { LogoArchive } from "./LogoArchive";
@@ -154,6 +155,8 @@ export function LogoReview({
 					</div>
 				</section>
 			)}
+
+			{!project.brandKit && <BrandTexture project={project} locale={locale} />}
 
 			{family && (
 				<section className="direction-grid" aria-label={t.artDirection}>

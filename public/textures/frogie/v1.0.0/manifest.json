@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "frogie",
+	"version": "1.0.0",
+	"root": "/textures/frogie/v1.0.0",
+	"canonical": "https://hexly.ai/projects/frogie#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/frogie/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Lily margins", "zh": "\u7761\u83b2\u7559\u767d" },
+		"description": {
+			"en": "Broad water-lily pads with asymmetric radial veins, a few slender reed blades and duckweed pairs.",
+			"zh": "\u7761\u83b2\u7684\u5706\u53f6\u4e0e\u7ec6\u957f\u82a6\u82c7\u6563\u843d\u5728\u6c60\u5858\u8fb9\uff0c\u628a\u9752\u86d9\u7684\u58f0\u573a\u7559\u5728\u5bbd\u9614\u7684\u7eb8\u9762\u4e0a\u3002"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/frogie-2026-09-06.png",
+		"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+		"rgbaSha256": "33da2681091fabc3efb46344446682b3ececdd718fe0488de647a5b8e6faba8f",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3588507,
+		"source": "https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/frogie/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "9c7e1ddc6c041c803bbea368e3b67de3771e500ffd9df33d801206858f11dba3"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fd23beef-16a2-41d7-87dc-ef89fb9992fb",
+			"source": "artwork/brands/frogie/texture-studies/2026-09-14-flare-rollout-01/light",
+			"request": "/textures/frogie/v1.0.0/source-light-request.json",
+			"response": "/textures/frogie/v1.0.0/source-light-response.json",
+			"prompt": "/textures/frogie/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/frogie/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/frogie/v1.0.0/texture-light.png",
+				"sha256": "3bd96b278d05d3fc0350dc2880fc0c724d047f2f227bd7b2cf67e9e15fdb9ba9",
+				"bytes": 1532952,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "59c6bb2d-a140-448b-b8e8-9dbb089398d2",
+			"source": "artwork/brands/frogie/texture-studies/2026-09-14-flare-rollout-01/dark",
+			"request": "/textures/frogie/v1.0.0/source-dark-request.json",
+			"response": "/textures/frogie/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/frogie/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/frogie/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/frogie/v1.0.0/texture-dark.png",
+				"sha256": "c85e73fbedb334d8f5af43cf948b06b0ff7101e1a7d09da1662983cf6f93a4f4",
+				"bytes": 1401156,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/frogie/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1532952,
+			"sha256": "3bd96b278d05d3fc0350dc2880fc0c724d047f2f227bd7b2cf67e9e15fdb9ba9"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 147904,
+			"sha256": "13697cf802199d5fa7e3459b7ab1caab945c37c50e2d1fef32c7832e3bf39c1c"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6710,
+			"sha256": "97d5767ea9271997bf161c437a72be46920374cbd1116699390c0c1eafdabe47"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2839,
+			"sha256": "c928aa94a06792d948169dfcedada445718e92daceec4664adc87e27098a67fb"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8b04f790221a8304ef3be019d21ae342f3a978a15054ba41ade8962ee19b59db"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 820,
+			"sha256": "c7d973f28306f1367d02036affb952c6e4689b2a732daba83d1b76406e990a2c"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1174,
+			"sha256": "94905f560b4fa383b78c8d8dd9b5eaf7e56c22f0e161fcecf375274fc0c5b76c"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1401156,
+			"sha256": "c85e73fbedb334d8f5af43cf948b06b0ff7101e1a7d09da1662983cf6f93a4f4"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 109148,
+			"sha256": "1c2ac963f5a457a1dd64e825aecc0dce92c1075232e55fba932710a123e481e5"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5134,
+			"sha256": "eff4e925f4ed1f061440aa60728a3879e6c14e90c92485cfa5df84a08801fbef"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2920,
+			"sha256": "9e4b072f8c30acb3094dc14836c79cf37114fd37238ef4f46e62316a6dba0996"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "e5dd30207154f8720852c4bb23e6d77219690f23435e24181ee7ade8b7efc38f"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 819,
+			"sha256": "8096d871634843db0d95cdcde7d79dc59a15db0c4b7830a9f2d3bc18c532e801"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1395,
+			"sha256": "66371d254742ecc49ddd41b60fa20c97f74aed7ee69d1e3d330342a3dfb7f77f"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5291,
+			"sha256": "98e6941098b41150d7767ce3db47f9fee1908852024c1d7cdf5e99bef0c18030"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1353,
+			"sha256": "8e9539a6024a26877de137509f46f371aaa606992568100fc142b6724e4721b6"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "56cef1d46b09d9c3e77571e7e8d7f3f4678a61cf7638af8a9ad6ca37ec4475e7"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2511,
+			"sha256": "030e3a3f55e5d22aba1489d9f469f747222189fe1f93a8597a7ef7a1f3e04b03"
+		},
+		{
+			"path": "/textures/frogie/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3492,
+			"sha256": "480456d783bdaf8359164d9544a14932120e5936fdc6ee7dd4295a1fb718457c"
+		}
+	]
+}

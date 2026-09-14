@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "shrike",
+	"version": "1.0.0",
+	"root": "/textures/shrike/v1.0.0",
+	"canonical": "https://hexly.ai/projects/shrike#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/shrike/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A hawthorn lookout", "zh": "山楂枝上的守望" },
+		"description": {
+			"en": "Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.",
+			"zh": "有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/shrike.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3750012,
+		"source": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/shrike/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ce70e9760a7f99c361f681c9645b735722667733ce334a88d9abea27fb5afb0f"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ca486d76-9be4-46a4-b1dd-6611c71fd03a",
+			"source": "artwork/brands/shrike/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/shrike/v1.0.0/source-light-request.json",
+			"response": "/textures/shrike/v1.0.0/source-light-response.json",
+			"prompt": "/textures/shrike/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/shrike/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/shrike/v1.0.0/texture-light.png",
+				"sha256": "bd84ffe24aa0581c4adcb9e9dd6cf9dd64ef80aeae9fcb14e596cbfa05a982ee",
+				"bytes": 1652587,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0f63ddeb-6c6a-4459-8dec-6f7948a7da54",
+			"source": "artwork/brands/shrike/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/shrike/v1.0.0/source-dark-request.json",
+			"response": "/textures/shrike/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/shrike/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/shrike/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/shrike/v1.0.0/texture-dark.png",
+				"sha256": "881830e1b24ae132879128410af4d44bea9dddf0de7886afcf10685e7c1f911f",
+				"bytes": 1474985,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/shrike/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1652587,
+			"sha256": "bd84ffe24aa0581c4adcb9e9dd6cf9dd64ef80aeae9fcb14e596cbfa05a982ee"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 197320,
+			"sha256": "eb21dd6d2e827875e4098766cccd017822fe14d5879016f826fa144b3b7f2dbe"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9230,
+			"sha256": "3ee1778b7d21ea9ce67b9fa4a844e8339bdf4893f4586bed9899932b1275c678"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2862,
+			"sha256": "b66dc8d349692f8f1f79fd5d2662d0e3fe1a068b6c085f7a4ccec7d7c876fff1"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "5b987b0209c6b7a3ef82b11b3d734242fc976f3cc04b872c3e203b2a8c45998b"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "baa25bc5ae171ea7fdd85fd339005ee3caed2a122d6c68d7c67dbc1657716f6a"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1075,
+			"sha256": "f24874f54f44bd7dbf08a9c4ac436835f5ffcc362eb64373b29cbb6bf8174a59"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1474985,
+			"sha256": "881830e1b24ae132879128410af4d44bea9dddf0de7886afcf10685e7c1f911f"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 133914,
+			"sha256": "ab64fa5b00bc4ee50858d85ef945181ebb48174f42472dbeebc06344a15fa28a"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6736,
+			"sha256": "658076c18db7d0ed0c145327dbd52de6219d2540f2c4ac5652556206a300d70e"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2943,
+			"sha256": "88d116303360089cd8117fbee0156d0e6b58bf79e79a9ceb30654167daef3b9e"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "11e2505e4b65dbf3deace2dcaf6546a9293ae9019743c0e608ebcb603159fc7e"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "04c5dd36f41b8a48ee6a13e3899b78a1ecd586dea033dbb08af43e297e03dfaa"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1075,
+			"sha256": "b73c5f820cfe37c2c64b73d5ef456e8c3d0f95518df893c863df8c2bd3420f51"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5390,
+			"sha256": "0acec6b4d1f884fef8587492b40ade81c465f52efb44fb91170b7c18120b5d0c"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1394,
+			"sha256": "6e64256dfcf40da97dd62fe1c7fed58222868fb66020388292d94c343d9891c4"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "9073f94d0b228f272eb07c5509ffeaf91596707c39504a0c0cce1a5d3c5db6bc"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2551,
+			"sha256": "083dfb11b4e570b80f08b9cdce2015cefcc1b164880a802e45b830c907ca4337"
+		},
+		{
+			"path": "/textures/shrike/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3544,
+			"sha256": "39668fde5e9e46ba5726644603f2698af4bf57aa99823f9dab58e30aefb3962d"
+		}
+	]
+}

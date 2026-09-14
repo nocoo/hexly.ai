@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "uptime-kuma-skill",
+	"version": "1.0.0",
+	"root": "/textures/uptime-kuma-skill/v1.0.0",
+	"canonical": "https://hexly.ai/projects/uptime-kuma-skill#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/uptime-kuma-skill/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Clinical paper", "zh": "听诊纸面" },
+		"description": {
+			"en": "Pressed cellulose examination-paper fibers, two incomplete soft diaphragm-like rings and a short sparse baseline indentation.",
+			"zh": "压实纤维纸与两道不完整听诊弧呼应监控诊断，以安静材质表达观察，不伪造健康读数。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/uptime-kuma-skill.png",
+		"sha256": "c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5",
+		"rgbaSha256": "72f0aead1904780212ccd7e1cc3959a02be8d84058d9c10e33cb2d65e5306b65",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 271935,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "833f2ed1-2eed-4f40-ad4d-852f4558bb2f",
+			"source": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/uptime-kuma-skill/v1.0.0/source-light-request.json",
+			"response": "/textures/uptime-kuma-skill/v1.0.0/source-light-response.json",
+			"prompt": "/textures/uptime-kuma-skill/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/uptime-kuma-skill/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/uptime-kuma-skill/v1.0.0/texture-light.png",
+				"sha256": "2e9f549272eeccbd2d33c6d967133a87a8e43bbf891c15c3113f598b868cc93c",
+				"bytes": 1812281,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1231a963-4d88-4ad4-9bc7-3864f54e10e7",
+			"source": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/uptime-kuma-skill/v1.0.0/source-dark-request.json",
+			"response": "/textures/uptime-kuma-skill/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/uptime-kuma-skill/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/uptime-kuma-skill/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/uptime-kuma-skill/v1.0.0/texture-dark.png",
+				"sha256": "912533f8d82c19cf0dfea8bc1e1e530a1fbc9fd9235884f4586faeb90a053909",
+				"bytes": 1829853,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1812281,
+			"sha256": "2e9f549272eeccbd2d33c6d967133a87a8e43bbf891c15c3113f598b868cc93c"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 271350,
+			"sha256": "b783476289cc1142b3a4c12c73dae7032679b0025360bd8c432609c1fb76eae5"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8104,
+			"sha256": "1d1435d0045ecb74d18c3acf44d246186061930bb36be04652c39a849aea8ed6"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2740,
+			"sha256": "4dbb6f5f29096c8e02505982783215cdcc6bc46b512213ff6f93617d34156f4e"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "34abc1d8f31f11653cce569ae8784d5b709be4832a0791e2bd56baa50345607b"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "b37c066caf9a5cf0df7c3c3f4aea9f96e5ba0341e857efecfb7952bcec264987"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1078,
+			"sha256": "6fcf20c956931cbf2232b8895638f9f5e8df9d263bb05d6037bb72a1da70ede2"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1829853,
+			"sha256": "912533f8d82c19cf0dfea8bc1e1e530a1fbc9fd9235884f4586faeb90a053909"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 279196,
+			"sha256": "b2e842bbb4b7604afaedbdac91ee331cb32105f8be313308b57e4391c521e5ea"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8332,
+			"sha256": "c2df0f2eb9128c4d8718b7a0d15a20897cd7f796e8a0429abc4564e63814a4aa"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2816,
+			"sha256": "0a765679263bc04258f817e3308836e50c0aeea0766e9fbc05997c6cee4874c0"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "6c6c0abee3b4f263a09f29017556c088e9475e8af49704b3f0f90b88a4ef0dc2"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "037234b41aef530e5ead03f2d1d3343c3a1173cb1d07efe35b089eddebeae83f"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1078,
+			"sha256": "c964ae05ca7f3766a6c3fd9bda7ab97249d3f435a26ce7a967549143abd43ea2"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5305,
+			"sha256": "e2689aa67f4c0ce8a9e07aafe064fa0510fcad1ee56e2b4f5a8ccea4ca5e7b1b"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1362,
+			"sha256": "c77d434583f5348259f46809d842e9d08ac0a46f8231d5ea77abcf6fb7b83c8f"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1770,
+			"sha256": "d5e3ed409e07bb20af2b0ac00dd6a6e02340ff44651eddd8b654ca75f60ba63b"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2636,
+			"sha256": "8da3a5041231f4e19c21529a95e391c5937c9ee07feafab13033382fa83d933f"
+		},
+		{
+			"path": "/textures/uptime-kuma-skill/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3701,
+			"sha256": "590fa773d05aafee24181bd3e76371a48f667e3510e69d49e245893a4797faad"
+		}
+	]
+}

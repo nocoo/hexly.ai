@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "codo",
+	"version": "1.0.0",
+	"root": "/textures/codo/v1.0.0",
+	"canonical": "https://hexly.ai/projects/codo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/codo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A flower within reach", "zh": "近在喙边" },
+		"description": {
+			"en": "Slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta.",
+			"zh": "鼠尾草长叶与金银花弯枝向上伸展，仅用两枚低饱和筒状小花回应蜂鸟取食的瞬间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 1902979,
+		"source": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/codo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "80692d289d0160104fe7251fe0b0ff391301b09da9cbe9b3d39216329aeeba40"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c246ffc2-e4a3-4eae-b81a-0a33480ec7fd",
+			"source": "artwork/brands/codo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/codo/v1.0.0/source-light-request.json",
+			"response": "/textures/codo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/codo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/codo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/codo/v1.0.0/texture-light.png",
+				"sha256": "cc22400331c8c5dd8c4134bd5dc0635eede087e6b9a8674a917141d09687c404",
+				"bytes": 1608324,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b141fa35-64af-4a37-b27a-78f856523e43",
+			"source": "artwork/brands/codo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/codo/v1.0.0/source-dark-request.json",
+			"response": "/textures/codo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/codo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/codo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/codo/v1.0.0/texture-dark.png",
+				"sha256": "6d75f1b889e82fc7f42f06636b0322649be15eaa267d7caefcdb8fdbf40d94ee",
+				"bytes": 1398604,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/codo/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1608324,
+			"sha256": "cc22400331c8c5dd8c4134bd5dc0635eede087e6b9a8674a917141d09687c404"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 177946,
+			"sha256": "cc14e877aa483d52aefcb52f0b915ca9f1f391ae2f915db8aacbe3dc5f143158"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9042,
+			"sha256": "9e29a975186d18a4b2fe988e53ea0ce0462c702ff74197300466afd629f1d381"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2873,
+			"sha256": "a727413e5eebb13f7782937d4d68d3ece82984206529f659dfde1c49ddff2ce2"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "07d779bc89d4f1fd1e9108aa2f786dd1a2bc2dcafb9d6627af5064d65601d230"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "fabeb1248d9c254aaa12b2721791344e2e7e8a8779dd0b8ad9dbedd7cc2b8384"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1069,
+			"sha256": "01f6701fe009b164b5892a930c23e7aa425b68b092c37970ff4f591629eb79c2"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1398604,
+			"sha256": "6d75f1b889e82fc7f42f06636b0322649be15eaa267d7caefcdb8fdbf40d94ee"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 96948,
+			"sha256": "08cc6e6c6a38eeb1b999b5efc79d509b73382495dea7509f9e32f6d0eaf1cdad"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6934,
+			"sha256": "ebe32f7e1e8152c9fb9f39abe5f0677cf33625548521c1aabb689081b9e48354"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2954,
+			"sha256": "873792dae46d2658483d788ca58ad57ba6da51c7b13342fb0eb3873d13121fa0"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "b2afd566430c97a8d04c6090e22dc290a3422ecef7d09fdad4586cc1a402b26c"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "2174871514cca36c2c929a07544b22e3a47e39b058e4db7fb0ff2523bb28065b"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1101,
+			"sha256": "27423d2ab06c1b0ca77867626e84a7cd1c6bf85394e5ab3a30e1bfa2468e890a"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5404,
+			"sha256": "0fa2b260550e3b8be366f593b04913bd4a1ca8a9a5abb9560cf37afdd25f5d4f"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1436,
+			"sha256": "f1b41e27de2f593fcb4b81c928112c097830e60a80cc5da656900457868525ba"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "06ba393fc94101fc6ed11f3550f9eb2f4f947cdda5882d0a47a014f85e69d2ac"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2542,
+			"sha256": "4fa8509f551c990d20344892ff77d661add666ebeb8723ba98b6fbe1a9c25286"
+		},
+		{
+			"path": "/textures/codo/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3521,
+			"sha256": "d4ec47585f14f956d5b502c27c0f61b3dfd15c050060fa51eda76739ed44698c"
+		}
+	]
+}

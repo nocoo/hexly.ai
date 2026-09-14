@@ -1,0 +1,122 @@
+{
+	"project": "gecko",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "A warm stone garden", "zh": "暖石叶隙" },
+		"motif": "A plausible warm dry garden for an unspecified sandstone-colored gecko: small fleshy stonecrop leaves on branching stems, narrow aloe-like leaf tips and sparse dry grass. Keep the succulent grouping irregular and open, without symmetrical rosettes or literal stones as objects.",
+		"description": {
+			"en": "Small fleshy stonecrop leaves on branching stems, narrow aloe-like leaf tips and sparse dry grass.",
+			"zh": "景天小叶、细窄肉质叶尖与干草从暖石边的缝隙生长，呼应壁虎亲近地面的生活环境。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A little perspective on your screen time, with a Mac tracker and a synced dashboard.",
+			"zh": "用 Mac 时间追踪器和同步仪表盘，看看自己的时间花在了哪里。"
+		},
+		"purpose": {
+			"en": "Record app and window usage on a Mac, review daily activity in a synced web dashboard, and optionally generate an AI-assisted daily review.",
+			"zh": "记录 Mac 上的应用和窗口使用时间，在同步后的 Web 控制台回看每日活动，并按需生成 AI 每日回顾。"
+		},
+		"source": "src/data/projects/gecko.json",
+		"inspectedRevision": "f259be7fe740ce260c9257e2870b57dec8d9e7b3"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/gecko.png",
+		"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+		"rgbaSha256": "b406b0ca8fdb6f42efd992039159ee19245cedff52b8f72d2216a79ca2db68c3",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2799098,
+		"source": "https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/gecko/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5a3c2287c42d49d95fc352faa67ad9fdf9d2fac3ef39073b1657e5e8962c7229"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e78e4e03-595c-4ddc-8534-719e100777f0",
+			"source": "artwork/brands/gecko/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/gecko/v1.0.0/source-light-request.json",
+			"response": "/textures/gecko/v1.0.0/source-light-response.json",
+			"prompt": "/textures/gecko/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/gecko/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/gecko/v1.0.0/texture-light.png",
+				"sha256": "e70270e38fcb8481ea9c49a79a23b2b18b62f1919719270ef6bb69450a5b7de3",
+				"bytes": 1689309,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "56bcbdee-fe88-4cc4-bd9b-6237e345b3a4",
+			"source": "artwork/brands/gecko/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/gecko/v1.0.0/source-dark-request.json",
+			"response": "/textures/gecko/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/gecko/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/gecko/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/gecko/v1.0.0/texture-dark.png",
+				"sha256": "e3320414834ad2ca528adf8d1a4719cd7898fb72b1da7873a851e05ddd27162c",
+				"bytes": 1480967,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.36
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.780231186937956,
+		"darkMinimum": 4.840339693274381,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:23:55.155Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

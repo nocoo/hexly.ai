@@ -1,0 +1,20 @@
+{
+	"recordedAt": "2026-09-14T04:00:01.475423+00:00",
+	"event": "Observed rate limiting after the initial explicit bounded batch",
+	"initialRequests": 148,
+	"nativeSuccesses": 7,
+	"http429WithoutOutput": 141,
+	"initialRecorder": "artwork/brand-textures/2026-09-14/generation-recorder-initial.py",
+	"initialRecorderSha256": "c6b8744ec1b351520fcaf14c8bd4e7b2ab0b72accb62087d5b0d0c0f2a8fc0c2",
+	"oldResponsesModified": false,
+	"providerBillingOutcomeAsserted": false,
+	"newAttemptPolicy": "Explicit attempt 2 for the 141 missing themes only; no automatic re-request of a failed/unknown attempt.",
+	"pacing": {
+		"minimumSecondsBetweenStarts": 18,
+		"maximumConcurrency": 2,
+		"stopSchedulingOn429": true
+	},
+	"modelChanged": false,
+	"model": "gpt-image-2.5-flare",
+	"note": "The exact provider quota was not returned in the initially archived fields; pacing is conservative, not a claim about the account limit."
+}

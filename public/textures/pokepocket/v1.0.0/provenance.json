@@ -1,0 +1,122 @@
+{
+	"project": "pokepocket",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "character",
+		"language": "product-material",
+		"name": { "en": "A pocket field journal", "zh": "口袋行记" },
+		"motif": "A game explorer's well-made field-journal cover: tightly woven cotton canvas, shallow folded map creases, a few stitched pocket-edge impressions and one small quiet terracotta registration tab. Material surface only; no characters, animals, game logos, Poké Balls, readable maps or text.",
+		"description": {
+			"en": "Tightly woven cotton canvas, shallow folded map creases, a few stitched pocket-edge impressions and one small quiet terracotta registration tab.",
+			"zh": "细密棉帆布上的折图压痕与口袋缝线，呼应随身收藏和探索；不生成角色或游戏商标。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "GB / GBC / GBA collection with browser play and local saves",
+			"zh": "GB / GBC / GBA 游戏收藏盘，支持浏览器游玩与本地存档。"
+		},
+		"purpose": {
+			"en": "Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection while keeping controls and progress for each ROM.",
+			"zh": "在浏览器卡带收藏盘中游玩自备的 GB、GBC、GBA 宝可梦，管理操作设置和每枚 ROM 的进度。"
+		},
+		"source": "src/data/projects/pokepocket.json",
+		"inspectedRevision": "019798f1c8fae7a6e7c0beb2368279c9980c7188"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+		"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+		"rgbaSha256": "76708e8fe45e7fb0e0d2bbf96e61002ca6a4246b88b3a52a309192a69ff7540d",
+		"width": 960,
+		"height": 960,
+		"bytes": 547985,
+		"source": "https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pokepocket/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d9650e21522e1441e9eb2c790ba56169a8691af52ef9f137455cae6a790ff1b6"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e40303c3-ffca-45de-be54-9c3ba0e52fd4",
+			"source": "artwork/brands/pokepocket/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/pokepocket/v1.0.0/source-light-request.json",
+			"response": "/textures/pokepocket/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pokepocket/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pokepocket/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pokepocket/v1.0.0/texture-light.png",
+				"sha256": "d60b52d4c6d11f83df8144ccb9e9e0b6bc8965da9f6798ac48e3f9898f4ef0f4",
+				"bytes": 2182000,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "cadecc77-0ea1-4187-8c59-1f01f83a2ad8",
+			"source": "artwork/brands/pokepocket/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/pokepocket/v1.0.0/source-dark-request.json",
+			"response": "/textures/pokepocket/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pokepocket/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pokepocket/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pokepocket/v1.0.0/texture-dark.png",
+				"sha256": "b225cc629f0b3762bc9cf3fb1fc2357da480f4e302c4f37be30131146903784a",
+				"bytes": 1907539,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.779927464282792,
+		"darkMinimum": 6.053442968144228,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:24:09.820Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

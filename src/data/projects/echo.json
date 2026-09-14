@@ -95,10 +95,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A direction found",
-					"zh": "找到方向的一刻"
-				},
+				"title": { "en": "A direction found", "zh": "找到方向的一刻" },
 				"description": {
 					"en": "A red-and-ivory needle crosses a deep navy compass face. The close brass hanging ring and complete circular instrument share one gentle diagonal.",
 					"zh": "红白指针划过深蓝罗盘，紧靠的黄铜提环与完整仪器沿同一条温和斜线组织。"
@@ -106,10 +103,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Brass and navy glass",
-					"zh": "黄铜与深蓝表盘"
-				},
+				"title": { "en": "Brass and navy glass", "zh": "黄铜与深蓝表盘" },
 				"description": {
 					"en": "Softly brushed brass, a controlled glass reflection and engraved direction marks retain physical depth. The hanging-ring opening is truly transparent.",
 					"zh": "柔和拉丝黄铜、克制玻璃反光和方向刻痕保留拟物深度，提环镂空保持真实透明。"
@@ -117,10 +111,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Survey bearings",
-					"zh": "测绘方位"
-				},
+				"title": { "en": "Survey bearings", "zh": "测绘方位" },
 				"description": {
 					"en": "Latitude arcs, a sparse meridian fan and short bearing marks in pale harbor-blue paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "浅蓝纸面上的经纬弧线与偏移导航刻度，呼应 IP 位置查询。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -131,46 +122,31 @@
 			{
 				"color": "#bfd4d7",
 				"role": "background",
-				"label": {
-					"en": "Survey bearings",
-					"zh": "测绘方位"
-				},
+				"label": { "en": "Survey bearings", "zh": "测绘方位" },
 				"source": "Adopted Echo presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#192d3e",
 				"role": "primary",
-				"label": {
-					"en": "Navy dial",
-					"zh": "深蓝表盘"
-				},
+				"label": { "en": "Navy dial", "zh": "深蓝表盘" },
 				"source": "Native echo bce159d3b8a5, sampled sRGB pixel (1080, 1178); artwork/logo-family/echo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#b19254",
 				"role": "accent",
-				"label": {
-					"en": "Brass rim",
-					"zh": "黄铜外缘"
-				},
+				"label": { "en": "Brass rim", "zh": "黄铜外缘" },
 				"source": "Native echo bce159d3b8a5, sampled sRGB pixel (272, 960); artwork/logo-family/echo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#a42f1e",
 				"role": "accent",
-				"label": {
-					"en": "Red needle",
-					"zh": "红色指针"
-				},
+				"label": { "en": "Red needle", "zh": "红色指针" },
 				"source": "Native echo bce159d3b8a5, sampled sRGB pixel (1294, 585); artwork/logo-family/echo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e2cfa2",
 				"role": "accent",
-				"label": {
-					"en": "Ivory needle",
-					"zh": "象牙色指针"
-				},
+				"label": { "en": "Ivory needle", "zh": "象牙色指针" },
 				"source": "Native echo bce159d3b8a5, sampled sRGB pixel (952, 978); artwork/logo-family/echo/2026-09-07-01/palette.json"
 			}
 		],
@@ -202,31 +178,19 @@
 			},
 			{
 				"name": "Hono",
-				"role": {
-					"en": "IP lookup HTTP routes",
-					"zh": "IP 查询 HTTP 路由"
-				}
+				"role": { "en": "IP lookup HTTP routes", "zh": "IP 查询 HTTP 路由" }
 			},
 			{
 				"name": "Vercel",
-				"role": {
-					"en": "IP service hosting",
-					"zh": "IP 服务托管"
-				}
+				"role": { "en": "IP service hosting", "zh": "IP 服务托管" }
 			},
 			{
 				"name": "Go",
-				"role": {
-					"en": "Authoritative DNS probe",
-					"zh": "权威 DNS 探针"
-				}
+				"role": { "en": "Authoritative DNS probe", "zh": "权威 DNS 探针" }
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "DNS result collection API",
-					"zh": "DNS 结果收集 API"
-				}
+				"role": { "en": "DNS result collection API", "zh": "DNS 结果收集 API" }
 			},
 			{
 				"name": "Cloudflare KV",
@@ -269,15 +233,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 815,
-			"height": 416
-		},
+		"lockup": { "width": 815, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Survey bearings",
-				"zh": "勘测方位"
-			},
+			"name": { "en": "Survey bearings", "zh": "勘测方位" },
 			"description": {
 				"en": "Latitude arcs, a sparse meridian fan and short bearing marks extend the compass’s sense of direction.",
 				"zh": "纬线弧、稀疏经线与短方位刻度，将罗盘的方向感延伸到画面之外。"
@@ -302,35 +260,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥60px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 60px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/echo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Survey linen", "zh": "测绘亚麻" },
+		"description": {
+			"en": "Tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge.",
+			"zh": "亚麻衬纸上的局部方位弧与开放定位线，回应随身罗盘，也把查找位置变成安静的阅读过程。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
 	}
 }

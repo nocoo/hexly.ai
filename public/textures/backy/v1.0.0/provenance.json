@@ -1,0 +1,122 @@
+{
+	"project": "backy",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Shelter in the scrub", "zh": "灌丛小憩" },
+		"motif": "A plausible dry scrub environment for an unspecified small tortoise: broad ribbed plantain leaves, rounded low mallow leaves and a few dry grass seeds. A compact ground-level cluster rests along the lower edge. No shell pattern, succulent rosettes or flowers.",
+		"description": {
+			"en": "Broad ribbed plantain leaves, rounded low mallow leaves and a few dry grass seeds.",
+			"zh": "车前叶的筋脉、低矮锦葵叶和干草籽贴近地面，给小陆龟留下一片有遮蔽的灌丛。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A dependable home for AI-agent backups. Store, inspect, and restore with confidence.",
+			"zh": "给 AI 智能体的备份服务，集中接收、存储、预览和恢复数据。"
+		},
+		"purpose": {
+			"en": "Collect application backups, inspect content and history by project, and retrieve original files.",
+			"zh": "集中接收应用备份，按项目查看内容、追踪记录，并取回原始文件。"
+		},
+		"source": "src/data/projects/backy.json",
+		"inspectedRevision": "5b23349c94ac6778f2242a857386e8b01dac4f1c"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/backy-family-2026-09-07-01-01.png",
+		"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+		"rgbaSha256": "49f884dafacfb6da547e5c951c5ee9fe475828902dcb703aa26461125e2238bd",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2447370,
+		"source": "https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/backy/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "029e181db0592f4696a9cd0f7f8a79d64cb302f59e6930341facad04dd77904f"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5ddaf058-923f-4678-941a-9109a8e78f7e",
+			"source": "artwork/brands/backy/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/backy/v1.0.0/source-light-request.json",
+			"response": "/textures/backy/v1.0.0/source-light-response.json",
+			"prompt": "/textures/backy/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/backy/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/backy/v1.0.0/texture-light.png",
+				"sha256": "41fad13a6b0eab998f49853135b0e21733c48dc2bd832bf19be94558cd30c5e2",
+				"bytes": 1641808,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9257c04d-1618-4969-b1d4-09a07c1e8e16",
+			"source": "artwork/brands/backy/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/backy/v1.0.0/source-dark-request.json",
+			"response": "/textures/backy/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/backy/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/backy/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/backy/v1.0.0/texture-dark.png",
+				"sha256": "b1795a204d37dfe969fee8e463de6fa360dc9e376aac4a3784cc6d033ff06a71",
+				"bytes": 1495404,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.33
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.048448766111707,
+		"darkMinimum": 4.761882301071387,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:23:46.107Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

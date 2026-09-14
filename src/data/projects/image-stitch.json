@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/image-stitch/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A continuous mount", "zh": "接续的裱面" },
+		"description": {
+			"en": "Matte linen-backed archival paper, gently stepped overlapping mount seams and sparse paired alignment corners.",
+			"zh": "亚麻衬裱纸的搭接边与成对对齐角把长图的连续关系变成材质，完整照片仍由原项目呈现。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.43
+	}
 }

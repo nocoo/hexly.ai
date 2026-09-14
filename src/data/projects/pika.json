@@ -107,10 +107,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "Keep the charge",
-					"zh": "保留原来的动势"
-				},
+				"title": { "en": "Keep the charge", "zh": "保留原来的动势" },
 				"description": {
 					"en": "The original forward leap, ears, tail and lightning fragments remain exactly where they were. No source pixels, placement or colors are changed.",
 					"zh": "原来的前跃动作、耳朵、尾巴和闪电碎片全部保留原位，主体像素、位置与颜色均未改变。"
@@ -118,10 +115,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Original yellow facets",
-					"zh": "原有的黄色切面"
-				},
+				"title": { "en": "Original yellow facets", "zh": "原有的黄色切面" },
 				"description": {
 					"en": "Golden-yellow and lemon facets retain their native contrast and small colored sparks. This pass adds presentation layers without a generation request.",
 					"zh": "金黄与柠檬黄色面保持原有对比和小块彩色电光。本轮只添加展示层，没有调用生图模型。"
@@ -129,10 +123,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Charge steps",
-					"zh": "充电阶梯"
-				},
+				"title": { "en": "Charge steps", "zh": "充电阶梯" },
 				"description": {
 					"en": "Large offset zigzag steps cut through a deeper olive-gold field. Their low tonal contrast supports the original lightning gesture.",
 					"zh": "大块错位折线阶梯穿过较深的橄榄金色底纹，用克制的明暗层次承托原有闪电动作。"
@@ -143,55 +134,37 @@
 			{
 				"color": "#918451",
 				"role": "background",
-				"label": {
-					"en": "Charge steps",
-					"zh": "充电阶梯"
-				},
+				"label": { "en": "Charge steps", "zh": "充电阶梯" },
 				"source": "Selected Pika presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#fdc904",
 				"role": "primary",
-				"label": {
-					"en": "Golden yellow",
-					"zh": "金黄色"
-				},
+				"label": { "en": "Golden yellow", "zh": "金黄色" },
 				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#fdc904",
 				"role": "accent",
-				"label": {
-					"en": "Lemon",
-					"zh": "柠檬黄"
-				},
+				"label": { "en": "Lemon", "zh": "柠檬黄" },
 				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#fdc904",
 				"role": "accent",
-				"label": {
-					"en": "Charcoal",
-					"zh": "炭灰色"
-				},
+				"label": { "en": "Charcoal", "zh": "炭灰色" },
 				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#fdc904",
 				"role": "accent",
-				"label": {
-					"en": "Coral",
-					"zh": "珊瑚色"
-				},
+				"label": { "en": "Coral", "zh": "珊瑚色" },
 				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#fdc904",
 				"role": "accent",
-				"label": {
-					"en": "Electric blue",
-					"zh": "电光蓝"
-				},
+				"label": { "en": "Electric blue", "zh": "电光蓝" },
 				"source": "Native pika 2dc5121317e8, sampled sRGB pixel (1681, 1223); artwork/logo-family/pika/2026-09-07-01/palette.json"
 			}
 		],
@@ -230,10 +203,7 @@
 			},
 			{
 				"name": "Vite",
-				"role": {
-					"en": "SPA development and builds",
-					"zh": "SPA 开发与构建"
-				}
+				"role": { "en": "SPA development and builds", "zh": "SPA 开发与构建" }
 			},
 			{
 				"name": "React",
@@ -272,10 +242,7 @@
 			},
 			{
 				"name": "Cloudflare Access",
-				"role": {
-					"en": "Browser authentication",
-					"zh": "浏览器身份认证"
-				}
+				"role": { "en": "Browser authentication", "zh": "浏览器身份认证" }
 			}
 		],
 		"verified": {
@@ -321,15 +288,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 760,
-			"height": 416
-		},
+		"lockup": { "width": 760, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Charge steps",
-				"zh": "闪电阶梯"
-			},
+			"name": { "en": "Charge steps", "zh": "闪电阶梯" },
 			"description": {
 				"en": "Broad angular charge paths and interrupted zigzags follow the energy of the original lightning gesture.",
 				"zh": "宽阔的折线与断续锯齿顺着闪电的方向展开，保留 Pika 原有的灵动节奏。"
@@ -354,35 +315,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥51px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 51px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/pika/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A woodland pause", "zh": "林间片刻" },
+		"description": {
+			"en": "Soft fern tips, hazel leaves and a few moss-like low leaf sprays.",
+			"zh": "榛树叶、蕨尖与低矮苔叶围出林间空地，呼应现有虚构角色的活力，不把它误认成真实鼠兔。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
 	}
 }

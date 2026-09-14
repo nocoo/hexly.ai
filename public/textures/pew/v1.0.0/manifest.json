@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "pew",
+	"version": "1.0.0",
+	"root": "/textures/pew/v1.0.0",
+	"canonical": "https://hexly.ai/projects/pew#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/pew/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Savanna in stripes", "zh": "草原条序" },
+		"description": {
+			"en": "Upright bunchgrass blades and fine oat-like seed heads bent in alternating directions, with one sparse acacia leaflet spray.",
+			"zh": "疏密相间的草叶和细小穗头延续斑马的节奏，一枝金合欢小叶留出开阔草原的空气。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pew-2026-09-07.png",
+		"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+		"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3043802,
+		"source": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pew/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "3c887b4744917d7a6e943011c6dc8776e48b25c878cdafd271060fbf5e5f9ec1"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2c32b661-78ab-49f6-b64d-aa55535d689c",
+			"source": "artwork/brands/pew/texture-studies/2026-09-14-flare-rollout-01/light",
+			"request": "/textures/pew/v1.0.0/source-light-request.json",
+			"response": "/textures/pew/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pew/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pew/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pew/v1.0.0/texture-light.png",
+				"sha256": "5215d7d1b1ac1589810d673b1c86483ee1e9ce15b2a5a962dcd74dd5b26e38e7",
+				"bytes": 1587822,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "420a44b0-e18b-4095-8f80-afbd459a5a79",
+			"source": "artwork/brands/pew/texture-studies/2026-09-14-flare-rollout-01/dark",
+			"request": "/textures/pew/v1.0.0/source-dark-request.json",
+			"response": "/textures/pew/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pew/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pew/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pew/v1.0.0/texture-dark.png",
+				"sha256": "bb3401da68d49c008a2e56dadf662ad8fe95eb27c975615e3352d8a5d33319ef",
+				"bytes": 1401912,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/pew/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1587822,
+			"sha256": "5215d7d1b1ac1589810d673b1c86483ee1e9ce15b2a5a962dcd74dd5b26e38e7"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 158586,
+			"sha256": "1c9fe35d4353a95d744c5de4003de8b11c21ef90200198012927333ffb75d6d3"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10354,
+			"sha256": "d0932dee2c63e9ece6f861d857631101fd2c49899a26a752db4181df61eabeb7"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2865,
+			"sha256": "1aac2ef7696f4cfd34a3ea1c9f799d8be60f0d2a465523247bf48e8b943c5f46"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "3b532e17b2eea54892e7c1df2b5320bd12dc25140868ffdcfec667d507367021"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 820,
+			"sha256": "119bbd7bcc478ab357597f3c687fc3747ce0c97105e1c2dbfe0f8d1d24982ea6"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1068,
+			"sha256": "c0fc8a0cc4922a97e5733e998315c2429993f5a21aac27c9545b3d5147638124"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1401912,
+			"sha256": "bb3401da68d49c008a2e56dadf662ad8fe95eb27c975615e3352d8a5d33319ef"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 101700,
+			"sha256": "5877d098d041a64894ce2f28f0b83d2b0df6a845f037bd4b042b367f9de1e353"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8712,
+			"sha256": "4412e17feb06abe102ff80d82c05d2ca48f71f893c9f353415ced33970d29fcb"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2946,
+			"sha256": "8c5587b4fb41e3a21b1b7c520a53a6501d73dcd8a961592456b37b78a3ae33af"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "b853c39a42c1e9191a94aa755ee4a390a8d372e904dc544441a7486db5051fe3"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 820,
+			"sha256": "58bec0a863594c716a9303707edcde8b0faed8e28b786bfca2fbe903368ce55c"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1068,
+			"sha256": "1b549013d07b9c7fe60ad47371f8614bc1a497dab6923dd7aede72d023af2bba"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5293,
+			"sha256": "2e683aa90f5115715eb6d06b8126d6f184675c4423273cf8f5e0726ea23a8f96"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1364,
+			"sha256": "a1690078204dbb1537f789bd856694db441e1eb62d9cdca5ba02656bc2682d0e"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "bb670ca9beebcd067653f2db7f7b8c949eea0925d3c40f6516d06fe8e032c607"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2546,
+			"sha256": "209da0e59e7e89a294200668ad9a94e545938f71f10d57faf5368d89281891e2"
+		},
+		{
+			"path": "/textures/pew/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3510,
+			"sha256": "a534774fa5c218395ae0b461bee2745c2bf6d0c10a589482741994d91e74282a"
+		}
+	]
+}

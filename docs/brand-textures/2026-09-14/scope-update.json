@@ -1,0 +1,387 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-14T05:15:17.545780+00:00",
+	"ownerInstructions": [
+		"archived项目无须制作。已经完成的就先这样",
+		"这个记录claude.md，各种整理不针对archived项目。对这些归档项目，仅做基础的支持"
+	],
+	"supersedes": "Only the scope/planned totals of inventory.json; its frozen bytes, original identity evidence and prior generation records remain unchanged.",
+	"frozenInventory": {
+		"path": "docs/brand-textures/2026-09-14/inventory.json",
+		"sha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8"
+	},
+	"scheduler": {
+		"oldPid": 54925,
+		"state": "stopped",
+		"method": "Suspended old scheduler, verified it had no in-flight children, then terminated it. No archived generation is resumed.",
+		"cutoffSource": "Actual files inspected after the scheduling stop; completed means both themes already accepted with selections."
+	},
+	"activeProjectIds": [
+		"frogie",
+		"pew",
+		"firefly",
+		"bogo",
+		"steed",
+		"ellie",
+		"neo",
+		"giraffe",
+		"backy",
+		"otter",
+		"gecko",
+		"dove",
+		"pika",
+		"raven",
+		"bat",
+		"lyre",
+		"pokepocket",
+		"dogfight",
+		"gaga",
+		"pew-game",
+		"rooster",
+		"snaky",
+		"showtime",
+		"infospace",
+		"signoff-now",
+		"unseal",
+		"flow",
+		"codo",
+		"arena",
+		"owl",
+		"xray",
+		"r2shot",
+		"shrike",
+		"hooky",
+		"dotty",
+		"wooly",
+		"matrix",
+		"basalt",
+		"surety",
+		"life-ai",
+		"echo",
+		"deca",
+		"runner",
+		"zhe",
+		"geekhub",
+		"noheir",
+		"ipsafe",
+		"clip",
+		"fundly",
+		"dreamro",
+		"meowth",
+		"coffee",
+		"hermes-on-herdr",
+		"ocelot"
+	],
+	"retainedUnchanged": [
+		"pi-agent-policy"
+	],
+	"retainedArchivedProjectIds": [
+		"ccbackup",
+		"uptime-kuma-skill",
+		"microsoft-teams-send-as-workflow",
+		"image-stitch",
+		"skill-faster-whisper",
+		"skill-task-notifier",
+		"mcp-work-history",
+		"mcp-make-sound",
+		"jsinst"
+	],
+	"basicSupportOnlyArchivedProjectIds": [
+		"infoviz",
+		"infoviz-builder",
+		"nodehub",
+		"huran-cc",
+		"doc-doctor-com",
+		"nodeviz",
+		"express-spa",
+		"discuz-recovery",
+		"feedmaid",
+		"infoviz-ios",
+		"node-image-uploader"
+	],
+	"expectedNewPackCount": 63,
+	"archivedEvidenceAtCutoff": [
+		{
+			"project": "ccbackup",
+			"run": "artwork/brands/ccbackup/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T04:53:37.387837+00:00",
+			"sha256": "8159c7a410609281e238682935f04fae3059d6bacf9542597ecac6d15d0bd8db",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "ccbackup",
+			"run": "artwork/brands/ccbackup/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T04:53:06.092264+00:00",
+			"sha256": "ac90db6c103e91d77d6e3c488ea2baedd5359c0a0d10c243e313acf8adf90c1c",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "uptime-kuma-skill",
+			"run": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T04:57:09.677370+00:00",
+			"sha256": "912533f8d82c19cf0dfea8bc1e1e530a1fbc9fd9235884f4586faeb90a053909",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "uptime-kuma-skill",
+			"run": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T04:56:44.513807+00:00",
+			"sha256": "2e9f549272eeccbd2d33c6d967133a87a8e43bbf891c15c3113f598b868cc93c",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "microsoft-teams-send-as-workflow",
+			"run": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T04:58:20.855364+00:00",
+			"sha256": "b42b44bdd9c6bcb7d032b1566567e6d8e92bece2716f65d5e91531f72fc60e87",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "microsoft-teams-send-as-workflow",
+			"run": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T04:57:44.893112+00:00",
+			"sha256": "5b0e0f818b02d27b8704b8d53736b01a38032a43774feff9d17834f585bffbd8",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "image-stitch",
+			"run": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T04:59:30.264509+00:00",
+			"sha256": "69e1f256fb3b18a5115e13df4844984f8305580d3495e20cc8b4a85738584818",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "image-stitch",
+			"run": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T04:58:52.117576+00:00",
+			"sha256": "b6004439c99decec46fb00f3277460bf0ecb8fdc0e44f7ffcedf7a19622b6d71",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "skill-faster-whisper",
+			"run": "artwork/brands/skill-faster-whisper/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:00:41.902936+00:00",
+			"sha256": "83d37efdd15cb1b4f9d4053e8da25b906ccb031d3ff365f9cc88b2a914358e91",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "skill-faster-whisper",
+			"run": "artwork/brands/skill-faster-whisper/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:00:03.617945+00:00",
+			"sha256": "5d10373a66f6dc4c108a2b8581707c1bf316f87aa406ae8ad1898160433e9673",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "skill-task-notifier",
+			"run": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:01:49.523010+00:00",
+			"sha256": "07f518ead66b79bc125a21d47f05e14394a6a0bf982b6d3db91470a32c7ea40a",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "skill-task-notifier",
+			"run": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:01:16.498574+00:00",
+			"sha256": "83636057066174d09dca9eab5219c7f14209dc76f2fa387df79a6020197ed523",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "mcp-work-history",
+			"run": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:02:59.538687+00:00",
+			"sha256": "ced3dbe1d8e16d0ccbf9551f3f390e61f2890351f377eb40a45ad1801faa6e32",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "mcp-work-history",
+			"run": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:02:23.408289+00:00",
+			"sha256": "d2732610408973c83de9d96c46f47b2a6a25843c3c8064d95f966ff39f88f658",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "mcp-make-sound",
+			"run": "artwork/brands/mcp-make-sound/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:04:10.515920+00:00",
+			"sha256": "3ae2db8b124876da0ac7c57e0eeace2aaa63fc3d14ae09cea60d8a960fcf2b95",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "mcp-make-sound",
+			"run": "artwork/brands/mcp-make-sound/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:03:33.167803+00:00",
+			"sha256": "a8828f05c3e8a1d5ec6e2c8b22b42b9b4cad07f57101e81ee2b9d09e7b80646f",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "infoviz",
+			"run": "artwork/brands/infoviz/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:05:17.951999+00:00",
+			"sha256": "b91fe586b87e83f63f40865b2a5d5bdfdeb4d02775ddc31b8b183932730f8447",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		},
+		{
+			"project": "infoviz",
+			"run": "artwork/brands/infoviz/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:04:44.999266+00:00",
+			"sha256": "893009d80749561f78df744bed49b3308f186a47664278d96fbba1f6f55fe704",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		},
+		{
+			"project": "jsinst",
+			"run": "artwork/brands/jsinst/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:06:30.217905+00:00",
+			"sha256": "49135a3c7cc856395214b02ab4d704fc3901d12de304a98bf45c2a5489566117",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "jsinst",
+			"run": "artwork/brands/jsinst/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:05:53.156761+00:00",
+			"sha256": "f22ae82029cc77c57a42bdf11d252f614eb00efd84511eb27427a01f2eac3af6",
+			"reviewStatusAtCutoff": "approved",
+			"adopted": true
+		},
+		{
+			"project": "infoviz-builder",
+			"run": "artwork/brands/infoviz-builder/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:07:39.947851+00:00",
+			"sha256": "a675e2ecac999471bcc2512cd4bb5dbbb925fb39e61697bda49d9b4a604a1ee4",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		},
+		{
+			"project": "infoviz-builder",
+			"run": "artwork/brands/infoviz-builder/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:07:06.799155+00:00",
+			"sha256": "d11cd5ab41ea30ba6dc3047eeccf2881972f637a834bed9f46c5b89df9cf2675",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		},
+		{
+			"project": "nodehub",
+			"run": "artwork/brands/nodehub/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:08:51.002926+00:00",
+			"sha256": "d05ca2e929e54b23fa3c2ba9ba77419a98e745a64aa1de1c61c8025fe6e2e8bf",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "nodehub",
+			"run": "artwork/brands/nodehub/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:08:16.674547+00:00",
+			"sha256": "5f407323e3ab89afd9700ecce8852dc85241c0cb941166328d07f1bb796d27de",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "huran-cc",
+			"run": "artwork/brands/huran-cc/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:10:04.656247+00:00",
+			"sha256": "144396fe50265916ff45c89f3a150ebfe7dbe692ba2c9d93a8e20ddd7dba2172",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "huran-cc",
+			"run": "artwork/brands/huran-cc/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:09:25.014791+00:00",
+			"sha256": "4d04af9c6806a743b91b70387fb291b0e09033242a39358e0359e5e97943e22a",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "doc-doctor-com",
+			"run": "artwork/brands/doc-doctor-com/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:11:10.462977+00:00",
+			"sha256": "1753f6e0b44194abbb90665de8a7a3b0bf37c310fe2eacd5cb40e605596d9b81",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "doc-doctor-com",
+			"run": "artwork/brands/doc-doctor-com/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:10:34.942576+00:00",
+			"sha256": "92a83543bf35312296d6e90674130530ec254b2618f8beca7d90e5efacfc9cc9",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "nodeviz",
+			"run": "artwork/brands/nodeviz/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:12:22.403146+00:00",
+			"sha256": "01e07c58677f7286ce60ada02633eb916f2debc12b438d2ec076f7c516ca7499",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "nodeviz",
+			"run": "artwork/brands/nodeviz/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:11:51.166349+00:00",
+			"sha256": "4a099885ceec1d4765d029f5ff333c73a336bba0c4c7b1fec3311f661811092c",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "express-spa",
+			"run": "artwork/brands/express-spa/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"finishedAt": "2026-09-14T05:13:31.878454+00:00",
+			"sha256": "9d3eb58f4d0e3a63e288747c21c0d2cd857bbb14f73c447b2b279776850cc5c7",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "express-spa",
+			"run": "artwork/brands/express-spa/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"finishedAt": "2026-09-14T05:12:55.020219+00:00",
+			"sha256": "1ff5a8ed87541613001e8e5688b6fb7551d1bbe92549ffeccd5403def0771ce4",
+			"reviewStatusAtCutoff": "pending",
+			"adopted": false
+		},
+		{
+			"project": "discuz-recovery",
+			"run": "artwork/brands/discuz-recovery/texture-studies/2026-09-14-flare-rollout-01/dark",
+			"finishedAt": "2026-09-14T03:58:07.088113+00:00",
+			"sha256": "1407174788a36611a924819c11100a3fbf7a5c9a44b6b05f71e6f718af4e3c1c",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		},
+		{
+			"project": "feedmaid",
+			"run": "artwork/brands/feedmaid/texture-studies/2026-09-14-flare-rollout-01/dark",
+			"finishedAt": "2026-09-14T03:58:09.708776+00:00",
+			"sha256": "4b43c38c94b81e6bd40b34d9c6c5ae11ce693345ec46cc8cb73060b04a1b98d7",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		},
+		{
+			"project": "feedmaid",
+			"run": "artwork/brands/feedmaid/texture-studies/2026-09-14-flare-rollout-01/light",
+			"finishedAt": "2026-09-14T03:58:12.533704+00:00",
+			"sha256": "fffde6a71cd7a7559644c7c2cec29fd6420db4746af9231c322d014de2399eee",
+			"reviewStatusAtCutoff": "rejected",
+			"adopted": false
+		}
+	],
+	"futurePolicy": "All batch enrichment/redesign/asset or media creation excludes archived projects by default. Preserve existing pages, links, downloads, licenses, provenance and shared compatibility only. An explicit named archived-project exception is required for new work.",
+	"pendingOrRejectedArchivedOutputs": "Keep exact raw source, request, response and current review state. Do not adopt unapproved outputs, finish missing themes or execute prepared archived replacement prompts."
+}

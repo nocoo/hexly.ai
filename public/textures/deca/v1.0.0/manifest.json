@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "deca",
+	"version": "1.0.0",
+	"root": "/textures/deca/v1.0.0",
+	"canonical": "https://hexly.ai/projects/deca#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/deca/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Switchboard grain", "zh": "交换台肌理" },
+		"description": {
+			"en": "Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.",
+			"zh": "哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3665035,
+		"source": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/deca/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3acb7ecc-99bb-494a-8c4a-796440443f37",
+			"source": "artwork/brands/deca/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/deca/v1.0.0/source-light-request.json",
+			"response": "/textures/deca/v1.0.0/source-light-response.json",
+			"prompt": "/textures/deca/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/deca/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.0/texture-light.png",
+				"sha256": "3abf942c5b3cc16129f94c13fb7370abcb4009ecf160668ccb810de9d859bb4e",
+				"bytes": 1660800,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "43739742-beee-480a-9ea6-c16985596d94",
+			"source": "artwork/brands/deca/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/deca/v1.0.0/source-dark-request.json",
+			"response": "/textures/deca/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/deca/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/deca/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.0/texture-dark.png",
+				"sha256": "65277b6975f553e02fb0fab629181af9593a0c0261824436e4918d1157e30a2b",
+				"bytes": 1720033,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/deca/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1660800,
+			"sha256": "3abf942c5b3cc16129f94c13fb7370abcb4009ecf160668ccb810de9d859bb4e"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 196854,
+			"sha256": "929a05356c8f115c8d1bf1dd8f0f8bd95acf322fbaeba222af8075692ca8f8c5"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2998,
+			"sha256": "7d2a64b991b5955fe2628ca48e2741a2e1292d3a563dc01104d0f5fb365b46cc"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2719,
+			"sha256": "aee82e57a5d952d89c41a8f0686020e8ec26aad6e17e3ce207949edcf16c645a"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "2aec7421d12d36173d7ddd65e0a3596ee3dc79311cc69f29b8136b4a4878f7b8"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "709f951739ae20a9891bcab7c82969da846f34dbcabce3b600107133bbb87a16"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1067,
+			"sha256": "b476e3f041f2d2a222eb0037b49514ad3eecc39c3ffcababb92636bae636f8da"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1720033,
+			"sha256": "65277b6975f553e02fb0fab629181af9593a0c0261824436e4918d1157e30a2b"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 243860,
+			"sha256": "11946b87cdebbd07ab4cde63df5178116bf5d8eb09ea34f2676f19734d0d7a79"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3334,
+			"sha256": "e01a0394585db563c7c354c2ab0ed9491ca629709e4dd91e9f21bd93cd5cc725"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2795,
+			"sha256": "ef5a5e29de00f4b8e1907ef36266d2f0fdf006b7f607df9f9ef36e64f22d1f0e"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "6b6c185a8e12071805651a47c9c4a13dd7d18069c1d3a5f3473dca05b00494ce"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "4d755785a2deb35fa38501847854b886dc543afabc0a0ba9960f79ab9f746aa6"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1067,
+			"sha256": "96b7ba8434c339bae0dca6191563ba1c2db24972b55d3a2a7d35f85f7efd559e"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5402,
+			"sha256": "70cae01d5f45fd10b0e6601fdde6e0532f3aec3ef1e3da0618b4f4c2584719bc"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1419,
+			"sha256": "df24b45d6bcb376d5e6c6bd657cf4a46f6a8b08613e68d3ba8f32aa2941af573"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "3f807cc17c69f32dbad12c54fa9b5c7b3b9bf1de01a3666807cd60910c375c48"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2548,
+			"sha256": "c682ba68270f70c08d2a09fe676a7418f5e6266a0af56b07503bd651491fad2f"
+		},
+		{
+			"path": "/textures/deca/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3512,
+			"sha256": "e1bba0990eba5c075966970fc69971a13b764b862cfdbe1ea183bb0003753ec3"
+		}
+	]
+}

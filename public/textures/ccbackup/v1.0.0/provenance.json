@@ -1,0 +1,118 @@
+{
+	"project": "ccbackup",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "A place for a copy", "zh": "副本归位" },
+		"motif": "A configuration-backup storage sleeve: matte molded polymer with fine parallel ribs, shallow offset rectangular index recesses and a few precise archival tab notches. A physical analogy to the existing floppy-disk emoji, not a new logo, disk illustration, code or status indicator.",
+		"description": {
+			"en": "Matte molded polymer with fine parallel ribs, shallow offset rectangular index recesses and a few precise archival tab notches.",
+			"zh": "细肋聚合物、矩形索引凹位与档案卡槽承接软盘表情所代表的备份工作，保持现有身份不变。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Back up and restore your Claude Code configuration without the busywork.",
+			"zh": "备份与恢复 Claude Code 配置，省去重复整理的琐事。"
+		},
+		"purpose": {
+			"en": "Back up and restore your Claude Code configuration without the busywork.",
+			"zh": "备份与恢复 Claude Code 配置，省去重复整理的琐事。"
+		},
+		"source": "src/data/projects/ccbackup.json",
+		"inspectedRevision": "1fcc5e7abd926f2f34069299a40cae22191d7c8e"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/ccbackup.png",
+		"sha256": "1bb8d48c887782be257b7221e84f16579cd775a9922b5c98a2b0bd32d598f2fa",
+		"rgbaSha256": "de8f7f9a56f80f4732fe5f70935517b66144d4999baa80d0be7c6193973d7cfc",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 200904,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "11c1ff95-1570-4017-91f4-93675ca17a1e",
+			"source": "artwork/brands/ccbackup/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ccbackup/v1.0.0/source-light-request.json",
+			"response": "/textures/ccbackup/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ccbackup/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ccbackup/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ccbackup/v1.0.0/texture-light.png",
+				"sha256": "ac90db6c103e91d77d6e3c488ea2baedd5359c0a0d10c243e313acf8adf90c1c",
+				"bytes": 1762737,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "87bd6983-b772-4250-9a75-4c2d9fbbc864",
+			"source": "artwork/brands/ccbackup/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ccbackup/v1.0.0/source-dark-request.json",
+			"response": "/textures/ccbackup/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ccbackup/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ccbackup/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ccbackup/v1.0.0/texture-dark.png",
+				"sha256": "8159c7a410609281e238682935f04fae3059d6bacf9542597ecac6d15d0bd8db",
+				"bytes": 1574116,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.42
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.733419349917802,
+		"darkMinimum": 5.119738594679288,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:55:22.312Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

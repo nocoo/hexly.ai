@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "bogo",
+	"version": "1.0.0",
+	"root": "/textures/bogo/v1.0.0",
+	"canonical": "https://hexly.ai/projects/bogo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/bogo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Floodplain folio", "zh": "河滩叶册" },
+		"description": {
+			"en": "Robust wetland grass leaves in bent fans, paired sedge seed heads and one broad water-margin leaf.",
+			"zh": "水牛活动的河滩上，宽草叶与莎草穗层层错落，像知识档案中自然叠放的书页。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/bogo-2026-09-07.png",
+		"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+		"rgbaSha256": "0e65a5f9f626a218390f9e483657a774beb85b81abbdc43e751958194c12f384",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3637079,
+		"source": "https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/bogo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "a9001ae45cb49e369018b962121d9d7d90771670f68dd647275192b6c2bb7dad"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30af35d8-49bc-4476-a0d6-152f99d96351",
+			"source": "artwork/brands/bogo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/bogo/v1.0.0/source-light-request.json",
+			"response": "/textures/bogo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/bogo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/bogo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/bogo/v1.0.0/texture-light.png",
+				"sha256": "a9242249782d84caa963a0338d2f5618067bfda2754653c8964171a816dd81c0",
+				"bytes": 1680907,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ac5b2e93-dea1-4e15-b86a-25d933d8ebd4",
+			"source": "artwork/brands/bogo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/bogo/v1.0.0/source-dark-request.json",
+			"response": "/textures/bogo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/bogo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/bogo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/bogo/v1.0.0/texture-dark.png",
+				"sha256": "2d43f2a11dfb7ecf1be04f156580273c2a8e49687b8e2ae1747d2f42b4373e8f",
+				"bytes": 1438414,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/bogo/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1680907,
+			"sha256": "a9242249782d84caa963a0338d2f5618067bfda2754653c8964171a816dd81c0"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 185760,
+			"sha256": "e0258c63a62eec7def19d73d0b5530d5b24be1c6dd90112240f7188f4a7f5c6d"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10758,
+			"sha256": "60846d078289fca5c8338a90ec5646d1c692efb7d280d4671e378ffbaf225c4e"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2862,
+			"sha256": "3a20b5400251fbd8cc959a1e2a0470baa30ecabf04e01c0f01fdeeb52cf9a99d"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "60a1f5c9779671b9c852d987b8d63190084829ee258c926458b35cf5f2c2a960"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "5449f2486f672779cd034b825a0e951509a5e6f0d39ffbeb77715b2b3a5cb132"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1030,
+			"sha256": "979287a4e4e6395a9b60c2a33a1ace265a8bbb3d8cac87c413993e8ca460a9d6"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1438414,
+			"sha256": "2d43f2a11dfb7ecf1be04f156580273c2a8e49687b8e2ae1747d2f42b4373e8f"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 107990,
+			"sha256": "17cb34316e4150edcfea9d697ce08d8a571abe3b6c87b7bd0acef456b5ac9f1c"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7584,
+			"sha256": "9eaee450ef325a120179d453bdd9d16c49a07662cb0f1a5898f038f55c3bc3bf"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2943,
+			"sha256": "7c2eeec722bfc1149364191582155fed5f51c6fb0f4ae9ac3991352b8f635fd7"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "1ea0f97e294c36b9b15e78e80a5664f790365e51c0bb5c73d3e6685e172c14fb"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "1a805f09c68cc1aa74d22e624f52d44b34b6695a25fefc209a408d70e8efb335"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1030,
+			"sha256": "217ca96fbeca5c03bb1848652dfc6082e017b4fbe7edd80548dfa7bdd7690dc7"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5333,
+			"sha256": "f9d38023f7e2f72d5ae6b0c5370eedbb385e022335b649991536f0d773a6b86c"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1407,
+			"sha256": "42f9248a2ca5b14beaa1fa9c63add8bb56c89d97cb7c75dad67bc08d295de391"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "499a39b22d0ced4fa0bdec0159cf02d110ebdb95e1fe9204221f76b036539cf2"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2517,
+			"sha256": "cadb3ef9586ac79edf45b5108ce5d641e8bdb0744f7a82c5fe950b99dcd0151e"
+		},
+		{
+			"path": "/textures/bogo/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3486,
+			"sha256": "e7de36ef2436aab49b57aad2d255dffa17b7a423a4fa0437e11efc484a9022d7"
+		}
+	]
+}

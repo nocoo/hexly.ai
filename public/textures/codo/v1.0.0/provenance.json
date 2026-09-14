@@ -1,0 +1,122 @@
+{
+	"project": "codo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "A flower within reach", "zh": "近在喙边" },
+		"motif": "A plausible hummingbird garden: slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta. Stems sweep upward toward a clear open center. Botanical detail should be visible yet quiet; no bird or bright bouquet.",
+		"description": {
+			"en": "Slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta.",
+			"zh": "鼠尾草长叶与金银花弯枝向上伸展，仅用两枚低饱和筒状小花回应蜂鸟取食的瞬间。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A quiet macOS notification bridge between your AI agents and your desktop.",
+			"zh": "连接 AI 智能体与桌面的 macOS 通知桥梁，支持菜单栏服务和命令行。"
+		},
+		"purpose": {
+			"en": "Deliver local script and Claude Code events as Mac desktop banners, keep project and session history, and optionally summarize notifications with an AI Guardian.",
+			"zh": "将本地脚本和 Claude Code 事件显示为 Mac 桌面横幅，保存项目与会话记录，并按需使用 AI Guardian 整理通知。"
+		},
+		"source": "src/data/projects/codo.json",
+		"inspectedRevision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 1902979,
+		"source": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/codo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "80692d289d0160104fe7251fe0b0ff391301b09da9cbe9b3d39216329aeeba40"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c246ffc2-e4a3-4eae-b81a-0a33480ec7fd",
+			"source": "artwork/brands/codo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/codo/v1.0.0/source-light-request.json",
+			"response": "/textures/codo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/codo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/codo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/codo/v1.0.0/texture-light.png",
+				"sha256": "cc22400331c8c5dd8c4134bd5dc0635eede087e6b9a8674a917141d09687c404",
+				"bytes": 1608324,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b141fa35-64af-4a37-b27a-78f856523e43",
+			"source": "artwork/brands/codo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/codo/v1.0.0/source-dark-request.json",
+			"response": "/textures/codo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/codo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/codo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/codo/v1.0.0/texture-dark.png",
+				"sha256": "6d75f1b889e82fc7f42f06636b0322649be15eaa267d7caefcdb8fdbf40d94ee",
+				"bytes": 1398604,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.790865116277121,
+		"darkMinimum": 5.530012010480558,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:36:42.135Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

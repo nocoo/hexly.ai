@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "flow",
+	"version": "1.0.0",
+	"root": "/textures/flow/v1.0.0",
+	"canonical": "https://hexly.ai/projects/flow#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/flow/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Where a key settles", "zh": "按键落处" },
+		"description": {
+			"en": "Soft matte ceramic micrograin, shallow staggered key-well shoulders and thin offset row grooves.",
+			"zh": "哑光瓷釉的微粒、错开的键位肩线与浅槽承接青瓷键帽，留下输入发生时轻轻落下的触感。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.31
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/flow-family-2026-09-07-01-01.png",
+		"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23",
+		"rgbaSha256": "f82a6e06d0392fa88169a35baf45f734ba12a43f8e60d75d191dabdbd9b83ffb",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3201869,
+		"source": "https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/flow/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5f26106f3d434d7c82041181ee216870a25ea34356458d1b81810c6b6c68818a"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "889a144a-76b2-4ff0-ac63-ed2247da5c37",
+			"source": "artwork/brands/flow/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/flow/v1.0.0/source-light-request.json",
+			"response": "/textures/flow/v1.0.0/source-light-response.json",
+			"prompt": "/textures/flow/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/flow/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/flow/v1.0.0/texture-light.png",
+				"sha256": "eaebe25b2c0915684744431ac7947fe130eb18be4276cbe6c3fb28ed470590f3",
+				"bytes": 1700967,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c75cd27a-3c5c-46e0-b299-91485be4cf77",
+			"source": "artwork/brands/flow/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/flow/v1.0.0/source-dark-request.json",
+			"response": "/textures/flow/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/flow/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/flow/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/flow/v1.0.0/texture-dark.png",
+				"sha256": "240771d81a1c8b59d0b9ca2fe32d5210384e2b79497dddd580f8ae4005499a22",
+				"bytes": 1675413,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/flow/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1700967,
+			"sha256": "eaebe25b2c0915684744431ac7947fe130eb18be4276cbe6c3fb28ed470590f3"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 243798,
+			"sha256": "c6bdfe07d60e352fff9d69d681b454ec4f4f9c5089843f6a71ead1091f49e489"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4494,
+			"sha256": "282a0c03f4872784f8c89e3ad55fffd1156586f28aae5ad5469cc6a3a82f6549"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2705,
+			"sha256": "ed177a8bad04d332f5d0197f4b6a0c437f7592cebee4e073196aa30749cceb2e"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "f421df39428f6b67efe603eb7f1d7aabf2882deb41ceb92443008ac173f147ef"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "14afcdf1a72635969b53356e2cf2716e1a4e1598c730ccd7497df01be591c722"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1069,
+			"sha256": "9a3da2cd254d4e2436cbf53914f259056a3eb99d7d9b2a24fa4b9360f823fc4c"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1675413,
+			"sha256": "240771d81a1c8b59d0b9ca2fe32d5210384e2b79497dddd580f8ae4005499a22"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 218110,
+			"sha256": "b08ae70645c3cc31533f32c4fd75438bda78b61eb29b72efbda01083f71b4b8a"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3202,
+			"sha256": "1ec4778026b7aff5da606ef4e9b1a5fa54108f932f76f98d647cb55f5357f157"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2781,
+			"sha256": "1fb6916222596b938ee948561ddd87b8a01b018da25932ae058caa9f712e1325"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "208d7f451c7ec4c74ce3255df8e23e3bd81b27f45807b176aeac8f4cddf54f89"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "669033feb0ac9f76a1c7c91cd5e1d58ec88a4326b13825afd094ec9085b7c81c"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1069,
+			"sha256": "0a7292cd1a0db2aa1eca31f7df8bfb54ff3c37170577c2c1f76f9296d7378111"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5366,
+			"sha256": "9a65334c5968eb5a8d24841998339cffd1070fae77dfa8f60359c6777d14f60b"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1421,
+			"sha256": "8fe4225d13528445ca684b76a3badf7f6a972625f093b733e28506099918c98b"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "f98bdc64428473289a124b7ab9c71d5cecfe176ab093d458bb029f4d1e98d00b"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2540,
+			"sha256": "141abc612a69ab904ce2c5ac67af729ed9b4d4c6f3cad3312c360c9f3d19862a"
+		},
+		{
+			"path": "/textures/flow/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3508,
+			"sha256": "20a61e16c060815e2c5437b08963741f87114f5f48713581fd66453902515407"
+		}
+	]
+}

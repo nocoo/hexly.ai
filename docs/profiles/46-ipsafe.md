@@ -37,7 +37,7 @@ Check that a configured URL returns a successful HTTP response and optionally ma
 
 ![IPSafe source identity](https://h.no.mt/projects/ipsafe/identity/v1.0.0/ipsafe-160-fad1a905b228.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: A green network cable tester with a short patch lead
 - [Source](https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/ipsafe/identity/v1.0.0/ipsafe-family-2026-09-07-01-01-1cad3a55e3b0.png)
@@ -58,6 +58,16 @@ Check that a configured URL returns a successful HTTP response and optionally ma
 | accent | `#64de0f` | Native ipsafe 949f4e0683ee, sampled sRGB pixel (1322, 1184); artwork/logo-family/ipsafe/2026-09-07-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Connection channels / 连接槽道: Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.
+- 干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
+- [Paper PNG](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/ipsafe/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/ipsafe/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/ipsafe/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -139,6 +149,6 @@ Small-size observation: At 128/64 px, the dark tester and cream cable loop remai
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

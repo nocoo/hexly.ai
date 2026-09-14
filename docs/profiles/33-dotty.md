@@ -41,7 +41,7 @@ Reuse dashboard layouts, controls, and charts to build data interfaces with a co
 
 ![Dotty source identity](https://h.no.mt/projects/dotty/identity/v1.0.0/dotty-160-b2ff3e3cde51.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Floating black-and-white checker ceramic block
 - [Source](https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/dotty/identity/v1.0.0/dotty-family-2026-09-07-01-01-ac943ec8efec.png)
@@ -62,6 +62,16 @@ Reuse dashboard layouts, controls, and charts to build data interfaces with a co
 | accent | `#919699` | Native dotty 6bb29358898d, sampled sRGB pixel (1511, 1152); artwork/logo-family/dotty/2026-09-07-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Ceramic measures / 瓷面刻度: Finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center.
+- 细颗粒瓷釉与大尺度浅方格形成可读的几何秩序，留白处打断格子，不争抢黑白原标。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.29.
+- [Paper PNG](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/dotty/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/dotty/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/dotty/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -142,6 +152,6 @@ Small-size observation: At 128/64 px the checker rhythm, rounded thickness and h
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

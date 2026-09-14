@@ -110,3 +110,106 @@ export function brandManifestProblems(value: unknown): string[] {
 		problems.push("Hero must declare its actual authored composition method");
 	return problems;
 }
+
+/** Texture-only versions reference the original identity; they never clone or replace it. */
+export function textureManifestProblems(value: unknown): string[] {
+	const m = object(value);
+	const problems: string[] = [];
+	const root = `/textures/${m.project}/v${m.version}`;
+	if (
+		m.schemaVersion !== 1 ||
+		m.kind !== "hexly-project-texture" ||
+		!text(m.project) ||
+		!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(m.project) ||
+		!text(m.version) ||
+		!/^\d+\.\d+\.\d+$/.test(m.version) ||
+		m.root !== root ||
+		m.canonical !== `https://hexly.ai/projects/${m.project}#texture`
+	)
+		problems.push("Invalid texture manifest identity");
+	const scope = object(m.scope);
+	if (
+		scope.id !== "hexly-campaign" ||
+		scope.productUIChanged !== false ||
+		scope.officialIdentityChanged !== false ||
+		scope.officialIdentityRecolored !== false ||
+		scope.campaignReplacesOfficialIdentity !== false
+	)
+		problems.push(
+			"Texture must preserve the official identity and independent product UI",
+		);
+	const original = object(m.officialProjectIdentity);
+	if (
+		!text(original.path) ||
+		!/^\/(logos|brands)\//.test(original.path) ||
+		!digest(original.sha256) ||
+		!digest(original.rgbaSha256) ||
+		!positive(original.bytes) ||
+		!positive(original.width) ||
+		!positive(original.height)
+	)
+		problems.push("Texture must retain original file and pixel hashes");
+	const files = Array.isArray(m.files) ? m.files.map(object) : [];
+	if (
+		!files.length ||
+		files.some(
+			(file) =>
+				!text(file.path) ||
+				!file.path.startsWith(`${root}/`) ||
+				!/^[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(
+					file.path.slice(root.length + 1),
+				) ||
+				!text(file.role) ||
+				!positive(file.bytes) ||
+				!digest(file.sha256),
+		) ||
+		new Set(files.map((file) => file.path)).size !== files.length
+	)
+		problems.push("Invalid or duplicate texture files");
+	const generations = Array.isArray(m.generations)
+		? m.generations.map(object)
+		: [];
+	if (
+		generations.length !== 2 ||
+		generations
+			.map((g) => g.theme)
+			.sort()
+			.join(",") !== "dark,light" ||
+		generations.some((g) => {
+			const raw = object(g.raw);
+			return (
+				!["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"].includes(
+					String(g.model),
+				) ||
+				g.provider !== "Azure OpenAI" ||
+				!text(g.source) ||
+				g.crop !== false ||
+				g.recolor !== false ||
+				!["delegated-agent", "owner"].includes(String(g.acceptance)) ||
+				g.ownerReviewedExactBytes !== (g.acceptance === "owner") ||
+				raw.path !== `${root}/texture-${g.theme}.png` ||
+				raw.width !== 1024 ||
+				raw.height !== 1024 ||
+				![
+					raw.path,
+					g.request,
+					g.response,
+					g.prompt,
+					g.approval,
+					`${root}/texture-${g.theme}.webp`,
+					`${root}/texture-${g.theme}-320.webp`,
+				].every((path) => files.some((f) => f.path === path)) ||
+				!files.some(
+					(f) =>
+						f.path === raw.path &&
+						f.sha256 === raw.sha256 &&
+						f.bytes === raw.bytes,
+				)
+			);
+		})
+	)
+		problems.push(
+			"Two genuine, approved and uncropped theme generations are required",
+		);
+	return problems;
+}

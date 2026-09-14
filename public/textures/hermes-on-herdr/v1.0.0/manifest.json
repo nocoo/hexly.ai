@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "hermes-on-herdr",
+	"version": "1.0.0",
+	"root": "/textures/hermes-on-herdr/v1.0.0",
+	"canonical": "https://hexly.ai/projects/hermes-on-herdr#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/hermes-on-herdr/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A gateway work surface", "zh": "门框工作面" },
+		"description": {
+			"en": "Restrained brushed-brass grain, matte enamel inset seams, a pair of offset vertical guide rebates and one open threshold indentation.",
+			"zh": "细黄铜拉丝、珐琅嵌缝与错位门框浅槽，承接网关工具的接入关系，保留开门的余地。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.3
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+		"rgbaSha256": "800ee7781835fe6fd6f6cbff3bd4d5fa038a0305cdc1f7b0aaa66a0b4b82f96e",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4337945,
+		"source": "https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/hermes-on-herdr/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "941aa8902f762892529b50c086d5d16ed66308dd52d47f5c821f68d47b1db16d"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30124071-f879-4216-982f-d3e70c3dd997",
+			"source": "artwork/brands/hermes-on-herdr/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/hermes-on-herdr/v1.0.0/source-light-request.json",
+			"response": "/textures/hermes-on-herdr/v1.0.0/source-light-response.json",
+			"prompt": "/textures/hermes-on-herdr/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/hermes-on-herdr/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/hermes-on-herdr/v1.0.0/texture-light.png",
+				"sha256": "bc3a106b0f593da35cb852ef26a9bbaa91a8c7bb49bf678a424ac2cd97316001",
+				"bytes": 1553794,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fee4a559-3a7e-41cf-bedb-a28348df85b3",
+			"source": "artwork/brands/hermes-on-herdr/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/hermes-on-herdr/v1.0.0/source-dark-request.json",
+			"response": "/textures/hermes-on-herdr/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/hermes-on-herdr/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/hermes-on-herdr/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/hermes-on-herdr/v1.0.0/texture-dark.png",
+				"sha256": "fc3ca0814fac055fd24d5a877507805df05f7cb9fc0cf9cc570c17cbb5d10396",
+				"bytes": 1622083,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1553794,
+			"sha256": "bc3a106b0f593da35cb852ef26a9bbaa91a8c7bb49bf678a424ac2cd97316001"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 160732,
+			"sha256": "cef5bdf39ba0e1715d8e514e10c78bb9f1c7ec02da8644f55d65dc28416e0451"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4424,
+			"sha256": "e85fbc42e2c08a2a4b9c7a81aeb683e8e585ee7e088a5438aa0e2b8515dc0600"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2734,
+			"sha256": "1db3d5245e1853493e1ff1f73d06898d0ec575623999f46d80c48609dae04e31"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "28d37b91986cdabb233fa2ab2c5992b3db8ca3f4aafffbc838d39b763f7405e4"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "e38a91487f490581e77ba1a09e512196258f23ca859793512efb793c8c0c213d"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1188,
+			"sha256": "5268bc7be06c3652ff9029c1031b0bf4c5683f38924313ecece9be33632ab41a"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1622083,
+			"sha256": "fc3ca0814fac055fd24d5a877507805df05f7cb9fc0cf9cc570c17cbb5d10396"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 171114,
+			"sha256": "fbf9d5d64f409ea754f345562e05e13ffd7a0c07457554b7f69aa428f4155c68"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4132,
+			"sha256": "18f4be64d379faf077210d01a540d43d768df60dcc32f436fd1c1e5174dd01eb"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2810,
+			"sha256": "73c139f65109a9bbc85cdf0b9109f2fdc54ee6c4e7ac20a00b517a3e987c11ba"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "c8d2c6eaf94afc50e00f473d1b75136a564b8386c56a7a166724bd8e5d2a2010"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "657551b528c55bc5c9be5984125c2496a8b4abaf78ef8987af2dc39dd076a68e"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1243,
+			"sha256": "79454eec8c81032575c9aac102bff80065fa42db7abab6ae334718c6ef06b3fe"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5764,
+			"sha256": "ceb736da6aad9ca8ef7e3fe4c9c91bb05001e10997d7b89a9807d9dd447a421c"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1592,
+			"sha256": "34d7f8d96aa9d9143accb94c31bab564f7c11f68b9731c1d61cbc592e7bf5afd"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1768,
+			"sha256": "f1a1f570ccfb360dda4c1c3644c4aa5fdd79651feaf774f0c9c986e73d08ef7a"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2617,
+			"sha256": "77460e9407bb045c07b0cd6a9163fc35c7c910fbf5559a2142ffa651d8966970"
+		},
+		{
+			"path": "/textures/hermes-on-herdr/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3702,
+			"sha256": "abc9ba321df66dffaafc4ff7bcd5d16237a9952417534325f768ee77cd32cf4a"
+		}
+	]
+}

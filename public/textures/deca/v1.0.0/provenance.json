@@ -1,0 +1,122 @@
+{
+	"project": "deca",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Switchboard grain", "zh": "交换台肌理" },
+		"motif": "A vintage desk-telephone switchboard surface: matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends. Lines converge loosely toward an open gap without a reset loop. No phone object, dial, digits, text or glowing indicators.",
+		"description": {
+			"en": "Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.",
+			"zh": "哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A local-first Mac gateway that brings AI agents to Discord, the terminal, and HTTP.",
+			"zh": "优先在本地运行的 Mac AI 智能体网关，连接 Discord、终端与 HTTP。"
+		},
+		"purpose": {
+			"en": "Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.",
+			"zh": "通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。"
+		},
+		"source": "src/data/projects/deca.json",
+		"inspectedRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3665035,
+		"source": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/deca/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3acb7ecc-99bb-494a-8c4a-796440443f37",
+			"source": "artwork/brands/deca/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/deca/v1.0.0/source-light-request.json",
+			"response": "/textures/deca/v1.0.0/source-light-response.json",
+			"prompt": "/textures/deca/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/deca/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.0/texture-light.png",
+				"sha256": "3abf942c5b3cc16129f94c13fb7370abcb4009ecf160668ccb810de9d859bb4e",
+				"bytes": 1660800,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "43739742-beee-480a-9ea6-c16985596d94",
+			"source": "artwork/brands/deca/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/deca/v1.0.0/source-dark-request.json",
+			"response": "/textures/deca/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/deca/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/deca/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.0/texture-dark.png",
+				"sha256": "65277b6975f553e02fb0fab629181af9593a0c0261824436e4918d1157e30a2b",
+				"bytes": 1720033,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.32
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.718505931437204,
+		"darkMinimum": 6.110782057831902,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:50:49.270Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -1,0 +1,122 @@
+{
+	"project": "firefly",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Bracken after dusk", "zh": "暮色蕨影" },
+		"motif": "A temperate woodland clearing for a firefly: a few broad triangular bracken fronds, low fern curls and fine damp meadow blades. Arrange two unequal branching fronds across opposite outer corners, not a wreath. No glowing dots, flames or luminous particles.",
+		"description": {
+			"en": "A few broad triangular bracken fronds, low fern curls and fine damp meadow blades.",
+			"zh": "暮色林地里的三角蕨叶与低矮草丛，给萤火虫留出安静而通透的活动空间。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A modern home for writing, publishing, and the ideas worth keeping.",
+			"zh": "写作、发布，也留住值得记录的想法。由 WordPress 迁移而来的博客平台。"
+		},
+		"purpose": {
+			"en": "Write, publish and organize a personal blog through a web console and AI clients sharing the same content.",
+			"zh": "写作、发布和整理个人博客，让网页后台与 AI 客户端共用一套内容。"
+		},
+		"source": "src/data/projects/firefly.json",
+		"inspectedRevision": "70a4de51b9fe6f152805298c031ca92165754c40"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/firefly-2026-09-06.png",
+		"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759",
+		"rgbaSha256": "c5c4bb38f0c78b094c2c72b7f84478618fd17544c6eecf97a27ad1747c6d3df6",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2583578,
+		"source": "https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/firefly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d7fb1a2226dd80bc04ff888f127f41ee143c9d33237f4226766c84dcec5bc39d"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "51f2bdd9-3070-4b5d-b45f-7d59b2d19059",
+			"source": "artwork/brands/firefly/texture-studies/2026-09-14-flare-rollout-01/light-attempt-02",
+			"request": "/textures/firefly/v1.0.0/source-light-request.json",
+			"response": "/textures/firefly/v1.0.0/source-light-response.json",
+			"prompt": "/textures/firefly/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/firefly/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/firefly/v1.0.0/texture-light.png",
+				"sha256": "2510e47a83b9710965097f81b7187ddb4a49ca92e9f7e66871b32b0630328998",
+				"bytes": 1758009,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "740bf7ec-4701-49bb-9015-b81a398f6f6a",
+			"source": "artwork/brands/firefly/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-02",
+			"request": "/textures/firefly/v1.0.0/source-dark-request.json",
+			"response": "/textures/firefly/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/firefly/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/firefly/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/firefly/v1.0.0/texture-dark.png",
+				"sha256": "b1d93f6745466e61593632a49e7296b1345dc844be5151281c8250cfb3fc513b",
+				"bytes": 1560337,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.4
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.766158823927795,
+		"darkMinimum": 5.195248952925554,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:10:44.812Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

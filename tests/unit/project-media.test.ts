@@ -22,7 +22,12 @@ describe("optional project media", () => {
 		expect(
 			parseCatalogue([
 				base,
-				{ ...withMedia, id: "media-fixture", brandKit: undefined },
+				{
+					...withMedia,
+					id: "media-fixture",
+					brandKit: undefined,
+					brandTexture: undefined,
+				},
 			]),
 		).toHaveLength(2);
 		expect(catalogueProblems([{ ...base, media: {} }])).toEqual([]);

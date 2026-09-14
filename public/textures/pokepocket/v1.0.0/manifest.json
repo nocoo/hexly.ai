@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "pokepocket",
+	"version": "1.0.0",
+	"root": "/textures/pokepocket/v1.0.0",
+	"canonical": "https://hexly.ai/projects/pokepocket#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/pokepocket/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A pocket field journal", "zh": "口袋行记" },
+		"description": {
+			"en": "Tightly woven cotton canvas, shallow folded map creases, a few stitched pocket-edge impressions and one small quiet terracotta registration tab.",
+			"zh": "细密棉帆布上的折图压痕与口袋缝线，呼应随身收藏和探索；不生成角色或游戏商标。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+		"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+		"rgbaSha256": "76708e8fe45e7fb0e0d2bbf96e61002ca6a4246b88b3a52a309192a69ff7540d",
+		"width": 960,
+		"height": 960,
+		"bytes": 547985,
+		"source": "https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pokepocket/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d9650e21522e1441e9eb2c790ba56169a8691af52ef9f137455cae6a790ff1b6"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e40303c3-ffca-45de-be54-9c3ba0e52fd4",
+			"source": "artwork/brands/pokepocket/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/pokepocket/v1.0.0/source-light-request.json",
+			"response": "/textures/pokepocket/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pokepocket/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pokepocket/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pokepocket/v1.0.0/texture-light.png",
+				"sha256": "d60b52d4c6d11f83df8144ccb9e9e0b6bc8965da9f6798ac48e3f9898f4ef0f4",
+				"bytes": 2182000,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "cadecc77-0ea1-4187-8c59-1f01f83a2ad8",
+			"source": "artwork/brands/pokepocket/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/pokepocket/v1.0.0/source-dark-request.json",
+			"response": "/textures/pokepocket/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pokepocket/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pokepocket/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pokepocket/v1.0.0/texture-dark.png",
+				"sha256": "b225cc629f0b3762bc9cf3fb1fc2357da480f4e302c4f37be30131146903784a",
+				"bytes": 1907539,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2182000,
+			"sha256": "d60b52d4c6d11f83df8144ccb9e9e0b6bc8965da9f6798ac48e3f9898f4ef0f4"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 374576,
+			"sha256": "8beeefc466be3baa46be396fb7fd4c182b0b2411e77f89a382a8de0738e8002d"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8542,
+			"sha256": "030071153c99d4b55344b532077491be117c3f0363898e0f1cfc52dddec880e0"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2739,
+			"sha256": "04817c69aa853df2ddff05ba1ca9563745b1c983ee354b4e8fa80f8df4f0470a"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "fc3fbd0e024d3263b6d94164390ffb4db98afc0fb31acc69b9b9b621401ea205"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "1fc89cadc610534f0db57c3c8de95eb0f773d2aa232eb26341d74f496e933cb2"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1051,
+			"sha256": "849a6d6e430077e55c33fab303f60b9028f943b5d9fd21dd21df1a0dbeb616d3"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1907539,
+			"sha256": "b225cc629f0b3762bc9cf3fb1fc2357da480f4e302c4f37be30131146903784a"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 299522,
+			"sha256": "1f53f09dbe8bab23e85ae4d95aa86f96f0a133712fffcab9d0e92076f1eb6b36"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5632,
+			"sha256": "35987e65877d7c8eb8c6f918e9ca55f57fd7e5b948047baa391ea7ba978bcdca"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2815,
+			"sha256": "77433bc3d36091e0e17943b2ced4980e39520a9e66941e500c3245796fbc6f6e"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "09f118468f6dc2acfd2f34af184712f6466bf392be4af084006e44d9c3ec4443"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "a2b5dc6e097d846f10c38fab0ceebe7b25888902ebfa0feb7a618020e16f8727"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1074,
+			"sha256": "79ec9c8ca50535c972fe5c36f7393443af43554aef9fa6f8d94d27c4c4af7a3e"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5488,
+			"sha256": "75cf91c3ae97942688373b5b08f813fabb237c9995b38ebad7ebf2f2bb258204"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1432,
+			"sha256": "d4ee3d3e79b88d6d3c5bfb58988c1a76b110d209e4da054d3ffc762e333d971c"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1765,
+			"sha256": "efd0bf6cbbfb808d59dfa2c6bb2eedd8c59157d799ad8a846837000a7a203108"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2611,
+			"sha256": "1c1ac4b14d3f2bcd90ecaa3fdcea4f294ed2ad8da19244d98bace1e23b55bd6f"
+		},
+		{
+			"path": "/textures/pokepocket/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3647,
+			"sha256": "41754e3341b39d95e09bdd0cacd6726098c0d9a439a83a073066581f47812da0"
+		}
+	]
+}

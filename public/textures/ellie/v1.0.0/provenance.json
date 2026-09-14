@@ -1,0 +1,122 @@
+{
+	"project": "ellie",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Mopane conversations", "zh": "林叶相听" },
+		"motif": "A broad elephant woodland habitat: distinctive paired butterfly-shaped mopane leaves on restrained twigs, with one small acacia spray. Three overlapping leaf pairs occupy unequal positions near the edges. Broad pressed veins suggest attentive open ears without drawing an elephant.",
+		"description": {
+			"en": "Distinctive paired butterfly-shaped mopane leaves on restrained twigs, with one small acacia spray.",
+			"zh": "成对的宽叶与细小金合欢叶彼此呼应，像林间展开的倾听空间，保留大象的从容。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A modern forum for thoughtful conversations, with a companion terminal client.",
+			"zh": "为认真交流而做的现代论坛，也提供可以在终端里使用的客户端。"
+		},
+		"purpose": {
+			"en": "Browse and maintain the Tongji Network forum, bringing historical Discuz content into a current community interface.",
+			"zh": "浏览与维护同济网论坛，将 Discuz 历史内容接入新的社区界面。"
+		},
+		"source": "src/data/projects/ellie.json",
+		"inspectedRevision": "300b8540eac51ae21803a8d58ebffbe3d90efa24"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+		"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+		"rgbaSha256": "f7e7d2e9e16a7cbf2b511fda50e8016165e61b9349c9a941817560ea7c1510a7",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2690184,
+		"source": "https://github.com/nocoo/ellie/blob/300b8540eac51ae21803a8d58ebffbe3d90efa24/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ellie/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "59ff861f2b1e5d8fc6c60ef110bf7c5eb24bda9659dd74b5f7c55eafd17aa75c"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "df491289-c9c7-4a21-8c8a-dca4847b5d60",
+			"source": "artwork/brands/ellie/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ellie/v1.0.0/source-light-request.json",
+			"response": "/textures/ellie/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ellie/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ellie/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ellie/v1.0.0/texture-light.png",
+				"sha256": "d63c573edb472716a620b7a73a6be9567857d875ab17b0f59e74c4dd70dfb3e4",
+				"bytes": 1632684,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7a423003-a4c0-444e-a2a3-97a89bb4def1",
+			"source": "artwork/brands/ellie/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ellie/v1.0.0/source-dark-request.json",
+			"response": "/textures/ellie/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ellie/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ellie/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ellie/v1.0.0/texture-dark.png",
+				"sha256": "08d6733fdeb072e75c184228b8675baee2f99d40b9d762c928809f64b9792a73",
+				"bytes": 1457436,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.738840456284544,
+		"darkMinimum": 5.1185823745919095,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:10:53.535Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

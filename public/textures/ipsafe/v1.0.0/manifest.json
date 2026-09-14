@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "ipsafe",
+	"version": "1.0.0",
+	"root": "/textures/ipsafe/v1.0.0",
+	"canonical": "https://hexly.ai/projects/ipsafe#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/ipsafe/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Connection channels", "zh": "连接槽道" },
+		"description": {
+			"en": "Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.",
+			"zh": "干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+		"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+		"rgbaSha256": "ad40a075b02b13fde331b1fd84538c918aa442ffbd8523e8f369bfff42101283",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3104822,
+		"source": "https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ipsafe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "c69e4d9e1b3ce869aa955473a7884bebc00a33d63f92d3cfaef43bc6713ae9c8"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c6894e8f-6fb8-49d9-8ff4-894e8000ca38",
+			"source": "artwork/brands/ipsafe/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ipsafe/v1.0.0/source-light-request.json",
+			"response": "/textures/ipsafe/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ipsafe/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ipsafe/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ipsafe/v1.0.0/texture-light.png",
+				"sha256": "5a533aa934e6cb04bcf2be89cc55cc25b079efc7b92db3296f0b7dac3746209e",
+				"bytes": 1808522,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "63906caf-2a42-40c2-9a6d-5f6b034c5d34",
+			"source": "artwork/brands/ipsafe/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ipsafe/v1.0.0/source-dark-request.json",
+			"response": "/textures/ipsafe/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ipsafe/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ipsafe/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ipsafe/v1.0.0/texture-dark.png",
+				"sha256": "e521a0e85f5a6fbb6a80dcbd1f5ab91abe7318c55a5fa76c50ed48f801d7ac4e",
+				"bytes": 1712786,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1808522,
+			"sha256": "5a533aa934e6cb04bcf2be89cc55cc25b079efc7b92db3296f0b7dac3746209e"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 257230,
+			"sha256": "20db747784b6ab0d87b73c6a9df76f4e06f8312b616fef79c12ce055ccffa79d"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2554,
+			"sha256": "c9427679564d8aea60a8ccd8e63221caf5e05d1e4b33624a5c40f494e46496d3"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2735,
+			"sha256": "54309fcd41ea446e683454fb86a74cc40dd76c8e4c2fcc76e04061c2f6bd6dad"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "2d773d52a632deb35d22965f642c09d631f456c5f04bdb986b345d98489f217f"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "3325622fc61b07b3753ab2d5ea9f100c93f2d0058b93d65f973e42d5818eb7bd"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1096,
+			"sha256": "1270d86d8573110a8cd716106ffaf1e15e53fa835cd72504482607e3a721cfa4"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1712786,
+			"sha256": "e521a0e85f5a6fbb6a80dcbd1f5ab91abe7318c55a5fa76c50ed48f801d7ac4e"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 236952,
+			"sha256": "5cbcbbbde1c1496c2b15b0523479e7ceebbbd2f70e12ad87c85bc189f0e9e5b3"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3136,
+			"sha256": "5bc843ceb913ec7a6890d1968e5f8177b748ab4d9b00ae6b906d699df1d273da"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2811,
+			"sha256": "45c7bc12d4e31d59664db2dd1ea16dd4d7b2274de6f9cb7ce57013fcfe569816"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "93bab8dc6dc4af8b30a6e95d3edaff8d5e590ad849375bbaaf7449b0b0575a4a"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "3624ab2d378de50f87b37ac22eb2497bdf829862f6a3efa4c65f6d6049b26921"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1096,
+			"sha256": "c22479d02b4325b1896d6515220bfb1e981381ddb012e2a4d58a50638c7e179e"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5498,
+			"sha256": "c1409536cb514288eb512c3ca00fa36efb5ab588f61e9ae9ae1c365bcabd3783"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1516,
+			"sha256": "bb4e26d119f493c81b57fec62e3850a9cc5b92a3dfbd36b24b4282b2d2577e59"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "8124be36f10b41f921cb2370f4cb582c6c95543280c55425c25bae78fd25f754"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2587,
+			"sha256": "d2c1224acd007e876a29c89dea02757fd5327abe207ed580c82660fe661f0e43"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3575,
+			"sha256": "d02da677e558e86b182ee898ce8f28e1dcfa987396b1dfdfedd3519eec542a5e"
+		}
+	]
+}

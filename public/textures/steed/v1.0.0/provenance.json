@@ -1,0 +1,122 @@
+{
+	"project": "steed",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Wind through the pasture", "zh": "牧场风序" },
+		"motif": "An open horse pasture: long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves. Use a low horizontal sweep that gathers at the bottom right and opens toward the upper left. No fencing, horseshoes or racing symbols.",
+		"description": {
+			"en": "Long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves.",
+			"zh": "梯牧草与松散燕麦穗顺风舒展，用牧场里连续的草叶呼应马匹轻快的步调。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A shared home for AI agents, their assets, and the relationships between them.",
+			"zh": "面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。"
+		},
+		"purpose": {
+			"en": "Give users a shared inventory of agents, CLI tools and their bindings across hosts, so they can check status, ownership and business categories.",
+			"zh": "集中盘点多台主机上的 Agent、CLI 工具资源与绑定关系，帮助使用者核对运行状态、资源归属和业务分类。"
+		},
+		"source": "src/data/projects/steed.json",
+		"inspectedRevision": "bcab1f113b9b7cde65898bbd23705c7dac339634"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/steed-family-2026-09-07-02-01.png",
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"rgbaSha256": "46a488e99620ef31cd24171daab4376205391f8a4de0cee02444fba99c375980",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3189966,
+		"source": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/steed/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "72a724ace9eff372af9fe736528196900bedefc004d0062579df2f890cbb8b24"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c3971400-1a95-4e02-bfbe-9d4053436e66",
+			"source": "artwork/brands/steed/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/steed/v1.0.0/source-light-request.json",
+			"response": "/textures/steed/v1.0.0/source-light-response.json",
+			"prompt": "/textures/steed/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/steed/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/steed/v1.0.0/texture-light.png",
+				"sha256": "f14a7aa1baa3329b1810bb36fc22b4cfeab45b79b0321abfc539f6b1c25fd9a2",
+				"bytes": 1568609,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5261391a-ae2b-43d7-b19d-94133d9872e1",
+			"source": "artwork/brands/steed/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/steed/v1.0.0/source-dark-request.json",
+			"response": "/textures/steed/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/steed/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/steed/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/steed/v1.0.0/texture-dark.png",
+				"sha256": "9a6ff3063dd7b267a5ae322a9ee0419bb1f8b280b354c0995446e1ccbf4cc98d",
+				"bytes": 1463077,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.33
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.744628879078254,
+		"darkMinimum": 4.746945488506897,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:10:51.238Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

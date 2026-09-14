@@ -1,0 +1,122 @@
+{
+	"project": "wooly",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Clover on the hillside", "zh": "坡地三叶草" },
+		"motif": "A sheep pasture: rounded white-clover leaflets, long ryegrass blades and a few soft grass seed spikes. Rounded overlapping botanical shapes gather low, with no wool texture, sheep curls or bright flower heads. Keep the hill suggested by leaf direction, not a landscape.",
+		"description": {
+			"en": "Rounded white-clover leaflets, long ryegrass blades and a few soft grass seed spikes.",
+			"zh": "圆润白三叶草与黑麦草铺在缓坡上，以草叶的层次承接绵羊，避免把羊毛纹直接复制成背景。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Keep family perks in sight: card rewards, memberships, insurance, and expiry dates.",
+			"zh": "把家庭的信用卡权益、会员、保险福利和到期时间放在眼前。"
+		},
+		"purpose": {
+			"en": "Keep household benefit accounts, usage cycles and redemption records together so family members can check remaining allowances, expiry and points.",
+			"zh": "集中记录家庭权益账户、使用周期与核销记录，方便核对剩余额度、到期时间和积分。"
+		},
+		"source": "src/data/projects/wooly.json",
+		"inspectedRevision": "e516e1fbcbd146fcda6b80cf071bd5367e611afd"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+		"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+		"rgbaSha256": "47800dea8a7cca3d7510610802fa0d0569fd68c77170a47832dd6f3e2e0d6861",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3895425,
+		"source": "https://github.com/nocoo/wooly/blob/e516e1fbcbd146fcda6b80cf071bd5367e611afd/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/wooly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8004bcbe9c29916193d2f756dfd883b2d27d91e5d5083febccb70c9e41a51d48"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c7a61a34-1ddc-4565-b2b6-53e32f82070b",
+			"source": "artwork/brands/wooly/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/wooly/v1.0.0/source-light-request.json",
+			"response": "/textures/wooly/v1.0.0/source-light-response.json",
+			"prompt": "/textures/wooly/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/wooly/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/wooly/v1.0.0/texture-light.png",
+				"sha256": "7063518288e84585cd823110832df768e8e5d9e8da3013881a801f531b5dd8c1",
+				"bytes": 1620725,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f5593582-6571-4034-9a5d-ddfa340350dd",
+			"source": "artwork/brands/wooly/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/wooly/v1.0.0/source-dark-request.json",
+			"response": "/textures/wooly/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/wooly/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/wooly/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/wooly/v1.0.0/texture-dark.png",
+				"sha256": "82ce463f2e44c45eb26cde2d0ca57f4ff7c5f05d413281a089d987382e8acaee",
+				"bytes": 1416850,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.33
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.7089561519465235,
+		"darkMinimum": 4.933405357303062,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:44:29.742Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

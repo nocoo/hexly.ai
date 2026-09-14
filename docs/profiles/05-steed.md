@@ -41,7 +41,7 @@ Give users a shared inventory of agents, CLI tools and their bindings across hos
 
 ![Steed source identity](https://h.no.mt/projects/steed/identity/v1.0.0/steed-160-9338a3bb05b4.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Chestnut horse portrait with an ivory blaze and one colorful bird
 - [Source](https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/steed/identity/v1.0.0/steed-family-2026-09-07-02-01-a58914242de4.png)
@@ -62,6 +62,16 @@ Give users a shared inventory of agents, CLI tools and their bindings across hos
 | accent | `#309eaf` | Native steed 5ff814fe012b, sampled sRGB pixel (1632, 1233); artwork/logo-family/steed/2026-09-07-02/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Wind through the pasture / 牧场风序: Long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves.
+- 梯牧草与松散燕麦穗顺风舒展，用牧场里连续的草叶呼应马匹轻快的步调。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.33.
+- [Paper PNG](https://h.no.mt/projects/steed/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/steed/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/steed/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/steed/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/steed/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/steed/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/steed/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -144,6 +154,6 @@ Small-size observation: The complete ears, mane tips, face and bird retain at le
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

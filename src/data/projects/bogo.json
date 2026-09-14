@@ -449,5 +449,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/bogo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Floodplain folio",
+			"zh": "河滩叶册"
+		},
+		"description": {
+			"en": "Robust wetland grass leaves in bent fans, paired sedge seed heads and one broad water-margin leaf.",
+			"zh": "水牛活动的河滩上，宽草叶与莎草穗层层错落，像知识档案中自然叠放的书页。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
 	}
 }

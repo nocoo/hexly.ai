@@ -49,7 +49,7 @@ Send page URLs, titles, selections, and metadata to configured webhooks from Chr
 
 ![Hooky source identity](https://h.no.mt/projects/hooky/identity/v1.0.0/hooky-160-664bf458c10b.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Pink octopus
 - [Source](https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/hooky/identity/v1.0.0/hooky-7e98ee9d581e.png)
@@ -70,6 +70,16 @@ Send page URLs, titles, selections, and metadata to configured webhooks from Chr
 | accent | `#42274d` | Preserved project artwork, sampled pixel |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- A kelp cove / 海藻小湾: Broad softly crinkled sea-lettuce fronds, divided kelp fingers and one slim swaying holdfast-like stem.
+- 宽阔海莴苣叶与分叉海藻缓慢卷曲，在安静海湾里承接章鱼舒展的腕足。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.3.
+- [Paper PNG](https://h.no.mt/projects/hooky/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/hooky/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/hooky/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hooky/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/hooky/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/hooky/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/hooky/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -152,6 +162,6 @@ Small-size observation: At 32 px the pink head and violet curls carry the mark. 
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

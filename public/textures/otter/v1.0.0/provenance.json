@@ -1,0 +1,122 @@
+{
+	"project": "otter",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Willow beside the river", "zh": "河畔柳叶" },
+		"motif": "A riverbank habitat: long willow leaves on bowed supple stems, ribbon-like reeds and a little low sedge. Arrange the willow in a single gentle S-flow along the right margin, with a smaller detached leaf near the bottom. No shells, bubbles or water droplets.",
+		"description": {
+			"en": "Long willow leaves on bowed supple stems, ribbon-like reeds and a little low sedge.",
+			"zh": "细长柳叶沿柔软枝条弯折，芦苇与莎草贴着河岸，把水獭松弛的姿态延伸进留白。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Keep your Mac development setup safe with snapshots, diffs, and cloud backups.",
+			"zh": "用快照、差异比较与云端备份，保存 Mac 开发环境的每一次变化。"
+		},
+		"purpose": {
+			"en": "Save macOS development settings and inventories as snapshots for inspection and migration.",
+			"zh": "保存 macOS 开发环境配置与清单快照，方便查看变化和迁移电脑。"
+		},
+		"source": "src/data/projects/otter.json",
+		"inspectedRevision": "0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/otter-family-2026-09-07-01-02.png",
+		"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+		"rgbaSha256": "1caf168d0eb1043f5f868d5d1d891ab4dd5e7ab09b8e0d2384ede73720e1bf49",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2941233,
+		"source": "https://github.com/nocoo/otter/blob/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/otter/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "9ae4475359ce35ef114462441ef98c5b7a206ffbc1fd9a92678204b80444316f"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a2ae5353-08d1-471e-b82b-0173e334def7",
+			"source": "artwork/brands/otter/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/otter/v1.0.0/source-light-request.json",
+			"response": "/textures/otter/v1.0.0/source-light-response.json",
+			"prompt": "/textures/otter/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/otter/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/otter/v1.0.0/texture-light.png",
+				"sha256": "40da1517c2c92f28f98df2a4c58f6f4018664bb6b517f8a02b2f5f398323ed1e",
+				"bytes": 1573387,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3196e67b-4876-4539-89e7-787073846641",
+			"source": "artwork/brands/otter/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/otter/v1.0.0/source-dark-request.json",
+			"response": "/textures/otter/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/otter/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/otter/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/otter/v1.0.0/texture-dark.png",
+				"sha256": "3d6ce48127cff0af9594c33eba0248d4ac3f0a6eba37042ae6e79100f9c5c05a",
+				"bytes": 1427258,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.096504604666777,
+		"darkMinimum": 4.735945396343704,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:23:50.240Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

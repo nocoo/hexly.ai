@@ -1,0 +1,118 @@
+{
+	"project": "microsoft-teams-send-as-workflow",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "Correspondence folds", "zh": "来信折痕" },
+		"motif": "A correspondence desk's quality cotton stationery: broad shallow envelope-flap fold impressions, one diagonal crease and offset sorting-strip indentations. Clean quiet paper grain, no envelope object, postal logo, stamps, text or Microsoft branding.",
+		"description": {
+			"en": "Broad shallow envelope-flap fold impressions, one diagonal crease and offset sorting-strip indentations.",
+			"zh": "棉质信纸的宽折痕与错位分拣压条呼应消息递送，保持书信感而不生成平台商标。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Send messages and Adaptive Cards to Microsoft Teams through webhooks.",
+			"zh": "通过 Webhook 向 Microsoft Teams 发送消息与自适应卡片。"
+		},
+		"purpose": {
+			"en": "Send messages and Adaptive Cards to Microsoft Teams through webhooks.",
+			"zh": "通过 Webhook 向 Microsoft Teams 发送消息与自适应卡片。"
+		},
+		"source": "src/data/projects/microsoft-teams-send-as-workflow.json",
+		"inspectedRevision": "b2b0f10619dee34054d92b532613a23c036d4660"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/microsoft-teams-send-as-workflow.png",
+		"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+		"rgbaSha256": "dec445c95f1eac5a42a184a3f5995edc7fbb07ce3cfe713623032df458b4d093",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 353526,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "adbe5964-a5e0-4871-a7d7-ab9c798926f5",
+			"source": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-request.json",
+			"response": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-response.json",
+			"prompt": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light.png",
+				"sha256": "5b0e0f818b02d27b8704b8d53736b01a38032a43774feff9d17834f585bffbd8",
+				"bytes": 1740829,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "43ef5f07-9a74-4f52-b384-609a9b183da5",
+			"source": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-request.json",
+			"response": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark.png",
+				"sha256": "b42b44bdd9c6bcb7d032b1566567e6d8e92bece2716f65d5e91531f72fc60e87",
+				"bytes": 1637174,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.44
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.255908770855895,
+		"darkMinimum": 4.773650969117385,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:00:31.894Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/uptime-kuma-skill/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Clinical paper", "zh": "听诊纸面" },
+		"description": {
+			"en": "Pressed cellulose examination-paper fibers, two incomplete soft diaphragm-like rings and a short sparse baseline indentation.",
+			"zh": "压实纤维纸与两道不完整听诊弧呼应监控诊断，以安静材质表达观察，不伪造健康读数。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	}
 }

@@ -1,0 +1,3916 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-14T03:56:19.238Z",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"catalogueSource": "src/data/projects/index.json",
+	"catalogueSha256": "4b343bf24af6a9957d68a511c0c41eef4527181dbfc9f414578ba8dc446b9929",
+	"scope": "hexly-campaign",
+	"originalIdentityRecolored": false,
+	"productUIChanged": false,
+	"authorization": {
+		"date": "2026-09-14",
+		"rawAcceptance": "delegated-to-Codex",
+		"publication": true,
+		"quote": "su- release Y+1 不验证；然后回顾之前底纹的创作skill，当前只有Pi Agent Policy项目落实了底纹替换，给其他全部项目生成新的底纹（注意根据项目logo类型的设计约束），无须人工确认，全部生成维护到R2，再进行一次Y+1发布，无须人工确认。"
+	},
+	"model": "gpt-image-2.5-flare",
+	"plannedRequests": 148,
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"existingProjects": 75,
+	"activeProjects": 55,
+	"archivedProjects": 20,
+	"excluded": [
+		"Pi Agent Policy: retain the approved pilot",
+		"hexly.ai: separate site identity, not a catalogue project",
+		"Snail: retired, not present in the current catalogue; keep historical assets"
+	],
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"independentVersions": "Texture packs are versioned separately from identity/brand kits. Do not clone or edit existing Logo, font, icon or Hero files.",
+	"projects": [
+		{
+			"id": "frogie",
+			"title": "Frogie",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "1a84e0fd6dfa126745a16c21036013b463466ed3577637322c575cf6cfed0dcc",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/frogie-2026-09-06.png",
+				"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+				"rgbaSha256": "33da2681091fabc3efb46344446682b3ececdd718fe0488de647a5b8e6faba8f",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3588507,
+				"source": "https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/frogie/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "9c7e1ddc6c041c803bbea368e3b67de3771e500ffd9df33d801206858f11dba3"
+			},
+			"subject": "Full-body green frog with musical notes",
+			"productEvidence": {
+				"description": {
+					"en": "A local-first home for your AI agents. Chat, tools, and sessions in one place.",
+					"zh": "AI 智能体的本地工作台，把对话、工具与会话放在一起。"
+				},
+				"purpose": {
+					"en": "Work on local project directories through a web coding assistant, keeping conversations, tool execution, MCP tools and resumable sessions together.",
+					"zh": "通过网页编程助手处理本地项目，把对话、工具执行、MCP 工具和可续接会话放在一起。"
+				},
+				"source": "src/data/projects/frogie.json",
+				"inspectedRevision": "e965214c3efe99f4c4b459e6716e2014184dc32d"
+			},
+			"action": "generate",
+			"study": "artwork/brands/frogie/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/frogie/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Lily margins",
+					"zh": "睡莲留白"
+				},
+				"motif": "A freshwater pond margin: broad water-lily pads with asymmetric radial veins, a few slender reed blades and duckweed pairs. Rounded pads form a loose crescent in the lower right, with ample open water-like paper between them. No flowers.",
+				"description": {
+					"en": "Broad water-lily pads with asymmetric radial veins, a few slender reed blades and duckweed pairs.",
+					"zh": "睡莲的圆叶与细长芦苇散落在池塘边，把青蛙的声场留在宽阔的纸面上。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "pew",
+			"title": "Pew",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "33c24166e652029e4011a4aefc5fa987ec09bccd5d1d0339c6c89a9fb758b3c1",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pew-2026-09-07.png",
+				"sha256": "5c002bb5dcfb31f4db5ca52958e58175ad32bf0a34288828ddf443375b573ecb",
+				"rgbaSha256": "4aee77659ada21ae9ee05380705d730b716e6ef6e211cb1d875dd744284cbaf7",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3043802,
+				"source": "https://github.com/nocoo/pew/blob/5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pew/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "3c887b4744917d7a6e943011c6dc8776e48b25c878cdafd271060fbf5e5f9ec1"
+			},
+			"subject": "Zebra portrait with a rainbow tongue",
+			"productEvidence": {
+				"description": {
+					"en": "A contribution graph for the AI-native era. See your coding tokens tell a story.",
+					"zh": "AI 时代的贡献图，把不同编程工具的 Token 使用记录变成可见的轨迹。"
+				},
+				"purpose": {
+					"en": "Understand AI coding-tool usage through token and session statistics, with analysis by time, model, device, and project.",
+					"zh": "汇总 AI 编程工具的 token 与会话统计，按时间、模型、设备和项目分析使用情况。"
+				},
+				"source": "src/data/projects/pew.json",
+				"inspectedRevision": "5e3ed1dcbd00003ecf8b44fd4f1418711d89b67b"
+			},
+			"action": "generate",
+			"study": "artwork/brands/pew/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/pew/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Savanna in stripes",
+					"zh": "草原条序"
+				},
+				"motif": "Open African grassland: upright bunchgrass blades and fine oat-like seed heads bent in alternating directions, with one sparse acacia leaflet spray. Long tapered botanical bands suggest the zebra's rhythm without drawing stripes, animals or an instrument grid.",
+				"description": {
+					"en": "Upright bunchgrass blades and fine oat-like seed heads bent in alternating directions, with one sparse acacia leaflet spray.",
+					"zh": "疏密相间的草叶和细小穗头延续斑马的节奏，一枝金合欢小叶留出开阔草原的空气。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "firefly",
+			"title": "Firefly",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "6359c56c199185f7fc826db41982fff1d6d1c4befad72c60f31b7112b68b1575",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/firefly-2026-09-06.png",
+				"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759",
+				"rgbaSha256": "c5c4bb38f0c78b094c2c72b7f84478618fd17544c6eecf97a27ad1747c6d3df6",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2583578,
+				"source": "https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/firefly/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d7fb1a2226dd80bc04ff888f127f41ee143c9d33237f4226766c84dcec5bc39d"
+			},
+			"subject": "Broad-winged faceted firefly with a small campfire",
+			"productEvidence": {
+				"description": {
+					"en": "A modern home for writing, publishing, and the ideas worth keeping.",
+					"zh": "写作、发布，也留住值得记录的想法。由 WordPress 迁移而来的博客平台。"
+				},
+				"purpose": {
+					"en": "Write, publish and organize a personal blog through a web console and AI clients sharing the same content.",
+					"zh": "写作、发布和整理个人博客，让网页后台与 AI 客户端共用一套内容。"
+				},
+				"source": "src/data/projects/firefly.json",
+				"inspectedRevision": "70a4de51b9fe6f152805298c031ca92165754c40"
+			},
+			"action": "generate",
+			"study": "artwork/brands/firefly/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/firefly/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Bracken after dusk",
+					"zh": "暮色蕨影"
+				},
+				"motif": "A temperate woodland clearing for a firefly: a few broad triangular bracken fronds, low fern curls and fine damp meadow blades. Arrange two unequal branching fronds across opposite outer corners, not a wreath. No glowing dots, flames or luminous particles.",
+				"description": {
+					"en": "A few broad triangular bracken fronds, low fern curls and fine damp meadow blades.",
+					"zh": "暮色林地里的三角蕨叶与低矮草丛，给萤火虫留出安静而通透的活动空间。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "bogo",
+			"title": "Bogo",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "0f4ad8ab082afaa2aa1b09e6c7c36b7215d0f8e3436e71863a71b355476b24b9",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/bogo-2026-09-07.png",
+				"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+				"rgbaSha256": "0e65a5f9f626a218390f9e483657a774beb85b81abbdc43e751958194c12f384",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3637079,
+				"source": "https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/bogo/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "a9001ae45cb49e369018b962121d9d7d90771670f68dd647275192b6c2bb7dad"
+			},
+			"subject": "Winking faceted buffalo with a plain muzzle and one rainbow flower sprig",
+			"productEvidence": {
+				"description": {
+					"en": "A personal knowledge home for documents, people, and the connections between them.",
+					"zh": "把文档、人物与工作空间放在一起，整理个人知识和它们之间的联系。"
+				},
+				"purpose": {
+					"en": "Keep reporting relationships, documents and revision history together in workspaces, with web and CLI access to the same knowledge base.",
+					"zh": "围绕人物和工作空间整理组织关系、文档和版本记录，并用网页与命令行维护同一份知识库。"
+				},
+				"source": "src/data/projects/bogo.json",
+				"inspectedRevision": "77e211a294a885fff2830d0aba2e48a10299dff1"
+			},
+			"action": "generate",
+			"study": "artwork/brands/bogo/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/bogo/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Floodplain folio",
+					"zh": "河滩叶册"
+				},
+				"motif": "A broad buffalo floodplain habitat, without asserting a species: robust wetland grass leaves in bent fans, paired sedge seed heads and one broad water-margin leaf. Overlapping leaf tips resemble the edges of stored folios, while remaining entirely botanical.",
+				"description": {
+					"en": "Robust wetland grass leaves in bent fans, paired sedge seed heads and one broad water-margin leaf.",
+					"zh": "水牛活动的河滩上，宽草叶与莎草穗层层错落，像知识档案中自然叠放的书页。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "steed",
+			"title": "Steed",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "fb6e70b32f30c2ca0e4add8044100b3e9767430a1cfaebbc6566abfaabc1847f",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/steed-family-2026-09-07-02-01.png",
+				"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+				"rgbaSha256": "46a488e99620ef31cd24171daab4376205391f8a4de0cee02444fba99c375980",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3189966,
+				"source": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/steed/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "72a724ace9eff372af9fe736528196900bedefc004d0062579df2f890cbb8b24"
+			},
+			"subject": "Chestnut horse portrait with an ivory blaze and one colorful bird",
+			"productEvidence": {
+				"description": {
+					"en": "A shared home for AI agents, their assets, and the relationships between them.",
+					"zh": "面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。"
+				},
+				"purpose": {
+					"en": "Give users a shared inventory of agents, CLI tools and their bindings across hosts, so they can check status, ownership and business categories.",
+					"zh": "集中盘点多台主机上的 Agent、CLI 工具资源与绑定关系，帮助使用者核对运行状态、资源归属和业务分类。"
+				},
+				"source": "src/data/projects/steed.json",
+				"inspectedRevision": "bcab1f113b9b7cde65898bbd23705c7dac339634"
+			},
+			"action": "generate",
+			"study": "artwork/brands/steed/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/steed/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Wind through the pasture",
+					"zh": "牧场风序"
+				},
+				"motif": "An open horse pasture: long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves. Use a low horizontal sweep that gathers at the bottom right and opens toward the upper left. No fencing, horseshoes or racing symbols.",
+				"description": {
+					"en": "Long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves.",
+					"zh": "梯牧草与松散燕麦穗顺风舒展，用牧场里连续的草叶呼应马匹轻快的步调。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "ellie",
+			"title": "Ellie",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "7b344b092594a91899c0c9564f28b562e4a30e49220e7cb3468c17448506898d",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+				"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+				"rgbaSha256": "f7e7d2e9e16a7cbf2b511fda50e8016165e61b9349c9a941817560ea7c1510a7",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2690184,
+				"source": "https://github.com/nocoo/ellie/blob/300b8540eac51ae21803a8d58ebffbe3d90efa24/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/ellie/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "59ff861f2b1e5d8fc6c60ef110bf7c5eb24bda9659dd74b5f7c55eafd17aa75c"
+			},
+			"subject": "Mineral-gray elephant portrait with a curled trunk and one paper airplane",
+			"productEvidence": {
+				"description": {
+					"en": "A modern forum for thoughtful conversations, with a companion terminal client.",
+					"zh": "为认真交流而做的现代论坛，也提供可以在终端里使用的客户端。"
+				},
+				"purpose": {
+					"en": "Browse and maintain the Tongji Network forum, bringing historical Discuz content into a current community interface.",
+					"zh": "浏览与维护同济网论坛，将 Discuz 历史内容接入新的社区界面。"
+				},
+				"source": "src/data/projects/ellie.json",
+				"inspectedRevision": "300b8540eac51ae21803a8d58ebffbe3d90efa24"
+			},
+			"action": "generate",
+			"study": "artwork/brands/ellie/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/ellie/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Mopane conversations",
+					"zh": "林叶相听"
+				},
+				"motif": "A broad elephant woodland habitat: distinctive paired butterfly-shaped mopane leaves on restrained twigs, with one small acacia spray. Three overlapping leaf pairs occupy unequal positions near the edges. Broad pressed veins suggest attentive open ears without drawing an elephant.",
+				"description": {
+					"en": "Distinctive paired butterfly-shaped mopane leaves on restrained twigs, with one small acacia spray.",
+					"zh": "成对的宽叶与细小金合欢叶彼此呼应，像林间展开的倾听空间，保留大象的从容。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "neo",
+			"title": "Neo",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "9d7a38a51f348445542d2a8369be4e4eb5d825dbe201c02ff6e593ea4af4d7eb",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/neo.png",
+				"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+				"rgbaSha256": "e033e674d024a43207e63bbfb4c8b15b6059e95f6de3337fe14f49a870f568e5",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4237355,
+				"source": "https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/neo/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "ef160197f5750bd609abe0f5ca5885c428b4bee3c2c5e1d2bb1d079c9da65b1a"
+			},
+			"subject": "Original golden faceted retriever with a relaxed smile",
+			"productEvidence": {
+				"description": {
+					"en": "Your two-factor codes, together. Encrypted storage, easy imports, and offline access.",
+					"zh": "把双重验证口令放在一起，支持加密存储、多格式导入与离线访问。"
+				},
+				"purpose": {
+					"en": "Manage authentication secrets and TOTP codes in a browser, move data between authenticators, and maintain encrypted backup archives.",
+					"zh": "在浏览器中管理认证密钥和 TOTP 验证码，在认证器之间迁移数据，并维护加密备份归档。"
+				},
+				"source": "src/data/projects/neo.json",
+				"inspectedRevision": "0d750484792449914b07e9b3e3404a823493f8a5"
+			},
+			"action": "generate",
+			"study": "artwork/brands/neo/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/neo/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A familiar garden",
+					"zh": "熟悉的庭院"
+				},
+				"motif": "A domestic retriever's temperate garden setting, not a claimed wild habitat: soft apple-tree leaves, a few clover leaflets and two rounded fallen leaves. Quiet diagonally placed leaf clusters suggest a familiar home. No dog bones, paw prints, locks or flowers.",
+				"description": {
+					"en": "Soft apple-tree leaves, a few clover leaflets and two rounded fallen leaves.",
+					"zh": "苹果树叶与少量三叶草构成熟悉的庭院，承接金毛犬温和的性格，也给私人资料留出安稳的空间。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "giraffe",
+			"title": "Giraffe",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "e3e0ce22580bde80d800a00aa11c1f0c82e8378abbb45126343875352b8bb8a0",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+				"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+				"rgbaSha256": "774800377f2c972039f9999a476d3a784145289317203d21b840f520def78b32",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3073843,
+				"source": "https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/giraffe/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "dba985c1f01d1eff465ffca8b14dc8acab7465a4b9ffa0d876fcee66a794abea"
+			},
+			"subject": "Honey-colored giraffe portrait nibbling one colorful acacia sprig",
+			"productEvidence": {
+				"description": {
+					"en": "A personal GitHub observatory for repositories, workflows, and encrypted snapshots.",
+					"zh": "个人 GitHub 观察台，集中查看仓库、工作流与加密的访问令牌快照。"
+				},
+				"purpose": {
+					"en": "Review repositories, open work, alerts, and daily changes across GitHub accounts in a personal console with on-demand data refreshes.",
+					"zh": "在个人控制台查看多个 GitHub 账号的仓库、待办、告警和每日变化，按需同步 GitHub 数据。"
+				},
+				"source": "src/data/projects/giraffe.json",
+				"inspectedRevision": "c71543478405f580e6dd36ebac18174f7ae6e474"
+			},
+			"action": "generate",
+			"study": "artwork/brands/giraffe/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/giraffe/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Acacia at eye level",
+					"zh": "枝头金合欢"
+				},
+				"motif": "Giraffe browsing height: unmistakable delicate bipinnate acacia leaflets, one restrained curved seed pod and thin forked twigs. A high airy canopy from the upper right, with tiny leaflets visibly embossed at thumbnail size. No unrelated tropical leaves or blossoms.",
+				"description": {
+					"en": "Unmistakable delicate bipinnate acacia leaflets, one restrained curved seed pod and thin forked twigs.",
+					"zh": "纤细的金合欢复叶与弯曲豆荚落在枝头，像长颈鹿抬眼便能触及的一小片树冠。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "backy",
+			"title": "Backy",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "89bb23cbf0c688d6fee36101730523cdace579539cda36c5576cc6d0ab0005e8",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/backy-family-2026-09-07-01-01.png",
+				"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+				"rgbaSha256": "49f884dafacfb6da547e5c951c5ee9fe475828902dcb703aa26461125e2238bd",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2447370,
+				"source": "https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/backy/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "029e181db0592f4696a9cd0f7f8a79d64cb302f59e6930341facad04dd77904f"
+			},
+			"subject": "Small olive tortoise with one folded multicolored leaf on its shell",
+			"productEvidence": {
+				"description": {
+					"en": "A dependable home for AI-agent backups. Store, inspect, and restore with confidence.",
+					"zh": "给 AI 智能体的备份服务，集中接收、存储、预览和恢复数据。"
+				},
+				"purpose": {
+					"en": "Collect application backups, inspect content and history by project, and retrieve original files.",
+					"zh": "集中接收应用备份，按项目查看内容、追踪记录，并取回原始文件。"
+				},
+				"source": "src/data/projects/backy.json",
+				"inspectedRevision": "5b23349c94ac6778f2242a857386e8b01dac4f1c"
+			},
+			"action": "generate",
+			"study": "artwork/brands/backy/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/backy/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Shelter in the scrub",
+					"zh": "灌丛小憩"
+				},
+				"motif": "A plausible dry scrub environment for an unspecified small tortoise: broad ribbed plantain leaves, rounded low mallow leaves and a few dry grass seeds. A compact ground-level cluster rests along the lower edge. No shell pattern, succulent rosettes or flowers.",
+				"description": {
+					"en": "Broad ribbed plantain leaves, rounded low mallow leaves and a few dry grass seeds.",
+					"zh": "车前叶的筋脉、低矮锦葵叶和干草籽贴近地面，给小陆龟留下一片有遮蔽的灌丛。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "otter",
+			"title": "Otter",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "dba2cd5693af20b3504bbb569e534cd5ccce537a6f7a414c66c91fac4f489fa8",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/otter-family-2026-09-07-01-02.png",
+				"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+				"rgbaSha256": "1caf168d0eb1043f5f868d5d1d891ab4dd5e7ab09b8e0d2384ede73720e1bf49",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2941233,
+				"source": "https://github.com/nocoo/otter/blob/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/otter/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "9ae4475359ce35ef114462441ef98c5b7a206ffbc1fd9a92678204b80444316f"
+			},
+			"subject": "Brown otter in a relaxed curl holding one colorful river shell",
+			"productEvidence": {
+				"description": {
+					"en": "Keep your Mac development setup safe with snapshots, diffs, and cloud backups.",
+					"zh": "用快照、差异比较与云端备份，保存 Mac 开发环境的每一次变化。"
+				},
+				"purpose": {
+					"en": "Save macOS development settings and inventories as snapshots for inspection and migration.",
+					"zh": "保存 macOS 开发环境配置与清单快照，方便查看变化和迁移电脑。"
+				},
+				"source": "src/data/projects/otter.json",
+				"inspectedRevision": "0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3"
+			},
+			"action": "generate",
+			"study": "artwork/brands/otter/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/otter/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Willow beside the river",
+					"zh": "河畔柳叶"
+				},
+				"motif": "A riverbank habitat: long willow leaves on bowed supple stems, ribbon-like reeds and a little low sedge. Arrange the willow in a single gentle S-flow along the right margin, with a smaller detached leaf near the bottom. No shells, bubbles or water droplets.",
+				"description": {
+					"en": "Long willow leaves on bowed supple stems, ribbon-like reeds and a little low sedge.",
+					"zh": "细长柳叶沿柔软枝条弯折，芦苇与莎草贴着河岸，把水獭松弛的姿态延伸进留白。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "gecko",
+			"title": "Gecko",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "4d8e9175c60922f4fc39b29a0c24eeba1db3f22850cbca2fba0f49167470ff62",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/gecko.png",
+				"sha256": "8808c313490254f126fa050aee2af4d6d9496e20c007b15036a26d4c06e478d3",
+				"rgbaSha256": "b406b0ca8fdb6f42efd992039159ee19245cedff52b8f72d2216a79ca2db68c3",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2799098,
+				"source": "https://github.com/nocoo/gecko/blob/f259be7fe740ce260c9257e2870b57dec8d9e7b3/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/gecko/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "5a3c2287c42d49d95fc352faa67ad9fdf9d2fac3ef39073b1657e5e8962c7229"
+			},
+			"subject": "Original sandstone-colored gecko with a complete curled tail and toes",
+			"productEvidence": {
+				"description": {
+					"en": "A little perspective on your screen time, with a Mac tracker and a synced dashboard.",
+					"zh": "用 Mac 时间追踪器和同步仪表盘，看看自己的时间花在了哪里。"
+				},
+				"purpose": {
+					"en": "Record app and window usage on a Mac, review daily activity in a synced web dashboard, and optionally generate an AI-assisted daily review.",
+					"zh": "记录 Mac 上的应用和窗口使用时间，在同步后的 Web 控制台回看每日活动，并按需生成 AI 每日回顾。"
+				},
+				"source": "src/data/projects/gecko.json",
+				"inspectedRevision": "f259be7fe740ce260c9257e2870b57dec8d9e7b3"
+			},
+			"action": "generate",
+			"study": "artwork/brands/gecko/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/gecko/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A warm stone garden",
+					"zh": "暖石叶隙"
+				},
+				"motif": "A plausible warm dry garden for an unspecified sandstone-colored gecko: small fleshy stonecrop leaves on branching stems, narrow aloe-like leaf tips and sparse dry grass. Keep the succulent grouping irregular and open, without symmetrical rosettes or literal stones as objects.",
+				"description": {
+					"en": "Small fleshy stonecrop leaves on branching stems, narrow aloe-like leaf tips and sparse dry grass.",
+					"zh": "景天小叶、细窄肉质叶尖与干草从暖石边的缝隙生长，呼应壁虎亲近地面的生活环境。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "dove",
+			"title": "Dove",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "5151e2ee80134b73ecde40bb697e49cc291b3d75cc2ae0eb2636397391f36b72",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dove.png",
+				"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+				"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4062349,
+				"source": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dove/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "3d21fe506c569846b90e45d0c1d164414222c2443406ac6f7bba2773f03fe1a7"
+			},
+			"subject": "Original violet and teal faceted dove with pink blossoms",
+			"productEvidence": {
+				"description": {
+					"en": "A self-hosted email relay with webhooks, reusable templates, and delivery insights.",
+					"zh": "可自行托管的邮件中继，支持 Webhook、邮件模板与用量查看。"
+				},
+				"purpose": {
+					"en": "Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.",
+					"zh": "为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。"
+				},
+				"source": "src/data/projects/dove.json",
+				"inspectedRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0"
+			},
+			"action": "generate",
+			"study": "artwork/brands/dove/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/dove/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "An orchard perch",
+					"zh": "花枝停驻"
+				},
+				"motif": "A temperate orchard perch for the existing dove with pink blossom accents: serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush. Leaves dominate; petals occupy less than two percent of the canvas.",
+				"description": {
+					"en": "Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.",
+					"zh": "锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "pika",
+			"title": "Pika",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "d425751abeb657b014293aaf1a526677bfb78988c332c90b5cb26f4eeea8949a",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pika.png",
+				"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+				"rgbaSha256": "eb0b6d340814453446719fdb25a356e8409980a029ab89d445b50a866d10bca3",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2575312,
+				"source": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pika/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "ef1aad7bbb61a5f7e2230a46fc4f53ef6989f72b98f5a84a6bb50277adea6dcd"
+			},
+			"subject": "Original yellow Pika with its complete lightning gesture",
+			"productEvidence": {
+				"description": {
+					"en": "Replay, search, and rediscover your AI coding conversations.",
+					"zh": "回放、搜索和重新发现 AI 编程会话，让过去的思路更容易找回来。"
+				},
+				"purpose": {
+					"en": "Collect coding-agent sessions to search, read and organize across tools.",
+					"zh": "集中保存不同 AI 编程工具的会话，方便搜索、阅读和整理。"
+				},
+				"source": "src/data/projects/pika.json",
+				"inspectedRevision": "bb9b497372809e5ca00eaef4b04e1aa51e4256a3"
+			},
+			"action": "generate",
+			"study": "artwork/brands/pika/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/pika/v1.0.0",
+			"design": {
+				"identityType": "fictional-animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A woodland pause",
+					"zh": "林间片刻"
+				},
+				"motif": "A woodland interpretation for the existing fictional yellow electric rodent, not a biological pika claim: soft fern tips, hazel leaves and a few moss-like low leaf sprays. Angular leaf tips suggest alert energy. No lightning glyph, cartoon character, animal, flowers or yellow field.",
+				"description": {
+					"en": "Soft fern tips, hazel leaves and a few moss-like low leaf sprays.",
+					"zh": "榛树叶、蕨尖与低矮苔叶围出林间空地，呼应现有虚构角色的活力，不把它误认成真实鼠兔。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "raven",
+			"title": "Raven",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "79e1a4bc7b1c8e9f7c34244d8d2e4496ba97c728b4dad59adebc6ad7b1fefd14",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+				"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+				"rgbaSha256": "a9943f772e250c4f7b6a9dad5a10163327a4219d7f9384f7363ee02c99f8d7c6",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2327803,
+				"source": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/raven/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "167cffd895b81e436868e2fb8099cf3db0c3b49de0b95cb824d557f69e05fd45"
+			},
+			"subject": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents",
+			"productEvidence": {
+				"description": {
+					"en": "Connect GitHub Copilot to Anthropic- and OpenAI-compatible tools and track usage.",
+					"zh": "为 GitHub Copilot 提供兼容 Anthropic 与 OpenAI 的接口，并查看使用情况。"
+				},
+				"purpose": {
+					"en": "Connect compatible clients to GitHub Copilot and custom model upstreams through a local API proxy, with request analytics and live diagnostics.",
+					"zh": "通过本机 API 代理将兼容客户端接入 GitHub Copilot 与自定义模型上游，并查看调用统计和实时诊断信息。"
+				},
+				"source": "src/data/projects/raven.json",
+				"inspectedRevision": "c59fe3ad5a0aea2e849b2b9ee00be189091c9faf"
+			},
+			"action": "generate",
+			"study": "artwork/brands/raven/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/raven/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Rowan and pine",
+					"zh": "花楸与松"
+				},
+				"motif": "A broad temperate woodland habitat for a raven: narrow pine needle fans and compound rowan leaves, with only three tiny muted seed-like berries. Place a sparse branch across the upper right and a smaller angled spray below. No black feather illustrations or gothic ornament.",
+				"description": {
+					"en": "Narrow pine needle fans and compound rowan leaves, with only three tiny muted seed-like berries.",
+					"zh": "松针与羽状花楸叶疏朗地分布在枝头，少量暗色果点呼应乌鸦清醒而沉静的气质。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "bat",
+			"title": "Bat",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "dffb5b23aa4e2ab93da471662c52825c99410eec99a2349184cb55bd042cc9b9",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/bat-family-2026-09-07-01-02.png",
+				"sha256": "882034b5b3e7511560a999422199cb486c80ee3fc00eb586d6584326fa4f1e1d",
+				"rgbaSha256": "60ff960d46d5cad67e02c738b09a17498607ad59bf0088b1a9112fbb3f8ec143",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2092682,
+				"source": "https://github.com/nocoo/bat/blob/46f5c95a6c134487130e2a6d9336ec5e8895a0f7/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/bat/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "b6a26ef50aa43f9972208cfda141ec997a79fc0523a52d953e72c32c0bbc9a97"
+			},
+			"subject": "Upright plum bat with folded wings and one colorful fig",
+			"productEvidence": {
+				"description": {
+					"en": "A lightweight watchtower for your servers, with a Rust probe and a clear dashboard.",
+					"zh": "轻量的服务器观察台，用 Rust 探针采集状态，在仪表盘里集中查看。"
+				},
+				"purpose": {
+					"en": "Collect Linux host metrics to inspect fleet status, alerts and infrastructure assets.",
+					"zh": "采集 Linux 主机指标，集中查看主机状态、告警与基础设施资产。"
+				},
+				"source": "src/data/projects/bat.json",
+				"inspectedRevision": "46f5c95a6c134487130e2a6d9336ec5e8895a0f7"
+			},
+			"action": "generate",
+			"study": "artwork/brands/bat/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/bat/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Fig leaves at dusk",
+					"zh": "暮色无花果"
+				},
+				"motif": "A plausible fig-tree feeding habitat for the bat holding a fig: large three-lobed fig leaves with soft radiating veins and a few small new leaves. Two incomplete clusters sit apart along the right and bottom edges. No fruit still life, bat silhouette or nighttime sky.",
+				"description": {
+					"en": "Large three-lobed fig leaves with soft radiating veins and a few small new leaves.",
+					"zh": "三裂无花果叶伸展出清楚的叶脉，疏散嫩叶承接蝙蝠身旁的无花果，避免另设醒目的果实主体。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "lyre",
+			"title": "Lyre",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "a70ed6e7949272102364cdbde25264d81f8889e72e441fc43499f6fd3e3fdb70",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/lyre.png",
+				"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+				"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3656299,
+				"source": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/lyre/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "8fea827e1961de64b8021a316c1ccfd9f741ef65e18dd73c8f354c0bc99b6817"
+			},
+			"subject": "Original chestnut faceted lyrebird with a curled feather crest",
+			"productEvidence": {
+				"description": {
+					"en": "Recordings, transcripts, and word-by-word playback, beautifully in sync.",
+					"zh": "整理录音和转写文本，让逐字高亮跟着声音一起播放。"
+				},
+				"purpose": {
+					"en": "Manage recordings, transcribe speech and follow the text during audio playback.",
+					"zh": "管理录音、转写文字，并在回听时查看对应内容。"
+				},
+				"source": "src/data/projects/lyre.json",
+				"inspectedRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e"
+			},
+			"action": "generate",
+			"study": "artwork/brands/lyre/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/lyre/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Under the fern canopy",
+					"zh": "蕨下回声"
+				},
+				"motif": "A damp southeastern Australian forest-floor setting for a lyrebird: finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip. Layer these asymmetrically as shallow botanical impressions, never a radial feather fan or a tropical monstera pattern.",
+				"description": {
+					"en": "Finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip.",
+					"zh": "树蕨细叶、桉树长叶与一枚嫩蕨卷承接琴鸟的湿润林地，把声音的层次藏进叶片重叠处。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "pokepocket",
+			"title": "Poké Pocket",
+			"archived": false,
+			"category": "games",
+			"sourceMetadataSha256": "323773055d69770cf87400bfafceb5b45e59efadb9c4b0e1cc3d988997e549f2",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pokepocket-family-2026-09-07-03-01.png",
+				"sha256": "eed19029ccc4a84efd6c4f9704566218820b98fee182fff93b628812b5fd278d",
+				"rgbaSha256": "76708e8fe45e7fb0e0d2bbf96e61002ca6a4246b88b3a52a309192a69ff7540d",
+				"width": 960,
+				"height": 960,
+				"bytes": 547985,
+				"source": "https://github.com/nocoo/pokepocket/blob/019798f1c8fae7a6e7c0beb2368279c9980c7188/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pokepocket/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d9650e21522e1441e9eb2c790ba56169a8691af52ef9f137455cae6a790ff1b6"
+			},
+			"subject": "Red-capped trainer turning with a Poké Ball",
+			"productEvidence": {
+				"description": {
+					"en": "GB / GBC / GBA collection with browser play and local saves",
+					"zh": "GB / GBC / GBA 游戏收藏盘，支持浏览器游玩与本地存档。"
+				},
+				"purpose": {
+					"en": "Play user-supplied GB, GBC, and GBA Pokémon cartridges in a browser collection while keeping controls and progress for each ROM.",
+					"zh": "在浏览器卡带收藏盘中游玩自备的 GB、GBC、GBA 宝可梦，管理操作设置和每枚 ROM 的进度。"
+				},
+				"source": "src/data/projects/pokepocket.json",
+				"inspectedRevision": "019798f1c8fae7a6e7c0beb2368279c9980c7188"
+			},
+			"action": "generate",
+			"study": "artwork/brands/pokepocket/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/pokepocket/v1.0.0",
+			"design": {
+				"identityType": "character",
+				"language": "product-material",
+				"name": {
+					"en": "A pocket field journal",
+					"zh": "口袋行记"
+				},
+				"motif": "A game explorer's well-made field-journal cover: tightly woven cotton canvas, shallow folded map creases, a few stitched pocket-edge impressions and one small quiet terracotta registration tab. Material surface only; no characters, animals, game logos, Poké Balls, readable maps or text.",
+				"description": {
+					"en": "Tightly woven cotton canvas, shallow folded map creases, a few stitched pocket-edge impressions and one small quiet terracotta registration tab.",
+					"zh": "细密棉帆布上的折图压痕与口袋缝线，呼应随身收藏和探索；不生成角色或游戏商标。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "dogfight",
+			"title": "Dogfight",
+			"archived": false,
+			"category": "games",
+			"sourceMetadataSha256": "b67f2fb7f39a525a35ddabc99928e53cbe7c9c54e96a87e24f6b7ad783fdc4ca",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+				"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+				"rgbaSha256": "d38c25f33fdb61ccca5e59c92e846e72b5cf06b3f66eea2008393f6fd3ac0064",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2743288,
+				"source": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dogfight/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+			},
+			"subject": "Titanium F-22 desk model caught in a banking turn",
+			"productEvidence": {
+				"description": {
+					"en": "An arcade dogfight in the browser. Take an F-22 into a sky full of Su-35s.",
+					"zh": "驾驶 F-22 迎战苏-35，在浏览器里体验街机风格的三维空战。"
+				},
+				"purpose": {
+					"en": "Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.",
+					"zh": "在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。"
+				},
+				"source": "src/data/projects/dogfight.json",
+				"inspectedRevision": "b5ab075a963a78516aaa351d6ca0178c64994729"
+			},
+			"action": "generate",
+			"study": "artwork/brands/dogfight/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/dogfight/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Banked alloy",
+					"zh": "倾斜合金"
+				},
+				"motif": "A satin titanium aircraft-model work surface: diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain. Subtle banked angles imply the desk model's turn. Not a real aircraft blueprint; no aircraft, weapons, targets, labels or interface.",
+				"description": {
+					"en": "Diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain.",
+					"zh": "斜向金属拼缝、少量齐平铆点与细腻拉丝呼应桌面战机模型的转弯，是材质联想而非真实飞机图纸。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "gaga",
+			"title": "Gaga",
+			"archived": false,
+			"category": "games",
+			"sourceMetadataSha256": "3ebd1e620bfa68f38bad605312796b463eb2596b0266910e02f45f2f0d143d39",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+				"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+				"rgbaSha256": "acefff7ae83f21c28183adbd0a8ffb4c4ce7fdec235bc2d426afd93754b793ac",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2357751,
+				"source": "https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/gaga/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "9f494c159c9a464f5ab1135577c1d97c8f4e0beeed4c2598c615c48f2d654ced"
+			},
+			"subject": "Naturally crouched biscuit-colored rabbit with one colorful carrot",
+			"productEvidence": {
+				"description": {
+					"en": "A tiny 3D playroom where Taotao can explore, wander, and discover toys.",
+					"zh": "给陶陶的小小三维玩具房，自由走动，探索喜欢的玩具。"
+				},
+				"purpose": {
+					"en": "Watch and guide a virtual character through a browser playroom with animated toys, camera controls, and a daily discovery journal.",
+					"zh": "在浏览器玩耍空间中观察并引导虚拟角色探索玩具，调整视角并查看当天足迹。"
+				},
+				"source": "src/data/projects/gaga.json",
+				"inspectedRevision": "76260f08329784eead9b30912c7692b8ea0d3d56"
+			},
+			"action": "generate",
+			"study": "artwork/brands/gaga/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/gaga/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A small garden to explore",
+					"zh": "小兔菜圃"
+				},
+				"motif": "A domestic rabbit's safe garden setting: feathery carrot fronds, soft clover leaves and a few broad dandelion leaves. A playful but calm low arrangement with rounded gaps between leaves. No carrots as focal objects, toys, flowers or animals.",
+				"description": {
+					"en": "Feathery carrot fronds, soft clover leaves and a few broad dandelion leaves.",
+					"zh": "轻盈胡萝卜缨、三叶草与蒲公英叶散落成小小菜圃，用柔软的间距承接兔子的探索欲。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "pew-game",
+			"title": "Pew Game",
+			"archived": false,
+			"category": "games",
+			"sourceMetadataSha256": "15d92cddc18d6c3ed9c52952762be7f5812f04830909c2db6dbcb0d868a1f192",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+				"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90",
+				"rgbaSha256": "04badff30d4e5f12298057074c1d6da23ee1e03c82f4f621057e2a2b45cf1135",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3907401,
+				"source": "https://github.com/nocoo/pew-game/blob/ee68b2dead3e5e698b2427d6a949e8e57c69d520/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pew-game/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "e367ff9d8d28c46e17e8b65e1cae732038dd61cf4c7db65133f1bac96cea4c5f"
+			},
+			"subject": "Walnut and brass prairie arcade joystick",
+			"productEvidence": {
+				"description": {
+					"en": "Pixel art prairie shooter with an all-time leaderboard",
+					"zh": "像素风草原射击游戏，支持键盘与触控操作，挑战历史排行榜。"
+				},
+				"purpose": {
+					"en": "Play a pixel prairie shooter with keyboard or touch controls, survive enemy waves with power-ups, and save scores to an all-time leaderboard.",
+					"zh": "用键盘或触控方向键游玩像素草原射击，收集道具、抵挡敌人波次，并将成绩保存到历史排行榜。"
+				},
+				"source": "src/data/projects/pew-game.json",
+				"inspectedRevision": "5200316563da59252505ece261388e4c89266017"
+			},
+			"action": "generate",
+			"study": "artwork/brands/pew-game/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/pew-game/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "At the arcade bench",
+					"zh": "街机工作台"
+				},
+				"motif": "A handmade walnut arcade work surface: straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right. Quiet warm sand tones, no decorative prairie illustration, literal joystick, buttons, numbers or text.",
+				"description": {
+					"en": "Straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right.",
+					"zh": "顺直胡桃木纹、旧黄铜压边与两道浅弧沟承接手作街机的触感，把动作空间留给摇杆原标。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "rooster",
+			"title": "Rooster",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "0fcaaae91085c3c54b45380e8f49ef4f4a7d79c9cd641503f3e84f932869dcf8",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+				"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+				"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2780156,
+				"source": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/rooster/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+			},
+			"subject": "Copper rooster lifting one foot beside a multicolored morning glory",
+			"productEvidence": {
+				"description": {
+					"en": "A web control panel for Hermes Agent, from conversations to models and profiles.",
+					"zh": "Hermes Agent 的网页控制台，管理对话、会话、模型与配置。"
+				},
+				"purpose": {
+					"en": "Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.",
+					"zh": "通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。"
+				},
+				"source": "src/data/projects/rooster.json",
+				"inspectedRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3"
+			},
+			"action": "generate",
+			"study": "artwork/brands/rooster/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/rooster/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Morning-glory leaves",
+					"zh": "晨间牵牛叶"
+				},
+				"motif": "A farmyard garden for the rooster whose mark includes a morning glory: heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom. Leaves lead, with thin vertical grass near the lower edge. No bright flowers, poultry or sunrise emblem.",
+				"description": {
+					"en": "Heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom.",
+					"zh": "心形牵牛叶与一段松弛卷须沿庭院展开，只保留一枚安静花苞，承接公鸡的清晨气息。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "snaky",
+			"title": "Snaky",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "b691db5d9a0c89e3a6ea8cf1d9c83e09b1b6fcfaa2b31a78c37dbac2988cadee",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+				"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+				"rgbaSha256": "828aa7fce80d2a0b999d68686ce4dda89778a8de88f29c1b06441504f5ffea46",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2958177,
+				"source": "https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/snaky/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "a89eb7b01412aa2f8d79b3b007e5f1bb4a36acc94cec1f80209453aa10dae648"
+			},
+			"subject": "Green snake in a natural coil with one multicolored forked tongue",
+			"productEvidence": {
+				"description": {
+					"en": "Know where your traffic goes. Inspect VPN routes, exit IPs, latency, and proxy rules.",
+					"zh": "弄清网络流量去了哪里，检查 VPN 路由、出口 IP、延迟与分流规则。"
+				},
+				"purpose": {
+					"en": "Help VPN and proxy users check destination egress IPs, HTTP latency and DNS resolvers in one place to see whether routing matches their expectations.",
+					"zh": "让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、HTTP 延迟和 DNS 解析器，判断分流是否符合预期。"
+				},
+				"source": "src/data/projects/snaky.json",
+				"inspectedRevision": "5cd0790336d006f65555816fe29869d6e60ed376"
+			},
+			"action": "generate",
+			"study": "artwork/brands/snaky/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/snaky/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "The meadow bends",
+					"zh": "草叶转弯"
+				},
+				"motif": "An unspecified small green snake's meadow-edge habitat: narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads. Use sinuous botanical paths while leaving broad negative space. No scales, snake drawing, circuit paths or geometric route arrows.",
+				"description": {
+					"en": "Narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads.",
+					"zh": "细草叶与车前长叶缓慢交错，草甸边缘的弯折自然呼应蛇的行进，也让路径有处可寻。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "showtime",
+			"title": "Showtime",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "ae441b73ff67657bea2a35ca87b8e757d55fa60d41453ec0d68e7eefb71a5c57",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+				"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+				"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3865252,
+				"source": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/showtime/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "86ee82731567d382e5e625ac1ef09b99e96f8acd4fd28241573a22cd8b0c84d8"
+			},
+			"subject": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge",
+			"productEvidence": {
+				"description": {
+					"en": "Native macOS browser for agent-directed product demo recordings",
+					"zh": "原生 macOS 演示浏览器，由 Agent 编排网页交互并录制产品演示"
+				},
+				"purpose": {
+					"en": "Turn scripted interactions with real webpages into product demo movies on macOS. Agents can direct pointer movement, clicks, typing, camera zoom and animated captions through JSON scripts, a CLI or MCP; the native browser exports MP4 without an audio track.",
+					"zh": "把真实网页上的脚本化交互制作成 macOS 产品演示视频。Agent 可通过 JSON 剧本、CLI 或 MCP 编排鼠标移动、点击、输入、镜头缩放和动态字幕，原生浏览器将演示导出为不含音轨的 MP4。"
+				},
+				"source": "src/data/projects/showtime.json",
+				"inspectedRevision": "9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
+			},
+			"action": "generate",
+			"study": "artwork/brands/showtime/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/showtime/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Before the first frame",
+					"zh": "开机之前"
+				},
+				"motif": "A film editing work mat: fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches. Tactile optical-bench restraint; no clapperboard, letters, numbers, film scenes or UI.",
+				"description": {
+					"en": "Fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches.",
+					"zh": "哑光摄影纸的细齿、片门导轨与稀疏齿孔压痕，呼应录制前对齐画面的一刻。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "infospace",
+			"title": "Info Space",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "b3508133a7aa25c648682d9bcc107e7a0d985bb5fc6c6187bcac90cc59470f5f",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+				"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+				"rgbaSha256": "86f99fbc319481ec964495407e06d4f645f2934acc9db98b31d583cdf94898f2",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4365206,
+				"source": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/infospace/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "42205956aa29c5b355dddb89a4b8b826f31d4b4d443b9e8379e5beaba10c1757"
+			},
+			"subject": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+			"productEvidence": {
+				"description": {
+					"en": "Native SwiftUI workspace SDK with resizable grids and customizable information panels",
+					"zh": "原生 SwiftUI 工作区 SDK，支持可调整的网格和自定义信息面板"
+				},
+				"purpose": {
+					"en": "Give macOS app developers a reusable SwiftUI workspace for arranging their own content in resizable panels. The SDK handles grid geometry, snapping and panel identity; the included demo shows the interactions with sample content kept only for the current session.",
+					"zh": "为 macOS 应用开发者提供可复用的 SwiftUI 工作区，把自己的内容放进可调整大小的面板。SDK 处理网格几何、吸附与面板身份；附带演示应用展示这些交互，示例内容仅在本次运行中保留。"
+				},
+				"source": "src/data/projects/infospace.json",
+				"inspectedRevision": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf"
+			},
+			"action": "generate",
+			"study": "artwork/brands/infospace/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/infospace/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Dividers with room to move",
+					"zh": "可移动的隔页"
+				},
+				"motif": "An information-tray lining: dense fine wool felt, shallow offset divider slots, rounded paper-edge steps and alternating unequal rectangular compartments suggested only at the edges. Keep the center spacious. No folders, paper stacks, readable documents or a literal dashboard.",
+				"description": {
+					"en": "Dense fine wool felt, shallow offset divider slots, rounded paper-edge steps and alternating unequal rectangular compartments suggested only at the edges.",
+					"zh": "细密羊毛毡上的错位隔板槽与纸边台阶，让可调整的信息分区成为可触摸的工作表面。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "signoff-now",
+			"title": "signoff.now",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "446bafeb8204ee4cebfc04b219ce8285d7f7899388d427499c3596ef84e50b7c",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+				"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+				"rgbaSha256": "29dd63381dfdda91cf723593090cc28bd1fea16c4e0d525d4ea9bb61a5ad0e03",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3963278,
+				"source": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/signoff-now/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d0a9d0532ef2f096c1406500a98b987fb0e3c81c7dc6f59c4f12715d447fb2b9"
+			},
+			"subject": "Petrol enamel mechanical tally counter",
+			"productEvidence": {
+				"description": {
+					"en": "Developer and Git activity analytics",
+					"zh": "开发者与 Git 活动分析"
+				},
+				"purpose": {
+					"en": "Help managers review registered developers’ Azure DevOps PR, review, and work item activity through daily scores, comparisons, and timelines, with data collected by a local CLI.",
+					"zh": "通过本地 CLI 采集已登记开发者的 Azure DevOps PR、评审和工作项活动，帮助管理者按日查看积分、人员对比与活动明细。"
+				},
+				"source": "src/data/projects/signoff-now.json",
+				"inspectedRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0"
+			},
+			"action": "generate",
+			"study": "artwork/brands/signoff-now/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/signoff-now/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Counted impressions",
+					"zh": "计数压痕"
+				},
+				"motif": "A mechanical tally ledger surface: firm uncoated paper with shallow letterpress ruling, small grouped five-stroke impressions and a few offset column stops. Use a sparse nonliteral rhythm and no actual count, numbers, text or chart. The material recalls recording developer activity.",
+				"description": {
+					"en": "Firm uncoated paper with shallow letterpress ruling, small grouped five-stroke impressions and a few offset column stops.",
+					"zh": "硬挺记录纸上的压线、分组刻痕与错位栏位呼应机械计数器，表达持续记录而不伪造数据。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "unseal",
+			"title": "Unseal",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "b0891c05e12d58919b344c54c193c93f2cf0341840fb1ced2ef43d107f813571",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/unseal-family-2026-09-07-01-01.png",
+				"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b",
+				"rgbaSha256": "840e77e4a3e9bad9291ed7f93b06708a9d7683924ae950501ae489f60ed14b4d",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2323865,
+				"source": "https://github.com/nocoo/unseal/blob/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/unseal/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "a558ea617cee2b5e1a849336924c5b005a0ef98f92f58445c1977f462cb47b9c"
+			},
+			"subject": "An opened green enamel and brass padlock",
+			"productEvidence": {
+				"description": {
+					"en": "Find quarantined macOS apps and interactively remove their quarantine flags.",
+					"zh": "扫描被 macOS 隔离的应用，交互式地批量解除隔离标记。"
+				},
+				"purpose": {
+					"en": "Review quarantine results for apps in /Applications and select trusted apps for batch removal of the quarantine attribute.",
+					"zh": "查看 /Applications 内应用的隔离检测结果，选择可信应用后批量移除隔离属性。"
+				},
+				"source": "src/data/projects/unseal.json",
+				"inspectedRevision": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a"
+			},
+			"action": "generate",
+			"study": "artwork/brands/unseal/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/unseal/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "An open seam",
+					"zh": "松开的封缝"
+				},
+				"motif": "A locksmith's restrained wool-and-enamel service surface: fine compressed felt tooth, one open curved shackle-seat impression, a broken sealing seam and a tiny brushed-brass edge accent. Emphasize release, not a repeating padlock or security guarantee. No words or symbols.",
+				"description": {
+					"en": "Fine compressed felt tooth, one open curved shackle-seat impression, a broken sealing seam and a tiny brushed-brass edge accent.",
+					"zh": "压实毡面的开口弧槽、断开的封缝与极少黄铜边光，呼应解除限制后的松动感。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "flow",
+			"title": "Flow",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "a67b8ebd863ba6a4a4fd2307eb7179e67f8cfe9bff3530f5ad20475cd06f6cf2",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/flow-family-2026-09-07-01-01.png",
+				"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23",
+				"rgbaSha256": "f82a6e06d0392fa88169a35baf45f734ba12a43f8e60d75d191dabdbd9b83ffb",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3201869,
+				"source": "https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/flow/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "5f26106f3d434d7c82041181ee216870a25ea34356458d1b81810c6b6c68818a"
+			},
+			"subject": "Celadon mechanical keycap with a Chinese character",
+			"productEvidence": {
+				"description": {
+					"en": "A Chinese pinyin input engine that brings language models into everyday typing.",
+					"zh": "把大语言模型带进日常输入的中文拼音引擎，支持智能分词与预测。"
+				},
+				"purpose": {
+					"en": "Explore language-model Chinese pinyin conversion, text polishing, and chat in a browser using configurable OpenAI-compatible model services.",
+					"zh": "在浏览器中使用可配置的 OpenAI 兼容模型服务，试验中文拼音转换、文本润色和对话。"
+				},
+				"source": "src/data/projects/flow.json",
+				"inspectedRevision": "f4a9e9464d64184b793240adff182e08c04997e1"
+			},
+			"action": "generate",
+			"study": "artwork/brands/flow/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/flow/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Where a key settles",
+					"zh": "按键落处"
+				},
+				"motif": "A celadon ceramic keyboard-making surface: soft matte ceramic micrograin, shallow staggered key-well shoulders and thin offset row grooves. A few pressed rounded square edges dissolve into open space. No letters, Chinese characters, keyboard object or glowing keys.",
+				"description": {
+					"en": "Soft matte ceramic micrograin, shallow staggered key-well shoulders and thin offset row grooves.",
+					"zh": "哑光瓷釉的微粒、错开的键位肩线与浅槽承接青瓷键帽，留下输入发生时轻轻落下的触感。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "codo",
+			"title": "Codo",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "29f37b04d8f4e07071191df82a9fcc3b2cbb2a020ae181bc86f0a9470e118039",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+				"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+				"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 1902979,
+				"source": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/codo/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "80692d289d0160104fe7251fe0b0ff391301b09da9cbe9b3d39216329aeeba40"
+			},
+			"subject": "Vivid faceted hummingbird hovering at one coral bell flower",
+			"productEvidence": {
+				"description": {
+					"en": "A quiet macOS notification bridge between your AI agents and your desktop.",
+					"zh": "连接 AI 智能体与桌面的 macOS 通知桥梁，支持菜单栏服务和命令行。"
+				},
+				"purpose": {
+					"en": "Deliver local script and Claude Code events as Mac desktop banners, keep project and session history, and optionally summarize notifications with an AI Guardian.",
+					"zh": "将本地脚本和 Claude Code 事件显示为 Mac 桌面横幅，保存项目与会话记录，并按需使用 AI Guardian 整理通知。"
+				},
+				"source": "src/data/projects/codo.json",
+				"inspectedRevision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a"
+			},
+			"action": "generate",
+			"study": "artwork/brands/codo/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/codo/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A flower within reach",
+					"zh": "近在喙边"
+				},
+				"motif": "A plausible hummingbird garden: slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta. Stems sweep upward toward a clear open center. Botanical detail should be visible yet quiet; no bird or bright bouquet.",
+				"description": {
+					"en": "Slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta.",
+					"zh": "鼠尾草长叶与金银花弯枝向上伸展，仅用两枚低饱和筒状小花回应蜂鸟取食的瞬间。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "arena",
+			"title": "Arena",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "5be0d0296dff2db7373f459b606c8db73bb0c7aa41a34f76bddc5bc137478eb7",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/arena-family-2026-09-07-01-01.png",
+				"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59",
+				"rgbaSha256": "21a8929f2a0a71bc2045b167478929e03ac9795d0a8e8246e1a68f3400416123",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3658121,
+				"source": "https://github.com/nocoo/arena/blob/4a9efd6690942dd1384fd807ba83c73e7c29c202/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/arena/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "e30791a2474fae00edbf71ec0fcdc3deaa2a1711edface01b59dbb3a161ef5ac"
+			},
+			"subject": "Walnut dual-dial chess clock",
+			"productEvidence": {
+				"description": {
+					"en": "Let coding agents debate solutions while you review, compare, and decide.",
+					"zh": "让多个编程智能体提出方案、展开讨论，由你比较、审阅并做决定。"
+				},
+				"purpose": {
+					"en": "Collect coding assistants’ proposals on a local discussion board, let a person record decisions, and return those checkpoints to assistants through a CLI.",
+					"zh": "在本机讨论看板汇集编码助手的方案，由人记录决策，再通过 CLI 将 checkpoint 提供给助手读取。"
+				},
+				"source": "src/data/projects/arena.json",
+				"inspectedRevision": "4a9efd6690942dd1384fd807ba83c73e7c29c202"
+			},
+			"action": "generate",
+			"study": "artwork/brands/arena/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/arena/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Two considered turns",
+					"zh": "两步之间"
+				},
+				"motif": "A chess-clock debate-table surface: fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions. Balanced left and right negative space without literal chess pieces, clock faces, chessboard squares, digits or labels.",
+				"description": {
+					"en": "Fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions.",
+					"zh": "细织毛毡上的双侧计时弧与浅浅行棋压线，给比较、辩论和决定各留一点从容。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "owl",
+			"title": "Owl",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "0675c2f1e7a7f6bcfd7d1be4b47d1ca7548c10300d812ea3c08a942697b5fdb6",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/owl-family-2026-09-07-01-01.png",
+				"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+				"rgbaSha256": "366bd57afd5aad1c4bad7d31e35c22e071cf19d926d374b2212b9543aef3de64",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2973160,
+				"source": "https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/owl/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "918dcfef439476111243b62825016d58aebfc81bb98aa3f2a249303db1364a8d"
+			},
+			"subject": "Compact tawny owl holding one multicolored feather",
+			"productEvidence": {
+				"description": {
+					"en": "A macOS menu bar lookout that spots unusual patterns in your system logs.",
+					"zh": "守在 macOS 菜单栏里的观察员，从系统日志中发现异常信号。"
+				},
+				"purpose": {
+					"en": "Inspect Mac system metrics and processes from the menu bar, and detect recurring crashes, resource pressure, sleep problems, and device anomalies locally.",
+					"zh": "在菜单栏查看 Mac 系统指标与进程，在本机发现反复崩溃、资源压力、睡眠和设备异常。"
+				},
+				"source": "src/data/projects/owl.json",
+				"inspectedRevision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf"
+			},
+			"action": "generate",
+			"study": "artwork/brands/owl/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/owl/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Beneath the beech",
+					"zh": "山毛榉叶下"
+				},
+				"motif": "A broad temperate owl woodland: oval beech leaves with clear secondary veins, a few lobed oak leaves and one small twig with a closed seed husk. Place leaves as sparse pressed litter, not a dense canopy, feathers, eyes or a night-sky illustration.",
+				"description": {
+					"en": "Oval beech leaves with clear secondary veins, a few lobed oak leaves and one small twig with a closed seed husk.",
+					"zh": "椭圆山毛榉叶与少量橡叶疏散地落在林下，清楚的支脉回应猫头鹰敏锐而安静的观察。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "xray",
+			"title": "Xray",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "e1c1e062b2fbc27318b3d4d557b10eac8c70baf791d15a46f5d38fedc755a8e2",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/xray.png",
+				"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+				"rgbaSha256": "6c680b22721615c4ac5a9ffdcb4265f0f2adb8b59f8d8e68fcc5c71ae2c83979",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3318716,
+				"source": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/xray/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "2f62205b056b7c99e4afbf84f5fe3ee5fbedd8a70c1e4fd28f29365dac1c613e"
+			},
+			"subject": "Original multicolored butterfly with complete spread wings",
+			"productEvidence": {
+				"description": {
+					"en": "A closer look at your Twitter / X activity, with analytics and AI-powered reports.",
+					"zh": "深入查看 Twitter / X 动态，用数据分析与 AI 报告理解自己的内容。"
+				},
+				"purpose": {
+					"en": "Collect X / Twitter and custom-source content into watchlists, then read, translate, and save links from one timeline.",
+					"zh": "将 X / Twitter 与自定义来源的内容按关注列表收集，在同一时间线中阅读、翻译和保存链接。"
+				},
+				"source": "src/data/projects/xray.json",
+				"inspectedRevision": "16175dc87ef406e8cf3343ab8808b60e8f53cc8a"
+			},
+			"action": "generate",
+			"study": "artwork/brands/xray/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/xray/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Leaves for a butterfly",
+					"zh": "蝶停叶间"
+				},
+				"motif": "A temperate butterfly garden without asserting species: long gently serrated buddleia leaves, a small branching nettle-like host-leaf spray and a single tiny desaturated flower cluster. Keep all petals under two percent of the canvas. No butterflies, wings or rainbow gradients.",
+				"description": {
+					"en": "Long gently serrated buddleia leaves, a small branching nettle-like host-leaf spray and a single tiny desaturated flower cluster.",
+					"zh": "醉鱼草长叶与细小寄主植物叶丛围出停驻处，只有一簇低调花影，把彩色位置留给蝴蝶原标。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "r2shot",
+			"title": "R2Shot",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "76e6248b493169c8c13830ab2571a886a358e3bf1021d8379c5c5eb263d8f9c6",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/r2shot.png",
+				"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+				"rgbaSha256": "1eaabed3879c5585638683e6e6e63545b4bb4730ca7925bf77704a3fe13172b7",
+				"width": 920,
+				"height": 920,
+				"bytes": 668704,
+				"source": "https://github.com/nocoo/r2shot/blob/d69714a2332066c9c7b1792f919607a4b776eade/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/r2shot/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "67e7075c12c6e23bca65394803d5d2f5d00755c936c4db65fbcb16f4d580a324"
+			},
+			"subject": "Original blue faceted dolphin with a curled tail",
+			"productEvidence": {
+				"description": {
+					"en": "Capture a screenshot, upload it to R2, and have a shareable link on your clipboard.",
+					"zh": "截图、上传到 R2，再把可分享的链接放进剪贴板，一次完成。"
+				},
+				"purpose": {
+					"en": "Capture visible or vertically stitched web pages, upload them to your own R2 bucket, and copy a public image link for sharing.",
+					"zh": "截取网页可见区域或纵向拼接长图，上传到自己的 R2 bucket，再复制公开图片链接用于分享。"
+				},
+				"source": "src/data/projects/r2shot.json",
+				"inspectedRevision": "d69714a2332066c9c7b1792f919607a4b776eade"
+			},
+			"action": "generate",
+			"study": "artwork/brands/r2shot/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/r2shot/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Eelgrass in the current",
+					"zh": "潮流中的鳗草"
+				},
+				"motif": "A coastal marine meadow for an unspecified dolphin: long flat eelgrass ribbons with subtle parallel veins and a few small kelp blade tips. Sweep the blades in a broad underwater current along the lower right, leaving the upper left open. No flowers, shells, coral, bubbles or dolphin silhouette.",
+				"description": {
+					"en": "Long flat eelgrass ribbons with subtle parallel veins and a few small kelp blade tips.",
+					"zh": "长长鳗草叶带与少量海带叶尖顺着潮流弯折，给海豚留出开阔的浅海水域。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "shrike",
+			"title": "Shrike",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "3f18a59c5c0b2e4ed2139cd7bc19ab56e4198a6aabb3e0e946ccc320ede0210c",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/shrike.png",
+				"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+				"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3750012,
+				"source": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/shrike/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "ce70e9760a7f99c361f681c9645b735722667733ce334a88d9abea27fb5afb0f"
+			},
+			"subject": "Original grey faceted shrike with a dark eye mask",
+			"productEvidence": {
+				"description": {
+					"en": "A small macOS menu bar app that keeps your files in sync with Google Drive.",
+					"zh": "轻巧的 macOS 菜单栏工具，把文件和文件夹同步到 Google Drive。"
+				},
+				"purpose": {
+					"en": "Back up selected files and development configurations on a Mac to Google Drive's local directory, with sync triggered from the app or a local HTTP request.",
+					"zh": "在 Mac 上将选定文件和开发配置备份到 Google Drive 的本地目录，通过应用或本机 HTTP 请求触发同步。"
+				},
+				"source": "src/data/projects/shrike.json",
+				"inspectedRevision": "0fec187fc22742664925897400d0c1a62b2478bb"
+			},
+			"action": "generate",
+			"study": "artwork/brands/shrike/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/shrike/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A hawthorn lookout",
+					"zh": "山楂枝上的守望"
+				},
+				"motif": "A hedgerow perch for a shrike: small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries. An angular branching outline along the right edge; no bird, prey, flowers or feather motif.",
+				"description": {
+					"en": "Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.",
+					"zh": "有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "hooky",
+			"title": "Hooky",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "cf696ab820b7095137b6d93edb143d1ea753675b559b13d993b993906d518e3b",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/hooky.png",
+				"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+				"rgbaSha256": "30e826f26fe439a647490f322cd7d4a164c59bd8ebe3261bd4620b9b143f9572",
+				"width": 900,
+				"height": 900,
+				"bytes": 667627,
+				"source": "https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/hooky/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "df53dc334a8853d2abedcda6b412d0696a4ab06577768c0fc30d2f6fb60f36b6"
+			},
+			"subject": "Original pink faceted octopus with curled arms",
+			"productEvidence": {
+				"description": {
+					"en": "Send webhooks from your browser toolbar, context menu, or a quick message.",
+					"zh": "从浏览器工具栏、右键菜单或快捷消息中，随手触发 Webhook。"
+				},
+				"purpose": {
+					"en": "Send page URLs, titles, selections, and metadata to configured webhooks from Chrome, using a popup, context menu, or click-triggered rules.",
+					"zh": "通过 Chrome 弹窗、右键菜单或点击触发的规则，将页面 URL、标题、选区和元数据发送到指定 Webhook。"
+				},
+				"source": "src/data/projects/hooky.json",
+				"inspectedRevision": "8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a"
+			},
+			"action": "generate",
+			"study": "artwork/brands/hooky/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/hooky/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A kelp cove",
+					"zh": "海藻小湾"
+				},
+				"motif": "A sheltered kelp and sea-lettuce marine habitat for an octopus: broad softly crinkled sea-lettuce fronds, divided kelp fingers and one slim swaying holdfast-like stem. Use open curling botanical edges. No tentacles, suckers, coral, flowers, shells or bubbles.",
+				"description": {
+					"en": "Broad softly crinkled sea-lettuce fronds, divided kelp fingers and one slim swaying holdfast-like stem.",
+					"zh": "宽阔海莴苣叶与分叉海藻缓慢卷曲，在安静海湾里承接章鱼舒展的腕足。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "dotty",
+			"title": "Dotty",
+			"archived": false,
+			"category": "design",
+			"sourceMetadataSha256": "e983ef296a1c6f516859ed9636c2a468c89db96a2abec1e63f936687378e2140",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+				"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+				"rgbaSha256": "1cb4c2e1444d41d290128e66b8996c913e65bb17023ef6c2105ef4fa9687fa93",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2227338,
+				"source": "https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dotty/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "2b8c7cf9e20f2825289632d3af0a9537f2aed9f99e6ba3f0c6023793cc106930"
+			},
+			"subject": "Floating black-and-white checker ceramic block",
+			"productEvidence": {
+				"description": {
+					"en": "A pixel-brutalist dashboard kit with monochrome geometry and stacked charts.",
+					"zh": "像素与粗野主义风格的仪表盘模板，使用单色几何元素和堆叠图表。"
+				},
+				"purpose": {
+					"en": "Reuse dashboard layouts, controls, and charts to build data interfaces with a cool monochrome visual style.",
+					"zh": "复用看板布局、控件和图表，搭建采用冷色灰阶风格的数据界面。"
+				},
+				"source": "src/data/projects/dotty.json",
+				"inspectedRevision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe"
+			},
+			"action": "generate",
+			"study": "artwork/brands/dotty/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/dotty/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Ceramic measures",
+					"zh": "瓷面刻度"
+				},
+				"motif": "A matte ceramic design worktile: finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center. Tonal geometry only, not a black-and-white checkerboard, logo, letters or UI.",
+				"description": {
+					"en": "Finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center.",
+					"zh": "细颗粒瓷釉与大尺度浅方格形成可读的几何秩序，留白处打断格子，不争抢黑白原标。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "wooly",
+			"title": "Wooly",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "e33c82c054a0625d145d5e72d2ca1f02c24c3b411249e5a4d15a4fdba2c8c1c5",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/wooly-family-2026-09-07-02-01.png",
+				"sha256": "fc1f33d2e0f84f9498291f727a8ac0e6e3b822ffe947415ae1712ed1c987d12a",
+				"rgbaSha256": "47800dea8a7cca3d7510610802fa0d0569fd68c77170a47832dd6f3e2e0d6861",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3895425,
+				"source": "https://github.com/nocoo/wooly/blob/e516e1fbcbd146fcda6b80cf071bd5367e611afd/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/wooly/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "8004bcbe9c29916193d2f756dfd883b2d27d91e5d5083febccb70c9e41a51d48"
+			},
+			"subject": "Cream faceted sheep with three curls, a wink, and a pink tongue",
+			"productEvidence": {
+				"description": {
+					"en": "Keep family perks in sight: card rewards, memberships, insurance, and expiry dates.",
+					"zh": "把家庭的信用卡权益、会员、保险福利和到期时间放在眼前。"
+				},
+				"purpose": {
+					"en": "Keep household benefit accounts, usage cycles and redemption records together so family members can check remaining allowances, expiry and points.",
+					"zh": "集中记录家庭权益账户、使用周期与核销记录，方便核对剩余额度、到期时间和积分。"
+				},
+				"source": "src/data/projects/wooly.json",
+				"inspectedRevision": "e516e1fbcbd146fcda6b80cf071bd5367e611afd"
+			},
+			"action": "generate",
+			"study": "artwork/brands/wooly/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/wooly/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Clover on the hillside",
+					"zh": "坡地三叶草"
+				},
+				"motif": "A sheep pasture: rounded white-clover leaflets, long ryegrass blades and a few soft grass seed spikes. Rounded overlapping botanical shapes gather low, with no wool texture, sheep curls or bright flower heads. Keep the hill suggested by leaf direction, not a landscape.",
+				"description": {
+					"en": "Rounded white-clover leaflets, long ryegrass blades and a few soft grass seed spikes.",
+					"zh": "圆润白三叶草与黑麦草铺在缓坡上，以草叶的层次承接绵羊，避免把羊毛纹直接复制成背景。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "matrix",
+			"title": "Matrix",
+			"archived": false,
+			"category": "design",
+			"sourceMetadataSha256": "871f43220db3c4179a85b1c2eb77aeea403a3424dfeca9de79d33dedc67b4a86",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+				"rgbaSha256": "7b7d7bab3ed75e93988b84ae0e29ee63dade603733294c1f27b45bc4bf2f998d",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3271736,
+				"source": "https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/matrix/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "76a5a9a10d1b3d611d84e3619dea129a841d3bedf4087cd4f7e905404b589c38"
+			},
+			"subject": "Floating black-and-green layered circuit deck",
+			"productEvidence": {
+				"description": {
+					"en": "A sci-fi dashboard kit for interfaces that feel like a glimpse into the digital world.",
+					"zh": "带有科幻气息的仪表盘组件，让界面像是数字世界的一扇窗口。"
+				},
+				"purpose": {
+					"en": "Reuse terminal-inspired controls, charts, and page templates to build green-on-black data dashboards.",
+					"zh": "复用终端风格的控件、图表和页面模板，搭建绿黑配色的数据看板。"
+				},
+				"source": "src/data/projects/matrix.json",
+				"inspectedRevision": "8e6f9add035b35505576f161d95393c0b8b31e07"
+			},
+			"action": "generate",
+			"study": "artwork/brands/matrix/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/matrix/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Quiet routing",
+					"zh": "安静的布线"
+				},
+				"motif": "A satin composite electronics substrate: shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones. Subtle controlled relief, not glowing cyberpunk traces, readable circuit labels or a functional schematic. Keep routes sparse and purposeful.",
+				"description": {
+					"en": "Shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones.",
+					"zh": "复合板上的浅刻通道、小孔与错位覆膜区保留电路材质的秩序，避免发光线条压过主视觉。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "basalt",
+			"title": "Basalt",
+			"archived": false,
+			"category": "design",
+			"sourceMetadataSha256": "475fce87861db038958f87cfc9a225ebe434860004fde5b522e0283c1b53ac56",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+				"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+				"rgbaSha256": "cf680d91bf6028626966ea6a9b22de0ad53cdb9c7c60e29f519219d3079977f5",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3445051,
+				"source": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/basalt/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "5f2d3eeb1f7b2b4422e2ca9f67d54e694d411af7cdb072d1b530ee1e997aa505"
+			},
+			"subject": "A candy-colored Forbidden City corner tower on white Hanbaiyu marble",
+			"productEvidence": {
+				"description": {
+					"en": "Dense, dark, durable. A matte design system for information-rich software.",
+					"zh": "沉稳、紧凑的哑光设计系统，为信息密集的软件界面而做。"
+				},
+				"purpose": {
+					"en": "Give React applications a consistent set of controls, layered surfaces, charts, and page layouts.",
+					"zh": "为 React 应用提供统一的控件、分层表面、图表和页面布局。"
+				},
+				"source": "src/data/projects/basalt.json",
+				"inspectedRevision": "9e226aa5c1376351ec76a659b1a33a8139892b4b"
+			},
+			"action": "generate",
+			"study": "artwork/brands/basalt/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/basalt/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Stone and joinery",
+					"zh": "石与榫"
+				},
+				"motif": "A finely honed architectural stone sample: pale Hanbaiyu-like microcrystalline grain, shallow stepped joinery rebates and a few asymmetric roof-bracket alignment notches. Geometric construction marks belong to a crafted corner-tower model. No palace miniature, ornaments, dragons or floral motifs.",
+				"description": {
+					"en": "Pale Hanbaiyu-like microcrystalline grain, shallow stepped joinery rebates and a few asymmetric roof-bracket alignment notches.",
+					"zh": "细磨石材的微晶、阶式榫槽与少量斗拱定位刻痕，呼应角楼模型精密而耐看的构造。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "surety",
+			"title": "Surety",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "9b695b6d84e59e2f04defe8d261ce97ed9ceca048a457556f9906073d6ed89e8",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/surety-family-2026-09-07-01-01.png",
+				"sha256": "cb590912df7eb4ad0cf505b195870d448cde7ee3c8038ed7ea8a7ca5a8462314",
+				"rgbaSha256": "d66ac892d3346d06bc9333c664a89795b9f83ad324d78905e44e879cc0333783",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3212224,
+				"source": "https://github.com/nocoo/surety/blob/f257e0977e85358f9d02ed3f79a9fad8862e5117/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/surety/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "3252b9e934cf33d00e6b438494a59e638714c0e684b937ca4ce37db0ed09b714"
+			},
+			"subject": "Amber lion portrait with one multicolored butterfly",
+			"productEvidence": {
+				"description": {
+					"en": "A private, local-first home for your family insurance policies.",
+					"zh": "以隐私和本地数据为先，为家庭保险保单建立一个清晰的档案。"
+				},
+				"purpose": {
+					"en": "Organize household policies, coverage, payment schedules and medical visits.",
+					"zh": "集中整理家庭保单、保障范围、缴费计划和就诊记录。"
+				},
+				"source": "src/data/projects/surety.json",
+				"inspectedRevision": "f257e0977e85358f9d02ed3f79a9fad8862e5117"
+			},
+			"action": "generate",
+			"study": "artwork/brands/surety/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/surety/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Shelter at the grass edge",
+					"zh": "草边的庇护"
+				},
+				"motif": "A broad lion savanna setting: substantial grass tufts, small oval combretum leaves and a sparse fan of dry seed heads. Botanical masses provide a loose sheltered corner, with no mane shape, lion, shield, thorn wreath or flowers.",
+				"description": {
+					"en": "Substantial grass tufts, small oval combretum leaves and a sparse fan of dry seed heads.",
+					"zh": "草丛、椭圆灌木叶与疏散穗头在草原边缘围出庇护处，承接狮子的可靠气质。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "life-ai",
+			"title": "Life.ai",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "7e90a2801650a16259c9db44c23a501bfa016d43bdd65bfb7cb675d42fece7ca",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/life-ai-family-2026-09-07-01-02.png",
+				"sha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca",
+				"rgbaSha256": "ac41d4be1752ec55ec12353ceed8fc06f8dc218bf6b2ebc108044ddfdfbecb23",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2268740,
+				"source": "https://github.com/nocoo/life.ai/blob/b6f3e7f426315062e0492e00c4d9448bfa3b8031/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/life-ai/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d7c49d162b5275bd7f10f5cdec1977fd5adafadd8b2022823f15d9764bffed09"
+			},
+			"subject": "Caramel capybara with closed eyes, blue-purple glasses, and an apple with leaves",
+			"productEvidence": {
+				"description": {
+					"en": "Bring health, places, and spending into one personal picture.",
+					"zh": "把健康指标、位置足迹和消费记录，汇成一幅个人生活图景。"
+				},
+				"purpose": {
+					"en": "Import personal health, location, and bookkeeping exports, then compare them through daily, monthly, and yearly views.",
+					"zh": "导入个人健康、位置足迹和记账导出文件，通过日、月、年视图对照查看。"
+				},
+				"source": "src/data/projects/life-ai.json",
+				"inspectedRevision": "b6f3e7f426315062e0492e00c4d9448bfa3b8031"
+			},
+			"action": "generate",
+			"study": "artwork/brands/life-ai/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/life-ai/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A river garden",
+					"zh": "河岸小园"
+				},
+				"motif": "A plausible capybara wetland: broad rounded water-hyacinth leaves without blossoms, slender reed leaves and several smaller floating wetland leaves. Low overlapping pairs and one rising stem echo relaxed waterside life, without fruit, animals or literal ripples.",
+				"description": {
+					"en": "Broad rounded water-hyacinth leaves without blossoms, slender reed leaves and several smaller floating wetland leaves.",
+					"zh": "圆润水生叶与细芦苇贴着河岸生长，宽窄相间的叶片承接水豚松弛而完整的日常。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "echo",
+			"title": "Echo",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "5f2f512aea870be71093881475392750d104f4e28100ef3396e1cf2c718ca04c",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/echo-family-2026-09-07-01-01.png",
+				"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+				"rgbaSha256": "bebeeb294d53708267fe2816fdfccfc76fb60ce7a13151ea00c92179ff723d3d",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 5170077,
+				"source": "https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/echo/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "ee88d8ae0eb7c639d514a2ddc6b2b7b94f8cdc131f94062a62337aa8e588bccd"
+			},
+			"subject": "A brass and navy pocket compass",
+			"productEvidence": {
+				"description": {
+					"en": "A small, fast IP lookup service, built with Bun and TypeScript.",
+					"zh": "用 Bun 与 TypeScript 构建的轻量 IP 查询服务。"
+				},
+				"purpose": {
+					"en": "Give network diagnostic tools IP location and network data, plus observations of DNS resolver exit addresses.",
+					"zh": "为网络诊断工具提供 IP 位置与运营商信息，并观察 DNS 解析器的出口地址。"
+				},
+				"source": "src/data/projects/echo.json",
+				"inspectedRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39"
+			},
+			"action": "generate",
+			"study": "artwork/brands/echo/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/echo/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Survey linen",
+					"zh": "测绘亚麻"
+				},
+				"motif": "A pocket-compass mapmaker's surface: tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge. Sparse tactile cartographic marks, without a compass rose, actual map, names, numbers or arrows.",
+				"description": {
+					"en": "Tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge.",
+					"zh": "亚麻衬纸上的局部方位弧与开放定位线，回应随身罗盘，也把查找位置变成安静的阅读过程。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "deca",
+			"title": "Deca",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "d96e0965cc48660b9fa31231105ae60757ef4295e62344f724c906801b157599",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+				"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+				"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3665035,
+				"source": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/deca/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+			},
+			"subject": "A midnight teal rotary desk telephone",
+			"productEvidence": {
+				"description": {
+					"en": "A local-first Mac gateway that brings AI agents to Discord, the terminal, and HTTP.",
+					"zh": "优先在本地运行的 Mac AI 智能体网关，连接 Discord、终端与 HTTP。"
+				},
+				"purpose": {
+					"en": "Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.",
+					"zh": "通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。"
+				},
+				"source": "src/data/projects/deca.json",
+				"inspectedRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1"
+			},
+			"action": "generate",
+			"study": "artwork/brands/deca/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/deca/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Switchboard grain",
+					"zh": "交换台肌理"
+				},
+				"motif": "A vintage desk-telephone switchboard surface: matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends. Lines converge loosely toward an open gap without a reset loop. No phone object, dial, digits, text or glowing indicators.",
+				"description": {
+					"en": "Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.",
+					"zh": "哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "runner",
+			"title": "Runner",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "063179305fbdafcec10da5d379d004371771f67c88cec187ac136d717a1a47cf",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+				"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+				"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4230760,
+				"source": "https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/runner/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d962ceb8b99acc629d0cbe640beaced233426c4bd02bc07e798946cc7b41cba6"
+			},
+			"subject": "Emerald enamel mechanical stopwatch",
+			"productEvidence": {
+				"description": {
+					"en": "Declare a schedule and let your Mac run your AI jobs through launchd.",
+					"zh": "声明任务日程，交给 Mac 的 launchd 定时运行 AI 工作。"
+				},
+				"purpose": {
+					"en": "Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect their local run history and output through a CLI and Dashboard.",
+					"zh": "在 Mac 上定时执行 shell、OpenCode 和 HTTP 任务，通过 CLI 与本地 Dashboard 查看运行历史和输出。"
+				},
+				"source": "src/data/projects/runner.json",
+				"inspectedRevision": "a5d786175358dee245773bd98af83eef4bbf5689"
+			},
+			"action": "generate",
+			"study": "artwork/brands/runner/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/runner/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "A measured minute",
+					"zh": "一分钟的刻度"
+				},
+				"motif": "A watchmaker's timing mat: fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge. Spacious and purposeful, no stopwatch object, numerals, dial face or central emblem.",
+				"description": {
+					"en": "Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.",
+					"zh": "绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "zhe",
+			"title": "Zhe",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "d64114754254c12ca45b0a98583d788b621ae2c98c8659ba695924ac05dcfbe0",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/zhe.png",
+				"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+				"rgbaSha256": "b4a1805a9e5a92f52acf313fbc856a3a57946b8ea3e62556a1dac3e46c3ccc33",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3100798,
+				"source": "https://github.com/nocoo/zhe/blob/075c875936e9a244c147ff9d58452398bb1ef3cf/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/zhe/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "fad6854a35915541d29bd01d068a40ce83738d9d0ecea2a8bf14384d9048ebe1"
+			},
+			"subject": "Original golden faceted bee with multicolored wings",
+			"productEvidence": {
+				"description": {
+					"en": "Short links, clean URLs, and a little less friction when sharing things.",
+					"zh": "把长网址变成简洁的短链接，让分享少一点麻烦。"
+				},
+				"purpose": {
+					"en": "Keep personal links, Markdown ideas, and nested todos together, with short-link sharing and unified search.",
+					"zh": "集中整理个人链接、Markdown 想法和层级待办，通过短链接分享并统一搜索内容。"
+				},
+				"source": "src/data/projects/zhe.json",
+				"inspectedRevision": "075c875936e9a244c147ff9d58452398bb1ef3cf"
+			},
+			"action": "generate",
+			"study": "artwork/brands/zhe/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/zhe/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "The herb border",
+					"zh": "香草花境"
+				},
+				"motif": "A bee-foraging herb garden: narrow rosemary needles, tiny thyme leaf pairs and one very small subdued cream thyme flower cluster. Loose branching botanical paths connect small leaf groups, not hexagons, honeycomb, honey, bees or bright flowers.",
+				"description": {
+					"en": "Narrow rosemary needles, tiny thyme leaf pairs and one very small subdued cream thyme flower cluster.",
+					"zh": "迷迭香针叶与百里香小叶沿细枝相接，极少量浅色花影为蜜蜂留下合适的采食环境。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "geekhub",
+			"title": "GeekHub",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "a089a1f538953d2e1b03ba691207cee91bd52ed5dda8c260f9e20212ddbbbb2b",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+				"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+				"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4053576,
+				"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/geekhub/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+			},
+			"subject": "A folded newspaper in a forest-green reading folio",
+			"productEvidence": {
+				"description": {
+					"en": "A self-hosted RSS reader with AI summaries and translation.",
+					"zh": "可以自行托管的 RSS 阅读器，带有 AI 摘要与翻译。"
+				},
+				"purpose": {
+					"en": "Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.",
+					"zh": "集中阅读和整理 RSS 订阅，按需生成中文摘要与翻译。"
+				},
+				"source": "src/data/projects/geekhub.json",
+				"inspectedRevision": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c"
+			},
+			"action": "generate",
+			"study": "artwork/brands/geekhub/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/geekhub/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Reading cloth",
+					"zh": "阅读书衣"
+				},
+				"motif": "A well-used but clean reading-folio material: fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches. Editorial tactility without actual newspaper text, book objects, labels, icons or distress.",
+				"description": {
+					"en": "Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.",
+					"zh": "亚麻书衣与压纹纸带交错，分栏折线和少量装订线承接阅读、收藏与再整理。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "ccbackup",
+			"title": "CCBackup",
+			"archived": true,
+			"category": "tools",
+			"sourceMetadataSha256": "aa26d0697f4fa97914f870d90c02bc7ba452e1c34c11946ea827dfbaaaf7bf9c",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/ccbackup.png",
+				"sha256": "1bb8d48c887782be257b7221e84f16579cd775a9922b5c98a2b0bd32d598f2fa",
+				"rgbaSha256": "de8f7f9a56f80f4732fe5f70935517b66144d4999baa80d0be7c6193973d7cfc",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 200904,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Back up and restore your Claude Code configuration without the busywork.",
+					"zh": "备份与恢复 Claude Code 配置，省去重复整理的琐事。"
+				},
+				"purpose": {
+					"en": "Back up and restore your Claude Code configuration without the busywork.",
+					"zh": "备份与恢复 Claude Code 配置，省去重复整理的琐事。"
+				},
+				"source": "src/data/projects/ccbackup.json",
+				"inspectedRevision": "1fcc5e7abd926f2f34069299a40cae22191d7c8e"
+			},
+			"action": "generate",
+			"study": "artwork/brands/ccbackup/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/ccbackup/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "A place for a copy",
+					"zh": "副本归位"
+				},
+				"motif": "A configuration-backup storage sleeve: matte molded polymer with fine parallel ribs, shallow offset rectangular index recesses and a few precise archival tab notches. A physical analogy to the existing floppy-disk emoji, not a new logo, disk illustration, code or status indicator.",
+				"description": {
+					"en": "Matte molded polymer with fine parallel ribs, shallow offset rectangular index recesses and a few precise archival tab notches.",
+					"zh": "细肋聚合物、矩形索引凹位与档案卡槽承接软盘表情所代表的备份工作，保持现有身份不变。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "noheir",
+			"title": "Noheir",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "52abcc73ef36140f136ed12242e91ff8a1856f115495b982dfbc053340841b6e",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+				"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+				"rgbaSha256": "bb76d3ee3bfe5268f2d8b0e6d00efe5d896e8de47dd376de87579ebfee811fe4",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3801133,
+				"source": "https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/noheir/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "5a7afc1dd7bc1a12fc8e5e4d8f0299a43caa9fdc01e4916d7c55f52aec46bffe"
+			},
+			"subject": "Copper and cream cow with complete horns, blue eyes, and a coral muzzle",
+			"productEvidence": {
+				"description": {
+					"en": "A clear view of your money: income, spending, assets, and the bigger picture.",
+					"zh": "从收入、支出到资产，用一个清晰的视角理解自己的财务。"
+				},
+				"purpose": {
+					"en": "Organize personal transactions, accounts and capital to review cash flow, allocation, returns and availability dates.",
+					"zh": "整理个人收支、账户和存量资金，查看现金流、资金配置、收益与可用日期。"
+				},
+				"source": "src/data/projects/noheir.json",
+				"inspectedRevision": "5e32426a6044436eee5c6b2894910666896a8b49"
+			},
+			"action": "generate",
+			"study": "artwork/brands/noheir/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/noheir/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Pasture rows",
+					"zh": "牧草成行"
+				},
+				"motif": "A dairy-cow pasture without assuming breed: broad alfalfa leaf triplets, meadow-grass blades and loose oat seed panicles. Gentle low horizontal arrangements suggest a cared-for field, with no financial ledger grid, coins, cow spots, flowers or animal.",
+				"description": {
+					"en": "Broad alfalfa leaf triplets, meadow-grass blades and loose oat seed panicles.",
+					"zh": "苜蓿三出叶、牧草与松散燕麦穗自然成行，把奶牛身边有照料的草地延伸成安稳的背景。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "ipsafe",
+			"title": "IPSafe",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "8b132fe1edd2401eceeed94b4813129748e2757d5fc15d8ccc0e077029aa1c5d",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+				"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+				"rgbaSha256": "ad40a075b02b13fde331b1fd84538c918aa442ffbd8523e8f369bfff42101283",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3104822,
+				"source": "https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/ipsafe/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "c69e4d9e1b3ce869aa955473a7884bebc00a33d63f92d3cfaef43bc6713ae9c8"
+			},
+			"subject": "A green network cable tester with a short patch lead",
+			"productEvidence": {
+				"description": {
+					"en": "Check your network connection before letting a command run.",
+					"zh": "在执行命令之前，先确认网络连接符合预期。"
+				},
+				"purpose": {
+					"en": "Check that a configured URL returns a successful HTTP response and optionally matches response content before starting a command, with project or user configuration and reusable Node.js APIs.",
+					"zh": "在启动命令前，确认指定 URL 返回成功响应并按需匹配内容；支持项目或用户配置，以及可复用的 Node.js API。"
+				},
+				"source": "src/data/projects/ipsafe.json",
+				"inspectedRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629"
+			},
+			"action": "generate",
+			"study": "artwork/brands/ipsafe/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/ipsafe/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Connection channels",
+					"zh": "连接槽道"
+				},
+				"motif": "A network-cable tester's silicone service surface: fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge. A tiny quiet terracotta endpoint, no retry loop, literal cable tester, status lights, text or readable wiring diagram.",
+				"description": {
+					"en": "Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.",
+					"zh": "干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "uptime-kuma-skill",
+			"title": "Uptime Kuma Skill",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "8e70c1f2e9a3c0306e7279057118fce6aac55d5cf0434d5a761fe454b3b6bb6d",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/uptime-kuma-skill.png",
+				"sha256": "c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5",
+				"rgbaSha256": "72f0aead1904780212ccd7e1cc3959a02be8d84058d9c10e33cb2d65e5306b65",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 271935,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Give your agent the ability to manage monitors, uptime, and SSL certificates.",
+					"zh": "让智能体检查和管理监控项、可用性与 SSL 证书。"
+				},
+				"purpose": {
+					"en": "Give your agent the ability to manage monitors, uptime, and SSL certificates.",
+					"zh": "让智能体检查和管理监控项、可用性与 SSL 证书。"
+				},
+				"source": "src/data/projects/uptime-kuma-skill.json",
+				"inspectedRevision": "f7b8da6b479ed2b32dcd0da7388538e6ec48cf74"
+			},
+			"action": "generate",
+			"study": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/uptime-kuma-skill/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Clinical paper",
+					"zh": "听诊纸面"
+				},
+				"motif": "A clean diagnostic work surface for the existing stethoscope emoji: pressed cellulose examination-paper fibers, two incomplete soft diaphragm-like rings and a short sparse baseline indentation. Clinical calm without heartbeat readings, medical claims, tools, labels or bright hospital colors.",
+				"description": {
+					"en": "Pressed cellulose examination-paper fibers, two incomplete soft diaphragm-like rings and a short sparse baseline indentation.",
+					"zh": "压实纤维纸与两道不完整听诊弧呼应监控诊断，以安静材质表达观察，不伪造健康读数。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "microsoft-teams-send-as-workflow",
+			"title": "Teams Workflow",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "e0425299961096df01d52ea0e5a1b72337448d5a923123d0e1c67538e28e6e41",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/microsoft-teams-send-as-workflow.png",
+				"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+				"rgbaSha256": "dec445c95f1eac5a42a184a3f5995edc7fbb07ce3cfe713623032df458b4d093",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 353526,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Send messages and Adaptive Cards to Microsoft Teams through webhooks.",
+					"zh": "通过 Webhook 向 Microsoft Teams 发送消息与自适应卡片。"
+				},
+				"purpose": {
+					"en": "Send messages and Adaptive Cards to Microsoft Teams through webhooks.",
+					"zh": "通过 Webhook 向 Microsoft Teams 发送消息与自适应卡片。"
+				},
+				"source": "src/data/projects/microsoft-teams-send-as-workflow.json",
+				"inspectedRevision": "b2b0f10619dee34054d92b532613a23c036d4660"
+			},
+			"action": "generate",
+			"study": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/microsoft-teams-send-as-workflow/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Correspondence folds",
+					"zh": "来信折痕"
+				},
+				"motif": "A correspondence desk's quality cotton stationery: broad shallow envelope-flap fold impressions, one diagonal crease and offset sorting-strip indentations. Clean quiet paper grain, no envelope object, postal logo, stamps, text or Microsoft branding.",
+				"description": {
+					"en": "Broad shallow envelope-flap fold impressions, one diagonal crease and offset sorting-strip indentations.",
+					"zh": "棉质信纸的宽折痕与错位分拣压条呼应消息递送，保持书信感而不生成平台商标。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "image-stitch",
+			"title": "Image Stitch",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "c92076f19f5eba70c5ca0fbd80cf84f0e384dd4eeb31bfbb8f53f376563b51ae",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/image-stitch.png",
+				"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4",
+				"rgbaSha256": "6a1e0cf1ea1ae6c2f3e3d1673856cc926a826dc974e518a69f372911bd65aa54",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 559822,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Turn overlapping scrolling screenshots into one continuous image.",
+					"zh": "把有重叠区域的滚动截图，拼成一张连贯的长图。"
+				},
+				"purpose": {
+					"en": "Turn overlapping scrolling screenshots into one continuous image.",
+					"zh": "把有重叠区域的滚动截图，拼成一张连贯的长图。"
+				},
+				"source": "src/data/projects/image-stitch.json",
+				"inspectedRevision": "316ec44397c3446cb7c324040394bf056b1bd5d9"
+			},
+			"action": "generate",
+			"study": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/image-stitch/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "A continuous mount",
+					"zh": "接续的裱面"
+				},
+				"motif": "A photograph conservator's mounting surface: matte linen-backed archival paper, gently stepped overlapping mount seams and sparse paired alignment corners. Long vertical continuation suggested by the seams. No photograph, frame object, cutting instructions, text or UI.",
+				"description": {
+					"en": "Matte linen-backed archival paper, gently stepped overlapping mount seams and sparse paired alignment corners.",
+					"zh": "亚麻衬裱纸的搭接边与成对对齐角把长图的连续关系变成材质，完整照片仍由原项目呈现。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "skill-faster-whisper",
+			"title": "Faster Whisper",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "52b674e16db28cfdc499b16a559a0592aa27eff7b2026c05c17edda751c30839",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/skill-faster-whisper.png",
+				"sha256": "fe2151b4426e09c6d6b153580e4962f112b342bd01f5bab0b6d4ba83961ba4a6",
+				"rgbaSha256": "01581bef928405fcc7a39ae737f543cf359952f0c3cbd49d0f680760655eea81",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 518181,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Fast speech-to-text transcription, ready for your coding agent.",
+					"zh": "为编程智能体准备的快速语音转文字工具。"
+				},
+				"purpose": {
+					"en": "Fast speech-to-text transcription, ready for your coding agent.",
+					"zh": "为编程智能体准备的快速语音转文字工具。"
+				},
+				"source": "src/data/projects/skill-faster-whisper.json",
+				"inspectedRevision": "592776b2f841a7f026b72d36a06b0d75a792f524"
+			},
+			"action": "generate",
+			"study": "artwork/brands/skill-faster-whisper/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/skill-faster-whisper/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Acoustic felt",
+					"zh": "收声毡面"
+				},
+				"motif": "An audio transcription recording-booth surface: densely woven acoustic felt, shallow elongated pill-shaped perforation rows and a few low-amplitude embossed horizontal wave fragments. Pattern is broad and sparse, not a fake transcript, equalizer UI, microphone or dense waveform.",
+				"description": {
+					"en": "Densely woven acoustic felt, shallow elongated pill-shaped perforation rows and a few low-amplitude embossed horizontal wave fragments.",
+					"zh": "细织吸音毡与稀疏长孔收住声音，轻浅横向波纹呼应语音转写而不生成虚构转录内容。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "skill-task-notifier",
+			"title": "Task Notifier",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "df5d054ec65dcc291aef00f600c53983b67a7bacac1ea93abc7339ed0ec6000b",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/skill-task-notifier.png",
+				"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+				"rgbaSha256": "dec445c95f1eac5a42a184a3f5995edc7fbb07ce3cfe713623032df458b4d093",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 353526,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Keep track of running tasks and get notified when their status changes.",
+					"zh": "跟踪正在执行的任务，在状态变化时收到通知。"
+				},
+				"purpose": {
+					"en": "Keep track of running tasks and get notified when their status changes.",
+					"zh": "跟踪正在执行的任务，在状态变化时收到通知。"
+				},
+				"source": "src/data/projects/skill-task-notifier.json",
+				"inspectedRevision": "a095190b42b95b14e3b692cc50bb7eba082e2299"
+			},
+			"action": "generate",
+			"study": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/skill-task-notifier/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Dispatch board",
+					"zh": "任务派送板"
+				},
+				"motif": "A tidy physical dispatch surface: very fine pressed cork-paper grain, shallow horizontal task-lane dividers and two small offset docket-tab impressions. A tiny restrained terracotta notch suggests attention without glowing or claiming task status. No text, envelope, stamps or icons.",
+				"description": {
+					"en": "Very fine pressed cork-paper grain, shallow horizontal task-lane dividers and two small offset docket-tab impressions.",
+					"zh": "压实软木纸与横向派送分隔、错位票签凹痕承接任务通知，少量色点只作视觉提醒。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "mcp-work-history",
+			"title": "Work History MCP",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "b93af2701056846a0ea5a8048f0409c3ae9350ff5982280d8e7d38fb2b623fb0",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/mcp-work-history.png",
+				"sha256": "cd0c3ef6a10e2311e6b444336d336c93e8fa0b316dbd5175b0c133e944649c7b",
+				"rgbaSha256": "cb8483100494bf50638a4968608ed006c5c871ee241aede9b8de20649de55fb3",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 384558,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "A searchable record of your AI tools and the work they do.",
+					"zh": "记录 AI 工具的工作活动，留存可查询的历史和指标。"
+				},
+				"purpose": {
+					"en": "A searchable record of your AI tools and the work they do.",
+					"zh": "记录 AI 工具的工作活动，留存可查询的历史和指标。"
+				},
+				"source": "src/data/projects/mcp-work-history.json",
+				"inspectedRevision": "cae3f14f4e3cccd588915b7f8b015d5bf9de08ce"
+			},
+			"action": "generate",
+			"study": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/mcp-work-history/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "A stitched work log",
+					"zh": "装订工作簿"
+				},
+				"motif": "A robot-assistant work-log analogue: tough long-fiber notebook paper, a low stitched binding-edge impression, staggered index tabs and sparse ledger-like baselines. Warm tactile record keeping, no robot face, readable chronology, code, dates or labels.",
+				"description": {
+					"en": "Tough long-fiber notebook paper, a low stitched binding-edge impression, staggered index tabs and sparse ledger-like baselines.",
+					"zh": "长纤维记录纸、装订线与交错索引签承接可检索的工作历史，纹理里不编造时间记录。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "mcp-make-sound",
+			"title": "Make Sound MCP",
+			"archived": true,
+			"category": "extensions",
+			"sourceMetadataSha256": "9846c10aa1877e81133670913c0f3f497dbd396dad8dbcabc1c1b3836d6548c3",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/mcp-make-sound.png",
+				"sha256": "e351632c7148db3536754e8d5e7f63120b16097fa22dff75d4e1138845cfa0b8",
+				"rgbaSha256": "d6f4ee2ec693daa30b968ba6fcb49e4150342961706a43151b63fab2acff5a08",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 574400,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Let your AI tools play system sounds on macOS.",
+					"zh": "让 AI 工具在 macOS 上播放系统提示音。"
+				},
+				"purpose": {
+					"en": "Let your AI tools play system sounds on macOS.",
+					"zh": "让 AI 工具在 macOS 上播放系统提示音。"
+				},
+				"source": "src/data/projects/mcp-make-sound.json",
+				"inspectedRevision": "d88c1157ed9b976836eb39b8487ff718cc1b3211"
+			},
+			"action": "generate",
+			"study": "artwork/brands/mcp-make-sound/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/mcp-make-sound/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Speaker cloth",
+					"zh": "扬声织物"
+				},
+				"motif": "A restrained speaker-grille material: fine two-direction acoustic textile weave, one broad shallow diaphragm-like arc emerging near the lower right and a few layered fabric seams. Not an actual speaker object, music notes, ripples, neon sound waves or text.",
+				"description": {
+					"en": "Fine two-direction acoustic textile weave, one broad shallow diaphragm-like arc emerging near the lower right and a few layered fabric seams.",
+					"zh": "双向声学织物与一段宽浅振膜弧呼应系统声音，保留织物触感和开阔的静处。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "infoviz",
+			"title": "InfoViz",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "66b98bb539d9323100c378a2217bd10f0c8241b349fc387f4bd5e9ba65951eca",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/infoviz.png",
+				"sha256": "6572c1eabfc4a5159cb71dcda4f70a5f2078fb88205ad40b77a604508d317f9c",
+				"rgbaSha256": "72f2ca1d93af95911fcbd01d334173ad66d3bb1d8fe48bc71d10ea576044a220",
+				"width": 600,
+				"height": 207,
+				"bytes": 24045,
+				"source": "https://github.com/nocoo/infoviz/blob/dc41fd2d23ac9f82c998b3072758c09a86d9b004/images/infoviz_logo@2x.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "Existing application mark",
+			"productEvidence": {
+				"description": {
+					"en": "A lightweight JavaScript library for beautiful, interactive data visualizations.",
+					"zh": "轻量的 JavaScript 数据可视化库，用来制作交互式图表。"
+				},
+				"purpose": {
+					"en": "A lightweight JavaScript library for beautiful, interactive data visualizations.",
+					"zh": "轻量的 JavaScript 数据可视化库，用来制作交互式图表。"
+				},
+				"source": "src/data/projects/infoviz.json",
+				"inspectedRevision": "dc41fd2d23ac9f82c998b3072758c09a86d9b004"
+			},
+			"action": "generate",
+			"study": "artwork/brands/infoviz/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/infoviz/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Tracing a relationship",
+					"zh": "描图关系"
+				},
+				"motif": "A data illustrator's tracing-paper surface: subtle long paper fibers, two partial circle-construction arcs, small sparse plotted registration points and light nonuniform guide rules. Keep relationships abstract, not a completed chart, infographic, colored logo, numbers or labels.",
+				"description": {
+					"en": "Subtle long paper fibers, two partial circle-construction arcs, small sparse plotted registration points and light nonuniform guide rules.",
+					"zh": "描图纸上的局部构造弧、零星定位点与疏松导线承接信息关系的探索，不伪造真实图表。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "jsinst",
+			"title": "JSInst",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "346ebc187f1cca46f24909e909b83675fdb27b0b015e22276fef11e2fe104d37",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/jsinst.png",
+				"sha256": "fc80f6fe41b78073d17d73637336fb95637e2f8c3e1796b75488cc819d76543a",
+				"rgbaSha256": "6eb9a02b1a43c1c84db402bf63f417a6dcfacf4a7b3834125bdc24c86f52b25d",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 187921,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "JavaScript instrumentation and performance analysis tools.",
+					"zh": "用于 JavaScript 代码插桩与性能分析的工具集。"
+				},
+				"purpose": {
+					"en": "JavaScript instrumentation and performance analysis tools.",
+					"zh": "用于 JavaScript 代码插桩与性能分析的工具集。"
+				},
+				"source": "src/data/projects/jsinst.json",
+				"inspectedRevision": "56dd9f140b1d79ab3ca9b4a9ad6c04098f9f4693"
+			},
+			"action": "generate",
+			"study": "artwork/brands/jsinst/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/jsinst/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Measurement traces",
+					"zh": "测量轨迹"
+				},
+				"motif": "A software-instrumentation analogue in a precision electrical measurement pad: matte microstipple, interrupted calibration rulings and short carefully stepped trace grooves. No lightning icon, oscilloscope screen, electrical hazard emblem, digits or functional circuit.",
+				"description": {
+					"en": "Matte microstipple, interrupted calibration rulings and short carefully stepped trace grooves.",
+					"zh": "细颗粒测量垫的断续标定线与短阶梯槽，把性能观测转成克制的工具表面。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "infoviz-builder",
+			"title": "InfoViz Builder",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "48f67a803e335ad94c96cc755fd42c881971afb4a15c537b600655d446c0a430",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/infoviz-builder.png",
+				"sha256": "53537d273b2f8638e4715dc8c4c2ed12c9ccbf4b63c666289b06e21c0651d493",
+				"rgbaSha256": "39a401f532131d4116562ccc97627573eaa8ef81437e05e3ecf357d387c6416e",
+				"width": 200,
+				"height": 69,
+				"bytes": 7354,
+				"source": "https://github.com/nocoo/infoviz-builder/blob/76a9d4e664141d51a0f8ca9eb3d6b397b8e17b9a/public/images/infoviz_logo_small@2x.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "Existing application mark",
+			"productEvidence": {
+				"description": {
+					"en": "A visual workspace for building InfoViz charts.",
+					"zh": "通过可视化操作制作 InfoViz 图表的工作空间。"
+				},
+				"purpose": {
+					"en": "A visual workspace for building InfoViz charts.",
+					"zh": "通过可视化操作制作 InfoViz 图表的工作空间。"
+				},
+				"source": "src/data/projects/infoviz-builder.json",
+				"inspectedRevision": "76a9d4e664141d51a0f8ca9eb3d6b397b8e17b9a"
+			},
+			"action": "generate",
+			"study": "artwork/brands/infoviz-builder/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/infoviz-builder/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Working geometry",
+					"zh": "构图工作纸"
+				},
+				"motif": "A visual-builder's architectural vellum surface: softly translucent paper tooth, unequal orthographic box-construction guides, two open tangency arcs and small offset alignment stops. Physical drafting, not a UI wireframe, exact chart, typography or tool illustration.",
+				"description": {
+					"en": "Softly translucent paper tooth, unequal orthographic box-construction guides, two open tangency arcs and small offset alignment stops.",
+					"zh": "半透描图纸上的不等构造框、开放切弧与错位定位线，呼应可视化作品成形前的工作过程。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "nodehub",
+			"title": "NodeHub",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "d996ae768ae26ed48d5135b8645216e068d4062ab83edaa519a549ea73531663",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/nodehub.png",
+				"sha256": "ccdffc2057cbd73eb24549cb97667542a99c6a7a5a34848359caa675ac6ec223",
+				"rgbaSha256": "d2c7dc4065772cd8a6dcf0e65a9b906c9a29a53ae8a6c368aabe28b3dc956596",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 220294,
+				"source": "https://github.com/nocoo/nodehub/blob/9d9ba8f91c98d9eb7fce99226f9a2a40fad085dd/public/assets/images/favicon.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "Existing application mark",
+			"productEvidence": {
+				"description": {
+					"en": "A central place for running and organizing Node.js services.",
+					"zh": "集中运行与组织 Node.js 服务的工具。"
+				},
+				"purpose": {
+					"en": "A central place for running and organizing Node.js services.",
+					"zh": "集中运行与组织 Node.js 服务的工具。"
+				},
+				"source": "src/data/projects/nodehub.json",
+				"inspectedRevision": "9d9ba8f91c98d9eb7fce99226f9a2a40fad085dd"
+			},
+			"action": "generate",
+			"study": "artwork/brands/nodehub/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/nodehub/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Service rails",
+					"zh": "服务导轨"
+				},
+				"motif": "A server-organizer's molded service-panel surface: fine matte polymer, sparse vertical rail depressions, short crosswise cable-tray notches and rounded modular junction seams. Physical order with ample central space; no server box, Node logo, text, sockets or circuit artwork.",
+				"description": {
+					"en": "Fine matte polymer, sparse vertical rail depressions, short crosswise cable-tray notches and rounded modular junction seams.",
+					"zh": "哑光面板里的竖向导轨、横槽与圆润接缝，像为不同服务留出各自可归位的位置。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "huran-cc",
+			"title": "huran.cc",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "b1a9686d526c9c3d84014f319b48baf12f84ab6bf26af60c291097fe8f44d77a",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/huran-cc.png",
+				"sha256": "91d20c9117ae3166c1e4e911c07717246966fb456ec10150af2deb379045f0c7",
+				"rgbaSha256": "8dba7f331e494ac1f86f15b93da38a558fe0dfdf7e840656a378ee2527eaa6bd",
+				"width": 398,
+				"height": 150,
+				"bytes": 8618,
+				"source": "https://github.com/nocoo/huran.cc/blob/9085d193a00fc378fb3c54c1b740328e4cf000f7/public/images/hr-logo-2x.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "Existing application mark",
+			"productEvidence": {
+				"description": {
+					"en": "An art marketplace connecting artists, collectors, and the works they love.",
+					"zh": "连接艺术家与收藏者的艺术电商平台。"
+				},
+				"purpose": {
+					"en": "An art marketplace connecting artists, collectors, and the works they love.",
+					"zh": "连接艺术家与收藏者的艺术电商平台。"
+				},
+				"source": "src/data/projects/huran-cc.json",
+				"inspectedRevision": "9085d193a00fc378fb3c54c1b740328e4cf000f7"
+			},
+			"action": "generate",
+			"study": "artwork/brands/huran-cc/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/huran-cc/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Gallery linen",
+					"zh": "画廊亚麻"
+				},
+				"motif": "A quiet art-archive presentation material: finely woven natural gallery linen beneath warm rag-paper tooth, shallow mounting-edge impressions and two soft deckle-like fiber transitions. No painting, frame, calligraphy, logos, colorful pigments or decorative flowers.",
+				"description": {
+					"en": "Finely woven natural gallery linen beneath warm rag-paper tooth, shallow mounting-edge impressions and two soft deckle-like fiber transitions.",
+					"zh": "天然画布与棉浆纸纤维在浅压裱边处相接，让艺术品之间的空白也保有细致的触感。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "doc-doctor-com",
+			"title": "Doc Doctor",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "c3adc71f2d43fecd566c396aeaf55ac05a295ed73ee43c26051fead1d22bd972",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/doc-doctor-com.png",
+				"sha256": "3df40dd3972a8ea4b85362b84a2c10d2f7fa20564d0aa1d7975a74ab4862b283",
+				"rgbaSha256": "c273ad5a5683dace3272bb16b0f18f797572c244fc57a81228e4a1d34816b8ec",
+				"width": 128,
+				"height": 128,
+				"bytes": 2327,
+				"source": "https://github.com/nocoo/doc-doctor.com/blob/a6f0de28d2118aeb75bdbd40100ded26ec5ade74/public/favicon.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "Existing application mark",
+			"productEvidence": {
+				"description": {
+					"en": "A platform for study-abroad writing, editing, and translation services.",
+					"zh": "为留学文书提供写作、润色与翻译服务的平台。"
+				},
+				"purpose": {
+					"en": "A platform for study-abroad writing, editing, and translation services.",
+					"zh": "为留学文书提供写作、润色与翻译服务的平台。"
+				},
+				"source": "src/data/projects/doc-doctor-com.json",
+				"inspectedRevision": "a6f0de28d2118aeb75bdbd40100ded26ec5ade74"
+			},
+			"action": "generate",
+			"study": "artwork/brands/doc-doctor-com/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/doc-doctor-com/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "The editing desk",
+					"zh": "编辑案头"
+				},
+				"motif": "An editor and translator's firm cotton-rag writing paper: clear fine laid lines, one broad margin fold and short offset interlinear guide impressions. No readable words, correction glyphs, diploma, flags, letters or blue logo. Keep a large uninterrupted reading area.",
+				"description": {
+					"en": "Clear fine laid lines, one broad margin fold and short offset interlinear guide impressions.",
+					"zh": "棉浆写作纸的帘纹、页边折线与错位行间压痕呼应编辑和翻译，主要阅读区域保持舒展。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "nodeviz",
+			"title": "NodeViz",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "47c365b53cd52ab90cb03913ca3d7f0b9b67664bb99be085ad6a5e2ef531c77a",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/nodeviz.png",
+				"sha256": "dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51",
+				"rgbaSha256": "fab63fb4dac979a07171e147e11d1754c8a85d6a4089a79d1724da186d9d0554",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 252854,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "A visualization toolkit for Node.js.",
+					"zh": "面向 Node.js 的可视化工具集。"
+				},
+				"purpose": {
+					"en": "A visualization toolkit for Node.js.",
+					"zh": "面向 Node.js 的可视化工具集。"
+				},
+				"source": "src/data/projects/nodeviz.json",
+				"inspectedRevision": "c768753b64e1c2872dee7a94ad13dc2ba832c3b0"
+			},
+			"action": "generate",
+			"study": "artwork/brands/nodeviz/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/nodeviz/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Caliper marks",
+					"zh": "量规刻痕"
+				},
+				"motif": "A visualization-tool maker's satin workplate: fine directional brushed aluminum adapted to the requested palette, shallow linked circular measurement seats and sparse short caliper ticks. No wrench object, actual graph, numeric scale or chrome glare.",
+				"description": {
+					"en": "Fine directional brushed aluminum adapted to the requested palette, shallow linked circular measurement seats and sparse short caliper ticks.",
+					"zh": "柔和拉丝工作板上的相连测量凹位与短量规刻痕，承接工具构造中的关系和尺度。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "express-spa",
+			"title": "Express SPA",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "92305fe651ace8e677879eb1d764c032da36ce134253810e128cbb6bbf487dee",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/express-spa.png",
+				"sha256": "7c0923ee71d9cad5f78561072378c0a2e121a23db05528fbd62cc93b23fe2f26",
+				"rgbaSha256": "c2ee652a0601319bd4e5fa4bd60183b127bb0c48cbb684079a6003564e497ea0",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 509124,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "An early exploration of single-page applications built on Express.js.",
+					"zh": "基于 Express.js 构建单页应用的一次早期探索。"
+				},
+				"purpose": {
+					"en": "An early exploration of single-page applications built on Express.js.",
+					"zh": "基于 Express.js 构建单页应用的一次早期探索。"
+				},
+				"source": "src/data/projects/express-spa.json",
+				"inspectedRevision": "69509718bcf11a191830d3f18485d05530ad5a97"
+			},
+			"action": "generate",
+			"study": "artwork/brands/express-spa/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/express-spa/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "A folded atlas",
+					"zh": "折叠图册"
+				},
+				"motif": "A web-routing atlas analogue: fine laid map paper, two broad nonintersecting meridian-like curves and shallow asymmetric accordion-fold ridges. Quiet physical sheet structure, no globe object, geography, arrows, place names, browser UI or text.",
+				"description": {
+					"en": "Fine laid map paper, two broad nonintersecting meridian-like curves and shallow asymmetric accordion-fold ridges.",
+					"zh": "地图纸上的经线弧与不对称折脊承接网页间的连接，避免把背景画成浏览器界面。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "discuz-recovery",
+			"title": "Discuz Recovery",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "18ec298de3ad8bdc8532755ae8ef42c4da760d06332393e84a2dc32b3389ac72",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/discuz-recovery.png",
+				"sha256": "dbc4c45f02f94a25b39420c913494fd648794706b0e46981cf81a0aa2e259c51",
+				"rgbaSha256": "fab63fb4dac979a07171e147e11d1754c8a85d6a4089a79d1724da186d9d0554",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 252854,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Bring old Discuz! forum posts back from their backups.",
+					"zh": "从旧备份中找回 Discuz! 论坛的帖子。"
+				},
+				"purpose": {
+					"en": "Bring old Discuz! forum posts back from their backups.",
+					"zh": "从旧备份中找回 Discuz! 论坛的帖子。"
+				},
+				"source": "src/data/projects/discuz-recovery.json",
+				"inspectedRevision": "0287558e963d757952a3d58d95a4fa2bff5580d8"
+			},
+			"action": "generate",
+			"study": "artwork/brands/discuz-recovery/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/discuz-recovery/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "A careful repair",
+					"zh": "细致修复"
+				},
+				"motif": "An archival restoration bench surface: clean long-fiber repair paper, carefully overlapped translucent binding strips and a few gently interrupted stitch impressions. Subtle repaired seams express recovery, no torn grunge, wrench, real document, text or forum screenshot.",
+				"description": {
+					"en": "Clean long-fiber repair paper, carefully overlapped translucent binding strips and a few gently interrupted stitch impressions.",
+					"zh": "长纤维修复纸与轻薄搭接条把旧帖恢复的意图转成细致接缝，保持洁净而不制造破旧感。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "feedmaid",
+			"title": "Feedmaid",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "1f8aba92b7e485139070fe83396937597840670683ae2f762fbf154ed0bef63c",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/feedmaid.png",
+				"sha256": "ad705222d130c788d2ad7decc43a79eb8a1f2e8e6c64a54fadfc8891f8101bc5",
+				"rgbaSha256": "e8aba79045c0e24596b312990412d9d371d73a82f8de8195177ead312fffbc79",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 335132,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "Collect user feedback and explore it through a web interface.",
+					"zh": "收集用户反馈，并在网页中查看和整理。"
+				},
+				"purpose": {
+					"en": "Collect user feedback and explore it through a web interface.",
+					"zh": "收集用户反馈，并在网页中查看和整理。"
+				},
+				"source": "src/data/projects/feedmaid.json",
+				"inspectedRevision": "568a88fb3673866d533227e958a26c196163fb57"
+			},
+			"action": "generate",
+			"study": "artwork/brands/feedmaid/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/feedmaid/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "The mail ledge",
+					"zh": "信箱搁台"
+				},
+				"motif": "A feedback-mailbox writing ledge: fine pebbled enamel paint, shallow overlapping stationery-edge impressions and one small letterpress-like attention notch. Calm tactile incoming correspondence, no actual mailbox, envelope, feedback count, logo or readable text.",
+				"description": {
+					"en": "Fine pebbled enamel paint, shallow overlapping stationery-edge impressions and one small letterpress-like attention notch.",
+					"zh": "细砂珐琅与叠放信纸的边缘压痕承接用户来信，一枚浅缺口为需要留意的声音留下位置。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "infoviz-ios",
+			"title": "InfoViz iOS",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "39ebcab3879b8bba5fbd61ff45349a163be10ecf46c0f8f36b3e5dfa6026da91",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/infoviz-ios.png",
+				"sha256": "56ce71863c1e9e493bf8da07654fd98107bc82c70150bd12311e4dc27d417934",
+				"rgbaSha256": "17180d60afb45b5125e5c1c63efe18b312a142f5b70982631b86075b5bb7c131",
+				"width": 300,
+				"height": 103,
+				"bytes": 11382,
+				"source": "https://github.com/nocoo/infoviz-ios/blob/ee531d46fb38177bc908c8b6a12ff344cb5c4d75/www/images/infoviz_logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "Existing application mark",
+			"productEvidence": {
+				"description": {
+					"en": "InfoViz visualizations, brought to iOS.",
+					"zh": "把 InfoViz 数据可视化带到 iOS 上。"
+				},
+				"purpose": {
+					"en": "InfoViz visualizations, brought to iOS.",
+					"zh": "把 InfoViz 数据可视化带到 iOS 上。"
+				},
+				"source": "src/data/projects/infoviz-ios.json",
+				"inspectedRevision": "ee531d46fb38177bc908c8b6a12ff344cb5c4d75"
+			},
+			"action": "generate",
+			"study": "artwork/brands/infoviz-ios/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/infoviz-ios/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "Etched glass notes",
+					"zh": "玻璃刻记"
+				},
+				"motif": "A handheld visualization drafting surface: finely frosted glass texture, broad rounded corner registration grooves, sparse plotted dot impressions and one gently rising shallow data-stroke fragment. No actual phone, UI, numbers, charts, logo or translucent rainbow glare.",
+				"description": {
+					"en": "Finely frosted glass texture, broad rounded corner registration grooves, sparse plotted dot impressions and one gently rising shallow data-stroke fragment.",
+					"zh": "磨砂玻璃上的圆角定位槽、稀疏点痕与浅曲线，回应掌上信息展示的尺度和清晰度。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "node-image-uploader",
+			"title": "Image Uploader",
+			"archived": true,
+			"category": "archive",
+			"sourceMetadataSha256": "ff6b7d5c9e05a563d9ad45c81f9fed273454cbfff9e80680a6d47a1675d4099d",
+			"officialProjectIdentity": {
+				"path": "/logos/emoji/node-image-uploader.png",
+				"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4",
+				"rgbaSha256": "6a1e0cf1ea1ae6c2f3e3d1673856cc926a826dc974e518a69f372911bd65aa54",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 559822,
+				"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+				"kind": "emoji"
+			},
+			"existingKit": null,
+			"subject": "Existing profile emoji",
+			"productEvidence": {
+				"description": {
+					"en": "A small Node.js utility for uploading images.",
+					"zh": "一个用于上传图片的 Node.js 小工具。"
+				},
+				"purpose": {
+					"en": "A small Node.js utility for uploading images.",
+					"zh": "一个用于上传图片的 Node.js 小工具。"
+				},
+				"source": "src/data/projects/node-image-uploader.json",
+				"inspectedRevision": "e1fb7864d92d3bb48244a59809f30c700c00ca4b"
+			},
+			"action": "generate",
+			"study": "artwork/brands/node-image-uploader/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/node-image-uploader/v1.0.0",
+			"design": {
+				"identityType": "legacy-material",
+				"language": "product-material",
+				"name": {
+					"en": "The scanning bed",
+					"zh": "扫描衬面"
+				},
+				"motif": "A photographic scanning-bed liner: matte flax-fiber paper, a restrained pair of open photo-registration corners, subtle parallel feed grooves and a quiet short leading-edge crease. No photographs, frame object, upload arrows, text or recreated screenshot.",
+				"description": {
+					"en": "Matte flax-fiber paper, a restrained pair of open photo-registration corners, subtle parallel feed grooves and a quiet short leading-edge crease.",
+					"zh": "亚麻纤维衬纸、开放对位角与平行走纸槽承接图像上传前的整理，图像内容仍保持独立。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "clip",
+			"title": "clip",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "6b4a1165d7cefcce47f4dafbac0b0906bd35613bfffa400ea712b4bc983a58e8",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/clip.png",
+				"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+				"rgbaSha256": "963e9e0e52d168d56139a609fa918166741f14a9d80acddfe399f9f3dae334d6",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3160958,
+				"source": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/clip/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "e3aad2bc4963ea57fa3cf35359a099afb7bd3c2e82dc44a96cb9e3190dfcd909"
+			},
+			"subject": "An amber-eyed ostrich in a brown hat with one bright feather cluster",
+			"productEvidence": {
+				"description": {
+					"en": "Generate fully working CLIs from a clip.yaml schema, with built-in credential management",
+					"zh": "从 clip.yaml 生成可用的 CLI 工具，并集中管理 API 凭据与鉴权。"
+				},
+				"purpose": {
+					"en": "Turn an HTTP API definition in clip.yaml into an editable command-line client, with credentials stored separately for each tool.",
+					"zh": "将 clip.yaml 中的 HTTP API 定义转换为可编辑的命令行客户端，并按工具分别管理凭据。"
+				},
+				"source": "src/data/projects/clip.json",
+				"inspectedRevision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c"
+			},
+			"action": "generate",
+			"study": "artwork/brands/clip/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/clip/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Grass at walking height",
+					"zh": "步行高度的草"
+				},
+				"motif": "An open ostrich savanna habitat: tall narrow grass seed stems, sparse thornbush leaflets and a few bowed dry blades. A broad low wind sweep leaves the middle open, with no ostrich feathers, cowboy hat, native bird claim, flowers or animal.",
+				"description": {
+					"en": "Tall narrow grass seed stems, sparse thornbush leaflets and a few bowed dry blades.",
+					"zh": "高草穗、稀疏刺灌小叶与弯曲干草贴近鸵鸟步行的高度，用开阔风向承接原标的轻快。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "fundly",
+			"title": "Fundly",
+			"archived": false,
+			"category": "everyday",
+			"sourceMetadataSha256": "183d5aca3f11752a30694471394deb28a6169c35c4c4cf973e15f2836d41b17e",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/fundly.svg",
+				"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+				"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+				"width": 32,
+				"height": 32,
+				"bytes": 456,
+				"source": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/fundly/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "b079c51c6034b6bd8ca9df868a2c03b5681984426b54c4c88e89a763109600af"
+			},
+			"subject": "A worldly navy-and-ivory penguin holding binoculars",
+			"productEvidence": {
+				"description": {
+					"en": "China mutual-fund browser and ranking tool with local SQLite and Railway",
+					"zh": "中国公募基金浏览与排名工具，采用本地 SQLite 存储并部署于 Railway。"
+				},
+				"purpose": {
+					"en": "Collect fund and market data for private research into Chinese funds, ETFs, stocks, and macro conditions.",
+					"zh": "采集基金与市场数据，用于研究中国公募基金、ETF、股票与宏观环境。"
+				},
+				"source": "src/data/projects/fundly.json",
+				"inspectedRevision": "6de762074e00011009f7604bbeeb7c0b04923c00"
+			},
+			"action": "generate",
+			"study": "artwork/brands/fundly/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/fundly/v1.0.0",
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A coastal lookout",
+					"zh": "海岸瞭望处"
+				},
+				"motif": "A vegetated subantarctic coastal interpretation for an unspecified penguin: coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head. Record this as a plausible broad campaign habitat, not a species claim. No tropical plants, flowers, ice emblem or penguin.",
+				"description": {
+					"en": "Coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head.",
+					"zh": "粗壮丛生草与少量海岸草本小叶构成瞭望处。采用合理的亚南极植被联想，不断言企鹅的具体物种。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "dreamro",
+			"title": "DreamRO",
+			"archived": false,
+			"category": "games",
+			"sourceMetadataSha256": "88ac06b6821c3bb730a791d9df91acd0de9b800fe93d95c2badca02427b82d7c",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dreamro.png",
+				"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc",
+				"rgbaSha256": "e0f01115493eaca0637defd46523101e4df3d8b571315948ba425eccfdb05009",
+				"width": 512,
+				"height": 512,
+				"bytes": 17371,
+				"source": "https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dreamro/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "2cbe10ef2201355378dad5f5605c2116f9eb265bdde8e1010ed759bc664e3278"
+			},
+			"subject": "A crafted shield behind a bow and arrow, sword and magic staff",
+			"productEvidence": {
+				"description": {
+					"en": "Nostalgic 3D browser RPG with 20 classes, three realms, and local saves",
+					"zh": "怀旧风格的 3D 网页角色扮演游戏，提供 20 种职业、三大区域和本地存档。"
+				},
+				"purpose": {
+					"en": "Explore an RO-inspired single-player RPG in the browser, from character creation and quests to combat and local progress.",
+					"zh": "在浏览器中体验 RO 风格的单人 RPG，创建角色、探索地图、完成任务并保存进度。"
+				},
+				"source": "src/data/projects/dreamro.json",
+				"inspectedRevision": "07185e854a59e320f8b2a45f6d50484186753c57"
+			},
+			"action": "generate",
+			"study": "artwork/brands/dreamro/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/dreamro/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "A maker's parchment",
+					"zh": "匠人的羊皮纸"
+				},
+				"motif": "A fantasy prop-maker's shield workshop surface: fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions. A few broad asymmetrical heraldic construction folds only; no coat of arms, shield, weapons, runes, characters or text.",
+				"description": {
+					"en": "Fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions.",
+					"zh": "洁净羊皮纸、斜向皮绳槽与浅锤纹金属压边承接盾牌道具的制作感，不另造徽章或武器主体。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "meowth",
+			"title": "Meowth",
+			"archived": false,
+			"category": "ai",
+			"sourceMetadataSha256": "0fc41b14a9f029af3a30b885a4207aa9778995c84c7073fcf7450cff7f66df95",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/meowth.png",
+				"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541",
+				"rgbaSha256": "35b79c80456e1e3b9580f9eb61008ea5bda18714c254fc7d948dd0b296b18387",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3003934,
+				"source": "https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/meowth/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "bc1df0217468580df55f4c867a626fc855955d41c74c59fd5e4356a0b7befd86"
+			},
+			"subject": "A silver-blue American Shorthair head playing with one yarn loop",
+			"productEvidence": {
+				"description": {
+					"en": "Local bridge for five coding-agent CLIs with HTTP control and a web dashboard",
+					"zh": "把五种本机编程 Agent CLI 接入统一 HTTP 服务，并提供网页管理面板。"
+				},
+				"purpose": {
+					"en": "Run locally installed coding CLIs through one web console and HTTP API, with streaming output and a record of their sessions.",
+					"zh": "通过同一个网页控制台与 HTTP 接口调用本机 coding CLI，查看流式输出并保存会话记录。"
+				},
+				"source": "src/data/projects/meowth.json",
+				"inspectedRevision": "15b4d902c71ec6184c7220f0fb50a29ca87e080d"
+			},
+			"action": "generate",
+			"study": "artwork/brands/meowth/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/meowth/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "A windowsill garden",
+					"zh": "窗边小花园"
+				},
+				"motif": "A domestic cat's safe windowsill-garden interpretation: rounded softly serrated catmint leaves, a few slender oat-grass blades and delicate branching stems. Compact airy groupings suggest a quiet home. No flowers, yarn loops, paw prints, cartoon coins or cat silhouette.",
+				"description": {
+					"en": "Rounded softly serrated catmint leaves, a few slender oat-grass blades and delicate branching stems.",
+					"zh": "柔软猫薄荷叶与细燕麦草在窗边疏散生长，承接家猫的安静日常，不把毛线或爪印再铺满背景。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "coffee",
+			"title": "Coffee",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "0967a735a27782552d865728efc29dd6e69c2b38284b2f08ba33cc7899f44db2",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+				"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+				"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4374884,
+				"source": "https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/coffee/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "dfbbf78b0d15b0d1d08a7668c4d44aa5b948bb0091db43fc35a90a913149b428"
+			},
+			"subject": "Peach ceramic cup, latte leaf, saucer and brass teaspoon",
+			"productEvidence": {
+				"description": {
+					"en": "Bilingual coffee flavor wheel, origin atlas, brewing lab and tasting journal",
+					"zh": "双语咖啡风味轮、产地地图、冲煮实验室与本地品鉴手记"
+				},
+				"purpose": {
+					"en": "Explore coffee through an original interactive flavor wheel, compare origins and brewing recipes, and record tasting notes locally. Bilingual learning paths and a slow exhibition mode support sensory practice and shop displays.",
+					"zh": "通过原创交互风味轮认识咖啡，对照产地与冲煮配方，并在本地记录品鉴手记。双语学习路径与慢速展示模式支持感官练习和店铺大屏。"
+				},
+				"source": "src/data/projects/coffee.json",
+				"inspectedRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09"
+			},
+			"action": "generate",
+			"study": "artwork/brands/coffee/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/coffee/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Cupping paper and glaze",
+					"zh": "杯测纸与釉"
+				},
+				"motif": "A coffee tasting work surface: fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size. Only a tiny muted warm brown accent. No cup, coffee beans, botanical illustration, text, wheel graphic or dark stains.",
+				"description": {
+					"en": "Fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size.",
+					"zh": "杯测纸纤维、细瓷釉与两道不完整的浅环痕呼应品饮过程，咖啡杯原标仍是唯一主体。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "hermes-on-herdr",
+			"title": "hermes on herdr",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "9383ef9fc2a79efbf4091159979395d49de081bf1da5641563ad24f960723a97",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+				"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+				"rgbaSha256": "800ee7781835fe6fd6f6cbff3bd4d5fa038a0305cdc1f7b0aaa66a0b4b82f96e",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4337945,
+				"source": "https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/hermes-on-herdr/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "941aa8902f762892529b50c086d5d16ed66308dd52d47f5c821f68d47b1db16d"
+			},
+			"subject": "Brushed-brass gateway with an ajar petrol enamel door, ivory terminal inlay and green status lens",
+			"productEvidence": {
+				"description": {
+					"en": "Run Hermes in Herdr with optional monitoring",
+					"zh": "在 Herdr 中运行 Hermes，按需打开监控面板"
+				},
+				"purpose": {
+					"en": "Run a dedicated Hermes Gateway inside Herdr with explicit lifecycle control, persistent pause intent and JSON diagnostics. A compact startup page opens an optional hqtui monitor for multiple Profiles, with live status, CPU and memory trends.",
+					"zh": "在 Herdr 内运行专用 Hermes Gateway，提供明确的生命周期控制、持久暂停意图与 JSON 诊断。启动时先显示简洁状态页，按需打开 hqtui 面板，查看多个 Profile 的实时状态、CPU 和内存趋势。"
+				},
+				"source": "src/data/projects/hermes-on-herdr.json",
+				"inspectedRevision": "49b1e011781fbefc7567349862090f7463aaf2f1"
+			},
+			"action": "generate",
+			"study": "artwork/brands/hermes-on-herdr/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/hermes-on-herdr/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "A gateway work surface",
+					"zh": "门框工作面"
+				},
+				"motif": "A crafted gateway instrument's work surface: restrained brushed-brass grain, matte enamel inset seams, a pair of offset vertical guide rebates and one open threshold indentation. Architectural and tactile, no literal door, terminal text, circuit reset route, status light or logo.",
+				"description": {
+					"en": "Restrained brushed-brass grain, matte enamel inset seams, a pair of offset vertical guide rebates and one open threshold indentation.",
+					"zh": "细黄铜拉丝、珐琅嵌缝与错位门框浅槽，承接网关工具的接入关系，保留开门的余地。"
+				},
+				"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+			}
+		},
+		{
+			"id": "ocelot",
+			"title": "Ocelot",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "2a4e8dac83cae767f40a17127bdc437a497db5f01ea5bd0a373c63ab8ac513ce",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+				"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+				"rgbaSha256": "8ec4bfdfbaa5d2b42f07ec1e9baf77ed39d8cb6e69d4c87c85ab56af41ee2e75",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4575584,
+				"source": "https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/ocelot/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "8aa57fe7bb4fb79184badc817b35319ad4f7a7cc21efd7d1d532daee3ba4daad"
+			},
+			"subject": "Warm-gold faceted ocelot watching a colorful paper bird",
+			"productEvidence": {
+				"description": {
+					"en": "Read-only Obsidian reader for public and private GitHub vaults",
+					"zh": "面向 GitHub 公开与私有知识库的只读 Obsidian 阅读器"
+				},
+				"purpose": {
+					"en": "Read public and private Obsidian vaults from GitHub in a quiet, single-user web reader. Browse folders, follow wiki links and outlines, render math and diagrams, and apply new Git revisions explicitly while the source vault stays read-only. Production configuration is prepared; no deployed homepage is verified.",
+					"zh": "在安静的单用户网页阅读器里阅读 GitHub 上的公开和私有 Obsidian 知识库。浏览目录、跟随双链与大纲、查看公式图表，并主动应用新的 Git 版本，源知识库始终只读。生产配置已准备，尚无已验证的线上入口。"
+				},
+				"source": "src/data/projects/ocelot.json",
+				"inspectedRevision": "9d27eea583794ccda07dd2454c2a40302f86e227"
+			},
+			"action": "generate",
+			"study": "artwork/brands/ocelot/texture-studies/2026-09-14-flare-rollout-01",
+			"version": "1.0.0",
+			"root": "/textures/ocelot/v1.0.0",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Understory pages",
+					"zh": "林下叶页"
+				},
+				"motif": "A plausible tropical-forest understory for an ocelot: long heliconia-like leaves with clear parallel side veins, small understory fern tips and two curled young leaf edges. Asymmetric leaf overlaps suggest quietly turned pages. No rosettes, big cat, flowers or generic monstera wallpaper.",
+				"description": {
+					"en": "Long heliconia-like leaves with clear parallel side veins, small understory fern tips and two curled young leaf edges.",
+					"zh": "长阔蕉叶、林下蕨尖与卷起的新叶边层叠如书页，给豹猫留下通透的热带林下空间。"
+				},
+				"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+			}
+		},
+		{
+			"id": "pi-agent-policy",
+			"title": "Pi Agent Policy",
+			"archived": false,
+			"category": "tools",
+			"sourceMetadataSha256": "fe17b8007be09e1fe49655047c5d6ef3c986acc20a3709436f312b8cbb14a005",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pi-agent-policy-family-2026-09-14-03-01.png",
+				"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+				"rgbaSha256": "adf041d555fff54e9102b46a0041f5d93202eede62fb256de964ccab6a59df63",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3982512,
+				"source": "https://github.com/nocoo/pi-agent-policy/blob/ba73409bd7326fa1a425e5faa918a285cde42de5/logo.png",
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pi-agent-policy/v1.0.3",
+				"version": "1.0.3",
+				"manifestSha256": "1beff6c43a487be2da989f6631d074ca3f29fd4a42fbc1f7983f03b68b3d8d40"
+			},
+			"subject": "Graphite reset instrument with terracotta enamel control",
+			"productEvidence": {
+				"description": {
+					"en": "User-level Pi tool policies and bounded recovery",
+					"zh": "用户级 Pi 工具策略与有界恢复"
+				},
+				"purpose": {
+					"en": "Install once in the Pi user directory to apply declarative tool policies across projects. Policy repairs and eligible terminal recovery share one allowance per original user input; the extension returns real native-tool alternatives and waits for agent_settled before recovery. The repository is currently private, and there is no independent website.",
+					"zh": "在 Pi 用户目录安装一次，即可跨项目应用声明式工具策略。策略修复与符合条件的终止恢复共用每次原始输入的一次额度；工具受限时返回真实原生替代工具，恢复等待 agent_settled。仓库目前为私有，没有独立站点。"
+				},
+				"source": "src/data/projects/pi-agent-policy.json",
+				"inspectedRevision": "ba73409bd7326fa1a425e5faa918a285cde42de5"
+			},
+			"action": "retain",
+			"reason": "Owner-approved Flare pilot already published; preserve its exact texture, identity and kit bytes."
+		}
+	]
+}

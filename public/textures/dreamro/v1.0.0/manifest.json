@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "dreamro",
+	"version": "1.0.0",
+	"root": "/textures/dreamro/v1.0.0",
+	"canonical": "https://hexly.ai/projects/dreamro#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/dreamro/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A maker's parchment", "zh": "匠人的羊皮纸" },
+		"description": {
+			"en": "Fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions.",
+			"zh": "洁净羊皮纸、斜向皮绳槽与浅锤纹金属压边承接盾牌道具的制作感，不另造徽章或武器主体。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.31
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dreamro.png",
+		"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc",
+		"rgbaSha256": "e0f01115493eaca0637defd46523101e4df3d8b571315948ba425eccfdb05009",
+		"width": 512,
+		"height": 512,
+		"bytes": 17371,
+		"source": "https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dreamro/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "2cbe10ef2201355378dad5f5605c2116f9eb265bdde8e1010ed759bc664e3278"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fa3070d3-ebe3-4b6e-9bcc-8855a8c6aad1",
+			"source": "artwork/brands/dreamro/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/dreamro/v1.0.0/source-light-request.json",
+			"response": "/textures/dreamro/v1.0.0/source-light-response.json",
+			"prompt": "/textures/dreamro/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/dreamro/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dreamro/v1.0.0/texture-light.png",
+				"sha256": "a7016fbe5d90d5dcb43faf9f515ac3d4240fc63b9e39b409c6156e1f1caea1e4",
+				"bytes": 2064460,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e2989cbc-1ac9-48ca-b295-2cbf49b8d1ce",
+			"source": "artwork/brands/dreamro/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/dreamro/v1.0.0/source-dark-request.json",
+			"response": "/textures/dreamro/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/dreamro/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/dreamro/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dreamro/v1.0.0/texture-dark.png",
+				"sha256": "a4008013bafc032335b09d2e47f383ecea12c2d91477ff68354860d56c6fa511",
+				"bytes": 1993333,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2064460,
+			"sha256": "a7016fbe5d90d5dcb43faf9f515ac3d4240fc63b9e39b409c6156e1f1caea1e4"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 338094,
+			"sha256": "b2ba35588511fbf8b0f7465155142d1a03c8ff0462e69076d14f449cd69501fe"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10450,
+			"sha256": "fdbd4846fe6c1c0c39023b4ce37b80c61c002222336d4c2860756b97ff55de9e"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2727,
+			"sha256": "04bc2018dd4f91696b9a5b1f1e2031585438776e7bf656c4e184055ef5428882"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "f621c2912e83f376ac0f5ab494ec58c959f50f5243a984d414e5daa60b3aab0e"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "c9e3873d8e982abaf90f1a6c4402667890afb8a0a8b88b6a583e7e90187e388d"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1165,
+			"sha256": "8be345b2de9288704b773878af765295712db77712db07e74bc8ddd8c75f4b85"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1993333,
+			"sha256": "a4008013bafc032335b09d2e47f383ecea12c2d91477ff68354860d56c6fa511"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 321068,
+			"sha256": "895dfc1a23b7498fd6f2dbc81e2dc5a152041ed9e667a6185fb1aad0250bec46"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10706,
+			"sha256": "636147035c92adf62318255df1e4e78eb0867ff1e2fecb5844dd425deac3efd0"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2803,
+			"sha256": "6f3508813c64a012e9c7ba5e72914b08d3c47b406f4d92c0c6198005a6987774"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "8eef36307940850f5cbe2c4e06a9d2d4aa9d019dd8f846acb7a9c208cfad6c2b"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "3b8dc305dbc8c515636a49dc42faff15437e804d3a1cee92c63a04d710612ee3"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1165,
+			"sha256": "4c0c44905b8d45e3fda17d726eed791fe2350b9dc1d0b93de90375e2e83a587d"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5411,
+			"sha256": "80f6076a23596c88938349deea2ae53effc4c25721646bfcf882d336d512d6af"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1439,
+			"sha256": "b7b736378cafa8de22104f8062ff5ffb398ee9163fcaf73c1a99492a1d152617"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "c71a8d5c8cfa7eb17b036be6bc656c323f5db4f28d6fa5fd5a025ed38153caac"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2575,
+			"sha256": "3ce85a650f8f01c9e08d8ab8991528ff1306a2d54322dd6d1a741e9acaada0c3"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3585,
+			"sha256": "9b14a673f6a3a20caf3d4204e02b552e33fab6d899ab27fb82502ebd7d03b19b"
+		}
+	]
+}

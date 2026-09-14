@@ -39,8 +39,16 @@
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Future family notes
+## Current campaign texture
 
-Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
+- A place for a copy / 副本归位: Matte molded polymer with fine parallel ribs, shallow offset rectangular index recesses and a few precise archival tab notches.
+- 细肋聚合物、矩形索引凹位与档案卡槽承接软盘表情所代表的备份工作，保持现有身份不变。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
+- [Paper PNG](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ccbackup/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/ccbackup/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/ccbackup/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/ccbackup/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. No new logo is generated in phase one.
+## Archive maintenance
+
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

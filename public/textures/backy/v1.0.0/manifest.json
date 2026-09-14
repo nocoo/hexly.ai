@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "backy",
+	"version": "1.0.0",
+	"root": "/textures/backy/v1.0.0",
+	"canonical": "https://hexly.ai/projects/backy#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/backy/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Shelter in the scrub", "zh": "灌丛小憩" },
+		"description": {
+			"en": "Broad ribbed plantain leaves, rounded low mallow leaves and a few dry grass seeds.",
+			"zh": "车前叶的筋脉、低矮锦葵叶和干草籽贴近地面，给小陆龟留下一片有遮蔽的灌丛。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/backy-family-2026-09-07-01-01.png",
+		"sha256": "a89f2303bd3f791f240b514665325c8be7bce60f6a2338bc3efcad2248a6c7ef",
+		"rgbaSha256": "49f884dafacfb6da547e5c951c5ee9fe475828902dcb703aa26461125e2238bd",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2447370,
+		"source": "https://github.com/nocoo/backy/blob/5b23349c94ac6778f2242a857386e8b01dac4f1c/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/backy/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "029e181db0592f4696a9cd0f7f8a79d64cb302f59e6930341facad04dd77904f"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5ddaf058-923f-4678-941a-9109a8e78f7e",
+			"source": "artwork/brands/backy/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/backy/v1.0.0/source-light-request.json",
+			"response": "/textures/backy/v1.0.0/source-light-response.json",
+			"prompt": "/textures/backy/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/backy/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/backy/v1.0.0/texture-light.png",
+				"sha256": "41fad13a6b0eab998f49853135b0e21733c48dc2bd832bf19be94558cd30c5e2",
+				"bytes": 1641808,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9257c04d-1618-4969-b1d4-09a07c1e8e16",
+			"source": "artwork/brands/backy/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/backy/v1.0.0/source-dark-request.json",
+			"response": "/textures/backy/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/backy/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/backy/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/backy/v1.0.0/texture-dark.png",
+				"sha256": "b1795a204d37dfe969fee8e463de6fa360dc9e376aac4a3784cc6d033ff06a71",
+				"bytes": 1495404,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/backy/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1641808,
+			"sha256": "41fad13a6b0eab998f49853135b0e21733c48dc2bd832bf19be94558cd30c5e2"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 181074,
+			"sha256": "b52366eb35b847ea913f9a617d1490967ce939c5ca361279807e1c56e3802407"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10002,
+			"sha256": "9a6cfdd51a4e30975c95d5ccd0ddd0d8df594f3da06b4b332433baa5926543d4"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2868,
+			"sha256": "2e93c4fa38dce8a4bea5d5d694a9325af72a0794eae3689817e0235ff6d47d0c"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "ce60be82b2753c1841b53f0e11556d35f966ef9ce4bd111c067f431e9e330ef9"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "5e5c0829ec657b7d1d0638127bddecf5563ce3e3e878a434e32badffdbf8e841"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1054,
+			"sha256": "37c3c725483aab4ccf9d2dfa2442fc1bde1699abde09cb347db9c67c0996bf78"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1495404,
+			"sha256": "b1795a204d37dfe969fee8e463de6fa360dc9e376aac4a3784cc6d033ff06a71"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 145490,
+			"sha256": "c6b914a5125fd99391b2b7f2fc4c7f275cdc600f0f0f661e13b3d4e52ddcf773"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8134,
+			"sha256": "46ef71d0e6494f805e5108ec5232ffe3deccae236c83625a0dba5c7fc007d0dd"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2949,
+			"sha256": "a6fa85b9eed82d53d84d2faffeb27b5978773603437176c9611a8df4840d90dc"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "096103b0810d1df47a452379c31409e3ce69f7c2d6683e7312440dde07afb2a7"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "f4b3016d05bb546536f15ae1a0f0375031950efa69c36fb64c728fe1f0207e9e"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1054,
+			"sha256": "c2bb62a41ff7ba3757bb3cca78a9904ffab3a154f385595779c56c7e51ea7d98"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5274,
+			"sha256": "b3c07380c27291407405bbd6bbcabfa510ff75116764b534fa711cb6e8148097"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1372,
+			"sha256": "578c967f512849fde5e80d8f1566d895a88822e5258893255c78ecf9a57c826e"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "a00f99bbf3eb43b3b3ba86bf12fb092beb70208f44acb553bc9c1482f386008e"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2512,
+			"sha256": "646e8c0c22fc310c95b19e690a7dbbbbc72a5f066c72c927e61c7b39724742a0"
+		},
+		{
+			"path": "/textures/backy/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3499,
+			"sha256": "e9512a7b4722ae56dbc1852b11fbf331a0155a378f2a9484e9396332bf36e36d"
+		}
+	]
+}

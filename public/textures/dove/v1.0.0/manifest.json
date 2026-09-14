@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "dove",
+	"version": "1.0.0",
+	"root": "/textures/dove/v1.0.0",
+	"canonical": "https://hexly.ai/projects/dove#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/dove/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "An orchard perch", "zh": "花枝停驻" },
+		"description": {
+			"en": "Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.",
+			"zh": "锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.34
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dove.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4062349,
+		"source": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dove/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "3d21fe506c569846b90e45d0c1d164414222c2443406ac6f7bba2773f03fe1a7"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7694e3ca-1d7d-4882-92f3-63ef841b53fb",
+			"source": "artwork/brands/dove/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/dove/v1.0.0/source-light-request.json",
+			"response": "/textures/dove/v1.0.0/source-light-response.json",
+			"prompt": "/textures/dove/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/dove/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dove/v1.0.0/texture-light.png",
+				"sha256": "5d8cee2dd18b5703c8b52c8db7fb0999d9f2f9db41d58f087b4dd5ef692f12a7",
+				"bytes": 1649045,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ecc51e91-a7c5-44e8-a91c-57cb39f045bf",
+			"source": "artwork/brands/dove/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/dove/v1.0.0/source-dark-request.json",
+			"response": "/textures/dove/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/dove/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/dove/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dove/v1.0.0/texture-dark.png",
+				"sha256": "436c8b7ff948be13ae466b93120cf38d9b21e65cf90d338efc4ac8d6c4cf35d7",
+				"bytes": 1443615,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/dove/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1649045,
+			"sha256": "5d8cee2dd18b5703c8b52c8db7fb0999d9f2f9db41d58f087b4dd5ef692f12a7"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 175266,
+			"sha256": "05ba24842ae0bdd0917deee95ed40bc5d6395bc9b8628f72b7bb989e79590b7f"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10740,
+			"sha256": "bc0dc8941881b3367e6c4f710f5b99f7863a1f68c21c9753283ebaaf42dab7bf"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2873,
+			"sha256": "3088e4a97a2867daa3eda6c70d8de015690844395355770c4675a4f7a298cdef"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "4d12b7db003eeb9bfedd4ab71d05a386f8607ba9d175d31327d66aa20e0c5f5d"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c44452abb81d356e58398796956893289f705dfcdb4e4252309adaaa97dbad24"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1038,
+			"sha256": "34a656b8918df9279ee23932f318ba59806a8e830c0938b4a6c5f09a0d37a540"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1443615,
+			"sha256": "436c8b7ff948be13ae466b93120cf38d9b21e65cf90d338efc4ac8d6c4cf35d7"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 118388,
+			"sha256": "2137f4ec307983b42cfeeb6d1a32a386437d7b65e182d4ce126a3f7209b004e5"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7940,
+			"sha256": "401512f02b9d447acec89713211885b24ed4eaeedd3a2c53a945a5e35158941c"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2954,
+			"sha256": "52cce3af36016b051223b28c84707cc7eab4e371aec15b676c5971da62a368d4"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "2356a8240635fb718a0339fbdd1964c3a0e23102ec6b5ca6667c64b1872f7c08"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "806a095d4cf09a44d910f69b1f07f11c7c867920274d27ab92f4dd35c09a14dc"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1038,
+			"sha256": "037d15147cc9d01865176b8cfd44d5ffa94397923d5e81d9d7cb254bb33c3315"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5301,
+			"sha256": "c8728394921bd231e68c7e7ae62840e84a295601befd66c5ca9a2446cfdbd0f6"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1386,
+			"sha256": "99f1978d44dabadaa0c6c52a9607788913fc99999568ec9465f577d23c0a9018"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "985b095812bc32a928ffd87ebd9acc9a62b725bb3aa73d8350e78604d16718c3"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2554,
+			"sha256": "a48b53fa8fc42369d6b766b9615e0e7f959bea4153f9f030777463882f74648b"
+		},
+		{
+			"path": "/textures/dove/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3523,
+			"sha256": "3ac8a8cf1f0f1434618f8ab9aa34008a9b499b12d0347defbdfbbdb504fc5506"
+		}
+	]
+}

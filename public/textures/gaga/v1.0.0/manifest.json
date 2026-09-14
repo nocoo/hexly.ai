@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "gaga",
+	"version": "1.0.0",
+	"root": "/textures/gaga/v1.0.0",
+	"canonical": "https://hexly.ai/projects/gaga#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/gaga/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A small garden to explore", "zh": "小兔菜圃" },
+		"description": {
+			"en": "Feathery carrot fronds, soft clover leaves and a few broad dandelion leaves.",
+			"zh": "轻盈胡萝卜缨、三叶草与蒲公英叶散落成小小菜圃，用柔软的间距承接兔子的探索欲。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/gaga-family-2026-09-07-01-01.png",
+		"sha256": "3bbfa196509e08de9c0d0b1ac18e944e3414b7082e70740898a2a09f6ed8f076",
+		"rgbaSha256": "acefff7ae83f21c28183adbd0a8ffb4c4ce7fdec235bc2d426afd93754b793ac",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2357751,
+		"source": "https://github.com/nocoo/gaga/blob/76260f08329784eead9b30912c7692b8ea0d3d56/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/gaga/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "9f494c159c9a464f5ab1135577c1d97c8f4e0beeed4c2598c615c48f2d654ced"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6395d90e-a90d-4f53-8f13-efea51e5b6c5",
+			"source": "artwork/brands/gaga/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/gaga/v1.0.0/source-light-request.json",
+			"response": "/textures/gaga/v1.0.0/source-light-response.json",
+			"prompt": "/textures/gaga/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/gaga/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/gaga/v1.0.0/texture-light.png",
+				"sha256": "44ca6b80a2cbe9a5fa01df4630ed881216c56518331c95e942eaf6d678985db9",
+				"bytes": 1678373,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4f34b853-83e7-4010-b1ed-04d59c279a66",
+			"source": "artwork/brands/gaga/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/gaga/v1.0.0/source-dark-request.json",
+			"response": "/textures/gaga/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/gaga/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/gaga/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/gaga/v1.0.0/texture-dark.png",
+				"sha256": "5f7728df80f8a441893e3d9ec5bf22fb3c641ac6ec7b66dbd26addce87859d9b",
+				"bytes": 1469467,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/gaga/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1678373,
+			"sha256": "44ca6b80a2cbe9a5fa01df4630ed881216c56518331c95e942eaf6d678985db9"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 170312,
+			"sha256": "6b51292482a64dffdb3f31c2906f54d4c302917a3650d0380f32f882b959d47d"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 14150,
+			"sha256": "3cf72f6c467fbba1c67ba97b930fbc7a422b56dafbad8465c1c3b2d9637f0504"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2854,
+			"sha256": "e25abdbee74bff2234c925ad293cc0fca2213b5f2ffcf2056c8cf4d20f0af256"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "f5299a2482e9e152df5801efcce4a457de4d6f119adb11f554cac7af39b8bc9c"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "a6ddfd48e86557aa9470917f8f97dd294ecb92b7d3cac6c13e6fd3c166ed6631"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1035,
+			"sha256": "adfe44c78f66913329bf4463c087fe8e0cb52e5b78dcdfad3c273a85d3d3d94e"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1469467,
+			"sha256": "5f7728df80f8a441893e3d9ec5bf22fb3c641ac6ec7b66dbd26addce87859d9b"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 124482,
+			"sha256": "08a8dc3b494b095093504f5cf0729766a5b541b6dba07aa92d03944d1271be01"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9370,
+			"sha256": "0a7da196b4a6279344c9cdfee5125195fc6fdc26bc3cf39a342dc450be0d4c25"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2935,
+			"sha256": "3efa33eb3831a9dc61dfe48da0e149e79a6bc01483a0cafabecf835898f0bf57"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "7b2bc740fa497613275f062e4724ec4729947fef3ca021aa74f24e699264d5dc"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "59cfe5fc2f2b00d46f09c76db72d4b83db7f9fc2dd4d1e24909719b983a4a2ee"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1035,
+			"sha256": "0c993d79edd18009aa8ac8e3b3ca4d545aaa6a56138895692dc5318f9eef2644"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5272,
+			"sha256": "c0d2c1063d1dfb23d70fc7d339d53429b4c6afe680cc9fdfc4ba9131586841fe"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1396,
+			"sha256": "cf41e461b191b5411225674fc4ee863262c31e5c845a98970bb074fb3683d2c9"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "70a6570477161e4b5eb133b09288a85194b6310db619da9bab8020e9cf188ed9"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2513,
+			"sha256": "269c36d831e82d49d718f4a39f2112321c2148790bea7ed733ba0721e720a874"
+		},
+		{
+			"path": "/textures/gaga/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3500,
+			"sha256": "28810244e158445cee94252cc74d53970477563d4495d94b759afb2a10ef311f"
+		}
+	]
+}

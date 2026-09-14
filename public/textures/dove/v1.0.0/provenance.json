@@ -1,0 +1,122 @@
+{
+	"project": "dove",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "An orchard perch", "zh": "花枝停驻" },
+		"motif": "A temperate orchard perch for the existing dove with pink blossom accents: serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush. Leaves dominate; petals occupy less than two percent of the canvas.",
+		"description": {
+			"en": "Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.",
+			"zh": "锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A self-hosted email relay with webhooks, reusable templates, and delivery insights.",
+			"zh": "可自行托管的邮件中继，支持 Webhook、邮件模板与用量查看。"
+		},
+		"purpose": {
+			"en": "Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.",
+			"zh": "为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。"
+		},
+		"source": "src/data/projects/dove.json",
+		"inspectedRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dove.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4062349,
+		"source": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dove/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "3d21fe506c569846b90e45d0c1d164414222c2443406ac6f7bba2773f03fe1a7"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7694e3ca-1d7d-4882-92f3-63ef841b53fb",
+			"source": "artwork/brands/dove/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/dove/v1.0.0/source-light-request.json",
+			"response": "/textures/dove/v1.0.0/source-light-response.json",
+			"prompt": "/textures/dove/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/dove/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dove/v1.0.0/texture-light.png",
+				"sha256": "5d8cee2dd18b5703c8b52c8db7fb0999d9f2f9db41d58f087b4dd5ef692f12a7",
+				"bytes": 1649045,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ecc51e91-a7c5-44e8-a91c-57cb39f045bf",
+			"source": "artwork/brands/dove/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/dove/v1.0.0/source-dark-request.json",
+			"response": "/textures/dove/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/dove/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/dove/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dove/v1.0.0/texture-dark.png",
+				"sha256": "436c8b7ff948be13ae466b93120cf38d9b21e65cf90d338efc4ac8d6c4cf35d7",
+				"bytes": 1443615,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.34
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.732684801734703,
+		"darkMinimum": 5.121783273715891,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:23:58.446Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

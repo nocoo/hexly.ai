@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "noheir",
+	"version": "1.0.0",
+	"root": "/textures/noheir/v1.0.0",
+	"canonical": "https://hexly.ai/projects/noheir#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/noheir/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Pasture rows", "zh": "牧草成行" },
+		"description": {
+			"en": "Broad alfalfa leaf triplets, meadow-grass blades and loose oat seed panicles.",
+			"zh": "苜蓿三出叶、牧草与松散燕麦穗自然成行，把奶牛身边有照料的草地延伸成安稳的背景。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/noheir-family-2026-09-07-02-02.png",
+		"sha256": "26d9720f81d6233909a9cffd5a791c62d7d3b46cb37da4875009d7ca875eaeff",
+		"rgbaSha256": "bb76d3ee3bfe5268f2d8b0e6d00efe5d896e8de47dd376de87579ebfee811fe4",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3801133,
+		"source": "https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/noheir/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5a7afc1dd7bc1a12fc8e5e4d8f0299a43caa9fdc01e4916d7c55f52aec46bffe"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a1e1f1a3-2a3b-4715-9647-551a90cfa2db",
+			"source": "artwork/brands/noheir/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/noheir/v1.0.0/source-light-request.json",
+			"response": "/textures/noheir/v1.0.0/source-light-response.json",
+			"prompt": "/textures/noheir/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/noheir/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/noheir/v1.0.0/texture-light.png",
+				"sha256": "f2ea7612b826875bf3207f3b83261c28404aa69565e3168f307f1cdaf2861220",
+				"bytes": 1651281,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8d668e52-fa30-43f0-a9d8-7ba1b7d42a74",
+			"source": "artwork/brands/noheir/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/noheir/v1.0.0/source-dark-request.json",
+			"response": "/textures/noheir/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/noheir/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/noheir/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/noheir/v1.0.0/texture-dark.png",
+				"sha256": "993732b42f2b61437abf4927f4fd6acc969795ae6a273e1ef4718ab889072c66",
+				"bytes": 1515435,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/noheir/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1651281,
+			"sha256": "f2ea7612b826875bf3207f3b83261c28404aa69565e3168f307f1cdaf2861220"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 180400,
+			"sha256": "9aee78e914205d78c057751ea7d4daea33c62d5beef1b1ed0966332323f91733"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10112,
+			"sha256": "4b50901c9f82a30f26c45df19045b2e774d96f629b118c37492183a2c0c7c92c"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2853,
+			"sha256": "92d31af684d3a433708527bbb5eb6f0e27a6c8bcb71bebb604f125a282ede9da"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "a596bede05b8627ee04bf1fb6b98ee19ee0eebbed944d0f2542a080b082cd548"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "9e92e65f218d4aaca3baa2863d4d462b822a90f5f0750652347477bc6faa45eb"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1084,
+			"sha256": "33cf74936c833a19250f8fb74c08295411869ba390de0276b03c18a0ce94cebb"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1515435,
+			"sha256": "993732b42f2b61437abf4927f4fd6acc969795ae6a273e1ef4718ab889072c66"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 136530,
+			"sha256": "160a11298b4b7b8cf5feed204a00d4722c8b4ebe20d04d3f566b5928085a2200"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9488,
+			"sha256": "b81f04494f5843a9027e177e7cd67b4c48489163d3e4f43912bb82ec679908f1"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2934,
+			"sha256": "264f4ab704613cd91b62b00b0a2fe1ec6adaa75a5b55ed08bcea89f3a128ca72"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "3e397bbfd29b358e00ed043bfe58b57959fbe93ba0cb06ce4ebe24018e29e803"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "5de510cfc8b7825f2b8e57c2a84d93a9e186bd79b47182b7248d4aee85dc1d44"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1079,
+			"sha256": "d03f5e30e1ebef7c8c6a982e94f233f21ebca65632fe193e540c1cc3ce4901db"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5300,
+			"sha256": "f04610518fe69a6d83e7f9a6a9debb793085ba6ec819fe4c751ed75b7cb959ab"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1390,
+			"sha256": "ae94268958718f665875bd345059575503abcd2f3083312c569586bc70ba7cc4"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "5c90b77aa14560ff08aa32aea97460c758c7e20e06df35112cee2ced416f70b1"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2512,
+			"sha256": "0df4a9639f1ac3cb7288560c15fee6568b191fafae9b91da134900b0570c7dce"
+		},
+		{
+			"path": "/textures/noheir/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3493,
+			"sha256": "5c2f9d0016b598c748fb25ede1382bb14e60a5faea3824a2343d2176150800ad"
+		}
+	]
+}

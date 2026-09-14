@@ -1,0 +1,118 @@
+{
+	"project": "mcp-work-history",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "A stitched work log", "zh": "装订工作簿" },
+		"motif": "A robot-assistant work-log analogue: tough long-fiber notebook paper, a low stitched binding-edge impression, staggered index tabs and sparse ledger-like baselines. Warm tactile record keeping, no robot face, readable chronology, code, dates or labels.",
+		"description": {
+			"en": "Tough long-fiber notebook paper, a low stitched binding-edge impression, staggered index tabs and sparse ledger-like baselines.",
+			"zh": "长纤维记录纸、装订线与交错索引签承接可检索的工作历史，纹理里不编造时间记录。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A searchable record of your AI tools and the work they do.",
+			"zh": "记录 AI 工具的工作活动，留存可查询的历史和指标。"
+		},
+		"purpose": {
+			"en": "A searchable record of your AI tools and the work they do.",
+			"zh": "记录 AI 工具的工作活动，留存可查询的历史和指标。"
+		},
+		"source": "src/data/projects/mcp-work-history.json",
+		"inspectedRevision": "cae3f14f4e3cccd588915b7f8b015d5bf9de08ce"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/mcp-work-history.png",
+		"sha256": "cd0c3ef6a10e2311e6b444336d336c93e8fa0b316dbd5175b0c133e944649c7b",
+		"rgbaSha256": "cb8483100494bf50638a4968608ed006c5c871ee241aede9b8de20649de55fb3",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 384558,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5cb00a33-ba93-4324-ad4e-35440d041abf",
+			"source": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/mcp-work-history/v1.0.0/source-light-request.json",
+			"response": "/textures/mcp-work-history/v1.0.0/source-light-response.json",
+			"prompt": "/textures/mcp-work-history/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/mcp-work-history/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mcp-work-history/v1.0.0/texture-light.png",
+				"sha256": "d2732610408973c83de9d96c46f47b2a6a25843c3c8064d95f966ff39f88f658",
+				"bytes": 1945126,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "76a4f71b-f83d-410f-84b7-dfd54db1f88a",
+			"source": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/mcp-work-history/v1.0.0/source-dark-request.json",
+			"response": "/textures/mcp-work-history/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/mcp-work-history/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/mcp-work-history/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mcp-work-history/v1.0.0/texture-dark.png",
+				"sha256": "ced3dbe1d8e16d0ccbf9551f3f390e61f2890351f377eb40a45ad1801faa6e32",
+				"bytes": 1764463,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.29
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.174926624706994,
+		"darkMinimum": 4.754723036637391,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:05:23.413Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

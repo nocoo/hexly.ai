@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "clip",
+	"version": "1.0.0",
+	"root": "/textures/clip/v1.0.0",
+	"canonical": "https://hexly.ai/projects/clip#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/clip/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Grass at walking height", "zh": "步行高度的草" },
+		"description": {
+			"en": "Tall narrow grass seed stems, sparse thornbush leaflets and a few bowed dry blades.",
+			"zh": "高草穗、稀疏刺灌小叶与弯曲干草贴近鸵鸟步行的高度，用开阔风向承接原标的轻快。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/clip.png",
+		"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+		"rgbaSha256": "963e9e0e52d168d56139a609fa918166741f14a9d80acddfe399f9f3dae334d6",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3160958,
+		"source": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/clip/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "e3aad2bc4963ea57fa3cf35359a099afb7bd3c2e82dc44a96cb9e3190dfcd909"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "efa48425-6944-4ef3-9413-d9ec4e09e870",
+			"source": "artwork/brands/clip/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/clip/v1.0.0/source-light-request.json",
+			"response": "/textures/clip/v1.0.0/source-light-response.json",
+			"prompt": "/textures/clip/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/clip/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/clip/v1.0.0/texture-light.png",
+				"sha256": "327b0d77976c03949b7c6c53199f795a9c7812d82f1329f459bb95d24235e266",
+				"bytes": 1601696,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0a353e77-ad03-4ca2-aa46-1211d3717b93",
+			"source": "artwork/brands/clip/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/clip/v1.0.0/source-dark-request.json",
+			"response": "/textures/clip/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/clip/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/clip/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/clip/v1.0.0/texture-dark.png",
+				"sha256": "ffe7c70f6da7293c51959f75a33b0cf2acafe0d00dcdb573bcfde3ad884d3be1",
+				"bytes": 1475623,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/clip/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1601696,
+			"sha256": "327b0d77976c03949b7c6c53199f795a9c7812d82f1329f459bb95d24235e266"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 148966,
+			"sha256": "7941aeb8d75e3594d6acb6c1b3f0a5e1b12c849a269d1b568645dbe6c996ed7d"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13190,
+			"sha256": "b49142db8f0c20485df9c72dec77edb632267bd71668c0cca3f69a030c389795"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2850,
+			"sha256": "1f9ed4f306c07e7ae0ed8af8712c865976ada84f1aaaa1aa7b18a1f7d6512e0b"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "4c3fd052f74190666f09edd9d5dc9d1191026a514887575f92165b26212a8707"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "6fa159149e1a14042909372aa188609290de87b5e701fc06869a846b1927d0bd"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1135,
+			"sha256": "de47b3da6cefa58ebe3e15de5f045c6238fa54e0e7767ba0d0fec0628c0699fd"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1475623,
+			"sha256": "ffe7c70f6da7293c51959f75a33b0cf2acafe0d00dcdb573bcfde3ad884d3be1"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 133722,
+			"sha256": "7ef9e88e220cebd1d94afb612aa037836aad60d0135d72f7e2cb513a451da367"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9814,
+			"sha256": "78ca8fc0507c1dbbb54fc9d23c832ab8b67e2ccefbcb6fae90aaa477fa80a226"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2931,
+			"sha256": "2403580e733c8fe9ebc6e15d71d5d20e005b78ab9780b1b97c303b495393ba1e"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "4d005d7a2e2acc21c57e0905823d45e025348083f85db698361f5a010b28269d"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "43fcbc29a005b04e4a55de9cbf6212357e9765d364e2b0ad48adcfaff9afe21f"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1179,
+			"sha256": "80b30f085cb5f0ddc6a90ff306f59a5be2a18b463690499c73a7ad04ef74bfd3"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5282,
+			"sha256": "790e94c40b3bb05630fa46fb08a7082df5dda013a5e1f85ee428e4fbc1a1c45d"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1392,
+			"sha256": "3c0ba9c64e66a5326241c3342498827b3737e81b20bd3092d36d98d5e5c2aa1d"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "a2e09a44dfef0b7cde52df67a08a10a8baa611ab886cbabfe83aa472a50cbc43"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2518,
+			"sha256": "30674269d68db7daccccaf459977493a8f3641262ebd79739242f290de1b5356"
+		},
+		{
+			"path": "/textures/clip/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3501,
+			"sha256": "d491db9620c8dd6237e81f53d8840f32ae4b77c0cfd547cd4b18b4ecaae127e8"
+		}
+	]
+}

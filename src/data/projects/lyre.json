@@ -126,10 +126,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "A pressed feather fan",
-					"zh": "压印的扇羽"
-				},
+				"title": { "en": "A pressed feather fan", "zh": "压印的扇羽" },
 				"description": {
 					"en": "Unequal feather ribs open around a chestnut paper field. Small raised edges, fine grain, and a shallow shadow separate the bird from its warm setting.",
 					"zh": "疏密不一的扇羽纹围绕栗棕纸面展开，细亮边、微颗粒与浅阴影将鸟的轮廓从暖色底面中托出。"
@@ -140,54 +137,36 @@
 			{
 				"color": "#a16850",
 				"role": "background",
-				"label": {
-					"en": "Lyrebird fan",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Lyrebird fan", "zh": "展示底色" },
 				"source": "Selected Lyre presentation, finishing 01; background.base in archived settings.json"
 			},
 			{
 				"color": "#a35d3b",
-				"label": {
-					"en": "Chestnut",
-					"zh": "栗棕"
-				},
+				"label": { "en": "Chestnut", "zh": "栗棕" },
 				"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1408, 138); palette.json",
 				"role": "primary"
 			},
 			{
 				"color": "#d7884d",
-				"label": {
-					"en": "Copper",
-					"zh": "铜橙"
-				},
+				"label": { "en": "Copper", "zh": "铜橙" },
 				"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1161, 1515); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#dfc39e",
-				"label": {
-					"en": "Cream throat",
-					"zh": "奶油色喉羽"
-				},
+				"label": { "en": "Cream throat", "zh": "奶油色喉羽" },
 				"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1225, 1199); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#5d2e24",
-				"label": {
-					"en": "Deep umber",
-					"zh": "深赭棕"
-				},
+				"label": { "en": "Deep umber", "zh": "深赭棕" },
 				"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (1414, 223); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#f2a965",
-				"label": {
-					"en": "Amber eye",
-					"zh": "琥珀眼"
-				},
+				"label": { "en": "Amber eye", "zh": "琥珀眼" },
 				"source": "Original lyre 1ba1c2482286, sampled sRGB pixel (877, 548); palette.json",
 				"role": "accent"
 			}
@@ -334,15 +313,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 726,
-			"height": 416
-		},
+		"lockup": { "width": 726, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Lyrebird fan",
-				"zh": "琴鸟扇羽"
-			},
+			"name": { "en": "Lyrebird fan", "zh": "琴鸟扇羽" },
 			"description": {
 				"en": "Unequal curved ribs form two off-center feather fans, leaving generous space between their open edges.",
 				"zh": "长短不同的弧形羽肋组成两片偏心扇羽，开口之间保留宽松的呼吸空间。"
@@ -367,35 +340,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥45px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 45px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/lyre/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Under the fern canopy", "zh": "蕨下回声" },
+		"description": {
+			"en": "Finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip.",
+			"zh": "树蕨细叶、桉树长叶与一枚嫩蕨卷承接琴鸟的湿润林地，把声音的层次藏进叶片重叠处。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.41
 	}
 }

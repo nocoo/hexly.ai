@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "mcp-make-sound",
+	"version": "1.0.0",
+	"root": "/textures/mcp-make-sound/v1.0.0",
+	"canonical": "https://hexly.ai/projects/mcp-make-sound#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/mcp-make-sound/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Speaker cloth", "zh": "扬声织物" },
+		"description": {
+			"en": "Fine two-direction acoustic textile weave, one broad shallow diaphragm-like arc emerging near the lower right and a few layered fabric seams.",
+			"zh": "双向声学织物与一段宽浅振膜弧呼应系统声音，保留织物触感和开阔的静处。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/mcp-make-sound.png",
+		"sha256": "e351632c7148db3536754e8d5e7f63120b16097fa22dff75d4e1138845cfa0b8",
+		"rgbaSha256": "d6f4ee2ec693daa30b968ba6fcb49e4150342961706a43151b63fab2acff5a08",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 574400,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "40345e3a-5c19-4a67-bbef-52e44524f007",
+			"source": "artwork/brands/mcp-make-sound/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/mcp-make-sound/v1.0.0/source-light-request.json",
+			"response": "/textures/mcp-make-sound/v1.0.0/source-light-response.json",
+			"prompt": "/textures/mcp-make-sound/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/mcp-make-sound/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mcp-make-sound/v1.0.0/texture-light.png",
+				"sha256": "a8828f05c3e8a1d5ec6e2c8b22b42b9b4cad07f57101e81ee2b9d09e7b80646f",
+				"bytes": 1960217,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "bcac50c7-1f0b-4e93-a28c-90eb473d6619",
+			"source": "artwork/brands/mcp-make-sound/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/mcp-make-sound/v1.0.0/source-dark-request.json",
+			"response": "/textures/mcp-make-sound/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/mcp-make-sound/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/mcp-make-sound/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mcp-make-sound/v1.0.0/texture-dark.png",
+				"sha256": "3ae2db8b124876da0ac7c57e0eeace2aaa63fc3d14ae09cea60d8a960fcf2b95",
+				"bytes": 1988715,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1960217,
+			"sha256": "a8828f05c3e8a1d5ec6e2c8b22b42b9b4cad07f57101e81ee2b9d09e7b80646f"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 288706,
+			"sha256": "288b3b9edcf06c958860470bb3bce36156d0c7ac6bde6c8b05dbe72e6eea9bee"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 21686,
+			"sha256": "94905b0c59ba43a009d5f58a64650318ad08196a0e4e7dcc14d21b4a463a1cc8"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2701,
+			"sha256": "dabd6d6a0d9e0c2ecf95375752a6cf5ba85a5cc561c98aba9e88e26d692a6f41"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "2b598ce49f1335ccc52c4e0b1f80237ee16def64d83ce4c0945c899313b9cffe"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "518f3d8d6a936e77d039cd09e3bb3131f35739df0abbb8f103990b6894e4fa23"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1104,
+			"sha256": "c00ab0c34ae23d2bbc9b1dc4975fa74f0669fb921636a77eefba1733426f3fc2"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1988715,
+			"sha256": "3ae2db8b124876da0ac7c57e0eeace2aaa63fc3d14ae09cea60d8a960fcf2b95"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 300956,
+			"sha256": "3c87b2c7588553cd9892b2b35983e231e49e788e807fb7ec85190eb6c7db4ee5"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13366,
+			"sha256": "598bd450c564c85cd572e2296218eca21e5c70d68fb47c52662b4330f13de41c"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2777,
+			"sha256": "4efb36a0180348390105660017e169f41d855a0116f2ce10ee604a7a708ac693"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "f421e7fc025e5e8f1e8b47faabad3cb09d17b80cd30f87bd65234894608ad98d"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "88a24b9c0895abc10c680d1d8bcadedd7a9019576d51cb7a72a2109ab1eba836"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1061,
+			"sha256": "870d335e10a0fbfea05bd10ef32c71a81f981175805ed3f2ead9cfc3a7ade981"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5133,
+			"sha256": "84f70a56db24bbae5e9229d21488d313bf3fea4fbc40baad6981780c20b3f191"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1277,
+			"sha256": "c3ec33d5591ed2db298b8f642bdb364cf63e4d6663ab6ef038efe473c913f981"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1767,
+			"sha256": "64f83a76ed78e5a31d67ab53e49eb8f0e505f3a50207e6d23d7450b85ef68264"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2627,
+			"sha256": "2d86e3f7e62f7d5e845913b400ee0623520bf04fee9e84c6574f06d71fa1855f"
+		},
+		{
+			"path": "/textures/mcp-make-sound/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3657,
+			"sha256": "9949ce9b7bda48b15644d774697ba7aa8f10acfb504e28dbdb24e097dcd61ffe"
+		}
+	]
+}

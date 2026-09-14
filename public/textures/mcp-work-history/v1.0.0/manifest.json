@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "mcp-work-history",
+	"version": "1.0.0",
+	"root": "/textures/mcp-work-history/v1.0.0",
+	"canonical": "https://hexly.ai/projects/mcp-work-history#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/mcp-work-history/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A stitched work log", "zh": "装订工作簿" },
+		"description": {
+			"en": "Tough long-fiber notebook paper, a low stitched binding-edge impression, staggered index tabs and sparse ledger-like baselines.",
+			"zh": "长纤维记录纸、装订线与交错索引签承接可检索的工作历史，纹理里不编造时间记录。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.29
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/mcp-work-history.png",
+		"sha256": "cd0c3ef6a10e2311e6b444336d336c93e8fa0b316dbd5175b0c133e944649c7b",
+		"rgbaSha256": "cb8483100494bf50638a4968608ed006c5c871ee241aede9b8de20649de55fb3",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 384558,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5cb00a33-ba93-4324-ad4e-35440d041abf",
+			"source": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/mcp-work-history/v1.0.0/source-light-request.json",
+			"response": "/textures/mcp-work-history/v1.0.0/source-light-response.json",
+			"prompt": "/textures/mcp-work-history/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/mcp-work-history/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mcp-work-history/v1.0.0/texture-light.png",
+				"sha256": "d2732610408973c83de9d96c46f47b2a6a25843c3c8064d95f966ff39f88f658",
+				"bytes": 1945126,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "76a4f71b-f83d-410f-84b7-dfd54db1f88a",
+			"source": "artwork/brands/mcp-work-history/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/mcp-work-history/v1.0.0/source-dark-request.json",
+			"response": "/textures/mcp-work-history/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/mcp-work-history/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/mcp-work-history/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mcp-work-history/v1.0.0/texture-dark.png",
+				"sha256": "ced3dbe1d8e16d0ccbf9551f3f390e61f2890351f377eb40a45ad1801faa6e32",
+				"bytes": 1764463,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1945126,
+			"sha256": "d2732610408973c83de9d96c46f47b2a6a25843c3c8064d95f966ff39f88f658"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 290206,
+			"sha256": "2da8c6e7a495da0148500156495a8f28adb826ddfb3e32846b0c0856ca94e6f6"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7896,
+			"sha256": "49c63c89cb238e931b952ad9a9de6bff61ff55005579c09bfb67170029201366"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2704,
+			"sha256": "e2d95667beacd2a3af4dfceef15f48ec9531259b5fe52c97d9eedc40ce9b45d0"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8d3dd5da96cb8976532bc17871d23f914968c0e42600ce0b77945e02409dec63"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "1fd444377bb494f5d3bff78752ef8432161b80b20bbea27a7866de4a6a1ccea9"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1081,
+			"sha256": "9fd300beff0bf64eee67b4396445f34dcac7669507545bf7ef1ed5941f8f68a2"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1764463,
+			"sha256": "ced3dbe1d8e16d0ccbf9551f3f390e61f2890351f377eb40a45ad1801faa6e32"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 259118,
+			"sha256": "0764fee447a9cd566a12769464f19085cd034bf96e4dc5323f9b3aedffd9ebfc"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5238,
+			"sha256": "18003fda2a0a904e6aafead839ac521d7af4e80cca58923c7eca6387afe50e31"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2780,
+			"sha256": "56830ba4a21813e7e3c0b634f20ded593d62928fa5121c8daf0d73f007d95dc4"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "7fa385e795d39228e97e100a6f520f5c141372c56fc1abad89563f5f4731d749"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "bd8db5aa79e39ed49fb37b027e94598da7db5fd9b1b60117c637d6bca6f11da0"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1043,
+			"sha256": "b065a762180be5a9c1cfbd2d5029c6a4fa1bd14818181076959e2e5794331b73"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5229,
+			"sha256": "73244158cd1289ee67dd579cec3a73a3c6ece36569e699964334768608f8bb26"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1304,
+			"sha256": "571e7bc511f9f0a97a104a10659fcd4f43e1300b62bdc9993b1b7c19701b495b"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1769,
+			"sha256": "a82ce0377b42af0034c63fb80fde5cc8738fe1e822b06fc2daa19ae8dadd6560"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2637,
+			"sha256": "2793edcec60d6f1d9f4019dde9b345ef9656c54bfb37e76a3f866808f750c28f"
+		},
+		{
+			"path": "/textures/mcp-work-history/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3701,
+			"sha256": "69548983119383b766746a3312aaf3a0c4bf592c8126456b89eb75de02e6717d"
+		}
+	]
+}
