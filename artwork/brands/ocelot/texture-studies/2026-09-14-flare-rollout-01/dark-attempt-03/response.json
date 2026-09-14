@@ -1,0 +1,44 @@
+{
+	"status": "succeeded",
+	"httpStatus": 200,
+	"requestId": "52dd5d50-8091-4c8f-ad85-af1355d81144",
+	"rateLimits": {
+		"x-ratelimit-remaining-requests": "0",
+		"x-ratelimit-limit-requests": "2"
+	},
+	"finishedAt": "2026-09-14T05:23:53.977960+00:00",
+	"elapsedSeconds": 32.42,
+	"response": {
+		"created": 1789363431,
+		"background": "opaque",
+		"output_format": "png",
+		"quality": "high",
+		"size": "1024x1024",
+		"usage": {
+			"input_tokens": 601,
+			"input_tokens_details": {
+				"image_tokens": 0,
+				"text_tokens": 601
+			},
+			"output_tokens": 1756,
+			"output_tokens_details": {
+				"image_tokens": 1756,
+				"text_tokens": 0
+			},
+			"total_tokens": 2357
+		},
+		"data": [
+			{}
+		]
+	},
+	"outputs": [
+		{
+			"path": "raw.png",
+			"bytes": 1443758,
+			"sha256": "735f755fe14d6ed9321b1cee5f744e80f7d34f59d5d6183f660ff9463c66a72b",
+			"width": 1024,
+			"height": 1024,
+			"rawResponseBytesPreserved": true
+		}
+	]
+}

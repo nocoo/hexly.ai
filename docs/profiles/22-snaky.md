@@ -39,7 +39,7 @@ Help VPN and proxy users check destination egress IPs, HTTP latency and DNS reso
 
 ![Snaky source identity](https://h.no.mt/projects/snaky/identity/v1.0.0/snaky-160-c3515cb205ec.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Green snake in a natural coil with one multicolored forked tongue
 - [Source](https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/snaky/identity/v1.0.0/snaky-family-2026-09-07-01-01-4b2ea7f80bf0.png)
@@ -60,6 +60,16 @@ Help VPN and proxy users check destination egress IPs, HTTP latency and DNS reso
 | accent | `#d96e6b` | Native snaky 2283c4fb8964, sampled sRGB pixel (1483, 606); artwork/logo-family/snaky/2026-09-07-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- The meadow bends / 草叶转弯: Narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads.
+- 细草叶与车前长叶缓慢交错，草甸边缘的弯折自然呼应蛇的行进，也让路径有处可寻。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
+- [Paper PNG](https://h.no.mt/projects/snaky/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/snaky/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/snaky/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/snaky/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/snaky/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/snaky/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/snaky/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -142,6 +152,6 @@ Small-size observation: The complete animal and accessory have at least 198.5 px
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

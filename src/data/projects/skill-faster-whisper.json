@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/skill-faster-whisper/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Acoustic felt", "zh": "收声毡面" },
+		"description": {
+			"en": "Densely woven acoustic felt, shallow elongated pill-shaped perforation rows and a few low-amplitude embossed horizontal wave fragments.",
+			"zh": "细织吸音毡与稀疏长孔收住声音，轻浅横向波纹呼应语音转写而不生成虚构转录内容。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	}
 }

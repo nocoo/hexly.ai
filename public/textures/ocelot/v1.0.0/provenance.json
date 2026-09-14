@@ -1,0 +1,122 @@
+{
+	"project": "ocelot",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Understory pages", "zh": "林下叶页" },
+		"motif": "A plausible tropical-forest understory for an ocelot: long heliconia-like leaves with clear parallel side veins, small understory fern tips and two curled young leaf edges. Asymmetric leaf overlaps suggest quietly turned pages. No rosettes, big cat, flowers or generic monstera wallpaper.",
+		"description": {
+			"en": "Long heliconia-like leaves with clear parallel side veins, small understory fern tips and two curled young leaf edges.",
+			"zh": "长阔蕉叶、林下蕨尖与卷起的新叶边层叠如书页，给豹猫留下通透的热带林下空间。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Read-only Obsidian reader for public and private GitHub vaults",
+			"zh": "面向 GitHub 公开与私有知识库的只读 Obsidian 阅读器"
+		},
+		"purpose": {
+			"en": "Read public and private Obsidian vaults from GitHub in a quiet, single-user web reader. Browse folders, follow wiki links and outlines, render math and diagrams, and apply new Git revisions explicitly while the source vault stays read-only. Production configuration is prepared; no deployed homepage is verified.",
+			"zh": "在安静的单用户网页阅读器里阅读 GitHub 上的公开和私有 Obsidian 知识库。浏览目录、跟随双链与大纲、查看公式图表，并主动应用新的 Git 版本，源知识库始终只读。生产配置已准备，尚无已验证的线上入口。"
+		},
+		"source": "src/data/projects/ocelot.json",
+		"inspectedRevision": "9d27eea583794ccda07dd2454c2a40302f86e227"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"rgbaSha256": "8ec4bfdfbaa5d2b42f07ec1e9baf77ed39d8cb6e69d4c87c85ab56af41ee2e75",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4575584,
+		"source": "https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ocelot/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8aa57fe7bb4fb79184badc817b35319ad4f7a7cc21efd7d1d532daee3ba4daad"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "612a8cfe-0e6b-47c9-b884-aac14b8ce068",
+			"source": "artwork/brands/ocelot/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ocelot/v1.0.0/source-light-request.json",
+			"response": "/textures/ocelot/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ocelot/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ocelot/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ocelot/v1.0.0/texture-light.png",
+				"sha256": "2cecadc17a19027992702b2461e66add89b2db0ef53f460a39ae948356177a1c",
+				"bytes": 1666131,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52dd5d50-8091-4c8f-ad85-af1355d81144",
+			"source": "artwork/brands/ocelot/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ocelot/v1.0.0/source-dark-request.json",
+			"response": "/textures/ocelot/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ocelot/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ocelot/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ocelot/v1.0.0/texture-dark.png",
+				"sha256": "735f755fe14d6ed9321b1cee5f744e80f7d34f59d5d6183f660ff9463c66a72b",
+				"bytes": 1443758,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.36
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.791256355227359,
+		"darkMinimum": 4.991149052625803,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:25:08.502Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

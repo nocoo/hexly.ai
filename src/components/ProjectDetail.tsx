@@ -217,8 +217,10 @@ export function ProjectDetail({
 					aria-labelledby="identity-title"
 					data-project={project.id}
 					data-brand-artwork={project.brandKit?.method}
-					data-texture-display={project.brandKit?.texture?.display}
-					style={brandTexture(project.brandKit) as CSSProperties}
+					data-texture-display={
+						project.brandTexture?.display ?? project.brandKit?.texture?.display
+					}
+					style={brandTexture(project) as CSSProperties}
 				>
 					<div className="identity-heading">
 						<Logo project={project} size={72} framed={false} eager />

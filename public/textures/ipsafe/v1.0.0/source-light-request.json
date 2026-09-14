@@ -1,0 +1,23 @@
+{
+	"startedAt": "2026-09-14T04:54:55.547977+00:00",
+	"provider": "Azure OpenAI",
+	"endpointPath": "/openai/v1/images/generations",
+	"method": "POST",
+	"parameters": {
+		"model": "gpt-image-2.5-flare",
+		"size": "1024x1024",
+		"n": 1,
+		"quality": "high"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "54309fcd41ea446e683454fb86a74cc40dd76c8e4c2fcc76e04061c2f6bd6dad",
+	"referenceImages": [],
+	"attempt": 3,
+	"helper": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+	"helperRevision": "cd22362da862248bfd6fe3028630f532a135b322",
+	"helperSha256": "2701b552012f669a93b09c89baf9daa623537d41f7e176ab5a40c2ec016f84df",
+	"helperModified": false,
+	"recorder": ".agents/skills/hexly-brand-textures/scripts/generate.py",
+	"recorderSha256": "f4e7eb0b4f1caa92dce101bb8722e13997ca97009a4e707140c09e4403bad87a",
+	"modelSelection": "Owner selected Flare for decorative surfaces and delegated this complete catalogue rollout; primary identity generation is out of scope."
+}

@@ -10,6 +10,9 @@ completion evidence are recorded in [the execution plan](20-r2-assets-execution.
 The Worker serves HTML, application JavaScript/CSS, APIs, catalogue and template
 configuration, sitemap, robots and llms. It redirects old material URLs to R2.
 Main-site image, font and material-download references use the CDN directly.
+Texture-only packs use `public/textures/<project>/v<version>/` locally and
+`projects/<project>/textures/v<version>/` on R2. `Project.brandTexture` selects
+them independently of identity kits; see [the texture guide](27-project-textures.md).
 Historical comparison HTML and its JS/CSS remain on hexly.ai, preserving their
 exact bytes, relative references and canonical project navigation.
 

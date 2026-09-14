@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "giraffe",
+	"version": "1.0.0",
+	"root": "/textures/giraffe/v1.0.0",
+	"canonical": "https://hexly.ai/projects/giraffe#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/giraffe/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Acacia at eye level", "zh": "枝头金合欢" },
+		"description": {
+			"en": "Unmistakable delicate bipinnate acacia leaflets, one restrained curved seed pod and thin forked twigs.",
+			"zh": "纤细的金合欢复叶与弯曲豆荚落在枝头，像长颈鹿抬眼便能触及的一小片树冠。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+		"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+		"rgbaSha256": "774800377f2c972039f9999a476d3a784145289317203d21b840f520def78b32",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3073843,
+		"source": "https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/giraffe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "dba985c1f01d1eff465ffca8b14dc8acab7465a4b9ffa0d876fcee66a794abea"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "efbc3bf5-8968-49f2-a380-7f5f82bc5977",
+			"source": "artwork/brands/giraffe/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/giraffe/v1.0.0/source-light-request.json",
+			"response": "/textures/giraffe/v1.0.0/source-light-response.json",
+			"prompt": "/textures/giraffe/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/giraffe/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/giraffe/v1.0.0/texture-light.png",
+				"sha256": "d06a6d6a9edfa0a5ff96f287c9f863c7d2a9f85362ed9ec0cfc154b6cb20fe1d",
+				"bytes": 1778003,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1a72bbe3-d1e5-4aac-aa01-84a477cb02d0",
+			"source": "artwork/brands/giraffe/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/giraffe/v1.0.0/source-dark-request.json",
+			"response": "/textures/giraffe/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/giraffe/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/giraffe/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/giraffe/v1.0.0/texture-dark.png",
+				"sha256": "8b63bd15b19a3f574c0dc0c79070f8c77afe49185152250dc99d9e135ed3e5f3",
+				"bytes": 1526519,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1778003,
+			"sha256": "d06a6d6a9edfa0a5ff96f287c9f863c7d2a9f85362ed9ec0cfc154b6cb20fe1d"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 198842,
+			"sha256": "6c60827ea1fdd8692e1611c7347f40095c8cc028c9e889777356373bd3d9a628"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12986,
+			"sha256": "ec407b5b8f0744cd67db20e77a359744210aea92140e320c33e864fba7075c62"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2875,
+			"sha256": "208c046f0dbae797b4f7907a65361d335e1071aea236c7ca3d10fbb465c30b4e"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "373f45130bb99c997969d2726198b6fed68e5bfb93bb38210f5ab6a75abdff0c"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "ee42217ed0a9477ae9bb7d8adbf40a67d970377813b4f8697a35a68ddc642f5e"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1059,
+			"sha256": "9852364c45b23a7e4df28c0aeec5bae914be2f6921c00bfcb98418e8c3b2ca5e"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1526519,
+			"sha256": "8b63bd15b19a3f574c0dc0c79070f8c77afe49185152250dc99d9e135ed3e5f3"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 136528,
+			"sha256": "99257ef5a2fda70836420b1fa6381cb387a917bf1ae26434ab55a9e36be900fb"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9246,
+			"sha256": "09c2021270436d2825d9eb99034d410de94ed61ea9ff2ce20e418a7e742756c5"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2956,
+			"sha256": "bbcf7e49c9a48127559d38ccb88accbb9061f1a31796f9a77d94989533deec81"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8410025271f26cd2f8cf6fd72e9a2b4d526849eb76d7273f23d87e06db4d3fa5"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "cc1ed5dd7531e2aa9743ae01107c28eefa6310cea5a082f2b457626666f838f1"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1059,
+			"sha256": "7221f7ba85b09b7fa41dba518873fc4b11b9c1ed38a9bb787d31aa627a8b039c"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5403,
+			"sha256": "fcd5d6878a7f93a465651f92a52076b3c2875e9660ccc3a20f2b1e0c744bfb20"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1410,
+			"sha256": "37a77c6b7463a6a25c77af4d4ef02adda3d10b27eb1d7de5a9e7e451823d0ab8"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "37a27ae596ad5299fe496cda3f6ee1ecbcbeef021a02d2c2fd8eb2af84ba14e2"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2536,
+			"sha256": "5f210ce42273ddc6b67a31f102872e1243365b2e373d16ebc699e6774b6c6aad"
+		},
+		{
+			"path": "/textures/giraffe/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3541,
+			"sha256": "8aa54fe33e616bc03bcdc591a8fe7e46a83ffe7c86290ce6de1049267834d221"
+		}
+	]
+}

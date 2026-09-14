@@ -1,0 +1,122 @@
+{
+	"project": "runner",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "A measured minute", "zh": "一分钟的刻度" },
+		"motif": "A watchmaker's timing mat: fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge. Spacious and purposeful, no stopwatch object, numerals, dial face or central emblem.",
+		"description": {
+			"en": "Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.",
+			"zh": "绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Declare a schedule and let your Mac run your AI jobs through launchd.",
+			"zh": "声明任务日程，交给 Mac 的 launchd 定时运行 AI 工作。"
+		},
+		"purpose": {
+			"en": "Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect their local run history and output through a CLI and Dashboard.",
+			"zh": "在 Mac 上定时执行 shell、OpenCode 和 HTTP 任务，通过 CLI 与本地 Dashboard 查看运行历史和输出。"
+		},
+		"source": "src/data/projects/runner.json",
+		"inspectedRevision": "a5d786175358dee245773bd98af83eef4bbf5689"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+		"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+		"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4230760,
+		"source": "https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/runner/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d962ceb8b99acc629d0cbe640beaced233426c4bd02bc07e798946cc7b41cba6"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6fff7f33-d914-4749-b57b-d7c5749b5788",
+			"source": "artwork/brands/runner/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/runner/v1.0.0/source-light-request.json",
+			"response": "/textures/runner/v1.0.0/source-light-response.json",
+			"prompt": "/textures/runner/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/runner/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/runner/v1.0.0/texture-light.png",
+				"sha256": "20b774f9fdfcd7baafba137973a341d8c167823525bcfe5adf7fa86fdc0f55a2",
+				"bytes": 2106464,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2c124527-5fd3-43ed-b75d-d541331b21ad",
+			"source": "artwork/brands/runner/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/runner/v1.0.0/source-dark-request.json",
+			"response": "/textures/runner/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/runner/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/runner/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/runner/v1.0.0/texture-dark.png",
+				"sha256": "b94917cb2acc740bf9adf1e03d3d42bdea6b1fb2d99a4891189218875f2069ee",
+				"bytes": 1845287,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.795317565859149,
+		"darkMinimum": 6.73338291640373,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:51:55.380Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

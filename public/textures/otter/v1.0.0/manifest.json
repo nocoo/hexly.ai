@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "otter",
+	"version": "1.0.0",
+	"root": "/textures/otter/v1.0.0",
+	"canonical": "https://hexly.ai/projects/otter#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/otter/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Willow beside the river", "zh": "河畔柳叶" },
+		"description": {
+			"en": "Long willow leaves on bowed supple stems, ribbon-like reeds and a little low sedge.",
+			"zh": "细长柳叶沿柔软枝条弯折，芦苇与莎草贴着河岸，把水獭松弛的姿态延伸进留白。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/otter-family-2026-09-07-01-02.png",
+		"sha256": "8902636945ce93cd1a6f39a8e545d6462f0b5dd09c3d4d16d66f037d8bf10933",
+		"rgbaSha256": "1caf168d0eb1043f5f868d5d1d891ab4dd5e7ab09b8e0d2384ede73720e1bf49",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2941233,
+		"source": "https://github.com/nocoo/otter/blob/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/otter/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "9ae4475359ce35ef114462441ef98c5b7a206ffbc1fd9a92678204b80444316f"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a2ae5353-08d1-471e-b82b-0173e334def7",
+			"source": "artwork/brands/otter/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/otter/v1.0.0/source-light-request.json",
+			"response": "/textures/otter/v1.0.0/source-light-response.json",
+			"prompt": "/textures/otter/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/otter/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/otter/v1.0.0/texture-light.png",
+				"sha256": "40da1517c2c92f28f98df2a4c58f6f4018664bb6b517f8a02b2f5f398323ed1e",
+				"bytes": 1573387,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3196e67b-4876-4539-89e7-787073846641",
+			"source": "artwork/brands/otter/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/otter/v1.0.0/source-dark-request.json",
+			"response": "/textures/otter/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/otter/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/otter/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/otter/v1.0.0/texture-dark.png",
+				"sha256": "3d6ce48127cff0af9594c33eba0248d4ac3f0a6eba37042ae6e79100f9c5c05a",
+				"bytes": 1427258,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/otter/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1573387,
+			"sha256": "40da1517c2c92f28f98df2a4c58f6f4018664bb6b517f8a02b2f5f398323ed1e"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 132246,
+			"sha256": "cd515e2609e23467baab3e45ca292c44914dd4f7bfb13abeb1b6ccc7bec9cb3b"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7526,
+			"sha256": "16998b75427bd1a82c96995dd823b6acf043914c0d716c2b95f8613d9b1d967c"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2869,
+			"sha256": "00c49c976f0356ec8cdee4579717b4ccb060c66364476c11c34e0bcd6e95e4b0"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8f39fbe7d71513ba0f4b9b7d934ed6aa74f73f9453d24b80ea59192db89349e9"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d8640d78eddd5ba1f3d00f005969cae5bf463e628bc6b83df5235f2930436360"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1050,
+			"sha256": "50b395d79f80277d392d216b89c2cb50737afd3c76cc6c4d6a7b066525da60c1"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1427258,
+			"sha256": "3d6ce48127cff0af9594c33eba0248d4ac3f0a6eba37042ae6e79100f9c5c05a"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 102520,
+			"sha256": "801bd4ec21051e5686b1cdc83e88821160409bd29f00a2f74850ccbc3aa57036"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6294,
+			"sha256": "6c278a1064d118445e36620f98122cd0f0b10c4b8ddd4174bb58e3abbae9072d"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2950,
+			"sha256": "eec55747cdce625011a15079a26f8d3dd19f672778a327a8a53ab5954e3403e8"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "1960a359de6845f4af84e8f7ec68bf639fef9a9f0a892b5c9612f9b0ad758594"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "ad186b3e408dabde39599f7e920f204baaa4c906812f7ae915a477d09e82bc43"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1048,
+			"sha256": "f7425e76fd9768f20c8fdf5f9e27bd6c1956ecfadf2b2fab1c3fddf9716a6b8c"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5262,
+			"sha256": "9d8647c9bcad0fed7232b4c0d8a855e782977fc50035b480061ea985c010a01a"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1361,
+			"sha256": "5682ac3da2e5650382820357f3c04d8e9a0185fd1835f1b06bdfd1574d4d4222"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "42d6a89ea9c10e9c83645694c284873a8af870571af1cab87fb08b95294808c1"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2516,
+			"sha256": "78c97469ba9164f4002ef5fbcc1573f6f580eb210dcc800b9b395209406771d0"
+		},
+		{
+			"path": "/textures/otter/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3509,
+			"sha256": "469a7676f677e82cfa90c7af1575e47635ea30beb4c8d681ce8f34ab9bd14d3e"
+		}
+	]
+}

@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "skill-task-notifier",
+	"version": "1.0.0",
+	"root": "/textures/skill-task-notifier/v1.0.0",
+	"canonical": "https://hexly.ai/projects/skill-task-notifier#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/skill-task-notifier/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Dispatch board", "zh": "任务派送板" },
+		"description": {
+			"en": "Very fine pressed cork-paper grain, shallow horizontal task-lane dividers and two small offset docket-tab impressions.",
+			"zh": "压实软木纸与横向派送分隔、错位票签凹痕承接任务通知，少量色点只作视觉提醒。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/skill-task-notifier.png",
+		"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+		"rgbaSha256": "dec445c95f1eac5a42a184a3f5995edc7fbb07ce3cfe713623032df458b4d093",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 353526,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a9fb4c85-4308-48ee-b87c-c2eabfdf0159",
+			"source": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/skill-task-notifier/v1.0.0/source-light-request.json",
+			"response": "/textures/skill-task-notifier/v1.0.0/source-light-response.json",
+			"prompt": "/textures/skill-task-notifier/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/skill-task-notifier/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/skill-task-notifier/v1.0.0/texture-light.png",
+				"sha256": "83636057066174d09dca9eab5219c7f14209dc76f2fa387df79a6020197ed523",
+				"bytes": 1939211,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "49b58dd3-952a-4c14-9621-57b01965717c",
+			"source": "artwork/brands/skill-task-notifier/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/skill-task-notifier/v1.0.0/source-dark-request.json",
+			"response": "/textures/skill-task-notifier/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/skill-task-notifier/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/skill-task-notifier/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/skill-task-notifier/v1.0.0/texture-dark.png",
+				"sha256": "07f518ead66b79bc125a21d47f05e14394a6a0bf982b6d3db91470a32c7ea40a",
+				"bytes": 1822492,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1939211,
+			"sha256": "83636057066174d09dca9eab5219c7f14209dc76f2fa387df79a6020197ed523"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 318218,
+			"sha256": "d379a94d2cb5966d3765fe2fb44b22c0a4d6f7431ba6c57dd08897561d7a68d3"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9406,
+			"sha256": "8f0f2712ff2aef316665da746318b632da9588c4219f56cbd48b23750330b66a"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2727,
+			"sha256": "e62ac6c1615a43928d3b674372996b4c2a9bb0fefa927e9b19b16374dc767610"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "5b5eca36508c168662d147591e7e6b693ae3ad484580f7eecd94b56a52b1369e"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "4fb47942b3076a9be5b60b57582b76b74e235b30242da86f99f636b81179d230"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1057,
+			"sha256": "26d79fd6c3e2da541c18a3afbf3c86bce90c48952804a20548638c238c31e28d"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1822492,
+			"sha256": "07f518ead66b79bc125a21d47f05e14394a6a0bf982b6d3db91470a32c7ea40a"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 275990,
+			"sha256": "f56ea1e467aa8ab3b35e5b38d3c8dd72a7cfc2e4454ddb0b465a0e9242422519"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6418,
+			"sha256": "5ed9bff9edc431bb78bf246c72f8954efa19c11fce95f7925da9d4b6ca342905"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2803,
+			"sha256": "a55461f34f0e890fcfacaf8438f15db96876df788f7c932ca7a6e076304d61d4"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8b8d35e02f0a7e67d6f37baaf1c9f268466de349ada0672d963534bde10c09ae"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "cc2356f17e4006962078d894a96a798249daca6a49c262477395a74a5f0acb31"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1034,
+			"sha256": "925c344cba235a935cf8c7ec1dacaccf6ebc073b389b4d670a74c3a029a95fb1"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5300,
+			"sha256": "77487f30e50c00f901deb9fe67f878c17caddb71a43d7d30e32a39723cb958c9"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1337,
+			"sha256": "a0ab02ab728fff882d305e043d58ed3e96a36a61db3bae9b7a08e04522087a97"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1766,
+			"sha256": "aa88b0eabd0526b0825d83546491777842f58b3887a6702e59a8a6839c76f9a1"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2623,
+			"sha256": "10ab696ed32176bc21552255856b805f24982f5829387438ad19cde3465a9366"
+		},
+		{
+			"path": "/textures/skill-task-notifier/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3704,
+			"sha256": "bb7c94f049ff813c86f4274fab67da295f308642d3ed9df4097d8ae3e69f19cf"
+		}
+	]
+}

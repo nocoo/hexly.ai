@@ -1,0 +1,122 @@
+{
+	"project": "ipsafe",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Connection channels", "zh": "连接槽道" },
+		"motif": "A network-cable tester's silicone service surface: fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge. A tiny quiet terracotta endpoint, no retry loop, literal cable tester, status lights, text or readable wiring diagram.",
+		"description": {
+			"en": "Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.",
+			"zh": "干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Check your network connection before letting a command run.",
+			"zh": "在执行命令之前，先确认网络连接符合预期。"
+		},
+		"purpose": {
+			"en": "Check that a configured URL returns a successful HTTP response and optionally matches response content before starting a command, with project or user configuration and reusable Node.js APIs.",
+			"zh": "在启动命令前，确认指定 URL 返回成功响应并按需匹配内容；支持项目或用户配置，以及可复用的 Node.js API。"
+		},
+		"source": "src/data/projects/ipsafe.json",
+		"inspectedRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+		"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+		"rgbaSha256": "ad40a075b02b13fde331b1fd84538c918aa442ffbd8523e8f369bfff42101283",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3104822,
+		"source": "https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ipsafe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "c69e4d9e1b3ce869aa955473a7884bebc00a33d63f92d3cfaef43bc6713ae9c8"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c6894e8f-6fb8-49d9-8ff4-894e8000ca38",
+			"source": "artwork/brands/ipsafe/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ipsafe/v1.0.0/source-light-request.json",
+			"response": "/textures/ipsafe/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ipsafe/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ipsafe/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ipsafe/v1.0.0/texture-light.png",
+				"sha256": "5a533aa934e6cb04bcf2be89cc55cc25b079efc7b92db3296f0b7dac3746209e",
+				"bytes": 1808522,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "63906caf-2a42-40c2-9a6d-5f6b034c5d34",
+			"source": "artwork/brands/ipsafe/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ipsafe/v1.0.0/source-dark-request.json",
+			"response": "/textures/ipsafe/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ipsafe/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ipsafe/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ipsafe/v1.0.0/texture-dark.png",
+				"sha256": "e521a0e85f5a6fbb6a80dcbd1f5ab91abe7318c55a5fa76c50ed48f801d7ac4e",
+				"bytes": 1712786,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.7364928841451395,
+		"darkMinimum": 5.914814778076309,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:56:43.515Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

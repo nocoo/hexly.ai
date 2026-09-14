@@ -3,11 +3,11 @@ import {
 	brandAsset,
 	brandFormat,
 	brandSourceLabel,
-	brandTextureAsset,
 	rasterBrand,
 } from "../model/brand";
 import type { Locale, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
+import { BrandTexture } from "./BrandTexture";
 import "../styles/brand-kits.css";
 
 export function BrandHero({
@@ -137,75 +137,7 @@ export function BrandKit({
 					</figure>
 				))}
 			</div>
-			{kit.texture && (
-				<section
-					className="brand-texture-study"
-					data-texture-display={kit.texture.display}
-					id="texture"
-					aria-label={zh ? "底纹设计" : "Texture design"}
-				>
-					<div className="review-section-heading">
-						<h3>{kit.texture.name[locale]}</h3>
-						<p>{kit.texture.description[locale]}</p>
-					</div>
-					<div className="brand-texture-specimens">
-						{(["light", "dark"] as const).map((theme) => (
-							<figure key={theme} className={`brand-kit-${theme}`}>
-								<div
-									style={{
-										backgroundImage: `url("${assetUrl(brandTextureAsset(kit, theme))}")`,
-									}}
-								/>
-								<figcaption>
-									<span>
-										{theme === "light"
-											? zh
-												? "浅纸"
-												: "Paper"
-											: zh
-												? "夜纸"
-												: "Night"}
-									</span>
-									<AssetLink
-										href={
-											kit.texture?.model
-												? `${kit.root}/texture-${theme}.png`
-												: brandTextureAsset(kit, theme)
-										}
-										download
-									>
-										{kit.texture?.model
-											? "PNG"
-											: (kit.texture?.format ?? "svg").toUpperCase()}{" "}
-										↓
-									</AssetLink>
-								</figcaption>
-							</figure>
-						))}
-					</div>
-					{kit.texture?.model && (
-						<p className="brand-kit-provenance">
-							<span>
-								GPT Image ·{" "}
-								{kit.texture?.model.endsWith("flare") ? "Flare" : "Sunburst"}
-							</span>
-							{(["light", "dark"] as const).map((theme) => (
-								<AssetLink
-									key={theme}
-									href={`${kit.root}/texture-${theme}-prompt.txt`}
-								>
-									{zh
-										? theme === "light"
-											? "浅色原始 Prompt"
-											: "深色原始 Prompt"
-										: `${theme === "light" ? "Paper" : "Night"} generation prompt`}{" "}
-									↗
-								</AssetLink>
-							))}
-						</p>
-					)}
-				</section>
-			)}
+			<BrandTexture project={project} locale={locale} />
 			<div className="direction-grid">
 				{kit.guidelines.map((item, index) => (
 					<article key={item.title.en}>

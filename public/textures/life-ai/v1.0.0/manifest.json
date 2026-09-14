@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "life-ai",
+	"version": "1.0.0",
+	"root": "/textures/life-ai/v1.0.0",
+	"canonical": "https://hexly.ai/projects/life-ai#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/life-ai/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A river garden", "zh": "河岸小园" },
+		"description": {
+			"en": "Broad rounded water-hyacinth leaves without blossoms, slender reed leaves and several smaller floating wetland leaves.",
+			"zh": "圆润水生叶与细芦苇贴着河岸生长，宽窄相间的叶片承接水豚松弛而完整的日常。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/life-ai-family-2026-09-07-01-02.png",
+		"sha256": "dc9f9d0a07acd163c5837d831f38beab0bdbe206a693221f40892801b9a493ca",
+		"rgbaSha256": "ac41d4be1752ec55ec12353ceed8fc06f8dc218bf6b2ebc108044ddfdfbecb23",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2268740,
+		"source": "https://github.com/nocoo/life.ai/blob/b6f3e7f426315062e0492e00c4d9448bfa3b8031/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/life-ai/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d7c49d162b5275bd7f10f5cdec1977fd5adafadd8b2022823f15d9764bffed09"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4f1a9415-996b-41a0-bc07-285c27df1e70",
+			"source": "artwork/brands/life-ai/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/life-ai/v1.0.0/source-light-request.json",
+			"response": "/textures/life-ai/v1.0.0/source-light-response.json",
+			"prompt": "/textures/life-ai/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/life-ai/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/life-ai/v1.0.0/texture-light.png",
+				"sha256": "2793e18b3ea064364bdf88e51b4eff7bbeee0a54e2780422961fcf90850c17c8",
+				"bytes": 1588930,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "91fb204d-648c-4530-960d-ab8ac0896aec",
+			"source": "artwork/brands/life-ai/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/life-ai/v1.0.0/source-dark-request.json",
+			"response": "/textures/life-ai/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/life-ai/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/life-ai/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/life-ai/v1.0.0/texture-dark.png",
+				"sha256": "2cf657db28c9dd54965f5d0bdc0b814bf8f66744a22661bd51cf720c6400fbe6",
+				"bytes": 1411517,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1588930,
+			"sha256": "2793e18b3ea064364bdf88e51b4eff7bbeee0a54e2780422961fcf90850c17c8"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 165422,
+			"sha256": "c088f391f83d29ab058302f1b861084e610b86c00f742f4f05519f1e43b430ee"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9274,
+			"sha256": "b350cba6d5d6c18cb0f9ea132e9d88862cb81cca885a45f250fcfe4788f62101"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2867,
+			"sha256": "9d4a728ac4512ccfb56ea0b6eea43f88ce392fd69039d1702b737b204fd91b50"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "c36ebf62d00f25620580e8355ded4699828b93327a014bf7eb9c1a6f56d01027"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "28d078b61be9f6b71f22ebaa7df66e16cdbf6ca222510b35019539ee3ab244c3"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1089,
+			"sha256": "b26defa0117bdef69e722a89906e9eb874aab2e48b3a2974f9b475f7b2b47d14"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1411517,
+			"sha256": "2cf657db28c9dd54965f5d0bdc0b814bf8f66744a22661bd51cf720c6400fbe6"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 104798,
+			"sha256": "96c6e19459035c5fde4883fa533b6b789c500965f26a6e0685c96bd5b08931a5"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8208,
+			"sha256": "1da47c7d6061cfe547776221c74701fad0190d0fa10003ea23f17f8f1fb2ccc5"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2948,
+			"sha256": "cf2fdb85bd37354f77d18b7073d187f5f3f93f7ca9bceac05dd02c42f4c890e4"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "fb102e83c64c5488b477a352328cdf141895de2dc6c205cbd144816fd9da42a5"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "12055ba701b2da2e5e8f63de7afe7e980d9cb1b5d8691ff8a0632b22e51428d2"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1089,
+			"sha256": "16cc01cfd2c9157175e0f510923f081bb7e1006abb467916a43eedcdc2563908"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5348,
+			"sha256": "98bc9f5932078bf817c694d3fca2263eb6d809958c577183195bf6a792be6f0d"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1405,
+			"sha256": "b552a12fb4397d972253b290109c125a62664d9b336a67e7d57e418e38491cdf"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "471d65c218abf9e31d55e8699b4e9d410c56626d0d7182a7260bbf23ec63992f"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2550,
+			"sha256": "cbd66cb1566bf27e84e12be4e2556410064826282a13cf79bc89d33ea0e27601"
+		},
+		{
+			"path": "/textures/life-ai/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3545,
+			"sha256": "dcbabbad59274363e1f3043d04d21acea5eebb764fffaf61c6afc1b24ecf1518"
+		}
+	]
+}

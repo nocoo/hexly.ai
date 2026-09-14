@@ -1,0 +1,122 @@
+{
+	"project": "lyre",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Under the fern canopy", "zh": "蕨下回声" },
+		"motif": "A damp southeastern Australian forest-floor setting for a lyrebird: finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip. Layer these asymmetrically as shallow botanical impressions, never a radial feather fan or a tropical monstera pattern.",
+		"description": {
+			"en": "Finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip.",
+			"zh": "树蕨细叶、桉树长叶与一枚嫩蕨卷承接琴鸟的湿润林地，把声音的层次藏进叶片重叠处。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Recordings, transcripts, and word-by-word playback, beautifully in sync.",
+			"zh": "整理录音和转写文本，让逐字高亮跟着声音一起播放。"
+		},
+		"purpose": {
+			"en": "Manage recordings, transcribe speech and follow the text during audio playback.",
+			"zh": "管理录音、转写文字，并在回听时查看对应内容。"
+		},
+		"source": "src/data/projects/lyre.json",
+		"inspectedRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/lyre.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3656299,
+		"source": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/lyre/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8fea827e1961de64b8021a316c1ccfd9f741ef65e18dd73c8f354c0bc99b6817"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "002a3189-9624-4f2a-88c8-cb1ed839dab9",
+			"source": "artwork/brands/lyre/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/lyre/v1.0.0/source-light-request.json",
+			"response": "/textures/lyre/v1.0.0/source-light-response.json",
+			"prompt": "/textures/lyre/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/lyre/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/lyre/v1.0.0/texture-light.png",
+				"sha256": "6bfaa902af01fa5ba65db40fcc3a52e46d1aa30ef434d00da0e4fa7ea97c1759",
+				"bytes": 1718392,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d1e70e7e-6832-488c-98d7-7f475a27b42b",
+			"source": "artwork/brands/lyre/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/lyre/v1.0.0/source-dark-request.json",
+			"response": "/textures/lyre/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/lyre/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/lyre/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/lyre/v1.0.0/texture-dark.png",
+				"sha256": "a2697be87bcf09d9902983b0c87f53a2122adef977f0e03e5de41712167113c1",
+				"bytes": 1567982,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.41
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.7808831769225835,
+		"darkMinimum": 5.0647711014945385,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:24:07.548Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

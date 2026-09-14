@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "showtime",
+	"version": "1.0.0",
+	"root": "/textures/showtime/v1.0.0",
+	"canonical": "https://hexly.ai/projects/showtime#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/showtime/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Before the first frame", "zh": "开机之前" },
+		"description": {
+			"en": "Fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches.",
+			"zh": "哑光摄影纸的细齿、片门导轨与稀疏齿孔压痕，呼应录制前对齐画面的一刻。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+		"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+		"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3865252,
+		"source": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/showtime/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "86ee82731567d382e5e625ac1ef09b99e96f8acd4fd28241573a22cd8b0c84d8"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5839e51c-06ff-4520-9f19-32a85413e43d",
+			"source": "artwork/brands/showtime/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/showtime/v1.0.0/source-light-request.json",
+			"response": "/textures/showtime/v1.0.0/source-light-response.json",
+			"prompt": "/textures/showtime/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/showtime/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/showtime/v1.0.0/texture-light.png",
+				"sha256": "e40cbd79c060fac2f90f816fea568feb9da7990ddec70f1898800b336011f555",
+				"bytes": 1825674,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ab81524a-3b46-4802-8ae7-3a7472591792",
+			"source": "artwork/brands/showtime/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/showtime/v1.0.0/source-dark-request.json",
+			"response": "/textures/showtime/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/showtime/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/showtime/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/showtime/v1.0.0/texture-dark.png",
+				"sha256": "992be6a71a697ef5345c665d5bbfa41e73fd40c828fef2273939703b9f563480",
+				"bytes": 1581409,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/showtime/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1825674,
+			"sha256": "e40cbd79c060fac2f90f816fea568feb9da7990ddec70f1898800b336011f555"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 264306,
+			"sha256": "5b3795f05c93dc963d39e73a4342002fc1a83798253ec184f0e406d2ae4bbf9f"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4046,
+			"sha256": "b98ded420edff61135c18232201bb23be4921922b27e7c13e82f3d6aa68acd2e"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2728,
+			"sha256": "21073fa71cdabf638dd555e87dbf3bd7d9ccf3c62b1ffdbc77a158644c580c78"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "2f5f02d9c5fb9c079d2d52902ccea3add51bb530aa9b6bf16ce92d2be923f5ac"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "ac24c04525b669e39552d02f21245c26885301fc9e05052e6c49c9c8c3eb052d"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1078,
+			"sha256": "e7652e7e50bd3227bd038c981c25f33de61f01ebaaa72899379601192f3115cd"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1581409,
+			"sha256": "992be6a71a697ef5345c665d5bbfa41e73fd40c828fef2273939703b9f563480"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 195114,
+			"sha256": "e4539e77e7c4c2ccce8e5a11edc1007034be2e9e3799225174a28220bc6e3826"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2292,
+			"sha256": "28e8c8cc990daba824e79d3cdaf5795779e6ad0a89eb548f41760c2fb85e349c"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2804,
+			"sha256": "ef7652f99ff340d21bd876e907ffb9d25292223f26005d9f4f0daded1ea2c9a3"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "731cda214dc8f3fdabbef0f2f2702a1abad545f9a17cd6e1343ac5d3c2b8c6a2"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "54c4584ac3293e48a3c570887d9f685e2766e5f465e696392f3f04fe65c4d6b5"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1078,
+			"sha256": "9869934b99e4681517af1aa2163e55610c7ca0cdd538d29894f43c42f90b4b3d"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5724,
+			"sha256": "07de5df1f1e68db58052ff6f983e8c14f1d7d9a0e26addee92a4fa8267774a3a"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1607,
+			"sha256": "b46f479d0565bca691428927cd6e0bd97b490f350ed7af7a1cecc9b03b4eec4d"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "e2d8391cea961f446d7065cd2d5e2a14203049c613ec2e3e3cc66a0236dd2887"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2614,
+			"sha256": "ceb77564c8a15dbfc5832035cf2113c7a390428a5e4fe7f1ef3c6378be98515d"
+		},
+		{
+			"path": "/textures/showtime/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3628,
+			"sha256": "0ae82b77b34d82e1988b76063297d5dc952923d3dc577dc58224cad9d1446315"
+		}
+	]
+}

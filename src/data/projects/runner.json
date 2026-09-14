@@ -95,10 +95,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The timing hand starts",
-					"zh": "秒针启动的一刻"
-				},
+				"title": { "en": "The timing hand starts", "zh": "秒针启动的一刻" },
 				"description": {
 					"en": "A single mechanical stopwatch catches the beginning of a timed run. The complete ring, crown and short button remain comfortably inset around the broad face.",
 					"zh": "一只机械秒表定格任务开始计时的一刻。提环、表冠和短按钮完整保留，围绕宽阔表面留足余量。"
@@ -106,10 +103,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Emerald enamel and steel",
-					"zh": "祖母绿珐琅与钢"
-				},
+				"title": { "en": "Emerald enamel and steel", "zh": "祖母绿珐琅与钢" },
 				"description": {
 					"en": "Rich green enamel, satin steel and a brass crown carry the identity. Ivory hands and glass highlights are solid material, while both ring openings are transparent.",
 					"zh": "浓郁绿珐琅、缎面钢和黄铜表冠构成标识；象牙色指针及玻璃高光属于实体，提环两侧镂空透明。"
@@ -117,10 +111,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Scheduled minutes",
-					"zh": "定时分刻"
-				},
+				"title": { "en": "Scheduled minutes", "zh": "定时分刻" },
 				"description": {
 					"en": "An interrupted outer minute track, a shorter offset timing arc and grouped launch ticks on pistachio paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "浅开心果色纸面上的间断分钟轨道与分组启动刻度。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -131,46 +122,31 @@
 			{
 				"color": "#c2ceb4",
 				"role": "background",
-				"label": {
-					"en": "Scheduled minutes",
-					"zh": "定时分刻"
-				},
+				"label": { "en": "Scheduled minutes", "zh": "定时分刻" },
 				"source": "Adopted Runner presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#0e442f",
 				"role": "primary",
-				"label": {
-					"en": "Emerald dial",
-					"zh": "祖母绿表盘"
-				},
+				"label": { "en": "Emerald dial", "zh": "祖母绿表盘" },
 				"source": "Native runner d52f1b25e37d, sampled sRGB pixel (810, 1113); artwork/logo-family/runner/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#8b8d83",
 				"role": "accent",
-				"label": {
-					"en": "Satin steel",
-					"zh": "缎面钢"
-				},
+				"label": { "en": "Satin steel", "zh": "缎面钢" },
 				"source": "Native runner d52f1b25e37d, sampled sRGB pixel (368, 1388); artwork/logo-family/runner/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#ad874a",
 				"role": "accent",
-				"label": {
-					"en": "Brass crown",
-					"zh": "黄铜表冠"
-				},
+				"label": { "en": "Brass crown", "zh": "黄铜表冠" },
 				"source": "Native runner d52f1b25e37d, sampled sRGB pixel (1550, 192); artwork/logo-family/runner/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#dfd1ab",
 				"role": "accent",
-				"label": {
-					"en": "Ivory hand",
-					"zh": "象牙色指针"
-				},
+				"label": { "en": "Ivory hand", "zh": "象牙色指针" },
 				"source": "Native runner d52f1b25e37d, sampled sRGB pixel (1174, 873); artwork/logo-family/runner/2026-09-07-01/palette.json"
 			}
 		],
@@ -188,17 +164,11 @@
 		"techStack": [
 			{
 				"name": "Swift",
-				"role": {
-					"en": "CLI and task execution",
-					"zh": "命令行与任务执行"
-				}
+				"role": { "en": "CLI and task execution", "zh": "命令行与任务执行" }
 			},
 			{
 				"name": "launchd",
-				"role": {
-					"en": "macOS timer integration",
-					"zh": "macOS 定时触发"
-				}
+				"role": { "en": "macOS timer integration", "zh": "macOS 定时触发" }
 			},
 			{
 				"name": "SQLite / GRDB",
@@ -209,10 +179,7 @@
 			},
 			{
 				"name": "React / TypeScript",
-				"role": {
-					"en": "Local Dashboard",
-					"zh": "本地控制台"
-				}
+				"role": { "en": "Local Dashboard", "zh": "本地控制台" }
 			},
 			{
 				"name": "Vite",
@@ -223,10 +190,7 @@
 			},
 			{
 				"name": "Tailwind CSS",
-				"role": {
-					"en": "Dashboard styling",
-					"zh": "控制台样式"
-				}
+				"role": { "en": "Dashboard styling", "zh": "控制台样式" }
 			}
 		],
 		"verified": {
@@ -250,15 +214,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 970,
-			"height": 416
-		},
+		"lockup": { "width": 970, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Scheduled minutes",
-				"zh": "排程刻度"
-			},
+			"name": { "en": "Scheduled minutes", "zh": "排程刻度" },
 			"description": {
 				"en": "An interrupted minute track, an offset timing arc and grouped launch ticks make time visible.",
 				"zh": "断续分针轨道、偏心计时弧与成组启动刻度，让时间安排清楚可见。"
@@ -283,35 +241,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥86px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 86px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/runner/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A measured minute", "zh": "一分钟的刻度" },
+		"description": {
+			"en": "Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.",
+			"zh": "绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

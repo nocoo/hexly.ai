@@ -1,0 +1,14 @@
+{
+	"recordedAt": "2026-09-14T04:06:57.363060+00:00",
+	"decision": "After examining attempt-02 HTTP429, Retry-After=25 and no image, explicitly resume only themes without any successful output as attempt 3. No existing attempt is overwritten.",
+	"providerEvidence": "artwork/brands/bogo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03/response.json",
+	"reportedRequestLimit": 2,
+	"intervalSeconds": 35,
+	"maximumConcurrency": 2,
+	"stopSchedulingOn429": true,
+	"priorRecorder": "artwork/brand-textures/2026-09-14/generation-recorder-paced.py",
+	"priorRecorderSha256": "affc9a2d0f1a8081dcef4bb74639a897842efab79954499d651233c9f89df701",
+	"modelChanged": false,
+	"automaticRetry": false,
+	"providerBillingOutcomeAsserted": false
+}

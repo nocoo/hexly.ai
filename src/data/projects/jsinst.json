@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/jsinst/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Measurement traces", "zh": "测量轨迹" },
+		"description": {
+			"en": "Matte microstipple, interrupted calibration rulings and short carefully stepped trace grooves.",
+			"zh": "细颗粒测量垫的断续标定线与短阶梯槽，把性能观测转成克制的工具表面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	}
 }

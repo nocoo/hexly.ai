@@ -133,6 +133,14 @@ export function filesIn(directory: string): string[] {
 
 /** Published package-relative paths remain byte compatible; loose assets get immutable keys. */
 export function assetKey(path: string, sha256: string, project: string) {
+	const texture = path.match(
+		/^\/textures\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
+	);
+	if (texture) {
+		if (texture[1] !== project)
+			throw new Error(`Texture path and catalogue project disagree: ${path}`);
+		return `projects/${project}/textures/v${texture[2]}/${texture[3]}`;
+	}
 	if (
 		/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/|video-kit\/\d+\.\d+\.\d+\/)/.test(
 			path,
@@ -217,6 +225,7 @@ export async function inventory() {
 						path.startsWith(`/logos/display/${p.id}-`) ||
 						path === `/og/${p.id}.jpg` ||
 						path.startsWith(`/brands/${p.id}/`) ||
+						path.startsWith(`/textures/${p.id}/`) ||
 						(p.family && path.startsWith(`${p.family.root}/`))),
 			) ??
 			projects.find((p) => source.includes(`/${p.id}/`)) ??
@@ -260,11 +269,14 @@ export async function inventory() {
 						? `docs/assets/hexly-ai/badges/${badge[1]}/v${badge[2]}.json`
 						: screenshot
 							? `docs/assets/${project.id}/screenshots/${screenshot[2]}/v${screenshot[3]}.json`
-							: path?.startsWith("/brands/")
+							: path &&
+									/^\/(?:brands|textures)\/[^/]+\/v\d+\.\d+\.\d+\//.test(path)
 								? `${dirname(path)}/provenance.json`
-								: path?.startsWith("/video-kit/")
-									? "packages/video-kit/brand-source.json"
-									: "docs/02-identity-rules.md",
+								: path?.startsWith("/textures/")
+									? "docs/27-project-textures.md"
+									: path?.startsWith("/video-kit/")
+										? "packages/video-kit/brand-source.json"
+										: "docs/02-identity-rules.md",
 			},
 		);
 	}
@@ -292,6 +304,9 @@ export async function inventory() {
 					(path) =>
 						path &&
 						file.key !== path.slice(1) &&
+						!/^\/textures\/[a-z0-9-]+\/v\d+\.\d+\.\d+\/[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(
+							path,
+						) &&
 						!/\.(html|css|js)$/.test(path),
 				)
 				.map((path) => [path, file.key]),

@@ -12,8 +12,14 @@ export function assetKeyForPath(path: string): string | null {
 		/\.(html|js|css)$/.test(path)
 	)
 		return null;
+	const texture = path.match(
+		/^\/textures\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
+	);
 	return (
 		aliases[path] ??
+		(texture
+			? `projects/${texture[1]}/textures/v${texture[2]}/${texture[3]}`
+			: null) ??
 		(/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/|video-kit\/\d+\.\d+\.\d+\/)/.test(
 			path,
 		)

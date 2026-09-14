@@ -90,10 +90,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The latch lifts",
-					"zh": "锁梁开启的一刻"
-				},
+				"title": { "en": "The latch lifts", "zh": "锁梁开启的一刻" },
 				"description": {
 					"en": "A complete brass shackle lifts and turns above a substantial green padlock. The torn red paper seal stays attached as one restrained accent.",
 					"zh": "完整黄铜锁梁从厚实绿色锁身上抬起并转开。撕开的红色纸封仍贴着侧面，形成克制的单一兴趣点。"
@@ -112,10 +109,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Released seams",
-					"zh": "解封折线"
-				},
+				"title": { "en": "Released seams", "zh": "解封折线" },
 				"description": {
 					"en": "Separated perforated seams and folded-tab outlines embossed in calm sage paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "鼠尾草色纸面的分离虚线与折页轮廓，呼应解除封印。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -126,37 +120,25 @@
 			{
 				"color": "#bdcebd",
 				"role": "background",
-				"label": {
-					"en": "Released seams",
-					"zh": "解封折线"
-				},
+				"label": { "en": "Released seams", "zh": "解封折线" },
 				"source": "Adopted Unseal presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#4e5b4b",
 				"role": "primary",
-				"label": {
-					"en": "Sage enamel",
-					"zh": "鼠尾草绿珐琅"
-				},
+				"label": { "en": "Sage enamel", "zh": "鼠尾草绿珐琅" },
 				"source": "Native unseal a793439f905e, sampled sRGB pixel (748, 1558); artwork/logo-family/unseal/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#97793d",
 				"role": "accent",
-				"label": {
-					"en": "Brass shackle",
-					"zh": "黄铜锁梁"
-				},
+				"label": { "en": "Brass shackle", "zh": "黄铜锁梁" },
 				"source": "Native unseal a793439f905e, sampled sRGB pixel (497, 558); artwork/logo-family/unseal/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#d85238",
 				"role": "accent",
-				"label": {
-					"en": "Vermilion seal",
-					"zh": "朱红纸封"
-				},
+				"label": { "en": "Vermilion seal", "zh": "朱红纸封" },
 				"source": "Native unseal a793439f905e, sampled sRGB pixel (1573, 1264); artwork/logo-family/unseal/2026-09-07-01/palette.json"
 			}
 		],
@@ -231,15 +213,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 929,
-			"height": 416
-		},
+		"lockup": { "width": 929, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Released seams",
-				"zh": "打开的接缝"
-			},
+			"name": { "en": "Released seams", "zh": "打开的接缝" },
 			"description": {
 				"en": "Separated perforations and folded-tab outlines suggest a seal that has just been opened.",
 				"zh": "断开的齿孔线与翻起的封签轮廓，留下封条刚被打开的轻巧痕迹。"
@@ -253,10 +229,7 @@
 				"en": "An opened green enamel and brass padlock on a Hexly campaign canvas",
 				"zh": "刚刚开启的绿珐琅黄铜挂锁，置于 Hexly 宣发画布"
 			},
-			"caption": {
-				"en": "Open the way forward.",
-				"zh": "解开隔离，继续前行。"
-			}
+			"caption": { "en": "Open the way forward.", "zh": "解开隔离，继续前行。" }
 		},
 		"description": {
 			"en": "Opened green enamel and brass padlock.",
@@ -264,35 +237,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥79px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 79px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/unseal/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "An open seam", "zh": "松开的封缝" },
+		"description": {
+			"en": "Fine compressed felt tooth, one open curved shackle-seat impression, a broken sealing seam and a tiny brushed-brass edge accent.",
+			"zh": "压实毡面的开口弧槽、断开的封缝与极少黄铜边光，呼应解除限制后的松动感。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
 	}
 }

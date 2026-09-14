@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "microsoft-teams-send-as-workflow",
+	"version": "1.0.0",
+	"root": "/textures/microsoft-teams-send-as-workflow/v1.0.0",
+	"canonical": "https://hexly.ai/projects/microsoft-teams-send-as-workflow#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/microsoft-teams-send-as-workflow/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Correspondence folds", "zh": "来信折痕" },
+		"description": {
+			"en": "Broad shallow envelope-flap fold impressions, one diagonal crease and offset sorting-strip indentations.",
+			"zh": "棉质信纸的宽折痕与错位分拣压条呼应消息递送，保持书信感而不生成平台商标。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.44
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/microsoft-teams-send-as-workflow.png",
+		"sha256": "21be414c56a91874f22465a71a82d605ceee5bcd180c3f4b940b1cab30a1687d",
+		"rgbaSha256": "dec445c95f1eac5a42a184a3f5995edc7fbb07ce3cfe713623032df458b4d093",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 353526,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "adbe5964-a5e0-4871-a7d7-ab9c798926f5",
+			"source": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-request.json",
+			"response": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-response.json",
+			"prompt": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light.png",
+				"sha256": "5b0e0f818b02d27b8704b8d53736b01a38032a43774feff9d17834f585bffbd8",
+				"bytes": 1740829,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "43ef5f07-9a74-4f52-b384-609a9b183da5",
+			"source": "artwork/brands/microsoft-teams-send-as-workflow/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-request.json",
+			"response": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark.png",
+				"sha256": "b42b44bdd9c6bcb7d032b1566567e6d8e92bece2716f65d5e91531f72fc60e87",
+				"bytes": 1637174,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1740829,
+			"sha256": "5b0e0f818b02d27b8704b8d53736b01a38032a43774feff9d17834f585bffbd8"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 249092,
+			"sha256": "afd086b61595fa15787606a1ab18fb47b25ca7e5a2d83fed55334b823ba07c25"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3850,
+			"sha256": "af3e0450ea204a805b79ddef3f806be03e0c089884481f68422776924a0dcdfe"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2700,
+			"sha256": "4f826ac469fed48a2553185941cd63ec287c1999e0b0aebd0de94b4e573ad304"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "5ae195477c517834dcb02eae895f7603acad9f747d14c954ccf0d1ee1a54a2ec"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c4e373af328d790ea4ecda035901c50aa9f0d283b2de17be3857981ebb05b386"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1059,
+			"sha256": "74b2f984ffa284d3c8143dd4f3baf700720c2d3bd5b8566e063cc7ebde425f3d"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1637174,
+			"sha256": "b42b44bdd9c6bcb7d032b1566567e6d8e92bece2716f65d5e91531f72fc60e87"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 213938,
+			"sha256": "9dd25864d4a9fd9070c059d6c5b05e0975b56ea8594e605343b2fed2ad240d23"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2890,
+			"sha256": "dfb1bd7f6b8c62a28187c0cbb4384c08fba1ae5cb7d507cb21f7e5d25e45e015"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2776,
+			"sha256": "091f1caf876f4be93b1489d3283f8a52dd7644b7d77be3e39cf5bb28bacbcce5"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "c9396492f57f808ddeeeb06f8716a81672aef2fea0c857b723f8c5e176ee7fe8"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "a70288de5f8c518793fdcacbb944a0fffe101d4619080ce6839229a23489f27f"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1054,
+			"sha256": "bd46e7ea7cddfe1279eaa082870582f4139c1ef5c6dcaddcd0454c80cb2ba73f"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5453,
+			"sha256": "31b9b3aede769cecba16ca2f201c856be71b32ac20828dcb6d31b1c1884bff83"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1305,
+			"sha256": "941935ed96b1a9523544f911076b08e9f4435a2bbe7f06dd5acaadb0af184693"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1767,
+			"sha256": "73901ec6c5b8a459f7c4edce8143310001f1c7e234cb718044af9aa03aaaf2e3"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2639,
+			"sha256": "62348b3a688cbd1c895ee847ab438b3976b04706e380255fc82ebfdeb1daa240"
+		},
+		{
+			"path": "/textures/microsoft-teams-send-as-workflow/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3863,
+			"sha256": "8ffa2cbc601d5637a5bb63be8b8c4bcc79f55ad03e3a7622699986072351228e"
+		}
+	]
+}

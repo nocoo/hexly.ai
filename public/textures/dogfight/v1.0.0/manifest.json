@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "dogfight",
+	"version": "1.0.0",
+	"root": "/textures/dogfight/v1.0.0",
+	"canonical": "https://hexly.ai/projects/dogfight#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/dogfight/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Banked alloy", "zh": "倾斜合金" },
+		"description": {
+			"en": "Diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain.",
+			"zh": "斜向金属拼缝、少量齐平铆点与细腻拉丝呼应桌面战机模型的转弯，是材质联想而非真实飞机图纸。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+		"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+		"rgbaSha256": "d38c25f33fdb61ccca5e59c92e846e72b5cf06b3f66eea2008393f6fd3ac0064",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2743288,
+		"source": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dogfight/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c19649c6-2aeb-4000-99e7-bca792bafa96",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/dogfight/v1.0.0/source-light-request.json",
+			"response": "/textures/dogfight/v1.0.0/source-light-response.json",
+			"prompt": "/textures/dogfight/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.0/texture-light.png",
+				"sha256": "0b797131f62b5bbd62a16d014beacbd9e6e6060a73353512f53b6c131ddf0725",
+				"bytes": 1724106,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2aeda49d-3dc7-4b6c-b2d4-9e56dcfda228",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/dogfight/v1.0.0/source-dark-request.json",
+			"response": "/textures/dogfight/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/dogfight/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.0/texture-dark.png",
+				"sha256": "912c1d1b0694613b48dce993e1a43621cc75585eebe38c7685f0b65cbf530154",
+				"bytes": 1589678,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1724106,
+			"sha256": "0b797131f62b5bbd62a16d014beacbd9e6e6060a73353512f53b6c131ddf0725"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 217184,
+			"sha256": "45785384548edc3d89a1c529978903e9f4c49dd3493d04d4f413bfc0630e145c"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5074,
+			"sha256": "0632696ce0a91955f1206243944d57de672665a5ac001e8610f83b7a70ab4bb0"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2735,
+			"sha256": "5927a8f2a79ef888a5f3b89c5d5d0c223486c6e7d8b679f032eed21a6da58a54"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "f3329851acb07399e8569d73b677bb5eb56854752f36d86709438a0520c21f3f"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "2c84ef12463a4aaa9c82b09034c1730efa9c6ac5b34bf53759385737c7572d0d"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1056,
+			"sha256": "c1366d272d1c0b1a63ffc4337d51c244f75300bbc194b2a2b576b8a06d75f59b"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1589678,
+			"sha256": "912c1d1b0694613b48dce993e1a43621cc75585eebe38c7685f0b65cbf530154"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 169136,
+			"sha256": "4c842a14d179f2ae5fa40f07bb43993a167cc9f0265ce78684efb7d8eaa0516a"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3554,
+			"sha256": "4f4d8e41e288e15d87ed1b2b7e21291806619f0f41ea1b524267a6a46482d2d1"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2811,
+			"sha256": "0dc59bcec7e234c838074ae60a164a569a7b2d3647cd3ac294daafa0f4307399"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "05548b5c5b6f2158f93bb2464e4cbd52254cec596efb27e5875c44538a968455"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "20a4d00800efa373f43a0c2e81b91fe8de08ebce429870ca810dc2eb3c44ff68"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1048,
+			"sha256": "e841dbc75dacf9b39e83fa0fe3bcea5982bf867379df3b14a0fed1a02568408e"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5431,
+			"sha256": "f80136386cdd2e5b8a2c78d3429cc5317d149c376a763e18878d2bfbd9cca8b9"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1436,
+			"sha256": "d9076b976acea6fff28634efe03ecbe3441d21c4433aa3b9cf23ce6e642f9411"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "2d0721bc259d820162b863e9a0564fee156dc0bf2baba23afb8b13611bce7016"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2584,
+			"sha256": "289d8121e80c55223aae41940cc426c84b7d3c12085ca76c38218a53d9afdb28"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3578,
+			"sha256": "f9707bdd2ed18458344e7c465a74a3f5e3424166ed77565c7b6ffce2b37ef03b"
+		}
+	]
+}

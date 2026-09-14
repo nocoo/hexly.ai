@@ -1,0 +1,122 @@
+{
+	"project": "geekhub",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Reading cloth", "zh": "阅读书衣" },
+		"motif": "A well-used but clean reading-folio material: fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches. Editorial tactility without actual newspaper text, book objects, labels, icons or distress.",
+		"description": {
+			"en": "Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.",
+			"zh": "亚麻书衣与压纹纸带交错，分栏折线和少量装订线承接阅读、收藏与再整理。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A self-hosted RSS reader with AI summaries and translation.",
+			"zh": "可以自行托管的 RSS 阅读器，带有 AI 摘要与翻译。"
+		},
+		"purpose": {
+			"en": "Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.",
+			"zh": "集中阅读和整理 RSS 订阅，按需生成中文摘要与翻译。"
+		},
+		"source": "src/data/projects/geekhub.json",
+		"inspectedRevision": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+		"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+		"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4053576,
+		"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/geekhub/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4a6e3c0a-2b87-473c-9c39-2311f0c8a5ca",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/geekhub/v1.0.0/source-light-request.json",
+			"response": "/textures/geekhub/v1.0.0/source-light-response.json",
+			"prompt": "/textures/geekhub/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.0/texture-light.png",
+				"sha256": "200f82cedefc69f7faa32a402b19ee464dbbb9f9de017cd51c14dadcad1bc100",
+				"bytes": 1955696,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d252f82c-a64a-4c1b-8a04-9d4869ea2732",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/geekhub/v1.0.0/source-dark-request.json",
+			"response": "/textures/geekhub/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/geekhub/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.0/texture-dark.png",
+				"sha256": "fe819a73e8f1d442f96c2cef3130a8eabe64d7370af602001a2d365665a51303",
+				"bytes": 1945406,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.744038580622185,
+		"darkMinimum": 5.05881198684819,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:53:24.282Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

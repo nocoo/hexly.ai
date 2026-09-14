@@ -35,10 +35,7 @@
 			"value": "#ffffff",
 			"source": "src/popup/popup.css body background-color"
 		},
-		"ink": {
-			"value": "#333333",
-			"source": "src/popup/popup.css body color"
-		}
+		"ink": { "value": "#333333", "source": "src/popup/popup.css body color" }
 	},
 	"source": {
 		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
@@ -108,10 +105,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A complete little octopus",
-					"zh": "完整的小章鱼"
-				},
+				"title": { "en": "A complete little octopus", "zh": "完整的小章鱼" },
 				"description": {
 					"en": "The head, expression, curled arms, and native spacing are unchanged. Every visible arm remains clear of the rounded boundary. The original foreground is preserved byte-for-byte.",
 					"zh": "头部、表情、腕足与原有留白保持不变。所有可见腕足都位于圆角边界之内，透明原图逐字节保留。"
@@ -119,10 +113,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Keep the gentle facets",
-					"zh": "保留温和的碎片"
-				},
+				"title": { "en": "Keep the gentle facets", "zh": "保留温和的碎片" },
 				"description": {
 					"en": "The pink-to-lilac planes and violet curls already belong to the family. Their existing motion supplies the character; this pass adds no accessory and makes no image-generation call.",
 					"zh": "粉色到丁香紫的色面与紫色卷曲腕足已经具备家族风格。原来的动态继续承担表情，这次没有新增配饰或调用生图。"
@@ -130,10 +121,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Softly curled relief",
-					"zh": "卷曲的浅浮纹"
-				},
+				"title": { "en": "Softly curled relief", "zh": "卷曲的浅浮纹" },
 				"description": {
 					"en": "Open hook-shaped channels enter a muted plum field from different edges. Fine grain, offset highlights, and low contact shadows keep the background tactile and the octopus prominent.",
 					"zh": "开口的卷曲沟纹从不同边缘进入柔和梅紫底色，细颗粒、偏移高光和轻浅阴影带来触感，同时突出章鱼主体。"
@@ -144,54 +132,36 @@
 			{
 				"color": "#9d7097",
 				"role": "background",
-				"label": {
-					"en": "Tidal hooks",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Tidal hooks", "zh": "展示底色" },
 				"source": "Selected Hooky presentation, finishing 01; background.base in archived settings.json"
 			},
 			{
 				"color": "#e9a5bf",
-				"label": {
-					"en": "Rose pink",
-					"zh": "玫瑰粉"
-				},
+				"label": { "en": "Rose pink", "zh": "玫瑰粉" },
 				"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (313, 260); palette.json",
 				"role": "primary"
 			},
 			{
 				"color": "#b771af",
-				"label": {
-					"en": "Lilac",
-					"zh": "丁香紫"
-				},
+				"label": { "en": "Lilac", "zh": "丁香紫" },
 				"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (262, 528); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#fedced",
-				"label": {
-					"en": "Petal light",
-					"zh": "浅花瓣"
-				},
+				"label": { "en": "Petal light", "zh": "浅花瓣" },
 				"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (376, 129); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#8b4e93",
-				"label": {
-					"en": "Berry violet",
-					"zh": "莓紫"
-				},
+				"label": { "en": "Berry violet", "zh": "莓紫" },
 				"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (573, 606); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#42274d",
-				"label": {
-					"en": "Ink plum",
-					"zh": "墨梅紫"
-				},
+				"label": { "en": "Ink plum", "zh": "墨梅紫" },
 				"source": "Original hooky 7e98ee9d581e, sampled sRGB pixel (556, 340); palette.json",
 				"role": "accent"
 			}
@@ -209,10 +179,7 @@
 		"techStack": [
 			{
 				"name": "JavaScript / HTML / CSS",
-				"role": {
-					"en": "Extension logic and UI",
-					"zh": "扩展逻辑与界面"
-				}
+				"role": { "en": "Extension logic and UI", "zh": "扩展逻辑与界面" }
 			},
 			{
 				"name": "Chrome Extensions Manifest V3",
@@ -223,31 +190,19 @@
 			},
 			{
 				"name": "chrome.storage.local",
-				"role": {
-					"en": "Local templates and rules",
-					"zh": "本地模板与规则"
-				}
+				"role": { "en": "Local templates and rules", "zh": "本地模板与规则" }
 			},
 			{
 				"name": "Fetch API",
-				"role": {
-					"en": "Webhook requests",
-					"zh": "Webhook 请求"
-				}
+				"role": { "en": "Webhook requests", "zh": "Webhook 请求" }
 			},
 			{
 				"name": "Vitest / jsdom",
-				"role": {
-					"en": "Unit and DOM tests",
-					"zh": "单元与 DOM 测试"
-				}
+				"role": { "en": "Unit and DOM tests", "zh": "单元与 DOM 测试" }
 			},
 			{
 				"name": "Puppeteer",
-				"role": {
-					"en": "Browser end-to-end tests",
-					"zh": "浏览器端到端测试"
-				}
+				"role": { "en": "Browser end-to-end tests", "zh": "浏览器端到端测试" }
 			}
 		],
 		"verified": {
@@ -273,15 +228,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 834,
-			"height": 416
-		},
+		"lockup": { "width": 834, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Tidal hooks",
-				"zh": "潮汐钩线"
-			},
+			"name": { "en": "Tidal hooks", "zh": "潮汐钩线" },
 			"description": {
 				"en": "Open curling channels approach from different directions, echoing the octopus’s arms without enclosing them.",
 				"zh": "开放的卷曲通道从不同方向靠近，呼应章鱼腕足，不围合、不缠绕主体。"
@@ -306,30 +255,21 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥64px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 64px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
@@ -379,5 +319,19 @@
 				"height": 800
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/hooky/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A kelp cove", "zh": "海藻小湾" },
+		"description": {
+			"en": "Broad softly crinkled sea-lettuce fronds, divided kelp fingers and one slim swaying holdfast-like stem.",
+			"zh": "宽阔海莴苣叶与分叉海藻缓慢卷曲，在安静海湾里承接章鱼舒展的腕足。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.3
 	}
 }

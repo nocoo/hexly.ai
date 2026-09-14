@@ -1,0 +1,122 @@
+{
+	"project": "raven",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Rowan and pine", "zh": "花楸与松" },
+		"motif": "A broad temperate woodland habitat for a raven: narrow pine needle fans and compound rowan leaves, with only three tiny muted seed-like berries. Place a sparse branch across the upper right and a smaller angled spray below. No black feather illustrations or gothic ornament.",
+		"description": {
+			"en": "Narrow pine needle fans and compound rowan leaves, with only three tiny muted seed-like berries.",
+			"zh": "松针与羽状花楸叶疏朗地分布在枝头，少量暗色果点呼应乌鸦清醒而沉静的气质。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Connect GitHub Copilot to Anthropic- and OpenAI-compatible tools and track usage.",
+			"zh": "为 GitHub Copilot 提供兼容 Anthropic 与 OpenAI 的接口，并查看使用情况。"
+		},
+		"purpose": {
+			"en": "Connect compatible clients to GitHub Copilot and custom model upstreams through a local API proxy, with request analytics and live diagnostics.",
+			"zh": "通过本机 API 代理将兼容客户端接入 GitHub Copilot 与自定义模型上游，并查看调用统计和实时诊断信息。"
+		},
+		"source": "src/data/projects/raven.json",
+		"inspectedRevision": "c59fe3ad5a0aea2e849b2b9ee00be189091c9faf"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"rgbaSha256": "a9943f772e250c4f7b6a9dad5a10163327a4219d7f9384f7363ee02c99f8d7c6",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2327803,
+		"source": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/raven/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "167cffd895b81e436868e2fb8099cf3db0c3b49de0b95cb824d557f69e05fd45"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "04fb67f0-a512-492a-b1d3-a9b9a54043e7",
+			"source": "artwork/brands/raven/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/raven/v1.0.0/source-light-request.json",
+			"response": "/textures/raven/v1.0.0/source-light-response.json",
+			"prompt": "/textures/raven/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/raven/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/raven/v1.0.0/texture-light.png",
+				"sha256": "869a66550dd3fc1281eb4302baefaf6ca4cae7d81dec2a6a42a52af1b3c21bb2",
+				"bytes": 1664923,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8b4f2cf8-0606-451b-ae72-360445e28f3d",
+			"source": "artwork/brands/raven/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/raven/v1.0.0/source-dark-request.json",
+			"response": "/textures/raven/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/raven/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/raven/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/raven/v1.0.0/texture-dark.png",
+				"sha256": "8e9bf0f678cc682cedd695a7198adcf081a16875f73f720f37bbe1809605578e",
+				"bytes": 1546732,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.35
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.780496428031259,
+		"darkMinimum": 5.36257070810849,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:24:04.049Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

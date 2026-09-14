@@ -1,0 +1,122 @@
+{
+	"project": "hermes-on-herdr",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "A gateway work surface", "zh": "门框工作面" },
+		"motif": "A crafted gateway instrument's work surface: restrained brushed-brass grain, matte enamel inset seams, a pair of offset vertical guide rebates and one open threshold indentation. Architectural and tactile, no literal door, terminal text, circuit reset route, status light or logo.",
+		"description": {
+			"en": "Restrained brushed-brass grain, matte enamel inset seams, a pair of offset vertical guide rebates and one open threshold indentation.",
+			"zh": "细黄铜拉丝、珐琅嵌缝与错位门框浅槽，承接网关工具的接入关系，保留开门的余地。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Run Hermes in Herdr with optional monitoring",
+			"zh": "在 Herdr 中运行 Hermes，按需打开监控面板"
+		},
+		"purpose": {
+			"en": "Run a dedicated Hermes Gateway inside Herdr with explicit lifecycle control, persistent pause intent and JSON diagnostics. A compact startup page opens an optional hqtui monitor for multiple Profiles, with live status, CPU and memory trends.",
+			"zh": "在 Herdr 内运行专用 Hermes Gateway，提供明确的生命周期控制、持久暂停意图与 JSON 诊断。启动时先显示简洁状态页，按需打开 hqtui 面板，查看多个 Profile 的实时状态、CPU 和内存趋势。"
+		},
+		"source": "src/data/projects/hermes-on-herdr.json",
+		"inspectedRevision": "49b1e011781fbefc7567349862090f7463aaf2f1"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/hermes-gateway-herdr-family-2026-09-11-01-01.png",
+		"sha256": "ba0a4a0a403d4775ce917290dc528884b0ac6666068ed0148f655777f815d719",
+		"rgbaSha256": "800ee7781835fe6fd6f6cbff3bd4d5fa038a0305cdc1f7b0aaa66a0b4b82f96e",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4337945,
+		"source": "https://github.com/nocoo/hermes-on-herdr/blob/f14ddf11bf4ac4912830f0a7259fdd8a769e5a41/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/hermes-on-herdr/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "941aa8902f762892529b50c086d5d16ed66308dd52d47f5c821f68d47b1db16d"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30124071-f879-4216-982f-d3e70c3dd997",
+			"source": "artwork/brands/hermes-on-herdr/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/hermes-on-herdr/v1.0.0/source-light-request.json",
+			"response": "/textures/hermes-on-herdr/v1.0.0/source-light-response.json",
+			"prompt": "/textures/hermes-on-herdr/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/hermes-on-herdr/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/hermes-on-herdr/v1.0.0/texture-light.png",
+				"sha256": "bc3a106b0f593da35cb852ef26a9bbaa91a8c7bb49bf678a424ac2cd97316001",
+				"bytes": 1553794,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fee4a559-3a7e-41cf-bedb-a28348df85b3",
+			"source": "artwork/brands/hermes-on-herdr/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/hermes-on-herdr/v1.0.0/source-dark-request.json",
+			"response": "/textures/hermes-on-herdr/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/hermes-on-herdr/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/hermes-on-herdr/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/hermes-on-herdr/v1.0.0/texture-dark.png",
+				"sha256": "fc3ca0814fac055fd24d5a877507805df05f7cb9fc0cf9cc570c17cbb5d10396",
+				"bytes": 1622083,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.3
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.057952733971775,
+		"darkMinimum": 4.784450056305852,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:25:05.838Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

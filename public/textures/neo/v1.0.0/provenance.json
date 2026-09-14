@@ -1,0 +1,122 @@
+{
+	"project": "neo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "A familiar garden", "zh": "熟悉的庭院" },
+		"motif": "A domestic retriever's temperate garden setting, not a claimed wild habitat: soft apple-tree leaves, a few clover leaflets and two rounded fallen leaves. Quiet diagonally placed leaf clusters suggest a familiar home. No dog bones, paw prints, locks or flowers.",
+		"description": {
+			"en": "Soft apple-tree leaves, a few clover leaflets and two rounded fallen leaves.",
+			"zh": "苹果树叶与少量三叶草构成熟悉的庭院，承接金毛犬温和的性格，也给私人资料留出安稳的空间。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Your two-factor codes, together. Encrypted storage, easy imports, and offline access.",
+			"zh": "把双重验证口令放在一起，支持加密存储、多格式导入与离线访问。"
+		},
+		"purpose": {
+			"en": "Manage authentication secrets and TOTP codes in a browser, move data between authenticators, and maintain encrypted backup archives.",
+			"zh": "在浏览器中管理认证密钥和 TOTP 验证码，在认证器之间迁移数据，并维护加密备份归档。"
+		},
+		"source": "src/data/projects/neo.json",
+		"inspectedRevision": "0d750484792449914b07e9b3e3404a823493f8a5"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/neo.png",
+		"sha256": "2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d",
+		"rgbaSha256": "e033e674d024a43207e63bbfb4c8b15b6059e95f6de3337fe14f49a870f568e5",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4237355,
+		"source": "https://github.com/nocoo/neo/blob/0d750484792449914b07e9b3e3404a823493f8a5/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/neo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ef160197f5750bd609abe0f5ca5885c428b4bee3c2c5e1d2bb1d079c9da65b1a"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "65a62d04-c6f3-4531-803f-b327d4896ecc",
+			"source": "artwork/brands/neo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/neo/v1.0.0/source-light-request.json",
+			"response": "/textures/neo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/neo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/neo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/neo/v1.0.0/texture-light.png",
+				"sha256": "06071c6a2b87a446a1b44c490b7b3460373f3dc0f65a17c2fa2a5092bc3a667b",
+				"bytes": 1623668,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1c42d6a8-3367-4134-9eb3-0ba4010aa623",
+			"source": "artwork/brands/neo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/neo/v1.0.0/source-dark-request.json",
+			"response": "/textures/neo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/neo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/neo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/neo/v1.0.0/texture-dark.png",
+				"sha256": "df08cb4b89f9c2609227b1e0389a24668fc65ead40d3d4c7a6de62d10b5dd048",
+				"bytes": 1484308,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.39
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.802393988489841,
+		"darkMinimum": 4.715202973573027,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:23:40.869Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

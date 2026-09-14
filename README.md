@@ -31,6 +31,7 @@
 
 ## 功能
 
+- **独立底纹** — 在用项目按真实身份区分栖息地植物和工具工作材质，提供浅深完整图、轻量卡片图、原始 Prompt 和可核验的生成记录。新底纹通过 `brandTexture` 独立版本包维护，原始 Logo、品牌包和产品色板不变。归档项目仅做基础支持，保留已完成内容，默认不参加后续批量整理或素材创作。[设计与 R2 维护](docs/27-project-textures.md)。
 - **项目** — `/` 按分类浏览、搜索中英文名称与描述；`/projects/<id>` 顶部集中选择项目、分类和搜索，下方依次展示项目介绍、可选成片/截图、技术概览与品牌档案。Hooky/R2Shot 提供官方 Chrome 商店安装入口。视频点击封面才加载；截图保持完整比例，点开高清 Lightbox，以底部缩略图或方向键切换、Esc 关闭。没有媒体时自然接到项目内容。[截图与 R2 维护方式](.agents/skills/hexly-r2-media/references/project-screenshots.md)。
 - **模板** — 在 `/templates` 选择目录项目，自由组合 5 个封面、Launch / Essential / Showcase / Columns / Bento 五种正文、5 个片尾；各有官网明暗主题，支持 Video/Deck 双预览、截图和配置下载、离线 MP4/PPTX/PDF 导出。[5 个标准片尾](https://hexly.ai/templates#outros)可跨项目直接拼接使用，无需重新生成，提供原始 MP4、HTML 渲染的 4K 静帧和一键 Agent 交接说明。
 - **Agent 使用** — 每个正式页面提供可复制的使用说明、纯 Markdown 与 HTML 发现链接；项目档案的原始 Prompt / 设计说明可直接复制。[维护约定](docs/25-agent-guides.md)。

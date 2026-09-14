@@ -1,0 +1,122 @@
+{
+	"project": "frogie",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Lily margins", "zh": "睡莲留白" },
+		"motif": "A freshwater pond margin: broad water-lily pads with asymmetric radial veins, a few slender reed blades and duckweed pairs. Rounded pads form a loose crescent in the lower right, with ample open water-like paper between them. No flowers.",
+		"description": {
+			"en": "Broad water-lily pads with asymmetric radial veins, a few slender reed blades and duckweed pairs.",
+			"zh": "睡莲的圆叶与细长芦苇散落在池塘边，把青蛙的声场留在宽阔的纸面上。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A local-first home for your AI agents. Chat, tools, and sessions in one place.",
+			"zh": "AI 智能体的本地工作台，把对话、工具与会话放在一起。"
+		},
+		"purpose": {
+			"en": "Work on local project directories through a web coding assistant, keeping conversations, tool execution, MCP tools and resumable sessions together.",
+			"zh": "通过网页编程助手处理本地项目，把对话、工具执行、MCP 工具和可续接会话放在一起。"
+		},
+		"source": "src/data/projects/frogie.json",
+		"inspectedRevision": "e965214c3efe99f4c4b459e6716e2014184dc32d"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/frogie-2026-09-06.png",
+		"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+		"rgbaSha256": "33da2681091fabc3efb46344446682b3ececdd718fe0488de647a5b8e6faba8f",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3588507,
+		"source": "https://github.com/nocoo/frogie/blob/e965214c3efe99f4c4b459e6716e2014184dc32d/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/frogie/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "9c7e1ddc6c041c803bbea368e3b67de3771e500ffd9df33d801206858f11dba3"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fd23beef-16a2-41d7-87dc-ef89fb9992fb",
+			"source": "artwork/brands/frogie/texture-studies/2026-09-14-flare-rollout-01/light",
+			"request": "/textures/frogie/v1.0.0/source-light-request.json",
+			"response": "/textures/frogie/v1.0.0/source-light-response.json",
+			"prompt": "/textures/frogie/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/frogie/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/frogie/v1.0.0/texture-light.png",
+				"sha256": "3bd96b278d05d3fc0350dc2880fc0c724d047f2f227bd7b2cf67e9e15fdb9ba9",
+				"bytes": 1532952,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "59c6bb2d-a140-448b-b8e8-9dbb089398d2",
+			"source": "artwork/brands/frogie/texture-studies/2026-09-14-flare-rollout-01/dark",
+			"request": "/textures/frogie/v1.0.0/source-dark-request.json",
+			"response": "/textures/frogie/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/frogie/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/frogie/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/frogie/v1.0.0/texture-dark.png",
+				"sha256": "c85e73fbedb334d8f5af43cf948b06b0ff7101e1a7d09da1662983cf6f93a4f4",
+				"bytes": 1401156,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.725870042758636,
+		"darkMinimum": 5.061959743789592,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:10:41.266Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

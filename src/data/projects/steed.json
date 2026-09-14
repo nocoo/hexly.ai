@@ -356,5 +356,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/steed/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Wind through the pasture",
+			"zh": "牧场风序"
+		},
+		"description": {
+			"en": "Long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves.",
+			"zh": "梯牧草与松散燕麦穗顺风舒展，用牧场里连续的草叶呼应马匹轻快的步调。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
 	}
 }

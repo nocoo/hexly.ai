@@ -108,10 +108,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A contribution counted",
-					"zh": "记录一次贡献"
-				},
+				"title": { "en": "A contribution counted", "zh": "记录一次贡献" },
 				"description": {
 					"en": "The returning brass plunger and slightly turning number wheel capture a count in progress. The blue counter remains the main mass; its silver finger loop stays close.",
 					"zh": "黄铜按钮回弹，数字轮刚刚转动，定格一次活动记录。蓝色计数器是主体，银色指环紧靠机身。"
@@ -119,10 +116,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Enamel and moving digits",
-					"zh": "珐琅与机械数字"
-				},
+				"title": { "en": "Enamel and moving digits", "zh": "珐琅与机械数字" },
 				"description": {
 					"en": "Petrol enamel, brushed brass and opaque ivory digit drums describe a physical counting instrument. This represents developer and Git activity analytics.",
 					"zh": "深蓝珐琅、拉丝黄铜与不透明象牙色数字轮构成真实计数工具，呼应开发者与 Git 活动分析。"
@@ -130,10 +124,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Activity ledgers",
-					"zh": "活动刻度"
-				},
+				"title": { "en": "Activity ledgers", "zh": "活动刻度" },
 				"description": {
 					"en": "Stepped tally bars, grouped count strokes and sparse ledger baselines on blue-gray paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "蓝灰纸面上的分组计数线、阶梯图和稀疏账本基线。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -144,37 +135,25 @@
 			{
 				"color": "#c4d2da",
 				"role": "background",
-				"label": {
-					"en": "Activity ledgers",
-					"zh": "活动刻度"
-				},
+				"label": { "en": "Activity ledgers", "zh": "活动刻度" },
 				"source": "Adopted signoff.now presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#2d506f",
 				"role": "primary",
-				"label": {
-					"en": "Petrol enamel",
-					"zh": "深蓝珐琅"
-				},
+				"label": { "en": "Petrol enamel", "zh": "深蓝珐琅" },
 				"source": "Native signoff-now 34cda46e7010, sampled sRGB pixel (1244, 644); artwork/logo-family/signoff-now/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#9a825a",
 				"role": "accent",
-				"label": {
-					"en": "Brass plunger",
-					"zh": "黄铜按钮"
-				},
+				"label": { "en": "Brass plunger", "zh": "黄铜按钮" },
 				"source": "Native signoff-now 34cda46e7010, sampled sRGB pixel (1015, 95); artwork/logo-family/signoff-now/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#d8cdb1",
 				"role": "accent",
-				"label": {
-					"en": "Ivory drums",
-					"zh": "象牙色数字轮"
-				},
+				"label": { "en": "Ivory drums", "zh": "象牙色数字轮" },
 				"source": "Native signoff-now 34cda46e7010, sampled sRGB pixel (664, 1002); artwork/logo-family/signoff-now/2026-09-07-01/palette.json"
 			}
 		],
@@ -213,10 +192,7 @@
 			},
 			{
 				"name": "Tailwind CSS",
-				"role": {
-					"en": "Interface styling and themes",
-					"zh": "界面样式与主题"
-				}
+				"role": { "en": "Interface styling and themes", "zh": "界面样式与主题" }
 			},
 			{
 				"name": "Hono",
@@ -299,15 +275,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 1158,
-			"height": 416
-		},
+		"lockup": { "width": 1158, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Activity ledgers",
-				"zh": "活动账页"
-			},
+			"name": { "en": "Activity ledgers", "zh": "活动账页" },
 			"description": {
 				"en": "Stepped tally bars, grouped count strokes and sparse ledger lines turn activity into a readable rhythm.",
 				"zh": "阶梯式计数条、成组短划与稀疏账页线，将开发活动整理为清楚的节奏。"
@@ -332,35 +302,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥117px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 117px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/signoff-now/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Counted impressions", "zh": "计数压痕" },
+		"description": {
+			"en": "Firm uncoated paper with shallow letterpress ruling, small grouped five-stroke impressions and a few offset column stops.",
+			"zh": "硬挺记录纸上的压线、分组刻痕与错位栏位呼应机械计数器，表达持续记录而不伪造数据。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

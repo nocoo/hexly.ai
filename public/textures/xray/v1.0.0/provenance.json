@@ -1,0 +1,122 @@
+{
+	"project": "xray",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Leaves for a butterfly", "zh": "蝶停叶间" },
+		"motif": "A temperate butterfly garden without asserting species: long gently serrated buddleia leaves, a small branching nettle-like host-leaf spray and a single tiny desaturated flower cluster. Keep all petals under two percent of the canvas. No butterflies, wings or rainbow gradients.",
+		"description": {
+			"en": "Long gently serrated buddleia leaves, a small branching nettle-like host-leaf spray and a single tiny desaturated flower cluster.",
+			"zh": "醉鱼草长叶与细小寄主植物叶丛围出停驻处，只有一簇低调花影，把彩色位置留给蝴蝶原标。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A closer look at your Twitter / X activity, with analytics and AI-powered reports.",
+			"zh": "深入查看 Twitter / X 动态，用数据分析与 AI 报告理解自己的内容。"
+		},
+		"purpose": {
+			"en": "Collect X / Twitter and custom-source content into watchlists, then read, translate, and save links from one timeline.",
+			"zh": "将 X / Twitter 与自定义来源的内容按关注列表收集，在同一时间线中阅读、翻译和保存链接。"
+		},
+		"source": "src/data/projects/xray.json",
+		"inspectedRevision": "16175dc87ef406e8cf3343ab8808b60e8f53cc8a"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/xray.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"rgbaSha256": "6c680b22721615c4ac5a9ffdcb4265f0f2adb8b59f8d8e68fcc5c71ae2c83979",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3318716,
+		"source": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/xray/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "2f62205b056b7c99e4afbf84f5fe3ee5fbedd8a70c1e4fd28f29365dac1c613e"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f093c924-0ef8-49b6-8cee-349aeef51634",
+			"source": "artwork/brands/xray/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/xray/v1.0.0/source-light-request.json",
+			"response": "/textures/xray/v1.0.0/source-light-response.json",
+			"prompt": "/textures/xray/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/xray/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/xray/v1.0.0/texture-light.png",
+				"sha256": "c5e2a8768fc4d691f4eb2144ed65d18ec399954924dbbebb8b416fc2ed1fe212",
+				"bytes": 1616805,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7ae55efd-6adf-4e8c-bb8b-098ec4adf4c0",
+			"source": "artwork/brands/xray/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/xray/v1.0.0/source-dark-request.json",
+			"response": "/textures/xray/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/xray/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/xray/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/xray/v1.0.0/texture-dark.png",
+				"sha256": "6288f4e7c5901d3af9e7be682c5605e5297e46c7b8323bc42fd162d6613f205a",
+				"bytes": 1452400,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.39
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.723115307443518,
+		"darkMinimum": 4.81899570712259,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:37:32.448Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

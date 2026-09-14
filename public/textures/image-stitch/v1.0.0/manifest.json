@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "image-stitch",
+	"version": "1.0.0",
+	"root": "/textures/image-stitch/v1.0.0",
+	"canonical": "https://hexly.ai/projects/image-stitch#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/image-stitch/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A continuous mount", "zh": "接续的裱面" },
+		"description": {
+			"en": "Matte linen-backed archival paper, gently stepped overlapping mount seams and sparse paired alignment corners.",
+			"zh": "亚麻衬裱纸的搭接边与成对对齐角把长图的连续关系变成材质，完整照片仍由原项目呈现。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.43
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/image-stitch.png",
+		"sha256": "a8577c72f3b0bd47fa19cbbbbedac3347c0bfb39960777b37a3fd32c45acf6f4",
+		"rgbaSha256": "6a1e0cf1ea1ae6c2f3e3d1673856cc926a826dc974e518a69f372911bd65aa54",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 559822,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f5a50de1-6c59-460e-8aad-22786be28ce4",
+			"source": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/image-stitch/v1.0.0/source-light-request.json",
+			"response": "/textures/image-stitch/v1.0.0/source-light-response.json",
+			"prompt": "/textures/image-stitch/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/image-stitch/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/image-stitch/v1.0.0/texture-light.png",
+				"sha256": "b6004439c99decec46fb00f3277460bf0ecb8fdc0e44f7ffcedf7a19622b6d71",
+				"bytes": 1842687,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "de6bc41a-ceee-4a7f-9660-5f585a52a4c9",
+			"source": "artwork/brands/image-stitch/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/image-stitch/v1.0.0/source-dark-request.json",
+			"response": "/textures/image-stitch/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/image-stitch/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/image-stitch/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/image-stitch/v1.0.0/texture-dark.png",
+				"sha256": "69e1f256fb3b18a5115e13df4844984f8305580d3495e20cc8b4a85738584818",
+				"bytes": 1650248,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1842687,
+			"sha256": "b6004439c99decec46fb00f3277460bf0ecb8fdc0e44f7ffcedf7a19622b6d71"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 277696,
+			"sha256": "2aa9b1aceea81bcaea04f0f83208d30313d2a9b9153530c48466243e1b2445f5"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4292,
+			"sha256": "16444a6b6f655fc84143f3bced82ebc3baf6386556b1ddaba618686d86fd1607"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2716,
+			"sha256": "fee44306dd7372d31fd81f53f9fc27544bda9e2d9c58a62ae3263a654ae851d3"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8452517cdda7aa15a647ee6442255a93a17027b11a48cb70c08720288b758167"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "e8ab738dd5dd9bd5d7429aa8efcb0b856c84d1bf38df4582dc603301ceecca95"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1099,
+			"sha256": "b6e4d363dde5dda9c5d48051c49c066a2f4b284acb7dee0d579703ee7eb5eba7"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1650248,
+			"sha256": "69e1f256fb3b18a5115e13df4844984f8305580d3495e20cc8b4a85738584818"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 211374,
+			"sha256": "3d80cefdd37f6d3fdec500b794966d7535838fc988cadc50729dca3e5bfb1cbd"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3516,
+			"sha256": "e22254825a0e74c30f453aaced143143cc191423f8f2d3dbb4df0ada0ca8b8c6"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2792,
+			"sha256": "3c809ab095150979ee1032d76a5a6de3004aa220951b92c2a9a5ae686839f7ba"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "0803668a1daef4c3d9732823997563b5a17daba8a04b11a1960cf9982e1afb20"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "b2ef88e1ceacb403f91cf9d68390df1e2471a28fe682827e500a863182d44d58"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1099,
+			"sha256": "df1fd28e9b3646b4d872a54f9b801b0589a8b0fea9c9e5f6e80506b1c7fe321e"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5180,
+			"sha256": "cb0ae84993c428d6865cf428eeb66cc9824afaa95ab0d1eff3dc2c387d10ed56"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1329,
+			"sha256": "aed566ff404c5734034fb715215fdf5c01d6d66700b6d132b3c058c66a7bc7e8"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1765,
+			"sha256": "eaa9e16e67ba6954e227befa173da7efe646ffadff75112013e3bd418300efdf"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2613,
+			"sha256": "52ac894dc9045013b5190279663930ec99fc37f01b56a6faf0a173d34354ed86"
+		},
+		{
+			"path": "/textures/image-stitch/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3631,
+			"sha256": "464e81d3715e9f4fbbd81bae121a9fd0d2c5b33623211a5404c06cf761066b05"
+		}
+	]
+}

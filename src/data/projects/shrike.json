@@ -108,10 +108,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "Keep the watchful profile",
-					"zh": "保留警觉的侧影"
-				},
+				"title": { "en": "Keep the watchful profile", "zh": "保留警觉的侧影" },
 				"description": {
 					"en": "The original head, hooked beak, eye mask, shoulders, and canvas are preserved exactly. The existing compact silhouette stays the source of every foreground size.",
 					"zh": "头部、钩状鸟喙、眼罩、肩羽和画布全部原样保留，现有紧凑轮廓是所有透明尺寸的唯一来源。"
@@ -130,10 +127,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Angular paper folds",
-					"zh": "棱角分明的纸面折翼"
-				},
+				"title": { "en": "Angular paper folds", "zh": "棱角分明的纸面折翼" },
 				"description": {
 					"en": "Oversized angular pleats enter a slate field from opposite corners. Narrow edge highlights and a low shadow give the grey bird separation without adding a scene.",
 					"zh": "大幅折翼纹从对角进入石板色底面，细边高光和轻浅阴影让灰色主体清晰浮现，保持图标简洁。"
@@ -144,54 +138,36 @@
 			{
 				"color": "#718591",
 				"role": "background",
-				"label": {
-					"en": "Folded wings",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Folded wings", "zh": "展示底色" },
 				"source": "Selected Shrike presentation, finishing 01; background.base in archived settings.json"
 			},
 			{
 				"color": "#a0a1a6",
-				"label": {
-					"en": "Slate grey",
-					"zh": "石板灰"
-				},
+				"label": { "en": "Slate grey", "zh": "石板灰" },
 				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1363, 324); palette.json",
 				"role": "primary"
 			},
 			{
 				"color": "#c4c7ce",
-				"label": {
-					"en": "Silver feather",
-					"zh": "银灰羽毛"
-				},
+				"label": { "en": "Silver feather", "zh": "银灰羽毛" },
 				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1081, 284); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#1a1a18",
-				"label": {
-					"en": "Eye mask",
-					"zh": "深色眼罩"
-				},
+				"label": { "en": "Eye mask", "zh": "深色眼罩" },
 				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1091, 636); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#b7936f",
-				"label": {
-					"en": "Buff shoulder",
-					"zh": "浅褐肩羽"
-				},
+				"label": { "en": "Buff shoulder", "zh": "浅褐肩羽" },
 				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (1197, 1367); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#576475",
-				"label": {
-					"en": "Beak blue",
-					"zh": "鸟喙蓝灰"
-				},
+				"label": { "en": "Beak blue", "zh": "鸟喙蓝灰" },
 				"source": "Original shrike 97692ebf5b78, sampled sRGB pixel (322, 801); palette.json",
 				"role": "accent"
 			}
@@ -223,31 +199,19 @@
 			},
 			{
 				"name": "TypeScript",
-				"role": {
-					"en": "Frontend logic",
-					"zh": "前端逻辑"
-				}
+				"role": { "en": "Frontend logic", "zh": "前端逻辑" }
 			},
 			{
 				"name": "Tailwind CSS / Radix UI",
-				"role": {
-					"en": "Styling and UI components",
-					"zh": "样式与界面组件"
-				}
+				"role": { "en": "Styling and UI components", "zh": "样式与界面组件" }
 			},
 			{
 				"name": "Tokio / Axum",
-				"role": {
-					"en": "Local HTTP API",
-					"zh": "本机 HTTP 接口"
-				}
+				"role": { "en": "Local HTTP API", "zh": "本机 HTTP 接口" }
 			},
 			{
 				"name": "rsync",
-				"role": {
-					"en": "Incremental file copying",
-					"zh": "增量文件复制"
-				}
+				"role": { "en": "Incremental file copying", "zh": "增量文件复制" }
 			},
 			{
 				"name": "Tauri Store",
@@ -281,15 +245,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 899,
-			"height": 416
-		},
+		"lockup": { "width": 899, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Folded wings",
-				"zh": "折翼层片"
-			},
+			"name": { "en": "Folded wings", "zh": "折翼层片" },
 			"description": {
 				"en": "Broad angular pleats and short inset seams echo folded wings at opposite corners of the canvas.",
 				"zh": "宽阔折面与内收短缝在画面对角相互呼应，像伯劳安静收拢的双翼。"
@@ -314,35 +272,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥74px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 74px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/shrike/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A hawthorn lookout", "zh": "山楂枝上的守望" },
+		"description": {
+			"en": "Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.",
+			"zh": "有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
 	}
 }

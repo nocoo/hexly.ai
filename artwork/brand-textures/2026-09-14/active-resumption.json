@@ -1,0 +1,28 @@
+{
+	"recordedAt": "2026-09-14T05:15:46.158763+00:00",
+	"scopeAmendment": "docs/brand-textures/2026-09-14/scope-update.json",
+	"oldSchedulerStopped": true,
+	"remainingActiveProjects": [
+		"clip",
+		"fundly",
+		"dreamro",
+		"meowth",
+		"coffee",
+		"hermes-on-herdr",
+		"ocelot"
+	],
+	"attempt": 3,
+	"maximumRequests": 14,
+	"subsequentReviewedReplacement": {
+		"project": "pew-game",
+		"attempt": 4,
+		"maximumRequests": 2,
+		"reason": "Both prior themes were rejected; tone-revision.json and exact replacement prompts are already prepared."
+	},
+	"pacingSeconds": 35,
+	"jobs": 2,
+	"model": "gpt-image-2.5-flare",
+	"noArchivedRequests": true,
+	"authorization": "Owner delegated generation/acceptance/R2 publication and second minor release; narrowed archived support only.",
+	"stopOn": [401, 403, 429]
+}

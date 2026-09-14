@@ -219,6 +219,25 @@ export function catalogueProblems(projects: Project[]): string[] {
 				))
 		)
 			problems.push(`Invalid brand kit: ${project.id}`);
+		const texture = project.brandTexture;
+		if (
+			texture !== undefined &&
+			(!texture ||
+				!/^\d+\.\d+\.\d+$/.test(texture.version) ||
+				texture.root !== `/textures/${project.id}/v${texture.version}` ||
+				texture.scope !== "hexly-campaign" ||
+				texture.format !== "webp" ||
+				texture.display !== "single" ||
+				!["gpt-image-2.5-flare", "gpt-image-2.5-sunburst"].includes(
+					texture.model,
+				) ||
+				!hasTranslations(texture.name) ||
+				!hasTranslations(texture.description) ||
+				!Number.isFinite(texture.surfaceOpacity) ||
+				texture.surfaceOpacity <= 0 ||
+				texture.surfaceOpacity > 1)
+		)
+			problems.push(`Invalid project texture: ${project.id}`);
 		const media = project.media;
 		if (media !== undefined) {
 			if (!media || typeof media !== "object" || Array.isArray(media)) {

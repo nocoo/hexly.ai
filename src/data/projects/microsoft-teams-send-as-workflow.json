@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/microsoft-teams-send-as-workflow/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Correspondence folds", "zh": "来信折痕" },
+		"description": {
+			"en": "Broad shallow envelope-flap fold impressions, one diagonal crease and offset sorting-strip indentations.",
+			"zh": "棉质信纸的宽折痕与错位分拣压条呼应消息递送，保持书信感而不生成平台商标。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.44
+	}
 }

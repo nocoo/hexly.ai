@@ -94,10 +94,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A hover caught in time",
-					"zh": "捕捉悬停瞬间"
-				},
+				"title": { "en": "A hover caught in time", "zh": "捕捉悬停瞬间" },
 				"description": {
 					"en": "A complete hummingbird pauses with its beak at one bell flower. Both wings, the tail and small feet remain visible with generous corner clearance.",
 					"zh": "完整的小蜂鸟将鸟喙停在一朵钟形花旁，双翼、尾羽和小脚都清晰可见，并为圆角留足空间。"
@@ -116,10 +113,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Petal pockets",
-					"zh": "花瓣凹面"
-				},
+				"title": { "en": "Petal pockets", "zh": "花瓣凹面" },
 				"description": {
 					"en": "Large unequal petal impressions curl through a muted teal field. Soft grain and a shallow shadow keep the richly colored wings distinct.",
 					"zh": "大小不一的花瓣压纹弯过柔和青色底纹，细颗粒与浅阴影让丰富翼色保持分明。"
@@ -130,55 +124,37 @@
 			{
 				"color": "#5f8988",
 				"role": "background",
-				"label": {
-					"en": "Petal pockets",
-					"zh": "花瓣凹面"
-				},
+				"label": { "en": "Petal pockets", "zh": "花瓣凹面" },
 				"source": "Selected Codo presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#349078",
 				"role": "primary",
-				"label": {
-					"en": "Emerald",
-					"zh": "翡翠绿"
-				},
+				"label": { "en": "Emerald", "zh": "翡翠绿" },
 				"source": "Native codo 76ffd623644d, sampled sRGB pixel (828, 1414); artwork/logo-family/codo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#247185",
 				"role": "accent",
-				"label": {
-					"en": "Teal",
-					"zh": "青色"
-				},
+				"label": { "en": "Teal", "zh": "青色" },
 				"source": "Native codo 76ffd623644d, sampled sRGB pixel (663, 1350); artwork/logo-family/codo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#764395",
 				"role": "accent",
-				"label": {
-					"en": "Violet",
-					"zh": "紫色"
-				},
+				"label": { "en": "Violet", "zh": "紫色" },
 				"source": "Native codo 76ffd623644d, sampled sRGB pixel (645, 1616); artwork/logo-family/codo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e8675e",
 				"role": "accent",
-				"label": {
-					"en": "Coral",
-					"zh": "珊瑚色"
-				},
+				"label": { "en": "Coral", "zh": "珊瑚色" },
 				"source": "Native codo 76ffd623644d, sampled sRGB pixel (1773, 846); artwork/logo-family/codo/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#ddb048",
 				"role": "accent",
-				"label": {
-					"en": "Gold",
-					"zh": "金色"
-				},
+				"label": { "en": "Gold", "zh": "金色" },
 				"source": "Native codo 76ffd623644d, sampled sRGB pixel (1121, 1132); artwork/logo-family/codo/2026-09-07-01/palette.json"
 			}
 		],
@@ -203,10 +179,7 @@
 			},
 			{
 				"name": "AppKit",
-				"role": {
-					"en": "Custom desktop banners",
-					"zh": "桌面自绘横幅"
-				}
+				"role": { "en": "Custom desktop banners", "zh": "桌面自绘横幅" }
 			},
 			{
 				"name": "TypeScript / Bun",
@@ -217,10 +190,7 @@
 			},
 			{
 				"name": "Unix sockets",
-				"role": {
-					"en": "Local event delivery",
-					"zh": "本地事件传输"
-				}
+				"role": { "en": "Local event delivery", "zh": "本地事件传输" }
 			},
 			{
 				"name": "SQLite / Keychain",
@@ -263,15 +233,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 833,
-			"height": 416
-		},
+		"lockup": { "width": 833, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Petal pockets",
-				"zh": "花瓣口袋"
-			},
+			"name": { "en": "Petal pockets", "zh": "花瓣口袋" },
 			"description": {
 				"en": "Three asymmetric petal pockets and fine, offset seams echo the bell flower beside the hummingbird.",
 				"zh": "三片不对称的花瓣与细细错开的接缝，呼应蜂鸟身旁的钟形花。"
@@ -296,35 +260,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 63px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/codo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A flower within reach", "zh": "近在喙边" },
+		"description": {
+			"en": "Slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta.",
+			"zh": "鼠尾草长叶与金银花弯枝向上伸展，仅用两枚低饱和筒状小花回应蜂鸟取食的瞬间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

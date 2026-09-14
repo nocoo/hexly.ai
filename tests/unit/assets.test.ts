@@ -22,6 +22,23 @@ import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
 describe("R2 material delivery", () => {
+	it("keeps independently versioned texture packs on R2 and review documents on the Worker", () => {
+		const path = "/textures/frogie/v1.0.0/texture-light-320.webp";
+		const key = "projects/frogie/textures/v1.0.0/texture-light-320.webp";
+		expect(assetKey(path, "a".repeat(64), "frogie")).toBe(key);
+		expect(assetKeyForPath(path)).toBe(key);
+		expect(assetUrl(path)).toBe(`https://h.no.mt/${key}`);
+		expect(() => assetKey(path, "a".repeat(64), "pew")).toThrow(
+			"Texture path and catalogue project disagree",
+		);
+		for (const path of [
+			"/textures/frogie/v1.0.0/review.html",
+			"/textures/frogie/v1.0.0/review.js",
+			"/textures/frogie/v1.0.0/review.css",
+			"/textures/frogie/v1.0.0/../outside.png",
+		])
+			expect(assetKeyForPath(path)).toBeNull();
+	});
 	it("keeps screenshot versions and project namespaces independent of identity assets", () => {
 		const hash = "a".repeat(64);
 		expect(

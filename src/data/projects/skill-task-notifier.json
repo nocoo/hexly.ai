@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/skill-task-notifier/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Dispatch board", "zh": "任务派送板" },
+		"description": {
+			"en": "Very fine pressed cork-paper grain, shallow horizontal task-lane dividers and two small offset docket-tab impressions.",
+			"zh": "压实软木纸与横向派送分隔、错位票签凹痕承接任务通知，少量色点只作视觉提醒。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	}
 }

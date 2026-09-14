@@ -129,7 +129,7 @@ export default {
 		}
 		let response = await env.ASSETS.fetch(request);
 		const reviewDocument =
-			path.startsWith("/brands/") &&
+			/^\/(brands|textures)\//.test(path) &&
 			/\/review(?:\.html)?$/.test(path) &&
 			response.status === 200 &&
 			response.headers.get("Content-Type")?.includes("text/html");

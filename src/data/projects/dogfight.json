@@ -27,18 +27,12 @@
 		"display": "/logos/display/dogfight-1024.webp"
 	},
 	"theme": {
-		"primary": {
-			"value": "#c0e9dc",
-			"source": "src/styles.css --mint"
-		},
+		"primary": { "value": "#c0e9dc", "source": "src/styles.css --mint" },
 		"background": {
 			"value": "#101c27",
 			"source": "src/styles.css :root background"
 		},
-		"ink": {
-			"value": "#e9eee9",
-			"source": "src/styles.css :root color"
-		}
+		"ink": { "value": "#e9eee9", "source": "src/styles.css :root color" }
 	},
 	"source": {
 		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
@@ -108,10 +102,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A turn held in metal",
-					"zh": "定格的金属转弯"
-				},
+				"title": { "en": "A turn held in metal", "zh": "定格的金属转弯" },
 				"description": {
 					"en": "A broad-winged F-22 collectible banks diagonally toward the viewer. A gentle elevated product camera preserves the nose, both tail fins and the complete wing silhouette.",
 					"zh": "宽翼 F-22 模型斜向观者转弯。略俯视的产品镜头完整保留机鼻、双尾翼和两侧机翼。"
@@ -119,10 +110,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Titanium and amber",
-					"zh": "钛灰与琥珀"
-				},
+				"title": { "en": "Titanium and amber", "zh": "钛灰与琥珀" },
 				"description": {
 					"en": "Satin titanium and blue-gray panel faces define a real die-cast object. The amber canopy is the single warm material accent; there are no detached trails or effects.",
 					"zh": "缎面钛灰与蓝灰机身面板表现压铸模型，琥珀座舱是唯一暖色点缀，不添加脱离主体的尾迹。"
@@ -130,10 +118,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Banking vectors",
-					"zh": "转弯航迹"
-				},
+				"title": { "en": "Banking vectors", "zh": "转弯航迹" },
 				"description": {
 					"en": "Three swept flight lanes and short altitude ticks crossing a pale blue atmospheric field. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "浅蓝纸面上的弯转航线与高度短刻度，呼应空战游戏。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -144,37 +129,25 @@
 			{
 				"color": "#d0dfe9",
 				"role": "background",
-				"label": {
-					"en": "Banking vectors",
-					"zh": "转弯航迹"
-				},
+				"label": { "en": "Banking vectors", "zh": "转弯航迹" },
 				"source": "Adopted Dogfight presentation, 2026-09-07-01/02; background.base in archived settings.json"
 			},
 			{
 				"color": "#878f95",
 				"role": "primary",
-				"label": {
-					"en": "Titanium",
-					"zh": "钛灰"
-				},
+				"label": { "en": "Titanium", "zh": "钛灰" },
 				"source": "Native dogfight 0ef348789c21, sampled sRGB pixel (715, 700); artwork/logo-family/dogfight/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#694d2c",
 				"role": "accent",
-				"label": {
-					"en": "Canopy amber",
-					"zh": "琥珀座舱"
-				},
+				"label": { "en": "Canopy amber", "zh": "琥珀座舱" },
 				"source": "Native dogfight 0ef348789c21, sampled sRGB pixel (401, 1453); artwork/logo-family/dogfight/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#bcbfbd",
 				"role": "accent",
-				"label": {
-					"en": "Panel highlight",
-					"zh": "面板高光"
-				},
+				"label": { "en": "Panel highlight", "zh": "面板高光" },
 				"source": "Native dogfight 0ef348789c21, sampled sRGB pixel (1040, 956); artwork/logo-family/dogfight/2026-09-07-01/palette.json"
 			}
 		],
@@ -192,10 +165,7 @@
 		"techStack": [
 			{
 				"name": "TypeScript",
-				"role": {
-					"en": "Flight and combat simulation",
-					"zh": "飞行与战斗模拟"
-				}
+				"role": { "en": "Flight and combat simulation", "zh": "飞行与战斗模拟" }
 			},
 			{
 				"name": "React",
@@ -213,10 +183,7 @@
 			},
 			{
 				"name": "WebGL",
-				"role": {
-					"en": "Browser 3D rendering",
-					"zh": "浏览器三维渲染"
-				}
+				"role": { "en": "Browser 3D rendering", "zh": "浏览器三维渲染" }
 			},
 			{
 				"name": "Web Audio",
@@ -227,10 +194,7 @@
 			},
 			{
 				"name": "localStorage",
-				"role": {
-					"en": "Highest winning score",
-					"zh": "胜利最高分"
-				}
+				"role": { "en": "Highest winning score", "zh": "胜利最高分" }
 			},
 			{
 				"name": "Vite",
@@ -241,10 +205,7 @@
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "Static game hosting",
-					"zh": "游戏静态托管"
-				}
+				"role": { "en": "Static game hosting", "zh": "游戏静态托管" }
 			}
 		],
 		"verified": {
@@ -272,15 +233,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 983,
-			"height": 416
-		},
+		"lockup": { "width": 983, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Banking vectors",
-				"zh": "盘旋向量"
-			},
+			"name": { "en": "Banking vectors", "zh": "盘旋向量" },
 			"description": {
 				"en": "Three swept flight lanes cross short altitude ticks, following the aircraft’s banking turn.",
 				"zh": "三条掠过的航线穿过短刻度，顺着战机侧倾转弯的方向延伸。"
@@ -305,35 +260,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥88px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 88px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/dogfight/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Banked alloy", "zh": "倾斜合金" },
+		"description": {
+			"en": "Diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain.",
+			"zh": "斜向金属拼缝、少量齐平铆点与细腻拉丝呼应桌面战机模型的转弯，是材质联想而非真实飞机图纸。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
 	}
 }

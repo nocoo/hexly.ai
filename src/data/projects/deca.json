@@ -90,10 +90,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The receiver settles",
-					"zh": "听筒归位的一刻"
-				},
+				"title": { "en": "The receiver settles", "zh": "听筒归位的一刻" },
 				"description": {
 					"en": "A complete receiver rests on a broad rotary telephone, with a short coil gathered closely to the body. The familiar physical device represents a local agent gateway and its channels.",
 					"zh": "完整听筒落在宽阔转盘电话上，短卷线紧靠机身；熟悉的实体设备呼应本地 Agent 网关及多种通信通道。"
@@ -101,10 +98,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Midnight Bakelite",
-					"zh": "午夜蓝胶木"
-				},
+				"title": { "en": "Midnight Bakelite", "zh": "午夜蓝胶木" },
 				"description": {
 					"en": "Deep teal Bakelite, an ivory rotary dial and fine brass seams make a calm premium object. The cable-loop background is removed while real dark dial recesses stay intact.",
 					"zh": "深青蓝胶木、象牙色转盘与黄铜细接缝构成沉稳实物。线圈环内去除背景，转盘真实暗部凹孔保留。"
@@ -112,10 +106,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Switchboard paths",
-					"zh": "总机接线"
-				},
+				"title": { "en": "Switchboard paths", "zh": "总机接线" },
 				"description": {
 					"en": "Three rounded switchboard routing paths with discrete paired terminals in cool blue-gray paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "蓝灰纸面上的三条圆润总机接线与成对终端。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -126,37 +117,25 @@
 			{
 				"color": "#c2ced6",
 				"role": "background",
-				"label": {
-					"en": "Switchboard paths",
-					"zh": "总机接线"
-				},
+				"label": { "en": "Switchboard paths", "zh": "总机接线" },
 				"source": "Adopted Deca presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#1c323c",
 				"role": "primary",
-				"label": {
-					"en": "Midnight teal",
-					"zh": "午夜青蓝"
-				},
+				"label": { "en": "Midnight teal", "zh": "午夜青蓝" },
 				"source": "Native deca 5be6d36eea83, sampled sRGB pixel (1240, 1212); artwork/logo-family/deca/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#decca0",
 				"role": "accent",
-				"label": {
-					"en": "Ivory dial",
-					"zh": "象牙色转盘"
-				},
+				"label": { "en": "Ivory dial", "zh": "象牙色转盘" },
 				"source": "Native deca 5be6d36eea83, sampled sRGB pixel (1097, 1096); artwork/logo-family/deca/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#827159",
 				"role": "accent",
-				"label": {
-					"en": "Brass seam",
-					"zh": "黄铜接缝"
-				},
+				"label": { "en": "Brass seam", "zh": "黄铜接缝" },
 				"source": "Native deca 5be6d36eea83, sampled sRGB pixel (1579, 763); artwork/logo-family/deca/2026-09-07-01/palette.json"
 			}
 		],
@@ -186,26 +165,14 @@
 					"zh": "模型调用与工具协议"
 				}
 			},
-			{
-				"name": "Hono",
-				"role": {
-					"en": "HTTP channel",
-					"zh": "HTTP 通道"
-				}
-			},
+			{ "name": "Hono", "role": { "en": "HTTP channel", "zh": "HTTP 通道" } },
 			{
 				"name": "discord.js",
-				"role": {
-					"en": "Discord bot channel",
-					"zh": "Discord 机器人通道"
-				}
+				"role": { "en": "Discord bot channel", "zh": "Discord 机器人通道" }
 			},
 			{
 				"name": "p-queue",
-				"role": {
-					"en": "Gateway request dispatch",
-					"zh": "Gateway 请求调度"
-				}
+				"role": { "en": "Gateway request dispatch", "zh": "Gateway 请求调度" }
 			},
 			{
 				"name": "JSONL / JSON / Markdown",
@@ -240,15 +207,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 829,
-			"height": 416
-		},
+		"lockup": { "width": 829, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Switchboard paths",
-				"zh": "交换台线路"
-			},
+			"name": { "en": "Switchboard paths", "zh": "交换台线路" },
 			"description": {
 				"en": "Three rounded routing paths connect paired terminals, recalling a telephone switchboard.",
 				"zh": "三条圆转线路连接成对端点，呼应旋转电话背后的交换台。"
@@ -273,35 +234,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥63px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 63px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/deca/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Switchboard grain", "zh": "交换台肌理" },
+		"description": {
+			"en": "Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.",
+			"zh": "哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
 	}
 }

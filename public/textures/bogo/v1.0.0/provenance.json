@@ -1,0 +1,122 @@
+{
+	"project": "bogo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Floodplain folio", "zh": "河滩叶册" },
+		"motif": "A broad buffalo floodplain habitat, without asserting a species: robust wetland grass leaves in bent fans, paired sedge seed heads and one broad water-margin leaf. Overlapping leaf tips resemble the edges of stored folios, while remaining entirely botanical.",
+		"description": {
+			"en": "Robust wetland grass leaves in bent fans, paired sedge seed heads and one broad water-margin leaf.",
+			"zh": "水牛活动的河滩上，宽草叶与莎草穗层层错落，像知识档案中自然叠放的书页。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A personal knowledge home for documents, people, and the connections between them.",
+			"zh": "把文档、人物与工作空间放在一起，整理个人知识和它们之间的联系。"
+		},
+		"purpose": {
+			"en": "Keep reporting relationships, documents and revision history together in workspaces, with web and CLI access to the same knowledge base.",
+			"zh": "围绕人物和工作空间整理组织关系、文档和版本记录，并用网页与命令行维护同一份知识库。"
+		},
+		"source": "src/data/projects/bogo.json",
+		"inspectedRevision": "77e211a294a885fff2830d0aba2e48a10299dff1"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/bogo-2026-09-07.png",
+		"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+		"rgbaSha256": "0e65a5f9f626a218390f9e483657a774beb85b81abbdc43e751958194c12f384",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3637079,
+		"source": "https://github.com/nocoo/bogo/blob/77e211a294a885fff2830d0aba2e48a10299dff1/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/bogo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "a9001ae45cb49e369018b962121d9d7d90771670f68dd647275192b6c2bb7dad"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30af35d8-49bc-4476-a0d6-152f99d96351",
+			"source": "artwork/brands/bogo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/bogo/v1.0.0/source-light-request.json",
+			"response": "/textures/bogo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/bogo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/bogo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/bogo/v1.0.0/texture-light.png",
+				"sha256": "a9242249782d84caa963a0338d2f5618067bfda2754653c8964171a816dd81c0",
+				"bytes": 1680907,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ac5b2e93-dea1-4e15-b86a-25d933d8ebd4",
+			"source": "artwork/brands/bogo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/bogo/v1.0.0/source-dark-request.json",
+			"response": "/textures/bogo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/bogo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/bogo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/bogo/v1.0.0/texture-dark.png",
+				"sha256": "2d43f2a11dfb7ecf1be04f156580273c2a8e49687b8e2ae1747d2f42b4373e8f",
+				"bytes": 1438414,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.32
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.738137986790604,
+		"darkMinimum": 5.354030990776499,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:10:48.128Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

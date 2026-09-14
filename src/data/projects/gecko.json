@@ -107,10 +107,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A familiar pause",
-					"zh": "熟悉的停顿"
-				},
+				"title": { "en": "A familiar pause", "zh": "熟悉的停顿" },
 				"description": {
 					"en": "The liked whole gecko keeps its exact native placement, broad face, curled tail and spread toes. The comparison intentionally shows the same animal.",
 					"zh": "喜爱的壁虎全身保留原有位置、宽脸、卷尾和展开的脚趾，前后对比有意展示同一个主体。"
@@ -118,10 +115,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Sandstone stays intact",
-					"zh": "完整保留砂岩色"
-				},
+				"title": { "en": "Sandstone stays intact", "zh": "完整保留砂岩色" },
 				"description": {
 					"en": "Warm sandstone, clay, cream and quiet sage facets remain byte for byte unchanged. No redraw or new accessory is introduced.",
 					"zh": "温暖的砂岩、陶土、奶油与柔和鼠尾草色色面逐字节保留，没有重绘或添加新的装饰。"
@@ -129,10 +123,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Sandstone shelves",
-					"zh": "砂岩层架"
-				},
+				"title": { "en": "Sandstone shelves", "zh": "砂岩层架" },
 				"description": {
 					"en": "Staggered broad ledges and short rising seams sit on a warmer clay field. The low relief gives the gecko a distinct place within the family.",
 					"zh": "错落的宽阔层架和短竖缝铺在暖陶土色底纹上，用浅浮雕为壁虎形成独有的家族背景。"
@@ -143,55 +134,37 @@
 			{
 				"color": "#926d60",
 				"role": "background",
-				"label": {
-					"en": "Sandstone shelves",
-					"zh": "砂岩层架"
-				},
+				"label": { "en": "Sandstone shelves", "zh": "砂岩层架" },
 				"source": "Selected Gecko presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#c4a576",
 				"role": "primary",
-				"label": {
-					"en": "Sandstone",
-					"zh": "砂岩色"
-				},
+				"label": { "en": "Sandstone", "zh": "砂岩色" },
 				"source": "Native gecko 8808c3134902, sampled sRGB pixel (1645, 318); artwork/logo-family/gecko/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#bd9f6d",
 				"role": "accent",
-				"label": {
-					"en": "Clay",
-					"zh": "陶土色"
-				},
+				"label": { "en": "Clay", "zh": "陶土色" },
 				"source": "Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#bd9f6d",
 				"role": "accent",
-				"label": {
-					"en": "Sage",
-					"zh": "鼠尾草色"
-				},
+				"label": { "en": "Sage", "zh": "鼠尾草色" },
 				"source": "Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e4d4b0",
 				"role": "accent",
-				"label": {
-					"en": "Cream",
-					"zh": "奶油色"
-				},
+				"label": { "en": "Cream", "zh": "奶油色" },
 				"source": "Native gecko 8808c3134902, sampled sRGB pixel (1338, 267); artwork/logo-family/gecko/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#bd9f6d",
 				"role": "accent",
-				"label": {
-					"en": "Dark brown",
-					"zh": "深棕色"
-				},
+				"label": { "en": "Dark brown", "zh": "深棕色" },
 				"source": "Native gecko 8808c3134902, sampled sRGB pixel (1645, 317); artwork/logo-family/gecko/2026-09-07-01/palette.json"
 			}
 		],
@@ -209,31 +182,19 @@
 		"techStack": [
 			{
 				"name": "Swift / SwiftUI",
-				"role": {
-					"en": "macOS tracking app",
-					"zh": "macOS 跟踪应用"
-				}
+				"role": { "en": "macOS tracking app", "zh": "macOS 跟踪应用" }
 			},
 			{
 				"name": "AppKit / AppleScript",
-				"role": {
-					"en": "Window and browser context",
-					"zh": "窗口与浏览器信息"
-				}
+				"role": { "en": "Window and browser context", "zh": "窗口与浏览器信息" }
 			},
 			{
 				"name": "SQLite / GRDB",
-				"role": {
-					"en": "Local session storage",
-					"zh": "本地会话存储"
-				}
+				"role": { "en": "Local session storage", "zh": "本地会话存储" }
 			},
 			{
 				"name": "React / TypeScript",
-				"role": {
-					"en": "Activity dashboard",
-					"zh": "活动控制台"
-				}
+				"role": { "en": "Activity dashboard", "zh": "活动控制台" }
 			},
 			{
 				"name": "vinext / Vite",
@@ -251,17 +212,11 @@
 			},
 			{
 				"name": "NextAuth",
-				"role": {
-					"en": "Google sign-in",
-					"zh": "Google 登录"
-				}
+				"role": { "en": "Google sign-in", "zh": "Google 登录" }
 			},
 			{
 				"name": "AI SDK",
-				"role": {
-					"en": "Optional daily analysis",
-					"zh": "可选的每日分析"
-				}
+				"role": { "en": "Optional daily analysis", "zh": "可选的每日分析" }
 			}
 		],
 		"verified": {
@@ -288,15 +243,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 901,
-			"height": 416
-		},
+		"lockup": { "width": 901, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Sandstone shelves",
-				"zh": "砂岩层台"
-			},
+			"name": { "en": "Sandstone shelves", "zh": "砂岩层台" },
 			"description": {
 				"en": "Staggered sandstone ledges and short rising seams recall the surfaces beneath the gecko’s toes.",
 				"zh": "错层的砂岩台面与短短的纵向接缝，呼应壁虎脚趾攀附的岩面。"
@@ -321,35 +270,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥75px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 75px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/gecko/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A warm stone garden", "zh": "暖石叶隙" },
+		"description": {
+			"en": "Small fleshy stonecrop leaves on branching stems, narrow aloe-like leaf tips and sparse dry grass.",
+			"zh": "景天小叶、细窄肉质叶尖与干草从暖石边的缝隙生长，呼应壁虎亲近地面的生活环境。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.36
 	}
 }

@@ -113,10 +113,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The key rebounds",
-					"zh": "按键回弹的一刻"
-				},
+				"title": { "en": "The key rebounds", "zh": "按键回弹的一刻" },
 				"description": {
 					"en": "A single substantial keycap sits just above its compact mechanical switch. The elevated product view keeps 中 readable while revealing the switch foot and copper spring.",
 					"zh": "一颗厚实键帽位于紧凑机械轴体上方。斜上方镜头同时保留中字符号、轴体底座和铜色弹簧。"
@@ -124,10 +121,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Celadon ceramic",
-					"zh": "青瓷键帽"
-				},
+				"title": { "en": "Celadon ceramic", "zh": "青瓷键帽" },
 				"description": {
 					"en": "Restrained glaze reflections and softly mottled celadon establish the physical ceramic. The ivory glyph remains opaque and the switch contributes a quiet dark base.",
 					"zh": "克制釉面反光与细腻青瓷色差表现真实陶瓷；象牙色汉字保持不透明，深色轴体形成稳定底座。"
@@ -135,10 +129,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Pinyin key rhythm",
-					"zh": "拼音键序"
-				},
+				"title": { "en": "Pinyin key rhythm", "zh": "拼音键序" },
 				"description": {
 					"en": "Staggered rounded key outlines with a small sequence of rising and falling tone strokes in celadon paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "青瓷色纸面上的错位圆角键位与起伏声调短线。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -149,46 +140,31 @@
 			{
 				"color": "#c4d8cf",
 				"role": "background",
-				"label": {
-					"en": "Pinyin key rhythm",
-					"zh": "拼音键序"
-				},
+				"label": { "en": "Pinyin key rhythm", "zh": "拼音键序" },
 				"source": "Adopted Flow presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#8ba48c",
 				"role": "primary",
-				"label": {
-					"en": "Celadon glaze",
-					"zh": "青瓷釉面"
-				},
+				"label": { "en": "Celadon glaze", "zh": "青瓷釉面" },
 				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1045, 500); artwork/logo-family/flow/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e2d7b7",
 				"role": "accent",
-				"label": {
-					"en": "Ivory character",
-					"zh": "象牙色汉字"
-				},
+				"label": { "en": "Ivory character", "zh": "象牙色汉字" },
 				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1188, 731); artwork/logo-family/flow/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#2c2d27",
 				"role": "accent",
-				"label": {
-					"en": "Switch charcoal",
-					"zh": "深灰轴体"
-				},
+				"label": { "en": "Switch charcoal", "zh": "深灰轴体" },
 				"source": "Native flow 386f4e61218e, sampled sRGB pixel (1187, 1560); artwork/logo-family/flow/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#866540",
 				"role": "accent",
-				"label": {
-					"en": "Copper spring",
-					"zh": "铜色弹簧"
-				},
+				"label": { "en": "Copper spring", "zh": "铜色弹簧" },
 				"source": "Native flow 386f4e61218e, sampled sRGB pixel (954, 1482); artwork/logo-family/flow/2026-09-07-01/palette.json"
 			}
 		],
@@ -220,10 +196,7 @@
 			},
 			{
 				"name": "AI SDK / OpenAI Compatible",
-				"role": {
-					"en": "Streaming model calls",
-					"zh": "模型流式调用"
-				}
+				"role": { "en": "Streaming model calls", "zh": "模型流式调用" }
 			},
 			{
 				"name": "React / Vite",
@@ -234,10 +207,7 @@
 			},
 			{
 				"name": "Tailwind CSS / Radix UI",
-				"role": {
-					"en": "UI styles and components",
-					"zh": "界面样式与组件"
-				}
+				"role": { "en": "UI styles and components", "zh": "界面样式与组件" }
 			},
 			{
 				"name": "bun:sqlite",
@@ -279,15 +249,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 790,
-			"height": 416
-		},
+		"lockup": { "width": 790, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Pinyin key rhythm",
-				"zh": "拼音键律"
-			},
+			"name": { "en": "Pinyin key rhythm", "zh": "拼音键律" },
 			"description": {
 				"en": "Staggered key outlines meet rising and falling tone strokes, linking a keyboard to the cadence of pinyin.",
 				"zh": "错落键位与起落的声调笔画相遇，把键盘节奏连接到拼音的韵律。"
@@ -312,35 +276,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥56px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 56px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/flow/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Where a key settles", "zh": "按键落处" },
+		"description": {
+			"en": "Soft matte ceramic micrograin, shallow staggered key-well shoulders and thin offset row grooves.",
+			"zh": "哑光瓷釉的微粒、错开的键位肩线与浅槽承接青瓷键帽，留下输入发生时轻轻落下的触感。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.31
 	}
 }

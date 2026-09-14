@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "r2shot",
+	"version": "1.0.0",
+	"root": "/textures/r2shot/v1.0.0",
+	"canonical": "https://hexly.ai/projects/r2shot#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/r2shot/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Eelgrass in the current", "zh": "潮流中的鳗草" },
+		"description": {
+			"en": "Long flat eelgrass ribbons with subtle parallel veins and a few small kelp blade tips.",
+			"zh": "长长鳗草叶带与少量海带叶尖顺着潮流弯折，给海豚留出开阔的浅海水域。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/r2shot.png",
+		"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"rgbaSha256": "1eaabed3879c5585638683e6e6e63545b4bb4730ca7925bf77704a3fe13172b7",
+		"width": 920,
+		"height": 920,
+		"bytes": 668704,
+		"source": "https://github.com/nocoo/r2shot/blob/d69714a2332066c9c7b1792f919607a4b776eade/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/r2shot/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "67e7075c12c6e23bca65394803d5d2f5d00755c936c4db65fbcb16f4d580a324"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "528523a2-4aa5-425f-be6d-c7214ee15881",
+			"source": "artwork/brands/r2shot/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/r2shot/v1.0.0/source-light-request.json",
+			"response": "/textures/r2shot/v1.0.0/source-light-response.json",
+			"prompt": "/textures/r2shot/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/r2shot/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/r2shot/v1.0.0/texture-light.png",
+				"sha256": "a221e2bc64286150bfa45763763f252103886c24ce3df70e30b3e04a19c50b0c",
+				"bytes": 1612952,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52db12e4-0ff9-4515-b8ca-dc63fb4ad0a1",
+			"source": "artwork/brands/r2shot/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/r2shot/v1.0.0/source-dark-request.json",
+			"response": "/textures/r2shot/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/r2shot/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/r2shot/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/r2shot/v1.0.0/texture-dark.png",
+				"sha256": "78ad19e18e6f04b7b66c89c44929a3fcaaa8541e137e9598dbeb627a7622652a",
+				"bytes": 1451472,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1612952,
+			"sha256": "a221e2bc64286150bfa45763763f252103886c24ce3df70e30b3e04a19c50b0c"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 167002,
+			"sha256": "ee001eb568e3f87f9054994c89c08c14613224fd019dfbaeb82b16ab30a59739"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8532,
+			"sha256": "44826f9c4102a769fe9415f1bd2ee4e9f20ddffb0248338f4e0bee40affcf49c"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2908,
+			"sha256": "984062fb33d950a0949d791bd4234bde7ad8041607f7b38aea230bfeaca96f3a"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "e9924e7483a9b5f08b9871285dd7ad76475e67e1594909d0d51104a8dea70700"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "3ae6bcb7a9bebf18ac9aac46bbcf102f3a7c128daa6964e9f90e570924676405"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1080,
+			"sha256": "38cc27176ed7e7e8feb9c9e46217fa18e910795441f982d671d094e73ed1649f"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1451472,
+			"sha256": "78ad19e18e6f04b7b66c89c44929a3fcaaa8541e137e9598dbeb627a7622652a"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 108168,
+			"sha256": "c9da578a775bda790d94208a8290a5e9364ee6cce847690cfabaed38b6cc8006"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6372,
+			"sha256": "e5cd80f090e84f0b00bc175a0fc26d93e3738b6e239387692ee1df835db5e025"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2989,
+			"sha256": "e2344f5a6c19745cf871c958347276c4785e13aca5e29e8906b8ac6bdfd6ca3f"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "6eb4369236a352fda0388ee7f8ff8790a737194fae226039b099d0ae4cac4b35"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "1f0990c9d80b5fe47d57b50ca4c71bc77f9aaa85bf66bc0e7e638e67ee6160d7"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1080,
+			"sha256": "a707fd25914c34ed42e2d600270ba96d36f6b8a12aa7b065445560961f3447fb"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5361,
+			"sha256": "8dd31e500363956ef26ba522b07be2171572e3d566632c9cc0e14dd3d3ab96b7"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1413,
+			"sha256": "54b4542e1de61aae1cdad11228eb1eb5251aacec1ae8e6c562232ed69ed39a3d"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "7fcf82086c9af6a423f86664f2e09a133516e996240e733464fbbf714138ce4f"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2513,
+			"sha256": "dc599c89f32605729dbd6074273fa8bf81e3562acec06e9d24595a9b0044f827"
+		},
+		{
+			"path": "/textures/r2shot/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3517,
+			"sha256": "bbed819bc45e855a568d55413f39ed1b619e6ffa7b5bfaefc38547e18e125294"
+		}
+	]
+}

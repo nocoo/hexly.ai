@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "steed",
+	"version": "1.0.0",
+	"root": "/textures/steed/v1.0.0",
+	"canonical": "https://hexly.ai/projects/steed#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/steed/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Wind through the pasture", "zh": "牧场风序" },
+		"description": {
+			"en": "Long timothy grass, loose oat panicles and several narrow lanceolate plantain leaves.",
+			"zh": "梯牧草与松散燕麦穗顺风舒展，用牧场里连续的草叶呼应马匹轻快的步调。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.33
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/steed-family-2026-09-07-02-01.png",
+		"sha256": "a58914242de4d8f074ed64d8eb4dfb234354334618940c08d5f4e941edb35a44",
+		"rgbaSha256": "46a488e99620ef31cd24171daab4376205391f8a4de0cee02444fba99c375980",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3189966,
+		"source": "https://github.com/nocoo/steed/blob/bcab1f113b9b7cde65898bbd23705c7dac339634/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/steed/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "72a724ace9eff372af9fe736528196900bedefc004d0062579df2f890cbb8b24"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c3971400-1a95-4e02-bfbe-9d4053436e66",
+			"source": "artwork/brands/steed/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/steed/v1.0.0/source-light-request.json",
+			"response": "/textures/steed/v1.0.0/source-light-response.json",
+			"prompt": "/textures/steed/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/steed/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/steed/v1.0.0/texture-light.png",
+				"sha256": "f14a7aa1baa3329b1810bb36fc22b4cfeab45b79b0321abfc539f6b1c25fd9a2",
+				"bytes": 1568609,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5261391a-ae2b-43d7-b19d-94133d9872e1",
+			"source": "artwork/brands/steed/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/steed/v1.0.0/source-dark-request.json",
+			"response": "/textures/steed/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/steed/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/steed/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/steed/v1.0.0/texture-dark.png",
+				"sha256": "9a6ff3063dd7b267a5ae322a9ee0419bb1f8b280b354c0995446e1ccbf4cc98d",
+				"bytes": 1463077,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/steed/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1568609,
+			"sha256": "f14a7aa1baa3329b1810bb36fc22b4cfeab45b79b0321abfc539f6b1c25fd9a2"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 146932,
+			"sha256": "5f2bdc9dcbecbbd9c18600f921f771d8f9cc8ccb95e1c0f8dac8081c7e840ef6"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9970,
+			"sha256": "b30de1ae1dea6427fca091eb42c558e8531c4f098da8900106fbce806d89835b"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2856,
+			"sha256": "b4d94d1e148b1965002126aa041b1b6e50159b3070a8982ade677f04e136af45"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "4bace9d92e3845ab6ec25a73d01ec7ba9c15e874f36792b3c142b5af21934271"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "8c0c6602f810e6c83e9d3aa5fce6cd01d510d1b5668f89ee3639a7e1bf71d570"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1038,
+			"sha256": "a261ea3d28429b45bc88a9ae6863727bc5740b7bc68cbf3db67dbe0acbad5244"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1463077,
+			"sha256": "9a6ff3063dd7b267a5ae322a9ee0419bb1f8b280b354c0995446e1ccbf4cc98d"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 123438,
+			"sha256": "dc4a914fb923a1deb5c0b68c4d6038e825e26f9685ef44b497cb94e48be02d5f"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8436,
+			"sha256": "7a2d7400095d0a3b532db521dd11cf31dd83d86ecf2004f5bcd90910ae45712f"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2937,
+			"sha256": "162aed49af04fbe1874d33d10a61ffafdddea54c1d5b6fc003b21e852d2b6de0"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "dfbcc2ca069d9b62962d4279ce9eb0219a4195dbf9c344294c97f34d21b75631"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d1c0a0d340bda38f4f0a857d95543c638f7d0331b73432310c4db34357a6b6b9"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1038,
+			"sha256": "fd3b1309d2425b68d315520886c4a5f721291f7c5ecdef6383dc084a05c7f694"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5341,
+			"sha256": "64f51524db75735fc77d9da83b9564e65dead7fd59eefb1c84952785dfffe05b"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1396,
+			"sha256": "ed644f4b6aaefd24f5fdc5989da1729d104119f106a7674fb568dee728c80bbf"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "2034a1b1035908d10cc6f9432c917a0b5c699295ce3c7f50b56d3ffe91da83e6"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2510,
+			"sha256": "b63f361a4a37e467f9247be5f0842cdd586d45b8d86b92ebc9c14e91337e5246"
+		},
+		{
+			"path": "/textures/steed/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3505,
+			"sha256": "dc3e47babc1d09401061cdfe534cd81974eeb9bd3b085085bea2aedb49bf26b5"
+		}
+	]
+}

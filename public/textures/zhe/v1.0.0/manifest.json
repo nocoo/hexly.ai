@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "zhe",
+	"version": "1.0.0",
+	"root": "/textures/zhe/v1.0.0",
+	"canonical": "https://hexly.ai/projects/zhe#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/zhe/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "The herb border", "zh": "香草花境" },
+		"description": {
+			"en": "Narrow rosemary needles, tiny thyme leaf pairs and one very small subdued cream thyme flower cluster.",
+			"zh": "迷迭香针叶与百里香小叶沿细枝相接，极少量浅色花影为蜜蜂留下合适的采食环境。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zhe.png",
+		"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+		"rgbaSha256": "b4a1805a9e5a92f52acf313fbc856a3a57946b8ea3e62556a1dac3e46c3ccc33",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3100798,
+		"source": "https://github.com/nocoo/zhe/blob/075c875936e9a244c147ff9d58452398bb1ef3cf/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/zhe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "fad6854a35915541d29bd01d068a40ce83738d9d0ecea2a8bf14384d9048ebe1"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30759775-fe7f-4d3a-b0fb-36c8d74b2a8d",
+			"source": "artwork/brands/zhe/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/zhe/v1.0.0/source-light-request.json",
+			"response": "/textures/zhe/v1.0.0/source-light-response.json",
+			"prompt": "/textures/zhe/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/zhe/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/zhe/v1.0.0/texture-light.png",
+				"sha256": "8289e7b9cb21a6a2ae81269d01e845341a7b2721b1e171bc85b959bb28938548",
+				"bytes": 1629438,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ebb42c2a-194f-4ff3-bc79-825daa2cb43f",
+			"source": "artwork/brands/zhe/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/zhe/v1.0.0/source-dark-request.json",
+			"response": "/textures/zhe/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/zhe/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/zhe/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/zhe/v1.0.0/texture-dark.png",
+				"sha256": "47796ca0bde79dc6988978f3c6be6bb568421a35edddea3fd318e7014e4f655e",
+				"bytes": 1458581,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/zhe/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1629438,
+			"sha256": "8289e7b9cb21a6a2ae81269d01e845341a7b2721b1e171bc85b959bb28938548"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 184622,
+			"sha256": "cd57023264a85a8310db8a905d1533ee8a8d7e27d05eb48e499fec56f33de74e"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10094,
+			"sha256": "2255597c4da72f5aa7ff8fdb6027b196794253364c5e22fadbd46f06feec846b"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2846,
+			"sha256": "ba3306616c0dbd9d75d029fd9402dae3b994004f5a71bff4abb8cd0f541f5f0c"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "8c3033428955a9b72e3209f21941264215685f56f12aaa224796ea1077b07057"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "34573bd25754b030c008da3f89f0561f757317cb8f5e176e08ec63193c6b7522"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1076,
+			"sha256": "5fcb6a5d00fc87394f4865d041f050dd66106d13eeae11f03af7b35b11900519"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1458581,
+			"sha256": "47796ca0bde79dc6988978f3c6be6bb568421a35edddea3fd318e7014e4f655e"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 116802,
+			"sha256": "864f213f05727f2c258dc2432680d3ec132f9f9c9e798e260faab3b13142a7ce"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8712,
+			"sha256": "dcc6e10480333916f25996d2b00f7db29d76553c123c0a0b610f746bb3973e24"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2927,
+			"sha256": "2047d454606c0dda25156ce9216f15d190d8f57afcb3ba1bb69c7da4adac3bd3"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "63248a7fb7927db0e51c50fa4cec2921b0e0d2a8a05449b7493cee7121c56184"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "be691a354569d277664b487108e7ea30fabff3d33819614554bb22209bfb9523"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1076,
+			"sha256": "a020f4e973d8761d1d4e596c83519560a1fbe4bb612dcde9bf17baf95e259fc7"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5215,
+			"sha256": "75c7942c529c56e512a3737b5d5d0fd6744e3d4c85ca02d356f41dfe79c95791"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1347,
+			"sha256": "00b07a5a20b6c72423466371f5bb82f16ac5eac1fb056ede52d69825d251a23e"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "2b6818f8d31cb1a2029c17e79f54de2fddad66cc68640bf53e0da5253862140e"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2521,
+			"sha256": "ad4c367b59dca0344f20abe5c985c60ab3e3be32d4ebdd6a9acb06d983b636b9"
+		},
+		{
+			"path": "/textures/zhe/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3478,
+			"sha256": "ae5d7c8ab0622eae20a328f6b41acda574f269f772f9b81c2924ba561a64e4d1"
+		}
+	]
+}

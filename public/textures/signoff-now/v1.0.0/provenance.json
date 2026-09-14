@@ -1,0 +1,122 @@
+{
+	"project": "signoff-now",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Counted impressions", "zh": "计数压痕" },
+		"motif": "A mechanical tally ledger surface: firm uncoated paper with shallow letterpress ruling, small grouped five-stroke impressions and a few offset column stops. Use a sparse nonliteral rhythm and no actual count, numbers, text or chart. The material recalls recording developer activity.",
+		"description": {
+			"en": "Firm uncoated paper with shallow letterpress ruling, small grouped five-stroke impressions and a few offset column stops.",
+			"zh": "硬挺记录纸上的压线、分组刻痕与错位栏位呼应机械计数器，表达持续记录而不伪造数据。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Developer and Git activity analytics",
+			"zh": "开发者与 Git 活动分析"
+		},
+		"purpose": {
+			"en": "Help managers review registered developers’ Azure DevOps PR, review, and work item activity through daily scores, comparisons, and timelines, with data collected by a local CLI.",
+			"zh": "通过本地 CLI 采集已登记开发者的 Azure DevOps PR、评审和工作项活动，帮助管理者按日查看积分、人员对比与活动明细。"
+		},
+		"source": "src/data/projects/signoff-now.json",
+		"inspectedRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+		"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+		"rgbaSha256": "29dd63381dfdda91cf723593090cc28bd1fea16c4e0d525d4ea9bb61a5ad0e03",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3963278,
+		"source": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/signoff-now/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d0a9d0532ef2f096c1406500a98b987fb0e3c81c7dc6f59c4f12715d447fb2b9"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1fac06dd-a706-4677-bdea-88ad8344ce0a",
+			"source": "artwork/brands/signoff-now/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/signoff-now/v1.0.0/source-light-request.json",
+			"response": "/textures/signoff-now/v1.0.0/source-light-response.json",
+			"prompt": "/textures/signoff-now/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/signoff-now/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/signoff-now/v1.0.0/texture-light.png",
+				"sha256": "88001c00d0897a74aaf4891111ed67371c4fb5abbc70a48d9fda74796b2fdf19",
+				"bytes": 1744057,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "65941d4a-7c23-4025-8ddf-6d961aeb237b",
+			"source": "artwork/brands/signoff-now/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/signoff-now/v1.0.0/source-dark-request.json",
+			"response": "/textures/signoff-now/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/signoff-now/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/signoff-now/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/signoff-now/v1.0.0/texture-dark.png",
+				"sha256": "c51ecde13ae0f64c6e4e441838fc0933c25f3b58d0eee97d94a152daf417b655",
+				"bytes": 1758851,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.744683692669467,
+		"darkMinimum": 4.94336448706084,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:36:32.820Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

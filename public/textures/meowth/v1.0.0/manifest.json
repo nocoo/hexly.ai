@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "meowth",
+	"version": "1.0.0",
+	"root": "/textures/meowth/v1.0.0",
+	"canonical": "https://hexly.ai/projects/meowth#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/meowth/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A windowsill garden", "zh": "窗边小花园" },
+		"description": {
+			"en": "Rounded softly serrated catmint leaves, a few slender oat-grass blades and delicate branching stems.",
+			"zh": "柔软猫薄荷叶与细燕麦草在窗边疏散生长，承接家猫的安静日常，不把毛线或爪印再铺满背景。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/meowth.png",
+		"sha256": "13c60445ab61a9c54831af5a185d5c137b95a3c9abb672793250ceef29c33541",
+		"rgbaSha256": "35b79c80456e1e3b9580f9eb61008ea5bda18714c254fc7d948dd0b296b18387",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3003934,
+		"source": "https://github.com/nocoo/meowth/blob/15b4d902c71ec6184c7220f0fb50a29ca87e080d/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/meowth/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "bc1df0217468580df55f4c867a626fc855955d41c74c59fd5e4356a0b7befd86"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "779f5f48-ce55-4656-8747-0a8f78f45067",
+			"source": "artwork/brands/meowth/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/meowth/v1.0.0/source-light-request.json",
+			"response": "/textures/meowth/v1.0.0/source-light-response.json",
+			"prompt": "/textures/meowth/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/meowth/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/meowth/v1.0.0/texture-light.png",
+				"sha256": "214c199765e4d71ab42375ffc979280fbb0af6b10cbad4de836f20f418a96fe6",
+				"bytes": 1645634,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a2d9513d-13bc-45ea-abc8-de2f669dcf50",
+			"source": "artwork/brands/meowth/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/meowth/v1.0.0/source-dark-request.json",
+			"response": "/textures/meowth/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/meowth/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/meowth/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/meowth/v1.0.0/texture-dark.png",
+				"sha256": "400cce87585a48723dbe5ec1b2d5611b526a12871918b7809244d8427e7496d2",
+				"bytes": 1462388,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/meowth/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1645634,
+			"sha256": "214c199765e4d71ab42375ffc979280fbb0af6b10cbad4de836f20f418a96fe6"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 182662,
+			"sha256": "7152a49932e1d7d60ce6d52e3e9b1282d91be0df21826b4570a3857d50b2efee"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10602,
+			"sha256": "9d9e7dc8052afee2a758446aeeef2621c6786fb337ea8bb7f237a2e628b793b3"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2879,
+			"sha256": "79f91a6c22c8f2622be5b0951161653c8e22bbf2c03eb4d1f70bb1df88439418"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "9ae21bb1117b46a663eaa02f17399fa16143cff91962e4dbdfd04ab33356d9df"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "f84e0fc55b964bffa1da1c8039a8d05ab2efc3f6aa763194ae45bd930f8282f9"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1191,
+			"sha256": "f69a44a3f57eca3669e9843d70fab9577512709ff00ab824d45c5391554315cb"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1462388,
+			"sha256": "400cce87585a48723dbe5ec1b2d5611b526a12871918b7809244d8427e7496d2"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 123396,
+			"sha256": "db72281b84cc06364b0381e487677476201a37b7d5dc4d65f320d51e7cde486d"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9364,
+			"sha256": "ff132475057d53109229d0db62f72999005938199046846b7935169b1d2984d9"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2960,
+			"sha256": "0b871a5c33ef3d25717997472badd6efa5b714ee2d38a535d94da3cd1f567152"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "677b162df301bbc802f65e6eabffafbbba45956482f89ce64a70425af8cd5262"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "d20c9250b61ef15382f6c42ca803ee5d3bed2b5923b980cc98b33cdb09d44ea5"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1191,
+			"sha256": "5b6cec62a6111fce1f6244730bffc5a4c9d91e5d0076eac1e583ce9f970d5dee"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5367,
+			"sha256": "7520bc2d23ed74f3092c409f966c5ab42703280acb34e82af45c9bc75e280be8"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1426,
+			"sha256": "6234653344ce8b1b009d8db046401a959933d592cc6cbde42e8faebb8af383d9"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "06b01038001e583da04b61e32f549a6db9fc39bda4d4530e94e04ec00f70b372"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2551,
+			"sha256": "4f7c42f8ea5776ad36365aa9c602822d15543980a2b226028d06d438d99c39c9"
+		},
+		{
+			"path": "/textures/meowth/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3546,
+			"sha256": "f0f01005c8fbc500879f07704f415fd4f700357cfa3f13236c79cffe2d155119"
+		}
+	]
+}

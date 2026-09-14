@@ -108,10 +108,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The same playful turn",
-					"zh": "保留这一刻的回身"
-				},
+				"title": { "en": "The same playful turn", "zh": "保留这一刻的回身" },
 				"description": {
 					"en": "The dolphin, curled tail, and original margins are retained exactly. Its complete silhouette stays inside the rounded tile; no crop or artificial extension was added.",
 					"zh": "海豚、卷曲尾鳍、视角和原有边距全部保留。完整轮廓位于圆角之内，没有裁切或补画。"
@@ -119,10 +116,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Every original facet",
-					"zh": "每一块原有的色面"
-				},
+				"title": { "en": "Every original facet", "zh": "每一块原有的色面" },
 				"description": {
 					"en": "Cyan, turquoise, blue, and pale belly planes remain the original transparent artwork. The bright eyes and sweeping tail keep their existing gesture; no new decoration or model generation was needed.",
 					"zh": "青色、蓝色和浅色腹部均沿用原来的透明图像。明亮眼神与回卷尾鳍保留原有动作，没有新增装饰，也没有重新生图。"
@@ -130,10 +124,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "A quiet teal wake",
-					"zh": "青色水流的浮纹"
-				},
+				"title": { "en": "A quiet teal wake", "zh": "青色水流的浮纹" },
 				"description": {
 					"en": "Oblique wave crests follow the empty upper-right field. A deep teal gradient, fine grain, and shallow contact shadows give the retained flat artwork a tactile setting.",
 					"zh": "斜向水波穿过右上方的留白，搭配深青渐变、细微颗粒和轻浅接触阴影，为原来的平面主体加上纸面质感。"
@@ -144,54 +135,36 @@
 			{
 				"color": "#4d818c",
 				"role": "background",
-				"label": {
-					"en": "Dolphin wake",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Dolphin wake", "zh": "展示底色" },
 				"source": "Selected R2Shot presentation, finishing 01; background.base in archived settings.json"
 			},
 			{
 				"color": "#3fc2d0",
-				"label": {
-					"en": "Lagoon cyan",
-					"zh": "泻湖青"
-				},
+				"label": { "en": "Lagoon cyan", "zh": "泻湖青" },
 				"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (568, 298); palette.json",
 				"role": "primary"
 			},
 			{
 				"color": "#198eba",
-				"label": {
-					"en": "Ocean blue",
-					"zh": "海蓝"
-				},
+				"label": { "en": "Ocean blue", "zh": "海蓝" },
 				"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (217, 676); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#dbffff",
-				"label": {
-					"en": "Ice mint",
-					"zh": "冰薄荷"
-				},
+				"label": { "en": "Ice mint", "zh": "冰薄荷" },
 				"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (494, 280); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#143361",
-				"label": {
-					"en": "Deep water",
-					"zh": "深海蓝"
-				},
+				"label": { "en": "Deep water", "zh": "深海蓝" },
 				"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (653, 181); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#2ebad5",
-				"label": {
-					"en": "Tail turquoise",
-					"zh": "尾鳍青"
-				},
+				"label": { "en": "Tail turquoise", "zh": "尾鳍青" },
 				"source": "Original r2shot 17e2f07d03a8, sampled sRGB pixel (854, 632); palette.json",
 				"role": "accent"
 			}
@@ -209,10 +182,7 @@
 		"techStack": [
 			{
 				"name": "TypeScript",
-				"role": {
-					"en": "Extension logic",
-					"zh": "扩展逻辑"
-				}
+				"role": { "en": "Extension logic", "zh": "扩展逻辑" }
 			},
 			{
 				"name": "React",
@@ -223,17 +193,11 @@
 			},
 			{
 				"name": "Tailwind CSS",
-				"role": {
-					"en": "Interface styles",
-					"zh": "界面样式"
-				}
+				"role": { "en": "Interface styles", "zh": "界面样式" }
 			},
 			{
 				"name": "Vite",
-				"role": {
-					"en": "Extension bundling",
-					"zh": "扩展构建"
-				}
+				"role": { "en": "Extension bundling", "zh": "扩展构建" }
 			},
 			{
 				"name": "Chrome Manifest V3",
@@ -251,10 +215,7 @@
 			},
 			{
 				"name": "Cloudflare R2",
-				"role": {
-					"en": "Screenshot storage",
-					"zh": "截图存储"
-				}
+				"role": { "en": "Screenshot storage", "zh": "截图存储" }
 			}
 		],
 		"verified": {
@@ -278,15 +239,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 971,
-			"height": 416
-		},
+		"lockup": { "width": 971, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Dolphin wake",
-				"zh": "海豚尾波"
-			},
+			"name": { "en": "Dolphin wake", "zh": "海豚尾波" },
 			"description": {
 				"en": "Three oblique wave crests and a low returning wake follow the dolphin’s curled tail.",
 				"zh": "三道斜向浪峰与低缓回流顺着海豚卷尾延伸，留下轻快的游动轨迹。"
@@ -311,30 +266,21 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥86px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 86px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
@@ -384,5 +330,19 @@
 				"height": 800
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/r2shot/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Eelgrass in the current", "zh": "潮流中的鳗草" },
+		"description": {
+			"en": "Long flat eelgrass ribbons with subtle parallel veins and a few small kelp blade tips.",
+			"zh": "长长鳗草叶带与少量海带叶尖顺着潮流弯折，给海豚留出开阔的浅海水域。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
 	}
 }

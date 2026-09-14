@@ -1,0 +1,122 @@
+{
+	"project": "giraffe",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Acacia at eye level", "zh": "枝头金合欢" },
+		"motif": "Giraffe browsing height: unmistakable delicate bipinnate acacia leaflets, one restrained curved seed pod and thin forked twigs. A high airy canopy from the upper right, with tiny leaflets visibly embossed at thumbnail size. No unrelated tropical leaves or blossoms.",
+		"description": {
+			"en": "Unmistakable delicate bipinnate acacia leaflets, one restrained curved seed pod and thin forked twigs.",
+			"zh": "纤细的金合欢复叶与弯曲豆荚落在枝头，像长颈鹿抬眼便能触及的一小片树冠。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A personal GitHub observatory for repositories, workflows, and encrypted snapshots.",
+			"zh": "个人 GitHub 观察台，集中查看仓库、工作流与加密的访问令牌快照。"
+		},
+		"purpose": {
+			"en": "Review repositories, open work, alerts, and daily changes across GitHub accounts in a personal console with on-demand data refreshes.",
+			"zh": "在个人控制台查看多个 GitHub 账号的仓库、待办、告警和每日变化，按需同步 GitHub 数据。"
+		},
+		"source": "src/data/projects/giraffe.json",
+		"inspectedRevision": "c71543478405f580e6dd36ebac18174f7ae6e474"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/giraffe-family-2026-09-07-01-02.png",
+		"sha256": "68144efac72c45b858868fe82c6321a3f23b7428581daec62372259c72d20339",
+		"rgbaSha256": "774800377f2c972039f9999a476d3a784145289317203d21b840f520def78b32",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3073843,
+		"source": "https://github.com/nocoo/giraffe/blob/c71543478405f580e6dd36ebac18174f7ae6e474/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/giraffe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "dba985c1f01d1eff465ffca8b14dc8acab7465a4b9ffa0d876fcee66a794abea"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "efbc3bf5-8968-49f2-a380-7f5f82bc5977",
+			"source": "artwork/brands/giraffe/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/giraffe/v1.0.0/source-light-request.json",
+			"response": "/textures/giraffe/v1.0.0/source-light-response.json",
+			"prompt": "/textures/giraffe/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/giraffe/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/giraffe/v1.0.0/texture-light.png",
+				"sha256": "d06a6d6a9edfa0a5ff96f287c9f863c7d2a9f85362ed9ec0cfc154b6cb20fe1d",
+				"bytes": 1778003,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1a72bbe3-d1e5-4aac-aa01-84a477cb02d0",
+			"source": "artwork/brands/giraffe/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/giraffe/v1.0.0/source-dark-request.json",
+			"response": "/textures/giraffe/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/giraffe/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/giraffe/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/giraffe/v1.0.0/texture-dark.png",
+				"sha256": "8b63bd15b19a3f574c0dc0c79070f8c77afe49185152250dc99d9e135ed3e5f3",
+				"bytes": 1526519,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.39
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.821218462560686,
+		"darkMinimum": 4.739962073287935,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:23:42.897Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -1,0 +1,122 @@
+{
+	"project": "echo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Survey linen", "zh": "测绘亚麻" },
+		"motif": "A pocket-compass mapmaker's surface: tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge. Sparse tactile cartographic marks, without a compass rose, actual map, names, numbers or arrows.",
+		"description": {
+			"en": "Tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge.",
+			"zh": "亚麻衬纸上的局部方位弧与开放定位线，回应随身罗盘，也把查找位置变成安静的阅读过程。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A small, fast IP lookup service, built with Bun and TypeScript.",
+			"zh": "用 Bun 与 TypeScript 构建的轻量 IP 查询服务。"
+		},
+		"purpose": {
+			"en": "Give network diagnostic tools IP location and network data, plus observations of DNS resolver exit addresses.",
+			"zh": "为网络诊断工具提供 IP 位置与运营商信息，并观察 DNS 解析器的出口地址。"
+		},
+		"source": "src/data/projects/echo.json",
+		"inspectedRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/echo-family-2026-09-07-01-01.png",
+		"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+		"rgbaSha256": "bebeeb294d53708267fe2816fdfccfc76fb60ce7a13151ea00c92179ff723d3d",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 5170077,
+		"source": "https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/echo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ee88d8ae0eb7c639d514a2ddc6b2b7b94f8cdc131f94062a62337aa8e588bccd"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a6dab63b-fc4b-4f4e-a762-22c831e1f18e",
+			"source": "artwork/brands/echo/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/echo/v1.0.0/source-light-request.json",
+			"response": "/textures/echo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/echo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/echo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/echo/v1.0.0/texture-light.png",
+				"sha256": "c66eed7b5fbf703cc8da85e89bc6a44e1f64b55e35d2cc68f80a189286199d9e",
+				"bytes": 2039294,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8f8fd3af-d9b5-4e02-a3aa-2a609b1e112c",
+			"source": "artwork/brands/echo/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/echo/v1.0.0/source-dark-request.json",
+			"response": "/textures/echo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/echo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/echo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/echo/v1.0.0/texture-dark.png",
+				"sha256": "68d230bb37d1ec198996686600ff47613765d5b3901fc2990a929684cc0820c6",
+				"bytes": 2053024,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.42
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.765740001967295,
+		"darkMinimum": 4.773434325416214,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:50:45.637Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

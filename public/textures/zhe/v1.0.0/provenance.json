@@ -1,0 +1,122 @@
+{
+	"project": "zhe",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "The herb border", "zh": "香草花境" },
+		"motif": "A bee-foraging herb garden: narrow rosemary needles, tiny thyme leaf pairs and one very small subdued cream thyme flower cluster. Loose branching botanical paths connect small leaf groups, not hexagons, honeycomb, honey, bees or bright flowers.",
+		"description": {
+			"en": "Narrow rosemary needles, tiny thyme leaf pairs and one very small subdued cream thyme flower cluster.",
+			"zh": "迷迭香针叶与百里香小叶沿细枝相接，极少量浅色花影为蜜蜂留下合适的采食环境。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Short links, clean URLs, and a little less friction when sharing things.",
+			"zh": "把长网址变成简洁的短链接，让分享少一点麻烦。"
+		},
+		"purpose": {
+			"en": "Keep personal links, Markdown ideas, and nested todos together, with short-link sharing and unified search.",
+			"zh": "集中整理个人链接、Markdown 想法和层级待办，通过短链接分享并统一搜索内容。"
+		},
+		"source": "src/data/projects/zhe.json",
+		"inspectedRevision": "075c875936e9a244c147ff9d58452398bb1ef3cf"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zhe.png",
+		"sha256": "a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046",
+		"rgbaSha256": "b4a1805a9e5a92f52acf313fbc856a3a57946b8ea3e62556a1dac3e46c3ccc33",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3100798,
+		"source": "https://github.com/nocoo/zhe/blob/075c875936e9a244c147ff9d58452398bb1ef3cf/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/zhe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "fad6854a35915541d29bd01d068a40ce83738d9d0ecea2a8bf14384d9048ebe1"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30759775-fe7f-4d3a-b0fb-36c8d74b2a8d",
+			"source": "artwork/brands/zhe/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/zhe/v1.0.0/source-light-request.json",
+			"response": "/textures/zhe/v1.0.0/source-light-response.json",
+			"prompt": "/textures/zhe/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/zhe/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/zhe/v1.0.0/texture-light.png",
+				"sha256": "8289e7b9cb21a6a2ae81269d01e845341a7b2721b1e171bc85b959bb28938548",
+				"bytes": 1629438,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ebb42c2a-194f-4ff3-bc79-825daa2cb43f",
+			"source": "artwork/brands/zhe/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/zhe/v1.0.0/source-dark-request.json",
+			"response": "/textures/zhe/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/zhe/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/zhe/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/zhe/v1.0.0/texture-dark.png",
+				"sha256": "47796ca0bde79dc6988978f3c6be6bb568421a35edddea3fd318e7014e4f655e",
+				"bytes": 1458581,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.32
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.987721765803369,
+		"darkMinimum": 4.717480077400823,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:51:58.844Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

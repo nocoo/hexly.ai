@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "xray",
+	"version": "1.0.0",
+	"root": "/textures/xray/v1.0.0",
+	"canonical": "https://hexly.ai/projects/xray#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/xray/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Leaves for a butterfly", "zh": "蝶停叶间" },
+		"description": {
+			"en": "Long gently serrated buddleia leaves, a small branching nettle-like host-leaf spray and a single tiny desaturated flower cluster.",
+			"zh": "醉鱼草长叶与细小寄主植物叶丛围出停驻处，只有一簇低调花影，把彩色位置留给蝴蝶原标。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/xray.png",
+		"sha256": "912d89234012d2bd1ef3623aeff8824efc274fdb77d8317200784bb1f02cd023",
+		"rgbaSha256": "6c680b22721615c4ac5a9ffdcb4265f0f2adb8b59f8d8e68fcc5c71ae2c83979",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3318716,
+		"source": "https://github.com/nocoo/xray/blob/16175dc87ef406e8cf3343ab8808b60e8f53cc8a/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/xray/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "2f62205b056b7c99e4afbf84f5fe3ee5fbedd8a70c1e4fd28f29365dac1c613e"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f093c924-0ef8-49b6-8cee-349aeef51634",
+			"source": "artwork/brands/xray/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/xray/v1.0.0/source-light-request.json",
+			"response": "/textures/xray/v1.0.0/source-light-response.json",
+			"prompt": "/textures/xray/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/xray/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/xray/v1.0.0/texture-light.png",
+				"sha256": "c5e2a8768fc4d691f4eb2144ed65d18ec399954924dbbebb8b416fc2ed1fe212",
+				"bytes": 1616805,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7ae55efd-6adf-4e8c-bb8b-098ec4adf4c0",
+			"source": "artwork/brands/xray/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/xray/v1.0.0/source-dark-request.json",
+			"response": "/textures/xray/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/xray/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/xray/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/xray/v1.0.0/texture-dark.png",
+				"sha256": "6288f4e7c5901d3af9e7be682c5605e5297e46c7b8323bc42fd162d6613f205a",
+				"bytes": 1452400,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/xray/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1616805,
+			"sha256": "c5e2a8768fc4d691f4eb2144ed65d18ec399954924dbbebb8b416fc2ed1fe212"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 188334,
+			"sha256": "b77275845508d3eb0a30bd37e065952ad95720999b1e64231e6aac77ed701ab8"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8948,
+			"sha256": "abe8d3004126eea666b001d606e0c5f894451fd9f87c63b0279371503b2870aa"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2888,
+			"sha256": "173ed5526fefe45d066b09cf40e9ed93ed5515927cdd0443bf376bd0904bad89"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "021d6dd8de6d46597acbb32525add5fe0952c5105e39497151ab02e5789a0db8"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "2f5bf8bf9627095725c417dbd1153d313ca506c880029145a6dd76838f0f58e3"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1064,
+			"sha256": "d2a6e83da1e4934be7abaaad4d5489f9cf46441955f9dbec1c20d7be8951e6ff"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1452400,
+			"sha256": "6288f4e7c5901d3af9e7be682c5605e5297e46c7b8323bc42fd162d6613f205a"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 126024,
+			"sha256": "795c121aa55d3963d759b51d3f286dcaf5ca6df034ba9e11208ea1eff92dbba0"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6758,
+			"sha256": "8dff32c2956b0f969714454668eec020a78c627c6b78270198ed75b6419a965d"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2969,
+			"sha256": "066e368ebabc7d529f30c148fe83e19224432f24b3f28ca2e61b65011959f681"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "f727efbd89d312306dddf9e102e6fcaf6be1e71f9c1532e1aeea7df74a08cfb8"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "b946180827c630258944e064b173b6e8e75a3f94760b833f0393217a18dd570b"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1064,
+			"sha256": "1581208c2582eded927d0332e65987cf9888e308e31be72bf3c6b363c70846af"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5369,
+			"sha256": "790a798733f9e9e937aca6013a824f4c7068a184ffc2af90f674f7cab21fb573"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1419,
+			"sha256": "a78b5afad50ab71b8646a4179c694869d1eaf44cb6c77b19180056dd62028ba5"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "be8edaf32ed85f6d8305a5281ac5516f87ddf3c83e28d351c738a898707cf112"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2572,
+			"sha256": "d27df21e8ccecb2a610fbef65b332bb46ed8dacc37b79bc6f96b40e4f9ad9e30"
+		},
+		{
+			"path": "/textures/xray/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3553,
+			"sha256": "f3eda7297258ac7a0cb957e3caceb4391ce73d19308750d333e19daa0429d5e1"
+		}
+	]
+}

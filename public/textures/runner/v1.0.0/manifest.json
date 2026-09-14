@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "runner",
+	"version": "1.0.0",
+	"root": "/textures/runner/v1.0.0",
+	"canonical": "https://hexly.ai/projects/runner#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/runner/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A measured minute", "zh": "一分钟的刻度" },
+		"description": {
+			"en": "Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.",
+			"zh": "绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+		"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+		"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4230760,
+		"source": "https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/runner/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d962ceb8b99acc629d0cbe640beaced233426c4bd02bc07e798946cc7b41cba6"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6fff7f33-d914-4749-b57b-d7c5749b5788",
+			"source": "artwork/brands/runner/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/runner/v1.0.0/source-light-request.json",
+			"response": "/textures/runner/v1.0.0/source-light-response.json",
+			"prompt": "/textures/runner/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/runner/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/runner/v1.0.0/texture-light.png",
+				"sha256": "20b774f9fdfcd7baafba137973a341d8c167823525bcfe5adf7fa86fdc0f55a2",
+				"bytes": 2106464,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2c124527-5fd3-43ed-b75d-d541331b21ad",
+			"source": "artwork/brands/runner/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/runner/v1.0.0/source-dark-request.json",
+			"response": "/textures/runner/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/runner/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/runner/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/runner/v1.0.0/texture-dark.png",
+				"sha256": "b94917cb2acc740bf9adf1e03d3d42bdea6b1fb2d99a4891189218875f2069ee",
+				"bytes": 1845287,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/runner/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2106464,
+			"sha256": "20b774f9fdfcd7baafba137973a341d8c167823525bcfe5adf7fa86fdc0f55a2"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 350728,
+			"sha256": "d3a6368eba9ab4cb269332ff7aba4b0631f12db6e120413b536038c32a11fd28"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5770,
+			"sha256": "56f1082481c4a94ca192bf82201fb7592ee6684f1a03541d4d79ffc2d9cd23cf"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2686,
+			"sha256": "f51852355d1ec77cefb3399be643f3afaeb8329bca08d8bba4c6b137b19f6e09"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "5947d8fde4263acd3dd85e2db5370eac56fe80226800cde2808bd8747a973b98"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "a02e21bfbfa3c25bfd56bc87c7dfc34e3acd3f51f499f30cbb0e4f8886760441"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1031,
+			"sha256": "6b87099ee87081b0c501815ceb4d9229ef41de725188f0fcdc19a4cda8c6e731"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1845287,
+			"sha256": "b94917cb2acc740bf9adf1e03d3d42bdea6b1fb2d99a4891189218875f2069ee"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 285618,
+			"sha256": "7eaa2ba4d565956386e3082bcc4e2581c83269143a0bf2ebd60f5ac5ea272946"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3486,
+			"sha256": "f06f80bfaa1352b5c17e48c3622a9d5f4c2bed3cc365b1c90b443ccf9eb0af6f"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2762,
+			"sha256": "5b1bcad7083cd3562e8c5d08a8ad7d63eeea79cc300e37cfc2c96a246e3e1153"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "4de51da9fc506c1fe806c6da1def6c64c0397bcf5295979a6370787934e8d10d"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d8e688216aaa0d0f3c7b948d3dd0393fc10dfa7cc15737723cbaa7a995676737"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1050,
+			"sha256": "8e1f47c547183151bf0b6f1b0e24fc693bb1e6da92741f232042dac7c900f01e"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5383,
+			"sha256": "ade1be12237c0f2bc4ad1aa81346d5964acee68390817d5e4c9644cf4441301e"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1373,
+			"sha256": "48362e5e98b11a0b14b2b84f62e9d0053f6b6ab65cb2773b9e3638e49d7113df"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "ddf7a775a7a71accf313d61a0a4edecbca8a0bd4876010a1750a1685ac856d14"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2566,
+			"sha256": "f4aa917d9f6469abfba6c9bcff913a5ac1b370024ae79f25b7fd2f8270e187d2"
+		},
+		{
+			"path": "/textures/runner/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3550,
+			"sha256": "ad3248f595dcdd836b094442bcca84b72e5ceeac38990ae663ff8281bc0ef7a9"
+		}
+	]
+}

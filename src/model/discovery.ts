@@ -249,6 +249,8 @@ Every catalogue, project, template and status page includes a copyable integrati
 
 Reuse the published standard outro MP4s directly across Hexly projects. They do not need to be regenerated or configured for each product. Existing Logo prompts are historical source records, not a requirement to recreate approved assets.
 
+Each project's guide also lists its current light/dark decorative surfaces and exact generation prompts. Catalogue \`brandTexture\` selects an independent texture version; \`brandKit.texture\` is the legacy fallback. Textures are Hexly campaign decoration and never replace or recolor official product identities. Reuse published assets instead of regenerating them.
+
 ## English
 
 - [hexly.ai](${siteOrigin}/): ${homeDescription}
@@ -287,6 +289,7 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Share metadata API](${siteOrigin}/api/share.json)
 - [Video manifest](${siteOrigin}/templates/manifest.json)
 - [Standard outro files and provenance](${siteOrigin}/templates/outros.json)
+- [Project texture manifest schema](${siteOrigin}/textures/schema-v1.json)
 - [Legacy file index](${siteOrigin}/templates/examples.json)
 `;
 }

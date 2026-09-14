@@ -39,7 +39,7 @@ Explore coffee through an original interactive flavor wheel, compare origins and
 
 ![Coffee source identity](https://h.no.mt/projects/coffee/identity/v1.0.0/coffee-160-f4c67ea45d55.webp)
 
-- Type: Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Peach ceramic cup, latte leaf, saucer and brass teaspoon
 - [Source](https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png): `logo.png`
 - [Preserved asset](https://h.no.mt/projects/coffee/identity/v1.0.0/coffee-family-2026-09-11-01-01-d00ad151f073.png)
@@ -64,6 +64,16 @@ Explore coffee through an original interactive flavor wheel, compare origins and
 | accent | `#ae8255` | Native coffee output SHA-256 b195d997f71efda0ce9a232b952adb767e45716bdb33d6c29fb1bb331503d8c9; opaque sRGB pixel (1120, 1430); artwork/logo-family/coffee/2026-09-11-01/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Cupping paper and glaze / 杯测纸与釉: Fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size.
+- 杯测纸纤维、细瓷釉与两道不完整的浅环痕呼应品饮过程，咖啡杯原标仍是唯一主体。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
+- [Paper PNG](https://h.no.mt/projects/coffee/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/coffee/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/coffee/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/coffee/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/coffee/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/coffee/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/coffee/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 
@@ -147,6 +157,6 @@ Small-size observation: At 128/64 px, the cup, handle, latte leaf and brass spoo
 
 ## Further refinements
 
-Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
 Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

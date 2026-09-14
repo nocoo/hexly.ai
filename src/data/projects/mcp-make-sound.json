@@ -65,5 +65,19 @@
 			}
 		]
 	},
-	"archived": true
+	"archived": true,
+	"brandTexture": {
+		"root": "/textures/mcp-make-sound/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Speaker cloth", "zh": "扬声织物" },
+		"description": {
+			"en": "Fine two-direction acoustic textile weave, one broad shallow diaphragm-like arc emerging near the lower right and a few layered fabric seams.",
+			"zh": "双向声学织物与一段宽浅振膜弧呼应系统声音，保留织物触感和开阔的静处。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	}
 }

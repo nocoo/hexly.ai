@@ -442,5 +442,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/firefly/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Bracken after dusk",
+			"zh": "暮色蕨影"
+		},
+		"description": {
+			"en": "A few broad triangular bracken fronds, low fern curls and fine damp meadow blades.",
+			"zh": "暮色林地里的三角蕨叶与低矮草丛，给萤火虫留出安静而通透的活动空间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
 	}
 }

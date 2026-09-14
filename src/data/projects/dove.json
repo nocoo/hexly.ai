@@ -119,10 +119,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "One blossom group",
-					"zh": "一个完整的花枝点缀"
-				},
+				"title": { "en": "One blossom group", "zh": "一个完整的花枝点缀" },
 				"description": {
 					"en": "Violet, blue, and mint facets remain the original bird; the existing pink blossoms form the signature accent group. All foreground pixels and detached petals are preserved.",
 					"zh": "紫、蓝和薄荷色碎片构成原来的鸟，既有粉色花枝是标志性的点缀组。所有前景像素与飘落花瓣均保留。"
@@ -144,54 +141,36 @@
 			{
 				"color": "#83759b",
 				"role": "background",
-				"label": {
-					"en": "Pressed petals",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Pressed petals", "zh": "展示底色" },
 				"source": "Selected Dove presentation, finishing 01; background.base in archived settings.json"
 			},
 			{
 				"color": "#8079a5",
-				"label": {
-					"en": "Iris violet",
-					"zh": "鸢尾紫"
-				},
+				"label": { "en": "Iris violet", "zh": "鸢尾紫" },
 				"source": "Original dove 25be5b3506f8, sampled sRGB pixel (885, 372); palette.json",
 				"role": "primary"
 			},
 			{
 				"color": "#4c5777",
-				"label": {
-					"en": "Blue feather",
-					"zh": "蓝羽"
-				},
+				"label": { "en": "Blue feather", "zh": "蓝羽" },
 				"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1237, 783); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#fbccc6",
-				"label": {
-					"en": "Petal pink",
-					"zh": "花瓣粉"
-				},
+				"label": { "en": "Petal pink", "zh": "花瓣粉" },
 				"source": "Original dove 25be5b3506f8, sampled sRGB pixel (336, 482); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#65c8b6",
-				"label": {
-					"en": "Mint feather",
-					"zh": "薄荷羽色"
-				},
+				"label": { "en": "Mint feather", "zh": "薄荷羽色" },
 				"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1101, 1055); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#d4b7a9",
-				"label": {
-					"en": "Warm beak",
-					"zh": "暖色鸟喙"
-				},
+				"label": { "en": "Warm beak", "zh": "暖色鸟喙" },
 				"source": "Original dove 25be5b3506f8, sampled sRGB pixel (1196, 474); palette.json",
 				"role": "accent"
 			}
@@ -237,31 +216,19 @@
 			},
 			{
 				"name": "React",
-				"role": {
-					"en": "Email management dashboard",
-					"zh": "邮件管理界面"
-				}
+				"role": { "en": "Email management dashboard", "zh": "邮件管理界面" }
 			},
 			{
 				"name": "Vite",
-				"role": {
-					"en": "Dashboard build",
-					"zh": "管理界面构建"
-				}
+				"role": { "en": "Dashboard build", "zh": "管理界面构建" }
 			},
 			{
 				"name": "Cloudflare Access",
-				"role": {
-					"en": "Administrator authentication",
-					"zh": "管理员身份验证"
-				}
+				"role": { "en": "Administrator authentication", "zh": "管理员身份验证" }
 			},
 			{
 				"name": "Resend",
-				"role": {
-					"en": "API email sending backend",
-					"zh": "通过 API 发送邮件"
-				}
+				"role": { "en": "API email sending backend", "zh": "通过 API 发送邮件" }
 			},
 			{
 				"name": "Cloudflare Email Routing",
@@ -309,15 +276,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 825,
-			"height": 416
-		},
+		"lockup": { "width": 825, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Pressed petals",
-				"zh": "压印花瓣"
-			},
+			"name": { "en": "Pressed petals", "zh": "压印花瓣" },
 			"description": {
 				"en": "Sparse, elongated petal outlines lean at different angles, carrying the blossom motif into the empty space.",
 				"zh": "细长花瓣以不同角度疏落排列，把鸽子身旁的花枝延伸成轻盈底纹。"
@@ -342,35 +303,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥62px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 62px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/dove/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "An orchard perch", "zh": "花枝停驻" },
+		"description": {
+			"en": "Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.",
+			"zh": "锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.34
 	}
 }

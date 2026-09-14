@@ -1,0 +1,122 @@
+{
+	"project": "rooster",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Morning-glory leaves", "zh": "晨间牵牛叶" },
+		"motif": "A farmyard garden for the rooster whose mark includes a morning glory: heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom. Leaves lead, with thin vertical grass near the lower edge. No bright flowers, poultry or sunrise emblem.",
+		"description": {
+			"en": "Heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom.",
+			"zh": "心形牵牛叶与一段松弛卷须沿庭院展开，只保留一枚安静花苞，承接公鸡的清晨气息。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A web control panel for Hermes Agent, from conversations to models and profiles.",
+			"zh": "Hermes Agent 的网页控制台，管理对话、会话、模型与配置。"
+		},
+		"purpose": {
+			"en": "Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.",
+			"zh": "通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。"
+		},
+		"source": "src/data/projects/rooster.json",
+		"inspectedRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2780156,
+		"source": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/rooster/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fe4bacb7-0fad-4707-b444-5dbf314d3e25",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/rooster/v1.0.0/source-light-request.json",
+			"response": "/textures/rooster/v1.0.0/source-light-response.json",
+			"prompt": "/textures/rooster/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/rooster/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.0/texture-light.png",
+				"sha256": "2a714f8c0dddfe6d5c8d2635921519cc4d41e40b4f23c9865e57ccb6900f3cd7",
+				"bytes": 1623121,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "dd9d1c71-6772-4366-8c2a-6f725871d194",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/rooster/v1.0.0/source-dark-request.json",
+			"response": "/textures/rooster/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/rooster/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/rooster/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.0/texture-dark.png",
+				"sha256": "075e27a7ba8ed9d12f7f2535c5a2e641836c52336892b35c88bb513f642da3ac",
+				"bytes": 1382208,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.33
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.167056614849072,
+		"darkMinimum": 4.7530971216835525,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:28:45.741Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

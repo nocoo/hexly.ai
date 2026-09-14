@@ -1,0 +1,71 @@
+{
+	"recordedAt": "2026-09-14T05:33:28.499667+00:00",
+	"scope": "63 selected independent texture packs; immutable identity and historical-URL regressions across the existing catalogue",
+	"typecheck": "passed",
+	"lint": "passed",
+	"unit": {
+		"passed": 425,
+		"files": 27,
+		"statements": 99.5,
+		"branches": 98.75,
+		"functions": 100,
+		"lines": 99.81
+	},
+	"browser": {
+		"passed": 144,
+		"files": [
+			"tests/browser/project-textures.spec.ts",
+			"tests/browser/brand-collection.spec.ts"
+		],
+		"desktop": true,
+		"mobile": true,
+		"bothThemes": true,
+		"axeChecksPassed": true,
+		"localMaterialFixtures": true
+	},
+	"assets": "Original file/RGBA hashes, selected raw PNG/derivative/manifest hashes, historical packages and shared Video Kit checks passed. Source PNGs remain unchanged.",
+	"build": {
+		"result": "passed",
+		"workerAssetBytes": 4377015,
+		"noMaterialBinariesInDeployment": true
+	},
+	"rawAcceptance": "126 exact canvases accepted by delegated agent review; no claim of personal owner inspection. Refer to each immutable raw-review.json and its whole-canvas contact-sheet hash.",
+	"manualVisualEvidence": {
+		"directory": "artwork/brand-textures/2026-09-14/inspection",
+		"additionalLocalResults": [
+			".video-work/texture-rollout-20260914/local-batch/results-clip-dreamro.json"
+		],
+		"inspectedLatestLocalSnapshots": [
+			"clip-320-light.png",
+			"dreamro-1440-dark.png"
+		],
+		"note": "Representative raw native frames and actual local desktop/mobile texture sections inspected; source contact sheets contain full canvases without production cropping."
+	},
+	"logs": [
+		{
+			"localPath": ".video-work/texture-rollout-20260914/typecheck-final.log",
+			"sha256": "54d5b6bcb573b7a7a4ff992b6c638a0aea1acc474c2b74028bc6cb6a994b7ad0"
+		},
+		{
+			"localPath": ".video-work/texture-rollout-20260914/lint-final.log",
+			"sha256": "f05c7569b3c6395cede00331d69b5a1951fc52757ebab76ebd8f7e3477228a2a"
+		},
+		{
+			"localPath": ".video-work/texture-rollout-20260914/coverage-final.log",
+			"sha256": "492718fe4aeecfc0468498179dd115b37c4b4c49a9dfbc40f085d2298f858942"
+		},
+		{
+			"localPath": ".video-work/texture-rollout-20260914/browser-final.log",
+			"sha256": "1cdceb7f76104613c53657e26313a2ac6a06d010507a2abe5cc11f9aad09349e"
+		},
+		{
+			"localPath": ".video-work/texture-rollout-20260914/build-final.log",
+			"sha256": "f8532c0d3fb831f9a4fb591baf5711a1ca9859dc10611ea968e55647fa35ed12"
+		},
+		{
+			"localPath": ".video-work/texture-rollout-20260914/assets-final.log",
+			"sha256": "753c4a1efe3215ea660cf1dea18b23e0f8d8315f16680b6a8e6c991f79bb4823"
+		}
+	],
+	"publication": "R2 upload/byte+MIME verification is separate and still in progress at this record. CI, deployment and production smoke remain required before the v0.14.0 tag."
+}

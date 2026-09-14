@@ -27,10 +27,7 @@
 		"display": "/logos/display/gaga-1024.webp"
 	},
 	"theme": {
-		"primary": {
-			"value": "#4c5342",
-			"source": "src/style.css :root color"
-		},
+		"primary": { "value": "#4c5342", "source": "src/style.css :root color" },
 		"background": {
 			"value": "#f3f0e8",
 			"source": "src/style.css :root background"
@@ -103,10 +100,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A small discovery",
-					"zh": "一个小发现"
-				},
+				"title": { "en": "A small discovery", "zh": "一个小发现" },
 				"description": {
 					"en": "A rabbit pauses in a natural crouch beside a carrot. The whole animal includes its ears, haunches, short forepaws and small tail; the face carries the moment.",
 					"zh": "小兔在胡萝卜旁自然蹲伏，完整呈现耳朵、后腿轮廓、短前爪和小尾巴，用脸部表情捕捉这一刻。"
@@ -114,10 +108,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Biscuit and cream",
-					"zh": "饼干色与奶油色"
-				},
+				"title": { "en": "Biscuit and cream", "zh": "饼干色与奶油色" },
 				"description": {
 					"en": "Large warm tan and cream facets keep the body soft and readable. One carrot and its colorful leaves form a single accent group beside the muzzle.",
 					"zh": "大块暖褐与奶油色切面让身体柔和易读，一根胡萝卜及其彩色叶片在嘴边构成单一兴趣点。"
@@ -125,10 +116,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Playroom folds",
-					"zh": "游戏室折面"
-				},
+				"title": { "en": "Playroom folds", "zh": "游戏室折面" },
 				"description": {
 					"en": "Offset rounded paper folds sit on a warm clay field. Their gentle corners and broad openings give the rabbit a tactile, quiet setting.",
 					"zh": "错位的圆角纸面铺在暖陶土色底色上，柔和转角和宽阔开口营造安静的触感背景。"
@@ -139,55 +127,37 @@
 			{
 				"color": "#b38c77",
 				"role": "background",
-				"label": {
-					"en": "Playroom folds",
-					"zh": "游戏室折面"
-				},
+				"label": { "en": "Playroom folds", "zh": "游戏室折面" },
 				"source": "Selected Gaga presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#c39c65",
 				"role": "primary",
-				"label": {
-					"en": "Biscuit",
-					"zh": "饼干色"
-				},
+				"label": { "en": "Biscuit", "zh": "饼干色" },
 				"source": "Native gaga cfe8aeeef77b, sampled sRGB pixel (1306, 1590); artwork/logo-family/gaga/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#ecd3a5",
 				"role": "accent",
-				"label": {
-					"en": "Cream",
-					"zh": "奶油色"
-				},
+				"label": { "en": "Cream", "zh": "奶油色" },
 				"source": "Native gaga cfe8aeeef77b, sampled sRGB pixel (244, 1120); artwork/logo-family/gaga/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#997040",
 				"role": "accent",
-				"label": {
-					"en": "Warm brown",
-					"zh": "暖棕色"
-				},
+				"label": { "en": "Warm brown", "zh": "暖棕色" },
 				"source": "Native gaga cfe8aeeef77b, sampled sRGB pixel (582, 1759); artwork/logo-family/gaga/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#ed7520",
 				"role": "accent",
-				"label": {
-					"en": "Carrot orange",
-					"zh": "胡萝卜橙"
-				},
+				"label": { "en": "Carrot orange", "zh": "胡萝卜橙" },
 				"source": "Native gaga cfe8aeeef77b, sampled sRGB pixel (1867, 1632); artwork/logo-family/gaga/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#418e8c",
 				"role": "accent",
-				"label": {
-					"en": "Leaf teal",
-					"zh": "叶片青色"
-				},
+				"label": { "en": "Leaf teal", "zh": "叶片青色" },
 				"source": "Native gaga cfe8aeeef77b, sampled sRGB pixel (1727, 1215); artwork/logo-family/gaga/2026-09-07-01/palette.json"
 			}
 		],
@@ -219,10 +189,7 @@
 			},
 			{
 				"name": "WebGL",
-				"role": {
-					"en": "Browser 3D rendering",
-					"zh": "浏览器三维渲染"
-				}
+				"role": { "en": "Browser 3D rendering", "zh": "浏览器三维渲染" }
 			},
 			{
 				"name": "Web Audio",
@@ -233,10 +200,7 @@
 			},
 			{
 				"name": "localStorage",
-				"role": {
-					"en": "Daily discovery journal",
-					"zh": "当天探索足迹"
-				}
+				"role": { "en": "Daily discovery journal", "zh": "当天探索足迹" }
 			},
 			{
 				"name": "Vite",
@@ -247,10 +211,7 @@
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "Static application hosting",
-					"zh": "应用静态托管"
-				}
+				"role": { "en": "Static application hosting", "zh": "应用静态托管" }
 			}
 		],
 		"verified": {
@@ -280,15 +241,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 768,
-			"height": 416
-		},
+		"lockup": { "width": 768, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Playroom folds",
-				"zh": "玩具房折纸"
-			},
+			"name": { "en": "Playroom folds", "zh": "玩具房折纸" },
 			"description": {
 				"en": "Rounded paper-block outlines and one open fold leave the loose, playful arrangement of a small playroom.",
 				"zh": "圆润纸块与一道开放折线松散排列，像小小玩具房里随手摆开的积木。"
@@ -313,35 +268,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥53px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 53px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/gaga/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A small garden to explore", "zh": "小兔菜圃" },
+		"description": {
+			"en": "Feathery carrot fronds, soft clover leaves and a few broad dandelion leaves.",
+			"zh": "轻盈胡萝卜缨、三叶草与蒲公英叶散落成小小菜圃，用柔软的间距承接兔子的探索欲。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
 	}
 }

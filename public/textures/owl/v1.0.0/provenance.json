@@ -1,0 +1,122 @@
+{
+	"project": "owl",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Beneath the beech", "zh": "山毛榉叶下" },
+		"motif": "A broad temperate owl woodland: oval beech leaves with clear secondary veins, a few lobed oak leaves and one small twig with a closed seed husk. Place leaves as sparse pressed litter, not a dense canopy, feathers, eyes or a night-sky illustration.",
+		"description": {
+			"en": "Oval beech leaves with clear secondary veins, a few lobed oak leaves and one small twig with a closed seed husk.",
+			"zh": "椭圆山毛榉叶与少量橡叶疏散地落在林下，清楚的支脉回应猫头鹰敏锐而安静的观察。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "A macOS menu bar lookout that spots unusual patterns in your system logs.",
+			"zh": "守在 macOS 菜单栏里的观察员，从系统日志中发现异常信号。"
+		},
+		"purpose": {
+			"en": "Inspect Mac system metrics and processes from the menu bar, and detect recurring crashes, resource pressure, sleep problems, and device anomalies locally.",
+			"zh": "在菜单栏查看 Mac 系统指标与进程，在本机发现反复崩溃、资源压力、睡眠和设备异常。"
+		},
+		"source": "src/data/projects/owl.json",
+		"inspectedRevision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/owl-family-2026-09-07-01-01.png",
+		"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+		"rgbaSha256": "366bd57afd5aad1c4bad7d31e35c22e071cf19d926d374b2212b9543aef3de64",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2973160,
+		"source": "https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/owl/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "918dcfef439476111243b62825016d58aebfc81bb98aa3f2a249303db1364a8d"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7010e1dc-8941-495a-8704-f0d837b36188",
+			"source": "artwork/brands/owl/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/owl/v1.0.0/source-light-request.json",
+			"response": "/textures/owl/v1.0.0/source-light-response.json",
+			"prompt": "/textures/owl/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/owl/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/owl/v1.0.0/texture-light.png",
+				"sha256": "48322080e3d0de1f6f6951cfc3ac0e4ed1a7efc61f1f0c815bb524f381845158",
+				"bytes": 1565287,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9edb3228-471f-4684-a7e9-c76bd7d9664c",
+			"source": "artwork/brands/owl/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/owl/v1.0.0/source-dark-request.json",
+			"response": "/textures/owl/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/owl/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/owl/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/owl/v1.0.0/texture-dark.png",
+				"sha256": "099d7d84c50befaa9a35f0931f8e93e2defa63569824e21f4058ccf23e94ba6e",
+				"bytes": 1530184,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.3
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.776272090252598,
+		"darkMinimum": 5.521898710588462,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:37:30.364Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

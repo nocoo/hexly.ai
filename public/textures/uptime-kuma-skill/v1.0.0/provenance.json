@@ -1,0 +1,118 @@
+{
+	"project": "uptime-kuma-skill",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "legacy-material",
+		"language": "product-material",
+		"name": { "en": "Clinical paper", "zh": "听诊纸面" },
+		"motif": "A clean diagnostic work surface for the existing stethoscope emoji: pressed cellulose examination-paper fibers, two incomplete soft diaphragm-like rings and a short sparse baseline indentation. Clinical calm without heartbeat readings, medical claims, tools, labels or bright hospital colors.",
+		"description": {
+			"en": "Pressed cellulose examination-paper fibers, two incomplete soft diaphragm-like rings and a short sparse baseline indentation.",
+			"zh": "压实纤维纸与两道不完整听诊弧呼应监控诊断，以安静材质表达观察，不伪造健康读数。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Give your agent the ability to manage monitors, uptime, and SSL certificates.",
+			"zh": "让智能体检查和管理监控项、可用性与 SSL 证书。"
+		},
+		"purpose": {
+			"en": "Give your agent the ability to manage monitors, uptime, and SSL certificates.",
+			"zh": "让智能体检查和管理监控项、可用性与 SSL 证书。"
+		},
+		"source": "src/data/projects/uptime-kuma-skill.json",
+		"inspectedRevision": "f7b8da6b479ed2b32dcd0da7388538e6ec48cf74"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/emoji/uptime-kuma-skill.png",
+		"sha256": "c75d48ae2f8436464c2723a87ad0d74302df20d58c99d2c0199613fb89f63de5",
+		"rgbaSha256": "72f0aead1904780212ccd7e1cc3959a02be8d84058d9c10e33cb2d65e5306b65",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 271935,
+		"source": "https://github.com/nocoo/nocoo/blob/9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6/README.md",
+		"kind": "emoji"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "833f2ed1-2eed-4f40-ad4d-852f4558bb2f",
+			"source": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/uptime-kuma-skill/v1.0.0/source-light-request.json",
+			"response": "/textures/uptime-kuma-skill/v1.0.0/source-light-response.json",
+			"prompt": "/textures/uptime-kuma-skill/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/uptime-kuma-skill/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/uptime-kuma-skill/v1.0.0/texture-light.png",
+				"sha256": "2e9f549272eeccbd2d33c6d967133a87a8e43bbf891c15c3113f598b868cc93c",
+				"bytes": 1812281,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1231a963-4d88-4ad4-9bc7-3864f54e10e7",
+			"source": "artwork/brands/uptime-kuma-skill/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/uptime-kuma-skill/v1.0.0/source-dark-request.json",
+			"response": "/textures/uptime-kuma-skill/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/uptime-kuma-skill/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/uptime-kuma-skill/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/uptime-kuma-skill/v1.0.0/texture-dark.png",
+				"sha256": "912533f8d82c19cf0dfea8bc1e1e530a1fbc9fd9235884f4586faeb90a053909",
+				"bytes": 1829853,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.762506640699248,
+		"darkMinimum": 4.772746629379381,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:58:39.846Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

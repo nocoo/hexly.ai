@@ -31,10 +31,7 @@
 			"value": "220 14% 94%",
 			"source": "app/globals.css --background"
 		},
-		"ink": {
-			"value": "0 0% 12%",
-			"source": "app/globals.css --foreground"
-		},
+		"ink": { "value": "0 0% 12%", "source": "app/globals.css --foreground" },
 		"primary": {
 			"value": "217 91% 60%",
 			"source": "app/globals.css imports @nocoo/basalt/styles"
@@ -108,10 +105,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "Keep the relaxed smile",
-					"zh": "保留放松的笑容"
-				},
+				"title": { "en": "Keep the relaxed smile", "zh": "保留放松的笑容" },
 				"description": {
 					"en": "The original face, ears, smile, tongue, and lower-frame entry stay unchanged. No elongated-neck candidate or new paw is substituted for the owner-retained portrait.",
 					"zh": "原来的脸、耳朵、笑容、舌头与下方入框关系全部保留，不以延长颈部的候选或新增爪子替换用户选定的头像。"
@@ -144,54 +138,36 @@
 			{
 				"color": "#5c7eaa",
 				"role": "background",
-				"label": {
-					"en": "Folded sunlight",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Folded sunlight", "zh": "展示底色" },
 				"source": "Selected Neo presentation, finishing 01; background.base in archived settings.json"
 			},
 			{
 				"color": "#f4be7e",
-				"label": {
-					"en": "Golden coat",
-					"zh": "金色毛发"
-				},
+				"label": { "en": "Golden coat", "zh": "金色毛发" },
 				"source": "Original neo 2939c3edb084, sampled sRGB pixel (1447, 448); palette.json",
 				"role": "primary"
 			},
 			{
 				"color": "#ffdebb",
-				"label": {
-					"en": "Cream light",
-					"zh": "奶油高光"
-				},
+				"label": { "en": "Cream light", "zh": "奶油高光" },
 				"source": "Original neo 2939c3edb084, sampled sRGB pixel (1040, 504); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#b17158",
-				"label": {
-					"en": "Warm shadow",
-					"zh": "暖色阴影"
-				},
+				"label": { "en": "Warm shadow", "zh": "暖色阴影" },
 				"source": "Original neo 2939c3edb084, sampled sRGB pixel (345, 729); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#e88089",
-				"label": {
-					"en": "Tongue rose",
-					"zh": "舌头玫瑰"
-				},
+				"label": { "en": "Tongue rose", "zh": "舌头玫瑰" },
 				"source": "Original neo 2939c3edb084, sampled sRGB pixel (919, 1539); palette.json",
 				"role": "accent"
 			},
 			{
 				"color": "#322a37",
-				"label": {
-					"en": "Nose charcoal",
-					"zh": "鼻尖炭黑"
-				},
+				"label": { "en": "Nose charcoal", "zh": "鼻尖炭黑" },
 				"source": "Original neo 2939c3edb084, sampled sRGB pixel (855, 1120); palette.json",
 				"role": "accent"
 			}
@@ -209,10 +185,7 @@
 		"techStack": [
 			{
 				"name": "TypeScript",
-				"role": {
-					"en": "Application and OTP logic",
-					"zh": "应用与 OTP 逻辑"
-				}
+				"role": { "en": "Application and OTP logic", "zh": "应用与 OTP 逻辑" }
 			},
 			{
 				"name": "Next.js",
@@ -223,17 +196,11 @@
 			},
 			{
 				"name": "React",
-				"role": {
-					"en": "Secret management interface",
-					"zh": "密钥管理界面"
-				}
+				"role": { "en": "Secret management interface", "zh": "密钥管理界面" }
 			},
 			{
 				"name": "Tailwind CSS",
-				"role": {
-					"en": "Interface styles",
-					"zh": "界面样式"
-				}
+				"role": { "en": "Interface styles", "zh": "界面样式" }
 			},
 			{
 				"name": "Cloudflare D1",
@@ -286,15 +253,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 744,
-			"height": 416
-		},
+		"lockup": { "width": 744, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Folded sunlight",
-				"zh": "折叠日光"
-			},
+			"name": { "en": "Folded sunlight", "zh": "折叠日光" },
 			"description": {
 				"en": "Wide, asymmetric rays enter from opposite corners, like sunlight folded across a sheet of paper.",
 				"zh": "宽窄不同的光线从对角进入，像日光在纸上折出几道安静的痕迹。"
@@ -319,35 +280,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Keep the existing portrait's natural frame entry. The full square is placed against the baseline; no anatomy is extended, trimmed or masked. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留原头像自然入框的边界，将完整方形画布贴齐基线；不补画、不截取解剖结构。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥48px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 48px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/neo/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A familiar garden", "zh": "熟悉的庭院" },
+		"description": {
+			"en": "Soft apple-tree leaves, a few clover leaflets and two rounded fallen leaves.",
+			"zh": "苹果树叶与少量三叶草构成熟悉的庭院，承接金毛犬温和的性格，也给私人资料留出安稳的空间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
 	}
 }

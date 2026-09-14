@@ -25,6 +25,7 @@ describe("the static asset gateway", () => {
 			for (const path of [
 				"/logos/originals/pew.png",
 				"/brands/snail/v2.0.0/manifest.json",
+				"/textures/frogie/v1.0.0/texture-light.webp",
 				"/video-kit/1.0.0/hexly/space-grotesk.woff2",
 			]) {
 				for (const method of ["GET", "HEAD"]) {
@@ -54,6 +55,7 @@ describe("the static asset gateway", () => {
 			"/brands/snail/v2.0.0/review",
 			"/brands/snail/v2.0.0/",
 			"/brands/snail/v2.0.0/review.html",
+			"/textures/frogie/v1.0.0/review.html",
 			"/logos/family/frogie/batch/review",
 			"/brands/snail/v2.0.0/review.js",
 			"/brands/snail/v2.0.0/review.css",

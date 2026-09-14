@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "fundly",
+	"version": "1.0.0",
+	"root": "/textures/fundly/v1.0.0",
+	"canonical": "https://hexly.ai/projects/fundly#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/fundly/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A coastal lookout", "zh": "海岸瞭望处" },
+		"description": {
+			"en": "Coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head.",
+			"zh": "粗壮丛生草与少量海岸草本小叶构成瞭望处。采用合理的亚南极植被联想，不断言企鹅的具体物种。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.32
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/fundly.svg",
+		"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+		"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+		"width": 32,
+		"height": 32,
+		"bytes": 456,
+		"source": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/fundly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "b079c51c6034b6bd8ca9df868a2c03b5681984426b54c4c88e89a763109600af"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ad8631e8-e6e0-4fc3-a4b1-91f8dd316999",
+			"source": "artwork/brands/fundly/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/fundly/v1.0.0/source-light-request.json",
+			"response": "/textures/fundly/v1.0.0/source-light-response.json",
+			"prompt": "/textures/fundly/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/fundly/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/fundly/v1.0.0/texture-light.png",
+				"sha256": "daf4b50a587e1078791b5e0d254d0500664f4aadda411978fb1d5281025c3af4",
+				"bytes": 1701067,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7f799215-b700-4a52-bbf9-660c93660793",
+			"source": "artwork/brands/fundly/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/fundly/v1.0.0/source-dark-request.json",
+			"response": "/textures/fundly/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/fundly/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/fundly/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/fundly/v1.0.0/texture-dark.png",
+				"sha256": "7680cde8b6f6d60839fc84e9ee41bacaf304dfc24b2433daeec2ac71950be087",
+				"bytes": 1458665,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/fundly/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1701067,
+			"sha256": "daf4b50a587e1078791b5e0d254d0500664f4aadda411978fb1d5281025c3af4"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 192948,
+			"sha256": "7d5ad8269004294829a41ee553a01b0a6b89b3227cff63e94837f43596c86171"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12098,
+			"sha256": "a5b1c88fb8dca64b47ddcc804832628c6497bc5b62eb2efa2a29278c71daac1d"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2906,
+			"sha256": "2c35ade8049816b2d9d47abc063df8d425a734f745c60682bbcccff95c5d75f0"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "21966fd5e7b7acb2d576e2e3dc73dc13cc2945b79c4e0d799d3e20ccabb150a0"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "96475317dc6f26aed00d5cdd3b0565a09e10c85123174955c193b182e8c42399"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1173,
+			"sha256": "d21be0e459bfabd940397fac6d89293eb94fec28f6b8068258ca8fc9669492fc"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1458665,
+			"sha256": "7680cde8b6f6d60839fc84e9ee41bacaf304dfc24b2433daeec2ac71950be087"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 121574,
+			"sha256": "27d451643eb9d3a857f58eb4c41f89a41148d4d014d9a17566b4d4c0e1936885"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8444,
+			"sha256": "1ed57a64716b1f21fc009759b1542519f0406159a2c30a5a0de18871f25be924"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2987,
+			"sha256": "bfc8cf378cd92ca8e906601f9878ccb34e2885371ff3a8a9dc2d317f4685a7b6"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "49aaa880558144933ef734b9e7de336acd803580aa29ff07c43c635152765539"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "cae186f5113e52f787692b3a49bc95f8772fe6c7e0777d3a5b11e15b4cb581f8"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1182,
+			"sha256": "9cbb718bd4a676c632b4832ee1f09bb082139b879c0cb83a6b5b43c931651700"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5360,
+			"sha256": "27e4dc75d1a899877d2f417b37ef5a1342ae918b9bbee28b6f9413f9d334b2b7"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1426,
+			"sha256": "6e5a603629e28e5ec56b60658a321de075c3e08fe9028595caf9c4d96f203263"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "f7c9c06cc2fc11f86299be070dd8047ea5c478c6e4222858b6c46d90548f5fae"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2554,
+			"sha256": "bef3560aa65892936997b31158c9238599c48de8ff6e9e3c9ff836dcccfd2f3e"
+		},
+		{
+			"path": "/textures/fundly/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3545,
+			"sha256": "2e94b4b8bcbd7e15c2373397e4427574217018c505413a9490fc3f4db622c4da"
+		}
+	]
+}

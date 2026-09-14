@@ -130,10 +130,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Quiet terraces",
-					"zh": "安静的梯田"
-				},
+				"title": { "en": "Quiet terraces", "zh": "安静的梯田" },
 				"description": {
 					"en": "The retained muted green field uses unequal stepped contours and softly lit edges. Its cool color contrasts the warm animal while the finance app theme remains separate.",
 					"zh": "沿用柔和绿色底面、高低不一的阶梯轮廓与细亮边，以冷暖对比衬托奶牛；财务应用主题色单独保留。"
@@ -144,55 +141,37 @@
 			{
 				"color": "#638783",
 				"role": "background",
-				"label": {
-					"en": "Quiet terraces",
-					"zh": "展示底色"
-				},
+				"label": { "en": "Quiet terraces", "zh": "展示底色" },
 				"source": "Selected Noheir presentation, 2026-09-07-02/02; background.base in archived settings.json"
 			},
 			{
 				"color": "#b4642e",
 				"role": "primary",
-				"label": {
-					"en": "Copper brown",
-					"zh": "铜棕"
-				},
+				"label": { "en": "Copper brown", "zh": "铜棕" },
 				"source": "Native noheir 61f13d785b85, sampled sRGB pixel (1032, 870); artwork/logo-family/noheir/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#f1ddc3",
 				"role": "accent",
-				"label": {
-					"en": "Cream blaze",
-					"zh": "奶油额纹"
-				},
+				"label": { "en": "Cream blaze", "zh": "奶油额纹" },
 				"source": "Native noheir 61f13d785b85, sampled sRGB pixel (683, 558); artwork/logo-family/noheir/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#f29b8a",
 				"role": "accent",
-				"label": {
-					"en": "Coral muzzle",
-					"zh": "珊瑚鼻尖"
-				},
+				"label": { "en": "Coral muzzle", "zh": "珊瑚鼻尖" },
 				"source": "Native noheir 61f13d785b85, sampled sRGB pixel (631, 1385); artwork/logo-family/noheir/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#586b7b",
 				"role": "accent",
-				"label": {
-					"en": "Eye blue",
-					"zh": "眼睛蓝"
-				},
+				"label": { "en": "Eye blue", "zh": "眼睛蓝" },
 				"source": "Native noheir 61f13d785b85, sampled sRGB pixel (1128, 869); artwork/logo-family/noheir/2026-09-07-02/palette.json"
 			},
 			{
 				"color": "#713b28",
 				"role": "accent",
-				"label": {
-					"en": "Chestnut",
-					"zh": "栗棕"
-				},
+				"label": { "en": "Chestnut", "zh": "栗棕" },
 				"source": "Native noheir 61f13d785b85, sampled sRGB pixel (1616, 1501); artwork/logo-family/noheir/2026-09-07-02/palette.json"
 			}
 		],
@@ -223,10 +202,7 @@
 			},
 			{
 				"name": "React",
-				"role": {
-					"en": "Interactive finance views",
-					"zh": "财务交互界面"
-				}
+				"role": { "en": "Interactive finance views", "zh": "财务交互界面" }
 			},
 			{
 				"name": "Cloudflare Workers",
@@ -300,15 +276,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 917,
-			"height": 416
-		},
+		"lockup": { "width": 917, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Quiet terraces",
-				"zh": "安静梯田"
-			},
+			"name": { "en": "Quiet terraces", "zh": "安静梯田" },
 			"description": {
 				"en": "Broad terraced contours turn through unequal levels, echoing the calm breadth of the cow’s silhouette.",
 				"zh": "宽阔等高线沿不同层级缓缓转弯，呼应奶牛轮廓的稳重与从容。"
@@ -322,10 +292,7 @@
 				"en": "Copper and cream cow with complete horns, blue eyes, and a coral muzzle on a Hexly campaign canvas",
 				"zh": "铜棕与奶油色奶牛，完整保留牛角、蓝眼睛和珊瑚鼻尖，置于 Hexly 宣发画布"
 			},
-			"caption": {
-				"en": "See the whole picture.",
-				"zh": "看清家里的每一笔。"
-			}
+			"caption": { "en": "See the whole picture.", "zh": "看清家里的每一笔。" }
 		},
 		"description": {
 			"en": "Copper and cream cow with complete horns, blue eyes, and a coral muzzle.",
@@ -333,35 +300,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Keep the existing portrait's natural frame entry. The full square is placed against the baseline; no anatomy is extended, trimmed or masked. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留原头像自然入框的边界，将完整方形画布贴齐基线；不补画、不截取解剖结构。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥77px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 77px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/noheir/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Pasture rows", "zh": "牧草成行" },
+		"description": {
+			"en": "Broad alfalfa leaf triplets, meadow-grass blades and loose oat seed panicles.",
+			"zh": "苜蓿三出叶、牧草与松散燕麦穗自然成行，把奶牛身边有照料的草地延伸成安稳的背景。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

@@ -107,10 +107,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A small river treasure",
-					"zh": "河边的小宝物"
-				},
+				"title": { "en": "A small river treasure", "zh": "河边的小宝物" },
 				"description": {
 					"en": "The otter pauses in a relaxed curl and holds a shell beside its muzzle. Small ears, cream whisker pads, natural paws and a tapering tail make the species clear.",
 					"zh": "水獭放松地蜷起身体，将贝壳捧在嘴边。小耳朵、奶油色须垫、自然爪子与渐细长尾让物种特征更加清晰。"
@@ -129,10 +126,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Riverbank sweeps",
-					"zh": "河岸回旋"
-				},
+				"title": { "en": "Riverbank sweeps", "zh": "河岸回旋" },
 				"description": {
 					"en": "Two broad offset eddies and a low bank sweep cross a blue-gray field. Open curves and fine grain give the warm animal a cooler, quiet setting.",
 					"zh": "两道宽阔错位的回旋和一条低岸曲线穿过蓝灰底色，开放曲线与细颗粒为暖色主体提供安静的冷色背景。"
@@ -143,55 +137,37 @@
 			{
 				"color": "#648691",
 				"role": "background",
-				"label": {
-					"en": "Riverbank sweeps",
-					"zh": "河岸回旋"
-				},
+				"label": { "en": "Riverbank sweeps", "zh": "河岸回旋" },
 				"source": "Selected Otter presentation, 2026-09-07-01/02; background.base in archived settings.json"
 			},
 			{
 				"color": "#a97542",
 				"role": "primary",
-				"label": {
-					"en": "Chestnut",
-					"zh": "栗棕色"
-				},
+				"label": { "en": "Chestnut", "zh": "栗棕色" },
 				"source": "Native otter eeca4aa68c5f, sampled sRGB pixel (847, 273); artwork/logo-family/otter/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#61462f",
 				"role": "accent",
-				"label": {
-					"en": "Umber",
-					"zh": "深棕色"
-				},
+				"label": { "en": "Umber", "zh": "深棕色" },
 				"source": "Native otter eeca4aa68c5f, sampled sRGB pixel (850, 1091); artwork/logo-family/otter/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#ead0a5",
 				"role": "accent",
-				"label": {
-					"en": "Cream",
-					"zh": "奶油色"
-				},
+				"label": { "en": "Cream", "zh": "奶油色" },
 				"source": "Native otter eeca4aa68c5f, sampled sRGB pixel (863, 544); artwork/logo-family/otter/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#409999",
 				"role": "accent",
-				"label": {
-					"en": "Shell teal",
-					"zh": "贝壳青色"
-				},
+				"label": { "en": "Shell teal", "zh": "贝壳青色" },
 				"source": "Native otter eeca4aa68c5f, sampled sRGB pixel (1128, 424); artwork/logo-family/otter/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#e99178",
 				"role": "accent",
-				"label": {
-					"en": "Shell coral",
-					"zh": "贝壳珊瑚色"
-				},
+				"label": { "en": "Shell coral", "zh": "贝壳珊瑚色" },
 				"source": "Native otter eeca4aa68c5f, sampled sRGB pixel (1227, 348); artwork/logo-family/otter/2026-09-07-01/palette.json"
 			}
 		],
@@ -318,15 +294,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 837,
-			"height": 416
-		},
+		"lockup": { "width": 837, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Riverbank sweeps",
-				"zh": "河岸回流"
-			},
+			"name": { "en": "Riverbank sweeps", "zh": "河岸回流" },
 			"description": {
 				"en": "Two offset eddies meet a low riverbank contour, following the otter’s relaxed curl.",
 				"zh": "两道错开的回流与低缓河岸相接，顺着水獭蜷起的身体轻轻转弯。"
@@ -351,35 +321,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥64px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 64px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/otter/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Willow beside the river", "zh": "河畔柳叶" },
+		"description": {
+			"en": "Long willow leaves on bowed supple stems, ribbon-like reeds and a little low sedge.",
+			"zh": "细长柳叶沿柔软枝条弯折，芦苇与莎草贴着河岸，把水獭松弛的姿态延伸进留白。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

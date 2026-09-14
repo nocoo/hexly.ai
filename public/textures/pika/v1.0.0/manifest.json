@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "pika",
+	"version": "1.0.0",
+	"root": "/textures/pika/v1.0.0",
+	"canonical": "https://hexly.ai/projects/pika#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/pika/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "A woodland pause", "zh": "林间片刻" },
+		"description": {
+			"en": "Soft fern tips, hazel leaves and a few moss-like low leaf sprays.",
+			"zh": "榛树叶、蕨尖与低矮苔叶围出林间空地，呼应现有虚构角色的活力，不把它误认成真实鼠兔。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pika.png",
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"rgbaSha256": "eb0b6d340814453446719fdb25a356e8409980a029ab89d445b50a866d10bca3",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2575312,
+		"source": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pika/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ef1aad7bbb61a5f7e2230a46fc4f53ef6989f72b98f5a84a6bb50277adea6dcd"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4ddbc573-3f3e-4b07-8dbc-6943e62c7323",
+			"source": "artwork/brands/pika/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/pika/v1.0.0/source-light-request.json",
+			"response": "/textures/pika/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pika/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pika/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pika/v1.0.0/texture-light.png",
+				"sha256": "e5234b545902ab6919ff1b7023ce750fbb3eeb593fbdf6a443a47d2fc375c1e4",
+				"bytes": 1706873,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2816d024-d608-4a49-99c9-26d6cdc6cca8",
+			"source": "artwork/brands/pika/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/pika/v1.0.0/source-dark-request.json",
+			"response": "/textures/pika/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pika/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pika/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pika/v1.0.0/texture-dark.png",
+				"sha256": "1f43cd3647c8c7db245a9f94e17dd2a69cea8d2d1da1e32bf3cd8f127f19c4de",
+				"bytes": 1498107,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/pika/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1706873,
+			"sha256": "e5234b545902ab6919ff1b7023ce750fbb3eeb593fbdf6a443a47d2fc375c1e4"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 207356,
+			"sha256": "099186e90a70bcb3f7576136d81706841452f6abd401ce5aebd62d0e0b90b890"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12210,
+			"sha256": "73cb3876e30444c216f7bbd318d54b773d30c4a60538fdcc02d342b6d5e6ac14"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2887,
+			"sha256": "eb94dd600702aeb3cacdf3ec751522a8d543989acd4b63ca99b1effab8770eb9"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "6fbe3d190ce9ec85b5d6e9a84c72b11fe7f110d67d0050b6099f3cd5786649ce"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "9355d401f40dcab7d2c2dbb76d3fdb71383d08f5e0949896eb36e5427cfa0878"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1077,
+			"sha256": "5cccec6fab24baea376297ebd49027500304779ad13be7b91c60b220761c9f17"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1498107,
+			"sha256": "1f43cd3647c8c7db245a9f94e17dd2a69cea8d2d1da1e32bf3cd8f127f19c4de"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 138998,
+			"sha256": "9cc6c325552d6c02bc1e5129ace4dbd72fac81a57902247b01d93723059d9117"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9678,
+			"sha256": "9c6a2a15534d77c391bedaaf7d698edf5fc970f1cdb4e417302cf68b83705e3a"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2968,
+			"sha256": "3c37c4124a61614b45d34bb73a431ac52293922ca2ffa1c66a882e84a7438b07"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "9aae1110aebb6fb2ad931e17cbf5e5cb01fda7bf8e3fc98fc110e6e06915f300"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "ed5f1059370042057c05dc906d609ed5ffcfb7b1db28831876ff127e3031f225"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1077,
+			"sha256": "cab2dd7a7190c8dfef0b0bfac5aab7b9a1760edff884b8c8deb3345a0c7f9f89"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5207,
+			"sha256": "f07e502c13030ab09675842671ebaabacd1f1a5e84e53092d01c65054d8186fd"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1370,
+			"sha256": "1421d1df3e883156b23a101b06eb31902b260c525f9a64420f3f85bb1af13841"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "0979d3eca284b9d0fb5bd6d3670ffc457a4e37f1fec6b9a8792109cf3cf0a32f"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2502,
+			"sha256": "4b79dd6641b2c480516d69364932ba14a253ea68aadf1ed93d5c25286426478b"
+		},
+		{
+			"path": "/textures/pika/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3471,
+			"sha256": "c5f401243836f6cc2b070e7dd465bcd380d7cebab2a628b33306711215eda3df"
+		}
+	]
+}

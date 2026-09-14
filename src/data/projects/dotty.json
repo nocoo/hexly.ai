@@ -31,14 +31,8 @@
 			"value": "220 14% 96%",
 			"source": "src/index.css --background"
 		},
-		"ink": {
-			"value": "220 14% 10%",
-			"source": "src/index.css --foreground"
-		},
-		"primary": {
-			"value": "220 14% 10%",
-			"source": "src/index.css --primary"
-		}
+		"ink": { "value": "220 14% 10%", "source": "src/index.css --foreground" },
+		"primary": { "value": "220 14% 10%", "source": "src/index.css --primary" }
 	},
 	"source": {
 		"profileRevision": "9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6",
@@ -109,10 +103,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "A suspended building block",
-					"zh": "悬浮的构建方砖"
-				},
+				"title": { "en": "A suspended building block", "zh": "悬浮的构建方砖" },
 				"description": {
 					"en": "A complete rounded square brick seen from an elevated three-quarter view, uniformly inset from every corner. The independent projected shadow makes its weight and hover gap legible.",
 					"zh": "完整的圆角厚方砖从斜上方呈现，整体统一缩放，为四角保留安全距离。独立投影表现重量与悬浮间隙。"
@@ -120,10 +111,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Opaque checker ceramic",
-					"zh": "不透明棋盘陶瓷"
-				},
+				"title": { "en": "Opaque checker ceramic", "zh": "不透明棋盘陶瓷" },
 				"description": {
 					"en": "Pure black and white inlays carry the identity. Physical ceramic shading, controlled reflections and soft bevels provide detail without a pixel-art treatment; white cells remain solid after extraction.",
 					"zh": "黑白镶嵌构成标识。陶瓷明暗、克制反光与柔和倒角提供精致细节，不使用像素画处理；白色格块在抠图后依然保持不透明。"
@@ -131,10 +119,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Precision drafting grid",
-					"zh": "精密制图格线"
-				},
+				"title": { "en": "Precision drafting grid", "zh": "精密制图格线" },
 				"description": {
 					"en": "Cool pale drafting paper uses fine Cartesian cells, larger construction divisions, registration crosses and a short ruler. Its separate soft floor shadow never enters transparent UI marks.",
 					"zh": "浅冷色制图纸配细笛卡尔网格、较大的工程分区、定位十字与短标尺。背景和柔和地面投影独立保存，小型透明标记不带底纹或阴影。"
@@ -145,37 +130,25 @@
 			{
 				"color": "#e5eaf1",
 				"role": "background",
-				"label": {
-					"en": "Precision drafting grid",
-					"zh": "精密制图格线"
-				},
+				"label": { "en": "Precision drafting grid", "zh": "精密制图格线" },
 				"source": "Selected Dotty presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#1a1c1d",
 				"role": "primary",
-				"label": {
-					"en": "Black ceramic",
-					"zh": "黑色陶瓷"
-				},
+				"label": { "en": "Black ceramic", "zh": "黑色陶瓷" },
 				"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1057, 943); artwork/logo-family/dotty/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#fbfbfb",
 				"role": "accent",
-				"label": {
-					"en": "White ceramic",
-					"zh": "白色陶瓷"
-				},
+				"label": { "en": "White ceramic", "zh": "白色陶瓷" },
 				"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1059, 371); artwork/logo-family/dotty/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#919699",
 				"role": "accent",
-				"label": {
-					"en": "Bevel reflection",
-					"zh": "倒角反光"
-				},
+				"label": { "en": "Bevel reflection", "zh": "倒角反光" },
 				"source": "Native dotty 6bb29358898d, sampled sRGB pixel (1511, 1152); artwork/logo-family/dotty/2026-09-07-01/palette.json"
 			}
 		],
@@ -199,59 +172,35 @@
 			},
 			{
 				"name": "React",
-				"role": {
-					"en": "Dashboard examples",
-					"zh": "看板示例"
-				}
+				"role": { "en": "Dashboard examples", "zh": "看板示例" }
 			},
 			{
 				"name": "Vite",
-				"role": {
-					"en": "SPA development and build",
-					"zh": "SPA 开发与构建"
-				}
+				"role": { "en": "SPA development and build", "zh": "SPA 开发与构建" }
 			},
 			{
 				"name": "React Router",
-				"role": {
-					"en": "Client-side routes",
-					"zh": "客户端路由"
-				}
+				"role": { "en": "Client-side routes", "zh": "客户端路由" }
 			},
 			{
 				"name": "Tailwind CSS",
-				"role": {
-					"en": "Themes and styling",
-					"zh": "主题与样式"
-				}
+				"role": { "en": "Themes and styling", "zh": "主题与样式" }
 			},
 			{
 				"name": "Radix UI",
-				"role": {
-					"en": "Interactive controls",
-					"zh": "交互控件"
-				}
+				"role": { "en": "Interactive controls", "zh": "交互控件" }
 			},
 			{
 				"name": "Recharts",
-				"role": {
-					"en": "Data visualization",
-					"zh": "数据可视化"
-				}
+				"role": { "en": "Data visualization", "zh": "数据可视化" }
 			},
 			{
 				"name": "i18next",
-				"role": {
-					"en": "Chinese and English interface",
-					"zh": "中英文界面"
-				}
+				"role": { "en": "Chinese and English interface", "zh": "中英文界面" }
 			},
 			{
 				"name": "Cloudflare Workers",
-				"role": {
-					"en": "Static asset hosting",
-					"zh": "静态资源托管"
-				}
+				"role": { "en": "Static asset hosting", "zh": "静态资源托管" }
 			}
 		],
 		"verified": {
@@ -278,15 +227,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 806,
-			"height": 416
-		},
+		"lockup": { "width": 806, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Precision drafting grid",
-				"zh": "精密绘图网格"
-			},
+			"name": { "en": "Precision drafting grid", "zh": "精密绘图网格" },
 			"description": {
 				"en": "Fine Cartesian subdivisions, stronger construction lines and registration crosses give the checker block a drafting ground.",
 				"zh": "细密坐标线、较强的基准线与定位十字，为黑白陶瓷方砖铺开一张绘图纸。"
@@ -311,35 +254,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥59px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 59px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/dotty/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Ceramic measures", "zh": "瓷面刻度" },
+		"description": {
+			"en": "Finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center.",
+			"zh": "细颗粒瓷釉与大尺度浅方格形成可读的几何秩序，留白处打断格子，不争抢黑白原标。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.29
 	}
 }

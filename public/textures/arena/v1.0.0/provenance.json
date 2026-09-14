@@ -1,0 +1,122 @@
+{
+	"project": "arena",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Two considered turns", "zh": "两步之间" },
+		"motif": "A chess-clock debate-table surface: fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions. Balanced left and right negative space without literal chess pieces, clock faces, chessboard squares, digits or labels.",
+		"description": {
+			"en": "Fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions.",
+			"zh": "细织毛毡上的双侧计时弧与浅浅行棋压线，给比较、辩论和决定各留一点从容。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Let coding agents debate solutions while you review, compare, and decide.",
+			"zh": "让多个编程智能体提出方案、展开讨论，由你比较、审阅并做决定。"
+		},
+		"purpose": {
+			"en": "Collect coding assistants’ proposals on a local discussion board, let a person record decisions, and return those checkpoints to assistants through a CLI.",
+			"zh": "在本机讨论看板汇集编码助手的方案，由人记录决策，再通过 CLI 将 checkpoint 提供给助手读取。"
+		},
+		"source": "src/data/projects/arena.json",
+		"inspectedRevision": "4a9efd6690942dd1384fd807ba83c73e7c29c202"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/arena-family-2026-09-07-01-01.png",
+		"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59",
+		"rgbaSha256": "21a8929f2a0a71bc2045b167478929e03ac9795d0a8e8246e1a68f3400416123",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3658121,
+		"source": "https://github.com/nocoo/arena/blob/4a9efd6690942dd1384fd807ba83c73e7c29c202/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/arena/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "e30791a2474fae00edbf71ec0fcdc3deaa2a1711edface01b59dbb3a161ef5ac"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "26c8ecfc-ed0f-4a32-83b0-0780f0a897b7",
+			"source": "artwork/brands/arena/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/arena/v1.0.0/source-light-request.json",
+			"response": "/textures/arena/v1.0.0/source-light-response.json",
+			"prompt": "/textures/arena/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/arena/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/arena/v1.0.0/texture-light.png",
+				"sha256": "386d125cc3fe346541376b1908a4f968793bb7495d1190a5b4372a6c177c6879",
+				"bytes": 1968318,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "825993be-d1f5-461f-9e66-e13d3b492015",
+			"source": "artwork/brands/arena/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/arena/v1.0.0/source-dark-request.json",
+			"response": "/textures/arena/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/arena/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/arena/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/arena/v1.0.0/texture-dark.png",
+				"sha256": "7c36b32c6bdb441070f3dc806169e5718dcdc40e038287f10d5680431fe1d706",
+				"bytes": 1868116,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.35
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.7737302989683394,
+		"darkMinimum": 5.867053354956228,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:37:26.202Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

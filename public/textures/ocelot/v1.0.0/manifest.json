@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "ocelot",
+	"version": "1.0.0",
+	"root": "/textures/ocelot/v1.0.0",
+	"canonical": "https://hexly.ai/projects/ocelot#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/ocelot/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Understory pages", "zh": "林下叶页" },
+		"description": {
+			"en": "Long heliconia-like leaves with clear parallel side veins, small understory fern tips and two curled young leaf edges.",
+			"zh": "长阔蕉叶、林下蕨尖与卷起的新叶边层叠如书页，给豹猫留下通透的热带林下空间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.36
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ocelot-family-2026-09-11-01-03.png",
+		"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+		"rgbaSha256": "8ec4bfdfbaa5d2b42f07ec1e9baf77ed39d8cb6e69d4c87c85ab56af41ee2e75",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4575584,
+		"source": "https://github.com/nocoo/ocelot/blob/9d27eea583794ccda07dd2454c2a40302f86e227/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ocelot/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8aa57fe7bb4fb79184badc817b35319ad4f7a7cc21efd7d1d532daee3ba4daad"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "612a8cfe-0e6b-47c9-b884-aac14b8ce068",
+			"source": "artwork/brands/ocelot/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ocelot/v1.0.0/source-light-request.json",
+			"response": "/textures/ocelot/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ocelot/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ocelot/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ocelot/v1.0.0/texture-light.png",
+				"sha256": "2cecadc17a19027992702b2461e66add89b2db0ef53f460a39ae948356177a1c",
+				"bytes": 1666131,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52dd5d50-8091-4c8f-ad85-af1355d81144",
+			"source": "artwork/brands/ocelot/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ocelot/v1.0.0/source-dark-request.json",
+			"response": "/textures/ocelot/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ocelot/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ocelot/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ocelot/v1.0.0/texture-dark.png",
+				"sha256": "735f755fe14d6ed9321b1cee5f744e80f7d34f59d5d6183f660ff9463c66a72b",
+				"bytes": 1443758,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1666131,
+			"sha256": "2cecadc17a19027992702b2461e66add89b2db0ef53f460a39ae948356177a1c"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 183656,
+			"sha256": "ce3ab6eb859ee5cbacb1c65a673e5b322fdb13fbd30e2dc0d8cd83270c3226e5"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10104,
+			"sha256": "210b6e66afd79d02e83b76a6f8fdb047a2f8a61c83299282c5b1c2c674dd531d"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2894,
+			"sha256": "2e47734f470660a4fd88b092c8ad42e9ca691d51559f626524e1987f2e7f12f5"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "eef192f46fd6bff39c874f821e0ff35cd332ee240beb1d56fe58def9e33a0b1e"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c47b4ce0c3874db16db354e093ade16579c2241413c027f05f93463bd671cbf4"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1254,
+			"sha256": "f792a5eb3ab10a57aefa70a06438d6cc65d3e86cb15ebbb923d3f940aeca0df7"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1443758,
+			"sha256": "735f755fe14d6ed9321b1cee5f744e80f7d34f59d5d6183f660ff9463c66a72b"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 116912,
+			"sha256": "110218d140aabdb04ab13fd748e63543f8b38317fc247dc52258f5fb8bf99532"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8278,
+			"sha256": "e012c29f9f88dd6038b6c1cbbecdc0430954a4dc76070fece258fca2d7f3a452"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2975,
+			"sha256": "8b48e2db9d34870dd8e77e3b66f85aabba0beccc0742a0b94a67b3808de1a847"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 991,
+			"sha256": "5ce2955f2cbd1c679b4600f8b33bfcab4258cc41fc84451ed3460d406dffb146"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "0c71c6dad2dbf0ae4dd6d345f79a6c78ae7bba594778675cacf22adc1c5dcbbb"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1254,
+			"sha256": "a47e06c15a8f9b795e39e24da9d1fd79344908f1adf3e9ecfafc3cac3acfd8ce"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5717,
+			"sha256": "f6e540367ec5dd4fe10afc57463b5556592da96a6cc493126c7f6a37be4eac95"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1604,
+			"sha256": "1aeff27c5451dfa2dd6ac805d89fe48fa27839900c763e910d0b507d8b5559ae"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "5fe11bbc91dd2313e83ffc23f3af13709cac866555392ab5777531c8e8c95e09"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2551,
+			"sha256": "7417350da21ec1210a6f0cf7f015f912140f7424054ec21d61dd552180ce4da7"
+		},
+		{
+			"path": "/textures/ocelot/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3540,
+			"sha256": "228c11b180b9e06044b2367bf8f256ab57a4ecd8ca5d3105e2628ae7c117f315"
+		}
+	]
+}

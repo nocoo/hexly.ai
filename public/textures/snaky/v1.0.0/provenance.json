@@ -1,0 +1,122 @@
+{
+	"project": "snaky",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "The meadow bends", "zh": "草叶转弯" },
+		"motif": "An unspecified small green snake's meadow-edge habitat: narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads. Use sinuous botanical paths while leaving broad negative space. No scales, snake drawing, circuit paths or geometric route arrows.",
+		"description": {
+			"en": "Narrow grass blades crossing in slow bends, long ribbed plantain leaves and sparse soft seed heads.",
+			"zh": "细草叶与车前长叶缓慢交错，草甸边缘的弯折自然呼应蛇的行进，也让路径有处可寻。"
+		},
+		"rationale": "The existing animal/bird identity determines a plausible broad botanical setting; no species claim is added. Product category does not override an approved animal identity."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Know where your traffic goes. Inspect VPN routes, exit IPs, latency, and proxy rules.",
+			"zh": "弄清网络流量去了哪里，检查 VPN 路由、出口 IP、延迟与分流规则。"
+		},
+		"purpose": {
+			"en": "Help VPN and proxy users check destination egress IPs, HTTP latency and DNS resolvers in one place to see whether routing matches their expectations.",
+			"zh": "让使用 VPN 或代理的用户能集中核对常用站点的出口 IP、HTTP 延迟和 DNS 解析器，判断分流是否符合预期。"
+		},
+		"source": "src/data/projects/snaky.json",
+		"inspectedRevision": "5cd0790336d006f65555816fe29869d6e60ed376"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/snaky-family-2026-09-07-01-01.png",
+		"sha256": "4b2ea7f80bf081cad292c81c95e576b8ec66c6c2ece04c3d90374f971d299630",
+		"rgbaSha256": "828aa7fce80d2a0b999d68686ce4dda89778a8de88f29c1b06441504f5ffea46",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2958177,
+		"source": "https://github.com/nocoo/snaky/blob/5cd0790336d006f65555816fe29869d6e60ed376/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/snaky/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "a89eb7b01412aa2f8d79b3b007e5f1bb4a36acc94cec1f80209453aa10dae648"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "637cb6dd-09f9-4d8b-be5f-767cb5c6f593",
+			"source": "artwork/brands/snaky/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/snaky/v1.0.0/source-light-request.json",
+			"response": "/textures/snaky/v1.0.0/source-light-response.json",
+			"prompt": "/textures/snaky/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/snaky/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/snaky/v1.0.0/texture-light.png",
+				"sha256": "6d88ca724a47d1d92977bb3cf4287f205eb2285821c6e7b05b19941f621e31f2",
+				"bytes": 1563409,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c4d454fc-d796-4d3c-80ad-2d00655b2593",
+			"source": "artwork/brands/snaky/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/snaky/v1.0.0/source-dark-request.json",
+			"response": "/textures/snaky/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/snaky/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/snaky/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/snaky/v1.0.0/texture-dark.png",
+				"sha256": "25914a5e724f2841b07ade392dc66796d8b0fb4a551cc7598c5bf3a4184739e7",
+				"bytes": 1407301,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.38
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.856802849135523,
+		"darkMinimum": 4.765671719655923,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T04:28:47.828Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

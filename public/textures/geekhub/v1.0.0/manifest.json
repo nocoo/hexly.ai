@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "geekhub",
+	"version": "1.0.0",
+	"root": "/textures/geekhub/v1.0.0",
+	"canonical": "https://hexly.ai/projects/geekhub#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/geekhub/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Reading cloth", "zh": "阅读书衣" },
+		"description": {
+			"en": "Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.",
+			"zh": "亚麻书衣与压纹纸带交错，分栏折线和少量装订线承接阅读、收藏与再整理。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+		"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+		"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4053576,
+		"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/geekhub/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4a6e3c0a-2b87-473c-9c39-2311f0c8a5ca",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/geekhub/v1.0.0/source-light-request.json",
+			"response": "/textures/geekhub/v1.0.0/source-light-response.json",
+			"prompt": "/textures/geekhub/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.0/texture-light.png",
+				"sha256": "200f82cedefc69f7faa32a402b19ee464dbbb9f9de017cd51c14dadcad1bc100",
+				"bytes": 1955696,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d252f82c-a64a-4c1b-8a04-9d4869ea2732",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/geekhub/v1.0.0/source-dark-request.json",
+			"response": "/textures/geekhub/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/geekhub/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.0/texture-dark.png",
+				"sha256": "fe819a73e8f1d442f96c2cef3130a8eabe64d7370af602001a2d365665a51303",
+				"bytes": 1945406,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1955696,
+			"sha256": "200f82cedefc69f7faa32a402b19ee464dbbb9f9de017cd51c14dadcad1bc100"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 299666,
+			"sha256": "d669b7030f9dd425c793f4325ab428605c69ace4b2e3c2ad0eeb321fe9792c1f"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9044,
+			"sha256": "f1539fdeb98cd668232dacf3cbe50692d119d13222ed3bf79fa247d452653d15"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2696,
+			"sha256": "bf09412aa8cec4b7318294ae91962c9499593cca3aad2201c0eb9f7484556108"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "ac47733b9fef23a7db7583a01a758f03ecc3fd691dac11eb295b1e3f642cb0b1"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "df102b49b431d8344cbf5b759b4f169f2317ebf9920023efb8b246df6760b7b6"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1072,
+			"sha256": "97bf72b9d2ef7bd9b7e985227e2ff9000f5dacbbe33e5c5a2a2abc00f3e98588"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1945406,
+			"sha256": "fe819a73e8f1d442f96c2cef3130a8eabe64d7370af602001a2d365665a51303"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 298056,
+			"sha256": "943160c78d4cc4c70314798054d20b39ea3349e356b169d1fb7503175fcd0b00"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4144,
+			"sha256": "42edcee330a1c634811811dbee6833e5bfc49e16f8c87f2a533f7fa73ce7925c"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2772,
+			"sha256": "31238f3e597fe4ebd69275d7568528f6c8d36ff860510b351f65434e912f7b04"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "0e12969d945a7dbd28cf8ab6a5d85b2eeeec2933d8c35f04bf2afefcb6fa18a6"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "dc701b76a8772bada9e5e191a34b49effb8660e50627b663e703b94de5248e11"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1072,
+			"sha256": "2a95540ec1b4947ae0e476a3b4aa2c16640b767b03630466470c11e0ecc0b840"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5283,
+			"sha256": "37293379ccf87298d42dc79b3a44d6273de7eded66b04da8f99223a1b5e67a9f"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1353,
+			"sha256": "b7adf207a1ac20f4b304fc626fd3696a6688639401521c58cc544b3e05cc3b55"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "69b0644774253e4d233fd4da4783ae7a5fd378b5b5711d9acbad0c53ef1c8825"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2553,
+			"sha256": "ef00ae3bdb8150313b4221328f795128b06cc6594508af1915df007c7a78d183"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3539,
+			"sha256": "5dc54334efd27b2d9cf6f3382150c10d5106f0516169e95be7734171da202aa1"
+		}
+	]
+}

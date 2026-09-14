@@ -1,6 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
+import { brandTextureAsset, projectTexture } from "../../src/model/brand";
 import { expect, test } from "./fixtures";
 
 const targets = readProjects().filter(
@@ -26,6 +27,8 @@ for (const project of targets) {
 		if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
 		const kit = project.brandKit;
 		if (!kit) throw new Error("Missing collection kit");
+		const texture = projectTexture(project);
+		if (!texture) throw new Error("Missing project texture");
 		const errors: string[] = [];
 		page.on("pageerror", (error) => errors.push(error.message));
 		await page.goto(`/?q=${encodeURIComponent(project.title)}`);
@@ -33,7 +36,7 @@ for (const project of targets) {
 		await expect(link).toHaveAttribute("href", `/projects/${project.id}`);
 		await link.click();
 		await expect(page.locator("#identity-title")).toContainText(project.title);
-		for (const theme of ["light", "dark"]) {
+		for (const theme of ["light", "dark"] as const) {
 			if ((await page.locator("html").getAttribute("data-theme")) !== theme)
 				await page.locator(".theme-toggle").click();
 			const hero = page.locator(".brand-hero img:visible");
@@ -51,10 +54,10 @@ for (const project of targets) {
 				.evaluate(
 					(node, single) =>
 						getComputedStyle(node, single ? "::before" : null).backgroundImage,
-					kit.texture?.display === "single",
+					texture.display === "single",
 				);
-			expect(surface).toMatch(
-				new RegExp(`texture-${theme}\\.${kit.texture?.format ?? "svg"}`),
+			expect(surface).toContain(
+				assetUrl(brandTextureAsset(texture, theme, !!project.brandTexture)),
 			);
 			await expect(page.locator(".brand-official-source img")).toHaveAttribute(
 				"src",
@@ -104,7 +107,7 @@ for (const project of targets) {
 			"项目标志保留原色",
 		);
 		await expect(page.locator(".brand-texture-study h3")).toHaveText(
-			kit.texture?.name.zh ?? "",
+			texture.name.zh,
 		);
 		const pending = page.waitForEvent("download");
 		await page.locator('.brand-kit a[href$="/favicon.ico"]').click();

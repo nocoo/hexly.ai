@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "ellie",
+	"version": "1.0.0",
+	"root": "/textures/ellie/v1.0.0",
+	"canonical": "https://hexly.ai/projects/ellie#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/ellie/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Mopane conversations", "zh": "林叶相听" },
+		"description": {
+			"en": "Distinctive paired butterfly-shaped mopane leaves on restrained twigs, with one small acacia spray.",
+			"zh": "成对的宽叶与细小金合欢叶彼此呼应，像林间展开的倾听空间，保留大象的从容。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ellie-family-2026-09-07-01-01.png",
+		"sha256": "85b062e3d5546262bf3cbeef8f4a6815acdf96ddf1213251df539a85bfe9ab4d",
+		"rgbaSha256": "f7e7d2e9e16a7cbf2b511fda50e8016165e61b9349c9a941817560ea7c1510a7",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2690184,
+		"source": "https://github.com/nocoo/ellie/blob/300b8540eac51ae21803a8d58ebffbe3d90efa24/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ellie/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "59ff861f2b1e5d8fc6c60ef110bf7c5eb24bda9659dd74b5f7c55eafd17aa75c"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "df491289-c9c7-4a21-8c8a-dca4847b5d60",
+			"source": "artwork/brands/ellie/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/ellie/v1.0.0/source-light-request.json",
+			"response": "/textures/ellie/v1.0.0/source-light-response.json",
+			"prompt": "/textures/ellie/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/ellie/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ellie/v1.0.0/texture-light.png",
+				"sha256": "d63c573edb472716a620b7a73a6be9567857d875ab17b0f59e74c4dd70dfb3e4",
+				"bytes": 1632684,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7a423003-a4c0-444e-a2a3-97a89bb4def1",
+			"source": "artwork/brands/ellie/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/ellie/v1.0.0/source-dark-request.json",
+			"response": "/textures/ellie/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/ellie/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/ellie/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ellie/v1.0.0/texture-dark.png",
+				"sha256": "08d6733fdeb072e75c184228b8675baee2f99d40b9d762c928809f64b9792a73",
+				"bytes": 1457436,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/ellie/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1632684,
+			"sha256": "d63c573edb472716a620b7a73a6be9567857d875ab17b0f59e74c4dd70dfb3e4"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 177088,
+			"sha256": "df153309b37d455da0cec1330fa888d3e7123f6c1071bc6cf47417bc53a81fc8"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9826,
+			"sha256": "6f96ffc5040af2e273a1ed5348b4209516c1fa19d3d2acd1c8287e1fd836d49c"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2890,
+			"sha256": "a4f3327f06a0418c9708faca26ea900adfe4908676adfe61e0184eb414ff7c4a"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "2a42837044f566b71b2872f87c69255018fc49a3de272b8245e5113ca20ea347"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "592e0edb5115416b857eae0ce15c01116ffabc4af675bc937de13eb3bd46bb63"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1033,
+			"sha256": "37c98635b8baa9144595ccf45db11d475c1550b8393b59043703ea4631a7af33"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1457436,
+			"sha256": "08d6733fdeb072e75c184228b8675baee2f99d40b9d762c928809f64b9792a73"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 131570,
+			"sha256": "8712ea0ae1dcda90029f7a0544b3afdad95c611040af8f2d83c701d77727f72a"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6538,
+			"sha256": "6ff692ef1026dbf68307b580bf6ebb5fe5ac081cbe4e71deaa2e32af68cad5b4"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2971,
+			"sha256": "f75cc9ea45e156cf783d85946795b754d6318eaaeb12aa24fcd5f146e690e687"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "e12189f8c62e843ee431b544f050ffd250be59388ce92a211a433f4804d7fe72"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "42451cc3979089684c98e10ee4027b9b0da646f25cd5b407b3544eefd4403600"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1033,
+			"sha256": "fdb3faeb542d56a2bae70c92932c3e094d72c52fa2919d6e580316f79d188a38"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5325,
+			"sha256": "15095b543276602d1a14cd5693f89a85f55d21bc68ac1a005372939e6fc62dce"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1419,
+			"sha256": "062e715134a3bf10ff2c045e3f1232ecaa5a567ebcec9890113983a0c2d60dd2"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "e30cc12f528d9a55f8ff78f46cce3e51eef019811f1e2a0773c2da564ee0a2d2"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2529,
+			"sha256": "0e8131cd40350359299fb7aa16cb369c6ff5d3cb5f568a510e17caee09d4ee37"
+		},
+		{
+			"path": "/textures/ellie/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3516,
+			"sha256": "0febfe282fcf6e202450ba5a36535cf32488e5c5dd420d89f1a832cfa8de63e6"
+		}
+	]
+}

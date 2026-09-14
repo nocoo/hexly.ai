@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "firefly",
+	"version": "1.0.0",
+	"root": "/textures/firefly/v1.0.0",
+	"canonical": "https://hexly.ai/projects/firefly#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/firefly/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Bracken after dusk", "zh": "暮色蕨影" },
+		"description": {
+			"en": "A few broad triangular bracken fronds, low fern curls and fine damp meadow blades.",
+			"zh": "暮色林地里的三角蕨叶与低矮草丛，给萤火虫留出安静而通透的活动空间。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/firefly-2026-09-06.png",
+		"sha256": "a2c29a6601fb041c27c7fcc4a4493ae8b0ae09dc72d3d0da6e475400dd167759",
+		"rgbaSha256": "c5c4bb38f0c78b094c2c72b7f84478618fd17544c6eecf97a27ad1747c6d3df6",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2583578,
+		"source": "https://github.com/nocoo/firefly/blob/70a4de51b9fe6f152805298c031ca92165754c40/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/firefly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d7fb1a2226dd80bc04ff888f127f41ee143c9d33237f4226766c84dcec5bc39d"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "51f2bdd9-3070-4b5d-b45f-7d59b2d19059",
+			"source": "artwork/brands/firefly/texture-studies/2026-09-14-flare-rollout-01/light-attempt-02",
+			"request": "/textures/firefly/v1.0.0/source-light-request.json",
+			"response": "/textures/firefly/v1.0.0/source-light-response.json",
+			"prompt": "/textures/firefly/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/firefly/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/firefly/v1.0.0/texture-light.png",
+				"sha256": "2510e47a83b9710965097f81b7187ddb4a49ca92e9f7e66871b32b0630328998",
+				"bytes": 1758009,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "740bf7ec-4701-49bb-9015-b81a398f6f6a",
+			"source": "artwork/brands/firefly/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-02",
+			"request": "/textures/firefly/v1.0.0/source-dark-request.json",
+			"response": "/textures/firefly/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/firefly/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/firefly/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/firefly/v1.0.0/texture-dark.png",
+				"sha256": "b1d93f6745466e61593632a49e7296b1345dc844be5151281c8250cfb3fc513b",
+				"bytes": 1560337,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/firefly/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1758009,
+			"sha256": "2510e47a83b9710965097f81b7187ddb4a49ca92e9f7e66871b32b0630328998"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 217536,
+			"sha256": "44d83ccd4a2d20588d74f23a9c4c4382be23e33e097b58c62c053bcbe8a1a344"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12500,
+			"sha256": "04e626eaa6b2e618a27fc522c1456f3f213e2cb04b663c2cd61642e0d9d48cb7"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2865,
+			"sha256": "165abef14acb1fe380d87a49afcb4480a6a6e2bb15ade185b33e3f18c649bda4"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "879cf5b14fe9ca44786b43a9f4732dda1f4e4e6a65b253db8d9681aed5236c33"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 820,
+			"sha256": "39d3f36d282038e9d221fc5b4a107288ed13169f6488fba475b0da19593232b8"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1025,
+			"sha256": "0d50e00dc22b30eab2474b75f8f3bc43079013ae8c39ce4ab6b612d2b568d517"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1560337,
+			"sha256": "b1d93f6745466e61593632a49e7296b1345dc844be5151281c8250cfb3fc513b"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 156992,
+			"sha256": "ba5efca5a187ebf990e1eeb2b2abf828ec5059f412469dcd29db45be692e4b4b"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9080,
+			"sha256": "4331041773dfad20c6ebe75fbaa9b796b449a54e8ac93f00e049a2e89941ccb7"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2946,
+			"sha256": "1c67b8afd35278b9335c32997d12157a464727aa89efb6c3aa13f50c3fe8c247"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 982,
+			"sha256": "6a6e164622e0eed6f6555205bfa403cdc01cf89d22b6b2bf07bd3f3c6820ca90"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 820,
+			"sha256": "bcaef4b118e0f009ea47037aba3e3fc3f283c58e4124b0f5417dc044a3e482f4"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1025,
+			"sha256": "934bf85e525bc1173e3ed81ad3f526f78055806147827a840cb1fdd9fe67939a"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5286,
+			"sha256": "64266a10a5490a2e75c551dfb229f50c9c31f8813492f29cc2f7c4f859ae07fc"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1352,
+			"sha256": "5810deea833f5a86dcedd0d57476b05b5e5be7d197da6dee6bdaca3ee6d568b6"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "fece46b36d5686daa4e3ce8563fecacec9f7ff8e9d8580e9ddf6daf5060b1be2"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2508,
+			"sha256": "78701599fa0fbcd2bdcbeabf355d84b76240ec465849ef2e1f646f74b73a327a"
+		},
+		{
+			"path": "/textures/firefly/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3512,
+			"sha256": "6673ef1fe9133a0820449cab9d628d9851c05890d19aadadb481e118775a51d6"
+		}
+	]
+}

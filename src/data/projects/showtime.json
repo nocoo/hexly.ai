@@ -171,10 +171,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "Just before the clap",
-					"zh": "开拍前一刻"
-				},
+				"title": { "en": "Just before the clap", "zh": "开拍前一刻" },
 				"description": {
 					"en": "A raised upper stick and broad, mostly frontal slate form one compact object. The complete hinge and corners remain visible, with 178.5 px of clearance against the final rounded outline.",
 					"zh": "抬起的上板与接近正面的宽阔板面构成紧凑整体，铰链和所有边角保持完整，与最终圆角边界至少相距 178.5 px。"
@@ -193,10 +190,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Green film registration",
-					"zh": "绿色胶片定位纹样"
-				},
+				"title": { "en": "Green film registration", "zh": "绿色胶片定位纹样" },
 				"description": {
 					"en": "Sparse film-gate brackets, perforation marks and editing cues sit on pale sage paper. Green stays in the independent background and soft shadows; the small interface mark uses the transparent board.",
 					"zh": "浅鼠尾草绿纸面搭配稀疏的取景定位线、胶片齿孔和剪辑标记。绿色留在独立底纹与柔和投影里，小尺寸界面标记使用透明场记板。"
@@ -207,55 +201,37 @@
 			{
 				"color": "#dce8d1",
 				"role": "background",
-				"label": {
-					"en": "Sage film field",
-					"zh": "浅绿胶片底纹"
-				},
+				"label": { "en": "Sage film field", "zh": "浅绿胶片底纹" },
 				"source": "Designed presentation; artwork/logo-family/showtime/2026-09-10-02/presentation.json, finishing 03. Kept separate from native artwork and application theme tokens."
 			},
 			{
 				"color": "#2b2b2b",
 				"role": "primary",
-				"label": {
-					"en": "Charcoal slate",
-					"zh": "炭黑板面"
-				},
+				"label": { "en": "Charcoal slate", "zh": "炭黑板面" },
 				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (1080, 920); artwork/logo-family/showtime/2026-09-10-02/palette.json"
 			},
 			{
 				"color": "#ede6de",
 				"role": "accent",
-				"label": {
-					"en": "Ivory stripe",
-					"zh": "象牙白斜条"
-				},
+				"label": { "en": "Ivory stripe", "zh": "象牙白斜条" },
 				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (1000, 390); artwork/logo-family/showtime/2026-09-10-02/palette.json"
 			},
 			{
 				"color": "#e4dddc",
 				"role": "accent",
-				"label": {
-					"en": "White lettering",
-					"zh": "白色场记文字"
-				},
+				"label": { "en": "White lettering", "zh": "白色场记文字" },
 				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (850, 1250); artwork/logo-family/showtime/2026-09-10-02/palette.json"
 			},
 			{
 				"color": "#8c8685",
 				"role": "accent",
-				"label": {
-					"en": "Brushed silver",
-					"zh": "拉丝金属"
-				},
+				"label": { "en": "Brushed silver", "zh": "拉丝金属" },
 				"source": "Native Showtime 0ff9ef4fa0f6, sRGB pixel (500, 500); artwork/logo-family/showtime/2026-09-10-02/palette.json"
 			},
 			{
 				"color": "#61bb46",
 				"role": "accent",
-				"label": {
-					"en": "Green cue marks",
-					"zh": "绿色定位标记"
-				},
+				"label": { "en": "Green cue marks", "zh": "绿色定位标记" },
 				"source": "Owner-requested green design anchor used only by the separate background motif at 30% opacity; presentation.json."
 			}
 		],
@@ -270,15 +246,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 1151,
-			"height": 416
-		},
+		"lockup": { "width": 1151, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Film gate and cue marks",
-				"zh": "片门与场记"
-			},
+			"name": { "en": "Film gate and cue marks", "zh": "片门与场记" },
 			"description": {
 				"en": "Open film-gate brackets, a narrow perforation rhythm and offset cue lines recall the work of editing.",
 				"zh": "开放的片门定位角、窄窄的齿孔节奏与错开的提示线，保留剪辑台上的工作痕迹。"
@@ -303,35 +273,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥116px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 116px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/showtime/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Before the first frame", "zh": "开机之前" },
+		"description": {
+			"en": "Fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches.",
+			"zh": "哑光摄影纸的细齿、片门导轨与稀疏齿孔压痕，呼应录制前对齐画面的一刻。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
 	}
 }

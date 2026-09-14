@@ -95,10 +95,7 @@
 		"direction": [
 			{
 				"aspect": "composition",
-				"title": {
-					"en": "The connection passes",
-					"zh": "连接通过检测的一刻"
-				},
+				"title": { "en": "The connection passes", "zh": "连接通过检测的一刻" },
 				"description": {
 					"en": "A compact cable tester holds a short patch lead close to two ports. Three small status lights identify a completed connectivity check before the next command.",
 					"zh": "紧凑网线测试仪用短跳线连接两端口，三颗小状态灯表现下一条命令执行前已经通过的连接检查。"
@@ -106,10 +103,7 @@
 			},
 			{
 				"aspect": "drawing",
-				"title": {
-					"en": "Rubber, metal and cable",
-					"zh": "橡胶、金属与线缆"
-				},
+				"title": { "en": "Rubber, metal and cable", "zh": "橡胶、金属与线缆" },
 				"description": {
 					"en": "Green molded rubber surrounds a brushed charcoal face. Opaque cream cable and smoky connectors remain physical; the large loop opening is transparent.",
 					"zh": "绿色模压橡胶包覆拉丝深灰面板，象牙色线缆与烟灰接头保留实体质感，大线圈镂空透明。"
@@ -117,10 +111,7 @@
 			},
 			{
 				"aspect": "presentation",
-				"title": {
-					"en": "Connection lanes",
-					"zh": "连接通道"
-				},
+				"title": { "en": "Connection lanes", "zh": "连接通道" },
 				"description": {
 					"en": "Paired port rectangles, guarded chevron lanes and three short status bars in quiet mint paper. The field, grain and contact shadow are independent of transparent app marks.",
 					"zh": "薄荷色纸面上的成对端口、保护通道折线和三条状态短线。 底色、颗粒与接触阴影均独立于透明应用标记。"
@@ -131,46 +122,31 @@
 			{
 				"color": "#bbd2c7",
 				"role": "background",
-				"label": {
-					"en": "Connection lanes",
-					"zh": "连接通道"
-				},
+				"label": { "en": "Connection lanes", "zh": "连接通道" },
 				"source": "Adopted IPSafe presentation, 2026-09-07-01/01; background.base in archived settings.json"
 			},
 			{
 				"color": "#315040",
 				"role": "primary",
-				"label": {
-					"en": "Green bumper",
-					"zh": "绿色护边"
-				},
+				"label": { "en": "Green bumper", "zh": "绿色护边" },
 				"source": "Native ipsafe 949f4e0683ee, sampled sRGB pixel (1523, 1416); artwork/logo-family/ipsafe/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#424646",
 				"role": "accent",
-				"label": {
-					"en": "Charcoal face",
-					"zh": "深灰面板"
-				},
+				"label": { "en": "Charcoal face", "zh": "深灰面板" },
 				"source": "Native ipsafe 949f4e0683ee, sampled sRGB pixel (1474, 839); artwork/logo-family/ipsafe/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#dcd1ba",
 				"role": "accent",
-				"label": {
-					"en": "Cream cable",
-					"zh": "象牙色线缆"
-				},
+				"label": { "en": "Cream cable", "zh": "象牙色线缆" },
 				"source": "Native ipsafe 949f4e0683ee, sampled sRGB pixel (926, 316); artwork/logo-family/ipsafe/2026-09-07-01/palette.json"
 			},
 			{
 				"color": "#64de0f",
 				"role": "accent",
-				"label": {
-					"en": "Status green",
-					"zh": "状态绿色"
-				},
+				"label": { "en": "Status green", "zh": "状态绿色" },
 				"source": "Native ipsafe 949f4e0683ee, sampled sRGB pixel (1322, 1184); artwork/logo-family/ipsafe/2026-09-07-01/palette.json"
 			}
 		],
@@ -188,24 +164,15 @@
 		"techStack": [
 			{
 				"name": "JavaScript / Node.js",
-				"role": {
-					"en": "CLI and CommonJS API",
-					"zh": "命令行与 CommonJS API"
-				}
+				"role": { "en": "CLI and CommonJS API", "zh": "命令行与 CommonJS API" }
 			},
 			{
 				"name": "node:http / node:https",
-				"role": {
-					"en": "Pre-execution HTTP checks",
-					"zh": "执行前 HTTP 检查"
-				}
+				"role": { "en": "Pre-execution HTTP checks", "zh": "执行前 HTTP 检查" }
 			},
 			{
 				"name": "node:child_process",
-				"role": {
-					"en": "Command execution and output",
-					"zh": "命令执行与输出"
-				}
+				"role": { "en": "Command execution and output", "zh": "命令执行与输出" }
 			},
 			{
 				"name": "JSON / node:fs",
@@ -243,15 +210,9 @@
 		"method": "archived-artwork",
 		"scope": "hexly-campaign",
 		"sourceAdoptionRevision": null,
-		"lockup": {
-			"width": 902,
-			"height": 416
-		},
+		"lockup": { "width": 902, "height": 416 },
 		"texture": {
-			"name": {
-				"en": "Connection lanes",
-				"zh": "连线通道"
-			},
+			"name": { "en": "Connection lanes", "zh": "连线通道" },
 			"description": {
 				"en": "Paired port outlines, guarded chevron lanes and short status bars describe a connection being checked.",
 				"zh": "成对端口、折向通道与短状态条，描出一次正在核验的连接。"
@@ -276,35 +237,40 @@
 		},
 		"guidelines": [
 			{
-				"title": {
-					"en": "Identity keeps its colors",
-					"zh": "身份保留原色"
-				},
+				"title": { "en": "Identity keeps its colors", "zh": "身份保留原色" },
 				"description": {
 					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
 					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
 				}
 			},
 			{
-				"title": {
-					"en": "A complete composition",
-					"zh": "保留完整构图"
-				},
+				"title": { "en": "A complete composition", "zh": "保留完整构图" },
 				"description": {
 					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
 					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
 				}
 			},
 			{
-				"title": {
-					"en": "A mark, not a tile",
-					"zh": "小标志不用底板"
-				},
+				"title": { "en": "A mark, not a tile", "zh": "小标志不用底板" },
 				"description": {
 					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥75px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.",
 					"zh": "导航推荐 24px，最小 16px。字标宽度至少 75px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。"
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/ipsafe/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Connection channels", "zh": "连接槽道" },
+		"description": {
+			"en": "Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.",
+			"zh": "干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
 	}
 }

@@ -1,0 +1,122 @@
+{
+	"project": "dreamro",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "A maker's parchment", "zh": "匠人的羊皮纸" },
+		"motif": "A fantasy prop-maker's shield workshop surface: fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions. A few broad asymmetrical heraldic construction folds only; no coat of arms, shield, weapons, runes, characters or text.",
+		"description": {
+			"en": "Fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions.",
+			"zh": "洁净羊皮纸、斜向皮绳槽与浅锤纹金属压边承接盾牌道具的制作感，不另造徽章或武器主体。"
+		},
+		"rationale": "The existing object, character or historical mark remains unchanged. Only a supporting working surface is interpreted from the product's purpose; no replacement Logo is generated."
+	},
+	"productEvidence": {
+		"description": {
+			"en": "Nostalgic 3D browser RPG with 20 classes, three realms, and local saves",
+			"zh": "怀旧风格的 3D 网页角色扮演游戏，提供 20 种职业、三大区域和本地存档。"
+		},
+		"purpose": {
+			"en": "Explore an RO-inspired single-player RPG in the browser, from character creation and quests to combat and local progress.",
+			"zh": "在浏览器中体验 RO 风格的单人 RPG，创建角色、探索地图、完成任务并保存进度。"
+		},
+		"source": "src/data/projects/dreamro.json",
+		"inspectedRevision": "07185e854a59e320f8b2a45f6d50484186753c57"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dreamro.png",
+		"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc",
+		"rgbaSha256": "e0f01115493eaca0637defd46523101e4df3d8b571315948ba425eccfdb05009",
+		"width": 512,
+		"height": 512,
+		"bytes": 17371,
+		"source": "https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png",
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dreamro/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "2cbe10ef2201355378dad5f5605c2116f9eb265bdde8e1010ed759bc664e3278"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-14/inventory.json",
+	"sourceInventorySha256": "545d0a6ee144ce9a2bccc78a19b11fc2690950d3ce25fec392e7d72fbbcc54c8",
+	"siteBaseline": "7795f914a83145f257731e6ba3cf9d4101657d9f",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fa3070d3-ebe3-4b6e-9bcc-8855a8c6aad1",
+			"source": "artwork/brands/dreamro/texture-studies/2026-09-14-flare-rollout-01/light-attempt-03",
+			"request": "/textures/dreamro/v1.0.0/source-light-request.json",
+			"response": "/textures/dreamro/v1.0.0/source-light-response.json",
+			"prompt": "/textures/dreamro/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/dreamro/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dreamro/v1.0.0/texture-light.png",
+				"sha256": "a7016fbe5d90d5dcb43faf9f515ac3d4240fc63b9e39b409c6156e1f1caea1e4",
+				"bytes": 2064460,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e2989cbc-1ac9-48ca-b295-2cbf49b8d1ce",
+			"source": "artwork/brands/dreamro/texture-studies/2026-09-14-flare-rollout-01/dark-attempt-03",
+			"request": "/textures/dreamro/v1.0.0/source-dark-request.json",
+			"response": "/textures/dreamro/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/dreamro/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/dreamro/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dreamro/v1.0.0/texture-dark.png",
+				"sha256": "a4008013bafc032335b09d2e47f383ecea12c2d91477ff68354860d56c6fa511",
+				"bytes": 1993333,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.31
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.979826668450698,
+		"darkMinimum": 4.701177775443911,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-14T05:20:47.462Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
