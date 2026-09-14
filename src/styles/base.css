@@ -76,7 +76,10 @@ fieldset {
 }
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: var(--site-topbar-offset);
+	scroll-padding-top: calc(
+		var(--site-topbar-offset) +
+		var(--project-carousel-height, 0px)
+	);
 }
 html[data-app-ready="true"] #root {
 	visibility: visible;

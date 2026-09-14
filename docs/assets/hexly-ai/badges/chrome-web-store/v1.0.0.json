@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "project": "hexly-ai",
+  "kind": "badges",
+  "asset": "chrome-web-store",
+  "version": "1.0.0",
+  "role": "third-party-badge",
+  "source": {
+    "url": "https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png",
+    "guidance": "https://developer.chrome.com/docs/webstore/branding",
+    "retrievedAt": "2026-09-14T03:08:35.323Z",
+    "description": "Official medium PNG badge with border for colored backgrounds; unchanged original bytes.",
+    "rightsHolder": "Google LLC",
+    "license": "Google Chrome Web Store branding permission; Google trademarks remain owned by Google. Not relicensed under the repository MIT license.",
+    "conditions": [
+      "Use only to promote an available extension or theme, linking directly to its Chrome Web Store listing.",
+      "No modification except proportional display resizing; keep the complete badge legible.",
+      "Keep space from other logos and do not make this the primary page element.",
+      "Follow the content restrictions and Chrome Web Store terms linked in the official guidance."
+    ]
+  },
+  "files": [
+    {
+      "path": "/badges/chrome-web-store/v1.0.0/chrome-web-store.png",
+      "bytes": 6151,
+      "width": 340,
+      "height": 96,
+      "sha256": "fbf289fca885e58a1507cc8c69a9df68f35e83e683825b3ad6cd617b0a17d79c",
+      "contentType": "image/png",
+      "transform": "none; CSS display at 170 × 48 preserves the original 340 × 96 ratio",
+      "key": "shared/site/v1.0.0/chrome-web-store-fbf289fca885.png",
+      "url": "https://h.no.mt/shared/site/v1.0.0/chrome-web-store-fbf289fca885.png"
+    }
+  ],
+  "usedBy": [
+    "hooky",
+    "r2shot"
+  ],
+  "destinations": "Read the existing website field from src/data/projects/<id>.json; no separate store URL list.",
+  "publication": {
+    "status": "verified",
+    "verifiedAt": "2026-09-14T03:10:26.026Z",
+    "receipt": "docs/assets/publication.jsonl",
+    "action": "uploaded"
+  }
+}

@@ -1,6 +1,9 @@
 import manifest from "../../package.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
-import { filterProjects } from "../../src/model/catalogue";
+import {
+	filterProjects,
+	isChromeWebStoreProject,
+} from "../../src/model/catalogue";
 import { expect, test } from "./fixtures";
 
 const catalogue = readProjects();
@@ -46,7 +49,7 @@ test("renders active projects with local logos and working destinations", async 
 	);
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
 	expect(
-		await page.locator(".card-github").evaluateAll((links) =>
+		await page.locator(".card-external").evaluateAll((links) =>
 			links.map((link) => ({
 				label: link.textContent?.trim(),
 				href: link.getAttribute("href"),
@@ -54,8 +57,10 @@ test("renders active projects with local logos and working destinations", async 
 		),
 	).toEqual(
 		ordered.map((project) => ({
-			label: "GitHub",
-			href: project.repository,
+			label: isChromeWebStoreProject(project) ? "Chrome" : "GitHub",
+			href: isChromeWebStoreProject(project)
+				? project.website
+				: project.repository,
 		})),
 	);
 	const refined = active.filter((project) => project.family);

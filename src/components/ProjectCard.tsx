@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import { categoryLabels, copy } from "../data/copy";
 import { brandTexture } from "../model/brand";
+import { isChromeWebStoreProject } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
@@ -20,6 +21,7 @@ export function ProjectCard({
 	artworkOnly?: boolean;
 }) {
 	const t = copy[locale];
+	const chromeStore = isChromeWebStoreProject(project);
 	return (
 		<article
 			className="project-card"
@@ -80,15 +82,19 @@ export function ProjectCard({
 			</a>
 			{!artworkOnly && (
 				<a
-					className="card-github"
-					href={project.repository}
+					className="card-external"
+					href={
+						chromeStore
+							? (project.website ?? project.repository)
+							: project.repository
+					}
 					target="_blank"
 					rel="noreferrer"
-					aria-label={`${t.source}: ${project.title}`}
-					title={`${t.source}: ${project.title}`}
+					aria-label={`${chromeStore ? t.addToChrome : t.source}: ${project.title}`}
+					title={`${chromeStore ? t.addToChrome : t.source}: ${project.title}`}
 				>
-					<Icon name="github" />
-					GitHub
+					<Icon name={chromeStore ? "download" : "github"} />
+					{chromeStore ? "Chrome" : "GitHub"}
 				</a>
 			)}
 		</article>

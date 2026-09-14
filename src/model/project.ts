@@ -41,7 +41,12 @@ export interface ProjectVideo {
 
 export interface ProjectScreenshot {
 	id: string;
+	/** Full-resolution original; smaller derivatives keep the same complete canvas. */
 	src: string;
+	preview?: string;
+	thumbnail?: string;
+	/** Versioned receipt with source revision, rights and original/derivative hashes. */
+	source?: string;
 	alt: Record<Locale, string>;
 	width: number;
 	height: number;

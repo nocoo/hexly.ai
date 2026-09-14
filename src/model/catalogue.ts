@@ -100,6 +100,13 @@ export function destination(project: Project): string {
 	return project.website ?? project.repository;
 }
 
+export function isChromeWebStoreProject(project: Pick<Project, "website">) {
+	return (
+		project.website?.startsWith("https://chromewebstore.google.com/detail/") ??
+		false
+	);
+}
+
 export const cataloguePath = "/data/projects.json";
 
 export function parseCatalogue(value: unknown): Project[] {
@@ -260,6 +267,14 @@ export function catalogueProblems(projects: Project[]): string[] {
 								!hasText(screenshot.id) ||
 								!/^([a-z0-9]+-)*[a-z0-9]+$/.test(screenshot.id) ||
 								!mediaUrl(screenshot.src) ||
+								(screenshot.preview !== undefined &&
+									!mediaUrl(screenshot.preview)) ||
+								(screenshot.thumbnail !== undefined &&
+									!mediaUrl(screenshot.thumbnail)) ||
+								(screenshot.source !== undefined &&
+									!/^docs\/assets\/[a-z0-9/-]+\/v\d+\.\d+\.\d+\.json$/.test(
+										screenshot.source,
+									)) ||
 								!hasTranslations(screenshot.alt) ||
 								!Number.isInteger(screenshot.width) ||
 								!Number.isInteger(screenshot.height) ||

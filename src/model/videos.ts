@@ -40,7 +40,10 @@ export function projectForVideo(
 		...(project?.media?.screenshots?.[0]
 			? {
 					screenshot: {
-						src: assetUrl(project.media.screenshots[0].src),
+						src: assetUrl(
+							project.media.screenshots[0].preview ??
+								project.media.screenshots[0].src,
+						),
 						alt: project.media.screenshots[0].alt[locale],
 					},
 				}

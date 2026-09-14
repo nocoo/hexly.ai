@@ -336,5 +336,48 @@
 				}
 			}
 		]
+	},
+	"media": {
+		"screenshots": [
+			{
+				"id": "store-01",
+				"src": "/screenshots/hooky/store-01/v1.0.0/original.png",
+				"preview": "/screenshots/hooky/store-01/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/hooky/store-01/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/hooky/screenshots/store-01/v1.0.0.json",
+				"alt": {
+					"en": "Send page context to a webhook from the browser popup.",
+					"zh": "从浏览器弹窗，把当前页面内容发送到 Webhook。"
+				},
+				"width": 1280,
+				"height": 800
+			},
+			{
+				"id": "store-02",
+				"src": "/screenshots/hooky/store-02/v1.0.0/original.png",
+				"preview": "/screenshots/hooky/store-02/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/hooky/store-02/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/hooky/screenshots/store-02/v1.0.0.json",
+				"alt": {
+					"en": "Build reusable webhook templates with page variables and a request preview.",
+					"zh": "使用页面变量与请求预览，创建可复用的 Webhook 模板。"
+				},
+				"width": 1280,
+				"height": 800
+			},
+			{
+				"id": "store-03",
+				"src": "/screenshots/hooky/store-03/v1.0.0/original.png",
+				"preview": "/screenshots/hooky/store-03/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/hooky/store-03/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/hooky/screenshots/store-03/v1.0.0.json",
+				"alt": {
+					"en": "Match a page to the right webhook with Quick Send rules.",
+					"zh": "用快速发送规则，将页面匹配到合适的 Webhook。"
+				},
+				"width": 1280,
+				"height": 800
+			}
+		]
 	}
 }

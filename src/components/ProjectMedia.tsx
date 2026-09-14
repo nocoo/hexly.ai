@@ -4,6 +4,7 @@ import { assetUrl } from "../model/assets";
 import type { Locale, Project, ProjectVideo } from "../model/project";
 import { AssetLink } from "./AssetLink";
 import { Icon } from "./Icon";
+import { ProjectScreenshots } from "./ProjectScreenshots";
 
 function duration(seconds: number) {
 	return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
@@ -156,28 +157,11 @@ export function ProjectMedia({
 				</nav>
 			)}
 			{screenshots.length > 0 && (
-				<section className="project-screenshots" aria-label={t.screenshots}>
-					{screenshots.map((shot) => (
-						<figure key={shot.id}>
-							<AssetLink
-								href={shot.src}
-								target="_blank"
-								rel="noreferrer"
-								aria-label={`${t.openOriginal}: ${shot.alt[locale]}`}
-							>
-								<img
-									src={assetUrl(shot.src)}
-									alt={shot.alt[locale]}
-									width={shot.width}
-									height={shot.height}
-									loading="lazy"
-									decoding="async"
-								/>
-							</AssetLink>
-							<figcaption>{shot.alt[locale]}</figcaption>
-						</figure>
-					))}
-				</section>
+				<ProjectScreenshots
+					screenshots={screenshots}
+					projectTitle={project.title}
+					locale={locale}
+				/>
 			)}
 		</section>
 	);

@@ -2,7 +2,7 @@ import { copy } from "../data/copy";
 import identity from "../data/site-identity.json" with { type: "json" };
 import { agentGuide, agentGuidePath, standardOutros } from "./agent-guide";
 import { assetUrl } from "./assets";
-import { filterProjects } from "./catalogue";
+import { filterProjects, isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { legacyRoute, siteOrigin } from "./routes";
 import { healthEndpoint } from "./status";
@@ -578,7 +578,7 @@ function snapshotHtml(
 		})
 		.join(" ");
 	const items = project
-		? `<p><a href="${escapeHtml(project.repository)}">GitHub</a>${project.website ? ` · <a href="${escapeHtml(project.website)}">${escapeHtml(project.website)}</a>` : ""}</p>`
+		? `<p><a href="${escapeHtml(project.repository)}">GitHub</a>${project.website ? ` · <a href="${escapeHtml(project.website)}">${isChromeWebStoreProject(project) ? copy.en.addToChrome : escapeHtml(project.website)}</a>` : ""}</p>`
 		: `<ul>${projects
 				.map(
 					(entry) =>
@@ -600,7 +600,7 @@ function snapshotHtml(
 		project?.media?.screenshots
 			?.map(
 				(shot) =>
-					`<figure><a href="${escapeHtml(assetUrl(shot.src))}"><img src="${escapeHtml(assetUrl(shot.src))}" alt="${escapeHtml(shot.alt.en)}" width="${shot.width}" height="${shot.height}" loading="lazy" /></a><figcaption>${escapeHtml(shot.alt.en)}</figcaption></figure>`,
+					`<figure><a href="${escapeHtml(assetUrl(shot.src))}"><img crossorigin="anonymous" src="${escapeHtml(assetUrl(shot.preview ?? shot.src))}" alt="${escapeHtml(shot.alt.en)}" width="${shot.width}" height="${shot.height}" loading="lazy" /></a><figcaption>${escapeHtml(shot.alt.en)}</figcaption></figure>`,
 			)
 			.join("") ?? "";
 	const mediaHtml =

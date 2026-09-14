@@ -254,7 +254,13 @@ export function App() {
 			"",
 			viewPath(resolved),
 		);
-		if (next.view !== state.view && !resolved.anchor)
+		if (
+			!resolved.anchor &&
+			(resolved.view !== state.view ||
+				(resolved.view === "project" &&
+					(resolved.project !== state.project ||
+						resolved.anchor !== state.anchor)))
+		)
 			window.scrollTo({ top: 0, behavior: "instant" });
 	};
 	const change = (patch: Partial<DirectoryState>) =>
