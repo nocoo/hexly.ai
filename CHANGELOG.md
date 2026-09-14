@@ -6,6 +6,10 @@
 
 - publish project-specific texture packs ([93a380c](https://github.com/nocoo/hexly.ai/commit/93a380cfd22a68fdad312b98874fdce8aae2ba33))
 
+### Fixes
+
+- declare the texture scope JSON import ([5fa51db](https://github.com/nocoo/hexly.ai/commit/5fa51db619e9b1c606eac7af1d6b5601bd6023b6))
+
 ## [0.13.0] - 2026-09-14
 
 ### Features
