@@ -6,6 +6,10 @@
 
 - unify detail navigation and R2 screenshot galleries ([799a63d](https://github.com/nocoo/hexly.ai/commit/799a63d95876df0e45eca7992f01911e6316bf3d))
 
+### Fixes
+
+- preserve identity baselines alongside optional media ([f7eeeb4](https://github.com/nocoo/hexly.ai/commit/f7eeeb49ec29f711541db2020c3e544e51d5cda8))
+
 ## [0.12.4] - 2026-09-14
 
 ### Features
