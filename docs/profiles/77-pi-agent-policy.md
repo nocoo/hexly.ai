@@ -60,12 +60,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Hexly campaign brand archive
 
-- Brand version: `1.0.1`; [public archive](https://hexly.ai/projects/pi-agent-policy#brand).
-- [Light lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.1/lockup-light.png), [dark lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.1/lockup-dark.png), [favicon](https://h.no.mt/brands/pi-agent-policy/v1.0.1/favicon.ico).
-- [Complete usage and integration guide](https://h.no.mt/brands/pi-agent-policy/v1.0.1/guide.md), [standalone specimens](https://hexly.ai/brands/pi-agent-policy/v1.0.1/review.html), [all exports and SHA-256](https://h.no.mt/brands/pi-agent-policy/v1.0.1/manifest.json).
+- Brand version: `1.0.2`; [public archive](https://hexly.ai/projects/pi-agent-policy#brand).
+- [Light lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.2/lockup-light.png), [dark lockup](https://h.no.mt/brands/pi-agent-policy/v1.0.2/lockup-dark.png), [favicon](https://h.no.mt/brands/pi-agent-policy/v1.0.2/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/pi-agent-policy/v1.0.2/guide.md), [standalone specimens](https://hexly.ai/brands/pi-agent-policy/v1.0.2/review.html), [all exports and SHA-256](https://h.no.mt/brands/pi-agent-policy/v1.0.2/manifest.json).
 - Source adoption: recorded at `ba73409bd7326fa1a425e5faa918a285cde42de5`.
 - Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
-- [Previous v1.0.0 archive](https://hexly.ai/brands/pi-agent-policy/v1.0.0/review.html) remains immutable.
+- [Previous v1.0.1 archive](https://hexly.ai/brands/pi-agent-policy/v1.0.1/review.html) remains immutable.
 
 
 A graphite reset instrument for user-level Pi tool policies and bounded recovery.

@@ -1,0 +1,34 @@
+{
+	"project": "pi-agent-policy",
+	"version": "1.0.2",
+	"parentManifestSha256": "1a48a57b289873f9db4180a8f92aa519e9798d32440f934ff1cb3cb098923f42",
+	"manifestSha256": "05aa4e1ac09a47689e6d55a7620531ee459c2d6b2251e8001e6a52483cc6082e",
+	"files": 59,
+	"changedFiles": [
+		"guide.md",
+		"provenance.json",
+		"review.html",
+		"texture-dark.png",
+		"texture-dark.svg",
+		"texture-light.png",
+		"texture-light.svg",
+		"tokens.json"
+	],
+	"unchangedFiles": 51,
+	"textures": [
+		{
+			"theme": "light",
+			"clearPerimeterPx": 13,
+			"maxAlpha": 209,
+			"visiblePixels": 10519
+		},
+		{
+			"theme": "dark",
+			"clearPerimeterPx": 13,
+			"maxAlpha": 209,
+			"visiblePixels": 10519
+		}
+	],
+	"approvedIdentitySha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+	"newGenerationCalls": 0
+}

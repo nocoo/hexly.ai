@@ -63,7 +63,7 @@ describe("Pi Agent Policy onboarding", () => {
 		expect(provenance.generation).toMatchObject({
 			model: "gpt-image-2",
 			batch: "2026-09-14-03",
-			madeInThisRelease: true,
+			madeInThisRelease: false,
 			newGenerationCallsDuringKitAssembly: 0,
 		});
 		expect(provenance.generation.raw.sha256).toBe(
@@ -95,13 +95,22 @@ describe("Pi Agent Policy onboarding", () => {
 		});
 	});
 
-	it("keeps the published 1.0.0 package and all identity/Hero bytes when refining texture visibility", async () => {
+	it("keeps both published textures and all identity/Hero bytes when authoring the service mat", async () => {
 		const parentRoot = "public/brands/pi-agent-policy/v1.0.0";
 		expect(sha(await readFile(`${parentRoot}/manifest.json`))).toBe(
 			"eef04f8b568759b2e6623dd41607a323ce5829c50792b288037938e3bf1e5d56",
 		);
 		const parent = await json(`${parentRoot}/manifest.json`);
 		const current = await json(`${root}/manifest.json`);
+		const pilotRoot = "public/brands/pi-agent-policy/v1.0.1";
+		expect(sha(await readFile(`${pilotRoot}/manifest.json`))).toBe(
+			"1a48a57b289873f9db4180a8f92aa519e9798d32440f934ff1cb3cb098923f42",
+		);
+		const pilot = await json(`${pilotRoot}/manifest.json`);
+		for (const file of pilot.files)
+			expect(sha(await readFile(`public${file.path}`)), file.path).toBe(
+				file.sha256,
+			);
 		const permitted = new Set([
 			"texture-light.svg",
 			"texture-dark.svg",
@@ -127,9 +136,15 @@ describe("Pi Agent Policy onboarding", () => {
 				`${parentRoot}/texture-${theme}.svg`,
 				"utf8",
 			);
-			const after = await readFile(`${root}/texture-${theme}.svg`, "utf8");
-			expect(after.match(/<path d="[^"]*"/g)).toEqual(
+			const preserved = await readFile(
+				`${pilotRoot}/texture-${theme}.svg`,
+				"utf8",
+			);
+			expect(preserved.match(/<path d="[^"]*"/g)).toEqual(
 				before.match(/<path d="[^"]*"/g),
+			);
+			expect(await readFile(`${root}/texture-${theme}.svg`, "utf8")).not.toBe(
+				preserved,
 			);
 		}
 		const oldProvenance = await json(`${parentRoot}/provenance.json`);
@@ -137,6 +152,18 @@ describe("Pi Agent Policy onboarding", () => {
 			expect(sha(await readFile(oldProvenance.build[key]))).toBe(
 				oldProvenance.build[`${key}Sha256`],
 			);
-		expect(project.brandKit?.previousVersion).toBe("1.0.0");
+		expect(project.brandKit?.previousVersion).toBe("1.0.1");
+		const provenance = await json(`${root}/provenance.json`);
+		expect(provenance.texture.productEvidence.repositoryRevision).toBe(
+			project.source.repositoryRevision,
+		);
+		expect(sha(await readFile(provenance.texture.source))).toBe(
+			provenance.texture.sourceSha256,
+		);
+		expect(provenance.texture.presentation).toMatchObject({
+			decorative: true,
+			gridPitchPx: 32,
+			specimenTileCssPx: 256,
+		});
 	});
 });

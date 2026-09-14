@@ -146,7 +146,11 @@ describe("complete Hexly campaign archives", () => {
 					}
 				expect(edgeAlpha).toBe(0);
 				expect(maxAlpha).toBeGreaterThan(0);
-				if (p.id === "pi-agent-policy" && kit.version === "1.0.1") {
+				if (p.id === "pi-agent-policy" && kit.version === "1.0.2") {
+					// Product-specific etched contacts; the shared collection stays quiet.
+					expect(maxAlpha).toBeGreaterThanOrEqual(100);
+					expect(maxAlpha).toBeLessThanOrEqual(220);
+				} else if (p.id === "pi-agent-policy" && kit.version === "1.0.1") {
 					// Only this explicit pilot gets stronger support linework.
 					expect(maxAlpha).toBeGreaterThanOrEqual(70);
 					expect(maxAlpha).toBeLessThanOrEqual(150);

@@ -47,3 +47,12 @@ published 1.0.0 kit, preserving 50 files exactly while refining texture strokes
 and specimen layout. It keeps historical tool hashes intact and rejects any
 existing, inventoried or committed output. Do not rerun the generic exporter on
 a published kit or spread this contrast change to other projects implicitly.
+
+Pi Agent Policy 1.0.2 develops the product-specific surface into an instrument
+service mat: a locating grid, open contact and one marked reset route. Its
+versioned recipe explains the connection to tool policies and a shared repair
+allowance. It preserves 51 parent files, including the approved identity and
+Hero, while changing eight presentation files. Keep every older package and
+build hash; the generic collection exporter must not overwrite this revision.
+Choose future material analogies from each product's actual job and physical
+context, rather than copying this particular workbench stencil.

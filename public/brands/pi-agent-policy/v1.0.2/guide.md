@@ -1,0 +1,83 @@
+# Pi Agent Policy — Hexly campaign archive 1.0.2
+
+Clear rules. One considered return.
+
+规则明确，恢复有度。
+
+A graphite reset instrument for user-level Pi tool policies and bounded recovery.
+
+## Scope and source identity
+
+Hexly palettes, typography, red points and editorial geometry apply only to the hexly.ai archive and Hexly-authored promotional materials, video, Deck and social graphics. Independent product websites keep their own full palettes, themes and visual identity. Source Logo adoption is recorded at ba73409bd7326fa1a425e5faa918a285cde42de5. Campaign archive 1.0.2 is independent of the product package version; kit assembly changes no runtime or product UI.
+
+The official/source project identity is [official-logo.png](official-logo.png), preserved byte for byte: SHA-256 `c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611`; native 2048×2048; decoded RGBA SHA-256 `adf041d555fff54e9102b46a0041f5d93202eede62fb256de964ccab6a59df63`. [Original source](https://github.com/nocoo/pi-agent-policy/blob/ba73409bd7326fa1a425e5faa918a285cde42de5/logo.png).
+
+The Hexly family artwork is [logo.png](logo.png): SHA-256 `c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611`; native 2048×2048; decoded RGBA SHA-256 `adf041d555fff54e9102b46a0041f5d93202eede62fb256de964ccab6a59df63`. It is byte-identical to the recorded project identity. Its colors and geometry are unchanged.
+
+Any future generated campaign Hero must be separately identified as a Hexly campaign interpretation, with its actual prompt/model/raw records. It cannot silently become an official project Logo. The owner approved a new gpt-image-2 identity for this onboarding; its exact prompt and returned bytes are archived. Kit and Hero assembly make **zero additional** image-generation calls.
+
+## Composition and scale
+
+### Identity keeps its colors
+
+Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.
+
+项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。
+
+### A complete composition
+
+Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.
+
+保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。
+
+### A mark, not a tile
+
+Navigation 24px preferred, 16px minimum. Wordmark ≥143px wide; lockup ≥164px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine material detail softens at 16px.
+
+导航推荐 24px，最小 16px。字标宽度至少 143px，组合至少 164px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小材质细节会柔化。
+
+Native foreground resolution is 2048px. New web marks never exceed it. Historical square presentations may retain their previously disclosed export dimensions; those are not a claim of new native detail. The wide 2400×960 and mobile 1024×1024 Hero canvases place the entire existing artwork independently, without a crop. New Hero PNGs are lossless authored composites, not raw GPT outputs. See exact placement ratios in provenance.json.
+
+## Texture and colors
+
+A workbench for one reset. An instrument service mat: a fine locating grid, an open contact and one marked return. The grid echoes declared rules, the break an intercepted tool call, and the terracotta trace the single shared repair allowance.
+
+The material analogy comes from the product interaction: declared rules, an intercepted tool call and one shared repair allowance. A 32px locating lattice provides the fine surface grain; registration corners and measured ticks suggest a service mat. The open contact and one terracotta return are the larger readable motif. This is decorative campaign artwork, not a hardware schematic or live status. Do not apply this stencil to unrelated tools.
+
+The transparent tile is 512px, with at least 12px of clear perimeter; the 32px lattice repeats evenly across the seam. At 256 CSS px, the contact and return strokes are 1.8px and 1.5px, while the lattice is 0.9px. Keep the lattice quieter than the contact and the marked return. Show a complete tile height, stack themes on phones, and use the site's 55% surface-color veil with ink text on text-bearing surfaces. Never fade text or bake this background into small marks. Exact native stroke weights/opacities and theme colors are in tokens.json.
+
+Light Hexly campaign surface `#f0f0e9`, ink `#30372e`, accent `#bf5c3c`. Dark surface `#1e2824`, ink `#e6e9dc`, accent `#e79670`. These values do not replace product UI tokens or original Logo colors. Native artwork palette evidence remains in tokens.json and the historical family archive.
+
+## Downloads and integration
+
+[All files and exact SHA-256](manifest.json) · [Standalone specimens](review.html) · [Provenance](provenance.json) · [Licensing](license.txt).
+
+Use `https://h.no.mt/brands/pi-agent-policy/v1.0.2/` for immutable material downloads. The canonical archive lives at `https://hexly.ai/projects/pi-agent-policy#brand`. Download only the needed roles from manifest.json and verify each file's bytes/SHA before adoption.
+
+- Official product identity: `official-logo.png`.
+- Campaign foreground: `logo.png`, `mark-light.png` / `mark-dark.png` (same exact image).
+- Navigation: `mark-24.png` (or a 48px source displayed at 24px), without a tile or mask.
+- Browser icon: `favicon.ico` with actual 16/32/48/64/128/256 PNG entries, all transparent campaign marks.
+- Campaign wordmark: `wordmark-light.svg` / `wordmark-dark.svg`; genuine font outlines, including full descenders. No raster identity is advertised as native SVG.
+- Wide Hero: `hero.webp` / `hero-dark.webp`; mobile: `hero-square.webp` / `hero-square-dark.webp`. Never crop the wide Hero for mobile.
+- Support texture: `texture-light.svg` / `texture-dark.svg` or their PNG forms.
+
+A kit version is independent of a product release. Source Logo adoption is recorded at ba73409bd7326fa1a425e5faa918a285cde42de5. Brand version 1.0.0 is independent of the product package version; kit assembly changes no runtime or product UI. Pin the published Hexly commit and manifest hash when adopting; do not use a mutable `main` URL as the only provenance.
+
+## Rights and history
+
+Existing Azure OpenAI GPT Image 2 artwork. Its original prompt, model response, raw hash and finishing history remain recorded. Owner-held output rights remain subject to provider terms and any referenced third-party rights; this archive does not turn generated artwork into a hand-drawn or native SVG identity.
+
+[Exact source records](provenance.json) · [Study source](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pi-agent-policy/2026-09-14-03). Exact record paths, model/prompt/raw hashes when applicable, finishing source and source revisions are listed in provenance.json. Previous public Logo and family URLs remain valid.
+
+Scope (中文)：统一色系只用于 Hexly 的介绍、档案与宣发画布。官方项目 Logo 和已有动物/标志的形状、核心色彩与原文件不变，各独立产品的完整色板和主题不在修改范围。宣发演绎资产不取代官方 Logo。
+
+## Presentation refinement 1.0.1
+
+This Pi Agent Policy pilot changes support textures and their specimen layout only. The approved Logo, application icons, wordmark, original Hero images and source adoption remain byte-identical to 1.0.0. Hero images retain the earlier quieter texture. The independent project identity remains 1.0.0; no source-repository update is required. No other project's presentation is changed.
+
+[Previous immutable package](../v1.0.0/manifest.json), SHA-256 `eef04f8b568759b2e6623dd41607a323ce5829c50792b288037938e3bf1e5d56`. The historical source recipe and exporter hashes remain verifiable through provenance.json.
+
+## Product-specific surface 1.0.2
+
+Authored SVG geometry replaces the support texture only; no image-model request or new source adoption. The official identity remains 1.0.0. All 51 unchanged files, including the Hero backgrounds, retain their exact earlier bytes. [Parent archive](../v1.0.1/manifest.json), SHA-256 `1a48a57b289873f9db4180a8f92aa519e9798d32440f934ff1cb3cb098923f42`. The former 1.0.0 and 1.0.1 motifs remain available at their immutable URLs.
