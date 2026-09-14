@@ -1,7 +1,9 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
-import scope from "../../docs/brand-textures/2026-09-14/scope-update.json";
+import scope from "../../docs/brand-textures/2026-09-14/scope-update.json" with {
+	type: "json",
+};
 import { readProjects } from "../../src/data/read-projects";
 import { textureManifestProblems } from "../../src/model/brand-manifest";
 
