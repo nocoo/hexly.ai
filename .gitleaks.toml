@@ -1,7 +1,7 @@
 [extend]
 useDefault = true
 
-[allowlist]
+[[allowlists]]
 description = "Generated artifacts and an independently verified stylesheet checksum"
 paths = [
   '''(^|/)node_modules/''',
@@ -14,3 +14,11 @@ regexTarget = "line"
 regexes = [
   '''^\s*"packages/basalt/src/styles/tokens\.css":\s*"fce5aac6e37046de963a65e29b99442327ebb3abe86da3a8677350ed939bfee4",?\s*$''',
 ]
+
+[[allowlists]]
+description = "Literal public R2 directory reported from the font-license inventory entry"
+condition = "AND"
+targetRules = ["generic-api-key"]
+paths = ['''(^|/)docs/assets/inventory\.json$''']
+regexTarget = "match"
+regexes = ['''^key": "brands/dogfight/$''']
