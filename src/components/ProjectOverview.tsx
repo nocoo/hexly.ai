@@ -1,4 +1,5 @@
 import { copy } from "../data/copy";
+import { projectReadmePath } from "../model/catalogue";
 import type { Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 
@@ -12,7 +13,7 @@ export function ProjectOverview({
 	const { overview } = project;
 	if (!overview) return null;
 	const t = copy[locale];
-	const readme = locale === "en" ? "docs/README.en.md" : "README.md";
+	const readme = projectReadmePath(project, locale);
 
 	return (
 		<section

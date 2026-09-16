@@ -8,6 +8,7 @@ import {
 	isChromeWebStoreProject,
 	loadProjects,
 	parseCatalogue,
+	projectReadmePath,
 	selectedProject,
 } from "../../src/model/catalogue";
 import type { Project, ProjectOverview } from "../../src/model/project";
@@ -27,6 +28,16 @@ const overview: ProjectOverview = {
 };
 
 describe("the imported project catalogue", () => {
+	it("links both evidenced bilingual README layouts", () => {
+		const journey = projects.find(
+			(project) => project.id === "diorama-journey",
+		);
+		if (!journey) throw new Error("Missing Diorama Journey");
+		expect(projectReadmePath(journey, "en")).toBe("README.md");
+		expect(projectReadmePath(journey, "zh")).toBe("README.zh-CN.md");
+		expect(projectReadmePath(frogie, "en")).toBe("docs/README.en.md");
+		expect(projectReadmePath(frogie, "zh")).toBe("README.md");
+	});
 	it("recognizes the two evidenced Chrome store destinations without duplicating URLs", () => {
 		expect(
 			projects
@@ -50,7 +61,7 @@ describe("the imported project catalogue", () => {
 		);
 	});
 	it("includes the listed projects with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(75);
+		expect(projects).toHaveLength(76);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
@@ -95,7 +106,7 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(55);
+		expect(counts.all).toBe(56);
 		expect(counts.archive).toBe(20);
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);

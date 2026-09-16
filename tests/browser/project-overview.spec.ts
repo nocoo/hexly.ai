@@ -40,7 +40,11 @@ test("unpublished projects keep their overview without unavailable README links"
 for (const theme of ["light", "dark"] as const) {
 	test.describe(`${theme} project overview`, () => {
 		test.use({ colorScheme: theme });
-		for (const id of ["snaky", "steed"]) {
+		for (const [id, readmes] of [
+			["snaky", { en: "docs/README.en.md", zh: "README.md" }],
+			["steed", { en: "docs/README.en.md", zh: "README.md" }],
+			["diorama-journey", { en: "README.md", zh: "README.zh-CN.md" }],
+		] as const) {
 			test(`${id} translates its goal, badges and README link`, async ({
 				page,
 				isMobile,
@@ -86,7 +90,7 @@ for (const theme of ["light", "dark"] as const) {
 						}),
 					).toHaveAttribute(
 						"href",
-						`${project.repository}/blob/main/${locale === "en" ? "docs/README.en.md" : "README.md"}`,
+						`${project.repository}/blob/main/${readmes[locale]}`,
 					);
 					await section.scrollIntoViewIfNeeded();
 					await page.evaluate(() => document.fonts.ready);

@@ -7,7 +7,10 @@ import {
 	brandSourceLabel,
 	projectTexture,
 } from "../src/model/brand";
-import { isChromeWebStoreProject } from "../src/model/catalogue";
+import {
+	isChromeWebStoreProject,
+	projectReadmePath,
+} from "../src/model/catalogue";
 
 const projects = readProjects();
 await mkdir("docs/profiles", { recursive: true });
@@ -120,7 +123,7 @@ Small-size observation: ${family.sizeNote.en}
 	const overview = project.overview;
 	const snapshot = overview?.verified.snapshot;
 	const overviewEvidence = overview?.verified.revision
-		? `- [中文 README](${project.repository}/blob/main/README.md) · [English README](${project.repository}/blob/main/docs/README.en.md)
+		? `- [中文 README](${project.repository}/blob/main/${projectReadmePath(project, "zh")}) · [English README](${project.repository}/blob/main/${projectReadmePath(project, "en")})
 - Verified: ${overview.verified.date}; [source revision](${project.repository}/tree/${overview.verified.revision})
 - Source files: ${overview.verified.sources.map((path) => `[\`${path}\`](${project.repository}/blob/${overview.verified.revision}/${path})`).join(", ")}`
 		: overview && snapshot
