@@ -21,7 +21,7 @@ test("publishes the scoped schema and all 55 active brand archives through canon
 	const catalogue = await (await request.get("/data/projects.json")).json();
 	expect(
 		catalogue.filter((p: { archived: boolean }) => !p.archived),
-	).toHaveLength(55);
+	).toHaveLength(56);
 	for (const project of targets)
 		expect(sitemap).toContain(
 			`<loc>https://hexly.ai/projects/${project.id}</loc>`,
