@@ -19,7 +19,9 @@ import type { Project } from "../../src/model/project";
 const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const projects = readProjects();
-const baselineProjects = projects.filter((p) => p.id !== "pi-agent-policy");
+const baselineProjects = projects.filter(
+	(p) => !["pi-agent-policy", "diorama-journey"].includes(p.id),
+);
 const targetIds = inventory.projects
 	.filter((p) => p.scope === "target")
 	.map((p) => p.id);
@@ -37,7 +39,7 @@ describe("complete Hexly campaign archives", () => {
 		);
 		expect(targets).toHaveLength(54);
 		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(54);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(55);
+		expect(projects.filter((p) => !p.archived)).toHaveLength(56);
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);

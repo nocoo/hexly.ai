@@ -1,0 +1,98 @@
+{
+	"schemaVersion": 1,
+	"project": "diorama-journey",
+	"kind": "screenshots",
+	"asset": "example",
+	"version": "1.0.0",
+	"role": "project-media",
+	"importedAt": "2026-09-16T23:39:17.290Z",
+	"bucket": "hexlyai",
+	"origin": "https://h.no.mt",
+	"source": {
+		"repository": "https://github.com/nocoo/diorama-journey",
+		"revision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc",
+		"path": "docs/images/example.jpg",
+		"url": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/docs/images/example.jpg",
+		"sha256": "d3153607e4503f46045b923def1fcf53cc0ab0a41a7c872eeb7710e1f4bcec5c",
+		"bytes": 90170,
+		"modifiedAt": "2026-09-16T23:11:46.164Z",
+		"rights": {
+			"license": "MIT",
+			"source": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/LICENSE",
+			"localNotice": "docs/assets/diorama-journey/screenshots/LICENSE"
+		},
+		"note": "The existing project-owned example image, imported with its whole original canvas. Not the separate Raven reference. No image generation, crop or recolor during intake."
+	},
+	"alt": {
+		"en": "The original miniature story example, with an amber lantern, cream gateway and connected chapter scenes.",
+		"zh": "原始微缩叙事示例，包含琥珀灯笼、奶油色拱门与相互连接的章节场景。"
+	},
+	"artifacts": [
+		{
+			"variant": "original",
+			"path": "/screenshots/diorama-journey/example/v1.0.0/original.jpg",
+			"key": "projects/diorama-journey/screenshots/example/v1.0.0/original-d3153607e450.jpg",
+			"url": "https://h.no.mt/projects/diorama-journey/screenshots/example/v1.0.0/original-d3153607e450.jpg",
+			"width": 1600,
+			"height": 900,
+			"bytes": 90170,
+			"sha256": "d3153607e4503f46045b923def1fcf53cc0ab0a41a7c872eeb7710e1f4bcec5c",
+			"contentType": "image/jpeg",
+			"transform": "unchanged source bytes"
+		},
+		{
+			"variant": "preview",
+			"path": "/screenshots/diorama-journey/example/v1.0.0/preview.webp",
+			"key": "projects/diorama-journey/screenshots/example/v1.0.0/preview-a3e9422bc781.webp",
+			"url": "https://h.no.mt/projects/diorama-journey/screenshots/example/v1.0.0/preview-a3e9422bc781.webp",
+			"width": 1600,
+			"height": 900,
+			"bytes": 50988,
+			"sha256": "a3e9422bc781a5d10f0e1a1429967c858ce700ef8fc9ad39a93aca9962d84971",
+			"contentType": "image/webp",
+			"derivedFrom": "d3153607e4503f46045b923def1fcf53cc0ab0a41a7c872eeb7710e1f4bcec5c",
+			"transform": {
+				"tool": "sharp",
+				"version": "0.35.4",
+				"fit": "inside",
+				"width": 1600,
+				"height": 1600,
+				"withoutEnlargement": true,
+				"webpQuality": 92,
+				"effort": 6,
+				"crop": false,
+				"recolor": false
+			}
+		},
+		{
+			"variant": "thumbnail",
+			"path": "/screenshots/diorama-journey/example/v1.0.0/thumbnail.webp",
+			"key": "projects/diorama-journey/screenshots/example/v1.0.0/thumbnail-19c9bb49be55.webp",
+			"url": "https://h.no.mt/projects/diorama-journey/screenshots/example/v1.0.0/thumbnail-19c9bb49be55.webp",
+			"width": 320,
+			"height": 180,
+			"bytes": 3654,
+			"sha256": "19c9bb49be554ea1d5fd6ee7d912f6728357d60c8b60609caff55d670b94c527",
+			"contentType": "image/webp",
+			"derivedFrom": "d3153607e4503f46045b923def1fcf53cc0ab0a41a7c872eeb7710e1f4bcec5c",
+			"transform": {
+				"tool": "sharp",
+				"version": "0.35.4",
+				"fit": "inside",
+				"width": 320,
+				"height": 320,
+				"withoutEnlargement": true,
+				"webpQuality": 82,
+				"effort": 6,
+				"crop": false,
+				"recolor": false
+			}
+		}
+	],
+	"publication": {
+		"state": "published",
+		"receipt": "docs/assets/publication.jsonl",
+		"verifiedAt": "2026-09-16T23:59:39.729Z",
+		"verification": "Each original/preview/thumbnail passed full-byte SHA-256 and MIME verification on the canonical CDN URL."
+	}
+}

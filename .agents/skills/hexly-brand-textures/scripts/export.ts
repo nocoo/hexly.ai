@@ -184,8 +184,11 @@ for (const row of rows) {
 		const response = await readJson(`${run}/response.json`);
 		assert.equal(approval.status, "approved");
 		assert.equal(approval.imageSha256, sha(raw));
-		assert.equal(approval.ownerReviewedExactBytes, false);
-		assert.equal(approval.acceptance, "delegated-agent");
+		assert(["delegated-agent", "owner"].includes(approval.acceptance));
+		assert.equal(
+			approval.ownerReviewedExactBytes,
+			approval.acceptance === "owner",
+		);
 		assert.equal(response.status, "succeeded");
 		assert.equal(response.outputs.length, 1);
 		assert.equal(response.outputs[0].sha256, sha(raw));
@@ -293,8 +296,8 @@ for (const row of rows) {
 			width: 1024,
 			height: 1024,
 		},
-		acceptance: "delegated-agent",
-		ownerReviewedExactBytes: false,
+		acceptance: source.approval.acceptance,
+		ownerReviewedExactBytes: source.approval.ownerReviewedExactBytes,
 		crop: false,
 		recolor: false,
 	}));
@@ -357,7 +360,7 @@ for (const row of rows) {
 		`Hexly campaign texture pack: ${row.title} / ${row.version}\n\nGenerated PNG/WebP: Azure OpenAI gpt-image-2.5-flare, commissioned by the owner under applicable provider terms. Original native PNGs retain their metadata. No third-party reference image or font was submitted. This is generated raster decoration, not a native SVG or hand-drawn artwork; no new exclusive trademark claim is made.\n\nThis pack does not copy or relicense the project Logo, fonts, icons or Hero. Their original bytes, rights and existing kit remain authoritative. The review page uses Hexly's separately licensed Space Grotesk font (SIL OFL 1.1) through the existing site font URL.\n\nAuthored code, prompts, documentation and assembly:\n\n${await readFile("LICENSE", "utf8")}\n`,
 		"Generated-output terms, MIT authored material, separate original identity and font rights",
 	);
-	const guide = `# ${row.title} — ${row.design.name.en}\n\n${row.design.description.en}\n\n${row.design.description.zh}\n\n## Scope\n\nThis v${row.version} texture pack is independent of the existing Logo/brand kit. It decorates Hexly project pages and Hexly-created campaigns; it does not change the product's identity, palette, UI, release or archived status. Preserve official Logo bytes and colors: ${row.officialProjectIdentity.sha256}.\n\n${row.design.rationale}\n\n## Use\n\nUse texture-light.webp or texture-dark.webp for full specimens. The PNGs are untouched native 1024 × 1024 responses; the WebP files are whole-canvas delivery encodings. Use the -320.webp files for cards. Light and dark were generated independently with the actual Workflow GPT Image Flare helper.\n\nKeep aspect ratio 1:1, background-size: contain and background-repeat: no-repeat. Do not crop, stretch, mirror, patch edges or claim seamless repetition. Full specimens show the image at full opacity. Text-bearing regions use a separate background layer at opacity ${opacity}, softly masked at the left edge; text and Logo remain fully opaque. Use Hexly's real paper/ink tokens and minimum 4.5:1 normal text contrast. Measured worst-case contrasts at export are ${contrasts[0]?.toFixed(3)}:1 light and ${contrasts[1]?.toFixed(3)}:1 dark, including normal/hover surface colors before the mask.\n\n## Exact generation and reuse\n\nRead texture-light-prompt.txt and texture-dark-prompt.txt, plus the source request/response and raw-review records. The user delegated acceptance for this batch; Codex inspected the raw canvases. No claim is made that the user personally reviewed these bytes. Reuse the accepted files directly instead of regenerating them for each campaign. Check manifest.json hashes before adopting.\n\nSource batch: ${values.inventory}\nOriginal source study: ${row.study}\nExisting identity kit: ${row.existingKit?.root ?? "None; the archived original/emoji identity is retained."}\n\nOld kit texture URLs remain historical and byte-identical. New texture revisions use a new independent pack version and an updated Project.brandTexture reference. Publication receipts remain in docs/assets/publication.jsonl; recover exact URLs with bun run assets:r2 -- url ${row.root}/manifest.json.\n`;
+	const guide = `# ${row.title} — ${row.design.name.en}\n\n${row.design.description.en}\n\n${row.design.description.zh}\n\n## Scope\n\nThis v${row.version} texture pack is independent of the existing Logo/brand kit. It decorates Hexly project pages and Hexly-created campaigns; it does not change the product's identity, palette, UI, release or archived status. Preserve official Logo bytes and colors: ${row.officialProjectIdentity.sha256}.\n\n${row.design.rationale}\n\n## Use\n\nUse texture-light.webp or texture-dark.webp for full specimens. The PNGs are untouched native 1024 × 1024 responses; the WebP files are whole-canvas delivery encodings. Use the -320.webp files for cards. Light and dark were generated independently with the actual Workflow GPT Image Flare helper.\n\nKeep aspect ratio 1:1, background-size: contain and background-repeat: no-repeat. Do not crop, stretch, mirror, patch edges or claim seamless repetition. Full specimens show the image at full opacity. Text-bearing regions use a separate background layer at opacity ${opacity}, softly masked at the left edge; text and Logo remain fully opaque. Use Hexly's real paper/ink tokens and minimum 4.5:1 normal text contrast. Measured worst-case contrasts at export are ${contrasts[0]?.toFixed(3)}:1 light and ${contrasts[1]?.toFixed(3)}:1 dark, including normal/hover surface colors before the mask.\n\n## Exact generation and reuse\n\nRead texture-light-prompt.txt and texture-dark-prompt.txt, plus the source request/response and raw-review records. ${sources.map((source) => `${source.theme}: ${source.approval.acceptance === "owner" ? "the owner reviewed and approved these exact native bytes" : "the owner delegated acceptance and Codex inspected the raw canvas; no personal owner review is claimed"}.`).join(" ")} Reuse the accepted files directly instead of regenerating them for each campaign. Check manifest.json hashes before adopting.\n\nSource batch: ${values.inventory}\nOriginal source study: ${row.study}\nExisting identity kit: ${row.existingKit?.root ?? "None; the archived original/emoji identity is retained."}\n\nOld kit texture URLs remain historical and byte-identical. New texture revisions use a new independent pack version and an updated Project.brandTexture reference. Publication receipts remain in docs/assets/publication.jsonl; recover exact URLs with bun run assets:r2 -- url ${row.root}/manifest.json.\n`;
 	add(
 		"guide.md",
 		guide,

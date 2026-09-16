@@ -8,6 +8,7 @@ export type Category =
 	| "everyday"
 	| "design"
 	| "games"
+	| "skills"
 	| "extensions"
 	| "archive";
 
@@ -131,6 +132,7 @@ export interface Project {
 	subject: string;
 	reference: boolean;
 	archived: boolean;
+	socialImage?: string;
 	logo: {
 		kind: "original" | "emoji";
 		original: string;

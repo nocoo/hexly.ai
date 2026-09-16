@@ -51,7 +51,9 @@ export function absoluteUrl(path: string): string {
 
 export function socialImage(project?: Project): string {
 	if (!project) return assetUrl(`${siteOrigin}/og.jpg`);
-	return assetUrl(`${siteOrigin}/og/${project.id}.jpg`);
+	return assetUrl(
+		`${siteOrigin}${project.socialImage ?? `/og/${project.id}.jpg`}`,
+	);
 }
 
 export interface ShareImage {

@@ -72,7 +72,7 @@ def generate_one(row, theme, attempt):
             "helperModified": False,
             "recorder": ".agents/skills/hexly-brand-textures/scripts/generate.py",
             "recorderSha256": sha(Path(__file__).read_bytes()),
-            "modelSelection": "Owner selected Flare for decorative surfaces and delegated the active-project rollout; archived and primary identity generation are out of scope.",
+            "modelSelection": "Owner selected Flare for decorative surfaces. Generation scope and acceptance authorization are recorded in this batch inventory; primary identity generation is separate.",
         })
         try:
             with native_open(request, **kwargs) as response:
@@ -135,7 +135,7 @@ def generate_one(row, theme, attempt):
         save(run / "raw-review.json", {
             "status": "pending", "imageSha256": sha(output.read_bytes()), "recordedAt": now(),
             "ownerReviewedExactBytes": False, "scope": "Hexly campaign decoration only; original Logo unchanged.",
-            "nextStep": "Agent must inspect the complete raw canvas under the owner's delegated acceptance before derivatives or integration.",
+            "nextStep": "Show the complete native canvas and record exact-byte owner approval, or an explicit batch delegation plus agent inspection, before derivatives or integration.",
         })
         print(f"Generated {row['id']}/{run.name} in {time.monotonic()-started:.1f}s", flush=True)
         return 0

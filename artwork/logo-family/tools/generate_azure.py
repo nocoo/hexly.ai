@@ -31,6 +31,9 @@ def main():
     parser.add_argument("--run-dir", required=True, type=Path)
     parser.add_argument("--image", action="append", required=True, type=Path)
     parser.add_argument("--size", default="2048x2048")
+    parser.add_argument("--model", default="gpt-image-2.5-sunburst", choices=[
+        "gpt-image-2.5-sunburst", "gpt-image-2.5-flare", "gpt-image-2",
+    ])
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
     prompt_path = run_dir / "prompt.txt"
@@ -55,10 +58,10 @@ def main():
         and max(width, height) / min(width, height) <= 3
         and 655360 <= width * height <= 8294400
     ):
-        parser.error("Size is outside the documented gpt-image-2 limits.")
+        parser.error("Size is outside the documented GPT Image limits.")
 
     fields = {
-        "model": "gpt-image-2",
+        "model": args.model,
         "prompt": prompt,
         "size": args.size,
         "quality": "high",
@@ -109,7 +112,7 @@ def main():
         "Content-Type": f"multipart/form-data; boundary={boundary}",
     })
     started = time.monotonic()
-    print(f"Requesting gpt-image-2 {args.size}, high quality, {len(references)} reference images.", flush=True)
+    print(f"Requesting {args.model} {args.size}, high quality, {len(references)} reference images.", flush=True)
     try:
         with urlopen(request, timeout=600) as response:
             body = json.loads(response.read())

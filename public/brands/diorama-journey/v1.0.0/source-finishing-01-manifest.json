@@ -1,0 +1,399 @@
+{
+	"createdAt": "2026-09-16T23:28:42.026Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "068e443f48b66c4508508b2ea597251eb688f082807e06ae579f4925601088c2",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "diorama-journey",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#e3e8d9",
+			"light": "#f4f4e9",
+			"shade": "#cad3be",
+			"motif": "#91a183",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60917001,
+			"motifOpacity": 0.27,
+			"highlightOpacity": 0.38,
+			"ribbonOpacity": 0.12,
+			"pattern": {
+				"name": "Chapter gates on an architectural model-making sheet",
+				"description": "Shallow arch construction lines, paired registration ticks and a turning route between small chapter stations. Pressed into sage model-making paper, the geometry connects the project's physical gateways with its continuous story timeline; it is unique to Diorama Journey.",
+				"layers": [
+					{
+						"d": "M92 338V226A91 91 0 0 1 274 226V292 M114 336V228A69 69 0 0 1 252 228V292 M73 211H110 M91 193V229 M257 211H294 M276 193V229",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M95 338V227A88 88 0 0 1 271 227V292 M117 336V229A66 66 0 0 1 249 229V292",
+						"tone": "highlight",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M666 112H726Q766 112 766 152V176 M786 197H878V291 M872 300H893 M882 290V311 M655 112h-18 M647 103v18 M808 150v-16 M830 150v-16 M852 150v-16",
+						"tone": "motif",
+						"strokeWidth": 1.5
+					},
+					{
+						"d": "M667 115H725Q763 115 763 153V176 M786 200H875V291",
+						"tone": "highlight",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M112 579V635Q112 682 153 700L196 719 M126 598h-27 M126 624h-27 M857 625V685Q857 727 823 747 M301 912H392Q427 912 454 895L486 876 M324 902v20 M350 902v20 M376 902v20",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M115 579V634Q115 679 154 697L198 716 M854 625V684Q854 726 821 744 M302 915H392Q428 915 456 898L488 879",
+						"tone": "highlight",
+						"strokeWidth": 0.8
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					92,
+					111,
+					78
+				],
+				"opacity": 0.17,
+				"blurAt2048": 48,
+				"offsetAt2048": [
+					12,
+					628
+				],
+				"projectionScale": [
+					0.83,
+					0.2
+				]
+			},
+			{
+				"color": [
+					96,
+					110,
+					81
+				],
+				"opacity": 0.11,
+				"blurAt2048": 16,
+				"offsetAt2048": [
+					3,
+					12
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.94,
+			"offsetAt2048": [
+				0,
+				-12
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniformly inset the complete approved miniature, with no crop or repositioning of its parts. Preserve the base, arch cap, trees, ring and lantern. Require 128 px clearance from the actual rounded-square outline."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 15,
+			"backgroundRgb": [
+				251,
+				251,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [
+				[
+					1024,
+					550
+				],
+				[
+					1024,
+					650
+				]
+			],
+			"calibrationNote": "The modal outer-eight-pixel matte is (251,251,252), with minimum native border channel 241. Seed the real arch opening above the gold ring and the white space inside the ring. The lantern handle contains a physical cream paver behind it (242,226,200 at 964,1150), so it is deliberately not seeded. Warm ivory stone, mint surfaces, brass, highlights and intrinsic model shadows remain opaque; no global white deletion or component cleanup."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2245394,
+		"foregroundPixels": 1948910,
+		"softEdgePixels": 21460,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 162,
+			"top": 177,
+			"right": 1887,
+			"bottom": 1869
+		}
+	},
+	"placement": {
+		"scale": 0.94,
+		"offsetAt2048": [
+			0,
+			-12
+		],
+		"bounds": {
+			"left": 213,
+			"top": 215,
+			"right": 1835,
+			"bottom": 1806
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 212.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3288,
+			"sha256": "78113aec70875cd290d42994d9f038a6819650e4d1457fb89e2ad346f38a471c"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 2243,
+			"sha256": "b0c908f2cad1273d842936fc01a04f8617f75fbd2ea6cbf25362585e949ecdd5"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4502680,
+			"sha256": "b78f1652752f63c314abff4bcebc33a89852aff118e6ce9ea3c8d49209acc23d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 96483,
+			"sha256": "56a4e712493f13bd212acb0bcdfacb603c99cfa1e59ab173849cb8ef2f3a0f92"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1539,
+			"sha256": "9518cb92ad731fa8c002eda75e0bd88eeae57422c26b069fb4e51ff6def5c694"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1638463,
+			"sha256": "9efe37790e1ee8e3cd9554573693d869659d1fdbef1da082a1d6a959c9c5b5bf"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4115562,
+			"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 124312,
+			"sha256": "296d7d369ee4d98ffa6601d733552d5ae55cdd2f3c9935a968e337bfa4888602"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 121375,
+			"sha256": "62937142d431449f12f3eface1b147bcdc74dcf6e96eefde24f56ed9a84cff4e"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 200517,
+			"sha256": "6f19e09b5ea26a716251a20a363d858a6661a37c74ad4d296ff8b45086b924d0"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-2048.png",
+			"bytes": 4115562,
+			"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851"
+		},
+		{
+			"path": "exports/diorama-journey-icon-2048.png",
+			"bytes": 5393027,
+			"sha256": "f083465c5d36cd00a482e0fd921bc0b6cf44b3baaacbd10af6005da14ce1baa1"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-2048.png",
+			"bytes": 5330932,
+			"sha256": "be60f28160278655e809621597608111d6aa05a9484aae25194d8530d0be0bcf"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-1024.png",
+			"bytes": 1070052,
+			"sha256": "a9f427d533a37cde82399fb1b4cf696e5b26cb578c7bb66ad68dd57c54fbe2f6"
+		},
+		{
+			"path": "exports/diorama-journey-icon-1024.png",
+			"bytes": 1315105,
+			"sha256": "bbcd05cf551ffdb73aedc6498a071c53f21992cf276da7e551d5be9513a928ff"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-1024.png",
+			"bytes": 1319948,
+			"sha256": "4c184166a7e5724a09acda93ba05c3fe72f07fab05c39138554087974fdfc631"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-512.png",
+			"bytes": 287650,
+			"sha256": "5702e38102c14eb7a77050b1c01b64f8a27a6a171caf166a2685b5d23b82162d"
+		},
+		{
+			"path": "exports/diorama-journey-icon-512.png",
+			"bytes": 376954,
+			"sha256": "c0963a08a4c44077137c47a4199b57d9d0ce9fbb46058f5e77e4afded777c4da"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-512.png",
+			"bytes": 379550,
+			"sha256": "3fdcfdf7a8dd3cd00e1001b91c328527810a67da5d8e8cff55bcb02803b47014"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-256.png",
+			"bytes": 81683,
+			"sha256": "1df9b545ccc088a6e04695c064ce1b379c2c8bd9eae2b5cafab4c3092345e5c5"
+		},
+		{
+			"path": "exports/diorama-journey-icon-256.png",
+			"bytes": 93467,
+			"sha256": "f432e273c32812f967122e73c90e4b8e288fa27d0aec703e95b1b65f298547f0"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-256.png",
+			"bytes": 97267,
+			"sha256": "ac39a14de0105b76245f5be16a962676e9183a737dcab08474ceaa69c9d9ff23"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-128.png",
+			"bytes": 23862,
+			"sha256": "1c9109233e9efdc0032299ed1bf98265f9de171bca8308676cc3bfb4a9f02117"
+		},
+		{
+			"path": "exports/diorama-journey-icon-128.png",
+			"bytes": 27498,
+			"sha256": "59d71447f84dbea753f0bf8340f6e816cfe4af280c6cda33b5b62300a4fbb687"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-128.png",
+			"bytes": 29449,
+			"sha256": "c22f62b4942220b556d44afddaaef51e1b0d47783ef17fc4cc2e4a37fe9f4ffa"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-64.png",
+			"bytes": 7144,
+			"sha256": "8dda1e0c1d6d025366c1cd1752f77da9957c6378b3ed92a5094b44b165f5e950"
+		},
+		{
+			"path": "exports/diorama-journey-icon-64.png",
+			"bytes": 8649,
+			"sha256": "79d151ed4863976fad346f8690662bcc5b084139feb5eb210c5eb7f4c7077fc1"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-64.png",
+			"bytes": 9365,
+			"sha256": "566b5d089a662ef766d9edecb9fc7ba8c14f9427db6422b658d49f56ad8c68a8"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-48.png",
+			"bytes": 4415,
+			"sha256": "62929d0177e085fad036bd955c269aa4df6885f8cef6637229721c380e8c3a9c"
+		},
+		{
+			"path": "exports/diorama-journey-icon-48.png",
+			"bytes": 5234,
+			"sha256": "e58c2668faa8de5aa28fd1ed2115269a0556d5531efc91e9829a8823e977d040"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-48.png",
+			"bytes": 5805,
+			"sha256": "2999152a279aa34a462dec91dea309fe5de570dc4e129b94cc5f65a95bae8e8e"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-32.png",
+			"bytes": 2286,
+			"sha256": "63e971e44f636b0b4bd574e4b1c35ab223b8f61ff55da4f63a6715ae17b0ec99"
+		},
+		{
+			"path": "exports/diorama-journey-icon-32.png",
+			"bytes": 2732,
+			"sha256": "d12900d2ad34f3baffbb9ba461998bf853cac44e7c2dbafb65699939768df95d"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-32.png",
+			"bytes": 2974,
+			"sha256": "58a840143f09f2c5845581583660d65b61c1758f00d1660450c3cfe965d5b445"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-24.png",
+			"bytes": 1500,
+			"sha256": "e9a62aac16b4767b0dd977da30680b9877e1655a2a8ec27e8bdf078758de65bb"
+		},
+		{
+			"path": "exports/diorama-journey-icon-24.png",
+			"bytes": 1717,
+			"sha256": "821d977c0c1474d57958c9a525e439056f20b2671d4dac3250bb1b4061d6b019"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-24.png",
+			"bytes": 1888,
+			"sha256": "869c2b40a29f4002121162a67199de3159ae8609aba22e958c8709e8172e8aa9"
+		},
+		{
+			"path": "exports/diorama-journey-transparent-16.png",
+			"bytes": 814,
+			"sha256": "d1dcdaf8b2155ef9dad936942e12dd0cbabd0f5b70183beb34aebc34a849e43b"
+		},
+		{
+			"path": "exports/diorama-journey-icon-16.png",
+			"bytes": 892,
+			"sha256": "26a724683023dfd97e99dea8c31f25dba722379e415691fb7b992e05d15f2dc7"
+		},
+		{
+			"path": "exports/diorama-journey-rounded-16.png",
+			"bytes": 948,
+			"sha256": "5b72a4c287917ea4affdaf9bfbfa771cfe10e1b812a0049c969678a29805a385"
+		},
+		{
+			"path": "exports/diorama-journey-white-2048.png",
+			"bytes": 3898809,
+			"sha256": "078f5c9ea5ab03269316714ab943c0f36f9e028a0d9a62500eb3fe230095f369"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1019999,
+			"sha256": "52afda5887330775e6b7d491e225f42beb38e26b256c8cc9c04efd8942047ae8"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1030713,
+			"sha256": "879144cdfdf86e60f41c58ab9bca150a660981509d58671317858b515e60b2d8"
+		}
+	]
+}

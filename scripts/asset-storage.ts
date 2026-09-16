@@ -223,7 +223,7 @@ export async function inventory() {
 					path &&
 					(path === p.logo.original ||
 						path.startsWith(`/logos/display/${p.id}-`) ||
-						path === `/og/${p.id}.jpg` ||
+						path === (p.socialImage ?? `/og/${p.id}.jpg`) ||
 						path.startsWith(`/brands/${p.id}/`) ||
 						path.startsWith(`/textures/${p.id}/`) ||
 						(p.family && path.startsWith(`${p.family.root}/`))),

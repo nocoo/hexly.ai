@@ -30,6 +30,8 @@ Previous originals retain their filenames and checksums. Every new raw image sto
 
 Generation uses the Azure Foundry endpoint and `api-key` authentication documented in `workflow/agents/skills/agi-image-generation/SKILL.md`. Credentials are supplied by workflow's direnv environment. No credentials or raw authenticated HTTP headers belong in this directory.
 
+New Logo requests default to `gpt-image-2.5-sunburst` under the owner's September 14 model policy. Pass `--model gpt-image-2.5-sunburst` explicitly; the helper preserves the selected deployment in each request. Historical `gpt-image-2` records and frozen tool snapshots remain unchanged. Decorative textures follow their separate Flare workflow.
+
 The workflow skill `zhengli-project-logo` captures the family rules, prompt template, review requirements, and source/site promotion flow.
 
 For an approved existing identity, preserve its animal, camera, pose, expression, composition, and signature decoration unless the owner requests a specific change. For an explicitly disliked identity, preserve the animal and redesign camera, pose, framing, and decoration. Large animals use head portraits; small animals may use compact full-body poses.

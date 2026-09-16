@@ -102,19 +102,20 @@ for (const project of projects) {
 		throw new Error(`Original checksum changed: ${project.id}`);
 	for (const size of [32, 64, 160, 256, 512, 1024]) {
 		const meta = await sharp(
-			`public/logos/display/${project.id}-${size}.webp`,
+			`public${project.logo.display.replace(/1024\.webp$/, `${size}.webp`)}`,
 		).metadata();
 		if (meta.width !== size || meta.height !== size)
 			throw new Error(`Incorrect derivative dimensions: ${project.id}/${size}`);
 	}
-	const social = await sharp(`public/og/${project.id}.jpg`).metadata();
+	const socialPath = `public${project.socialImage ?? `/og/${project.id}.jpg`}`;
+	const social = await sharp(socialPath).metadata();
 	if (
 		social.format !== "jpeg" ||
 		social.width !== 1200 ||
 		social.height !== 630
 	)
 		throw new Error(`Incorrect social image: ${project.id}`);
-	const socialBytes = await readFile(`public/og/${project.id}.jpg`);
+	const socialBytes = await readFile(socialPath);
 	if (socialBytes.byteLength > 400_000)
 		throw new Error(`Social image too large: ${project.id}`);
 	if (project.family) {

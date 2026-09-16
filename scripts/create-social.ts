@@ -127,7 +127,7 @@ const cards = [
 		projects.map(async (project) => {
 			const art = await artworkSrc(project);
 			return {
-				file: `${directory}/${project.id}.jpg`,
+				file: `public${project.socialImage ?? `/og/${project.id}.jpg`}`,
 				html: cardHtml({
 					label: categoryLabels.en[project.category].toUpperCase(),
 					title: project.title,

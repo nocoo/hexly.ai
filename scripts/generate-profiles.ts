@@ -7,7 +7,10 @@ import {
 	brandSourceLabel,
 	projectTexture,
 } from "../src/model/brand";
-import { isChromeWebStoreProject } from "../src/model/catalogue";
+import {
+	isChromeWebStoreProject,
+	projectReadmePath,
+} from "../src/model/catalogue";
 
 const projects = readProjects();
 await mkdir("docs/profiles", { recursive: true });
@@ -76,7 +79,9 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 	const retained = family?.method === "retained-original";
 	const material = family?.series === "material";
 	const toolWithoutStudy =
-		!family && !project.archived && project.category === "tools";
+		!family &&
+		!project.archived &&
+		(project.category === "tools" || project.category === "skills");
 	const adapted = family?.method === "reference-adaptation";
 	const supplied = retained || adapted;
 	const sourceFile = adapted
@@ -120,7 +125,7 @@ Small-size observation: ${family.sizeNote.en}
 	const overview = project.overview;
 	const snapshot = overview?.verified.snapshot;
 	const overviewEvidence = overview?.verified.revision
-		? `- [中文 README](${project.repository}/blob/main/README.md) · [English README](${project.repository}/blob/main/docs/README.en.md)
+		? `- [中文 README](${project.repository}/blob/main/${projectReadmePath(project, "zh")}) · [English README](${project.repository}/blob/main/${projectReadmePath(project, "en")})
 - Verified: ${overview.verified.date}; [source revision](${project.repository}/tree/${overview.verified.revision})
 - Source files: ${overview.verified.sources.map((path) => `[\`${path}\`](${project.repository}/blob/${overview.verified.revision}/${path})`).join(", ")}`
 		: overview && snapshot
@@ -161,7 +166,7 @@ ${screenshots.map((shot) => `- ${shot.alt.en} / ${shot.alt.zh} (${shot.width} ×
 ## Profile
 
 - Repository: [nocoo/${project.repo}](${project.repository})
-- ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : "No current website verified; navigation opens the repository."}
+- ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : project.category === "skills" ? "Installable skill; navigation opens the repository." : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
 - Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})

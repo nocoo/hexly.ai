@@ -72,9 +72,10 @@ bun .agents/skills/hexly-brand-textures/scripts/export.ts \
   --output .video-work/texture-adoptions.json
 ```
 
-The current exporter accepts the documented delegated acceptance. An owner-reviewed
-new batch must adapt the exact acceptance check truthfully, not relabel it as agent
-review. It refuses unknown partial outputs or inventoried namespace changes and
+The exporter accepts either exact-byte owner approval (`acceptance: "owner"`,
+`ownerReviewedExactBytes: true`) or explicit delegated acceptance
+(`acceptance: "delegated-agent"`, `ownerReviewedExactBytes: false`). Preserve the
+actual acceptance in the manifest and provenance. It refuses unknown partial outputs or inventoried namespace changes and
 verifies original Logo/pixel and existing kit hashes. Reviewed packs contain:
 
 - `texture-{light,dark}.png`: unchanged 1024² native responses, including metadata.

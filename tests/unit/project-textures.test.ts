@@ -18,6 +18,7 @@ import { catalogueProblems } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
 
 const projects = readProjects();
+const baselineProjects = projects.filter((p) => p.id !== "diorama-journey");
 const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const json = async (path: string) => JSON.parse(await readFile(path, "utf8"));
@@ -25,22 +26,22 @@ const fixture = await json("public/textures/frogie/v1.0.0/manifest.json");
 
 describe("independent campaign textures", () => {
 	it("covers active projects, retains completed archives and preserves original identity, metadata and old kits", async () => {
-		expect(projects.map((p) => p.id)).toEqual(
+		expect(baselineProjects.map((p) => p.id)).toEqual(
 			baseline.projects.map((p) => p.id),
 		);
 		expect(
-			projects
+			baselineProjects
 				.filter((p) => p.brandTexture)
 				.map((p) => p.id)
 				.sort(),
 		).toEqual(
 			[...scope.activeProjectIds, ...scope.retainedArchivedProjectIds].sort(),
 		);
-		expect(projects.filter((p) => p.brandTexture)).toHaveLength(
+		expect(baselineProjects.filter((p) => p.brandTexture)).toHaveLength(
 			scope.expectedNewPackCount,
 		);
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
-		for (const project of projects) {
+		for (const project of baselineProjects) {
 			const row = baseline.projects.find((p) => p.id === project.id);
 			if (!row) throw new Error(project.id);
 			const { brandTexture: _texture, ...preserved } = project;
@@ -131,8 +132,8 @@ describe("independent campaign textures", () => {
 				expect(review).toMatchObject({
 					status: "approved",
 					imageSha256: sha(raw),
-					acceptance: "delegated-agent",
-					ownerReviewedExactBytes: false,
+					acceptance: generation.acceptance,
+					ownerReviewedExactBytes: generation.ownerReviewedExactBytes,
 					inspection: {
 						fullCanvas: true,
 						productionCrop: false,
@@ -205,6 +206,16 @@ describe("independent campaign textures", () => {
 
 	it("rejects misattribution, unsafe paths, missing themes and fabricated acceptance", () => {
 		expect(textureManifestProblems(fixture)).toEqual([]);
+		expect(
+			textureManifestProblems({
+				...fixture,
+				generations: fixture.generations.map((generation: object) => ({
+					...generation,
+					acceptance: "owner",
+					ownerReviewedExactBytes: true,
+				})),
+			}),
+		).toEqual([]);
 		expect(textureManifestProblems({}).length).toBeGreaterThan(0);
 		const source = fixture.generations[0];
 		for (const change of [
