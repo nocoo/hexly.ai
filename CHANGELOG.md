@@ -6,6 +6,10 @@
 
 - add diorama journey to catalogue ([8064538](https://github.com/nocoo/hexly.ai/commit/806453892a98b6926255c31e847f92e22cbf65bf))
 
+### Fixes
+
+- update totals for new catalogue entry ([464184b](https://github.com/nocoo/hexly.ai/commit/464184b6dfab0989bb508e7165cacba7fb0e97fc))
+
 ## [0.14.0] - 2026-09-14
 
 ### Features
