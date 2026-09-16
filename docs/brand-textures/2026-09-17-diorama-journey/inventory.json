@@ -1,0 +1,85 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-16T23:37:00.786Z",
+	"siteBaseline": "f329c02ecef74009162e570663fba6f99ec9c26c",
+	"catalogueSource": "src/data/projects/index.json",
+	"catalogueSha256": "24c0f47e62fcd26bd9fea126d41dc3e1a5745796e1be9507c0c7fb84807158d1",
+	"scope": "hexly-campaign",
+	"originalIdentityRecolored": false,
+	"productUIChanged": false,
+	"authorization": {
+		"date": "2026-09-17",
+		"rawAcceptance": "owner-review-required",
+		"publication": true,
+		"sitePublication": "Open and confirm dev before the 0.14.1 release",
+		"quote": "很好，继续后续流程，更新项目README，和本站素材，本站发布Z+1， 发布前打开dev确认"
+	},
+	"model": "gpt-image-2.5-flare",
+	"plannedRequests": 2,
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"existingProjects": 76,
+	"activeProjects": 56,
+	"archivedProjects": 20,
+	"excluded": [
+		"Every project except Diorama Journey"
+	],
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"independentVersions": "First separate supporting texture pack; exact approved Logo bytes remain unchanged.",
+	"projects": [
+		{
+			"id": "diorama-journey",
+			"title": "Diorama Journey",
+			"archived": false,
+			"category": "skills",
+			"sourceMetadataSha256": "81fc5d815950eb7ee54f31fc5819d52afe2f098577b8ceee1e23b4e5dc110f75",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/diorama-journey-family-2026-09-17-01-01.png",
+				"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851",
+				"rgbaSha256": "952801c8db6127b3440dbd223c56cf2c916b83ca6100d8c6a555459c7cb993b5",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4115562,
+				"source": "https://github.com/nocoo/diorama-journey/blob/5a89d9da4d696d812a0aa46c58b94d81b8581b18/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"subject": "A miniature cream gateway with a terracotta cap, sage island and model trees, stone path and amber lantern",
+			"productEvidence": {
+				"description": {
+					"en": "Miniature 3D storytelling with narration, chapter clips and slides",
+					"zh": "通过微缩 3D 场景讲故事，生成配音、分章视频与幻灯片"
+				},
+				"purpose": {
+					"en": "Turn source material into an original narrated miniature 3D journey. A recurring element connects the chapters; the same timeline produces a full film, chapter MP4 clips, subtitles and PPTX/PDF/ODP slides with speaker notes. Install the skill to create an independent project from its starter.",
+					"zh": "把原始材料转成原创的配音微缩 3D 旅程，以一个贯穿元素连接各个章节。同一条时间线导出完整影片、分章 MP4、字幕，以及带演讲备注的 PPTX/PDF/ODP 幻灯片。安装技能后，可从 starter 创建独立项目。"
+				},
+				"source": "src/data/projects/diorama-journey.json",
+				"inspectedRevision": "5a89d9da4d696d812a0aa46c58b94d81b8581b18"
+			},
+			"action": "generate",
+			"study": "artwork/brands/diorama-journey/texture-studies/2026-09-17-flare-01",
+			"version": "1.0.0",
+			"root": "/textures/diorama-journey/v1.0.0",
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": {
+					"en": "A sheet for small worlds",
+					"zh": "搭建小世界的工作纸"
+				},
+				"motif": "Shallow arch construction arcs, paired alignment ticks, five small chapter stations connected by a gently turning route, and faint short measurement strokes, pressed into continuous model-making board.",
+				"description": {
+					"en": "Pressed gateway arcs, alignment ticks and a five-stop chapter route on model-making board.",
+					"zh": "模型工作纸上压印拱门弧线、定位刻度与五站章节路线。"
+				},
+				"rationale": "The original example carries one amber lantern through a gateway, lookout, workshop, bridge and garden. Model-making construction marks connect the physical miniature scenes with the shared chapter timeline. This is a working surface for a 3D storytelling tool, not a botanical habitat or a literal UI diagram."
+			}
+		}
+	]
+}

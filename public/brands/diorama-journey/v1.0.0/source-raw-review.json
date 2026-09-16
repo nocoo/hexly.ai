@@ -1,0 +1,52 @@
+{
+	"status": "approved",
+	"imageSha256": "068e443f48b66c4508508b2ea597251eb688f082807e06ae579f4925601088c2",
+	"recordedAt": "2026-09-16T23:23:46.726755+00:00",
+	"nextStep": "Finish and validate the selected Logo, source adoption and catalogue materials; open dev for the requested review before publishing the site.",
+	"ownerReviewedExactBytes": true,
+	"agentInspection": {
+		"inspectedAt": "2026-09-16T23:25:38.854Z",
+		"method": "Viewed the unchanged native PNG at original resolution; sampled native matte pixels without writing a derivative.",
+		"nativeDimensions": [2048, 2048],
+		"findings": [
+			"The complete maquette, arch cap, two model trees, island base and single lantern have visible surrounding clearance; no canvas clipping was observed.",
+			"Continuous ceramic/stone/painted model shading follows the requested material series. Animal facet/anatomy requirements do not apply.",
+			"The forward amber lantern is clearly visible; the source example golden ring and bead remain inside the arch, despite the prompt asking to omit decorative graphic rings.",
+			"The matte is near-white, with no visible exterior floor shadow; the actual native RGB samples are retained.",
+			"No extraction, compositing, resizing or catalogue image integration has occurred."
+		],
+		"matteSamples": [
+			{
+				"position": [0, 0],
+				"rgb": [249, 249, 252]
+			},
+			{
+				"position": [2047, 0],
+				"rgb": [252, 252, 249]
+			},
+			{
+				"position": [0, 2047],
+				"rgb": [246, 250, 246]
+			},
+			{
+				"position": [2047, 2047],
+				"rgb": [249, 249, 249]
+			},
+			{
+				"position": [1024, 30],
+				"rgb": [251, 252, 252]
+			}
+		]
+	},
+	"history": [
+		{
+			"status": "pending",
+			"imageSha256": "068e443f48b66c4508508b2ea597251eb688f082807e06ae579f4925601088c2",
+			"recordedAt": "2026-09-16T23:23:46.726755+00:00"
+		}
+	],
+	"decidedAt": "2026-09-16T23:26:47.859009+00:00",
+	"decisionSource": "owner confirmation in conversation",
+	"ownerInstruction": "很好，继续后续流程，更新项目README，和本站素材，本站发布Z+1， 发布前打开dev确认",
+	"scope": "Approve the displayed native Logo and continue finishing, source README adoption and site assets. Prepare site Z+1 release, with dev confirmation before publication."
+}

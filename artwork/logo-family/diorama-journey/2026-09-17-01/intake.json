@@ -1,0 +1,90 @@
+{
+	"recordedAt": "2026-09-16T23:25:39.052692+00:00",
+	"id": "diorama-journey",
+	"repo": "diorama-journey",
+	"title": "Diorama Journey",
+	"emoji": "🏞️",
+	"description": {
+		"en": "Miniature 3D storytelling with narration, chapter clips and slides",
+		"zh": "通过微缩 3D 场景讲故事，生成配音、分章视频与幻灯片"
+	},
+	"category": "skills",
+	"visualSeries": "material",
+	"repository": "https://github.com/nocoo/diorama-journey",
+	"archived": false,
+	"website": null,
+	"websiteEvidence": {
+		"declaredHomepage": "https://nocoo.github.io/diorama-journey/",
+		"checkedAt": "2026-09-16T23:25:39.053347+00:00",
+		"status": 404,
+		"healthPaths": {
+			"https://nocoo.github.io/diorama-journey/api/live": 404,
+			"https://nocoo.github.io/api/live": 404
+		},
+		"decision": "Use the verified repository as the current catalogue destination. Preserve the declared but unavailable example URL as source evidence; no public service is claimed.",
+		"recheck": {
+			"checkedAt": "2026-09-16T23:39:17.216Z",
+			"status": 200,
+			"note": "GitHub Pages example became available after initial intake. It is a generated demonstration of this installable skill, not an independent origin-level application. The repository remains the catalogue installation destination; this Logo-only task does not migrate health infrastructure."
+		}
+	},
+	"theme": {
+		"primary": {
+			"value": "#af7850",
+			"source": "assets/starter/src/web.css .brand color"
+		},
+		"background": {
+			"value": "#f7f5ee",
+			"source": "assets/starter/src/web.css :root background"
+		},
+		"ink": {
+			"value": "#35463e",
+			"source": "assets/starter/src/web.css :root color"
+		}
+	},
+	"profile": {
+		"revision": "f7fb0554c24d243f4b1aa9087403fa56125c17d0",
+		"section": "Skills & MCP Servers",
+		"existingEntryMatches": true,
+		"changeNeeded": false
+	},
+	"readmeAudit": {
+		"paths": ["README.md", "README.zh-CN.md"],
+		"existingHeader": "<h1 align=\"center\">🏞️ Diorama Journey</h1>",
+		"plannedHeader": [
+			"<p align=\"center\"><img src=\"assets/brand/icon-rounded.png\" width=\"128\" height=\"128\" alt=\"Diorama Journey logo\" /></p>",
+			"<h1 align=\"center\">Diorama Journey</h1>"
+		],
+		"bodyRewriteNeeded": false,
+		"preserve": [
+			"Bilingual copy and language switch",
+			"Badges and existing section order",
+			"Original example and Raven reference images",
+			"Installation, usage and development commands"
+		]
+	},
+	"logoSelection": {
+		"study": "2026-09-17-01",
+		"rawImageSha256": "068e443f48b66c4508508b2ea597251eb688f082807e06ae579f4925601088c2",
+		"status": "approved",
+		"firstIndependentIdentity": true
+	},
+	"sourceRevision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc",
+	"adoption": {
+		"recordedAt": "2026-09-16T23:36:17.621Z",
+		"repositoryRevision": "5a89d9da4d696d812a0aa46c58b94d81b8581b18",
+		"sourcePath": "logo.png",
+		"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851",
+		"files": [
+			"README.md",
+			"README.zh-CN.md",
+			"logo.png",
+			"assets/brand/",
+			"assets/starter/public/brand/",
+			"assets/starter/src/web.tsx",
+			"assets/starter/index.html"
+		],
+		"productVersion": "0.1.0",
+		"profileChangeNeeded": false
+	}
+}

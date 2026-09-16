@@ -1,0 +1,82 @@
+{
+	"recordedAt": "2026-09-16T23:22:26.661635+00:00",
+	"repository": "https://github.com/nocoo/diorama-journey",
+	"repositoryRevision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc",
+	"profileRevision": "f7fb0554c24d243f4b1aa9087403fa56125c17d0",
+	"sourceMode": "isolated-white",
+	"series": "material",
+	"category": "skills",
+	"priorIndependentLogo": null,
+	"priorReadmeIdentity": "🏞️",
+	"sourceFiles": [
+		{
+			"sourcePath": "docs/images/example.jpg",
+			"archivePath": "input/source-example.jpg",
+			"sha256": "d3153607e4503f46045b923def1fcf53cc0ab0a41a7c872eeb7710e1f4bcec5c",
+			"bytes": 90170,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/docs/images/example.jpg"
+		},
+		{
+			"sourcePath": "README.md",
+			"archivePath": "input/README.md",
+			"sha256": "d53849b0197d040206f4d9c80ecdc8af8543b94377b4456c2f0ab0954875c1f1",
+			"bytes": 8466,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/README.md"
+		},
+		{
+			"sourcePath": "README.zh-CN.md",
+			"archivePath": "input/README.zh-CN.md",
+			"sha256": "815d2a12d0df8746556a70451ecebf5a43a9e136a7a5720cc811a6691070d922",
+			"bytes": 8048,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/README.zh-CN.md"
+		},
+		{
+			"sourcePath": "assets/starter/src/art/World.tsx",
+			"archivePath": "input/World.tsx",
+			"sha256": "18edea90d6b0839275b0220e804a99efd4e206131686717b6340fc86bb314dd8",
+			"bytes": 8733,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/assets/starter/src/art/World.tsx"
+		},
+		{
+			"sourcePath": "assets/starter/src/art/primitives.tsx",
+			"archivePath": "input/primitives.tsx",
+			"sha256": "65500f419aca13995384ca3b13718e31deb24d8aac25c79528fc9a64696a3f90",
+			"bytes": 4978,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/assets/starter/src/art/primitives.tsx"
+		},
+		{
+			"sourcePath": "assets/starter/src/story.json",
+			"archivePath": "input/story.json",
+			"sha256": "79fa2ec822af320c4238e94ad3af9c7507eebbbee434d044da90f376aa60f4d4",
+			"bytes": 2998,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/assets/starter/src/story.json"
+		},
+		{
+			"sourcePath": "assets/starter/package.json",
+			"archivePath": "input/package.json",
+			"sha256": "c43804e547bf4862bee07dab2797f89878af7661ed7e22bac2a827c744fa5158",
+			"bytes": 1679,
+			"sourceUrl": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/assets/starter/package.json"
+		}
+	],
+	"generationTool": {
+		"path": "generate_azure.py",
+		"sha256": "5f16ebeb5dd1cec2d8a398106181431b79101795ca464ad8fb3ef157dcec9173"
+	},
+	"references": [
+		{
+			"index": 1,
+			"path": "input/source-example.jpg",
+			"sha256": "d3153607e4503f46045b923def1fcf53cc0ab0a41a7c872eeb7710e1f4bcec5c",
+			"bytes": 90170,
+			"role": "Primary project world, palette and physical elements; no text or screenshot layout."
+		},
+		{
+			"index": 2,
+			"path": "../../references/ref02.jpeg",
+			"sha256": "f96dbc39658543ca168f16ea4b30ef550258d03a768684d902694e5dd245f018",
+			"bytes": 196683,
+			"role": "Tactile presentation and broad light only; no animal, palette or tile transfer."
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"startedAt": "2026-09-16T23:37:42.082359+00:00",
+	"provider": "Azure OpenAI",
+	"endpointPath": "/openai/v1/images/generations",
+	"method": "POST",
+	"parameters": {
+		"model": "gpt-image-2.5-flare",
+		"size": "1024x1024",
+		"n": 1,
+		"quality": "high"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "878be8e552c06de366eb9be5c727e31dc0cb62169441f419d646e13d0b482aed",
+	"referenceImages": [],
+	"attempt": 1,
+	"helper": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+	"helperRevision": "cd22362da862248bfd6fe3028630f532a135b322",
+	"helperSha256": "2701b552012f669a93b09c89baf9daa623537d41f7e176ab5a40c2ec016f84df",
+	"helperModified": false,
+	"recorder": ".agents/skills/hexly-brand-textures/scripts/generate.py",
+	"recorderSha256": "12b0628a4c3ca517e3cd2af932791bd4a934295aa560201c7d8df9a648ce2bec",
+	"modelSelection": "Owner selected Flare for decorative surfaces. Generation scope and acceptance authorization are recorded in this batch inventory; primary identity generation is separate."
+}

@@ -262,3 +262,16 @@ and unselected rocker are source history, never old official identities.
 The [onboarding guide](26-pi-agent-policy-onboarding.md) links the complete kit,
 source hashes, provenance and private-repository boundary. Brand 1.0.0, package
 0.1.2 and the Hexly site release remain independent versions.
+
+## Diorama Journey first identity — 2026-09-17
+
+Study `2026-09-17-01 / 01` is the owner-approved Sunburst miniature gateway and
+lantern in the material tool series. Source commit
+`5a89d9da4d696d812a0aa46c58b94d81b8581b18` installs the exact transparent master
+as `logo.png`, the centered rounded README presentation at 128px, and transparent
+viewer/favicons. Both language README bodies retain their previous content.
+
+This is the first independent Logo. The `skills` category starts with this
+project only. Brand kit `1.0.0`, starter `0.1.0` and Hexly `0.14.1` are separate
+versions. The [onboarding record](28-diorama-journey-onboarding.md) links native
+approval, finishing measurements, actual source consumers and publication evidence.

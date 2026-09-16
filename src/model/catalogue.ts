@@ -2,6 +2,13 @@ import mediaStorage from "../data/media-storage.json" with { type: "json" };
 import projectOrder from "../data/project-order.json" with { type: "json" };
 import type { Category, Locale, Project } from "./project";
 
+export function projectReadmePath(project: Project, locale: Locale): string {
+	const paths = project.overview?.verified.sources.includes("README.zh-CN.md")
+		? { en: "README.md", zh: "README.zh-CN.md" }
+		: { en: "docs/README.en.md", zh: "README.md" };
+	return paths[locale];
+}
+
 const curatedOrder = new Map<string, number>(
 	[
 		...projectOrder.animals
@@ -24,6 +31,7 @@ export const categories: Category[] = [
 	"everyday",
 	"design",
 	"games",
+	"skills",
 	"extensions",
 	"archive",
 ];
@@ -79,6 +87,7 @@ export function categoryCounts(projects: Project[]): Record<Category, number> {
 		everyday: 0,
 		design: 0,
 		games: 0,
+		skills: 0,
 		extensions: 0,
 		archive: 0,
 	};
@@ -157,6 +166,11 @@ export function catalogueProblems(projects: Project[]): string[] {
 		if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id) || ids.has(project.id))
 			problems.push(`Invalid or duplicate id: ${project.id}`);
 		ids.add(project.id);
+		if (
+			project.socialImage !== undefined &&
+			!/^\/og\/[a-z0-9.-]+\.jpg$/.test(project.socialImage)
+		)
+			problems.push(`Invalid social image: ${project.id}`);
 		const kit = project.brandKit;
 		if (
 			kit !== undefined &&

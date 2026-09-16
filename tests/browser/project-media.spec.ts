@@ -407,13 +407,13 @@ test("an unavailable full-size image remains closable with a direct original lin
 	await expect(dialog).toHaveCount(0);
 });
 
-for (const id of ["hooky", "r2shot"]) {
-	test(`${id} presents the real R2-managed store screenshots in both themes`, async ({
+for (const id of ["hooky", "r2shot", "diorama-journey"]) {
+	test(`${id} presents the real R2-managed screenshots in both themes`, async ({
 		page,
 	}, testInfo) => {
 		const project = readProjects().find((item) => item.id === id);
 		const shots = project?.media?.screenshots ?? [];
-		expect(shots).toHaveLength(3);
+		expect(shots).toHaveLength(id === "diorama-journey" ? 1 : 3);
 		const errors: string[] = [];
 		page.on("pageerror", (error) => errors.push(error.message));
 		await page.goto(`/projects/${id}`);
@@ -425,7 +425,7 @@ for (const id of ["hooky", "r2shot"]) {
 					.getByRole("button", { name: "Theme: Light. Switch to dark theme." })
 					.click();
 			await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
-			await expect(page.locator(".screenshot-card")).toHaveCount(3);
+			await expect(page.locator(".screenshot-card")).toHaveCount(shots.length);
 			const first = page.locator(".screenshot-card").first();
 			await expect(first.locator("img")).toHaveAttribute(
 				"src",
@@ -457,11 +457,16 @@ for (const id of ["hooky", "r2shot"]) {
 			await dialog.screenshot({
 				path: testInfo.outputPath(`${id}-${theme}-focus.png`),
 			});
-			await dialog.getByRole("navigation").getByRole("button").nth(2).click();
-			await expect(dialog.locator(".screenshot-focus img")).toHaveAttribute(
-				"src",
-				assetUrl(shots[2]?.src ?? ""),
-			);
+			if (shots.length > 1) {
+				await dialog.getByRole("navigation").getByRole("button").nth(2).click();
+				await expect(dialog.locator(".screenshot-focus img")).toHaveAttribute(
+					"src",
+					assetUrl(shots[2]?.src ?? ""),
+				);
+			} else {
+				await expect(dialog.getByRole("navigation")).toHaveCount(0);
+				await expect(dialog.locator(".screenshot-step")).toHaveCount(0);
+			}
 			const scan = await new AxeBuilder({ page })
 				.include(".screenshot-lightbox")
 				.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
@@ -477,7 +482,9 @@ for (const id of ["hooky", "r2shot"]) {
 		await page.getByRole("button", { name: "Switch to Chinese" }).click();
 		await page.locator(".screenshot-card").first().click();
 		await expect(page.getByRole("button", { name: "关闭预览" })).toBeVisible();
-		await expect(page.getByRole("button", { name: "下一张" })).toBeVisible();
+		await expect(page.getByRole("button", { name: "下一张" })).toHaveCount(
+			shots.length > 1 ? 1 : 0,
+		);
 		await page.getByRole("button", { name: "关闭预览" }).click();
 		expect(errors).toEqual([]);
 	});

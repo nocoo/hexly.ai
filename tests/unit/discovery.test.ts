@@ -143,6 +143,9 @@ describe("crawler discovery documents", () => {
 		expect(page.bodyHtml).toContain(frogie.repository);
 		expect(socialImage()).toBe(assetUrl("/og.jpg"));
 		expect(socialImage(frogie)).toBe(assetUrl("/og/frogie.jpg"));
+		expect(socialImage({ ...frogie, socialImage: "/og/frogie-v2.jpg" })).toBe(
+			"https://hexly.ai/og/frogie-v2.jpg",
+		);
 		expect(absoluteUrl("/projects/pew")).toBe("https://hexly.ai/projects/pew");
 		const graph = home.jsonLd as {
 			"@graph": {

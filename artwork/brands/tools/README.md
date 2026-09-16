@@ -18,9 +18,9 @@ from that collection; Sharp and the real site font are existing dependencies.
    ```sh
    uv run --with fonttools==4.60.1 --with brotli==1.1.0 python \
      artwork/brands/tools/outline.py pi-agent-policy 1.0.0
-   bunx biome check --write artwork/brands/tools/export.ts \
+   bunx biome check --write artwork/brands/tools/export-v2.ts \
      artwork/brands/pi-agent-policy/v1.0.0/recipe.json
-   bun artwork/brands/tools/export.ts pi-agent-policy 1.0.0
+   bun artwork/brands/tools/export-v2.ts pi-agent-policy 1.0.0
    ```
 
    Both commands reject committed versions. Pass one project and one explicit
@@ -56,3 +56,5 @@ Hero, while changing eight presentation files. Keep every older package and
 build hash; the generic collection exporter must not overwrite this revision.
 Choose future material analogies from each product's actual job and physical
 context, rather than copying this particular workbench stencil.
+
+New exports use `export-v2.ts`, which names the actual generation model in the guide and rights record. `export.ts` remains frozen because Pi Agent Policy 1.0.0 records its exact source hash. Do not update that historical tool or its published packages.
