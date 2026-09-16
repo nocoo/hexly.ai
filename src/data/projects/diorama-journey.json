@@ -1,0 +1,139 @@
+{
+	"id": "diorama-journey",
+	"repo": "diorama-journey",
+	"title": "Diorama Journey",
+	"emoji": "🏞️",
+	"description": {
+		"en": "Miniature 3D storytelling with narration, chapter clips and slides",
+		"zh": "以微型 3D 场景讲故事，输出配音视频、章节切片和演示文稿"
+	},
+	"category": "extensions",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/diorama-journey",
+	"subject": "Profile landscape emoji; a skill for connected miniature 3D worlds",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "emoji",
+		"original": "/logos/emoji/diorama-journey.png",
+		"sourcePath": "nocoo/nocoo README.md — project emoji",
+		"sourceUrl": "https://github.com/nocoo/nocoo/blob/f7fb0554c24d243f4b1aa9087403fa56125c17d0/README.md",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 93560,
+		"sha256": "68c16332ea78b455d6016a80fec183a1ec20016814fcceeb9cf8bb1c79a595a0",
+		"thumbnail": "/logos/display/diorama-journey-160.webp",
+		"display": "/logos/display/diorama-journey-1024.webp"
+	},
+	"theme": {
+		"primary": {
+			"value": "#869777",
+			"source": "assets/starter/src/film.css — .film h1 .accent"
+		},
+		"background": {
+			"value": "#f5f2e9",
+			"source": "assets/starter/src/film.css — .film"
+		},
+		"ink": {
+			"value": "#35463e",
+			"source": "assets/starter/src/film.css — .film"
+		}
+	},
+	"source": {
+		"profileRevision": "f7fb0554c24d243f4b1aa9087403fa56125c17d0",
+		"profileSection": "Skills & MCP Servers",
+		"description": "Miniature 3D storytelling with narration, chapter clips and slides",
+		"repositoryRevision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc"
+	},
+	"colors": {
+		"primary": "#869777",
+		"background": "#f5f2e9",
+		"ink": "#35463e",
+		"palette": [
+			{
+				"color": "#869777",
+				"role": "primary",
+				"source": "assets/starter/src/film.css — .film h1 .accent"
+			},
+			{
+				"color": "#f5f2e9",
+				"role": "background",
+				"source": "assets/starter/src/film.css — .film"
+			},
+			{
+				"color": "#bb7a4e",
+				"role": "accent",
+				"source": "assets/starter/src/film.css — .film-mark"
+			},
+			{
+				"color": "#f7f5ee",
+				"role": "accent",
+				"source": "assets/starter/src/web.css — :root background"
+			}
+		]
+	},
+	"overview": {
+		"goal": {
+			"en": "Turn an outline, report, lesson or process into a narrated journey through connected miniature 3D worlds. One recurring element links the chapters; the same composition produces a film, exact chapter clips, presentations, speaker notes and an archived production.",
+			"zh": "将大纲、报告、课程或流程组织成穿越微型 3D 世界的配音故事。以同一个元素串联各章，从同一套画面导出成片、章节切片、演示文稿、演讲备注和制作归档。"
+		},
+		"techStack": [
+			{
+				"name": "React / Remotion",
+				"role": {
+					"en": "Frame timeline, shared composition, player and H.264 video rendering",
+					"zh": "逐帧时间轴、共享画面、播放器和 H.264 视频渲染"
+				}
+			},
+			{
+				"name": "Three.js / React Three Fiber",
+				"role": {
+					"en": "Original geometric scenes, lighting and continuous camera movement",
+					"zh": "原创几何场景、灯光和连续镜头运动"
+				}
+			},
+			{
+				"name": "Vite / TypeScript",
+				"role": {
+					"en": "Standalone review website and typed source",
+					"zh": "独立审片网站与类型检查"
+				}
+			},
+			{
+				"name": "FFmpeg / Python / uv",
+				"role": {
+					"en": "Audio mastering, exact chapter cuts and isolated media scripts",
+					"zh": "音频处理、精确章节切片和独立媒体脚本环境"
+				}
+			},
+			{
+				"name": "edge-tts / NumPy",
+				"role": {
+					"en": "Cached Microsoft speech and original synthesized music",
+					"zh": "可缓存的微软语音与原创合成音乐"
+				}
+			},
+			{
+				"name": "python-pptx / odfpy / ReportLab",
+				"role": {
+					"en": "PPTX, ODP and PDF from clean keyframes, with native presentation notes",
+					"zh": "由干净关键帧导出 PPTX、ODP 和 PDF，并保留原生演讲备注"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-17",
+			"revision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc",
+			"sources": [
+				"README.md",
+				"README.zh-CN.md",
+				"SKILL.md",
+				"assets/starter/package.json",
+				"assets/starter/src/film.css",
+				"docs/validation.md"
+			]
+		}
+	}
+}

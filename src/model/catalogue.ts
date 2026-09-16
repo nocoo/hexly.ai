@@ -2,6 +2,13 @@ import mediaStorage from "../data/media-storage.json" with { type: "json" };
 import projectOrder from "../data/project-order.json" with { type: "json" };
 import type { Category, Locale, Project } from "./project";
 
+export function projectReadmePath(project: Project, locale: Locale): string {
+	const paths = project.overview?.verified.sources.includes("README.zh-CN.md")
+		? { en: "README.md", zh: "README.zh-CN.md" }
+		: { en: "docs/README.en.md", zh: "README.md" };
+	return paths[locale];
+}
+
 const curatedOrder = new Map<string, number>(
 	[
 		...projectOrder.animals

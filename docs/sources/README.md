@@ -1,5 +1,7 @@
 # Source snapshots
 
+The [Diorama Journey intake](diorama-journey-2026-09-17.json) records the public skill, source and profile revisions, original example theme and emoji identity. Its [profile snapshot](nocoo-readme-2026-09-17-diorama-journey.md) places the skill first in Skills & MCP Servers. The GitHub Pages example is a distribution demo; the skill has no independent monitored service.
+
 The [Snail brand handoff](snail-2026-09-12.json) preserves the owner's scope and
 `w36:p1` product confirmation, plus actual public/empty repository metadata at
 intake. The brand is authored in Hexly; source adoption and profile maintenance

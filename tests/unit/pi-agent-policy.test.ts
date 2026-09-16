@@ -15,7 +15,7 @@ const sha = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
 const json = async (path: string) => JSON.parse(await readFile(path, "utf8"));
 
 describe("Pi Agent Policy onboarding", () => {
-	it("is a first material-tool identity at the end of the catalogue without a fictional website", () => {
+	it("keeps its appended identity position without a fictional website", () => {
 		expect(project.category).toBe("tools");
 		expect(project.family).toMatchObject({
 			series: "material",
@@ -24,11 +24,9 @@ describe("Pi Agent Policy onboarding", () => {
 		});
 		expect(project.website).toBeNull();
 		expect(project.websiteSource).toBeNull();
-		expect(projects.at(-1)?.id).toBe(project.id);
+		expect(projects[projects.indexOf(project) - 1]?.id).toBe("ocelot");
 		for (const category of ["all", "tools"] as const)
-			expect(filterProjects(projects, "", category).at(-1)?.id).toBe(
-				project.id,
-			);
+			expect(filterProjects(projects, "", category)).toContain(project);
 		expect(
 			statusTargets(projects).some((target) => target.id === project.id),
 		).toBe(false);

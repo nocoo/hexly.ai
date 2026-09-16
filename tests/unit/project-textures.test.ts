@@ -18,6 +18,9 @@ import { catalogueProblems } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
 
 const projects = readProjects();
+const campaignProjects = projects.filter((p) =>
+	baseline.projects.some((row) => row.id === p.id),
+);
 const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const json = async (path: string) => JSON.parse(await readFile(path, "utf8"));
@@ -25,7 +28,7 @@ const fixture = await json("public/textures/frogie/v1.0.0/manifest.json");
 
 describe("independent campaign textures", () => {
 	it("covers active projects, retains completed archives and preserves original identity, metadata and old kits", async () => {
-		expect(projects.map((p) => p.id)).toEqual(
+		expect(campaignProjects.map((p) => p.id)).toEqual(
 			baseline.projects.map((p) => p.id),
 		);
 		expect(
@@ -40,7 +43,7 @@ describe("independent campaign textures", () => {
 			scope.expectedNewPackCount,
 		);
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
-		for (const project of projects) {
+		for (const project of campaignProjects) {
 			const row = baseline.projects.find((p) => p.id === project.id);
 			if (!row) throw new Error(project.id);
 			const { brandTexture: _texture, ...preserved } = project;
