@@ -33,5 +33,6 @@
 31. [Project background texture skill: habitat foliage and tool materials](../.agents/skills/hexly-brand-textures/SKILL.md)
 32. [Independent project texture packs, complete catalogue rollout and R2 maintenance](27-project-textures.md)
 33. [Diorama Journey onboarding, Skills category and material identity](28-diorama-journey-onboarding.md)
+34. [Project, brand, media and onboarding maintenance contract](29-project-maintenance.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

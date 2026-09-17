@@ -1,248 +1,103 @@
 # hexly.ai
 
-Bilingual project directory, preserved logo gallery, public service status, and reusable Video Kit.
-Profile: ts-worker-web. Direction: [docs/01-overview.md](docs/01-overview.md). Frameworks must not rewrite this file.
+Bilingual project directory, preserved identity archives, public service status and reusable Video Kit.
+Profile: ts-worker-web.
+Direction: [overview](docs/01-overview.md). Catalogue, brand and media work must also follow the [maintenance contract](docs/29-project-maintenance.md). Frameworks must not rewrite this file.
 
 ## Sources of Truth
 
-This file is the project contract; hooks, CI, and configuration enforce it. Keep them aligned without weakening quality gates.
+This file is the contract; hooks, CI and configuration enforce it. Raise weaker enforcement instead of lowering this contract.
 
 | Fact | Where |
 |---|---|
-| Human docs | [README.md](README.md), [docs/README.md](docs/README.md) |
-| Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
-| Project media / routes | Optional `Project.media` in the same catalogue; [routes and media boundary](docs/17-project-media.md) |
-| R2 material operations | Bucket/origin in `src/data/media-storage.json`; [project skill](.agents/skills/hexly-r2-media/SKILL.md), [storage contract](docs/21-asset-storage.md), `docs/assets/inventory.json` and publication receipts; existing film receipts in `docs/media/` |
-| Git history / recovery | [Recovery guide](docs/23-git-history-recovery.md); preserve original bundles and commit/ref maps; never merge the old binary history back |
-| Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
-| Brand background textures | [Project texture skill](.agents/skills/hexly-brand-textures/SKILL.md): habitat-related foliage for animals/birds, meaningful working materials for 3D tools, exact Flare evidence and readable light/dark presentation |
-| Family website entry | [Project entry skill](.agents/skills/hexly-site-entry/SKILL.md): GitHub → Hexly → Theme, canonical project-detail links, matching icons/tooltips and explicit page exclusions |
-| Independent texture packs | Optional `Project.brandTexture`, `public/textures/<id>/v<version>/`, R2 `projects/<id>/textures/v<version>/`; [maintenance and rollout](docs/27-project-textures.md). Keep identity kits and original Logo/RGBA bytes unchanged. |
-| Complete brand archives | [inventory and scope](docs/brand-archives/README.md), [maintenance guide](docs/19-family-brand-archives.md), `public/brands/schema-v2.json` |
-| Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
-| Status | `src/model/status.ts`, `worker/status.ts`, [storage and scheduling](docs/11-status-monitoring.md) |
-| Video Kit | `packages/video-kit/`, `src/data/videos.json`; standard-outro records retained in `src/data/template-examples.json`; [family and publication rules](docs/16-video-kit.md) |
-| Agent handoffs | `src/model/agent-guide.ts`; page-specific `/agents/*.md`, HTML alternate links, copyable instructions; [agent guide contract](docs/25-agent-guides.md) |
-| Enforcement | `.husky/`, `scripts/gates.ts`, `.github/workflows/ci.yml`, test configs |
-| Secrets | GitHub Actions secrets; local `.env*` and `.dev.vars*` are gitignored; never track values |
-| Accidents | [Retrospective.md](Retrospective.md); machine rules stay in global `AGENTS.md` and `rules/` |
+| Human docs | [README.md](README.md), [docs index](docs/README.md) |
+| Catalogue / identity | `src/data/projects/`, verified source/profile revisions, [identity rules](docs/02-identity-rules.md), [maintenance details](docs/29-project-maintenance.md) |
+| Media / archives | `src/data/media-storage.json`, `docs/assets/inventory.json`, immutable receipts and [asset storage](docs/21-asset-storage.md) |
+| Status / Video Kit | `src/model/status.ts`, `worker/status.ts`, `packages/video-kit/`, `src/data/videos.json` |
+| Version | Root `package.json` as `X.Y.Z`, display `vX.Y.Z`; build emits version/revision at `/api/live` |
+| Enforcement | `.husky/`, `scripts/gates.ts`, CI/release workflows and test configs |
+| Secrets / accidents | Ignored `.env*` / `.dev.vars*`, GitHub secrets; [Retrospective.md](Retrospective.md); machine rules in global `AGENTS.md` / `rules/` |
 
 ## Project Invariants
 
-- Serve the Vite build through the existing Worker and Static Assets. `/api/live` and `/api/share` remain build artifacts. The gateway also runs status Cron and reads D1; there is no authentication or runtime GitHub dependency.
-- The catalogue is the monitor list: only non-archived independent HTTPS websites, at their origin plus `/api/live`. Exclude store/distribution links. D1 `hexly-status` uses `STATUS_DB`; Cron runs every five minutes. Each write deletes checks older than seven days, reads apply the same cutoff, and `(project_id, slot)` prevents duplicates.
-- Visitors only read observations. Missing/stale checks remain unknown; HTML fallbacks, redirects, and login pages are never healthy. Local mock data is labeled and must never seed production.
-- Status timestamps, hourly buckets, retention, and availability calculations remain UTC. Display times in the browser's current time zone by default; the top selector remembers an explicit choice, and Local follows the browser. Use `Intl` for date-specific offsets and daylight-saving transitions.
-- Preserve English/Chinese, light/dark, desktop/mobile, keyboard access, preference persistence, and shareable navigation. Main navigation is Projects / Templates / Status (项目 / 模板 / 状态); retain Play / Journal / Résumé / Portfolio as the related-site links.
-- `/templates` adapts the existing catalogue once for five content layouts, five independent openings, five independent endings and Video/Deck views. Both film themes use the actual site light/dark palettes; canvas theme is independent of the surrounding site theme. Preserve composition choices in navigation and exported v2 configuration. Keep the official Hexly mark/wordmark, licensed fonts, paper/ink/terracotta tokens, red-dot restraint and shared motion primitives. Deck and reduced motion show settled states; previews start paused.
-- Shared template code belongs in `packages/video-kit`; project-specific scripts, voices, scenes, production logs and finished films belong to their consumer. Consumers pin a published Git SHA. The package is private, not an npm release. Preserve concurrent handoffs and stop on unknown writes.
-- The component manifest is metadata only. Cards and previews use the same client composition; do not return obsolete sample movies, posters or deck downloads to `public/video-assets`. `video:check` verifies the 5/5/5 manifest, both themes, licensed asset hashes and the absence of rendered media in public assets. The five ready-to-use standard Hexly outros at `/templates#outros` are project-independent; reuse the immutable R2 movies directly, without regenerating them per project. Show all five on every template page. `/templates/outros.json` derives its `outros` array and reuse semantics from the historical `src/data/template-examples.json`; keep `/templates/examples.json` and `#examples` compatible. Receipts remain in `docs/media/hexly-ai/`. Project/theme controls affect only the separate live composition. Start native playback only after a click. For HTML-produced clips, capture high-resolution posters from the matching HTML composition, never from compressed MP4 frames. Keep all movies, stills and renderer caches outside Git and deployed assets. Brand assets keep their separate immutable version when their bytes are unchanged.
-- Every canonical page has a copyable Agent guide derived from existing data, readable in HTML and at its `/agents/...md` alternate. Keep HTML links, runtime navigation, generated Markdown and `llms.txt` aligned. Exact generation prompts remain original archive text; retained/supplied artwork uses presentation briefs. Never label newly authored integration instructions as original generation prompts. Copy feedback must not dump full instructions into the global toast. See `docs/25-agent-guides.md`.
-- `/` is the project catalogue, `/logos` its secondary image wall, and `/projects/<project>` the detail. Details contain introduction, optional media, overview, then the complete `#brand` archive. Old `/logos/<project>` links redirect to that brand anchor; `/videos` and its paths redirect to `/templates`, retaining query parameters. Use the shared `src/model/routes.ts`; do not redirect logo asset directories. Keep generated sitemap, HTML snapshots, JSON-LD, canonical/share records, `llms.txt`, and runtime metadata on canonical routes.
-- The brand Hero belongs inside `#brand`, after the product's optional media and overview. `media.screenshots` is an ordered optional gallery: preserve each image's full aspect ratio, use smaller `preview`/`thumbnail` derivatives when available, and load `src` in the focus Lightbox. Keep bottom thumbnails, arrow-key navigation, Escape close, focus restoration, mobile controls and reduced motion. One image needs no previous/next controls; no media means no placeholder. Source receipts and repeatable R2 paths are documented in the [screenshot runbook](.agents/skills/hexly-r2-media/references/project-screenshots.md).
-- Project selection, category filtering (All projects) and search share one header at the top of every detail page, before the project introduction. Only the carousel sticks below site navigation; its category/search row scrolls away. Keep the selected item centered, including edge items and resized views, and include the measured carousel height in document scroll padding. Do not duplicate previous/next controls or bury the picker inside the brand archive. Selecting/filtering here starts at the project introduction; keyboard brand browsing keeps an explicit `#brand` anchor aligned. Hash navigation uses native smooth scrolling and respects reduced motion; do not override it with instant scrolling. Keep logo/wordmark descenders visible and long headings within the viewport. Verify the full gallery browser suite after changing its layout.
-- Chrome Web Store destinations use an installation CTA, not Visit website. Derive this from the existing verified `website` URL (currently Hooky and R2Shot), never a second hardcoded URL list. The detail uses the unchanged official Google store badge and bilingual Add to Chrome labels; catalogue cards use a compact Chrome install link. Keep the badge's original proportions/colors, Google rights receipt, R2 delivery and the source GitHub link on the detail. Store links remain excluded from health targets.
-- Finished recordings belong to optional `media.videos` on their project's existing JSON, never one copy per template. Render a poster before user-initiated native playback; include actual captions when available, defaulting them off when `captionsBurnedIn` is true. Screenshot-only projects work without a video. Omit empty media sections. Catalogue browsing uses search, categories and sort; recordings appear on project details without a video filter or overlaid card badges. Approved new media use R2 `hexlyai` at `https://h.no.mt`, with immutable project/video/version/hash paths. Read the project R2 skill before media operations, keep versioned upload receipts in `docs/media/`, and never add movie binaries to Git or Static Assets. Preserve the owner's CORS policy and completed objects; the seven-day rule only aborts incomplete multipart uploads. No Worker R2 binding or media proxy is needed.
-- All hides repositories marked `archived`; existing product categories and direct archived-project routes remain accessible. Directory cards no longer show a Refined badge; redraw status belongs in the brand archive.
-- Archived projects receive basic support only. Exclude them by default from all batch enrichment, redesign, brand/texture/media creation and catalogue-cleanup initiatives. Preserve their archived state, existing pages, links, downloads, licenses and provenance; fix shared compatibility or access regressions when necessary. Keep work already completed, but do not fill gaps, regenerate assets or expand their presentation unless the owner explicitly names an archived project for that work. “All projects” in future maintenance tasks means non-archived projects unless explicitly overridden.
-- Default catalogue order is animals, templates, games, then tools. Animals sort by descending stars, using total default-branch commits when both have zero stars; `src/data/project-order.json` records the snapshot and series. A–Z sorts matching names alphabetically. Omit hexly.ai itself from the directory; preserve its brand record separately in `src/data/site-identity.json`.
-- Every project needs a stable slug, title, bilingual descriptions, emoji, verified links, logo provenance, and evidenced foreground/background colors. Follow the identity rules; do not infer websites or invent palettes.
-- All independently served material uses R2 `hexlyai` / `https://h.no.mt`. Preserve immutable Logo/brand bytes, paths, hashes, licenses and provenance; source records/SVG geometry remain in Git, binary working files hydrate from the inventory. HTML/code, APIs and discovery documents stay on the Worker. Use `assetUrl` for transport and `AssetLink` for cross-origin downloads. Production builds exclude media and enforce 20 MiB. See [migration and authorized history reduction](docs/20-r2-assets-execution.md); the 2026-09-13 owner instruction supersedes the earlier Git/Static Assets retention rule.
-- Original project identity shapes, proportions, colors and file bytes are authoritative. Hexly paper/ink/terracotta, fonts, red points and composition apply only to Hexly project archives and Hexly-authored campaigns, videos, decks and social graphics. Independent products keep their own complete palettes, themes and UI. A campaign Hero or family study never silently replaces a product Logo.
-- For an authorized project rename, update its catalogue ID and route while preserving the numbered profile. Locate historical artwork through `family.root`; preserve archive paths, export names, original bytes and checksums. Redirect former page URLs with Static Assets `_redirects`.
-- Synchronize catalogue changes with the GitHub profile using the workflow skill `zhengli-update-github-readme` (`../workflow/agents/skills/zhengli-update-github-readme/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
-- Preserve the current identity baseline. Logo-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Choose new subjects by the product-type defaults below. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
-- Immediately show each new Image 2 result for raw-image confirmation, unless the owner explicitly delegates acceptance for a named batch. Record the exact waiver and agent inspection without claiming owner review of unseen bytes. Require an approved `raw-review.json` for those exact bytes before extraction, compositing, derivatives, or catalogue integration. Every animal needs visible connected facets and one interest point outside its main mass; every project's background needs distinct motif geometry.
-- Every finished study has static review HTML and a complete site comparison. Keep `family.status` and its separate foreground truthful to source adoption; `project.logo` remains source provenance. Presentation reference boards appear only in static HTML and Git. Background-only passes preserve exact transparent/white bytes.
-- Follow [the logo usage SOP](docs/07-logo-usage-sop.md): large README presentations may use backgrounds; sidebar and browser marks use transparent foregrounds without extra masking. Verify actual consumers and distinguish local adoption from publication.
-- Versioned brand kits use optional `brandKit` metadata, `artwork/brands/<id>/v<version>/` source records and immutable `public/brands/<id>/v<version>/` exports. Native kits retain SVG; `method: "gpt-image-2"` combines the complete `family` comparison with raster marks/lockups, licensed outlined wordmarks, independently generated wide/square Hero sources and separate repeatable theme textures. Never call a generated raster a native SVG. Preserve real Hexly tokens, font notices, all previous versions and checksummed manifests; run mutable source formatting before export. Keep source adoption and the product release separate from brand publication; a Hexly-only handoff may have null source/profile revisions. See [Snail's versioned handoff](docs/18-snail-brand.md). Exact-byte image-generation checkpoints apply to generated artwork.
-- `method: "archived-artwork"` packages existing artwork without new generation. Use the schema-v2 roles `officialProjectIdentity` and `campaignInterpretation`, explicit `scope: "hexly-campaign"`, and exact file/decoded RGBA hashes. Wide and mobile Heroes are independently authored compositions of the full source canvas. Keep per-project motif geometry distinct. `brand-collection` tests protect the complete catalogue baseline, original colors, historical paths and Snail v1/v2; they also check both themes, narrow screens and downloads. Never format copied `official-logo.*` source bytes; Biome excludes those immutable files, while tests enforce them.
-
-## Brand direction by product type
-
-Read the actual product purpose and primary interaction before choosing a new
-identity. The owner's defaults are:
-
-| Product type | Default identity direction |
-|---|---|
-| Tools: CLI utilities, scripts, libraries, agent extensions | Skeuomorphic 3D physical objects that relate to the tool's purpose; `family.series: "material"` |
-| Web SaaS services used primarily in a browser | Recognizable animals in the established fragmented animal family |
-| Native macOS applications, including native menu-bar utilities | Birds within the established animal family |
-
-Classify by the product itself, not its repository name. A tool's documentation
-or landing website does not make it a Web SaaS service. Animal/bird facet and
-anatomy rules apply to those series; material objects use believable 3D volume,
-construction and materials. All series share the archive, review and usage
-standards in [the identity rules](docs/02-identity-rules.md).
-
-Explicit owner direction takes precedence. These are defaults for new identities,
-not a request to redesign existing approved Logos or change their colors.
-
-For new GPT Image requests, the owner's 2026-09-14 model policy is
-`gpt-image-2.5-sunburst` for Logos and primary identity artwork, and
-`gpt-image-2.5-flare` for secondary decoration such as support textures. Read the
-current Workflow `agi-image-generation` skill and select the deployment explicitly;
-the owner has already authorized Flare for this decorative scope. Preserve the
-actual model in each receipt and all historical model records. Model choice does
-not replace the exact-byte raw-image checkpoint or imply asset publication.
-
-Backgrounds need the same product research as Logos. Connect the product's core
-interaction to a plausible material or working environment, then choose its
-grain, grid or markings: a folio may suggest leather grain; an engineering sheet
-may suggest a measured lattice. Pi Agent Policy's service mat pairs a locating
-grid with an open contact and one reset route, echoing rules, interception and a
-shared repair allowance. Record that analogy in the recipe/guide. Make it visible
-at actual display size, quieter beneath text, and do not reuse a generic stencil
-or spread a single project's presentation update to the rest of the catalogue.
-
-Animals and birds use botanical backgrounds suited to their real environment:
-related leaves and foliage first, with flowers used sparingly and in quiet colors
-that do not compete with the Logo. Keep these distinct from 3D tool surfaces;
-do not assign every animal the same vegetation or an instrument grid. Follow the
-[project texture skill](.agents/skills/hexly-brand-textures/SKILL.md) for generation,
-full-canvas/repeat decisions, composition, contrast, archiving and publication.
-
-Texture-only changes have independent pack versions. Resolve `brandTexture`
-before legacy `brandKit.texture`; do not duplicate an unchanged brand kit to
-replace its decoration. Keep generated full-canvas PNG, full/320px WebP,
-exact prompts, sanitized generation receipts, acceptance, license and manifest
-together. Card backgrounds use only the measured-opacity pseudo-element; clear
-the old repeated image. Update Agent guides/profiles from the same catalogue,
-preserving completed archived entries without unarchiving or further enriching them.
+- Serve Vite through the existing Worker and Static Assets. `/api/live` and `/api/share` are build artifacts; the gateway also reads status D1 and runs Cron. There is no authentication or runtime GitHub dependency.
+- The catalogue defines monitoring: active independent HTTPS sites at origin plus `/api/live`, excluding stores/distribution links. Preserve five-minute Cron, seven-day retention, deduplication by project/slot and UTC calculations. Visitors only read observations; missing/stale/redirect/login results must not become healthy. Local demos never seed production.
+- Keep canonical project-detail routes, redirects/discovery metadata, bilingual light/dark responsive views, keyboard behavior, browser-local time zones, preference persistence and shareable navigation aligned. Preserve all detailed gallery, screenshot, CTA and Agent-guide rules in the maintenance contract.
+- Original identity bytes, geometry, colors, licenses and provenance are authoritative. Hexly campaign styling does not redesign independent products. Exact-byte raw-image approval rules and documented product-type/model defaults remain in force. Archived projects receive basic support and are excluded from enrichment unless explicitly named.
+- Independently served materials belong to immutable R2 `hexlyai` / `https://h.no.mt` objects; code/SVG source and receipts stay in Git, working binaries hydrate from inventory. Never add movies/material binaries to Git or deployed assets, merge retired binary history back, or overwrite original/approved versions. Production assets remain below 20 MiB.
+- Shared 5/5/5 compositions live in the private Video Kit and consumers pin a published Git SHA. Project scripts/voices/scenes/films belong to consumers. Reuse the five immutable standard outros directly, preserve media receipts and concurrent handoffs, and pause if ownership of another writer's changes is unclear.
+- Keep models independent of React/browser globals, effects in App/views and routes thin. Preserve the detailed source-adoption, brand-kit, texture, release and complete-onboarding procedures linked above.
 
 ## Stack / Layout
 
 | Component | Choice |
 |---|---|
-| Client | React 19, Vite 8, TypeScript 7 strict |
-| Toolchain | Bun 1.4.0, exact dependencies and frozen `bun.lock`; browser CI and deployment pin Node.js 26.7.0 |
-| Hosting | Worker `hexly-ai`, Static Assets, Cron, and D1 `hexly-status`; apex/www/status custom domains |
-| Quality | Biome; Vitest L1; Playwright HTTP L2 and Chromium L3; OSV + Gitleaks |
-
-```text
-src/data/          catalogue, bilingual copy, version
-src/model/         filtering, preferences, navigation, status, types
-src/App.tsx        browser state and view orchestration
-src/components/    accessible React views
-src/styles/        design tokens and view styles
-public/logos/      hydrated original/emoji/derived materials; source records remain tracked
-packages/video-kit/ 5/5/5 composable designs, shared brand/motion, v2 schema, player, renderer
-worker/            gateway, scheduled probes, D1 status queries
-migrations/        D1 schema
-scripts/           local mock D1, asset/profile generators, verification, gates, release
-tests/             unit/, http/, browser/
-docs/              numbered guides, profiles/, sources/, deployment/
-artwork/           versioned logo studies, references, raw outputs, finishing
-```
-
-Keep model logic independent of React and browser globals. Browser effects belong in `App.tsx` or view components; keep views thin.
+| Runtime / install | React 19, Vite 8, TypeScript 7 strict; Bun ≥1.4.0 with frozen lock, Node ≥24; browser/deploy CI Node 26.7.0 |
+| Hosting / state | Worker `hexly-ai`, Static Assets, Cron, D1 `hexly-status` via `STATUS_DB` |
+| Static / tests | Biome, Vitest, real Workers HTTP and full Chromium browser journeys, OSV/Gitleaks |
+| `src/{data,model,components,styles}/` | Catalogue, domain logic, accessible views and tokens |
+| `worker/`, `migrations/`, `scripts/`, `tests/` | Gateway/status, schema, local runners, asset tooling and proof |
+| `packages/video-kit/`, `artwork/`, `docs/` | Shared designs, versioned source records, profiles and operational receipts |
 
 ## Commands
 
+Run from the root. Integration/browser fixtures need the archived materials: `assets:hydrate` restores checksummed local files from existing R2 objects. Ordinary builds use checked-in metadata/CDN materials. Install full Chromium without `--only-shell`; Gitleaks/OSV are required for security gates.
+
 ```bash
-bun run dev
+bun install --frozen-lockfile
+bun run assets:hydrate
 bun run typecheck
 bun run lint
-bun run gate:commit
 bun run build
 bun run test:coverage
 bun run test:http
 bun run test:browser
 bun run check:security
-bun run assets:hydrate
-bun run assets:build && bun run docs:profiles && bun run assets:check
-bun run assets:r2 -- plan
-bun run release -- --dry-run
-bun run video:dev
-bun run video:studio
-bun run video:render -- --project pew --template showcase --theme dark --opening stack --ending split --mode deck
-bun run video:review
 bun run video:check
-bun run media:r2 -- --project hermes-on-herdr --video context-en --version 1.0.0 --file /path/to/film.mp4
 ```
 
-Run the asset/profile generation sequence after intentional catalogue or artwork changes; ordinary builds use checked-in metadata and CDN materials. `bun run assets:check-tracked` rejects material binaries in the Git index, including forced additions; keep SVG source and the required vendored code archive. Read [docs/05-release.md](docs/05-release.md) before publishing.
-
-Video exports require Chrome/Chromium and FFmpeg. Real PPTX/PDF contain image-backed pages, with editable native PPTX speaker notes. See the [kit README](packages/video-kit/README.md) for schema/API, export commands, dependency/brand licenses and the reproducible PptxGenJS dependency pruning. Never suppress its known dependency advisory instead of removing the unused vulnerable code.
+`typecheck` generates ignored Wrangler binding types and checks browser/Worker/Video Kit lanes. `test:http` / `test:browser` first check isolation and build, then own their local Worker lifecycle. No production token or live service probe is needed. Asset generation, rendering and publication commands are in the maintenance contract; video exports need Chromium/FFmpeg.
 
 ## Verification
 
-`enforced` means a script, hook, or CI check exists; `manual` requires review. See [docs/03-quality.md](docs/03-quality.md) for coverage scope and browser limitations.
+6DQ = L1/L2/L3 + G1/G2 + D1. Status: `enforced`, `planned`, `manual`, `N/A`.
 
-| Dimension / change | Contract | Status | Evidence |
+| Dimension | Required proof | Status | Current enforcement / gap |
 |---|---|---|---|
-| L1 logic | At least 90% statements, branches, functions, and lines for models, isolation, and release policy | enforced | Pre-commit `test:changed`; CI `test:coverage`; `vitest.config.ts` |
-| L2 HTTP | Built document, assets, headers, downloads, and release metadata through local Workers HTTP | enforced | Pre-push and CI `test:http`; `playwright.http.config.ts` |
-| L3 UI | Desktop/mobile journeys, both languages/themes, gallery, accessibility | enforced | CI `test:browser`; `playwright.config.ts` |
-| G1 static | TypeScript strict and Biome with zero errors or warnings | enforced | Pre-commit `lint:staged`; CI full typecheck/lint |
-| G2 security | OSV locked dependencies and Gitleaks; missing tools fail | enforced | Pre-push `check:security`; CI |
-| D1 isolation | Local-only SQLite D1, fake IDs, separate state, no public probes or remote bindings | enforced | `check:isolation`, `scripts/isolation.ts`, Playwright configs |
-| Assets / build | Source checksums, WebP sizes, Vite build, Wrangler dry run | enforced | CI `assets:check`, L2/L3 build, `deploy:check` |
-| Content / docs | Profile synchronization, provenance, numbered docs when behavior changes | manual | Review catalogue changes against identity rules and source evidence |
+| L1 logic | Statements, branches, functions and lines each ≥95%; no skipped/focused tests | planned | CI runs coverage, but Vitest still gates at 90% on model/isolation/release logic; commit runs only affected tests without coverage |
+| L2 HTTP | Real local HTTP over 100% of API endpoint/method combinations and built documents/assets | planned | Push/CI HTTP suite checks the built Worker; exhaustive method/surface enforcement still needs verification as routes evolve |
+| L3 UI | Critical desktop/mobile journeys, languages/themes, gallery and accessibility | enforced | Dedicated required CI Chromium job; browser configs reject focused tests and server reuse |
+| G1 static | Strict types and check-only lint, zero errors/warnings | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint |
+| G2 security | Dependency and secret scans; missing scanner fails | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges |
+| D1 isolation | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker | planned | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser use fixed per-lane directories and lack complete per-run/marker guarantees |
+| Assets / build | Checksums, profiles, immutable sources, real bundle and deploy dry run | enforced | CI asset/material guard, L2/L3 build and `deploy:check` |
+| Content / release | Provenance, source adoption and deployment proof | manual | Identity/maintenance/release runbooks and maintainer verification |
 
-Pre-commit runs the tracked-material guard, staged-file Biome and affected unit tests concurrently, without coverage. Vitest selects tests from staged, unstaged, and untracked Git changes; configuration/dependency changes and inputs read outside the import graph trigger all unit tests. Documentation/artwork-only changes with no related tests pass without running the suite. CI repeats the material guard before hydration. Full typecheck, lint, coverage, isolation, security, and integration/browser checks remain in CI; pre-push runs L2 + G2.
-Checks never auto-fix. Do not bypass hooks or commit skipped/focused tests; Playwright enforces `forbidOnly`. Hooks read working-tree content, without index snapshots or stdin-ref-range validation. Review the staged diff explicitly.
+| Hook | Current behavior | Required follow-up |
+|---|---|---|
+| pre-commit | Tracked-material guard, staged lint and changed unit tests in parallel; doc-only changes can select no tests | G1+L1 with coverage on index snapshot, <30s |
+| pre-push | L2 HTTP and G2 in parallel against working-tree files/history | Validate commits named by stdin push refs, <3min |
 
-Browser tests use the full Chromium build's current headless mode (`channel: "chromium"`), preserving native tab navigation; CI must install `chromium` without `--only-shell`. Status browser tests pin the browser clock to the fixed SQLite demo's latest sample; deliberate stale fixtures use that same clock. Long CI runs must not age all demo services into unknown states. The maintained Wrangler development-proxy patch retries a disconnected read once, with fault-injection coverage; writes, canceled requests, upgrades and actual HTTP failures are never replayed. See `patches/README.md`.
+Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. CI pins shared workflows at `ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f`. Scope, browser clocks, Wrangler retry patch and failure evidence: [quality guide](docs/03-quality.md).
 
 ## Resources / Isolation
 
-| Purpose | Port | Runtime state / access |
+| Lane | Ports / directory | Boundary |
 |---|---|---|
-| Vite dev | 7048 | `https://index.dev.hexly.ai` through Caddy to loopback |
-| Dev Worker | 37048 | `.wrangler/dev`; inspector 38048; SQLite D1 demo data |
-| L2 HTTP | 17048 | `.wrangler/http`; inspector 18048 |
-| L3 browser | 27048 | `.wrangler/browser`; inspector 28048 |
-| Workers preview | 37048 | `.wrangler/preview`; inspector 38048 |
+| Daily Vite / Worker | 7048 / 37048; inspector 38048; `.wrangler/dev` | Caddy `index.dev.hexly.ai`, local demo observations |
+| L2 HTTP | 17048; inspector 18048; `.wrangler/http` | `--env test --local`, fake IDs, no live probes |
+| L3 browser | 27048; inspector 28048; `.wrangler/browser` | Same local guard; distinct lane, still fixed across runs |
+| Manual preview | 37048; inspector 38048; `.wrangler/preview` | `--env dev --local`; do not overlap the daily Worker |
 
-`bun run dev` builds the target manifest, migrates/seeds local SQLite D1, and starts both servers; review `/status`. Demo records refresh every five minutes. Restart after catalogue changes. Tests use `--env test --local`; dev/preview use `--env dev --local`. Fake database IDs, separate persistence paths, and disabled live probes keep all local environments isolated. Production commands select `--env ""`. Worker types are generated into ignored `.wrangler/types.d.ts` and checked separately from browser DOM types. Runbook: [docs/04-development.md](docs/04-development.md).
+Required harnesses use fresh per-run persistence, assert local/test context before fixtures, initialize `_test_marker(key,value)` with `env=test`, and verify it before reset/cleanup. Never deploy remote `-test` resources. Keep production credentials and daily-dev state out of automated lanes. Local status clocks remain stable during each browser suite.
+
+Daily `bun run dev` builds the target manifest, migrates/seeds local SQLite and starts both servers; demos refresh every five minutes. Restart after catalogue changes. Development/preview use `--env dev --local`; production explicitly selects `--env ""`. Generated binding types live in ignored `.wrangler/types.d.ts`. Details: [local development](docs/04-development.md).
 
 ## Operations / Release
 
-- Entry: `bun run release` or `bun run release -- patch|minor|major|X.Y.Z` from clean `main`, with GitHub write access. Dry run is read-only. Version policy and recovery: [docs/05-release.md](docs/05-release.md).
-- The release script updates version/changelog, pushes `main`, waits for that commit's successful quality and Deploy jobs, verifies production, then creates an annotated tag and GitHub Release. Published tags are immutable except for the explicitly owner-authorized 2026-09-13 history reduction, after production acceptance and a verified external backup; preserve its old/new ref maps and re-verify the rewritten deployment.
-- `ci.yml` (`CI`) runs all gates. Its successful trusted `main` run triggers `release.yml` (`Release`), which applies D1 migrations and deploys that source SHA. The release helper matches `Deploy CI <source-run-id>` and requires `Deploy / Deploy Worker` success. Use this path for routine publication; manual `bun run deploy` follows the same migration order. Actions secrets: `CLOUDFLARE_API_TOKEN` (already has D1 access), `CLOUDFLARE_ACCOUNT_ID`.
-- Production: `https://hexly.ai` and `https://status.hexly.ai`; preview: `https://hexly-ai.nocoo.workers.dev` (`noindex`). `bun run verify:production` checks version/revision, document, status page and live D1 feed, compiled assets, and original logo. Keep routing and rollback details in the runbook.
-
-## Adding a project: complete the whole path
-
-Use the shared `zhengli-update-github-readme` skill. A new project is complete
-when its source repository, GitHub profile, hexly catalogue, identity/provenance,
-project documentation, public website, and status coverage agree.
-
-1. Inspect the source README, actual logo/theme, Git status, and release path.
-   Preserve unrelated work and never publish someone else's unpushed commits.
-2. For a project with website headers, apply the
-   [Hexly site entry skill](.agents/skills/hexly-site-entry/SKILL.md) during source
-   onboarding. Cover its applicable homepage/dashboard/admin headers and keep
-   the skill's explicit page exclusions. Link to the canonical catalogue detail
-   route, with matching icons and tooltips beside GitHub and theme controls.
-3. For a public site, provide an unauthenticated, uncached `GET /api/live` with
-   JSON `status: "ok"` and the current top-level `version`. Existing `name` or
-   `component` conventions may remain. Dynamic services check core dependencies
-   and return an appropriate failure status; static sites generate their health
-   JSON during the production build. Verify production, not just Vite dev.
-4. Update the source repository description and `nocoo/nocoo` profile entry,
-   retaining established emoji and section/order conventions. Record the profile
-   revision before citing it in catalogue provenance.
-5. Add the project JSON and index entry, archive its actual artwork and palette
-   evidence, and run `assets:build`, `docs:profiles`, and `assets:check`. Read the
-   project R2 skill: inventory, publish and verify the new versioned materials
-   before release. Keep binary working files out of Git/deploy and save receipts.
-   Use the logo skill when identity creation or promotion is in scope.
-6. Validate and publish the source and this site within the user's authorization.
-   A health-only correction uses Z+1. After the next Cron run, verify the exact
-   endpoint and current result at `status.hexly.ai`; disclose real failures.
-
-Desktop apps and libraries without a website do not need a synthetic endpoint.
-Do not create a separate D1 monitor entry, deploy a second status Worker, or
-require a running browser to keep monitoring alive.
+Authorized maintainers use `bun run release` from clean `main` (patch/minor/major/explicit version; `-- --dry-run` is read-only). It updates version/changelog, pushes main, waits for matching quality and Deploy jobs, verifies production, then creates the annotated tag/Release. Trusted CI triggers D1 migrations before deployment; normal publication follows that path.
+Check `https://hexly.ai` and `https://status.hexly.ai` with `bun run verify:production`; preview Workers URLs remain noindex. Preserve immutable tags and the documented, completed history-reduction maps. Details: [release](docs/05-release.md), [recovery](docs/23-git-history-recovery.md), [maintenance](docs/29-project-maintenance.md).
 
 ## Retrospective
 
-Record accident narratives in [Retrospective.md](Retrospective.md), recurring project rules here, cross-project lessons in nmem/global rules, and deterministic safeguards in tests or hooks.
-
-- Keep frozen lockfile validation in version-only releases; temporary registry configuration must not rewrite dependency sources.
-- Confirm the Deploy job's final success and public verification before reporting publication complete.
-- Keep the pinned browser job required by Deploy alongside the shared quality workflow; preserve its failure diagnostics and traces.
-- Temporary-repository tests must remove repository-local Git environment variables inherited from hooks; a different working directory alone does not isolate a linked worktree.
+Narratives stay in [Retrospective.md](Retrospective.md); recurring rules stay brief, cross-project lessons belong in global rules/nmem and deterministic safeguards in tests/hooks. Keep frozen validation on version-only releases; temporary registry settings must not rewrite lockfile sources. Verify the final Deploy result. Temporary-repository tests must remove inherited repository-local Git environment variables; changing cwd alone does not isolate a linked worktree.
