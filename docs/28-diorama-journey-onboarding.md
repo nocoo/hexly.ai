@@ -83,6 +83,41 @@ HTML fallback. Desktop/mobile checks in both themes decoded the full 1600×900
 preview and original, opened and closed the Lightbox, and found no page overflow
 or browser errors.
 
+## Example film
+
+The detail's media section includes **A small idea, shared** at
+`#video-a-small-idea`, followed by the existing screenshot gallery. Its original
+1920×1080 H.264/AAC movie is byte-identical to the live GitHub Pages example and
+the verified `v0.1.0` release archive. The picture lasts 68.1 seconds; the audio
+and MP4 container last 68.2 seconds. The file keeps its original full-range
+4:2:0 encoding and faststart layout.
+
+The 37 KB WebP poster preserves the whole original HTML-rendered cover from
+frame 150. The original PNG and source MIT notice are archived with the film.
+All 11 original English subtitle cues retain their text and timing in WebVTT;
+native captions start off because the film already contains visible captions.
+The shared player loads the movie after a click and provides native controls
+and inline playback.
+
+Movie, cover, poster, captions and license use the independent R2 media version
+`1.0.0`. Full CDN checksums, MIME, three permitted origins and a real `206`
+range response are recorded in the
+[film receipt](media/diorama-journey/a-small-idea/v1.0.0.json).
+
+Dev review passed desktop and emulated mobile in both themes, including unmuted
+audio/video decoding, seeking, real timed captions, English/Chinese labels and
+the screenshot Lightbox. No horizontal overflow or page errors were observed.
+The first playback-progress check timed out once; isolated diagnosis and the
+subsequent complete four-configuration review passed unchanged. Validation also
+passed 108 model tests, 70 HTTP checks, 20 media browser tests, lint, asset checks
+and the production build. Profile regeneration left all 76 profiles unchanged.
+
+## Publication state
+
+The owner paused this site's publication on 2026-09-17 to add the example film.
+Named R2 materials are available for local review; the website remains unpushed
+and undeployed by this work. Resume the release only after a new owner instruction.
+
 The remote baseline advanced to `0.15.0` during this work, so the requested Z+1
 release is now `0.15.1`. The original `0.14.1` target remains historical intake
 evidence. The existing emoji objects and their public routes stay available;
