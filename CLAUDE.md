@@ -16,6 +16,7 @@ This file is the project contract; hooks, CI, and configuration enforce it. Keep
 | Git history / recovery | [Recovery guide](docs/23-git-history-recovery.md); preserve original bundles and commit/ref maps; never merge the old binary history back |
 | Identity rules | [docs/02-identity-rules.md](docs/02-identity-rules.md), generated `docs/profiles/`; [logo family studies](docs/06-logo-family.md) in `artwork/logo-family/` |
 | Brand background textures | [Project texture skill](.agents/skills/hexly-brand-textures/SKILL.md): habitat-related foliage for animals/birds, meaningful working materials for 3D tools, exact Flare evidence and readable light/dark presentation |
+| Family website entry | [Project entry skill](.agents/skills/hexly-site-entry/SKILL.md): GitHub → Hexly → Theme, canonical project-detail links, matching icons/tooltips and explicit page exclusions |
 | Independent texture packs | Optional `Project.brandTexture`, `public/textures/<id>/v<version>/`, R2 `projects/<id>/textures/v<version>/`; [maintenance and rollout](docs/27-project-textures.md). Keep identity kits and original Logo/RGBA bytes unchanged. |
 | Complete brand archives | [inventory and scope](docs/brand-archives/README.md), [maintenance guide](docs/19-family-brand-archives.md), `public/brands/schema-v2.json` |
 | Version | Root `package.json` as `X.Y.Z`; display `vX.Y.Z`; build emits version and Git revision at `/api/live` |
@@ -211,20 +212,25 @@ project documentation, public website, and status coverage agree.
 
 1. Inspect the source README, actual logo/theme, Git status, and release path.
    Preserve unrelated work and never publish someone else's unpushed commits.
-2. For a public site, provide an unauthenticated, uncached `GET /api/live` with
+2. For a project with website headers, apply the
+   [Hexly site entry skill](.agents/skills/hexly-site-entry/SKILL.md) during source
+   onboarding. Cover its applicable homepage/dashboard/admin headers and keep
+   the skill's explicit page exclusions. Link to the canonical catalogue detail
+   route, with matching icons and tooltips beside GitHub and theme controls.
+3. For a public site, provide an unauthenticated, uncached `GET /api/live` with
    JSON `status: "ok"` and the current top-level `version`. Existing `name` or
    `component` conventions may remain. Dynamic services check core dependencies
    and return an appropriate failure status; static sites generate their health
    JSON during the production build. Verify production, not just Vite dev.
-3. Update the source repository description and `nocoo/nocoo` profile entry,
+4. Update the source repository description and `nocoo/nocoo` profile entry,
    retaining established emoji and section/order conventions. Record the profile
    revision before citing it in catalogue provenance.
-4. Add the project JSON and index entry, archive its actual artwork and palette
+5. Add the project JSON and index entry, archive its actual artwork and palette
    evidence, and run `assets:build`, `docs:profiles`, and `assets:check`. Read the
    project R2 skill: inventory, publish and verify the new versioned materials
    before release. Keep binary working files out of Git/deploy and save receipts.
    Use the logo skill when identity creation or promotion is in scope.
-5. Validate and publish the source and this site within the user's authorization.
+6. Validate and publish the source and this site within the user's authorization.
    A health-only correction uses Z+1. After the next Cron run, verify the exact
    endpoint and current result at `status.hexly.ai`; disclose real failures.
 
