@@ -4,18 +4,20 @@ This structure is established before product implementation. Source: nmem `af0da
 
 | Dimension | Contract | Command | When |
 | --- | --- | --- | --- |
-| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 90% statements, branches, functions, and lines | `bun run test:changed`; `bun run test:coverage` | Affected tests at pre-commit; full coverage in CI |
+| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 95% statements, branches, functions, and lines (current Vitest gates remain at 90%; raising them is planned) | `bun run test:changed`; `bun run test:coverage` | Affected tests at pre-commit; full coverage in CI |
 | L2 | Real HTTP requests to the built site in the Workers runtime; HTML, assets, and response behavior | `bun run test:http` | Pre-push |
 | L3 | Browser journeys for navigation, search, categories, bilingual preferences, themes, gallery, responsive layout, and accessibility | `bun run test:browser` | CI and manual |
 | G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run lint:staged`; `bun run check:static` | Staged lint at pre-commit; full checks in CI |
 | G2 | OSV dependency audit and Gitleaks secret scanning | `bun run check:security` | Pre-push and CI |
-| D1 | Independent loopback test servers, no production resource bindings, and no remote services | `bun run check:isolation` | Before integration/browser tests |
+| D1 | Per-run loopback SQLite state, guards before fixture/reset/cleanup, no production bindings or remote services | `bun run check:isolation` | Before integration/browser tests |
 
 The D1 quality dimension denotes test isolation. The status feature also uses a
 Cloudflare D1 database, isolated explicitly: development and tests have dedicated
 names, fake local database IDs, no routes or Cron triggers, and modes that disable
 public probes. `check:isolation` rejects inherited production settings and
 unreviewed remote bindings. All CLI fixtures use `--local`.
+
+The required contract is [CLAUDE.md](../CLAUDE.md). Current HTTP/browser persistence is fixed per lane, and the runner does not enforce a per-run `_test_marker` before all fixture resets and cleanup. Fresh per-run paths and those guards remain planned; existing local-only checks do not certify the entire isolation requirement. No remote `-test` resources are required.
 
 L1 coverage includes executable model logic, release policy, and isolation rules.
 Status Worker tests exercise bounded probes with fake HTTP responses and real
@@ -60,6 +62,8 @@ terminate their own servers without reusing an existing server. L2 uses
 and separate SQLite persistence directories keep these environments independent.
 
 Browser CI runs in its own job with Node.js 26.7.0, matching local development and deployment. `channel: "chromium"` selects the full Chromium build's current headless mode; install `chromium` without `--only-shell`. The default headless shell stalled native popup initialization during the R2 release, so the original real-link journey now runs in the full browser. Deployment requires both quality and browser jobs to succeed; all journeys retain three workers and zero retries.
+
+Browser tests use the full Chromium build's current headless mode (`channel: "chromium"`), preserving native tab navigation; CI must install `chromium` without `--only-shell`. Status browser tests pin the browser clock to the fixed SQLite demo's latest sample; deliberate stale fixtures use that same clock. Long CI runs must not age all demo services into unknown states. The maintained Wrangler development-proxy patch retries a disconnected read once, with fault-injection coverage; writes, canceled requests, upgrades and actual HTTP failures are never replayed. See `patches/README.md`.
 
 The browser job records its Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines, preserves the test command's exit status, and uploads the diagnostics, browser traces, and screenshots for seven days. Inspect this evidence before rerunning a failure that loses the local server. New-tab checks wait for navigation and `DOMContentLoaded` before inspecting the destination.
 
