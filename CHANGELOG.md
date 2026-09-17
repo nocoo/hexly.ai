@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.15.1] - 2026-09-17
+
+### Features
+
+- adopt Diorama Journey identity, Skills category and screenshots ([446310c](https://github.com/nocoo/hexly.ai/commit/446310cd367c2b3842877a949321dbe439afba56))
+- integrate the Diorama Journey example film ([869f899](https://github.com/nocoo/hexly.ai/commit/869f8999cc26f52c26681da3e90862ab25d8bad2))
+
+### Maintenance
+
+- integrate published Diorama Journey onboarding baseline ([6a37641](https://github.com/nocoo/hexly.ai/commit/6a37641c15df19bcb6d75a09880f8474605e5f34))
+
+### Documentation
+
+- align the adopted brand archive count ([743720b](https://github.com/nocoo/hexly.ai/commit/743720bc6ddde99ad7e68cee32f010e90a4d5b9d))
+- record approval for the Diorama Journey site release ([1b50091](https://github.com/nocoo/hexly.ai/commit/1b500915debc7949f1c494e6a72a46f91d00c4bc))
+
 ## [0.15.0] - 2026-09-16
 
 ### Features
