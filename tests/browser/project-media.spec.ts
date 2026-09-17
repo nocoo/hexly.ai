@@ -417,7 +417,10 @@ for (const id of ["hooky", "r2shot", "diorama-journey"]) {
 		const errors: string[] = [];
 		page.on("pageerror", (error) => errors.push(error.message));
 		await page.goto(`/projects/${id}`);
-		await expect(page.locator(".project-film")).toHaveCount(0);
+		await expect(page.locator(".project-film")).toHaveCount(
+			id === "diorama-journey" ? 1 : 0,
+		);
+		await expect(page.locator(".project-film video")).toHaveCount(0);
 		await expect(page.locator("#brand .brand-hero")).toHaveCount(1);
 		for (const theme of ["light", "dark"]) {
 			if (theme === "dark")

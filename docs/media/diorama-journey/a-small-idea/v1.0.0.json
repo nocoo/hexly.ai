@@ -1,0 +1,197 @@
+{
+	"project": "diorama-journey",
+	"video": "a-small-idea",
+	"version": "1.0.0",
+	"status": "published",
+	"verifiedAt": "2026-09-17T00:10:35.856Z",
+	"bucket": "hexlyai",
+	"origin": "https://h.no.mt",
+	"source": {
+		"repository": "https://github.com/nocoo/diorama-journey",
+		"revision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc",
+		"version": "0.1.0",
+		"release": "https://github.com/nocoo/diorama-journey/releases/tag/v0.1.0",
+		"releasePublishedAt": "2026-09-16T23:20:08Z",
+		"production": "productions/a-small-idea/20260916T231545999986Z",
+		"exampleUrl": "https://nocoo.github.io/diorama-journey/",
+		"exampleRevision": "5a89d9da4d696d812a0aa46c58b94d81b8581b18",
+		"videoPath": "public/review/a-small-idea.mp4",
+		"posterPath": "public/review/cover.png",
+		"captionsPath": "public/audio/narration.srt",
+		"videoUrl": "https://nocoo.github.io/diorama-journey/review/a-small-idea.mp4",
+		"posterUrl": "https://nocoo.github.io/diorama-journey/review/cover.png",
+		"captionsUrl": "https://nocoo.github.io/diorama-journey/audio/narration.srt",
+		"releaseVideoUrl": "https://github.com/nocoo/diorama-journey/releases/download/v0.1.0/a-small-idea.mp4",
+		"releaseArchive": {
+			"source": "productions/a-small-idea/20260916T231545999986Z/archives/a-small-idea-20260916T231609278428Z.zip",
+			"sha256": "b603dd719c90f9db93befa9a63637d969e7efb29642add0c980456316ed2c561",
+			"bytes": 165088518,
+			"matchesGitHubDigest": true,
+			"deliveryManifestSha256": "fd23bb8012f3aa2526ed10a0e6ce0777aa78fcca51815eb0fdc310066d7639db",
+			"url": "https://github.com/nocoo/diorama-journey/releases/download/v0.1.0/a-small-idea-20260916T231609278428Z.zip"
+		},
+		"storySha256": "79fa2ec822af320c4238e94ad3af9c7507eebbbee434d044da90f376aa60f4d4",
+		"timingSha256": "c52202cb1d332747685bf596cb7268fefc10922bcb8d8ac31b8b9ecf21da039e"
+	},
+	"durationSeconds": 68.2,
+	"videoDurationSeconds": 68.1,
+	"width": 1920,
+	"height": 1080,
+	"fps": 30,
+	"language": "en",
+	"captionsBurnedIn": true,
+	"encoding": {
+		"video": "H.264 High",
+		"audio": "AAC LC",
+		"pixelFormat": "yuvj420p",
+		"colorRange": "full",
+		"sampleRate": 48000,
+		"channels": 2,
+		"faststart": true,
+		"moovOffset": 32,
+		"mdatOffset": 76554,
+		"transcoded": false,
+		"note": "The original full-range 4:2:0 movie is unchanged. Its 2043 video frames last 68.1 seconds; the AAC stream and container last 68.2 seconds."
+	},
+	"posterProvenance": {
+		"method": "existing-html-render",
+		"composition": "DioramaJourney",
+		"frame": 150,
+		"captions": false,
+		"sourceWidth": 1920,
+		"sourceHeight": 1080,
+		"sourceSha256": "56d1687a7acfea9caa4ebdd35722f4bf953e4eb83c9a2c4c93884fe18574d662",
+		"renderRecord": "productions/a-small-idea/20260916T231545999986Z/process/renders/20260916T230717123Z-poster/render.json",
+		"renderedAt": "2026-09-16T23:07:17.133Z",
+		"derivative": {
+			"width": 1600,
+			"height": 900,
+			"format": "webp",
+			"quality": 86,
+			"effort": 6,
+			"sharpVersion": "0.35.4",
+			"transformation": "Uniform full-canvas resize from the original 1920x1080 HTML-rendered PNG; no crop, recoloring or video frame extraction."
+		}
+	},
+	"captionProvenance": {
+		"sourceSha256": "71649a661f725dd16531e871d19302ca14793a8bd24b3b3102f16f46bc46001a",
+		"sourceFormat": "SRT",
+		"targetFormat": "WebVTT",
+		"cueCount": 11,
+		"changes": "Added WEBVTT header and changed timestamp millisecond separators from commas to periods; original numbering, times and text preserved."
+	},
+	"rights": {
+		"authorization": "Owner requested importing the example-site movie into this project detail on 2026-09-17; site publication remains paused.",
+		"license": "MIT",
+		"copyright": "Copyright (c) 2026 Diorama Journey contributors",
+		"licenseSource": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/LICENSE",
+		"licenseUrl": "https://h.no.mt/projects/diorama-journey/videos/a-small-idea/v1.0.0/license-bd46117efc51.txt",
+		"thirdPartyNotices": "https://github.com/nocoo/diorama-journey/blob/c1c522d54d110c8a7dfa0996691fb9ba20436afc/THIRD_PARTY_NOTICES.md",
+		"scope": "Original scene code, story and synthesized celesta music retain the source MIT license. The existing Microsoft speech recording is reused; fonts, speech service and dependencies retain the source third-party notices. No new narration or movie was generated."
+	},
+	"cacheControl": "public, max-age=31536000, immutable",
+	"assets": {
+		"video": {
+			"key": "projects/diorama-journey/videos/a-small-idea/v1.0.0/a-small-idea-eee33d95a3e7.mp4",
+			"url": "https://h.no.mt/projects/diorama-journey/videos/a-small-idea/v1.0.0/a-small-idea-eee33d95a3e7.mp4",
+			"sha256": "eee33d95a3e762e385e99ee7514b84d3a33941260d8886ea151cdad6d95be487",
+			"bytes": 10990855,
+			"contentType": "video/mp4"
+		},
+		"poster": {
+			"key": "projects/diorama-journey/videos/a-small-idea/v1.0.0/poster-7f89f92c0941.webp",
+			"url": "https://h.no.mt/projects/diorama-journey/videos/a-small-idea/v1.0.0/poster-7f89f92c0941.webp",
+			"sha256": "7f89f92c0941b8ff565b6099d45c9fb0130180cd12ed90e75171cb82bdccfbbf",
+			"bytes": 37286,
+			"contentType": "image/webp"
+		},
+		"originalPoster": {
+			"key": "projects/diorama-journey/videos/a-small-idea/v1.0.0/cover-56d1687a7acf.png",
+			"url": "https://h.no.mt/projects/diorama-journey/videos/a-small-idea/v1.0.0/cover-56d1687a7acf.png",
+			"sha256": "56d1687a7acfea9caa4ebdd35722f4bf953e4eb83c9a2c4c93884fe18574d662",
+			"bytes": 939639,
+			"contentType": "image/png"
+		},
+		"captions": {
+			"key": "projects/diorama-journey/videos/a-small-idea/v1.0.0/narration-en-9c56d468f7fe.vtt",
+			"url": "https://h.no.mt/projects/diorama-journey/videos/a-small-idea/v1.0.0/narration-en-9c56d468f7fe.vtt",
+			"sha256": "9c56d468f7feb26452e9000a4b6ad927d7d54829c39a76dca3dd31f396ddce23",
+			"bytes": 1127,
+			"contentType": "text/vtt; charset=utf-8"
+		},
+		"license": {
+			"key": "projects/diorama-journey/videos/a-small-idea/v1.0.0/license-bd46117efc51.txt",
+			"url": "https://h.no.mt/projects/diorama-journey/videos/a-small-idea/v1.0.0/license-bd46117efc51.txt",
+			"sha256": "bd46117efc513805c7c1bae960d3450d37abd1fe5de8399dd0b97aacdbd8f708",
+			"bytes": 1085,
+			"contentType": "text/plain; charset=utf-8"
+		}
+	},
+	"verification": {
+		"publicSha256Matches": true,
+		"cacheControlMatches": true,
+		"rangeStatus": 206,
+		"range": "bytes 0-1023/10990855",
+		"allowedOrigins": [
+			"https://hexly.ai",
+			"https://www.hexly.ai",
+			"https://index.dev.hexly.ai"
+		],
+		"sourcePagesLocalAndReleaseBytesMatch": true,
+		"releaseVideoDigestMatches": true,
+		"fullMovieDecodePassed": true,
+		"audioMeanDb": -20.9,
+		"audioPeakDb": -1.5,
+		"sitePublication": "paused"
+	},
+	"developmentReview": {
+		"verifiedAt": "2026-09-17T00:15:31.115Z",
+		"url": "https://index.dev.hexly.ai/projects/diorama-journey#video-a-small-idea",
+		"browser": "Chromium",
+		"viewports": [
+			{
+				"device": "desktop",
+				"width": 1440,
+				"height": 1000
+			},
+			{
+				"device": "mobile",
+				"width": 390,
+				"height": 844,
+				"emulated": true
+			}
+		],
+		"themes": [
+			"light",
+			"dark"
+		],
+		"locales": [
+			"en",
+			"zh"
+		],
+		"passedConfigurations": 4,
+		"posterOnlyUntilClick": true,
+		"nativeVideoAndAudioDecoded": true,
+		"unmutedPlayback": true,
+		"inlinePlayback": true,
+		"seekSeconds": 32,
+		"captionCues": 11,
+		"timedCaptionChecked": true,
+		"nativeCaptionsDefault": "disabled",
+		"screenshotLightbox": true,
+		"horizontalOverflow": false,
+		"pageErrors": 0,
+		"initialAttempt": "The first playback-progress check timed out once. An isolated diagnostic played the original with audio normally, and a subsequent complete four-configuration review passed with the same media and player."
+	},
+	"validation": {
+		"modelTests": 108,
+		"httpTests": 70,
+		"mediaBrowserTests": 20,
+		"lint": "passed",
+		"assetsCheck": "passed",
+		"profilesRegenerated": "76 unchanged profiles",
+		"productionBuild": "passed",
+		"workerBuildBytes": 4435399,
+		"movieBinariesInWorkerBuild": false
+	}
+}
