@@ -18,7 +18,9 @@ import { catalogueProblems } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
 
 const projects = readProjects();
-const baselineProjects = projects.filter((p) => p.id !== "diorama-journey");
+const baselineProjects = projects.filter((p) =>
+	baseline.projects.some((row) => row.id === p.id),
+);
 const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const json = async (path: string) => JSON.parse(await readFile(path, "utf8"));

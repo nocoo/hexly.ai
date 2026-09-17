@@ -1,0 +1,60 @@
+{
+	"project": "diorama-journey",
+	"repository": "https://github.com/nocoo/diorama-journey",
+	"visibility": "public",
+	"archived": false,
+	"packageVersion": "0.1.0",
+	"sourceRevision": "c1c522d54d110c8a7dfa0996691fb9ba20436afc",
+	"profileRevision": "f7fb0554c24d243f4b1aa9087403fa56125c17d0",
+	"profileSection": "Skills & MCP Servers",
+	"profilePosition": 1,
+	"website": null,
+	"demo": "https://nocoo.github.io/diorama-journey/",
+	"statusTarget": null,
+	"reason": "Agent skill and source distribution. The GitHub Pages URL is a static example on a shared hosting origin, not an independent monitored service.",
+	"logo": {
+		"kind": "emoji",
+		"original": "/logos/emoji/diorama-journey.png",
+		"sourcePath": "nocoo/nocoo README.md — project emoji",
+		"sourceUrl": "https://github.com/nocoo/nocoo/blob/f7fb0554c24d243f4b1aa9087403fa56125c17d0/README.md",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 93560,
+		"sha256": "68c16332ea78b455d6016a80fec183a1ec20016814fcceeb9cf8bb1c79a595a0",
+		"thumbnail": "/logos/display/diorama-journey-160.webp",
+		"display": "/logos/display/diorama-journey-1024.webp"
+	},
+	"emojiRendering": {
+		"font": "Apple Color Emoji",
+		"fontSize": 800,
+		"canvas": [
+			1024,
+			1024
+		],
+		"method": "Centered glyph rendered with Chrome on macOS, transparent PNG; no independent logo or image-model generation claimed"
+	},
+	"description": {
+		"en": "Miniature 3D storytelling with narration, chapter clips and slides",
+		"zh": "以微型 3D 场景讲故事，输出配音视频、章节切片和演示文稿"
+	},
+	"themeSources": [
+		"assets/starter/src/film.css",
+		"assets/starter/src/web.css"
+	],
+	"checkedAt": "2026-09-16T23:19:37.583468+00:00",
+	"publication": {
+		"release": "https://github.com/nocoo/diorama-journey/releases/tag/v0.1.0",
+		"ci": "https://github.com/nocoo/diorama-journey/actions/runs/35161506509",
+		"pages": "https://github.com/nocoo/diorama-journey/actions/runs/35161834805",
+		"demoVerifiedAt": "2026-09-16T23:29:50.126515+00:00",
+		"checks": [
+			"paused video playback",
+			"five chapter seeks",
+			"download responses and PowerPoint download",
+			"live 3D composition",
+			"mobile layout",
+			"subdirectory asset paths"
+		]
+	}
+}
