@@ -114,9 +114,9 @@ and the production build. Profile regeneration left all 76 profiles unchanged.
 
 ## Publication state
 
-The owner paused this site's publication on 2026-09-17 to add the example film.
-Named R2 materials are available for local review; the website remains unpushed
-and undeployed by this work. Resume the release only after a new owner instruction.
+The owner approved the Z+1 site release on 2026-09-17 after the completed dev
+review. The film receipt preserves the earlier pause as its import-time state.
+Source adoption and the R2 media version remain independent of the site release.
 
 The remote baseline advanced to `0.15.0` during this work, so the requested Z+1
 release is now `0.15.1`. The original `0.14.1` target remains historical intake
