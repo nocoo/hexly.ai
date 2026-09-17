@@ -44,7 +44,7 @@ palette evidence, generation history, exact-byte approval and size/theme review.
 Explicit owner art direction overrides these defaults. They apply to new identity
 work; do not retroactively replace or recolor approved Logos. Hexly campaign
 styling remains separate from independent product UI and source identity rights.
-See [the project contract](../CLAUDE.md#brand-direction-by-product-type) and
+See [the project contract](29-project-maintenance.md#按产品类型选择品牌方向) and
 [the family guide](06-logo-family.md).
 
 ### Image model selection
