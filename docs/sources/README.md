@@ -1,5 +1,7 @@
 # Source snapshots
 
+The [Diorama Journey intake](diorama-journey-2026-09-17.json) records the public skill, source and profile revisions, original example theme and emoji identity. Its [profile snapshot](nocoo-readme-2026-09-17-diorama-journey.md) places the skill first in Skills & MCP Servers. The GitHub Pages example is a distribution demo; the skill has no independent monitored service.
+
 The [Snail brand handoff](snail-2026-09-12.json) preserves the owner's scope and
 `w36:p1` product confirmation, plus actual public/empty repository metadata at
 intake. The brand is authored in Hexly; source adoption and profile maintenance
@@ -26,3 +28,6 @@ The September 8 publication includes the previously local profile additions and 
 The September 9 InfoSpace addition has its own metadata snapshot and a separately dated repository-status entry. Earlier status records retain their original dates and values.
 
 Showtime's September 10 entry was requested before the first source commit. Its initial snapshot preserves the inspected local files and their hashes, the then-empty public repository and the profile commit before publication. The profile addition was subsequently pushed at `73203ef18b98ccf7cf03be7ef0ebf327bb8a743d`; the source project's first public revision is `1fa4de8686166d4477ab78c7f3356aa8e19b403d`. The [published-source capture](../../artwork/logo-family/showtime/2026-09-10-02/sources.json) and [onboarding record](../13-showtime-onboarding.md) track the later README and selected-icon work without rewriting the historical snapshot.
+
+Diorama Journey 的首个独立 Logo、源仓库采用及后续发布范围，见
+[品牌采用记录](diorama-journey-brand-2026-09-17.json)；此前 emoji 入库记录保留原样。
