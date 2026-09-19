@@ -6,6 +6,10 @@
 
 - onboard Eagle identity, site and public status ([aac2c22](https://github.com/nocoo/hexly.ai/commit/aac2c22f25dd22b6f0cb847ce6be9f75500e85a5))
 
+### Fixes
+
+- preserve contrast for status filter counts ([dc3f489](https://github.com/nocoo/hexly.ai/commit/dc3f4896518b55dfdfd0c03a324b529cf5c664d3))
+
 ## [0.15.3] - 2026-09-19
 
 ### Features
