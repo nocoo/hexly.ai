@@ -1,0 +1,41 @@
+{
+	"project": "eagle",
+	"repository": "https://github.com/nocoo/eagle",
+	"repositoryRevision": "45616ec9e8371250839403f422aa7738e246e204",
+	"ownerDelegation": {
+		"instruction": "Owner instruction, 2026-09-19: 新站点，eagle项目，onboard，无须确认，这个是动物系列，鹰。包括eagle和刚才项目需要落实logo到其README和sidebar如有（zeppelin无须在站点加logo）。",
+		"scope": ["eagle"],
+		"ownerReviewedExactBytes": false
+	},
+	"inputs": [
+		{
+			"path": "input/AGENTS.md",
+			"sha256": "8a948ffa26de0b6cce5df7714a3d70cd1bc015d241d1d5ad92f38f743b9c94f3"
+		},
+		{
+			"path": "input/README.md",
+			"sha256": "f2e0711ed2c61d19d88a0b8260413bfb364e53e5e67b10cb76c2de43f4e4e1f8"
+		},
+		{
+			"path": "input/package.json",
+			"sha256": "97a66abf500e94b6786b9d53e241d1fc5dd9839e0cdfeb1c5ceb301cd3747195"
+		},
+		{
+			"path": "input/src/web/App.tsx",
+			"sha256": "25e4e9185367aa1d147dc1c067c96bdaa7e95c5a7e9a391da7c01763bbcebf42"
+		},
+		{
+			"path": "input/src/web/style.css",
+			"sha256": "1d4071686d7b1b719b35d8c382f58c7238cf37b8da8412e247fd03de866f0d91"
+		}
+	],
+	"previousIdentity": {
+		"kind": "generic-ui-symbol",
+		"component": "lucide-react Bird",
+		"version": "1.47.0",
+		"independentLogo": false,
+		"snapshot": "input/previous-ui-mark.svg",
+		"snapshotMethod": "Exact Lucide path geometry rendered with the former UI stroke width; no standalone source file existed.",
+		"license": "input/lucide-license.txt"
+	}
+}

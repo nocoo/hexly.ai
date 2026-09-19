@@ -1,0 +1,70 @@
+{
+	"project": "eagle",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"background": {
+		"base": "#e4dcc7",
+		"light": "#f5efdb",
+		"shade": "#c6bea5",
+		"motif": "#8f9270",
+		"grainAmplitude": 0.7,
+		"grainSeed": 60919002,
+		"motifOpacity": 0.28,
+		"highlightOpacity": 0.32,
+		"ribbonOpacity": 0.14,
+		"pattern": {
+			"name": "Mountain pine and alpine leaf impressions",
+			"description": "Open mountain-pine needles and sparse alpine leaves evoke a golden eagle above mountain woodland. The habitat surface is independent of product features and other project motifs.",
+			"layers": [
+				{
+					"d": "M80 372Q119 232 253 87 M123 260l-40-44m51 24l-46-63m64 43l-36-74m52 52l-26-78m43 58l-16-77m33 53l-2-63 M120 265l69-10m-51-17l75-13m-59-10l85-20m-68-3l87-28m-68 6l79-37 M730 128Q832 207 917 373 M764 160l2-67m19 88l15-66m8 93l29-62m-8 93l44-50m-22 78l54-35 M770 166l-61-11m81 33l-58 3m77 18l-57 14m78 15l-57 24m78 6l-50 33",
+					"tone": "motif",
+					"strokeWidth": 2.6
+				},
+				{
+					"d": "M85 376Q124 236 257 92 M735 132Q837 211 922 377",
+					"tone": "highlight",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M899 620Q859 645 852 689Q887 682 899 620 M843 694Q802 688 782 712Q817 734 843 694 M108 465Q131 432 167 441Q154 475 108 465 M136 506Q161 478 189 490Q177 519 136 506",
+					"tone": "ribbon"
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [85, 65, 37],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [71, 56, 30],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [-25, 102],
+		"intentionalEdges": ["bottom"],
+		"note": "Uniform placement keeps the lower shoulder edge on the baseline. Facial features and complete streamer receive separate rounded-outline clearance checks. No continuation layer or recoloring."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 16,
+		"backgroundRgb": [250, 251, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Near-white exterior; golden feather colors are chromatically separate. Enclosed eye highlight retained, no component deletion."
+	}
+}

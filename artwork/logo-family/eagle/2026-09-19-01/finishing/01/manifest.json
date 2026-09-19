@@ -1,0 +1,370 @@
+{
+	"createdAt": "2026-09-19T07:07:35.553Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "f1c5b569d4041197de1d733f3a5316e5cd221e5190274bb53eaa9861fc899d33",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "eagle",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#e4dcc7",
+			"light": "#f5efdb",
+			"shade": "#c6bea5",
+			"motif": "#8f9270",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60919002,
+			"motifOpacity": 0.28,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Mountain pine and alpine leaf impressions",
+				"description": "Open mountain-pine needles and sparse alpine leaves evoke a golden eagle above mountain woodland. The habitat surface is independent of product features and other project motifs.",
+				"layers": [
+					{
+						"d": "M80 372Q119 232 253 87 M123 260l-40-44m51 24l-46-63m64 43l-36-74m52 52l-26-78m43 58l-16-77m33 53l-2-63 M120 265l69-10m-51-17l75-13m-59-10l85-20m-68-3l87-28m-68 6l79-37 M730 128Q832 207 917 373 M764 160l2-67m19 88l15-66m8 93l29-62m-8 93l44-50m-22 78l54-35 M770 166l-61-11m81 33l-58 3m77 18l-57 14m78 15l-57 24m78 6l-50 33",
+						"tone": "motif",
+						"strokeWidth": 2.6
+					},
+					{
+						"d": "M85 376Q124 236 257 92 M735 132Q837 211 922 377",
+						"tone": "highlight",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M899 620Q859 645 852 689Q887 682 899 620 M843 694Q802 688 782 712Q817 734 843 694 M108 465Q131 432 167 441Q154 475 108 465 M136 506Q161 478 189 490Q177 519 136 506",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					85,
+					65,
+					37
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					71,
+					56,
+					30
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				-25,
+				102
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Uniform placement keeps the lower shoulder edge on the baseline. Facial features and complete streamer receive separate rounded-outline clearance checks. No continuation layer or recoloring."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				250,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Near-white exterior; golden feather colors are chromatically separate. Enclosed eye highlight retained, no component deletion."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 1725987,
+		"foregroundPixels": 2468317,
+		"softEdgePixels": 12560,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 21,
+			"top": 213,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			-25,
+			102
+		],
+		"bounds": {
+			"left": 95,
+			"top": 395,
+			"right": 1919,
+			"bottom": 2046
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -110.16690223017821,
+		"clippedPixels": 28042
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2362,
+			"sha256": "107e1f26e12bae93a7ed50728c30a66fa7cfde9931848775810cff6a05d4c4f4"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 939,
+			"sha256": "205a5a4a9be9c2ca7ca07b4ba14a39b521675d7a43db72e7987617ba09b4cbb4"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3405965,
+			"sha256": "46f2349a607d125032822f372a3232b505a4911318fc5fe7ba766a184c39971e"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 73140,
+			"sha256": "afc3d707c4870835695ae5aa911791a2a6d028052cf8eb72b0717f79c1a769b2"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1151,
+			"sha256": "55a01941e0be211f43b63d10fdb6b57f346865186b832b39ea453ca74740c222"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1661173,
+			"sha256": "bf6eda278989c544bcea780ffd13d168e43d3ab7965e3e023dbe123efa98c0e7"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 3040770,
+			"sha256": "8e265377fc8b73a953207765c4cfd3daab265f71b8d818600c59635b69d38afb"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 94594,
+			"sha256": "dba7f642f3a7a5f8275951eb885f81cfc1a051b0b40793ca0f6c6a7b23594538"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 196083,
+			"sha256": "8403a8b507ec750bf8df02e2c4c249a6324b4dca106dfc4f39aeed25ea80224a"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 160548,
+			"sha256": "c13f58608ef79cabb24fdd76e832ab155ce6ed1e618b82a5b726edb21f96e207"
+		},
+		{
+			"path": "exports/eagle-transparent-2048.png",
+			"bytes": 3040770,
+			"sha256": "8e265377fc8b73a953207765c4cfd3daab265f71b8d818600c59635b69d38afb"
+		},
+		{
+			"path": "exports/eagle-icon-2048.png",
+			"bytes": 4231921,
+			"sha256": "6a0bdc065cc527b7dce34cefebef56e56f5e586e424fa3cab12625445fdf8711"
+		},
+		{
+			"path": "exports/eagle-rounded-2048.png",
+			"bytes": 4134556,
+			"sha256": "20b28e35d415648dee3a001e7b209cdc57a9e4a25b0ae737dea94d453784e66d"
+		},
+		{
+			"path": "exports/eagle-transparent-1024.png",
+			"bytes": 965328,
+			"sha256": "8788289ad88274532249e52dd3cf4d8616571b95c008791ae0c089fafd695a4a"
+		},
+		{
+			"path": "exports/eagle-icon-1024.png",
+			"bytes": 1202797,
+			"sha256": "07c4186c1d4620fc5ecb17a6c51d38ef897c463eee53a09449c6b8e16cf30c95"
+		},
+		{
+			"path": "exports/eagle-rounded-1024.png",
+			"bytes": 1194899,
+			"sha256": "6ed0a820c31e0c2e45d83ef1951e72b87e4abdc8cbe3b6a662a3cf1c9ffba9ae"
+		},
+		{
+			"path": "exports/eagle-transparent-512.png",
+			"bytes": 309559,
+			"sha256": "7e26bd40784df2f2135f9dc1af3979570cbfb75f903e1993cb64690f0cd92b64"
+		},
+		{
+			"path": "exports/eagle-icon-512.png",
+			"bytes": 400658,
+			"sha256": "c4019c8890b56b0aea657a5ace73698bb33cac2467a9904b16489d4c242339ed"
+		},
+		{
+			"path": "exports/eagle-rounded-512.png",
+			"bytes": 398600,
+			"sha256": "467bc39f77af49ecb0732866bb532bda4f76d4aa213cc3d62c4942dd059058c2"
+		},
+		{
+			"path": "exports/eagle-transparent-256.png",
+			"bytes": 94391,
+			"sha256": "b60e0133114e1f094d201d7fccd1cebe5b2940f4a5ef9daffe6bfe9ac615e0fe"
+		},
+		{
+			"path": "exports/eagle-icon-256.png",
+			"bytes": 109164,
+			"sha256": "39682128bdd320f8617653b7b564893566ba21ba903ed1138ede727e7724d4fa"
+		},
+		{
+			"path": "exports/eagle-rounded-256.png",
+			"bytes": 110853,
+			"sha256": "9a88a59aa6dc3b747e7eb46423c3ae791a6402bc7c4d0817bf2c3f5105ef600b"
+		},
+		{
+			"path": "exports/eagle-transparent-128.png",
+			"bytes": 27429,
+			"sha256": "9459c9128cc91344726375558692611464113d7a2005420feb6c74197c2f1e99"
+		},
+		{
+			"path": "exports/eagle-icon-128.png",
+			"bytes": 32196,
+			"sha256": "2b1cfed73a2da7f4ec93d2bd470dc7b2ebe3d45679d83eb38a0bb51fc8bb48fe"
+		},
+		{
+			"path": "exports/eagle-rounded-128.png",
+			"bytes": 33273,
+			"sha256": "defdeea8f2c46c080de8ce4f439e29a369f1f6f82aa55c4ed97a35b174648604"
+		},
+		{
+			"path": "exports/eagle-transparent-64.png",
+			"bytes": 7981,
+			"sha256": "dc9814433d0de7d795045e10f482ee3a7cdb211111416f38b7ad4fc49e1ab4c6"
+		},
+		{
+			"path": "exports/eagle-icon-64.png",
+			"bytes": 9863,
+			"sha256": "0e7cecab19b7960efd76990a3450907ffc68839e116712c1c1b06a404b181f91"
+		},
+		{
+			"path": "exports/eagle-rounded-64.png",
+			"bytes": 10347,
+			"sha256": "0b721c66a319835476027c24262ca9eaa111b70c1c8c0c8dd5905f00eaae2f28"
+		},
+		{
+			"path": "exports/eagle-transparent-48.png",
+			"bytes": 4831,
+			"sha256": "04fa8f064e85b5ef19cacc2f302c8c0573aba0f54c372bb096e947deedc3ca5c"
+		},
+		{
+			"path": "exports/eagle-icon-48.png",
+			"bytes": 5954,
+			"sha256": "6daf1593e324f291c8e624b16382d5125f8c0a187d9b11b4a961b693d0deb4da"
+		},
+		{
+			"path": "exports/eagle-rounded-48.png",
+			"bytes": 6307,
+			"sha256": "c573950ec1db34d106d35250585a11170eadbc3dcd4ffade30f9dc020626f41b"
+		},
+		{
+			"path": "exports/eagle-transparent-32.png",
+			"bytes": 2452,
+			"sha256": "f920ba61841de2f90174724f7401bdb9d88b43c92aae34bfb47e674d5b1243b4"
+		},
+		{
+			"path": "exports/eagle-icon-32.png",
+			"bytes": 3075,
+			"sha256": "43123ed4e09b8c0e7230fdcdc3b8adbc4956c0b099ab1be809e533c3d47f70c0"
+		},
+		{
+			"path": "exports/eagle-rounded-32.png",
+			"bytes": 3207,
+			"sha256": "c6a7ed8a4b09878245078adbdd3a3519650310772a5aa71478932e94971532d7"
+		},
+		{
+			"path": "exports/eagle-transparent-24.png",
+			"bytes": 1534,
+			"sha256": "176413a5480ff0a4cfae179de03136965d613076e01cfb76a4416728b9e91fcc"
+		},
+		{
+			"path": "exports/eagle-icon-24.png",
+			"bytes": 1915,
+			"sha256": "b0cb1b43b15ca60999922cce10d138903d2fd98b4dcd72e012ef59e02c719f8c"
+		},
+		{
+			"path": "exports/eagle-rounded-24.png",
+			"bytes": 2032,
+			"sha256": "952d99f064ef549162f3899ed6373f8147189aedb782f45e9f869f10bb8242c6"
+		},
+		{
+			"path": "exports/eagle-transparent-16.png",
+			"bytes": 843,
+			"sha256": "2394d19dc432be7ba38415ca0d35254762ff8e2281d6ff3413492c9c8440f075"
+		},
+		{
+			"path": "exports/eagle-icon-16.png",
+			"bytes": 985,
+			"sha256": "cbfd6c73a4ca3f6c73a1d7832e65350c255b10410fe287f824ac095afeeb4335"
+		},
+		{
+			"path": "exports/eagle-rounded-16.png",
+			"bytes": 1025,
+			"sha256": "dfb49e8c796a4cfb64598daa86c4cf6a637d0d5d5796a3f3d2bacb1878c910e5"
+		},
+		{
+			"path": "exports/eagle-white-2048.png",
+			"bytes": 2845244,
+			"sha256": "6c5f427fabfedd429aee515e6b967dbd649e4c4da33877ca35800271cb1e980c"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 911890,
+			"sha256": "ed20f58129b604b93cfb8082ed22b1b2b2de1ca3a1de8602b432abd2ab23d9b8"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 909303,
+			"sha256": "d8760373d06ff7f445250bae58040c24d4fbc0499ea870171d93434ed523ec9e"
+		}
+	]
+}

@@ -1,0 +1,449 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "eagle",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-19",
+	"canonical": "https://hexly.ai/projects/eagle#brand",
+	"root": "https://hexly.ai/brands/eagle/v1.0.0",
+	"source": "artwork/brands/eagle/v1.0.0",
+	"brandBaseline": "9ebbfe8cd433ec55e1f1b34882408bc691b4f084",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/eagle-family-2026-09-19-01-02.png",
+		"export": "/brands/eagle/v1.0.0/official-logo.png",
+		"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20",
+		"bytes": 3040705,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "023bef3908fbec406ef98ce6181c714ff5f8ff2b5e090618e90d00fc05f08f54",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1751,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/eagle/blob/d03eb4d276ec20ead665e490eb78ce5b09d720a5/logo.png",
+		"sourceRepositoryRevision": "d03eb4d276ec20ead665e490eb78ce5b09d720a5",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/eagle/2026-09-19-01/02/transparent.png",
+		"export": "/brands/eagle/v1.0.0/logo.png",
+		"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20",
+		"bytes": 3040705,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "023bef3908fbec406ef98ce6181c714ff5f8ff2b5e090618e90d00fc05f08f54",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1751,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "Source Logo adoption is recorded at d03eb4d276ec20ead665e490eb78ce5b09d720a5. Brand version 1.0.0 is independent of the product package version; kit assembly changes no runtime or product UI.",
+	"files": [
+		{
+			"path": "/brands/eagle/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 58808,
+			"sha256": "0e52200f00ebfa6ace0772f49ea950b86e88677d6479ed00831b4efabff55d2b"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 137203,
+			"sha256": "ffa1f03e22e2f5d02e9f1a382aba02923fe7b89b748976c7e04c73bdeebcf9eb"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 7035,
+			"sha256": "013d85db31fdc8a50e6944ded65351761136ba3147fadfd708be053f7b41ee2d"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 959619,
+			"sha256": "3be86a6cf4dedddcf8e39e10053b38aefafe84ab1f5392d6b12831699ab1112e"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 78322,
+			"sha256": "56bf61298ccf8f94b97f602096c75537c063cd7b2f10dc3d4538347ce1d511d7"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 68586,
+			"sha256": "5b0a0a1dd78212f28dd3c8595e6ef375784091dfc6c5f3f377a7330057e83b28"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 68200,
+			"sha256": "fd0ff5867f892fa82fab2817b65bafa67661857416bd169f924fcced9fdc379d"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 961212,
+			"sha256": "0f802ea8237c8da96fa4c031bcae06acb6cef4c266149ed87220d4a99862c032"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 77458,
+			"sha256": "0276a9f463215150f75f6a16e9dc687765aa4eb7079dea39bad517cf17be8ea4"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 72180,
+			"sha256": "d08e7f21f21ec7f95846aec7fbd56856e63f4ba2dc02e9e13af1a922fe5f443a"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 314328,
+			"sha256": "f03f8221351741b2a16eeb5bca6fa5c40a96fc1baabb601bec30f6cbf83697a6"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no artwork recoloring",
+			"bytes": 3084905,
+			"sha256": "26a0ac09a58e1a1ff16c9613c007d2ac18104940ad391ae4b3203e5a7f531729"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 400026,
+			"sha256": "b8faf4df0a21605c25a43e3943fc1b352ae44c6af444646397c6d8afd5bb9147"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4231399,
+			"sha256": "3a75d4732354e03c0bd99791fdff5d52a03f99624f15ee60ae6518b8cdd525ab"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1803,
+			"sha256": "cc5640942d4e55485c58f9a797008d0a3db550fa52157a8147d5eb40974eb372"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 200038,
+			"sha256": "8abdd2cfe0ca9155473d2883e09b7b6beceb16b55065b7085cc39a3f5d18948d"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 199705,
+			"sha256": "8d9618f5c00a05595b766c71f417e1ebd545285d2a772ea8bd95f4e4688b1355"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 963831,
+			"sha256": "4e29280c6e40b49e51712d3e5009b51430addaff648fb9e3585446bfa31c93ed"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 963831,
+			"sha256": "4e29280c6e40b49e51712d3e5009b51430addaff648fb9e3585446bfa31c93ed"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3040705,
+			"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 963831,
+			"sha256": "4e29280c6e40b49e51712d3e5009b51430addaff648fb9e3585446bfa31c93ed"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 27118,
+			"sha256": "718aecf45011183ae14b37c61678a40264e76ef5483dda3faf25d45587dfaf9e"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 845,
+			"sha256": "a1a07494cba60a240171d71a1bd99ddd6e4d5e208c3793227dbd0fc9f2a0dcb3"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1523,
+			"sha256": "3b1316a23b2ebeb49d5d395b8af01d9dccf314e02d0168986904cd4d9dc5736b"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 94010,
+			"sha256": "6ebf7d3ebdb2c10854257ebbbfece908fae989584e35f264d275ceeba1757b08"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2412,
+			"sha256": "2a97664a505f67003840c725009df9ebf1b19ac4e2bed80c19e7ef90ea125b20"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4768,
+			"sha256": "854985de3edb929f742d4cdd2f10b5555e6a167611890322114c015caf49bd08"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 308901,
+			"sha256": "1c0a2bd99bdaf0dbdab8a84d954d7ddd5e1f0746dd1d8cb2d1948683b6f70f9c"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 7948,
+			"sha256": "5877e79b5e05bf7686811e887b1575a985d3bbb159f9c94f25f18877e0c68f42"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3040705,
+			"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3040705,
+			"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3040705,
+			"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/prompt.txt",
+			"role": "Exact approved identity generation prompt; kit assembly makes no new image-model call",
+			"bytes": 3852,
+			"sha256": "94d632f9d2b678f94680d10aaba02dfe12d70c2060e5f6bb7857c134bd94dc38"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8291,
+			"sha256": "3709c4ce29c81488cb73f74cba0613f8ff7b9dcfaf1ea0d53b26aed5c62af7d9"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 14464,
+			"sha256": "65ce6757418f2cd371c2287783c30126242ba388a92630b7cc78e9e60a8802b5"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-finishing-02-manifest.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 10406,
+			"sha256": "66bddc0133cc4198d0c9a17c806d19b8572e0a7419b50fac67e1ea55f3e3834e"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-finishing-02-settings.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 2417,
+			"sha256": "a8aa211b8adb32930b242062a26c70267e28bf39d8c33e30bbc62d77bd07ed66"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-palette.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 1321,
+			"sha256": "36481d55dd93198ba54e5d55dd63f95c27415f840ee98ac482a377f06b091a90"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-prompt.txt",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 3852,
+			"sha256": "94d632f9d2b678f94680d10aaba02dfe12d70c2060e5f6bb7857c134bd94dc38"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-raw-review.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 939,
+			"sha256": "205a5a4a9be9c2ca7ca07b4ba14a39b521675d7a43db72e7987617ba09b4cbb4"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-request.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 1323,
+			"sha256": "f736f580b8210146ef3427651e921b25d1297b8484c52c0ca30d3f56bcc8657a"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-response.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 834,
+			"sha256": "f19d688c3388ed02a94c53f847c89ae953b8af62e9bcd9e6e0801fa8d3312e9e"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/source-verification.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 3650,
+			"sha256": "67bc296411e6fee4e96c7171a1d9e0a8bd4374b1577fbd3806d49f5d6ed64733"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 8721,
+			"sha256": "f226c1a8910ae205a9cc11a5f774d29c3f407741ec5625d96631e80c7dee4753"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1144,
+			"sha256": "0722bd5d5f2faa12da3a187694ad76760367105ff74b9d2bd649d87a175122ba"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 7447,
+			"sha256": "2c4ebac80507c99b45baacbab9af02754730d233e9e1c3849b374d92b838abca"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1145,
+			"sha256": "d83d4ffa6c4fcde82ef7ce4e942920d28f5b5e2f46d2454b8495c981fb8e5e92"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3585,
+			"sha256": "b098abfc333140a7e5a6020fb871f30be145a347ba7a42a3d3f94644d5238a4e"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2845211,
+			"sha256": "0af1bab789ef9b9878c64b098edf9a11d1fb9d0f1b902ed959e51219cb0de9b6"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6315,
+			"sha256": "84b221ec3bbd5af39993ced653d7d2d2227fc9744e1b83fad806653ba3b240e0"
+		},
+		{
+			"path": "/brands/eagle/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6315,
+			"sha256": "4422b2a80c379973628d5da1dbcb564a532841f1697763097b1705faa5cbd4f6"
+		}
+	]
+}
