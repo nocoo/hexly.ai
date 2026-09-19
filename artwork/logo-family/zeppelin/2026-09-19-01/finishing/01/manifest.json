@@ -1,0 +1,371 @@
+{
+	"createdAt": "2026-09-19T03:43:52.798Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "zeppelin",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#dce2df",
+			"light": "#f1f3eb",
+			"shade": "#bac5c2",
+			"motif": "#778d88",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60919001,
+			"motifOpacity": 0.3,
+			"highlightOpacity": 0.38,
+			"ribbonOpacity": 0.12,
+			"pattern": {
+				"name": "Fleet formation vectors on a titanium plotting sheet",
+				"description": "Three staggered chevron approach vectors, broken range arcs and docking alignment ticks connect mission-based fleet formations and engineering archives. This geometry is specific to Zeppelin.",
+				"layers": [
+					{
+						"d": "M114 250L218 188L275 215 M127 274L218 220L263 241 M743 123L827 171L790 229 M763 136L841 181 M122 637A307 307 0 0 0 334 891 M148 637A281 281 0 0 0 344 869 M167 715l-27 13 M197 774l-24 18 M248 831l-20 25 M704 885L780 839L868 787 M769 820l24 40 M811 795l24 40 M852 770l24 40",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M117 254L218 193L273 220 M746 127L822 173L787 227 M126 637A303 303 0 0 0 335 887 M706 889L782 843L870 791",
+						"tone": "highlight",
+						"strokeWidth": 1
+					},
+					{
+						"d": "M153 153h28m-14-14v28 M859 430h28m-14-14v28 M445 916h28m-14-14v28",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					63,
+					82,
+					81
+				],
+				"opacity": 0.17,
+				"blurAt2048": 48,
+				"offsetAt2048": [
+					12,
+					30
+				]
+			},
+			{
+				"color": [
+					65,
+					78,
+					73
+				],
+				"opacity": 0.1,
+				"blurAt2048": 14,
+				"offsetAt2048": [
+					4,
+					12
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.8,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform complete ship placement, including antennae and both nacelles. No clipping or anisotropic scaling; require 128px rounded clearance."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 9,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Near-white border sampled. Flood only exterior-connected white; preserve enclosed metal highlights, amber cores and dark physical recesses. No component cleanup."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2758105,
+		"foregroundPixels": 1436199,
+		"softEdgePixels": 11858,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 66,
+			"top": 206,
+			"right": 2018,
+			"bottom": 1688
+		}
+	},
+	"placement": {
+		"scale": 0.8,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 257,
+			"top": 369,
+			"right": 1819,
+			"bottom": 1555
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 228.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2351,
+			"sha256": "a1f981e1c94a76cc9c78f7b7df47f8d25e9e594df36be8d3e66af6136c1e14b6"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1307,
+			"sha256": "ada1ad9c7f469982bfd48a75de80b15466c0dae5991bcb10510f9b224bcf773c"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4235540,
+			"sha256": "ace18b6370766f08b5520f63507e11ba495c8a0717dd26d5a8f10c706fe84bfb"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 68246,
+			"sha256": "35f3c952bb61665397b18bcc9a8fcf49e7f413b358032a793c7ed208a19b514e"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1102,
+			"sha256": "a9928fb18a3736a671c1b01e7b623f4e985df777263642f4b4123a442e35972f"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1637493,
+			"sha256": "4de5bab8079155693d6965931051d6bde03da36b3815a0cdf9c2cb36df9ac5ad"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2824917,
+			"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 80410,
+			"sha256": "81b61e90189c06a77a95a712c3b6a19e38734fd8612ba2fe103202b3e91a8863"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 156603,
+			"sha256": "53782f6ca8f36503edbd7c352bfbaf279600545edc96e8da801086e2c1f11368"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 114685,
+			"sha256": "2fe451c6c78b9ef82ec5e8a806f0982f645c0553338cc783c7abf9d5bc143405"
+		},
+		{
+			"path": "exports/zeppelin-transparent-2048.png",
+			"bytes": 2824917,
+			"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26"
+		},
+		{
+			"path": "exports/zeppelin-icon-2048.png",
+			"bytes": 4445257,
+			"sha256": "f548adbda1a844b05a1b1e3a3989724699e56b3ffaee284aa4f5e08d25e7a5b8"
+		},
+		{
+			"path": "exports/zeppelin-rounded-2048.png",
+			"bytes": 4384286,
+			"sha256": "1d3e51155cafb5b583f7bbde60d8de42a0738fdaf7814ba72275e5ade1d3a7a4"
+		},
+		{
+			"path": "exports/zeppelin-transparent-1024.png",
+			"bytes": 726178,
+			"sha256": "9fc20d2deb0ada601eb42704e2fd626feab6172dfb402ebc2a4cb64e4affb768"
+		},
+		{
+			"path": "exports/zeppelin-icon-1024.png",
+			"bytes": 1030634,
+			"sha256": "9c6009c2e4e22a43225c269733a749f2f7258799f5f505eeabe5f5498eeaf63c"
+		},
+		{
+			"path": "exports/zeppelin-rounded-1024.png",
+			"bytes": 1035324,
+			"sha256": "26952db85b23f26ac697f5e6270a7dc053063f8723605f3ccf345ea142ef6016"
+		},
+		{
+			"path": "exports/zeppelin-transparent-512.png",
+			"bytes": 190200,
+			"sha256": "0fdeb7769a53adf3891309caa23fe599a72d92aba86bf6327955097e1c2bc80d"
+		},
+		{
+			"path": "exports/zeppelin-icon-512.png",
+			"bytes": 306003,
+			"sha256": "36471acbbf9f97f14764b0a3e39f6b39831cabb0349017ee95888482b7784f58"
+		},
+		{
+			"path": "exports/zeppelin-rounded-512.png",
+			"bytes": 308614,
+			"sha256": "5c7b421732f1eb4d5bcc51ee36d00457d8f54944715012a7301ad8af7308c896"
+		},
+		{
+			"path": "exports/zeppelin-transparent-256.png",
+			"bytes": 50971,
+			"sha256": "a00513d1129c40282070bdbeea7db820b5c16ea7b1f8071b15b1a463cfd04494"
+		},
+		{
+			"path": "exports/zeppelin-icon-256.png",
+			"bytes": 67342,
+			"sha256": "8258e059f0883730e8ed60aef52ccf7d6d2e141e551c6564dce5a81ae6e08593"
+		},
+		{
+			"path": "exports/zeppelin-rounded-256.png",
+			"bytes": 71034,
+			"sha256": "adbaf5d85cd22552a743bf9a11cae5d869124e6cde64dbdf87364e8451473f01"
+		},
+		{
+			"path": "exports/zeppelin-transparent-128.png",
+			"bytes": 14058,
+			"sha256": "0849199e66722b9a9c566b5b7e3cd5ef87f429b077d94b69b767a00fb24866e7"
+		},
+		{
+			"path": "exports/zeppelin-icon-128.png",
+			"bytes": 19525,
+			"sha256": "9b206d509875c3d7092779654addf99f48e538f8236eb407e0e5b4eb58755f71"
+		},
+		{
+			"path": "exports/zeppelin-rounded-128.png",
+			"bytes": 21173,
+			"sha256": "b906b0dc6f56aeb1bc6828069ef5004dd9917fc6f728c5191da59a710a695b18"
+		},
+		{
+			"path": "exports/zeppelin-transparent-64.png",
+			"bytes": 4191,
+			"sha256": "3fc332064a9543647ed9f8e9d4238e77b50ee0e51ef96817ffcb03f00a0645bf"
+		},
+		{
+			"path": "exports/zeppelin-icon-64.png",
+			"bytes": 6474,
+			"sha256": "ed989bf569240d7f2e093960119231c9c677345d0285cf3396e0412c51f1f712"
+		},
+		{
+			"path": "exports/zeppelin-rounded-64.png",
+			"bytes": 7197,
+			"sha256": "004c6ce6e43d56f529ba032a60d4c900283fb2bde238ed85f9845736467c5423"
+		},
+		{
+			"path": "exports/zeppelin-transparent-48.png",
+			"bytes": 2600,
+			"sha256": "7f3970b7a1bcd1f593c8a5344dc6b5931840033fc7c9008a5aa73b1619726d22"
+		},
+		{
+			"path": "exports/zeppelin-icon-48.png",
+			"bytes": 3973,
+			"sha256": "c70e5b15007f58e462c478a052edc4d17761ce9bb326312ce771a7b8841b45cb"
+		},
+		{
+			"path": "exports/zeppelin-rounded-48.png",
+			"bytes": 4531,
+			"sha256": "de6509a0c4aeace9f9001a4154b8d240edd6a331e2f4ecade4f0674635f0fc3c"
+		},
+		{
+			"path": "exports/zeppelin-transparent-32.png",
+			"bytes": 1438,
+			"sha256": "99ad9f61972899b746dc836fe87b7cda849e4f42e3f5b0a99cf84a56d9627816"
+		},
+		{
+			"path": "exports/zeppelin-icon-32.png",
+			"bytes": 2277,
+			"sha256": "2f511f8a0ad5f7cbb966729b4ea9435e7b11cb5bd91de16a8790ebcf6d337216"
+		},
+		{
+			"path": "exports/zeppelin-rounded-32.png",
+			"bytes": 2509,
+			"sha256": "bcfac431047c2d329fb566d60ea9fd147dc71c1127bbeec984bb4ca54db6e3fa"
+		},
+		{
+			"path": "exports/zeppelin-transparent-24.png",
+			"bytes": 943,
+			"sha256": "9868f0b5fbc4988bcbe4b44927be678923d11892ae05624c5435e4e0919e354a"
+		},
+		{
+			"path": "exports/zeppelin-icon-24.png",
+			"bytes": 1456,
+			"sha256": "3f5f459f15a3975bb190b554d516c9dd01f0ba73b1b6adeb8014ee0200f3be50"
+		},
+		{
+			"path": "exports/zeppelin-rounded-24.png",
+			"bytes": 1643,
+			"sha256": "1e03d4335c76e7d9eede624ee89048d3bf7d5873c0f5c3e2d3afe939b4b3ac5c"
+		},
+		{
+			"path": "exports/zeppelin-transparent-16.png",
+			"bytes": 562,
+			"sha256": "51bcc8449c6554a911217ecea8ccdeae3137a71e2a982334b6b72f06daabb3e4"
+		},
+		{
+			"path": "exports/zeppelin-icon-16.png",
+			"bytes": 813,
+			"sha256": "90230fd6719abfe2f2b5d1f5be6e2134aa26ae62131320925f0895901b884267"
+		},
+		{
+			"path": "exports/zeppelin-rounded-16.png",
+			"bytes": 885,
+			"sha256": "b8d129568694855bdfccb0293d2c95cb046eb5b23ef7f1c1bb3c79f34e11d4e6"
+		},
+		{
+			"path": "exports/zeppelin-white-2048.png",
+			"bytes": 2624877,
+			"sha256": "415ba31ec18c6b35d9bc53d59745043d14abb3f8031b44a1730aea21a5f4413b"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 689722,
+			"sha256": "228e8698bf0b3c6104ec204ce7f7cae79961a1cfda9ddb4350592551be39eeb8"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 687709,
+			"sha256": "a580af1a9c50a849db942b2cdc2fce39fab0613119f538b65971c91dd1a16d0a"
+		}
+	]
+}

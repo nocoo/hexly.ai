@@ -7,10 +7,10 @@ const targets = readProjects().filter(
 	(project) => project.brandKit?.method === "archived-artwork",
 );
 
-test("publishes the scoped schema and all 56 active brand archives through canonical discovery", async ({
+test("publishes the scoped schema and all 57 active brand archives through canonical discovery", async ({
 	request,
 }) => {
-	expect(targets).toHaveLength(56);
+	expect(targets).toHaveLength(57);
 	const schema = await request.get("/brands/schema-v2.json");
 	expect(schema.status()).toBe(200);
 	expect(
@@ -21,7 +21,7 @@ test("publishes the scoped schema and all 56 active brand archives through canon
 	const catalogue = await (await request.get("/data/projects.json")).json();
 	expect(
 		catalogue.filter((p: { archived: boolean }) => !p.archived),
-	).toHaveLength(56);
+	).toHaveLength(57);
 	for (const project of targets)
 		expect(sitemap).toContain(
 			`<loc>https://hexly.ai/projects/${project.id}</loc>`,

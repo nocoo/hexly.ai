@@ -24,8 +24,8 @@ describe("Pi Agent Policy onboarding", () => {
 		});
 		expect(project.website).toBeNull();
 		expect(project.websiteSource).toBeNull();
-		expect(projects.at(-2)?.id).toBe(project.id);
-		expect(filterProjects(projects, "", "all").at(-2)?.id).toBe(project.id);
+		expect(projects.at(-3)?.id).toBe(project.id);
+		expect(filterProjects(projects, "", "all").at(-3)?.id).toBe(project.id);
 		expect(filterProjects(projects, "", "tools").at(-1)?.id).toBe(project.id);
 		expect(
 			statusTargets(projects).some((target) => target.id === project.id),

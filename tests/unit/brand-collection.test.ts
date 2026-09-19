@@ -20,7 +20,7 @@ const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const projects = readProjects();
 const baselineProjects = projects.filter(
-	(p) => !["pi-agent-policy", "diorama-journey"].includes(p.id),
+	(p) => !["pi-agent-policy", "diorama-journey", "zeppelin"].includes(p.id),
 );
 const targetIds = inventory.projects
 	.filter((p) => p.scope === "target")
@@ -39,12 +39,18 @@ describe("complete Hexly campaign archives", () => {
 		);
 		expect(targets).toHaveLength(54);
 		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(54);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(56);
+		expect(projects.filter((p) => !p.archived)).toHaveLength(57);
 		expect(projects.filter((p) => p.archived)).toHaveLength(20);
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
 			const { brandTexture, ...beforeTextures } = p;
 			const { brandKit, ...original } = beforeTextures;
+			// These two websites were connected after the frozen brand baseline.
+			// Their current endpoints are independently asserted in status.test.ts.
+			if (["ellie", "life-ai"].includes(p.id)) {
+				original.website = null;
+				original.websiteSource = null;
+			}
 			// Optional screenshot galleries were added after this identity baseline.
 			// Preserve its other metadata, including the pre-existing video records.
 			if (original.media?.screenshots) {

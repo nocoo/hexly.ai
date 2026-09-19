@@ -1,0 +1,94 @@
+{
+	"recordedAt": "2026-09-19T04:19:41.862Z",
+	"method": "Headless browser verification under the owner waiver; no interactive review request",
+	"results": [
+		{
+			"surface": "source",
+			"mobile": false,
+			"errors": []
+		},
+		{
+			"surface": "hexly-project",
+			"mobile": false,
+			"theme": "light",
+			"errors": []
+		},
+		{
+			"surface": "hexly-project",
+			"mobile": false,
+			"theme": "dark",
+			"errors": []
+		},
+		{
+			"surface": "static-study",
+			"mobile": false,
+			"views": ["icon", "transparent", "white"],
+			"errors": []
+		},
+		{
+			"surface": "source",
+			"mobile": true,
+			"errors": []
+		},
+		{
+			"surface": "hexly-project",
+			"mobile": true,
+			"theme": "light",
+			"errors": []
+		},
+		{
+			"surface": "hexly-project",
+			"mobile": true,
+			"theme": "dark",
+			"errors": []
+		},
+		{
+			"surface": "static-study",
+			"mobile": true,
+			"views": ["icon", "transparent", "white"],
+			"errors": []
+		}
+	],
+	"files": [
+		{
+			"path": "review-captures/hexly-desktop-light.png",
+			"bytes": 652002,
+			"sha256": "1bd51d8f39753ab4b9a0277b901d744e7b70ed4ddda1d8cebfbd373e70d88f1f"
+		},
+		{
+			"path": "review-captures/study-mobile.png",
+			"bytes": 83454,
+			"sha256": "9b3df28d66ef48871d302e0fa06011aea7362d3b818cfc034a0f98ff44d5d2fd"
+		},
+		{
+			"path": "review-captures/hexly-mobile-light.png",
+			"bytes": 231730,
+			"sha256": "067f52afc781a6cbf71b0d26be0777f9c490594d5abf921c89320022c50e850f"
+		},
+		{
+			"path": "review-captures/hexly-desktop-dark.png",
+			"bytes": 607843,
+			"sha256": "09126d48af7222e52f7b2fa352ed998b31b693307631065e44efc429f78cd94e"
+		},
+		{
+			"path": "review-captures/study-desktop.png",
+			"bytes": 262257,
+			"sha256": "5a9bce336b585a58f9831aa5d0ffbe51ed33116c29d7a8b6a2878ac4b49bd91b"
+		},
+		{
+			"path": "review-captures/source-desktop.png",
+			"bytes": 347978,
+			"sha256": "0710ba6f3b3fdf4e680682d3c2ce75c000a21ab1c7dff0b7dcdb3f178cebb4ee"
+		},
+		{
+			"path": "review-captures/source-mobile.png",
+			"bytes": 129687,
+			"sha256": "a0bedce606f0e03bb309e1873a7d0f580c2d2ce38c46c964dc5c37add9180dc0"
+		},
+		{
+			"path": "review-captures/hexly-mobile-dark.png",
+			"bytes": 229008,
+			"sha256": "7b71eada4729543145007a736995af51996ef112634a19e32d8671279d43bcab"
+		}
+	]
+}

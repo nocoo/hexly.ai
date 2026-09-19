@@ -1,0 +1,25 @@
+{
+	"recordedAt": "2026-09-19T04:10:11.602665+00:00",
+	"repository": "https://github.com/nocoo/zeppelin",
+	"revision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157",
+	"version": "1.0.1",
+	"website": "https://zeppelin.hexly.ai",
+	"liveEndpoint": "https://zeppelin.hexly.ai/api/live",
+	"ci": {
+		"runId": 35420317302,
+		"conclusion": "success"
+	},
+	"deployment": {
+		"runId": 35420377569,
+		"conclusion": "success"
+	},
+	"verification": {
+		"sourceUnitChecks": 7,
+		"sourceBrowserAndHTTPChecks": 26,
+		"productionLiveAndCompiledAssets": "passed",
+		"brandReceipt": "public/brand.json",
+		"masterSha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26"
+	},
+	"sourceStorage": "Existing source policy excludes material binaries from Git. The exact masters are hydrated locally; public/brand.json pins immutable CDN bytes in this source revision. Catalogue sourceUrl is the actual CDN asset, not a fictional Git blob.",
+	"localCheckout": "Onboarding published from a separate worktree; unrelated active source development remains untouched."
+}

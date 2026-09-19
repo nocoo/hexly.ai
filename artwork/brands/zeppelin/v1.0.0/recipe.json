@@ -1,0 +1,112 @@
+{
+	"schemaVersion": 1,
+	"project": "zeppelin",
+	"brandVersion": "1.0.0",
+	"designedAt": "2026-09-19",
+	"siteBaseline": "66b14cc2a91a44bec7cb211e8d2cfd8752c40011",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "material",
+	"sourceArchive": "artwork/logo-family/zeppelin/2026-09-19-01",
+	"identityGeneratedForThisRelease": true,
+	"caption": {
+		"en": "Built for the distance.",
+		"zh": "为远航而生。"
+	},
+	"description": {
+		"en": "A titanium command vessel for an original next-generation spacecraft fleet.",
+		"zh": "以钛金属指挥舰，呈现原创次世代太空舰队。"
+	},
+	"foreground": {
+		"path": "/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+		"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Fleet formation vectors",
+			"zh": "舰队编成航迹"
+		},
+		"description": {
+			"en": "Three staggered chevron approach vectors, broken range arcs and docking alignment ticks connect mission-based fleet formations and engineering archives. This geometry is specific to Zeppelin.",
+			"zh": "错落的接近向量、测距弧与对接刻度压印在冷调工程纸上，呼应任务编队与舰船工程档案。"
+		},
+		"source": "artwork/logo-family/zeppelin/2026-09-19-01/finishing/01/settings.json",
+		"sourceSha256": "a1f981e1c94a76cc9c78f7b7df47f8d25e9e594df36be8d3e66af6136c1e14b6",
+		"layers": [
+			{
+				"d": "M114 250L218 188L275 215 M127 274L218 220L263 241 M743 123L827 171L790 229 M763 136L841 181 M122 637A307 307 0 0 0 334 891 M148 637A281 281 0 0 0 344 869 M167 715l-27 13 M197 774l-24 18 M248 831l-20 25 M704 885L780 839L868 787 M769 820l24 40 M811 795l24 40 M852 770l24 40",
+				"tone": "motif",
+				"strokeWidth": 1.8
+			},
+			{
+				"d": "M117 254L218 193L273 220 M746 127L822 173L787 227 M126 637A303 303 0 0 0 335 887 M706 889L782 843L870 791",
+				"tone": "highlight",
+				"strokeWidth": 1
+			},
+			{
+				"d": "M153 153h28m-14-14v28 M859 430h28m-14-14v28 M445 916h28m-14-14v28",
+				"tone": "motif",
+				"strokeWidth": 1.4
+			}
+		],
+		"bounds": [114.0, 123.0, 887.0, 930.0],
+		"transform": {
+			"scale": 0.5353159851301115,
+			"x": -11.92565055762077,
+			"y": -25.843866171003697,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete approved foreground and project-specific supporting texture; no new model call during kit assembly, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "object",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Zeppelin",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"canvasPaddingPx": 16,
+		"width": 554.634,
+		"height": 158.98,
+		"glyphBoundsUnits": [
+			47.0499267578125, -200, 3780.152418053669, 707.00048828125
+		]
+	},
+	"sourceScope": "Owner-delegated acceptance authorizes creation, source adoption and publication for Zeppelin. Product UI tokens and documented fleet designs remain unchanged.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve the adopted shape, proportions, native material colors and exact file bytes.",
+		"productUI": "Preserve source tokens #101110 / #edeee8 / #dddf45.",
+		"campaignInterpretation": "The source-adopted spacecraft is reused without recoloring. Wide/mobile layouts and vector surface motifs are separate authored compositions.",
+		"localAccent": "Use sampled artwork accents without modifying the Logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zeppelin-family-2026-09-19-01-01.png",
+		"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://h.no.mt/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+		"repositoryRevision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The agent-inspected, source-adopted foreground is reused unchanged under the named-project review waiver; no owner review of exact bytes is claimed."
+	}
+}
