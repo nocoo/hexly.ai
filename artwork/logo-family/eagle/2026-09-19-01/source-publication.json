@@ -1,0 +1,37 @@
+{
+	"recordedAt": "2026-09-19T07:43:31.736380+00:00",
+	"repository": "https://github.com/nocoo/eagle",
+	"identityAdoptionRevision": "d03eb4d276ec20ead665e490eb78ce5b09d720a5",
+	"revision": "42d0ddd0c2ee49c3f59e7107ee84736d3cdc36b5",
+	"version": "0.1.1",
+	"website": "https://eagle.hexly.ai",
+	"liveEndpoint": "https://eagle.hexly.ai/api/live",
+	"ci": {
+		"runId": 35429841183,
+		"conclusion": "success"
+	},
+	"deployment": {
+		"method": "source npm run deploy (Wrangler)",
+		"conclusion": "success",
+		"workerVersionId": "c83f23e4-aff8-4167-90e1-8d34f0831c39"
+	},
+	"verification": {
+		"sourceUnitAndHTTPChecks": 33,
+		"sourceBrowserChecks": 12,
+		"sourceStaticAndBuild": "passed",
+		"realLocalHerdrIngestD1AndResponsiveUI": "passed",
+		"publicLive": {
+			"status": "ok",
+			"service": "eagle",
+			"version": "0.1.1",
+			"schemaVersion": 1,
+			"revision": "42d0ddd0c2ee49c3f59e7107ee84736d3cdc36b5"
+		},
+		"publicLiveNoStore": true,
+		"anonymousBusinessHomepage": "302 to Cloudflare Access",
+		"authenticatedProductionUI": "not exercised: no Access session available; access protection preserved",
+		"masterSha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20"
+	},
+	"privacy": "Real local verification artifacts and machine evidence remain private; only bounded completion results are recorded here.",
+	"concurrency": "Published from an isolated checkout. Concurrent source application development contains these identity changes and may publish subsequent revisions; the immutable Logo remains pinned to its exact adoption revision."
+}

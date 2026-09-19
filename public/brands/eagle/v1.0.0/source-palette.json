@@ -1,0 +1,68 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "f1c5b569d4041197de1d733f3a5316e5cd221e5190274bb53eaa9861fc899d33"
+	},
+	"samples": [
+		{
+			"position": [620, 420],
+			"rgb": [252, 206, 107],
+			"color": "#fcce6b",
+			"label": {
+				"en": "Golden crown",
+				"zh": "金色冠羽"
+			},
+			"role": "primary"
+		},
+		{
+			"position": [700, 1080],
+			"rgb": [96, 41, 23],
+			"color": "#602917",
+			"label": {
+				"en": "Umber plumage",
+				"zh": "棕褐羽毛"
+			},
+			"role": "accent"
+		},
+		{
+			"position": [1350, 700],
+			"rgb": [236, 175, 54],
+			"color": "#ecaf36",
+			"label": {
+				"en": "Ochre beak",
+				"zh": "赭黄鹰喙"
+			},
+			"role": "accent"
+		},
+		{
+			"position": [1780, 690],
+			"rgb": [28, 203, 189],
+			"color": "#1ccbbd",
+			"label": {
+				"en": "Teal streamer",
+				"zh": "青绿飘带"
+			},
+			"role": "accent"
+		},
+		{
+			"position": [1680, 780],
+			"rgb": [252, 217, 84],
+			"color": "#fcd954",
+			"label": {
+				"en": "Amber streamer",
+				"zh": "琥珀色飘带"
+			},
+			"role": "accent"
+		}
+	],
+	"presentation": {
+		"background": "#e4dcc7",
+		"source": "presentation.json"
+	},
+	"website": {
+		"source": "@nocoo/basalt 2.1.8 theme tokens and AccentProvider defaultAccent=\"teal\"; independently preserved",
+		"primary": "#2ebdc2",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f"
+	}
+}

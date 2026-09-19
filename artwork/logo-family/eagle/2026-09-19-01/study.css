@@ -1,0 +1,15 @@
+.swatches button,
+.alpha-grid > div {
+	min-width: 0;
+}
+
+.swatches small {
+	overflow-wrap: anywhere;
+}
+
+.edge-well img,
+.reference-grid img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

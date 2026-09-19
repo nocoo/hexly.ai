@@ -285,3 +285,9 @@ no-material-binaries Git policy. Root `logo.png` is the locally hydrated exact
 transparent master. README uses the rounded presentation; the homepage and
 seven-size favicon use transparent artwork. The full-screen vessel inspector
 has no site header. See [complete onboarding](30-zeppelin-onboarding.md).
+
+## Eagle and Zeppelin consumer adoption — 2026-09-19
+
+Eagle study `2026-09-19-01 / 02` is installed in both README languages, root `logo.png`, expanded/collapsed sidebar and application identity/loading surfaces. Small marks and the seven-entry favicon preserve transparent foregrounds without a tile or CSS mask. Square Apple touch artwork follows the platform masking contract. The native raw acceptance was delegated by the owner; it is not an assertion of owner review of unseen bytes.
+
+Zeppelin keeps the accepted spacecraft presentation in README. Under the owner's explicit site exception, v1.0.2 removes the homepage image and retains its text wordmark. The vessel workspace/sidebar has no project Logo. Browser/favicon and social roles remain intact. Source `560f5486b751b1345ac69cdc737436165a823645`, CI `35428505599` and deploy `35428556977` are verified.

@@ -46,7 +46,7 @@ Catalogue `sourceUrl` identifies the actual CDN master, while the repository
 revision identifies that adoption receipt. No nonexistent Git image blob is
 claimed, and the source material guard is unchanged.
 
-The homepage uses the transparent mark, real version, GitHub → Hexly controls,
+At initial onboarding the homepage used the transparent mark, real version, GitHub → Hexly controls,
 localized labels and keyboard-visible tooltips. The current full-screen vessel
 inspector deliberately has no site header. Its layout and the parallel source
 3D-preview work are preserved. README uses the rounded presentation; browser
@@ -72,3 +72,5 @@ Detailed evidence: [source snapshot](sources/zeppelin-2026-09-19.json),
 [artwork verification](../artwork/logo-family/zeppelin/2026-09-19-01/verification.json),
 and [R2 receipts](assets/publication.jsonl). Final deployment and observed Status
 results are recorded in the release completion receipt.
+
+Follow-up owner instruction: Zeppelin needs no site Logo. Source v1.0.2 (`560f5486b751b1345ac69cdc737436165a823645`) retains README artwork and browser assets, and removes the homepage image while preserving its text wordmark and family links. All 7 unit and 26 browser/HTTP checks passed; CI and deployment succeeded. The production health response matches this revision.

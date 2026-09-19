@@ -1,6 +1,6 @@
 # Project profiles
 
-77 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
+78 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
@@ -81,3 +81,4 @@
 | [🔧 Pi Agent Policy](77-pi-agent-policy.md) | GPT Image · Object campaign kit | #aa381f | #e5e3d9 |
 | [🏞️ Diorama Journey](78-diorama-journey.md) | GPT Image · Object campaign kit | #9cac85 | #e3e8d9 |
 | [🚀 Zeppelin](79-zeppelin.md) | GPT Image · Object campaign kit | #dddf45 | #101110 |
+| [🦅 Eagle](80-eagle.md) | GPT Image · Animal campaign kit | #2ebdc2 | #eeeff2 |

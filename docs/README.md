@@ -36,4 +36,6 @@
 34. [Project, brand, media and onboarding maintenance contract](29-project-maintenance.md)
 35. [Zeppelin onboarding, spacecraft identity and public Status](30-zeppelin-onboarding.md)
 
+36. [Eagle onboarding and README/sidebar adoption](31-eagle-onboarding.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

@@ -1,0 +1,43 @@
+{
+	"recordedAt": "2026-09-19T07:34:23.592Z",
+	"baseURL": "https://index.dev.hexly.ai",
+	"headless": true,
+	"ownerReview": false,
+	"checks": [
+		{
+			"surface": "study",
+			"viewport": "desktop",
+			"themes": ["light", "dark"],
+			"views": ["transparent", "white", "icon"],
+			"imagesDecoded": true,
+			"overflow": false
+		},
+		{
+			"surface": "kit",
+			"viewport": "desktop",
+			"themes": ["light", "dark"],
+			"views": ["transparent", "white", "icon"],
+			"imagesDecoded": true,
+			"overflow": false
+		},
+		{
+			"surface": "study",
+			"viewport": "mobile",
+			"themes": ["light", "dark"],
+			"views": ["transparent", "white", "icon"],
+			"imagesDecoded": true,
+			"overflow": false
+		},
+		{
+			"surface": "kit",
+			"viewport": "mobile",
+			"themes": ["light", "dark"],
+			"views": ["transparent", "white", "icon"],
+			"imagesDecoded": true,
+			"overflow": false
+		}
+	],
+	"clipboard": "passed",
+	"nativeDownload": "passed",
+	"referenceDisclosure": "passed"
+}

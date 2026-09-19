@@ -1,5 +1,7 @@
 # Source snapshots
 
+The [Eagle intake](eagle-2026-09-19.json) records the animal identity, source adoption, Basalt palette and public service evidence. Its [profile snapshot](nocoo-readme-2026-09-19-eagle.md) preserves the matching first Recent Projects entry.
+
 The [Diorama Journey intake](diorama-journey-2026-09-17.json) records the public skill, source and profile revisions, original example theme and emoji identity. Its [profile snapshot](nocoo-readme-2026-09-17-diorama-journey.md) places the skill first in Skills & MCP Servers. The GitHub Pages example is a distribution demo; the skill has no independent monitored service.
 
 The [Snail brand handoff](snail-2026-09-12.json) preserves the owner's scope and
