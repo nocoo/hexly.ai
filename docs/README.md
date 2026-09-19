@@ -34,5 +34,6 @@
 32. [Independent project texture packs, complete catalogue rollout and R2 maintenance](27-project-textures.md)
 33. [Diorama Journey onboarding, Skills category and material identity](28-diorama-journey-onboarding.md)
 34. [Project, brand, media and onboarding maintenance contract](29-project-maintenance.md)
+35. [Zeppelin onboarding, spacecraft identity and public Status](30-zeppelin-onboarding.md)
 
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

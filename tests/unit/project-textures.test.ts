@@ -47,6 +47,12 @@ describe("independent campaign textures", () => {
 			const row = baseline.projects.find((p) => p.id === project.id);
 			if (!row) throw new Error(project.id);
 			const { brandTexture: _texture, ...preserved } = project;
+			// The September 19 status onboarding postdates this texture snapshot.
+			// Keep checking all original identity fields against the frozen record.
+			if (["ellie", "life-ai"].includes(project.id)) {
+				preserved.website = null;
+				preserved.websiteSource = null;
+			}
 			expect(sha(JSON.stringify(preserved)), project.id).toBe(
 				row.sourceMetadataSha256,
 			);

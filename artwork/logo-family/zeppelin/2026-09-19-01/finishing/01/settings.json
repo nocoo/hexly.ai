@@ -1,0 +1,73 @@
+{
+	"project": "zeppelin",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"background": {
+		"base": "#dce2df",
+		"light": "#f1f3eb",
+		"shade": "#bac5c2",
+		"motif": "#778d88",
+		"grainAmplitude": 0.7,
+		"grainSeed": 60919001,
+		"motifOpacity": 0.3,
+		"highlightOpacity": 0.38,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Fleet formation vectors on a titanium plotting sheet",
+			"description": "Three staggered chevron approach vectors, broken range arcs and docking alignment ticks connect mission-based fleet formations and engineering archives. This geometry is specific to Zeppelin.",
+			"layers": [
+				{
+					"d": "M114 250L218 188L275 215 M127 274L218 220L263 241 M743 123L827 171L790 229 M763 136L841 181 M122 637A307 307 0 0 0 334 891 M148 637A281 281 0 0 0 344 869 M167 715l-27 13 M197 774l-24 18 M248 831l-20 25 M704 885L780 839L868 787 M769 820l24 40 M811 795l24 40 M852 770l24 40",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M117 254L218 193L273 220 M746 127L822 173L787 227 M126 637A303 303 0 0 0 335 887 M706 889L782 843L870 791",
+					"tone": "highlight",
+					"strokeWidth": 1
+				},
+				{
+					"d": "M153 153h28m-14-14v28 M859 430h28m-14-14v28 M445 916h28m-14-14v28",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [63, 82, 81],
+			"opacity": 0.17,
+			"blurAt2048": 48,
+			"offsetAt2048": [12, 30]
+		},
+		{
+			"color": [65, 78, 73],
+			"opacity": 0.1,
+			"blurAt2048": 14,
+			"offsetAt2048": [4, 12]
+		}
+	],
+	"framing": {
+		"scale": 0.8,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform complete ship placement, including antennae and both nacelles. No clipping or anisotropic scaling; require 128px rounded clearance."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 16,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 9,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Near-white border sampled. Flood only exterior-connected white; preserve enclosed metal highlights, amber cores and dark physical recesses. No component cleanup."
+	}
+}

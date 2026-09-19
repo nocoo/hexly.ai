@@ -1,0 +1,58 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037"
+	},
+	"samples": [
+		{
+			"position": [1100, 1050],
+			"rgb": [215, 214, 202],
+			"color": "#d7d6ca",
+			"label": {
+				"en": "Titanium armor",
+				"zh": "钛金属装甲"
+			},
+			"role": "accent"
+		},
+		{
+			"position": [830, 1260],
+			"rgb": [228, 184, 72],
+			"color": "#e4b848",
+			"label": {
+				"en": "Yellow identification band",
+				"zh": "黄色识别带"
+			},
+			"role": "primary"
+		},
+		{
+			"position": [870, 960],
+			"rgb": [105, 100, 97],
+			"color": "#696461",
+			"label": {
+				"en": "Graphite spine",
+				"zh": "石墨中轴"
+			},
+			"role": "accent"
+		},
+		{
+			"position": [1520, 935],
+			"rgb": [244, 162, 50],
+			"color": "#f4a232",
+			"label": {
+				"en": "Amber engine core",
+				"zh": "琥珀引擎核心"
+			},
+			"role": "accent"
+		}
+	],
+	"presentation": {
+		"background": "#dce2df",
+		"source": "presentation.json"
+	},
+	"website": {
+		"primary": "#dddf45",
+		"background": "#101110",
+		"ink": "#edeee8",
+		"source": "src/style.css"
+	}
+}

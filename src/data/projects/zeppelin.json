@@ -1,0 +1,330 @@
+{
+	"id": "zeppelin",
+	"repo": "zeppelin",
+	"title": "Zeppelin",
+	"emoji": "🚀",
+	"description": {
+		"en": "Next-generation spacecraft fleet and design archive",
+		"zh": "次世代太空舰队与原创设计档案"
+	},
+	"category": "design",
+	"website": "https://zeppelin.hexly.ai",
+	"websiteSource": "https://github.com/nocoo/zeppelin/blob/8ae8e920dd3afc9114c6e9d917f698e54dc95157/README.md",
+	"repository": "https://github.com/nocoo/zeppelin",
+	"subject": "Titanium command vessel with paired propulsion nacelles and yellow identification bands",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/zeppelin-family-2026-09-19-01-01.png",
+		"thumbnail": "/logos/display/zeppelin-160.webp",
+		"display": "/logos/display/zeppelin-1024.webp",
+		"sourcePath": "public/brand.json",
+		"sourceUrl": "https://h.no.mt/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2824917,
+		"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26"
+	},
+	"family": {
+		"id": "2026-09-19-01",
+		"status": "adopted",
+		"updated": "2026-09-19",
+		"finishing": "01",
+		"root": "/logos/family/zeppelin/2026-09-19-01/01",
+		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/zeppelin/2026-09-19-01",
+		"series": "material",
+		"model": "gpt-image-2.5-sunburst",
+		"foreground": {
+			"subject": {
+				"en": "Titanium fleet command vessel with yellow bands",
+				"zh": "带黄色识别带的钛金属舰队指挥舰"
+			},
+			"original": "/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+			"display": "/logos/family/zeppelin/2026-09-19-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26"
+		},
+		"previous": {
+			"original": "/logos/originals/zeppelin-before-2026-09-19.svg",
+			"sourceUrl": "https://github.com/nocoo/zeppelin/blob/e4481fe596a8971111f2c374e76ac585749b2a61/public/favicon.svg",
+			"width": 64,
+			"height": 64,
+			"sha256": "d83041d2cf2b8e04a34978a88f725f0fc8ab624efcece84178a2bd35c556fd8f"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A fleet in one silhouette",
+					"zh": "用一个轮廓呈现舰队"
+				},
+				"description": {
+					"en": "A substantial central hull and paired nacelles form a complete diagonal mark. Uniform placement preserves the prow, antennae and engine housings with rounded-outline clearance.",
+					"zh": "厚实中轴舰体与成对推进舱构成完整斜向标志。整体等比放置，保留舰艏、天线与引擎外壳，并留出圆角边界净空。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Engineered, tangible materials",
+					"zh": "可感知的工程材质"
+				},
+				"description": {
+					"en": "Satin titanium armor, graphite joints, yellow enamel and amber engine cores use continuous physical 3D shading. This symbolic identity is separate from the documented fleet designs.",
+					"zh": "缎面钛装甲、石墨接缝、黄色珐琅与琥珀引擎核心采用连续的实体三维明暗。象征性标志与实际舰型档案独立。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Formation vectors on plotting paper",
+					"zh": "绘图纸上的编队航迹"
+				},
+				"description": {
+					"en": "Staggered approach chevrons, broken range arcs and docking ticks are pressed into cool engineering paper. Background, grain and soft shadows stay separate from the transparent ship.",
+					"zh": "冷调工程纸上压印错落的接近向量、断开的测距弧与对接刻度。底纹、颗粒和柔和投影均独立于透明舰船。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#dce2df",
+				"role": "background",
+				"label": {
+					"en": "Cool engineering paper",
+					"zh": "冷调工程纸"
+				},
+				"source": "artwork/logo-family/zeppelin/2026-09-19-01/presentation.json background.base; authored presentation, not a website token"
+			},
+			{
+				"color": "#d7d6ca",
+				"label": {
+					"en": "Titanium armor",
+					"zh": "钛金属装甲"
+				},
+				"role": "accent",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (1100, 1050); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			},
+			{
+				"color": "#e4b848",
+				"label": {
+					"en": "Yellow identification band",
+					"zh": "黄色识别带"
+				},
+				"role": "primary",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (830, 1260); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			},
+			{
+				"color": "#696461",
+				"label": {
+					"en": "Graphite spine",
+					"zh": "石墨中轴"
+				},
+				"role": "accent",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (870, 960); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			},
+			{
+				"color": "#f4a232",
+				"label": {
+					"en": "Amber engine core",
+					"zh": "琥珀引擎核心"
+				},
+				"role": "accent",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (1520, 935); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "24/16px marks retain the broad hull, twin engines and yellow bands. Fine seams and antennae soften. Use transparent foregrounds without tiles or extra masks.",
+			"zh": "24/16px 以宽舰体、双引擎与黄色识别带保持辨识，细接缝和天线会柔化。小标志使用透明前景，不加底板或额外遮罩。"
+		}
+	},
+	"colors": {
+		"primary": "#dddf45",
+		"background": "#101110",
+		"ink": "#edeee8",
+		"palette": [
+			{
+				"color": "#dce2df",
+				"role": "background",
+				"label": {
+					"en": "Cool engineering paper",
+					"zh": "冷调工程纸"
+				},
+				"source": "artwork/logo-family/zeppelin/2026-09-19-01/presentation.json background.base; authored presentation, not a website token"
+			},
+			{
+				"color": "#d7d6ca",
+				"label": {
+					"en": "Titanium armor",
+					"zh": "钛金属装甲"
+				},
+				"role": "accent",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (1100, 1050); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			},
+			{
+				"color": "#e4b848",
+				"label": {
+					"en": "Yellow identification band",
+					"zh": "黄色识别带"
+				},
+				"role": "primary",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (830, 1260); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			},
+			{
+				"color": "#696461",
+				"label": {
+					"en": "Graphite spine",
+					"zh": "石墨中轴"
+				},
+				"role": "accent",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (870, 960); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			},
+			{
+				"color": "#f4a232",
+				"label": {
+					"en": "Amber engine core",
+					"zh": "琥珀引擎核心"
+				},
+				"role": "accent",
+				"source": "Native 5e48ca094d781af7e484a41db9c56912c2f21fb1676ff341241a685eb03ef037, sRGB pixel (1520, 935); artwork/logo-family/zeppelin/2026-09-19-01/palette.json"
+			}
+		]
+	},
+	"theme": {
+		"primary": {
+			"value": "#dddf45",
+			"source": "src/style.css :root at e4481fe596a8971111f2c374e76ac585749b2a61"
+		},
+		"background": {
+			"value": "#101110",
+			"source": "src/style.css :root at e4481fe596a8971111f2c374e76ac585749b2a61"
+		},
+		"ink": {
+			"value": "#edeee8",
+			"source": "src/style.css :root at e4481fe596a8971111f2c374e76ac585749b2a61"
+		}
+	},
+	"source": {
+		"profileRevision": "807c5028ce7b5c085a875ce2f9714275549f2e3e",
+		"profileSection": "Recent Projects",
+		"description": "Next-generation spacecraft fleet and design archive",
+		"repositoryRevision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157"
+	},
+	"overview": {
+		"goal": {
+			"en": "Explore an original industrial science-fiction fleet through 17 mission series and 25 archive entries. Three modeled vessels provide seven preserved HD views each; planned designs keep explicit placeholders and unknown dimensions.",
+			"zh": "通过 17 个任务系列、25 个档案探索原创工业科幻舰队。三艘已建模舰船各保留七个高清视图；规划设计明确使用占位，并保留未知尺寸。"
+		},
+		"techStack": [
+			{
+				"name": "Vite / JavaScript / CSS",
+				"role": {
+					"en": "Framework-free fleet browsing and accessible image inspection",
+					"zh": "无运行时框架的舰队浏览与无障碍图像查看"
+				}
+			},
+			{
+				"name": "Cloudflare Workers / R2",
+				"role": {
+					"en": "Public website, versioned health JSON and immutable ship media",
+					"zh": "公开站点、版本化健康 JSON 与不可变舰船素材"
+				}
+			},
+			{
+				"name": "Blender",
+				"role": {
+					"en": "Original spacecraft models and reproducible seven-view renders",
+					"zh": "原创舰船模型与可复现的七视图渲染"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-09-19",
+			"revision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157",
+			"sources": [
+				"README.md",
+				"src/fleet.js",
+				"src/style.css",
+				"docs/fleet-spec.md",
+				"package.json",
+				"worker.js",
+				"wrangler.jsonc",
+				"public/brand.json"
+			]
+		}
+	},
+	"socialImage": "/og/zeppelin.jpg",
+	"brandKit": {
+		"version": "1.0.0",
+		"root": "/brands/zeppelin/v1.0.0",
+		"method": "archived-artwork",
+		"scope": "hexly-campaign",
+		"sourceAdoptionRevision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157",
+		"lockup": {
+			"width": 959,
+			"height": 416
+		},
+		"texture": {
+			"name": {
+				"en": "Fleet formation vectors",
+				"zh": "舰队编成航迹"
+			},
+			"description": {
+				"en": "Three staggered chevron approach vectors, broken range arcs and docking alignment ticks connect mission-based fleet formations and engineering archives. This geometry is specific to Zeppelin.",
+				"zh": "错落的接近向量、测距弧与对接刻度压印在冷调工程纸上，呼应任务编队与舰船工程档案。"
+			}
+		},
+		"hero": {
+			"width": 2400,
+			"height": 960,
+			"themed": true,
+			"alt": {
+				"en": "Titanium fleet command vessel with yellow bands on a Hexly campaign canvas",
+				"zh": "带黄色识别带的钛金属舰队指挥舰，置于 Hexly 宣发画布"
+			},
+			"caption": {
+				"en": "Built for the distance.",
+				"zh": "为远航而生。"
+			}
+		},
+		"description": {
+			"en": "A titanium command vessel for an original next-generation spacecraft fleet.",
+			"zh": "以钛金属指挥舰，呈现原创次世代太空舰队。"
+		},
+		"guidelines": [
+			{
+				"title": {
+					"en": "Identity keeps its colors",
+					"zh": "身份保留原色"
+				},
+				"description": {
+					"en": "Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.",
+					"zh": "项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。"
+				}
+			},
+			{
+				"title": {
+					"en": "A complete composition",
+					"zh": "保留完整构图"
+				},
+				"description": {
+					"en": "Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.",
+					"zh": "保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。"
+				}
+			},
+			{
+				"title": {
+					"en": "A mark, not a tile",
+					"zh": "小标志不用底板"
+				},
+				"description": {
+					"en": "Navigation 24px preferred, 16px minimum. Wordmark ≥84px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine material detail softens at 16px.",
+					"zh": "导航推荐 24px，最小 16px。字标宽度至少 84px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小材质细节会柔化。"
+				}
+			}
+		]
+	}
+}

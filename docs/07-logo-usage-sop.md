@@ -275,3 +275,13 @@ This is the first independent Logo. The `skills` category starts with this
 project only. Brand kit `1.0.0`, starter `0.1.0` and Hexly `0.14.1` are separate
 versions. The [onboarding record](28-diorama-journey-onboarding.md) links native
 approval, finishing measurements, actual source consumers and publication evidence.
+
+## Zeppelin spacecraft identity — 2026-09-19
+
+Study `2026-09-19-01 / 01` adopts a Sunburst titanium command vessel under the
+owner's named-project review waiver. Source `8ae8e920dd3afc9114c6e9d917f698e54dc95157`
+pins exact CDN masters in `public/brand.json`, preserving the source project's
+no-material-binaries Git policy. Root `logo.png` is the locally hydrated exact
+transparent master. README uses the rounded presentation; the homepage and
+seven-size favicon use transparent artwork. The full-screen vessel inspector
+has no site header. See [complete onboarding](30-zeppelin-onboarding.md).
