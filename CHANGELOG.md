@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.15.2] - 2026-09-19
+
+### Documentation
+
+- standardize family website entry ([f6264b8](https://github.com/nocoo/hexly.ai/commit/f6264b88dc7ac93920fcbab0067469c3814f3954))
+- normalize claude handbook and quality contract ([5d0d875](https://github.com/nocoo/hexly.ai/commit/5d0d87581df7f3988123747a5e0d5067e0e0c778))
+- refine handbook accuracy and links ([5f89fdd](https://github.com/nocoo/hexly.ai/commit/5f89fddf3e65c648626d3060185431d1becf829d))
+
+### Maintenance
+
+- reduce D1 snapshot query work ([2befd3d](https://github.com/nocoo/hexly.ai/commit/2befd3d0a1ff610ed9055ec466399d126ebe85e7))
+
+### Features
+
+- connect selected public sites and personal domains ([d92c90f](https://github.com/nocoo/hexly.ai/commit/d92c90f22f4ff64da3204a2502b3611cd0edc438))
+
 ## [0.15.1] - 2026-09-17
 
 ### Features
