@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.15.3] - 2026-09-19
+
+### Features
+
+- onboard Zeppelin spacecraft identity and public status ([2d156aa](https://github.com/nocoo/hexly.ai/commit/2d156aaf7ced06f218031f95ec764abcada6679a))
+
 ## [0.15.2] - 2026-09-19
 
 ### Documentation
