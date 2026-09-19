@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.15.4] - 2026-09-19
+
+### Features
+
+- onboard Eagle identity, site and public status ([aac2c22](https://github.com/nocoo/hexly.ai/commit/aac2c22f25dd22b6f0cb847ce6be9f75500e85a5))
+
 ## [0.15.3] - 2026-09-19
 
 ### Features
