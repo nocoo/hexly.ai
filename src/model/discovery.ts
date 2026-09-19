@@ -5,7 +5,7 @@ import { assetUrl } from "./assets";
 import { filterProjects, isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { legacyRoute, siteOrigin } from "./routes";
-import { healthEndpoint } from "./status";
+import { statusSites } from "./status";
 import { findVideo, videoEntries, videoManifest } from "./videos";
 
 export { siteOrigin } from "./routes";
@@ -449,12 +449,7 @@ function statusPage(projects: Project[]): DiscoveryPage {
 		image: socialImage(),
 		imageAlt: "hexly.ai mark on warm paper",
 		heading: "Service status.",
-		bodyHtml: snapshotHtml(
-			"Service status.",
-			description,
-			"/status",
-			projects.filter((project) => healthEndpoint(project)),
-		),
+		bodyHtml: snapshotHtml("Service status.", description, "/status", projects),
 		jsonLd: {
 			"@context": "https://schema.org",
 			"@type": "WebPage",
@@ -584,12 +579,19 @@ function snapshotHtml(
 		.join(" ");
 	const items = project
 		? `<p><a href="${escapeHtml(project.repository)}">GitHub</a>${project.website ? ` · <a href="${escapeHtml(project.website)}">${isChromeWebStoreProject(project) ? copy.en.addToChrome : escapeHtml(project.website)}</a>` : ""}</p>`
-		: `<ul>${projects
-				.map(
-					(entry) =>
-						`<li><a href="/projects/${entry.id}">${escapeHtml(entry.title)}</a> — ${escapeHtml(entry.description.en)}</li>`,
-				)
-				.join("")}</ul>`;
+		: current === "/status"
+			? `<ul>${statusSites(projects)
+					.map(
+						(site) =>
+							`<li><a href="${escapeHtml(site.website)}">${escapeHtml(site.title)}</a> — <a href="${escapeHtml(site.endpoint)}">/api/live</a></li>`,
+					)
+					.join("")}</ul>`
+			: `<ul>${projects
+					.map(
+						(entry) =>
+							`<li><a href="/projects/${entry.id}">${escapeHtml(entry.title)}</a> — ${escapeHtml(entry.description.en)}</li>`,
+					)
+					.join("")}</ul>`;
 	const overview = project?.overview;
 	const overviewHtml = overview
 		? `<section id="overview"><h2>${copy.en.projectGoal}</h2><p>${escapeHtml(overview.goal.en)}</p><h2>${copy.en.techStack}</h2><ul>${overview.techStack.map((technology) => `<li>${escapeHtml(technology.name)} — ${escapeHtml(technology.role.en)}</li>`).join("")}</ul></section>`

@@ -17,8 +17,10 @@ import {
 	hourStatus,
 	parseStatusSnapshot,
 	type StatusService,
+	type StatusSite,
 	type StatusSnapshot,
 	sampleTotals,
+	statusSites,
 } from "../model/status";
 import { formatStatusTime } from "../model/time-zone";
 import { Icon } from "./Icon";
@@ -131,14 +133,14 @@ function StatusHistory({
 }
 
 function ServiceRow({
-	project,
+	site,
 	service,
 	now,
 	hours,
 	locale,
 	timeZone,
 }: {
-	project: Project;
+	site: StatusSite;
 	service: StatusService;
 	now: number;
 	hours: number;
@@ -155,18 +157,18 @@ function ServiceRow({
 		? t.reasons[latest.error as keyof typeof t.reasons]
 		: null;
 	return (
-		<article className="status-service" data-service={project.id}>
+		<article className="status-service" data-service={site.id}>
 			<div className="status-service-main">
 				<a
 					className="status-service-identity"
-					href={project.website ?? project.repository}
+					href={site.website}
 					target="_blank"
 					rel="noreferrer"
 				>
-					<Logo project={project} size={44} />
+					<Logo project={site.project} size={44} />
 					<span>
 						<h3>
-							{project.title}
+							{site.title}
 							<Icon name="arrow" />
 						</h3>
 						<span className="status-host">
@@ -177,7 +179,7 @@ function ServiceRow({
 				<div className="status-service-history">
 					<StatusHistory
 						service={service}
-						title={project.title}
+						title={site.title}
 						now={now}
 						hours={hours}
 						locale={locale}
@@ -202,7 +204,7 @@ function ServiceRow({
 					className={`status-service-state status-${status}`}
 					aria-expanded={expanded}
 					aria-controls={detailId}
-					aria-label={`${project.title}: ${t[status]}. ${t.latest}`}
+					aria-label={`${site.title}: ${t[status]}. ${t.latest}`}
 					onClick={() => setExpanded(!expanded)}
 				>
 					<span className="status-dot" aria-hidden="true" />
@@ -352,13 +354,11 @@ export function StatusPage({
 
 	const active = projects.filter((project) => !project.archived);
 	const unmonitored = active.filter((project) => !healthEndpoint(project));
-	const services = active.flatMap((project) => {
-		const endpoint = healthEndpoint(project);
-		if (!endpoint) return [];
+	const services = statusSites(projects).map((site) => {
 		const service = snapshot?.services.find(
-			(item) => item.id === project.id && item.endpoint === endpoint,
-		) ?? { id: project.id, endpoint, latest: null, history: [] };
-		return [{ project, service, status: currentStatus(service.latest, now) }];
+			(item) => item.id === site.id && item.endpoint === site.endpoint,
+		) ?? { id: site.id, endpoint: site.endpoint, latest: null, history: [] };
+		return { site, service, status: currentStatus(service.latest, now) };
 	});
 	const counts = services.reduce<Record<DisplayStatus, number>>(
 		(result, { status }) => {
@@ -425,16 +425,17 @@ export function StatusPage({
 	};
 	const visible = services
 		.filter(
-			({ project, status }) =>
+			({ site, status }) =>
 				(filter === "all" || status !== "operational") &&
-				`${project.title} ${project.website} ${project.description[locale]}`
+				`${site.title} ${site.website} ${site.project.description[locale]}`
 					.toLocaleLowerCase()
 					.includes(query.trim().toLocaleLowerCase()),
 		)
 		.sort(
 			(a, b) =>
+				a.site.trailingOrder - b.site.trailingOrder ||
 				priority[a.status] - priority[b.status] ||
-				a.project.title.localeCompare(b.project.title),
+				a.site.title.localeCompare(b.site.title),
 		);
 	const attention = services.length - counts.operational;
 
@@ -653,10 +654,10 @@ export function StatusPage({
 					</fieldset>
 				</div>
 				<div className="status-service-list">
-					{visible.map(({ project, service }) => (
+					{visible.map(({ site, service }) => (
 						<ServiceRow
-							key={project.id}
-							project={project}
+							key={site.id}
+							site={site}
 							service={service}
 							now={now}
 							hours={hours}

@@ -1,3 +1,4 @@
+import identity from "../data/site-identity.json" with { type: "json" };
 import type { Project } from "./project";
 
 export const CHECK_INTERVAL = 300_000;
@@ -15,6 +16,13 @@ export type DisplayStatus = CheckStatus | "unknown";
 export interface StatusTarget {
 	id: string;
 	endpoint: string;
+}
+
+export interface StatusSite extends StatusTarget {
+	title: string;
+	website: string;
+	project: Project;
+	trailingOrder: number;
 }
 
 export interface CheckResult extends StatusTarget {
@@ -73,6 +81,8 @@ export function healthEndpoint(
 			url.protocol !== "https:" ||
 			url.username ||
 			url.password ||
+			url.hostname.endsWith(".worker.hexly.ai") ||
+			url.hostname.endsWith(".workers.dev") ||
 			distributionHosts.has(url.hostname)
 		)
 			return null;
@@ -82,11 +92,41 @@ export function healthEndpoint(
 	}
 }
 
-export function statusTargets(projects: Project[]): StatusTarget[] {
-	return projects.flatMap((project) => {
+export function statusSites(projects: Project[]): StatusSite[] {
+	const sites = projects.flatMap((project) => {
 		const endpoint = healthEndpoint(project);
-		return endpoint ? [{ id: project.id, endpoint }] : [];
+		return endpoint && project.website
+			? [
+					{
+						id: project.id,
+						endpoint,
+						title: project.title,
+						website: project.website,
+						project,
+						trailingOrder: 0,
+					},
+				]
+			: [];
 	});
+	// Personal sites share Hexly's identity, but keep independent D1 histories.
+	for (const [index, site] of [
+		{ id: "lizheng-dev", website: "https://lizheng.dev" },
+		{ id: "lizheng-me", website: "https://lizheng.me" },
+		{ id: identity.id, website: identity.website },
+	].entries()) {
+		sites.push({
+			...site,
+			title: new URL(site.website).hostname,
+			endpoint: `${site.website}/api/live`,
+			project: identity as Project,
+			trailingOrder: index + 1,
+		});
+	}
+	return sites;
+}
+
+export function statusTargets(projects: Project[]): StatusTarget[] {
+	return statusSites(projects).map(({ id, endpoint }) => ({ id, endpoint }));
 }
 
 export function currentStatus(

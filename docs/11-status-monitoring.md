@@ -7,7 +7,8 @@ token has D1 permissions. Implementation and deployment are authorized.
 
 Extend the existing Worker with a Cloudflare Cron Trigger and one D1 database.
 Use the existing React application for `/status`, also served at the root of
-`status.hexly.ai`. Keep the catalogue as the source of monitored projects.
+`status.hexly.ai`. Keep the catalogue as the source of monitored projects, with
+the owner's three additional personal sites defined in `src/model/status.ts`.
 
 ```mermaid
 flowchart LR
@@ -29,8 +30,27 @@ runtime dependency or separately deployed status application is needed.
 - Monitor non-archived catalogue projects with an independent public website.
 - Derive the target as the website origin plus `/api/live`.
 - Links to package registries and app stores are not independent project sites.
+- Exclude `*.worker.hexly.ai` and `*.workers.dev` backend/preview domains.
 - Keep projects without a site visible in a separate coverage section, outside
   availability calculations. Archived projects are not displayed or probed.
+
+### Owner-selected coverage, 2026-09-19
+
+Ellie's website is `https://bbs.tongji.net`, using the Ellie identity. Life's
+website is `https://life.hexly.ai`. Firefly retains `https://lizheng.blog` and its
+existing target ID and history. Worker domains, BBS admin, Life ingest and other
+unselected domains are not added.
+
+Append `lizheng.dev`, `lizheng.me` and `hexly.ai` in that order, after all project
+rows regardless of status priority. These use the existing Hexly Logo and unique
+IDs `lizheng-dev`, `lizheng-me`, `hexly-ai`; they are Status entries, not additional
+project catalogue records. No `www` aliases or `status.hexly.ai` self-monitor are
+added. All targets retain the origin plus `/api/live` convention.
+
+`statusSites()` supplies the shared display metadata and `statusTargets()` strips
+it to the ID/endpoint manifest used by the Worker, local fixtures and deployment
+tooling. A separate stable ID per domain avoids collisions in `(project_id, slot)`.
+New histories begin with the next scheduled probe and are never backfilled.
 
 ### Deployment inventory correction, 2026-09-12
 
@@ -68,7 +88,7 @@ One `checks` table, with these fields:
 
 | Field | Purpose |
 | --- | --- |
-| `project_id` | Stable catalogue project ID |
+| `project_id` | Stable catalogue project or additional site ID |
 | `endpoint` | Exact public health-check URL, to separate endpoint changes |
 | `slot` | UTC five-minute schedule bucket; deduplication key |
 | `checked_at` | Actual completion timestamp |
@@ -102,7 +122,7 @@ samples with the same endpoint and time filters; no additional index is needed.
 
 ## Scheduling and failure behavior
 
-The Cron handler probes the fixed catalogue targets on the server, with bounded
+The Cron handler probes the fixed manifest targets on the server, with bounded
 concurrency and per-request timeouts. A transient timeout or server failure gets
 one retry within the same scheduled sample. A healthy response requires a
 successful HTTP status and a JSON health response; an HTML SPA fallback must

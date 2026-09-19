@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/life.ai](https://github.com/nocoo/life.ai)
-- Website: No current website verified; navigation opens the repository.
-- Website evidence: Not applicable
+- Website: [https://life.hexly.ai](https://life.hexly.ai)
+- Website evidence: Owner-confirmed public site domain, 2026-09-19
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Bring health, places, and spending into one personal picture.

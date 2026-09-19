@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/ellie](https://github.com/nocoo/ellie)
-- Website: No current website verified; navigation opens the repository.
-- Website evidence: Not applicable
+- Website: [https://bbs.tongji.net](https://bbs.tongji.net)
+- Website evidence: Owner-confirmed public forum domain, 2026-09-19
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A modern forum for thoughtful conversations, with a companion terminal client.
