@@ -243,6 +243,33 @@ describe("Wrangler SQLite D1 retention and scheduled writes", () => {
 			),
 		).toBe(2);
 	});
+	it("selects the latest completion and breaks timestamp ties by slot per project", async () => {
+		const latest = result({
+			slot: now - CHECK_INTERVAL,
+			status: "degraded",
+		});
+		const neighbor = result({ id: "neighbor", status: "down" });
+		await storeChecks(
+			env.STATUS_DB,
+			[
+				result({ checkedAt: now - 1, status: "down" }),
+				latest,
+				result({ slot: now - CHECK_INTERVAL * 2 }),
+				neighbor,
+			],
+			now,
+		);
+		const snapshot = await readStatus(
+			env.STATUS_DB,
+			[target, { ...target, id: "neighbor" }],
+			now,
+			"live",
+		);
+		expect(snapshot.services.map((service) => service.latest)).toEqual([
+			latest,
+			neighbor,
+		]);
+	});
 	it("excludes expired, future, removed, and changed-endpoint records even before cleanup", async () => {
 		await storeChecks(
 			env.STATUS_DB,

@@ -218,20 +218,32 @@ export async function readStatus(
 	now: number,
 	mode: StatusSnapshot["mode"],
 ): Promise<StatusSnapshot> {
-	const from = `FROM checks AS c JOIN json_each(?) AS target
-		ON c.project_id = json_extract(target.value, '$.id') AND c.endpoint = json_extract(target.value, '$.endpoint')
-		WHERE c.checked_at >= ? AND c.checked_at <= ?`;
+	const targetCte = `WITH targets AS MATERIALIZED (
+		SELECT json_extract(value, '$.id') AS target_id,
+		json_extract(value, '$.endpoint') AS target_endpoint FROM json_each(?)
+	)`;
 	const bindings = [JSON.stringify(targets), now - RETENTION, now];
 	const [latest, history] = await db.batch([
 		db
-			.prepare(`SELECT project_id AS id, endpoint, slot, checked_at AS checkedAt, status, http_status AS httpStatus, latency_ms AS latencyMs, error_code AS error, version
-			FROM (SELECT c.*, ROW_NUMBER() OVER (PARTITION BY project_id ORDER BY checked_at DESC, slot DESC) AS position ${from}) WHERE position = 1`)
+			.prepare(`${targetCte}
+			SELECT project_id AS id, endpoint, slot, checked_at AS checkedAt, status, http_status AS httpStatus, latency_ms AS latencyMs, error_code AS error, version
+			FROM targets AS target JOIN checks AS c
+			ON c.project_id = target.target_id AND c.slot = (
+				SELECT slot FROM checks AS recent
+				WHERE recent.project_id = target.target_id AND recent.endpoint = target.target_endpoint
+				AND recent.checked_at >= ? AND recent.checked_at <= ?
+				ORDER BY recent.checked_at DESC, recent.slot DESC LIMIT 1
+			)`)
 			.bind(...bindings),
 		db
-			.prepare(`SELECT project_id AS id, CAST(checked_at / ${HOUR} AS INTEGER) * ${HOUR} AS hour,
+			.prepare(`${targetCte}
+			SELECT project_id AS id, CAST(checked_at / ${HOUR} AS INTEGER) * ${HOUR} AS hour,
 			COUNT(*) AS total, SUM(status = 'operational') AS passed, SUM(status = 'degraded') AS degraded,
 			SUM(status = 'down') AS down, SUM(status = 'unconfigured') AS unconfigured, ROUND(AVG(latency_ms)) AS latencyMs
-			${from} GROUP BY project_id, hour ORDER BY hour`)
+			FROM checks AS c JOIN targets AS target
+			ON c.project_id = target.target_id AND c.endpoint = target.target_endpoint
+			WHERE c.checked_at >= ? AND c.checked_at <= ?
+			GROUP BY project_id, hour ORDER BY hour`)
 			.bind(...bindings),
 	]);
 	if (!latest || !history) throw new Error("Missing status query result");

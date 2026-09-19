@@ -93,6 +93,13 @@ public API if a cleanup run is delayed. Current state, sample availability, and
 hourly history are computed from this small table; there are no separate rollup,
 latest-state, incident, or queue tables to keep consistent.
 
+Both read queries materialize the target manifest once to reuse its parsed IDs
+and endpoints. The latest-state query selects one matching slot per target,
+ordered by actual completion time and then slot, and retrieves its record through
+the existing composite primary key. This avoids ranking the entire retained
+history with a window function. Hourly aggregation continues to scan the retained
+samples with the same endpoint and time filters; no additional index is needed.
+
 ## Scheduling and failure behavior
 
 The Cron handler probes the fixed catalogue targets on the server, with bounded
