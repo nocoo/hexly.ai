@@ -206,12 +206,16 @@ export function agentGuide(
 	} else if (path === "/status") {
 		title = "Hexly service status";
 		instructions.push(
-			"Read GET /api/status for the latest stored observations. The catalogue is the target source: non-archived independent HTTPS websites, using their exact origin plus /api/live.",
+			"Read GET /api/status for the latest stored observations. Targets are non-archived independent HTTPS catalogue websites plus lizheng.dev, lizheng.me and hexly.ai, using each exact origin plus /api/live. Worker domains are excluded. Firefly monitors lizheng.blog; Ellie monitors bbs.tongji.net. The three additional sites appear last with the Hexly identity.",
 			"Checks run every five minutes. Keep only seven days of history. Timestamps, buckets, retention and availability calculations use UTC; the browser's time zone only changes display.",
 			"Preserve the returned statuses and observation times. Missing or stale checks are unknown. Redirects, HTML and login pages are never healthy. Do not claim a fresh observation from this static guide. Local development uses labelled mock data, never production health evidence.",
 		);
 		resources.push(
 			{ label: "Status observations JSON", href: `${siteOrigin}/api/status` },
+			{
+				label: "Monitored endpoints JSON",
+				href: `${siteOrigin}/data/status-targets.json`,
+			},
 			{
 				label: "Project catalogue JSON",
 				href: `${siteOrigin}/data/projects.json`,
