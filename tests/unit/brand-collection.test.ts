@@ -52,9 +52,9 @@ describe("complete Hexly campaign archives", () => {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
 			const { brandTexture, ...beforeTextures } = p;
 			const { brandKit, ...original } = beforeTextures;
-			// These two websites were connected after the frozen brand baseline.
+			// These websites were connected after the frozen brand baseline.
 			// Their current endpoints are independently asserted in status.test.ts.
-			if (["ellie", "life-ai"].includes(p.id)) {
+			if (["ellie", "life-ai", "ocelot"].includes(p.id)) {
 				original.website = null;
 				original.websiteSource = null;
 			}

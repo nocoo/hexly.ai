@@ -3,8 +3,8 @@
 ## Profile
 
 - Repository: [nocoo/ocelot](https://github.com/nocoo/ocelot)
-- Website: No current website verified; navigation opens the repository.
-- Website evidence: Not applicable
+- Website: [https://ocelot.hexly.ai](https://ocelot.hexly.ai)
+- Website evidence: README.md and wrangler.jsonc at d4db4f6472f3efde40441d6a40089cc2d1f598a0
 - Category: tools
 - Archived repository: No; [repository status evidence](../../docs/sources/ocelot-2026-09-11.json)
 - English: Read-only Obsidian reader for public and private GitHub vaults
