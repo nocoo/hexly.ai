@@ -119,7 +119,7 @@ Before the Workers migration, `hexly.ai` had a proxied A record pointing to `76.
 
 The initial CI deployment uploaded the Worker successfully, but custom-domain attachment returned Cloudflare error `100117`: the externally managed A record had to be deleted explicitly. After verifying the version, revision, document, assets, and logo at `https://hexly-ai.nocoo.workers.dev`, the backed-up apex A record was removed and `hexly.ai` was attached to Worker `hexly-ai`. Cloudflare created its managed proxied AAAA record (`100::`). Public verification then passed at `https://hexly.ai`; the original MX and TXT records were unchanged.
 
-Later CI deployments maintain this existing custom-domain binding. The Workers preview URL is marked `noindex`; the canonical public URL is `https://hexly.ai/`.
+Later CI deployments maintain this existing custom-domain binding. Both `workers.dev` and version preview URLs are disabled; the canonical public URL is `https://hexly.ai/`. Use the local Worker preview for development.
 
 Only the apex web route moves to the Worker. Existing mail records, development wildcard records, and other subdomains are independent. The Vercel deployment is retained. To roll back the routing, detach the Worker custom domain and restore the recorded apex A record; do not remove the zone's MX or TXT records.
 
