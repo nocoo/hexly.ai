@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] - 2026-09-20
+
+### Fixes
+
+- include ocelot in status monitoring ([7fa1608](https://github.com/nocoo/hexly.ai/commit/7fa160850641ec531b47a6b89073b726c64d3ab5))
+
 ## [1.0.1] - 2026-09-20
 
 ### Fixes
