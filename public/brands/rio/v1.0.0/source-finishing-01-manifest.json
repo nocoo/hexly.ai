@@ -1,0 +1,371 @@
+{
+	"createdAt": "2026-09-20T03:10:23.668Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "c26999e638b0a2521c96af045156654c15fbaa112dd1b9411421b9b72fbdee6d",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "rio",
+		"sourceMode": "isolated-white",
+		"original": null,
+		"background": {
+			"base": "#edd3c5",
+			"light": "#fff0df",
+			"shade": "#dbb7a8",
+			"motif": "#a46f5c",
+			"grainAmplitude": 1,
+			"grainSeed": 60920,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.15,
+			"status": "Authored rainforest-leaf presentation; separate from the Rio application theme.",
+			"pattern": {
+				"name": "Rio — rainforest palm and heliconia leaf relief",
+				"layers": [
+					{
+						"d": "M-55 422C3 213 113 82 339 -61 M2 267C20 148 39 86 91 19 M43 215C83 118 125 52 182 -4 M94 159C153 70 221 15 279 -24 M0 281C91 210 171 193 229 187 M43 218C137 145 215 126 284 130 M96 159C179 92 260 76 326 82",
+						"tone": "motif",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-34 436C16 255 131 93 347 -46 M15 271C110 202 175 191 237 197 M54 211C149 143 225 133 292 141",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M1017 988C930 843 920 700 965 550C1000 435 1003 323 958 211 M961 556C854 520 826 446 852 374C924 405 960 467 961 556Z M982 436C1057 378 1078 320 1061 258C1005 293 980 359 982 436Z M944 728C841 691 806 629 819 558C892 583 937 647 944 728Z M961 872C1025 819 1045 756 1032 698C982 729 955 799 961 872Z",
+						"tone": "motif",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M966 549L859 388 M946 721L827 572 M984 432L1053 273 M965 865L1026 713",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M849 375C851 449 889 512 958 551C923 469 902 425 849 375 M819 560C822 632 869 695 942 723C919 643 881 593 819 560",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 237,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 650,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Exterior modal matte sampled from the top 100 rows. Pale ivory beak has warm chroma above 16 and is not globally removed. Inspect exact extracted anatomy and all opaque native pixels."
+		},
+		"shadows": [
+			{
+				"color": [
+					111,
+					56,
+					39
+				],
+				"opacity": 0.12,
+				"blurAt2048": 26,
+				"offsetAt2048": [
+					8,
+					22
+				]
+			},
+			{
+				"color": [
+					91,
+					42,
+					31
+				],
+				"opacity": 0.09,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"bottom",
+				"lower-left"
+			],
+			"note": "Preserve the native portrait. The chest and folded wing continue through the bottom and lower-left boundaries. Face, beak and complete floating feather are measured separately; no rescaling or contour continuation."
+		},
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 1770522,
+		"foregroundPixels": 2423782,
+		"softEdgePixels": 9517,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 179,
+			"right": 1923,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 179,
+			"right": 1923,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47899
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2732,
+			"sha256": "df228c1c032ad47854a7e192c1ca94775a7e52400b9b2fd6fe3f439c8e769e3a"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1422,
+			"sha256": "2e8e792fcb8eeb72ee494188035c394ac67d4d1f1d81d112b7a582f0cc656812"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3484953,
+			"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 62336,
+			"sha256": "f04fef44f3142affefa3254a611855beb2b8266985c53f1526274c7a81d3b93b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1554,
+			"sha256": "7cc7ab96edd12240bee49dc8d9b05f6fa614fcbc9dd85568a959027eb3e2feb1"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2127556,
+			"sha256": "d4d7a0556ad898da06a75db21d0fe175e375f5714a7bee83473bb5042a5d7e6f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 192607,
+			"sha256": "5d0310b53b3ee0743d781ab257eda764cbb584fa55169f667928d6d0932a050d"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 148327,
+			"sha256": "fc05d43da4adb1684c7f77207abf21d00ecad4150ba79789ea9f2b3e45e3a758"
+		},
+		{
+			"path": "exports/rio-transparent-2048.png",
+			"bytes": 3484953,
+			"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d"
+		},
+		{
+			"path": "exports/rio-icon-2048.png",
+			"bytes": 4783466,
+			"sha256": "b87187e7139e16ae8d4ad4f0be5db168f38d5dd1b11bc0ba8da5d187d31b77ed"
+		},
+		{
+			"path": "exports/rio-rounded-2048.png",
+			"bytes": 4661770,
+			"sha256": "c00f72d9a1b5a1a3de0118a5818cdc1f694c1345035a4dfae21a6ce33a1480e3"
+		},
+		{
+			"path": "exports/rio-transparent-1024.png",
+			"bytes": 1183676,
+			"sha256": "4174ec60575f723e81d774d8614e226c766de4867554ec4769714da38e0b90b2"
+		},
+		{
+			"path": "exports/rio-icon-1024.png",
+			"bytes": 1491367,
+			"sha256": "482ff053e6a00cc7214a2d5bff2c8d4f2a63ef0e9db03a335c413746b299d7ad"
+		},
+		{
+			"path": "exports/rio-rounded-1024.png",
+			"bytes": 1470947,
+			"sha256": "2883310aba57ec7a1d17707e881bf2b54dff65ff8e9f153056cb8b55a421baa2"
+		},
+		{
+			"path": "exports/rio-transparent-512.png",
+			"bytes": 384312,
+			"sha256": "cdcaca5fa97d05fb8348fc4630f8f5a2929691cd60e4aa0e7ae62a42b7c79cf9"
+		},
+		{
+			"path": "exports/rio-icon-512.png",
+			"bytes": 482589,
+			"sha256": "eba3b0a1ceef1ed2969a8a330d9306cd923d5250ee1943d32f6d19f5001e8033"
+		},
+		{
+			"path": "exports/rio-rounded-512.png",
+			"bytes": 477604,
+			"sha256": "53c02c3efe0b64a1a6ff4b3b2f9428ffbb7fc330034b0dfa9477a4bb5782d8ce"
+		},
+		{
+			"path": "exports/rio-transparent-256.png",
+			"bytes": 114128,
+			"sha256": "703e3ead80afab758db9519d91a19a4acc97a1fcad5c591027f2370cb3cf399c"
+		},
+		{
+			"path": "exports/rio-icon-256.png",
+			"bytes": 134771,
+			"sha256": "c8d0839e4dce012abce128ea36e318ae34eb22aba23fec5013e8efe6961765ab"
+		},
+		{
+			"path": "exports/rio-rounded-256.png",
+			"bytes": 135347,
+			"sha256": "73fdd2e9f5c19b1eeb640ad149915ad5c692cb95967d4bcb790325b41fd6e156"
+		},
+		{
+			"path": "exports/rio-transparent-128.png",
+			"bytes": 32821,
+			"sha256": "f5a9cdf5a822bdd310c8e3361f367f7ea996657a83e24a8c902431e75056fd68"
+		},
+		{
+			"path": "exports/rio-icon-128.png",
+			"bytes": 38864,
+			"sha256": "3fb9ad3bac4d92a510dec3d6017f4997d7524782ec5bc97db7c0152f6b970510"
+		},
+		{
+			"path": "exports/rio-rounded-128.png",
+			"bytes": 39561,
+			"sha256": "63b9afaf0ce10ef7fa4cde9e7b576620bcb3e8dd3cf9d1e00fe3620772fea4ce"
+		},
+		{
+			"path": "exports/rio-transparent-64.png",
+			"bytes": 9213,
+			"sha256": "f3305aa3098de8750d7caffde905719115620d7ac377d778041823499f2ab78c"
+		},
+		{
+			"path": "exports/rio-icon-64.png",
+			"bytes": 11403,
+			"sha256": "ea5f275ae74d3d35f7fce64d744223f1f2b72e330cee5c8ba5fa501fc7c3218d"
+		},
+		{
+			"path": "exports/rio-rounded-64.png",
+			"bytes": 11684,
+			"sha256": "7913a35129fc7f3db6151675e1f0a842cc8acfee0820fed211cf68955945f487"
+		},
+		{
+			"path": "exports/rio-transparent-48.png",
+			"bytes": 5477,
+			"sha256": "cc9704cea71abc9abf697ac51587c72aa579a2cfd209d995cddc83c144b7da8c"
+		},
+		{
+			"path": "exports/rio-icon-48.png",
+			"bytes": 6718,
+			"sha256": "1116e257ebb74cd944f7c7fdb006a96ceb59b67b154afb0373f71f04a6c520e9"
+		},
+		{
+			"path": "exports/rio-rounded-48.png",
+			"bytes": 6995,
+			"sha256": "025e84eae02e566b39d353f4ff971a583ecf2cfdbb4d7b5983df371f4b71bc09"
+		},
+		{
+			"path": "exports/rio-transparent-32.png",
+			"bytes": 2748,
+			"sha256": "dc3a50c09c3dfa17166865d2336edcbfa2d541ae1fc1811582a068be242b3e0a"
+		},
+		{
+			"path": "exports/rio-icon-32.png",
+			"bytes": 3299,
+			"sha256": "34d46646593947427fad68c2220519d7810e9f7813eb4e18b652fcdf3519bc78"
+		},
+		{
+			"path": "exports/rio-rounded-32.png",
+			"bytes": 3406,
+			"sha256": "299458e5dfdec897883a8ee54dfbf0bbda8b603b4a301686a70d610613d53282"
+		},
+		{
+			"path": "exports/rio-transparent-24.png",
+			"bytes": 1697,
+			"sha256": "b219d141ac41d8ab771915669943713ce04974f10c1650abe6b25e01941e7d92"
+		},
+		{
+			"path": "exports/rio-icon-24.png",
+			"bytes": 2018,
+			"sha256": "98529cd184fd4a7aad6a718f99064a2ddac8f49719f9cdff17a415890573a0ff"
+		},
+		{
+			"path": "exports/rio-rounded-24.png",
+			"bytes": 2079,
+			"sha256": "602882796a02820d3818a70c34f0cfc5277a59b84f748506796db582335f4c0f"
+		},
+		{
+			"path": "exports/rio-transparent-16.png",
+			"bytes": 904,
+			"sha256": "e1d50fe69fa7d8ef36f2e7decb00ef2c75bcdc586453a777631693f0ced77c7e"
+		},
+		{
+			"path": "exports/rio-icon-16.png",
+			"bytes": 1009,
+			"sha256": "a3a52f3d2371302a72388510578189525212eeb0cb8416752d6284daf762d6cf"
+		},
+		{
+			"path": "exports/rio-rounded-16.png",
+			"bytes": 1035,
+			"sha256": "5b9d371797d75aa1d15a501641314f6fc94b1bd303ab97e841f93b6da168335f"
+		},
+		{
+			"path": "exports/rio-white-2048.png",
+			"bytes": 3281451,
+			"sha256": "58d6fda866c5cc101b01a113a23acad58f1a5624efe3fdf263081bc64ac95f53"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1114510,
+			"sha256": "f15aaeb470c10364b29ac3f2fb4febf8f82363f13d6c0e8bd9ffe1f0c0565e52"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1115554,
+			"sha256": "586d0280e981b1a587db315d579f1049a1a16ff41d9a3ee90d521521d7d08748"
+		}
+	]
+}

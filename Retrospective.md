@@ -82,3 +82,15 @@ synthetic credential fields (`key` and `api_key`) inside the inventory are still
 detected, and the identical inventory copied outside the allowed file path
 still produces a finding. No brand bytes, asset records or other scan rules
 changed; the failed candidate remains untagged.
+
+## 2026-09-20: Global social export changed immutable local materials
+
+Rio onboarding ran the documented `assets:build` command. Its global social-card
+renderer regenerated 76 previously published JPEGs with different local bytes.
+The immutable inventory guard rejected the first changed source before any
+upload. Generated copies were retained under the ignored `.video-work/` folder;
+all 76 originals were restored from checksummed cache/CDN objects and verified
+against the existing inventory. No published object or previous receipt changed.
+Only Rio's new card and identity materials enter this onboarding inventory.
+For later onboarding, preserve published social bytes before the global export
+and compare every existing hash before recording new material.

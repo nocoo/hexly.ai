@@ -1,0 +1,67 @@
+{
+	"repository": "https://github.com/nocoo/rio",
+	"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+	"date": "2026-09-20",
+	"profileRevision": "59ee4e397b2e9a7bc2f178bbb3d60f546314d283",
+	"sourceAdoptionRevision": "f4edf159fcc8e8d6469e1e49139f54cf8ca2b288",
+	"sourcePublished": false,
+	"profilePublished": false,
+	"website": "https://rio.hexly.ai",
+	"websiteEvidence": "wrangler.jsonc custom_domain and unauthenticated production GET /api/live returned HTTP 200 JSON with Cache-Control no-store on 2026-09-20",
+	"health": {
+		"status": "ok",
+		"service": "rio",
+		"version": "0.1.0",
+		"revision": "845580fc-41dd-46cc-8d35-678786143cfa",
+		"note": "Worker deployment identifier, not a Git SHA. Current liveness endpoint does not probe D1; no stronger dependency-health claim is made."
+	},
+	"originalIndependentLogo": null,
+	"productStage": "Text gateway application exists and a production health endpoint is verified; GPT-Live voice is planned. README still describes the earlier research stage.",
+	"concurrentWork": "Source application is being developed and committed concurrently. This identity task changed only new root logo.png and assets/brand files.",
+	"theme": {
+		"primary": {
+			"value": "#143b35",
+			"source": "src/styles.css --accent at 371b2042f3d6e42b290956036a8b52d9dcc14659; preserved application token"
+		},
+		"background": {
+			"value": "#f3f1ec",
+			"source": "src/styles.css --paper at 371b2042f3d6e42b290956036a8b52d9dcc14659; preserved application token"
+		},
+		"ink": {
+			"value": "#102d30",
+			"source": "src/styles.css --ink at 371b2042f3d6e42b290956036a8b52d9dcc14659; preserved application token"
+		}
+	},
+	"files": [
+		{
+			"path": "README.md",
+			"archive": "artwork/logo-family/rio/2026-09-20-01/input/README.md.txt",
+			"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+			"sha256": "8cb55dcb2be7fb1aeccb3caa27bb76240fad7f59fb828f5aa8d150a71daaacdf"
+		},
+		{
+			"path": "package.json",
+			"archive": "artwork/logo-family/rio/2026-09-20-01/input/package.json.txt",
+			"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+			"sha256": "65d1999fdc4da4799e1382d4dfe3f573c841b1307a6de5b613aa1c50524b2fce"
+		},
+		{
+			"path": "src/styles.css",
+			"archive": "artwork/logo-family/rio/2026-09-20-01/input/src-styles.css.txt",
+			"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+			"sha256": "eab3d3cf0f010509f13f221c8c6bfc1197a3b7f7bd1514c0e2f9f01073e42af5"
+		},
+		{
+			"path": "server/index.ts",
+			"archive": "artwork/logo-family/rio/2026-09-20-01/input/server-index.ts.txt",
+			"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+			"sha256": "bd01df3d0ed0a1ffd16910a11956f6c871dc519447d438b0f857025b4b5cefe4"
+		},
+		{
+			"path": "wrangler.jsonc",
+			"archive": "artwork/logo-family/rio/2026-09-20-01/input/wrangler.jsonc.txt",
+			"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+			"sha256": "e541724fc8a44e349f189ec9857fb70f2fdbccf77c309958bfd3df77e3f2b814"
+		}
+	]
+}

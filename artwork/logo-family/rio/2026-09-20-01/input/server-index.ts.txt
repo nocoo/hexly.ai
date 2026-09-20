@@ -1,0 +1,234 @@
+import { Hono, type Handler } from 'hono';
+import { bodyLimit } from 'hono/body-limit';
+import { z } from 'zod';
+import { authenticate, type User } from './auth';
+import { seal, unseal, fingerprint } from './crypto';
+import { AppError } from './errors';
+import { hermes, hermesJson } from './hermes';
+import { conversationSelect, conversationView, gatewayView, runView, terminalStatuses, type ConversationRow, type GatewayRow, type RunRow } from './models';
+import { admitRun, syncRun } from './runs';
+import { ownedConversation, ownedGateway, ownedRun } from './store';
+import { approvalSchema, assertOrigin, conversationSchema, gatewaySchema, parse, runSchema, steerSchema } from './validation';
+import type { Diagnostic, Message } from '../shared/types';
+
+type AppEnv = { Bindings: Env; Variables: { user: User; requestId: string } };
+const app = new Hono<AppEnv>();
+
+app.use('*', async (c, next) => {
+  c.set('requestId', crypto.randomUUID());
+  await next();
+  c.header('X-Request-Id', c.get('requestId'));
+  c.header('X-Content-Type-Options', 'nosniff');
+  c.header('Referrer-Policy', 'no-referrer');
+  c.header('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  c.header('X-Frame-Options', 'DENY');
+  c.header('Content-Security-Policy', `default-src 'self'; script-src 'self'${c.env.LOCAL_DEV === 'true' ? " 'unsafe-inline'" : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'${c.env.LOCAL_DEV === 'true' ? ' ws: wss:' : ''}; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'`);
+  if (c.req.path.startsWith('/api/')) c.header('Cache-Control', 'no-store');
+});
+
+app.get('/api/live', c => c.json({ status: 'ok', service: 'rio', version: c.env.APP_VERSION, revision: c.env.VERSION.id || 'local' }));
+
+app.use('*', async (c, next) => {
+  c.set('user', await authenticate(c.req.raw, c.env));
+  assertOrigin(c.req.raw, c.env.LOCAL_DEV === 'true' ? new URL(c.req.url).origin : c.env.APP_ORIGIN);
+  await next();
+});
+
+app.use('/api/*', bodyLimit({ maxSize: 32 * 1024, onError: () => { throw new AppError(413, 'INPUT_TOO_LARGE', 'Keep this message under 32 KB.'); } }));
+
+app.get('/api/me', c => {
+  const { name, email } = c.get('user');
+  return c.json({ user: { name, email } });
+});
+
+app.get('/api/gateways', async c => {
+  const { results } = await c.env.DB.prepare('SELECT * FROM gateways WHERE owner_id = ? ORDER BY created_at').bind(c.get('user').id).all<GatewayRow>();
+  return c.json({ gateways: results.map(gatewayView) });
+});
+
+const saveGateway: Handler<AppEnv> = async c => {
+  const input = parse(gatewaySchema, await c.req.json());
+  const owner = c.get('user').id;
+  const id = c.req.param('id') || crypto.randomUUID();
+  const existing = c.req.method === 'PUT' ? await ownedGateway(c.env, owner, id) : null;
+  if (input.url === c.env.APP_ORIGIN) throw new AppError(400, 'INVALID_GATEWAY_URL', 'Use your gateway’s Tunnel hostname, not the Rio website.');
+  if (existing && (input.url !== existing.url || input.profile !== existing.profile || input.machine !== existing.machine)) {
+    const used = await c.env.DB.prepare('SELECT id FROM conversations WHERE gateway_id = ? LIMIT 1').bind(id).first();
+    if (used) throw new AppError(409, 'AGENT_ROUTE_IN_USE', 'This agent has conversations. Add a new agent to connect another machine or profile.');
+  }
+  const saved = existing ? await unseal(existing.credentials, c.env.ENCRYPTION_KEY, `${owner}:${id}`) : null;
+  const credentials = {
+    accessClientId: input.accessClientId || saved?.accessClientId || '',
+    accessClientSecret: input.accessClientSecret || saved?.accessClientSecret || '',
+    apiKey: input.apiKey || saved?.apiKey || '',
+  };
+  if (Object.values(credentials).some(value => !value)) throw new AppError(400, 'CREDENTIALS_REQUIRED', 'Enter the Access client ID, client secret, and Hermes API key.');
+  const encrypted = await seal(credentials, c.env.ENCRYPTION_KEY, `${owner}:${id}`);
+  const now = new Date().toISOString();
+  if (existing) {
+    await c.env.DB.prepare("UPDATE gateways SET name = ?, machine = ?, profile = ?, url = ?, credentials = ?, status = 'unverified', verified_at = NULL WHERE id = ? AND owner_id = ?")
+      .bind(input.name, input.machine, input.profile, input.url, encrypted, id, owner).run();
+  } else {
+    await c.env.DB.prepare('INSERT INTO gateways (id, owner_id, name, machine, profile, url, credentials, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+      .bind(id, owner, input.name, input.machine, input.profile, input.url, encrypted, now).run();
+  }
+  return c.json({ gateway: gatewayView(await ownedGateway(c.env, owner, id)) }, existing ? 200 : 201);
+};
+app.post('/api/gateways', saveGateway);
+app.put('/api/gateways/:id', saveGateway);
+
+app.post('/api/gateways/:id/test', async c => {
+  const gateway = await ownedGateway(c.env, c.get('user').id, c.req.param('id'));
+  const started = Date.now();
+  let diagnostic: Diagnostic;
+  try {
+    const [health, capabilities] = await Promise.all([
+      hermesJson(c.env, gateway, '/health/detailed'),
+      hermesJson(c.env, gateway, '/v1/capabilities'),
+    ]);
+    const flags = z.record(z.string(), z.unknown()).parse(capabilities.features);
+    const required = ['run_submission', 'run_status', 'run_events_sse', 'run_stop', 'run_steer', 'run_approval_response', 'session_resources'];
+    if (health.status !== 'ok' || health.gateway_state !== 'running') throw new AppError(503, 'GATEWAY_NOT_READY', 'The gateway is reachable but not ready. Check Hermes on this machine.');
+    if (required.some(name => flags[name] !== true) || !z.object({ supported: z.literal(true), durable: z.literal(true) }).safeParse(flags.runs_idempotency).success) {
+      throw new AppError(502, 'CAPABILITIES_MISSING', 'This gateway needs a Hermes version with durable runs, streaming, and task controls.');
+    }
+    diagnostic = { status: 'connected', checkedAt: new Date().toISOString(), latencyMs: Date.now() - started, capabilities: required, message: 'Access, Tunnel, and Hermes are connected. Text conversations are ready.' };
+  } catch (error) {
+    diagnostic = { status: 'unavailable', checkedAt: new Date().toISOString(), latencyMs: Date.now() - started, capabilities: [], message: error instanceof AppError ? error.message : 'The gateway returned an unsupported response.' };
+  }
+  await c.env.DB.prepare('UPDATE gateways SET status = ?, verified_at = ? WHERE id = ? AND owner_id = ?').bind(diagnostic.status, diagnostic.checkedAt, gateway.id, gateway.owner_id).run();
+  return c.json({ diagnostic });
+});
+
+app.get('/api/conversations', async c => {
+  const { results } = await c.env.DB.prepare(`${conversationSelect} WHERE c.owner_id = ? ORDER BY c.updated_at DESC LIMIT 100`).bind(c.get('user').id).all<ConversationRow>();
+  return c.json({ conversations: results.map(conversationView) });
+});
+
+app.post('/api/conversations', async c => {
+  const input = parse(conversationSchema, await c.req.json());
+  const owner = c.get('user').id;
+  const gateway = await ownedGateway(c.env, owner, input.gatewayId);
+  const id = crypto.randomUUID();
+  const sessionId = `rio_${id.replaceAll('-', '')}`;
+  const result = await hermesJson(c.env, gateway, '/api/sessions', { method: 'POST', body: { id: sessionId } });
+  const session = z.object({ session: z.object({ id: z.string() }) }).parse(result).session;
+  if (session.id !== sessionId) throw new AppError(502, 'SESSION_MISMATCH', 'The gateway returned an unexpected session.');
+  const now = new Date().toISOString();
+  await c.env.DB.prepare('INSERT INTO conversations (id, owner_id, gateway_id, session_id, title, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)')
+    .bind(id, owner, gateway.id, sessionId, input.title ?? 'A new conversation', now, now).run();
+  return c.json({ conversation: conversationView(await ownedConversation(c.env, owner, id)) }, 201);
+});
+
+app.get('/api/conversations/:id', async c => {
+  const owner = c.get('user').id;
+  const conversation = await ownedConversation(c.env, owner, c.req.param('id'));
+  const gateway = await ownedGateway(c.env, owner, conversation.gateway_id);
+  const data = await hermesJson(c.env, gateway, `/api/sessions/${encodeURIComponent(conversation.session_id)}/messages?limit=200&order=latest`);
+  const rows = z.array(z.object({ id: z.union([z.string(), z.number()]).optional(), role: z.string(), content: z.unknown() })).parse(data.data);
+  const messages: Message[] = [];
+  for (const [index, row] of rows.entries()) {
+    if (row.role !== 'user' && row.role !== 'assistant') continue;
+    const content = typeof row.content === 'string' ? row.content : Array.isArray(row.content) ? row.content.flatMap(part => {
+      const parsed = z.object({ type: z.literal('text'), text: z.string() }).safeParse(part);
+      return parsed.success ? [parsed.data.text] : [];
+    }).join('\n') : '';
+    if (content) messages.push({ id: String(row.id ?? `${conversation.id}:${index}`), role: row.role, content });
+  }
+  return c.json({ conversation: conversationView(conversation), messages });
+});
+
+app.post('/api/conversations/:id/runs', async c => {
+  const input = parse(runSchema, await c.req.json());
+  const owner = c.get('user').id;
+  const conversation = await ownedConversation(c.env, owner, c.req.param('id'));
+  const gateway = await ownedGateway(c.env, owner, conversation.gateway_id);
+  const hash = await fingerprint(input.input);
+  let run = await c.env.DB.prepare('SELECT * FROM runs WHERE conversation_id = ? AND request_id = ? AND owner_id = ?').bind(conversation.id, input.requestId, owner).first<RunRow>();
+  if (run) {
+    if (run.input_hash !== hash) throw new AppError(409, 'IDEMPOTENCY_CONFLICT', 'This request ID belongs to a different message.');
+    run = await admitRun(c.env, gateway, conversation, run);
+    return c.json({ run: runView(run, true) });
+  }
+  if (conversation.active_run_id) {
+    const active = await syncRun(c.env, gateway, conversation, await ownedRun(c.env, owner, conversation.active_run_id));
+    if (!terminalStatuses.includes(active.status)) throw new AppError(409, 'TASK_ALREADY_RUNNING', 'This conversation has a task in progress. Send a direction or stop it first.');
+  }
+  const id = crypto.randomUUID();
+  try {
+    await c.env.DB.prepare('INSERT INTO runs (id, owner_id, conversation_id, request_id, input_hash, pending_input, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)')
+      .bind(id, owner, conversation.id, input.requestId, hash, input.input, new Date().toISOString()).run();
+  } catch (error) {
+    const duplicate = await c.env.DB.prepare('SELECT * FROM runs WHERE conversation_id = ? AND request_id = ? AND owner_id = ?').bind(conversation.id, input.requestId, owner).first<RunRow>();
+    if (duplicate) {
+      if (duplicate.input_hash !== hash) throw new AppError(409, 'IDEMPOTENCY_CONFLICT', 'This request ID belongs to a different message.');
+      return c.json({ run: runView(await admitRun(c.env, gateway, conversation, duplicate), true) });
+    }
+    if (String(error).includes('UNIQUE constraint')) throw new AppError(409, 'TASK_ALREADY_RUNNING', 'This conversation already has a task in progress.');
+    throw error;
+  }
+  run = await admitRun(c.env, gateway, conversation, await ownedRun(c.env, owner, id));
+  return c.json({ run: runView(run, false) }, 201);
+});
+
+app.get('/api/runs/:id', async c => {
+  const owner = c.get('user').id;
+  const run = await ownedRun(c.env, owner, c.req.param('id'));
+  const conversation = await ownedConversation(c.env, owner, run.conversation_id);
+  const gateway = await ownedGateway(c.env, owner, conversation.gateway_id);
+  const synced = await syncRun(c.env, gateway, conversation, run);
+  return c.json({ run: { ...runView(synced), ...(synced.approval ? { approval: synced.approval } : {}) } });
+});
+
+app.get('/api/runs/:id/events', async c => {
+  const owner = c.get('user').id;
+  let run = await ownedRun(c.env, owner, c.req.param('id'));
+  const conversation = await ownedConversation(c.env, owner, run.conversation_id);
+  const gateway = await ownedGateway(c.env, owner, conversation.gateway_id);
+  run = await admitRun(c.env, gateway, conversation, run);
+  const claim = await c.env.DB.prepare('UPDATE runs SET events_claimed = 1 WHERE id = ? AND owner_id = ? AND events_claimed = 0 RETURNING id').bind(run.id, owner).first();
+  if (!claim) throw new AppError(409, 'STREAM_ALREADY_CONSUMED', 'This task’s live stream has already been opened. Its status and history remain available.');
+  const response = await hermes(c.env, gateway, `/v1/runs/${run.hermes_id}/events`, { signal: c.req.raw.signal });
+  if (!response.headers.get('Content-Type')?.includes('text/event-stream')) {
+    await response.body?.cancel();
+    throw new AppError(502, 'STREAM_INVALID', 'The gateway did not return a live event stream.');
+  }
+  return new Response(response.body, { headers: { 'Content-Type': 'text/event-stream; charset=utf-8', 'Cache-Control': 'no-store', 'X-Accel-Buffering': 'no' } });
+});
+
+app.post('/api/runs/:id/:action', async c => {
+  const action = c.req.param('action');
+  if (!['stop', 'steer', 'approval'].includes(action)) throw new AppError(404, 'ACTION_NOT_FOUND', 'This task action does not exist.');
+  const body = action === 'steer' ? parse(steerSchema, await c.req.json()) : action === 'approval' ? parse(approvalSchema, await c.req.json()) : {};
+  const owner = c.get('user').id;
+  const run = await ownedRun(c.env, owner, c.req.param('id'));
+  const conversation = await ownedConversation(c.env, owner, run.conversation_id);
+  const gateway = await ownedGateway(c.env, owner, conversation.gateway_id);
+  const admitted = await admitRun(c.env, gateway, conversation, run);
+  if (action === 'stop') {
+    await hermesJson(c.env, gateway, `/v1/runs/${admitted.hermes_id}/stop`, { method: 'POST', body: {} });
+    await c.env.DB.prepare("UPDATE runs SET status = 'stopping' WHERE id = ? AND owner_id = ? AND status IN ('queued', 'running', 'waiting_for_approval', 'stopping')").bind(run.id, owner).run();
+    return c.json({ status: 'stopping' });
+  }
+  if (action === 'steer') {
+    await hermesJson(c.env, gateway, `/v1/runs/${admitted.hermes_id}/steer`, { method: 'POST', body });
+    return c.json({ accepted: true });
+  }
+  if (action === 'approval') {
+    const approval = parse(approvalSchema, body);
+    await hermesJson(c.env, gateway, `/v1/runs/${admitted.hermes_id}/approval`, { method: 'POST', body: { request_id: approval.requestId, choice: approval.choice } });
+    return c.json({ resolved: true });
+  }
+  throw new AppError(404, 'ACTION_NOT_FOUND', 'This task action does not exist.');
+});
+
+app.all('/api/*', () => { throw new AppError(404, 'NOT_FOUND', 'This endpoint does not exist.'); });
+app.get('*', c => c.env.ASSETS.fetch(c.req.raw));
+
+app.onError((error, c) => {
+  const known = error instanceof AppError ? error : error instanceof SyntaxError ? new AppError(400, 'INVALID_JSON', 'Send a valid JSON request.') : new AppError(500, 'INTERNAL_ERROR', 'Something went wrong. Your conversation is preserved; try refreshing its status.');
+  if (known.status >= 500) console.error(JSON.stringify({ event: 'request.failed', requestId: c.get('requestId'), code: known.code, errorType: error.name }));
+  return c.json({ error: { code: known.code, message: known.message, requestId: c.get('requestId') } }, known.status);
+});
+
+export default app;

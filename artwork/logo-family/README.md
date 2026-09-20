@@ -246,3 +246,13 @@ opaque pixels and native placement. Repeatable light/dark textures are separate
 authored support graphics; wordmarks reuse licensed outlines. The old v1 SVG
 kit and its source adoption stay intact. Snail adoption of v2 remains separate;
 see [the handoff guide](../../docs/18-snail-brand.md).
+
+## Rio — colorful macaw, 2026-09-20
+
+[Study 01 / finishing 01](rio/2026-09-20-01/review.html) introduces a handsome
+scarlet macaw, connected colorful facets, an offset portrait and one drifting
+feather. The owner delegated raw acceptance and requested the source root
+Logo first. Exact source adoption is `f4edf15`; transparent, square and rounded
+masters, all ten sizes and the separate rainforest paper field are retained.
+The campaign kit is 1.0.0; the owner accepted its local dev preview and
+authorized publication. See [the onboarding record](../../docs/32-rio-onboarding.md).
