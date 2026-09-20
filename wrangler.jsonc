@@ -1,6 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "hexly-ai",
+	"preview_urls": false,
 	"compatibility_date": "2026-09-06",
 	"main": "worker/gateway.ts",
 	"assets": {
@@ -24,7 +25,7 @@
 			"migrations_dir": "migrations"
 		}
 	],
-	"workers_dev": true,
+	"workers_dev": false,
 	"dev": { "ip": "127.0.0.1", "port": 37048 },
 	"observability": { "enabled": true },
 	"env": {

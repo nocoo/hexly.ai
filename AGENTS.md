@@ -96,7 +96,7 @@ Daily `bun run dev` builds the target manifest, migrates/seeds local SQLite and 
 ## Operations / Release
 
 Authorized maintainers use `bun run release` from clean `main` (patch/minor/major/explicit version; `-- --dry-run` is read-only). It updates version/changelog, pushes main, waits for matching quality and Deploy jobs, verifies production, then creates the annotated tag/Release. Trusted CI triggers D1 migrations before deployment; normal publication follows that path.
-Check `https://hexly.ai` and `https://status.hexly.ai` with `bun run verify:production`; preview Workers URLs remain noindex. Preserve immutable tags and the documented, completed history-reduction maps. Details: [release](docs/05-release.md), [recovery](docs/23-git-history-recovery.md), [maintenance](docs/29-project-maintenance.md).
+Check `https://hexly.ai` and `https://status.hexly.ai` with `bun run verify:production`; workers.dev and preview URLs remain disabled. Preserve immutable tags and the documented, completed history-reduction maps. Details: [release](docs/05-release.md), [recovery](docs/23-git-history-recovery.md), [maintenance](docs/29-project-maintenance.md).
 
 ## Retrospective
 
