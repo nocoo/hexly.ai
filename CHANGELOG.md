@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.0] - 2026-09-20
+
+### Documentation
+
+- align bilingual project readmes ([5cb60cb](https://github.com/nocoo/hexly.ai/commit/5cb60cb0e5ee9d4c93ba97100f6bc3bc244ef209))
+- use agents and system0 standards ([19811a7](https://github.com/nocoo/hexly.ai/commit/19811a72c294c68c95223371df4c0ba46f9ab8eb))
+
+### Fixes
+
+- describe delegated identity approval ([eaa6724](https://github.com/nocoo/hexly.ai/commit/eaa6724806f0636dbf36b2e564eb876ea36b6222))
+
+### Features
+
+- onboard rio with colorful macaw identity ([0de5304](https://github.com/nocoo/hexly.ai/commit/0de530445e27f18327dcff7625a227c19bb71ef7))
+
+### Maintenance
+
+- prepare version 1.0.0 ([654e156](https://github.com/nocoo/hexly.ai/commit/654e1561b5f5003cb193d3e0189feef6ad6bd6f4))
+
 ## [0.15.4] - 2026-09-19
 
 ### Features
