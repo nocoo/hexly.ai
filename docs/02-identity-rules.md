@@ -153,7 +153,7 @@ typography. Snail's published v1/v2 files keep their original schema and bytes.
 
 ## Profile maintenance reference
 
-The canonical maintenance skill is `workflow/agents/skills/zhengli-update-github-readme/SKILL.md`, with a reference entry in `nocoo/skills/zhengli-update-github-readme/SKILL.md`. The metadata convention is also recorded in nmem: `e42a5dde-192d-495f-bc21-4d303cabeb3a`.
+The canonical maintenance skill is `workflow/agents/skills/system0-github-profile/SKILL.md`, with a reference entry in `nocoo/skills/system0-github-profile/SKILL.md`. The metadata convention is also recorded in nmem: `e42a5dde-192d-495f-bc21-4d303cabeb3a`.
 
 Every GitHub-profile project update must also update the corresponding entry in this site's catalogue, logo backup, palette, and generated project profile. Preserve unrelated profile entries and existing asset provenance. Record the profile commit before referencing it in a new catalogue entry, and run the asset and documentation generators followed by the relevant quality gates.
 

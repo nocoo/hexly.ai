@@ -36,7 +36,7 @@ Faster Whisper skill, Task Notifier skill, MCP Work History, MCP Make Sound and
 JSInst. Other completed but unreviewed raw images remain historical evidence and
 are not adopted. Prepared archived replacement prompts remain unexecuted.
 
-This is also the standing maintenance rule in `CLAUDE.md`: all batch enrichment,
+This is also the standing maintenance rule in `AGENTS.md`: all batch enrichment,
 redesign and new brand/media creation excludes archived projects by default.
 They retain basic page, link, download, license/provenance and shared compatibility
 support. Do not fill their gaps or expand their presentation unless the owner

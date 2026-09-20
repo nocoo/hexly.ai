@@ -17,7 +17,7 @@ names, fake local database IDs, no routes or Cron triggers, and modes that disab
 public probes. `check:isolation` rejects inherited production settings and
 unreviewed remote bindings. All CLI fixtures use `--local`.
 
-The required contract is [CLAUDE.md](../CLAUDE.md). Current HTTP/browser persistence is fixed per lane, and the runner does not enforce a per-run `_test_marker` before all fixture resets and cleanup. Fresh per-run paths and those guards remain planned; existing local-only checks do not certify the entire isolation requirement. No remote `-test` resources are required.
+The required contract is [AGENTS.md](../AGENTS.md). Current HTTP/browser persistence is fixed per lane, and the runner does not enforce a per-run `_test_marker` before all fixture resets and cleanup. Fresh per-run paths and those guards remain planned; existing local-only checks do not certify the entire isolation requirement. No remote `-test` resources are required.
 
 L1 coverage includes executable model logic, release policy, and isolation rules.
 Status Worker tests exercise bounded probes with fake HTTP responses and real

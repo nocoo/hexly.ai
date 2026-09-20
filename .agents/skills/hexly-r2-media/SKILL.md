@@ -5,7 +5,7 @@ description: Publish and maintain Hexly project materials in the hexlyai R2 buck
 
 # Hexly R2 materials
 
-Read `CLAUDE.md`, [the execution/recovery plan](../../../docs/20-r2-assets-execution.md)
+Read `AGENTS.md`, [the execution/recovery plan](../../../docs/20-r2-assets-execution.md)
 and [the material contract](../../../docs/21-asset-storage.md). The owner authorized
 R2 migration, publication, then Git history reduction on 2026-09-13. This replaces
 the older instruction to retain all binary materials in Git/Workers Static Assets.
