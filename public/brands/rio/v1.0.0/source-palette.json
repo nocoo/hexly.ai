@@ -1,0 +1,145 @@
+{
+	"project": "rio",
+	"study": "2026-09-20-01",
+	"finishing": "01",
+	"nativeSource": {
+		"path": "raw/generated.png",
+		"sha256": "c26999e638b0a2521c96af045156654c15fbaa112dd1b9411421b9b72fbdee6d",
+		"width": 2048,
+		"height": 2048
+	},
+	"artworkSamples": [
+		{
+			"label": "Scarlet chest",
+			"zh": "绯红胸羽",
+			"x": 900,
+			"y": 900,
+			"rgb": [227, 3, 37],
+			"hex": "#e30325",
+			"alpha": 255
+		},
+		{
+			"label": "Coral crown",
+			"zh": "珊瑚冠羽",
+			"x": 600,
+			"y": 500,
+			"rgb": [253, 71, 33],
+			"hex": "#fd4721",
+			"alpha": 255
+		},
+		{
+			"label": "Ivory cheek",
+			"zh": "象牙色面颊",
+			"x": 850,
+			"y": 450,
+			"rgb": [249, 229, 206],
+			"hex": "#f9e5ce",
+			"alpha": 255
+		},
+		{
+			"label": "Emerald wing",
+			"zh": "翠绿翼羽",
+			"x": 500,
+			"y": 1500,
+			"rgb": [56, 133, 84],
+			"hex": "#388554",
+			"alpha": 255
+		},
+		{
+			"label": "Turquoise wing",
+			"zh": "青绿翼羽",
+			"x": 550,
+			"y": 1800,
+			"rgb": [31, 170, 161],
+			"hex": "#1faaa1",
+			"alpha": 255
+		},
+		{
+			"label": "Golden feather",
+			"zh": "金黄羽毛",
+			"x": 1760,
+			"y": 540,
+			"rgb": [253, 221, 54],
+			"hex": "#fddd36",
+			"alpha": 255
+		},
+		{
+			"label": "Cobalt feather",
+			"zh": "钴蓝羽毛",
+			"x": 1800,
+			"y": 620,
+			"rgb": [1, 71, 191],
+			"hex": "#0147bf",
+			"alpha": 255
+		},
+		{
+			"label": "Dark eye",
+			"zh": "深色眼睛",
+			"x": 970,
+			"y": 420,
+			"rgb": [31, 24, 27],
+			"hex": "#1f181b",
+			"alpha": 255
+		}
+	],
+	"presentation": {
+		"recipe": "presentation.json",
+		"colors": {
+			"base": "#edd3c5",
+			"light": "#fff0df",
+			"shade": "#dbb7a8",
+			"motif": "#a46f5c",
+			"grainAmplitude": 1,
+			"grainSeed": 60920,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.15,
+			"status": "Authored rainforest-leaf presentation; separate from the Rio application theme.",
+			"pattern": {
+				"name": "Rio — rainforest palm and heliconia leaf relief",
+				"layers": [
+					{
+						"d": "M-55 422C3 213 113 82 339 -61 M2 267C20 148 39 86 91 19 M43 215C83 118 125 52 182 -4 M94 159C153 70 221 15 279 -24 M0 281C91 210 171 193 229 187 M43 218C137 145 215 126 284 130 M96 159C179 92 260 76 326 82",
+						"tone": "motif",
+						"strokeWidth": 3
+					},
+					{
+						"d": "M-34 436C16 255 131 93 347 -46 M15 271C110 202 175 191 237 197 M54 211C149 143 225 133 292 141",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M1017 988C930 843 920 700 965 550C1000 435 1003 323 958 211 M961 556C854 520 826 446 852 374C924 405 960 467 961 556Z M982 436C1057 378 1078 320 1061 258C1005 293 980 359 982 436Z M944 728C841 691 806 629 819 558C892 583 937 647 944 728Z M961 872C1025 819 1045 756 1032 698C982 729 955 799 961 872Z",
+						"tone": "motif",
+						"strokeWidth": 2.5
+					},
+					{
+						"d": "M966 549L859 388 M946 721L827 572 M984 432L1053 273 M965 865L1026 713",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M849 375C851 449 889 512 958 551C923 469 902 425 849 375 M819 560C822 632 869 695 942 723C919 643 881 593 819 560",
+						"tone": "ribbon"
+					}
+				]
+			}
+		}
+	},
+	"applicationTheme": {
+		"revision": "371b2042f3d6e42b290956036a8b52d9dcc14659",
+		"path": "src/styles.css",
+		"primary": {
+			"value": "#143b35",
+			"source": "src/styles.css --accent at 371b2042f3d6e42b290956036a8b52d9dcc14659; preserved application token"
+		},
+		"background": {
+			"value": "#f3f1ec",
+			"source": "src/styles.css --paper at 371b2042f3d6e42b290956036a8b52d9dcc14659; preserved application token"
+		},
+		"ink": {
+			"value": "#102d30",
+			"source": "src/styles.css --ink at 371b2042f3d6e42b290956036a8b52d9dcc14659; preserved application token"
+		}
+	}
+}

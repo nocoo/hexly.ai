@@ -1,0 +1,455 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "rio",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-20",
+	"canonical": "https://hexly.ai/projects/rio#brand",
+	"root": "https://hexly.ai/brands/rio/v1.0.0",
+	"source": "artwork/brands/rio/v1.0.0",
+	"brandBaseline": "19811a72c294c68c95223371df4c0ba46f9ab8eb",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/rio-family-2026-09-20-01-01.png",
+		"export": "/brands/rio/v1.0.0/official-logo.png",
+		"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d",
+		"bytes": 3484953,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "9d29d40c5653a69488cbbaadc047898a68801110a24240bad3e289c98fee4410",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1670,
+			"left": 555
+		},
+		"sourceUrl": "https://github.com/nocoo/rio/blob/f4edf159fcc8e8d6469e1e49139f54cf8ca2b288/logo.png",
+		"sourceRepositoryRevision": "f4edf159fcc8e8d6469e1e49139f54cf8ca2b288",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/rio/2026-09-20-01/01/transparent.png",
+		"export": "/brands/rio/v1.0.0/logo.png",
+		"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d",
+		"bytes": 3484953,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "9d29d40c5653a69488cbbaadc047898a68801110a24240bad3e289c98fee4410",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 1670,
+			"left": 555
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "Source Logo adoption is recorded at f4edf159fcc8e8d6469e1e49139f54cf8ca2b288. Brand version 1.0.0 is independent of the product package version; kit assembly changes no runtime or product UI.",
+	"files": [
+		{
+			"path": "/brands/rio/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 71013,
+			"sha256": "3682632f2b794e3429860e52f05fa9236fa9edfed769faa1cd9837756c54c42e"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 165393,
+			"sha256": "bcdb4eeddc61f2528acbce9fe669132bdd9f792cee93bb1472a7b7e8d1853640"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 7046,
+			"sha256": "0a3c1242d5ffb80232e200f0e65ebebe95443b6331647a7d48ef27deabb2ad77"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1172144,
+			"sha256": "78cc7a96ca5d315ab5761ee6841235002873b04153aa543682c655975ec410df"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 89908,
+			"sha256": "9531b4a8da1c3f7c52ef018e477bdb4304db2370d35146beba7bcecb58bc9505"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 77538,
+			"sha256": "d0abacc8772e185f1e7e4d8bd2307c7f9a26a434b0309e9bf0b3e985174567c1"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 78094,
+			"sha256": "4adfb3dae175157c689925702db062b324301071b94d4d0ee33e87019b3dda76"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 1172696,
+			"sha256": "1d8c3b1f1a0ed6bfc698b146c0f373dcf6d0dcf32773b55b98e978a6d5c9ac47"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 90280,
+			"sha256": "e844243e8efd6e4e65381be6a8cda06d17a8966fdd33e864c00a84640f214425"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 86966,
+			"sha256": "fb1a1a318ec569104a80bcda3c115812d724395546f329153830f68a34cd7515"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 392131,
+			"sha256": "0ecf5c6766d26e6cf036d8874942cc63c3d0f60e70ddac093137af388524cc1d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no artwork recoloring",
+			"bytes": 3551866,
+			"sha256": "ee6850af70e6311bb9705c9ed39846617fd0c615bf14992b126f1e1948c6aa5c"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 482589,
+			"sha256": "eba3b0a1ceef1ed2969a8a330d9306cd923d5250ee1943d32f6d19f5001e8033"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 4783466,
+			"sha256": "b87187e7139e16ae8d4ad4f0be5db168f38d5dd1b11bc0ba8da5d187d31b77ed"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1801,
+			"sha256": "a10729b3c5c390b5683c0823e8c35d934bf640ff9715fc3585e142822381dc5d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 243853,
+			"sha256": "5dd062517a35cf3402aa6b7535fbbfc5e9ba84a800727847aa6f2e602a480aef"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 243682,
+			"sha256": "70eb8fd272cd95974dc3837fadf3813db06059fd010048b29adc7008143dfd59"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1183676,
+			"sha256": "4174ec60575f723e81d774d8614e226c766de4867554ec4769714da38e0b90b2"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 1183676,
+			"sha256": "4174ec60575f723e81d774d8614e226c766de4867554ec4769714da38e0b90b2"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 3484953,
+			"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1183676,
+			"sha256": "4174ec60575f723e81d774d8614e226c766de4867554ec4769714da38e0b90b2"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 32821,
+			"sha256": "f5a9cdf5a822bdd310c8e3361f367f7ea996657a83e24a8c902431e75056fd68"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 904,
+			"sha256": "e1d50fe69fa7d8ef36f2e7decb00ef2c75bcdc586453a777631693f0ced77c7e"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1697,
+			"sha256": "b219d141ac41d8ab771915669943713ce04974f10c1650abe6b25e01941e7d92"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 114128,
+			"sha256": "703e3ead80afab758db9519d91a19a4acc97a1fcad5c591027f2370cb3cf399c"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2748,
+			"sha256": "dc3a50c09c3dfa17166865d2336edcbfa2d541ae1fc1811582a068be242b3e0a"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5477,
+			"sha256": "cc9704cea71abc9abf697ac51587c72aa579a2cfd209d995cddc83c144b7da8c"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 384312,
+			"sha256": "cdcaca5fa97d05fb8348fc4630f8f5a2929691cd60e4aa0e7ae62a42b7c79cf9"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 9213,
+			"sha256": "f3305aa3098de8750d7caffde905719115620d7ac377d778041823499f2ab78c"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3484953,
+			"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 3484953,
+			"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 3484953,
+			"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/prompt.txt",
+			"role": "Exact approved identity generation prompt; kit assembly makes no new image-model call",
+			"bytes": 4612,
+			"sha256": "8249d27ed1d87b66ad94d725ca7338831bc71480f950f477e5ab5660aa530413"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 8862,
+			"sha256": "dc9c25ec9308fac5d81b55d3aae8442e5bdcf0b3ef6e19b638bc95d4d51050db"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 15212,
+			"sha256": "a88db5704d840c5b87125b7bcfde49ebcb5f066ca26a9d5c36593e81887f8949"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-authorization.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 549,
+			"sha256": "8e8320c53aa6595a88f58a3d0c4cf11e1fe5495a63d7138c5fc5a963eb44b6a8"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-finishing-01-manifest.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 10370,
+			"sha256": "7cf7c6edf1319cb75c9607e7245d3e29b9fe08ee1db9cd0e9109599e7e641afd"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-finishing-01-settings.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 2732,
+			"sha256": "df228c1c032ad47854a7e192c1ca94775a7e52400b9b2fd6fe3f439c8e769e3a"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-palette.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 3683,
+			"sha256": "ccd3bbcdf003cf80a5c4aded79c767b2c2605565ea258fbba79c2f8510f3d2d5"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-prompt.txt",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 4612,
+			"sha256": "8249d27ed1d87b66ad94d725ca7338831bc71480f950f477e5ab5660aa530413"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-raw-review.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 1422,
+			"sha256": "2e8e792fcb8eeb72ee494188035c394ac67d4d1f1d81d112b7a582f0cc656812"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-request.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 1323,
+			"sha256": "2d56ef6f0ffe3b6adce2544bb5b43e0486881ae2ad226b26038c2976bb265ab4"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-response.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 835,
+			"sha256": "0dd173d17d7d25635de9b7df30c5091ae92ab12615ed06a8f5d0df8a0d885f4b"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/source-verification.json",
+			"role": "Exact source record; not reformatted or reconstructed",
+			"bytes": 940,
+			"sha256": "b35330b099c290c75dd7c2a15775206c369a45228211ae77ec09a292c140bb64"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 13070,
+			"sha256": "0ee37a7186a20e9e7f1343d7b3e8a81260ca676ef2df8ea6f1bb62ce6d348dfa"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1415,
+			"sha256": "77eed91326ccb9c95b0f87fd457ce25552f5b8795de5427cc419bb80712c9e41"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 11379,
+			"sha256": "f5cee9e2d9fec01fe181969fc74ebc4bb745322e3eb95d66bcbd6593a29265c5"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 1416,
+			"sha256": "ce6da7dc3a833e0e76802483775d4ce54458e6273ba3f62c182658742a4d3b57"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 4488,
+			"sha256": "69e7c2b56667e8f64cea30dd5c1ff8f40f54edfa91f7a86438f7ac586a459f87"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 3281451,
+			"sha256": "58d6fda866c5cc101b01a113a23acad58f1a5624efe3fdf263081bc64ac95f53"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3832,
+			"sha256": "c7ec9591fafe550dae36dc6659267c7034ce02e9fa0de519a763284c5527c8e9"
+		},
+		{
+			"path": "/brands/rio/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3832,
+			"sha256": "c076adc91ab7ddfbe28d974dcc78d11a2ec45f150dc9db812be84dd4a8afdaaa"
+		}
+	]
+}

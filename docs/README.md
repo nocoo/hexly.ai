@@ -38,4 +38,6 @@
 
 36. [Eagle onboarding and README/sidebar adoption](31-eagle-onboarding.md)
 
+37. [Rio onboarding and colorful macaw identity](32-rio-onboarding.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

@@ -1,0 +1,26 @@
+.comparison-grid {
+	grid-template-columns: minmax(0, 1fr);
+	max-width: 720px;
+	margin-inline: auto;
+}
+.swatches button,
+.alpha-grid > div {
+	min-width: 0;
+}
+.swatches small {
+	overflow-wrap: anywhere;
+}
+.edge-well img,
+.reference-grid img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.edge-light {
+	background: #f0f0e9;
+	border-radius: 18px;
+}
+.edge-dark {
+	background: #101110;
+	border-radius: 18px;
+}
