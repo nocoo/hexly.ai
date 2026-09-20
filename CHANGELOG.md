@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1] - 2026-09-20
+
+### Fixes
+
+- disable worker default and preview urls ([0ac7d54](https://github.com/nocoo/hexly.ai/commit/0ac7d54907af7d45f22549e87a91c0c6e19f07fb))
+- route health probes through public ingress ([fc902ad](https://github.com/nocoo/hexly.ai/commit/fc902adc84b6e6978f4d9c6089ae557eba0ad465))
+
 ## [1.0.0] - 2026-09-20
 
 ### Documentation
