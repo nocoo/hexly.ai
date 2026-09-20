@@ -94,3 +94,19 @@ against the existing inventory. No published object or previous receipt changed.
 Only Rio's new card and identity materials enter this onboarding inventory.
 For later onboarding, preserve published social bytes before the global export
 and compare every existing hash before recording new material.
+
+## 2026-09-20: Rio's public Access audience triggered secret scanning
+
+The first v1.0.0 pre-push gate flagged `ACCESS_AUD` in Rio's archived Wrangler
+source configuration as `generic-api-key`, before any site push or deployment.
+Rio passes this identifier to `jose.jwtVerify` as the required JWT audience; it
+is not a signing key, service token or credential. Cloudflare's
+[JWT validation documentation](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/validating-json/)
+also uses the application AUD tag as the audience-validation parameter.
+
+The exception requires the exact snapshot path, field, complete identifier,
+line and rule together. It preserves scanning for other values in that file
+and for the same value outside the evidence path. Positive and negative
+synthetic checks verify those boundaries; the unchanged source snapshot and
+all published materials remain intact. No hook or default scanner rule is
+disabled.

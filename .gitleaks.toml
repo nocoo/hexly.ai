@@ -25,3 +25,11 @@ regexTarget = "match"
 # Keep the exception tied to this field, namespace, file and rule; credentials
 # elsewhere in the inventory and brand paths in other files remain scanned.
 regexes = ['''^key": "(?:brands|logos/family)/[a-z0-9-]+(?:/[A-Za-z0-9/_.-]*)?"?$''']
+
+[[allowlists]]
+description = "Rio's exact public Cloudflare Access JWT audience identifier"
+condition = "AND"
+targetRules = ["generic-api-key"]
+paths = ['''(^|/)artwork/logo-family/rio/2026-09-20-01/input/wrangler\.jsonc\.txt$''']
+regexTarget = "line"
+regexes = ['''^\s*"ACCESS_AUD":\s*"163761e9258c70919bb5f4044e5408152f7985e7eb08e2d39e6905bd9a0c8b29",?\s*$''']
