@@ -13,7 +13,7 @@ support only: preserve completed textures, existing pages/downloads and provenan
 but do not generate, replace or complete missing surfaces without an explicit
 owner exception for that archived project. Preserve unfinished source evidence
 without treating it as approved production art.
-Read [CLAUDE.md](../../../CLAUDE.md),
+Read [AGENTS.md](../../../AGENTS.md),
 [identity rules](../../../docs/02-identity-rules.md), the selected project's
 `src/data/projects/<id>.json` and actual `src/styles/base.css` tokens first.
 

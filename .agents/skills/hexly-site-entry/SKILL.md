@@ -7,7 +7,7 @@ description: Add or standardize the Hexly project-detail link in family website 
 
 Make the family entry part of a new project's website onboarding. Preserve the
 source product's own visual identity and use its existing controls. Read
-[the project contract](../../../CLAUDE.md), the selected catalogue record in
+[the project contract](../../../AGENTS.md), the selected catalogue record in
 `src/data/projects/<id>.json`, and the source repository's instructions first.
 
 ## Scope and destination

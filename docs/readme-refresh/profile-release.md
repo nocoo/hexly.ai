@@ -5,7 +5,7 @@
 ## 依据与范围
 
 - 发布规范：`../workflow/agents/commands/su-release.md`。Y 增加时 Z 归零；优先使用仓库已有 `scripts/release.ts`。本站当前为 0.4.6，目标 0.5.0。
-- Profile 维护：`../workflow/agents/skills/zhengli-update-github-readme/SKILL.md`。保留原有分区、项目内容与身份资料，并同步本站记录。
+- Profile 维护：[当时的维护 skill](https://github.com/nocoo/workflow/blob/7aa758a4471ba9ebc060f7dd3cbe6901537078a8/agents/skills/zhengli-update-github-readme/SKILL.md)（当前入口为 `system0-github-profile`）。保留原有分区、项目内容与身份资料，并同步本站记录。
 - 排序直接调用本站 `filterProjects` 的 curated 排序，使用 `src/data/project-order.json` 当前快照与稳定目录顺序，不重新采集 stars 或更改本站排序。
 - Recent Projects 为第一个项目区，Games 为第二个，其后仍为 CLI Tools、Skills & MCP Servers、Legacy Projects。各区内匹配项目按本站相对顺序排列。
 - hexly.ai 自身已从本站目录排除，Profile 仍保留此入口并放在 Recent Projects 开头。其他文案、链接、个人介绍、博客和既有重复入口原样保留。
