@@ -50,9 +50,9 @@ const snapshot: StatusSnapshot = {
 };
 
 describe("status coverage and navigation", () => {
-	it("includes the three deployed Hexly sites at their exact health paths", () => {
+	it("includes deployed Hexly sites at their exact health paths", () => {
 		const targets = statusTargets(readProjects());
-		for (const id of ["gecko", "neo", "wooly"]) {
+		for (const id of ["gecko", "neo", "wooly", "ocelot"]) {
 			expect(targets.filter((target) => target.id === id)).toEqual([
 				{ id, endpoint: `https://${id}.hexly.ai/api/live` },
 			]);
