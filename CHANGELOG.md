@@ -10,6 +10,7 @@
 ### Fixes
 
 - describe delegated identity approval ([eaa6724](https://github.com/nocoo/hexly.ai/commit/eaa6724806f0636dbf36b2e564eb876ea36b6222))
+- scope rio public audience scan exception ([8cbf9a2](https://github.com/nocoo/hexly.ai/commit/8cbf9a283c83c564bb26e71ba1f1dd0e3f0874c4))
 
 ### Features
 
