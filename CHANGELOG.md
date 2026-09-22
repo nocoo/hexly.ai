@@ -6,6 +6,10 @@
 
 - archive hermes on herdr ([2dff6d4](https://github.com/nocoo/hexly.ai/commit/2dff6d4e06daf9f285359f20510511620b41dad8))
 
+### Tests
+
+- update active catalogue archive count ([8d324b1](https://github.com/nocoo/hexly.ai/commit/8d324b1abb62ad6a29334e4cfa77ce14e12f6d33))
+
 ## [1.0.2] - 2026-09-20
 
 ### Fixes
