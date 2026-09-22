@@ -33,6 +33,10 @@ for (const project of targets) {
 		page.on("pageerror", (error) => errors.push(error.message));
 		await page.goto(`/?q=${encodeURIComponent(project.title)}`);
 		const link = page.locator(`[data-project="${project.id}"] .card-main`);
+		if (project.archived) {
+			await expect(link).toHaveCount(0);
+			await page.getByRole("button", { name: /^Archived/ }).click();
+		}
 		await expect(link).toHaveAttribute("href", `/projects/${project.id}`);
 		await link.click();
 		await expect(page.locator("#identity-title")).toContainText(project.title);

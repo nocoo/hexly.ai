@@ -110,3 +110,17 @@ and for the same value outside the evidence path. Positive and negative
 synthetic checks verify those boundaries; the unchanged source snapshot and
 all published materials remain intact. No hook or default scanner rule is
 disabled.
+
+## 2026-09-22: Archive status exposed active-only test assumptions
+
+Archiving Hermes on Herdr changed the active catalogue count and its default
+navigation category. Initial validation updated unit expectations but missed
+an HTTP count and a browser journey that searched only the active directory.
+The push gate caught the HTTP assertion; CI caught the desktop and mobile
+browser cases before deployment. The remaining 422 browser cases passed.
+
+The archive change preserves historical identity snapshots and all materials.
+The browser journey now checks that archived projects are absent from All,
+opens Archived, and exercises the same complete brand archive. Future archive
+changes should check catalogue counts, navigation and active-only browser
+entry points together before starting the full release pipeline.
