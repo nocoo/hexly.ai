@@ -60,14 +60,15 @@ bun run video:check
 
 ## Verification
 
-6DQ = L1/L2/L3 + G1/G2 + D1. Status: `enforced`, `planned`, `manual`, `N/A`.
+6DQ = unified L1 (absorbing former G1) + L2/L3 + G2 + D1. Status: `enforced`, `planned`, `manual`, `N/A`.
 
 | Dimension | Required proof | Status | Current enforcement / gap |
 |---|---|---|---|
-| L1 logic | Statements, branches, functions and lines each ≥95%; no skipped/focused tests | planned | CI runs coverage, but Vitest still gates at 90% on model/isolation/release logic; commit runs only affected tests without coverage |
+| L1 — complete unified contract | All four coverage metrics ≥95% plus strict static lanes on an installed index-snapshot hook with proven rejection, under 30s | planned | Coverage still gates at 90%, commit selects affected tests without coverage, static lanes run staged/working-tree, and snapshot scope/rejection/timing are unverified. The subcheck rows below describe what is configured today |
+| L1 subcheck — logic coverage | Statements, branches, functions and lines each ≥95%; no skipped/focused tests | planned | CI runs coverage, but Vitest still gates at 90% on model/isolation/release logic; commit runs only affected tests without coverage |
 | L2 HTTP | Real local HTTP over 100% of API endpoint/method combinations and built documents/assets | planned | Push/CI HTTP suite checks the built Worker; exhaustive method/surface enforcement still needs verification as routes evolve |
 | L3 UI | Critical desktop/mobile journeys, languages/themes, gallery and accessibility | enforced | Dedicated required CI Chromium job; browser configs reject focused tests and server reuse |
-| G1 static | Strict types and check-only lint, zero errors/warnings | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint |
+| L1 subcheck — static lanes (former G1) | Strict types and check-only lint, zero errors/warnings | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint; static lanes run staged/working-tree, so unified L1 is not snapshot-based |
 | G2 security | Dependency and secret scans; missing scanner fails | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges |
 | D1 isolation | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker | planned | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser use fixed per-lane directories and lack complete per-run/marker guarantees |
 | Assets / build | Checksums, profiles, immutable sources, real bundle and deploy dry run | enforced | CI asset/material guard, L2/L3 build and `deploy:check` |
@@ -75,10 +76,10 @@ bun run video:check
 
 | Hook | Current behavior | Required follow-up |
 |---|---|---|
-| pre-commit | Tracked-material guard, staged lint and changed unit tests in parallel; doc-only changes can select no tests | G1+L1 with coverage on index snapshot, <30s |
+| pre-commit | Tracked-material guard, staged lint and changed unit tests in parallel; doc-only changes can select no tests | Unified L1 (coverage plus static lanes) on the index snapshot, <30s |
 | pre-push | L2 HTTP and G2 in parallel against working-tree files/history | Validate commits named by stdin push refs, <3min |
 
-Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. CI pins shared workflows at `ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f`. Scope, browser clocks, Wrangler retry patch and failure evidence: [quality guide](docs/03-quality.md).
+Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI pins shared workflows at `ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f`. Scope, browser clocks, Wrangler retry patch and failure evidence: [quality guide](docs/03-quality.md).
 
 ## Resources / Isolation
 
