@@ -106,8 +106,14 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(59);
-		expect(counts.archive).toBe(20);
+		expect(counts.all).toBe(58);
+		expect(counts.archive).toBe(21);
+		expect(
+			filterProjects(projects, "hermes", "all").map((p) => p.id),
+		).not.toContain("hermes-on-herdr");
+		expect(
+			filterProjects(projects, "hermes", "archive").map((p) => p.id),
+		).toEqual(["hermes-on-herdr"]);
 		expect(counts.skills).toBe(1);
 		expect(filterProjects(projects, "", "skills").map((p) => p.id)).toEqual([
 			"diorama-journey",

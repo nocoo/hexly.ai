@@ -45,13 +45,14 @@ describe("complete Hexly campaign archives", () => {
 			inventory.projects.filter((p) => p.id !== "snail").map((p) => p.id),
 		);
 		expect(targets).toHaveLength(54);
-		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(54);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(59);
-		expect(projects.filter((p) => p.archived)).toHaveLength(20);
+		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(53);
+		expect(projects.filter((p) => !p.archived)).toHaveLength(58);
+		expect(projects.filter((p) => p.archived)).toHaveLength(21);
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
 			const { brandTexture, ...beforeTextures } = p;
 			const { brandKit, ...original } = beforeTextures;
+			if (p.id === "hermes-on-herdr") original.archived = false;
 			// These websites were connected after the frozen brand baseline.
 			// Their current endpoints are independently asserted in status.test.ts.
 			if (["ellie", "life-ai", "ocelot"].includes(p.id)) {

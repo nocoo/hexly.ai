@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: No; [repository status evidence](../../docs/sources/hermes-on-herdr-2026-09-12.json)
+- Archived repository: Yes; [repository status evidence](../../docs/sources/hermes-on-herdr-2026-09-12.json)
 - English: Run Hermes in Herdr with optional monitoring
 - Chinese: 在 Herdr 中运行 Hermes，按需打开监控面板
 - Profile section: Recent Projects
@@ -151,8 +151,6 @@ Unequal pane outlines and one returning route form a shallow relief on pale blue
 
 Small-size observation: At 128/64 px, the brass frame, enamel door and terminal prompt remain readable. At 32/24/16 px, the door silhouette and brass-blue contrast carry recognition; hinges, lens and inlay detail merge. Sidebar and browser specimens demonstrate scale; the source currently supplies a CLI and development manifest.
 
-## Further refinements
+## Archive maintenance
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.
