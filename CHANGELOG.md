@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3] - 2026-09-22
+
+### Maintenance
+
+- archive hermes on herdr ([2dff6d4](https://github.com/nocoo/hexly.ai/commit/2dff6d4e06daf9f285359f20510511620b41dad8))
+
 ## [1.0.2] - 2026-09-20
 
 ### Fixes
