@@ -42,11 +42,12 @@ describe("independent campaign textures", () => {
 		expect(baselineProjects.filter((p) => p.brandTexture)).toHaveLength(
 			scope.expectedNewPackCount,
 		);
-		expect(projects.filter((p) => p.archived)).toHaveLength(20);
+		expect(projects.filter((p) => p.archived)).toHaveLength(21);
 		for (const project of baselineProjects) {
 			const row = baseline.projects.find((p) => p.id === project.id);
 			if (!row) throw new Error(project.id);
 			const { brandTexture: _texture, ...preserved } = project;
+			if (project.id === "hermes-on-herdr") preserved.archived = false;
 			// Status onboarding postdates this texture snapshot.
 			// Keep checking all original identity fields against the frozen record.
 			if (["ellie", "life-ai", "ocelot"].includes(project.id)) {
@@ -84,7 +85,9 @@ describe("independent campaign textures", () => {
 		];
 		const plan = spawnSync("python3", args, { encoding: "utf8" });
 		expect(plan.status, plan.stderr).toBe(0);
-		expect(JSON.parse(plan.stdout).projects).toEqual(scope.activeProjectIds);
+		expect(JSON.parse(plan.stdout).projects).toEqual(
+			scope.activeProjectIds.filter((id) => id !== "hermes-on-herdr"),
+		);
 		const archived = spawnSync("python3", [...args, "--project", "infoviz"], {
 			encoding: "utf8",
 		});

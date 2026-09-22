@@ -93,7 +93,7 @@ describe("shareable directory navigation", () => {
 		expect(navigationPath(parse("/frogie"))).toBe("/projects/frogie");
 		expect(navigationPath(parse("/projects"))).toBe("/");
 		expect(navigationPath(parse("/logos/hermes-gateway-herdr"))).toBe(
-			"/projects/hermes-on-herdr#brand",
+			"/projects/hermes-on-herdr?category=archive#brand",
 		);
 		expect(navigationPath(parse("/logos/frogie", "", "#overview"))).toBe(
 			"/projects/frogie#overview",
