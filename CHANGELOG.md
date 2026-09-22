@@ -9,6 +9,7 @@
 ### Tests
 
 - update active catalogue archive count ([8d324b1](https://github.com/nocoo/hexly.ai/commit/8d324b1abb62ad6a29334e4cfa77ce14e12f6d33))
+- browse archived brand collections ([589e683](https://github.com/nocoo/hexly.ai/commit/589e683ce8b943515992e94361038e7e9003e09b))
 
 ## [1.0.2] - 2026-09-20
 
