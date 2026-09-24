@@ -3,6 +3,7 @@ import { assetUrl } from "./assets";
 import { projectTexture } from "./brand";
 import { isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
+import { projectApiPath, projectApiPrompt } from "./project-api";
 import { siteOrigin } from "./routes";
 import { healthEndpoint } from "./status";
 import { findVideo, videoManifest } from "./videos";
@@ -58,6 +59,11 @@ export function agentGuide(
 	const instructions: string[] = [];
 	let title = "Hexly project catalogue";
 	if (project) {
+		instructions.push(projectApiPrompt(project, locale));
+		resources.push({
+			label: "Single-project identity API",
+			href: `${siteOrigin}${projectApiPath(project)}`,
+		});
 		title = `${project.title} — project and identity`;
 		instructions.push(
 			project.description.en,

@@ -40,4 +40,6 @@
 
 37. [Rio onboarding and colorful macaw identity](32-rio-onboarding.md)
 
+38. [Single-project identity API and integration preview](33-project-api.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

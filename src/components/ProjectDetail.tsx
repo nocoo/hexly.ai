@@ -21,6 +21,7 @@ import { BrandHero } from "./BrandKit";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { LogoReview } from "./LogoReview";
+import { ProjectApi } from "./ProjectApi";
 import { ProjectMedia } from "./ProjectMedia";
 import { ProjectOverview } from "./ProjectOverview";
 import { SearchField } from "./SearchField";
@@ -125,7 +126,7 @@ export function ProjectDetail({
 				target instanceof HTMLElement &&
 				(target.isContentEditable ||
 					target.closest(
-						"input, textarea, select, video, .project-media, .agent-region, .identity-archive",
+						"input, textarea, select, video, .project-media, .project-api, .agent-region, .identity-archive",
 					))
 			)
 				return;
@@ -302,6 +303,7 @@ export function ProjectDetail({
 								<AssetLink href="#overview">{t.overview}</AssetLink>
 							)}
 							<AssetLink href="#brand">{t.brand}</AssetLink>
+							<AssetLink href="#api">API</AssetLink>
 						</div>
 						<AssetLink
 							className="project-template-link"
@@ -334,6 +336,7 @@ export function ProjectDetail({
 						anchor={state.anchor}
 					/>
 					<ProjectOverview project={project} locale={locale} />
+					<ProjectApi key={project.id} project={project} locale={locale} />
 					<section
 						id="brand"
 						className="project-brand"
