@@ -1,8 +1,8 @@
 {
-	"status": "pending",
+	"status": "rejected",
 	"imageSha256": "8daa5cb7e6044242a7396490550baa40f86aa2539686a4e89f220afe1404657c",
 	"recordedAt": "2026-09-24T22:27:53.248966+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
+	"nextStep": "Preserve this rejected raw unchanged. Generate a fresh head-focused, strongly off-center study with minimal direction.",
 	"agentInspection": {
 		"method": "Viewed the untouched native image",
 		"observations": [
@@ -13,5 +13,8 @@
 		],
 		"processingPerformed": false
 	},
-	"ownerReviewedExactBytes": false
+	"ownerReviewedExactBytes": true,
+	"decisionSource": "owner",
+	"decidedAt": "2026-09-24T22:59:33.106374+00:00",
+	"ownerFeedback": "均不通过，身子比例过大，没有足够的偏心设计。需要聚焦头部，避免各种鸟类区分不开。需要仔细理解偏心设计的精髓，你不要干涉过多，指出动物，头部，偏心，多彩和碎片化风格即可。"
 }
