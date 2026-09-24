@@ -142,3 +142,10 @@ The browser accessibility check also caught a bounded JSON preview rendered as
 a non-focusable preformatted block. Native read-only textareas now provide
 keyboard scrolling and selection for both JSON and integration prompts, without
 suppressing static accessibility rules. Keep the expanded preview in Axe checks.
+
+The full gallery journey then caught a layout regression: inserting the
+asynchronously loaded API preview before the brand archive moved the brand
+anchor after keyboard project navigation. The API section now follows the
+complete brand archive, preserving its established anchor position. Keep
+asynchronous integration content downstream of existing stable navigation
+targets and retain the desktop/mobile anchor-alignment journey.

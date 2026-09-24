@@ -82,7 +82,7 @@ returned logo against the R2 inventory. `worker/project-api.ts` owns HTTP policy
 and caching. `bun run dev` proxies `/api/projects` to the daily local Worker;
 restart it after catalogue changes to rebuild its assets.
 
-Each project detail has an `#api` section with a real same-origin request, compact
+Each project detail has an `#api` section after the brand archive, with a real same-origin request, compact
 card preview, expandable logo/JSON views, request copying, and a copyable English
 agent prompt selecting the page's description language. Existing project Markdown
 agent guides include the same instructions. Loading, error/retry, project changes,
