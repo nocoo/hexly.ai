@@ -42,4 +42,6 @@
 
 38. [Single-project identity API and integration preview](33-project-api.md)
 
+39. [Falcon and Kite onboarding and first bird identities](34-falcon-kite-onboarding.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

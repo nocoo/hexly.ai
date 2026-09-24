@@ -1,5 +1,11 @@
 # Source snapshots
 
+The [Falcon intake](falcon-2026-09-25.json) and [Kite intake](kite-2026-09-25.json)
+preserve inspected local design/research documents and their exact hashes.
+Public source revisions remain null while the inspected work is unpublished.
+See [the onboarding record](../34-falcon-kite-onboarding.md) for the first bird
+identities, current implementation boundaries and local dev-review scope.
+
 The [Eagle intake](eagle-2026-09-19.json) records the animal identity, source adoption, Basalt palette and public service evidence. Its [profile snapshot](nocoo-readme-2026-09-19-eagle.md) preserves the matching first Recent Projects entry.
 
 The [Diorama Journey intake](diorama-journey-2026-09-17.json) records the public skill, source and profile revisions, original example theme and emoji identity. Its [profile snapshot](nocoo-readme-2026-09-17-diorama-journey.md) places the skill first in Skills & MCP Servers. The GitHub Pages example is a distribution demo; the skill has no independent monitored service.
