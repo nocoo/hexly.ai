@@ -1,7 +1,7 @@
 # Falcon and Kite onboarding
 
 Status: The owner rejected both first native images for oversized bodies and
-weak off-center composition. New head-focused requests use minimal direction.
+weak off-center composition. Both new head-focused outputs have returned and are open in Chrome for review.
 Raw acceptance, finishing, catalogue integration and complete dev review remain
 pending. No production release or source-application release is claimed.
 
@@ -95,6 +95,16 @@ too similar. Exact feedback is preserved beside both rejected hashes.
 The next studies are Falcon `2026-09-25-03` and Kite `2026-09-25-02`. Their prompts
 are 88 and 90 words respectively, including reference roles and output format.
 Neither rejected image is supplied as an identity reference for the new request.
+
+| Project | Head study | Native source SHA-256 | Current decision |
+| --- | --- | --- | --- |
+| Falcon | `2026-09-25-03` | `2d4fd9e0f5abffc0dcebcd2e4880f685897ffc5137304b6d579f282faf110ca7` | Pending owner confirmation |
+| Kite | `2026-09-25-02` | `417279a8e8a0901b22dc42fe38c7eee3a6b090c67617fceaf7b2d312b45047e9` | Pending owner confirmation |
+
+Both are native 2048-square images with pronounced opposing edge-entry
+composition. Both use open beaks and restrained multicolor, with no separately
+generated external accent. The simplified owner direction supersedes earlier
+accessory prescriptions. No extraction or derivatives have been made.
 
 ## Local delivery and publication boundary
 
