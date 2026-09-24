@@ -336,7 +336,6 @@ export function ProjectDetail({
 						anchor={state.anchor}
 					/>
 					<ProjectOverview project={project} locale={locale} />
-					<ProjectApi key={project.id} project={project} locale={locale} />
 					<section
 						id="brand"
 						className="project-brand"
@@ -413,6 +412,7 @@ export function ProjectDetail({
 							</div>
 						</div>
 					</section>
+					<ProjectApi key={project.id} project={project} locale={locale} />
 				</section>
 			) : (
 				<div className="empty-state gallery-empty">
