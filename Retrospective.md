@@ -124,3 +124,21 @@ The browser journey now checks that archived projects are absent from All,
 opens Archived, and exercises the same complete brand archive. Future archive
 changes should check catalogue counts, navigation and active-only browser
 entry points together before starting the full release pipeline.
+
+## 2026-09-24 — Verify API logo variants against published inventory
+
+The first identity API projection assumed every archived brand package contained
+a 1024px transparent PNG. The build's inventory guard rejected three nonexistent
+paths before publication. These packages already have a 1024px transparent WebP
+and native foreground assets, so the API now uses the shared PNG sizes through
+512px and returns those existing larger files separately.
+
+A naming convention is not evidence that an immutable export exists. Keep the
+build-time inventory check for every returned logo URL, and verify dimensions
+and alpha behavior against real bytes in HTTP tests. No artwork or R2 object
+was changed to fill the missing sizes.
+
+The browser accessibility check also caught a bounded JSON preview rendered as
+a non-focusable preformatted block. Native read-only textareas now provide
+keyboard scrolling and selection for both JSON and integration prompts, without
+suppressing static accessibility rules. Keep the expanded preview in Axe checks.

@@ -4,6 +4,7 @@ import { dirname, resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
 import manifest from "./package.json" with { type: "json" };
+import { projectApiAssets } from "./scripts/project-api-assets";
 import { siteAssets } from "./scripts/site-assets";
 import { videoSiteAssets } from "./scripts/video-site-assets";
 import { readProjects } from "./src/data/read-projects";
@@ -206,6 +207,7 @@ export default defineConfig({
 		react(),
 		canonicalRoutes(),
 		catalogueAssets(),
+		projectApiAssets(),
 		videoSiteAssets(),
 		discoveryAssets(),
 		releaseMetadata(),
@@ -215,7 +217,10 @@ export default defineConfig({
 		port: 7048,
 		strictPort: true,
 		allowedHosts: ["index.dev.hexly.ai"],
-		proxy: { "/api/status": "http://127.0.0.1:37048" },
+		proxy: {
+			"/api/status": "http://127.0.0.1:37048",
+			"/api/projects": "http://127.0.0.1:37048",
+		},
 	},
 	build: {
 		target: "es2022",

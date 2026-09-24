@@ -7,6 +7,7 @@
 | Fact | Where |
 |---|---|
 | Catalogue | `src/data/projects/`; public `nocoo/nocoo` profile and recorded repository evidence |
+| Single-project API | `GET /api/projects/{owner}/{repo}`; generated from project JSON, one-hour Worker cache, details and integration prompt at `#api`; [API contract](33-project-api.md) |
 | Project media / routes | Optional `Project.media` in the same catalogue; [routes and media boundary](../docs/17-project-media.md) |
 | R2 material operations | Bucket/origin in `src/data/media-storage.json`; [project skill](../.agents/skills/hexly-r2-media/SKILL.md), [storage contract](../docs/21-asset-storage.md), `docs/assets/inventory.json` and publication receipts; existing film receipts in `docs/media/` |
 | Git history / recovery | [Recovery guide](../docs/23-git-history-recovery.md); preserve original bundles and commit/ref maps; never merge the old binary history back |

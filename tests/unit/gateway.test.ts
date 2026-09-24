@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { assetUrl } from "../../src/model/assets";
 import worker from "../../worker/gateway";
 
@@ -15,6 +15,109 @@ const env: Env = {
 		throw new Error("Static routes must not access D1");
 	},
 };
+
+afterEach(() => vi.unstubAllGlobals());
+
+describe("single-project API gateway", () => {
+	it("caches successful GET bodies for HEAD reuse without forwarding client headers", async () => {
+		const stored = new Map<string, Response>();
+		const match = vi.fn(async (key: Request) => stored.get(key.url)?.clone());
+		const put = vi.fn(async (key: Request, value: Response) => {
+			stored.set(key.url, value);
+		});
+		vi.stubGlobal("caches", { default: { match, put } });
+		const fetchAsset = vi.fn(async (_request: Request) =>
+			Response.json({ repo: "life.ai" }),
+		);
+		const live: Env = Object.assign(Object.create(env), {
+			STATUS_MODE: "live",
+			ASSETS: { ...assets, fetch: fetchAsset },
+		});
+		const pending: Promise<unknown>[] = [];
+		const ctx = {
+			waitUntil(p: Promise<unknown>) {
+				pending.push(p);
+			},
+		} as ExecutionContext;
+		const response = await worker.fetch(
+			new Request("https://hexly.ai/api/projects/NOCOO/LIFE.AI", {
+				headers: { Cookie: "ignored=1", "If-None-Match": "unrelated" },
+			}),
+			live,
+			ctx,
+		);
+		expect(await response.json()).toEqual({ repo: "life.ai" });
+		expect(response.headers.get("Cache-Control")).toBe("public, max-age=3600");
+		await Promise.all(pending);
+		expect(put).toHaveBeenCalledOnce();
+		const forwarded = fetchAsset.mock.calls[0]?.[0] as Request | undefined;
+		expect(forwarded?.url).toBe(
+			"https://hexly.ai/data/project-api/nocoo/life.ai.json",
+		);
+		expect(forwarded?.headers.get("Cookie")).toBeNull();
+		expect(forwarded?.headers.get("If-None-Match")).toBeNull();
+		const head = await worker.fetch(
+			new Request("https://hexly.ai/api/projects/nocoo/life.ai", {
+				method: "HEAD",
+			}),
+			live,
+			ctx,
+		);
+		expect(await head.text()).toBe("");
+		expect(fetchAsset).toHaveBeenCalledOnce();
+		const get = await worker.fetch(
+			new Request("https://hexly.ai/api/projects/nocoo/life.ai"),
+			live,
+			ctx,
+		);
+		expect(await get.json()).toEqual({ repo: "life.ai" });
+		await worker.fetch(
+			new Request("https://hexly.ai/api/projects/another-owner/life.ai"),
+			live,
+			ctx,
+		);
+		await Promise.all(pending);
+		expect(fetchAsset).toHaveBeenCalledTimes(2);
+		expect([...stored.keys()]).toEqual([
+			"https://hexly.ai/api/projects/nocoo/life.ai",
+			"https://hexly.ai/api/projects/another-owner/life.ai",
+		]);
+	});
+	it("returns JSON errors for missing assets, SPA fallthrough and unavailable storage", async () => {
+		for (const [asset, status] of [
+			[new Response("html", { headers: { "Content-Type": "text/html" } }), 404],
+			[new Response(null, { status: 404 }), 404],
+			[new Response(null, { status: 500 }), 503],
+		] as const) {
+			const testEnv: Env = Object.assign(Object.create(env), {
+				ASSETS: { ...assets, fetch: async () => asset },
+			});
+			const response = await worker.fetch(
+				new Request("https://hexly.ai/api/projects/nocoo/unknown"),
+				testEnv,
+			);
+			expect(response.status).toBe(status);
+			expect(response.headers.get("Cache-Control")).toBe("no-store");
+			expect(await response.json()).toHaveProperty("error");
+		}
+		const unavailable: Env = Object.assign(Object.create(env), {
+			ASSETS: {
+				...assets,
+				fetch: async () => {
+					throw new Error("offline");
+				},
+			},
+		});
+		expect(
+			(
+				await worker.fetch(
+					new Request("https://hexly.ai/api/projects/nocoo/rio"),
+					unavailable,
+				)
+			).status,
+		).toBe(503);
+	});
+});
 
 describe("the static asset gateway", () => {
 	it("redirects legacy materials directly to R2 in production while keeping archived HTML/code and page routes", async () => {

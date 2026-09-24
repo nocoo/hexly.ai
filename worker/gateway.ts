@@ -1,6 +1,7 @@
 import projectIds from "../src/data/projects/index.json" with { type: "json" };
 import { assetKeyForPath, assetUrl } from "../src/model/assets";
 import { legacyRoute } from "../src/model/routes";
+import { projectApiResponse } from "./project-api";
 import { runStatusChecks, statusResponse } from "./status";
 
 const slugs = new Set(projectIds);
@@ -89,6 +90,9 @@ export default {
 				status: 301,
 				headers: { Location: url.toString() },
 			});
+		}
+		if (path === "/api/projects" || path.startsWith("/api/projects/")) {
+			return projectApiResponse(request, env, ctx);
 		}
 		if (path === "/api/status") {
 			if (!["GET", "HEAD"].includes(request.method))
