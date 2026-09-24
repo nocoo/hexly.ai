@@ -1,8 +1,9 @@
 # Falcon and Kite onboarding
 
-Status: Local preparation. Source snapshots and first-identity requests are
-recorded; raw-image acceptance, finishing, catalogue integration and dev review
-remain pending. No production release or source-application release is claimed.
+Status: Both native first-identity images have returned and were shown to the
+owner. Source snapshots and generation receipts are recorded. Exact-byte raw
+acceptance, finishing, catalogue integration and complete dev review remain
+pending. No production release or source-application release is claimed.
 
 ## Source intake
 
@@ -75,6 +76,17 @@ Falcon study `2026-09-25-01` ended with an unexpected TLS EOF and no image after
 HEAD subsequently returned HTTP 200. Study `2026-09-25-02` is a deliberate new
 request with the same prompt/model/references, not an overwritten receipt or an
 automatic retry. No claim is made about billing for the first request.
+
+| Project | Successful study | Native source SHA-256 | Current decision |
+| --- | --- | --- | --- |
+| Falcon | `2026-09-25-02` | `90e973c7e3c53e34d8156ceefd4ad32e3e69a411dfb4737126089384dc0254a8` | Pending owner confirmation |
+| Kite | `2026-09-25-01` | `8daa5cb7e6044242a7396490550baa40f86aa2539686a4e89f220afe1404657c` | Pending owner confirmation |
+
+Both returned native 2048 × 2048 PNGs. No extraction, derivative or integration
+has been performed. Falcon has a larger friendly eye and a left-shoulder frame
+entry. Kite's ribbon is longer than intended and a tail feather approaches the
+lower-right corner; the forked-tail cue is not clearly verified. These inspection
+notes are recorded with pending decisions, not substituted for owner approval.
 
 ## Local delivery and publication boundary
 
