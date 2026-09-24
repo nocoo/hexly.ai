@@ -149,3 +149,22 @@ anchor after keyboard project navigation. The API section now follows the
 complete brand archive, preserving its established anchor position. Keep
 asynchronous integration content downstream of existing stable navigation
 targets and retain the desktop/mobile anchor-alignment journey.
+
+## 2026-09-25 — Overdirected bird portraits obscured the heads
+
+The first Falcon and Kite requests specified broad chests, shoulder/wing mass,
+camera analogies, frame entry, species colors and literal fan/ribbon accessories.
+Both outputs followed enough of those directions to look superficially coherent,
+but their bodies dominated. The owner rejected both for insufficient off-center
+composition and weak distinction between bird identities.
+
+The prompt tried to solve anatomy and product metaphors before establishing the
+head and negative-space relationship. A slightly shifted full bust did not
+satisfy the requested asymmetry. The initial agent inspection focused too much
+on facets, accessories and edge clearance instead of the main visual hierarchy.
+
+Preserve both rejected native images and decisions. The corrected requests name
+the species, head close-up, strong asymmetry, multicolor and connected flat facets,
+leaving camera, gesture and accent to the model. Presentation boards lead the
+reference order; Frogie supplies drawing language only. Judge the returned
+head/space balance and species recognition before beginning technical finishing.

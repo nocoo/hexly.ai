@@ -1,8 +1,8 @@
 # Falcon and Kite onboarding
 
-Status: Both native first-identity images have returned and were shown to the
-owner. Source snapshots and generation receipts are recorded. Exact-byte raw
-acceptance, finishing, catalogue integration and complete dev review remain
+Status: The owner rejected both first native images for oversized bodies and
+weak off-center composition. New head-focused requests use minimal direction.
+Raw acceptance, finishing, catalogue integration and complete dev review remain
 pending. No production release or source-application release is claimed.
 
 ## Source intake
@@ -58,10 +58,13 @@ The owner approved the proposed species, scope and first-round design plan with
 “开始进行。完成后dev review”. This authorizes generation and local preparation;
 it does not waive exact-byte raw acceptance.
 
-- Falcon: Slate-blue peregrine portrait, warm ivory chest and one small
-  multicolored folded fan in its gaze. Separate rocky-ledge grass presentation.
-- Kite: Rust/chestnut red kite, natural backward glance, folded wings and one
-  short multicolored ribbon. Separate woodland-edge foliage presentation.
+- Falcon: Distinctive peregrine falcon head, strongly off-center, multicolored
+  accents and connected flat fragments.
+- Kite: Distinctive red kite head, strongly off-center, multicolored accents and
+  connected flat fragments.
+- The owner's correction withdraws the prescribed chest/wing structure, camera,
+  palette, fan and ribbon. Let the image model choose these details. Presentation
+  boards now lead the references; Frogie supplies drawing language only.
 - Primary identity: `gpt-image-2.5-sunburst`; three ordered family references,
   native 2048-square request, uniform white isolated source.
 - Decorative surfaces after identity selection: `gpt-image-2.5-flare`, independent
@@ -79,14 +82,19 @@ automatic retry. No claim is made about billing for the first request.
 
 | Project | Successful study | Native source SHA-256 | Current decision |
 | --- | --- | --- | --- |
-| Falcon | `2026-09-25-02` | `90e973c7e3c53e34d8156ceefd4ad32e3e69a411dfb4737126089384dc0254a8` | Pending owner confirmation |
-| Kite | `2026-09-25-01` | `8daa5cb7e6044242a7396490550baa40f86aa2539686a4e89f220afe1404657c` | Pending owner confirmation |
+| Falcon | `2026-09-25-02` | `90e973c7e3c53e34d8156ceefd4ad32e3e69a411dfb4737126089384dc0254a8` | Rejected by owner |
+| Kite | `2026-09-25-01` | `8daa5cb7e6044242a7396490550baa40f86aa2539686a4e89f220afe1404657c` | Rejected by owner |
 
 Both returned native 2048 × 2048 PNGs. No extraction, derivative or integration
 has been performed. Falcon has a larger friendly eye and a left-shoulder frame
 entry. Kite's ribbon is longer than intended and a tail feather approaches the
-lower-right corner; the forked-tail cue is not clearly verified. These inspection
-notes are recorded with pending decisions, not substituted for owner approval.
+lower-right corner; the forked-tail cue is not clearly verified. The owner found
+both bodies too large, their asymmetry insufficient and their bird identities
+too similar. Exact feedback is preserved beside both rejected hashes.
+
+The next studies are Falcon `2026-09-25-03` and Kite `2026-09-25-02`. Their prompts
+are 88 and 90 words respectively, including reference roles and output format.
+Neither rejected image is supplied as an identity reference for the new request.
 
 ## Local delivery and publication boundary
 
