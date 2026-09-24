@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.4] - 2026-09-24
+
+### Documentation
+
+- merge g1 into unified l1 ([453143c](https://github.com/nocoo/hexly.ai/commit/453143c68327d86ccb2e12c069ce7eab08641fbf))
+
+### Features
+
+- add single-project identity api ([a248508](https://github.com/nocoo/hexly.ai/commit/a24850802c71d90e9138fbbab2d06139cce0f8a4))
+
+### Fixes
+
+- preserve brand anchor during api loading ([eb22d06](https://github.com/nocoo/hexly.ai/commit/eb22d06c44fa2a5602a699391da4aa490bad1473))
+
 ## [1.0.3] - 2026-09-22
 
 ### Maintenance
