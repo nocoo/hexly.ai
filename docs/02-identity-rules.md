@@ -36,8 +36,9 @@ utility follows the native-app default. Keep the catalogue's product category
 separate from its visual series; existing approved exceptions remain valid.
 
 Choose the particular object, animal or bird to fit the product's purpose and
-existing identity. Animal and bird studies use connected flat facets and their
-anatomy/interest-point rules. Material studies use believable physical volume,
+existing identity. New animal and bird briefs specify the species, head focus,
+strong off-center composition, multicolor and connected flat fragments. Leave
+pose, color placement and optional accents to the image model. Material studies use believable physical volume,
 construction and surfaces. Each project still needs its own motif, truthful
 palette evidence, generation history, exact-byte approval and size/theme review.
 
@@ -105,7 +106,7 @@ Theme colors are converted to sRGB hex from the recorded HSL/OKLCH tokens. Addit
 
 ## Animal family studies
 
-Frogie and Pew are the reference identities: a recognizable animal, one dominant hue, and multicolored geometric fragments used as accents. Large animals generally use head portraits; smaller animals may use their full bodies.
+Frogie and Pew remain drawing references for connected flat fragments. The owner's 2026-09-25 direction makes head-focused, strongly off-center, multicolored animal and bird portraits the default. Use a brief naming those essentials; do not prescribe an accessory, focal length, eye count, body ratio, pose or fixed palette. This governs new work and preserves approved identities.
 
 The later cleanup must preserve the original backup and provenance, create a separate version, and inspect the candidate at artwork, app icon, sidebar, and favicon sizes in both themes before replacing a live identity. Naming, animal choice, principal colors, and logo-generation prompts belong in the individual project profile.
 
@@ -113,7 +114,7 @@ The active art direction and archive convention are in [the logo family guide](0
 
 Refined presentation tiles include their own background and contact shadows. Large README logos, app tiles, and social images may use them at full size with one rounded-square boundary; do not pad them inside another colored tile. Small sidebar/header marks and browser favicons use the transparent foreground, without a background tile, motif, glow, or additional corner mask. Root `logo.png` is the canonical foreground; keep square/rounded presentation masters separate. Apply each platform's masking contract to touch, PWA, and native application icons. The [usage and adoption SOP](07-logo-usage-sop.md) records the consumer audit and completion checklist.
 
-Every completed candidate has a static `review.html` and a complete `/logos/<project>` before/after page, plus all master and small-size exports. Presentation reference boards appear only in static study HTML and Git. Background-only adjustments require a new finishing pass and byte-identical transparent/white masters. Preserve historical public manifests and verify them even after the catalogue selects a newer pass. Follow the current session's local-only or publication authorization.
+Every completed candidate has a static `review.html` and a complete `/projects/<project>#brand` archive, plus all master and small-size exports. First identities use a single specimen; existing redesigns retain their before/after comparison. Legacy `/logos/<project>` links redirect to the project archive. Presentation reference boards appear only in static study HTML and Git. Background-only adjustments require a new finishing pass and byte-identical transparent/white masters. Preserve historical public manifests and verify them even after the catalogue selects a newer pass. Follow the current session's local-only or publication authorization.
 
 ## Commissioned vector brand kits
 

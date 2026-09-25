@@ -1,0 +1,356 @@
+{
+	"createdAt": "2026-09-24T23:33:56.314Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "417279a8e8a0901b22dc42fe38c7eee3a6b090c67617fceaf7b2d312b45047e9",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "kite",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#d8bb9f",
+			"light": "#f0dcc7",
+			"shade": "#b9987c",
+			"motif": "#8e7355",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60925002,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Woodland-edge leaves",
+				"description": "Independent quiet habitat foliage in the negative space; the approved off-center head keeps its native placement.",
+				"layers": [
+					{
+						"d": "M99 103Q171 187 201 347 M128 141Q171 115 209 125Q183 161 128 141 M160 192Q117 169 90 181Q111 213 160 192 M183 252Q221 225 255 242Q238 270 183 252 M268 560Q193 592 124 698 M214 593Q221 630 203 655 M173 639Q148 614 115 623",
+						"tone": "motif",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M211 188Q235 155 260 174Q247 199 211 188 M143 667Q110 673 97 706Q130 708 143 667",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					85,
+					65,
+					37
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					71,
+					56,
+					30
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"right",
+				"bottom"
+			],
+			"note": "Preserve the exact owner-approved head framing. Side and lower entries are intentional viewfinder intersections. No rescaling, continuation, crop or recentering."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Native top-edge matte includes RGB 250,253,245 pixels; a 246 threshold left visible specks. Border-connected threshold 239/chroma 16 removes that matte. No component deletion; pale anatomy and opaque RGB are verified separately."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2524938,
+		"foregroundPixels": 1669366,
+		"softEdgePixels": 8738,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 783,
+			"top": 90,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 783,
+			"top": 90,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 50824
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2044,
+			"sha256": "7357565b29997767586895b333d84c01404587482fe853f594920786f9ef137c"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1161,
+			"sha256": "c5bc664290ae6df0e2da15b23ac0100d6cc7d8873c29b4147508501ea5030491"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2534354,
+			"sha256": "eaaf530d94a2936501b96589cb3f5e7fa5730c83d8a7ca9c175e03cdab585288"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61366,
+			"sha256": "2efddcd4ad426d04366f6488772a29e0b5c7771c14065327cb93f4f54786dc7b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 822,
+			"sha256": "6f4ec0bad55c726e981fdf0e68841c08967a63a830c5d9e0c74e22770e679dd5"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1743748,
+			"sha256": "ef4df1b0de3376dc91f2a12cf84b2cb85a192e65d4c4d4abfc7d924c13aaa160"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 162300,
+			"sha256": "28074abc641c1e7e132414d573b3559b6e7e6e944eb0628fc62fc753d15f5bcf"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 138241,
+			"sha256": "3260d478e122a6eb41e344aed4efc48a3fd7ec20716339b317fcc1a3ce3849a4"
+		},
+		{
+			"path": "exports/kite-transparent-2048.png",
+			"bytes": 2534354,
+			"sha256": "eaaf530d94a2936501b96589cb3f5e7fa5730c83d8a7ca9c175e03cdab585288"
+		},
+		{
+			"path": "exports/kite-icon-2048.png",
+			"bytes": 3798366,
+			"sha256": "6532cd3e9cd8954ec819eb8e42e72c9219f5269007872e8b3fef4d41e9dfffa0"
+		},
+		{
+			"path": "exports/kite-rounded-2048.png",
+			"bytes": 3691097,
+			"sha256": "5f8f7948dfa52ceb5c7f7190916269cd8b9c0a09047c957ed0cdcf7452f41985"
+		},
+		{
+			"path": "exports/kite-transparent-1024.png",
+			"bytes": 869520,
+			"sha256": "6a9e28f3f3b8c23212965cf0ab96256246d2b12207b5ec780f8142130ba5e670"
+		},
+		{
+			"path": "exports/kite-icon-1024.png",
+			"bytes": 1103014,
+			"sha256": "186dab3cb33b2fbded908c84523b539b2cb07365f0baf22fb5be91700f92b63b"
+		},
+		{
+			"path": "exports/kite-rounded-1024.png",
+			"bytes": 1088899,
+			"sha256": "8a389196a6bba7db8605c474f8b534fc3ed1500a254a318e3cd790f8f4dea144"
+		},
+		{
+			"path": "exports/kite-transparent-512.png",
+			"bytes": 291064,
+			"sha256": "43ae169b53a64374d6e112c85d17ca6b41aee7057f575eadbc141b5bceb3141c"
+		},
+		{
+			"path": "exports/kite-icon-512.png",
+			"bytes": 387404,
+			"sha256": "0f0db5d1341bd7066f798e4f7fdfb988e4493753b25464c498251db37e678296"
+		},
+		{
+			"path": "exports/kite-rounded-512.png",
+			"bytes": 383427,
+			"sha256": "a471af7e6c451514419c3c3b3d6357352676d6d200f2240ed810d58f8cf4b5a1"
+		},
+		{
+			"path": "exports/kite-transparent-256.png",
+			"bytes": 88497,
+			"sha256": "cd829b0c668db6a6a4a5e5a5f7916ed0114468dee30d833f63a3ed5127f5eed6"
+		},
+		{
+			"path": "exports/kite-icon-256.png",
+			"bytes": 101464,
+			"sha256": "5e55546402a14770b96901a0c10b7b288704af8bf1d19852e5eded060b5e518d"
+		},
+		{
+			"path": "exports/kite-rounded-256.png",
+			"bytes": 102429,
+			"sha256": "7be4bc1cc2cc2825319ee910b638d1557f3da518bda62f9247530b693b3d996d"
+		},
+		{
+			"path": "exports/kite-transparent-128.png",
+			"bytes": 24545,
+			"sha256": "a1f642cfe982ac4a42590c2b9d108b3609b398d767c998b394bc39ff82519d53"
+		},
+		{
+			"path": "exports/kite-icon-128.png",
+			"bytes": 29465,
+			"sha256": "01004b8b3754fede742b9fccba7586b3f5128ba1a73776e0d3238c0728677b74"
+		},
+		{
+			"path": "exports/kite-rounded-128.png",
+			"bytes": 30218,
+			"sha256": "7bf03d5c3066889f7d7238b7736f130b438633a1bf247d049e8064f5f68e6c0d"
+		},
+		{
+			"path": "exports/kite-transparent-64.png",
+			"bytes": 6847,
+			"sha256": "db79579f6a9915ffaa0122ab22748738de8ace5157a87c012fe19c8b301e954c"
+		},
+		{
+			"path": "exports/kite-icon-64.png",
+			"bytes": 9165,
+			"sha256": "3f2d7602afebb02ecead8686721b3223068582901c77af1f845d6c079031e684"
+		},
+		{
+			"path": "exports/kite-rounded-64.png",
+			"bytes": 9557,
+			"sha256": "3bc2d3c25937ca7939276b8cc9afc7585e3238149fb8a0c4a282dcd20a4775e2"
+		},
+		{
+			"path": "exports/kite-transparent-48.png",
+			"bytes": 4067,
+			"sha256": "013fc84772177688f7da0039804644480b297c022189c9e2d1ad6238389d0176"
+		},
+		{
+			"path": "exports/kite-icon-48.png",
+			"bytes": 5459,
+			"sha256": "49514e9092f1713a2dfaa347c8797b7ebad28187c9bb068248f2161366872bd2"
+		},
+		{
+			"path": "exports/kite-rounded-48.png",
+			"bytes": 5723,
+			"sha256": "5e3dae73fbe1bb852b5bd36e42a2991e29237d32d311292a77a0af5ec3958ff8"
+		},
+		{
+			"path": "exports/kite-transparent-32.png",
+			"bytes": 2041,
+			"sha256": "c62938e8015a022ac9f49542ff412def5850043be17d0b3fd7e39935266f7f99"
+		},
+		{
+			"path": "exports/kite-icon-32.png",
+			"bytes": 2868,
+			"sha256": "7e3a531da939bac6466d4d6bcd59073a0487b21c375cb429122d0d5b4fb45582"
+		},
+		{
+			"path": "exports/kite-rounded-32.png",
+			"bytes": 3010,
+			"sha256": "3f5fd0e7c93c0f8d80c63c4ef95def47adc443ed694c107f823749fa088e2dae"
+		},
+		{
+			"path": "exports/kite-transparent-24.png",
+			"bytes": 1285,
+			"sha256": "0fc0e6b53e86830ab57737f1e768bd68c96c0b3a2f8c894f36593ef765d74e21"
+		},
+		{
+			"path": "exports/kite-icon-24.png",
+			"bytes": 1773,
+			"sha256": "b312170b54890bffaf3c58b6a365779a30f88aecaec76522a84091ef0e2aa797"
+		},
+		{
+			"path": "exports/kite-rounded-24.png",
+			"bytes": 1879,
+			"sha256": "71aade4be1e901b524ca165d54b7d81127b20b7c2576e61ee3df6b02e81773e0"
+		},
+		{
+			"path": "exports/kite-transparent-16.png",
+			"bytes": 699,
+			"sha256": "0c9c9bac1f27da2e4dcc9f2db7a7d124eca17c89a13e7db206cc31924fbcb1c7"
+		},
+		{
+			"path": "exports/kite-icon-16.png",
+			"bytes": 920,
+			"sha256": "7bc12ce878f7c948dc122b8f73186797a7eadb5d2fe9fd1c41f54e7536b37b26"
+		},
+		{
+			"path": "exports/kite-rounded-16.png",
+			"bytes": 971,
+			"sha256": "7cfb6aab3d904ea84e1ba4588d9e0e035f645212cacef8618fc380d1f77bd5cc"
+		},
+		{
+			"path": "exports/kite-white-2048.png",
+			"bytes": 2370427,
+			"sha256": "904082cd65810bbebc10957827d420d84b389b513c56a3a10e4baef31db74407"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 820308,
+			"sha256": "25b12fad2a4a94037ace22c8be33c0e27613240fab3642d468a3c388fec4ae7f"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 819688,
+			"sha256": "fbbe64767e52b477a61977988d9dd85f48e1fd2c6d34c6704a2bc7ae780c0c94"
+		}
+	]
+}
