@@ -76,6 +76,31 @@ describe("R2 material delivery", () => {
 			vi.unstubAllEnvs();
 		}
 	});
+	it("resolves API CDN image URLs to hydrated files only in local development", () => {
+		const paths = [
+			"/brands/frogie/v1.0.0/mark-64.png",
+			"/logos/display/frogie-64.webp",
+			"/textures/frogie/v1.0.0/texture-light.webp",
+		];
+		const urls = paths.map((path) => assetUrl(path));
+		try {
+			vi.stubEnv("DEV", true);
+			vi.stubEnv("MODE", "development");
+			vi.stubEnv("VITE_LOCAL_MATERIALS", "1");
+			for (const [i, url] of urls.entries())
+				expect(assetUrl(`${url}?v=1#sample`)).toBe(`${paths[i]}?v=1#sample`);
+			expect(assetUrl("https://example.test/logo.png")).toBe(
+				"https://example.test/logo.png",
+			);
+			expect(assetUrl("https://h.no.mt/unknown.png")).toBe(
+				"https://h.no.mt/unknown.png",
+			);
+			vi.stubEnv("MODE", "production");
+			for (const url of urls) expect(assetUrl(url)).toBe(url);
+		} finally {
+			vi.unstubAllEnvs();
+		}
+	});
 	it("keeps existing source recovery URLs when a new kit duplicates the same bytes", () => {
 		const directory = mkdtempSync(
 			join(tmpdir(), "hexly-inventory-version-test-"),
