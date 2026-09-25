@@ -168,3 +168,47 @@ the species, head close-up, strong asymmetry, multicolor and connected flat face
 leaving camera, gesture and accent to the model. Presentation boards lead the
 reference order; Frogie supplies drawing language only. Judge the returned
 head/space balance and species recognition before beginning technical finishing.
+
+## 2026-09-25 — Validate image layouts and complete assets before gates
+
+A temporary edge diagnostic treated a decoded mask as one channel without checking
+its layout, producing an oversized diagnostic log. It was corrected to extract
+the alpha-mask channel explicitly and assert dimensions; no source bytes changed.
+
+The onboarding tests and first commit attempt started while the catalogue-wide
+asset generator was still writing previews. Missing inventory entries caused
+expected integration failures, while concurrent image work also exhausted the
+five-second finishing-test budget. Both runs were stopped and their logs retained.
+Complete generation and inventory first, then run gates against that stable state.
+A rejected hook is not a reason to bypass it.
+
+The existing full `assets:build` command also regenerated historical social cards
+with different bytes. The immutable inventory correctly rejected `public/og.jpg`.
+Only the two new project cards are needed. Restore all prior social cards from
+their checksummed published objects, then inventory new assets. A generator's
+success is not evidence that its output may replace a published asset.
+
+The full suite's default worker count caused the native image fixture to exceed
+five seconds even though its isolated run finished in about one second. Capping
+Vitest at four workers preserves every test and timeout while avoiding excessive
+parallel image subprocesses; the complete 441-test coverage run then passed.
+The subsequent onboarding commit reproduced the timeout under shared-machine
+load above 50, even with one worker. Reducing Vitest parallelism alone did not
+resolve external load; the original assertions and five-second budget remain.
+Limiting native image concurrency with `VIPS_CONCURRENCY=1` passed the isolated
+fixture in a 2.54-second Vitest run. This bounds libvips work without changing
+image outputs, test selection or deadlines.
+
+The owner also caught missing API icons in the local preview. API JSON correctly
+contains public CDN URLs, but the view bypassed the local asset resolver. Route
+its preview images and links through the same resolver, including an explicit
+CDN-to-hydrated-path mapping in development only. Keep the JSON and production
+addresses intact. A regression test covers both development and production,
+and the repeated 22-scenario browser review found no image or request errors.
+
+The 438-case browser run also slowed under shared-machine load: 214 cases passed,
+four unrelated cases reached their 30-second download/media/API deadlines, and
+the remainder were interrupted rather than reported as passing. All four failed
+cases passed unchanged with one worker in 29.5 seconds total. Required full
+browser validation moves to the exact-revision CI release gate, with no increased
+timeouts, skipped assertions or deployment before that gate succeeds.

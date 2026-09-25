@@ -61,11 +61,11 @@ describe("the imported project catalogue", () => {
 		);
 	});
 	it("includes the listed projects with bilingual metadata and local assets", () => {
-		expect(projects).toHaveLength(79);
+		expect(projects).toHaveLength(81);
 		expect(catalogueProblems(projects)).toEqual([]);
 		expect(
 			projects.filter((project) => project.logo.kind === "original"),
-		).toHaveLength(65);
+		).toHaveLength(67);
 	});
 	it("provides a verified goal and stack for every active project", () => {
 		expect(
@@ -106,7 +106,7 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(58);
+		expect(counts.all).toBe(60);
 		expect(counts.archive).toBe(21);
 		expect(
 			filterProjects(projects, "hermes", "all").map((p) => p.id),

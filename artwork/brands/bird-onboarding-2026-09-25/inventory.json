@@ -1,0 +1,72 @@
+{
+	"date": "2026-09-25",
+	"scope": "Falcon and Kite only",
+	"generationAuthorization": "Owner approved the onboarding plan including Flare decoration and instructed publication.",
+	"acceptanceAuthorization": "Individual exact-byte owner approval remains required; no delegation is asserted.",
+	"projects": [
+		{
+			"id": "falcon",
+			"title": "Falcon",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/falcon/texture-studies/2026-09-25-flare-01",
+			"root": "/textures/falcon/v1.0.0",
+			"version": "1.0.0",
+			"existingKit": null,
+			"design": {
+				"identityType": "bird",
+				"language": "habitat foliage",
+				"name": {
+					"en": "Cliffside grasses",
+					"zh": "崖边细草"
+				},
+				"description": {
+					"en": "Sparse cliff-ledge grasses, slender wind-bent stems and small low-growing leaves.",
+					"zh": "崖壁栖地的细草与低矮叶片。"
+				},
+				"motif": "Sparse cliff-ledge grasses, slender wind-bent stems and small low-growing leaves",
+				"rationale": "Botanical habitat supports the accepted bird portrait without adding another focal subject."
+			},
+			"productEvidence": {
+				"source": "docs/sources/falcon-2026-09-25.json",
+				"purpose": {
+					"en": "Decision observability",
+					"zh": "决策观察"
+				},
+				"inspectedRevision": null
+			}
+		},
+		{
+			"id": "kite",
+			"title": "Kite",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/kite/texture-studies/2026-09-25-flare-01",
+			"root": "/textures/kite/v1.0.0",
+			"version": "1.0.0",
+			"existingKit": null,
+			"design": {
+				"identityType": "bird",
+				"language": "habitat foliage",
+				"name": {
+					"en": "Woodland edge",
+					"zh": "林缘疏叶"
+				},
+				"description": {
+					"en": "Open woodland-edge foliage: airy oak leaves and a few meadow stems.",
+					"zh": "开阔林缘的疏朗橡叶与草茎。"
+				},
+				"motif": "Open woodland-edge foliage: airy oak leaves and a few meadow stems",
+				"rationale": "Botanical habitat supports the accepted bird portrait without adding another focal subject."
+			},
+			"productEvidence": {
+				"source": "docs/sources/kite-2026-09-25.json",
+				"purpose": {
+					"en": "Local Pi execution tracing",
+					"zh": "本地 Pi 执行轨迹"
+				},
+				"inspectedRevision": null
+			}
+		}
+	]
+}

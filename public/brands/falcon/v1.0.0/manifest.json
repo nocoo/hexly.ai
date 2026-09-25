@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "falcon",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/falcon#brand",
+	"root": "https://hexly.ai/brands/falcon/v1.0.0",
+	"source": "artwork/brands/falcon/v1.0.0",
+	"brandBaseline": "61e738255a1d2f41a0e7aa638dc1283c7e8d5377",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/falcon-family-2026-09-25-03-02.png",
+		"export": "/brands/falcon/v1.0.0/official-logo.png",
+		"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68",
+		"bytes": 2206051,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "1577e2f95a0267c8aba39b709eac9b38b21e1277377def7892bb53879d46e377",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 759,
+			"left": 1370
+		},
+		"sourceUrl": "https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/logo.png",
+		"sourceRepositoryRevision": "aa0e050e0f53b09d0cbfd088ed957cb74112e3dc",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/falcon/2026-09-25-03/02/transparent.png",
+		"export": "/brands/falcon/v1.0.0/logo.png",
+		"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68",
+		"bytes": 2206051,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "1577e2f95a0267c8aba39b709eac9b38b21e1277377def7892bb53879d46e377",
+		"edgePixels": {
+			"top": 0,
+			"right": 0,
+			"bottom": 759,
+			"left": 1370
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 0,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 0,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/falcon/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 56264,
+			"sha256": "15c60b95319f82f9cca2b080384b568431e2a6b97f9df82c9ba7c5ebac5a9c7f"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 123868,
+			"sha256": "38d92cbaceb6acdf9a1a01cce9f99affb998d8ae143527b5620df2e7c5ad8be2"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6435,
+			"sha256": "abe251cffbe491cd28c03654ff7db8e62ba3e25eaa9f09afd5dc6716301844bb"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 784917,
+			"sha256": "34183c2dd570aee21d52e3ae5bcf72adc556a618e86589880dd6c6f1c975f439"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 69176,
+			"sha256": "bd4bedf963cae83da8fae1b272447c24daa63ffddfb0d16a5f65477f72673a0f"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59162,
+			"sha256": "868b49a38f62fc64b3f7911dceae98cc5b8ec91233e0ebe8684efa7e5e17ad39"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 59896,
+			"sha256": "407f4966b19f1a7559f138fce03fe6e9e0714651f70b2223ae300379c8628263"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 785600,
+			"sha256": "82ad6824eeb2887f0cd22169bbc85b4a1e5ecb1a2593b4baaf50b28cae33e07e"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 69062,
+			"sha256": "f106040826e8e127b7bb43f25cbc8b2a2235350af373df6e4fc3d80371f5cb10"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 69177,
+			"sha256": "e98c0bd185ef5e344c7070f6f83e5a35b372c562101bf6bf716ce81120cd82a7"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 269416,
+			"sha256": "b3758113020798843f666cf6603684e3a0a173ad12e91f4a391da65d01c781f9"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2250852,
+			"sha256": "acf09c9ea04190c6c510b85ddf713014e5f3c7797beecd0e1389991e1ccb2785"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 375982,
+			"sha256": "13066df0ee8cf1458ecbac4cede385acd8d3806f3a08beae5e11cfea631ae63c"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 3588892,
+			"sha256": "39864692811097d267b7b4351ec378321de81a0f262599712194a0c44ba0fd44"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1793,
+			"sha256": "f076eb7492c875060c96d9c22cb4e32385e81f9d45dbeb6bfc6a4b69481947b6"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 181604,
+			"sha256": "af22b5a0fb5ee18ec14ad96c240a700ef811c2b7c7a8c65ecb10d8f284e89dd6"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 181452,
+			"sha256": "fa52856fa9dd5c9fdd564fde93b84de2383b146a10ad6584e4bbf5cd7d57a716"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 771529,
+			"sha256": "937ebd55070d6714cfecdff2052d33d3ba920a560424fbacb790f311a7d6aadc"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 771529,
+			"sha256": "937ebd55070d6714cfecdff2052d33d3ba920a560424fbacb790f311a7d6aadc"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2206051,
+			"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 771529,
+			"sha256": "937ebd55070d6714cfecdff2052d33d3ba920a560424fbacb790f311a7d6aadc"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 24736,
+			"sha256": "a8e01e119c5378ca52cdcfc3260bd0f75f3b374bf33ec16eac093a8ca72c8f1d"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 737,
+			"sha256": "c32584c883fa36ae38dde083a329dc0b1981af0ec1da9a6039b2b84e27fca599"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1310,
+			"sha256": "8895f6704b5dbea34263d28039f2d5a2c3e09248088498e17cd69a14c131f472"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 85189,
+			"sha256": "0dd7d3cdcc9dc211cad176566f0a398f5641afa54dd8632e2d6e0ce6f1ffe25b"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 2065,
+			"sha256": "3ab03d7e5e2614e3112ff4cbc25809f872407b82fd26f7fd272840af6dcc7e78"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 4129,
+			"sha256": "0caba2f389aaca25bc9398074b8dcb4e4e5e99f5848af6c561532aedbe17b8d9"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 266765,
+			"sha256": "a1a9d01c0c71c2d6d875da2bd2b2d055716a0bcd82dc93baada1b0e685603258"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 6910,
+			"sha256": "8d01c1385e68b03a7ad51a6c926090a98ef7fe388eee856ec38c800a901aa188"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2206051,
+			"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2206051,
+			"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2206051,
+			"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/prompt.txt",
+			"role": "Exact approved Logo generation prompt; kit assembly made no image-model call",
+			"bytes": 611,
+			"sha256": "fd7300f4cf8d766111f2e232b5aa3c84e817b4a712236f8dde10e0d722294f82"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7235,
+			"sha256": "6ac77f03a5fd21404a6f56178659b23695f1a65d85f554fb7c2b8bece141d43f"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 11393,
+			"sha256": "efcd3a1dd8a561f2ad426b4fe4f05c6820fa246282775427f249bcb0b5836709"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5693,
+			"sha256": "65d5039d8514f82fd6a0e81c5a31f32efdf4a8f33737b39c397897ebc80ecbbd"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 886,
+			"sha256": "efc8a7eea6fb74a47f363d387e7faac3053cc20c264f76684883e97ff9b03d72"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4878,
+			"sha256": "0277e9902cd9510d3e29046a69e93864abcb27a8d61ac6a1ec527237686bbc03"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 887,
+			"sha256": "b4fb898d693f81aebaf6c802eb40bcd4eb101aaf8229c202abbe791925b0340a"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3555,
+			"sha256": "b2fd3f3c8392e6faa56ca5f21e118b7111efd39380490e4e2dee7a84242b9e26"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2072475,
+			"sha256": "eeeb36482abf7a5eef0083e0cf3b67eae8900a30ecc0ac2107acfc0bdab5661a"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6967,
+			"sha256": "33aaf79e2f82264817145c0106266123945d2e8179f2d27610727ff1536cf4d8"
+		},
+		{
+			"path": "/brands/falcon/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 6967,
+			"sha256": "6ac28617446f5c160d3e4c69b704e227bcadb3738e293844900dfac4d4f79de9"
+		}
+	]
+}
