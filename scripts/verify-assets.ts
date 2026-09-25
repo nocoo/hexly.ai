@@ -202,69 +202,73 @@ console.info(
 	`Verified ${projects.length} source checksums, ${projects.length * 6} artwork derivatives, and all current family foregrounds and previews.`,
 );
 
-let publicArchives = 0;
-for await (const path of new Bun.Glob(
-	"public/{brands,textures}/*/v*/manifest.json",
-).scan(".")) {
-	const manifest: { files: { path: string; bytes: number; sha256: string }[] } =
-		JSON.parse(await readFile(path, "utf8"));
-	for (const file of manifest.files) {
-		if (
-			`public${file.path}` !== `${dirname(path)}/${file.path.split("/").pop()}`
-		)
-			throw new Error(`Brand file escapes its version: ${file.path}`);
-		const data = await readFile(`public${file.path}`);
-		if (
-			data.length !== file.bytes ||
-			createHash("sha256").update(data).digest("hex") !== file.sha256
-		)
-			throw new Error(`Brand archive changed: ${file.path}`);
+if (process.argv.includes("--history")) {
+	let publicArchives = 0;
+	for await (const path of new Bun.Glob(
+		"public/{brands,textures}/*/v*/manifest.json",
+	).scan(".")) {
+		const manifest: {
+			files: { path: string; bytes: number; sha256: string }[];
+		} = JSON.parse(await readFile(path, "utf8"));
+		for (const file of manifest.files) {
+			if (
+				`public${file.path}` !==
+				`${dirname(path)}/${file.path.split("/").pop()}`
+			)
+				throw new Error(`Brand file escapes its version: ${file.path}`);
+			const data = await readFile(`public${file.path}`);
+			if (
+				data.length !== file.bytes ||
+				createHash("sha256").update(data).digest("hex") !== file.sha256
+			)
+				throw new Error(`Brand archive changed: ${file.path}`);
+		}
 	}
-}
-for await (const path of new Bun.Glob(
-	"public/logos/family/**/manifest.json",
-).scan(".")) {
-	const manifest: {
-		files: { path: string; bytes: number; sha256: string }[];
-	} = JSON.parse(await readFile(path, "utf8"));
-	for (const file of manifest.files) {
-		const data = await readFile(`public${file.path}`);
-		if (
-			data.length !== file.bytes ||
-			createHash("sha256").update(data).digest("hex") !== file.sha256
-		)
-			throw new Error(`Family archive changed: ${file.path}`);
+	for await (const path of new Bun.Glob(
+		"public/logos/family/**/manifest.json",
+	).scan(".")) {
+		const manifest: {
+			files: { path: string; bytes: number; sha256: string }[];
+		} = JSON.parse(await readFile(path, "utf8"));
+		for (const file of manifest.files) {
+			const data = await readFile(`public${file.path}`);
+			if (
+				data.length !== file.bytes ||
+				createHash("sha256").update(data).digest("hex") !== file.sha256
+			)
+				throw new Error(`Family archive changed: ${file.path}`);
+		}
+		publicArchives++;
 	}
-	publicArchives++;
-}
-console.info(
-	`Verified ${publicArchives} current and historical public family archives.`,
-);
+	console.info(
+		`Verified ${publicArchives} current and historical public family archives.`,
+	);
 
-let finishingPasses = 0;
-for await (const path of new Bun.Glob(
-	"artwork/logo-family/*/*/finishing/*/manifest.json",
-).scan(".")) {
-	const manifest: {
-		input: { path: string; sha256: string };
-		files: { path: string; bytes: number; sha256: string }[];
-	} = JSON.parse(await readFile(path, "utf8"));
-	const root = dirname(path);
-	const input = await readFile(resolve(root, manifest.input.path));
-	if (
-		createHash("sha256").update(input).digest("hex") !== manifest.input.sha256
-	)
-		throw new Error(`Study source changed: ${path}`);
-	for (const file of manifest.files) {
-		const data = await readFile(resolve(root, file.path));
+	let finishingPasses = 0;
+	for await (const path of new Bun.Glob(
+		"artwork/logo-family/*/*/finishing/*/manifest.json",
+	).scan(".")) {
+		const manifest: {
+			input: { path: string; sha256: string };
+			files: { path: string; bytes: number; sha256: string }[];
+		} = JSON.parse(await readFile(path, "utf8"));
+		const root = dirname(path);
+		const input = await readFile(resolve(root, manifest.input.path));
 		if (
-			data.length !== file.bytes ||
-			createHash("sha256").update(data).digest("hex") !== file.sha256
+			createHash("sha256").update(input).digest("hex") !== manifest.input.sha256
 		)
-			throw new Error(`Finishing archive changed: ${path}/${file.path}`);
+			throw new Error(`Study source changed: ${path}`);
+		for (const file of manifest.files) {
+			const data = await readFile(resolve(root, file.path));
+			if (
+				data.length !== file.bytes ||
+				createHash("sha256").update(data).digest("hex") !== file.sha256
+			)
+				throw new Error(`Finishing archive changed: ${path}/${file.path}`);
+		}
+		finishingPasses++;
 	}
-	finishingPasses++;
+	console.info(
+		`Verified every recorded file in ${finishingPasses} finishing passes.`,
+	);
 }
-console.info(
-	`Verified every recorded file in ${finishingPasses} finishing passes.`,
-);

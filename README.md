@@ -49,7 +49,7 @@ bun run lint
 bun run build
 ```
 
-Vite 位于 `127.0.0.1:7048`，本地 Worker 位于 37048；Caddy 地址是 https://index.dev.hexly.ai。日常开发直接读取 CDN，不必下载历史图库。品牌修改、完整集成/浏览器测试或离线预览前运行 `bun run assets:hydrate`，按哈希恢复缺失素材，不覆盖已有改动。
+Vite 位于 `127.0.0.1:7048`，本地 Worker 位于 37048；Caddy 地址是 https://index.dev.hexly.ai。日常开发直接读取 CDN，不必下载历史图库。品牌修改或完整历史档案离线预览前运行 `bun run assets:hydrate`，按哈希恢复缺失素材，不覆盖已有改动。
 
 本地 `/status` 使用真实 Worker API 和 SQLite，自动填充明确标注的模拟数据，不探测生产站点。项目源数据位于 `src/data/projects/`，浏览器加载的 `/data/projects.json` 由构建生成。`src/model/` 管纯逻辑，`worker/` 管路由、状态 API 与定时检查，`packages/video-kit/` 管共享模板与渲染。
 
@@ -58,15 +58,11 @@ Video Kit 使用真实 Logo、字体和主题，支持独立组合封面、正�
 ## 测试
 
 ```sh
-bun run assets:hydrate
-bun run test:coverage
-bun run test:http
 bunx playwright install chromium
-bun run test:browser
-bun run video:check
+bun run verify
 ```
 
-Vitest 检查模型与逻辑；HTTP 测试启动本地 Worker，Playwright 覆盖桌面/移动端、语言、主题和画廊。安装完整 Chromium；素材恢复为完整测试提供本地资源。HTTP / 浏览器分别使用 17048 / 27048 和独立状态目录，无需生产凭据或真实站点探测。`video:check` 检查模板 manifest、素材哈希与体积。
+Vitest 检查模型与逻辑；HTTP 测试启动本地 Worker，Playwright 覆盖桌面/移动端、语言、主题和画廊。安装完整 Chromium、OSV 和 Gitleaks；`verify` 在 10 分钟预算内完成本地与 CI 的相同检查，自动恢复测试素材并只构建一次。HTTP / 浏览器分别使用 17048 / 27048 和独立状态目录，无需生产凭据或真实站点探测。`video:check` 检查模板 manifest、素材哈希与体积。
 
 ## 技术栈
 
