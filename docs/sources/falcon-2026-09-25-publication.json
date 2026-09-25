@@ -1,0 +1,73 @@
+{
+	"repository": "https://github.com/nocoo/falcon",
+	"date": "2026-09-25",
+	"capturedAt": "2026-09-24T23:45:08.365Z",
+	"revision": null,
+	"localHead": "85d81cb13b4bb57e384e00372056291982f36835",
+	"localHeadAfterCapture": "85d81cb13b4bb57e384e00372056291982f36835",
+	"localRemoteTrackingRevision": "aa0e050e0f53b09d0cbfd088ed957cb74112e3dc",
+	"profileRevision": "b6e66e05be7fe14607be53caddd84d5ddc616ded",
+	"description": {
+		"en": "Native macOS Jev proxy and decision observability, in development",
+		"zh": "开发中的 macOS 原生 Jev 代理与决策观察应用"
+	},
+	"website": null,
+	"originalIndependentLogo": null,
+	"previousIdentity": null,
+	"sourceAdoptionRevision": "aa0e050e0f53b09d0cbfd088ed957cb74112e3dc",
+	"sourceAdoptionScope": "Brand-only commit based on remote main; it does not publish or identify the inspected implementation.",
+	"scope": "Publication intake for Hexly catalogue and first approved identity; application implementation remains independently developed.",
+	"provenanceNote": "Exact local file bytes and status are preserved. No inspected-content remote revision is asserted. Logo adoption has its own independent commit.",
+	"developmentNote": "The README still describes the earlier design-only phase. Package.swift and local Swift sources substantiate the application foundation; uncommitted work is not treated as released functionality.",
+	"files": [
+		{
+			"source": "AGENTS.md",
+			"archive": "docs/sources/falcon-2026-09-25-publication/AGENTS.md",
+			"sha256": "ead4ae48d39ab4a0bcc0740a8520c888d638b862510128220fed622f629424cd",
+			"bytes": 5162,
+			"gitStatus": ""
+		},
+		{
+			"source": "README.md",
+			"archive": "docs/sources/falcon-2026-09-25-publication/README.md",
+			"sha256": "14487ba8dedc687e53405b17f47340fed5c0693eeaaaab74ae3a975aa0fe0b86",
+			"bytes": 1831,
+			"gitStatus": ""
+		},
+		{
+			"source": "Package.swift",
+			"archive": "docs/sources/falcon-2026-09-25-publication/Package.swift",
+			"sha256": "a3da2be0a9a53a2d9aeef75a5989ee18435b175c490cffd01da179c3ab809f2b",
+			"bytes": 1246,
+			"gitStatus": ""
+		},
+		{
+			"source": "docs/01-product.md",
+			"archive": "docs/sources/falcon-2026-09-25-publication/docs/01-product.md",
+			"sha256": "82553f2c4a6b35d7f39ca479781ced25277a1033017f7cd3d3b3607c9b7dcc23",
+			"bytes": 6401,
+			"gitStatus": ""
+		},
+		{
+			"source": "docs/02-architecture.md",
+			"archive": "docs/sources/falcon-2026-09-25-publication/docs/02-architecture.md",
+			"sha256": "be0ff991279e448e290eb4f5d1c32d5ffe5b49e7db3e74a76269dc77c7c500fb",
+			"bytes": 16171,
+			"gitStatus": ""
+		},
+		{
+			"source": "Sources/Falcon/App/FalconApp.swift",
+			"archive": "docs/sources/falcon-2026-09-25-publication/Sources/Falcon/App/FalconApp.swift",
+			"sha256": "0a5c46cf48adec75df562fc1f7e0cde656cbdb3a7fcf8b9a755ade2e6f2060f4",
+			"bytes": 5446,
+			"gitStatus": "M Sources/Falcon/App/FalconApp.swift"
+		},
+		{
+			"source": "Sources/FalconCore/Domain/Models.swift",
+			"archive": "docs/sources/falcon-2026-09-25-publication/Sources/FalconCore/Domain/Models.swift",
+			"sha256": "405e2411fb4cb8d05b5694450f3b45fa1e79fa097c09cbb585e3035825355fc3",
+			"bytes": 13641,
+			"gitStatus": ""
+		}
+	]
+}

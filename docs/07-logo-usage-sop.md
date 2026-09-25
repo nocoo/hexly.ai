@@ -301,3 +301,20 @@ masters. Concurrent application development retains ownership of its UI
 consumers; this task provides the explicitly requested root handoff. The
 complete Hexly campaign kit, source evidence and authorized release scope
 are recorded in [Rio onboarding](32-rio-onboarding.md).
+
+## Falcon and Kite — first bird identities, 2026-09-25
+
+The owner approved Falcon study `2026-09-25-03` and Kite study
+`2026-09-25-02`. Selected finishing passes are `02` and `03`. Root `logo.png`
+is the exact transparent foreground; `assets/brand/icon.png` and
+`icon-rounded.png` are large presentation assets. Ten PNG sizes, native
+palette samples, protected-head clearance and original-pixel checks are retained
+with each study. The first identities have no fictional predecessor.
+
+Brand-only source commits were published from isolated origin-based worktrees:
+Falcon `aa0e050e0f53b09d0cbfd088ed957cb74112e3dc`; Kite's exact revision and
+both public-byte verifications are in the dated brand-adoption receipts under
+`docs/sources/`. These revisions contain no application UI consumers. Local
+application implementation remains independently owned and was not published
+by onboarding. Future app integration must follow the transparent-small-mark and
+platform-icon rules above.

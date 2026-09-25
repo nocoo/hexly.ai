@@ -1,0 +1,73 @@
+{
+	"repository": "https://github.com/nocoo/kite",
+	"date": "2026-09-25",
+	"capturedAt": "2026-09-24T23:45:08.594Z",
+	"revision": null,
+	"localHead": "b9f3797676845ca592bb0601454d6ab9ca94c925",
+	"localHeadAfterCapture": "b9f3797676845ca592bb0601454d6ab9ca94c925",
+	"localRemoteTrackingRevision": "704ae3833c9bf752ae7785d9aa6faa7756fefbbf",
+	"profileRevision": "b6e66e05be7fe14607be53caddd84d5ddc616ded",
+	"description": {
+		"en": "Local Pi execution-trace collection for inspection and visualization",
+		"zh": "面向检查与可视化的本地 Pi 执行轨迹采集"
+	},
+	"website": null,
+	"originalIndependentLogo": null,
+	"previousIdentity": null,
+	"sourceAdoptionRevision": "704ae3833c9bf752ae7785d9aa6faa7756fefbbf",
+	"sourceAdoptionScope": "Brand-only commit based on remote main; it does not publish or identify the inspected implementation.",
+	"scope": "Publication intake for Hexly catalogue and first approved identity; application implementation remains independently developed.",
+	"provenanceNote": "Exact local file bytes and status are preserved. No inspected-content remote revision is asserted. Logo adoption has its own independent commit.",
+	"developmentNote": "The collector README is the documented baseline. Concurrent uncommitted web dependencies and UI work may be present; no visual interface or end-to-end source release is asserted.",
+	"files": [
+		{
+			"source": "AGENTS.md",
+			"archive": "docs/sources/kite-2026-09-25-publication/AGENTS.md",
+			"sha256": "9dc22eb83b21a3d4542fb1a5dd6209b8d6a4dc115c1139762f850bc79be3e8a7",
+			"bytes": 2559,
+			"gitStatus": ""
+		},
+		{
+			"source": "README.md",
+			"archive": "docs/sources/kite-2026-09-25-publication/README.md",
+			"sha256": "10ed2a6432e1547ec373ecaa3814ade75f32fb299cdd6a81ed0491f03c2db598",
+			"bytes": 3685,
+			"gitStatus": ""
+		},
+		{
+			"source": "package.json",
+			"archive": "docs/sources/kite-2026-09-25-publication/package.json",
+			"sha256": "c5cdad81e1227fbbd96e7490ae5c55e584d1c36188c8795a9d50083eae8c7262",
+			"bytes": 1101,
+			"gitStatus": "M package.json"
+		},
+		{
+			"source": "docs/collector.md",
+			"archive": "docs/sources/kite-2026-09-25-publication/docs/collector.md",
+			"sha256": "9c0502028d94d1103f13765cedcbe8a0f1004941bae2958748a8c46d132e892c",
+			"bytes": 8023,
+			"gitStatus": ""
+		},
+		{
+			"source": "src/schema.ts",
+			"archive": "docs/sources/kite-2026-09-25-publication/src/schema.ts",
+			"sha256": "5a52e2f05f4eeea726df39db64478fb081ef60cb4dc2eb100142ae509e075b46",
+			"bytes": 3073,
+			"gitStatus": ""
+		},
+		{
+			"source": "src/cli.ts",
+			"archive": "docs/sources/kite-2026-09-25-publication/src/cli.ts",
+			"sha256": "2a52d7eea9a1cffe35b6c9019bb339934cbe34256e0212e61dc9ea8d90ca3fee",
+			"bytes": 2857,
+			"gitStatus": ""
+		},
+		{
+			"source": "src/pi-extension.ts",
+			"archive": "docs/sources/kite-2026-09-25-publication/src/pi-extension.ts",
+			"sha256": "073938f2558cfc4e47c2e5d3741dcf8fb1cf4b1c67417f5e7ad307dbd1c5985f",
+			"bytes": 5279,
+			"gitStatus": ""
+		}
+	]
+}

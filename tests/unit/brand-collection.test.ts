@@ -27,6 +27,8 @@ const baselineProjects = projects.filter(
 			"zeppelin",
 			"eagle",
 			"rio",
+			"falcon",
+			"kite",
 		].includes(p.id),
 );
 const targetIds = inventory.projects
@@ -46,7 +48,7 @@ describe("complete Hexly campaign archives", () => {
 		);
 		expect(targets).toHaveLength(54);
 		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(53);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(58);
+		expect(projects.filter((p) => !p.archived)).toHaveLength(60);
 		expect(projects.filter((p) => p.archived)).toHaveLength(21);
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);

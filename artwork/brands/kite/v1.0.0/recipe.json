@@ -1,0 +1,106 @@
+{
+	"schemaVersion": 1,
+	"project": "kite",
+	"brandVersion": "1.0.0",
+	"designedAt": "2026-09-25",
+	"siteBaseline": "61e738255a1d2f41a0e7aa638dc1283c7e8d5377",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2",
+	"series": "animal",
+	"sourceArchive": "artwork/logo-family/kite/2026-09-25-02",
+	"identityGeneratedForThisRelease": true,
+	"caption": {
+		"en": "Follow the execution.",
+		"zh": "看见执行的过程。"
+	},
+	"description": {
+		"en": "An off-center multicolored red kite head.",
+		"zh": "偏心构图的多彩红鸢头部。"
+	},
+	"foreground": {
+		"path": "/logos/family/kite/2026-09-25-02/03/transparent.png",
+		"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Woodland-edge leaves",
+			"zh": "林缘疏叶"
+		},
+		"description": {
+			"en": "Authored quiet habitat foliage, independent of the approved bird foreground.",
+			"zh": "独立于已批准鸟类前景的安静栖地叶片纹样。"
+		},
+		"source": "artwork/logo-family/kite/2026-09-25-02/finishing/03/settings.json",
+		"sourceSha256": "895f5a29018ad19d3d0d7de40bb969a516a54b528c6564b2d49af4d5549fd4d7",
+		"layers": [
+			{
+				"d": "M99 103Q171 187 201 347 M128 141Q171 115 209 125Q183 161 128 141 M160 192Q117 169 90 181Q111 213 160 192 M183 252Q221 225 255 242Q238 270 183 252 M268 560Q193 592 124 698 M214 593Q221 630 203 655 M173 639Q148 614 115 623",
+				"tone": "motif",
+				"strokeWidth": 2.0
+			},
+			{
+				"d": "M211 188Q235 155 260 174Q247 199 211 188 M143 667Q110 673 97 706Q130 708 143 667",
+				"tone": "ribbon"
+			}
+		],
+		"bounds": [90.0, 103.0, 268.0, 706.0930232558139],
+		"transform": {
+			"scale": 0.7163074075502256,
+			"x": 127.78097404850962,
+			"y": -33.77966297767324,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete approved foreground and project-specific supporting texture; no new model call during kit assembly, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "portrait",
+		"entryEdges": ["right", "bottom"],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Kite",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"canvasPaddingPx": 16,
+		"width": 266.583,
+		"height": 132.94,
+		"glyphBoundsUnits": [
+			69.499755859375, -14, 1745.0901807702105, 707.00048828125
+		]
+	},
+	"sourceScope": "Owner approved these exact native Logo bytes and instructed source adoption and publication. Decorative generated textures have a separate checkpoint.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve the adopted shape, proportions, native material colors and exact file bytes.",
+		"productUI": "Independent product UI is under development; no Hexly campaign tokens replace its theme.",
+		"campaignInterpretation": "Reuse the owner-approved, source-adopted bird foreground without recoloring; wide/mobile layouts and habitat motifs are independent authored compositions.",
+		"localAccent": "Use sampled artwork accents without modifying the Logo."
+	},
+	"officialProjectIdentity": {
+		"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/logo.png",
+		"path": "/logos/originals/kite-family-2026-09-25-02-03.png",
+		"repositoryRevision": "704ae3833c9bf752ae7785d9aa6faa7756fefbbf"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The exact approved foreground is reused without redrawing or recoloring. Native source and placement history remain archived."
+	}
+}

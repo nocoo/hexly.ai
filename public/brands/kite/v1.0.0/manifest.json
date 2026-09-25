@@ -1,0 +1,401 @@
+{
+	"$schema": "https://hexly.ai/brands/schema-v2.json",
+	"schemaVersion": 2,
+	"project": "kite",
+	"version": "1.0.0",
+	"method": "archived-artwork",
+	"designedAt": "2026-09-13",
+	"canonical": "https://hexly.ai/projects/kite#brand",
+	"root": "https://hexly.ai/brands/kite/v1.0.0",
+	"source": "artwork/brands/kite/v1.0.0",
+	"brandBaseline": "61e738255a1d2f41a0e7aa638dc1283c7e8d5377",
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"productUIChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"officialProjectIdentity": {
+		"role": "official-project-identity",
+		"path": "/logos/originals/kite-family-2026-09-25-02-03.png",
+		"export": "/brands/kite/v1.0.0/official-logo.png",
+		"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6",
+		"bytes": 2284290,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "da77b6931e5805d84dba557d68bb68dc063c124979f3384fda6e21f581034639",
+		"edgePixels": {
+			"top": 0,
+			"right": 1497,
+			"bottom": 391,
+			"left": 0
+		},
+		"sourceUrl": "https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/logo.png",
+		"sourceRepositoryRevision": "704ae3833c9bf752ae7785d9aa6faa7756fefbbf",
+		"modified": false
+	},
+	"campaignInterpretation": {
+		"role": "hexly-campaign-interpretation",
+		"path": "/logos/family/kite/2026-09-25-02/03/transparent.png",
+		"export": "/brands/kite/v1.0.0/logo.png",
+		"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6",
+		"bytes": 2284290,
+		"width": 2048,
+		"height": 2048,
+		"channels": 4,
+		"rgbaSha256": "da77b6931e5805d84dba557d68bb68dc063c124979f3384fda6e21f581034639",
+		"edgePixels": {
+			"top": 0,
+			"right": 1497,
+			"bottom": 391,
+			"left": 0
+		},
+		"sameBytesAsOfficial": true,
+		"sourceMethod": "gpt-image-2",
+		"series": "animal",
+		"sourceAdoptionStatus": "adopted",
+		"replacesOfficialIdentity": false,
+		"newGenerationCalls": 0
+	},
+	"hero": {
+		"method": "authored-composition",
+		"nativeGPTOutput": false,
+		"crop": false,
+		"recolor": false,
+		"placements": {
+			"wide": {
+				"width": 2400,
+				"height": 960,
+				"artworkSize": 960,
+				"left": 1440,
+				"top": 0,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			},
+			"square": {
+				"width": 1024,
+				"height": 1024,
+				"artworkSize": 960,
+				"left": 64,
+				"top": 64,
+				"scale": 0.46875,
+				"crop": false,
+				"recolor": false,
+				"entry": true,
+				"paperStage": null
+			}
+		}
+	},
+	"license": "Separated source rights in license.txt; MIT only for authored support work, SIL OFL 1.1 for actual font resources",
+	"sourceAdoption": "This Hexly campaign kit has no new source-repository adoption; existing catalogue provenance is unchanged",
+	"files": [
+		{
+			"path": "/brands/kite/v1.0.0/apple-touch-icon.png",
+			"role": "180px opaque Apple touch presentation; platform masks the square",
+			"bytes": 48713,
+			"sha256": "735bbebdfa6f8a9890f28ce017dd262f5990388ccbc14a99be112050a96ef03a"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/favicon.ico",
+			"role": "Real ICO, six PNG-backed transparent campaign entries: 16/32/48/64/128/256px",
+			"bytes": 105158,
+			"sha256": "7fb79e9eead002a8f74f79cb0939b540bb56f7e78e0a88ab798067e5036bbc4c"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/geist-mono-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4498,
+			"sha256": "cc815ed4fc045f0e991abb10395b7932bd028c6a067deb13316d6002105074e6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/geist-mono.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 23128,
+			"sha256": "684ad5b531f81d43c1e8c7038262d5db7cdc1f68006e04d6c7769efa8d33c8cc"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/guide.md",
+			"role": "Project-specific bilingual usage, color scope, minimum sizes, original rights and verified immutable integration paths",
+			"bytes": 6436,
+			"sha256": "7fa6995ac8bd250e2fa6a3fbc950a42cbd70999681c200f2f49125d916a3aeba"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hero-dark.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 755709,
+			"sha256": "01ffb8e0803cf70e7e42d5cb7fd55c6026582e02f8e7a71064c80c78cf43a048"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hero-dark.webp",
+			"role": "2400×960 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 70618,
+			"sha256": "eacc315ffa9176c35a3372cf64ab75925d7c3d84f7ab7ef7d32e2829a7dfade3"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hero-square-dark.webp",
+			"role": "1024×1024 complete dark campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 61212,
+			"sha256": "645dec4cc29aa93c68f2bf5aa1444be03e2c7619083b19cdd2d845e1227feaa2"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hero-square.webp",
+			"role": "1024×1024 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 61336,
+			"sha256": "28ae1a099f9029a2d8651e93dcab01bd5bcbc2ed8ffec549035f271f92ca1af3"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hero.png",
+			"role": "Lossless authored campaign Hero; not a native GPT Image output and not a replacement project logo",
+			"bytes": 755680,
+			"sha256": "0c1a8860a34eb1b590b81d8e779a86882e0ae931622a3377c8b2a30d44cdb4ba"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hero.webp",
+			"role": "2400×960 complete light campaign canvas; authored composition, no new generation, no crop",
+			"bytes": 70428,
+			"sha256": "abb6db679322306f16f84a96bbae9714dea9bc33cbe373cf6099a22716b7bbd9"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/hexly-mark.svg",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 332,
+			"sha256": "07393a67ffd53e24b23b6ebf0752eb51ebe6de4c8b3d2f2f0b457d274696b787"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/icon-192.png",
+			"role": "192px PWA presentation, purpose any",
+			"bytes": 61301,
+			"sha256": "d2a6c3f400e57516908499fc794d6c39cee439a0f3dfc5a4761742e97c261acb"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/icon-dark-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 250897,
+			"sha256": "4f3cbd7a2f1724c4bafd39ad916842e14c22131a80b41d7ce45a5fce93dd7fa6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/icon-dark.png",
+			"role": "Night presentation of the exact native foreground; independent Hexly theme surface, no animal recoloring",
+			"bytes": 2330170,
+			"sha256": "511df50f24dc0a881a0ac3368fd1ebe5a2a66e208e127c8bcad21103e4641b48"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/icon-light-512.png",
+			"role": "512px square app presentation; use the transparent mark for navigation",
+			"bytes": 352857,
+			"sha256": "3085d10f8c58eeda5b9380af3a8451d333e5dbb7f0e3a6f90979ba039273f491"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/icon-light.png",
+			"role": "Existing approved square presentation bytes (some historical exports are declared upscales); platform supplies masking",
+			"bytes": 3679067,
+			"sha256": "27ac61c927dddb9c4b49391088d9e98f1a4848438002bccfa0caff38d222de08"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/license.txt",
+			"role": "Separated source-artwork rights, MIT for authored support work, and real font license notices",
+			"bytes": 1791,
+			"sha256": "1999ea0571bd8a062282e6bb2404532650a1a179b279bd2d1d2a8fb36400dc9c"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/lockup-dark.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 159249,
+			"sha256": "2f43a18297efdb4c836ab6b149088704cd4787f8e3a0b5bf27064738f20194db"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/lockup-light.png",
+			"role": "Transparent campaign lockup: unchanged raster identity plus licensed outlined type; not native SVG artwork",
+			"bytes": 159273,
+			"sha256": "e9ab75cc2aab0b82c7c037787d888c886a7378d68ba0e640671eb773f342fa6e"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/logo-dark.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 749333,
+			"sha256": "146c0132526fccea0531d9668079eace8480b0fadeaa8799d7f98e42b65b6c5b"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/logo-light.png",
+			"role": "Transparent web mark, no upscale beyond native artwork",
+			"bytes": 749333,
+			"sha256": "146c0132526fccea0531d9668079eace8480b0fadeaa8799d7f98e42b65b6c5b"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/logo.png",
+			"role": "Existing Hexly family foreground at its true native resolution; exact bytes, separate from official identity when different",
+			"bytes": 2284290,
+			"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-1024.png",
+			"role": "1024px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 749333,
+			"sha256": "146c0132526fccea0531d9668079eace8480b0fadeaa8799d7f98e42b65b6c5b"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-128.png",
+			"role": "128px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 20248,
+			"sha256": "ce0376e8795cf31a5e87944467b5a3f5f7efd5209335cf56104ddd656d8d70b8"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-16.png",
+			"role": "16px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 635,
+			"sha256": "3d657e7cfbf753e0fbae2f1e69aaa71fcd5e63b0b0a1f40171d08d2bec6c43a9"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-24.png",
+			"role": "24px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1110,
+			"sha256": "d4c5af9314d2498bbf272ea786c3df9f0b63d8eaa28d330ca3cf90697d28025e"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-256.png",
+			"role": "256px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 73337,
+			"sha256": "18f37176f208e0598cbe06e2d061843124e2b9e43e7e93f26b0b5a120fd9e2ae"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-32.png",
+			"role": "32px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 1734,
+			"sha256": "0678512351315de34a4816d4796e26a1b69443b76f082b5cff201597c3c6f8c4"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-48.png",
+			"role": "48px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 3428,
+			"sha256": "220ebfdef5c6581b91f7dcfb27f5b15050b1b0910d51932efa246ef09be40ae1"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-512.png",
+			"role": "512px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 246526,
+			"sha256": "7826e73cbfd76a290bc6322640bcecd25bb864977b9b435c69bda34c017ad2aa"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-64.png",
+			"role": "64px complete transparent campaign foreground, uniformly downsampled; no recoloring or masking",
+			"bytes": 5674,
+			"sha256": "1beeafce35953ad9b4d5cbbcabb69c654c24d7b10f076547db3eb491c7546602"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-dark.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2284290,
+			"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/mark-light.png",
+			"role": "Exact same campaign foreground in both themes, original colors and proportions",
+			"bytes": 2284290,
+			"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/official-logo.png",
+			"role": "Official/source project identity, exact preserved bytes and original colors; not recolored for Hexly",
+			"bytes": 2284290,
+			"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/prompt.txt",
+			"role": "Exact approved Logo generation prompt; kit assembly made no image-model call",
+			"bytes": 617,
+			"sha256": "54b979bc9270d46c69b9b4c9fc3ec91f37cae101564dba18b8f00670631ee72a"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/provenance.json",
+			"role": "Independent official/campaign roles, exact original generation records, pixel hashes and declared authored derivatives",
+			"bytes": 7214,
+			"sha256": "a3bd3fe2345b7451b08d9368a7cfa46a8a7851c7870f68979fe7755c7d0d7a66"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/review.css",
+			"role": "Shared Hexly campaign specimen styling",
+			"bytes": 8960,
+			"sha256": "d643a6ea336c4b767c05913da30e4f66ab3a31a9e5c10ae65b901d1b4a082237"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/review.html",
+			"role": "Responsive standalone specimens, original/campaign comparison, both themes, sizes, sources and downloads",
+			"bytes": 11353,
+			"sha256": "1ee99b5ced312b23e9617c1fe83fd249a2752136ca0225d2cbb12d71bb6cecc2"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/review.js",
+			"role": "Small accessible theme/view/clipboard controls; no runtime image rendering",
+			"bytes": 1535,
+			"sha256": "0a48936913f182733f27e9caf856825ca8021ad431edae8b74418ba1551b084f"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/space-grotesk-ofl.txt",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 4401,
+			"sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/space-grotesk.woff2",
+			"role": "Exact licensed site resource; unchanged bytes, no recreated brand geometry",
+			"bytes": 22288,
+			"sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/texture-dark.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 5674,
+			"sha256": "815e62b4a3c1239d4d864a33abb8a6f5d966f2f1aca7fd9caa01eff30a97661a"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/texture-dark.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 890,
+			"sha256": "ec4aafcc173eb3730e2e8c0a2b83c91c4bfac0cdb9cadf7fdfe984515033e10a"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/texture-light.png",
+			"role": "512px transparent texture raster; 40px clear perimeter, ≤5.8% combined layer opacity",
+			"bytes": 4814,
+			"sha256": "4d3d3da5800ac789c72972a083f6696587a2d8e5430635162bfa5362288eb3eb"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/texture-light.svg",
+			"role": "512px seamless authored texture from the project's own motif geometry; distinct from the raster identity",
+			"bytes": 891,
+			"sha256": "fbeed501a59bfc92dd53b1918350c26c31646add9ada700dd5604ec85101ce64"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/tokens.json",
+			"role": "Hexly campaign-only tokens; official artwork and product UI palettes are explicitly independent",
+			"bytes": 3567,
+			"sha256": "2398a7cc70363b2dd4ebd2862e728a60628a54d4c2e01ccf4e4fec3c7f554c3b"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/white.png",
+			"role": "Historical white-field presentation retained byte for byte",
+			"bytes": 2121672,
+			"sha256": "a09247bd85958a4841620bb5db3347c1d86375e5dbd9daf7fcc3441667b6384c"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/wordmark-dark.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3408,
+			"sha256": "af2801ada3b4ca12ee1f0f9afb93e78e603bfc45c1d0b593be7b84533e511df6"
+		},
+		{
+			"path": "/brands/kite/v1.0.0/wordmark-light.svg",
+			"role": "Unmodified actual Space Grotesk 600 glyph outlines; full descenders; Hexly campaign typography under OFL",
+			"bytes": 3408,
+			"sha256": "9082b77a41f61f06bbe3a15a3c39a5caf805cc523b31230c557c308afbe07720"
+		}
+	]
+}

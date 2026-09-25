@@ -3,9 +3,9 @@
 Status: The owner approved both revised native head portraits and authorized
 finishing, skill correction and publication. Falcon selects finishing `02` of
 study `2026-09-25-03`; Kite selects finishing `03` of study `2026-09-25-02`.
-Brand-only source commits are prepared in isolated worktrees. Catalogue,
-material publication, complete dev review and the Hexly release are being
-completed separately; this record does not yet claim a production deployment.
+Brand-only source commits are published from isolated worktrees. Catalogue,
+material publication and complete dev review are prepared and verified. The
+exact-revision Hexly release remains pending; no source-application release is claimed.
 
 ## Source intake
 
@@ -179,3 +179,23 @@ catalogue or exported into production texture packs without an exact-byte
 decision. The first brand kits use the separately authored habitat linework
 from the approved Logo finishing recipe. This does not hold the authorized
 Logo/catalogue publication.
+
+## Verification before release
+
+- Native opaque foreground pixels unchanged: Falcon 1,786,245; Kite 1,660,628.
+  Both conservative head regions have zero rounded-outline clipping.
+- Source brand-only commits and public raw GitHub Logo bytes match the selected
+  transparent masters; dated adoption receipts retain exact SHAs.
+- R2 publication verified Falcon 136 objects and Kite 172 objects, including
+  preserved rejected/raw/finishing history. Receipts: `docs/assets/publication.jsonl`.
+- Both local canonical pages and standalone archives passed 22 Chromium review
+  scenarios at 1440/320 px, English/Chinese, light/dark, all three Logo modes,
+  clipboard, original checksums and actual downloads. API thumbnails now use
+  local material resolution during development; no missing images or requests
+  remained in the final review. Working captures are under `.video-work/bird-dev-review/`.
+- 441 unit tests passed; statements 99.54%, branches 98.59%, functions and lines
+  100%. Typecheck, lint, immutable asset/finishing checks and Video Kit checks passed.
+  All 152 HTTP cases passed. The local full browser run passed 214 cases before
+  interruption after four timeouts; those four passed unchanged with one worker.
+  All 438 browser cases must pass on the exact release revision in CI before
+  deployment. Release and production verification are recorded after completion.
