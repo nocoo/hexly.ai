@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import routes from "../data/asset-routes.json" with { type: "json" };
 import storage from "../data/media-storage.json" with { type: "json" };
 
@@ -29,22 +30,23 @@ export function assetKeyForPath(path: string): string | null {
 }
 
 export function assetUrl(value: string): string {
+	const env = import.meta.env;
+	const local =
+		env?.DEV && env.MODE === "development" && env.VITE_LOCAL_MATERIALS === "1";
+	if (local && value.startsWith(`${storage.origin}/`)) {
+		const remote = value.slice(storage.origin.length + 1);
+		const key = remote.split(/[?#]/)[0] ?? "";
+		const path =
+			Object.keys(aliases).find((path) => aliases[path] === key) ??
+			`/${key.replace(/^projects\/([^/]+)\/textures\//, "textures/$1/")}`;
+		if (assetKeyForPath(path) === key)
+			return `${path}${remote.slice(key.length)}`;
+	}
 	const relative = value.startsWith("https://hexly.ai/")
 		? value.slice("https://hexly.ai".length)
 		: value;
 	const path = relative.split(/[?#]/)[0] ?? "";
 	const key = assetKeyForPath(path);
-	const env = (
-		import.meta as ImportMeta & {
-			env?: { DEV?: boolean; MODE?: string; VITE_LOCAL_MATERIALS?: string };
-		}
-	).env;
-	if (
-		key &&
-		env?.DEV &&
-		env.MODE === "development" &&
-		env.VITE_LOCAL_MATERIALS === "1"
-	)
-		return relative;
+	if (key && local) return relative;
 	return key ? `${storage.origin}/${key}${relative.slice(path.length)}` : value;
 }

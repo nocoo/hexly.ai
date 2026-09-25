@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { assetUrl } from "../model/assets";
 import type { Locale, Project } from "../model/project";
 import {
 	type ProjectApi as ApiResult,
@@ -107,7 +108,12 @@ export function ProjectApi({
 						className="api-preview"
 						aria-label={zh ? "API 返回预览" : "API response preview"}
 					>
-						<img src={result.icons.small} width={48} height={48} alt="" />
+						<img
+							src={assetUrl(result.icons.small)}
+							width={48}
+							height={48}
+							alt=""
+						/>
 						<div>
 							<strong>{result.title}</strong>
 							<p>{result.description[locale]}</p>
@@ -130,13 +136,13 @@ export function ProjectApi({
 							{result.logos.map((logo) => (
 								<a
 									key={logo.id}
-									href={logo.url}
+									href={assetUrl(logo.url)}
 									target="_blank"
 									rel="noreferrer"
 									className="api-logo-variant"
 								>
 									<img
-										src={logo.url}
+										src={assetUrl(logo.url)}
 										width={64}
 										height={64}
 										alt={`${result.title} ${logo.id}`}

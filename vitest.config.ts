@@ -2,6 +2,7 @@ import { configDefaults, defineConfig } from "vitest/config";
 
 export default defineConfig({
 	test: {
+		maxWorkers: 4,
 		include: [
 			"tests/unit/**/*.test.ts",
 			"packages/video-kit/tests/**/*.test.ts",
