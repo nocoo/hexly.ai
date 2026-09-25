@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.0] - 2026-09-25
+
+### Documentation
+
+- prepare falcon and kite identity intake ([4688dac](https://github.com/nocoo/hexly.ai/commit/4688dacccc09ce5d6e40b244c70bc923e5fd075d))
+- archive falcon and kite raw candidates ([07feaaf](https://github.com/nocoo/hexly.ai/commit/07feaaf8e30c003d58dead58d27b26a7aa4cf245))
+- refocus bird logos on off-center heads ([1fb266f](https://github.com/nocoo/hexly.ai/commit/1fb266f996d920c8a2cb9007fd6111a5a413082f))
+- archive off-center bird head studies ([61e7382](https://github.com/nocoo/hexly.ai/commit/61e738255a1d2f41a0e7aa638dc1283c7e8d5377))
+
+### Features
+
+- finish approved bird head identities ([503395d](https://github.com/nocoo/hexly.ai/commit/503395db976babfb9c9db58bedcd1553d3bb0a45))
+- onboard falcon and kite projects ([af8a1ea](https://github.com/nocoo/hexly.ai/commit/af8a1eaa53c9154df5599f595a5f69bbb574a061))
+
+### Fixes
+
+- load api images in local previews ([99a8474](https://github.com/nocoo/hexly.ai/commit/99a84748ba131c1a16e3433caf8b466231be076d))
+
 ## [1.0.4] - 2026-09-24
 
 ### Documentation
