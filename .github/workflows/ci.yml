@@ -9,44 +9,41 @@ on:
 permissions:
   contents: read
 
-jobs:
-  quality:
-    uses: nocoo/base-ci/.github/workflows/quality.yml@ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f
-    with:
-      runtime-version: "1.4.0"
-      node-version: "26.7.0"
-      install-policy: "project"
-      coverage-path: "coverage"
-      prepare-command: "bun run assets:check"
-      test-command: "bun run test:coverage"
-      lint-command: "bun run lint"
-      typecheck-command: |
-        bun run typecheck
-        bun run check:isolation
-      l2: true
-      l2-command: |
-        bun run test:http
-        bun run deploy:check
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
-  browser:
-    name: L3 Browser E2E
-    uses: nocoo/base-ci/.github/workflows/test-job.yml@ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f
-    with:
-      runtime-version: "1.4.0"
-      node-version: "26.7.0"
-      install-policy: "project"
-      browser: "chromium"
-      # A fresh checkout restores the archived fixtures from R2 before browser tests.
-      timeout-minutes: 25
-      pre-command: "bun run assets:check"
-      command: "bun run test:browser"
-      env-json: |-
-        {
-          "CI": "true",
-          "WRANGLER_LOG_PATH": ".wrangler/browser-ci.log",
-          "WRANGLER_LOG_SANITIZE": "true"
-        }
-      artifact-name: browser-failure-evidence
-      artifact-path: |
-        .test-results/browser/
-        .wrangler/browser-ci.log
+jobs:
+  verify:
+    name: Complete verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CI: "true"
+      WRANGLER_LOG_PATH: ".wrangler/verification.log"
+      WRANGLER_LOG_SANITIZE: "true"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: nocoo/base-ci/.github/actions/setup-js@081cdf665b9c67f233abfcc9242ce0be76ce2bb4
+        with:
+          package-manager: bun
+          runtime-version: "1.4.0"
+          node-version: "26.7.0"
+          install-policy: project
+      - uses: nocoo/base-ci/.github/actions/setup-security-scanners@86ff9032d75b2580f8ea6b0e10db3ca4ce054819
+      - name: Install Chromium
+        run: bun x playwright install --with-deps chromium
+      - name: Verify
+        run: bun run verify
+      - name: Preserve failure evidence
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: verification-failure
+          path: |
+            .test-results/
+            .wrangler/verification.log
+          retention-days: 7

@@ -1,4 +1,4 @@
-import { test as base, expect } from "@playwright/test";
+import { test as base, devices, expect } from "@playwright/test";
 import { readInventory } from "../../scripts/asset-storage";
 import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
@@ -48,3 +48,19 @@ export const test = base.extend<{ assetFixtures: undefined }>({
 	],
 });
 export { expect };
+
+// Browser selection is worker-scoped; describes only override context options.
+export const desktop = {
+	userAgent: devices["Desktop Chrome"].userAgent,
+	viewport: { width: 1440, height: 1000 },
+	deviceScaleFactor: 1,
+	isMobile: false,
+	hasTouch: false,
+};
+export const touch = {
+	userAgent: devices["iPhone 13"].userAgent,
+	viewport: devices["iPhone 13"].viewport,
+	deviceScaleFactor: 3,
+	isMobile: true,
+	hasTouch: true,
+};

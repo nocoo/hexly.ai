@@ -1,9 +1,16 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "./fixtures";
+import { desktop, expect, test, touch } from "./fixtures";
 
-for (const theme of ["light", "dark"] as const) {
+for (const [theme, options] of [
+	["light", desktop],
+	["dark", touch],
+] as const) {
 	test.describe(`${theme} theme`, () => {
-		test.use({ colorScheme: theme });
+		test.use({
+			...options,
+			colorScheme: theme,
+			locale: theme === "dark" ? "zh-CN" : "en-US",
+		});
 		for (const [view, path] of [
 			["directory", "/"],
 			["logo wall", "/logos"],
@@ -19,8 +26,24 @@ for (const theme of ["light", "dark"] as const) {
 				await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 				if (view === "status")
 					await expect(page.locator(".status-demo")).toBeVisible();
-				if (isMobile)
-					await page.getByRole("button", { name: "Switch to Chinese" }).click();
+
+				if (view === "directory") {
+					await expect(page.locator(".site-header .preferences")).toHaveCSS(
+						"border-left-width",
+						isMobile ? "0px" : "1px",
+					);
+					if (isMobile) {
+						await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
+						await expect(page.locator("html")).toHaveAttribute(
+							"data-theme",
+							"dark",
+						);
+						await expect(
+							page.getByRole("button", { name: "主题：深色；切换为浅色" }),
+						).toBeVisible();
+					}
+				}
+
 				await page.evaluate(() => document.fonts.ready);
 				const scan = await new AxeBuilder({ page })
 					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
