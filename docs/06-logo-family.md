@@ -10,12 +10,12 @@ The family supports animal/bird drawings, retained-original presentations and ph
 
 ## Reading the references
 
-The owner's `ref01.jpeg` and `ref02.jpeg` are archived in [the workshop](../artwork/logo-family/references/). They guide presentation; Frogie's original artwork guides its anatomy and drawing.
+The owner's `ref01.jpeg` and `ref02.jpeg` are archived in [the workshop](../artwork/logo-family/references/). They guide off-center composition, breathing room and presentation; Frogie's artwork supplies connected flat-facet drawing language only.
 
 | Element | Observation | Family direction |
 |---|---|---|
 | Background | Animals sit in a related color field: gray on warm gray, white on ice blue, pink on blush, orange on peach. Lightness separates the subject from the tile. | Choose a quieter relative of the animal's dominant hue. Record proposed colors separately from existing project tokens. |
-| Composition | Faces sit to one side, animals enter from an edge, and some heads rise from the bottom. Empty space balances their gaze and body weight. | Give every animal an intentional position. Retain approved compositions; use decoration as a counterweight. |
+| Composition | Faces sit to one side, animals enter from an edge, and some heads rise from the bottom. Empty space balances their gaze and body weight. | Use decisive off-center head placement with generous balancing negative space. Retain approved compositions; decoration is optional. |
 | Material | Broad soft illumination, matte surfaces, restrained highlights, shallow contact shadows, and barely visible background motifs. | Express animal volume through flat facets. Add quiet surface detail and soft separation from the background in the presentation layer. |
 | Hierarchy | One expression dominates. Background ornament has very little contrast; limbs and accessories support the face. | Keep facial features readable and control facet density. Use fewer, larger planes where they improve recognition. |
 
@@ -23,26 +23,24 @@ Measured empty-background patches from `ref02.jpeg` are warm gray `#ACA59F`, ice
 
 ## Drawing rules
 
-The following facet, anatomy and interest-point rules apply to animal and bird
-studies. Physical-object studies use believable 3D construction and materials;
-they share the generation, approval, finishing and archive requirements.
+The owner simplified the animal and bird direction on 2026-09-25 after reviewing
+Falcon and Kite. New briefs state the species, head focus, strong off-center
+composition, multicolor and connected flat fragments. The model chooses the
+angle, gesture, palette and optional accents. Physical-object studies retain
+their separate believable 3D construction and material rules.
 
-- Build the animal from contiguous irregular polygons and triangles with clean shared edges. Flat colors within each plane describe volume through differences in hue and lightness.
-- Show these facets across the animal's main surfaces. Smooth sculptural anatomy with a small patch of colorful inlays is insufficient, even when the presentation has tactile depth.
-- Preserve a clear dominant hue. Place multicolored fragments in a limited accent such as Frogie's musical notes or Pew's tongue.
-- Give every animal one secondary interest point extending into the surrounding negative space. An attached tongue, detached notes, or a separate flame qualifies; eyes, belly glow, and internal wing inlays alone do not. The pose or gaze connects this accent to the animal.
-- Concentrate multicolored decoration in that one coherent accent group. Bogo's mouth-held flowers and leaves form one sprig; additional rainbow nose freckles compete with it. Keep the remaining animal within its natural dominant palette.
-- Keep the face primary: larger planes across broad surfaces, smaller planes only where expression and anatomy need them.
-- Use a consistent light direction and restrained highlights. Quiet tactile detail must leave the color planes legible at small sizes.
-- Large animals use head portraits. Small animals may use compact full-body poses.
-- Preserve animal anatomy beneath an expressive face while keeping the requested framing. A head close-up contains the face, signature accessory, and at most a small neck base or shoulder. The unseen quadruped determines that anatomy; its torso and legs stay outside the viewfinder. Do not replace the close-up with a full-body picture to demonstrate natural posture, or turn the visible neck and shoulder into a seated human torso.
-- Give the logo a substantial main mass. Broad head/body/wing areas supply visual fullness; distant accents and extended limbs do not. Keep the interest point close to the animal, avoid large internal gaps, and preserve safe borders without shrinking the animal into an illustration.
-- For insects, use scale and restrained species cues without automatically adding cute faces. Avoid both intimidating macro anatomy and generic baby characters. Several small, naturally proportioned insects may support a richer owner-directed scene.
-- Large portraits may enter naturally from a square frame's bottom or side. Let the neck and shoulders continue beyond the canvas; keep the face and expression intact. Do not terminate the neck with a circular medallion or a floating round cut. Keep important features clear of the final rounded corners, and distinguish intentional canvas-edge entry from accidental clipping.
-- If a native portrait is too full, reconsider the camera and natural anatomy together. A buffalo needs a short strong neck and broad shoulders; a wider bird portrait reveals shoulder and wing roots; a dog may add a relaxed paw when the gesture suits its identity. Do not stretch necks to fill a lower inset or repeat edge pixels. When the owner allows recomposition, use the liked original and give the model freedom over pose, shoulders, and crop. Fixed guides are optional and must not lock in the anatomical problem. Archive every guide and diagnostic pass; numerical clearance alone does not establish visual quality.
-- Treat the square as a viewfinder capturing a charming decisive moment. Direct the animal, basic action, dominant palette, multicolored interest point, and connected fragments; leave exact pose, camera distance, overlap, and crop to the model. Use focal length to suggest a portrait or wider view and depth of field to guide attention. These are composition metaphors; the source remains crisp flat facets on white. Bogo study 03 uses an 85 mm portrait perspective and a buffalo turning with a flower sprig and a knowing wink.
-- For an approved logo, preserve the animal, pose, camera, expression, composition, and signature decoration. For a logo the owner explicitly dislikes, preserve the animal and redesign the camera, framing, pose, and decoration.
-- Design a distinct background motif for each project. Frogie's flowing curves, Pew's tapered stripe rhythm, and Firefly's light orbits share material and contrast, not identical paths. Save named pattern geometry in the recipe; merely recoloring another project's stencil is insufficient.
+- Keep the species recognizable and the head primary, balanced by substantial negative space. Let the composition enter naturally from a canvas edge when appropriate.
+- Use connected irregular flat polygons with clean shared edges. The references supply this drawing language without dictating another animal's anatomy or palette.
+- Keep prompts short. Do not add a mandatory external interest point, signature accessory, focal length, eye count, body ratio, pose or fixed palette. An accessory is optional unless the owner requests it for that identity.
+- Read the supplied boards for asymmetry and breathing room, not only paper texture. Multicolor can belong to the animal itself; it need not be confined to a separate ornament.
+- Preserve approved artwork and exact raw-image decisions. Rejected outputs remain in their original studies; a replacement receives its own prompt, request and review record.
+- After approval, inspect species recognition, light/dark edges and small-size legibility. Check protected features against the actual rounded outline; record intentional edge entries separately. Finishing must not redraw or recolor the accepted image.
+- Compose each project's quiet habitat field independently after raw approval. Keep authored motif geometry and presentation layers separate from the transparent identity.
+
+Historical study notes below preserve the directions used at the time. Their
+accessories, camera metaphors and palette choices are not requirements for new
+animal or bird requests. [Falcon and Kite](34-falcon-kite-onboarding.md) record the
+owner-approved examples of the current direction.
 
 ## Frogie study 01
 
@@ -54,14 +52,14 @@ Finishing 03 deepens the base to `#BBCB9E`, with light `#DCE6C6`, shade `#9DAF7D
 
 ## Generation and finishing
 
-1. Save the brief, exact prompt, and ordered reference roles before requesting an image. The original defines identity. For the first Frogie study, images 2 and 3 were presentation references. Subsequent studies use the approved Frogie as image 2 for drawing language, followed by the two presentation references.
-2. Use Azure Foundry / OpenAI v1 with `gpt-image-2`, the existing workflow `agi-image-generation` skill's `api-key` authentication, and credentials loaded through direnv.
+1. Save the brief, exact prompt, and ordered reference roles before requesting an image. An approved original defines identity. For new animal and bird work, put the supplied asymmetry boards first and the flat-facet drawing reference after them; record the actual order. Historical requests retain their original ordering.
+2. Use Azure Foundry / OpenAI v1 with the current primary-identity default `gpt-image-2.5-sunburst`, the existing workflow `agi-image-generation` skill's `api-key` authentication, and credentials loaded through direnv.
 3. Request one high-quality 2048 × 2048 PNG on uniform pure white. The reference-guided request uses `/images/edits`. Verify the decoded dimensions; do not describe an upscale as native generation.
 4. Preserve the returned PNG bytes, prompt, reference hashes, sanitized request, response metadata, request ID, and usage. Never save a key or authenticated headers.
 5. **Immediately show the untouched returned image for owner confirmation.** The generator writes `raw-review.json` with a pending status and the exact image hash. Do not extract, clean, composite, resize, build a full review page, or integrate that image before confirmation. Record the owner's actual decision; rejected images and feedback stay in their original studies. A replacement is a new pending study.
 6. After raw approval, remove white locally. The finishing tool requires `raw-review.json` to approve the exact source hash. Preserve enclosed white eye highlights, disconnected decorations, fine edges, and all source colors. Save the alpha mask and edge settings.
 7. Compose the project-specific colored tile and soft shadows separately. Keep a transparent foreground master, a full square icon, and rounded presentation exports. Preserve intermediate layers.
-8. Review the original and candidate together at artwork, app-icon, sidebar, and favicon sizes, on both light and dark backgrounds. Record actual limitations before promotion.
+8. Review the candidate at artwork, app-icon, sidebar, and favicon sizes on both light and dark backgrounds. Include the preserved original for redesigns; first identities use a single specimen. Record actual limitations before promotion.
 
 The raw checkpoint and complete finished review are separate handoffs. Do not delay the first handoff to produce the second. An already retained foreground may receive an explicitly requested background-only pass without another raw approval; record the existing selection or instruction rather than inventing a new confirmation.
 

@@ -1,0 +1,356 @@
+{
+	"createdAt": "2026-09-24T23:31:14.348Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "2d4fd9e0f5abffc0dcebcd2e4880f685897ffc5137304b6d579f282faf110ca7",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "falcon",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#bcc8dc",
+			"light": "#e0e7f0",
+			"shade": "#929fb7",
+			"motif": "#60738f",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60925003,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Rock-ledge grasses",
+				"description": "Independent quiet habitat foliage in the negative space; the approved off-center head keeps its native placement.",
+				"layers": [
+					{
+						"d": "M787 80Q752 215 692 357 M758 166Q793 121 817 116 M740 209Q773 172 803 169 M717 271Q751 230 776 230 M922 643Q866 592 840 510 M876 584Q923 572 956 594 M861 550Q901 527 927 536",
+						"tone": "motif",
+						"strokeWidth": 2.2
+					},
+					{
+						"d": "M705 238Q698 207 719 179Q733 211 705 238 M786 147Q798 123 824 120Q819 143 786 147 M904 574Q919 551 943 559Q942 581 904 574",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					85,
+					65,
+					37
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					71,
+					56,
+					30
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"left",
+				"bottom"
+			],
+			"note": "Preserve the exact owner-approved head framing. Side and lower entries are intentional viewfinder intersections. No rescaling, continuation, crop or recentering."
+		},
+		"matte": {
+			"minimumChannel": 246,
+			"maximumChroma": 9,
+			"backgroundRgb": [
+				250,
+				251,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Conservative border-connected near-white extraction. Preserve pale feathers and enclosed eye highlights; verify dark/light edges and all opaque foreground colors."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2401896,
+		"foregroundPixels": 1792408,
+		"softEdgePixels": 5913,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 1445,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 0,
+			"right": 1445,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47610
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1971,
+			"sha256": "e9d22fd938f1899e2099e7ede95e3fb58eb8970952484f62875c79de23731120"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1110,
+			"sha256": "829aae3b6390fc9a49e8bce9a5398da0f4c16f8bb1d426f909402450dc5f0890"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2207874,
+			"sha256": "32029b104efdae8b856b3f3407d857df0cb37700f727929c45e2f7f9e38aa638"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 46113,
+			"sha256": "9d3c9025a160c895030bfdbb48e347198f0600ab7f738095b7e0835ccd56335b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 817,
+			"sha256": "6e092a540271232cdcb059f93bf04cfc0cefbd0aa0ff0ea6862f5ead791576de"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1830435,
+			"sha256": "774ba476f30e999326b3c0450391317a2fddcc4fe7c1fdd87b2a934d3ae0ce10"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 132913,
+			"sha256": "96d84298e312bed620256264fb365caff78d70e788ac0d52a7bf4569e85387ac"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 110544,
+			"sha256": "4557d1d0cd36c868ceff3d26a1e56e3325a3e0e5283d964db5a194ccc6a55f1a"
+		},
+		{
+			"path": "exports/falcon-transparent-2048.png",
+			"bytes": 2207874,
+			"sha256": "32029b104efdae8b856b3f3407d857df0cb37700f727929c45e2f7f9e38aa638"
+		},
+		{
+			"path": "exports/falcon-icon-2048.png",
+			"bytes": 3590058,
+			"sha256": "3c5e19c779da518f4cf041425382288bfe8b77f98e62d25b1cace740faef69ed"
+		},
+		{
+			"path": "exports/falcon-rounded-2048.png",
+			"bytes": 3489964,
+			"sha256": "0330a8170c4a0a094a936bb2e6019d3d91d2d29ce3abcf39290493597f23770d"
+		},
+		{
+			"path": "exports/falcon-transparent-1024.png",
+			"bytes": 771722,
+			"sha256": "97866b2926729041c11b694794298ee96757a8684028641cd2aed5a6e3843b6e"
+		},
+		{
+			"path": "exports/falcon-icon-1024.png",
+			"bytes": 1036609,
+			"sha256": "2b8782b3146232424849bf5c6cf4ed1d72c1365809dc4cee693198b478c436c0"
+		},
+		{
+			"path": "exports/falcon-rounded-1024.png",
+			"bytes": 1025142,
+			"sha256": "aa0243561cb5d8d6e256f6bcaef8982381b83f7314954a7f55e36e6e94ed7193"
+		},
+		{
+			"path": "exports/falcon-transparent-512.png",
+			"bytes": 266802,
+			"sha256": "3bb662162b35aec55ec060a25030538674f93b4febf713fae106ba8d6911ccf7"
+		},
+		{
+			"path": "exports/falcon-icon-512.png",
+			"bytes": 376128,
+			"sha256": "7f4ca2878ead8d3e9ea42a469616a39d4e092bcc28b41574f6a07b2a8868a8e5"
+		},
+		{
+			"path": "exports/falcon-rounded-512.png",
+			"bytes": 372305,
+			"sha256": "bd30d8958c577e959b73365f2f41122f90bb53247dd0ea22d1a2ce58b4bdcdaa"
+		},
+		{
+			"path": "exports/falcon-transparent-256.png",
+			"bytes": 85246,
+			"sha256": "91d2c8b81924e0d2d4c9ae2dcbeb4f7c15683c5af3a448578df30398087a5866"
+		},
+		{
+			"path": "exports/falcon-icon-256.png",
+			"bytes": 99003,
+			"sha256": "5b10c8db9081e28134cfbc80059be3b08592d59d621b293bd8950113d5a0496a"
+		},
+		{
+			"path": "exports/falcon-rounded-256.png",
+			"bytes": 100593,
+			"sha256": "8383290feb76e104d6a561636dd3a0265532e8de87a7a633f2270b4c88fd9dfa"
+		},
+		{
+			"path": "exports/falcon-transparent-128.png",
+			"bytes": 24766,
+			"sha256": "47758c3c16bff29ecb1366125cf5f608050966b470c92a52c8073ee26ee4f216"
+		},
+		{
+			"path": "exports/falcon-icon-128.png",
+			"bytes": 29882,
+			"sha256": "29b82c6595ec7d43e8b2a271966ba4fbe3866167ff493c9cc2e883835b4b3222"
+		},
+		{
+			"path": "exports/falcon-rounded-128.png",
+			"bytes": 30960,
+			"sha256": "286f143bd6240cf3da52f34b5f66020bb588df45ab2422b31fd4235871e9d6f3"
+		},
+		{
+			"path": "exports/falcon-transparent-64.png",
+			"bytes": 6932,
+			"sha256": "377ec4ce9013897aabad66ca793046240e8ab9cc238f468fde2dd8f211ec63d7"
+		},
+		{
+			"path": "exports/falcon-icon-64.png",
+			"bytes": 9383,
+			"sha256": "b1134ef29e4eb4e5b96b34d1ac62dbbd56cb810f1efc723b24f23243ce88b32d"
+		},
+		{
+			"path": "exports/falcon-rounded-64.png",
+			"bytes": 9855,
+			"sha256": "8eee0da0a7db726b1b4b2d4b317145a39dfc0cc5bc87c47e8987a26bce3b0829"
+		},
+		{
+			"path": "exports/falcon-transparent-48.png",
+			"bytes": 4147,
+			"sha256": "b09ac5fe4b4c6cdef88672b4287198c3794caa72fce23e6c63eb6062ce5bee57"
+		},
+		{
+			"path": "exports/falcon-icon-48.png",
+			"bytes": 5480,
+			"sha256": "4988212c84ed8b5380ffe383a4501a26ec43f4ebd54e2782210dcb4d9690e5d5"
+		},
+		{
+			"path": "exports/falcon-rounded-48.png",
+			"bytes": 5849,
+			"sha256": "280746f938b1af090536f2b85751ffeac61207b58cebf78e25c271020d9e8bdb"
+		},
+		{
+			"path": "exports/falcon-transparent-32.png",
+			"bytes": 2071,
+			"sha256": "d63a4b31a8062bebcec6b0efc33f7e62fc48109b5bcc520d6dad067419509605"
+		},
+		{
+			"path": "exports/falcon-icon-32.png",
+			"bytes": 2915,
+			"sha256": "4c7d03861615bd935ae250b70b316c5d1d5a9e41ca658ecae8b8312d62da35da"
+		},
+		{
+			"path": "exports/falcon-rounded-32.png",
+			"bytes": 3065,
+			"sha256": "d2e0f3f1838c87a1d021dc37c7ade1a5fc6a412f88fb8f7cf917f2f7ee77cd04"
+		},
+		{
+			"path": "exports/falcon-transparent-24.png",
+			"bytes": 1314,
+			"sha256": "0804b25f71f7257e82237d5114457a30b801885ab26d496d04d01369302fd931"
+		},
+		{
+			"path": "exports/falcon-icon-24.png",
+			"bytes": 1757,
+			"sha256": "0b43e0ab7668442ca4ad3dd14e36d668c3788452422083aafa747de65e54adca"
+		},
+		{
+			"path": "exports/falcon-rounded-24.png",
+			"bytes": 1895,
+			"sha256": "334b0c4fe42b2e3d2e84469f8ab87b26ab0db7395d2e6e48ebdfd3cb441d19de"
+		},
+		{
+			"path": "exports/falcon-transparent-16.png",
+			"bytes": 741,
+			"sha256": "649883a60b6571be18cc8c646deadc787e26e7f339c362b7aa9ab16dc3072fd2"
+		},
+		{
+			"path": "exports/falcon-icon-16.png",
+			"bytes": 936,
+			"sha256": "bc361b947b1231b9932784eb54a723b9aee0661113a3686ab42a6751f1f5ecef"
+		},
+		{
+			"path": "exports/falcon-rounded-16.png",
+			"bytes": 978,
+			"sha256": "cc62828a118e980f2e3d3228a8d654c98015f78c8474608f16f07aa129c5fade"
+		},
+		{
+			"path": "exports/falcon-white-2048.png",
+			"bytes": 2073820,
+			"sha256": "9a44a3c592812045e65ae37705c0ddb196555e05f0f01a81a57ece2beeb96092"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 734784,
+			"sha256": "a99b91277f727d9f921db5e1ea1dd0961e40d187aa8a36402fc5928f752c9eb2"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 734143,
+			"sha256": "d567729382a0f4e028572f6900440089582f477814154dbec9ec4ae1264bec0f"
+		}
+	]
+}

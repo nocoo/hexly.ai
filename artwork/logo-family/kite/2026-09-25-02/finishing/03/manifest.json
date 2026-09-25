@@ -1,0 +1,366 @@
+{
+	"createdAt": "2026-09-24T23:35:18.253Z",
+	"pass": "03",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.4",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "417279a8e8a0901b22dc42fe38c7eee3a6b090c67617fceaf7b2d312b45047e9",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "kite",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#d8bb9f",
+			"light": "#f0dcc7",
+			"shade": "#b9987c",
+			"motif": "#8e7355",
+			"grainAmplitude": 0.7,
+			"grainSeed": 60925002,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.32,
+			"ribbonOpacity": 0.14,
+			"pattern": {
+				"name": "Woodland-edge leaves",
+				"description": "Independent quiet habitat foliage in the negative space; the approved off-center head keeps its native placement.",
+				"layers": [
+					{
+						"d": "M99 103Q171 187 201 347 M128 141Q171 115 209 125Q183 161 128 141 M160 192Q117 169 90 181Q111 213 160 192 M183 252Q221 225 255 242Q238 270 183 252 M268 560Q193 592 124 698 M214 593Q221 630 203 655 M173 639Q148 614 115 623",
+						"tone": "motif",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M211 188Q235 155 260 174Q247 199 211 188 M143 667Q110 673 97 706Q130 708 143 667",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					85,
+					65,
+					37
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					71,
+					56,
+					30
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				103,
+				103
+			],
+			"intentionalEdges": [
+				"right",
+				"bottom"
+			],
+			"note": "Uniform 90% placement anchored to the original right/bottom entries protects the upper feather tip from the 23% rounded corner. Approved extracted pixels are not redrawn or recolored; native unscaled extraction remains archived."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Native top-edge matte includes RGB 250,253,245 pixels; a 246 threshold left visible specks. Border-connected threshold 239/chroma 16 removes that matte. No component deletion; pale anatomy and opaque RGB are verified separately."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2524938,
+		"foregroundPixels": 1669366,
+		"softEdgePixels": 8738,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 783,
+			"top": 90,
+			"right": 2047,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			103,
+			103
+		],
+		"bounds": {
+			"left": 909,
+			"top": 286,
+			"right": 2047,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -194.40404963903603,
+		"clippedPixels": 47412
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2117,
+			"sha256": "895f5a29018ad19d3d0d7de40bb969a516a54b528c6564b2d49af4d5549fd4d7"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1161,
+			"sha256": "c5bc664290ae6df0e2da15b23ac0100d6cc7d8873c29b4147508501ea5030491"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2534354,
+			"sha256": "eaaf530d94a2936501b96589cb3f5e7fa5730c83d8a7ca9c175e03cdab585288"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 61366,
+			"sha256": "2efddcd4ad426d04366f6488772a29e0b5c7771c14065327cb93f4f54786dc7b"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 822,
+			"sha256": "6f4ec0bad55c726e981fdf0e68841c08967a63a830c5d9e0c74e22770e679dd5"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1743748,
+			"sha256": "ef4df1b0de3376dc91f2a12cf84b2cb85a192e65d4c4d4abfc7d924c13aaa160"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2284290,
+			"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 79958,
+			"sha256": "a490b8f703e18b039fe87dc79858b6543b845fe6886b8ac20bcb32aa6f456c3f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 144880,
+			"sha256": "b40b55c1bd99000310b94cd12bfe8429b418b72cf59939555cee4b63a5f5bb83"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 124925,
+			"sha256": "7529003e9ae19df57e6b6cc6f7f378d79d7b44797d06a765abb67d5fcc34a440"
+		},
+		{
+			"path": "exports/kite-transparent-2048.png",
+			"bytes": 2284290,
+			"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6"
+		},
+		{
+			"path": "exports/kite-icon-2048.png",
+			"bytes": 3679067,
+			"sha256": "27ac61c927dddb9c4b49391088d9e98f1a4848438002bccfa0caff38d222de08"
+		},
+		{
+			"path": "exports/kite-rounded-2048.png",
+			"bytes": 3576161,
+			"sha256": "935c8d5002f28b12b27cbad0f820f9b8342b8bb30b3ddda854c32bbc885301e4"
+		},
+		{
+			"path": "exports/kite-transparent-1024.png",
+			"bytes": 749333,
+			"sha256": "146c0132526fccea0531d9668079eace8480b0fadeaa8799d7f98e42b65b6c5b"
+		},
+		{
+			"path": "exports/kite-icon-1024.png",
+			"bytes": 1007377,
+			"sha256": "d63686f22dad9608f81f2566040e92ccf3f9b54e3ea094fb773fb081c0d46d19"
+		},
+		{
+			"path": "exports/kite-rounded-1024.png",
+			"bytes": 996309,
+			"sha256": "8ba35b957694b83d424b8f7e079dd57d9992cdc3ce143fd2bdd76bc6a68e49ed"
+		},
+		{
+			"path": "exports/kite-transparent-512.png",
+			"bytes": 246526,
+			"sha256": "7826e73cbfd76a290bc6322640bcecd25bb864977b9b435c69bda34c017ad2aa"
+		},
+		{
+			"path": "exports/kite-icon-512.png",
+			"bytes": 352857,
+			"sha256": "3085d10f8c58eeda5b9380af3a8451d333e5dbb7f0e3a6f90979ba039273f491"
+		},
+		{
+			"path": "exports/kite-rounded-512.png",
+			"bytes": 349983,
+			"sha256": "08ab34fb247ee00d1ce8a7596cc0d36c8e8d9cbf8985c583423ab56ecbc74639"
+		},
+		{
+			"path": "exports/kite-transparent-256.png",
+			"bytes": 73337,
+			"sha256": "18f37176f208e0598cbe06e2d061843124e2b9e43e7e93f26b0b5a120fd9e2ae"
+		},
+		{
+			"path": "exports/kite-icon-256.png",
+			"bytes": 87220,
+			"sha256": "a7b4a8f2f158bd822fbe45b26cc48a3f7c876257b7a74f36169a84e0a09d5b23"
+		},
+		{
+			"path": "exports/kite-rounded-256.png",
+			"bytes": 88818,
+			"sha256": "4845216891660a137116e82da7d97c7987fb9b6b3bed8b8ef32f27b61e0fa88f"
+		},
+		{
+			"path": "exports/kite-transparent-128.png",
+			"bytes": 20248,
+			"sha256": "ce0376e8795cf31a5e87944467b5a3f5f7efd5209335cf56104ddd656d8d70b8"
+		},
+		{
+			"path": "exports/kite-icon-128.png",
+			"bytes": 25463,
+			"sha256": "536c31bcc1fb792803134ebdafa6442fc3dfd76cfa40eba6714c5d433bf27f81"
+		},
+		{
+			"path": "exports/kite-rounded-128.png",
+			"bytes": 26580,
+			"sha256": "2571a3fe20c922f5c64662f528191aa6faec8c359c1852d3eb89beeba048c00c"
+		},
+		{
+			"path": "exports/kite-transparent-64.png",
+			"bytes": 5674,
+			"sha256": "1beeafce35953ad9b4d5cbbcabb69c654c24d7b10f076547db3eb491c7546602"
+		},
+		{
+			"path": "exports/kite-icon-64.png",
+			"bytes": 8284,
+			"sha256": "97366cdd1dadf19e515219e944974cf36dc5e583eb32fbe835b6d0a4fd2576d9"
+		},
+		{
+			"path": "exports/kite-rounded-64.png",
+			"bytes": 8779,
+			"sha256": "a3be77e265ba789584af1cd514b742d5ca9f283e530c77d3e47e2265639aec1e"
+		},
+		{
+			"path": "exports/kite-transparent-48.png",
+			"bytes": 3428,
+			"sha256": "220ebfdef5c6581b91f7dcfb27f5b15050b1b0910d51932efa246ef09be40ae1"
+		},
+		{
+			"path": "exports/kite-icon-48.png",
+			"bytes": 4989,
+			"sha256": "4ea6285492318dc9a0d07e3e13a008890d8244372e6da726d91b7216269ab582"
+		},
+		{
+			"path": "exports/kite-rounded-48.png",
+			"bytes": 5332,
+			"sha256": "08a5778ecfc9cdb9479b8c45242ec89bcd0474900a5da0ba1b1e081ffa35dd8f"
+		},
+		{
+			"path": "exports/kite-transparent-32.png",
+			"bytes": 1734,
+			"sha256": "0678512351315de34a4816d4796e26a1b69443b76f082b5cff201597c3c6f8c4"
+		},
+		{
+			"path": "exports/kite-icon-32.png",
+			"bytes": 2667,
+			"sha256": "7c93284364df329273cacec3c6d03fdf9c9b30e33fb221ee20aad7cdc9490cc2"
+		},
+		{
+			"path": "exports/kite-rounded-32.png",
+			"bytes": 2842,
+			"sha256": "1524bd0450ac0f4d1f655005e0d50b14862318915f8a0372ba3e46e69eb78735"
+		},
+		{
+			"path": "exports/kite-transparent-24.png",
+			"bytes": 1110,
+			"sha256": "d4c5af9314d2498bbf272ea786c3df9f0b63d8eaa28d330ca3cf90697d28025e"
+		},
+		{
+			"path": "exports/kite-icon-24.png",
+			"bytes": 1687,
+			"sha256": "c1a0ea189f62ff2188f4c42e1cfa6432f07f8b6f9a5c864da5228fa4276b988e"
+		},
+		{
+			"path": "exports/kite-rounded-24.png",
+			"bytes": 1797,
+			"sha256": "ce43374408e1be5c09ba098e7fbd1fc3e841207270b00f3d546c7b0b037fed67"
+		},
+		{
+			"path": "exports/kite-transparent-16.png",
+			"bytes": 635,
+			"sha256": "3d657e7cfbf753e0fbae2f1e69aaa71fcd5e63b0b0a1f40171d08d2bec6c43a9"
+		},
+		{
+			"path": "exports/kite-icon-16.png",
+			"bytes": 883,
+			"sha256": "9c2b80e2103d1a7c5cc7c1fe175506ebb684d878d020e8ac8d1fe40c3eea42b0"
+		},
+		{
+			"path": "exports/kite-rounded-16.png",
+			"bytes": 942,
+			"sha256": "53333e6cbbbb3f9efea92f2ea946a1410a84a0c3e6957ce6f507ffb2bf19dd4e"
+		},
+		{
+			"path": "exports/kite-white-2048.png",
+			"bytes": 2121672,
+			"sha256": "a09247bd85958a4841620bb5db3347c1d86375e5dbd9daf7fcc3441667b6384c"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 706752,
+			"sha256": "f19752b7c2d703b0dc33fea57ca7b8193f06beb5225a60bf71c261a521266e6f"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 705931,
+			"sha256": "c2ea5434c47716fa245116a2cd20a879e29692830576b73aa160f0b2ebe30f16"
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"project": "kite",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"background": {
+		"base": "#d8bb9f",
+		"light": "#f0dcc7",
+		"shade": "#b9987c",
+		"motif": "#8e7355",
+		"grainAmplitude": 0.7,
+		"grainSeed": 60925002,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.32,
+		"ribbonOpacity": 0.14,
+		"pattern": {
+			"name": "Woodland-edge leaves",
+			"description": "Independent quiet habitat foliage in the negative space; the approved off-center head keeps its native placement.",
+			"layers": [
+				{
+					"d": "M99 103Q171 187 201 347 M128 141Q171 115 209 125Q183 161 128 141 M160 192Q117 169 90 181Q111 213 160 192 M183 252Q221 225 255 242Q238 270 183 252 M268 560Q193 592 124 698 M214 593Q221 630 203 655 M173 639Q148 614 115 623",
+					"tone": "motif",
+					"strokeWidth": 2.0
+				},
+				{
+					"d": "M211 188Q235 155 260 174Q247 199 211 188 M143 667Q110 673 97 706Q130 708 143 667",
+					"tone": "ribbon"
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [85, 65, 37],
+			"opacity": 0.13,
+			"blurAt2048": 28,
+			"offsetAt2048": [10, 24]
+		},
+		{
+			"color": [71, 56, 30],
+			"opacity": 0.1,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 7]
+		}
+	],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": ["right", "bottom"],
+		"note": "Preserve the exact owner-approved head framing. Side and lower entries are intentional viewfinder intersections. No rescaling, continuation, crop or recentering."
+	},
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 16,
+		"backgroundRgb": [252, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Native top-edge matte includes RGB 250,253,245 pixels; a 246 threshold left visible specks. Border-connected threshold 239/chroma 16 removes that matte. No component deletion; pale anatomy and opaque RGB are verified separately."
+	}
+}
