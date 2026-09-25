@@ -1,44 +1,63 @@
+import { readFile } from "node:fs/promises";
 import AxeBuilder from "@axe-core/playwright";
 import snail from "../../docs/sources/snail-retired-2026-09-13.json" with {
 	type: "json",
 };
-import { expect, test } from "./fixtures";
+import { digest, readInventory } from "../../scripts/asset-storage";
+import { expect, test, touch } from "./fixtures";
 
 if (!snail?.brandKit || !snail.family)
 	throw new Error("Missing Snail animal kit");
 const kit = snail.brandKit;
-
-test("removes Snail from the directory and forwards its project page to Zhe", async ({
-	page,
-	isMobile,
-}) => {
-	if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
-	await page.goto("/?q=snail");
-	await expect(page.locator('[data-project="snail"]')).toHaveCount(0);
-	await page.goto("/projects/snail");
-	await expect(page).toHaveURL(/\/projects\/zhe$/);
-	await expect(page.locator("#identity-title")).toContainText("Zhe");
-	expect(
-		await page.evaluate(
-			() => document.documentElement.scrollWidth <= innerWidth,
-		),
-	).toBe(true);
-});
+test.use(touch);
 
 test("the standalone Snail study keeps full compositions, transparent small marks and traceable downloads", async ({
 	page,
 	context,
+	request,
 	isMobile,
 }) => {
 	if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
 	await context.grantPermissions(["clipboard-read", "clipboard-write"]);
 	const errors: string[] = [];
 	page.on("pageerror", (error) => errors.push(error.message));
+	const html = readInventory().files.find(
+		(file) => file.path === `${kit.root}/review.html`,
+	);
+	const icon = readInventory().files.find(
+		(file) => file.path === `${kit.root}/favicon.ico`,
+	);
+	if (!html || !icon) throw new Error("Missing Snail archive fixture");
+	expect(
+		digest(await (await request.get(`${kit.root}/review.html`)).body()),
+	).toBe(html.sha256);
 	await page.goto(`${kit.root}/review.html`);
+	await expect(
+		page.locator('script[src="/material-downloads.js"]'),
+	).toHaveCount(1);
 	for (const name of ["Transparent", "White", "Icon"] as const) {
 		const button = page.getByRole("button", { name, exact: true });
 		await button.click();
 		await expect(button).toHaveAttribute("aria-pressed", "true");
+		await expect(page.locator("#candidate")).toHaveAttribute(
+			"src",
+			name === "Icon" ? "./icon-light-512.png" : "./logo-light.png",
+		);
+		await expect(page.locator("#candidate-link")).toHaveAttribute(
+			"href",
+			name === "Icon"
+				? "./icon-light.png"
+				: name === "White"
+					? "./white.png"
+					: "./logo.png",
+		);
+		await expect(page.locator("#candidate-link")).toHaveAttribute(
+			"data-view",
+			name.toLowerCase(),
+		);
+		await page
+			.locator("#candidate")
+			.evaluate((node: HTMLImageElement) => node.decode());
 	}
 	for (const theme of ["light", "dark"]) {
 		if ((await page.locator("body").getAttribute("data-theme")) !== theme)
@@ -81,6 +100,10 @@ test("the standalone Snail study keeps full compositions, transparent small mark
 		await image.evaluate((node: HTMLImageElement) => node.decode());
 	const download = page.waitForEvent("download");
 	await page.getByRole("link", { name: "Favicon ICO ↗", exact: true }).click();
-	expect((await download).suggestedFilename()).toBe("favicon.ico");
+	const downloaded = await download;
+	expect(downloaded.suggestedFilename()).toBe("favicon.ico");
+	const file = await downloaded.path();
+	if (!file) throw new Error("Missing downloaded Snail favicon");
+	expect(digest(await readFile(file))).toBe(icon.sha256);
 	expect(errors).toEqual([]);
 });

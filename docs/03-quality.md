@@ -43,9 +43,9 @@ Package, Vite/Vitest configuration, Bun lock/configuration, and TypeScript confi
 
 The material guard reads the Git index; lint and unit tests check working-tree content and do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
 
-`assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, and the two retained Snail raw images. It validates existing local bytes too. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
+`assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, the two retained Snail raw images, and the existing screenshot-upload fixture. It validates existing local bytes too. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation, plus all public versioned manifests and their referenced bytes. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
 
-`bun run assets:check` remains the full archive maintenance command: it hydrates all inventory rows and includes historical family/brand/texture archives and finishing passes via `verify-assets.ts --history`. Run it when maintaining historical archives. Routine verification does not redownload historical finishing intermediates.
+`bun run assets:check` remains the full archive maintenance command: it hydrates all inventory rows and also includes unpublished historical finishing passes via `verify-assets.ts --history`. Run it when maintaining historical archives. Routine verification does not redownload historical finishing intermediates.
 
 ## Port boundaries
 

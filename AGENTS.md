@@ -74,7 +74,7 @@ bun run video:check
 | L1 subcheck — static lanes (former G1) | Strict types and check-only lint, zero errors/warnings | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint; static lanes run staged/working-tree, so unified L1 is not snapshot-based |
 | G2 security | Dependency and secret scans; missing scanner fails | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges |
 | D1 isolation | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker | planned | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser use fixed per-lane directories and lack complete per-run/marker guarantees |
-| Assets / build | Checksums, profiles, immutable sources, real bundle and deploy dry run | enforced | CI public/test-source byte checks, current-asset validation, one shared L2/L3 build and `deploy:check`; full historical audit is explicit maintenance |
+| Assets / build | Checksums, profiles, immutable sources, real bundle and deploy dry run | enforced | CI public/test-source byte checks, current-asset and public archive validation, one shared L2/L3 build and `deploy:check`; historical finishing audit is explicit maintenance |
 | Content / release | Provenance, source adoption and deployment proof | manual | Identity/maintenance/release runbooks and maintainer verification |
 
 | Hook | Current behavior | Required follow-up |

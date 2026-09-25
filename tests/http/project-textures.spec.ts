@@ -39,38 +39,36 @@ test("discovers current independent textures for active and archived entries wit
 	expect(untouchedGuide).not.toContain("/projects/feedmaid/textures/");
 });
 
-for (const id of ["frogie", "dove", "matrix", "ccbackup"]) {
-	test(`${id} serves exact texture downloads and preserves raw review HTML while enhancing browser navigation`, async ({
-		request,
-	}) => {
-		const root = `/textures/${id}/v1.0.0`;
-		const response = await request.get(`${root}/manifest.json`);
-		expect(response.status()).toBe(200);
-		const manifest = await response.json();
-		expect(textureManifestProblems(manifest)).toEqual([]);
-		for (const file of manifest.files) {
-			const asset = await request.get(file.path, {
-				headers: { Accept: "*/*" },
-			});
-			expect(asset.status(), file.path).toBe(200);
-			const body = await asset.body();
-			expect(body.length, file.path).toBe(file.bytes);
-			expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
-				file.sha256,
-			);
-			await asset.dispose();
-		}
-		const page = await request.get(`${root}/review.html`, {
-			headers: { Accept: "text/html", "Sec-Fetch-Dest": "document" },
-		});
-		expect(page.headers()["cache-control"]).toBe("no-store");
-		expect(page.headers().vary).toContain("Sec-Fetch-Dest");
-		expect(await page.text()).toContain("/material-downloads.js");
-		const native = await request.get(`${root}/review.html`, {
+test("serves exact texture downloads and preserves raw review HTML while enhancing browser navigation", async ({
+	request,
+}) => {
+	const root = "/textures/frogie/v1.0.0";
+	const response = await request.get(`${root}/manifest.json`);
+	expect(response.status()).toBe(200);
+	const manifest = await response.json();
+	expect(textureManifestProblems(manifest)).toEqual([]);
+	for (const file of manifest.files) {
+		const asset = await request.get(file.path, {
 			headers: { Accept: "*/*" },
 		});
-		expect(await native.body()).toEqual(
-			await readFile(`public${root}/review.html`),
+		expect(asset.status(), file.path).toBe(200);
+		const body = await asset.body();
+		expect(body.length, file.path).toBe(file.bytes);
+		expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
+			file.sha256,
 		);
+		await asset.dispose();
+	}
+	const page = await request.get(`${root}/review.html`, {
+		headers: { Accept: "text/html", "Sec-Fetch-Dest": "document" },
 	});
-}
+	expect(page.headers()["cache-control"]).toBe("no-store");
+	expect(page.headers().vary).toContain("Sec-Fetch-Dest");
+	expect(await page.text()).toContain("/material-downloads.js");
+	const native = await request.get(`${root}/review.html`, {
+		headers: { Accept: "*/*" },
+	});
+	expect(await native.body()).toEqual(
+		await readFile(`public${root}/review.html`),
+	);
+});

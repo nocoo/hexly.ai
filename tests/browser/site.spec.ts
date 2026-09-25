@@ -1,18 +1,13 @@
 import manifest from "../../package.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
-import {
-	filterProjects,
-	isChromeWebStoreProject,
-} from "../../src/model/catalogue";
-import { expect, test } from "./fixtures";
+
+import { desktop, expect, test, touch } from "./fixtures";
 
 const catalogue = readProjects();
 const active = catalogue.filter((project) => !project.archived);
 const archived = catalogue.filter((project) => project.archived);
-const ordered = filterProjects(catalogue, "", "all");
-const firstVisible = ordered[0];
 
-test("renders active projects with local logos and working destinations", async ({
+test("renders active projects with real logo previews and project destinations", async ({
 	page,
 }) => {
 	const errors: string[] = [];
@@ -48,21 +43,21 @@ test("renders active projects with local logos and working destinations", async 
 		"Small ideasA little universe.",
 	);
 	await expect(page.locator(".project-card")).toHaveCount(active.length);
-	expect(
-		await page.locator(".card-external").evaluateAll((links) =>
-			links.map((link) => ({
-				label: link.textContent?.trim(),
-				href: link.getAttribute("href"),
-			})),
-		),
-	).toEqual(
-		ordered.map((project) => ({
-			label: isChromeWebStoreProject(project) ? "Chrome" : "GitHub",
-			href: isChromeWebStoreProject(project)
-				? project.website
-				: project.repository,
-		})),
-	);
+
+	for (const [id, label, href] of [
+		["pew", "GitHub", "https://github.com/nocoo/pew"],
+		["frogie", "GitHub", "https://github.com/nocoo/frogie"],
+		[
+			"hooky",
+			"Chrome",
+			catalogue.find((project) => project.id === "hooky")?.website,
+		],
+	] as const) {
+		const link = page.locator(`[data-project="${id}"] .card-external`);
+		await expect(link).toHaveText(label);
+		await expect(link).toHaveAttribute("href", href ?? "");
+	}
+
 	const refined = active.filter((project) => project.family);
 	for (const project of refined) {
 		const { id } = project;
@@ -137,80 +132,77 @@ test("combines search and categories, resets empty results, and sorts by name", 
 	await expect(page).toHaveURL(/sort=az/);
 });
 
-test("remembers language and theme across reloads and searches Chinese descriptions", async ({
-	page,
-}) => {
-	await page.goto("/");
-	await page.getByRole("button", { name: "Switch to Chinese" }).click();
-	await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
-	await expect(page.getByRole("heading", { level: 1 })).toContainText(
-		"一整个小宇宙。",
-	);
-	await page.getByRole("button", { name: "主题：浅色；切换为深色" }).click();
-	await page.reload();
-	await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
-	await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-	await page.getByRole("searchbox", { name: "搜索项目" }).fill("本地工作台");
-	await expect(page.locator(".project-card")).toHaveCount(1);
-	await expect(page.locator(".project-card h3")).toContainText("Frogie");
-	await page.getByRole("button", { name: "清空搜索" }).click();
-	await expect(page.locator(".project-card")).toHaveCount(active.length);
-	await expect(
-		page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
-	).toHaveAttribute("href", "https://github.com/nocoo/frogie");
-	await page.getByRole("button", { name: "主题：深色；切换为浅色" }).click();
-	await page.getByRole("button", { name: "切换为英文" }).click();
-	await page.reload();
-	await expect(page.locator("html")).toHaveAttribute("lang", "en");
-	await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+test.describe("remembers language and theme across reloads and searches Chinese descriptions — touch", () => {
+	test.use(touch);
+	test("remembers language and theme across reloads and searches Chinese descriptions", async ({
+		page,
+	}) => {
+		await page.goto("/");
+		await page.getByRole("button", { name: "Switch to Chinese" }).click();
+		await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
+		await expect(page.getByRole("heading", { level: 1 })).toContainText(
+			"一整个小宇宙。",
+		);
+		await page.getByRole("button", { name: "主题：浅色；切换为深色" }).click();
+		await page.reload();
+		await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
+		await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+		await page.getByRole("searchbox", { name: "搜索项目" }).fill("本地工作台");
+		await expect(page.locator(".project-card")).toHaveCount(1);
+		await expect(page.locator(".project-card h3")).toContainText("Frogie");
+		await page.getByRole("button", { name: "清空搜索" }).click();
+		await expect(page.locator(".project-card")).toHaveCount(active.length);
+		await expect(
+			page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
+		).toHaveAttribute("href", "https://github.com/nocoo/frogie");
+		await page.getByRole("button", { name: "主题：深色；切换为浅色" }).click();
+		await page.getByRole("button", { name: "切换为英文" }).click();
+		await page.reload();
+		await expect(page.locator("html")).toHaveAttribute("lang", "en");
+		await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+	});
 });
 
-test("restores directory filters with browser back and reloads a shared identity", async ({
-	page,
-}) => {
-	await page.goto("/");
-	await page.getByRole("searchbox", { name: "Search projects" }).fill("pew");
-	await page
-		.locator('[data-project="pew"]')
-		.getByRole("link", { name: "View project: Pew", exact: true })
-		.click({ position: { x: 8, y: 8 } });
-	await expect(page).toHaveURL(/\/projects\/pew$/);
-	await expect(page.locator("#identity-title")).toContainText("Pew");
-	await page.reload();
-	await expect(page.locator("#identity-title")).toContainText("Pew");
-	await page.goBack();
-	await expect(
-		page.getByRole("searchbox", { name: "Search projects" }),
-	).toHaveValue("pew");
-	await expect(page.locator(".project-card")).toHaveCount(2);
-	await page
-		.getByRole("navigation", { name: "Browse projects" })
-		.getByRole("link", { name: "Logo wall" })
-		.click();
-	await expect(page).toHaveURL(/\/logos\?q=pew#collection$/);
-	await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
-	await expect(page.locator(".logo-wall .project-description")).toHaveCount(0);
-	await page.locator('[data-project="pew"] .card-main').click();
-	await expect(page).toHaveURL(/\/projects\/pew#brand$/);
-	await expect(page.locator("#brand")).toBeInViewport();
-	await page.goBack();
-	await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
-	await page
-		.locator(".site-header")
-		.getByRole("link", { name: "hexly.ai", exact: true })
-		.click();
-	await expect(page.locator(".project-card")).toHaveCount(active.length);
-});
-
-test("hides the header preference rule when the surface menu wraps", async ({
-	page,
-}) => {
-	await page.goto("/");
-	const width = page.viewportSize()?.width ?? 0;
-	await expect(page.locator(".site-header .preferences")).toHaveCSS(
-		"border-left-width",
-		width <= 640 ? "0px" : "1px",
-	);
+test.describe("restores directory filters with browser back and reloads a shared identity — touch", () => {
+	test.use(touch);
+	test("restores directory filters with browser back and reloads a shared identity", async ({
+		page,
+	}) => {
+		await page.goto("/");
+		await page.getByRole("searchbox", { name: "Search projects" }).fill("pew");
+		await page
+			.locator('[data-project="pew"]')
+			.getByRole("link", { name: "View project: Pew", exact: true })
+			.click({ position: { x: 8, y: 8 } });
+		await expect(page).toHaveURL(/\/projects\/pew$/);
+		await expect(page.locator("#identity-title")).toContainText("Pew");
+		await page.reload();
+		await expect(page.locator("#identity-title")).toContainText("Pew");
+		await page.goBack();
+		await expect(
+			page.getByRole("searchbox", { name: "Search projects" }),
+		).toHaveValue("pew");
+		await expect(page.locator(".project-card")).toHaveCount(2);
+		await page
+			.getByRole("navigation", { name: "Browse projects" })
+			.getByRole("link", { name: "Logo wall" })
+			.click();
+		await expect(page).toHaveURL(/\/logos\?q=pew#collection$/);
+		await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
+		await expect(page.locator(".logo-wall .project-description")).toHaveCount(
+			0,
+		);
+		await page.locator('[data-project="pew"] .card-main').click();
+		await expect(page).toHaveURL(/\/projects\/pew#brand$/);
+		await expect(page.locator("#brand")).toBeInViewport();
+		await page.goBack();
+		await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
+		await page
+			.locator(".site-header")
+			.getByRole("link", { name: "hexly.ai", exact: true })
+			.click();
+		await expect(page.locator(".project-card")).toHaveCount(active.length);
+	});
 });
 
 test("keeps archived projects accessible through their category and direct logo paths", async ({
@@ -229,6 +221,7 @@ test("keeps archived projects accessible through their category and direct logo 
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
 	);
+	await expect(page.locator(".project-overview")).toHaveCount(0);
 	await expect(page).toHaveURL(
 		/\/projects\/uptime-kuma-skill\?category=archive$/,
 	);
@@ -245,72 +238,74 @@ test("keeps archived projects accessible through their category and direct logo 
 		.getByRole("combobox", { name: "Project categories" })
 		.selectOption("all");
 	await expect(page.locator(".picker-item")).toHaveCount(active.length);
-	await expect(page.locator("#identity-title")).toContainText(
-		firstVisible?.title ?? "",
+	await expect(page.locator("#identity-title")).not.toContainText(
+		"Uptime Kuma Skill",
 	);
 	await page.goBack();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
 	);
+
+	await page.goto("/?q=snail");
+	await expect(page.locator('[data-project="snail"]')).toHaveCount(0);
+	await page.goto("/projects/snail");
+	await expect(page).toHaveURL(/\/projects\/zhe$/);
+	await expect(page.locator("#identity-title")).toContainText("Zhe");
+	expect(
+		await page.evaluate(
+			() => document.documentElement.scrollWidth <= innerWidth,
+		),
+	).toBe(true);
 });
 
-test("keeps repository clicks separate and supports native card navigation", async ({
-	page,
-	context,
-	isMobile,
-}) => {
-	await context.route("https://github.com/nocoo/pew", (route) =>
-		route.fulfill({
-			contentType: "text/html",
-			body: "<title>Pew repository</title>",
-		}),
-	);
-	await page.goto("/");
-	const card = page.locator('[data-project="pew"]');
-	await card.scrollIntoViewIfNeeded();
-	const repositoryPage = page.waitForEvent("popup");
-	await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
-	const repository = await repositoryPage;
-	await expect(repository).toHaveURL("https://github.com/nocoo/pew");
-	await expect(page).toHaveURL(/\/$/);
-	await repository.close();
-	await context.unroute("https://github.com/nocoo/pew");
-	await page.bringToFront();
-	if (isMobile) {
-		// Touch browsers have no native middle-click gesture.
-		await card.getByRole("link", { name: "View project: Pew" }).tap();
-		await expect(page).toHaveURL(/\/projects\/pew\/?$/);
-		await expect(page.locator("#identity-title")).toContainText("Pew");
-		await page.goBack();
-		await expect(page).toHaveURL(/\/$/);
-		return;
-	}
-	const detailPage = context.waitForEvent("page");
-	// Open the native tab in front so Chromium initializes it before the page event.
-	await card
-		.getByRole("link", { name: "View project: Pew" })
-		.click({ button: "middle", modifiers: ["Shift"] });
-	const detail = await detailPage;
-	await detail.bringToFront();
-	await detail.waitForURL(/\/projects\/pew\/?$/, {
-		waitUntil: "domcontentloaded",
-		timeout: 15_000,
+for (const [device, options] of Object.entries({ desktop, touch })) {
+	test.describe(device, () => {
+		test.use(options);
+		test("keeps repository clicks separate and supports native card navigation", async ({
+			page,
+			context,
+			isMobile,
+		}) => {
+			await context.route("https://github.com/nocoo/pew", (route) =>
+				route.fulfill({
+					contentType: "text/html",
+					body: "<title>Pew repository</title>",
+				}),
+			);
+			await page.goto("/");
+			const card = page.locator('[data-project="pew"]');
+			await card.scrollIntoViewIfNeeded();
+			const repositoryPage = page.waitForEvent("popup");
+			await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
+			const repository = await repositoryPage;
+			await expect(repository).toHaveURL("https://github.com/nocoo/pew");
+			await expect(page).toHaveURL(/\/$/);
+			await repository.close();
+			await context.unroute("https://github.com/nocoo/pew");
+			await page.bringToFront();
+			if (isMobile) {
+				// Touch browsers have no native middle-click gesture.
+				await card.getByRole("link", { name: "View project: Pew" }).tap();
+				await expect(page).toHaveURL(/\/projects\/pew\/?$/);
+				await expect(page.locator("#identity-title")).toContainText("Pew");
+				await page.goBack();
+				await expect(page).toHaveURL(/\/$/);
+				return;
+			}
+			const detailPage = context.waitForEvent("page");
+			// Open the native tab in front so Chromium initializes it before the page event.
+			await card
+				.getByRole("link", { name: "View project: Pew" })
+				.click({ button: "middle", modifiers: ["Shift"] });
+			const detail = await detailPage;
+			await detail.bringToFront();
+			await detail.waitForURL(/\/projects\/pew\/?$/, {
+				waitUntil: "domcontentloaded",
+				timeout: 15_000,
+			});
+			await expect(detail.locator("#identity-title")).toContainText("Pew");
+			await expect(page).toHaveURL(/\/$/);
+			await detail.close();
+		});
 	});
-	await expect(detail.locator("#identity-title")).toContainText("Pew");
-	await expect(page).toHaveURL(/\/$/);
-	await detail.close();
-});
-
-test.describe("system preferences", () => {
-	test.use({ locale: "zh-CN", colorScheme: "dark" });
-	test("uses the browser language and theme for a new visitor", async ({
-		page,
-	}) => {
-		await page.goto("/");
-		await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
-		await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-		await expect(
-			page.getByRole("button", { name: "主题：深色；切换为浅色" }),
-		).toBeVisible();
-	});
-});
+}

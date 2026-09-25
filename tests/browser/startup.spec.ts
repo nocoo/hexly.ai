@@ -1,4 +1,4 @@
-import { expect, test } from "./fixtures";
+import { desktop, expect, test, touch } from "./fixtures";
 
 const clientScript = /\/assets\/[^/]+\.js$/;
 const stylesheet = /\/assets\/[^/]+\.css$/;
@@ -30,7 +30,11 @@ for (const scenario of [
 	},
 ] as const) {
 	test.describe(scenario.name, () => {
-		test.use({ locale: scenario.locale, colorScheme: scenario.colorScheme });
+		test.use({
+			...(scenario.language === "en" ? desktop : touch),
+			locale: scenario.locale,
+			colorScheme: scenario.colorScheme,
+		});
 		test("reveals the complete view without showing its snapshot or loading state", async ({
 			page,
 		}) => {
@@ -141,6 +145,13 @@ test("shows the catalogue error with a retry instead of an empty page", async ({
 		page.getByRole("button", { name: "Reload the page" }),
 	).toBeVisible();
 	await expect(page.locator("#startup-error")).not.toBeVisible();
+
+	await page.unroute("**/data/projects.json");
+	await page.getByRole("button", { name: "Reload the page" }).click();
+	await expect(page.locator(".directory-main")).toBeVisible();
+	await expect(
+		page.getByRole("heading", { name: "The collection could not be loaded." }),
+	).toHaveCount(0);
 });
 
 test("shows a retry prompt if React cannot mount", async ({ page }) => {

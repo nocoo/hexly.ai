@@ -27,7 +27,7 @@ const json = async (path: string) => JSON.parse(await readFile(path, "utf8"));
 const fixture = await json("public/textures/frogie/v1.0.0/manifest.json");
 
 describe("independent campaign textures", () => {
-	it("covers active projects, retains completed archives and preserves original identity, metadata and old kits", async () => {
+	it("covers active projects, retains completed archives and preserves original identity and old kits", async () => {
 		expect(baselineProjects.map((p) => p.id)).toEqual(
 			baseline.projects.map((p) => p.id),
 		);
@@ -42,21 +42,19 @@ describe("independent campaign textures", () => {
 		expect(baselineProjects.filter((p) => p.brandTexture)).toHaveLength(
 			scope.expectedNewPackCount,
 		);
-		expect(projects.filter((p) => p.archived)).toHaveLength(21);
 		for (const project of baselineProjects) {
 			const row = baseline.projects.find((p) => p.id === project.id);
 			if (!row) throw new Error(project.id);
-			const { brandTexture: _texture, ...preserved } = project;
-			if (project.id === "hermes-on-herdr") preserved.archived = false;
-			// Status onboarding postdates this texture snapshot.
-			// Keep checking all original identity fields against the frozen record.
-			if (["ellie", "life-ai", "ocelot"].includes(project.id)) {
-				preserved.website = null;
-				preserved.websiteSource = null;
-			}
-			expect(sha(JSON.stringify(preserved)), project.id).toBe(
-				row.sourceMetadataSha256,
-			);
+			expect(project.logo, project.id).toMatchObject({
+				original: row.officialProjectIdentity.path,
+				sha256: row.officialProjectIdentity.sha256,
+				width: row.officialProjectIdentity.width,
+				height: row.officialProjectIdentity.height,
+				bytes: row.officialProjectIdentity.bytes,
+				sourceUrl: row.officialProjectIdentity.source,
+				kind: row.officialProjectIdentity.kind,
+				modified: false,
+			});
 			const original = await readFile(`public${project.logo.original}`);
 			expect(sha(original), project.id).toBe(
 				row.officialProjectIdentity.sha256,

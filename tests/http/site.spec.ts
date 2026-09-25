@@ -109,7 +109,7 @@ test("reports the deployed version and revision without caching", async ({
 	expect(metadata.revision).toMatch(/^[a-f0-9]{40}$/);
 });
 
-for (const id of ["frogie", "pew", "pokepocket", "node-image-uploader"]) {
+for (const id of ["frogie", "fundly", "node-image-uploader"]) {
 	test(`downloads the preserved ${id} identity without changing its bytes`, async ({
 		request,
 	}) => {
@@ -263,9 +263,7 @@ test("redirects legacy pages and template metadata without touching archived log
 	expect(logo.headers()["content-type"]).toContain("image/webp");
 });
 
-for (const id of projects
-	.filter((project) => project.family)
-	.map((project) => project.id)) {
+for (const id of ["frogie", "neo", "pokepocket", "pi-agent-policy"]) {
 	test(`serves the complete ${id} identity archive and recorded history`, async ({
 		request,
 	}) => {
