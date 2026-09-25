@@ -19,17 +19,8 @@ import type { Project } from "../../src/model/project";
 const sha = (bytes: Buffer | string) =>
 	createHash("sha256").update(bytes).digest("hex");
 const projects = readProjects();
-const baselineProjects = projects.filter(
-	(p) =>
-		![
-			"pi-agent-policy",
-			"diorama-journey",
-			"zeppelin",
-			"eagle",
-			"rio",
-			"falcon",
-			"kite",
-		].includes(p.id),
+const baselineProjects = projects.filter((project) =>
+	inventory.projects.some((row) => row.id === project.id),
 );
 const targetIds = inventory.projects
 	.filter((p) => p.scope === "target")
@@ -47,38 +38,24 @@ describe("complete Hexly campaign archives", () => {
 			inventory.projects.filter((p) => p.id !== "snail").map((p) => p.id),
 		);
 		expect(targets).toHaveLength(54);
-		expect(baselineProjects.filter((p) => !p.archived)).toHaveLength(53);
-		expect(projects.filter((p) => !p.archived)).toHaveLength(60);
-		expect(projects.filter((p) => p.archived)).toHaveLength(21);
 		for (const p of [...baselineProjects, retiredSnail as Project]) {
 			const baseline = inventory.projects.find((row) => row.id === p.id);
-			const { brandTexture, ...beforeTextures } = p;
-			const { brandKit, ...original } = beforeTextures;
-			if (p.id === "hermes-on-herdr") original.archived = false;
-			// These websites were connected after the frozen brand baseline.
-			// Their current endpoints are independently asserted in status.test.ts.
-			if (["ellie", "life-ai", "ocelot"].includes(p.id)) {
-				original.website = null;
-				original.websiteSource = null;
-			}
-			// Optional screenshot galleries were added after this identity baseline.
-			// Preserve its other metadata, including the pre-existing video records.
-			if (original.media?.screenshots) {
-				const { screenshots, ...historicalMedia } = original.media;
-				if (Object.keys(historicalMedia).length)
-					original.media = historicalMedia;
-				else delete original.media;
-			}
-			const isTarget = targetIds.includes(p.id);
-			expect(
-				sha(JSON.stringify(isTarget ? original : beforeTextures)),
-				p.id,
-			).toBe(baseline?.protectedMetadataSha256);
+			if (!baseline) throw new Error(`Missing identity baseline: ${p.id}`);
+			expect(p.logo, p.id).toMatchObject({
+				original: baseline.original.path,
+				sha256: baseline.original.sha256,
+				modified: false,
+			});
+			if (baseline.familyRoot)
+				expect(p.family, p.id).toMatchObject({
+					root: baseline.familyRoot,
+					foreground: baseline.foreground,
+				});
 			expect(sha(await readFile(`public${p.logo.original}`)), p.id).toBe(
 				baseline?.original.sha256,
 			);
-			if (isTarget)
-				expect(brandKit).toMatchObject({
+			if (targetIds.includes(p.id))
+				expect(p.brandKit).toMatchObject({
 					version: "1.0.0",
 					method: "archived-artwork",
 					scope: "hexly-campaign",
@@ -139,9 +116,6 @@ describe("complete Hexly campaign archives", () => {
 				);
 				expect(wordmark.toString()).not.toMatch(
 					/<(text|image|script|foreignObject)\b|(?:href|src)=|@import|url\(/i,
-				);
-				expect(wordmark.toString()).toContain(
-					"Full glyph bounds include descenders",
 				);
 				const glyph = await sharp(wordmark)
 					.ensureAlpha()

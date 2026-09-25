@@ -1,6 +1,8 @@
 # Six-dimensional quality system
 
-This structure is established before product implementation. Source: nmem `af0daa0f-0a10-4b0b-b328-f2dc32137bdc`, the six-dimensional development quality procedure.
+Run `bun run verify` after installing dependencies, full Chromium, OSV and Gitleaks. Local and CI use this same command with a 600-second total deadline. CI has one 10-minute job, including installation. Each verification stage prints its elapsed time and propagates failures.
+
+The 2026-09-25 test audit consolidates repeated project matrices by behavior. Catalogue-wide identity, provenance and metadata checks remain independent of representative UI journeys. This audit does not certify the planned unified L1 or D1 requirements.
 
 | Dimension | Contract | Command | When |
 | --- | --- | --- | --- |
@@ -41,10 +43,9 @@ Package, Vite/Vitest configuration, Bun lock/configuration, and TypeScript confi
 
 The material guard reads the Git index; lint and unit tests check working-tree content and do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
 
-Fresh CI checkouts hydrate the complete archived fixtures from R2 before asset
-and browser checks. The browser job has a 25-minute total budget for this added
-setup; individual test timeouts, three workers, zero retries and all assertions
-remain unchanged. Ordinary builds do not hydrate the archive.
+`assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, the two retained Snail raw images, and the existing screenshot-upload fixture. It validates existing local bytes too. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation, plus all public versioned manifests and their referenced bytes. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
+
+`bun run assets:check` remains the full archive maintenance command: it hydrates all inventory rows and also includes unpublished historical finishing passes via `verify-assets.ts --history`. Run it when maintaining historical archives. Routine verification does not redownload historical finishing intermediates.
 
 ## Port boundaries
 
@@ -61,13 +62,11 @@ terminate their own servers without reusing an existing server. L2 uses
 `.wrangler/dev` and manual Worker preview uses `.wrangler/preview`. Separate ports
 and separate SQLite persistence directories keep these environments independent.
 
-Browser CI runs in its own job with Node.js 26.7.0, matching local development and deployment. `channel: "chromium"` selects the full Chromium build's current headless mode; install `chromium` without `--only-shell`. The default headless shell stalled native popup initialization during the R2 release, so the original real-link journey now runs in the full browser. Deployment requires both quality and browser jobs to succeed; all journeys retain three workers and zero retries.
+The unified CI job uses Node.js 26.7.0 and Bun 1.4.0. Browser tests retain three workers, zero retries, and the full Chromium build (`channel: "chromium"`). Install `chromium` without `--only-shell`: the shell previously stalled native popup initialization. New-tab checks wait for navigation and `DOMContentLoaded`.
 
-Browser tests use the full Chromium build's current headless mode (`channel: "chromium"`), preserving native tab navigation; CI must install `chromium` without `--only-shell`. Status browser tests pin the browser clock to the fixed SQLite demo's latest sample; deliberate stale fixtures use that same clock. Long CI runs must not age all demo services into unknown states. The maintained Wrangler development-proxy patch retries a disconnected read once, with fault-injection coverage; writes, canceled requests, upgrades and actual HTTP failures are never replayed. See `patches/README.md`.
+Status browser tests pin the browser clock to the fixed SQLite demo's latest sample. The versioned [Wrangler patch](../patches/README.md) preserves the real disconnected-read and abandoned-client regressions; writes, canceled requests, upgrades and HTTP failures are never replayed. Sanitized diagnostics at `.wrangler/verification.log`, browser traces and screenshots are uploaded on CI failure for seven days.
 
-The browser job records its Node.js version and writes sanitized Wrangler diagnostics to `.wrangler/browser-ci.log`. On failure, it prints the last 300 log lines, preserves the test command's exit status, and uploads the diagnostics, browser traces, and screenshots for seven days. Inspect this evidence before rerunning a failure that loses the local server. New-tab checks wait for navigation and `DOMContentLoaded` before inspecting the destination.
-
-The [versioned Wrangler patch](../patches/README.md) prevents an abandoned client request from terminating the whole local server. L2 exercises this boundary with truncated upload connections and subsequent health requests. Failed forwards still return an error response, and all normal HTTP and browser assertions remain active.
+Deployment still requires a successful CI run for the exact trusted main revision, verified by the shared release-source action. Changing test routing does not change this authorization boundary.
 
 The root `sharp: 0.35.4` override also applies the image-decoder security fix to Miniflare. Wrangler 4.129.0 depends on Miniflare 5.20260903.0-alpha, which otherwise installs its own vulnerable Sharp 0.35.2 despite the root development dependency already being fixed. The override removes that second copy and its older native binaries from the lockfile; it does not suppress [GHSA-rgj7-g3m4-5g8c](https://osv.dev/GHSA-rgj7-g3m4-5g8c). Remove the override when the pinned upstream chain selects a fixed version on its own, then verify the regenerated lockfile, runtime resolution, HTTP/browser checks and OSV scan.
 

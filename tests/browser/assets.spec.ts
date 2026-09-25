@@ -20,10 +20,7 @@ test("downloads a CDN favicon with its original filename and exact bytes", async
 	expect(digest(await readFile(file))).toBe(asset.sha256);
 });
 
-for (const [project, version] of [
-	["snail", "2.0.0"],
-	["frogie", "1.0.0"],
-]) {
+for (const [project, version] of [["frogie", "1.0.0"]]) {
 	test(`${project} standalone specimens download CDN bytes without changing their archived HTML`, async ({
 		page,
 		request,

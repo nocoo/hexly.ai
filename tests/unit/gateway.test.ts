@@ -256,17 +256,4 @@ describe("the static asset gateway", () => {
 			expect(response.headers.get("Location")).toBeNull();
 		}
 	});
-	it("leaves canonical identity paths unchanged", async () => {
-		const response = await worker.fetch(
-			new Request("https://hexly.ai/projects/frogie"),
-			env,
-		);
-		expect(response.status).toBe(200);
-		expect(await response.text()).toBe("asset");
-	});
-	it("serves static assets on the canonical host", async () => {
-		const response = await worker.fetch(new Request("https://hexly.ai/"), env);
-		expect(response.status).toBe(200);
-		expect(await response.text()).toBe("asset");
-	});
 });

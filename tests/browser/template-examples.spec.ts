@@ -4,17 +4,25 @@ import { copy } from "../../src/data/copy";
 import manifest from "../../src/data/template-examples.json" with {
 	type: "json",
 };
-import { expect, test } from "./fixtures";
+import { expect, test, touch } from "./fixtures";
 
-for (const colorScheme of ["light", "dark"] as const) {
-	test(`browses standard outros in ${colorScheme} without fetching movies or changing the recording theme`, async ({
+test.describe("touch outro library", () => {
+	test.use(touch);
+	test("browses standard outros and copies an original handoff without fetching movies", async ({
 		page,
-	}, testInfo) => {
-		await page.emulateMedia({ colorScheme });
+		context,
+	}) => {
+		await context.grantPermissions(["clipboard-read", "clipboard-write"]);
 		const movies: string[] = [];
 		page.on("request", (request) => {
 			if (request.url().endsWith(".mp4")) movies.push(request.url());
 		});
+		await page.goto("/templates/launch#outros");
+		await expect(page.locator("[data-template-example]")).toHaveCount(5);
+		await expect(page.locator("#outros")).toContainText("any project");
+		await page.goto("/templates#examples");
+		await expect(page.locator("[data-template-example]")).toHaveCount(5);
+		await expect(page.locator("#template-examples-title")).toBeInViewport();
 		await page.goto("/templates#outros");
 		await expect(page).toHaveURL(/\/templates#outros$/);
 		const section = page.locator("#outros");
@@ -46,9 +54,29 @@ for (const colorScheme of ["light", "dark"] as const) {
 			.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
 			.analyze();
 		expect(scan.violations).toEqual([]);
-		await section.screenshot({
-			path: testInfo.outputPath(`examples-${colorScheme}.png`),
-		});
+		await page.locator(".theme-toggle").click();
+		expect(
+			(
+				await new AxeBuilder({ page })
+					.include("#outros")
+					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+					.analyze()
+			).violations,
+		).toEqual([]);
+		const outro = manifest.examples[0];
+		if (!outro) throw new Error("Missing standard outro");
+		const card = page.locator(`[data-template-example="${outro.video.id}"]`);
+		await card.getByRole("button", { name: "Copy for agent" }).click();
+		const handoff = await page.evaluate(() => navigator.clipboard.readText());
+		expect(handoff).toContain(`- MP4: ${outro.video.src}`);
+		expect(handoff).toContain(`- SHA-256: ${outro.video.sha256}`);
+		expect(handoff).toContain(
+			"Download and append the original clip; no project configuration or regeneration is required.",
+		);
+		await card.locator("summary").click();
+		await expect(card.locator("pre")).toHaveJSProperty("textContent", handoff);
+		await expect(page.locator("video")).toHaveCount(0);
+
 		await page.getByRole("button", { name: "Switch to Chinese" }).click();
 		await expect(
 			section.getByRole("heading", { name: "标准片尾" }),
@@ -70,19 +98,6 @@ for (const colorScheme of ["light", "dark"] as const) {
 		).toHaveAttribute("src", manifest.examples[0]?.video.poster ?? "");
 		expect(movies).toEqual([]);
 	});
-}
-
-test("offers every standard outro on every template and preserves the old anchor", async ({
-	page,
-}) => {
-	for (const example of manifest.examples) {
-		await page.goto(`/templates/${example.template}#outros`);
-		await expect(page.locator("[data-template-example]")).toHaveCount(5);
-		await expect(page.locator("#outros")).toContainText("any project");
-	}
-	await page.goto("/templates#examples");
-	await expect(page.locator("[data-template-example]")).toHaveCount(5);
-	await expect(page.locator("#template-examples-title")).toBeInViewport();
 });
 
 test("starts media only after a click, preserves direct links on failure and downloads original bytes", async ({

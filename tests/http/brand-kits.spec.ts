@@ -35,3 +35,35 @@ test("serves every versioned Snail asset with the published checksum and immutab
 		}
 	}
 });
+
+test("keeps Pi's historical SVG textures downloadable after the raster surface release", async ({
+	request,
+}) => {
+	const root = "/brands/pi-agent-policy/v1.0.2";
+	const response = await request.get(`${root}/manifest.json`);
+	expect(response.status()).toBe(200);
+	expect(response.headers()["cache-control"]).toContain("immutable");
+	const manifest = await response.json();
+	expect(manifest).toMatchObject({
+		project: "pi-agent-policy",
+		version: "1.0.2",
+		method: "archived-artwork",
+	});
+	for (const theme of ["light", "dark"]) {
+		const path = `${root}/texture-${theme}.svg`;
+		const file = manifest.files.find(
+			(file: { path: string }) => file.path === path,
+		);
+		if (!file) throw new Error(`Missing historical texture: ${path}`);
+		const asset = await request.get(path);
+		expect(asset.status(), path).toBe(200);
+		expect(asset.headers()["content-type"]).toContain("image/svg+xml");
+		expect(asset.headers()["cache-control"]).toContain("immutable");
+		const body = await asset.body();
+		expect(body.byteLength, path).toBe(file.bytes);
+		expect(createHash("sha256").update(body).digest("hex"), path).toBe(
+			file.sha256,
+		);
+		await asset.dispose();
+	}
+});
