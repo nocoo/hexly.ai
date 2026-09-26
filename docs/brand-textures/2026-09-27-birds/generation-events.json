@@ -1,0 +1,278 @@
+[
+	{
+		"recordedAt": "2026-09-26T21:09:29.673175+00:00",
+		"event": "network-pause-and-resume",
+		"projects": [
+			"dove"
+		],
+		"outcomes": "Both first attempts returned URLError after 5 seconds, with no images. Provider processing/billing is unknown.",
+		"action": "Paused the scheduler. An unauthenticated read-only connectivity probe reached the provider and returned expected HTTP 401; the in-flight Lyre light generation completed successfully. Resumed the remaining original scheduled requests. No Dove retry yet."
+	},
+	{
+		"recordedAt": "2026-09-26T21:16:15.231655+00:00",
+		"event": "serial-generation",
+		"diagnostic": "Read-only probes reproduced intermittent SSL UNEXPECTED_EOF_WHILE_READING. An explicit local proxy also failed intermittently.",
+		"action": "Stopped the original scheduler after in-flight requests finished. Continued remaining projects using one worker and 40 seconds between starts. No credential/configuration changes. Preserve unknown outcomes and separately retry only missing or rejected themes."
+	},
+	{
+		"recordedAt": "2026-09-26T21:41:13.579201+00:00",
+		"event": "explicit-attempt-02",
+		"diagnostic": "Read-only direct and proxy probes each returned expected unauthenticated HTTP 401 in all three trials. No credentials, system proxy or certificates changed.",
+		"action": "Preserve eight approved originals; separately retry the 13 unknown outcomes and five rejected images with wider explicit right/bottom clearance, using the unchanged Flare helper, one worker and 40 seconds between starts. No automatic paid retry.",
+		"tasks": [
+			{
+				"id": "dove",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "dove",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "lyre",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "rejected"
+			},
+			{
+				"id": "rooster",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "rooster",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "owl",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "shrike",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "shrike",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "clip",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "rejected"
+			},
+			{
+				"id": "clip",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "fundly",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "rejected"
+			},
+			{
+				"id": "fundly",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "rejected"
+			},
+			{
+				"id": "eagle",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "rio",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "rio",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "falcon",
+				"theme": "light",
+				"attempt": 2,
+				"reason": "rejected"
+			},
+			{
+				"id": "falcon",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			},
+			{
+				"id": "kite",
+				"theme": "dark",
+				"attempt": 2,
+				"reason": "unknown-outcome"
+			}
+		]
+	},
+	{
+		"event": "explicit-attempt-03",
+		"recordedAt": "2026-09-26T21:54:32.895290+00:00",
+		"action": "Retry only previously reviewed missing/rejected themes. Keep attempt-02 prompts unchanged. Reconnect at most five times only inside HTTPSConnection.connect, before the image HTTP request is sent. Never retry an image request after sending begins.",
+		"adapter": "/Users/nocoo/workspace/personal/hexly.ai/artwork/brand-textures/2026-09-27-birds/resume.py",
+		"adapterSha256": "dc7d9adf2b431eef68919f16f5a3b5e196898bed82a2f8acf02bdf8673a4a3a6",
+		"tasks": [
+			{
+				"id": "lyre",
+				"theme": "dark"
+			},
+			{
+				"id": "owl",
+				"theme": "dark"
+			},
+			{
+				"id": "shrike",
+				"theme": "light"
+			},
+			{
+				"id": "clip",
+				"theme": "light"
+			},
+			{
+				"id": "fundly",
+				"theme": "light"
+			},
+			{
+				"id": "fundly",
+				"theme": "dark"
+			},
+			{
+				"id": "falcon",
+				"theme": "light"
+			},
+			{
+				"id": "falcon",
+				"theme": "dark"
+			},
+			{
+				"id": "kite",
+				"theme": "dark"
+			}
+		]
+	},
+	{
+		"event": "adapter-correction-before-request",
+		"recordedAt": "2026-09-26T22:02:26.034180+00:00",
+		"failedAdapterSource": "artwork/brand-textures/2026-09-27-birds/attempt-03-adapter.txt",
+		"diagnosis": "Global HTTPSConnection substitution broke Python constructor super lookup. Six TypeError outcomes occurred before connecting or sending HTTP. Remaining attempt-03 requests were not started.",
+		"action": "Use an injected HTTPSHandler, keep the native HTTPSConnection global intact, require --generate and validate construction plus unauthenticated HTTP 401 first. Continue the nine missing themes explicitly under attempt-04; preserve all previous records."
+	},
+	{
+		"event": "explicit-attempt-04",
+		"recordedAt": "2026-09-26T22:02:26.346063+00:00",
+		"action": "Retry only previously reviewed missing/rejected themes. Keep attempt-02 prompts unchanged. Reconnect at most five times only inside HTTPSConnection.connect, before the image HTTP request is sent. Never retry an image request after sending begins.",
+		"adapter": "/Users/nocoo/workspace/personal/hexly.ai/artwork/brand-textures/2026-09-27-birds/resume.py",
+		"adapterSha256": "cf5d3939acf0078b5ab6f3070faa1d818f42b0eacffb111059e88906da6dd108",
+		"tasks": [
+			{
+				"id": "lyre",
+				"theme": "dark"
+			},
+			{
+				"id": "owl",
+				"theme": "dark"
+			},
+			{
+				"id": "shrike",
+				"theme": "light"
+			},
+			{
+				"id": "clip",
+				"theme": "light"
+			},
+			{
+				"id": "fundly",
+				"theme": "light"
+			},
+			{
+				"id": "fundly",
+				"theme": "dark"
+			},
+			{
+				"id": "falcon",
+				"theme": "light"
+			},
+			{
+				"id": "falcon",
+				"theme": "dark"
+			},
+			{
+				"id": "kite",
+				"theme": "dark"
+			}
+		]
+	},
+	{
+		"event": "http-state-correction",
+		"recordedAt": "2026-09-26T22:10:54.263120+00:00",
+		"failedAdapterSource": "artwork/brand-textures/2026-09-27-birds/attempt-04-adapter.txt",
+		"diagnosis": "Calling HTTPConnection.close during a pre-send TLS reconnect reset the HTTP request state. ResponseNotReady outcomes may have sent HTTP and remain unknown, with no assertion about billing.",
+		"action": "Close only the failed socket, preserving the HTTP request state. A network-free fake-socket test now reproduces handshake failure, verifies one POST and reads a successful response. An unauthenticated live probe must also return 401 before attempt-05. Preserve all prior attempts."
+	},
+	{
+		"event": "explicit-attempt-05",
+		"recordedAt": "2026-09-26T22:10:54.390916+00:00",
+		"action": "Retry only previously reviewed missing/rejected themes. Keep attempt-02 prompts unchanged. Reconnect at most five times only inside HTTPSConnection.connect, before the image HTTP request is sent. Never retry an image request after sending begins.",
+		"adapter": "/Users/nocoo/workspace/personal/hexly.ai/artwork/brand-textures/2026-09-27-birds/resume.py",
+		"adapterSha256": "df386bfd7aadc0cff593dfb7a7d734f09fdf6c2808ded5e3b26b422e3be166e0",
+		"tasks": [
+			{
+				"id": "owl",
+				"theme": "dark"
+			},
+			{
+				"id": "shrike",
+				"theme": "light"
+			},
+			{
+				"id": "clip",
+				"theme": "light"
+			},
+			{
+				"id": "fundly",
+				"theme": "light"
+			},
+			{
+				"id": "fundly",
+				"theme": "dark"
+			},
+			{
+				"id": "falcon",
+				"theme": "light"
+			},
+			{
+				"id": "falcon",
+				"theme": "dark"
+			},
+			{
+				"id": "kite",
+				"theme": "dark"
+			}
+		]
+	}
+]
