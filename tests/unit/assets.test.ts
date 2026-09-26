@@ -39,6 +39,20 @@ describe("R2 material delivery", () => {
 		])
 			expect(assetKeyForPath(path)).toBeNull();
 	});
+	it("resolves unpublished review materials with an explicit server preview mode", () => {
+		const url =
+			"https://h.no.mt/projects/dove/textures/v1.0.1/texture-light.webp?v=1#sample";
+		expect(assetUrl(url, true)).toBe(
+			"/textures/dove/v1.0.1/texture-light.webp?v=1#sample",
+		);
+		expect(assetUrl(url, false)).toBe(url);
+		expect(assetUrl("https://example.test/image.png", true)).toBe(
+			"https://example.test/image.png",
+		);
+		expect(assetUrl("https://hexly.ai/projects/dove#texture", true)).toBe(
+			"https://hexly.ai/projects/dove#texture",
+		);
+	});
 	it("keeps screenshot versions and project namespaces independent of identity assets", () => {
 		const hash = "a".repeat(64);
 		expect(

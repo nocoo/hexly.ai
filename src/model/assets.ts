@@ -29,10 +29,12 @@ export function assetKeyForPath(path: string): string | null {
 	);
 }
 
-export function assetUrl(value: string): string {
-	const env = import.meta.env;
-	const local =
-		env?.DEV && env.MODE === "development" && env.VITE_LOCAL_MATERIALS === "1";
+export function assetUrl(
+	value: string,
+	local = import.meta.env?.DEV &&
+		import.meta.env.MODE === "development" &&
+		import.meta.env.VITE_LOCAL_MATERIALS === "1",
+): string {
 	if (local && value.startsWith(`${storage.origin}/`)) {
 		const remote = value.slice(storage.origin.length + 1);
 		const key = remote.split(/[?#]/)[0] ?? "";
