@@ -170,13 +170,11 @@ for (const row of rows) {
 	for (const theme of ["light", "dark"] as const) {
 		const selection = await readJson(`${row.study}/${theme}/selection.json`);
 		const run = selection.run as string;
+		const attemptPrefix = `${row.study}/${theme}-attempt-`;
 		assert(
 			run === `${row.study}/${theme}` ||
-				[2, 3, 4].some(
-					(attempt) =>
-						run ===
-						`${row.study}/${theme}-attempt-${String(attempt).padStart(2, "0")}`,
-				),
+				(run.startsWith(attemptPrefix) &&
+					/^(?:0[2-9]|[1-9][0-9]+)$/.test(run.slice(attemptPrefix.length))),
 		);
 		const raw = await readFile(`${run}/raw.png`);
 		const approval = await readJson(`${run}/raw-review.json`);
