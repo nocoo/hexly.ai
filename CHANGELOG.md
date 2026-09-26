@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.1] - 2026-09-26
+
+### Maintenance
+
+- unify verification within ten minutes ([3192dea](https://github.com/nocoo/hexly.ai/commit/3192dea0e0d123305dc492c9b695b8d181d040be))
+- Merge pull request #3 from nocoo/user/nocoli/simplify-tests ([4b91a6f](https://github.com/nocoo/hexly.ai/commit/4b91a6fe1d42349b99b66af76cd75983cf57c19e))
+
+### Tests
+
+- consolidate contract verification ([573b59f](https://github.com/nocoo/hexly.ai/commit/573b59f4db2338120c9ed0ba1b7edf76a6f388cc))
+
+### Fixes
+
+- clear screenshots when switching projects ([fd3a1f7](https://github.com/nocoo/hexly.ai/commit/fd3a1f799aa6d992f15ee8d2cde2841e17723f1f))
+
 ## [1.1.0] - 2026-09-25
 
 ### Documentation
