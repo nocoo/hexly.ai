@@ -56,6 +56,40 @@ async function mockMedia(page: Page, media: Project["media"], clip?: Buffer) {
 for (const [device, options] of Object.entries({ desktop, touch })) {
 	test.describe(device, () => {
 		test.use(options);
+		test("carousel switching removes the previous project's screenshots", async ({
+			page,
+		}) => {
+			await page.goto("/projects/frogie");
+			for (const id of [
+				"hooky",
+				"r2shot",
+				"frogie",
+				"r2shot",
+				"hooky",
+				"frogie",
+			]) {
+				const project = readProjects().find((item) => item.id === id);
+				if (!project) throw new Error(`Missing project: ${id}`);
+				await page
+					.locator(".project-picker")
+					.getByRole("button", { name: project.title, exact: true })
+					.click();
+				await expect(page).toHaveURL(new RegExp(`/projects/${id}$`));
+				const shots = project.media?.screenshots ?? [];
+				await expect(page.locator(".screenshot-card")).toHaveCount(
+					shots.length,
+				);
+				for (const [index, shot] of shots.entries()) {
+					const img = page.locator(".screenshot-card img").nth(index);
+					await expect(img).toHaveAttribute(
+						"src",
+						assetUrl(shot.preview ?? shot.src),
+					);
+					await img.scrollIntoViewIfNeeded();
+					await img.evaluate((element: HTMLImageElement) => element.decode());
+				}
+			}
+		});
 		test("clicks a poster to fetch and play real media with captions and native controls", async ({
 			page,
 		}) => {
