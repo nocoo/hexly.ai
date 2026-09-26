@@ -330,7 +330,7 @@ export function ProjectDetail({
 						</AssetLink>
 					</nav>
 					<ProjectMedia
-						key={project.id}
+						key={`media-${project.id}`}
 						project={project}
 						locale={locale}
 						anchor={state.anchor}
@@ -412,7 +412,11 @@ export function ProjectDetail({
 							</div>
 						</div>
 					</section>
-					<ProjectApi key={project.id} project={project} locale={locale} />
+					<ProjectApi
+						key={`api-${project.id}`}
+						project={project}
+						locale={locale}
+					/>
 				</section>
 			) : (
 				<div className="empty-state gallery-empty">
