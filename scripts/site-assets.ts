@@ -102,13 +102,19 @@ export function siteAssets(): Plugin {
 								? "text/css; charset=utf-8"
 								: "text/plain; charset=utf-8",
 				);
+				const document = readFileSync(file, "utf8");
+				const preview = localMaterials
+					? document.replace(/https:\/\/[^\s"'<>]+/g, (url) =>
+							assetUrl(url, true),
+						)
+					: document;
 				response.end(
 					request.method === "HEAD"
 						? undefined
 						: file.endsWith("/review.html") &&
 								(request.headers["sec-fetch-dest"] === "document" ||
 									request.headers.accept?.includes("text/html"))
-							? readFileSync(file, "utf8").replace(
+							? preview.replace(
 									"</body>",
 									'<script type="module" src="/src/material-downloads.ts"></script></body>',
 								)
