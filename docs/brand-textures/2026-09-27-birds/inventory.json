@@ -1,0 +1,804 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-27",
+	"siteBaseline": "19f5ed63f6334c355d12601a74080051e0443557",
+	"scope": "All 13 non-archived catalogue bird identities; local generation, delegated visual acceptance, integration and browser verification only.",
+	"authorization": {
+		"ownerRequest": "动物类不错，鸟类就质量不行了，按照类似的规则，给鸟类的项目生成底纹，要求一致。不必确认，生成完在本地启动验证",
+		"generation": true,
+		"acceptance": "delegated-agent",
+		"publication": false
+	},
+	"model": "gpt-image-2.5-flare",
+	"plannedRequests": 26,
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"tokenSource": "src/styles/base.css",
+	"originalIdentityRecolored": false,
+	"productUIChanged": false,
+	"projects": [
+		{
+			"id": "raven",
+			"title": "Raven",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/raven/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/raven/v1.0.1",
+			"sourceMetadataSha256": "ac18388c0f36fe368157e8d6c075bd43aa0ff8ad17483f13bcc96a1d96962cde",
+			"subject": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+				"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+				"rgbaSha256": "a9943f772e250c4f7b6a9dad5a10163327a4219d7f9384f7363ee02c99f8d7c6",
+				"source": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+				"bytes": 2327803,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/raven/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "167cffd895b81e436868e2fb8099cf3db0c3b49de0b95cb824d557f69e05fd45"
+			},
+			"previousTexture": {
+				"root": "/textures/raven/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Rowan and pine",
+					"zh": "花楸与松"
+				},
+				"description": {
+					"en": "Narrow pine needle fans and compound rowan leaves, with only three tiny muted seed-like berries.",
+					"zh": "松针与羽状花楸叶疏朗地分布在枝头，少量暗色果点呼应乌鸦清醒而沉静的气质。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.35
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Rowan leaves",
+					"zh": "花楸叶影"
+				},
+				"motif": "Broad compound rowan leaves from a temperate woodland edge, with substantial oval serrated leaflets and clear central ribs. Use two unequal leafy sprays, no pine needles or berries.",
+				"description": {
+					"en": "Broad compound rowan leaves from a temperate woodland edge, with substantial oval serrated leaflets and clear central ribs.",
+					"zh": "花楸叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/raven.json",
+				"purpose": {
+					"en": "Connect compatible clients to GitHub Copilot and custom model upstreams through a local API proxy, with request analytics and live diagnostics.",
+					"zh": "通过本机 API 代理将兼容客户端接入 GitHub Copilot 与自定义模型上游，并查看调用统计和实时诊断信息。"
+				},
+				"inspectedRevision": "c59fe3ad5a0aea2e849b2b9ee00be189091c9faf"
+			}
+		},
+		{
+			"id": "dove",
+			"title": "Dove",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/dove/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/dove/v1.0.1",
+			"sourceMetadataSha256": "ad088fcac98137d26850b6b57b2c9d4673d18a662a42157f43a8d4cea49e1ae1",
+			"subject": "Original violet and teal faceted dove with pink blossoms",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dove.png",
+				"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+				"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+				"source": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+				"bytes": 4062349,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dove/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "3d21fe506c569846b90e45d0c1d164414222c2443406ac6f7bba2773f03fe1a7"
+			},
+			"previousTexture": {
+				"root": "/textures/dove/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "An orchard perch",
+					"zh": "花枝停驻"
+				},
+				"description": {
+					"en": "Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.",
+					"zh": "锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.34
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Orchard leaves",
+					"zh": "果园叶影"
+				},
+				"motif": "Broad oval cherry leaves from a temperate orchard perch, gently serrated margins and curved secondary veins. Group five to seven unequal leaves on two short quiet stems. No blossoms or fruit.",
+				"description": {
+					"en": "Broad oval cherry leaves from a temperate orchard perch, gently serrated margins and curved secondary veins.",
+					"zh": "果园叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/dove.json",
+				"purpose": {
+					"en": "Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.",
+					"zh": "为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。"
+				},
+				"inspectedRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0"
+			}
+		},
+		{
+			"id": "lyre",
+			"title": "Lyre",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/lyre/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/lyre/v1.0.1",
+			"sourceMetadataSha256": "058079ebd395c3f0af01f675f303ec5bb3c05f4dde873d21a777ad7589c77e94",
+			"subject": "Original chestnut faceted lyrebird with a curled feather crest",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/lyre.png",
+				"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+				"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+				"source": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+				"bytes": 3656299,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/lyre/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "8fea827e1961de64b8021a316c1ccfd9f741ef65e18dd73c8f354c0bc99b6817"
+			},
+			"previousTexture": {
+				"root": "/textures/lyre/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Under the fern canopy",
+					"zh": "蕨下回声"
+				},
+				"description": {
+					"en": "Finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip.",
+					"zh": "树蕨细叶、桉树长叶与一枚嫩蕨卷承接琴鸟的湿润林地，把声音的层次藏进叶片重叠处。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.41
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Forest fern folds",
+					"zh": "林间蕨褶"
+				},
+				"motif": "A damp southeastern Australian forest floor: two broad triangular tree-fern fronds with substantial clearly separated pinnae, accompanied by three long eucalyptus leaves. Keep fern divisions broad enough to read at small size, never lace-like.",
+				"description": {
+					"en": "A damp southeastern Australian forest floor: two broad triangular tree-fern fronds with substantial clearly separated pinnae, accompanied by three long eucalyptus leaves.",
+					"zh": "林间蕨褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/lyre.json",
+				"purpose": {
+					"en": "Manage recordings, transcribe speech and follow the text during audio playback.",
+					"zh": "管理录音、转写文字，并在回听时查看对应内容。"
+				},
+				"inspectedRevision": "78b3a126f27a5adc53e4eaf4097b785ac7cb609e"
+			}
+		},
+		{
+			"id": "rooster",
+			"title": "Rooster",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/rooster/v1.0.1",
+			"sourceMetadataSha256": "b82ef14a43d2386be53dfeee42c78fc0662683c97bfdaa13b4eb29cf442acd04",
+			"subject": "Copper rooster lifting one foot beside a multicolored morning glory",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+				"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+				"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+				"source": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+				"bytes": 2780156,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/rooster/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+			},
+			"previousTexture": {
+				"root": "/textures/rooster/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Morning-glory leaves",
+					"zh": "晨间牵牛叶"
+				},
+				"description": {
+					"en": "Heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom.",
+					"zh": "心形牵牛叶与一段松弛卷须沿庭院展开，只保留一枚安静花苞，承接公鸡的清晨气息。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.33
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Morning-glory leaves",
+					"zh": "牵牛叶影"
+				},
+				"motif": "Broad heart-shaped morning-glory leaves from a farmyard garden, with distinct palmate veins and gently curled edges. Five to seven unequal leaves on one loose short vine. No flowers or coiled ornamental tendrils.",
+				"description": {
+					"en": "Broad heart-shaped morning-glory leaves from a farmyard garden, with distinct palmate veins and gently curled edges.",
+					"zh": "牵牛叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/rooster.json",
+				"purpose": {
+					"en": "Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.",
+					"zh": "通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。"
+				},
+				"inspectedRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3"
+			}
+		},
+		{
+			"id": "codo",
+			"title": "Codo",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/codo/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/codo/v1.0.1",
+			"sourceMetadataSha256": "6eec7963f9f04d2e1304ef7b7dd25149b02ea7adbd57ab1d983e2715aa73086b",
+			"subject": "Vivid faceted hummingbird hovering at one coral bell flower",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+				"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+				"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+				"source": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+				"bytes": 1902979,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/codo/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "80692d289d0160104fe7251fe0b0ff391301b09da9cbe9b3d39216329aeeba40"
+			},
+			"previousTexture": {
+				"root": "/textures/codo/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "A flower within reach",
+					"zh": "近在喙边"
+				},
+				"description": {
+					"en": "Slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta.",
+					"zh": "鼠尾草长叶与金银花弯枝向上伸展，仅用两枚低饱和筒状小花回应蜂鸟取食的瞬间。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.37
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Garden sage leaves",
+					"zh": "庭院鼠尾草"
+				},
+				"motif": "A plausible hummingbird garden: generous oval sage leaves and a few paired honeysuckle leaves, with softly quilted veins and subtly folded tips. Two unequal clusters of five to seven primary leaves. No flowers or thin decorative flourishes.",
+				"description": {
+					"en": "A plausible hummingbird garden: generous oval sage leaves and a few paired honeysuckle leaves, with softly quilted veins and subtly folded tips.",
+					"zh": "庭院鼠尾草：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/codo.json",
+				"purpose": {
+					"en": "Deliver local script and Claude Code events as Mac desktop banners, keep project and session history, and optionally summarize notifications with an AI Guardian.",
+					"zh": "将本地脚本和 Claude Code 事件显示为 Mac 桌面横幅，保存项目与会话记录，并按需使用 AI Guardian 整理通知。"
+				},
+				"inspectedRevision": "c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a"
+			}
+		},
+		{
+			"id": "owl",
+			"title": "Owl",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/owl/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/owl/v1.0.1",
+			"sourceMetadataSha256": "56d54d018e0f44d32dcb7e5a8c00a03f0771d4dca961621a12107dc3001eb20a",
+			"subject": "Compact tawny owl holding one multicolored feather",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/owl-family-2026-09-07-01-01.png",
+				"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+				"rgbaSha256": "366bd57afd5aad1c4bad7d31e35c22e071cf19d926d374b2212b9543aef3de64",
+				"source": "https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/logo.png",
+				"bytes": 2973160,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/owl/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "918dcfef439476111243b62825016d58aebfc81bb98aa3f2a249303db1364a8d"
+			},
+			"previousTexture": {
+				"root": "/textures/owl/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Beneath the beech",
+					"zh": "山毛榉叶下"
+				},
+				"description": {
+					"en": "Oval beech leaves with clear secondary veins, a few lobed oak leaves and one small twig with a closed seed husk.",
+					"zh": "椭圆山毛榉叶与少量橡叶疏散地落在林下，清楚的支脉回应猫头鹰敏锐而安静的观察。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.3
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Beech canopy leaves",
+					"zh": "山毛榉叶影"
+				},
+				"motif": "A temperate tawny-owl woodland: five broad oval beech leaves with strong arcing side veins and two smaller softly lobed oak leaves. One loose diagonal leafy grouping. No seed husks or scattered forest litter.",
+				"description": {
+					"en": "A temperate tawny-owl woodland: five broad oval beech leaves with strong arcing side veins and two smaller softly lobed oak leaves.",
+					"zh": "山毛榉叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/owl.json",
+				"purpose": {
+					"en": "Inspect Mac system metrics and processes from the menu bar, and detect recurring crashes, resource pressure, sleep problems, and device anomalies locally.",
+					"zh": "在菜单栏查看 Mac 系统指标与进程，在本机发现反复崩溃、资源压力、睡眠和设备异常。"
+				},
+				"inspectedRevision": "e1c69addb656e8907a8828001e1f5c103f3b9fbf"
+			}
+		},
+		{
+			"id": "shrike",
+			"title": "Shrike",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/shrike/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/shrike/v1.0.1",
+			"sourceMetadataSha256": "e028c3e3f0fd69999d0c979a23d21f596fb9a2287ced347021c6d68a785e7b7b",
+			"subject": "Original grey faceted shrike with a dark eye mask",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/shrike.png",
+				"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+				"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+				"source": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+				"bytes": 3750012,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/shrike/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "ce70e9760a7f99c361f681c9645b735722667733ce334a88d9abea27fb5afb0f"
+			},
+			"previousTexture": {
+				"root": "/textures/shrike/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "A hawthorn lookout",
+					"zh": "山楂枝上的守望"
+				},
+				"description": {
+					"en": "Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.",
+					"zh": "有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.38
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Hawthorn leaf folds",
+					"zh": "山楂叶褶"
+				},
+				"motif": "A temperate hedgerow perch: broad deeply lobed hawthorn leaves with readable palmate veins, arranged in two unequal leafy sprays. Leaves dominate; short woody stems are subordinate. No visible thorns, berries or flowers.",
+				"description": {
+					"en": "A temperate hedgerow perch: broad deeply lobed hawthorn leaves with readable palmate veins, arranged in two unequal leafy sprays.",
+					"zh": "山楂叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/shrike.json",
+				"purpose": {
+					"en": "Back up selected files and development configurations on a Mac to Google Drive's local directory, with sync triggered from the app or a local HTTP request.",
+					"zh": "在 Mac 上将选定文件和开发配置备份到 Google Drive 的本地目录，通过应用或本机 HTTP 请求触发同步。"
+				},
+				"inspectedRevision": "0fec187fc22742664925897400d0c1a62b2478bb"
+			}
+		},
+		{
+			"id": "clip",
+			"title": "clip",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/clip/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/clip/v1.0.1",
+			"sourceMetadataSha256": "67797ef46dc05d4fa91487dc11470d4886043445827ac374705d3e4cbf600ac4",
+			"subject": "An amber-eyed ostrich in a brown hat with one bright feather cluster",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/clip.png",
+				"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+				"rgbaSha256": "963e9e0e52d168d56139a609fa918166741f14a9d80acddfe399f9f3dae334d6",
+				"source": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+				"bytes": 3160958,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/clip/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "e3aad2bc4963ea57fa3cf35359a099afb7bd3c2e82dc44a96cb9e3190dfcd909"
+			},
+			"previousTexture": {
+				"root": "/textures/clip/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Grass at walking height",
+					"zh": "步行高度的草"
+				},
+				"description": {
+					"en": "Tall narrow grass seed stems, sparse thornbush leaflets and a few bowed dry blades.",
+					"zh": "高草穗、稀疏刺灌小叶与弯曲干草贴近鸵鸟步行的高度，用开阔风向承接原标的轻快。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.35
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Savanna leaf fans",
+					"zh": "草原叶扇"
+				},
+				"motif": "An ostrich savanna edge: broad lanceolate wild-grass blades in two loose bent fans, with a small spray of oval bushwillow leaves. Show broad folded surfaces and longitudinal veins, not fine hair-like grasses. No seed plumes or flowers.",
+				"description": {
+					"en": "An ostrich savanna edge: broad lanceolate wild-grass blades in two loose bent fans, with a small spray of oval bushwillow leaves.",
+					"zh": "草原叶扇：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/clip.json",
+				"purpose": {
+					"en": "Turn an HTTP API definition in clip.yaml into an editable command-line client, with credentials stored separately for each tool.",
+					"zh": "将 clip.yaml 中的 HTTP API 定义转换为可编辑的命令行客户端，并按工具分别管理凭据。"
+				},
+				"inspectedRevision": "d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c"
+			}
+		},
+		{
+			"id": "fundly",
+			"title": "Fundly",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/fundly/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.1",
+			"root": "/textures/fundly/v1.0.1",
+			"sourceMetadataSha256": "d39e93eff3bf73433e59ce557a67f69c7cd7c9309a59e6761d8a94dc5c2b237c",
+			"subject": "A worldly navy-and-ivory penguin holding binoculars",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/fundly.svg",
+				"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+				"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+				"source": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+				"bytes": 456,
+				"width": 32,
+				"height": 32,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/fundly/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "b079c51c6034b6bd8ca9df868a2c03b5681984426b54c4c88e89a763109600af"
+			},
+			"previousTexture": {
+				"root": "/textures/fundly/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "A coastal lookout",
+					"zh": "海岸瞭望处"
+				},
+				"description": {
+					"en": "Coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head.",
+					"zh": "粗壮丛生草与少量海岸草本小叶构成瞭望处。采用合理的亚南极植被联想，不断言企鹅的具体物种。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.32
+			},
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Coastal leaf shelter",
+					"zh": "海岸叶荫"
+				},
+				"motif": "A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades. Rounded low leaves dominate. No tropical foliage, ice, seed heads or flowers.",
+				"description": {
+					"en": "A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades.",
+					"zh": "海岸叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/fundly.json",
+				"purpose": {
+					"en": "Collect fund and market data for private research into Chinese funds, ETFs, stocks, and macro conditions.",
+					"zh": "采集基金与市场数据，用于研究中国公募基金、ETF、股票与宏观环境。"
+				},
+				"inspectedRevision": "6de762074e00011009f7604bbeeb7c0b04923c00"
+			}
+		},
+		{
+			"id": "eagle",
+			"title": "Eagle",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/eagle/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.0",
+			"root": "/textures/eagle/v1.0.0",
+			"sourceMetadataSha256": "12c790199c6fab444bb77c8a24f17e8ada4fce940c9ed980a06c18f63e47df17",
+			"subject": "Golden faceted eagle holding a multicolored wind streamer",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/eagle-family-2026-09-19-01-02.png",
+				"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20",
+				"rgbaSha256": "023bef3908fbec406ef98ce6181c714ff5f8ff2b5e090618e90d00fc05f08f54",
+				"source": "https://github.com/nocoo/eagle/blob/d03eb4d276ec20ead665e490eb78ce5b09d720a5/logo.png",
+				"bytes": 3040705,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/eagle/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "1ee4fa4f344d3d260329568ac7771a052c83993c3bc555fafdfe1503322be685"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Mountain birch leaves",
+					"zh": "山地桦叶"
+				},
+				"motif": "A broad mountain woodland edge associated with an eagle, without asserting an exact species or range: substantial triangular birch leaves with softly toothed margins, accompanied by several rounded aspen leaves. Loose overlapping leaf planes, no needles or cones.",
+				"description": {
+					"en": "A broad mountain woodland edge associated with an eagle, without asserting an exact species or range: substantial triangular birch leaves with softly toothed margins, accompanied by several rounded aspen leaves.",
+					"zh": "山地桦叶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/eagle.json",
+				"purpose": {
+					"en": "Read the current Herdr Spaces, pane layout, task evidence and history across reporting machines in a private dashboard. Missing or stale evidence stays explicit; lifecycle labels never certify completion.",
+					"zh": "在私有看板中查看多台上报机器的 Herdr Space、窗格布局、任务证据与历史。缺失或过期证据明确呈现，生命周期标签不等于完成证明。"
+				},
+				"inspectedRevision": "d03eb4d276ec20ead665e490eb78ce5b09d720a5"
+			}
+		},
+		{
+			"id": "rio",
+			"title": "Rio",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.0",
+			"root": "/textures/rio/v1.0.0",
+			"sourceMetadataSha256": "69a6a00be0a6972cea34e7fda1a2fc0a6b3b13637fe71ff96ce1331a19e90414",
+			"subject": "Colorful fragmented scarlet macaw watching one drifting feather",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/rio-family-2026-09-20-01-01.png",
+				"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d",
+				"rgbaSha256": "9d29d40c5653a69488cbbaadc047898a68801110a24240bad3e289c98fee4410",
+				"source": "https://github.com/nocoo/rio/blob/f4edf159fcc8e8d6469e1e49139f54cf8ca2b288/logo.png",
+				"bytes": 3484953,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/rio/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "eaa1cf99f65713a44b3472682a17d37d178660d73219b46a4d22be6ec95b79a8"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Rainforest leaf folds",
+					"zh": "雨林叶褶"
+				},
+				"motif": "A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins. No split monstera leaves, fruit, flowers or palms.",
+				"description": {
+					"en": "A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins.",
+					"zh": "雨林叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/rio.json",
+				"purpose": {
+					"en": "Talk naturally with your own Hermes agents from any browser. Rio brings GPT-Live voice conversations, real-time answers and local tool execution into one private workspace, with seamless switching between machines, gateways and agent profiles.",
+					"zh": "在任何浏览器中，与自己的 Hermes Agent 自然交谈。Rio 将 GPT-Live 实时语音、即时回答与本地工具执行融入私有工作区，随时切换机器、网关和 Agent 配置。"
+				},
+				"inspectedRevision": "f4edf159fcc8e8d6469e1e49139f54cf8ca2b288"
+			}
+		},
+		{
+			"id": "falcon",
+			"title": "Falcon",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/falcon/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.0",
+			"root": "/textures/falcon/v1.0.0",
+			"sourceMetadataSha256": "e4f4f4f026d360c87569b876159a0c8aad3543e43b30267c039044cafbab55cf",
+			"subject": "Multicolored fragmented peregrine falcon head entering from the left",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/falcon-family-2026-09-25-03-02.png",
+				"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68",
+				"rgbaSha256": "1577e2f95a0267c8aba39b709eac9b38b21e1277377def7892bb53879d46e377",
+				"source": "https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/logo.png",
+				"bytes": 2206051,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/falcon/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "75e32c267795e09a5bf9f138e27be70d9cd9a87962ff1b8738a6ac66d1925fb3"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Cliffside leaf shelter",
+					"zh": "崖边叶荫"
+				},
+				"motif": "A plausible temperate peregrine-falcon cliff margin: broad leathery sea-beet leaves with wavy edges and clear central ribs, together with a few smaller rounded coastal plantain leaves. This is one possible coastal habitat, not a species-range claim. No rocks, landscape, flowers or grass seed heads.",
+				"description": {
+					"en": "A plausible temperate peregrine-falcon cliff margin: broad leathery sea-beet leaves with wavy edges and clear central ribs, together with a few smaller rounded coastal plantain leaves.",
+					"zh": "崖边叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/falcon.json",
+				"purpose": {
+					"en": "A native macOS application in development for routing local Agent requests to Jev and inspecting their decisions. Its design connects each source, request context, returned answer and usage record, with seven-day local retention. The preserved local source includes the Swift application foundation; no public application release is claimed.",
+					"zh": "正在开发的 macOS 原生应用，用于转发本机 Agent 的 Jev 请求并查看决策。设计将调用来源、请求上下文、返回答案与用量关联起来，在本机保留七天记录。已保存的本地源码包含 Swift 应用基础，尚不宣称已有公开应用版本。"
+				},
+				"inspectedRevision": "aa0e050e0f53b09d0cbfd088ed957cb74112e3dc"
+			}
+		},
+		{
+			"id": "kite",
+			"title": "Kite",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/kite/texture-studies/2026-09-27-flare-birds-01",
+			"version": "1.0.0",
+			"root": "/textures/kite/v1.0.0",
+			"sourceMetadataSha256": "271c11c17b4600a6e8ce7ca18b5983f611c2d15979b9c86c391c74bca9c2b1ac",
+			"subject": "Multicolored fragmented red kite head entering from the right",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/kite-family-2026-09-25-02-03.png",
+				"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6",
+				"rgbaSha256": "da77b6931e5805d84dba557d68bb68dc063c124979f3384fda6e21f581034639",
+				"source": "https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/logo.png",
+				"bytes": 2284290,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/kite/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "8e0d91ff6b755b55171fa24081ff4e3d55b5172daab6419fa394b297926db93e"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "bird",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Oak woodland margins",
+					"zh": "橡林叶缘"
+				},
+				"motif": "A red kite's open woodland edge: broad softly lobed oak leaves with clearly modeled branching veins, accompanied by three smaller oval hazel leaves. Five to seven substantial leaf planes form one loose lower-right sweep. No acorns, flowers or feather shapes.",
+				"description": {
+					"en": "A red kite's open woodland edge: broad softly lobed oak leaves with clearly modeled branching veins, accompanied by three smaller oval hazel leaves.",
+					"zh": "橡林叶缘：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+				},
+				"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/kite.json",
+				"purpose": {
+					"en": "Collect Pi execution traces locally through a passive extension and a separate Unix-socket collector. SQLite preserves source events, timestamps and correlations for inspection and future visualization. Capture is bounded and fail-open; the preserved collector documentation does not establish a released visualization interface.",
+					"zh": "通过被动扩展与独立 Unix socket 采集进程，在本机收集 Pi 执行轨迹。SQLite 保存源事件、时间戳与关联信息，供检查及后续可视化使用。采集有界且不阻塞 Pi；已保存的采集器文档不代表可视化界面已经发布。"
+				},
+				"inspectedRevision": "704ae3833c9bf752ae7785d9aa6faa7756fefbbf"
+			}
+		}
+	]
+}
