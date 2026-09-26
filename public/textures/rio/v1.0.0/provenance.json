@@ -1,0 +1,115 @@
+{
+	"project": "rio",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Rainforest leaf folds", "zh": "雨林叶褶" },
+		"motif": "A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins. No split monstera leaves, fruit, flowers or palms.",
+		"description": {
+			"en": "A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins.",
+			"zh": "雨林叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/rio.json",
+		"purpose": {
+			"en": "Talk naturally with your own Hermes agents from any browser. Rio brings GPT-Live voice conversations, real-time answers and local tool execution into one private workspace, with seamless switching between machines, gateways and agent profiles.",
+			"zh": "在任何浏览器中，与自己的 Hermes Agent 自然交谈。Rio 将 GPT-Live 实时语音、即时回答与本地工具执行融入私有工作区，随时切换机器、网关和 Agent 配置。"
+		},
+		"inspectedRevision": "f4edf159fcc8e8d6469e1e49139f54cf8ca2b288"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rio-family-2026-09-20-01-01.png",
+		"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d",
+		"rgbaSha256": "9d29d40c5653a69488cbbaadc047898a68801110a24240bad3e289c98fee4410",
+		"source": "https://github.com/nocoo/rio/blob/f4edf159fcc8e8d6469e1e49139f54cf8ca2b288/logo.png",
+		"bytes": 3484953,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/rio/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "eaa1cf99f65713a44b3472682a17d37d178660d73219b46a4d22be6ec95b79a8"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-birds/inventory.json",
+	"sourceInventorySha256": "da6ace93026d66b2db9505eb2b881b195c162eb420d02b7f27850fa1687d394e",
+	"siteBaseline": "19f5ed63f6334c355d12601a74080051e0443557",
+	"tokenSource": "src/styles/base.css",
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e1d9b85a-81d1-4ed0-b76c-9f3b67591e27",
+			"source": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+			"request": "/textures/rio/v1.0.0/source-light-request.json",
+			"response": "/textures/rio/v1.0.0/source-light-response.json",
+			"prompt": "/textures/rio/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/rio/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rio/v1.0.0/texture-light.png",
+				"sha256": "4793a587a87d8b6a5c1e046fb00d8c1b930fb5a9aab8495cfaa3699d0d317122",
+				"bytes": 1711724,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "24b1dffe-6af6-483d-bc13-c06c2494b88d",
+			"source": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/rio/v1.0.0/source-dark-request.json",
+			"response": "/textures/rio/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/rio/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/rio/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rio/v1.0.0/texture-dark.png",
+				"sha256": "71c594d28dd899299ef730c7bc2ba9f58549423d8b17ed16d451e18b2a9932fb",
+				"bytes": 1622812,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.029956837782585,
+		"darkMinimum": 4.763392598606113,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-26T21:56:02.714Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

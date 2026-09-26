@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "clip",
+	"version": "1.0.1",
+	"root": "/textures/clip/v1.0.1",
+	"canonical": "https://hexly.ai/projects/clip#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/clip/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Savanna leaf fans", "zh": "草原叶扇" },
+		"description": {
+			"en": "An ostrich savanna edge: broad lanceolate wild-grass blades in two loose bent fans, with a small spray of oval bushwillow leaves.",
+			"zh": "草原叶扇：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.36
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/clip.png",
+		"sha256": "4892842297da37ebe701ad3c9d9713164b32879f1c8a93faf357e3feb5bd5009",
+		"rgbaSha256": "963e9e0e52d168d56139a609fa918166741f14a9d80acddfe399f9f3dae334d6",
+		"source": "https://github.com/nocoo/clip/blob/d5dcc44d769d5f5ebc08d47537684a9d34cb6a6c/logo.png",
+		"bytes": 3160958,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/clip/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "e3aad2bc4963ea57fa3cf35359a099afb7bd3c2e82dc44a96cb9e3190dfcd909"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d65ba464-79e4-98e9-abbe-0130647a116a",
+			"source": "artwork/brands/clip/texture-studies/2026-09-27-flare-birds-01/light-attempt-06",
+			"request": "/textures/clip/v1.0.1/source-light-request.json",
+			"response": "/textures/clip/v1.0.1/source-light-response.json",
+			"prompt": "/textures/clip/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/clip/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/clip/v1.0.1/texture-light.png",
+				"sha256": "11ff562411f7c79f25ce17d94cb1e8c7b52bba01a2fcc25e619676d43ddb1eea",
+				"bytes": 1662644,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b39124fc-eb81-471d-9a2c-2c643b802d95",
+			"source": "artwork/brands/clip/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/clip/v1.0.1/source-dark-request.json",
+			"response": "/textures/clip/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/clip/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/clip/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/clip/v1.0.1/texture-dark.png",
+				"sha256": "9846b144852567c52e1dd9295ef0947e5a3cad7bea96e334887318364df9a0b5",
+				"bytes": 1583473,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/clip/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1662644,
+			"sha256": "11ff562411f7c79f25ce17d94cb1e8c7b52bba01a2fcc25e619676d43ddb1eea"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 134426,
+			"sha256": "e36c5cc948177f71a92a737b94e3d6537d3a12e914cba73899d6179bf4a795e2"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5086,
+			"sha256": "ad6c1602bd9d618edf2f0c740cd5b344a5eea52dedad7fca058e76a970c018c6"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4298,
+			"sha256": "1ac4e5bda8dc32d4800982b4acbcdeff2268f47db13f7736c720c7ddd6c2f0d6"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "91bb2bbaf090b81945cf9f5185592c0b9eed50d56650984ec2248ba0eb6a463c"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "cb7727cee4d1d261fc2aaa16c70cd87a7256f58e59c3044c3eb455f0e1fdf87a"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1041,
+			"sha256": "93ead7757f4824441600338e2e2a79af30544377b96e5ff49ced85aca301d0d0"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1583473,
+			"sha256": "9846b144852567c52e1dd9295ef0947e5a3cad7bea96e334887318364df9a0b5"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 96108,
+			"sha256": "d5e7a77413c67826c2189aa66c7ef53edce1994d96a8b8c3a9c21a1e6ba23230"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5200,
+			"sha256": "d784dae6335a860f0a1e83ddb78f8c542123d0e8fd25ca23a8536762a4d3e81d"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4379,
+			"sha256": "8aececd91f93545835852b21433a4a540fb1b7997babcee4541d8e07fdcffccb"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "98dc1408d5d0754a426104e96481cf88b0e2567f0adc00ecad7917ac54d00097"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "f9549ee4f9ef581f0928fed9ed04f1fc700914c0066603a4e8f17af5f68ccd26"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 956,
+			"sha256": "0ade7a7098de9189822511d34fd6b9d7e16a906fc9fadbfd253e3d6bf522fd73"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5079,
+			"sha256": "2bc695361550edf441a4bd8ac3d1b0d28b915248b179c874b30883fabdf46dce"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1019,
+			"sha256": "7e45bd463ed5c5e02d6497faf93ccacbc2a44a00fd63742e279dfb4ac41af5e2"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "4d3b8e8f6c427f256f1805e906ed01e2cc8bdc78997a9824daa034fc84c2b38f"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2718,
+			"sha256": "8f1bfd94ed2bd551e9dc3ebdf6e041c1253acf81513141ec24de96245320a337"
+		},
+		{
+			"path": "/textures/clip/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3523,
+			"sha256": "908b5b84336a5bd8709d8a08c8e6e6ecd073a82f0336a1de0dc81c49332a3b9a"
+		}
+	]
+}

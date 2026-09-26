@@ -1,0 +1,115 @@
+{
+	"project": "rooster",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Morning-glory leaves", "zh": "牵牛叶影" },
+		"motif": "Broad heart-shaped morning-glory leaves from a farmyard garden, with distinct palmate veins and gently curled edges. Five to seven unequal leaves on one loose short vine. No flowers or coiled ornamental tendrils.",
+		"description": {
+			"en": "Broad heart-shaped morning-glory leaves from a farmyard garden, with distinct palmate veins and gently curled edges.",
+			"zh": "牵牛叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/rooster.json",
+		"purpose": {
+			"en": "Chat with a locally configured Hermes Agent in a browser, inspect streamed replies and tool activity, and keep searchable session history on your machine.",
+			"zh": "通过浏览器与本机配置的 Hermes Agent 对话，查看流式回复和工具执行过程，并在本地保存可搜索的会话记录。"
+		},
+		"inspectedRevision": "8907933c080ed86c6cbe15d9af5cdb0be86919d3"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+		"source": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+		"bytes": 2780156,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/rooster/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-birds/inventory.json",
+	"sourceInventorySha256": "da6ace93026d66b2db9505eb2b881b195c162eb420d02b7f27850fa1687d394e",
+	"siteBaseline": "19f5ed63f6334c355d12601a74080051e0443557",
+	"tokenSource": "src/styles/base.css",
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "29a76581-bad9-4b43-be62-e1afbec50ec5",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+			"request": "/textures/rooster/v1.0.1/source-light-request.json",
+			"response": "/textures/rooster/v1.0.1/source-light-response.json",
+			"prompt": "/textures/rooster/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/rooster/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.1/texture-light.png",
+				"sha256": "09b99b2ea827035d10354b8f55e2f138b708065d09d4945e440d7ab3a7dcca23",
+				"bytes": 1717771,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6f983788-19c2-41e9-9c2b-7e87bc85b568",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/rooster/v1.0.1/source-dark-request.json",
+			"response": "/textures/rooster/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/rooster/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/rooster/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.1/texture-dark.png",
+				"sha256": "d7e6e5ec1f12eb5a9426da7e17ba25c9a26b493e8d44371b964d3f6b0b17a957",
+				"bytes": 1590339,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.35
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.235754275732679,
+		"darkMinimum": 4.724483347472279,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-26T21:48:21.326Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

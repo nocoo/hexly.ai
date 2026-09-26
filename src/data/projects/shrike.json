@@ -295,17 +295,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/shrike/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/shrike/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "A hawthorn lookout", "zh": "山楂枝上的守望" },
+		"name": {
+			"en": "Hawthorn leaf folds",
+			"zh": "山楂叶褶"
+		},
 		"description": {
-			"en": "Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.",
-			"zh": "有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。"
+			"en": "A temperate hedgerow perch: broad deeply lobed hawthorn leaves with readable palmate veins, arranged in two unequal leafy sprays.",
+			"zh": "山楂叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.38
+		"surfaceOpacity": 0.42
 	}
 }

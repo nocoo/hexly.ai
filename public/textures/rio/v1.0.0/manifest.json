@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "rio",
+	"version": "1.0.0",
+	"root": "/textures/rio/v1.0.0",
+	"canonical": "https://hexly.ai/projects/rio#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/rio/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Rainforest leaf folds", "zh": "雨林叶褶" },
+		"description": {
+			"en": "A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins.",
+			"zh": "雨林叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rio-family-2026-09-20-01-01.png",
+		"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d",
+		"rgbaSha256": "9d29d40c5653a69488cbbaadc047898a68801110a24240bad3e289c98fee4410",
+		"source": "https://github.com/nocoo/rio/blob/f4edf159fcc8e8d6469e1e49139f54cf8ca2b288/logo.png",
+		"bytes": 3484953,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/rio/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "eaa1cf99f65713a44b3472682a17d37d178660d73219b46a4d22be6ec95b79a8"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e1d9b85a-81d1-4ed0-b76c-9f3b67591e27",
+			"source": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+			"request": "/textures/rio/v1.0.0/source-light-request.json",
+			"response": "/textures/rio/v1.0.0/source-light-response.json",
+			"prompt": "/textures/rio/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/rio/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rio/v1.0.0/texture-light.png",
+				"sha256": "4793a587a87d8b6a5c1e046fb00d8c1b930fb5a9aab8495cfaa3699d0d317122",
+				"bytes": 1711724,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "24b1dffe-6af6-483d-bc13-c06c2494b88d",
+			"source": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/rio/v1.0.0/source-dark-request.json",
+			"response": "/textures/rio/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/rio/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/rio/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rio/v1.0.0/texture-dark.png",
+				"sha256": "71c594d28dd899299ef730c7bc2ba9f58549423d8b17ed16d451e18b2a9932fb",
+				"bytes": 1622812,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/rio/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1711724,
+			"sha256": "4793a587a87d8b6a5c1e046fb00d8c1b930fb5a9aab8495cfaa3699d0d317122"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 158050,
+			"sha256": "372543840e36f6ca18c94731fc3616f9634a3aa5ee0afa6bf730cf4b2ca691a1"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6822,
+			"sha256": "7486e183011f0427be1ea9828ae246ec64dd5414cb9874c42864b950dea13bdc"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4311,
+			"sha256": "4bb553095af129ab74ac55102ccd83a26eb729191cd2967bd44d279d24694cb3"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "7ec95c8a2c13de7a8f19e02b30d5f5a2f68aae5a83dfa8c0d758ef89c674cb10"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "32fc5841443471ac2c43367257ae787c95aeea546131c94fdf605c4f6b76bf97"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 951,
+			"sha256": "231c6e2ae9ec62ea515df5fe4c795fa04877486e13cd263f7bd8a0aa1cff9e3c"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1622812,
+			"sha256": "71c594d28dd899299ef730c7bc2ba9f58549423d8b17ed16d451e18b2a9932fb"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 113368,
+			"sha256": "168a830611c1926e50abe211e8de6ab817705010ee4a10b9d0127e6c1b6d2df6"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5772,
+			"sha256": "a67727a3c310ccc57bc737b48b94ffef2f8f5d0e8d1c2b1bf703b3724d1367d2"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4392,
+			"sha256": "6511bf1a8f2c4b43e1cd2fb13dc43d4f702bc38f3c42a0b4968997bc52f53c4d"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "3a49e52f36c7fda0e510ada77098af036632d5ec1b2c8015b29eaeb7a5e95b1d"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "938e71b40b83d45c0301d49d184749f4509a1d33c957c7cd3237f3b3eed8c3ec"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 923,
+			"sha256": "f2f2700faa1e87b2234287eda7568a0842547909d5ad289015c5d56ff60fe786"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5370,
+			"sha256": "f687f57c3ca4ce91c35da591dfec4833e512a144dacedb10ba913a69000dafac"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1026,
+			"sha256": "00824c600be5c2e822a6ea86f1129ac421bde8136593a75f6dbe35c54ebba3c9"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "7ffbcd4016aa68433e4d126be49cb93ccca137192837a896d217277734011402"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2783,
+			"sha256": "8256a34619e8ec0439061dd00949e4cd0a77dde633ceba182d4a66837e944386"
+		},
+		{
+			"path": "/textures/rio/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3590,
+			"sha256": "62b4f689e001f99ecaf63b4907ca30c6f1f4b7a6705eda2d7746e4f63abe6175"
+		}
+	]
+}

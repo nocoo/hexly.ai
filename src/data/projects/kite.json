@@ -327,5 +327,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/kite/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Oak woodland margins",
+			"zh": "橡林叶缘"
+		},
+		"description": {
+			"en": "A red kite's open woodland edge: broad softly lobed oak leaves with clearly modeled branching veins, accompanied by three smaller oval hazel leaves.",
+			"zh": "橡林叶缘：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.41
 	}
 }

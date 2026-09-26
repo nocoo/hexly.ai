@@ -327,5 +327,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/falcon/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Cliffside leaf shelter",
+			"zh": "崖边叶荫"
+		},
+		"description": {
+			"en": "A plausible temperate peregrine-falcon cliff margin: broad leathery sea-beet leaves with wavy edges and clear central ribs, together with a few smaller rounded coastal plantain leaves.",
+			"zh": "崖边叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
 	}
 }

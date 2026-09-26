@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "owl",
+	"version": "1.0.1",
+	"root": "/textures/owl/v1.0.1",
+	"canonical": "https://hexly.ai/projects/owl#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/owl/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Beech canopy leaves", "zh": "山毛榉叶影" },
+		"description": {
+			"en": "A temperate tawny-owl woodland: five broad oval beech leaves with strong arcing side veins and two smaller softly lobed oak leaves.",
+			"zh": "山毛榉叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/owl-family-2026-09-07-01-01.png",
+		"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+		"rgbaSha256": "366bd57afd5aad1c4bad7d31e35c22e071cf19d926d374b2212b9543aef3de64",
+		"source": "https://github.com/nocoo/owl/blob/e1c69addb656e8907a8828001e1f5c103f3b9fbf/logo.png",
+		"bytes": 2973160,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/owl/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "918dcfef439476111243b62825016d58aebfc81bb98aa3f2a249303db1364a8d"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3804373a-c0e5-4919-9f6f-d8c73b2d7b74",
+			"source": "artwork/brands/owl/texture-studies/2026-09-27-flare-birds-01/light",
+			"request": "/textures/owl/v1.0.1/source-light-request.json",
+			"response": "/textures/owl/v1.0.1/source-light-response.json",
+			"prompt": "/textures/owl/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/owl/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/owl/v1.0.1/texture-light.png",
+				"sha256": "6298df425d844120f6a4dc5fb5e21991ddf6dfec909e097506b791f01aed19e1",
+				"bytes": 1776814,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "bda08adf-e9e1-47d8-a339-68e215cb306e",
+			"source": "artwork/brands/owl/texture-studies/2026-09-27-flare-birds-01/dark-attempt-05",
+			"request": "/textures/owl/v1.0.1/source-dark-request.json",
+			"response": "/textures/owl/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/owl/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/owl/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/owl/v1.0.1/texture-dark.png",
+				"sha256": "4dbd4d8039088d1839fb97d9e6046755ff1d6ec4abc46e9b29999632dc12770a",
+				"bytes": 1640125,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/owl/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1776814,
+			"sha256": "6298df425d844120f6a4dc5fb5e21991ddf6dfec909e097506b791f01aed19e1"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 201844,
+			"sha256": "11c2f7df9ca1f284e32779d1b7ccfba31204e6913f3e0bb6f9e693381c8ad332"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6420,
+			"sha256": "cbbbddd9bd764a391dc2d34f967b29bbf57f8c599c695a657f3984ebe22eb44e"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3694,
+			"sha256": "9e2c68c05ccbe44e9d968ef761a80a989462f233bb84b2cdbef003b794c4446e"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "741a90f87ddfca743f30f4da31cf49bb534fa301a7c3cc829150df96af92cece"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "5c4f67507d0325d4393d7d0837c92524ea444e6fdd4a37f3a331974db419e9fe"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 912,
+			"sha256": "ca6dc61090e761efad5212ef380ef61984208a412754af0c3ee03157237d7bd9"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1640125,
+			"sha256": "4dbd4d8039088d1839fb97d9e6046755ff1d6ec4abc46e9b29999632dc12770a"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 124194,
+			"sha256": "8646487e4a81da8e0397b7e46a1f8b1a4a2003e0e85cfc3784cff73ef3d9153c"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4462,
+			"sha256": "fa4f2fda6a17521d410dddf0de509ff4d8759e2cc6773b6a9687120a10063ab7"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4353,
+			"sha256": "488e7e7c5ed0e0135c6e17ca714970f34504c60410ae6fe5da3ddb4d0ab5aa5c"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "2363bbeca17b80ebe820cdfb41f94582ffb5be5dcf291cd8e36c5f3cff1c57d9"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "127acb9236e19c4af839e898945b86b49f27e025e9d94cf709167d7635722f14"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "6da9480d6a40d934aadb836fac49c668d077021af365fb91f0c83534515d643a"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5090,
+			"sha256": "668f5a93503739c879ecaf79a157f9d09f20dcc15df3a157012018fc35af8385"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 974,
+			"sha256": "021611f1fa4da34f83266fcfcfcaff1eb9220bcb106958ddc0960b4097a202a0"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "8b5646199dc00b78498544d91694b37a4140b835cc2e724384f61d197f385a8d"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2721,
+			"sha256": "0edf161008b83c087bf2f34453baa0d52faaab139ee5e6223c5b10e84d606d5d"
+		},
+		{
+			"path": "/textures/owl/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3520,
+			"sha256": "3c3fd49a007b7546e9fefc19808d91bc394ff5154902432b7ac6c1cd8385fd4c"
+		}
+	]
+}

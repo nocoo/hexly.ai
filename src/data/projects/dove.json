@@ -326,17 +326,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/dove/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/dove/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "An orchard perch", "zh": "花枝停驻" },
+		"name": {
+			"en": "Orchard leaves",
+			"zh": "果园叶影"
+		},
 		"description": {
-			"en": "Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.",
-			"zh": "锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。"
+			"en": "Broad oval cherry leaves from a temperate orchard perch, gently serrated margins and curved secondary veins.",
+			"zh": "果园叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.34
+		"surfaceOpacity": 0.45
 	}
 }

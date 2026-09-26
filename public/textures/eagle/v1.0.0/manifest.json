@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "eagle",
+	"version": "1.0.0",
+	"root": "/textures/eagle/v1.0.0",
+	"canonical": "https://hexly.ai/projects/eagle#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/eagle/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Mountain birch leaves", "zh": "山地桦叶" },
+		"description": {
+			"en": "A broad mountain woodland edge associated with an eagle, without asserting an exact species or range: substantial triangular birch leaves with softly toothed margins, accompanied by several rounded aspen leaves.",
+			"zh": "山地桦叶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/eagle-family-2026-09-19-01-02.png",
+		"sha256": "2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20",
+		"rgbaSha256": "023bef3908fbec406ef98ce6181c714ff5f8ff2b5e090618e90d00fc05f08f54",
+		"source": "https://github.com/nocoo/eagle/blob/d03eb4d276ec20ead665e490eb78ce5b09d720a5/logo.png",
+		"bytes": 3040705,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/eagle/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "1ee4fa4f344d3d260329568ac7771a052c83993c3bc555fafdfe1503322be685"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6c7066d9-5226-4e60-ad6a-5b882c95ae40",
+			"source": "artwork/brands/eagle/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+			"request": "/textures/eagle/v1.0.0/source-light-request.json",
+			"response": "/textures/eagle/v1.0.0/source-light-response.json",
+			"prompt": "/textures/eagle/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/eagle/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/eagle/v1.0.0/texture-light.png",
+				"sha256": "ac42d3804f1ecad722a01f32447532096a3b90bfb90df595b310fbfbed539407",
+				"bytes": 1714723,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "320fdc54-0580-4b33-9b2e-3e46542c4ea7",
+			"source": "artwork/brands/eagle/texture-studies/2026-09-27-flare-birds-01/dark",
+			"request": "/textures/eagle/v1.0.0/source-dark-request.json",
+			"response": "/textures/eagle/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/eagle/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/eagle/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/eagle/v1.0.0/texture-dark.png",
+				"sha256": "10587716f816f1c24fe249bfd982bac38e34da1368ad77bd8f1e634dbf7f20b5",
+				"bytes": 1697656,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/eagle/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1714723,
+			"sha256": "ac42d3804f1ecad722a01f32447532096a3b90bfb90df595b310fbfbed539407"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 161580,
+			"sha256": "1e0d80506823e0bd6233c8a680270c9ba9aed9bf2168ec388af3e9cb3b040b83"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5166,
+			"sha256": "390aac126e54e540f6c11124bb7130772ed201ccfc4dbd12e843312ad99956d2"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4331,
+			"sha256": "bb02bc0695e763bc774f82d69b7bde2b028a4f141a12641321c7b83cb2ac481c"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "c01d351809af5ba29f4a6def958c4352b22c43daed83cbd5b70d5f8f3256ca83"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "ec59fe35d9cd65b79a460a97bcd5b92319f6a6a23304026aa3c1212e9fe97c72"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 921,
+			"sha256": "a45d4e7af1d35efdbee8981e88dbcab3e6a49017848edfc9bdac79049e1ba25b"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1697656,
+			"sha256": "10587716f816f1c24fe249bfd982bac38e34da1368ad77bd8f1e634dbf7f20b5"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 166846,
+			"sha256": "367442e3ee6e9551fc95873baf033d029e19c7836613dea4f777fd9ec264e6d1"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6212,
+			"sha256": "4aa5928c6f39f1ec0c3b7bfea1e860b2e7110320f870df9adecfa1701ece1214"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3834,
+			"sha256": "1f116e54aea6921356f85546e78cb9e96b7cff4e5678882289e02df3deb968fa"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "30afb1b191485c814a4bdf41ae51ac7b51314911d3c1e769b7abb7cacd9308a0"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "2bdffe6f3569fe63d1859285f6f178d698e9f212d4285628eb0522977a47925a"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 900,
+			"sha256": "ac093d9aa3b3cdc32f9247e0032070429eecdd63babd4eb719596386c59c19d8"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5366,
+			"sha256": "d391456807eadc7e4f7e61925a10d34296af48554bb1630461e10e7d2a1d537b"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1042,
+			"sha256": "fa8cfc72c48650086b147d96c0d36ef2bba44974c197166c232ab6498d16f575"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "8529e02626226088b28e6a3e8d77b6a35a57a95a341e4d7a6948f5336829b163"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2808,
+			"sha256": "2f76bb3e8356a410eac7729f333ee1e75f02e1fd146041c916b848e7263e0c10"
+		},
+		{
+			"path": "/textures/eagle/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3631,
+			"sha256": "17b3741df9effbee58fc2443d9f8718043e9f842727e074f374859f4d3595e13"
+		}
+	]
+}

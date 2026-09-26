@@ -62,6 +62,16 @@ Talk naturally with your own Hermes agents from any browser. Rio brings GPT-Live
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current campaign texture
+
+- Rainforest leaf folds / 雨林叶褶: A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins.
+- 雨林叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.37.
+- [Paper PNG](https://h.no.mt/projects/rio/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/rio/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/rio/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/rio/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/rio/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/rio/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/rio/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/rio#brand).

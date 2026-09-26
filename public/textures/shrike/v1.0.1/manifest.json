@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "shrike",
+	"version": "1.0.1",
+	"root": "/textures/shrike/v1.0.1",
+	"canonical": "https://hexly.ai/projects/shrike#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/shrike/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Hawthorn leaf folds", "zh": "山楂叶褶" },
+		"description": {
+			"en": "A temperate hedgerow perch: broad deeply lobed hawthorn leaves with readable palmate veins, arranged in two unequal leafy sprays.",
+			"zh": "山楂叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/shrike.png",
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"rgbaSha256": "b65a3177e4fb744d1984ab05ec0d305eb5a051a84f2131ce7f5b15092d5bde06",
+		"source": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"bytes": 3750012,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/shrike/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "ce70e9760a7f99c361f681c9645b735722667733ce334a88d9abea27fb5afb0f"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "352a1dbd-9fef-4201-b39d-817362971442",
+			"source": "artwork/brands/shrike/texture-studies/2026-09-27-flare-birds-01/light-attempt-05",
+			"request": "/textures/shrike/v1.0.1/source-light-request.json",
+			"response": "/textures/shrike/v1.0.1/source-light-response.json",
+			"prompt": "/textures/shrike/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/shrike/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/shrike/v1.0.1/texture-light.png",
+				"sha256": "b32b46a6c3b783f463b0b235dc61ff704d5d9705c38eb3013e95dcdb7f9dbd71",
+				"bytes": 1762401,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "f12af629-4971-4682-b0f1-e6be91fd69b3",
+			"source": "artwork/brands/shrike/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/shrike/v1.0.1/source-dark-request.json",
+			"response": "/textures/shrike/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/shrike/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/shrike/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/shrike/v1.0.1/texture-dark.png",
+				"sha256": "aa45de52cd0eeb141942dc77767b8afdb9b4b2ed96a5b3dc91172451e9ac94c9",
+				"bytes": 1628938,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/shrike/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1762401,
+			"sha256": "b32b46a6c3b783f463b0b235dc61ff704d5d9705c38eb3013e95dcdb7f9dbd71"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 185288,
+			"sha256": "796155c1e8a8554b853e8cb2676342e5c70330adac4843dea26413f37b950aca"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5902,
+			"sha256": "b4f4dfebfdc47421aa6b289cb2e0ebc68b2f5411fef986d14f37004a8535c765"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4287,
+			"sha256": "d76eee79b463b38c79b7a874511706d5531e796e74a70b6a104996637996b192"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "400706c85bf25b061a592a04878ba5a9003105a90f003be3ead071943f14ed1f"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d10590df87362df1907c04ba68105c7729dfdf4e36c4a4cf86ed42c02831f207"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 910,
+			"sha256": "4c46e6c1c0b04cc376c7ce93371f70d808a1e2aeb86ee5b266378acb09d59b4b"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1628938,
+			"sha256": "aa45de52cd0eeb141942dc77767b8afdb9b4b2ed96a5b3dc91172451e9ac94c9"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 122160,
+			"sha256": "c0971d4cfdb96f547cdf52b07d93de7e1ed190bacc6df29e1081f8e8fbd11b74"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4414,
+			"sha256": "93b4d43802cf729a57678bb815b03aebcc126db953d37351f360bbd875ddb2db"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4368,
+			"sha256": "804a7627031ffed607e97c1e267f60ff965dc4f1186e45b22d184eb1d2926fda"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "bdc2c6f5d81e4dfcc5e3d3a5008aa9ecfadc298624eab85a8e9838bbcf74201e"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "6d0f0b2d4efd99fe368cde647ec5bf7313ea7edb08ed588e9b977277cbf6e5ea"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 908,
+			"sha256": "04bb31a5d314c5a9ea6bc0faca97cfb366785d28c0d2f261d5fbd2c9eacb3ad2"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5147,
+			"sha256": "7bc995ee727327c12acd696949ba2abda61a30702d2c445aaac879f09d9b126f"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 991,
+			"sha256": "2d1e0cbe17d067589022c39c8f5c8a4e88edf334f2af3bdadb7e7f471adbaded"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "ada601b14b4adfbaa29080813feddc9d1e27b8184fcd2caaa3cd94ddec88c213"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2728,
+			"sha256": "6a07589bc89cb8f5eea9fb5f34a13bc1cc353ad9778d5c9de763213d892217f7"
+		},
+		{
+			"path": "/textures/shrike/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3557,
+			"sha256": "89bf4cc2cb7c2ec2b0f9392e8af4c5fc272d698fee0b9dbd7da5db11bd2fa673"
+		}
+	]
+}

@@ -34,12 +34,12 @@ Collect Pi execution traces locally through a passive extension and a separate U
 
 ## Current logo
 
-![Kite source identity](https://hexly.ai/logos/display/kite-160.webp)
+![Kite source identity](https://h.no.mt/projects/kite/identity/v1.0.0/kite-160-4a661d07d7b7.webp)
 
 - Type: Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved
 - Subject: Multicolored fragmented red kite head entering from the right
 - [Source](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/originals/kite-family-2026-09-25-02-03.png)
+- [Preserved asset](https://h.no.mt/projects/kite/identity/v1.0.0/kite-family-2026-09-25-02-03-5e414e28dc10.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2284290 bytes
 - SHA-256: `5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6`
@@ -58,6 +58,16 @@ Collect Pi execution traces locally through a passive extension and a separate U
 | accent | `#7d1b22` | Native 417279a8e8a0901b22dc42fe38c7eee3a6b090c67617fceaf7b2d312b45047e9, sRGB pixel (1130, 1130); artwork/logo-family/kite/2026-09-25-02/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Oak woodland margins / 橡林叶缘: A red kite's open woodland edge: broad softly lobed oak leaves with clearly modeled branching veins, accompanied by three smaller oval hazel leaves.
+- 橡林叶缘：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
+- [Paper PNG](https://h.no.mt/projects/kite/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/kite/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/kite/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/kite/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/kite/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/kite/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/kite/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 

@@ -66,12 +66,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- An orchard perch / 花枝停驻: Serrated cherry leaves on slender branches, tiny closed buds and only two very small five-petal blossoms in quiet dusty blush.
-- 锯齿樱叶沿细枝展开，极少量淡粉花朵呼应原标。以叶为主，把明亮的位置留给鸽子。
+- Orchard leaves / 果园叶影: Broad oval cherry leaves from a temperate orchard perch, gently serrated margins and curved secondary veins.
+- 果园叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.34.
-- [Paper PNG](https://h.no.mt/projects/dove/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/dove/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/dove/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dove/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/dove/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/dove/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/dove/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/dove/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/dove/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/dove/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dove/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/dove/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/dove/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/dove/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

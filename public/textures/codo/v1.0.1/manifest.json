@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "codo",
+	"version": "1.0.1",
+	"root": "/textures/codo/v1.0.1",
+	"canonical": "https://hexly.ai/projects/codo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/codo/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Garden sage leaves", "zh": "庭院鼠尾草" },
+		"description": {
+			"en": "A plausible hummingbird garden: generous oval sage leaves and a few paired honeysuckle leaves, with softly quilted veins and subtly folded tips.",
+			"zh": "庭院鼠尾草：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/codo-family-2026-09-07-01-01.png",
+		"sha256": "67456a5040ec217dd179bdc54f81f9c71ea44908ea7b25a2e9064e386b2607cf",
+		"rgbaSha256": "51208c5e915749ebabf5ff7abd8e62f6135f61641df6c4f9d3e6099e0af058cb",
+		"source": "https://github.com/nocoo/codo/blob/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a/logo.png",
+		"bytes": 1902979,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/codo/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "80692d289d0160104fe7251fe0b0ff391301b09da9cbe9b3d39216329aeeba40"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "26199724-89ba-4316-bd72-edcc06914cc8",
+			"source": "artwork/brands/codo/texture-studies/2026-09-27-flare-birds-01/light",
+			"request": "/textures/codo/v1.0.1/source-light-request.json",
+			"response": "/textures/codo/v1.0.1/source-light-response.json",
+			"prompt": "/textures/codo/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/codo/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/codo/v1.0.1/texture-light.png",
+				"sha256": "29f02ba1a408404eff3278f7160c442c4b0b773938955d511280786e9bb927ac",
+				"bytes": 1812076,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4909510d-f53f-4f00-ba92-7c1bd51a3a36",
+			"source": "artwork/brands/codo/texture-studies/2026-09-27-flare-birds-01/dark",
+			"request": "/textures/codo/v1.0.1/source-dark-request.json",
+			"response": "/textures/codo/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/codo/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/codo/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/codo/v1.0.1/texture-dark.png",
+				"sha256": "3db628891858facc4f68aaa61ad6c1e11f28149cb12b056502633635c55afa25",
+				"bytes": 1659005,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/codo/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1812076,
+			"sha256": "29f02ba1a408404eff3278f7160c442c4b0b773938955d511280786e9bb927ac"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 213482,
+			"sha256": "3164b05d9067e3d6b0cc61ca8164cd6db15b898fd2dd0ca41c1b960662776618"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6980,
+			"sha256": "4a00449124ac92c1d00444e6d4ba87501944c2f4357c79d97f5298c06bee4792"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3726,
+			"sha256": "a0900a2965a426efe771f2d40ee1745feae099b5d9ef1cb954cccf1655144ac6"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "28eec3d422054dac360393368834ea681531fd7d3c3db5c113aa5cbcc2ac3394"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "ec8d5704eb093f17ab119ae155fbfcd996575a6ace885f1c57a730533272f48c"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 909,
+			"sha256": "6aa7e32c2f78bb0ef050d8eb942159cde5544e1f58e307371f62bd401ce91c98"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1659005,
+			"sha256": "3db628891858facc4f68aaa61ad6c1e11f28149cb12b056502633635c55afa25"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 150242,
+			"sha256": "e6a5435aaf5a39067518e217b19971b7cc19542d90b3d9598c228d476bce3a7e"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5172,
+			"sha256": "44a87b1001803e57fc94eb8e405bdbc87e36514e71f238b6313db89631d42d86"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3807,
+			"sha256": "3db508e4e8aa2f322411f4eb4df901f07cb5e46343ce7909f925bea594543a60"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "34c63171fd6d685bd328b641cb0ae22e94eb82d749d9f1a31d0b79c15a536748"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "65567596adab2f9600b644bd1fc754820b87367dcf7002dd97d4956011e862c8"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 904,
+			"sha256": "b330f596312682eb88764d26a556ce282e33ad418d75ea330185ae3ac3a93cef"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5169,
+			"sha256": "26671cc9d88f001875905c49eb4683537780b95149c4afbbfcaa167232831552"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1016,
+			"sha256": "5b32dc4622b47d284cbc4df73b6fc20c9f67ac0fe1f5aeb76839d3c138ed4bcb"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "ecb89c8ee3e9d6d8fd16a2737d1572eea5d8d1c08fbde113c856caa4d6ad3e89"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2737,
+			"sha256": "7bf50b7662eab17d58d0309ebd2644d7ae455fe3c84dc2e0f079038a213e1e13"
+		},
+		{
+			"path": "/textures/codo/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3544,
+			"sha256": "55a10785fff5574995fe743bd55d3f8d20afe82e007d089fbe1d79774d72cbe4"
+		}
+	]
+}

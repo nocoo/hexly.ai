@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "rooster",
+	"version": "1.0.1",
+	"root": "/textures/rooster/v1.0.1",
+	"canonical": "https://hexly.ai/projects/rooster#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/rooster/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Morning-glory leaves", "zh": "牵牛叶影" },
+		"description": {
+			"en": "Broad heart-shaped morning-glory leaves from a farmyard garden, with distinct palmate veins and gently curled edges.",
+			"zh": "牵牛叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rooster-family-2026-09-07-01-02.png",
+		"sha256": "26d77c01c7c8505d0b762f57782be514c9ce3986360a923e7e4655662085859f",
+		"rgbaSha256": "660afc4a9189d9f5a26813a64ef66673d8f54b6a0bf2f831e8cbebc859c5ec6e",
+		"source": "https://github.com/nocoo/rooster/blob/8907933c080ed86c6cbe15d9af5cdb0be86919d3/logo.png",
+		"bytes": 2780156,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/rooster/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "37ae9e750b4012270a7843655d0ccb6f53b9229c0ca7e5fe483bc8bf0342b482"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "29a76581-bad9-4b43-be62-e1afbec50ec5",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+			"request": "/textures/rooster/v1.0.1/source-light-request.json",
+			"response": "/textures/rooster/v1.0.1/source-light-response.json",
+			"prompt": "/textures/rooster/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/rooster/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.1/texture-light.png",
+				"sha256": "09b99b2ea827035d10354b8f55e2f138b708065d09d4945e440d7ab3a7dcca23",
+				"bytes": 1717771,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6f983788-19c2-41e9-9c2b-7e87bc85b568",
+			"source": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/rooster/v1.0.1/source-dark-request.json",
+			"response": "/textures/rooster/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/rooster/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/rooster/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rooster/v1.0.1/texture-dark.png",
+				"sha256": "d7e6e5ec1f12eb5a9426da7e17ba25c9a26b493e8d44371b964d3f6b0b17a957",
+				"bytes": 1590339,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/rooster/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1717771,
+			"sha256": "09b99b2ea827035d10354b8f55e2f138b708065d09d4945e440d7ab3a7dcca23"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 170822,
+			"sha256": "1a7c72d22161a6f10c1306ef65eddaba58ee138fd68989c4eb34f8f70e5b2261"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4570,
+			"sha256": "2d3b0234bc3cd85e6da3fd49caacfd1773fcbd577f23140ae553b8352b19051b"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4281,
+			"sha256": "0648a7c6d5caea2c2678ee8d688282095fc0f4e13e5d7a59b8956443ff54cf8c"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "1d6070844cb9420739c8061f63fc2ea31c2ad0dc8cf23e807a1583d9a3889de8"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "f0ac14884bf80f2e8713d4b078d905f6dd8535ff72f7ae05df963a9fe170b368"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 916,
+			"sha256": "de540dcdd312080b442973ec22a763eaa0d56679069b58e260b460289fc86ad7"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1590339,
+			"sha256": "d7e6e5ec1f12eb5a9426da7e17ba25c9a26b493e8d44371b964d3f6b0b17a957"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 106630,
+			"sha256": "e6318ff0fa578e2014ed6bfeff6f0ecb619ab3d6d5463f4811571a9cb6adb037"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4350,
+			"sha256": "95a0f681cfed8674faa3a3878d4b868ef0a00946a227621ca6482c481a255ece"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4362,
+			"sha256": "8293cfea30a0896fdcd9768295c4c9b771299e5fdbd2a614d1df07d84d3d3c99"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "869ed3d4bb180e07eaa73514b8887d3da39a2f6d0256496ae6c459dddd0e0a20"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "cb09135dc73298c37cc69f405e0a279531e5ce01528272c1e09ee29fbb81023b"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 905,
+			"sha256": "3bfe969377b05d55ed06dcb7d2a728ac2ad0962ec850fe45fce748455a64daaa"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5180,
+			"sha256": "09d0df7eb5e6cb8c655bcbf3a75a2a6743af35ba18338fcf2eb43f16cc5bc739"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1004,
+			"sha256": "526cbe6bd834eb1b4a1dd32ca0455f6190b1c79ea355e9b76e4e49ddf551a01a"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "cce6b65f7a5c8ea16b71e270846630fa7211336fc4a55becedccb26d3e4681b4"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2720,
+			"sha256": "ab4adad44db23a766654b60f24391cf858c7beee24a08c2262cab496eecedcdb"
+		},
+		{
+			"path": "/textures/rooster/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3561,
+			"sha256": "5c85abe56aae9cd020f1abc9bc289428dccdbf2eac4b5c2bf999ce89a26013cc"
+		}
+	]
+}

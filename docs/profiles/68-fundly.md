@@ -66,12 +66,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- A coastal lookout / 海岸瞭望处: Coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head.
-- 粗壮丛生草与少量海岸草本小叶构成瞭望处。采用合理的亚南极植被联想，不断言企鹅的具体物种。
+- Coastal leaf shelter / 海岸叶荫: A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades.
+- 海岸叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.32.
-- [Paper PNG](https://h.no.mt/projects/fundly/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/fundly/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/fundly/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/fundly/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/fundly/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/fundly/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/fundly/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.39.
+- [Paper PNG](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/fundly/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/fundly/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/fundly/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

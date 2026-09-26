@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "lyre",
+	"version": "1.0.1",
+	"root": "/textures/lyre/v1.0.1",
+	"canonical": "https://hexly.ai/projects/lyre#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/lyre/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Forest fern folds", "zh": "林间蕨褶" },
+		"description": {
+			"en": "A damp southeastern Australian forest floor: two broad triangular tree-fern fronds with substantial clearly separated pinnae, accompanied by three long eucalyptus leaves.",
+			"zh": "林间蕨褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.41
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/lyre.png",
+		"sha256": "1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a",
+		"rgbaSha256": "deaf3e9f786dac87e5ae0216a1813bc6c712ce1335e74bc62be8ee7e2cf27d73",
+		"source": "https://github.com/nocoo/lyre/blob/78b3a126f27a5adc53e4eaf4097b785ac7cb609e/logo.png",
+		"bytes": 3656299,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/lyre/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8fea827e1961de64b8021a316c1ccfd9f741ef65e18dd73c8f354c0bc99b6817"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0fe8f0b7-7347-42ca-b82a-88f75802063f",
+			"source": "artwork/brands/lyre/texture-studies/2026-09-27-flare-birds-01/light",
+			"request": "/textures/lyre/v1.0.1/source-light-request.json",
+			"response": "/textures/lyre/v1.0.1/source-light-response.json",
+			"prompt": "/textures/lyre/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/lyre/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/lyre/v1.0.1/texture-light.png",
+				"sha256": "f8299d07480f638a6ada84b40a4bb06e8f33264b86723435424bfb729a704a6a",
+				"bytes": 1791032,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4f2a722e-8591-4a13-9a48-fc20df95d87f",
+			"source": "artwork/brands/lyre/texture-studies/2026-09-27-flare-birds-01/dark-attempt-04",
+			"request": "/textures/lyre/v1.0.1/source-dark-request.json",
+			"response": "/textures/lyre/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/lyre/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/lyre/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/lyre/v1.0.1/texture-dark.png",
+				"sha256": "93cbd6e805bfb815893df59751c4c6dcbbabf910e9514c41d19fba3b2fff684e",
+				"bytes": 1659495,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/lyre/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1791032,
+			"sha256": "f8299d07480f638a6ada84b40a4bb06e8f33264b86723435424bfb729a704a6a"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 187952,
+			"sha256": "bf9ec903cc4aea7abd9e14369db7c21ab4dad00df92d5e63fd11317678251e60"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 8974,
+			"sha256": "58a937f136f18d1fae4fe619cae6b70f5c83d27c9222726a4e80a947c7ab0b37"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3728,
+			"sha256": "1631fccf04f9303f5d43f3acc7ff26762aefc7495015ddb9d922accbfab098cd"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "6f95b869d2616715da5cbcf4f86c45fa6d55a6015d246535ba0adef9506401cc"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "6e0b7e442740b086f007c2c91248883479323f72c9ace8df781eaa65c0a72e6f"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 903,
+			"sha256": "f25593581b60715ab46dade870192b97f8b853373502d9c2a98000c57ac20352"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1659495,
+			"sha256": "93cbd6e805bfb815893df59751c4c6dcbbabf910e9514c41d19fba3b2fff684e"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 162404,
+			"sha256": "ca3c2a0a4c002510bbb7a9ff46963f2c78125d523e27992a6196c4d284f9fb09"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5700,
+			"sha256": "8683daf52633efc327b544f51fb6fb747b145d7bd528f2e783753870d4b03d3c"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4387,
+			"sha256": "b68e30f379177564e9213ceb337807a9fd99debc502d587f2c0f3f8e21354223"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "684eec7cfaf8894b04e44268f566ad8930c04152dcb5239f52979d185d4a2f7f"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "68d515e56fc3593eb3bc03d0e3490aad264acf994243a4ba0003523c0b3444db"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 959,
+			"sha256": "0c58301069324b5a6a15c65cd775ec7fb6ecc617b9458a2cfc6559aafa649474"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5024,
+			"sha256": "bfbc151aaa13cb5d14f9dd1aaf947bb6173cdd09eb0137dac3b4bcf1f15b70b2"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1021,
+			"sha256": "5c048e72c950f704a611386068fba99c7db98a25d0a2fbc7034e127b86e54c77"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "6661f601ecd5e669faae5aff75608adc55f8548975fa45f60208ba059baf51cf"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2759,
+			"sha256": "468912426a682e9fcfd5ec85621954d0a20ad9f6155a232a355af709747b6c10"
+		},
+		{
+			"path": "/textures/lyre/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3564,
+			"sha256": "4dfc1f9e5722a069f53c87ac1f8bc96a5ea72f6ed27b72aeba85e10c13ef4440"
+		}
+	]
+}
