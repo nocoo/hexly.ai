@@ -62,12 +62,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Morning-glory leaves / 晨间牵牛叶: Heart-shaped morning-glory leaves, a loose climbing tendril and one tiny closed pale blossom.
-- 心形牵牛叶与一段松弛卷须沿庭院展开，只保留一枚安静花苞，承接公鸡的清晨气息。
+- Morning-glory leaves / 牵牛叶影: Broad heart-shaped morning-glory leaves from a farmyard garden, with distinct palmate veins and gently curled edges.
+- 牵牛叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.33.
-- [Paper PNG](https://h.no.mt/projects/rooster/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/rooster/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/rooster/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/rooster/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/rooster/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/rooster/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/rooster/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.35.
+- [Paper PNG](https://h.no.mt/projects/rooster/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/rooster/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/rooster/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/rooster/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/rooster/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/rooster/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/rooster/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

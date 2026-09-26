@@ -34,12 +34,12 @@ A native macOS application in development for routing local Agent requests to Je
 
 ## Current logo
 
-![Falcon source identity](https://hexly.ai/logos/display/falcon-160.webp)
+![Falcon source identity](https://h.no.mt/projects/falcon/identity/v1.0.0/falcon-160-ffde795239cc.webp)
 
 - Type: Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved
 - Subject: Multicolored fragmented peregrine falcon head entering from the left
 - [Source](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/originals/falcon-family-2026-09-25-03-02.png)
+- [Preserved asset](https://h.no.mt/projects/falcon/identity/v1.0.0/falcon-family-2026-09-25-03-02-f3fedf54cd84.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2206051 bytes
 - SHA-256: `f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68`
@@ -58,6 +58,16 @@ A native macOS application in development for routing local Agent requests to Je
 | accent | `#5e3622` | Native 2d4fd9e0f5abffc0dcebcd2e4880f685897ffc5137304b6d579f282faf110ca7, sRGB pixel (660, 710); artwork/logo-family/falcon/2026-09-25-03/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
+
+## Current campaign texture
+
+- Cliffside leaf shelter / 崖边叶荫: A plausible temperate peregrine-falcon cliff margin: broad leathery sea-beet leaves with wavy edges and clear central ribs, together with a few smaller rounded coastal plantain leaves.
+- 崖边叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.4.
+- [Paper PNG](https://h.no.mt/projects/falcon/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/falcon/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/falcon/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/falcon/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/falcon/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/falcon/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/falcon/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
 

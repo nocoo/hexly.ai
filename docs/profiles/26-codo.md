@@ -62,12 +62,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- A flower within reach / 近在喙边: Slender salvia leaves and curved honeysuckle stems, with only two tiny tubular flowers in very muted terracotta.
-- 鼠尾草长叶与金银花弯枝向上伸展，仅用两枚低饱和筒状小花回应蜂鸟取食的瞬间。
+- Garden sage leaves / 庭院鼠尾草: A plausible hummingbird garden: generous oval sage leaves and a few paired honeysuckle leaves, with softly quilted veins and subtly folded tips.
+- 庭院鼠尾草：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.37.
-- [Paper PNG](https://h.no.mt/projects/codo/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/codo/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/codo/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/codo/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/codo/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/codo/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/codo/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.37.
+- [Paper PNG](https://h.no.mt/projects/codo/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/codo/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/codo/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/codo/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/codo/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/codo/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/codo/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

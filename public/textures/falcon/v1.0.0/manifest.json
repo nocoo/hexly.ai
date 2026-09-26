@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "falcon",
+	"version": "1.0.0",
+	"root": "/textures/falcon/v1.0.0",
+	"canonical": "https://hexly.ai/projects/falcon#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/falcon/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Cliffside leaf shelter", "zh": "崖边叶荫" },
+		"description": {
+			"en": "A plausible temperate peregrine-falcon cliff margin: broad leathery sea-beet leaves with wavy edges and clear central ribs, together with a few smaller rounded coastal plantain leaves.",
+			"zh": "崖边叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/falcon-family-2026-09-25-03-02.png",
+		"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68",
+		"rgbaSha256": "1577e2f95a0267c8aba39b709eac9b38b21e1277377def7892bb53879d46e377",
+		"source": "https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/logo.png",
+		"bytes": 2206051,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/falcon/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "75e32c267795e09a5bf9f138e27be70d9cd9a87962ff1b8738a6ac66d1925fb3"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9675af34-1d43-4576-9b44-f1f85c50ac61",
+			"source": "artwork/brands/falcon/texture-studies/2026-09-27-flare-birds-01/light-attempt-05",
+			"request": "/textures/falcon/v1.0.0/source-light-request.json",
+			"response": "/textures/falcon/v1.0.0/source-light-response.json",
+			"prompt": "/textures/falcon/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/falcon/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/falcon/v1.0.0/texture-light.png",
+				"sha256": "e521c348bb9a2aaf1e576d9aaf165495d47481b339eac31b1bbdb6a1db2699a0",
+				"bytes": 1667185,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9646b050-d87b-4f0e-a785-9a8fa64bc422",
+			"source": "artwork/brands/falcon/texture-studies/2026-09-27-flare-birds-01/dark-attempt-06",
+			"request": "/textures/falcon/v1.0.0/source-dark-request.json",
+			"response": "/textures/falcon/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/falcon/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/falcon/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/falcon/v1.0.0/texture-dark.png",
+				"sha256": "08ee343bdc06ebb0dca29ca5cf09246bef139925244d50d375fb7639e19bd458",
+				"bytes": 1620355,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/falcon/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1667185,
+			"sha256": "e521c348bb9a2aaf1e576d9aaf165495d47481b339eac31b1bbdb6a1db2699a0"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 126456,
+			"sha256": "b97b4f6ed8dcb78d829aa10e9e1525ab1034f5e66ed3e516678c74b4943b16cb"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6356,
+			"sha256": "a22633749dac71d20b1161a325230a65de0b0b489e6fb35b38551d6fb12d0099"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4369,
+			"sha256": "711a0d5827cf280f4a1e826b194ef377e2546b4eb429fd7e2daa8b8acf2acbe8"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "a99b1d1a8f0beccf3b1c2ea3d9cfaeaff1fffe5890c5fc84cb9faa8bed271cae"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "60538c9dede4c0226797d2c3d7f072b4c727573e3719bdb674a856520596bd73"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1039,
+			"sha256": "d4d7517ba50ab4093c93c9177f692e3c7c7b9695ffa72844813790ebca986dbc"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1620355,
+			"sha256": "08ee343bdc06ebb0dca29ca5cf09246bef139925244d50d375fb7639e19bd458"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 121056,
+			"sha256": "f13c3640ff9b8509d305352b80638b9ca1cf4b860c996acff61614f6bf5ca24c"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4996,
+			"sha256": "b80bb13894ca432fd3e790833ee43f9f775d0c202dc9ae5abb1f0f35a50702bd"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4450,
+			"sha256": "5ac3f72f712eec9c2c21cd75ad0ca7eb5767dedf9b9cd70c730fc0a99f861d99"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "be29f9d0ac2d2f8fe339b8037a61f0c6a09929bcfadd9fb9fe1aab3f80b85fe8"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "feccfb9e2c091fb57b5cc8d6e036aad559ac6ef66c20456606cc31cccae485fd"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1042,
+			"sha256": "410e01a37efd4e9b72c5b59c3c244fbe1319bb116e0ec54126cd8410c1650868"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5656,
+			"sha256": "0d164d9dec39ad3f652e0123a6e65fb9f742f97d168a5922cf12be72dd4ecf11"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1092,
+			"sha256": "13d219f230816b2f2f6b71ef2740a749865c4fe04496f6fa7386672f2847cd53"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "654c93a4fc2c29753a225368a9310423bbc861ddc3f17c71939d1f15197e8027"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2785,
+			"sha256": "878ace13c8b74cc18717949b4c0215e86c312d7a14af59f4d6ba2875e59b7b36"
+		},
+		{
+			"path": "/textures/falcon/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3621,
+			"sha256": "4d0a07519f23f972572399d6c6a4159db9ade93a9f00c960a579c0b4f2ac493e"
+		}
+	]
+}

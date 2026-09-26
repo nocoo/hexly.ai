@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "raven",
+	"version": "1.0.1",
+	"root": "/textures/raven/v1.0.1",
+	"canonical": "https://hexly.ai/projects/raven#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/raven/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Rowan leaves", "zh": "花楸叶影" },
+		"description": {
+			"en": "Broad compound rowan leaves from a temperate woodland edge, with substantial oval serrated leaflets and clear central ribs.",
+			"zh": "花楸叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.44
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/raven-family-2026-09-07-04-02.png",
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"rgbaSha256": "a9943f772e250c4f7b6a9dad5a10163327a4219d7f9384f7363ee02c99f8d7c6",
+		"source": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+		"bytes": 2327803,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/raven/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "167cffd895b81e436868e2fb8099cf3db0c3b49de0b95cb824d557f69e05fd45"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8461ca63-e605-40ca-acdb-7823eb4ac248",
+			"source": "artwork/brands/raven/texture-studies/2026-09-27-flare-birds-01/light",
+			"request": "/textures/raven/v1.0.1/source-light-request.json",
+			"response": "/textures/raven/v1.0.1/source-light-response.json",
+			"prompt": "/textures/raven/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/raven/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/raven/v1.0.1/texture-light.png",
+				"sha256": "1982b51714b7aa59190f84183b948d0722aca7e71cff71d682147d04d0e6af91",
+				"bytes": 1772535,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "161e4760-536f-439e-9ff1-8599698c9d2e",
+			"source": "artwork/brands/raven/texture-studies/2026-09-27-flare-birds-01/dark",
+			"request": "/textures/raven/v1.0.1/source-dark-request.json",
+			"response": "/textures/raven/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/raven/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/raven/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/raven/v1.0.1/texture-dark.png",
+				"sha256": "cea25c8175d0a684555892d4c480451652883a9b5587dc7c6c7bfb36348f1978",
+				"bytes": 1641827,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/raven/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1772535,
+			"sha256": "1982b51714b7aa59190f84183b948d0722aca7e71cff71d682147d04d0e6af91"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 189372,
+			"sha256": "88b7e1fa48b94c5d1bb3ca0d1b1f53d2da35a321c9c3d0f1785c39e80d8bcb43"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 7498,
+			"sha256": "7bd3410149fe1619dfdf742e6e41b64ae476ae563b5f8351515c4917c2f48022"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3662,
+			"sha256": "353a447a68c2e8b11e8bf47dbf419bc288bb8d429125337ead6ac6edd0530847"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "c2d88c38e7fdbb8fe6badd6360ec6f9e2cf57f3f6434668047c3b791e87ae647"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "b443775c652c6f8226a2f7fe9dfc4e30c83af2fe5c3777455abea225832f7402"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1105,
+			"sha256": "b642ae4ad2889f26b56aa953520844d9d12ecdd7f796700743303a413893f3b7"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1641827,
+			"sha256": "cea25c8175d0a684555892d4c480451652883a9b5587dc7c6c7bfb36348f1978"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 147020,
+			"sha256": "5017d242eb159157ad438beab435dc0fc4f177ce8ca44f5625bb6b289f48293b"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5464,
+			"sha256": "3ff4cf2cd8d8a8ccb2be17af9c62ffc8fcbd22ae2f5e85a88289aaaa0cfca043"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3743,
+			"sha256": "cbd3e9687891e70a0272e9d6a4542cfb7130b1a1f6e628057720530de7c07aba"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "d347a375f45baff3af873ad61077d24657fd7864814f4129704618581a6333e0"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "7c99d06ddce1bc1b9498457f8d8336914891e7ac766f84df707b1f61c21378bd"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1105,
+			"sha256": "84cb47829e38e57ec020c148eceaa4edcf610f97bb2b01cc5ec0fd33d2507e65"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5072,
+			"sha256": "a27acbf8b1d10ad0e748b2b3ba7ebb9499db5dec5fb16e2e6d2001fb08379328"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 973,
+			"sha256": "491472decf5fcdcacb5c83f8e7e87087c18a0fa6cb9271a1054985fbdaa9e8e1"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "455a7a67aff426af13a282819e98eea27e663b5002d647c7d2847f24ca3556bb"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2711,
+			"sha256": "e3050b7aeb782065301f939568ac595b53704c86bef5e88540f1fe673c1b5f65"
+		},
+		{
+			"path": "/textures/raven/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3516,
+			"sha256": "44f24ecaa29a8c28261da10d3f6fd065956334af053ca745c04ed1923b5a4666"
+		}
+	]
+}

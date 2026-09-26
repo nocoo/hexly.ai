@@ -66,12 +66,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Under the fern canopy / 蕨下回声: Finely divided tree-fern fronds, long eucalyptus leaves and one curled young fern tip.
-- 树蕨细叶、桉树长叶与一枚嫩蕨卷承接琴鸟的湿润林地，把声音的层次藏进叶片重叠处。
+- Forest fern folds / 林间蕨褶: A damp southeastern Australian forest floor: two broad triangular tree-fern fronds with substantial clearly separated pinnae, accompanied by three long eucalyptus leaves.
+- 林间蕨褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
-- [Paper PNG](https://h.no.mt/projects/lyre/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/lyre/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/lyre/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/lyre/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/lyre/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/lyre/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/lyre/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
+- [Paper PNG](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/lyre/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/lyre/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/lyre/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/lyre/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

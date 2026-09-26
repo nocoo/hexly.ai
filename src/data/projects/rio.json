@@ -395,5 +395,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/rio/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Rainforest leaf folds",
+			"zh": "雨林叶褶"
+		},
+		"description": {
+			"en": "A scarlet macaw's tropical forest habitat: five broad elliptic tropical canopy leaves and two long heliconia leaves, with pronounced curved or parallel secondary veins and softly curled margins.",
+			"zh": "雨林叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

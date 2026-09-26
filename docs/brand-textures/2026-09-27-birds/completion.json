@@ -1,0 +1,390 @@
+{
+	"scope": "All 13 non-archived catalogue bird identities; local generation, delegated visual acceptance, integration and browser verification only.",
+	"authorization": {
+		"ownerRequest": "动物类不错，鸟类就质量不行了，按照类似的规则，给鸟类的项目生成底纹，要求一致。不必确认，生成完在本地启动验证",
+		"generation": true,
+		"acceptance": "delegated-agent",
+		"publication": false
+	},
+	"generationComplete": true,
+	"approvedImages": 26,
+	"responseStatuses": {
+		"succeeded": 31,
+		"unknown-outcome": 38
+	},
+	"selection": [
+		{
+			"id": "raven",
+			"root": "/textures/raven/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/raven/texture-studies/2026-09-27-flare-birds-01/light",
+					"sha256": "1982b51714b7aa59190f84183b948d0722aca7e71cff71d682147d04d0e6af91"
+				},
+				"dark": {
+					"run": "artwork/brands/raven/texture-studies/2026-09-27-flare-birds-01/dark",
+					"sha256": "cea25c8175d0a684555892d4c480451652883a9b5587dc7c6c7bfb36348f1978"
+				}
+			}
+		},
+		{
+			"id": "dove",
+			"root": "/textures/dove/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/dove/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+					"sha256": "bed53ae4eb50da69d8e9bb437d6b354467b3643b29321303c04e27332d7db710"
+				},
+				"dark": {
+					"run": "artwork/brands/dove/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+					"sha256": "8a7eb0ae679b4d497d5db37bdd3a00db6a4b6ac160e353d028eed796ae5b742f"
+				}
+			}
+		},
+		{
+			"id": "lyre",
+			"root": "/textures/lyre/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/lyre/texture-studies/2026-09-27-flare-birds-01/light",
+					"sha256": "f8299d07480f638a6ada84b40a4bb06e8f33264b86723435424bfb729a704a6a"
+				},
+				"dark": {
+					"run": "artwork/brands/lyre/texture-studies/2026-09-27-flare-birds-01/dark-attempt-04",
+					"sha256": "93cbd6e805bfb815893df59751c4c6dcbbabf910e9514c41d19fba3b2fff684e"
+				}
+			}
+		},
+		{
+			"id": "rooster",
+			"root": "/textures/rooster/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+					"sha256": "09b99b2ea827035d10354b8f55e2f138b708065d09d4945e440d7ab3a7dcca23"
+				},
+				"dark": {
+					"run": "artwork/brands/rooster/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+					"sha256": "d7e6e5ec1f12eb5a9426da7e17ba25c9a26b493e8d44371b964d3f6b0b17a957"
+				}
+			}
+		},
+		{
+			"id": "codo",
+			"root": "/textures/codo/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/codo/texture-studies/2026-09-27-flare-birds-01/light",
+					"sha256": "29f02ba1a408404eff3278f7160c442c4b0b773938955d511280786e9bb927ac"
+				},
+				"dark": {
+					"run": "artwork/brands/codo/texture-studies/2026-09-27-flare-birds-01/dark",
+					"sha256": "3db628891858facc4f68aaa61ad6c1e11f28149cb12b056502633635c55afa25"
+				}
+			}
+		},
+		{
+			"id": "owl",
+			"root": "/textures/owl/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/owl/texture-studies/2026-09-27-flare-birds-01/light",
+					"sha256": "6298df425d844120f6a4dc5fb5e21991ddf6dfec909e097506b791f01aed19e1"
+				},
+				"dark": {
+					"run": "artwork/brands/owl/texture-studies/2026-09-27-flare-birds-01/dark-attempt-05",
+					"sha256": "4dbd4d8039088d1839fb97d9e6046755ff1d6ec4abc46e9b29999632dc12770a"
+				}
+			}
+		},
+		{
+			"id": "shrike",
+			"root": "/textures/shrike/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/shrike/texture-studies/2026-09-27-flare-birds-01/light-attempt-05",
+					"sha256": "b32b46a6c3b783f463b0b235dc61ff704d5d9705c38eb3013e95dcdb7f9dbd71"
+				},
+				"dark": {
+					"run": "artwork/brands/shrike/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+					"sha256": "aa45de52cd0eeb141942dc77767b8afdb9b4b2ed96a5b3dc91172451e9ac94c9"
+				}
+			}
+		},
+		{
+			"id": "clip",
+			"root": "/textures/clip/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/clip/texture-studies/2026-09-27-flare-birds-01/light-attempt-06",
+					"sha256": "11ff562411f7c79f25ce17d94cb1e8c7b52bba01a2fcc25e619676d43ddb1eea"
+				},
+				"dark": {
+					"run": "artwork/brands/clip/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+					"sha256": "9846b144852567c52e1dd9295ef0947e5a3cad7bea96e334887318364df9a0b5"
+				}
+			}
+		},
+		{
+			"id": "fundly",
+			"root": "/textures/fundly/v1.0.1",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/fundly/texture-studies/2026-09-27-flare-birds-01/light-attempt-05",
+					"sha256": "3b295654fcebb1aee9099e96dd7b8e3336cdc7e4745b0d5d813d2c2961f8e1b0"
+				},
+				"dark": {
+					"run": "artwork/brands/fundly/texture-studies/2026-09-27-flare-birds-01/dark-attempt-06",
+					"sha256": "cd28a0699ae4349741faab5b954605a8ab59ce06b111078639df9d67461774c3"
+				}
+			}
+		},
+		{
+			"id": "eagle",
+			"root": "/textures/eagle/v1.0.0",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/eagle/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+					"sha256": "ac42d3804f1ecad722a01f32447532096a3b90bfb90df595b310fbfbed539407"
+				},
+				"dark": {
+					"run": "artwork/brands/eagle/texture-studies/2026-09-27-flare-birds-01/dark",
+					"sha256": "10587716f816f1c24fe249bfd982bac38e34da1368ad77bd8f1e634dbf7f20b5"
+				}
+			}
+		},
+		{
+			"id": "rio",
+			"root": "/textures/rio/v1.0.0",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+					"sha256": "4793a587a87d8b6a5c1e046fb00d8c1b930fb5a9aab8495cfaa3699d0d317122"
+				},
+				"dark": {
+					"run": "artwork/brands/rio/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+					"sha256": "71c594d28dd899299ef730c7bc2ba9f58549423d8b17ed16d451e18b2a9932fb"
+				}
+			}
+		},
+		{
+			"id": "falcon",
+			"root": "/textures/falcon/v1.0.0",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/falcon/texture-studies/2026-09-27-flare-birds-01/light-attempt-05",
+					"sha256": "e521c348bb9a2aaf1e576d9aaf165495d47481b339eac31b1bbdb6a1db2699a0"
+				},
+				"dark": {
+					"run": "artwork/brands/falcon/texture-studies/2026-09-27-flare-birds-01/dark-attempt-06",
+					"sha256": "08ee343bdc06ebb0dca29ca5cf09246bef139925244d50d375fb7639e19bd458"
+				}
+			}
+		},
+		{
+			"id": "kite",
+			"root": "/textures/kite/v1.0.0",
+			"selected": {
+				"light": {
+					"run": "artwork/brands/kite/texture-studies/2026-09-27-flare-birds-01/light",
+					"sha256": "9a1a721d2d40e23700c10501162636abb8dcf4c2626817b02ca96fa2f9d0fc81"
+				},
+				"dark": {
+					"run": "artwork/brands/kite/texture-studies/2026-09-27-flare-birds-01/dark-attempt-05",
+					"sha256": "9462ef911344613d85b0a05ccd8ad4c6e86f8bdc506d28bd760745d66b12707b"
+				}
+			}
+		}
+	],
+	"verification": {
+		"recordedAt": "2026-09-26T22:45:29.278700+00:00",
+		"localReviewOrigin": "https://index.dev.hexly.ai",
+		"localBrowser": {
+			"passed": 78,
+			"projectCount": 13,
+			"themes": [
+				"light",
+				"dark"
+			],
+			"viewportWidths": [
+				1440,
+				390,
+				320
+			],
+			"locales": [
+				"en-US",
+				"zh-CN"
+			],
+			"checks": [
+				"homepage card layer",
+				"project introduction and Hero caption layers",
+				"complete square specimens",
+				"original PNG downloads equal source bytes",
+				"standalone review images resolve locally",
+				"raw review HTML equals archived bytes",
+				"no horizontal overflow",
+				"no browser page errors"
+			],
+			"scriptSha256": "096fead21f3857e306f05f03745e10cd3b8a6dc3276d9c81571ca65b013e2875",
+			"perProject": [
+				{
+					"id": "raven",
+					"passed": 6
+				},
+				{
+					"id": "dove",
+					"passed": 6
+				},
+				{
+					"id": "lyre",
+					"passed": 6
+				},
+				{
+					"id": "rooster",
+					"passed": 6
+				},
+				{
+					"id": "codo",
+					"passed": 6
+				},
+				{
+					"id": "owl",
+					"passed": 6
+				},
+				{
+					"id": "shrike",
+					"passed": 6
+				},
+				{
+					"id": "clip",
+					"passed": 6
+				},
+				{
+					"id": "fundly",
+					"passed": 6
+				},
+				{
+					"id": "eagle",
+					"passed": 6
+				},
+				{
+					"id": "rio",
+					"passed": 6
+				},
+				{
+					"id": "falcon",
+					"passed": 6
+				},
+				{
+					"id": "kite",
+					"passed": 6
+				}
+			],
+			"rawResultsSha256": "bec7db12791ae75becd623e6bc9cc252060e3d3696d13c8c4d1526d35d502c61"
+		},
+		"visualReview": {
+			"contactSheet": ".video-work/bird-textures/complete-contact.jpg",
+			"specimens": ".video-work/bird-textures/page-review.jpg",
+			"cardsAndIntroductions": ".video-work/bird-textures/presentation-review.jpg",
+			"observations": [
+				"Shared matte-paper palette and readable leaf relief across all 13 light/dark pairs.",
+				"Desktop specimens preserve the full square; narrow layouts stack both complete canvases.",
+				"Homepage cards and project introductions preserve original Logo colors and readable text over separate foliage layers."
+			]
+		},
+		"nativePixelContrast": [
+			{
+				"id": "raven",
+				"lightMinimum": 4.761188809376345,
+				"darkMinimum": 5.22085147420358
+			},
+			{
+				"id": "dove",
+				"lightMinimum": 4.7459578554306345,
+				"darkMinimum": 5.13158482199665
+			},
+			{
+				"id": "lyre",
+				"lightMinimum": 4.766052751893941,
+				"darkMinimum": 5.325223680462886
+			},
+			{
+				"id": "rooster",
+				"lightMinimum": 5.235754275732679,
+				"darkMinimum": 4.724483347472279
+			},
+			{
+				"id": "codo",
+				"lightMinimum": 4.7982667575024855,
+				"darkMinimum": 5.0390663020976
+			},
+			{
+				"id": "owl",
+				"lightMinimum": 5.554241284183195,
+				"darkMinimum": 4.792624267407943
+			},
+			{
+				"id": "shrike",
+				"lightMinimum": 4.714306081069051,
+				"darkMinimum": 5.330671523381594
+			},
+			{
+				"id": "clip",
+				"lightMinimum": 4.753948411236314,
+				"darkMinimum": 5.12701109126149
+			},
+			{
+				"id": "fundly",
+				"lightMinimum": 4.765664716494423,
+				"darkMinimum": 4.940054712434966
+			},
+			{
+				"id": "eagle",
+				"lightMinimum": 4.746147794833351,
+				"darkMinimum": 4.725024826600395
+			},
+			{
+				"id": "rio",
+				"lightMinimum": 5.029956837782585,
+				"darkMinimum": 4.763392598606113
+			},
+			{
+				"id": "falcon",
+				"lightMinimum": 5.039065679023154,
+				"darkMinimum": 4.736020295567353
+			},
+			{
+				"id": "kite",
+				"lightMinimum": 4.7874195876296435,
+				"darkMinimum": 5.149363924838899
+			}
+		],
+		"priorInventoryEntriesPreserved": 12105,
+		"newInventoryEntries": 291,
+		"newMaterialBinariesTracked": 0,
+		"fullGate": {
+			"command": "bun run verify",
+			"status": "passed",
+			"durationSeconds": 159.3,
+			"unitTests": 444,
+			"httpTests": 36,
+			"browserTests": 91,
+			"coverage": {
+				"statements": 99.53,
+				"branches": 98.59,
+				"functions": 100,
+				"lines": 100
+			},
+			"assetValidation": true,
+			"typecheck": true,
+			"lint": true,
+			"isolation": true,
+			"dependencyAndSecretScans": true,
+			"build": true,
+			"deploymentDryRun": true,
+			"deploymentBytes": 5850191
+		},
+		"whitespaceNote": "Exporter license text retains its checksummed trailing blank line; no immutable package bytes were rewritten to satisfy git diff --check."
+	},
+	"publication": "not authorized; local review only"
+}

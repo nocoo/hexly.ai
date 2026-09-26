@@ -338,5 +338,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/eagle/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Mountain birch leaves",
+			"zh": "山地桦叶"
+		},
+		"description": {
+			"en": "A broad mountain woodland edge associated with an eagle, without asserting an exact species or range: substantial triangular birch leaves with softly toothed margins, accompanied by several rounded aspen leaves.",
+			"zh": "山地桦叶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.38
 	}
 }

@@ -63,12 +63,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- A hawthorn lookout / 山楂枝上的守望: Small deeply lobed hawthorn leaves on sparse thorn-bearing twigs, a few narrow grass seeds and no more than two tiny muted berries.
-- 有棱角的山楂叶与疏朗带刺枝条构成篱边停栖处，呼应伯劳清醒的视线。
+- Hawthorn leaf folds / 山楂叶褶: A temperate hedgerow perch: broad deeply lobed hawthorn leaves with readable palmate veins, arranged in two unequal leafy sprays.
+- 山楂叶褶：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
-- [Paper PNG](https://h.no.mt/projects/shrike/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/shrike/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/shrike/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/shrike/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/shrike/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/shrike/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/shrike/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
+- [Paper PNG](https://h.no.mt/projects/shrike/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/shrike/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/shrike/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/shrike/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/shrike/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/shrike/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/shrike/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

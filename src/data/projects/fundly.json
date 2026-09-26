@@ -320,17 +320,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/fundly/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/fundly/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "A coastal lookout", "zh": "海岸瞭望处" },
+		"name": {
+			"en": "Coastal leaf shelter",
+			"zh": "海岸叶荫"
+		},
 		"description": {
-			"en": "Coarse tussock-grass blades, a few small leathery coastal herb leaves and one bent grass seed head.",
-			"zh": "粗壮丛生草与少量海岸草本小叶构成瞭望处。采用合理的亚南极植被联想，不断言企鹅的具体物种。"
+			"en": "A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades.",
+			"zh": "海岸叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.32
+		"surfaceOpacity": 0.39
 	}
 }

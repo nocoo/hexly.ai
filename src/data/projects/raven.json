@@ -310,17 +310,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/raven/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/raven/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Rowan and pine", "zh": "花楸与松" },
+		"name": {
+			"en": "Rowan leaves",
+			"zh": "花楸叶影"
+		},
 		"description": {
-			"en": "Narrow pine needle fans and compound rowan leaves, with only three tiny muted seed-like berries.",
-			"zh": "松针与羽状花楸叶疏朗地分布在枝头，少量暗色果点呼应乌鸦清醒而沉静的气质。"
+			"en": "Broad compound rowan leaves from a temperate woodland edge, with substantial oval serrated leaflets and clear central ribs.",
+			"zh": "花楸叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.35
+		"surfaceOpacity": 0.44
 	}
 }

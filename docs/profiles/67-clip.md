@@ -60,12 +60,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Grass at walking height / 步行高度的草: Tall narrow grass seed stems, sparse thornbush leaflets and a few bowed dry blades.
-- 高草穗、稀疏刺灌小叶与弯曲干草贴近鸵鸟步行的高度，用开阔风向承接原标的轻快。
+- Savanna leaf fans / 草原叶扇: An ostrich savanna edge: broad lanceolate wild-grass blades in two loose bent fans, with a small spray of oval bushwillow leaves.
+- 草原叶扇：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.35.
-- [Paper PNG](https://h.no.mt/projects/clip/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/clip/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/clip/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/clip/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/clip/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/clip/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/clip/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.36.
+- [Paper PNG](https://h.no.mt/projects/clip/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/clip/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/clip/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/clip/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/clip/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/clip/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/clip/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

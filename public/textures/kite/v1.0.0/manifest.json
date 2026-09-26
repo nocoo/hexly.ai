@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "kite",
+	"version": "1.0.0",
+	"root": "/textures/kite/v1.0.0",
+	"canonical": "https://hexly.ai/projects/kite#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/kite/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Oak woodland margins", "zh": "橡林叶缘" },
+		"description": {
+			"en": "A red kite's open woodland edge: broad softly lobed oak leaves with clearly modeled branching veins, accompanied by three smaller oval hazel leaves.",
+			"zh": "橡林叶缘：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.41
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/kite-family-2026-09-25-02-03.png",
+		"sha256": "5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6",
+		"rgbaSha256": "da77b6931e5805d84dba557d68bb68dc063c124979f3384fda6e21f581034639",
+		"source": "https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/logo.png",
+		"bytes": 2284290,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/kite/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "8e0d91ff6b755b55171fa24081ff4e3d55b5172daab6419fa394b297926db93e"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "72f4f15c-7fa1-4400-98d6-1eaf1ae2e895",
+			"source": "artwork/brands/kite/texture-studies/2026-09-27-flare-birds-01/light",
+			"request": "/textures/kite/v1.0.0/source-light-request.json",
+			"response": "/textures/kite/v1.0.0/source-light-response.json",
+			"prompt": "/textures/kite/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/kite/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/kite/v1.0.0/texture-light.png",
+				"sha256": "9a1a721d2d40e23700c10501162636abb8dcf4c2626817b02ca96fa2f9d0fc81",
+				"bytes": 1813112,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3d759257-60f9-45df-a619-c8b3b3847126",
+			"source": "artwork/brands/kite/texture-studies/2026-09-27-flare-birds-01/dark-attempt-05",
+			"request": "/textures/kite/v1.0.0/source-dark-request.json",
+			"response": "/textures/kite/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/kite/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/kite/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/kite/v1.0.0/texture-dark.png",
+				"sha256": "9462ef911344613d85b0a05ccd8ad4c6e86f8bdc506d28bd760745d66b12707b",
+				"bytes": 1626443,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/kite/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1813112,
+			"sha256": "9a1a721d2d40e23700c10501162636abb8dcf4c2626817b02ca96fa2f9d0fc81"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 233430,
+			"sha256": "c3e03f3a4cd776f186134091da865ad2b5675ba8094e3909a8928a32b44c2278"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6446,
+			"sha256": "59d0af90a8042f1e439f76fb427dffc30fc1be682a611382ee92d8cc648fc772"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3746,
+			"sha256": "f10ee905e14a1dd70e123fac6354882277ce8ef41e27365f857228204634521a"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "6fcf1b46ea77460c81adfda727ab6a448ea56af7ee1ed54ceb26dd65f8463526"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "fe64d9c8236af85916f9281f7d7682bccf34cd0940167ff03ca6e5a03359cce6"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 948,
+			"sha256": "f5b7fdd6ab1922f0e65f3fe63cdfd23f7a7c14ad7234cdf3bc3156f56cf12f0a"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1626443,
+			"sha256": "9462ef911344613d85b0a05ccd8ad4c6e86f8bdc506d28bd760745d66b12707b"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 120004,
+			"sha256": "a6aa044859dbcaf383c4db877fe332239a7c6daa42637e625e16570b30386771"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4584,
+			"sha256": "2299db31e54585150fafc6e6ee79b351459e5a7519c9490d0014769ef9fac4bf"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4405,
+			"sha256": "af30987aebe4ce5c32354cf59945bc7acb7e30f0e1ea10e9eabada4c4e0c2e6d"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "cd57ca29b797ab5994f54c68e01e58ba1f96ac63ffa537cb520957e2e4275f95"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "833f0f35cca20c9de78a0f0966deb0c85971d3307964c6a15ddca35885f90977"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1018,
+			"sha256": "2a3d18ff1d64746e919ddbb1f55415ecd3f7a6ffe8017268d1f5eaafc7b17766"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5502,
+			"sha256": "866fecc6b5661838bdb031f542f31cebfc7172bab6f0358aa91324f915fb8b29"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1038,
+			"sha256": "fc54e036e079fc439e18f81e1b00f466805c9de2a269b81d622cbe8698854a4c"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "1e55d1d4c13d6905f03578086bc9fb82736fadc094829e1b60b39ca325121df0"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2740,
+			"sha256": "62384608217d967ca100eb061dd599062a35e8c35191c1f460fe1415158e5f0b"
+		},
+		{
+			"path": "/textures/kite/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3555,
+			"sha256": "0ad2f51fd42419072fed0b1e7bcb72eb3119f58a41c57852b6a7122165b2482f"
+		}
+	]
+}

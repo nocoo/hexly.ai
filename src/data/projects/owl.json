@@ -282,17 +282,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/owl/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/owl/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Beneath the beech", "zh": "山毛榉叶下" },
+		"name": {
+			"en": "Beech canopy leaves",
+			"zh": "山毛榉叶影"
+		},
 		"description": {
-			"en": "Oval beech leaves with clear secondary veins, a few lobed oak leaves and one small twig with a closed seed husk.",
-			"zh": "椭圆山毛榉叶与少量橡叶疏散地落在林下，清楚的支脉回应猫头鹰敏锐而安静的观察。"
+			"en": "A temperate tawny-owl woodland: five broad oval beech leaves with strong arcing side veins and two smaller softly lobed oak leaves.",
+			"zh": "山毛榉叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.3
+		"surfaceOpacity": 0.35
 	}
 }

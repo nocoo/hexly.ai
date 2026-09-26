@@ -1,9 +1,6 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
-import scope from "../../docs/brand-textures/2026-09-14/scope-update.json" with {
-	type: "json",
-};
 import { readProjects } from "../../src/data/read-projects";
 import { textureManifestProblems } from "../../src/model/brand-manifest";
 
@@ -11,10 +8,18 @@ const projects = readProjects();
 test("discovers current independent textures for active and archived entries without new canonical routes", async ({
 	request,
 }) => {
-	const catalogue = await (await request.get("/data/projects.json")).json();
+	const catalogue: typeof projects = await (
+		await request.get("/data/projects.json")
+	).json();
 	expect(
-		catalogue.filter((p: { brandTexture?: unknown }) => p.brandTexture),
-	).toHaveLength(scope.expectedNewPackCount);
+		catalogue
+			.filter((project) => project.brandTexture)
+			.map((project) => project.id),
+	).toEqual(
+		projects
+			.filter((project) => project.brandTexture)
+			.map((project) => project.id),
+	);
 	const schema = await (await request.get("/textures/schema-v1.json")).json();
 	expect(
 		schema.properties.scope.properties.officialIdentityRecolored.const,

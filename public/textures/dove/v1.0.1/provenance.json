@@ -1,0 +1,115 @@
+{
+	"project": "dove",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "bird",
+		"language": "habitat-botanical",
+		"name": { "en": "Orchard leaves", "zh": "果园叶影" },
+		"motif": "Broad oval cherry leaves from a temperate orchard perch, gently serrated margins and curved secondary veins. Group five to seven unequal leaves on two short quiet stems. No blossoms or fruit.",
+		"description": {
+			"en": "Broad oval cherry leaves from a temperate orchard perch, gently serrated margins and curved secondary veins.",
+			"zh": "果园叶影：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"rationale": "Use the recorded bird identity's plausible habitat. Match the existing Frogie animal texture's matte paper, broad readable leaves, shallow relief, calm left field and restrained theme palette. Do not alter the Logo or infer product features from vegetation."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/dove.json",
+		"purpose": {
+			"en": "Manage email templates for personal projects, send notifications through webhooks, and inspect sending records.",
+			"zh": "为个人项目集中管理邮件模板，通过 Webhook 发送通知并查询发送记录。"
+		},
+		"inspectedRevision": "7454e3d93d8345e5aa09dc778240b65dbbed69d0"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dove.png",
+		"sha256": "25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa",
+		"rgbaSha256": "bd9225bc56a654735210976f0ef00aa0ffb480a086ce24d35c8e6ab77cdb0380",
+		"source": "https://github.com/nocoo/dove/blob/7454e3d93d8345e5aa09dc778240b65dbbed69d0/logo.png",
+		"bytes": 4062349,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dove/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "3d21fe506c569846b90e45d0c1d164414222c2443406ac6f7bba2773f03fe1a7"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-birds/inventory.json",
+	"sourceInventorySha256": "da6ace93026d66b2db9505eb2b881b195c162eb420d02b7f27850fa1687d394e",
+	"siteBaseline": "19f5ed63f6334c355d12601a74080051e0443557",
+	"tokenSource": "src/styles/base.css",
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e41ecf80-5f4f-4bba-829d-f00b11f2525f",
+			"source": "artwork/brands/dove/texture-studies/2026-09-27-flare-birds-01/light-attempt-02",
+			"request": "/textures/dove/v1.0.1/source-light-request.json",
+			"response": "/textures/dove/v1.0.1/source-light-response.json",
+			"prompt": "/textures/dove/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/dove/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dove/v1.0.1/texture-light.png",
+				"sha256": "bed53ae4eb50da69d8e9bb437d6b354467b3643b29321303c04e27332d7db710",
+				"bytes": 1697511,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8d6ff380-0a85-40fd-b709-93acf3c18cbf",
+			"source": "artwork/brands/dove/texture-studies/2026-09-27-flare-birds-01/dark-attempt-02",
+			"request": "/textures/dove/v1.0.1/source-dark-request.json",
+			"response": "/textures/dove/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/dove/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/dove/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dove/v1.0.1/texture-dark.png",
+				"sha256": "8a7eb0ae679b4d497d5db37bdd3a00db6a4b6ac160e353d028eed796ae5b742f",
+				"bytes": 1656361,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.7459578554306345,
+		"darkMinimum": 5.13158482199665,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-26T21:43:33.386Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

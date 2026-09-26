@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "fundly",
+	"version": "1.0.1",
+	"root": "/textures/fundly/v1.0.1",
+	"canonical": "https://hexly.ai/projects/fundly#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/fundly/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Coastal leaf shelter", "zh": "海岸叶荫" },
+		"description": {
+			"en": "A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades.",
+			"zh": "海岸叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.39
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/fundly.svg",
+		"sha256": "08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8",
+		"rgbaSha256": "d860d3631ca41b7e24a7e25c883c964e40c2381531b2f9c0e3e17d610b63d7e8",
+		"source": "https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg",
+		"bytes": 456,
+		"width": 32,
+		"height": 32,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/fundly/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "b079c51c6034b6bd8ca9df868a2c03b5681984426b54c4c88e89a763109600af"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3c6668e6-8525-4d0a-b1df-23f8a25cdacb",
+			"source": "artwork/brands/fundly/texture-studies/2026-09-27-flare-birds-01/light-attempt-05",
+			"request": "/textures/fundly/v1.0.1/source-light-request.json",
+			"response": "/textures/fundly/v1.0.1/source-light-response.json",
+			"prompt": "/textures/fundly/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/fundly/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/fundly/v1.0.1/texture-light.png",
+				"sha256": "3b295654fcebb1aee9099e96dd7b8e3336cdc7e4745b0d5d813d2c2961f8e1b0",
+				"bytes": 1695688,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "98aff424-6d85-4f56-b00c-e23a8ba6c9e8",
+			"source": "artwork/brands/fundly/texture-studies/2026-09-27-flare-birds-01/dark-attempt-06",
+			"request": "/textures/fundly/v1.0.1/source-dark-request.json",
+			"response": "/textures/fundly/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/fundly/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/fundly/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/fundly/v1.0.1/texture-dark.png",
+				"sha256": "cd28a0699ae4349741faab5b954605a8ab59ce06b111078639df9d67461774c3",
+				"bytes": 1664222,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/fundly/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1695688,
+			"sha256": "3b295654fcebb1aee9099e96dd7b8e3336cdc7e4745b0d5d813d2c2961f8e1b0"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 160100,
+			"sha256": "19473f0bcbcde2278d95f1e837b9ed79a9378d231df05fe18dac8e0bb7c574f6"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5564,
+			"sha256": "dc03e0ae6542bd5562ce5ca25019a2e3642be68b288f785c66eddad8accf168c"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4347,
+			"sha256": "1ef403c93869e4287fbba33b48c677cd03bc05886ff8b3185b9c68355fb12ebb"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e8ba9ba8df971fd4a9af938f4296cf76f2614c88aaea3fc73247ad07703bf87d"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "aa8a76b8e43124df806b83b4143ee193b026b2e2de5a899a6e41a60ae13c926b"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1035,
+			"sha256": "7a96a4489d0b82d6db583b3fcefc5c8bfa29810d01212e37fc7ae34e195e4376"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1664222,
+			"sha256": "cd28a0699ae4349741faab5b954605a8ab59ce06b111078639df9d67461774c3"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 137354,
+			"sha256": "8a5c40405b76255ba946cc0cd7de2075db22db275b724b031acbde145c781555"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5830,
+			"sha256": "96d4978ed341cbd55770e5f93ec1d5eaaa33201fbe445f430a511b274b2a8e0f"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 4428,
+			"sha256": "e8dc942bd3e9bec26053178d91eb5422129e4e1c09d52bc0a76099ae8d988d01"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e9cb1ec752c8f3aab85a4042001dccf9741259c669587b8b8afd78f08af6761e"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "2798926096ef5db8067fbe5dec598f76e2b6a69a36fad8e04b2091959c1db498"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1020,
+			"sha256": "f831b87413ff4a42d8f398d177217c6aa6056028fc9757b0e5a5ed1e6d834151"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5200,
+			"sha256": "8c1af155a51ad374cb73a9fea1d5417c6f8217c9a5e0e190a7dcacb7ed3225eb"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1053,
+			"sha256": "9e0e00f6cc6ea4a216f2975de38505981d8996aaf961bd8348b2f164f46a5d05"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "d5ce592c10769b5135cb1a9c83bedc39bec36dab2b5cc6c4f942f3608a737a91"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2801,
+			"sha256": "87e7526b7e92bce31aa7b7470dc2479bf2470ea5ea0c82fcd690b246eae2a8d0"
+		},
+		{
+			"path": "/textures/fundly/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3632,
+			"sha256": "022e5b0cf0306bd716f8380f07871111b7c950e22ce07c94d046880de73a90da"
+		}
+	]
+}
