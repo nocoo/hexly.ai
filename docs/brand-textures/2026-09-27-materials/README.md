@@ -30,6 +30,23 @@ Requests, responses, original PNGs and review decisions stay under each project'
 Generation failures and explicit later attempts are retained. Do not rerun a
 successful request after an interrupted conversation.
 
+## Review handoff
+
+All 21 pairs (42 candidates) are ready for owner review. Each selected raw review
+remains `pending`; agent inspection does not imply exact-byte owner acceptance.
+The [completion record](completion.json) preserves full-canvas inspection,
+1024-square original checksums, request/prompt integrity, unchanged source
+identity/metadata/kit checks and browser results at 1440, 390 and 320 pixels.
+All 42 original downloads match their recorded hashes.
+
+The generation archive retains 55 unchanged PNGs: 42 review candidates and 13
+rejected studies. One Runner dark request returned HTTP 500; its receipt remains
+preserved, and a later explicit attempt supplied the candidate. Revisions for
+Infospace, Matrix and Runner restore substantial, finely worked relief after
+oversized or excessively sparse trials. Individual review records describe
+remaining artistic comparison points such as theme weight and edge extent.
+No catalogue, production asset, icon, R2 or deployment change is included.
+
 ## Deferred icon composition
 
 After texture review, the owner wants existing icon artwork composited over the
