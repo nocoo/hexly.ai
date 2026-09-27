@@ -92,7 +92,7 @@ for row, theme, run in tasks:
     if not (run / 'prompt.txt').exists():
         (run / 'prompt.txt').write_bytes((Path(row['study']) / theme / 'prompt.txt').read_bytes())
     time.sleep(max(0, next_start - time.monotonic()))
-    next_start = time.monotonic() + 40
+    next_start = time.monotonic() + 35
     connection_log = run / 'connection-events.json'
     code = runner['generate_one'](row, theme, args.attempt)
     failures = failures + 1 if code else 0
