@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "project": "xray",
+  "kind": "screenshots",
+  "asset": "dashboard",
+  "version": "1.0.0",
+  "role": "project-media",
+  "importedAt": "2026-09-27T11:24:58.963Z",
+  "bucket": "hexlyai",
+  "origin": "https://h.no.mt",
+  "source": {
+    "repository": "https://github.com/nocoo/xray",
+    "revision": null,
+    "inspectedRepositoryRevision": "53f775c97bc77e14a096a6a44e353fb758ba2e2c",
+    "path": "/Users/nocoo/Desktop/xray-20260927-155308/01-dashboard.webp",
+    "sha256": "6c90ce455cf3900c532a4cd97c781610eaccfd18292b83a7de5d2135e6776254",
+    "bytes": 278496,
+    "capture": {
+      "manifest": "docs/assets/xray/screenshots/capture-manifest.json",
+      "originalFilename": "CleanShot 2026-09-27 at 15.54.18@2x.webp",
+      "url": "https://xray.dev.hexly.ai/",
+      "applicationVersion": "2.5.5",
+      "environment": "Demo",
+      "description": "Owner-supplied Safari window capture made with CleanShot, showing the local Xray Demo interface and fixture content."
+    },
+    "rights": {
+      "license": null,
+      "authorization": "Owner supplied these screenshots for the Xray project introduction and requested local preview first.",
+      "localNotice": "docs/assets/xray/screenshots/LICENSE"
+    },
+    "note": "The capture manifest does not record the running Git revision. The inspected clean repository revision is contextual evidence only. Original bytes, full canvas, browser chrome, transparency, and product colors are preserved. No image generation was performed."
+  },
+  "alt": {
+    "en": "Dashboard — content totals, watchlist and channel activity, and collection diagnostics.",
+    "zh": "仪表盘：查看内容总量、关注列表与频道动态，以及采集状态。"
+  },
+  "artifacts": [
+    {
+      "variant": "original",
+      "path": "/screenshots/xray/dashboard/v1.0.0/original.webp",
+      "key": "projects/xray/screenshots/dashboard/v1.0.0/original-6c90ce455cf3.webp",
+      "url": "https://h.no.mt/projects/xray/screenshots/dashboard/v1.0.0/original-6c90ce455cf3.webp",
+      "width": 2972,
+      "height": 2324,
+      "bytes": 278496,
+      "sha256": "6c90ce455cf3900c532a4cd97c781610eaccfd18292b83a7de5d2135e6776254",
+      "contentType": "image/webp",
+      "transform": "unchanged source bytes"
+    },
+    {
+      "variant": "preview",
+      "path": "/screenshots/xray/dashboard/v1.0.0/preview.webp",
+      "key": "projects/xray/screenshots/dashboard/v1.0.0/preview-37464637aa32.webp",
+      "url": "https://h.no.mt/projects/xray/screenshots/dashboard/v1.0.0/preview-37464637aa32.webp",
+      "width": 1600,
+      "height": 1251,
+      "bytes": 108782,
+      "sha256": "37464637aa326d6d7b54b3b4426a99d18bb3041263ecdb985a5e336b11ed70b2",
+      "contentType": "image/webp",
+      "derivedFrom": "6c90ce455cf3900c532a4cd97c781610eaccfd18292b83a7de5d2135e6776254",
+      "transform": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "fit": "inside",
+        "width": 1600,
+        "height": 1600,
+        "withoutEnlargement": true,
+        "webpQuality": 92,
+        "effort": 6,
+        "crop": false,
+        "recolor": false
+      }
+    },
+    {
+      "variant": "thumbnail",
+      "path": "/screenshots/xray/dashboard/v1.0.0/thumbnail.webp",
+      "key": "projects/xray/screenshots/dashboard/v1.0.0/thumbnail-98ab1a5b3434.webp",
+      "url": "https://h.no.mt/projects/xray/screenshots/dashboard/v1.0.0/thumbnail-98ab1a5b3434.webp",
+      "width": 320,
+      "height": 250,
+      "bytes": 6546,
+      "sha256": "98ab1a5b34349209f66a6e88d199f292b67d6375a5eefd8b230f866aaa1e29fb",
+      "contentType": "image/webp",
+      "derivedFrom": "6c90ce455cf3900c532a4cd97c781610eaccfd18292b83a7de5d2135e6776254",
+      "transform": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "fit": "inside",
+        "width": 320,
+        "height": 320,
+        "withoutEnlargement": true,
+        "webpQuality": 82,
+        "effort": 6,
+        "crop": false,
+        "recolor": false
+      }
+    }
+  ],
+  "publication": {
+    "state": "pending",
+    "note": "Prepared for local review only; no R2 upload or website deployment has been performed. Artifact URLs reserve the intended immutable destinations."
+  }
+}

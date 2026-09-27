@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "project": "xray",
+  "kind": "screenshots",
+  "asset": "watchlist-feed",
+  "version": "1.0.0",
+  "role": "project-media",
+  "importedAt": "2026-09-27T11:24:58.963Z",
+  "bucket": "hexlyai",
+  "origin": "https://h.no.mt",
+  "source": {
+    "repository": "https://github.com/nocoo/xray",
+    "revision": null,
+    "inspectedRepositoryRevision": "53f775c97bc77e14a096a6a44e353fb758ba2e2c",
+    "path": "/Users/nocoo/Desktop/xray-20260927-155308/02-watchlist-feed.webp",
+    "sha256": "87bef433b089b0e21c9fa29860db1f22097a985fb6a9e96391852bfe28e5f3ff",
+    "bytes": 923466,
+    "capture": {
+      "manifest": "docs/assets/xray/screenshots/capture-manifest.json",
+      "originalFilename": "CleanShot 2026-09-27 at 16.03.41@2x.webp",
+      "url": "https://xray.dev.hexly.ai/watchlist/1",
+      "applicationVersion": "2.5.5",
+      "environment": "Demo",
+      "description": "Owner-supplied Safari window capture made with CleanShot, showing the local Xray Demo interface and fixture content."
+    },
+    "rights": {
+      "license": null,
+      "authorization": "Owner supplied these screenshots for the Xray project introduction and requested local preview first.",
+      "localNotice": "docs/assets/xray/screenshots/LICENSE"
+    },
+    "note": "The capture manifest does not record the running Git revision. The inspected clean repository revision is contextual evidence only. Original bytes, full canvas, browser chrome, transparency, and product colors are preserved. No image generation was performed."
+  },
+  "alt": {
+    "en": "Watchlist feed — browse X and custom sources with translations, AI insights, and saved links.",
+    "zh": "关注动态：集中阅读 X 与自定义来源，查看翻译、AI 摘要并保存链接。"
+  },
+  "artifacts": [
+    {
+      "variant": "original",
+      "path": "/screenshots/xray/watchlist-feed/v1.0.0/original.webp",
+      "key": "projects/xray/screenshots/watchlist-feed/v1.0.0/original-87bef433b089.webp",
+      "url": "https://h.no.mt/projects/xray/screenshots/watchlist-feed/v1.0.0/original-87bef433b089.webp",
+      "width": 2972,
+      "height": 2324,
+      "bytes": 923466,
+      "sha256": "87bef433b089b0e21c9fa29860db1f22097a985fb6a9e96391852bfe28e5f3ff",
+      "contentType": "image/webp",
+      "transform": "unchanged source bytes"
+    },
+    {
+      "variant": "preview",
+      "path": "/screenshots/xray/watchlist-feed/v1.0.0/preview.webp",
+      "key": "projects/xray/screenshots/watchlist-feed/v1.0.0/preview-fba512fb424a.webp",
+      "url": "https://h.no.mt/projects/xray/screenshots/watchlist-feed/v1.0.0/preview-fba512fb424a.webp",
+      "width": 1600,
+      "height": 1251,
+      "bytes": 195758,
+      "sha256": "fba512fb424afcf6cb5f56fc2e0591ce4c39248f428bede69c037d2a577323ca",
+      "contentType": "image/webp",
+      "derivedFrom": "87bef433b089b0e21c9fa29860db1f22097a985fb6a9e96391852bfe28e5f3ff",
+      "transform": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "fit": "inside",
+        "width": 1600,
+        "height": 1600,
+        "withoutEnlargement": true,
+        "webpQuality": 92,
+        "effort": 6,
+        "crop": false,
+        "recolor": false
+      }
+    },
+    {
+      "variant": "thumbnail",
+      "path": "/screenshots/xray/watchlist-feed/v1.0.0/thumbnail.webp",
+      "key": "projects/xray/screenshots/watchlist-feed/v1.0.0/thumbnail-b9f781c8dfcd.webp",
+      "url": "https://h.no.mt/projects/xray/screenshots/watchlist-feed/v1.0.0/thumbnail-b9f781c8dfcd.webp",
+      "width": 320,
+      "height": 250,
+      "bytes": 12622,
+      "sha256": "b9f781c8dfcdab19ba58fa937c17088ce9c7e84718d2743fe5b835c09f871c93",
+      "contentType": "image/webp",
+      "derivedFrom": "87bef433b089b0e21c9fa29860db1f22097a985fb6a9e96391852bfe28e5f3ff",
+      "transform": {
+        "tool": "sharp",
+        "version": "0.35.4",
+        "fit": "inside",
+        "width": 320,
+        "height": 320,
+        "withoutEnlargement": true,
+        "webpQuality": 82,
+        "effort": 6,
+        "crop": false,
+        "recolor": false
+      }
+    }
+  ],
+  "publication": {
+    "state": "pending",
+    "note": "Prepared for local review only; no R2 upload or website deployment has been performed. Artifact URLs reserve the intended immutable destinations."
+  }
+}

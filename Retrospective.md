@@ -282,3 +282,18 @@ checks. Increase fixture download concurrency to 16 using the existing bounded
 pool. The largest selected object is 7.3 MB, and this path only reads CDN objects.
 Keep every fixture, checksum, assertion and timeout; verify the complete replacement
 CI run before tagging instead of extending the budget or skipping browser checks.
+
+## 2026-09-27 — Screenshot inventory started before export completion
+
+The Xray screenshot import was still exporting derivatives when inventory was
+started. The first scan recorded only ten of the expected fifteen new files.
+No upload or deployment occurred. After both processes exited, inventory was
+rebuilt and checked against all five completed receipts. A yielded process is
+still running: require its successful exit before starting dependent inventory,
+profile generation, validation or publication, and compare the expected file
+count before proceeding.
+
+The intake audit also exceeded Node's default synchronous subprocess output
+buffer while reading the existing multi-megabyte inventory through `git show`.
+Use an explicit bounded buffer sized for that known metadata file, or stream it
+to disk; do not let a diagnostic exception dump the inventory into tool output.
