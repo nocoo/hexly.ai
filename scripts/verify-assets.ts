@@ -26,6 +26,30 @@ for (const project of projects) {
 		}
 	}
 	const original = await readFile(`public${project.logo.original}`);
+	if (project.presentationIcon) {
+		const icon = project.presentationIcon;
+		const manifest = JSON.parse(
+			await readFile(`public${icon.root}/manifest.json`, "utf8"),
+		);
+		if (
+			manifest.project !== project.id ||
+			manifest.version !== icon.version ||
+			manifest.foreground.sha256 !== project.family?.foreground.sha256 ||
+			manifest.texture.path !==
+				`${project.brandTexture?.root}/texture-light.png` ||
+			manifest.width !== icon.width ||
+			manifest.height !== icon.height ||
+			manifest.generationCalls !== 0 ||
+			!manifest.inspection.opaqueForegroundRgbUnchanged
+		)
+			throw new Error(`Icon manifest disagrees with catalogue: ${project.id}`);
+		const texture = await readFile(`public${manifest.texture.path}`);
+		if (
+			createHash("sha256").update(texture).digest("hex") !==
+			manifest.texture.sha256
+		)
+			throw new Error(`Icon texture source changed: ${project.id}`);
+	}
 	if (project.brandTexture) {
 		const texture = project.brandTexture;
 		const manifest = JSON.parse(
@@ -204,7 +228,7 @@ console.info(
 
 let publicArchives = 0;
 for await (const path of new Bun.Glob(
-	"public/{brands,textures}/*/v*/manifest.json",
+	"public/{brands,textures,icons}/*/v*/manifest.json",
 ).scan(".")) {
 	const manifest: {
 		files: { path: string; bytes: number; sha256: string }[];

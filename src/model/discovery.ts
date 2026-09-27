@@ -615,7 +615,7 @@ function snapshotHtml(
 			? `<section id="media"><h2>${copy.en.projectMedia}</h2>${videoHtml}${screenshotsHtml}</section>`
 			: "";
 	const brandHtml = project
-		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.family?.foreground.display ?? project.logo.display))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">Download original</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a></p></section>`
+		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.presentationIcon ? `${project.presentationIcon.root}/rounded-512.webp` : (project.family?.foreground.display ?? project.logo.display)))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">Download original</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a></p></section>`
 		: "";
 	const guide = agentGuide(current, project ? [project] : projects);
 	const agentHtml = `<section id="agent-guide"><h2>For agents</h2><details><summary>Read the integration guide</summary><pre>${escapeHtml(guide.body)}</pre></details><p><a href="${escapeHtml(guide.path)}" rel="alternate" type="text/markdown">Plain Markdown</a> · <a href="/llms.txt">Agent index</a></p></section>`;

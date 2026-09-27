@@ -1,0 +1,54 @@
+{
+	"schemaVersion": 1,
+	"project": "deca",
+	"version": "1.0.0",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "A midnight teal rotary desk telephone",
+			"zh": "午夜青色旋转拨号电话"
+		},
+		"original": "/logos/family/deca/2026-09-07-01/01/transparent.png",
+		"display": "/logos/family/deca/2026-09-07-01/01/transparent-1024.webp",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/deca/v1.0.1/texture-light.png",
+		"sha256": "82ee8b5b76e593de47cffead4e9ec077f0dbefdc9e62f8d2fcb48bf0ff0363de",
+		"originalWidth": 1024,
+		"placementWidth": 2048,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 2048,
+	"height": 2048,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/deca/2026-09-07-01",
+		"texture": "/textures/deca/v1.0.1/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 1343669,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true,
+		"approvedPilotPixelsMatch": false
+	}
+}

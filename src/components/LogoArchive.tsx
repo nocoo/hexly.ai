@@ -56,8 +56,28 @@ export function LogoArchive({
 			<div className="download-links">
 				{[
 					[t.download, family.foreground.original],
-					[t.squareDownload, `${family.root}/icon.png`],
-					[t.roundedDownload, `${family.root}/rounded.png`],
+					[
+						t.squareDownload,
+						`${project.presentationIcon?.root ?? family.root}/icon.png`,
+					],
+					[
+						t.roundedDownload,
+						`${project.presentationIcon?.root ?? family.root}/rounded.png`,
+					],
+					...(project.presentationIcon
+						? [
+								[
+									"iOS App Icon · 1024 px",
+									`${project.presentationIcon.root}/icon-1024.png`,
+								],
+								[
+									locale === "zh"
+										? "图标文件与 SHA-256"
+										: "Icon files & SHA-256",
+									`${project.presentationIcon.root}/manifest.json`,
+								],
+							]
+						: []),
 					[t.whiteDownload, `${family.root}/white.png`],
 					[
 						adapted

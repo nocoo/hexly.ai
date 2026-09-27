@@ -27,6 +27,7 @@ describe("optional project media", () => {
 					id: "media-fixture",
 					brandKit: undefined,
 					brandTexture: undefined,
+					presentationIcon: undefined,
 				},
 			]),
 		).toHaveLength(2);

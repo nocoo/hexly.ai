@@ -1,0 +1,182 @@
+{
+	"schemaVersion": 1,
+	"project": "raven",
+	"version": "1.0.0",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Right-facing indigo raven with a faceted eye, violet feathers, and mint accents",
+			"zh": "向右看的靛蓝渡鸦，保留碎片眼睛、紫色羽毛与薄荷点缀"
+		},
+		"original": "/logos/family/raven/2026-09-07-04/02/transparent.png",
+		"display": "/logos/family/raven/2026-09-07-04/02/transparent-1024.webp",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "9b5f6ee551ad4e2e082b6f99ce690bcd782db67fc0d90fdfcf46f6e28af28319",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/raven/v1.0.1/texture-light.png",
+		"sha256": "1982b51714b7aa59190f84183b948d0722aca7e71cff71d682147d04d0e6af91",
+		"originalWidth": 1024,
+		"placementWidth": 2048,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 2048,
+	"height": 2048,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/raven/2026-09-07-04",
+		"texture": "/textures/raven/v1.0.1/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 2005353,
+		"foregroundPixelsAtOutline": 48465,
+		"opaqueForegroundRgbUnchanged": true,
+		"approvedPilotPixelsMatch": false
+	},
+	"root": "/icons/raven/v1.0.0",
+	"files": [
+		{
+			"path": "/icons/raven/v1.0.0/icon.png",
+			"bytes": 3570022,
+			"sha256": "30663725c2ed6aed081e7aab38ab31a248ef5f9e1801cfae0c6f61f9e7e15e4e"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded.png",
+			"bytes": 3891836,
+			"sha256": "bf4d1b081a06ba07eaa57df1dc357316152c8cdad46ddbc0fc891483c9c13732"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-32.webp",
+			"bytes": 2534,
+			"sha256": "cfb2af307beb558c8a20af32c21b0c26851b3f96bd45418424898e9ecd8cc561"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-32.webp",
+			"bytes": 2150,
+			"sha256": "459a98e6098148bdc5a1994b02eda9ce8340613fda41b01b3463e4249ae2ea76"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-64.webp",
+			"bytes": 7344,
+			"sha256": "9b70a6bcec8839aae1fff892cb80f2649f13112c67107e8cabd212fcd2ef031c"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-64.webp",
+			"bytes": 6722,
+			"sha256": "e0b63956e782ef00fb9d3933aa98f5d4370f26c7e4e19a41a83362252b37680f"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-160.webp",
+			"bytes": 35060,
+			"sha256": "7188adc615dab01c56bb2db62da0af99462d66c52f01cbadf6d7574a7000f547"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-160.webp",
+			"bytes": 31996,
+			"sha256": "b8eb4371203ccf4425e8f30839a6a9d3584bcac23f5a1101ea51450e6df27a6e"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-256.webp",
+			"bytes": 76818,
+			"sha256": "130fa2c2f1e34a1a4e10724bc513f9b7e6eb4affad2c3f17b2dc1c8e43696999"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-256.webp",
+			"bytes": 71260,
+			"sha256": "7a609c31b180bde8404b002ded3a8aa66a8a3be5aeb468e2aaca30f649e017dd"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-512.webp",
+			"bytes": 261286,
+			"sha256": "3faabc7b953acdf3b5c5fd8bf1c2282732a67f8b8a6e56446db1dec2843f4352"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-512.webp",
+			"bytes": 251124,
+			"sha256": "580b3abe3ebd0c6e13baa43d273265f141b113c39f7e6c73654414e4484f7f94"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-1024.webp",
+			"bytes": 877914,
+			"sha256": "e53def77d7c2b1f6a30390dbfb7dc16c1ff21b0d71f8f72a89c80804f7b6d958"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-1024.webp",
+			"bytes": 887886,
+			"sha256": "fc68a2000f82067a9df3e6d635614d6683381c5900762de534f46fbbf69ecf64"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/icon-1024.png",
+			"bytes": 1167798,
+			"sha256": "90ecd73289f17924ab63614db07f636ffd080fdcd32106989a476a08b7b3036a"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/apple-touch-icon.png",
+			"bytes": 52454,
+			"sha256": "197e9401648b5490bf57e4cd61564f4e15313340bbbf0b22cebe5df7f0ceaea4"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-16.png",
+			"bytes": 910,
+			"sha256": "c5dabc46f16b78cade05e736d091e3b97e10cb4f90af74f59fb69c3dd63b65f6"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-32.png",
+			"bytes": 2907,
+			"sha256": "28899cd2a8109908a89d3c8ab85dd7b39af71563033b0a89309197b09f15a647"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-48.png",
+			"bytes": 5870,
+			"sha256": "c60feca9472e994262ad46194b4541eae5b0d7e43858bd93ad50b1a89d1243eb"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-64.png",
+			"bytes": 9879,
+			"sha256": "f3ae5fab48feea32f924dea69f4c8125a75428b6796d59e58b0f801271c4698b"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-128.png",
+			"bytes": 33375,
+			"sha256": "0144cd3b03aff567e8f82eb6f0af566fdef112190b18c943fa221f649895424a"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/rounded-256.png",
+			"bytes": 110845,
+			"sha256": "ad63a2b29b4dfebd25ee3f7f263c15ca15a93108fa91f479f2335a5700624437"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/favicon.ico",
+			"bytes": 163888,
+			"sha256": "cddc9d0928a0f320c3c7698520ade6019a531d8dfbeaaa16244dac945e1ec442"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/provenance.json",
+			"bytes": 2008,
+			"sha256": "f0410af54b9b83adb8d8403476fdb24e1b8a482cb47640e4651f2fca79c208e1"
+		},
+		{
+			"path": "/icons/raven/v1.0.0/guide.md",
+			"bytes": 945,
+			"sha256": "4d31e0076b441c995cd173ae7f018f0ca69a6d6f67a51b088e8c7f152a62e965"
+		}
+	]
+}

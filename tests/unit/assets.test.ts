@@ -24,12 +24,20 @@ import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 describe("R2 material delivery", () => {
 	it("keeps independently versioned texture packs on R2 and review documents on the Worker", () => {
 		const path = "/textures/frogie/v1.0.0/texture-light-320.webp";
+		const iconPath = "/icons/frogie/v1.0.0/rounded-64.webp";
+		expect(assetKeyForPath(iconPath)).toBe(
+			"projects/frogie/icons/v1.0.0/rounded-64.webp",
+		);
+		expect(assetKey(iconPath, "a".repeat(64), "frogie")).toBe(
+			assetKeyForPath(iconPath),
+		);
+		expect(assetUrl(assetUrl(iconPath), true)).toBe(iconPath);
 		const key = "projects/frogie/textures/v1.0.0/texture-light-320.webp";
 		expect(assetKey(path, "a".repeat(64), "frogie")).toBe(key);
 		expect(assetKeyForPath(path)).toBe(key);
 		expect(assetUrl(path)).toBe(`https://h.no.mt/${key}`);
 		expect(() => assetKey(path, "a".repeat(64), "pew")).toThrow(
-			"Texture path and catalogue project disagree",
+			"Texture/icon path and catalogue project disagree",
 		);
 		for (const path of [
 			"/textures/frogie/v1.0.0/review.html",

@@ -133,13 +133,15 @@ export function filesIn(directory: string): string[] {
 
 /** Published package-relative paths remain byte compatible; loose assets get immutable keys. */
 export function assetKey(path: string, sha256: string, project: string) {
-	const texture = path.match(
-		/^\/textures\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
+	const pack = path.match(
+		/^\/(textures|icons)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
 	);
-	if (texture) {
-		if (texture[1] !== project)
-			throw new Error(`Texture path and catalogue project disagree: ${path}`);
-		return `projects/${project}/textures/v${texture[2]}/${texture[3]}`;
+	if (pack) {
+		if (pack[2] !== project)
+			throw new Error(
+				`Texture/icon path and catalogue project disagree: ${path}`,
+			);
+		return `projects/${project}/${pack[1]}/v${pack[3]}/${pack[4]}`;
 	}
 	if (
 		/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/|video-kit\/\d+\.\d+\.\d+\/)/.test(
@@ -186,7 +188,11 @@ export async function inventory() {
 	// These approved source directories also contain new, intentionally untracked originals.
 	for (const directory of ["artwork", "docs", "src/fonts"])
 		for (const source of filesIn(directory))
-			if (binary.test(source)) sources.set(source, sources.get(source));
+			if (
+				binary.test(source) &&
+				!source.startsWith("artwork/icon-texture-review/")
+			)
+				sources.set(source, sources.get(source));
 	for (const source of previousSources.keys())
 		sources.set(source, previousSources.get(source)?.path);
 	for (const [source, path] of [
@@ -226,6 +232,7 @@ export async function inventory() {
 						path === (p.socialImage ?? `/og/${p.id}.jpg`) ||
 						path.startsWith(`/brands/${p.id}/`) ||
 						path.startsWith(`/textures/${p.id}/`) ||
+						path.startsWith(`/icons/${p.id}/`) ||
 						(p.family && path.startsWith(`${p.family.root}/`))),
 			) ??
 			projects.find((p) => source.includes(`/${p.id}/`)) ??
@@ -270,7 +277,9 @@ export async function inventory() {
 						: screenshot
 							? `docs/assets/${project.id}/screenshots/${screenshot[2]}/v${screenshot[3]}.json`
 							: path &&
-									/^\/(?:brands|textures)\/[^/]+\/v\d+\.\d+\.\d+\//.test(path)
+									/^\/(?:brands|textures|icons)\/[^/]+\/v\d+\.\d+\.\d+\//.test(
+										path,
+									)
 								? `${dirname(path)}/provenance.json`
 								: path?.startsWith("/textures/")
 									? "docs/27-project-textures.md"
@@ -304,7 +313,7 @@ export async function inventory() {
 					(path) =>
 						path &&
 						file.key !== path.slice(1) &&
-						!/^\/textures\/[a-z0-9-]+\/v\d+\.\d+\.\d+\/[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(
+						!/^\/(?:textures|icons)\/[a-z0-9-]+\/v\d+\.\d+\.\d+\/[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(
 							path,
 						) &&
 						!/\.(html|css|js)$/.test(path),

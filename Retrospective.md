@@ -253,3 +253,16 @@ During pilot adoption, the new approval records retained detailed agent observat
 The local rollout harness initially searched for the `signoff-now` route slug, but the catalogue displays and indexes `signoff.now`. The card lookup timed out before inspecting that project. Use the recorded display title for the search interaction and retain the canonical ID for the card selector and project route; the corrected 30-case group passed without a product-code change.
 
 The full-square rollout increased the complete HTTP/browser asset fixture trees enough for Wrangler's native watchers to break macOS subprocess startup. The visible esbuild `EBADF` was a secondary failure while formatting the original error; tracing every failed spawn revealed Workerd failed first, with 10,363 open descriptors and 11,307 active FSWatcher handles. Switching Node versions and disabling esbuild worker threads did not help. A targeted run with Chokidar polling passed all 36 HTTP tests. The test-only Worker environment now uses one-second polling, preserving every fixture and assertion while daily development retains native watching. Diagnose the first failing subprocess and resource counts before treating a logger stack as the root cause.
+
+## 2026-09-27 — Textured icon selectors and fixtures
+
+The new continuous-corner assets needed the unframed image container so CSS would
+not add a second mask or shadow. An audit caught that card, logo-wall and status
+responsive dimensions were attached only to the old tile class. The change now
+shares the layout selectors with composed icons while leaving decorative shadows
+on the old class. Desktop, 390 px and 320 px layout checks cover both themes.
+Existing browser fixtures also pinned old family/favicon URLs and expected large
+transparent foreground areas. Those checks now select the current icon package
+and require transparent corners plus an opaque textured center; separate original
+foreground tests remain. Update consumer selectors and semantic pixel assertions
+together when changing an approved presentation, not only the image URL.

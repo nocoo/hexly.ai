@@ -147,6 +147,12 @@ export interface Project {
 		sha256: string;
 	};
 	family?: LogoFamily;
+	presentationIcon?: {
+		version: string;
+		root: string;
+		width: number;
+		height: number;
+	};
 	brandTexture?: ProjectTexture;
 	brandKit?: {
 		version: string;

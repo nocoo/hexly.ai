@@ -62,10 +62,12 @@ test("renders active projects with real logo previews and project destinations",
 	for (const project of refined) {
 		const { id } = project;
 		await expect(
-			page.locator(`[data-project="${id}"] .logo-family img`),
+			page.locator(`[data-project="${id}"] .logo-composed img`),
 		).toHaveAttribute(
 			"src",
-			new RegExp(`${project.family?.root}/icon-256\\.webp$`),
+			new RegExp(
+				`/projects/${id}/icons/v${project.presentationIcon?.version}/rounded-256\\.webp$`,
+			),
 		);
 	}
 	await expect(page.locator(".project-card img").first()).toHaveAttribute(

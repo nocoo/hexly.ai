@@ -92,6 +92,15 @@ export function agentGuide(
 					: "The exact generation prompt is a historical source record. Read it for context; adopting the existing assets does not require running it again.",
 			);
 		}
+		if (project.presentationIcon) {
+			resources.push({
+				label: "Current textured icon manifest",
+				href: assetUrl(`${project.presentationIcon.root}/manifest.json`),
+			});
+			instructions.push(
+				"Use the current rounded presentation as delivered on Hexly pages. Original foreground geometry/colors are preserved. iOS and Apple touch files are opaque squares for platform masking. Native dimensions and resampling are recorded in the icon manifest; source-product adoption remains separate.",
+			);
+		}
 		if (project.brandKit) {
 			instructions.push(
 				`Brand kit: v${project.brandKit.version}. Read its manifest roles and license records before choosing official identity versus Hexly campaign artwork. Verify the selected files against that manifest.`,

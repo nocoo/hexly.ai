@@ -135,3 +135,12 @@ version/hash keys prevent accidental local overlap; HEAD/PUT does not claim
 distributed atomicity. Stop on conflicting bytes. Published objects have no
 lifecycle expiry. Rollback selects an earlier object/reference; deletion and a
 second history rewrite are separate, explicitly scoped operations.
+
+## Textured icon packages
+
+`public/icons/<project>/v<version>/` maps to
+`projects/<project>/icons/v<version>/` on R2. `Project.presentationIcon` selects
+this independently of immutable family/brand archives. Native square/rounded PNGs,
+lossless WebP delivery sizes, ICO and opaque iOS/Apple touch files share a checksum
+manifest, source provenance and resampling guide. Review-only composites under
+`artwork/icon-texture-review/` are private working binaries, excluded from inventory.

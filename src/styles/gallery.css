@@ -313,6 +313,11 @@
 	height: 100%;
 	object-fit: contain;
 }
+.review-tile.composed-tile {
+	border-radius: 0;
+	box-shadow: none;
+	overflow: visible;
+}
 .previous-tile {
 	background-image: var(--family-background);
 	background-size: cover;

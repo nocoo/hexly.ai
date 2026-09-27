@@ -13,14 +13,12 @@ export function assetKeyForPath(path: string): string | null {
 		/\.(html|js|css)$/.test(path)
 	)
 		return null;
-	const texture = path.match(
-		/^\/textures\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
+	const pack = path.match(
+		/^\/(textures|icons)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\/([a-zA-Z0-9][a-zA-Z0-9._-]*)$/,
 	);
 	return (
 		aliases[path] ??
-		(texture
-			? `projects/${texture[1]}/textures/v${texture[2]}/${texture[3]}`
-			: null) ??
+		(pack ? `projects/${pack[2]}/${pack[1]}/v${pack[3]}/${pack[4]}` : null) ??
 		(/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/|video-kit\/\d+\.\d+\.\d+\/)/.test(
 			path,
 		)
@@ -40,7 +38,7 @@ export function assetUrl(
 		const key = remote.split(/[?#]/)[0] ?? "";
 		const path =
 			Object.keys(aliases).find((path) => aliases[path] === key) ??
-			`/${key.replace(/^projects\/([^/]+)\/textures\//, "textures/$1/")}`;
+			`/${key.replace(/^projects\/([^/]+)\/(textures|icons)\//, "$2/$1/")}`;
 		if (assetKeyForPath(path) === key)
 			return `${path}${remote.slice(key.length)}`;
 	}

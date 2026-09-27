@@ -35,7 +35,7 @@
 	gap: 16px;
 	padding: 20px;
 }
-.logo-wall .card-logo .logo-tile {
+.logo-wall .card-logo :is(.logo-tile, .logo-composed) {
 	width: 100%;
 	height: auto;
 	aspect-ratio: 1;

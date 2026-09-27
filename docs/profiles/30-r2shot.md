@@ -72,6 +72,15 @@ Capture visible or vertically stitched web pages, upload them to your own R2 buc
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current textured icons
+
+![R2Shot current icon](https://h.no.mt/projects/r2shot/icons/v1.0.0/rounded-160.webp)
+
+- [Native square PNG](https://h.no.mt/projects/r2shot/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/r2shot/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/r2shot/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/r2shot/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/r2shot/icons/v1.0.0/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/r2shot/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/r2shot/icons/v1.0.0/guide.md)
+- Native canvas 920 × 920; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. 1024 px variants are explicitly resampled upscales.
+- Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
 ## Current campaign texture
 
 - Eelgrass in the current / 潮流中的鳗草: Long flat eelgrass ribbons with subtle parallel veins and a few small kelp blade tips.

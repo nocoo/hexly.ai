@@ -32,7 +32,11 @@ export function projectForVideo(
 		logo:
 			p.id === identity.id
 				? undefined
-				: assetUrl(project?.family?.foreground.display ?? p.logo.display),
+				: assetUrl(
+						project?.presentationIcon
+							? `${project.presentationIcon.root}/rounded-512.webp`
+							: (project?.family?.foreground.display ?? p.logo.display),
+					),
 		colors: [...new Set(p.colors.palette.map((item) => item.color))]
 			.filter((color) => /^#[\da-f]{6}$/i.test(color))
 			.slice(0, 6),

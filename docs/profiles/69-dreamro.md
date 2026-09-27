@@ -59,6 +59,15 @@ Explore an RO-inspired single-player RPG in the browser, from character creation
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current textured icons
+
+![DreamRO current icon](https://h.no.mt/projects/dreamro/icons/v1.0.0/rounded-160.webp)
+
+- [Native square PNG](https://h.no.mt/projects/dreamro/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/dreamro/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/dreamro/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/dreamro/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/dreamro/icons/v1.0.0/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/dreamro/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/dreamro/icons/v1.0.0/guide.md)
+- Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
+- Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
 ## Current campaign texture
 
 - Equipment tooling grain / 铠作压纹: Leather-tooling curves, chevron seams and hammered grain recall handcrafted adventure equipment.
