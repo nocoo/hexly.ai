@@ -341,17 +341,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/coffee/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/coffee/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Cupping paper and glaze", "zh": "杯测纸与釉" },
+		"name": {
+			"en": "Porcelain turning field",
+			"zh": "瓷作旋纹"
+		},
 		"description": {
-			"en": "Fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size.",
-			"zh": "杯测纸纤维、细瓷釉与两道不完整的浅环痕呼应品饮过程，咖啡杯原标仍是唯一主体。"
+			"en": "Porcelain turning arcs and fine nested grooves spread across a softly embossed paper field.",
+			"zh": "陶瓷旋纹与细密弧线铺展于浅浮雕纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.41
+		"surfaceOpacity": 0.45
 	}
 }

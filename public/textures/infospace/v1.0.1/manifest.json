@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "infospace",
+	"version": "1.0.1",
+	"root": "/textures/infospace/v1.0.1",
+	"canonical": "https://hexly.ai/projects/infospace#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/infospace/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Pressed divider grain", "zh": "分格压槽" },
+		"description": {
+			"en": "Divider channels and compressed paper fibers form an interwoven field of shallow impressions.",
+			"zh": "分隔槽与压缩纸纤维交织为连续的浅压纹。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+		"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+		"rgbaSha256": "86f99fbc319481ec964495407e06d4f645f2934acc9db98b31d583cdf94898f2",
+		"source": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+		"bytes": 4365206,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/infospace/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "42205956aa29c5b355dddb89a4b8b826f31d4b4d443b9e8379e5beaba10c1757"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2eaab0ef-8c40-48d2-93c1-e04efba9ceeb",
+			"source": "artwork/brands/infospace/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/infospace/v1.0.1/source-light-request.json",
+			"response": "/textures/infospace/v1.0.1/source-light-response.json",
+			"prompt": "/textures/infospace/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/infospace/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/infospace/v1.0.1/texture-light.png",
+				"sha256": "16c402a98b87a40a5edc501551e36ba3aa68a5c904a3ce320cb5b937f9e52f68",
+				"bytes": 1963030,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "bb9fe8fd-e088-427f-b4eb-72f9953e5e43",
+			"source": "artwork/brands/infospace/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/infospace/v1.0.1/source-dark-request.json",
+			"response": "/textures/infospace/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/infospace/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/infospace/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/infospace/v1.0.1/texture-dark.png",
+				"sha256": "3e444beb8cc46da765c4aa8c156a6ff6a86014b93251c211ec91276bc6182b32",
+				"bytes": 1870743,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/infospace/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1963030,
+			"sha256": "16c402a98b87a40a5edc501551e36ba3aa68a5c904a3ce320cb5b937f9e52f68"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 281190,
+			"sha256": "ed0b20aa34ade664fd86dde6fc21f719048749feada99bcf584a56b4d7fdbece"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 15004,
+			"sha256": "266253e46758f2ea1108c1cd0031d20f0ee51726f2c51b66b35793a666f9ef29"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3186,
+			"sha256": "5027afb67f891e6d1852aa18e34353d7b2a80da4ca0bc0e6fa3d9d747cb63664"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "f1114c7b916c56cde18d7058fd2b05223a00c005268e363ee29492bc4fe1823a"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "1f61678e90826d9fba53b7f81cdb7151d5d4bc0ea788609a37aecc987e20f8b9"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1178,
+			"sha256": "092f021e37c56874006fd38372494ede7d17c7771575909f6cf6cc07a043659b"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1870743,
+			"sha256": "3e444beb8cc46da765c4aa8c156a6ff6a86014b93251c211ec91276bc6182b32"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 266690,
+			"sha256": "6bfb9d5b9c5fab5ced7111591215a5121b3ac950a342da5712d4992cc2089635"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12288,
+			"sha256": "3e5ae61c2a362ce149e9d858b040e7c024d1d14f19f4fa9796da87475d71d3f3"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3222,
+			"sha256": "3b47beebe91a591bd4123a2c80a783ecc4988b303f6bc83a6bc5dacee3b682da"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "504db99611aaf26b46596fb6e40560644f4530fbee89f827778c7fe3fb5ca251"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "2971cab46251b390c6d8002b7d7abce4b59db479802e169f893fca8ffb0d4a5a"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1178,
+			"sha256": "340a21e2de0dda6058fef1dd7cb73cee0523c3316c7f93a6841aac246f0d5bfd"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5608,
+			"sha256": "960aa40261eac3a31540c2dfbbdd447e1fea08cbac14ff833ec1e0a0f6e1f149"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1343,
+			"sha256": "cc4654d59d03ff1c784c6231a7477f42f299d2765a88a37388e0a56b300945d7"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1763,
+			"sha256": "310ec72f919e2b03d6d7f748339452a8f14421f4dc33500b235021b991185f74"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2643,
+			"sha256": "5fa61ab44614c57741f7ccdbe941b15dc6e52d15c47e8bbb4248c6ff7aa8c48d"
+		},
+		{
+			"path": "/textures/infospace/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3520,
+			"sha256": "5cc4ce2bb84f5a9b50280ec3b3f88dd8fe63a9faaf9212d7dece93e169347e9f"
+		}
+	]
+}

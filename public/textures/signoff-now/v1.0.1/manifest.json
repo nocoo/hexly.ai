@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "signoff-now",
+	"version": "1.0.1",
+	"root": "/textures/signoff-now/v1.0.1",
+	"canonical": "https://hexly.ai/projects/signoff-now#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/signoff-now/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Counter roller grain", "zh": "计数滚纹" },
+		"description": {
+			"en": "Rounded roller ridges, knurled grain and registration marks recall a mechanical counter.",
+			"zh": "圆润滚轮压纹、细密滚花与定位痕迹呼应机械计数器。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+		"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+		"rgbaSha256": "29dd63381dfdda91cf723593090cc28bd1fea16c4e0d525d4ea9bb61a5ad0e03",
+		"source": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/logo.png",
+		"bytes": 3963278,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/signoff-now/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d0a9d0532ef2f096c1406500a98b987fb0e3c81c7dc6f59c4f12715d447fb2b9"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5864e363-0204-4060-b9f7-88bac93ca30f",
+			"source": "artwork/brands/signoff-now/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/signoff-now/v1.0.1/source-light-request.json",
+			"response": "/textures/signoff-now/v1.0.1/source-light-response.json",
+			"prompt": "/textures/signoff-now/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/signoff-now/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/signoff-now/v1.0.1/texture-light.png",
+				"sha256": "146bd4e8143b01d59cb3c99f076e98ad007cc020fbbe374644d8c788c40704f4",
+				"bytes": 1921238,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "20ab660c-dcfc-4f9f-bbd0-6e2775346927",
+			"source": "artwork/brands/signoff-now/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/signoff-now/v1.0.1/source-dark-request.json",
+			"response": "/textures/signoff-now/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/signoff-now/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/signoff-now/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/signoff-now/v1.0.1/texture-dark.png",
+				"sha256": "5a28a92385ed890a0c7dba8cce710ea06a51c1eafbed50e9ad44e3b91e810cdb",
+				"bytes": 1929780,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1921238,
+			"sha256": "146bd4e8143b01d59cb3c99f076e98ad007cc020fbbe374644d8c788c40704f4"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 255530,
+			"sha256": "b1290e0cc99ec179561269a52ae5690f138e02f52adb573a219663a12e9b747c"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 20996,
+			"sha256": "350992c28a673a00b7c8f7ac780a4ecc9047065d5124c1e1a9133d63420a5512"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3140,
+			"sha256": "2975c043ac172be289f59b7129d1037475b2f5e587ee0d8c6dccc6e469e52fc9"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "04ed841c8edb9cb7f4061ddfc0e7f22aea1c3a579204bcddc756ecc683d52651"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "8f6121b6ed25e7d39daf7deb1c8a7dc4494abd25bfc845f0420759357ece2534"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1100,
+			"sha256": "48c25b8bf8c0b39af303845df70896399a1d56a017e0c6534c62b587c397c9d1"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1929780,
+			"sha256": "5a28a92385ed890a0c7dba8cce710ea06a51c1eafbed50e9ad44e3b91e810cdb"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 299496,
+			"sha256": "318b0059f4c424b17038c5d1ad1feb2f12df36f004f8e306bce4a5aecb33a458"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 19734,
+			"sha256": "37b088e22b89031afb4a4934abc32458d9af71dabc64e4b12b8494243f32ce43"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3176,
+			"sha256": "403943ae433213397d0e001808d3e4dde9e8e79b18cbba370953b38e6f481c91"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e53f0018ec3d0fb6857f6bd7b3fcdeac41e7d3666bbfe93a4eb434e6916ec7d5"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "283db40e1085ae3dea47486093925afe79a9bc9bc98b55ad72c35e35aa249c65"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1100,
+			"sha256": "d6fa9e1ac158c8e8bcbd732edbc2a6ca8962260ac96326faa71c3da09a81fefe"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5432,
+			"sha256": "4fa66d0b83de48a6e9fffb18e340cd370baf80759659a5e2b0fc617176b8ad99"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1166,
+			"sha256": "8f230014384a3aff6ac5261c1475bc98b03a185f9bb61561f52c0f6b81cee8f3"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1764,
+			"sha256": "a7c77fdd2c42868985f4b22c8bc6249f7896221900652e240acc8c06faaaff46"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2659,
+			"sha256": "f18ae0580d2d841807dad733bfb5d08f93ffc373f24732cf3fa30e66b9090ede"
+		},
+		{
+			"path": "/textures/signoff-now/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3553,
+			"sha256": "392300a1c6b2e0904930d62ee7ce9d02ebde23d90c8bab24202ee5ba322715d0"
+		}
+	]
+}

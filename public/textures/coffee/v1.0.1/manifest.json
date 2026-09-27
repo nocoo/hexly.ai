@@ -1,0 +1,210 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "coffee",
+	"version": "1.0.1",
+	"root": "/textures/coffee/v1.0.1",
+	"canonical": "https://hexly.ai/projects/coffee#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/coffee/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Porcelain turning field",
+			"zh": "瓷作旋纹"
+		},
+		"description": {
+			"en": "Porcelain turning arcs and fine nested grooves spread across a softly embossed paper field.",
+			"zh": "陶瓷旋纹与细密弧线铺展于浅浮雕纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+		"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+		"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+		"source": "https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png",
+		"bytes": 4374884,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/coffee/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "dfbbf78b0d15b0d1d08a7668c4d44aa5b948bb0091db43fc35a90a913149b428"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "30fc2473-1008-4267-a165-c809820c99f5",
+			"source": "artwork/brands/coffee/texture-studies/2026-09-27-flare-coverage-01/light",
+			"request": "/textures/coffee/v1.0.1/source-light-request.json",
+			"response": "/textures/coffee/v1.0.1/source-light-response.json",
+			"prompt": "/textures/coffee/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/coffee/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/coffee/v1.0.1/texture-light.png",
+				"sha256": "466d101bb6ad8b84ed30f005259da088f241796176686d9e276a4b136776a2b2",
+				"bytes": 1920722,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52d17546-ef54-49e7-a687-445e268e48f8",
+			"source": "artwork/brands/coffee/texture-studies/2026-09-27-flare-coverage-01/dark",
+			"request": "/textures/coffee/v1.0.1/source-dark-request.json",
+			"response": "/textures/coffee/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/coffee/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/coffee/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/coffee/v1.0.1/texture-dark.png",
+				"sha256": "94d59d161c06e5b2430008bab89fd820af5c118844a71fa687f695235c34ef3e",
+				"bytes": 1967509,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/coffee/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1920722,
+			"sha256": "466d101bb6ad8b84ed30f005259da088f241796176686d9e276a4b136776a2b2"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 288288,
+			"sha256": "64fd8857b3280a18e25c449d32e3b8a575ed5886b0bb8b1bba46141d13cc82bf"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 19072,
+			"sha256": "84d525063e7553f16e0352192fbadd3149f0c558799b8181f651420c8e43fcfa"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3232,
+			"sha256": "50c578d4d6742da7a0a7c6ad8e74f577037d9157c8a57afd7d45fef6bb9e2b72"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "3f60372fc6c954ffc17d24218903d97c4497df6822c1a58fde38fd613c1f9a7f"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d51d45282803702f760144056f457c703112f56566734ed969fbeb5e9f7ffaf3"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1382,
+			"sha256": "a22be9b0420de91703dfb4369747eba66fa9c8d11af91e5dc01bc534a6942d49"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1967509,
+			"sha256": "94d59d161c06e5b2430008bab89fd820af5c118844a71fa687f695235c34ef3e"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 292272,
+			"sha256": "bb8dfb2ea82eb0e2dadd510c68edb9477bd2515fbe4862259905c40a26f3b734"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 15958,
+			"sha256": "d157cbb28770488f526ed749e8d7b25731a20268de5e310890ccfde6e5b8d5c3"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3268,
+			"sha256": "d45c882cf6a49da953a5916c8d22928319681cadf7cdeac52bdf270cf5dc0041"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "299bc525e49fc86eeb548ff969d9aab8febdc0748beefe0f4d35a6d225e934e2"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "9d75357efb5f1a69fe3623ff2b27c4412fc5f7b4a86c79a8a91a9b325109f678"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1382,
+			"sha256": "ba782bdccc7b6a41f567674f3af8c2c953b8aec11eebf5dbde9f8b96fadcebcf"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5455,
+			"sha256": "079487dc029d7047f1d9de099123df01fce009f65955ce763866854744ee5e32"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1308,
+			"sha256": "8e4cec320b425fa9c9cfc45d4a065341f4d3adecfe1ad444874be8a213bc554c"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "7e5026294f8f7dd9e0e78c3bec7839462557527b1c4835c132f7eb50138d583c"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2532,
+			"sha256": "cccf1f3a3c0b6d4bb03a4cee17247d62097c66fcb1491c91b3f3f54cd2bed7bc"
+		},
+		{
+			"path": "/textures/coffee/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3477,
+			"sha256": "d7963b254de6ec303922bfb4c94a183dfebacfae05123de4ebbce659d2e3600b"
+		}
+	]
+}

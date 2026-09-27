@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "showtime",
+	"version": "1.0.1",
+	"root": "/textures/showtime/v1.0.1",
+	"canonical": "https://hexly.ai/projects/showtime#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/showtime/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Satin film-cue grain", "zh": "片门压痕" },
+		"description": {
+			"en": "Satin film grain, diagonal cue ridges and paired perforation impressions flow across the paper.",
+			"zh": "缎面胶片肌理、斜向标记压纹与成对齿孔痕迹铺展于纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+		"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+		"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+		"source": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
+		"bytes": 3865252,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/showtime/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "86ee82731567d382e5e625ac1ef09b99e96f8acd4fd28241573a22cd8b0c84d8"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "132fedfc-5a00-423b-aa2f-61b22961606c",
+			"source": "artwork/brands/showtime/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/showtime/v1.0.1/source-light-request.json",
+			"response": "/textures/showtime/v1.0.1/source-light-response.json",
+			"prompt": "/textures/showtime/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/showtime/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/showtime/v1.0.1/texture-light.png",
+				"sha256": "856ce001963f22ff6359b09cefec32122752241352abf428f93f4322376dcafa",
+				"bytes": 1914089,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "049bed66-dad4-4f12-859e-9bb276298563",
+			"source": "artwork/brands/showtime/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/showtime/v1.0.1/source-dark-request.json",
+			"response": "/textures/showtime/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/showtime/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/showtime/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/showtime/v1.0.1/texture-dark.png",
+				"sha256": "547fab3163e462d3d0aa3cdb63f2af8b0fb633d89f3adae566d6d5de8debfacc",
+				"bytes": 1944909,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/showtime/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1914089,
+			"sha256": "856ce001963f22ff6359b09cefec32122752241352abf428f93f4322376dcafa"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 275838,
+			"sha256": "7ff2e654c32584be3a2ec0522fb202cb0c6af6544d801c78097724978dccb6c9"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 15448,
+			"sha256": "1f33f53a9440727b009e9e6359035977d6373f8398aaee10f48cce9be09c2872"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3133,
+			"sha256": "305571a9ae7b63244cb8dabe2656b9daddb151bf3c1c180d15ff82be940b384d"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "d665f95ed0ace6e32d7187e7763b2961d197bba1d17e8b77450c2a68ce236eaf"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "8f429200f0ec5b1942bd830bb43e524d25c44bcddad872790e88d30c16e7482c"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1111,
+			"sha256": "282f7f1efbac7b4734090b25309964a17b66fa59d396f184ca0ce9bc1d12edfe"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1944909,
+			"sha256": "547fab3163e462d3d0aa3cdb63f2af8b0fb633d89f3adae566d6d5de8debfacc"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 299462,
+			"sha256": "7a964b11bf2663afab7bdc7f91080bf6f3bf51cc0a4bf7ae077b87c807649548"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13008,
+			"sha256": "1bf9b54c7b9ab601b994291a3c1c4ab4a48a36a3c8bccc6599e6759122bdac59"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3169,
+			"sha256": "787eae372255b7b8111efbf358db2e296415f2fc8d6005ced14d880ac5f21148"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "1931037dd88343571ca904454483c8a76e9fba685bbd4f6815d68f5e9772a0f3"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c0eb8f6300a0aae4dc9ffa5f48ceec306336a1a72a635bfb35846f631ad3bea0"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1111,
+			"sha256": "9bcebc91ad94a63c1b4dd212afa9bbb98b32d6cf39ffde6db2ee3197ea7e9e7f"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5552,
+			"sha256": "bbec017e6051b469887ffe6f70c0d78daacd945be58b051db5c520b14f96a2e6"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1316,
+			"sha256": "52a18e0871966b147356d48f2ac70153300c52994e0a810e5ed9debd348424cd"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "d78c127ff2f9bcdb384dcd20dcf39dc9df422cb88f132ac46dc4ef7784f2c190"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2660,
+			"sha256": "b88b48c42721897ee7816a379b52794a1da104e96440d10d7b0257ec43484f1e"
+		},
+		{
+			"path": "/textures/showtime/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3524,
+			"sha256": "8dea0ccd3a35148fef7a8ce5f98c06db75d3ef5ed3b4dbd27860cfbbbfef16e3"
+		}
+	]
+}

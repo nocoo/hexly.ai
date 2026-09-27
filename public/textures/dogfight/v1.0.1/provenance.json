@@ -1,0 +1,118 @@
+{
+	"project": "dogfight",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Brushed flight-panel grain", "zh": "掠翼压纹" },
+		"motif": "A distributed field of tapered chamfered machining traces, softly interlocking seam channels and closely nested brushed-alloy furrows. Vary their banking directions and widths across the paper. Each broad face carries coherent fine directional scoring. No detached panels, metal plates, aircraft silhouette, rivet diagram or literal machine.",
+		"description": {
+			"en": "Brushed machining grain and tapered seam impressions recall the craft of an aircraft surface.",
+			"zh": "拉丝加工纹与收束接缝压痕呼应飞机表面的工艺。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/dogfight.json",
+		"purpose": {
+			"en": "Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.",
+			"zh": "在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。"
+		},
+		"inspectedRevision": "b5ab075a963a78516aaa351d6ca0178c64994729"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+		"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+		"rgbaSha256": "d38c25f33fdb61ccca5e59c92e846e72b5cf06b3f66eea2008393f6fd3ac0064",
+		"source": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+		"bytes": 2743288,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dogfight/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "406b093c-fa2b-4ac7-9be9-d5e473631c2e",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/dogfight/v1.0.1/source-light-request.json",
+			"response": "/textures/dogfight/v1.0.1/source-light-response.json",
+			"prompt": "/textures/dogfight/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.1/texture-light.png",
+				"sha256": "32a9243dae95e8acbed7e9b07506b33f54a8740f983ff9e6ca78bd8d29fe5f8b",
+				"bytes": 1955924,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6c8f9a27-e4d0-4059-8b0b-961d218f0f8e",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/dogfight/v1.0.1/source-dark-request.json",
+			"response": "/textures/dogfight/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/dogfight/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.1/texture-dark.png",
+				"sha256": "f7b7080f79ac366b4672237a880dc3a9fecc4197e7bdff94ffe4c6898a74175f",
+				"bytes": 1894452,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.42
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.435016928780494,
+		"darkMinimum": 4.724974226037514,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:26:06.781Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

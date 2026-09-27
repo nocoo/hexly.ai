@@ -287,17 +287,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/geekhub/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/geekhub/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Reading cloth", "zh": "阅读书衣" },
+		"name": {
+			"en": "Book-cloth field",
+			"zh": "书布褶纹"
+		},
 		"description": {
-			"en": "Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.",
-			"zh": "亚麻书衣与压纹纸带交错，分栏折线和少量装订线承接阅读、收藏与再整理。"
+			"en": "Fine book-cloth grain and gently curved binding folds flow across the paper surface.",
+			"zh": "细腻书布纤维与柔和装订褶纹铺满纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.37
+		"surfaceOpacity": 0.45
 	}
 }

@@ -1,0 +1,118 @@
+{
+	"project": "geekhub",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Book-cloth field", "zh": "书布褶纹" },
+		"motif": "A flowing field of fine book-cloth weave, softly undulating binding-gutter folds and close parallel compressed page-edge ridges. Interweave several shallow broad curved fold families of varied orientation with rich textile micrograin throughout their faces. This is a cloth-and-paper craft impression in one flat substrate. No book, newspaper, printed letters, detached pages, separate ribbons, draped cloth objects or deep folds.",
+		"description": {
+			"en": "Fine book-cloth grain and gently curved binding folds flow across the paper surface.",
+			"zh": "细腻书布纤维与柔和装订褶纹铺满纸面。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/geekhub.json",
+		"purpose": {
+			"en": "Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.",
+			"zh": "集中阅读和整理 RSS 订阅，按需生成中文摘要与翻译。"
+		},
+		"inspectedRevision": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+		"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+		"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+		"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+		"bytes": 4053576,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/geekhub/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "cb5b0912-9b09-4ebb-b654-27dff43aac28",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01/light",
+			"request": "/textures/geekhub/v1.0.1/source-light-request.json",
+			"response": "/textures/geekhub/v1.0.1/source-light-response.json",
+			"prompt": "/textures/geekhub/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.1/texture-light.png",
+				"sha256": "d202d7df3b0168b7680030dda341c1e7ce62da5de12e6643de56ae0aa77664a9",
+				"bytes": 2034275,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8d4f3fdd-6e38-428c-8c39-5c36b6da31e7",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01/dark",
+			"request": "/textures/geekhub/v1.0.1/source-dark-request.json",
+			"response": "/textures/geekhub/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/geekhub/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.1/texture-dark.png",
+				"sha256": "7f7060e9eef4195b3ef1f0be19cfd86c6217a7fcc49ed6b2306560fb5f7ea955",
+				"bytes": 1966746,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.753002169974038,
+		"darkMinimum": 5.396154310285983,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:21:38.764Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

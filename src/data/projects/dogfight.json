@@ -283,17 +283,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/dogfight/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/dogfight/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Banked alloy", "zh": "倾斜合金" },
+		"name": {
+			"en": "Brushed flight-panel grain",
+			"zh": "掠翼压纹"
+		},
 		"description": {
-			"en": "Diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain.",
-			"zh": "斜向金属拼缝、少量齐平铆点与细腻拉丝呼应桌面战机模型的转弯，是材质联想而非真实飞机图纸。"
+			"en": "Brushed machining grain and tapered seam impressions recall the craft of an aircraft surface.",
+			"zh": "拉丝加工纹与收束接缝压痕呼应飞机表面的工艺。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.32
+		"surfaceOpacity": 0.42
 	}
 }

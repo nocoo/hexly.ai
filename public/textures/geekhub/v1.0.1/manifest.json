@@ -1,0 +1,210 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "geekhub",
+	"version": "1.0.1",
+	"root": "/textures/geekhub/v1.0.1",
+	"canonical": "https://hexly.ai/projects/geekhub#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/geekhub/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Book-cloth field",
+			"zh": "书布褶纹"
+		},
+		"description": {
+			"en": "Fine book-cloth grain and gently curved binding folds flow across the paper surface.",
+			"zh": "细腻书布纤维与柔和装订褶纹铺满纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+		"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+		"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+		"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+		"bytes": 4053576,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/geekhub/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "cb5b0912-9b09-4ebb-b654-27dff43aac28",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01/light",
+			"request": "/textures/geekhub/v1.0.1/source-light-request.json",
+			"response": "/textures/geekhub/v1.0.1/source-light-response.json",
+			"prompt": "/textures/geekhub/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.1/texture-light.png",
+				"sha256": "d202d7df3b0168b7680030dda341c1e7ce62da5de12e6643de56ae0aa77664a9",
+				"bytes": 2034275,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8d4f3fdd-6e38-428c-8c39-5c36b6da31e7",
+			"source": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01/dark",
+			"request": "/textures/geekhub/v1.0.1/source-dark-request.json",
+			"response": "/textures/geekhub/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/geekhub/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/geekhub/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/geekhub/v1.0.1/texture-dark.png",
+				"sha256": "7f7060e9eef4195b3ef1f0be19cfd86c6217a7fcc49ed6b2306560fb5f7ea955",
+				"bytes": 1966746,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2034275,
+			"sha256": "d202d7df3b0168b7680030dda341c1e7ce62da5de12e6643de56ae0aa77664a9"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 333824,
+			"sha256": "a520972e02e247d8665277f0d269b9b5e92ef84203f6d8e4093e49bd5e4cd308"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 23246,
+			"sha256": "84133122b7dd354bac281f0c65af44ee8cf03e3e96ce9915cd550373ec14479d"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3227,
+			"sha256": "9082e774eeaa156c02f7d8e4e95427e0a826e140414c2f83b14ee21ef01f47fe"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "aba42270cf41653fc5f441cd6599c201c8c9866109ca28f97ac895853e94f8d7"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "cca731614916ff3b25cb6604de73da358da2b0533925d0e9be89ef40f0e8671a"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1543,
+			"sha256": "f763a81cbaed133f6b90fed30ef9bca7f6b4051983a8261ea3d13096bc427fa5"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1966746,
+			"sha256": "7f7060e9eef4195b3ef1f0be19cfd86c6217a7fcc49ed6b2306560fb5f7ea955"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 331076,
+			"sha256": "22c78fab9ed4b7ffe8f32bc125eb28d749fdfef911939251aef1a54b1cdfacac"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16766,
+			"sha256": "eaaa4e553aa4abf50ae7f7c03ab74bd3e4b7e7b71fc66da071cd6c37952707f5"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3263,
+			"sha256": "9ab629a30bd23ba7f7030dbb8d6515b564832bd62002cdfa911e06133028b6c6"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "9ff74abd3c74a8a5bf2139981a1e21adaded485c26505ae3893bd3b754ba7194"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "2ee53a760370218bf9503f9374964b4cd1de035bc19c95ce7420b72ff3e5ea3d"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1543,
+			"sha256": "ad8b9357bc3f7e9edb3f00e059cbd50061a87f006e8c8ec066cfd7d238d05f9f"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5222,
+			"sha256": "b08b37e55daa972b3edc7235735861bc9128d27198ba1b53131a9a3a9cff77fa"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1167,
+			"sha256": "a4c1d0b5782d3c33515a17b2af66dea31eb52a006a59d2aa86492b34b8e9625d"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "f23c9d52f003d3c66f47f0ed4e766cb7e8a2e746300cb0f2293746e3a78f128f"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2522,
+			"sha256": "d9922e094a13cf0ef3c60804dd02c3a4b95635be62728440467c386cc732e85e"
+		},
+		{
+			"path": "/textures/geekhub/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3463,
+			"sha256": "897f7b871c1b46c02f4795e51f2e6a2e8f0dbc998693660b215ce8b5372bb9bc"
+		}
+	]
+}

@@ -324,17 +324,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/infospace/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/infospace/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Dividers with room to move", "zh": "可移动的隔页" },
+		"name": {
+			"en": "Pressed divider grain",
+			"zh": "分格压槽"
+		},
 		"description": {
-			"en": "Dense fine wool felt, shallow offset divider slots, rounded paper-edge steps and alternating unequal rectangular compartments suggested only at the edges.",
-			"zh": "细密羊毛毡上的错位隔板槽与纸边台阶，让可调整的信息分区成为可触摸的工作表面。"
+			"en": "Divider channels and compressed paper fibers form an interwoven field of shallow impressions.",
+			"zh": "分隔槽与压缩纸纤维交织为连续的浅压纹。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.43
+		"surfaceOpacity": 0.45
 	}
 }
