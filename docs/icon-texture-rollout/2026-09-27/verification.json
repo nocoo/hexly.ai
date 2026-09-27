@@ -1,7 +1,7 @@
 {
   "command": "bun run verify",
   "result": "passed",
-  "durationSeconds": 166.9,
+  "durationSeconds": 178.0,
   "unitTests": 450,
   "httpTests": 36,
   "browserTests": 99,
@@ -14,6 +14,7 @@
   "manualProjectThemeChecks": 120,
   "manualLayoutChecks": 18,
   "deploymentBytes": 6103831,
-  "evidence": ".video-work/icon-texture-rollout-verify-final.log",
-  "publication": "pending; validation is local, not production proof"
+  "evidence": ".video-work/icon-texture-rollout-verify-release.log",
+  "publication": "pending; validation is local, not production proof",
+  "retirementGuard": "16 focused asset tests and full verification passed"
 }
