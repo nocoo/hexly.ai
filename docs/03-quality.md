@@ -62,6 +62,11 @@ terminate their own servers without reusing an existing server. L2 uses
 `.wrangler/dev` and manual Worker preview uses `.wrangler/preview`. Separate ports
 and separate SQLite persistence directories keep these environments independent.
 
+Test Workers poll the immutable asset fixture trees with a one-second base interval. Native
+watchers exceeded 10,000 open descriptors on macOS after the material-texture
+rollout and prevented Workerd from spawning (`EBADF`). The fixture inventory,
+server ownership and tests stay complete; daily development keeps native watching.
+
 The unified CI job uses Node.js 26.7.0 and Bun 1.4.0. Browser tests retain three workers, zero retries, and the full Chromium build (`channel: "chromium"`). Install `chromium` without `--only-shell`: the shell previously stalled native popup initialization. New-tab checks wait for navigation and `DOMContentLoaded`.
 
 Status browser tests pin the browser clock to the fixed SQLite demo's latest sample. The versioned [Wrangler patch](../patches/README.md) preserves the real disconnected-read and abandoned-client regressions; writes, canceled requests, upgrades and HTTP failures are never replayed. Sanitized diagnostics at `.wrangler/verification.log`, browser traces and screenshots are uploaded on CI failure for seven days.
