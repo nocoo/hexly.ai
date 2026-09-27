@@ -299,17 +299,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/flow/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/flow/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Where a key settles", "zh": "按键落处" },
+		"name": {
+			"en": "Soft keypress grain",
+			"zh": "键程浅印"
+		},
 		"description": {
-			"en": "Soft matte ceramic micrograin, shallow staggered key-well shoulders and thin offset row grooves.",
-			"zh": "哑光瓷釉的微粒、错开的键位肩线与浅槽承接青瓷键帽，留下输入发生时轻轻落下的触感。"
+			"en": "Soft keypress wells and nested switch-guide grooves form an irregular tactile paper field.",
+			"zh": "柔和按压凹纹与细密导向槽在纸面错落分布。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.31
+		"surfaceOpacity": 0.43
 	}
 }

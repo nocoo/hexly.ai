@@ -270,17 +270,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/arena/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/arena/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Two considered turns", "zh": "两步之间" },
+		"name": {
+			"en": "Paired timing-grain field",
+			"zh": "对弈刻痕"
+		},
 		"description": {
-			"en": "Fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions.",
-			"zh": "细织毛毡上的双侧计时弧与浅浅行棋压线，给比较、辩论和决定各留一点从容。"
+			"en": "Interacting timing arcs and subtle walnut grain recall the measured rhythm of a chess clock.",
+			"zh": "交错计时弧纹与细微胡桃木纹呼应棋钟的节奏。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.35
+		"surfaceOpacity": 0.42
 	}
 }

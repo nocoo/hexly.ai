@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "arena",
+	"version": "1.0.1",
+	"root": "/textures/arena/v1.0.1",
+	"canonical": "https://hexly.ai/projects/arena#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/arena/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Paired timing-grain field", "zh": "对弈刻痕" },
+		"description": {
+			"en": "Interacting timing arcs and subtle walnut grain recall the measured rhythm of a chess clock.",
+			"zh": "交错计时弧纹与细微胡桃木纹呼应棋钟的节奏。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/arena-family-2026-09-07-01-01.png",
+		"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59",
+		"rgbaSha256": "21a8929f2a0a71bc2045b167478929e03ac9795d0a8e8246e1a68f3400416123",
+		"source": "https://github.com/nocoo/arena/blob/4a9efd6690942dd1384fd807ba83c73e7c29c202/logo.png",
+		"bytes": 3658121,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/arena/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "e30791a2474fae00edbf71ec0fcdc3deaa2a1711edface01b59dbb3a161ef5ac"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a0603c3e-e968-4921-b836-c1b20bdf610d",
+			"source": "artwork/brands/arena/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/arena/v1.0.1/source-light-request.json",
+			"response": "/textures/arena/v1.0.1/source-light-response.json",
+			"prompt": "/textures/arena/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/arena/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/arena/v1.0.1/texture-light.png",
+				"sha256": "0f259bb8d4626aa7778186a1fee1c2f7460d7d1db771f231357a57e6b9a76079",
+				"bytes": 2019641,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4cdfbca1-278a-475d-aaa9-a2b852d24551",
+			"source": "artwork/brands/arena/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/arena/v1.0.1/source-dark-request.json",
+			"response": "/textures/arena/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/arena/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/arena/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/arena/v1.0.1/texture-dark.png",
+				"sha256": "d5a6f020c9656400fb4e98ca20ffeb5f742ed2d2725cb38de2662fd2f6b9464c",
+				"bytes": 1899482,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/arena/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2019641,
+			"sha256": "0f259bb8d4626aa7778186a1fee1c2f7460d7d1db771f231357a57e6b9a76079"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 300254,
+			"sha256": "e11aa6e5ec051b9552c43876d404d75a72d954ef81018bf1b02b348b44591281"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 20546,
+			"sha256": "7871bc88c9da7ba4ba5d0137999db0e61cb718291bdddad0bba97eb654b98a21"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3170,
+			"sha256": "de4d67e72d440476c274dc6d063e1da0cdb4bd66ef5b819575e3e7c3677ae99d"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e969f9a93f4164901adb9b73b01aa27b0697c1a05031cf575ee71554062cfb36"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "58c727f57b9928058df35b46d6cce729848e2878836b5f700a81b4eb81634c5f"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1139,
+			"sha256": "14aa6fcf52d797b6aec7103740e90fa8fb6aece0863f5ace35e0b527e7c9842a"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1899482,
+			"sha256": "d5a6f020c9656400fb4e98ca20ffeb5f742ed2d2725cb38de2662fd2f6b9464c"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 257860,
+			"sha256": "60151f54edb64a96d7d8d8eadbd12740ba84c0d96124a3604099168a97f323a8"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16162,
+			"sha256": "17ec6d6197f00bc031d2ec72645ba79239d1285df1e4afe2b03baadeeb284ca8"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3206,
+			"sha256": "fdcc993cb7009914103502ed35d8d8cab34352085844c506429c344afb1beadb"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "19cbcfc08f9a16491d4149f370235658f84f454409a8fd26db632688cfea29f5"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "55bb697e8a88be7a7a41fb9da8421e747206920c38dcba99d1b1e10d7e402b72"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1139,
+			"sha256": "81b26062b8f228aa3c78c52bfca422023c8cf6a1b5713874ca76f7dd3f0a5d93"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5308,
+			"sha256": "81c90dfa73294eb580cd8aa63f777e336c0399f59ccb54a7081fc7e27e1411e9"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1169,
+			"sha256": "57ecb1becef3a03bf43e65422606d3f686d84d13e68b405f502eb1fbc2cc553c"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "0e789ec43d4b49146c7d13c1411b9690af553292fdd7aeb96c7a908fca23fc95"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2635,
+			"sha256": "d9f159533516cf82aa0c3289ba4355f6eef70fc5471db438c49dec0f1fd4bc8d"
+		},
+		{
+			"path": "/textures/arena/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3479,
+			"sha256": "972b02d9420d0c8100aa30ccaacb9b584adc1dfd36f355f5f31d69d61d38175b"
+		}
+	]
+}

@@ -1,0 +1,118 @@
+{
+	"project": "dotty",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Satin ceramic grain", "zh": "陶方浅纹" },
+		"motif": "A distributed field of staggered soft-square ceramic compression contours and gently intersecting grout channels. Fine nested bevel ridges and satin-glaze micrograin work the broad faces; nearby tonal values alternate irregularly. Join regions through shallow continuous substrate, not separate tiles. No hard checkerboard, equal regular grid, black-and-white contrast, cube, detached block or bare polygon face.",
+		"description": {
+			"en": "Staggered ceramic contours, satin grain and shallow grout channels form a quiet geometric field.",
+			"zh": "错落陶瓷轮廓、缎面细纹与浅接缝构成柔和几何底纹。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/dotty.json",
+		"purpose": {
+			"en": "Reuse dashboard layouts, controls, and charts to build data interfaces with a cool monochrome visual style.",
+			"zh": "复用看板布局、控件和图表，搭建采用冷色灰阶风格的数据界面。"
+		},
+		"inspectedRevision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+		"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+		"rgbaSha256": "1cb4c2e1444d41d290128e66b8996c913e65bb17023ef6c2105ef4fa9687fa93",
+		"source": "https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png",
+		"bytes": 2227338,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dotty/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "2b8c7cf9e20f2825289632d3af0a9537f2aed9f99e6ba3f0c6023793cc106930"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a44f41b8-91fe-48f3-9a30-623378811b21",
+			"source": "artwork/brands/dotty/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/dotty/v1.0.1/source-light-request.json",
+			"response": "/textures/dotty/v1.0.1/source-light-response.json",
+			"prompt": "/textures/dotty/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/dotty/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dotty/v1.0.1/texture-light.png",
+				"sha256": "1cdee0cd1bb75f612606c0b57b8de2e50476bed0467e4e8c027c29ca5ab16d60",
+				"bytes": 1911940,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6925b495-266d-4769-ba01-6c1d584d4a24",
+			"source": "artwork/brands/dotty/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/dotty/v1.0.1/source-dark-request.json",
+			"response": "/textures/dotty/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/dotty/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/dotty/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dotty/v1.0.1/texture-dark.png",
+				"sha256": "8253279fb3fb2c49c96b5feec3ca785367bb7f736b3db4ef907cc3cbc906b540",
+				"bytes": 1882449,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.540484338254861,
+		"darkMinimum": 4.887104746591177,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:32:17.381Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

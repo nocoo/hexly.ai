@@ -1,0 +1,118 @@
+{
+	"project": "flow",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Soft keypress grain", "zh": "键程浅印" },
+		"motif": "A distributed field of softly dished keypress impressions joined by shallow curved switch-guide channels. Vary rounded-square contours in scale and orientation; closely nested compression ridges and satin ceramic-like tooth cover their broad faces. Make an irregular connected material field rather than rows of identical squares. No keyboard, detached keycaps, tile grid, Chinese characters, letters or printed marks.",
+		"description": {
+			"en": "Soft keypress wells and nested switch-guide grooves form an irregular tactile paper field.",
+			"zh": "柔和按压凹纹与细密导向槽在纸面错落分布。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/flow.json",
+		"purpose": {
+			"en": "Explore language-model Chinese pinyin conversion, text polishing, and chat in a browser using configurable OpenAI-compatible model services.",
+			"zh": "在浏览器中使用可配置的 OpenAI 兼容模型服务，试验中文拼音转换、文本润色和对话。"
+		},
+		"inspectedRevision": "f4a9e9464d64184b793240adff182e08c04997e1"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/flow-family-2026-09-07-01-01.png",
+		"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23",
+		"rgbaSha256": "f82a6e06d0392fa88169a35baf45f734ba12a43f8e60d75d191dabdbd9b83ffb",
+		"source": "https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/logo.png",
+		"bytes": 3201869,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/flow/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5f26106f3d434d7c82041181ee216870a25ea34356458d1b81810c6b6c68818a"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e44e5d11-8292-4278-bd4e-5c94868f41ba",
+			"source": "artwork/brands/flow/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/flow/v1.0.1/source-light-request.json",
+			"response": "/textures/flow/v1.0.1/source-light-response.json",
+			"prompt": "/textures/flow/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/flow/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/flow/v1.0.1/texture-light.png",
+				"sha256": "d99191bf61136dce90a9317f8f7e8aa2870c5271762dcd24f6cd9bab2ed2b303",
+				"bytes": 1888208,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fa290b10-3516-4e18-84fb-471d1da7371b",
+			"source": "artwork/brands/flow/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/flow/v1.0.1/source-dark-request.json",
+			"response": "/textures/flow/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/flow/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/flow/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/flow/v1.0.1/texture-dark.png",
+				"sha256": "7b97c6f39a7ce3e0847b61fad4beef99bb627a44a9eb6a352702a0f1e69b334d",
+				"bytes": 1856945,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.43
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.767389766973832,
+		"darkMinimum": 4.710829140486753,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:30:46.137Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
