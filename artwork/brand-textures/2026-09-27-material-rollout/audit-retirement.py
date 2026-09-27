@@ -8,6 +8,10 @@ base = Path('docs/brand-textures/2026-09-27-material-rollout')
 batch = json.loads((base / 'export-inventory.json').read_text())
 inventory = json.loads(Path('docs/assets/inventory.json').read_text())['files']
 by_source = {file['source']: file for file in inventory}
+receipts = {}
+for line in Path('docs/assets/publication.jsonl').read_text().splitlines():
+    receipt = json.loads(line)
+    receipts[(receipt['key'], receipt['sha256'])] = receipt['verifiedAt']
 keys = {}
 for file in inventory:
     keys.setdefault(file['key'], []).append(file)
@@ -44,7 +48,7 @@ for row in batch['projects']:
                 source = generation['source'] + '/raw.png'
                 assert f"/{row['id']}/texture-studies/" in source
                 add_source(source, 'Raw source of superseded independent texture pack')
-        references = subprocess.run(['rg', '-l', '-F', '--', root, 'src', 'public', 'tests'], text=True, capture_output=True)
+        references = subprocess.run(['rg', '-l', '-F', '--', root, 'src', 'public', 'tests', 'docs/profiles'], text=True, capture_output=True)
         assert references.returncode in (0, 1), references.stderr
         outside = [p for p in references.stdout.splitlines() if not p.startswith(str(directory) + '/')]
         packages.append({'id': row['id'], 'oldRoot': root, 'replacementRoot': row['root'], 'currentReferencesOutsideRetiredPack': outside})
@@ -58,8 +62,10 @@ remote = []
 for key in sorted({row['key'] for row in targets.values() if row['key']}):
     aliases = keys[key]
     outside = [file['source'] for file in aliases if file['source'] not in targets]
-    remote.append({'key': key, 'sha256': aliases[0]['sha256'], 'bytes': aliases[0]['bytes'], 'sourceAliases': [file['source'] for file in aliases], 'remainingAliases': outside, 'sharedReferenceBlocksDeletion': bool(outside)})
+    remote.append({'key': key, 'sha256': aliases[0]['sha256'], 'bytes': aliases[0]['bytes'], 'sourceAliases': [file['source'] for file in aliases], 'remainingAliases': outside, 'sharedReferenceBlocksDeletion': bool(outside), 'lastPublicationReceipt': receipts.get((key, aliases[0]['sha256']))})
 
-result = {'recordedAt': datetime.now(timezone.utc).isoformat(), 'mode': 'read-only retirement inventory; no local or remote deletion', 'authorization': str(base / 'authorization.json'), 'requiredBeforeDeletion': ['Every replacement pack passes exact-byte checks and is published.', 'The live catalogue selects the replacement version and browser/CDN checks pass.', 'Remove old active inventory/routes and document references together; keep tombstone receipts.', 'Recheck the exact key/hash allowlist and all aliases immediately before deletion.', 'Never delete a shared key with a remaining reference or a retained identity-kit dependency.'], 'independentPackages': packages, 'embeddedIdentityKitDependencies': embedded, 'localCandidates': list(targets.values()), 'remoteCandidates': remote, 'summary': {'independentPackages': len(packages), 'localFiles': len(targets), 'localLogicalBytes': sum(t['bytes'] for t in targets.values()), 'remoteKeys': len(remote), 'remoteStoredBytes': sum(r['bytes'] for r in remote), 'sharedKeysBlocked': sum(r['sharedReferenceBlocksDeletion'] for r in remote), 'deletedFiles': 0, 'deletedKeys': 0}}
+result = {'recordedAt': datetime.now(timezone.utc).isoformat(), 'mode': 'read-only retirement inventory; no local or remote deletion', 'authorization': str(base / 'authorization.json'), 'requiredBeforeDeletion': ['Every replacement pack passes exact-byte checks and is published.', 'The live catalogue selects the replacement version and browser/CDN checks pass.', 'Remove old active inventory/routes and document references together; keep tombstone receipts.', 'Recheck the exact key/hash allowlist and all aliases immediately before deletion.', 'Never delete a shared key with a remaining reference or a retained identity-kit dependency.'], 'independentPackages': packages, 'embeddedIdentityKitDependencies': embedded, 'localCandidates': list(targets.values()), 'remoteCandidates': remote, 'summary': {'independentPackages': len(packages), 'localFiles': len(targets), 'localLogicalBytes': sum(t['bytes'] for t in targets.values()), 'remoteKeys': len(remote), 'remoteInventoriedBytes': sum(r['bytes'] for r in remote), 'sharedKeysBlocked': sum(r['sharedReferenceBlocksDeletion'] for r in remote), 'deletedFiles': 0, 'deletedKeys': 0}}
+result['summary']['remoteBytesWithPublicationReceipts'] = sum(r['bytes'] for r in remote if r['lastPublicationReceipt'])
+result['summary']['remoteKeysWithoutPublicationReceipts'] = sum(r['lastPublicationReceipt'] is None for r in remote)
 (base / 'retirement-plan.json').write_text(json.dumps(result, ensure_ascii=False, indent='\t') + '\n')
 print(json.dumps(result['summary']))

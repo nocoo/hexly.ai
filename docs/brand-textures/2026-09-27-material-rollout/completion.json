@@ -1,0 +1,63 @@
+{
+	"recordedAt": "2026-09-27T06:58:12.925684+00:00",
+	"status": "complete local project review; production publication and retirement pending",
+	"verifiedImplementationRevision": "2c57892235d4d2210023a089074217f0983c9f23",
+	"projects": 21,
+	"textures": 42,
+	"reusedOwnerApprovedOriginals": 6,
+	"newDelegatedAcceptedOriginals": 36,
+	"validation": {
+		"command": "bun run verify",
+		"exitCode": 0,
+		"seconds": 171.9,
+		"budgetSeconds": 600,
+		"unitTests": 447,
+		"httpTests": 36,
+		"browserTests": 91,
+		"coveragePercent": {
+			"statements": 99.53,
+			"branches": 98.48,
+			"functions": 100,
+			"lines": 100
+		},
+		"logPath": ".video-work/material-rollout/verify-final.log",
+		"logSha256": "12b62b365b81d490531a7f0429338f932a9b12383da0f4477f54e81eaacd8fc4",
+		"localReviewCases": 126,
+		"localReviewRecords": [
+			{
+				"path": "docs/brand-textures/2026-09-27-material-rollout/browser-basalt-echo-deca-runner-ipsafe-dreamro-pi-agent-policy-diorama-journey-zeppelin.json",
+				"cases": 54,
+				"sha256": "c46c0a5f8cee563b436d7cd25991f78fc36c41c0b25127060646c0581b2cabfe"
+			},
+			{
+				"path": "docs/brand-textures/2026-09-27-material-rollout/browser-coffee-matrix-geekhub-dogfight-pew-game-showtime-infospace.json",
+				"cases": 42,
+				"sha256": "ffcd0525de239aacca52b14907ef578e6f6c02bfe0d4a5ed6f2f7db79cbdedbb"
+			},
+			{
+				"path": "docs/brand-textures/2026-09-27-material-rollout/browser-signoff-now-unseal-flow-arena-dotty.json",
+				"cases": 30,
+				"sha256": "9c8c1c99eb776a12ae26a7b7b1a14108e9e34789396482a43085a8d380b416de"
+			}
+		]
+	},
+	"recoveredLaunchFailure": {
+		"error": "EBADF",
+		"firstFailingProcess": "workerd",
+		"openDescriptors": 10363,
+		"activeNativeFileWatchers": 11307,
+		"fixRevision": "2c578922",
+		"fix": "Test-only Chokidar polling with a one-second base interval; no fixtures or tests removed."
+	},
+	"originalIdentitiesPreserved": true,
+	"nativePngBytesPreserved": true,
+	"externalActions": {
+		"r2Uploads": 0,
+		"gitPushes": 0,
+		"siteReleases": 0,
+		"deletedLocalResources": 0,
+		"deletedRemoteKeys": 0
+	},
+	"retirementPlan": "docs/brand-textures/2026-09-27-material-rollout/retirement-plan.json",
+	"retirementCondition": "Publish and verify every replacement, then verify live catalogue selection and recheck all exact key/hash aliases before deletion."
+}
