@@ -28,7 +28,7 @@ const files = readInventory().files.filter(
 		].some((prefix) => file.source.startsWith(prefix)),
 );
 
-await hydrate(files, 8);
+await hydrate(files, 16);
 for (const file of files) {
 	const bytes = await readFile(file.source);
 	if (bytes.length !== file.bytes || digest(bytes) !== file.sha256)
