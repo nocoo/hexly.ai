@@ -1,0 +1,26 @@
+{
+	"recordedAt": "2026-09-27T06:00:50.108519+00:00",
+	"reason": "Matrix attempt 2 again exhausted five SSLEOFError reconnects per theme inside connect-before-http-request. Both previous attempt pairs remain unchanged. Plain direct and local-proxy unauthenticated probes reached HTTP; select direct transport for the missing pair.",
+	"attempt": 3,
+	"projects": [
+		"matrix"
+	],
+	"promptChanged": false,
+	"successfulCoffeeRepeated": false,
+	"geekhub": "Not yet requested; previous recovery command stopped before its invocation.",
+	"connectivityCheck": {
+		"methods": [
+			"Unauthenticated GET models",
+			"Unauthenticated GET images/generations",
+			"Unauthenticated POST images/generations"
+		],
+		"httpStatus": [
+			401,
+			404,
+			401
+		],
+		"route": "Direct via NO_PROXY=*; TLS validation enabled",
+		"credentialsPrinted": false
+	},
+	"previousUnknownOutcomesPreserved": true
+}
