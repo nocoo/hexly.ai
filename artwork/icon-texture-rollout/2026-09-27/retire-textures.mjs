@@ -32,6 +32,11 @@ const browser = JSON.parse(
 	await readFile(`${base}/browser-production.json`, "utf8"),
 );
 assert.equal(browser.records.length, 120);
+assert.equal(browser.origin, "https://hexly.ai");
+const downloads = JSON.parse(
+	await readFile(`${base}/production-downloads.json`, "utf8"),
+);
+assert.equal(downloads.records.length, 9);
 const live = await (
 	await fetch("https://hexly.ai/api/live", { cache: "no-store" })
 ).json();
