@@ -10,6 +10,7 @@ import urllib.error
 
 
 parser = argparse.ArgumentParser()
+parser.add_argument('--inventory', type=Path, default=Path('docs/brand-textures/2026-09-27-materials/inventory.json'))
 parser.add_argument('--attempt', type=int, required=True)
 parser.add_argument('--project', action='append')
 parser.add_argument('--theme', choices=['light', 'dark'])
@@ -18,7 +19,7 @@ parser.add_argument('--probe', action='store_true')
 args = parser.parse_args()
 assert args.attempt > 0
 runner = runpy.run_path('.agents/skills/hexly-brand-textures/scripts/generate.py')
-batch_path = Path('docs/brand-textures/2026-09-27-materials/inventory.json')
+batch_path = args.inventory
 batch = json.loads(batch_path.read_text())
 native_connection = http.client.HTTPSConnection
 connection_log = Path('.video-work/material-textures/connection-probe.json')

@@ -1,0 +1,390 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-27T05:51:42.563898+00:00",
+	"scope": "Three full-square material coverage experiments, six light/dark originals.",
+	"ownerFeedback": "The material textures only cover the right side. Expand coverage to inhabit the square like the botanical series. Test three projects and wait for owner confirmation before rollout.",
+	"authorization": {
+		"generation": true,
+		"projectIds": [
+			"coffee",
+			"matrix",
+			"geekhub"
+		],
+		"ownerAcceptance": "pending",
+		"rollout": false,
+		"catalogueIntegration": false,
+		"iconReplacement": false,
+		"publication": false
+	},
+	"model": "gpt-image-2.5-flare",
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"coverageTarget": {
+		"envelopeWidthAndHeight": "90-95%",
+		"workedArea": "65-75%",
+		"distribution": "All four quadrants and middle; comparable left/right weight; scattered breathing spaces, no empty half."
+	},
+	"references": {
+		"light": "/textures/frogie/v1.0.0/texture-light.webp",
+		"dark": "/textures/raven/v1.0.1/texture-dark.webp",
+		"use": "Palette, microdetail and relief references; latest owner instruction controls full-square coverage."
+	},
+	"projects": [
+		{
+			"id": "coffee",
+			"title": "Coffee",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/coffee/texture-studies/2026-09-27-flare-coverage-01",
+			"version": "1.0.1",
+			"root": "/textures/coffee/v1.0.1",
+			"sourceMetadataSha256": "6d3ecf41aecb7af6156b7dae81c5afcd9dd6bbf5dd923b84d1aadd1a5f27487d",
+			"subject": "Peach ceramic cup, latte leaf, saucer and brass teaspoon",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+				"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+				"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+				"source": "https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png",
+				"bytes": 4374884,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/coffee/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "dfbbf78b0d15b0d1d08a7668c4d44aa5b948bb0091db43fc35a90a913149b428"
+			},
+			"previousTexture": {
+				"root": "/textures/coffee/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Cupping paper and glaze",
+					"zh": "\u676f\u6d4b\u7eb8\u4e0e\u91c9"
+				},
+				"description": {
+					"en": "Fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size.",
+					"zh": "\u676f\u6d4b\u7eb8\u7ea4\u7ef4\u3001\u7ec6\u74f7\u91c9\u4e0e\u4e24\u9053\u4e0d\u5b8c\u6574\u7684\u6d45\u73af\u75d5\u547c\u5e94\u54c1\u996e\u8fc7\u7a0b\uff0c\u5496\u5561\u676f\u539f\u6807\u4ecd\u662f\u552f\u4e00\u4e3b\u4f53\u3002"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.41
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Porcelain turning rings",
+					"zh": "\u74f7\u4f5c\u65cb\u7eb9"
+				},
+				"motif": "Five broad open porcelain throwing-ring arcs with rounded shallow lips, a few quiet glaze-ripple bands and subtle pressed tasting-paper fibers. Suggest ceramic cup and saucer craft through tactile traces. No cup, spoon, saucer object, coffee beans, spilled liquid, stains or latte ornament.",
+				"description": {
+					"en": "Five broad open porcelain throwing-ring arcs with rounded shallow lips, a few quiet glaze-ripple bands and subtle pressed tasting-paper fibers. Suggest ceramic cup and saucer craft through tactile traces. No cup, spoon, saucer object, coffee beans, spilled liquid, stains or latte ornament.",
+					"zh": "\u74f7\u4f5c\u65cb\u7eb9\uff1a\u4e3b\u4f53\u76f8\u5173\u7684\u52a0\u5de5\u75d5\u8ff9\u5316\u4e3a\u7eb8\u9762\u6d45\u6d6e\u96d5\uff0c\u7edf\u4e00\u53f3\u4fa7\u5360\u6bd4\u3001\u7ec6\u8282\u5c3a\u5ea6\u548c\u6d45\u6df1\u8272\u8c03\u3002"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/coffee.json",
+				"purpose": {
+					"en": "Explore coffee through an original interactive flavor wheel, compare origins and brewing recipes, and record tasting notes locally. Bilingual learning paths and a slow exhibition mode support sensory practice and shop displays.",
+					"zh": "\u901a\u8fc7\u539f\u521b\u4ea4\u4e92\u98ce\u5473\u8f6e\u8ba4\u8bc6\u5496\u5561\uff0c\u5bf9\u7167\u4ea7\u5730\u4e0e\u51b2\u716e\u914d\u65b9\uff0c\u5e76\u5728\u672c\u5730\u8bb0\u5f55\u54c1\u9274\u624b\u8bb0\u3002\u53cc\u8bed\u5b66\u4e60\u8def\u5f84\u4e0e\u6162\u901f\u5c55\u793a\u6a21\u5f0f\u652f\u6301\u611f\u5b98\u7ec3\u4e60\u548c\u5e97\u94fa\u5927\u5c4f\u3002"
+				},
+				"inspectedRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09"
+			},
+			"experiment": {
+				"name": "Porcelain turning field",
+				"category": "Curved material",
+				"motif": "A flowing field of open porcelain throwing-ring arcs, soft glaze-ripple bands and finely nested circular turning grooves. Their changing radii and directions suggest ceramic craft through shallow surface impressions. Delicate pressed paper fibers occupy the broad spaces between grooves. Use many overlapping incomplete arc families with varied scale and orientation, no complete cups, saucers, beans, stains or separate objects."
+			},
+			"previousCandidates": {
+				"light": {
+					"id": "coffee",
+					"title": "Coffee",
+					"theme": "light",
+					"run": "artwork/brands/coffee/texture-studies/2026-09-27-flare-materials-01/light-attempt-02",
+					"sha256": "838dc05b36c71fd407309870145aac756a548167f44a309c8750b5af4b7235a6",
+					"status": "pending",
+					"agentAssessment": {
+						"reviewedAt": "2026-09-27T01:52:31.159534+00:00",
+						"readyForOwnerReview": true,
+						"fullCanvas": true,
+						"inspection": "Full-canvas same-size JPEG copies viewed together at 300 pixels; original PNG unchanged.",
+						"observations": [
+							"Fine nested porcelain-turning grooves and soft glaze-like lips form a continuous paper relief without cups, beans, stains or separate saucers.",
+							"Both themes preserve an expansive quiet field. Open turning rings continue into the right boundary and the dark inner lips have stronger shadows; owner review should compare their scale and edge extent."
+						]
+					}
+				},
+				"dark": {
+					"id": "coffee",
+					"title": "Coffee",
+					"theme": "dark",
+					"run": "artwork/brands/coffee/texture-studies/2026-09-27-flare-materials-01/dark-attempt-02",
+					"sha256": "c90d548b4610487c9a04155d24d035ad72f5811e3f0e0aef69094d06d5d7efee",
+					"status": "pending",
+					"agentAssessment": {
+						"reviewedAt": "2026-09-27T01:52:31.160234+00:00",
+						"readyForOwnerReview": true,
+						"fullCanvas": true,
+						"inspection": "Full-canvas same-size JPEG copies viewed together at 300 pixels; original PNG unchanged.",
+						"observations": [
+							"Fine nested porcelain-turning grooves and soft glaze-like lips form a continuous paper relief without cups, beans, stains or separate saucers.",
+							"Both themes preserve an expansive quiet field. Open turning rings continue into the right boundary and the dark inner lips have stronger shadows; owner review should compare their scale and edge extent."
+						]
+					}
+				}
+			},
+			"prompts": {
+				"light": {
+					"path": "artwork/brands/coffee/texture-studies/2026-09-27-flare-coverage-01/light/prompt.txt",
+					"sha256": "50c578d4d6742da7a0a7c6ad8e74f577037d9157c8a57afd7d45fef6bb9e2b72"
+				},
+				"dark": {
+					"path": "artwork/brands/coffee/texture-studies/2026-09-27-flare-coverage-01/dark/prompt.txt",
+					"sha256": "d45c882cf6a49da953a5916c8d22928319681cadf7cdeac52bdf270cf5dc0041"
+				}
+			}
+		},
+		{
+			"id": "matrix",
+			"title": "Matrix",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/matrix/texture-studies/2026-09-27-flare-coverage-01",
+			"version": "1.0.1",
+			"root": "/textures/matrix/v1.0.1",
+			"sourceMetadataSha256": "a5dddc1d2ff0024911a6f596218ddfb67d1cedb8977885a70837916bbf22ae04",
+			"subject": "Floating black-and-green layered circuit deck",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+				"rgbaSha256": "7b7d7bab3ed75e93988b84ae0e29ee63dade603733294c1f27b45bc4bf2f998d",
+				"source": "https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png",
+				"bytes": 3271736,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/matrix/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "76a5a9a10d1b3d611d84e3619dea129a841d3bedf4087cd4f7e905404b589c38"
+			},
+			"previousTexture": {
+				"root": "/textures/matrix/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Quiet routing",
+					"zh": "\u5b89\u9759\u7684\u5e03\u7ebf"
+				},
+				"description": {
+					"en": "Shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones.",
+					"zh": "\u590d\u5408\u677f\u4e0a\u7684\u6d45\u523b\u901a\u9053\u3001\u5c0f\u5b54\u4e0e\u9519\u4f4d\u8986\u819c\u533a\u4fdd\u7559\u7535\u8def\u6750\u8d28\u7684\u79e9\u5e8f\uff0c\u907f\u514d\u53d1\u5149\u7ebf\u6761\u538b\u8fc7\u4e3b\u89c6\u89c9\u3002"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.3
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Pressed routing planes",
+					"zh": "\u7535\u8def\u538b\u7eb9"
+				},
+				"motif": "Five broad offset rectilinear relief planes connected by a few substantial right-angle recessed routing channels and small square contact depressions. Echo the layered circuit deck through dimensional machining traces. No circuit-board object, neon lines, glowing components, dense technical schematic or full-canvas grid.",
+				"description": {
+					"en": "Five broad offset rectilinear relief planes connected by a few substantial right-angle recessed routing channels and small square contact depressions. Echo the layered circuit deck through dimensional machining traces. No circuit-board object, neon lines, glowing components, dense technical schematic or full-canvas grid.",
+					"zh": "\u7535\u8def\u538b\u7eb9\uff1a\u4e3b\u4f53\u76f8\u5173\u7684\u52a0\u5de5\u75d5\u8ff9\u5316\u4e3a\u7eb8\u9762\u6d45\u6d6e\u96d5\uff0c\u7edf\u4e00\u53f3\u4fa7\u5360\u6bd4\u3001\u7ec6\u8282\u5c3a\u5ea6\u548c\u6d45\u6df1\u8272\u8c03\u3002"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/matrix.json",
+				"purpose": {
+					"en": "Reuse terminal-inspired controls, charts, and page templates to build green-on-black data dashboards.",
+					"zh": "\u590d\u7528\u7ec8\u7aef\u98ce\u683c\u7684\u63a7\u4ef6\u3001\u56fe\u8868\u548c\u9875\u9762\u6a21\u677f\uff0c\u642d\u5efa\u7eff\u9ed1\u914d\u8272\u7684\u6570\u636e\u770b\u677f\u3002"
+				},
+				"inspectedRevision": "8e6f9add035b35505576f161d95393c0b8b31e07"
+			},
+			"experiment": {
+				"name": "Routing-grain field",
+				"category": "Geometric material",
+				"motif": "A flowing field of shallow rounded right-angle routing channels, finely nested micromilled furrows and occasional tiny square contact depressions. Use branching stepped turns of varied scale and direction, with subtle crosshatching and satin material grain between grooves. Route groups softly interweave across the surface. No disconnected square panels, large empty polygon faces, checkerboard, regular grid, circuit-board object, chips, neon, glowing lines or literal diagram."
+			},
+			"previousCandidates": {
+				"light": {
+					"id": "matrix",
+					"title": "Matrix",
+					"theme": "light",
+					"run": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01/light-attempt-04",
+					"sha256": "8aed0dc97cff050ea8a0f94608846f88ac582e0b897ff06e9b7bccb1dc1332f3",
+					"status": "pending",
+					"agentAssessment": {
+						"reviewedAt": "2026-09-27T02:04:30.689231+00:00",
+						"readyForOwnerReview": true,
+						"fullCanvas": true,
+						"inspection": "Full-canvas same-size JPEG copies viewed together at 300 pixels; original PNG unchanged.",
+						"observations": [
+							"Five substantial routing-grain regions contain dense nested right-angle furrows, rounded bends, small contact wells and quiet tonal body.",
+							"The group restores worked coverage and complete main contours without large empty polygon plates or tiny isolated circuit marks. Both themes use the shared paper palette and calm left field; owner acceptance remains pending."
+						]
+					}
+				},
+				"dark": {
+					"id": "matrix",
+					"title": "Matrix",
+					"theme": "dark",
+					"run": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01/dark-attempt-04",
+					"sha256": "ac4314f3742e2122e388b8da90433dec17ab95547dc89598a08cfc5f5c2a19ec",
+					"status": "pending",
+					"agentAssessment": {
+						"reviewedAt": "2026-09-27T02:04:30.689983+00:00",
+						"readyForOwnerReview": true,
+						"fullCanvas": true,
+						"inspection": "Full-canvas same-size JPEG copies viewed together at 300 pixels; original PNG unchanged.",
+						"observations": [
+							"Five substantial routing-grain regions contain dense nested right-angle furrows, rounded bends, small contact wells and quiet tonal body.",
+							"The group restores worked coverage and complete main contours without large empty polygon plates or tiny isolated circuit marks. Both themes use the shared paper palette and calm left field; owner acceptance remains pending."
+						]
+					}
+				}
+			},
+			"prompts": {
+				"light": {
+					"path": "artwork/brands/matrix/texture-studies/2026-09-27-flare-coverage-01/light/prompt.txt",
+					"sha256": "fce80234dc5cec7eb934095f333d0fcd1a7c375b3074b61a05f2a814d8bf6fa0"
+				},
+				"dark": {
+					"path": "artwork/brands/matrix/texture-studies/2026-09-27-flare-coverage-01/dark/prompt.txt",
+					"sha256": "c6d4c8543f851b7b83988b776eb1179807a0a473fd02f02803aeec164bb5a5f1"
+				}
+			}
+		},
+		{
+			"id": "geekhub",
+			"title": "GeekHub",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01",
+			"version": "1.0.1",
+			"root": "/textures/geekhub/v1.0.1",
+			"sourceMetadataSha256": "755ce0d2ce8b36b4666e192f7467b3b9d14c3e2784b2752dcec1d509aa7abba9",
+			"subject": "A folded newspaper in a forest-green reading folio",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+				"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+				"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+				"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+				"bytes": 4053576,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/geekhub/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+			},
+			"previousTexture": {
+				"root": "/textures/geekhub/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Reading cloth",
+					"zh": "\u9605\u8bfb\u4e66\u8863"
+				},
+				"description": {
+					"en": "Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.",
+					"zh": "\u4e9a\u9ebb\u4e66\u8863\u4e0e\u538b\u7eb9\u7eb8\u5e26\u4ea4\u9519\uff0c\u5206\u680f\u6298\u7ebf\u548c\u5c11\u91cf\u88c5\u8ba2\u7ebf\u627f\u63a5\u9605\u8bfb\u3001\u6536\u85cf\u4e0e\u518d\u6574\u7406\u3002"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.37
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Reading-cloth folds",
+					"zh": "\u4e66\u5e03\u8936\u7eb9"
+				},
+				"motif": "Broad gently folded book-cloth grain bands, three shallow curved binding-gutter channels and short compressed page-edge ridges. The textured region recalls a reading folio and folded newspaper, while remaining one continuous paper surface. No book, newspaper, readable print, separate sheet, folio outline or stitched frame.",
+				"description": {
+					"en": "Broad gently folded book-cloth grain bands, three shallow curved binding-gutter channels and short compressed page-edge ridges. The textured region recalls a reading folio and folded newspaper, while remaining one continuous paper surface. No book, newspaper, readable print, separate sheet, folio outline or stitched frame.",
+					"zh": "\u4e66\u5e03\u8936\u7eb9\uff1a\u4e3b\u4f53\u76f8\u5173\u7684\u52a0\u5de5\u75d5\u8ff9\u5316\u4e3a\u7eb8\u9762\u6d45\u6d6e\u96d5\uff0c\u7edf\u4e00\u53f3\u4fa7\u5360\u6bd4\u3001\u7ec6\u8282\u5c3a\u5ea6\u548c\u6d45\u6df1\u8272\u8c03\u3002"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/geekhub.json",
+				"purpose": {
+					"en": "Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.",
+					"zh": "\u96c6\u4e2d\u9605\u8bfb\u548c\u6574\u7406 RSS \u8ba2\u9605\uff0c\u6309\u9700\u751f\u6210\u4e2d\u6587\u6458\u8981\u4e0e\u7ffb\u8bd1\u3002"
+				},
+				"inspectedRevision": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c"
+			},
+			"experiment": {
+				"name": "Book-cloth field",
+				"category": "Woven material",
+				"motif": "A flowing field of fine book-cloth weave, softly undulating binding-gutter folds and close parallel compressed page-edge ridges. Interweave several shallow broad curved fold families of varied orientation with rich textile micrograin throughout their faces. This is a cloth-and-paper craft impression in one flat substrate. No book, newspaper, printed letters, detached pages, separate ribbons, draped cloth objects or deep folds."
+			},
+			"previousCandidates": {
+				"light": {
+					"id": "geekhub",
+					"title": "GeekHub",
+					"theme": "light",
+					"run": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-materials-01/light-attempt-02",
+					"sha256": "1d1b76e6eff10d402536db51bb6d948f6ce60c8af762e8ec5c037a43a9a2305b",
+					"status": "pending",
+					"agentAssessment": {
+						"reviewedAt": "2026-09-27T01:48:40.397833+00:00",
+						"readyForOwnerReview": true,
+						"fullCanvas": true,
+						"inspection": "Full-canvas same-size JPEG copies viewed together at 300 pixels; original PNG unchanged.",
+						"observations": [
+							"Flowing binding-gutter folds contain fine book-cloth grain and parallel page-edge ridges; there is no book prop or readable print.",
+							"Both themes preserve broad calm paper and soft material transitions. The light sweep spreads slightly farther left and the dark sweep extends closer to the right edge."
+						]
+					}
+				},
+				"dark": {
+					"id": "geekhub",
+					"title": "GeekHub",
+					"theme": "dark",
+					"run": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-materials-01/dark-attempt-02",
+					"sha256": "ae1f2366aca4f7060b99f183466b7885de60c86a0859147b034275ddf24504d4",
+					"status": "pending",
+					"agentAssessment": {
+						"reviewedAt": "2026-09-27T01:48:40.398357+00:00",
+						"readyForOwnerReview": true,
+						"fullCanvas": true,
+						"inspection": "Full-canvas same-size JPEG copies viewed together at 300 pixels; original PNG unchanged.",
+						"observations": [
+							"Flowing binding-gutter folds contain fine book-cloth grain and parallel page-edge ridges; there is no book prop or readable print.",
+							"Both themes preserve broad calm paper and soft material transitions. The light sweep spreads slightly farther left and the dark sweep extends closer to the right edge."
+						]
+					}
+				}
+			},
+			"prompts": {
+				"light": {
+					"path": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01/light/prompt.txt",
+					"sha256": "9082e774eeaa156c02f7d8e4e95427e0a826e140414c2f83b14ee21ef01f47fe"
+				},
+				"dark": {
+					"path": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-coverage-01/dark/prompt.txt",
+					"sha256": "9ab629a30bd23ba7f7030dbb8d6515b564832bd62002cdfa911e06133028b6c6"
+				}
+			}
+		}
+	]
+}
