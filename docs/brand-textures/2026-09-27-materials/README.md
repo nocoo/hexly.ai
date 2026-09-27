@@ -30,6 +30,14 @@ Requests, responses, original PNGs and review decisions stay under each project'
 Generation failures and explicit later attempts are retained. Do not rerun a
 successful request after an interrupted conversation.
 
+## Owner feedback after review
+
+The owner found the coverage too concentrated on the right and requested three
+full-square experiments before rollout. This supersedes the batch's right-only
+composition target; no candidates were accepted for production. See the
+[coverage experiment](../2026-09-27-material-coverage/README.md). The handoff and
+all original candidate bytes below remain historical evidence.
+
 ## Review handoff
 
 All 21 pairs (42 candidates) are ready for owner review. Each selected raw review
