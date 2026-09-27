@@ -30,3 +30,27 @@ Successful calls are never repeated after a conversation interruption.
 scope, identity evidence, prior candidates and new prompts. All new originals
 remain pending exact-byte owner acceptance. Broader rollout, pack export,
 catalogue adoption, icon composition, R2 and publication await that checkpoint.
+
+All six candidates are ready for owner review. Coffee uses porcelain turning
+arcs, Matrix uses nested routing channels, and GeekHub uses book-cloth grain
+and curved fold bands. Each now has visible texture in all four quadrants and
+the middle. Coffee dark is denser than its light counterpart; GeekHub has
+broader folds than the other two motifs. These differences remain part of the
+owner's visual review, rather than claims of measured coverage equivalence.
+
+[Candidates](candidates.json) links the exact selected runs and per-image agent
+observations. [Verification](verification.json) checks all six native PNGs,
+prompts, requests, responses and pending reviews, plus unchanged source metadata,
+original icon bytes/RGBA, old kit manifests and previous texture candidates.
+[Browser evidence](browser-review.json) covers 1440, 390 and 320px viewports:
+twelve complete old/new squares at equal pair sizes, loaded reference images
+and icons, no overflow or page errors, and twelve byte-identical raw downloads.
+Desktop and 320px screenshots were visually inspected after those checks.
+
+The first two Matrix attempts per theme failed during TLS handshakes; preserve
+their four unknown-outcome receipts. The successful Matrix pair is attempt 3,
+using direct transport after unauthenticated connection checks. Coffee and
+GeekHub use attempt 1. Recovery decisions are recorded in [the first recovery
+record](recovery.json) and [the direct-transport record](recovery-02.json).
+No successful generation was repeated. This experiment changes no catalogue,
+public package or original icon; all six owner-acceptance states remain pending.
