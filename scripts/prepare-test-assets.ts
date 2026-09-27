@@ -1,8 +1,5 @@
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
-import retirement from "../docs/brand-textures/2026-09-27-material-rollout/retirement-plan.json" with {
-	type: "json",
-};
 import { readProjects } from "../src/data/read-projects";
 import { digest, hydrate, readInventory } from "./asset-storage";
 
@@ -22,16 +19,13 @@ const sources = new Set([
 const files = readInventory().files.filter(
 	(file) =>
 		file.path ||
-		(!retirement.localCandidates.some(
-			(candidate) => candidate.source === file.source,
-		) &&
-			(sources.has(file.source) ||
-				[
-					"packages/video-kit/",
-					"artwork/brands/",
-					"artwork/brand-textures/",
-					"src/fonts/",
-				].some((prefix) => file.source.startsWith(prefix)))),
+		sources.has(file.source) ||
+		[
+			"packages/video-kit/",
+			"artwork/brands/",
+			"artwork/brand-textures/",
+			"src/fonts/",
+		].some((prefix) => file.source.startsWith(prefix)),
 );
 
 await hydrate(files, 8);
