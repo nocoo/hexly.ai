@@ -61,12 +61,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Switchboard grain / 交换台肌理: Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.
-- 哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。
+- Rotary cord-contact grain / 话路卷纹: Open rotary-contact curves and finely ribbed routing impressions recall a desk telephone.
+- 开放旋转接触弧纹与细密肋纹通道呼应桌面电话。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.32.
-- [Paper PNG](https://h.no.mt/projects/deca/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/deca/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/deca/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/deca/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/deca/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/deca/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/deca/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.41.
+- [Paper PNG](https://h.no.mt/projects/deca/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/deca/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/deca/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/deca/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/deca/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/deca/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/deca/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

@@ -64,12 +64,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- At the arcade bench / 街机工作台: Straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right.
-- 顺直胡桃木纹、旧黄铜压边与两道浅弧沟承接手作街机的触感，把动作空间留给摇杆原标。
+- Arcade walnut grain / 胡桃木旋纹: Flowing walnut grain and partial machining arcs recall a crafted arcade control surface.
+- 流动胡桃木纹与局部加工弧纹呼应街机操控台的质感。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.44.
-- [Paper PNG](https://h.no.mt/projects/pew-game/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/pew-game/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/pew-game/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/pew-game/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/pew-game/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/pew-game/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/pew-game/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.31.
+- [Paper PNG](https://h.no.mt/projects/pew-game/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/pew-game/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/pew-game/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/pew-game/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/pew-game/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/pew-game/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/pew-game/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

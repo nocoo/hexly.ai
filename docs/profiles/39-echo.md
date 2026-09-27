@@ -64,12 +64,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Survey linen / 测绘亚麻: Tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge.
-- 亚麻衬纸上的局部方位弧与开放定位线，回应随身罗盘，也把查找位置变成安静的阅读过程。
+- Survey-arc grain / 测绘弧纹: Incomplete survey arcs, small measurement notches and woven grain recall a pocket compass.
+- 不完整测量弧线、细小刻槽与织物肌理呼应袖珍罗盘。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
-- [Paper PNG](https://h.no.mt/projects/echo/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/echo/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/echo/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/echo/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/echo/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/echo/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/echo/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/echo/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/echo/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/echo/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/echo/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/echo/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/echo/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/echo/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

@@ -66,12 +66,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Dividers with room to move / 可移动的隔页: Dense fine wool felt, shallow offset divider slots, rounded paper-edge steps and alternating unequal rectangular compartments suggested only at the edges.
-- 细密羊毛毡上的错位隔板槽与纸边台阶，让可调整的信息分区成为可触摸的工作表面。
+- Pressed divider grain / 分格压槽: Divider channels and compressed paper fibers form an interwoven field of shallow impressions.
+- 分隔槽与压缩纸纤维交织为连续的浅压纹。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.43.
-- [Paper PNG](https://h.no.mt/projects/infospace/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/infospace/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/infospace/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/infospace/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/infospace/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/infospace/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/infospace/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/infospace/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/infospace/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/infospace/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/infospace/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

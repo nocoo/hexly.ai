@@ -62,12 +62,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Two considered turns / 两步之间: Fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions.
-- 细织毛毡上的双侧计时弧与浅浅行棋压线，给比较、辩论和决定各留一点从容。
+- Paired timing-grain field / 对弈刻痕: Interacting timing arcs and subtle walnut grain recall the measured rhythm of a chess clock.
+- 交错计时弧纹与细微胡桃木纹呼应棋钟的节奏。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.35.
-- [Paper PNG](https://h.no.mt/projects/arena/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/arena/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/arena/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/arena/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/arena/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/arena/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/arena/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
+- [Paper PNG](https://h.no.mt/projects/arena/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/arena/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/arena/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/arena/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/arena/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/arena/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/arena/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

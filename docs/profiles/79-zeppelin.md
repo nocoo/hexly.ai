@@ -57,6 +57,16 @@ Explore an original industrial science-fiction fleet through 17 mission series a
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current campaign texture
+
+- Hull-machining grain / 舰体合纹: Elongated hull-machining traces and fine docking arcs form a shallow engineered paper field.
+- 长条舰体加工纹与细密对接弧线构成纸面浅浮雕。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.42.
+- [Paper PNG](https://h.no.mt/projects/zeppelin/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/zeppelin/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/zeppelin/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/zeppelin/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/zeppelin/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/zeppelin/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/zeppelin/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/zeppelin#brand).
