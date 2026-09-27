@@ -10,6 +10,12 @@ const batch = JSON.parse(
 	),
 );
 const directory = ".video-work/material-textures";
+const revision = JSON.parse(
+	await readFile(
+		"docs/brand-textures/2026-09-27-materials/prompt-revision.json",
+		"utf8",
+	),
+);
 await mkdir(directory, { recursive: true });
 const escapeHtml = (value) =>
 	String(value).replace(
@@ -22,6 +28,8 @@ const escapeHtml = (value) =>
 const candidates = [];
 const cards = [];
 for (const row of batch.projects) {
+	const motif =
+		row.id === "dogfight" ? revision.dogfightRevisedMotif : row.design.motif;
 	const project = JSON.parse(
 		await readFile(`src/data/projects/${row.id}.json`, "utf8"),
 	);
@@ -72,7 +80,7 @@ for (const row of batch.projects) {
 			);
 	}
 	cards.push(
-		`<article id="${row.id}"><header><img src="${project.family.foreground.display}" width="60" height="60" alt=""><div><h2>${escapeHtml(row.title)}</h2><p>${escapeHtml(row.design.name.en)}</p></div></header><div class="pair">${figures.join("")}</div><p class="brief">${escapeHtml(row.design.motif)}</p></article>`,
+		`<article id="${row.id}"><header><img src="${project.family.foreground.display}" width="60" height="60" alt=""><div><h2>${escapeHtml(row.title)}</h2><p>${escapeHtml(row.design.name.en)}</p></div></header><div class="pair">${figures.join("")}</div><p class="brief">${escapeHtml(motif)}</p></article>`,
 	);
 }
 const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Material texture review · Hexly</title><style>
