@@ -1,0 +1,20 @@
+{
+	"recordedAt": "2026-09-27T01:43:11.960746+00:00",
+	"reason": "Both attempt-02 Matrix results were inspected and rejected for mostly empty polygonal plate faces; the light result also clips a main plate at the right edge. Replace raised plates with fine recessed routing fields.",
+	"requests": [
+		{
+			"id": "matrix",
+			"theme": "light",
+			"attempt": 3,
+			"prompt": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01/light-attempt-03/prompt.txt",
+			"sha256": "25bfff4fc71f5f8cfdff328f02779ca352b9692d82b11a7a80dbc56169ad4c35"
+		},
+		{
+			"id": "matrix",
+			"theme": "dark",
+			"attempt": 3,
+			"prompt": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01/dark-attempt-03/prompt.txt",
+			"sha256": "2e457c3fb97dc730eef09989b6f77e2e673418c30f3f2ac86461c4e3e023c08b"
+		}
+	]
+}
