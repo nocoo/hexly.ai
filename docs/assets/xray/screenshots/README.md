@@ -1,7 +1,7 @@
 # Xray introduction screenshots
 
 Five owner-supplied CleanShot captures from `~/Desktop/xray-20260927-155308`
-are prepared for local review at
+were reviewed locally at
 <https://index.dev.hexly.ai/projects/xray#media>.
 
 The gallery follows the supplied order: dashboard, watchlist feed, channel
@@ -17,9 +17,11 @@ also contains an uncropped preview bounded by 1600 px and thumbnail bounded by
 320 px. Browser chrome, alpha and product colors remain intact. Source records
 and planned immutable R2 keys are in the per-image receipts.
 
-Publication is pending: use the existing `VITE_LOCAL_MATERIALS=1` development
-mode. Publish and verify only these 15 screenshot files after review and before
-any website release. No R2 objects or desktop originals were removed.
+After local review, the owner authorized publication with a Z+1 release. All 15
+screenshot files are now published to their immutable R2 keys; full-byte CDN
+hash and MIME verification is recorded in `docs/assets/publication.jsonl` and
+the five per-image receipts. The site integration is prepared for v1.1.3.
+No R2 objects or desktop originals were removed.
 
 Local validation passed typecheck, lint, build, 91 existing media/asset/discovery
 unit tests, and four browser cases covering desktop/mobile, both themes and both
