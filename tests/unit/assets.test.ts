@@ -197,6 +197,34 @@ describe("R2 material delivery", () => {
 					(f: { source: string }) => f.source === "artwork/new/logo.png",
 				).key,
 			).toBe("brands/pi-agent-policy/v1.0.1/logo.png");
+			const retired = next.files.filter(
+				(file: { key: string }) => file.key === previous.key,
+			);
+			write("docs/assets/retired.json", JSON.stringify({ files: retired }));
+			const rejected = () =>
+				spawnSync("bun", [script, "inventory"], {
+					cwd: directory,
+					env,
+					encoding: "utf8",
+				});
+			expect(rejected().stderr).toContain("Retired asset remains in inventory");
+			write(
+				"docs/assets/inventory.json",
+				JSON.stringify({
+					...next,
+					files: next.files.filter(
+						(file: { key: string }) => file.key !== previous.key,
+					),
+				}),
+			);
+			for (const file of retired) rmSync(join(directory, file.source));
+			expect(
+				inventory().files.some(
+					(file: { key: string }) => file.key === previous.key,
+				),
+			).toBe(false);
+			write(retired[0].source, "same image fixture");
+			expect(rejected().stderr).toContain("Retired asset reintroduced");
 		} finally {
 			rmSync(directory, { recursive: true, force: true });
 		}

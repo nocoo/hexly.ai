@@ -60,6 +60,11 @@ export const digest = (bytes: Uint8Array) =>
 export const publicUrl = (asset: Pick<StoredAsset, "key">) =>
 	`${storage.origin}/${asset.key}`;
 
+function retiredAssets(): StoredAsset[] {
+	const path = "docs/assets/retired.json";
+	return existsSync(path) ? JSON.parse(readFileSync(path, "utf8")).files : [];
+}
+
 /** Inspect the index too: .gitignore alone cannot prevent a forced add. */
 export function checkTrackedAssets() {
 	const paths = execFileSync("git", ["ls-files", "-z"], { encoding: "utf8" })
@@ -85,7 +90,12 @@ export function readInventory(): AssetInventory {
 	const keys = new Map<string, string>();
 	const paths = new Set<string>();
 	const sources = new Set<string>();
+	const retired = retiredAssets();
+	const retiredKeys = new Set(retired.map((file) => file.key));
+	const retiredSources = new Set(retired.map((file) => file.source));
 	for (const file of data.files) {
+		if (retiredKeys.has(file.key) || retiredSources.has(file.source))
+			throw new Error(`Retired asset remains in inventory: ${file.source}`);
 		if (
 			!/^[a-f0-9]{64}$/.test(file.sha256) ||
 			!Number.isSafeInteger(file.bytes) ||
@@ -174,6 +184,9 @@ export async function inventory() {
 	const previousSources = new Map(
 		previous?.files.map((file) => [file.source, file]),
 	);
+	const retired = retiredAssets();
+	const retiredSources = new Set(retired.map((file) => file.source));
+	const retiredKeys = new Set(retired.map((file) => file.key));
 	const tracked = execFileSync("git", ["ls-files", "-z"], { encoding: "utf8" })
 		.split("\0")
 		.filter(Boolean);
@@ -211,6 +224,8 @@ export async function inventory() {
 	for (const [source, path] of [...sources].sort(([a], [b]) =>
 		a.localeCompare(b),
 	)) {
+		if (retiredSources.has(source))
+			throw new Error(`Retired asset reintroduced: ${source}`);
 		const old = previousSources.get(source);
 		if (!existsSync(source)) {
 			if (!old) throw new Error(`Missing source: ${source}`);
@@ -296,6 +311,9 @@ export async function inventory() {
 	for (const file of files)
 		if (!file.path && !previousSources.has(file.source))
 			file.key = publicByHash.get(file.sha256) ?? file.key;
+	for (const file of files)
+		if (retiredKeys.has(file.key))
+			throw new Error(`Retired object reintroduced: ${file.key}`);
 	const document: AssetInventory = {
 		schemaVersion: 1,
 		sourceRevision:
