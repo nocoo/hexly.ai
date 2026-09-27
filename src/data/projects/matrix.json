@@ -299,17 +299,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/matrix/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/matrix/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Quiet routing", "zh": "安静的布线" },
+		"name": {
+			"en": "Routing-grain field",
+			"zh": "电路压纹"
+		},
 		"description": {
-			"en": "Shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones.",
-			"zh": "复合板上的浅刻通道、小孔与错位覆膜区保留电路材质的秩序，避免发光线条压过主视觉。"
+			"en": "Nested routing channels and small contact impressions form a finely worked geometric paper field.",
+			"zh": "细密布线槽与接点压痕构成遍布纸面的几何纹理。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.3
+		"surfaceOpacity": 0.45
 	}
 }

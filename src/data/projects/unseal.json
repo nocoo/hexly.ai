@@ -260,17 +260,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/unseal/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/unseal/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "An open seam", "zh": "松开的封缝" },
+		"name": {
+			"en": "Open latch-contact grain",
+			"zh": "解扣压痕"
+		},
 		"description": {
-			"en": "Fine compressed felt tooth, one open curved shackle-seat impression, a broken sealing seam and a tiny brushed-brass edge accent.",
-			"zh": "压实毡面的开口弧槽、断开的封缝与极少黄铜边光，呼应解除限制后的松动感。"
+			"en": "Open latch-contact curves and softly parting seams spread through finely grained paper.",
+			"zh": "开放的锁扣接触弧纹与微微分离的接缝铺展于细腻纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.33
+		"surfaceOpacity": 0.34
 	}
 }

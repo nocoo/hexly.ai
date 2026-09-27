@@ -1,0 +1,118 @@
+{
+	"project": "unseal",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Open latch-contact grain", "zh": "解扣压痕" },
+		"motif": "A distributed field of nested curved latch-contact impressions and softly parting seam channels, with small open gaps placed irregularly between groove families. Rounded lips contain fine satin-enamel tooth and tightly spaced machining striations. Suggest release through interrupted contours only. No padlock, keyhole, key, shackle silhouette, device or separate metal piece.",
+		"description": {
+			"en": "Open latch-contact curves and softly parting seams spread through finely grained paper.",
+			"zh": "开放的锁扣接触弧纹与微微分离的接缝铺展于细腻纸面。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/unseal.json",
+		"purpose": {
+			"en": "Review quarantine results for apps in /Applications and select trusted apps for batch removal of the quarantine attribute.",
+			"zh": "查看 /Applications 内应用的隔离检测结果，选择可信应用后批量移除隔离属性。"
+		},
+		"inspectedRevision": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/unseal-family-2026-09-07-01-01.png",
+		"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b",
+		"rgbaSha256": "840e77e4a3e9bad9291ed7f93b06708a9d7683924ae950501ae489f60ed14b4d",
+		"source": "https://github.com/nocoo/unseal/blob/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a/logo.png",
+		"bytes": 2323865,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/unseal/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "a558ea617cee2b5e1a849336924c5b005a0ef98f92f58445c1977f462cb47b9c"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7885329a-81b9-44b4-a4e4-dd92b1d345a6",
+			"source": "artwork/brands/unseal/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/unseal/v1.0.1/source-light-request.json",
+			"response": "/textures/unseal/v1.0.1/source-light-response.json",
+			"prompt": "/textures/unseal/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/unseal/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/unseal/v1.0.1/texture-light.png",
+				"sha256": "5a2b7494b8ee8ddaf9239948a021610d22a57b778c41ee5f90e9590a01f83bca",
+				"bytes": 1942790,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9f86cb5b-7663-4da0-98f9-7dc0b5ea4df5",
+			"source": "artwork/brands/unseal/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/unseal/v1.0.1/source-dark-request.json",
+			"response": "/textures/unseal/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/unseal/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/unseal/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/unseal/v1.0.1/texture-dark.png",
+				"sha256": "acc1009cf84ef7ff9581d820c969046a91e419d54e517cd76590df250f33bf35",
+				"bytes": 1958419,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.34
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 6.007258085220891,
+		"darkMinimum": 4.757146739619664,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:28:13.373Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

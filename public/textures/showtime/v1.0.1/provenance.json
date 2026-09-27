@@ -1,0 +1,118 @@
+{
+	"project": "showtime",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Satin film-cue grain", "zh": "片门压痕" },
+		"motif": "A distributed field of broad satin-emulsion grain bands, softly beveled diagonal cue ridges and irregular small paired oblong sprocket depressions. Curving bands change direction and interweave through finely striated faces. No detached film strips, reels, slate, clapperboard, typography, production labels, black-and-white stripes or literal props.",
+		"description": {
+			"en": "Satin film grain, diagonal cue ridges and paired perforation impressions flow across the paper.",
+			"zh": "缎面胶片肌理、斜向标记压纹与成对齿孔痕迹铺展于纸面。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/showtime.json",
+		"purpose": {
+			"en": "Turn scripted interactions with real webpages into product demo movies on macOS. Agents can direct pointer movement, clicks, typing, camera zoom and animated captions through JSON scripts, a CLI or MCP; the native browser exports MP4 without an audio track.",
+			"zh": "把真实网页上的脚本化交互制作成 macOS 产品演示视频。Agent 可通过 JSON 剧本、CLI 或 MCP 编排鼠标移动、点击、输入、镜头缩放和动态字幕，原生浏览器将演示导出为不含音轨的 MP4。"
+		},
+		"inspectedRevision": "9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+		"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+		"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+		"source": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
+		"bytes": 3865252,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/showtime/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "86ee82731567d382e5e625ac1ef09b99e96f8acd4fd28241573a22cd8b0c84d8"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "132fedfc-5a00-423b-aa2f-61b22961606c",
+			"source": "artwork/brands/showtime/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/showtime/v1.0.1/source-light-request.json",
+			"response": "/textures/showtime/v1.0.1/source-light-response.json",
+			"prompt": "/textures/showtime/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/showtime/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/showtime/v1.0.1/texture-light.png",
+				"sha256": "856ce001963f22ff6359b09cefec32122752241352abf428f93f4322376dcafa",
+				"bytes": 1914089,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "049bed66-dad4-4f12-859e-9bb276298563",
+			"source": "artwork/brands/showtime/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/showtime/v1.0.1/source-dark-request.json",
+			"response": "/textures/showtime/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/showtime/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/showtime/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/showtime/v1.0.1/texture-dark.png",
+				"sha256": "547fab3163e462d3d0aa3cdb63f2af8b0fb633d89f3adae566d6d5de8debfacc",
+				"bytes": 1944909,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.160392173772148,
+		"darkMinimum": 4.736617389486003,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:26:11.906Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

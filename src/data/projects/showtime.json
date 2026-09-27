@@ -296,17 +296,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/showtime/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/showtime/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Before the first frame", "zh": "开机之前" },
+		"name": {
+			"en": "Satin film-cue grain",
+			"zh": "片门压痕"
+		},
 		"description": {
-			"en": "Fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches.",
-			"zh": "哑光摄影纸的细齿、片门导轨与稀疏齿孔压痕，呼应录制前对齐画面的一刻。"
+			"en": "Satin film grain, diagonal cue ridges and paired perforation impressions flow across the paper.",
+			"zh": "缎面胶片肌理、斜向标记压纹与成对齿孔痕迹铺展于纸面。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.35
+		"surfaceOpacity": 0.45
 	}
 }

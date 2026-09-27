@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "pew-game",
+	"version": "1.0.1",
+	"root": "/textures/pew-game/v1.0.1",
+	"canonical": "https://hexly.ai/projects/pew-game#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/pew-game/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Arcade walnut grain", "zh": "胡桃木旋纹" },
+		"description": {
+			"en": "Flowing walnut grain and partial machining arcs recall a crafted arcade control surface.",
+			"zh": "流动胡桃木纹与局部加工弧纹呼应街机操控台的质感。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.31
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+		"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90",
+		"rgbaSha256": "04badff30d4e5f12298057074c1d6da23ee1e03c82f4f621057e2a2b45cf1135",
+		"source": "https://github.com/nocoo/pew-game/blob/ee68b2dead3e5e698b2427d6a949e8e57c69d520/logo.png",
+		"bytes": 3907401,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pew-game/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "e367ff9d8d28c46e17e8b65e1cae732038dd61cf4c7db65133f1bac96cea4c5f"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "df06a53d-c189-4246-beaf-fc6769346c5e",
+			"source": "artwork/brands/pew-game/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/pew-game/v1.0.1/source-light-request.json",
+			"response": "/textures/pew-game/v1.0.1/source-light-response.json",
+			"prompt": "/textures/pew-game/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/pew-game/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pew-game/v1.0.1/texture-light.png",
+				"sha256": "ef77678d69db2db31e7e5535e1701d2730935f986ea88d1839bad8f8d14bec1d",
+				"bytes": 2068065,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4804fa53-3eb3-4d46-8a4a-e99e9f79535d",
+			"source": "artwork/brands/pew-game/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/pew-game/v1.0.1/source-dark-request.json",
+			"response": "/textures/pew-game/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/pew-game/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/pew-game/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pew-game/v1.0.1/texture-dark.png",
+				"sha256": "ab28991026c9ddbb23d53bc1a500d9e0155900e985b17c7879f15003110e5a4f",
+				"bytes": 2063383,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2068065,
+			"sha256": "ef77678d69db2db31e7e5535e1701d2730935f986ea88d1839bad8f8d14bec1d"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 333246,
+			"sha256": "b4b65aad7d0dc4d9ea51824deaa6888cb28861cfc402dd91f00c819eb91e240e"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 17984,
+			"sha256": "0ab56f65f31e6b1d09cea048d3d5f4feff9eab2d5bf81b8b82e1b0e5e463c9fd"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3157,
+			"sha256": "c39463664f8d7b7cccfb15f6d0abe2f0b5151dc0dc2704502a54a95fcfbdb4ba"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "b0bc9b98edaee35d2bd1b3743920c0f62d3e075fa51bf046df9d738dd7b06b71"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "1a779ec5f037d23309a274fb7f76ffa1494bfb3442b3f08abcf32131a431541e"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1146,
+			"sha256": "eadb59e3d1f500e9d9ce295c6a92a1bbd2a954bff87c725e32a17561e15f74fe"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2063383,
+			"sha256": "ab28991026c9ddbb23d53bc1a500d9e0155900e985b17c7879f15003110e5a4f"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 332126,
+			"sha256": "866242ce5b27964d517621a45915e7abad95ae2ab9a6cbd55309e9e9d8d90b39"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 18774,
+			"sha256": "582382c6ecc7177ffda7a9f6a4a9cfabb82ccbb7ec20a714b498c7c6b3c3c9d1"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3193,
+			"sha256": "89ade9da00ebc22eb80584da9f5efdfb5fd0257c658422601917deaf8fdd5d11"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "793a0ee73f234096d814d511157edae56b098d3d944348a3694bc8c433ab0005"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c927896e46f3fd9e8cb40048a51ffcd5a372f066c9d6377b459fb4a7376f03f1"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1146,
+			"sha256": "55e3f3621e911aa93526b61af31df05f99bd6d013745356ef3320be9aa4bb596"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5340,
+			"sha256": "d46f8368c1e90343cdfbb0c4605312e9d3bab1aca55e8c4758b3c9302417e3fb"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1150,
+			"sha256": "be47dec7e1f78caafb741202aa0f12637f8749d1cadae7fdb4193edb491e1b6a"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "89138f20f74c8edef6474b48fb2ab9e400752c2b2b597df14aaf14d197ce8f97"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2646,
+			"sha256": "321d5dd78f6dcadac67fe1e2fd2f7fce88d3cb30cab899cce5f8ac600c15b6a9"
+		},
+		{
+			"path": "/textures/pew-game/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3508,
+			"sha256": "9861b83133b760c9e3d9a84180b23d2fe10c744a0c98fbbf8c9c493590f4a4a0"
+		}
+	]
+}

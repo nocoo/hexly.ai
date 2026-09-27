@@ -1,0 +1,118 @@
+{
+	"project": "matrix",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Routing-grain field", "zh": "电路压纹" },
+		"motif": "A flowing field of shallow rounded right-angle routing channels, finely nested micromilled furrows and occasional tiny square contact depressions. Use branching stepped turns of varied scale and direction, with subtle crosshatching and satin material grain between grooves. Route groups softly interweave across the surface. No disconnected square panels, large empty polygon faces, checkerboard, regular grid, circuit-board object, chips, neon, glowing lines or literal diagram.",
+		"description": {
+			"en": "Nested routing channels and small contact impressions form a finely worked geometric paper field.",
+			"zh": "细密布线槽与接点压痕构成遍布纸面的几何纹理。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/matrix.json",
+		"purpose": {
+			"en": "Reuse terminal-inspired controls, charts, and page templates to build green-on-black data dashboards.",
+			"zh": "复用终端风格的控件、图表和页面模板，搭建绿黑配色的数据看板。"
+		},
+		"inspectedRevision": "8e6f9add035b35505576f161d95393c0b8b31e07"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+		"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+		"rgbaSha256": "7b7d7bab3ed75e93988b84ae0e29ee63dade603733294c1f27b45bc4bf2f998d",
+		"source": "https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png",
+		"bytes": 3271736,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/matrix/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "76a5a9a10d1b3d611d84e3619dea129a841d3bedf4087cd4f7e905404b589c38"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "7903845d-3e4b-44ec-afef-4115417a5b80",
+			"source": "artwork/brands/matrix/texture-studies/2026-09-27-flare-coverage-01/light-attempt-03",
+			"request": "/textures/matrix/v1.0.1/source-light-request.json",
+			"response": "/textures/matrix/v1.0.1/source-light-response.json",
+			"prompt": "/textures/matrix/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/matrix/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/matrix/v1.0.1/texture-light.png",
+				"sha256": "d84a7632e6079f46bfa9ec80c9499887a1be09b7896992e4b4ff1bb4d6ec4574",
+				"bytes": 2048998,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9e392da5-45d0-4776-86ba-94a0fd3b4e7a",
+			"source": "artwork/brands/matrix/texture-studies/2026-09-27-flare-coverage-01/dark-attempt-03",
+			"request": "/textures/matrix/v1.0.1/source-dark-request.json",
+			"response": "/textures/matrix/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/matrix/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/matrix/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/matrix/v1.0.1/texture-dark.png",
+				"sha256": "3d14ada21bf3af99afd82a165fe400546699015e335d11ec25ea9774448ea088",
+				"bytes": 1968893,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.2866571841234,
+		"darkMinimum": 5.043477692410771,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:21:37.746Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -300,17 +300,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/pew-game/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/pew-game/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "At the arcade bench", "zh": "街机工作台" },
+		"name": {
+			"en": "Arcade walnut grain",
+			"zh": "胡桃木旋纹"
+		},
 		"description": {
-			"en": "Straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right.",
-			"zh": "顺直胡桃木纹、旧黄铜压边与两道浅弧沟承接手作街机的触感，把动作空间留给摇杆原标。"
+			"en": "Flowing walnut grain and partial machining arcs recall a crafted arcade control surface.",
+			"zh": "流动胡桃木纹与局部加工弧纹呼应街机操控台的质感。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.44
+		"surfaceOpacity": 0.31
 	}
 }

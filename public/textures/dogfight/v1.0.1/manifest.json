@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "dogfight",
+	"version": "1.0.1",
+	"root": "/textures/dogfight/v1.0.1",
+	"canonical": "https://hexly.ai/projects/dogfight#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/dogfight/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Brushed flight-panel grain", "zh": "掠翼压纹" },
+		"description": {
+			"en": "Brushed machining grain and tapered seam impressions recall the craft of an aircraft surface.",
+			"zh": "拉丝加工纹与收束接缝压痕呼应飞机表面的工艺。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+		"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+		"rgbaSha256": "d38c25f33fdb61ccca5e59c92e846e72b5cf06b3f66eea2008393f6fd3ac0064",
+		"source": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+		"bytes": 2743288,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dogfight/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "406b093c-fa2b-4ac7-9be9-d5e473631c2e",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/dogfight/v1.0.1/source-light-request.json",
+			"response": "/textures/dogfight/v1.0.1/source-light-response.json",
+			"prompt": "/textures/dogfight/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.1/texture-light.png",
+				"sha256": "32a9243dae95e8acbed7e9b07506b33f54a8740f983ff9e6ca78bd8d29fe5f8b",
+				"bytes": 1955924,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "6c8f9a27-e4d0-4059-8b0b-961d218f0f8e",
+			"source": "artwork/brands/dogfight/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/dogfight/v1.0.1/source-dark-request.json",
+			"response": "/textures/dogfight/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/dogfight/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/dogfight/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dogfight/v1.0.1/texture-dark.png",
+				"sha256": "f7b7080f79ac366b4672237a880dc3a9fecc4197e7bdff94ffe4c6898a74175f",
+				"bytes": 1894452,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1955924,
+			"sha256": "32a9243dae95e8acbed7e9b07506b33f54a8740f983ff9e6ca78bd8d29fe5f8b"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 292182,
+			"sha256": "da379f15673a3de899819afbf68632fdf957edb28f8929e7e671225b24079ea8"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 14448,
+			"sha256": "07ede3c232c90c05f7509c0f96bd14dec27d98990002e4c76224822e011de924"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3130,
+			"sha256": "0034090970133efb97cc7c8520f26efbdd1c51141ecb481e236590139b4a3162"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "40d2df98abfef8928bd989e478e1adbc0a5abfc331458dc06b7a6cedd88c6290"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "602632983d10378f67ef31c1957480e3ecc098886284cd66dc6ba9f4519f7cab"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1157,
+			"sha256": "63fc04190d0ec1f2fb53beb09f874f2ed0041c764dcc47ae90656e5bac08ea26"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1894452,
+			"sha256": "f7b7080f79ac366b4672237a880dc3a9fecc4197e7bdff94ffe4c6898a74175f"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 278914,
+			"sha256": "27d8edd31026d2ca085b82695736c9f88ed113541ef3bcea5dfd237ea6e22f07"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12446,
+			"sha256": "d00a4bfaaabd81dcefe8ee3ae177d851b1f24bc276ad618cbaf7d1c9daac3a15"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3166,
+			"sha256": "c36ebe58f04ff4a30ad4f22507ff2c5edff60e834fa26e56518eaed9592831d2"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "5a0f5d1d4fa68c42b35a6800a115a8e8abba2cd2c9e6d8ea312ed523bac7535e"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "34ed9b0733c88b5937e443cdf62596f155fc62fb20a88c2e55b08520dd06f98b"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1157,
+			"sha256": "78ed704aaa187edcc89c4c22fbee084e9e6305bd1f4da0fc43f9bd00eb52e0c0"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5248,
+			"sha256": "38657a15afce8d8fdf3d028db86c08e95bc137fa07c81fe4d269d6c4d4d7f115"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1105,
+			"sha256": "6b14bb8ffd1691007e4ecb2f71f9830b80662599bbb7ed8dfdb4b899d568ad66"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "a9f53ce487271002fadd96d59bc71892e545f007659fa9b60768579585be297c"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2652,
+			"sha256": "ada1bda63c82d5df4931fa88c2805d09423b5e0457940160811676f592d2279f"
+		},
+		{
+			"path": "/textures/dogfight/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3528,
+			"sha256": "92e29300b2ed5c6afb9b83d2b5c19eec9ab265b42d590ec771827bdb4d843099"
+		}
+	]
+}

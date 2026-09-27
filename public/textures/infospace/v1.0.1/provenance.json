@@ -1,0 +1,118 @@
+{
+	"project": "infospace",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Pressed divider grain", "zh": "分格压槽" },
+		"motif": "A distributed field of shallow open L-shaped divider channels and gently stepped paper-compression contours. Rich nested fiber ridges and close stacked-edge scoring fill the broad softly modeled spaces between channels. Mix rounded corners and offset directions without large empty polygon faces. No tray, detached sheets, separate rectangular plates, interface windows, checkerboard or regular grid.",
+		"description": {
+			"en": "Divider channels and compressed paper fibers form an interwoven field of shallow impressions.",
+			"zh": "分隔槽与压缩纸纤维交织为连续的浅压纹。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/infospace.json",
+		"purpose": {
+			"en": "Give macOS app developers a reusable SwiftUI workspace for arranging their own content in resizable panels. The SDK handles grid geometry, snapping and panel identity; the included demo shows the interactions with sample content kept only for the current session.",
+			"zh": "为 macOS 应用开发者提供可复用的 SwiftUI 工作区，把自己的内容放进可调整大小的面板。SDK 处理网格几何、吸附与面板身份；附带演示应用展示这些交互，示例内容仅在本次运行中保留。"
+		},
+		"inspectedRevision": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+		"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+		"rgbaSha256": "86f99fbc319481ec964495407e06d4f645f2934acc9db98b31d583cdf94898f2",
+		"source": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+		"bytes": 4365206,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/infospace/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "42205956aa29c5b355dddb89a4b8b826f31d4b4d443b9e8379e5beaba10c1757"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "2eaab0ef-8c40-48d2-93c1-e04efba9ceeb",
+			"source": "artwork/brands/infospace/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/infospace/v1.0.1/source-light-request.json",
+			"response": "/textures/infospace/v1.0.1/source-light-response.json",
+			"prompt": "/textures/infospace/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/infospace/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/infospace/v1.0.1/texture-light.png",
+				"sha256": "16c402a98b87a40a5edc501551e36ba3aa68a5c904a3ce320cb5b937f9e52f68",
+				"bytes": 1963030,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "bb9fe8fd-e088-427f-b4eb-72f9953e5e43",
+			"source": "artwork/brands/infospace/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/infospace/v1.0.1/source-dark-request.json",
+			"response": "/textures/infospace/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/infospace/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/infospace/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/infospace/v1.0.1/texture-dark.png",
+				"sha256": "3e444beb8cc46da765c4aa8c156a6ff6a86014b93251c211ec91276bc6182b32",
+				"bytes": 1870743,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.04291443183419,
+		"darkMinimum": 5.524965650459765,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:26:12.859Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
