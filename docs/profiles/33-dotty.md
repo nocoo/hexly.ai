@@ -65,12 +65,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Ceramic measures / 瓷面刻度: Finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center.
-- 细颗粒瓷釉与大尺度浅方格形成可读的几何秩序，留白处打断格子，不争抢黑白原标。
+- Satin ceramic grain / 陶方浅纹: Staggered ceramic contours, satin grain and shallow grout channels form a quiet geometric field.
+- 错落陶瓷轮廓、缎面细纹与浅接缝构成柔和几何底纹。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.29.
-- [Paper PNG](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dotty/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/dotty/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/dotty/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/dotty/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/dotty/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/dotty/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/dotty/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/dotty/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/dotty/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/dotty/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/dotty/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

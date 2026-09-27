@@ -62,12 +62,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- A measured minute / 一分钟的刻度: Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.
-- 绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。
+- Timing-ring grain / 计时轨纹: Partial timing rings, radial ticks and brushed grain form a softly worked paper surface.
+- 局部计时环、径向刻纹与拉丝细节构成柔和纸面底纹。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.37.
-- [Paper PNG](https://h.no.mt/projects/runner/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/runner/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/runner/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/runner/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/runner/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/runner/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/runner/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.36.
+- [Paper PNG](https://h.no.mt/projects/runner/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/runner/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/runner/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/runner/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/runner/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/runner/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/runner/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

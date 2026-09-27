@@ -66,12 +66,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Quiet routing / 安静的布线: Shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones.
-- 复合板上的浅刻通道、小孔与错位覆膜区保留电路材质的秩序，避免发光线条压过主视觉。
+- Routing-grain field / 电路压纹: Nested routing channels and small contact impressions form a finely worked geometric paper field.
+- 细密布线槽与接点压痕构成遍布纸面的几何纹理。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.3.
-- [Paper PNG](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/matrix/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/matrix/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/matrix/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/matrix/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/matrix/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/matrix/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/matrix/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/matrix/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/matrix/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/matrix/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/matrix/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

@@ -60,12 +60,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- An open seam / 松开的封缝: Fine compressed felt tooth, one open curved shackle-seat impression, a broken sealing seam and a tiny brushed-brass edge accent.
-- 压实毡面的开口弧槽、断开的封缝与极少黄铜边光，呼应解除限制后的松动感。
+- Open latch-contact grain / 解扣压痕: Open latch-contact curves and softly parting seams spread through finely grained paper.
+- 开放的锁扣接触弧纹与微微分离的接缝铺展于细腻纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.33.
-- [Paper PNG](https://h.no.mt/projects/unseal/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/unseal/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/unseal/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/unseal/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/unseal/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/unseal/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/unseal/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.34.
+- [Paper PNG](https://h.no.mt/projects/unseal/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/unseal/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/unseal/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/unseal/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/unseal/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/unseal/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/unseal/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

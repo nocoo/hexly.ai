@@ -65,6 +65,16 @@ Turn source material into an original narrated miniature 3D journey. A recurring
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current campaign texture
+
+- Model-board contour grain / 模型层纹: Stepped model-board contours, construction arcs and compressed fibers recall miniature scene making.
+- 层叠模型板轮廓、构造弧纹与压缩纤维呼应微缩场景制作。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/diorama-journey/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/diorama-journey/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/diorama-journey/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/diorama-journey/textures/v1.0.0/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/diorama-journey/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/diorama-journey/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/diorama-journey/v1.0.0/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Hexly campaign brand archive
 
 - Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/diorama-journey#brand).

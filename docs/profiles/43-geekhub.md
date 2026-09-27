@@ -64,12 +64,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Reading cloth / 阅读书衣: Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.
-- 亚麻书衣与压纹纸带交错，分栏折线和少量装订线承接阅读、收藏与再整理。
+- Book-cloth field / 书布褶纹: Fine book-cloth grain and gently curved binding folds flow across the paper surface.
+- 细腻书布纤维与柔和装订褶纹铺满纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.37.
-- [Paper PNG](https://h.no.mt/projects/geekhub/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/geekhub/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/geekhub/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/geekhub/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/geekhub/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/geekhub/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/geekhub/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/geekhub/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/geekhub/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/geekhub/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/geekhub/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/geekhub/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/geekhub/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/geekhub/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

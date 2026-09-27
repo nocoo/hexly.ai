@@ -61,12 +61,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Connection channels / 连接槽道: Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.
-- 干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。
+- Connector-channel grain / 连线触纹: Parallel connector channels and strain-relief ridges form a continuous field of connection traces.
+- 平行连接槽与柔性护套肋纹构成连续的接触纹理。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.38.
-- [Paper PNG](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ipsafe/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/ipsafe/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/ipsafe/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/ipsafe/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/ipsafe/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/ipsafe/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/ipsafe/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/ipsafe/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/ipsafe/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/ipsafe/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/ipsafe/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive

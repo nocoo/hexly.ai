@@ -60,12 +60,12 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current campaign texture
 
-- Before the first frame / 开机之前: Fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches.
-- 哑光摄影纸的细齿、片门导轨与稀疏齿孔压痕，呼应录制前对齐画面的一刻。
+- Satin film-cue grain / 片门压痕: Satin film grain, diagonal cue ridges and paired perforation impressions flow across the paper.
+- 缎面胶片肌理、斜向标记压纹与成对齿孔痕迹铺展于纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.0; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.35.
-- [Paper PNG](https://h.no.mt/projects/showtime/textures/v1.0.0/texture-light.png) · [Night PNG](https://h.no.mt/projects/showtime/textures/v1.0.0/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/showtime/textures/v1.0.0/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/showtime/textures/v1.0.0/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/showtime/textures/v1.0.0/manifest.json) · [Usage/rights](https://h.no.mt/projects/showtime/textures/v1.0.0/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/showtime/v1.0.0/review.html)
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/showtime/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/showtime/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/showtime/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/showtime/v1.0.1/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Hexly campaign brand archive
