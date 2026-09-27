@@ -328,5 +328,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/pi-agent-policy/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Service-mat contact grain",
+			"zh": "复位触纹"
+		},
+		"description": {
+			"en": "Locating recesses, open contact channels and short return grooves recall an instrument service mat.",
+			"zh": "定位凹纹、开放接触槽与短回路压纹呼应仪器检修垫。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
 	}
 }

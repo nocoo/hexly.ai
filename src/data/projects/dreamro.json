@@ -295,17 +295,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/dreamro/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/dreamro/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "A maker's parchment", "zh": "匠人的羊皮纸" },
+		"name": {
+			"en": "Equipment tooling grain",
+			"zh": "铠作压纹"
+		},
 		"description": {
-			"en": "Fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions.",
-			"zh": "洁净羊皮纸、斜向皮绳槽与浅锤纹金属压边承接盾牌道具的制作感，不另造徽章或武器主体。"
+			"en": "Leather-tooling curves, chevron seams and hammered grain recall handcrafted adventure equipment.",
+			"zh": "皮革压花曲线、人字接缝与锤纹呼应手工冒险装备。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.31
+		"surfaceOpacity": 0.45
 	}
 }

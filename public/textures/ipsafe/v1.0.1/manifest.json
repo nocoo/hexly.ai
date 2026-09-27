@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "ipsafe",
+	"version": "1.0.1",
+	"root": "/textures/ipsafe/v1.0.1",
+	"canonical": "https://hexly.ai/projects/ipsafe#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/ipsafe/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Connector-channel grain", "zh": "连线触纹" },
+		"description": {
+			"en": "Parallel connector channels and strain-relief ridges form a continuous field of connection traces.",
+			"zh": "平行连接槽与柔性护套肋纹构成连续的接触纹理。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+		"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+		"rgbaSha256": "ad40a075b02b13fde331b1fd84538c918aa442ffbd8523e8f369bfff42101283",
+		"source": "https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png",
+		"bytes": 3104822,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/ipsafe/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "c69e4d9e1b3ce869aa955473a7884bebc00a33d63f92d3cfaef43bc6713ae9c8"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "140bd30a-574e-473b-bc12-a81496d0fe32",
+			"source": "artwork/brands/ipsafe/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/ipsafe/v1.0.1/source-light-request.json",
+			"response": "/textures/ipsafe/v1.0.1/source-light-response.json",
+			"prompt": "/textures/ipsafe/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/ipsafe/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/ipsafe/v1.0.1/texture-light.png",
+				"sha256": "86990db3b66527e493b2f6b7c007163d4379141c6ca1a2e17c29c8bc5f23634a",
+				"bytes": 1859879,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b7604461-7e76-46f4-b635-8592476d8879",
+			"source": "artwork/brands/ipsafe/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/ipsafe/v1.0.1/source-dark-request.json",
+			"response": "/textures/ipsafe/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/ipsafe/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/ipsafe/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/ipsafe/v1.0.1/texture-dark.png",
+				"sha256": "08a67e4bedd2f8ecf19d1a2ca3b8a38072282f6691e1708e11c48b6c3de30582",
+				"bytes": 1851045,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1859879,
+			"sha256": "86990db3b66527e493b2f6b7c007163d4379141c6ca1a2e17c29c8bc5f23634a"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 241624,
+			"sha256": "6f4936fba5829c920f68e6f1dd4abf3102420b279d03af53bce94a83321d1205"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16444,
+			"sha256": "e8e9b9e1e72e4afb6796b4f4af89450eb0223e24413761ad5c4320c276366a67"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3122,
+			"sha256": "391e6d1cd3196cea80a3294c5f722ade0a094aa485164ee0c00b0487a1acf152"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e3d14cbab039e10c96454d743ba4b61ca633d67a62b3dfefbbf3ba0372111bc2"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "4e6b12d09ea72b24da706a7efe0de905d65c577a5af30d450f382014302d539a"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1152,
+			"sha256": "f5ad9d747a2ab409dd4cb82febe40a511c447bec6caf3fe7db2862136a8161a2"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1851045,
+			"sha256": "08a67e4bedd2f8ecf19d1a2ca3b8a38072282f6691e1708e11c48b6c3de30582"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 259606,
+			"sha256": "30c7f8091f58f9e0aaec12f417bf7cadc953a5fbf234f1467f151fedf73a05f2"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13240,
+			"sha256": "df63cc81ab6800d476b2361c2251341cfaf53eb1794b0ac1f1b7849769933556"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3158,
+			"sha256": "fbceee14673f2b54142e337ad667359a8c825815dd524211b7e29b94fe599a72"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "a2db9754bde61d87ac3b9771a9d1c279ae9c7b9a9503e99ddb2ec19db360762f"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "a991bcafacb02ead78cf2cdb92377b983e3f6af337bc7f0217fe0f6a757f1d7d"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1152,
+			"sha256": "ae4574f7f453628d1220f330f3d63363789cb3940b2f447d7c104e65b867f540"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5339,
+			"sha256": "a0b4fab3176f9dd99fb8fc42da434bb7dffbf2c0a31048079862610bdce4a46b"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1179,
+			"sha256": "37568648d480e6a4badc02a3560b5dc4630c87883d21e92a27f4de30dfcde0fa"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "f6518ecccdd70eeb3b2179fb105b3e432ff4c970a4953681024fcfed9bc3133f"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2646,
+			"sha256": "9b2767e5445fb7ec16ff5a5bfa821820f5fab61ff2497be3d06f56937a3342d8"
+		},
+		{
+			"path": "/textures/ipsafe/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3496,
+			"sha256": "fef7d693c67ac7c7207511eb1a78e0ffc64ed24a0624545720cbb3b30837b893"
+		}
+	]
+}

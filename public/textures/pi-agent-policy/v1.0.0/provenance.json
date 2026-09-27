@@ -1,0 +1,118 @@
+{
+	"project": "pi-agent-policy",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Service-mat contact grain", "zh": "复位触纹" },
+		"motif": "A distributed field of rounded locating recesses, paired open contact channels and short return grooves worked into a fine service-mat grain. Interweave irregular stepped routes and soft corners with closely nested compression ridges across broad textured faces. One tiny muted terracotta inset may mark a return, below one percent of area. No device, button prop, circuitry diagram, uniform grid or central reset symbol.",
+		"description": {
+			"en": "Locating recesses, open contact channels and short return grooves recall an instrument service mat.",
+			"zh": "定位凹纹、开放接触槽与短回路压纹呼应仪器检修垫。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/pi-agent-policy.json",
+		"purpose": {
+			"en": "Install once in the Pi user directory to apply declarative tool policies across projects. Policy repairs and eligible terminal recovery share one allowance per original user input; the extension returns real native-tool alternatives and waits for agent_settled before recovery. The repository is currently private, and there is no independent website.",
+			"zh": "在 Pi 用户目录安装一次，即可跨项目应用声明式工具策略。策略修复与符合条件的终止恢复共用每次原始输入的一次额度；工具受限时返回真实原生替代工具，恢复等待 agent_settled。仓库目前为私有，没有独立站点。"
+		},
+		"inspectedRevision": "ba73409bd7326fa1a425e5faa918a285cde42de5"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pi-agent-policy-family-2026-09-14-03-01.png",
+		"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+		"rgbaSha256": "adf041d555fff54e9102b46a0041f5d93202eede62fb256de964ccab6a59df63",
+		"source": "https://github.com/nocoo/pi-agent-policy/blob/ba73409bd7326fa1a425e5faa918a285cde42de5/logo.png",
+		"bytes": 3982512,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pi-agent-policy/v1.0.3",
+		"version": "1.0.3",
+		"manifestSha256": "1beff6c43a487be2da989f6631d074ca3f29fd4a42fbc1f7983f03b68b3d8d40"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "62309587-8f7a-4bf8-ac0a-08744d8f8131",
+			"source": "artwork/brands/pi-agent-policy/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/pi-agent-policy/v1.0.0/source-light-request.json",
+			"response": "/textures/pi-agent-policy/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pi-agent-policy/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pi-agent-policy/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pi-agent-policy/v1.0.0/texture-light.png",
+				"sha256": "a55bd4ebf895049e78736969f54d3c669b2fac6c03aa1056de05f2d3ed0931c8",
+				"bytes": 1901068,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b144acaf-f860-4a93-9237-0c8be2429e69",
+			"source": "artwork/brands/pi-agent-policy/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/pi-agent-policy/v1.0.0/source-dark-request.json",
+			"response": "/textures/pi-agent-policy/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pi-agent-policy/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pi-agent-policy/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pi-agent-policy/v1.0.0/texture-dark.png",
+				"sha256": "77e7d84663ff3441b7792cb72b7f498280b3435669a32177c2905165f471b750",
+				"bytes": 1847608,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.21427678913164,
+		"darkMinimum": 5.518703440697855,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:40:50.719Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

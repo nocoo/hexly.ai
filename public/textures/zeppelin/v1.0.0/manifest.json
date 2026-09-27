@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "zeppelin",
+	"version": "1.0.0",
+	"root": "/textures/zeppelin/v1.0.0",
+	"canonical": "https://hexly.ai/projects/zeppelin#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/zeppelin/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Hull-machining grain", "zh": "舰体合纹" },
+		"description": {
+			"en": "Elongated hull-machining traces and fine docking arcs form a shallow engineered paper field.",
+			"zh": "长条舰体加工纹与细密对接弧线构成纸面浅浮雕。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zeppelin-family-2026-09-19-01-01.png",
+		"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26",
+		"rgbaSha256": "b257ed5f15f796d31060f5bff14c46fcf98c2d2fcd71d4d035a5cf0e5f6ddcbf",
+		"source": "https://h.no.mt/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+		"bytes": 2824917,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/zeppelin/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "0171cd2f06767817f11c2a64af932005a8a42443d331b08909fbb2519b6a3e0e"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5724813c-05aa-4922-8baa-a625934429e3",
+			"source": "artwork/brands/zeppelin/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/zeppelin/v1.0.0/source-light-request.json",
+			"response": "/textures/zeppelin/v1.0.0/source-light-response.json",
+			"prompt": "/textures/zeppelin/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/zeppelin/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/zeppelin/v1.0.0/texture-light.png",
+				"sha256": "382a650442a749372e02d002d93a67eb62f48a64203cf5030ded97d4d93f594a",
+				"bytes": 1872666,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fad10eda-ea7a-4893-b6fa-68719137e099",
+			"source": "artwork/brands/zeppelin/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/zeppelin/v1.0.0/source-dark-request.json",
+			"response": "/textures/zeppelin/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/zeppelin/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/zeppelin/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/zeppelin/v1.0.0/texture-dark.png",
+				"sha256": "cbf1fcffdb04a76573300c6447cab5e6e49627f76ef41411c42de35f35168990",
+				"bytes": 1953226,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1872666,
+			"sha256": "382a650442a749372e02d002d93a67eb62f48a64203cf5030ded97d4d93f594a"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 223228,
+			"sha256": "a5f0f50d896e564491a6c27daa7cdeee22272228ce0eb63e4a2619c1527fd084"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 17214,
+			"sha256": "dd4883143870625e7c39a65bc46e0a5ce94fe2f57dd8f0e6c9fa9eedd6818978"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3159,
+			"sha256": "a52ecacfd30e8c9d82e9bb79c206c6b9796f897e0ce342dbe6b1c647d95d0677"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "fb038578edbd0be5a12e0bbdc68bf5e17a0d1c53a96def26e528edcba00991b9"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "5560fcee21741ed000f2008463fed711323604f4f53cd6c068f5412d5b257054"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1157,
+			"sha256": "6ff9a141206c070c511e44c5d29ecc06db97953aa46079f608e69818299009be"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1953226,
+			"sha256": "cbf1fcffdb04a76573300c6447cab5e6e49627f76ef41411c42de35f35168990"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 285336,
+			"sha256": "c741da0cb1c2d9858ac68ddf0960eff6d1be2b6269812d2060cfa4d500668d64"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16824,
+			"sha256": "14603700b81fd9ec813cea432142a2ae27ec810cf8f5b28954e5b4b08f243750"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3195,
+			"sha256": "0fdb82289f18fd8dd20a0b01f45d60135e7c78625f75b7694ad19b7a0a42e02c"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "cd4cdee2c9800c0d0c4c65105ff1fb4472127e5436eea6f635f9dfb5d8de76d7"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "beeea122b35f524fed09c893c5b39ed7a922d7b9093257eb4e868040a802fa52"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1157,
+			"sha256": "92454078d55ed46b606b1cce54e175283a944145656e7916a3810d1519bc6a90"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5461,
+			"sha256": "9ffebe8a63fb9a3d1e4ae30726cd5ed98fc05c2be3ccdf5d55b9782a639e7f93"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1248,
+			"sha256": "1b1edfe1788a4f05deee1073e8c401e704a28de426492d91824b75909f20e858"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "2ae6a499b8b2e35fea6b97ca8524e5124af0bfe182a2cf7bba5817f3be403c54"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2645,
+			"sha256": "948ef726bdf7a7b556c5e47e7427492ae3ae9b15df1dc462d38997ba5bc63cde"
+		},
+		{
+			"path": "/textures/zeppelin/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3509,
+			"sha256": "fd99d8c9985b5ae74612f2081ce6989425e922ad678171b6361e0dc3e71c9a35"
+		}
+	]
+}

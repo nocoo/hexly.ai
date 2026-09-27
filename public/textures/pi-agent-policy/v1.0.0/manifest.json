@@ -1,0 +1,210 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "pi-agent-policy",
+	"version": "1.0.0",
+	"root": "/textures/pi-agent-policy/v1.0.0",
+	"canonical": "https://hexly.ai/projects/pi-agent-policy#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/pi-agent-policy/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Service-mat contact grain",
+			"zh": "复位触纹"
+		},
+		"description": {
+			"en": "Locating recesses, open contact channels and short return grooves recall an instrument service mat.",
+			"zh": "定位凹纹、开放接触槽与短回路压纹呼应仪器检修垫。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/pi-agent-policy-family-2026-09-14-03-01.png",
+		"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+		"rgbaSha256": "adf041d555fff54e9102b46a0041f5d93202eede62fb256de964ccab6a59df63",
+		"source": "https://github.com/nocoo/pi-agent-policy/blob/ba73409bd7326fa1a425e5faa918a285cde42de5/logo.png",
+		"bytes": 3982512,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/pi-agent-policy/v1.0.3",
+		"version": "1.0.3",
+		"manifestSha256": "1beff6c43a487be2da989f6631d074ca3f29fd4a42fbc1f7983f03b68b3d8d40"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "62309587-8f7a-4bf8-ac0a-08744d8f8131",
+			"source": "artwork/brands/pi-agent-policy/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/pi-agent-policy/v1.0.0/source-light-request.json",
+			"response": "/textures/pi-agent-policy/v1.0.0/source-light-response.json",
+			"prompt": "/textures/pi-agent-policy/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/pi-agent-policy/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pi-agent-policy/v1.0.0/texture-light.png",
+				"sha256": "a55bd4ebf895049e78736969f54d3c669b2fac6c03aa1056de05f2d3ed0931c8",
+				"bytes": 1901068,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b144acaf-f860-4a93-9237-0c8be2429e69",
+			"source": "artwork/brands/pi-agent-policy/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/pi-agent-policy/v1.0.0/source-dark-request.json",
+			"response": "/textures/pi-agent-policy/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/pi-agent-policy/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/pi-agent-policy/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pi-agent-policy/v1.0.0/texture-dark.png",
+				"sha256": "77e7d84663ff3441b7792cb72b7f498280b3435669a32177c2905165f471b750",
+				"bytes": 1847608,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1901068,
+			"sha256": "a55bd4ebf895049e78736969f54d3c669b2fac6c03aa1056de05f2d3ed0931c8"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 258952,
+			"sha256": "6e11aa88dbc0d0a066f263db455cac0142aa69baccb57ace2b62865c128a1223"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16194,
+			"sha256": "24a7031f6c72ad99078468f09ae0eef380a040bfb891ef208cfc71581e2944e2"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3216,
+			"sha256": "875117781362355ae09014756d7de7c1fe2d214f0b25ca29c5db9dd652c7f159"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "66a052f2912bfd94c96616510759ec7223690afdbb7ae59068cce52d796c1042"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "7b56398c3f959d0f15d1e6170d7ca35b1e8b0f9845d0371c6b4f4548ab82b67a"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1119,
+			"sha256": "821406786741fa220d334af135a5fb0095c15ae7b3f574d345e58dc8e5734209"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1847608,
+			"sha256": "77e7d84663ff3441b7792cb72b7f498280b3435669a32177c2905165f471b750"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 260438,
+			"sha256": "75c0e292a2dd3884e2e3301db996190e0f040c427a9c5ee7e92038ca0e02aa3b"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12990,
+			"sha256": "8a6062de8daa134d1d402ad3de65c7f7b2ed487b81369db66b94b01f6c4f65a7"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3252,
+			"sha256": "7b4bbb0f3243438c52de140b334929e1753a84dc866b655a2cd203f728986a40"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "9023881e61dbd6d130c73c6fca1598c591001cec2f1716d4527a10bbf6eb76ec"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "05725d4a194af5175734080c9a6d0598c452751215de1494a193882e2870b28f"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1119,
+			"sha256": "4605f5b62eca0a1ebffa4b6f5ccc77a5f0c444704a5cda93fe91116e59c775d4"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5884,
+			"sha256": "38f795b7d46c2cd42e654e2ef44f72b0cc716a0cfe3bbf9f186bd3dd57bbb61d"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1428,
+			"sha256": "2ab2d204d18d1783ac9f45bffdf0c5e2d1aea8f590b7505ad7e83c7d7f3f9330"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1768,
+			"sha256": "0df30b787a6a88c68a951c098eafbd2528cc1fa6014cb616f8cd3432a32df86d"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2691,
+			"sha256": "6f438a30af2e9074ddf39a930a7bf02f471c57891ad6c6208b9f261d45e11a5c"
+		},
+		{
+			"path": "/textures/pi-agent-policy/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3635,
+			"sha256": "f0673f1a94793ab22743dcf3f39ad4cbc3e65f961066fb3953ad5a408d7ef414"
+		}
+	]
+}

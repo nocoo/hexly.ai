@@ -384,5 +384,22 @@
 			}
 		]
 	},
-	"socialImage": "/og/diorama-journey-family-2026-09-17-01-01.jpg"
+	"socialImage": "/og/diorama-journey-family-2026-09-17-01-01.jpg",
+	"brandTexture": {
+		"root": "/textures/diorama-journey/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Model-board contour grain",
+			"zh": "模型层纹"
+		},
+		"description": {
+			"en": "Stepped model-board contours, construction arcs and compressed fibers recall miniature scene making.",
+			"zh": "层叠模型板轮廓、构造弧纹与压缩纤维呼应微缩场景制作。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	}
 }

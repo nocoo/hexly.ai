@@ -28,6 +28,11 @@ const fixture = await json("public/textures/frogie/v1.0.0/manifest.json");
 
 describe("independent campaign textures", () => {
 	it("covers active projects, retains completed archives and preserves original identity and old kits", async () => {
+		const expectedTextureIds = [
+			...scope.activeProjectIds,
+			...scope.retainedArchivedProjectIds,
+			"pi-agent-policy",
+		].sort();
 		expect(baselineProjects.map((p) => p.id)).toEqual(
 			baseline.projects.map((p) => p.id),
 		);
@@ -36,11 +41,9 @@ describe("independent campaign textures", () => {
 				.filter((p) => p.brandTexture)
 				.map((p) => p.id)
 				.sort(),
-		).toEqual(
-			[...scope.activeProjectIds, ...scope.retainedArchivedProjectIds].sort(),
-		);
+		).toEqual(expectedTextureIds);
 		expect(baselineProjects.filter((p) => p.brandTexture)).toHaveLength(
-			scope.expectedNewPackCount,
+			expectedTextureIds.length,
 		);
 		for (const project of baselineProjects) {
 			const row = baseline.projects.find((p) => p.id === project.id);
@@ -70,7 +73,7 @@ describe("independent campaign textures", () => {
 				).toBe(row.existingKit.manifestSha256);
 		}
 		const pi = projects.find((p) => p.id === "pi-agent-policy");
-		expect(pi?.brandTexture).toBeUndefined();
+		expect(pi?.brandTexture?.model).toBe("gpt-image-2.5-flare");
 		expect(pi?.brandKit?.version).toBe("1.0.3");
 		expect(catalogueProblems(projects)).toEqual([]);
 	}, 30_000);

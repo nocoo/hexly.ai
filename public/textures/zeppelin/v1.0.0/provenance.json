@@ -1,0 +1,118 @@
+{
+	"project": "zeppelin",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Hull-machining grain", "zh": "舰体合纹" },
+		"motif": "A distributed field of elongated chamfered hull-machining traces, fine nested inset seams, open docking-alignment arcs and short satin-milled ribs. Change the orientation of broad scored regions and connect them through a continuous shallow substrate. No spacecraft silhouette, separate armor plates, vessel, yellow stripes, stars, galaxy, central emblem or perspective scene.",
+		"description": {
+			"en": "Elongated hull-machining traces and fine docking arcs form a shallow engineered paper field.",
+			"zh": "长条舰体加工纹与细密对接弧线构成纸面浅浮雕。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/zeppelin.json",
+		"purpose": {
+			"en": "Explore an original industrial science-fiction fleet through 17 mission series and 25 archive entries. Three modeled vessels provide seven preserved HD views each; planned designs keep explicit placeholders and unknown dimensions.",
+			"zh": "通过 17 个任务系列、25 个档案探索原创工业科幻舰队。三艘已建模舰船各保留七个高清视图；规划设计明确使用占位，并保留未知尺寸。"
+		},
+		"inspectedRevision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zeppelin-family-2026-09-19-01-01.png",
+		"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26",
+		"rgbaSha256": "b257ed5f15f796d31060f5bff14c46fcf98c2d2fcd71d4d035a5cf0e5f6ddcbf",
+		"source": "https://h.no.mt/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+		"bytes": 2824917,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/zeppelin/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "0171cd2f06767817f11c2a64af932005a8a42443d331b08909fbb2519b6a3e0e"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "5724813c-05aa-4922-8baa-a625934429e3",
+			"source": "artwork/brands/zeppelin/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/zeppelin/v1.0.0/source-light-request.json",
+			"response": "/textures/zeppelin/v1.0.0/source-light-response.json",
+			"prompt": "/textures/zeppelin/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/zeppelin/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/zeppelin/v1.0.0/texture-light.png",
+				"sha256": "382a650442a749372e02d002d93a67eb62f48a64203cf5030ded97d4d93f594a",
+				"bytes": 1872666,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fad10eda-ea7a-4893-b6fa-68719137e099",
+			"source": "artwork/brands/zeppelin/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/zeppelin/v1.0.0/source-dark-request.json",
+			"response": "/textures/zeppelin/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/zeppelin/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/zeppelin/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/zeppelin/v1.0.0/texture-dark.png",
+				"sha256": "cbf1fcffdb04a76573300c6447cab5e6e49627f76ef41411c42de35f35168990",
+				"bytes": 1953226,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.42
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.940939406992076,
+		"darkMinimum": 4.7183154625039805,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:43:56.117Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
