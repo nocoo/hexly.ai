@@ -277,17 +277,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/dotty/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/dotty/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Ceramic measures", "zh": "瓷面刻度" },
+		"name": {
+			"en": "Satin ceramic grain",
+			"zh": "陶方浅纹"
+		},
 		"description": {
-			"en": "Finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center.",
-			"zh": "细颗粒瓷釉与大尺度浅方格形成可读的几何秩序，留白处打断格子，不争抢黑白原标。"
+			"en": "Staggered ceramic contours, satin grain and shallow grout channels form a quiet geometric field.",
+			"zh": "错落陶瓷轮廓、缎面细纹与浅接缝构成柔和几何底纹。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.29
+		"surfaceOpacity": 0.45
 	}
 }
