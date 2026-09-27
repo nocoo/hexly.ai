@@ -1,5 +1,56 @@
 # Changelog
 
+## [1.1.2] - 2026-09-27
+
+### Documentation
+
+- define consistent bird texture batch ([3693025](https://github.com/nocoo/hexly.ai/commit/369302568b64da903d06daec6fd1c75d28f14414))
+- define consistent material texture batch ([b0dec28](https://github.com/nocoo/hexly.ai/commit/b0dec28b3354adbe4b5eee7b63a24922b4717667))
+- refine material texture scale and detail ([95f7092](https://github.com/nocoo/hexly.ai/commit/95f709230044b311a22614716a21d28fa0e6c9a3))
+- retain material texture review progress ([2559200](https://github.com/nocoo/hexly.ai/commit/25592004c1e2d3df4db1dd2d5220f145ec9ec416))
+- record material refinement decisions ([5f99c9d](https://github.com/nocoo/hexly.ai/commit/5f99c9de3b309e826a1e1a4df31149f4871ec255))
+- retain inspected material candidates ([7054130](https://github.com/nocoo/hexly.ai/commit/70541305ae3050de108d03b33fee9997fa36f5b5))
+- preserve material density refinement ([4faa8ef](https://github.com/nocoo/hexly.ai/commit/4faa8ef2f2ed84e74fdc38e518e8bc2ddd52e1a6))
+- complete material texture review batch ([27aac3a](https://github.com/nocoo/hexly.ai/commit/27aac3afc10190823c95236a0074c1a982c88c39))
+- define full-square texture experiments ([0dd4fc0](https://github.com/nocoo/hexly.ai/commit/0dd4fc06a562e471fc79ca0b209b0e563c02e7ce))
+- prepare full-square texture rollout ([34449dd](https://github.com/nocoo/hexly.ai/commit/34449dd1d3f3a5b2972761c6c4dd391966c122a8))
+- audit superseded texture resources ([0f5e515](https://github.com/nocoo/hexly.ai/commit/0f5e515a0132acc8cb96cf71f78cd4043c010bc5))
+- register full-square texture assets ([9f6808d](https://github.com/nocoo/hexly.ai/commit/9f6808dc706719e665e170325c172479b3882177))
+- record texture review and retirement audit ([a13d93d](https://github.com/nocoo/hexly.ai/commit/a13d93d22c56623ea84a9b1c95ecfcd09fd7d7a5))
+- audit all superseded texture packs ([e4893d1](https://github.com/nocoo/hexly.ai/commit/e4893d1b734b748bcc7bb9b8a5ae65d51acd5326))
+- record texture publication and validation ([e646f70](https://github.com/nocoo/hexly.ai/commit/e646f70ccf94563375da475101099cfdf4278499))
+- pin release after verified asset retirement ([7b7b837](https://github.com/nocoo/hexly.ai/commit/7b7b837d6ed486785f5a1dd85e57a8f44691b1c0))
+- record verified icon publication ([19b52d7](https://github.com/nocoo/hexly.ai/commit/19b52d708c446804840c98527ce17367b6cf6659))
+
+### Fixes
+
+- load local materials in texture reviews ([a314b36](https://github.com/nocoo/hexly.ai/commit/a314b363c6fac4d78deeffbdf7aa0fa2953807db))
+- preserve request state during tls retries ([451f0f4](https://github.com/nocoo/hexly.ai/commit/451f0f408ee925d21f29e3e662c935aa1989d9de))
+- show revised material review direction ([4f8562c](https://github.com/nocoo/hexly.ai/commit/4f8562c712ab2614f49cda142eaf150edb994094))
+- align material review with refinements ([2cd8c8a](https://github.com/nocoo/hexly.ai/commit/2cd8c8ab55dfa006a6c21fdd55fe01c8df2a9595))
+- preserve resumed coverage experiments ([7e2f0e1](https://github.com/nocoo/hexly.ai/commit/7e2f0e1003dc91c3234f2799467b154295b581a9))
+- soften full-square banner texture edges ([6e512fa](https://github.com/nocoo/hexly.ai/commit/6e512fa16ddc27137e9354722ac3b1050f39c4c7))
+- poll large local test asset trees ([2c57892](https://github.com/nocoo/hexly.ai/commit/2c57892235d4d2210023a089074217f0983c9f23))
+- prevent retired assets from resurfacing ([d319988](https://github.com/nocoo/hexly.ai/commit/d3199889e9c1a6223b8f59541411641c6554b1b7))
+
+### Features
+
+- normalize bird texture surfaces ([685e94c](https://github.com/nocoo/hexly.ai/commit/685e94cb9e5e9f65b22cc344dd9f32e66f37b2e5))
+- adopt first full-square texture packs ([c460434](https://github.com/nocoo/hexly.ai/commit/c4604344296d7f51fe19ca54492c4874fd8051fc))
+- adopt rounded material texture fields ([244abcd](https://github.com/nocoo/hexly.ai/commit/244abcd0760f2add3aa938303845ddea3d126323))
+- adopt stone and instrument textures ([ab23318](https://github.com/nocoo/hexly.ai/commit/ab23318346f4b6b3d88fe8ee5618be69e05b3daa))
+- adopt remaining material texture packs ([29e1bb2](https://github.com/nocoo/hexly.ai/commit/29e1bb2b891aced67b912330d85c83c9a38b3d39))
+- preview icons with approved textures ([e5eb78c](https://github.com/nocoo/hexly.ai/commit/e5eb78c737da173c5e29cb37370db809307ad682))
+- adopt textured icons across the catalogue ([c543c23](https://github.com/nocoo/hexly.ai/commit/c543c23f864cc6b1dde879423ba0c0e1e6ad3a2e))
+
+### Maintenance
+
+- add local material texture review ([612572f](https://github.com/nocoo/hexly.ai/commit/612572f5e017ead6dec6875eb85438a33b00bc28))
+- add texture coverage comparison review ([2d533af](https://github.com/nocoo/hexly.ai/commit/2d533af276354d9ab8e395280285a6028523f6f1))
+- record texture coverage candidates ([5008c6f](https://github.com/nocoo/hexly.ai/commit/5008c6fe71e387d622e817965c84d781dc66f314))
+- prepare verified texture retirement ([ec945cb](https://github.com/nocoo/hexly.ai/commit/ec945cb8097c4df90e110c61fde1daf59bd48392))
+- require live download proof for cleanup ([d6027ad](https://github.com/nocoo/hexly.ai/commit/d6027ad65bece2bd3290c160c85a466a25d30b24))
+
 ## [1.1.1] - 2026-09-26
 
 ### Maintenance
