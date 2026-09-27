@@ -15,6 +15,28 @@
   "manualLayoutChecks": 18,
   "deploymentBytes": 6103831,
   "evidence": ".video-work/icon-texture-rollout-verify-release.log",
-  "publication": "pending; validation is local, not production proof",
-  "retirementGuard": "16 focused asset tests and full verification passed"
+  "publication": "completed; see publication-textures.json and publication-icons.json",
+  "retirementGuard": "16 focused asset tests and full verification passed",
+  "productionAcceptance": {
+    "version": "1.1.2",
+    "apiProjects": 60,
+    "browserCases": 120,
+    "actualDownloads": 9,
+    "deployment": "initial-deployment.json"
+  },
+  "postRetirement": {
+    "command": "bun run verify",
+    "result": "passed",
+    "durationSeconds": 182.8,
+    "unitTests": 450,
+    "httpTests": 36,
+    "browserTests": 99,
+    "evidence": ".video-work/icon-texture-rollout-verify-cleanup.log",
+    "survivingInventoryRecordsUnchanged": true,
+    "inventoryPaths": 13824,
+    "inventoryObjects": 12393,
+    "verifiedOriginAbsences": 595,
+    "deletedObjects": 540,
+    "deletedBytes": 107238154
+  }
 }

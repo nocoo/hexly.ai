@@ -1,0 +1,26 @@
+{
+  "version": "1.1.2",
+  "revision": "b1f396018b8f43a21091623e8bcc68156eeafe70",
+  "recordedAt": "2026-09-27T08:52:32.896407+00:00",
+  "evidence": "Successful exact-revision release helper and subsequent gh run list inspection.",
+  "runs": [
+    {
+      "databaseId": 36306795401,
+      "workflowName": "CI",
+      "displayTitle": "chore: release v1.1.2",
+      "headSha": "b1f396018b8f43a21091623e8bcc68156eeafe70",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/nocoo/hexly.ai/actions/runs/36306795401"
+    },
+    {
+      "databaseId": 36307211651,
+      "workflowName": "Release",
+      "displayTitle": "Deploy CI 36306795401",
+      "headSha": "b1f396018b8f43a21091623e8bcc68156eeafe70",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/nocoo/hexly.ai/actions/runs/36307211651"
+    }
+  ]
+}

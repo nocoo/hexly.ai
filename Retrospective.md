@@ -266,3 +266,11 @@ transparent foreground areas. Those checks now select the current icon package
 and require transparent corners plus an opaque textured center; separate original
 foreground tests remain. Update consumer selectors and semantic pixel assertions
 together when changing an approved presentation, not only the image URL.
+
+The first production-only review harness compared local `/icons/<id>/` paths
+with the CDN's `/projects/<id>/icons/` keys and rejected a correctly deployed
+image. Derive the expected production URL from the inventory and media origin,
+then verify the decoded image; local path success is not a production URL check.
+The corrected run passed all 120 page cases. A separate transient API connection
+reset was handled with bounded retries around the complete JSON response; content
+and checksum assertions remained unchanged, and all 60 API checks passed.
