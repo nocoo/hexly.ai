@@ -264,17 +264,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/runner/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/runner/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "A measured minute", "zh": "一分钟的刻度" },
+		"name": {
+			"en": "Timing-ring grain",
+			"zh": "计时轨纹"
+		},
 		"description": {
-			"en": "Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.",
-			"zh": "绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。"
+			"en": "Partial timing rings, radial ticks and brushed grain form a softly worked paper surface.",
+			"zh": "局部计时环、径向刻纹与拉丝细节构成柔和纸面底纹。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.37
+		"surfaceOpacity": 0.36
 	}
 }

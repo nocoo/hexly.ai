@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "deca",
+	"version": "1.0.1",
+	"root": "/textures/deca/v1.0.1",
+	"canonical": "https://hexly.ai/projects/deca#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/deca/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Rotary cord-contact grain", "zh": "话路卷纹" },
+		"description": {
+			"en": "Open rotary-contact curves and finely ribbed routing impressions recall a desk telephone.",
+			"zh": "开放旋转接触弧纹与细密肋纹通道呼应桌面电话。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.41
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+		"source": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"bytes": 3665035,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/deca/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "48b16103-db74-4569-8344-0de7e4318e34",
+			"source": "artwork/brands/deca/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/deca/v1.0.1/source-light-request.json",
+			"response": "/textures/deca/v1.0.1/source-light-response.json",
+			"prompt": "/textures/deca/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/deca/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.1/texture-light.png",
+				"sha256": "82ee8b5b76e593de47cffead4e9ec077f0dbefdc9e62f8d2fcb48bf0ff0363de",
+				"bytes": 1989803,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e9849c45-43ba-44a2-8355-18b6b1a777e0",
+			"source": "artwork/brands/deca/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/deca/v1.0.1/source-dark-request.json",
+			"response": "/textures/deca/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/deca/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/deca/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.1/texture-dark.png",
+				"sha256": "53d571739444a685e6b6ab8e0cba9f31dfb268a0befa29a498c19b1a905d473f",
+				"bytes": 1916415,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/deca/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1989803,
+			"sha256": "82ee8b5b76e593de47cffead4e9ec077f0dbefdc9e62f8d2fcb48bf0ff0363de"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 282734,
+			"sha256": "4949803c635b293ababda3ae4fcce29325ae9d723aea69affcbf7170b794e089"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 22772,
+			"sha256": "084117d7c82131aeb90a311d6e6b93440323e11f1c875c3cb28ef9d4b4df2b3c"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3138,
+			"sha256": "5b1ca1e3989a4fd92b094c9c1bfecd567a96aa25c5b18c2520c1906775729b8f"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "85f08c198b64209c02312a2e87147393c6a04d632542c620be1c4167da9cc8b1"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "5497ab87524d455e8017322887e562e93e5a814ade96901db2e1c84acd7faf93"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1128,
+			"sha256": "d04a13ed47607646e99df7f589097ec8dbc37b59e7242a65f7f24cf626cce51d"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1916415,
+			"sha256": "53d571739444a685e6b6ab8e0cba9f31dfb268a0befa29a498c19b1a905d473f"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 257724,
+			"sha256": "e22762ba8d6c6079454cd0de0857560932b7fe077c708722f0c4f5a398c75926"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 19244,
+			"sha256": "a2f39ac86c57f86260b50951c9e4dcc46ec6eb0a546b6ea24e035b16fd5652d8"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3174,
+			"sha256": "c627c87a55391f68d5036e50869c3bd299aeae5b2cfd4f84d31a0428ccb52a77"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "7ffea5797dd47e3cd0f8a7019375505b83878724a85cdc4aa40e59000af56438"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "42f255dd3f5451cf46ada77a3bc66c53cda4d58c68fb161353d10beef5041123"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1128,
+			"sha256": "d6270d1419669f28a7009c6865fa544408228c4f79198eb4599cb02335b2ac6d"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5244,
+			"sha256": "26b965f4035cae3c1eff4794eda761c988968e454ae80a571da17a97890731ac"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1134,
+			"sha256": "6fb1d6147472605136a3d20f3c361760f008b6e7ce6c0938653fe406489dae32"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "5a6ba828b005bff178afc7acc9eeb15c26503486d090b971fd8316edae441e11"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2631,
+			"sha256": "05d1d2d25872b25791f782af3331916583da13373876ac678fec57bd6d4827c3"
+		},
+		{
+			"path": "/textures/deca/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3465,
+			"sha256": "34cc8fcd413ffab81decc00340623e8b5e24462487563ab5912b1e2bc4de8ce5"
+		}
+	]
+}

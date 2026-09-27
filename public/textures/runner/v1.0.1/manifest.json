@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "runner",
+	"version": "1.0.1",
+	"root": "/textures/runner/v1.0.1",
+	"canonical": "https://hexly.ai/projects/runner#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/runner/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Timing-ring grain", "zh": "计时轨纹" },
+		"description": {
+			"en": "Partial timing rings, radial ticks and brushed grain form a softly worked paper surface.",
+			"zh": "局部计时环、径向刻纹与拉丝细节构成柔和纸面底纹。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.36
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+		"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+		"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+		"source": "https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png",
+		"bytes": 4230760,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/runner/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "d962ceb8b99acc629d0cbe640beaced233426c4bd02bc07e798946cc7b41cba6"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0013bf01-3225-42e2-803e-fa818c0ee9e2",
+			"source": "artwork/brands/runner/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/runner/v1.0.1/source-light-request.json",
+			"response": "/textures/runner/v1.0.1/source-light-response.json",
+			"prompt": "/textures/runner/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/runner/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/runner/v1.0.1/texture-light.png",
+				"sha256": "d9d17438d1f1b3c986dc87a2a236f91af95806289c5d7f801fe75693f186279b",
+				"bytes": 1980988,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "110b9da9-657f-479c-b307-3baef2d8581c",
+			"source": "artwork/brands/runner/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/runner/v1.0.1/source-dark-request.json",
+			"response": "/textures/runner/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/runner/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/runner/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/runner/v1.0.1/texture-dark.png",
+				"sha256": "fb0e68d9b7b349411ff91373c8d09f64847002da0750bc19bbbf66648d881b1d",
+				"bytes": 1992439,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/runner/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1980988,
+			"sha256": "d9d17438d1f1b3c986dc87a2a236f91af95806289c5d7f801fe75693f186279b"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 279522,
+			"sha256": "b21cad1a7365ee455a448dfd38eac30f6e88cfb7f7651734e182691341b98e1c"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 14688,
+			"sha256": "1f096717f63e5a7f8467052741de3f3738e344262d558661a65a6e566fbf45e2"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3127,
+			"sha256": "07c825ee162925248e352896fc9e890ce73b6f0365b4222a13d1e00033344e8e"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "18c88d58a46186dbcb7fbace7907a486e0ef2cecca484be11ac1df5e44989751"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "a66b34c74172088428c5aa064b51fbaee99a2eee4aadc7f48240bc1c8afe9395"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1159,
+			"sha256": "dc7d9fabc2f4b94b69880a43131a5decb628fef78a1c3200e8c5faf61ee382fd"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1992439,
+			"sha256": "fb0e68d9b7b349411ff91373c8d09f64847002da0750bc19bbbf66648d881b1d"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 289926,
+			"sha256": "634184a5a2dbe7b836e51db1bf9ab8c4f32343ae4b9a4f76d522a556e5e65ea9"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 15004,
+			"sha256": "7cfd41a64363e3aafe9f2262b9a167d503c2cea411d5dfc1732bdcf9b40803eb"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3163,
+			"sha256": "f0ee8daee50d9f15972ed74fd2a6d72f115e44148bf312d7fab7c3cd6a27c0d6"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "ea62c3d959b5ec1e457eabf8d8614d91525bf442d83ae813c7f4934a602f56c3"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "7d877d65529466d691eadc1c56c88d5cb1243f49bf6583da88ee7d07a1435b93"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1159,
+			"sha256": "1fe3f239c9871ab7ce8a478b9cef28765b7ea78edd0f66d6949050b7727ff274"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5269,
+			"sha256": "8271acb42dd8fa2a0d71875efda4b00221c7893062270b8566d1de948c88a502"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1120,
+			"sha256": "aec4b1a8fe2a3fe54acfb1ce767d2a241230767f5066ab6d717a890571260ee8"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "e0992f29865dd7b0a953a953a46bffaabf4f92d537bbfc7107e6299d0865c440"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2636,
+			"sha256": "e7b973b6a63910cd834b848be1a56928f2f09dc0c2b9dbfea89724f17a37bae7"
+		},
+		{
+			"path": "/textures/runner/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3474,
+			"sha256": "53d043a7de3ae785295d3815b279de4c785ada4aa30c381526ea96bfe0529ac4"
+		}
+	]
+}
