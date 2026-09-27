@@ -1,0 +1,85 @@
+{
+	"recordedAt": "2026-09-27T02:06:38.308030+00:00",
+	"state": "ready-for-owner-review",
+	"ownerAcceptance": "pending",
+	"reviewUrl": "https://index.dev.hexly.ai/.video-work/material-textures/review.html",
+	"reviewRecipe": "artwork/brand-textures/2026-09-27-materials/review.mjs",
+	"reviewRecipeSha256": "4039156e2a1f41fe7df6b63e6125162df01221e8bf41a14f62e646b70fef0dae",
+	"scope": "21 active material identities, 42 light/dark candidates. Original icons and production surfaces unchanged.",
+	"archiveValidation": {
+		"checkedAt": "2026-09-27T02:06:06.045991+00:00",
+		"requests": 56,
+		"generatedOriginals": 55,
+		"reviewStates": {
+			"pending": 42,
+			"rejected": 13
+		},
+		"providerFailures": [
+			{
+				"run": "artwork/brands/runner/texture-studies/2026-09-27-flare-materials-01/dark-attempt-03",
+				"status": "http-error",
+				"httpStatus": 500
+			}
+		],
+		"allRawBytesAndNativeDimensionsMatchReceipts": true,
+		"allExactPromptsMatchRequestHashes": true,
+		"model": "gpt-image-2.5-flare",
+		"allOwnerAcceptancePending": true
+	},
+	"candidateValidation": {
+		"checkedAt": "2026-09-27T02:05:35.919Z",
+		"projects": 21,
+		"candidates": 42,
+		"originalPngDimensions": [
+			1024,
+			1024
+		],
+		"rawHashesAndReceiptsMatch": true,
+		"allAgentInspected": true,
+		"allOwnerAcceptancePending": true,
+		"metadataOriginalIdentitiesAndBrandKitsUnchanged": true
+	},
+	"browserValidation": [
+		{
+			"width": 1440,
+			"projectCount": 21,
+			"candidates": 42,
+			"completeSquares": true,
+			"noOverflow": true,
+			"rawHashesChecked": true
+		},
+		{
+			"width": 390,
+			"projectCount": 21,
+			"candidates": 42,
+			"completeSquares": true,
+			"noOverflow": true,
+			"rawHashesChecked": false
+		},
+		{
+			"width": 320,
+			"projectCount": 21,
+			"candidates": 42,
+			"completeSquares": true,
+			"noOverflow": true,
+			"rawHashesChecked": false
+		}
+	],
+	"visualReview": {
+		"allCandidates": "Complete native canvases represented by same-size JPEG inspection copies, viewed in light/dark pairs at 300 pixels.",
+		"detailSamples": [
+			"Dogfight light/dark at native size (pilot review).",
+			"Echo light at 768 pixels.",
+			"DreamRO dark at 768 pixels."
+		],
+		"comparison": "Accepted Frogie light and Raven dark botanical textures. Project-specific differences in density, theme weight and edge extent are recorded in each raw review.",
+		"originalBytesChanged": false
+	},
+	"deferred": {
+		"catalogueIntegration": true,
+		"texturePackExport": true,
+		"r2Publication": true,
+		"iconReplacement": true,
+		"nextIconComposition": "Existing icon over the generated light texture, within an iOS continuous-corner contour."
+	}
+}
