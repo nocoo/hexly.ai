@@ -42,18 +42,14 @@ for (const [id, options, opacity] of [
 						mask: style.maskImage,
 					};
 				});
-				const root =
-					id === "pi-agent-policy"
-						? "/brands/pi-agent-policy/v1.0.3"
-						: `/textures/${id}/v1.0.0`;
-				const filename =
-					id === "pi-agent-policy"
-						? `texture-${theme}.webp`
-						: `texture-${theme}-320.webp`;
-				expect(pseudo.image).toContain(assetUrl(`${root}/${filename}`));
+				expect(pseudo.image).toContain(
+					assetUrl(brandTextureAsset(texture, theme, !!project.brandTexture)),
+				);
 				expect(pseudo.size).toBe("contain");
 				expect(pseudo.repeat).toBe("no-repeat");
-				expect(pseudo.opacity).toBe(opacity);
+				expect(pseudo.opacity).toBe(
+					project.brandTexture?.surfaceOpacity ?? opacity,
+				);
 				expect(pseudo.mask).toContain("linear-gradient");
 			}
 

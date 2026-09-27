@@ -1,0 +1,118 @@
+{
+	"project": "diorama-journey",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Model-board contour grain", "zh": "模型层纹" },
+		"motif": "A distributed field of gently stepped model-board relief bands, incomplete arch-construction grooves and small paired registration notches. Rich compressed fiber ridges and finely nested contour lines connect varied shallow curves across broad faces, recalling miniature construction and chapter progression. No island, building, archway object, lantern, landscape, detached model parts or perspective scene.",
+		"description": {
+			"en": "Stepped model-board contours, construction arcs and compressed fibers recall miniature scene making.",
+			"zh": "层叠模型板轮廓、构造弧纹与压缩纤维呼应微缩场景制作。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/diorama-journey.json",
+		"purpose": {
+			"en": "Turn source material into an original narrated miniature 3D journey. A recurring element connects the chapters; the same timeline produces a full film, chapter MP4 clips, subtitles and PPTX/PDF/ODP slides with speaker notes. Install the skill to create an independent project from its starter.",
+			"zh": "把原始材料转成原创的配音微缩 3D 旅程，以一个贯穿元素连接各个章节。同一条时间线导出完整影片、分章 MP4、字幕，以及带演讲备注的 PPTX/PDF/ODP 幻灯片。安装技能后，可从 starter 创建独立项目。"
+		},
+		"inspectedRevision": "5a89d9da4d696d812a0aa46c58b94d81b8581b18"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/diorama-journey-family-2026-09-17-01-01.png",
+		"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851",
+		"rgbaSha256": "952801c8db6127b3440dbd223c56cf2c916b83ca6100d8c6a555459c7cb993b5",
+		"source": "https://github.com/nocoo/diorama-journey/blob/5a89d9da4d696d812a0aa46c58b94d81b8581b18/logo.png",
+		"bytes": 4115562,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/diorama-journey/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "b784e5dac00ff994cecdd71c8be155dcfefbd63006573c6552e1d5675bbae3a2"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "352d1c0c-1fbf-4886-9827-2907be805404",
+			"source": "artwork/brands/diorama-journey/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/diorama-journey/v1.0.0/source-light-request.json",
+			"response": "/textures/diorama-journey/v1.0.0/source-light-response.json",
+			"prompt": "/textures/diorama-journey/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/diorama-journey/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/diorama-journey/v1.0.0/texture-light.png",
+				"sha256": "3eaae2f96227a5a75e572159eea72061d81c007bb9b996ff4b83e524662d6424",
+				"bytes": 1898094,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "959c4de3-41bd-4bfa-b7bd-2a8de203b5f3",
+			"source": "artwork/brands/diorama-journey/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/diorama-journey/v1.0.0/source-dark-request.json",
+			"response": "/textures/diorama-journey/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/diorama-journey/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/diorama-journey/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/diorama-journey/v1.0.0/texture-dark.png",
+				"sha256": "a2910daeff3f91a03d19259d74f7cdb2c90ce96f063f2e37e5d6c0221c75d264",
+				"bytes": 1905856,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.846489451285157,
+		"darkMinimum": 5.303820616124394,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:42:48.906Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

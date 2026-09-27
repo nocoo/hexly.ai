@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "dreamro",
+	"version": "1.0.1",
+	"root": "/textures/dreamro/v1.0.1",
+	"canonical": "https://hexly.ai/projects/dreamro#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/dreamro/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Equipment tooling grain", "zh": "铠作压纹" },
+		"description": {
+			"en": "Leather-tooling curves, chevron seams and hammered grain recall handcrafted adventure equipment.",
+			"zh": "皮革压花曲线、人字接缝与锤纹呼应手工冒险装备。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/dreamro.png",
+		"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc",
+		"rgbaSha256": "e0f01115493eaca0637defd46523101e4df3d8b571315948ba425eccfdb05009",
+		"source": "https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png",
+		"bytes": 17371,
+		"width": 512,
+		"height": 512,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/dreamro/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "2cbe10ef2201355378dad5f5605c2116f9eb265bdde8e1010ed759bc664e3278"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "48589d1b-7ba2-45ad-b101-46047bfaffd9",
+			"source": "artwork/brands/dreamro/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/dreamro/v1.0.1/source-light-request.json",
+			"response": "/textures/dreamro/v1.0.1/source-light-response.json",
+			"prompt": "/textures/dreamro/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/dreamro/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/dreamro/v1.0.1/texture-light.png",
+				"sha256": "356563586a327866a0928e6327feadb65cc93ec7063c0c6ae9dd87db4dedd448",
+				"bytes": 2026310,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52c2386b-7793-48c3-a376-5bd32154135b",
+			"source": "artwork/brands/dreamro/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/dreamro/v1.0.1/source-dark-request.json",
+			"response": "/textures/dreamro/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/dreamro/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/dreamro/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/dreamro/v1.0.1/texture-dark.png",
+				"sha256": "dea720f4826c33cfb641663dc1e034e8a04a19c2f54eee5c3608cf1d3523b813",
+				"bytes": 1964168,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2026310,
+			"sha256": "356563586a327866a0928e6327feadb65cc93ec7063c0c6ae9dd87db4dedd448"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 339122,
+			"sha256": "60db2cbddf8e01dab75b94f5da91b5f1474157493e28b888da582fe7a279c6d4"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 23466,
+			"sha256": "3f2339247b97810253f773dab021680e972eb1b396f6abb36176c7750a91a6aa"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3152,
+			"sha256": "f9b07fb0a5e40cb18e02347b81bd1809a6703d2fdb5935c2670098f755a20f7f"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "08d5bff30897082f07dd389f2a91a01bb35f2cfe9e4402ce6e0acd21e15097e1"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "d364b36e85ddfd9c1f80012c70c0312036ebcef37b04c7a1e63cbe92df80930d"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1118,
+			"sha256": "36d2bbff1f97aa662d230e6e87e622f5e7dedbba4f2d62fd5884ba802d6ce557"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1964168,
+			"sha256": "dea720f4826c33cfb641663dc1e034e8a04a19c2f54eee5c3608cf1d3523b813"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 307672,
+			"sha256": "4c0926a9ea1cade482cf8ea47a5d5b3039fbbe15b682658bfc993eff27e8690c"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 19748,
+			"sha256": "0cb27ae283e1dc99693823fea99c0acca9db41b77d475b75ab7c898b199d6ed0"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3188,
+			"sha256": "b2535e676a2924b92f4e247dc1507d95bd678f38f7c816cb214423c50c2e2c4a"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "0c409a2037b36e73754efe8795e1bb468dff0fdf75655767134a3a56cbf8cddb"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "da01ca8bbb4e51fe60ba0694a4287a20aa956cdb48ab854cf55179ae7b02d16a"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1118,
+			"sha256": "2d3174a18baac01fa5664725464e10ea18bc497d8cff324e964528e9b1c0c8ec"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5252,
+			"sha256": "14de49a6dcd692797091f2c80d28f22c266c85e0138a07dc8beb9622c2ab8a71"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1148,
+			"sha256": "76297a445a277fa63eaaabe9d702e927bdfd2d9fc0b0f36a2e2938f659c58d83"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "fff9102fbd125e5bcfb4f222cf67c1c85cf9dd2e43f3f522456ab0f918b0eb8f"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2651,
+			"sha256": "50b2a6cf1c3053364b372101ff2ad45a2dc637add5fa5e21f63fd60297f03655"
+		},
+		{
+			"path": "/textures/dreamro/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3511,
+			"sha256": "ea1d49c60f745a6e8362298dabf61babbd0227e71d2967d2ddf2736c425fde9d"
+		}
+	]
+}

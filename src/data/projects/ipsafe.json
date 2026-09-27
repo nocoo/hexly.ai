@@ -260,17 +260,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/ipsafe/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/ipsafe/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Connection channels", "zh": "连接槽道" },
+		"name": {
+			"en": "Connector-channel grain",
+			"zh": "连线触纹"
+		},
 		"description": {
-			"en": "Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.",
-			"zh": "干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。"
+			"en": "Parallel connector channels and strain-relief ridges form a continuous field of connection traces.",
+			"zh": "平行连接槽与柔性护套肋纹构成连续的接触纹理。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.38
+		"surfaceOpacity": 0.45
 	}
 }

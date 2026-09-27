@@ -326,5 +326,22 @@
 				}
 			}
 		]
+	},
+	"brandTexture": {
+		"root": "/textures/zeppelin/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Hull-machining grain",
+			"zh": "舰体合纹"
+		},
+		"description": {
+			"en": "Elongated hull-machining traces and fine docking arcs form a shallow engineered paper field.",
+			"zh": "长条舰体加工纹与细密对接弧线构成纸面浅浮雕。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.42
 	}
 }

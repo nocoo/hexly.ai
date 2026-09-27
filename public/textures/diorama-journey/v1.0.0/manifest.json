@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "diorama-journey",
+	"version": "1.0.0",
+	"root": "/textures/diorama-journey/v1.0.0",
+	"canonical": "https://hexly.ai/projects/diorama-journey#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/diorama-journey/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Model-board contour grain", "zh": "模型层纹" },
+		"description": {
+			"en": "Stepped model-board contours, construction arcs and compressed fibers recall miniature scene making.",
+			"zh": "层叠模型板轮廓、构造弧纹与压缩纤维呼应微缩场景制作。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/diorama-journey-family-2026-09-17-01-01.png",
+		"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851",
+		"rgbaSha256": "952801c8db6127b3440dbd223c56cf2c916b83ca6100d8c6a555459c7cb993b5",
+		"source": "https://github.com/nocoo/diorama-journey/blob/5a89d9da4d696d812a0aa46c58b94d81b8581b18/logo.png",
+		"bytes": 4115562,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/diorama-journey/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "b784e5dac00ff994cecdd71c8be155dcfefbd63006573c6552e1d5675bbae3a2"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "352d1c0c-1fbf-4886-9827-2907be805404",
+			"source": "artwork/brands/diorama-journey/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/diorama-journey/v1.0.0/source-light-request.json",
+			"response": "/textures/diorama-journey/v1.0.0/source-light-response.json",
+			"prompt": "/textures/diorama-journey/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/diorama-journey/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/diorama-journey/v1.0.0/texture-light.png",
+				"sha256": "3eaae2f96227a5a75e572159eea72061d81c007bb9b996ff4b83e524662d6424",
+				"bytes": 1898094,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "959c4de3-41bd-4bfa-b7bd-2a8de203b5f3",
+			"source": "artwork/brands/diorama-journey/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/diorama-journey/v1.0.0/source-dark-request.json",
+			"response": "/textures/diorama-journey/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/diorama-journey/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/diorama-journey/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/diorama-journey/v1.0.0/texture-dark.png",
+				"sha256": "a2910daeff3f91a03d19259d74f7cdb2c90ce96f063f2e37e5d6c0221c75d264",
+				"bytes": 1905856,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1898094,
+			"sha256": "3eaae2f96227a5a75e572159eea72061d81c007bb9b996ff4b83e524662d6424"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 246064,
+			"sha256": "c600dac17180e45993727030eaf667ee3e0683bf57dfda9da36ca19448d2616c"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13558,
+			"sha256": "0b74b6db2e57cdb6d368ef1f881045c1491e686a9eb395da5e1e645bd26b462d"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3203,
+			"sha256": "305b2e36d3891a633395416874411a5d6360f111703a58662834abe35d13d216"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "b5e971c800c2633b57b06cc55ef6d9a2c32259c6a9291255638661646939ffa4"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "343e491536b628b84b37b8c7a2de19339a205a288692c70dc8e7138b3f090262"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1174,
+			"sha256": "5ec036593eb4e3f5d857e761dce436c46eacd23824947d79c4ab4c16403f3727"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1905856,
+			"sha256": "a2910daeff3f91a03d19259d74f7cdb2c90ce96f063f2e37e5d6c0221c75d264"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 273590,
+			"sha256": "52c5819d9cc5d9cfbb3f90307a603caf2f13522b3b8a5bfd72a843ff19609f0a"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 11322,
+			"sha256": "797b6b675872e577e51b0783d3e9d36d58010c5dfb34542c19f1e8983e66a976"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3239,
+			"sha256": "2202668ed1a24a9293132221071ae27c8ea91faa666e319481b735cde4281d99"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "0cc179c837550785014d2366579dbb99014ca5c68bfbab15ae797f345b3ae40a"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "dcf23bcab8e68e155729166568ba3b3bb51a86a8a3d38c993a48e20f32822cdb"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1174,
+			"sha256": "27179b192d7bae7b1cafa0d9c4e7c4d8fed14a0a6f4d1d82e9a2a98b5f593b97"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5798,
+			"sha256": "20911ff7a57eae5290e50e1d6af93b6832edb98c56ed4f511367d674d839b1bc"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1362,
+			"sha256": "0c3381e5fed3b629f970b6f7d939200b5bc0122fb9907363daa56a57bd50be18"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1768,
+			"sha256": "9c142820ff8a133d6577fd77d2a1d9125e2fcc981c94a08733c75cc21a1ea485"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2698,
+			"sha256": "3f02d1afd86e740ee2949f2762ab2d62d307d0580b1fd3cb354508a297b0d321"
+		},
+		{
+			"path": "/textures/diorama-journey/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3642,
+			"sha256": "d53626de38e46028deaf8bb68379b74f2ed1cbfde530f59d1856f41785b48c44"
+		}
+	]
+}
