@@ -22,3 +22,11 @@ hashes. Publication plans/results record the exact new texture and icon objects.
 The old texture retirement allowlist remains separate. Source-only obsolete
 experiments are excluded from CI hydration during the pending retirement; their
 local bytes remain available until production acceptance and scoped cleanup.
+
+The final read-only retirement audit extends the material-only list to all
+superseded independent packs of active projects: 27 packs, including nine bird
+versions, plus the already superseded material experiments. The exact allowlist
+contains 649 local paths and 595 R2 keys, with no surviving aliases or current
+page/profile references. 55 experimental source keys have no publication receipt;
+remote existence and actual reclaimed bytes are measured only after deployment.
+Embedded textures in the three retained identity kits are protected dependencies.
