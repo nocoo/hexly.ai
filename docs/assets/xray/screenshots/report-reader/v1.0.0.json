@@ -25,7 +25,7 @@
     },
     "rights": {
       "license": null,
-      "authorization": "Owner supplied these screenshots for the Xray project introduction and requested local preview first.",
+      "authorization": "Owner supplied these screenshots for the Xray project introduction, then approved publication with a Z+1 release.",
       "localNotice": "docs/assets/xray/screenshots/LICENSE"
     },
     "note": "The capture manifest does not record the running Git revision. The inspected clean repository revision is contextual evidence only. Original bytes, full canvas, browser chrome, transparency, and product colors are preserved. No image generation was performed."
@@ -97,7 +97,22 @@
     }
   ],
   "publication": {
-    "state": "pending",
-    "note": "Prepared for local review only; no R2 upload or website deployment has been performed. Artifact URLs reserve the intended immutable destinations."
+    "state": "verified",
+    "receipt": "docs/assets/publication.jsonl",
+    "authorization": "发布z+1，简单验证即可",
+    "objects": [
+      {
+        "key": "projects/xray/screenshots/report-reader/v1.0.0/original-ec153b86742c.webp",
+        "verifiedAt": "2026-09-27T12:00:30.669Z"
+      },
+      {
+        "key": "projects/xray/screenshots/report-reader/v1.0.0/preview-9601976442b6.webp",
+        "verifiedAt": "2026-09-27T12:00:26.835Z"
+      },
+      {
+        "key": "projects/xray/screenshots/report-reader/v1.0.0/thumbnail-f34a9840a259.webp",
+        "verifiedAt": "2026-09-27T12:00:25.404Z"
+      }
+    ]
   }
 }
