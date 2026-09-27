@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import sharp from "sharp";
 
 const base = "docs/brand-textures/2026-09-27-material-coverage";
@@ -29,9 +29,14 @@ for (const row of batch.projects) {
 		const before = row.previousCandidates[theme];
 		if (hash(await readFile(`${before.run}/raw.png`)) !== before.sha256)
 			throw new Error(`Changed prior original: ${row.id}/${theme}`);
-		const run = `${row.study}/${theme}`;
 		let proposed = `<figure class="${theme} waiting"><figcaption>New · ${theme}</figcaption><div>Generating candidate</div></figure>`;
-		if (existsSync(`${run}/raw-review.json`)) {
+		const runs = (await readdir(row.study))
+			.filter((name) => name === theme || name.startsWith(`${theme}-attempt-`))
+			.sort()
+			.reverse();
+		for (const name of runs) {
+			const run = `${row.study}/${name}`;
+			if (!existsSync(`${run}/raw-review.json`)) continue;
 			const review = JSON.parse(
 				await readFile(`${run}/raw-review.json`, "utf8"),
 			);
@@ -53,6 +58,7 @@ for (const row of batch.projects) {
 					.jpeg({ quality: 78 })
 					.toFile(`${directory}/${row.id}-${theme}-inspection.jpg`);
 				proposed = figure(run, `New · ${theme}`, row.id, theme);
+				break;
 			}
 		}
 		comparisons.push(
