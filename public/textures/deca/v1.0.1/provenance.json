@@ -1,0 +1,118 @@
+{
+	"project": "deca",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Rotary cord-contact grain", "zh": "话路卷纹" },
+		"motif": "A distributed field of shallow open helical cord-contact impressions, curved switchboard-routing tracks and sparse recessed round indexing wells. Fine nested ribbing and satin grain connect multiple turning directions within a single substrate. No telephone, handset, complete rotary dial, digits, cable prop, loose wire or coils lying above the surface.",
+		"description": {
+			"en": "Open rotary-contact curves and finely ribbed routing impressions recall a desk telephone.",
+			"zh": "开放旋转接触弧纹与细密肋纹通道呼应桌面电话。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/deca.json",
+		"purpose": {
+			"en": "Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.",
+			"zh": "通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。"
+		},
+		"inspectedRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+		"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+		"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+		"source": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+		"bytes": 3665035,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/deca/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "48b16103-db74-4569-8344-0de7e4318e34",
+			"source": "artwork/brands/deca/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/deca/v1.0.1/source-light-request.json",
+			"response": "/textures/deca/v1.0.1/source-light-response.json",
+			"prompt": "/textures/deca/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/deca/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.1/texture-light.png",
+				"sha256": "82ee8b5b76e593de47cffead4e9ec077f0dbefdc9e62f8d2fcb48bf0ff0363de",
+				"bytes": 1989803,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "e9849c45-43ba-44a2-8355-18b6b1a777e0",
+			"source": "artwork/brands/deca/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/deca/v1.0.1/source-dark-request.json",
+			"response": "/textures/deca/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/deca/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/deca/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/deca/v1.0.1/texture-dark.png",
+				"sha256": "53d571739444a685e6b6ab8e0cba9f31dfb268a0befa29a498c19b1a905d473f",
+				"bytes": 1916415,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.41
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.363512169452888,
+		"darkMinimum": 4.742547287597064,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:36:49.343Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

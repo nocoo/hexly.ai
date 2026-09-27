@@ -283,17 +283,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/echo/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/echo/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Survey linen", "zh": "测绘亚麻" },
+		"name": {
+			"en": "Survey-arc grain",
+			"zh": "测绘弧纹"
+		},
 		"description": {
-			"en": "Tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge.",
-			"zh": "亚麻衬纸上的局部方位弧与开放定位线，回应随身罗盘，也把查找位置变成安静的阅读过程。"
+			"en": "Incomplete survey arcs, small measurement notches and woven grain recall a pocket compass.",
+			"zh": "不完整测量弧线、细小刻槽与织物肌理呼应袖珍罗盘。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.42
+		"surfaceOpacity": 0.45
 	}
 }

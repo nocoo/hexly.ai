@@ -326,17 +326,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/basalt/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/basalt/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Stone and joinery", "zh": "石与榫" },
+		"name": {
+			"en": "Stone joinery grain",
+			"zh": "石作榫纹"
+		},
 		"description": {
-			"en": "Pale Hanbaiyu-like microcrystalline grain, shallow stepped joinery rebates and a few asymmetric roof-bracket alignment notches.",
-			"zh": "细磨石材的微晶、阶式榫槽与少量斗拱定位刻痕，呼应角楼模型精密而耐看的构造。"
+			"en": "Stepped stone joinery and fine marble grain become shallow construction traces in paper.",
+			"zh": "层叠石材榫接与细腻大理石肌理化为纸面浅浮雕。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.37
+		"surfaceOpacity": 0.43
 	}
 }

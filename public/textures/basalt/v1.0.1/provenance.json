@@ -1,0 +1,118 @@
+{
+	"project": "basalt",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "product-material",
+		"name": { "en": "Stone joinery grain", "zh": "石作榫纹" },
+		"motif": "A distributed field of shallow architectural ledge impressions, gently stepped dougong-like joinery channels and close flowing Hanbaiyu marble micrograin. Rounded construction traces change direction and interlock organically; restrained short chisel ridges enrich broad faces. No building, tower, roof silhouette, architectural illustration, detached masonry, colored stone or ornate emblem.",
+		"description": {
+			"en": "Stepped stone joinery and fine marble grain become shallow construction traces in paper.",
+			"zh": "层叠石材榫接与细腻大理石肌理化为纸面浅浮雕。"
+		},
+		"rationale": "Use the owner-approved full-square paper palette, fine material detail and shallow relief. Banner presentation uses a separate left-edge opacity gradient; preserve unmasked whole-canvas specimens and original icon bytes."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/basalt.json",
+		"purpose": {
+			"en": "Give React applications a consistent set of controls, layered surfaces, charts, and page layouts.",
+			"zh": "为 React 应用提供统一的控件、分层表面、图表和页面布局。"
+		},
+		"inspectedRevision": "9e226aa5c1376351ec76a659b1a33a8139892b4b"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+		"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+		"rgbaSha256": "cf680d91bf6028626966ea6a9b22de0ad53cdb9c7c60e29f519219d3079977f5",
+		"source": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
+		"bytes": 3445051,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/basalt/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5f2d3eeb1f7b2b4422e2ca9f67d54e694d411af7cdb072d1b530ee1e997aa505"
+	},
+	"sourceInventory": "docs/brand-textures/2026-09-27-material-rollout/export-inventory.json",
+	"sourceInventorySha256": "057807839fb75182fea8630d391b6c0de433dba7407949baf6a47ab0876f12db",
+	"siteBaseline": "34449dd1d3f3a5b2972761c6c4dd391966c122a8",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "76835c11-0a45-401b-94c9-914ba2199824",
+			"source": "artwork/brands/basalt/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/basalt/v1.0.1/source-light-request.json",
+			"response": "/textures/basalt/v1.0.1/source-light-response.json",
+			"prompt": "/textures/basalt/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/basalt/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/basalt/v1.0.1/texture-light.png",
+				"sha256": "0100d11b972b0b3e9f25c13249131d46430ff86c22b2f886b2b0f9cc9ec80ef8",
+				"bytes": 1962864,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ef133caa-cddd-4bcf-a25b-6f15aa0d161d",
+			"source": "artwork/brands/basalt/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/basalt/v1.0.1/source-dark-request.json",
+			"response": "/textures/basalt/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/basalt/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/basalt/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/basalt/v1.0.1/texture-dark.png",
+				"sha256": "d794c2e0355d0691f65f3fd369b4367fe8d7b1bb84507c0692293bb7b1f71bb5",
+				"bytes": 2018606,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.43
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.597031988883091,
+		"darkMinimum": 4.711990982011725,
+		"target": 4.7
+	},
+	"recordedAt": "2026-09-27T06:33:24.598Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

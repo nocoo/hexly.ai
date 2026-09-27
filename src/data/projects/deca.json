@@ -257,17 +257,20 @@
 		]
 	},
 	"brandTexture": {
-		"root": "/textures/deca/v1.0.0",
-		"version": "1.0.0",
+		"root": "/textures/deca/v1.0.1",
+		"version": "1.0.1",
 		"scope": "hexly-campaign",
-		"name": { "en": "Switchboard grain", "zh": "交换台肌理" },
+		"name": {
+			"en": "Rotary cord-contact grain",
+			"zh": "话路卷纹"
+		},
 		"description": {
-			"en": "Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.",
-			"zh": "哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。"
+			"en": "Open rotary-contact curves and finely ribbed routing impressions recall a desk telephone.",
+			"zh": "开放旋转接触弧纹与细密肋纹通道呼应桌面电话。"
 		},
 		"format": "webp",
 		"display": "single",
 		"model": "gpt-image-2.5-flare",
-		"surfaceOpacity": 0.32
+		"surfaceOpacity": 0.41
 	}
 }

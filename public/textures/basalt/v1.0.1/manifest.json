@@ -1,0 +1,207 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "basalt",
+	"version": "1.0.1",
+	"root": "/textures/basalt/v1.0.1",
+	"canonical": "https://hexly.ai/projects/basalt#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/basalt/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Stone joinery grain", "zh": "石作榫纹" },
+		"description": {
+			"en": "Stepped stone joinery and fine marble grain become shallow construction traces in paper.",
+			"zh": "层叠石材榫接与细腻大理石肌理化为纸面浅浮雕。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.43
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+		"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+		"rgbaSha256": "cf680d91bf6028626966ea6a9b22de0ad53cdb9c7c60e29f519219d3079977f5",
+		"source": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
+		"bytes": 3445051,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": {
+		"root": "/brands/basalt/v1.0.0",
+		"version": "1.0.0",
+		"manifestSha256": "5f2d3eeb1f7b2b4422e2ca9f67d54e694d411af7cdb072d1b530ee1e997aa505"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "76835c11-0a45-401b-94c9-914ba2199824",
+			"source": "artwork/brands/basalt/texture-studies/2026-09-27-flare-full-square-01/light",
+			"request": "/textures/basalt/v1.0.1/source-light-request.json",
+			"response": "/textures/basalt/v1.0.1/source-light-response.json",
+			"prompt": "/textures/basalt/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/basalt/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/basalt/v1.0.1/texture-light.png",
+				"sha256": "0100d11b972b0b3e9f25c13249131d46430ff86c22b2f886b2b0f9cc9ec80ef8",
+				"bytes": 1962864,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ef133caa-cddd-4bcf-a25b-6f15aa0d161d",
+			"source": "artwork/brands/basalt/texture-studies/2026-09-27-flare-full-square-01/dark",
+			"request": "/textures/basalt/v1.0.1/source-dark-request.json",
+			"response": "/textures/basalt/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/basalt/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/basalt/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/basalt/v1.0.1/texture-dark.png",
+				"sha256": "d794c2e0355d0691f65f3fd369b4367fe8d7b1bb84507c0692293bb7b1f71bb5",
+				"bytes": 2018606,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "delegated-agent",
+			"ownerReviewedExactBytes": false,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/basalt/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1962864,
+			"sha256": "0100d11b972b0b3e9f25c13249131d46430ff86c22b2f886b2b0f9cc9ec80ef8"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 299934,
+			"sha256": "c5693356f0ec7e2aa510fe1783ba4e2a3444715de02530921dd351f1c11ebe8d"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 15914,
+			"sha256": "9130165fed52a8bf554df1d220474eb1f5a59fa5a3638141d45e16cdd3c27098"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3172,
+			"sha256": "131e99855ebea9473948e7d6c34be445803c233c5112d477845d823b18136c0a"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "d12e9c61fcc4c76c024b04c1923e69793c95d2fa3e7061b7bcc4f5d299c43c72"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "f4eb242c8f7f4adad878c414a8492a4435613a8f523445f303a97140606d85b0"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1149,
+			"sha256": "fde530273708aa68b104bf079586750a80cf9b9aa526fbe110d63f772d6ef492"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2018606,
+			"sha256": "d794c2e0355d0691f65f3fd369b4367fe8d7b1bb84507c0692293bb7b1f71bb5"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 333458,
+			"sha256": "dcf45492da1cc50501d48cd8398915b4954a595b01d1b4efa1e5b3a268e69601"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 15780,
+			"sha256": "e4da19fce5bf095a593777ebaae271b4f662876867d6033c9aac470bebcbea77"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3208,
+			"sha256": "8582e69bc4d251ce65d02ca703665b4ff5dd462b77b1593057e1da83850a37ec"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "64245915cb8478e662e938bd5d8722ee061800a4209c7aa01ed0dd47911a4a42"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "c70415e0ac52fa54c2bcd2def763c48eb594223afe1b1831bddaad9ebb0b04dc"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1149,
+			"sha256": "f565686208f429f1db92b55b2d7aa8250846d56fda74b0f9e04fe7d42a01cae7"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5220,
+			"sha256": "a90e61e8303253db681953020428db160034697206d04c94863ec57fc30a3835"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1151,
+			"sha256": "a4ded5e33ea3278483a9916ba189389e1db274453165dc602af12d716f9a2c83"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "f236f6660db95581fb61950e2153ad005de5f99d9c9a7ec4ced9d42a54810208"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2632,
+			"sha256": "24575d96b57a20037939ff17bef438f44a7ea64c258c79db46d2ba462fe78c3b"
+		},
+		{
+			"path": "/textures/basalt/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3474,
+			"sha256": "2547224a6c689936bcd9d0d7caad7eae77d8af02bd538e84864cb7c318063dda"
+		}
+	]
+}
