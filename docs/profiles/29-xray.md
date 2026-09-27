@@ -13,6 +13,21 @@
 - Profile revision: `9a7ad63e1e96428f9dcd12214bcdbd470b3b51c6`
 - Repository revision inspected: `16175dc87ef406e8cf3343ab8808b60e8f53cc8a`
 
+## Product screenshots
+
+Ordered, optional project previews; the detail page opens originals in a keyboard-accessible Lightbox. Original product colors and complete compositions are preserved.
+
+- Dashboard — content totals, watchlist and channel activity, and collection diagnostics. / 仪表盘：查看内容总量、关注列表与频道动态，以及采集状态。 (2972 × 2324)
+  - [Original](https://h.no.mt/projects/xray/screenshots/dashboard/v1.0.0/original-6c90ce455cf3.webp) · [Page preview](https://h.no.mt/projects/xray/screenshots/dashboard/v1.0.0/preview-37464637aa32.webp) · [Thumbnail](https://h.no.mt/projects/xray/screenshots/dashboard/v1.0.0/thumbnail-98ab1a5b3434.webp) · [Source, rights and hashes](../../docs/assets/xray/screenshots/dashboard/v1.0.0.json)
+- Watchlist feed — browse X and custom sources with translations, AI insights, and saved links. / 关注动态：集中阅读 X 与自定义来源，查看翻译、AI 摘要并保存链接。 (2972 × 2324)
+  - [Original](https://h.no.mt/projects/xray/screenshots/watchlist-feed/v1.0.0/original-87bef433b089.webp) · [Page preview](https://h.no.mt/projects/xray/screenshots/watchlist-feed/v1.0.0/preview-fba512fb424a.webp) · [Thumbnail](https://h.no.mt/projects/xray/screenshots/watchlist-feed/v1.0.0/thumbnail-b9f781c8dfcd.webp) · [Source, rights and hashes](../../docs/assets/xray/screenshots/watchlist-feed/v1.0.0.json)
+- Channels — organize report streams, tags, sidebar order, and push tokens. / 频道管理：整理报告频道、标签、侧栏顺序与推送凭证。 (2972 × 2324)
+  - [Original](https://h.no.mt/projects/xray/screenshots/channel-management/v1.0.0/original-16ef043a0048.webp) · [Page preview](https://h.no.mt/projects/xray/screenshots/channel-management/v1.0.0/preview-96a1fe320521.webp) · [Thumbnail](https://h.no.mt/projects/xray/screenshots/channel-management/v1.0.0/thumbnail-1c52c9c0b979.webp) · [Source, rights and hashes](../../docs/assets/xray/screenshots/channel-management/v1.0.0.json)
+- Report reader — read Markdown reports alongside the report list and related links. / 报告阅读：在三栏视图中浏览报告列表、Markdown 正文与相关链接。 (2972 × 2324)
+  - [Original](https://h.no.mt/projects/xray/screenshots/report-reader/v1.0.0/original-ec153b86742c.webp) · [Page preview](https://h.no.mt/projects/xray/screenshots/report-reader/v1.0.0/preview-9601976442b6.webp) · [Thumbnail](https://h.no.mt/projects/xray/screenshots/report-reader/v1.0.0/thumbnail-f34a9840a259.webp) · [Source, rights and hashes](../../docs/assets/xray/screenshots/report-reader/v1.0.0.json)
+- Tags — manage shared labels for channels, push tokens, and watchlist members. / 标签管理：统一整理频道、推送凭证与关注成员使用的标签。 (2972 × 2324)
+  - [Original](https://h.no.mt/projects/xray/screenshots/tag-management/v1.0.0/original-d67581e96108.webp) · [Page preview](https://h.no.mt/projects/xray/screenshots/tag-management/v1.0.0/preview-9aab11a52063.webp) · [Thumbnail](https://h.no.mt/projects/xray/screenshots/tag-management/v1.0.0/thumbnail-cffce2c39e1f.webp) · [Source, rights and hashes](../../docs/assets/xray/screenshots/tag-management/v1.0.0.json)
+
 ## Project goal
 
 Collect X / Twitter and custom-source content into watchlists, then read, translate, and save links from one timeline.

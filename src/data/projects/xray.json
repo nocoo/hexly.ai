@@ -355,5 +355,74 @@
 		"root": "/icons/xray/v1.0.0",
 		"width": 2048,
 		"height": 2048
+	},
+	"media": {
+		"screenshots": [
+			{
+				"id": "dashboard",
+				"src": "/screenshots/xray/dashboard/v1.0.0/original.webp",
+				"preview": "/screenshots/xray/dashboard/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/xray/dashboard/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/xray/screenshots/dashboard/v1.0.0.json",
+				"alt": {
+					"en": "Dashboard — content totals, watchlist and channel activity, and collection diagnostics.",
+					"zh": "仪表盘：查看内容总量、关注列表与频道动态，以及采集状态。"
+				},
+				"width": 2972,
+				"height": 2324
+			},
+			{
+				"id": "watchlist-feed",
+				"src": "/screenshots/xray/watchlist-feed/v1.0.0/original.webp",
+				"preview": "/screenshots/xray/watchlist-feed/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/xray/watchlist-feed/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/xray/screenshots/watchlist-feed/v1.0.0.json",
+				"alt": {
+					"en": "Watchlist feed — browse X and custom sources with translations, AI insights, and saved links.",
+					"zh": "关注动态：集中阅读 X 与自定义来源，查看翻译、AI 摘要并保存链接。"
+				},
+				"width": 2972,
+				"height": 2324
+			},
+			{
+				"id": "channel-management",
+				"src": "/screenshots/xray/channel-management/v1.0.0/original.webp",
+				"preview": "/screenshots/xray/channel-management/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/xray/channel-management/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/xray/screenshots/channel-management/v1.0.0.json",
+				"alt": {
+					"en": "Channels — organize report streams, tags, sidebar order, and push tokens.",
+					"zh": "频道管理：整理报告频道、标签、侧栏顺序与推送凭证。"
+				},
+				"width": 2972,
+				"height": 2324
+			},
+			{
+				"id": "report-reader",
+				"src": "/screenshots/xray/report-reader/v1.0.0/original.webp",
+				"preview": "/screenshots/xray/report-reader/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/xray/report-reader/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/xray/screenshots/report-reader/v1.0.0.json",
+				"alt": {
+					"en": "Report reader — read Markdown reports alongside the report list and related links.",
+					"zh": "报告阅读：在三栏视图中浏览报告列表、Markdown 正文与相关链接。"
+				},
+				"width": 2972,
+				"height": 2324
+			},
+			{
+				"id": "tag-management",
+				"src": "/screenshots/xray/tag-management/v1.0.0/original.webp",
+				"preview": "/screenshots/xray/tag-management/v1.0.0/preview.webp",
+				"thumbnail": "/screenshots/xray/tag-management/v1.0.0/thumbnail.webp",
+				"source": "docs/assets/xray/screenshots/tag-management/v1.0.0.json",
+				"alt": {
+					"en": "Tags — manage shared labels for channels, push tokens, and watchlist members.",
+					"zh": "标签管理：统一整理频道、推送凭证与关注成员使用的标签。"
+				},
+				"width": 2972,
+				"height": 2324
+			}
+		]
 	}
 }
