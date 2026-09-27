@@ -1,0 +1,48 @@
+{
+	"recordedAt": "2026-09-27T02:01:22.547699+00:00",
+	"reason": "Attempt 03 made five returned images too sparse and small. Runner dark returned HTTP 500 and is preserved without an automatic retry. Explicitly request attempt 04 for the three pairs with substantial worked area and dense tonal body.",
+	"requests": [
+		{
+			"id": "infospace",
+			"theme": "light",
+			"attempt": 4,
+			"prompt": "artwork/brands/infospace/texture-studies/2026-09-27-flare-materials-01/light-attempt-04/prompt.txt",
+			"sha256": "dd7e124b98305a3907580f3e3794899cd6c4437aa64f9c4e1620b42eb5f6966f"
+		},
+		{
+			"id": "infospace",
+			"theme": "dark",
+			"attempt": 4,
+			"prompt": "artwork/brands/infospace/texture-studies/2026-09-27-flare-materials-01/dark-attempt-04/prompt.txt",
+			"sha256": "e46805ca2656279cd21c1fb05f9922ea9acba1de44bdabc2046adf17a827f4bb"
+		},
+		{
+			"id": "matrix",
+			"theme": "light",
+			"attempt": 4,
+			"prompt": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01/light-attempt-04/prompt.txt",
+			"sha256": "9f528c87c62eb216a3d1e0c58e18fb2d39ec9479000240a61be1ab010c0bfed1"
+		},
+		{
+			"id": "matrix",
+			"theme": "dark",
+			"attempt": 4,
+			"prompt": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01/dark-attempt-04/prompt.txt",
+			"sha256": "6180ba82219663e054c98dada051778b3c0a0c02d203fe87a5b34ade3949a501"
+		},
+		{
+			"id": "runner",
+			"theme": "light",
+			"attempt": 4,
+			"prompt": "artwork/brands/runner/texture-studies/2026-09-27-flare-materials-01/light-attempt-04/prompt.txt",
+			"sha256": "03aa0937f8e1a4a5e391bbb8310c07e9e9c10d0be11f272d92225a35314d1b49"
+		},
+		{
+			"id": "runner",
+			"theme": "dark",
+			"attempt": 4,
+			"prompt": "artwork/brands/runner/texture-studies/2026-09-27-flare-materials-01/dark-attempt-04/prompt.txt",
+			"sha256": "9ea20772dade846861adc5d536b33bd0c4fc2a8f6f4919bc7e34b323d2e14ef0"
+		}
+	]
+}
