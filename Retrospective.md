@@ -274,3 +274,11 @@ then verify the decoded image; local path success is not a production URL check.
 The corrected run passed all 120 page cases. A separate transient API connection
 reset was handled with bounded retries around the complete JSON response; content
 and checksum assertions remained unchanged, and all 60 API checks passed.
+
+The cleanup revision's CI run 36309454096 hit the existing ten-minute job limit.
+Cold hydration of 8,611 fixture paths took 342.9 seconds with eight downloads;
+all 450 unit tests and 36 HTTP tests passed before cancellation during browser
+checks. Increase fixture download concurrency to 16 using the existing bounded
+pool. The largest selected object is 7.3 MB, and this path only reads CDN objects.
+Keep every fixture, checksum, assertion and timeout; verify the complete replacement
+CI run before tagging instead of extending the budget or skipping browser checks.
