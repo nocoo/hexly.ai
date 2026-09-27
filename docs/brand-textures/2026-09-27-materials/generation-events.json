@@ -207,5 +207,75 @@
 				"theme": "dark"
 			}
 		]
+	},
+	{
+		"event": "explicit-generation-attempt",
+		"attempt": 3,
+		"recordedAt": "2026-09-27T01:56:21.983733+00:00",
+		"adapter": "/Users/nocoo/workspace/personal/hexly.ai/artwork/brand-textures/2026-09-27-materials/generate.py",
+		"adapterSha256": "59f3e438c830593107a0674ef79cfc9a5bf9a8b4147db641b8f403a6e8dced9c",
+		"transportSource": "artwork/brand-textures/2026-09-27-birds/resume.py",
+		"policy": "At most five reconnects inside TLS connect before HTTP is sent. No retry after sending starts. Preserve every prior attempt. Stop scheduling on authorization/rate limits or two consecutive incomplete outcomes.",
+		"tasks": [
+			{
+				"id": "infospace",
+				"theme": "light"
+			},
+			{
+				"id": "infospace",
+				"theme": "dark"
+			},
+			{
+				"id": "matrix",
+				"theme": "light"
+			},
+			{
+				"id": "matrix",
+				"theme": "dark"
+			},
+			{
+				"id": "runner",
+				"theme": "light"
+			},
+			{
+				"id": "runner",
+				"theme": "dark"
+			}
+		]
+	},
+	{
+		"event": "explicit-generation-attempt",
+		"attempt": 4,
+		"recordedAt": "2026-09-27T02:01:22.666997+00:00",
+		"adapter": "/Users/nocoo/workspace/personal/hexly.ai/artwork/brand-textures/2026-09-27-materials/generate.py",
+		"adapterSha256": "59f3e438c830593107a0674ef79cfc9a5bf9a8b4147db641b8f403a6e8dced9c",
+		"transportSource": "artwork/brand-textures/2026-09-27-birds/resume.py",
+		"policy": "At most five reconnects inside TLS connect before HTTP is sent. No retry after sending starts. Preserve every prior attempt. Stop scheduling on authorization/rate limits or two consecutive incomplete outcomes.",
+		"tasks": [
+			{
+				"id": "infospace",
+				"theme": "light"
+			},
+			{
+				"id": "infospace",
+				"theme": "dark"
+			},
+			{
+				"id": "matrix",
+				"theme": "light"
+			},
+			{
+				"id": "matrix",
+				"theme": "dark"
+			},
+			{
+				"id": "runner",
+				"theme": "light"
+			},
+			{
+				"id": "runner",
+				"theme": "dark"
+			}
+		]
 	}
 ]
