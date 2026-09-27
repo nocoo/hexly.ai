@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex,nofollow" />
+	<title>Icon 底纹合成 · Hexly</title>
+	<style>
+		:root{color-scheme:light;--page:#f0f0e9;--surface:#f8f8f2;--ink:#30372e;--muted:#68705f;--line:#d4d8cb;--accent:#bf5c3c;--space:20px;font-family:Inter,"PingFang SC",system-ui,sans-serif;background:var(--page);color:var(--ink)}
+		:root[data-theme="dark"]{color-scheme:dark;--page:#1e2824;--surface:#27332c;--ink:#e6e9dc;--muted:#a0aa9a;--line:#3d4940;--accent:#e79670}
+		*{box-sizing:border-box}body{margin:0}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:inherit}a{color:inherit;text-underline-offset:4px}button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+		main{width:min(1320px,100%);margin:auto;padding:30px 28px 24px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:24px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--accent);margin:0 0 10px}h1{font-size:clamp(25px,3vw,36px);font-weight:600;letter-spacing:-.035em;margin:0 0 10px}.intro{font-size:14px;color:var(--muted);line-height:1.65;margin:0}.theme-toggle{flex-shrink:0;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:11px 16px;font-size:13px}.theme-toggle:hover{border-color:var(--accent)}
+		section{margin-top:24px}.series-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}.series-heading h2{font-size:19px;margin:0;font-weight:600}.series-heading span{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{min-width:0;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:18px}.card-header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:14px}.card h3{font-size:15px;font-weight:600;margin:0;line-height:1.4}.texture-name{font-size:12px;color:var(--muted);text-align:right}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}figure{margin:0;min-width:0}figcaption{font-size:12px;color:var(--muted);margin-top:8px;text-align:center}.image-button{width:100%;padding:0;border:0;background:transparent;display:block}.image-button img{width:100%;height:auto;display:block;filter:drop-shadow(0 4px 5px rgb(0 0 0 / .07))}.new-caption{color:var(--accent)}.sizes{display:flex;flex-wrap:wrap;gap:20px;row-gap:12px;align-items:flex-end;padding-top:17px;margin-top:17px;border-top:1px solid var(--line)}.sizes figure{text-align:center}.sizes img{display:block}.sizes figcaption{font-size:11px;margin-top:5px}.downloads{margin-left:auto;align-self:center;display:grid;gap:8px;font-size:11px;white-space:nowrap;color:var(--muted)}footer{font-size:12px;line-height:1.8;color:var(--muted);margin-top:24px;border-top:1px solid var(--line);padding-top:16px}footer p{margin:0}.status{color:var(--muted);padding:30px 0}
+		dialog{width:min(800px,calc(100% - 32px));max-height:calc(100% - 32px);border:1px solid var(--line);border-radius:20px;padding:20px;background:var(--surface);color:var(--ink)}dialog::backdrop{background:rgb(0 0 0 / .65)}.dialog-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.dialog-header h2{font-size:16px;margin:0}.close{border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:var(--page)}.zoom-image{display:block;width:min(640px,100%);height:auto;max-height:calc(100dvh - 160px);object-fit:contain;margin:auto}
+		@media(max-width:1050px){main{padding:24px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card:last-child{grid-column:auto}.sizes{gap:16px}}
+		@media(max-width:660px){main{padding:22px 14px}header{display:block;position:relative;padding-top:3px}header .eyebrow{max-width:calc(100% - 105px);margin-bottom:18px;letter-spacing:.12em}header .theme-toggle{position:absolute;right:0;top:0}h1{font-size:26px}.eyebrow{font-size:11px}.intro{font-size:13px}.theme-toggle{font-size:12px;padding:9px 12px}.grid{grid-template-columns:1fr}.card{padding:16px}.pair{gap:18px}.series-heading{margin-bottom:12px}section{margin-top:22px}}
+		@media(prefers-reduced-motion:no-preference){body,.card,.theme-toggle,dialog{transition:background-color .15s,color .15s,border-color .15s}.image-button:hover{transform:translateY(-2px)}}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<div><p class="eyebrow">HEXLY · ICONS / 09</p><h1>原色，新的底纹。</h1><p class="intro">动物、鸟类、拟物，各选三个。<br />点击图标放大，比较主体原色与新的浅色底纹。</p></div>
+			<button class="theme-toggle" type="button" aria-pressed="false">切换深色页面</button>
+		</header>
+		<div id="gallery"><p class="status" role="status">正在载入九组合成对比…</p></div>
+		<footer><p>大图：原版与新合成并排。下方：新图标的 32 / 64 / 96 px 实际尺寸。</p><p>所有样例使用浅色底板并保留主体原色，页面主题只改变周围环境。连续圆角用于展示，方形 PNG 用于平台图标源文件。</p></footer>
+	</main>
+	<dialog aria-labelledby="zoom-title">
+		<div class="dialog-header"><h2 id="zoom-title">图标放大预览</h2><button class="close" type="button">关闭</button></div>
+		<img class="zoom-image" alt="" width="2048" height="2048" />
+	</dialog>
+	<script type="module">
+		const gallery = document.querySelector("#gallery");
+		const dialog = document.querySelector("dialog");
+		const zoomImage = document.querySelector(".zoom-image");
+		const themeButton = document.querySelector(".theme-toggle");
+		themeButton.addEventListener("click", () => {
+			const dark = document.documentElement.dataset.theme !== "dark";
+			document.documentElement.dataset.theme = dark ? "dark" : "light";
+			themeButton.textContent = dark ? "切换浅色页面" : "切换深色页面";
+			themeButton.setAttribute("aria-pressed", String(dark));
+		});
+		document.querySelector(".close").addEventListener("click", () => dialog.close());
+		dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+		function element(tag, className, text) {
+			const result = document.createElement(tag);
+			if (className) result.className = className;
+			if (text) result.textContent = text;
+			return result;
+		}
+		function imageFigure(project, variant, label) {
+			const figure = element("figure");
+			const button = element("button", "image-button");
+			button.type = "button";
+			button.setAttribute("aria-label", `放大 ${project.title} ${label}`);
+			const img = element("img");
+			img.src = `./images/${project.id}-${variant}.webp`;
+			img.width = 512; img.height = 512; img.alt = `${project.title} · ${label}`;
+			button.append(img);
+			button.addEventListener("click", () => {
+				document.querySelector("#zoom-title").textContent = `${project.title} · ${label}`;
+				zoomImage.src = variant === "after" ? project.outputs.rounded.path : `/${project.previousPresentation.path.replace(/^public\//, "")}`;
+				zoomImage.alt = `${project.title} · ${label} 放大预览`;
+				dialog.showModal();
+			});
+			figure.append(button, element("figcaption", variant === "after" ? "new-caption" : "", label));
+			return figure;
+		}
+		try {
+			const response = await fetch("./manifest.json");
+			if (!response.ok) throw new Error("Missing review manifest");
+			const manifest = await response.json();
+			gallery.replaceChildren();
+			for (const name of ["动物", "鸟类", "拟物"]) {
+				const projects = manifest.projects.filter(project => project.group === name);
+				const section = element("section");
+				const heading = element("div", "series-heading");
+				heading.append(element("h2", "", `${name}系列`), element("span", "", `${projects[0].groupEnglish} / 03`));
+				const grid = element("div", "grid");
+				for (const project of projects) {
+					const card = element("article", "card"); card.dataset.project = project.id;
+					const header = element("div", "card-header");
+					header.append(element("h3", "", project.title), element("span", "texture-name", project.textureName));
+					const pair = element("div", "pair");
+					pair.append(imageFigure(project, "before", "原版"), imageFigure(project, "after", "新底纹"));
+					const sizes = element("div", "sizes");
+					for (const size of [32, 64, 96]) {
+						const figure = element("figure"); const img = element("img");
+						img.src = `./images/${project.id}-after.webp`; img.width = size; img.height = size; img.alt = `${project.title} ${size} 像素`;
+						figure.append(img, element("figcaption", "", `${size}`)); sizes.append(figure);
+					}
+					const downloads = element("div", "downloads");
+					for (const [kind, title] of [["rounded", "圆角 PNG ↗"], ["square", "方形 PNG ↗"]]) {
+						const link = element("a", "", title); link.href = project.outputs[kind].path; link.download = `${project.id}-${kind}.png`; downloads.append(link);
+					}
+					sizes.append(downloads); card.append(header, pair, sizes); grid.append(card);
+				}
+				section.append(heading, grid); gallery.append(section);
+			}
+		} catch (error) { gallery.replaceChildren(element("p", "status", `对比图暂时无法载入，请刷新重试。${error.message}`)); }
+	</script>
+</body>
+</html>

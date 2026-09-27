@@ -1,0 +1,414 @@
+{
+	"status": "local composition review; not adopted",
+	"generationCalls": 0,
+	"ownerInstruction": "你每个系列各找3个合成一个html我看看效果",
+	"recipe": {
+		"baseColor": "#f0f0e9",
+		"textureOpacity": 0.7,
+		"foregroundBlend": "normal alpha over",
+		"foregroundTransform": "none",
+		"bannerGradient": false,
+		"nativeOutputSize": 2048,
+		"previewSize": 512,
+		"previewEncoding": "lossless WebP"
+	},
+	"mask": {
+		"path": "ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"projects": [
+		{
+			"id": "frogie",
+			"title": "Frogie",
+			"group": "动物",
+			"groupEnglish": "Animals",
+			"textureName": "睡莲留白",
+			"foreground": {
+				"path": "public/logos/family/frogie/2026-09-06-01/03/transparent.png",
+				"sha256": "752fae79301d175093cc726313c470b4cef4b7b56d299d2e802a4a0f59e39a2b",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/frogie/v1.0.0/texture-light.png",
+				"sha256": "3bd96b278d05d3fc0350dc2880fc0c724d047f2f227bd7b2cf67e9e15fdb9ba9",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/frogie/2026-09-06-01/03/rounded.png",
+				"sha256": "5363cb58535b8904182a37a725b5f64a2f381296f82b4a15969defff3b37cbc0"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/frogie-square.png",
+					"sha256": "4f950f3e12b9bbb9991dbeccd8ea8fee6c9d8be3e8643016a646bb3e42d3c841"
+				},
+				"rounded": {
+					"path": "images/frogie-rounded.png",
+					"sha256": "075dd6161eb46bf10cefcff5566283172eea183db1790cfadb2d6cba801e4a78"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1500456,
+				"opaquePixelsInsideMask": 1500456,
+				"foregroundPixelsAtOutline": 0,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "bogo",
+			"title": "Bogo",
+			"group": "动物",
+			"groupEnglish": "Animals",
+			"textureName": "河滩叶册",
+			"foreground": {
+				"path": "public/logos/family/bogo/2026-09-07-05/04/transparent.png",
+				"sha256": "54bff5a21a25489a94b5ad3d816332dc7082ed4a41510d782a3c33a05a17fac1",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/bogo/v1.0.0/texture-light.png",
+				"sha256": "a9242249782d84caa963a0338d2f5618067bfda2754653c8964171a816dd81c0",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/bogo/2026-09-07-05/04/rounded.png",
+				"sha256": "95a93d50cf868bd2eed7a82b20be17ce6374a54f9306e1e4839ed1b4b38530a9"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/bogo-square.png",
+					"sha256": "7273aa126f20c357709f29ba71aee4c5060d259af58bb9ce9e207666a8b62018"
+				},
+				"rounded": {
+					"path": "images/bogo-rounded.png",
+					"sha256": "2e379c0f6567a766dfd960ba8cdb47ae20c005393783cb8964f9ea5add09b5a6"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1934521,
+				"opaquePixelsInsideMask": 1890942,
+				"foregroundPixelsAtOutline": 43667,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "ocelot",
+			"title": "Ocelot",
+			"group": "动物",
+			"groupEnglish": "Animals",
+			"textureName": "林下叶页",
+			"foreground": {
+				"path": "public/logos/family/ocelot/2026-09-11-01/03/transparent.png",
+				"sha256": "c593f3d709085a3fa2b5c6132cc6c43ac3bde3ebd084806137faa02a514ab4d5",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/ocelot/v1.0.0/texture-light.png",
+				"sha256": "2cecadc17a19027992702b2461e66add89b2db0ef53f460a39ae948356177a1c",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/ocelot/2026-09-11-01/03/rounded.png",
+				"sha256": "51bc8925acb727be327d7af376bbf77f867c93964b858490c098bfc480c577ba"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/ocelot-square.png",
+					"sha256": "0be92b8929b2df2590a3d8b49e6f98b5ba09d9038e5185a6a8511731d995ed63"
+				},
+				"rounded": {
+					"path": "images/ocelot-rounded.png",
+					"sha256": "7013f8d5ccf2221cc4aa95c9aecfe82610a33dde3c5e1e3a8f637759aad1ae9b"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1953070,
+				"opaquePixelsInsideMask": 1905384,
+				"foregroundPixelsAtOutline": 47687,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "falcon",
+			"title": "Falcon",
+			"group": "鸟类",
+			"groupEnglish": "Birds",
+			"textureName": "崖边叶荫",
+			"foreground": {
+				"path": "public/logos/family/falcon/2026-09-25-03/02/transparent.png",
+				"sha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/falcon/v1.0.0/texture-light.png",
+				"sha256": "e521c348bb9a2aaf1e576d9aaf165495d47481b339eac31b1bbdb6a1db2699a0",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/falcon/2026-09-25-03/02/rounded.png",
+				"sha256": "78f54e7aea9a8c7cfb338d1a3ac73de91225eb42176c5c1acfaab8a97c0598d9"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/falcon-square.png",
+					"sha256": "ee8611c0498b260cb0a1b5a20f2b375516b98e9294261bc401c57a7a3c018c5c"
+				},
+				"rounded": {
+					"path": "images/falcon-rounded.png",
+					"sha256": "2fef393c10ede32845a7aa6f238898a1515ff8ce019b16bf7915c49ff3348277"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1786245,
+				"opaquePixelsInsideMask": 1738386,
+				"foregroundPixelsAtOutline": 47860,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "owl",
+			"title": "Owl",
+			"group": "鸟类",
+			"groupEnglish": "Birds",
+			"textureName": "山毛榉叶影",
+			"foreground": {
+				"path": "public/logos/family/owl/2026-09-07-01/01/transparent.png",
+				"sha256": "c0a00da0eaadabc6ca5d88210ccbcbbbcedc6cb6465f0976980c30f9e6e7e0a8",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/owl/v1.0.1/texture-light.png",
+				"sha256": "6298df425d844120f6a4dc5fb5e21991ddf6dfec909e097506b791f01aed19e1",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/owl/2026-09-07-01/01/rounded.png",
+				"sha256": "a6a7626bfda4abcae468c9c61b8113674a2fbd1369e0a6ef161a583b8ba5b095"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/owl-square.png",
+					"sha256": "f33eed16b03d4d0385da5be9d5714b4a454ea8a54440c19d345a162dbb500ab9"
+				},
+				"rounded": {
+					"path": "images/owl-rounded.png",
+					"sha256": "6d42b0331e0f7c243ae78062d1e67ac392bbb73a1ba569ddf647417ad3d570ee"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1245748,
+				"opaquePixelsInsideMask": 1245748,
+				"foregroundPixelsAtOutline": 0,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "rio",
+			"title": "Rio",
+			"group": "鸟类",
+			"groupEnglish": "Birds",
+			"textureName": "雨林叶褶",
+			"foreground": {
+				"path": "public/logos/family/rio/2026-09-20-01/01/transparent.png",
+				"sha256": "0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/rio/v1.0.0/texture-light.png",
+				"sha256": "4793a587a87d8b6a5c1e046fb00d8c1b930fb5a9aab8495cfaa3699d0d317122",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/rio/2026-09-20-01/01/rounded.png",
+				"sha256": "c00f72d9a1b5a1a3de0118a5818cdc1f694c1345035a4dfae21a6ce33a1480e3"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/rio-square.png",
+					"sha256": "54e6c2882672c6c0576532ef07d3db8984d607e9213bafc62fa587d2cc738443"
+				},
+				"rounded": {
+					"path": "images/rio-rounded.png",
+					"sha256": "e058817d2605ae9586093d73bb978f0f4841d2badce75a186ed125c58fd66553"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 2414265,
+				"opaquePixelsInsideMask": 2365549,
+				"foregroundPixelsAtOutline": 48735,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "coffee",
+			"title": "Coffee",
+			"group": "拟物",
+			"groupEnglish": "Objects",
+			"textureName": "瓷作旋纹",
+			"foreground": {
+				"path": "public/logos/family/coffee/2026-09-11-01/01/transparent.png",
+				"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/coffee/v1.0.1/texture-light.png",
+				"sha256": "466d101bb6ad8b84ed30f005259da088f241796176686d9e276a4b136776a2b2",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/coffee/2026-09-11-01/01/rounded.png",
+				"sha256": "e21430985eb062c5b6366644dd7c3ef412c04915e37781a08087e5e8d6a52c33"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/coffee-square.png",
+					"sha256": "e00b9c10ff8c03c6c23348b50a076be2fcafd5a78d6c64fd763f7f597241bbe8"
+				},
+				"rounded": {
+					"path": "images/coffee-rounded.png",
+					"sha256": "75f3c88726395183fe419478892e619ab1611ce8f9d11f858a06659d7c7f543a"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1558626,
+				"opaquePixelsInsideMask": 1558626,
+				"foregroundPixelsAtOutline": 0,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "matrix",
+			"title": "Matrix",
+			"group": "拟物",
+			"groupEnglish": "Objects",
+			"textureName": "电路压纹",
+			"foreground": {
+				"path": "public/logos/family/matrix/2026-09-07-01/01/transparent.png",
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/matrix/v1.0.1/texture-light.png",
+				"sha256": "d84a7632e6079f46bfa9ec80c9499887a1be09b7896992e4b4ff1bb4d6ec4574",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/matrix/2026-09-07-01/01/rounded.png",
+				"sha256": "32718620d15e7435f15c853ea88b796370d44b958b6512fc336c42bb61e27d7e"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/matrix-square.png",
+					"sha256": "867c70a24b77ae897e647d010a5597652fce067b6f639c89ced5116f4e656ff2"
+				},
+				"rounded": {
+					"path": "images/matrix-rounded.png",
+					"sha256": "8d4b63c088f8023ec80ad38e0a5ae35580ec20111a2513018d92b2ba0b5a42ea"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1181916,
+				"opaquePixelsInsideMask": 1181916,
+				"foregroundPixelsAtOutline": 0,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		},
+		{
+			"id": "pi-agent-policy",
+			"title": "Pi Agent Policy",
+			"group": "拟物",
+			"groupEnglish": "Objects",
+			"textureName": "复位触纹",
+			"foreground": {
+				"path": "public/logos/family/pi-agent-policy/2026-09-14-03/01/transparent.png",
+				"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+				"width": 2048,
+				"height": 2048
+			},
+			"texture": {
+				"path": "public/textures/pi-agent-policy/v1.0.0/texture-light.png",
+				"sha256": "a55bd4ebf895049e78736969f54d3c669b2fac6c03aa1056de05f2d3ed0931c8",
+				"nativeWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"previousPresentation": {
+				"path": "public/logos/family/pi-agent-policy/2026-09-14-03/01/rounded.png",
+				"sha256": "66b189431ca39c51a6894ae05c4326b3a622c9e30a80286487bf425efd1dbccd"
+			},
+			"outputs": {
+				"square": {
+					"path": "images/pi-agent-policy-square.png",
+					"sha256": "b9138a9c25741b8f0dc26cea1272af02b55f08c670756a4ff74bf90494f20d1c"
+				},
+				"rounded": {
+					"path": "images/pi-agent-policy-rounded.png",
+					"sha256": "4a28feb0842eff6b1add0ffcfab93521ade602b8344bf99dd12ca26a4a9d4005"
+				}
+			},
+			"inspection": {
+				"opaquePixels": 1549594,
+				"opaquePixelsInsideMask": 1549594,
+				"foregroundPixelsAtOutline": 0,
+				"opaqueForegroundRgbUnchanged": true,
+				"sourceBytesUnchanged": true,
+				"foregroundScale": 1,
+				"foregroundOffset": [0, 0]
+			}
+		}
+	]
+}
