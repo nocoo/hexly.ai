@@ -1,0 +1,11 @@
+{
+  "version": "1.1.2",
+  "reason": "Verify the deployed replacements before deleting old textures, then tag the final inventory so the release checkout does not hydrate intentionally deleted objects.",
+  "initialDeployment": {
+    "helper": "scripts/release.ts",
+    "sha256": "e100eeb7555051c275ab979f11a896ad89de3ee7a2db11babee2fb476dd8bef2",
+    "executionCopy": ".video-work/release-deploy-only.ts",
+    "modification": "Only stop after exact-SHA CI, deployment and production verification; defer the tag and GitHub Release. All Git hooks and quality gates remain enabled."
+  },
+  "completion": "After verified retirement and clean commits, resume the official bun run release -- 1.1.2. It refreshes the changelog, validates/deploys the final revision, then creates the immutable tag and GitHub Release."
+}
