@@ -115,7 +115,14 @@ export async function startLocalStatus(profile: LocalProfile) {
 		{
 			stdout: "inherit",
 			stderr: "inherit",
-			env: { ...process.env, WRANGLER_SEND_METRICS: "false" },
+			env: {
+				...process.env,
+				WRANGLER_SEND_METRICS: "false",
+				// Large immutable test fixtures exhaust macOS native watcher handles.
+				...(env === "test"
+					? { CHOKIDAR_USEPOLLING: "1", CHOKIDAR_INTERVAL: "1000" }
+					: {}),
+			},
 		},
 	);
 	if (env === "dev") {
