@@ -1,0 +1,16 @@
+{
+	"recordedAt": "2026-09-27T05:56:09.624233+00:00",
+	"reason": "Matrix light/dark each exhausted five SSLEOFError events inside connect-before-http-request. No image or HTTP response returned; original unknown-outcome receipts are preserved. Explicitly retry only missing Matrix pair after unauthenticated connectivity check. GeekHub has not been requested.",
+	"projects": [
+		"matrix"
+	],
+	"attempt": 2,
+	"promptChanged": false,
+	"successfulCoffeeRepeated": false,
+	"connectivityCheck": {
+		"method": "Unauthenticated GET models",
+		"httpStatus": 401,
+		"route": "Local proxy 127.0.0.1:7890",
+		"credentialsPrinted": false
+	}
+}
