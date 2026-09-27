@@ -1,0 +1,56 @@
+{
+	"schemaVersion": 1,
+	"project": "hooky",
+	"version": "1.0.0",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Original pink faceted octopus with curled arms",
+			"zh": "保留原图的粉色碎片化章鱼与卷曲腕足"
+		},
+		"original": "/logos/family/hooky/2026-09-07-01/01/transparent.png",
+		"display": "/logos/family/hooky/2026-09-07-01/01/transparent-1024.webp",
+		"width": 900,
+		"height": 900,
+		"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/hooky/v1.0.0/texture-light.png",
+		"sha256": "341d07aba8de3f288b083f14fb2bcf7ca5235aff0af16329b4fa8cbd767a6f27",
+		"originalWidth": 1024,
+		"placementWidth": 900,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 900,
+	"height": 900,
+	"upscaledExportSizes": [
+		1024
+	],
+	"rights": {
+		"identity": "https://github.com/nocoo/hooky/blob/8ebc6aa82c51ad0bed4b6684c1c12d9e7b2a3f5a/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/hooky/2026-09-07-01",
+		"texture": "/textures/hooky/v1.0.0/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 1228,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true,
+		"approvedPilotPixelsMatch": false
+	}
+}

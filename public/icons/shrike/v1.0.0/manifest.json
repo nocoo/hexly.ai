@@ -1,0 +1,182 @@
+{
+	"schemaVersion": 1,
+	"project": "shrike",
+	"version": "1.0.0",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Original grey faceted shrike with a dark eye mask",
+			"zh": "保留原图的灰色碎片化伯劳与深色眼罩"
+		},
+		"original": "/logos/family/shrike/2026-09-07-01/01/transparent.png",
+		"display": "/logos/family/shrike/2026-09-07-01/01/transparent-1024.webp",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/shrike/v1.0.1/texture-light.png",
+		"sha256": "b32b46a6c3b783f463b0b235dc61ff704d5d9705c38eb3013e95dcdb7f9dbd71",
+		"originalWidth": 1024,
+		"placementWidth": 2048,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 2048,
+	"height": 2048,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/shrike/blob/0fec187fc22742664925897400d0c1a62b2478bb/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/shrike/2026-09-07-01",
+		"texture": "/textures/shrike/v1.0.1/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 7194,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true,
+		"approvedPilotPixelsMatch": false
+	},
+	"root": "/icons/shrike/v1.0.0",
+	"files": [
+		{
+			"path": "/icons/shrike/v1.0.0/icon.png",
+			"bytes": 4561123,
+			"sha256": "642598abf6e54bee1f72c1b9d17c3634fea2c029145f00492488ccbac5eb243b"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded.png",
+			"bytes": 4949696,
+			"sha256": "43f785c7c5e28df6341e100275269501bb24ea99895979f23987cf14fcd59241"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-32.webp",
+			"bytes": 2076,
+			"sha256": "22d4379d4d1ca94912b7d1273bfb27ee974c9ecd73ee1957576b8a3253232fbc"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-32.webp",
+			"bytes": 1664,
+			"sha256": "d3e231a8a963af029454624ebb4fd86eee69a807be96f35ab4dca984fad4cb73"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-64.webp",
+			"bytes": 5974,
+			"sha256": "dc08de58f26872b0c942bdc547983e9391b696fe1bf5a58e73adf3800150528c"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-64.webp",
+			"bytes": 5338,
+			"sha256": "0b378f16d881ffbff7fac39a62422989923238244f80128a0edee741c5cc6858"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-160.webp",
+			"bytes": 28816,
+			"sha256": "8b958563fb5bf493b6000c934f6070662c92beea7dcb04861e699d961dde4b53"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-160.webp",
+			"bytes": 26372,
+			"sha256": "f6c34715b65b428158b100d93ebf856c83c6192d0a5744367f345602ff79e5e8"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-256.webp",
+			"bytes": 67676,
+			"sha256": "38861ac950b8d55f3ac20185bb1dc5f5b9896b4158caec98511271be3b5a723d"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-256.webp",
+			"bytes": 63382,
+			"sha256": "51b624b00e5662416ef317a5004c264cc61c5b0eab8e87f1e103276ed7ae00da"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-512.webp",
+			"bytes": 261646,
+			"sha256": "7e19e5d5339053e3c3c17ccf783cccb4c0b294e4e70dbea9cbe6c9d85ef4689a"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-512.webp",
+			"bytes": 251624,
+			"sha256": "934f39ff42bf8cad577124d152b35e9ab49a2c86dd8af7798c41afea1b3010c0"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-1024.webp",
+			"bytes": 1018610,
+			"sha256": "16d5b3de63470098b98a957861e9aa9ff16aa77655dfb41a97b68760b18ac083"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-1024.webp",
+			"bytes": 1007902,
+			"sha256": "22b79f215152501e7719b0022c7eee5cb1f286b41470deeb20cf7a539d7642bb"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/icon-1024.png",
+			"bytes": 1292231,
+			"sha256": "9bb38f899209676205c6e20a8cad1793c849d94fa773386913cc7aaf49e0baf4"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/apple-touch-icon.png",
+			"bytes": 45582,
+			"sha256": "1ccfdb1ef073ce485a9e75fabab459314e2d7d6fdf7c0e93e534d3360c5dd8b0"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-16.png",
+			"bytes": 884,
+			"sha256": "e81b4dc16c6795f80cd9b8e689ab620a5ba73da4ef5c489dbdab0faa61e0724e"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-32.png",
+			"bytes": 2716,
+			"sha256": "5f1633e2c5b41d51d64f715f11e9cf33e3f1ab40ea2560a6f680ae514d2421ed"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-48.png",
+			"bytes": 5403,
+			"sha256": "9dda0ac87db3e66ade44012cb58398a59ab4c0e88e1f50f359ffa3cd3a31ce80"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-64.png",
+			"bytes": 8792,
+			"sha256": "08ef062c5129de7c67bb94792b25779c579ab38048982f9b76d2f9eccd4499dc"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-128.png",
+			"bytes": 29127,
+			"sha256": "485d59f73b465d7971ffbaa92a0d542cdba6ba6b3585da1ce752d823c601dd2b"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/rounded-256.png",
+			"bytes": 98601,
+			"sha256": "e0132d17de2fa06ca151da179e3f89ad7f60b48c2f00f5828430752fb8e63d44"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/favicon.ico",
+			"bytes": 145625,
+			"sha256": "ff78ad2675d0664bb1a9eb0cc732c7a996a708437df8502ae234ead1dcb094aa"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/provenance.json",
+			"bytes": 1954,
+			"sha256": "76ef54be8154bfd44d92a3bb8b90e0dfd34207a7484d6b7f12e75740a7f31326"
+		},
+		{
+			"path": "/icons/shrike/v1.0.0/guide.md",
+			"bytes": 946,
+			"sha256": "58ddfe6ae8f727d0a258c334b6e4d025418f2eb6da3d6b7654076983f198fbb5"
+		}
+	]
+}

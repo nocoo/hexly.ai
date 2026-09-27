@@ -1041,7 +1041,7 @@
 	.status-service-identity {
 		gap: 10px;
 	}
-	.status-service-identity .logo-tile {
+	.status-service-identity :is(.logo-tile, .logo-composed) {
 		width: 37px;
 		height: 37px;
 	}
@@ -1162,7 +1162,7 @@
 	.status-service-main {
 		padding-inline: 12px;
 	}
-	.status-service-identity .logo-tile {
+	.status-service-identity :is(.logo-tile, .logo-composed) {
 		width: 30px;
 		height: 30px;
 	}

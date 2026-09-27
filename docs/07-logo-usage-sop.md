@@ -318,3 +318,20 @@ both public-byte verifications are in the dated brand-adoption receipts under
 application implementation remains independently owned and was not published
 by onboarding. Future app integration must follow the transparent-small-mark and
 platform-icon rules above.
+
+## Approved textured Hexly presentation (2026-09-27)
+
+The owner approved the nine-project composition study and requested a complete
+rollout across the 60 non-archived catalogue entries. `Project.presentationIcon`
+selects an independent `/icons/<id>/v<version>/` package. This explicit selection
+supersedes the earlier transparent-only rule for Hexly navigation, cards, API
+previews and small-size specimens. Source repositories are separate handoffs.
+
+Preserve the unchanged native transparent foreground, its position and colors;
+compose it over the approved light texture at 70% opacity on `#f0f0e9`. Use the
+rendered continuous-corner WebP directly, with no extra CSS mask, border or shadow.
+The approved outline approximates iOS continuous corners; it is not an official
+Apple asset. iOS 1024 px and Apple touch deliveries use opaque square PNGs for
+platform masking. The manifest records native sizes and any 1024 px upscales.
+Original identities, transparent marks, source rights and historical archives
+remain available. No image-generation call is part of this rollout.

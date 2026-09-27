@@ -69,6 +69,7 @@ export function projectApi(project: Project) {
 		);
 	}
 	const family = project.family;
+	const presentation = project.presentationIcon;
 	if (family) {
 		const role =
 			family.foreground.sha256 === project.logo.sha256
@@ -95,7 +96,7 @@ export function projectApi(project: Project) {
 		for (const size of [32, 64, 160, 256, 512, 1024]) {
 			add(
 				`background-${size}`,
-				`${family.root}/icon-${size}.webp`,
+				`${presentation?.root ?? family.root}/icon-${size}.webp`,
 				size,
 				size,
 				"opaque",
@@ -105,7 +106,7 @@ export function projectApi(project: Project) {
 		}
 		add(
 			"background-original",
-			`${family.root}/icon.png`,
+			`${presentation?.root ?? family.root}/icon.png`,
 			family.foreground.width,
 			family.foreground.height,
 			"opaque",
@@ -135,7 +136,7 @@ export function projectApi(project: Project) {
 					"navigation",
 				);
 			}
-			for (const theme of ["light", "dark"] as const) {
+			for (const theme of presentation ? [] : (["light", "dark"] as const)) {
 				add(
 					`tile-${theme}-512`,
 					`${root}/icon-${theme}-512.png`,
@@ -149,7 +150,7 @@ export function projectApi(project: Project) {
 			}
 			add(
 				"apple-touch-icon",
-				`${root}/apple-touch-icon.png`,
+				`${presentation?.root ?? root}/apple-touch-icon.png`,
 				180,
 				180,
 				"opaque",
@@ -159,13 +160,37 @@ export function projectApi(project: Project) {
 			);
 		}
 	}
+	if (presentation) {
+		for (const size of [32, 64, 160, 256, 512, 1024]) {
+			add(
+				`rounded-${size}`,
+				`${presentation.root}/rounded-${size}.webp`,
+				size,
+				size,
+				"transparent",
+				"hexly-campaign",
+				"presentation",
+			);
+		}
+		add(
+			"ios-app-icon",
+			`${presentation.root}/icon-1024.png`,
+			1024,
+			1024,
+			"opaque",
+			"hexly-campaign",
+			"presentation",
+		);
+	}
 	const icon = (size: number) =>
-		logos.find(
-			(logo) =>
-				logo.width === size &&
-				logo.background === "transparent" &&
-				logo.role === "project-identity",
-		)?.url ?? assetUrl(`/logos/display/${project.id}-${size}.webp`);
+		presentation
+			? assetUrl(`${presentation.root}/rounded-${size}.webp`)
+			: (logos.find(
+					(logo) =>
+						logo.width === size &&
+						logo.background === "transparent" &&
+						logo.role === "project-identity",
+				)?.url ?? assetUrl(`/logos/display/${project.id}-${size}.webp`));
 	return {
 		schemaVersion: 1,
 		id: project.id,
@@ -182,6 +207,9 @@ export function projectApi(project: Project) {
 		icons: { small: icon(64), large: icon(512) },
 		logos,
 		brand: {
+			iconManifest: presentation
+				? assetUrl(`${presentation.root}/manifest.json`)
+				: null,
 			manifest: project.brandKit
 				? assetUrl(`${project.brandKit.root}/manifest.json`)
 				: null,
@@ -212,12 +240,12 @@ const description = project.description.${locale};
 const github = project.github;
 const icon = project.icons.small;
 
-Expect a single JSON object: schemaVersion (1), id (Hexly slug), owner (GitHub user or organization), repo (GitHub repository name), title, description {en, zh}, emoji, category, archived, github, website (string or null), url (Hexly detail page), icons {small, large}, logos[], and brand {manifest, source, originalSha256}. Use owner/repo together as the integration key. Small/large icons are 64/512px. Each logo has id, url, width, height, format, background, role, usage and theme. URLs are absolute HTTPS CDN URLs; use the returned URLs unchanged and preserve aspect ratio with object-fit: contain. Use textContent or framework text bindings for text, not innerHTML.
+Expect a single JSON object: schemaVersion (1), id (Hexly slug), owner (GitHub user or organization), repo (GitHub repository name), title, description {en, zh}, emoji, category, archived, github, website (string or null), url (Hexly detail page), icons {small, large}, logos[], and brand {manifest, iconManifest, source, originalSha256}. Use owner/repo together as the integration key. Small/large icons are 64/512px. Each logo has id, url, width, height, format, background, role, usage and theme. URLs are absolute HTTPS CDN URLs; use the returned URLs unchanged and preserve aspect ratio with object-fit: contain. Use textContent or framework text bindings for text, not innerHTML.
 
 Logo selection:
-- Prefer icons.small for a 24–32px header/sidebar and icons.large for a larger project card. These preserve the project identity, never silently adopting a different campaign drawing.
-- For navigation and browser favicons, select role="project-identity", background="transparent", usage="navigation". Prefer a PNG matching the required resolution (16/32px favicon; roughly 2x CSS size for high-DPI UI). Do not add a background tile, mask, shadow, crop or recolor the mark.
-- Opaque presentation variants are intended for README artwork, promotional cards and large standalone illustrations. Choose theme="light" or "dark" for the surrounding surface; theme="any" preserves its original presentation. Use usage="apple-touch-icon" only when an opaque platform icon is needed.
+- Prefer icons.small for a 24–32px header/sidebar and icons.large for a larger project card. Active Hexly entries use the approved textured presentation: original family foreground colors and composition over a pale texture, with continuous corners already rendered. Do not add a CSS mask, tile or shadow. The manifest is brand.iconManifest when available; it records native dimensions, resampling and original source hashes.
+- When an original transparent mark is explicitly required, select role="project-identity", background="transparent", usage="navigation". Prefer a PNG matching the required resolution (16/32px favicon; roughly 2x CSS size for high-DPI UI). Do not add a background tile, mask, shadow, crop or recolor the mark.
+- Opaque presentation variants are intended for README artwork and platform icon masters. The ios-app-icon variant is an opaque 1024px square; iOS applies its own mask. Use usage="apple-touch-icon" for touch bookmarks. Rounded presentation variants have transparent corners with an opaque textured interior; they are not transparent foreground marks.
 - role="hexly-campaign" is separately labelled artwork for Hexly-related presentation. It does not authorize replacing the product's own Logo, favicon, colors or UI. Check brand.manifest and its license/provenance before adopting campaign materials.
 - background="original" preserves the source background; transparency is not guaranteed. Some projects only have original/emoji assets. Missing variants are unavailable: do not fabricate URLs or claim transparency. Use icons.small/large as supplied when no suitable transparent identity exists.
 - Keep original geometry, colors, bytes, licenses and provenance. brand.originalSha256 verifies the original logo only, not its derivatives. Do not regenerate or upload new logos for this integration.

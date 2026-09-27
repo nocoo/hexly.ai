@@ -1,0 +1,56 @@
+{
+	"schemaVersion": 1,
+	"project": "r2shot",
+	"version": "1.0.0",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Original blue faceted dolphin with a curled tail",
+			"zh": "保留原图的蓝色碎片化海豚与卷曲尾鳍"
+		},
+		"original": "/logos/family/r2shot/2026-09-07-01/01/transparent.png",
+		"display": "/logos/family/r2shot/2026-09-07-01/01/transparent-1024.webp",
+		"width": 920,
+		"height": 920,
+		"sha256": "17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/r2shot/v1.0.0/texture-light.png",
+		"sha256": "a221e2bc64286150bfa45763763f252103886c24ce3df70e30b3e04a19c50b0c",
+		"originalWidth": 1024,
+		"placementWidth": 920,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 920,
+	"height": 920,
+	"upscaledExportSizes": [
+		1024
+	],
+	"rights": {
+		"identity": "https://github.com/nocoo/r2shot/blob/d69714a2332066c9c7b1792f919607a4b776eade/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/r2shot/2026-09-07-01",
+		"texture": "/textures/r2shot/v1.0.0/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 1805,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true,
+		"approvedPilotPixelsMatch": false
+	}
+}

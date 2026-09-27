@@ -32,16 +32,19 @@ export function Logo({
 						: size <= 256
 							? 512
 							: 1024;
-	const src = project.family
-		? framed
-			? `${project.family.root}/icon-${pixels}.webp`
-			: project.family.foreground.display
-		: `/logos/display/${project.id}-${pixels}.webp`;
-	const kit = project.family ? undefined : project.brandKit;
+	const src = project.presentationIcon
+		? `${project.presentationIcon.root}/rounded-${pixels}.webp`
+		: project.family
+			? framed
+				? `${project.family.root}/icon-${pixels}.webp`
+				: project.family.foreground.display
+			: `/logos/display/${project.id}-${pixels}.webp`;
+	const kit =
+		project.family || project.presentationIcon ? undefined : project.brandKit;
 	const kitAsset = framed ? "icon" : "mark";
 	return (
 		<span
-			className={`${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""} ${className}`}
+			className={`${project.presentationIcon ? "logo-plain logo-composed" : `${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""}`} ${className}`}
 			style={style}
 		>
 			<img

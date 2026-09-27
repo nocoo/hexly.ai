@@ -106,7 +106,7 @@ for (const [id, options] of [
 			}
 			await expect(page.locator(".artwork-image")).toHaveAttribute(
 				"src",
-				assetUrl(`${family.root}/icon-1024.webp`),
+				assetUrl(`${project.presentationIcon?.root}/rounded-1024.webp`),
 			);
 			await expect(async () => {
 				await page.locator(".artwork-image").evaluate(async (node) => {
@@ -125,8 +125,8 @@ for (const [id, options] of [
 						: "Local preview",
 			);
 			for (const [selector, size] of [
-				[".size-grid figure:nth-child(1) .logo-tile", 128],
-				[".size-grid figure:nth-child(2) .logo-tile", 64],
+				[".size-grid figure:nth-child(1) .logo-composed", 128],
+				[".size-grid figure:nth-child(2) .logo-composed", 64],
 				[".size-grid figure:nth-child(3) .logo-plain", 32],
 				[".size-grid figure:nth-child(4) .logo-plain", 16],
 				[".preview-workspace .logo-plain", 24],
@@ -143,35 +143,32 @@ for (const [id, options] of [
 				await expect(mark).toHaveCSS("box-shadow", "none");
 				await expect(mark.locator("img")).toHaveCSS("border-radius", "0px");
 				if (id !== "frogie") continue;
-				let transparentPixels = 0;
+				let alpha = { corner: -1, center: -1 };
 				await expect(async () => {
-					transparentPixels = await mark
-						.locator("img")
-						.evaluate(async (node) => {
-							const image = node as HTMLImageElement;
-							if (!image.naturalWidth)
-								throw new Error("Mark image is not ready.");
-							await image.decode();
-							// Read the same displayed CDN bytes with CORS before inspecting pixels.
-							const readable = new Image();
-							readable.crossOrigin = "anonymous";
-							readable.src = image.currentSrc;
-							await readable.decode();
-							const canvas = document.createElement("canvas");
-							canvas.width = 32;
-							canvas.height = 32;
-							const context = canvas.getContext("2d");
-							if (!context) throw new Error("Canvas context unavailable");
-							context.drawImage(readable, 0, 0, 32, 32);
-							const pixels = context.getImageData(0, 0, 32, 32).data;
-							let count = 0;
-							for (let offset = 3; offset < pixels.length; offset += 4) {
-								if (pixels[offset] === 0) count += 1;
-							}
-							return count;
-						});
+					alpha = await mark.locator("img").evaluate(async (node) => {
+						const image = node as HTMLImageElement;
+						if (!image.naturalWidth)
+							throw new Error("Mark image is not ready.");
+						await image.decode();
+						// Read the same displayed CDN bytes with CORS before inspecting pixels.
+						const readable = new Image();
+						readable.crossOrigin = "anonymous";
+						readable.src = image.currentSrc;
+						await readable.decode();
+						const canvas = document.createElement("canvas");
+						canvas.width = 32;
+						canvas.height = 32;
+						const context = canvas.getContext("2d");
+						if (!context) throw new Error("Canvas context unavailable");
+						context.drawImage(readable, 0, 0, 32, 32);
+						const pixels = context.getImageData(0, 0, 32, 32).data;
+						return {
+							corner: pixels[3] ?? -1,
+							center: pixels[(16 * 32 + 16) * 4 + 3] ?? -1,
+						};
+					});
 				}).toPass();
-				expect(transparentPixels).toBeGreaterThan(128);
+				expect(alpha).toEqual({ corner: 0, center: 255 });
 			}
 			if (family.previous) {
 				await expect(page.locator(".previous-artwork img")).toHaveAttribute(
@@ -200,7 +197,7 @@ for (const [id, options] of [
 					"src",
 					assetUrl(
 						value === "icon"
-							? `${family.root}/icon-1024.webp`
+							? `${project.presentationIcon?.root}/rounded-1024.webp`
 							: family.foreground.display,
 					),
 				);
@@ -211,7 +208,7 @@ for (const [id, options] of [
 					assetUrl(
 						value === "transparent"
 							? family.foreground.original
-							: `${family.root}/${value}.png`,
+							: `${value === "icon" ? project.presentationIcon?.root : family.root}/${value}.png`,
 					),
 				);
 			}

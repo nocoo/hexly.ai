@@ -40,12 +40,12 @@ describe("single-project integration contract", () => {
 		expect(projectApiPath(other)).toBe("/api/projects/another-owner/life.ai");
 		expect(projectApi(other).owner).toBe("another-owner");
 	});
-	it("offers small/large transparent identity icons and opaque presentation sizes", () => {
+	it("offers approved textured icons while preserving original identity variants", () => {
 		const p = project("rio");
 		const result = projectApi(p);
 		expect(result.icons).toEqual({
-			small: assetUrl(`${p.brandKit?.root}/mark-64.png`),
-			large: assetUrl(`${p.brandKit?.root}/mark-512.png`),
+			small: assetUrl(`${p.presentationIcon?.root}/rounded-64.webp`),
+			large: assetUrl(`${p.presentationIcon?.root}/rounded-512.webp`),
 		});
 		expect(result.logos.find((l) => l.id === "transparent-16")).toMatchObject({
 			width: 16,
@@ -57,16 +57,24 @@ describe("single-project integration contract", () => {
 				.filter((l) => l.id.startsWith("background-"))
 				.map((l) => l.width),
 		).toEqual([32, 64, 160, 256, 512, 1024, 2048]);
-		expect(result.logos.find((l) => l.id === "tile-dark-512")).toMatchObject({
+		expect(result.logos.find((l) => l.id === "ios-app-icon")).toMatchObject({
 			background: "opaque",
-			theme: "dark",
+			theme: "any",
 			role: "hexly-campaign",
 		});
 	});
 	it("does not promote review artwork to a product identity", () => {
 		const p = project("basalt");
 		const result = projectApi(p);
-		expect(result.icons.small).toBe(assetUrl("/logos/display/basalt-64.webp"));
+		expect(result.icons.small).toBe(
+			assetUrl(`${p.presentationIcon?.root}/rounded-64.webp`),
+		);
+		expect(result.logos.find((l) => l.id === "rounded-64")?.role).toBe(
+			"hexly-campaign",
+		);
+		expect(result.logos.find((l) => l.id === "original")?.url).toBe(
+			assetUrl(p.logo.original),
+		);
 		expect(result.logos.find((l) => l.id === "transparent-32")?.role).toBe(
 			"hexly-campaign",
 		);

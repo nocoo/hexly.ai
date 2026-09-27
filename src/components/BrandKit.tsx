@@ -176,14 +176,22 @@ export function BrandKit({
 								{name} <small>{brandFormat(kit, file).toUpperCase()}</small>
 							</span>
 							<AssetLink
-								href={brandAsset(kit, file, "light")}
+								href={
+									file === "icon" && project.presentationIcon
+										? `${project.presentationIcon.root}/rounded.png`
+										: brandAsset(kit, file, "light")
+								}
 								download
 								aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "浅色" : "light"}`}
 							>
 								{zh ? "浅色" : "Light"} ↓
 							</AssetLink>
 							<AssetLink
-								href={brandAsset(kit, file, "dark")}
+								href={
+									file === "icon" && project.presentationIcon
+										? `${project.presentationIcon.root}/rounded.png`
+										: brandAsset(kit, file, "dark")
+								}
 								download
 								aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "深色" : "dark"}`}
 							>
@@ -216,8 +224,12 @@ export function BrandKit({
 							"manifest.json",
 							zh ? "全部文件与 SHA-256" : "All files & SHA-256",
 						],
-					].map(([file, name]) => (
-						<AssetLink key={file} href={`${kit.root}/${file}`} download>
+					].map(([file = "", name]) => (
+						<AssetLink
+							key={file}
+							href={`${project.presentationIcon && ["favicon.ico", "apple-touch-icon.png"].includes(file) ? project.presentationIcon.root : project.brandTexture && file.startsWith("texture-") ? project.brandTexture.root : kit.root}/${project.brandTexture && file.startsWith("texture-") ? file.replace(/\.(svg|webp)$/, ".png") : file}`}
+							download
+						>
 							{name}
 							<span aria-hidden="true">↓</span>
 						</AssetLink>

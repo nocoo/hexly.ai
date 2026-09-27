@@ -1,0 +1,54 @@
+{
+	"schemaVersion": 1,
+	"project": "pika",
+	"version": "1.0.0",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Original yellow Pika with its complete lightning gesture",
+			"zh": "保留原样的黄色 Pika 与完整闪电动作"
+		},
+		"original": "/logos/family/pika/2026-09-07-01/01/transparent.png",
+		"display": "/logos/family/pika/2026-09-07-01/01/transparent-1024.webp",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "2dc5121317e88001e8459d007419d5b9ca998a95f91bee4992b70bba96aacd2b",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/pika/v1.0.0/texture-light.png",
+		"sha256": "e5234b545902ab6919ff1b7023ce750fbb3eeb593fbdf6a443a47d2fc375c1e4",
+		"originalWidth": 1024,
+		"placementWidth": 2048,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 2048,
+	"height": 2048,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/pika/blob/bb9b497372809e5ca00eaef4b04e1aa51e4256a3/logo.png",
+		"family": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/pika/2026-09-07-01",
+		"texture": "/textures/pika/v1.0.0/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 103,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true,
+		"approvedPilotPixelsMatch": false
+	}
+}

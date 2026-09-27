@@ -233,6 +233,18 @@ export function catalogueProblems(projects: Project[]): string[] {
 				))
 		)
 			problems.push(`Invalid brand kit: ${project.id}`);
+		const icon = project.presentationIcon;
+		if (
+			icon !== undefined &&
+			(!icon ||
+				project.archived ||
+				!project.family ||
+				!/^\d+\.\d+\.\d+$/.test(icon.version) ||
+				icon.root !== `/icons/${project.id}/v${icon.version}` ||
+				icon.width !== project.family.foreground.width ||
+				icon.height !== project.family.foreground.height)
+		)
+			problems.push(`Invalid presentation icon: ${project.id}`);
 		const texture = project.brandTexture;
 		if (
 			texture !== undefined &&

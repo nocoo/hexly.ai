@@ -76,6 +76,19 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 
 `
 		: "";
+	const icon = project.presentationIcon;
+	const iconSection = icon
+		? `## Current textured icons
+
+![${project.title} current icon](${sourceLink(`${icon.root}/rounded-160.webp`)})
+
+- [Native square PNG](${sourceLink(`${icon.root}/icon.png`)}) · [Native continuous-corner PNG](${sourceLink(`${icon.root}/rounded.png`)}) · [iOS 1024 px square](${sourceLink(`${icon.root}/icon-1024.png`)}) · [Favicon ICO](${sourceLink(`${icon.root}/favicon.ico`)}) · [Apple touch](${sourceLink(`${icon.root}/apple-touch-icon.png`)})
+- [Manifest and checksums](${sourceLink(`${icon.root}/manifest.json`)}) · [Usage, resampling and source rights](${sourceLink(`${icon.root}/guide.md`)})
+- Native canvas ${icon.width} × ${icon.height}; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. ${icon.width < 1024 ? "1024 px variants are explicitly resampled upscales." : "Smaller delivery sizes are resampled from the native master."}
+- Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
+`
+		: "";
 	const retained = family?.method === "retained-original";
 	const material = family?.series === "material";
 	const toolWithoutStudy =
@@ -198,7 +211,7 @@ ${palette}
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-${textureSection}${kitSection}${familySection}${
+${iconSection}${textureSection}${kitSection}${familySection}${
 	project.archived
 		? "## Archive maintenance\n\nBasic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name."
 		: `## ${family || kit ? "Further refinements" : "Future family notes"}

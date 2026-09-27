@@ -36,11 +36,13 @@ export function LogoReview({
 	} as CSSProperties;
 	const currentImage =
 		family && view === "icon"
-			? `${family.root}/icon-1024.webp`
+			? project.presentationIcon
+				? `${project.presentationIcon.root}/rounded-1024.webp`
+				: `${family.root}/icon-1024.webp`
 			: foreground.display;
 	const currentDownload =
 		family && view !== "transparent"
-			? `${family.root}/${view === "icon" ? "icon" : "white"}.png`
+			? `${view === "icon" ? (project.presentationIcon?.root ?? family.root) : family.root}/${view === "icon" ? "icon" : "white"}.png`
 			: foreground.original;
 	const familyStatus =
 		family?.status === "adopted"
@@ -122,7 +124,7 @@ export function LogoReview({
 						<figure className="current-artwork">
 							<div className="art-well">
 								<AssetLink
-									className={`review-tile ${family ? "family-tile" : "baseline-tile"}`}
+									className={`review-tile ${family ? "family-tile" : "baseline-tile"} ${project.presentationIcon && view === "icon" ? "composed-tile" : ""}`}
 									style={tileStyle}
 									href={currentDownload}
 									target="_blank"
