@@ -32,6 +32,7 @@
 - soften full-square banner texture edges ([6e512fa](https://github.com/nocoo/hexly.ai/commit/6e512fa16ddc27137e9354722ac3b1050f39c4c7))
 - poll large local test asset trees ([2c57892](https://github.com/nocoo/hexly.ai/commit/2c57892235d4d2210023a089074217f0983c9f23))
 - prevent retired assets from resurfacing ([d319988](https://github.com/nocoo/hexly.ai/commit/d3199889e9c1a6223b8f59541411641c6554b1b7))
+- speed up verified asset hydration ([8ad6e56](https://github.com/nocoo/hexly.ai/commit/8ad6e56b53a5a5b662d0d22e53a5926dc9e04fc5))
 
 ### Features
 
