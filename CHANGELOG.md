@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.3] - 2026-09-27
+
+### Features
+
+- add xray introduction screenshots ([d2bb674](https://github.com/nocoo/hexly.ai/commit/d2bb67448708b06edf7c5e378bbc1af75ad68617))
+
+### Documentation
+
+- record xray screenshot publication ([82f7ad1](https://github.com/nocoo/hexly.ai/commit/82f7ad12f062a11e8fab97d705694d2d822fcc14))
+
 ## [1.1.2] - 2026-09-27
 
 ### Documentation
