@@ -50,6 +50,7 @@
 - record texture coverage candidates ([5008c6f](https://github.com/nocoo/hexly.ai/commit/5008c6fe71e387d622e817965c84d781dc66f314))
 - prepare verified texture retirement ([ec945cb](https://github.com/nocoo/hexly.ai/commit/ec945cb8097c4df90e110c61fde1daf59bd48392))
 - require live download proof for cleanup ([d6027ad](https://github.com/nocoo/hexly.ai/commit/d6027ad65bece2bd3290c160c85a466a25d30b24))
+- retire verified obsolete textures ([f9b4d80](https://github.com/nocoo/hexly.ai/commit/f9b4d806688d35bd080f5d8d3a11ef3cd0e4e711))
 
 ## [1.1.1] - 2026-09-26
 
