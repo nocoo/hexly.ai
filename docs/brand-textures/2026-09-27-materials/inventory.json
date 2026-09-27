@@ -1,0 +1,1357 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-09-27",
+	"siteBaseline": "685e94cb9e5e9f65b22cc344dd9f32e66f37b2e5",
+	"scope": "All 21 non-archived material identities; generate 42 texture candidates for owner review only.",
+	"authorization": {
+		"ownerRequest": "先把其余拟物系列的纹理补上，风格、占比、精细程度和色彩与叶片系列统一；先 review，然后再进行全部页面 icon 背景替换。",
+		"generation": true,
+		"acceptance": "owner-review-pending",
+		"catalogueIntegration": false,
+		"iconReplacement": false,
+		"publication": false
+	},
+	"nextPhase": {
+		"requiresOwnerReview": true,
+		"regenerateIcon": false,
+		"background": "Use the generated light texture behind the unchanged icon.",
+		"layers": [
+			"light base",
+			"botanical or material texture",
+			"existing icon"
+		],
+		"mask": "An iOS continuous-corner icon contour, not a simple rounded rectangle.",
+		"scopeToConfirmAtImplementation": "Page icons and App icon adoption targets."
+	},
+	"model": "gpt-image-2.5-flare",
+	"plannedRequests": 42,
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"tokenSource": "src/styles/base.css",
+	"originalIdentityRecolored": false,
+	"productUIChanged": false,
+	"excludedArchived": [
+		"hermes-on-herdr"
+	],
+	"projects": [
+		{
+			"id": "dogfight",
+			"title": "Dogfight",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/dogfight/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/dogfight/v1.0.1",
+			"sourceMetadataSha256": "593be81ba2f02838d51f2b28654cffe554007b586c739d0bdde59636a5117981",
+			"subject": "Titanium F-22 desk model caught in a banking turn",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dogfight-family-2026-09-07-01-02.png",
+				"sha256": "274611f248e476334769d4c4c670a1dbd0d20263fc1d210b665b2fb7b9867fc4",
+				"rgbaSha256": "d38c25f33fdb61ccca5e59c92e846e72b5cf06b3f66eea2008393f6fd3ac0064",
+				"source": "https://github.com/nocoo/dogfight/blob/b5ab075a963a78516aaa351d6ca0178c64994729/logo.png",
+				"bytes": 2743288,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dogfight/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "7afe480efe2b9b1c23473ad78f97c94cd9aa9d20fc59e1166ad588a79bf69ce5"
+			},
+			"previousTexture": {
+				"root": "/textures/dogfight/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Banked alloy",
+					"zh": "倾斜合金"
+				},
+				"description": {
+					"en": "Diagonal overlapping alloy skin seams, a short sparse row of flush rivet impressions and gently changing brushed grain.",
+					"zh": "斜向金属拼缝、少量齐平铆点与细腻拉丝呼应桌面战机模型的转弯，是材质联想而非真实飞机图纸。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.32
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Swept panel relief",
+					"zh": "掠翼压纹"
+				},
+				"motif": "Five broad tapered chamfered panel impressions with shallow parallel brushed-alloy scoring and short inset seam segments, echoing the banking titanium fighter. The panels are tactile regions pressed into the paper, never an aircraft silhouette or loose metal pieces.",
+				"description": {
+					"en": "Five broad tapered chamfered panel impressions with shallow parallel brushed-alloy scoring and short inset seam segments, echoing the banking titanium fighter. The panels are tactile regions pressed into the paper, never an aircraft silhouette or loose metal pieces.",
+					"zh": "掠翼压纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/dogfight.json",
+				"purpose": {
+					"en": "Fly an F-22 through a complete browser arcade mission using target locks, missiles, a cannon, and countermeasures.",
+					"zh": "在浏览器中驾驶 F-22，运用锁定、导弹、机炮和干扰完成一场街机空战。"
+				},
+				"inspectedRevision": "b5ab075a963a78516aaa351d6ca0178c64994729"
+			}
+		},
+		{
+			"id": "pew-game",
+			"title": "Pew Game",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/pew-game/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/pew-game/v1.0.1",
+			"sourceMetadataSha256": "6c693ddf3bced5cf469706fdb827957103e88f5a172549b6d03444efaa6085d8",
+			"subject": "Walnut and brass prairie arcade joystick",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pew-game-family-2026-09-07-01-02.png",
+				"sha256": "18602c76eb1a445731b7baba7ec81175f6f81084977d1d7ad6168e6702238b90",
+				"rgbaSha256": "04badff30d4e5f12298057074c1d6da23ee1e03c82f4f621057e2a2b45cf1135",
+				"source": "https://github.com/nocoo/pew-game/blob/ee68b2dead3e5e698b2427d6a949e8e57c69d520/logo.png",
+				"bytes": 3907401,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pew-game/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "e367ff9d8d28c46e17e8b65e1cae732038dd61cf4c7db65133f1bac96cea4c5f"
+			},
+			"previousTexture": {
+				"root": "/textures/pew-game/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "At the arcade bench",
+					"zh": "街机工作台"
+				},
+				"description": {
+					"en": "Straight fine walnut grain, a shallow aged-brass control-plate edge impression and two unequal broad machined arcs near the bottom right.",
+					"zh": "顺直胡桃木纹、旧黄铜压边与两道浅弧沟承接手作街机的触感，把动作空间留给摇杆原标。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.44
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Walnut machining arcs",
+					"zh": "胡桃木旋纹"
+				},
+				"motif": "Broad gently curving walnut end-grain bands, three incomplete concentric machining arcs and a few softly recessed round contact impressions, recalling a walnut-and-brass arcade control bench. Translate the material into tonal paper relief; do not draw a joystick, console, buttons or wood-plank background.",
+				"description": {
+					"en": "Broad gently curving walnut end-grain bands, three incomplete concentric machining arcs and a few softly recessed round contact impressions, recalling a walnut-and-brass arcade control bench. Translate the material into tonal paper relief; do not draw a joystick, console, buttons or wood-plank background.",
+					"zh": "胡桃木旋纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/pew-game.json",
+				"purpose": {
+					"en": "Play a pixel prairie shooter with keyboard or touch controls, survive enemy waves with power-ups, and save scores to an all-time leaderboard.",
+					"zh": "用键盘或触控方向键游玩像素草原射击，收集道具、抵挡敌人波次，并将成绩保存到历史排行榜。"
+				},
+				"inspectedRevision": "5200316563da59252505ece261388e4c89266017"
+			}
+		},
+		{
+			"id": "showtime",
+			"title": "Showtime",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/showtime/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/showtime/v1.0.1",
+			"sourceMetadataSha256": "9176cdda39a820fa410307804db976a5312ca2fbafb126ae5724d3dcbcebc2d1",
+			"subject": "Classic black-and-white clapperboard with SHOWTIME lettering, numbered production fields and a brushed-metal hinge",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/showtime-family-2026-09-10-02-03.png",
+				"sha256": "2e797a60a6349ee2cc62ee7c238dd41eeb7bf169af328375e090b66954400704",
+				"rgbaSha256": "9ea2394c883778e4a6c0ce213b6fa13d438a46b7e09aaa21583b4886aec680da",
+				"source": "https://github.com/nocoo/showtime/blob/9a8c7c89ec078ba17539d76522952d3f4af3d0f7/logo.png",
+				"bytes": 3865252,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/showtime/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "86ee82731567d382e5e625ac1ef09b99e96f8acd4fd28241573a22cd8b0c84d8"
+			},
+			"previousTexture": {
+				"root": "/textures/showtime/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Before the first frame",
+					"zh": "开机之前"
+				},
+				"description": {
+					"en": "Fine matte black photographic paper tooth adapted to the requested theme, shallow film-gate rails, a sparse strip of sprocket impressions and two off-center cue notches.",
+					"zh": "哑光摄影纸的细齿、片门导轨与稀疏齿孔压痕，呼应录制前对齐画面的一刻。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.35
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Film-gate impressions",
+					"zh": "片门压痕"
+				},
+				"motif": "Broad satin emulsion bands with short softly beveled diagonal cue ridges and a sparse rhythm of paired oblong sprocket depressions. Let the bands bend into an asymmetric right-hand sweep, recalling film editing and the black-and-white clapperboard without depicting film reels, a slate or actual props.",
+				"description": {
+					"en": "Broad satin emulsion bands with short softly beveled diagonal cue ridges and a sparse rhythm of paired oblong sprocket depressions. Let the bands bend into an asymmetric right-hand sweep, recalling film editing and the black-and-white clapperboard without depicting film reels, a slate or actual props.",
+					"zh": "片门压痕：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/showtime.json",
+				"purpose": {
+					"en": "Turn scripted interactions with real webpages into product demo movies on macOS. Agents can direct pointer movement, clicks, typing, camera zoom and animated captions through JSON scripts, a CLI or MCP; the native browser exports MP4 without an audio track.",
+					"zh": "把真实网页上的脚本化交互制作成 macOS 产品演示视频。Agent 可通过 JSON 剧本、CLI 或 MCP 编排鼠标移动、点击、输入、镜头缩放和动态字幕，原生浏览器将演示导出为不含音轨的 MP4。"
+				},
+				"inspectedRevision": "9a8c7c89ec078ba17539d76522952d3f4af3d0f7"
+			}
+		},
+		{
+			"id": "infospace",
+			"title": "Info Space",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/infospace/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/infospace/v1.0.1",
+			"sourceMetadataSha256": "31e285258377b7e4353dbff657584b65390b0c69356aa782559a36242f60ee99",
+			"subject": "Indigo metal information tray with adjustable dividers and four colored paper stacks",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/infospace-family-2026-09-09-01-01.png",
+				"sha256": "3b2e9aaead0eddccf8bf2212fe96f5ed207a06dc6111f72a829dd2db0a656772",
+				"rgbaSha256": "86f99fbc319481ec964495407e06d4f645f2934acc9db98b31d583cdf94898f2",
+				"source": "https://github.com/nocoo/infospace/blob/82f629ed42b6ec89dac0e0c79e2a63dec88ecacf/logo.png",
+				"bytes": 4365206,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/infospace/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "42205956aa29c5b355dddb89a4b8b826f31d4b4d443b9e8379e5beaba10c1757"
+			},
+			"previousTexture": {
+				"root": "/textures/infospace/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Dividers with room to move",
+					"zh": "可移动的隔页"
+				},
+				"description": {
+					"en": "Dense fine wool felt, shallow offset divider slots, rounded paper-edge steps and alternating unequal rectangular compartments suggested only at the edges.",
+					"zh": "细密羊毛毡上的错位隔板槽与纸边台阶，让可调整的信息分区成为可触摸的工作表面。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.43
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Adjustable divider channels",
+					"zh": "分格压槽"
+				},
+				"motif": "Five offset broad compressed-paper planes with shallow L-shaped divider channels, fine stacked-paper edge ridges and two small alignment slots. Echo adjustable information-tray partitions without depicting a tray, stacked sheets, interface windows or a complete rectangular grid.",
+				"description": {
+					"en": "Five offset broad compressed-paper planes with shallow L-shaped divider channels, fine stacked-paper edge ridges and two small alignment slots. Echo adjustable information-tray partitions without depicting a tray, stacked sheets, interface windows or a complete rectangular grid.",
+					"zh": "分格压槽：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/infospace.json",
+				"purpose": {
+					"en": "Give macOS app developers a reusable SwiftUI workspace for arranging their own content in resizable panels. The SDK handles grid geometry, snapping and panel identity; the included demo shows the interactions with sample content kept only for the current session.",
+					"zh": "为 macOS 应用开发者提供可复用的 SwiftUI 工作区，把自己的内容放进可调整大小的面板。SDK 处理网格几何、吸附与面板身份；附带演示应用展示这些交互，示例内容仅在本次运行中保留。"
+				},
+				"inspectedRevision": "82f629ed42b6ec89dac0e0c79e2a63dec88ecacf"
+			}
+		},
+		{
+			"id": "signoff-now",
+			"title": "signoff.now",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/signoff-now/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/signoff-now/v1.0.1",
+			"sourceMetadataSha256": "f90d662323bf40c14785b4def00754838e1b688a48976a8cfb860b03967adaec",
+			"subject": "Petrol enamel mechanical tally counter",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/signoff-now-family-2026-09-07-01-01.png",
+				"sha256": "942a3ceb0bb6c1243bd2b7876262ef163797131700fb72fc0fca90811ef7e1c4",
+				"rgbaSha256": "29dd63381dfdda91cf723593090cc28bd1fea16c4e0d525d4ea9bb61a5ad0e03",
+				"source": "https://github.com/nocoo/signoff.now/blob/51b679fba85d1a0cc81641e41f377ad77f867dd0/logo.png",
+				"bytes": 3963278,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/signoff-now/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d0a9d0532ef2f096c1406500a98b987fb0e3c81c7dc6f59c4f12715d447fb2b9"
+			},
+			"previousTexture": {
+				"root": "/textures/signoff-now/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Counted impressions",
+					"zh": "计数压痕"
+				},
+				"description": {
+					"en": "Firm uncoated paper with shallow letterpress ruling, small grouped five-stroke impressions and a few offset column stops.",
+					"zh": "硬挺记录纸上的压线、分组刻痕与错位栏位呼应机械计数器，表达持续记录而不伪造数据。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.37
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Counter roller impressions",
+					"zh": "计数滚纹"
+				},
+				"motif": "A right-hand family of broad slightly curved roller-impression bands with rounded knurl ridges, several short grouped tally-like grooves and softly recessed narrow registration slots. Recall the petrol enamel mechanical counter through its machining rhythm, with no digits, display, counter body or complete dial.",
+				"description": {
+					"en": "A right-hand family of broad slightly curved roller-impression bands with rounded knurl ridges, several short grouped tally-like grooves and softly recessed narrow registration slots. Recall the petrol enamel mechanical counter through its machining rhythm, with no digits, display, counter body or complete dial.",
+					"zh": "计数滚纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/signoff-now.json",
+				"purpose": {
+					"en": "Help managers review registered developers’ Azure DevOps PR, review, and work item activity through daily scores, comparisons, and timelines, with data collected by a local CLI.",
+					"zh": "通过本地 CLI 采集已登记开发者的 Azure DevOps PR、评审和工作项活动，帮助管理者按日查看积分、人员对比与活动明细。"
+				},
+				"inspectedRevision": "51b679fba85d1a0cc81641e41f377ad77f867dd0"
+			}
+		},
+		{
+			"id": "unseal",
+			"title": "Unseal",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/unseal/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/unseal/v1.0.1",
+			"sourceMetadataSha256": "88d8fd9e5490cf9529ea616b019bf017490ec239adc1ac3280b0fa7b0c69126b",
+			"subject": "An opened green enamel and brass padlock",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/unseal-family-2026-09-07-01-01.png",
+				"sha256": "8868c38b03154d60f932fd26a67c198d4986476bbd81c4497bcc6f4c9e484c2b",
+				"rgbaSha256": "840e77e4a3e9bad9291ed7f93b06708a9d7683924ae950501ae489f60ed14b4d",
+				"source": "https://github.com/nocoo/unseal/blob/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a/logo.png",
+				"bytes": 2323865,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/unseal/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "a558ea617cee2b5e1a849336924c5b005a0ef98f92f58445c1977f462cb47b9c"
+			},
+			"previousTexture": {
+				"root": "/textures/unseal/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "An open seam",
+					"zh": "松开的封缝"
+				},
+				"description": {
+					"en": "Fine compressed felt tooth, one open curved shackle-seat impression, a broken sealing seam and a tiny brushed-brass edge accent.",
+					"zh": "压实毡面的开口弧槽、断开的封缝与极少黄铜边光，呼应解除限制后的松动感。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.33
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Released latch traces",
+					"zh": "解扣压痕"
+				},
+				"motif": "Five substantial nested curved latch-contact impressions and two offset seam channels that part gently near the lower right. Give the rounded groove lips the fine satin tooth of handled enamel translated into paper. Suggest release through an open gap, without drawing a padlock, keyhole, key or device.",
+				"description": {
+					"en": "Five substantial nested curved latch-contact impressions and two offset seam channels that part gently near the lower right. Give the rounded groove lips the fine satin tooth of handled enamel translated into paper. Suggest release through an open gap, without drawing a padlock, keyhole, key or device.",
+					"zh": "解扣压痕：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/unseal.json",
+				"purpose": {
+					"en": "Review quarantine results for apps in /Applications and select trusted apps for batch removal of the quarantine attribute.",
+					"zh": "查看 /Applications 内应用的隔离检测结果，选择可信应用后批量移除隔离属性。"
+				},
+				"inspectedRevision": "61a55cdb4380bc9e5dbaada3390ef29c7be6b84a"
+			}
+		},
+		{
+			"id": "flow",
+			"title": "Flow",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/flow/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/flow/v1.0.1",
+			"sourceMetadataSha256": "34f95cd77c9fa4c1ec7c3d0fd1390defe8413907d24b09d9713c73076cb4894b",
+			"subject": "Celadon mechanical keycap with a Chinese character",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/flow-family-2026-09-07-01-01.png",
+				"sha256": "d08f2ee2cb2c322b54dbd9677180e210756c2cc8094784c6fb86e435d43afe23",
+				"rgbaSha256": "f82a6e06d0392fa88169a35baf45f734ba12a43f8e60d75d191dabdbd9b83ffb",
+				"source": "https://github.com/nocoo/flow/blob/f4a9e9464d64184b793240adff182e08c04997e1/logo.png",
+				"bytes": 3201869,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/flow/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "5f26106f3d434d7c82041181ee216870a25ea34356458d1b81810c6b6c68818a"
+			},
+			"previousTexture": {
+				"root": "/textures/flow/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Where a key settles",
+					"zh": "按键落处"
+				},
+				"description": {
+					"en": "Soft matte ceramic micrograin, shallow staggered key-well shoulders and thin offset row grooves.",
+					"zh": "哑光瓷釉的微粒、错开的键位肩线与浅槽承接青瓷键帽，留下输入发生时轻轻落下的触感。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.31
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Keypress wells",
+					"zh": "键程浅印"
+				},
+				"motif": "Five irregularly staggered broad soft-square keypress wells with shallow dished centers, rounded chamfer lips and tiny paired switch-guide grooves. Group them diagonally as quiet impressions in paper, not a keyboard, detached keycaps, repeating tile grid or Chinese lettering.",
+				"description": {
+					"en": "Five irregularly staggered broad soft-square keypress wells with shallow dished centers, rounded chamfer lips and tiny paired switch-guide grooves. Group them diagonally as quiet impressions in paper, not a keyboard, detached keycaps, repeating tile grid or Chinese lettering.",
+					"zh": "键程浅印：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/flow.json",
+				"purpose": {
+					"en": "Explore language-model Chinese pinyin conversion, text polishing, and chat in a browser using configurable OpenAI-compatible model services.",
+					"zh": "在浏览器中使用可配置的 OpenAI 兼容模型服务，试验中文拼音转换、文本润色和对话。"
+				},
+				"inspectedRevision": "f4a9e9464d64184b793240adff182e08c04997e1"
+			}
+		},
+		{
+			"id": "arena",
+			"title": "Arena",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/arena/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/arena/v1.0.1",
+			"sourceMetadataSha256": "69f0b886baa0b02a5b59122390728f35da08ff4991e2e320055882df00ff8dd6",
+			"subject": "Walnut dual-dial chess clock",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/arena-family-2026-09-07-01-01.png",
+				"sha256": "84ab91476407de4ab4094adace81a6ff7958512c5f0066c3fc62a63421728e59",
+				"rgbaSha256": "21a8929f2a0a71bc2045b167478929e03ac9795d0a8e8246e1a68f3400416123",
+				"source": "https://github.com/nocoo/arena/blob/4a9efd6690942dd1384fd807ba83c73e7c29c202/logo.png",
+				"bytes": 3658121,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/arena/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "e30791a2474fae00edbf71ec0fcdc3deaa2a1711edface01b59dbb3a161ef5ac"
+			},
+			"previousTexture": {
+				"root": "/textures/arena/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Two considered turns",
+					"zh": "两步之间"
+				},
+				"description": {
+					"en": "Fine woven wool felt with two unequal pressed timing arcs, a restrained center seam and a few parallel move-line impressions.",
+					"zh": "细织毛毡上的双侧计时弧与浅浅行棋压线，给比较、辩论和决定各留一点从容。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.35
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Paired timing grooves",
+					"zh": "对弈刻痕"
+				},
+				"motif": "Two offset families of incomplete timing arcs, softly rounded radial notches and broad subtle walnut grain bands. The opposing curved rhythms recall a dual-dial chess clock and considered turns. Keep everything shallow and pressed into paper, with no clock body, hands, digits, chess pieces or symmetrical emblem.",
+				"description": {
+					"en": "Two offset families of incomplete timing arcs, softly rounded radial notches and broad subtle walnut grain bands. The opposing curved rhythms recall a dual-dial chess clock and considered turns. Keep everything shallow and pressed into paper, with no clock body, hands, digits, chess pieces or symmetrical emblem.",
+					"zh": "对弈刻痕：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/arena.json",
+				"purpose": {
+					"en": "Collect coding assistants’ proposals on a local discussion board, let a person record decisions, and return those checkpoints to assistants through a CLI.",
+					"zh": "在本机讨论看板汇集编码助手的方案，由人记录决策，再通过 CLI 将 checkpoint 提供给助手读取。"
+				},
+				"inspectedRevision": "4a9efd6690942dd1384fd807ba83c73e7c29c202"
+			}
+		},
+		{
+			"id": "dotty",
+			"title": "Dotty",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/dotty/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/dotty/v1.0.1",
+			"sourceMetadataSha256": "91273f98f06bf76b05e8d2f9c81cb8245abe0eafc07d535ecde18d840e4d3bdd",
+			"subject": "Floating black-and-white checker ceramic block",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dotty-family-2026-09-07-01-01.png",
+				"sha256": "ac943ec8efec9c3c3436ad4a062d60b351bf536b62fd3a4753dbecb4d5bf6e4e",
+				"rgbaSha256": "1cb4c2e1444d41d290128e66b8996c913e65bb17023ef6c2105ef4fa9687fa93",
+				"source": "https://github.com/nocoo/dotty/blob/1becb8026f44a20d9827cd5b4f100b6fb09836fe/logo.png",
+				"bytes": 2227338,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dotty/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "2b8c7cf9e20f2825289632d3af0a9537f2aed9f99e6ba3f0c6023793cc106930"
+			},
+			"previousTexture": {
+				"root": "/textures/dotty/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Ceramic measures",
+					"zh": "瓷面刻度"
+				},
+				"description": {
+					"en": "Finely stippled glaze and a restrained grid of large shallow square recesses with softly beveled rims, unevenly interrupted near the center.",
+					"zh": "细颗粒瓷釉与大尺度浅方格形成可读的几何秩序，留白处打断格子，不争抢黑白原标。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.29
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Ceramic square relief",
+					"zh": "陶方浅纹"
+				},
+				"motif": "Five to seven staggered broad square ceramic-like impressions with softly beveled edges, slight satin glaze tooth and a few shallow intersecting grout recesses. Alternate only nearby tonal values. Suggest a checker ceramic block without black-and-white contrast, an actual cube, a full checkerboard or regular wallpaper.",
+				"description": {
+					"en": "Five to seven staggered broad square ceramic-like impressions with softly beveled edges, slight satin glaze tooth and a few shallow intersecting grout recesses. Alternate only nearby tonal values. Suggest a checker ceramic block without black-and-white contrast, an actual cube, a full checkerboard or regular wallpaper.",
+					"zh": "陶方浅纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/dotty.json",
+				"purpose": {
+					"en": "Reuse dashboard layouts, controls, and charts to build data interfaces with a cool monochrome visual style.",
+					"zh": "复用看板布局、控件和图表，搭建采用冷色灰阶风格的数据界面。"
+				},
+				"inspectedRevision": "1becb8026f44a20d9827cd5b4f100b6fb09836fe"
+			}
+		},
+		{
+			"id": "matrix",
+			"title": "Matrix",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/matrix/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/matrix/v1.0.1",
+			"sourceMetadataSha256": "a5dddc1d2ff0024911a6f596218ddfb67d1cedb8977885a70837916bbf22ae04",
+			"subject": "Floating black-and-green layered circuit deck",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/matrix-family-2026-09-07-01-01.png",
+				"sha256": "f9490707d630bdaed3f8891082e46e3315fa1e2c7be89e63f6994b633de3aaf8",
+				"rgbaSha256": "7b7d7bab3ed75e93988b84ae0e29ee63dade603733294c1f27b45bc4bf2f998d",
+				"source": "https://github.com/nocoo/matrix/blob/8e6f9add035b35505576f161d95393c0b8b31e07/logo.png",
+				"bytes": 3271736,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/matrix/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "76a5a9a10d1b3d611d84e3619dea129a841d3bedf4087cd4f7e905404b589c38"
+			},
+			"previousTexture": {
+				"root": "/textures/matrix/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Quiet routing",
+					"zh": "安静的布线"
+				},
+				"description": {
+					"en": "Shallow orthogonal etched copper-like channels, small circular via depressions and staggered rectangular solder-mask zones.",
+					"zh": "复合板上的浅刻通道、小孔与错位覆膜区保留电路材质的秩序，避免发光线条压过主视觉。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.3
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Pressed routing planes",
+					"zh": "电路压纹"
+				},
+				"motif": "Five broad offset rectilinear relief planes connected by a few substantial right-angle recessed routing channels and small square contact depressions. Echo the layered circuit deck through dimensional machining traces. No circuit-board object, neon lines, glowing components, dense technical schematic or full-canvas grid.",
+				"description": {
+					"en": "Five broad offset rectilinear relief planes connected by a few substantial right-angle recessed routing channels and small square contact depressions. Echo the layered circuit deck through dimensional machining traces. No circuit-board object, neon lines, glowing components, dense technical schematic or full-canvas grid.",
+					"zh": "电路压纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/matrix.json",
+				"purpose": {
+					"en": "Reuse terminal-inspired controls, charts, and page templates to build green-on-black data dashboards.",
+					"zh": "复用终端风格的控件、图表和页面模板，搭建绿黑配色的数据看板。"
+				},
+				"inspectedRevision": "8e6f9add035b35505576f161d95393c0b8b31e07"
+			}
+		},
+		{
+			"id": "basalt",
+			"title": "Basalt",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/basalt/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/basalt/v1.0.1",
+			"sourceMetadataSha256": "5734e8439a595dcd14f5e2e440be1db1bbfba5c4154cb567b950bcbb5418a751",
+			"subject": "A candy-colored Forbidden City corner tower on white Hanbaiyu marble",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/basalt-family-2026-09-07-02-01.png",
+				"sha256": "d093add49fd51eaa926db0fe260f6afa6d10c2619d141cbc35e518ad5a1cef94",
+				"rgbaSha256": "cf680d91bf6028626966ea6a9b22de0ad53cdb9c7c60e29f519219d3079977f5",
+				"source": "https://github.com/nocoo/basalt/blob/9e226aa5c1376351ec76a659b1a33a8139892b4b/logo.png",
+				"bytes": 3445051,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/basalt/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "5f2d3eeb1f7b2b4422e2ca9f67d54e694d411af7cdb072d1b530ee1e997aa505"
+			},
+			"previousTexture": {
+				"root": "/textures/basalt/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Stone and joinery",
+					"zh": "石与榫"
+				},
+				"description": {
+					"en": "Pale Hanbaiyu-like microcrystalline grain, shallow stepped joinery rebates and a few asymmetric roof-bracket alignment notches.",
+					"zh": "细磨石材的微晶、阶式榫槽与少量斗拱定位刻痕，呼应角楼模型精密而耐看的构造。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.37
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Stone joinery relief",
+					"zh": "石作榫纹"
+				},
+				"motif": "Five overlapping shallow architectural ledge impressions with broad softly stepped dougong-like joinery, fine Hanbaiyu marble grain and restrained short chisel grooves. Treat them as tactile construction marks in paper. No tower, roof silhouette, miniature building, colored masonry or ornate architectural illustration.",
+				"description": {
+					"en": "Five overlapping shallow architectural ledge impressions with broad softly stepped dougong-like joinery, fine Hanbaiyu marble grain and restrained short chisel grooves. Treat them as tactile construction marks in paper. No tower, roof silhouette, miniature building, colored masonry or ornate architectural illustration.",
+					"zh": "石作榫纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/basalt.json",
+				"purpose": {
+					"en": "Give React applications a consistent set of controls, layered surfaces, charts, and page layouts.",
+					"zh": "为 React 应用提供统一的控件、分层表面、图表和页面布局。"
+				},
+				"inspectedRevision": "9e226aa5c1376351ec76a659b1a33a8139892b4b"
+			}
+		},
+		{
+			"id": "echo",
+			"title": "Echo",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/echo/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/echo/v1.0.1",
+			"sourceMetadataSha256": "90c1fa93588d2bb0c1bcdbc0aa009a07a5515e66ed0da3edef39348208c6255b",
+			"subject": "A brass and navy pocket compass",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/echo-family-2026-09-07-01-01.png",
+				"sha256": "ba7421a11db8e5a5e16e3199b8d6612edd65b6ba3e98855328b2cb027644c58d",
+				"rgbaSha256": "bebeeb294d53708267fe2816fdfccfc76fb60ce7a13151ea00c92179ff723d3d",
+				"source": "https://github.com/nocoo/echo/blob/59730aa033b97d0a9ff917b34a90bedef2a06c39/logo.png",
+				"bytes": 5170077,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/echo/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "ee88d8ae0eb7c639d514a2ddc6b2b7b94f8cdc131f94062a62337aa8e588bccd"
+			},
+			"previousTexture": {
+				"root": "/textures/echo/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Survey linen",
+					"zh": "测绘亚麻"
+				},
+				"description": {
+					"en": "Tightly woven linen under fine laid paper, shallow partial bearing arcs and one open crosshair-like registration pair near an edge.",
+					"zh": "亚麻衬纸上的局部方位弧与开放定位线，回应随身罗盘，也把查找位置变成安静的阅读过程。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.42
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Survey arc relief",
+					"zh": "测绘弧纹"
+				},
+				"motif": "Several broad incomplete concentric survey arcs with rounded shallow rims, short paired radial measurement notches and a restrained patch of woven instrument-cloth grain. Recall a brass pocket compass through measurement traces, not a compass object, needle, cardinal letters, map or central circular emblem.",
+				"description": {
+					"en": "Several broad incomplete concentric survey arcs with rounded shallow rims, short paired radial measurement notches and a restrained patch of woven instrument-cloth grain. Recall a brass pocket compass through measurement traces, not a compass object, needle, cardinal letters, map or central circular emblem.",
+					"zh": "测绘弧纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/echo.json",
+				"purpose": {
+					"en": "Give network diagnostic tools IP location and network data, plus observations of DNS resolver exit addresses.",
+					"zh": "为网络诊断工具提供 IP 位置与运营商信息，并观察 DNS 解析器的出口地址。"
+				},
+				"inspectedRevision": "59730aa033b97d0a9ff917b34a90bedef2a06c39"
+			}
+		},
+		{
+			"id": "deca",
+			"title": "Deca",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/deca/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/deca/v1.0.1",
+			"sourceMetadataSha256": "92dd767c2b1c66fe1c52fcde9ed00bda23ea51ead829d44019a4caaf2f9e48a6",
+			"subject": "A midnight teal rotary desk telephone",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/deca-family-2026-09-07-01-01.png",
+				"sha256": "329bb7b41d8eac9909d35cba76f04a0e2786a702f328f2e7ccf7e8dbde478262",
+				"rgbaSha256": "fa9fc5a864a7eaa030c4c488d59b68c5d2e3a8703af18f0c09e0c3ad92b8c5b8",
+				"source": "https://github.com/nocoo/deca/blob/1f41b41255b7184c307cb13693e94a6f45bbb9e1/logo.png",
+				"bytes": 3665035,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/deca/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "af852043e661d4f7bb1d11b3b4cf60cd37a3d0e3d48be6d3d8ec7d6b1bc6c95d"
+			},
+			"previousTexture": {
+				"root": "/textures/deca/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Switchboard grain",
+					"zh": "交换台肌理"
+				},
+				"description": {
+					"en": "Matte phenolic micrograin, gently curved paired cable-routing grooves and a few recessed connector-channel ends.",
+					"zh": "哑光酚醛表面的双线槽与凹入接口边缘，让对话的接入和转接有了旧式交换台的触感。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.32
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Switchboard coil traces",
+					"zh": "话路卷纹"
+				},
+				"motif": "Broad open spiral-cord impressions, three staggered curved switchboard tracks and a few softly recessed round indexing wells, translated into satin paper relief. Echo the rotary telephone's mechanical routing, with no phone, handset, dial face, digits or decorative wires lying on the surface.",
+				"description": {
+					"en": "Broad open spiral-cord impressions, three staggered curved switchboard tracks and a few softly recessed round indexing wells, translated into satin paper relief. Echo the rotary telephone's mechanical routing, with no phone, handset, dial face, digits or decorative wires lying on the surface.",
+					"zh": "话路卷纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/deca.json",
+				"purpose": {
+					"en": "Use a locally hosted personal agent through Discord, a terminal, or HTTP to work with files, commands, remembered context, and scheduled tasks.",
+					"zh": "通过 Discord、终端或 HTTP 使用本机运行的个人 Agent，处理文件、命令、已有记忆和定时任务。"
+				},
+				"inspectedRevision": "1f41b41255b7184c307cb13693e94a6f45bbb9e1"
+			}
+		},
+		{
+			"id": "runner",
+			"title": "Runner",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/runner/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/runner/v1.0.1",
+			"sourceMetadataSha256": "3306bb203a12820cf1eae7b37c5df510f91e7514a0c85c0ca80e40a85f1d6013",
+			"subject": "Emerald enamel mechanical stopwatch",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/runner-family-2026-09-07-01-01.png",
+				"sha256": "8a388497c330de53d8848238cad6d2e5e3c5647c6da6658e4b7a7c9468213347",
+				"rgbaSha256": "0d3ab5fc8ad2ea98f660678674a71234de727223b65cf221bb6bb99ee581ad9e",
+				"source": "https://github.com/nocoo/runner/blob/a5d786175358dee245773bd98af83eef4bbf5689/logo.png",
+				"bytes": 4230760,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/runner/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "d962ceb8b99acc629d0cbe640beaced233426c4bd02bc07e798946cc7b41cba6"
+			},
+			"previousTexture": {
+				"root": "/textures/runner/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "A measured minute",
+					"zh": "一分钟的刻度"
+				},
+				"description": {
+					"en": "Fine soft suede grain, two interrupted concentric calibration arcs and a restrained row of minute-like pressed notches along one edge.",
+					"zh": "绒面计时垫上的断续校准弧与边缘刻痕，呼应机械秒表和可预期的任务节奏。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.37
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Timing track relief",
+					"zh": "计时轨纹"
+				},
+				"motif": "Five broad overlapping partial timing-ring bands with shallow radial tick grooves and one small open stopping gap. Rounded rims and quiet brushed instrument grain recall the mechanical stopwatch. No complete watch, needle, digits, full circle emblem or racing imagery.",
+				"description": {
+					"en": "Five broad overlapping partial timing-ring bands with shallow radial tick grooves and one small open stopping gap. Rounded rims and quiet brushed instrument grain recall the mechanical stopwatch. No complete watch, needle, digits, full circle emblem or racing imagery.",
+					"zh": "计时轨纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/runner.json",
+				"purpose": {
+					"en": "Schedule shell commands, OpenCode prompts, and HTTP tasks on a Mac, then inspect their local run history and output through a CLI and Dashboard.",
+					"zh": "在 Mac 上定时执行 shell、OpenCode 和 HTTP 任务，通过 CLI 与本地 Dashboard 查看运行历史和输出。"
+				},
+				"inspectedRevision": "a5d786175358dee245773bd98af83eef4bbf5689"
+			}
+		},
+		{
+			"id": "geekhub",
+			"title": "GeekHub",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/geekhub/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/geekhub/v1.0.1",
+			"sourceMetadataSha256": "755ce0d2ce8b36b4666e192f7467b3b9d14c3e2784b2752dcec1d509aa7abba9",
+			"subject": "A folded newspaper in a forest-green reading folio",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/geekhub-family-2026-09-07-01-01.png",
+				"sha256": "7de6b36e18165d87f1a840b9f762f2dce1739f70a28b8a50a9964c1a6fa4e545",
+				"rgbaSha256": "43302fc2c2df45b044987581f2916f91a0606de9580a2b0aa5a3a2c9c29cd831",
+				"source": "https://github.com/nocoo/geekhub/blob/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c/logo.png",
+				"bytes": 4053576,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/geekhub/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "cc11c5d3a16000bb6121c56913eba1194e816e0cd3799ff9590cc01b24c13ab6"
+			},
+			"previousTexture": {
+				"root": "/textures/geekhub/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Reading cloth",
+					"zh": "阅读书衣"
+				},
+				"description": {
+					"en": "Fine linen bookcloth beside lightly pressed laid-paper bands, unequal column folds and a few quiet binding-edge stitches.",
+					"zh": "亚麻书衣与压纹纸带交错，分栏折线和少量装订线承接阅读、收藏与再整理。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.37
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Reading-cloth folds",
+					"zh": "书布褶纹"
+				},
+				"motif": "Broad gently folded book-cloth grain bands, three shallow curved binding-gutter channels and short compressed page-edge ridges. The textured region recalls a reading folio and folded newspaper, while remaining one continuous paper surface. No book, newspaper, readable print, separate sheet, folio outline or stitched frame.",
+				"description": {
+					"en": "Broad gently folded book-cloth grain bands, three shallow curved binding-gutter channels and short compressed page-edge ridges. The textured region recalls a reading folio and folded newspaper, while remaining one continuous paper surface. No book, newspaper, readable print, separate sheet, folio outline or stitched frame.",
+					"zh": "书布褶纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/geekhub.json",
+				"purpose": {
+					"en": "Read and organize RSS subscriptions in one place, with optional Chinese summaries and translations.",
+					"zh": "集中阅读和整理 RSS 订阅，按需生成中文摘要与翻译。"
+				},
+				"inspectedRevision": "d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c"
+			}
+		},
+		{
+			"id": "ipsafe",
+			"title": "IPSafe",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/ipsafe/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/ipsafe/v1.0.1",
+			"sourceMetadataSha256": "26b66adc269b5a41f04c458b5ea78b360c8bc71e618a0a95ce787cd89bb9f01c",
+			"subject": "A green network cable tester with a short patch lead",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/ipsafe-family-2026-09-07-01-01.png",
+				"sha256": "1cad3a55e3b03e27cc3962351e72026af873120e5dcd0bfb8afe9b5fe65bc75b",
+				"rgbaSha256": "ad40a075b02b13fde331b1fd84538c918aa442ffbd8523e8f369bfff42101283",
+				"source": "https://github.com/nocoo/ipsafe/blob/d8a28afb9ed85d4f3d1627738415a863f82b3629/logo.png",
+				"bytes": 3104822,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/ipsafe/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "c69e4d9e1b3ce869aa955473a7884bebc00a33d63f92d3cfaef43bc6713ae9c8"
+			},
+			"previousTexture": {
+				"root": "/textures/ipsafe/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Connection channels",
+					"zh": "连接槽道"
+				},
+				"description": {
+					"en": "Fine dry elastomer grain, several parallel shallow cable channels and two staggered connector seat impressions at one edge.",
+					"zh": "干爽弹性材质上的平行线槽与错位接口座，承接网络检测工具的连接关系，不把纹理当作健康状态。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.38
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Cable contact grooves",
+					"zh": "连线触纹"
+				},
+				"motif": "Five gently bent broad parallel cable-channel impressions ending in sparse paired connector-contact recesses. Short ribbed strain-relief marks provide tactile detail. Echo a network cable tester's orderly connections without drawing a tester, plug, cable prop, LEDs, numbers or a dense circuit diagram.",
+				"description": {
+					"en": "Five gently bent broad parallel cable-channel impressions ending in sparse paired connector-contact recesses. Short ribbed strain-relief marks provide tactile detail. Echo a network cable tester's orderly connections without drawing a tester, plug, cable prop, LEDs, numbers or a dense circuit diagram.",
+					"zh": "连线触纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/ipsafe.json",
+				"purpose": {
+					"en": "Check that a configured URL returns a successful HTTP response and optionally matches response content before starting a command, with project or user configuration and reusable Node.js APIs.",
+					"zh": "在启动命令前，确认指定 URL 返回成功响应并按需匹配内容；支持项目或用户配置，以及可复用的 Node.js API。"
+				},
+				"inspectedRevision": "d8a28afb9ed85d4f3d1627738415a863f82b3629"
+			}
+		},
+		{
+			"id": "dreamro",
+			"title": "DreamRO",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/dreamro/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/dreamro/v1.0.1",
+			"sourceMetadataSha256": "ba0f33a3acccd85b558a19abe0542f9acd2ad3e609fdc7d75f5dab46a2894a59",
+			"subject": "A crafted shield behind a bow and arrow, sword and magic staff",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/dreamro.png",
+				"sha256": "142e1c21c3e2efbfb5776114056756b9e7b3338dc0de2e24d620abeb48de3fbc",
+				"rgbaSha256": "e0f01115493eaca0637defd46523101e4df3d8b571315948ba425eccfdb05009",
+				"source": "https://github.com/nocoo/dreamro/blob/07185e854a59e320f8b2a45f6d50484186753c57/logo.png",
+				"bytes": 17371,
+				"width": 512,
+				"height": 512,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/dreamro/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "2cbe10ef2201355378dad5f5605c2116f9eb265bdde8e1010ed759bc664e3278"
+			},
+			"previousTexture": {
+				"root": "/textures/dreamro/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "A maker's parchment",
+					"zh": "匠人的羊皮纸"
+				},
+				"description": {
+					"en": "Fine clean parchment grain, shallow diagonal leather-lacing channels and restrained hammered-metal edge impressions.",
+					"zh": "洁净羊皮纸、斜向皮绳槽与浅锤纹金属压边承接盾牌道具的制作感，不另造徽章或武器主体。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.31
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Crafted armor tooling",
+					"zh": "铠作压纹"
+				},
+				"motif": "Broad asymmetric leather-tooling sweeps, shallow interlocking chevron seams and restrained hammered-alloy grain pressed into five generous paper planes. Recall a handcrafted shield and equipment through craft traces only. No shield silhouette, weapons, character, heraldic emblem, fantasy runes or metallic gold palette.",
+				"description": {
+					"en": "Broad asymmetric leather-tooling sweeps, shallow interlocking chevron seams and restrained hammered-alloy grain pressed into five generous paper planes. Recall a handcrafted shield and equipment through craft traces only. No shield silhouette, weapons, character, heraldic emblem, fantasy runes or metallic gold palette.",
+					"zh": "铠作压纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/dreamro.json",
+				"purpose": {
+					"en": "Explore an RO-inspired single-player RPG in the browser, from character creation and quests to combat and local progress.",
+					"zh": "在浏览器中体验 RO 风格的单人 RPG，创建角色、探索地图、完成任务并保存进度。"
+				},
+				"inspectedRevision": "07185e854a59e320f8b2a45f6d50484186753c57"
+			}
+		},
+		{
+			"id": "coffee",
+			"title": "Coffee",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/coffee/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.1",
+			"root": "/textures/coffee/v1.0.1",
+			"sourceMetadataSha256": "6d3ecf41aecb7af6156b7dae81c5afcd9dd6bbf5dd923b84d1aadd1a5f27487d",
+			"subject": "Peach ceramic cup, latte leaf, saucer and brass teaspoon",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/coffee-family-2026-09-11-01-01.png",
+				"sha256": "d00ad151f073a71b2b324b86903154551a8acd38d91d53f83fae9d661e0cb124",
+				"rgbaSha256": "51091bd39c4703f1017330cb8b26a592c6aa116e79eb17779bd6b7cc07ad3160",
+				"source": "https://github.com/nocoo/coffee/blob/0f0b9acd71497ed65c27cc3623f65a7e9a655f09/logo.png",
+				"bytes": 4374884,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/coffee/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "dfbbf78b0d15b0d1d08a7668c4d44aa5b948bb0091db43fc35a90a913149b428"
+			},
+			"previousTexture": {
+				"root": "/textures/coffee/v1.0.0",
+				"version": "1.0.0",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Cupping paper and glaze",
+					"zh": "杯测纸与釉"
+				},
+				"description": {
+					"en": "Fine uncoated cupping-paper fibers, soft ceramic-glaze micrograin and two broad incomplete translucent ring impressions of unequal size.",
+					"zh": "杯测纸纤维、细瓷釉与两道不完整的浅环痕呼应品饮过程，咖啡杯原标仍是唯一主体。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.41
+			},
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Porcelain turning rings",
+					"zh": "瓷作旋纹"
+				},
+				"motif": "Five broad open porcelain throwing-ring arcs with rounded shallow lips, a few quiet glaze-ripple bands and subtle pressed tasting-paper fibers. Suggest ceramic cup and saucer craft through tactile traces. No cup, spoon, saucer object, coffee beans, spilled liquid, stains or latte ornament.",
+				"description": {
+					"en": "Five broad open porcelain throwing-ring arcs with rounded shallow lips, a few quiet glaze-ripple bands and subtle pressed tasting-paper fibers. Suggest ceramic cup and saucer craft through tactile traces. No cup, spoon, saucer object, coffee beans, spilled liquid, stains or latte ornament.",
+					"zh": "瓷作旋纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/coffee.json",
+				"purpose": {
+					"en": "Explore coffee through an original interactive flavor wheel, compare origins and brewing recipes, and record tasting notes locally. Bilingual learning paths and a slow exhibition mode support sensory practice and shop displays.",
+					"zh": "通过原创交互风味轮认识咖啡，对照产地与冲煮配方，并在本地记录品鉴手记。双语学习路径与慢速展示模式支持感官练习和店铺大屏。"
+				},
+				"inspectedRevision": "0f0b9acd71497ed65c27cc3623f65a7e9a655f09"
+			}
+		},
+		{
+			"id": "pi-agent-policy",
+			"title": "Pi Agent Policy",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/pi-agent-policy/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.0",
+			"root": "/textures/pi-agent-policy/v1.0.0",
+			"sourceMetadataSha256": "2169b818c7fb6286c38b101976708f8fb9ccdcd9af0348210cf5a3fb797a4f28",
+			"subject": "Graphite reset instrument with terracotta enamel control",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/pi-agent-policy-family-2026-09-14-03-01.png",
+				"sha256": "c090785742f29fbaed227af799e5555a49b20449c5f37cdea5fb826fae1d3611",
+				"rgbaSha256": "adf041d555fff54e9102b46a0041f5d93202eede62fb256de964ccab6a59df63",
+				"source": "https://github.com/nocoo/pi-agent-policy/blob/ba73409bd7326fa1a425e5faa918a285cde42de5/logo.png",
+				"bytes": 3982512,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/pi-agent-policy/v1.0.3",
+				"version": "1.0.3",
+				"manifestSha256": "1beff6c43a487be2da989f6631d074ca3f29fd4a42fbc1f7983f03b68b3d8d40"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Reset-contact relief",
+					"zh": "复位触纹"
+				},
+				"motif": "A small right-hand group of five broad service-mat impressions with rounded locating-square recesses, two separated contact channels and one short return groove. A tiny muted terracotta inset may mark the return, under one percent. Recall the reset instrument and bounded repair. No device, button prop, dense circuitry, full grid or central symbol.",
+				"description": {
+					"en": "A small right-hand group of five broad service-mat impressions with rounded locating-square recesses, two separated contact channels and one short return groove. A tiny muted terracotta inset may mark the return, under one percent. Recall the reset instrument and bounded repair. No device, button prop, dense circuitry, full grid or central symbol.",
+					"zh": "复位触纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/pi-agent-policy.json",
+				"purpose": {
+					"en": "Install once in the Pi user directory to apply declarative tool policies across projects. Policy repairs and eligible terminal recovery share one allowance per original user input; the extension returns real native-tool alternatives and waits for agent_settled before recovery. The repository is currently private, and there is no independent website.",
+					"zh": "在 Pi 用户目录安装一次，即可跨项目应用声明式工具策略。策略修复与符合条件的终止恢复共用每次原始输入的一次额度；工具受限时返回真实原生替代工具，恢复等待 agent_settled。仓库目前为私有，没有独立站点。"
+				},
+				"inspectedRevision": "ba73409bd7326fa1a425e5faa918a285cde42de5"
+			}
+		},
+		{
+			"id": "diorama-journey",
+			"title": "Diorama Journey",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/diorama-journey/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.0",
+			"root": "/textures/diorama-journey/v1.0.0",
+			"sourceMetadataSha256": "a79607d0feb410085772beb1a7767fa709cf68b58ec4536916e10a9f9f8bcc00",
+			"subject": "Miniature gateway and an amber lantern on a sage model island",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/diorama-journey-family-2026-09-17-01-01.png",
+				"sha256": "fff0d40b6bf3067f80efbbcf64e78c04a2e614e9bf83f9d8edbe2168246ec851",
+				"rgbaSha256": "952801c8db6127b3440dbd223c56cf2c916b83ca6100d8c6a555459c7cb993b5",
+				"source": "https://github.com/nocoo/diorama-journey/blob/5a89d9da4d696d812a0aa46c58b94d81b8581b18/logo.png",
+				"bytes": 4115562,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/diorama-journey/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "b784e5dac00ff994cecdd71c8be155dcfefbd63006573c6552e1d5675bbae3a2"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Model-board strata",
+					"zh": "模型层纹"
+				},
+				"motif": "Five broad gently stepped model-board relief bands, incomplete arch-construction grooves and sparse paired registration notches. Subtle compressed fiber edges connect miniature scene construction to chapter progression. Keep the surface flat and continuous: no island, building, archway object, lantern or landscape.",
+				"description": {
+					"en": "Five broad gently stepped model-board relief bands, incomplete arch-construction grooves and sparse paired registration notches. Subtle compressed fiber edges connect miniature scene construction to chapter progression. Keep the surface flat and continuous: no island, building, archway object, lantern or landscape.",
+					"zh": "模型层纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/diorama-journey.json",
+				"purpose": {
+					"en": "Turn source material into an original narrated miniature 3D journey. A recurring element connects the chapters; the same timeline produces a full film, chapter MP4 clips, subtitles and PPTX/PDF/ODP slides with speaker notes. Install the skill to create an independent project from its starter.",
+					"zh": "把原始材料转成原创的配音微缩 3D 旅程，以一个贯穿元素连接各个章节。同一条时间线导出完整影片、分章 MP4、字幕，以及带演讲备注的 PPTX/PDF/ODP 幻灯片。安装技能后，可从 starter 创建独立项目。"
+				},
+				"inspectedRevision": "5a89d9da4d696d812a0aa46c58b94d81b8581b18"
+			}
+		},
+		{
+			"id": "zeppelin",
+			"title": "Zeppelin",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/zeppelin/texture-studies/2026-09-27-flare-materials-01",
+			"version": "1.0.0",
+			"root": "/textures/zeppelin/v1.0.0",
+			"sourceMetadataSha256": "c58e6dea947449fd46223115b2de59de0489cc39e9be9378e5893f44ee659297",
+			"subject": "Titanium fleet command vessel with yellow bands",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/zeppelin-family-2026-09-19-01-01.png",
+				"sha256": "fc2e1895bd279635e0d1e7180387adef421fe972391a91641f5e2e654520ac26",
+				"rgbaSha256": "b257ed5f15f796d31060f5bff14c46fcf98c2d2fcd71d4d035a5cf0e5f6ddcbf",
+				"source": "https://h.no.mt/logos/family/zeppelin/2026-09-19-01/01/transparent.png",
+				"bytes": 2824917,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": {
+				"root": "/brands/zeppelin/v1.0.0",
+				"version": "1.0.0",
+				"manifestSha256": "0171cd2f06767817f11c2a64af932005a8a42443d331b08909fbb2519b6a3e0e"
+			},
+			"previousTexture": null,
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Hull alignment relief",
+					"zh": "舰体合纹"
+				},
+				"motif": "Five broad elongated chamfered hull-panel impressions with short inset seams, two open docking-alignment arcs and small satin-machined ribs. Echo the titanium command vessel through engineering surface traces. No spacecraft silhouette, detached armor, yellow stripes, stars, galaxy, perspective scene or central emblem.",
+				"description": {
+					"en": "Five broad elongated chamfered hull-panel impressions with short inset seams, two open docking-alignment arcs and small satin-machined ribs. Echo the titanium command vessel through engineering surface traces. No spacecraft silhouette, detached armor, yellow stripes, stars, galaxy, perspective scene or central emblem.",
+					"zh": "舰体合纹：主体相关的加工痕迹化为纸面浅浮雕，统一右侧占比、细节尺度和浅深色调。"
+				},
+				"rationale": "Translate the recorded physical icon and product interaction into shallow material impressions. Match the accepted botanical series in paper palette, scale, density, relief depth, lighting and negative space. Do not include botanical motifs or redraw the icon."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/zeppelin.json",
+				"purpose": {
+					"en": "Explore an original industrial science-fiction fleet through 17 mission series and 25 archive entries. Three modeled vessels provide seven preserved HD views each; planned designs keep explicit placeholders and unknown dimensions.",
+					"zh": "通过 17 个任务系列、25 个档案探索原创工业科幻舰队。三艘已建模舰船各保留七个高清视图；规划设计明确使用占位，并保留未知尺寸。"
+				},
+				"inspectedRevision": "8ae8e920dd3afc9114c6e9d917f698e54dc95157"
+			}
+		}
+	]
+}
