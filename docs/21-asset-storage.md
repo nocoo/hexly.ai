@@ -144,3 +144,11 @@ this independently of immutable family/brand archives. Native square/rounded PNG
 lossless WebP delivery sizes, ICO and opaque iOS/Apple touch files share a checksum
 manifest, source provenance and resampling guide. Review-only composites under
 `artwork/icon-texture-review/` are private working binaries, excluded from inventory.
+
+Authorized object retirement is recorded in `docs/assets/retired.json`, separate
+from append-only publication receipts. Remove all active inventory aliases and
+local source copies only after replacement publication and production acceptance.
+The inventory reader and builder reject retired source paths and object keys,
+so a stale local export cannot silently republish or rehydrate deleted materials.
+Retirement receipts record origin existence, full hashes and confirmed deletion;
+a historical publication receipt is not evidence that a retired object survives.
