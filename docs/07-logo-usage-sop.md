@@ -335,3 +335,19 @@ Apple asset. iOS 1024 px and Apple touch deliveries use opaque square PNGs for
 platform masking. The manifest records native sizes and any 1024 px upscales.
 Original identities, transparent marks, source rights and historical archives
 remain available. No image-generation call is part of this rollout.
+
+### Falcon local macOS adoption (2026-09-29)
+
+The owner requested the new presentation in Falcon and a local Finder check.
+Local Falcon commit `302b0b93f5f5881f0baa98d6b53445f8cd15186c` adopts the exact
+`/icons/falcon/v1.0.0/icon.png` and `rounded.png` masters for its README and native
+ICNS. Root `logo.png`, transparent in-app marks and the independently approved
+monochrome menu template retain their existing bytes. The original identity's
+catalogue revision remains valid; this presentation handoff is not publication.
+
+The installed v0.1.5 bundle lacked `CFBundleIconFile` despite containing the
+ICNS. Falcon now supplies that key through an explicit plist and checks both
+the packaged declaration and icon bytes at each build entrypoint. Local signed
+installation and system-resolved icon verification passed. The exact sources,
+consumer paths and validation scope are in the
+[local adoption receipt](sources/falcon-icon-adoption-2026-09-29.json).

@@ -1,0 +1,46 @@
+{
+	"project": "falcon",
+	"date": "2026-09-29",
+	"scope": "local source adoption and signed local installation; not published",
+	"repositoryRevision": "302b0b93f5f5881f0baa98d6b53445f8cd15186c",
+	"hexlySourceRevision": "86c90f2c546edac871e96399c717082d181c4ebe",
+	"presentation": "/icons/falcon/v1.0.0",
+	"masters": [
+		{
+			"source": "/icons/falcon/v1.0.0/icon.png",
+			"destination": "assets/brand/icon.png",
+			"sha256": "0e1d69bfab499b56f43f7752668028d7a45e44f634111780299ff34fb3104456"
+		},
+		{
+			"source": "/icons/falcon/v1.0.0/rounded.png",
+			"destination": "assets/brand/icon-rounded.png",
+			"sha256": "42453656d0d43cc3e8c890d07b9752f1169c9c94dddf7c6729d438d1f35f3546"
+		}
+	],
+	"unchangedForegroundSha256": "f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68",
+	"consumers": [
+		"README.md -> assets/brand/icon-rounded.png",
+		"scripts/build-brand-assets.swift -> Sources/Falcon/Resources/Falcon.icns",
+		"Config/Info.plist -> CFBundleIconFile=Falcon"
+	],
+	"nativeIcon": {
+		"representations": 10,
+		"pixelSizes": [16, 32, 64, 128, 256, 512, 1024],
+		"tileWidthRatio": "824/1024",
+		"alpha": true,
+		"installedSystemIcon": "NSWorkspace icon(forFile:) resolved the new artwork after a scoped bundle timestamp refresh",
+		"finder": "Installed app revealed; no screen capture permission was requested or granted"
+	},
+	"verification": {
+		"releaseBuild": "passed; arm64",
+		"signature": "Apple Development, team 93WWLTN9XU; strict verification passed",
+		"installedBundle": "0.1.5 (6); executable and ICNS match the built app",
+		"runtime": "Installed application running with its loopback listener",
+		"swiftTestsWithCoverage": "passed; full-suite coverage preserved before the SDK-only run",
+		"officialPythonSDK": "passed",
+		"swiftlint": "strict; zero violations",
+		"swiftFormat": "strict; passed",
+		"regression": "Missing declaration, wrong name and mismatched ICNS were rejected",
+		"qualityLimit": "Existing Falcon L1, L3 and G2 gaps remain; no release or CI claim"
+	}
+}
