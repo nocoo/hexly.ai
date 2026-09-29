@@ -313,3 +313,13 @@ The scan exited nonzero despite reporting no leaks in its incomplete 57-commit
 sample. Refetch all reachable objects in this clone with `--refetch --no-filter`
 and commit-graph reads/writes disabled for that fetch, then repeat the complete
 scan. Never treat a partial scan's “no leaks” line as a passing security gate.
+
+## 2026-09-30 — Custom CI run name rejected by the release guard
+
+CI run 36643793109 passed all checks, but Release 36644475932 rejected its source
+before checkout, migrations or deployment. Adding a descriptive `run-name` changed
+the Actions run API's `name` from `CI` to `CI push <sha>`. The pinned shared
+release-source action compares that field with the expected workflow name.
+Remove the unnecessary run-name instead of weakening source verification. Keep
+the canonical name and use API event, SHA and run ID fields for audit labels.
+Inspect the pinned guard's actual input contract before changing workflow names.
