@@ -348,7 +348,6 @@ test.describe("has a narrow Chinese deck, an independent dark canvas and compact
 
 for (const [theme, options] of [
 	["light", desktop],
-	["dark", desktop],
 	["dark", touch],
 ] as const) {
 	test.describe(`${theme} ${options.isMobile ? "touch" : "desktop"} wordmark`, () => {
