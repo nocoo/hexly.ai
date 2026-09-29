@@ -297,3 +297,19 @@ The intake audit also exceeded Node's default synchronous subprocess output
 buffer while reading the existing multi-megabyte inventory through `git show`.
 Use an explicit bounded buffer sized for that known metadata file, or stream it
 to disk; do not let a diagnostic exception dump the inventory into tool output.
+
+## 2026-09-30 — Browser checks started before fixture hydration finished
+
+During the CI audit, a focused browser check started while the clean clone was
+still downloading its fixtures. Worker startup failed with a missing inventory
+file before any test ran. The build itself does not guarantee test-source
+hydration. Wait for the hydration process to exit successfully before starting
+HTTP or browser consumers; a growing cache or a successful build is insufficient.
+Rerun the affected check only after the preparation dependency completes.
+
+The clean clone used `blob:none`. Its first Gitleaks history walk triggered lazy
+object fetches and Git reported a commit-graph/object-database inconsistency.
+The scan exited nonzero despite reporting no leaks in its incomplete 57-commit
+sample. Refetch all reachable objects in this clone with `--refetch --no-filter`
+and commit-graph reads/writes disabled for that fetch, then repeat the complete
+scan. Never treat a partial scan's “no leaks” line as a passing security gate.
