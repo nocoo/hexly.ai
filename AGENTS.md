@@ -82,7 +82,7 @@ bun run video:check
 | pre-commit | Tracked-material guard, staged lint and changed unit tests in parallel; doc-only changes can select no tests | Unified L1 (coverage plus static lanes) on the index snapshot, <30s |
 | pre-push | L2 HTTP and G2 in parallel against working-tree files/history | Validate commits named by stdin push refs, <3min |
 
-Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI uses pinned shared setup actions and a single 10-minute verification job; deployment pins the shared workflow at `ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f`. Scope, browser clocks, Wrangler retry patch and failure evidence: [quality guide](docs/03-quality.md).
+Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI uses pinned shared setup actions and a single 10-minute verification job; immutable fixture caching never bypasses byte checks, manual CI also verifies the deployed SHA at both origins without deploying, and automatic Release accepts only main push CI; deployment pins the shared workflow at `ad43150de3a2be2fa464b5cd2f921dc4fa9f8f0f`. Scope, browser clocks, Wrangler retry patch and failure evidence: [quality guide](docs/03-quality.md).
 
 ## Resources / Isolation
 

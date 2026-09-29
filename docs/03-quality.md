@@ -47,6 +47,55 @@ The material guard reads the Git index; lint and unit tests check working-tree c
 
 `bun run assets:check` remains the full archive maintenance command: it hydrates all inventory rows and also includes unpublished historical finishing passes via `verify-assets.ts --history`. Run it when maintaining historical archives. Routine verification does not redownload historical finishing intermediates.
 
+## Repeatability and production boundary
+
+The 2026-09-30 audit keeps the complete verification command and all security,
+coverage, HTTP, build and deployment dry-run gates. The browser suite has 90
+checks: composed icons use one light desktop and one dark touch example instead
+of four projects in both themes; integrated brand archives retain desktop,
+material-identity touch and archived-project touch cases. Carousel centering retains its desktop-to-320px resize journey without
+a second touch copy; wordmark ink retains light desktop and dark touch, removing
+the additional dark desktop matrix. Catalogue-wide byte,
+pixel, identity and provenance checks remain exhaustive. Historical archive
+maintenance remains explicit.
+
+CI caches only `.wrangler/asset-cache`, keyed by inventory and fixture selection.
+Hydration still verifies every cached object's SHA-256 and every selected source's
+size and checksum. A cache miss performs the same bounded CDN downloads. No test
+result, database, generated build or renderer cache is reused. The cache is a
+network optimization, never evidence that a quality gate passed.
+
+A successful main **push** CI triggers Release, which independently proves the
+source run and current main SHA, applies D1 migrations, deploys, and verifies both
+`hexly.ai` and `status.hexly.ai`. The production verifier owns bounded propagation
+retries; the workflow does not multiply that retry budget.
+
+Manual `CI` dispatch runs the same complete verification and then reads both
+production origins, requiring their version and full revision to match the run.
+It has read-only repository permissions and no deployment secrets. Release accepts
+only push source runs, including its explicit manual source-run input. The
+workflow-run notification after a manual CI has a skipped deployment; it is **not**
+counted as deployment success. Dispatches have distinct concurrency groups, so
+they cannot cancel each other or a main push.
+
+For a repeatability audit, first push the final revision once and wait for its
+actual Release and both production checks. Freeze that SHA, then dispatch `ci.yml`
+on main ten times **sequentially**, waiting for each complete run. Require distinct
+run IDs, attempt 1, the same full SHA, successful verification and production-read
+steps, and no failed/cancelled run between them. Record API run/job responses and
+URLs under ignored `.wrangler/ci-audit/`. Stop on failure, SHA drift or a wall clock
+over 600 seconds; fixes start a new ten-run sequence. Never rerun only a job,
+replay a tag, or count an omitted check as passing.
+
+Report creation-to-completion wall clock (including queue/setup/cleanup), job
+execution and queue separately. The initial push measurement includes the linked
+Release through production verification. The ten dispatch measurements include
+both read-only production checks and **exclude Release**, since no deployment is
+requested. This proves repeatable CI plus production verification, with one actual
+deployment verified separately; it does not claim ten production deployments.
+
+See [the quantified baseline](35-ci-repeatability.md).
+
 ## Port boundaries
 
 | Purpose | Port |

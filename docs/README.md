@@ -44,4 +44,6 @@
 
 39. [Falcon and Kite onboarding and first bird identities](34-falcon-kite-onboarding.md)
 
+40. [CI repeatability audit and quantified baseline](35-ci-repeatability.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
