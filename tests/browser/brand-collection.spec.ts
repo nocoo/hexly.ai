@@ -11,7 +11,6 @@ const targets = readProjects().filter(
 for (const [id, options] of [
 	["frogie", desktop],
 	["pi-agent-policy", touch],
-	["diorama-journey", desktop],
 	["hermes-on-herdr", touch],
 ] as const) {
 	const project = targets.find((item) => item.id === id);

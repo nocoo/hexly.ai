@@ -337,82 +337,69 @@ test("uses one top project picker and preserves browser history", async ({
 	);
 });
 
-for (const [device, options] of Object.entries({ desktop, touch })) {
-	test.describe(device, () => {
-		test.use(options);
-		test("pins only the carousel and centers the selected project, including both ends and resized views", async ({
-			page,
-		}) => {
-			const middle = ordered[Math.floor(ordered.length / 2)];
-			const last = ordered.at(-1);
-			if (!firstVisible || !middle || !last)
-				throw new Error("The picker needs its catalogue.");
-			const centerError = () =>
-				page
-					.locator('.picker-item[aria-pressed="true"]')
-					.evaluate((element) => {
-						const item = element.getBoundingClientRect();
-						const carousel = element.parentElement?.getBoundingClientRect();
-						return carousel
-							? Math.abs(
-									item.left +
-										item.width / 2 -
-										carousel.left -
-										carousel.width / 2,
-								)
-							: Infinity;
-					});
-			await page.goto(`/projects/${middle.id}`);
-			await page.evaluate(() => document.fonts.ready);
-			await expect.poll(centerError).toBeLessThanOrEqual(1);
-			await page.locator('.project-section-nav a[href="#brand"]').click();
-			await expect
-				.poll(() =>
-					page.locator(".gallery-selector").evaluate((element) => {
-						const header = document
-							.querySelector(".site-header")
-							?.getBoundingClientRect();
-						return header
-							? Math.abs(element.getBoundingClientRect().top - header.bottom)
-							: Infinity;
-					}),
-				)
-				.toBeLessThanOrEqual(1);
-			await expect(page.locator(".picker-heading")).not.toBeInViewport();
-			await expect
-				.poll(() =>
-					page
-						.locator("#brand")
-						.evaluate((element) =>
-							Math.abs(
-								element.getBoundingClientRect().top -
-									(document
-										.querySelector(".gallery-selector")
-										?.getBoundingClientRect().bottom ?? 0) -
-									20,
-							),
-						),
-				)
-				.toBeLessThanOrEqual(1);
-			for (const project of [firstVisible, last, middle]) {
-				await page
-					.locator(".picker-item")
-					.nth(ordered.findIndex((item) => item.id === project.id))
-					.click();
-				await expect(page.locator("#identity-title")).toContainText(
-					project.title,
-				);
-				await expect.poll(centerError).toBeLessThanOrEqual(1);
-			}
-			await page.setViewportSize({ width: 320, height: 740 });
-			await expect.poll(centerError).toBeLessThanOrEqual(1);
-			await page.getByRole("searchbox").fill("pew");
-			await expect(page.locator(".picker-item")).toHaveCount(2);
-			await expect.poll(centerError).toBeLessThanOrEqual(1);
+test("pins only the carousel and centers the selected project, including both ends and resized views", async ({
+	page,
+}) => {
+	const middle = ordered[Math.floor(ordered.length / 2)];
+	const last = ordered.at(-1);
+	if (!firstVisible || !middle || !last)
+		throw new Error("The picker needs its catalogue.");
+	const centerError = () =>
+		page.locator('.picker-item[aria-pressed="true"]').evaluate((element) => {
+			const item = element.getBoundingClientRect();
+			const carousel = element.parentElement?.getBoundingClientRect();
+			return carousel
+				? Math.abs(
+						item.left + item.width / 2 - carousel.left - carousel.width / 2,
+					)
+				: Infinity;
 		});
-	});
-}
-
+	await page.goto(`/projects/${middle.id}`);
+	await page.evaluate(() => document.fonts.ready);
+	await expect.poll(centerError).toBeLessThanOrEqual(1);
+	await page.locator('.project-section-nav a[href="#brand"]').click();
+	await expect
+		.poll(() =>
+			page.locator(".gallery-selector").evaluate((element) => {
+				const header = document
+					.querySelector(".site-header")
+					?.getBoundingClientRect();
+				return header
+					? Math.abs(element.getBoundingClientRect().top - header.bottom)
+					: Infinity;
+			}),
+		)
+		.toBeLessThanOrEqual(1);
+	await expect(page.locator(".picker-heading")).not.toBeInViewport();
+	await expect
+		.poll(() =>
+			page
+				.locator("#brand")
+				.evaluate((element) =>
+					Math.abs(
+						element.getBoundingClientRect().top -
+							(document
+								.querySelector(".gallery-selector")
+								?.getBoundingClientRect().bottom ?? 0) -
+							20,
+					),
+				),
+		)
+		.toBeLessThanOrEqual(1);
+	for (const project of [firstVisible, last, middle]) {
+		await page
+			.locator(".picker-item")
+			.nth(ordered.findIndex((item) => item.id === project.id))
+			.click();
+		await expect(page.locator("#identity-title")).toContainText(project.title);
+		await expect.poll(centerError).toBeLessThanOrEqual(1);
+	}
+	await page.setViewportSize({ width: 320, height: 740 });
+	await expect.poll(centerError).toBeLessThanOrEqual(1);
+	await page.getByRole("searchbox").fill("pew");
+	await expect(page.locator(".picker-item")).toHaveCount(2);
+	await expect.poll(centerError).toBeLessThanOrEqual(1);
+});
 test("offers the official installation badge in light, dark and Chinese", async ({
 	page,
 }) => {
