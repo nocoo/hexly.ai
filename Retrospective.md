@@ -323,3 +323,14 @@ release-source action compares that field with the expected workflow name.
 Remove the unnecessary run-name instead of weakening source verification. Keep
 the canonical name and use API event, SHA and run ID fields for audit labels.
 Inspect the pinned guard's actual input contract before changing workflow names.
+
+## 2026-09-30 — Incomplete lock entry triggered broad dependency resolution
+
+While repairing the newly disclosed fast-uri advisory, deleting its lock entry
+before installation caused Bun to resolve unrelated transitive dependencies and
+write mirror tarball URLs with weaker metadata digests. The broad diff was caught
+before commit or push. Stop that validation attempt, restore every unchanged lock
+entry from HEAD, replace only the fast-uri version and independently verified
+SHA-512, and reinstall with `--frozen-lockfile`. Review the complete lock diff
+before starting verification; a targeted intent does not constrain a package
+manager's re-resolution of an incomplete lockfile.
