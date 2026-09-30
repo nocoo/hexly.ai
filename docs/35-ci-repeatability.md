@@ -91,3 +91,34 @@ side-effect-free CI plus production-read runs. Store raw API records and the
 result table in ignored `.wrangler/ci-audit/`, so recording results does not
 change the tested commit. This document records the baseline and procedure,
 not a claim that ten runs have already passed.
+
+## Interrupted same-SHA series
+
+Revision `44aba6d80929c63503b38e32e779d1184a65787b` passed the complete push-to-Release
+path in 404 seconds, including one actual production deployment and both origin
+checks. Push [36644616501](https://github.com/nocoo/hexly.ai/actions/runs/36644616501)
+and Release [36645158488](https://github.com/nocoo/hexly.ai/actions/runs/36645158488)
+are the source evidence. An earlier candidate failed release-source name proof
+before any migration/deployment; see Retrospective.md.
+
+Six independent `workflow_dispatch` runs, all attempt 1 on that SHA, passed in
+358, 358, 363, 285, 367 and 369 seconds. The seventh run
+[36648416068](https://github.com/nocoo/hexly.ai/actions/runs/36648416068) failed OSV
+in 113 seconds because `fast-uri 3.1.7` became vulnerable under
+[GHSA-hrr3-gc8f-f4qj](https://osv.dev/GHSA-hrr3-gc8f-f4qj), published during the
+series at 2026-09-29T23:54:25Z and updated at 2026-09-30T00:00:04Z. This is a real
+security rejection, not browser flakiness. The series stopped immediately; six
+successes do not meet the ten-consecutive-run requirement.
+
+The fix updates only the allowed transitive lock resolution to `fast-uri 3.1.8`
+(Ajv already allows `^3.0.1`), with verified SHA-512 and frozen installation.
+No vulnerability exclusion, gate suppression or test retry is added. A replacement
+SHA requires a fresh ten-run series and production authorization consistent with
+the owner's one-deployment limit. Full raw run/job records, UTC timing and logs
+remain under `.wrangler/ci-audit/44aba6d80929c63503b38e32e779d1184a65787b/`.
+
+Local validation of the fast-uri-only correction passed the full `bun run verify`
+gate in 167.5 seconds: 450 unit, 36 real HTTP and 90 browser tests; the four
+coverage metrics remained 99.54%, 98.53%, 100% and 100%. OSV reported no findings
+and Gitleaks scanned 392 commits without leaks. This is prepared local evidence,
+not a replacement for the outstanding ten online runs.
