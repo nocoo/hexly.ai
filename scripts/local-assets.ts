@@ -4,9 +4,17 @@ import { dirname } from "node:path";
 import { filesIn, readInventory } from "./asset-storage";
 
 /** Local Worker fixtures only: never add this directory to a production build. */
-export async function localAssets(profile: string) {
-	const directory = `.wrangler/${profile}-assets`;
-	await rm(directory, { recursive: true, force: true });
+export async function localAssets(
+	profile: string,
+	owned?: { directory: string; assertOwned: () => void },
+) {
+	owned?.assertOwned();
+	const directory = owned?.directory ?? `.wrangler/${profile}-assets`;
+	if (owned) {
+		await mkdir(directory);
+	} else {
+		await rm(directory, { recursive: true, force: true });
+	}
 	const files = [
 		...filesIn("dist").map((source) => ({ source, path: source.slice(4) })),
 		...readInventory()
