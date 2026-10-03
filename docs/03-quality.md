@@ -148,3 +148,7 @@ Additional verification:
 - `https://index.dev.hexly.ai` returns the application with trusted TLS. Vite's websocket connected successfully through Caddy at the same domain.
 
 These measurements describe the local v0.1.0 validation. GitHub Actions repeats the quality gates before every production deployment; the release script waits for the matching successful run and verifies public metadata before tagging. Published GitHub Releases link to their remote CI/deployment evidence. Existing artwork and emoji identities remain the phase-one baseline for the later logo-family cleanup.
+
+## Owned HTTP and browser test state
+
+The local test runner creates a unique `hexly-test-*` directory, rejects inherited Cloudflare/R2/AWS credentials, and writes a test-only Wrangler configuration with immutable source paths. It creates and checks `_test_marker` (`env=test`, unique `run_id`) before migrations and seed writes. Test processes run in an owned process group; cleanup stops descendants and rechecks the marker and directory owner. Failed or unverified state is retained for inspection. Daily development and preview state are unchanged. Browser tests remain a separate CI acceptance lane.

@@ -23,7 +23,11 @@ async function execute(args: string[]) {
 	if ((await child.exited) !== 0) throw new Error(output);
 }
 
-async function seed(env: string, directory: string) {
+export async function seed(
+	env: string,
+	directory: string,
+	executeCommand = execute,
+) {
 	const lastSlot =
 		Math.floor((Date.now() - 10_000) / CHECK_INTERVAL) * CHECK_INTERVAL;
 	const quote = (value: string) => `'${value.replaceAll("'", "''")}'`;
@@ -56,7 +60,7 @@ async function seed(env: string, directory: string) {
 	});
 	const file = `${directory}/status-demo.sql`;
 	await writeFile(file, ["DELETE FROM checks;", ...statements].join("\n"));
-	await execute([
+	await executeCommand([
 		"d1",
 		"execute",
 		"STATUS_DB",
@@ -72,6 +76,8 @@ async function seed(env: string, directory: string) {
 }
 
 export async function startLocalStatus(profile: LocalProfile) {
+	if (profile === "http" || profile === "browser")
+		throw new Error("Test profiles require the owned test runner.");
 	const { env, port, inspector } = profiles[profile];
 	const directory = `.wrangler/${profile}`;
 	// Vite serves development pages/material URLs; its Worker only needs the small build and D1.
@@ -119,9 +125,6 @@ export async function startLocalStatus(profile: LocalProfile) {
 				...process.env,
 				WRANGLER_SEND_METRICS: "false",
 				// Large immutable test fixtures exhaust macOS native watcher handles.
-				...(env === "test"
-					? { CHOKIDAR_USEPOLLING: "1", CHOKIDAR_INTERVAL: "1000" }
-					: {}),
 			},
 		},
 	);
@@ -139,6 +142,11 @@ if (import.meta.main) {
 	const profile = process.argv[2] ?? "preview";
 	if (!(profile in profiles))
 		throw new Error("Expected dev, preview, http, or browser.");
+	if (profile === "http" || profile === "browser") {
+		const { runTestStatus } = await import("./test-status");
+		await runTestStatus(profile);
+		process.exit(0);
+	}
 	const child = await startLocalStatus(profile as LocalProfile);
 	for (const signal of ["SIGINT", "SIGTERM"] as const)
 		process.on(signal, () => child.kill(signal));
