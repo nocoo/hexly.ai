@@ -18,6 +18,28 @@ import {
 	updateChangelog,
 } from "../../scripts/release-model";
 
+it("deploys with the exact Wrangler version validated by the frozen install", () => {
+	const workflow = JSON.parse(
+		execFileSync(
+			"bun",
+			[
+				"-e",
+				"console.log(JSON.stringify(Bun.YAML.parse(await Bun.file(process.argv[1]).text())))",
+				".github/workflows/release.yml",
+			],
+			{ encoding: "utf8" },
+		),
+	);
+	const manifest = JSON.parse(readFileSync("package.json", "utf8"));
+	const installed = JSON.parse(
+		readFileSync("node_modules/wrangler/package.json", "utf8"),
+	);
+	expect(workflow.jobs.deploy.with["wrangler-version"]).toBe(
+		manifest.devDependencies.wrangler,
+	);
+	expect(workflow.jobs.deploy.with["wrangler-version"]).toBe(installed.version);
+});
+
 const now = Date.parse("2026-09-06T00:00:00Z");
 const baseline = {
 	current: "0.1.0",
