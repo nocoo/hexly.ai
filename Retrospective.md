@@ -334,3 +334,7 @@ entry from HEAD, replace only the fast-uri version and independently verified
 SHA-512, and reinstall with `--frozen-lockfile`. Review the complete lock diff
 before starting verification; a targeted intent does not constrain a package
 manager's re-resolution of an incomplete lockfile.
+
+## 2026-10-03 — Verify a clean installation after Bun patch preparation
+
+While porting the local Wrangler proxy patch to 4.145.0, the editable package created by `bun patch` remained a real directory after patch commit. Incremental frozen installation did not restore its isolated-linker dependency layout, and Wrangler type generation failed to resolve esbuild. The owned installation was preserved outside the checkout and rebuilt from the unchanged frozen lock. Dependency patch acceptance must include a clean frozen installation, runtime dependency resolution and the installed-bundle regression tests; success of patch generation alone is insufficient.
