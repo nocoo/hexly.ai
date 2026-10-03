@@ -122,7 +122,7 @@ Status browser tests pin the browser clock to the fixed SQLite demo's latest sam
 
 Deployment still requires a successful CI run for the exact trusted main revision, verified by the shared release-source action. Changing test routing does not change this authorization boundary.
 
-The root `sharp: 0.35.4` override also applies the image-decoder security fix to Miniflare. Wrangler 4.129.0 depends on Miniflare 5.20260903.0-alpha, which otherwise installs its own vulnerable Sharp 0.35.2 despite the root development dependency already being fixed. The override removes that second copy and its older native binaries from the lockfile; it does not suppress [GHSA-rgj7-g3m4-5g8c](https://osv.dev/GHSA-rgj7-g3m4-5g8c). Remove the override when the pinned upstream chain selects a fixed version on its own, then verify the regenerated lockfile, runtime resolution, HTTP/browser checks and OSV scan.
+Wrangler 4.145.0 now selects Miniflare 5.20260930.0-alpha with Sharp 0.35.4, which already contains the image-decoder security fix for [GHSA-rgj7-g3m4-5g8c](https://osv.dev/GHSA-rgj7-g3m4-5g8c). The obsolete Sharp security override is removed. Root and Video Kit pin the requested Sharp 0.35.5; the regenerated lockfile, runtime HTTP checks and OSV scan verify the supported upstream chain without suppressing advisories.
 
 ## Completion evidence
 
@@ -148,3 +148,7 @@ Additional verification:
 - `https://index.dev.hexly.ai` returns the application with trusted TLS. Vite's websocket connected successfully through Caddy at the same domain.
 
 These measurements describe the local v0.1.0 validation. GitHub Actions repeats the quality gates before every production deployment; the release script waits for the matching successful run and verifies public metadata before tagging. Published GitHub Releases link to their remote CI/deployment evidence. Existing artwork and emoji identities remain the phase-one baseline for the later logo-family cleanup.
+
+## Owned HTTP and browser test state
+
+The local test runner creates a unique `hexly-test-*` directory, rejects inherited Cloudflare/R2/AWS credentials, and writes a test-only Wrangler configuration with immutable source paths. It creates and checks `_test_marker` (`env=test`, unique `run_id`) before migrations and seed writes. Test processes run in an owned process group; cleanup stops descendants and rechecks the marker and directory owner. Failed or unverified state is retained for inspection. Daily development and preview state are unchanged. Browser tests remain a separate CI acceptance lane.
