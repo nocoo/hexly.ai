@@ -73,7 +73,7 @@ bun run video:check
 | L3 UI | Critical desktop/mobile journeys, languages/themes, gallery and accessibility | enforced | Unified required CI verification job; representative Chromium journeys reject focused tests and server reuse |
 | L1 subcheck — static lanes (former G1) | Strict types and check-only lint, zero errors/warnings | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint; static lanes run staged/working-tree, so unified L1 is not snapshot-based |
 | G2 security | Dependency and secret scans; missing scanner fails | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges |
-| D1 isolation | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker | planned | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser use fixed per-lane directories and lack complete per-run/marker guarantees |
+| D1 isolation | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker | planned | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser now use owned per-run state and a marker checked before migration, seeding and cleanup; complete harness coverage remains planned |
 | Assets / build | Checksums, profiles, immutable sources, real bundle and deploy dry run | enforced | CI public/test-source byte checks, current-asset and public archive validation, one shared L2/L3 build and `deploy:check`; historical finishing audit is explicit maintenance |
 | Content / release | Provenance, source adoption and deployment proof | manual | Identity/maintenance/release runbooks and maintainer verification |
 
@@ -89,8 +89,8 @@ Install restores Husky. Checks never auto-fix; never bypass commit/branch-push h
 | Lane | Ports / directory | Boundary |
 |---|---|---|
 | Daily Vite / Worker | 7048 / 37048; inspector 38048; `.wrangler/dev` | Caddy `index.dev.hexly.ai`, local demo observations |
-| L2 HTTP | 17048; inspector 18048; `.wrangler/http` | `--env test --local`, fake IDs, no live probes |
-| L3 browser | 27048; inspector 28048; `.wrangler/browser` | Same local guard; distinct lane, still fixed across runs |
+| L2 HTTP | 17048; inspector 18048; unique `hexly-test-*` state | `--env test --local`, fake IDs, no live probes |
+| L3 browser | 27048; inspector 28048; unique `hexly-test-*` state | Same local guard; distinct lane and per-run state |
 | Manual preview | 37048; inspector 38048; `.wrangler/preview` | `--env dev --local`; do not overlap the daily Worker |
 
 Required harnesses use fresh per-run persistence, assert local/test context before fixtures, initialize `_test_marker(key,value)` with `env=test`, and verify it before reset/cleanup. Never deploy remote `-test` resources. Keep production credentials and daily-dev state out of automated lanes. Local status clocks remain stable during each browser suite.
