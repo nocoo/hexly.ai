@@ -1,0 +1,126 @@
+diff --git a/wrangler-dist/ProxyWorker.js b/wrangler-dist/ProxyWorker.js
+index 31c2e840239d5389e5828764c3be2732228fc94d..f05a82439d9cd8de5e23148a1cbad34a0c18987d 100644
+--- a/wrangler-dist/ProxyWorker.js
++++ b/wrangler-dist/ProxyWorker.js
+@@ -139,57 +139,58 @@ var ProxyWorker = class {
+           headers.set(key, value);
+         }
+       }
+-      const attemptUserWorkerFetch = (attempt = 0) => void fetch(userWorkerUrl, new Request(request, { headers })).then(
+-        async (res) => {
+-          if (attempt > 0) {
+-            console.warn(
+-              `ProxyWorker: ${request.method} ${request.url} recovered on attempt ${attempt + 1} after a dropped connection to the UserWorker`
+-            );
+-          }
+-          res = new Response(res.body, res);
+-          rewriteUrlRelatedHeaders(res.headers, innerUrl, outerUrl);
+-          await checkForPreviewTokenError(res, this.env, proxyData);
+-          if (isHtmlResponse(res)) {
+-            res = insertLiveReloadScript(request, res, this.env, proxyData);
+-          }
+-          if (isSseResponse(res)) {
++      void fetch(userWorkerUrl, new Request(request, { headers })).catch((error) => {
++        // One retry for a lost read connection; never replay writes or upgrades.
++        if (
++          (request.method === "GET" || request.method === "HEAD") &&
++          !request.signal.aborted &&
++          !request.headers.has("Upgrade") &&
++          error.message === "Network connection lost." &&
++          isSameUserWorkerOrigin(userWorkerUrl, this.proxyData?.userWorkerUrl)
++        ) {
++          return fetch(userWorkerUrl, new Request(request, { headers }));
++        }
++        throw error;
++      }).catch((error) => {
++        throw new UserWorkerFetchError(error);
++      }).then(async (res) => {
++        res = new Response(res.body, res);
++        rewriteUrlRelatedHeaders(res.headers, innerUrl, outerUrl);
++        await checkForPreviewTokenError(res, this.env, proxyData);
++        if (isHtmlResponse(res)) {
++          res = insertLiveReloadScript(request, res, this.env, proxyData);
++        }
++        if (isSseResponse(res)) {
++          void sendMessageToProxyController(this.env, {
++            type: "sseResponseDetected"
++          });
++        }
++        deferredResponse.resolve(res);
++      }).catch((error) => {
++        if (isSameUserWorkerOrigin(userWorkerUrl, this.proxyData?.userWorkerUrl)) {
++          if (error instanceof UserWorkerFetchError) {
+             void sendMessageToProxyController(this.env, {
+-              type: "sseResponseDetected"
++              type: "debug-log",
++              args: [
++                "Could not proxy request to the UserWorker:",
++                request.method,
++                request.url,
++                error.message
++              ]
+             });
+-          }
+-          deferredResponse.resolve(res);
+-        },
+-        (error) => {
+-          if (isSameUserWorkerOrigin(
+-            userWorkerUrl,
+-            this.proxyData?.userWorkerUrl
+-          ) && (request.method === "GET" || request.method === "HEAD") && attempt < 2) {
+-            setTimeout(
+-              () => {
+-                if (this.proxyData !== proxyData) {
+-                  this.requestRetryQueue.set(request, deferredResponse);
+-                  this.processQueue();
+-                  return;
+-                }
+-                attemptUserWorkerFetch(attempt + 1);
+-              },
+-              attempt === 0 ? 0 : 250
++            deferredResponse.resolve(
++              new Response(
++                `Could not proxy this request to your Worker: ${error.message}`,
++                { status: 502 }
++              )
+             );
+             return;
+           }
+-          throw error;
+-        }
+-      ).catch((error) => {
+-        if (isSameUserWorkerOrigin(
+-          userWorkerUrl,
+-          this.proxyData?.userWorkerUrl
+-        )) {
+-          const attemptsNote = ` (failed after ${attempt + 1} ${attempt === 0 ? "attempt" : "attempts"})`;
+           void sendMessageToProxyController(this.env, {
+             type: "error",
+             error: {
+               name: error.name,
+-              message: `${request.method} ${request.url}${attemptsNote}: ${error.message}`,
++              message: error.message,
+               stack: error.stack,
+               cause: error.cause
+             }
+@@ -209,7 +210,6 @@ var ProxyWorker = class {
+           );
+         }
+       });
+-      attemptUserWorkerFetch();
+     }
+   }
+ };
+@@ -245,6 +245,12 @@ function isRequestForLiveReloadWebsocket(req) {
+   const isWebSocketUpgrade = req.headers.get("Upgrade") === "websocket";
+   return isWebSocketUpgrade && websocketProtocol === LIVE_RELOAD_PROTOCOL;
+ }
++class UserWorkerFetchError extends Error {
++  constructor(cause) {
++    super(cause.message, { cause });
++    this.name = "UserWorkerFetchError";
++  }
++}
+ function sendMessageToProxyController(env, message) {
+   return env.PROXY_CONTROLLER.fetch("http://dummy", {
+     method: "POST",
