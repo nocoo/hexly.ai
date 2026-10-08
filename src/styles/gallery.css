@@ -58,13 +58,33 @@
 	align-items: center;
 	gap: 12px;
 }
+.picker-category-control {
+	--picker-control-inset: 9px;
+	position: relative;
+	min-width: 0;
+	max-width: 180px;
+	flex-shrink: 0;
+	color: var(--ink);
+}
+.picker-category-control > .icon {
+	position: absolute;
+	right: var(--picker-control-inset);
+	top: 50%;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 12px;
+	pointer-events: none;
+}
 .picker-category {
+	appearance: none;
+	width: 100%;
 	min-width: 0;
 	max-width: 180px;
 	height: 36px;
 	border: 1px solid var(--line);
 	border-radius: 7px;
-	padding: 6px 9px;
+	padding: 6px calc(var(--picker-control-inset) * 2 + 12px) 6px
+		var(--picker-control-inset);
 	background: var(--surface);
 	color: var(--ink);
 	font-size: 11px;
@@ -732,8 +752,10 @@
 	.picker-controls {
 		gap: 8px;
 	}
-	.picker-category {
+	.picker-category-control {
 		max-width: 142px;
+	}
+	.picker-category {
 		font-size: 10px;
 	}
 	.picker-item {
