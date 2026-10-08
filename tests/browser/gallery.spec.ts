@@ -21,7 +21,7 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 	await page.unroute("**/data/projects.json");
 	await page.goto("/projects/xray");
 	await expect(
-		page.getByRole("tab", { name: "Overview", exact: true }),
+		page.getByRole("tab", { name: "Project Detail", exact: true }),
 	).toHaveAttribute("aria-selected", "true");
 	await expect(page.locator(".screenshot-card")).toHaveCount(5);
 	await expect(page.locator(".project-overview .tech-name")).toHaveCount(7);
@@ -31,13 +31,24 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 			.locator(".identity-links")
 			.getByRole("button", { name: "Copy project link" }),
 	).toBeVisible();
-	const overview = page.getByRole("tab", { name: "Overview", exact: true });
+	const overview = page.getByRole("tab", {
+		name: "Project Detail",
+		exact: true,
+	});
 	await overview.focus();
-	await overview.press("ArrowRight");
-	await expect(page).toHaveURL(/\/projects\/xray#brand$/);
-	await expect(page.getByRole("tab", { name: "Brand design" })).toBeFocused();
+	await expect(page.locator("#overview-title")).toHaveText("Overview");
 	await expect(page.locator(".brand-hero")).toBeVisible();
-	await page.getByRole("tab", { name: "Brand design" }).press("ArrowRight");
+	expect(
+		await page
+			.locator(".brand-hero")
+			.evaluate((hero) => hero.nextElementSibling?.id),
+	).toBe("overview");
+	const beforeTab = await page.evaluate(() => scrollY);
+	await overview.press("ArrowRight");
+	await expect(
+		page.getByRole("tab", { name: "Downloads & archive" }),
+	).toBeFocused();
+	expect(await page.evaluate(() => scrollY)).toBe(beforeTab);
 	await expect(page.locator("#panel-downloads")).toBeVisible();
 	await expect(page.locator(".brand-kit-assets a[download]")).toHaveCount(8);
 	await expect(page.locator(".identity-archive a[download]")).toHaveCount(8);
@@ -62,7 +73,7 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 	await page.getByRole("button", { name: "Switch to Chinese" }).click();
 	await page.locator(".theme-toggle").click();
 	await page.setViewportSize({ width: 320, height: 740 });
-	for (const name of ["概览", "品牌设计", "下载与档案", "集成"]) {
+	for (const name of ["项目详情", "下载与档案", "集成"]) {
 		const tab = page.getByRole("tab", { name, exact: true });
 		await tab.click();
 		await expect(tab).toHaveAttribute("aria-selected", "true");
@@ -218,16 +229,18 @@ test("uses one top project picker and preserves browser history", async ({
 	await expect(
 		page.locator(".picker-heading").getByRole("searchbox"),
 	).toBeInViewport();
-	await page.locator('.project-section-nav a[href="#brand"]').click();
-	await expect(page.locator("#brand")).toBeInViewport();
+	await page.locator('.project-section-nav a[href="#detail"]').click();
+	await expect(page.locator("#detail")).toBeInViewport();
 	await page.locator(".picker-item").filter({ hasText: /^Pew$/ }).click();
-	await expect(page).toHaveURL(new RegExp(`/projects/${afterFrogie.id}$`));
+	await expect(page).toHaveURL(
+		new RegExp(`/projects/${afterFrogie.id}#detail$`),
+	);
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
 	);
-	await expect(page.locator("#panel-overview")).toBeVisible();
-	expect(new URL(page.url()).hash).toBe("");
-	await expect(page.locator("#identity-title")).toBeInViewport();
+	await expect(page.locator("#panel-brand")).toBeVisible();
+	expect(new URL(page.url()).hash).toBe("#detail");
+	await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
 	if (!afterFrogie.overview) throw new Error("Missing Pew overview");
 	await expect(page.locator(".project-overview .project-goal > p")).toHaveText(
 		afterFrogie.overview.goal.en,
@@ -241,7 +254,7 @@ test("uses one top project picker and preserves browser history", async ({
 		afterFrogie.title,
 	);
 	await page.locator(".picker-item").filter({ hasText: "Frogie" }).click();
-	await expect(page).toHaveURL(/\/projects\/frogie$/);
+	await expect(page).toHaveURL(/\/projects\/frogie#detail$/);
 	await page.goBack();
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
@@ -268,7 +281,7 @@ test("pins the carousel and tabs, and centers edge projects across resized views
 	await page.goto(`/projects/${middle.id}`);
 	await page.evaluate(() => document.fonts.ready);
 	await expect.poll(centerError).toBeLessThanOrEqual(1);
-	await page.locator('.project-section-nav a[href="#brand"]').click();
+	await page.locator("#detail").evaluate((element) => element.scrollIntoView());
 	await expect
 		.poll(() =>
 			page.locator(".gallery-selector").evaluate((element) => {
@@ -285,7 +298,7 @@ test("pins the carousel and tabs, and centers edge projects across resized views
 	await expect
 		.poll(() =>
 			page
-				.locator("#brand")
+				.locator("#detail")
 				.evaluate((element) =>
 					Math.abs(
 						element.getBoundingClientRect().top -
@@ -354,8 +367,8 @@ test("offers the official installation badge in light, dark and Chinese", async 
 		"aria-label",
 		"添加至 Chrome: Hooky",
 	);
-	await page.locator('.project-section-nav a[href="#brand"]').click();
-	await expect(page).toHaveURL(/#brand$/);
+	await page.locator('.project-section-nav a[href="#detail"]').click();
+	await expect(page).toHaveURL(/#detail$/);
 	await page.getByRole("searchbox").fill("hooky");
 	await expect(page).toHaveURL(/\/projects\/hooky\?q=hooky$/);
 	await expect(page.locator(".gallery-selector")).toBeInViewport();
@@ -396,16 +409,16 @@ test("browses filtered identities with arrow keys, wraps, and preserves history"
 	).toHaveAttribute("aria-keyshortcuts", "ArrowLeft ArrowRight");
 	await expect(page.locator(".identity-pagination")).toHaveCount(0);
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#detail$/);
 	await expect(page.locator("#identity-title")).toContainText("Pew Game");
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az#detail$/);
 	await page.keyboard.press("ArrowLeft");
-	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#detail$/);
 	await page.goBack();
-	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?q=pew&sort=az#detail$/);
 	await page.goForward();
-	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew-game\?q=pew&sort=az#detail$/);
 	await page
 		.getByRole("combobox", { name: "Project categories" })
 		.selectOption("games");
@@ -509,60 +522,23 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 	await expect(page).toHaveURL(/\/$/);
 });
 
-test.describe("touch brand alignment", () => {
+test.describe("touch project switching", () => {
 	test.use(touch);
-	test("keeps the brand section aligned while switching projects and languages", async ({
+	test("opens Project Detail at page top when switching from another tab", async ({
 		page,
-		isMobile,
 	}) => {
-		if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
-		const pair = projects.filter((project) =>
-			["frogie", "pew"].includes(project.id),
-		);
-		await page.unroute("**/data/projects.json");
-		await page.route("**/data/projects.json", (route) =>
-			route.fulfill({ json: pair }),
-		);
-		await page.goto("/projects/frogie#brand");
-		for (const locale of ["en", "zh"]) {
-			if (locale === "zh")
-				await page.getByRole("button", { name: "Switch to Chinese" }).click();
-			await page.evaluate(() => document.fonts.ready);
-			await page
-				.locator("#brand")
-				.evaluate((element) => element.scrollIntoView());
-			await page
-				.locator('.picker-item[aria-pressed="true"]')
-				.evaluate((element) =>
-					(element as HTMLElement).focus({ preventScroll: true }),
-				);
-			const start = await page
-				.locator("#brand")
-				.evaluate((element) => element.getBoundingClientRect().top);
-			expect(start).toBeGreaterThan(0);
-			for (let index = 0; index < 2; index += 1) {
-				await page.keyboard.press("ArrowRight");
-				await expect(page).toHaveURL(/#brand$/);
-				await expect(page.locator("#panel-brand")).toBeVisible();
-				await expect(page.locator("#api")).toHaveCount(0);
-				await expect
-					.poll(() =>
-						page
-							.locator("#brand")
-							.evaluate(
-								(element, top) =>
-									Math.abs(element.getBoundingClientRect().top - top),
-								start,
-							),
-					)
-					.toBeLessThanOrEqual(1);
-				expect(
-					await page.evaluate(
-						() => document.documentElement.scrollWidth <= innerWidth,
-					),
-				).toBe(true);
-			}
-		}
+		await page.goto("/projects/frogie#downloads");
+		await page.locator(".identity-archive").scrollIntoViewIfNeeded();
+		await page.locator(".picker-item").filter({ hasText: /^Pew$/ }).click();
+		await expect(page).toHaveURL(/\/projects\/pew#detail$/);
+		await expect(
+			page.getByRole("tab", { name: "Project Detail", exact: true }),
+		).toHaveAttribute("aria-selected", "true");
+		await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+		await page.locator("#brand").scrollIntoViewIfNeeded();
+		await page.locator(".identity-github").focus();
+		await page.keyboard.press("ArrowRight");
+		await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
 	});
 });
 
@@ -590,7 +566,7 @@ test.describe("searches the gallery, labels emoji identities, and recovers from 
 		await expect(page.locator("#identity-title")).toContainText(
 			"Uptime Kuma Skill",
 		);
-		await page.getByRole("tab", { name: "Brand design" }).click();
+		await page.getByRole("tab", { name: "Project Detail" }).click();
 		await expect(page.locator(".asset-label")).toHaveText("Emoji identity");
 		await page.getByRole("tab", { name: "Downloads & archive" }).click();
 		await expect(page.locator(".identity-footer")).toContainText(
@@ -614,6 +590,6 @@ test.describe("searches the gallery, labels emoji identities, and recovers from 
 		);
 		await page.locator(".picker-item").filter({ hasText: "Backy" }).click();
 		await expect(page.locator("#identity-title")).toContainText("Backy");
-		await expect(page).toHaveURL(/\/projects\/backy$/);
+		await expect(page).toHaveURL(/\/projects\/backy#detail$/);
 	});
 });

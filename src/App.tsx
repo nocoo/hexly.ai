@@ -187,9 +187,29 @@ export function App() {
 			window.history.replaceState(null, "", path);
 	}, [catalogue.status, state]);
 
+	const previousScrollState = useRef<DirectoryState | undefined>(undefined);
 	useEffect(() => {
-		if (catalogue.status !== "ready" || !state.anchor) return;
+		if (catalogue.status !== "ready") return;
+		const previous = previousScrollState.current;
+		previousScrollState.current = state;
+		const projectChanged =
+			state.view === "project" &&
+			previous?.view === "project" &&
+			previous.project !== state.project;
+		const tabChanged =
+			state.view === "project" &&
+			previous?.view === "project" &&
+			previous.project === state.project &&
+			["detail", "downloads", "integration"].includes(state.anchor ?? "");
+		if (projectChanged) {
+			const frame = requestAnimationFrame(() =>
+				window.scrollTo({ top: 0, behavior: "instant" }),
+			);
+			return () => cancelAnimationFrame(frame);
+		}
+		if (tabChanged || !state.anchor) return;
 		const anchor = state.anchor;
+		if (!anchor) return;
 		// CSS owns smooth scrolling and the prefers-reduced-motion fallback.
 		const frame = requestAnimationFrame(() =>
 			document
@@ -265,7 +285,16 @@ export function App() {
 	};
 	const change = (patch: Partial<DirectoryState>) =>
 		navigate(
-			{ ...state, ...(patch.view ? { anchor: undefined } : {}), ...patch },
+			{
+				...state,
+				...(patch.view ? { anchor: undefined } : {}),
+				...patch,
+				...(state.view === "project" &&
+				resolveNavigation({ ...state, ...patch }, projects).project !==
+					state.project
+					? { anchor: "detail" }
+					: {}),
+			},
 			"query" in patch,
 		);
 	const view = (next: View) => {

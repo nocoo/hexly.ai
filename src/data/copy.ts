@@ -35,6 +35,7 @@ export const copy = {
 		viewProject: "View project",
 		projectSections: "Project sections",
 		brandTab: "Brand design",
+		projectDetail: "Project Detail",
 		downloadsTab: "Downloads & archive",
 		downloadsDescription:
 			"Original files, ready-to-use assets, licenses, and provenance.",
@@ -211,6 +212,7 @@ export const copy = {
 		viewProject: "查看项目",
 		projectSections: "项目章节",
 		brandTab: "品牌设计",
+		projectDetail: "项目详情",
 		downloadsTab: "下载与档案",
 		downloadsDescription: "原始文件、可用资产、许可与来源记录。",
 		integrationTab: "集成",
