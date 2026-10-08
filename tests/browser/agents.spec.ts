@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
-import AxeBuilder from "@axe-core/playwright";
 import { agentCopy } from "../../src/data/agent-copy";
 import { readProjects } from "../../src/data/read-projects";
+import { scanAccessibility } from "./accessibility";
 
 import { expect, test, touch } from "./fixtures";
 
@@ -53,10 +53,7 @@ test("copies page-specific instructions across site surfaces", async ({
 		"--project pew --template launch --theme dark",
 	);
 	await expect(guide.locator("pre")).toHaveCSS("white-space", "pre-wrap");
-	const scan = await new AxeBuilder({ page })
-		.include("#agent-guide")
-		.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-		.analyze();
+	const scan = await scanAccessibility(page, "#agent-guide");
 	expect(scan.violations).toEqual([]);
 	await page.getByRole("button", { name: "Switch to Chinese" }).click();
 	await expect(

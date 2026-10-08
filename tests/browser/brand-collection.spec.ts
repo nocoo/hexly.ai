@@ -1,7 +1,7 @@
-import AxeBuilder from "@axe-core/playwright";
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
 import { brandTextureAsset, projectTexture } from "../../src/model/brand";
+import { scanAccessibility } from "./accessibility";
 import { desktop, expect, test, touch } from "./fixtures";
 
 const targets = readProjects().filter(
@@ -10,7 +10,6 @@ const targets = readProjects().filter(
 
 for (const [id, options] of [
 	["frogie", desktop],
-	["pi-agent-policy", touch],
 	["hermes-on-herdr", touch],
 ] as const) {
 	const project = targets.find((item) => item.id === id);
@@ -93,8 +92,7 @@ for (const [id, options] of [
 					),
 				).toBe(true);
 				expect(
-					(await new AxeBuilder({ page }).include(".brand-kit").analyze())
-						.violations,
+					(await scanAccessibility(page, ".brand-kit")).violations,
 				).toEqual([]);
 			}
 			await page.getByRole("button", { name: "Switch to Chinese" }).click();
@@ -112,7 +110,6 @@ for (const [id, options] of [
 
 for (const [id, options] of [
 	["frogie", desktop],
-	["pi-agent-policy", touch],
 	["pokepocket", touch],
 ] as const) {
 	const project = targets.find((item) => item.id === id);
@@ -174,9 +171,7 @@ for (const [id, options] of [
 					"border-radius",
 					"0px",
 				);
-				expect((await new AxeBuilder({ page }).analyze()).violations).toEqual(
-					[],
-				);
+				expect((await scanAccessibility(page)).violations).toEqual([]);
 			}
 			if (project.family?.previous === null) {
 				await expect(page.locator(".comparison figure")).toHaveCount(1);

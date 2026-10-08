@@ -49,15 +49,23 @@ The material guard reads the Git index; lint and unit tests check working-tree c
 
 ## Repeatability and production boundary
 
-The 2026-09-30 audit keeps the complete verification command and all security,
-coverage, HTTP, build and deployment dry-run gates. The browser suite has 90
-checks: composed icons use one light desktop and one dark touch example instead
-of four projects in both themes; integrated brand archives retain desktop,
-material-identity touch and archived-project touch cases. Carousel centering retains its desktop-to-320px resize journey without
-a second touch copy; wordmark ink retains light desktop and dark touch, removing
-the additional dark desktop matrix. Catalogue-wide byte,
-pixel, identity and provenance checks remain exhaustive. Historical archive
-maintenance remains explicit.
+Tests have distinct responsibilities. `verify-assets.ts` checks every current
+identity and every public versioned manifest's bytes. Unit tests cover model
+branches, trust boundaries and provenance policies; expensive composition/pixel
+checks use generated-animal, physical-object, retained-original, supplied-artwork
+and raster-texture representatives. HTTP checks validate endpoint methods,
+headers, redirects and representative binary/text transport, not a second full
+archive checksum walk. Browser checks cover actual interactions, failures,
+history, keyboard/focus, bilingual content, themes and responsive layout; shared
+controls do not require a Cartesian product of projects, devices and themes.
+
+The browser suite has 72 checks. Each route/theme receives one accessibility
+scan; changing only an artwork image does not repeat it. Scans run `axe-core`
+directly in the current page with its default rules. The scanner rejects frames
+instead of silently omitting them. The site has no embedded frames; if that
+changes, explicitly extend the scanner's scope. It does not open blank pages to
+assemble results, avoiding unrelated popup lifecycle failures. Test retries and
+coverage thresholds are unchanged. Historical archive maintenance remains explicit.
 
 CI caches only `.wrangler/asset-cache`, keyed by inventory and fixture selection.
 Hydration still verifies every cached object's SHA-256 and every selected source's

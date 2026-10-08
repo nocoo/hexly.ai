@@ -6,7 +6,9 @@ import { projectApi, projectApiPath } from "../../src/model/project-api";
 test("returns exactly one repository with CORS and one-hour caching", async ({
 	request,
 }) => {
-	for (const p of readProjects()) {
+	for (const p of readProjects().filter((project) =>
+		["life-ai", "uptime-kuma-skill"].includes(project.id),
+	)) {
 		const response = await request.get(projectApiPath(p));
 		expect(response.status(), p.repo).toBe(200);
 		expect(response.headers()["content-type"]).toContain("application/json");

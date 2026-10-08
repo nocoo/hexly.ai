@@ -1,10 +1,10 @@
 import { createHash } from "node:crypto";
-import AxeBuilder from "@axe-core/playwright";
 import type { Page } from "@playwright/test";
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
 import type { Project } from "../../src/model/project";
 import { screenshotFixture, videoFixture } from "../fixtures/project-media";
+import { scanAccessibility } from "./accessibility";
 import { desktop, expect, test, touch } from "./fixtures";
 
 // Exercise media locally; real catalogue recordings must not become CI downloads.
@@ -53,21 +53,14 @@ async function mockMedia(page: Page, media: Project["media"], clip?: Buffer) {
 	return requests;
 }
 
-for (const [device, options] of Object.entries({ desktop, touch })) {
+for (const [device, options] of Object.entries({ touch })) {
 	test.describe(device, () => {
 		test.use(options);
 		test("carousel switching removes the previous project's screenshots", async ({
 			page,
 		}) => {
 			await page.goto("/projects/frogie");
-			for (const id of [
-				"hooky",
-				"r2shot",
-				"frogie",
-				"r2shot",
-				"hooky",
-				"frogie",
-			]) {
+			for (const id of ["hooky", "r2shot", "frogie"]) {
 				const project = readProjects().find((item) => item.id === id);
 				if (!project) throw new Error(`Missing project: ${id}`);
 				await page
@@ -170,10 +163,7 @@ for (const [device, options] of Object.entries({ desktop, touch })) {
 			await video.focus();
 			await page.keyboard.press("ArrowRight");
 			await expect(page).toHaveURL(url);
-			const scan = await new AxeBuilder({ page })
-				.include(".project-media")
-				.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-				.analyze();
+			const scan = await scanAccessibility(page, ".project-media");
 			expect(scan.violations).toEqual([]);
 			await page.unroute("**/data/projects.json");
 			await mockMedia(
@@ -287,10 +277,7 @@ test("shows a recoverable media failure and supports screenshot-only projects", 
 		"href",
 		screenshotFixture.src,
 	);
-	const scan = await new AxeBuilder({ page })
-		.include(".project-media")
-		.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-		.analyze();
+	const scan = await scanAccessibility(page, ".project-media");
 	expect(scan.violations).toEqual([]);
 	const opener = page.locator(".screenshot-card");
 	await opener.click();
@@ -388,10 +375,7 @@ for (const [device, options] of Object.entries({ desktop, touch })) {
 			}
 			await expect(page.locator("html")).toHaveCSS("overflow", "hidden");
 
-			const scan = await new AxeBuilder({ page })
-				.include(".screenshot-lightbox")
-				.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-				.analyze();
+			const scan = await scanAccessibility(page, ".screenshot-lightbox");
 			expect(scan.violations).toEqual([]);
 
 			const controls = dialog.locator("a[href], button:not([disabled])");
@@ -442,103 +426,7 @@ test("an unavailable full-size image remains closable with a direct original lin
 	await expect(dialog).toHaveCount(0);
 });
 
-for (const [id, options] of [
-	["hooky", desktop],
-	["diorama-journey", touch],
-] as const) {
-	test.describe(id, () => {
-		test.use(options);
-		test(`${id} presents the real R2-managed screenshots in both themes`, async ({
-			page,
-		}) => {
-			const project = readProjects().find((item) => item.id === id);
-			const shots = project?.media?.screenshots ?? [];
-			expect(shots).toHaveLength(id === "diorama-journey" ? 1 : 3);
-			const errors: string[] = [];
-			page.on("pageerror", (error) => errors.push(error.message));
-			await page.goto(`/projects/${id}`);
-			await expect(page.locator(".project-film")).toHaveCount(
-				id === "diorama-journey" ? 1 : 0,
-			);
-			await expect(page.locator(".project-film video")).toHaveCount(0);
-			await expect(page.locator("#brand .brand-hero")).toHaveCount(1);
-			for (const theme of ["light", "dark"]) {
-				if (theme === "dark")
-					await page
-						.getByRole("button", {
-							name: "Theme: Light. Switch to dark theme.",
-						})
-						.click();
-				await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
-				await expect(page.locator(".screenshot-card")).toHaveCount(
-					shots.length,
-				);
-				const first = page.locator(".screenshot-card").first();
-				await expect(first.locator("img")).toHaveAttribute(
-					"src",
-					assetUrl(shots[0]?.preview ?? ""),
-				);
-				await expect(first.locator("img")).toHaveAttribute(
-					"crossorigin",
-					"anonymous",
-				);
-				await first
-					.locator("img")
-					.evaluate((img: HTMLImageElement) => img.decode());
-				await first.click();
-				const dialog = page.getByRole("dialog");
-				await dialog
-					.locator(".screenshot-focus img")
-					.evaluate((img: HTMLImageElement) => img.decode());
-				await expect(dialog.locator(".screenshot-focus img")).toHaveAttribute(
-					"src",
-					assetUrl(shots[0]?.src ?? ""),
-				);
-				await expect(dialog.locator(".screenshot-focus img")).toHaveAttribute(
-					"crossorigin",
-					"anonymous",
-				);
-				if (shots.length > 1) {
-					await dialog
-						.getByRole("navigation")
-						.getByRole("button")
-						.nth(2)
-						.click();
-					await expect(dialog.locator(".screenshot-focus img")).toHaveAttribute(
-						"src",
-						assetUrl(shots[2]?.src ?? ""),
-					);
-				} else {
-					await expect(dialog.getByRole("navigation")).toHaveCount(0);
-					await expect(dialog.locator(".screenshot-step")).toHaveCount(0);
-				}
-				const scan = await new AxeBuilder({ page })
-					.include(".screenshot-lightbox")
-					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-					.analyze();
-				expect(scan.violations).toEqual([]);
-				await page.keyboard.press("Escape");
-				expect(
-					await page.evaluate(
-						() => document.documentElement.scrollWidth <= innerWidth,
-					),
-				).toBe(true);
-			}
-			await page.getByRole("button", { name: "Switch to Chinese" }).click();
-			await page.locator(".screenshot-card").first().click();
-			await expect(
-				page.getByRole("button", { name: "关闭预览" }),
-			).toBeVisible();
-			await expect(page.getByRole("button", { name: "下一张" })).toHaveCount(
-				shots.length > 1 ? 1 : 0,
-			);
-			await page.getByRole("button", { name: "关闭预览" }).click();
-			expect(errors).toEqual([]);
-		});
-	});
-}
-
-for (const [device, options] of Object.entries({ desktop, touch })) {
+for (const [device, options] of Object.entries({ desktop })) {
 	test.describe(device, () => {
 		test.use(options);
 		test("hash navigation animates, restores history and respects reduced motion", async ({

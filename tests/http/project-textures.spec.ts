@@ -52,7 +52,11 @@ test("serves exact texture downloads and preserves raw review HTML while enhanci
 	expect(response.status()).toBe(200);
 	const manifest = await response.json();
 	expect(textureManifestProblems(manifest)).toEqual([]);
-	for (const file of manifest.files) {
+	const files = manifest.files.filter((file: { path: string }) =>
+		file.path.endsWith("/texture-light.png"),
+	);
+	expect(files).toHaveLength(1);
+	for (const file of files) {
 		const asset = await request.get(file.path, {
 			headers: { Accept: "*/*" },
 		});

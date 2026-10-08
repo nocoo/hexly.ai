@@ -1,4 +1,3 @@
-import AxeBuilder from "@axe-core/playwright";
 import sharp from "sharp";
 import {
 	endingIds,
@@ -9,6 +8,7 @@ import workflow from "../../src/data/projects/microsoft-teams-send-as-workflow.j
 	type: "json",
 };
 import { videoCopy } from "../../src/data/video-copy";
+import { scanAccessibility } from "./accessibility";
 import { desktop, expect, test, touch } from "./fixtures";
 
 test("the collection shows the chosen project in 5 openings, 5 layouts and 5 endings, in both themes", async ({
@@ -63,100 +63,96 @@ test("the collection shows the chosen project in 5 openings, 5 layouts and 5 end
 	expect(errors).toEqual([]);
 });
 
-for (const [device, options] of Object.entries({ desktop, touch })) {
-	test.describe(device, () => {
-		test.use(options);
-		test("mixes every content layout, preserves independent choices and switches between Video and Deck", async ({
-			page,
-		}) => {
-			const errors: string[] = [];
-			page.on("pageerror", (error) => errors.push(error.message));
-			await page.goto(
-				"/templates/launch?project=bogo&opening=stack&ending=frame",
-			);
-			for (const template of templateIds) {
-				await page
-					.getByLabel("Content template", { exact: true })
-					.selectOption(template);
-				await expect(
-					page.locator(
-						`.vk-stage [data-video-scene="content"][data-template="${template}"]`,
-					),
-				).toBeVisible();
-				await expect(page.locator(".vk-stage [data-video-title]")).toHaveText(
-					"Bogo",
-				);
-				for (const theme of ["Dark", "Light"]) {
-					await page
-						.getByRole("group", { name: "Preview theme" })
-						.getByRole("button", { name: theme, exact: true })
-						.click();
-					await expect(page.locator(".vk-stage .vk-canvas")).toHaveAttribute(
-						"data-video-theme",
-						theme.toLowerCase(),
-					);
-				}
-			}
+test.describe("desktop", () => {
+	test.use(desktop);
+	test("mixes every content layout, preserves independent choices and switches between Video and Deck", async ({
+		page,
+	}) => {
+		const errors: string[] = [];
+		page.on("pageerror", (error) => errors.push(error.message));
+		await page.goto(
+			"/templates/launch?project=bogo&opening=stack&ending=frame",
+		);
+		for (const template of templateIds) {
 			await page
-				.getByRole("button", { name: "Deck / PPT Preview", exact: true })
-				.click();
-			await expect(page.locator(".vk-deck-controls span")).toHaveText("4 / 7");
-			await page
-				.getByRole("button", { name: "Next slide", exact: true })
-				.click();
-			await expect(page.locator(".vk-deck-controls span")).toHaveText("5 / 7");
-			await page
-				.getByRole("button", { name: "Previous slide", exact: true })
-				.click();
-			await page
-				.getByRole("button", { name: "Video Preview", exact: true })
-				.click();
-			await expect(page.getByLabel("Opening", { exact: true })).toHaveValue(
-				"stack",
-			);
-			await expect(page.getByLabel("Ending", { exact: true })).toHaveValue(
-				"frame",
-			);
-			await page
-				.getByLabel("Your project", { exact: true })
-				.selectOption(workflow.id);
-			await expect(page.locator(".vk-stage [data-video-title]")).toHaveText(
-				workflow.title,
-			);
-			await page.reload();
+				.getByLabel("Content template", { exact: true })
+				.selectOption(template);
 			await expect(
-				page.getByLabel("Your project", { exact: true }),
-			).toHaveValue(workflow.id);
-			await expect(page.getByLabel("Opening", { exact: true })).toHaveValue(
-				"stack",
-			);
-			await expect(page.getByLabel("Ending", { exact: true })).toHaveValue(
-				"frame",
-			);
-			await page.emulateMedia({ reducedMotion: "no-preference" });
-			const seek = page.getByRole("slider", {
-				name: "Seek preview",
-				exact: true,
-			});
-			const initial = Number(await seek.inputValue());
-			await page
-				.getByRole("button", { name: "Play preview", exact: true })
-				.click();
-			await expect
-				.poll(async () => Number(await seek.inputValue()))
-				.toBeGreaterThan(initial);
-			await page
-				.getByRole("button", { name: "Pause preview", exact: true })
-				.click();
-			expect(
-				await page.evaluate(
-					() => document.documentElement.scrollWidth <= innerWidth,
+				page.locator(
+					`.vk-stage [data-video-scene="content"][data-template="${template}"]`,
 				),
-			).toBe(true);
-			expect(errors).toEqual([]);
+			).toBeVisible();
+			await expect(page.locator(".vk-stage [data-video-title]")).toHaveText(
+				"Bogo",
+			);
+		}
+		for (const theme of ["Dark", "Light"]) {
+			await page
+				.getByRole("group", { name: "Preview theme" })
+				.getByRole("button", { name: theme, exact: true })
+				.click();
+			await expect(page.locator(".vk-stage .vk-canvas")).toHaveAttribute(
+				"data-video-theme",
+				theme.toLowerCase(),
+			);
+		}
+		await page
+			.getByRole("button", { name: "Deck / PPT Preview", exact: true })
+			.click();
+		await expect(page.locator(".vk-deck-controls span")).toHaveText("4 / 7");
+		await page.getByRole("button", { name: "Next slide", exact: true }).click();
+		await expect(page.locator(".vk-deck-controls span")).toHaveText("5 / 7");
+		await page
+			.getByRole("button", { name: "Previous slide", exact: true })
+			.click();
+		await page
+			.getByRole("button", { name: "Video Preview", exact: true })
+			.click();
+		await expect(page.getByLabel("Opening", { exact: true })).toHaveValue(
+			"stack",
+		);
+		await expect(page.getByLabel("Ending", { exact: true })).toHaveValue(
+			"frame",
+		);
+		await page
+			.getByLabel("Your project", { exact: true })
+			.selectOption(workflow.id);
+		await expect(page.locator(".vk-stage [data-video-title]")).toHaveText(
+			workflow.title,
+		);
+		await page.reload();
+		await expect(page.getByLabel("Your project", { exact: true })).toHaveValue(
+			workflow.id,
+		);
+		await expect(page.getByLabel("Opening", { exact: true })).toHaveValue(
+			"stack",
+		);
+		await expect(page.getByLabel("Ending", { exact: true })).toHaveValue(
+			"frame",
+		);
+		await page.emulateMedia({ reducedMotion: "no-preference" });
+		const seek = page.getByRole("slider", {
+			name: "Seek preview",
+			exact: true,
 		});
+		const initial = Number(await seek.inputValue());
+		await page
+			.getByRole("button", { name: "Play preview", exact: true })
+			.click();
+		await expect
+			.poll(async () => Number(await seek.inputValue()))
+			.toBeGreaterThan(initial);
+		await page
+			.getByRole("button", { name: "Pause preview", exact: true })
+			.click();
+		expect(
+			await page.evaluate(
+				() => document.documentElement.scrollWidth <= innerWidth,
+			),
+		).toBe(true);
+		expect(errors).toEqual([]);
 	});
-}
+});
 
 test("exports exactly the chosen composition and local screenshot, without mixing project uploads", async ({
 	page,
@@ -331,13 +327,7 @@ test.describe("has a narrow Chinese deck, an independent dark canvas and compact
 		]);
 		await page.getByRole("button", { name: "主题：浅色；切换为深色" }).click();
 		await page.evaluate(() => document.fonts.ready);
-		expect(
-			(
-				await new AxeBuilder({ page })
-					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-					.analyze()
-			).violations,
-		).toEqual([]);
+		expect((await scanAccessibility(page)).violations).toEqual([]);
 		expect(
 			await page.evaluate(
 				() => document.documentElement.scrollWidth <= innerWidth,

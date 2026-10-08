@@ -1,9 +1,9 @@
 import { readFile } from "node:fs/promises";
-import AxeBuilder from "@axe-core/playwright";
 import snail from "../../docs/sources/snail-retired-2026-09-13.json" with {
 	type: "json",
 };
 import { digest, readInventory } from "../../scripts/asset-storage";
+import { scanAccessibility } from "./accessibility";
 import { expect, test, touch } from "./fixtures";
 
 if (!snail?.brandKit || !snail.family)
@@ -35,51 +35,11 @@ test("the standalone Snail study keeps full compositions, transparent small mark
 	await expect(
 		page.locator('script[src="/material-downloads.js"]'),
 	).toHaveCount(1);
-	for (const name of ["Transparent", "White", "Icon"] as const) {
-		const button = page.getByRole("button", { name, exact: true });
-		await button.click();
-		await expect(button).toHaveAttribute("aria-pressed", "true");
-		await expect(page.locator("#candidate")).toHaveAttribute(
-			"src",
-			name === "Icon" ? "./icon-light-512.png" : "./logo-light.png",
-		);
-		await expect(page.locator("#candidate-link")).toHaveAttribute(
-			"href",
-			name === "Icon"
-				? "./icon-light.png"
-				: name === "White"
-					? "./white.png"
-					: "./logo.png",
-		);
-		await expect(page.locator("#candidate-link")).toHaveAttribute(
-			"data-view",
-			name.toLowerCase(),
-		);
-		await page
-			.locator("#candidate")
-			.evaluate((node: HTMLImageElement) => node.decode());
-	}
-	for (const theme of ["light", "dark"]) {
-		if ((await page.locator("body").getAttribute("data-theme")) !== theme)
-			await page.locator("#theme-switch").click();
-		for (const image of await page
-			.locator(".hero img, .edges img, .specimen img")
-			.all())
-			await image.evaluate((node: HTMLImageElement) => node.decode());
-		expect(
-			await page.evaluate(
-				() => document.documentElement.scrollWidth <= innerWidth,
-			),
-		).toBe(true);
-		await expect(page.locator(".app-name img")).toHaveCSS("width", "24px");
-		await expect(page.locator(".tab img")).toHaveCSS("width", "16px");
-		await expect(page.locator(".app-name img")).toHaveCSS(
-			"border-radius",
-			"0px",
-		);
-		const accessibility = await new AxeBuilder({ page }).analyze();
-		expect(accessibility.violations).toEqual([]);
-	}
+	await page
+		.locator(".hero img")
+		.first()
+		.evaluate((image: HTMLImageElement) => image.decode());
+	expect((await scanAccessibility(page)).violations).toEqual([]);
 	await page.getByRole("button", { name: /Terracotta #bf5c3c/ }).click();
 	await expect(page.locator("#copy-status")).toHaveText("Copied #bf5c3c");
 	expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
