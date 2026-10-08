@@ -5,6 +5,7 @@ import { assetUrl } from "../model/assets";
 import type { Locale, LogoFamily, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
 import { CopyButton } from "./CopyButton";
+import { Icon } from "./Icon";
 
 export function LogoArchive({
 	family,
@@ -43,7 +44,10 @@ export function LogoArchive({
 			aria-labelledby="archive-title"
 		>
 			<div className="review-section-heading">
-				<h3 id="archive-title">{t.archive}</h3>
+				<h3 id="archive-title">
+					<Icon name="folder" />
+					{t.archive}
+				</h3>
 				<p>
 					{adapted
 						? t.adaptedArtwork
@@ -101,8 +105,20 @@ export function LogoArchive({
 								: true
 						}
 					>
-						{label}
-						<span aria-hidden="true">↗</span>
+						<Icon
+							name={
+								href?.endsWith("txt") || href?.endsWith("json")
+									? "file-text"
+									: "image"
+							}
+						/>
+						<span>
+							{label}
+							<small aria-hidden="true">
+								{href?.split(".").pop()?.toUpperCase()}
+							</small>
+						</span>
+						<Icon name="download" />
 					</AssetLink>
 				))}
 			</div>
@@ -133,7 +149,9 @@ export function LogoArchive({
 				target="_blank"
 				rel="noreferrer"
 			>
-				{t.archiveSource} ↗
+				<Icon name="folder" />
+				{t.archiveSource}
+				<Icon name="arrow" />
 			</AssetLink>
 		</section>
 	);

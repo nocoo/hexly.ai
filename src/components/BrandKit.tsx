@@ -8,6 +8,7 @@ import {
 import type { Locale, Project } from "../model/project";
 import { AssetLink } from "./AssetLink";
 import { BrandTexture } from "./BrandTexture";
+import { Icon } from "./Icon";
 import "../styles/brand-kits.css";
 
 export function BrandHero({
@@ -169,7 +170,10 @@ export function BrandDownloads({
 	return (
 		<div className="brand-kit-downloads">
 			<div className="review-section-heading">
-				<h3>{label}</h3>
+				<h3>
+					<Icon name="files" />
+					{label}
+				</h3>
 				<p>
 					{raster
 						? zh
@@ -202,7 +206,8 @@ export function BrandDownloads({
 							download
 							aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "浅色" : "light"}`}
 						>
-							{zh ? "浅色" : "Light"} ↓
+							{zh ? "浅色" : "Light"}
+							<Icon name="download" />
 						</AssetLink>
 						<AssetLink
 							href={
@@ -213,7 +218,8 @@ export function BrandDownloads({
 							download
 							aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "深色" : "dark"}`}
 						>
-							{zh ? "深色" : "Dark"} ↓
+							{zh ? "深色" : "Dark"}
+							<Icon name="download" />
 						</AssetLink>
 					</div>
 				))}
@@ -245,26 +251,41 @@ export function BrandDownloads({
 						href={`${project.presentationIcon && ["favicon.ico", "apple-touch-icon.png"].includes(file) ? project.presentationIcon.root : project.brandTexture && file.startsWith("texture-") ? project.brandTexture.root : kit.root}/${project.brandTexture && file.startsWith("texture-") ? file.replace(/\.(svg|webp)$/, ".png") : file}`}
 						download
 					>
-						{name}
-						<span aria-hidden="true">↓</span>
+						<Icon name={file.endsWith("json") ? "file-text" : "image"} />
+						<span>
+							{name}
+							<small aria-hidden="true">
+								{file.split(".").pop()?.toUpperCase()}
+							</small>
+						</span>
+						<Icon name="download" />
 					</AssetLink>
 				))}
 			</div>
-			<p className="brand-kit-provenance">
-				<AssetLink href={`${kit.root}/guide.md`}>
-					{zh ? "完整规范与集成方式" : "Usage & integration"} ↗
-				</AssetLink>
-				<AssetLink href={`${kit.root}/review.html`}>
-					{zh ? "独立品牌样张" : "Standalone specimens"} ↗
-				</AssetLink>
-				<AssetLink href={`${kit.root}/license.txt`}>
-					{zh ? "许可与来源" : "License & source"}
-				</AssetLink>{" "}
-				·{" "}
-				<AssetLink href={`${kit.root}/space-grotesk-ofl.txt`}>
-					Space Grotesk / SIL OFL 1.1
-				</AssetLink>
-			</p>
+			<div className="download-provenance">
+				<h4>
+					<Icon name="shield-check" />
+					{zh ? "规范、许可与来源" : "Guides, licenses & source"}
+				</h4>
+				<p className="brand-kit-provenance">
+					<AssetLink href={`${kit.root}/guide.md`}>
+						<Icon name="file-text" />
+						{zh ? "完整规范与集成方式" : "Usage & integration"}
+					</AssetLink>
+					<AssetLink href={`${kit.root}/review.html`}>
+						<Icon name="image" />
+						{zh ? "独立品牌样张" : "Standalone specimens"}
+					</AssetLink>
+					<AssetLink href={`${kit.root}/license.txt`}>
+						<Icon name="shield-check" />
+						{zh ? "许可与来源" : "License & source"}
+					</AssetLink>
+					<AssetLink href={`${kit.root}/space-grotesk-ofl.txt`}>
+						<Icon name="file-text" />
+						Space Grotesk / SIL OFL 1.1
+					</AssetLink>
+				</p>
+			</div>
 			<p className="review-caption">
 				{collected
 					? zh
