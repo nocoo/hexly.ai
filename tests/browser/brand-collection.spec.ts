@@ -38,6 +38,7 @@ for (const [id, options] of [
 			await expect(page.locator("#identity-title")).toContainText(
 				project.title,
 			);
+			await page.getByRole("tab", { name: "Brand design" }).click();
 			for (const theme of ["light", "dark"] as const) {
 				if ((await page.locator("html").getAttribute("data-theme")) !== theme)
 					await page.locator(".theme-toggle").click();

@@ -390,13 +390,15 @@ export function App() {
 					}}
 				/>
 			)}
-			{catalogue.status === "ready" && (
-				<AgentGuide
-					path={navigationPath(state)}
-					projects={projects}
-					locale={locale}
-				/>
-			)}
+			{catalogue.status === "ready" &&
+				(state.view !== "project" ||
+					!projects.some((project) => project.id === state.project)) && (
+					<AgentGuide
+						path={navigationPath(state)}
+						projects={projects}
+						locale={locale}
+					/>
+				)}
 			<Footer
 				locale={locale}
 				homeHref={statusDomain ? "https://hexly.ai/" : "/"}

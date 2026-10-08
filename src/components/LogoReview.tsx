@@ -8,7 +8,6 @@ import { BrandKit } from "./BrandKit";
 import { BrandTexture } from "./BrandTexture";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
-import { LogoArchive } from "./LogoArchive";
 import { Palette } from "./Palette";
 
 export function LogoReview({
@@ -301,9 +300,6 @@ export function LogoReview({
 					))}
 				</div>
 			</section>
-			{family && (
-				<LogoArchive family={family} project={project} locale={locale} />
-			)}
 		</div>
 	);
 }

@@ -374,3 +374,18 @@ failure was reading the background opener immediately after opening an external
 tab: Chromium closed its protocol session. Close the verified popup and restore
 the opener to the foreground before asserting its unchanged URL. Keep native
 middle-click navigation and the unchanged-page assertion; do not retry the test.
+
+## 2026-10-08 — Verify tab semantics beyond isolated components
+
+Splitting project details into tabs initially gave the brand container and its
+specimen region the same accessible name. An isolated specimen scan passed,
+but the full Xray page scan correctly rejected duplicate landmarks. Keep region
+names distinct and scan the assembled page, not only its children.
+
+The new sticky tabs also changed the scroll boundary. Retaining the old brand
+scroll margin left a gap between the carousel and tabs instead of positioning
+the tabs at their sticky threshold. Align top-level panel edges without an extra
+margin; retain section offsets inside panels. Update navigation tests to the
+actual product contract: picking another project opens its introduction, so an
+API check must explicitly reopen Integration. Do not keep hidden eager API
+requests or the old page structure merely to satisfy obsolete assertions.

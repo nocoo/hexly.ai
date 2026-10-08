@@ -89,6 +89,8 @@ test("recovers from API failure and updates during project navigation", async ({
 	await section.getByRole("button", { name: "Retry", exact: true }).click();
 	await expect(section.locator(".api-preview")).toContainText("Rio");
 	await page.locator(".picker-item").filter({ hasText: "Pew" }).first().click();
+	await expect(section).toHaveCount(0);
+	await page.getByRole("tab", { name: "Integration", exact: true }).click();
 	await expect(section.locator(".api-preview")).toContainText("Pew");
 	await expect(section.locator(".api-request")).toContainText(
 		"/api/projects/nocoo/pew",

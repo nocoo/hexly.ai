@@ -16,11 +16,7 @@ export function ProjectOverview({
 	const readme = projectReadmePath(project, locale);
 
 	return (
-		<section
-			id="overview"
-			className="project-overview"
-			aria-labelledby="project-goal-title"
-		>
+		<section className="project-overview" aria-labelledby="project-goal-title">
 			<div className="project-goal">
 				<h2 id="project-goal-title">{t.projectGoal}</h2>
 				<p>{overview.goal[locale]}</p>
