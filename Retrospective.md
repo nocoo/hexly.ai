@@ -389,3 +389,14 @@ margin; retain section offsets inside panels. Update navigation tests to the
 actual product contract: picking another project opens its introduction, so an
 API check must explicitly reopen Integration. Do not keep hidden eager API
 requests or the old page structure merely to satisfy obsolete assertions.
+
+## 2026-10-08 — Avoid orphan-process timing in unit gates
+
+The release pre-commit gate hit EPERM in a test that intentionally orphaned a
+SIGTERM-resistant descendant. Both focused and full changed-test reruns passed,
+so a persistent permissions failure was not established. The fixture coupled a
+unit assertion to OS orphan reaping and process-group signal timing. Replace it
+with a deterministic signal-protocol check: clean an exited leader's group,
+escalate to SIGKILL, accept only ESRCH, and propagate EPERM. Keep real Worker
+lifecycle cleanup in HTTP/browser verification. Do not suppress permission
+errors, bypass hooks, or add retries to make this fixture pass.

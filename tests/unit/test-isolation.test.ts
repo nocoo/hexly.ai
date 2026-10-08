@@ -1,7 +1,6 @@
-import { spawn } from "node:child_process";
+import type { ChildProcess } from "node:child_process";
 import {
 	mkdtempSync,
-	readFileSync,
 	realpathSync,
 	rmSync,
 	symlinkSync,
@@ -9,7 +8,7 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import {
 	assertMarker,
 	assertOwnedTest,
@@ -74,38 +73,40 @@ describe("owned test state", () => {
 			rmSync(root, { recursive: true });
 		}
 	});
-	it("reaps a stubborn descendant after its group leader exits", async () => {
-		const root = mkdtempSync(join(realpathSync(tmpdir()), "hexly-test-"));
-		const ready = join(root, "ready");
-		const descendant = `process.on('SIGTERM',()=>{});require('node:fs').writeFileSync(${JSON.stringify(ready)},String(process.pid));setInterval(()=>{},1000)`;
-		const leader = spawn(
-			process.execPath,
-			[
-				"-e",
-				`require('node:child_process').spawn(process.execPath,['-e',${JSON.stringify(descendant)}],{stdio:'ignore'}).unref()`,
-			],
-			{ detached: true, stdio: "ignore" },
-		);
-		try {
-			await new Promise<void>((accept, reject) => {
-				leader.once("exit", () => accept());
-				leader.once("error", reject);
+	it("escalates cleanup after the group leader exits and rejects permission errors", async () => {
+		const child = { pid: 12345, exitCode: 0 } as ChildProcess;
+		const missing = Object.assign(new Error("Missing process group"), {
+			code: "ESRCH",
+		});
+		const denied = Object.assign(new Error("Permission denied"), {
+			code: "EPERM",
+		});
+		let killed = false;
+		const kill = vi
+			.spyOn(process, "kill")
+			.mockImplementation((_pid, signal) => {
+				if (killed) throw missing;
+				if (signal === "SIGKILL") killed = true;
+				return true;
 			});
-			let pid = 0;
-			const deadline = Date.now() + 3000;
-			while (!pid && Date.now() < deadline) {
-				try {
-					pid = Number(readFileSync(ready, "utf8"));
-				} catch {
-					await new Promise((accept) => setTimeout(accept, 20));
-				}
-			}
-			expect(pid).toBeGreaterThan(0);
-			await stopTestGroup(leader);
-			expect(() => process.kill(pid, 0)).toThrow();
+		vi.useFakeTimers();
+		try {
+			const cleanup = stopTestGroup(child);
+			await vi.runAllTimersAsync();
+			await cleanup;
+			expect(kill).toHaveBeenCalledWith(-12345, "SIGTERM");
+			expect(kill).toHaveBeenCalledWith(-12345, "SIGKILL");
+			kill.mockImplementation(() => {
+				throw missing;
+			});
+			await expect(stopTestGroup(child)).resolves.toBeUndefined();
+			kill.mockImplementation(() => {
+				throw denied;
+			});
+			await expect(stopTestGroup(child)).rejects.toBe(denied);
 		} finally {
-			await stopTestGroup(leader);
-			rmSync(root, { recursive: true });
+			kill.mockRestore();
+			vi.useRealTimers();
 		}
 	});
 });
