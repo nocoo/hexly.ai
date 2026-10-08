@@ -67,7 +67,7 @@ for (const [device, options] of Object.entries({ touch })) {
 					.locator(".project-picker")
 					.getByRole("button", { name: project.title, exact: true })
 					.click();
-				await expect(page).toHaveURL(new RegExp(`/projects/${id}$`));
+				await expect(page).toHaveURL(new RegExp(`/projects/${id}#detail$`));
 				const shots = project.media?.screenshots ?? [];
 				await expect(page.locator(".screenshot-card")).toHaveCount(
 					shots.length,
@@ -149,9 +149,11 @@ for (const [device, options] of Object.entries({ touch })) {
 					video.evaluate((element: HTMLVideoElement) => element.currentTime),
 				)
 				.toBeGreaterThan(0);
-			await page.getByRole("tab", { name: "Brand design" }).click();
+			await page.getByRole("tab", { name: "Downloads & archive" }).click();
 			await expect(video).toHaveJSProperty("paused", true);
-			await page.getByRole("tab", { name: "Overview", exact: true }).click();
+			await page
+				.getByRole("tab", { name: "Project Detail", exact: true })
+				.click();
 			await expect(video).toHaveJSProperty("paused", true);
 			await expect(video.locator("track")).toHaveCount(2);
 			await expect
@@ -240,13 +242,13 @@ test("opens recordings from project details, selects videos and restores hash hi
 		"id",
 		"video-walkthrough",
 	);
-	await page.locator('.project-section-nav a[href="#brand"]').click();
+	await page.locator('.project-section-nav a[href="#detail"]').click();
 	await expect(page.locator(".project-film")).toHaveAttribute(
 		"id",
 		"video-walkthrough",
 	);
 	expect(requests).toEqual([]);
-	await page.getByRole("tab", { name: "Overview", exact: true }).click();
+	await page.getByRole("tab", { name: "Project Detail", exact: true }).click();
 	await page.getByRole("button", { name: "Switch to Chinese" }).click();
 	await expect(
 		page.getByRole("button", { name: "播放视频: 操作示例" }),
@@ -435,13 +437,17 @@ test("project tabs restore history, keep canonical metadata, and respect reduced
 	await page.goto("/projects/frogie");
 	await page.emulateMedia({ reducedMotion: "no-preference" });
 	await expect(page.locator("html")).toHaveCSS("scroll-behavior", "smooth");
-	await page.getByRole("tab", { name: "Brand design" }).click();
+	await page.evaluate(() => window.scrollTo({ top: 160, behavior: "instant" }));
+	const position = await page.evaluate(() => scrollY);
+	await page.getByRole("tab", { name: "Downloads & archive" }).click();
+	await expect(page.locator("#panel-downloads")).toBeVisible();
+	expect(await page.evaluate(() => scrollY)).toBe(position);
+	await page.getByRole("tab", { name: "Project Detail", exact: true }).click();
 	await expect(page.locator("#panel-brand")).toBeVisible();
-	await page.getByRole("tab", { name: "Overview", exact: true }).click();
-	await expect(page.locator("#panel-overview")).toBeVisible();
+	expect(await page.evaluate(() => scrollY)).toBe(position);
 	await page.goBack();
-	await expect(page).toHaveURL(/#brand$/);
-	await expect(page.locator("#panel-brand")).toBeVisible();
+	await expect(page).toHaveURL(/#downloads$/);
+	await expect(page.locator("#panel-downloads")).toBeVisible();
 	await page.emulateMedia({ reducedMotion: "reduce" });
 	await expect(page.locator("html")).toHaveCSS("scroll-behavior", "auto");
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(

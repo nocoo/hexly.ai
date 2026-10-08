@@ -47,31 +47,21 @@ export function ProjectDetail({
 }) {
 	const t = copy[locale];
 	const project = projects.find((item) => item.id === state.project);
-	const hasOverview = Boolean(
-		project?.overview ||
-			project?.media?.videos?.length ||
-			project?.media?.screenshots?.length,
-	);
 	const activeTab =
 		state.anchor === "downloads"
 			? "downloads"
 			: ["api", "agent-guide", "integration"].includes(state.anchor ?? "")
 				? "api"
-				: ["brand", "texture", "foreground"].includes(state.anchor ?? "")
-					? "brand"
-					: hasOverview
-						? "overview"
-						: "brand";
+				: "brand";
 	const tabs = [
-		...(hasOverview
-			? [{ id: "overview", label: t.overview, icon: "info" } as const]
-			: []),
-		{ id: "brand", label: t.brandTab, icon: "image" },
+		{ id: "brand", label: t.projectDetail, icon: "image" },
 		{ id: "downloads", label: t.downloadsTab, icon: "download" },
 		{ id: "api", label: t.integrationTab, icon: "link" },
 	] as const;
 	const selectTab = (id: string) =>
-		onChange({ anchor: id === "api" ? "integration" : id });
+		onChange({
+			anchor: id === "api" ? "integration" : id === "brand" ? "detail" : id,
+		});
 	const counts = categoryCounts(projects);
 	const foreground = project?.family?.foreground ?? project?.logo;
 	const chromeStore = project ? isChromeWebStoreProject(project) : false;
@@ -137,10 +127,10 @@ export function ProjectDetail({
 			if (next)
 				onChange({
 					project: next.id,
-					anchor: state.anchor === "brand" ? "brand" : undefined,
+					anchor: "detail",
 				});
 		},
-		[visible, selectedIndex, onChange, state.anchor],
+		[visible, selectedIndex, onChange],
 	);
 	useEffect(() => {
 		const onKeyDown = (event: KeyboardEvent) => {
@@ -240,7 +230,7 @@ export function ProjectDetail({
 									? "ArrowLeft ArrowRight"
 									: undefined
 							}
-							onClick={() => onChange({ project: item.id, anchor: undefined })}
+							onClick={() => onChange({ project: item.id, anchor: "detail" })}
 						>
 							<Logo project={item} size={32} framed={false} />
 							<span>{item.title}</span>
@@ -348,7 +338,7 @@ export function ProjectDetail({
 						{tabs.map((tab, index) => (
 							<a
 								key={tab.id}
-								href={`#${tab.id === "api" ? "integration" : tab.id}`}
+								href={`#${tab.id === "api" ? "integration" : tab.id === "brand" ? "detail" : tab.id}`}
 								role="tab"
 								id={`tab-${tab.id}`}
 								aria-selected={activeTab === tab.id}
@@ -401,70 +391,76 @@ export function ProjectDetail({
 						))}
 					</div>
 					<div
-						id="panel-overview"
-						className="project-tab-panel"
-						role="tabpanel"
-						aria-labelledby="tab-overview"
-						hidden={activeTab !== "overview"}
-					>
-						<div id="overview">
-							<ProjectOverview project={project} locale={locale} />
-						</div>
-						<ProjectMedia
-							key={`media-${project.id}`}
-							project={project}
-							locale={locale}
-							anchor={state.anchor}
-							visible={activeTab === "overview"}
-						/>
-					</div>
-					<div
 						id="panel-brand"
 						className="project-tab-panel"
 						role="tabpanel"
 						aria-labelledby="tab-brand"
 						hidden={activeTab !== "brand"}
 					>
-						<section
-							id="brand"
-							className="project-brand"
-							aria-labelledby="brand-title"
-						>
-							<div className="detail-section-heading">
-								<div>
-									<h2 id="brand-title">{t.brandTab}</h2>
-									<p>{t.brandDescription}</p>
-								</div>
-								<div className="brand-metadata">
-									<span className="asset-label">
-										{project.family
-											? t.refined
-											: project.reference
-												? t.reference
-												: project.logo.kind === "original"
-													? t.original
-													: t.emoji}
-									</span>
-									<span className="mono">
-										{project.brandKit
-											? `${brandSourceLabel(project, locale)} · v${project.brandKit.version}`
-											: `${foreground?.width} × ${foreground?.height}`}
-										{project.family && ` · ${project.family.updated}`}
-									</span>
-								</div>
-							</div>
-
+						<div id="detail">
 							{project.brandKit?.hero && (
 								<BrandHero kit={project.brandKit} locale={locale} />
 							)}
-							<LogoReview
-								key={project.id}
-								project={project}
-								locale={locale}
-								onCopy={onCopy}
-							/>
-						</section>
+							{(project.overview ||
+								project.media?.videos?.length ||
+								project.media?.screenshots?.length) && (
+								<section
+									id="overview"
+									className="project-detail-overview"
+									aria-labelledby="overview-title"
+								>
+									<div className="detail-section-heading">
+										<h2 id="overview-title">{t.overview}</h2>
+									</div>
+									<ProjectOverview project={project} locale={locale} />
+									<ProjectMedia
+										key={`media-${project.id}`}
+										project={project}
+										locale={locale}
+										anchor={state.anchor}
+										visible={activeTab === "brand"}
+									/>
+								</section>
+							)}
+							<section
+								id="brand"
+								className="project-brand"
+								aria-labelledby="brand-title"
+							>
+								<div className="detail-section-heading">
+									<div>
+										<h2 id="brand-title">{t.brandTab}</h2>
+										<p>{t.brandDescription}</p>
+									</div>
+									<div className="brand-metadata">
+										<span className="asset-label">
+											{project.family
+												? t.refined
+												: project.reference
+													? t.reference
+													: project.logo.kind === "original"
+														? t.original
+														: t.emoji}
+										</span>
+										<span className="mono">
+											{project.brandKit
+												? `${brandSourceLabel(project, locale)} · v${project.brandKit.version}`
+												: `${foreground?.width} × ${foreground?.height}`}
+											{project.family && ` · ${project.family.updated}`}
+										</span>
+									</div>
+								</div>
+
+								<LogoReview
+									key={project.id}
+									project={project}
+									locale={locale}
+									onCopy={onCopy}
+								/>
+							</section>
+						</div>
 					</div>
+
 					<div
 						id="panel-downloads"
 						className="project-tab-panel"
