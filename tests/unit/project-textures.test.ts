@@ -87,7 +87,9 @@ describe("independent campaign textures", () => {
 		const plan = spawnSync("python3", args, { encoding: "utf8" });
 		expect(plan.status, plan.stderr).toBe(0);
 		expect(JSON.parse(plan.stdout).projects).toEqual(
-			scope.activeProjectIds.filter((id) => id !== "hermes-on-herdr"),
+			scope.activeProjectIds.filter(
+				(id) => !projects.find((project) => project.id === id)?.archived,
+			),
 		);
 		const archived = spawnSync("python3", [...args, "--project", "infoviz"], {
 			encoding: "utf8",

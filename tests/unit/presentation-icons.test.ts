@@ -13,7 +13,7 @@ describe("approved textured icon delivery", () => {
 	it("covers every active project while keeping archived identities separate", () => {
 		const inventory = readInventory();
 		for (const project of projects) {
-			if (project.archived) {
+			if (project.archived && !project.presentationIcon) {
 				expect(project.presentationIcon).toBeUndefined();
 				continue;
 			}
@@ -34,7 +34,7 @@ describe("approved textured icon delivery", () => {
 			);
 		}
 	});
-	it("rejects foreign icon paths, archive enrichment and false native dimensions", () => {
+	it("rejects foreign icon paths and false native dimensions", () => {
 		const p = projects.find((project) => project.id === "frogie");
 		if (!p?.presentationIcon) throw new Error("Missing Frogie presentation");
 		for (const icon of [
@@ -49,9 +49,7 @@ describe("approved textured icon delivery", () => {
 					{ ...p, presentationIcon: icon as Project["presentationIcon"] },
 				]),
 			).toContain("Invalid presentation icon: frogie");
-		expect(catalogueProblems([{ ...p, archived: true }])).toContain(
-			"Invalid presentation icon: frogie",
-		);
+		expect(catalogueProblems([{ ...p, archived: true }])).toEqual([]);
 		expect(catalogueProblems([{ ...p, family: undefined }])).toContain(
 			"Invalid presentation icon: frogie",
 		);

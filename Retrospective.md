@@ -400,3 +400,12 @@ with a deterministic signal-protocol check: clean an exited leader's group,
 escalate to SIGKILL, accept only ESRCH, and propagate EPERM. Keep real Worker
 lifecycle cleanup in HTTP/browser verification. Do not suppress permission
 errors, bypass hooks, or add retries to make this fixture pass.
+
+## 2026-10-08 — Preserve completed icons when archiving projects
+
+Archiving Pika exposed a catalogue validator that rejected existing presentation
+icons on archived projects, contradicting the maintenance contract to preserve
+completed materials. Allow retained icons while keeping their path and geometry
+checks. Generation plans must exclude the current archived catalogue rather than
+hard-code one archived project. Move active monitoring fixtures off retired
+projects and run the normal hooks before publication.

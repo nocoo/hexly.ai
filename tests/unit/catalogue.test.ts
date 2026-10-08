@@ -103,8 +103,12 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(60);
-		expect(counts.archive).toBe(21);
+		expect(counts.all).toBe(59);
+		expect(counts.archive).toBe(22);
+		expect(filterProjects(projects, "pika", "all")).toEqual([]);
+		expect(
+			filterProjects(projects, "pika", "archive").map((p) => p.id),
+		).toEqual(["pika"]);
 		expect(
 			filterProjects(projects, "hermes", "all").map((p) => p.id),
 		).not.toContain("hermes-on-herdr");
