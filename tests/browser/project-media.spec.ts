@@ -149,7 +149,10 @@ for (const [device, options] of Object.entries({ touch })) {
 					video.evaluate((element: HTMLVideoElement) => element.currentTime),
 				)
 				.toBeGreaterThan(0);
-			await video.evaluate((element: HTMLVideoElement) => element.pause());
+			await page.getByRole("tab", { name: "Brand design" }).click();
+			await expect(video).toHaveJSProperty("paused", true);
+			await page.getByRole("tab", { name: "Overview", exact: true }).click();
+			await expect(video).toHaveJSProperty("paused", true);
 			await expect(video.locator("track")).toHaveCount(2);
 			await expect
 				.poll(() =>
@@ -243,7 +246,7 @@ test("opens recordings from project details, selects videos and restores hash hi
 		"video-walkthrough",
 	);
 	expect(requests).toEqual([]);
-	await page.locator('.project-section-nav a[href="#media"]').click();
+	await page.getByRole("tab", { name: "Overview", exact: true }).click();
 	await page.getByRole("button", { name: "Switch to Chinese" }).click();
 	await expect(
 		page.getByRole("button", { name: "播放视频: 操作示例" }),
@@ -426,66 +429,33 @@ test("an unavailable full-size image remains closable with a direct original lin
 	await expect(dialog).toHaveCount(0);
 });
 
-for (const [device, options] of Object.entries({ desktop })) {
-	test.describe(device, () => {
-		test.use(options);
-		test("hash navigation animates, restores history and respects reduced motion", async ({
-			page,
-		}) => {
-			await page.emulateMedia({ reducedMotion: "no-preference" });
-			await page.goto("/projects/frogie");
-			await expect(page.locator("#identity-title")).toBeVisible();
-			await page.evaluate(() => document.fonts.ready);
-			await expect(page.locator("html")).toHaveCSS("scroll-behavior", "smooth");
-			for (const action of ["brand", "overview", "back"] as const) {
-				const samples = await page.evaluate(async (next) => {
-					const positions = [scrollY];
-					const record = () => positions.push(scrollY);
-					addEventListener("scroll", record);
-					if (next === "back") history.back();
-					else
-						document
-							.querySelector<HTMLAnchorElement>(
-								`.project-section-nav a[href="#${next}"]`,
-							)
-							?.click();
-					await new Promise<void>((resolve) => {
-						let stable = 0;
-						let previous = scrollY;
-						let count = 0;
-						const frame = () => {
-							stable = scrollY === previous ? stable + 1 : 0;
-							previous = scrollY;
-							if ((count++ > 12 && stable > 5) || count > 150) resolve();
-							else requestAnimationFrame(frame);
-						};
-						requestAnimationFrame(frame);
-					});
-					removeEventListener("scroll", record);
-					return positions;
-				}, action);
-				expect(new Set(samples).size).toBeGreaterThan(3);
-				await expect(page).toHaveURL(
-					new RegExp(`#${action === "back" ? "brand" : action}$`),
-				);
-			}
-			await page.emulateMedia({ reducedMotion: "reduce" });
-			await expect(page.locator("html")).toHaveCSS("scroll-behavior", "auto");
-			await page.locator('.project-section-nav a[href="#overview"]').click();
-			await expect(page.locator("#overview")).toBeInViewport();
-			await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
-				"href",
-				"https://hexly.ai/projects/frogie",
-			);
-			await page.getByRole("link", { name: "Try a template" }).click();
-			await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
-				"href",
-				"https://hexly.ai/templates",
-			);
-			await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
-				"content",
-				"https://hexly.ai/templates",
-			);
-		});
-	});
-}
+test("project tabs restore history, keep canonical metadata, and respect reduced motion", async ({
+	page,
+}) => {
+	await page.goto("/projects/frogie");
+	await page.emulateMedia({ reducedMotion: "no-preference" });
+	await expect(page.locator("html")).toHaveCSS("scroll-behavior", "smooth");
+	await page.getByRole("tab", { name: "Brand design" }).click();
+	await expect(page.locator("#panel-brand")).toBeVisible();
+	await page.getByRole("tab", { name: "Overview", exact: true }).click();
+	await expect(page.locator("#panel-overview")).toBeVisible();
+	await page.goBack();
+	await expect(page).toHaveURL(/#brand$/);
+	await expect(page.locator("#panel-brand")).toBeVisible();
+	await page.emulateMedia({ reducedMotion: "reduce" });
+	await expect(page.locator("html")).toHaveCSS("scroll-behavior", "auto");
+	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+		"href",
+		"https://hexly.ai/projects/frogie",
+	);
+	await page.getByRole("tab", { name: "Integration", exact: true }).click();
+	await page.getByRole("link", { name: "Try a template" }).click();
+	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+		"href",
+		"https://hexly.ai/templates",
+	);
+	await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
+		"content",
+		"https://hexly.ai/templates",
+	);
+});

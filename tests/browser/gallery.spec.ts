@@ -3,6 +3,7 @@ import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
 import { filterProjects } from "../../src/model/catalogue";
+import { scanAccessibility } from "./accessibility";
 import { expect, test, touch } from "./fixtures";
 
 // Brand checks stay local; recorded media is exercised in project-media.spec.ts.
@@ -13,6 +14,75 @@ const projects = readProjects().map((project) => ({
 const ordered = filterProjects(projects, "", "all");
 const firstVisible = ordered[0];
 const afterFrogie = projects.find((project) => project.id === "pew");
+
+test("organizes Xray without losing media, downloads or integration, and isolates tab keyboard navigation", async ({
+	page,
+}) => {
+	await page.unroute("**/data/projects.json");
+	await page.goto("/projects/xray");
+	await expect(
+		page.getByRole("tab", { name: "Overview", exact: true }),
+	).toHaveAttribute("aria-selected", "true");
+	await expect(page.locator(".screenshot-card")).toHaveCount(5);
+	await expect(page.locator(".project-overview .tech-name")).toHaveCount(7);
+	await expect(page.locator("#api")).toHaveCount(0);
+	await expect(
+		page
+			.locator(".identity-links")
+			.getByRole("button", { name: "Copy project link" }),
+	).toBeVisible();
+	const overview = page.getByRole("tab", { name: "Overview", exact: true });
+	await overview.focus();
+	await overview.press("ArrowRight");
+	await expect(page).toHaveURL(/\/projects\/xray#brand$/);
+	await expect(page.getByRole("tab", { name: "Brand design" })).toBeFocused();
+	await expect(page.locator(".brand-hero")).toBeVisible();
+	await page.getByRole("tab", { name: "Brand design" }).press("ArrowRight");
+	await expect(page.locator("#panel-downloads")).toBeVisible();
+	await expect(page.locator(".brand-kit-assets a[download]")).toHaveCount(8);
+	await expect(page.locator(".identity-archive a[download]")).toHaveCount(8);
+	await expect(
+		page.getByRole("link", { name: "License & source" }),
+	).toBeVisible();
+	await expect(
+		page.getByRole("button", { name: "Copy presentation brief" }),
+	).toBeEnabled();
+	await page.reload();
+	await expect(
+		page.getByRole("tab", { name: "Downloads & archive" }),
+	).toHaveAttribute("aria-selected", "true");
+	await page.getByRole("tab", { name: "Downloads & archive" }).press("End");
+	await expect(page.locator("#api .api-preview")).toBeVisible();
+	await expect(page.getByRole("region", { name: "For agents" })).toBeVisible();
+	await expect(
+		page.getByRole("link", { name: "Try a template" }),
+	).toHaveAttribute("href", "/templates?project=xray");
+	await page.goBack();
+	await expect(page.locator("#panel-downloads")).toBeVisible();
+	await page.getByRole("button", { name: "Switch to Chinese" }).click();
+	await page.locator(".theme-toggle").click();
+	await page.setViewportSize({ width: 320, height: 740 });
+	for (const name of ["概览", "品牌设计", "下载与档案", "集成"]) {
+		const tab = page.getByRole("tab", { name, exact: true });
+		await tab.click();
+		await expect(tab).toHaveAttribute("aria-selected", "true");
+		const bounds = await page
+			.getByRole("tab")
+			.evaluateAll((items) =>
+				items.map((item) => item.getBoundingClientRect().toJSON()),
+			);
+		for (let index = 1; index < bounds.length; index++)
+			expect(bounds[index].left).toBeGreaterThanOrEqual(
+				bounds[index - 1].right,
+			);
+		expect((await scanAccessibility(page)).violations).toEqual([]);
+		expect(
+			await page.evaluate(
+				() => document.documentElement.scrollWidth <= innerWidth,
+			),
+		).toBe(true);
+	}
+});
 
 test.beforeEach(async ({ page }) => {
 	// The initial crawler snapshot can request its poster before React mounts.
@@ -33,13 +103,13 @@ test.beforeEach(async ({ page }) => {
 test("shows evidenced website colors separately from a tool's artwork palette", async ({
 	page,
 }) => {
-	await page.goto("/projects/coffee");
+	await page.goto("/projects/coffee#brand");
 	await expect(page.locator(".theme-palette")).toContainText("#c7d9a9");
 	await expect(page.locator(".theme-palette")).toContainText("#f8f6f0");
 	await expect(
 		page.getByRole("button", { name: "Copy color #c68664", exact: true }),
 	).toBeVisible();
-	await page.goto("/projects/hermes-on-herdr");
+	await page.goto("/projects/hermes-on-herdr#brand");
 	await expect(page.locator("#identity-title")).toContainText(
 		"hermes on herdr",
 	);
@@ -56,7 +126,7 @@ test("switches identity presentations and downloads the preserved original", asy
 	if (!project?.family || !project.presentationIcon)
 		throw new Error("Missing Frogie identity");
 	const family = project.family;
-	await page.goto("/projects/frogie");
+	await page.goto("/projects/frogie#brand");
 	await expect(
 		page.locator(".identity-heading .logo-composed img"),
 	).toHaveAttribute(
@@ -108,6 +178,7 @@ test("switches identity presentations and downloads the preserved original", asy
 			),
 		);
 	}
+	await page.getByRole("tab", { name: "Downloads & archive" }).click();
 	await page
 		.getByText("Read the exact generation prompt", { exact: true })
 		.click();
@@ -154,7 +225,7 @@ test("uses one top project picker and preserves browser history", async ({
 	await expect(page.locator("#identity-title")).toContainText(
 		afterFrogie.title,
 	);
-	await expect(page.locator(".previous-artwork")).toBeVisible();
+	await expect(page.locator("#panel-overview")).toBeVisible();
 	expect(new URL(page.url()).hash).toBe("");
 	await expect(page.locator("#identity-title")).toBeInViewport();
 	if (!afterFrogie.overview) throw new Error("Missing Pew overview");
@@ -177,7 +248,7 @@ test("uses one top project picker and preserves browser history", async ({
 	);
 });
 
-test("pins only the carousel and centers the selected project, including both ends and resized views", async ({
+test("pins the carousel and tabs, and centers edge projects across resized views", async ({
 	page,
 }) => {
 	const middle = ordered[Math.floor(ordered.length / 2)];
@@ -219,9 +290,8 @@ test("pins only the carousel and centers the selected project, including both en
 					Math.abs(
 						element.getBoundingClientRect().top -
 							(document
-								.querySelector(".gallery-selector")
-								?.getBoundingClientRect().bottom ?? 0) -
-							20,
+								.querySelector(".project-section-nav")
+								?.getBoundingClientRect().bottom ?? 0),
 					),
 				),
 		)
@@ -300,7 +370,7 @@ test("copies current palette colors and a reusable gallery link", async ({
 	context,
 }) => {
 	await context.grantPermissions(["clipboard-read", "clipboard-write"]);
-	await page.goto("/projects/pew");
+	await page.goto("/projects/pew#brand");
 	await page
 		.getByRole("button", { name: "Copy color #bfb2cf", exact: true })
 		.click();
@@ -382,11 +452,13 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 	expect(prevented).toBe(false);
 	await expect(page).toHaveURL(url);
 
+	await page.getByRole("tab", { name: "Integration", exact: true }).click();
+	const apiUrl = page.url();
 	await page.getByText("View JSON response", { exact: true }).click();
 	const textarea = page.locator("#api textarea").first();
 	await textarea.focus();
 	await textarea.press("ArrowLeft");
-	await expect(page).toHaveURL(url);
+	await expect(page).toHaveURL(apiUrl);
 	await expect(textarea).toBeFocused();
 	const editableDefault = await page.evaluate(() => {
 		const element = document.createElement("div");
@@ -404,14 +476,14 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 		return allowed;
 	});
 	expect(editableDefault).toBe(true);
-	await expect(page).toHaveURL(url);
+	await expect(page).toHaveURL(apiUrl);
 	const historyLength = await page.evaluate(() => history.length);
 
 	await page.locator(".identity-github").focus();
 
 	for (const modifier of ["Alt", "Control", "Meta", "Shift"]) {
 		await page.keyboard.press(`${modifier}+ArrowRight`);
-		await expect(page).toHaveURL(url);
+		await expect(page).toHaveURL(apiUrl);
 		expect(await page.evaluate(() => history.length)).toBe(historyLength);
 	}
 	for (const kind of ["composing", "handled"] as const) {
@@ -425,7 +497,7 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 			if (value === "handled") event.preventDefault();
 			document.dispatchEvent(event);
 		}, kind);
-		await expect(page).toHaveURL(url);
+		await expect(page).toHaveURL(apiUrl);
 		expect(await page.evaluate(() => history.length)).toBe(historyLength);
 	}
 
@@ -451,17 +523,7 @@ test.describe("touch brand alignment", () => {
 		await page.route("**/data/projects.json", (route) =>
 			route.fulfill({ json: pair }),
 		);
-		let releaseApi = () => {};
-		let apiRequested: Promise<void>;
-		let requested = () => {};
-		let apiGate = Promise.resolve();
-		await page.route("**/api/projects/nocoo/*", async (route) => {
-			requested();
-			await apiGate;
-			await route.continue();
-		});
 		await page.goto("/projects/frogie#brand");
-		await expect(page.locator("#api .api-preview")).toBeVisible();
 		for (const locale of ["en", "zh"]) {
 			if (locale === "zh")
 				await page.getByRole("button", { name: "Switch to Chinese" }).click();
@@ -479,39 +541,26 @@ test.describe("touch brand alignment", () => {
 				.evaluate((element) => element.getBoundingClientRect().top);
 			expect(start).toBeGreaterThan(0);
 			for (let index = 0; index < 2; index += 1) {
-				apiGate = new Promise<void>((resolve) => {
-					releaseApi = resolve;
-				});
-				apiRequested = new Promise<void>((resolve) => {
-					requested = resolve;
-				});
-				try {
-					await page.keyboard.press("ArrowRight");
-					await expect(page).toHaveURL(/#brand$/);
-					await apiRequested;
-					await expect(page.locator("#api .api-preview")).toHaveCount(0);
-					releaseApi();
-					await expect(page.locator("#api .api-preview")).toBeVisible();
-					// Native scrolling rounds positions; section edges retain fractional pixels.
-					await expect
-						.poll(() =>
-							page
-								.locator("#brand")
-								.evaluate(
-									(element, top) =>
-										Math.abs(element.getBoundingClientRect().top - top),
-									start,
-								),
-						)
-						.toBeLessThanOrEqual(1);
-					expect(
-						await page.evaluate(
-							() => document.documentElement.scrollWidth <= innerWidth,
-						),
-					).toBe(true);
-				} finally {
-					releaseApi();
-				}
+				await page.keyboard.press("ArrowRight");
+				await expect(page).toHaveURL(/#brand$/);
+				await expect(page.locator("#panel-brand")).toBeVisible();
+				await expect(page.locator("#api")).toHaveCount(0);
+				await expect
+					.poll(() =>
+						page
+							.locator("#brand")
+							.evaluate(
+								(element, top) =>
+									Math.abs(element.getBoundingClientRect().top - top),
+								start,
+							),
+					)
+					.toBeLessThanOrEqual(1);
+				expect(
+					await page.evaluate(
+						() => document.documentElement.scrollWidth <= innerWidth,
+					),
+				).toBe(true);
 			}
 		}
 	});
@@ -541,7 +590,9 @@ test.describe("searches the gallery, labels emoji identities, and recovers from 
 		await expect(page.locator("#identity-title")).toContainText(
 			"Uptime Kuma Skill",
 		);
+		await page.getByRole("tab", { name: "Brand design" }).click();
 		await expect(page.locator(".asset-label")).toHaveText("Emoji identity");
+		await page.getByRole("tab", { name: "Downloads & archive" }).click();
 		await expect(page.locator(".identity-footer")).toContainText(
 			"profile emoji",
 		);

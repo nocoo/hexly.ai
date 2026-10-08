@@ -20,6 +20,8 @@ test("copies page-specific instructions across site surfaces", async ({
 		"/templates/launch?project=pew&theme=dark&ending=split",
 	]) {
 		await page.goto(path);
+		if (path === "/projects/frogie")
+			await page.getByRole("tab", { name: "Integration", exact: true }).click();
 		const guide = page.getByRole("region", { name: "For agents" });
 		await expect(guide).toBeVisible();
 		const sentinel =
@@ -77,7 +79,7 @@ test("copies exact archived prompt bytes and refreshes guides during in-app navi
 		new URL(`../../public${generated.family.root}/prompt.txt`, import.meta.url),
 		"utf8",
 	);
-	await page.goto(`/projects/${generated.id}`);
+	await page.goto(`/projects/${generated.id}#downloads`);
 	const copy = page.getByRole("button", { name: "Copy exact prompt" });
 	await expect(copy).toBeEnabled();
 	await copy.click();
@@ -89,7 +91,10 @@ test("copies exact archived prompt bytes and refreshes guides during in-app navi
 		prompt,
 	);
 	await page.keyboard.press("ArrowRight");
-	await expect(page).toHaveURL(new RegExp(`/projects/${generated.id}$`));
+	await expect(page).toHaveURL(
+		new RegExp(`/projects/${generated.id}#downloads$`),
+	);
+	await page.getByRole("tab", { name: "Integration", exact: true }).click();
 	await page.locator(".project-template-link").click();
 	await expect(
 		page.locator('head link[rel="alternate"][type="text/markdown"]'),

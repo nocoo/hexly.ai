@@ -78,7 +78,8 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: calc(
 		var(--site-topbar-offset) +
-		var(--project-carousel-height, 0px)
+		var(--project-carousel-height, 0px) +
+		var(--project-tabs-height, 0px)
 	);
 }
 html[data-app-ready="true"] #root {

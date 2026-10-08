@@ -94,6 +94,9 @@
 }
 .project-detail-main .identity-links {
 	align-items: center;
+	justify-content: end;
+	flex-wrap: wrap;
+	max-width: 360px;
 }
 .identity-chrome-store {
 	display: inline-flex;
@@ -109,28 +112,60 @@
 	outline-offset: 3px;
 }
 .project-section-nav {
+	position: sticky;
+	top: calc(var(--site-topbar-offset) + var(--project-carousel-height, 0px));
+	z-index: 4;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	gap: 16px;
+	gap: 8px;
 	border-block: 1px solid var(--line);
-	padding-block: 10px;
-	font-size: 12px;
+	padding-block: 8px;
+	background: var(--page);
+	font-size: 13px;
 	color: var(--muted);
-}
-.project-section-nav > div {
-	display: flex;
-	gap: 24px;
-	align-items: center;
 }
 .project-section-nav a {
 	display: inline-flex;
 	align-items: center;
-	gap: 6px;
-	min-height: 36px;
+	justify-content: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 10px 16px;
+	border-radius: 6px;
+	white-space: nowrap;
 }
-.project-section-nav a:hover {
+.project-section-nav .icon {
+	width: 16px;
+	height: 16px;
+}
+.project-section-nav a[aria-selected="true"] {
+	background: var(--ink);
+	color: var(--page);
+}
+.project-section-nav a:not([aria-selected="true"]):hover {
+	background: var(--hover);
 	color: var(--ink);
+}
+.project-tab-panel[hidden] {
+	display: none;
+}
+.project-downloads,
+.integration-heading {
+	padding-top: 32px;
+}
+.project-downloads > .brand-kit-downloads {
+	padding: 24px;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 14px;
+}
+.project-downloads .identity-archive {
+	margin-top: 32px;
+}
+.project-tab-panel .agent-region {
+	width: 100%;
+	padding-inline: 0;
+	margin-block: 32px;
 }
 .project-template-link {
 	color: color-mix(in srgb, var(--accent) 80%, var(--ink));
@@ -149,6 +184,9 @@
 .project-overview,
 .project-film {
 	scroll-margin-top: 20px;
+}
+.project-brand {
+	scroll-margin-top: 0;
 }
 .detail-section-heading {
 	display: flex;
@@ -404,15 +442,28 @@
 	.project-detail-main .identity-links .button {
 		padding-inline: 10px;
 		min-height: 38px;
-		font-size: 10px;
+		font-size: 11px;
 	}
 	.project-section-nav {
 		font-size: 11px;
-		gap: 8px;
-		flex-wrap: wrap;
+		gap: 4px;
 	}
-	.project-section-nav > div {
-		gap: 16px;
+	.project-section-nav a {
+		flex: 1;
+		flex-direction: column;
+		gap: 6px;
+		padding: 8px 4px;
+		min-width: 0;
+		white-space: normal;
+		text-align: center;
+		line-height: 1.4;
+		align-self: stretch;
+	}
+	.project-downloads > .brand-kit-downloads {
+		padding: 16px;
+	}
+	.integration-heading {
+		flex-wrap: wrap;
 	}
 	.project-media,
 	.project-brand {

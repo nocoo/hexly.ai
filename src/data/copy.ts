@@ -34,6 +34,13 @@ export const copy = {
 		browseAs: "Browse projects",
 		viewProject: "View project",
 		projectSections: "Project sections",
+		brandTab: "Brand design",
+		downloadsTab: "Downloads & archive",
+		downloadsDescription:
+			"Original files, ready-to-use assets, licenses, and provenance.",
+		integrationTab: "Integration",
+		integrationDescription:
+			"Use the project data, copy an agent guide, or make a video with a template.",
 		projectNotFound: "Project not found.",
 		brand: "Brand & assets",
 		brandDescription: "The identity, its details, and its history.",
@@ -203,6 +210,12 @@ export const copy = {
 		browseAs: "项目浏览方式",
 		viewProject: "查看项目",
 		projectSections: "项目章节",
+		brandTab: "品牌设计",
+		downloadsTab: "下载与档案",
+		downloadsDescription: "原始文件、可用资产、许可与来源记录。",
+		integrationTab: "集成",
+		integrationDescription:
+			"使用项目数据、复制智能体指南，或通过模板制作视频。",
 		projectNotFound: "未找到这个项目。",
 		brand: "品牌与素材",
 		brandDescription: "从图像细节，到完整的视觉历史。",

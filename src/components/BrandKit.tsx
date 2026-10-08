@@ -75,7 +75,7 @@ export function BrandKit({
 	locale: Locale;
 }) {
 	const zh = locale === "zh";
-	const label = zh ? "品牌资产" : "Brand assets";
+	const label = zh ? "品牌样张与规范" : "Brand specimens & guidelines";
 	const raster = rasterBrand(kit);
 	const collected = kit.method === "archived-artwork";
 	return (
@@ -149,139 +149,153 @@ export function BrandKit({
 					</article>
 				))}
 			</div>
-			<div className="brand-kit-downloads">
-				<div className="review-section-heading">
-					<h3>{label}</h3>
-					<p>
-						{raster
-							? zh
-								? `${brandSourceLabel(project, locale)} · 转曲字标 · 透明 PNG · 多尺寸 ICO`
-								: `${brandSourceLabel(project, locale)} · Outlined type · Transparent PNG · Multi-size ICO`
-							: zh
-								? "原生 SVG · 透明 PNG · 真实多尺寸 ICO"
-								: "Native SVG · Transparent PNG · Multi-size ICO"}
-					</p>
-				</div>
-				<div className="brand-kit-assets">
-					{(
-						[
-							["mark", zh ? "标志" : "Mark"],
-							["wordmark", zh ? "字标" : "Wordmark"],
-							["lockup", zh ? "组合" : "Lockup"],
-							["icon", zh ? "图标" : "App icon"],
-						] as const
-					).map(([file, name]) => (
-						<div key={file}>
-							<span>
-								{name} <small>{brandFormat(kit, file).toUpperCase()}</small>
-							</span>
-							<AssetLink
-								href={
-									file === "icon" && project.presentationIcon
-										? `${project.presentationIcon.root}/rounded.png`
-										: brandAsset(kit, file, "light")
-								}
-								download
-								aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "浅色" : "light"}`}
-							>
-								{zh ? "浅色" : "Light"} ↓
-							</AssetLink>
-							<AssetLink
-								href={
-									file === "icon" && project.presentationIcon
-										? `${project.presentationIcon.root}/rounded.png`
-										: brandAsset(kit, file, "dark")
-								}
-								download
-								aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "深色" : "dark"}`}
-							>
-								{zh ? "深色" : "Dark"} ↓
-							</AssetLink>
-						</div>
-					))}
-				</div>
-				<div className="download-links">
-					{[
-						...(raster
-							? [
-									["logo.png", zh ? "透明主文件" : "Transparent master"],
-									["hero.png", zh ? "原幅 Hero" : "Full-frame hero"],
-									[
-										`texture-light.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
-										zh ? "浅色底纹" : "Paper texture",
-									],
-									[
-										`texture-dark.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
-										zh ? "深色底纹" : "Night texture",
-									],
-								]
-							: [["favicon.svg", "Favicon SVG"]]),
-						["favicon.ico", "Favicon ICO"],
-						["logo-light.png", zh ? "浅色 PNG" : "Light PNG"],
-						["logo-dark.png", zh ? "深色 PNG" : "Dark PNG"],
-						["apple-touch-icon.png", "Apple touch"],
-						[
-							"manifest.json",
-							zh ? "全部文件与 SHA-256" : "All files & SHA-256",
-						],
-					].map(([file = "", name]) => (
-						<AssetLink
-							key={file}
-							href={`${project.presentationIcon && ["favicon.ico", "apple-touch-icon.png"].includes(file) ? project.presentationIcon.root : project.brandTexture && file.startsWith("texture-") ? project.brandTexture.root : kit.root}/${project.brandTexture && file.startsWith("texture-") ? file.replace(/\.(svg|webp)$/, ".png") : file}`}
-							download
-						>
-							{name}
-							<span aria-hidden="true">↓</span>
-						</AssetLink>
-					))}
-				</div>
-				<p className="brand-kit-provenance">
-					<AssetLink href={`${kit.root}/guide.md`}>
-						{zh ? "完整规范与集成方式" : "Usage & integration"} ↗
-					</AssetLink>
-					<AssetLink href={`${kit.root}/review.html`}>
-						{zh ? "独立品牌样张" : "Standalone specimens"} ↗
-					</AssetLink>
-					<AssetLink href={`${kit.root}/license.txt`}>
-						{zh ? "许可与来源" : "License & source"}
-					</AssetLink>{" "}
-					·{" "}
-					<AssetLink href={`${kit.root}/space-grotesk-ofl.txt`}>
-						Space Grotesk / SIL OFL 1.1
-					</AssetLink>
-				</p>
-				<p className="review-caption">
-					{collected
-						? zh
-							? "已有主视觉完整保留；Hero 为独立版式合成，未重新生成图像。品牌包由 Hexly 维护，产品仓库与原有采用记录保持独立。"
-							: "Existing artwork preserved in full. Heroes are authored compositions, with no new image generation. Hexly maintains this kit independently of product repositories and their prior adoption records."
-						: kit.sourceAdoptionRevision
-							? zh
-								? "源项目已记录资产集成版本。"
-								: "Asset adoption is recorded in the source project."
-							: zh
-								? `${raster ? "GPT Image 2 生成动物主视觉" : "Hexly 原创矢量档案"}；源项目集成由 ${project.title} 团队独立完成。`
-								: `${raster ? "Animal artwork generated with GPT Image 2" : "Original Hexly vector archive"}; source-project integration is a separate handoff.`}
-				</p>
-				{kit.previousVersion && (
-					<p className="review-caption">
-						<AssetLink
-							href={`/brands/${project.id}/v${kit.previousVersion}/review.html`}
-						>
-							{zh
-								? "历史版本"
-								: collected
-									? "Previous archive"
-									: "Previous identity"}{" "}
-							· v{kit.previousVersion} ↗
-						</AssetLink>
-						{" · "}
-						{zh
-							? "原始资产与来源记录完整保留。"
-							: "Original assets and provenance preserved."}
-					</p>
-				)}
-			</div>
 		</section>
+	);
+}
+
+export function BrandDownloads({
+	project,
+	kit,
+	locale,
+}: {
+	project: Project;
+	kit: NonNullable<Project["brandKit"]>;
+	locale: Locale;
+}) {
+	const zh = locale === "zh";
+	const label = zh ? "品牌文件" : "Brand files";
+	const raster = rasterBrand(kit);
+	const collected = kit.method === "archived-artwork";
+	return (
+		<div className="brand-kit-downloads">
+			<div className="review-section-heading">
+				<h3>{label}</h3>
+				<p>
+					{raster
+						? zh
+							? `${brandSourceLabel(project, locale)} · 转曲字标 · 透明 PNG · 多尺寸 ICO`
+							: `${brandSourceLabel(project, locale)} · Outlined type · Transparent PNG · Multi-size ICO`
+						: zh
+							? "原生 SVG · 透明 PNG · 真实多尺寸 ICO"
+							: "Native SVG · Transparent PNG · Multi-size ICO"}
+				</p>
+			</div>
+			<div className="brand-kit-assets">
+				{(
+					[
+						["mark", zh ? "标志" : "Mark"],
+						["wordmark", zh ? "字标" : "Wordmark"],
+						["lockup", zh ? "组合" : "Lockup"],
+						["icon", zh ? "图标" : "App icon"],
+					] as const
+				).map(([file, name]) => (
+					<div key={file}>
+						<span>
+							{name} <small>{brandFormat(kit, file).toUpperCase()}</small>
+						</span>
+						<AssetLink
+							href={
+								file === "icon" && project.presentationIcon
+									? `${project.presentationIcon.root}/rounded.png`
+									: brandAsset(kit, file, "light")
+							}
+							download
+							aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "浅色" : "light"}`}
+						>
+							{zh ? "浅色" : "Light"} ↓
+						</AssetLink>
+						<AssetLink
+							href={
+								file === "icon" && project.presentationIcon
+									? `${project.presentationIcon.root}/rounded.png`
+									: brandAsset(kit, file, "dark")
+							}
+							download
+							aria-label={`${name} ${brandFormat(kit, file).toUpperCase()} — ${zh ? "深色" : "dark"}`}
+						>
+							{zh ? "深色" : "Dark"} ↓
+						</AssetLink>
+					</div>
+				))}
+			</div>
+			<div className="download-links">
+				{[
+					...(raster
+						? [
+								["logo.png", zh ? "透明主文件" : "Transparent master"],
+								["hero.png", zh ? "原幅 Hero" : "Full-frame hero"],
+								[
+									`texture-light.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
+									zh ? "浅色底纹" : "Paper texture",
+								],
+								[
+									`texture-dark.${kit.texture?.model ? "png" : (kit.texture?.format ?? "svg")}`,
+									zh ? "深色底纹" : "Night texture",
+								],
+							]
+						: [["favicon.svg", "Favicon SVG"]]),
+					["favicon.ico", "Favicon ICO"],
+					["logo-light.png", zh ? "浅色 PNG" : "Light PNG"],
+					["logo-dark.png", zh ? "深色 PNG" : "Dark PNG"],
+					["apple-touch-icon.png", "Apple touch"],
+					["manifest.json", zh ? "全部文件与 SHA-256" : "All files & SHA-256"],
+				].map(([file = "", name]) => (
+					<AssetLink
+						key={file}
+						href={`${project.presentationIcon && ["favicon.ico", "apple-touch-icon.png"].includes(file) ? project.presentationIcon.root : project.brandTexture && file.startsWith("texture-") ? project.brandTexture.root : kit.root}/${project.brandTexture && file.startsWith("texture-") ? file.replace(/\.(svg|webp)$/, ".png") : file}`}
+						download
+					>
+						{name}
+						<span aria-hidden="true">↓</span>
+					</AssetLink>
+				))}
+			</div>
+			<p className="brand-kit-provenance">
+				<AssetLink href={`${kit.root}/guide.md`}>
+					{zh ? "完整规范与集成方式" : "Usage & integration"} ↗
+				</AssetLink>
+				<AssetLink href={`${kit.root}/review.html`}>
+					{zh ? "独立品牌样张" : "Standalone specimens"} ↗
+				</AssetLink>
+				<AssetLink href={`${kit.root}/license.txt`}>
+					{zh ? "许可与来源" : "License & source"}
+				</AssetLink>{" "}
+				·{" "}
+				<AssetLink href={`${kit.root}/space-grotesk-ofl.txt`}>
+					Space Grotesk / SIL OFL 1.1
+				</AssetLink>
+			</p>
+			<p className="review-caption">
+				{collected
+					? zh
+						? "已有主视觉完整保留；Hero 为独立版式合成，未重新生成图像。品牌包由 Hexly 维护，产品仓库与原有采用记录保持独立。"
+						: "Existing artwork preserved in full. Heroes are authored compositions, with no new image generation. Hexly maintains this kit independently of product repositories and their prior adoption records."
+					: kit.sourceAdoptionRevision
+						? zh
+							? "源项目已记录资产集成版本。"
+							: "Asset adoption is recorded in the source project."
+						: zh
+							? `${raster ? "GPT Image 2 生成动物主视觉" : "Hexly 原创矢量档案"}；源项目集成由 ${project.title} 团队独立完成。`
+							: `${raster ? "Animal artwork generated with GPT Image 2" : "Original Hexly vector archive"}; source-project integration is a separate handoff.`}
+			</p>
+			{kit.previousVersion && (
+				<p className="review-caption">
+					<AssetLink
+						href={`/brands/${project.id}/v${kit.previousVersion}/review.html`}
+					>
+						{zh
+							? "历史版本"
+							: collected
+								? "Previous archive"
+								: "Previous identity"}{" "}
+						· v{kit.previousVersion} ↗
+					</AssetLink>
+					{" · "}
+					{zh
+						? "原始资产与来源记录完整保留。"
+						: "Original assets and provenance preserved."}
+				</p>
+			)}
+		</div>
 	);
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { copy } from "../data/copy";
 import { assetUrl } from "../model/assets";
 import type { Locale, Project, ProjectVideo } from "../model/project";
@@ -102,11 +102,14 @@ export function ProjectMedia({
 	project,
 	locale,
 	anchor,
+	visible,
 }: {
 	project: Project;
 	locale: Locale;
 	anchor?: string;
+	visible: boolean;
 }) {
+	const mediaRef = useRef<HTMLElement>(null);
 	const videos = project.media?.videos ?? [];
 	const screenshots = project.media?.screenshots ?? [];
 	const requested = videos.find((video) => `video-${video.id}` === anchor);
@@ -114,12 +117,18 @@ export function ProjectMedia({
 	useEffect(() => {
 		if (requested) setSelection(requested.id);
 	}, [requested]);
+	useEffect(() => {
+		if (!visible)
+			for (const video of mediaRef.current?.querySelectorAll("video") ?? [])
+				video.pause();
+	}, [visible]);
 	if (!videos.length && !screenshots.length) return null;
 	const active =
 		requested ?? videos.find((video) => video.id === selection) ?? videos[0];
 	const t = copy[locale];
 	return (
 		<section
+			ref={mediaRef}
 			className="project-media"
 			id="media"
 			aria-labelledby="project-media-title"
