@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1] - 2026-10-08
+
+### Fixes
+
+- archive pika and preserve completed assets ([2939498](https://github.com/nocoo/hexly.ai/commit/29394981097fd52f1863af60ccc247c2c4e585b5))
+
 ## [1.2.0] - 2026-10-08
 
 ### Fixes
