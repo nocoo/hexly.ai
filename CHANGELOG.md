@@ -1,5 +1,53 @@
 # Changelog
 
+## [1.2.0] - 2026-10-08
+
+### Fixes
+
+- patch vulnerable undici dependency ([b9bf854](https://github.com/nocoo/hexly.ai/commit/b9bf85468112961d5a72f9702f9c8122a0986231))
+- make ci repeatable without redeploying ([3614d88](https://github.com/nocoo/hexly.ai/commit/3614d880d2822bcbef68150fc73f88cef060259d))
+- preserve the release source workflow name ([44aba6d](https://github.com/nocoo/hexly.ai/commit/44aba6d80929c63503b38e32e779d1184a65787b))
+- patch newly disclosed fast-uri vulnerability ([ec9886f](https://github.com/nocoo/hexly.ai/commit/ec9886fe995bd33c38a5c6e49a143749c2f3c3a4))
+- isolate local worker state ([02409d9](https://github.com/nocoo/hexly.ai/commit/02409d95e08ccf684700b839e59baa28bc6fe3b5))
+- align Wrangler deployment pin (#16) ([f590389](https://github.com/nocoo/hexly.ai/commit/f59038961233e9d81f422eb27e25fec9ff574f3e))
+- inset project category dropdown arrow ([4e3a3cd](https://github.com/nocoo/hexly.ai/commit/4e3a3cdeb3fbc6ecc08df31e92ab97a936b9c18b))
+- simplify actions and animate project switching ([bf46cbe](https://github.com/nocoo/hexly.ai/commit/bf46cbe718c75583615fef36e88decae38e1b558))
+
+### Tests
+
+- trim redundant browser matrices ([0b822ea](https://github.com/nocoo/hexly.ai/commit/0b822eae8a9e54e25f50ba405852833a5121a964))
+- prune redundant archive and ui matrices ([85ce5bc](https://github.com/nocoo/hexly.ai/commit/85ce5bc6d1bee210155b8175dab48d9fe4377242))
+- remove orphan process timing from unit gate ([1c41d26](https://github.com/nocoo/hexly.ai/commit/1c41d2622217bb4b2954337345789c6f582e3d8c))
+
+### Maintenance
+
+- bump biome to 2.5.15 (#4) ([82025f0](https://github.com/nocoo/hexly.ai/commit/82025f0ebeb959acedff67c7ec67fb7a2738acf5))
+- bump bun types to 1.4.2 (#5) ([d03fa81](https://github.com/nocoo/hexly.ai/commit/d03fa81660e589c28421e20724ddf203900468c4))
+- bump react types (#6, #7) ([bf1493a](https://github.com/nocoo/hexly.ai/commit/bf1493a36ee28bfbcb1980cf4b0e210d26df99c6))
+- bump vitest to 5.0.3 (#8, #15) ([1bcb053](https://github.com/nocoo/hexly.ai/commit/1bcb053539308da36b4b7649dfb99d0f3bf3eb8e))
+- bump react to 19.3 (#10, #11) ([6b9de3b](https://github.com/nocoo/hexly.ai/commit/6b9de3b8adafa671f070b570bf1d345b3ec21659))
+- bump sharp to 0.35.5 (#12) ([2c53ac0](https://github.com/nocoo/hexly.ai/commit/2c53ac0b221be84d46ae3dcac42f820255b75a95))
+- bump vite to 8.3.1 (#14) ([19ba002](https://github.com/nocoo/hexly.ai/commit/19ba0022505d84b7693cf83a40cd018e64cd68ab))
+- bump wrangler to 4.145.0 (#16) ([9b7aa6b](https://github.com/nocoo/hexly.ai/commit/9b7aa6bbc470ec40aab819010dda0cb4049eb6c8))
+- Merge pull request #17 from nocoo/chore/deps-20261003-090428 ([13ca01e](https://github.com/nocoo/hexly.ai/commit/13ca01ec457985bb6cb5035e169ed95cedcebc14))
+- Merge pull request #18 from nocoo/chore/deps-20261003-094909-deploy ([e221649](https://github.com/nocoo/hexly.ai/commit/e221649c269a1851c5590fc6b25b67bbff63d349))
+- patch sharp (#59) ([cef199d](https://github.com/nocoo/hexly.ai/commit/cef199d3b6a603c2cb05097b5b8b88ee689214fa))
+- patch source-map-js (#60) ([78da37c](https://github.com/nocoo/hexly.ai/commit/78da37ce37954b643ad65ecb126df306a28ceab9))
+- Merge pull request #61 from nocoo/chore/deps-20261007-111554 ([6661623](https://github.com/nocoo/hexly.ai/commit/66616239974aa9107fe39a7e57c927c4c94ec202))
+- remove wrangler patches and version pins ([8bb1ac5](https://github.com/nocoo/hexly.ai/commit/8bb1ac56e84d770461900e9ebe83e780b55388ba))
+
+### Documentation
+
+- explain security pins (#59, #60) ([fc1bbad](https://github.com/nocoo/hexly.ai/commit/fc1bbad4a537969f8b60c1b42aa25c348c142d71))
+- record local falcon icon adoption ([6367b25](https://github.com/nocoo/hexly.ai/commit/6367b25fdbb6d74faf84174b11dddd3accd88d6b))
+
+### Features
+
+- toggle project sorting with lucide icon ([577cbd4](https://github.com/nocoo/hexly.ai/commit/577cbd409801cfdb5afb234cb5bd8033d2d21269))
+- organize project details into tabs ([5d6982a](https://github.com/nocoo/hexly.ai/commit/5d6982acd7ff174e1748f503a9e836bb5777f57d))
+- streamline project detail navigation ([ff3eff5](https://github.com/nocoo/hexly.ai/commit/ff3eff58901c525fd8de5f621b35be743978aa04))
+- organize archive links with lucide icons ([32fc158](https://github.com/nocoo/hexly.ai/commit/32fc158d287678c398af08236487378595f0e4ab))
+
 ## [1.1.3] - 2026-09-27
 
 ### Features
