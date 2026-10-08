@@ -1,5 +1,12 @@
 # Local development and deployment
 
+Use project scripts and the frozen project-local Wrangler, not the global CLI.
+The manifest accepts compatible 4.x updates; the lockfile records the tested
+resolution. Wrangler is unmodified. When removing an installed Bun patch, run
+`bun install --force --frozen-lockfile` through the machine-approved temporary
+registry: an ordinary incremental install can leave patched bytes in place.
+The Vite HMR server, Worker inspector and local D1 workflow remain unchanged.
+
 ## Local domain
 
 `https://index.dev.hexly.ai` is the directory's dedicated development domain. Vite listens on `127.0.0.1:7048`; Caddy terminates TLS using the machine's existing wildcard certificate and proxies to that port.

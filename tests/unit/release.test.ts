@@ -18,7 +18,7 @@ import {
 	updateChangelog,
 } from "../../scripts/release-model";
 
-it("deploys with the exact Wrangler version validated by the frozen install", () => {
+it("deploys the frozen project toolchain with migrations before publication", () => {
 	const workflow = JSON.parse(
 		execFileSync(
 			"bun",
@@ -31,13 +31,13 @@ it("deploys with the exact Wrangler version validated by the frozen install", ()
 		),
 	);
 	const manifest = JSON.parse(readFileSync("package.json", "utf8"));
-	const installed = JSON.parse(
-		readFileSync("node_modules/wrangler/package.json", "utf8"),
+	const deploy = workflow.jobs.deploy.with;
+	expect(deploy["deploy-script"]).toBe("bun run deploy:worker");
+	expect(deploy["wrangler-version"]).toBeUndefined();
+	expect(deploy["d1-migrations"]).toBeUndefined();
+	expect(manifest.scripts["deploy:worker"]).toBe(
+		'wrangler d1 migrations apply STATUS_DB --env "" --remote && wrangler deploy --env ""',
 	);
-	expect(workflow.jobs.deploy.with["wrangler-version"]).toBe(
-		manifest.devDependencies.wrangler,
-	);
-	expect(workflow.jobs.deploy.with["wrangler-version"]).toBe(installed.version);
 });
 
 const now = Date.parse("2026-09-06T00:00:00Z");

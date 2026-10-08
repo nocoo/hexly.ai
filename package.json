@@ -14,7 +14,8 @@
 		"build": "vite build",
 		"preview": "vite preview --host 127.0.0.1 --port 7048 --strictPort",
 		"preview:worker": "bun scripts/local-status.ts preview",
-		"deploy": "bun run build && wrangler d1 migrations apply STATUS_DB --env \"\" --remote && wrangler deploy --env \"\"",
+		"deploy": "bun run build && bun run deploy:worker",
+		"deploy:worker": "wrangler d1 migrations apply STATUS_DB --env \"\" --remote && wrangler deploy --env \"\"",
 		"deploy:check": "wrangler deploy --env \"\" --dry-run",
 		"verify:production": "bun scripts/verify-deployment.ts",
 		"release": "bun scripts/release.ts",
@@ -73,7 +74,7 @@
 		"typescript": "7.0.2",
 		"vite": "8.3.1",
 		"vitest": "5.0.3",
-		"wrangler": "4.145.0"
+		"wrangler": "^4.145.0"
 	},
 	"overrides": {
 		"undici": "7.29.1",
@@ -82,8 +83,5 @@
 	},
 	"workspaces": [
 		"packages/video-kit"
-	],
-	"patchedDependencies": {
-		"wrangler@4.145.0": "patches/wrangler@4.145.0.patch"
-	}
+	]
 }

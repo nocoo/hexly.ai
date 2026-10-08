@@ -357,3 +357,20 @@ timeout would not address the lifecycle coupling. Use the existing axe-core
 engine directly in the page and reject unexpected frames; preserve all default
 rules. Verify the installed frozen dependency graph before measuring tests: the
 initial node_modules still contained older versions than bun.lock.
+
+## 2026-10-08 — Remove ownership of Wrangler internals
+
+The project maintained a version-specific development-proxy patch and tests that
+parsed and evaluated its installed bundle. A duplicate workflow pin then needed
+another equality test to keep configuration synchronized. These checks tested
+our workaround rather than the product. Delete the patch and vendor tests; use
+compatible package ranges, one frozen resolution and the existing project deploy
+script. Keep migration-before-deploy and trusted revision guards. Upstream issue
+15451 is still open; removal is not a claim that every upstream transport defect
+has been fixed. Validate the unmodified public toolchain without adding retries.
+
+The unmodified-toolchain run passed HTTP and 71/72 browser checks. The remaining
+failure was reading the background opener immediately after opening an external
+tab: Chromium closed its protocol session. Close the verified popup and restore
+the opener to the foreground before asserting its unchanged URL. Keep native
+middle-click navigation and the unchanged-page assertion; do not retry the test.
