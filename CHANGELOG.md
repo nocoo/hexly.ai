@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.2] - 2026-10-08
+
+### Fixes
+
+- align portfolio footer with resume ([67d094d](https://github.com/nocoo/hexly.ai/commit/67d094de92a15dd773e1a87f9292c6ff249ed339))
+
 ## [1.2.1] - 2026-10-08
 
 ### Fixes
