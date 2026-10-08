@@ -122,7 +122,7 @@ Status browser tests pin the browser clock to the fixed SQLite demo's latest sam
 
 Deployment still requires a successful CI run for the exact trusted main revision, verified by the shared release-source action. Changing test routing does not change this authorization boundary.
 
-Wrangler 4.145.0 now selects Miniflare 5.20260930.0-alpha with Sharp 0.35.4, which already contains the image-decoder security fix for [GHSA-rgj7-g3m4-5g8c](https://osv.dev/GHSA-rgj7-g3m4-5g8c). The obsolete Sharp security override is removed. Root and Video Kit pin the requested Sharp 0.35.5; the regenerated lockfile, runtime HTTP checks and OSV scan verify the supported upstream chain without suppressing advisories.
+Wrangler 4.145.0 selects Miniflare 5.20260930.0-alpha, whose Sharp declaration remains 0.35.4. The root override pins every Sharp installation to 0.35.5 for [GHSA-wq5f-xc86-pv6w](https://osv.dev/GHSA-wq5f-xc86-pv6w); fixing the older image-decoder advisory alone is insufficient. A separate source-map-js override pins 1.2.2 for [GHSA-68fv-2mgg-jv7q](https://osv.dev/GHSA-68fv-2mgg-jv7q). Root and Video Kit retain Sharp 0.35.5. Frozen installation, runtime HTTP checks and OSV scanning verify the resulting graph without suppressing advisories.
 
 ## Completion evidence
 
