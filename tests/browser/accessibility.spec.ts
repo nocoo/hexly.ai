@@ -26,6 +26,22 @@ for (const [theme, options] of [
 				await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 				if (view === "status")
 					await expect(page.locator(".status-demo")).toBeVisible();
+				if (view === "gallery") {
+					const category = page.getByRole("combobox");
+					await expect(category).toHaveCSS("appearance", "none");
+					const inset = await category.locator("..").evaluate((control) => {
+						const select = control.querySelector("select");
+						const icon = control.querySelector("svg");
+						if (!select || !icon) throw new Error("Missing category control");
+						return {
+							right:
+								select.getBoundingClientRect().right -
+								icon.getBoundingClientRect().right,
+							left: Number.parseFloat(getComputedStyle(select).paddingLeft),
+						};
+					});
+					expect(inset.right).toBeCloseTo(inset.left, 0);
+				}
 
 				if (view === "directory") {
 					await expect(page.locator(".site-header .preferences")).toHaveCSS(
