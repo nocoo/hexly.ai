@@ -261,6 +261,29 @@
 	background: var(--hover);
 	color: var(--ink);
 }
+.sort-toggle {
+	display: grid;
+	place-items: center;
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	border: 1px solid var(--line);
+	border-radius: 5px;
+	background: transparent;
+	color: var(--muted);
+}
+.sort-toggle:hover {
+	background: var(--hover);
+	color: var(--ink);
+}
+.sort-toggle[aria-pressed="true"] {
+	background: var(--ink);
+	color: var(--page);
+}
+.sort-toggle .icon {
+	width: 18px;
+	height: 18px;
+}
 .sort-control {
 	position: relative;
 	flex-shrink: 0;
