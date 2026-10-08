@@ -108,13 +108,24 @@ test("combines search and categories, resets empty results, and sorts by name", 
 	await search.fill("backup");
 	await search.press("Escape");
 	await expect(search).toHaveValue("");
-	await page.getByLabel("Sort projects").selectOption("az");
+	const curated = await page.locator(".project-card h3").allTextContents();
+	const sort = page.getByRole("button", { name: "Sort projects: Name, A–Z" });
+	await expect(sort).toHaveAttribute("aria-pressed", "false");
+	await sort.click();
+	await expect(sort).toHaveAttribute("aria-pressed", "true");
 	await expect(page.locator(".project-card h3")).toHaveText(
 		active
 			.map((project) => project.title)
 			.toSorted((a, b) => a.localeCompare(b, "en")),
 	);
 	await expect(page).toHaveURL(/sort=az/);
+	await page.reload();
+	await expect(sort).toHaveAttribute("aria-pressed", "true");
+	await sort.click();
+	await expect(sort).toHaveAttribute("aria-pressed", "false");
+	await expect(page.locator(".project-card h3")).toHaveText(curated);
+	await page.goBack();
+	await expect(sort).toHaveAttribute("aria-pressed", "true");
 });
 
 test.describe("remembers language and theme across reloads and searches Chinese descriptions — touch", () => {

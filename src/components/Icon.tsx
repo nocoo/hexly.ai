@@ -21,6 +21,7 @@ export type IconName =
 	| "image"
 	| "activity"
 	| "refresh"
+	| "sort-az"
 	| "clock"
 	| "play"
 	| "info";
@@ -53,6 +54,8 @@ const paths: Record<IconName, string> = {
 		"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2ZM3 16l5-5 4 4 3-3 6 6M15 7h.01",
 	activity: "M2 12h5l3-8 4 16 3-8h5",
 	refresh: "M20 7v5h-5M4 17v-5h5M6 6a8 8 0 0 1 13 3M18 18a8 8 0 0 1-13-3",
+	"sort-az":
+		"m3 16 4 4 4-4M7 20V4M20 8h-5M15 10V6.5a2.5 2.5 0 0 1 5 0V10M15 14h5l-5 6h5",
 	clock: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 7v5l3 2",
 	play: "m9 5 11 7-11 7V5ZM4 4v16",
 	info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7h.01",

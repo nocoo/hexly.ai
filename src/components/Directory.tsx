@@ -150,24 +150,18 @@ export function Directory({
 							</button>
 						))}
 					</fieldset>
-					<div className="sort-control">
-						<label className="sr-only" htmlFor="project-sort">
-							{t.sort}
-						</label>
-						<select
-							id="project-sort"
-							value={state.sort}
-							onChange={(event) =>
-								onChange({
-									sort: event.target.value === "az" ? "az" : "curated",
-								})
-							}
-						>
-							<option value="curated">{t.curated}</option>
-							<option value="az">{t.alphabetical}</option>
-						</select>
-						<Icon name="chevron" />
-					</div>
+					<button
+						type="button"
+						className="sort-toggle"
+						aria-label={`${t.sort}: ${t.alphabetical}`}
+						aria-pressed={state.sort === "az"}
+						title={`${state.sort === "az" ? t.alphabetical : t.curated} · ${state.sort === "az" ? t.curated : t.alphabetical}`}
+						onClick={() =>
+							onChange({ sort: state.sort === "az" ? "curated" : "az" })
+						}
+					>
+						<Icon name="sort-az" />
+					</button>
 				</div>
 				<p className="result-count" role="status">
 					{t.showing} {visible.length} {t.of} {projects.length} {t.projects}
