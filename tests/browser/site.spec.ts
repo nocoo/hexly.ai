@@ -262,10 +262,10 @@ test.describe("desktop", () => {
 		await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
 		const repository = await repositoryPage;
 		await expect(repository).toHaveURL("https://github.com/nocoo/pew");
-		await expect(page).toHaveURL(/\/$/);
 		await repository.close();
 		await context.unroute("https://github.com/nocoo/pew");
 		await page.bringToFront();
+		await expect(page).toHaveURL(/\/$/);
 		const detailPage = context.waitForEvent("page");
 		// Open the native tab in front so Chromium initializes it before the page event.
 		await card
@@ -278,7 +278,8 @@ test.describe("desktop", () => {
 			timeout: 15_000,
 		});
 		await expect(detail.locator("#identity-title")).toContainText("Pew");
-		await expect(page).toHaveURL(/\/$/);
 		await detail.close();
+		await page.bringToFront();
+		await expect(page).toHaveURL(/\/$/);
 	});
 });

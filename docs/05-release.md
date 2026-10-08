@@ -49,3 +49,9 @@ The local release helper matches deployment by source CI run ID, Git SHA and
 or a skipped deployment as publication. GitHub Release notes link both runs.
 
 After publication, inspect the actual remote workflow and public metadata. A successful local build or accepted upload alone is not release completion.
+
+The shared deployment workflow is pinned at
+`8816553dc9f4544d1e8486bacb5cce630a9f14cb`. It delegates publication to
+`bun run deploy:worker`, using the project's frozen CLI resolution rather than a
+second exact-version input. The script applies D1 migrations before deploying;
+the shared workflow retains source-run, main-freshness and credential boundaries.

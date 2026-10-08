@@ -59,7 +59,7 @@ archive checksum walk. Browser checks cover actual interactions, failures,
 history, keyboard/focus, bilingual content, themes and responsive layout; shared
 controls do not require a Cartesian product of projects, devices and themes.
 
-The browser suite has 72 checks. Each route/theme receives one accessibility
+The browser suite has 72 checks; HTTP has 28. Each route/theme receives one accessibility
 scan; changing only an artwork image does not repeat it. Scans run `axe-core`
 directly in the current page with its default rules. The scanner rejects frames
 instead of silently omitting them. The site has no embedded frames; if that
@@ -126,7 +126,7 @@ server ownership and tests stay complete; daily development keeps native watchin
 
 The unified CI job uses Node.js 26.7.0 and Bun 1.4.0. Browser tests retain three workers, zero retries, and the full Chromium build (`channel: "chromium"`). Install `chromium` without `--only-shell`: the shell previously stalled native popup initialization. New-tab checks wait for navigation and `DOMContentLoaded`.
 
-Status browser tests pin the browser clock to the fixed SQLite demo's latest sample. The versioned [Wrangler patch](../patches/README.md) preserves the real disconnected-read and abandoned-client regressions; writes, canceled requests, upgrades and HTTP failures are never replayed. Sanitized diagnostics at `.wrangler/verification.log`, browser traces and screenshots are uploaded on CI failure for seven days.
+Status browser tests pin the browser clock to the fixed SQLite demo's latest sample. The project uses unmodified Wrangler through public CLI commands and `getPlatformProxy`; tests do not execute vendor bundles or reproduce development-proxy transport internals. Sanitized diagnostics at `.wrangler/verification.log`, browser traces and screenshots are uploaded on CI failure for seven days.
 
 Deployment still requires a successful CI run for the exact trusted main revision, verified by the shared release-source action. Changing test routing does not change this authorization boundary.
 
@@ -160,3 +160,17 @@ These measurements describe the local v0.1.0 validation. GitHub Actions repeats 
 ## Owned HTTP and browser test state
 
 The local test runner creates a unique `hexly-test-*` directory, rejects inherited Cloudflare/R2/AWS credentials, and writes a test-only Wrangler configuration with immutable source paths. It creates and checks `_test_marker` (`env=test`, unique `run_id`) before migrations and seed writes. Test processes run in an owned process group; cleanup stops descendants and rechecks the marker and directory owner. Failed or unverified state is retained for inspection. Daily development and preview state are unchanged. Browser tests remain a separate CI acceptance lane.
+
+## CLI compatibility
+
+Wrangler accepts compatible 4.x updates (`^4.145.0`); `bun.lock` records the
+validated resolution for reproducible frozen installs. There is no vendor patch,
+no workflow version duplicate and no assertion comparing a package range with an
+installed exact version. Dependency updates validate public dev, D1, types and
+deploy dry-run capabilities through the normal gates.
+
+Release invokes `bun run deploy:worker` from the frozen checkout. That script
+applies production D1 migrations before deployment; the shared immutable workflow
+still proves the CI source, rejects stale main, serializes publication and scopes
+credentials to deployment. Build and dry-run run before credentials are supplied.
+This does not migrate the project to cf or change daily local debugging.
