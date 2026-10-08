@@ -40,7 +40,7 @@ export async function seed(
 		), fixture AS (
 			SELECT i, CASE
 				WHEN ${quote(target.id)} = 'gaga' THEN 'unconfigured'
-				WHEN ${quote(target.id)} = 'pika' AND i < 12 THEN 'down'
+				WHEN ${quote(target.id)} = 'pew' AND i < 12 THEN 'down'
 				WHEN ${quote(target.id)} = 'bogo' AND i < 7 THEN 'degraded'
 				WHEN ${index % 4} = 0 AND i BETWEEN ${36 + index * 17} AND ${42 + index * 17} THEN 'down'
 				WHEN ${index % 3} = 0 AND i BETWEEN 1400 AND 1420 THEN 'degraded'

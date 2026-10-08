@@ -18,8 +18,11 @@ test("reads the actual local SQLite D1 through the status API", async ({
 		snapshot.services.find((service) => service.id === "pew-game")?.latest,
 	).toBeNull();
 	expect(
-		snapshot.services.find((service) => service.id === "pika")?.latest?.status,
+		snapshot.services.find((service) => service.id === "pew")?.latest?.status,
 	).toBe("down");
+	expect(snapshot.services.some((service) => service.id === "pika")).toBe(
+		false,
+	);
 	expect(
 		snapshot.services.reduce(
 			(sum, service) =>

@@ -237,7 +237,6 @@ export function catalogueProblems(projects: Project[]): string[] {
 		if (
 			icon !== undefined &&
 			(!icon ||
-				project.archived ||
 				!project.family ||
 				!/^\d+\.\d+\.\d+$/.test(icon.version) ||
 				icon.root !== `/icons/${project.id}/v${icon.version}` ||
