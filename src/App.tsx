@@ -428,11 +428,7 @@ export function App() {
 						locale={locale}
 					/>
 				)}
-			<Footer
-				locale={locale}
-				homeHref={statusDomain ? "https://hexly.ai/" : "/"}
-				onHome={() => view("directory")}
-			/>
+			<Footer locale={locale} />
 			<div
 				className={`toast ${toast ? "toast-visible" : ""}`}
 				role="status"

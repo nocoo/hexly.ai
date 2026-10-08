@@ -1,18 +1,8 @@
 import { copy } from "../data/copy";
-import { appVersion } from "../data/version";
 import type { Locale } from "../model/project";
 import { FamilyBrand } from "./FamilyBrand";
-import { SurfaceLinks } from "./SurfaceLinks";
 
-export function Footer({
-	locale,
-	onHome,
-	homeHref = "/",
-}: {
-	locale: Locale;
-	onHome: () => void;
-	homeHref?: string;
-}) {
+export function Footer({ locale }: { locale: Locale }) {
 	const t = copy[locale];
 	const year = new Date().getFullYear();
 	return (
@@ -28,28 +18,16 @@ export function Footer({
 							<span className="footer-copyright-short">
 								{t.copyrightShort.replace("{year}", String(year))}
 							</span>
-							<span className="footer-meta">
-								{" · "}
-								<span className="site-version">v{appVersion}</span>
-								{" · "}
-								<a href="/llms.txt">{t.llms}</a>
-							</span>
 						</p>
 					</div>
-					<SurfaceLinks
-						locale={locale}
-						footer
-						portfolioHref={homeHref}
-						onPortfolio={onHome}
-					/>
-					<a
-						className="footer-mobile-top"
-						href="#main-content"
-						aria-label={t.top}
+					<nav
+						className="public-formats"
+						aria-label={locale === "zh" ? "阅读格式" : "Reading formats"}
 					>
-						<span className="sr-only">{t.top}</span>
-						<span aria-hidden="true">↑</span>
-					</a>
+						<a href="/llms.txt" lang="en">
+							{t.llms}
+						</a>
+					</nav>
 				</div>
 			</div>
 			<div className="site-footer-bottom">

@@ -1,4 +1,3 @@
-import manifest from "../../package.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
 
 import { desktop, expect, test, touch } from "./fixtures";
@@ -17,8 +16,14 @@ test("renders active projects with real logo previews and project destinations",
 	});
 	await page.goto("/");
 	await expect(page).toHaveTitle(/hexly.ai/);
-	await expect(page.locator(".site-footer .site-version")).toHaveText(
-		`v${manifest.version}`,
+	await expect(page.locator(".site-footer .surface-links")).toHaveCount(0);
+	await expect(page.locator(".site-footer .site-version")).toHaveCount(0);
+	await expect(page.locator(".site-footer .public-formats a")).toHaveAttribute(
+		"href",
+		"/llms.txt",
+	);
+	await expect(page.locator(".footer-curiosity")).toHaveText(
+		"BUILT WITH CURIOSITY.",
 	);
 	const surfaces = page.getByRole("navigation", {
 		name: "Surfaces",
