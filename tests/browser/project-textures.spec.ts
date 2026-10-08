@@ -1,12 +1,11 @@
-import AxeBuilder from "@axe-core/playwright";
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
 import { brandTextureAsset, projectTexture } from "../../src/model/brand";
+import { scanAccessibility } from "./accessibility";
 import { desktop, expect, test, touch } from "./fixtures";
 
 for (const [id, options, opacity] of [
 	["frogie", desktop, 0.38],
-	["pi-agent-policy", touch, 0.45],
 	["ccbackup", touch, 0.42],
 ] as const) {
 	const project = readProjects().find((item) => item.id === id);
@@ -85,10 +84,9 @@ for (const [id, options, opacity] of [
 						() => document.documentElement.scrollWidth <= innerWidth,
 					),
 				).toBe(true);
-				expect(
-					(await new AxeBuilder({ page }).include("#texture").analyze())
-						.violations,
-				).toEqual([]);
+				expect((await scanAccessibility(page, "#texture")).violations).toEqual(
+					[],
+				);
 			}
 			const downloaded = page.waitForEvent("download");
 			await page.locator("#texture a[download]").first().click();
@@ -112,7 +110,7 @@ test("independent texture review keeps download enhancement and contrasting capt
 		"color",
 		"rgb(230, 233, 220)",
 	);
-	expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+	expect((await scanAccessibility(page)).violations).toEqual([]);
 	const pending = page.waitForEvent("download");
 	await page.getByRole("link", { name: "Original PNG" }).first().click();
 	expect((await pending).suggestedFilename()).toBe("texture-light.png");

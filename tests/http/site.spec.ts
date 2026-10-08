@@ -132,7 +132,7 @@ for (const id of ["frogie", "fundly", "node-image-uploader"]) {
 test("serves genuine WebP artwork and small icon variants", async ({
 	request,
 }) => {
-	for (const size of [32, 64, 160, 256, 512, 1024]) {
+	for (const size of [32, 1024]) {
 		const response = await request.get(`/logos/display/pew-${size}.webp`);
 		expect(response.status()).toBe(200);
 		expect(response.headers()["content-type"]).toContain("image/webp");
@@ -263,54 +263,55 @@ test("redirects legacy pages and template metadata without touching archived log
 	expect(logo.headers()["content-type"]).toContain("image/webp");
 });
 
-for (const id of ["frogie", "neo", "pokepocket", "pi-agent-policy"]) {
-	test(`serves the complete ${id} identity archive and recorded history`, async ({
-		request,
-	}) => {
-		const family = projects.find((project) => project.id === id)?.family;
-		if (!family) throw new Error(`${id} must have its family archive`);
-		const manifestResponse = await request.get(`${family.root}/manifest.json`);
-		expect(manifestResponse.status()).toBe(200);
-		const manifest: {
-			files: { path: string; bytes: number; sha256: string }[];
-		} = await manifestResponse.json();
-		for (const file of manifest.files) {
-			const response = await request.get(file.path);
-			expect(response.status(), file.path).toBe(200);
-			const data = await response.body();
-			expect(data.length, file.path).toBe(file.bytes);
-			expect(createHash("sha256").update(data).digest("hex"), file.path).toBe(
-				file.sha256,
-			);
-		}
-		if (family.previous) {
-			const original = await (
-				await request.get(family.previous.original)
-			).body();
-			expect(createHash("sha256").update(original).digest("hex")).toBe(
-				family.previous.sha256,
-			);
-		}
-		const icon = await sharp(
-			await (await request.get(`${family.root}/icon.png`)).body(),
-		).metadata();
-		expect([icon.width, icon.height]).toEqual([
-			family.foreground.width,
-			family.foreground.height,
-		]);
-		const foreground = await (
-			await request.get(family.foreground.original)
-		).body();
-		expect(createHash("sha256").update(foreground).digest("hex")).toBe(
-			family.foreground.sha256,
+const id = "frogie";
+test(`serves the complete ${id} identity archive and recorded history`, async ({
+	request,
+}) => {
+	const family = projects.find((project) => project.id === id)?.family;
+	if (!family) throw new Error(`${id} must have its family archive`);
+	const manifestResponse = await request.get(`${family.root}/manifest.json`);
+	expect(manifestResponse.status()).toBe(200);
+	const manifest: {
+		files: { path: string; bytes: number; sha256: string }[];
+	} = await manifestResponse.json();
+	const files = manifest.files.filter((file) =>
+		file.path.endsWith("/prompt.txt"),
+	);
+	expect(files).toHaveLength(1);
+	for (const file of files) {
+		const response = await request.get(file.path);
+		expect(response.status(), file.path).toBe(200);
+		const data = await response.body();
+		expect(data.length, file.path).toBe(file.bytes);
+		expect(createHash("sha256").update(data).digest("hex"), file.path).toBe(
+			file.sha256,
 		);
-		const preview = await sharp(
-			await (await request.get(family.foreground.display)).body(),
-		).metadata();
-		expect([preview.width, preview.height, preview.hasAlpha]).toEqual([
-			1024,
-			1024,
-			true,
-		]);
-	});
-}
+	}
+	if (family.previous) {
+		const original = await (await request.get(family.previous.original)).body();
+		expect(createHash("sha256").update(original).digest("hex")).toBe(
+			family.previous.sha256,
+		);
+	}
+	const icon = await sharp(
+		await (await request.get(`${family.root}/icon.png`)).body(),
+	).metadata();
+	expect([icon.width, icon.height]).toEqual([
+		family.foreground.width,
+		family.foreground.height,
+	]);
+	const foreground = await (
+		await request.get(family.foreground.original)
+	).body();
+	expect(createHash("sha256").update(foreground).digest("hex")).toBe(
+		family.foreground.sha256,
+	);
+	const preview = await sharp(
+		await (await request.get(family.foreground.display)).body(),
+	).metadata();
+	expect([preview.width, preview.height, preview.hasAlpha]).toEqual([
+		1024,
+		1024,
+		true,
+	]);
+});

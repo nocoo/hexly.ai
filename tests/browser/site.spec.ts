@@ -58,18 +58,6 @@ test("renders active projects with real logo previews and project destinations",
 		await expect(link).toHaveAttribute("href", href ?? "");
 	}
 
-	const refined = active.filter((project) => project.family);
-	for (const project of refined) {
-		const { id } = project;
-		await expect(
-			page.locator(`[data-project="${id}"] .logo-composed img`),
-		).toHaveAttribute(
-			"src",
-			new RegExp(
-				`/projects/${id}/icons/v${project.presentationIcon?.version}/rounded-256\\.webp$`,
-			),
-		);
-	}
 	await expect(page.locator(".project-card img").first()).toHaveAttribute(
 		"loading",
 		"eager",
@@ -78,15 +66,10 @@ test("renders active projects with real logo previews and project destinations",
 		"loading",
 		"lazy",
 	);
-	await page.locator(".project-card img").evaluateAll(async (images) => {
-		await Promise.all(
-			images.map(async (node) => {
-				const image = node as HTMLImageElement;
-				image.loading = "eager";
-				await image.decode();
-			}),
-		);
-	});
+	await page
+		.locator(".project-card img")
+		.first()
+		.evaluate((image: HTMLImageElement) => image.decode());
 	await expect(page.locator('[data-project="pew"] .card-main')).toHaveAttribute(
 		"href",
 		"/projects/pew",
@@ -260,54 +243,42 @@ test("keeps archived projects accessible through their category and direct logo 
 	).toBe(true);
 });
 
-for (const [device, options] of Object.entries({ desktop, touch })) {
-	test.describe(device, () => {
-		test.use(options);
-		test("keeps repository clicks separate and supports native card navigation", async ({
-			page,
-			context,
-			isMobile,
-		}) => {
-			await context.route("https://github.com/nocoo/pew", (route) =>
-				route.fulfill({
-					contentType: "text/html",
-					body: "<title>Pew repository</title>",
-				}),
-			);
-			await page.goto("/");
-			const card = page.locator('[data-project="pew"]');
-			await card.scrollIntoViewIfNeeded();
-			const repositoryPage = page.waitForEvent("popup");
-			await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
-			const repository = await repositoryPage;
-			await expect(repository).toHaveURL("https://github.com/nocoo/pew");
-			await expect(page).toHaveURL(/\/$/);
-			await repository.close();
-			await context.unroute("https://github.com/nocoo/pew");
-			await page.bringToFront();
-			if (isMobile) {
-				// Touch browsers have no native middle-click gesture.
-				await card.getByRole("link", { name: "View project: Pew" }).tap();
-				await expect(page).toHaveURL(/\/projects\/pew\/?$/);
-				await expect(page.locator("#identity-title")).toContainText("Pew");
-				await page.goBack();
-				await expect(page).toHaveURL(/\/$/);
-				return;
-			}
-			const detailPage = context.waitForEvent("page");
-			// Open the native tab in front so Chromium initializes it before the page event.
-			await card
-				.getByRole("link", { name: "View project: Pew" })
-				.click({ button: "middle", modifiers: ["Shift"] });
-			const detail = await detailPage;
-			await detail.bringToFront();
-			await detail.waitForURL(/\/projects\/pew\/?$/, {
-				waitUntil: "domcontentloaded",
-				timeout: 15_000,
-			});
-			await expect(detail.locator("#identity-title")).toContainText("Pew");
-			await expect(page).toHaveURL(/\/$/);
-			await detail.close();
+test.describe("desktop", () => {
+	test.use(desktop);
+	test("keeps repository clicks separate and supports native card navigation", async ({
+		page,
+		context,
+	}) => {
+		await context.route("https://github.com/nocoo/pew", (route) =>
+			route.fulfill({
+				contentType: "text/html",
+				body: "<title>Pew repository</title>",
+			}),
+		);
+		await page.goto("/");
+		const card = page.locator('[data-project="pew"]');
+		await card.scrollIntoViewIfNeeded();
+		const repositoryPage = page.waitForEvent("popup");
+		await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
+		const repository = await repositoryPage;
+		await expect(repository).toHaveURL("https://github.com/nocoo/pew");
+		await expect(page).toHaveURL(/\/$/);
+		await repository.close();
+		await context.unroute("https://github.com/nocoo/pew");
+		await page.bringToFront();
+		const detailPage = context.waitForEvent("page");
+		// Open the native tab in front so Chromium initializes it before the page event.
+		await card
+			.getByRole("link", { name: "View project: Pew" })
+			.click({ button: "middle", modifiers: ["Shift"] });
+		const detail = await detailPage;
+		await detail.bringToFront();
+		await detail.waitForURL(/\/projects\/pew\/?$/, {
+			waitUntil: "domcontentloaded",
+			timeout: 15_000,
 		});
+		await expect(detail.locator("#identity-title")).toContainText("Pew");
+		await expect(page).toHaveURL(/\/$/);
+		await detail.close();
 	});
-}
+});

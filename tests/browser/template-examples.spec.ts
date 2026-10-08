@@ -1,9 +1,9 @@
 import { readFile } from "node:fs/promises";
-import AxeBuilder from "@axe-core/playwright";
 import { copy } from "../../src/data/copy";
 import manifest from "../../src/data/template-examples.json" with {
 	type: "json",
 };
+import { scanAccessibility } from "./accessibility";
 import { expect, test, touch } from "./fixtures";
 
 test.describe("touch outro library", () => {
@@ -49,20 +49,10 @@ test.describe("touch outro library", () => {
 				() => document.documentElement.scrollWidth <= innerWidth,
 			),
 		).toBe(true);
-		const scan = await new AxeBuilder({ page })
-			.include("#outros")
-			.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-			.analyze();
+		const scan = await scanAccessibility(page, "#outros");
 		expect(scan.violations).toEqual([]);
 		await page.locator(".theme-toggle").click();
-		expect(
-			(
-				await new AxeBuilder({ page })
-					.include("#outros")
-					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-					.analyze()
-			).violations,
-		).toEqual([]);
+		expect((await scanAccessibility(page, "#outros")).violations).toEqual([]);
 		const outro = manifest.examples[0];
 		if (!outro) throw new Error("Missing standard outro");
 		const card = page.locator(`[data-template-example="${outro.video.id}"]`);

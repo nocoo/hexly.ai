@@ -114,11 +114,6 @@ describe("independent campaign textures", () => {
 			});
 			expect(provenance.contrast.lightMinimum).toBeGreaterThanOrEqual(4.7);
 			expect(provenance.contrast.darkMinimum).toBeGreaterThanOrEqual(4.7);
-			for (const file of manifest.files) {
-				const bytes = await readFile(`public${file.path}`);
-				expect(bytes.length, file.path).toBe(file.bytes);
-				expect(sha(bytes), file.path).toBe(file.sha256);
-			}
 			for (const generation of manifest.generations) {
 				const raw = await readFile(`public${generation.raw.path}`);
 				expect(raw.equals(await readFile(`${generation.source}/raw.png`))).toBe(

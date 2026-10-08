@@ -342,3 +342,18 @@ While porting the local Wrangler proxy patch to 4.145.0, the editable package cr
 ## 2026-10-03 — Validate deployment pins during dependency upgrades
 
 Dependency PR #17 updated the Wrangler manifest, lock and local proxy patch to 4.145.0 but missed the explicit 4.129.0 input in the release workflow. Local checks, independent reviews and PR CI passed; post-merge deployment run 37087123703 then rejected the installed version in Locate locked Wrangler, before migrations or deployment. The duty reopened #16 and paused the next project to fix the pin through a separate reviewed PR. A release contract test now compares the workflow input with both the root manifest and installed package. It first failed on the real 4.129.0 versus 4.145.0 mismatch, then passed after the pin correction. Future dependency review must search deployment consumers as well as manifests, and post-merge CD remains part of acceptance; PR green alone did not prove successful delivery.
+
+## 2026-10-08 — Test ownership and accessibility popup coupling
+
+Archive manifests were walked independently by asset verification, unit tests
+and HTTP tests, while shared browser controls repeated project/device/theme
+matrices. This accumulated cost without independent failure coverage. Keep
+catalogue-wide checksums in asset verification, policy/provenance in unit tests,
+representative transport in HTTP and user behavior in browser journeys.
+
+During cleanup, axe's page scan completed but its blank result page stalled in
+`axeConfigure`. This reproduced with one worker, so more retries or a larger
+timeout would not address the lifecycle coupling. Use the existing axe-core
+engine directly in the page and reject unexpected frames; preserve all default
+rules. Verify the installed frozen dependency graph before measuring tests: the
+initial node_modules still contained older versions than bun.lock.

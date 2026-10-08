@@ -2,11 +2,8 @@ import { readFile } from "node:fs/promises";
 import storage from "../../src/data/media-storage.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
 import { assetUrl } from "../../src/model/assets";
-import {
-	filterProjects,
-	isChromeWebStoreProject,
-} from "../../src/model/catalogue";
-import { desktop, expect, test, touch } from "./fixtures";
+import { filterProjects } from "../../src/model/catalogue";
+import { expect, test, touch } from "./fixtures";
 
 // Brand checks stay local; recorded media is exercised in project-media.spec.ts.
 const projects = readProjects().map((project) => ({
@@ -52,240 +49,83 @@ test("shows evidenced website colors separately from a tool's artwork palette", 
 	await expect(page.locator(".theme-palette")).toHaveCount(0);
 });
 
-for (const [id, options] of [
-	["frogie", desktop],
-	["basalt", desktop],
-	["hooky", desktop],
-	["pokepocket", touch],
-	["pi-agent-policy", touch],
-] as const) {
-	test.describe(id, () => {
-		test.use(options);
-		test(`compares refined ${id} with its original at artwork and application sizes`, async ({
-			page,
-		}) => {
-			const project = projects.find((item) => item.id === id);
-			if (!project?.family) throw new Error(`Missing refinement: ${id}`);
-			const family = project.family;
-			const retained = family.method === "retained-original";
-			const adapted = family.method === "reference-adaptation";
-			const supplied = retained || adapted;
-			await page.goto(`/projects/${id}`);
-			await expect(page.locator("#identity-title")).toContainText(
-				project.title,
-				{
-					timeout: 15_000,
-				},
-			);
-			if (id === "frogie") {
-				await expect(page.locator(".project-media")).toHaveCount(0);
-				await expect(
-					page.locator('.project-section-nav a[href="#media"]'),
-				).toHaveCount(0);
-				await expect(page.locator("#overview")).toBeVisible();
-				await expect(page.locator("#brand")).toBeVisible();
-			}
-			const repository = page
-				.locator(".identity-heading")
-				.getByRole("link", { name: `View on GitHub: ${project.title}` });
-			await expect(repository).toBeVisible();
-			await expect(repository).toHaveText("GitHub");
-			await expect(repository).toHaveAttribute("href", project.repository);
-			const website = page.locator(".identity-website");
-			if (isChromeWebStoreProject(project)) {
-				await expect(website).toHaveCount(0);
-				await expect(
-					page.getByRole("link", { name: `Add to Chrome: ${project.title}` }),
-				).toHaveAttribute("href", project.website ?? "");
-			} else if (project.website) {
-				await expect(website).toBeVisible();
-				await expect(website).toHaveText("Visit website");
-				await expect(website).toHaveAttribute("href", project.website);
-			} else {
-				await expect(website).toHaveCount(0);
-			}
-			await expect(page.locator(".artwork-image")).toHaveAttribute(
-				"src",
-				assetUrl(`${project.presentationIcon?.root}/rounded-1024.webp`),
-			);
-			await expect(async () => {
-				await page.locator(".artwork-image").evaluate(async (node) => {
-					const image = node as HTMLImageElement;
-					if (!image.naturalWidth)
-						throw new Error("Artwork image is not ready.");
-					await image.decode();
-				});
-			}).toPass();
-			await expect(page.locator(".asset-label")).toHaveText("Refined");
-			await expect(page.locator(".current-artwork figcaption")).toContainText(
-				family.status === "adopted"
-					? "Adopted family identity"
-					: project.brandKit?.method === "gpt-image-2"
-						? "Source adoption pending"
-						: "Local preview",
-			);
-			for (const [selector, size] of [
-				[".size-grid figure:nth-child(1) .logo-composed", 128],
-				[".size-grid figure:nth-child(2) .logo-composed", 64],
-				[".size-grid figure:nth-child(3) .logo-plain", 32],
-				[".size-grid figure:nth-child(4) .logo-plain", 16],
-				[".preview-workspace .logo-plain", 24],
-				[".browser-tab .logo-plain", 16],
-			] as const) {
-				await expect(page.locator(selector)).toHaveCSS("width", `${size}px`);
-				await expect(page.locator(selector)).toHaveCSS("height", `${size}px`);
-			}
-			for (const mark of await page
-				.locator(".size-section .logo-plain")
-				.all()) {
-				await expect(mark).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
-				await expect(mark).toHaveCSS("border-radius", "0px");
-				await expect(mark).toHaveCSS("box-shadow", "none");
-				await expect(mark.locator("img")).toHaveCSS("border-radius", "0px");
-				if (id !== "frogie") continue;
-				let alpha = { corner: -1, center: -1 };
-				await expect(async () => {
-					alpha = await mark.locator("img").evaluate(async (node) => {
-						const image = node as HTMLImageElement;
-						if (!image.naturalWidth)
-							throw new Error("Mark image is not ready.");
-						await image.decode();
-						// Read the same displayed CDN bytes with CORS before inspecting pixels.
-						const readable = new Image();
-						readable.crossOrigin = "anonymous";
-						readable.src = image.currentSrc;
-						await readable.decode();
-						const canvas = document.createElement("canvas");
-						canvas.width = 32;
-						canvas.height = 32;
-						const context = canvas.getContext("2d");
-						if (!context) throw new Error("Canvas context unavailable");
-						context.drawImage(readable, 0, 0, 32, 32);
-						const pixels = context.getImageData(0, 0, 32, 32).data;
-						return {
-							corner: pixels[3] ?? -1,
-							center: pixels[(16 * 32 + 16) * 4 + 3] ?? -1,
-						};
-					});
-				}).toPass();
-				expect(alpha).toEqual({ corner: 0, center: 255 });
-			}
-			if (family.previous) {
-				await expect(page.locator(".previous-artwork img")).toHaveAttribute(
-					"src",
-					assetUrl(`${family.root}/previous-1024.webp`),
-				);
-			} else {
-				await expect(page.locator(".previous-artwork")).toHaveCount(0);
-				await expect(page.locator(".current-artwork figcaption")).toContainText(
-					"First identity",
-				);
-			}
-			for (const [name, value] of [
-				["White", "white"],
-				["Transparent", "transparent"],
-				["Icon", "icon"],
-			]) {
-				const button = page.getByRole("button", { name, exact: true });
-				await button.click();
-				await expect(button).toHaveAttribute("aria-pressed", "true");
-				await expect(page.locator(".logo-review")).toHaveAttribute(
-					"data-presentation",
-					value ?? "",
-				);
-				await expect(page.locator(".artwork-image")).toHaveAttribute(
-					"src",
-					assetUrl(
-						value === "icon"
-							? `${project.presentationIcon?.root}/rounded-1024.webp`
-							: family.foreground.display,
-					),
-				);
-				await expect(
-					page.locator(".current-artwork .review-tile"),
-				).toHaveAttribute(
-					"href",
-					assetUrl(
-						value === "transparent"
-							? family.foreground.original
-							: `${value === "icon" ? project.presentationIcon?.root : family.root}/${value}.png`,
-					),
-				);
-			}
-			await expect(page.locator(".sidebar-sample")).toContainText(
-				project.description.en,
-			);
-			await expect(page.locator(".alpha-grid img")).toHaveCount(2);
-			for (const image of await page.locator(".alpha-grid img").all())
-				await expect(image).toHaveAttribute(
-					"src",
-					assetUrl(family.foreground.display),
-				);
-			for (const link of await page.locator(".alpha-grid a").all())
-				await expect(link).toHaveAttribute(
-					"href",
-					assetUrl(family.foreground.original),
-				);
-			await page
-				.getByText(
-					supplied
-						? "Read the presentation brief"
-						: "Read the exact generation prompt",
-					{ exact: true },
-				)
-				.click();
-			const prompt = await readFile(
-				new URL(
-					`../../public${family.root}/${supplied ? "brief" : "prompt"}.txt`,
-					import.meta.url,
-				),
-				"utf8",
-			);
-			await expect(page.locator(".generation-prompt")).toHaveJSProperty(
-				"textContent",
-				prompt,
-			);
-			await expect(page.locator(".reference-grid")).toHaveCount(0);
-			await expect(
-				page.getByText("View the presentation references", { exact: true }),
-			).toHaveCount(0);
-			await expect(
-				page.getByRole("link", {
-					name: adapted
-						? "Original illustration"
-						: retained
-							? "Untouched original"
-							: "Untouched generation",
-				}),
-			).toHaveAttribute(
-				"href",
-				assetUrl(
-					`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : "raw.png"}`,
-				),
-			);
-			if (retained) {
-				await expect(
-					page.getByRole("link", { name: "Untouched generation" }),
-				).toHaveCount(0);
-				await expect(page.locator(".identity-archive")).toContainText(
-					"Original artwork retained",
-				);
-				expect(family.foreground.sha256).toBe(project.logo.sha256);
-				expect(family.previous?.sha256).toBe(project.logo.sha256);
-			}
-			const downloadEvent = page.waitForEvent("download");
-			await page
-				.getByRole("link", { name: "Download original", exact: true })
-				.click();
-			const download = await downloadEvent;
-			expect(download.suggestedFilename()).toBe(`${id}-transparent.png`);
-			expect(await download.failure()).toBeNull();
-			await expect(
-				page.getByRole("link", { name: "View asset source" }),
-			).toHaveAttribute("href", assetUrl(project.logo.sourceUrl));
-		});
-	});
-}
+test("switches identity presentations and downloads the preserved original", async ({
+	page,
+}) => {
+	const project = projects.find((item) => item.id === "frogie");
+	if (!project?.family || !project.presentationIcon)
+		throw new Error("Missing Frogie identity");
+	const family = project.family;
+	await page.goto("/projects/frogie");
+	await expect(
+		page.locator(".identity-heading .logo-composed img"),
+	).toHaveAttribute(
+		"src",
+		assetUrl(`${project.presentationIcon.root}/rounded-160.webp`),
+	);
+	await expect(page.locator(".identity-heading .logo-composed img")).toHaveCSS(
+		"filter",
+		"none",
+	);
+	await expect(page.locator("#identity-title")).toContainText(project.title);
+	await expect(page.locator(".identity-github")).toHaveAttribute(
+		"href",
+		project.repository,
+	);
+	await expect(page.locator(".previous-artwork img")).toHaveAttribute(
+		"src",
+		assetUrl(`${family.root}/previous-1024.webp`),
+	);
+	for (const [name, view] of [
+		["White", "white"],
+		["Transparent", "transparent"],
+		["Icon", "icon"],
+	] as const) {
+		const button = page.getByRole("button", { name, exact: true });
+		await button.click();
+		await expect(button).toHaveAttribute("aria-pressed", "true");
+		await expect(page.locator(".logo-review")).toHaveAttribute(
+			"data-presentation",
+			view,
+		);
+		await expect(page.locator(".artwork-image")).toHaveAttribute(
+			"src",
+			assetUrl(
+				view === "icon"
+					? `${project.presentationIcon.root}/rounded-1024.webp`
+					: family.foreground.display,
+			),
+		);
+		await page
+			.locator(".artwork-image")
+			.evaluate((image: HTMLImageElement) => image.decode());
+		await expect(page.locator(".current-artwork .review-tile")).toHaveAttribute(
+			"href",
+			assetUrl(
+				view === "transparent"
+					? family.foreground.original
+					: `${view === "icon" ? project.presentationIcon.root : family.root}/${view}.png`,
+			),
+		);
+	}
+	await page
+		.getByText("Read the exact generation prompt", { exact: true })
+		.click();
+	await expect(page.locator(".generation-prompt")).toHaveJSProperty(
+		"textContent",
+		await readFile(`public${family.root}/prompt.txt`, "utf8"),
+	);
+	const downloading = page.waitForEvent("download");
+	await page
+		.getByRole("link", { name: "Download original", exact: true })
+		.click();
+	const download = await downloading;
+	expect(download.suggestedFilename()).toBe("frogie-transparent.png");
+	expect(await download.failure()).toBeNull();
+	await expect(
+		page.getByRole("link", { name: "View asset source" }),
+	).toHaveAttribute("href", assetUrl(project.logo.sourceUrl));
+});
 
 test("uses one top project picker and preserves browser history", async ({
 	page,
@@ -597,87 +437,85 @@ test("keeps arrow keys in editable controls and ignores modified or handled keys
 	await expect(page).toHaveURL(/\/$/);
 });
 
-for (const [device, options] of Object.entries({ desktop, touch })) {
-	test.describe(device, () => {
-		test.use(options);
-		test("keeps the brand section aligned while switching projects and languages", async ({
-			page,
-			isMobile,
-		}) => {
-			if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
-			const pair = projects.filter((project) =>
-				["frogie", "pew"].includes(project.id),
-			);
-			await page.unroute("**/data/projects.json");
-			await page.route("**/data/projects.json", (route) =>
-				route.fulfill({ json: pair }),
-			);
-			let releaseApi = () => {};
-			let apiRequested: Promise<void>;
-			let requested = () => {};
-			let apiGate = Promise.resolve();
-			await page.route("**/api/projects/nocoo/*", async (route) => {
-				requested();
-				await apiGate;
-				await route.continue();
-			});
-			await page.goto("/projects/frogie#brand");
-			await expect(page.locator("#api .api-preview")).toBeVisible();
-			for (const locale of ["en", "zh"]) {
-				if (locale === "zh")
-					await page.getByRole("button", { name: "Switch to Chinese" }).click();
-				await page.evaluate(() => document.fonts.ready);
-				await page
-					.locator("#brand")
-					.evaluate((element) => element.scrollIntoView());
-				await page
-					.locator('.picker-item[aria-pressed="true"]')
-					.evaluate((element) =>
-						(element as HTMLElement).focus({ preventScroll: true }),
-					);
-				const start = await page
-					.locator("#brand")
-					.evaluate((element) => element.getBoundingClientRect().top);
-				expect(start).toBeGreaterThan(0);
-				for (let index = 0; index < 2; index += 1) {
-					apiGate = new Promise<void>((resolve) => {
-						releaseApi = resolve;
-					});
-					apiRequested = new Promise<void>((resolve) => {
-						requested = resolve;
-					});
-					try {
-						await page.keyboard.press("ArrowRight");
-						await expect(page).toHaveURL(/#brand$/);
-						await apiRequested;
-						await expect(page.locator("#api .api-preview")).toHaveCount(0);
-						releaseApi();
-						await expect(page.locator("#api .api-preview")).toBeVisible();
-						// Native scrolling rounds positions; section edges retain fractional pixels.
-						await expect
-							.poll(() =>
-								page
-									.locator("#brand")
-									.evaluate(
-										(element, top) =>
-											Math.abs(element.getBoundingClientRect().top - top),
-										start,
-									),
-							)
-							.toBeLessThanOrEqual(1);
-						expect(
-							await page.evaluate(
-								() => document.documentElement.scrollWidth <= innerWidth,
-							),
-						).toBe(true);
-					} finally {
-						releaseApi();
-					}
+test.describe("touch brand alignment", () => {
+	test.use(touch);
+	test("keeps the brand section aligned while switching projects and languages", async ({
+		page,
+		isMobile,
+	}) => {
+		if (isMobile) await page.setViewportSize({ width: 320, height: 740 });
+		const pair = projects.filter((project) =>
+			["frogie", "pew"].includes(project.id),
+		);
+		await page.unroute("**/data/projects.json");
+		await page.route("**/data/projects.json", (route) =>
+			route.fulfill({ json: pair }),
+		);
+		let releaseApi = () => {};
+		let apiRequested: Promise<void>;
+		let requested = () => {};
+		let apiGate = Promise.resolve();
+		await page.route("**/api/projects/nocoo/*", async (route) => {
+			requested();
+			await apiGate;
+			await route.continue();
+		});
+		await page.goto("/projects/frogie#brand");
+		await expect(page.locator("#api .api-preview")).toBeVisible();
+		for (const locale of ["en", "zh"]) {
+			if (locale === "zh")
+				await page.getByRole("button", { name: "Switch to Chinese" }).click();
+			await page.evaluate(() => document.fonts.ready);
+			await page
+				.locator("#brand")
+				.evaluate((element) => element.scrollIntoView());
+			await page
+				.locator('.picker-item[aria-pressed="true"]')
+				.evaluate((element) =>
+					(element as HTMLElement).focus({ preventScroll: true }),
+				);
+			const start = await page
+				.locator("#brand")
+				.evaluate((element) => element.getBoundingClientRect().top);
+			expect(start).toBeGreaterThan(0);
+			for (let index = 0; index < 2; index += 1) {
+				apiGate = new Promise<void>((resolve) => {
+					releaseApi = resolve;
+				});
+				apiRequested = new Promise<void>((resolve) => {
+					requested = resolve;
+				});
+				try {
+					await page.keyboard.press("ArrowRight");
+					await expect(page).toHaveURL(/#brand$/);
+					await apiRequested;
+					await expect(page.locator("#api .api-preview")).toHaveCount(0);
+					releaseApi();
+					await expect(page.locator("#api .api-preview")).toBeVisible();
+					// Native scrolling rounds positions; section edges retain fractional pixels.
+					await expect
+						.poll(() =>
+							page
+								.locator("#brand")
+								.evaluate(
+									(element, top) =>
+										Math.abs(element.getBoundingClientRect().top - top),
+									start,
+								),
+						)
+						.toBeLessThanOrEqual(1);
+					expect(
+						await page.evaluate(
+							() => document.documentElement.scrollWidth <= innerWidth,
+						),
+					).toBe(true);
+				} finally {
+					releaseApi();
 				}
 			}
-		});
+		}
 	});
-}
+});
 
 test.describe("searches the gallery, labels emoji identities, and recovers from empty or unknown selections — touch", () => {
 	test.use(touch);

@@ -1,5 +1,5 @@
-import AxeBuilder from "@axe-core/playwright";
 import { readProjects } from "../../src/data/read-projects";
+import { scanAccessibility } from "./accessibility";
 import { desktop, expect, test, touch } from "./fixtures";
 
 const projects = readProjects();
@@ -100,10 +100,7 @@ for (const [id, readmes, theme, options] of [
 						() => document.documentElement.scrollWidth <= innerWidth,
 					),
 				).toBe(true);
-				const scan = await new AxeBuilder({ page })
-					.include(".project-overview")
-					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-					.analyze();
+				const scan = await scanAccessibility(page, ".project-overview");
 				expect(scan.violations).toEqual([]);
 			}
 		});

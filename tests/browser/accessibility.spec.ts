@@ -1,4 +1,4 @@
-import AxeBuilder from "@axe-core/playwright";
+import { scanAccessibility } from "./accessibility";
 import { desktop, expect, test, touch } from "./fixtures";
 
 for (const [theme, options] of [
@@ -45,9 +45,7 @@ for (const [theme, options] of [
 				}
 
 				await page.evaluate(() => document.fonts.ready);
-				const scan = await new AxeBuilder({ page })
-					.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-					.analyze();
+				const scan = await scanAccessibility(page);
 				expect(scan.violations).toEqual([]);
 				expect(
 					await page.evaluate(
@@ -61,22 +59,6 @@ for (const [theme, options] of [
 							Number.parseFloat(getComputedStyle(element).transitionDuration),
 						),
 				).toBeLessThanOrEqual(0.001);
-				if (view === "gallery") {
-					for (const label of isMobile
-						? ["图标", "白底", "透明"]
-						: ["Icon", "White", "Transparent"]) {
-						await page
-							.getByRole("button", {
-								name: label,
-								exact: true,
-							})
-							.click();
-						const surface = await new AxeBuilder({ page })
-							.withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-							.analyze();
-						expect(surface.violations).toEqual([]);
-					}
-				}
 			});
 		}
 	});

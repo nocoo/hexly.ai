@@ -27,56 +27,57 @@ test("publishes the scoped schema and all retained brand archives through canoni
 		);
 });
 
-for (const id of ["frogie", "basalt", "neo", "pokepocket", "pi-agent-policy"]) {
-	const project = targets.find((project) => project.id === id);
-	if (!project) throw new Error(`Missing transport representative: ${id}`);
-	test(`${project.id} serves exact campaign files, original identity and compatible historical URLs`, async ({
-		request,
-	}) => {
-		const kit = project.brandKit;
-		if (!kit || !project.family) throw new Error("Incomplete target archive");
-		const response = await request.get(`${kit.root}/manifest.json`);
-		expect(response.status()).toBe(200);
-		const manifest = await response.json();
-		expect(brandManifestProblems(manifest)).toEqual([]);
-		for (const file of manifest.files) {
-			const asset = await request.get(file.path);
-			expect(asset.status(), file.path).toBe(200);
-			expect(asset.headers()["cache-control"], file.path).toContain(
-				"immutable",
-			);
-			const body = await asset.body();
-			expect(body.byteLength, file.path).toBe(file.bytes);
-			expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
-				file.sha256,
-			);
-			if (file.path.endsWith(".svg"))
-				expect(asset.headers()["content-type"]).toContain("image/svg+xml");
-			await asset.dispose();
-		}
-		const original = await request.get(project.logo.original);
-		expect(original.status()).toBe(200);
-		expect(
-			createHash("sha256")
-				.update(await original.body())
-				.digest("hex"),
-		).toBe(project.logo.sha256);
-		const historical = await request.get(
-			`${project.family.root}/manifest.json`,
+const id = "frogie";
+const project = targets.find((project) => project.id === id);
+if (!project) throw new Error(`Missing transport representative: ${id}`);
+test(`${project.id} serves exact campaign files, original identity and compatible historical URLs`, async ({
+	request,
+}) => {
+	const kit = project.brandKit;
+	if (!kit || !project.family) throw new Error("Incomplete target archive");
+	const response = await request.get(`${kit.root}/manifest.json`);
+	expect(response.status()).toBe(200);
+	const manifest = await response.json();
+	expect(brandManifestProblems(manifest)).toEqual([]);
+	const files = manifest.files.filter((file: { path: string }) =>
+		["/logo.png", "/wordmark-light.svg"].some((suffix) =>
+			file.path.endsWith(suffix),
+		),
+	);
+	expect(files).toHaveLength(2);
+	for (const file of files) {
+		const asset = await request.get(file.path);
+		expect(asset.status(), file.path).toBe(200);
+		expect(asset.headers()["cache-control"], file.path).toContain("immutable");
+		const body = await asset.body();
+		expect(body.byteLength, file.path).toBe(file.bytes);
+		expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
+			file.sha256,
 		);
-		expect(historical.status()).toBe(200);
-		const page = await request.get(`/projects/${project.id}`);
-		expect(page.status()).toBe(200);
-		expect(await page.text()).toContain(
-			`https://hexly.ai/projects/${project.id}`,
-		);
-		const legacy = await request.get(`/logos/${project.id}`, {
-			maxRedirects: 0,
-		});
-		expect(legacy.status()).toBe(301);
-		const location = new URL(legacy.headers().location ?? "", legacy.url());
-		expect(`${location.pathname}${location.hash}`).toBe(
-			`/projects/${project.id}#brand`,
-		);
+		if (file.path.endsWith(".svg"))
+			expect(asset.headers()["content-type"]).toContain("image/svg+xml");
+		await asset.dispose();
+	}
+	const original = await request.get(project.logo.original);
+	expect(original.status()).toBe(200);
+	expect(
+		createHash("sha256")
+			.update(await original.body())
+			.digest("hex"),
+	).toBe(project.logo.sha256);
+	const historical = await request.get(`${project.family.root}/manifest.json`);
+	expect(historical.status()).toBe(200);
+	const page = await request.get(`/projects/${project.id}`);
+	expect(page.status()).toBe(200);
+	expect(await page.text()).toContain(
+		`https://hexly.ai/projects/${project.id}`,
+	);
+	const legacy = await request.get(`/logos/${project.id}`, {
+		maxRedirects: 0,
 	});
-}
+	expect(legacy.status()).toBe(301);
+	const location = new URL(legacy.headers().location ?? "", legacy.url());
+	expect(`${location.pathname}${location.hash}`).toBe(
+		`/projects/${project.id}#brand`,
+	);
+});

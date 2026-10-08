@@ -4,7 +4,7 @@ import retiredSnail from "../../docs/sources/snail-retired-2026-09-13.json" with
 	type: "json",
 };
 
-test("serves every versioned Snail asset with the published checksum and immutable caching", async ({
+test("serves retained raster and vector archives with exact bytes and immutable caching", async ({
 	request,
 }) => {
 	const project = retiredSnail;
@@ -21,18 +21,21 @@ test("serves every versioned Snail asset with the published checksum and immutab
 			version,
 			method,
 		});
-		for (const file of manifest.files) {
-			const response = await request.get(file.path);
-			expect(response.status(), file.path).toBe(200);
-			expect(response.headers()["cache-control"]).toContain("immutable");
-			if (file.path.endsWith(".svg"))
-				expect(response.headers()["content-type"]).toContain("image/svg+xml");
-			const body = await response.body();
-			expect(body.byteLength).toBe(file.bytes);
-			expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
-				file.sha256,
-			);
-		}
+		const path = `${root}/${method === "original-vector" ? "icon-light.svg" : "logo.png"}`;
+		const file = manifest.files.find(
+			(file: { path: string }) => file.path === path,
+		);
+		if (!file) throw new Error(`Missing transport fixture: ${path}`);
+		const response = await request.get(file.path);
+		expect(response.status(), file.path).toBe(200);
+		expect(response.headers()["cache-control"]).toContain("immutable");
+		if (file.path.endsWith(".svg"))
+			expect(response.headers()["content-type"]).toContain("image/svg+xml");
+		const body = await response.body();
+		expect(body.byteLength).toBe(file.bytes);
+		expect(createHash("sha256").update(body).digest("hex"), file.path).toBe(
+			file.sha256,
+		);
 	}
 });
 
