@@ -173,7 +173,6 @@ export const copy = {
 		openOriginal: "Open full-size image",
 		download: "Download original",
 		downloadEmoji: "Download identity",
-		share: "Copy project link",
 		sizes: "Small details, big personality.",
 		sizesDescription:
 			"Backgrounds for app tiles; transparent marks for small UI.",
@@ -344,7 +343,6 @@ export const copy = {
 		openOriginal: "打开原尺寸图像",
 		download: "下载原图",
 		downloadEmoji: "下载标识",
-		share: "复制项目链接",
 		sizes: "小小细节，也有自己的样子。",
 		sizesDescription: "大图保留背景，侧栏与浏览器标签使用透明主体。",
 		appIcon: "应用图标",

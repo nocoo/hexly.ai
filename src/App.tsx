@@ -203,7 +203,7 @@ export function App() {
 			["detail", "downloads", "integration"].includes(state.anchor ?? "");
 		if (projectChanged) {
 			const frame = requestAnimationFrame(() =>
-				window.scrollTo({ top: 0, behavior: "instant" }),
+				window.scrollTo({ top: 0, behavior: "auto" }),
 			);
 			return () => cancelAnimationFrame(frame);
 		}

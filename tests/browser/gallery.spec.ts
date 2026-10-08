@@ -26,11 +26,7 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 	await expect(page.locator(".screenshot-card")).toHaveCount(5);
 	await expect(page.locator(".project-overview .tech-name")).toHaveCount(7);
 	await expect(page.locator("#api")).toHaveCount(0);
-	await expect(
-		page
-			.locator(".identity-links")
-			.getByRole("button", { name: "Copy project link" }),
-	).toBeVisible();
+	await expect(page.locator(".identity-share")).toHaveCount(0);
 	const overview = page.getByRole("tab", {
 		name: "Project Detail",
 		exact: true,
@@ -378,10 +374,7 @@ test("offers the official installation badge in light, dark and Chinese", async 
 	);
 });
 
-test("copies current palette colors and a reusable gallery link", async ({
-	page,
-	context,
-}) => {
+test("copies current palette colors", async ({ page, context }) => {
 	await context.grantPermissions(["clipboard-read", "clipboard-write"]);
 	await page.goto("/projects/pew#brand");
 	await page
@@ -391,12 +384,6 @@ test("copies current palette colors and a reusable gallery link", async ({
 	expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
 		"#bfb2cf",
 	);
-	await page.getByRole("button", { name: "Copy project link" }).click();
-	const link = await page.evaluate(() => navigator.clipboard.readText());
-	expect(new URL(link).pathname).toBe("/projects/pew");
-	expect(new URL(link).search).toBe("");
-	await page.goto(link);
-	await expect(page.locator("#identity-title")).toContainText("Pew");
 });
 
 test("browses filtered identities with arrow keys, wraps, and preserves history", async ({
@@ -535,10 +522,38 @@ test.describe("touch project switching", () => {
 			page.getByRole("tab", { name: "Project Detail", exact: true }),
 		).toHaveAttribute("aria-selected", "true");
 		await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+		await page.emulateMedia({ reducedMotion: "no-preference" });
+		await expect(page.locator("html")).toHaveCSS("scroll-behavior", "smooth");
 		await page.locator("#brand").scrollIntoViewIfNeeded();
-		await page.locator(".identity-github").focus();
-		await page.keyboard.press("ArrowRight");
+		await page
+			.locator(".picker-item[aria-pressed=true]")
+			.evaluate((element) =>
+				(element as HTMLElement).focus({ preventScroll: true }),
+			);
+		const positions = await page.evaluate(async () => {
+			const samples = [scrollY];
+			const record = () => samples.push(scrollY);
+			addEventListener("scroll", record);
+			document.querySelector(".picker-item[aria-pressed=true]")?.dispatchEvent(
+				new KeyboardEvent("keydown", {
+					key: "ArrowRight",
+					bubbles: true,
+					cancelable: true,
+				}),
+			);
+			await new Promise<void>((resolve) => {
+				let frames = 0;
+				const sample = () => {
+					if ((frames++ > 10 && scrollY === 0) || frames > 180) resolve();
+					else requestAnimationFrame(sample);
+				};
+				requestAnimationFrame(sample);
+			});
+			removeEventListener("scroll", record);
+			return samples;
+		});
 		await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+		expect(new Set(positions).size).toBeGreaterThan(3);
 	});
 });
 

@@ -317,16 +317,6 @@ export function ProjectDetail({
 									GitHub
 									<Icon name="arrow" />
 								</AssetLink>
-								<button
-									className="button button-secondary identity-share"
-									type="button"
-									onClick={() =>
-										onCopy(`${window.location.origin}/projects/${project.id}`)
-									}
-								>
-									<Icon name="link" />
-									{t.share}
-								</button>
 							</div>
 						</div>
 					</div>
