@@ -31,9 +31,10 @@ for (const project of projects) {
 		const manifest = JSON.parse(
 			await readFile(`public${icon.root}/manifest.json`, "utf8"),
 		);
-		const texturePath = project.brandTexture
-			? `${project.brandTexture.root}/texture-light.png`
-			: `${project.family?.root}/background.png`;
+		const texturePath =
+			manifest.texture.sourceMethod === "authored-family-background"
+				? `${project.family?.root}/background.png`
+				: `${project.brandTexture?.root}/texture-light.png`;
 		if (
 			manifest.project !== project.id ||
 			manifest.version !== icon.version ||

@@ -64,6 +64,16 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
 
+## Current campaign texture
+
+- Savanna leaf margins / 草原叶缘: Sparse small savanna tree leaflets and gently curved stems around a quiet paper-like field.
+- 稀树草原的小叶与弯曲枝梗疏落在边缘，中央保留安静纸面。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/rhino/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/rhino/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/rhino/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/rhino/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/rhino/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/rhino/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/rhino/v1.0.1/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Refined identity
 
 ![Rhino refined preview](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/icon-160.webp)

@@ -1,0 +1,113 @@
+{
+	"project": "rhino",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Savanna leaf margins", "zh": "草原叶缘" },
+		"description": {
+			"en": "Sparse small savanna tree leaflets and gently curved stems around a quiet paper-like field.",
+			"zh": "稀树草原的小叶与弯曲枝梗疏落在边缘，中央保留安静纸面。"
+		},
+		"motif": "Broad plausible savanna habitat, small oval compound leaflets and slim curved woody stems concentrated at lower and right margins. No flowers, tropical monstera, animals or orange accent.",
+		"rationale": "The approved rhinoceros identity does not establish an exact species. A broad savanna foliage analogy is plausible without a species-specific biological claim. The orange horn remains the only strong identity accent."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/rhino.json",
+		"purpose": {
+			"en": "Personal fitness planning and training journal",
+			"zh": "个人健身计划与训练记录"
+		},
+		"inspectedRevision": "2dc90672ddb50eac2d347140823b1ecaa3c577d0"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/rhino-family-2026-10-09-03-02.png",
+		"sha256": "d06b2ab605fc05981ddc236e0a705f2147dc0b2a96184eba2715df7c8336b26a",
+		"rgbaSha256": "28b892c605cc4782eafb4b9a660059d876af0e174da09a1318e10a1ac13b2b6a",
+		"source": "https://github.com/nocoo/rhino/blob/2dc90672ddb50eac2d347140823b1ecaa3c577d0/logo.png",
+		"bytes": 2759949,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-09-sleepy-rhino/revision-01.json",
+	"sourceInventorySha256": "b89009edcf766923c78509b478363068ea8ef8d720d639aa1a102b1c556fce59",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "67c204fb-473f-4bf2-b1fd-70053476097d",
+			"source": "artwork/brands/rhino/texture-studies/2026-10-09-flare-onboarding-01/light",
+			"request": "/textures/rhino/v1.0.1/source-light-request.json",
+			"response": "/textures/rhino/v1.0.1/source-light-response.json",
+			"prompt": "/textures/rhino/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/rhino/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/rhino/v1.0.1/texture-light.png",
+				"sha256": "e355e151c6fad0d73eb0534fdccc99416e453d95e6331f491b5f4273169fe190",
+				"bytes": 1621359,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "577725ec-f3db-441a-a2b6-b01aa9078f45",
+			"source": "artwork/brands/rhino/texture-studies/2026-10-09-flare-onboarding-01/dark",
+			"request": "/textures/rhino/v1.0.1/source-dark-request.json",
+			"response": "/textures/rhino/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/rhino/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/rhino/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/rhino/v1.0.1/texture-dark.png",
+				"sha256": "7f89f90769a2e1ea9bedcda347eeae15d547451043c3e3a39d25a168f8efd916",
+				"bytes": 1653565,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.785177418160674,
+		"darkMinimum": 5.1034944602237164,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-09T06:38:57.617Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

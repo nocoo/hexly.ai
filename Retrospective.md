@@ -418,3 +418,14 @@ diagnostic passes remain immutable. The selected fourth pass uses measured
 exterior-connected threshold 243 without component deletion or a protection
 polygon, checked on dark and light. Do not treat a plausible mask as verified:
 inspect pale material boundaries and every detached region before source adoption.
+
+## 2026-10-09 - Validate texture records before immutable publication
+
+The first Sleepy/Rhino texture packs were uploaded before the complete unit and
+asset checks finished. Tests then rejected missing explicit inspection fields,
+and the asset verifier incorrectly expected an icon's authored family background
+to change when an independent texture pack was selected. Preserve already
+published v1.0.0 bytes; export corrected review metadata as v1.0.1 and select it
+only after validation. Resolve icon background provenance by its recorded source
+method, not a newer independent decorative surface. Complete local validation
+before publishing any new immutable package; never repair it by overwriting R2.

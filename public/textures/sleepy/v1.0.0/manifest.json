@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "sleepy",
+	"version": "1.0.0",
+	"root": "/textures/sleepy/v1.0.0",
+	"canonical": "https://hexly.ai/projects/sleepy#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/sleepy/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Clothbound quiet", "zh": "布面静读" },
+		"description": {
+			"en": "Fine bookcloth weave and loose paper fibers, with shallow bookbinding impressions and generous quiet space.",
+			"zh": "细密书布织纹、疏松纸纤维与浅浅装帧压痕，为安静阅读留出空白。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.44
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/sleepy-family-2026-10-09-02-04.png",
+		"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b",
+		"rgbaSha256": "0ccc22584a79d65b048b0ffc4cba2fb29b9a98330ef9e7341755dd3b160dd187",
+		"source": "https://github.com/nocoo/sleepy/blob/499603af59cd868669611d3cdad6b8c0b4394e6f/logo.png",
+		"bytes": 4251999,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d51ce9be-71ca-4089-ba31-53e0acad7624",
+			"source": "artwork/brands/sleepy/texture-studies/2026-10-09-flare-onboarding-01/light",
+			"request": "/textures/sleepy/v1.0.0/source-light-request.json",
+			"response": "/textures/sleepy/v1.0.0/source-light-response.json",
+			"prompt": "/textures/sleepy/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/sleepy/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/sleepy/v1.0.0/texture-light.png",
+				"sha256": "3a5186d319a94c7b71d060228ab591065e162f160fe208d8c38fc4cc1fc9f260",
+				"bytes": 1989240,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4df7fb6d-0a4e-4707-b171-290e3e03355d",
+			"source": "artwork/brands/sleepy/texture-studies/2026-10-09-flare-onboarding-01/dark-attempt-02",
+			"request": "/textures/sleepy/v1.0.0/source-dark-request.json",
+			"response": "/textures/sleepy/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/sleepy/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/sleepy/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/sleepy/v1.0.0/texture-dark.png",
+				"sha256": "e98ffd7e7eaf379bc37d5fdb2208c5e770284d69a69d4be205d727dcd3adda42",
+				"bytes": 1942325,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1989240,
+			"sha256": "3a5186d319a94c7b71d060228ab591065e162f160fe208d8c38fc4cc1fc9f260"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 316448,
+			"sha256": "0646a9cbf65d6020c50021b249e1eff5a4a971797ec2407d7ea999387db1c8f3"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5164,
+			"sha256": "35f9d9711ad3c2c43b287cf3d9171d7af4e764c1a42faeb458d329b2f924d1c0"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 880,
+			"sha256": "8c1963f20f6fe7e2cbdce9c4e48a4524b884ae7b3be52788d46e9b140139d069"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "3264bb81481909e5d89543a882ecd0bab51dc40c27e69ec3671092d1b8f09cf6"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "7a444460b4fb9b6337d8740a8d06c53d16659a09d1c8524c4a9129ff7191e850"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 894,
+			"sha256": "3cb466c0566850911af014bb969edc8a02105c82809f9e114082b4e1d3f7e97a"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1942325,
+			"sha256": "e98ffd7e7eaf379bc37d5fdb2208c5e770284d69a69d4be205d727dcd3adda42"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 306526,
+			"sha256": "ad2f77aa599e9f9600fb3551692bd8297d9f18ca17d1049c3b399e021bfc25fa"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13080,
+			"sha256": "f39d41000c6c17860e05b8b4c253643f09739e56e76fb390cbdc85c5452f6ea0"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 740,
+			"sha256": "b759249bc115caf07474dc19872fa5fef061073769eec3bd6b82d54a2f64d517"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "be676e02909f993864b10a717105cce016f8eb5da0034b6e0cd483525905e558"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "0b2b4dd61dec5716a4a71aecd28d76621ef049c44724f6cbea6a4020006d531b"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 901,
+			"sha256": "c45c72455ae1af82e404908c6cc2ddcf1ea05f3ea60600430e6cc52c137974d2"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4663,
+			"sha256": "07b18811dbd4464b2420fb3d39305573cd9cc1746dd96d340b96923ca7b94d79"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1104,
+			"sha256": "931d1ea5ba034b043bb2341c7d8d66c9d17b9207cac508b9a5ee2ed87c853158"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1759,
+			"sha256": "754d3f12d8e19c848c90503ca1d59bbcae65a09d1a395e7b5f93fc15761ab929"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2514,
+			"sha256": "541c5e2d9896913dd9e54b62d19372599a0099eae51179518cf8e0cf5ec01ae5"
+		},
+		{
+			"path": "/textures/sleepy/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3508,
+			"sha256": "e86c3ee2f28cb0d18e184752f32bf6bc84422cdf87064279f5c6602b20f7ed2b"
+		}
+	]
+}

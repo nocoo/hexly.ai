@@ -13,6 +13,13 @@ describe("sleepy and rhino onboarding", () => {
 			expect(project?.family?.status).toBe("adopted");
 			expect(project?.family?.model).toBe("gpt-image-2.5-sunburst");
 			expect(project?.logo.sha256).toBe(project?.family?.foreground.sha256);
+			expect(project?.brandTexture).toMatchObject({
+				root: `/textures/${id}/v1.0.1`,
+				scope: "hexly-campaign",
+				model: "gpt-image-2.5-flare",
+				format: "webp",
+				display: "single",
+			});
 			expect(project?.overview?.verified.snapshot?.path).toBe(
 				`docs/sources/${id}-2026-10-09.json`,
 			);
