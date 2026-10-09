@@ -25,6 +25,13 @@ test("navigates to status, filters services, and inspects hourly history and the
 	await expect(page).toHaveTitle("Service status — hexly.ai");
 	await expect(page.locator(".status-demo")).toBeVisible();
 	await expect(page.locator(".status-service")).toHaveCount(targets.length);
+	expect(
+		await page
+			.locator(".status-service")
+			.evaluateAll((elements) =>
+				elements.map((element) => element.getAttribute("data-service")),
+			),
+	).toEqual(targets.map((target) => target.id));
 	await page.getByRole("button", { name: /Needs attention/ }).click();
 	await expect(page.locator(".status-service")).toHaveCount(5);
 	await page.getByRole("button", { name: /All services/ }).click();

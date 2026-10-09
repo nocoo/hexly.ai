@@ -18,6 +18,7 @@ const curatedOrder = new Map<string, number>(
 					(a.stars === 0 && b.stars === 0 ? b.commits - a.commits : 0),
 			)
 			.map((project) => project.id),
+		...projectOrder.animalTail,
 		...projectOrder.templates,
 		...projectOrder.games,
 	].map((id, position) => [id, position]),

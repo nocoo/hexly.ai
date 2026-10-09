@@ -416,27 +416,13 @@ export function StatusPage({
 				: hasUnknown
 					? t.staleDescription
 					: t.allGoodDescription;
-	const priority: Record<DisplayStatus, number> = {
-		down: 0,
-		degraded: 1,
-		unconfigured: 2,
-		unknown: 3,
-		operational: 4,
-	};
-	const visible = services
-		.filter(
-			({ site, status }) =>
-				(filter === "all" || status !== "operational") &&
-				`${site.title} ${site.website} ${site.project.description[locale]}`
-					.toLocaleLowerCase()
-					.includes(query.trim().toLocaleLowerCase()),
-		)
-		.sort(
-			(a, b) =>
-				a.site.trailingOrder - b.site.trailingOrder ||
-				priority[a.status] - priority[b.status] ||
-				a.site.title.localeCompare(b.site.title),
-		);
+	const visible = services.filter(
+		({ site, status }) =>
+			(filter === "all" || status !== "operational") &&
+			`${site.title} ${site.website} ${site.project.description[locale]}`
+				.toLocaleLowerCase()
+				.includes(query.trim().toLocaleLowerCase()),
+	);
 	const attention = services.length - counts.operational;
 
 	return (
