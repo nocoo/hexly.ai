@@ -1,0 +1,30 @@
+{
+	"recordedAt": "2026-10-09T06:58:14.943282+00:00",
+	"adoptionRevision": "37b8fa75",
+	"selectedTextureVersion": "1.0.1",
+	"verification": {
+		"command": "bun run verify",
+		"seconds": 269.3,
+		"unitTests": 395,
+		"httpTests": 28,
+		"browserTests": 75,
+		"coverage": {
+			"statements": 99.54,
+			"branches": 98.53,
+			"functions": 100,
+			"lines": 100
+		},
+		"historicalAssets": "bun run assets:check passed;118 finishing passes;70 public family archives"
+	},
+	"r2": {
+		"newInventoriedPaths": 85,
+		"newImmutableObjects": 81,
+		"sleepyFullProjectObjectsVerified": 242,
+		"rhinoFullProjectObjectsVerified": 160,
+		"verification": "Full public bytes and MIME; scope all",
+		"receipt": "docs/assets/publication.jsonl",
+		"overwrittenObjects": 0
+	},
+	"sourceRepositories": "Owner-controlled; no further operations authorized or performed",
+	"sitePublication": "Owner authorized Hexly release; pending release script evidence"
+}
