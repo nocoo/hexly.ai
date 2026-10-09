@@ -1,0 +1,113 @@
+{
+	"project": "sleepy",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-material",
+		"name": { "en": "Clothbound quiet", "zh": "布面静读" },
+		"description": {
+			"en": "Fine bookcloth weave and loose paper fibers, with shallow bookbinding impressions and generous quiet space.",
+			"zh": "细密书布织纹、疏松纸纤维与浅浅装帧压痕，为安静阅读留出空白。"
+		},
+		"motif": "Orthographic continuous bookcloth and uncoated paper working surface, fine warp and weft, scattered paper fibers and shallow binding crease impressions. No botanical ornaments or literal books.",
+		"rationale": "The owner-approved physical poetry book identity and Chinese poetry reader suggest bookbinding material, not animal habitat foliage."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/sleepy.json",
+		"purpose": {
+			"en": "Quiet Chinese poetry reading for parents and children",
+			"zh": "陪伴亲子阅读的安静古诗阅读器"
+		},
+		"inspectedRevision": "499603af59cd868669611d3cdad6b8c0b4394e6f"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/sleepy-family-2026-10-09-02-04.png",
+		"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b",
+		"rgbaSha256": "0ccc22584a79d65b048b0ffc4cba2fb29b9a98330ef9e7341755dd3b160dd187",
+		"source": "https://github.com/nocoo/sleepy/blob/499603af59cd868669611d3cdad6b8c0b4394e6f/logo.png",
+		"bytes": 4251999,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-09-sleepy-rhino/inventory.json",
+	"sourceInventorySha256": "c86d0259597e42c64b4418f9ba4139633319a9ba7ec9d83c998f0747809e393d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d51ce9be-71ca-4089-ba31-53e0acad7624",
+			"source": "artwork/brands/sleepy/texture-studies/2026-10-09-flare-onboarding-01/light",
+			"request": "/textures/sleepy/v1.0.0/source-light-request.json",
+			"response": "/textures/sleepy/v1.0.0/source-light-response.json",
+			"prompt": "/textures/sleepy/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/sleepy/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/sleepy/v1.0.0/texture-light.png",
+				"sha256": "3a5186d319a94c7b71d060228ab591065e162f160fe208d8c38fc4cc1fc9f260",
+				"bytes": 1989240,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4df7fb6d-0a4e-4707-b171-290e3e03355d",
+			"source": "artwork/brands/sleepy/texture-studies/2026-10-09-flare-onboarding-01/dark-attempt-02",
+			"request": "/textures/sleepy/v1.0.0/source-dark-request.json",
+			"response": "/textures/sleepy/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/sleepy/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/sleepy/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/sleepy/v1.0.0/texture-dark.png",
+				"sha256": "e98ffd7e7eaf379bc37d5fdb2208c5e770284d69a69d4be205d727dcd3adda42",
+				"bytes": 1942325,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.44
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 6.008864006954815,
+		"darkMinimum": 4.732707475810633,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-09T06:34:45.197Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

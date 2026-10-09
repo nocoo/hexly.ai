@@ -64,6 +64,16 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
 
+## Current campaign texture
+
+- Clothbound quiet / 布面静读: Fine bookcloth weave and loose paper fibers, with shallow bookbinding impressions and generous quiet space.
+- 细密书布织纹、疏松纸纤维与浅浅装帧压痕，为安静阅读留出空白。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.44.
+- [Paper PNG](https://h.no.mt/projects/sleepy/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/sleepy/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/sleepy/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/sleepy/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/sleepy/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/sleepy/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/sleepy/v1.0.1/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Refined identity
 
 ![Sleepy refined preview](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/icon-160.webp)

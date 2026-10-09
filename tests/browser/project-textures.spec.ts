@@ -7,6 +7,8 @@ import { desktop, expect, test, touch } from "./fixtures";
 for (const [id, options, opacity] of [
 	["frogie", desktop, 0.38],
 	["ccbackup", touch, 0.42],
+	["sleepy", touch, 0.44],
+	["rhino", desktop, 0.45],
 ] as const) {
 	const project = readProjects().find((item) => item.id === id);
 	if (!project) throw new Error(`Missing texture fixture: ${id}`);
