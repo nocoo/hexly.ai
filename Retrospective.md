@@ -409,3 +409,12 @@ completed materials. Allow retained icons while keeping their path and geometry
 checks. Generation plans must exclude the current archived catalogue rather than
 hard-code one archived project. Move active monitoring fixtures off retired
 projects and run the normal hooks before publication.
+
+## 2026-10-09 - Calibrate near-white extraction before adoption
+
+Sleepy's first extraction ate pale paper ridges. Raising the threshold retained
+matte specks, and a broad protection polygon captured white background. All three
+diagnostic passes remain immutable. The selected fourth pass uses measured
+exterior-connected threshold 243 without component deletion or a protection
+polygon, checked on dark and light. Do not treat a plausible mask as verified:
+inspect pale material boundaries and every detached region before source adoption.

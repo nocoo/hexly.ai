@@ -31,12 +31,14 @@ for (const project of projects) {
 		const manifest = JSON.parse(
 			await readFile(`public${icon.root}/manifest.json`, "utf8"),
 		);
+		const texturePath = project.brandTexture
+			? `${project.brandTexture.root}/texture-light.png`
+			: `${project.family?.root}/background.png`;
 		if (
 			manifest.project !== project.id ||
 			manifest.version !== icon.version ||
 			manifest.foreground.sha256 !== project.family?.foreground.sha256 ||
-			manifest.texture.path !==
-				`${project.brandTexture?.root}/texture-light.png` ||
+			manifest.texture.path !== texturePath ||
 			manifest.width !== icon.width ||
 			manifest.height !== icon.height ||
 			manifest.generationCalls !== 0 ||
