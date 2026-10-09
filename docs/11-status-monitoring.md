@@ -42,7 +42,8 @@ existing target ID and history. Worker domains, BBS admin, Life ingest and other
 unselected domains are not added.
 
 Append `lizheng.dev`, `lizheng.me` and `hexly.ai` in that order, after all project
-rows regardless of status priority. These use the existing Hexly Logo and unique
+rows. Project rows follow the catalogue's curated order, not health severity or
+alphabetical order; filtering preserves that order. These use the existing Hexly Logo and unique
 IDs `lizheng-dev`, `lizheng-me`, `hexly-ai`; they are Status entries, not additional
 project catalogue records. No `www` aliases or `status.hexly.ai` self-monitor are
 added. All targets retain the origin plus `/api/live` convention.
