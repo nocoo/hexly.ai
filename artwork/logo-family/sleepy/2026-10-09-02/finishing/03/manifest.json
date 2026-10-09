@@ -1,0 +1,439 @@
+{
+	"createdAt": "2026-10-09T05:28:07.706Z",
+	"pass": "03",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 12,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Pass 01 removed pale outer paper ridges; pass 02 retained matte specks with threshold 246. Pass 03 restores exterior-connected threshold 239 and protects only the inspected opaque paper fan polygon; no component-size deletion. Verify mask boundaries on both themes.",
+			"foregroundRegionsAt2048": [
+				{
+					"name": "Pale upper paper fan",
+					"points": [
+						[
+							603,
+							450
+						],
+						[
+							1243,
+							158
+						],
+						[
+							1333,
+							142
+						],
+						[
+							1401,
+							208
+						],
+						[
+							1428,
+							258
+						],
+						[
+							1478,
+							287
+						],
+						[
+							1515,
+							323
+						],
+						[
+							1562,
+							365
+						],
+						[
+							1593,
+							399
+						],
+						[
+							1631,
+							443
+						],
+						[
+							1646,
+							465
+						],
+						[
+							1553,
+							505
+						],
+						[
+							1260,
+							551
+						],
+						[
+							890,
+							591
+						]
+					]
+				}
+			]
+		},
+		"project": "sleepy",
+		"series": "material",
+		"background": {
+			"base": "#d7dfce",
+			"light": "#edf0e4",
+			"shade": "#b9c5af",
+			"motif": "#7b9074",
+			"grainAmplitude": 0.7,
+			"grainSeed": 61009002,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Bookcloth warp and page arcs",
+				"description": "Fine staggered bookcloth weave and gently fanned paper-edge arcs, authored for the tangible poetry book rather than botanical animal habitat.",
+				"layers": [
+					{
+						"d": "M84 136h148m-116 20h148M78 174h148m-116 20h148M832 738h116m-148 20h116M818 776h116m-148 20h116",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M118 100v132m20-116v132m20-132v132M870 704v132m20-116v132m20-132v132",
+						"tone": "highlight",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M108 860Q180 792 278 801M119 879Q191 811 289 820M130 898Q202 830 300 839",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.84,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform inset of the complete clothbound book and crescent bookmark; no crop or object redraw."
+		},
+		"shadows": [
+			{
+				"color": [
+					46,
+					66,
+					39
+				],
+				"opacity": 0.13,
+				"blurAt2048": 40,
+				"offsetAt2048": [
+					12,
+					24
+				]
+			},
+			{
+				"color": [
+					46,
+					66,
+					39
+				],
+				"opacity": 0.08,
+				"blurAt2048": 9,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 1971579,
+		"foregroundPixels": 2222725,
+		"softEdgePixels": 9647,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 324,
+			"top": 102,
+			"right": 1763,
+			"bottom": 1942
+		}
+	},
+	"placement": {
+		"scale": 0.84,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 436,
+			"top": 249,
+			"right": 1645,
+			"bottom": 1795
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 249.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2482,
+			"sha256": "556409981bb46cdbdeb8eb62c1c67c82b441dc860e42988ce9906df011238307"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 818,
+			"sha256": "f82146d06aa7cc6e286667687dade913349dddbdfe1e1a9404967b7a426c1ab0"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "matte-protection-mask.png",
+			"bytes": 22551,
+			"sha256": "6f67ead16923f88dd890a0e93ce0c71697522f1f0aadb9a3e98e732931700dbb"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5890634,
+			"sha256": "1f52afbbe4433ca1e18f7b36e63f6873adbf9738bed8f33a6fc34683bf0b7630"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 57249,
+			"sha256": "93c96d066034d96e2f142851daf7c1af0bb3b02b7cc89f90e8dd8f51f51d2049"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 875,
+			"sha256": "8731872a8ec99529a9343f8c9285949539b47b57547ec25b0130dc55669758c5"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1627347,
+			"sha256": "987edfbb7ce60a8028fb7d625c95fb13aba3d0dd4d44293fcc960adf7d6b5d28"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4255672,
+			"sha256": "b758dd14a9b5cedc9fbcde6ef6fc1565a0f1ea9c8e8cde48bc0b0005aac2ca4a"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 69701,
+			"sha256": "6c17a8c9e6c9075a1747df01bebe480250f1bf8ff4a253836d67c5fb6fe68cad"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 136969,
+			"sha256": "540a5eef5ae9a7ea02131f26ce8b6a3e14ac6967ff69ced9bb4d6cfc28a0fb29"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 95901,
+			"sha256": "c2a3aa6e2c2632f24ec4be13205734ef3d441b9ee2e45f76c4ff85e8e6e5c623"
+		},
+		{
+			"path": "exports/sleepy-transparent-2048.png",
+			"bytes": 4255672,
+			"sha256": "b758dd14a9b5cedc9fbcde6ef6fc1565a0f1ea9c8e8cde48bc0b0005aac2ca4a"
+		},
+		{
+			"path": "exports/sleepy-icon-2048.png",
+			"bytes": 5644307,
+			"sha256": "13d141e6666ac163f0c166a57f7e90cf7ee09e44c2cb02dc6b1f98934014ade7"
+		},
+		{
+			"path": "exports/sleepy-rounded-2048.png",
+			"bytes": 5577645,
+			"sha256": "d4cf97b21d7605861efdefda0f88b4cdc7c9e89e100da0a60ebfdf6c3cd718cc"
+		},
+		{
+			"path": "exports/sleepy-transparent-1024.png",
+			"bytes": 1057143,
+			"sha256": "8aa2be842e4351682409f64519e037fadfe90d84200b774b3ccdeaf48b16081b"
+		},
+		{
+			"path": "exports/sleepy-icon-1024.png",
+			"bytes": 1318107,
+			"sha256": "7d2e6c988cd4eb6ba1d6b0d4d68612b198a0ee0b51423ab9ce3242eec2e8e73b"
+		},
+		{
+			"path": "exports/sleepy-rounded-1024.png",
+			"bytes": 1323058,
+			"sha256": "bbf018e25ebf8eb0c1e195e1f49d0f2cc6b7c5fe21c1382810c7587f09f4c81e"
+		},
+		{
+			"path": "exports/sleepy-transparent-512.png",
+			"bytes": 255391,
+			"sha256": "015fed05c4a02c1e5b4c8d000bacd323ddba6282de4119d3ab4678f39a706a7d"
+		},
+		{
+			"path": "exports/sleepy-icon-512.png",
+			"bytes": 356940,
+			"sha256": "9c4444d61533f33a49f3c704fcdc9aa8b7317327fbcf2db6111715e95b0af356"
+		},
+		{
+			"path": "exports/sleepy-rounded-512.png",
+			"bytes": 358469,
+			"sha256": "c1d6e84391e251576ca4bc4de8b61ebcad501b22425b81f16aad387b8d099485"
+		},
+		{
+			"path": "exports/sleepy-transparent-256.png",
+			"bytes": 61641,
+			"sha256": "41ddf63228cb7399944527cdbef6f0918a6ddc55f808339ce55176ebfe78e766"
+		},
+		{
+			"path": "exports/sleepy-icon-256.png",
+			"bytes": 75077,
+			"sha256": "6007790bd25cb82e671845729ffbf58bab4065ef58586e25f2cea765ffef3623"
+		},
+		{
+			"path": "exports/sleepy-rounded-256.png",
+			"bytes": 78915,
+			"sha256": "b3fba10b521b5b27cf8a8fb90296e520d177f53e5da4533888a7114fac562389"
+		},
+		{
+			"path": "exports/sleepy-transparent-128.png",
+			"bytes": 16705,
+			"sha256": "9cec80a5e2895c62616d40adf102368eb25f829d07023ebe7ff9a30fb4f26c0f"
+		},
+		{
+			"path": "exports/sleepy-icon-128.png",
+			"bytes": 21291,
+			"sha256": "4c4ffd73907d50957106ad141b401030ae1eae5f7c52cae4dc56e5655c49aa13"
+		},
+		{
+			"path": "exports/sleepy-rounded-128.png",
+			"bytes": 23127,
+			"sha256": "1c9acee202271e838595f7d30a6e35809ce66b2a1942a7be2ebf17fbf24ea571"
+		},
+		{
+			"path": "exports/sleepy-transparent-64.png",
+			"bytes": 4779,
+			"sha256": "ed2e52f81e7549bc5876153918d1366b47d5e9137ce4b65ef68eb37cccb6726d"
+		},
+		{
+			"path": "exports/sleepy-icon-64.png",
+			"bytes": 6831,
+			"sha256": "2edff1c86e2d6820653d5721432782b3cc2f43f92273b0531995c5a922b808ed"
+		},
+		{
+			"path": "exports/sleepy-rounded-64.png",
+			"bytes": 7501,
+			"sha256": "9fc3493f762762ea79882584af3438c1cc9a53d31f6a592134be2e7e4e4f5fd7"
+		},
+		{
+			"path": "exports/sleepy-transparent-48.png",
+			"bytes": 2908,
+			"sha256": "bfddf4bd20015149171dd62ea00fd758928826d19e2f470ab3604d0f656fa776"
+		},
+		{
+			"path": "exports/sleepy-icon-48.png",
+			"bytes": 4212,
+			"sha256": "ad74ee7b9a6fd953740ed5240e766441788d8f935d23061a0f6ee5bf001ab0fd"
+		},
+		{
+			"path": "exports/sleepy-rounded-48.png",
+			"bytes": 4735,
+			"sha256": "6f4ef6cb0a619796f4d6de11154c3614e101a468e0c04eeab818a230d9aed577"
+		},
+		{
+			"path": "exports/sleepy-transparent-32.png",
+			"bytes": 1633,
+			"sha256": "0df44a62ea2f411b115ee6f923c21c39b8995810a1624a5e32ff2b6a60bd288b"
+		},
+		{
+			"path": "exports/sleepy-icon-32.png",
+			"bytes": 2450,
+			"sha256": "977339b129cd4e2e73cc03ab4faf964e931680434ed3d19ecb40d30fa5f48e29"
+		},
+		{
+			"path": "exports/sleepy-rounded-32.png",
+			"bytes": 2677,
+			"sha256": "a0d9326430e8a4117bf13e4c725e0433d07b673afcf5f2af3ad02935cfc3e8e1"
+		},
+		{
+			"path": "exports/sleepy-transparent-24.png",
+			"bytes": 1093,
+			"sha256": "4e042a9b872a7103a4d63a3068ee408bc7ca246dc5a2b6da3981d3de30e34f11"
+		},
+		{
+			"path": "exports/sleepy-icon-24.png",
+			"bytes": 1562,
+			"sha256": "25bd4adac8d172224055684b1973571c166cd2ee50302809851a6f8b83129216"
+		},
+		{
+			"path": "exports/sleepy-rounded-24.png",
+			"bytes": 1753,
+			"sha256": "7bd82a873f85d73a6e5899df9d3dd7a9a2f194ee0ff12471cbf9b8d2bf625198"
+		},
+		{
+			"path": "exports/sleepy-transparent-16.png",
+			"bytes": 651,
+			"sha256": "e409a50620aba6c3974cd23913ebfca4b036ee993928ca2d095d1fafe3da2d11"
+		},
+		{
+			"path": "exports/sleepy-icon-16.png",
+			"bytes": 918,
+			"sha256": "0fa320cfdca8ee7ab0c1b28197cdd6c75df650e047987a75999f1594f1724e7d"
+		},
+		{
+			"path": "exports/sleepy-rounded-16.png",
+			"bytes": 970,
+			"sha256": "2832e6bb2198eb01700211f10b56a3a6f383c37a67ee04718b5f8862442a7821"
+		},
+		{
+			"path": "exports/sleepy-white-2048.png",
+			"bytes": 3906059,
+			"sha256": "bccb4dd3a7302dbcbeec5fd7bffeeee25456d0e2553aafe07d92b3cd15b0531b"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 995320,
+			"sha256": "e0bfdc7aec2ec7c6817248eca367f3bd0f45280eeee613edd58686a331c3ce07"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 985663,
+			"sha256": "2fddabc51981a9aa536b287e5f56025f2f257b07ab2baf506a88edc37d5285d6"
+		}
+	]
+}

@@ -1,0 +1,371 @@
+{
+	"createdAt": "2026-10-09T05:25:59.934Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "54e65d1412a2e434838d5247ae422e303829b274e1b735b2283c11a4b536f18e",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Border matte sampled from the native image, modal near-white (251/252,252,252). Exterior-connected removal only; protect opaque ivory paper and pale animal facets. No component deletion."
+		},
+		"project": "rhino",
+		"background": {
+			"base": "#ddd4c3",
+			"light": "#f1e9d9",
+			"shade": "#c3b69d",
+			"motif": "#948064",
+			"grainAmplitude": 0.7,
+			"grainSeed": 61009003,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.26,
+			"ribbonOpacity": 0.12,
+			"pattern": {
+				"name": "Savanna grass blades",
+				"description": "Sparse native tall grass blades and small grass seed heads in the upper-right negative space, recalling rhinoceros grassland habitat without new foreground accents.",
+				"layers": [
+					{
+						"d": "M766 116Q733 191 753 300M753 239Q806 195 823 168M753 276Q719 218 685 205M881 84Q831 168 850 244M850 185Q881 147 915 134M865 428Q915 378 935 320M908 375Q887 334 860 323",
+						"tone": "motif",
+						"strokeWidth": 1.8
+					},
+					{
+						"d": "M784 173Q798 151 807 148M792 165l-7-15m11 9 11-8M866 131l-11-16m14 9 16-9M922 343l-6-15m9 10 12-5",
+						"tone": "highlight",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M834 286Q858 245 883 248Q876 275 834 286",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.9,
+			"offsetAt2048": [
+				-103,
+				0
+			],
+			"intentionalEdges": [
+				"left",
+				"bottom"
+			],
+			"note": "Uniform 90% placement anchored left; the native shoulder enters left and bottom. Keep the head, ears and orange horn unchanged with breathing room above."
+		},
+		"shadows": [
+			{
+				"color": [
+					83,
+					68,
+					49
+				],
+				"opacity": 0.1,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					8,
+					18
+				]
+			},
+			{
+				"color": [
+					83,
+					68,
+					49
+				],
+				"opacity": 0.07,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 1975161,
+		"foregroundPixels": 2219143,
+		"softEdgePixels": 10708,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 35,
+			"right": 1598,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 0.9,
+		"offsetAt2048": [
+			-103,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 134,
+			"right": 1437,
+			"bottom": 1944
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -126.03080250167983,
+		"clippedPixels": 19770
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2130,
+			"sha256": "a6661ab425335882c74aa006593297be4b355847429262d4d1f683210c8b60fe"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 466,
+			"sha256": "6639bd22de05c33f4ae63d51110b1c70a61923f4cc6f6da867ee3240342d7ff3"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3071600,
+			"sha256": "a93fd6b96e727648d1bbee573c86b0bef46f2d19ddab71e123390314314a2fa8"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 68757,
+			"sha256": "49876bc42507fc644fff7ec666745624cc595a6e82a64e758bef4eba77907873"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 904,
+			"sha256": "ede4100cb3d48fad8f8b622b3b0b8393ee55cb4cab186a4d09217884192463b2"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1721319,
+			"sha256": "65979d3848d3a845dbe033faff6594d7a8fcfb945535abbf80bd4f082d5e2aaf"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2760929,
+			"sha256": "0dc3c7f4eb7a58bc6e6b808f5902e4a69d0e5b06815e63d9047945f47a76a01a"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 84156,
+			"sha256": "29c475ed72ef98f00c091fdf91653ba92c0bce57ab5a0b105262cfb96e7beec4"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 165256,
+			"sha256": "967e4a7412638a1bf434ff18fe28b42dd9378d36836b33cd1b8f01e39ff72cb4"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 117197,
+			"sha256": "9eb67cd72ec78aafabda643b3d59cdea99112c9c7a87ebcf55d56e723a8992ec"
+		},
+		{
+			"path": "exports/rhino-transparent-2048.png",
+			"bytes": 2760929,
+			"sha256": "0dc3c7f4eb7a58bc6e6b808f5902e4a69d0e5b06815e63d9047945f47a76a01a"
+		},
+		{
+			"path": "exports/rhino-icon-2048.png",
+			"bytes": 4044960,
+			"sha256": "d4ca95bc7e579f1abd13db540be43d489744740eda1deeef2938bf0c1bd37cd0"
+		},
+		{
+			"path": "exports/rhino-rounded-2048.png",
+			"bytes": 3965517,
+			"sha256": "c24cc149acaaedad21f12031d2c58056aeca51f678c6af97e1b4eec60052537e"
+		},
+		{
+			"path": "exports/rhino-transparent-1024.png",
+			"bytes": 845269,
+			"sha256": "fe6304150f41d11c6c25f3f9ae613c01e75e6bdc48f31f7e465337b73dea7280"
+		},
+		{
+			"path": "exports/rhino-icon-1024.png",
+			"bytes": 1090022,
+			"sha256": "91296e5badf64d63689e394602138def4d0ae15d29b69005363708bbc6ce8eca"
+		},
+		{
+			"path": "exports/rhino-rounded-1024.png",
+			"bytes": 1087816,
+			"sha256": "d340085e335b6bfbbe097a9ffad8a68bd996cfd778e6f43d02cc094a056ee242"
+		},
+		{
+			"path": "exports/rhino-transparent-512.png",
+			"bytes": 270251,
+			"sha256": "bcd6fb0fa9b8e9bdcde74a2977ab0d7f975f57362dcf77004906a7276fb9fc87"
+		},
+		{
+			"path": "exports/rhino-icon-512.png",
+			"bytes": 366674,
+			"sha256": "0ef6f9b96ec5c63f066c2dd2612213fb7c28926247756b66247aa2884bfbaf5e"
+		},
+		{
+			"path": "exports/rhino-rounded-512.png",
+			"bytes": 366922,
+			"sha256": "ca6d53168b63d7b0e449818727f8396486014008779716441f94ec880965e477"
+		},
+		{
+			"path": "exports/rhino-transparent-256.png",
+			"bytes": 83531,
+			"sha256": "2219b99995913a5b58e541007c40619be29a6038c31e0b8bfa67d02ad5b6f145"
+		},
+		{
+			"path": "exports/rhino-icon-256.png",
+			"bytes": 94758,
+			"sha256": "3d83eb4963a5b3b5009ca9859f69fb3bf2186d2a144eff9b0eb411edd97aaba7"
+		},
+		{
+			"path": "exports/rhino-rounded-256.png",
+			"bytes": 97744,
+			"sha256": "7598374428d1faa3f569e4734808b86b2ee4f985d1943e7be427b80fe0140efb"
+		},
+		{
+			"path": "exports/rhino-transparent-128.png",
+			"bytes": 24125,
+			"sha256": "b865472a317150b6087394952fca3fac980209ba40834a5598f5f7261e942eb5"
+		},
+		{
+			"path": "exports/rhino-icon-128.png",
+			"bytes": 27939,
+			"sha256": "706ba98ad36f16a8f082f6fb04adeeb9ae2e9ca4293d3671a3802c4129de0a0f"
+		},
+		{
+			"path": "exports/rhino-rounded-128.png",
+			"bytes": 29418,
+			"sha256": "b1ac9566cd02807494ccdf862b9e4def4bbbbe61b0d0eadd48d11957f70e15b1"
+		},
+		{
+			"path": "exports/rhino-transparent-64.png",
+			"bytes": 7107,
+			"sha256": "39508ed1a8874918ec5f8ef1a4b95d98108451243063635d45c96fdfdd8d63b1"
+		},
+		{
+			"path": "exports/rhino-icon-64.png",
+			"bytes": 8915,
+			"sha256": "b069da0d53ca47efc3cf0c1e7344fbedd8d9c176fa135df0b698a5eb580d2dd8"
+		},
+		{
+			"path": "exports/rhino-rounded-64.png",
+			"bytes": 9477,
+			"sha256": "d565ee87ec3cc4a1805a0e856db66200f4960aa6b5f926d09b6a9693b3c2c609"
+		},
+		{
+			"path": "exports/rhino-transparent-48.png",
+			"bytes": 4371,
+			"sha256": "b7c84413c8fec0eed57949b84cdf51ad5427882e25ca4f005055a7a1022b1572"
+		},
+		{
+			"path": "exports/rhino-icon-48.png",
+			"bytes": 5295,
+			"sha256": "acfc72e75bd5391fb716493e32896e5045f558e9f1bd1bccf9656fc1f0c3e1a2"
+		},
+		{
+			"path": "exports/rhino-rounded-48.png",
+			"bytes": 5741,
+			"sha256": "809025fa0160eb257feb0a55b1740f2421da09e1c76966aedec3796a82edc06c"
+		},
+		{
+			"path": "exports/rhino-transparent-32.png",
+			"bytes": 2235,
+			"sha256": "ce696a80c89d5a9bf5a04fb59035cc352ed5250566a8ca4d99876c9350f2a0d6"
+		},
+		{
+			"path": "exports/rhino-icon-32.png",
+			"bytes": 2874,
+			"sha256": "d6b27bb4e0e3df476c630673eec888e00c8061a146c54c300867459193b91818"
+		},
+		{
+			"path": "exports/rhino-rounded-32.png",
+			"bytes": 3025,
+			"sha256": "f441e6b237bf9346cdf58912ceb9f6c5cac0166f300dbccd86be7a2fdf679fd7"
+		},
+		{
+			"path": "exports/rhino-transparent-24.png",
+			"bytes": 1398,
+			"sha256": "a4aba50adf8c6f9ac0cb7aa9e36f69bd89f9540866e6cccac8c936c830bab2e4"
+		},
+		{
+			"path": "exports/rhino-icon-24.png",
+			"bytes": 1784,
+			"sha256": "f7a674f1707609ae6345bd84a520910003be2ae1760d105f32a31aad7a134030"
+		},
+		{
+			"path": "exports/rhino-rounded-24.png",
+			"bytes": 1925,
+			"sha256": "3081f56c51ccca8fa0041f88556b7d7fe18e1bb35b084ad0c6898b74911b69d5"
+		},
+		{
+			"path": "exports/rhino-transparent-16.png",
+			"bytes": 766,
+			"sha256": "ae2cdefbe6d60b90cbc11400c008ce7bc8b40c9c7aabd1c50cb2f318294c3b32"
+		},
+		{
+			"path": "exports/rhino-icon-16.png",
+			"bytes": 935,
+			"sha256": "cceb57916e60fbed017577725b2ea89f9b25c0411b97bc22106883dd8d45a739"
+		},
+		{
+			"path": "exports/rhino-rounded-16.png",
+			"bytes": 986,
+			"sha256": "7fa0e28b7a5e7e6e2ee6d98f421e83294c9ed593edabf6ebaf94a908c5fc5a52"
+		},
+		{
+			"path": "exports/rhino-white-2048.png",
+			"bytes": 2596347,
+			"sha256": "5e7d037dacc90920b96e092c5359eab6e1daa7ef28dc6f28383f59adc78bbd26"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 813180,
+			"sha256": "dbe20d66d6b973dd0b390964cf67e304cf4f7c4dbe144ca80e2b5b59b6a60a29"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 811855,
+			"sha256": "182b64da8dc27175f0257d831fe92a838b11a072ef3c1bc4ceab3899b4893ade"
+		}
+	]
+}
