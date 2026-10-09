@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
+import { filterProjects } from "../../src/model/catalogue";
 import { navigationPath, parseNavigation } from "../../src/model/navigation";
 import {
 	CHECK_INTERVAL,
@@ -14,6 +15,7 @@ import {
 	type StatusHour,
 	type StatusSnapshot,
 	sampleTotals,
+	statusSites,
 	statusTargets,
 } from "../../src/model/status";
 
@@ -50,6 +52,17 @@ const snapshot: StatusSnapshot = {
 };
 
 describe("status coverage and navigation", () => {
+	it("preserves catalogue order and keeps the three personal sites last", () => {
+		const projects = readProjects();
+		expect(statusSites(projects).map((site) => site.id)).toEqual([
+			...filterProjects(projects, "")
+				.filter((project) => healthEndpoint(project))
+				.map((project) => project.id),
+			"lizheng-dev",
+			"lizheng-me",
+			"hexly-ai",
+		]);
+	});
 	it("includes deployed Hexly sites at their exact health paths", () => {
 		const targets = statusTargets(readProjects());
 		for (const id of ["gecko", "neo", "wooly", "ocelot"]) {

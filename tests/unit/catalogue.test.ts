@@ -155,6 +155,13 @@ describe("the imported project catalogue", () => {
 			tools.toSorted((a, b) => a.title.localeCompare(b.title, "en")),
 		);
 	});
+	it("places Rhino at the end of animals before templates and material projects", () => {
+		const ids = filterProjects(projects, "").map((project) => project.id);
+		const rhino = ids.indexOf("rhino");
+		expect(ids[rhino - 1]).toBe("kite");
+		expect(ids[rhino + 1]).toBe("dotty");
+		expect(rhino).toBeLessThan(ids.indexOf("sleepy"));
+	});
 	it("uses evidenced website links and falls back to repository links", () => {
 		expect(destination(frogie)).toBe("https://github.com/nocoo/frogie");
 		expect(destination({ ...frogie, website: "https://pew.md" })).toBe(

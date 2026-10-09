@@ -1,4 +1,5 @@
 import identity from "../data/site-identity.json" with { type: "json" };
+import { filterProjects } from "./catalogue";
 import type { Project } from "./project";
 
 export const CHECK_INTERVAL = 300_000;
@@ -93,7 +94,7 @@ export function healthEndpoint(
 }
 
 export function statusSites(projects: Project[]): StatusSite[] {
-	const sites = projects.flatMap((project) => {
+	const sites = filterProjects(projects, "").flatMap((project) => {
 		const endpoint = healthEndpoint(project);
 		return endpoint && project.website
 			? [
