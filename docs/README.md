@@ -46,4 +46,6 @@
 
 40. [CI repeatability audit and quantified baseline](35-ci-repeatability.md)
 
+41. [Sleepy and Rhino onboarding and approved identities](36-sleepy-rhino-onboarding.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
