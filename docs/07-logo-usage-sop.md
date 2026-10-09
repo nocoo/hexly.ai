@@ -34,6 +34,16 @@ for browser tabs. Preserve wordmark outlines and clear space. A public Hexly
 kit is an asset handoff, not proof of adoption in its source repository. See
 [Snail's versioned SVG/PNG/ICO guide](18-snail-brand.md).
 
+## Sleepy and Rhino — 2026-10-09 local adoption
+
+Sleepy adopts `2026-10-09-02 / 04` at local source revision `499603a`:
+transparent header/browser marks, opaque PWA/touch tiles and a presentation README
+header. Rhino adopts `2026-10-09-03 / 02` at local source revision `2dc9067`:
+transparent sidebar/browser marks, an opaque touch tile and presentation README
+header. Their R2 objects are published and byte-verified; source/profile pushes,
+app deployments and Hexly release are not yet publication evidence. See the
+[onboarding receipt](36-sleepy-rhino-onboarding.md) and each study's `adoption.json`.
+
 ## Adoption procedure
 
 1. **Identify the exact selected pass and scope.** Read the raw-image or retained-source decision, presentation selection, and current owner instructions. Record the study, finishing pass, hashes, and whether source adoption and publication are authorized. Finishing an accepted image needs no new generation or approval round. A new model output follows the raw checkpoint.
