@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.3.0] - 2026-10-09
+
+### Documentation
+
+- prepare sleepy and rhino logo studies ([c97f74f](https://github.com/nocoo/hexly.ai/commit/c97f74f9392fbd8d31f4927e7f1c7c04422353f2))
+- record blocked azure logo requests ([5840f6e](https://github.com/nocoo/hexly.ai/commit/5840f6e9ea85a58c5263107408e7495bd75e62f6))
+- prepare authorized logo retry ([5b6d16b](https://github.com/nocoo/hexly.ai/commit/5b6d16be49b8677a09f450ed9d08dd6c23885075))
+- record logo results and sleepy approval ([d3318a3](https://github.com/nocoo/hexly.ai/commit/d3318a376382fc0f73b55fb42002864508f8636b))
+- revise rhino color direction ([29e43f1](https://github.com/nocoo/hexly.ai/commit/29e43f15f350c78905096a80a30a875d4d0142a6))
+- record approved rhino logo ([efec133](https://github.com/nocoo/hexly.ai/commit/efec133b9afd53cc29d4d3d26f625205ad0408ff))
+- record sleepy and rhino onboarding ([074c6bb](https://github.com/nocoo/hexly.ai/commit/074c6bb3c7dc36ec5095347d1495f619c8c9d52d))
+- prepare sleepy and rhino textures ([8f984f7](https://github.com/nocoo/hexly.ai/commit/8f984f7f49a5382a49b61d786b5642bf04e0fe48))
+- archive new texture review candidates ([e80ba4a](https://github.com/nocoo/hexly.ai/commit/e80ba4a5ab43f38184298d0ba5d2958b28d039a8))
+- verify texture publication and gates ([9972507](https://github.com/nocoo/hexly.ai/commit/9972507be86cc944b96bfe0b62150a7f5d2a6a64))
+
+### Features
+
+- finish approved sleepy and rhino logos ([fd83984](https://github.com/nocoo/hexly.ai/commit/fd83984ad7bcf22005c7ff0c646e98ce05a59987))
+- onboard sleepy and rhino catalogue ([ea89941](https://github.com/nocoo/hexly.ai/commit/ea8994180581a1b70e1ccf47838e8fb59a776d4d))
+- adopt sleepy and rhino texture packs ([37b8fa7](https://github.com/nocoo/hexly.ai/commit/37b8fa751fcdda4ac03cd0918c8088d92749b72a))
+
+### Fixes
+
+- align catalogue and status ordering ([ddafb05](https://github.com/nocoo/hexly.ai/commit/ddafb054a52f95aeefea5fcd73c348f469e4d6dd))
+
 ## [1.2.2] - 2026-10-08
 
 ### Fixes
