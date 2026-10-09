@@ -1,0 +1,371 @@
+{
+	"createdAt": "2026-10-09T05:31:01.412Z",
+	"pass": "04",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 243,
+			"maximumChroma": 12,
+			"backgroundRgb": [
+				251,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Threshold 243 balances near-white matte noise against pale page ridges. No silhouette polygon or component deletion; inspect every resulting edge on dark."
+		},
+		"project": "sleepy",
+		"series": "material",
+		"background": {
+			"base": "#d7dfce",
+			"light": "#edf0e4",
+			"shade": "#b9c5af",
+			"motif": "#7b9074",
+			"grainAmplitude": 0.7,
+			"grainSeed": 61009002,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Bookcloth warp and page arcs",
+				"description": "Fine staggered bookcloth weave and gently fanned paper-edge arcs, authored for the tangible poetry book rather than botanical animal habitat.",
+				"layers": [
+					{
+						"d": "M84 136h148m-116 20h148M78 174h148m-116 20h148M832 738h116m-148 20h116M818 776h116m-148 20h116",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M118 100v132m20-116v132m20-132v132M870 704v132m20-116v132m20-132v132",
+						"tone": "highlight",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M108 860Q180 792 278 801M119 879Q191 811 289 820M130 898Q202 830 300 839",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.84,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform inset of the complete clothbound book and crescent bookmark; no crop or object redraw."
+		},
+		"shadows": [
+			{
+				"color": [
+					46,
+					66,
+					39
+				],
+				"opacity": 0.13,
+				"blurAt2048": 40,
+				"offsetAt2048": [
+					12,
+					24
+				]
+			},
+			{
+				"color": [
+					46,
+					66,
+					39
+				],
+				"opacity": 0.08,
+				"blurAt2048": 9,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 1979702,
+		"foregroundPixels": 2214602,
+		"softEdgePixels": 10219,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 324,
+			"top": 101,
+			"right": 1763,
+			"bottom": 1942
+		}
+	},
+	"placement": {
+		"scale": 0.84,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 436,
+			"top": 249,
+			"right": 1645,
+			"bottom": 1795
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 249.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2018,
+			"sha256": "d20ee182d9674e3bcd38a6fcbe36e093aa32a31b40dd4950d69d346d9a3a8ba3"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 818,
+			"sha256": "f82146d06aa7cc6e286667687dade913349dddbdfe1e1a9404967b7a426c1ab0"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 27405,
+			"sha256": "03f370542551e140db0528a0a794859aa07a587a63622c9219a70c81714e07d8"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 5887628,
+			"sha256": "dbf80cd4a7954cf2d965c28f355677a33868c5d16a7c6a7102ce8826c97a5c05"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 60057,
+			"sha256": "33c169b3dcdc785731ffcd1eab1591d1a302eebd1e48f82fb07b7c5dba96e730"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 875,
+			"sha256": "8731872a8ec99529a9343f8c9285949539b47b57547ec25b0130dc55669758c5"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1627347,
+			"sha256": "987edfbb7ce60a8028fb7d625c95fb13aba3d0dd4d44293fcc960adf7d6b5d28"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 4251999,
+			"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 71803,
+			"sha256": "4b8d98cdc3c3c64003fd1d5dafd0551ce11b1bac2e708ff273dea55eaf6d6d21"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 141425,
+			"sha256": "bf4272c99fbff69ff1aff9ebe1e6f2a77cbc345beb2be8bd68b318c79fadcdbc"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 98842,
+			"sha256": "700d3d5df815e8a9045a3a33b1354fae3119549e1a7bf4ea3c9532d127b70f39"
+		},
+		{
+			"path": "exports/sleepy-transparent-2048.png",
+			"bytes": 4251999,
+			"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b"
+		},
+		{
+			"path": "exports/sleepy-icon-2048.png",
+			"bytes": 5643771,
+			"sha256": "afd2d23de7de3724d5cd34a06b1927b685b3e85ac1da700eefc047604bce532b"
+		},
+		{
+			"path": "exports/sleepy-rounded-2048.png",
+			"bytes": 5577079,
+			"sha256": "a07a4be7f4e15c2b0e5b7e4e40a7cc20ab59f221d26b21dbd41098c6b4ccaec6"
+		},
+		{
+			"path": "exports/sleepy-transparent-1024.png",
+			"bytes": 1055940,
+			"sha256": "d034dbe0061ad3c81de9c169dbf0e992777574c024f8f796fe3af7d3f4ab74bc"
+		},
+		{
+			"path": "exports/sleepy-icon-1024.png",
+			"bytes": 1317452,
+			"sha256": "f1f6ea87634b0ddd564455379533c548a83c13adb14a000522f4fe5598fe3a23"
+		},
+		{
+			"path": "exports/sleepy-rounded-1024.png",
+			"bytes": 1322269,
+			"sha256": "6cc15a0a0e2d1168994ccb41f1fdb545365bde6180ab5aa2071f451e464eb057"
+		},
+		{
+			"path": "exports/sleepy-transparent-512.png",
+			"bytes": 255050,
+			"sha256": "c0297fb9f3e4e912fb507eb4575054baaf794a057bfa1c29afd9f7ffa88bcb63"
+		},
+		{
+			"path": "exports/sleepy-icon-512.png",
+			"bytes": 356753,
+			"sha256": "123ad92a85cf2a4dae7294d360953a65cf0cbee620ae4df5ec83490bb7db3aa2"
+		},
+		{
+			"path": "exports/sleepy-rounded-512.png",
+			"bytes": 358242,
+			"sha256": "857ad3a7f8d3ee904ec9168b9152a83180554659c4bc5e980752510a4d3ed53e"
+		},
+		{
+			"path": "exports/sleepy-transparent-256.png",
+			"bytes": 61569,
+			"sha256": "7bbf01a3c987589524ceba09808fcb103cd6491672949ed14803ecff522ed13c"
+		},
+		{
+			"path": "exports/sleepy-icon-256.png",
+			"bytes": 74919,
+			"sha256": "d592c3584ffe0ceed75278955fd1da8b90778e4d39cd9f22e478e3606647909b"
+		},
+		{
+			"path": "exports/sleepy-rounded-256.png",
+			"bytes": 78771,
+			"sha256": "86b9c0f8f5c88ad6754503a07c9b0147f0043c03bfbb21107ed8a04cc9f08dff"
+		},
+		{
+			"path": "exports/sleepy-transparent-128.png",
+			"bytes": 16667,
+			"sha256": "62eab6c153d259275faf159268599623345a5c9acd6ffd0b32acc0dd5cabdc5f"
+		},
+		{
+			"path": "exports/sleepy-icon-128.png",
+			"bytes": 21228,
+			"sha256": "6cef7f214cfa947ea7168d362caed866bb073c0f1f076abe290c7792208ee7e8"
+		},
+		{
+			"path": "exports/sleepy-rounded-128.png",
+			"bytes": 23078,
+			"sha256": "5f3d79b06c0609d01646bcb1d44125b5114af81627c77f13ca43dd70ac3f2641"
+		},
+		{
+			"path": "exports/sleepy-transparent-64.png",
+			"bytes": 4768,
+			"sha256": "b62c5e52088fd20f5d90e6ba2846fbd43080179d58363ac47b387510a100a118"
+		},
+		{
+			"path": "exports/sleepy-icon-64.png",
+			"bytes": 6817,
+			"sha256": "046bdb8aed26b2d4e32f03fe704ebab2d1ed4567a32224d74e9b2d0d3700492b"
+		},
+		{
+			"path": "exports/sleepy-rounded-64.png",
+			"bytes": 7499,
+			"sha256": "69ae68e5ef91024460815979928ba43861111264e393b4ca0ce33c80e980311d"
+		},
+		{
+			"path": "exports/sleepy-transparent-48.png",
+			"bytes": 2918,
+			"sha256": "6b8ce50ec804ac6dba2b5fb02828220797930baea4237dc4a2caf57bfe26f556"
+		},
+		{
+			"path": "exports/sleepy-icon-48.png",
+			"bytes": 4212,
+			"sha256": "264c5c169d1f8e3336d28ba2c66628288ea6844109754fd2fc834c0bf843df33"
+		},
+		{
+			"path": "exports/sleepy-rounded-48.png",
+			"bytes": 4733,
+			"sha256": "b8a0b9a8cc2fc3ddb78395e010e9a0fe9a4177bbee2df57f18763562247f5be7"
+		},
+		{
+			"path": "exports/sleepy-transparent-32.png",
+			"bytes": 1641,
+			"sha256": "a045481818d8ab51f0f2216b4ba3ffa2c1499660e8d15307c34b661b253d845b"
+		},
+		{
+			"path": "exports/sleepy-icon-32.png",
+			"bytes": 2449,
+			"sha256": "b2cde653c56c67c7d12d3226dd871d802dbe8d545eb14be67c82da8053cdd7eb"
+		},
+		{
+			"path": "exports/sleepy-rounded-32.png",
+			"bytes": 2675,
+			"sha256": "6f1dd212cef839b2bcdacdcd64545e386f1b7d6dbca8f0eca9e7abc863240231"
+		},
+		{
+			"path": "exports/sleepy-transparent-24.png",
+			"bytes": 1089,
+			"sha256": "d3db9dd32e8f752be706e95a39eb77f702b068ee8a0780535de58ae4d90ac1e7"
+		},
+		{
+			"path": "exports/sleepy-icon-24.png",
+			"bytes": 1572,
+			"sha256": "e14aa28face46bae385b757052e21de38a2ecfe259ef31ceb699e5ef150f8615"
+		},
+		{
+			"path": "exports/sleepy-rounded-24.png",
+			"bytes": 1758,
+			"sha256": "4da0f195c24ef21be3dc3c9a07c48a02284ed9954dc5f74617b26cdd319f6810"
+		},
+		{
+			"path": "exports/sleepy-transparent-16.png",
+			"bytes": 654,
+			"sha256": "b0739a95b76432f947bd6cef9228a03cf217231205e4f3c0d294823d55f07d9e"
+		},
+		{
+			"path": "exports/sleepy-icon-16.png",
+			"bytes": 920,
+			"sha256": "8b1b06b928cb966c00b08b75710d02c3bee0de0c05bb6205c4f255fe55ef3ee3"
+		},
+		{
+			"path": "exports/sleepy-rounded-16.png",
+			"bytes": 972,
+			"sha256": "ffebfd72acadae316c6ab64546a984e9ac99a30fdfd583094cb3396bbc6c6243"
+		},
+		{
+			"path": "exports/sleepy-white-2048.png",
+			"bytes": 3901981,
+			"sha256": "ac2256b6968a4fe80a362fa1799db65fdd7e955dfb0e2d403e040a5b477c1776"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 993595,
+			"sha256": "acd63c8f5aa95b749856ce1192f03c73b844da795a27bd5a03de716e9a0968e5"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 984225,
+			"sha256": "7a9379e1579ab02c970bdb57780c5a652acb551c6e0bd7ee57760aded7eead49"
+		}
+	]
+}

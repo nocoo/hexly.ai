@@ -1,0 +1,94 @@
+{
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 12,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Pass 01 removed pale outer paper ridges; pass 02 retained matte specks with threshold 246. Pass 03 restores exterior-connected threshold 239 and protects only the inspected opaque paper fan polygon; no component-size deletion. Verify mask boundaries on both themes.",
+		"foregroundRegionsAt2048": [
+			{
+				"name": "Pale upper paper fan",
+				"points": [
+					[603, 450],
+					[1243, 158],
+					[1333, 142],
+					[1401, 208],
+					[1428, 258],
+					[1478, 287],
+					[1515, 323],
+					[1562, 365],
+					[1593, 399],
+					[1631, 443],
+					[1646, 465],
+					[1553, 505],
+					[1260, 551],
+					[890, 591]
+				]
+			}
+		]
+	},
+	"project": "sleepy",
+	"series": "material",
+	"background": {
+		"base": "#d7dfce",
+		"light": "#edf0e4",
+		"shade": "#b9c5af",
+		"motif": "#7b9074",
+		"grainAmplitude": 0.7,
+		"grainSeed": 61009002,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Bookcloth warp and page arcs",
+			"description": "Fine staggered bookcloth weave and gently fanned paper-edge arcs, authored for the tangible poetry book rather than botanical animal habitat.",
+			"layers": [
+				{
+					"d": "M84 136h148m-116 20h148M78 174h148m-116 20h148M832 738h116m-148 20h116M818 776h116m-148 20h116",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M118 100v132m20-116v132m20-132v132M870 704v132m20-116v132m20-132v132",
+					"tone": "highlight",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M108 860Q180 792 278 801M119 879Q191 811 289 820M130 898Q202 830 300 839",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				}
+			]
+		}
+	},
+	"framing": {
+		"scale": 0.84,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform inset of the complete clothbound book and crescent bookmark; no crop or object redraw."
+	},
+	"shadows": [
+		{
+			"color": [46, 66, 39],
+			"opacity": 0.13,
+			"blurAt2048": 40,
+			"offsetAt2048": [12, 24]
+		},
+		{
+			"color": [46, 66, 39],
+			"opacity": 0.08,
+			"blurAt2048": 9,
+			"offsetAt2048": [2, 8]
+		}
+	]
+}

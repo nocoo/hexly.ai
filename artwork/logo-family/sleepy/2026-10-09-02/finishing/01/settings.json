@@ -1,0 +1,73 @@
+{
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 16,
+		"backgroundRgb": [251, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Border matte sampled from the native image, modal near-white (251/252,252,252). Exterior-connected removal only; protect opaque ivory paper and pale animal facets. No component deletion."
+	},
+	"project": "sleepy",
+	"series": "material",
+	"background": {
+		"base": "#d7dfce",
+		"light": "#edf0e4",
+		"shade": "#b9c5af",
+		"motif": "#7b9074",
+		"grainAmplitude": 0.7,
+		"grainSeed": 61009002,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Bookcloth warp and page arcs",
+			"description": "Fine staggered bookcloth weave and gently fanned paper-edge arcs, authored for the tangible poetry book rather than botanical animal habitat.",
+			"layers": [
+				{
+					"d": "M84 136h148m-116 20h148M78 174h148m-116 20h148M832 738h116m-148 20h116M818 776h116m-148 20h116",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M118 100v132m20-116v132m20-132v132M870 704v132m20-116v132m20-132v132",
+					"tone": "highlight",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M108 860Q180 792 278 801M119 879Q191 811 289 820M130 898Q202 830 300 839",
+					"tone": "motif",
+					"strokeWidth": 1.6
+				}
+			]
+		}
+	},
+	"framing": {
+		"scale": 0.84,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform inset of the complete clothbound book and crescent bookmark; no crop or object redraw."
+	},
+	"shadows": [
+		{
+			"color": [46, 66, 39],
+			"opacity": 0.13,
+			"blurAt2048": 40,
+			"offsetAt2048": [12, 24]
+		},
+		{
+			"color": [46, 66, 39],
+			"opacity": 0.08,
+			"blurAt2048": 9,
+			"offsetAt2048": [2, 8]
+		}
+	]
+}

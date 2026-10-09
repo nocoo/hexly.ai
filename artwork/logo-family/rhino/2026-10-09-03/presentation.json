@@ -1,0 +1,70 @@
+{
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 239,
+		"maximumChroma": 16,
+		"backgroundRgb": [252, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Border matte sampled from the native image, modal near-white (251/252,252,252). Exterior-connected removal only; protect opaque ivory paper and pale animal facets. No component deletion."
+	},
+	"project": "rhino",
+	"background": {
+		"base": "#ddd4c3",
+		"light": "#f1e9d9",
+		"shade": "#c3b69d",
+		"motif": "#948064",
+		"grainAmplitude": 0.7,
+		"grainSeed": 61009003,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.26,
+		"ribbonOpacity": 0.12,
+		"pattern": {
+			"name": "Savanna grass blades",
+			"description": "Sparse native tall grass blades and small grass seed heads in the upper-right negative space, recalling rhinoceros grassland habitat without new foreground accents.",
+			"layers": [
+				{
+					"d": "M766 116Q733 191 753 300M753 239Q806 195 823 168M753 276Q719 218 685 205M881 84Q831 168 850 244M850 185Q881 147 915 134M865 428Q915 378 935 320M908 375Q887 334 860 323",
+					"tone": "motif",
+					"strokeWidth": 1.8
+				},
+				{
+					"d": "M784 173Q798 151 807 148M792 165l-7-15m11 9 11-8M866 131l-11-16m14 9 16-9M922 343l-6-15m9 10 12-5",
+					"tone": "highlight",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M834 286Q858 245 883 248Q876 275 834 286",
+					"tone": "ribbon"
+				}
+			]
+		}
+	},
+	"framing": {
+		"scale": 0.9,
+		"offsetAt2048": [-103, 103],
+		"intentionalEdges": ["left", "bottom"],
+		"note": "Uniform 90% placement anchored left and bottom, preserving the natural shoulder frame entry. No anatomy extension, redraw or detached neck stump."
+	},
+	"shadows": [
+		{
+			"color": [83, 68, 49],
+			"opacity": 0.1,
+			"blurAt2048": 28,
+			"offsetAt2048": [8, 18]
+		},
+		{
+			"color": [83, 68, 49],
+			"opacity": 0.07,
+			"blurAt2048": 7,
+			"offsetAt2048": [2, 6]
+		}
+	]
+}
