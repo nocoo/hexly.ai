@@ -1,0 +1,107 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-10-09T06:28:38.995Z",
+	"model": "gpt-image-2.5-flare",
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"plannedRequests": 4,
+	"authorization": {
+		"generation": "Owner requested Sleepy and Rhino textures following the existing skill on 2026-10-09.",
+		"acceptance": "Exact-byte owner review required before derivative export and integration",
+		"publication": "No Git push or website deployment authorized"
+	},
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"projects": [
+		{
+			"id": "sleepy",
+			"title": "Sleepy",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/sleepy/texture-studies/2026-10-09-flare-onboarding-01",
+			"version": "1.0.0",
+			"root": "/textures/sleepy/v1.0.0",
+			"sourceMetadataSha256": "9a5020c5ec48fefa7b33998a065836d83a2345d661d0d196af5d1a25a33a0ca6",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/sleepy-family-2026-10-09-02-04.png",
+				"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b",
+				"rgbaSha256": "0ccc22584a79d65b048b0ffc4cba2fb29b9a98330ef9e7341755dd3b160dd187",
+				"source": "https://github.com/nocoo/sleepy/blob/499603af59cd868669611d3cdad6b8c0b4394e6f/logo.png",
+				"bytes": 4251999,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "working-material",
+				"name": {
+					"en": "Clothbound quiet",
+					"zh": "布面静读"
+				},
+				"description": {
+					"en": "Fine bookcloth weave and loose paper fibers, with shallow bookbinding impressions and generous quiet space.",
+					"zh": "细密书布织纹、疏松纸纤维与浅浅装帧压痕，为安静阅读留出空白。"
+				},
+				"motif": "Orthographic continuous bookcloth and uncoated paper working surface, fine warp and weft, scattered paper fibers and shallow binding crease impressions. No botanical ornaments or literal books.",
+				"rationale": "The owner-approved physical poetry book identity and Chinese poetry reader suggest bookbinding material, not animal habitat foliage."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/sleepy.json",
+				"purpose": {
+					"en": "Quiet Chinese poetry reading for parents and children",
+					"zh": "陪伴亲子阅读的安静古诗阅读器"
+				},
+				"inspectedRevision": "499603af59cd868669611d3cdad6b8c0b4394e6f"
+			}
+		},
+		{
+			"id": "rhino",
+			"title": "Rhino",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/rhino/texture-studies/2026-10-09-flare-onboarding-01",
+			"version": "1.0.0",
+			"root": "/textures/rhino/v1.0.0",
+			"sourceMetadataSha256": "d3949582a0a90dc60622a6ce63600fa5cb70de0007195713cf818d79c30a3d37",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/rhino-family-2026-10-09-03-02.png",
+				"sha256": "d06b2ab605fc05981ddc236e0a705f2147dc0b2a96184eba2715df7c8336b26a",
+				"rgbaSha256": "28b892c605cc4782eafb4b9a660059d876af0e174da09a1318e10a1ac13b2b6a",
+				"source": "https://github.com/nocoo/rhino/blob/2dc90672ddb50eac2d347140823b1ecaa3c577d0/logo.png",
+				"bytes": 2759949,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Savanna leaf margins",
+					"zh": "草原叶缘"
+				},
+				"description": {
+					"en": "Sparse small savanna tree leaflets and gently curved stems around a quiet paper-like field.",
+					"zh": "稀树草原的小叶与弯曲枝梗疏落在边缘，中央保留安静纸面。"
+				},
+				"motif": "Broad plausible savanna habitat, small oval compound leaflets and slim curved woody stems concentrated at lower and right margins. No flowers, tropical monstera, animals or orange accent.",
+				"rationale": "The approved rhinoceros identity does not establish an exact species. A broad savanna foliage analogy is plausible without a species-specific biological claim. The orange horn remains the only strong identity accent."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/rhino.json",
+				"purpose": {
+					"en": "Personal fitness planning and training journal",
+					"zh": "个人健身计划与训练记录"
+				},
+				"inspectedRevision": "2dc90672ddb50eac2d347140823b1ecaa3c577d0"
+			}
+		}
+	]
+}
