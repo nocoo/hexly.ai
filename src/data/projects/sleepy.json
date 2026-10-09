@@ -1,0 +1,240 @@
+{
+	"id": "sleepy",
+	"repo": "sleepy",
+	"title": "Sleepy",
+	"emoji": "📖",
+	"description": {
+		"en": "Quiet Chinese poetry reading for parents and children",
+		"zh": "陪伴亲子阅读的安静古诗阅读器"
+	},
+	"category": "everyday",
+	"website": "https://sleepy.hexly.ai",
+	"websiteSource": "docs/sources/sleepy-2026-10-09.json",
+	"repository": "https://github.com/nocoo/sleepy",
+	"subject": "Green clothbound poetry book with ivory pages and a brass crescent bookmark",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/sleepy-family-2026-10-09-02-04.png",
+		"thumbnail": "/logos/display/sleepy-160.webp",
+		"display": "/logos/display/sleepy-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/sleepy/blob/499603af59cd868669611d3cdad6b8c0b4394e6f/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 4251999,
+		"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b"
+	},
+	"family": {
+		"id": "2026-10-09-02",
+		"status": "adopted",
+		"updated": "2026-10-09",
+		"finishing": "04",
+		"root": "/logos/family/sleepy/2026-10-09-02/04",
+		"archive": "artwork/logo-family/sleepy/2026-10-09-02",
+		"model": "gpt-image-2.5-sunburst",
+		"series": "material",
+		"foreground": {
+			"subject": {
+				"en": "Clothbound poetry book and crescent",
+				"zh": "布面诗集与月牙"
+			},
+			"original": "/logos/family/sleepy/2026-10-09-02/04/transparent.png",
+			"display": "/logos/family/sleepy/2026-10-09-02/04/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b"
+		},
+		"previous": {
+			"original": "/logos/originals/sleepy-initial-moon.png",
+			"sourceUrl": "https://github.com/nocoo/sleepy/blob/ae4d19ba1c27f9957f4736d10da106bf5b0d3004/public/favicon.svg",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "ba6ad904655a5e1e766a4f6c869dc1cc822970a09284635ab9775dabed1ecca3"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A complete reading tool",
+					"zh": "完整的阅读工具"
+				},
+				"description": {
+					"en": "The complete book and bookmark are uniformly inset with generous clear borders.",
+					"zh": "完整书本与书签等比内收，四周保留安全留白。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Tactile bookcraft",
+					"zh": "可触的书本材质"
+				},
+				"description": {
+					"en": "Forest-green woven cloth, layered ivory paper and a brass crescent retain continuous physical shading.",
+					"zh": "森林绿布面、层叠象牙白纸页与黄铜月牙保留连续物理明暗。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Bookcloth warp and page arcs",
+					"zh": "布纹与书页弧线"
+				},
+				"description": {
+					"en": "Fine staggered bookcloth weave and gently fanned paper-edge arcs, authored for the tangible poetry book rather than botanical animal habitat.",
+					"zh": "独立布纹、纸页弧线、浅接触阴影与细颗粒，不改变前景颜色。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#d7dfce",
+				"role": "background",
+				"label": {
+					"en": "Authored presentation field",
+					"zh": "独立设计背景"
+				},
+				"source": "artwork/logo-family/sleepy/2026-10-09-02/presentation.json background.base; not a product UI token"
+			},
+			{
+				"color": "#17271a",
+				"role": "primary",
+				"label": {
+					"en": "Green cloth",
+					"zh": "绿色布面"
+				},
+				"source": "Native 4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724, sRGB pixel (900, 1400); artwork/logo-family/sleepy/2026-10-09-02/palette.json"
+			},
+			{
+				"color": "#e8d4b5",
+				"role": "accent",
+				"label": {
+					"en": "Ivory paper",
+					"zh": "象牙白书页"
+				},
+				"source": "Native 4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724, sRGB pixel (1000, 300); artwork/logo-family/sleepy/2026-10-09-02/palette.json"
+			},
+			{
+				"color": "#b4965d",
+				"role": "accent",
+				"label": {
+					"en": "Brass crescent",
+					"zh": "黄铜月牙"
+				},
+				"source": "Native 4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724, sRGB pixel (1360, 250); artwork/logo-family/sleepy/2026-10-09-02/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 24/16px, the book silhouette and crescent remain primary cues; fine cloth and page details soften.",
+			"zh": "24/16px 主要依靠书本轮廓与月牙识别，细小布纹与书页细节会柔化。"
+		}
+	},
+	"theme": {
+		"primary": {
+			"value": "#4d6955",
+			"source": "src/styles.css --accent"
+		},
+		"background": {
+			"value": "#f4f1ea",
+			"source": "src/styles.css --paper"
+		},
+		"ink": {
+			"value": "#293f35",
+			"source": "src/styles.css --ink"
+		}
+	},
+	"colors": {
+		"primary": "#4d6955",
+		"background": "#f4f1ea",
+		"ink": "#293f35",
+		"palette": [
+			{
+				"color": "#17271a",
+				"role": "primary",
+				"label": {
+					"en": "Green cloth",
+					"zh": "绿色布面"
+				},
+				"source": "Native 4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724, sRGB pixel (900, 1400); artwork/logo-family/sleepy/2026-10-09-02/palette.json"
+			},
+			{
+				"color": "#e8d4b5",
+				"role": "accent",
+				"label": {
+					"en": "Ivory paper",
+					"zh": "象牙白书页"
+				},
+				"source": "Native 4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724, sRGB pixel (1000, 300); artwork/logo-family/sleepy/2026-10-09-02/palette.json"
+			},
+			{
+				"color": "#b4965d",
+				"role": "accent",
+				"label": {
+					"en": "Brass crescent",
+					"zh": "黄铜月牙"
+				},
+				"source": "Native 4e69f7604e8066908b001a598358f3a9e0acc1953bd39b03e142d4844add6724, sRGB pixel (1360, 250); artwork/logo-family/sleepy/2026-10-09-02/palette.json"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "758aefb194bc5155096f50bcbaa64ab05c5cfd56",
+		"profileSection": "Recent Projects",
+		"description": "Quiet Chinese poetry reading for parents and children",
+		"repositoryRevision": "499603af59cd868669611d3cdad6b8c0b4394e6f"
+	},
+	"overview": {
+		"goal": {
+			"en": "Read thirty selected Chinese classics with your child, follow reading guidance, save local favorites and return offline. No accounts or remote personal storage.",
+			"zh": "与孩子阅读三十首精选古诗，查看亲子提示、保存本地收藏并离线重读，无账号或远程个人存储。"
+		},
+		"techStack": [
+			{
+				"name": "Preact / Vite / TypeScript",
+				"role": {
+					"en": "Local poetry reading interface",
+					"zh": "本地诗文阅读界面"
+				}
+			},
+			{
+				"name": "Workbox / PWA",
+				"role": {
+					"en": "Offline collection and installable reader",
+					"zh": "离线诗集与可安装阅读器"
+				}
+			},
+			{
+				"name": "Cloudflare Workers Static Assets",
+				"role": {
+					"en": "Static production delivery",
+					"zh": "静态生产内容分发"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-10-09",
+			"revision": "ae4d19ba1c27f9957f4736d10da106bf5b0d3004",
+			"snapshot": {
+				"path": "docs/sources/sleepy-2026-10-09.json",
+				"sha256": "fcbba8d22b6048e08884422da39aafe90cf3535c9b727988dce0fbf3c8bc2cf9"
+			},
+			"sources": [
+				"README.md",
+				"package.json",
+				"src/styles.css",
+				"vite.config.ts",
+				"wrangler.jsonc"
+			]
+		}
+	},
+	"socialImage": "/og/sleepy.jpg",
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/sleepy/v1.0.0",
+		"width": 2048,
+		"height": 2048
+	}
+}
