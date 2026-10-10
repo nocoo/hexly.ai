@@ -1,0 +1,37 @@
+{
+	"source": "raw/generated.png",
+	"sha256": "d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3",
+	"samples": [
+		{
+			"name": "Sage card back",
+			"x": 450,
+			"y": 700,
+			"rgb": [131, 160, 133],
+			"color": "#83a085"
+		},
+		{
+			"name": "Ivory paper",
+			"x": 900,
+			"y": 550,
+			"rgb": [245, 233, 215],
+			"color": "#f5e9d7"
+		},
+		{
+			"name": "Ochre bear print",
+			"x": 1200,
+			"y": 850,
+			"rgb": [218, 133, 61],
+			"color": "#da853d"
+		}
+	],
+	"presentation": {
+		"base": "#dce4d4",
+		"source": "presentation.json; independently authored, not a source UI color"
+	},
+	"website": {
+		"primary": "#3f927b",
+		"background": "#faf8ef",
+		"ink": "#66503d",
+		"source": "zoo/src/styles.css at b22a5b477d88241dec3c3b927e955e48e614e19b"
+	}
+}

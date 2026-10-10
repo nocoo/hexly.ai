@@ -1,6 +1,18 @@
 {
-	"status": "pending",
+	"status": "approved",
 	"imageSha256": "d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3",
 	"recordedAt": "2026-10-10T05:52:09.445419+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+	"nextStep": "Finish the approved artwork; preserve the full source and opaque material colors.",
+	"decidedAt": "2026-10-10T06:38:44.017408+00:00",
+	"decisionSource": "owner exact-byte confirmation",
+	"ownerReviewedExactBytes": true,
+	"ownerFeedback": "批准，继续",
+	"inspection": {
+		"nativeDimensions": [2048, 2048],
+		"findings": [
+			"Complete fan of three rounded paperboard picture cards with warm bear printing and sage backs",
+			"Continuous material shading; no crop or standalone 3D animal",
+			"Source occupies much of the canvas; apply uniform inset and inspect pale card edges"
+		]
+	}
 }
