@@ -1,0 +1,186 @@
+{
+	"projects": [
+		{
+			"schemaVersion": 1,
+			"project": "zoo",
+			"version": "1.0.0",
+			"scope": "hexly-campaign",
+			"generationCalls": 0,
+			"approval": "docs/icon-texture-rollout/2026-09-27/authorization.json",
+			"foreground": {
+				"subject": {
+					"en": "Tactile learning cards",
+					"zh": "拟物认知卡片"
+				},
+				"original": "/logos/family/zoo/2026-10-10-01/01/transparent.png",
+				"display": "/logos/family/zoo/2026-10-10-01/01/transparent-1024.webp",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c",
+				"transform": "none; native canvas, original position, normal alpha over"
+			},
+			"texture": {
+				"path": "/textures/zoo/v1.0.1/texture-light.png",
+				"sha256": "d8cec61ddb485ac9374eb85cc38fd1cd8ac9b53d57780cb9dad265f0832d7a4b",
+				"originalWidth": 1024,
+				"placementWidth": 2048,
+				"opacity": 0.7
+			},
+			"baseColor": "#f0f0e9",
+			"bannerGradient": false,
+			"shadow": false,
+			"mask": {
+				"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+				"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+				"kind": "iOS-style continuous-corner approximation",
+				"radiusRatio": 0.2237,
+				"cornerSmoothing": 0.6,
+				"officialAppleAsset": false,
+				"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+				"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+			},
+			"width": 2048,
+			"height": 2048,
+			"upscaledExportSizes": [],
+			"rights": {
+				"identity": "https://github.com/nocoo/zoo/blob/0cff16c109d56c66fabfa1c1bad4abfffc2ebe40/logo.png",
+				"family": "artwork/logo-family/zoo/2026-10-10-01",
+				"texture": "/textures/zoo/v1.0.1/license.txt"
+			},
+			"inspection": {
+				"opaquePixels": 1390920,
+				"foregroundPixelsAtOutline": 0,
+				"opaqueForegroundRgbUnchanged": true,
+				"approvedPilotPixelsMatch": false
+			},
+			"root": "/icons/zoo/v1.0.0",
+			"files": [
+				{
+					"path": "/icons/zoo/v1.0.0/icon.png",
+					"bytes": 4771088,
+					"sha256": "01bc2ef320d976d9e53f28c3697e0bc864c32105863c60be3040a13ff12a0e8e"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded.png",
+					"bytes": 5271879,
+					"sha256": "c255cbba54f11f20cf0bb8fb8b75fe5dba33b4b8dd213f2eddd610ad570c9968"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-32.webp",
+					"bytes": 1920,
+					"sha256": "7c64b0ed44b6bc055b29d82bf67634cfd2528f19f910d0e3182e368c2e841997"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-32.webp",
+					"bytes": 1546,
+					"sha256": "b8831ebe05ede26765ca55d6ef0a3483d31a3cccd7831b37c16072c96a375401"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-64.webp",
+					"bytes": 5428,
+					"sha256": "5b674cc1ff1605be47858ab094fd496fbbb667eef87a5cc38186783e87e664b9"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-64.webp",
+					"bytes": 4862,
+					"sha256": "6868070fe416b10d1cacf6fc2565c6e666b858079f83439a8aa506b284dc9097"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-160.webp",
+					"bytes": 29150,
+					"sha256": "adec28b533a816afeb6ece2089da642625417dd2f60c345719650c83c70b18bf"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-160.webp",
+					"bytes": 26076,
+					"sha256": "2f1be7845d8973bf0a757901bbd37a0e079e43aa9183c72f54b23f2999eee2b5"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-256.webp",
+					"bytes": 70748,
+					"sha256": "df3dd34d6d1b9792e1ce1ac148b67e336de45218a2a2e332d9b6efa7d1869bbc"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-256.webp",
+					"bytes": 64998,
+					"sha256": "7f8e660e375e862ef0182da9336afc50b6b7b57ce093a127dd6e06356b3c317a"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-512.webp",
+					"bytes": 276244,
+					"sha256": "06b7d0f72ea514a69fac2d7ff5ba293992c6bce65a56d784c68d3e5271488176"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-512.webp",
+					"bytes": 262686,
+					"sha256": "52acdfeb078f97db115d3e08935af572d3e96bf667d69863952eee4991a3bba5"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-1024.webp",
+					"bytes": 1078340,
+					"sha256": "8a701c1d1d90426a1a3608cd414fec93eb10a4c1ced209c959feee3f5f18d65b"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-1024.webp",
+					"bytes": 1044374,
+					"sha256": "923b9b57921ecf8ff94acc7d9ab8d2a0bd3db88fedfae17cec601bfca7688f57"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/icon-1024.png",
+					"bytes": 1383594,
+					"sha256": "31bd1eb877bcd64348bcf8f10ec7347b747ed22ff1c8fc9ba4141fb5f33556ec"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/apple-touch-icon.png",
+					"bytes": 44268,
+					"sha256": "c56d8b92e60559dc530be974dd85986ef1a57ea284deacdbec1a9c2089dacec3"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-16.png",
+					"bytes": 817,
+					"sha256": "93d13252e18ae2cb0c8888b4dea27bc305799aebf4e52b60cc6b01a60f4ebf8e"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-32.png",
+					"bytes": 2400,
+					"sha256": "33a889089b112c20f302eb0be5bac589bca89969db03f0c5d4ada53332ea2d2c"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-48.png",
+					"bytes": 4721,
+					"sha256": "d451ee881673b724c330153947669d51a9c83c25b71faf1e359ca3517f0df62f"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-64.png",
+					"bytes": 7675,
+					"sha256": "986fffebe406233fbfe248e92f9a1c666d7acdd1cf297194e815c333c14f4aa4"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-128.png",
+					"bytes": 26655,
+					"sha256": "3d915017f930be6816190fc2ecacb94fd625a837617cca7799236402feb1fb27"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/rounded-256.png",
+					"bytes": 99392,
+					"sha256": "0f785a627927fe0e90960815b7424d6893296c3d0580c99e3a0d8a93d22b9da0"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/favicon.ico",
+					"bytes": 141762,
+					"sha256": "abbf46b59133e1e4bb2cb54161ebfb2e5b3effc91dc7ae3e6be83171b0bf248d"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/provenance.json",
+					"bytes": 1832,
+					"sha256": "08f3c96c1fe07563220aeca0065f6d9e26936a719337cb4af37d372aa3fb8a5c"
+				},
+				{
+					"path": "/icons/zoo/v1.0.0/guide.md",
+					"bytes": 943,
+					"sha256": "f659e9b699014709d3f25efe4f380664562cee64e009a223b2ad64ff8bdc5bff"
+				}
+			]
+		}
+	]
+}

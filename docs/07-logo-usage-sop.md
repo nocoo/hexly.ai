@@ -361,3 +361,21 @@ the packaged declaration and icon bytes at each build entrypoint. Local signed
 installation and system-resolved icon verification passed. The exact sources,
 consumer paths and validation scope are in the
 [local adoption receipt](sources/falcon-icon-adoption-2026-09-29.json).
+
+### Zoo source adoption (2026-10-10)
+
+Zoo adopts approved Sunburst study `2026-10-10-01`, finishing `01`, at source
+commit `0cff16c`. Root `logo.png` retains the exact transparent master. The header
+and favicon use transparent derivatives without the prior bear tile or rotation;
+the bear category control and learning illustrations remain unchanged. README
+uses the rounded presentation. Apple/PWA icons retain opaque square canvases and
+the maskable icon adds safe-area inset; the platform supplies the final mask.
+The source keeps existing PWA cache/update behavior and browser speech. See
+[snapshot and checksums](sources/zoo-2026-10-10.json). Publication is established
+separately by exact-revision release and production observations.
+
+The independent Hexly `/icons/zoo/v1.0.0/` presentation composes the unchanged
+transparent foreground over approved texture v1.0.1 with the established
+continuous-corner mask. All 1,390,920 opaque foreground pixels retain RGB values
+and no foreground meets the outline. This campaign icon does not silently
+replace the source site's separately approved card-impression presentation.

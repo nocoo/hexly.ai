@@ -1,0 +1,258 @@
+{
+	"id": "zoo",
+	"repo": "zoo",
+	"title": "Zoo",
+	"emoji": "🧸",
+	"description": {
+		"en": "Chinese picture learning for young children and parents",
+		"zh": "面向幼儿与家长的中文看图认知"
+	},
+	"category": "tools",
+	"website": "https://zoo.hexly.ai",
+	"websiteSource": "wrangler.jsonc custom_domain; docs/sources/zoo-2026-10-10.json",
+	"repository": "https://github.com/nocoo/zoo",
+	"subject": "Rounded paperboard learning cards with a printed bear and sage backs",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/zoo-family-2026-10-10-01-01.png",
+		"thumbnail": "/logos/display/zoo-160.webp",
+		"display": "/logos/display/zoo-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/zoo/blob/0cff16c109d56c66fabfa1c1bad4abfffc2ebe40/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 3373687,
+		"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c"
+	},
+	"family": {
+		"id": "2026-10-10-01",
+		"status": "adopted",
+		"updated": "2026-10-10",
+		"finishing": "01",
+		"root": "/logos/family/zoo/2026-10-10-01/01",
+		"archive": "artwork/logo-family/zoo/2026-10-10-01",
+		"model": "gpt-image-2.5-sunburst",
+		"series": "material",
+		"foreground": {
+			"subject": {
+				"en": "Tactile learning cards",
+				"zh": "拟物认知卡片"
+			},
+			"original": "/logos/family/zoo/2026-10-10-01/01/transparent.png",
+			"display": "/logos/family/zoo/2026-10-10-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c"
+		},
+		"previous": {
+			"original": "/logos/originals/zoo-initial-bear.png",
+			"sourceUrl": "https://github.com/nocoo/zoo/blob/b22a5b477d88241dec3c3b927e955e48e614e19b/public/favicon.svg",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "dfd2c111647d53da18d84b4f452b5315ed698a357a69dd27d6ab80a898d1b259"
+		},
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Turn a learning card",
+					"zh": "翻开认知卡片"
+				},
+				"description": {
+					"en": "Three complete rounded cards overlap in a compact fan, uniformly inset with safe clear borders.",
+					"zh": "三张完整圆角卡片紧凑叠放，整体等比内收并保留安全留白。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Paper and printed color",
+					"zh": "纸张与印色"
+				},
+				"description": {
+					"en": "Warm ivory paperboard, sage backs and ochre bear printing retain continuous physical shading.",
+					"zh": "暖象牙白卡纸、鼠尾草绿背面与赭色小熊印画保留连续物理明暗。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Rounded card impressions",
+					"zh": "圆角卡片压痕"
+				},
+				"description": {
+					"en": "Independent sage paper, sparse card-corner impressions and soft contact shadows preserve the original foreground.",
+					"zh": "独立绿调纸面、稀疏圆角压痕与柔和接触阴影，保留原始前景。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#dce4d4",
+				"role": "background",
+				"label": {
+					"en": "Authored presentation field",
+					"zh": "独立设计背景"
+				},
+				"source": "artwork/logo-family/zoo/2026-10-10-01/presentation.json background.base; not a product UI token"
+			},
+			{
+				"color": "#83a085",
+				"role": "primary",
+				"label": {
+					"en": "Sage card back",
+					"zh": "卡片背面"
+				},
+				"source": "Native d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3, sRGB pixel (450, 700); artwork/logo-family/zoo/2026-10-10-01/palette.json"
+			},
+			{
+				"color": "#f5e9d7",
+				"role": "accent",
+				"label": {
+					"en": "Ivory paper",
+					"zh": "象牙白纸面"
+				},
+				"source": "Native d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3, sRGB pixel (900, 550); artwork/logo-family/zoo/2026-10-10-01/palette.json"
+			},
+			{
+				"color": "#da853d",
+				"role": "accent",
+				"label": {
+					"en": "Ochre bear print",
+					"zh": "赭色小熊"
+				},
+				"source": "Native d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3, sRGB pixel (1200, 850); artwork/logo-family/zoo/2026-10-10-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 24/16 px, the card silhouette, sage edge and ochre print remain the main cues; paper fibers and facial details soften.",
+			"zh": "24/16 px 依靠卡片轮廓、绿色边缘与赭色印画识别，纸纤维与面部细节会柔化。"
+		}
+	},
+	"theme": {
+		"primary": {
+			"value": "#3f927b",
+			"source": "src/styles.css --zoo-green"
+		},
+		"background": {
+			"value": "#faf8ef",
+			"source": "src/styles.css --zoo-paper"
+		},
+		"ink": {
+			"value": "#66503d",
+			"source": "src/styles.css --zoo-ink"
+		}
+	},
+	"colors": {
+		"primary": "#3f927b",
+		"background": "#faf8ef",
+		"ink": "#66503d",
+		"palette": [
+			{
+				"color": "#83a085",
+				"role": "primary",
+				"label": {
+					"en": "Sage card back",
+					"zh": "卡片背面"
+				},
+				"source": "Native d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3, sRGB pixel (450, 700); artwork/logo-family/zoo/2026-10-10-01/palette.json"
+			},
+			{
+				"color": "#f5e9d7",
+				"role": "accent",
+				"label": {
+					"en": "Ivory paper",
+					"zh": "象牙白纸面"
+				},
+				"source": "Native d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3, sRGB pixel (900, 550); artwork/logo-family/zoo/2026-10-10-01/palette.json"
+			},
+			{
+				"color": "#da853d",
+				"role": "accent",
+				"label": {
+					"en": "Ochre bear print",
+					"zh": "赭色小熊"
+				},
+				"source": "Native d402fe3e740d5211a04ddafe211ce847f1c291a8a924ba5afa3bffa26dea6ca3, sRGB pixel (1200, 850); artwork/logo-family/zoo/2026-10-10-01/palette.json"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "8dac3bfcdf0987a1e6ac998c8c45ddde18678c72",
+		"profileSection": "Recent Projects",
+		"description": "Chinese picture learning for young children and parents",
+		"repositoryRevision": "0cff16c109d56c66fabfa1c1bad4abfffc2ebe40"
+	},
+	"overview": {
+		"goal": {
+			"en": "Explore 246 Chinese learning cards with an adult, browse full-screen illustrations, hear browser speech and keep favorites on the device. Installable PWA; previously viewed content can work offline, but speech depends on the device.",
+			"zh": "由成人陪伴探索 246 张认知卡片，全屏翻看插画、收听浏览器语音并保存本机收藏。支持 PWA 安装与已缓存内容离线访问，语音能力依赖设备。"
+		},
+		"techStack": [
+			{
+				"name": "React / TypeScript / Vite",
+				"role": {
+					"en": "Static picture-card interface",
+					"zh": "静态认知卡片界面"
+				}
+			},
+			{
+				"name": "animal-island-ui / naive-icons",
+				"role": {
+					"en": "Existing playful controls and icons",
+					"zh": "既有亲子控件与图标"
+				}
+			},
+			{
+				"name": "Cloudflare Workers Static Assets / PWA",
+				"role": {
+					"en": "Static delivery, build health and bounded offline cache",
+					"zh": "静态分发、构建健康信息与有上限的离线缓存"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-10-10",
+			"revision": "0cff16c109d56c66fabfa1c1bad4abfffc2ebe40",
+			"snapshot": {
+				"path": "docs/sources/zoo-2026-10-10.json",
+				"sha256": "24c943bb5493bdf401ee7553a89a41a1e9cc8a892cd922ce7cc5c945e481fd75"
+			},
+			"sources": [
+				"README.md",
+				"package.json",
+				"src/styles.css",
+				"vite.config.ts",
+				"wrangler.jsonc",
+				"AGENTS.md"
+			]
+		}
+	},
+	"socialImage": "/og/zoo.jpg",
+	"brandTexture": {
+		"root": "/textures/zoo/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Picture-card paper",
+			"zh": "认知卡纸"
+		},
+		"description": {
+			"en": "Soft paperboard fibers and shallow rounded-card impressions around a quiet field.",
+			"zh": "柔和卡纸纤维与浅浅圆角翻卡压痕，围绕安静留白。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/zoo/v1.0.0",
+		"width": 2048,
+		"height": 2048
+	}
+}
