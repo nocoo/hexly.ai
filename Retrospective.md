@@ -439,3 +439,23 @@ an inert `.svg.txt` archive with its original path and checksum instead; apply
 accessible markup to actual new application assets, not preserved originals.
 Check the archive's lint scope before staging and never bypass the hook or
 exclude all source SVGs to accommodate one historical file.
+
+## 2026-10-10 - Validate texture review shape before exporting
+
+Zoo's first local texture export omitted the explicit `fullCanvas`,
+`productionCrop` and `repeat` inspection fields required by existing tests.
+The visual inspection had covered those facts, but prose alone did not satisfy
+machine validation. Before any upload, record those fields and export v1.0.1,
+retaining the unselected v1.0.0 pack unchanged. Read the existing review assertions
+before preparing immutable exports; do not wait until publication to validate.
+
+## 2026-10-10 - Contain asset regeneration to the named project
+
+The documented `assets:build` sequence regenerated existing social JPEGs with
+current renderer output and expanded unrelated JSON formatting. Inventory refused
+the changed immutable `public/og.jpg` before upload. Compare parsed metadata to
+HEAD, remove only this run's formatting churn, and restore this run's changed
+social files from their checksummed CDN objects while keeping generated copies
+in the private work directory. Preserve the new Zoo card. Future onboarding must
+verify all pre-existing inventory hashes after generation, before publication;
+never accept renderer drift as a new version of unrelated projects.

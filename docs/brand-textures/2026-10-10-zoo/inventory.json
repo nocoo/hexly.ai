@@ -1,0 +1,63 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-10-10T06:40:53.733231+00:00",
+	"model": "gpt-image-2.5-flare",
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"plannedRequests": 2,
+	"authorization": {
+		"generation": "Owner requested Zoo logo and textures, approved the Logo, then said to preserve latest PWA and continue to deployment.",
+		"acceptance": "Exact-byte owner review required before texture derivatives or integration",
+		"publication": "Owner authorized deployment after completion on 2026-10-10"
+	},
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"projects": [
+		{
+			"id": "zoo",
+			"title": "Zoo",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/zoo/texture-studies/2026-10-10-flare-onboarding-01",
+			"version": "1.0.0",
+			"root": "/textures/zoo/v1.0.0",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/zoo-family-2026-10-10-01-01.png",
+				"source": "artwork/logo-family/zoo/2026-10-10-01/finishing/01/exports/zoo-transparent-2048.png",
+				"kind": "original",
+				"width": 2048,
+				"height": 2048,
+				"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c",
+				"bytes": 3373687,
+				"rgbaSha256": "cff6ddc599eea02ce822545cfa29f26872bb4db67c1b73ab6310796b00acc7f2"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "working-material",
+				"name": {
+					"en": "Picture-card paper",
+					"zh": "认知卡纸"
+				},
+				"description": {
+					"en": "Soft paperboard fibers and shallow rounded-card impressions around a quiet field.",
+					"zh": "柔和卡纸纤维与浅浅圆角翻卡压痕，围绕安静留白。"
+				},
+				"motif": "Uncoated paperboard fibers with sparse rounded-card impressions and short registration notches.",
+				"rationale": "The approved physical picture cards and picture-browsing interaction suggest tactile paperboard, not botanical habitat."
+			},
+			"productEvidence": {
+				"source": "artwork/logo-family/zoo/2026-10-10-01/onboarding.md",
+				"purpose": {
+					"en": "Chinese picture learning for young children and parents",
+					"zh": "面向幼儿与家长的中文看图认知"
+				},
+				"inspectedRevision": "dc95b0e"
+			}
+		}
+	]
+}

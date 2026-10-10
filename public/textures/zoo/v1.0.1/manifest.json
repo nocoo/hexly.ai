@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "zoo",
+	"version": "1.0.1",
+	"root": "/textures/zoo/v1.0.1",
+	"canonical": "https://hexly.ai/projects/zoo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/zoo/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Picture-card paper", "zh": "认知卡纸" },
+		"description": {
+			"en": "Soft paperboard fibers and shallow rounded-card impressions around a quiet field.",
+			"zh": "柔和卡纸纤维与浅浅圆角翻卡压痕，围绕安静留白。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zoo-family-2026-10-10-01-01.png",
+		"source": "artwork/logo-family/zoo/2026-10-10-01/finishing/01/exports/zoo-transparent-2048.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c",
+		"bytes": 3373687,
+		"rgbaSha256": "cff6ddc599eea02ce822545cfa29f26872bb4db67c1b73ab6310796b00acc7f2"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0fe8496c-c363-461b-b7e6-449285496f16",
+			"source": "artwork/brands/zoo/texture-studies/2026-10-10-flare-onboarding-01/light",
+			"request": "/textures/zoo/v1.0.1/source-light-request.json",
+			"response": "/textures/zoo/v1.0.1/source-light-response.json",
+			"prompt": "/textures/zoo/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/zoo/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/zoo/v1.0.1/texture-light.png",
+				"sha256": "d8cec61ddb485ac9374eb85cc38fd1cd8ac9b53d57780cb9dad265f0832d7a4b",
+				"bytes": 1721693,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "898e102b-3f6a-4840-827b-37fa7d3b8761",
+			"source": "artwork/brands/zoo/texture-studies/2026-10-10-flare-onboarding-01/dark",
+			"request": "/textures/zoo/v1.0.1/source-dark-request.json",
+			"response": "/textures/zoo/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/zoo/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/zoo/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/zoo/v1.0.1/texture-dark.png",
+				"sha256": "f6a36edb5c851659ee71be459764cd078e9e67b124bffabdff2af9bef2bdeab3",
+				"bytes": 1746701,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/zoo/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1721693,
+			"sha256": "d8cec61ddb485ac9374eb85cc38fd1cd8ac9b53d57780cb9dad265f0832d7a4b"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 202476,
+			"sha256": "4a724757ac130f43e89b75c3ee5f797fd1e6c9ecf18cb101b354d63ca350ed22"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3624,
+			"sha256": "ec737b911ae41469d3ec223edcc875606139acba3ee3b5764a1ffcd95c9def43"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1038,
+			"sha256": "8b3fca82669edbbc0639f475163a6a83755c28ae0a7caf1f1b1d90ad098712d7"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "90cc39d196a11d064dfa47c8f861808c185fb00972aba637e4d91d8692ae214d"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "57724027be0aa5da43492a37a82513567ee6fde46f9c182faa15d6ebb576bfb4"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1012,
+			"sha256": "32e50d080d4e59c9250f7ceb76e4a78e902bfce231bcc3def66dcdf1e866af4c"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1746701,
+			"sha256": "f6a36edb5c851659ee71be459764cd078e9e67b124bffabdff2af9bef2bdeab3"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 240110,
+			"sha256": "c671b4471db718e17230f0ec114b4f7c86c900f01a5f5b5b14c73f2b574c6a70"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4132,
+			"sha256": "5962af41be75c2bf53be3774fe3c986eb30058a677c49cf5b450cf06f07c1e28"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1056,
+			"sha256": "8b96530f5e551dff97f086e221a421b795211755863b0ff8d0337d090c8006ba"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "046ccf8a0853ac86d3ac88b384304e45ea6012ace14c8746fd11efc3f8c1d818"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "6d1d05dd7be70e9ad29b75ae13f3a0b8e2444c7bf1371e6fd78930327e9b669c"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1012,
+			"sha256": "d5ba63f58438e865cb2ec6f9738a2e9803025d9bac2035c4937fe32668a11a61"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4440,
+			"sha256": "a77f8bffef261ac6b4e68de52517cca0217c5901b7ed13e0aa7afe5648e3cf8c"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 818,
+			"sha256": "39ced21d792a3c00a4ed5071fe8f05a76054256153daa1b0c90d719d4f1b9676"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "a4985386fbd566f101debd34093ee3cdb721b61fe228e19469ebbaffe613e2d6"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2445,
+			"sha256": "56de4a83005fa1dcc40acaf943c01c5be8856215d1fa086be82d0ebf293b1fdd"
+		},
+		{
+			"path": "/textures/zoo/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3425,
+			"sha256": "ee9e9d42a8defed91a2419aae39b9589ebd84c766d95ee12af64afaa4c57a416"
+		}
+	]
+}

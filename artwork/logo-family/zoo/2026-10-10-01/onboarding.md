@@ -1,7 +1,12 @@
 # Zoo onboarding intake
 
-Status: source inspected; first identity study pending. No source adoption,
-catalogue integration, R2 publication, push or deployment has occurred.
+Historical intake: source inspected before the first identity study.
+
+Current progress: owner approved the exact Logo and both textures. Source adoption
+commit `0cff16c` and release `48e110b` (v1.0.1) are deployed and verified. The
+profile addition is published at `8dac3bf`. Hexly catalogue and immutable material
+publication are being verified; see `docs/sources/zoo-publication-2026-10-10.json`.
+The checklist below preserves the original intake scope, not remaining status.
 
 ## Verified source facts
 

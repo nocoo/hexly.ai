@@ -1,6 +1,6 @@
 # Project profiles
 
-83 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
+84 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
@@ -87,3 +87,4 @@
 | [🪶 Kite](83-kite.md) | GPT Image · Animal campaign kit | #eb6e36 | transparent |
 | [📖 Sleepy](84-sleepy.md) | Adopted family | #4d6955 | #f4f1ea |
 | [🦏 Rhino](85-rhino.md) | Adopted family | #a1948a | transparent |
+| [🧸 Zoo](86-zoo.md) | Adopted family | #3f927b | #faf8ef |

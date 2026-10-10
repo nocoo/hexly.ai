@@ -1,0 +1,113 @@
+{
+	"project": "zoo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-material",
+		"name": { "en": "Picture-card paper", "zh": "认知卡纸" },
+		"description": {
+			"en": "Soft paperboard fibers and shallow rounded-card impressions around a quiet field.",
+			"zh": "柔和卡纸纤维与浅浅圆角翻卡压痕，围绕安静留白。"
+		},
+		"motif": "Uncoated paperboard fibers with sparse rounded-card impressions and short registration notches.",
+		"rationale": "The approved physical picture cards and picture-browsing interaction suggest tactile paperboard, not botanical habitat."
+	},
+	"productEvidence": {
+		"source": "artwork/logo-family/zoo/2026-10-10-01/onboarding.md",
+		"purpose": {
+			"en": "Chinese picture learning for young children and parents",
+			"zh": "面向幼儿与家长的中文看图认知"
+		},
+		"inspectedRevision": "dc95b0e"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/zoo-family-2026-10-10-01-01.png",
+		"source": "artwork/logo-family/zoo/2026-10-10-01/finishing/01/exports/zoo-transparent-2048.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c",
+		"bytes": 3373687,
+		"rgbaSha256": "cff6ddc599eea02ce822545cfa29f26872bb4db67c1b73ab6310796b00acc7f2"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-10-zoo/inventory.json",
+	"sourceInventorySha256": "b0c366b1535194b907c91b6808878a920704f216d5b013aec06dc83b683ec0d4",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0fe8496c-c363-461b-b7e6-449285496f16",
+			"source": "artwork/brands/zoo/texture-studies/2026-10-10-flare-onboarding-01/light",
+			"request": "/textures/zoo/v1.0.0/source-light-request.json",
+			"response": "/textures/zoo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/zoo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/zoo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/zoo/v1.0.0/texture-light.png",
+				"sha256": "d8cec61ddb485ac9374eb85cc38fd1cd8ac9b53d57780cb9dad265f0832d7a4b",
+				"bytes": 1721693,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "898e102b-3f6a-4840-827b-37fa7d3b8761",
+			"source": "artwork/brands/zoo/texture-studies/2026-10-10-flare-onboarding-01/dark",
+			"request": "/textures/zoo/v1.0.0/source-dark-request.json",
+			"response": "/textures/zoo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/zoo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/zoo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/zoo/v1.0.0/texture-dark.png",
+				"sha256": "f6a36edb5c851659ee71be459764cd078e9e67b124bffabdff2af9bef2bdeab3",
+				"bytes": 1746701,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 7.184269619204532,
+		"darkMinimum": 6.432982200799523,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-10T07:29:32.898Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
