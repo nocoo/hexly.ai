@@ -73,6 +73,34 @@
 			"isolatedRerun": "Same test passed in 2.9 seconds; complete verification rerun pending"
 		},
 		"historicalFinishingPasses": 119,
-		"immutablePriorInventoryEntriesChanged": 0
+		"immutablePriorInventoryEntriesChanged": 0,
+		"browserAfterFix": {
+			"passed": 75,
+			"durationSeconds": 174,
+			"commit": "aa234c96",
+			"fix": "Explicit popup readiness rather than opener navigation wait; no timeout increase or retry",
+			"limitation": "Native navigation took 28.6 seconds in this run; final complete verification is separate"
+		},
+		"completeVerify": {
+			"command": "bun run verify",
+			"exitCode": 0,
+			"elapsedSeconds": 345.7,
+			"unitTests": 398,
+			"httpTests": 28,
+			"browserTests": 75,
+			"staticSecurityBuildAndDeployDryRun": "passed",
+			"revision": "aa234c96",
+			"browserTestBehavior": "Real popup clicks and explicit readiness assertions, no retries or increased timeout"
+		}
+	},
+	"publication": {
+		"objects": 127,
+		"sourcePaths": 136,
+		"bucket": "hexlyai",
+		"origin": "https://h.no.mt",
+		"receipt": "docs/assets/publication.jsonl",
+		"network": "Initial direct upload stopped on ECONNRESET; resumed via existing local proxy and receipts.",
+		"canonicalCache": "Purged only https://h.no.mt/logos/family/zoo/2026-10-10-01/01/transparent.png using existing zone permissions after verifying origin bytes; bare URL subsequently passed checksum.",
+		"unrelatedObjectsOverwritten": false
 	}
 }
