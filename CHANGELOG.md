@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.4.0] - 2026-10-10
+
+### Documentation
+
+- record zoo onboarding and logo direction ([6d5d561](https://github.com/nocoo/hexly.ai/commit/6d5d561e5a32ef5a72b38a4c07a00f5d313608d4))
+- archive zoo logo generation receipt ([6cb0c47](https://github.com/nocoo/hexly.ai/commit/6cb0c470c72ea136a4ab8c6dc069fbcc8772d1af))
+- record zoo archive validation details ([553a538](https://github.com/nocoo/hexly.ai/commit/553a538db3efa4e9f04906ff2c9a041824d8fcee))
+- record zoo browser and archive checks ([98f7461](https://github.com/nocoo/hexly.ai/commit/98f7461fc8294264e69722608b4bfb76b4e9b413))
+- verify and publish zoo brand materials ([c76748e](https://github.com/nocoo/hexly.ai/commit/c76748ede27654676a1156f288a3adb8c163da30))
+
+### Features
+
+- finish approved zoo material identity ([0628cab](https://github.com/nocoo/hexly.ai/commit/0628cab31fa3c222e8ff07f6d36c5b7a86f9e331))
+- onboard zoo with approved brand archives ([f99c793](https://github.com/nocoo/hexly.ai/commit/f99c7933234e79b8e232d6a9e1e7e1c116604b59))
+
+### Tests
+
+- await native navigation on popup pages ([aa234c9](https://github.com/nocoo/hexly.ai/commit/aa234c96779b3b9be304a54aafeafb9f5850d07c))
+
 ## [1.3.0] - 2026-10-09
 
 ### Documentation
