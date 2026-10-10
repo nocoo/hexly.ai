@@ -1,10 +1,78 @@
 {
-  "date": "2026-10-10",
-  "rawApproval": "Owner exact-byte approval of both displayed native canvases",
-  "logo": {"finishing": "01", "minimumRoundedClearanceAt2048": 271.5, "clippedPixels": 0, "removedComponents": 0},
-  "localBrowser": {"widths": [1440,390], "themes": ["light","dark"], "horizontalOverflow": false, "brokenVisibleImages": [], "pageErrorsAfterReviewMarkupFix": []},
-  "staticReview": "Original and candidate, modes, palette, sizes, foreground edges and prompt downloads checked using shared review script; missing generation-prompt id corrected before publication",
-  "texture": {"activeVersion":"1.0.1", "crop":false,"repeat":false,"surfaceOpacity":0.45},
-  "tests": "142 focused catalogue/status/texture assertions passed; dedicated Zoo assertions passed; full verification recorded with release",
-  "sourceDeployment": "docs/sources/zoo-publication-2026-10-10.json"
+	"date": "2026-10-10",
+	"rawApproval": "Owner exact-byte approval of both displayed native canvases",
+	"logo": {
+		"finishing": "01",
+		"minimumRoundedClearanceAt2048": 271.5,
+		"clippedPixels": 0,
+		"removedComponents": 0
+	},
+	"localBrowser": {
+		"widths": [
+			1440,
+			390
+		],
+		"themes": [
+			"light",
+			"dark"
+		],
+		"horizontalOverflow": false,
+		"brokenVisibleImages": [],
+		"pageErrorsAfterReviewMarkupFix": []
+	},
+	"staticReview": "Original and candidate, modes, palette, sizes, foreground edges and prompt downloads checked using shared review script; missing generation-prompt id corrected before publication",
+	"texture": {
+		"activeVersion": "1.0.1",
+		"crop": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"tests": "142 focused catalogue/status/texture assertions passed; dedicated Zoo assertions passed; full verification recorded with release",
+	"sourceDeployment": "docs/sources/zoo-publication-2026-10-10.json",
+	"presentationIcon": {
+		"version": "1.0.0",
+		"opaquePixels": 1390920,
+		"opaqueForegroundRgbUnchanged": true,
+		"foregroundPixelsAtOutline": 0
+	},
+	"browser": {
+		"matrixCases": 8,
+		"tabChecks": 12,
+		"widths": [
+			1440,
+			390
+		],
+		"locales": [
+			"zh",
+			"en"
+		],
+		"themes": [
+			"light",
+			"dark"
+		],
+		"themeSelection": "Actual UI buttons",
+		"horizontalOverflow": false,
+		"pageErrors": [],
+		"textureResources200": 7,
+		"staticArchiveResources200": 15,
+		"downloadSha256": "d8cec61ddb485ac9374eb85cc38fd1cd8ac9b53d57780cb9dad265f0832d7a4b"
+	},
+	"validation": {
+		"unitTests": 398,
+		"coverage": {
+			"statements": 99.54,
+			"branches": 98.53,
+			"functions": 100,
+			"lines": 100
+		},
+		"httpTests": 28,
+		"browserFirstFullRun": {
+			"passed": 74,
+			"failed": 1,
+			"failure": "Existing Pew repository popup click timed out during full parallel run; trace retained. No source or test behavior changed.",
+			"isolatedRerun": "Same test passed in 2.9 seconds; complete verification rerun pending"
+		},
+		"historicalFinishingPasses": 119,
+		"immutablePriorInventoryEntriesChanged": 0
+	}
 }
