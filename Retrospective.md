@@ -459,3 +459,7 @@ social files from their checksummed CDN objects while keeping generated copies
 in the private work directory. Preserve the new Zoo card. Future onboarding must
 verify all pre-existing inventory hashes after generation, before publication;
 never accept renderer drift as a new version of unrelated projects.
+
+## 2026-10-10 - Await native popup readiness on the popup
+
+Two full three-worker Chromium runs timed out in the native card-navigation test even though the intercepted GitHub popup had already opened. In the first trace the popup event completed around 107679 ms but the opener's `locator.click` remained pending until teardown; in the second it opened around 102246 ms while the click returned at 131022 ms, leaving almost no budget for the subsequent middle click. The isolated test passed, so increasing the timeout or replacing the native gesture would conceal the lifecycle problem. Native popup clicks now use `noWaitAfter: true` only to avoid the opener's implicit navigation wait. The test still waits for the actual popup event, checks the repository URL and loaded title, and verifies the middle-click detail page URL and rendered identity before closing each tab. No retries, timeout increase or browser-selection changes were added.

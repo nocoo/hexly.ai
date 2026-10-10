@@ -275,9 +275,13 @@ test.describe("desktop", () => {
 		const card = page.locator('[data-project="pew"]');
 		await card.scrollIntoViewIfNeeded();
 		const repositoryPage = page.waitForEvent("popup");
-		await card.getByRole("link", { name: "View on GitHub: Pew" }).click();
+		// Popup readiness belongs to the new page, not the opener's navigation wait.
+		await card
+			.getByRole("link", { name: "View on GitHub: Pew" })
+			.click({ noWaitAfter: true });
 		const repository = await repositoryPage;
 		await expect(repository).toHaveURL("https://github.com/nocoo/pew");
+		await expect(repository).toHaveTitle("Pew repository");
 		await repository.close();
 		await context.unroute("https://github.com/nocoo/pew");
 		await page.bringToFront();
@@ -286,7 +290,7 @@ test.describe("desktop", () => {
 		// Open the native tab in front so Chromium initializes it before the page event.
 		await card
 			.getByRole("link", { name: "View project: Pew" })
-			.click({ button: "middle", modifiers: ["Shift"] });
+			.click({ button: "middle", modifiers: ["Shift"], noWaitAfter: true });
 		const detail = await detailPage;
 		await detail.bringToFront();
 		await detail.waitForURL(/\/projects\/pew\/?$/, {
