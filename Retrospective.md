@@ -429,3 +429,13 @@ published v1.0.0 bytes; export corrected review metadata as v1.0.1 and select it
 only after validation. Resolve icon background provenance by its recorded source
 method, not a newer independent decorative surface. Complete local validation
 before publishing any new immutable package; never repair it by overwriting R2.
+
+## 2026-10-10 - Keep unmodified source SVG archives inert
+
+Zoo's intake copied its exact favicon SVG into the workbench as an active SVG.
+The normal commit hook correctly rejected its missing accessible title. Adding
+a title would invalidate source-byte provenance. Keep the unchanged source as
+an inert `.svg.txt` archive with its original path and checksum instead; apply
+accessible markup to actual new application assets, not preserved originals.
+Check the archive's lint scope before staging and never bypass the hook or
+exclude all source SVGs to accommodate one historical file.
