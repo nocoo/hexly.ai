@@ -172,8 +172,7 @@ test.describe("restores directory filters with browser back and reloads a shared
 		await page.goto("/");
 		await page.getByRole("searchbox", { name: "Search projects" }).fill("pew");
 		await page
-			.locator('[data-project="pew"]')
-			.getByRole("link", { name: "View project: Pew", exact: true })
+			.locator('[data-project="pew"] .card-main')
 			.click({ position: { x: 8, y: 8 } });
 		await expect(page).toHaveURL(/\/projects\/pew$/);
 		await expect(page.locator("#identity-title")).toContainText("Pew");
@@ -215,10 +214,7 @@ test("keeps archived projects accessible through their category and direct logo 
 	);
 	await page.getByRole("button", { name: /^Archived/ }).click();
 	await expect(page.locator(".project-card")).toHaveCount(archived.length);
-	await page
-		.locator('[data-project="uptime-kuma-skill"]')
-		.getByRole("link", { name: "View project: Uptime Kuma Skill" })
-		.click();
+	await page.locator('[data-project="uptime-kuma-skill"] .card-main').click();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
 	);
@@ -289,7 +285,7 @@ test.describe("desktop", () => {
 		const detailPage = context.waitForEvent("page");
 		// Open the native tab in front so Chromium initializes it before the page event.
 		await card
-			.getByRole("link", { name: "View project: Pew" })
+			.locator(".card-main")
 			.click({ button: "middle", modifiers: ["Shift"], noWaitAfter: true });
 		const detail = await detailPage;
 		await detail.bringToFront();

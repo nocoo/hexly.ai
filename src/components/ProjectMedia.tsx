@@ -58,9 +58,11 @@ export function VideoPlayer({
 					<button
 						className="project-video-poster"
 						type="button"
-						aria-label={`${t.playVideo}: ${video.title[locale]}`}
 						onClick={() => setStarted(true)}
 					>
+						<span className="sr-only">
+							{`${t.playVideo}: ${video.title[locale]}`}
+						</span>
 						<img
 							crossOrigin="anonymous"
 							src={assetUrl(video.poster)}
@@ -68,12 +70,13 @@ export function VideoPlayer({
 							width={1920}
 							height={1080}
 							decoding="async"
+							aria-hidden="true"
 						/>
-						<span className="project-video-play">
+						<span className="project-video-play" aria-hidden="true">
 							<Icon name="play" />
 							<span>{t.playVideo}</span>
 						</span>
-						<span className="project-video-duration">
+						<span className="project-video-duration" aria-hidden="true">
 							{duration(video.durationSeconds)}
 						</span>
 					</button>

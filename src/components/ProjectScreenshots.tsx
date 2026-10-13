@@ -243,7 +243,6 @@ export function ProjectScreenshots(props: GalleryProps) {
 							href={shot.src}
 							target="_blank"
 							rel="noreferrer"
-							aria-label={`${t.previewImage}: ${shot.alt[locale]}`}
 							aria-haspopup="dialog"
 							onClick={(event) => {
 								if (

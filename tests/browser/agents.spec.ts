@@ -36,13 +36,13 @@ test("copies page-specific instructions across site surfaces", async ({
 							: "# Hexly project catalogue";
 		await expect(guide.locator("pre")).toContainText(sentinel);
 		const text = await guide.locator("pre").textContent();
-		await guide.getByRole("button", { name: "Copy instructions" }).click();
+		const copyButton = guide.locator(".copy-button");
+		await expect(copyButton).toHaveText("Copy instructions");
+		await copyButton.click();
 		await expect
 			.poll(() => page.evaluate(() => navigator.clipboard.readText()))
 			.toBe(text);
-		await expect(
-			guide.getByRole("button", { name: "Copy instructions" }),
-		).toHaveText("Copied");
+		await expect(copyButton).toHaveText("Copied");
 		expect(
 			await page.evaluate(
 				() => document.documentElement.scrollWidth <= innerWidth,

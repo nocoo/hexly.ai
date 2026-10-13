@@ -32,10 +32,9 @@ test.describe("touch outro library", () => {
 		await expect(section.locator("[data-template-example]")).toHaveCount(5);
 		await expect(page.locator("video")).toHaveCount(0);
 		for (const example of manifest.examples) {
-			const card = section.getByRole("article", {
-				name: example.video.title.en,
-				exact: true,
-			});
+			const card = section.locator(
+				`[data-template-example="${example.video.id}"]`,
+			);
 			await expect(
 				card.getByRole("link", { name: "Direct link" }),
 			).toHaveAttribute("href", example.video.src);
@@ -79,10 +78,7 @@ test.describe("touch outro library", () => {
 			.click();
 		await expect(
 			section.locator(".project-video-poster").first(),
-		).toHaveAttribute(
-			"aria-label",
-			`播放视频: ${manifest.examples[0]?.video.title.zh}`,
-		);
+		).toHaveAccessibleName(`播放视频: ${manifest.examples[0]?.video.title.zh}`);
 		await expect(
 			section.locator(".project-video-poster img").first(),
 		).toHaveAttribute("src", manifest.examples[0]?.video.poster ?? "");

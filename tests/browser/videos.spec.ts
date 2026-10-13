@@ -49,9 +49,7 @@ test("the collection shows the chosen project in 5 openings, 5 layouts and 5 end
 		library.getByRole("button", { name: /^Endings/ }),
 	).toHaveAttribute("aria-pressed", "true");
 	await page.getByLabel("Your project", { exact: true }).selectOption("bogo");
-	await page
-		.getByRole("link", { name: "Explore: Colophon", exact: true })
-		.click();
+	await page.locator('[data-video-template="colophon"] a').click();
 	await expect(
 		page.locator('.vk-stage [data-ending="colophon"]'),
 	).toBeVisible();
