@@ -33,7 +33,6 @@ export function Header({
 							event.preventDefault();
 							home();
 						}}
-						aria-label="hexly.ai"
 					>
 						<BrandMark />
 						<span>
@@ -46,7 +45,6 @@ export function Header({
 							type="button"
 							onClick={() => onView("directory")}
 							aria-pressed={["directory", "logos", "project"].includes(view)}
-							aria-label={t.directory}
 							title={t.directory}
 						>
 							<Icon name="grid" />
@@ -56,7 +54,6 @@ export function Header({
 							type="button"
 							onClick={() => onView("templates")}
 							aria-pressed={view === "templates"}
-							aria-label={t.templates}
 							title={t.templates}
 						>
 							<Icon name="image" />
@@ -66,7 +63,6 @@ export function Header({
 							type="button"
 							onClick={() => onView("status")}
 							aria-pressed={view === "status"}
-							aria-label={t.status}
 							title={t.status}
 						>
 							<Icon name="activity" />

@@ -391,7 +391,6 @@ export function Templates({
 								>
 									<a
 										href={href}
-										aria-label={`${t.open}: ${item.title}`}
 										onClick={(event) => {
 											if (plainClick(event)) {
 												event.preventDefault();
@@ -399,7 +398,7 @@ export function Templates({
 											}
 										}}
 									>
-										<div className="video-card-art">
+										<div className="video-card-art" aria-hidden="true">
 											<Suspense
 												fallback={
 													<div className="video-loading">{t.loading}</div>
@@ -413,7 +412,7 @@ export function Templates({
 												/>
 											</Suspense>
 											<span className="video-card-play">
-												<Icon name="arrow" />
+												<Icon name="arrow" aria-hidden="true" />
 											</span>
 										</div>
 										<div className="video-card-content">
@@ -424,7 +423,10 @@ export function Templates({
 												<span>{t[options.theme]}</span>
 											</div>
 											<div className="video-card-title">
-												<h2>{item.title}</h2>
+												<h2>
+													<span className="sr-only">{`${t.open}: `}</span>
+													{item.title}
+												</h2>
 												<span aria-hidden="true">↗</span>
 											</div>
 											<p>{item.description[locale]}</p>
