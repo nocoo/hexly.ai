@@ -37,7 +37,6 @@ export function TemplateExamples({ locale }: { locale: Locale }) {
 						className="template-example"
 						key={example.video.id}
 						data-template-example={example.video.id}
-						aria-label={example.video.title[locale]}
 					>
 						<VideoPlayer
 							video={example.video}
