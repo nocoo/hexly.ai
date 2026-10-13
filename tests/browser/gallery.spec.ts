@@ -114,14 +114,14 @@ test("shows evidenced website colors separately from a tool's artwork palette", 
 	await expect(page.locator(".theme-palette")).toContainText("#c7d9a9");
 	await expect(page.locator(".theme-palette")).toContainText("#f8f6f0");
 	await expect(
-		page.getByRole("button", { name: "Copy color #c68664", exact: true }),
+		page.getByRole("button", { name: /^Copy color #c68664\b/ }),
 	).toBeVisible();
 	await page.goto("/projects/hermes-on-herdr#brand");
 	await expect(page.locator("#identity-title")).toContainText(
 		"hermes on herdr",
 	);
 	await expect(
-		page.getByRole("button", { name: "Copy color #2c3f52", exact: true }),
+		page.getByRole("button", { name: /^Copy color #2c3f52\b/ }),
 	).toBeVisible();
 	await expect(page.locator(".theme-palette")).toHaveCount(0);
 });
@@ -377,9 +377,7 @@ test("offers the official installation badge in light, dark and Chinese", async 
 test("copies current palette colors", async ({ page, context }) => {
 	await context.grantPermissions(["clipboard-read", "clipboard-write"]);
 	await page.goto("/projects/pew#brand");
-	await page
-		.getByRole("button", { name: "Copy color #bfb2cf", exact: true })
-		.click();
+	await page.getByRole("button", { name: /^Copy color #bfb2cf\b/ }).click();
 	await expect(page.locator(".toast")).toHaveText("Copied #bfb2cf");
 	expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
 		"#bfb2cf",

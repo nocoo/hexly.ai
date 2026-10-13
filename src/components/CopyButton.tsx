@@ -20,7 +20,6 @@ export function CopyButton({
 			<button
 				className="copy-button"
 				type="button"
-				aria-label={label}
 				disabled={!text}
 				onClick={async () => {
 					try {

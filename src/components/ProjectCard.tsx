@@ -35,7 +35,6 @@ export function ProjectCard({
 			<a
 				className="card-main"
 				href={`/projects/${project.id}${artworkOnly ? "#brand" : ""}`}
-				aria-label={`${artworkOnly ? t.viewLogo : t.viewProject}: ${project.title}`}
 				onClick={(event) => {
 					if (
 						event.button !== 0 ||
@@ -92,10 +91,10 @@ export function ProjectCard({
 					}
 					target="_blank"
 					rel="noreferrer"
-					aria-label={`${chromeStore ? t.addToChrome : t.source}: ${project.title}`}
 					title={`${chromeStore ? t.addToChrome : t.source}: ${project.title}`}
+					aria-label={`${chromeStore ? t.addToChrome : t.source}: ${project.title}`}
 				>
-					<Icon name={chromeStore ? "download" : "github"} />
+					<Icon name={chromeStore ? "download" : "github"} aria-hidden="true" />
 					{chromeStore ? "Chrome" : "GitHub"}
 				</a>
 			)}

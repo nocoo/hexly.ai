@@ -37,27 +37,29 @@ export function Palette({
 		);
 	return (
 		<div className="palette-swatches">
-			{swatches.map(([key, swatch]) => (
-				<button
-					type="button"
-					key={key}
-					className="palette-swatch"
-					onClick={() => onCopy?.(swatch.color)}
-					aria-label={`${t.copyColor} ${swatch.color}`}
-					title={swatch.source}
-				>
-					<span
-						className={`swatch-color ${swatch.color === "transparent" ? "checkerboard" : ""}`}
-						style={{ backgroundColor: swatch.color }}
-					/>
-					<span className="swatch-value">
-						{swatch.color === "transparent" ? t.transparent : swatch.color}
-					</span>
-					<span className="swatch-role">
-						{swatch.label?.[locale] ?? t[swatch.role]}
-					</span>
-				</button>
-			))}
+			{swatches.map(([key, swatch]) => {
+				const value =
+					swatch.color === "transparent" ? t.transparent : swatch.color;
+				const role = swatch.label?.[locale] ?? t[swatch.role];
+				return (
+					<button
+						type="button"
+						key={key}
+						className="palette-swatch"
+						onClick={() => onCopy?.(swatch.color)}
+						title={swatch.source}
+					>
+						<span
+							className={`swatch-color ${swatch.color === "transparent" ? "checkerboard" : ""}`}
+							style={{ backgroundColor: swatch.color }}
+							aria-hidden="true"
+						/>
+						<span className="sr-only">{`${t.copyColor} `}</span>
+						<span className="swatch-value">{value}</span>
+						<span className="swatch-role">{role}</span>
+					</button>
+				);
+			})}
 		</div>
 	);
 }
