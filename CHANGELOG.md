@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.4.1] - 2026-10-13
+
+### Maintenance
+
+- bump @playwright/test to 1.64.0 (#82)
+- bump @remotion/bundler to 4.0.535 (#83)
+- bump @remotion/cli to 4.0.535 (#84)
+- bump @remotion/player to 4.0.535 (#85)
+- bump @remotion/renderer to 4.0.535 (#86)
+- bump @types/bun to 1.4.3 (#91)
+- bump @vitejs/plugin-react to 6.1.2 (#87)
+- bump @vitest/coverage-v8 to 5.0.4 (#92)
+- bump axe-core to 4.14.0 (#88)
+- bump remotion to 4.0.535 (#89)
+- bump vite to 8.3.4 (#78)
+- bump vitest to 5.0.4 (#93)
+- bump wrangler to 4.149.0 (#80)
+- bump zod to 4.6.7 (#90)
+
 ## [1.4.0] - 2026-10-10
 
 ### Documentation
