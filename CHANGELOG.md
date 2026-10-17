@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.2] - 2026-10-17
+
+### Maintenance
+
+- bump @playwright/test to 1.64.1 (#97)
+- bump react and react-dom to 19.3.1 (#98, #99)
+- bump vitest and @vitest/coverage-v8 to 5.0.5 (#100, #101)
+- bump remotion family to 4.0.536 (#102, #103, #104, #105, #106)
+- bump wrangler to 4.151.1 (#95)
+
 ## [1.4.1] - 2026-10-13
 
 ### Maintenance
