@@ -494,3 +494,18 @@ with one short sentence and no reference images. Do not reintroduce the discarde
 anatomy, framing or style checklist when the owner asks for a minimal brief. The
 returned torso and underwater setting remain documented deviations from the
 head-portrait request, not a finished or approved avatar.
+
+## 2026-10-18 - Preserve style and verifiable provenance when resuming
+
+Recovering Octo's six studies showed that prompt simplification had removed the
+family drawing language and actual reference inputs, while the built-in request
+receipts could not identify the model. A shorter prompt still needs the defining
+visual style. Study 07 submits two inspected, adopted-family portraits with a
+short seahorse brief through the explicit `gpt-image-2.5-sunburst` deployment;
+the returned image remains pending exact-byte owner approval.
+
+While drafting the recovery brief, an unverified full commit literal was entered
+after only the short revision had been observed. It was replaced with the actual
+`git rev-parse HEAD` value before generation or commit. Generate source revisions
+and file hashes from their authoritative tools rather than completing them by
+hand, and validate those values before preserving a provenance record.
