@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"project": "base-ci",
+	"version": "1.0.2",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/brand-textures/2026-10-18/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Forest enamel inspection gauge with brass and steel",
+			"zh": "检验量规"
+		},
+		"original": "/logos/family/base-ci/2026-10-18-01/01/transparent.png",
+		"display": "/logos/family/base-ci/2026-10-18-01/01/transparent-1024.webp",
+		"width": 1024,
+		"height": 1024,
+		"sha256": "412463fe088e4322929fa4e2c6d3ddb3a0c5513350e1ce3dbb405e56c8fe76c4",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/base-ci/v1.0.1/texture-light.png",
+		"sha256": "1693d82c066ae2c9e8a613983c797c853bfcb89bc52a0e96fe6b1b20f48d1ffa",
+		"originalWidth": 1024,
+		"placementWidth": 1024,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 1024,
+	"height": 1024,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/base-ci/blob/21addbd41b72b82e8d9e2dbe1352be75305126e2/logo.png",
+		"family": "artwork/logo-family/base-ci/2026-10-18-01",
+		"texture": "/textures/base-ci/v1.0.1/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 228839,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true
+	}
+}

@@ -1,8 +1,18 @@
 {
-	"status": "pending",
+	"status": "approved",
 	"imageSha256": "e6acc8d176d3fd4ad980285f164bb6a82925ec54ebf65d124a191cfefd156c24",
 	"recordedAt": "2026-10-18T08:15:48.296143+00:00",
-	"ownerReviewedExactBytes": false,
+	"ownerReviewedExactBytes": true,
 	"scope": "Hexly campaign decoration only; original Logo unchanged.",
-	"nextStep": "Show the complete native canvas and record exact-byte owner approval, or an explicit batch delegation plus agent inspection, before derivatives or integration."
+	"nextStep": "Export approved full-canvas textures and adopt locally; publication remains unauthorized.",
+	"acceptance": "owner",
+	"approvedAt": "2026-10-18T10:39:56.067716+00:00",
+	"authorization": "docs/brand-textures/2026-10-18/authorization.json",
+	"inspection": {
+		"fullCanvas": true,
+		"productionCrop": false,
+		"repeat": false,
+		"evidence": ".video-work/texture-resume-2026-10-18/",
+		"note": "Full-canvas light/dark review inspected during recovery; same-size native PNGs preserved."
+	}
 }

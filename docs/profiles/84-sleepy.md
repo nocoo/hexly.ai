@@ -57,10 +57,10 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Sleepy current icon](https://h.no.mt/projects/sleepy/icons/v1.0.0/rounded-160.webp)
+![Sleepy current icon](https://h.no.mt/projects/sleepy/icons/v1.0.1/rounded-160.webp)
 
-- [Native square PNG](https://h.no.mt/projects/sleepy/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/sleepy/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/sleepy/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/sleepy/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/sleepy/icons/v1.0.0/apple-touch-icon.png)
-- [Manifest and checksums](https://h.no.mt/projects/sleepy/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/sleepy/icons/v1.0.0/guide.md)
+- [Native square PNG](https://h.no.mt/projects/sleepy/icons/v1.0.1/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/sleepy/icons/v1.0.1/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/sleepy/icons/v1.0.1/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/sleepy/icons/v1.0.1/favicon.ico) · [Apple touch](https://h.no.mt/projects/sleepy/icons/v1.0.1/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/sleepy/icons/v1.0.1/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/sleepy/icons/v1.0.1/guide.md)
 - Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
 
@@ -83,7 +83,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Clothbound poetry book and crescent
 - Site path: `/projects/sleepy#brand`; [local gallery](https://index.dev.hexly.ai/projects/sleepy#brand)
 - [Static review HTML](../../artwork/logo-family/sleepy/2026-10-09-02/review.html)
-- [Full process archive](artwork/logo-family/sleepy/2026-10-09-02)
+- [Full process archive](../../artwork/logo-family/sleepy/2026-10-09-02)
 - [Transparent foreground](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/transparent.png); SHA-256: `de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b`
 - [Square icon](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/icon.png), [rounded icon](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/rounded.png), [white version](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/raw.png), [exact prompt](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/sleepy/2026-10-09-02/04/manifest.json)

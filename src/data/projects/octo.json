@@ -244,9 +244,26 @@
 	},
 	"socialImage": "/og/octo.jpg",
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/octo/v1.0.0",
+		"version": "1.0.2",
+		"root": "/icons/octo/v1.0.2",
 		"width": 2048,
 		"height": 2048
+	},
+	"brandTexture": {
+		"root": "/textures/octo/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Seagrass shelter",
+			"zh": "海草栖地"
+		},
+		"description": {
+			"en": "Long ribbon-like seagrass leaves form a loose coastal shelter around an open, quiet field.",
+			"zh": "细长带状海草叶围出疏朗的近岸栖地，将中央留给海马。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
 	}
 }

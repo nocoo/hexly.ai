@@ -200,9 +200,26 @@
 	},
 	"socialImage": "/og/base-ci.jpg",
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/base-ci/v1.0.0",
+		"version": "1.0.2",
+		"root": "/icons/base-ci/v1.0.2",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/base-ci/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Inspection plate",
+			"zh": "检验台面"
+		},
+		"description": {
+			"en": "Lapped mineral grain and shallow paired alignment marks recall a quality-inspection work surface.",
+			"zh": "研磨矿物颗粒与浅浅的成对对位刻痕，呼应质量检验工作台。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
 	}
 }

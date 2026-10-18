@@ -1,0 +1,118 @@
+{
+	"project": "base-cli",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-surface",
+		"name": { "en": "Assembly mat", "zh": "装配垫" },
+		"description": {
+			"en": "Fine-grained service rubber and shallow modular channels support the shared CLI toolkit.",
+			"zh": "细颗粒维修胶垫与浅模块槽，承托可复用的命令行工具箱。"
+		},
+		"motif": "One continuous fine-grained matte rubber assembly mat, tactile but clean. A small group of broad shallow parallel bit-storage channels enters from the lower-right edge; a few short organizing dividers stay close to the upper edge. Channels are molded depressions in the same surface, not drawn outlines or separate objects. No screwdriver, screws, parts, letters, terminal symbols, circuit traces or full-page grid.",
+		"rationale": "Base CLI packages configuration, OAuth, update and logging helpers. A modular assembly mat supports the adopted screwdriver as a reusable toolkit; it does not illustrate software control flow."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/base-cli.json",
+		"purpose": {
+			"en": "Provide TypeScript CLIs with config storage, browser OAuth login, package-update helpers and logging. This is a library, not a hosted application.",
+			"zh": "为 TypeScript CLI 提供配置存储、浏览器 OAuth 登录、包更新与日志工具，是基础库而非托管应用。"
+		},
+		"inspectedRevision": "4fd686d49ed15473ef9d0c3436c90e601c2723d4",
+		"snapshot": {
+			"path": "docs/sources/base-cli-2026-10-18.json",
+			"sha256": "387ac7ec26d307282a6e39061f088e433e2a5a4029a7c9f1223445e52edc00e8"
+		}
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/base-cli-family-2026-10-18-01-01.png",
+		"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9",
+		"rgbaSha256": "6aff41851e8bc89369afcdc224f1692c60e5b10af0cb018fc66be62890d85d45",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 225682,
+		"source": "https://github.com/nocoo/base-cli/blob/4fd686d49ed15473ef9d0c3436c90e601c2723d4/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-18/inventory.json",
+	"sourceInventorySha256": "18eacdd8170d1de5b2cae38209574ffbb6cac72981d4402232e50d8457f06508",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fdefbc0f-45e7-4e81-a5a6-80e6580f0367",
+			"source": "artwork/brands/base-cli/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/base-cli/v1.0.0/source-light-request.json",
+			"response": "/textures/base-cli/v1.0.0/source-light-response.json",
+			"prompt": "/textures/base-cli/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/base-cli/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/base-cli/v1.0.0/texture-light.png",
+				"sha256": "21c210550d4e6ec679c4a2b2038640a8d70de54dac7ee1c62a10441e3a10e922",
+				"bytes": 1668784,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "05320054-8f91-4947-83a2-c23e8bd1aa87",
+			"source": "artwork/brands/base-cli/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/base-cli/v1.0.0/source-dark-request.json",
+			"response": "/textures/base-cli/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/base-cli/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/base-cli/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/base-cli/v1.0.0/texture-dark.png",
+				"sha256": "b7bf1b070c9940fea6492a78c3e507151c654b4b0d6409c0196ab84de8e59d9b",
+				"bytes": 1752460,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.289021872794552,
+		"darkMinimum": 6.1067212514757525,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-18T10:40:00.392Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

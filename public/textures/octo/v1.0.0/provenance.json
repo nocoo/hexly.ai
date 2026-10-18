@@ -1,0 +1,118 @@
+{
+	"project": "octo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": { "en": "Seagrass shelter", "zh": "海草栖地" },
+		"description": {
+			"en": "Long ribbon-like seagrass leaves form a loose coastal shelter around an open, quiet field.",
+			"zh": "细长带状海草叶围出疏朗的近岸栖地，将中央留给海马。"
+		},
+		"motif": "Habitat-led botanical bas-relief of long ribbon-like seagrass leaves, with gentle bends, tapered tips and fine parallel veins, impressed into a tactile mineral-paper surface. Two loose asymmetric clumps grow in from the lower-left and upper-right margins, with a few separated blades and generous open space between them. Use plausible broad coastal seagrass habitat, not a named species. No flowers, coral, shells, bubbles, tropical broad leaves, animal silhouette, seahorse, ocean landscape, grid or technical marks.",
+		"rationale": "The approved identity is a seahorse. Coastal seagrass provides plausible shelter and holdfasts; species is not established, so no species-specific ecology is claimed. The background follows the animal habitat, not the database product's technical diagrams."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/octo.json",
+		"purpose": {
+			"en": "Store private memories, tags, versions and attachments through scoped REST and MCP APIs, with an Access-protected admin dashboard. External bots perform migration, deduplication and summaries; Vectorize is a derived index, not the source of truth.",
+			"zh": "通过带作用域的 REST 与 MCP API 保存私人记忆、标签、版本和附件，管理工作台由 Access 保护。迁移、去重和摘要由外部 bot 完成；Vectorize 是派生索引，而非数据源。"
+		},
+		"inspectedRevision": "0d0bcae39f7cb5fd4a22248f63bde57fed29cf01",
+		"snapshot": {
+			"path": "docs/sources/octo-2026-10-18.json",
+			"sha256": "4dcd016a3d21c87035adc56f003ab3cb41cd3c6c8cc1be1d5b705d6b65e146ff"
+		}
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/octo-family-2026-10-18-07-02.png",
+		"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad",
+		"rgbaSha256": "9ee039b5244974f34239469375d2d4aff988442fc29335004e9e5461833b429b",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2203787,
+		"source": "https://github.com/nocoo/octo/blob/0d0bcae39f7cb5fd4a22248f63bde57fed29cf01/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-18/inventory.json",
+	"sourceInventorySha256": "18eacdd8170d1de5b2cae38209574ffbb6cac72981d4402232e50d8457f06508",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "20268cce-551a-460d-9371-45ee33dd4388",
+			"source": "artwork/brands/octo/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/octo/v1.0.0/source-light-request.json",
+			"response": "/textures/octo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/octo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/octo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/octo/v1.0.0/texture-light.png",
+				"sha256": "afffaa38344a5e3ab873ff9d85be139fbccb846c673daee036cb6869dcf612e2",
+				"bytes": 1990780,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1ab53f06-c169-49c8-86fb-ea32bd7ef5d5",
+			"source": "artwork/brands/octo/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/octo/v1.0.0/source-dark-request.json",
+			"response": "/textures/octo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/octo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/octo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/octo/v1.0.0/texture-dark.png",
+				"sha256": "e6acc8d176d3fd4ad980285f164bb6a82925ec54ebf65d124a191cfefd156c24",
+				"bytes": 1846530,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.37
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.990568113880444,
+		"darkMinimum": 4.74609224095974,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-18T10:40:05.322Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

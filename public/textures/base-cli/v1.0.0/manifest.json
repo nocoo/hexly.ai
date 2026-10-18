@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "base-cli",
+	"version": "1.0.0",
+	"root": "/textures/base-cli/v1.0.0",
+	"canonical": "https://hexly.ai/projects/base-cli#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/base-cli/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Assembly mat", "zh": "装配垫" },
+		"description": {
+			"en": "Fine-grained service rubber and shallow modular channels support the shared CLI toolkit.",
+			"zh": "细颗粒维修胶垫与浅模块槽，承托可复用的命令行工具箱。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/base-cli-family-2026-10-18-01-01.png",
+		"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9",
+		"rgbaSha256": "6aff41851e8bc89369afcdc224f1692c60e5b10af0cb018fc66be62890d85d45",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 225682,
+		"source": "https://github.com/nocoo/base-cli/blob/4fd686d49ed15473ef9d0c3436c90e601c2723d4/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fdefbc0f-45e7-4e81-a5a6-80e6580f0367",
+			"source": "artwork/brands/base-cli/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/base-cli/v1.0.0/source-light-request.json",
+			"response": "/textures/base-cli/v1.0.0/source-light-response.json",
+			"prompt": "/textures/base-cli/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/base-cli/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/base-cli/v1.0.0/texture-light.png",
+				"sha256": "21c210550d4e6ec679c4a2b2038640a8d70de54dac7ee1c62a10441e3a10e922",
+				"bytes": 1668784,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "05320054-8f91-4947-83a2-c23e8bd1aa87",
+			"source": "artwork/brands/base-cli/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/base-cli/v1.0.0/source-dark-request.json",
+			"response": "/textures/base-cli/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/base-cli/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/base-cli/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/base-cli/v1.0.0/texture-dark.png",
+				"sha256": "b7bf1b070c9940fea6492a78c3e507151c654b4b0d6409c0196ab84de8e59d9b",
+				"bytes": 1752460,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1668784,
+			"sha256": "21c210550d4e6ec679c4a2b2038640a8d70de54dac7ee1c62a10441e3a10e922"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 162864,
+			"sha256": "4e02036d83f24229d7d49d14dadac13198d4a036a0ba5c564be1789ccaad56f8"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2664,
+			"sha256": "f5e0e7ad7e9668f230bbda2613358c2df3680e0d2b76e85ebabb8ff49a9344a1"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1414,
+			"sha256": "7cb06462f9fe39bc3535978f7d40ba26d9802b22c17b6c23bad528566ababffa"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "441fb98bb864b2ef0f7e8f833efc075acf8c83f949f4be21dbabd29bd348816c"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "73a4e3d0125656f6a838dad9a9ef0d7c5031fcd43ee7b2cc4960ad916c3fdf5e"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 517,
+			"sha256": "236347e554fb1720a90dd565775b1783e8f58ac09d0251c36e162b320337d4d5"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1752460,
+			"sha256": "b7bf1b070c9940fea6492a78c3e507151c654b4b0d6409c0196ab84de8e59d9b"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 242660,
+			"sha256": "0794f7794e5f26931b3696f97928e49b4b669dfa766b4a0bdd5cb3f9eff88dec"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2424,
+			"sha256": "897c58a2d93c066ccc70dfa40ddae15fe8dae30190a12dd3de4d64cf026380ec"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1469,
+			"sha256": "da3c38b125cc0ef735d0ed09b9dda985caf01035d96770e19e187c4b12b4b897"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e39f69fc907cce8b8ae9dc8bbd92b8d775ecd3b278f32d5b656d777d7d22eb81"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "80dfb71551bea9919c89b9a580393a3839554fe7a37321fd7773d06c9d36f922"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 517,
+			"sha256": "55d534475ef09ea28f162698c745e75a5cbb2dc143df104fb4d151f3cccaf977"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5296,
+			"sha256": "65b30cf468e7ccec87f2687bbac1340ba4bed9c965411d1e6517c9e66ba1ca7f"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1894,
+			"sha256": "276ab2459ce31040c622cf863b2e2769c0e9503529e74148ebae4582c7842f49"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "f9e17a334a62c8134364cc4268da65edac2529bf83d883d9a1f59a166c64c3f0"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2528,
+			"sha256": "1e81bad8e8e5db1d1ac16eefa9b39596bd25bd7f1f93004d5534e26564a449c4"
+		},
+		{
+			"path": "/textures/base-cli/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3493,
+			"sha256": "106eaadf3d36a3780547c05f6751f14ce7af6fa98fdffdf9ba8dd24aa0373f66"
+		}
+	]
+}

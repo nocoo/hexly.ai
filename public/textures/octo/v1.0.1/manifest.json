@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "octo",
+	"version": "1.0.1",
+	"root": "/textures/octo/v1.0.1",
+	"canonical": "https://hexly.ai/projects/octo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/octo/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Seagrass shelter", "zh": "海草栖地" },
+		"description": {
+			"en": "Long ribbon-like seagrass leaves form a loose coastal shelter around an open, quiet field.",
+			"zh": "细长带状海草叶围出疏朗的近岸栖地，将中央留给海马。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.37
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/octo-family-2026-10-18-07-02.png",
+		"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad",
+		"rgbaSha256": "9ee039b5244974f34239469375d2d4aff988442fc29335004e9e5461833b429b",
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2203787,
+		"source": "https://github.com/nocoo/octo/blob/0d0bcae39f7cb5fd4a22248f63bde57fed29cf01/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "20268cce-551a-460d-9371-45ee33dd4388",
+			"source": "artwork/brands/octo/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/octo/v1.0.1/source-light-request.json",
+			"response": "/textures/octo/v1.0.1/source-light-response.json",
+			"prompt": "/textures/octo/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/octo/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/octo/v1.0.1/texture-light.png",
+				"sha256": "afffaa38344a5e3ab873ff9d85be139fbccb846c673daee036cb6869dcf612e2",
+				"bytes": 1990780,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1ab53f06-c169-49c8-86fb-ea32bd7ef5d5",
+			"source": "artwork/brands/octo/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/octo/v1.0.1/source-dark-request.json",
+			"response": "/textures/octo/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/octo/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/octo/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/octo/v1.0.1/texture-dark.png",
+				"sha256": "e6acc8d176d3fd4ad980285f164bb6a82925ec54ebf65d124a191cfefd156c24",
+				"bytes": 1846530,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/octo/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1990780,
+			"sha256": "afffaa38344a5e3ab873ff9d85be139fbccb846c673daee036cb6869dcf612e2"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 307904,
+			"sha256": "4c922a1485f86da9bb203bee59acd60ae13f890e1c7b9c2b8aaa450af0873a8e"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 10360,
+			"sha256": "45291b1740cff42fb1cc9e90e8c3bf6b54f550c998696683b6a27173b89e9a63"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1547,
+			"sha256": "70dc158e729c0c473e872d4a092ac2ead10576d361b36f87029532d6ea2a8cc2"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "eda445ab310ea628c97487f14b5be4a286d5acf7eca0dea1a06ad29bf2a54d5d"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "ae09e7c8df981fab779b47e3af7b21af00035a002b6ccb8ae1c04f18b3ccfcd2"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 764,
+			"sha256": "7e3d8f2c5db404a784c1b6456b839c1509e51dcb69ae0d9d0160dba5e5736f63"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1846530,
+			"sha256": "e6acc8d176d3fd4ad980285f164bb6a82925ec54ebf65d124a191cfefd156c24"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 222970,
+			"sha256": "acada56b404e40225f0831ce9f3ef7280579cf6a9577cf574c8960333c419846"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6526,
+			"sha256": "d4fecb927b6a0a2163543218a76ce8fef94e61347f4165dc3bb04548dd6b4595"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1602,
+			"sha256": "6d204b6992352c94244aab6e26254a42598a988139b394dacf155dc11b972947"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "37263758f0b2b443d85b20ae497ca1e9a52314f6cfa30c91b6bff8470a4f025e"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 917,
+			"sha256": "3fa15eaba79cc30587f322a12e8cb1129d0afcca64d7a74920f7c83207c6617a"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 764,
+			"sha256": "c2493954003bb6c497633b80afd1670aeaacf4c5e53eb1355388887587b46d87"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5600,
+			"sha256": "ce0183e11e417f623b7c4db033025b704d89fd0116a4915328521a5bb17bbb28"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 2153,
+			"sha256": "fec2e6b0fdc9abde6a86c883d8138c2ba8abba50a72f304149a7c862c4816e51"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "392d72379bc68e63b4c93deaffc13c50afb08a2127fff502f787e741e906f9e0"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2592,
+			"sha256": "ab5290f38e184b3815abebff2137e82d846e051198d3a4432c82aa05bc4d6ebb"
+		},
+		{
+			"path": "/textures/octo/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3448,
+			"sha256": "cc76ffa934775a7f4aba10f7fc49854468a683b4803977baaf621b7ff1fec13f"
+		}
+	]
+}

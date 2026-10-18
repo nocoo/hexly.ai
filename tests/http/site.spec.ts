@@ -35,7 +35,7 @@ test("serves the built document and security policy through Workers HTTP", async
 		`href="${assetUrl("/logos/family/hexly-ai/2026-10-18-02/01/transparent-32.png")}"`,
 	);
 	expect(html).toContain(
-		`href="${assetUrl("/icons/hexly-ai/v1.0.0/apple-touch-icon.png")}"`,
+		`href="${assetUrl("/icons/hexly-ai/v1.0.2/apple-touch-icon.png")}"`,
 	);
 	expect(html).not.toContain("/src/main.tsx");
 });
@@ -228,7 +228,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	for (const [path, type] of [
 		["/favicon.ico", "image/png"],
 		["/apple-touch-icon.png", "image/png"],
-		["/icons/hexly-ai/v1.0.0/apple-touch-icon.png", "image/png"],
+		["/icons/hexly-ai/v1.0.2/apple-touch-icon.png", "image/png"],
 		["/og.jpg", "image/jpeg"],
 		["/og.png", "image/png"],
 	] as const) {

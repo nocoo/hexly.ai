@@ -573,3 +573,25 @@ presentation packages, even for the review's transparent 32/24/16px specimens.
 The review now explicitly requests the foreground role; ordinary catalogue
 navigation keeps its established rounded presentation. Browser assertions check
 those source URLs in every review mode and theme, not just successful decoding.
+
+## 2026-10-18: Texture export preceded the complete receipt check
+
+During local adoption of six approved texture pairs, the owner approval records
+were exported without the required full-canvas/no-crop/no-repeat inspection
+fields. The images were inspected and unchanged, but the first full verification
+correctly rejected six incomplete package receipts. Inventory had already frozen
+those local v1.0.0 packs, so repairing them in place would violate immutability.
+The correction retains them, adds the actual inspection evidence to the source
+reviews, and exports v1.0.1 packs with v1.0.2 presentation references. No new
+image calls, uploads or deployment occurred. Run the existing project-texture
+unit checks before inventory freezes an export; API success and owner approval
+alone do not prove that the package contains the complete inspection contract.
+
+The local browser probe initially overlapped inventory-triggered Vite reloads,
+then waited on offscreen lazy images. It was stopped, moved after file writers,
+and rerun with explicit eager image decoding and a finite diagnostic timeout.
+All 32 cases passed. Smooth scrolling also produced mid-scroll element captures;
+reduced-motion, per-figure captures supersede those framing screenshots. Whole
+sections larger than the application scrollport can still be clipped in element
+captures. Test scripts must control lazy loading, scrolling and capture bounds
+before claiming visual evidence.

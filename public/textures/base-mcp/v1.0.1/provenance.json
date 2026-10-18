@@ -1,0 +1,118 @@
+{
+	"project": "base-mcp",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-surface",
+		"name": { "en": "Mating surface", "zh": "接合工作面" },
+		"description": {
+			"en": "A fine anti-static work surface with sparse paired coupling impressions and short routing channels.",
+			"zh": "细腻防静电工作面上，疏朗排布成对接合压痕与短导槽。"
+		},
+		"motif": "One continuous matte anti-static service surface with a very fine pebbled grain. Near the upper-right edge, two incomplete concentric mating impressions and three short parallel shallow channels suggest aligning a coupling. A smaller pair of open curved grooves rests near the lower-left edge. All impressions belong to the continuous surface. No actual connector, sockets, cable, electronics, circuit diagram, glowing paths or dense network.",
+		"rationale": "The framework connects entity tools, authorization and transport helpers. A coupling-alignment work surface supports its adopted blue-steel coupling without inventing protocol wiring or security guarantees."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/base-mcp.json",
+		"purpose": {
+			"en": "Register entity CRUD tools and compose OAuth and HTTP integration helpers for MCP servers. Consumers own authentication, storage and transport hosting; this is not a standalone deployed MCP service.",
+			"zh": "为 MCP 服务注册实体 CRUD 工具并组合 OAuth、HTTP 集成辅助。消费方负责认证、存储与传输服务，本项目不是独立部署的 MCP 服务。"
+		},
+		"inspectedRevision": "240060f549a147a65d7358e22a96d58a6cd11fbe",
+		"snapshot": {
+			"path": "docs/sources/base-mcp-2026-10-18.json",
+			"sha256": "d524542bf457f9ad3fc05b8524f618b46e6f1e591efec1729c1d8a108041181c"
+		}
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/base-mcp-family-2026-10-18-01-01.png",
+		"sha256": "cef05efbfb2bd02d5fe6661be8cacde2f6b474e5f90a2e75ab6a47baef67d396",
+		"rgbaSha256": "c80f217b24696a4f7f9074b161849dc72ccb3c6a569142c406266bf24a1be8c3",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 539866,
+		"source": "https://github.com/nocoo/base-mcp/blob/240060f549a147a65d7358e22a96d58a6cd11fbe/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-18/adoption-inventory.json",
+	"sourceInventorySha256": "0de24e3678e26fe3328fbe06f863f17ab9d1164c7283b0950aad4db44bc86ea8",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "3c1b583e-46e9-47f2-b8e1-f9cbbe44fa0c",
+			"source": "artwork/brands/base-mcp/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/base-mcp/v1.0.1/source-light-request.json",
+			"response": "/textures/base-mcp/v1.0.1/source-light-response.json",
+			"prompt": "/textures/base-mcp/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/base-mcp/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/base-mcp/v1.0.1/texture-light.png",
+				"sha256": "a21a7f4ae5ad18196fe00537c13abeceb0172c92e2a32ae1e8741452abdf79d5",
+				"bytes": 1935361,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "4b9a917c-2bcc-45f8-8611-337cd78b66b0",
+			"source": "artwork/brands/base-mcp/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/base-mcp/v1.0.1/source-dark-request.json",
+			"response": "/textures/base-mcp/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/base-mcp/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/base-mcp/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/base-mcp/v1.0.1/texture-dark.png",
+				"sha256": "1a9c9d39bd6874ec4bd8a79f4b33864da90df988d7e3960a0af74f22c408006e",
+				"bytes": 1880333,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.298609319395427,
+		"darkMinimum": 5.382259315942556,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-18T10:43:31.407Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
