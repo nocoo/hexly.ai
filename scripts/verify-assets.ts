@@ -8,6 +8,7 @@ import {
 	brandManifestProblems,
 	textureManifestProblems,
 } from "../src/model/brand-manifest";
+import { siteSocialImage } from "../src/model/discovery";
 
 const projects = readProjects();
 for (const project of projects) {
@@ -219,10 +220,10 @@ for (const project of projects) {
 	}
 }
 {
-	const home = await sharp("public/og.jpg").metadata();
+	const home = await sharp(`public${siteSocialImage}`).metadata();
 	if (home.format !== "jpeg" || home.width !== 1200 || home.height !== 630)
 		throw new Error("Incorrect home social image");
-	if ((await readFile("public/og.jpg")).byteLength > 400_000)
+	if ((await readFile(`public${siteSocialImage}`)).byteLength > 400_000)
 		throw new Error("Home social image too large");
 }
 console.info(

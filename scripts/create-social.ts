@@ -1,31 +1,25 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { parseArgs } from "node:util";
 import { chromium } from "@playwright/test";
 import sharp from "sharp";
 import { categoryLabels, copy } from "../src/data/copy";
+import identity from "../src/data/projects/hexly-ai.json";
 import { readProjects } from "../src/data/read-projects";
-import { escapeHtml } from "../src/model/discovery";
+import { escapeHtml, siteSocialImage } from "../src/model/discovery";
 import type { Project } from "../src/model/project";
 
 const directory = "public/og";
-const markSvg = `<svg width="33" height="36" viewBox="0 0 36 40" fill="none" aria-hidden="true"><path d="m18 2 15.6 9v18L18 38 2.4 29V11Z" fill="currentColor"/><path d="m18 9 9.5 5.5v11L18 31l-9.5-5.5v-11Z" stroke="#f0f0e9" stroke-width="1.6"/><path d="M18 9v22M8.5 14.5l19 11m0-11-19 11" stroke="#f0f0e9" stroke-width="1.6"/></svg>`;
 
 const dataUrl = async (path: string, type: string) =>
 	`data:${type};base64,${(await readFile(path)).toString("base64")}`;
+const mark = `<img width="36" height="36" alt="" src="${await dataUrl(`public${identity.family.root}/transparent-64.png`, "image/png")}">`;
 
 async function artworkSrc(project?: Project): Promise<{
 	src: string;
 	plain: boolean;
 	background?: string;
 }> {
-	if (!project)
-		return {
-			src: await dataUrl(
-				"public/logos/display/hexly-ai-1024.webp",
-				"image/webp",
-			),
-			plain: true,
-			background: "#f4ece6",
-		};
+	if (!project) return artworkSrc(identity as Project);
 	if (project.family)
 		return {
 			src: await dataUrl(
@@ -35,10 +29,7 @@ async function artworkSrc(project?: Project): Promise<{
 			plain: false,
 		};
 	return {
-		src: await dataUrl(
-			`public/logos/display/${project.id}-1024.webp`,
-			"image/webp",
-		),
+		src: await dataUrl(`public${project.logo.display}`, "image/webp"),
 		plain: true,
 		background: project.colors.background,
 	};
@@ -75,7 +66,7 @@ function cardHtml({
 		: "";
 	return `<main class="social-card">
 <header>
-<span class="social-brand">${markSvg}<span>hexly<span class="domain">.ai</span></span></span>
+<span class="social-brand">${mark}<span>hexly<span class="domain">.ai</span></span></span>
 <span>${escapeHtml(label)}</span>
 </header>
 <div class="social-copy">
@@ -107,24 +98,37 @@ const fonts = (
 );
 const styles = `${fonts.join("\n")}\n${await readFile("scripts/social.css", "utf8")}`;
 const projects = readProjects();
+const { values } = parseArgs({
+	options: { project: { type: "string", multiple: true } },
+});
+for (const id of values.project ?? [])
+	if (!projects.some((project) => project.id === id))
+		throw new Error(`Unknown project: ${id}`);
+const selected = projects.filter(
+	(project) => !values.project || values.project.includes(project.id),
+);
 await mkdir(directory, { recursive: true });
 
 const homeArt = await artworkSrc();
 const cards = [
-	{
-		file: "public/og.jpg",
-		html: cardHtml({
-			label: "PORTFOLIO",
-			title: `${copy.en.heroFirst}\n${copy.en.heroSecond}.`,
-			subtitle: "",
-			footer: "ANIMALS · TEMPLATES · GAMES · TOOLS",
-			image: homeArt.src,
-			plain: homeArt.plain,
-			background: homeArt.background,
-		}),
-	},
+	...(!values.project || values.project.includes(identity.id)
+		? [
+				{
+					file: `public${siteSocialImage}`,
+					html: cardHtml({
+						label: "PORTFOLIO",
+						title: `${copy.en.heroFirst}\n${copy.en.heroSecond}.`,
+						subtitle: "",
+						footer: "ANIMALS · TEMPLATES · GAMES · TOOLS",
+						image: homeArt.src,
+						plain: homeArt.plain,
+						background: homeArt.background,
+					}),
+				},
+			]
+		: []),
 	...(await Promise.all(
-		projects.map(async (project) => {
+		selected.map(async (project) => {
 			const art = await artworkSrc(project);
 			return {
 				file: `public${project.socialImage ?? `/og/${project.id}.jpg`}`,

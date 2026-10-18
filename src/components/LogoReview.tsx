@@ -192,7 +192,13 @@ export function LogoReview({
 					).map(([size, label]) => (
 						<figure key={size}>
 							<div className="size-well">
-								<Logo project={project} size={size} framed={size > 32} eager />
+								<Logo
+									project={project}
+									size={size}
+									framed={size > 32}
+									foreground={size <= 32}
+									eager
+								/>
 							</div>
 							<figcaption>
 								<strong>{size} px</strong>
@@ -205,7 +211,13 @@ export function LogoReview({
 					<div className="sidebar-sample">
 						<span className="context-label">{t.sidebar} / 24 px</span>
 						<div className="preview-workspace">
-							<Logo project={project} size={24} framed={false} eager />
+							<Logo
+								project={project}
+								size={24}
+								framed={false}
+								foreground
+								eager
+							/>
 							<strong>{project.title}</strong>
 							<span>{categoryLabels[locale][project.category]}</span>
 						</div>
@@ -214,7 +226,13 @@ export function LogoReview({
 					<div className="browser-sample">
 						<span className="context-label">{t.favicon} / 16 px</span>
 						<div className="browser-tab">
-							<Logo project={project} size={16} framed={false} eager />
+							<Logo
+								project={project}
+								size={16}
+								framed={false}
+								foreground
+								eager
+							/>
 							<span>{project.title}</span>
 							<Icon name="close" />
 						</div>

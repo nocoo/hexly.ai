@@ -3,6 +3,11 @@ import routes from "../data/asset-routes.json" with { type: "json" };
 import storage from "../data/media-storage.json" with { type: "json" };
 
 const aliases: Record<string, string> = routes;
+const localMaterials = () =>
+	import.meta.env?.DEV &&
+	import.meta.env.MODE === "development" &&
+	import.meta.env.VITE_LOCAL_MATERIALS === "1";
+export const materialOrigin = () => (localMaterials() ? "" : storage.origin);
 
 /** Catalogue/manifests retain canonical identity paths; delivery has its own origin. */
 export function assetKeyForPath(path: string): string | null {
@@ -27,12 +32,7 @@ export function assetKeyForPath(path: string): string | null {
 	);
 }
 
-export function assetUrl(
-	value: string,
-	local = import.meta.env?.DEV &&
-		import.meta.env.MODE === "development" &&
-		import.meta.env.VITE_LOCAL_MATERIALS === "1",
-): string {
+export function assetUrl(value: string, local = localMaterials()): string {
 	if (local && value.startsWith(`${storage.origin}/`)) {
 		const remote = value.slice(storage.origin.length + 1);
 		const key = remote.split(/[?#]/)[0] ?? "";

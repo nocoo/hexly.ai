@@ -166,6 +166,7 @@ describe("R2 material delivery", () => {
 				"fixture",
 			);
 			write("src/data/projects/index.json", "[]");
+			write("src/data/logo-review-pages.json", "[]");
 			for (const path of [
 				"src/fonts/journey-cjk.woff2",
 				"node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",

@@ -1,6 +1,6 @@
 # Project profiles
 
-84 projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
+90 projects are listed in the catalogue, including hexly.ai. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
@@ -88,3 +88,9 @@
 | [📖 Sleepy](84-sleepy.md) | Adopted family | #4d6955 | #f4f1ea |
 | [🦏 Rhino](85-rhino.md) | Adopted family | #a1948a | transparent |
 | [🧸 Zoo](86-zoo.md) | Adopted family | #3f927b | #faf8ef |
+| [🧭 hexly.ai](66-hexly-ai.md) | Adopted family | #bf5c3c | #f0f0e9 |
+| [🔒 Base CI](87-base-ci.md) | Adopted family | #1c3f29 | #e4eae2 |
+| [🔧 Base CLI](88-base-cli.md) | Adopted family | #c09551 | #efe5d2 |
+| [🔌 Base MCP](89-base-mcp.md) | Adopted family | #022f73 | #e2e8ee |
+| [🤖 Next AI](90-next-ai.md) | Adopted family | #0e4752 | #dfe8e7 |
+| [🧠 Octo](91-octo.md) | Adopted family | #0a6099 | #eeeff2 |

@@ -48,4 +48,6 @@
 
 41. [Sleepy and Rhino onboarding and approved identities](36-sleepy-rhino-onboarding.md)
 
+42. [Octo and five material identities: local adoption and dev review](37-octo-material-intake.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

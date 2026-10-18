@@ -1,4 +1,4 @@
-<p align="center"><img src="https://h.no.mt/shared/site/v1.0.0/hexly-ai-c69b5e7a341e.png" width="128" alt="hexly.ai logo" /></p>
+<p align="center"><img src="https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/rounded.png" width="128" alt="hexly.ai logo" /></p>
 <h1 align="center">hexly.ai</h1>
 <p align="center">个人项目导航与视觉档案：浏览项目、收藏原标、查看色板与演示模板。</p>
 <p align="center"><a href="https://hexly.ai">站点</a> · <a href="docs/README.en.md">English</a></p>

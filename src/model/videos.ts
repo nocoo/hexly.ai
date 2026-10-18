@@ -4,7 +4,7 @@ import type {
 	VideoProject,
 } from "@hexly/video-kit/schema";
 import order from "../data/project-order.json" with { type: "json" };
-import identity from "../data/site-identity.json" with { type: "json" };
+import identity from "../data/projects/hexly-ai.json" with { type: "json" };
 import manifest from "../data/videos.json" with { type: "json" };
 import { assetUrl } from "./assets";
 import type { Locale, Project } from "./project";
@@ -64,7 +64,7 @@ export function projectForVideo(
 					},
 					{
 						label: locale === "en" ? "Snapshot" : "快照",
-						value: order.updatedAt.slice(0, 10),
+						value: (snapshot.capturedAt ?? order.updatedAt).slice(0, 10),
 					},
 				]
 			: [

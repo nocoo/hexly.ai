@@ -3,8 +3,8 @@ import { createHash } from "node:crypto";
 import { setTimeout } from "node:timers/promises";
 import manifest from "../package.json";
 import { parseVideoManifest } from "../packages/video-kit/src/schema";
+import identity from "../src/data/projects/hexly-ai.json";
 import { readProjects } from "../src/data/read-projects";
-import identity from "../src/data/site-identity.json";
 import videos from "../src/data/videos.json";
 import { parseStatusSnapshot, statusTargets } from "../src/model/status";
 

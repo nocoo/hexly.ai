@@ -162,6 +162,16 @@ Shared rules include English repository descriptions prefixed by the project's e
 
 On 2026-09-08 the owner requested that the site omit its own project, leaving 69 projects (49 active and 20 archived). The September 9 InfoSpace addition brings the catalogue to 70 projects (50 active and 20 archived). The site's own identity is preserved separately in `src/data/site-identity.json` and its historical profile. Default display order is animals, templates, games, then tools, using the dated popularity snapshot in `src/data/project-order.json`. InfoSpace leads the final tools group; all other projects keep their relative order. Existing numbered profile filenames remain stable across membership and display-order changes.
 
+On 2026-10-18 the owner explicitly restored Hexly to the catalogue and approved
+the Octo/Base CI/Base CLI/Base MCP/Next AI intake. This supersedes the historical
+self-exclusion above: `src/data/projects/hexly-ai.json` is now the single current
+site and catalogue identity record. The 90 entries comprise 57 active and 33
+archived projects. Existing profile numbers and relative order stay unchanged;
+Octo joins the animal popularity group using its own dated evidence. Hexly is
+`design`, Base CI/CLI/MCP are `tools`, Next AI is `ai`, and Octo is `everyday`.
+Hexly remains exactly once at the end of the status targets, after the two
+personal sites. Local adoption is not publication or evidence of service health.
+
 The September 10 Showtime addition brings the catalogue to 71 projects (51 active and 20 archived). Showtime leads the final tools group before InfoSpace and is first in the curated Tools filter through `featuredTools`; A–Z remains alphabetical. Its original local source snapshot remains unchanged after the repository's first publication. The owner-approved classic black-and-white clapperboard uses material-series study `2026-09-10-02 / 03`, with green confined to the independent presentation. Bilingual README work and source-agent icon adoption have separate provenance. See [Showtime onboarding](13-showtime-onboarding.md).
 
 The September 11 Coffee and Hermes Gateway additions bring the catalogue to 73 projects (53 active and 20 archived). Both use the Tools category. Their records are appended, preserving all previous order and numbered profile paths. The source-backed bilingual overviews distinguish Coffee's published static application from Gateway's local offline core and unverified real integration. The owner approved both native material identities; study `2026-09-11-01 / 01` is adopted in each local source, bringing the independent-image count to 59. Exact source commits, original backups, separate website colors and complete review pages are recorded in [the onboarding record](14-new-tools-onboarding.md). Publication remains separate from local adoption.

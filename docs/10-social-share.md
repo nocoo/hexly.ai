@@ -8,7 +8,8 @@ Product sites such as [pew.md](https://pew.md) can reuse hexly.ai's Open Graph t
 | --- | --- |
 | `https://hexly.ai/api/share.json` | Catalogue of every share record |
 | `https://hexly.ai/api/share/<id>.json` | One project, for example `pew` |
-| `https://hexly.ai/api/share/hexly-ai.json` | The hexly.ai site card |
+| `https://hexly.ai/api/share/site.json` | The hexly.ai site card |
+| `https://hexly.ai/api/share/hexly-ai.json` | The Hexly project-detail card |
 | `https://hexly.ai/og/<id>.jpg` | The JPEG itself (`https://hexly.ai/og.jpg` for the site) |
 
 `GET` and `HEAD` are public. Responses include `Access-Control-Allow-Origin: *`. Unknown ids return JSON `404`.

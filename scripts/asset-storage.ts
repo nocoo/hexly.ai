@@ -1,6 +1,12 @@
 import { execFileSync } from "node:child_process";
 import { createHash, randomUUID } from "node:crypto";
-import { constants, existsSync, readdirSync, readFileSync } from "node:fs";
+import {
+	constants,
+	existsSync,
+	readdirSync,
+	readFileSync,
+	statSync,
+} from "node:fs";
 import {
 	appendFile,
 	copyFile,
@@ -14,9 +20,8 @@ import { basename, dirname, extname } from "node:path";
 import { setTimeout } from "node:timers/promises";
 import { parseArgs } from "node:util";
 import storage from "../src/data/media-storage.json" with { type: "json" };
+import identity from "../src/data/projects/hexly-ai.json" with { type: "json" };
 import { readProjects } from "../src/data/read-projects";
-import identity from "../src/data/site-identity.json" with { type: "json" };
-import type { Project } from "../src/model/project";
 import { cacheControl, mediaTypes } from "./media-r2";
 
 export const inventoryPath = "docs/assets/inventory.json";
@@ -141,6 +146,32 @@ export function filesIn(directory: string): string[] {
 		.sort();
 }
 
+export function reviewFiles(): string[] {
+	const reviewPages: string[] = JSON.parse(
+		readFileSync("src/data/logo-review-pages.json", "utf8"),
+	);
+	const files = new Set([
+		"artwork/logo-family/review.css",
+		"artwork/logo-family/review.mjs",
+		...reviewPages.flatMap((page) => filesIn(dirname(page))),
+	]);
+	for (const page of reviewPages)
+		for (const match of readFileSync(page, "utf8").matchAll(
+			/(?:href|src|data-source)="([^"]+)"/g,
+		)) {
+			const url = new URL(match[1] ?? "", `https://hexly.ai/${page}`);
+			const source = url.pathname.slice(1);
+			if (
+				url.origin === "https://hexly.ai" &&
+				source.startsWith("artwork/") &&
+				existsSync(source) &&
+				statSync(source).isFile()
+			)
+				files.add(source);
+		}
+	return [...files].sort();
+}
+
 /** Published package-relative paths remain byte compatible; loose assets get immutable keys. */
 export function assetKey(path: string, sha256: string, project: string) {
 	const pack = path.match(
@@ -179,7 +210,7 @@ export function assetKey(path: string, sha256: string, project: string) {
 }
 
 export async function inventory() {
-	const projects = [...readProjects(), identity as Project];
+	const projects = readProjects();
 	const previous = existsSync(inventoryPath) ? readInventory() : undefined;
 	const previousSources = new Map(
 		previous?.files.map((file) => [file.source, file]),
@@ -191,6 +222,9 @@ export async function inventory() {
 		.split("\0")
 		.filter(Boolean);
 	const sources = new Map<string, string | undefined>();
+	for (const source of reviewFiles())
+		if (binary.test(source) || source.endsWith(".svg"))
+			sources.set(source, `/${source}`);
 	for (const source of filesIn("public"))
 		if (!appFiles.has(source.slice(7)))
 			sources.set(source, `/${source.slice(7)}`);
@@ -207,7 +241,8 @@ export async function inventory() {
 			)
 				sources.set(source, sources.get(source));
 	for (const source of previousSources.keys())
-		sources.set(source, previousSources.get(source)?.path);
+		if (!sources.has(source))
+			sources.set(source, previousSources.get(source)?.path);
 	for (const [source, path] of [
 		["src/fonts/journey-cjk.woff2", "/fonts/journey-cjk.woff2"],
 		[
@@ -259,49 +294,51 @@ export async function inventory() {
 		);
 		const badge = path?.match(/^\/badges\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//);
 		files.push(
-			old ?? {
-				source,
-				...(path ? { path } : {}),
-				version: path?.startsWith("/logos/family/")
-					? "historical"
-					: (path?.match(/\/v(\d+\.\d+\.\d+)\//)?.[1] ?? "1.0.0"),
-				bytes: bytes.length,
-				sha256,
-				key: path
-					? assetKey(path, sha256, project.id)
-					: `archives/sources/v1.0.0/${sha256}${extname(source).toLowerCase()}`,
-				contentType:
-					mediaTypes[extname(source).toLowerCase()] ??
-					"application/octet-stream",
-				project: project.id,
-				role: official
-					? "official-project-identity"
-					: badge
-						? "third-party-badge"
-						: screenshot
-							? "project-media"
-							: /\.(woff2?|ttf|otf)$/.test(source)
-								? "licensed-font"
-								: path
-									? "hexly-campaign"
-									: "source-archive",
-				provenance: official
-					? project.logo.sourceUrl
-					: badge
-						? `docs/assets/hexly-ai/badges/${badge[1]}/v${badge[2]}.json`
-						: screenshot
-							? `docs/assets/${project.id}/screenshots/${screenshot[2]}/v${screenshot[3]}.json`
-							: path &&
-									/^\/(?:brands|textures|icons)\/[^/]+\/v\d+\.\d+\.\d+\//.test(
-										path,
-									)
-								? `${dirname(path)}/provenance.json`
-								: path?.startsWith("/textures/")
-									? "docs/27-project-textures.md"
-									: path?.startsWith("/video-kit/")
-										? "packages/video-kit/brand-source.json"
-										: "docs/02-identity-rules.md",
-			},
+			old
+				? { ...old, ...(path && !old.path ? { path } : {}) }
+				: {
+						source,
+						...(path ? { path } : {}),
+						version: path?.startsWith("/logos/family/")
+							? "historical"
+							: (path?.match(/\/v(\d+\.\d+\.\d+)\//)?.[1] ?? "1.0.0"),
+						bytes: bytes.length,
+						sha256,
+						key: path
+							? assetKey(path, sha256, project.id)
+							: `archives/sources/v1.0.0/${sha256}${extname(source).toLowerCase()}`,
+						contentType:
+							mediaTypes[extname(source).toLowerCase()] ??
+							"application/octet-stream",
+						project: project.id,
+						role: official
+							? "official-project-identity"
+							: badge
+								? "third-party-badge"
+								: screenshot
+									? "project-media"
+									: /\.(woff2?|ttf|otf)$/.test(source)
+										? "licensed-font"
+										: path
+											? "hexly-campaign"
+											: "source-archive",
+						provenance: official
+							? project.logo.sourceUrl
+							: badge
+								? `docs/assets/hexly-ai/badges/${badge[1]}/v${badge[2]}.json`
+								: screenshot
+									? `docs/assets/${project.id}/screenshots/${screenshot[2]}/v${screenshot[3]}.json`
+									: path &&
+											/^\/(?:brands|textures|icons)\/[^/]+\/v\d+\.\d+\.\d+\//.test(
+												path,
+											)
+										? `${dirname(path)}/provenance.json`
+										: path?.startsWith("/textures/")
+											? "docs/27-project-textures.md"
+											: path?.startsWith("/video-kit/")
+												? "packages/video-kit/brand-source.json"
+												: "docs/02-identity-rules.md",
+					},
 		);
 	}
 	// New source copies may reuse exports; existing recovery URLs stay frozen.

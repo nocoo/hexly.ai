@@ -1,0 +1,252 @@
+{
+	"id": "octo",
+	"repo": "octo",
+	"title": "Octo",
+	"emoji": "🧠",
+	"description": {
+		"en": "Private API-first memory and knowledge base",
+		"zh": "以 API 为主的私人记忆与知识库"
+	},
+	"category": "everyday",
+	"website": "https://octo.hexly.ai",
+	"websiteSource": "Deployment configuration at 0d0bcae39f7cb5fd4a22248f63bde57fed29cf01; docs/sources/octo-2026-10-18.json",
+	"repository": "https://github.com/nocoo/octo",
+	"subject": "Fragmented blue seahorse portrait",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/octo-family-2026-10-18-07-02.png",
+		"thumbnail": "/logos/display/octo-family-2026-10-18-160.webp",
+		"display": "/logos/display/octo-family-2026-10-18-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/octo/blob/0d0bcae39f7cb5fd4a22248f63bde57fed29cf01/logo.png",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2203787,
+		"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad"
+	},
+	"family": {
+		"id": "2026-10-18-07",
+		"status": "adopted",
+		"updated": "2026-10-18",
+		"finishing": "02",
+		"root": "/logos/family/octo/2026-10-18-07/02",
+		"archive": "artwork/logo-family/octo/2026-10-18-07",
+		"model": "gpt-image-2.5-sunburst",
+		"foreground": {
+			"subject": {
+				"en": "Fragmented blue seahorse portrait",
+				"zh": "蓝色切面海马"
+			},
+			"original": "/logos/family/octo/2026-10-18-07/02/transparent.png",
+			"display": "/logos/family/octo/2026-10-18-07/02/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad"
+		},
+		"previous": null,
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Complete approved form",
+					"zh": "完整采纳构图"
+				},
+				"description": {
+					"en": "An off-center head and long snout, with the lower neck entering the frame. A 96 px integer translation protects the complete fin.",
+					"zh": "偏心头部与长吻，颈部从底边进入；整体平移 96 像素保护完整侧鳍。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Connected flat facets",
+					"zh": "相连平面切面"
+				},
+				"description": {
+					"en": "Connected irregular flat blue facets with coral, yellow and pale mint accents; all opaque source RGB is unchanged.",
+					"zh": "蓝色不规则相连平面搭配珊瑚、黄色和浅薄荷切面，不改变不透明源像素颜色。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Sheltered seagrass meadow",
+					"zh": "海草栖息地"
+				},
+				"description": {
+					"en": "Sparse swaying eelgrass blades at the upper-right and lower-right canvas edges; quiet habitat marks behind the approved seahorse, not an underwater illustration.",
+					"zh": "独立海草压痕、细纸纹理与两层浅阴影，保持产品主题不变。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#b9d2cc",
+				"role": "background",
+				"label": {
+					"en": "Sheltered seagrass meadow",
+					"zh": "独立海草背景"
+				},
+				"source": "artwork/logo-family/octo/2026-10-18-07/presentation.json background.base; not a product UI token"
+			},
+			{
+				"color": "#3b8ee0",
+				"role": "primary",
+				"label": {
+					"en": "Ocean blue",
+					"zh": "蓝色切面海马 · 1"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (800, 450); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			},
+			{
+				"color": "#95d6f7",
+				"role": "accent",
+				"label": {
+					"en": "Sky blue",
+					"zh": "蓝色切面海马 · 2"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (600, 1240); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			},
+			{
+				"color": "#fca87d",
+				"role": "accent",
+				"label": {
+					"en": "Coral facet",
+					"zh": "蓝色切面海马 · 3"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (700, 720); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			},
+			{
+				"color": "#f5eac6",
+				"role": "accent",
+				"label": {
+					"en": "Cream facet",
+					"zh": "蓝色切面海马 · 4"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (780, 310); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 24/16 px the crown and long snout carry identity; tiny facets and the second eye soften.",
+			"zh": "24/16 px 依靠冠部与长吻识别，小切面与第二只眼睛会柔化。"
+		}
+	},
+	"theme": {
+		"primary": {
+			"value": "204 88% 32%",
+			"source": "@nocoo/basalt@3.1.0 dist/styles/standalone.css --basalt-primary; apps/web/src/client/app.tsx defaultAccent=primary"
+		},
+		"background": {
+			"value": "220 14% 94%",
+			"source": "@nocoo/basalt@3.1.0 dist/styles/standalone.css --basalt-background; apps/web/src/client/app.tsx defaultAccent=primary"
+		},
+		"ink": {
+			"value": "0 0% 12%",
+			"source": "@nocoo/basalt@3.1.0 dist/styles/standalone.css --basalt-foreground; apps/web/src/client/app.tsx defaultAccent=primary"
+		}
+	},
+	"colors": {
+		"primary": "#0a6099",
+		"background": "#eeeff2",
+		"ink": "#1f1f1f",
+		"palette": [
+			{
+				"color": "#3b8ee0",
+				"role": "primary",
+				"label": {
+					"en": "Ocean blue",
+					"zh": "蓝色切面海马 · 1"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (800, 450); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			},
+			{
+				"color": "#95d6f7",
+				"role": "accent",
+				"label": {
+					"en": "Sky blue",
+					"zh": "蓝色切面海马 · 2"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (600, 1240); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			},
+			{
+				"color": "#fca87d",
+				"role": "accent",
+				"label": {
+					"en": "Coral facet",
+					"zh": "蓝色切面海马 · 3"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (700, 720); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			},
+			{
+				"color": "#f5eac6",
+				"role": "accent",
+				"label": {
+					"en": "Cream facet",
+					"zh": "蓝色切面海马 · 4"
+				},
+				"source": "Native 45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7, sRGB pixel (780, 310); artwork/logo-family/octo/2026-10-18-07/palette.json"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "ba9e19ea8343b456dd7640d89b2c873f66753543",
+		"profileSection": "Recent Projects",
+		"description": "Private API-first memory and knowledge base",
+		"repositoryRevision": "0d0bcae39f7cb5fd4a22248f63bde57fed29cf01"
+	},
+	"overview": {
+		"goal": {
+			"en": "Store private memories, tags, versions and attachments through scoped REST and MCP APIs, with an Access-protected admin dashboard. External bots perform migration, deduplication and summaries; Vectorize is a derived index, not the source of truth.",
+			"zh": "通过带作用域的 REST 与 MCP API 保存私人记忆、标签、版本和附件，管理工作台由 Access 保护。迁移、去重和摘要由外部 bot 完成；Vectorize 是派生索引，而非数据源。"
+		},
+		"techStack": [
+			{
+				"name": "Hono / Cloudflare Workers",
+				"role": {
+					"en": "REST, MCP and protected dashboard delivery",
+					"zh": "REST、MCP 与受保护工作台"
+				}
+			},
+			{
+				"name": "D1 / R2 / Vectorize",
+				"role": {
+					"en": "Memory records, attachments and derived vectors",
+					"zh": "记忆数据、附件与派生向量"
+				}
+			},
+			{
+				"name": "React / Vite / Basalt",
+				"role": {
+					"en": "Admin dashboard",
+					"zh": "管理工作台"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-10-18",
+			"revision": "0d0bcae39f7cb5fd4a22248f63bde57fed29cf01",
+			"snapshot": {
+				"path": "docs/sources/octo-2026-10-18.json",
+				"sha256": "4dcd016a3d21c87035adc56f003ab3cb41cd3c6c8cc1be1d5b705d6b65e146ff"
+			},
+			"sources": [
+				"README.md",
+				"package.json",
+				"wrangler.toml",
+				"apps/web/src/client/app.tsx",
+				"apps/web/src/client/index.css",
+				"apps/web/src/server/routes/live.ts"
+			]
+		}
+	},
+	"socialImage": "/og/octo.jpg",
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/octo/v1.0.0",
+		"width": 2048,
+		"height": 2048
+	}
+}

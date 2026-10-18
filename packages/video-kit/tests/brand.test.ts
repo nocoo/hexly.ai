@@ -4,12 +4,13 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, test } from "vitest";
 import manifest from "../brand-source.json";
+import identity from "../current-identity.json";
 import { family, hexly, layouts, palettes } from "../src/brand";
 import { BrandLockup } from "../src/Identity";
 import { entrance, revealState } from "../src/motion";
 
 describe("the Hexly family contract", () => {
-	test("all five layouts share both exact site palettes and brand geometry", () => {
+	test("all five layouts share both site palettes and the approved native identity", () => {
 		const site = readFileSync(
 			new URL("../../../src/styles/base.css", import.meta.url),
 			"utf8",
@@ -24,10 +25,14 @@ describe("the Hexly family contract", () => {
 		expect(family.space.edge).toBeLessThan(family.space.safe);
 		expect(family.space.edge).toBe(32);
 		const html = renderToStaticMarkup(createElement(BrandLockup));
-		for (const path of manifest.paths) {
-			expect(icon).toContain(path);
-			expect(html).toContain(path);
-		}
+		expect(icon).toContain("identity.family.root");
+		expect(html).toContain(identity.path);
+		const bytes = readFileSync(
+			new URL(`../public${identity.path}`, import.meta.url),
+		);
+		expect(createHash("sha256").update(bytes).digest("hex")).toBe(
+			identity.sha256,
+		);
 		expect(html).toContain("font-weight:400");
 		expect(html).toContain("gap:11px");
 		expect(hexly.wordmark.letterSpacing).toBe(-1);

@@ -31,6 +31,12 @@ test("serves the built document and security policy through Workers HTTP", async
 	expect(html).toContain("https://lizheng.me/en/");
 	expect(html).toContain('property="og:image"');
 	expect(html).toContain("application/ld+json");
+	expect(html).toContain(
+		`href="${assetUrl("/logos/family/hexly-ai/2026-10-18-02/01/transparent-32.png")}"`,
+	);
+	expect(html).toContain(
+		`href="${assetUrl("/icons/hexly-ai/v1.0.0/apple-touch-icon.png")}"`,
+	);
 	expect(html).not.toContain("/src/main.tsx");
 });
 
@@ -197,7 +203,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 		image: { url: assetUrl("/og/pew.jpg"), width: 1200, height: 630 },
 	});
 	const index = await (await request.get("/api/share.json")).json();
-	expect(index.site).toBe("https://hexly.ai/api/share/hexly-ai.json");
+	expect(index.site).toBe("https://hexly.ai/api/share/site.json");
 	expect(
 		index.projects.some((entry: { id: string }) => entry.id === "pew"),
 	).toBe(true);
@@ -222,6 +228,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	for (const [path, type] of [
 		["/favicon.ico", "image/png"],
 		["/apple-touch-icon.png", "image/png"],
+		["/icons/hexly-ai/v1.0.0/apple-touch-icon.png", "image/png"],
 		["/og.jpg", "image/jpeg"],
 		["/og.png", "image/png"],
 	] as const) {

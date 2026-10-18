@@ -1,4 +1,4 @@
-import identity from "../data/site-identity.json" with { type: "json" };
+import identity from "../data/projects/hexly-ai.json" with { type: "json" };
 import { filterProjects } from "./catalogue";
 import type { Project } from "./project";
 
@@ -95,6 +95,7 @@ export function healthEndpoint(
 
 export function statusSites(projects: Project[]): StatusSite[] {
 	const sites = filterProjects(projects, "").flatMap((project) => {
+		if (project.id === identity.id) return [];
 		const endpoint = healthEndpoint(project);
 		return endpoint && project.website
 			? [

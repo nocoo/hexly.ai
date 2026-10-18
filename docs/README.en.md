@@ -1,4 +1,4 @@
-<p align="center"><img src="https://h.no.mt/shared/site/v1.0.0/hexly-ai-c69b5e7a341e.png" width="128" alt="hexly.ai logo" /></p>
+<p align="center"><img src="https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/rounded.png" width="128" alt="hexly.ai logo" /></p>
 <h1 align="center">hexly.ai</h1>
 <p align="center">A personal project catalogue and visual archive for logos, palettes and presentation templates.</p>
 <p align="center"><a href="https://hexly.ai">Website</a> · <a href="../README.md">简体中文</a></p>

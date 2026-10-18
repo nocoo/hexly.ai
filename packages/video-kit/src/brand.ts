@@ -31,13 +31,8 @@ export const hexly = {
 	sans: '"Space Grotesk Variable", "Journey CJK", sans-serif',
 	mono: '"Geist Mono Variable", "Journey CJK", monospace',
 	mark: {
-		width: 33,
+		width: 36,
 		height: 36,
-		viewBox: "0 0 36 40",
-		outer: "m18 2 15.6 9v18L18 38 2.4 29V11Z",
-		inner: "m18 9 9.5 5.5v11L18 31l-9.5-5.5v-11Z",
-		facets: "M18 9v22M8.5 14.5l19 11m0-11-19 11",
-		strokeWidth: 1.6,
 	},
 	wordmark: {
 		size: 23,

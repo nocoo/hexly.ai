@@ -7,8 +7,8 @@ import type {
 	VideoProject,
 } from "@hexly/video-kit/schema";
 import { useMemo, useState } from "react";
-import storage from "../data/media-storage.json";
 import { videoCopy } from "../data/video-copy";
+import { materialOrigin } from "../model/assets";
 import type { Locale } from "../model/project";
 
 export default function VideoProjectPreview({
@@ -49,7 +49,7 @@ export default function VideoProjectPreview({
 	};
 	return (
 		<>
-			<HexlyFontOrigin.Provider value={storage.origin}>
+			<HexlyFontOrigin.Provider value={materialOrigin()}>
 				<VideoPreview
 					config={film}
 					locale={locale}

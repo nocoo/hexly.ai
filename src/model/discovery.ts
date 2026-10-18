@@ -1,5 +1,5 @@
 import { copy } from "../data/copy";
-import identity from "../data/site-identity.json" with { type: "json" };
+import identity from "../data/projects/hexly-ai.json" with { type: "json" };
 import { agentGuide, agentGuidePath, standardOutros } from "./agent-guide";
 import { assetUrl } from "./assets";
 import { filterProjects, isChromeWebStoreProject } from "./catalogue";
@@ -15,6 +15,7 @@ export const homeDescription =
 	"A personal collection of useful tools, playful experiments, and colorful identities. Built by Zheng Li.";
 export const homeHeading = "Small ideas A little universe.";
 export const galleryTitle = "Logo gallery — hexly.ai";
+export const siteSocialImage = "/og/site-2026-10-18.jpg";
 
 export interface DiscoveryPage {
 	path: string;
@@ -50,7 +51,7 @@ export function absoluteUrl(path: string): string {
 }
 
 export function socialImage(project?: Project): string {
-	if (!project) return assetUrl(`${siteOrigin}/og.jpg`);
+	if (!project) return assetUrl(siteSocialImage);
 	return assetUrl(
 		`${siteOrigin}${project.socialImage ?? `/og/${project.id}.jpg`}`,
 	);
@@ -137,7 +138,7 @@ export function shareIndex(projects: Project[]): ShareIndex {
 	return {
 		origin: siteOrigin,
 		docs: "https://github.com/nocoo/hexly.ai/blob/main/docs/10-social-share.md",
-		site: absoluteUrl(`/api/share/${identity.id}.json`),
+		site: absoluteUrl("/api/share/site.json"),
 		projects: projects.map((project) => ({
 			id: project.id,
 			name: project.title,
@@ -153,7 +154,7 @@ export function shareFiles(
 	return [
 		{ fileName: "api/share.json", source: json(shareIndex(projects)) },
 		{
-			fileName: `api/share/${identity.id}.json`,
+			fileName: "api/share/site.json",
 			source: json(siteShareCard()),
 		},
 		...projects.map((project) => ({

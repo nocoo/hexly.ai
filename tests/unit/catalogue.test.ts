@@ -103,7 +103,7 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(51);
+		expect(counts.all).toBe(57);
 		expect(counts.archive).toBe(33);
 		expect(filterProjects(projects, "pika", "all")).toEqual([]);
 		expect(

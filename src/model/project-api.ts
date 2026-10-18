@@ -60,7 +60,7 @@ export function projectApi(project: Project) {
 	for (const size of [32, 64, 160, 256, 512, 1024]) {
 		add(
 			`identity-${size}`,
-			`/logos/display/${project.id}-${size}.webp`,
+			project.logo.display.replace(/1024\.webp$/, `${size}.webp`),
 			size,
 			size,
 			project.logo.kind === "emoji" ? "transparent" : "original",

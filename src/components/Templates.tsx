@@ -117,6 +117,7 @@ export function Templates({
 				>
 					<option value="hexly-ai">hexly.ai</option>
 					{projects
+						.filter((project) => project.id !== "hexly-ai")
 						.toSorted((a, b) => a.title.localeCompare(b.title, "en"))
 						.map((project) => (
 							<option key={project.id} value={project.id}>

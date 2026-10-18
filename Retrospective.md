@@ -520,3 +520,56 @@ receipts and published archives were untouched. The completed archive records
 the correction under `manifest.preflightCorrection`. Run lint on every new SVG
 before taking the frozen finishing snapshot, not only on the generated images.
 
+
+## 2026-10-18 - Local identity integration preflight
+
+The static-review worker's normal commit initially selected tests against the
+controller's in-progress catalogue and correctly stopped. The index contained
+only the worker's eight owned paths. The controller completed new inventory/routes,
+removed the obsolete separate site identity, updated count assertions and actual
+brand consumers, and reran the normal gate before releasing the worker's commit.
+No hook was bypassed and no unrelated path was staged. Future shared-worktree
+handoffs must reserve both the index and a testable working-tree checkpoint.
+
+Scoped generation initially serialized ten unrelated project JSON files. Their
+parsed data was identical and their exact initial bytes were restored. The asset
+writer now writes only selected IDs; profile generation also supports an explicit
+selection. An existing inventoried root logo could not be overwritten: its old
+bytes moved to a versioned local recovery source with the same hash/key, and the
+new ignored root received its own inventory record. Freeze source receipts, not
+mutable working-copy filenames.
+
+The first full browser pass had 74 passing tests and one route-fixture teardown
+failure (a response was already handled), not an accepted visual failure. It is
+retained in the local verification log and must not be described as a full pass.
+Additional intake checks also caught a missing JSON import attribute in the native
+Playwright runner. The test import was corrected before rerunning. Remotion's Img
+requires composition context, so the current mark uses it only for rendering and
+uses a native image for ordinary page previews; both preserve the same source bytes.
+
+A later full gate exposed that the new review inventory used a module-imported
+page list while scanning a temporary repository. The fixture had no such pages,
+so inventory failed before exercising its actual recovery-key assertions. The
+scanner now reads the page list from its working repository, and the isolated
+fixture declares an empty list. The focused test and full gate then passed.
+Repository-scoped generators must obtain both configuration and files from the
+same root, rather than mix an imported checkout with a fixture working directory.
+
+The first Chrome capture run stopped on an image decode while the Status view
+was updating, without identifying an asset. A focused inspection decoded all 60
+Status images successfully. Capture now waits for the local feed, reports exact
+failed image URLs, explicitly decodes lazy images and settles scroll position
+before screenshots; the complete 32-case Chrome check passed without suppressing
+decode errors. A partial capture run is not a browser pass, and a full-page
+screenshot with lazy or mid-scroll content is not reliable visual evidence.
+
+Final consumer inspection found that the site's touch-icon link still targeted
+the historical mark despite the updated favicon. It now points at the new opaque
+presentation package, while the old URL remains immutable. HTTP assertions cover
+both effective icon links so future brand rollouts cannot update one silently.
+
+Screenshot inspection also caught that the shared Logo component always chose
+presentation packages, even for the review's transparent 32/24/16px specimens.
+The review now explicitly requests the foreground role; ordinary catalogue
+navigation keeps its established rounded presentation. Browser assertions check
+those source URLs in every review mode and theme, not just successful decoding.

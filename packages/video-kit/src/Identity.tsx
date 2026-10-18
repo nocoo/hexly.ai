@@ -1,43 +1,41 @@
-import { type CSSProperties, useLayoutEffect, useRef, useState } from "react";
+import {
+	type CSSProperties,
+	useContext,
+	useLayoutEffect,
+	useRef,
+	useState,
+} from "react";
 import {
 	AbsoluteFill,
+	Img,
+	staticFile,
 	useCurrentFrame,
 	useDelayRender,
+	useRemotionEnvironment,
 	useVideoConfig,
 } from "remotion";
+import identity from "../current-identity.json";
 import { family, hexly, type Palette, palettes } from "./brand";
-import { useHexlyFonts } from "./fonts";
+import { HexlyFontOrigin, useHexlyFonts } from "./fonts";
 import { revealState } from "./motion";
 import type { Motion, VideoTheme } from "./schema";
 
-export function BrandMark({
-	scale = 1,
-	palette = palettes.light,
-}: {
-	scale?: number;
-	palette?: Palette;
-}) {
+export function BrandMark({ scale = 1 }: { scale?: number }) {
+	const origin = useContext(HexlyFontOrigin);
+	const Image = useRemotionEnvironment().isRendering ? Img : "img";
 	return (
-		<svg
+		<Image
+			src={
+				origin
+					? `${origin}${identity.path}`
+					: staticFile(identity.path.slice(1))
+			}
 			width={hexly.mark.width * scale}
 			height={hexly.mark.height * scale}
-			viewBox={hexly.mark.viewBox}
-			fill="none"
+			alt=""
 			aria-hidden="true"
 			style={{ maxWidth: "100%", maxHeight: "100%" }}
-		>
-			<path d={hexly.mark.outer} fill={palette.accent} />
-			<path
-				d={hexly.mark.inner}
-				stroke={palette.page}
-				strokeWidth={hexly.mark.strokeWidth}
-			/>
-			<path
-				d={hexly.mark.facets}
-				stroke={palette.page}
-				strokeWidth={hexly.mark.strokeWidth}
-			/>
-		</svg>
+		/>
 	);
 }
 
@@ -80,7 +78,7 @@ export function BrandLockup({
 				...wordmarkStyle(scale, palette),
 			}}
 		>
-			<BrandMark scale={scale} palette={palette} />
+			<BrandMark scale={scale} />
 			<span>
 				<Wordmark palette={palette} />
 			</span>
@@ -176,7 +174,7 @@ export function HexlyReveal({
 					transform: `translateY(${(1 - state.mark) * 14}px)`,
 				}}
 			>
-				<BrandMark scale={scale} palette={palette} />
+				<BrandMark scale={scale} />
 			</div>
 			<div
 				data-hexly-wordmark
