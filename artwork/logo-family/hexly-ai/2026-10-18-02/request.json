@@ -1,0 +1,14 @@
+{
+	"tool": "image_gen.imagegen",
+	"model": null,
+	"requestedSize": "2048x2048 via prompt only",
+	"transparent_background": false,
+	"prompt": "Edit the supplied terracotta Hexly ceramic emblem. KEEP the existing emblem itself: the same near-hexagonal outline, six terracotta triangular inlays, cream internal divider geometry, bevels, relief depth, colors, material and nearly frontal view. This is a background correction, not a redesign. REMOVE the old rounded-square background tile and ALL black corner areas. Replace the ENTIRE backdrop with perfectly uniform pure white (#FFFFFF), continuously from edge to edge and through ALL FOUR SQUARE CORNERS. There must be NO rounded rectangle, no app-icon mask, no black corners, no vignette, no paper texture and no external cast shadow. Keep the actual ceramic hexagonal object complete with clear white margin on every side. The output image canvas must be a normal fully opaque square. Do not invent an octagon or change the internal symbol. Render a high-resolution 2048 x 2048 square source if supported. No text or watermark.",
+	"references": [
+		{
+			"role": "Owner-retained first generated ceramic interpretation; background-only correction",
+			"path": "artwork/logo-family/hexly-ai/2026-10-18-01/raw/generated.jpg",
+			"sha256": "bc93016375d57b70f67c160d5dd47b1e6b6fe0b3c7cfe03ed583258d64ebd80d"
+		}
+	]
+}
