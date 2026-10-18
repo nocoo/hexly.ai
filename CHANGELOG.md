@@ -1,5 +1,58 @@
 # Changelog
 
+## [1.5.0] - 2026-10-18
+
+### Maintenance
+
+- bump @playwright/test to 1.64.0 (#82) ([dd2b0bb](https://github.com/nocoo/hexly.ai/commit/dd2b0bb7184010f064add2de1e75ec180e105c47))
+- bump @remotion/bundler to 4.0.535 (#83) ([c84f86d](https://github.com/nocoo/hexly.ai/commit/c84f86ddd08249c8c76466c10b133fe82e54e2ec))
+- bump @remotion/cli to 4.0.535 (#84) ([8ea5781](https://github.com/nocoo/hexly.ai/commit/8ea5781187c4b259df8f4608a71cea1de4b030a8))
+- bump @remotion/player to 4.0.535 (#85) ([37904f2](https://github.com/nocoo/hexly.ai/commit/37904f25b0df4c8b92b5ce0ad96e299bd75eca65))
+- bump @remotion/renderer to 4.0.535 (#86) ([fd942f7](https://github.com/nocoo/hexly.ai/commit/fd942f7f37c876a72f5e588231e7b34da0de5c0c))
+- bump @types/bun to 1.4.3 (#91) ([d54ec6a](https://github.com/nocoo/hexly.ai/commit/d54ec6a4318fdc4c0151de22b3bf999c0f94b828))
+- bump @vitejs/plugin-react to 6.1.2 (#87) ([5f19ab2](https://github.com/nocoo/hexly.ai/commit/5f19ab2031f91ed390c71802121de00c9478a2c8))
+- bump @vitest/coverage-v8 to 5.0.4 (#92) ([559643c](https://github.com/nocoo/hexly.ai/commit/559643cfafb509a6e8feb2277ffeacd6c7b1a35f))
+- bump axe-core to 4.14.0 (#88) ([98c137e](https://github.com/nocoo/hexly.ai/commit/98c137ea0b71a5bb2efe1aa39b74ddd24f6dfb49))
+- bump remotion to 4.0.535 (#89) ([4a86fa8](https://github.com/nocoo/hexly.ai/commit/4a86fa8d21106f17b53469113b0aecce37eb66cd))
+- bump vite to 8.3.4 (#78) ([fec9c46](https://github.com/nocoo/hexly.ai/commit/fec9c4679dc3bc1c9b8bab4da12011401eea8cd7))
+- bump vitest to 5.0.4 (#93) ([6517949](https://github.com/nocoo/hexly.ai/commit/65179494d906455dabf366b0a748b4184a9b8a18))
+- bump wrangler to 4.149.0 (#80) ([515bfc1](https://github.com/nocoo/hexly.ai/commit/515bfc11abb2a552ecc402232919874b4558284e))
+- bump zod to 4.6.7 (#90) ([665b010](https://github.com/nocoo/hexly.ai/commit/665b0107c37b93da9a4569822dcf287a237e7be8))
+- Merge pull request #94 from nocoo/cursor/deps-patch-ab75 ([2f60e0c](https://github.com/nocoo/hexly.ai/commit/2f60e0c1b0c7d3691464fc2d3e4688a467594275))
+- upgrade base-ci to v2026.9 ([93617ee](https://github.com/nocoo/hexly.ai/commit/93617ee06fe6363dd2afc4006ac520d62c734271))
+- bump react and react-dom to 19.3.1 (#98, #99) ([a90a1ac](https://github.com/nocoo/hexly.ai/commit/a90a1ace88e9cfcc711a3b88941aa7c17258fe3d))
+- bump @playwright/test to 1.64.1 (#97) ([47649a0](https://github.com/nocoo/hexly.ai/commit/47649a048644cda3221d7e5f5979d355c791e650))
+- bump vitest and @vitest/coverage-v8 to 5.0.5 (#100, #101) ([ba574d0](https://github.com/nocoo/hexly.ai/commit/ba574d03e720b56bfdfbfdb0d6217d6de3869f0d))
+- bump remotion family to 4.0.536 (#102, #103, #104, #105, #106) ([bdb9f7d](https://github.com/nocoo/hexly.ai/commit/bdb9f7dd8b581352c04393a4472b080c60638a7d))
+- bump wrangler to 4.151.1 (#95) ([1dae73a](https://github.com/nocoo/hexly.ai/commit/1dae73ad5ece78aa86d7925a5307a809be3e1068))
+- Merge pull request #107 from nocoo/cursor/deps-patch-minor-ceb3 ([fe8eb23](https://github.com/nocoo/hexly.ai/commit/fe8eb233b73746b909ab2310644c5bcc73676956))
+- preserve texture review checkpoint ([f590bd6](https://github.com/nocoo/hexly.ai/commit/f590bd6ba3a29fc1afb456416d6f3efc342fa8a7))
+
+### Fixes
+
+- archive retired catalogue projects ([47104e6](https://github.com/nocoo/hexly.ai/commit/47104e629ab1faf25f6f92e2e7235be1efacefbc))
+- preserve native jpeg logo archives ([13cc365](https://github.com/nocoo/hexly.ai/commit/13cc365ad1c6c1b56463c995b5d2968fc4ec29e9))
+
+### Documentation
+
+- record six identity review studies ([427bf97](https://github.com/nocoo/hexly.ai/commit/427bf975b9b82453d0e08d4b57280309be406f6a))
+- revisit octo animal identity direction ([28bd720](https://github.com/nocoo/hexly.ai/commit/28bd7206047644f7e50ad4083fab48068eda3f38))
+- study noheir framing for octo logo ([7a0326c](https://github.com/nocoo/hexly.ai/commit/7a0326c6050e34a20df3902393fcb1ea37dffec5))
+- try minimal seahorse portrait brief ([2cc0126](https://github.com/nocoo/hexly.ai/commit/2cc012641408a1bf32157271645bcdb1b6f32e78))
+- study octo seahorse with image 2.5 ([bcfc201](https://github.com/nocoo/hexly.ai/commit/bcfc201e5ea6dc38c2c7b19670c2b73042fe1fe7))
+- approve octo for local brand rollout ([0378682](https://github.com/nocoo/hexly.ai/commit/037868202bcf888d41a0d0be2a6442a17d946149))
+- record approved material publication ([f5d0cc7](https://github.com/nocoo/hexly.ai/commit/f5d0cc71dd5a7113bce367e3080479993e4d345d))
+- verify source identity publication ([7ab7c14](https://github.com/nocoo/hexly.ai/commit/7ab7c1408200f3949a69d5dd8e75730e0e2f7ee4))
+
+### Features
+
+- finish declared native material sources ([9a33931](https://github.com/nocoo/hexly.ai/commit/9a33931061bd54b9b7541dc43e5f483a41312f4c))
+- finish five approved material logos ([6299f3e](https://github.com/nocoo/hexly.ai/commit/6299f3e9274990444a932d1214ed8855082a146e))
+- finish approved octo seahorse ([f6e54b8](https://github.com/nocoo/hexly.ai/commit/f6e54b88be56b3afa555ed4e7f897186e5528301))
+- complete six local identity reviews ([cf40e47](https://github.com/nocoo/hexly.ai/commit/cf40e47c89ab72dbd56e0cd1425c14f668555f7f))
+- adopt six approved project identities ([958ed17](https://github.com/nocoo/hexly.ai/commit/958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d))
+- adopt approved project textures locally ([4ce87f6](https://github.com/nocoo/hexly.ai/commit/4ce87f648729d52ff2bc077627321319c1192277))
+
 ## [1.4.2] - 2026-10-17
 
 ### Maintenance
