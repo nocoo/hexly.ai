@@ -1,0 +1,339 @@
+{
+	"createdAt": "2026-10-18T06:32:02.210Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.jpg",
+		"sha256": "d17ef6cc060d4c971ae3f91fce8cb8e5620e2c4b52390476f00ba76d4cbd702c",
+		"width": 1024,
+		"height": 1024
+	},
+	"method": "Inspected native SVG silhouette extraction with antialiased alpha; opaque source RGB is unchanged. Enclosed holes and exterior shadows follow the recorded contour, not a global white threshold. Background and new shadows remain separate.",
+	"sourceRecord": "generation-source.json",
+	"upscaledExportSizes": [
+		2048
+	],
+	"settings": {
+		"project": "next-ai",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"sourceRecord": "generation-source.json",
+		"background": {
+			"base": "#dfe8e7",
+			"light": "#f4f8f4",
+			"shade": "#c7d6d5",
+			"motif": "#7c9999",
+			"grainAmplitude": 0.45,
+			"grainSeed": 20261022,
+			"motifOpacity": 0.22,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Selector bench detent sweep",
+				"description": "Pale selector assembly surface with a partial detent sweep, indexed radial strokes and one locating cross; a quiet analogue for choosing model providers.",
+				"layers": [
+					{
+						"d": "M763 73A218 218 0 0 1 969 285 M785 77l-8 26m57 -11l-12 24m57 -4l-17 22m48 6l-21 18m38 21l-25 12 M69 805A183 183 0 0 0 232 969 M92 806A160 160 0 0 0 234 946 M115 129h62m-31 -31v62",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					}
+				]
+			}
+		},
+		"matte": {
+			"foregroundMask": {
+				"path": "foreground-mask.svg",
+				"sha256": "c9fea6cbc7a0193fd039ffabc302b1778a8b225dc0aadb96099d8a3d1104bc4a",
+				"description": "Inspected native contour separates the material object from baked exterior shadow; even-odd subpaths remove only physical background holes."
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					50,
+					46,
+					40
+				],
+				"opacity": 0.16,
+				"blurAt2048": 42,
+				"offsetAt2048": [
+					0,
+					24
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": [
+			2048
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"minimumClearanceAt2048": 128,
+			"note": "Native whole-object composition retained; no geometry or RGB resampling in the 1024 transparent master."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 808179,
+		"foregroundPixels": 240397,
+		"softEdgePixels": 2047,
+		"opaqueRgbPreserved": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 219,
+			"top": 253,
+			"right": 806,
+			"bottom": 784
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 217.50000000000003,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1629,
+			"sha256": "f011732d7db18b2627a9153f39e202920526515eeca945a96f749b8f4151dc27"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 929,
+			"sha256": "7c6ecbf66a92890d47949179bdba72d2c4a26500af3c46325eb8e16c1db75d46"
+		},
+		{
+			"path": "generation-source.json",
+			"bytes": 261,
+			"sha256": "913914694d3555cf9754f0bb526fe105c60f1e8ec22d224c97876bd517236189"
+		},
+		{
+			"path": "foreground-mask.svg",
+			"bytes": 578,
+			"sha256": "c9fea6cbc7a0193fd039ffabc302b1778a8b225dc0aadb96099d8a3d1104bc4a"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 672100,
+			"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 13319,
+			"sha256": "ba75d6bb623752747c31cdd33e5f437d733fdf207e08dfae5fd209a9930a055e"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 666,
+			"sha256": "f868b37b8971069e578d923e0d21b2d2298728a3e7238d9c5f715ec49c44ce8c"
+		},
+		{
+			"path": "background.png",
+			"bytes": 51155,
+			"sha256": "7088d8888444b9e2bf9fdb760ce96e7d8db63c7fea265c3e146cd73f8ce2286e"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 40774,
+			"sha256": "f1d10c7d9915aaa27e6221417788153a4e9e3a51ea5cdb934408d0f2b945ab5b"
+		},
+		{
+			"path": "exports/next-ai-transparent-2048.png",
+			"bytes": 1538687,
+			"sha256": "b703cf99139a31b6bb1e07a7bb7a73dc9f2118d4932fc4a529128b905a1967af"
+		},
+		{
+			"path": "exports/next-ai-icon-2048.png",
+			"bytes": 1784868,
+			"sha256": "f9379f2792dfddce86ff9b1d871b238a4924159662f6ad78476c3f20ee51f5e1"
+		},
+		{
+			"path": "exports/next-ai-rounded-2048.png",
+			"bytes": 1822982,
+			"sha256": "dd4571ccd2ea110aa4d36a68387a2d0688e51fc80ae824d0ac732fab1c27d353"
+		},
+		{
+			"path": "exports/next-ai-transparent-1024.png",
+			"bytes": 672100,
+			"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3"
+		},
+		{
+			"path": "exports/next-ai-icon-1024.png",
+			"bytes": 486416,
+			"sha256": "781403b3b998658f36e6f7aadcb502e9d0c34724ddf6984701cdbafdb9ca19bc"
+		},
+		{
+			"path": "exports/next-ai-rounded-1024.png",
+			"bytes": 491570,
+			"sha256": "25cc888a0600ca8683f27289385bf3d3ff2d8d11699325aca50451642f11be5c"
+		},
+		{
+			"path": "exports/next-ai-transparent-512.png",
+			"bytes": 138187,
+			"sha256": "a04a3ebb787ce14e2f6a57012178ae91e710f54212ed31b2afd2603c2205b0dd"
+		},
+		{
+			"path": "exports/next-ai-icon-512.png",
+			"bytes": 167265,
+			"sha256": "18030edbce9a85e0e63e032b5641db9e239b51b9f2f7bca38ec0af7a2dddea87"
+		},
+		{
+			"path": "exports/next-ai-rounded-512.png",
+			"bytes": 175096,
+			"sha256": "9d5d7429f6baedabc7dbb8725717cdc191f2cd2c863c7ed3eac4c0593e396642"
+		},
+		{
+			"path": "exports/next-ai-transparent-256.png",
+			"bytes": 40695,
+			"sha256": "b0bf68d2067f1cea61f9b1970b67c54a6fd6decdb0f9d378524c799354be6d45"
+		},
+		{
+			"path": "exports/next-ai-icon-256.png",
+			"bytes": 51963,
+			"sha256": "6020905abf415951fc8e765678c7d7c5e2a2e8b61c653bb6d5bcbcfe10fd9967"
+		},
+		{
+			"path": "exports/next-ai-rounded-256.png",
+			"bytes": 55974,
+			"sha256": "bdbcad99df45cb655febefb14f52c9c5e89c10394923d33146003728cc1a1690"
+		},
+		{
+			"path": "exports/next-ai-transparent-128.png",
+			"bytes": 12401,
+			"sha256": "ebf0e1620dede89926c27fff37f5cfade82d8608ca37b159d53f103adbb90c3f"
+		},
+		{
+			"path": "exports/next-ai-icon-128.png",
+			"bytes": 16714,
+			"sha256": "913692a0e1961fb16d7fb45351abc901eb6dec809d831652aa6983ebb7943834"
+		},
+		{
+			"path": "exports/next-ai-rounded-128.png",
+			"bytes": 18621,
+			"sha256": "dfb97a87df684689009c69876229b0bad884a1405b61e644315842bbb6923d6d"
+		},
+		{
+			"path": "exports/next-ai-transparent-64.png",
+			"bytes": 3862,
+			"sha256": "1f7aab7fae3d2c2b3b22383bd0281af1fed54511bdf027034546a53ee8df1380"
+		},
+		{
+			"path": "exports/next-ai-icon-64.png",
+			"bytes": 5587,
+			"sha256": "0c14393d609d59e209091d2fbba7c0f9b4d4592f605521d7b53629e98b39b6ac"
+		},
+		{
+			"path": "exports/next-ai-rounded-64.png",
+			"bytes": 6389,
+			"sha256": "0b07cfab49e704740bdf82f2c62bd762b2361d9aa60b167173ccd60490ae7802"
+		},
+		{
+			"path": "exports/next-ai-transparent-48.png",
+			"bytes": 2441,
+			"sha256": "fe4bd5bada404f1cafe0846d65fec265514b66f13987a96aaee89167aae78692"
+		},
+		{
+			"path": "exports/next-ai-icon-48.png",
+			"bytes": 3676,
+			"sha256": "3f88f4930be35fadaf08aca97c9efcca02898340ebaca61f0a0e8d198664a42a"
+		},
+		{
+			"path": "exports/next-ai-rounded-48.png",
+			"bytes": 4217,
+			"sha256": "de912b9b03b918d9c186851ac3a3c565b616b5a37ada2875ac56e75bfe961944"
+		},
+		{
+			"path": "exports/next-ai-transparent-32.png",
+			"bytes": 1373,
+			"sha256": "d9bd5d193d94cd89ffe30c6c731a8a60eb5be90948ee7ec5f2082ac2b76a1928"
+		},
+		{
+			"path": "exports/next-ai-icon-32.png",
+			"bytes": 2161,
+			"sha256": "7ae4f6e5f26e1191dffd7d0b3be489d94dd3ba190ca962be2a3d53707747f2a3"
+		},
+		{
+			"path": "exports/next-ai-rounded-32.png",
+			"bytes": 2396,
+			"sha256": "140c9e968d4208af0ee154273b059fd1927a69ff4ee2367ba55d28d23e010f51"
+		},
+		{
+			"path": "exports/next-ai-transparent-24.png",
+			"bytes": 894,
+			"sha256": "34535150f06b08424fef5a38fe2f1cebb584e182852d9735024d7e82dd2f7330"
+		},
+		{
+			"path": "exports/next-ai-icon-24.png",
+			"bytes": 1385,
+			"sha256": "9367861daa56f4b063575611cecc61e14f423a3edc0359c86107df2ae90e5acd"
+		},
+		{
+			"path": "exports/next-ai-rounded-24.png",
+			"bytes": 1543,
+			"sha256": "aa871e17184b55b22a561cb8d5bf314879fb125a68269d8fcc945cdad4360427"
+		},
+		{
+			"path": "exports/next-ai-transparent-16.png",
+			"bytes": 548,
+			"sha256": "a27c1348afec90f0f27e205f469d89b6ff69f425040f7095fb55aeb66059fc9b"
+		},
+		{
+			"path": "exports/next-ai-icon-16.png",
+			"bytes": 804,
+			"sha256": "e711bba0e6d1b7933544fcf1db569d10a2884c84419cced7890ac9773b228996"
+		},
+		{
+			"path": "exports/next-ai-rounded-16.png",
+			"bytes": 870,
+			"sha256": "443bee41a5f26d9099631cd692b66cb4229aee46f2fac4e08321778ffb4ead6c"
+		},
+		{
+			"path": "exports/next-ai-white-1024.png",
+			"bytes": 408466,
+			"sha256": "c8b1ca96631c5758377e1f692c00e06d745c59fd357f7dd568e5fa0070714256"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 416857,
+			"sha256": "9f9ca582231cd858e33401ab12f6b2ae1499a05e9ed468a1c2df52cf61365298"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 415304,
+			"sha256": "8a8a14afc43fb4a1c5892c39ef182d28003bb2a3ba371c995adf9dfc94882183"
+		}
+	],
+	"preflightCorrection": {
+		"reason": "Add an accessible title to the new SVG before first commit; all raster derivatives remain byte-identical.",
+		"previousMaskSha256": "8610d03fe83a017b10b8b7b63623f6f0895a61d1b4365d3c19867985b89cb3d1",
+		"maskSha256": "c9fea6cbc7a0193fd039ffabc302b1778a8b225dc0aadb96099d8a3d1104bc4a",
+		"rasterBytesUnchanged": true
+	}
+}

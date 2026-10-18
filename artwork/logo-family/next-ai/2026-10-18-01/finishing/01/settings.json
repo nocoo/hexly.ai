@@ -1,0 +1,52 @@
+{
+	"project": "next-ai",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"sourceRecord": "generation-source.json",
+	"background": {
+		"base": "#dfe8e7",
+		"light": "#f4f8f4",
+		"shade": "#c7d6d5",
+		"motif": "#7c9999",
+		"grainAmplitude": 0.45,
+		"grainSeed": 20261022,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Selector bench detent sweep",
+			"description": "Pale selector assembly surface with a partial detent sweep, indexed radial strokes and one locating cross; a quiet analogue for choosing model providers.",
+			"layers": [
+				{
+					"d": "M763 73A218 218 0 0 1 969 285 M785 77l-8 26m57 -11l-12 24m57 -4l-17 22m48 6l-21 18m38 21l-25 12 M69 805A183 183 0 0 0 232 969 M92 806A160 160 0 0 0 234 946 M115 129h62m-31 -31v62",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				}
+			]
+		}
+	},
+	"matte": {
+		"foregroundMask": {
+			"path": "foreground-mask.svg",
+			"sha256": "c9fea6cbc7a0193fd039ffabc302b1778a8b225dc0aadb96099d8a3d1104bc4a",
+			"description": "Inspected native contour separates the material object from baked exterior shadow; even-odd subpaths remove only physical background holes."
+		}
+	},
+	"shadows": [
+		{
+			"color": [50, 46, 40],
+			"opacity": 0.16,
+			"blurAt2048": 42,
+			"offsetAt2048": [0, 24]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [2048],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Native whole-object composition retained; no geometry or RGB resampling in the 1024 transparent master."
+	}
+}

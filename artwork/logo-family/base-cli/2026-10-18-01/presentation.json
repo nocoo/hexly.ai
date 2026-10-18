@@ -1,0 +1,56 @@
+{
+	"project": "base-cli",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"sourceRecord": "generation-source.json",
+	"background": {
+		"base": "#efe5d2",
+		"light": "#fcf8ed",
+		"shade": "#ddcbb1",
+		"motif": "#b19875",
+		"grainAmplitude": 0.45,
+		"grainSeed": 20261020,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Driver service mat bit slots",
+			"description": "Amber-tinted service mat with shallow bit-storage slots and short diagonal driver alignment scores, echoing reusable command-line utilities as a compact hand tool.",
+			"layers": [
+				{
+					"d": "M91 120h180q12 0 12 12v15q0 12 -12 12H91q-12 0 -12 -12v-15q0 -12 12 -12Z M103 133h19m19 0h19m19 0h19m19 0h19 M798 850l91 -83 14 16 -91 83Z M99 854l53 -48m-38 63l53 -48 M762 138l42 46m-34 -53l42 46",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 237,
+		"maximumChroma": 24,
+		"backgroundRgb": [253, 253, 253],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.95,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 16
+	},
+	"shadows": [
+		{
+			"color": [50, 46, 40],
+			"opacity": 0.16,
+			"blurAt2048": 42,
+			"offsetAt2048": [0, 24]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [2048],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Native whole-object composition retained; no geometry or RGB resampling in the 1024 transparent master."
+	}
+}

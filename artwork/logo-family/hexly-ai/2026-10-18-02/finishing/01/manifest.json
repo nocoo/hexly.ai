@@ -1,0 +1,339 @@
+{
+	"createdAt": "2026-10-18T06:32:00.197Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.jpg",
+		"sha256": "af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897",
+		"width": 1024,
+		"height": 1024
+	},
+	"method": "Inspected native SVG silhouette extraction with antialiased alpha; opaque source RGB is unchanged. Enclosed holes and exterior shadows follow the recorded contour, not a global white threshold. Background and new shadows remain separate.",
+	"sourceRecord": "generation-source.json",
+	"upscaledExportSizes": [
+		2048
+	],
+	"settings": {
+		"project": "hexly-ai",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"sourceRecord": "generation-source.json",
+		"background": {
+			"base": "#eee6dc",
+			"light": "#faf7f1",
+			"shade": "#ded0c0",
+			"motif": "#b8997e",
+			"grainAmplitude": 0.45,
+			"grainSeed": 20261018,
+			"motifOpacity": 0.22,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Ceramic workshop scoring",
+				"description": "Warm unglazed workboard with paired clay-scoring tracks and sparse hexagonal impression marks, relating to the ceramic directory emblem rather than product UI.",
+				"layers": [
+					{
+						"d": "M-40 175L285 -12M-40 198L305 -2M730 1034L1060 844M738 1054L1070 863 M68 854L131 890L194 854L194 782L131 746L68 782Z M880 98L910 115L940 98M910 115V151",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					}
+				]
+			}
+		},
+		"matte": {
+			"foregroundMask": {
+				"path": "foreground-mask.svg",
+				"sha256": "e5f40bc5ff82670dcd99d8e403f19b2235431aac6d4c3280209019a46a4c2b12",
+				"description": "Inspected native contour separates the material object from baked exterior shadow; even-odd subpaths remove only physical background holes."
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					50,
+					46,
+					40
+				],
+				"opacity": 0.16,
+				"blurAt2048": 42,
+				"offsetAt2048": [
+					0,
+					24
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": [
+			2048
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"minimumClearanceAt2048": 128,
+			"note": "Native whole-object composition retained; no geometry or RGB resampling in the 1024 transparent master."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 659744,
+		"foregroundPixels": 388832,
+		"softEdgePixels": 2356,
+		"opaqueRgbPreserved": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 176,
+			"top": 128,
+			"right": 847,
+			"bottom": 890
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 128.50000000000003,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1605,
+			"sha256": "66e6955c607239214739b350538701603a537b3f1b5450e8ca0174824ee216f8"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 870,
+			"sha256": "7e439aacd28d4e091ef70fff51c39ffba2b3b9d370fd5c6637077176fee36147"
+		},
+		{
+			"path": "generation-source.json",
+			"bytes": 261,
+			"sha256": "49634fcaf2587aa77831fd22367929952b41395b3d55828e3e2e2c552d36a57f"
+		},
+		{
+			"path": "foreground-mask.svg",
+			"bytes": 357,
+			"sha256": "e5f40bc5ff82670dcd99d8e403f19b2235431aac6d4c3280209019a46a4c2b12"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 1175430,
+			"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 15073,
+			"sha256": "71d29f7d29a46c744e7c11d06d6a2c252aa2a93bdea33734eae38f5d65245342"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 635,
+			"sha256": "e81dc493fc9d0b6f3bb06f7564c06943c9b2ca3ef2611c0425215269f72340cc"
+		},
+		{
+			"path": "background.png",
+			"bytes": 57908,
+			"sha256": "0bde09c16c556bf71227ca0d5328685bcb362d1a428378f221845784c3a9e878"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 41617,
+			"sha256": "4281dcba77fdc9a358e49c9ff69744fb32e8f51f56a60fef69f11462f2aee09e"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-2048.png",
+			"bytes": 3488486,
+			"sha256": "c54ddecae70e3bcca4b4458919d64c374ac205f0d668dc3d27a3bce49e813951"
+		},
+		{
+			"path": "exports/hexly-ai-icon-2048.png",
+			"bytes": 3758065,
+			"sha256": "c0ce986e369a25eb56b3b284afee95983d779d72a2b19af520ee17ae9980a9f0"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-2048.png",
+			"bytes": 3795193,
+			"sha256": "4ed984fa5cb2cb4cf78880827ca3639c77f6f493182782815cb4d8d5c823b7b7"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-1024.png",
+			"bytes": 1175430,
+			"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d"
+		},
+		{
+			"path": "exports/hexly-ai-icon-1024.png",
+			"bytes": 945677,
+			"sha256": "212d8b4527d10db852f1880d88ca1bb7ed412b89be765b13c769ec8973f1dff9"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-1024.png",
+			"bytes": 950379,
+			"sha256": "fad1e2a7d6c8300a2d67ffb2318c2486acbd7522d50223b03115c3c12d0f3851"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-512.png",
+			"bytes": 244368,
+			"sha256": "7fe8596d6b474d680d1daa08b2411882fd2a3ac25e7e94e814ec2121dc8bc615"
+		},
+		{
+			"path": "exports/hexly-ai-icon-512.png",
+			"bytes": 278365,
+			"sha256": "19a825ad9453628d85b4bf18d0c7711da9b3bf23882f2f9db124a29d6b1528ff"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-512.png",
+			"bytes": 286114,
+			"sha256": "d9c39c01ff67cd6e9aae6d8393bf5da1b7b4e8920e6cc402e0548988381c2256"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-256.png",
+			"bytes": 65665,
+			"sha256": "0672a3a23436def178c2fd9f4b049c1c3331067e2897c413ce8c3faece05aaf5"
+		},
+		{
+			"path": "exports/hexly-ai-icon-256.png",
+			"bytes": 78645,
+			"sha256": "d32b8e4ea7a96879745c7b359979e9613da952ae6002f48c1c194fcdaec197cf"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-256.png",
+			"bytes": 82340,
+			"sha256": "54f84190e6776460518719ff6deb58a75e8bfde8d931e8d86f9901d9d367f176"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-128.png",
+			"bytes": 18606,
+			"sha256": "fe6378205370ae1daef9cae06db6c5fffcc25b7303dd051b603a81ab2116ae0f"
+		},
+		{
+			"path": "exports/hexly-ai-icon-128.png",
+			"bytes": 23547,
+			"sha256": "633864e9a09a1216766e893c926838ec7dd1b14309d5049ae1b0d0f6f86f0d0b"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-128.png",
+			"bytes": 25349,
+			"sha256": "09a93423df907ec07a5c8f0ced4b592cf808c37cdc57cea8f4d6e42c105a6b8d"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-64.png",
+			"bytes": 5750,
+			"sha256": "856b88cca6156263cfaca7849dc3519283e4c91f5e439d0fa2ca79f12d16a386"
+		},
+		{
+			"path": "exports/hexly-ai-icon-64.png",
+			"bytes": 7658,
+			"sha256": "80a10d334ec5ce62ce3b34510b50e96e50f490aec72bc69718c273dbaabbeabc"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-64.png",
+			"bytes": 8379,
+			"sha256": "eaba7cb1afe3a93178021e51763c8b1fc215e320556ecbdbaea716b8cc47ea69"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-48.png",
+			"bytes": 3567,
+			"sha256": "5f6c3cdb314e24ea0f177f5ba0d6dedff5696995e441c0bffbfea046414879ab"
+		},
+		{
+			"path": "exports/hexly-ai-icon-48.png",
+			"bytes": 4795,
+			"sha256": "c438cb15a11dbaead55415385198084ab8af0dcddb8780657aef36e18507591a"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-48.png",
+			"bytes": 5353,
+			"sha256": "2e1f28e04b90893735b2451a5e909f064688100f88349ce1cd7de99e2ce9d7f0"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-32.png",
+			"bytes": 1864,
+			"sha256": "59492e2357db3dace004ada6737032afd60f466cdc4962053e2ed234b43ae328"
+		},
+		{
+			"path": "exports/hexly-ai-icon-32.png",
+			"bytes": 2676,
+			"sha256": "1c91cf903cd081e38008344bd3c25e307cbd07ab6656e344ca7a494eb7d36328"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-32.png",
+			"bytes": 2895,
+			"sha256": "1f26c886d37ed0436a177c70433aa5872c48fb32274bd6caee03ff665f1dc7e5"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-24.png",
+			"bytes": 1220,
+			"sha256": "24890e6b9c502bbcb1aa2b013f7628a2efb7c21e5f628935359abe3bcf6cddbd"
+		},
+		{
+			"path": "exports/hexly-ai-icon-24.png",
+			"bytes": 1687,
+			"sha256": "02a965fc7864dbe5b007999a374110604c7080b8e571e4735eb1e7722f5cf9f2"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-24.png",
+			"bytes": 1843,
+			"sha256": "4a877d5c81a3cba1879405dfbfdc189310119e12c0456317eb6f1ac2ad3d3faa"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-16.png",
+			"bytes": 707,
+			"sha256": "be705cba48e16a0262d60b2c53499bdae274cb24ad0a17767ffaf2b13a084613"
+		},
+		{
+			"path": "exports/hexly-ai-icon-16.png",
+			"bytes": 902,
+			"sha256": "1d0004103dba54c4a2a736b7bcb4bbc19ca0922f57f18489e8b86b8a664005a3"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-16.png",
+			"bytes": 969,
+			"sha256": "8e5b58733c16a37356e6b25374ff484b6a40d6fadbde1076c845510134e15d26"
+		},
+		{
+			"path": "exports/hexly-ai-white-1024.png",
+			"bytes": 894734,
+			"sha256": "7cfbd512d427f355a34ea3c80b6df19112700746b4794165067749859271d25b"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 902356,
+			"sha256": "97f333b85ef95e2751ded7d02682e1c44f888a6e2cc6a9a1e3149b6a9049812c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 901761,
+			"sha256": "6cc0477dac6784d79facc4171b733ba09be061fc8b597d0475d7003480abe2bf"
+		}
+	],
+	"preflightCorrection": {
+		"reason": "Add an accessible title to the new SVG before first commit; all raster derivatives remain byte-identical.",
+		"previousMaskSha256": "3de0329cd62a81777dcecb5129d0ee9a54b31e1725a3b5b53f3d082f6b19a256",
+		"maskSha256": "e5f40bc5ff82670dcd99d8e403f19b2235431aac6d4c3280209019a46a4c2b12",
+		"rasterBytesUnchanged": true
+	}
+}

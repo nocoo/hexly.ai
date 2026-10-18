@@ -1,0 +1,52 @@
+{
+	"project": "base-ci",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"sourceRecord": "generation-source.json",
+	"background": {
+		"base": "#e4eae2",
+		"light": "#f7f9f3",
+		"shade": "#cfdacb",
+		"motif": "#81977f",
+		"grainAmplitude": 0.45,
+		"grainSeed": 20261019,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Inspection bench witness marks",
+			"description": "A pale inspection bench with nested go/no-go corner gauges, a short witness ruler and a calibration stamp; distinct from a general engineering grid.",
+			"layers": [
+				{
+					"d": "M54 224V95H266M71 224V112H266 M742 922H946V757M742 905H929V757 M116 879h114m-114 -13v26m19 -20v14m19 -14v14m19 -14v14m19 -14v14m19 -20v26 M811 125l17 -10 17 10v20l-17 10 -17 -10Z",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				}
+			]
+		}
+	},
+	"matte": {
+		"foregroundMask": {
+			"path": "foreground-mask.svg",
+			"sha256": "afaf40a6061cabc4d947cd82e8a66e2462f80f88e2b5af7cf21a06776cdff8ee",
+			"description": "Inspected native contour separates the material object from baked exterior shadow; even-odd subpaths remove only physical background holes."
+		}
+	},
+	"shadows": [
+		{
+			"color": [50, 46, 40],
+			"opacity": 0.16,
+			"blurAt2048": 42,
+			"offsetAt2048": [0, 24]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [2048],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Native whole-object composition retained; no geometry or RGB resampling in the 1024 transparent master."
+	}
+}
