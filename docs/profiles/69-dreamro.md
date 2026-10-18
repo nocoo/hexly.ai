@@ -6,7 +6,7 @@
 - Website: [https://dreamro.hexly.ai](https://dreamro.hexly.ai)
 - Website evidence: GitHub repository homepage and README.md linked game preview
 - Category: games
-- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Nostalgic 3D browser RPG with 20 classes, three realms, and local saves
 - Chinese: 怀旧风格的 3D 网页角色扮演游戏，提供 20 种职业、三大区域和本地存档。
 - Profile section: Games
@@ -158,8 +158,6 @@ Pale parchment carries a fine interlaced lozenge lattice and small heraldic corn
 
 Small-size observation: The shield and crossing weapon silhouettes carry the 32/16 px identity; engraved metal, the bowstring and timber grain resolve mainly in larger views. Browser and sidebar marks use the transparent equipment assembly. Large presentations use the parchment tile.
 
-## Further refinements
+## Archive maintenance
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

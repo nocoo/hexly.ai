@@ -103,8 +103,8 @@ describe("the imported project catalogue", () => {
 	});
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
-		expect(counts.all).toBe(62);
-		expect(counts.archive).toBe(22);
+		expect(counts.all).toBe(51);
+		expect(counts.archive).toBe(33);
 		expect(filterProjects(projects, "pika", "all")).toEqual([]);
 		expect(
 			filterProjects(projects, "pika", "archive").map((p) => p.id),
@@ -114,15 +114,22 @@ describe("the imported project catalogue", () => {
 		).not.toContain("hermes-on-herdr");
 		expect(
 			filterProjects(projects, "hermes", "archive").map((p) => p.id),
-		).toEqual(["hermes-on-herdr"]);
+		).toEqual(["rooster", "hermes-on-herdr"]);
 		expect(counts.skills).toBe(1);
 		expect(filterProjects(projects, "", "skills").map((p) => p.id)).toEqual([
 			"diorama-journey",
 		]);
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);
-		expect(filterProjects(projects, "", "archive")).toEqual(
-			projects.filter((project) => project.archived),
+		expect(
+			filterProjects(projects, "", "archive")
+				.map((project) => project.id)
+				.toSorted(),
+		).toEqual(
+			projects
+				.filter((project) => project.archived)
+				.map((project) => project.id)
+				.toSorted(),
 		);
 		expect(filterProjects(projects, "uptime kuma")).toEqual([]);
 		expect(filterProjects(projects, "uptime kuma", "extensions")).toHaveLength(

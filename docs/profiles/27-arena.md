@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
-- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Let coding agents debate solutions while you review, compare, and decide.
 - Chinese: 让多个编程智能体提出方案、展开讨论，由你比较、审阅并做决定。
 - Profile section: Recent Projects
@@ -156,8 +156,6 @@ Two offset dial arcs with alternating short speaking-turn marks on warm oak-tone
 
 Small-size observation: At 128/64 px, the twin ivory dials and walnut frame remain clear. At 32/24/16 px, the compact silhouette and dominant colors carry recognition; fine material detail, printed marks and background lines naturally merge.
 
-## Further refinements
+## Archive maintenance
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

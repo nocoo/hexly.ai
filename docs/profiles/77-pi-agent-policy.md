@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: User-level Pi tool policies and bounded recovery
 - Chinese: 用户级 Pi 工具策略与有界恢复
 - Profile section: Recent Projects
@@ -157,8 +157,6 @@ Paired contact stops and one returning trace, pressed into warm mineral paper. T
 
 Small-size observation: The graphite silhouette and red control remain legible at 24/16px; fine knurling and metal highlights soften. Small marks use transparent foregrounds without tiles, masks or extra dots. This extension has no standalone web UI.
 
-## Further refinements
+## Archive maintenance
 
-Preserve the approved raster, original colors, complete silhouette, and exact generation/finishing records. Supporting textures remain separate. Published versions are immutable; generated raster artwork is not native SVG.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

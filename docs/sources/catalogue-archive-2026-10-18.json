@@ -1,0 +1,118 @@
+{
+	"observedAt": "2026-10-18T00:54:37.285076+00:00",
+	"ownerDecision": "Retain all eleven catalogue entries and historical assets, mark them archived and remove them from active monitoring. Do not delete pi-agent-policy.",
+	"repositories": [
+		{
+			"name": "pi-agent-policy",
+			"isArchived": true,
+			"visibility": "PRIVATE",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "0fbda2a3690c42516fbe9526bdba5003ad465929"
+				}
+			}
+		},
+		{
+			"name": "dogfight",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "6cb1680065c4ece337ac542e4feb331aea2b2cf1"
+				}
+			}
+		},
+		{
+			"name": "dreamro",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "d316f7419a2da896bae847e0a93561b6aff8dce9"
+				}
+			}
+		},
+		{
+			"name": "rooster",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "08ebe6823fe94074a46b4a55dbfdc6b3f91b3ec6"
+				}
+			}
+		},
+		{
+			"name": "arena",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "75670e226b094cffb3189c71ed375d71bc28ccdc"
+				}
+			}
+		},
+		{
+			"name": "deca",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "b4ebf3987485283e533b391cba14e905335b33f0"
+				}
+			}
+		},
+		{
+			"name": "snaky",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "beb9be1d38d2305a708353623bd13538fd049595"
+				}
+			}
+		},
+		{
+			"name": "codo",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "553f6e3113de369432447e9ab924da79e3b935d9"
+				}
+			}
+		},
+		{
+			"name": "shrike",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "e2987cea4ca6a6382204207ae345ea3d0fa7582b"
+				}
+			}
+		},
+		{
+			"name": "runner",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "ca084eb01314ee721292bf98df319a098279e204"
+				}
+			}
+		},
+		{
+			"name": "flow",
+			"isArchived": true,
+			"visibility": "PUBLIC",
+			"defaultBranchRef": {
+				"target": {
+					"oid": "72cd44917a83fc7f3d8acbf963d2462130679b6b"
+				}
+			}
+		}
+	],
+	"publicStatus": "Archived entries are excluded by healthEndpoint and statusSites; production changes require deployment.",
+	"externalMonitoring": "Not changed by this catalogue commit."
+}
