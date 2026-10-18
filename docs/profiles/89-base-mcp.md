@@ -56,12 +56,22 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ## Current textured icons
 
-![Base MCP current icon](https://h.no.mt/projects/base-mcp/icons/v1.0.0/rounded-160.webp)
+![Base MCP current icon](https://h.no.mt/projects/base-mcp/icons/v1.0.2/rounded-160.webp)
 
-- [Native square PNG](https://h.no.mt/projects/base-mcp/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/base-mcp/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/base-mcp/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/base-mcp/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/base-mcp/icons/v1.0.0/apple-touch-icon.png)
-- [Manifest and checksums](https://h.no.mt/projects/base-mcp/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/base-mcp/icons/v1.0.0/guide.md)
-- Native canvas 1024 × 1024; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
+- [Native square PNG](https://h.no.mt/projects/base-mcp/icons/v1.0.2/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/base-mcp/icons/v1.0.2/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/base-mcp/icons/v1.0.2/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/base-mcp/icons/v1.0.2/favicon.ico) · [Apple touch](https://h.no.mt/projects/base-mcp/icons/v1.0.2/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/base-mcp/icons/v1.0.2/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/base-mcp/icons/v1.0.2/guide.md)
+- Native canvas 1024 × 1024; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
+## Current campaign texture
+
+- Mating surface / 接合工作面: A fine anti-static work surface with sparse paired coupling impressions and short routing channels.
+- 细腻防静电工作面上，疏朗排布成对接合压痕与短导槽。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
+- [Paper PNG](https://h.no.mt/projects/base-mcp/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/base-mcp/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/base-mcp/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/base-mcp/textures/v1.0.1/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/base-mcp/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/base-mcp/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/base-mcp/v1.0.1/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Refined identity
 

@@ -207,9 +207,26 @@
 	},
 	"socialImage": "/og/next-ai.jpg",
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/next-ai/v1.0.0",
+		"version": "1.0.2",
+		"root": "/icons/next-ai/v1.0.2",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/next-ai/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Tuning enamel",
+			"zh": "调谐珐琅"
+		},
+		"description": {
+			"en": "A softly powder-coated control surface with restrained tuning arcs and shallow detent marks.",
+			"zh": "柔和粉末涂层控制面上，保留克制的调谐弧线与浅档位刻痕。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
 	}
 }

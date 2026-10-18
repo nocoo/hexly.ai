@@ -200,9 +200,26 @@
 	},
 	"socialImage": "/og/base-cli.jpg",
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/base-cli/v1.0.0",
+		"version": "1.0.2",
+		"root": "/icons/base-cli/v1.0.2",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/base-cli/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Assembly mat",
+			"zh": "装配垫"
+		},
+		"description": {
+			"en": "Fine-grained service rubber and shallow modular channels support the shared CLI toolkit.",
+			"zh": "细颗粒维修胶垫与浅模块槽，承托可复用的命令行工具箱。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
 	}
 }

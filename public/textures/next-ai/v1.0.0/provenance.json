@@ -1,0 +1,118 @@
+{
+	"project": "next-ai",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-surface",
+		"name": { "en": "Tuning enamel", "zh": "调谐珐琅" },
+		"description": {
+			"en": "A softly powder-coated control surface with restrained tuning arcs and shallow detent marks.",
+			"zh": "柔和粉末涂层控制面上，保留克制的调谐弧线与浅档位刻痕。"
+		},
+		"motif": "One continuous finely powder-coated enamel control fascia seen straight down. An incomplete broad tuning arc follows only the lower-right margin, with a few separated short detent marks impressed in the enamel. A short offset parallel arc touches the top-left margin. Keep the arcs open and away from the center, never a full dial. No knob, switch, display, numerals, neon, circuit pattern or interface screenshot.",
+		"rationale": "Next AI supplies provider selection and configuration controls. A tuning fascia supports the adopted selector dial; the arc is a material analogy, not a literal model-routing diagram."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/next-ai.json",
+		"purpose": {
+			"en": "Combine model-provider configuration, server-side invocation helpers and React settings controls for Next.js and Vite applications. Consumer-supplied storage adapters own the backend and credentials.",
+			"zh": "为 Next.js、Vite 应用组合模型服务配置、服务端调用辅助与 React 设置控件；后端和凭据由消费方的存储适配器管理。"
+		},
+		"inspectedRevision": "61d2fd325dff69215b29be87a95843a15b471c84",
+		"snapshot": {
+			"path": "docs/sources/next-ai-2026-10-18.json",
+			"sha256": "4253b1565371fa08126f99af889b558576ed337d81b7785faa24719364d0ab73"
+		}
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/next-ai-family-2026-10-18-01-01.png",
+		"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3",
+		"rgbaSha256": "cc9b0624abb93fbb9ea5e835be3bb47e84db90169afb9340aabdade446f8bbfe",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 672100,
+		"source": "https://github.com/nocoo/next-ai/blob/61d2fd325dff69215b29be87a95843a15b471c84/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-18/inventory.json",
+	"sourceInventorySha256": "18eacdd8170d1de5b2cae38209574ffbb6cac72981d4402232e50d8457f06508",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a4ee4955-11cc-45aa-847a-918b17098715",
+			"source": "artwork/brands/next-ai/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/next-ai/v1.0.0/source-light-request.json",
+			"response": "/textures/next-ai/v1.0.0/source-light-response.json",
+			"prompt": "/textures/next-ai/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/next-ai/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/next-ai/v1.0.0/texture-light.png",
+				"sha256": "07bd8e15bf50b4e9bfe15b2b19047e27121eff3af36e745623363b314c2d79e4",
+				"bytes": 1792177,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a5c09e91-a90d-4fd3-849a-0a569e7b1946",
+			"source": "artwork/brands/next-ai/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/next-ai/v1.0.0/source-dark-request.json",
+			"response": "/textures/next-ai/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/next-ai/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/next-ai/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/next-ai/v1.0.0/texture-dark.png",
+				"sha256": "bf07de170a0613d1c9e8b33dac9ac4e81c87d338eaa3f081387298f27141661a",
+				"bytes": 1647554,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.138524423235188,
+		"darkMinimum": 4.722020018109711,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-18T10:40:02.386Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

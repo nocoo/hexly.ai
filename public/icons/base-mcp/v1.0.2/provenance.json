@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"project": "base-mcp",
+	"version": "1.0.2",
+	"scope": "hexly-campaign",
+	"generationCalls": 0,
+	"approval": "docs/brand-textures/2026-10-18/authorization.json",
+	"foreground": {
+		"subject": {
+			"en": "Blue steel coupling with copper contacts",
+			"zh": "蓝钢连接器"
+		},
+		"original": "/logos/family/base-mcp/2026-10-18-01/01/transparent.png",
+		"display": "/logos/family/base-mcp/2026-10-18-01/01/transparent-1024.webp",
+		"width": 1024,
+		"height": 1024,
+		"sha256": "cef05efbfb2bd02d5fe6661be8cacde2f6b474e5f90a2e75ab6a47baef67d396",
+		"transform": "none; native canvas, original position, normal alpha over"
+	},
+	"texture": {
+		"path": "/textures/base-mcp/v1.0.1/texture-light.png",
+		"sha256": "a21a7f4ae5ad18196fe00537c13abeceb0172c92e2a32ae1e8741452abdf79d5",
+		"originalWidth": 1024,
+		"placementWidth": 1024,
+		"opacity": 0.7
+	},
+	"baseColor": "#f0f0e9",
+	"bannerGradient": false,
+	"shadow": false,
+	"mask": {
+		"path": "artwork/icon-texture-rollout/2026-09-27/ios-style-mask.svg",
+		"sha256": "79e1162ab8ac5a77eb44d08ef256b258b9752ad523970998b91acab226f189d0",
+		"kind": "iOS-style continuous-corner approximation",
+		"radiusRatio": 0.2237,
+		"cornerSmoothing": 0.6,
+		"officialAppleAsset": false,
+		"geometryReference": "https://www.figma.com/blog/desperately-seeking-squircles/",
+		"implementationReference": "https://github.com/phamfoo/figma-squircle/blob/main/src/draw.ts"
+	},
+	"width": 1024,
+	"height": 1024,
+	"upscaledExportSizes": [],
+	"rights": {
+		"identity": "https://github.com/nocoo/base-mcp/blob/240060f549a147a65d7358e22a96d58a6cd11fbe/logo.png",
+		"family": "artwork/logo-family/base-mcp/2026-10-18-01",
+		"texture": "/textures/base-mcp/v1.0.1/license.txt"
+	},
+	"inspection": {
+		"opaquePixels": 140991,
+		"foregroundPixelsAtOutline": 0,
+		"opaqueForegroundRgbUnchanged": true
+	}
+}

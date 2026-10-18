@@ -1,0 +1,485 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-10-18T08:08:18.930Z",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"catalogueSource": "src/data/projects/index.json",
+	"catalogueSha256": "87ecbeab472272462635069020cc6d1773819a5d6c161c2c80a3fb06b5f1761b",
+	"assetInventoryBaselineSha256": "f84c7a6d9b3d3bd5cbaad551546a99e5bb1268868258c59f8160249bb75c24e4",
+	"scope": "hexly-campaign",
+	"originalIdentityRecolored": false,
+	"productUIChanged": false,
+	"authorization": {
+		"date": "2026-10-18",
+		"generation": true,
+		"rawAcceptance": "owner-review-required",
+		"publication": false,
+		"quote": "有8个项目没有生成底纹，按规范，利用skill给他们补上。更新其logo背景。",
+		"scopeClarification": "zoo，sleepy",
+		"localOnly": true
+	},
+	"model": "gpt-image-2.5-flare",
+	"plannedRequests": 12,
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"projects": [
+		{
+			"id": "hexly-ai",
+			"title": "hexly.ai",
+			"archived": false,
+			"category": "design",
+			"subject": "Six-triangle terracotta ceramic hexagon",
+			"sourceMetadataSha256": "f630a4224846a08ac9a39d5d47e1b35b52e1ca5038f23aedeb2e3be92fc9c38d",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/hexly-ai-family-2026-10-18-02-01.png",
+				"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d",
+				"rgbaSha256": "8ce8b41fa5b65cead02946fe33efa95993c54b33c3a7576fb176b5a047e66322",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 1175430,
+				"source": "https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/hexly-ai/v1.0.0",
+				"width": 1024,
+				"height": 1024,
+				"manifestSha256": "27e4b56b7571abad7892f8822083ab0dac8c5518d27b9d25fc41fabf760ef456"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/hexly-ai.json",
+				"purpose": {
+					"en": "Browse bilingual project records, preserved identities, palettes, service observations and reusable video compositions. Public status is a separate Cron/D1 observation system, not a live browser probe.",
+					"zh": "浏览双语项目资料、原始身份、色板、服务观测和可复用视频模板。公开状态由 Cron 与 D1 独立采样，不由浏览器即时探测。"
+				},
+				"inspectedRevision": "f6e54b88be56b3afa555ed4e7f897186e5528301",
+				"snapshot": {
+					"path": "docs/sources/hexly-ai-2026-10-18.json",
+					"sha256": "62931492e3a62f6bedce61cd394923e1e652e71c13d937a39bd008cf3aa9c78f"
+				}
+			},
+			"action": "generate",
+			"study": "artwork/brands/hexly-ai/texture-studies/2026-10-18-flare-intake-01",
+			"version": "1.0.1",
+			"root": "/textures/hexly-ai/v1.0.1",
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": {
+					"en": "Ceramic archive",
+					"zh": "陶土档案"
+				},
+				"description": {
+					"en": "Fine ceramic grain with sparse specimen-layout impressions, leaving a quiet field for the preserved identities.",
+					"zh": "细陶土颗粒与疏朗的标本排布压痕，为原始品牌留出安静底面。"
+				},
+				"motif": "One continuous matte unglazed ceramic working surface. Very fine mineral pores, soft fired-clay grain and a few shallow straight layout scores meeting at oblique angles near the upper-right and lower-left edges. The scores suggest arranging a collection of specimens, not a completed hexagon, tessellation or logo. No separate tiles, tile borders, loose shards or objects.",
+				"rationale": "Hexly preserves a collection of project identities. A ceramic specimen-working surface supports the adopted terracotta emblem without drawing a second emblem or copying its six triangles."
+			}
+		},
+		{
+			"id": "base-ci",
+			"title": "Base CI",
+			"archived": false,
+			"category": "tools",
+			"subject": "Forest enamel inspection gauge with brass and steel",
+			"sourceMetadataSha256": "5557648b34dedeabed1282738af2a8d753b3327a1bcdc04654907456a1a8ff67",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/base-ci-family-2026-10-18-01-01.png",
+				"sha256": "412463fe088e4322929fa4e2c6d3ddb3a0c5513350e1ce3dbb405e56c8fe76c4",
+				"rgbaSha256": "16d3770fe560ed173bec5993310916b54e73d551a0927b0526880f95d2ec3b49",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 643755,
+				"source": "https://github.com/nocoo/base-ci/blob/21addbd41b72b82e8d9e2dbe1352be75305126e2/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/base-ci/v1.0.0",
+				"width": 1024,
+				"height": 1024,
+				"manifestSha256": "71899aec2c5095575d9c22d0cd51f45e1ac8d2883e7fd0b05ba220f5396751da"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/base-ci.json",
+				"purpose": {
+					"en": "Share quality checks, security scanners and provenance-checked Worker or Docker releases across repositories. Consumers retain their own triggers, commands and production configuration.",
+					"zh": "跨仓复用质量检查、安全扫描和带来源校验的 Worker、Docker 发布；消费项目保留自身触发条件、命令与生产配置。"
+				},
+				"inspectedRevision": "21addbd41b72b82e8d9e2dbe1352be75305126e2",
+				"snapshot": {
+					"path": "docs/sources/base-ci-2026-10-18.json",
+					"sha256": "8350c08488202d4889a6a45f4639bc6d7a280394604cf61941634c5d7e9c89ee"
+				}
+			},
+			"action": "generate",
+			"study": "artwork/brands/base-ci/texture-studies/2026-10-18-flare-intake-01",
+			"version": "1.0.1",
+			"root": "/textures/base-ci/v1.0.1",
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": {
+					"en": "Inspection plate",
+					"zh": "检验台面"
+				},
+				"description": {
+					"en": "Lapped mineral grain and shallow paired alignment marks recall a quality-inspection work surface.",
+					"zh": "研磨矿物颗粒与浅浅的成对对位刻痕，呼应质量检验工作台。"
+				},
+				"motif": "One continuous precision-lapped mineral inspection plate, extremely fine stone grain, with two sparse groups of short parallel registration scores and open perpendicular alignment corners pressed into the plate near opposite edges. A little directional polishing catches the grazing light. No full-page grid, ruler, numbers, gauge, check mark, lock or raised tool.",
+				"rationale": "Reusable checks and provenance verification are analogous to inspecting work against a gauge. Registration marks belong to its workbench, not to a claim that a repository has passed quality or security checks."
+			}
+		},
+		{
+			"id": "base-cli",
+			"title": "Base CLI",
+			"archived": false,
+			"category": "tools",
+			"subject": "Amber resin screwdriver with steel bit",
+			"sourceMetadataSha256": "9fb9dc2bd673dba95fff4d6cbe17d3001e3a12a0e40edd615a913a50b10fb6a8",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/base-cli-family-2026-10-18-01-01.png",
+				"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9",
+				"rgbaSha256": "6aff41851e8bc89369afcdc224f1692c60e5b10af0cb018fc66be62890d85d45",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 225682,
+				"source": "https://github.com/nocoo/base-cli/blob/4fd686d49ed15473ef9d0c3436c90e601c2723d4/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/base-cli/v1.0.0",
+				"width": 1024,
+				"height": 1024,
+				"manifestSha256": "1234ad637fc67fb42521f09bf80aa86a8f2bc79aa66c768b8e04255d277e88cf"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/base-cli.json",
+				"purpose": {
+					"en": "Provide TypeScript CLIs with config storage, browser OAuth login, package-update helpers and logging. This is a library, not a hosted application.",
+					"zh": "为 TypeScript CLI 提供配置存储、浏览器 OAuth 登录、包更新与日志工具，是基础库而非托管应用。"
+				},
+				"inspectedRevision": "4fd686d49ed15473ef9d0c3436c90e601c2723d4",
+				"snapshot": {
+					"path": "docs/sources/base-cli-2026-10-18.json",
+					"sha256": "387ac7ec26d307282a6e39061f088e433e2a5a4029a7c9f1223445e52edc00e8"
+				}
+			},
+			"action": "generate",
+			"study": "artwork/brands/base-cli/texture-studies/2026-10-18-flare-intake-01",
+			"version": "1.0.1",
+			"root": "/textures/base-cli/v1.0.1",
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": {
+					"en": "Assembly mat",
+					"zh": "装配垫"
+				},
+				"description": {
+					"en": "Fine-grained service rubber and shallow modular channels support the shared CLI toolkit.",
+					"zh": "细颗粒维修胶垫与浅模块槽，承托可复用的命令行工具箱。"
+				},
+				"motif": "One continuous fine-grained matte rubber assembly mat, tactile but clean. A small group of broad shallow parallel bit-storage channels enters from the lower-right edge; a few short organizing dividers stay close to the upper edge. Channels are molded depressions in the same surface, not drawn outlines or separate objects. No screwdriver, screws, parts, letters, terminal symbols, circuit traces or full-page grid.",
+				"rationale": "Base CLI packages configuration, OAuth, update and logging helpers. A modular assembly mat supports the adopted screwdriver as a reusable toolkit; it does not illustrate software control flow."
+			}
+		},
+		{
+			"id": "base-mcp",
+			"title": "Base MCP",
+			"archived": false,
+			"category": "tools",
+			"subject": "Blue steel coupling with copper contacts",
+			"sourceMetadataSha256": "53e9968fd287bf18f577ebbcd6c405324d814db30cf7e1bae71283e6a02b5a5f",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/base-mcp-family-2026-10-18-01-01.png",
+				"sha256": "cef05efbfb2bd02d5fe6661be8cacde2f6b474e5f90a2e75ab6a47baef67d396",
+				"rgbaSha256": "c80f217b24696a4f7f9074b161849dc72ccb3c6a569142c406266bf24a1be8c3",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 539866,
+				"source": "https://github.com/nocoo/base-mcp/blob/240060f549a147a65d7358e22a96d58a6cd11fbe/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/base-mcp/v1.0.0",
+				"width": 1024,
+				"height": 1024,
+				"manifestSha256": "0c9f3d64847d6e45b887a863854ca1c5ed7d12cf5d5092d26f0f6af0fa10c121"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/base-mcp.json",
+				"purpose": {
+					"en": "Register entity CRUD tools and compose OAuth and HTTP integration helpers for MCP servers. Consumers own authentication, storage and transport hosting; this is not a standalone deployed MCP service.",
+					"zh": "为 MCP 服务注册实体 CRUD 工具并组合 OAuth、HTTP 集成辅助。消费方负责认证、存储与传输服务，本项目不是独立部署的 MCP 服务。"
+				},
+				"inspectedRevision": "240060f549a147a65d7358e22a96d58a6cd11fbe",
+				"snapshot": {
+					"path": "docs/sources/base-mcp-2026-10-18.json",
+					"sha256": "d524542bf457f9ad3fc05b8524f618b46e6f1e591efec1729c1d8a108041181c"
+				}
+			},
+			"action": "generate",
+			"study": "artwork/brands/base-mcp/texture-studies/2026-10-18-flare-intake-01",
+			"version": "1.0.1",
+			"root": "/textures/base-mcp/v1.0.1",
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": {
+					"en": "Mating surface",
+					"zh": "接合工作面"
+				},
+				"description": {
+					"en": "A fine anti-static work surface with sparse paired coupling impressions and short routing channels.",
+					"zh": "细腻防静电工作面上，疏朗排布成对接合压痕与短导槽。"
+				},
+				"motif": "One continuous matte anti-static service surface with a very fine pebbled grain. Near the upper-right edge, two incomplete concentric mating impressions and three short parallel shallow channels suggest aligning a coupling. A smaller pair of open curved grooves rests near the lower-left edge. All impressions belong to the continuous surface. No actual connector, sockets, cable, electronics, circuit diagram, glowing paths or dense network.",
+				"rationale": "The framework connects entity tools, authorization and transport helpers. A coupling-alignment work surface supports its adopted blue-steel coupling without inventing protocol wiring or security guarantees."
+			}
+		},
+		{
+			"id": "next-ai",
+			"title": "Next AI",
+			"archived": false,
+			"category": "ai",
+			"subject": "Ivory selector dial on petrol base",
+			"sourceMetadataSha256": "7db57329db0089b0c87c01c8bbf76af3a9f9d3b40f1c0730d4ff0cab9b01b587",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/next-ai-family-2026-10-18-01-01.png",
+				"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3",
+				"rgbaSha256": "cc9b0624abb93fbb9ea5e835be3bb47e84db90169afb9340aabdade446f8bbfe",
+				"width": 1024,
+				"height": 1024,
+				"bytes": 672100,
+				"source": "https://github.com/nocoo/next-ai/blob/61d2fd325dff69215b29be87a95843a15b471c84/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/next-ai/v1.0.0",
+				"width": 1024,
+				"height": 1024,
+				"manifestSha256": "2e1225e2fca7e2e8a2f56443b8085f1e45769502250588a65777f6edd1921ce9"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/next-ai.json",
+				"purpose": {
+					"en": "Combine model-provider configuration, server-side invocation helpers and React settings controls for Next.js and Vite applications. Consumer-supplied storage adapters own the backend and credentials.",
+					"zh": "为 Next.js、Vite 应用组合模型服务配置、服务端调用辅助与 React 设置控件；后端和凭据由消费方的存储适配器管理。"
+				},
+				"inspectedRevision": "61d2fd325dff69215b29be87a95843a15b471c84",
+				"snapshot": {
+					"path": "docs/sources/next-ai-2026-10-18.json",
+					"sha256": "4253b1565371fa08126f99af889b558576ed337d81b7785faa24719364d0ab73"
+				}
+			},
+			"action": "generate",
+			"study": "artwork/brands/next-ai/texture-studies/2026-10-18-flare-intake-01",
+			"version": "1.0.1",
+			"root": "/textures/next-ai/v1.0.1",
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": {
+					"en": "Tuning enamel",
+					"zh": "调谐珐琅"
+				},
+				"description": {
+					"en": "A softly powder-coated control surface with restrained tuning arcs and shallow detent marks.",
+					"zh": "柔和粉末涂层控制面上，保留克制的调谐弧线与浅档位刻痕。"
+				},
+				"motif": "One continuous finely powder-coated enamel control fascia seen straight down. An incomplete broad tuning arc follows only the lower-right margin, with a few separated short detent marks impressed in the enamel. A short offset parallel arc touches the top-left margin. Keep the arcs open and away from the center, never a full dial. No knob, switch, display, numerals, neon, circuit pattern or interface screenshot.",
+				"rationale": "Next AI supplies provider selection and configuration controls. A tuning fascia supports the adopted selector dial; the arc is a material analogy, not a literal model-routing diagram."
+			}
+		},
+		{
+			"id": "octo",
+			"title": "Octo",
+			"archived": false,
+			"category": "everyday",
+			"subject": "Fragmented blue seahorse portrait",
+			"sourceMetadataSha256": "67decbf8a0e58893e21c38583498706b47427a3ad8ef0666a264e9855a178258",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/octo-family-2026-10-18-07-02.png",
+				"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad",
+				"rgbaSha256": "9ee039b5244974f34239469375d2d4aff988442fc29335004e9e5461833b429b",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 2203787,
+				"source": "https://github.com/nocoo/octo/blob/0d0bcae39f7cb5fd4a22248f63bde57fed29cf01/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/octo/v1.0.0",
+				"width": 2048,
+				"height": 2048,
+				"manifestSha256": "f614610818e2aef9e2973111015b605d27b8ea6a7ce69d401bcfc6699c6c335e"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/octo.json",
+				"purpose": {
+					"en": "Store private memories, tags, versions and attachments through scoped REST and MCP APIs, with an Access-protected admin dashboard. External bots perform migration, deduplication and summaries; Vectorize is a derived index, not the source of truth.",
+					"zh": "通过带作用域的 REST 与 MCP API 保存私人记忆、标签、版本和附件，管理工作台由 Access 保护。迁移、去重和摘要由外部 bot 完成；Vectorize 是派生索引，而非数据源。"
+				},
+				"inspectedRevision": "0d0bcae39f7cb5fd4a22248f63bde57fed29cf01",
+				"snapshot": {
+					"path": "docs/sources/octo-2026-10-18.json",
+					"sha256": "4dcd016a3d21c87035adc56f003ab3cb41cd3c6c8cc1be1d5b705d6b65e146ff"
+				}
+			},
+			"action": "generate",
+			"study": "artwork/brands/octo/texture-studies/2026-10-18-flare-intake-01",
+			"version": "1.0.1",
+			"root": "/textures/octo/v1.0.1",
+			"design": {
+				"identityType": "animal",
+				"language": "habitat-botanical",
+				"name": {
+					"en": "Seagrass shelter",
+					"zh": "海草栖地"
+				},
+				"description": {
+					"en": "Long ribbon-like seagrass leaves form a loose coastal shelter around an open, quiet field.",
+					"zh": "细长带状海草叶围出疏朗的近岸栖地，将中央留给海马。"
+				},
+				"motif": "Habitat-led botanical bas-relief of long ribbon-like seagrass leaves, with gentle bends, tapered tips and fine parallel veins, impressed into a tactile mineral-paper surface. Two loose asymmetric clumps grow in from the lower-left and upper-right margins, with a few separated blades and generous open space between them. Use plausible broad coastal seagrass habitat, not a named species. No flowers, coral, shells, bubbles, tropical broad leaves, animal silhouette, seahorse, ocean landscape, grid or technical marks.",
+				"rationale": "The approved identity is a seahorse. Coastal seagrass provides plausible shelter and holdfasts; species is not established, so no species-specific ecology is claimed. The background follows the animal habitat, not the database product's technical diagrams."
+			}
+		},
+		{
+			"id": "zoo",
+			"title": "Zoo",
+			"archived": false,
+			"category": "tools",
+			"subject": "Rounded paperboard learning cards with a printed bear and sage backs",
+			"sourceMetadataSha256": "730c4a0a589e6be09e486ddf6d36c45547503573cb089f95447cd70221b8af8b",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/zoo-family-2026-10-10-01-01.png",
+				"sha256": "2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c",
+				"rgbaSha256": "cff6ddc599eea02ce822545cfa29f26872bb4db67c1b73ab6310796b00acc7f2",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 3373687,
+				"source": "https://github.com/nocoo/zoo/blob/0cff16c109d56c66fabfa1c1bad4abfffc2ebe40/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/zoo/v1.0.0",
+				"width": 2048,
+				"height": 2048,
+				"manifestSha256": "caa5d547cf20fd07c08611521d1f5f373b22be5abdc2e05217f95df4fd6495f7"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/zoo.json",
+				"purpose": {
+					"en": "Explore 246 Chinese learning cards with an adult, browse full-screen illustrations, hear browser speech and keep favorites on the device. Installable PWA; previously viewed content can work offline, but speech depends on the device.",
+					"zh": "由成人陪伴探索 246 张认知卡片，全屏翻看插画、收听浏览器语音并保存本机收藏。支持 PWA 安装与已缓存内容离线访问，语音能力依赖设备。"
+				},
+				"inspectedRevision": "0cff16c109d56c66fabfa1c1bad4abfffc2ebe40",
+				"snapshot": {
+					"path": "docs/sources/zoo-2026-10-10.json",
+					"sha256": "24c943bb5493bdf401ee7553a89a41a1e9cc8a892cd922ce7cc5c945e481fd75"
+				}
+			},
+			"action": "reuse",
+			"existingTexture": {
+				"root": "/textures/zoo/v1.0.1",
+				"version": "1.0.1",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Picture-card paper",
+					"zh": "认知卡纸"
+				},
+				"description": {
+					"en": "Soft paperboard fibers and shallow rounded-card impressions around a quiet field.",
+					"zh": "柔和卡纸纤维与浅浅圆角翻卡压痕，围绕安静留白。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.45,
+				"manifestSha256": "0b14c6a0ccee265ebd54c65a002967fb96762b45351c333f54ba9ee90bfb6264"
+			},
+			"decision": "Existing owner-approved Flare pair is already composed into the current icon. Preserve and verify; no generation or redundant icon version."
+		},
+		{
+			"id": "sleepy",
+			"title": "Sleepy",
+			"archived": false,
+			"category": "everyday",
+			"subject": "Green clothbound poetry book with ivory pages and a brass crescent bookmark",
+			"sourceMetadataSha256": "da2c37a0222641a9abce319501024f9bc4f72e5e9a2b1323d2ea38dc2dd98b0d",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/sleepy-family-2026-10-09-02-04.png",
+				"sha256": "de60cc40aa0725df820cada77d5b4e0e99aef7ff7677c51abddd9d7e31f9e60b",
+				"rgbaSha256": "0ccc22584a79d65b048b0ffc4cba2fb29b9a98330ef9e7341755dd3b160dd187",
+				"width": 2048,
+				"height": 2048,
+				"bytes": 4251999,
+				"source": "https://github.com/nocoo/sleepy/blob/499603af59cd868669611d3cdad6b8c0b4394e6f/logo.png",
+				"kind": "original"
+			},
+			"existingKit": null,
+			"existingIcon": {
+				"version": "1.0.0",
+				"root": "/icons/sleepy/v1.0.0",
+				"width": 2048,
+				"height": 2048,
+				"manifestSha256": "152bee25460cf0f05fb09a9968376c8f6af0350f4c7ef08d857315d6c55c8bbc"
+			},
+			"productEvidence": {
+				"source": "src/data/projects/sleepy.json",
+				"purpose": {
+					"en": "Read thirty selected Chinese classics with your child, follow reading guidance, save local favorites and return offline. No accounts or remote personal storage.",
+					"zh": "与孩子阅读三十首精选古诗，查看亲子提示、保存本地收藏并离线重读，无账号或远程个人存储。"
+				},
+				"inspectedRevision": "ae4d19ba1c27f9957f4736d10da106bf5b0d3004",
+				"snapshot": {
+					"path": "docs/sources/sleepy-2026-10-09.json",
+					"sha256": "fcbba8d22b6048e08884422da39aafe90cf3535c9b727988dce0fbf3c8bc2cf9"
+				}
+			},
+			"action": "reuse",
+			"existingTexture": {
+				"root": "/textures/sleepy/v1.0.1",
+				"version": "1.0.1",
+				"scope": "hexly-campaign",
+				"name": {
+					"en": "Clothbound quiet",
+					"zh": "布面静读"
+				},
+				"description": {
+					"en": "Fine bookcloth weave and loose paper fibers, with shallow bookbinding impressions and generous quiet space.",
+					"zh": "细密书布织纹、疏松纸纤维与浅浅装帧压痕，为安静阅读留出空白。"
+				},
+				"format": "webp",
+				"display": "single",
+				"model": "gpt-image-2.5-flare",
+				"surfaceOpacity": 0.44,
+				"manifestSha256": "0bedaa825c8a13ea6cbb1287a1d3caedbe49cd1ea794c725371c66a974b5d14d"
+			},
+			"decision": "Reuse the existing owner-approved Flare pair. The current icon still uses the authored family background; prepare a new presentation-only version after native inspection."
+		}
+	],
+	"supersedesLocalExport": "v1.0.0 packs remain immutable local history; v1.0.1 adds required inspection fields without image changes."
+}

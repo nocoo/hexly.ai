@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "base-ci",
+	"version": "1.0.0",
+	"root": "/textures/base-ci/v1.0.0",
+	"canonical": "https://hexly.ai/projects/base-ci#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/base-ci/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Inspection plate", "zh": "检验台面" },
+		"description": {
+			"en": "Lapped mineral grain and shallow paired alignment marks recall a quality-inspection work surface.",
+			"zh": "研磨矿物颗粒与浅浅的成对对位刻痕，呼应质量检验工作台。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/base-ci-family-2026-10-18-01-01.png",
+		"sha256": "412463fe088e4322929fa4e2c6d3ddb3a0c5513350e1ce3dbb405e56c8fe76c4",
+		"rgbaSha256": "16d3770fe560ed173bec5993310916b54e73d551a0927b0526880f95d2ec3b49",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 643755,
+		"source": "https://github.com/nocoo/base-ci/blob/21addbd41b72b82e8d9e2dbe1352be75305126e2/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d7c058a6-bb07-4cbf-82e8-a10a8f5b4373",
+			"source": "artwork/brands/base-ci/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/base-ci/v1.0.0/source-light-request.json",
+			"response": "/textures/base-ci/v1.0.0/source-light-response.json",
+			"prompt": "/textures/base-ci/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/base-ci/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/base-ci/v1.0.0/texture-light.png",
+				"sha256": "1693d82c066ae2c9e8a613983c797c853bfcb89bc52a0e96fe6b1b20f48d1ffa",
+				"bytes": 2011505,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b5a3525a-e8bd-4b76-9650-d2c5c1596186",
+			"source": "artwork/brands/base-ci/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/base-ci/v1.0.0/source-dark-request.json",
+			"response": "/textures/base-ci/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/base-ci/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/base-ci/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/base-ci/v1.0.0/texture-dark.png",
+				"sha256": "0f9c71b409fd5fcc4da3ecd8a4f75770f1dd67d03225bcd767ca7219c2e56fda",
+				"bytes": 1797554,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 2011505,
+			"sha256": "1693d82c066ae2c9e8a613983c797c853bfcb89bc52a0e96fe6b1b20f48d1ffa"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 319562,
+			"sha256": "c26dc53da92fdff8c45316fa0bc0abb5abf09043b9ba88b9916a0a1518166e2d"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12304,
+			"sha256": "343acf9f2c74c22035d8381ab2ebc42ca23e11ee35976dd2c0cebf1a020bd2c2"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1363,
+			"sha256": "d42b8d0beeae06a614a7c7b29b3764ec44a4619db77320fd39c3ee86bd38d669"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "f62f70a75a02dbb3fa85288113802d84918cfdf8faf4f11309ab2881079cdaff"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "e014dbb5085ca6c7e0b8c29c3a8bbfec816a9ea83414a5bf8f59c732c9d778df"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 517,
+			"sha256": "e6e7d8973628ecaf1d1383517b1481dccd2b1aa67e729092d7d2cb93df2e1fd8"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1797554,
+			"sha256": "0f9c71b409fd5fcc4da3ecd8a4f75770f1dd67d03225bcd767ca7219c2e56fda"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 232808,
+			"sha256": "d6dcba5d23442efd0dc730a3cac2bcb8ee311ddc9982dd2f5abe65d46c4b1e5d"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4386,
+			"sha256": "80114b457190547d9ea5d182c7ebb7b340c284b651686e631e47a24c8b1a94fb"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1418,
+			"sha256": "66745e9a22ce42f86536430f2799ce83377523e5776775372f48a5e0ba75c5c4"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "07aa379e2457978999e0f55b8d3061bfa1e09b5c26e03eba0fedadd4e31556a8"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "1f74baa4c3cb783a85868fb76e7acb5d41ab2db6b9e0ad2d2aa7d672080ff17c"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 517,
+			"sha256": "1fbdddf8d0facd11ebdb92b1b8dadc1f80337d3a6611a27b36d56643b154efdd"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5326,
+			"sha256": "a590449ba4954a9fca6e4a6bf8be4ce0f4724cda03b5658fc4615ab73924b213"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1914,
+			"sha256": "f16f540f8e42d986d7ada6e7bee4a3fbb21c2ce75f114ae2c1253c34cb503f48"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "282ab2fd1e69fc1bb6a7c19783dc4d61a2457685cd9b4ed94528660a5bde9ad6"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2558,
+			"sha256": "8a12b9432140ad3de3a2d7ef63ea9b3da80f1f23615da82994ee1247802e090a"
+		},
+		{
+			"path": "/textures/base-ci/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3503,
+			"sha256": "f5e62c3b453709dfdfc283bd0f2cec0730828ebe0790045fc08ba4269de12c3e"
+		}
+	]
+}

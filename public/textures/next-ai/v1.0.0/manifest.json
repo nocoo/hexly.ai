@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "next-ai",
+	"version": "1.0.0",
+	"root": "/textures/next-ai/v1.0.0",
+	"canonical": "https://hexly.ai/projects/next-ai#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/next-ai/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Tuning enamel", "zh": "调谐珐琅" },
+		"description": {
+			"en": "A softly powder-coated control surface with restrained tuning arcs and shallow detent marks.",
+			"zh": "柔和粉末涂层控制面上，保留克制的调谐弧线与浅档位刻痕。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/next-ai-family-2026-10-18-01-01.png",
+		"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3",
+		"rgbaSha256": "cc9b0624abb93fbb9ea5e835be3bb47e84db90169afb9340aabdade446f8bbfe",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 672100,
+		"source": "https://github.com/nocoo/next-ai/blob/61d2fd325dff69215b29be87a95843a15b471c84/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a4ee4955-11cc-45aa-847a-918b17098715",
+			"source": "artwork/brands/next-ai/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/next-ai/v1.0.0/source-light-request.json",
+			"response": "/textures/next-ai/v1.0.0/source-light-response.json",
+			"prompt": "/textures/next-ai/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/next-ai/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/next-ai/v1.0.0/texture-light.png",
+				"sha256": "07bd8e15bf50b4e9bfe15b2b19047e27121eff3af36e745623363b314c2d79e4",
+				"bytes": 1792177,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "a5c09e91-a90d-4fd3-849a-0a569e7b1946",
+			"source": "artwork/brands/next-ai/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/next-ai/v1.0.0/source-dark-request.json",
+			"response": "/textures/next-ai/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/next-ai/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/next-ai/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/next-ai/v1.0.0/texture-dark.png",
+				"sha256": "bf07de170a0613d1c9e8b33dac9ac4e81c87d338eaa3f081387298f27141661a",
+				"bytes": 1647554,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1792177,
+			"sha256": "07bd8e15bf50b4e9bfe15b2b19047e27121eff3af36e745623363b314c2d79e4"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 247854,
+			"sha256": "cebd8188e895c8eed2c14908aea6c4d4dc62c03c67693860b2b1a6c3ebfb8f4a"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4874,
+			"sha256": "35caacd5e9eadbcd8678be3c6e2db7c67d16cfadf4d4662a9cf73e7205b0686e"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1413,
+			"sha256": "116dae7cc5dff0dfcb586f7c30f07ab289169087f4f1f3c9e9c8fc7b3f599af5"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "ab56dc0600c3f6db2ea0c9b180a181e779c48506b8cd36de988c45f5c2e31ab6"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "99e415d9b8d9a10ffa6545d381615222521acefc16e590591f64cd78ce9ea2a1"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 517,
+			"sha256": "ba989245af610bc00ef0a284d2e0dfa18b7243e3688baa6edb56e1d37f2c3497"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1647554,
+			"sha256": "bf07de170a0613d1c9e8b33dac9ac4e81c87d338eaa3f081387298f27141661a"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 169262,
+			"sha256": "a70d02d01f42c0bb711d73dca0efac887a86b2dca964d58786c4d7f7a08acbea"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 2004,
+			"sha256": "00d7e567779e90b5e974d47b267bfc09d46fa8d8f3c8e6c76187da99ad719747"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1468,
+			"sha256": "5ee37b4666a6026eb466fdd2c73a3cd90d630fe097851b915397942388cb7698"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "e670f18825581e32ac4cd2ca83e5fae1d6a48413ed76f117a5019875ecf84405"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 918,
+			"sha256": "cf4a28eda66685f7de39976bd8894cdbf511b88bd0806dd0788fc07bd3cd1d8b"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 517,
+			"sha256": "30d732c6fbbabf4f9824dd065c68d06f7c39259d07918b4f1913f7d83f63646d"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5359,
+			"sha256": "81cfdd199a107db23c412aa5a2e4392aea282eb8223defebbb4b3377b46a0a0a"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1932,
+			"sha256": "60ff63d9db7d4a1b2eed1122828de36f462dfd828ec3417160c18a0307b615ac"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1760,
+			"sha256": "b0c9e4628289cee156cd786720792fea7026091d2c47567c217625eff4e30577"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2524,
+			"sha256": "42b18d646ed9fa06271d8068a860aa8e5205596e1d1b5456c52b6082c6a3a065"
+		},
+		{
+			"path": "/textures/next-ai/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3489,
+			"sha256": "6be125b720e2d6aec3173e1628a2d68a0dcfdff3fd155eaf41c6fb99aad53cdc"
+		}
+	]
+}

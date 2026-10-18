@@ -1,0 +1,118 @@
+{
+	"project": "base-ci",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-surface",
+		"name": { "en": "Inspection plate", "zh": "检验台面" },
+		"description": {
+			"en": "Lapped mineral grain and shallow paired alignment marks recall a quality-inspection work surface.",
+			"zh": "研磨矿物颗粒与浅浅的成对对位刻痕，呼应质量检验工作台。"
+		},
+		"motif": "One continuous precision-lapped mineral inspection plate, extremely fine stone grain, with two sparse groups of short parallel registration scores and open perpendicular alignment corners pressed into the plate near opposite edges. A little directional polishing catches the grazing light. No full-page grid, ruler, numbers, gauge, check mark, lock or raised tool.",
+		"rationale": "Reusable checks and provenance verification are analogous to inspecting work against a gauge. Registration marks belong to its workbench, not to a claim that a repository has passed quality or security checks."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/base-ci.json",
+		"purpose": {
+			"en": "Share quality checks, security scanners and provenance-checked Worker or Docker releases across repositories. Consumers retain their own triggers, commands and production configuration.",
+			"zh": "跨仓复用质量检查、安全扫描和带来源校验的 Worker、Docker 发布；消费项目保留自身触发条件、命令与生产配置。"
+		},
+		"inspectedRevision": "21addbd41b72b82e8d9e2dbe1352be75305126e2",
+		"snapshot": {
+			"path": "docs/sources/base-ci-2026-10-18.json",
+			"sha256": "8350c08488202d4889a6a45f4639bc6d7a280394604cf61941634c5d7e9c89ee"
+		}
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/base-ci-family-2026-10-18-01-01.png",
+		"sha256": "412463fe088e4322929fa4e2c6d3ddb3a0c5513350e1ce3dbb405e56c8fe76c4",
+		"rgbaSha256": "16d3770fe560ed173bec5993310916b54e73d551a0927b0526880f95d2ec3b49",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 643755,
+		"source": "https://github.com/nocoo/base-ci/blob/21addbd41b72b82e8d9e2dbe1352be75305126e2/logo.png",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-18/inventory.json",
+	"sourceInventorySha256": "18eacdd8170d1de5b2cae38209574ffbb6cac72981d4402232e50d8457f06508",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d7c058a6-bb07-4cbf-82e8-a10a8f5b4373",
+			"source": "artwork/brands/base-ci/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/base-ci/v1.0.0/source-light-request.json",
+			"response": "/textures/base-ci/v1.0.0/source-light-response.json",
+			"prompt": "/textures/base-ci/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/base-ci/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/base-ci/v1.0.0/texture-light.png",
+				"sha256": "1693d82c066ae2c9e8a613983c797c853bfcb89bc52a0e96fe6b1b20f48d1ffa",
+				"bytes": 2011505,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "b5a3525a-e8bd-4b76-9650-d2c5c1596186",
+			"source": "artwork/brands/base-ci/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/base-ci/v1.0.0/source-dark-request.json",
+			"response": "/textures/base-ci/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/base-ci/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/base-ci/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/base-ci/v1.0.0/texture-dark.png",
+				"sha256": "0f9c71b409fd5fcc4da3ecd8a4f75770f1dd67d03225bcd767ca7219c2e56fda",
+				"bytes": 1797554,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 4.847258175368596,
+		"darkMinimum": 4.782109618436159,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-18T10:39:59.409Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

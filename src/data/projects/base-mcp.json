@@ -200,9 +200,26 @@
 	},
 	"socialImage": "/og/base-mcp.jpg",
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/base-mcp/v1.0.0",
+		"version": "1.0.2",
+		"root": "/icons/base-mcp/v1.0.2",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/base-mcp/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Mating surface",
+			"zh": "接合工作面"
+		},
+		"description": {
+			"en": "A fine anti-static work surface with sparse paired coupling impressions and short routing channels.",
+			"zh": "细腻防静电工作面上，疏朗排布成对接合压痕与短导槽。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
 	}
 }

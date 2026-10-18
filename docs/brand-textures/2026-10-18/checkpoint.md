@@ -1,5 +1,9 @@
 # Texture generation checkpoint
 
+The recovery state below is historical. The owner subsequently approved the
+exact raw images and local adoption; see `authorization.json` and
+`local-adoption.md` for the current boundary. Publication remains unauthorized.
+
 ## Recovered state
 
 The interrupted session completed all 12 authorized GPT Image 2.5 Flare

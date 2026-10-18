@@ -1,0 +1,118 @@
+{
+	"project": "hexly-ai",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-surface",
+		"name": { "en": "Ceramic archive", "zh": "陶土档案" },
+		"description": {
+			"en": "Fine ceramic grain with sparse specimen-layout impressions, leaving a quiet field for the preserved identities.",
+			"zh": "细陶土颗粒与疏朗的标本排布压痕，为原始品牌留出安静底面。"
+		},
+		"motif": "One continuous matte unglazed ceramic working surface. Very fine mineral pores, soft fired-clay grain and a few shallow straight layout scores meeting at oblique angles near the upper-right and lower-left edges. The scores suggest arranging a collection of specimens, not a completed hexagon, tessellation or logo. No separate tiles, tile borders, loose shards or objects.",
+		"rationale": "Hexly preserves a collection of project identities. A ceramic specimen-working surface supports the adopted terracotta emblem without drawing a second emblem or copying its six triangles."
+	},
+	"productEvidence": {
+		"source": "src/data/projects/hexly-ai.json",
+		"purpose": {
+			"en": "Browse bilingual project records, preserved identities, palettes, service observations and reusable video compositions. Public status is a separate Cron/D1 observation system, not a live browser probe.",
+			"zh": "浏览双语项目资料、原始身份、色板、服务观测和可复用视频模板。公开状态由 Cron 与 D1 独立采样，不由浏览器即时探测。"
+		},
+		"inspectedRevision": "f6e54b88be56b3afa555ed4e7f897186e5528301",
+		"snapshot": {
+			"path": "docs/sources/hexly-ai-2026-10-18.json",
+			"sha256": "62931492e3a62f6bedce61cd394923e1e652e71c13d937a39bd008cf3aa9c78f"
+		}
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/hexly-ai-family-2026-10-18-02-01.png",
+		"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d",
+		"rgbaSha256": "8ce8b41fa5b65cead02946fe33efa95993c54b33c3a7576fb176b5a047e66322",
+		"width": 1024,
+		"height": 1024,
+		"bytes": 1175430,
+		"source": "https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json",
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-10-18/inventory.json",
+	"sourceInventorySha256": "18eacdd8170d1de5b2cae38209574ffbb6cac72981d4402232e50d8457f06508",
+	"siteBaseline": "958ed17b6498bef1af4e266ce4dc7a1bd85e2b4d",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "e80ec855942961f5bb74e1ceb5cd870a8e83a67be7f5b3570cf21ac909d5d8df"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "1e237da8-a6eb-4391-a088-c99b12f0d1ca",
+			"source": "artwork/brands/hexly-ai/texture-studies/2026-10-18-flare-intake-01/light",
+			"request": "/textures/hexly-ai/v1.0.0/source-light-request.json",
+			"response": "/textures/hexly-ai/v1.0.0/source-light-response.json",
+			"prompt": "/textures/hexly-ai/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/hexly-ai/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/hexly-ai/v1.0.0/texture-light.png",
+				"sha256": "03e6b4df6f888a4e23d90ecaeb6fbcd238eaa17353617a92562625d5081dad25",
+				"bytes": 2012102,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "c16462cf-ee30-4ff0-a8f7-09af4b12d7d7",
+			"source": "artwork/brands/hexly-ai/texture-studies/2026-10-18-flare-intake-01/dark",
+			"request": "/textures/hexly-ai/v1.0.0/source-dark-request.json",
+			"response": "/textures/hexly-ai/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/hexly-ai/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/hexly-ai/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/hexly-ai/v1.0.0/texture-dark.png",
+				"sha256": "7d26edf569d520a327964c351ab57a5b06d51510ae438611c6ba0d00a3ba0c88",
+				"bytes": 1981521,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.4
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.828940028970816,
+		"darkMinimum": 4.776413629568292,
+		"target": 4.7
+	},
+	"recordedAt": "2026-10-18T10:39:58.269Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

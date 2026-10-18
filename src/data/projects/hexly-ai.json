@@ -231,9 +231,26 @@
 	},
 	"socialImage": "/og/hexly-ai.jpg",
 	"presentationIcon": {
-		"version": "1.0.0",
-		"root": "/icons/hexly-ai/v1.0.0",
+		"version": "1.0.2",
+		"root": "/icons/hexly-ai/v1.0.2",
 		"width": 1024,
 		"height": 1024
+	},
+	"brandTexture": {
+		"root": "/textures/hexly-ai/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Ceramic archive",
+			"zh": "陶土档案"
+		},
+		"description": {
+			"en": "Fine ceramic grain with sparse specimen-layout impressions, leaving a quiet field for the preserved identities.",
+			"zh": "细陶土颗粒与疏朗的标本排布压痕，为原始品牌留出安静底面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.4
 	}
 }
