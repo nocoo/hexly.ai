@@ -473,7 +473,9 @@ const settings = JSON.parse(settingsBytes);
 const retained = settings.sourceMode === "retained-transparent";
 const adapted = settings.sourceMode === "prepared-transparent";
 const supplied = retained || adapted;
-const sourceRecordName = supplied ? "source.json" : "response.json";
+const sourceRecordName = supplied
+	? "source.json"
+	: (settings.sourceRecord ?? "response.json");
 const sourceRecordBytes = await readFile(path.join(run, sourceRecordName));
 const sourceRecord = JSON.parse(sourceRecordBytes);
 if (
@@ -518,7 +520,17 @@ const { data: rgb, info } = await sharp(sourceBytes)
 const { width, height } = info;
 if (width !== height)
 	throw new Error("This icon study requires a square master.");
+if (
+	settings.sourceRecord &&
+	(source.width !== width ||
+		source.height !== height ||
+		source.bytes !== sourceBytes.length)
+)
+	throw new Error(
+		"Supplemental source dimensions or bytes differ from the native artwork.",
+	);
 let protection = null;
+let foregroundMask = null;
 let foreground;
 let alpha;
 let statistics;
@@ -545,6 +557,38 @@ if (supplied) {
 		foregroundPixels: width * height - backgroundPixels,
 		softEdgePixels: alpha.filter((value) => value > 0 && value < 255).length,
 		foregroundByteIdentical: true,
+	};
+} else if (settings.matte.foregroundMask) {
+	const mask = settings.matte.foregroundMask;
+	foregroundMask = await readFile(path.resolve(run, mask.path));
+	if (sha256(foregroundMask) !== mask.sha256)
+		throw new Error("Foreground mask differs from its recorded hash.");
+	const metadata = await sharp(foregroundMask).metadata();
+	if (
+		metadata.format !== "svg" ||
+		metadata.width !== width ||
+		metadata.height !== height
+	)
+		throw new Error(
+			"Foreground mask must be a native-size SVG with a transparent backdrop.",
+		);
+	alpha = await sharp(foregroundMask)
+		.ensureAlpha()
+		.extractChannel(3)
+		.raw()
+		.toBuffer();
+	const backgroundPixels = alpha.filter((value) => value === 0).length;
+	if (!backgroundPixels || !alpha.some((value) => value === 255))
+		throw new Error("Foreground mask needs transparent and opaque pixels.");
+	foreground = await sharp(rgb, { raw: { width, height, channels: 3 } })
+		.joinChannel(alpha, { raw: { width, height, channels: 1 } })
+		.png()
+		.toBuffer();
+	statistics = {
+		backgroundPixels,
+		foregroundPixels: width * height - backgroundPixels,
+		softEdgePixels: alpha.filter((value) => value > 0 && value < 255).length,
+		opaqueRgbPreserved: true,
 	};
 } else {
 	protection = await makeMatteProtection(
@@ -576,7 +620,9 @@ async function save(name, bytes) {
 }
 await save("settings.json", settingsBytes);
 await save(reviewName, reviewBytes);
-if (supplied) await save(sourceRecordName, sourceRecordBytes);
+if (supplied || settings.sourceRecord)
+	await save(sourceRecordName, sourceRecordBytes);
+if (foregroundMask) await save("foreground-mask.svg", foregroundMask);
 await save("tool-snapshot.mjs", await readFile(new URL(import.meta.url)));
 if (protection)
 	await save(
@@ -757,12 +803,9 @@ const rounded = await sharp(square)
 	.png()
 	.toBuffer();
 for (const size of settings.exportSizes) {
-	if (
-		size > width &&
-		!(supplied && settings.upscaledExportSizes?.includes(size))
-	)
+	if (size > width && !settings.upscaledExportSizes?.includes(size))
 		throw new Error(
-			"Upscaled exports require an explicit supplied-artwork record.",
+			"Upscaled exports require an explicit upscaledExportSizes declaration.",
 		);
 	for (const [kind, bytes] of [
 		["transparent", placedForeground],
@@ -816,7 +859,17 @@ await save(
 					? "Transparent illustration prepared from an archived supplied reference. Native extraction and its derivation are recorded in source.json; uniform placement and explicit upscale exports do not add native detail. Background and shadow layers are separate."
 					: retained
 						? "Original transparent PNG retained byte-for-byte at native dimensions. Background, grain, and contact shadows are independent layers. No model request, extraction, recoloring, or reframing."
-						: "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+						: foregroundMask
+							? "Inspected native SVG silhouette extraction with antialiased alpha; opaque source RGB is unchanged. Enclosed holes and exterior shadows follow the recorded contour, not a global white threshold. Background and new shadows remain separate."
+							: "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+				...(settings.sourceRecord ? { sourceRecord: sourceRecordName } : {}),
+				...(settings.exportSizes.some((size) => size > width)
+					? {
+							upscaledExportSizes: settings.exportSizes.filter(
+								(size) => size > width,
+							),
+						}
+					: {}),
 				...(retained
 					? {
 							generationCalls: 0,
