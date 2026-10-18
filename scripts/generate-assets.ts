@@ -38,9 +38,12 @@ for (const project of projects) {
 		const retained = family.method === "retained-original";
 		const adapted = family.method === "reference-adaptation";
 		const supplied = retained || adapted;
+		const presentation = JSON.parse(
+			await readFile(`${study}/presentation.json`, "utf8"),
+		) as { sourceRecord?: string };
 		const sourceRecord = JSON.parse(
 			await readFile(
-				`${study}/${supplied ? "source" : "response"}.json`,
+				`${study}/${supplied ? "source.json" : (presentation.sourceRecord ?? "response.json")}`,
 				"utf8",
 			),
 		) as {
@@ -73,7 +76,11 @@ for (const project of projects) {
 			],
 			["background.png", `${finishing}/background.png`],
 			[
-				adapted ? "source.jpg" : retained ? "source.png" : "raw.png",
+				adapted
+					? "source.jpg"
+					: retained
+						? "source.png"
+						: (family.rawFile ?? "raw.png"),
 				`${study}/${sourcePath}`,
 			],
 			[
