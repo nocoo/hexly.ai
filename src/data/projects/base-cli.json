@@ -1,0 +1,208 @@
+{
+	"id": "base-cli",
+	"repo": "base-cli",
+	"title": "Base CLI",
+	"emoji": "🔧",
+	"description": {
+		"en": "Shared CLI infrastructure for hexly.ai projects — config, OAuth login, auto-update, logging",
+		"zh": "为 CLI 复用配置、OAuth 登录、自动更新和日志能力"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/base-cli",
+	"subject": "Amber resin screwdriver with steel bit",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/base-cli-family-2026-10-18-01-01.png",
+		"thumbnail": "/logos/display/base-cli-family-2026-10-18-160.webp",
+		"display": "/logos/display/base-cli-family-2026-10-18-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/base-cli/blob/4fd686d49ed15473ef9d0c3436c90e601c2723d4/logo.png",
+		"modified": false,
+		"width": 1024,
+		"height": 1024,
+		"bytes": 225682,
+		"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9"
+	},
+	"family": {
+		"id": "2026-10-18-01",
+		"status": "adopted",
+		"updated": "2026-10-18",
+		"finishing": "01",
+		"root": "/logos/family/base-cli/2026-10-18-01/01",
+		"archive": "artwork/logo-family/base-cli/2026-10-18-01",
+		"series": "material",
+		"rawFile": "raw.jpg",
+		"foreground": {
+			"subject": {
+				"en": "Amber resin screwdriver with steel bit",
+				"zh": "琥珀树脂螺丝刀"
+			},
+			"original": "/logos/family/base-cli/2026-10-18-01/01/transparent.png",
+			"display": "/logos/family/base-cli/2026-10-18-01/01/transparent-1024.webp",
+			"width": 1024,
+			"height": 1024,
+			"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9"
+		},
+		"previous": null,
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "Complete approved form",
+					"zh": "完整采纳构图"
+				},
+				"description": {
+					"en": "A complete diagonal screwdriver with fitted bit and clear borders.",
+					"zh": "完整斜置螺丝刀与配套批头，四周保持留白。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Preserved physical material",
+					"zh": "保留实物材质"
+				},
+				"description": {
+					"en": "Amber resin transmission and steel reflections remain as photographed RGB; no physical transparency reconstruction.",
+					"zh": "琥珀树脂透射与钢材反光保留照片 RGB，不重建物理透明度。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Driver service mat bit slots",
+					"zh": "独立工作材质"
+				},
+				"description": {
+					"en": "Amber-tinted service mat with shallow bit-storage slots and short diagonal driver alignment scores, echoing reusable command-line utilities as a compact hand tool.",
+					"zh": "按物体用途设计独立浅色工作材质与柔和阴影，保留原图颜色和产品主题。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#efe5d2",
+				"role": "background",
+				"label": {
+					"en": "Driver service mat bit slots",
+					"zh": "独立工作材质背景"
+				},
+				"source": "artwork/logo-family/base-cli/2026-10-18-01/presentation.json background.base; not a product UI token"
+			},
+			{
+				"color": "#c09551",
+				"role": "primary",
+				"label": {
+					"en": "Amber resin",
+					"zh": "琥珀树脂螺丝刀 · 1"
+				},
+				"source": "Native 3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc, sRGB pixel (610, 395); artwork/logo-family/base-cli/2026-10-18-01/palette.json"
+			},
+			{
+				"color": "#bf975c",
+				"role": "accent",
+				"label": {
+					"en": "Warm resin edge",
+					"zh": "琥珀树脂螺丝刀 · 2"
+				},
+				"source": "Native 3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc, sRGB pixel (505, 559); artwork/logo-family/base-cli/2026-10-18-01/palette.json"
+			},
+			{
+				"color": "#766e6b",
+				"role": "accent",
+				"label": {
+					"en": "Knurled steel",
+					"zh": "琥珀树脂螺丝刀 · 3"
+				},
+				"source": "Native 3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc, sRGB pixel (409, 625); artwork/logo-family/base-cli/2026-10-18-01/palette.json"
+			}
+		],
+		"sizeNote": {
+			"en": "At 16 px the driver silhouette remains; knurling and resin depth disappear.",
+			"zh": "16 px 保留工具轮廓，滚花与树脂层次消失。"
+		}
+	},
+	"theme": {},
+	"colors": {
+		"primary": "#c09551",
+		"background": "#efe5d2",
+		"ink": "#1f1f1f",
+		"palette": [
+			{
+				"color": "#c09551",
+				"role": "primary",
+				"label": {
+					"en": "Amber resin",
+					"zh": "琥珀树脂螺丝刀 · 1"
+				},
+				"source": "Native 3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc, sRGB pixel (610, 395); artwork/logo-family/base-cli/2026-10-18-01/palette.json"
+			},
+			{
+				"color": "#bf975c",
+				"role": "accent",
+				"label": {
+					"en": "Warm resin edge",
+					"zh": "琥珀树脂螺丝刀 · 2"
+				},
+				"source": "Native 3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc, sRGB pixel (505, 559); artwork/logo-family/base-cli/2026-10-18-01/palette.json"
+			},
+			{
+				"color": "#766e6b",
+				"role": "accent",
+				"label": {
+					"en": "Knurled steel",
+					"zh": "琥珀树脂螺丝刀 · 3"
+				},
+				"source": "Native 3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc, sRGB pixel (409, 625); artwork/logo-family/base-cli/2026-10-18-01/palette.json"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "ba9e19ea8343b456dd7640d89b2c873f66753543",
+		"profileSection": "Recent Projects",
+		"description": "Shared CLI infrastructure for hexly.ai projects — config, OAuth login, auto-update, logging",
+		"repositoryRevision": "4fd686d49ed15473ef9d0c3436c90e601c2723d4"
+	},
+	"overview": {
+		"goal": {
+			"en": "Provide TypeScript CLIs with config storage, browser OAuth login, package-update helpers and logging. This is a library, not a hosted application.",
+			"zh": "为 TypeScript CLI 提供配置存储、浏览器 OAuth 登录、包更新与日志工具，是基础库而非托管应用。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Bun",
+				"role": {
+					"en": "CLI library and typed public exports",
+					"zh": "CLI 库与公共类型"
+				}
+			},
+			{
+				"name": "citty / consola",
+				"role": {
+					"en": "Command and logging utilities",
+					"zh": "命令与日志工具"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-10-18",
+			"revision": "4fd686d49ed15473ef9d0c3436c90e601c2723d4",
+			"snapshot": {
+				"path": "docs/sources/base-cli-2026-10-18.json",
+				"sha256": "387ac7ec26d307282a6e39061f088e433e2a5a4029a7c9f1223445e52edc00e8"
+			},
+			"sources": ["README.md", "package.json", "AGENTS.md"]
+		}
+	},
+	"socialImage": "/og/base-cli.jpg",
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/base-cli/v1.0.0",
+		"width": 1024,
+		"height": 1024
+	}
+}

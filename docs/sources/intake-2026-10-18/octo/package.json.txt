@@ -1,0 +1,56 @@
+{
+	"name": "octo",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "bun run scripts/dev.ts",
+		"dev:server": "bun run scripts/dev-server.ts",
+		"typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.client.json && tsc --noEmit -p tsconfig.scripts.json",
+		"build": "bun run gate:production && vite build",
+		"lint": "biome check --error-on-warnings .",
+		"lint:fix": "biome check --write .",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage",
+		"test:e2e:api": "bun run scripts/run-e2e.ts",
+		"test:e2e:bdd": "bun run scripts/run-e2e-bdd.ts",
+		"gate:test-skip": "bun run scripts/gate-test-skip.ts",
+		"gate:no-remote": "bun run scripts/gate-no-remote.ts",
+		"gate:wrangler-vars": "bun run scripts/gate-wrangler-vars.ts",
+		"gate:client-fetch": "bun run scripts/gate-client-fetch.ts",
+		"gate:client-design": "bun run scripts/gate-client-design.ts",
+		"gate:production": "bun run scripts/gate-production.ts",
+		"gate:security": "bun run scripts/gate-security.ts",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"oxc-parser": "^0.125.0",
+		"@playwright/test": "^1.58.0",
+		"@types/react": "^19.2.0",
+		"@types/react-dom": "^19.2.0",
+		"@biomejs/biome": "2.5.15",
+		"@cloudflare/workers-types": "5.20260930.2",
+		"@types/bun": "^1.4.2",
+		"@vitest/coverage-v8": "5.0.3",
+		"husky": "9.1.7",
+		"miniflare": "5.20260930.0-alpha",
+		"smol-toml": "1.9.1",
+		"typescript": "7.0.2",
+		"undici": "7.29.1",
+		"vite": "^8.3.1",
+		"vitest": "5.0.3",
+		"wrangler": "4.145.0"
+	},
+	"overrides": {
+		"sharp": "0.35.5"
+	},
+	"workspaces": [
+		"apps/*"
+	],
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "1.32.1",
+		"diff": "^9.0.0",
+		"hono": "^4.13.12",
+		"zod": "^4.5.0-canary.20260825T041357"
+	}
+}

@@ -3,8 +3,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import manifest from "../../package.json";
 import { schemaDocuments } from "../../packages/video-kit/src/schema";
 import { verifyDeployment } from "../../scripts/verify-deployment";
+import identity from "../../src/data/projects/hexly-ai.json";
 import { readProjects } from "../../src/data/read-projects";
-import identity from "../../src/data/site-identity.json";
 import videos from "../../src/data/videos.json";
 import { statusTargets } from "../../src/model/status";
 

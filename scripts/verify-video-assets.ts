@@ -2,12 +2,17 @@ import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import provenance from "../packages/video-kit/brand-source.json";
+import identity from "../packages/video-kit/current-identity.json";
 import { brandAssetVersion, kitVersion } from "../packages/video-kit/src/brand";
 import { parseVideoManifest } from "../packages/video-kit/src/schema";
 import vendor from "../packages/video-kit/vendor/pptxgenjs-source.json";
 
 const sha256 = (path: string) =>
 	createHash("sha256").update(readFileSync(path)).digest("hex");
+if (sha256(`packages/video-kit/public${identity.path}`) !== identity.sha256)
+	throw new Error(
+		"Current Video Kit identity differs from its approved source.",
+	);
 if (sha256(join("packages/video-kit/vendor", vendor.archive)) !== vendor.sha256)
 	throw new Error(
 		"Vendored PptxGenJS archive does not match its source record.",

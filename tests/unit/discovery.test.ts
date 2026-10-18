@@ -16,6 +16,7 @@ import {
 	shareIndex,
 	sitemapXml,
 	siteShareCard,
+	siteSocialImage,
 	socialImage,
 } from "../../src/model/discovery";
 import { screenshotFixture, videoFixture } from "../fixtures/project-media";
@@ -107,8 +108,14 @@ describe("crawler discovery documents", () => {
 		});
 		expect(card.website).toBe("https://pew.md");
 		expect(siteShareCard().id).toBe("hexly-ai");
-		expect(siteShareCard().image.url).toBe(assetUrl("/og.jpg"));
+		expect(siteShareCard().image.url).toBe(assetUrl(siteSocialImage));
 		const index = shareIndex(projects);
+		expect(index.site).toBe("https://hexly.ai/api/share/site.json");
+		const files = shareFiles(projects);
+		expect(new Set(files.map((file) => file.fileName)).size).toBe(files.length);
+		expect(
+			files.find((file) => file.fileName === "api/share/hexly-ai.json")?.source,
+		).toContain("https://hexly.ai/projects/hexly-ai");
 		expect(index.projects).toHaveLength(projects.length);
 		expect(index.projects.find((entry) => entry.id === "pew")).toEqual({
 			id: "pew",
@@ -141,7 +148,7 @@ describe("crawler discovery documents", () => {
 		expect(page.title).toBe("Frogie — hexly.ai");
 		expect(page.description).toBe(frogie.description.en);
 		expect(page.bodyHtml).toContain(frogie.repository);
-		expect(socialImage()).toBe(assetUrl("/og.jpg"));
+		expect(socialImage()).toBe(assetUrl(siteSocialImage));
 		expect(socialImage(frogie)).toBe(assetUrl("/og/frogie.jpg"));
 		expect(socialImage({ ...frogie, socialImage: "/og/frogie-v2.jpg" })).toBe(
 			"https://hexly.ai/og/frogie-v2.jpg",

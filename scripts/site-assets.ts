@@ -3,7 +3,7 @@ import { extname } from "node:path";
 import type { Plugin } from "vite";
 import storage from "../src/data/media-storage.json" with { type: "json" };
 import { assetKeyForPath, assetUrl } from "../src/model/assets";
-import { filesIn } from "./asset-storage";
+import { filesIn, readInventory, reviewFiles } from "./asset-storage";
 import { mediaTypes } from "./media-r2";
 
 const applicationFiles = new Set([
@@ -17,6 +17,10 @@ export function applicationPublicFiles() {
 		(path) => applicationFiles.has(path) || /\.(html|js|css)$/.test(path),
 	);
 }
+export const reviewDocuments = () =>
+	reviewFiles().filter((file) => /\.(html|css|mjs|json|txt|md)$/.test(file));
+const publicPath = (file: string) =>
+	file.startsWith("public/") ? file.slice(6) : `/${file}`;
 
 export function siteAssets(): Plugin {
 	let localMaterials = false;
@@ -61,12 +65,26 @@ export function siteAssets(): Plugin {
 			}),
 		},
 		configureServer(server) {
+			const documents = new Map(
+				[...applicationPublicFiles(), ...reviewDocuments()].map((file) => [
+					publicPath(file),
+					file,
+				]),
+			);
+			const materialFiles = new Map(
+				readInventory().files.flatMap((file) =>
+					[file.path, ...(file.aliases ?? [])]
+						.filter((path) => !!path)
+						.map((path) => [path, file.source]),
+				),
+			);
 			server.middlewares.use((request, response, next) => {
 				const url = new URL(request.url ?? "/", "http://localhost");
 				if (!["GET", "HEAD"].includes(request.method ?? "")) return next();
 				const key = assetKeyForPath(url.pathname);
 				if (key) {
-					const file = `public${url.pathname}`;
+					const file =
+						materialFiles.get(url.pathname) ?? `public${url.pathname}`;
 					if (localMaterials && existsSync(file) && statSync(file).isFile()) {
 						response.writeHead(200, {
 							"Content-Type":
@@ -85,9 +103,7 @@ export function siteAssets(): Plugin {
 					response.end();
 					return;
 				}
-				const file = applicationPublicFiles().find(
-					(path) => path.slice(6) === url.pathname,
-				);
+				const file = documents.get(url.pathname);
 				if (!file || file.endsWith("_headers") || file.endsWith("_redirects"))
 					return next();
 				if (file.endsWith("/review.html"))
@@ -96,7 +112,7 @@ export function siteAssets(): Plugin {
 					"Content-Type",
 					file.endsWith(".html")
 						? "text/html; charset=utf-8"
-						: file.endsWith(".js")
+						: /\.(m?js)$/.test(file)
 							? "text/javascript; charset=utf-8"
 							: file.endsWith(".css")
 								? "text/css; charset=utf-8"
@@ -123,10 +139,10 @@ export function siteAssets(): Plugin {
 			});
 		},
 		generateBundle() {
-			for (const file of applicationPublicFiles())
+			for (const file of [...applicationPublicFiles(), ...reviewDocuments()])
 				this.emitFile({
 					type: "asset",
-					fileName: file.slice(7),
+					fileName: publicPath(file).slice(1),
 					source: readFileSync(file),
 				});
 		},

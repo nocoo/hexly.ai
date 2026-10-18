@@ -6,12 +6,14 @@ export function Logo({
 	project,
 	size = 80,
 	framed = true,
+	foreground = false,
 	className = "",
 	eager = false,
 }: {
 	project: Project;
 	size?: number;
 	framed?: boolean;
+	foreground?: boolean;
 	className?: string;
 	eager?: boolean;
 }) {
@@ -32,19 +34,23 @@ export function Logo({
 						: size <= 256
 							? 512
 							: 1024;
-	const src = project.presentationIcon
-		? `${project.presentationIcon.root}/rounded-${pixels}.webp`
-		: project.family
-			? framed
-				? `${project.family.root}/icon-${pixels}.webp`
-				: project.family.foreground.display
-			: `/logos/display/${project.id}-${pixels}.webp`;
+	const composed = foreground ? undefined : project.presentationIcon;
+	const src =
+		foreground && project.family
+			? project.family.foreground.display
+			: composed
+				? `${composed.root}/rounded-${pixels}.webp`
+				: project.family
+					? framed
+						? `${project.family.root}/icon-${pixels}.webp`
+						: project.family.foreground.display
+					: `/logos/display/${project.id}-${pixels}.webp`;
 	const kit =
 		project.family || project.presentationIcon ? undefined : project.brandKit;
-	const kitAsset = framed ? "icon" : "mark";
+	const kitAsset = framed && !foreground ? "icon" : "mark";
 	return (
 		<span
-			className={`${project.presentationIcon ? "logo-plain logo-composed" : `${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""}`} ${className}`}
+			className={`${composed ? "logo-plain logo-composed" : `${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""}`} ${className}`}
 			style={style}
 		>
 			<img

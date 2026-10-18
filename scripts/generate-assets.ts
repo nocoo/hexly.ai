@@ -1,12 +1,22 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { basename, dirname, relative } from "node:path";
+import { parseArgs } from "node:util";
 import sharp from "sharp";
-import { readProjects, writeProjects } from "../src/data/read-projects";
+import { projectsDirectory, readProjects } from "../src/data/read-projects";
 
 const projects = readProjects();
+const { values } = parseArgs({
+	options: { project: { type: "string", multiple: true } },
+});
+for (const id of values.project ?? [])
+	if (!projects.some((project) => project.id === id))
+		throw new Error(`Unknown project: ${id}`);
+const selected = projects.filter(
+	(project) => !values.project || values.project.includes(project.id),
+);
 await mkdir("public/logos/display", { recursive: true });
-for (const project of projects) {
+for (const project of selected) {
 	const preview = (size: number) =>
 		project.logo.display.replace(/1024\.webp$/, `${size}.webp`);
 	const source = await readFile(`public${project.logo.original}`);
@@ -105,10 +115,35 @@ for (const project of projects) {
 				sha256: createHash("sha256").update(data).digest("hex"),
 			});
 		}
-		await writeFile(
-			`${root}/manifest.json`,
-			`${JSON.stringify({ study: studyPath, finishing: family.finishing, status: family.status, files }, null, "\t")}\n`,
-		);
+		try {
+			await writeFile(
+				`${root}/manifest.json`,
+				`${JSON.stringify({ study: studyPath, finishing: family.finishing, status: family.status, files }, null, "\t")}\n`,
+				{ flag: "wx" },
+			);
+		} catch (error) {
+			if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
+			const manifest = JSON.parse(
+				await readFile(`${root}/manifest.json`, "utf8"),
+			) as {
+				study: string;
+				finishing: string;
+				files: { path: string; bytes: number; sha256: string }[];
+			};
+			if (
+				manifest.study !== studyPath ||
+				manifest.finishing !== family.finishing ||
+				!files.every((file) =>
+					manifest.files.some(
+						(entry) =>
+							entry.path === file.path &&
+							entry.bytes === file.bytes &&
+							entry.sha256 === file.sha256,
+					),
+				)
+			)
+				throw new Error(`Archived manifest disagrees with sources: ${root}`);
+		}
 		for (const size of [32, 64, 160, 256, 512, 1024]) {
 			await sharp(`${root}/icon.png`)
 				.resize(size, size)
@@ -132,7 +167,11 @@ for (const project of projects) {
 		}
 	}
 }
-writeProjects(projects);
+for (const project of selected)
+	await writeFile(
+		`${projectsDirectory}/${project.id}.json`,
+		`${JSON.stringify(project, null, "\t")}\n`,
+	);
 console.info(
-	`Built six preview sizes for ${projects.length} identities; original bytes preserved.`,
+	`Built six preview sizes for ${selected.length} identities; original bytes and frozen manifests preserved.`,
 );

@@ -385,7 +385,7 @@ export function ProjectArt({
 					style={{ width: "100%", height: "100%", objectFit: "contain" }}
 				/>
 			) : (
-				<BrandMark scale={6.5} palette={s.p} />
+				<BrandMark scale={6.5} />
 			)}
 		</div>
 	);

@@ -91,6 +91,28 @@ test.each(["png", "jpg"])(
 					bytes: raw.length,
 				}),
 			);
+			manifest.files.push({
+				path: `${archive}/additional.png`,
+				bytes: 42,
+				sha256: "preserved",
+			});
+			const frozen = `${JSON.stringify(manifest)}\n`;
+			await write(`public${archive}/manifest.json`, frozen);
+			const project = JSON.parse(
+				await readFile(join(root, "src/data/projects/fixture.json"), "utf8"),
+			);
+			project.family.status = "adopted";
+			await write("src/data/projects/fixture.json", JSON.stringify(project));
+			await write("src/data/projects/index.json", '["fixture","unselected"]');
+			await write("src/data/projects/unselected.json", '{"id":"unselected"}');
+			await promisify(execFile)(
+				"bun",
+				[resolve("scripts/generate-assets.ts"), "--project", "fixture"],
+				{ cwd: root },
+			);
+			expect(
+				await readFile(`${root}/public${archive}/manifest.json`, "utf8"),
+			).toBe(frozen);
 		} finally {
 			await rm(root, { recursive: true, force: true });
 		}

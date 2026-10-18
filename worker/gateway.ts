@@ -121,7 +121,7 @@ export default {
 			)?.[1];
 			if (
 				path !== "/api/share.json" &&
-				(!id || (id !== "hexly-ai" && !slugs.has(id)))
+				(!id || (id !== "site" && !slugs.has(id)))
 			) {
 				return shareResponse(
 					JSON.stringify({ error: "Not found" }),
@@ -133,7 +133,7 @@ export default {
 		}
 		let response = await env.ASSETS.fetch(request);
 		const reviewDocument =
-			/^\/(brands|textures)\//.test(path) &&
+			/^\/(brands|textures|artwork\/logo-family)\//.test(path) &&
 			/\/review(?:\.html)?$/.test(path) &&
 			response.status === 200 &&
 			response.headers.get("Content-Type")?.includes("text/html");

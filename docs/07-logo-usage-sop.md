@@ -379,3 +379,17 @@ transparent foreground over approved texture v1.0.1 with the established
 continuous-corner mask. All 1,390,920 opaque foreground pixels retain RGB values
 and no foreground meets the outline. This campaign icon does not silently
 replace the source site's separately approved card-impression presentation.
+
+## Octo and material intake - 2026-10-18
+
+The six-project local rollout is recorded in [the intake handoff](37-octo-material-intake.md).
+Octo adopts its approved Sunburst seahorse at native 2048px; five physical-object
+identities retain native 1024px JPEG generation with unknown model and declared
+2048px upscales. Source roots are exact transparent masters, README artwork uses
+rounded presentations, and application/browser marks stay transparent.
+
+Hexly's no-binary Git policy is preserved: its local root copies hydrate through
+the inventory, while exact archived bytes, source receipts and old recovery keys
+remain authoritative. Current Video Kit source uses the adopted raster without
+recoloring; the five published standard outro movies remain unchanged. Local
+adoption and browser evidence do not establish remote publication or service health.

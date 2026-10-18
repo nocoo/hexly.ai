@@ -6,7 +6,7 @@ import type {
 	VideoProject,
 } from "@hexly/video-kit/schema";
 import { useMemo } from "react";
-import storage from "../data/media-storage.json";
+import { materialOrigin } from "../model/assets";
 import type { Locale } from "../model/project";
 
 export default function VideoCardPreview({
@@ -38,7 +38,7 @@ export default function VideoCardPreview({
 		[project, entry, locale, options],
 	);
 	return (
-		<HexlyFontOrigin.Provider value={storage.origin}>
+		<HexlyFontOrigin.Provider value={materialOrigin()}>
 			<FilmStill
 				config={film}
 				scene={

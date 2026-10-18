@@ -82,8 +82,27 @@ describe("status coverage and navigation", () => {
 		const projects = readProjects();
 		expect(statusSites(projects).map((site) => site.id)).toEqual([
 			...filterProjects(projects, "")
-				.filter((project) => healthEndpoint(project))
+				.filter(
+					(project) => project.id !== "hexly-ai" && healthEndpoint(project),
+				)
 				.map((project) => project.id),
+			"lizheng-dev",
+			"lizheng-me",
+			"hexly-ai",
+		]);
+	});
+	it("onboards Octo and keeps only one trailing Hexly target", () => {
+		const targets = statusTargets(readProjects());
+		expect(targets.filter((target) => target.id === "octo")).toEqual([
+			{ id: "octo", endpoint: "https://octo.hexly.ai/api/live" },
+		]);
+		expect(targets.filter((target) => target.id === "hexly-ai")).toEqual([
+			{ id: "hexly-ai", endpoint: "https://hexly.ai/api/live" },
+		]);
+		expect(new Set(targets.map((target) => target.id)).size).toBe(
+			targets.length,
+		);
+		expect(targets.slice(-3).map((target) => target.id)).toEqual([
 			"lizheng-dev",
 			"lizheng-me",
 			"hexly-ai",

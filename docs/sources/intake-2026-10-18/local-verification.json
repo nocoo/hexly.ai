@@ -1,0 +1,600 @@
+{
+	"schemaVersion": 1,
+	"verifiedAt": "2026-10-18T07:46:46.314723+00:00",
+	"scope": "Local adoption and browser review; no push, R2 upload, release, deploy, live production health probe or owner dev acceptance.",
+	"baseline": "cf40e47c89ab72dbd56e0cd1425c14f668555f7f",
+	"verification": {
+		"command": "bun run verify",
+		"seconds": 151.6,
+		"unitTests": 403,
+		"httpTests": 28,
+		"chromiumTests": 83,
+		"coverage": {
+			"statements": 99.41,
+			"branches": 98.43,
+			"functions": 99.41,
+			"lines": 100
+		},
+		"coverageScope": "Configured Vitest lanes; does not imply complete L1 enforcement.",
+		"log": {
+			"path": ".test-results/intake-2026-10-18/verify.log",
+			"bytes": 106389,
+			"sha256": "199993235d1d234d86234c8fa00ce733bce388f14330d7ddb3128f7ad9bc7e53"
+		}
+	},
+	"historyVerification": {
+		"command": "bun run assets:check",
+		"finishingPasses": 126,
+		"publicArchives": 77,
+		"log": {
+			"path": ".test-results/intake-2026-10-18/assets-check.log",
+			"bytes": 711,
+			"sha256": "19cdc1691235e35ceac5336bc2e555a02095c9df5a5e811a52e247f3b00f2f18"
+		}
+	},
+	"preservedBaseline": {
+		"projectFiles": 84,
+		"inventoryEntriesWithIdenticalKeyHashBytes": 14405,
+		"staticCheckpoint": {
+			"path": "artwork/logo-family/intake-2026-10-18/static-review-verification.json",
+			"bytes": 18291,
+			"sha256": "0e8859a05db924c670689aa6cac0da2f9dbf9a7ec05e16a2ed97bd0903c9f062"
+		},
+		"note": "The earlier static receipt remains unchanged at its pre-browser checkpoint; current review HTML hashes follow."
+	},
+	"reviews": [
+		{
+			"path": "artwork/logo-family/intake-2026-10-18/review.html",
+			"bytes": 30890,
+			"sha256": "72d2716c3309576aa216ce08277e5598a4dcb0026d90a959b6e191050197e9b8"
+		},
+		{
+			"path": "artwork/logo-family/hexly-ai/2026-10-18-02/review.html",
+			"bytes": 21956,
+			"sha256": "ec6bd91a02aa03c95defeaec02be2b5d0ce1d5a8e6a59bb6e2305fb71d2f77b1"
+		},
+		{
+			"path": "artwork/logo-family/base-ci/2026-10-18-01/review.html",
+			"bytes": 20811,
+			"sha256": "61879e570e1c52dbaddfb4a5e2ebace90f7693a1173bc1d5a6a3d834b1339c62"
+		},
+		{
+			"path": "artwork/logo-family/base-cli/2026-10-18-01/review.html",
+			"bytes": 20673,
+			"sha256": "ce68c4e98a219eaff6003ef1777800f53cca0b78abe19d2ba256d716222d8fee"
+		},
+		{
+			"path": "artwork/logo-family/base-mcp/2026-10-18-01/review.html",
+			"bytes": 20921,
+			"sha256": "f999d4f83e5dd6f76089ecbbbf10d8897073ccc872e24ad9a66f90b4b58bfeb7"
+		},
+		{
+			"path": "artwork/logo-family/next-ai/2026-10-18-01/review.html",
+			"bytes": 20645,
+			"sha256": "e1028b824584be14ced8da30a6087b026dce340a5c69b609c066ba3d210a3ebc"
+		},
+		{
+			"path": "artwork/logo-family/octo/2026-10-18-07/review.html",
+			"bytes": 21395,
+			"sha256": "0c412119998a91a4c2de0628bcb71810fe6e6bc153a0b30d1a398fe85aba8256"
+		}
+	],
+	"chrome": {
+		"browser": "155.0.8059.85",
+		"base": "https://index.dev.hexly.ai",
+		"results": [
+			{
+				"id": "octo",
+				"width": 1440,
+				"theme": "light",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "octo",
+				"width": 1440,
+				"theme": "dark",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "octo",
+				"width": 390,
+				"theme": "light",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "octo",
+				"width": 390,
+				"theme": "dark",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "hexly-ai",
+				"width": 1440,
+				"theme": "light",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "hexly-ai",
+				"width": 1440,
+				"theme": "dark",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "hexly-ai",
+				"width": 390,
+				"theme": "light",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "hexly-ai",
+				"width": 390,
+				"theme": "dark",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "base-ci",
+				"width": 1440,
+				"theme": "light",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "base-ci",
+				"width": 1440,
+				"theme": "dark",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "base-ci",
+				"width": 390,
+				"theme": "light",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "base-ci",
+				"width": 390,
+				"theme": "dark",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "base-cli",
+				"width": 1440,
+				"theme": "light",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "base-cli",
+				"width": 1440,
+				"theme": "dark",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "base-cli",
+				"width": 390,
+				"theme": "light",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "base-cli",
+				"width": 390,
+				"theme": "dark",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "base-mcp",
+				"width": 1440,
+				"theme": "light",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "base-mcp",
+				"width": 1440,
+				"theme": "dark",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "base-mcp",
+				"width": 390,
+				"theme": "light",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "base-mcp",
+				"width": 390,
+				"theme": "dark",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "next-ai",
+				"width": 1440,
+				"theme": "light",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "next-ai",
+				"width": 1440,
+				"theme": "dark",
+				"locale": "en-US",
+				"errors": []
+			},
+			{
+				"id": "next-ai",
+				"width": 390,
+				"theme": "light",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"id": "next-ai",
+				"width": 390,
+				"theme": "dark",
+				"locale": "zh-CN",
+				"errors": []
+			},
+			{
+				"file": "artwork/logo-family/intake-2026-10-18/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#d18760",
+				"htmlSha256": "72d2716c3309576aa216ce08277e5598a4dcb0026d90a959b6e191050197e9b8"
+			},
+			{
+				"file": "artwork/logo-family/hexly-ai/2026-10-18-02/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#d18760",
+				"htmlSha256": "ec6bd91a02aa03c95defeaec02be2b5d0ce1d5a8e6a59bb6e2305fb71d2f77b1"
+			},
+			{
+				"file": "artwork/logo-family/base-ci/2026-10-18-01/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#1c3f29",
+				"htmlSha256": "61879e570e1c52dbaddfb4a5e2ebace90f7693a1173bc1d5a6a3d834b1339c62"
+			},
+			{
+				"file": "artwork/logo-family/base-cli/2026-10-18-01/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#c09551",
+				"htmlSha256": "ce68c4e98a219eaff6003ef1777800f53cca0b78abe19d2ba256d716222d8fee"
+			},
+			{
+				"file": "artwork/logo-family/base-mcp/2026-10-18-01/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#022f73",
+				"htmlSha256": "f999d4f83e5dd6f76089ecbbbf10d8897073ccc872e24ad9a66f90b4b58bfeb7"
+			},
+			{
+				"file": "artwork/logo-family/next-ai/2026-10-18-01/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#0e4752",
+				"htmlSha256": "e1028b824584be14ced8da30a6087b026dce340a5c69b609c066ba3d210a3ebc"
+			},
+			{
+				"file": "artwork/logo-family/octo/2026-10-18-07/review.html",
+				"widths": [
+					1440,
+					390
+				],
+				"modes": [
+					"transparent",
+					"white",
+					"icon"
+				],
+				"clipboard": "#3b8ee0",
+				"htmlSha256": "0c412119998a91a4c2de0628bcb71810fe6e6bc153a0b30d1a398fe85aba8256"
+			},
+			{
+				"page": "status",
+				"octo": 1,
+				"hexly": 1,
+				"mode": "demo"
+			}
+		],
+		"runner": {
+			"path": ".test-results/intake-2026-10-18/chrome-review.mjs",
+			"bytes": 5859,
+			"sha256": "038d4a9241979b580900f7c73fb5b9bce51d5cb68bb37ffdf9f094befea0e740"
+		},
+		"resultsFile": {
+			"path": ".test-results/intake-2026-10-18/chrome/results.json",
+			"bytes": 5502,
+			"sha256": "6dbd1cc1ab8fc8f5ab2f502de7523ff83bf21a40624377ff24f90e451122a2ad"
+		},
+		"log": {
+			"path": ".test-results/intake-2026-10-18/chrome-review.log",
+			"bytes": 1092,
+			"sha256": "2906f70700af78c23b9d4cb094319820f26b631d1aaf958ef4b15afd6fec8d01"
+		},
+		"note": "24 project viewport/theme cases, seven static pages at two widths with mode/clipboard checks, one demo Status page; project small specimens explicitly use foreground URLs. Static dark mode, downloads and exact bytes also covered by Chromium intake tests."
+	},
+	"screenshots": [
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-ci-1440-dark.png",
+			"bytes": 978972,
+			"sha256": "ad667ff334567a5581df39318495afca1ea6e0c4065921f82066909eaaf597c6"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-ci-1440-light.png",
+			"bytes": 1029831,
+			"sha256": "7c1ac85cc8656a3f4662fe9c544fc7f8756187acaa614931b608d4d0a8761b8d"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-ci-2026-10-18-01.png",
+			"bytes": 728735,
+			"sha256": "de30d473b6f1ae1c3dc94c8367d9fba3391f7f8e23a9c3fc4109f23b100a3f0f"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-ci-390-dark.png",
+			"bytes": 492793,
+			"sha256": "450085c96c4dd82d9cf6626afabe4a3ae574236f8d4c619ab43130b5b155d860"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-ci-390-light.png",
+			"bytes": 495779,
+			"sha256": "49e7f6e128d43b3cc2a74f6e055913353b2716ae9697e9c708540323a93f524c"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-cli-1440-dark.png",
+			"bytes": 904966,
+			"sha256": "8df89a50b6485c7a63fab6ca3e428ce99de5d0e1c685dffee45eb658de2eb54d"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-cli-1440-light.png",
+			"bytes": 959721,
+			"sha256": "02c9a5f6cb0771dc2c7591f3907072da6a9a30cc9a9ad364b6e0d9bd2fb07d70"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-cli-2026-10-18-01.png",
+			"bytes": 618470,
+			"sha256": "76819fb60ddbcfdcc238452b4184af3664a7bca5969673de6e1f488e8e7f8806"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-cli-390-dark.png",
+			"bytes": 468053,
+			"sha256": "c72992e0521656f0349ae72f72e9c14ad2cb2cff58691e42d9eb1a85200fe4bc"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-cli-390-light.png",
+			"bytes": 472109,
+			"sha256": "e1a4cda49defa011eff5a2e0a36da0521f9d0ae3f20adcb73ca820ae81ce1e4d"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-mcp-1440-dark.png",
+			"bytes": 921620,
+			"sha256": "b9e91048f5e9411994bc696499bdfd8dc65bc843b376127520f6b98d1ad37983"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-mcp-1440-light.png",
+			"bytes": 974223,
+			"sha256": "782f321ed5d14c46fc84f6266f1937263aa2a7a08e0f05bfeba3d7ca2b6ae267"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-mcp-2026-10-18-01.png",
+			"bytes": 642664,
+			"sha256": "549fc15fbd8170743d4792b048bcdb1dd68dc14412687643a3203ecc44ba196c"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-mcp-390-dark.png",
+			"bytes": 477034,
+			"sha256": "509ef009ef3ff5c616804530a3014fea34f77165f559989d124597bdfad08e6c"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/base-mcp-390-light.png",
+			"bytes": 480248,
+			"sha256": "0c6f12b2e1572647bcad92b48196189ad2af2a9f84e1e869f33bfdbb88bc8ca1"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/hexly-ai-1440-dark.png",
+			"bytes": 1311746,
+			"sha256": "f67b9e5c936be85a1c36f2de4281c56fb21131fc3adf26cf857b44ef8b42f287"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/hexly-ai-1440-light.png",
+			"bytes": 1373101,
+			"sha256": "d4a8d61c1303f774b4a05d9148a83783d8890b234eff87ef49d896ac459ab073"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/hexly-ai-2026-10-18-02.png",
+			"bytes": 940610,
+			"sha256": "2219c9572f0f0349bd4fe39c08604df200706ff0c2fab4f9b6db07dab904c49f"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/hexly-ai-390-dark.png",
+			"bytes": 500796,
+			"sha256": "dd357a9a7f78bfcf38d78eb95385ea734adcdbc4577cc79a9d007152bd13edc2"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/hexly-ai-390-light.png",
+			"bytes": 509432,
+			"sha256": "273506951bbab8bbfd82d2e92228b5ce5db5f7f553d49dee868e1031d148f535"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/logo-family-intake-2026-10-18.png",
+			"bytes": 1763472,
+			"sha256": "94b00270202e6720f3a2bfd1ff79995f7e9130812f483af1677b5c433194eb96"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/next-ai-1440-dark.png",
+			"bytes": 970437,
+			"sha256": "5d166d668efe6f5e5a5aa0a21dbf6eff6a555ce6fff2c962cac2ef7037062caa"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/next-ai-1440-light.png",
+			"bytes": 1020759,
+			"sha256": "34b3bb78e3c913723e465659903a28f4e73f94b220b926f80b258cb37e98c971"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/next-ai-2026-10-18-01.png",
+			"bytes": 714490,
+			"sha256": "d7ac0ba6b5afdc3118f1e7e4915a9e47e268b951a3fdf5be36fcb4f8cb7496c6"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/next-ai-390-dark.png",
+			"bytes": 494213,
+			"sha256": "497dc5de706de8f4d7dc26db9791fa1bd2aa2ce0a458a4b5572fee46d0fd4eef"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/next-ai-390-light.png",
+			"bytes": 497621,
+			"sha256": "35d438831fbd425e3838fec5aa88703b43183f84bdd88c4ab1a7343701d3103b"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/octo-1440-dark.png",
+			"bytes": 1211295,
+			"sha256": "b942f0d7ae89597155f5f3d6d0c3b787aa42a6a9cf23f737b88ea0f4c463cdfd"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/octo-1440-light.png",
+			"bytes": 1265403,
+			"sha256": "cb9aad6723b4d3353f25087acd58647783c6d0832f56a4d64d664ae0f6d7d9a4"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/octo-2026-10-18-07.png",
+			"bytes": 975910,
+			"sha256": "2aef56fea9bd3403ba34b13ea658c4f1b077ee1a5c6a70c1d60db16037002df2"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/octo-390-dark.png",
+			"bytes": 589265,
+			"sha256": "425a55c03c7179035378b663007b8ec9516a8f26cbb7e3d85670b1a125a5e5de"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/octo-390-light.png",
+			"bytes": 593020,
+			"sha256": "ca3ba6637f103df4bbb138cbf3c25acf6ba3ebd452b4021c1e66e21b2d96c700"
+		},
+		{
+			"path": ".test-results/intake-2026-10-18/chrome/status.png",
+			"bytes": 917493,
+			"sha256": "f892c9da76e6234d78b4baee823724bfc5b86296331fa0b2f2827df4d386650f"
+		}
+	],
+	"adoption": [
+		{
+			"id": "hexly-ai",
+			"revision": "f6e54b88be56b3afa555ed4e7f897186e5528301",
+			"sourceOriginal": "/logos/originals/hexly-ai-family-2026-10-18-02-01.png",
+			"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d",
+			"family": "/logos/family/hexly-ai/2026-10-18-02/01",
+			"category": "design"
+		},
+		{
+			"id": "base-ci",
+			"revision": "21addbd41b72b82e8d9e2dbe1352be75305126e2",
+			"sourceOriginal": "/logos/originals/base-ci-family-2026-10-18-01-01.png",
+			"sha256": "412463fe088e4322929fa4e2c6d3ddb3a0c5513350e1ce3dbb405e56c8fe76c4",
+			"family": "/logos/family/base-ci/2026-10-18-01/01",
+			"category": "tools"
+		},
+		{
+			"id": "base-cli",
+			"revision": "4fd686d49ed15473ef9d0c3436c90e601c2723d4",
+			"sourceOriginal": "/logos/originals/base-cli-family-2026-10-18-01-01.png",
+			"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9",
+			"family": "/logos/family/base-cli/2026-10-18-01/01",
+			"category": "tools"
+		},
+		{
+			"id": "base-mcp",
+			"revision": "240060f549a147a65d7358e22a96d58a6cd11fbe",
+			"sourceOriginal": "/logos/originals/base-mcp-family-2026-10-18-01-01.png",
+			"sha256": "cef05efbfb2bd02d5fe6661be8cacde2f6b474e5f90a2e75ab6a47baef67d396",
+			"family": "/logos/family/base-mcp/2026-10-18-01/01",
+			"category": "tools"
+		},
+		{
+			"id": "next-ai",
+			"revision": "61d2fd325dff69215b29be87a95843a15b471c84",
+			"sourceOriginal": "/logos/originals/next-ai-family-2026-10-18-01-01.png",
+			"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3",
+			"family": "/logos/family/next-ai/2026-10-18-01/01",
+			"category": "ai"
+		},
+		{
+			"id": "octo",
+			"revision": "0d0bcae39f7cb5fd4a22248f63bde57fed29cf01",
+			"sourceOriginal": "/logos/originals/octo-family-2026-10-18-07-02.png",
+			"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad",
+			"family": "/logos/family/octo/2026-10-18-07/02",
+			"category": "everyday"
+		}
+	],
+	"limits": [
+		"Owner dev acceptance and all publication steps pending.",
+		"Base CI actionlint unavailable.",
+		"Next AI Vite example dependencies absent; build/browser not accepted.",
+		"README evidence uses local approximate GitHub styles.",
+		"Independent Octo audit found an existing 9px sidebar brand-axis shift; outside brand-only scope."
+	],
+	"independentOctoAudit": {
+		"sourceCommit": "0d0bcae39f7cb5fd4a22248f63bde57fed29cf01",
+		"report": "/tmp/octo-ui-audit-20261018-krXY4b/REPORT.md",
+		"scope": "Exact master bytes, actual sidebar mobile/light/dark/DPR2 consumers and favicon/touch decoding; no business writes."
+	}
+}

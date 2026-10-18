@@ -1,5 +1,6 @@
 import { mkdir, readdir, writeFile } from "node:fs/promises";
 import { dirname, relative } from "node:path";
+import { parseArgs } from "node:util";
 import { readProjects } from "../src/data/read-projects";
 import { assetUrl } from "../src/model/assets";
 import {
@@ -13,6 +14,12 @@ import {
 } from "../src/model/catalogue";
 
 const projects = readProjects();
+const { values } = parseArgs({
+	options: { project: { type: "string", multiple: true } },
+});
+for (const id of values.project ?? [])
+	if (!projects.some((project) => project.id === id))
+		throw new Error(`Unknown project: ${id}`);
 await mkdir("docs/profiles", { recursive: true });
 const existingProfiles = await readdir("docs/profiles");
 let nextProfileNumber = Math.max(
@@ -22,7 +29,7 @@ let nextProfileNumber = Math.max(
 const index = [
 	"# Project profiles",
 	"",
-	`${projects.length} projects are listed in the catalogue. The directory omits hexly.ai itself; its historical profile and brand assets remain preserved. Project metadata is maintained in \`src/data/projects/\`; run \`bun run docs:profiles\` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.`,
+	`${projects.length} projects are listed in the catalogue, including hexly.ai. Project metadata is maintained in \`src/data/projects/\`; run \`bun run docs:profiles\` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.`,
 	"",
 	"| Project | Catalogue artwork | Source primary | Source background |",
 	"| --- | --- | --- | --- |",
@@ -84,7 +91,7 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 
 - [Native square PNG](${sourceLink(`${icon.root}/icon.png`)}) · [Native continuous-corner PNG](${sourceLink(`${icon.root}/rounded.png`)}) · [iOS 1024 px square](${sourceLink(`${icon.root}/icon-1024.png`)}) · [Favicon ICO](${sourceLink(`${icon.root}/favicon.ico`)}) · [Apple touch](${sourceLink(`${icon.root}/apple-touch-icon.png`)})
 - [Manifest and checksums](${sourceLink(`${icon.root}/manifest.json`)}) · [Usage, resampling and source rights](${sourceLink(`${icon.root}/guide.md`)})
-- Native canvas ${icon.width} × ${icon.height}; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. ${icon.width < 1024 ? "1024 px variants are explicitly resampled upscales." : "Smaller delivery sizes are resampled from the native master."}
+- Native canvas ${icon.width} × ${icon.height}; zero new image generation. ${project.brandTexture ? "Unchanged foreground colors over the approved light texture at 70% opacity." : "Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing."} Continuous corners are already rendered for site use; use the square master for iOS. ${icon.width < 1024 ? "1024 px variants are explicitly resampled upscales." : "Smaller delivery sizes are resampled from the native master."}
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
 
 `
@@ -111,7 +118,7 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 - Study \`${family.id}\`, finishing \`${family.finishing}\`
 ${family.foreground.subject ? `- Refined subject: ${family.foreground.subject.en}\n` : ""}- Site path: \`/projects/${project.id}#brand\`; [local gallery](https://index.dev.hexly.ai/projects/${project.id}#brand)
 - [Static review HTML](../../artwork/logo-family/${relative("/logos/family", dirname(family.root))}/review.html)
-- [Full process archive](${family.archive})
+- [Full process archive](${family.archive.startsWith("artwork/") ? `../../${family.archive}` : family.archive})
 - [Transparent foreground](${sourceLink(family.foreground.original)}); SHA-256: \`${family.foreground.sha256}\`
 - [Square icon](${sourceLink(`${family.root}/icon.png`)}), [rounded icon](${sourceLink(`${family.root}/rounded.png`)}), [white version](${sourceLink(`${family.root}/white.png`)})
 - [${adapted ? "Original illustration" : retained ? "Untouched original" : "Untouched generation"}](${sourceLink(`${family.root}/${sourceFile}`)}), [${supplied ? "presentation brief" : "exact prompt"}](${sourceLink(`${family.root}/${supplied ? "brief" : "prompt"}.txt`)}), [public asset checksums](${sourceLink(`${family.root}/manifest.json`)})
@@ -193,7 +200,7 @@ ${screenshotsSection}${overviewSection}## Current logo
 
 ![${project.title} source identity](${sourceLink(project.logo.thumbnail)})
 
-- Type: ${firstGeneratedIdentity ? "Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved" : generatedKit ? "Preserved source identity; the current Hexly GPT Image animal is documented separately below" : collected ? "Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights" : kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
+- Type: ${firstGeneratedIdentity ? (project.family?.rawFile === "raw.jpg" ? "Owner-approved generated raster identity; model unrecorded, source-adopted bytes and native JPEG provenance preserved" : "Owner-approved GPT Image raster identity; source-adopted bytes and generation provenance preserved") : generatedKit ? "Preserved source identity; the current Hexly GPT Image animal is documented separately below" : collected ? "Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights" : kit ? "Original vector identity commissioned and designed in hexly.ai; the source SVG is preserved byte-for-byte" : project.logo.kind === "original" ? "Original project artwork, copied without modification" : "Existing GitHub-profile emoji rendered as a portable PNG; no independent project logo was found"}
 - Subject: ${project.subject}
 - [Source](${sourceLink(project.logo.sourceUrl)}): \`${project.logo.sourcePath}\`
 - [Preserved asset](${sourceLink(project.logo.original)})
@@ -221,7 +228,8 @@ ${firstGeneratedIdentity ? "Preserve the approved raster, original colors, compl
 ${kit ? "Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide." : material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${kit ? " The source team integrates the exact published files and records its own adoption revision." : family ? " Preserve this reviewed composition and its archived predecessors." : snapshot ? " This entry uses the preserved local application artwork; any new study follows its own recorded review decision." : " No new logo is generated in phase one."}`
 }
 `;
-	await writeFile(`docs/profiles/${name}`, content);
+	if (!values.project || values.project.includes(project.id))
+		await writeFile(`docs/profiles/${name}`, content);
 }
 await writeFile("docs/profiles/README.md", `${index.join("\n")}\n`);
 console.info(`Updated ${projects.length} project profiles.`);

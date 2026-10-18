@@ -1,3 +1,6 @@
+import identity from "../data/projects/hexly-ai.json";
+import { assetUrl } from "../model/assets";
+
 export type IconName =
 	| "arrow"
 	| "search"
@@ -98,25 +101,13 @@ export function Icon({
 
 export function BrandMark() {
 	return (
-		<svg
+		<img
 			className="brand-mark"
-			width="33"
+			src={assetUrl(`${identity.family.root}/transparent-64.png`)}
+			alt=""
+			width="36"
 			height="36"
-			viewBox="0 0 36 40"
-			fill="none"
 			aria-hidden="true"
-		>
-			<path d="m18 2 15.6 9v18L18 38 2.4 29V11Z" fill="currentColor" />
-			<path
-				d="m18 9 9.5 5.5v11L18 31l-9.5-5.5v-11Z"
-				stroke="var(--page)"
-				strokeWidth="1.6"
-			/>
-			<path
-				d="M18 9v22M8.5 14.5l19 11m0-11-19 11"
-				stroke="var(--page)"
-				strokeWidth="1.6"
-			/>
-		</svg>
+		/>
 	);
 }
