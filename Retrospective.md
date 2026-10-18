@@ -509,3 +509,14 @@ after only the short revision had been observed. It was replaced with the actual
 `git rev-parse HEAD` value before generation or commit. Generate source revisions
 and file hashes from their authoritative tools rather than completing them by
 hand, and validate those values before preserving a provenance record.
+# 2026-10-18: Lint source masks before freezing a pass
+
+The five-material local rollout reached its first commit gate with four new
+native SVG extraction masks missing accessible titles. The gate correctly
+rejected the commit. The material task added titles before the first commit,
+updated the dependent new source/settings checksums and verified that the SVG
+raster and every PNG derivative remained byte-identical. Historical raw images,
+receipts and published archives were untouched. The completed archive records
+the correction under `manifest.preflightCorrection`. Run lint on every new SVG
+before taking the frozen finishing snapshot, not only on the generated images.
+

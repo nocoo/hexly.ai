@@ -1,0 +1,42 @@
+{
+	"finishing": "02",
+	"rawSha256": "45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7",
+	"finishingFiles": 44,
+	"curatedFiles": 37,
+	"exportDimensions": 30,
+	"opaquePixelsUnchanged": 1874155,
+	"changedOpaquePixels": 0,
+	"features": [
+		{
+			"name": "head",
+			"nativeRegion": [0, 0, 1950, 1420],
+			"placedOffset": [96, 0],
+			"minimumClearance": 108.50000000000006,
+			"clippedPixels": 0,
+			"visiblePixels": 1226642
+		},
+		{
+			"name": "side-fin",
+			"nativeRegion": [0, 1430, 397, 1980],
+			"placedOffset": [96, 0],
+			"minimumClearance": 35.14952843632847,
+			"clippedPixels": 0,
+			"visiblePixels": 162621
+		}
+	],
+	"intentionalEdge": "Only the lower neck may intersect the bottom rounded boundary",
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [96, 0],
+		"bounds": {
+			"left": 125,
+			"top": 128,
+			"right": 1939,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -20.039813472311153,
+		"clippedPixels": 841
+	},
+	"publication": "local-only"
+}

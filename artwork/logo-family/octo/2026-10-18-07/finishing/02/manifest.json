@@ -1,0 +1,365 @@
+{
+	"createdAt": "2026-10-18T06:48:04.211Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "octo",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#b9d2cc",
+			"light": "#e4eeDF",
+			"shade": "#88aca6",
+			"motif": "#4e827b",
+			"grainAmplitude": 0.7,
+			"grainSeed": 61018007,
+			"motifOpacity": 0.15,
+			"highlightOpacity": 0.27,
+			"ribbonOpacity": 0.13,
+			"pattern": {
+				"name": "Sheltered seagrass meadow",
+				"description": "Sparse swaying eelgrass blades at the upper-right and lower-right canvas edges; quiet habitat marks behind the approved seahorse, not an underwater illustration.",
+				"layers": [
+					{
+						"d": "M783 -25Q717 100 749 242Q773 342 731 412 M852 -30Q772 151 801 303 M932 684Q857 798 882 1045 M1028 737Q927 844 948 1048",
+						"tone": "motif",
+						"strokeWidth": 2.4
+					},
+					{
+						"d": "M742 225Q671 152 710 65Q706 159 742 225 M780 183Q816 99 809 43Q844 118 780 183 M883 897Q824 825 846 750Q854 836 883 897 M947 955Q984 871 1017 846Q1002 920 947 955",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					41,
+					76,
+					83
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					26,
+					54,
+					68
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				96,
+				0
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Translate the complete approved portrait 96 native pixels right without scaling, recoloring or contour repair. Pass 01 clipped 1303 pixels in the conservative side-fin feature region against the rounded corner. This integer placement preserves head asymmetry and the lower neck entry while giving the complete fin positive clearance; only the intentional bottom neck crosses the rounded boundary."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Exterior background samples range from RGB 250,252,252 to 252,251,253. Use border-connected extraction only, preserving enclosed eye highlights and chromatic pale mint/cream facets. No connected-component deletion."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2307506,
+		"foregroundPixels": 1886798,
+		"softEdgePixels": 12643,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 29,
+			"top": 128,
+			"right": 1843,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			96,
+			0
+		],
+		"bounds": {
+			"left": 125,
+			"top": 128,
+			"right": 1939,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -20.039813472311153,
+		"clippedPixels": 841
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2290,
+			"sha256": "047c5847bf5aa9c1af1b225692ea62a21d75cd22dab0d2917cdb31b960d85f38"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1705,
+			"sha256": "9dc9db980bb2cc51f795b02aa8e475844d79b3ba8f666750b4d684e7a7ed8030"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2203592,
+			"sha256": "25103a3320e01953dee7fde1eae237b97d581f200f63c12713ed8612bbefecc6"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 70015,
+			"sha256": "986fc5237551ed4cffc2270aec2bc551b17c91df46c5a88f19cbeb762d729cab"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 809,
+			"sha256": "2c1870873f074a50fc98e80e356596fb147cf66c227f21c0120b4dbc5c2c819b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1808207,
+			"sha256": "68bc28609839c0ff272c2c44a31fa05efe5e6fa5ba2cbab529bdd30c6a2aed8e"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2203787,
+			"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 70005,
+			"sha256": "f82fe1616dfef35030f5787d055215fa018991f910bdf49bf155d878d588bf2f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 227333,
+			"sha256": "3725a30af4a6ffe63289ddf94f65a623dd84137bc5246f816c75ef182bd3259f"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 166955,
+			"sha256": "a67351a3ec808a72ff15fecc98dd248ccadc76222b6c358a141f7dd9abc739d6"
+		},
+		{
+			"path": "exports/octo-transparent-2048.png",
+			"bytes": 2203787,
+			"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad"
+		},
+		{
+			"path": "exports/octo-icon-2048.png",
+			"bytes": 3589415,
+			"sha256": "c2df57865a5a16373a2aacc56ee228facc4f6d3b172cf66a224d0289ee9ec880"
+		},
+		{
+			"path": "exports/octo-rounded-2048.png",
+			"bytes": 3511693,
+			"sha256": "7053765748bfcda10390f3407eadfa5766728705a03c64587c38494f718b5aa7"
+		},
+		{
+			"path": "exports/octo-transparent-1024.png",
+			"bytes": 782671,
+			"sha256": "19253e890a98509a139b2c2f36009cb405394d9cbc8f37442ac27d1dce66b2a9"
+		},
+		{
+			"path": "exports/octo-icon-1024.png",
+			"bytes": 1056414,
+			"sha256": "2f20af2e58ffb2aea4d23ad9ad80ad1ab2bf64631dedef336f625c441a76776d"
+		},
+		{
+			"path": "exports/octo-rounded-1024.png",
+			"bytes": 1055991,
+			"sha256": "8ea7db200a27599a1fdb0961790df8283a9b5b349dd6daeb2a097c8aca6849f7"
+		},
+		{
+			"path": "exports/octo-transparent-512.png",
+			"bytes": 276369,
+			"sha256": "00d7b1448f23186dd38ecc8eb2fddf9fec1157d0fea405c2b69430fe6babf9c0"
+		},
+		{
+			"path": "exports/octo-icon-512.png",
+			"bytes": 380484,
+			"sha256": "c7f8868110cc54b6820366a03206874d2d0cefbcd07e3d28c9fa1f6040db40cc"
+		},
+		{
+			"path": "exports/octo-rounded-512.png",
+			"bytes": 380776,
+			"sha256": "956ec95cbcba67b70f8f5dd2dc88471e9dfd54d734f64e7fe4ea35fd40054843"
+		},
+		{
+			"path": "exports/octo-transparent-256.png",
+			"bytes": 91986,
+			"sha256": "78285d5302eefc899562eb9647c3f5ed9f57e4a3ba0cde87226fadf3788d2fe1"
+		},
+		{
+			"path": "exports/octo-icon-256.png",
+			"bytes": 108371,
+			"sha256": "6d8b88f989b7ff4e49b77b43e4138d3104c473513b5ec3b40aee294cf947dccd"
+		},
+		{
+			"path": "exports/octo-rounded-256.png",
+			"bytes": 111300,
+			"sha256": "fcdca85f910d3771b5d2f25d337051abff7e615e60090afa0e36a63cf3cce84d"
+		},
+		{
+			"path": "exports/octo-transparent-128.png",
+			"bytes": 27727,
+			"sha256": "78f6fb8a3874b24e1e05db00917450e86ca56d1c1ca9fe05faf93c7abbc28c5b"
+		},
+		{
+			"path": "exports/octo-icon-128.png",
+			"bytes": 33745,
+			"sha256": "94f05b5491f9bb0230701ffced6628c31a2a06ac0908cf1e38e30e18bc89fc66"
+		},
+		{
+			"path": "exports/octo-rounded-128.png",
+			"bytes": 35106,
+			"sha256": "4e7176ed24cb3f22348940f0e422f11043e7e504f4fae846cc8db0825c5d3df8"
+		},
+		{
+			"path": "exports/octo-transparent-64.png",
+			"bytes": 7942,
+			"sha256": "fe29b94f42e0ebea6509f4fb69c8b68c588f3eef09205b6eba3ea8d7f77a65aa"
+		},
+		{
+			"path": "exports/octo-icon-64.png",
+			"bytes": 10132,
+			"sha256": "3900d03eb329fd5f2e13301f55b4bd606d8d04359366424b3f2653d234b79a13"
+		},
+		{
+			"path": "exports/octo-rounded-64.png",
+			"bytes": 10691,
+			"sha256": "2ba6ee07e9b3d4ac56c3ba26c8681340b4171bd6ca331a78255141cc3b86737e"
+		},
+		{
+			"path": "exports/octo-transparent-48.png",
+			"bytes": 4844,
+			"sha256": "ba2887d6f9a0e8f94e81c365a3a6c536021c379b60eeb905080035781f864ce9"
+		},
+		{
+			"path": "exports/octo-icon-48.png",
+			"bytes": 6132,
+			"sha256": "1754b8ac03a75627ad9336de51caf962945aafb1ee9ff4b4e965ef2346453d03"
+		},
+		{
+			"path": "exports/octo-rounded-48.png",
+			"bytes": 6460,
+			"sha256": "9f1f7616c6db7c09b19f72ec4c039904f803441e57220587d42b8c8efdaeee4b"
+		},
+		{
+			"path": "exports/octo-transparent-32.png",
+			"bytes": 2479,
+			"sha256": "91eb84062d9a3002bd47469e3d9427075f8fc80f08045e7dcb4f29a700bf35d2"
+		},
+		{
+			"path": "exports/octo-icon-32.png",
+			"bytes": 3129,
+			"sha256": "0e5d02decdd37c515d867fa0a85b43d6b8460132b445788df5b4d46b798641f1"
+		},
+		{
+			"path": "exports/octo-rounded-32.png",
+			"bytes": 3288,
+			"sha256": "4f87b44ff3ba459e6474f9b1e6cf315c47e02c4867639c137c331b63ae3e7b07"
+		},
+		{
+			"path": "exports/octo-transparent-24.png",
+			"bytes": 1554,
+			"sha256": "a809764b8cefa022a9e1abaad2abea5e17dcbf775bcaf666173834beb7619c3f"
+		},
+		{
+			"path": "exports/octo-icon-24.png",
+			"bytes": 1878,
+			"sha256": "c879f95ec6a1f14b1a78998547b6bdbd63a13106b2c5395c03d72058fab83e4b"
+		},
+		{
+			"path": "exports/octo-rounded-24.png",
+			"bytes": 2014,
+			"sha256": "4dde6787d8293d1adf5d7b5c67ab4e3f1fc378df965947df0f2dfcf1a99a4b9c"
+		},
+		{
+			"path": "exports/octo-transparent-16.png",
+			"bytes": 855,
+			"sha256": "0e8e0f0588a608841fa512fd5c22d81a4a1ef1a44f08009fac8e7ebf713d5dd3"
+		},
+		{
+			"path": "exports/octo-icon-16.png",
+			"bytes": 958,
+			"sha256": "ecf9d71528097490dfd28c11ddb67de885c958e3cca31b1169b45b9a04813482"
+		},
+		{
+			"path": "exports/octo-rounded-16.png",
+			"bytes": 1007,
+			"sha256": "4dd6c58cce9fbad3de2c2e2641e3f13c8c473c2de7682ee7f45dd534a628a3af"
+		},
+		{
+			"path": "exports/octo-white-2048.png",
+			"bytes": 2062405,
+			"sha256": "4d2719eae8bc219b0020188a4ad3d2e29e945a8a5a08b69e618998c6b390943f"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 738544,
+			"sha256": "627e288146aa14ab79190f2081cb393fd3175f3d1d5fecdbfd8e7cae68a551da"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 745558,
+			"sha256": "2aff5ecdc59b7a8dba115751b3182459a4107456bcadc6a0861051b975441c2f"
+		}
+	]
+}
