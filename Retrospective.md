@@ -486,3 +486,11 @@ leaves directional negative space. Inspect the named adopted image before the
 next request, explain that distinction, and submit it directly as the composition
 reference. Do not keep passing rejected anatomy or competing references into
 later attempts. Study 05 records this correction without presuming acceptance.
+
+The owner then rejected study 05 and explicitly identified prompt overload.
+Explaining the reference in several prescriptive paragraphs constrained the next
+result instead of helping. Study 06 follows the subsequent seahorse-head direction
+with one short sentence and no reference images. Do not reintroduce the discarded
+anatomy, framing or style checklist when the owner asks for a minimal brief. The
+returned torso and underwater setting remain documented deviations from the
+head-portrait request, not a finished or approved avatar.
