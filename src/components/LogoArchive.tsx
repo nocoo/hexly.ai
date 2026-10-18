@@ -53,7 +53,10 @@ export function LogoArchive({
 						? t.adaptedArtwork
 						: retained
 							? t.retainedArtwork
-							: family.model}{" "}
+							: (family.model ??
+								(locale === "zh"
+									? "图像生成工具 · 模型未记录"
+									: "Image tool · model unrecorded"))}{" "}
 					· {family.foreground.width} × {family.foreground.height}
 				</p>
 			</div>
@@ -89,7 +92,7 @@ export function LogoArchive({
 							: retained
 								? t.retainedSource
 								: t.rawDownload,
-						`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : "raw.png"}`,
+						`${family.root}/${adapted ? "source.jpg" : retained ? "source.png" : (family.rawFile ?? "raw.png")}`,
 					],
 					[
 						supplied ? t.briefDownload : t.promptDownload,

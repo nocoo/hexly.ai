@@ -89,6 +89,7 @@ export interface LogoFamily {
 	method?: "retained-original" | "reference-adaptation";
 	series?: "material" | "character";
 	model?: string;
+	rawFile?: "raw.png" | "raw.jpg";
 	foreground: {
 		subject?: Record<Locale, string>;
 		original: string;
