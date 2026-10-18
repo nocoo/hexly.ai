@@ -14,7 +14,7 @@ const sha = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
 const json = async (path: string) => JSON.parse(await readFile(path, "utf8"));
 
 describe("Pi Agent Policy onboarding", () => {
-	it("is an active first material-tool identity without a fictional website", () => {
+	it("retains its archived material-tool identity without a fictional website", () => {
 		expect(project.category).toBe("tools");
 		expect(project.family).toMatchObject({
 			series: "material",
@@ -23,7 +23,7 @@ describe("Pi Agent Policy onboarding", () => {
 		});
 		expect(project.website).toBeNull();
 		expect(project.websiteSource).toBeNull();
-		expect(project.archived).toBe(false);
+		expect(project.archived).toBe(true);
 		expect(
 			statusTargets(projects).some((target) => target.id === project.id),
 		).toBe(false);

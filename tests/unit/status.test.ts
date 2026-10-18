@@ -52,6 +52,32 @@ const snapshot: StatusSnapshot = {
 };
 
 describe("status coverage and navigation", () => {
+	it("retains retired project archives without active probes", () => {
+		const projects = readProjects();
+		const retired = [
+			"pi-agent-policy",
+			"dogfight",
+			"dreamro",
+			"rooster",
+			"arena",
+			"deca",
+			"snaky",
+			"codo",
+			"shrike",
+			"runner",
+			"flow",
+		];
+		const active = filterProjects(projects, "");
+		const archives = filterProjects(projects, "", "archive");
+		const targets = statusTargets(projects);
+		for (const id of retired) {
+			const project = projects.find((item) => item.id === id);
+			expect(project?.archived).toBe(true);
+			expect(archives.some((item) => item.id === id)).toBe(true);
+			expect(active.some((item) => item.id === id)).toBe(false);
+			expect(targets.some((item) => item.id === id)).toBe(false);
+		}
+	});
 	it("preserves catalogue order and keeps the three personal sites last", () => {
 		const projects = readProjects();
 		expect(statusSites(projects).map((site) => site.id)).toEqual([
