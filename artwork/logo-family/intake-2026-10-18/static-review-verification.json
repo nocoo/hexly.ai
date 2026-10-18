@@ -1,0 +1,530 @@
+{
+	"schemaVersion": 1,
+	"verifiedAt": "2026-10-18T07:00:53.051472+00:00",
+	"scope": "Six complete static study HTML files and finished intake HTML only; one new verification record. No source-repository, catalogue, shared CSS/JS or frozen finishing/generation writes.",
+	"methods": [
+		"Python stdlib HTMLParser: structural IDs, explicit mode URLs, shared controls, exact prompt, palette copy attributes, complete sections, physical paths and route record presence",
+		"Pillow: all 30 PNG exports per project decode with exact dimensions, foreground alpha, native pixel palette samples, all fully opaque placed RGB unchanged",
+		"hashlib.sha256: raw approval equality, native/master/curated manifest bytes, generation reference hashes and protected baseline"
+	],
+	"browser": {
+		"status": "not-run",
+		"reason": "Controller dev readiness and browser acceptance remain pending. No screenshot, interactive clipboard, download action, navigation, responsive layout or live route claim."
+	},
+	"checks": {
+		"pagesPassed": 7,
+		"studyPagesPassed": 6,
+		"nativeRawApprovalsMatched": 6,
+		"exportsDecoded": 180,
+		"nativePalettePixelsMatched": 19,
+		"protectedFilesUnchanged": 632,
+		"protectedBaselineSha256": "888474d62baf631bd47f47b031559e7268d913b46fb61613812bd0c9e5c67da9",
+		"sharedFilesUnchanged": [
+			{
+				"path": "artwork/logo-family/review.css",
+				"bytes": 10303,
+				"sha256": "4a2d0b7163bce228ae07c5f8acb33dd9861dfefd2c6455d4eb04517bda15ac92"
+			},
+			{
+				"path": "artwork/logo-family/review.mjs",
+				"bytes": 1806,
+				"sha256": "187dbd5f528326c5237cf248a1b57abf778fd2aed5872aa0c59bb99f35b820ff"
+			}
+		],
+		"historicalHexlyUnchanged": {
+			"path": "public/logos/originals/hexly-ai.png",
+			"bytes": 53585,
+			"sha256": "c69b5e7a341eabc3de296db4d1b8dcff314f04c7652b86fd1dc217b1f42628d0"
+		},
+		"publication": "not-performed",
+		"delegation": "not-performed"
+	},
+	"normalLint": {
+		"command": "bun run lint",
+		"status": "passed",
+		"exitCode": 0,
+		"errors": 0,
+		"warnings": 0,
+		"info": "Existing Biome schema 2.5.12 / CLI 2.5.15 mismatch only; no configuration edits.",
+		"initialAttempt": "Initially failed only on controller-owned in-progress imports/formatting; controller fixed those paths and released the empty index. Full normal lint passed on final rerun."
+	},
+	"pages": [
+		{
+			"path": "artwork/logo-family/hexly-ai/2026-10-18-02/review.html",
+			"bytes": 21824,
+			"sha256": "511bb5c7e428880ac5ce382fd619236d1564cedbe9e413ae2f75c0cf739beeaa",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 53,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/hexly-ai",
+					"/projects/hexly-ai#brand"
+				]
+			}
+		},
+		{
+			"path": "artwork/logo-family/base-ci/2026-10-18-01/review.html",
+			"bytes": 20770,
+			"sha256": "593cc9ba8287036ed247fa1ac842f3f34f1e9862bbbabfd07b8f0e968a1fae58",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 51,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/base-ci",
+					"/projects/base-ci#brand"
+				]
+			}
+		},
+		{
+			"path": "artwork/logo-family/base-cli/2026-10-18-01/review.html",
+			"bytes": 20632,
+			"sha256": "53b9aad64b974de9c6667c64289eb1c903a23add391a3f8936a2da14f7c142b0",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 51,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/base-cli",
+					"/projects/base-cli#brand"
+				]
+			}
+		},
+		{
+			"path": "artwork/logo-family/base-mcp/2026-10-18-01/review.html",
+			"bytes": 20880,
+			"sha256": "2fe027ae317ed7700be1a21ed50d7403e880284ab11e0d86d8de3658ea51e85e",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 51,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/base-mcp",
+					"/projects/base-mcp#brand"
+				]
+			}
+		},
+		{
+			"path": "artwork/logo-family/next-ai/2026-10-18-01/review.html",
+			"bytes": 20604,
+			"sha256": "1a9c446f2c6187a12e5f39dd6052ee174ef33f04beb9fe57ac57b91141c23bc2",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 51,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/next-ai",
+					"/projects/next-ai#brand"
+				]
+			}
+		},
+		{
+			"path": "artwork/logo-family/octo/2026-10-18-07/review.html",
+			"bytes": 21354,
+			"sha256": "aa08f257172c014bdb0977e31a00e452d84e3ebfe8259da4f4c24c67a08422e7",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 52,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/octo",
+					"/projects/octo#brand"
+				]
+			}
+		},
+		{
+			"path": "artwork/logo-family/intake-2026-10-18/review.html",
+			"bytes": 30540,
+			"sha256": "cddd80e2b7e895cf1ff0c51b183f44d38edd53c80d28a8e0dbbf23df258ba456",
+			"localStatus": "finished-static-review",
+			"browserAcceptance": "not-run-pending-controller-dev-ready",
+			"modeThemeContract": "shared review.mjs controls, three explicit native mode URLs and theme toggle present; not browser exercised",
+			"sizeRoles": "128/64 square;32/24/16 transparent;24 expanded/collapsed sidebar;16 browser tab/favicon",
+			"promptExactMatch": true,
+			"links": {
+				"physicalLinksChecked": 74,
+				"catalogueRoutesPresentButNotBrowserTested": [
+					"/",
+					"/logos/base-ci",
+					"/logos/base-cli",
+					"/logos/base-mcp",
+					"/logos/hexly-ai",
+					"/logos/next-ai",
+					"/logos/octo",
+					"/projects/base-ci#brand",
+					"/projects/base-cli#brand",
+					"/projects/base-mcp#brand",
+					"/projects/hexly-ai#brand",
+					"/projects/next-ai#brand",
+					"/projects/octo#brand"
+				]
+			}
+		}
+	],
+	"studies": [
+		{
+			"project": "hexly-ai",
+			"study": "2026-10-18-02",
+			"finishing": "01",
+			"localStatus": "source-local-adoption-pending",
+			"nativeSize": 1024,
+			"nativeFormat": "JPEG",
+			"generator": "image_gen.imagegen",
+			"model": null,
+			"upscaledExports": [2048],
+			"raw": {
+				"path": "public/logos/family/hexly-ai/2026-10-18-02/01/raw.jpg",
+				"bytes": 239731,
+				"sha256": "af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897"
+			},
+			"masters": [
+				{
+					"path": "public/logos/family/hexly-ai/2026-10-18-02/01/transparent.png",
+					"bytes": 1175430,
+					"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d"
+				},
+				{
+					"path": "public/logos/family/hexly-ai/2026-10-18-02/01/icon.png",
+					"bytes": 945677,
+					"sha256": "212d8b4527d10db852f1880d88ca1bb7ed412b89be765b13c769ec8973f1dff9"
+				},
+				{
+					"path": "public/logos/family/hexly-ai/2026-10-18-02/01/rounded.png",
+					"bytes": 950379,
+					"sha256": "fad1e2a7d6c8300a2d67ffb2318c2486acbd7522d50223b03115c3c12d0f3851"
+				},
+				{
+					"path": "public/logos/family/hexly-ai/2026-10-18-02/01/white.png",
+					"bytes": 894734,
+					"sha256": "7cfbd512d427f355a34ea3c80b6df19112700746b4794165067749859271d25b"
+				}
+			],
+			"curatedManifestFilesChecked": 37,
+			"exportsDecoded": 30,
+			"palettePixelsVerified": 3,
+			"referencesHashVerified": 1,
+			"opaqueSourceRgbPreservation": {
+				"fullyOpaquePixels": 386476,
+				"changedPixels": 0,
+				"scale": 1,
+				"nativeOffset": [0, 0]
+			},
+			"roundedOutline": {
+				"minimumClearanceNativePixels": 64.25000000000001,
+				"clippedPixels": 0
+			}
+		},
+		{
+			"project": "base-ci",
+			"study": "2026-10-18-01",
+			"finishing": "01",
+			"localStatus": "local-adopted",
+			"nativeSize": 1024,
+			"nativeFormat": "JPEG",
+			"generator": "image_gen.imagegen",
+			"model": null,
+			"upscaledExports": [2048],
+			"raw": {
+				"path": "public/logos/family/base-ci/2026-10-18-01/01/raw.jpg",
+				"bytes": 152838,
+				"sha256": "4a661da1da98e309ea92218fc20d2d4569a6d53b2dfe40af775c1d5e37ac5956"
+			},
+			"masters": [
+				{
+					"path": "public/logos/family/base-ci/2026-10-18-01/01/transparent.png",
+					"bytes": 643755,
+					"sha256": "412463fe088e4322929fa4e2c6d3ddb3a0c5513350e1ce3dbb405e56c8fe76c4"
+				},
+				{
+					"path": "public/logos/family/base-ci/2026-10-18-01/01/icon.png",
+					"bytes": 458734,
+					"sha256": "0a2aaf3c2bda1337d1d6831df6e61b69fadb15454afdb2abce259472dc0692c8"
+				},
+				{
+					"path": "public/logos/family/base-ci/2026-10-18-01/01/rounded.png",
+					"bytes": 463488,
+					"sha256": "35c096d7b853aa51aedd6cc084c9a053594182d76ff79e4e743d4e4d5bd7c631"
+				},
+				{
+					"path": "public/logos/family/base-ci/2026-10-18-01/01/white.png",
+					"bytes": 386646,
+					"sha256": "920e880242050c4eced1263961ab203c9fea2f61f27bb71a50b3f335738a7ece"
+				}
+			],
+			"curatedManifestFilesChecked": 37,
+			"exportsDecoded": 30,
+			"palettePixelsVerified": 3,
+			"referencesHashVerified": 0,
+			"opaqueSourceRgbPreservation": {
+				"fullyOpaquePixels": 228839,
+				"changedPixels": 0,
+				"scale": 1,
+				"nativeOffset": [0, 0]
+			},
+			"roundedOutline": {
+				"minimumClearanceNativePixels": 79.75000000000001,
+				"clippedPixels": 0
+			}
+		},
+		{
+			"project": "base-cli",
+			"study": "2026-10-18-01",
+			"finishing": "01",
+			"localStatus": "local-adopted",
+			"nativeSize": 1024,
+			"nativeFormat": "JPEG",
+			"generator": "image_gen.imagegen",
+			"model": null,
+			"upscaledExports": [2048],
+			"raw": {
+				"path": "public/logos/family/base-cli/2026-10-18-01/01/raw.jpg",
+				"bytes": 124219,
+				"sha256": "3d585f0a2098004d6ae4f46023ad78001eaed49e07672106fd4cea0a2b0768cc"
+			},
+			"masters": [
+				{
+					"path": "public/logos/family/base-cli/2026-10-18-01/01/transparent.png",
+					"bytes": 225682,
+					"sha256": "d33fca8b5f824a6cffd14274524302f15beb82130381c77e196124370e6721a9"
+				},
+				{
+					"path": "public/logos/family/base-cli/2026-10-18-01/01/icon.png",
+					"bytes": 301909,
+					"sha256": "bcd48b40ea288c6e7f03e5eccccca268c4f5e819abf7a1c19055713334f38723"
+				},
+				{
+					"path": "public/logos/family/base-cli/2026-10-18-01/01/rounded.png",
+					"bytes": 306868,
+					"sha256": "ae5531edbf8f5cbc29fbf5d734a7a534c21b87a22807026508e7d07185f9ce68"
+				},
+				{
+					"path": "public/logos/family/base-cli/2026-10-18-01/01/white.png",
+					"bytes": 217201,
+					"sha256": "903b83e22790ec0d6d97de44d8313de0f91f47f3ce95d3693135c595dc5e9b3c"
+				}
+			],
+			"curatedManifestFilesChecked": 37,
+			"exportsDecoded": 30,
+			"palettePixelsVerified": 3,
+			"referencesHashVerified": 0,
+			"opaqueSourceRgbPreservation": {
+				"fullyOpaquePixels": 99879,
+				"changedPixels": 0,
+				"scale": 1,
+				"nativeOffset": [0, 0]
+			},
+			"roundedOutline": {
+				"minimumClearanceNativePixels": 105.25000000000001,
+				"clippedPixels": 0
+			}
+		},
+		{
+			"project": "base-mcp",
+			"study": "2026-10-18-01",
+			"finishing": "01",
+			"localStatus": "local-adopted",
+			"nativeSize": 1024,
+			"nativeFormat": "JPEG",
+			"generator": "image_gen.imagegen",
+			"model": null,
+			"upscaledExports": [2048],
+			"raw": {
+				"path": "public/logos/family/base-mcp/2026-10-18-01/01/raw.jpg",
+				"bytes": 131712,
+				"sha256": "1c31411521b6da81054b3ee50611337a87fc6d0a00536316172984404ce4921e"
+			},
+			"masters": [
+				{
+					"path": "public/logos/family/base-mcp/2026-10-18-01/01/transparent.png",
+					"bytes": 539866,
+					"sha256": "cef05efbfb2bd02d5fe6661be8cacde2f6b474e5f90a2e75ab6a47baef67d396"
+				},
+				{
+					"path": "public/logos/family/base-mcp/2026-10-18-01/01/icon.png",
+					"bytes": 354706,
+					"sha256": "9d3fecaab9d49a73ccff8e82ddc6218ca2fbddd618ca3f317fd2183dda44b878"
+				},
+				{
+					"path": "public/logos/family/base-mcp/2026-10-18-01/01/rounded.png",
+					"bytes": 359729,
+					"sha256": "ad19b678de65306168506f45516f34742e5b1023a4e7b851fca2a1946b14ccb8"
+				},
+				{
+					"path": "public/logos/family/base-mcp/2026-10-18-01/01/white.png",
+					"bytes": 276514,
+					"sha256": "cd1ec6df156c0241fdc9f111c663c8c88f0935d30beb9fe0082cb05d2df1d00f"
+				}
+			],
+			"curatedManifestFilesChecked": 37,
+			"exportsDecoded": 30,
+			"palettePixelsVerified": 3,
+			"referencesHashVerified": 0,
+			"opaqueSourceRgbPreservation": {
+				"fullyOpaquePixels": 140991,
+				"changedPixels": 0,
+				"scale": 1,
+				"nativeOffset": [0, 0]
+			},
+			"roundedOutline": {
+				"minimumClearanceNativePixels": 129.25,
+				"clippedPixels": 0
+			}
+		},
+		{
+			"project": "next-ai",
+			"study": "2026-10-18-01",
+			"finishing": "01",
+			"localStatus": "local-adopted",
+			"nativeSize": 1024,
+			"nativeFormat": "JPEG",
+			"generator": "image_gen.imagegen",
+			"model": null,
+			"upscaledExports": [2048],
+			"raw": {
+				"path": "public/logos/family/next-ai/2026-10-18-01/01/raw.jpg",
+				"bytes": 147669,
+				"sha256": "d17ef6cc060d4c971ae3f91fce8cb8e5620e2c4b52390476f00ba76d4cbd702c"
+			},
+			"masters": [
+				{
+					"path": "public/logos/family/next-ai/2026-10-18-01/01/transparent.png",
+					"bytes": 672100,
+					"sha256": "89b0ca07f84c1fb5caaac154ce24add5e58914e9cf33a1adbeece39fd5b032e3"
+				},
+				{
+					"path": "public/logos/family/next-ai/2026-10-18-01/01/icon.png",
+					"bytes": 486416,
+					"sha256": "781403b3b998658f36e6f7aadcb502e9d0c34724ddf6984701cdbafdb9ca19bc"
+				},
+				{
+					"path": "public/logos/family/next-ai/2026-10-18-01/01/rounded.png",
+					"bytes": 491570,
+					"sha256": "25cc888a0600ca8683f27289385bf3d3ff2d8d11699325aca50451642f11be5c"
+				},
+				{
+					"path": "public/logos/family/next-ai/2026-10-18-01/01/white.png",
+					"bytes": 408466,
+					"sha256": "c8b1ca96631c5758377e1f692c00e06d745c59fd357f7dd568e5fa0070714256"
+				}
+			],
+			"curatedManifestFilesChecked": 37,
+			"exportsDecoded": 30,
+			"palettePixelsVerified": 3,
+			"referencesHashVerified": 0,
+			"opaqueSourceRgbPreservation": {
+				"fullyOpaquePixels": 238350,
+				"changedPixels": 0,
+				"scale": 1,
+				"nativeOffset": [0, 0]
+			},
+			"roundedOutline": {
+				"minimumClearanceNativePixels": 108.75000000000001,
+				"clippedPixels": 0
+			}
+		},
+		{
+			"project": "octo",
+			"study": "2026-10-18-07",
+			"finishing": "02",
+			"localStatus": "local-adopted",
+			"nativeSize": 2048,
+			"nativeFormat": "PNG",
+			"generator": "Azure gpt-image-2.5-sunburst",
+			"model": "gpt-image-2.5-sunburst",
+			"upscaledExports": [],
+			"raw": {
+				"path": "public/logos/family/octo/2026-10-18-07/02/raw.png",
+				"bytes": 1950226,
+				"sha256": "45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7"
+			},
+			"masters": [
+				{
+					"path": "public/logos/family/octo/2026-10-18-07/02/transparent.png",
+					"bytes": 2203787,
+					"sha256": "99dd018d5be648af52f777a24eaac5dc627b8d17ff704f8ac2c5f1abc0fba3ad"
+				},
+				{
+					"path": "public/logos/family/octo/2026-10-18-07/02/icon.png",
+					"bytes": 3589415,
+					"sha256": "c2df57865a5a16373a2aacc56ee228facc4f6d3b172cf66a224d0289ee9ec880"
+				},
+				{
+					"path": "public/logos/family/octo/2026-10-18-07/02/rounded.png",
+					"bytes": 3511693,
+					"sha256": "7053765748bfcda10390f3407eadfa5766728705a03c64587c38494f718b5aa7"
+				},
+				{
+					"path": "public/logos/family/octo/2026-10-18-07/02/white.png",
+					"bytes": 2062405,
+					"sha256": "4d2719eae8bc219b0020188a4ad3d2e29e945a8a5a08b69e618998c6b390943f"
+				}
+			],
+			"curatedManifestFilesChecked": 37,
+			"exportsDecoded": 30,
+			"palettePixelsVerified": 4,
+			"referencesHashVerified": 2,
+			"opaqueSourceRgbPreservation": {
+				"fullyOpaquePixels": 1874155,
+				"changedPixels": 0,
+				"scale": 1,
+				"nativeOffset": [96, 0]
+			},
+			"roundedOutline": {
+				"headClearance": 108.5,
+				"sideFinClearance": 35.14952843632847,
+				"clippedFeaturePixels": 0,
+				"intentionalBottomNeckBoundaryIntersections": 841,
+				"priorPass01ClippedFinPixels": 1303
+			}
+		}
+	],
+	"scopedLint": {
+		"command": "biome check --error-on-warnings <seven HTML files and verification JSON>",
+		"status": "passed"
+	},
+	"whitespaceCheck": {
+		"command": "git diff --check",
+		"status": "passed"
+	},
+	"commitGate": {
+		"status": "passed-preflight-before-normal-commit-retry",
+		"command": "bun run gate:commit",
+		"hook": "bun scripts/gates.ts commit",
+		"stagedLint": "passed",
+		"trackedMaterialGuard": "passed",
+		"changedTests": {
+			"passed": 403,
+			"failed": 0,
+			"files": 32,
+			"failures": []
+		},
+		"initialAttempt": "Normal commit was blocked by five concurrent catalogue/identity test failures. The controller repaired its owned paths without staging; the complete unchanged commit gate then passed before retry.",
+		"bypass": "not-performed",
+		"scope": "No failed-test or controller-owned paths modified by static-review worker."
+	}
+}
