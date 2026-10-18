@@ -1,8 +1,8 @@
 {
-	"status": "pending",
+	"status": "rejected",
 	"imageSha256": "971962c9f40e7f84f2642b52de2c157bb8dfa6ce7e4fdff28a6acc3b9e9f8450",
 	"recordedAt": "2026-10-18T01:09:47.762367+00:00",
-	"ownerReviewedExactBytes": false,
+	"ownerReviewedExactBytes": true,
 	"agentInspection": {
 		"method": "Inspected native tool output",
 		"observations": [
@@ -10,5 +10,8 @@
 		],
 		"processingPerformed": false
 	},
-	"nextStep": "Owner reviews exact native image before any finishing or integration."
+	"nextStep": "Generate the minimal text-only seahorse head study 06.",
+	"decisionSource": "owner",
+	"decidedAt": "2026-10-18T01:14:23.644394+00:00",
+	"ownerFeedback": "The results are increasingly off track. Stop overloading the image prompt; keep only the subject, blue, cute, off-center and ethereal. The following instruction changes the subject to a seahorse head portrait."
 }
