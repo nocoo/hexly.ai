@@ -475,3 +475,14 @@ and never claim a requested native size or model unless the response proves it.
 The initial Hexly output also baked black rounded corners into an opaque JPEG;
 those pixels were not transparency. A separately archived image-edit request
 removed the corners after the owner retained the ceramic direction.
+
+## 2026-10-18 - Learn portrait composition from the named reference
+
+Octo study 04 placed a complete jellyfish diagonally within the square. The owner
+rejected it and named Noheir as the composition reference. An offset complete
+silhouette is not the same as Noheir's intimate edge-entry portrait: the head
+dominates while connected lower anatomy continues outside the viewfinder and
+leaves directional negative space. Inspect the named adopted image before the
+next request, explain that distinction, and submit it directly as the composition
+reference. Do not keep passing rejected anatomy or competing references into
+later attempts. Study 05 records this correction without presuming acceptance.
