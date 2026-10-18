@@ -1,0 +1,52 @@
+{
+	"project": "base-mcp",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"sourceRecord": "generation-source.json",
+	"background": {
+		"base": "#e2e8ee",
+		"light": "#f6f9fc",
+		"shade": "#ccd7e3",
+		"motif": "#8098af",
+		"grainAmplitude": 0.45,
+		"grainSeed": 20261021,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Coupling alignment witness arcs",
+			"description": "Cool assembly sheet with opposing coupling witness arcs and paired axial alignment ticks; the motif references joining transports without a copied circuit stencil.",
+			"layers": [
+				{
+					"d": "M74 264A176 176 0 0 1 285 70M96 270A154 154 0 0 1 279 93 M943 737A169 169 0 0 1 745 950M921 737A147 147 0 0 1 746 928 M763 103l54 25m-47 -40l54 25 M154 865l45 20m-22 -33l-15 37",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				}
+			]
+		}
+	},
+	"matte": {
+		"foregroundMask": {
+			"path": "foreground-mask.svg",
+			"sha256": "3f18c7b267937ea3deaee11c13f9510f5b2116d12e619eed24a18398bf48f3d7",
+			"description": "Inspected native contour separates the material object from baked exterior shadow; even-odd subpaths remove only physical background holes."
+		}
+	},
+	"shadows": [
+		{
+			"color": [50, 46, 40],
+			"opacity": 0.16,
+			"blurAt2048": 42,
+			"offsetAt2048": [0, 24]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [2048],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Native whole-object composition retained; no geometry or RGB resampling in the 1024 transparent master."
+	}
+}
