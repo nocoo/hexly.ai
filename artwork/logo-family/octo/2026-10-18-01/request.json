@@ -1,0 +1,19 @@
+{
+	"tool": "image_gen.imagegen",
+	"model": null,
+	"requestedSize": "2048x2048 via prompt only",
+	"transparent_background": false,
+	"prompt": "Create a distinctive OCTOPUS HEAD CLOSE-UP identity for Octo, a private API-first memory and knowledge-base product. Strongly off-center composition with generous negative space. Keep the octopus unmistakable, with a head-led silhouette and naturally flowing visible arm gestures. Playful multicolor and connected irregular FLAT polygon fragments with crisp shared edges, following reference 1 only for its fragmented drawing language, not its species or accessories. Reference 2 is HOOKY, an existing different product: it is a NEGATIVE identity comparison, NOT a design to copy. Octo must have a completely different silhouette, pose, facial character and color family: avoid Hooky's pastel pink/lavender, frontal chibi smile, big baby eyes and symmetrical radial curled-arm starburst. Let the model choose a distinctive non-pink palette, angle and gesture. No external accessory is required. One high-resolution 2048 x 2048 illustration on uniform white, without text, tile, cast shadows, smooth 3D shading or watermark.",
+	"references": [
+		{
+			"role": "flat fragmented drawing reference",
+			"path": "artwork/logo-family/frogie/2026-09-06-01/finishing/02/exports/frogie-icon-2048.png",
+			"sha256": "977a64101410e2aa217e1d74256728e019949d5ee725ec22a04e8469e930628e"
+		},
+		{
+			"role": "negative identity comparison, do not copy",
+			"path": "public/logos/originals/hooky.png",
+			"sha256": "7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62"
+		}
+	]
+}

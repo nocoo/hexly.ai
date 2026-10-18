@@ -1,0 +1,18 @@
+{
+	"status": "pending",
+	"imageSha256": "bc93016375d57b70f67c160d5dd47b1e6b6fe0b3c7cfe03ed583258d64ebd80d",
+	"recordedAt": "2026-10-17T21:36:11.089706+00:00",
+	"ownerReviewedExactBytes": false,
+	"agentInspection": {
+		"method": "Inspected native tool output",
+		"observations": [
+			"Material is convincing, but the model added a middle pair of triangles and baked black corners into the JPEG. Official four-triangle geometry is not preserved. Not recommended for adoption. Native output is 1024x1024 JPEG."
+		],
+		"processingPerformed": false
+	},
+	"nextStep": "Retain this diagnostic output; review the next study.",
+	"ownerStyleFeedback": {
+		"text": "Owner said the styles were fine; requested only a Hexly background correction.",
+		"exactByteApprovalClaimed": false
+	}
+}
