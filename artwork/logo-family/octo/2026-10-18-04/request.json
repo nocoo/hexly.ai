@@ -1,0 +1,19 @@
+{
+	"tool": "image_gen.imagegen",
+	"model": null,
+	"requestedSize": "2048x2048 via prompt only",
+	"transparent_background": false,
+	"prompt": "A distinctive cute BLUE JELLYFISH HEAD CLOSE-UP for Octo, with a friendly expressive face and a recognizable bell with graceful trailing tentacles. Strongly off-center composition: the large expressive bell enters the viewfinder, balanced by generous negative space. Blue is the dominant color, with delightful vivid MULTICOLORED highlights integrated into the jellyfish. Richly fragmented drawing made of connected irregular flat polygon facets with crisp shared edges across the bell and tentacles. Let the model choose the angle, gesture, expression and accent colors; the bell carries the identity.\n\nReference 1 guides the head-led asymmetry, expressive character and continuous fine faceting. Reference 2 guides the playful character and concentrated multicolored accent within a dominant main palette. These are drawing-language references only: do not transfer their species or anatomy. Create a fresh jellyfish, not an edit of either reference. One high-resolution 2048 x 2048 square illustration on uniform opaque white, without text, a background tile, cast shadows or smooth 3D rendering.",
+	"references": [
+		{
+			"role": "Head-led asymmetric close-up and continuous fragmented drawing",
+			"path": "artwork/logo-family/falcon/2026-09-25-03/raw/generated.png",
+			"sha256": "2d4fd9e0f5abffc0dcebcd2e4880f685897ffc5137304b6d579f282faf110ca7"
+		},
+		{
+			"role": "Playful expression and local multicolored highlight",
+			"path": "artwork/logo-family/pew/2026-09-06-01/raw/generated-white.png",
+			"sha256": "efa6aff9f478cb56ac3bcb390dc935aa6a6f7b9f56b5e98c7df4a1ea11a2746b"
+		}
+	]
+}
