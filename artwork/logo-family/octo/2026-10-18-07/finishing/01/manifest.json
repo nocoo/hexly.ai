@@ -1,0 +1,355 @@
+{
+	"createdAt": "2026-10-18T06:46:51.497Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "45a116b928a55c88463f205f76cdbc0a541baedb1e87e2f8fdf2128607ebb0e7",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "octo",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"background": {
+			"base": "#b9d2cc",
+			"light": "#e4eeDF",
+			"shade": "#88aca6",
+			"motif": "#4e827b",
+			"grainAmplitude": 0.7,
+			"grainSeed": 61018007,
+			"motifOpacity": 0.15,
+			"highlightOpacity": 0.27,
+			"ribbonOpacity": 0.13,
+			"pattern": {
+				"name": "Sheltered seagrass meadow",
+				"description": "Sparse swaying eelgrass blades at the upper-right and lower-right canvas edges; quiet habitat marks behind the approved seahorse, not an underwater illustration.",
+				"layers": [
+					{
+						"d": "M783 -25Q717 100 749 242Q773 342 731 412 M852 -30Q772 151 801 303 M932 684Q857 798 882 1045 M1028 737Q927 844 948 1048",
+						"tone": "motif",
+						"strokeWidth": 2.4
+					},
+					{
+						"d": "M742 225Q671 152 710 65Q706 159 742 225 M780 183Q816 99 809 43Q844 118 780 183 M883 897Q824 825 846 750Q854 836 883 897 M947 955Q984 871 1017 846Q1002 920 947 955",
+						"tone": "ribbon"
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					41,
+					76,
+					83
+				],
+				"opacity": 0.13,
+				"blurAt2048": 28,
+				"offsetAt2048": [
+					10,
+					24
+				]
+			},
+			{
+				"color": [
+					26,
+					54,
+					68
+				],
+				"opacity": 0.1,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					7
+				]
+			}
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"bottom"
+			],
+			"note": "Preserve the exact approved off-center portrait and intentional lower neck entry. No rescaling, recentering, continuation or contour repair. Inspect crown, eyes, snout and complete side fin separately against the rounded outline."
+		},
+		"matte": {
+			"minimumChannel": 239,
+			"maximumChroma": 16,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Exterior background samples range from RGB 250,252,252 to 252,251,253. Use border-connected extraction only, preserving enclosed eye highlights and chromatic pale mint/cream facets. No connected-component deletion."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2307506,
+		"foregroundPixels": 1886798,
+		"softEdgePixels": 12643,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 29,
+			"top": 128,
+			"right": 1843,
+			"bottom": 2047
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 29,
+			"top": 128,
+			"right": 1843,
+			"bottom": 2047
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -55.60889936275379,
+		"clippedPixels": 4971
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2122,
+			"sha256": "2ca34af8d0dfa67076c42cf707f569dea3ef06aa748ee12d113aa2297ed27837"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 1705,
+			"sha256": "9dc9db980bb2cc51f795b02aa8e475844d79b3ba8f666750b4d684e7a7ed8030"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2203592,
+			"sha256": "25103a3320e01953dee7fde1eae237b97d581f200f63c12713ed8612bbefecc6"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 70015,
+			"sha256": "986fc5237551ed4cffc2270aec2bc551b17c91df46c5a88f19cbeb762d729cab"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 809,
+			"sha256": "2c1870873f074a50fc98e80e356596fb147cf66c227f21c0120b4dbc5c2c819b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1808207,
+			"sha256": "68bc28609839c0ff272c2c44a31fa05efe5e6fa5ba2cbab529bdd30c6a2aed8e"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 227359,
+			"sha256": "70a37f85bd74ea63cd63656544579c786c93e662fa38f80e9c1f77e030d8477c"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 166935,
+			"sha256": "f1ff5be5dd33e3744193ceb65c682037a16f4d39a15b3f4af33f5b3867ab2f5f"
+		},
+		{
+			"path": "exports/octo-transparent-2048.png",
+			"bytes": 2203592,
+			"sha256": "25103a3320e01953dee7fde1eae237b97d581f200f63c12713ed8612bbefecc6"
+		},
+		{
+			"path": "exports/octo-icon-2048.png",
+			"bytes": 3600399,
+			"sha256": "6582548f01102dae3d467365b1b0b164eb9d6875367ccdb4844a3d300dba1ec6"
+		},
+		{
+			"path": "exports/octo-rounded-2048.png",
+			"bytes": 3506735,
+			"sha256": "1ad55cfba264a8a3f919c5813919b4e1d61bf65513c5aab8f668c9567d99f23c"
+		},
+		{
+			"path": "exports/octo-transparent-1024.png",
+			"bytes": 782612,
+			"sha256": "cfa7a67123c013a618d9d637e0da1d2dcef0b221c4117bdddc1b7b55e8b272b2"
+		},
+		{
+			"path": "exports/octo-icon-1024.png",
+			"bytes": 1058628,
+			"sha256": "89bd071050f99c0f07bc9f78c76fc2656c380064b43a11fcb394c38dc22d606c"
+		},
+		{
+			"path": "exports/octo-rounded-1024.png",
+			"bytes": 1051902,
+			"sha256": "3b6d26a41fa53adf8957daa22ca57242b4ab14db82273997cf0a602eae52064d"
+		},
+		{
+			"path": "exports/octo-transparent-512.png",
+			"bytes": 276376,
+			"sha256": "b4481419d213e04aecf3904240a2ad2ce6048b253cc8d0be6e0cb3fc0c77b775"
+		},
+		{
+			"path": "exports/octo-icon-512.png",
+			"bytes": 380737,
+			"sha256": "7602844d158f7295fc074142db4896a322c26dd9dbfbe8addbcf9345155dde06"
+		},
+		{
+			"path": "exports/octo-rounded-512.png",
+			"bytes": 379163,
+			"sha256": "30074a3a2ced4bae3d445fdc8e1cd234c6ce1844779ce37ff2401c1af54ce8ec"
+		},
+		{
+			"path": "exports/octo-transparent-256.png",
+			"bytes": 91959,
+			"sha256": "8f395b67a9098391917d8c12f758500147c473a898dd02c7a304a41cb61deb30"
+		},
+		{
+			"path": "exports/octo-icon-256.png",
+			"bytes": 108438,
+			"sha256": "fbda3a0f75c2955c43f162de81a08da7820a76bab7ce97e7a1bc81c6afe858b1"
+		},
+		{
+			"path": "exports/octo-rounded-256.png",
+			"bytes": 110434,
+			"sha256": "90c3ca28930a67152245d1ae9ad368e4779ad05a6c613b141bf0737aceb35197"
+		},
+		{
+			"path": "exports/octo-transparent-128.png",
+			"bytes": 27718,
+			"sha256": "d376484f7a8923f362743c3b5b7fc399d0c60f3cdc1c180792bc1b04cf84a938"
+		},
+		{
+			"path": "exports/octo-icon-128.png",
+			"bytes": 33667,
+			"sha256": "9aea20f8af7cf1ae7e54b930e198c2ae95575af096070da30ebb3554cc765980"
+		},
+		{
+			"path": "exports/octo-rounded-128.png",
+			"bytes": 34715,
+			"sha256": "ec06c0386b3dffc44cdaa9a7b2441434d7dfcfa571501dfccd296e9d70a8f864"
+		},
+		{
+			"path": "exports/octo-transparent-64.png",
+			"bytes": 7917,
+			"sha256": "19ea32ec6284df539507b0bec21a4fbc4b1ea693bdd84e2c3ea2128438b0d633"
+		},
+		{
+			"path": "exports/octo-icon-64.png",
+			"bytes": 10101,
+			"sha256": "88f272a8abdf5727df9d9e65ea016e39479de9126a21bac58b4e9abe9d484ee1"
+		},
+		{
+			"path": "exports/octo-rounded-64.png",
+			"bytes": 10605,
+			"sha256": "c31a506d99da85df03898f7739aa15a6c8e27908681fcedb8a052ba90b5928cb"
+		},
+		{
+			"path": "exports/octo-transparent-48.png",
+			"bytes": 4818,
+			"sha256": "e1bd5875a0f7f5a00b760ed8dfd89879eb422030fd71eb4578415dcdd39fdcc0"
+		},
+		{
+			"path": "exports/octo-icon-48.png",
+			"bytes": 6098,
+			"sha256": "dc4cd346dbdb3d226ca35ee882a2a218e59fba307d3209db5b17b84d5cda3c52"
+		},
+		{
+			"path": "exports/octo-rounded-48.png",
+			"bytes": 6400,
+			"sha256": "ec563625be0a44b8cebb87b614f42205974c89d49622afde70444fc21f482aea"
+		},
+		{
+			"path": "exports/octo-transparent-32.png",
+			"bytes": 2440,
+			"sha256": "2166ab28893b2d7d554c29590f4fad5603768ae8e62086fa8679c229b97a1780"
+		},
+		{
+			"path": "exports/octo-icon-32.png",
+			"bytes": 3087,
+			"sha256": "6ab062149017426fb95a6f4dff032c483c237f0b188bb50ab74d0ae26e3b18fd"
+		},
+		{
+			"path": "exports/octo-rounded-32.png",
+			"bytes": 3248,
+			"sha256": "66c1ee31b16965ef341df9d8a043c38887d08454e8deae6656c96275ada2a07e"
+		},
+		{
+			"path": "exports/octo-transparent-24.png",
+			"bytes": 1546,
+			"sha256": "c36c9f5de910a738baea9eeb1108f225c29d1776ded0ad662d441e4e1acee81c"
+		},
+		{
+			"path": "exports/octo-icon-24.png",
+			"bytes": 1874,
+			"sha256": "af820a40e1e42dc933c3477da6f7993456120857a852bb372dd98d09b0030edf"
+		},
+		{
+			"path": "exports/octo-rounded-24.png",
+			"bytes": 1996,
+			"sha256": "ecd31e58a54a256a922df9fe7b33eda16dd39d903625fa3bae6b469a6101b948"
+		},
+		{
+			"path": "exports/octo-transparent-16.png",
+			"bytes": 851,
+			"sha256": "5ae5314ca216f6ec4f1ef718699ae2d3c5f121f55170ecb385296cbb542d8f68"
+		},
+		{
+			"path": "exports/octo-icon-16.png",
+			"bytes": 952,
+			"sha256": "5493c27c701fdbcbe8b3db378592ade3b47ab48a097fe128d54f26d5a7841a43"
+		},
+		{
+			"path": "exports/octo-rounded-16.png",
+			"bytes": 1002,
+			"sha256": "44fb095417a71e7a890914eb215359aff45d0fc234fb56c318f162068f3944fc"
+		},
+		{
+			"path": "exports/octo-white-2048.png",
+			"bytes": 2062311,
+			"sha256": "03e4b8f6f55e98ebf82bfa9f965c7099e77e05135840bdd863ebaee1e51d65db"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 738923,
+			"sha256": "1f8556e8344d3a46212c44c69d7af711ee06f405f15655268ff64c2554e60f11"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 745886,
+			"sha256": "fde168423ce22e7d82d1e61c33d81fd2b24c6ecffb5f20998bd39c29926d2a45"
+		}
+	]
+}
