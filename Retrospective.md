@@ -595,3 +595,22 @@ reduced-motion, per-figure captures supersede those framing screenshots. Whole
 sections larger than the application scrollport can still be clipped in element
 captures. Test scripts must control lazy loading, scrolling and capture bounds
 before claiming visual evidence.
+
+## 2026-10-19: Profile publication was omitted from the release preflight
+
+The v1.5.0 identity rollout verified source Logo revisions but did not verify
+the separate GitHub Profile revision used by six catalogue records. The local
+profile commit already contained the five new entries, yet it remained unpushed
+when the site was released. The subsequent README audit found the missing public
+entries and unresolved profile revision. It also found that the English README
+retained the old test sequence and Octo's repository description was not aligned
+with the profile and catalogue.
+
+After explicit authorization, pull each affected repository first, publish the
+existing profile commit without rewriting its identity, align the repository
+description and bring the English test instructions into parity. Verify the
+published profile bytes and each affected description against the catalogue.
+Future completion checks must include every referenced producer repository,
+including the profile, rather than treat source Logo publication as proof that
+the entire onboarding contract has been fulfilled. Compare bilingual commands
+when changing the documented verification entrypoint.
