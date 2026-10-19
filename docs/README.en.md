@@ -49,7 +49,7 @@ bun run lint
 bun run build
 ```
 
-Vite runs at `127.0.0.1:7048` and the local Worker at 37048; the Caddy URL is https://index.dev.hexly.ai. Daily development reads CDN assets without downloading historical galleries. Before brand changes, full integration/browser tests or offline previews, run `bun run assets:hydrate` to restore missing assets by hash without overwriting local changes.
+Vite runs at `127.0.0.1:7048` and the local Worker at 37048; the Caddy URL is https://index.dev.hexly.ai. Daily development reads CDN assets without downloading historical galleries. Before brand changes or offline previews of the complete historical archive, run `bun run assets:hydrate` to restore missing assets by hash without overwriting local changes.
 
 Local `/status` uses the real Worker API and SQLite with clearly labeled simulated data; it does not probe production websites. Project sources live in `src/data/projects/`; the browser-facing `/data/projects.json` is generated. `src/model/` holds pure logic, `worker/` owns routes/status/scheduled checks, and `packages/video-kit/` owns shared templates and rendering.
 
@@ -58,15 +58,11 @@ Video Kit uses actual logos, fonts and themes with independently selectable cove
 ## Tests
 
 ```sh
-bun run assets:hydrate
-bun run test:coverage
-bun run test:http
 bunx playwright install chromium
-bun run test:browser
-bun run video:check
+bun run verify
 ```
 
-Vitest covers models and logic; HTTP tests start a local Worker, while Playwright covers desktop/mobile flows, languages, themes and galleries. Install full Chromium; asset hydration supplies local files for complete tests. HTTP/browser suites use ports 17048 / 27048 and separate state directories without production credentials or live website probes. `video:check` validates template manifests, asset hashes and size limits.
+Vitest covers models and logic; HTTP tests start a local Worker, while Playwright covers desktop/mobile flows, languages, themes and galleries. Install full Chromium, OSV and Gitleaks; `verify` runs the same local and CI checks within a ten-minute budget, automatically prepares test assets and builds only once. HTTP/browser suites use ports 17048 / 27048 and separate state directories without production credentials or live website probes. `video:check` validates template manifests, asset hashes and size limits.
 
 ## Stack
 
