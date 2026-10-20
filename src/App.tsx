@@ -392,6 +392,10 @@ export function App() {
 					query={state.query}
 					searchRef={searchRef}
 					onQuery={(query) => change({ query })}
+					onProject={(id) => {
+						const project = projects.find((item) => item.id === id);
+						if (project) navigate(openProject(state, project));
+					}}
 				/>
 			) : state.view === "directory" || state.view === "logos" ? (
 				<Directory

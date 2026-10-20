@@ -271,6 +271,7 @@ export function StatusPage({
 	query,
 	searchRef,
 	onQuery,
+	onProject,
 }: {
 	projects: Project[];
 	locale: Locale;
@@ -279,6 +280,7 @@ export function StatusPage({
 	query: string;
 	searchRef: RefObject<HTMLInputElement | null>;
 	onQuery: (query: string) => void;
+	onProject: (id: string) => void;
 }) {
 	const t = statusCopy[locale];
 	const [snapshot, setSnapshot] = useState<StatusSnapshot | null>(null);
@@ -697,7 +699,22 @@ export function StatusPage({
 						<p>{t.coverageNote}</p>
 						<div>
 							{unmonitored.map((project) => (
-								<a key={project.id} href={`/projects/${project.id}`}>
+								<a
+									key={project.id}
+									href={`/projects/${project.id}`}
+									onClick={(event) => {
+										if (
+											event.button !== 0 ||
+											event.metaKey ||
+											event.ctrlKey ||
+											event.shiftKey ||
+											event.altKey
+										)
+											return;
+										event.preventDefault();
+										onProject(project.id);
+									}}
+								>
 									<Logo project={project} size={24} />
 									<span>{project.title}</span>
 									<Icon name="arrow" />
