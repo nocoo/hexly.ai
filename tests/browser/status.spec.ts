@@ -4,6 +4,112 @@ import { expect, test } from "./fixtures";
 
 const targets = statusTargets(readProjects());
 
+test("unmonitored projects preserve the header during clicks, Enter, and history", async ({
+	page,
+	baseURL,
+}) => {
+	await page.goto("/status");
+	const header = await page
+		.locator(".site-header")
+		.evaluateHandle((node) => node);
+	const documents: string[] = [];
+	page.on("request", (request) => {
+		if (
+			request.resourceType() === "document" &&
+			request.frame() === page.mainFrame()
+		)
+			documents.push(request.url());
+	});
+	for (const action of ["click", "Enter"] as const) {
+		await page.locator(".status-coverage summary").click();
+		const link = page.locator(".status-coverage a").first();
+		const href = await link.getAttribute("href");
+		expect(href).toMatch(/^\/projects\//);
+		if (action === "click") await link.click();
+		else await link.press("Enter");
+		await expect(page).toHaveURL(`${baseURL}${href}`);
+		await expect(page.locator("#identity-title")).toBeVisible();
+		expect(documents).toEqual([]);
+		expect(await header.evaluate((node) => node.isConnected)).toBe(true);
+		await page.goBack();
+		await expect(page).toHaveURL(`${baseURL}/status`);
+		await expect(page.locator("#status-title")).toHaveText("Service status.");
+		expect(await header.evaluate((node) => node.isConnected)).toBe(true);
+		expect(documents).toEqual([]);
+	}
+	await header.dispose();
+});
+
+test("unmonitored project links keep modified and middle clicks native", async ({
+	page,
+	context,
+	baseURL,
+}) => {
+	await page.goto("/status");
+	await page.locator(".status-coverage summary").click();
+	const link = page.locator(".status-coverage a").first();
+	const href = await link.getAttribute("href");
+	for (const action of ["modified", "middle"] as const) {
+		const opened = context.waitForEvent("page");
+		await link.click(
+			action === "modified"
+				? { modifiers: ["ControlOrMeta", "Shift"], noWaitAfter: true }
+				: { button: "middle", modifiers: ["Shift"], noWaitAfter: true },
+		);
+		const popup = await opened;
+		await popup.bringToFront();
+		await popup.waitForURL(`${baseURL}${href}`, {
+			waitUntil: "domcontentloaded",
+		});
+		await expect(popup.locator("#identity-title")).toBeVisible();
+		await expect(page).toHaveURL(`${baseURL}/status`);
+		await popup.close();
+		await page.bringToFront();
+	}
+});
+
+test("unmonitored projects leave the status origin for the catalogue", async ({
+	page,
+	context,
+	request,
+	baseURL,
+}) => {
+	expect(baseURL).toBe("http://127.0.0.1:27048");
+	await context.route("https://status.hexly.ai/**", async (route) => {
+		const url = new URL(route.request().url());
+		const response = await request.get(
+			`${baseURL}${url.pathname}${url.search}`,
+			{
+				headers: { Host: "status.hexly.ai" },
+				maxRedirects: 0,
+			},
+		);
+		if (response.status() !== 200) await route.abort();
+		expect(response.status()).toBe(200);
+		await route.fulfill({ response });
+	});
+	await context.route("https://hexly.ai/**", (route) =>
+		route.fulfill({
+			contentType: "text/html",
+			body: "<p>Local catalogue destination</p>",
+		}),
+	);
+	await page.goto("https://status.hexly.ai/");
+	await expect(page.locator("#status-title")).toHaveText("Service status.");
+	await page.locator(".status-coverage summary").click();
+	const link = page.locator(".status-coverage a").first();
+	const href = await link.getAttribute("href");
+	const redirect = await request.get(`${baseURL}${href}`, {
+		headers: { Host: "status.hexly.ai" },
+		maxRedirects: 0,
+	});
+	expect(redirect.status()).toBe(302);
+	expect(redirect.headers().location).toBe(`https://hexly.ai${href}`);
+	await link.click();
+	await expect(page).toHaveURL(`https://hexly.ai${href}`);
+	await expect(page.getByText("Local catalogue destination")).toBeVisible();
+});
+
 test.beforeEach(async ({ page, request }) => {
 	const snapshot: StatusSnapshot = await (
 		await request.get("/api/status")

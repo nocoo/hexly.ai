@@ -614,3 +614,15 @@ Future completion checks must include every referenced producer repository,
 including the profile, rather than treat source Logo publication as proof that
 the entire onboarding contract has been fulfilled. Compare bilingual commands
 when changing the documented verification entrypoint.
+
+## 2026-10-21: A browser redirect escaped a local status fixture
+
+The status-navigation regression proxied the status hostname to the isolated
+local Worker and separately intercepted the catalogue hostname. Replaying a
+local 302 in Chromium still fetched the public catalogue page: Playwright routes
+intercept the first request in a redirect chain, not each redirect destination.
+The trace confirmed one unintended public-page read and no data writes. The
+fixture now aborts any non-200 proxy response before fulfilling it. Redirect
+semantics are checked through loopback HTTP with redirects disabled, while the
+application's direct cross-origin navigation receives a local HTML fixture.
+Never replay redirects from an isolated fixture to an external hostname.
