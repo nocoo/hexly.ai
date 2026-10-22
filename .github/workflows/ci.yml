@@ -31,7 +31,7 @@ jobs:
         with:
           package-manager: bun
           runtime-version: "1.4.0"
-          node-version: "26.7.0"
+          node-version: "26.12.1"
           install-policy: project
       - uses: nocoo/base-ci/.github/actions/setup-security-scanners@ac635753a869cb85fad1f52aae4ccbd6119f3cae # main 2026-10-22
       - name: Install Chromium
