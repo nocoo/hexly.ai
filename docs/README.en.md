@@ -34,7 +34,7 @@ Open **[hexly.ai](https://hexly.ai)** without installation or login. Browse cate
 
 ## Development
 
-Requires Bun 1.4.0 and Node.js 24 or later; CI uses Node.js 26.7.0.
+Requires Bun 1.4.0 and Node.js 24 or later; CI uses Node.js 26.12.1.
 
 ```sh
 git clone https://github.com/nocoo/hexly.ai.git
