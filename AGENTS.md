@@ -32,7 +32,7 @@ This file is the contract; hooks, CI and configuration enforce it. Raise weaker 
 
 | Component | Choice |
 |---|---|
-| Runtime / install | React 19, Vite 8, TypeScript 7 strict; Bun ≥1.4.0 with frozen lock, Node ≥24; browser/deploy CI Node 26.7.0 |
+| Runtime / install | React 19, Vite 8, TypeScript 7 strict; Bun ≥1.4.0 with frozen lock, Node ≥24; browser/deploy CI Node 26.12.1 |
 | Hosting / state | Worker `hexly-ai`, Static Assets, Cron, D1 `hexly-status` via `STATUS_DB` |
 | Static / tests | Biome, Vitest, real Workers HTTP and full Chromium browser journeys, OSV/Gitleaks |
 | `src/{data,model,components,styles}/` | Catalogue, domain logic, accessible views and tokens |
@@ -82,7 +82,7 @@ bun run video:check
 | pre-commit | Tracked-material guard, staged lint and changed unit tests in parallel; doc-only changes can select no tests | Unified L1 (coverage plus static lanes) on the index snapshot, <30s |
 | pre-push | L2 HTTP and G2 in parallel against working-tree files/history | Validate commits named by stdin push refs, <3min |
 
-Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI uses pinned shared setup actions and a single 10-minute verification job; immutable fixture caching never bypasses byte checks, manual CI also verifies the deployed SHA at both origins without deploying, and automatic Release accepts only main push CI; deployment pins the shared workflow at `8816553dc9f4544d1e8486bacb5cce630a9f14cb`. Scope, browser clocks, unmodified project-local CLI and failure evidence: [quality guide](docs/03-quality.md).
+Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI uses pinned shared setup actions and a single 10-minute verification job; immutable fixture caching never bypasses byte checks, manual CI also verifies the deployed SHA at both origins without deploying, and automatic Release accepts only main push CI; deployment pins the shared workflow at `ac635753a869cb85fad1f52aae4ccbd6119f3cae`. Scope, browser clocks, unmodified project-local CLI and failure evidence: [quality guide](docs/03-quality.md).
 
 ## Resources / Isolation
 

@@ -42,7 +42,7 @@ requires for account/zone discovery. The existing CD token already has D1 access
 Keep token values in GitHub Secrets; local interactive Wrangler authentication
 is independent. Apply migrations before deploying Worker code that uses them.
 
-The CI workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. Manual CI also reads both production origins and requires the exact run revision; it never deploys. The separate release workflow is triggered by successful trusted `main` push CI, or manually with an explicit successful push source run ID. Source verification requires the complete CI workflow to succeed. Browser testing and deployment pin Node.js 26.7.0. Deployment checks out the verified source SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the credential check and Wrangler migration/deployment steps. Production verification reads both public origins and checks the proven revision.
+The CI workflow runs on pull requests, `main` pushes, and manual dispatch. Tests receive no deployment credentials. Manual CI also reads both production origins and requires the exact run revision; it never deploys. The separate release workflow is triggered by successful trusted `main` push CI, or manually with an explicit successful push source run ID. Source verification requires the complete CI workflow to succeed. Browser testing and deployment pin Node.js 26.12.1. Deployment checks out the verified source SHA, uses locked dependencies, serializes production deployments, and rejects a revision superseded on `main` before deploying. Credentials are scoped to the credential check and Wrangler migration/deployment steps. Production verification reads both public origins and checks the proven revision.
 
 The local release helper matches deployment by source CI run ID, Git SHA and
 `workflow_run` event. It does not treat CI completion, an unrelated manual deploy,
@@ -51,7 +51,7 @@ or a skipped deployment as publication. GitHub Release notes link both runs.
 After publication, inspect the actual remote workflow and public metadata. A successful local build or accepted upload alone is not release completion.
 
 The shared deployment workflow is pinned at
-`8816553dc9f4544d1e8486bacb5cce630a9f14cb`. It delegates publication to
+`ac635753a869cb85fad1f52aae4ccbd6119f3cae`. It delegates publication to
 `bun run deploy:worker`, using the project's frozen CLI resolution rather than a
 second exact-version input. The script applies D1 migrations before deploying;
 the shared workflow retains source-run, main-freshness and credential boundaries.
