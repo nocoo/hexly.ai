@@ -27,13 +27,13 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - uses: nocoo/base-ci/.github/actions/setup-js@0394178ebcff0418c442d84a84119220f31f8987 # v2026.9
+      - uses: nocoo/base-ci/.github/actions/setup-js@ac635753a869cb85fad1f52aae4ccbd6119f3cae # main 2026-10-22
         with:
           package-manager: bun
           runtime-version: "1.4.0"
-          node-version: "26.7.0"
+          node-version: "26.12.1"
           install-policy: project
-      - uses: nocoo/base-ci/.github/actions/setup-security-scanners@0394178ebcff0418c442d84a84119220f31f8987 # v2026.9
+      - uses: nocoo/base-ci/.github/actions/setup-security-scanners@ac635753a869cb85fad1f52aae4ccbd6119f3cae # main 2026-10-22
       - name: Install Chromium
         run: bun x playwright install --with-deps chromium
       - name: Cache verified fixture objects

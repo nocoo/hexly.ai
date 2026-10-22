@@ -81,7 +81,7 @@ passed in 177.0 seconds on macOS with Bun 1.4.0 and Node 26.9.0: 450 unit tests,
 scanned all 389 then-reachable commits without leaks. Typecheck, lint, isolation,
 fixture/current-asset checks, Video Kit validation, build and deployment dry run
 all passed. `actionlint` validated both workflows. These local measurements do
-not count toward the online ten-run requirement; hosted CI pins Node 26.7.0.
+not count toward the online ten-run requirement; hosted CI pins Node 26.12.1.
 
 ## Acceptance protocol
 

@@ -34,7 +34,7 @@ hexly.ai 是个人项目导航站，也是项目视觉身份的档案库。从 [
 
 ## 开发
 
-需要 Bun 1.4.0 与 Node.js 24 以上；CI 使用 Node.js 26.7.0。
+需要 Bun 1.4.0 与 Node.js 24 以上；CI 使用 Node.js 26.12.1。
 
 ```sh
 git clone https://github.com/nocoo/hexly.ai.git
