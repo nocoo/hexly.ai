@@ -5,7 +5,7 @@
 - Repository: [nocoo/diorama-journey](https://github.com/nocoo/diorama-journey)
 - Website: Installable skill; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: skills
+- Category: extensions
 - Archived repository: No; [repository status evidence](../../docs/sources/diorama-journey-brand-2026-09-17.json)
 - English: Miniature 3D storytelling with narration, chapter clips and slides
 - Chinese: 通过微缩 3D 场景讲故事，生成配音、分章视频与幻灯片

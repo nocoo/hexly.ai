@@ -5,7 +5,7 @@
 - Repository: [nocoo/feedmaid](https://github.com/nocoo/feedmaid)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: tools
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Collect user feedback and explore it through a web interface.
 - Chinese: 收集用户反馈，并在网页中查看和整理。

@@ -5,7 +5,7 @@
 - Repository: [nocoo/base-mcp](https://github.com/nocoo/base-mcp)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: tools
+- Category: libs
 - Archived repository: No; [repository status evidence](../../docs/sources/base-mcp-2026-10-18.json)
 - English: MCP Server development framework with OAuth 2.1 and Streamable HTTP
 - Chinese: 为 MCP 服务提供实体工具、OAuth 2.1 与 Streamable HTTP 集成

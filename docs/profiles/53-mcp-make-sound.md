@@ -3,7 +3,7 @@
 ## Profile
 
 - Repository: [nocoo/mcp-make-sound](https://github.com/nocoo/mcp-make-sound)
-- Website: No current website verified; navigation opens the repository.
+- Website: Installable skill; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: extensions
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)

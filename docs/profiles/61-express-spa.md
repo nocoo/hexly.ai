@@ -5,7 +5,7 @@
 - Repository: [nocoo/express-spa](https://github.com/nocoo/express-spa)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: tools
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: An early exploration of single-page applications built on Express.js.
 - Chinese: 基于 Express.js 构建单页应用的一次早期探索。

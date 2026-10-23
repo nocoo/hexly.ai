@@ -5,7 +5,7 @@
 - Repository: [nocoo/doc-doctor.com](https://github.com/nocoo/doc-doctor.com)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: everyday
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A platform for study-abroad writing, editing, and translation services.
 - Chinese: 为留学文书提供写作、润色与翻译服务的平台。

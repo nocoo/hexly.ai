@@ -5,7 +5,7 @@
 - Repository: [nocoo/falcon](https://github.com/nocoo/falcon)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: tools
+- Category: ai
 - Archived repository: No; [repository status evidence](../../docs/sources/falcon-2026-09-25-publication.json)
 - English: Native macOS Jev proxy and decision observability, in development
 - Chinese: 开发中的 macOS 原生 Jev 代理与决策观察应用
@@ -116,7 +116,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥78px wide; lockup ≥160px.
 - Refined subject: Multicolored fragmented peregrine falcon head entering from the left
 - Site path: `/projects/falcon#brand`; [local gallery](https://index.dev.hexly.ai/projects/falcon#brand)
 - [Static review HTML](../../artwork/logo-family/falcon/2026-09-25-03/review.html)
-- [Full process archive](artwork/logo-family/falcon/2026-09-25-03)
+- [Full process archive](../../artwork/logo-family/falcon/2026-09-25-03)
 - [Transparent foreground](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/transparent.png); SHA-256: `f3fedf54cd8415a607d41727c9126c4eddb282c8c1dc11abab44c2d51ab9af68`
 - [Square icon](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/icon.png), [rounded icon](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/rounded.png), [white version](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/raw.png), [exact prompt](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/falcon/2026-09-25-03/02/manifest.json)

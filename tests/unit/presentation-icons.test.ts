@@ -13,8 +13,20 @@ describe("approved textured icon delivery", () => {
 	it("covers every active project while keeping archived identities separate", () => {
 		const inventory = readInventory();
 		for (const project of projects) {
-			if (project.archived && !project.presentationIcon) {
+			if (!project.presentationIcon && project.archived) continue;
+			if (!project.family) {
 				expect(project.presentationIcon).toBeUndefined();
+				if (project.archived) continue;
+				const api = projectApi(project);
+				for (const url of [api.icons.small, api.icons.large])
+					expect(
+						inventory.files.some(
+							(file) => `https://h.no.mt/${file.key}` === url,
+						),
+					).toBe(true);
+				expect(api.logos.find((logo) => logo.id === "original")?.role).toBe(
+					"project-identity",
+				);
 				continue;
 			}
 			expect(project.presentationIcon?.width).toBe(

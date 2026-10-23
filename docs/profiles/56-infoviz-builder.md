@@ -5,7 +5,7 @@
 - Repository: [nocoo/infoviz-builder](https://github.com/nocoo/infoviz-builder)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: design
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A visual workspace for building InfoViz charts.
 - Chinese: 通过可视化操作制作 InfoViz 图表的工作空间。

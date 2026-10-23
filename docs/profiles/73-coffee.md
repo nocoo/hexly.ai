@@ -5,7 +5,7 @@
 - Repository: [nocoo/coffee](https://github.com/nocoo/coffee)
 - Website: [https://coffee.hexly.ai](https://coffee.hexly.ai)
 - Website evidence: Repository homepage, README.md and wrangler.jsonc at a6f179b1f530b1511e276eae6d3989a43c08a833; HTTPS returned 200 on 2026-09-11
-- Category: tools
+- Category: everyday
 - Archived repository: No; [repository status evidence](../../docs/sources/coffee-2026-09-11.json)
 - English: Bilingual coffee flavor wheel, origin atlas, brewing lab and tasting journal
 - Chinese: 双语咖啡风味轮、产地地图、冲煮实验室与本地品鉴手记

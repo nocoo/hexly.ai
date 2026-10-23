@@ -3,7 +3,7 @@
 ## Profile
 
 - Repository: [nocoo/microsoft-teams-send-as-workflow](https://github.com/nocoo/microsoft-teams-send-as-workflow)
-- Website: No current website verified; navigation opens the repository.
+- Website: Installable skill; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: extensions
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)

@@ -118,7 +118,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥39px wide; lockup ≥160px.
 - Study `2026-09-20-01`, finishing `01`
 - Site path: `/projects/rio#brand`; [local gallery](https://index.dev.hexly.ai/projects/rio#brand)
 - [Static review HTML](../../artwork/logo-family/rio/2026-09-20-01/review.html)
-- [Full process archive](artwork/logo-family/rio/2026-09-20-01)
+- [Full process archive](../../artwork/logo-family/rio/2026-09-20-01)
 - [Transparent foreground](https://h.no.mt/logos/family/rio/2026-09-20-01/01/transparent.png); SHA-256: `0834a5edcbb7a68bddee2d8e8dd67542ef4e5ea6c5ec4b8b9d0611b196aac55d`
 - [Square icon](https://h.no.mt/logos/family/rio/2026-09-20-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/rio/2026-09-20-01/01/rounded.png), [white version](https://h.no.mt/logos/family/rio/2026-09-20-01/01/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/rio/2026-09-20-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/rio/2026-09-20-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/rio/2026-09-20-01/01/manifest.json)

@@ -5,7 +5,7 @@
 - Repository: [nocoo/jsinst](https://github.com/nocoo/jsinst)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: tools
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: JavaScript instrumentation and performance analysis tools.
 - Chinese: 用于 JavaScript 代码插桩与性能分析的工具集。

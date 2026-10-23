@@ -5,7 +5,7 @@
 - Repository: [nocoo/infoviz](https://github.com/nocoo/infoviz)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: design
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A lightweight JavaScript library for beautiful, interactive data visualizations.
 - Chinese: 轻量的 JavaScript 数据可视化库，用来制作交互式图表。

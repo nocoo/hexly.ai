@@ -5,7 +5,7 @@
 - Repository: [nocoo/infoviz-ios](https://github.com/nocoo/infoviz-ios)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: design
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: InfoViz visualizations, brought to iOS.
 - Chinese: 把 InfoViz 数据可视化带到 iOS 上。

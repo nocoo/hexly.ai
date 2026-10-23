@@ -5,7 +5,7 @@
 - Repository: [nocoo/nodehub](https://github.com/nocoo/nodehub)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: tools
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A central place for running and organizing Node.js services.
 - Chinese: 集中运行与组织 Node.js 服务的工具。

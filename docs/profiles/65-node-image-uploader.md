@@ -5,7 +5,7 @@
 - Repository: [nocoo/node-image-uploader](https://github.com/nocoo/node-image-uploader)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: tools
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A small Node.js utility for uploading images.
 - Chinese: 一个用于上传图片的 Node.js 小工具。
