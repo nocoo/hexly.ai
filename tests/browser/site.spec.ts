@@ -205,6 +205,31 @@ test.describe("restores directory filters with browser back and reloads a shared
 	});
 });
 
+test("groups libraries and keeps archived items marked inside live categories", async ({
+	page,
+}) => {
+	await page.goto("/");
+	await page
+		.getByRole("button", { name: /^Libraries & Infrastructure/ })
+		.click();
+	await expect(page.locator(".project-card")).toHaveCount(
+		catalogue.filter((project) => project.category === "libs").length,
+	);
+	await expect(
+		page.locator('[data-project="base-ci"] .card-category'),
+	).toHaveText("Libraries & Infrastructure");
+	await page.getByRole("button", { name: /^AI & agents/ }).click();
+	await expect(page.locator('[data-project="pika"] .card-category')).toHaveText(
+		"AI & agents · Archived",
+	);
+	await expect(
+		page.locator('[data-project="frogie"] .card-category'),
+	).toHaveText("AI & agents");
+	await expect(
+		page.locator('[data-project="his-fm"] .card-category'),
+	).toHaveCount(0);
+});
+
 test("keeps archived projects accessible through their category and direct logo paths", async ({
 	page,
 }) => {
@@ -214,6 +239,12 @@ test("keeps archived projects accessible through their category and direct logo 
 	);
 	await page.getByRole("button", { name: /^Archived/ }).click();
 	await expect(page.locator(".project-card")).toHaveCount(archived.length);
+	await expect(
+		page.locator('[data-project="uptime-kuma-skill"] .card-category'),
+	).toHaveText("Skills & MCP · Archived");
+	await expect(
+		page.locator('[data-project="infoviz"] .card-category'),
+	).toHaveText("Design · Archived");
 	await page.locator('[data-project="uptime-kuma-skill"] .card-main').click();
 	await expect(page.locator("#identity-title")).toContainText(
 		"Uptime Kuma Skill",
