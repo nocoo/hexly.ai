@@ -6,7 +6,7 @@
 - Website: [https://pika.hexly.ai](https://pika.hexly.ai)
 - Website evidence: packages/web-worker/wrangler.toml routes
 - Category: ai
-- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Replay, search, and rediscover your AI coding conversations.
 - Chinese: 回放、搜索和重新发现 AI 编程会话，让过去的思路更容易找回来。
 - Profile section: Recent Projects
@@ -162,8 +162,6 @@ Large offset zigzag steps cut through a deeper olive-gold field. Their low tonal
 
 Small-size observation: The original 2048 px foreground and placement are retained exactly. Existing nearest rounded-outline clearance is 26.5 px with no clipped pixels. Fine facets and small sparks simplify at 16 px; app and browser marks use the transparent source.
 
-## Further refinements
+## Archive maintenance
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

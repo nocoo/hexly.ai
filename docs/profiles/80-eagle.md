@@ -114,7 +114,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥55px wide; lockup ≥160px.
 - Study `2026-09-19-01`, finishing `02`
 - Site path: `/projects/eagle#brand`; [local gallery](https://index.dev.hexly.ai/projects/eagle#brand)
 - [Static review HTML](../../artwork/logo-family/eagle/2026-09-19-01/review.html)
-- [Full process archive](artwork/logo-family/eagle/2026-09-19-01)
+- [Full process archive](../../artwork/logo-family/eagle/2026-09-19-01)
 - [Transparent foreground](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/transparent.png); SHA-256: `2dbda2e185133a9f708cbad1190c817d18ff5bb96aa1337f0a18edc9b5532e20`
 - [Square icon](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/rounded.png), [white version](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/eagle/2026-09-19-01/02/manifest.json)

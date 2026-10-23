@@ -1,0 +1,39 @@
+{
+	"repository": "https://github.com/nocoo/his.fm",
+	"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+	"date": "2026-10-23",
+	"sourcePublished": true,
+	"profilePublished": true,
+	"profileRevision": "c5c26acafab599bfe4b463798bd5033d5b35cad2",
+	"website": "https://his.fm",
+	"websiteEvidence": "README badge, site.webmanifest and cloudflare.config.ts custom domains; https://his.fm/api/live returned status ok at revision 927170df",
+	"files": [
+		{
+			"path": "README.md",
+			"archive": "docs/sources/intake-2026-10-23/his-fm/README.md.txt",
+			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+			"sha256": "1108850be3b8825d967c61d7acbfffb8510241f29eb599230e48f22e7e3c0343"
+		},
+		{
+			"path": "package.json",
+			"archive": "docs/sources/intake-2026-10-23/his-fm/package.json.txt",
+			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+			"sha256": "6b3251ec16ba08c8c168bd2d1935303185cfc0eb21988e9ebc02a2b1fb512f9a"
+		},
+		{
+			"path": "apps/web/src/brand/themes.ts",
+			"archive": "docs/sources/intake-2026-10-23/his-fm/apps-web-src-brand-themes.ts.txt",
+			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+			"sha256": "f7824635f7d5b8c554af1f6e462e79a26965f511756c08f844a30b37dae6be07"
+		},
+		{
+			"path": "apps/web/public/site.webmanifest",
+			"archive": "docs/sources/intake-2026-10-23/his-fm/apps-web-public-site.webmanifest.txt",
+			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+			"sha256": "3a417cf29ffb6e80f3c73545365541af854ee2f440f46e4049975e0281fd84dd"
+		}
+	],
+	"identity": "Existing application icon retained without generation or redraw",
+	"logoSha256": "e1fa78d21e83e59d77890c6e6bce41b5b70cbb12e9eee27548c8a8507f218b2d",
+	"identitySource": "apps/web/public/apple-touch-icon.png"
+}

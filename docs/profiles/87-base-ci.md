@@ -5,7 +5,7 @@
 - Repository: [nocoo/base-ci](https://github.com/nocoo/base-ci)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: tools
+- Category: libs
 - Archived repository: No; [repository status evidence](../../docs/sources/base-ci-2026-10-18.json)
 - English: Reusable GitHub Actions workflows for 6-dimension quality system
 - Chinese: 可复用的 GitHub Actions 质量检查与可追溯发布流程

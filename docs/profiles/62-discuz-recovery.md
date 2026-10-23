@@ -5,7 +5,7 @@
 - Repository: [nocoo/discuz-recovery](https://github.com/nocoo/discuz-recovery)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: tools
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Bring old Discuz! forum posts back from their backups.
 - Chinese: 从旧备份中找回 Discuz! 论坛的帖子。

@@ -83,7 +83,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Refined subject: Gray rhinoceros, orange horn
 - Site path: `/projects/rhino#brand`; [local gallery](https://index.dev.hexly.ai/projects/rhino#brand)
 - [Static review HTML](../../artwork/logo-family/rhino/2026-10-09-03/review.html)
-- [Full process archive](artwork/logo-family/rhino/2026-10-09-03)
+- [Full process archive](../../artwork/logo-family/rhino/2026-10-09-03)
 - [Transparent foreground](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/transparent.png); SHA-256: `d06b2ab605fc05981ddc236e0a705f2147dc0b2a96184eba2715df7c8336b26a`
 - [Square icon](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/icon.png), [rounded icon](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/rounded.png), [white version](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/raw.png), [exact prompt](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/rhino/2026-10-09-03/02/manifest.json)

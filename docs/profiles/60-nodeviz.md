@@ -5,7 +5,7 @@
 - Repository: [nocoo/nodeviz](https://github.com/nocoo/nodeviz)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: design
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A visualization toolkit for Node.js.
 - Chinese: 面向 Node.js 的可视化工具集。

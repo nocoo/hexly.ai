@@ -5,7 +5,7 @@
 - Repository: [nocoo/huran.cc](https://github.com/nocoo/huran.cc)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: archive
+- Category: everyday
 - Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: An art marketplace connecting artists, collectors, and the works they love.
 - Chinese: 连接艺术家与收藏者的艺术电商平台。

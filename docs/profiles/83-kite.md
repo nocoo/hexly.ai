@@ -116,7 +116,7 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥49px wide; lockup ≥160px.
 - Refined subject: Multicolored fragmented red kite head entering from the right
 - Site path: `/projects/kite#brand`; [local gallery](https://index.dev.hexly.ai/projects/kite#brand)
 - [Static review HTML](../../artwork/logo-family/kite/2026-09-25-02/review.html)
-- [Full process archive](artwork/logo-family/kite/2026-09-25-02)
+- [Full process archive](../../artwork/logo-family/kite/2026-09-25-02)
 - [Transparent foreground](https://h.no.mt/logos/family/kite/2026-09-25-02/03/transparent.png); SHA-256: `5e414e28dc102ee25dc7fa5ab51c1bd1ef20de1c318fdceeec5299d7a255d0d6`
 - [Square icon](https://h.no.mt/logos/family/kite/2026-09-25-02/03/icon.png), [rounded icon](https://h.no.mt/logos/family/kite/2026-09-25-02/03/rounded.png), [white version](https://h.no.mt/logos/family/kite/2026-09-25-02/03/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/kite/2026-09-25-02/03/raw.png), [exact prompt](https://h.no.mt/logos/family/kite/2026-09-25-02/03/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/kite/2026-09-25-02/03/manifest.json)

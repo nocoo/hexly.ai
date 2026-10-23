@@ -5,7 +5,7 @@
 - Repository: [nocoo/infospace](https://github.com/nocoo/infospace)
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
-- Category: tools
+- Category: libs
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Native SwiftUI workspace SDK with resizable grids and customizable information panels
 - Chinese: 原生 SwiftUI 工作区 SDK，支持可调整的网格和自定义信息面板

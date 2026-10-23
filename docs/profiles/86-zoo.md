@@ -5,7 +5,7 @@
 - Repository: [nocoo/zoo](https://github.com/nocoo/zoo)
 - Website: [https://zoo.hexly.ai](https://zoo.hexly.ai)
 - Website evidence: wrangler.jsonc custom_domain; docs/sources/zoo-2026-10-10.json
-- Category: tools
+- Category: everyday
 - Archived repository: No; [repository status evidence](../../docs/sources/zoo-2026-10-10.json)
 - English: Chinese picture learning for young children and parents
 - Chinese: 面向幼儿与家长的中文看图认知
@@ -87,7 +87,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - [Transparent foreground](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/transparent.png); SHA-256: `2cfb4d843d5979d84c823f96cf0fc832855b5a28a5a8ca37266b8d56c70ee92c`
 - [Square icon](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/icon.png), [rounded icon](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/rounded.png), [white version](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/white.png)
 - [Untouched generation](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/raw.png), [exact prompt](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/zoo/2026-10-10-01/01/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/zoo-initial-bear-dfd2c111647d.png), rasterized from [its immutable source](https://github.com/nocoo/zoo/blob/b22a5b477d88241dec3c3b927e955e48e614e19b/public/favicon.svg)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/zoo-initial-bear-dfd2c111647d.png), copied from [its immutable source](https://github.com/nocoo/zoo/blob/b22a5b477d88241dec3c3b927e955e48e614e19b/public/favicon.svg)
 - Previous SHA-256: `dfd2c111647d53da18d84b4f452b5315ed698a357a69dd27d6ab80a898d1b259`
 - Generation: gpt-image-2.5-sunburst, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.

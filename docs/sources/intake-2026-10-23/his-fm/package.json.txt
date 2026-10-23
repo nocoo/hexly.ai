@@ -1,0 +1,47 @@
+{
+  "name": "his-fm",
+  "version": "2.11.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.19.1",
+  "engines": {
+    "node": ">=26.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @his-fm/web",
+    "build": "npm run build --workspace @his-fm/web",
+    "preview": "npm run preview --workspace @his-fm/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspace @his-fm/web",
+    "test:coverage": "npm run test:coverage --workspaces --if-present",
+    "test:e2e": "npm run test:e2e --workspace @his-fm/web",
+    "cf:typegen": "npm run cf:typegen --workspace @his-fm/web",
+    "deploy": "npm run deploy --workspace @his-fm/web",
+    "check:cover-frames": "python3 scripts/export-theme-cover-frames.py --check",
+    "ci:ensure-native-binaries": "node scripts/ensure-native-binaries.mjs",
+    "ci:build": "npm run ci:ensure-native-binaries && npm run build",
+    "lint": "biome check . --error-on-warnings",
+    "format": "biome check . --write",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.2",
+    "husky": "9.1.7"
+  },
+  "overrides": {
+    "source-map-js": "^1.2.2",
+    "sharp": "0.35.5",
+    "@codemirror/view": "6.43.15",
+    "@codemirror/language": "6.13.1"
+  },
+  "allowScripts": {
+    "workerd@1.20261006.1": true,
+    "workerd@1.20261001.1": true,
+    "workerd@1.20260930.2": true
+  }
+}
