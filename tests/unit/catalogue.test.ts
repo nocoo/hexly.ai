@@ -8,6 +8,7 @@ import {
 	isChromeWebStoreProject,
 	loadProjects,
 	parseCatalogue,
+	projectCategories,
 	projectReadmePath,
 	selectedProject,
 } from "../../src/model/catalogue";
@@ -115,10 +116,16 @@ describe("the imported project catalogue", () => {
 		expect(
 			filterProjects(projects, "hermes", "archive").map((p) => p.id),
 		).toEqual(["rooster", "hermes-on-herdr"]);
-		expect(counts.skills).toBe(1);
-		expect(filterProjects(projects, "", "skills").map((p) => p.id)).toEqual([
-			"diorama-journey",
-		]);
+		expect(counts.libs).toBe(5);
+		expect(
+			filterProjects(projects, "", "libs")
+				.map((project) => project.id)
+				.toSorted(),
+		).toEqual(["base-ci", "base-cli", "base-mcp", "infospace", "next-ai"]);
+		expect(counts.extensions).toBe(8);
+		expect(
+			filterProjects(projects, "", "extensions").map((project) => project.id),
+		).toContain("diorama-journey");
 		expect(counts.games).toBe(5);
 		expect(counts.all + counts.archive).toBe(projects.length);
 		expect(
@@ -139,6 +146,17 @@ describe("the imported project catalogue", () => {
 			filterProjects(projects, "", "extensions").length,
 		);
 		expect(categoryCounts([]).all).toBe(0);
+	});
+	it("keeps archive state on the flag instead of a stored category", () => {
+		for (const project of projects) {
+			expect(projectCategories).toContain(project.category);
+		}
+		expect(
+			projects.filter((project) => (project.category as string) === "archive"),
+		).toHaveLength(0);
+		expect(
+			projects.filter((project) => (project.category as string) === "skills"),
+		).toHaveLength(0);
 	});
 	it("selects a known identity and safely handles unknown or empty selections", () => {
 		expect(selectedProject(projects, "pew")?.title).toBe("Pew");

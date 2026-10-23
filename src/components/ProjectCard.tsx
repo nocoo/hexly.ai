@@ -67,11 +67,8 @@ export function ProjectCard({
 				</div>
 				<div className="card-meta">
 					<span className="card-category">
-						{
-							categoryLabels[locale][
-								project.archived ? "archive" : project.category
-							]
-						}
+						{categoryLabels[locale][project.category]}
+						{project.archived && ` · ${categoryLabels[locale].archive}`}
 					</span>
 					<Palette
 						project={project}

@@ -1,6 +1,6 @@
 import mediaStorage from "../data/media-storage.json" with { type: "json" };
 import projectOrder from "../data/project-order.json" with { type: "json" };
-import type { Category, Locale, Project } from "./project";
+import type { Category, Locale, Project, ProjectCategory } from "./project";
 
 export function projectReadmePath(project: Project, locale: Locale): string {
 	const paths = project.overview?.verified.sources.includes("README.zh-CN.md")
@@ -25,17 +25,17 @@ const curatedOrder = new Map<string, number>(
 );
 const featuredTools = new Set(projectOrder.featuredTools);
 
-export const categories: Category[] = [
-	"all",
+export const projectCategories: ProjectCategory[] = [
 	"ai",
 	"tools",
+	"libs",
 	"everyday",
 	"design",
 	"games",
-	"skills",
 	"extensions",
-	"archive",
 ];
+
+export const categories: Category[] = ["all", ...projectCategories, "archive"];
 
 export function filterProjects(
 	projects: Project[],
@@ -85,16 +85,16 @@ export function categoryCounts(projects: Project[]): Record<Category, number> {
 		all: projects.filter((project) => !project.archived).length,
 		ai: 0,
 		tools: 0,
+		libs: 0,
 		everyday: 0,
 		design: 0,
 		games: 0,
-		skills: 0,
 		extensions: 0,
 		archive: 0,
 	};
 	for (const project of projects) {
 		if (project.archived) counts.archive += 1;
-		if (project.category !== "archive") counts[project.category] += 1;
+		counts[project.category] += 1;
 	}
 	return counts;
 }
@@ -375,10 +375,7 @@ export function catalogueProblems(projects: Project[]): string[] {
 			)
 				problems.push(`Invalid overview evidence: ${project.id}`);
 		}
-		if (
-			!categories.includes(project.category) ||
-			project.category === ("all" as Category)
-		)
+		if (!projectCategories.includes(project.category))
 			problems.push(`Invalid category: ${project.id}`);
 		for (const url of [project.repository, project.website].filter(
 			(value) => value !== null,

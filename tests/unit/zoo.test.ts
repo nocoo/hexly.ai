@@ -10,7 +10,7 @@ describe("Zoo onboarding", () => {
 		if (!project) throw new Error("Missing Zoo catalogue entry");
 		expect(catalogueProblems([project])).toEqual([]);
 		expect(project).toMatchObject({
-			category: "tools",
+			category: "everyday",
 			archived: false,
 			website: "https://zoo.hexly.ai",
 			family: {
