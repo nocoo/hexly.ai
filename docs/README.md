@@ -50,4 +50,6 @@
 
 42. [Octo and five material identities: local adoption and dev review](37-octo-material-intake.md)
 
+43. [his.fm onboarding: retained identity, no generation](38-his-fm-onboarding.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
