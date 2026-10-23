@@ -1,16 +1,17 @@
 export type Locale = "en" | "zh";
 export type Theme = "light" | "dark";
 export type View = "directory" | "logos" | "project" | "templates" | "status";
-export type Category =
-	| "all"
+/** Stored product category. Archive state lives on the separate `archived` flag. */
+export type ProjectCategory =
 	| "ai"
 	| "tools"
+	| "libs"
 	| "everyday"
 	| "design"
 	| "games"
-	| "skills"
-	| "extensions"
-	| "archive";
+	| "extensions";
+/** Directory filter state; `archive` is a view over the `archived` flag. */
+export type Category = "all" | ProjectCategory | "archive";
 
 export interface ProjectOverview {
 	goal: Record<Locale, string>;
@@ -126,7 +127,7 @@ export interface Project {
 		videos?: ProjectVideo[];
 		screenshots?: ProjectScreenshot[];
 	};
-	category: Exclude<Category, "all">;
+	category: ProjectCategory;
 	website: string | null;
 	websiteSource: string | null;
 	repository: string;

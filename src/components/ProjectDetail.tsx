@@ -255,9 +255,7 @@ export function ProjectDetail({
 						<div className="identity-summary">
 							<p className="identity-category">
 								{categoryLabels[locale][project.category]}
-								{project.archived &&
-									project.category !== "archive" &&
-									` · ${categoryLabels[locale].archive}`}
+								{project.archived && ` · ${categoryLabels[locale].archive}`}
 							</p>
 							<h1 id="identity-title" title={project.title}>
 								<span className="identity-name">{project.title}</span>

@@ -101,7 +101,7 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 	const toolWithoutStudy =
 		!family &&
 		!project.archived &&
-		(project.category === "tools" || project.category === "skills");
+		(project.category === "tools" || project.category === "libs");
 	const adapted = family?.method === "reference-adaptation";
 	const supplied = retained || adapted;
 	const sourceFile = adapted
@@ -186,7 +186,7 @@ ${screenshots.map((shot) => `- ${shot.alt.en} / ${shot.alt.zh} (${shot.width} ×
 ## Profile
 
 - Repository: [nocoo/${project.repo}](${project.repository})
-- ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : project.category === "skills" ? "Installable skill; navigation opens the repository." : "No current website verified; navigation opens the repository."}
+- ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : project.category === "extensions" ? "Installable skill; navigation opens the repository." : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
 - Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})

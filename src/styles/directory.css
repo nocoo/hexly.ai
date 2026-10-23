@@ -460,6 +460,9 @@
 	font-size: 9px;
 	color: var(--muted);
 	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
 }
 .card-meta .palette-mini {
 	margin-left: auto;
