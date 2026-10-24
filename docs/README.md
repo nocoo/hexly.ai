@@ -54,4 +54,6 @@
 
 44. [Chamelo onboarding and Dunhuang chameleon identity](39-chamelo-onboarding.md)
 
+45. [Generated index of current project texture packs](40-texture-packs.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

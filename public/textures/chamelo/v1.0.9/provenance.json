@@ -1,0 +1,107 @@
+{
+	"project": "chamelo",
+	"version": "1.0.9",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": {
+			"en": "Montane thicket",
+			"zh": "山地问灌丛"
+		},
+		"description": {
+			"en": "Small oval leaves on slender twigs form an overlapping montane thicket along the right and lower margins, running off both edges.",
+			"zh": "细枝上的小卵叶在右缘与下缘叠成山地问灌丛，并自然越过画面边界。"
+		},
+		"motif": "Small oval leaves, fine leaf clusters and slender woody twigs along the right and lower margins; matte gray-sage detail and soft brushed edges.",
+		"rationale": "Hexly brand-texture rules give animal identities habitat foliage in the collection's shared language: quiet, tonal, low chroma, loosely arranged along the right and lower margins and continuing past the edges. Chamelo's mark is a chameleon that lives in montane shrub foliage, so the surface uses that thicket in the same construction as Rhino, Kite and Falcon instead of a specimen branch or a painted plaque."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/chamelo-2026-10-24.png",
+		"source": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa",
+		"bytes": 5048621,
+		"rgbaSha256": "4ddc91fb933323d7eb6f5dd03dd89c04f1b654a6ba020269c44aeb60b638cf2e"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-09/light",
+			"request": "/textures/chamelo/v1.0.9/source-light-request.json",
+			"response": "/textures/chamelo/v1.0.9/source-light-response.json",
+			"prompt": "/textures/chamelo/v1.0.9/texture-light-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.9/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.9/texture-light.png",
+				"sha256": "44d1cdb4ee75fa7ccb3e7901e23960fd7e654b8f96d7790ac84dbf264c7effde",
+				"bytes": 1649557,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-09/dark",
+			"request": "/textures/chamelo/v1.0.9/source-dark-request.json",
+			"response": "/textures/chamelo/v1.0.9/source-dark-response.json",
+			"prompt": "/textures/chamelo/v1.0.9/texture-dark-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.9/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.9/texture-dark.png",
+				"sha256": "3f39b7d14fd02613a855d62deb81ea9cf85a99b2f69749e622cb3613229bb1ee",
+				"bytes": 1578686,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"delivery": {
+		"nativeSize": [
+			1024,
+			1024
+		],
+		"webpQuality": 90,
+		"cardSize": [
+			320,
+			320
+		],
+		"cardWebpQuality": 88,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.44
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on the 320px card texture composited at surfaceOpacity over Hexly normal, hover and page surfaces. Body text is measured over the left 62% of the canvas, where text and controls actually sit; the right and lower foliage is decoration behind the card's empty column.",
+		"lightMinimum": 4.879,
+		"darkMinimum": 5.773,
+		"lightFullCanvasMinimum": 4.597,
+		"darkFullCanvasMinimum": 5.773,
+		"target": 4.7
+	},
+	"superseded": "v1.0.8 had habitat foliage but built it as one pressed specimen branch: large separated leaves, a more saturated green, sharper photographic edges and an empty lower-right corner. v1.0.9 uses the collection's construction — small leaves on slender twigs, loose overlapping arrangement along the right and lower margins, gray-sage matte detail and foliage running off both edges.",
+	"publication": "R2 projects/chamelo/textures/v1.0.9"
+}
