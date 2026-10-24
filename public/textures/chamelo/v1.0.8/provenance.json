@@ -1,0 +1,107 @@
+{
+	"project": "chamelo",
+	"version": "1.0.8",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": {
+			"en": "Montane broadleaf",
+			"zh": "山地问阔叶"
+		},
+		"description": {
+			"en": "One tone-on-tone leafy branch of broad-leaved montane shrub foliage fills the right third of the sheet from top to bottom.",
+			"zh": "一枝山地问阔叶自右缘进入，自上而下铺满右侧三分之一，与纸面同一调子。"
+		},
+		"motif": "Tone-on-tone broad leaves, thin stems and small buds, read as a pressed herbarium specimen barely separated from the paper.",
+		"rationale": "Hexly brand-texture rules give animal identities a botanical surface drawn from the animal's real habitat. Chamelo's mark is a chameleon that lives in montane shrub and tree foliage, so the surface is broadleaf habitat foliage in the same right-column placement and low-chroma leaf palette as the other animal cards."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/chamelo-2026-10-24.png",
+		"source": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa",
+		"bytes": 5048621,
+		"rgbaSha256": "4ddc91fb933323d7eb6f5dd03dd89c04f1b654a6ba020269c44aeb60b638cf2e"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-08/light",
+			"request": "/textures/chamelo/v1.0.8/source-light-request.json",
+			"response": "/textures/chamelo/v1.0.8/source-light-response.json",
+			"prompt": "/textures/chamelo/v1.0.8/texture-light-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.8/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.8/texture-light.png",
+				"sha256": "3ac0977b2f58e3f2c598618792ca5cd7507ce4bb02421097f490c0c0c13d08ff",
+				"bytes": 569153,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-08/dark",
+			"request": "/textures/chamelo/v1.0.8/source-dark-request.json",
+			"response": "/textures/chamelo/v1.0.8/source-dark-response.json",
+			"prompt": "/textures/chamelo/v1.0.8/texture-dark-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.8/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.8/texture-dark.png",
+				"sha256": "e3942eb63a478399a875522e033909e196da9c6a71bc9307275bfeb2abd024c9",
+				"bytes": 1458117,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"delivery": {
+		"nativeSize": [
+			1024,
+			1024
+		],
+		"webpQuality": 90,
+		"cardSize": [
+			320,
+			320
+		],
+		"cardWebpQuality": 88,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.6
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on the 320px card texture composited at surfaceOpacity over Hexly normal, hover and page surfaces. Body text is measured over the left 62% of the canvas, where text and controls actually sit; the right foliage column is decoration behind the card's empty column.",
+		"lightMinimum": 8.498,
+		"darkMinimum": 8.673,
+		"lightFullCanvasMinimum": 7.783,
+		"darkFullCanvasMinimum": 7.057,
+		"target": 4.7
+	},
+	"superseded": "v1.0.7 used habitat foliage but kept it too saturated and too separated from the paper, so the card read louder than the rest of the animal family. v1.0.8 keeps the same habitat foliage and pulls both themes tone-on-tone with the paper.",
+	"publication": "R2 projects/chamelo/textures/v1.0.8"
+}

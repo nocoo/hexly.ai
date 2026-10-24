@@ -72,9 +72,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Dunhuang plaster / 敦煌壁面: Aged plaster with hairline cracks and restrained mineral flecks across the whole sheet.
 - 斑驳砂壁，细裂纹与克制的矿物斑点铺满整张。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.6; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.4.
-- [Paper PNG](https://h.no.mt/projects/chamelo/textures/v1.0.6/texture-light.png) · [Night PNG](https://h.no.mt/projects/chamelo/textures/v1.0.6/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/chamelo/textures/v1.0.6/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/chamelo/textures/v1.0.6/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/chamelo/textures/v1.0.6/manifest.json) · [Usage/rights](https://h.no.mt/projects/chamelo/textures/v1.0.6/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/chamelo/v1.0.6/review.html)
+- Independent texture pack v1.0.8; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.6.
+- [Paper PNG](https://h.no.mt/projects/chamelo/textures/v1.0.8/texture-light.png) · [Night PNG](https://h.no.mt/projects/chamelo/textures/v1.0.8/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/chamelo/textures/v1.0.8/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/chamelo/textures/v1.0.8/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/chamelo/textures/v1.0.8/manifest.json) · [Usage/rights](https://h.no.mt/projects/chamelo/textures/v1.0.8/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/chamelo/v1.0.8/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Refined identity

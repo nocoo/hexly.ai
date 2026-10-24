@@ -1,0 +1,107 @@
+{
+	"project": "chamelo",
+	"version": "1.0.7",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "animal",
+		"language": "habitat-botanical",
+		"name": {
+			"en": "Montane broadleaf",
+			"zh": "山地问阔叶"
+		},
+		"description": {
+			"en": "One leafy branch of broad-leaved montane shrub foliage fills the right third of the sheet from top to bottom.",
+			"zh": "一枝山地问阔叶自右缘进入，自上而下铺满右侧三分之一，左侧留素纸。"
+		},
+		"motif": "Broad leaves, thin stems and small buds, read as a pressed herbarium specimen.",
+		"rationale": "Hexly brand-texture rules give animal identities a botanical surface drawn from the animal's real habitat. Chamelo's mark is a chameleon that lives in montane shrub and tree foliage, so the surface is broadleaf habitat foliage in the same right-column placement and low-chroma leaf palette as the other animal cards."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/chamelo-2026-10-24.png",
+		"source": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa",
+		"bytes": 5048621,
+		"rgbaSha256": "4ddc91fb933323d7eb6f5dd03dd89c04f1b654a6ba020269c44aeb60b638cf2e"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-07/light",
+			"request": "/textures/chamelo/v1.0.7/source-light-request.json",
+			"response": "/textures/chamelo/v1.0.7/source-light-response.json",
+			"prompt": "/textures/chamelo/v1.0.7/texture-light-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.7/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.7/texture-light.png",
+				"sha256": "b74459c53c11693f38fb1213e99a1897de22ef5e872d78d2a621c8dcbaf2e133",
+				"bytes": 1690366,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-07/dark",
+			"request": "/textures/chamelo/v1.0.7/source-dark-request.json",
+			"response": "/textures/chamelo/v1.0.7/source-dark-response.json",
+			"prompt": "/textures/chamelo/v1.0.7/texture-dark-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.7/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.7/texture-dark.png",
+				"sha256": "d57ba9d096cf9ef7f0c85f904a1283968e28c21fdaf78e4f088363be0a1503cf",
+				"bytes": 1804741,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"delivery": {
+		"nativeSize": [
+			1024,
+			1024
+		],
+		"webpQuality": 90,
+		"cardSize": [
+			320,
+			320
+		],
+		"cardWebpQuality": 88,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.5
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on the 320px card texture composited at surfaceOpacity over Hexly normal, hover and page surfaces. Body text is measured over the left 62% of the canvas, where text and controls actually sit; the right foliage column is decoration behind the card's empty column.",
+		"lightMinimum": 4.795,
+		"darkMinimum": 7.496,
+		"lightFullCanvasMinimum": 3.33,
+		"darkFullCanvasMinimum": 2.953,
+		"target": 4.7
+	},
+	"superseded": "v1.0.4–v1.0.6 treated the plaque-like mark as a painted object or a plaster material. The identity is an animal, so v1.0.7 follows the animal branch of the Hexly texture rules: habitat foliage in the same right-column treatment as the other animal cards.",
+	"publication": "R2 projects/chamelo/textures/v1.0.7"
+}
