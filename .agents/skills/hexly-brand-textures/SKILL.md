@@ -48,6 +48,34 @@ can appear as limited, quiet accents; they must not turn the archive into a
 different brand. The texture conveys an analogy, not a product feature, health
 state, security guarantee or literal technical diagram.
 
+## Match the collection before generating
+
+A card is judged against its neighbours, not alone. Read two or three approved
+cards from the same family and write the prompt against their shared
+construction; a correct subject in a foreign construction still reads wrong.
+- **Base hue is the page surface, not the project.** Generate on the recorded
+  paper tokens (`#f0f0e9` / `#f8f8f2` light, `#1e2824` / `#27332c` dark). A
+  project-colored base — sand, plaster, tinted paper — turns the square into a
+  visible block even when luminance matches.
+- **Same coverage, same cut.** The accepted animal construction is a loose,
+  overlapping arrangement running along the right **and lower** margins and
+  continuing past both edges, with foliage still present behind the swatch row in
+  the lower-right corner. It is not a single pressed specimen branch, not a
+  straight-cut band, and not an all-over field.
+- **Same pigment weight.** Foliage stays low chroma and tonal in the family's
+  gray-sage register (`#68705f` light, `#a0aa9a` dark), matte painted detail with
+  soft brushed edges. Photographic sharpness, saturated green and crisp specimen
+  silhouettes read as a different project.
+- **Check the rendering, not the sheet.** Compare the rendered card against its
+  siblings in both themes at card size before asking for approval; a surface that
+  looks right alone can still be the odd one out in the grid. Measure body-text
+  contrast over the left 62% of the canvas where text sits, and record the
+  full-canvas minimum separately in `provenance.json` instead of forcing the
+  motif to disappear.
+- **Record the result.** Every current pack appears in the generated
+  [texture index](../../../docs/40-texture-packs.md); regenerate it with
+  `bun run docs:textures` after a version change.
+
 ## Generate and retain the evidence
 
 - Read the current Workflow `agi-image-generation` skill from the repository

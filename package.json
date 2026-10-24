@@ -36,7 +36,7 @@
 		"assets:social": "bun scripts/create-social.ts",
 		"assets:check-tracked": "bun scripts/asset-storage.ts check-tracked",
 		"assets:check": "bun run assets:check-tracked && bun run assets:hydrate && bun scripts/verify-assets.ts --history && bun run video:check",
-		"docs:profiles": "bun scripts/generate-profiles.ts",
+		"docs:profiles": "bun scripts/generate-profiles.ts && bun scripts/generate-textures.ts",
 		"check:isolation": "bun scripts/verify-isolation.ts",
 		"check:static": "bun scripts/gates.ts static",
 		"check:security": "bun scripts/gates.ts security",
@@ -51,7 +51,8 @@
 		"video:examples": "bun run --cwd packages/video-kit render --example all",
 		"video:review": "bun scripts/review-video.ts",
 		"assets:prepare-test": "bun scripts/prepare-test-assets.ts",
-		"verify": "bun scripts/verify.ts"
+		"verify": "bun scripts/verify.ts",
+		"docs:textures": "bun scripts/generate-textures.ts"
 	},
 	"dependencies": {
 		"@fontsource-variable/geist-mono": "5.3.0",

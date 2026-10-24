@@ -1,0 +1,198 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "chamelo",
+	"version": "1.0.9",
+	"root": "/textures/chamelo/v1.0.9",
+	"canonical": "https://hexly.ai/projects/chamelo#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/chamelo/v1.0.9",
+		"version": "1.0.9",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Dunhuang plaster",
+			"zh": "敦煌壁面"
+		},
+		"description": {
+			"en": "Aged plaster with hairline cracks and restrained mineral flecks across the whole sheet.",
+			"zh": "斑驳砂壁，细裂纹与克制的矿物斑点铺满整张。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.44
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/chamelo-2026-10-24.png",
+		"source": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa",
+		"bytes": 5048621,
+		"rgbaSha256": "4ddc91fb933323d7eb6f5dd03dd89c04f1b654a6ba020269c44aeb60b638cf2e"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-09/light",
+			"request": "/textures/chamelo/v1.0.9/source-light-request.json",
+			"response": "/textures/chamelo/v1.0.9/source-light-response.json",
+			"prompt": "/textures/chamelo/v1.0.9/texture-light-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.9/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.9/texture-light.png",
+				"sha256": "44d1cdb4ee75fa7ccb3e7901e23960fd7e654b8f96d7790ac84dbf264c7effde",
+				"bytes": 1649557,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-09/dark",
+			"request": "/textures/chamelo/v1.0.9/source-dark-request.json",
+			"response": "/textures/chamelo/v1.0.9/source-dark-response.json",
+			"prompt": "/textures/chamelo/v1.0.9/texture-dark-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.9/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.9/texture-dark.png",
+				"sha256": "3f39b7d14fd02613a855d62deb81ea9cf85a99b2f69749e622cb3613229bb1ee",
+				"bytes": 1578686,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/chamelo/v1.0.9/guide.md",
+			"role": "Usage, rights and integration guidance",
+			"bytes": 1696,
+			"sha256": "59e1883a9f4b3f0426e323860127994c240520e98288b6beb4c70a7fae3d16ab"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/license.txt",
+			"role": "Rights statement for the generated texture and authored files",
+			"bytes": 617,
+			"sha256": "21184ea37909a3d240d1bf7b41e4f9bf2998ad57b4312e472791ea26f84b57f9"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/provenance.json",
+			"role": "Pack provenance, delivery and measured contrast",
+			"bytes": 4424,
+			"sha256": "8ae96fb0b9810b5461b02d015a08a69edcf8a739749d6a2b1db59d294a5f1156"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/review.html",
+			"role": "Standalone specimen page for this pack",
+			"bytes": 2200,
+			"sha256": "1c3c54c7518f7a7c473b9833a90f6ec03602365069d21f15ebf42d12706ad306"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/source-dark-raw-review.json",
+			"role": "Exact-byte owner acceptance",
+			"bytes": 1237,
+			"sha256": "f7c41f526a311b8664422584ff9eddf9456c299e2948513178792514280d743d"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/source-dark-request.json",
+			"role": "Sanitized request record",
+			"bytes": 477,
+			"sha256": "d6e3ca8dc3892e4c7fd6619c25089065bde72120bbdec36e75a52367e2e9bb42"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/source-dark-response.json",
+			"role": "Sanitized response record",
+			"bytes": 312,
+			"sha256": "46def1086c8acaf5774ba37443bd1149fbdb6a33ed6124ba45c24095df2d15f7"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/source-light-raw-review.json",
+			"role": "Exact-byte owner acceptance",
+			"bytes": 1237,
+			"sha256": "7225a9793eeb20a19b927fdc18f8b7226b547971fb46ab43d4c44972f1a42c69"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/source-light-request.json",
+			"role": "Sanitized request record",
+			"bytes": 477,
+			"sha256": "edb83357cc0217cd65717cdcf6b30c898d8c3f2a8c00a128a9eb94849f920e0f"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/source-light-response.json",
+			"role": "Sanitized response record",
+			"bytes": 312,
+			"sha256": "8fcf53d0f19ba391da8b98ab708d1698e604eb2ed6b83cc39d4aae1e2207dd38"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9368,
+			"sha256": "6229b5a18ef18059d14934ebb09568b2cddea637e17f6fda9d6f6c2e5e38ab01"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-dark-prompt.txt",
+			"role": "Exact archived generation prompt; no credentials",
+			"bytes": 1289,
+			"sha256": "c6e59f800e867ff20158509433dad616618b89c5d136b4fda28c4628bc006a74"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1578686,
+			"sha256": "3f39b7d14fd02613a855d62deb81ea9cf85a99b2f69749e622cb3613229bb1ee"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 102892,
+			"sha256": "4b78117eb0509ba86227e6f19b7163a94abb47926303bc3850533512b6dc3b7c"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 12206,
+			"sha256": "662931cbf641d208032c0bf0f78e01da4cd1872a08ad2f773d873e0acbcd1b4a"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-light-prompt.txt",
+			"role": "Exact archived generation prompt; no credentials",
+			"bytes": 1256,
+			"sha256": "ab1df1d943d73d0c8ad17b1cac40b6b23e9f07de1ad68a9119de743eafb2837b"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1649557,
+			"sha256": "44d1cdb4ee75fa7ccb3e7901e23960fd7e654b8f96d7790ac84dbf264c7effde"
+		},
+		{
+			"path": "/textures/chamelo/v1.0.9/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 115832,
+			"sha256": "8c2cfdbfa2d76b7ee1d7bd64369d235382ebf0b74c6a0d2936cf7709fbbacb4a"
+		}
+	]
+}

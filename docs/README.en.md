@@ -94,6 +94,7 @@ Vitest covers models and logic; HTTP tests start a local Worker, while Playwrigh
 - [Standard outros](24-standard-outro-examples.md)
 - [Agent instructions](25-agent-guides.md)
 - [Project textures](27-project-textures.md)
+- [Current texture packs](40-texture-packs.md)
 - [Maintenance](29-project-maintenance.md)
 - [Project profiles and palettes](profiles/README.md)
 - [Source snapshots](sources/README.md)

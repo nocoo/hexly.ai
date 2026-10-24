@@ -36,6 +36,10 @@ Faster Whisper skill, Task Notifier skill, MCP Work History, MCP Make Sound and
 JSInst. Other completed but unreviewed raw images remain historical evidence and
 are not adopted. Prepared archived replacement prompts remain unexecuted.
 
+The current version of every pack, with motif, identity language and measured
+contrast, is generated into [project texture packs](40-texture-packs.md) and
+refreshed with `bun run docs:textures`.
+
 This is also the standing maintenance rule in `AGENTS.md`: all batch enrichment,
 redesign and new brand/media creation excludes archived projects by default.
 They retain basic page, link, download, license/provenance and shared compatibility
