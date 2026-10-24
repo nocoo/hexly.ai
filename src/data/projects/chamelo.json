@@ -2,10 +2,10 @@
 	"id": "chamelo",
 	"repo": "chamelo",
 	"title": "Chamelo",
-	"emoji": "\ud83d\udd8c\ufe0f",
+	"emoji": "🖌️",
 	"description": {
 		"en": "A Chinese-cultural colour atlas with curated palettes and agent briefs",
-		"zh": "\u4ece\u4e2d\u56fd\u6587\u5316\u610f\u8c61\u51fa\u53d1\u7684\u914d\u8272\u56fe\u8c31\uff0c\u914d\u5957\u7b56\u5c55\u8272\u677f\u4e0e Agent \u4e3b\u9898\u7b80\u62a5"
+		"zh": "从中国文化意象出发的配色图谱，配套策展色板与 Agent 主题简报"
 	},
 	"category": "design",
 	"website": "https://chamelo.hexly.ai",
@@ -38,7 +38,7 @@
 				"role": "primary",
 				"label": {
 					"en": "Grotto teal",
-					"zh": "\u77f3\u9752"
+					"zh": "石青"
 				},
 				"source": "src/data/palettes.ts dunhuang-huacai swatch teal; site theme primary"
 			},
@@ -47,7 +47,7 @@
 				"role": "accent",
 				"label": {
 					"en": "Quiet cinnabar",
-					"zh": "\u4e39\u7802"
+					"zh": "丹砂"
 				},
 				"source": "src/data/palettes.ts dunhuang-huacai swatch cinnabar; site theme accent"
 			},
@@ -56,7 +56,7 @@
 				"role": "accent",
 				"label": {
 					"en": "Mineral sage",
-					"zh": "\u77f3\u7eff"
+					"zh": "石绿"
 				},
 				"source": "src/data/palettes.ts dunhuang-huacai swatch sage"
 			},
@@ -65,7 +65,7 @@
 				"role": "accent",
 				"label": {
 					"en": "Desert gold",
-					"zh": "\u6d41\u91d1"
+					"zh": "流金"
 				},
 				"source": "src/data/palettes.ts dunhuang-huacai swatch gold"
 			},
@@ -74,7 +74,7 @@
 				"role": "background",
 				"label": {
 					"en": "Sand silk",
-					"zh": "\u7802\u767d"
+					"zh": "砂白"
 				},
 				"source": "src/data/palettes.ts dunhuang-huacai swatch paper; site theme background"
 			}
@@ -82,30 +82,30 @@
 	},
 	"logo": {
 		"kind": "original",
-		"original": "/logos/originals/chamelo.svg",
-		"thumbnail": "/logos/display/chamelo-160.webp",
-		"display": "/logos/display/chamelo-1024.webp",
-		"sourcePath": "public/favicon.svg",
-		"sourceUrl": "https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/public/favicon.svg",
+		"original": "/logos/originals/chamelo-2026-10-24.png",
+		"thumbnail": "/logos/display/chamelo-2026-10-24-160.webp",
+		"display": "/logos/display/chamelo-2026-10-24-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
 		"modified": false,
-		"width": 64,
-		"height": 64,
-		"bytes": 305,
-		"sha256": "36d1f5a194268e37890433809f0a09240e77ca166184e5d49d28a68baa8c266c"
+		"width": 2048,
+		"height": 2048,
+		"bytes": 5048621,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa"
 	},
 	"family": {
 		"id": "2026-10-24-05",
-		"status": "review",
+		"status": "adopted",
 		"updated": "2026-10-24",
 		"finishing": "01",
 		"root": "/logos/family/chamelo/2026-10-24-05/01",
 		"archive": "https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/chamelo/2026-10-24-05",
 		"series": "character",
-		"model": "Azure OpenAI / Foundry \u00b7 gpt-image-2.5-sunburst",
+		"model": "Azure OpenAI / Foundry · gpt-image-2.5-sunburst",
 		"foreground": {
 			"subject": {
 				"en": "Dunhuang-mural chameleon head with a cinnabar ribbon, entering from the left edge",
-				"zh": "\u6566\u714c\u58c1\u753b\u98ce\u7684\u53d8\u8272\u9f99\u5934\u90e8\uff0c\u7cfb\u4e39\u7802\u98d8\u5e26\uff0c\u81ea\u5de6\u7f18\u5165\u753b"
+				"zh": "敦煌壁画风的变色龙头部，系丹砂飘带，自左缘入画"
 			},
 			"original": "/logos/family/chamelo/2026-10-24-05/01/transparent.png",
 			"display": "/logos/family/chamelo/2026-10-24-05/01/transparent-1024.webp",
@@ -125,33 +125,33 @@
 				"aspect": "composition",
 				"title": {
 					"en": "Half the square stays empty",
-					"zh": "\u7559\u767d\u5360\u4e00\u534a"
+					"zh": "留白占一半"
 				},
 				"description": {
 					"en": "The head enters diagonally from the left edge as if it had just climbed into the viewfinder; the empty right half is the subject, not leftover margin. 64% of the canvas stays clear.",
-					"zh": "\u5934\u90e8\u81ea\u5de6\u7f18\u659c\u7740\u5165\u753b\uff0c\u50cf\u521a\u722c\u8fdb\u53d6\u666f\u6846\uff1b\u53f3\u4fa7\u6574\u7247\u7559\u767d\u662f\u6784\u56fe\u4e3b\u4f53\uff0c\u4e0d\u662f\u5269\u4f59\u8fb9\u8ddd\uff0c\u753b\u5e03 64% \u4fdd\u6301\u7a7a\u3002"
+					"zh": "头部自左缘斜着入画，像刚爬进取景框；右侧整片留白是构图主体，不是剩余边距，画布 64% 保持空。"
 				}
 			},
 			{
 				"aspect": "drawing",
 				"title": {
 					"en": "Dunhuang mineral pigment, not a faceted mascot",
-					"zh": "\u6566\u714c\u77ff\u7269\u989c\u6599\uff0c\u800c\u975e\u5207\u9762\u5409\u7965\u7269"
+					"zh": "敦煌矿物颜料，而非切面吉祥物"
 				},
 				"description": {
 					"en": "Azurite crest, malachite cheek band, cinnabar ribbon and gold-leaf flecks inside fine dark ink outlines, with pigment granulation and weathered flecks. The animal-family flat polygon facets were explicitly withdrawn for this project.",
-					"zh": "\u77f3\u9752\u51a0\u80cc\u3001\u77f3\u7eff\u988a\u5e26\u3001\u4e39\u7802\u98d8\u5e26\u4e0e\u91d1\u7b94\u6591\u70b9\uff0c\u4ee5\u7ec6\u58a8\u7ebf\u52fe\u52d2\uff0c\u5e26\u989c\u6599\u9897\u7c92\u4e0e\u5265\u843d\u611f\u3002\u9879\u76ee\u660e\u786e\u653e\u5f03\u5bb6\u65cf\u5e73\u9762\u5207\u9762\u753b\u6cd5\u3002"
+					"zh": "石青冠背、石绿颊带、丹砂飘带与金箔斑点，以细墨线勾勒，带颜料颗粒与剥落感。项目明确放弃家族平面切面画法。"
 				}
 			},
 			{
 				"aspect": "presentation",
 				"title": {
 					"en": "Weathered plaster light",
-					"zh": "\u6591\u9a73\u7802\u58c1\u5149"
+					"zh": "斑驳砂壁光"
 				},
 				"description": {
 					"en": "A sand plaster field with hairline drying cracks, a lifting plaster edge and three pigment flecks, plus paper grain and one soft contact shadow. It follows the site's sand-and-mineral surface rather than a generic icon tile.",
-					"zh": "\u7802\u58c1\u5e95\u7eb9\u914d\u7ec6\u88c2\u7f1d\u3001\u7ffb\u8fb9\u4e0e\u4e09\u5904\u989c\u6599\u6591\u70b9\uff0c\u53e6\u52a0\u7eb8\u9762\u9897\u7c92\u4e0e\u4e00\u5c42\u67d4\u548c\u6295\u5f71\uff0c\u547c\u5e94\u7ad9\u70b9\u7684\u7802\u5ca9\u4e0e\u77ff\u7269\u8868\u9762\uff0c\u800c\u975e\u901a\u7528\u56fe\u6807\u5e95\u677f\u3002"
+					"zh": "砂壁底纹配细裂缝、翻边与三处颜料斑点，另加纸面颗粒与一层柔和投影，呼应站点的砂岩与矿物表面，而非通用图标底板。"
 				}
 			}
 		],
@@ -161,7 +161,7 @@
 				"role": "primary",
 				"label": {
 					"en": "Azurite crest",
-					"zh": "\u77f3\u9752\u51a0\u80cc"
+					"zh": "石青冠背"
 				},
 				"source": "Native d65019b022e11e56a5ab6b5bdbaa8cb1b9fa1d9e8589f0fb03ae057e9fbe74b9, sRGB pixel (832, 960); artwork/logo-family/chamelo/2026-10-24-05/palette.json"
 			},
@@ -170,7 +170,7 @@
 				"role": "accent",
 				"label": {
 					"en": "Cinnabar ribbon",
-					"zh": "\u4e39\u7802\u98d8\u5e26"
+					"zh": "丹砂飘带"
 				},
 				"source": "Native d65019b022e11e56a5ab6b5bdbaa8cb1b9fa1d9e8589f0fb03ae057e9fbe74b9, sRGB pixel (448, 960); artwork/logo-family/chamelo/2026-10-24-05/palette.json"
 			},
@@ -179,7 +179,7 @@
 				"role": "accent",
 				"label": {
 					"en": "Malachite band",
-					"zh": "\u77f3\u7eff\u988a\u5e26"
+					"zh": "石绿颊带"
 				},
 				"source": "Native d65019b022e11e56a5ab6b5bdbaa8cb1b9fa1d9e8589f0fb03ae057e9fbe74b9, sRGB pixel (704, 1088); artwork/logo-family/chamelo/2026-10-24-05/palette.json"
 			},
@@ -188,7 +188,7 @@
 				"role": "accent",
 				"label": {
 					"en": "Gold leaf",
-					"zh": "\u91d1\u7b94"
+					"zh": "金箔"
 				},
 				"source": "Native d65019b022e11e56a5ab6b5bdbaa8cb1b9fa1d9e8589f0fb03ae057e9fbe74b9, sRGB pixel (256, 1472); artwork/logo-family/chamelo/2026-10-24-05/palette.json"
 			},
@@ -197,60 +197,60 @@
 				"role": "background",
 				"label": {
 					"en": "Aged plaster",
-					"zh": "\u65e7\u58c1\u5e95\u8272"
+					"zh": "旧壁底色"
 				},
 				"source": "Native d65019b022e11e56a5ab6b5bdbaa8cb1b9fa1d9e8589f0fb03ae057e9fbe74b9, sRGB pixel (576, 1728); artwork/logo-family/chamelo/2026-10-24-05/palette.json"
 			}
 		],
 		"sizeNote": {
 			"en": "At 64 px the azurite crest, the cinnabar ribbon and the eye still read; at 32 px the mark becomes a two-tone silhouette of crest and ribbon, and gold flecks and scale texture merge. Small marks therefore use the transparent foreground without a tile.",
-			"zh": "64px \u65f6\u77f3\u9752\u51a0\u80cc\u3001\u4e39\u7802\u98d8\u5e26\u4e0e\u773c\u4ecd\u53ef\u8fa8\uff1b32px \u65f6\u53ea\u5269\u51a0\u80cc\u4e0e\u98d8\u5e26\u7684\u53cc\u8272\u526a\u5f71\uff0c\u91d1\u7b94\u4e0e\u9cde\u7eb9\u4f1a\u7cca\u5728\u4e00\u8d77\u3002\u56e0\u6b64\u5c0f\u5c3a\u5bf8\u6807\u8bb0\u4f7f\u7528\u65e0\u5e95\u677f\u7684\u900f\u660e\u524d\u666f\u3002"
+			"zh": "64px 时石青冠背、丹砂飘带与眼仍可辨；32px 时只剩冠背与飘带的双色剪影，金箔与鳞纹会糊在一起。因此小尺寸标记使用无底板的透明前景。"
 		}
 	},
 	"source": {
 		"profileRevision": "78a9bcef80b07a127a82b10dc5a6ccc71b3fdc49",
 		"profileSection": "Recent Projects",
 		"description": "A Chinese-cultural colour atlas with curated palettes and agent briefs",
-		"repositoryRevision": "bec2c8314d262ce59140f7ada41577f3ac4e71fb"
+		"repositoryRevision": "836d46862543e67a6072e2386949dab550677a24"
 	},
 	"overview": {
 		"goal": {
 			"en": "Turn an original cultural image into a curated palette, a semantic website theme and a self-contained brief an agent can implement. Every palette ships with six swatches, twelve semantic roles, proportions, a live preview and CSS or agent-prompt export.",
-			"zh": "\u628a\u539f\u521b\u6587\u5316\u610f\u8c61\u8f6c\u6210\u7b56\u5c55\u8272\u677f\u3001\u8bed\u4e49\u5316\u7ad9\u70b9\u4e3b\u9898\uff0c\u4ee5\u53ca Agent \u53ef\u76f4\u63a5\u843d\u5730\u7684\u4e3b\u9898\u7b80\u62a5\uff1b\u6bcf\u5957\u914d\u8272\u90fd\u5e26\u516d\u4e2a\u8272\u503c\u3001\u5341\u4e8c\u4e2a\u8bed\u4e49\u89d2\u8272\u3001\u7528\u8272\u6bd4\u4f8b\u3001\u5b9e\u65f6\u9884\u89c8\u4e0e CSS / Agent Prompt \u5bfc\u51fa\u3002"
+			"zh": "把原创文化意象转成策展色板、语义化站点主题，以及 Agent 可直接落地的主题简报；每套配色都带六个色值、十二个语义角色、用色比例、实时预览与 CSS / Agent Prompt 导出。"
 		},
 		"techStack": [
 			{
 				"name": "React / Vite",
 				"role": {
 					"en": "Editorial collection explorer and live theme preview",
-					"zh": "\u7b56\u5c55\u56fe\u8c31\u6d4f\u89c8\u4e0e\u4e3b\u9898\u5b9e\u65f6\u9884\u89c8"
+					"zh": "策展图谱浏览与主题实时预览"
 				}
 			},
 			{
 				"name": "Culori",
 				"role": {
 					"en": "Colour conversion, contrast and export calculations",
-					"zh": "\u8272\u5f69\u8f6c\u6362\u3001\u5bf9\u6bd4\u5ea6\u6821\u9a8c\u4e0e\u5bfc\u51fa\u8ba1\u7b97"
+					"zh": "色彩转换、对比度校验与导出计算"
 				}
 			},
 			{
 				"name": "Cloudflare Workers",
 				"role": {
 					"en": "Static asset delivery for chamelo.hexly.ai",
-					"zh": "chamelo.hexly.ai \u7684\u9759\u6001\u8d44\u6e90\u5206\u53d1"
+					"zh": "chamelo.hexly.ai 的静态资源分发"
 				}
 			},
 			{
 				"name": "gpt-image-2.5-sunburst",
 				"role": {
 					"en": "Original cultural artwork before curation",
-					"zh": "\u7b56\u5c55\u524d\u7684\u539f\u521b\u6587\u5316\u610f\u8c61\u56fe\u50cf"
+					"zh": "策展前的原创文化意象图像"
 				}
 			}
 		],
 		"verified": {
 			"date": "2026-10-24",
-			"revision": "bec2c8314d262ce59140f7ada41577f3ac4e71fb",
+			"revision": "836d46862543e67a6072e2386949dab550677a24",
 			"sources": [
 				"README.md",
 				"AGENTS.md",

@@ -50,9 +50,17 @@ paper grain and one soft contact shadow. This is the project's 底纹 and lives 
 
 - Category `design`, emoji 🖌️, site `https://chamelo.hexly.ai`, profile entry commit
   `nocoo/nocoo@78a9bce`.
-- Previous identity preserved: the designer C arc at `public/favicon.svg`.
-- Delivered locally: ten transparent/icon/rounded export sizes, white master,
-  static study page, `/logos/chamelo` gallery page, presentation icons pack
-  (`/icons/chamelo/v1.0.0`), and the unchanged raw generation.
-- Not yet done at the time of writing: source-project adoption, `/api/live`
-  coverage, R2 publication, push, release and deployment. Local review comes first.
+- Previous identity preserved: the designer C arc at `public/favicon.svg`, kept on the
+  browser tab as a documented 16 px exception.
+- Source adoption commit `nocoo/chamelo@836d468`: root `logo.png` (transparent master),
+  `assets/brand/icon.png`, `assets/brand/icon-rounded.png`, `public/apple-touch-icon.png`
+  and `docs/brand.md`. No website colour, artwork or component changed.
+- Health coverage needs no new endpoint: chamelo already emits `/api/live` at build
+  time (`{"status":"ok","name":"chamelo","version":…}`) and is monitored at
+  `https://chamelo.hexly.ai/api/live` like every other active site.
+- Delivered: ten transparent/icon/rounded export sizes, white master, static study
+  page, `/logos/chamelo` gallery page, presentation icons pack
+  (`/icons/chamelo/v1.0.0`), 82 R2 objects with verified receipts, and the untouched
+  raw generation.
+- Not yet done: push of either repository, release, and deployment. The owner reviews
+  locally first.
