@@ -357,10 +357,10 @@
 	aspect-ratio: 1;
 	flex-shrink: 0;
 }
-.card-logo :is(.logo-tile, .logo-composed) {
+.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 	transition: transform 200ms;
 }
-.card-main:hover :is(.logo-tile, .logo-composed) {
+.card-main:hover :is(.logo-tile, .logo-composed, .logo-cover) {
 	transform: rotate(-5deg) scale(1.04);
 }
 .inspect-hint {
@@ -534,7 +534,7 @@
 		top: 18px;
 		right: 18px;
 	}
-	.card-logo :is(.logo-tile, .logo-composed) {
+	.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 		width: 88px;
 		height: 88px;
 	}
@@ -667,7 +667,7 @@
 	.project-card {
 		border-radius: 14px;
 	}
-	.card-logo :is(.logo-tile, .logo-composed) {
+	.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 		width: 88px;
 		height: 88px;
 	}
@@ -707,7 +707,7 @@
 		top: 14px;
 		right: 14px;
 	}
-	.card-logo :is(.logo-tile, .logo-composed) {
+	.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 		width: 80px;
 		height: 80px;
 	}
