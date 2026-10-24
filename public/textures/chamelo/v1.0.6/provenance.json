@@ -1,0 +1,107 @@
+{
+	"project": "chamelo",
+	"version": "1.0.6",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "character-or-object",
+		"language": "habitat-surface",
+		"name": {
+			"en": "Dunhuang plaster",
+			"zh": "敦煌壁面"
+		},
+		"description": {
+			"en": "Aged plaster with hairline cracks and restrained mineral flecks across the whole sheet.",
+			"zh": "斑驳砂壁，细裂纹与克制的矿物斑点铺满整张。"
+		},
+		"motif": "Plaster aggregate, hairline cracks and azurite, malachite and cinnabar flecks across the full canvas.",
+		"rationale": "The identity is painted in Dunhuang mural language; an evenly worked plaster surface matches the mural material instead of a vignette."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/chamelo-2026-10-24.png",
+		"source": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa",
+		"bytes": 5048621,
+		"rgbaSha256": "4ddc91fb933323d7eb6f5dd03dd89c04f1b654a6ba020269c44aeb60b638cf2e"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-06/light",
+			"request": "/textures/chamelo/v1.0.6/source-light-request.json",
+			"response": "/textures/chamelo/v1.0.6/source-light-response.json",
+			"prompt": "/textures/chamelo/v1.0.6/texture-light-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.6/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.6/texture-light.png",
+				"sha256": "c02bdbc8f379ef89e100308d01037f5eb8f0fa957c40181060318b99d813c996",
+				"bytes": 2106496,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-06/dark",
+			"request": "/textures/chamelo/v1.0.6/source-dark-request.json",
+			"response": "/textures/chamelo/v1.0.6/source-dark-response.json",
+			"prompt": "/textures/chamelo/v1.0.6/texture-dark-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.6/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.6/texture-dark.png",
+				"sha256": "3c243d39786d211a0fa0c888ba62321761b6ca2d6d43c82992b381e2e2d18bec",
+				"bytes": 2062229,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"delivery": {
+		"nativeSize": [
+			1024,
+			1024
+		],
+		"webpQuality": 90,
+		"cardSize": [
+			320,
+			320
+		],
+		"cardWebpQuality": 88,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.4
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on the 320px card texture composited at surfaceOpacity over Hexly normal, hover and page surfaces. Body text is measured over the left 62% of the canvas, where text and controls actually sit; the right motif square is decoration behind the card's empty column.",
+		"lightMinimum": 4.865,
+		"darkMinimum": 4.973,
+		"lightFullCanvasMinimum": 4.515,
+		"darkFullCanvasMinimum": 4.11,
+		"target": 4.7
+	},
+	"superseded": "v1.0.5 matched the surface hue but covered only a few pigment flecks, so its card square read as empty next to the botanical surfaces of the rest of the collection. v1.0.6 paints a mural fragment across the right third, matching that coverage.",
+	"publication": "R2 projects/chamelo/textures/v1.0.6"
+}
