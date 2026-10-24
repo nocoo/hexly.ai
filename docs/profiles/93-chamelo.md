@@ -34,12 +34,12 @@ Turn an original cultural image into a curated palette, a semantic website theme
 
 ## Current logo
 
-![Chamelo source identity](https://hexly.ai/logos/display/chamelo-2026-10-24-160.webp)
+![Chamelo source identity](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-2026-10-24-160-978533237138.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Dunhuang-mural chameleon head entering the frame
 - [Source](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/originals/chamelo-2026-10-24.png)
+- [Preserved asset](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-2026-10-24-338f4041d0ce.png)
 - Original dimensions: 2048 × 2048
 - Original size: 5048621 bytes
 - SHA-256: `338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa`

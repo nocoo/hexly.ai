@@ -2,10 +2,10 @@
 	"id": "his-fm",
 	"repo": "his.fm",
 	"title": "his.fm",
-	"emoji": "\ud83c\udfa7",
+	"emoji": "🎧",
 	"description": {
 		"en": "An AI-collaboration Chinese podcast with a versioned prompt-slot studio",
-		"zh": "\u7531 AI \u5206\u5de5\u534f\u4f5c\u5236\u4f5c\u7684\u4e2d\u6587\u64ad\u5ba2\uff0c\u914d\u5957\u53ef\u7248\u672c\u5316\u7684\u63d0\u793a\u8bcd\u5de5\u4f5c\u53f0"
+		"zh": "由 AI 分工协作制作的中文播客，配套可版本化的提示词工作台"
 	},
 	"category": "everyday",
 	"website": "https://his.fm",
@@ -34,64 +34,64 @@
 		"ink": "#213e2d",
 		"palette": [
 			{
-				"color": "#213e2d",
+				"color": "#333935",
 				"role": "primary",
 				"label": {
-					"en": "Forest ink",
-					"zh": "\u6797\u95f4\u58a8\u7eff"
+					"en": "Canopy shade",
+					"zh": "林荫暗部"
 				},
-				"source": "apps/web/src/brand/themes.ts grove palette Forest"
+				"source": "Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (900, 300); RSS channel artwork"
+			},
+			{
+				"color": "#ebebe1",
+				"role": "accent",
+				"label": {
+					"en": "Wordmark cream",
+					"zh": "字标奶白"
+				},
+				"source": "Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (1240, 1500); RSS channel artwork"
+			},
+			{
+				"color": "#9b9772",
+				"role": "accent",
+				"label": {
+					"en": "Sunlit mist",
+					"zh": "透光薄雾"
+				},
+				"source": "Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (2250, 150); RSS channel artwork"
+			},
+			{
+				"color": "#8b7253",
+				"role": "accent",
+				"label": {
+					"en": "Warm bokeh",
+					"zh": "暖色光斑"
+				},
+				"source": "Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (380, 2250); RSS channel artwork"
 			},
 			{
 				"color": "#d0f66d",
 				"role": "accent",
 				"label": {
 					"en": "Lime mark",
-					"zh": "\u9752\u67e0\u5b57\u6807"
+					"zh": "青柠字标"
 				},
-				"source": "apps/web/src/brand/themes.ts grove palette Lime"
-			},
-			{
-				"color": "#759c45",
-				"role": "accent",
-				"label": {
-					"en": "Grass",
-					"zh": "\u8349\u7eff"
-				},
-				"source": "apps/web/src/brand/themes.ts grove palette Grass"
-			},
-			{
-				"color": "#dfd8f0",
-				"role": "accent",
-				"label": {
-					"en": "Lilac",
-					"zh": "\u6de1\u7d2b"
-				},
-				"source": "apps/web/src/brand/themes.ts grove palette Lilac"
-			},
-			{
-				"color": "#f3f3ec",
-				"role": "background",
-				"label": {
-					"en": "Paper",
-					"zh": "\u7eb8\u9762"
-				},
-				"source": "apps/web/src/brand/themes.ts grove palette Paper"
+				"source": "apps/web/src/brand/themes.ts grove palette Lime; website token, not the artwork"
 			}
 		]
 	},
 	"logo": {
 		"kind": "original",
-		"original": "/logos/originals/his-fm.png",
-		"thumbnail": "/logos/display/his-fm-160.webp",
-		"display": "/logos/display/his-fm-1024.webp",
-		"sourcePath": "apps/web/public/apple-touch-icon.png",
-		"sourceUrl": "https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/apps/web/public/apple-touch-icon.png",
+		"original": "/logos/originals/his-fm-channel.jpg",
+		"thumbnail": "/logos/display/his-fm-channel-160.webp",
+		"display": "/logos/display/his-fm-channel-1024.webp",
+		"sourcePath": "artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
+		"sourceUrl": "https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
 		"modified": false,
-		"width": 180,
-		"height": 180,
-		"bytes": 5413,
-		"sha256": "e1fa78d21e83e59d77890c6e6bce41b5b70cbb12e9eee27548c8a8507f218b2d"
+		"width": 3000,
+		"height": 3000,
+		"bytes": 495570,
+		"sha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85"
 	},
 	"source": {
 		"profileRevision": "c5c26acafab599bfe4b463798bd5033d5b35cad2",
@@ -102,35 +102,35 @@
 	"overview": {
 		"goal": {
 			"en": "Publish a Mandarin podcast whose collecting, editing, voicing, artwork and production are handled by AI roles. Each role reads versioned prompt slots and writes episodes back through a scoped Agent API instead of an in-site generator.",
-			"zh": "\u53d1\u5e03\u4e00\u6863\u666e\u901a\u8bdd\u64ad\u5ba2\uff0c\u91c7\u96c6\u3001\u7f16\u8f91\u3001\u914d\u97f3\u3001\u5c01\u9762\u4e0e\u5236\u7247\u5206\u522b\u7531 AI \u89d2\u8272\u627f\u62c5\u3002\u5404\u89d2\u8272\u8bfb\u53d6\u53ef\u7248\u672c\u5316\u7684\u63d0\u793a\u8bcd\u69fd\uff0c\u5e76\u901a\u8fc7\u5e26\u4f5c\u7528\u57df\u7684 Agent API \u5199\u56de\u8282\u76ee\uff0c\u800c\u4e0d\u662f\u5728\u7ad9\u5185\u4e00\u952e\u751f\u6210\u3002"
+			"zh": "发布一档普通话播客，采集、编辑、配音、封面与制片分别由 AI 角色承担。各角色读取可版本化的提示词槽，并通过带作用域的 Agent API 写回节目，而不是在站内一键生成。"
 		},
 		"techStack": [
 			{
 				"name": "React / Vite",
 				"role": {
 					"en": "Listener site, player, transcript and admin console",
-					"zh": "\u542c\u4f17\u7ad9\u70b9\u3001\u64ad\u653e\u5668\u3001\u9010\u5b57\u7a3f\u4e0e\u540e\u53f0"
+					"zh": "听众站点、播放器、逐字稿与后台"
 				}
 			},
 			{
 				"name": "Cloudflare Workers / D1 / R2",
 				"role": {
 					"en": "Worker gateway, episode database and media delivery",
-					"zh": "Worker \u7f51\u5173\u3001\u8282\u76ee\u6570\u636e\u5e93\u4e0e\u5a92\u4f53\u5206\u53d1"
+					"zh": "Worker 网关、节目数据库与媒体分发"
 				}
 			},
 			{
 				"name": "Prompt slots / Agent API",
 				"role": {
 					"en": "Versioned role prompts with scoped read and write tokens",
-					"zh": "\u5e26\u4f5c\u7528\u57df\u8bfb\u5199\u4ee4\u724c\u7684\u7248\u672c\u5316\u89d2\u8272\u63d0\u793a\u8bcd"
+					"zh": "带作用域读写令牌的版本化角色提示词"
 				}
 			},
 			{
 				"name": "@nocoo/basalt",
 				"role": {
 					"en": "Console and editor interface",
-					"zh": "\u540e\u53f0\u4e0e\u7f16\u8f91\u5668\u754c\u9762"
+					"zh": "后台与编辑器界面"
 				}
 			}
 		],
@@ -144,5 +144,6 @@
 				"apps/web/public/site.webmanifest"
 			]
 		}
-	}
+	},
+	"socialImage": "/og/his-fm-channel.jpg"
 }

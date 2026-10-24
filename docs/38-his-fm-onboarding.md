@@ -11,20 +11,24 @@ owned by the repository.
 | Fact | Value |
 | --- | --- |
 | Repository revision | `927170dfebc602ca6697dd514188c6f0c1136050` |
-| Identity file | `apps/web/public/apple-touch-icon.png`, 180 × 180, 5 413 bytes |
-| Byte hash | `e1fa78d21e83e59d77890c6e6bce41b5b70cbb12e9eee27548c8a8507f218b2d` |
-| Retained original | `/logos/originals/his-fm.png`, copied without modification |
+| Identity file | `artwork/show-stillwood-20261022/podcast-cover-3000.jpg`, 3000 × 3000, 495 570 bytes |
+| Byte hash | `0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85` |
+| Retained original | `/logos/originals/his-fm-channel.jpg`, copied without modification |
+| Evidence | Live `https://his.fm/feed.xml` `itunes:image` → `f.no.mt/…podcast-cover-3000.jpg`, identical bytes |
 | Live service | `https://his.fm`, `/api/live` returned `status: ok` at the same revision |
 | Profile | `nocoo/nocoo` `c5c26ac` adds the entry at the top of Recent Projects |
 | Category / emoji | `everyday` / 🎧 |
 | Sources snapshot | `docs/sources/his-fm-2026-10-23.json` |
 | R2 publication | Eight verified objects under `projects/his-fm/identity/v1.0.0/` |
 
-The 180 px native icon is the only square master in the repository; the 1024 and
-512 display derivatives are explicit resampling of those exact bytes and are
-recorded as such. Palette evidence comes from the grove theme tokens in
-`apps/web/src/brand/themes.ts` (Paper `#f3f3ec`, Forest `#213e2d`, Lime
-`#d0f66d`, Grass `#759c45`, Lilac `#dfd8f0`), not from the icon.
+The catalogue identity is the **RSS channel artwork**, not the application icon.
+An initial pass used `apps/web/public/apple-touch-icon.png`; the owner rejected
+that choice and pointed at the channel image in the feed. That icon stays as an
+archived asset (`/logos/originals/his-fm.png`) and no longer represents the
+project. Website theme tokens still come from `apps/web/src/brand/themes.ts`
+(Paper `#f3f3ec`, Forest `#213e2d`, Lime `#d0f66d`, Grass `#759c45`, Lilac
+`#dfd8f0`) and stay separate from the sampled artwork palette (canopy `#333935`,
+wordmark cream `#ebebe1`, sunlit mist `#9b9772`, warm bokeh `#8b7253`).
 
 ## Catalogue consequences
 

@@ -31,9 +31,16 @@
 			"archive": "docs/sources/intake-2026-10-23/his-fm/apps-web-public-site.webmanifest.txt",
 			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
 			"sha256": "3a417cf29ffb6e80f3c73545365541af854ee2f440f46e4049975e0281fd84dd"
+		},
+		{
+			"path": "artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
+			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+			"sha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85",
+			"bytes": 495570
 		}
 	],
-	"identity": "Existing application icon retained without generation or redraw",
-	"logoSha256": "e1fa78d21e83e59d77890c6e6bce41b5b70cbb12e9eee27548c8a8507f218b2d",
-	"identitySource": "apps/web/public/apple-touch-icon.png"
+	"identity": "RSS channel artwork from the live feed itunes:image (f.no.mt stillwood podcast cover), used without generation or redraw",
+	"logoSha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85",
+	"identitySource": "https://his.fm/feed.xml -> itunes:image; artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
+	"previousIdentitySource": "apps/web/public/apple-touch-icon.png (kept as an archived asset, not the catalogue identity)"
 }

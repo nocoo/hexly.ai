@@ -180,11 +180,12 @@ describe("the imported project catalogue", () => {
 			tools.toSorted((a, b) => a.title.localeCompare(b.title, "en")),
 		);
 	});
-	it("places Rhino at the end of animals before templates and material projects", () => {
+	it("places Rhino at the end of animals and Chamelo before templates", () => {
 		const ids = filterProjects(projects, "").map((project) => project.id);
 		const rhino = ids.indexOf("rhino");
 		expect(ids[rhino - 1]).toBe("kite");
-		expect(ids[rhino + 1]).toBe("dotty");
+		expect(ids[rhino + 1]).toBe("chamelo");
+		expect(ids[rhino + 2]).toBe("dotty");
 		expect(rhino).toBeLessThan(ids.indexOf("sleepy"));
 	});
 	it("uses evidenced website links and falls back to repository links", () => {
