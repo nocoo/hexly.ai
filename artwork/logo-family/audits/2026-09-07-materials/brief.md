@@ -1,7 +1,6 @@
 # Template material and architecture series
 
 Dotty and Matrix form a coordinated pair of suspended thick square blocks with soft bevels, an elevated three-quarter camera around 45 degrees, and high-resolution physical materials. Basalt follows the owner’s subsequent correction: an obsidian-and-gemstone Forbidden City corner tower, viewed from a shallower angle around 25 degrees. The earlier plain basalt slab is preserved as rejected history and is never adopted.
-
 - Dotty: opaque black-and-white checker ceramic on cool Cartesian drafting paper.
 - Matrix: layered black/green mothership circuitry on pale mint routing paper, with a small internal arc and a separately rendered subtle lower spill.
 - Basalt: obsidian architecture, emerald roof inlays, restrained ruby details and an amber finial on pale champagne architectural drawing paper.

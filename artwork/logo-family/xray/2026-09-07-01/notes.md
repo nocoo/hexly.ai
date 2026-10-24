@@ -19,7 +19,6 @@ The background is **Wing-vein panels**: base `#756584`, light `#b59dae`, shade `
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`16175dc87e`](https://github.com/nocoo/xray/commit/16175dc87ef406e8cf3343ab8808b60e8f53cc8a). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/xray)
 - [Local individual page](https://index.dev.hexly.ai/logos/xray)
 - [Complete static review](review.html)

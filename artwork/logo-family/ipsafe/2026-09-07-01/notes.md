@@ -19,7 +19,6 @@ At 128/64 px, the dark tester and cream cable loop remain clear. At 32/24/16 px,
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`d8a28afb9e`](https://github.com/nocoo/ipsafe/commit/d8a28afb9ed85d4f3d1627738415a863f82b3629). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/ipsafe)
 - [Local Vite path](https://index.dev.hexly.ai/logos/ipsafe)
 - [Complete static review](review.html)

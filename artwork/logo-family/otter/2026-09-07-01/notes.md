@@ -21,7 +21,6 @@ The background is **Riverbank sweeps**: base `#648691`, light `#bdccc5`, shade `
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`0c87197fc9`](https://github.com/nocoo/otter/commit/0c87197fc9b67d74f9ed6ee70c7ea8c9c4567fe3). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/otter)
 - [Local individual page](https://index.dev.hexly.ai/logos/otter)
 - [Complete static review](review.html)

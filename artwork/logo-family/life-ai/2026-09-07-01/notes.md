@@ -22,7 +22,6 @@ The presentation uses **Riverbank ripples**: base `#b7aa8e`, light `#ddd2b5`, sh
 ## Adoption and delivery
 
 The source project contains the selected masters in commit [`b6f3e7f426`](https://github.com/nocoo/life.ai/commit/b6f3e7f426315062e0492e00c4d9448bfa3b8031). README uses the rounded presentation; small app and browser marks use the transparent foreground. Touch icons use the square presentation. See [adoption.json](adoption.json), [consumer verification](verification/source-assets.json), and the [batch publication report](../../audits/2026-09-07-framing/source-publication.json).
-
 - [Individual site page](https://hexly.ai/logos/life-ai) · [Local site path](https://index.dev.hexly.ai/logos/life-ai)
 - [Complete static before/after review](review.html)
 - [Source usage guide](https://github.com/nocoo/life.ai/blob/b6f3e7f426315062e0492e00c4d9448bfa3b8031/assets/brand/README.md)

@@ -1,7 +1,6 @@
 # R2Shot presentation-only refinement
 
 The familiar dolphin, carried by a quiet teal current.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 920 × 920, SHA-256 `17e2f07d03a8de29731fbb9fc0e91ea3182de24a46b2b3af79a8b73e4ac94ec1`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.

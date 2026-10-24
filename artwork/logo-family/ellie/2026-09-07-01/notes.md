@@ -19,7 +19,6 @@ The background is **Mineral listening folds**: base `#537b93`, light `#a9c5cf`, 
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`300b8540ea`](https://github.com/nocoo/ellie/commit/300b8540eac51ae21803a8d58ebffbe3d90efa24). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/ellie)
 - [Local individual page](https://index.dev.hexly.ai/logos/ellie)
 - [Complete static review](review.html)

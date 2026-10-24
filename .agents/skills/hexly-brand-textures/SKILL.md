@@ -1,4 +1,5 @@
 ---
+
 name: hexly-brand-textures
 description: Design, generate, review and integrate product-specific light/dark background textures for Hexly project archives and cards. Use for 底纹、背景材质、植物纹理 and approved texture rollouts; preserve existing project Logos and distinguish habitat-based animal/bird surfaces from physical-tool materials.
 ---
@@ -21,11 +22,11 @@ Read [AGENTS.md](../../../AGENTS.md),
 
 The owner confirmed these distinct directions on 2026-09-14:
 
-| Existing identity family | Background direction |
-| --- | --- |
-| Animals, including the Web SaaS animal family | Botanical surfaces related to the animal's real habitat, led by relevant leaves or foliage. Flowers are optional, restrained and ecologically appropriate. |
-| Birds, including the native macOS bird family | Leaves, stems and occasional flowers from the bird's environment; choose vegetation related to its habitat, perch or nesting context. |
-| Skeuomorphic 3D objects, including material-series tools | A credible material or working surface associated with the tool's purpose: grain, pressed markings, a service mat, an engineering grid, etc. |
+| Existing identity family                                 | Background direction                                                                                                                                       |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Animals, including the Web SaaS animal family            | Botanical surfaces related to the animal's real habitat, led by relevant leaves or foliage. Flowers are optional, restrained and ecologically appropriate. |
+| Birds, including the native macOS bird family            | Leaves, stems and occasional flowers from the bird's environment; choose vegetation related to its habitat, perch or nesting context.                      |
+| Skeuomorphic 3D objects, including material-series tools | A credible material or working surface associated with the tool's purpose: grain, pressed markings, a service mat, an engineering grid, etc.               |
 
 Inspect the approved identity and product evidence; do not classify from the
 repository name alone. Respect approved exceptions. When the animal's exact

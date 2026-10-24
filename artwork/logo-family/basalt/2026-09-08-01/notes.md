@@ -19,7 +19,6 @@ Basalt keeps its own **Corner tower construction grid**, base `#ede6d8`, light `
 ## Local comparison and adoption status
 
 The local Hexly selection is `family.status: "review"`, retaining the Refined badge. Both review pages compare the previously adopted dark tower with this new Hanbaiyu/candy study. They include Icon/Transparent/White modes, light/dark edges, actual small-size specimens, copyable palette, native downloads and the exact prompt. Reference disclosures remain confined to static HTML and Git.
-
 - [Individual local Vite page](https://index.dev.hexly.ai/logos/basalt)
 - [Complete static review](review.html)
 - [Selected finishing and frozen manifest](finishing/01/manifest.json)

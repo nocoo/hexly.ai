@@ -19,7 +19,6 @@ The shield and crossing weapon silhouettes carry the 32/16 px identity; engraved
 ## Local delivery
 
 The source repository still uses its preserved original identity. The catalogue carries `family.status: "review"` and a Refined badge; neither claims source adoption or publication. The owner will manually verify the pages. No standalone checks, browser windows, push or deployment were performed for this local batch; normal commit hooks remain enabled.
-
 - [Individual Vite comparison](https://index.dev.hexly.ai/logos/dreamro)
 - [Complete static review](review.html)
 - [Exact prompt](prompt.txt) and [source provenance](sources.json)

@@ -19,7 +19,6 @@ The background is **Meadow bends**: base `#778e57`, light `#c3d497`, shade `#465
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`5cd0790336`](https://github.com/nocoo/snaky/commit/5cd0790336d006f65555816fe29869d6e60ed376). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/snaky)
 - [Local individual page](https://index.dev.hexly.ai/logos/snaky)
 - [Complete static review](review.html)

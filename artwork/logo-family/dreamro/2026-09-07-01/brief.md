@@ -5,7 +5,6 @@
 A nostalgic single-player 3D browser RPG with twenty classes, three realms and local saves.
 
 The owner requests **A crafted shield behind a bow and arrow, sword and magic staff**. This is a new identity; the old logo is historical comparison, not a composition constraint. A compact adventurer equipment emblem turns slightly toward the light, revealing the shield and three distinct class weapons.
-
 - Series: material.
 - Color hierarchy: Deep forest enamel, antique gold and steel, warm timber and leather, one restrained violet gemstone.
 - Interest point: The complete weapon assembly is the identity; physical highlights and one violet gemstone provide hierarchy without an animal-style rainbow accessory.

@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.1] - 2026-10-24
+
+### Maintenance
+
+- bump remotion family to 4.0.538 (#108, #109, #110, #111, #112)
+- bump wrangler to 4.152.0 (#113)
+- bump @biomejs/biome to 2.6.2 (#114)
+- bump vite to 8.3.5 (#115)
+- bump @types/bun to 1.4.4 (#117)
+- override fast-uri to 3.1.9 (#118)
+- bump undici override to 7.30.1 (OSV)
+
 ## [1.5.0] - 2026-10-18
 
 ### Maintenance

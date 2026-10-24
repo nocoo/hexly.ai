@@ -4,7 +4,6 @@ These tools extend the frozen `collection-2026-09` exporter for new catalogue
 projects and explicit brand versions. The historical collection, recipes and
 published bytes stay unchanged. Shared specimen CSS/JS are read-only inputs
 from that collection; Sharp and the real site font are existing dependencies.
-
 1. Read `CLAUDE.md`, the project Logo skill and `.agents/skills/hexly-r2-media`.
    Inspect the product and any real original identity. Tools default to material
    3D objects, Web SaaS to animals, and native Mac apps to birds. Obtain the

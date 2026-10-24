@@ -19,7 +19,6 @@ The background is **Charge steps**: base `#918451`, light `#c1b783`, shade `#5f5
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`bb9b497372`](https://github.com/nocoo/pika/commit/bb9b497372809e5ca00eaef4b04e1aa51e4256a3). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/pika)
 - [Local individual page](https://index.dev.hexly.ai/logos/pika)
 - [Complete static review](review.html)

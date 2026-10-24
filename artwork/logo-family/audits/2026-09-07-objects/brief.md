@@ -1,7 +1,6 @@
 # Remaining active identities
 
 Twelve previously unrefined, non-archived projects. hexly.ai and previously refined identities are excluded. PokePocket follows the owner-provided trainer reference; the other eleven use actual physical objects selected from repository functionality. Each receives an independent motif and individual study page.
-
 - pokepocket: Red-capped trainer turning with a Poké Ball — GB / GBC / GBA collection with browser play and local saves.
 - dogfight: Titanium F-22 desk model caught in a banking turn — Browser arcade air combat: fly an F-22 against Su-35s.
 - pew-game: Walnut and brass prairie arcade joystick — A browser prairie shooter inspired by Journey of the Prairie King.

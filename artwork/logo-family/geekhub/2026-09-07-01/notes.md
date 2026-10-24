@@ -19,7 +19,6 @@ At 128/64 px, the green folio and layered ivory pages remain clear. At 32/24/16 
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`d45713b5d3`](https://github.com/nocoo/geekhub/commit/d45713b5d3a0cfd1530e31a7961e1b5748f1bb6c). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/geekhub)
 - [Local Vite path](https://index.dev.hexly.ai/logos/geekhub)
 - [Complete static review](review.html)

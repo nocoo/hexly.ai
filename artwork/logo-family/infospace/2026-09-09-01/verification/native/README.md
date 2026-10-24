@@ -10,10 +10,10 @@ Xcode combines the PNG pair into `Contents/Resources/ToolbarMark.tiff`; SwiftPM 
 
 ## Actual window checks
 
-| Build | Native checks | Captures | Root visual review |
-| --- | --- | --- | --- |
-| Xcode Debug app | [36/36](xcode/report.json) | 15/15 | [Toolbar and full window](xcode/01-baseline.png) |
-| SwiftPM Debug executable | [36/36](swiftpm/report.json) | 15/15 | [Toolbar and full window](swiftpm/01-baseline.png) |
+| Build                    | Native checks                | Captures | Root visual review                                 |
+| ------------------------ | ---------------------------- | -------- | -------------------------------------------------- |
+| Xcode Debug app          | [36/36](xcode/report.json)   | 15/15    | [Toolbar and full window](xcode/01-baseline.png)   |
+| SwiftPM Debug executable | [36/36](swiftpm/report.json) | 15/15    | [Toolbar and full window](swiftpm/01-baseline.png) |
 
 Strict lint/format, all 51 core tests, compiled consumer examples, SwiftPM Release build and Xcode Debug build passed in a fresh source snapshot. The per-stage JSON files record commands, exit codes and timings. Root verified source-code hashes against that snapshot before committing. The README screenshot is copied from the passing Xcode baseline.
 

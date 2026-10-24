@@ -12,12 +12,12 @@ The warm mineral presentation uses Bogo's broken angular horn arches, fine grain
 
 ## Finishing history
 
-| Pass | Purpose and disposition |
-| --- | --- |
-| 01 | Native extraction and centered 82% diagnostic. It exposed cut ear/horn edges, a floating rectangular neck base, and two enclosed white backdrop gaps. |
-| 02 | Extracted the two gaps and tested local contour completion. Rejected during finishing inspection: the lower base extension created visible facet seams. |
-| 03 | Aligned the original neck with the bottom and corrected shoulder-facet continuation. The low blue flower petal had only 120.23 px of rounded clearance, below the 128 px target. |
-| 04 | Final 80% placement. All conservative head, horn, ear, and complete sprig regions pass the 128 px target; the minimum is 133.98 px. Neck and shoulder entries remain intentional exceptions. |
+| Pass | Purpose and disposition                                                                                                                                                                      |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01   | Native extraction and centered 82% diagnostic. It exposed cut ear/horn edges, a floating rectangular neck base, and two enclosed white backdrop gaps.                                        |
+| 02   | Extracted the two gaps and tested local contour completion. Rejected during finishing inspection: the lower base extension created visible facet seams.                                      |
+| 03   | Aligned the original neck with the bottom and corrected shoulder-facet continuation. The low blue flower petal had only 120.23 px of rounded clearance, below the 128 px target.             |
+| 04   | Final 80% placement. All conservative head, horn, ear, and complete sprig regions pass the 128 px target; the minimum is 133.98 px. Neck and shoulder entries remain intentional exceptions. |
 
 `checks/framing-04.json` records feature envelopes, the 23% corner radius, alpha threshold, and zero clipped feature pixels. `checks/asset-check.json` records extraction checks and all 30 PNG exports. The full foreground does cross the lower/right boundary by design; the zero-clipping claim applies to expressive features and the sprig, not the shoulder.
 

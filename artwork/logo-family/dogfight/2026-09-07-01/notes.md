@@ -19,7 +19,6 @@ At 128/64 px, the broad wings and amber canopy remain clear. At 32/24/16 px, the
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`b5ab075a96`](https://github.com/nocoo/dogfight/commit/b5ab075a963a78516aaa351d6ca0178c64994729). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/dogfight)
 - [Local Vite path](https://index.dev.hexly.ai/logos/dogfight)
 - [Complete static review](review.html)

@@ -7,7 +7,6 @@ birds. The owner approved its generated surfaces and final local page on
 ## Evidence and exact source
 
 Paths below are relative to the repository root:
-
 - `artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/brief.md`
   records the product analogy and actual generation route.
 - The same study's `light/prompt.txt` and `dark/prompt.txt` are the exact model
@@ -40,10 +39,10 @@ surface rather than the earlier thin, barely visible SVG circuit drawing.
 
 Prompt palette targets came from the site, not from recoloring the Logo:
 
-| Theme | Targets |
-| --- | --- |
-| Light | Paper `#f0f0e9`, ink `#30372e`, small terracotta `#bf5c3c` accent |
-| Dark | Page `#1e2824`, surface `#27332c`, ink `#e6e9dc`, small `#e79670` accent |
+| Theme | Targets                                                                  |
+| ----- | ------------------------------------------------------------------------ |
+| Light | Paper `#f0f0e9`, ink `#30372e`, small terracotta `#bf5c3c` accent        |
+| Dark  | Page `#1e2824`, surface `#27332c`, ink `#e6e9dc`, small `#e79670` accent |
 
 Actual generated pixels vary around those targets. Each output was reviewed
 independently; the dark one is not a CSS inversion of the light one.
@@ -55,15 +54,15 @@ grooves touch the top edge. Inspection therefore selected `display: "single"`.
 The complete square is displayed with `contain` and `no-repeat`, without crop,
 vector tracing, synthesized edge repair or a false seamless claim.
 
-| Surface | Measured treatment |
-| --- | --- |
-| Texture specimens | Full square at native aspect; two columns on desktop, stacked on mobile |
-| Card, intro, Hero caption | Right-aligned square pseudo-element; contain/no-repeat; opacity 0.45 |
-| Edge transition | CSS mask from transparent at the left edge to opaque at 24%; raw PNG is untouched |
-| Dark text on the material | Existing Hexly light-surface `#f8f8f2`, fully opaque |
-| Text contrast | Minimum 4.9428:1 light and 4.8956:1 dark across tested composite pixels |
-| Screens | Desktop 1440px, mobile 390px and narrow 320px, both themes |
-| Delivery | Native PNG download; same-size WebP, quality 90 / effort 6 |
+| Surface                   | Measured treatment                                                                |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| Texture specimens         | Full square at native aspect; two columns on desktop, stacked on mobile           |
+| Card, intro, Hero caption | Right-aligned square pseudo-element; contain/no-repeat; opacity 0.45              |
+| Edge transition           | CSS mask from transparent at the left edge to opaque at 24%; raw PNG is untouched |
+| Dark text on the material | Existing Hexly light-surface `#f8f8f2`, fully opaque                              |
+| Text contrast             | Minimum 4.9428:1 light and 4.8956:1 dark across tested composite pixels           |
+| Screens                   | Desktop 1440px, mobile 390px and narrow 320px, both themes                        |
+| Delivery                  | Native PNG download; same-size WebP, quality 90 / effort 6                        |
 
 The full Logo, icons, wordmarks, fonts and pre-existing Hero images retain their
 original bytes. Only the surrounding caption gets the new surface; the Hero

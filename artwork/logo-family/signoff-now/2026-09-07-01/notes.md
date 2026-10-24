@@ -19,7 +19,6 @@ At 128/64 px, the counter body, plunger and digit window remain clear. At 32/24/
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`51b679fba8`](https://github.com/nocoo/signoff.now/commit/51b679fba85d1a0cc81641e41f377ad77f867dd0). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/signoff-now)
 - [Local Vite path](https://index.dev.hexly.ai/logos/signoff-now)
 - [Complete static review](review.html)

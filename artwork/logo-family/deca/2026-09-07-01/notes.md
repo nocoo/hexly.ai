@@ -19,7 +19,6 @@ At 128/64 px, the receiver silhouette and ivory rotary dial remain clear. At 32/
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`1f41b41255`](https://github.com/nocoo/deca/commit/1f41b41255b7184c307cb13693e94a6f45bbb9e1). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/deca)
 - [Local Vite path](https://index.dev.hexly.ai/logos/deca)
 - [Complete static review](review.html)

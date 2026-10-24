@@ -66,16 +66,16 @@ Vitest 检查模型与逻辑；HTTP 测试启动本地 Worker，Playwright 覆�
 
 ## 技术栈
 
-| 技术 | 用途 |
-| --- | --- |
-| [React](https://react.dev/) · [TypeScript](https://www.typescriptlang.org/) | 界面与类型约束 |
-| [Vite](https://vite.dev/) · [Bun](https://bun.sh/) | 开发、构建与脚本 |
-| [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/) | 静态资源托管与自定义域名 |
-| [Cloudflare R2](https://developers.cloudflare.com/r2/) | 图像、字体、品牌包与成片的 CDN 存储 |
+| 技术                                                                                                                                             | 用途                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+| [React](https://react.dev/) · [TypeScript](https://www.typescriptlang.org/)                                                                      | 界面与类型约束                         |
+| [Vite](https://vite.dev/) · [Bun](https://bun.sh/)                                                                                               | 开发、构建与脚本                       |
+| [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/)                                                                   | 静态资源托管与自定义域名               |
+| [Cloudflare R2](https://developers.cloudflare.com/r2/)                                                                                           | 图像、字体、品牌包与成片的 CDN 存储    |
 | [Cloudflare D1](https://developers.cloudflare.com/d1/) · [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/) | 状态记录、每 5 分钟探测和 7 天自动清理 |
-| [Sharp](https://sharp.pixelplumbing.com/) | 图像尺寸转换与原图校验 |
-| [Vitest](https://vitest.dev/) · [Playwright](https://playwright.dev/) | 单元、HTTP 与浏览器测试 |
-| [Biome](https://biomejs.dev/) · [OSV](https://google.github.io/osv-scanner/) · [Gitleaks](https://github.com/gitleaks/gitleaks) | 格式、静态分析和安全检查 |
+| [Sharp](https://sharp.pixelplumbing.com/)                                                                                                        | 图像尺寸转换与原图校验                 |
+| [Vitest](https://vitest.dev/) · [Playwright](https://playwright.dev/)                                                                            | 单元、HTTP 与浏览器测试                |
+| [Biome](https://biomejs.dev/) · [OSV](https://google.github.io/osv-scanner/) · [Gitleaks](https://github.com/gitleaks/gitleaks)                  | 格式、静态分析和安全检查               |
 
 ## 文档
 

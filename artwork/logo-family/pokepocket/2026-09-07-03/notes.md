@@ -19,7 +19,6 @@ At 128/64 px, the red cap, face and raised red-white ball remain clear. At 32/24
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`019798f1c8`](https://github.com/nocoo/pokepocket/commit/019798f1c8fae7a6e7c0beb2368279c9980c7188). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/pokepocket)
 - [Local Vite path](https://index.dev.hexly.ai/logos/pokepocket)
 - [Complete static review](review.html)

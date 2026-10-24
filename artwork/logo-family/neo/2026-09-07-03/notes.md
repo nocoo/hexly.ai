@@ -1,7 +1,6 @@
 # Neo presentation-only refinement
 
 The familiar golden smile, lit by broad folds in a blue paper field.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `2939c3edb084df9e8e0f823dc1433a87374e4432b6af9c94097c10d7dd36bb2d`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.
