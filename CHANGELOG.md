@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.1] - 2026-10-24
+
+### Features
+
+- regenerate chamelo in the family construction and index every pack ([e726c5e](https://github.com/nocoo/hexly.ai/commit/e726c5ecc431556d3ea40886a277e6d772afe0ad))
+
 ## [1.6.0] - 2026-10-24
 
 ### Documentation
