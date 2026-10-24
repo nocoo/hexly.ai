@@ -48,10 +48,23 @@ export function Logo({
 	const kit =
 		project.family || project.presentationIcon ? undefined : project.brandKit;
 	const kitAsset = framed && !foreground ? "icon" : "mark";
+	const cover =
+		!foreground &&
+		!project.family &&
+		!kit &&
+		!composed &&
+		project.logo.fit === "cover";
 	return (
 		<span
-			className={`${composed ? "logo-plain logo-composed" : `${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""}`} ${className}`}
-			style={style}
+			className={`${cover ? "logo-plain logo-cover" : composed ? "logo-plain logo-composed" : `${framed ? "logo-tile" : "logo-plain"} ${(project.family || kit) && framed ? "logo-family" : ""}`} ${className}`}
+			style={
+				cover
+					? ({
+							...style,
+							"--logo-zoom": `${project.logo.zoom ?? 1}`,
+						} as CSSProperties)
+					: style
+			}
 		>
 			<img
 				src={assetUrl(kit ? `${kit.root}/${kitAsset}-light.svg` : src)}

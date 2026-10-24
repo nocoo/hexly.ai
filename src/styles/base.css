@@ -508,6 +508,16 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	height: 100%;
 	object-fit: contain;
 }
+.logo-cover {
+	overflow: hidden;
+	border-radius: 24%;
+	isolation: isolate;
+}
+.logo-cover img {
+	object-fit: cover;
+	transform: scale(var(--logo-zoom, 1));
+	filter: none;
+}
 [data-theme="dark"] .logo-tile {
 	background: linear-gradient(
 		145deg,

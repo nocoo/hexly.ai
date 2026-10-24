@@ -401,6 +401,16 @@ export function catalogueProblems(projects: Project[]): string[] {
 			project.logo.height < 1
 		)
 			problems.push(`Invalid source metadata: ${project.id}`);
+		if (
+			(project.logo.fit !== undefined &&
+				!["contain", "cover"].includes(project.logo.fit)) ||
+			(project.logo.fit === "cover" &&
+				(!Number.isFinite(project.logo.zoom) ||
+					(project.logo.zoom ?? 0) < 1 ||
+					(project.logo.zoom ?? 0) > 3)) ||
+			(project.logo.fit !== "cover" && project.logo.zoom !== undefined)
+		)
+			problems.push(`Invalid logo crop: ${project.id}`);
 		for (const color of [
 			project.colors.primary,
 			project.colors.background,
