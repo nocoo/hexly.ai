@@ -8,7 +8,7 @@
 - Category: design
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A Chinese-cultural colour atlas with curated palettes and agent briefs
-- Chinese: 从中国文化意象出发的配色图谱，配套策展色板与 Agent 主题简报
+- Chinese: 守宫：从中国文化意象出发的配色图谱，配套策展色板与 Agent 主题简报
 - Profile section: Recent Projects
 - Profile revision: `78a9bcef80b07a127a82b10dc5a6ccc71b3fdc49`
 - Repository revision inspected: `836d46862543e67a6072e2386949dab550677a24`
@@ -72,9 +72,9 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Dunhuang plaster / 敦煌壁面: Aged plaster with hairline cracks and restrained mineral flecks across the whole sheet.
 - 斑驳砂壁，细裂纹与克制的矿物斑点铺满整张。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.4; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.45.
-- [Paper PNG](https://h.no.mt/projects/chamelo/textures/v1.0.4/texture-light.png) · [Night PNG](https://h.no.mt/projects/chamelo/textures/v1.0.4/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/chamelo/textures/v1.0.4/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/chamelo/textures/v1.0.4/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/chamelo/textures/v1.0.4/manifest.json) · [Usage/rights](https://h.no.mt/projects/chamelo/textures/v1.0.4/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/chamelo/v1.0.4/review.html)
+- Independent texture pack v1.0.5; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.51.
+- [Paper PNG](https://h.no.mt/projects/chamelo/textures/v1.0.5/texture-light.png) · [Night PNG](https://h.no.mt/projects/chamelo/textures/v1.0.5/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/chamelo/textures/v1.0.5/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/chamelo/textures/v1.0.5/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/chamelo/textures/v1.0.5/manifest.json) · [Usage/rights](https://h.no.mt/projects/chamelo/textures/v1.0.5/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/chamelo/v1.0.5/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Refined identity
