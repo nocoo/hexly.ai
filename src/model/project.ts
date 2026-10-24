@@ -143,6 +143,10 @@ export interface Project {
 		sourcePath: string;
 		sourceUrl: string;
 		modified: boolean;
+		/** Photo-like identities are cropped into the rounded mark instead of letterboxed. */
+		fit?: "contain" | "cover";
+		/** Zoom applied to a cover crop, 1–3. */
+		zoom?: number;
 		width: number;
 		height: number;
 		bytes: number;
