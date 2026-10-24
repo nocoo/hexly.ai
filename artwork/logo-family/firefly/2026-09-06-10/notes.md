@@ -5,7 +5,6 @@ The owner selected this native 2048 × 2048 source and authorized finishing, sou
 ## Generation and approval
 
 One Azure Foundry `gpt-image-2` call returned this study in 133.38 seconds. No retry or additional model call was used for finishing. The owner JPEG leads four ordered references. The exact output was shown immediately, before any processing; [raw-review.json](raw-review.json) records the selection.
-
 - Request ID: `bbbf161b-5c82-44f5-8b7b-3697e1776308`.
 - Raw SHA-256: `384fff12838b1e9b282879ffb008f9b9aa8af110ba28400050ef6cd489f48d25`.
 - Native size: 2048 × 2048; untouched PNG: 2,337,353 bytes.
@@ -15,10 +14,10 @@ The raw image has a near-white matte and narrow wing-tip margins. A small gap se
 
 ## Finishing history
 
-| Pass | Result |
-|---|---|
-| 01 | Extracted the near-white matte and placed the complete group at 84%. First rounded-safety verification passed. Two light masks selected valid pixels, but an incorrect assumption about Sharp raw channel count produced empty emission layers. This immutable diagnostic pass is superseded. |
-| 02 | Corrected the light-layer channel extraction and added nonempty-render validation. Foreground, white master, positioning, shadows, and night geometry are otherwise unchanged. This is the selected delivery. |
+| Pass | Result                                                                                                                                                                                                                                                                                        |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01   | Extracted the near-white matte and placed the complete group at 84%. First rounded-safety verification passed. Two light masks selected valid pixels, but an incorrect assumption about Sharp raw channel count produced empty emission layers. This immutable diagnostic pass is superseded. |
+| 02   | Corrected the light-layer channel extraction and added nonempty-render validation. Foreground, white master, positioning, shadows, and night geometry are otherwise unchanged. This is the selected delivery.                                                                                 |
 
 The [recipe](presentation.json) records the sampled matte, two light masks, their native positions and radii, light colors/opacity/blend, two contact shadows, the unique night pattern, and the 84% centered placement. Every finishing pass preserves its exact tool snapshot, settings, masks, layers, exports, previews, and checksum manifest.
 

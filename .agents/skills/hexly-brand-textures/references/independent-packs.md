@@ -77,7 +77,6 @@ The exporter accepts either exact-byte owner approval (`acceptance: "owner"`,
 (`acceptance: "delegated-agent"`, `ownerReviewedExactBytes: false`). Preserve the
 actual acceptance in the manifest and provenance. It refuses unknown partial outputs or inventoried namespace changes and
 verifies original Logo/pixel and existing kit hashes. Reviewed packs contain:
-
 - `texture-{light,dark}.png`: unchanged 1024² native responses, including metadata.
 - `.webp`: same full canvas at quality 90; `-320.webp`: small card delivery at 84.
 - Exact theme prompt, sanitized request/response and raw-review records.

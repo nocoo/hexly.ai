@@ -13,7 +13,6 @@ The output shows a complete teal firefly pointing toward the upper right, with a
 ## Existing finishing history
 
 Both passes were completed before the owner introduced the mandatory raw checkpoint. They are frozen and remain available for comparison, not as approved artwork.
-
 - Pass 01 left 25 near-white residue components totaling 537 native pixels, plus small attached edge artifacts. The evidence remains in [component-review.json](previews/component-review.json).
 - Pass 02 widened exterior-white detection to preserve the clean silhouette. Its component cleanup removed zero pixels. The verified master has 3,221,812 transparent pixels, 22,316 partially transparent pixels, and 950,176 opaque pixels, with zero opaque RGB differences from the raw output. Empty white-derivative areas are exactly white; borders are transparent and no foreground is clipped by the rounded corners.
 

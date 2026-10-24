@@ -19,7 +19,6 @@ At 128/64 px, the gold compass rim and red needle remain clear. At 32/24/16 px, 
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`59730aa033`](https://github.com/nocoo/echo/commit/59730aa033b97d0a9ff917b34a90bedef2a06c39). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/echo)
 - [Local Vite path](https://index.dev.hexly.ai/logos/echo)
 - [Complete static review](review.html)

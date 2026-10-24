@@ -1,7 +1,6 @@
 # Lyre presentation-only refinement
 
 The familiar lyrebird, against a warm fan of quiet feathers.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `1ba1c248228610d3e88e3428359391702f638cb44f1b42045c6a16861c2e581a`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.

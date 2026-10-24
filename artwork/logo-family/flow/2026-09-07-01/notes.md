@@ -19,7 +19,6 @@ At 128/64 px, the celadon key and ivory 中 remain clear. At 32/24/16 px, the co
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`f4a9e9464d`](https://github.com/nocoo/flow/commit/f4a9e9464d64184b793240adff182e08c04997e1). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/flow)
 - [Local Vite path](https://index.dev.hexly.ai/logos/flow)
 - [Complete static review](review.html)

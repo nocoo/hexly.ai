@@ -19,7 +19,6 @@ The background is **Petal pockets**: base `#5f8988`, light `#b6cfbd`, shade `#30
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`c4d8982d8c`](https://github.com/nocoo/codo/commit/c4d8982d8c91c44ccd85d3a13e824c0cc9ccc80a). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/codo)
 - [Local individual page](https://index.dev.hexly.ai/logos/codo)
 - [Complete static review](review.html)

@@ -50,19 +50,19 @@ The new raw-image checkpoint does not require regenerating or reapproving this r
 
 ## Files
 
-| Artifact | Location |
-|---|---|
-| Intent and submitted prompt | [brief.md](brief.md), [prompt.txt](prompt.txt) |
-| Source identity and API provenance | [sources.json](sources.json), [request.json](request.json), [response.json](response.json) |
-| Untouched generation | [raw/generated-white.png](raw/generated-white.png) |
-| Transparent master | [pew-transparent-2048.png](finishing/04/exports/pew-transparent-2048.png) |
-| Square and rounded masters | [pew-icon-2048.png](finishing/04/exports/pew-icon-2048.png), [pew-rounded-2048.png](finishing/04/exports/pew-rounded-2048.png) |
-| Pure-white derivative | [pew-white-2048.png](finishing/04/exports/pew-white-2048.png) |
-| Current settings and checksums | [presentation.json](presentation.json), [finishing/04/manifest.json](finishing/04/manifest.json) |
-| Earlier extraction and contrast | [finishing/01/](finishing/01/), [finishing/02/](finishing/02/), [finishing/03/](finishing/03/) |
-| Browser evidence | [browser-check.json](previews/browser-check.json), [comparison.png](previews/comparison.png), [size-contexts.png](previews/size-contexts.png) |
-| Local contrast review evidence | [contrast-03/](previews/contrast-03/) |
-| Local motif review evidence | [motif-04/](previews/motif-04/) |
-| Original Pew backup | [pew.png](../../../../public/logos/originals/pew.png) |
+| Artifact                           | Location                                                                                                                                      |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Intent and submitted prompt        | [brief.md](brief.md), [prompt.txt](prompt.txt)                                                                                                |
+| Source identity and API provenance | [sources.json](sources.json), [request.json](request.json), [response.json](response.json)                                                    |
+| Untouched generation               | [raw/generated-white.png](raw/generated-white.png)                                                                                            |
+| Transparent master                 | [pew-transparent-2048.png](finishing/04/exports/pew-transparent-2048.png)                                                                     |
+| Square and rounded masters         | [pew-icon-2048.png](finishing/04/exports/pew-icon-2048.png), [pew-rounded-2048.png](finishing/04/exports/pew-rounded-2048.png)                |
+| Pure-white derivative              | [pew-white-2048.png](finishing/04/exports/pew-white-2048.png)                                                                                 |
+| Current settings and checksums     | [presentation.json](presentation.json), [finishing/04/manifest.json](finishing/04/manifest.json)                                              |
+| Earlier extraction and contrast    | [finishing/01/](finishing/01/), [finishing/02/](finishing/02/), [finishing/03/](finishing/03/)                                                |
+| Browser evidence                   | [browser-check.json](previews/browser-check.json), [comparison.png](previews/comparison.png), [size-contexts.png](previews/size-contexts.png) |
+| Local contrast review evidence     | [contrast-03/](previews/contrast-03/)                                                                                                         |
+| Local motif review evidence        | [motif-04/](previews/motif-04/)                                                                                                               |
+| Original Pew backup                | [pew.png](../../../../public/logos/originals/pew.png)                                                                                         |
 
 Each finishing pass includes transparent, square, and rounded exports at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Desktop/mobile captures in both themes and the light/dark alpha composites remain in the archive.

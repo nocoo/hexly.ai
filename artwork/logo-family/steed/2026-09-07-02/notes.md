@@ -21,7 +21,6 @@ The background is **Canter pleats**: base `#53817c`, light `#a4bdb0`, shade `#30
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`bcab1f113b`](https://github.com/nocoo/steed/commit/bcab1f113b9b7cde65898bbd23705c7dac339634). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/steed)
 - [Local individual page](https://index.dev.hexly.ai/logos/steed)
 - [Complete static review](review.html)

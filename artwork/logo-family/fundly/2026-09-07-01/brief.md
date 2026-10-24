@@ -5,7 +5,6 @@
 Chinese mutual-fund research, ranking and market dashboards.
 
 The owner requests **A worldly navy-and-ivory penguin holding binoculars**. This is a new identity; the old logo is historical comparison, not a composition constraint. A well-travelled penguin has just lowered its binoculars and turns with a quietly observant expression.
-
 - Series: animal.
 - Color hierarchy: Midnight navy and indigo feathers, opaque warm-ivory bib, restrained natural amber beak and feet; brass/coral/turquoise lens accents form one instrument group.
 - Interest point: One compact binocular instrument projecting beside the upper body, with a restrained multicolored prism accent on the lens rims.

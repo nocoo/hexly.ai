@@ -19,7 +19,6 @@ At 128/64 px, the twin ivory dials and walnut frame remain clear. At 32/24/16 px
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`4a9efd6690`](https://github.com/nocoo/arena/commit/4a9efd6690942dd1384fd807ba83c73e7c29c202). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/arena)
 - [Local Vite path](https://index.dev.hexly.ai/logos/arena)
 - [Complete static review](review.html)

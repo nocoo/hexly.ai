@@ -1,7 +1,6 @@
 # Ten animal identities — verification
 
 The owner delegated raw-image selection and complete source adoption. These records distinguish drawing checks, source consumers, local site review, remote source publication, and deployment.
-
 - `artwork-verification.json`: native drawing, alpha, safe margins and historical finishing evidence.
 - `source-assets.json`: exact source masters, README targets, platform icons and small transparent consumers.
 - `source-sidebar-review.json`: actual source sidebar components and CSS with explicit session/router fixtures.

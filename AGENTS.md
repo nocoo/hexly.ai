@@ -8,15 +8,15 @@ Direction: [overview](docs/01-overview.md). Catalogue, brand and media work must
 
 This file is the contract; hooks, CI and configuration enforce it. Raise weaker enforcement instead of lowering this contract.
 
-| Fact | Where |
-|---|---|
-| Human docs | [README.md](README.md), [docs index](docs/README.md) |
+| Fact                 | Where                                                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Human docs           | [README.md](README.md), [docs index](docs/README.md)                                                                                                        |
 | Catalogue / identity | `src/data/projects/`, verified source/profile revisions, [identity rules](docs/02-identity-rules.md), [maintenance details](docs/29-project-maintenance.md) |
-| Media / archives | `src/data/media-storage.json`, `docs/assets/inventory.json`, immutable receipts and [asset storage](docs/21-asset-storage.md) |
-| Status / Video Kit | `src/model/status.ts`, `worker/status.ts`, `packages/video-kit/`, `src/data/videos.json` |
-| Version | Root `package.json` as `X.Y.Z`, display `vX.Y.Z`; build emits version/revision at `/api/live` |
-| Enforcement | `.husky/`, `scripts/gates.ts`, CI/release workflows and test configs |
-| Secrets / accidents | Ignored `.env*` / `.dev.vars*`, GitHub secrets; [Retrospective.md](Retrospective.md); machine rules in global `AGENTS.md` / `rules/` |
+| Media / archives     | `src/data/media-storage.json`, `docs/assets/inventory.json`, immutable receipts and [asset storage](docs/21-asset-storage.md)                               |
+| Status / Video Kit   | `src/model/status.ts`, `worker/status.ts`, `packages/video-kit/`, `src/data/videos.json`                                                                    |
+| Version              | Root `package.json` as `X.Y.Z`, display `vX.Y.Z`; build emits version/revision at `/api/live`                                                               |
+| Enforcement          | `.husky/`, `scripts/gates.ts`, CI/release workflows and test configs                                                                                        |
+| Secrets / accidents  | Ignored `.env*` / `.dev.vars*`, GitHub secrets; [Retrospective.md](Retrospective.md); machine rules in global `AGENTS.md` / `rules/`                        |
 
 ## Project Invariants
 
@@ -30,14 +30,14 @@ This file is the contract; hooks, CI and configuration enforce it. Raise weaker 
 
 ## Stack / Layout
 
-| Component | Choice |
-|---|---|
-| Runtime / install | React 19, Vite 8, TypeScript 7 strict; Bun ≥1.4.0 with frozen lock, Node ≥24; browser/deploy CI Node 26.12.1 |
-| Hosting / state | Worker `hexly-ai`, Static Assets, Cron, D1 `hexly-status` via `STATUS_DB` |
-| Static / tests | Biome, Vitest, real Workers HTTP and full Chromium browser journeys, OSV/Gitleaks |
-| `src/{data,model,components,styles}/` | Catalogue, domain logic, accessible views and tokens |
-| `worker/`, `migrations/`, `scripts/`, `tests/` | Gateway/status, schema, local runners, asset tooling and proof |
-| `packages/video-kit/`, `artwork/`, `docs/` | Shared designs, versioned source records, profiles and operational receipts |
+| Component                                      | Choice                                                                                                       |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Runtime / install                              | React 19, Vite 8, TypeScript 7 strict; Bun ≥1.4.0 with frozen lock, Node ≥24; browser/deploy CI Node 26.12.1 |
+| Hosting / state                                | Worker `hexly-ai`, Static Assets, Cron, D1 `hexly-status` via `STATUS_DB`                                    |
+| Static / tests                                 | Biome, Vitest, real Workers HTTP and full Chromium browser journeys, OSV/Gitleaks                            |
+| `src/{data,model,components,styles}/`          | Catalogue, domain logic, accessible views and tokens                                                         |
+| `worker/`, `migrations/`, `scripts/`, `tests/` | Gateway/status, schema, local runners, asset tooling and proof                                               |
+| `packages/video-kit/`, `artwork/`, `docs/`     | Shared designs, versioned source records, profiles and operational receipts                                  |
 
 ## Commands
 
@@ -65,33 +65,33 @@ bun run video:check
 
 6DQ = unified L1 (absorbing former G1) + L2/L3 + G2 + D1. Status: `enforced`, `planned`, `manual`, `N/A`.
 
-| Dimension | Required proof | Status | Current enforcement / gap |
-|---|---|---|---|
-| L1 — complete unified contract | All four coverage metrics ≥95% plus strict static lanes on an installed index-snapshot hook with proven rejection, under 30s | planned | Coverage still gates at 90%, commit selects affected tests without coverage, static lanes run staged/working-tree, and snapshot scope/rejection/timing are unverified. The subcheck rows below describe what is configured today |
-| L1 subcheck — logic coverage | Statements, branches, functions and lines each ≥95%; no skipped/focused tests | planned | CI runs coverage, but Vitest still gates at 90% on model/isolation/release logic; commit runs only affected tests without coverage |
-| L2 HTTP | Real local HTTP over 100% of API endpoint/method combinations and built documents/assets | planned | Push/CI HTTP suite checks the built Worker; exhaustive method/surface enforcement still needs verification as routes evolve |
-| L3 UI | Critical desktop/mobile journeys, languages/themes, gallery and accessibility | enforced | Unified required CI verification job; representative Chromium journeys reject focused tests and server reuse |
-| L1 subcheck — static lanes (former G1) | Strict types and check-only lint, zero errors/warnings | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint; static lanes run staged/working-tree, so unified L1 is not snapshot-based |
-| G2 security | Dependency and secret scans; missing scanner fails | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges |
-| D1 isolation | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker | planned | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser now use owned per-run state and a marker checked before migration, seeding and cleanup; complete harness coverage remains planned |
-| Assets / build | Checksums, profiles, immutable sources, real bundle and deploy dry run | enforced | CI public/test-source byte checks, current-asset and public archive validation, one shared L2/L3 build and `deploy:check`; historical finishing audit is explicit maintenance |
-| Content / release | Provenance, source adoption and deployment proof | manual | Identity/maintenance/release runbooks and maintainer verification |
+| Dimension                              | Required proof                                                                                                               | Status   | Current enforcement / gap                                                                                                                                                                                                        |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| L1 — complete unified contract         | All four coverage metrics ≥95% plus strict static lanes on an installed index-snapshot hook with proven rejection, under 30s | planned  | Coverage still gates at 90%, commit selects affected tests without coverage, static lanes run staged/working-tree, and snapshot scope/rejection/timing are unverified. The subcheck rows below describe what is configured today |
+| L1 subcheck — logic coverage           | Statements, branches, functions and lines each ≥95%; no skipped/focused tests                                                | planned  | CI runs coverage, but Vitest still gates at 90% on model/isolation/release logic; commit runs only affected tests without coverage                                                                                               |
+| L2 HTTP                                | Real local HTTP over 100% of API endpoint/method combinations and built documents/assets                                     | planned  | Push/CI HTTP suite checks the built Worker; exhaustive method/surface enforcement still needs verification as routes evolve                                                                                                      |
+| L3 UI                                  | Critical desktop/mobile journeys, languages/themes, gallery and accessibility                                                | enforced | Unified required CI verification job; representative Chromium journeys reject focused tests and server reuse                                                                                                                     |
+| L1 subcheck — static lanes (former G1) | Strict types and check-only lint, zero errors/warnings                                                                       | enforced | Commit staged Biome; CI full browser/Worker/Video Kit types and lint; static lanes run staged/working-tree, so unified L1 is not snapshot-based                                                                                  |
+| G2 security                            | Dependency and secret scans; missing scanner fails                                                                           | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges                                                                                                                                    |
+| D1 isolation                           | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker                                                         | planned  | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser now use owned per-run state and a marker checked before migration, seeding and cleanup; complete harness coverage remains planned           |
+| Assets / build                         | Checksums, profiles, immutable sources, real bundle and deploy dry run                                                       | enforced | CI public/test-source byte checks, current-asset and public archive validation, one shared L2/L3 build and `deploy:check`; historical finishing audit is explicit maintenance                                                    |
+| Content / release                      | Provenance, source adoption and deployment proof                                                                             | manual   | Identity/maintenance/release runbooks and maintainer verification                                                                                                                                                                |
 
-| Hook | Current behavior | Required follow-up |
-|---|---|---|
+| Hook       | Current behavior                                                                                             | Required follow-up                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
 | pre-commit | Tracked-material guard, staged lint and changed unit tests in parallel; doc-only changes can select no tests | Unified L1 (coverage plus static lanes) on the index snapshot, <30s |
-| pre-push | L2 HTTP and G2 in parallel against working-tree files/history | Validate commits named by stdin push refs, <3min |
+| pre-push   | L2 HTTP and G2 in parallel against working-tree files/history                                                | Validate commits named by stdin push refs, <3min                    |
 
 Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI uses pinned shared setup actions and a single 10-minute verification job; immutable fixture caching never bypasses byte checks, manual CI also verifies the deployed SHA at both origins without deploying, and automatic Release accepts only main push CI; deployment pins the shared workflow at `ac635753a869cb85fad1f52aae4ccbd6119f3cae`. Scope, browser clocks, unmodified project-local CLI and failure evidence: [quality guide](docs/03-quality.md).
 
 ## Resources / Isolation
 
-| Lane | Ports / directory | Boundary |
-|---|---|---|
-| Daily Vite / Worker | 7048 / 37048; inspector 38048; `.wrangler/dev` | Caddy `index.dev.hexly.ai`, local demo observations |
-| L2 HTTP | 17048; inspector 18048; unique `hexly-test-*` state | `--env test --local`, fake IDs, no live probes |
-| L3 browser | 27048; inspector 28048; unique `hexly-test-*` state | Same local guard; distinct lane and per-run state |
-| Manual preview | 37048; inspector 38048; `.wrangler/preview` | `--env dev --local`; do not overlap the daily Worker |
+| Lane                | Ports / directory                                   | Boundary                                             |
+| ------------------- | --------------------------------------------------- | ---------------------------------------------------- |
+| Daily Vite / Worker | 7048 / 37048; inspector 38048; `.wrangler/dev`      | Caddy `index.dev.hexly.ai`, local demo observations  |
+| L2 HTTP             | 17048; inspector 18048; unique `hexly-test-*` state | `--env test --local`, fake IDs, no live probes       |
+| L3 browser          | 27048; inspector 28048; unique `hexly-test-*` state | Same local guard; distinct lane and per-run state    |
+| Manual preview      | 37048; inspector 38048; `.wrangler/preview`         | `--env dev --local`; do not overlap the daily Worker |
 
 Required harnesses use fresh per-run persistence, assert local/test context before fixtures, initialize `_test_marker(key,value)` with `env=test`, and verify it before reset/cleanup. Never deploy remote `-test` resources. Keep production credentials and daily-dev state out of automated lanes. Local status clocks remain stable during each browser suite.
 

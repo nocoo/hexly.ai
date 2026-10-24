@@ -6,7 +6,6 @@ Falcon is a planned native macOS Jev HTTP/MCP proxy and seven-day decision
 observability application. The inspected repository contains design documents,
 not a runnable app. Its bird identity is explicitly requested by the owner.
 This is its first independent Logo; there is no previous source artwork.
-
 - Subject: Peregrine falcon, attentive three-quarter portrait with a natural turn.
 - Drawing: Connected flat irregular facets across head, chest and wing roots.
 - Palette: Slate blue-gray, dark peregrine hood and warm ivory chest; proposed

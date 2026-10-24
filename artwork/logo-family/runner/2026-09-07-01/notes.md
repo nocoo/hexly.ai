@@ -19,7 +19,6 @@ At 128/64 px, the emerald face and steel case remain clear. At 32/24/16 px, the 
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`a5d7861753`](https://github.com/nocoo/runner/commit/a5d786175358dee245773bd98af83eef4bbf5689). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/runner)
 - [Local Vite path](https://index.dev.hexly.ai/logos/runner)
 - [Complete static review](review.html)

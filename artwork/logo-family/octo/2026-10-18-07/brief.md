@@ -19,7 +19,6 @@ Preserve all earlier raw files and decision history.
 
 Individually inspected the adopted Noheir, Pew, Frogie, Falcon and Kite images,
 the two original composition boards, and Octo studies 05 and 06.
-
 - Noheir and Pew use expressive close portraits with connected neck anatomy
   entering from an edge; negative space has direction rather than equal margins.
 - Falcon and Kite keep a species-specific head dominant, with irregular flat

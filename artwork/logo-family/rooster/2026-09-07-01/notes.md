@@ -21,7 +21,6 @@ The background is **Dawn terraces**: base `#9c8460`, light `#d9bd8d`, shade `#65
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`8907933c08`](https://github.com/nocoo/rooster/commit/8907933c080ed86c6cbe15d9af5cdb0be86919d3). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/rooster)
 - [Local individual page](https://index.dev.hexly.ai/logos/rooster)
 - [Complete static review](review.html)

@@ -20,10 +20,10 @@ is presented on a separate front-facing plane, never perspective-distorted.
 
 ## Fonts
 
-| Font | Source | License |
-| --- | --- | --- |
-| Space Grotesk Variable | The site's `@fontsource-variable/space-grotesk@5.3.0` Latin variable WOFF2 | SIL OFL 1.1; `public/video-kit/1.0.0/hexly/space-grotesk-OFL.txt` |
-| Geist Mono Variable | The site's `@fontsource-variable/geist-mono@5.3.0` Latin variable WOFF2 | SIL OFL 1.1; `public/video-kit/1.0.0/hexly/geist-mono-OFL.txt` |
+| Font                                | Source                                                                                                                                                 | License                                                                                                       |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| Space Grotesk Variable              | The site's `@fontsource-variable/space-grotesk@5.3.0` Latin variable WOFF2                                                                             | SIL OFL 1.1; `public/video-kit/1.0.0/hexly/space-grotesk-OFL.txt`                                             |
+| Geist Mono Variable                 | The site's `@fontsource-variable/geist-mono@5.3.0` Latin variable WOFF2                                                                                | SIL OFL 1.1; `public/video-kit/1.0.0/hexly/geist-mono-OFL.txt`                                                |
 | Noto Sans SC, loaded as Journey CJK | Same family as the site's Chinese font; source `google/fonts` commit `a85815a42757630ce188fdad368c2dfc444d4773`, `ofl/notosanssc/NotoSansSC[wght].ttf` | SIL OFL 1.1; Adobe copyright, Reserved Font Name “Source”; `public/video-kit/1.0.0/hexly/journey-cjk-OFL.txt` |
 
 The Noto subset contains 7,613 code points: GB2312 plus current catalogue/template

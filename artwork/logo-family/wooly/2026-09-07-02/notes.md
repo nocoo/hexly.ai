@@ -22,7 +22,6 @@ The presentation uses **Wool cloud folds**: base `#ad8093`, light `#d6b2bd`, sha
 ## Adoption and delivery
 
 The source project contains the selected masters in commit [`e516e1fbcb`](https://github.com/nocoo/wooly/commit/e516e1fbcbd146fcda6b80cf071bd5367e611afd). README uses the rounded presentation; small app and browser marks use the transparent foreground. Touch icons use the square presentation. See [adoption.json](adoption.json), [consumer verification](verification/source-assets.json), and the [batch publication report](../../audits/2026-09-07-framing/source-publication.json).
-
 - [Individual site page](https://hexly.ai/logos/wooly) · [Local site path](https://index.dev.hexly.ai/logos/wooly)
 - [Complete static before/after review](review.html)
 - [Source usage guide](https://github.com/nocoo/wooly/blob/e516e1fbcbd146fcda6b80cf071bd5367e611afd/assets/brand/README.md)

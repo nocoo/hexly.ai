@@ -34,20 +34,20 @@ Both the transparent 2048 master and the pure-white derivative are byte-identica
 
 ## Files
 
-| Artifact | Location |
-|---|---|
-| Brief and exact submitted prompt | [brief.md](brief.md), [prompt.txt](prompt.txt) |
-| Sanitized API request and response | [request.json](request.json), [response.json](response.json) |
-| Untouched native PNG | [raw/generated-white.png](raw/generated-white.png) |
-| Current transparent master | [frogie-transparent-2048.png](finishing/03/exports/frogie-transparent-2048.png) |
-| Exact white background version | [frogie-white-2048.png](finishing/03/exports/frogie-white-2048.png) |
+| Artifact                             | Location                                                                                                                                   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Brief and exact submitted prompt     | [brief.md](brief.md), [prompt.txt](prompt.txt)                                                                                             |
+| Sanitized API request and response   | [request.json](request.json), [response.json](response.json)                                                                               |
+| Untouched native PNG                 | [raw/generated-white.png](raw/generated-white.png)                                                                                         |
+| Current transparent master           | [frogie-transparent-2048.png](finishing/03/exports/frogie-transparent-2048.png)                                                            |
+| Exact white background version       | [frogie-white-2048.png](finishing/03/exports/frogie-white-2048.png)                                                                        |
 | Square icon and rounded presentation | [frogie-icon-2048.png](finishing/03/exports/frogie-icon-2048.png), [frogie-rounded-2048.png](finishing/03/exports/frogie-rounded-2048.png) |
-| Alpha and composition layers | [finishing/03/](finishing/03/) |
-| Settings, tool hash, output hashes | [finishing/03/manifest.json](finishing/03/manifest.json) |
-| Browser and asset verification | [browser-check.json](previews/browser-check.json), [asset-check.json](previews/asset-check.json) |
-| Local contrast review evidence | [contrast-03/](previews/contrast-03/) |
-| Previous finishing passes | [finishing/01/](finishing/01/), [adopted finishing/02/](finishing/02/) |
-| Original Frogie backup | [frogie.png](../../../../public/logos/originals/frogie.png) |
+| Alpha and composition layers         | [finishing/03/](finishing/03/)                                                                                                             |
+| Settings, tool hash, output hashes   | [finishing/03/manifest.json](finishing/03/manifest.json)                                                                                   |
+| Browser and asset verification       | [browser-check.json](previews/browser-check.json), [asset-check.json](previews/asset-check.json)                                           |
+| Local contrast review evidence       | [contrast-03/](previews/contrast-03/)                                                                                                      |
+| Previous finishing passes            | [finishing/01/](finishing/01/), [adopted finishing/02/](finishing/02/)                                                                     |
+| Original Frogie backup               | [frogie.png](../../../../public/logos/originals/frogie.png)                                                                                |
 
 Exports include transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 pixels. Light/dark composites and browser captures preserve the review evidence. The full study remains archived after adoption.
 

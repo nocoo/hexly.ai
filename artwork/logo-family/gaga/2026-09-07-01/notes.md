@@ -19,7 +19,6 @@ The background is **Playroom folds**: base `#b38c77`, light `#ecd1ac`, shade `#8
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`76260f0832`](https://github.com/nocoo/gaga/commit/76260f08329784eead9b30912c7692b8ea0d3d56). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/gaga)
 - [Local individual page](https://index.dev.hexly.ai/logos/gaga)
 - [Complete static review](review.html)

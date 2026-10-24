@@ -11,7 +11,6 @@ This is not polished black ceramic, glass, metal, marble, granite or a porous sp
 
 ## Shared geometry and layers
 
-
 SHARED BUILDING-BLOCK FAMILY
 Reference image 1 is the accepted Dotty raw image from this same batch. Use it to establish the shared object geometry, softly rounded thickness, elevated camera angle, complete perimeter and high-quality physical rendering. It is NOT the new material: replace all black/white checks with the material specified below. Keep the same single solid thick square tile, approximately a quarter to a third as thick as its side length, with a continuous, confidently rounded perimeter and two visible side faces. No full-height cube, thin placemat, frame, letters, platform, or second block.
 

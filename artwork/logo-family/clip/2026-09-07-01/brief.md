@@ -5,7 +5,6 @@
 Schema-driven CLI generation and API credential management.
 
 The owner requests **A curious leaf-green mantis head with one folded paper ribbon**. This is a new identity; the old logo is historical comparison, not a composition constraint. A mantis pauses mid-fold and tilts its triangular head toward one small folded paper ribbon held by its naturally folded foreleg.
-
 - Series: animal.
 - Color hierarchy: Leaf and emerald greens, pale yellow-green face planes, deep teal shadow planes; multicolor only on the single paper ribbon.
 - Interest point: One short folded paper ribbon, with coral, golden yellow, turquoise and a restrained violet facet, beside the face.

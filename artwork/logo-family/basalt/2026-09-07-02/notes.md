@@ -25,7 +25,6 @@ The background is **Corner tower construction grid**, using base `#ede6d8`, ligh
 ## Source adoption and individual delivery
 
 Selected source commit: [`9e226aa5c1`](https://github.com/nocoo/basalt/commit/9e226aa5c1376351ec76a659b1a33a8139892b4b). README headers use the rounded presentation; small navigation, login/loading and browser marks use the transparent foreground. The source generator verifies its masters and records all PNG dimensions, ICO entries and alpha checks.
-
 - [Individual Vite comparison](https://hexly.ai/logos/basalt)
 - [Local Vite comparison](https://index.dev.hexly.ai/logos/basalt)
 - [Complete individual static review](review.html)

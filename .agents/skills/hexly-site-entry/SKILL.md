@@ -1,4 +1,5 @@
 ---
+
 name: hexly-site-entry
 description: Add or standardize the Hexly project-detail link in family website headers during new-project onboarding or dashboard, admin and homepage updates. Use for 新项目接入、右上角入口 and header icon/tooltip consistency; includes GitHub → Hexly → Theme ordering and explicit page exclusions.
 ---
@@ -68,11 +69,11 @@ change.
   offset and delay, available on hover and keyboard focus. Tooltip text does not
   replace the control's accessible name. Avoid a second native `title` tooltip.
 
-  | Control | Example tooltip; use the product's language |
-  | --- | --- |
-  | GitHub | `GitHub 仓库` / `<Project> on GitHub` |
-  | Hexly | `在 hexly.ai 查看 <项目>` / `<Project> on hexly.ai` |
-  | Theme | The real next action, such as `切换到深色` / `Use system theme` |
+  | Control       | Example tooltip; use the product's language                            |
+  | ------------- | ---------------------------------------------------------------------- |
+  | GitHub        | `GitHub 仓库` / `<Project> on GitHub`                                  |
+  | Hexly         | `在 hexly.ai 查看 <项目>` / `<Project> on hexly.ai`                    |
+  | Theme         | The real next action, such as `切换到深色` / `Use system theme`        |
   | Other actions | Their actual purpose/state, such as `检查更新`, `阅读偏好`, `退出登录` |
 
 - **Basalt/Radix:** `TooltipTrigger asChild` wraps the actual Button or LinkButton;
