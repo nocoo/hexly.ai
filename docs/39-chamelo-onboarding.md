@@ -44,6 +44,14 @@ project-specific hairline cracks, one lifting plaster edge, three pigment flecks
 paper grain and one soft contact shadow. This is the project's 底纹 and lives in
 `presentation.json`; the site's own tokens stay separate.
 
+The card surface is a different thing and follows the Hexly rules for animal
+identities: habitat foliage, not the painted plaque. Pack `v1.0.8` is one
+broad-leaved montane shrub branch reading as a pressed herbarium specimen, filling
+the right third from top to bottom while the left two thirds stay plain paper.
+Both themes are generated tone-on-tone with the page surface so the card sits as
+quietly as the other animal cards; the mark's mineral palette stays in the Logo
+and the swatches, never in the surface.
+
 ## Known limits, recorded rather than hidden
 
 - The mark is an intentional edge-entry portrait: bounds touch the left and bottom
