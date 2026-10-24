@@ -44,7 +44,7 @@ export function Logo({
 					? framed
 						? `${project.family.root}/icon-${pixels}.webp`
 						: project.family.foreground.display
-					: `/logos/display/${project.id}-${pixels}.webp`;
+					: project.logo.display.replace(/1024\.webp$/, `${pixels}.webp`);
 	const kit =
 		project.family || project.presentationIcon ? undefined : project.brandKit;
 	const kitAsset = framed && !foreground ? "icon" : "mark";
