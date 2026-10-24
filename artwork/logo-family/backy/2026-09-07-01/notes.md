@@ -19,7 +19,6 @@ The background is **Shell saddles**: base `#829178`, light `#ccd1a6`, shade `#4f
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`5b23349c94`](https://github.com/nocoo/backy/commit/5b23349c94ac6778f2242a857386e8b01dac4f1c). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/backy)
 - [Local individual page](https://index.dev.hexly.ai/logos/backy)
 - [Complete static review](review.html)

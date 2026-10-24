@@ -38,19 +38,19 @@ For an approved existing identity, preserve its animal, pose, expression, compos
 
 ## Studies
 
-| Project | Study | Status | Review |
-|---|---|---|---|
-| Frogie | [2026-09-06-01](frogie/2026-09-06-01/notes.md) | Locally adopted pass 03; transparent app/browser marks | [Site path](https://index.dev.hexly.ai/logos/frogie) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html) |
-| Pew | [2026-09-06-01](pew/2026-09-06-01/notes.md) | Locally adopted motif pass 04; transparent app/browser marks | [Site path](https://index.dev.hexly.ai/logos/pew) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html) |
-| Firefly | [2026-09-06-01](firefly/2026-09-06-01/notes.md) | Superseded; both finishing passes preserved | [Archived static HTML](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-01/review.html) |
-| Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png) |
-| Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png) |
-| Firefly | [2026-09-06-04](firefly/2026-09-06-04/notes.md) | Rejected: generic cute character; raw preserved without finishing | [Untouched raw](firefly/2026-09-06-04/raw/generated-white.png) |
-| Firefly | [2026-09-06-05](firefly/2026-09-06-05/notes.md) | Superseded and unselected; untouched scene preserved without finishing | [Untouched raw](firefly/2026-09-06-05/raw/generated.png) |
-| Firefly | [2026-09-06-06](firefly/2026-09-06-06/notes.md) | Improved direction retained; clean foreground requested in study 07 | [Untouched raw](firefly/2026-09-06-06/raw/generated.png) |
-| Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye | [Untouched raw](firefly/2026-09-06-07/raw/generated.png) |
-| Firefly | [2026-09-06-08](firefly/2026-09-06-08/notes.md) | Rejected: backward-facing eye perspective | [Untouched raw](firefly/2026-09-06-08/raw/generated.png) |
-| Firefly | [2026-09-06-09](firefly/2026-09-06-09/notes.md) | Rejected: fire and insect compete; firefly must be primary | [Untouched raw](firefly/2026-09-06-09/raw/generated.png) |
+| Project | Study                                           | Status                                                                                       | Review                                                                                                                                                          |
+| ------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Frogie  | [2026-09-06-01](frogie/2026-09-06-01/notes.md)  | Locally adopted pass 03; transparent app/browser marks                                       | [Site path](https://index.dev.hexly.ai/logos/frogie) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/frogie/2026-09-06-01/review.html)           |
+| Pew     | [2026-09-06-01](pew/2026-09-06-01/notes.md)     | Locally adopted motif pass 04; transparent app/browser marks                                 | [Site path](https://index.dev.hexly.ai/logos/pew) · [Static HTML](https://index.dev.hexly.ai/artwork/logo-family/pew/2026-09-06-01/review.html)                 |
+| Firefly | [2026-09-06-01](firefly/2026-09-06-01/notes.md) | Superseded; both finishing passes preserved                                                  | [Archived static HTML](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-01/review.html)                                                        |
+| Firefly | [2026-09-06-02](firefly/2026-09-06-02/notes.md) | Rejected: sparse visual mass; raw preserved without finishing                                | [Untouched raw](firefly/2026-09-06-02/raw/generated-white.png)                                                                                                  |
+| Firefly | [2026-09-06-03](firefly/2026-09-06-03/notes.md) | Rejected: intimidating insect anatomy; raw preserved without finishing                       | [Untouched raw](firefly/2026-09-06-03/raw/generated-white.png)                                                                                                  |
+| Firefly | [2026-09-06-04](firefly/2026-09-06-04/notes.md) | Rejected: generic cute character; raw preserved without finishing                            | [Untouched raw](firefly/2026-09-06-04/raw/generated-white.png)                                                                                                  |
+| Firefly | [2026-09-06-05](firefly/2026-09-06-05/notes.md) | Superseded and unselected; untouched scene preserved without finishing                       | [Untouched raw](firefly/2026-09-06-05/raw/generated.png)                                                                                                        |
+| Firefly | [2026-09-06-06](firefly/2026-09-06-06/notes.md) | Improved direction retained; clean foreground requested in study 07                          | [Untouched raw](firefly/2026-09-06-06/raw/generated.png)                                                                                                        |
+| Firefly | [2026-09-06-07](firefly/2026-09-06-07/notes.md) | White source returned; rejected for missing second eye                                       | [Untouched raw](firefly/2026-09-06-07/raw/generated.png)                                                                                                        |
+| Firefly | [2026-09-06-08](firefly/2026-09-06-08/notes.md) | Rejected: backward-facing eye perspective                                                    | [Untouched raw](firefly/2026-09-06-08/raw/generated.png)                                                                                                        |
+| Firefly | [2026-09-06-09](firefly/2026-09-06-09/notes.md) | Rejected: fire and insect compete; firefly must be primary                                   | [Untouched raw](firefly/2026-09-06-09/raw/generated.png)                                                                                                        |
 | Firefly | [2026-09-06-10](firefly/2026-09-06-10/notes.md) | Finishing 02 adopted; 84% placement, safe rounded borders, independent night and glow layers | [Site comparison](https://index.dev.hexly.ai/logos/firefly) · [Static review](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-10/review.html) |
 
 ## Running a study
@@ -106,17 +106,17 @@ Follow [the usage wiki and adoption SOP](../../docs/07-logo-usage-sop.md) for ev
 
 Nine owner-selected originals received presentation-only refinements with zero image-generation calls. Each study has source/provenance records, a presentation brief, a distinct texture recipe, frozen finishing 01, native and small exports, an adoption record, and an individual review.
 
-| Project | Study | Review |
-| --- | --- | --- |
-| R2Shot | [2026-09-07-01](r2shot/2026-09-07-01/notes.md) | [Static HTML](r2shot/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/r2shot) |
-| Hooky | [2026-09-07-01](hooky/2026-09-07-01/notes.md) | [Static HTML](hooky/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/hooky) |
-| Zhe | [2026-09-07-01](zhe/2026-09-07-01/notes.md) | [Static HTML](zhe/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/zhe) |
-| Lyre | [2026-09-07-03](lyre/2026-09-07-03/notes.md) | [Static HTML](lyre/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/lyre) |
-| Shrike | [2026-09-07-01](shrike/2026-09-07-01/notes.md) | [Static HTML](shrike/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/shrike) |
-| Wooly | [2026-09-07-01](wooly/2026-09-07-01/notes.md) | [Static HTML](wooly/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/wooly) |
-| Noheir | [2026-09-07-01](noheir/2026-09-07-01/notes.md) | [Static HTML](noheir/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/noheir) |
-| Dove | [2026-09-07-03](dove/2026-09-07-03/notes.md) | [Static HTML](dove/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/dove) |
-| Neo | [2026-09-07-03](neo/2026-09-07-03/notes.md) | [Static HTML](neo/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/neo) |
+| Project | Study                                          | Review                                                                                  |
+| ------- | ---------------------------------------------- | --------------------------------------------------------------------------------------- |
+| R2Shot  | [2026-09-07-01](r2shot/2026-09-07-01/notes.md) | [Static HTML](r2shot/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/r2shot) |
+| Hooky   | [2026-09-07-01](hooky/2026-09-07-01/notes.md)  | [Static HTML](hooky/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/hooky)   |
+| Zhe     | [2026-09-07-01](zhe/2026-09-07-01/notes.md)    | [Static HTML](zhe/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/zhe)       |
+| Lyre    | [2026-09-07-03](lyre/2026-09-07-03/notes.md)   | [Static HTML](lyre/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/lyre)     |
+| Shrike  | [2026-09-07-01](shrike/2026-09-07-01/notes.md) | [Static HTML](shrike/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/shrike) |
+| Wooly   | [2026-09-07-01](wooly/2026-09-07-01/notes.md)  | [Static HTML](wooly/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/wooly)   |
+| Noheir  | [2026-09-07-01](noheir/2026-09-07-01/notes.md) | [Static HTML](noheir/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/noheir) |
+| Dove    | [2026-09-07-03](dove/2026-09-07-03/notes.md)   | [Static HTML](dove/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/dove)     |
+| Neo     | [2026-09-07-03](neo/2026-09-07-03/notes.md)    | [Static HTML](neo/2026-09-07-03/review.html) · [Site](https://hexly.ai/logos/neo)       |
 
 The retained route uses `source.json`, `source-review.json`, and `brief.txt`, with `sourceMode: "retained-transparent"`. Native foregrounds remain byte-identical. Public archives use `source.png` and `brief.txt`; R2Shot and Hooky keep their native 920/900 px masters. See [the family guide](../../docs/06-logo-family.md), [usage SOP](../../docs/07-logo-usage-sop.md), and [batch audit](audits/2026-09-07-retained/).
 
@@ -126,34 +126,34 @@ These four studies preserve liked identities while repairing hard crop boundarie
 
 Checksummed SVG inputs in `input/` are frozen drawing layers, like the rendered copies and tool snapshots in `finishing/`. They are excluded from code formatting and accessibility lint; the live review HTML remains linted. Preserve their exact source bytes and recorded hashes.
 
-| Project | Selected study / pass | Review |
-| --- | --- | --- |
-| Wooly | [2026-09-07-02 / 01](wooly/2026-09-07-02/notes.md) | [Static HTML](wooly/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/wooly) |
-| Noheir | [2026-09-07-02 / 02](noheir/2026-09-07-02/notes.md) | [Static HTML](noheir/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/noheir) |
-| Raven | [2026-09-07-04 / 02](raven/2026-09-07-04/notes.md) | [Static HTML](raven/2026-09-07-04/review.html) · [Site](https://hexly.ai/logos/raven) |
+| Project | Selected study / pass                                | Review                                                                                    |
+| ------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Wooly   | [2026-09-07-02 / 01](wooly/2026-09-07-02/notes.md)   | [Static HTML](wooly/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/wooly)     |
+| Noheir  | [2026-09-07-02 / 02](noheir/2026-09-07-02/notes.md)  | [Static HTML](noheir/2026-09-07-02/review.html) · [Site](https://hexly.ai/logos/noheir)   |
+| Raven   | [2026-09-07-04 / 02](raven/2026-09-07-04/notes.md)   | [Static HTML](raven/2026-09-07-04/review.html) · [Site](https://hexly.ai/logos/raven)     |
 | Life.ai | [2026-09-07-01 / 02](life-ai/2026-09-07-01/notes.md) | [Static HTML](life-ai/2026-09-07-01/review.html) · [Site](https://hexly.ai/logos/life-ai) |
 
 ## Fifteen-project continuation — 2026-09-07
 
 The owner waived intermediate human confirmation for these named batches and authorized source replacement and publication. Twelve projects use newly generated artwork; Xray, Pika and Gecko keep the original transparent bytes and receive independent presentation layers. Every project keeps its own review page.
 
-| Project | Study / selected pass | Route | Static review | Catalogue |
-| --- | --- | --- | --- | --- |
-| surety | `2026-09-07-01 / 01` | Generated | [HTML](surety/2026-09-07-01/review.html) | [/surety](https://hexly.ai/logos/surety) |
-| owl | `2026-09-07-01 / 01` | Generated | [HTML](owl/2026-09-07-01/review.html) | [/owl](https://hexly.ai/logos/owl) |
-| ellie | `2026-09-07-01 / 01` | Generated | [HTML](ellie/2026-09-07-01/review.html) | [/ellie](https://hexly.ai/logos/ellie) |
-| giraffe | `2026-09-07-01 / 02` | Generated | [HTML](giraffe/2026-09-07-01/review.html) | [/giraffe](https://hexly.ai/logos/giraffe) |
-| steed | `2026-09-07-02 / 01` | Generated | [HTML](steed/2026-09-07-02/review.html) | [/steed](https://hexly.ai/logos/steed) |
-| xray | `2026-09-07-01 / 01` | Retained original | [HTML](xray/2026-09-07-01/review.html) | [/xray](https://hexly.ai/logos/xray) |
-| bat | `2026-09-07-01 / 02` | Generated | [HTML](bat/2026-09-07-01/review.html) | [/bat](https://hexly.ai/logos/bat) |
-| rooster | `2026-09-07-01 / 02` | Generated | [HTML](rooster/2026-09-07-01/review.html) | [/rooster](https://hexly.ai/logos/rooster) |
-| snaky | `2026-09-07-01 / 01` | Generated | [HTML](snaky/2026-09-07-01/review.html) | [/snaky](https://hexly.ai/logos/snaky) |
-| codo | `2026-09-07-01 / 01` | Generated | [HTML](codo/2026-09-07-01/review.html) | [/codo](https://hexly.ai/logos/codo) |
-| gaga | `2026-09-07-01 / 01` | Generated | [HTML](gaga/2026-09-07-01/review.html) | [/gaga](https://hexly.ai/logos/gaga) |
-| pika | `2026-09-07-01 / 01` | Retained original | [HTML](pika/2026-09-07-01/review.html) | [/pika](https://hexly.ai/logos/pika) |
-| backy | `2026-09-07-01 / 01` | Generated | [HTML](backy/2026-09-07-01/review.html) | [/backy](https://hexly.ai/logos/backy) |
-| gecko | `2026-09-07-01 / 01` | Retained original | [HTML](gecko/2026-09-07-01/review.html) | [/gecko](https://hexly.ai/logos/gecko) |
-| otter | `2026-09-07-01 / 02` | Generated | [HTML](otter/2026-09-07-01/review.html) | [/otter](https://hexly.ai/logos/otter) |
+| Project | Study / selected pass | Route             | Static review                             | Catalogue                                  |
+| ------- | --------------------- | ----------------- | ----------------------------------------- | ------------------------------------------ |
+| surety  | `2026-09-07-01 / 01`  | Generated         | [HTML](surety/2026-09-07-01/review.html)  | [/surety](https://hexly.ai/logos/surety)   |
+| owl     | `2026-09-07-01 / 01`  | Generated         | [HTML](owl/2026-09-07-01/review.html)     | [/owl](https://hexly.ai/logos/owl)         |
+| ellie   | `2026-09-07-01 / 01`  | Generated         | [HTML](ellie/2026-09-07-01/review.html)   | [/ellie](https://hexly.ai/logos/ellie)     |
+| giraffe | `2026-09-07-01 / 02`  | Generated         | [HTML](giraffe/2026-09-07-01/review.html) | [/giraffe](https://hexly.ai/logos/giraffe) |
+| steed   | `2026-09-07-02 / 01`  | Generated         | [HTML](steed/2026-09-07-02/review.html)   | [/steed](https://hexly.ai/logos/steed)     |
+| xray    | `2026-09-07-01 / 01`  | Retained original | [HTML](xray/2026-09-07-01/review.html)    | [/xray](https://hexly.ai/logos/xray)       |
+| bat     | `2026-09-07-01 / 02`  | Generated         | [HTML](bat/2026-09-07-01/review.html)     | [/bat](https://hexly.ai/logos/bat)         |
+| rooster | `2026-09-07-01 / 02`  | Generated         | [HTML](rooster/2026-09-07-01/review.html) | [/rooster](https://hexly.ai/logos/rooster) |
+| snaky   | `2026-09-07-01 / 01`  | Generated         | [HTML](snaky/2026-09-07-01/review.html)   | [/snaky](https://hexly.ai/logos/snaky)     |
+| codo    | `2026-09-07-01 / 01`  | Generated         | [HTML](codo/2026-09-07-01/review.html)    | [/codo](https://hexly.ai/logos/codo)       |
+| gaga    | `2026-09-07-01 / 01`  | Generated         | [HTML](gaga/2026-09-07-01/review.html)    | [/gaga](https://hexly.ai/logos/gaga)       |
+| pika    | `2026-09-07-01 / 01`  | Retained original | [HTML](pika/2026-09-07-01/review.html)    | [/pika](https://hexly.ai/logos/pika)       |
+| backy   | `2026-09-07-01 / 01`  | Generated         | [HTML](backy/2026-09-07-01/review.html)   | [/backy](https://hexly.ai/logos/backy)     |
+| gecko   | `2026-09-07-01 / 01`  | Retained original | [HTML](gecko/2026-09-07-01/review.html)   | [/gecko](https://hexly.ai/logos/gecko)     |
+| otter   | `2026-09-07-01 / 02`  | Generated         | [HTML](otter/2026-09-07-01/review.html)   | [/otter](https://hexly.ai/logos/otter)     |
 
 The [redesign audit](audits/2026-09-07-redesign/) and [ten-project audit](audits/2026-09-07-next-ten/) record source consumers, actual browser/native captures and publication. Native source artwork, raw checkpoints, prompt/brief, reference provenance, all finishing layers and checksums remain archived. Source revisions and platform rules are listed in [the shared usage SOP](../../docs/07-logo-usage-sop.md#fifteen-identities--2026-09-07).
 
@@ -161,11 +161,11 @@ The [redesign audit](audits/2026-09-07-redesign/) and [ten-project audit](audits
 
 The owner-directed material series uses physical surfaces, complete object framing, pale project-specific engineering grids and separately projected hover shadows. Dotty is opaque checker ceramic; Matrix is layered black/green circuitry; Basalt is an obsidian-and-gemstone Forbidden City corner tower viewed from a shallower approximately 25-degree angle.
 
-| Project | Selected study / pass | Static review | Catalogue |
-| --- | --- | --- | --- |
-| Dotty | [2026-09-07-01 / 01](dotty/2026-09-07-01/notes.md) | [Static HTML](dotty/2026-09-07-01/review.html) | [Site](https://hexly.ai/logos/dotty) |
-| Matrix | [2026-09-07-01 / 01](matrix/2026-09-07-01/notes.md) | [Static HTML](matrix/2026-09-07-01/review.html) | [Site](https://hexly.ai/logos/matrix) |
-| Basalt | [2026-09-07-02 / 01](basalt/2026-09-07-02/notes.md) | [Static HTML](basalt/2026-09-07-02/review.html) | [Site](https://hexly.ai/logos/basalt) |
+| Project | Selected study / pass                               | Static review                                   | Catalogue                             |
+| ------- | --------------------------------------------------- | ----------------------------------------------- | ------------------------------------- |
+| Dotty   | [2026-09-07-01 / 01](dotty/2026-09-07-01/notes.md)  | [Static HTML](dotty/2026-09-07-01/review.html)  | [Site](https://hexly.ai/logos/dotty)  |
+| Matrix  | [2026-09-07-01 / 01](matrix/2026-09-07-01/notes.md) | [Static HTML](matrix/2026-09-07-01/review.html) | [Site](https://hexly.ai/logos/matrix) |
+| Basalt  | [2026-09-07-02 / 01](basalt/2026-09-07-02/notes.md) | [Static HTML](basalt/2026-09-07-02/review.html) | [Site](https://hexly.ai/logos/basalt) |
 
 [Basalt study 01](basalt/2026-09-07-01/notes.md) preserves the ordinary stone slab rejected by the owner. Its raw output and finishing pass remain archived and were never adopted. Study 02 follows the explicit architectural correction. Four native generation calls cover the complete batch, with exact-hash delegated acceptance recorded separately for each result.
 
@@ -173,20 +173,20 @@ See [the material audit](audits/2026-09-07-materials/) for native palette sample
 
 ## Remaining physical objects and PokePocket — 2026-09-07
 
-| Project | Subject | Source commit | Native | Comparison |
-| --- | --- | --- | --- | --- |
-| pokepocket | Red-capped trainer turning with a Poké Ball | `019798f1c8` | 960 px | [/logos/pokepocket](https://hexly.ai/logos/pokepocket) |
-| dogfight | Titanium F-22 desk model caught in a banking turn | `b5ab075a96` | 2048 px | [/logos/dogfight](https://hexly.ai/logos/dogfight) |
-| pew-game | Walnut and brass prairie arcade joystick | `ee68b2dead` | 2048 px | [/logos/pew-game](https://hexly.ai/logos/pew-game) |
-| signoff-now | Petrol enamel mechanical tally counter | `51b679fba8` | 2048 px | [/logos/signoff-now](https://hexly.ai/logos/signoff-now) |
-| unseal | An opened green enamel and brass padlock | `61a55cdb43` | 2048 px | [/logos/unseal](https://hexly.ai/logos/unseal) |
-| flow | Celadon mechanical keycap with a Chinese character | `f4a9e9464d` | 2048 px | [/logos/flow](https://hexly.ai/logos/flow) |
-| arena | Walnut dual-dial chess clock | `4a9efd6690` | 2048 px | [/logos/arena](https://hexly.ai/logos/arena) |
-| echo | A brass and navy pocket compass | `59730aa033` | 2048 px | [/logos/echo](https://hexly.ai/logos/echo) |
-| deca | A midnight teal rotary desk telephone | `1f41b41255` | 2048 px | [/logos/deca](https://hexly.ai/logos/deca) |
-| runner | Emerald enamel mechanical stopwatch | `a5d7861753` | 2048 px | [/logos/runner](https://hexly.ai/logos/runner) |
-| geekhub | A folded newspaper in a forest-green reading folio | `d45713b5d3` | 2048 px | [/logos/geekhub](https://hexly.ai/logos/geekhub) |
-| ipsafe | A green network cable tester with a short patch lead | `d8a28afb9e` | 2048 px | [/logos/ipsafe](https://hexly.ai/logos/ipsafe) |
+| Project     | Subject                                              | Source commit | Native  | Comparison                                               |
+| ----------- | ---------------------------------------------------- | ------------- | ------- | -------------------------------------------------------- |
+| pokepocket  | Red-capped trainer turning with a Poké Ball          | `019798f1c8`  | 960 px  | [/logos/pokepocket](https://hexly.ai/logos/pokepocket)   |
+| dogfight    | Titanium F-22 desk model caught in a banking turn    | `b5ab075a96`  | 2048 px | [/logos/dogfight](https://hexly.ai/logos/dogfight)       |
+| pew-game    | Walnut and brass prairie arcade joystick             | `ee68b2dead`  | 2048 px | [/logos/pew-game](https://hexly.ai/logos/pew-game)       |
+| signoff-now | Petrol enamel mechanical tally counter               | `51b679fba8`  | 2048 px | [/logos/signoff-now](https://hexly.ai/logos/signoff-now) |
+| unseal      | An opened green enamel and brass padlock             | `61a55cdb43`  | 2048 px | [/logos/unseal](https://hexly.ai/logos/unseal)           |
+| flow        | Celadon mechanical keycap with a Chinese character   | `f4a9e9464d`  | 2048 px | [/logos/flow](https://hexly.ai/logos/flow)               |
+| arena       | Walnut dual-dial chess clock                         | `4a9efd6690`  | 2048 px | [/logos/arena](https://hexly.ai/logos/arena)             |
+| echo        | A brass and navy pocket compass                      | `59730aa033`  | 2048 px | [/logos/echo](https://hexly.ai/logos/echo)               |
+| deca        | A midnight teal rotary desk telephone                | `1f41b41255`  | 2048 px | [/logos/deca](https://hexly.ai/logos/deca)               |
+| runner      | Emerald enamel mechanical stopwatch                  | `a5d7861753`  | 2048 px | [/logos/runner](https://hexly.ai/logos/runner)           |
+| geekhub     | A folded newspaper in a forest-green reading folio   | `d45713b5d3`  | 2048 px | [/logos/geekhub](https://hexly.ai/logos/geekhub)         |
+| ipsafe      | A green network cable tester with a short patch lead | `d8a28afb9e`  | 2048 px | [/logos/ipsafe](https://hexly.ai/logos/ipsafe)           |
 
 The batch archive is [audits/2026-09-07-objects/](audits/2026-09-07-objects/). Each selected study has a complete independent `review.html`, exported masters/sizes, palette, exact-byte source decision, transparent edge inspection, rounded-framing report and source adoption provenance. The public `/logos/<project>` path keeps the full comparison without showing presentation-reference boards.
 
@@ -196,12 +196,12 @@ Eleven native 2048 px generations succeeded, one per physical-object project. Po
 
 ## Four new local studies — 2026-09-07
 
-| Project | Selected study / pass | Static review | Local catalogue |
-| --- | --- | --- | --- |
-| Clip | [2026-09-07-02 / 01](clip/2026-09-07-02/notes.md) | [HTML](clip/2026-09-07-02/review.html) | [/logos/clip](https://index.dev.hexly.ai/logos/clip) |
-| Fundly | [2026-09-07-01 / 02](fundly/2026-09-07-01/notes.md) | [HTML](fundly/2026-09-07-01/review.html) | [/logos/fundly](https://index.dev.hexly.ai/logos/fundly) |
+| Project | Selected study / pass                                | Static review                             | Local catalogue                                            |
+| ------- | ---------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------- |
+| Clip    | [2026-09-07-02 / 01](clip/2026-09-07-02/notes.md)    | [HTML](clip/2026-09-07-02/review.html)    | [/logos/clip](https://index.dev.hexly.ai/logos/clip)       |
+| Fundly  | [2026-09-07-01 / 02](fundly/2026-09-07-01/notes.md)  | [HTML](fundly/2026-09-07-01/review.html)  | [/logos/fundly](https://index.dev.hexly.ai/logos/fundly)   |
 | DreamRO | [2026-09-07-01 / 02](dreamro/2026-09-07-01/notes.md) | [HTML](dreamro/2026-09-07-01/review.html) | [/logos/dreamro](https://index.dev.hexly.ai/logos/dreamro) |
-| Meowth | [2026-09-07-01 / 02](meowth/2026-09-07-01/notes.md) | [HTML](meowth/2026-09-07-01/review.html) | [/logos/meowth](https://index.dev.hexly.ai/logos/meowth) |
+| Meowth  | [2026-09-07-01 / 02](meowth/2026-09-07-01/notes.md)  | [HTML](meowth/2026-09-07-01/review.html)  | [/logos/meowth](https://index.dev.hexly.ai/logos/meowth)   |
 
 Clip restores the familiar ostrich, hat and feather spray in an offset portrait with a natural lower neck entry. [The earlier mantis](clip/2026-09-07-01/notes.md) remains rejected history. Fundly's lowered binoculars and Meowth's yarn each supply one multicolored animal interest group; DreamRO follows the physical-object series with classical equipment in front of a shield.
 

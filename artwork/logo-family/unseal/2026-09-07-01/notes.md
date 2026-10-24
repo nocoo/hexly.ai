@@ -19,7 +19,6 @@ At 128/64 px, the open shackle, green body and red seal remain clear. At 32/24/1
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`61a55cdb43`](https://github.com/nocoo/unseal/commit/61a55cdb4380bc9e5dbaada3390ef29c7be6b84a). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/unseal)
 - [Local Vite path](https://index.dev.hexly.ai/logos/unseal)
 - [Complete static review](review.html)

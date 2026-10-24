@@ -21,7 +21,6 @@ The background is **Acacia canopy relief**: base `#79865b`, light `#b9c398`, sha
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`c715434784`](https://github.com/nocoo/giraffe/commit/c71543478405f580e6dd36ebac18174f7ae6e474). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/giraffe)
 - [Local individual page](https://index.dev.hexly.ai/logos/giraffe)
 - [Complete static review](review.html)

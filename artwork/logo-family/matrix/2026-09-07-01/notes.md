@@ -22,7 +22,6 @@ The background is **Circuit routing grid**, using base `#e2eee7`, light `#f4faf7
 ## Source adoption and individual delivery
 
 Selected source commit: [`8e6f9add03`](https://github.com/nocoo/matrix/commit/8e6f9add035b35505576f161d95393c0b8b31e07). README headers use the rounded presentation; small navigation, login/loading and browser marks use the transparent foreground. The source generator verifies its masters and records all PNG dimensions, ICO entries and alpha checks.
-
 - [Individual Vite comparison](https://hexly.ai/logos/matrix)
 - [Local Vite comparison](https://index.dev.hexly.ai/logos/matrix)
 - [Complete individual static review](review.html)

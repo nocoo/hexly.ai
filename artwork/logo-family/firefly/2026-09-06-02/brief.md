@@ -3,7 +3,6 @@
 ## Purpose and correction
 
 Firefly is a blog and publishing platform used for `lizheng.blog`. Its role is to share ideas and help readers find a direction. The original flame and the smooth lantern insect in study 01 are both unselected. This request keeps the animal, completely redraws its pose and surfaces, and follows the owner's latest four corrections.
-
 - Every project needs its own background motif geometry.
 - Every animal needs one visible interest point beyond its main mass.
 - Fragmentation must be visible across Firefly's anatomy, as it is in Frogie and Pew.

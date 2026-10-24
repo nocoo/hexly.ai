@@ -7,7 +7,6 @@ observation and local execution traces. The extension does not control Pi or
 claim access to hidden model reasoning. A final native UI is not evidenced.
 The owner explicitly selected the bird series regardless of implementation type.
 There is no previous independent Logo.
-
 - Subject: Red kite, natural over-the-shoulder glance, compact partial-body view.
 - Drawing: Connected flat facets across head, folded wings and broad body.
 - Palette: Rust/chestnut, warm gold, pale gray head and dark primary feathers.

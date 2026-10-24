@@ -22,7 +22,6 @@ The presentation uses **Quill pennants**: base `#b0a6c5`, light `#d8d2e4`, shade
 ## Adoption and delivery
 
 The source project contains the selected masters in commit [`c59fe3ad5a`](https://github.com/nocoo/raven/commit/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf). README uses the rounded presentation; small app and browser marks use the transparent foreground. Touch icons use the square presentation. See [adoption.json](adoption.json), [consumer verification](verification/source-assets.json), and the [batch publication report](../../audits/2026-09-07-framing/source-publication.json).
-
 - [Individual site page](https://hexly.ai/logos/raven) · [Local site path](https://index.dev.hexly.ai/logos/raven)
 - [Complete static before/after review](review.html)
 - [Source usage guide](https://github.com/nocoo/raven/blob/c59fe3ad5a0aea2e849b2b9ee00be189091c9faf/assets/brand/README.md)

@@ -1,7 +1,6 @@
 # Zhe presentation-only refinement
 
 The familiar golden bee, hovering above a warm beeswax field.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `a0c8b924026189661b2e5eb11d876775f5a3fd506c91b32e61992f53a811a046`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.

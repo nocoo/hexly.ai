@@ -22,7 +22,6 @@ The presentation uses **Quiet terraces**: base `#638783`, light `#a5c2b8`, shade
 ## Adoption and delivery
 
 The source project contains the selected masters in commit [`5e32426a60`](https://github.com/nocoo/noheir/commit/5e32426a6044436eee5c6b2894910666896a8b49). README uses the rounded presentation; small app and browser marks use the transparent foreground. Touch icons use the square presentation. See [adoption.json](adoption.json), [consumer verification](verification/source-assets.json), and the [batch publication report](../../audits/2026-09-07-framing/source-publication.json).
-
 - [Individual site page](https://hexly.ai/logos/noheir) · [Local site path](https://index.dev.hexly.ai/logos/noheir)
 - [Complete static before/after review](review.html)
 - [Source usage guide](https://github.com/nocoo/noheir/blob/5e32426a6044436eee5c6b2894910666896a8b49/assets/brand/README.md)

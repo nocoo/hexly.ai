@@ -21,7 +21,6 @@ The background is **Dusk scallops**: base `#9a7e90`, light `#ccb4bc`, shade `#61
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`46f5c95a6c`](https://github.com/nocoo/bat/commit/46f5c95a6c134487130e2a6d9336ec5e8895a0f7). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/bat)
 - [Local individual page](https://index.dev.hexly.ai/logos/bat)
 - [Complete static review](review.html)

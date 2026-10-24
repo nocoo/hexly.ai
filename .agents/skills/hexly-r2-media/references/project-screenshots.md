@@ -17,10 +17,10 @@ Importing it is not new image generation or a claim that a product is released.
 
 The current examples each contain three **unchanged 1280 × 800 PNGs**:
 
-| Catalogue ID | Source repository revision | Source directory |
-| --- | --- | --- |
-| `hooky` | `7ab9c8a23895ae836b49545f962fcf169e097970` | `materials/2.0.0/store/screenshots/` |
-| `r2shot` | `89cd7217a35af6cc5890bee02e9e97a7febfd1a8` | `materials/2.0.0/store/screenshots/` |
+| Catalogue ID | Source repository revision                 | Source directory                     |
+| ------------ | ------------------------------------------ | ------------------------------------ |
+| `hooky`      | `7ab9c8a23895ae836b49545f962fcf169e097970` | `materials/2.0.0/store/screenshots/` |
+| `r2shot`     | `89cd7217a35af6cc5890bee02e9e97a7febfd1a8` | `materials/2.0.0/store/screenshots/` |
 
 Use stable image IDs such as `workspace`, `settings`, or `store-01`. Array order
 is display order; there is no fixed count or required ratio. These first imports
@@ -101,17 +101,17 @@ After verification, add one entry per image to `media.screenshots`:
 
 ```json
 {
-  "id": "store-01",
-  "src": "/screenshots/hooky/store-01/v1.0.0/original.png",
-  "preview": "/screenshots/hooky/store-01/v1.0.0/preview.webp",
-  "thumbnail": "/screenshots/hooky/store-01/v1.0.0/thumbnail.webp",
-  "source": "docs/assets/hooky/screenshots/store-01/v1.0.0.json",
-  "alt": {
-    "en": "Send page context to a webhook from the browser popup.",
-    "zh": "从浏览器弹窗，把当前页面内容发送到 Webhook。"
-  },
-  "width": 1280,
-  "height": 800
+	"id": "store-01",
+	"src": "/screenshots/hooky/store-01/v1.0.0/original.png",
+	"preview": "/screenshots/hooky/store-01/v1.0.0/preview.webp",
+	"thumbnail": "/screenshots/hooky/store-01/v1.0.0/thumbnail.webp",
+	"source": "docs/assets/hooky/screenshots/store-01/v1.0.0.json",
+	"alt": {
+		"en": "Send page context to a webhook from the browser popup.",
+		"zh": "从浏览器弹窗，把当前页面内容发送到 Webhook。"
+	},
+	"width": 1280,
+	"height": 800
 }
 ```
 

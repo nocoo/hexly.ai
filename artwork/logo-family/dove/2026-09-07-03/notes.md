@@ -1,7 +1,6 @@
 # Dove presentation-only refinement
 
 The familiar blossom dove, on a muted violet petal relief.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `25be5b3506f84b454b9e5a9c469a353955e41fc16123aa6bf7a28088d74bd1aa`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.
