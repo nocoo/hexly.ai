@@ -1,0 +1,58 @@
+{
+	"project": "chamelo",
+	"study": "2026-10-24-05",
+	"finishing": "01",
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "d65019b022e11e56a5ab6b5bdbaa8cb1b9fa1d9e8589f0fb03ae057e9fbe74b9",
+		"width": 2048,
+		"height": 2048
+	},
+	"sampling": "Native sRGB pixels from the untouched generation; no resampling. Coordinates use the top-left origin of the 2048-square master.",
+	"foreground": [
+		{
+			"color": "#255a81",
+			"name": "Azurite crest",
+			"coordinate": [832, 960],
+			"rgb": [37, 90, 129]
+		},
+		{
+			"color": "#b03011",
+			"name": "Cinnabar ribbon",
+			"coordinate": [448, 960],
+			"rgb": [176, 48, 17]
+		},
+		{
+			"color": "#658a63",
+			"name": "Malachite band",
+			"coordinate": [704, 1088],
+			"rgb": [101, 138, 99]
+		},
+		{
+			"color": "#deb04e",
+			"name": "Gold leaf",
+			"coordinate": [256, 1472],
+			"rgb": [222, 176, 78]
+		},
+		{
+			"color": "#efd5a8",
+			"name": "Aged plaster",
+			"coordinate": [576, 1728],
+			"rgb": [239, 213, 168]
+		}
+	],
+	"presentation": {
+		"base": "#efe3cb",
+		"light": "#faf4e7",
+		"shade": "#dcc7a5",
+		"motif": "#a9834f",
+		"note": "Authored in presentation.json; separate from native artwork samples and from the chamelo site tokens."
+	},
+	"website": {
+		"primary": "#2e4640",
+		"background": "#f3ebdd",
+		"ink": "#23302e",
+		"accent": "#9c513b",
+		"source": "src/data/palettes.ts dunhuang-huacai theme and src/styles/tokens.css; not derived from the Logo"
+	}
+}
