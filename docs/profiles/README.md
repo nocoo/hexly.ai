@@ -95,4 +95,4 @@
 | [🤖 Next AI](90-next-ai.md) | Adopted family | #0e4752 | #dfe8e7 |
 | [🧠 Octo](91-octo.md) | Adopted family | #0a6099 | #eeeff2 |
 | [🎧 his.fm](92-his-fm.md) | Original asset | #213e2d | #f3f3ec |
-| [🖌️ Chamelo](93-chamelo.md) | Refined preview | #2e4640 | #f3ebdd |
+| [🖌️ Chamelo](93-chamelo.md) | Adopted family | #2e4640 | #f3ebdd |

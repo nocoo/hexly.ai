@@ -11,7 +11,7 @@
 - Chinese: 从中国文化意象出发的配色图谱，配套策展色板与 Agent 主题简报
 - Profile section: Recent Projects
 - Profile revision: `78a9bcef80b07a127a82b10dc5a6ccc71b3fdc49`
-- Repository revision inspected: `bec2c8314d262ce59140f7ada41577f3ac4e71fb`
+- Repository revision inspected: `836d46862543e67a6072e2386949dab550677a24`
 
 ## Project goal
 
@@ -20,8 +20,8 @@ Turn an original cultural image into a curated palette, a semantic website theme
 把原创文化意象转成策展色板、语义化站点主题，以及 Agent 可直接落地的主题简报；每套配色都带六个色值、十二个语义角色、用色比例、实时预览与 CSS / Agent Prompt 导出。
 
 - [中文 README](https://github.com/nocoo/chamelo/blob/main/README.md) · [English README](https://github.com/nocoo/chamelo/blob/main/docs/README.en.md)
-- Verified: 2026-10-24; [source revision](https://github.com/nocoo/chamelo/tree/bec2c8314d262ce59140f7ada41577f3ac4e71fb)
-- Source files: [`README.md`](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/README.md), [`AGENTS.md`](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/AGENTS.md), [`src/data/palettes.ts`](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/src/data/palettes.ts), [`public/favicon.svg`](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/public/favicon.svg)
+- Verified: 2026-10-24; [source revision](https://github.com/nocoo/chamelo/tree/836d46862543e67a6072e2386949dab550677a24)
+- Source files: [`README.md`](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/README.md), [`AGENTS.md`](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/AGENTS.md), [`src/data/palettes.ts`](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/src/data/palettes.ts), [`public/favicon.svg`](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/public/favicon.svg)
 
 ### Tech stack
 
@@ -34,15 +34,15 @@ Turn an original cultural image into a curated palette, a semantic website theme
 
 ## Current logo
 
-![Chamelo source identity](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-160-74ba145ee4ac.webp)
+![Chamelo source identity](https://hexly.ai/logos/display/chamelo-2026-10-24-160.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Dunhuang-mural chameleon head entering the frame
-- [Source](https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/public/favicon.svg): `public/favicon.svg`
-- [Preserved asset](https://h.no.mt/projects/chamelo/identity/v1.0.0/chamelo-36d1f5a19426.svg)
-- Original dimensions: 64 × 64
-- Original size: 305 bytes
-- SHA-256: `36d1f5a194268e37890433809f0a09240e77ca166184e5d49d28a68baa8c266c`
+- [Source](https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png): `logo.png`
+- [Preserved asset](https://hexly.ai/logos/originals/chamelo-2026-10-24.png)
+- Original dimensions: 2048 × 2048
+- Original size: 5048621 bytes
+- SHA-256: `338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -71,7 +71,7 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 
 ![Chamelo refined preview](https://h.no.mt/logos/family/chamelo/2026-10-24-05/01/icon-160.webp)
 
-- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-10-24.
+- Status: Adopted in the source project; updated 2026-10-24.
 - Study `2026-10-24-05`, finishing `01`
 - Refined subject: Dunhuang-mural chameleon head with a cinnabar ribbon, entering from the left edge
 - Site path: `/projects/chamelo#brand`; [local gallery](https://index.dev.hexly.ai/projects/chamelo#brand)
