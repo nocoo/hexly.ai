@@ -19,19 +19,32 @@
 			"!!artwork/logo-family/*/*/response.json",
 			"!!artwork/brands/*/texture-studies/*/*/request.json",
 			"!!artwork/brands/*/texture-studies/*/*/response.json",
-			"!!artwork/logo-family/*/*/references/*.source.json"
+			"!!artwork/logo-family/*/*/references/*.source.json",
+			"!!artwork/brands/*/texture-studies/*/*/raw-review.json",
+			"!!public/textures/*/v*/*-review.json",
+			"!!public/textures/*/v*/provenance.json",
+			"!!public/textures/*/v*/manifest.json"
 		]
 	},
-	"formatter": { "enabled": true, "indentStyle": "tab" },
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"preset": "recommended",
-			"style": { "noDescendingSpecificity": "off" }
+			"style": {
+				"noDescendingSpecificity": "off"
+			}
 		}
 	},
 	"assist": {
 		"enabled": true,
-		"actions": { "source": { "organizeImports": "on" } }
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
 	}
 }

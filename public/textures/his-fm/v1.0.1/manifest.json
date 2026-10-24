@@ -1,0 +1,198 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "his-fm",
+	"version": "1.0.1",
+	"root": "/textures/his-fm/v1.0.1",
+	"canonical": "https://hexly.ai/projects/his-fm#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/his-fm/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Stillwood morning",
+			"zh": "林间晨雾"
+		},
+		"description": {
+			"en": "Ivory paper washed with morning mist and soft fir silhouettes at the edges.",
+			"zh": "薄雾洗过的象牙纸面，边缘浮着冷杉与蕨类的剪影。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.35
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/his-fm-channel.jpg",
+		"source": "https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
+		"kind": "original",
+		"width": 3000,
+		"height": 3000,
+		"sha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85",
+		"bytes": 495570,
+		"rgbaSha256": "12ba7576f345e867298311651f6d8f6d2d0474a8255c8f7c5c3e80d9d081b199"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/his-fm/texture-studies/2026-10-24-flare-onboarding-01/light",
+			"request": "/textures/his-fm/v1.0.1/source-light-request.json",
+			"response": "/textures/his-fm/v1.0.1/source-light-response.json",
+			"prompt": "/textures/his-fm/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/his-fm/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/his-fm/v1.0.1/texture-light.png",
+				"sha256": "79ecf6ac9fa5ea28ddb3bc8f77add7333abfce8d37b0cdb66e532008468dbfe4",
+				"bytes": 1938124,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/his-fm/texture-studies/2026-10-24-flare-onboarding-01/dark",
+			"request": "/textures/his-fm/v1.0.1/source-dark-request.json",
+			"response": "/textures/his-fm/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/his-fm/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/his-fm/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/his-fm/v1.0.1/texture-dark.png",
+				"sha256": "3f2518b91a65961e187418877b41d572c56cfbee0d298ec531b8b61cde17ca18",
+				"bytes": 1902453,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/his-fm/v1.0.1/guide.md",
+			"role": "Usage, rights and integration guidance",
+			"bytes": 1305,
+			"sha256": "21f8f76c4e6d85a76ff629141fd1c5e7973a54012bffd81d9e2ef7ca9273e946"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/license.txt",
+			"role": "Rights statement for the generated texture and authored files",
+			"bytes": 616,
+			"sha256": "79aa44054ae8657817a050d3336f2fc1cea69a1f7ce9a3a613c34d7b380837e7"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/provenance.json",
+			"role": "Pack provenance, delivery and measured contrast",
+			"bytes": 3769,
+			"sha256": "7acaa8ad959cf87b80b8f85175ce0ac6ff21db20b1b9c8a510de214edc6db773"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/review.html",
+			"role": "Standalone specimen page for this pack",
+			"bytes": 2213,
+			"sha256": "c02ec22b5f986b2481e5266ec934bf8ed1a90891cc62beec2b06d852f9bbbdfd"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact-byte owner acceptance",
+			"bytes": 944,
+			"sha256": "98b13d6d6515a07993f6e2e15bb014d3e0ce5e88b694c656c04e328ed81ef34a"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/source-dark-request.json",
+			"role": "Sanitized request record",
+			"bytes": 626,
+			"sha256": "7b45a0c31ddff8b99da8d4870ee0d4652b999160a4996148c113a0f3b4cca7f4"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/source-dark-response.json",
+			"role": "Sanitized response record",
+			"bytes": 408,
+			"sha256": "434a8c06c7a47997dcad2926ffc2e2ba1e02fdbc95cfc9d6bd3ac554f23f72ac"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/source-light-raw-review.json",
+			"role": "Exact-byte owner acceptance",
+			"bytes": 944,
+			"sha256": "7101dab68d73775ad38f32af9ecd9197bf4e30688c6afc63cf469826fb849849"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/source-light-request.json",
+			"role": "Sanitized request record",
+			"bytes": 626,
+			"sha256": "f6d7c4d49e1380877763fa26962bb53d4216fd4e4844827c8e580d97989f2019"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/source-light-response.json",
+			"role": "Sanitized response record",
+			"bytes": 408,
+			"sha256": "7523913779bdad392a8d9ae13141fe458ba75863de6b51a16de43a9402cd4460"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16652,
+			"sha256": "4d8f43194b6168bfab07afdeb2896f0f35cd006183629d65db52a173acbf0d65"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation prompt; no credentials",
+			"bytes": 617,
+			"sha256": "8e93d988bec9126959ef178c547eb5507dbf9ca3a5515dec305f81a9aa09ab73"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1902453,
+			"sha256": "3f2518b91a65961e187418877b41d572c56cfbee0d298ec531b8b61cde17ca18"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 271794,
+			"sha256": "d6f9a430978ac570ae3e44b54210678f56b8f309818230c6b1c6ac33a0ef38a2"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 16932,
+			"sha256": "dad5625bd94fee5a78b1872bd84543404a5394593e3d40e59f33b21b553b2326"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation prompt; no credentials",
+			"bytes": 562,
+			"sha256": "fb17f5af2897d3436c08dfa36352e896847a9853b42ece9ac2717f0355178997"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1938124,
+			"sha256": "79ecf6ac9fa5ea28ddb3bc8f77add7333abfce8d37b0cdb66e532008468dbfe4"
+		},
+		{
+			"path": "/textures/his-fm/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 286010,
+			"sha256": "0cec0d810d817b9eab4bbea25245af9fdf71d3f5b77bb91a3384a281fe50e56a"
+		}
+	]
+}

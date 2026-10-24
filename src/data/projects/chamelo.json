@@ -264,5 +264,22 @@
 		"root": "/icons/chamelo/v1.0.0",
 		"width": 2048,
 		"height": 2048
+	},
+	"brandTexture": {
+		"root": "/textures/chamelo/v1.0.3",
+		"version": "1.0.3",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Dunhuang plaster",
+			"zh": "敦煌壁面"
+		},
+		"description": {
+			"en": "Aged plaster with hairline cracks and restrained mineral flecks across the whole sheet.",
+			"zh": "斑驳砂壁，细裂纹与克制的矿物斑点铺满整张。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.3
 	}
 }

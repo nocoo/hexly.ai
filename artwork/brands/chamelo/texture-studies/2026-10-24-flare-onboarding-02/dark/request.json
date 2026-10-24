@@ -1,0 +1,15 @@
+{
+	"provider": "Azure OpenAI",
+	"route": "images/generations",
+	"helper": "/Users/nocoo/.agents/skills/agi-image-generation/scripts/generate.py",
+	"parameters": {
+		"model": "gpt-image-2.5-flare",
+		"size": "1024x1024",
+		"quality": "high",
+		"n": 1
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "7bcd2fe457daa7169ce9c0b7808df265aaf7b1866d94e7b37133d9917d648027",
+	"references": [],
+	"note": "Text-only decorative surface request recorded from the shared helper output."
+}

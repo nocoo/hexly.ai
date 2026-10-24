@@ -1,0 +1,81 @@
+{
+	"project": "chamelo",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "character-or-object",
+		"language": "habitat-surface",
+		"name": {
+			"en": "Dunhuang plaster",
+			"zh": "敦煌壁面"
+		},
+		"description": {
+			"en": "Aged plaster with hairline cracks and restrained mineral pigment flecks.",
+			"zh": "斑驳砂壁，细裂纹与克制的矿物颜料斑点。"
+		},
+		"motif": "Aged plaster aggregate, hairline drying cracks and azurite, malachite and cinnabar flecks.",
+		"rationale": "The identity is painted in Dunhuang mural language and the approved finishing already uses weathered plaster light."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/chamelo-2026-10-24.png",
+		"source": "https://github.com/nocoo/chamelo/blob/836d46862543e67a6072e2386949dab550677a24/logo.png",
+		"kind": "original",
+		"width": 2048,
+		"height": 2048,
+		"sha256": "338f4041d0ce4c31c02163f403c051ed4f9ead04a2825eaf87b69fde9447d0aa",
+		"bytes": 5048621,
+		"rgbaSha256": "4ddc91fb933323d7eb6f5dd03dd89c04f1b654a6ba020269c44aeb60b638cf2e"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-01/light",
+			"request": "/textures/chamelo/v1.0.0/source-light-request.json",
+			"response": "/textures/chamelo/v1.0.0/source-light-response.json",
+			"prompt": "/textures/chamelo/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.0/texture-light.png",
+				"sha256": "0dfbe9e85ca671f463e0864ab9de98db93d171e2219d7e05b6aad23a75d3d729",
+				"bytes": 2379973,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/chamelo/texture-studies/2026-10-24-flare-onboarding-01/dark",
+			"request": "/textures/chamelo/v1.0.0/source-dark-request.json",
+			"response": "/textures/chamelo/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/chamelo/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/chamelo/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/chamelo/v1.0.0/texture-dark.png",
+				"sha256": "26c78eb102526664dcb70d611f4908ae65f57277b2bf505cdf28e71e3ca48381",
+				"bytes": 2352661,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"publication": "R2 projects/chamelo/textures/v1.0.0"
+}

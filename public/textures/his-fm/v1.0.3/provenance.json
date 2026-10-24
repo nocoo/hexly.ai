@@ -1,0 +1,105 @@
+{
+	"project": "his-fm",
+	"version": "1.0.3",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "supplied-identity",
+		"language": "habitat-surface",
+		"name": {
+			"en": "Stillwood paper",
+			"zh": "林间纸面"
+		},
+		"description": {
+			"en": "Pressed fir and fern fronds spread evenly across ivory handmade paper.",
+			"zh": "象牙手工纸上均匀铺开的冷杉与蕨类压痕。"
+		},
+		"motif": "Pressed fir and fern fronds covering the whole sheet at an even low contrast.",
+		"rationale": "The RSS channel artwork is a stillwood; the surface carries the same foliage across the entire sheet so the card reads as one campaign material."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/his-fm-channel.jpg",
+		"source": "https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
+		"kind": "original",
+		"width": 3000,
+		"height": 3000,
+		"sha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85",
+		"bytes": 495570,
+		"rgbaSha256": "12ba7576f345e867298311651f6d8f6d2d0474a8255c8f7c5c3e80d9d081b199"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/his-fm/texture-studies/2026-10-24-flare-onboarding-03/light",
+			"request": "/textures/his-fm/v1.0.3/source-light-request.json",
+			"response": "/textures/his-fm/v1.0.3/source-light-response.json",
+			"prompt": "/textures/his-fm/v1.0.3/texture-light-prompt.txt",
+			"approval": "/textures/his-fm/v1.0.3/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/his-fm/v1.0.3/texture-light.png",
+				"sha256": "3158c98430b4141cb09f48cf8674981c49dfc60c35a68979774a0af29642189b",
+				"bytes": 1999224,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/his-fm/texture-studies/2026-10-24-flare-onboarding-03/dark",
+			"request": "/textures/his-fm/v1.0.3/source-dark-request.json",
+			"response": "/textures/his-fm/v1.0.3/source-dark-response.json",
+			"prompt": "/textures/his-fm/v1.0.3/texture-dark-prompt.txt",
+			"approval": "/textures/his-fm/v1.0.3/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/his-fm/v1.0.3/texture-dark.png",
+				"sha256": "c3eaf6ef981e6ac4765ea920cb443a5255f4769d90b4da0eded0ec6497a82bb6",
+				"bytes": 1975607,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"delivery": {
+		"nativeSize": [
+			1024,
+			1024
+		],
+		"webpQuality": 90,
+		"cardSize": [
+			320,
+			320
+		],
+		"cardWebpQuality": 88,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.3
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every 320px texture pixel composited at surfaceOpacity over Hexly normal, hover and page surfaces; body text stays fully opaque.",
+		"lightMinimum": 4.849,
+		"darkMinimum": 6.398,
+		"target": 4.7
+	},
+	"superseded": "v1.0.0 and v1.0.1 concentrated detail at the edges with a quiet centre; v1.0.2 covered the whole sheet evenly. Both read differently from the rest of the collection on cards. v1.0.3 places one restrained motif in the lower-right quadrant and leaves the rest quiet, matching the family card treatment.",
+	"publication": "R2 projects/his-fm/textures/v1.0.3"
+}
