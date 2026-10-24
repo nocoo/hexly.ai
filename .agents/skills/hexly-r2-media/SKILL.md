@@ -1,4 +1,5 @@
 ---
+
 name: hexly-r2-media
 description: Publish and maintain Hexly project materials in the hexlyai R2 bucket at h.no.mt. Use for logos, brand packages, screenshots, fonts, recorded media, downloads, asset URLs, local hydration and asset onboarding. Preserve immutable bytes, identity rights and versioned receipts; keep renderer caches private and outside deployment.
 ---
@@ -37,7 +38,7 @@ provenance SHAs; the published commit map connects them to the smaller history.
   brand/family/video-font directories preserve their public relative paths.
 - `docs/assets/publication.jsonl` records completed full-byte CDN checks. Existing
   project-film receipts remain in `docs/media/<project>/<video-id>/v<version>.json`.
-`Project.media.videos` references an active film once, independent of templates.
+  `Project.media.videos` references an active film once, independent of templates.
 - Existing source rights, official Logo bytes/colors and campaign distinction
   remain authoritative. R2 hosting grants no new license. Keep provenance,
   generation prompts/model/source hashes and OFL/MIT notices with their source.

@@ -36,18 +36,18 @@ they do not claim separate user approval of each new composition.
 
 ## Local acceptance
 
-| Check | Actual result |
-| --- | --- |
-| TypeScript | Application, Worker and Video Kit passed |
-| Biome | Full lint passed; no warnings |
-| Unit/coverage | 301 passed in 20 files; statements 99.58%, branches 98.85%, functions/lines 100% |
-| HTTP through local Workers | 127 passed; every exported file of all 54 kits verified against its manifest |
-| Chromium desktop/mobile | 346 passed; includes 124 collection cases plus existing Snail/gallery/navigation/media/template coverage |
-| Accessibility | axe checks passed on eight representative archives and their standalone specimens in both themes and viewport configurations |
-| Source identity | All 75 catalogue baselines protected; original bytes and decoded RGBA hashes checked; original Logo/family paths and Snail source/assets have no diff |
-| Exports | Full-image Hero placements, opaque source colors, transparent favicon entries, glyph bounds and distinct seamless textures passed |
-| Assets/build | Asset/profile generation, complete asset checks, Vite build and Wrangler deployment dry run passed |
-| Security | OSV checked 484 locked packages; Gitleaks passed |
+| Check                      | Actual result                                                                                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TypeScript                 | Application, Worker and Video Kit passed                                                                                                              |
+| Biome                      | Full lint passed; no warnings                                                                                                                         |
+| Unit/coverage              | 301 passed in 20 files; statements 99.58%, branches 98.85%, functions/lines 100%                                                                      |
+| HTTP through local Workers | 127 passed; every exported file of all 54 kits verified against its manifest                                                                          |
+| Chromium desktop/mobile    | 346 passed; includes 124 collection cases plus existing Snail/gallery/navigation/media/template coverage                                              |
+| Accessibility              | axe checks passed on eight representative archives and their standalone specimens in both themes and viewport configurations                          |
+| Source identity            | All 75 catalogue baselines protected; original bytes and decoded RGBA hashes checked; original Logo/family paths and Snail source/assets have no diff |
+| Exports                    | Full-image Hero placements, opaque source colors, transparent favicon entries, glyph bounds and distinct seamless textures passed                     |
+| Assets/build               | Asset/profile generation, complete asset checks, Vite build and Wrangler deployment dry run passed                                                    |
+| Security                   | OSV checked 484 locked packages; Gitleaks passed                                                                                                      |
 
 The browser run initially found an ambiguous legacy “Download original” test
 selector after the new original-Logo download was added. Making that selector

@@ -19,7 +19,6 @@ At 128/64 px, the red joystick, two buttons and wood block remain clear. At 32/2
 ## Adoption and delivery
 
 The root transparent logo, large README presentation, source usage guide and all existing application/browser consumers are committed at [`ee68b2dead`](https://github.com/nocoo/pew-game/commit/ee68b2dead3e5e698b2427d6a949e8e57c69d520). Touch/PWA sources use opaque square tiles; small favicon/header/sidebar marks use transparent foregrounds without another mask. The previous identity is preserved in Hexly.
-
 - [Complete individual comparison](https://hexly.ai/logos/pew-game)
 - [Local Vite path](https://index.dev.hexly.ai/logos/pew-game)
 - [Complete static review](review.html)

@@ -1,7 +1,6 @@
 # Shrike presentation-only refinement
 
 The familiar shrike, resting on a cool folded-wing relief.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `97692ebf5b7811eb48005f814a5688bc05d582533adab440636295370a60befa`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.

@@ -6,29 +6,29 @@ One project supplies every design. Choose a cover, a content layout, an ending a
 
 ## The designs
 
-| Content layout | Composition | Use |
-|---|---|---|
-| Launch | Generous type beside a large project image; the original clear launch language. | Releases and introductions |
-| Essential | Centered words, one quiet focal point and open space. | Announcements and invitations |
-| Showcase | A panoramic product window under a concise title/caption row. | Screenshots, interfaces and demos |
-| Columns | A strong thesis on one side, supporting detail and sourced facts on the other. | Explanations and research |
-| Bento | A large story module, project art and three subordinate fact modules. | Overviews and updates |
+| Content layout | Composition                                                                     | Use                               |
+| -------------- | ------------------------------------------------------------------------------- | --------------------------------- |
+| Launch         | Generous type beside a large project image; the original clear launch language. | Releases and introductions        |
+| Essential      | Centered words, one quiet focal point and open space.                           | Announcements and invitations     |
+| Showcase       | A panoramic product window under a concise title/caption row.                   | Screenshots, interfaces and demos |
+| Columns        | A strong thesis on one side, supporting detail and sourced facts on the other.  | Explanations and research         |
+| Bento          | A large story module, project art and three subordinate fact modules.           | Overviews and updates             |
 
-| Opening | Composition and motion |
-|---|---|
-| Signal | Red point, centered title, short note; sequential type entrances. |
-| Frame | A wide product window above a bold title/caption band; shallow perspective settles into a readable frame. |
-| Index | Oversized folio, project name and opening note; aligned typographic entrances. |
-| Horizon | Wide headline above a full-width paper field, with a small project object at the edge. |
-| Stack | Layered paper settles behind one clean title card. |
+| Opening | Composition and motion                                                                                    |
+| ------- | --------------------------------------------------------------------------------------------------------- |
+| Signal  | Red point, centered title, short note; sequential type entrances.                                         |
+| Frame   | A wide product window above a bold title/caption band; shallow perspective settles into a readable frame. |
+| Index   | Oversized folio, project name and opening note; aligned typographic entrances.                            |
+| Horizon | Wide headline above a full-width paper field, with a small project object at the edge.                    |
+| Stack   | Layered paper settles behind one clean title card.                                                        |
 
-| Ending | Composition and motion |
-|---|---|
-| Signature | The official mark alone, its full wordmark, then the caption. |
-| Line | A large project headline, a red line that finishes at the edge, and a Hexly signature that settles at the lower left. |
-| Frame | A layered paper end card, pairing the Hexly signature with the project identity and destination. |
-| Split | Two paper fields; the mark expands into a left-hand signature, then the project and destination appear on the right. |
-| Colophon | An oversized signature between fine rules and a small colophon. |
+| Ending    | Composition and motion                                                                                                |
+| --------- | --------------------------------------------------------------------------------------------------------------------- |
+| Signature | The official mark alone, its full wordmark, then the caption.                                                         |
+| Line      | A large project headline, a red line that finishes at the edge, and a Hexly signature that settles at the lower left. |
+| Frame     | A layered paper end card, pairing the Hexly signature with the project identity and destination.                      |
+| Split     | Two paper fields; the mark expands into a left-hand signature, then the project and destination appear on the right.  |
+| Colophon  | An oversized signature between fine rules and a small colophon.                                                       |
 
 Every design supports `light` and `dark`, using the real site palettes. These are two themes of every component, not separate component counts. The five content layouts support title, chapter, content and CTA scenes; openings and endings do not depend on the chosen content layout. `LogoReveal` also remains available as a standalone component.
 
@@ -61,21 +61,21 @@ The project, three base choices, theme and selected view are shareable URL param
 The strict schema is `src/schema.ts`. The site emits `/templates/film-v2.schema.json` and `/templates/manifest-v2.schema.json`.
 
 ```tsx
-import { createProjectFilm, Film, parseFilm } from '@hexly/video-kit';
-import { FilmStill, VideoPreview } from '@hexly/video-kit/player';
+import { createProjectFilm, Film, parseFilm } from "@hexly/video-kit";
+import { FilmStill, VideoPreview } from "@hexly/video-kit/player";
 
-const config = createProjectFilm(project, 'showcase', 'en', {
-  theme: 'dark',
-  opening: 'stack',
-  ending: 'split',
+const config = createProjectFilm(project, "showcase", "en", {
+	theme: "dark",
+	opening: "stack",
+	ending: "split",
 });
 
 // Optional: independently change any title/chapter/content/CTA scene.
 const mixed = parseFilm({
-  ...config,
-  scenes: config.scenes.map(scene => scene.id === 'title'
-    ? { ...scene, template: 'columns' }
-    : scene),
+	...config,
+	scenes: config.scenes.map((scene) =>
+		scene.id === "title" ? { ...scene, template: "columns" } : scene,
+	),
 });
 
 <Film {...mixed} />;
@@ -87,16 +87,16 @@ const mixed = parseFilm({
 
 `VideoPreview` accepts `locale`, controlled `view`/`onView`, `focusScene` and `onConfigChange`. The latter emits the effective setup, including frame format and reduced motion. Import the player lazily in a host website. Rendering dependencies never enter the browser bundle.
 
-| Field | Contract |
-|---|---|
-| `schemaVersion` | `2` |
-| `template` | `launch`, `essential`, `showcase`, `columns`, `bento` |
-| `opening` | `signal`, `frame`, `index`, `horizon`, `stack` |
-| `ending` | `signature`, `line`, `frame`, `split`, `colophon` |
-| `theme` | `light` or `dark`, independent of the host website |
-| `format`, `fps`, `motion` | `landscape` (1920×1080) / `portrait` (1080×1920), 30 fps, `full` / `reduced` |
-| `project` | Stable ID, name, summary, repository, optional website/logo/screenshot, evidenced colors, technologies, facts and source note |
-| `scenes` | 1–24 unique IDs; kind, 4–30 second duration, title/eyebrow/body, optional HTTPS CTA link and optional content `template` override |
+| Field                     | Contract                                                                                                                          |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `schemaVersion`           | `2`                                                                                                                               |
+| `template`                | `launch`, `essential`, `showcase`, `columns`, `bento`                                                                             |
+| `opening`                 | `signal`, `frame`, `index`, `horizon`, `stack`                                                                                    |
+| `ending`                  | `signature`, `line`, `frame`, `split`, `colophon`                                                                                 |
+| `theme`                   | `light` or `dark`, independent of the host website                                                                                |
+| `format`, `fps`, `motion` | `landscape` (1920×1080) / `portrait` (1080×1920), 30 fps, `full` / `reduced`                                                      |
+| `project`                 | Stable ID, name, summary, repository, optional website/logo/screenshot, evidenced colors, technologies, facts and source note     |
+| `scenes`                  | 1–24 unique IDs; kind, 4–30 second duration, title/eyebrow/body, optional HTTPS CTA link and optional content `template` override |
 
 `parseFilm()` validates copy lengths, URLs, image sources, unique scene IDs and CTA links. A v1 setup is rejected rather than silently reinterpreted. To migrate an authorized consumer, set schemaVersion 2, select a current content layout, add the three independent composition fields and review the result. Do not edit an ongoing consumer's frozen production.
 

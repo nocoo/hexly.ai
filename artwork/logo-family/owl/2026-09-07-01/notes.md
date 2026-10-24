@@ -19,7 +19,6 @@ The background is **Night aperture relief**: base `#5f6684`, light `#a8aec5`, sh
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`e1c69addb6`](https://github.com/nocoo/owl/commit/e1c69addb656e8907a8828001e1f5c103f3b9fbf). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/owl)
 - [Local individual page](https://index.dev.hexly.ai/logos/owl)
 - [Complete static review](review.html)

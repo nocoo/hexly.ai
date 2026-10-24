@@ -210,6 +210,7 @@ test.describe("status display time zones", () => {
 		);
 		const axis = page.locator(".status-timeline-labels > span").first();
 		await expect(axis).toHaveText(/^5 Sep/);
+		// biome-ignore lint/performance/useDomNodeTextContent: compared with useInnerText below
 		const metrics = await page.locator(".status-metrics").innerText();
 		const bars = await page
 			.locator(".status-bar")

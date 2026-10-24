@@ -19,7 +19,6 @@ The background is **Amber fan relief**: base `#9b865c`, light `#d1c49b`, shade `
 ## Source adoption and individual delivery
 
 The selected masters are committed to the source repository at [`f257e0977e`](https://github.com/nocoo/surety/commit/f257e0977e85358f9d02ed3f79a9fad8862e5117). Large README images use the rounded presentation. Small UI and browser marks use the transparent foreground. Native app, touch and social derivatives follow the shared usage SOP; independent configured identities remain preserved.
-
 - [Individual Vite page](https://hexly.ai/logos/surety)
 - [Local individual page](https://index.dev.hexly.ai/logos/surety)
 - [Complete static review](review.html)

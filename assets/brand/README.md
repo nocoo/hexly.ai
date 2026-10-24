@@ -4,11 +4,11 @@ The locally adopted identity is the six-wedge terracotta ceramic hexagon,
 study `2026-10-18-02`, finishing `01`. The previous four-triangle PNG and
 historical SVG remain archived; neither is the current site mark.
 
-| Role | Local file | Use |
-| --- | --- | --- |
-| Native transparent master | `logo.png` | Source identity; no added mask, tile or shadow |
-| Native square presentation | `assets/brand/icon.png` | Platform-controlled masking |
-| Native rounded presentation | `assets/brand/icon-rounded.png` | 128px README artwork and large cards |
+| Role                        | Local file                      | Use                                            |
+| --------------------------- | ------------------------------- | ---------------------------------------------- |
+| Native transparent master   | `logo.png`                      | Source identity; no added mask, tile or shadow |
+| Native square presentation  | `assets/brand/icon.png`         | Platform-controlled masking                    |
+| Native rounded presentation | `assets/brand/icon-rounded.png` | 128px README artwork and large cards           |
 
 All three files are 1024px and exactly match the selected family archive.
 `source.json` records their hashes and the immutable committed source receipt.

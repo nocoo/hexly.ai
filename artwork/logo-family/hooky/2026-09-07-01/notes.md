@@ -1,7 +1,6 @@
 # Hooky presentation-only refinement
 
 The familiar octopus, with a softly curled plum setting.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 900 × 900, SHA-256 `7e98ee9d581e9f5f70fadc239a60b6d0204f62f8586d9e1e8ee7b0ef7106fe62`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.

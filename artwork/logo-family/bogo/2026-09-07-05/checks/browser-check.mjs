@@ -99,7 +99,7 @@ try {
 			.getByRole("button", { name: "Switch to Chinese", exact: true })
 			.click();
 		assert.match(
-			await page.locator(".current-artwork figcaption").innerText(),
+			await page.locator(".current-artwork figcaption").textContent(),
 			/已采用的家族 Logo/,
 		);
 		await page
@@ -120,7 +120,7 @@ try {
 		await page.reload();
 		assert.equal(new URL(page.url()).pathname, "/logos/bogo");
 		await page.locator(".artwork-image").waitFor();
-		assert.match(await page.locator("#identity-title").innerText(), /Bogo/);
+		assert.match(await page.locator("#identity-title").textContent(), /Bogo/);
 		await page
 			.getByRole("button", { name: "Switch to English", exact: true })
 			.click();
@@ -186,7 +186,7 @@ try {
 			.getByText("Read the exact generation prompt", { exact: true })
 			.click();
 		assert.match(
-			await page.locator("#generation-prompt").innerText(),
+			await page.locator("#generation-prompt").textContent(),
 			/HEAD CLOSE-UP/,
 		);
 		await page

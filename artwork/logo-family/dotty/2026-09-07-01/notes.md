@@ -22,7 +22,6 @@ The background is **Precision drafting grid**, using base `#e5eaf1`, light `#f8f
 ## Source adoption and individual delivery
 
 Selected source commit: [`1becb8026f`](https://github.com/nocoo/dotty/commit/1becb8026f44a20d9827cd5b4f100b6fb09836fe). README headers use the rounded presentation; small navigation, login/loading and browser marks use the transparent foreground. The source generator verifies its masters and records all PNG dimensions, ICO entries and alpha checks.
-
 - [Individual Vite comparison](https://hexly.ai/logos/dotty)
 - [Local Vite comparison](https://index.dev.hexly.ai/logos/dotty)
 - [Complete individual static review](review.html)

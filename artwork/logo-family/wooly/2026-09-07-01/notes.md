@@ -1,7 +1,6 @@
 # Wooly presentation-only refinement
 
 The familiar woolly wink, on a soft rose field of cloudlike folds.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `95798966dd1ac22371700d4845ab4537745484cfdf3ab323fbd61fbf0732ed36`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.

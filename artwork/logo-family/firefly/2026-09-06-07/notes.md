@@ -13,7 +13,6 @@ The returned matte is near-white with small pixel variations. Corner and backgro
 ## Raw evidence
 
 The untouched result was shown immediately and opened in Chrome at [the local raw URL](https://index.dev.hexly.ai/artwork/logo-family/firefly/2026-09-06-07/raw/generated.png). The served bytes match the source exactly.
-
 - Request ID: `8cd30580-977b-44bb-8296-f96ffe261b49`.
 - Raw SHA-256: `e80c96c5e5a6e0dfdd416799fed1def6632acebdbdaada6f62d00dea93212a41`.
 - Prompt SHA-256: `362312bcf82597355729e22e2dcd31ee52f79c3c1d871c6d7b0dce6416c11d78`.

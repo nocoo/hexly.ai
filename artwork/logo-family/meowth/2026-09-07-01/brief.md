@@ -5,7 +5,6 @@
 A local HTTP bridge and dashboard for Claude, Codex, Copilot, Hermes and Pi coding-agent CLIs.
 
 The owner requests **A silver-blue American Shorthair head playing with one yarn loop**. This is a new identity; the old logo is historical comparison, not a composition constraint. A curious American Shorthair catches a small yarn loop with one real paw and tilts its face toward the viewer.
-
 - Series: animal.
 - Color hierarchy: Fresh silver-blue and slate-gray classic tabby markings, ivory muzzle, warm amber eyes; coral, golden yellow, turquoise and violet only on the yarn loop.
 - Interest point: One compact loop of multicolored yarn beside the cheek, touched by one natural paw; no second accessory.

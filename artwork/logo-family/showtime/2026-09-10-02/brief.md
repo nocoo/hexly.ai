@@ -11,7 +11,6 @@ One matte charcoal slate, black-and-ivory diagonal clapsticks, a restrained silv
 ## Generation and references
 
 Request one native 2048 × 2048 opaque PNG through the existing Azure gpt-image-2 helper, quality high, on uniform white. All metal, painted ivory and lettering remain opaque. Exclude ground shadows, floor planes, colored lighting, presentation tiles and background texture.
-
 1. Signoff's archived tally counter supplies restrained physical materials, crisp edges and studio-light quality only. Do not transfer its counter shape, navy paint, digits or brass button.
 2. ref02.jpeg supplies compact icon framing and a tactile presentation hierarchy only. Do not transfer animals, tiles, motifs or colors.
 

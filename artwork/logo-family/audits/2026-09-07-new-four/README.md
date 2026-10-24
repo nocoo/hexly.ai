@@ -4,12 +4,12 @@ Local generation batch for Clip, Fundly, DreamRO and Meowth. The [initial direct
 
 The four original identities are preserved in the catalogue and `public/logos/originals/`. Each selected study has its own complete static comparison and `/logos/<project>` path, transparent/square/rounded/white masters, ten PNG sizes from 2048 to 16 px, independent masks/background/shadows, palette evidence and a local selection record. Curated public files are limited to these four selected studies.
 
-| Project | Selected study / pass | Motif | Framing | Local page |
-| --- | --- | --- | --- | --- |
-| Clip | `2026-09-07-02 / 01` | Windward feather relief | 225.5 px feature clearance; natural lower neck entry | [/logos/clip](https://index.dev.hexly.ai/logos/clip) |
-| Fundly | `2026-09-07-01 / 02` | Far-horizon sightlines | 160.5 px complete-foreground clearance | [/logos/fundly](https://index.dev.hexly.ai/logos/fundly) |
-| DreamRO | `2026-09-07-01 / 02` | Parchment heraldic lattice | 161.5 px complete-foreground clearance | [/logos/dreamro](https://index.dev.hexly.ai/logos/dreamro) |
-| Meowth | `2026-09-07-01 / 02` | Quiet yarn loops | 174.5 px complete-foreground clearance | [/logos/meowth](https://index.dev.hexly.ai/logos/meowth) |
+| Project | Selected study / pass | Motif                      | Framing                                              | Local page                                                 |
+| ------- | --------------------- | -------------------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| Clip    | `2026-09-07-02 / 01`  | Windward feather relief    | 225.5 px feature clearance; natural lower neck entry | [/logos/clip](https://index.dev.hexly.ai/logos/clip)       |
+| Fundly  | `2026-09-07-01 / 02`  | Far-horizon sightlines     | 160.5 px complete-foreground clearance               | [/logos/fundly](https://index.dev.hexly.ai/logos/fundly)   |
+| DreamRO | `2026-09-07-01 / 02`  | Parchment heraldic lattice | 161.5 px complete-foreground clearance               | [/logos/dreamro](https://index.dev.hexly.ai/logos/dreamro) |
+| Meowth  | `2026-09-07-01 / 02`  | Quiet yarn loops           | 174.5 px complete-foreground clearance               | [/logos/meowth](https://index.dev.hexly.ai/logos/meowth)   |
 
 Five Azure gpt-image-2 requests returned five native 2048 × 2048 images. Four are selected locally; Clip's mantis remains owner-rejected history with its earlier delegated acceptance and frozen finishing snapshot intact. No source repository adopted the new artwork. `Refined` identifies finished local presentations; every selected family record has `status: "review"`.
 

@@ -1,7 +1,6 @@
 # Noheir presentation-only refinement
 
 The familiar warm cow, framed by quiet terraces in a cool green field.
-
 - Method: retained original; zero image-generation calls.
 - Native source: 2048 × 2048, SHA-256 `2ed854204cbc8801a253c10797de0ae73f45dc0b83508bd8cf4e1066eb9595bb`.
 - Finishing pass: 01. Transparent master and archived original are byte-identical.
