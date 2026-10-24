@@ -34,15 +34,15 @@ Publish a Mandarin podcast whose collecting, editing, voicing, artwork and produ
 
 ## Current logo
 
-![his.fm source identity](https://h.no.mt/projects/his-fm/identity/v1.0.0/his-fm-160-e7e0405894cd.webp)
+![his.fm source identity](https://h.no.mt/projects/his-fm/identity/v1.0.0/his-fm-channel-160-1c93f55e7521.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Existing application icon
-- [Source](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/apps/web/public/apple-touch-icon.png): `apps/web/public/apple-touch-icon.png`
-- [Preserved asset](https://h.no.mt/projects/his-fm/identity/v1.0.0/his-fm-e1fa78d21e83.png)
-- Original dimensions: 180 × 180
-- Original size: 5413 bytes
-- SHA-256: `e1fa78d21e83e59d77890c6e6bce41b5b70cbb12e9eee27548c8a8507f218b2d`
+- [Source](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/artwork/show-stillwood-20261022/podcast-cover-3000.jpg): `artwork/show-stillwood-20261022/podcast-cover-3000.jpg`
+- [Preserved asset](https://h.no.mt/projects/his-fm/identity/v1.0.0/his-fm-channel-0a64cac84ab3.jpg)
+- Original dimensions: 3000 × 3000
+- Original size: 495570 bytes
+- SHA-256: `0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -50,11 +50,11 @@ Publish a Mandarin podcast whose collecting, editing, voicing, artwork and produ
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| primary | `#213e2d` | apps/web/src/brand/themes.ts grove palette Forest |
-| accent | `#d0f66d` | apps/web/src/brand/themes.ts grove palette Lime |
-| accent | `#759c45` | apps/web/src/brand/themes.ts grove palette Grass |
-| accent | `#dfd8f0` | apps/web/src/brand/themes.ts grove palette Lilac |
-| background | `#f3f3ec` | apps/web/src/brand/themes.ts grove palette Paper |
+| primary | `#333935` | Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (900, 300); RSS channel artwork |
+| accent | `#ebebe1` | Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (1240, 1500); RSS channel artwork |
+| accent | `#9b9772` | Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (2250, 150); RSS channel artwork |
+| accent | `#8b7253` | Native 0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85, sRGB pixel (380, 2250); RSS channel artwork |
+| accent | `#d0f66d` | apps/web/src/brand/themes.ts grove palette Lime; website token, not the artwork |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
