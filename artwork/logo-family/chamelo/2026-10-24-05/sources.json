@@ -1,0 +1,38 @@
+{
+	"observedAt": "2026-10-24T00:00:00+00:00",
+	"repository": {
+		"name": "chamelo",
+		"visibility": "PUBLIC",
+		"isArchived": false,
+		"isFork": false,
+		"url": "https://github.com/nocoo/chamelo",
+		"description": "A Chinese-cultural colour atlas with curated palettes and agent briefs",
+		"defaultBranchRef": {
+			"name": "main",
+			"target": {
+				"oid": "bec2c8314d262ce59140f7ada41577f3ac4e71fb"
+			}
+		}
+	},
+	"references": [
+		{
+			"index": 1,
+			"path": "input/study-04-raw.png",
+			"sha256": "25f1ad65eebe6d3c32344c46f37c09cfafa0f43a3857541717fa2dc63b3e9dd1",
+			"role": "Beast head, mural palette and ink-outline detail from the preceding study; simplified in this pass and stripped of every ornament",
+			"provenance": "https://github.com/nocoo/hexly.ai/blob/main/artwork/logo-family/chamelo/2026-10-24-04/raw/generated.png"
+		},
+		{
+			"index": 2,
+			"path": "input/dunhuang-original.png",
+			"sha256": "089ca4f5bf7a5ebba41681d763c6090b8378f579c15aa106f764df1b2ea5f82b",
+			"role": "Project's first-edition artwork for mineral pigment material only; not a composition to copy",
+			"provenance": "https://github.com/nocoo/chamelo/blob/bec2c8314d262ce59140f7ada41577f3ac4e71fb/public/artworks/dunhuang-huacai/original.png"
+		}
+	],
+	"withdrawnDirections": [
+		"2026-10-24-01 and 2026-10-24-02 used the family faceted drawing language; the owner withdrew it for this project.",
+		"2026-10-24-03 painted a full-body beast and 2026-10-24-04 a dense head close-up; both were rejected for framing and density."
+	],
+	"priorIndependentLogo": "public/favicon.svg — a designer C arc on dark teal; preserved as the previous identity and the catalogue's source Logo."
+}
