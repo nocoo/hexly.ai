@@ -1,12 +1,16 @@
 {
 	"status": "succeeded",
-	"finishedAt": "2026-10-24T01:14:58.586720+00:00",
-	"output": {
-		"path": "raw.png",
-		"width": 1024,
-		"height": 1024,
-		"bytes": 1902453,
-		"sha256": "3f2518b91a65961e187418877b41d572c56cfbee0d298ec531b8b61cde17ca18"
-	},
+	"httpStatus": 200,
+	"finishedAt": "2026-10-24T01:25:22.439Z",
+	"note": "The shared helper printed no request identifier; only observed fields are recorded.",
+	"outputs": [
+		{
+			"path": "raw.png",
+			"width": 1024,
+			"height": 1024,
+			"bytes": 1902453,
+			"sha256": "3f2518b91a65961e187418877b41d572c56cfbee0d298ec531b8b61cde17ca18"
+		}
+	],
 	"rawResponseBytesPreserved": true
 }

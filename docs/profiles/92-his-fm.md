@@ -58,6 +58,16 @@ Publish a Mandarin podcast whose collecting, editing, voicing, artwork and produ
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current campaign texture
+
+- Stillwood paper / 林间纸面: Pressed fir and fern fronds spread evenly across ivory handmade paper.
+- 象牙手工纸上均匀铺开的冷杉与蕨类压痕。
+- Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
+- Independent texture pack v1.0.3; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.3.
+- [Paper PNG](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-light.png) · [Night PNG](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/his-fm/textures/v1.0.3/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/his-fm/textures/v1.0.3/manifest.json) · [Usage/rights](https://h.no.mt/projects/his-fm/textures/v1.0.3/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/his-fm/v1.0.3/review.html)
+- Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
 ## Future family notes
 
 Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.

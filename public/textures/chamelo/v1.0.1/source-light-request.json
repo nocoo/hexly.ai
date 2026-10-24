@@ -1,0 +1,16 @@
+{
+	"provider": "Azure OpenAI",
+	"route": "images/generations",
+	"helper": "/Users/nocoo/.agents/skills/agi-image-generation/scripts/generate.py",
+	"helperSha256": "2701b552012f669a93b09c89baf9daa623537d41f7e176ab5a40c2ec016f84df",
+	"parameters": {
+		"model": "gpt-image-2.5-flare",
+		"size": "1024x1024",
+		"quality": "high",
+		"n": 1
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "52de64dfaa077ce76972b4bb717acbd7d0242059157a95bf9bafbead07001038",
+	"references": [],
+	"note": "Text-only decorative surface request. The shared helper printed no request identifier; this receipt records only what was actually observed."
+}

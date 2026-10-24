@@ -93,7 +93,7 @@
 		"bytes": 495570,
 		"sha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85",
 		"fit": "cover",
-		"zoom": 1.55
+		"zoom": 1.2
 	},
 	"source": {
 		"profileRevision": "c5c26acafab599bfe4b463798bd5033d5b35cad2",
@@ -147,5 +147,22 @@
 			]
 		}
 	},
-	"socialImage": "/og/his-fm-channel.jpg"
+	"socialImage": "/og/his-fm-channel.jpg",
+	"brandTexture": {
+		"root": "/textures/his-fm/v1.0.3",
+		"version": "1.0.3",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Stillwood paper",
+			"zh": "林间纸面"
+		},
+		"description": {
+			"en": "Pressed fir and fern fronds spread evenly across ivory handmade paper.",
+			"zh": "象牙手工纸上均匀铺开的冷杉与蕨类压痕。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.3
+	}
 }

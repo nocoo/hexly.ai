@@ -1,0 +1,81 @@
+{
+	"project": "his-fm",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "supplied-identity",
+		"language": "habitat-surface",
+		"name": {
+			"en": "Stillwood morning",
+			"zh": "林间晨雾"
+		},
+		"description": {
+			"en": "Ivory paper washed with morning mist and soft fir silhouettes at the edges.",
+			"zh": "薄雾洗过的象牙纸面，边缘浮着冷杉与蕨类的剪影。"
+		},
+		"motif": "Fir and fern silhouettes drifting in from the edges over misted handmade paper.",
+		"rationale": "The RSS channel artwork is a misty stillwood, so the surface follows that habitat and light while keeping the centre quiet for text."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/his-fm-channel.jpg",
+		"source": "https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/artwork/show-stillwood-20261022/podcast-cover-3000.jpg",
+		"kind": "original",
+		"width": 3000,
+		"height": 3000,
+		"sha256": "0a64cac84ab3bbb8a1c5bcb03976b516698cb41cfec0ea2cdd9c5b5e1372cd85",
+		"bytes": 495570,
+		"rgbaSha256": "12ba7576f345e867298311651f6d8f6d2d0474a8255c8f7c5c3e80d9d081b199"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/his-fm/texture-studies/2026-10-24-flare-onboarding-01/light",
+			"request": "/textures/his-fm/v1.0.0/source-light-request.json",
+			"response": "/textures/his-fm/v1.0.0/source-light-response.json",
+			"prompt": "/textures/his-fm/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/his-fm/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/his-fm/v1.0.0/texture-light.png",
+				"sha256": "79ecf6ac9fa5ea28ddb3bc8f77add7333abfce8d37b0cdb66e532008468dbfe4",
+				"bytes": 1938124,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"source": "artwork/brands/his-fm/texture-studies/2026-10-24-flare-onboarding-01/dark",
+			"request": "/textures/his-fm/v1.0.0/source-dark-request.json",
+			"response": "/textures/his-fm/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/his-fm/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/his-fm/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/his-fm/v1.0.0/texture-dark.png",
+				"sha256": "3f2518b91a65961e187418877b41d572c56cfbee0d298ec531b8b61cde17ca18",
+				"bytes": 1902453,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"publication": "R2 projects/his-fm/textures/v1.0.0"
+}
