@@ -1,5 +1,50 @@
 # Changelog
 
+## [1.6.0] - 2026-10-24
+
+### Documentation
+
+- align bilingual verification guidance ([696af8b](https://github.com/nocoo/hexly.ai/commit/696af8bdd096e16897e1cfe1296f9d28839218d6))
+- sync ci node and base-ci pins ([d78db7b](https://github.com/nocoo/hexly.ai/commit/d78db7bba9516190f1936d65fc0b01bccd37be98))
+
+### Fixes
+
+- preserve status project navigation ([b0f1f0e](https://github.com/nocoo/hexly.ai/commit/b0f1f0e5eeada8d5446cf259bc816e704e4c672b))
+- use the RSS channel artwork as the catalogue identity ([93f2795](https://github.com/nocoo/hexly.ai/commit/93f2795dc6d8fb60cfb94a21b9b04382ac307026))
+- render the recorded logo display path ([3d2e908](https://github.com/nocoo/hexly.ai/commit/3d2e908ea952c84032bddf797699afb33b3acdff))
+- ease the his.fm crop and keep card hover rotation ([e8df913](https://github.com/nocoo/hexly.ai/commit/e8df91382985cac76ba801360180e0f079fb5b0c))
+- match the card surface hue and keep the Chinese name 守宫 ([416b756](https://github.com/nocoo/hexly.ai/commit/416b7568fb9df670a495e47ca44feabc428fe94a))
+- give the card surface the family's right-column coverage ([894c8d2](https://github.com/nocoo/hexly.ai/commit/894c8d2bb43e59a20bf33d509cce51f649160f64))
+- use habitat foliage for the card surface ([5b56e82](https://github.com/nocoo/hexly.ai/commit/5b56e821c6eb9d8e9531ceefb9f227286ac1ce26))
+
+### Maintenance
+
+- re-pin base-ci to ac635753 ([675cdec](https://github.com/nocoo/hexly.ai/commit/675cdec419ec61fdcf11a53817ef1710546fefb9))
+- bump node pin to 26.12.1 ([29ae401](https://github.com/nocoo/hexly.ai/commit/29ae40181b0ba4369d7ba010bf3ceb5dc152d238))
+- Merge pull request #116 from nocoo/cursor/node-base-ci-security-bump-f9b0 ([59ad68a](https://github.com/nocoo/hexly.ai/commit/59ad68a67730b22e9917ff98f2cf1abc37341de9))
+- bump @remotion/* and remotion 4.0.536 → 4.0.538 ([3c9a7a4](https://github.com/nocoo/hexly.ai/commit/3c9a7a48b0c4d9e7c7008e2bbdd36a592bade187))
+- bump 4.151.1 → 4.152.0 ([7550a5b](https://github.com/nocoo/hexly.ai/commit/7550a5bda85c5f0e779620d260d4f3e520219470))
+- bump 2.5.15 → 2.6.2 ([58a7b63](https://github.com/nocoo/hexly.ai/commit/58a7b630e7f001c2d3c6d6ab27697a45344d649d))
+- bump 8.3.4 → 8.3.5 ([2088ee5](https://github.com/nocoo/hexly.ai/commit/2088ee578770a6489900c0ae6bf0c2e6b15b9907))
+- bump 1.4.3 → 1.4.4 ([c9bca6f](https://github.com/nocoo/hexly.ai/commit/c9bca6f96570f778a9e787f354fd517684106212))
+- override transitive 3.1.8 → 3.1.9 (security) ([32fe9c5](https://github.com/nocoo/hexly.ai/commit/32fe9c5e42581c75770a9d4e43c0c6b627daf4ef))
+- bump override 7.29.1 → 7.30.1 (security) ([ffedcd0](https://github.com/nocoo/hexly.ai/commit/ffedcd0c4e096919435fa42b7c91964b608ec27e))
+- Merge pull request #119 from nocoo/cursor/deps-minor-patch-57b4 ([f7bf65f](https://github.com/nocoo/hexly.ai/commit/f7bf65f4c5a518928b4a81374328537ec0284601))
+- single product taxonomy with libs category ([7adab01](https://github.com/nocoo/hexly.ai/commit/7adab01808b980304776caedd697bdb5d37cc70b))
+- format chamelo briefs for the current Biome markdown writer ([df8bb81](https://github.com/nocoo/hexly.ai/commit/df8bb81e41085ff804261896121d23b13b415a67))
+
+### Features
+
+- onboard his.fm with its retained application icon ([a8ea43c](https://github.com/nocoo/hexly.ai/commit/a8ea43c827aa76910b5c579c351453e4f64b39b6))
+- onboard chamelo with a Dunhuang chameleon identity ([7ca25ff](https://github.com/nocoo/hexly.ai/commit/7ca25ff430a0490adc3d77d90720ae9deae69b86))
+- adopt the approved identity in the source and catalogue ([417391a](https://github.com/nocoo/hexly.ai/commit/417391a8d7f8c1656e2f6575ed6cdcec2fafbf3d))
+- crop photo identities and record texture studies ([29ca3fc](https://github.com/nocoo/hexly.ai/commit/29ca3fc583f39ea605bfa5b506d73af20efa9b3c))
+- unify his.fm and chamelo surfaces with the collection ([252d517](https://github.com/nocoo/hexly.ai/commit/252d5176a2f03c3a84159611409a57ba336aecb4))
+
+### Tests
+
+- assert product categories with archived state ([f31c262](https://github.com/nocoo/hexly.ai/commit/f31c262cefa5c4a22b11d592a4c9991c7e75775a))
+
 ## [1.5.1] - 2026-10-24
 
 ### Maintenance
