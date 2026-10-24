@@ -29,9 +29,9 @@ cloud scrolls trailing into generous empty space. The mark must survive at 64 px
 
 ## References
 
-| # | File | Role |
-|---|---|---|
-| 1 | `input/dunhuang-original.png` (sha256 `089ca4f5…`) | Mineral palette, mural material and silk-ribbon language only; not a composition to copy |
+| #   | File                                               | Role                                                                                     |
+| --- | -------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1   | `input/dunhuang-original.png` (sha256 `089ca4f5…`) | Mineral palette, mural material and silk-ribbon language only; not a composition to copy |
 
 No family composition boards and no Frogie drawing reference are submitted, so
 the model cannot inherit the withdrawn style.

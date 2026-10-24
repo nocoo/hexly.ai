@@ -23,10 +23,10 @@ the style and asked for the head alone:
 
 ## References
 
-| # | File | Role |
-|---|---|---|
-| 1 | `input/study-03-raw.png` (sha256 `0e919fed…`) | The accepted beast design, mural palette and ink-outline detail; framing changes to head only |
-| 2 | `input/dunhuang-original.png` (sha256 `089ca4f5…`) | Project's first-edition artwork for pigment material only |
+| #   | File                                               | Role                                                                                          |
+| --- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 1   | `input/study-03-raw.png` (sha256 `0e919fed…`)      | The accepted beast design, mural palette and ink-outline detail; framing changes to head only |
+| 2   | `input/dunhuang-original.png` (sha256 `089ca4f5…`) | Project's first-edition artwork for pigment material only                                     |
 
 ## Request
 

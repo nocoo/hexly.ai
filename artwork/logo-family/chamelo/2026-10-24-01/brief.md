@@ -27,11 +27,11 @@ repository, never from the mascot's accessories.
 
 ## References
 
-| # | File | Role |
-|---|---|---|
-| 1 | `public/logos/family/references/ref01.jpeg` | Asymmetric composition and breathing room |
-| 2 | `public/logos/family/references/ref02.jpeg` | Asymmetric composition and breathing room |
-| 3 | `public/logos/family/frogie/2026-09-06-01/icon.png` (finishing 02) | Flat fragmented drawing language only |
+| #   | File                                                               | Role                                      |
+| --- | ------------------------------------------------------------------ | ----------------------------------------- |
+| 1   | `public/logos/family/references/ref01.jpeg`                        | Asymmetric composition and breathing room |
+| 2   | `public/logos/family/references/ref02.jpeg`                        | Asymmetric composition and breathing room |
+| 3   | `public/logos/family/frogie/2026-09-06-01/icon.png` (finishing 02) | Flat fragmented drawing language only     |
 
 The references do not authorize their own species, palette or accessories.
 
