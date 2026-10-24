@@ -1,6 +1,6 @@
 # Chamelo onboarding and Dunhuang chameleon identity
 
-Chamelo is a bilingual Chinese-cultural colour atlas: original artwork becomes a
+守宫 (Chamelo) is a bilingual Chinese-cultural colour atlas: original artwork becomes a
 curated palette, a semantic website theme and an agent brief. The owner asked for
 catalogue onboarding together with a new identity that left the family drawing
 language:
@@ -18,6 +18,13 @@ language:
 | `2026-10-24-05` | Head close-up, ornaments removed, roughly half the square empty | Approved and finished |
 
 All four earlier raws stay in their own studies. None is reused as a reference.
+
+## Naming
+
+The Chinese display name is 守宫; the English brand, repository, package and domain
+keep `Chamelo` / `chamelo`. The owner kept the existing painting rather than
+redrawing a gecko, so the mark stays the Dunhuang-mural chameleon beast while the
+Chinese product name is 守宫.
 
 ## Approved identity
 
