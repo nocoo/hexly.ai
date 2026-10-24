@@ -9,7 +9,6 @@ as an identity reference.
 
 `https://chamelo.hexly.ai/` (captured 2026-10-24, archived in `input/`) is an
 editorial, mineral, low-contrast surface:
-
 - Warm sand paper, cream cards, hairline rules, generous quiet space.
 - Dunhuang mineral pigments only: sand `#F3EBDD`, warm sandstone `#E7C8A0`,
   desert gold `#BD985D`, mineral sage `#5D705E`, grotto teal `#2E4640`, quiet
@@ -27,12 +26,12 @@ glossy 3D cartoon shading.
 
 ## References
 
-| # | File | Role |
-|---|---|---|
-| 1 | `public/logos/family/references/ref01.jpeg` | Asymmetric composition and breathing room |
-| 2 | `public/logos/family/references/ref02.jpeg` | Asymmetric composition and breathing room |
-| 3 | `public/logos/family/frogie/2026-09-06-01/icon.png` (finishing 02) | Flat fragmented drawing language only |
-| 4 | `input/dunhuang-original.png` (sha256 `089ca4f5…`) | Palette and pigment material only; the project's first-edition artwork |
+| #   | File                                                               | Role                                                                   |
+| --- | ------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| 1   | `public/logos/family/references/ref01.jpeg`                        | Asymmetric composition and breathing room                              |
+| 2   | `public/logos/family/references/ref02.jpeg`                        | Asymmetric composition and breathing room                              |
+| 3   | `public/logos/family/frogie/2026-09-06-01/icon.png` (finishing 02) | Flat fragmented drawing language only                                  |
+| 4   | `input/dunhuang-original.png` (sha256 `089ca4f5…`)                 | Palette and pigment material only; the project's first-edition artwork |
 
 The site screenshot `input/chamelo-home-2026-10-24.png` documents the surrounding
 design language in this brief but is not submitted to the model, so the output
