@@ -3,6 +3,9 @@ import { expect, test } from "@playwright/test";
 import sharp from "sharp";
 import manifest from "../../package.json" with { type: "json" };
 import { readProjects } from "../../src/data/read-projects";
+import socialCards from "../../src/data/social-cards.json" with {
+	type: "json",
+};
 import { assetUrl } from "../../src/model/assets";
 
 const projects = readProjects();
@@ -190,7 +193,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 		'<link rel="canonical" href="https://hexly.ai/" />',
 	);
 	expect(page.match(/<h1>/g)?.length).toBe(1);
-	expect(page).toContain(assetUrl("/og/frogie.jpg"));
+	expect(page).toContain(assetUrl(socialCards.projects.frogie.path));
 	const share = await request.get("/api/share/pew.json");
 	expect(share.status()).toBe(200);
 	expect(share.headers()["access-control-allow-origin"]).toBe("*");
@@ -200,7 +203,11 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 		id: "pew",
 		title: "Pew — hexly.ai",
 		canonical: "https://hexly.ai/projects/pew",
-		image: { url: assetUrl("/og/pew.jpg"), width: 1200, height: 630 },
+		image: {
+			url: assetUrl(socialCards.projects.pew.path),
+			width: 1200,
+			height: 630,
+		},
 	});
 	const index = await (await request.get("/api/share.json")).json();
 	expect(index.site).toBe("https://hexly.ai/api/share/site.json");
@@ -210,7 +217,9 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	const home = await (await request.get("/")).text();
 	expect(home).toContain("Active projects");
 	expect(home).toContain("Archived projects");
-	const social = await request.get("/og/frogie.jpg");
+	const social = await request.get(
+		`/og/${socialCards.projects.frogie.path.split("/").pop()}`,
+	);
 	expect(social.status()).toBe(200);
 	expect(social.headers()["content-type"]).toContain("image/jpeg");
 	expect((await social.body()).byteLength).toBeLessThan(400_000);

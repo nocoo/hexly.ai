@@ -3,6 +3,14 @@ import { readFile } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import sharp from "sharp";
 import { readProjects } from "../src/data/read-projects";
+import socialCardsJson from "../src/data/social-cards.json" with {
+	type: "json",
+};
+
+const socialCards = socialCardsJson as {
+	projects: Record<string, { path: string }>;
+};
+
 import { brandAsset, brandTextureAsset, rasterBrand } from "../src/model/brand";
 import {
 	brandManifestProblems,
@@ -135,7 +143,9 @@ for (const project of projects) {
 		if (meta.width !== size || meta.height !== size)
 			throw new Error(`Incorrect derivative dimensions: ${project.id}/${size}`);
 	}
-	const socialPath = `public${project.socialImage ?? `/og/${project.id}.jpg`}`;
+	const socialCard = socialCards.projects[project.id];
+	if (!socialCard) throw new Error(`Missing social card: ${project.id}`);
+	const socialPath = `public${socialCard.path}`;
 	const social = await sharp(socialPath).metadata();
 	if (
 		social.format !== "jpeg" ||

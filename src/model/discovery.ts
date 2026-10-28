@@ -1,4 +1,11 @@
 import { copy } from "../data/copy";
+import socialCardsJson from "../data/social-cards.json" with { type: "json" };
+
+const socialCards = socialCardsJson as {
+	site: { path: string };
+	projects: Record<string, { path: string }>;
+};
+
 import identity from "../data/projects/hexly-ai.json" with { type: "json" };
 import { agentGuide, agentGuidePath, standardOutros } from "./agent-guide";
 import { assetUrl } from "./assets";
@@ -15,7 +22,7 @@ export const homeDescription =
 	"A personal collection of useful tools, playful experiments, and colorful identities. Built by Zheng Li.";
 export const homeHeading = "Small ideas A little universe.";
 export const galleryTitle = "Logo gallery — hexly.ai";
-export const siteSocialImage = "/og/site-2026-10-18.jpg";
+export const siteSocialImage = socialCards.site.path;
 
 export interface DiscoveryPage {
 	path: string;
@@ -51,10 +58,9 @@ export function absoluteUrl(path: string): string {
 }
 
 export function socialImage(project?: Project): string {
-	if (!project) return assetUrl(siteSocialImage);
-	return assetUrl(
-		`${siteOrigin}${project.socialImage ?? `/og/${project.id}.jpg`}`,
-	);
+	const path =
+		(project && socialCards.projects[project.id]?.path) ?? siteSocialImage;
+	return assetUrl(`${siteOrigin}${path}`);
 }
 
 export interface ShareImage {

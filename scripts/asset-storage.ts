@@ -22,7 +22,15 @@ import { parseArgs } from "node:util";
 import storage from "../src/data/media-storage.json" with { type: "json" };
 import identity from "../src/data/projects/hexly-ai.json" with { type: "json" };
 import { readProjects } from "../src/data/read-projects";
+import socialCardsJson from "../src/data/social-cards.json" with {
+	type: "json",
+};
 import { cacheControl, mediaTypes } from "./media-r2";
+
+const socialCards = socialCardsJson as {
+	site: { path: string };
+	projects: Record<string, { path: string }>;
+};
 
 export const inventoryPath = "docs/assets/inventory.json";
 const receiptPath = "docs/assets/publication.jsonl";
@@ -279,7 +287,7 @@ export async function inventory() {
 					path &&
 					(path === p.logo.original ||
 						path.startsWith(`/logos/display/${p.id}-`) ||
-						path === (p.socialImage ?? `/og/${p.id}.jpg`) ||
+						path === socialCards.projects[p.id]?.path ||
 						path.startsWith(`/brands/${p.id}/`) ||
 						path.startsWith(`/textures/${p.id}/`) ||
 						path.startsWith(`/icons/${p.id}/`) ||

@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { parseArgs } from "node:util";
 import { chromium } from "@playwright/test";
@@ -5,33 +6,66 @@ import sharp from "sharp";
 import { categoryLabels, copy } from "../src/data/copy";
 import identity from "../src/data/projects/hexly-ai.json";
 import { readProjects } from "../src/data/read-projects";
-import { escapeHtml, siteSocialImage } from "../src/model/discovery";
 import type { Project } from "../src/model/project";
+import {
+	siteCardKey,
+	socialCardFingerprint,
+	socialCardIconPath,
+} from "../src/model/social-card";
 
 const directory = "public/og";
+const registryPath = "src/data/social-cards.json";
+const { values } = parseArgs({
+	options: {
+		project: { type: "string", multiple: true },
+		site: { type: "boolean", default: false },
+		check: { type: "boolean", default: false },
+	},
+});
 
+interface CardRecord {
+	path: string;
+	bytes: number;
+	sha256: string;
+	fingerprint: string;
+	renderedAt: string;
+}
+
+interface Registry {
+	schemaVersion: 1;
+	renderer: string;
+	recordedAt: string;
+	site: CardRecord;
+	projects: Record<string, CardRecord>;
+}
+
+function escapeHtml(value: string): string {
+	return value
+		.replaceAll("&", "&amp;")
+		.replaceAll("<", "&lt;")
+		.replaceAll(">", "&gt;")
+		.replaceAll('"', "&quot;");
+}
+
+const sha = (buffer: Buffer | string) =>
+	createHash("sha256").update(buffer).digest("hex");
 const dataUrl = async (path: string, type: string) =>
 	`data:${type};base64,${(await readFile(path)).toString("base64")}`;
 const mark = `<img width="36" height="36" alt="" src="${await dataUrl(`public${identity.family.root}/transparent-64.png`, "image/png")}">`;
 
-async function artworkSrc(project?: Project): Promise<{
-	src: string;
-	plain: boolean;
-	background?: string;
-}> {
-	if (!project) return artworkSrc(identity as Project);
+async function artworkSource(project: Project) {
+	const iconPath = socialCardIconPath(project);
 	if (project.family)
 		return {
-			src: await dataUrl(
-				`public${project.family.root}/icon-1024.webp`,
-				"image/webp",
-			),
+			src: await dataUrl(iconPath, "image/webp"),
 			plain: false,
+			iconPath,
 		};
 	return {
-		src: await dataUrl(`public${project.logo.display}`, "image/webp"),
+		src: await dataUrl(iconPath, "image/webp"),
 		plain: true,
 		background: project.colors.background,
+		iconPath,
 	};
 }
 
@@ -97,55 +131,161 @@ const fonts = (
 		`@font-face { font-family: "${index === 0 ? "Space Grotesk Variable" : "Geist Mono Variable"}"; font-style: normal; font-weight: 100 900; src: url("${src}") format("woff2"); }`,
 );
 const styles = `${fonts.join("\n")}\n${await readFile("scripts/social.css", "utf8")}`;
+
 const projects = readProjects();
-const { values } = parseArgs({
-	options: { project: { type: "string", multiple: true } },
-});
 for (const id of values.project ?? [])
 	if (!projects.some((project) => project.id === id))
 		throw new Error(`Unknown project: ${id}`);
-const selected = projects.filter(
-	(project) => !values.project || values.project.includes(project.id),
-);
-await mkdir(directory, { recursive: true });
 
-const homeArt = await artworkSrc();
-const cards = [
-	...(!values.project || values.project.includes(identity.id)
-		? [
-				{
-					file: `public${siteSocialImage}`,
-					html: cardHtml({
-						label: "PORTFOLIO",
-						title: `${copy.en.heroFirst}\n${copy.en.heroSecond}.`,
-						subtitle: "",
-						footer: "ANIMALS · TEMPLATES · GAMES · TOOLS",
-						image: homeArt.src,
-						plain: homeArt.plain,
-						background: homeArt.background,
-					}),
-				},
-			]
-		: []),
-	...(await Promise.all(
-		selected.map(async (project) => {
-			const art = await artworkSrc(project);
-			return {
-				file: `public${project.socialImage ?? `/og/${project.id}.jpg`}`,
-				html: cardHtml({
-					label: categoryLabels.en[project.category].toUpperCase(),
-					title: project.title,
-					subtitle: project.description.en,
-					footer: project.archived ? "ARCHIVED" : "A LITTLE UNIVERSE",
-					image: art.src,
-					plain: art.plain,
-					background: art.background,
-				}),
-			};
+const registry: Registry = await readFile(registryPath, "utf8")
+	.then((text) => JSON.parse(text) as Registry)
+	.catch(() => ({
+		schemaVersion: 1 as const,
+		renderer: "scripts/create-social.ts",
+		recordedAt: "",
+		site: {
+			path: "",
+			bytes: 0,
+			sha256: "",
+			fingerprint: "",
+			renderedAt: "",
+		},
+		projects: {},
+	}));
+
+async function inputFingerprint(
+	key: string,
+	title: string,
+	description: string,
+	category: string,
+	archived: boolean,
+	iconPath: string,
+) {
+	return socialCardFingerprint({
+		key,
+		title,
+		description,
+		category,
+		archived,
+		iconSha256: sha(await readFile(iconPath)),
+	});
+}
+
+const homeArt = await artworkSource(identity as Project);
+const selected = values.project
+	? projects.filter((project) => values.project?.includes(project.id))
+	: projects;
+const includeSite = values.site || !values.project;
+
+const targets: {
+	key: string;
+	html: string;
+	iconPath: string;
+	fingerprint: string;
+}[] = [];
+if (includeSite)
+	targets.push({
+		key: siteCardKey,
+		html: cardHtml({
+			label: "PORTFOLIO",
+			title: `${copy.en.heroFirst}\n${copy.en.heroSecond}.`,
+			subtitle: "",
+			footer: "ANIMALS · TEMPLATES · GAMES · TOOLS",
+			image: homeArt.src,
+			plain: homeArt.plain,
+			background: homeArt.background,
 		}),
-	)),
-];
+		iconPath: homeArt.iconPath,
+		fingerprint: await inputFingerprint(
+			"site",
+			`${copy.en.heroFirst} ${copy.en.heroSecond}`,
+			"",
+			"portfolio",
+			false,
+			homeArt.iconPath,
+		),
+	});
+for (const project of selected) {
+	const art = await artworkSource(project);
+	targets.push({
+		key: project.id,
+		html: cardHtml({
+			label: categoryLabels.en[project.category].toUpperCase(),
+			title: project.title,
+			subtitle: project.description.en,
+			footer: project.archived ? "ARCHIVED" : "A LITTLE UNIVERSE",
+			image: art.src,
+			plain: art.plain,
+			background: art.background,
+		}),
+		iconPath: art.iconPath,
+		fingerprint: await inputFingerprint(
+			project.id,
+			project.title,
+			project.description.en,
+			project.category,
+			project.archived,
+			art.iconPath,
+		),
+	});
+}
 
+const problem = (key: string, detail: string) =>
+	`${key}: ${detail}\n\nRun \`bun run social:build --project <id>\` or \`bun run social:build\`.`;
+
+if (values.check) {
+	const problems: string[] = [];
+	for (const project of projects) {
+		const record = registry.projects[project.id];
+		if (!record) {
+			problems.push(problem(project.id, `missing from ${registryPath}`));
+			continue;
+		}
+		const art = await artworkSource(project);
+		const expected = await inputFingerprint(
+			project.id,
+			project.title,
+			project.description.en,
+			project.category,
+			project.archived,
+			art.iconPath,
+		);
+		if (record.fingerprint !== expected)
+			problems.push(
+				problem(project.id, `inputs changed since ${record.renderedAt}`),
+			);
+		const bytes = await readFile(`public${record.path}`).catch(() => null);
+		if (!bytes)
+			problems.push(problem(project.id, `missing file ${record.path}`));
+		else if (sha(bytes) !== record.sha256)
+			problems.push(problem(project.id, `file differs from ${registryPath}`));
+	}
+	const expectedSite = await inputFingerprint(
+		"site",
+		`${copy.en.heroFirst} ${copy.en.heroSecond}`,
+		"",
+		"portfolio",
+		false,
+		homeArt.iconPath,
+	);
+	if (!registry.site.path)
+		problems.push(problem("site", `missing from ${registryPath}`));
+	else if (registry.site.fingerprint !== expectedSite)
+		problems.push(problem("site", "inputs changed since generated"));
+	if (problems.length) {
+		console.error(`Stale social cards:\n\n${problems.join("\n\n")}`);
+		process.exit(1);
+	}
+	console.info(
+		`Social cards match their inputs (${projects.length + 1} checked).`,
+	);
+	process.exit(0);
+}
+
+const today = new Date().toISOString().slice(0, 10).replaceAll("-", "");
+const written: string[] = [];
+const unchanged: string[] = [];
+await mkdir(directory, { recursive: true });
 const browser = await chromium.launch();
 try {
 	const page = await browser.newPage({
@@ -153,9 +293,9 @@ try {
 		deviceScaleFactor: 2,
 	});
 	await page.route("**/*", (route) => route.abort());
-	for (const card of cards) {
+	for (const target of targets) {
 		await page.setContent(
-			`<!doctype html><html><head><meta charset="utf-8"><style>${styles}</style></head><body>${card.html}</body></html>`,
+			`<!doctype html><html><head><meta charset="utf-8"><style>${styles}</style></head><body>${target.html}</body></html>`,
 		);
 		await page.evaluate(async () => {
 			await document.fonts.ready;
@@ -167,10 +307,47 @@ try {
 			.jpeg({ quality: 90, chromaSubsampling: "4:4:4", mozjpeg: true })
 			.toBuffer();
 		if (buffer.length > 400_000)
-			throw new Error(`Social image too large: ${card.file}`);
-		await writeFile(card.file, buffer);
+			throw new Error(`Social image too large: ${target.key}`);
+		const digest = sha(buffer);
+		const path = `/og/${target.key}-${today}-${digest.slice(0, 6)}.jpg`;
+		const previous =
+			target.key === siteCardKey
+				? registry.site
+				: registry.projects[target.key];
+		const record: CardRecord = {
+			path,
+			bytes: buffer.length,
+			sha256: digest,
+			fingerprint: target.fingerprint,
+			renderedAt:
+				previous?.path === path && previous.sha256 === digest
+					? previous.renderedAt
+					: today,
+		};
+		const present = await readFile(`public${path}`)
+			.then(() => true)
+			.catch(() => false);
+		if (!present || record.renderedAt === today) {
+			await writeFile(`public${path}`, buffer);
+			written.push(path);
+		} else unchanged.push(path);
+		if (target.key === siteCardKey) registry.site = record;
+		else registry.projects[target.key] = record;
 	}
 } finally {
 	await browser.close();
 }
-console.info(`Wrote ${cards.length} typeset social cards.`);
+
+const next: Registry = {
+	schemaVersion: 1,
+	renderer: "scripts/create-social.ts",
+	recordedAt: today,
+	site: registry.site,
+	projects: Object.fromEntries(
+		Object.entries(registry.projects).sort(([a], [b]) => a.localeCompare(b)),
+	),
+};
+await writeFile(registryPath, `${JSON.stringify(next, null, "\t")}\n`);
+console.info(
+	`Social cards: ${targets.length} rendered, ${written.length} written, ${unchanged.length} unchanged. Registry: ${registryPath}`,
+);

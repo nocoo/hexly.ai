@@ -8,15 +8,16 @@ Direction: [overview](docs/01-overview.md). Catalogue, brand and media work must
 
 This file is the contract; hooks, CI and configuration enforce it. Raise weaker enforcement instead of lowering this contract.
 
-| Fact                 | Where                                                                                                                                                       |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Human docs           | [README.md](README.md), [docs index](docs/README.md)                                                                                                        |
-| Catalogue / identity | `src/data/projects/`, verified source/profile revisions, [identity rules](docs/02-identity-rules.md), [maintenance details](docs/29-project-maintenance.md) |
-| Media / archives     | `src/data/media-storage.json`, `docs/assets/inventory.json`, immutable receipts and [asset storage](docs/21-asset-storage.md)                               |
-| Status / Video Kit   | `src/model/status.ts`, `worker/status.ts`, `packages/video-kit/`, `src/data/videos.json`                                                                    |
-| Version              | Root `package.json` as `X.Y.Z`, display `vX.Y.Z`; build emits version/revision at `/api/live`                                                               |
-| Enforcement          | `.husky/`, `scripts/gates.ts`, CI/release workflows and test configs                                                                                        |
-| Secrets / accidents  | Ignored `.env*` / `.dev.vars*`, GitHub secrets; [Retrospective.md](Retrospective.md); machine rules in global `AGENTS.md` / `rules/`                        |
+| Fact                 | Where                                                                                                                                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Human docs           | [README.md](README.md), [docs index](docs/README.md)                                                                                                                                                     |
+| Catalogue / identity | `src/data/projects/`, verified source/profile revisions, [identity rules](docs/02-identity-rules.md), [maintenance details](docs/29-project-maintenance.md)                                              |
+| Media / archives     | `src/data/media-storage.json`, `docs/assets/inventory.json`, immutable receipts and [asset storage](docs/21-asset-storage.md)                                                                            |
+| Status / Video Kit   | `src/model/status.ts`, `worker/status.ts`, `packages/video-kit/`, `src/data/videos.json`                                                                                                                 |
+| Share cards          | `src/data/social-cards.json`, `scripts/create-social.ts`; `/og/<id>-<date>-<hash6>.jpg` published through the R2 skill's [social card runbook](.agents/skills/hexly-r2-media/references/social-cards.md) |
+| Version              | Root `package.json` as `X.Y.Z`, display `vX.Y.Z`; build emits version/revision at `/api/live`                                                                                                            |
+| Enforcement          | `.husky/`, `scripts/gates.ts`, CI/release workflows and test configs                                                                                                                                     |
+| Secrets / accidents  | Ignored `.env*` / `.dev.vars*`, GitHub secrets; [Retrospective.md](Retrospective.md); machine rules in global `AGENTS.md` / `rules/`                                                                     |
 
 ## Project Invariants
 

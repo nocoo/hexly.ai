@@ -76,6 +76,8 @@ this distinction and its Vary/no-store headers when changing the gateway.
 
 ## Inspect, publish, recover
 
+- Share cards: `src/data/social-cards.json` plus [the social card runbook](references/social-cards.md); `bun run social:build` renders, the inventory publishes, and `bun run verify` rejects stale cards.
+
 Run from the repository root with installed Bun/Wrangler:
 
 ```sh

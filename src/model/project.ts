@@ -134,7 +134,6 @@ export interface Project {
 	subject: string;
 	reference: boolean;
 	archived: boolean;
-	socialImage?: string;
 	logo: {
 		kind: "original" | "emoji";
 		original: string;

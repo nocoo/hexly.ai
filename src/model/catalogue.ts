@@ -167,11 +167,6 @@ export function catalogueProblems(projects: Project[]): string[] {
 		if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id) || ids.has(project.id))
 			problems.push(`Invalid or duplicate id: ${project.id}`);
 		ids.add(project.id);
-		if (
-			project.socialImage !== undefined &&
-			!/^\/og\/[a-z0-9.-]+\.jpg$/.test(project.socialImage)
-		)
-			problems.push(`Invalid social image: ${project.id}`);
 		const kit = project.brandKit;
 		if (
 			kit !== undefined &&

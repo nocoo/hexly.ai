@@ -201,7 +201,6 @@ describe("the imported project catalogue", () => {
 			title: "",
 			category: "unknown" as Project["category"],
 			website: "javascript:alert(1)",
-			socialImage: "https://unverified.example/og.jpg",
 			logo: {
 				...frogie.logo,
 				original: "https://remote.test/logo.png",
