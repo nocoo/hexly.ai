@@ -67,8 +67,9 @@ hashes. Reference numbering in the prompt must match the submitted order.
 
 ### 3. Generate
 
-Credentials and the endpoint contract live in
-[agi-image-generation](../../../../.agents/skills/agi-image-generation/SKILL.md).
+Credentials and the endpoint contract live in the Workflow
+`agi-image-generation` skill at `../workflow/agents/skills/agi-image-generation/SKILL.md`,
+read from the hexly.ai repository root.
 The helper is `artwork/logo-family/tools/generate_azure.py`; the current model
 policy is `gpt-image-2.5-sunburst`, passed explicitly.
 
