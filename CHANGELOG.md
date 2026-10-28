@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.2] - 2026-10-28
+
+### Features
+
+- add Traks analytics to the public site head ([c81d967](https://github.com/nocoo/hexly.ai/commit/c81d9678))
+
 ## [1.6.1] - 2026-10-24
 
 ### Features
