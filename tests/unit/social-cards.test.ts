@@ -14,6 +14,7 @@ import {
 	siteCardKey,
 	socialCardFingerprint,
 	socialCardIconPath,
+	socialCardRendererSha,
 } from "../../src/model/social-card";
 
 const projects = readProjects();
@@ -27,6 +28,8 @@ const records = socialCards.projects as Record<
 	{ path: string; bytes: number; sha256: string; fingerprint: string }
 >;
 
+const rendererSha256 = await socialCardRendererSha();
+
 async function fingerprintFor(project: Project) {
 	return socialCardFingerprint({
 		key: project.id,
@@ -35,6 +38,7 @@ async function fingerprintFor(project: Project) {
 		category: project.category,
 		archived: project.archived,
 		iconSha256: sha(await readFile(socialCardIconPath(project))),
+		rendererSha256,
 	});
 }
 
@@ -78,6 +82,7 @@ describe("share cards", () => {
 			category: "portfolio",
 			archived: false,
 			iconSha256: sha(await readFile(socialCardIconPath(identity as Project))),
+			rendererSha256,
 		});
 		expect(socialCards.site.fingerprint).toBe(expected);
 		const bytes = await readFile(`public${socialCards.site.path}`);

@@ -9,8 +9,10 @@ import { readProjects } from "../src/data/read-projects";
 import type { Project } from "../src/model/project";
 import {
 	siteCardKey,
+	socialCardFillsTile,
 	socialCardFingerprint,
 	socialCardIconPath,
+	socialCardRendererSha,
 } from "../src/model/social-card";
 
 const directory = "public/og";
@@ -55,15 +57,9 @@ const mark = `<img width="36" height="36" alt="" src="${await dataUrl(`public${i
 
 async function artworkSource(project: Project) {
 	const iconPath = socialCardIconPath(project);
-	if (project.family)
-		return {
-			src: await dataUrl(iconPath, "image/webp"),
-			plain: false,
-			iconPath,
-		};
 	return {
 		src: await dataUrl(iconPath, "image/webp"),
-		plain: true,
+		plain: !(await socialCardFillsTile(iconPath)),
 		background: project.colors.background,
 		iconPath,
 	};
@@ -95,9 +91,8 @@ function cardHtml({
 }): string {
 	const lines = title.split("\n").length;
 	const markClass = plain ? "social-mark social-plain" : "social-mark";
-	const markStyle = background
-		? ` style="--mark-background: ${background}"`
-		: "";
+	const markStyle =
+		plain && background ? ` style="--mark-background: ${background}"` : "";
 	return `<main class="social-card">
 <header>
 <span class="social-brand">${mark}<span>hexly<span class="domain">.ai</span></span></span>
@@ -153,6 +148,8 @@ const registry: Registry = await readFile(registryPath, "utf8")
 		projects: {},
 	}));
 
+const rendererSha256 = await socialCardRendererSha();
+
 async function inputFingerprint(
 	key: string,
 	title: string,
@@ -168,6 +165,7 @@ async function inputFingerprint(
 		category,
 		archived,
 		iconSha256: sha(await readFile(iconPath)),
+		rendererSha256,
 	});
 }
 
