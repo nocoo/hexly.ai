@@ -115,7 +115,7 @@ generated external accent. The simplified owner direction supersedes earlier
 accessory prescriptions. The exact owner approval is preserved in each
 `raw-review.json`: “这两张很好，可以继续，修正你的skill，减少干预。以后对动物和鸟类型都照此办理。修正skill后继续上线操作”.
 
-The shared `zhengli-project-logo` skill and prompt template were corrected in
+The shared logo skills and prompt texts were corrected in
 Workflow commit `c0c2e362af3b14a89a42e876cc0f6bbc7a37b55b`: short species/head/off-center/multicolor/fragment briefs,
 with no mandatory accessory, camera, eye count, body ratio or fixed palette.
 Active Hexly direction documents follow the same rule; historic studies remain

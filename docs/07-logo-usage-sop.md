@@ -12,7 +12,7 @@ authoritative shapes, proportions, colors and bytes. Product UI palettes and
 themes are independent. A collected campaign kit or generated Hero is not
 permission to replace product consumers or recolor the project identity.
 
-This is the shared logo-usage wiki for the personal-project family. The owner established these surface rules on 2026-09-07. Apply them when adopting a selected identity or auditing an existing project; art generation still follows [the family guide](06-logo-family.md) and the workflow `zhengli-project-logo` skill.
+This is the shared logo-usage wiki for the personal-project family. The owner established these surface rules on 2026-09-07. Apply them when adopting a selected identity or auditing an existing project; art generation still follows [the family guide](06-logo-family.md), [`hexly-logo-pipeline`](../.agents/skills/hexly-logo-pipeline/SKILL.md) and the matching series skill.
 
 ## Choose the asset by its use
 

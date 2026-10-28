@@ -119,7 +119,7 @@ Both the static study HTML and `/logos/<project>` follow the complete review lay
 
 The delivery also includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px, a native white master, immutable history, palette evidence, a generated profile, and browser evidence for both review surfaces. Validate path refresh, navigation history, share links, and archived-project access. Completed presentations show Refined in both languages within the existing product categories; All hides archived repositories by default.
 
-The reusable workflow skill is `../workflow/agents/skills/zhengli-project-logo/SKILL.md`. Record current source adoption per project in the catalogue and [usage SOP](07-logo-usage-sop.md); a completed study alone does not establish source adoption or publication.
+The reusable skills are [`hexly-logo-pipeline`](../.agents/skills/hexly-logo-pipeline/SKILL.md) plus the series skills [`hexly-animal`](../.agents/skills/hexly-animal/SKILL.md), [`hexly-birds`](../.agents/skills/hexly-birds/SKILL.md) and [`hexly-things`](../.agents/skills/hexly-things/SKILL.md). Record current source adoption per project in the catalogue and [usage SOP](07-logo-usage-sop.md); a completed study alone does not establish source adoption or publication.
 
 ## Retained-original presentations — 2026-09-07
 
