@@ -39,6 +39,21 @@
 			}
 		}
 	},
+	"overrides": [
+		{
+			"includes": ["index.html"],
+			"linter": {
+				"rules": {
+					"complexity": {
+						"noArguments": "off"
+					},
+					"suspicious": {
+						"noAssignInExpressions": "off"
+					}
+				}
+			}
+		}
+	],
 	"assist": {
 		"enabled": true,
 		"actions": {
