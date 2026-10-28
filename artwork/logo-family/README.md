@@ -32,7 +32,7 @@ Generation uses the Azure Foundry endpoint and `api-key` authentication document
 
 New Logo requests default to `gpt-image-2.5-sunburst` under the owner's September 14 model policy. Pass `--model gpt-image-2.5-sunburst` explicitly; the helper preserves the selected deployment in each request. Historical `gpt-image-2` records and frozen tool snapshots remain unchanged. Decorative textures follow their separate Flare workflow.
 
-The workflow skill `zhengli-project-logo` captures the family rules, prompt template, review requirements, and source/site promotion flow.
+The project skills capture the family rules: `hexly-logo-pipeline` holds generation, approval, finishing, review and adoption, while `hexly-animal`, `hexly-birds` and `hexly-things` hold the three drawing languages and their prompt texts.
 
 For an approved existing identity, preserve its animal, pose, expression, composition and decoration unless the owner requests a specific change. New animal and bird briefs follow the owner's 2026-09-25 direction: species, head focus, strong off-center composition, multicolor and connected flat fragments. Let the model choose the angle, gesture, colors and optional accents. Do not prescribe an accessory, focal length, eye count or body ratio. Historical briefs below document earlier decisions, not requirements for new work.
 
