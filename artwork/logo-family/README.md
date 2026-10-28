@@ -169,7 +169,7 @@ The owner-directed material series uses physical surfaces, complete object frami
 
 [Basalt study 01](basalt/2026-09-07-01/notes.md) preserves the ordinary stone slab rejected by the owner. Its raw output and finishing pass remain archived and were never adopted. Study 02 follows the explicit architectural correction. Four native generation calls cover the complete batch, with exact-hash delegated acceptance recorded separately for each result.
 
-See [the material audit](audits/2026-09-07-materials/) for native palette samples, rounded-outline measurements, matting decisions, source-app screenshots and publication evidence. Foreground, square, rounded and white masters share one placement; small application/browser marks use the transparent foreground. The workflow logo skill and [family guide](../../docs/06-logo-family.md#material-and-architectural-series--2026-09-07) preserve this explicit exception to the animal series.
+See [the material audit](audits/2026-09-07-materials/) for native palette samples, rounded-outline measurements, matting decisions, source-app screenshots and publication evidence. Foreground, square, rounded and white masters share one placement; small application/browser marks use the transparent foreground. The logo family skills and [family guide](../../docs/06-logo-family.md#material-and-architectural-series--2026-09-07) preserve this explicit exception to the animal series.
 
 ## Remaining physical objects and PokePocket — 2026-09-07
 

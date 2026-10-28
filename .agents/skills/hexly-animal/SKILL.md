@@ -64,7 +64,7 @@ facets, plus exactly one small localized accent in a richer contrast; no
 scattered bright patches, no rainbow distribution`.
 
 References: a liked original first when an identity exists, then
-`references/ref01.jpeg` and `references/ref02.jpeg`. Never submit a reference
+`artwork/logo-family/references/ref01.jpeg` and `ref02.jpeg`. Never submit a reference
 whose species, palette or accessory must not be copied without naming that
 restriction in the prompt.
 
@@ -76,8 +76,8 @@ restriction in the prompt.
 - `artwork/logo-family/rhino/2026-10-09-03/finishing/02/` — restrained palette
 - `artwork/logo-family/octo/2026-10-18-07/finishing/02/` — newest lively run
 
-Read the actual prompt from the study you are using as a model; do not
-reconstruct it from this skill.
+Paths are relative to the hexly.ai repository root. Read the actual prompt from
+the study you are using as a model; do not reconstruct it from this skill.
 
 ## Checks
 

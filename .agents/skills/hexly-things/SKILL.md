@@ -80,7 +80,8 @@ this series.
 - `artwork/logo-family/basalt/2026-09-08-01/finishing/01/` — Forbidden City
   corner tower, the shallow 25° view
 
-Read the actual prompt from the study you use as a model.
+Paths are relative to the hexly.ai repository root. Read the actual prompt from
+the study you use as a model.
 
 ## Checks
 

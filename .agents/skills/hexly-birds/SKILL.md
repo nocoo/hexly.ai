@@ -86,7 +86,8 @@ reference bird may guide composition or facets, never its species or palette.
 - `artwork/logo-family/rio/2026-09-20-01/finishing/01/` — macaw, the widest
   palette in the series
 
-Read the actual prompt from the study you use as a model.
+Paths are relative to the hexly.ai repository root. Read the actual prompt from
+the study you use as a model.
 
 ## Checks
 
