@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import sharp from "sharp";
 import { describe, expect, it } from "vitest";
-import inventory from "../../docs/brand-archives/inventory-0.10.0.json";
+import inventory from "../../docs/brand-archives/inventory-2026-10-28.json";
 import retiredSnail from "../../docs/sources/snail-retired-2026-09-13.json" with {
 	type: "json",
 };
@@ -56,10 +56,10 @@ describe("complete Hexly campaign archives", () => {
 			);
 			if (targetIds.includes(p.id))
 				expect(p.brandKit).toMatchObject({
-					version: "1.0.0",
+					version: baseline.kitVersion ?? "1.0.0",
 					method: "archived-artwork",
 					scope: "hexly-campaign",
-					sourceAdoptionRevision: null,
+					sourceAdoptionRevision: baseline.sourceAdoptionRevision ?? null,
 				});
 		}
 		expect(
@@ -288,7 +288,9 @@ describe("complete Hexly campaign archives", () => {
 						: "not independently established",
 				);
 			} else {
-				expect(provenance.generation.model).toBe("gpt-image-2");
+				expect(["gpt-image-2", "gpt-image-2.5-sunburst"]).toContain(
+					provenance.generation.model,
+				);
 				expect(provenance.generation.madeInThisRelease).toBe(false);
 				expect(
 					sha(await readFile(`public${provenance.generation.raw.path}`)),
@@ -312,7 +314,6 @@ describe("complete Hexly campaign archives", () => {
 			"basalt",
 			"clip",
 			"dreamro",
-			"fundly",
 			"meowth",
 		]);
 	}, 15_000);

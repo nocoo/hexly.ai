@@ -1,6 +1,11 @@
 {
-	"status": "pending",
+	"status": "approved",
 	"imageSha256": "67836b069de25e770246a92c65e1d1143425bc586699c9e92f6d977203dfd24c",
 	"recordedAt": "2026-10-28T11:10:25.880477+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+	"nextStep": "Finishing pass 01: extraction, background, exports, review surfaces, source adoption.",
+	"decidedAt": "2026-10-28T11:13:15.082478+00:00",
+	"decisionSource": "owner review in session",
+	"ownerDecision": "\"这个很好，通过。替换现在logo。注意页面里，old new对比，更老的就不展示。需要按流畅替换fundly README和内部icon。\"",
+	"ownerReviewedExactBytes": true,
+	"agentFindings": "Cute head, quiet low-contrast palette, one saturated small fish as the only multicolour accent, muted amber ear patch tying to #e95d2b. Measured coverage 35.3% and centroid offset x -24.6%, right-half matte 93.1%. Coverage sits below the series 40% floor; owner accepted the composition as drawn, so no rescale is applied."
 }
