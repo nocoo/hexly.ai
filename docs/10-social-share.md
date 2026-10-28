@@ -1,6 +1,9 @@
 # Social share metadata for product sites
 
 Product sites such as [pew.md](https://pew.md) can reuse hexly.ai's Open Graph title, description, and 1200 × 630 share image without copying the JPEG into each repository. The records are static JSON emitted at build time. There is no application server.
+Card paths come from `src/data/social-cards.json`; see
+[the social card runbook](../.agents/skills/hexly-r2-media/references/social-cards.md)
+before regenerating one.
 
 ## Endpoints
 
@@ -10,7 +13,7 @@ Product sites such as [pew.md](https://pew.md) can reuse hexly.ai's Open Graph t
 | `https://hexly.ai/api/share/<id>.json` | One project, for example `pew` |
 | `https://hexly.ai/api/share/site.json` | The hexly.ai site card |
 | `https://hexly.ai/api/share/hexly-ai.json` | The Hexly project-detail card |
-| `https://hexly.ai/og/<id>.jpg` | The JPEG itself (`https://hexly.ai/og.jpg` for the site) |
+| `https://hexly.ai/og/<id>-<YYYYMMDD>-<hash6>.jpg` | The JPEG itself; the Worker 302s to the immutable `h.no.mt` object. Exact paths are in `src/data/social-cards.json` |
 
 `GET` and `HEAD` are public. Responses include `Access-Control-Allow-Origin: *`. Unknown ids return JSON `404`.
 
@@ -30,7 +33,7 @@ curl -s https://hexly.ai/api/share/pew.json
   },
   "canonical": "https://hexly.ai/projects/pew",
   "image": {
-    "url": "https://hexly.ai/og/pew.jpg",
+    "url": "https://h.no.mt/shared/site/v1.0.0/pew-20261028-41afb1-41afb1c4e2a8.jpg",
     "type": "image/jpeg",
     "width": 1200,
     "height": 630,
@@ -75,7 +78,7 @@ Read the JSON at **build time** (or pin a copy in the product repo). Then emit t
 <meta property="og:title" content="Pew" />
 <meta property="og:description" content="A contribution graph for the AI-native era. See your coding tokens tell a story." />
 <meta property="og:url" content="https://pew.md/" />
-<meta property="og:image" content="https://hexly.ai/og/pew.jpg" />
+<meta property="og:image" content="https://h.no.mt/shared/site/v1.0.0/pew-20261028-41afb1-41afb1c4e2a8.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -83,7 +86,7 @@ Read the JSON at **build time** (or pin a copy in the product repo). Then emit t
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Pew" />
 <meta name="twitter:description" content="A contribution graph for the AI-native era. See your coding tokens tell a story." />
-<meta name="twitter:image" content="https://hexly.ai/og/pew.jpg" />
+<meta name="twitter:image" content="https://h.no.mt/shared/site/v1.0.0/pew-20261028-41afb1-41afb1c4e2a8.jpg" />
 <meta name="twitter:image:alt" content="Pew identity" />
 ```
 
@@ -150,7 +153,7 @@ export const metadata = {
 
 ## Checks
 
-1. `curl -sI https://hexly.ai/og/pew.jpg` returns `image/jpeg`.
+1. `curl -sI https://hexly.ai/og/pew-20261028-41afb1.jpg` returns `302` to `h.no.mt`, which serves `image/jpeg`.
 2. The product HTML `og:image` absolute URL is that JPEG.
 3. Facebook / Slack / X debugger shows the typeset card (wordmark, title, identity), not a raw square logo.
 4. Sharing the product URL still points at the product origin.

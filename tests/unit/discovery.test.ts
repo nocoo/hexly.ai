@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
+import socialCards from "../../src/data/social-cards.json" with {
+	type: "json",
+};
 import { assetUrl } from "../../src/model/assets";
 import { filterProjects } from "../../src/model/catalogue";
 import {
@@ -100,7 +103,7 @@ describe("crawler discovery documents", () => {
 		expect(card.canonical).toBe("https://hexly.ai/projects/pew");
 		expect(card.title).toBe("Pew — hexly.ai");
 		expect(card.image).toEqual({
-			url: assetUrl("/og/pew.jpg"),
+			url: assetUrl(socialCards.projects.pew.path),
 			type: "image/jpeg",
 			width: 1200,
 			height: 630,
@@ -149,9 +152,11 @@ describe("crawler discovery documents", () => {
 		expect(page.description).toBe(frogie.description.en);
 		expect(page.bodyHtml).toContain(frogie.repository);
 		expect(socialImage()).toBe(assetUrl(siteSocialImage));
-		expect(socialImage(frogie)).toBe(assetUrl("/og/frogie.jpg"));
-		expect(socialImage({ ...frogie, socialImage: "/og/frogie-v2.jpg" })).toBe(
-			"https://hexly.ai/og/frogie-v2.jpg",
+		expect(socialImage(frogie)).toBe(
+			assetUrl(socialCards.projects.frogie.path),
+		);
+		expect(socialImage({ ...frogie, id: "not-in-the-registry" })).toBe(
+			assetUrl(siteSocialImage),
 		);
 		expect(absoluteUrl("/projects/pew")).toBe("https://hexly.ai/projects/pew");
 		const graph = home.jsonLd as {
@@ -175,7 +180,9 @@ describe("crawler discovery documents", () => {
 		expect(html).toContain('"@type":"SoftwareApplication"');
 		expect(html).toContain("<h1>Frogie 🐸</h1>");
 		expect(html.match(/<h1>/g)?.length).toBe(1);
-		expect(html).toContain(`content="${assetUrl("/og/frogie.jpg")}"`);
+		expect(html).toContain(
+			`content="${assetUrl(socialCards.projects.frogie.path)}"`,
+		);
 		expect(html).toContain('content="image/jpeg"');
 		expect(html).not.toContain("<title>old</title>");
 	});

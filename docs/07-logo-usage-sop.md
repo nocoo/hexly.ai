@@ -234,7 +234,7 @@ The owner-approved `2026-09-11-01 / 03` study is published in Ocelot at [`9d27ee
 | Expanded sidebar, collapsed rail, article footer, empty reader, mobile drawer | Shared `src/views/Mark.tsx`, transparent `public/logo-{80,160}.png`, displayed at 36/23/57 px without an extra mask, background, filter or opacity reduction |
 | Browser | Transparent PNGs at 16/32 px; obsolete SVG reference removed; no ICO consumer |
 | Apple touch | Square 180 px presentation with platform masking |
-| Social | Shared `https://hexly.ai/og/ocelot.jpg`; no invented Ocelot deployment URL |
+| Social | Shared project card from `src/data/social-cards.json` (served through `https://hexly.ai/og/<id>-<date>-<hash>.jpg`); no invented Ocelot deployment URL |
 
 The complete [static study](../artwork/logo-family/ocelot/2026-09-11-01/review.html) and [/logos/ocelot](https://hexly.ai/logos/ocelot) retain the old SVG, all three presentation modes, actual sizes, native palette evidence, edge views and exact downloads. Reference boards stay in static HTML. [Source browser checks](../artwork/logo-family/ocelot/2026-09-11-01/inspection/source-browser/checks.json) cover eight states and five served assets in both themes. The source passed its pre-commit and pre-push hooks, 147 unit tests and four affected browser journeys. Ocelot itself remains undeployed; Hexly release monitoring was explicitly waived.
 
