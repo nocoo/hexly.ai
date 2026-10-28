@@ -1,0 +1,398 @@
+{
+	"createdAt": "2026-10-28T11:13:25.916Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "67836b069de25e770246a92c65e1d1143425bc586699c9e92f6d977203dfd24c",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "fundly",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [
+				"left"
+			],
+			"note": "The approved composition enters from the left edge by design. No rescale and no offset: the head, the beak and the small fish keep their approved pixels, and the left rounded corners cut the hood exactly as the owner accepted it. Clearance is measured and recorded rather than enforced as a centred-object inset."
+		},
+		"matte": {
+			"minimumChannel": 244,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				251,
+				252,
+				251
+			],
+			"edgeBand": 3,
+			"interiorDistance": 5,
+			"searchRadius": 10,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "The native matte is 250-252 with faint coloured ringing. Ivory face, throat and chest reach 249 in the brightest planes, so the matte is separated by connectivity, not by a global white test: a 244 minimum-channel exterior flood fill stops at the low-value rim that surrounds every pale area. The chest ends in a 148-value edge, the face in a 83-141 rim, and the fish outline encloses itself. Enclosed white eye highlights stay opaque.",
+			"backgroundSeedReason": "No interior background seeds. Every enclosed near-white region is an eye highlight or a pale plane inside the bird, protected by connectivity.",
+			"componentCleanupReason": "Isolated components below 100 native pixels are exterior matte and antialias residue. The bird and the fish it holds stay one connected assembly."
+		},
+		"shadows": [
+			{
+				"color": [
+					58,
+					70,
+					80
+				],
+				"opacity": 0.13,
+				"blurAt2048": 26,
+				"offsetAt2048": [
+					8,
+					20
+				]
+			},
+			{
+				"color": [
+					58,
+					70,
+					80
+				],
+				"opacity": 0.09,
+				"blurAt2048": 7,
+				"offsetAt2048": [
+					2,
+					6
+				]
+			}
+		],
+		"background": {
+			"base": "#77848d",
+			"light": "#a9b3b8",
+			"shade": "#4b5760",
+			"motif": "#38434c",
+			"grainAmplitude": 0.85,
+			"grainSeed": 2841197,
+			"motifOpacity": 0.16,
+			"highlightOpacity": 0.28,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Aphotic depth lines",
+				"description": "Horizon lines sink and compress toward the bottom right, with short depth ticks in the open field. The lines read as a descent through water rather than a sightline across it, and they stay out of the open area beside the face.",
+				"layers": [
+					{
+						"d": "M620 905C770 862 900 888 1024 868L1024 948C900 968 750 938 600 985Z",
+						"tone": "ribbon"
+					},
+					{
+						"d": "M560 342C700 374 860 394 1024 368",
+						"tone": "motif",
+						"strokeWidth": 14
+					},
+					{
+						"d": "M566 332C706 364 862 384 1024 358",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M660 470C790 496 920 508 1024 492",
+						"tone": "motif",
+						"strokeWidth": 5
+					},
+					{
+						"d": "M600 598C730 634 880 654 1024 628",
+						"tone": "motif",
+						"strokeWidth": 9
+					},
+					{
+						"d": "M606 590C736 626 884 646 1024 620",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M700 742C820 772 930 786 1024 770",
+						"tone": "motif",
+						"strokeWidth": 6
+					},
+					{
+						"d": "M300 972C540 930 800 956 1024 924",
+						"tone": "motif",
+						"strokeWidth": 11
+					},
+					{
+						"d": "M306 964C546 922 804 948 1024 916",
+						"tone": "highlight",
+						"strokeWidth": 2
+					},
+					{
+						"d": "M900 432h56M928 404v56M944 700h44M966 678v44M840 862h36",
+						"tone": "motif",
+						"strokeWidth": 3
+					}
+				]
+			},
+			"status": "Designed local presentation, separate from the source website palette."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2711465,
+		"foregroundPixels": 1482839,
+		"softEdgePixels": 10637,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 216,
+			"right": 1297,
+			"bottom": 1931
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 0,
+			"top": 216,
+			"right": 1297,
+			"bottom": 1931
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": -117.51621923483225,
+		"clippedPixels": 14770
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3397,
+			"sha256": "dee87a0e4b972270269ce3eaf3ba4fe7c9881f249cb4c4b5bef7de3e69f36d16"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 913,
+			"sha256": "fe30720afe2e10f758deb6bc4413367fdbd2b84898cc159ade4159bd36ec2455"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2085886,
+			"sha256": "fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 60802,
+			"sha256": "444cb42f561ab550e0133144d8902eb7f05c6a4f1d6fe9707fca5bda2f140ae8"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1501,
+			"sha256": "038b64c26abb3b71b81a0cc6233784270815aaa4eafcf67f3ca09daa3d5ed01b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 2142733,
+			"sha256": "4546e8ec8498e630454a96192b82043ee772e286f8d9209c8871f8adbe519d9e"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 142743,
+			"sha256": "21d9c0d66b7bcdfb12029eaba0244aec839cffd882f812b5e703703398a65dee"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 110792,
+			"sha256": "9bb8617a25d86c04b5944e45e8642b2cfe491adb6ca59fffeef5154fa2f49ce8"
+		},
+		{
+			"path": "exports/fundly-transparent-2048.png",
+			"bytes": 2085886,
+			"sha256": "fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b"
+		},
+		{
+			"path": "exports/fundly-icon-2048.png",
+			"bytes": 3764253,
+			"sha256": "4450d3c923c8aa135f6bcb735ba9f04615c263a6006e3d1104c399dca122403e"
+		},
+		{
+			"path": "exports/fundly-rounded-2048.png",
+			"bytes": 3671869,
+			"sha256": "a08a4c117afcb7413be990b8fe4a68469dce1a91d3d5977cb7a1474986bd07f8"
+		},
+		{
+			"path": "exports/fundly-transparent-1024.png",
+			"bytes": 616867,
+			"sha256": "f50ae4318012fbef07c3f53a689cd549614f8449e1ed43b053fd5533671e10f2"
+		},
+		{
+			"path": "exports/fundly-icon-1024.png",
+			"bytes": 980480,
+			"sha256": "b93419ff972543620f712c1d475adf976b7b0d64879c5eb71360943c824e157d"
+		},
+		{
+			"path": "exports/fundly-rounded-1024.png",
+			"bytes": 973198,
+			"sha256": "6046fa3d42f83ea4f3f6ac0b73a3b2c4eac9b0204368b9b867ebddd0049fc67f"
+		},
+		{
+			"path": "exports/fundly-transparent-512.png",
+			"bytes": 192255,
+			"sha256": "8282d331633d1425899b6605c3fb1eae0dcf223fdfa1334dbedcbdc62cfe18aa"
+		},
+		{
+			"path": "exports/fundly-icon-512.png",
+			"bytes": 315297,
+			"sha256": "6f8b370c81d6a410db085952427d426b6420296fc5c16b1861baf3e94c7a80d8"
+		},
+		{
+			"path": "exports/fundly-rounded-512.png",
+			"bytes": 314673,
+			"sha256": "d1d631007489a1c47ddb0c5431bdde9b5b5f5271095fd9274bf4fec37327943b"
+		},
+		{
+			"path": "exports/fundly-transparent-256.png",
+			"bytes": 61696,
+			"sha256": "7e66cd0d6ce4408756112f243f1cac45347dd3d0ae0871bdf7114c2a467d14f5"
+		},
+		{
+			"path": "exports/fundly-icon-256.png",
+			"bytes": 81594,
+			"sha256": "565855a002de74a5896caf20a5f9c5bddbe9b101076370436b8c31494037e579"
+		},
+		{
+			"path": "exports/fundly-rounded-256.png",
+			"bytes": 83608,
+			"sha256": "d3a00addb6bad0640ebdbd86692d0bce22a2050734a451b6a3f4f2afb000c748"
+		},
+		{
+			"path": "exports/fundly-transparent-128.png",
+			"bytes": 19147,
+			"sha256": "7f283f52166d9aa6cd0742f0d4fa6d8c0e330053912af08bdfe7015b7895561b"
+		},
+		{
+			"path": "exports/fundly-icon-128.png",
+			"bytes": 26581,
+			"sha256": "52b80b097402cc6eef962694533b3e06c954a259606b82e0224efc984fd9350a"
+		},
+		{
+			"path": "exports/fundly-rounded-128.png",
+			"bytes": 27644,
+			"sha256": "feb5a31ed5713c0e553bfc8aeacc624793b2742af9fbb453c302404007edee2f"
+		},
+		{
+			"path": "exports/fundly-transparent-64.png",
+			"bytes": 5847,
+			"sha256": "0f06b9d37f64bfd6723874ea5bc2553c7c94ee4e6a5e061d5b8627ccd0a6a6f3"
+		},
+		{
+			"path": "exports/fundly-icon-64.png",
+			"bytes": 8504,
+			"sha256": "dc791373fba926b1dd8f3f1ea210fbc761ee185536d429f39288fda12c21b1f6"
+		},
+		{
+			"path": "exports/fundly-rounded-64.png",
+			"bytes": 8997,
+			"sha256": "6618d8e3254bc13f535d8076b549e8a69c4c83b6b0b490759b7564dab84f550b"
+		},
+		{
+			"path": "exports/fundly-transparent-48.png",
+			"bytes": 3640,
+			"sha256": "74af6140027f1868827bc9e70bcb2fbd0656520605cb459d03d7ac94ae417243"
+		},
+		{
+			"path": "exports/fundly-icon-48.png",
+			"bytes": 5365,
+			"sha256": "b18eb3b69017a5cf9bfa557d405e5cd84e928536e9365f2250dd7a9711b1ee38"
+		},
+		{
+			"path": "exports/fundly-rounded-48.png",
+			"bytes": 5650,
+			"sha256": "7a6043a0a7d2566fc084945e4b2f7989618c4bacfa8fdeeefb9ba52ec085b891"
+		},
+		{
+			"path": "exports/fundly-transparent-32.png",
+			"bytes": 1868,
+			"sha256": "284f9e2bb19e8ba24b034c707dce1dafc4b29d3b628eedcb6e4a7400205eedf2"
+		},
+		{
+			"path": "exports/fundly-icon-32.png",
+			"bytes": 2879,
+			"sha256": "6276d2d4ca2a1b33e595f075e5b88ef5b907640589867d79515d5e21695b11a6"
+		},
+		{
+			"path": "exports/fundly-rounded-32.png",
+			"bytes": 3018,
+			"sha256": "dd3342f3863cecc70006585598ef37cdcc4944ae140b24df33dbbdfe8a6f5fcc"
+		},
+		{
+			"path": "exports/fundly-transparent-24.png",
+			"bytes": 1200,
+			"sha256": "8ec6d5eb58c035ce0759e7f612bd955dcf59c83839537c849672a75db9b3dc64"
+		},
+		{
+			"path": "exports/fundly-icon-24.png",
+			"bytes": 1755,
+			"sha256": "3654d51790dea152248ddbbc19205465e8ec546aa74d960f7f89cf599b521075"
+		},
+		{
+			"path": "exports/fundly-rounded-24.png",
+			"bytes": 1886,
+			"sha256": "71a7422fda530965cc2bd4c432a267f90f1c96e3e64b75e242678aab7ac37af8"
+		},
+		{
+			"path": "exports/fundly-transparent-16.png",
+			"bytes": 672,
+			"sha256": "3f01ef4f19b561ab797637af02aaca8e447c2dca1c7ce4f2ea85dd3a43889453"
+		},
+		{
+			"path": "exports/fundly-icon-16.png",
+			"bytes": 915,
+			"sha256": "b0f00b9f9afdc0a1d399c6fd8670045265b7efe6565c797600e8758b3d9fca79"
+		},
+		{
+			"path": "exports/fundly-rounded-16.png",
+			"bytes": 973,
+			"sha256": "a286aabbdadb3d1c3dbe389acb205008cbcd4a19ec644967721decab6642472b"
+		},
+		{
+			"path": "exports/fundly-white-2048.png",
+			"bytes": 1964402,
+			"sha256": "16fd56f4d6e7e66ccac460bdf98ad9c752973dd4f33fecf552eadb835da0296e"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 592478,
+			"sha256": "bf773258bad40eeff37788735e2eff281d05a3fc1f539656f940277697ab90b9"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 594222,
+			"sha256": "c7aa3eb61a49c8112132e5c1d4aee91753c5d5cf23b8d5111cc46c5efcaf5f4e"
+		}
+	]
+}

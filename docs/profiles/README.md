@@ -72,7 +72,7 @@
 | [📱 InfoViz iOS](64-infoviz-ios.md) | Original asset | #104285 | transparent |
 | [🖼️ Image Uploader](65-node-image-uploader.md) | Profile emoji | #ddb42d | transparent |
 | [✂️ clip](67-clip.md) | GPT Image · Animal campaign kit | #6366f1 | #0a0a0b |
-| [🪴 Fundly](68-fundly.md) | GPT Image · Animal campaign kit | #e95d2b | #e85d2a |
+| [🪴 Fundly](68-fundly.md) | Adopted family | #e95d2b | #e85d2a |
 | [🌸 DreamRO](69-dreamro.md) | GPT Image · Object campaign kit | #a98c57 | #f4f1e5 |
 | [🐱 Meowth](70-meowth.md) | GPT Image · Animal campaign kit | #3c83f6 | #eeeff2 |
 | [☕ Coffee](73-coffee.md) | GPT Image · Object campaign kit | #c7d9a9 | #f8f6f0 |

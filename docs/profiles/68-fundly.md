@@ -44,13 +44,13 @@ Collect fund and market data for private research into Chinese funds, ETFs, stoc
 
 ![Fundly source identity](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-160-5a81ce80d48f.webp)
 
-- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
-- Subject: White flame on an orange rounded square
-- [Source](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg): `apps/web/public/logo.svg`
-- [Preserved asset](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-08ec45808b94.svg)
-- Original dimensions: 32 × 32
-- Original size: 456 bytes
-- SHA-256: `08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8`
+- Type: Original project artwork, copied without modification
+- Subject: Charcoal emperor penguin head holding one small coral fish
+- [Source](https://github.com/nocoo/fundly/blob/9b5a655ce0576a279a6d9b2363b8e8fe79a17aae/logo.png): `logo.png`
+- [Preserved asset](https://hexly.ai/logos/originals/fundly-family-2026-10-28-02.png)
+- Original dimensions: 2048 × 2048
+- Original size: 2085886 bytes
+- SHA-256: `fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -64,70 +64,32 @@ Collect fund and market data for private research into Chinese funds, ETFs, stoc
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
-## Current textured icons
-
-![Fundly current icon](https://h.no.mt/projects/fundly/icons/v1.0.0/rounded-160.webp)
-
-- [Native square PNG](https://h.no.mt/projects/fundly/icons/v1.0.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/fundly/icons/v1.0.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/fundly/icons/v1.0.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/fundly/icons/v1.0.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/fundly/icons/v1.0.0/apple-touch-icon.png)
-- [Manifest and checksums](https://h.no.mt/projects/fundly/icons/v1.0.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/fundly/icons/v1.0.0/guide.md)
-- Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
-- Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
-
 ## Current campaign texture
 
 - Coastal leaf shelter / 海岸叶荫: A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades.
 - 海岸叶荫：宽阔叶面与清晰叶脉形成浅浮雕，右侧疏密错落，左侧保留安静纸面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.39.
-- [Paper PNG](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/fundly/textures/v1.0.1/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/fundly/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/fundly/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/fundly/v1.0.1/review.html)
+- Independent texture pack v1.0.2; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.39.
+- [Paper PNG](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-light.png) · [Night PNG](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/fundly/textures/v1.0.2/manifest.json) · [Usage/rights](https://h.no.mt/projects/fundly/textures/v1.0.2/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/fundly/v1.0.2/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
-
-## Hexly campaign brand archive
-
-- Brand version: `1.0.0`; [public archive](https://hexly.ai/projects/fundly#brand).
-- [Light lockup](https://h.no.mt/brands/fundly/v1.0.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/fundly/v1.0.0/lockup-dark.png), [favicon](https://h.no.mt/brands/fundly/v1.0.0/favicon.ico).
-- [Complete usage and integration guide](https://h.no.mt/brands/fundly/v1.0.0/guide.md), [standalone specimens](https://hexly.ai/brands/fundly/v1.0.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/fundly/v1.0.0/manifest.json).
-- Source adoption: separate source-team handoff; no adoption commit is claimed.
-- Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
-
-
-Worldly navy-and-ivory penguin holding binoculars.
-
-### Identity keeps its colors
-
-Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.
-
-项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。
-
-### A complete composition
-
-Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.
-
-保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。
-
-### A mark, not a tile
-
-Navigation 24px preferred, 16px minimum. Wordmark ≥67px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine facets soften at 16px.
-
-导航推荐 24px，最小 16px。字标宽度至少 67px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小切面会柔化。
 
 ## Refined identity
 
-![Fundly refined preview](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/icon-160.webp)
+![Fundly refined preview](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/icon-160.webp)
 
-- Status: Local review; this finishing pass has not been adopted in the source project; updated 2026-09-07.
-- Study `2026-09-07-01`, finishing `02`
-- Refined subject: A worldly navy-and-ivory penguin holding binoculars
+- Status: Adopted in the source project; updated 2026-10-28.
+- Study `2026-10-28-02`, finishing `02`
+- Refined subject: Charcoal emperor penguin head holding one small coral fish
 - Site path: `/projects/fundly#brand`; [local gallery](https://index.dev.hexly.ai/projects/fundly#brand)
-- [Static review HTML](../../artwork/logo-family/fundly/2026-09-07-01/review.html)
-- [Full process archive](https://github.com/nocoo/hexly.ai/tree/main/artwork/logo-family/fundly/2026-09-07-01)
-- [Transparent foreground](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/transparent.png); SHA-256: `e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f`
-- [Square icon](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/icon.png), [rounded icon](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/rounded.png), [white version](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/raw.png), [exact prompt](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/manifest.json)
-- [Previous original](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-08ec45808b94.svg), copied from [its immutable source](https://github.com/nocoo/fundly/blob/6de762074e00011009f7604bbeeb7c0b04923c00/apps/web/public/logo.svg)
-- Previous SHA-256: `08ec45808b94078caa2a31720da96adf9b9aadfdaf5498c98cfc0c2adc973bf8`
-- Generation: gpt-image-2, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
+- [Static review HTML](../../artwork/logo-family/fundly/2026-10-28-02/review.html)
+- [Full process archive](../../artwork/logo-family/fundly/2026-10-28-02)
+- [Transparent foreground](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/transparent.png); SHA-256: `fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b`
+- [Square icon](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/icon.png), [rounded icon](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/rounded.png), [white version](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/raw.png), [exact prompt](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/fundly/2026-10-28-02/02/manifest.json)
+- [Previous original](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/transparent.png), copied from [its preserved local source](https://h.no.mt/logos/family/fundly/2026-09-07-01/02/transparent.png)
+- Previous SHA-256: `e45f5a9e9c062160d2ad91785f7ce9e9ddfb27b41362cfd89a539429b9fceb7f`
+- Generation: gpt-image-2.5-sunburst, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
 - The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
@@ -135,36 +97,36 @@ Navigation 24px preferred, 16px minimum. Wordmark ≥67px wide; lockup ≥160px.
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#9aafbb` | Selected local presentation, fundly/2026-09-07-01/02; background.base in archived settings.json |
-| primary | `#192541` | Native fundly 967f052960b2, sampled sRGB pixel (1340, 214); artwork/logo-family/fundly/2026-09-07-01/palette.json |
-| accent | `#27365c` | Native fundly 967f052960b2, sampled sRGB pixel (1520, 1100); artwork/logo-family/fundly/2026-09-07-01/palette.json |
-| accent | `#dfd2b8` | Native fundly 967f052960b2, sampled sRGB pixel (1180, 1280); artwork/logo-family/fundly/2026-09-07-01/palette.json |
-| accent | `#80682e` | Native fundly 967f052960b2, sampled sRGB pixel (861, 1025); artwork/logo-family/fundly/2026-09-07-01/palette.json |
-| accent | `#335866` | Native fundly 967f052960b2, sampled sRGB pixel (908, 925); artwork/logo-family/fundly/2026-09-07-01/palette.json |
-| accent | `#cb615f` | Native fundly 967f052960b2, sampled sRGB pixel (1034, 1148); artwork/logo-family/fundly/2026-09-07-01/palette.json |
+| background | `#77848d` | Selected local presentation; background.base in archived settings.json |
+| primary | `#38343d` | Native fundly 67836b069de2, sampled sRGB pixel (300, 350); palette.json |
+| accent | `#51515f` | Native fundly 67836b069de2, sampled sRGB pixel (600, 360); palette.json |
+| accent | `#efe4d0` | Native fundly 67836b069de2, sampled sRGB pixel (500, 1120); palette.json |
+| accent | `#f1b66c` | Native fundly 67836b069de2, sampled sRGB pixel (120, 600); palette.json |
+| accent | `#fc7371` | Native fundly 67836b069de2, sampled sRGB pixel (1090, 1420); palette.json |
+| accent | `#4e939c` | Native fundly 67836b069de2, sampled sRGB pixel (1130, 1300); palette.json |
 
-### Just after the sighting
+### Caught one, still watching
 
-A compact whole penguin has lowered its binoculars and turns with calm curiosity. The navy body sits to the right while the instrument reaches into the left-hand space. Complete feet and feather tips stay comfortably inside the rounded viewfinder.
+A large head enters from the left edge, its beak holding one very small deep-sea fish. The right side stays open so the face carries the weight and the fish sits as a single punctuation.
 
-企鹅刚放下望远镜，带着平静的好奇回望。完整而紧凑的身体偏右，望远镜伸向左侧留白；脚趾与羽尖均在圆角取景框内保留充分空间。
+大头从左边缘入框，喙尖叼着一条极小的深海鱼。右侧保留大片空白，重量集中在脸，鱼只是一处标点。
 
-### Navy planes, prismatic lenses
+### Quiet charcoal, one coral fish
 
-Broad connected navy and indigo facets contrast with an opaque warm-ivory face and bib. The flippers support one brass-and-teal binocular instrument. Its lens facets form the sole multicolored accent group without covering the eyes.
+Connected flat facets step from deep charcoal through slate to warm ivory, with a muted amber ear patch echoing the product accent. The fish is the only saturated area, moving through coral, teal, amber and rose.
 
-连贯的深蓝与靛蓝色块衬托暖象牙白面部和腹部。双鳍自然托着黄铜与青色望远镜，镜片中的彩色碎片构成唯一一组多彩兴趣点，双眼保持清晰。
+连贯碎面从深炭经岩灰过渡到暖象牙，低饱和琥珀耳斑呼应产品主色。全图只有鱼是饱和彩色，由珊瑚、青、琥珀与玫瑰色碎面组成。
 
-### Far-horizon sightlines
+### Aphotic depth lines
 
-Mineral-blue paper opens into broad horizon arcs and short sighting ticks. The curves follow the penguin’s gaze and remain visible beside the dark body. Grain and contact shadows are independent of the transparent foreground.
+Horizon lines sink and compress toward the lower right with short depth ticks in the open field. The field reads as a descent through water instead of a sightline across it, and it stays clear of the face.
 
-矿物蓝纸面铺开宽阔的地平线弧与简短瞄准刻线，顺着企鹅的视线延伸，在深色主体旁保持可见。颗粒和接触阴影与透明前景分别保存。
+水平线向右下缓慢下沉并收紧，空白处只留简短深度刻度。整片底图读作一次下潜，而不是一次远望，且始终避让面部。
 
-Small-size observation: The navy-and-ivory silhouette and lowered binoculars remain the main small-size cues. At 16 px the individual lens colors and eye facets merge. The 24 px sidebar and 16 px browser samples use the transparent penguin without its paper tile.
+Small-size observation: The charcoal-to-ivory face and the small fish stay the main small-size cues. At 16 px the fish resolves to one warm spark. The 24 px sidebar and 16 px browser marks use the transparent penguin without its field.
 
 ## Further refinements
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
+Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
 
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.

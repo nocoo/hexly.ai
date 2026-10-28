@@ -1,0 +1,143 @@
+{
+	"schemaVersion": 1,
+	"project": "fundly",
+	"brandVersion": "1.1.0",
+	"siteBaseline": "9b5a655ce0576a279a6d9b2363b8e8fe79a17aae",
+	"method": "archived-artwork",
+	"sourceMethod": "gpt-image-2.5-sunburst",
+	"series": "animal",
+	"caption": {
+		"en": "One small find, held lightly.",
+		"zh": "一次小小的发现，轻轻叼住。"
+	},
+	"description": {
+		"en": "Charcoal emperor penguin head holding one small coral fish.",
+		"zh": "叼着一条小珊瑚色鱼的深炭色帝企鹅头部。"
+	},
+	"foreground": {
+		"path": "/logos/family/fundly/2026-10-28-02/02/transparent.png",
+		"sha256": "fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b",
+		"width": 2048,
+		"height": 2048
+	},
+	"pattern": {
+		"name": {
+			"en": "Aphotic depth lines",
+			"zh": "无光带等深线"
+		},
+		"description": {
+			"en": "Horizon lines sink and compress toward the lower right with short depth ticks in the open field.",
+			"zh": "水平线向右下缓慢下沉并收紧，空白处只留简短深度刻度。"
+		},
+		"source": "artwork/logo-family/fundly/2026-10-28-02/presentation.json",
+		"sourceSha256": "dd39c5a5fc3e095bc774f5b07f61f40d2b1a80d9fcfe7ff08cc44c2672d8f418",
+		"layers": [
+			{
+				"d": "M620 905C770 862 900 888 1024 868L1024 948C900 968 750 938 600 985Z",
+				"tone": "ribbon"
+			},
+			{
+				"d": "M560 342C700 374 860 394 1024 368",
+				"tone": "motif",
+				"strokeWidth": 14
+			},
+			{
+				"d": "M566 332C706 364 862 384 1024 358",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M660 470C790 496 920 508 1024 492",
+				"tone": "motif",
+				"strokeWidth": 5
+			},
+			{
+				"d": "M600 598C730 634 880 654 1024 628",
+				"tone": "motif",
+				"strokeWidth": 9
+			},
+			{
+				"d": "M606 590C736 626 884 646 1024 620",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M700 742C820 772 930 786 1024 770",
+				"tone": "motif",
+				"strokeWidth": 6
+			},
+			{
+				"d": "M300 972C540 930 800 956 1024 924",
+				"tone": "motif",
+				"strokeWidth": 11
+			},
+			{
+				"d": "M306 964C546 922 804 948 1024 916",
+				"tone": "highlight",
+				"strokeWidth": 2
+			},
+			{
+				"d": "M900 432h56M928 404v56M944 700h44M966 678v44M840 862h36",
+				"tone": "motif",
+				"strokeWidth": 3
+			}
+		],
+		"bounds": [300.0, 332.0, 1024.0, 985.0],
+		"transform": {
+			"scale": 0.5966850828729282,
+			"x": -139.00552486187848,
+			"y": -136.91712707182324,
+			"method": "Uniformly fit complete motif linework into 432px, leaving a transparent 40px tile perimeter. No clipped paths or recolored project artwork."
+		}
+	},
+	"hero": {
+		"method": "Authored canvas composition of the complete archived foreground and project-specific supporting texture; no new image-model call, no crop or recolor",
+		"wide": [2400, 960],
+		"square": [1024, 1024],
+		"layout": "field",
+		"entryEdges": [],
+		"minimumFrameInset": 64
+	},
+	"typography": {
+		"family": "Space Grotesk",
+		"weight": 600,
+		"letterSpacingEm": -0.043478260869565216,
+		"title": "Fundly",
+		"license": "SIL OFL 1.1",
+		"source": "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+		"fontSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+		"width": 440.812,
+		"height": 158.0,
+		"glyphBoundsUnits": [69.499755859375, -200, 2989.5839764138927, 700],
+		"canvasPaddingPx": 16
+	},
+	"sourceScope": "Hexly-only collection. Existing product source/adoption metadata stays unchanged; new kit adoption is separate.",
+	"newGenerationCalls": 0,
+	"scope": {
+		"id": "hexly-campaign",
+		"appliesTo": [
+			"hexly.ai project introduction and brand archive",
+			"Hexly-authored promotional video, deck, social and campaign material"
+		],
+		"officialProjectIdentity": "Preserve original shape, proportions, colors and bytes. No terracotta recoloring.",
+		"productUI": "Independent product palettes, themes and UI are outside this scope; this release neither changes nor prescribes them.",
+		"campaignInterpretation": "Existing family artwork or any future GPT Image campaign Hero is a Hexly interpretation, not an official project-logo replacement. Record its independent origin and adoption state.",
+		"localAccent": "A small accent may quote an evidenced logo color on a Hexly surface without modifying the logo."
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/fundly-family-2026-10-28-02.png",
+		"sha256": "fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b",
+		"width": 2048,
+		"height": 2048,
+		"sourceUrl": "https://github.com/nocoo/fundly/blob/9b5a655ce0576a279a6d9b2363b8e8fe79a17aae/logo.png",
+		"repositoryRevision": "9b5a655ce0576a279a6d9b2363b8e8fe79a17aae"
+	},
+	"campaignInterpretation": {
+		"sameBytesAsOfficial": true,
+		"familyStatus": "adopted",
+		"replacementOfOfficialIdentity": false,
+		"description": "The adopted family artwork is now the source project's own logo; the Hexly Hero and texture remain Hexly-only promotional compositions."
+	},
+	"sourceArchive": "artwork/logo-family/fundly/2026-10-28-02",
+	"sourceAdoptionRevision": "9b5a655ce0576a279a6d9b2363b8e8fe79a17aae"
+}

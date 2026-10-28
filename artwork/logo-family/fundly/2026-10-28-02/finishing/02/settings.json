@@ -1,0 +1,142 @@
+{
+	"project": "fundly",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [
+		2048,
+		1024,
+		512,
+		256,
+		128,
+		64,
+		48,
+		32,
+		24,
+		16
+	],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"intentionalEdges": [
+			"left"
+		],
+		"note": "The approved composition enters from the left edge by design. No rescale and no offset: the head, the beak and the small fish keep their approved pixels, and the left rounded corners cut the hood exactly as the owner accepted it. Clearance is measured and recorded rather than enforced as a centred-object inset."
+	},
+	"matte": {
+		"minimumChannel": 244,
+		"maximumChroma": 18,
+		"backgroundRgb": [
+			251,
+			252,
+			251
+		],
+		"edgeBand": 3,
+		"interiorDistance": 5,
+		"searchRadius": 10,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "The native matte is 250-252 with faint coloured ringing. Ivory face, throat and chest reach 249 in the brightest planes, so the matte is separated by connectivity, not by a global white test: a 244 minimum-channel exterior flood fill stops at the low-value rim that surrounds every pale area. The chest ends in a 148-value edge, the face in a 83-141 rim, and the fish outline encloses itself. Enclosed white eye highlights stay opaque.",
+		"backgroundSeedReason": "No interior background seeds. Every enclosed near-white region is an eye highlight or a pale plane inside the bird, protected by connectivity.",
+		"componentCleanupReason": "Isolated components below 100 native pixels are exterior matte and antialias residue. The bird and the fish it holds stay one connected assembly."
+	},
+	"shadows": [
+		{
+			"color": [
+				58,
+				70,
+				80
+			],
+			"opacity": 0.13,
+			"blurAt2048": 26,
+			"offsetAt2048": [
+				8,
+				20
+			]
+		},
+		{
+			"color": [
+				58,
+				70,
+				80
+			],
+			"opacity": 0.09,
+			"blurAt2048": 7,
+			"offsetAt2048": [
+				2,
+				6
+			]
+		}
+	],
+	"background": {
+		"base": "#77848d",
+		"light": "#a9b3b8",
+		"shade": "#4b5760",
+		"motif": "#38434c",
+		"grainAmplitude": 0.85,
+		"grainSeed": 2841197,
+		"motifOpacity": 0.23,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.22,
+		"pattern": {
+			"name": "Aphotic depth lines",
+			"description": "Horizon lines sink and compress toward the bottom right, with short depth ticks in the open field. The lines read as a descent through water rather than a sightline across it, and they stay out of the open area beside the face.",
+			"layers": [
+				{
+					"d": "M620 905C770 862 900 888 1024 868L1024 948C900 968 750 938 600 985Z",
+					"tone": "ribbon"
+				},
+				{
+					"d": "M560 342C700 374 860 394 1024 368",
+					"tone": "motif",
+					"strokeWidth": 14
+				},
+				{
+					"d": "M566 332C706 364 862 384 1024 358",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M660 470C790 496 920 508 1024 492",
+					"tone": "motif",
+					"strokeWidth": 5
+				},
+				{
+					"d": "M600 598C730 634 880 654 1024 628",
+					"tone": "motif",
+					"strokeWidth": 9
+				},
+				{
+					"d": "M606 590C736 626 884 646 1024 620",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M700 742C820 772 930 786 1024 770",
+					"tone": "motif",
+					"strokeWidth": 6
+				},
+				{
+					"d": "M300 972C540 930 800 956 1024 924",
+					"tone": "motif",
+					"strokeWidth": 11
+				},
+				{
+					"d": "M306 964C546 922 804 948 1024 916",
+					"tone": "highlight",
+					"strokeWidth": 2
+				},
+				{
+					"d": "M900 432h56M928 404v56M944 700h44M966 678v44M840 862h36",
+					"tone": "motif",
+					"strokeWidth": 3
+				}
+			]
+		},
+		"status": "Designed local presentation, separate from the source website palette."
+	}
+}
