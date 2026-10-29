@@ -33,65 +33,49 @@ export function Directory({
 		.filter((project) => project.family && !project.archived)
 		.slice(0, 6);
 	return (
-		<main
-			id="main-content"
-			className={`shell directory-main ${logos ? "logo-wall-main" : ""}`}
-		>
-			{logos ? (
-				<div className="gallery-heading">
-					<div>
-						<p className="eyebrow">
-							<span className="tiny-square" />
-							{t.galleryEyebrow}
-						</p>
-						<h1>{t.galleryTitle}</h1>
-					</div>
-					<p>{t.galleryDescription}</p>
-				</div>
-			) : (
-				<section className="hero" aria-labelledby="hero-title">
-					<div className="hero-copy">
-						<p className="eyebrow">
-							<span className="tiny-square" />
-							{t.eyebrow}
-						</p>
-						<h1 id="hero-title">
-							{t.heroFirst}
-							<br />
-							<span className="outline-word">{t.heroSecond}</span>
-							<span className="headline-period">
-								{locale === "zh" ? "。" : "."}
-							</span>
-						</h1>
-						<p className="hero-description">{t.heroDescription}</p>
-					</div>
-					<div className="hero-art">
-						<div className="orbit orbit-one" />
-						<div className="orbit orbit-two" />
-						<div className="orbit orbit-three" />
-						<div className="orbit-dot dot-one" />
-						<div className="orbit-dot dot-two" />
-						<span className="art-cross cross-one">+</span>
-						<span className="art-cross cross-two">+</span>
-						{faces.map((project, index) => (
-							<button
-								type="button"
-								className={`floating-logo float-${index}`}
-								key={project.id}
-								aria-label={`${t.viewProject}: ${project.title}`}
-								onClick={() => onProject(project.id)}
-							>
-								<Logo project={project} size={index < 2 ? 104 : 80} eager />
-							</button>
-						))}
-						<span className="hero-art-caption">
-							<span />
-							{t.heroNote}
-							<span />
+		<main id="main-content" className="shell directory-main">
+			<section className="hero" aria-labelledby="hero-title">
+				<div className="hero-copy">
+					<p className="eyebrow">
+						<span className="tiny-square" />
+						{t.eyebrow}
+					</p>
+					<h1 id="hero-title">
+						{t.heroFirst}
+						<br />
+						<span className="outline-word">{t.heroSecond}</span>
+						<span className="headline-period">
+							{locale === "zh" ? "。" : "."}
 						</span>
-					</div>
-				</section>
-			)}
+					</h1>
+					<p className="hero-description">{t.heroDescription}</p>
+				</div>
+				<div className="hero-art">
+					<div className="orbit orbit-one" />
+					<div className="orbit orbit-two" />
+					<div className="orbit orbit-three" />
+					<div className="orbit-dot dot-one" />
+					<div className="orbit-dot dot-two" />
+					<span className="art-cross cross-one">+</span>
+					<span className="art-cross cross-two">+</span>
+					{faces.map((project, index) => (
+						<button
+							type="button"
+							className={`floating-logo float-${index}`}
+							key={project.id}
+							aria-label={`${t.viewProject}: ${project.title}`}
+							onClick={() => onProject(project.id)}
+						>
+							<Logo project={project} size={index < 2 ? 104 : 80} eager />
+						</button>
+					))}
+					<span className="hero-art-caption">
+						<span />
+						{t.heroNote}
+						<span />
+					</span>
+				</div>
+			</section>
 			<section
 				className="collection"
 				id="collection"
@@ -112,30 +96,6 @@ export function Directory({
 						inputRef={searchRef}
 					/>
 				</div>
-				<nav className="collection-views view-switch" aria-label={t.browseAs}>
-					{(["directory", "logos"] as const).map((view) => (
-						<a
-							key={view}
-							href={navigationPath({ ...state, view, anchor: "collection" })}
-							aria-current={state.view === view ? "page" : undefined}
-							onClick={(event) => {
-								if (
-									event.button ||
-									event.metaKey ||
-									event.ctrlKey ||
-									event.shiftKey ||
-									event.altKey
-								)
-									return;
-								event.preventDefault();
-								onChange({ view, anchor: "collection" });
-							}}
-						>
-							<Icon name={view === "logos" ? "image" : "grid"} />
-							{view === "logos" ? t.gallery : t.directory}
-						</a>
-					))}
-				</nav>
 				<div className="collection-toolbar">
 					<fieldset className="category-tabs" aria-label={t.categories}>
 						{categories.map((category) => (
@@ -150,18 +110,51 @@ export function Directory({
 							</button>
 						))}
 					</fieldset>
-					<button
-						type="button"
-						className="sort-toggle"
-						aria-label={`${t.sort}: ${t.alphabetical}`}
-						aria-pressed={state.sort === "az"}
-						title={`${state.sort === "az" ? t.alphabetical : t.curated} · ${state.sort === "az" ? t.curated : t.alphabetical}`}
-						onClick={() =>
-							onChange({ sort: state.sort === "az" ? "curated" : "az" })
-						}
-					>
-						<Icon name="sort-az" />
-					</button>
+					<div className="collection-actions">
+						<nav
+							className="collection-views view-switch"
+							aria-label={t.browseAs}
+						>
+							{(["directory", "logos"] as const).map((view) => (
+								<a
+									key={view}
+									href={navigationPath({
+										...state,
+										view,
+										anchor: "collection",
+									})}
+									aria-current={state.view === view ? "page" : undefined}
+									onClick={(event) => {
+										if (
+											event.button ||
+											event.metaKey ||
+											event.ctrlKey ||
+											event.shiftKey ||
+											event.altKey
+										)
+											return;
+										event.preventDefault();
+										onChange({ view, anchor: undefined });
+									}}
+								>
+									<Icon name={view === "logos" ? "image" : "grid"} />
+									{view === "logos" ? t.gallery : t.directory}
+								</a>
+							))}
+						</nav>
+						<button
+							type="button"
+							className="sort-toggle"
+							aria-label={`${t.sort}: ${t.alphabetical}`}
+							aria-pressed={state.sort === "az"}
+							title={`${state.sort === "az" ? t.alphabetical : t.curated} · ${state.sort === "az" ? t.curated : t.alphabetical}`}
+							onClick={() =>
+								onChange({ sort: state.sort === "az" ? "curated" : "az" })
+							}
+						>
+							<Icon name="sort-az" />
+						</button>
+					</div>
 				</div>
 				<p className="result-count" role="status">
 					{t.showing} {visible.length} {t.of} {projects.length} {t.projects}

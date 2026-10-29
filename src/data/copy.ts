@@ -114,7 +114,6 @@ export const copy = {
 		techStack: "Tech stack",
 		readReadme: "Read README",
 		palette: "Color palette",
-		galleryEyebrow: "THE IDENTITY COLLECTION",
 		galleryTitle: "Meet the family.",
 		galleryDescription:
 			"A closer look at the characters behind the projects. From the big picture to the smallest detail.",
@@ -286,7 +285,6 @@ export const copy = {
 		techStack: "技术栈",
 		readReadme: "阅读 README",
 		palette: "项目色板",
-		galleryEyebrow: "项目视觉档案",
 		galleryTitle: "认识这个大家庭。",
 		galleryDescription:
 			"看看每个项目背后的小伙伴，从完整的大图，到最小的细节。",

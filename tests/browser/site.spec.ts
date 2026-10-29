@@ -187,7 +187,7 @@ test.describe("restores directory filters with browser back and reloads a shared
 			.getByRole("navigation", { name: "Browse projects" })
 			.getByRole("link", { name: "Logo wall" })
 			.click();
-		await expect(page).toHaveURL(/\/logos\?q=pew#collection$/);
+		await expect(page).toHaveURL(/\/logos\?q=pew$/);
 		await expect(page.locator(".logo-wall .project-card")).toHaveCount(2);
 		await expect(page.locator(".logo-wall .project-description")).toHaveCount(
 			0,
