@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.7.1] - 2026-10-29
+
+### Maintenance
+
+- remove the for-agents region ([b20117b](https://github.com/nocoo/hexly.ai/commit/b20117bf790f3dd913dacb6a77d2c31455097d1d))
+- compress the collection toolbar ([ae5cd38](https://github.com/nocoo/hexly.ai/commit/ae5cd38a5f8e431ff5f23ce464003d1517324d95))
+
+### Features
+
+- place the view switch beside sorting ([fcd29a3](https://github.com/nocoo/hexly.ai/commit/fcd29a3dd8d27a12df2e986592f9a6d9aa258ac3))
+
+### Documentation
+
+- record the agent handoff without an on-page region ([78ce292](https://github.com/nocoo/hexly.ai/commit/78ce292315ed51e4a82cbfbf02bdff1e3fc0ac9e))
+
 ## [1.7.0] - 2026-10-29
 
 ### Maintenance
