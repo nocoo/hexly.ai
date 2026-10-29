@@ -14,9 +14,8 @@ import {
 	categoryCounts,
 	isChromeWebStoreProject,
 } from "../model/catalogue";
-import { type DirectoryState, navigationPath } from "../model/navigation";
+import type { DirectoryState } from "../model/navigation";
 import type { Category, Locale, Project } from "../model/project";
-import { AgentGuide } from "./AgentGuide";
 import { AssetLink } from "./AssetLink";
 import { BrandDownloads, BrandHero } from "./BrandKit";
 import { Icon } from "./Icon";
@@ -50,7 +49,7 @@ export function ProjectDetail({
 	const activeTab =
 		state.anchor === "downloads"
 			? "downloads"
-			: ["api", "agent-guide", "integration"].includes(state.anchor ?? "")
+			: ["api", "integration"].includes(state.anchor ?? "")
 				? "api"
 				: "brand";
 	const tabs = [
@@ -557,11 +556,6 @@ export function ProjectDetail({
 								locale={locale}
 							/>
 						)}
-						<AgentGuide
-							path={navigationPath(state)}
-							projects={projects}
-							locale={locale}
-						/>
 					</div>
 				</section>
 			) : (

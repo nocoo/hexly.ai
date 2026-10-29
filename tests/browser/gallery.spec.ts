@@ -60,7 +60,6 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 	).toHaveAttribute("aria-selected", "true");
 	await page.getByRole("tab", { name: "Downloads & archive" }).press("End");
 	await expect(page.locator("#api .api-preview")).toBeVisible();
-	await expect(page.getByRole("region", { name: "For agents" })).toBeVisible();
 	await expect(
 		page.getByRole("link", { name: "Try a template" }),
 	).toHaveAttribute("href", "/templates?project=xray");

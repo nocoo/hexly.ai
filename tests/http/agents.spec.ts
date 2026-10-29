@@ -33,7 +33,6 @@ test("advertises page-specific agent guides in HTML and the crawler index", asyn
 		expect(html).toContain(
 			`<link rel="alternate" type="text/markdown" href="${guide}" title="Agent guide"`,
 		);
-		expect(html).toContain('id="agent-guide"');
 	}
 	const head = await request.head("/agents/templates.md");
 	expect(head.status()).toBe(200);
