@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.7.0] - 2026-10-29
+
+### Maintenance
+
+- add ip-as-logo project skill ([016d122](https://github.com/nocoo/hexly.ai/commit/016d1221b751a85638b9a96d7a7d1ea17310eb0c))
+
+### Documentation
+
+- index ip-as-logo skill in maintenance guide ([b88b545](https://github.com/nocoo/hexly.ai/commit/b88b5452cf892d28b5fc61eec881b5cbe0bb8278))
+
+### Features
+
+- split logo family into pipeline and three series skills ([1609e37](https://github.com/nocoo/hexly.ai/commit/1609e373f00479d92052e36ce5ba0307061079de))
+- add fundly penguin generation study ([fe12982](https://github.com/nocoo/hexly.ai/commit/fe12982b8b33ea9316688ffff81464eb12f61eba))
+- redraw fundly penguin with small fish accent ([94ef7d2](https://github.com/nocoo/hexly.ai/commit/94ef7d2d0f7ce5432d0e6fe99ad4cc3994852606))
+- adopt fundly penguin identity ([075158d](https://github.com/nocoo/hexly.ai/commit/075158d2a27418aa03943d6ddaeeff713b066ffb))
+- publish fundly social card ([ee27c51](https://github.com/nocoo/hexly.ai/commit/ee27c51c1a442580cd9731db4944a841cef40c79))
+- register social cards by dated content hashes ([4291f8f](https://github.com/nocoo/hexly.ai/commit/4291f8f81e17b993e39b9b525edfb789216ff2c5))
+
+### Fixes
+
+- resolve logo skill reference paths ([f64d4ed](https://github.com/nocoo/hexly.ai/commit/f64d4edd8a95c194322be17d1ce575d85863023a))
+- fill share tile for opaque artwork ([d6174a1](https://github.com/nocoo/hexly.ai/commit/d6174a19d1042d37608a9ee53a6ec043c06a7869))
+
 ## [1.6.2] - 2026-10-28
 
 ### Features
