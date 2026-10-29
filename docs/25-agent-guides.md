@@ -1,16 +1,17 @@
 # 25 · Agent guides and direct asset reuse
 
-Every canonical catalogue, gallery, project, template and status page includes a
-small **For agents / 交给 Agent** section. Its instructions can be read inline or
-copied with one click. Copying is user-initiated, reports success locally, and
-keeps selectable text plus a Markdown link available if clipboard access fails.
+Every canonical catalogue, gallery, project, template and status page serves a
+page-specific Markdown guide. The pages themselves no longer carry a visible
+"For agents" region: the handoff is advertised only through the `link
+rel="alternate"` head tag, `llms.txt` and the `/agents/*.md` assets, so readers
+who want the guide fetch the Markdown instead of opening an on-page panel.
 
 ## One source for browsers and agents
 
 `src/model/agent-guide.ts` derives instructions from the existing catalogue,
-Video Kit manifest and immutable standard-outro records. The React section,
-crawler HTML and generated Markdown use that same function. No second project
-catalogue or per-project hand-written prompt is maintained.
+Video Kit manifest and immutable standard-outro records. The crawler HTML,
+Markdown assets and the Template/Logo copy controls read that same function. No
+second project catalogue or per-project hand-written prompt is maintained.
 
 | Page | Machine-readable guide |
 | --- | --- |
