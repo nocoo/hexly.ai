@@ -85,9 +85,10 @@ export function Directory({
 					<div>
 						<div className="collection-title-row">
 							<h2 id="collection-title">{t.collection}</h2>
-							<span className="count-badge">{projects.length}</span>
+							<span className="count-badge" role="status" aria-live="polite">
+								{visible.length}/{projects.length}
+							</span>
 						</div>
-						<p>{t.collectionDescription}</p>
 					</div>
 					<SearchField
 						value={state.query}
@@ -156,9 +157,6 @@ export function Directory({
 						</button>
 					</div>
 				</div>
-				<p className="result-count" role="status">
-					{t.showing} {visible.length} {t.of} {projects.length} {t.projects}
-				</p>
 				{visible.length ? (
 					<div className={logos ? "logo-wall" : "project-grid"}>
 						{visible.map((project, index) => (
