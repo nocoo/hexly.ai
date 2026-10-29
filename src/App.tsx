@@ -7,7 +7,6 @@ import {
 	useRef,
 	useState,
 } from "react";
-import { AgentGuide } from "./components/AgentGuide";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -423,15 +422,6 @@ export function App() {
 					}}
 				/>
 			)}
-			{catalogue.status === "ready" &&
-				(state.view !== "project" ||
-					!projects.some((project) => project.id === state.project)) && (
-					<AgentGuide
-						path={navigationPath(state)}
-						projects={projects}
-						locale={locale}
-					/>
-				)}
 			<Footer locale={locale} />
 			<div
 				className={`toast ${toast ? "toast-visible" : ""}`}

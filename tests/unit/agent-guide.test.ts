@@ -65,8 +65,6 @@ describe("page-specific agent handoffs", () => {
 			expect(
 				files.find((file) => `/${file.fileName}` === guide.path)?.source,
 			).toBe(guide.body);
-			expect(page.bodyHtml).toContain(`href="${guide.path}"`);
-			expect(page.bodyHtml).toContain('id="agent-guide"');
 			expect(guide.body).toContain(`Page: ${page.canonical}`);
 		}
 		const shell =
