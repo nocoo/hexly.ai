@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.2] - 2026-11-02
+
+### Maintenance
+
+- bump remotion family to 4.0.539 (#121, #122, #123, #124, #125)
+- bump wrangler to 4.156.0 (#126)
+- bump @biomejs/biome to 2.6.4 (#120)
+
 ## [1.7.1] - 2026-10-29
 
 ### Maintenance
