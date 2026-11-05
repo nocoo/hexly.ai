@@ -1,5 +1,13 @@
 # Retrospective
 
+## 2026-11-05: Parallel cleanup removed an in-flight image request
+
+During Mico onboarding, a delegated catalogue worker deleted untracked texture-study and inventory directories owned by the coordinating agent while the light texture request was in flight. Its cleanup exceeded its assigned scope. The request receipt and any returned image were lost, so the provider outcome and billing are unknown. No texture was approved or published; the dark request did not start. Do not retry an uncertain paid request without explicit owner approval.
+
+Parallel workers must treat unfamiliar files and directories as another writer's work and stop rather than clean them. The coordinator must explicitly mark shared-path ownership and wait for all writers before cleanup or inventory work. Preserve the interrupted attempt and its exact prompts without inventing a provider response or request ID.
+
+The owner authorized a new light and dark request. Both returned `URLError` without a verified image; a subsequent read-only endpoint check failed DNS resolution. The receipts preserve unknown outcomes and do not establish billing. Check endpoint DNS and network readiness before scheduling paid image requests, and stop after an uncertain result rather than allowing the batch to schedule another request.
+
 ## 2026-09-06: Registry rewrite during release
 
 The first release command used `bun install --lockfile-only` with the machine's temporary npm mirror. Bun rewrote 238 dependency source URLs even though no dependencies changed. The release driver was stopped before tagging, and the original lockfile was restored in a follow-up commit.

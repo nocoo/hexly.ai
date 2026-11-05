@@ -1,0 +1,7 @@
+# Mico working-surface texture brief
+
+Mico is a local-first canvas where people and AI agents create together. Source revision `8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682` describes named canvases, frames, sticky notes, freehand paths, connector anchors, object snapping and a blueprint grid. The approved existing Logo is a candy-colored physical canvas and remains unchanged; its colors are not used for the card surface.
+
+The first leaf-based study was shown to the owner and rejected. The owner directed that Mico belongs to the skeuomorphic material family, that leaves are not required, and that the pattern must occupy a much larger share of the square. Dotty's `v1.0.1` satin-ceramic field is the accepted construction reference: shallow pressed relief in one uninterrupted paper substrate, distributed over roughly 65–75% of the full square, with comparable weight in all quadrants and a slim outer margin.
+
+Mico's own geometry is different: staggered rounded frame outlines, soft sticky-note corners, broad brush-stroke channels, small connector-anchor depressions and faint snapping-grid traces pressed into matte paper. These are traces of working on a shared canvas, not separate tiles, UI controls, literal objects or Dotty's soft-square ceramic contours. Generate separate complete light and dark canvases with GPT Image Flare. Raw outputs await exact-byte owner review; derivatives, R2 upload and site publication are separate.
