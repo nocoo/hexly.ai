@@ -78,6 +78,16 @@ describe("status coverage and navigation", () => {
 			expect(targets.some((item) => item.id === id)).toBe(false);
 		}
 	});
+	it("keeps Mico without a production website out of status targets", () => {
+		const projects = readProjects();
+		const mico = projects.find((project) => project.id === "mico");
+		if (!mico) throw new Error("Mico is required.");
+		expect(mico.website).toBeNull();
+		expect(healthEndpoint(mico)).toBeNull();
+		expect(statusTargets(projects).some((target) => target.id === "mico")).toBe(
+			false,
+		);
+	});
 	it("preserves catalogue order and keeps the three personal sites last", () => {
 		const projects = readProjects();
 		expect(statusSites(projects).map((site) => site.id)).toEqual([

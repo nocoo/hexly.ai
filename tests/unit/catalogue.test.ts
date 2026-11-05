@@ -188,6 +188,16 @@ describe("the imported project catalogue", () => {
 		expect(ids[rhino + 2]).toBe("dotty");
 		expect(rhino).toBeLessThan(ids.indexOf("sleepy"));
 	});
+	it("places Mico last in the remaining curated group and falls back to GitHub", () => {
+		const ids = filterProjects(projects, "").map((project) => project.id);
+		expect(ids.at(-1)).toBe("mico");
+		const mico = projects.find((project) => project.id === "mico");
+		if (!mico) throw new Error("Mico is required.");
+		expect(mico.category).toBe("ai");
+		expect(mico.website).toBeNull();
+		expect(destination(mico)).toBe("https://github.com/nocoo/mico");
+		expect(catalogueProblems([mico])).toEqual([]);
+	});
 	it("uses evidenced website links and falls back to repository links", () => {
 		expect(destination(frogie)).toBe("https://github.com/nocoo/frogie");
 		expect(destination({ ...frogie, website: "https://pew.md" })).toBe(

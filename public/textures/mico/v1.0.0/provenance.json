@@ -1,0 +1,113 @@
+{
+	"project": "mico",
+	"version": "1.0.0",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "working-surface",
+		"name": { "en": "Pressed canvas surface", "zh": "画布压痕" },
+		"description": {
+			"en": "Shallow frame, note, brush and connector impressions form a distributed working surface.",
+			"zh": "圆角框、便签、笔触与连接点的浅压痕铺满整张工作面。"
+		},
+		"motif": "Staggered rounded frame outlines, sticky-note corners, tapered brush channels, connector anchors and faint snapping-grid traces pressed into one matte sheet.",
+		"rationale": "The owner classified Mico as skeuomorphic and requested Dotty-level full-square coverage. Mico's own canvas tools supply the geometry instead of Dotty's ceramic contours."
+	},
+	"productEvidence": {
+		"source": "https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/README.md",
+		"purpose": {
+			"en": "A local-first canvas where people and AI agents create together",
+			"zh": "面向人与 AI Agent 协作创作的本地画布"
+		},
+		"inspectedRevision": "8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/mico.png",
+		"source": "https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/logo.png",
+		"kind": "original",
+		"width": 1440,
+		"height": 1440,
+		"sha256": "012db800045ef65d7715129343dd4344ca3c77ea7cbbee703f67e0615b3cc521",
+		"bytes": 1254051,
+		"rgbaSha256": "a6f1d613f7f9562dd315c677c70e888e6f0fc0b3df3a9923150e2f058dd9a283"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-11-05-mico/revised-inventory.json",
+	"sourceInventorySha256": "34d879bff938f8272cd4f8365e52c8c486b40a73d6a2db7e9be3fb19eaf57adc",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "1ddc87b75945ff9f0e0e95e3d26bd8a9aafeb6b6849f2c103e3cea87c1c86315"
+	},
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52abf0a3-85e5-4f78-ad6b-61e857615592",
+			"source": "artwork/brands/mico/texture-studies/2026-11-05-flare-onboarding-02/light",
+			"request": "/textures/mico/v1.0.0/source-light-request.json",
+			"response": "/textures/mico/v1.0.0/source-light-response.json",
+			"prompt": "/textures/mico/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/mico/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mico/v1.0.0/texture-light.png",
+				"sha256": "ef2b56f3aa711b173932f4622d0a9786d06d4812411d0db418bcb4ebffb4c80a",
+				"bytes": 1875669,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8cad7d59-9f50-96f4-8c45-6b19bfad0341",
+			"source": "artwork/brands/mico/texture-studies/2026-11-05-flare-onboarding-02/dark",
+			"request": "/textures/mico/v1.0.0/source-dark-request.json",
+			"response": "/textures/mico/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/mico/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/mico/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mico/v1.0.0/texture-dark.png",
+				"sha256": "cc06e547714dd92dc13bb46e8c5ba965f7ba13360cadce2c70230d113bca09b0",
+				"bytes": 1803792,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.689041082734263,
+		"darkMinimum": 5.6275095019986825,
+		"target": 4.7
+	},
+	"recordedAt": "2026-11-05T22:35:51.023Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}
