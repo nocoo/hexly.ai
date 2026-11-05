@@ -1,0 +1,145 @@
+{
+	"id": "mico",
+	"repo": "mico",
+	"title": "Mico",
+	"emoji": "🖼️",
+	"description": {
+		"en": "A local-first canvas where people and AI agents create together",
+		"zh": "一个本地优先的画布，让人与 AI Agent 共同创作"
+	},
+	"category": "ai",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/mico",
+	"subject": "Candy-colored rounded-square canvas application mark",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "original",
+		"original": "/logos/originals/mico.png",
+		"thumbnail": "/logos/display/mico-160.webp",
+		"display": "/logos/display/mico-1024.webp",
+		"sourcePath": "logo.png",
+		"sourceUrl": "https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/logo.png",
+		"modified": false,
+		"width": 1440,
+		"height": 1440,
+		"bytes": 1254051,
+		"sha256": "012db800045ef65d7715129343dd4344ca3c77ea7cbbee703f67e0615b3cc521"
+	},
+	"theme": {
+		"primary": {
+			"value": "#00a2e1",
+			"source": "src/shared/palette.ts CANDY_COLORS.blue"
+		},
+		"background": {
+			"value": "#f5fafc",
+			"source": "src/shared/palette.ts CANDY_LAYOUT.canvas"
+		},
+		"ink": {
+			"value": "#2b3038",
+			"source": "src/shared/palette.ts CANDY_COLORS.ink"
+		}
+	},
+	"colors": {
+		"primary": "#00a2e1",
+		"background": "#f5fafc",
+		"ink": "#2b3038",
+		"palette": [
+			{
+				"color": "#00a2e1",
+				"role": "primary",
+				"source": "src/shared/palette.ts CANDY_COLORS.blue"
+			},
+			{
+				"color": "#f5fafc",
+				"role": "background",
+				"source": "src/shared/palette.ts CANDY_LAYOUT.canvas"
+			},
+			{
+				"color": "#2b3038",
+				"role": "accent",
+				"source": "src/shared/palette.ts CANDY_COLORS.ink"
+			},
+			{
+				"color": "#a6d94f",
+				"role": "accent",
+				"source": "src/shared/palette.ts CANDY_COLORS.green"
+			},
+			{
+				"color": "#f7de4b",
+				"role": "accent",
+				"source": "src/shared/palette.ts CANDY_COLORS.yellow"
+			},
+			{
+				"color": "#ff7fa3",
+				"role": "accent",
+				"source": "src/shared/palette.ts CANDY_COLORS.pink"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "2b464b1089c468de0c79dc6fa02b8d831cb3341e",
+		"profileSection": "Recent Projects",
+		"description": "A local-first canvas where people and AI agents create together",
+		"repositoryRevision": "8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682"
+	},
+	"overview": {
+		"goal": {
+			"en": "Provide a local-first collaborative canvas for people and AI agents, with named boards shared across the browser, daemon and CLI.",
+			"zh": "提供本地优先的协作画布，让人与 AI Agent 通过浏览器、守护进程和命令行共同创建和更新命名画布。"
+		},
+		"techStack": [
+			{
+				"name": "React 19 / Vite 8",
+				"role": {
+					"en": "Interactive browser canvas and local interface",
+					"zh": "交互式浏览器画布与本地界面"
+				}
+			},
+			{
+				"name": "Node.js 24",
+				"role": {
+					"en": "Daemon, HTTP API and WebSocket synchronization",
+					"zh": "守护进程、HTTP API 与 WebSocket 同步"
+				}
+			},
+			{
+				"name": "SQLite",
+				"role": {
+					"en": "Local named-canvas and asset storage",
+					"zh": "本地命名画布与素材存储"
+				}
+			},
+			{
+				"name": "OpenAI-compatible AI gateway",
+				"role": {
+					"en": "Agent chat and canvas drawing tools",
+					"zh": "Agent 对话与画布绘制工具"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-11-05",
+			"revision": "8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682",
+			"sources": ["README.md", "package.json", "src/shared/palette.ts"]
+		}
+	},
+	"brandTexture": {
+		"root": "/textures/mico/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Pressed canvas surface",
+			"zh": "画布压痕"
+		},
+		"description": {
+			"en": "Shallow frame, note, brush and connector impressions form a distributed working surface.",
+			"zh": "圆角框、便签、笔触与连接点的浅压痕铺满整张工作面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	}
+}

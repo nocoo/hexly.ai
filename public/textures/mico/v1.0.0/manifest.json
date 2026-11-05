@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "mico",
+	"version": "1.0.0",
+	"root": "/textures/mico/v1.0.0",
+	"canonical": "https://hexly.ai/projects/mico#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/mico/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": { "en": "Pressed canvas surface", "zh": "画布压痕" },
+		"description": {
+			"en": "Shallow frame, note, brush and connector impressions form a distributed working surface.",
+			"zh": "圆角框、便签、笔触与连接点的浅压痕铺满整张工作面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/mico.png",
+		"source": "https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/logo.png",
+		"kind": "original",
+		"width": 1440,
+		"height": 1440,
+		"sha256": "012db800045ef65d7715129343dd4344ca3c77ea7cbbee703f67e0615b3cc521",
+		"bytes": 1254051,
+		"rgbaSha256": "a6f1d613f7f9562dd315c677c70e888e6f0fc0b3df3a9923150e2f058dd9a283"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "52abf0a3-85e5-4f78-ad6b-61e857615592",
+			"source": "artwork/brands/mico/texture-studies/2026-11-05-flare-onboarding-02/light",
+			"request": "/textures/mico/v1.0.0/source-light-request.json",
+			"response": "/textures/mico/v1.0.0/source-light-response.json",
+			"prompt": "/textures/mico/v1.0.0/texture-light-prompt.txt",
+			"approval": "/textures/mico/v1.0.0/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mico/v1.0.0/texture-light.png",
+				"sha256": "ef2b56f3aa711b173932f4622d0a9786d06d4812411d0db418bcb4ebffb4c80a",
+				"bytes": 1875669,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "8cad7d59-9f50-96f4-8c45-6b19bfad0341",
+			"source": "artwork/brands/mico/texture-studies/2026-11-05-flare-onboarding-02/dark",
+			"request": "/textures/mico/v1.0.0/source-dark-request.json",
+			"response": "/textures/mico/v1.0.0/source-dark-response.json",
+			"prompt": "/textures/mico/v1.0.0/texture-dark-prompt.txt",
+			"approval": "/textures/mico/v1.0.0/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mico/v1.0.0/texture-dark.png",
+				"sha256": "cc06e547714dd92dc13bb46e8c5ba965f7ba13360cadce2c70230d113bca09b0",
+				"bytes": 1803792,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/mico/v1.0.0/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1875669,
+			"sha256": "ef2b56f3aa711b173932f4622d0a9786d06d4812411d0db418bcb4ebffb4c80a"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 269100,
+			"sha256": "0597fd012b18bf0aa99f6b23789b98477529e019e727da07095566b26cf031e1"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 11668,
+			"sha256": "0cd7fc7e654a79ec339314ad9e5caf5df27408049608e0397c1edcf6412f8855"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3682,
+			"sha256": "e33fd9ba20bf7ae2c4d76ecc679f1bd40997f8e91e0c782b8762f64c64a26940"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "8236386458fdb5a2cfd2c5a36ea018b29a5dc43613f5bb531fdf781262ccfebc"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "b15c3fdc41896f4e1d4634c0e5361312e86cd3ec4c1b880a225271748289dafb"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 774,
+			"sha256": "eeba02e62b9be924f13aaa437daacaafda3186c39027af9167edb0f9513a85e4"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1803792,
+			"sha256": "cc06e547714dd92dc13bb46e8c5ba965f7ba13360cadce2c70230d113bca09b0"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 240992,
+			"sha256": "a1f03f26820e1f6f0bdda9e4ac53958920876b65fa78130839293f15bfdce521"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 9408,
+			"sha256": "455a26796f05e57aa45fcd1d5ad0ad1e4f6957d7dc85aff3045320cf0e52dcf9"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3718,
+			"sha256": "f69bb1f6806c0c08157d797567baec042dde5c3776027e37dda811a426ec6232"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "63aae8988aa0778d04958b7fe4619077369217fa1b8e364e651b01e682e0e857"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "793dc647db2c0086cd30ad960db681d783c06e9fb7e683936206e4c9d2d5a880"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 711,
+			"sha256": "84b4868086d3e9bc09daee885100e1e826be206648a33fb0e6d0a66386c1104c"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4645,
+			"sha256": "0a0c8c948c8897536d7d2d506ef0d86fef43460978ad6acff677001412449b5f"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1444,
+			"sha256": "e5edff64dc3904ac6cd025257ef5c517ecc3378cfda9f73823a5f1aaab3b12a7"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1757,
+			"sha256": "eb911f87c0ba0b713554c931b33dd014a70a64f16383d7bc38331d691cee379e"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2518,
+			"sha256": "57d043e1aa4c6084e32854244ad7c45867e99ab9cf60c1f2f444774317a5fed2"
+		},
+		{
+			"path": "/textures/mico/v1.0.0/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3464,
+			"sha256": "f857366cca2fb5fdf3eab0a0ebbd1450243ece8f69ab86d9ca9cc54c4c394bf9"
+		}
+	]
+}
