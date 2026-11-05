@@ -1,7 +1,7 @@
 ---
 
 name: hexly-logo-pipeline
-description: Shared contract for Hexly logo generation, exact-byte approval, finishing, review pages, delivery and source adoption. Load it together with hexly-animal, hexly-birds or hexly-things: the series skill owns the subject and drawing language, this contract owns everything after the brief. Use for any logo generation, presentation-only pass, review page, catalogue preview or source adoption in a Hexly checkout.
+description: "Shared contract for Hexly logo generation, exact-byte approval, finishing, review pages, delivery and source adoption. Load it together with hexly-animal, hexly-birds or hexly-things: the series skill owns the subject and drawing language, this contract owns everything after the brief. Use for any logo generation, presentation-only pass, review page, catalogue preview or source adoption in a Hexly checkout."
 ---
 
 # Hexly logo pipeline
