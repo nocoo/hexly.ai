@@ -1,0 +1,57 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-11-05T22:19:25Z",
+	"model": "gpt-image-2.5-flare",
+	"nativeSize": [1024, 1024],
+	"plannedRequests": 2,
+	"authorization": {
+		"generation": "Owner rejected the leaf study and approved a skeuomorphic full-square material surface referencing Dotty's construction on 2026-11-05.",
+		"acceptance": "Owner said to use this direction and continue; exact-byte owner review remains separate from R2 upload and website publication.",
+		"publication": "R2 upload and website publication are separate from generation and review."
+	},
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "1ddc87b75945ff9f0e0e95e3d26bd8a9aafeb6b6849f2c103e3cea87c1c86315"
+	},
+	"projects": [
+		{
+			"id": "mico",
+			"title": "Mico",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/mico/texture-studies/2026-11-05-flare-onboarding-02",
+			"version": "1.0.0",
+			"root": "/textures/mico/v1.0.0",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/mico.png",
+				"source": "https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/logo.png",
+				"kind": "original",
+				"width": 1440,
+				"height": 1440,
+				"sha256": "012db800045ef65d7715129343dd4344ca3c77ea7cbbee703f67e0615b3cc521",
+				"bytes": 1254051,
+				"rgbaSha256": "a6f1d613f7f9562dd315c677c70e888e6f0fc0b3df3a9923150e2f058dd9a283"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "working-surface",
+				"name": { "en": "Pressed canvas surface", "zh": "画布压痕" },
+				"description": {
+					"en": "Shallow frame, note, brush and connector impressions form a distributed working surface.",
+					"zh": "圆角框、便签、笔触与连接点的浅压痕铺满整张工作面。"
+				},
+				"motif": "Staggered rounded frame outlines, sticky-note corners, tapered brush channels, connector anchors and faint snapping-grid traces pressed into one matte sheet.",
+				"rationale": "The owner classified Mico as skeuomorphic and requested Dotty-level full-square coverage. Mico's own canvas tools supply the geometry instead of Dotty's ceramic contours."
+			},
+			"productEvidence": {
+				"source": "https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/README.md",
+				"purpose": {
+					"en": "A local-first canvas where people and AI agents create together",
+					"zh": "面向人与 AI Agent 协作创作的本地画布"
+				},
+				"inspectedRevision": "8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682"
+			}
+		}
+	]
+}
