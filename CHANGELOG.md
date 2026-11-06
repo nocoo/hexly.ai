@@ -1,12 +1,26 @@
 # Changelog
 
-## [1.7.2] - 2026-11-02
+## [1.7.2] - 2026-11-06
 
 ### Maintenance
 
-- bump remotion family to 4.0.539 (#121, #122, #123, #124, #125)
-- bump wrangler to 4.156.0 (#126)
-- bump @biomejs/biome to 2.6.4 (#120)
+- bump @remotion/* and remotion 4.0.538 → 4.0.539 ([da7131c](https://github.com/nocoo/hexly.ai/commit/da7131c4e36d887a629f4d1f9100bf6c8428404d))
+- bump 4.152.0 → 4.156.0 ([cf85558](https://github.com/nocoo/hexly.ai/commit/cf855584b7de32b333bc057e91406019b7b27e49))
+- bump 2.6.2 → 2.6.4 ([25df441](https://github.com/nocoo/hexly.ai/commit/25df441e3356fbbd15d19c0a62db10d893585cd4))
+- Merge pull request #128 from nocoo/cursor/deps-minor-patch-79e1 ([045dfce](https://github.com/nocoo/hexly.ai/commit/045dfce18c76314f4e2374e6257084b0a627c4af))
+- record mico material publication ([bf8dd01](https://github.com/nocoo/hexly.ai/commit/bf8dd01b1a9ac572e861f1945a4cc2ae620d064b))
+
+### Fixes
+
+- quote logo pipeline skill description ([c8981b3](https://github.com/nocoo/hexly.ai/commit/c8981b350248d929b44349aa53a2e0b1741655f6))
+
+### Documentation
+
+- record mico texture generation evidence ([9ebf341](https://github.com/nocoo/hexly.ai/commit/9ebf341f09be4c277271b9827d82a54e3169b6a3))
+
+### Features
+
+- add mico with pressed canvas surface ([98b30f7](https://github.com/nocoo/hexly.ai/commit/98b30f7b814cc33ffb674a79cd15990404604512))
 
 ## [1.7.1] - 2026-10-29
 
