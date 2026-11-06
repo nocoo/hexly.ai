@@ -9,6 +9,7 @@
 - bump 2.6.2 → 2.6.4 ([25df441](https://github.com/nocoo/hexly.ai/commit/25df441e3356fbbd15d19c0a62db10d893585cd4))
 - Merge pull request #128 from nocoo/cursor/deps-minor-patch-79e1 ([045dfce](https://github.com/nocoo/hexly.ai/commit/045dfce18c76314f4e2374e6257084b0a627c4af))
 - record mico material publication ([bf8dd01](https://github.com/nocoo/hexly.ai/commit/bf8dd01b1a9ac572e861f1945a4cc2ae620d064b))
+- publish mico source archives ([bd37361](https://github.com/nocoo/hexly.ai/commit/bd373611a9f02ea3e6c8e7d4a041041586be89c1))
 
 ### Fixes
 
