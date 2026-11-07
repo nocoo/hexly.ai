@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.0] - 2026-11-07
+
+### Documentation
+
+- prepare linie identity intake ([9ccf2dd](https://github.com/nocoo/hexly.ai/commit/9ccf2ddd4fa5e2b1f213d0f5e508714e6173b24a))
+
+### Features
+
+- onboard linie identity and textures ([1ccae8b](https://github.com/nocoo/hexly.ai/commit/1ccae8b7b3ba75e648c612d1ae266b05e1a6008a))
+
 ## [1.7.2] - 2026-11-06
 
 ### Maintenance
