@@ -646,3 +646,12 @@ record, and generation, derivatives and publication remain paused. Check only
 variable presence and direnv load status before scheduling image work. Never
 print secret values, search unrelated credential stores or silently substitute
 another provider to get past a missing environment.
+
+## 2026-11-07: Texture review receipts must be complete before export
+
+The Linie texture source reviews were approved with exact bytes, but the first
+export omitted the required full-canvas, no-crop and no-repeat inspection
+fields. Inventory and R2 publication then froze v1.0.0. The correction leaves
+v1.0.0 immutable, records the actual inspection in the source reviews and
+publishes v1.0.1 for the catalogue. Run the texture package tests before an
+export becomes immutable: approval alone is not a complete receipt.

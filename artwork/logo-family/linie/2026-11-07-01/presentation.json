@@ -1,0 +1,90 @@
+{
+	"project": "linie",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"original": "../../../../public/logos/originals/linie-favicon.svg",
+	"background": {
+		"base": "#e7e8df",
+		"light": "#f5f6ee",
+		"shade": "#d2d8cf",
+		"motif": "#71877f",
+		"grainAmplitude": 0.42,
+		"grainSeed": 70771429,
+		"motifOpacity": 0.26,
+		"highlightOpacity": 0.44,
+		"ribbonOpacity": 0.18,
+		"pattern": {
+			"name": "Set-square calibration field",
+			"description": "Warm drafting paper carries one asymmetric right-angle construction, two 45-degree reference rays, a short set of calibration ticks and three registration brackets. The sparse geometry leaves the object dominant.",
+			"layers": [
+				{
+					"d": "M120 904H934M120 904V188M120 904L770 252",
+					"tone": "motif",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M176 848H878M176 848V250M176 848L714 306",
+					"tone": "motif",
+					"strokeWidth": 0.5
+				},
+				{
+					"d": "M120 168H154M137 151V185M900 904H934M917 887V921M120 168L150 138M120 904L150 934",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M215 879V865M251 879V865M287 879V865M323 879V865M359 879V865M395 879V865M431 879V865M467 879V865M503 879V865M539 879V865M575 879V865M611 879V865M647 879V865M683 879V865M719 879V865M755 879V865M791 879V865M827 879V865M863 879V865M215 879V871M287 879V871M359 879V871M431 879V871M503 879V871M575 879V871M647 879V871M719 879V871M791 879V871M863 879V871",
+					"tone": "motif",
+					"strokeWidth": 0.8
+				},
+				{
+					"d": "M215 148V121M287 148V121M359 148V121M431 148V121M215 148V134M359 148V134M431 148V134M721 195H748M721 267H748M721 339H748M721 195H735M721 339H735",
+					"tone": "highlight",
+					"strokeWidth": 0.9
+				},
+				{
+					"d": "M704 366L860 210M754 366H860V260",
+					"tone": "ribbon",
+					"strokeWidth": 2.4
+				}
+			]
+		}
+	},
+	"shadows": [
+		{
+			"color": [38, 55, 54],
+			"opacity": 0.2,
+			"blurAt2048": 74,
+			"projectionScale": [0.96, 0.34],
+			"offsetAt2048": [34, 540]
+		},
+		{
+			"color": [38, 55, 54],
+			"opacity": 0.12,
+			"blurAt2048": 32,
+			"projectionScale": [0.78, 0.22],
+			"offsetAt2048": [16, 524]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"framing": {
+		"scale": 0.88,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "The complete set square is placed uniformly at 88%, leaving a visible gap from the rounded presentation outline and room for the independent floor shadow. No part of the object moves separately."
+	},
+	"matte": {
+		"minimumChannel": 245,
+		"maximumChroma": 18,
+		"backgroundRgb": [252, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 1000,
+		"calibrationNote": "The native border is near-white #FCFCFC with low chroma. Exterior-connected extraction preserves the opaque teal and brass; the enclosed triangular opening is background, while its shaded inner walls remain foreground."
+	}
+}

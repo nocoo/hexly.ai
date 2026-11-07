@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "linie",
+	"version": "1.0.1",
+	"root": "/textures/linie/v1.0.1",
+	"canonical": "https://hexly.ai/projects/linie#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/linie/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Construction-grain field", "zh": "制图刻线场" },
+		"description": {
+			"en": "Pressed drafting-guide furrows, fine unnumbered ruler notches and crossing construction impressions form a quiet engineered paper field.",
+			"zh": "压印的制图导引槽、无数字的细密刻线与交叉构造痕构成一张克制的工程纸面。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/linie-family-2026-11-07-01-01.png",
+		"sha256": "c6c3b34616bf9ef4fa8969e56c275fe1122adc1dbefbe0a2baefcf09f01611a4",
+		"rgbaSha256": "93231e85c3c1ffda0b66793c3c78f5cbc43d663267e6b261322bd6a7f112062d",
+		"source": "https://github.com/nocoo/linie/blob/main/logo.png",
+		"bytes": 2683501,
+		"width": 2048,
+		"height": 2048,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "fbe524fb-1e89-4b3a-a3be-379b21dad554",
+			"source": "artwork/brands/linie/texture-studies/2026-11-07-flare-01/light",
+			"request": "/textures/linie/v1.0.1/source-light-request.json",
+			"response": "/textures/linie/v1.0.1/source-light-response.json",
+			"prompt": "/textures/linie/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/linie/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/linie/v1.0.1/texture-light.png",
+				"sha256": "2f2af53125507df26592ca001f8a8c35ce5bb993d42201545675e0ee277c6d26",
+				"bytes": 1943240,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ddf471fc-dc53-4446-aa67-1f47a2b09ed9",
+			"source": "artwork/brands/linie/texture-studies/2026-11-07-flare-01/dark",
+			"request": "/textures/linie/v1.0.1/source-dark-request.json",
+			"response": "/textures/linie/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/linie/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/linie/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/linie/v1.0.1/texture-dark.png",
+				"sha256": "6b77feb9054f7bda0696a0a5065b1b485e629d7d9e5bb415a81b43063f5bf185",
+				"bytes": 1976697,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/linie/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1943240,
+			"sha256": "2f2af53125507df26592ca001f8a8c35ce5bb993d42201545675e0ee277c6d26"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 259584,
+			"sha256": "afd2c9b4597131b31d679b02f9e25c6bbe2ad1523327542c26a135e3c6197626"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 14618,
+			"sha256": "1e6803646da262cdd3fa9a894b9051b767cedc6decfbeedb4c4ad477eee1d90f"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 2930,
+			"sha256": "9d8bd4347d4d0f4d9568a671e428971de20aec133b29eabb04632f9328efa81e"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "ba912aadc3f04aca92653b85f865ddf2668c2a52b42c3734523b2789bd7dbf83"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 946,
+			"sha256": "eb0ddad9e2570ba2d6fb232061e38105425ed3ac19fe524b111a9a4221184254"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1013,
+			"sha256": "b087dd2a8571370e7c396ffc03201981702120a1db15855f0afea52d7a979868"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1976697,
+			"sha256": "6b77feb9054f7bda0696a0a5065b1b485e629d7d9e5bb415a81b43063f5bf185"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 286386,
+			"sha256": "0c018f4bbb10abb88f095e265dfe41e3cc8cbb6bd2ea2a3a393fbf657347d4d1"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 13810,
+			"sha256": "d0a2894e8f069872ac3578d8c4b3322c8e9d2f84ec33589fa7c6be5b05341645"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 3002,
+			"sha256": "90fea5e865535ea21da208cd72bc506bfe262b3bcdaf5c8073610371ba88049f"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "b23ed60d02d54b7f022c72a1b74446dbd2ba4fe7f5bf3f166493b2a06a918162"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "1b1e21d555c959c0371aa57ed3a6d2843c3d225c9cac67c41e61874c2af65ee3"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1013,
+			"sha256": "a0192ffd376668a0e76b744c4730e0b2071e8bdbe281ebe34d3a0a2514ac8302"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 5497,
+			"sha256": "4ea039150797a84630882690375cad19b2b6fbb71c8d181cdaa71a18c8bc37d6"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 2712,
+			"sha256": "61f9f0479c32d578e7e7d3e714d80fe9e80f3d5ab048f5b28d083c60809efceb"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1758,
+			"sha256": "e2ad47858452e1bf03e7e6f4897352c5ff87ad4d01882237a09d254b2ae40691"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2734,
+			"sha256": "352494f9fcaba3275bb0bd6756a2cceb7da7981ca203b6f25d48036e78bedeb6"
+		},
+		{
+			"path": "/textures/linie/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3562,
+			"sha256": "db69ed8499f6bc3d689db2ed51aecedb323cee5b205c423cdba30dbe6ea55d54"
+		}
+	]
+}

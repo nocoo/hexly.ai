@@ -1,0 +1,75 @@
+{
+	"source": {
+		"path": "raw/generated.png",
+		"sha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62",
+		"colorSpace": "sRGB",
+		"sampling": "Exact opaque native pixels inside the extracted boundary, selected by visible material role. No average color and no invented product token."
+	},
+	"artwork": [
+		{
+			"label": { "en": "Teal enamel body", "zh": "青绿珐琅主体" },
+			"role": "primary",
+			"color": "#014751",
+			"pixel": [712, 1119],
+			"rgb": [1, 71, 81],
+			"sourceSha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62"
+		},
+		{
+			"label": { "en": "Lit enamel face", "zh": "受光珐琅面" },
+			"role": "accent",
+			"color": "#024e58",
+			"pixel": [808, 1067],
+			"rgb": [2, 78, 88],
+			"sourceSha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62"
+		},
+		{
+			"label": { "en": "Enamel bevel light", "zh": "珐琅倒角高光" },
+			"role": "accent",
+			"color": "#4e7679",
+			"pixel": [160, 699],
+			"rgb": [78, 118, 121],
+			"sourceSha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62"
+		},
+		{
+			"label": { "en": "Brushed brass", "zh": "拉丝黄铜" },
+			"role": "accent",
+			"color": "#b08f50",
+			"pixel": [1124, 1599],
+			"rgb": [176, 143, 80],
+			"sourceSha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62"
+		},
+		{
+			"label": { "en": "Brass specular edge", "zh": "黄铜亮边" },
+			"role": "accent",
+			"color": "#d6b068",
+			"pixel": [1619, 1444],
+			"rgb": [214, 176, 104],
+			"sourceSha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62"
+		}
+	],
+	"presentation": {
+		"base": "#e7e8df",
+		"light": "#f5f6ee",
+		"shade": "#d2d8cf",
+		"motif": "#71877f",
+		"pattern": "Set-square calibration field",
+		"status": "Owner approved the untouched generation and presentation intent in Chrome on 2026-11-07."
+	},
+	"website": {
+		"primary": "#087368",
+		"background": "#f3f5ef",
+		"ink": "#21474b",
+		"evidence": {
+			"background": {
+				"value": "#f3f5ef",
+				"source": "src/styles/tokens.css --paper"
+			},
+			"ink": { "value": "#21474b", "source": "src/styles/tokens.css --ink" },
+			"primary": {
+				"value": "#087368",
+				"source": "src/styles/tokens.css --accent"
+			}
+		},
+		"status": "Existing product tokens retained; the new artwork does not recolor the UI."
+	}
+}

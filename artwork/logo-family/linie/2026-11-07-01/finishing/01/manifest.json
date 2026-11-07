@@ -1,0 +1,394 @@
+{
+	"createdAt": "2026-11-07T02:07:23.508Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "c3dbf95889f3858f0e3d5d836bf0270c536112bdf20b54c555d8d9ebf297ea62",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "linie",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"original": "../../../../public/logos/originals/linie-favicon.svg",
+		"background": {
+			"base": "#e7e8df",
+			"light": "#f5f6ee",
+			"shade": "#d2d8cf",
+			"motif": "#71877f",
+			"grainAmplitude": 0.42,
+			"grainSeed": 70771429,
+			"motifOpacity": 0.26,
+			"highlightOpacity": 0.44,
+			"ribbonOpacity": 0.18,
+			"pattern": {
+				"name": "Set-square calibration field",
+				"description": "Warm drafting paper carries one asymmetric right-angle construction, two 45-degree reference rays, a short set of calibration ticks and three registration brackets. The sparse geometry leaves the object dominant.",
+				"layers": [
+					{
+						"d": "M120 904H934M120 904V188M120 904L770 252",
+						"tone": "motif",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M176 848H878M176 848V250M176 848L714 306",
+						"tone": "motif",
+						"strokeWidth": 0.5
+					},
+					{
+						"d": "M120 168H154M137 151V185M900 904H934M917 887V921M120 168L150 138M120 904L150 934",
+						"tone": "motif",
+						"strokeWidth": 1.4
+					},
+					{
+						"d": "M215 879V865M251 879V865M287 879V865M323 879V865M359 879V865M395 879V865M431 879V865M467 879V865M503 879V865M539 879V865M575 879V865M611 879V865M647 879V865M683 879V865M719 879V865M755 879V865M791 879V865M827 879V865M863 879V865M215 879V871M287 879V871M359 879V871M431 879V871M503 879V871M575 879V871M647 879V871M719 879V871M791 879V871M863 879V871",
+						"tone": "motif",
+						"strokeWidth": 0.8
+					},
+					{
+						"d": "M215 148V121M287 148V121M359 148V121M431 148V121M215 148V134M359 148V134M431 148V134M721 195H748M721 267H748M721 339H748M721 195H735M721 339H735",
+						"tone": "highlight",
+						"strokeWidth": 0.9
+					},
+					{
+						"d": "M704 366L860 210M754 366H860V260",
+						"tone": "ribbon",
+						"strokeWidth": 2.4
+					}
+				]
+			}
+		},
+		"shadows": [
+			{
+				"color": [
+					38,
+					55,
+					54
+				],
+				"opacity": 0.2,
+				"blurAt2048": 74,
+				"projectionScale": [
+					0.96,
+					0.34
+				],
+				"offsetAt2048": [
+					34,
+					540
+				]
+			},
+			{
+				"color": [
+					38,
+					55,
+					54
+				],
+				"opacity": 0.12,
+				"blurAt2048": 32,
+				"projectionScale": [
+					0.78,
+					0.22
+				],
+				"offsetAt2048": [
+					16,
+					524
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"framing": {
+			"scale": 0.88,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "The complete set square is placed uniformly at 88%, leaving a visible gap from the rounded presentation outline and room for the independent floor shadow. No part of the object moves separately."
+		},
+		"matte": {
+			"minimumChannel": 245,
+			"maximumChroma": 18,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 1000,
+			"calibrationNote": "The native border is near-white #FCFCFC with low chroma. Exterior-connected extraction preserves the opaque teal and brass; the enclosed triangular opening is background, while its shaded inner walls remain foreground."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2562865,
+		"foregroundPixels": 1631439,
+		"softEdgePixels": 11020,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 126,
+			"top": 191,
+			"right": 1935,
+			"bottom": 1862
+		}
+	},
+	"placement": {
+		"scale": 0.88,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 234,
+			"top": 291,
+			"right": 1826,
+			"bottom": 1761
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 188.03451736759592,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 3041,
+			"sha256": "59a2fba76ad831c6248cc12875fa711a563faaebc3432ff40ce00299d549cd5c"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 590,
+			"sha256": "8f6ea173c3e3f6d0f93bd4dab74e304f623b86204c7e67d2a0ae9404163ab187"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3391453,
+			"sha256": "121a61f030a9cab89de32a8e660444bf39fe3b4a110c4268e5d47b124669e19f"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 58726,
+			"sha256": "185dfee24fcbb7c318e3e4aeace1cff6ab9c66b439c3896880752d0824158ec6"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 1553,
+			"sha256": "9154d001cf2474ca5c90ef246c78b554262080ae873aba5c0a20cb695422d008"
+		},
+		{
+			"path": "background.png",
+			"bytes": 163251,
+			"sha256": "a3746b26547391debef5b999a9f96eebae7197e37e796f0e3a2a02b2c6bb303d"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2683501,
+			"sha256": "c6c3b34616bf9ef4fa8969e56c275fe1122adc1dbefbe0a2baefcf09f01611a4"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 75588,
+			"sha256": "bf50120bf5a3bc67417ef572a426d3d91b363aff8f56f70f1b93c43811b9d2c4"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 112642,
+			"sha256": "8e21538ced504c581ebdc591b23fbc371aa962de9b16bf94af168b0a976df88d"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 50061,
+			"sha256": "d70fe93c53ccc1f1ca69186e4edd1277598df0921403f888b488155a38716c7e"
+		},
+		{
+			"path": "exports/linie-transparent-2048.png",
+			"bytes": 2683501,
+			"sha256": "c6c3b34616bf9ef4fa8969e56c275fe1122adc1dbefbe0a2baefcf09f01611a4"
+		},
+		{
+			"path": "exports/linie-icon-2048.png",
+			"bytes": 2859342,
+			"sha256": "0f251ef727f9088ad9443aafb59eb8e2aeca9de4f3427ec46700713de8ffe362"
+		},
+		{
+			"path": "exports/linie-rounded-2048.png",
+			"bytes": 2866403,
+			"sha256": "b3adcd815d4baf7bf9b84e1687a0f8f062d3184dae72faccbef5cf7b5077586e"
+		},
+		{
+			"path": "exports/linie-transparent-1024.png",
+			"bytes": 657895,
+			"sha256": "e2662e70f967506b588c28513cdea86045a403c8dfa331a45e53da6a7f670d6b"
+		},
+		{
+			"path": "exports/linie-icon-1024.png",
+			"bytes": 734772,
+			"sha256": "c5ba4a2b72cdeb70399e22db25ba27fcd8cbbf2ca143b96bc9658bfbe303d849"
+		},
+		{
+			"path": "exports/linie-rounded-1024.png",
+			"bytes": 750033,
+			"sha256": "465e0002be0ce5d3cff2f0f4b7a9dc1e36b8e09a1ea533f22f1a0642aeee972d"
+		},
+		{
+			"path": "exports/linie-transparent-512.png",
+			"bytes": 168709,
+			"sha256": "7aaccbb337c5aeca460bb50fddad6b2ab3770c7fc19c6b6c30a1d0c7a4452a01"
+		},
+		{
+			"path": "exports/linie-icon-512.png",
+			"bytes": 199402,
+			"sha256": "9cd05a3229e4c63b51c9774adbdeb05e760b5836715c3764ce6582d38d3c3606"
+		},
+		{
+			"path": "exports/linie-rounded-512.png",
+			"bytes": 207306,
+			"sha256": "685826685fe4ecba7236eca94afd75c0210530e01ef8c77cd46f6b11d241c6ab"
+		},
+		{
+			"path": "exports/linie-transparent-256.png",
+			"bytes": 46425,
+			"sha256": "ea2b454710def49b3278c8f18ed5d19f583795e8ac8bf6c6cd2a1b6b69d50f22"
+		},
+		{
+			"path": "exports/linie-icon-256.png",
+			"bytes": 59378,
+			"sha256": "78163ac812de20cbab176557529c4e59fb9f164e9f8a645370998e215c15dbbd"
+		},
+		{
+			"path": "exports/linie-rounded-256.png",
+			"bytes": 63077,
+			"sha256": "519954fc68bd33567af639119826ac58b8a6db9d522aaa13bf3f6eb98ba96af0"
+		},
+		{
+			"path": "exports/linie-transparent-128.png",
+			"bytes": 13936,
+			"sha256": "8021ddc26c6d240f8ce59432d329af2176c4fefb529c054948256c9e71d5f0b3"
+		},
+		{
+			"path": "exports/linie-icon-128.png",
+			"bytes": 19316,
+			"sha256": "891eeb3b2bcaea6b5baae9b8071ca6c644f5bc0e7e35f4ea4ff5da656f20f2fa"
+		},
+		{
+			"path": "exports/linie-rounded-128.png",
+			"bytes": 21085,
+			"sha256": "08eca368358e9e8aefec79a070bc36dbc062593c1fb93af0187156385b4ac826"
+		},
+		{
+			"path": "exports/linie-transparent-64.png",
+			"bytes": 4484,
+			"sha256": "0ea8ccc740c986731fbcac4c6ddb4f2e0d9e297d33a1c73122cc4192d9161775"
+		},
+		{
+			"path": "exports/linie-icon-64.png",
+			"bytes": 6567,
+			"sha256": "75f1a9f93b098f17055e0d97574c262a9c0210df4e1f5da1e0915c1faf702f65"
+		},
+		{
+			"path": "exports/linie-rounded-64.png",
+			"bytes": 7291,
+			"sha256": "8fade64a4f06df534b93bc4820197863457623d7d73d7f878a873b4982dc1147"
+		},
+		{
+			"path": "exports/linie-transparent-48.png",
+			"bytes": 2886,
+			"sha256": "093b8e1f3b5eae52231adae1186a4662a0e235348099453e0e43d00207a4ab28"
+		},
+		{
+			"path": "exports/linie-icon-48.png",
+			"bytes": 4227,
+			"sha256": "e210842d9ea089944d73101bf422aa27f30105bee0acb2be7ee4e415512faac3"
+		},
+		{
+			"path": "exports/linie-rounded-48.png",
+			"bytes": 4722,
+			"sha256": "bc3977bd010d3aa5270a40406b278b0cf68c9306dab9261d84edae0a8b3bb6bf"
+		},
+		{
+			"path": "exports/linie-transparent-32.png",
+			"bytes": 1660,
+			"sha256": "f2baf5a790cb199f42b17bef125bdbed61596ee2a1820acb77a0dd97f2ce8be1"
+		},
+		{
+			"path": "exports/linie-icon-32.png",
+			"bytes": 2379,
+			"sha256": "7a4f8151a5b215e60d88d62b75e70721db097962842f1c94460f18a79ec398c6"
+		},
+		{
+			"path": "exports/linie-rounded-32.png",
+			"bytes": 2589,
+			"sha256": "662ba742864f46420f393ff92b32c8a9fd5d0dd6e69715a98deab65257e9e170"
+		},
+		{
+			"path": "exports/linie-transparent-24.png",
+			"bytes": 1126,
+			"sha256": "adfd6d1f73e2ad5a48c88bc2ec8c60e4818ca5bba8f97a25cc5440a563217916"
+		},
+		{
+			"path": "exports/linie-icon-24.png",
+			"bytes": 1553,
+			"sha256": "15778cd2399c6d7774828b4fa1e889d5f6beaeadec237b69e5cfb123c4249586"
+		},
+		{
+			"path": "exports/linie-rounded-24.png",
+			"bytes": 1710,
+			"sha256": "52c01d22cce8560c4e7e1e5e3e79c299a64a40d1d0a143d154f1d0af54769bc3"
+		},
+		{
+			"path": "exports/linie-transparent-16.png",
+			"bytes": 629,
+			"sha256": "fe196c0bf0a4a7cdc444135892eba89eb267198e48c7e20536192840c88f45f5"
+		},
+		{
+			"path": "exports/linie-icon-16.png",
+			"bytes": 877,
+			"sha256": "b47ddf6c1fb9c4901ca609d0ee9243f6538af091ca7072eb18efe9e2eab8671e"
+		},
+		{
+			"path": "exports/linie-rounded-16.png",
+			"bytes": 931,
+			"sha256": "2ccea971c0fa1a639cd7056c3d763ca278573ae9edf1a8b935137bba157d5761"
+		},
+		{
+			"path": "exports/linie-white-2048.png",
+			"bytes": 2471591,
+			"sha256": "06c19654d705d1ffd4adc6a927098fae8e320b888c1b48c207fc882aa8c32f26"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 621333,
+			"sha256": "ab35d2e61aa2c61e66f534d21d3bfb4613032124cc98d13bf1f50b26c0536f2c"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 617690,
+			"sha256": "483df0c39092c9b6fcf3acc336f457295761d0fd7c773c7a99f63d67527799c4"
+		}
+	]
+}
