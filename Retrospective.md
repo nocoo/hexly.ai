@@ -634,3 +634,15 @@ fixture now aborts any non-200 proxy response before fulfilling it. Redirect
 semantics are checked through loopback HTTP with redirects disabled, while the
 application's direct cross-origin navigation receives a local HTML fixture.
 Never replay redirects from an isolated fixture to an external hostname.
+
+## 2026-11-07: Image generation needs an environment preflight
+
+The Linie intake assumed the documented Workflow direnv environment was ready
+and opened a generation tab before checking whether the two required Azure
+variables were present. The unchanged helper rejected the call locally; no API
+request was sent and no image was received. `direnv status` then confirmed that
+no environment file was loaded. The study retains a `blocked-before-request`
+record, and generation, derivatives and publication remain paused. Check only
+variable presence and direnv load status before scheduling image work. Never
+print secret values, search unrelated credential stores or silently substitute
+another provider to get past a missing environment.
