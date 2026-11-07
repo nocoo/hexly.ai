@@ -1,0 +1,58 @@
+{
+	"status": "adopted",
+	"series": "material",
+	"study": "linie/2026-11-07-01",
+	"finishing": "01",
+	"sourceRepository": "https://github.com/nocoo/linie",
+	"sourceCommit": "21dc59c64d7627ad497ee335aa1438379824269d",
+	"sourceDocumentsCommit": "b5fd3abc06abc9127808afed6ee7b7356de1c6f2",
+	"masters": {
+		"logo.png": {
+			"sha256": "c6c3b34616bf9ef4fa8969e56c275fe1122adc1dbefbe0a2baefcf09f01611a4",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon.png": {
+			"sha256": "0f251ef727f9088ad9443aafb59eb8e2aeca9de4f3427ec46700713de8ffe362",
+			"width": 2048,
+			"height": 2048
+		},
+		"assets/brand/icon-rounded.png": {
+			"sha256": "b3adcd815d4baf7bf9b84e1687a0f8f062d3184dae72faccbef5cf7b5077586e",
+			"width": 2048,
+			"height": 2048
+		},
+		"public/brand-mark.png": {
+			"sha256": "8021ddc26c6d240f8ce59432d329af2176c4fefb529c054948256c9e71d5f0b3",
+			"width": 128,
+			"height": 128
+		},
+		"public/favicon-32.png": {
+			"sha256": "f2baf5a790cb199f42b17bef125bdbed61596ee2a1820acb77a0dd97f2ce8be1",
+			"width": 32,
+			"height": 32
+		},
+		"public/apple-touch-icon.png": {
+			"sha256": "cdcc3d1b183551183f80971d8ced646f1a08326fd3ce844e725bd93cdb523dd6",
+			"width": 180,
+			"height": 180
+		}
+	},
+	"firstPartyUse": {
+		"readme": "assets/brand/icon-rounded.png presented in both language headers",
+		"header": "public/brand-mark.png at 48 CSS px, transparent and without a second tile",
+		"sidebar": "public/brand-mark.png at 25 CSS px, transparent",
+		"browser": "public/favicon-32.png",
+		"touch": "public/apple-touch-icon.png at 180 px"
+	},
+	"siteEntry": "https://hexly.ai/projects/linie from the workspace toolbar, before the operations companion",
+	"release": {
+		"version": "0.3.1",
+		"ci": "https://github.com/nocoo/linie/actions/runs/42328435959",
+		"deployment": "https://github.com/nocoo/linie/actions/runs/42328558624",
+		"liveHealth": "https://linie.hexly.ai/api/live",
+		"liveVersion": "0.3.1"
+	},
+	"review": "https://hexly.ai/projects/linie#brand",
+	"staticReview": "https://index.dev.hexly.ai/artwork/logo-family/linie/2026-11-07-01/review.html"
+}

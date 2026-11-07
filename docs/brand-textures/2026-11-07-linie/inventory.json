@@ -1,0 +1,74 @@
+{
+	"schemaVersion": 1,
+	"recordedAt": "2026-11-07T02:30:00.000Z",
+	"scope": "One active template project: Linie construction-grain light/dark surfaces. v1.0.1 corrects the source review receipts to include the full-canvas/no-crop/no-repeat inspection contract; v1.0.0 remains immutable history.",
+	"ownerInstruction": "新项目linie，模板类，放到dotty后，按规范，生成logo，底纹，做页面，改项目readme，上线gh profile，顺序在其余3个模板后面。",
+	"authorization": {
+		"generation": true,
+		"projectIds": [
+			"linie"
+		],
+		"exactByteAcceptance": true,
+		"publication": true,
+		"productUIChange": false,
+		"identityChangeByTexture": false
+	},
+	"model": "gpt-image-2.5-flare",
+	"nativeSize": [
+		1024,
+		1024
+	],
+	"bannerTreatment": "Keep the original PNG unchanged. Apply a separate alpha gradient at the left edge of the right-aligned square background layer. Text and Logo stay opaque.",
+	"siteBaseline": "9ccf2ddd",
+	"tokenSource": {
+		"path": "src/styles/base.css",
+		"sha256": "9e0499ddda21c4ab85053ba7da3b45661dc32850b5118c3aa9184589a62d9a15"
+	},
+	"authorizationRecord": "docs/brand-textures/2026-11-07-linie/authorization.json",
+	"projects": [
+		{
+			"id": "linie",
+			"title": "Linie",
+			"archived": false,
+			"action": "generate",
+			"study": "artwork/brands/linie/texture-studies/2026-11-07-flare-01",
+			"version": "1.0.1",
+			"root": "/textures/linie/v1.0.1",
+			"sourceMetadataSha256": null,
+			"subject": "Satin teal-enamel drafting set square with a triangular opening and brushed-brass working edge",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/linie-family-2026-11-07-01-01.png",
+				"sha256": "c6c3b34616bf9ef4fa8969e56c275fe1122adc1dbefbe0a2baefcf09f01611a4",
+				"rgbaSha256": "93231e85c3c1ffda0b66793c3c78f5cbc43d663267e6b261322bd6a7f112062d",
+				"source": "https://github.com/nocoo/linie/blob/main/logo.png",
+				"bytes": 2683501,
+				"width": 2048,
+				"height": 2048,
+				"kind": "original"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "product-material",
+				"name": {
+					"en": "Construction-grain field",
+					"zh": "制图刻线场"
+				},
+				"description": {
+					"en": "Pressed drafting-guide furrows, fine unnumbered ruler notches and crossing construction impressions form a quiet engineered paper field.",
+					"zh": "压印的制图导引槽、无数字的细密刻线与交叉构造痕构成一张克制的工程纸面。"
+				},
+				"motif": "A distributed field of shallow pressed drafting-guide traces: short parallel guide furrows, fine unnumbered ruler notches, softly overlapping right-angle and diagonal construction impressions, and subtle crosshatched machining grain. Arrange varied medium-scale runs into a precise but irregular worked surface with shallow rounded groove lips and tonal body between furrows. No continuous Cartesian grid, circuit routing, reset paths, ceramic cells, detached ruler, triangle prop, UI panel, numeric scale, server or tool.",
+				"rationale": "Connect the template's actual coordinate rulers, drawing frames and measured tables to a credible pressed drawing surface. Use the approved full-square distribution, paper palette and shallow relief; preserve whole canvases. Banner presentation uses a separate left-edge opacity gradient, while text and Logo stay opaque."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/linie.json",
+				"purpose": {
+					"en": "Start a large-scale network operations console from a working React template: a deterministic 1,248-host fleet, six operational panels, a closable sidebar and a read-only simulated companion, with no production systems connected.",
+					"zh": "用一套可运行的 React 模板起步做大型网络运维控制台：1,248 台确定性主机、六个运维面板、可收起侧栏和只读模拟助手，不接入任何生产系统。"
+				},
+				"inspectedRevision": "46c834b200b5edaa4d98731cb0d02f111b0558f4"
+			}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"status": "passed",
+	"recordedDate": "2026-11-07",
+	"credentialEnvironment": "hexly.ai/.env.azure",
+	"ownerInstruction": "在本项目环境变量找",
+	"requiredVariablePresence": {
+		"AZURE_OPENAI_ENDPOINT": true,
+		"AZURE_OPENAI_API_KEY": true
+	},
+	"secretValuesPrinted": false,
+	"previousPreflight": "preflight.json",
+	"previousApiRequestSent": false,
+	"note": "The owner directed lookup in this checkout. A Git-ignored project dotenv file provides the required environment. Only the two required assignments are loaded into the child process; the file and values are not archived. This study has not yet sent an API request and may be submitted once."
+}
