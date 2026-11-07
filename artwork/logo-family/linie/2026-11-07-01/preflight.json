@@ -1,0 +1,12 @@
+{
+	"status": "blocked-before-request",
+	"recordedDate": "2026-11-07",
+	"model": "gpt-image-2.5-sunburst",
+	"requestedSize": "2048x2048",
+	"credentialEnvironment": "workflow direnv",
+	"reason": "The documented direnv environment provided neither AZURE_OPENAI_ENDPOINT nor AZURE_OPENAI_API_KEY. The unchanged helper stopped at local argument validation.",
+	"apiRequestSent": false,
+	"outputReceived": false,
+	"automaticRetry": false,
+	"nextStep": "Restore the documented environment without exposing credential values, then submit this unissued study once. Exact-byte owner approval is required after a successful response."
+}
