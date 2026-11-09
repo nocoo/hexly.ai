@@ -8,7 +8,15 @@ const groups: Record<string, string[][]> = {
 	],
 	security: [
 		["osv-scanner", "scan", "source", "--lockfile", "bun.lock"],
-		["gitleaks", "git", ".", "--no-banner", "--redact"],
+		[
+			"gitleaks",
+			"git",
+			".",
+			"--no-banner",
+			"--redact",
+			"--config",
+			".gitleaks.toml",
+		],
 	],
 	commit: [
 		["bun", "run", "assets:check-tracked"],
