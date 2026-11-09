@@ -32,7 +32,7 @@ repo=$(git rev-parse --show-toplevel)
 cd "$repo"
 
 bun run assets:check-tracked
-gitleaks protect --staged --no-banner
+gitleaks protect --staged --no-banner --config .gitleaks.toml
 
 snapshot=$(mktemp -d "${TMPDIR:-/tmp}/hexly-index-XXXXXX")
 git checkout-index --all --prefix="$snapshot/"
