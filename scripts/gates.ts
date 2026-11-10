@@ -20,7 +20,6 @@ const groups: Record<string, string[][]> = {
 	],
 	commit: [
 		["bun", "run", "assets:check-tracked"],
-		["bun", "run", "assets:prepare-test"],
 		["bun", "run", "typecheck"],
 		["bun", "run", "lint"],
 		["bun", "run", "test:coverage"],

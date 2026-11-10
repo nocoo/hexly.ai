@@ -61,10 +61,6 @@ if [ -d "$repo/packages/video-kit/node_modules" ]; then
 	ln -sfn "$repo/packages/video-kit/node_modules" "$snapshot/packages/video-kit/node_modules"
 fi
 mkdir -p "$snapshot/node_modules/.vite" "$snapshot/node_modules/.vitest" "$snapshot/.cache"
-if [ -d "$repo/.wrangler/asset-cache" ]; then
-	mkdir -p "$snapshot/.wrangler"
-	ln -sfn "$repo/.wrangler/asset-cache" "$snapshot/.wrangler/asset-cache"
-fi
 unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_PREFIX
 unset GIT_OBJECT_DIRECTORY GIT_ALTERNATE_OBJECT_DIRECTORIES
 export XDG_CACHE_HOME="$snapshot/.cache"
@@ -72,7 +68,6 @@ export XDG_STATE_HOME="$snapshot/.cache"
 PATH="$snapshot/node_modules/.bin:$PATH"
 cd "$snapshot"
 
-bun run assets:prepare-test
 bun run typecheck
 bun run lint
 bun run test:coverage

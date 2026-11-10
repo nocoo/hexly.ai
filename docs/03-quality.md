@@ -6,7 +6,8 @@ The 2026-09-25 test audit consolidates repeated project matrices by behavior. Ca
 
 | Dimension | Contract | Command | When |
 | --- | --- | --- | --- |
-| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 95% statements, branches, functions, and lines | `bun run test:coverage` | Index snapshot at pre-commit; full coverage in CI |
+| L1 | Unit behaviour for catalogue, filtering, preferences, release policy, and test isolation; at least 95% statements, branches, functions, and lines; **never reads hydrated `public/` materials or CDN bytes** | `bun run test:coverage` | Index snapshot at pre-commit; logic-only, no asset hydration |
+| L1 assets | Inventory SHA-256, pixels, brand/texture/social bytes and screenshot receipts | `bun run test:assets` | CI `verify` after `assets:prepare-test` only |
 | L2 | Real HTTP requests to the built site in the Workers runtime; HTML, assets, and response behavior | `bun run test:http` | Pre-push |
 | L3 | Browser journeys for navigation, search, categories, bilingual preferences, themes, gallery, responsive layout, and accessibility | `bun run test:browser` | CI and manual |
 | G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run check:static` | Merged into unified L1 at pre-commit; full checks in CI |
@@ -37,11 +38,11 @@ The installed `.husky/pre-commit` hook checks the Git index snapshot, not the un
 
 - `assets:check-tracked`: reject material binaries in the Git index, including forced additions. SVG source and the required vendored code archive remain allowed.
 - `gitleaks protect --staged`: secret scan on staged content.
-- `git checkout-index` into a temporary directory with symlinked `node_modules` and the local asset cache, then `assets:prepare-test`, `typecheck`, full-repo `lint`, and `test:coverage` with Vitest's four 95% thresholds.
+- `git checkout-index` into a temporary directory with symlinked `node_modules`, then `typecheck`, full-repo `lint`, and asset-free `test:coverage` with Vitest's four 95% thresholds. `check-unit-asset-access.ts` and a fetch guard reject accidental `public/` or `h.no.mt` access in the unit suite.
 
 `bun run gate:commit` runs the same L1 commands sequentially on the current working tree (for manual checks). A staged defect must fail even when the working tree already contains a fix. Pre-push still runs L2 and G2; full isolation, asset verification, and L2/L3 checks remain in CI `verify`.
 
-`assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, the two retained Snail raw images, and the existing screenshot-upload fixture. It validates existing local bytes too. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation, plus all public versioned manifests and their referenced bytes. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
+`assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, the two retained Snail raw images, and the existing screenshot-upload fixture. It validates existing local bytes too. `test:assets` runs under `verify` (after preparation) and keeps the relocated byte, hash and pixel checks out of L1. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation, plus all public versioned manifests and their referenced bytes. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
 
 `bun run assets:check` remains the full archive maintenance command: it hydrates all inventory rows and also includes unpublished historical finishing passes via `verify-assets.ts --history`. Run it when maintaining historical archives. Routine verification does not redownload historical finishing intermediates.
 
