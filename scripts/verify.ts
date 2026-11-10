@@ -26,6 +26,7 @@ const commands = [
 	["bun", "run", "check:isolation"],
 	["bun", "run", "check:security"],
 	["bun", "run", "test:coverage"],
+	["bun", "run", "test:assets"],
 	["bun", "run", "build"],
 	["bun", "run", "deploy:check"],
 	[
