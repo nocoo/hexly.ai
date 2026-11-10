@@ -221,7 +221,6 @@ cases passed unchanged with one worker in 29.5 seconds total. Required full
 browser validation moves to the exact-revision CI release gate, with no increased
 timeouts, skipped assertions or deployment before that gate succeeds.
 
-
 ## 2026-09-25 — Test asset selection must follow source snapshots
 
 The first reduced fixture selection retained public materials, brand/texture
@@ -234,13 +233,11 @@ Current identity checks remain routine; historical finishing audits remain
 available through `assets:check`. The corrected current checker and all 441
 unchanged unit tests passed in the isolated checkout.
 
-
 ## 2026-09-25 — Verify test fixtures and device boundaries during pruning
 
 The first complete verification exposed a missing screenshot-upload source in the reduced hydration set. The browser test reads `docs/screenshots/directory-light.png` directly even though it is not a public asset. Restore this existing inventory entry with its original checksum; do not substitute another upload fixture. Review direct filesystem reads alongside public URL dependencies when selecting hydration sources.
 
 The new shared touch fixture also accidentally changed every inherited iPhone 13 viewport from 390px to 320px. Restore the baseline device viewport and retain explicit 320px tests. The narrower Diorama screenshot-caption accessibility finding remains a separate product follow-up: its scrollable text needs keyboard access and inclusion in modal focus traversal. The Pi texture timeout showed a scheduling stall during Axe result aggregation, not evidence of a failed download; keep its assertions and timeout unchanged and validate again.
-
 
 ## 2026-09-27 — Local texture reviews must resolve local materials
 
@@ -517,6 +514,7 @@ after only the short revision had been observed. It was replaced with the actual
 `git rev-parse HEAD` value before generation or commit. Generate source revisions
 and file hashes from their authoritative tools rather than completing them by
 hand, and validate those values before preserving a provenance record.
+
 # 2026-10-18: Lint source masks before freezing a pass
 
 The five-material local rollout reached its first commit gate with four new
@@ -527,7 +525,6 @@ raster and every PNG derivative remained byte-identical. Historical raw images,
 receipts and published archives were untouched. The completed archive records
 the correction under `manifest.preflightCorrection`. Run lint on every new SVG
 before taking the frozen finishing snapshot, not only on the generated images.
-
 
 ## 2026-10-18 - Local identity integration preflight
 

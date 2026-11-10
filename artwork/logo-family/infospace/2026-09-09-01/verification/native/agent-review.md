@@ -59,6 +59,7 @@ Choose a new output path for each replay. Both AppKit-rendered PNGs in the recor
 All commands used process-local `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer`, with no change to global Xcode selection. Logs and per-stage command/timing records are in `/tmp/infospace-toolbar-fix-20260909-nraltl8j/logs/`. SwiftPM inspection uses the small dedicated-process runner `/tmp/infospace-toolbar-fix-20260909-nraltl8j/inspect-swiftpm.py`; it invokes the app's unchanged existing inspection implementation and terminates only its own child.
 
 Actual native baseline screenshots were visually reviewed in both modes. The transparent colored mark is visible at the existing 22 pt toolbar size beside “Info Space”; title, native traffic lights and layout controls retain their positions. These are full running-app window captures, not only the offscreen probe:
+
 - `/tmp/infospace-toolbar-fix-20260909-nraltl8j/inspection-xcode/01-baseline.png`
 - `/tmp/infospace-toolbar-fix-20260909-nraltl8j/inspection-swiftpm/01-baseline.png`
 

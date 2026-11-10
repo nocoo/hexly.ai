@@ -26,6 +26,7 @@ Primary interaction is a browser, so the series is
 An emperor penguin, head close-up.
 
 The species choice is a product connection, not a generic mascot:
+
 - Penguins dive deep and hold one line under pressure — the same research posture
   as drilling into fund history, drawdown and risk rather than price noise
 - A colony dives as one group while each bird keeps its own path — hundreds of

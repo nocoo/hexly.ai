@@ -53,6 +53,7 @@ state, security guarantee or literal technical diagram.
 A card is judged against its neighbours, not alone. Read two or three approved
 cards from the same family and write the prompt against their shared
 construction; a correct subject in a foreign construction still reads wrong.
+
 - **Base hue is the page surface, not the project.** Generate on the recorded
   paper tokens (`#f0f0e9` / `#f8f8f2` light, `#1e2824` / `#27332c` dark). A
   project-colored base — sand, plaster, tinted paper — turns the square into a
