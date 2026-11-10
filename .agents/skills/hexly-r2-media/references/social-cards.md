@@ -29,6 +29,7 @@ stale cards to preserve old URLs unless the owner explicitly asks.
 ## When to regenerate
 
 Any change to a card's inputs makes it stale:
+
 - project title, English description, category or archived flag
 - the artwork the card shows: `family.root/icon-1024.webp` for family projects,
   otherwise `logo.display`

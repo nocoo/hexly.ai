@@ -9,6 +9,7 @@ description: "Shared contract for Hexly logo generation, exact-byte approval, fi
 Three series skills define what the artwork looks like. This contract defines how
 it is made, approved, measured, delivered and adopted. They are never optional
 alternatives: load the series skill first, then this file, then start.
+
 - [hexly-animal](../hexly-animal/SKILL.md) — Web SaaS and browser-first services
 - [hexly-birds](../hexly-birds/SKILL.md) — native macOS applications and menu-bar utilities
 - [hexly-things](../hexly-things/SKILL.md) — CLI tools, libraries, scripts, agent extensions
@@ -29,6 +30,7 @@ this contract adds no data field.
 These are what make three different drawing languages read as one family. They
 belong here, not in a series skill, because divergence between series is the
 failure this structure exists to prevent.
+
 - One native 2048 × 2048 source on a uniform opaque matte. Decode the returned
   dimensions and record them; never describe an upscale as native.
 - The background is composed after approval, independently of the foreground:
@@ -148,6 +150,7 @@ Inspect the tool's actual behavior first; its settings are an editable recipe,
 not a universal matte. Save the pass settings, the exact tool snapshot, the mask,
 background and shadow layers, exports, previews and checksums. Format mutable
 recipes before freezing the numbered directory; never reformat frozen artifacts.
+
 - Extract only white connected to the exterior. Protect enclosed highlights and
   disconnected accents, and inspect antialiased edges on both light and dark.
   A near-white source needs its own sampled matte color.
@@ -201,6 +204,7 @@ Read the shared surface audit in `docs/07-logo-usage-sop.md` before adopting.
 Session authorization to replace and push is enough; do not regenerate approved
 artwork or add another approval loop, and never promote a different project's
 unselected candidate.
+
 1. Copy the selected transparent master to the source project's root `logo.png`;
    keep square and rounded masters under explicit roles such as
    `assets/brand/icon.png`. Record study, pass, dimensions and hashes.

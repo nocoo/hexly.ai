@@ -86,6 +86,7 @@ the study you use as a model.
 ## Checks
 
 Beyond the pipeline checks:
+
 - The object is physically buildable: no impossible joints, floating parts or
   ambiguous thickness
 - Material reads as the named material at 512 px and does not degrade to plastic

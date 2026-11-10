@@ -8,7 +8,6 @@ Keep the palette in believable basalt tones: near-black shadow, graphite, quiet 
 
 This is not polished black ceramic, glass, metal, marble, granite or a porous sponge. No glossy mirror reflection, white marble veining, huge glittering crystals, cracks splitting the block, glowing lava, moss, labels, etched letters, hexagonal-column landscape or geological debris. Think of a premium honed basalt building sample displayed in a design studio: a simple, generous rounded square with extraordinary native-resolution stone quality.
 
-
 ## Shared geometry and layers
 
 SHARED BUILDING-BLOCK FAMILY
@@ -18,7 +17,6 @@ Treat the square logo as a product photographer's viewfinder catching one quiet 
 
 ISOLATED SOURCE
 Return one native 2048 by 2048 PNG. Render only the opaque solid block, isolated on perfectly uniform pure-white #FFFFFF. The final presentation will have a pale, delicately gridded engineering background, hover shadow and any light spill composed later as independent layers. Do NOT paint that presentation now: no ground plane, horizon, background gradient, external cast shadow, contact shadow, surrounding haze, external bloom, reflections on a floor, border, inset app tile, text or watermark. Keep crisp, complete antialiased boundaries. Internal material shadows, physical reflection and solid bright surface details are welcome. The building-block analogy is about the volume only: NO pixel art, voxel texture, disconnected polygon drawing, cartoon shading or game screenshot. This is a refined high-resolution tangible material logo.
-
 
 ## Independent presentation
 
