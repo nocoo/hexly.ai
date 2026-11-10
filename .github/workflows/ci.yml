@@ -34,15 +34,9 @@ jobs:
       workflow-lint-yamllint: true
       l2: true
       l2-command: bun run assets:prepare-test && bun run test:http
-      l2-artifact-name: http-e2e-evidence
-      l2-artifact-path: .test-results/http/
-      l2-artifact-retention-days: 7
       l3: true
       l3-browsers: chromium
       l3-command: bun run assets:prepare-test && bun run test:browser
-      l3-artifact-name: browser-e2e-evidence
-      l3-artifact-path: .test-results/browser/
-      l3-artifact-retention-days: 7
       env-json: '{"WRANGLER_SEND_METRICS": "false", "WRANGLER_LOG_PATH": ".wrangler/verification.log", "WRANGLER_LOG_SANITIZE": "true", "CI": "true"}'
       slot-status: >-
         {"S1": {"status": "impl"},
