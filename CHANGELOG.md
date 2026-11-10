@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.1] - 2026-11-10
+
+### Maintenance
+
+- bump vitest and @vitest/coverage-v8 to 5.1.0 (#134, #136)
+- bump @biomejs/biome to 2.6.6 (#138)
+- bump @playwright/test to 1.65.0 (#139)
+
 ## [1.8.0] - 2026-11-07
 
 ### Documentation
