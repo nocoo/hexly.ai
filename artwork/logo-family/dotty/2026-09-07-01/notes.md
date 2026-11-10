@@ -8,7 +8,6 @@ Azure Foundry gpt-image-2, native 2048 × 2048. 1 native request(s) for this pro
 
 Selected finishing `01`. Preserve the untouched [raw generation](raw/generated.png), [exact prompt](prompt.txt), ordered [reference roles](references.json), sanitized request/response, [authorization](authorization.json), and [raw decision](raw-review.json). Every numbered finishing directory is frozen, including its settings, masks, tool snapshot, independent background, shadows, exports and checksums.
 
-
 ## Material, placement and sizes
 
 The whole object has 265.5 px minimum clearance from the actual 23% rounded outline, with zero clipped foreground pixels. All representations share one uniform placement. [Framing evidence](verification/framing.json), [native-color preservation](verification/matte.json), and [all-size checks](verification/exports.json) record the measurements. The unscaled extraction remains separate from the final placed foreground.
@@ -22,6 +21,7 @@ The background is **Precision drafting grid**, using base `#e5eaf1`, light `#f8f
 ## Source adoption and individual delivery
 
 Selected source commit: [`1becb8026f`](https://github.com/nocoo/dotty/commit/1becb8026f44a20d9827cd5b4f100b6fb09836fe). README headers use the rounded presentation; small navigation, login/loading and browser marks use the transparent foreground. The source generator verifies its masters and records all PNG dimensions, ICO entries and alpha checks.
+
 - [Individual Vite comparison](https://hexly.ai/logos/dotty)
 - [Local Vite comparison](https://index.dev.hexly.ai/logos/dotty)
 - [Complete individual static review](review.html)

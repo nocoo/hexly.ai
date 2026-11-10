@@ -7,6 +7,7 @@ birds. The owner approved its generated surfaces and final local page on
 ## Evidence and exact source
 
 Paths below are relative to the repository root:
+
 - `artwork/brands/pi-agent-policy/texture-studies/2026-09-14-flare-01/brief.md`
   records the product analogy and actual generation route.
 - The same study's `light/prompt.txt` and `dark/prompt.txt` are the exact model

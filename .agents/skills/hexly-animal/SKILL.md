@@ -32,6 +32,7 @@ came from different families.
 | Canvas         | One native 2048 × 2048 source                                                                                                                      |
 
 Palette has exactly two legal modes. Choose one and name it in the brief:
+
 - **Lively (default).** Three to five clear hues belonging to the animal's own
   facets, not to a separate accessory. Frogie, Octo, Falcon and Kite.
 - **Restrained.** One dominant muted color family with tonal variation defining
@@ -82,6 +83,7 @@ the study you are using as a model; do not reconstruct it from this skill.
 ## Checks
 
 Beyond the pipeline checks:
+
 - Species reads at `32 × 32` from silhouette alone; if a feature dissolves at
   that size, enlarge or delete it
 - Fragmentation is visible in the head, not only in an accessory

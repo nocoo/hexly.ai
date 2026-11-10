@@ -8,7 +8,6 @@ Give it one focused sign of life: a small, sharp emerald electrical arc bridging
 
 Avoid an ordinary desktop PC motherboard with a large CPU socket, fan, cable bundle, brand labels or scattered components. Avoid a building cityscape, loose floating plates, a smartphone, a stack of unrelated cards, excessive dirt or damage. Think of a beautifully finished, quietly powerful and richly engineered deck sample from a future world: dense technological detail inside one calm, clearly readable rounded building block. Broad dark areas and larger channels keep it identifiable when reduced to a tiny icon.
 
-
 ## Shared geometry and layers
 
 SHARED BUILDING-BLOCK FAMILY
@@ -18,7 +17,6 @@ Treat the square logo as a product photographer's viewfinder catching one quiet 
 
 ISOLATED SOURCE
 Return one native 2048 by 2048 PNG. Render only the opaque solid block, isolated on perfectly uniform pure-white #FFFFFF. The final presentation will have a pale, delicately gridded engineering background, hover shadow and any light spill composed later as independent layers. Do NOT paint that presentation now: no ground plane, horizon, background gradient, external cast shadow, contact shadow, surrounding haze, external bloom, reflections on a floor, border, inset app tile, text or watermark. Keep crisp, complete antialiased boundaries. Internal material shadows, physical reflection and solid bright surface details are welcome. The building-block analogy is about the volume only: NO pixel art, voxel texture, disconnected polygon drawing, cartoon shading or game screenshot. This is a refined high-resolution tangible material logo.
-
 
 ## Independent presentation
 
