@@ -6,10 +6,10 @@ The 2026-09-25 test audit consolidates repeated project matrices by behavior. Ca
 
 | Dimension | Contract | Command | When |
 | --- | --- | --- | --- |
-| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 95% statements, branches, functions, and lines (current Vitest gates remain at 90%; raising them is planned) | `bun run test:changed`; `bun run test:coverage` | Affected tests at pre-commit; full coverage in CI |
+| L1 | Unit behavior for catalogue, filtering, preferences, release policy, and test isolation; at least 95% statements, branches, functions, and lines | `bun run test:coverage` | Index snapshot at pre-commit; full coverage in CI |
 | L2 | Real HTTP requests to the built site in the Workers runtime; HTML, assets, and response behavior | `bun run test:http` | Pre-push |
 | L3 | Browser journeys for navigation, search, categories, bilingual preferences, themes, gallery, responsive layout, and accessibility | `bun run test:browser` | CI and manual |
-| G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run lint:staged`; `bun run check:static` | Staged lint at pre-commit; full checks in CI |
+| G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run check:static` | Merged into unified L1 at pre-commit; full checks in CI |
 | G2 | OSV dependency audit and Gitleaks secret scanning | `bun run check:security` | Pre-push and CI |
 | D1 | Per-run loopback SQLite state, guards before fixture/reset/cleanup, no production bindings or remote services | `bun run check:isolation` | Before integration/browser tests |
 
@@ -33,15 +33,13 @@ validates those views through actual user journeys.
 
 ## Commit feedback
 
-`bun run gate:commit` runs these three checks in parallel:
+The installed `.husky/pre-commit` hook checks the Git index snapshot, not the unstaged working tree. It runs, in order:
 
-- `assets:check-tracked`: reject material binaries in the Git index, including forced additions. SVG source and the required vendored code archive remain allowed. CI repeats this check before asset hydration.
-- `lint:staged`: Biome checks staged paths with zero warnings, without rewriting files. Commits containing only ignored or unsupported files pass when there is nothing to lint.
-- `test:changed`: Vitest runs unit tests affected by uncommitted Git changes, without coverage. This includes staged, unstaged, and untracked files. Documentation/artwork changes without related tests do not run the suite.
+- `assets:check-tracked`: reject material binaries in the Git index, including forced additions. SVG source and the required vendored code archive remain allowed.
+- `gitleaks protect --staged`: secret scan on staged content.
+- `git checkout-index` into a temporary directory with symlinked `node_modules` and the local asset cache, then `assets:prepare-test`, `typecheck`, full-repo `lint`, and `test:coverage` with Vitest's four 95% thresholds.
 
-Package, Vite/Vitest configuration, Bun lock/configuration, and TypeScript configuration changes trigger all unit tests. The release CLI and the directory's original logo also trigger the full suite because tests read them through a subprocess or filesystem rather than an import. These triggers are declared in `vitest.config.ts`.
-
-The material guard reads the Git index; lint and unit tests check working-tree content and do not snapshot partially staged files. Review the staged diff before committing. Full typecheck, lint, coverage, isolation, asset verification, security, and L2/L3 checks remain in CI. Pre-push still runs L2 and G2.
+`bun run gate:commit` runs the same L1 commands sequentially on the current working tree (for manual checks). A staged defect must fail even when the working tree already contains a fix. Pre-push still runs L2 and G2; full isolation, asset verification, and L2/L3 checks remain in CI `verify`.
 
 `assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, the two retained Snail raw images, and the existing screenshot-upload fixture. It validates existing local bytes too. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation, plus all public versioned manifests and their referenced bytes. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
 

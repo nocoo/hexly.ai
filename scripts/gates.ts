@@ -8,12 +8,22 @@ const groups: Record<string, string[][]> = {
 	],
 	security: [
 		["osv-scanner", "scan", "source", "--lockfile", "bun.lock"],
-		["gitleaks", "git", ".", "--no-banner", "--redact"],
+		[
+			"gitleaks",
+			"git",
+			".",
+			"--no-banner",
+			"--redact",
+			"--config",
+			".gitleaks.toml",
+		],
 	],
 	commit: [
 		["bun", "run", "assets:check-tracked"],
-		["bun", "run", "lint:staged"],
-		["bun", "run", "test:changed"],
+		["bun", "run", "assets:prepare-test"],
+		["bun", "run", "typecheck"],
+		["bun", "run", "lint"],
+		["bun", "run", "test:coverage"],
 	],
 	push: [
 		["bun", "run", "test:http"],
@@ -21,12 +31,24 @@ const groups: Record<string, string[][]> = {
 	],
 };
 
-const group = groups[process.argv[2] ?? ""];
-if (!group)
+const group = process.argv[2] ?? "";
+const commands = groups[group];
+if (!commands)
 	throw new Error("Expected gate: static, security, commit, or push.");
-const codes = await Promise.all(
-	group.map(
-		(cmd) => Bun.spawn(cmd, { stdout: "inherit", stderr: "inherit" }).exited,
-	),
-);
-if (codes.some((code) => code !== 0)) process.exit(1);
+
+const runSequential = group === "commit";
+
+if (runSequential) {
+	for (const cmd of commands) {
+		const code = await Bun.spawn(cmd, { stdout: "inherit", stderr: "inherit" })
+			.exited;
+		if (code !== 0) process.exit(1);
+	}
+} else {
+	const codes = await Promise.all(
+		commands.map(
+			(cmd) => Bun.spawn(cmd, { stdout: "inherit", stderr: "inherit" }).exited,
+		),
+	);
+	if (codes.some((code) => code !== 0)) process.exit(1);
+}
