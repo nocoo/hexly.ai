@@ -5,6 +5,7 @@ The owner selected this native 2048 × 2048 source and authorized finishing, sou
 ## Generation and approval
 
 One Azure Foundry `gpt-image-2` call returned this study in 133.38 seconds. No retry or additional model call was used for finishing. The owner JPEG leads four ordered references. The exact output was shown immediately, before any processing; [raw-review.json](raw-review.json) records the selection.
+
 - Request ID: `bbbf161b-5c82-44f5-8b7b-3697e1776308`.
 - Raw SHA-256: `384fff12838b1e9b282879ffb008f9b9aa8af110ba28400050ef6cd489f48d25`.
 - Native size: 2048 × 2048; untouched PNG: 2,337,353 bytes.

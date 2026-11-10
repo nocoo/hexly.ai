@@ -92,6 +92,7 @@ the study you use as a model.
 ## Checks
 
 Beyond the pipeline checks:
+
 - A person familiar with the species identifies it without the project name
 - The beak is complete, blunt and unclipped at any canvas edge
 - The eye treatment reads at `32 × 32`; a bird whose only expression is a
