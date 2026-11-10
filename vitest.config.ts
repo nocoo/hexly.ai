@@ -3,6 +3,7 @@ import { configDefaults, defineConfig } from "vitest/config";
 export default defineConfig({
 	test: {
 		maxWorkers: 4,
+		setupFiles: ["tests/unit/guard-no-assets.ts"],
 		include: [
 			"tests/unit/**/*.test.ts",
 			"packages/video-kit/tests/**/*.test.ts",
@@ -26,6 +27,11 @@ export default defineConfig({
 				"src/model/**/*.ts",
 				"scripts/isolation.ts",
 				"scripts/release-model.ts",
+			],
+			exclude: [
+				// Byte, fingerprint and manifest integrity: tests/assets + verify-assets.
+				"src/model/brand-manifest.ts",
+				"src/model/social-card.ts",
 			],
 			reporter: ["text", "json-summary", "html"],
 			thresholds: { statements: 95, branches: 95, functions: 95, lines: 95 },
