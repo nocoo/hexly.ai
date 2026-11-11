@@ -499,7 +499,7 @@ export async function verifiedPublication(file: StoredAsset, delayMs = 60_000) {
 	);
 }
 
-async function pool<T>(
+export async function pool<T>(
 	items: T[],
 	operation: (item: T) => Promise<void>,
 	concurrency: number,
