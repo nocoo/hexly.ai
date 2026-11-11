@@ -116,12 +116,13 @@ Playwright writes `.test-results/<lane>/report.json` on every outcome, so
 after green and red runs alike.
 
 Measured CI run [43043457690](https://github.com/nocoo/hexly.ai/actions/runs/43043457690)
-at `55e2d72d`: wall 262s, queue 2s, critical path `L4: E2E` 246s. Five consecutive runs at
-this design measured 241s, 303s, 266s, 259s and 262s. One 890s outlier came from
-`playwright install --with-deps` waiting on an unreachable Ubuntu mirror; the lane now
-installs the browser only, because the hosted image already provides the libraries. Inside the E2E jobs the fixture cache
-restore costs about 39s, Chromium 17s, and the latency is dominated by
-`assets:prepare-test` plus 84 journeys. `quality / Z1: Gate` takes 3–4s. The parallel
+at `55e2d72d`: wall 262s, queue 2s, critical path `L4: E2E` 246s. Five green runs with a
+healthy Chromium install measured 241s, 259s, 262s, 266s and 303s. Two runs with an
+unreachable Ubuntu mirror measured 513s and 890s, and one run failed both attempts for
+that reason (Z1 blocked it). The lane now installs the browser only, because the hosted
+image already provides the libraries. Inside the E2E jobs the fixture cache restore costs
+21–39s and the Chromium download 9–17s depending on cache state; the latency is dominated
+by `assets:prepare-test` plus 84 journeys. `quality / Z1: Gate` takes 3–4s. The parallel
 byte verification in `assets:prepare-test` cut the local check from 5.1s to 2.1s.
 
 This replaced the shared `quality.yml` design, which measured 538s and 938s on 2026-11-10

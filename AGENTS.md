@@ -97,7 +97,7 @@ materials and never reads `h.no.mt`; asset bytes belong to the catalogue job and
 | pre-commit | Git index snapshot: tracked-material guard, staged Gitleaks, focus guard, types, Biome, asset-free coverage                                        | 8.3s warm, 8.8s cold (target 30s)                |
 | pre-push   | Git stdin OIDs → `git archive` snapshot per pushed commit: verified fixture bytes, G2, G1 tree plus new commits, isolation, build, dry run, L3, L4 | 95.7s (prepare 1.8s, checks 92.8s, cleanup 1.1s) |
 
-CI wall clock measured 262s at `55e2d72d` across a 241–303s band in five consecutive runs, with a 2s queue and `L4: E2E` on the critical path.
+CI wall clock measured 262s at `55e2d72d`; five green runs with a healthy Chromium install sit in a 241–303s band, with a 2s queue and `L4: E2E` on the critical path.
 A ruleset requires `quality / Z1: Gate` on the default branch; the repository admin role
 bypasses it so direct main pushes stay available. `bun run release` still waits for the CI
 run and verifies both production origins. Details and failure-injection evidence:
