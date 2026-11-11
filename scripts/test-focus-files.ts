@@ -1,7 +1,13 @@
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
 
-const roots = ["tests/unit", "tests/assets", "tests/http", "tests/browser"];
+const roots = [
+	"tests/unit",
+	"tests/assets",
+	"tests/http",
+	"tests/browser",
+	"packages/video-kit/tests",
+];
 
 function collect(directory: string): string[] {
 	const paths: string[] = [];

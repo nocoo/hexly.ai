@@ -21,9 +21,9 @@ const material =
 	/\.(?:png|jpe?g|webp|avif|gif|ico|woff2?|ttf|otf|zip|pdf|pptx|mp3|wav|mp4|webm|mov|m4v|mkv|vtt)$/;
 
 /** Reusing installed dependencies is only sound for the declared toolchain and lockfile. */
-export function assertToolchain(repo: string) {
+export function assertToolchain(target: string) {
 	const manifest = JSON.parse(
-		readFileSync(join(repo, "package.json"), "utf8"),
+		readFileSync(join(target, "package.json"), "utf8"),
 	) as {
 		packageManager?: string;
 		engines?: Record<string, string>;
@@ -33,7 +33,7 @@ export function assertToolchain(repo: string) {
 		throw new GateFailure(
 			"package.json must declare packageManager bun@<version>.",
 		);
-	const installed = capture(["bun", "--version"], repo);
+	const installed = capture(["bun", "--version"]);
 	if (installed !== declared)
 		throw new GateFailure(
 			`Bun ${installed} does not match the declared bun@${declared}; install the declared toolchain before running the gate.`,
@@ -111,19 +111,56 @@ function sameManifests(repo: string, snapshot: string) {
 	});
 }
 
+/** Workspace packages resolve to the snapshot's own sources, never to the worktree. */
+export function workspacePackages(
+	repo: string,
+): { name: string; directory: string }[] {
+	const manifest = JSON.parse(
+		readFileSync(join(repo, "package.json"), "utf8"),
+	) as { workspaces?: string[] | { packages?: string[] } };
+	const patterns = Array.isArray(manifest.workspaces)
+		? manifest.workspaces
+		: (manifest.workspaces?.packages ?? []);
+	const packages: { name: string; directory: string }[] = [];
+	for (const pattern of patterns) {
+		const root = pattern.replace(/\/\*$/, "");
+		const candidates = existsSync(join(repo, root, "package.json"))
+			? [root]
+			: readdirSync(join(repo, root)).map((entry) => join(root, entry));
+		for (const directory of candidates) {
+			const path = join(repo, directory, "package.json");
+			if (!existsSync(path)) continue;
+			const name = (JSON.parse(readFileSync(path, "utf8")) as { name?: string })
+				.name;
+			if (name) packages.push({ name, directory });
+		}
+	}
+	return packages;
+}
+
 function linkInstalledPackages(repo: string, snapshot: string) {
 	const installed = join(repo, "node_modules");
+	const workspaces = workspacePackages(repo);
+	const local = new Set(
+		workspaces.map(({ name }) => name.split("/")[0] ?? name),
+	);
 	mkdirSync(join(snapshot, "node_modules"), { recursive: true });
 	for (const entry of readdirSync(installed)) {
-		if (entry.startsWith(".")) continue;
+		if (entry.startsWith(".") || local.has(entry)) continue;
 		symlinkSync(join(installed, entry), join(snapshot, "node_modules", entry));
 	}
 	symlinkSync(join(installed, ".bin"), join(snapshot, "node_modules/.bin"));
-	const workspace = join(repo, "packages/video-kit/node_modules");
-	if (existsSync(workspace)) {
-		mkdirSync(join(snapshot, "packages/video-kit"), { recursive: true });
-		symlinkSync(workspace, join(snapshot, "packages/video-kit/node_modules"));
+	for (const { name, directory } of workspaces) {
+		const target = join(snapshot, "node_modules", name);
+		mkdirSync(join(target, ".."), { recursive: true });
+		symlinkSync(join(snapshot, directory), target);
+		const dependencies = join(repo, directory, "node_modules");
+		if (existsSync(dependencies) && !existsSync(join(snapshot, directory)))
+			mkdirSync(join(snapshot, directory), { recursive: true });
+		if (existsSync(dependencies))
+			symlinkSync(dependencies, join(snapshot, directory, "node_modules"));
 	}
+	mkdirSync(join(snapshot, ".cache"), { recursive: true });
 	mkdirSync(join(snapshot, "node_modules/.vite"), { recursive: true });
 	mkdirSync(join(snapshot, "node_modules/.vitest"), { recursive: true });
 }
