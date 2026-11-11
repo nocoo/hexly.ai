@@ -139,19 +139,19 @@ feed a local `Z1: Gate`. Run
 
 | Measure | Value |
 | --- | ---: |
-| Wall clock, run start to finish | 241s |
+| Wall clock, run start to finish | 266s |
 | Initial queue | 3s |
-| Critical path (`L4: E2E`) | 231s |
+| Critical path (`L4: E2E`) | 258s |
 | Job setup / Chromium install | 12s / 17s |
-| Fixture cache restore | 39s |
-| E2E command (prepare, build, 84 journeys) | 158s |
-| `L3: Integration` | 126s |
+| Fixture cache restore | ~39s |
+| E2E command (prepare, build, 84 journeys) | ~150s |
+| `L3: Integration` | 93s |
 | Catalogue and media verification | 72s |
 | `Z1: Gate` | 4s |
 | S1 / B1 / S2 / L1 / S3 / G1 / G2 | 22 / 17 / 17 / 24 / 9 / 8 / 7s |
 
-All slot jobs started within three seconds of each other, so the 241s wall clock is
-job work, not queueing. The earlier shared `quality.yml` design measured 538s and
+Three consecutive runs on this design measured 241s, 303s and 266s. All slot jobs started
+within three seconds of each other, so the wall clock is job work, not queueing. The earlier shared `quality.yml` design measured 538s and
 938s on 2026-11-10, with 311–930s of queue and three dependency installs plus three
 fixture hydrations; the native workflow restored both.
 
