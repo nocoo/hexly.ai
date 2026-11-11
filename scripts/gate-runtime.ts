@@ -1,4 +1,4 @@
-import { spawn } from "node:child_process";
+import { execFileSync, spawn } from "node:child_process";
 import process from "node:process";
 
 export interface Phase {
@@ -81,15 +81,15 @@ export async function runPhase(phase: Phase): Promise<void> {
 }
 
 export function capture(command: string[], cwd = process.cwd()): string {
-	const decoder = new TextDecoder();
-	const result = Bun.spawnSync(command, {
-		cwd,
-		stdout: "pipe",
-		stderr: "pipe",
-	});
-	if (result.exitCode !== 0)
-		throw new GateFailure(
-			`${command.join(" ")} failed: ${decoder.decode(result.stderr).trim()}`,
-		);
-	return decoder.decode(result.stdout).trim();
+	try {
+		return execFileSync(command[0] ?? "", command.slice(1), {
+			cwd,
+			encoding: "utf8",
+			stdio: ["ignore", "pipe", "pipe"],
+		}).trim();
+	} catch (error) {
+		const failure = error as { stderr?: string; message?: string };
+		const detail = (failure.stderr ?? failure.message ?? "").trim();
+		throw new GateFailure(`${command.join(" ")} failed: ${detail}`);
+	}
 }
