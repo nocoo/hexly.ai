@@ -331,14 +331,11 @@ jobs:
           node-version: "26.12.1"
           install-policy: project
 
-      # The apt path can stall for ten minutes on a bad mirror, so it is bounded.
+      # The GitHub image already carries the system libraries; asking apt as well
+      # stalls for minutes when the Ubuntu mirrors are unreachable.
       - name: Install Chromium
-        timeout-minutes: 8
-        run: |
-          if ! timeout 240 bunx playwright install --with-deps chromium; then
-            echo "::warning::System packages were unavailable within 4 minutes; installing Chromium without them"
-            bunx playwright install chromium
-          fi
+        timeout-minutes: 5
+        run: bunx playwright install chromium
 
       - name: Restore verified asset fixtures
         uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
