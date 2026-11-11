@@ -172,6 +172,7 @@ function releaseMetadata(): Plugin {
 		name: "hexly.ai",
 		version: manifest.version,
 		revision:
+			process.env.RELEASE_REVISION ??
 			process.env.GITHUB_SHA ??
 			execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
 	});

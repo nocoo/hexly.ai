@@ -1,1 +1,11 @@
-bun run gate:push
+# System0 pre-push: verifies every pushed commit through Git's stdin ref list.
+set -e
+command -v git >/dev/null 2>&1 || {
+	echo "pre-push: git is required" >&2
+	exit 1
+}
+command -v bun >/dev/null 2>&1 || {
+	echo "pre-push: bun is required" >&2
+	exit 1
+}
+exec bun run gate:push
