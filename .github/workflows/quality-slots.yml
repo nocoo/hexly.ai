@@ -331,10 +331,12 @@ jobs:
           node-version: "26.12.1"
           install-policy: project
 
+      # The apt path can stall for ten minutes on a bad mirror, so it is bounded.
       - name: Install Chromium
+        timeout-minutes: 8
         run: |
-          if ! bunx playwright install --with-deps chromium; then
-            echo "::warning::Ubuntu package mirrors were unreachable; installing Chromium without system packages"
+          if ! timeout 240 bunx playwright install --with-deps chromium; then
+            echo "::warning::System packages were unavailable within 4 minutes; installing Chromium without them"
             bunx playwright install chromium
           fi
 
