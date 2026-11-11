@@ -20,6 +20,18 @@ describe("test focus guard", () => {
 		]);
 	});
 
+	it("rejects static skipIf and keeps dynamic conditions", () => {
+		expect(
+			violations(
+				"a.spec.ts",
+				["test.sk", 'ipIf(true)("runs", () => {});'].join(""),
+			),
+		).toEqual([["a.spec.ts:1: static skip (.sk", "ipIf(true))"].join("")]);
+		expect(
+			violations("a.spec.ts", "test.skipIf(isMobile)('runs', () => {});"),
+		).toEqual([]);
+	});
+
 	it("rejects unconditional skips but keeps conditional ones", () => {
 		expect(violations("a.spec.ts", skip)).toEqual([
 			"a.spec.ts:1: unconditional skip (.skip)",
@@ -43,5 +55,8 @@ describe("test focus guard", () => {
 		expect(paths.every((path) => /\.(?:test|spec)\.tsx?$/.test(path))).toBe(
 			true,
 		);
+		expect(
+			paths.some((path) => path.startsWith("packages/video-kit/tests/")),
+		).toBe(true);
 	});
 });

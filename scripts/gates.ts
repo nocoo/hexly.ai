@@ -1,4 +1,5 @@
-import { rmSync } from "node:fs";
+import { cpSync, existsSync, rmSync } from "node:fs";
+import { join } from "node:path";
 import process from "node:process";
 import { historyRange, parsePushRefs } from "./gate-refs";
 import { capture, GateFailure, runPhase } from "./gate-runtime";
@@ -12,14 +13,13 @@ import {
 } from "./gate-workspace";
 
 const repo = capture(["git", "rev-parse", "--show-toplevel"]);
-const inside = (directory: string) => ({
-	cwd: directory,
-	env: gateEnv(directory),
-});
+
+/** Stage budgets from the System0 standard: 30s/60s commit, 150s/300s push. */
+const budget = { commit: 60, push: 300 };
 
 const staticPhases = [
-	{ label: "types", command: ["bun", "run", "typecheck"], timeout: 180 },
-	{ label: "lint", command: ["bun", "run", "lint"], timeout: 120 },
+	{ label: "types (S1)", command: ["bun", "run", "typecheck"], timeout: 180 },
+	{ label: "lint (S2)", command: ["bun", "run", "lint"], timeout: 120 },
 	{
 		label: "isolation",
 		command: ["bun", "run", "check:isolation"],
@@ -48,13 +48,81 @@ const securityPhases = [
 	},
 ];
 
-async function commit() {
+const started = performance.now();
+const remaining = (stage: number) =>
+	Math.floor(stage - (performance.now() - started) / 1000);
+
+/** Every phase is capped by the stage budget, so a hung phase cannot outlive it. */
+async function stagePhase(
+	stage: keyof typeof budget,
+	phase: { label: string; command: string[]; timeout: number },
+	cwd?: { cwd: string; env: Record<string, string> },
+) {
+	const left = remaining(budget[stage]);
+	if (left < 5)
+		throw new GateFailure(
+			`${phase.label} was not run: the ${budget[stage]}s stage budget is spent`,
+		);
 	await runPhase({
+		...phase,
+		timeout: Math.min(phase.timeout, left),
+		...(cwd ?? {}),
+	});
+}
+
+/** A failing gate keeps what the failing run produced instead of deleting it. */
+function retainEvidence(snapshot: string, revision: string) {
+	const directory = join(
+		repo,
+		".wrangler/gate-evidence",
+		`${new Date().toISOString().replace(/[:.]/g, "-")}-${revision.slice(0, 7)}`,
+	);
+	const kept: string[] = [];
+	for (const name of [".test-results", "coverage"]) {
+		const source = join(snapshot, name);
+		if (!existsSync(source)) continue;
+		cpSync(source, join(directory, name), { recursive: true });
+		kept.push(name);
+	}
+	if (kept.length)
+		console.error(
+			`Gate: kept ${kept.join(", ")} at ${directory} — clean it up when the fix is verified`,
+		);
+}
+
+async function withSnapshot<T>(
+	stage: keyof typeof budget,
+	revision: string,
+	create: () => string,
+	run: (snapshot: string) => Promise<T>,
+) {
+	const snapshot = create();
+	let failure: unknown;
+	try {
+		assertToolchain(snapshot);
+		await prepareDependencies(repo, snapshot);
+		return await run(snapshot);
+	} catch (error) {
+		failure = error;
+		throw error;
+	} finally {
+		if (failure) retainEvidence(snapshot, revision);
+		const cleaned = performance.now();
+		rmSync(snapshot, { recursive: true, force: true });
+		if (stage === "push")
+			console.info(
+				`Gate: snapshot cleaned in ${((performance.now() - cleaned) / 1000).toFixed(1)}s`,
+			);
+	}
+}
+
+async function commit() {
+	await stagePhase("commit", {
 		label: "tracked materials",
 		command: ["bun", "run", "assets:check-tracked"],
-		timeout: 120,
+		timeout: 60,
 	});
-	await runPhase({
+	await stagePhase("commit", {
 		label: "staged secrets (G1)",
 		command: [
 			"gitleaks",
@@ -65,40 +133,65 @@ async function commit() {
 			"--config",
 			".gitleaks.toml",
 		],
-		timeout: 180,
+		timeout: 60,
 	});
 
-	assertToolchain(repo);
 	const prepared = performance.now();
-	const snapshot = indexSnapshot(repo);
-	try {
-		await prepareDependencies(repo, snapshot);
-		console.info(
-			`Gate: index snapshot prepared in ${((performance.now() - prepared) / 1000).toFixed(1)}s`,
-		);
-		const cwd = inside(snapshot);
-		for (const phase of [
-			{
-				label: "test focus guard",
-				command: ["bun", "run", "check:focus"],
-				timeout: 120,
-			},
-			{
-				label: "types (S1)",
-				command: ["bun", "run", "typecheck"],
-				timeout: 180,
-			},
-			{ label: "lint (S2)", command: ["bun", "run", "lint"], timeout: 120 },
-			{
-				label: "unit coverage (L1)",
-				command: ["bun", "run", "test:coverage"],
-				timeout: 300,
-			},
-		])
-			await runPhase({ ...phase, ...cwd });
-	} finally {
-		rmSync(snapshot, { recursive: true, force: true });
+	await withSnapshot(
+		"commit",
+		"index",
+		() => indexSnapshot(repo),
+		async (snapshot) => {
+			console.info(
+				`Gate: index snapshot prepared in ${((performance.now() - prepared) / 1000).toFixed(1)}s`,
+			);
+			const cwd = { cwd: snapshot, env: gateEnv(snapshot) };
+			for (const phase of [
+				{
+					label: "test focus guard",
+					command: ["bun", "run", "check:focus"],
+					timeout: 30,
+				},
+				{
+					label: "types (S1)",
+					command: ["bun", "run", "typecheck"],
+					timeout: 120,
+				},
+				{ label: "lint (S2)", command: ["bun", "run", "lint"], timeout: 60 },
+				{
+					label: "unit coverage (L1)",
+					command: ["bun", "run", "test:coverage"],
+					timeout: 120,
+				},
+			])
+				await stagePhase("commit", phase, cwd);
+		},
+	);
+}
+
+/** Fails closed when the pushed range cannot be resolved or scanned. */
+function pushedCommits(ref: { localOid: string; remoteOid: string | null }) {
+	if (ref.remoteOid) {
+		try {
+			capture(
+				["git", "rev-parse", "--verify", `${ref.remoteOid}^{commit}`],
+				repo,
+			);
+		} catch {
+			throw new GateFailure(
+				`Cannot verify ${ref.localOid}: the remote commit ${ref.remoteOid} is not available locally`,
+			);
+		}
 	}
+	const count = Number(
+		capture(
+			["git", "rev-list", "--count", ...historyRange(ref).split(" ")],
+			repo,
+		),
+	);
+	if (!Number.isInteger(count))
+		throw new GateFailure(`Cannot count the commits pushed by ${ref.localOid}`);
+	return count;
 }
 
 async function push() {
@@ -107,103 +200,143 @@ async function push() {
 		console.info("Gate: no pushed commit to verify (deleted refs only).");
 		return;
 	}
-	assertToolchain(repo);
 	for (const ref of refs) {
+		const commits = pushedCommits(ref);
 		const prepared = performance.now();
-		const snapshot = refSnapshot(repo, ref.localOid);
-		try {
-			console.info(`Gate: verifying pushed commit ${ref.localOid}`);
-			await prepareDependencies(repo, snapshot);
-			linkMaterials(repo, snapshot);
-			console.info(
-				`Gate: snapshot prepared in ${((performance.now() - prepared) / 1000).toFixed(1)}s`,
-			);
-			const cwd = {
-				cwd: snapshot,
-				env: { ...gateEnv(snapshot), RELEASE_REVISION: ref.localOid },
-			};
-			for (const phase of [
-				{
-					label: "dependencies (G2)",
-					command: [
-						"osv-scanner",
-						"scan",
-						"source",
-						"--lockfile",
-						`${snapshot}/bun.lock`,
-					],
-					timeout: 180,
-				},
-				{
-					label: "secrets in pushed tree (G1)",
-					command: [
-						"gitleaks",
-						"dir",
-						".",
-						"--no-banner",
-						"--redact",
-						"--config",
-						`${repo}/.gitleaks.toml`,
-					],
-					timeout: 300,
-				},
-				{
-					label: "new commits (G1)",
-					command: [
-						"gitleaks",
-						"git",
-						repo,
-						"--log-opts",
-						historyRange(ref),
-						"--no-banner",
-						"--redact",
-						"--config",
-						".gitleaks.toml",
-					],
-					timeout: 300,
-				},
-				{
-					label: "isolation",
-					command: ["bun", "run", "check:isolation"],
-					timeout: 60,
-				},
-				{ label: "build (B1)", command: ["bun", "run", "build"], timeout: 300 },
-				{
-					label: "deploy dry run (B1)",
-					command: ["bun", "run", "deploy:check"],
-					timeout: 300,
-				},
-				{
-					label: "integration (L3)",
-					command: ["bun", "run", "test:http"],
-					timeout: 300,
-				},
-				{
-					label: "e2e (L4)",
-					command: ["bun", "run", "test:browser"],
-					timeout: 480,
-				},
-			])
-				await runPhase({ ...phase, ...cwd });
-		} finally {
-			const cleaned = performance.now();
-			rmSync(snapshot, { recursive: true, force: true });
-			console.info(
-				`Gate: snapshot cleaned in ${((performance.now() - cleaned) / 1000).toFixed(1)}s`,
-			);
-		}
+		await withSnapshot(
+			"push",
+			ref.localOid,
+			() => refSnapshot(repo, ref.localOid),
+			async (snapshot) => {
+				console.info(`Gate: verifying pushed commit ${ref.localOid}`);
+				linkMaterials(repo, snapshot);
+				console.info(
+					`Gate: snapshot prepared in ${((performance.now() - prepared) / 1000).toFixed(1)}s`,
+				);
+				const cwd = {
+					cwd: snapshot,
+					env: { ...gateEnv(snapshot), RELEASE_REVISION: ref.localOid },
+				};
+				await stagePhase(
+					"push",
+					{
+						label: "dependencies (G2)",
+						command: [
+							"osv-scanner",
+							"scan",
+							"source",
+							"--lockfile",
+							`${snapshot}/bun.lock`,
+						],
+						timeout: 120,
+					},
+					{ cwd: repo, env: gateEnv(snapshot) },
+				);
+				await stagePhase(
+					"push",
+					{
+						label: "secrets in pushed tree (G1)",
+						command: [
+							"gitleaks",
+							"dir",
+							".",
+							"--no-banner",
+							"--redact",
+							"--config",
+							`${repo}/.gitleaks.toml`,
+						],
+						timeout: 120,
+					},
+					cwd,
+				);
+				if (commits > 0)
+					await stagePhase(
+						"push",
+						{
+							label: `secrets in ${commits} new commit(s) (G1)`,
+							command: [
+								"gitleaks",
+								"git",
+								repo,
+								"--log-opts",
+								historyRange(ref),
+								"--no-banner",
+								"--redact",
+								"--config",
+								".gitleaks.toml",
+							],
+							timeout: 120,
+						},
+						{ cwd: repo, env: gateEnv(snapshot) },
+					);
+				await stagePhase(
+					"push",
+					{
+						label: "fixture bytes",
+						command: ["bun", "run", "assets:prepare-test"],
+						timeout: 120,
+					},
+					cwd,
+				);
+				await stagePhase(
+					"push",
+					{
+						label: "isolation",
+						command: ["bun", "run", "check:isolation"],
+						timeout: 30,
+					},
+					cwd,
+				);
+				await stagePhase(
+					"push",
+					{
+						label: "build (B1)",
+						command: ["bun", "run", "build"],
+						timeout: 120,
+					},
+					cwd,
+				);
+				await stagePhase(
+					"push",
+					{
+						label: "deploy dry run (B1)",
+						command: ["bun", "run", "deploy:check"],
+						timeout: 120,
+					},
+					cwd,
+				);
+				await stagePhase(
+					"push",
+					{
+						label: "integration (L3)",
+						command: ["bun", "run", "test:http"],
+						timeout: 180,
+					},
+					cwd,
+				);
+				await stagePhase(
+					"push",
+					{
+						label: "e2e (L4)",
+						command: ["bun", "run", "test:browser"],
+						timeout: 240,
+					},
+					cwd,
+				);
+			},
+		);
 	}
 }
 
 const group = process.argv[2] ?? "";
-const started = performance.now();
 
 try {
 	if (group === "commit") await commit();
 	else if (group === "push") await push();
 	else if (group === "static" || group === "security") {
 		const phases = group === "static" ? staticPhases : securityPhases;
-		for (const phase of phases) await runPhase({ ...phase, ...inside(repo) });
+		for (const phase of phases)
+			await runPhase({ ...phase, cwd: repo, env: gateEnv(repo) });
 	} else
 		throw new GateFailure("Expected gate: commit, push, static, or security.");
 	console.info(
