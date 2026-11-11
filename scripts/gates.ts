@@ -184,6 +184,7 @@ async function push() {
 }
 
 const group = process.argv[2] ?? "";
+const started = performance.now();
 
 try {
 	if (group === "commit") await commit();
@@ -193,6 +194,9 @@ try {
 		for (const phase of phases) await runPhase({ ...phase, ...inside(repo) });
 	} else
 		throw new GateFailure("Expected gate: commit, push, static, or security.");
+	console.info(
+		`Gate: ${group} passed in ${((performance.now() - started) / 1000).toFixed(1)}s`,
+	);
 } catch (error) {
 	if (error instanceof GateFailure) {
 		console.error(`Gate failed: ${error.message}`);
