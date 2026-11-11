@@ -6,7 +6,10 @@ export default defineConfig({
 	workers: 3,
 	forbidOnly: true,
 	retries: 0,
-	reporter: "list",
+	reporter: [
+		["list"],
+		["json", { outputFile: ".test-results/http/report.json" }],
+	],
 	outputDir: ".test-results/http",
 	use: { baseURL: "http://127.0.0.1:17048" },
 	webServer: {
