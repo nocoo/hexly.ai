@@ -146,14 +146,17 @@ feed a local `Z1: Gate`. Run
 | L1 / B1 / S1 / S2 / S3 / G1 / G2 | 27 / 22 / 19 / 15 / 14 / 11 / 8s |
 
 Step split inside `L4: E2E`, from run 43017635366: job setup 12s, Chromium install 17s,
-fixture cache restore 39s, E2E command (prepare, build, 84 journeys) about 150s.
+fixture cache restore 39s, E2E command (prepare, build, 84 journeys) about 150s. In run
+43043457690 the same steps were 21s restore and 9s Chromium install.
 
 Two consecutive L4 runs failed on 2026-11-11 because `playwright install --with-deps`
 could not resolve the Ubuntu mirror; `Z1: Gate` failed both times, which is the blocking
 behaviour the standard asks for. The lane now installs the browser only and a mirror
 outage no longer determines whether the gate can run.
 
-Five consecutive runs on this design measured 241s, 303s, 266s, 259s and 262s. All slot jobs started
+Five green runs with a healthy Chromium install measured 241s, 259s, 262s, 266s and 303s;
+two runs with an unreachable Ubuntu mirror measured 513s and 890s, and one run failed both
+attempts for that reason before the install step was bounded. All slot jobs started
 within three seconds of each other, so the wall clock is job work, not queueing. The
 earlier shared `quality.yml` design measured 538s and 938s on 2026-11-10, with 311–930s of
 queue and three dependency installs plus three fixture hydrations; the native workflow
