@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { GateFailure, runPhase } from "../../scripts/gate-runtime";
+import { capture, GateFailure, runPhase } from "../../scripts/gate-runtime";
 
 describe("gate phases", () => {
 	it("passes a successful command", async () => {
@@ -32,6 +32,16 @@ describe("gate phases", () => {
 		expect(failure).toBeInstanceOf(GateFailure);
 		expect((failure as Error).message).toMatch(/exceeded its 1s timeout/);
 		expect(performance.now() - started).toBeLessThan(10_000);
+	});
+
+	it("captures trimmed stdout", () => {
+		expect(capture(["sh", "-c", "printf ' value \\n'"])).toBe("value");
+	});
+
+	it("fails a capture with a non-zero exit", () => {
+		expect(() => capture(["sh", "-c", "echo boom >&2; exit 3"])).toThrowError(
+			/failed: boom$/,
+		);
 	});
 
 	it("reports a command that cannot start", async () => {
