@@ -15,8 +15,8 @@ Twelve fixed slots, one required check. The canonical slot definitions live in t
 | B1 Build | `bun run build` + `bun run deploy:check` | Real bundle and Wrangler dry run | pre-push, CI | 1.5s / 17s | impl |
 | L1 Unit | `bun run check:focus` + `bun run test:coverage` | Model, Worker status logic, gate helpers; four 95% thresholds | pre-commit, CI | 3.8s / 24s | impl |
 | L2 Runtime | none | No dedicated Workers runtime suite; the D1 binding runs inside L1 via `getPlatformProxy` | — | — | na |
-| L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 16.7s / 93s | impl |
-| L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 59.7s / 258s | impl |
+| L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 18.7s / 118s | impl |
+| L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 62.1s / 246s | impl |
 | P1 Package | none | Nothing is published; root and Video Kit are private | — | — | na |
 | Z1 Gate | local validator over `needs` | Declarations vs executed jobs, SHA equality, blocking jobs | CI | 4s | impl |
 
@@ -115,9 +115,11 @@ Playwright writes `.test-results/<lane>/report.json` on every outcome, so
 `l3-integration-evidence` and `l4-e2e-evidence` upload traces, screenshots and the report
 after green and red runs alike.
 
-Measured CI run [43024319814](https://github.com/nocoo/hexly.ai/actions/runs/43024319814)
-at `e6999349`: wall 266s, queue 2s, critical path `L4: E2E` 258s. Three consecutive runs
-at this design measured 241s, 303s and 266s. Inside the E2E jobs the fixture cache
+Measured CI run [43043457690](https://github.com/nocoo/hexly.ai/actions/runs/43043457690)
+at `55e2d72d`: wall 262s, queue 2s, critical path `L4: E2E` 246s. Five consecutive runs at
+this design measured 241s, 303s, 266s, 259s and 262s. One 890s outlier came from
+`playwright install --with-deps` waiting on an unreachable Ubuntu mirror; the lane now
+installs the browser only, because the hosted image already provides the libraries. Inside the E2E jobs the fixture cache
 restore costs about 39s, Chromium 17s, and the latency is dominated by
 `assets:prepare-test` plus 84 journeys. `quality / Z1: Gate` takes 3–4s. The parallel
 byte verification in `assets:prepare-test` cut the local check from 5.1s to 2.1s.

@@ -135,20 +135,25 @@ feed a local `Z1: Gate`. Run
 [43017635366](https://github.com/nocoo/hexly.ai/actions/runs/43017635366) at
 `844421e3006b38f5108455e3074c7f90deb71d16` is the first full green run.
 
-| Measure, run 43024319814 at `e6999349` | Value |
+| Measure, run 43043457690 at `55e2d72d` | Value |
 | --- | ---: |
-| Wall clock, run start to finish | 266s |
+| Wall clock, run start to finish | 262s |
 | Initial queue | 2s |
-| Critical path (`L4: E2E`) | 258s |
-| `L3: Integration` | 93s |
-| Catalogue and media verification | 102s |
+| Critical path (`L4: E2E`) | 246s |
+| `L3: Integration` | 118s |
+| Catalogue and media verification | 86s |
 | `Z1: Gate` | 3s |
-| L1 / B1 / S1 / S2 / S3 / G1 / G2 | 24 / 21 / 18 / 16 / 9 / 9 / 9s |
+| L1 / B1 / S1 / S2 / S3 / G1 / G2 | 27 / 22 / 19 / 15 / 14 / 11 / 8s |
 
 Step split inside `L4: E2E`, from run 43017635366: job setup 12s, Chromium install 17s,
 fixture cache restore 39s, E2E command (prepare, build, 84 journeys) about 150s.
 
-Three consecutive runs on this design measured 241s, 303s and 266s. All slot jobs started
+Two consecutive L4 runs failed on 2026-11-11 because `playwright install --with-deps`
+could not resolve the Ubuntu mirror; `Z1: Gate` failed both times, which is the blocking
+behaviour the standard asks for. The lane now installs the browser only and a mirror
+outage no longer determines whether the gate can run.
+
+Five consecutive runs on this design measured 241s, 303s, 266s, 259s and 262s. All slot jobs started
 within three seconds of each other, so the wall clock is job work, not queueing. The
 earlier shared `quality.yml` design measured 538s and 938s on 2026-11-10, with 311–930s of
 queue and three dependency installs plus three fixture hydrations; the native workflow
