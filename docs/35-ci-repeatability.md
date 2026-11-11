@@ -7,8 +7,6 @@
 
 ## 2026-09-30 baseline (retired single-job design)
 
-## Baseline
-
 Source: clean `nocoo/hexly.ai` main at
 `86c90f2c546edac871e96399c717082d181c4ebe`. Both CI and Release were active.
 The older divergent checkout was not used or modified.
@@ -137,23 +135,24 @@ feed a local `Z1: Gate`. Run
 [43017635366](https://github.com/nocoo/hexly.ai/actions/runs/43017635366) at
 `844421e3006b38f5108455e3074c7f90deb71d16` is the first full green run.
 
-| Measure | Value |
+| Measure, run 43024319814 at `e6999349` | Value |
 | --- | ---: |
 | Wall clock, run start to finish | 266s |
-| Initial queue | 3s |
+| Initial queue | 2s |
 | Critical path (`L4: E2E`) | 258s |
-| Job setup / Chromium install | 12s / 17s |
-| Fixture cache restore | ~39s |
-| E2E command (prepare, build, 84 journeys) | ~150s |
 | `L3: Integration` | 93s |
-| Catalogue and media verification | 72s |
-| `Z1: Gate` | 4s |
-| S1 / B1 / S2 / L1 / S3 / G1 / G2 | 22 / 17 / 17 / 24 / 9 / 8 / 7s |
+| Catalogue and media verification | 102s |
+| `Z1: Gate` | 3s |
+| L1 / B1 / S1 / S2 / S3 / G1 / G2 | 24 / 21 / 18 / 16 / 9 / 9 / 9s |
+
+Step split inside `L4: E2E`, from run 43017635366: job setup 12s, Chromium install 17s,
+fixture cache restore 39s, E2E command (prepare, build, 84 journeys) about 150s.
 
 Three consecutive runs on this design measured 241s, 303s and 266s. All slot jobs started
-within three seconds of each other, so the wall clock is job work, not queueing. The earlier shared `quality.yml` design measured 538s and
-938s on 2026-11-10, with 311–930s of queue and three dependency installs plus three
-fixture hydrations; the native workflow restored both.
+within three seconds of each other, so the wall clock is job work, not queueing. The
+earlier shared `quality.yml` design measured 538s and 938s on 2026-11-10, with 311–930s of
+queue and three dependency installs plus three fixture hydrations; the native workflow
+restored both.
 
 Remaining cost is dominated by the two E2E lanes: the 5.4 GB fixture cache restore
 (39s) plus immutability checks in `assets:prepare-test`. Both are required by the

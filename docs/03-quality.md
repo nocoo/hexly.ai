@@ -20,11 +20,14 @@ Twelve fixed slots, one required check. The canonical slot definitions live in t
 | P1 Package | none | Nothing is published; root and Video Kit are private | — | — | na |
 | Z1 Gate | local validator over `needs` | Declarations vs executed jobs, SHA equality, blocking jobs | CI | 4s | impl |
 
-Coverage: statements 98.62%, branches 95.31%, functions 99.45%, lines 99.31% over
-`src/model/**`, `worker/status.ts`, `scripts/{gate-refs,gate-runtime,isolation,release-model,test-focus,test-focus-files}.ts`,
-from 312 unit tests. Component views and static catalogue data are not in the
-denominator; L3/L4 exercise them instead. `tests/assets` and `verify-assets.ts` hold the
-byte checks, because L1 must never read hydrated materials or the CDN.
+Coverage: Vitest enforces 95% for statements, branches, functions and lines over
+`src/model/**`, `worker/status.ts`, `scripts/{gate-refs,gate-runtime,isolation,release-model,test-focus,test-focus-files}.ts`.
+The exact figures move with every commit — the current tree measures 98.37 / 95.22 /
+98.91 / 99.31 from 314 tests — and each CI run publishes its own report as the
+`unit-coverage` artifact, which is the number to quote for a given revision. Component
+views and static catalogue data are not in the denominator; L3/L4 exercise them instead.
+`tests/assets` and `verify-assets.ts` hold the byte checks, because L1 must never read
+hydrated materials or the CDN.
 
 ## Git gates
 
@@ -45,22 +48,35 @@ materials are symlinked into the snapshot (they are immutable R2 bytes, never co
 content), and the build receives `RELEASE_REVISION` because the snapshot has no Git
 metadata.
 
-Reusing the installed `node_modules` requires all three: the declared `packageManager`
-Bun version, a Node major inside `engines`, and target `package.json`/`bun.lock`/
-`packages/video-kit/package.json` equal to the installed copies. Otherwise the gate
-installs the target lockfile in isolation, or fails when that cannot be trusted.
+The toolchain check runs against the target manifest (index or pushed commit), so a
+commit that raises `packageManager` or `engines` fails until that toolchain is installed.
+Reusing the installed `node_modules` additionally requires target `package.json`,
+`bun.lock` and `packages/video-kit/package.json` equal to the installed copies; otherwise
+the gate installs the target lockfile in isolation. Workspace packages always resolve to
+the snapshot's own sources — `node_modules/@hexly/video-kit` points at
+`<snapshot>/packages/video-kit` — so uncommitted Video Kit code cannot reach a gate.
+
+Known limitation: manifest equality does not prove the installed tree still matches the
+lockfile, because `bun install --dry-run` always prints a resolution list. Edit a lockfile
+by hand without installing and the reuse path can verify a dependency graph nobody
+installed. Installed-state verification is a todo, not a claim.
+
+Failure evidence: a failing stage keeps `.test-results/` and `coverage/` under
+`.wrangler/gate-evidence/<timestamp>-<sha>` and prints the path before the snapshot is
+removed.
 
 Measured on macOS arm64, Bun 1.4.4, Node 26.13.0:
 
 | Stage | Budget | Cold | Warm | Split |
 | --- | --- | ---: | ---: | --- |
 | pre-commit | 30s target, 60s limit | 8.8s | 8.3s | tracked 0.0s, G1 0.0s, focus 0.0s, S1 2.2s, S2 0.4s, L1 3.8s |
-| pre-push | ~2.5min target, 5min limit | — | 86.1s | prepare 2.1s, checks 83.1s, cleanup 1.1s |
+| pre-push | 150s target, 300s limit | — | 87.2s | prepare 1.7s, checks 84.4s, cleanup 1.1s |
 
-pre-push check split: G2 1.2s, G1 tree 3.7s, G1 new commits 0.0s, isolation 0.0s,
-B1 build 0.5s, B1 dry run 1.0s, L3 16.7s, L4 59.7s. Cold means the Vite/Vitest caches
-were removed; the index snapshot always starts with empty Vite caches, so the two
-readings differ by filesystem warmth only.
+pre-push check split: G2 1.4s, G1 tree 3.7s, G1 new commits 0.0s, fixture bytes 2.2s,
+isolation 0.0s, B1 build 0.6s, B1 dry run 2.0s, L3 15.7s, L4 58.8s. Every phase timeout is
+capped by the stage budget, so a hung phase fails the stage instead of exceeding it. Cold
+means the Vite/Vitest caches were removed; the index snapshot always starts with empty Vite
+caches, so the two readings differ by filesystem warmth only.
 
 Install restores Husky. Checks never auto-fix; never bypass either hook.
 
