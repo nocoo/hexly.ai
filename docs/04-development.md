@@ -86,11 +86,16 @@ bun run verify
 # Focused work
 bun run assets:prepare-test
 bun run gate:commit
+bun run gate:push
 bun run test:http
 bun run test:browser
 ```
 
-Pre-commit runs only staged-file lint and affected unit tests in parallel, without coverage. Dependency/configuration changes trigger all unit tests; documentation and artwork changes with no related tests skip the suite. Full checks remain available above and run in CI. See [commit feedback](03-quality.md#commit-feedback) for selection rules and partially staged files.
+`gate:commit` verifies the Git index snapshot (deep-staged content included) and always
+runs the full static and coverage suite — 8s locally, no changed-only selection. `gate:push`
+verifies each commit named by Git's pre-push stdin, not the working copy, and takes about
+86s. `bun run verify` remains a local sweep of every lane and is not the CI gate. See
+[quality](03-quality.md) for slots, budgets and failure injection.
 
 The package registry on this machine is filtered. Use a temporary allowed mirror for local installation; do not commit mirror URLs or credentials into the lockfile.
 

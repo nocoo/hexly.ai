@@ -33,18 +33,18 @@ This file is the contract; hooks, CI and configuration enforce it. Raise weaker 
 
 ## Stack / Layout
 
-| Component                                      | Choice                                                                                                       |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Runtime / install                              | React 19, Vite 8, TypeScript 7 strict; Bun ≥1.4.0 with frozen lock, Node ≥24; browser/deploy CI Node 26.12.1 |
-| Hosting / state                                | Worker `hexly-ai`, Static Assets, Cron, D1 `hexly-status` via `STATUS_DB`                                    |
-| Static / tests                                 | Biome, Vitest, real Workers HTTP and full Chromium browser journeys, OSV/Gitleaks                            |
-| `src/{data,model,components,styles}/`          | Catalogue, domain logic, accessible views and tokens                                                         |
-| `worker/`, `migrations/`, `scripts/`, `tests/` | Gateway/status, schema, local runners, asset tooling and proof                                               |
-| `packages/video-kit/`, `artwork/`, `docs/`     | Shared designs, versioned source records, profiles and operational receipts                                  |
+| Component                                      | Choice                                                                                                          |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Runtime / install                              | React 19, Vite 8, TypeScript 7 strict; Bun 1.4.4 (`packageManager`) with frozen lock, Node ≥24; CI Node 26.12.1 |
+| Hosting / state                                | Worker `hexly-ai`, Static Assets, Cron, D1 `hexly-status` via `STATUS_DB`                                       |
+| Static / tests                                 | Biome, Vitest, real Workers HTTP and full Chromium browser journeys, OSV/Gitleaks                               |
+| `src/{data,model,components,styles}/`          | Catalogue, domain logic, accessible views and tokens                                                            |
+| `worker/`, `migrations/`, `scripts/`, `tests/` | Gateway/status, schema, local runners, asset tooling and proof                                                  |
+| `packages/video-kit/`, `artwork/`, `docs/`     | Shared designs, versioned source records, profiles and operational receipts                                     |
 
 ## Commands
 
-Run from the root. Run `bun run verify` for the complete local/CI gate within 600 seconds. It prepares public/test-source fixtures once, validates current assets, and builds once. `assets:hydrate` and `assets:check` remain explicit full-history maintenance commands. Ordinary builds use checked-in metadata/CDN materials. Install full Chromium without `--only-shell`; Gitleaks/OSV are required for security gates.
+Run from the root. The commit and push gates are `bun run gate:commit` and `bun run gate:push` (the hooks call exactly those). `bun run verify` is a local maintenance sweep of every lane within 600 seconds; it is not the CI gate, which is the System0 slot workflow. `assets:hydrate` and `assets:check` remain explicit full-history maintenance commands. Ordinary builds use checked-in metadata/CDN materials. Install full Chromium without `--only-shell`; Gitleaks/OSV are required for security gates.
 
 ```bash
 bun install --frozen-lockfile
@@ -67,34 +67,48 @@ bun run video:check
 
 ## Verification
 
-6DQ = unified L1 (absorbing former G1) + L2/L3 + G2 + D1. Status: `enforced`, `planned`, `manual`, `N/A`.
+System0 slots (skill `system0-quality` v1.3.0), implemented natively in
+[`quality-slots.yml`](.github/workflows/quality-slots.yml) with a local `Z1: Gate`. Status:
+`impl`, `na`. Canonical CI check names are `quality / <ID>: <Name>`.
 
-| Dimension                              | Required proof                                                                                                               | Status   | Current enforcement / gap                                                                                                                                                                                                                                                                                                  |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| L1 — complete unified contract         | All four coverage metrics ≥95% plus strict static lanes on an installed index-snapshot hook with proven rejection, under 30s | enforced | `.husky/pre-commit` exports the index with `git checkout-index`, runs `assets:check-tracked`, staged Gitleaks, then `typecheck`, `lint`, and asset-free `test:coverage` in the snapshot (no `assets:prepare-test` or asset-cache link); Vitest enforces four 95% thresholds on `tests/unit` and Video Kit logic tests only |
-| L1 subcheck — logic coverage           | Statements, branches, functions and lines each ≥95%; no skipped/focused tests                                                | enforced | Vitest `test:coverage` gates statements/branches/functions/lines at 95%; pre-commit runs the full suite with coverage, not changed-only selection                                                                                                                                                                          |
-| L2 HTTP                                | Real local HTTP over 100% of API endpoint/method combinations and built documents/assets                                     | planned  | Push/CI HTTP suite checks the built Worker; exhaustive method/surface enforcement still needs verification as routes evolve                                                                                                                                                                                                |
-| L3 UI                                  | Critical desktop/mobile journeys, languages/themes, gallery and accessibility                                                | enforced | Unified required CI verification job; representative Chromium journeys reject focused tests and server reuse                                                                                                                                                                                                               |
-| L1 subcheck — static lanes (former G1) | Strict types and check-only lint, zero errors/warnings                                                                       | enforced | Pre-commit runs full-repo `typecheck` and `lint` inside the index snapshot; CI mirrors the same static lanes                                                                                                                                                                                                               |
-| G2 security                            | Dependency and secret scans; missing scanner fails                                                                           | enforced | Push/CI OSV on frozen lock and Gitleaks history; local hook does not select stdin push ranges                                                                                                                                                                                                                              |
-| D1 isolation                           | Per-run local SQLite, guarded fixtures/reset/cleanup and test marker                                                         | planned  | Static guards reject remote bindings, routes, live probes and real IDs; HTTP/browser now use owned per-run state and a marker checked before migration, seeding and cleanup; complete harness coverage remains planned                                                                                                     |
-| Assets / build                         | Checksums, profiles, immutable sources, real bundle and deploy dry run                                                       | enforced | CI public/test-source byte checks, current-asset and public archive validation, one shared L2/L3 build and `deploy:check`; historical finishing audit is explicit maintenance                                                                                                                                              |
-| Content / release                      | Provenance, source adoption and deployment proof                                                                             | manual   | Identity/maintenance/release runbooks and maintainer verification                                                                                                                                                                                                                                                          |
+| Slot            | Command                                                | Checked object                                                   | Stage                    |         Measured | Status |
+| --------------- | ------------------------------------------------------ | ---------------------------------------------------------------- | ------------------------ | ---------------: | ------ |
+| S1 Types        | `bun run typecheck`                                    | Browser, Worker, Video Kit                                       | pre-commit, CI           |       2.2s / 22s | impl   |
+| S2 Lint         | `bun run lint`                                         | Biome, zero errors and warnings                                  | pre-commit, CI           |       0.4s / 17s | impl   |
+| S3 Workflow     | actionlint, SHA pins, yamllint                         | `.github/workflows/`                                             | CI                       |               9s | impl   |
+| G1 Secrets      | staged scan, pushed tree plus new commits, CI checkout | Secrets                                                          | pre-commit, pre-push, CI | 0.0s / 3.7s / 8s | impl   |
+| G2 Dependencies | OSV on the target lockfile                             | Third-party graph                                                | pre-push, CI             |        1.2s / 7s | impl   |
+| B1 Build        | `bun run build` + `deploy:check`                       | Bundle and Wrangler dry run                                      | pre-push, CI             |       1.5s / 17s | impl   |
+| L1 Unit         | focus guard + `test:coverage`                          | Model, Worker logic, gates; 95% ×4                               | pre-commit, CI           |       3.8s / 24s | impl   |
+| L2 Runtime      | —                                                      | No dedicated Workers runtime suite; D1 binding covered inside L1 | —                        |                — | na     |
+| L3 Integration  | `assets:prepare-test` + `test:http`                    | Built Worker over real HTTP                                      | pre-push, CI             |     16.7s / 126s | impl   |
+| L4 E2E          | `assets:prepare-test` + `test:browser`                 | 84 Chromium journeys                                             | pre-push, CI             |     59.7s / 231s | impl   |
+| P1 Package      | —                                                      | Nothing is published                                             | —                        |                — | na     |
+| Z1 Gate         | local validator over `needs`                           | Declarations, results, SHA equality                              | CI                       |               4s | impl   |
 
-| Hook       | Current behavior                                                                                                                        | Required follow-up                                                      |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| pre-commit | Index snapshot: tracked-material guard, staged Gitleaks, strict types, full Biome, asset-free unit coverage at 95% (≤15s, no hydration) | Proven wall time and rejection fixtures recorded in the implementing PR |
-| pre-push   | L2 HTTP and G2 in parallel against working-tree files/history                                                                           | Validate commits named by stdin push refs, <3min                        |
+Coverage is 98.62% statements, 95.31% branches, 99.45% functions and 99.31% lines over
+`src/model/**`, `worker/status.ts` and the gate helpers, from 312 tests. L1 never hydrates
+materials and never reads `h.no.mt`; asset bytes belong to the catalogue job and
+`tests/assets`.
 
-Install restores Husky. Checks never auto-fix; never bypass commit/branch-push hooks. The owner merged former G1 into L1 on 2026-09-21; the framework keeps the 6DQ name. CI uses pinned shared setup actions and a single 10-minute verification job; immutable fixture caching never bypasses byte checks, manual CI also verifies the deployed SHA at both origins without deploying, and automatic Release accepts only main push CI; deployment pins the shared workflow at `ac635753a869cb85fad1f52aae4ccbd6119f3cae`. Scope, browser clocks, unmodified project-local CLI and failure evidence: [quality guide](docs/03-quality.md).
+| Hook       | Behavior                                                                                                                   | Measured                                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| pre-commit | Git index snapshot: tracked-material guard, staged Gitleaks, focus guard, types, Biome, asset-free coverage                | 8.3s warm, 8.8s cold (target 30s)                |
+| pre-push   | Git stdin OIDs → `git archive` snapshot per pushed commit: G2, G1 tree plus new commits, isolation, build, dry run, L3, L4 | 86.1s (prepare 2.1s, checks 83.1s, cleanup 1.1s) |
+
+CI wall clock is 241s at `844421e3` with a 3s queue and `L4: E2E` on the critical path.
+A ruleset requires `quality / Z1: Gate` on the default branch; the repository admin role
+bypasses it so direct main pushes stay available. `bun run release` still waits for the CI
+run and verifies both production origins. Details and failure-injection evidence:
+[quality guide](docs/03-quality.md).
 
 ## Resources / Isolation
 
 | Lane                | Ports / directory                                   | Boundary                                             |
 | ------------------- | --------------------------------------------------- | ---------------------------------------------------- |
 | Daily Vite / Worker | 7048 / 37048; inspector 38048; `.wrangler/dev`      | Caddy `index.dev.hexly.ai`, local demo observations  |
-| L2 HTTP             | 17048; inspector 18048; unique `hexly-test-*` state | `--env test --local`, fake IDs, no live probes       |
-| L3 browser          | 27048; inspector 28048; unique `hexly-test-*` state | Same local guard; distinct lane and per-run state    |
+| L3 Integration      | 17048; inspector 18048; unique `hexly-test-*` state | `--env test --local`, fake IDs, no live probes       |
+| L4 E2E              | 27048; inspector 28048; unique `hexly-test-*` state | Same local guard; distinct lane and per-run state    |
 | Manual preview      | 37048; inspector 38048; `.wrangler/preview`         | `--env dev --local`; do not overlap the daily Worker |
 
 Required harnesses use fresh per-run persistence, assert local/test context before fixtures, initialize `_test_marker(key,value)` with `env=test`, and verify it before reset/cleanup. Never deploy remote `-test` resources. Keep production credentials and daily-dev state out of automated lanes. Local status clocks remain stable during each browser suite.

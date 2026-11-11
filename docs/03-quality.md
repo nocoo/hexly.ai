@@ -1,175 +1,168 @@
-# Six-dimensional quality system
+# System0 quality system
 
-Run `bun run verify` after installing dependencies, full Chromium, OSV and Gitleaks. Local and CI use this same command with a 600-second total deadline. CI has one 10-minute job, including installation. Each verification stage prints its elapsed time and propagates failures.
+Twelve fixed slots, one required check. The canonical slot definitions live in the
+`system0-quality` skill (v1.3.0); this repository implements them natively in
+[`quality-slots.yml`](../.github/workflows/quality-slots.yml) with a local `Z1: Gate`, so
+`ci.yml` only delegates and branch protection needs `quality / Z1: Gate`.
 
-The 2026-09-25 test audit consolidates repeated project matrices by behavior. Catalogue-wide identity, provenance and metadata checks remain independent of representative UI journeys. This audit does not certify the planned unified L1 or D1 requirements.
+| Slot | Command | Checked object | Stage | Measured | Status |
+| --- | --- | --- | --- | ---: | --- |
+| S1 Types | `bun run typecheck` | Browser, Worker and Video Kit TypeScript 7 lanes | pre-commit, CI | 2.2s / 22s | impl |
+| S2 Lint | `bun run lint` | Biome, check-only, zero errors and warnings | pre-commit, CI | 0.4s / 17s | impl |
+| S3 Workflow | actionlint 1.7.12, immutable `nocoo/base-ci` refs, yamllint 1.38.0 | `.github/workflows/` | CI | 9s | impl |
+| G1 Secrets | `gitleaks protect --staged`; `gitleaks dir`/`git --log-opts`; CI `detect --no-git` | Staged content, pushed tree plus new commits, CI checkout | pre-commit, pre-push, CI | 0.0s / 3.7s / 8s | impl |
+| G2 Dependencies | `osv-scanner scan source --lockfile bun.lock` | Lockfile of the verified revision | pre-push, CI | 1.2s / 7s | impl |
+| B1 Build | `bun run build` + `bun run deploy:check` | Real bundle and Wrangler dry run | pre-push, CI | 1.5s / 17s | impl |
+| L1 Unit | `bun run check:focus` + `bun run test:coverage` | Model, Worker status logic, gate helpers; four 95% thresholds | pre-commit, CI | 3.8s / 24s | impl |
+| L2 Runtime | none | No dedicated Workers runtime suite; the D1 binding runs inside L1 via `getPlatformProxy` | — | — | na |
+| L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 16.7s / 126s | impl |
+| L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 59.7s / 231s | impl |
+| P1 Package | none | Nothing is published; root and Video Kit are private | — | — | na |
+| Z1 Gate | local validator over `needs` | Declarations vs executed jobs, SHA equality, blocking jobs | CI | 4s | impl |
 
-| Dimension | Contract | Command | When |
-| --- | --- | --- | --- |
-| L1 | Unit behaviour for catalogue, filtering, preferences, release policy, and test isolation; at least 95% statements, branches, functions, and lines; **never reads hydrated `public/` materials or CDN bytes** | `bun run test:coverage` | Index snapshot at pre-commit; logic-only, no asset hydration |
-| L1 assets | Inventory SHA-256, pixels, brand/texture/social bytes and screenshot receipts | `bun run test:assets` | CI `verify` after `assets:prepare-test` only |
-| L2 | Real HTTP requests to the built site in the Workers runtime; HTML, assets, and response behavior | `bun run test:http` | Pre-push |
-| L3 | Browser journeys for navigation, search, categories, bilingual preferences, themes, gallery, responsive layout, and accessibility | `bun run test:browser` | CI and manual |
-| G1 | TypeScript strict mode and Biome recommended rules with zero errors or warnings | `bun run check:static` | Merged into unified L1 at pre-commit; full checks in CI |
-| G2 | OSV dependency audit and Gitleaks secret scanning | `bun run check:security` | Pre-push and CI |
-| D1 | Per-run loopback SQLite state, guards before fixture/reset/cleanup, no production bindings or remote services | `bun run check:isolation` | Before integration/browser tests |
+Coverage: statements 98.62%, branches 95.31%, functions 99.45%, lines 99.31% over
+`src/model/**`, `worker/status.ts`, `scripts/{gate-refs,gate-runtime,isolation,release-model,test-focus,test-focus-files}.ts`,
+from 312 unit tests. Component views and static catalogue data are not in the
+denominator; L3/L4 exercise them instead. `tests/assets` and `verify-assets.ts` hold the
+byte checks, because L1 must never read hydrated materials or the CDN.
 
-The D1 quality dimension denotes test isolation. The status feature also uses a
-Cloudflare D1 database, isolated explicitly: development and tests have dedicated
-names, fake local database IDs, no routes or Cron triggers, and modes that disable
-public probes. `check:isolation` rejects inherited production settings and
-unreviewed remote bindings. All CLI fixtures use `--local`.
+## Git gates
 
-The required contract is [AGENTS.md](../AGENTS.md). Current HTTP/browser persistence is fixed per lane, and the runner does not enforce a per-run `_test_marker` before all fixture resets and cleanup. Fresh per-run paths and those guards remain planned; existing local-only checks do not certify the entire isolation requirement. No remote `-test` resources are required.
+Both hooks are thin: `.husky/pre-commit` and `.husky/pre-push` call
+`bun run gate:commit` / `gate:push`, which run `scripts/gates.ts`. One implementation for
+hook and manual use; every phase runs in its own process group with a timeout that kills
+the group and fails the gate.
 
-L1 coverage includes executable model logic, release policy, and isolation rules.
-Status Worker tests exercise bounded probes with fake HTTP responses and real
-Wrangler SQLite D1 with `remoteBindings: false` and `persist: false`. They verify
-deduplication, transactional writes, seven-day query cutoffs, cleanup during
-failures, and exclusion of removed or changed endpoints. A temporary-repository
-test runs the actual release dry-run command and verifies that files and Git refs
-stay unchanged. Thin React presentation components, static catalogue data, and
-build-tool entry points are not included in the model coverage denominator. L3
-validates those views through actual user journeys.
+pre-commit verifies the **Git index**, not the working copy: `assets:check-tracked`
+(`git ls-files`), `gitleaks protect --staged`, `git checkout-index` into a temporary
+directory, then the focus guard, `typecheck`, `lint`, and `test:coverage` inside that
+snapshot. An unstaged fix cannot hide a staged defect.
 
-## Commit feedback
+pre-push reads Git's stdin ref list. Deleted refs (`0…0`) skip the source checks; each
+distinct local OID is exported with `git archive` and verified as a tree, so the object
+that is actually pushed is what gets tested, not the working copy. Hydrated Git-ignored
+materials are symlinked into the snapshot (they are immutable R2 bytes, never commit
+content), and the build receives `RELEASE_REVISION` because the snapshot has no Git
+metadata.
 
-The installed `.husky/pre-commit` hook checks the Git index snapshot, not the unstaged working tree. It runs, in order:
+Reusing the installed `node_modules` requires all three: the declared `packageManager`
+Bun version, a Node major inside `engines`, and target `package.json`/`bun.lock`/
+`packages/video-kit/package.json` equal to the installed copies. Otherwise the gate
+installs the target lockfile in isolation, or fails when that cannot be trusted.
 
-- `assets:check-tracked`: reject material binaries in the Git index, including forced additions. SVG source and the required vendored code archive remain allowed.
-- `gitleaks protect --staged`: secret scan on staged content.
-- `git checkout-index` into a temporary directory with symlinked `node_modules`, then `typecheck`, full-repo `lint`, and asset-free `test:coverage` with Vitest's four 95% thresholds. `check-unit-asset-access.ts` and a fetch guard reject accidental `public/` or `h.no.mt` access in the unit suite.
+Measured on macOS arm64, Bun 1.4.4, Node 26.13.0:
 
-`bun run gate:commit` runs the same L1 commands sequentially on the current working tree (for manual checks). A staged defect must fail even when the working tree already contains a fix. Pre-push still runs L2 and G2; full isolation, asset verification, and L2/L3 checks remain in CI `verify`.
+| Stage | Budget | Cold | Warm | Split |
+| --- | --- | ---: | ---: | --- |
+| pre-commit | 30s target, 60s limit | 8.8s | 8.3s | tracked 0.0s, G1 0.0s, focus 0.0s, S1 2.2s, S2 0.4s, L1 3.8s |
+| pre-push | ~2.5min target, 5min limit | — | 86.1s | prepare 2.1s, checks 83.1s, cleanup 1.1s |
 
-`assets:prepare-test` restores and checks public materials, Video Kit assets, brand/texture source fixtures, current verified source snapshots, the two retained Snail raw images, and the existing screenshot-upload fixture. It validates existing local bytes too. `test:assets` runs under `verify` (after preparation) and keeps the relocated byte, hash and pixel checks out of L1. `verify-assets.ts` checks every current project identity, derivative, social image and provenance relation, plus all public versioned manifests and their referenced bytes. Preparation and build each run once in `verify`; HTTP and browser suites reuse that build. Ordinary production builds require no archive hydration.
+pre-push check split: G2 1.2s, G1 tree 3.7s, G1 new commits 0.0s, isolation 0.0s,
+B1 build 0.5s, B1 dry run 1.0s, L3 16.7s, L4 59.7s. Cold means the Vite/Vitest caches
+were removed; the index snapshot always starts with empty Vite caches, so the two
+readings differ by filesystem warmth only.
 
-`bun run assets:check` remains the full archive maintenance command: it hydrates all inventory rows and also includes unpublished historical finishing passes via `verify-assets.ts --history`. Run it when maintaining historical archives. Routine verification does not redownload historical finishing intermediates.
+Install restores Husky. Checks never auto-fix; never bypass either hook.
 
-## Repeatability and production boundary
+## CI
 
-Tests have distinct responsibilities. `verify-assets.ts` checks every current
-identity and every public versioned manifest's bytes. Unit tests cover model
-branches, trust boundaries and provenance policies; expensive composition/pixel
-checks use generated-animal, physical-object, retained-original, supplied-artwork
-and raster-texture representatives. HTTP checks validate endpoint methods,
-headers, redirects and representative binary/text transport, not a second full
-archive checksum walk. Browser checks cover actual interactions, failures,
-history, keyboard/focus, bilingual content, themes and responsive layout; shared
-controls do not require a Cartesian product of projects, devices and themes.
+`ci.yml` is a single caller job (`quality`, no `name:`) for
+`quality-slots.yml`. The workflow declares `SLOT_STATUS` inline; `Z1: Gate` parses
+`needs`, rejects a missing or unknown slot, an invalid status, an `na`/`todo` without a
+reason, an `impl` slot that did not succeed, any tested SHA that differs from
+`github.sha`, and a blocking job (`Catalogue and media verification`) that did not run or
+reported another SHA. It then writes the slot table with per-job durations and the CI
+wall clock against the 300s/600s budgets.
 
-The browser suite has 72 checks; HTTP has 28. Each route/theme receives one accessibility
-scan; changing only an artwork image does not repeat it. Scans run `axe-core`
-directly in the current page with its default rules. The scanner rejects frames
-instead of silently omitting them. The site has no embedded frames; if that
-changes, explicitly extend the scanner's scope. It does not open blank pages to
-assemble results, avoiding unrelated popup lifecycle failures. Test retries and
-coverage thresholds are unchanged. Historical archive maintenance remains explicit.
+`L2: Runtime` and `P1: Package` keep their canonical names and are skipped through
+`vars.ENABLE_L2_RUNTIME` / `vars.ENABLE_P1_PACKAGE`; flipping a variable without adding
+the real suite fails Z1.
 
-CI caches only `.wrangler/asset-cache`, keyed by inventory and fixture selection.
-Hydration still verifies every cached object's SHA-256 and every selected source's
-size and checksum. A cache miss performs the same bounded CDN downloads. No test
-result, database, generated build or renderer cache is reused. The cache is a
-network optimization, never evidence that a quality gate passed.
+The catalogue and media job is outside the slots but inside Z1's `needs`. It owns
+`assets:check-tracked`, `assets:prepare-test`, `verify-assets.ts`, `social:check`,
+`video:check` and `test:assets`. L1 never hydrates materials or reads `h.no.mt`; a fetch
+guard and a static access scan enforce that.
 
-A successful main **push** CI triggers Release, which independently proves the
-source run and current main SHA, applies D1 migrations, deploys, and verifies both
-`hexly.ai` and `status.hexly.ai`. The production verifier owns bounded propagation
-retries; the workflow does not multiply that retry budget.
+L3 and L4 restore `.wrangler/asset-cache` through `actions/cache`, keyed by
+`docs/assets/inventory.json` and `scripts/prepare-test-assets.ts`. Hydration still
+verifies every cached object's SHA-256, so the cache is a network optimization, never
+evidence. `assets:prepare-test` runs once per E2E job; `verify` runs it once locally.
 
-Manual `CI` dispatch runs the same complete verification and then reads both
-production origins, requiring their version and full revision to match the run.
-It has read-only repository permissions and no deployment secrets. Release accepts
-only push source runs, including its explicit manual source-run input. The
-workflow-run notification after a manual CI has a skipped deployment; it is **not**
-counted as deployment success. Dispatches have distinct concurrency groups, so
-they cannot cancel each other or a main push.
+Playwright writes `.test-results/<lane>/report.json` on every outcome, so
+`l3-integration-evidence` and `l4-e2e-evidence` upload traces, screenshots and the report
+after green and red runs alike.
 
-For a repeatability audit, first push the final revision once and wait for its
-actual Release and both production checks. Freeze that SHA, then dispatch `ci.yml`
-on main ten times **sequentially**, waiting for each complete run. Require distinct
-run IDs, attempt 1, the same full SHA, successful verification and production-read
-steps, and no failed/cancelled run between them. Record API run/job responses and
-URLs under ignored `.wrangler/ci-audit/`. Stop on failure, SHA drift or a wall clock
-over 600 seconds; fixes start a new ten-run sequence. Never rerun only a job,
-replay a tag, or count an omitted check as passing.
+Measured CI run [43017635366](https://github.com/nocoo/hexly.ai/actions/runs/43017635366)
+at `844421e3`: wall 241s, queue 3s, critical path `L4: E2E` 231s (job setup 12s,
+Chromium 17s, fixture cache restore 39s, E2E command 158s). `quality / Z1: Gate` ran 4s.
+This replaced the previous shared `quality.yml` design, which measured 538s and 938s
+across two runs because every slot reinstalled dependencies and rehydrated fixtures
+without a cache.
 
-Report creation-to-completion wall clock (including queue/setup/cleanup), job
-execution and queue separately. The initial push measurement includes the linked
-Release through production verification. The ten dispatch measurements include
-both read-only production checks and **exclude Release**, since no deployment is
-requested. This proves repeatable CI plus production verification, with one actual
-deployment verified separately; it does not claim ten production deployments.
+Branch protection: ruleset `main quality gate` (id 27031290) requires the check
+`quality / Z1: Gate` from GitHub Actions on the default branch, with
+`strict_required_status_checks_policy: false`. The repository admin role keeps
+`bypass_mode: always`, so the documented direct-push-to-main workflow continues to work
+while every other actor and every PR is gated.
 
-See [the quantified baseline](35-ci-repeatability.md).
+## Failure injection
+
+Injected into a `git archive` snapshot of a verified commit, one defect per slot, run
+with the repository toolchain:
+
+| Slot | Injected defect | Exit | Evidence |
+| --- | --- | ---: | --- |
+| S1 | `const broken: number = "text"` | 1 | `TS2322: Type 'string' is not assignable to type 'number'` |
+| S2 | unformatted object literal | 1 | `biome check`: `Found 1 error` |
+| G1 | GitHub token in a tracked text file | 1 | `gitleaks dir`: `leaks found: 2` |
+| G2 | `lodash@4.17.20` in the lockfile | 1 | `Total 1 package affected by 4 known vulnerabilities` |
+| B1 | plugin throwing in `buildStart` | 1 | `Build failed`, `injected build failure` |
+| L3 | HTTP journey expecting status 599 | 1 | `✘ tests/http/site.spec.ts` |
+| L4 | browser journey expecting a missing path | 1 | `✘ … injected › fails` |
+
+Additional proofs: hiding `gitleaks` from `PATH` fails the hook and the G1 phase
+(`could not start`); a phase exceeding its timeout is killed and rejected
+(`tests/unit/gate-runtime.test.ts`); the Z1 validator rejects a failing slot, a skipped
+`impl` slot, an enabled `na` slot, a foreign tested SHA, a `todo` without a reason, and a
+blocking job that did not run; with the working tree deliberately broken, `gate:push`
+still passed on a clean pushed commit and the same broken tree failed locally (exit 1).
+
+## Isolation boundary
+
+D1 in this document means test isolation, not the Cloudflare product. Required harnesses
+create a unique `hexly-test-*` directory, reject inherited `CLOUDFLARE_*`/`R2_*`/`AWS_*`
+credentials, write a test-only Wrangler configuration, create and verify a `_test_marker`
+(`env=test`, unique run id) before migrations, seeding and cleanup, and run in an owned
+process group. Failed or unverified state is retained for inspection. `bun run
+check:isolation` rejects remote bindings, routes, live probes and production database ids.
 
 ## Port boundaries
 
 | Purpose | Port |
-| --- | --- |
+| --- | ---: |
 | Vite development | 7048 |
-| L2 Workers HTTP tests | 17048 |
-| L3 browser tests | 27048 |
-| Manual Workers preview | 37048 |
+| L3 Workers HTTP | 17048 |
+| L4 browser | 27048 |
+| Manual Worker preview | 37048 |
 
-Test runners apply migrations, seed mock status observations, then start and
-terminate their own servers without reusing an existing server. L2 uses
-`.wrangler/http` and L3 uses `.wrangler/browser`; local development uses
-`.wrangler/dev` and manual Worker preview uses `.wrangler/preview`. Separate ports
-and separate SQLite persistence directories keep these environments independent.
+Each lane owns its persistence directory (`.wrangler/dev`, `.wrangler/http`,
+`.wrangler/browser`, `.wrangler/preview`) and its own server lifecycle; runners never
+reuse an existing server. Test Workers poll the immutable fixture trees with a one-second
+base interval, because native watchers exceeded 10,000 descriptors on macOS.
 
-Test Workers poll the immutable asset fixture trees with a one-second base interval. Native
-watchers exceeded 10,000 open descriptors on macOS after the material-texture
-rollout and prevented Workerd from spawning (`EBADF`). The fixture inventory,
-server ownership and tests stay complete; daily development keeps native watching.
+## Release
 
-The unified CI job uses Node.js 26.12.1 and Bun 1.4.0. Browser tests retain three workers, zero retries, and the full Chromium build (`channel: "chromium"`). Install `chromium` without `--only-shell`: the shell previously stalled native popup initialization. New-tab checks wait for navigation and `DOMContentLoaded`.
+`release.yml` proves the source run first: `release-source` (base-ci v2026.13) requires
+the successful `quality / Z1: Gate` check on the proven SHA, then
+`deploy-worker.yml` re-proves the run, applies D1 migrations, deploys and verifies both
+`hexly.ai` and `status.hexly.ai`. The reusable deploy workflow at this SHA still pins an
+older `release-source` composite that ignores the quality check, which is why the
+repository runs the proof itself. Manual CI dispatch also reads both origins without
+deploying; a manual dispatch that skips deployment is not deployment evidence.
 
-Status browser tests pin the browser clock to the fixed SQLite demo's latest sample. The project uses unmodified Wrangler through public CLI commands and `getPlatformProxy`; tests do not execute vendor bundles or reproduce development-proxy transport internals. Sanitized diagnostics at `.wrangler/verification.log`, browser traces and screenshots are uploaded on CI failure for seven days.
+## Not selected
 
-Deployment still requires a successful CI run for the exact trusted main revision, verified by the shared release-source action. Changing test routing does not change this authorization boundary.
-
-Wrangler 4.145.0 selects Miniflare 5.20260930.0-alpha, whose Sharp declaration remains 0.35.4. The root override pins every Sharp installation to 0.35.5 for [GHSA-wq5f-xc86-pv6w](https://osv.dev/GHSA-wq5f-xc86-pv6w); fixing the older image-decoder advisory alone is insufficient. A separate source-map-js override pins 1.2.2 for [GHSA-68fv-2mgg-jv7q](https://osv.dev/GHSA-68fv-2mgg-jv7q). Root and Video Kit retain Sharp 0.35.5. Frozen installation, runtime HTTP checks and OSV scanning verify the resulting graph without suppressing advisories.
-
-## Completion evidence
-
-Verified locally on 2026-09-06 with Bun 1.4.0 and Node.js 26.7.0.
-
-| Dimension | Result |
-| --- | --- |
-| L1 | 36 tests passed. Statements 133/133, branches 138/138, functions 29/29, and lines 119/119: 100% in every measured dimension. |
-| L2 | 10 tests passed against Workers HTTP. Verified the built document, CSP, cached JS/CSS/fonts, share URLs, preference bootstrap, release metadata, PNG/SVG/emoji download checksums, four WebP sizes, sitemap, and favicon. |
-| L3 | 24 browser tests passed in Chromium at desktop and iPhone 13 mobile viewports. Covered search, categories, sort, reset, Chinese content, theme/language persistence, browser history, share links, image decoding, original downloads, palette clipboard actions, unknown selections, and emoji identities. |
-| G1 | Strict TypeScript and Biome completed with zero errors or warnings. |
-| G2 | OSV scanned 238 locked dependencies with no issues. Gitleaks history and staged-change checks reported no leaks. |
-| D1 | Test deployment is disabled; there are no storage or remote bindings. HTTP, browser, and manual-preview runtimes use separate ports and local state directories. |
-
-Automated axe scans reported no WCAG 2.1 A/AA violations in the tested English desktop and Chinese mobile directory/gallery views, in both themes and across all four artwork backgrounds. The checked views have no horizontal page overflow. Browser automation uses Chromium with mobile emulation; it does not establish Safari or Firefox compatibility.
-
-Additional verification:
-
-- All 66 catalogue entries have a profile, bilingual copy, a current identity, palette evidence, and source provenance.
-- `bun run assets:check` verified 66 source checksums and 264 WebP derivatives. The collection contains 43 preserved source images and 23 clearly labeled profile emoji identities.
-- The production Vite build completed. JavaScript is 338.41 kB (93.44 kB gzip); CSS is 33.88 kB (7.85 kB gzip), with two self-hosted fonts.
-- `bun run deploy:check` validated 347 static files using the production configuration and completed without warnings. The production domain is configured as `hexly.ai`.
-- `https://index.dev.hexly.ai` returns the application with trusted TLS. Vite's websocket connected successfully through Caddy at the same domain.
-
-These measurements describe the local v0.1.0 validation. GitHub Actions repeats the quality gates before every production deployment; the release script waits for the matching successful run and verifies public metadata before tagging. Published GitHub Releases link to their remote CI/deployment evidence. Existing artwork and emoji identities remain the phase-one baseline for the later logo-family cleanup.
-
-## Owned HTTP and browser test state
-
-The local test runner creates a unique `hexly-test-*` directory, rejects inherited Cloudflare/R2/AWS credentials, and writes a test-only Wrangler configuration with immutable source paths. It creates and checks `_test_marker` (`env=test`, unique `run_id`) before migrations and seed writes. Test processes run in an owned process group; cleanup stops descendants and rechecks the marker and directory owner. Failed or unverified state is retained for inspection. Daily development and preview state are unchanged. Browser tests remain a separate CI acceptance lane.
-
-## CLI compatibility
-
-Wrangler accepts compatible 4.x updates (`^4.145.0`); `bun.lock` records the
-validated resolution for reproducible frozen installs. There is no vendor patch,
-no workflow version duplicate and no assertion comparing a package range with an
-installed exact version. Dependency updates validate public dev, D1, types and
-deploy dry-run capabilities through the normal gates.
-
-Release invokes `bun run deploy:worker` from the frozen checkout. That script
-applies production D1 migrations before deployment; the shared immutable workflow
-still proves the CI source, rejects stale main, serializes publication and scopes
-credentials to deployment. Build and dry-run run before credentials are supplied.
-This does not migrate the project to cf or change daily local debugging.
+`L2 Runtime` and `P1 Package` are the only unimplemented slots, both `na`. Everything
+listed as `impl` runs in CI on every push to main and every pull request. The site has no
+authentication surface, no published package and no long-lived worker runtime suite, so
+no further slot applies.

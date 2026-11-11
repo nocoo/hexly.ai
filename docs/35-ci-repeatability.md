@@ -1,4 +1,11 @@
-# CI repeatability audit — 2026-09-30
+# CI repeatability audit
+
+> The 2026-09-30 baseline below measured the former single-job CI that ran
+> `bun run verify`. The repository now runs the System0 slot workflow, so those
+> numbers describe a retired design and are kept as history only. The current
+> baseline is in [System0 native CI](#system0-native-ci-2026-11-11).
+
+## 2026-09-30 baseline (retired single-job design)
 
 ## Baseline
 
@@ -122,3 +129,33 @@ gate in 167.5 seconds: 450 unit, 36 real HTTP and 90 browser tests; the four
 coverage metrics remained 99.54%, 98.53%, 100% and 100%. OSV reported no findings
 and Gitleaks scanned 392 commits without leaks. This is prepared local evidence,
 not a replacement for the outstanding ten online runs.
+
+## System0 native CI (2026-11-11)
+
+`ci.yml` now delegates to `quality-slots.yml`; twelve slot jobs plus the catalogue job
+feed a local `Z1: Gate`. Run
+[43017635366](https://github.com/nocoo/hexly.ai/actions/runs/43017635366) at
+`844421e3006b38f5108455e3074c7f90deb71d16` is the first full green run.
+
+| Measure | Value |
+| --- | ---: |
+| Wall clock, run start to finish | 241s |
+| Initial queue | 3s |
+| Critical path (`L4: E2E`) | 231s |
+| Job setup / Chromium install | 12s / 17s |
+| Fixture cache restore | 39s |
+| E2E command (prepare, build, 84 journeys) | 158s |
+| `L3: Integration` | 126s |
+| Catalogue and media verification | 72s |
+| `Z1: Gate` | 4s |
+| S1 / B1 / S2 / L1 / S3 / G1 / G2 | 22 / 17 / 17 / 24 / 9 / 8 / 7s |
+
+All slot jobs started within three seconds of each other, so the 241s wall clock is
+job work, not queueing. The earlier shared `quality.yml` design measured 538s and
+938s on 2026-11-10, with 311–930s of queue and three dependency installs plus three
+fixture hydrations; the native workflow restored both.
+
+Remaining cost is dominated by the two E2E lanes: the 5.4 GB fixture cache restore
+(39s) plus immutability checks in `assets:prepare-test`. Both are required by the
+byte-verification contract. A ten-run series belongs to `Z1: Gate` before any repeatability
+claim is repeated here.
