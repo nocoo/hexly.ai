@@ -3,6 +3,7 @@ import { configDefaults, defineConfig } from "vitest/config";
 export default defineConfig({
 	test: {
 		maxWorkers: 4,
+		allowOnly: false,
 		setupFiles: ["tests/unit/guard-no-assets.ts"],
 		include: [
 			"tests/unit/**/*.test.ts",
@@ -25,8 +26,11 @@ export default defineConfig({
 			provider: "v8",
 			include: [
 				"src/model/**/*.ts",
+				"worker/status.ts",
 				"scripts/isolation.ts",
 				"scripts/release-model.ts",
+				"scripts/test-focus.ts",
+				"scripts/test-focus-files.ts",
 			],
 			exclude: [
 				// Byte, fingerprint and manifest integrity: tests/assets + verify-assets.
