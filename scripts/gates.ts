@@ -69,9 +69,13 @@ async function commit() {
 	});
 
 	assertToolchain(repo);
+	const prepared = performance.now();
 	const snapshot = indexSnapshot(repo);
 	try {
 		await prepareDependencies(repo, snapshot);
+		console.info(
+			`Gate: index snapshot prepared in ${((performance.now() - prepared) / 1000).toFixed(1)}s`,
+		);
 		const cwd = inside(snapshot);
 		for (const phase of [
 			{
@@ -105,11 +109,15 @@ async function push() {
 	}
 	assertToolchain(repo);
 	for (const ref of refs) {
+		const prepared = performance.now();
 		const snapshot = refSnapshot(repo, ref.localOid);
 		try {
 			console.info(`Gate: verifying pushed commit ${ref.localOid}`);
 			await prepareDependencies(repo, snapshot);
 			linkMaterials(repo, snapshot);
+			console.info(
+				`Gate: snapshot prepared in ${((performance.now() - prepared) / 1000).toFixed(1)}s`,
+			);
 			const cwd = {
 				cwd: snapshot,
 				env: { ...gateEnv(snapshot), RELEASE_REVISION: ref.localOid },
@@ -178,7 +186,11 @@ async function push() {
 			])
 				await runPhase({ ...phase, ...cwd });
 		} finally {
+			const cleaned = performance.now();
 			rmSync(snapshot, { recursive: true, force: true });
+			console.info(
+				`Gate: snapshot cleaned in ${((performance.now() - cleaned) / 1000).toFixed(1)}s`,
+			);
 		}
 	}
 }
