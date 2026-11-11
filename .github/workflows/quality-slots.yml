@@ -332,7 +332,11 @@ jobs:
           install-policy: project
 
       - name: Install Chromium
-        run: bunx playwright install --with-deps chromium
+        run: |
+          if ! bunx playwright install --with-deps chromium; then
+            echo "::warning::Ubuntu package mirrors were unreachable; installing Chromium without system packages"
+            bunx playwright install chromium
+          fi
 
       - name: Restore verified asset fixtures
         uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
