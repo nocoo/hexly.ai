@@ -86,15 +86,16 @@ System0 slots (skill `system0-quality` v1.3.0), implemented natively in
 | P1 Package      | —                                                      | Nothing is published                                             | —                        |                — | na     |
 | Z1 Gate         | local validator over `needs`                           | Declarations, results, SHA equality                              | CI                       |               4s | impl   |
 
-Coverage is 98.62% statements, 95.31% branches, 99.45% functions and 99.31% lines over
-`src/model/**`, `worker/status.ts` and the gate helpers, from 312 tests. L1 never hydrates
+Coverage enforces 95% for statements, branches, functions and lines over
+`src/model/**`, `worker/status.ts` and the gate helpers (314 tests; the `unit-coverage`
+artifact of each CI run holds that revision's figures). L1 never hydrates
 materials and never reads `h.no.mt`; asset bytes belong to the catalogue job and
 `tests/assets`.
 
-| Hook       | Behavior                                                                                                                   | Measured                                         |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| pre-commit | Git index snapshot: tracked-material guard, staged Gitleaks, focus guard, types, Biome, asset-free coverage                | 8.3s warm, 8.8s cold (target 30s)                |
-| pre-push   | Git stdin OIDs → `git archive` snapshot per pushed commit: G2, G1 tree plus new commits, isolation, build, dry run, L3, L4 | 86.1s (prepare 2.1s, checks 83.1s, cleanup 1.1s) |
+| Hook       | Behavior                                                                                                                                           | Measured                                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| pre-commit | Git index snapshot: tracked-material guard, staged Gitleaks, focus guard, types, Biome, asset-free coverage                                        | 8.3s warm, 8.8s cold (target 30s)                |
+| pre-push   | Git stdin OIDs → `git archive` snapshot per pushed commit: verified fixture bytes, G2, G1 tree plus new commits, isolation, build, dry run, L3, L4 | 87.2s (prepare 1.7s, checks 84.4s, cleanup 1.1s) |
 
 CI wall clock measured 266s at `e6999349` across a 241–303s band in three consecutive runs, with a 2s queue and `L4: E2E` on the critical path.
 A ruleset requires `quality / Z1: Gate` on the default branch; the repository admin role
