@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"license": "MIT",
-	"packageManager": "bun@1.4.0",
+	"packageManager": "bun@1.4.4",
 	"engines": {
 		"node": ">=24",
 		"bun": ">=1.4.0"
@@ -25,10 +25,9 @@
 		"types": "mkdir -p .wrangler && wrangler types .wrangler/types.d.ts --env \"\" --strict-vars false",
 		"typecheck": "bun run types && tsc --noEmit && tsc --noEmit -p tsconfig.worker.json && bun run --cwd packages/video-kit typecheck",
 		"lint": "biome check --error-on-warnings .",
-		"lint:staged": "biome check --staged --error-on-warnings --no-errors-on-unmatched",
+		"check:focus": "bun scripts/check-test-focus.ts",
 		"format": "biome check --write .",
 		"test": "vitest run",
-		"test:changed": "vitest run --changed",
 		"test:coverage": "bun scripts/check-unit-asset-access.ts && vitest run --coverage",
 		"test:assets": "vitest run --config vitest.config.assets.ts",
 		"test:http": "bun run check:isolation && bun run build && playwright test --config playwright.http.config.ts",
