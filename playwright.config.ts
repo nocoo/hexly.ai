@@ -6,7 +6,10 @@ export default defineConfig({
 	forbidOnly: true,
 	retries: 0,
 	workers: 3,
-	reporter: "list",
+	reporter: [
+		["list"],
+		["json", { outputFile: ".test-results/browser/report.json" }],
+	],
 	outputDir: ".test-results/browser",
 	use: {
 		// Exercise native tabs in the full Chromium browser's current headless mode.

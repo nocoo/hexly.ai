@@ -1,5 +1,5 @@
-# CI slot standard v1 (nocoo/base-ci docs/slots.md): impl S1, S2, S3, G1, G2, B1, L1, L2, L3, Z1 via quality.yml;
-# na L1.5, P1 in slot-status. nocoo/base-ci v2026.12: top-level slot jobs, L2/L3 evidence artifacts.
+# System0 native mode: ci.yml only delegates to the repository's slot workflow,
+# so branch protection needs one check: `quality / Z1: Gate`.
 name: CI
 
 on:
@@ -17,91 +17,4 @@ concurrency:
 
 jobs:
   quality:
-    uses: nocoo/base-ci/.github/workflows/quality.yml@1ea10ecab22b72512399485391603fe03a161016 # v2026.12
-    with:
-      runtime-version: "1.4.0"
-      node-version: "26.12.1"
-      install-policy: project
-      coverage-path: coverage
-      test-command: bun run test:coverage
-      gitleaks-config: .gitleaks.toml
-      build: true
-      build-command: |
-        bun run build
-        bun run deploy:check
-      workflow-lint: true
-      workflow-lint-required-workflow: nocoo/base-ci/.github/workflows/deploy-worker.yml
-      workflow-lint-yamllint: true
-      l2: true
-      l2-command: bun run assets:prepare-test && bun run test:http
-      l3: true
-      l3-browsers: chromium
-      l3-command: bun run assets:prepare-test && bun run test:browser
-      env-json: '{"WRANGLER_SEND_METRICS": "false", "WRANGLER_LOG_PATH": ".wrangler/verification.log", "WRANGLER_LOG_SANITIZE": "true", "CI": "true"}'
-      slot-status: >-
-        {"S1": {"status": "impl"},
-        "S2": {"status": "impl"},
-        "S3": {"status": "impl"},
-        "G1": {"status": "impl"},
-        "G2": {"status": "impl"},
-        "B1": {"status": "impl"},
-        "L1": {"status": "impl"},
-        "L1.5": {"status": "na", "reason": "无 @cloudflare/vitest-pool-workers 专用 Worker 运行时套件；HTTP/浏览器 E2E 由 L2/L3 覆盖"},
-        "L2": {"status": "impl"},
-        "L3": {"status": "impl"},
-        "P1": {"status": "na", "reason": "package.json 为 private，不发布 npm 包"},
-        "Z1": {"status": "impl"}}
-
-  catalogue-and-media:
-    name: Catalogue and media verification
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    env:
-      CI: "true"
-      WRANGLER_LOG_PATH: ".wrangler/verification.log"
-      WRANGLER_LOG_SANITIZE: "true"
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-          fetch-depth: 0
-      - uses: nocoo/base-ci/.github/actions/setup-js@1ea10ecab22b72512399485391603fe03a161016 # v2026.12
-        with:
-          package-manager: bun
-          runtime-version: "1.4.0"
-          node-version: "26.12.1"
-          install-policy: project
-      - name: Cache verified fixture objects
-        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
-        env:
-          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
-        with:
-          path: .wrangler/asset-cache
-          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
-          restore-keys: fixtures-v1-${{ runner.os }}-
-      - name: Verify tracked catalogue assets
-        run: bun run assets:check-tracked
-      - name: Prepare public test fixtures
-        run: bun run assets:prepare-test
-      - name: Verify current asset bytes and profiles
-        run: bun scripts/verify-assets.ts
-      - name: Verify share cards
-        run: bun run social:check
-      - name: Verify Video Kit receipts
-        run: bun run video:check
-      - name: Run asset Vitest lane
-        run: bun run test:assets
-      - name: Verify deployed revision (read only)
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          bun run verify:production
-          DEPLOY_URL=https://status.hexly.ai bun run verify:production
-      - name: Preserve failure evidence
-        if: failure()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: catalogue-verification-failure
-          path: |
-            .test-results/
-            .wrangler/verification.log
-          retention-days: 7
+    uses: ./.github/workflows/quality-slots.yml

@@ -1,0 +1,600 @@
+# System0 quality slots, implemented natively for hexly.ai.
+# Canonical check names are `quality / <ID>: <Name>`; `Z1: Gate` is the only
+# required check. See docs/03-quality.md and nocoo/workflow system0-quality.
+name: Quality Slots
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+env:
+  CI: "true"
+  WRANGLER_SEND_METRICS: "false"
+  WRANGLER_LOG_PATH: ".wrangler/verification.log"
+  WRANGLER_LOG_SANITIZE: "true"
+  SLOT_STATUS: >-
+    {"S1": {"status": "impl"},
+    "S2": {"status": "impl"},
+    "S3": {"status": "impl"},
+    "G1": {"status": "impl"},
+    "G2": {"status": "impl"},
+    "B1": {"status": "impl"},
+    "L1": {"status": "impl"},
+    "L2": {"status": "na", "reason": "No dedicated Workers runtime suite; the D1 binding is exercised inside L1 through getPlatformProxy, and HTTP/browser behaviour runs in L3/L4."},
+    "L3": {"status": "impl"},
+    "L4": {"status": "impl"},
+    "P1": {"status": "na", "reason": "The root package and packages/video-kit are private and never published, so no consumer artifact exists to check."},
+    "Z1": {"status": "impl"}}
+
+jobs:
+  s1-types:
+    name: "S1: Types"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: "S1: Types"
+        run: bun run typecheck
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  s2-lint:
+    name: "S2: Lint"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: "S2: Lint"
+        run: bun run lint
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  s3-workflow:
+    name: "S3: Workflow"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install verified actionlint
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 3 \
+            https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz \
+            -o "$RUNNER_TEMP/actionlint.tar.gz"
+          echo "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  $RUNNER_TEMP/actionlint.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/actionlint.tar.gz" -C "$RUNNER_TEMP" actionlint
+
+      - name: Validate workflow syntax
+        run: '"$RUNNER_TEMP/actionlint"'
+
+      - name: Check immutable base-ci references
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import pathlib, re, sys, yaml
+          files = sorted(pathlib.Path('.github/workflows').glob('*.y*ml'))
+          references = []
+          for path in files:
+              data = yaml.safe_load(path.read_text())
+              for job in data.get('jobs', {}).values():
+                  references.extend(item['uses'] for item in [job, *job.get('steps', [])] if 'uses' in item)
+          for ref in references:
+              if ref.startswith('nocoo/base-ci/') and not re.fullmatch(r'nocoo/base-ci/[^@]+@[a-f0-9]{40}', ref):
+                  sys.exit(f'Shared CI reference must use a full commit SHA: {ref}')
+          print(f'Validated {len(files)} workflows and {len(references)} action references')
+          PY
+
+      - name: Check YAML style
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet 'yamllint==1.38.0'
+          yamllint -d '{extends: default, rules: {line-length: disable, document-start: disable, truthy: disable}}' .github/workflows/*.yml
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  g1-secrets:
+    name: "G1: Secrets"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Install verified security scanners
+        uses: nocoo/base-ci/.github/actions/setup-security-scanners@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+
+      - name: "G1: Secrets"
+        run: gitleaks detect --no-banner --verbose --redact --no-git --config=.gitleaks.toml
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  g2-dependencies:
+    name: "G2: Dependencies"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install verified security scanners
+        uses: nocoo/base-ci/.github/actions/setup-security-scanners@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+
+      - name: "G2: Dependencies"
+        run: osv-scanner scan source --lockfile bun.lock
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  b1-build:
+    name: "B1: Build"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: "B1: Build"
+        run: |
+          bun run build
+          bun run deploy:check
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  l1-unit:
+    name: "L1: Unit"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: "L1: Focus guard"
+        run: bun run check:focus
+
+      - name: "L1: Unit"
+        run: bun run test:coverage
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: unit-coverage
+          path: coverage/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  l2-runtime:
+    name: "L2: Runtime"
+    # No dedicated Workers runtime suite yet; keep the canonical check skipped.
+    if: ${{ vars.ENABLE_L2_RUNTIME == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "L2 is not applicable; see SLOT_STATUS for the reason."
+
+  l3-integration:
+    name: "L3: Integration"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: Restore verified asset fixtures
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        env:
+          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
+        with:
+          path: .wrangler/asset-cache
+          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
+          restore-keys: fixtures-v1-${{ runner.os }}-
+
+      - name: "L3: Integration"
+        run: |
+          bun run assets:prepare-test
+          bun run test:http
+
+      - name: Retain failure evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: l3-integration-evidence
+          path: .test-results/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  l4-e2e:
+    name: "L4: E2E"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: Install Chromium
+        run: bunx playwright install --with-deps chromium
+
+      - name: Restore verified asset fixtures
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        env:
+          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
+        with:
+          path: .wrangler/asset-cache
+          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
+          restore-keys: fixtures-v1-${{ runner.os }}-
+
+      - name: "L4: E2E"
+        run: |
+          bun run assets:prepare-test
+          bun run test:browser
+
+      - name: Retain failure evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: l4-e2e-evidence
+          path: .test-results/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  p1-package:
+    name: "P1: Package"
+    # Nothing is published from this repository; keep the canonical check skipped.
+    if: ${{ vars.ENABLE_P1_PACKAGE == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: echo "P1 is not applicable; see SLOT_STATUS for the reason."
+
+  catalogue-and-media:
+    name: "Catalogue and media verification"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup JS and dependencies
+        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        with:
+          package-manager: bun
+          runtime-version: "1.4.4"
+          node-version: "26.12.1"
+          install-policy: project
+
+      - name: Restore verified asset fixtures
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25  # v5
+        env:
+          SEGMENT_DOWNLOAD_TIMEOUT_MINS: "1"
+        with:
+          path: .wrangler/asset-cache
+          key: fixtures-v1-${{ runner.os }}-${{ hashFiles('docs/assets/inventory.json', 'scripts/prepare-test-assets.ts') }}
+          restore-keys: fixtures-v1-${{ runner.os }}-
+
+      - name: Verify tracked catalogue assets
+        run: bun run assets:check-tracked
+
+      - name: Prepare public test fixtures
+        run: bun run assets:prepare-test
+
+      - name: Verify current asset bytes and profiles
+        run: bun scripts/verify-assets.ts
+
+      - name: Verify share cards
+        run: bun run social:check
+
+      - name: Verify Video Kit receipts
+        run: bun run video:check
+
+      - name: Run asset suite
+        run: bun run test:assets
+
+      - name: Verify deployed revision (read only)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          bun run verify:production
+          DEPLOY_URL=https://status.hexly.ai bun run verify:production
+
+      - name: Retain failure evidence
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: catalogue-verification-failure
+          path: |
+            .test-results/
+            .wrangler/verification.log
+          retention-days: 7
+
+      - name: Record SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  z1-gate:
+    name: "Z1: Gate"
+    if: always()
+    needs:
+      - s1-types
+      - s2-lint
+      - s3-workflow
+      - g1-secrets
+      - g2-dependencies
+      - b1-build
+      - l1-unit
+      - l2-runtime
+      - l3-integration
+      - l4-e2e
+      - p1-package
+      - catalogue-and-media
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify declarations against executed jobs
+        env:
+          NEEDS_JSON: ${{ toJSON(needs) }}
+          EXTRA_JOBS: '{"catalogue-and-media": "Catalogue and media verification"}'
+          EXPECTED_SHA: ${{ github.sha }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, sys, urllib.request
+          from datetime import datetime
+
+          SLOT_JOBS = {
+              "S1": ("s1-types", "S1: Types"),
+              "S2": ("s2-lint", "S2: Lint"),
+              "S3": ("s3-workflow", "S3: Workflow"),
+              "G1": ("g1-secrets", "G1: Secrets"),
+              "G2": ("g2-dependencies", "G2: Dependencies"),
+              "B1": ("b1-build", "B1: Build"),
+              "L1": ("l1-unit", "L1: Unit"),
+              "L2": ("l2-runtime", "L2: Runtime"),
+              "L3": ("l3-integration", "L3: Integration"),
+              "L4": ("l4-e2e", "L4: E2E"),
+              "P1": ("p1-package", "P1: Package"),
+          }
+          VALID = ("impl", "na", "todo")
+
+
+          def fail(message):
+              sys.stderr.write(f"::error::{message}\n")
+              sys.exit(1)
+
+
+          needs = json.loads(os.environ["NEEDS_JSON"])
+          declarations = json.loads(os.environ["SLOT_STATUS"])
+          extra = json.loads(os.environ["EXTRA_JOBS"])
+          expected = os.environ["EXPECTED_SHA"]
+          wanted = [*SLOT_JOBS, "Z1"]
+
+          unknown = sorted(set(declarations) - set(wanted))
+          if unknown:
+              fail(f"SLOT_STATUS declares unknown slots: {', '.join(unknown)}")
+          missing = [slot for slot in wanted if slot not in declarations]
+          if missing:
+              fail(f"SLOT_STATUS is missing: {', '.join(missing)}")
+          for slot in wanted:
+              entry = declarations[slot]
+              status = entry.get("status")
+              if status not in VALID:
+                  fail(f"{slot} has an invalid status '{status}'")
+              if status in ("na", "todo") and not str(entry.get("reason", "")).strip():
+                  fail(f"{slot} is {status} without a reason")
+          if declarations["Z1"]["status"] != "impl":
+              fail("Z1 must be impl")
+          if not [slot for slot in SLOT_JOBS if declarations[slot]["status"] == "impl"]:
+              fail("No slot other than Z1 is implemented")
+
+          rows = []
+          verified = []
+          for slot, (job, name) in SLOT_JOBS.items():
+              state = needs.get(job, {})
+              result = state.get("result", "missing")
+              sha = (state.get("outputs") or {}).get("tested-sha", "")
+              status = declarations[slot]["status"]
+              if status == "impl":
+                  if result != "success":
+                      fail(f"{slot} is impl but the job finished '{result}'")
+                  if not sha:
+                      fail(f"{slot} is impl but reported no tested SHA")
+                  if sha != expected:
+                      fail(f"{slot} tested {sha}, expected {expected}")
+                  verified.append(slot)
+              elif result != "skipped":
+                  fail(f"{slot} is {status} but the job finished '{result}'")
+              rows.append((name, status, declarations[slot].get("reason", ""), result, ""))
+          for job, name in extra.items():
+              state = needs.get(job, {})
+              result = state.get("result", "missing")
+              sha = (state.get("outputs") or {}).get("tested-sha", "")
+              if result != "success":
+                  fail(f"Blocking job '{name}' finished '{result}'")
+              if sha != expected:
+                  fail(f"Blocking job '{name}' tested {sha or 'nothing'}, expected {expected}")
+              rows.append((name, "blocking", "", result, ""))
+
+          durations, wall = {}, ""
+          try:
+              token = os.environ.get("GITHUB_TOKEN", "")
+              repo = os.environ["GITHUB_REPOSITORY"]
+              run_id = os.environ["GITHUB_RUN_ID"]
+              api = os.environ.get("GITHUB_API_URL", "https://api.github.com").rstrip("/")
+              headers = {
+                  "Authorization": f"Bearer {token}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "hexly-z1-gate",
+              }
+
+              def get_json(url):
+                  request = urllib.request.Request(url, headers=headers)
+                  with urllib.request.urlopen(request, timeout=60) as response:
+                      return json.loads(response.read().decode("utf-8"))
+
+              fmt = "%Y-%m-%dT%H:%M:%SZ"
+              payload = get_json(f"{api}/repos/{repo}/actions/runs/{run_id}/jobs?per_page=100")
+              for job in payload.get("jobs", []):
+                  start, end = job.get("started_at"), job.get("completed_at")
+                  if start and end:
+                      durations[job["name"]] = int(
+                          (datetime.strptime(end, fmt) - datetime.strptime(start, fmt)).total_seconds()
+                      )
+              run = get_json(f"{api}/repos/{repo}/actions/runs/{run_id}")
+              if run.get("run_started_at") and run.get("updated_at"):
+                  wall = int(
+                      (
+                          datetime.strptime(run["updated_at"], fmt)
+                          - datetime.strptime(run["run_started_at"], fmt)
+                      ).total_seconds()
+                  )
+          except Exception as exc:  # noqa: BLE001 - the summary is not a gate
+              print(f"Z1 summary: Actions metadata unavailable ({exc})", file=sys.stderr)
+
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as handle:
+                  handle.write("| Slot | Status | Reason | Result | Seconds |\n")
+                  handle.write("| --- | --- | --- | --- | --- |\n")
+                  for name, status, reason, result, _ in rows:
+                      handle.write(
+                          f"| {name} | {status} | {reason or '—'} | {result} | {durations.get(name, '—')} |\n"
+                      )
+                  handle.write(f"| Z1: Gate | impl | — | success | {durations.get('Z1: Gate', '—')} |\n")
+                  if wall != "":
+                      verdict = "within" if wall <= 600 else "over"
+                      handle.write(
+                          f"\nCI wall clock **{wall}s** ({verdict} the 300s target / 600s reference limit).\n"
+                      )
+          print(f"Z1 verified {len(verified)} implemented slots and {len(extra)} blocking job(s) at {expected}")
+          PY
