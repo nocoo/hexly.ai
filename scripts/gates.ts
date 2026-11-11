@@ -49,8 +49,10 @@ const securityPhases = [
 ];
 
 const started = performance.now();
+/** Budgets apply per verified object: one index, or one pushed commit. */
+let stageStarted = started;
 const remaining = (stage: number) =>
-	Math.floor(stage - (performance.now() - started) / 1000);
+	Math.floor(stage - (performance.now() - stageStarted) / 1000);
 
 /** Every phase is capped by the stage budget, so a hung phase cannot outlive it. */
 async function stagePhase(
@@ -66,6 +68,10 @@ async function stagePhase(
 	await runPhase({
 		...phase,
 		timeout: Math.min(phase.timeout, left),
+		label:
+			phase.timeout > left
+				? `${phase.label} (capped to the ${left}s left in the ${budget[stage]}s stage budget)`
+				: phase.label,
 		...(cwd ?? {}),
 	});
 }
@@ -201,6 +207,7 @@ async function push() {
 		return;
 	}
 	for (const ref of refs) {
+		stageStarted = performance.now();
 		const commits = pushedCommits(ref);
 		const prepared = performance.now();
 		await withSnapshot(
@@ -230,7 +237,7 @@ async function push() {
 						],
 						timeout: 120,
 					},
-					{ cwd: repo, env: gateEnv(snapshot) },
+					cwd,
 				);
 				await stagePhase(
 					"push",

@@ -652,3 +652,55 @@ fields. Inventory and R2 publication then froze v1.0.0. The correction leaves
 v1.0.0 immutable, records the actual inspection in the source reviews and
 publishes v1.0.1 for the catalogue. Run the texture package tests before an
 export becomes immutable: approval alone is not a complete receipt.
+
+## 2026-11-11: A symlinked scope made the gate verify the wrong sources
+
+The first native-CI revision verified the index and pushed-tree snapshots by
+symlinking the worktree's `node_modules`. `node_modules/@hexly` is itself a
+directory symlink, so the snapshot's `@hexly/video-kit` link resolved back into
+the worktree and B1/L3/L4 built uncommitted Video Kit sources while the gate
+reported a clean pushed tree. Review caught it; a probe with
+`import.meta.resolve` inside a real snapshot now proves workspace packages
+resolve to the snapshot. Whenever a gate borrows installed artifacts, assert
+where the borrowed package actually resolves, not just that the path exists.
+
+## 2026-11-11: "0 commits scanned" is not a pass
+
+The pushed-range secret scan passed a bogus range: git refused it, gitleaks
+logged the error, scanned nothing and exited 0. The gate must first resolve the
+remote object and count the range itself, and fail when either step cannot be
+done. Read every tool's exit code together with its scanned-object count; a
+scan that reports nothing may have scanned nothing.
+
+## 2026-11-11: Both formatters wanted the same comment spacing
+
+Biome's YAML formatter and yamllint's `comments` rule demand opposite spacing
+before a trailing `#` comment, so the first `quality-slots.yml` failed S2 while
+satisfying S3. Workflow YAML is now excluded from Biome, because the shared CI
+standard (full SHA plus `  # v2026.13`) and yamllint agree. Two gates must not
+own the same file without agreeing on the rule.
+
+## 2026-11-11: An injected failure only proves what its reason says
+
+Three failure-injection probes initially "passed" with exit 0: an allowlisted
+AWS example key, an exported Vite plugin never added to the plugin list, and a
+Playwright test using `describe` without importing it. Each was rewritten until
+the failure came from the intended mechanism, and the reason was read from the
+log rather than inferred from the exit code. When proving a gate blocks, quote
+the tool's own message and confirm the failing test name.
+
+## 2026-11-11: An unreferenced pool verifies nothing
+
+`pool(files, 8, operation)` in `assets:prepare-test` passed the concurrency as
+the callback: `Array.from({length: NaN})` spawned no workers, so the check
+finished in 82ms and reported success without digesting a single file. The call
+now passes arguments in order and fails when the verified count differs from the
+selected count. Any parallel loop needs a completed-work assertion; a faster
+duration is not evidence, and a corrupt fixture copy must still be rejected.
+
+## 2026-11-11: Transient Cloudflare D1 binding errors are not a code defect
+
+Two Release runs failed with `binding STATUS_DB of type d1 failed to generate
+[code: 10021]`; the same SHA deployed on re-run. Confirm the mechanism by
+re-running the failed job once before changing code, and report the retry as
+infrastructure evidence rather than a fix.

@@ -28,6 +28,10 @@ The exact figures move with every commit — the current tree measures 98.37 / 9
 views and static catalogue data are not in the denominator; L3/L4 exercise them instead.
 `tests/assets` and `verify-assets.ts` hold the byte checks, because L1 must never read
 hydrated materials or the CDN.
+`scripts/gate-workspace.ts` stays outside the denominator: it is Git and filesystem
+orchestration (snapshots, links, installs), covered by the hooks themselves, by the
+`workspacePackages` canary and by the injected-failure runs below rather than by unit
+assertions.
 
 ## Git gates
 
@@ -43,7 +47,10 @@ snapshot. An unstaged fix cannot hide a staged defect.
 
 pre-push reads Git's stdin ref list. Deleted refs (`0…0`) skip the source checks; each
 distinct local OID is exported with `git archive` and verified as a tree, so the object
-that is actually pushed is what gets tested, not the working copy. Hydrated Git-ignored
+that is actually pushed is what gets tested, not the working copy. A remote OID that the
+clone does not have blocks the push instead of scanning nothing: run `git fetch` and push
+again. Budgets apply per verified object — one index for pre-commit, one pushed commit for
+pre-push — and each phase is capped by what is left of it. Hydrated Git-ignored
 materials are symlinked into the snapshot (they are immutable R2 bytes, never commit
 content), and the build receives `RELEASE_REVISION` because the snapshot has no Git
 metadata.

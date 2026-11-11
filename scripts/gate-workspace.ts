@@ -178,6 +178,7 @@ export async function prepareDependencies(repo: string, snapshot: string) {
 	console.info(
 		"Gate: target manifests differ from the worktree install; installing the target lockfile in isolation",
 	);
+	mkdirSync(join(snapshot, ".cache"), { recursive: true });
 	await runPhase({
 		label: "dependency install (isolated)",
 		command: ["bun", "install", "--frozen-lockfile", "--ignore-scripts"],
