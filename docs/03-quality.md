@@ -15,8 +15,8 @@ Twelve fixed slots, one required check. The canonical slot definitions live in t
 | B1 Build | `bun run build` + `bun run deploy:check` | Real bundle and Wrangler dry run | pre-push, CI | 1.5s / 17s | impl |
 | L1 Unit | `bun run check:focus` + `bun run test:coverage` | Model, Worker status logic, gate helpers; four 95% thresholds | pre-commit, CI | 3.8s / 24s | impl |
 | L2 Runtime | none | No dedicated Workers runtime suite; the D1 binding runs inside L1 via `getPlatformProxy` | — | — | na |
-| L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 16.7s / 126s | impl |
-| L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 59.7s / 231s | impl |
+| L3 Integration | `bun run assets:prepare-test` + `bun run test:http` | Built Worker over real HTTP on an owned per-run D1 | pre-push, CI | 16.7s / 93s | impl |
+| L4 E2E | `bun run assets:prepare-test` + `bun run test:browser` | 84 Chromium journeys, desktop and touch | pre-push, CI | 59.7s / 258s | impl |
 | P1 Package | none | Nothing is published; root and Video Kit are private | — | — | na |
 | Z1 Gate | local validator over `needs` | Declarations vs executed jobs, SHA equality, blocking jobs | CI | 4s | impl |
 
@@ -92,12 +92,15 @@ Playwright writes `.test-results/<lane>/report.json` on every outcome, so
 `l3-integration-evidence` and `l4-e2e-evidence` upload traces, screenshots and the report
 after green and red runs alike.
 
-Measured CI run [43017635366](https://github.com/nocoo/hexly.ai/actions/runs/43017635366)
-at `844421e3`: wall 241s, queue 3s, critical path `L4: E2E` 231s (job setup 12s,
-Chromium 17s, fixture cache restore 39s, E2E command 158s). `quality / Z1: Gate` ran 4s.
-This replaced the previous shared `quality.yml` design, which measured 538s and 938s
-across two runs because every slot reinstalled dependencies and rehydrated fixtures
-without a cache.
+Measured CI run [43024319814](https://github.com/nocoo/hexly.ai/actions/runs/43024319814)
+at `e6999349`: wall 266s, queue 2s, critical path `L4: E2E` 258s. Three consecutive runs
+at this design measured 241s, 303s and 266s. Inside the E2E jobs the fixture cache
+restore costs about 39s, Chromium 17s, and the latency is dominated by
+`assets:prepare-test` plus 84 journeys. `quality / Z1: Gate` takes 3–4s. The parallel
+byte verification in `assets:prepare-test` cut the local check from 5.1s to 2.1s.
+
+This replaced the shared `quality.yml` design, which measured 538s and 938s on 2026-11-10
+because every slot reinstalled dependencies and rehydrated fixtures without a cache.
 
 Branch protection: ruleset `main quality gate` (id 27031290) requires the check
 `quality / Z1: Gate` from GitHub Actions on the default branch, with
