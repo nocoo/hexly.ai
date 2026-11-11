@@ -28,6 +28,7 @@ export default defineConfig({
 				"src/model/**/*.ts",
 				"worker/status.ts",
 				"scripts/gate-refs.ts",
+				"scripts/gate-runtime.ts",
 				"scripts/isolation.ts",
 				"scripts/release-model.ts",
 				"scripts/test-focus.ts",
