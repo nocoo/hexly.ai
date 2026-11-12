@@ -704,3 +704,15 @@ Two Release runs failed with `binding STATUS_DB of type d1 failed to generate
 [code: 10021]`; the same SHA deployed on re-run. Confirm the mechanism by
 re-running the failed job once before changing code, and report the retry as
 infrastructure evidence rather than a fix.
+
+## 2026-11-11: Probe a reusable workflow before dropping your own guard
+
+Adopting base-ci v2026.14 meant deleting the repository's own release proof, which
+assumed the upstream `deploy-worker` would enforce `quality / Z1: Gate`. Reading the
+workflow showed it forwarding the requirement correctly, but its internal
+`release-source` pin named `e215ac80`, a commit absent from `nocoo/base-ci`. A two-job
+probe on a throwaway branch proved the difference in one run: the pinned ref failed with
+`Unable to resolve action … unable to find version`, while the tag SHA resolved and only
+failed later on deliberately mismatched proof inputs. Trust the run, not the source
+reading: a forwarded input is worthless if the action it forwards to cannot be fetched,
+and the fallback stays until the upstream artifact actually executes.
