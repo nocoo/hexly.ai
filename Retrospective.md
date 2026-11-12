@@ -4,7 +4,9 @@
 
 The three local review pages linked their untouched generations through workshop-relative paths. The isolated preview loaded those files, but the complete Chromium suite rejected the links because native downloads must use the canonical `/logos/family/.../raw.png` archive. No site or material was published. The pages now use the canonical family master, raw and prompt paths; the exact-byte download journey remains a required gate.
 
-A successful local image decode or HEAD check does not verify the real download handler. For new studies, run the shared static-review browser journey and compare the downloaded bytes before publication.
+The first correction still failed because earlier texture links also ended in `/raw.png`, so the test selected a texture instead of the logo. Texture downloads now use their versioned `texture-light.png` and `texture-dark.png` paths, distinct from the canonical family raw link. The focused download journey and all 84 Chromium journeys subsequently passed.
+
+A successful local image decode or HEAD check does not verify the real download handler. For new studies, inspect the entire document's matching links, run the shared static-review browser journey and compare the downloaded bytes before publication.
 
 ## 2026-11-12: Texture approvals omitted required inspection fields
 
