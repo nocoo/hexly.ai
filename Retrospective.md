@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-12: New review pages used the workshop raw URL
+
+The three local review pages linked their untouched generations through workshop-relative paths. The isolated preview loaded those files, but the complete Chromium suite rejected the links because native downloads must use the canonical `/logos/family/.../raw.png` archive. No site or material was published. The pages now use the canonical family master, raw and prompt paths; the exact-byte download journey remains a required gate.
+
+A successful local image decode or HEAD check does not verify the real download handler. For new studies, run the shared static-review browser journey and compare the downloaded bytes before publication.
+
 ## 2026-11-12: Texture approvals omitted required inspection fields
 
 The three onboarding texture pairs were approved and exported before their review records included the existing full-canvas, no-crop and no-repeat inspection fields. The focused asset test caught all three exports. No bytes were published. The owner decisions and raw images remain unchanged; the incomplete local exports were retained as diagnostics and the packs were re-exported under new versions after recording the actual inspection.
