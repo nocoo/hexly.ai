@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-12: R2 release check met expired interactive authentication
+
+During the authorized onboarding release, Wrangler reported that its existing login had expired and could not refresh in a non-interactive process. No R2 write or remote publication was attempted. The diagnostic shell also passed the failed command's empty output to a JSON parser, adding an unrelated parse error to the clear authentication failure.
+
+Stop after an expired or rejected credential and request an interactive login; never retry the same credential. Check the command's exit status before parsing its output, and do not print authentication values.
+
 ## 2026-11-12: Historical recovery probing did not stop on access errors
 
 During release preparation, full-history hydration found a pre-existing missing Chamelo source archive whose public URL returned 404. A subsequent custom parallel HEAD audit used a different client and continued scheduling requests after receiving 403 responses. Those results do not prove the individual objects are absent; no remote object was written, modified or deleted. An earlier read-only recovery scan also assumed a Python 3.11 hashing helper that the machine's Python lacked, and stopped before modifying files.
