@@ -1,0 +1,33 @@
+{
+	"project": "hexly-ai",
+	"study": "2026-11-13-02",
+	"sourceRevision": "a321c9d9696d059229408608be3dea4c64fd6dab",
+	"correctsStudy": "2026-11-13-01",
+	"references": [
+		{
+			"index": 1,
+			"path": "references/owner-reference.jpg",
+			"originalPath": "/Users/nocoo/Downloads/grok-image-e9d02219-2c05-4d42-a07f-e9641fab4c20.jpg",
+			"sha256": "9f5b61e9db102cf58433eff5cf7f1766fac7ffa7d2f63edbadc54e53e9856d2f",
+			"width": 1408,
+			"height": 1408,
+			"role": "Authoritative geometry, material, cream outer-frame color and beige left-insert color. Change only the orange right insert to brick red; remove the wordmark and recenter the emblem.",
+			"provenance": "Byte-identical copy of the owner's Downloads reference, preserved in study 2026-11-13-01; the original generation model is not independently verified.",
+			"authorization": "Owner explicitly requested this selective recolor after rejecting the all-red candidate; no third-party license or publication permission is inferred."
+		}
+	],
+	"colorEvidence": {
+		"value": "#bf5c3c",
+		"appliesTo": "Only the orange right-hand interior piece in reference image 1",
+		"preserve": ["Cream/ivory outer frame", "Sand-beige left interior piece"],
+		"sourcePath": "src/styles/base.css",
+		"selector": ":root --accent",
+		"sha256": "1ddc87b75945ff9f0e0e95e3d26bd8a9aafeb6b6849f2c103e3cea87c1c86315"
+	},
+	"generator": {
+		"path": "artwork/logo-family/tools/generate_azure.py",
+		"sha256": "5f16ebeb5dd1cec2d8a398106181431b79101795ca464ad8fb3ef157dcec9173",
+		"model": "gpt-image-2.5-sunburst"
+	},
+	"storage": "Ignored local reference and native output; no upload, derivative or adoption before the exact-byte raw review."
+}

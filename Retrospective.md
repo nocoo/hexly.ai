@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-13: Reference recolor erased the contrasting palette
+
+The owner requested a new Hexly emblem based on a supplied cream/beige/orange reference, retaining its material and using the site's brick red. The first prompt incorrectly applied brick red to the frame and both internal pieces, removing the reference's contrasting palette. The owner rejected the exact raw result. It remains archived without extraction, adoption or publication.
+
+For reference-guided recolors, define the changed region and the preserved regions separately before generation. Here only the orange right-hand insert changes to brick red; the cream frame and sand-beige left insert retain their original colors, lighting and material. Use the original reference again rather than the rejected monochromatic result, and keep the raw-review checkpoint.
+
 ## 2026-11-12: Frozen texture licenses retained an extra final blank line
 
 The texture exporter appended a newline to the already newline-terminated root license. After the new immutable packages were uploaded and hash-verified, `git diff --check` reported a trailing blank line in each of the three generated license files. Their bytes match the published manifests and receipts, so they were not rewritten or overwritten. The repository's configured lint, tests and commit gates remain unchanged.
