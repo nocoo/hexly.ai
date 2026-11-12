@@ -42,7 +42,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -70,7 +70,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -151,7 +151,7 @@ jobs:
           fetch-depth: 1
 
       - name: Install verified security scanners
-        uses: nocoo/base-ci/.github/actions/setup-security-scanners@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-security-scanners@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
 
       - name: "G1: Secrets"
         run: gitleaks detect --no-banner --verbose --redact --no-git --config=.gitleaks.toml
@@ -174,7 +174,7 @@ jobs:
           persist-credentials: false
 
       - name: Install verified security scanners
-        uses: nocoo/base-ci/.github/actions/setup-security-scanners@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-security-scanners@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
 
       - name: "G2: Dependencies"
         run: osv-scanner scan source --lockfile bun.lock
@@ -197,7 +197,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -227,7 +227,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -276,7 +276,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -324,7 +324,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
@@ -388,7 +388,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup JS and dependencies
-        uses: nocoo/base-ci/.github/actions/setup-js@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/setup-js@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           package-manager: bun
           runtime-version: "1.4.4"
