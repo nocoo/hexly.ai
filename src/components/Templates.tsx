@@ -16,6 +16,7 @@ import {
 	videoManifest,
 } from "../model/videos";
 import { Icon } from "./Icon";
+import { SiteIdentity } from "./SiteIdentity";
 import { TemplateExamples } from "./TemplateExamples";
 import "../styles/videos.css";
 
@@ -309,6 +310,7 @@ export function Templates({
 				</>
 			) : (
 				<>
+					<SiteIdentity title={t.identity} />
 					<section className="video-intro">
 						<div>
 							<p className="eyebrow">

@@ -22,3 +22,7 @@ The explicit owner request is a scoped exception to the usual shadow/glow-free s
 The four environment-selection unit cases pass. The production build passes. Actual Chromium checks cover desktop English and mobile Chinese in both themes, plus a pure-white specimen. `inspection/header-review.json` records computed filters, unchanged image SHA-256, 36 px geometry, no horizontal overflow and no page errors. Before/after screenshots were visually inspected, and Chrome was opened at `https://index.dev.hexly.ai/`.
 
 This is a local header presentation review, not a finished all-surface brand kit. Full HTTP/browser suites and historical asset hydration were not run. No R2 upload, push, release or third-party source adoption was performed.
+
+## Owner decision
+
+The owner rejected this shadow treatment and asked to remove it. Its CSS rules and preview-only class were deleted rather than retained behind a toggle. Continue visual-identity development with the unchanged shadow-free artwork in the new top section of `/templates`, using a square mark above the standard Hexly wordmark. This study remains historical evidence only.

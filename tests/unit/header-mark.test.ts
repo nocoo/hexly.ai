@@ -20,12 +20,17 @@ it.each([
 		vi.stubEnv("VITE_LOCAL_MATERIALS", local);
 		expect(BrandMark().props).toMatchObject({
 			src: source,
-			width: "36",
-			height: "36",
-			className:
-				source === candidate ? "brand-mark brand-mark-preview" : "brand-mark",
+			width: 36,
+			height: 36,
+			className: "brand-mark",
 			alt: "",
 			"aria-hidden": "true",
+		});
+		expect(BrandMark({ size: 256 }).props).toMatchObject({
+			src: source.replace(/transparent-\d+\.png$/, "transparent-512.png"),
+			width: 256,
+			height: 256,
+			className: "brand-mark",
 		});
 	},
 );

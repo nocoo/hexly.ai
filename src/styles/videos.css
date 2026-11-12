@@ -1,6 +1,38 @@
 .videos-page {
 	padding-top: 38px;
 }
+.site-identity {
+	margin-bottom: 36px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid var(--line);
+}
+.site-identity h2 {
+	margin: 0 0 16px;
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: -0.8px;
+}
+.site-identity-lockup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	margin: 0;
+}
+.site-identity-logo {
+	width: clamp(192px, 24vw, 256px);
+	aspect-ratio: 1;
+}
+.site-identity-logo .brand-mark {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.site-identity-wordmark {
+	font-size: clamp(34px, 4vw, 42px);
+	letter-spacing: -0.0435em;
+	line-height: 1.2;
+}
 .video-examples-jump {
 	display: inline-flex;
 	align-items: center;
@@ -235,7 +267,7 @@
 	border: 1px solid transparent;
 	border-radius: 7px;
 	background: none;
-	color: var(--muted);
+	color: color-mix(in srgb, var(--muted) 90%, var(--ink));
 	font-size: 12px;
 }
 .video-theme-switch button .icon {

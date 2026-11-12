@@ -99,21 +99,22 @@ export function Icon({
 	);
 }
 
-export function BrandMark() {
+export function BrandMark({ size = 36 }: { size?: number } = {}) {
 	const preview =
 		import.meta.env.DEV &&
 		import.meta.env.MODE === "development" &&
 		import.meta.env.VITE_LOCAL_MATERIALS === "1";
-	const source = preview
-		? "/logos/family/hexly-ai/2026-11-13-02/02/transparent-128.png"
-		: `${identity.family.root}/transparent-64.png`;
+	const root = preview
+		? "/logos/family/hexly-ai/2026-11-13-02/02"
+		: identity.family.root;
+	const pixels = size > 64 ? 512 : preview ? 128 : 64;
 	return (
 		<img
-			className={preview ? "brand-mark brand-mark-preview" : "brand-mark"}
-			src={assetUrl(source)}
+			className="brand-mark"
+			src={assetUrl(`${root}/transparent-${pixels}.png`)}
 			alt=""
-			width="36"
-			height="36"
+			width={size}
+			height={size}
 			aria-hidden="true"
 		/>
 	);

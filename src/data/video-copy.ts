@@ -1,5 +1,6 @@
 export const videoCopy = {
 	en: {
+		identity: "Visual identity",
 		eyebrow: "THE HEXLY VIDEO KIT",
 		title: "A story.",
 		titleEnd: "Your composition.",
@@ -57,6 +58,7 @@ export const videoCopy = {
 		examplesManifest: "Standard files & provenance",
 	},
 	zh: {
+		identity: "视觉识别",
 		eyebrow: "HEXLY 视频设计工具箱",
 		title: "一个故事，",
 		titleEnd: "由你编排。",
