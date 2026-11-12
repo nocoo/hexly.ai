@@ -20,6 +20,26 @@ import { siteSocialImage } from "../src/model/discovery";
 
 const projects = readProjects();
 for (const project of projects) {
+	const statusEvidence = project.source.statusEvidence;
+	if (statusEvidence) {
+		const bytes = await readFile(statusEvidence.path);
+		const evidence = JSON.parse(bytes.toString()) as {
+			owner: string;
+			repositories: { name: string; revision: string; archived: boolean }[];
+		};
+		const repository = evidence.repositories.find(
+			(item) => item.name === project.repo,
+		);
+		if (
+			createHash("sha256").update(bytes).digest("hex") !==
+				statusEvidence.sha256 ||
+			project.repository !==
+				`https://github.com/${evidence.owner}/${project.repo}` ||
+			repository?.revision !== project.source.repositoryRevision ||
+			repository?.archived !== project.archived
+		)
+			throw new Error(`Repository status evidence differs: ${project.id}`);
+	}
 	const snapshot = project.overview?.verified.snapshot;
 	if (snapshot) {
 		const evidence = await readFile(snapshot.path);

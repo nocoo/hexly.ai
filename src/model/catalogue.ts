@@ -3,6 +3,8 @@ import projectOrder from "../data/project-order.json" with { type: "json" };
 import type { Category, Locale, Project, ProjectCategory } from "./project";
 
 export function projectReadmePath(project: Project, locale: Locale): string {
+	const explicit = project.overview?.verified.readmes?.[locale];
+	if (explicit) return explicit;
 	const paths = project.overview?.verified.sources.includes("README.zh-CN.md")
 		? { en: "README.md", zh: "README.zh-CN.md" }
 		: { en: "docs/README.en.md", zh: "README.md" };
@@ -350,6 +352,16 @@ export function catalogueProblems(projects: Project[]): string[] {
 				problems.push(`Incomplete project overview: ${project.id}`);
 			const verified = overview?.verified;
 			const localSnapshot = verified?.snapshot;
+			const readmes = verified?.readmes;
+			if (
+				readmes !== undefined &&
+				(!hasTranslations(readmes) ||
+					!Array.isArray(verified.sources) ||
+					![readmes.en, readmes.zh].every((path) =>
+						verified.sources.includes(path),
+					))
+			)
+				problems.push(`Invalid README evidence: ${project.id}`);
 			const validRevision =
 				verified?.revision === null
 					? /^docs\/sources\/[a-z0-9-]+\.json$/.test(
@@ -372,6 +384,14 @@ export function catalogueProblems(projects: Project[]): string[] {
 		}
 		if (!projectCategories.includes(project.category))
 			problems.push(`Invalid category: ${project.id}`);
+		const statusEvidence = project.source.statusEvidence;
+		if (
+			statusEvidence !== undefined &&
+			(!statusEvidence ||
+				!/^docs\/sources\/[a-z0-9-]+\.json$/.test(statusEvidence.path) ||
+				!/^[a-f0-9]{64}$/.test(statusEvidence.sha256))
+		)
+			problems.push(`Invalid repository status evidence: ${project.id}`);
 		for (const url of [project.repository, project.website].filter(
 			(value) => value !== null,
 		)) {
