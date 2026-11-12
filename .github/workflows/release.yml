@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Prove the source run and its Z1 check
         id: source
-        uses: nocoo/base-ci/.github/actions/release-source@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
+        uses: nocoo/base-ci/.github/actions/release-source@9ec93ad01928da34fdd0a4c7274b23b2c7d77bb6  # v2026.14
         with:
           github-token: ${{ github.token }}
           expected-workflow-path: ".github/workflows/ci.yml"
@@ -47,6 +47,9 @@ jobs:
   deploy:
     name: Deploy
     needs: proof
+    # v2026.14's deploy-worker.yml pins release-source@e215ac80, a commit that does
+    # not exist in nocoo/base-ci, so the job cannot resolve its action. Until upstream
+    # republishes, deploy stays on v2026.13 and the proof job above enforces Z1.
     uses: nocoo/base-ci/.github/workflows/deploy-worker.yml@e4598815d171e2281f77f27a4800ff8fc2537f3f  # v2026.13
     with:
       expected-workflow-path: ".github/workflows/ci.yml"
