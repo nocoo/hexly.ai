@@ -190,14 +190,20 @@ The v2026.13 defect — the deploy workflow ignoring the quality requirement bec
 pinned an older composite — is fixed upstream in v2026.14, which forwards
 `required-quality-check` (default `quality / Z1: Gate`) and `require-quality-check`.
 
-The deploy step still calls `deploy-worker.yml` at v2026.13 because that v2026.14 workflow
+The deploy step still calls `deploy-worker.yml` at v2026.13 because the v2026.14 workflow
 pins the internal `release-source` composite to `e215ac80`, a commit that does not exist
 in `nocoo/base-ci`: a probe job run fails with
 `Unable to resolve action nocoo/base-ci@e215ac80…`, while the composite at the tag SHA
-resolves and runs normally. Calling it would break every deployment before any proof ran, so the
-repository keeps the v2026.13 deploy workflow and enforces Z1 itself with the v2026.14
-composite. Manual CI dispatch also reads both origins without deploying; a manual dispatch
-that skips deployment is not deployment evidence.
+resolves and runs normally. Calling it would break every deployment before any proof ran,
+so the repository keeps the v2026.13 deploy workflow and enforces Z1 itself with the
+v2026.14 composite.
+
+Revisit the deploy pin when `nocoo/base-ci` republishes `deploy-worker.yml` with a
+resolvable internal pin: move the `uses:` line to that tag SHA and delete this repository's
+proof job once the reusable workflow enforces the check itself. Moving the pin without that
+recheck reproduces the failure the probe recorded. Manual CI dispatch also reads both
+origins without deploying; a manual dispatch that skips deployment is not deployment
+evidence.
 
 ## Not selected
 
