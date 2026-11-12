@@ -1,0 +1,300 @@
+{
+	"createdAt": "2026-11-12T23:02:02.020Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "0199655bb6a6fe470be6df7c0291066b65ceca12090f052f27df02aaa11b4db8",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Inspected native SVG silhouette extraction with antialiased alpha; opaque source RGB is unchanged. Enclosed holes and exterior shadows follow the recorded contour, not a global white threshold. Background and new shadows remain separate.",
+	"settings": {
+		"project": "hexly-ai",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"foregroundMask": {
+				"path": "foreground-mask.svg",
+				"sha256": "0bc2ae92c967922cdc7f842406a4d013a624d67bc7c4f0cc5e9f935accf3bf2b",
+				"description": "Native exterior contour sampled every two rows from the warm object boundary (red minus blue above 14); inspected Bezier cutouts remove both internal backdrop shadows. Preserve all pale solid material and native opaque RGB."
+			}
+		},
+		"background": {
+			"base": "#ffffff",
+			"light": "#ffffff",
+			"shade": "#ffffff",
+			"motif": "#ffffff",
+			"grainAmplitude": 0,
+			"grainSeed": 20261113,
+			"motifOpacity": 0,
+			"highlightOpacity": 0,
+			"ribbonOpacity": 0,
+			"pattern": {
+				"name": "Extraction-only white specimen",
+				"description": "Neutral diagnostic output from the shared finisher, not a selected campaign background. Only transparent exports are used for the header review.",
+				"layers": [
+					{
+						"d": "M0 0h1024v1024H0z",
+						"tone": "motif"
+					}
+				]
+			}
+		},
+		"shadows": [],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"minimumClearanceAt2048": 128,
+			"note": "Retain native placement, proportions and opaque RGB; no crop, recolor or extra masking."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2487285,
+		"foregroundPixels": 1707019,
+		"softEdgePixels": 8991,
+		"opaqueRgbPreserved": true
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 282,
+			"top": 157,
+			"right": 1760,
+			"bottom": 1853
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 157.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1294,
+			"sha256": "68b943c45fb475a3374f92abbe9c5cf20c73d8d91219285068b23660b5907c4d"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 589,
+			"sha256": "5beaeb74f7f654da9133ad8e2bbd9a6795030246add0d5d83531edb182db280f"
+		},
+		{
+			"path": "foreground-mask.svg",
+			"bytes": 24384,
+			"sha256": "0bc2ae92c967922cdc7f842406a4d013a624d67bc7c4f0cc5e9f935accf3bf2b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2600545,
+			"sha256": "5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 47516,
+			"sha256": "7cd4604f9255a5cbe9fff37bf8c2fe48666e9c094c02678c5851cdf0e281080e"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 472,
+			"sha256": "013acbcb649543271910035792046922af7a5828bd522ac6e79cda374e062cfb"
+		},
+		{
+			"path": "background.png",
+			"bytes": 16898,
+			"sha256": "b519d4118d8fd6368e631405989a04954c580e8a700641adaac5e3a7509d9d32"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-2048.png",
+			"bytes": 2600545,
+			"sha256": "5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5"
+		},
+		{
+			"path": "exports/hexly-ai-icon-2048.png",
+			"bytes": 2233974,
+			"sha256": "3d7ddb518ea2bda13a8c76a6d863d01fefcb55920f42c4ff99120f08a3415dbf"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-2048.png",
+			"bytes": 2246545,
+			"sha256": "0e5e0dc90493772a89198debc48f51f3ea64e48fef5e46d7e36c4bb25751ea21"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-1024.png",
+			"bytes": 574213,
+			"sha256": "4aa73056d2ded37aa8a71d4e28acb23f43301d97d76db6c96624693d9a892f63"
+		},
+		{
+			"path": "exports/hexly-ai-icon-1024.png",
+			"bytes": 566200,
+			"sha256": "8edf000e5d1def4d4cc9f759d61909ae85c22b123666a48eaedf0f89dff388cc"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-1024.png",
+			"bytes": 575412,
+			"sha256": "cd777b815b5515ad54c379aae3955c6b16b04ff42b916196c80051ad6c9c4973"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-512.png",
+			"bytes": 146433,
+			"sha256": "b184257cb910840b44ab52b40b5a19bacbb828f40a6bc5b3cdaa17c1eab53e31"
+		},
+		{
+			"path": "exports/hexly-ai-icon-512.png",
+			"bytes": 142130,
+			"sha256": "c7440b7c327b5f234589cb32a49a2dba15790abda6288cd71f335553e3fbd7ec"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-512.png",
+			"bytes": 146144,
+			"sha256": "fe14eb6e2b1a62732d57867d45b76968fb0661e01f54dae2e138457f47fffb73"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-256.png",
+			"bytes": 44850,
+			"sha256": "bea6dcc4bec992f1dbf47f0675b34d3fe2aecd858ca73d890451fff2d8490354"
+		},
+		{
+			"path": "exports/hexly-ai-icon-256.png",
+			"bytes": 41648,
+			"sha256": "b07338cef704aea20b9ac885df39d5069f55975b17cf55717797e41e324f861d"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-256.png",
+			"bytes": 43614,
+			"sha256": "015b11ecc48095646b263227cf7cf71cebf413a319ad2075276287fef4c37e3c"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-128.png",
+			"bytes": 15129,
+			"sha256": "4cb3798e7c7e9cb216bf0d19f8d8544efcba365b63efaa016c10c92306a8d744"
+		},
+		{
+			"path": "exports/hexly-ai-icon-128.png",
+			"bytes": 13276,
+			"sha256": "27794fef8593a48d3931e2df29b4cfa5d070e417126cad67e440702ec0aff25d"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-128.png",
+			"bytes": 14244,
+			"sha256": "db2aa5ac5d901967953dd927152d2ef9bec0d796a6deb5fead959c391f47de58"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-64.png",
+			"bytes": 5437,
+			"sha256": "b925da8361cf2d7bb0bdb6a40d062d48d22892cdba2bb34ce5e055d17c20d5ac"
+		},
+		{
+			"path": "exports/hexly-ai-icon-64.png",
+			"bytes": 4390,
+			"sha256": "bdbcc908e83023adc617afd2c3ddb992f59aa4a525a3b020e61fe40e328f7845"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-64.png",
+			"bytes": 4722,
+			"sha256": "ccbc9482f3525795a33c605b66663dce9d412e5ab39551624a7e71380289f91d"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-48.png",
+			"bytes": 3642,
+			"sha256": "6baa7b2931537efdea316a67fabd7406c535007a6985779f12a1a370066807ab"
+		},
+		{
+			"path": "exports/hexly-ai-icon-48.png",
+			"bytes": 2997,
+			"sha256": "6e2914c4341a346dd704ee452c73ae62d73761b6ec34992f60dc7e84b0339803"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-48.png",
+			"bytes": 3303,
+			"sha256": "ea8fa50d34c869bf49a9cf08ff63375ca022aa9f125db213ba261f81d24bbb8e"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-32.png",
+			"bytes": 2031,
+			"sha256": "3ca52bf46958ef96615d8b8b6f9077d2c59ea05aaecd20e516c9add569172850"
+		},
+		{
+			"path": "exports/hexly-ai-icon-32.png",
+			"bytes": 1634,
+			"sha256": "a518d0e410d262386d9a865c4acd236732931afaf6cdcdb28d5c59d16b5e662f"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-32.png",
+			"bytes": 1773,
+			"sha256": "9289ffa358f07432ed5204623d45a44c3190868ae3c68e772e08d9188ab1c144"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-24.png",
+			"bytes": 1350,
+			"sha256": "ebcecdadabf0b62fe1860afdf6d6ac5ebdcae6eeb61550187d197e8fee8a658b"
+		},
+		{
+			"path": "exports/hexly-ai-icon-24.png",
+			"bytes": 1088,
+			"sha256": "87e5a366f05383a40773574fc3c89e0252ce66b7e8b6e7c49da3f2388e773d0d"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-24.png",
+			"bytes": 1224,
+			"sha256": "6f8b3a0042a6da767208d896de617a30e0ccbca04d5276b1d73fc16423946fd5"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-16.png",
+			"bytes": 732,
+			"sha256": "b8943d8e01e8d5c4160b55b5c9691e6538216c4f59e896a06540cbac24a95ddd"
+		},
+		{
+			"path": "exports/hexly-ai-icon-16.png",
+			"bytes": 615,
+			"sha256": "faf4407f758f0b6ef48be8491a6f4bf19d3ece33545df8ca49ba48d42db40f6a"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-16.png",
+			"bytes": 675,
+			"sha256": "68bf3d65f3e42d3abce5cc651d4731891287f943fe7cacc951b86657119d0b15"
+		},
+		{
+			"path": "exports/hexly-ai-white-2048.png",
+			"bytes": 2093381,
+			"sha256": "877b96f2df43a4e08a5f77426feb57598b352f3e2e0aa7c439cfb97b9c2b576d"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 539159,
+			"sha256": "4625ae1e06130a01ad7acb5f797a73da1e998ff9037f6bbe27cfad828605bfdb"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 549144,
+			"sha256": "f3efb007194bafc34fdc029292ccee6e621fd71a3330751aa539c14a0b4eadba"
+		}
+	]
+}

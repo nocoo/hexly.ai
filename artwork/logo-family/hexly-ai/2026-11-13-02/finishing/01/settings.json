@@ -1,0 +1,84 @@
+{
+	"project": "hexly-ai",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 236,
+		"maximumChroma": 12,
+		"backgroundRgb": [252, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 350,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [[1100, 600], [930, 1400]],
+		"foregroundRegionsAt2048": [
+			{
+				"name": "Opaque cream upper-left frame",
+				"points": [[390, 550], [970, 210], [990, 300], [430, 630]]
+			},
+			{
+				"name": "Opaque cream upper-right frame",
+				"points": [[1070, 210], [1670, 560], [1600, 630], [1080, 330]]
+			},
+			{
+				"name": "Opaque cream left frame",
+				"points": [[310, 680], [415, 680], [415, 1350], [310, 1350]]
+			},
+			{
+				"name": "Opaque cream right frame",
+				"points": [[1630, 680], [1720, 680], [1720, 1350], [1630, 1350]]
+			},
+			{
+				"name": "Opaque cream lower-left frame",
+				"points": [[400, 1440], [1010, 1770], [970, 1810], [380, 1490]]
+			},
+			{
+				"name": "Opaque cream lower-right frame",
+				"points": [[1080, 1760], [1650, 1440], [1690, 1490], [1100, 1810]]
+			},
+			{
+				"name": "Opaque sand-beige left insert",
+				"points": [
+					[500, 700],
+					[950, 410],
+					[950, 650],
+					[720, 790],
+					[720, 1010],
+					[1000, 930],
+					[1150, 1020],
+					[800, 1230],
+					[800, 1480],
+					[500, 1320]
+				]
+			}
+		],
+		"calibrationNote": "Native corner/background mode is RGB 252,252,252. Cream and beige surfaces are warm rather than neutral white; protect their interiors explicitly. Seed only the two actual open channels, never pale solid material. Inspect dark-surface edges before using the transparent header derivative."
+	},
+	"background": {
+		"base": "#ffffff",
+		"light": "#ffffff",
+		"shade": "#ffffff",
+		"motif": "#ffffff",
+		"grainAmplitude": 0,
+		"grainSeed": 20261113,
+		"motifOpacity": 0,
+		"highlightOpacity": 0,
+		"ribbonOpacity": 0,
+		"pattern": {
+			"name": "Extraction-only white specimen",
+			"description": "Neutral diagnostic output from the shared finisher, not a selected campaign background. Only transparent exports are used for the header review.",
+			"layers": [{ "d": "M0 0h1024v1024H0z", "tone": "motif" }]
+		}
+	},
+	"shadows": [],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Retain native placement, proportions and opaque RGB; no crop, recolor or extra masking."
+	}
+}

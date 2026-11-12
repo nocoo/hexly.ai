@@ -1,0 +1,499 @@
+{
+	"createdAt": "2026-11-12T22:59:33.619Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "0199655bb6a6fe470be6df7c0291066b65ceca12090f052f27df02aaa11b4db8",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "hexly-ai",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 236,
+			"maximumChroma": 12,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 350,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [
+				[
+					1100,
+					600
+				],
+				[
+					930,
+					1400
+				]
+			],
+			"foregroundRegionsAt2048": [
+				{
+					"name": "Opaque cream upper-left frame",
+					"points": [
+						[
+							390,
+							550
+						],
+						[
+							970,
+							210
+						],
+						[
+							990,
+							300
+						],
+						[
+							430,
+							630
+						]
+					]
+				},
+				{
+					"name": "Opaque cream upper-right frame",
+					"points": [
+						[
+							1070,
+							210
+						],
+						[
+							1670,
+							560
+						],
+						[
+							1600,
+							630
+						],
+						[
+							1080,
+							330
+						]
+					]
+				},
+				{
+					"name": "Opaque cream left frame",
+					"points": [
+						[
+							310,
+							680
+						],
+						[
+							415,
+							680
+						],
+						[
+							415,
+							1350
+						],
+						[
+							310,
+							1350
+						]
+					]
+				},
+				{
+					"name": "Opaque cream right frame",
+					"points": [
+						[
+							1630,
+							680
+						],
+						[
+							1720,
+							680
+						],
+						[
+							1720,
+							1350
+						],
+						[
+							1630,
+							1350
+						]
+					]
+				},
+				{
+					"name": "Opaque cream lower-left frame",
+					"points": [
+						[
+							400,
+							1440
+						],
+						[
+							1010,
+							1770
+						],
+						[
+							970,
+							1810
+						],
+						[
+							380,
+							1490
+						]
+					]
+				},
+				{
+					"name": "Opaque cream lower-right frame",
+					"points": [
+						[
+							1080,
+							1760
+						],
+						[
+							1650,
+							1440
+						],
+						[
+							1690,
+							1490
+						],
+						[
+							1100,
+							1810
+						]
+					]
+				},
+				{
+					"name": "Opaque sand-beige left insert",
+					"points": [
+						[
+							500,
+							700
+						],
+						[
+							950,
+							410
+						],
+						[
+							950,
+							650
+						],
+						[
+							720,
+							790
+						],
+						[
+							720,
+							1010
+						],
+						[
+							1000,
+							930
+						],
+						[
+							1150,
+							1020
+						],
+						[
+							800,
+							1230
+						],
+						[
+							800,
+							1480
+						],
+						[
+							500,
+							1320
+						]
+					]
+				}
+			],
+			"calibrationNote": "Native corner/background mode is RGB 252,252,252. Cream and beige surfaces are warm rather than neutral white; protect their interiors explicitly. Seed only the two actual open channels, never pale solid material. Inspect dark-surface edges before using the transparent header derivative."
+		},
+		"background": {
+			"base": "#ffffff",
+			"light": "#ffffff",
+			"shade": "#ffffff",
+			"motif": "#ffffff",
+			"grainAmplitude": 0,
+			"grainSeed": 20261113,
+			"motifOpacity": 0,
+			"highlightOpacity": 0,
+			"ribbonOpacity": 0,
+			"pattern": {
+				"name": "Extraction-only white specimen",
+				"description": "Neutral diagnostic output from the shared finisher, not a selected campaign background. Only transparent exports are used for the header review.",
+				"layers": [
+					{
+						"d": "M0 0h1024v1024H0z",
+						"tone": "motif"
+					}
+				]
+			}
+		},
+		"shadows": [],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"minimumClearanceAt2048": 128,
+			"note": "Retain native placement, proportions and opaque RGB; no crop, recolor or extra masking."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2411473,
+		"foregroundPixels": 1782831,
+		"softEdgePixels": 9181,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 281,
+			"top": 157,
+			"right": 1760,
+			"bottom": 1853
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 281,
+			"top": 157,
+			"right": 1760,
+			"bottom": 1853
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 157.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2535,
+			"sha256": "289f376253b0073cc3868b4c46ccd1e1f0ea0edddc1eac1ab2f6b161ecf92818"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 589,
+			"sha256": "5beaeb74f7f654da9133ad8e2bbd9a6795030246add0d5d83531edb182db280f"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "matte-protection-mask.png",
+			"bytes": 61959,
+			"sha256": "1925b5933e409609caaf1adf294ded998f8977c38abc18bbe37b7375f51c5de3"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 2365886,
+			"sha256": "7ffe5f897e19a0ee9467136cd5a672f8ec431fc071288f15eef4adbc2ef39d60"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 55348,
+			"sha256": "c26346c3b740744a1a2c3ca0ade778db581bf90cdb489ea7aff213700dd6f34c"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 472,
+			"sha256": "013acbcb649543271910035792046922af7a5828bd522ac6e79cda374e062cfb"
+		},
+		{
+			"path": "background.png",
+			"bytes": 16898,
+			"sha256": "b519d4118d8fd6368e631405989a04954c580e8a700641adaac5e3a7509d9d32"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-2048.png",
+			"bytes": 2365886,
+			"sha256": "7ffe5f897e19a0ee9467136cd5a672f8ec431fc071288f15eef4adbc2ef39d60"
+		},
+		{
+			"path": "exports/hexly-ai-icon-2048.png",
+			"bytes": 2359922,
+			"sha256": "6997557bad0958719f71287a6cfd3f1b572f62e1d6e8bf106f9c2f3df724b440"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-2048.png",
+			"bytes": 2371334,
+			"sha256": "eaebc4e695c87bef6a19e64b8de7bf6f0f51dfee4806dd2cd7c8f86e6cab4c87"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-1024.png",
+			"bytes": 624248,
+			"sha256": "c4c895e6e54d170a23ab80c55e21aa725412980e7f750344bbea8afd3667c708"
+		},
+		{
+			"path": "exports/hexly-ai-icon-1024.png",
+			"bytes": 608044,
+			"sha256": "77d7ccca784ed776fea31ce5ec5e245b8637bec02ecb860e13c84d7ecac2aa56"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-1024.png",
+			"bytes": 617266,
+			"sha256": "d4f8526023584470a7d3347a834a5795e093082197071b835c541a8dffb8072b"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-512.png",
+			"bytes": 159982,
+			"sha256": "cbceb696889f9460c4ae0441600815cf40639d21ee77832df6048289f889a296"
+		},
+		{
+			"path": "exports/hexly-ai-icon-512.png",
+			"bytes": 153170,
+			"sha256": "42f344adb6f1e7d386d2792eb00ecd431b3a729106a087a2da50ce13c4e62301"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-512.png",
+			"bytes": 157302,
+			"sha256": "e64947f3cc3a0115129340d116312bad9cd54e1944932adc025c5db87996fb59"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-256.png",
+			"bytes": 48757,
+			"sha256": "994b5e7bdde001c23add493b9d870b9e2c1fb495ed4f9dd050afcc53759f6615"
+		},
+		{
+			"path": "exports/hexly-ai-icon-256.png",
+			"bytes": 44642,
+			"sha256": "d0d72e2dd0555ad515f70a045aa7c49fb7aefd99f21e3c342d3128fb1a4cbf58"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-256.png",
+			"bytes": 46611,
+			"sha256": "7a9759c24b98f3e470798546d24b9954bfff133ce1f6d0bb208fca6443e09dde"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-128.png",
+			"bytes": 15981,
+			"sha256": "118dd27d19f703dad5f141728d83b31cc45b1ecfcecb9304bba49beff0d53c0d"
+		},
+		{
+			"path": "exports/hexly-ai-icon-128.png",
+			"bytes": 13980,
+			"sha256": "bf5392ee3781e8695537de7bcd1a179865d8554ab320faa13876903973fccdf7"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-128.png",
+			"bytes": 14936,
+			"sha256": "70675fa878cae425e816ff3b872dea0042b78bd028237cbd628779bf7a0beb1b"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-64.png",
+			"bytes": 5533,
+			"sha256": "9367d560c731c8a7f8640482b7dd6a3e857948676c9ee857292e8164b7c08069"
+		},
+		{
+			"path": "exports/hexly-ai-icon-64.png",
+			"bytes": 4582,
+			"sha256": "bca07c20fa2796518682f299056d2b8c7606a8b53055ad1218ff6387c31dc5bb"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-64.png",
+			"bytes": 4925,
+			"sha256": "88338fecd26eed67f714f7b7a82b9415b221b3b03824d32f444b79e161ae84c7"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-48.png",
+			"bytes": 3632,
+			"sha256": "8514885a4c4d352f515f5ebc54e8c8af86682edd6a673487aa9c8c4dd850bdac"
+		},
+		{
+			"path": "exports/hexly-ai-icon-48.png",
+			"bytes": 3073,
+			"sha256": "9c7b2f4337e106e33c455577de17f4b3630683bad2dcbaeab48756cf039c5b07"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-48.png",
+			"bytes": 3379,
+			"sha256": "ede426de67a2aa5f5de38ccfcd2c07e987d0079d782936d2caade63d973c5cfa"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-32.png",
+			"bytes": 2037,
+			"sha256": "6c69d6c20ecf8122cfcf531bd2586ab5225b639d4cbb3f2e6b2cfbd4fdae396f"
+		},
+		{
+			"path": "exports/hexly-ai-icon-32.png",
+			"bytes": 1667,
+			"sha256": "8aa0bbea5278e531b512143de73f7c2e6bf0e9ef365d0c9466557d5961475a8b"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-32.png",
+			"bytes": 1808,
+			"sha256": "4ee9f571d5e2f07cd506a5badfddab715bebb561589c3ddd359fc7cb82f1b365"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-24.png",
+			"bytes": 1354,
+			"sha256": "f9ef6564cfc50d248e42bc2931261cdcb35fa04fc7bed4453b2bf1e8be4ddba3"
+		},
+		{
+			"path": "exports/hexly-ai-icon-24.png",
+			"bytes": 1119,
+			"sha256": "d706b67caa7a96458c60bb9310aa62e98a917d8adb05759d0ce2babbf555a43b"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-24.png",
+			"bytes": 1254,
+			"sha256": "612d481dfe5a4a424dc6298ca46ac3acdf07251a14e251848ab8738209c50574"
+		},
+		{
+			"path": "exports/hexly-ai-transparent-16.png",
+			"bytes": 751,
+			"sha256": "cffe39ad1400b0c6768234cd2599724688f29fe759331fe0fe5283098a1e73bd"
+		},
+		{
+			"path": "exports/hexly-ai-icon-16.png",
+			"bytes": 616,
+			"sha256": "00d7b1fd9f1914470054aa77e7646954d24881bf2cfbc38e9ab92fa9e4e7380c"
+		},
+		{
+			"path": "exports/hexly-ai-rounded-16.png",
+			"bytes": 680,
+			"sha256": "71984f081fafe0452cb582391f0ae5b9e86e4270cfa9ced60640720dddca7f9b"
+		},
+		{
+			"path": "exports/hexly-ai-white-2048.png",
+			"bytes": 2208890,
+			"sha256": "ca0e7e188934ced759e29ede6ae00270ea3b61eae6413802ccf3614be9db270d"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 576418,
+			"sha256": "fa80fb9664dd8041312b3b221ea4ab002961f05eec59a80a10caaca26520f07b"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 596214,
+			"sha256": "0152fb29ffc5157c600453dae88c9196d2cf53f25437f26711fb26e350ac5330"
+		}
+	]
+}

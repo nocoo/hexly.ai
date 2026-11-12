@@ -1,0 +1,37 @@
+{
+	"project": "hexly-ai",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"foregroundMask": {
+			"path": "foreground-mask.svg",
+			"sha256": "0bc2ae92c967922cdc7f842406a4d013a624d67bc7c4f0cc5e9f935accf3bf2b",
+			"description": "Native exterior contour sampled every two rows from the warm object boundary (red minus blue above 14); inspected Bezier cutouts remove both internal backdrop shadows. Preserve all pale solid material and native opaque RGB."
+		}
+	},
+	"background": {
+		"base": "#ffffff",
+		"light": "#ffffff",
+		"shade": "#ffffff",
+		"motif": "#ffffff",
+		"grainAmplitude": 0,
+		"grainSeed": 20261113,
+		"motifOpacity": 0,
+		"highlightOpacity": 0,
+		"ribbonOpacity": 0,
+		"pattern": {
+			"name": "Extraction-only white specimen",
+			"description": "Neutral diagnostic output from the shared finisher, not a selected campaign background. Only transparent exports are used for the header review.",
+			"layers": [{ "d": "M0 0h1024v1024H0z", "tone": "motif" }]
+		}
+	},
+	"shadows": [],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Retain native placement, proportions and opaque RGB; no crop, recolor or extra masking."
+	}
+}

@@ -100,10 +100,16 @@ export function Icon({
 }
 
 export function BrandMark() {
+	const source =
+		import.meta.env.DEV &&
+		import.meta.env.MODE === "development" &&
+		import.meta.env.VITE_LOCAL_MATERIALS === "1"
+			? "/logos/family/hexly-ai/2026-11-13-02/02/transparent-128.png"
+			: `${identity.family.root}/transparent-64.png`;
 	return (
 		<img
 			className="brand-mark"
-			src={assetUrl(`${identity.family.root}/transparent-64.png`)}
+			src={assetUrl(source)}
 			alt=""
 			width="36"
 			height="36"

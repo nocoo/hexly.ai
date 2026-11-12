@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-13: Ad hoc browser checks mixed browser and request-client configuration
+
+The local header review opened successfully in Chromium, but its extra asset hash check first passed a relative URL to Playwright's request client without a base URL, then hit that client's separate trust store when changed to the absolute Caddy URL. Neither failure involved the site's image delivery. The check was corrected to fetch the same-origin asset inside the already trusted browser context and verify the returned bytes. No certificates, Keychain entries or TLS settings were changed.
+
+For browser-visible local asset verification, use the browser's own fetch context, or explicitly configure the standalone request client's base URL and existing trust environment before using it. Do not infer request-client settings from an open page.
+
 ## 2026-11-13: Reference recolor erased the contrasting palette
 
 The owner requested a new Hexly emblem based on a supplied cream/beige/orange reference, retaining its material and using the site's brick red. The first prompt incorrectly applied brick red to the frame and both internal pieces, removing the reference's contrasting palette. The owner rejected the exact raw result. It remains archived without extraction, adoption or publication.
