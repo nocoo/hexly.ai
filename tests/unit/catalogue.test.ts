@@ -13,6 +13,7 @@ import {
 	selectedProject,
 } from "../../src/model/catalogue";
 import type { Project, ProjectOverview } from "../../src/model/project";
+import { statusTargets } from "../../src/model/status";
 
 const projects = readProjects();
 const active = projects.filter((project) => !project.archived);
@@ -218,15 +219,50 @@ describe("the imported project catalogue", () => {
 		expect(ids[rhino + 2]).toBe("dotty");
 		expect(rhino).toBeLessThan(ids.indexOf("sleepy"));
 	});
-	it("places Mico last in the remaining curated group and falls back to GitHub", () => {
+	it("keeps Mico before the three appended tools and falls back to GitHub", () => {
 		const ids = filterProjects(projects, "").map((project) => project.id);
-		expect(ids.at(-1)).toBe("mico");
+		expect(ids.slice(-4)).toEqual([
+			"mico",
+			"mao",
+			"hackernews-on-this-day",
+			"pi-superagent",
+		]);
 		const mico = projects.find((project) => project.id === "mico");
 		if (!mico) throw new Error("Mico is required.");
 		expect(mico.category).toBe("ai");
 		expect(mico.website).toBeNull();
 		expect(destination(mico)).toBe("https://github.com/nocoo/mico");
 		expect(catalogueProblems([mico])).toEqual([]);
+	});
+	it("keeps the three local onboarding entries in Tools without claiming source adoption", () => {
+		for (const id of ["mao", "hackernews-on-this-day", "pi-superagent"]) {
+			const project = projects.find((item) => item.id === id);
+			if (!project) throw new Error(`Missing ${id}`);
+			expect(project.category).toBe("tools");
+			expect(project.family?.status).toBe("review");
+			expect(project.source.profileRevision).toBe(
+				"2275b837ffb57598ea93c424e3f8ee5e488ce406",
+			);
+			expect(project.source.profileSection).toBe("Recent Projects");
+			expect(project.brandTexture?.model).toBe("gpt-image-2.5-flare");
+			expect(catalogueProblems([project])).toEqual([]);
+			if (id === "mao") {
+				expect(project.website).toBe("https://mao.hexly.ai");
+				expect(project.logo.kind).toBe("original");
+			} else {
+				expect(project.website).toBeNull();
+				expect(project.logo.kind).toBe("candidate");
+				expect(project.family?.previous).toBeNull();
+			}
+		}
+		const targets = statusTargets(projects);
+		expect(targets.find((target) => target.id === "mao")?.endpoint).toBe(
+			"https://mao.hexly.ai/api/live",
+		);
+		expect(
+			targets.some((target) => target.id === "hackernews-on-this-day"),
+		).toBe(false);
+		expect(targets.some((target) => target.id === "pi-superagent")).toBe(false);
 	});
 	it("uses evidenced website links and falls back to repository links", () => {
 		expect(destination(frogie)).toBe("https://github.com/nocoo/frogie");

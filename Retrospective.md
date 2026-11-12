@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-12: Frozen texture licenses retained an extra final blank line
+
+The texture exporter appended a newline to the already newline-terminated root license. After the new immutable packages were uploaded and hash-verified, `git diff --check` reported a trailing blank line in each of the three generated license files. Their bytes match the published manifests and receipts, so they were not rewritten or overwritten. The repository's configured lint, tests and commit gates remain unchanged.
+
+Check generated text-file whitespace before the first immutable upload. Once published, preserve exact bytes and use a new version for any future correction; do not silently change a published package or suppress a configured gate.
+
 ## 2026-11-12: R2 release check met expired interactive authentication
 
 During the authorized onboarding release, Wrangler reported that its existing login had expired and could not refresh in a non-interactive process. No R2 write or remote publication was attempted. The diagnostic shell also passed the failed command's empty output to a JSON parser, adding an unrelated parse error to the clear authentication failure.

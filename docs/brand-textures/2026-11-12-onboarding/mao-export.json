@@ -1,0 +1,48 @@
+{
+	"date": "2026-11-12",
+	"scope": "Hexly-only local review; source project, profile, R2 and publication unchanged",
+	"sourceBatch": "docs/brand-textures/2026-11-12-onboarding/inventory.json",
+	"siteBaseline": "8b569323",
+	"tokenSource": "src/styles/base.css",
+	"projects": [
+		{
+			"id": "mao",
+			"title": "Mao",
+			"archived": false,
+			"action": "generate",
+			"root": "/textures/mao/v1.0.0",
+			"version": "1.0.0",
+			"study": "artwork/brands/mao/texture-studies/2026-11-12-flare-onboarding-01",
+			"officialProjectIdentity": {
+				"path": "/logos/originals/mao-favicon-2026-11-12.svg",
+				"sha256": "59fba580c137819cae97c073f3cc515625f408b38532f9a31d950b4ac3974b7c",
+				"rgbaSha256": "a831cde43b337956c8087057f4e7d49df1aa18c3871852b5d03e5bf6e5102b2c",
+				"source": "https://github.com/nocoo/mao/blob/b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f/assets/favicon.svg",
+				"bytes": 259,
+				"width": 64,
+				"height": 64,
+				"kind": "original"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "Paper folio",
+				"name": { "en": "Poetry folio paper", "zh": "诗卷纸面" },
+				"description": {
+					"en": "Folded page contours and quiet ruled margins are pressed into a continuous folio surface.",
+					"zh": "折页轮廓与轻浅界线压印在连续的诗卷纸面上。"
+				},
+				"motif": "Folded page contours and broken margin ruling",
+				"rationale": "The reading room uses poetry and archived textual variants. Folded paper and margin traces suggest a folio, without inventing writing or modifying the product identity."
+			},
+			"productEvidence": {
+				"source": "https://github.com/nocoo/mao/blob/b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f/README.md",
+				"purpose": {
+					"en": "A digital reading room for Mao Zedong's poetry.",
+					"zh": "毛泽东诗词数字阅览室。"
+				},
+				"inspectedRevision": "b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f"
+			}
+		}
+	]
+}

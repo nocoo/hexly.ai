@@ -1,0 +1,200 @@
+{
+	"id": "hackernews-on-this-day",
+	"repo": "hackernews-on-this-day",
+	"title": "HN Today",
+	"emoji": "📅",
+	"description": {
+		"en": "Explore Hacker News stories from the same day in past years",
+		"zh": "浏览往年今日的 Hacker News 故事"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/hackernews-on-this-day",
+	"subject": "Orange and ivory desk flip calendar with brass rings",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "candidate",
+		"original": "/logos/originals/hackernews-on-this-day-review-2026-11-12.png",
+		"thumbnail": "/logos/display/hackernews-on-this-day-160.webp",
+		"display": "/logos/display/hackernews-on-this-day-1024.webp",
+		"sourcePath": "Hexly-generated first-identity candidate; source adoption pending",
+		"sourceUrl": "/artwork/logo-family/hackernews-on-this-day/2026-11-12-01/review.html",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2425564,
+		"sha256": "bdb990a07d92a2953d06bb22dd27c5712a6ce12e6bf352bc4d09518e6a6fba5e"
+	},
+	"theme": {
+		"primary": {
+			"value": "#f25c05",
+			"source": "src/style.css --accent, light"
+		},
+		"background": {
+			"value": "#f3eee4",
+			"source": "src/style.css --bg, light"
+		},
+		"ink": {
+			"value": "#1b1611",
+			"source": "src/style.css --ink, light"
+		}
+	},
+	"colors": {
+		"primary": "#f25c05",
+		"background": "#f3eee4",
+		"ink": "#1b1611",
+		"palette": [
+			{
+				"color": "#f25c05",
+				"role": "primary",
+				"source": "src/style.css --accent, light"
+			},
+			{
+				"color": "#f3eee4",
+				"role": "background",
+				"source": "src/style.css --bg, light"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "2275b837ffb57598ea93c424e3f8ee5e488ce406",
+		"profileSection": "Recent Projects",
+		"description": "Explore Hacker News stories from the same day in past years",
+		"repositoryRevision": "9092937006c47e84dddf57249023b3d985d18944",
+		"statusEvidence": {
+			"path": "docs/sources/onboarding-repositories-release-2026-11-12.json",
+			"sha256": "78a2f9101d27a8ae2515498c06e68c05a81fafc35abcf6b48b8f523227ffd2ed"
+		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Explore highly scored stories submitted on the same UTC date in previous years; scores are archive snapshots rather than historical front-page rankings.",
+			"zh": "浏览往年同一 UTC 日期提交的高分故事；分数来自归档快照，不代表当年的首页排名。"
+		},
+		"techStack": [
+			{
+				"name": "React / TypeScript",
+				"role": {
+					"en": "Interactive timeline and reading interface",
+					"zh": "交互时间线与阅读界面"
+				}
+			},
+			{
+				"name": "DuckDB / Parquet",
+				"role": {
+					"en": "Local archive queries",
+					"zh": "本地归档查询"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-11-12",
+			"revision": "9092937006c47e84dddf57249023b3d985d18944",
+			"readmes": { "en": "README.md", "zh": "README.md" },
+			"sources": ["README.md", "src/style.css", "package.json"]
+		}
+	},
+	"family": {
+		"id": "2026-11-12-01",
+		"status": "review",
+		"updated": "2026-11-12",
+		"finishing": "02",
+		"root": "/logos/family/hackernews-on-this-day/2026-11-12-01/02",
+		"archive": "/artwork/logo-family/hackernews-on-this-day/2026-11-12-01/review.html",
+		"series": "material",
+		"model": "gpt-image-2.5-sunburst",
+		"foreground": {
+			"subject": {
+				"en": "Orange and ivory desk flip calendar with brass rings",
+				"zh": "橙色与象牙白的黄铜环台历"
+			},
+			"original": "/logos/family/hackernews-on-this-day/2026-11-12-01/02/transparent.png",
+			"display": "/logos/family/hackernews-on-this-day/2026-11-12-01/02/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "bdb990a07d92a2953d06bb22dd27c5712a6ce12e6bf352bc4d09518e6a6fba5e"
+		},
+		"previous": null,
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A complete object",
+					"zh": "完整的物件"
+				},
+				"description": {
+					"en": "The selected Orange and ivory desk flip calendar with brass rings keeps its complete silhouette and original proportions.",
+					"zh": "保留橙色与象牙白的黄铜环台历的完整轮廓与原始比例。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Preserved material",
+					"zh": "保留原始材质"
+				},
+				"description": {
+					"en": "The approved native colors and material are preserved; the transparent foreground is separate from the presentation.",
+					"zh": "保留批准原图的色彩和材质，透明主体与展示背景分离。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Independent paper field",
+					"zh": "独立纸面"
+				},
+				"description": {
+					"en": "A project-specific paper field and soft contact shadows are separate from the identity.",
+					"zh": "项目专属纸面与柔和接触阴影独立于标识主体。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#ede6d9",
+				"role": "background",
+				"label": {
+					"en": "Designed paper",
+					"zh": "独立设计纸色"
+				},
+				"source": "artwork/logo-family/hackernews-on-this-day/2026-11-12-01/presentation.json background.base"
+			},
+			{
+				"color": "#95743e",
+				"role": "primary",
+				"label": {
+					"en": "Native artwork sample",
+					"zh": "原图色彩取样"
+				},
+				"source": "Native hackernews-on-this-day raw PNG, sRGB pixel (400, 500)"
+			}
+		],
+		"sizeNote": {
+			"en": "The complete silhouette remains; fine surface detail recedes at 16 px.",
+			"zh": "小尺寸保留完整轮廓，16 像素时材质细节减弱。"
+		}
+	},
+	"brandTexture": {
+		"root": "/textures/hackernews-on-this-day/v1.0.2",
+		"version": "1.0.2",
+		"scope": "hexly-campaign",
+		"name": { "en": "Archive timeline paper", "zh": "归档时间线纸面" },
+		"description": {
+			"en": "Curved page-edge impressions and sparse timeline notches evoke browsing past dates.",
+			"zh": "弧形纸页压痕与稀疏时间刻度呼应对往年日期的浏览。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/hackernews-on-this-day/v1.0.0",
+		"width": 2048,
+		"height": 2048
+	}
+}

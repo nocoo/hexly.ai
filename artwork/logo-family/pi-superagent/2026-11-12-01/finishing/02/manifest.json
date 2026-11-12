@@ -1,0 +1,370 @@
+{
+	"createdAt": "2026-11-12T03:18:06.372Z",
+	"pass": "02",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "3bc820b7efafa7f2dd507bc44796a8ed78f00b1875c30b5b3e90c9919562365b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "pi-superagent",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 249,
+			"maximumChroma": 7,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 100,
+			"calibrationNote": "Sampled near-white matte at the canvas border. Pass 01 left an isolated matte speck; pass 02 removes components below 100 pixels. Retain the pale metal shell and inspect the complete silhouette on light and dark."
+		},
+		"background": {
+			"base": "#dae4e4",
+			"light": "#edf3f1",
+			"shade": "#bdcdce",
+			"motif": "#718d8f",
+			"grainAmplitude": 0.6,
+			"grainSeed": 61112002,
+			"motifOpacity": 0.17,
+			"highlightOpacity": 0.25,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Coordinator paths",
+				"description": "Quiet branching tracks and paired junctions evoke a coordinator routing work to persistent sessions, not a literal circuit or security claim.",
+				"layers": [
+					{
+						"d": "M76 190h104l34-34h84M180 190l32 32h98M726 826h100l40-40h78M826 826l34 34h84",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M102 150h72m-72 14h72M842 868h74m-74 14h74",
+						"tone": "highlight",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M184 722h90l32 32h80M184 742h64l32 32h106",
+						"tone": "motif",
+						"strokeWidth": 1.3
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.74,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform inset of the complete robot head, retaining all original proportions."
+		},
+		"shadows": [
+			{
+				"color": [
+					47,
+					66,
+					70
+				],
+				"opacity": 0.13,
+				"blurAt2048": 40,
+				"offsetAt2048": [
+					12,
+					24
+				]
+			},
+			{
+				"color": [
+					47,
+					66,
+					70
+				],
+				"opacity": 0.08,
+				"blurAt2048": 9,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 2164869,
+		"foregroundPixels": 2029435,
+		"softEdgePixels": 10548,
+		"removedComponents": 1,
+		"removedComponentPixels": 19,
+		"bounds": {
+			"left": 158,
+			"top": 234,
+			"right": 1890,
+			"bottom": 1744
+		}
+	},
+	"placement": {
+		"scale": 0.74,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 383,
+			"top": 439,
+			"right": 1665,
+			"bottom": 1556
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 382.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1949,
+			"sha256": "14c9df428e9830bc3ac2c342547d05c692e72851e477c55d15f9db3c4299dd68"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 453,
+			"sha256": "6b73612adb31b93d9f87a689ab94012dab765c7a6e70cd00bdeb622f4b175d1b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3959559,
+			"sha256": "2d0a5c965ca5b26a8e1aeac0c59ddd3a93d593ee98d25ae4a10f86a0b6af1464"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 57080,
+			"sha256": "abf16fd95620a2075b7626438481661eb180833b968ec76978cd7c6e5911bf24"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 788,
+			"sha256": "a9c798175676ec67fb650dd4041fd260ca9d5ac74112b755807f4ae9fd575527"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1272073,
+			"sha256": "b6b30e6cee39f028a8690fac5db4f9af66f38153960c6b360f4fc94b019d2669"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2384330,
+			"sha256": "30dce4eab7240a9408fe73dc250c8f50009432f5be02a9022ba5c9fdaa911013"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 55733,
+			"sha256": "59382e124cb5a8bb34f3e71908458295b15cb6cd1a22e8ed3f1173735cc5025e"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 116313,
+			"sha256": "e8e5e49af9dc205e6d463cc4355382fae02fca7ff30e9d887c2ca41076064c37"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 80091,
+			"sha256": "6b20256e9047be2b974a8684b7e17cdede4c81cc21bd0c32121e0b8fd7067c61"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-2048.png",
+			"bytes": 2384330,
+			"sha256": "30dce4eab7240a9408fe73dc250c8f50009432f5be02a9022ba5c9fdaa911013"
+		},
+		{
+			"path": "exports/pi-superagent-icon-2048.png",
+			"bytes": 3524017,
+			"sha256": "bd90f268a9502d60989081d51170bd25cf7e51cfa01d8a1c584872eecc8c1a9e"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-2048.png",
+			"bytes": 3476571,
+			"sha256": "fefdb24c22895addd9b47ea775c3039b0fd83ba285afe2a3c8bde6607e7cd827"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-1024.png",
+			"bytes": 624464,
+			"sha256": "787d24261391a204b0fb50acb94cb5fe183cd06a286642446b5c17a1f22e891c"
+		},
+		{
+			"path": "exports/pi-superagent-icon-1024.png",
+			"bytes": 782171,
+			"sha256": "b6771e49f94423f0da37fad6eb5f869a313c9cc81c0630adb216ff4b89e2c526"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-1024.png",
+			"bytes": 792337,
+			"sha256": "b618b13459f9d8957f1b129f811727233fb1508b2f0a34e2224f4b116aab4346"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-512.png",
+			"bytes": 172200,
+			"sha256": "09410158e517e98f7298a85a905cd5702853a99e81f83241d0ccca9fbc56acf6"
+		},
+		{
+			"path": "exports/pi-superagent-icon-512.png",
+			"bytes": 250309,
+			"sha256": "99a8373a519596accca3506f9eff3a8612470cc53da124bb6de485c0af677bb0"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-512.png",
+			"bytes": 254164,
+			"sha256": "4e9fc380d299c7576170fd1d21c2e2fdb7171af029a02a34aea0cb8213177674"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-256.png",
+			"bytes": 49880,
+			"sha256": "f9e2f3c1a13c14bbd2f8036ffdc53ce9d94c9e9ac8d2f48f72f98f5e1209b88d"
+		},
+		{
+			"path": "exports/pi-superagent-icon-256.png",
+			"bytes": 61031,
+			"sha256": "36b87e5b26e3299da42527d7d1c0f6842095494a0441ab23bdddaeeec3befa9a"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-256.png",
+			"bytes": 64660,
+			"sha256": "9ea06badf1d72f1c44f9809811a6b387c22abed208d903077514d247d2352284"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-128.png",
+			"bytes": 14799,
+			"sha256": "b39d7924864dd668ac2e024ae0a1a5a84618ffaa75c19b354692b2306e65afdb"
+		},
+		{
+			"path": "exports/pi-superagent-icon-128.png",
+			"bytes": 19073,
+			"sha256": "a8208b005a312380df03a8cb3537ce1b9ef7393607177ac5d24765f4ac5f6da0"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-128.png",
+			"bytes": 20898,
+			"sha256": "cee0b3d85077acee0fa1098ebcc23b56b39440cba4f205eb63b07110c464d479"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-64.png",
+			"bytes": 4576,
+			"sha256": "0014d4a6e5e87051b0bdded93ae66c635dcfbfaa133c3f3ca1e7a5d229b77133"
+		},
+		{
+			"path": "exports/pi-superagent-icon-64.png",
+			"bytes": 6525,
+			"sha256": "85137c8cc4593b9088685fcb500ba9cd3d1d826225718b78ec7f63025eaeca3e"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-64.png",
+			"bytes": 7271,
+			"sha256": "57e7cd254186f5f4abb83ebf2046ab7ab6813760ca69b3121c3d26e58b494d24"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-48.png",
+			"bytes": 2841,
+			"sha256": "aa5aa8287580aafb6995aab758a31fe9f853bbfa7f39b934db3bdb14d8a5ddfe"
+		},
+		{
+			"path": "exports/pi-superagent-icon-48.png",
+			"bytes": 3992,
+			"sha256": "c3d1da73868346c5c205005c8e31ad5973c2427bbc1f6cd6b257e2caaa28aa4c"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-48.png",
+			"bytes": 4522,
+			"sha256": "f5d42db451e8cc28f99f0ea76469c77600cb9f64582c8bdeb6f187243886d59c"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-32.png",
+			"bytes": 1521,
+			"sha256": "bdb37c8339e3ffc106594d80719495987a89588c3aaf5d118d06862cdbae616e"
+		},
+		{
+			"path": "exports/pi-superagent-icon-32.png",
+			"bytes": 2307,
+			"sha256": "e1120614fdc6dfc4ce1a315c2a44daa65e1becc208e76453fb7390908f47b44e"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-32.png",
+			"bytes": 2521,
+			"sha256": "068762434f7fb07b41705bae9d01cb413439a799b2728511f4962f56802104d2"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-24.png",
+			"bytes": 998,
+			"sha256": "e93b05225ce4ba58c228f8202378793729471cd1aa6210e611dd5517e68b1ac4"
+		},
+		{
+			"path": "exports/pi-superagent-icon-24.png",
+			"bytes": 1493,
+			"sha256": "3d7eb0aad67921fa83b7b726682a68c4ed9a627a08e65542b7a5d73be6fe81dc"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-24.png",
+			"bytes": 1652,
+			"sha256": "fa0dbeb08a3148261e19d37083434c75d3985f819a18e05a763daba5e11a3874"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-16.png",
+			"bytes": 580,
+			"sha256": "16fb46b80096abf3bfe2f3586dc2b9e083444be95f5c41cdee6a0d30ffaab874"
+		},
+		{
+			"path": "exports/pi-superagent-icon-16.png",
+			"bytes": 832,
+			"sha256": "fce7e85ed7ff7bb6adad041271358a8f954928791a0c3d526c33e787cf66caf4"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-16.png",
+			"bytes": 904,
+			"sha256": "6911c3b513236edd4fddaa936c0f6a8a11b5fb9003130ab409c20c638d1bedc5"
+		},
+		{
+			"path": "exports/pi-superagent-white-2048.png",
+			"bytes": 2255660,
+			"sha256": "18986864a692ed9399d29e30dd8c44e6ef603f0ac470188b2ae610ffc376fd36"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 602683,
+			"sha256": "74502335a6ab3948ad3fc88b9709f72197df7464207997233545b8ab809cfc15"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 606405,
+			"sha256": "094096abe18fcf7905d37038f44be4a0ce18bd86d4812fc5af6fac206ccc3356"
+		}
+	]
+}

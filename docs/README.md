@@ -56,4 +56,6 @@
 
 45. [Generated index of current project texture packs](40-texture-packs.md)
 
+46. [Mao, HN Today and Pi Superagent local onboarding](41-local-three-project-onboarding.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

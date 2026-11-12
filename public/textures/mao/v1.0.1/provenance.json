@@ -1,0 +1,111 @@
+{
+	"project": "mao",
+	"version": "1.0.1",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "Paper folio",
+		"name": { "en": "Poetry folio paper", "zh": "诗卷纸面" },
+		"description": {
+			"en": "Folded page contours and quiet ruled margins are pressed into a continuous folio surface.",
+			"zh": "折页轮廓与轻浅界线压印在连续的诗卷纸面上。"
+		},
+		"motif": "Folded page contours and broken margin ruling",
+		"rationale": "The reading room uses poetry and archived textual variants. Folded paper and margin traces suggest a folio, without inventing writing or modifying the product identity."
+	},
+	"productEvidence": {
+		"source": "https://github.com/nocoo/mao/blob/b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f/README.md",
+		"purpose": {
+			"en": "A digital reading room for Mao Zedong's poetry.",
+			"zh": "毛泽东诗词数字阅览室。"
+		},
+		"inspectedRevision": "b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f"
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/mao-favicon-2026-11-12.svg",
+		"sha256": "59fba580c137819cae97c073f3cc515625f408b38532f9a31d950b4ac3974b7c",
+		"rgbaSha256": "a831cde43b337956c8087057f4e7d49df1aa18c3871852b5d03e5bf6e5102b2c",
+		"source": "https://github.com/nocoo/mao/blob/b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f/assets/favicon.svg",
+		"bytes": 259,
+		"width": 64,
+		"height": 64,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-11-12-onboarding/mao-export-v2.json",
+	"sourceInventorySha256": "f35d6324af11bf713036ef68e2c1940b860bd0c82bc059203c0dcb7e24288401",
+	"siteBaseline": "8b569323",
+	"tokenSource": "src/styles/base.css",
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d696c88b-be66-47f7-bac3-3d791fc2643e",
+			"source": "artwork/brands/mao/texture-studies/2026-11-12-flare-onboarding-01/light",
+			"request": "/textures/mao/v1.0.1/source-light-request.json",
+			"response": "/textures/mao/v1.0.1/source-light-response.json",
+			"prompt": "/textures/mao/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/mao/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mao/v1.0.1/texture-light.png",
+				"sha256": "2a40bfd8a78884b283087500c5ed3b4867833a3277270e8a4b6399aef178ab19",
+				"bytes": 1756285,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d39d813e-2ce6-4f00-9e73-987c3b816c84",
+			"source": "artwork/brands/mao/texture-studies/2026-11-12-flare-onboarding-01/dark",
+			"request": "/textures/mao/v1.0.1/source-dark-request.json",
+			"response": "/textures/mao/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/mao/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/mao/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mao/v1.0.1/texture-dark.png",
+				"sha256": "fc16969adca3d7831cd0c1bd7d391777d2864830098444779dd7ccae57879652",
+				"bytes": 1693517,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 6.885181464162814,
+		"darkMinimum": 6.751854811484184,
+		"target": 4.7
+	},
+	"recordedAt": "2026-11-12T05:40:10.336Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

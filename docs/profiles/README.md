@@ -1,6 +1,6 @@
 # Project profiles
 
-94 projects are listed in the catalogue, including hexly.ai. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
+97 projects are listed in the catalogue, including hexly.ai. Project metadata is maintained in `src/data/projects/`; run `bun run docs:profiles` after editing it. Existing profile filenames stay stable when entries are added, removed, or reordered.
 
 | Project | Catalogue artwork | Source primary | Source background |
 | --- | --- | --- | --- |
@@ -98,3 +98,6 @@
 | [🖌️ Chamelo](93-chamelo.md) | Adopted family | #2e4640 | #f3ebdd |
 | [📐 Linie](95-linie.md) | Adopted family | #087368 | #f3f5ef |
 | [🖼️ Mico](94-mico.md) | Original asset | #00a2e1 | #f5fafc |
+| [⭐ Mao](96-mao.md) | Refined preview | #d6251a | #eee5d2 |
+| [📅 HN Today](97-hackernews-on-this-day.md) | Refined preview | #f25c05 | #f3eee4 |
+| [🤖 Pi Superagent](98-pi-superagent.md) | Refined preview | #125f9c | #dae4e4 |

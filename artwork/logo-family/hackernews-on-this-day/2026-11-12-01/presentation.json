@@ -1,0 +1,84 @@
+{
+	"project": "hackernews-on-this-day",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 249,
+		"maximumChroma": 7,
+		"backgroundRgb": [252, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"foregroundRegionsAt2048": [
+			{
+				"name": "Opaque calendar page interior",
+				"points": [
+					[550, 750],
+					[1500, 540],
+					[1670, 1400],
+					[760, 1630],
+					[570, 1500]
+				]
+			}
+		],
+		"calibrationNote": "Sampled near-white matte at the canvas border. Protect the pale page interior. Pass 01 left isolated matte specks; pass 02 removes components below 100 pixels. Inspect the complete page and binding openings on light and dark."
+	},
+	"background": {
+		"base": "#ede6d9",
+		"light": "#f8f4ec",
+		"shade": "#dbcebd",
+		"motif": "#a8876c",
+		"grainAmplitude": 0.6,
+		"grainSeed": 61112001,
+		"motifOpacity": 0.17,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Archive timeline and page edges",
+			"description": "Fine parallel page edges and short dated timeline ticks evoke browsing the same calendar day across past years without adding a date to the original calendar.",
+			"layers": [
+				{
+					"d": "M94 150h190m-190 24h152m-152 24h175M732 802h190m-152 24h152m-175 24h175",
+					"tone": "motif",
+					"strokeWidth": 1.3
+				},
+				{
+					"d": "M150 104v124m24-100v100m24-124v124m24-100v100M800 748v124m24-100v100m24-124v124m24-100v100",
+					"tone": "highlight",
+					"strokeWidth": 1.1
+				},
+				{
+					"d": "M102 861h206M126 851v20m38-16v12m38-16v20m38-16v12m38-16v20",
+					"tone": "motif",
+					"strokeWidth": 1.7
+				}
+			]
+		}
+	},
+	"framing": {
+		"scale": 0.74,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform inset of the complete calendar, retaining all original proportions."
+	},
+	"shadows": [
+		{
+			"color": [91, 67, 45],
+			"opacity": 0.13,
+			"blurAt2048": 40,
+			"offsetAt2048": [12, 24]
+		},
+		{
+			"color": [91, 67, 45],
+			"opacity": 0.08,
+			"blurAt2048": 9,
+			"offsetAt2048": [2, 8]
+		}
+	]
+}

@@ -1,0 +1,72 @@
+{
+	"project": "mao",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 249,
+		"maximumChroma": 7,
+		"backgroundRgb": [252, 252, 252],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 100,
+		"calibrationNote": "Sampled the near-white native canvas border. Remove only tiny disconnected matte residue; preserve the selected worn red paint and metallic highlights. Inspect light and dark edges."
+	},
+	"background": {
+		"base": "#ede6d9",
+		"light": "#f8f2e7",
+		"shade": "#dacabc",
+		"motif": "#aa8170",
+		"grainAmplitude": 0.6,
+		"grainSeed": 61112003,
+		"motifOpacity": 0.16,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Folded poetry paper",
+			"description": "Quiet folded-paper edge lines and broken ruled margins recall a poetry reading page without imitating characters or changing the red star.",
+			"layers": [
+				{
+					"d": "M98 142h168m-168 19h144m-144 19h156M760 816h160m-142 19h142m-158 19h158",
+					"tone": "motif",
+					"strokeWidth": 1.4
+				},
+				{
+					"d": "M130 105v112m20-97v97M860 770v112m20-97v97",
+					"tone": "highlight",
+					"strokeWidth": 1.2
+				},
+				{
+					"d": "M104 850q92-18 184-2M105 869q92-18 184-2",
+					"tone": "motif",
+					"strokeWidth": 1.5
+				}
+			]
+		}
+	},
+	"framing": {
+		"scale": 0.74,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform inset of the complete upright star, retaining original proportions and the approved worn finish."
+	},
+	"shadows": [
+		{
+			"color": [79, 45, 37],
+			"opacity": 0.12,
+			"blurAt2048": 40,
+			"offsetAt2048": [12, 24]
+		},
+		{
+			"color": [79, 45, 37],
+			"opacity": 0.07,
+			"blurAt2048": 9,
+			"offsetAt2048": [2, 8]
+		}
+	]
+}
