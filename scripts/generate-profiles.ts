@@ -1,4 +1,4 @@
-import { mkdir, readdir, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, relative } from "node:path";
 import { parseArgs } from "node:util";
 import { readProjects } from "../src/data/read-projects";
@@ -84,6 +84,13 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 `
 		: "";
 	const icon = project.presentationIcon;
+	const iconManifest = icon
+		? (JSON.parse(
+				await readFile(`public${icon.root}/manifest.json`, "utf8"),
+			) as {
+				texture: { sourceMethod?: string; opacity?: number };
+			})
+		: null;
 	const iconSection = icon
 		? `## Current textured icons
 
@@ -91,8 +98,8 @@ ${kit.guidelines.map((item) => `### ${item.title.en}\n\n${item.description.en}\n
 
 - [Native square PNG](${sourceLink(`${icon.root}/icon.png`)}) · [Native continuous-corner PNG](${sourceLink(`${icon.root}/rounded.png`)}) · [iOS 1024 px square](${sourceLink(`${icon.root}/icon-1024.png`)}) · [Favicon ICO](${sourceLink(`${icon.root}/favicon.ico`)}) · [Apple touch](${sourceLink(`${icon.root}/apple-touch-icon.png`)})
 - [Manifest and checksums](${sourceLink(`${icon.root}/manifest.json`)}) · [Usage, resampling and source rights](${sourceLink(`${icon.root}/guide.md`)})
-- Native canvas ${icon.width} × ${icon.height}; zero new image generation. ${project.brandTexture ? "Unchanged foreground colors over the approved light texture at 70% opacity." : "Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing."} Continuous corners are already rendered for site use; use the square master for iOS. ${icon.width < 1024 ? "1024 px variants are explicitly resampled upscales." : "Smaller delivery sizes are resampled from the native master."}
-- Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+- Native canvas ${icon.width} × ${icon.height}; zero new image generation. ${iconManifest?.texture.sourceMethod === "authored-family-background" ? "Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing." : `Unchanged foreground colors over the approved light texture at ${(iconManifest?.texture.opacity ?? 0) * 100}% opacity.`} Continuous corners are already rendered for site use; use the square master for iOS. ${icon.width < 1024 ? "1024 px variants are explicitly resampled upscales." : "Smaller delivery sizes are resampled from the native master."}
+- ${family?.status === "review" ? "Local Hexly presentation preview; source adoption and publication are not implied." : "Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state."} Original identity archives below remain available.
 
 `
 		: "";
@@ -189,7 +196,7 @@ ${screenshots.map((shot) => `- ${shot.alt.en} / ${shot.alt.zh} (${shot.width} ×
 - ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : project.category === "extensions" ? "Installable skill; navigation opens the repository." : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
-- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})
+- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${project.source.statusEvidence ? `../../${project.source.statusEvidence.path}` : snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})
 - English: ${project.description.en}
 - Chinese: ${project.description.zh}
 - Profile section: ${project.source.profileSection}

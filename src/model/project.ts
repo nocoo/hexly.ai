@@ -23,6 +23,7 @@ export interface ProjectOverview {
 		date: string;
 		revision: string | null;
 		snapshot?: { path: string; sha256: string };
+		readmes?: Record<Locale, string>;
 		sources: string[];
 	};
 }
@@ -195,5 +196,6 @@ export interface Project {
 		profileSection: string;
 		description: string;
 		repositoryRevision: string | null;
+		statusEvidence?: { path: string; sha256: string };
 	};
 }
