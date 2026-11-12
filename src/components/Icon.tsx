@@ -100,15 +100,16 @@ export function Icon({
 }
 
 export function BrandMark() {
-	const source =
+	const preview =
 		import.meta.env.DEV &&
 		import.meta.env.MODE === "development" &&
-		import.meta.env.VITE_LOCAL_MATERIALS === "1"
-			? "/logos/family/hexly-ai/2026-11-13-02/02/transparent-128.png"
-			: `${identity.family.root}/transparent-64.png`;
+		import.meta.env.VITE_LOCAL_MATERIALS === "1";
+	const source = preview
+		? "/logos/family/hexly-ai/2026-11-13-02/02/transparent-128.png"
+		: `${identity.family.root}/transparent-64.png`;
 	return (
 		<img
-			className="brand-mark"
+			className={preview ? "brand-mark brand-mark-preview" : "brand-mark"}
 			src={assetUrl(source)}
 			alt=""
 			width="36"

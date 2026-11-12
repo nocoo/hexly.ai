@@ -36,3 +36,5 @@ The full HTTP/browser suites and full-history asset hydration were not run for t
 ## Owner header feedback
 
 After viewing the actual local header, the owner found the silhouette insufficiently visible against the page background and requested three freer hexagonal directions. This extraction remains a valid archive of the approved raw, but the pale-frame design is not selected for adoption. Studies `2026-11-13-03` through `2026-11-13-05` explore clearer silhouettes; their raw outputs require independent review. The current local header remains unchanged while those directions are generated.
+
+The owner subsequently rejected all three directions and returned to this two-tone artwork, asking for the original reference's shadow and glow. Study `2026-11-13-06` retains this exact transparent master and header derivative while testing independent CSS light/shadow effects. The earlier visibility concern remains the reason for that presentation-only pass.

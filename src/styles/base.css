@@ -206,6 +206,13 @@ a {
 	color: var(--accent);
 	flex-shrink: 0;
 }
+.brand-mark-preview {
+	filter: drop-shadow(0 0 0.55px #76533775)
+		drop-shadow(0.7px 1.4px 1.1px #76533766) drop-shadow(0 0 3px #ffd5a52b);
+}
+[data-theme="dark"] .brand-mark-preview {
+	filter: drop-shadow(0 1px 1px #03060480) drop-shadow(0 0 2px #ffd6aa22);
+}
 .site-header {
 	position: sticky;
 	top: 0;

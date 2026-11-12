@@ -22,7 +22,8 @@ it.each([
 			src: source,
 			width: "36",
 			height: "36",
-			className: "brand-mark",
+			className:
+				source === candidate ? "brand-mark brand-mark-preview" : "brand-mark",
 			alt: "",
 			"aria-hidden": "true",
 		});
