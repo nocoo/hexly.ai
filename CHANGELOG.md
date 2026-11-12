@@ -1,5 +1,82 @@
 # Changelog
 
+## [1.8.2] - 2026-11-12
+
+### Features
+
+- run unified L1 pre-commit against the Git index snapshot ([c8e7b9f](https://github.com/nocoo/hexly.ai/commit/c8e7b9fb3b0d147bcc13dc9931c9ffb7c51f1baa))
+- verify pinned commits with timed Git gates ([943c619](https://github.com/nocoo/hexly.ai/commit/943c619bc0f169e6af1f992f695245f26918869e))
+- report the total gate duration ([5ded766](https://github.com/nocoo/hexly.ai/commit/5ded766237514016b1a87e44b120335b933b194e))
+- time snapshot preparation and cleanup ([24002c9](https://github.com/nocoo/hexly.ai/commit/24002c95570ad5e0bb7ecb68b40a699bb8d86e33))
+- distinguish first identity candidates ([6b95a16](https://github.com/nocoo/hexly.ai/commit/6b95a16334de51b4d62d1fb5280a57d0f44a2470))
+- record candidate texture references ([d0cc2bb](https://github.com/nocoo/hexly.ai/commit/d0cc2bbfd467b146986d59be97083b923cee6536))
+- add three tools to the catalogue ([a7a0cbf](https://github.com/nocoo/hexly.ai/commit/a7a0cbf8b3cd999612a1b5bafb4c5d7dc54d428e))
+
+### Documentation
+
+- record enforced unified L1 pre-commit contract ([1c76bb2](https://github.com/nocoo/hexly.ai/commit/1c76bb2b7405db2f77215d10a4e7a4188be01292))
+- document asset-free L1 and test:assets in verify ([2da58ac](https://github.com/nocoo/hexly.ai/commit/2da58ac7b76f94ccd57f202c646b93f2c6374a99))
+- document the System0 slots with measured budgets ([efcae78](https://github.com/nocoo/hexly.ai/commit/efcae78efa9e4976bb73dc5a50bd2130782b8ed5))
+- record the measured CI band after the parallel fixture check ([fcd76c2](https://github.com/nocoo/hexly.ai/commit/fcd76c2dd0316c2ea119cd2c30f38ac9b62a7067))
+- refresh measured numbers for the final gate layout ([99bddc6](https://github.com/nocoo/hexly.ai/commit/99bddc60c2458d2ca010bd9d9a11e37c5ad6558b))
+- attribute the CI figures to the runs that produced them ([1b9fd98](https://github.com/nocoo/hexly.ai/commit/1b9fd98ee165ec6dbd4cf11c72dfdd6ee8e04257))
+- record base-ci v2026.14 adoption and the deploy pin defect ([bcb6cdd](https://github.com/nocoo/hexly.ai/commit/bcb6cdd848f282bcdc09cc2b87d82f48f787d47b))
+- state the base-ci versions in the AGENTS slot table ([0951531](https://github.com/nocoo/hexly.ai/commit/09515319bda3f13d8947bc9f7c1bcdb9ad172c36))
+- separate the fixed v2026.13 defect from the new pin defect ([8a09172](https://github.com/nocoo/hexly.ai/commit/8a091729b6502e7f399a775b2e32651ea8c3b73a))
+- make the version comment example neutral and note the revisit ([8184d32](https://github.com/nocoo/hexly.ai/commit/8184d32557ed57d999975ae1b8abb4cf0d56600a))
+- record when to move the deploy pin back to upstream ([5a80d03](https://github.com/nocoo/hexly.ai/commit/5a80d03e3ed4206d38f7cb987f34d07812a0ae9d))
+- record base-ci v2026.15 and the upstream release gate ([d9aa4a0](https://github.com/nocoo/hexly.ai/commit/d9aa4a0f8228f7ab62be5303337708a0e9d20681))
+- record herdr discovery boundary ([55b9fa5](https://github.com/nocoo/hexly.ai/commit/55b9fa594ae7853a16684b15951c17109e74f05b))
+- correct onboarding status report ([8b56932](https://github.com/nocoo/hexly.ai/commit/8b569323ea07eee67e0dc986b54857552193f2b7))
+- record review download failure ([72937b5](https://github.com/nocoo/hexly.ai/commit/72937b5e4da2289dc19c61077d4c1985610a15a4))
+- record review download recovery ([ab5d767](https://github.com/nocoo/hexly.ai/commit/ab5d767388feb01ef422e534aabaf4c0c66f0be9))
+- record history recovery probe ([5c90f26](https://github.com/nocoo/hexly.ai/commit/5c90f26f3a196942ebaa46517e8f91d8337a4957))
+- record missing history sources ([bf8518c](https://github.com/nocoo/hexly.ai/commit/bf8518cc60693b11446e5d70b79449450429079c))
+- record expired r2 authentication ([d3c4b22](https://github.com/nocoo/hexly.ai/commit/d3c4b22af4fc6004a39e3960bcaaf31f0a358dfa))
+
+### Fixes
+
+- align gate:commit with unified L1 checks ([2e747c2](https://github.com/nocoo/hexly.ai/commit/2e747c2543c9a9b01c3735a3d12302a1182b62f5))
+- pass project gitleaks config in security gates ([42db55d](https://github.com/nocoo/hexly.ai/commit/42db55ddc68c36dee177aff552859f2652ee8f62))
+- resolve workspace packages inside the gate snapshot ([0491c1c](https://github.com/nocoo/hexly.ai/commit/0491c1cc2d3f5f90fb25294454cdf9d77adc1486))
+- fail closed on unverifiable ranges and keep evidence ([51f27a2](https://github.com/nocoo/hexly.ai/commit/51f27a2c049d469471b9a7e6000799554d7df22b))
+- scope gate budgets per verified object ([23fd629](https://github.com/nocoo/hexly.ai/commit/23fd629dc792f9fc7e2fb3b8844cf7298fe5f7aa))
+- preserve immutable texture schema ([3cc9f56](https://github.com/nocoo/hexly.ai/commit/3cc9f563bf4b2491e2fe9d9d308248e476043083))
+- require texture inspection evidence ([e634bff](https://github.com/nocoo/hexly.ai/commit/e634bffee2b637c73f659891471e2122a1523c1f))
+- preserve verified project metadata ([32713f7](https://github.com/nocoo/hexly.ai/commit/32713f7ce3247206d4388317ec422e25acd85707))
+
+### Maintenance
+
+- Merge pull request #141 from nocoo/cursor/l1-index-snapshot-pre-commit-e438 ([13801f0](https://github.com/nocoo/hexly.ai/commit/13801f0e077f926b7e767e71f2d8d99098de1ace))
+- bump vitest and @vitest/coverage-v8 5.0.5 → 5.1.0 ([dfda9bc](https://github.com/nocoo/hexly.ai/commit/dfda9bc830c7af59c4731337b137ab970949fc02))
+- bump @biomejs/biome 2.6.4 → 2.6.6 ([4fa2acf](https://github.com/nocoo/hexly.ai/commit/4fa2acff9437a2f6d2dbeedd6ac6c836d00a739f))
+- bump @playwright/test 1.64.1 → 1.65.0 ([07a963f](https://github.com/nocoo/hexly.ai/commit/07a963f67cf989599589649a1457553706d08ec7))
+- Merge pull request #142 from nocoo/cursor/deps-minor-bumps-892a ([a59b682](https://github.com/nocoo/hexly.ai/commit/a59b682acd1951f6bb163831bd4c9ce8aad03acb))
+- pin base-ci to v2026.10 ([d360b21](https://github.com/nocoo/hexly.ai/commit/d360b21ab974509aefb23ae965ed145bcd2287dc))
+- pin base-ci to v2026.10 (#143) ([0980c01](https://github.com/nocoo/hexly.ai/commit/0980c01fcaea667a5f38885d964b46fa8570a067))
+- Merge pull request #144 from nocoo/cursor/isolate-asset-unit-tests-8c93 ([0a5ee09](https://github.com/nocoo/hexly.ai/commit/0a5ee09232823729cce9e44b493405bce2d7a2d7))
+- migrate to base-ci quality.yml v2026.12 with strict slot-status ([24b4845](https://github.com/nocoo/hexly.ai/commit/24b484537b3193e0dd4612584568030b90491109))
+- pin deploy-worker.yml to base-ci v2026.12 ([f499536](https://github.com/nocoo/hexly.ai/commit/f499536bf072c2acd0d2ec324e1c9a93e862b0d7))
+- prepare test fixtures before L2/L3 Playwright jobs ([561e92a](https://github.com/nocoo/hexly.ai/commit/561e92a4fbba2f206dba4630da75fc70fab6132d))
+- drop L2/L3 evidence upload that fails on green Playwright runs ([8097842](https://github.com/nocoo/hexly.ai/commit/80978422ec25e82c3df728340a935ad26d2d961a))
+- Merge pull request #145 from nocoo/cursor/base-ci-v2026-12-slots-5d69 ([6b6d418](https://github.com/nocoo/hexly.ai/commit/6b6d4187f1e0452b64bfaeaa3bcbfcc2e06d3b13))
+- run the System0 slots natively behind one gate ([844421e](https://github.com/nocoo/hexly.ai/commit/844421e3006b38f5108455e3074c7f90deb71d16))
+- verify fixture bytes in parallel ([e699934](https://github.com/nocoo/hexly.ai/commit/e69993493d89ee37fb86f605cfb24994deb082f1))
+- keep the E2E lane installable when apt mirrors fail ([8c70408](https://github.com/nocoo/hexly.ai/commit/8c70408251167fe7ba3449d373d9d844bac3806e))
+- bound the Chromium dependency install ([b3ad1c4](https://github.com/nocoo/hexly.ai/commit/b3ad1c4ccfaf3edbfcd82da2bfc8b895120652f0))
+- install Chromium without the apt dependency pass ([55e2d72](https://github.com/nocoo/hexly.ai/commit/55e2d72d1916f4019808e3003e057bfc402632a5))
+- upgrade the slot actions to base-ci v2026.14 ([ab2d99f](https://github.com/nocoo/hexly.ai/commit/ab2d99f9069b87249bc45bebfc696fc808900587))
+- run the release Z1 proof on base-ci v2026.14 ([173455e](https://github.com/nocoo/hexly.ai/commit/173455ee0de9a649cd47d48d67501472f5321acc))
+- upgrade every base-ci reference to v2026.15 ([299f761](https://github.com/nocoo/hexly.ai/commit/299f7615f44ef8f45751bb54a679e020929bbbb2))
+- drop the local release proof now that upstream checks Z1 ([79e10db](https://github.com/nocoo/hexly.ai/commit/79e10db0fc4dc23e1a10e326825b6663f5708ead))
+
+### Tests
+
+- isolate asset integrity from L1 unit pre-commit ([9510c5d](https://github.com/nocoo/hexly.ai/commit/9510c5d5cf083722c6dcab269d0679e32a80ec58))
+- guard focused tests and widen the coverage denominator ([a80e255](https://github.com/nocoo/hexly.ai/commit/a80e2556b7dffb15e2da594701e4998fe4529aab))
+- prove gate phases fail on timeouts and missing tools ([b87c6ce](https://github.com/nocoo/hexly.ai/commit/b87c6cee3dce5ddfa544e4b63b1feb5d6c96b3df))
+- cover gate capture and keep it runtime-neutral ([a8e134a](https://github.com/nocoo/hexly.ai/commit/a8e134a64a2bf5e7095843db85f806250334b1d2))
+
 ## [1.8.1] - 2026-11-10
 
 ### Maintenance
