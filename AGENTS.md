@@ -68,7 +68,9 @@ bun run video:check
 ## Verification
 
 System0 slots (skill `system0-quality` v1.3.0), implemented natively in
-[`quality-slots.yml`](.github/workflows/quality-slots.yml) with a local `Z1: Gate`. Status:
+[`quality-slots.yml`](.github/workflows/quality-slots.yml) with a local `Z1: Gate`. Shared
+composites come from base-ci v2026.14 (`9ec93ad0`); the deploy workflow stays on v2026.13
+because v2026.14 pins a `release-source` commit that does not exist upstream. Status:
 `impl`, `na`. Canonical CI check names are `quality / <ID>: <Name>`.
 
 | Slot            | Command                                                | Checked object                                                   | Stage                    |         Measured | Status |
