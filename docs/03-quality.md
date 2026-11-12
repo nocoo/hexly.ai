@@ -181,13 +181,19 @@ base interval, because native watchers exceeded 10,000 descriptors on macOS.
 
 ## Release
 
-`release.yml` proves the source run first: `release-source` (base-ci v2026.13) requires
+`release.yml` proves the source run first: `release-source` (base-ci v2026.14) requires
 the successful `quality / Z1: Gate` check on the proven SHA, then
 `deploy-worker.yml` re-proves the run, applies D1 migrations, deploys and verifies both
-`hexly.ai` and `status.hexly.ai`. The reusable deploy workflow at this SHA still pins an
-older `release-source` composite that ignores the quality check, which is why the
-repository runs the proof itself. Manual CI dispatch also reads both origins without
-deploying; a manual dispatch that skips deployment is not deployment evidence.
+`hexly.ai` and `status.hexly.ai`.
+
+The deploy step still calls `deploy-worker.yml` at v2026.13. v2026.14 forwards the quality
+requirement correctly, but its workflow pins the internal `release-source` composite to
+`e215ac80`, a commit that does not exist in `nocoo/base-ci`: a probe job fails with
+`Unable to resolve action nocoo/base-ci@e215ac80…`, and the composite at the tag SHA
+resolves normally. Calling it would break every deployment before any proof ran, so the
+repository keeps the v2026.13 deploy workflow and enforces Z1 itself with the v2026.14
+composite. Manual CI dispatch also reads both origins without deploying; a manual dispatch
+that skips deployment is not deployment evidence.
 
 ## Not selected
 
