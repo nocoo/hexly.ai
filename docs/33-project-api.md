@@ -24,7 +24,7 @@ The response is one JSON object:
 | `icons.small`, `icons.large` | Absolute CDN URLs for 64px and 512px project-identity images |
 | `logos[]` | Available logo variants, described below |
 | `brand.manifest` | Versioned brand manifest URL, or `null` |
-| `brand.source`, `brand.originalSha256` | Original identity source and original-file checksum |
+| `brand.source`, `brand.originalSha256` | Original identity source and original-file checksum; both are `null` for a first-identity review candidate that the source project has not adopted |
 
 Every logo variant includes `id`, `url`, `width`, `height`, `format`, `background`,
 `role`, `usage`, and `theme`. Links resolve to immutable materials at `h.no.mt`.

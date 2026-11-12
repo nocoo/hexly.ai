@@ -79,6 +79,36 @@ describe("single-project integration contract", () => {
 			"hexly-campaign",
 		);
 	});
+	it("labels a first-identity review candidate as campaign artwork, not a source identity", () => {
+		const original = project("frogie");
+		if (!original.family) throw new Error("Missing family fixture");
+		const candidate = {
+			...original,
+			logo: { ...original.logo, kind: "candidate" as const },
+			family: {
+				...original.family,
+				status: "review" as const,
+				previous: null,
+				foreground: {
+					...original.family.foreground,
+					sha256: original.logo.sha256,
+				},
+			},
+		};
+		const result = projectApi(candidate);
+		expect(result.brand.source).toBeNull();
+		expect(result.brand.originalSha256).toBeNull();
+		expect(result.logos.find((logo) => logo.id === "original")).toMatchObject({
+			background: "transparent",
+			role: "hexly-campaign",
+		});
+		expect(
+			result.logos.find((logo) => logo.id === "foreground-original")?.role,
+		).toBe("hexly-campaign");
+		expect(result.logos.find((logo) => logo.id === "identity-64")?.role).toBe(
+			"hexly-campaign",
+		);
+	});
 	it("preserves limited and archived identities without manufacturing variants", () => {
 		const p = project("express-spa");
 		const result = projectApi(p);

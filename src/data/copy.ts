@@ -186,6 +186,8 @@ export const copy = {
 		copied: "Copied",
 		copyFailed: "Could not copy. Select the value and copy it manually.",
 		preserved: "Original artwork, preserved as it is.",
+		candidateNote:
+			"Hexly review candidate; the source project has not adopted it.",
 		emojiNote: "This project currently uses its profile emoji as its identity.",
 		sourceAsset: "View asset source",
 		back: "Back to projects",
@@ -351,6 +353,7 @@ export const copy = {
 		copied: "已复制",
 		copyFailed: "暂时无法复制，请选中文本手动复制。",
 		preserved: "保留原样的项目图像。",
+		candidateNote: "Hexly 预览候选，源项目尚未采用。",
 		emojiNote: "这个项目目前使用 GitHub profile 中的 Emoji 作为标识。",
 		sourceAsset: "查看图像来源",
 		back: "返回项目导航",

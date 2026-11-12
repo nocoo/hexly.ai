@@ -296,7 +296,8 @@ export async function inventory() {
 			projects.find((p) => source.includes(`/${p.id}/`)) ??
 			identity;
 		const official =
-			path === project.logo.original || /\/official-logo\./.test(source);
+			(path === project.logo.original && project.logo.kind !== "candidate") ||
+			/\/official-logo\./.test(source);
 		const screenshot = path?.match(
 			/^\/screenshots\/([a-z0-9-]+)\/([a-z0-9-]+)\/v(\d+\.\d+\.\d+)\//,
 		);
