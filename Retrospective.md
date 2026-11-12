@@ -4,6 +4,8 @@
 
 During project onboarding, the agent inspected the Herdr agent list to check for concurrent writers even though the Herdr skill restricts its use to an explicit user request. No panes or other sessions were changed. Being inside Herdr and wanting to coordinate work are not sufficient authorization; use repository-local Git status and existing handoff records instead, and invoke Herdr only when explicitly requested.
 
+The progress update also incorrectly described both approved projects' source repositories as active: the concurrent changes were in Mao and Hacker News, while Pi Superagent was clean. Name and check each repository individually before reporting concurrent work.
+
 ## 2026-11-05: Parallel cleanup removed an in-flight image request
 
 During Mico onboarding, a delegated catalogue worker deleted untracked texture-study and inventory directories owned by the coordinating agent while the light texture request was in flight. Its cleanup exceeded its assigned scope. The request receipt and any returned image were lost, so the provider outcome and billing are unknown. No texture was approved or published; the dark request did not start. Do not retry an uncertain paid request without explicit owner approval.
