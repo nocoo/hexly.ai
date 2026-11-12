@@ -1,0 +1,204 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v2.json",
+	"schemaVersion": 2,
+	"kind": "hexly-project-texture",
+	"project": "pi-superagent",
+	"version": "1.0.2",
+	"root": "/textures/pi-superagent/v1.0.2",
+	"canonical": "https://hexly.ai/projects/pi-superagent#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/pi-superagent/v1.0.2",
+		"version": "1.0.2",
+		"scope": "hexly-campaign",
+		"name": { "en": "Coordination tracks", "zh": "协作轨迹工作面" },
+		"description": {
+			"en": "Shallow branching tracks and paired junctions suggest coordination between persistent sessions.",
+			"zh": "浅浅的分支轨迹与成对连接点，呼应持久会话之间的协作。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": null,
+	"reviewCandidate": {
+		"path": "/logos/originals/pi-superagent-review-2026-11-12.png",
+		"sha256": "30dce4eab7240a9408fe73dc250c8f50009432f5be02a9022ba5c9fdaa911013",
+		"rgbaSha256": "8472bca36f2a97bde830a596258f16836ccf2e8fa5535e08ce81cae486ae8305",
+		"source": "artwork/logo-family/pi-superagent/2026-11-12-01/finishing/02",
+		"bytes": 2384330,
+		"width": 2048,
+		"height": 2048,
+		"kind": "candidate"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "79d1b735-4c93-4f33-9e66-fa479b4033a7",
+			"source": "artwork/brands/pi-superagent/texture-studies/2026-11-12-flare-onboarding-01/light",
+			"request": "/textures/pi-superagent/v1.0.2/source-light-request.json",
+			"response": "/textures/pi-superagent/v1.0.2/source-light-response.json",
+			"prompt": "/textures/pi-superagent/v1.0.2/texture-light-prompt.txt",
+			"approval": "/textures/pi-superagent/v1.0.2/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/pi-superagent/v1.0.2/texture-light.png",
+				"sha256": "aef11e37112301e36553cd35f9586702ed9934444b72ceef70865790d8b665ae",
+				"bytes": 1843353,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "ab6e70e8-871d-4814-93f8-ce87168c9935",
+			"source": "artwork/brands/pi-superagent/texture-studies/2026-11-12-flare-onboarding-01/dark",
+			"request": "/textures/pi-superagent/v1.0.2/source-dark-request.json",
+			"response": "/textures/pi-superagent/v1.0.2/source-dark-response.json",
+			"prompt": "/textures/pi-superagent/v1.0.2/texture-dark-prompt.txt",
+			"approval": "/textures/pi-superagent/v1.0.2/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/pi-superagent/v1.0.2/texture-dark.png",
+				"sha256": "d34bf505bfbb8977e7191a97d66f83886cfccb0343734aa00cb6d6edbe8054a1",
+				"bytes": 1746596,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1843353,
+			"sha256": "aef11e37112301e36553cd35f9586702ed9934444b72ceef70865790d8b665ae"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 269586,
+			"sha256": "667414d30fcc2562332a9d0b7af7f5b34db83290f74c67fb177f27d2e7879861"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6672,
+			"sha256": "9a7e9f1895de619173eb7bcb695ce5f61cd467709d4ecfb8bcb5396f232575b0"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1434,
+			"sha256": "b201ed6a347e6af21ea21ff2c61c0fec2a328304e6ecc1c169660698684f55e8"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "5f1ea2197e25715e445642844545799b09e914ac35b450f8a37fdb7419944378"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "002add21ff8a999aa3258d4140f8d117f4ccf2cfc46134745cc1a507d865e906"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 720,
+			"sha256": "02b21c5f4eec2ac546120a6a02ef3a7235a0ed5d6b96c98baeb6e51ed8934993"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1746596,
+			"sha256": "d34bf505bfbb8977e7191a97d66f83886cfccb0343734aa00cb6d6edbe8054a1"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 236768,
+			"sha256": "bc9dce2d32e2ab315fe5af92b0c4fb62552951a97767b18dabf6a6275ad14e02"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4712,
+			"sha256": "d03525d238cb3a8a6cfc908f6721803cfdf991c1810442aa56ae5a3788497410"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1503,
+			"sha256": "95e24c3c5ca00b692875a29ca83ce5114a7562e9a298b5bdca1595bfe76a9a20"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "03d0b4645ae4805517883c7230111b91493447d6eb698d41a4513fd4d7dd99af"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "0694c31d3f2d3e8aebf6728083a1bf4e0e3bad76315a22216a5348d9d654a6c2"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 728,
+			"sha256": "9d4f84f5cea55ed7b756a53be3634c945dd566274780f6a9edfc092ae79cd910"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4609,
+			"sha256": "a1c764ebae4221dfd5549352f988bc68ea9490a11f7964017e27eb29dd3c2caf"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1024,
+			"sha256": "6b64a551b454376543f5b845f7d66cb57622003a8372350407ea161c66d82eb2"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1766,
+			"sha256": "a85b10484972e71d27fbb8730d1611b9631e78ab43f9c63c7af6257d421e5992"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2561,
+			"sha256": "c7054a3c3a7977f80f82049a9724dd37f72ba1f0e15d9b9d603f942870d48bf8"
+		},
+		{
+			"path": "/textures/pi-superagent/v1.0.2/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3603,
+			"sha256": "0b920a8593465df97297464b7ff206b1395d33966d61d21b338b22a96933b4f2"
+		}
+	]
+}

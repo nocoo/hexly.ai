@@ -40,7 +40,9 @@ describe("approved textured icon delivery", () => {
 					inventory.files.some((file) => `https://h.no.mt/${file.key}` === url),
 				).toBe(true);
 			expect(api.logos.find((logo) => logo.id === "original")?.role).toBe(
-				"project-identity",
+				project.logo.kind === "candidate"
+					? "hexly-campaign"
+					: "project-identity",
 			);
 		}
 	});

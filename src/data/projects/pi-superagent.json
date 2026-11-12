@@ -1,0 +1,187 @@
+{
+	"id": "pi-superagent",
+	"repo": "pi-superagent",
+	"title": "Pi Superagent",
+	"emoji": "🤖",
+	"description": {
+		"en": "A local policy-governed agent coordinating persistent Pi sessions",
+		"zh": "以策略约束并协调持久 Pi 会话的本地智能体"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/pi-superagent",
+	"subject": "Brushed-metal robot head with dark face and blue optical eyes",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "candidate",
+		"original": "/logos/originals/pi-superagent-review-2026-11-12.png",
+		"thumbnail": "/logos/display/pi-superagent-160.webp",
+		"display": "/logos/display/pi-superagent-1024.webp",
+		"sourcePath": "Hexly-generated first-identity candidate; source adoption pending",
+		"sourceUrl": "/artwork/logo-family/pi-superagent/2026-11-12-01/review.html",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 2384330,
+		"sha256": "30dce4eab7240a9408fe73dc250c8f50009432f5be02a9022ba5c9fdaa911013"
+	},
+	"theme": {},
+	"colors": {
+		"primary": "#125f9c",
+		"background": "#dae4e4",
+		"ink": "#222527",
+		"palette": [
+			{
+				"color": "#125f9c",
+				"role": "primary",
+				"source": "Native Pi Superagent raw, sRGB pixel (1650, 1100)"
+			},
+			{
+				"color": "#dae4e4",
+				"role": "background",
+				"source": "Authored presentation background.base; not a product UI token"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "2275b837ffb57598ea93c424e3f8ee5e488ce406",
+		"profileSection": "Recent Projects",
+		"description": "A local policy-governed agent coordinating persistent Pi sessions",
+		"repositoryRevision": "c5d6b104f3ca7a4a0fc8105eaff132a0f0eb9c57",
+		"statusEvidence": {
+			"path": "docs/sources/onboarding-repositories-release-2026-11-12.json",
+			"sha256": "78a2f9101d27a8ae2515498c06e68c05a81fafc35abcf6b48b8f523227ffd2ed"
+		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Coordinate local task and coding work through policy-governed persistent Pi sessions; the domain model is carried over from the dsh-superagent prototype.",
+			"zh": "通过策略约束的持久 Pi 会话协调本地任务与编程工作；领域模型源自 dsh-superagent 原型。"
+		},
+		"techStack": [
+			{
+				"name": "Pi SDK / TypeScript",
+				"role": {
+					"en": "Coordinator, worker sessions and policy",
+					"zh": "协调器、执行会话与策略"
+				}
+			},
+			{
+				"name": "React / Vite",
+				"role": {
+					"en": "Local management panel",
+					"zh": "本地管理面板"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-11-12",
+			"revision": "c5d6b104f3ca7a4a0fc8105eaff132a0f0eb9c57",
+			"readmes": { "en": "README.md", "zh": "README.md" },
+			"sources": ["README.md", "docs/003-execution.md", "package.json"]
+		}
+	},
+	"family": {
+		"id": "2026-11-12-01",
+		"status": "review",
+		"updated": "2026-11-12",
+		"finishing": "02",
+		"root": "/logos/family/pi-superagent/2026-11-12-01/02",
+		"archive": "/artwork/logo-family/pi-superagent/2026-11-12-01/review.html",
+		"series": "material",
+		"model": "gpt-image-2.5-sunburst",
+		"foreground": {
+			"subject": {
+				"en": "Brushed-metal robot head with dark face and blue optical eyes",
+				"zh": "深色面板与蓝色光学眼睛的金属机器人头像"
+			},
+			"original": "/logos/family/pi-superagent/2026-11-12-01/02/transparent.png",
+			"display": "/logos/family/pi-superagent/2026-11-12-01/02/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "30dce4eab7240a9408fe73dc250c8f50009432f5be02a9022ba5c9fdaa911013"
+		},
+		"previous": null,
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A complete object",
+					"zh": "完整的物件"
+				},
+				"description": {
+					"en": "The selected Brushed-metal robot head with dark face and blue optical eyes keeps its complete silhouette and original proportions.",
+					"zh": "保留深色面板与蓝色光学眼睛的金属机器人头像的完整轮廓与原始比例。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Preserved material",
+					"zh": "保留原始材质"
+				},
+				"description": {
+					"en": "The approved native colors and material are preserved; the transparent foreground is separate from the presentation.",
+					"zh": "保留批准原图的色彩和材质，透明主体与展示背景分离。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Independent paper field",
+					"zh": "独立纸面"
+				},
+				"description": {
+					"en": "A project-specific paper field and soft contact shadows are separate from the identity.",
+					"zh": "项目专属纸面与柔和接触阴影独立于标识主体。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#dae4e4",
+				"role": "background",
+				"label": {
+					"en": "Designed paper",
+					"zh": "独立设计纸色"
+				},
+				"source": "artwork/logo-family/pi-superagent/2026-11-12-01/presentation.json background.base"
+			},
+			{
+				"color": "#125f9c",
+				"role": "primary",
+				"label": {
+					"en": "Native artwork sample",
+					"zh": "原图色彩取样"
+				},
+				"source": "Native pi-superagent raw PNG, sRGB pixel (1650, 1100)"
+			}
+		],
+		"sizeNote": {
+			"en": "The complete silhouette remains; fine surface detail recedes at 16 px.",
+			"zh": "小尺寸保留完整轮廓，16 像素时材质细节减弱。"
+		}
+	},
+	"brandTexture": {
+		"root": "/textures/pi-superagent/v1.0.2",
+		"version": "1.0.2",
+		"scope": "hexly-campaign",
+		"name": { "en": "Coordination tracks", "zh": "协作轨迹工作面" },
+		"description": {
+			"en": "Shallow branching tracks and paired junctions suggest coordination between persistent sessions.",
+			"zh": "浅浅的分支轨迹与成对连接点，呼应持久会话之间的协作。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/pi-superagent/v1.0.0",
+		"width": 2048,
+		"height": 2048
+	}
+}

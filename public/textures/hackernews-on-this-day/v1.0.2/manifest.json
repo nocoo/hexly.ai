@@ -1,0 +1,204 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v2.json",
+	"schemaVersion": 2,
+	"kind": "hexly-project-texture",
+	"project": "hackernews-on-this-day",
+	"version": "1.0.2",
+	"root": "/textures/hackernews-on-this-day/v1.0.2",
+	"canonical": "https://hexly.ai/projects/hackernews-on-this-day#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/hackernews-on-this-day/v1.0.2",
+		"version": "1.0.2",
+		"scope": "hexly-campaign",
+		"name": { "en": "Archive timeline paper", "zh": "归档时间线纸面" },
+		"description": {
+			"en": "Curved page-edge impressions and sparse timeline notches evoke browsing past dates.",
+			"zh": "弧形纸页压痕与稀疏时间刻度呼应对往年日期的浏览。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": null,
+	"reviewCandidate": {
+		"path": "/logos/originals/hackernews-on-this-day-review-2026-11-12.png",
+		"sha256": "bdb990a07d92a2953d06bb22dd27c5712a6ce12e6bf352bc4d09518e6a6fba5e",
+		"rgbaSha256": "ec66ce2ac16f7d0f57a42756d958d34ca96f93f5427f8b21116d847a164ff2f7",
+		"source": "artwork/logo-family/hackernews-on-this-day/2026-11-12-01/finishing/02",
+		"bytes": 2425564,
+		"width": 2048,
+		"height": 2048,
+		"kind": "candidate"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0e4c1fab-2f0b-4d93-bcec-e6941d55df3b",
+			"source": "artwork/brands/hackernews-on-this-day/texture-studies/2026-11-12-flare-onboarding-01/light",
+			"request": "/textures/hackernews-on-this-day/v1.0.2/source-light-request.json",
+			"response": "/textures/hackernews-on-this-day/v1.0.2/source-light-response.json",
+			"prompt": "/textures/hackernews-on-this-day/v1.0.2/texture-light-prompt.txt",
+			"approval": "/textures/hackernews-on-this-day/v1.0.2/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/hackernews-on-this-day/v1.0.2/texture-light.png",
+				"sha256": "eeef2c212af674a42c034ff15f469bd4fb1351ddaefd7b7777ed7db310c40afb",
+				"bytes": 1770095,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9ed59a2f-4eb1-4593-944a-5ac56bf8f4e3",
+			"source": "artwork/brands/hackernews-on-this-day/texture-studies/2026-11-12-flare-onboarding-01/dark",
+			"request": "/textures/hackernews-on-this-day/v1.0.2/source-dark-request.json",
+			"response": "/textures/hackernews-on-this-day/v1.0.2/source-dark-response.json",
+			"prompt": "/textures/hackernews-on-this-day/v1.0.2/texture-dark-prompt.txt",
+			"approval": "/textures/hackernews-on-this-day/v1.0.2/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/hackernews-on-this-day/v1.0.2/texture-dark.png",
+				"sha256": "d03f1ef854f91b8f9714ba6c44f32eb8c3f22963d84a3878f727333c7607e945",
+				"bytes": 1779079,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1770095,
+			"sha256": "eeef2c212af674a42c034ff15f469bd4fb1351ddaefd7b7777ed7db310c40afb"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 255500,
+			"sha256": "c4e8d65610c59eb23ac2348ac0c72696dab5b817d6862307b5ee8c89c6df9205"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 6098,
+			"sha256": "bc60aaa3f28d198afa89895f510668d77992066825fe1398e232914e403ca851"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1395,
+			"sha256": "bed2c4ceebc634c67a3046eaa7c447e3199dec32f27aec9644849cbe545d50e2"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "93939b4075eba9ba311364fd1d4cbf89f30b2ff8a3de39166e016c396f4ba0ee"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "b291c30f4545b1f94d7b69a67728e3a9c9f2699b508cbb48c831a57731801465"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 748,
+			"sha256": "d8d64800801d088e32900d38105e9ebb49c55b342a9bb2353fb0837ad8d12550"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1779079,
+			"sha256": "d03f1ef854f91b8f9714ba6c44f32eb8c3f22963d84a3878f727333c7607e945"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 264908,
+			"sha256": "965028bcf020528b20a0c6c16b9491bef7c948ddf1214d939d527a3d040fa36a"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 4730,
+			"sha256": "531d5ad68ae30eddd286f93e2228b362258043e0cb3bbb790a837d5eeb0bf69b"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1464,
+			"sha256": "aa0403b1d94cabfd20f3c3d0913397f881dba062afcea1880302b53292d1904a"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "8d6f3d4b2a43867a7c5f5bc79e9f7160b2b33fa6bc79a05019e0f19c7ccd8550"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "17242d59fb81d55a2de7cca20e765018cb02d75b58cb4a6955de3f8588eb8dc6"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 721,
+			"sha256": "b7b1b529ec196e884eb00b22450c2b405df908159c15c985dd6d6a4eb54e6760"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4739,
+			"sha256": "9ed95cade4c7b0b2e18a88ad4ec002c8fae5bc486f0d4dd64ef7513b5252401d"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 1040,
+			"sha256": "619276885a35efb9a04c4afb3f84a9b329811c4d45b8c4e418f5b2d8fcb57c55"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1761,
+			"sha256": "b4154e3ebbbc82080fdae54b0395e73610c05fb228acb8bf5cf8cd4a8e885fa7"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2566,
+			"sha256": "5f4f56445146c0963616f43e8603899651f95d0807da2d66bd445f4a7c14ea06"
+		},
+		{
+			"path": "/textures/hackernews-on-this-day/v1.0.2/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3692,
+			"sha256": "7d1e8ff7056eed8b2b7a542688d2c2752ce7d4ca4e7105d7615786bfa1aa49b2"
+		}
+	]
+}

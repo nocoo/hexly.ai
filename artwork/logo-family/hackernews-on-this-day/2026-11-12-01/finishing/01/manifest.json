@@ -1,0 +1,402 @@
+{
+	"createdAt": "2026-11-12T03:17:19.489Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "985c841a028dd057d81e9d8da5992fbbdbc7fbd18b298848e1d9872460b8021f",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "hackernews-on-this-day",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 249,
+			"maximumChroma": 7,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"foregroundRegionsAt2048": [
+				{
+					"name": "Opaque calendar page interior",
+					"points": [
+						[
+							550,
+							750
+						],
+						[
+							1500,
+							540
+						],
+						[
+							1670,
+							1400
+						],
+						[
+							760,
+							1630
+						],
+						[
+							570,
+							1500
+						]
+					]
+				}
+			],
+			"calibrationNote": "Sampled near-white matte at the canvas border. Protect the pale page interior; inspect full page, binding openings and light/dark edges after extraction."
+		},
+		"background": {
+			"base": "#ede6d9",
+			"light": "#f8f4ec",
+			"shade": "#dbcebd",
+			"motif": "#a8876c",
+			"grainAmplitude": 0.6,
+			"grainSeed": 61112001,
+			"motifOpacity": 0.17,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Archive timeline and page edges",
+				"description": "Fine parallel page edges and short dated timeline ticks evoke browsing the same calendar day across past years without adding a date to the original calendar.",
+				"layers": [
+					{
+						"d": "M94 150h190m-190 24h152m-152 24h175M732 802h190m-152 24h152m-175 24h175",
+						"tone": "motif",
+						"strokeWidth": 1.3
+					},
+					{
+						"d": "M150 104v124m24-100v100m24-124v124m24-100v100M800 748v124m24-100v100m24-124v124m24-100v100",
+						"tone": "highlight",
+						"strokeWidth": 1.1
+					},
+					{
+						"d": "M102 861h206M126 851v20m38-16v12m38-16v20m38-16v12m38-16v20",
+						"tone": "motif",
+						"strokeWidth": 1.7
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.74,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform inset of the complete calendar, retaining all original proportions."
+		},
+		"shadows": [
+			{
+				"color": [
+					91,
+					67,
+					45
+				],
+				"opacity": 0.13,
+				"blurAt2048": 40,
+				"offsetAt2048": [
+					12,
+					24
+				]
+			},
+			{
+				"color": [
+					91,
+					67,
+					45
+				],
+				"opacity": 0.08,
+				"blurAt2048": 9,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 1967712,
+		"foregroundPixels": 2226592,
+		"softEdgePixels": 9037,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 173,
+			"right": 1886,
+			"bottom": 1882
+		}
+	},
+	"placement": {
+		"scale": 0.74,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 266,
+			"top": 394,
+			"right": 1662,
+			"bottom": 1659
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 266.0523340295813,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 2190,
+			"sha256": "3ae3ee16d0591c3072027340d1807ceec58c36e3f82f301ab671668adb2b6e64"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 495,
+			"sha256": "2376eecb23210d7f80a4dfb47ee5f1f6a493cef09fc08c90979f9a631390c65f"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "matte-protection-mask.png",
+			"bytes": 30692,
+			"sha256": "bca091346c12937e5eeb864424f3ef5b3ab14ed7e6fc642aa4dbf367fad14c98"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4192010,
+			"sha256": "0247ca6d6a00bde42660c5361d7415f4fff9c0eec969cd06c11d2fe4ed1bf671"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 57826,
+			"sha256": "f3ba7de30220d8dfe3ff391db79fa6fddc24f1c83dee096083a5b6ffe44bf7b8"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 864,
+			"sha256": "0591f3dbc96ab62a5238b0134ddee3b4939c05069ead415a7f303a18e895958b"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1269677,
+			"sha256": "23402665186be030f093517be8235dfcd65b6090fb5d9c0175c208a09a82d7da"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2426083,
+			"sha256": "527264c5316b6a79e66f8129dc07aa54cce9e3da166c26dc06bde3e45b34e7f4"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 63037,
+			"sha256": "04afdfdc3f2266dfdbc2ef0a0b8f30e2c9a1cc14dd2d2c1b13b0dad34674cd9e"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 147769,
+			"sha256": "3269e6e2fea744bb2a2c8d3c81b3ab5a637aaebda1d00f195f1851aa80a764c6"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 106445,
+			"sha256": "73167cf1d959420bd5c2dd73227ca24d54633700b87cf7003364bf00e2c05320"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-2048.png",
+			"bytes": 2426083,
+			"sha256": "527264c5316b6a79e66f8129dc07aa54cce9e3da166c26dc06bde3e45b34e7f4"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-2048.png",
+			"bytes": 3567301,
+			"sha256": "146e3c5364a0485910c2eb79a388a6b5c367d42d5fbf948ac2a6400ab81a2c79"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-2048.png",
+			"bytes": 3521047,
+			"sha256": "72f6d47d377e97ef0c6216a159d7b05553734a769a80f87e9383d4f1db3bf844"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-1024.png",
+			"bytes": 598976,
+			"sha256": "b579e66d241cd7ba466b1748a9696311d23141aaf33e60e195b8d0ae369709ed"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-1024.png",
+			"bytes": 761246,
+			"sha256": "6ceaf5b1d25393b97ed31979eae62f880240c6dff74a1390e74a15897635433d"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-1024.png",
+			"bytes": 771968,
+			"sha256": "4c22857ac84f2fa75758e1f7ad840faeaede1cfa7bd042c7f7ef357f1d899f29"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-512.png",
+			"bytes": 152062,
+			"sha256": "caa503d3c1f31063be1f379d811b8d6d546ad841fda2f84447a183458016e7c0"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-512.png",
+			"bytes": 229465,
+			"sha256": "695f4aeed6e6862ab322de7f758475b10fad31128078e56ee477d6dda92940b3"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-512.png",
+			"bytes": 233588,
+			"sha256": "8c4a77a4e622c76ca6c76f7052d23c4f64d8c7f5cfded8d62e4ad12bbf9ca7c3"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-256.png",
+			"bytes": 40835,
+			"sha256": "71bbc610f88d866a3a77b15c803b4882b7a0033ca38c420d24582b826cb5d8c3"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-256.png",
+			"bytes": 51927,
+			"sha256": "d7a538bd7d978a0cf2dbb3b84c8ca8589d7e6e0caf0821b482cd7d80760d5e47"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-256.png",
+			"bytes": 55617,
+			"sha256": "cf0735616de6262da1ed50c8f58a23c4f80cc2bb635206ddfe92f88797fbc8ca"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-128.png",
+			"bytes": 11582,
+			"sha256": "0d9b1e92fd845f9aa5b5a361dfdc1da159356687274c4819008f392926b82e3c"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-128.png",
+			"bytes": 15853,
+			"sha256": "e7d78296b596f2033cd1a05a5f0b8b3ac4645f5310e59bda76c571f8d226ccb9"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-128.png",
+			"bytes": 17652,
+			"sha256": "b536e7d63a8a28a102d40d9a0e66d55ac670d6dd93c5f5c9351b670fb10320ac"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-64.png",
+			"bytes": 3691,
+			"sha256": "d60abe758d6b599dbbd3e288759ad635341200af8e29205e0723129df3ca0a6b"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-64.png",
+			"bytes": 5253,
+			"sha256": "3bc59ca15996b8746bd2d6a1d8ac705ff6017603466a2248db7ae33483d9d65e"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-64.png",
+			"bytes": 5980,
+			"sha256": "b77ae7c6919ba7a1bba1ba40fb6e940425f43de9c65cec4aea4fb7802a6281c4"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-48.png",
+			"bytes": 2440,
+			"sha256": "2116adf6d3f438dfcfccb1b716c5123079289a10be581b2b2769f0a33d3efa38"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-48.png",
+			"bytes": 3425,
+			"sha256": "bd1e463f5b771180e72c116866459d60caa82e52064a480d748040446b41264c"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-48.png",
+			"bytes": 3973,
+			"sha256": "160b3206989a9e91f7559bad27b15a0fd7b934f3bc7789e81bdbba05ac91e98f"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-32.png",
+			"bytes": 1391,
+			"sha256": "7e9c70a844c55b7ff3e72eb28531dd02ddba85715ef4776bb6443a3926273079"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-32.png",
+			"bytes": 2055,
+			"sha256": "8210217c8d7fb3c0f88f7b92ab3fbaf04e868bec3a0940f3b473b1cf0a8138bb"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-32.png",
+			"bytes": 2275,
+			"sha256": "e25a82cce6b54019df078dd43a943e2214ec28b8b97f62a448865b0cdf8231f5"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-24.png",
+			"bytes": 1002,
+			"sha256": "3adbaae24c9d0808916e18655db1fafeacbdb46037ea0f1ab386c0bf7b8cea6a"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-24.png",
+			"bytes": 1342,
+			"sha256": "c436d51ca6f3fe72c8c968dea39095f2bd6eaa401fb3b701acea74a0548b1665"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-24.png",
+			"bytes": 1527,
+			"sha256": "f003aeaa0717805216bd0cea0e9b3e872d80aaf30fbb3b560e9f5703cbfd198f"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-transparent-16.png",
+			"bytes": 614,
+			"sha256": "e5345ba4e21bd53a3b530b53d95656bfb02fb9db654f04e1118bb1eaf9f8ce61"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-icon-16.png",
+			"bytes": 769,
+			"sha256": "9e88baf57e984a65d2a84d3924ac1c4ee2a49aef4ddeccb478f65219ddc9ff42"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-rounded-16.png",
+			"bytes": 840,
+			"sha256": "fa6ccfe106fd9a8039b4adf2cb0483177b98e18bbf46b7b674e49a6d747206c6"
+		},
+		{
+			"path": "exports/hackernews-on-this-day-white-2048.png",
+			"bytes": 2233294,
+			"sha256": "7ca0dd23fe3db3d46638a3f015ee9035bc24d92cd40e5ffd6486580c0ab54ea3"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 560752,
+			"sha256": "9819b22690508220f9446b902a1efc94c8ca7471ac7f95c74778e844fa4f0548"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 564740,
+			"sha256": "49ca76dee5c3b0dbc7f70f0a26d92f009b44acffdfdd0cf05dd6170cc8a9945b"
+		}
+	]
+}

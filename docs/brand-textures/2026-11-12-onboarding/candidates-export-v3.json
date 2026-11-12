@@ -1,0 +1,83 @@
+{
+	"date": "2026-11-12",
+	"scope": "Hexly-only local review; source projects, profile, R2 and publication unchanged",
+	"sourceBatch": "docs/brand-textures/2026-11-12-onboarding/inventory.json",
+	"siteBaseline": "8b569323",
+	"tokenSource": "src/styles/base.css",
+	"projects": [
+		{
+			"id": "hackernews-on-this-day",
+			"title": "HN Today",
+			"archived": false,
+			"action": "generate",
+			"root": "/textures/hackernews-on-this-day/v1.0.2",
+			"version": "1.0.2",
+			"study": "artwork/brands/hackernews-on-this-day/texture-studies/2026-11-12-flare-onboarding-01",
+			"officialProjectIdentity": null,
+			"reviewCandidate": {
+				"path": "/logos/originals/hackernews-on-this-day-review-2026-11-12.png",
+				"sha256": "bdb990a07d92a2953d06bb22dd27c5712a6ce12e6bf352bc4d09518e6a6fba5e",
+				"rgbaSha256": "ec66ce2ac16f7d0f57a42756d958d34ca96f93f5427f8b21116d847a164ff2f7",
+				"source": "artwork/logo-family/hackernews-on-this-day/2026-11-12-01/finishing/02",
+				"bytes": 2425564,
+				"width": 2048,
+				"height": 2048,
+				"kind": "candidate"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "Archive paper",
+				"name": { "en": "Archive timeline paper", "zh": "归档时间线纸面" },
+				"description": {
+					"en": "Curved page-edge impressions and sparse timeline notches evoke browsing past dates.",
+					"zh": "弧形纸页压痕与稀疏时间刻度呼应对往年日期的浏览。"
+				},
+				"motif": "Page-edge impressions and timeline notches",
+				"rationale": "Layered page edges and timeline notches suggest the date-based archive without representing actual scores or historical rankings."
+			},
+			"productEvidence": {
+				"source": "https://github.com/nocoo/hackernews-on-this-day/blob/58f8771b492c41d2ecbb95e6933730cddc6bbb67/README.md",
+				"purpose": { "en": "Browse Hacker News stories from the same UTC date in earlier years.", "zh": "浏览往年相同 UTC 日期的 Hacker News 故事。" },
+				"inspectedRevision": "58f8771b492c41d2ecbb95e6933730cddc6bbb67"
+			}
+		},
+		{
+			"id": "pi-superagent",
+			"title": "Pi Superagent",
+			"archived": false,
+			"action": "generate",
+			"root": "/textures/pi-superagent/v1.0.2",
+			"version": "1.0.2",
+			"study": "artwork/brands/pi-superagent/texture-studies/2026-11-12-flare-onboarding-01",
+			"officialProjectIdentity": null,
+			"reviewCandidate": {
+				"path": "/logos/originals/pi-superagent-review-2026-11-12.png",
+				"sha256": "30dce4eab7240a9408fe73dc250c8f50009432f5be02a9022ba5c9fdaa911013",
+				"rgbaSha256": "8472bca36f2a97bde830a596258f16836ccf2e8fa5535e08ce81cae486ae8305",
+				"source": "artwork/logo-family/pi-superagent/2026-11-12-01/finishing/02",
+				"bytes": 2384330,
+				"width": 2048,
+				"height": 2048,
+				"kind": "candidate"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "Coordination work surface",
+				"name": { "en": "Coordination tracks", "zh": "协作轨迹工作面" },
+				"description": {
+					"en": "Shallow branching tracks and paired junctions suggest coordination between persistent sessions.",
+					"zh": "浅浅的分支轨迹与成对连接点，呼应持久会话之间的协作。"
+				},
+				"motif": "Branching tracks and junctions",
+				"rationale": "The marks evoke a coordinator routing work to persistent sessions; they are not literal circuitry or a security guarantee."
+			},
+			"productEvidence": {
+				"source": "https://github.com/nocoo/pi-superagent/blob/c5d6b104f3ca7a4a0fc8105eaff132a0f0eb9c57/README.md",
+				"purpose": { "en": "Coordinate local work through policy-governed persistent Pi sessions.", "zh": "通过策略约束的持久 Pi 会话协调本地工作。" },
+				"inspectedRevision": "c5d6b104f3ca7a4a0fc8105eaff132a0f0eb9c57"
+			}
+		}
+	]
+}

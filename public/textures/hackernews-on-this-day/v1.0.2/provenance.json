@@ -1,0 +1,112 @@
+{
+	"project": "hackernews-on-this-day",
+	"version": "1.0.2",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"design": {
+		"identityType": "material",
+		"language": "Archive paper",
+		"name": { "en": "Archive timeline paper", "zh": "归档时间线纸面" },
+		"description": {
+			"en": "Curved page-edge impressions and sparse timeline notches evoke browsing past dates.",
+			"zh": "弧形纸页压痕与稀疏时间刻度呼应对往年日期的浏览。"
+		},
+		"motif": "Page-edge impressions and timeline notches",
+		"rationale": "Layered page edges and timeline notches suggest the date-based archive without representing actual scores or historical rankings."
+	},
+	"productEvidence": {
+		"source": "https://github.com/nocoo/hackernews-on-this-day/blob/58f8771b492c41d2ecbb95e6933730cddc6bbb67/README.md",
+		"purpose": {
+			"en": "Browse Hacker News stories from the same UTC date in earlier years.",
+			"zh": "浏览往年相同 UTC 日期的 Hacker News 故事。"
+		},
+		"inspectedRevision": "58f8771b492c41d2ecbb95e6933730cddc6bbb67"
+	},
+	"officialProjectIdentity": null,
+	"reviewCandidate": {
+		"path": "/logos/originals/hackernews-on-this-day-review-2026-11-12.png",
+		"sha256": "bdb990a07d92a2953d06bb22dd27c5712a6ce12e6bf352bc4d09518e6a6fba5e",
+		"rgbaSha256": "ec66ce2ac16f7d0f57a42756d958d34ca96f93f5427f8b21116d847a164ff2f7",
+		"source": "artwork/logo-family/hackernews-on-this-day/2026-11-12-01/finishing/02",
+		"bytes": 2425564,
+		"width": 2048,
+		"height": 2048,
+		"kind": "candidate"
+	},
+	"existingKit": null,
+	"sourceInventory": "docs/brand-textures/2026-11-12-onboarding/candidates-export-v3.json",
+	"sourceInventorySha256": "e61f6b2d04223a1a0d60a01343366677ed5553bc5f48a6b31fbbb60eab8e7ad5",
+	"siteBaseline": "8b569323",
+	"tokenSource": "src/styles/base.css",
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "0e4c1fab-2f0b-4d93-bcec-e6941d55df3b",
+			"source": "artwork/brands/hackernews-on-this-day/texture-studies/2026-11-12-flare-onboarding-01/light",
+			"request": "/textures/hackernews-on-this-day/v1.0.2/source-light-request.json",
+			"response": "/textures/hackernews-on-this-day/v1.0.2/source-light-response.json",
+			"prompt": "/textures/hackernews-on-this-day/v1.0.2/texture-light-prompt.txt",
+			"approval": "/textures/hackernews-on-this-day/v1.0.2/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/hackernews-on-this-day/v1.0.2/texture-light.png",
+				"sha256": "eeef2c212af674a42c034ff15f469bd4fb1351ddaefd7b7777ed7db310c40afb",
+				"bytes": 1770095,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "9ed59a2f-4eb1-4593-944a-5ac56bf8f4e3",
+			"source": "artwork/brands/hackernews-on-this-day/texture-studies/2026-11-12-flare-onboarding-01/dark",
+			"request": "/textures/hackernews-on-this-day/v1.0.2/source-dark-request.json",
+			"response": "/textures/hackernews-on-this-day/v1.0.2/source-dark-response.json",
+			"prompt": "/textures/hackernews-on-this-day/v1.0.2/texture-dark-prompt.txt",
+			"approval": "/textures/hackernews-on-this-day/v1.0.2/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/hackernews-on-this-day/v1.0.2/texture-dark.png",
+				"sha256": "d03f1ef854f91b8f9714ba6c44f32eb8c3f22963d84a3878f727333c7607e945",
+				"bytes": 1779079,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"rights": "Owner-commissioned Azure OpenAI generated decoration under applicable provider terms. No third-party reference image or font was submitted. Existing Logo, font and product rights are unchanged. Do not describe raster output as handmade SVG or assert exclusive trademark rights.",
+	"delivery": {
+		"nativeSize": [1024, 1024],
+		"webpQuality": 90,
+		"cardSize": [320, 320],
+		"cardWebpQuality": 84,
+		"effort": 6,
+		"crop": false,
+		"recolor": false,
+		"repeat": false,
+		"surfaceOpacity": 0.45
+	},
+	"contrast": {
+		"method": "WCAG relative luminance on every native RGBA pixel composited over actual Hexly normal/hover surfaces, before the left-edge mask. Text remains fully opaque.",
+		"lightMinimum": 5.560561800331358,
+		"darkMinimum": 5.603168719822861,
+		"target": 4.7
+	},
+	"recordedAt": "2026-11-12T05:40:11.547Z",
+	"publication": "Export-time record. Upload receipts and the site release establish subsequent publication."
+}

@@ -1,0 +1,370 @@
+{
+	"createdAt": "2026-11-12T03:17:19.197Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "3bc820b7efafa7f2dd507bc44796a8ed78f00b1875c30b5b3e90c9919562365b",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "pi-superagent",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 249,
+			"maximumChroma": 7,
+			"backgroundRgb": [
+				252,
+				252,
+				252
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"calibrationNote": "Sampled near-white matte at the canvas border. Retain the pale metal shell and inspect the complete silhouette on both light and dark."
+		},
+		"background": {
+			"base": "#dae4e4",
+			"light": "#edf3f1",
+			"shade": "#bdcdce",
+			"motif": "#718d8f",
+			"grainAmplitude": 0.6,
+			"grainSeed": 61112002,
+			"motifOpacity": 0.17,
+			"highlightOpacity": 0.25,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Coordinator paths",
+				"description": "Quiet branching tracks and paired junctions evoke a coordinator routing work to persistent sessions, not a literal circuit or security claim.",
+				"layers": [
+					{
+						"d": "M76 190h104l34-34h84M180 190l32 32h98M726 826h100l40-40h78M826 826l34 34h84",
+						"tone": "motif",
+						"strokeWidth": 1.6
+					},
+					{
+						"d": "M102 150h72m-72 14h72M842 868h74m-74 14h74",
+						"tone": "highlight",
+						"strokeWidth": 1.2
+					},
+					{
+						"d": "M184 722h90l32 32h80M184 742h64l32 32h106",
+						"tone": "motif",
+						"strokeWidth": 1.3
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.74,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform inset of the complete robot head, retaining all original proportions."
+		},
+		"shadows": [
+			{
+				"color": [
+					47,
+					66,
+					70
+				],
+				"opacity": 0.13,
+				"blurAt2048": 40,
+				"offsetAt2048": [
+					12,
+					24
+				]
+			},
+			{
+				"color": [
+					47,
+					66,
+					70
+				],
+				"opacity": 0.08,
+				"blurAt2048": 9,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 2164850,
+		"foregroundPixels": 2029454,
+		"softEdgePixels": 10548,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 0,
+			"top": 234,
+			"right": 1890,
+			"bottom": 1744
+		}
+	},
+	"placement": {
+		"scale": 0.74,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 266,
+			"top": 439,
+			"right": 1665,
+			"bottom": 1556
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 266.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1869,
+			"sha256": "c2d85ba531de28dca31d1727004aa9943c2b2b2f26d764542eef68682a92690c"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 453,
+			"sha256": "6b73612adb31b93d9f87a689ab94012dab765c7a6e70cd00bdeb622f4b175d1b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3959560,
+			"sha256": "d44a737e3038bb66b106d874b842ece3dd8c8f8a3e85fd5cc1d335a9fc22cc1b"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 57117,
+			"sha256": "f74edd62e1b9336aa41ee8d99dab196afea67746e36f0002ccdd4aebd0490986"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 788,
+			"sha256": "a9c798175676ec67fb650dd4041fd260ca9d5ac74112b755807f4ae9fd575527"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1272073,
+			"sha256": "b6b30e6cee39f028a8690fac5db4f9af66f38153960c6b360f4fc94b019d2669"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 2384418,
+			"sha256": "eeb99f11f65c1a7e291d0e9ece60e205d5f36cf7da82df104edbb3a37eb2ae57"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 55808,
+			"sha256": "e05d0f2399292885db9e205b1cdbc4883212895f8e95ecd94ee13e015120011f"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 116313,
+			"sha256": "e8e5e49af9dc205e6d463cc4355382fae02fca7ff30e9d887c2ca41076064c37"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 80091,
+			"sha256": "6b20256e9047be2b974a8684b7e17cdede4c81cc21bd0c32121e0b8fd7067c61"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-2048.png",
+			"bytes": 2384418,
+			"sha256": "eeb99f11f65c1a7e291d0e9ece60e205d5f36cf7da82df104edbb3a37eb2ae57"
+		},
+		{
+			"path": "exports/pi-superagent-icon-2048.png",
+			"bytes": 3524072,
+			"sha256": "53d445f4b5bfd4b89e2817bc6c7327259f260a0d2cd8c58a5f32ae5271d0e2b4"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-2048.png",
+			"bytes": 3476611,
+			"sha256": "82277a472cc67b0c31764c9970e946c65ea5cd506ed6f4264f36a659c670c4ab"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-1024.png",
+			"bytes": 624532,
+			"sha256": "48251d0a18a59c45c6c92a9de0113f402767283882ab267bb7a92a08113e6369"
+		},
+		{
+			"path": "exports/pi-superagent-icon-1024.png",
+			"bytes": 782224,
+			"sha256": "8b36a56b0a762fe4018e6a2ae45c5258f2f99d6aebf9598e665bbad40100d600"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-1024.png",
+			"bytes": 792372,
+			"sha256": "70165b01e4b0f68dd8b82d78c2cb2584f0c07b19f2ad9f5800d583af1757ef32"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-512.png",
+			"bytes": 172250,
+			"sha256": "f84b03ed58b52c9cc094d8ea868b83c669003fd9e6392a2243163461d87640b0"
+		},
+		{
+			"path": "exports/pi-superagent-icon-512.png",
+			"bytes": 250342,
+			"sha256": "3ddfec58438d901c84526518b21cbc19056e9456857b15d05fa6461930e96fd8"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-512.png",
+			"bytes": 254195,
+			"sha256": "3ea660fa5f10f984287dd3366bd929ee132ed2b62cc3c5f50f2aadddfbac184a"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-256.png",
+			"bytes": 49908,
+			"sha256": "d8de916ce3c718806fb3762ec1dfa58480d8de781e125211fbe519104668af35"
+		},
+		{
+			"path": "exports/pi-superagent-icon-256.png",
+			"bytes": 61035,
+			"sha256": "7cc52ad58cdd8bad1a915fc6afefb471d75a0b22e2fa57065fdcbd6d8256627e"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-256.png",
+			"bytes": 64664,
+			"sha256": "8b96944dbef1e6177bf72b66682bf2ffdc0424130f058173c18b17949c90daa3"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-128.png",
+			"bytes": 14804,
+			"sha256": "a04d6f5b26550b8109daa7f952c1d35aa14be29ba9fd743cc7cd888b7f8a098d"
+		},
+		{
+			"path": "exports/pi-superagent-icon-128.png",
+			"bytes": 19075,
+			"sha256": "869dd8e7b48bae7550c4929692262a8bef5440c0b0c0953970eafdb60a0b8dcf"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-128.png",
+			"bytes": 20900,
+			"sha256": "bbed67e0cbdd09129d734910328018296bcfdb5343702c5af12906a48054c54e"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-64.png",
+			"bytes": 4580,
+			"sha256": "3164f41282abacc049aab71cd2f1f39b602d46d18fc5c7fc75490c740b15b95c"
+		},
+		{
+			"path": "exports/pi-superagent-icon-64.png",
+			"bytes": 6525,
+			"sha256": "5122bc591de2fad6c2f0b643a82a4cf30c45d5e25d0f4f88e1d760c259331196"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-64.png",
+			"bytes": 7271,
+			"sha256": "20816ef0751061857d07c6afcf1b2cef0e47d52288ebb5dd5be3b7951a3d4535"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-48.png",
+			"bytes": 2841,
+			"sha256": "5982abcb5206bf5bf6413dcbcfd7b9addc3759143a598fc809020830ff07c1fa"
+		},
+		{
+			"path": "exports/pi-superagent-icon-48.png",
+			"bytes": 3992,
+			"sha256": "c3d1da73868346c5c205005c8e31ad5973c2427bbc1f6cd6b257e2caaa28aa4c"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-48.png",
+			"bytes": 4522,
+			"sha256": "f5d42db451e8cc28f99f0ea76469c77600cb9f64582c8bdeb6f187243886d59c"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-32.png",
+			"bytes": 1524,
+			"sha256": "e89142c5723ed32b8fc8a04754727e87e557c0cfa605ba311147b85c223ce70d"
+		},
+		{
+			"path": "exports/pi-superagent-icon-32.png",
+			"bytes": 2307,
+			"sha256": "e1120614fdc6dfc4ce1a315c2a44daa65e1becc208e76453fb7390908f47b44e"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-32.png",
+			"bytes": 2521,
+			"sha256": "068762434f7fb07b41705bae9d01cb413439a799b2728511f4962f56802104d2"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-24.png",
+			"bytes": 998,
+			"sha256": "e93b05225ce4ba58c228f8202378793729471cd1aa6210e611dd5517e68b1ac4"
+		},
+		{
+			"path": "exports/pi-superagent-icon-24.png",
+			"bytes": 1493,
+			"sha256": "3d7eb0aad67921fa83b7b726682a68c4ed9a627a08e65542b7a5d73be6fe81dc"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-24.png",
+			"bytes": 1652,
+			"sha256": "fa0dbeb08a3148261e19d37083434c75d3985f819a18e05a763daba5e11a3874"
+		},
+		{
+			"path": "exports/pi-superagent-transparent-16.png",
+			"bytes": 580,
+			"sha256": "16fb46b80096abf3bfe2f3586dc2b9e083444be95f5c41cdee6a0d30ffaab874"
+		},
+		{
+			"path": "exports/pi-superagent-icon-16.png",
+			"bytes": 832,
+			"sha256": "fce7e85ed7ff7bb6adad041271358a8f954928791a0c3d526c33e787cf66caf4"
+		},
+		{
+			"path": "exports/pi-superagent-rounded-16.png",
+			"bytes": 904,
+			"sha256": "6911c3b513236edd4fddaa936c0f6a8a11b5fb9003130ab409c20c638d1bedc5"
+		},
+		{
+			"path": "exports/pi-superagent-white-2048.png",
+			"bytes": 2255703,
+			"sha256": "fab5206a9b236ede3e48b317876f0502d18b4f74b38af15c1785ffe554d7f702"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 602693,
+			"sha256": "987dffe823fbe2dbef009819fc89c1f99b0a23149afb7b73bd09aa40c9047547"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 606482,
+			"sha256": "467289f9293e1120c15c3cd6c02ab4e2859774e84604cc33a19e5e230649fdc5"
+		}
+	]
+}

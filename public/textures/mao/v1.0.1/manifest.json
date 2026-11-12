@@ -1,0 +1,203 @@
+{
+	"$schema": "https://hexly.ai/textures/schema-v1.json",
+	"schemaVersion": 1,
+	"kind": "hexly-project-texture",
+	"project": "mao",
+	"version": "1.0.1",
+	"root": "/textures/mao/v1.0.1",
+	"canonical": "https://hexly.ai/projects/mao#texture",
+	"scope": {
+		"id": "hexly-campaign",
+		"productUIChanged": false,
+		"officialIdentityChanged": false,
+		"officialIdentityRecolored": false,
+		"campaignReplacesOfficialIdentity": false
+	},
+	"catalogue": {
+		"root": "/textures/mao/v1.0.1",
+		"version": "1.0.1",
+		"scope": "hexly-campaign",
+		"name": { "en": "Poetry folio paper", "zh": "诗卷纸面" },
+		"description": {
+			"en": "Folded page contours and quiet ruled margins are pressed into a continuous folio surface.",
+			"zh": "折页轮廓与轻浅界线压印在连续的诗卷纸面上。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	},
+	"officialProjectIdentity": {
+		"path": "/logos/originals/mao-favicon-2026-11-12.svg",
+		"sha256": "59fba580c137819cae97c073f3cc515625f408b38532f9a31d950b4ac3974b7c",
+		"rgbaSha256": "a831cde43b337956c8087057f4e7d49df1aa18c3871852b5d03e5bf6e5102b2c",
+		"source": "https://github.com/nocoo/mao/blob/b76bd026f30d78f5c72dff7f602d6a0c15ab5f0f/assets/favicon.svg",
+		"bytes": 259,
+		"width": 64,
+		"height": 64,
+		"kind": "original"
+	},
+	"existingKit": null,
+	"generations": [
+		{
+			"theme": "light",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d696c88b-be66-47f7-bac3-3d791fc2643e",
+			"source": "artwork/brands/mao/texture-studies/2026-11-12-flare-onboarding-01/light",
+			"request": "/textures/mao/v1.0.1/source-light-request.json",
+			"response": "/textures/mao/v1.0.1/source-light-response.json",
+			"prompt": "/textures/mao/v1.0.1/texture-light-prompt.txt",
+			"approval": "/textures/mao/v1.0.1/source-light-raw-review.json",
+			"raw": {
+				"path": "/textures/mao/v1.0.1/texture-light.png",
+				"sha256": "2a40bfd8a78884b283087500c5ed3b4867833a3277270e8a4b6399aef178ab19",
+				"bytes": 1756285,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		},
+		{
+			"theme": "dark",
+			"model": "gpt-image-2.5-flare",
+			"provider": "Azure OpenAI",
+			"requestId": "d39d813e-2ce6-4f00-9e73-987c3b816c84",
+			"source": "artwork/brands/mao/texture-studies/2026-11-12-flare-onboarding-01/dark",
+			"request": "/textures/mao/v1.0.1/source-dark-request.json",
+			"response": "/textures/mao/v1.0.1/source-dark-response.json",
+			"prompt": "/textures/mao/v1.0.1/texture-dark-prompt.txt",
+			"approval": "/textures/mao/v1.0.1/source-dark-raw-review.json",
+			"raw": {
+				"path": "/textures/mao/v1.0.1/texture-dark.png",
+				"sha256": "fc16969adca3d7831cd0c1bd7d391777d2864830098444779dd7ccae57879652",
+				"bytes": 1693517,
+				"width": 1024,
+				"height": 1024
+			},
+			"acceptance": "owner",
+			"ownerReviewedExactBytes": true,
+			"crop": false,
+			"recolor": false
+		}
+	],
+	"files": [
+		{
+			"path": "/textures/mao/v1.0.1/texture-light.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1756285,
+			"sha256": "2a40bfd8a78884b283087500c5ed3b4867833a3277270e8a4b6399aef178ab19"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-light.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 245488,
+			"sha256": "c318c7ece2891b563ca75bba749443d9a65df36330e56ef771afc95a18411af5"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-light-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 5036,
+			"sha256": "f97f08d41777f209c5876ed4391dcd29577ef70ff697c7cc7609f95736b6e907"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-light-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1377,
+			"sha256": "9d20d612df30ebb6945a514fbc4976a9dec59fc8db0aaa075c92e79c1456e75f"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/source-light-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "b751026eb3f16e56a3a9cef6e3ca0f8141b8be37a30e1dea25d11efa306adab4"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/source-light-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "da4a7db4eb17b2078e871d6cd5a6c8a7dbf0401d332ad864a18e3cd842268386"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/source-light-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 731,
+			"sha256": "eeefe8e4a6577f6f6243d49b86167df509f55979f086e212f43fdd11a6953548"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-dark.png",
+			"role": "Untouched native GPT Image Flare PNG; full canvas and metadata preserved",
+			"bytes": 1693517,
+			"sha256": "fc16969adca3d7831cd0c1bd7d391777d2864830098444779dd7ccae57879652"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-dark.webp",
+			"role": "Full-size 1024-square WebP; complete canvas, no crop or recolor",
+			"bytes": 205922,
+			"sha256": "0800494493f868b266ef308467f752a3a70145c934ce6f31cb44496ca8804ab7"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-dark-320.webp",
+			"role": "320-square lightweight card derivative; complete canvas, no crop or recolor",
+			"bytes": 3628,
+			"sha256": "f5ef37339dd24c342101bf4c697de7727d2520be7a3cf38571ee3f38f692b3a7"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/texture-dark-prompt.txt",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1446,
+			"sha256": "cbba517dfc27d390de87f602e5fcdd8d93deb4f211c89ce3b0edcbc49e79e308"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/source-dark-request.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 1016,
+			"sha256": "11cb83597a8327205bf1922255a76b2cff647dd6c35b1b327fe81347b01362e8"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/source-dark-response.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 947,
+			"sha256": "127242e481fb2939c7783dff095929de22f707fe98725f2b48811c0d3a3c19ec"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/source-dark-raw-review.json",
+			"role": "Exact archived generation/acceptance record; no credentials",
+			"bytes": 720,
+			"sha256": "776732cd8ab7ff941c31c888f82603274f101f7e10d4e05c5c9f3b7c1a709f4a"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/provenance.json",
+			"role": "Design evidence, provider provenance, unchanged identity hashes, derivative and contrast recipe",
+			"bytes": 4420,
+			"sha256": "8f41ac22e14e811fb462b20fce802ec5506e13283ccf4d05fad7cbe5df0d330b"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/brief.md",
+			"role": "Original product-specific design brief",
+			"bytes": 974,
+			"sha256": "96e528f471f69960949c9eb84e348fb1670c98465e7cbdcacd0e5da180471bd7"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/license.txt",
+			"role": "Generated-output terms, MIT authored material, separate original identity and font rights",
+			"bytes": 1756,
+			"sha256": "d901af07829a0786c3cdbfa5110fc79f70f7560fbb5d16a8a267145d6c1d7950"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/guide.md",
+			"role": "Reusable surface and theme guidance, exact generation discovery, independent version maintenance",
+			"bytes": 2500,
+			"sha256": "c5bae2da1b640457530b75de06cf73a4b60f4300e2f1e9206f820f126c1b2604"
+		},
+		{
+			"path": "/textures/mao/v1.0.1/review.html",
+			"role": "Responsive whole-canvas review document; material downloads served by R2",
+			"bytes": 3427,
+			"sha256": "78f0ab8f263ec2e6f25b6c6884a1ea1d46fb1d2762e9137e53ec7583cf3f1d29"
+		}
+	]
+}
