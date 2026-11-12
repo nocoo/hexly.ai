@@ -138,8 +138,13 @@ export function textureManifestProblems(value: unknown): string[] {
 		problems.push(
 			"Texture must preserve the official identity and independent product UI",
 		);
-	const original = object(m.officialProjectIdentity);
+	const hasOriginal = m.officialProjectIdentity != null;
+	const original = object(
+		hasOriginal ? m.officialProjectIdentity : m.reviewCandidate,
+	);
 	if (
+		(hasOriginal && m.reviewCandidate !== undefined) ||
+		(!hasOriginal && original.kind !== "candidate") ||
 		!text(original.path) ||
 		!/^\/(logos|brands)\//.test(original.path) ||
 		!digest(original.sha256) ||

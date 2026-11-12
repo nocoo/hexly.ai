@@ -68,12 +68,16 @@ for (const project of projects) {
 			await readFile(`public${texture.root}/manifest.json`, "utf8"),
 		);
 		const problems = textureManifestProblems(manifest);
+		const reference =
+			project.logo.kind === "candidate"
+				? manifest.reviewCandidate
+				: manifest.officialProjectIdentity;
 		if (
 			problems.length ||
 			manifest.project !== project.id ||
 			manifest.version !== texture.version ||
 			JSON.stringify(manifest.catalogue) !== JSON.stringify(texture) ||
-			manifest.officialProjectIdentity.sha256 !== project.logo.sha256
+			reference?.sha256 !== project.logo.sha256
 		)
 			throw new Error(
 				`Texture manifest disagrees with catalogue: ${project.id}: ${problems.join("; ")}`,
