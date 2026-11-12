@@ -48,13 +48,14 @@ export function projectApi(project: Project) {
 			theme,
 		});
 	};
+	const candidate = project.logo.kind === "candidate";
 	add(
 		"original",
 		project.logo.original,
 		project.logo.width,
 		project.logo.height,
-		"original",
-		"project-identity",
+		candidate ? "transparent" : "original",
+		candidate ? "hexly-campaign" : "project-identity",
 		"original",
 	);
 	for (const size of [32, 64, 160, 256, 512, 1024]) {
@@ -63,8 +64,8 @@ export function projectApi(project: Project) {
 			project.logo.display.replace(/1024\.webp$/, `${size}.webp`),
 			size,
 			size,
-			project.logo.kind === "emoji" ? "transparent" : "original",
-			"project-identity",
+			project.logo.kind === "original" ? "original" : "transparent",
+			candidate ? "hexly-campaign" : "project-identity",
 			"navigation",
 		);
 	}
@@ -72,7 +73,7 @@ export function projectApi(project: Project) {
 	const presentation = project.presentationIcon;
 	if (family) {
 		const role =
-			family.foreground.sha256 === project.logo.sha256
+			!candidate && family.foreground.sha256 === project.logo.sha256
 				? "project-identity"
 				: "hexly-campaign";
 		add(
@@ -213,8 +214,8 @@ export function projectApi(project: Project) {
 			manifest: project.brandKit
 				? assetUrl(`${project.brandKit.root}/manifest.json`)
 				: null,
-			source: project.logo.sourceUrl,
-			originalSha256: project.logo.sha256,
+			source: candidate ? null : project.logo.sourceUrl,
+			originalSha256: candidate ? null : project.logo.sha256,
 		},
 	};
 }
@@ -240,7 +241,7 @@ const description = project.description.${locale};
 const github = project.github;
 const icon = project.icons.small;
 
-Expect a single JSON object: schemaVersion (1), id (Hexly slug), owner (GitHub user or organization), repo (GitHub repository name), title, description {en, zh}, emoji, category, archived, github, website (string or null), url (Hexly detail page), icons {small, large}, logos[], and brand {manifest, iconManifest, source, originalSha256}. Use owner/repo together as the integration key. Small/large icons are 64/512px. Each logo has id, url, width, height, format, background, role, usage and theme. URLs are absolute HTTPS CDN URLs; use the returned URLs unchanged and preserve aspect ratio with object-fit: contain. Use textContent or framework text bindings for text, not innerHTML.
+Expect a single JSON object: schemaVersion (1), id (Hexly slug), owner (GitHub user or organization), repo (GitHub repository name), title, description {en, zh}, emoji, category, archived, github, website (string or null), url (Hexly detail page), icons {small, large}, logos[], and brand {manifest, iconManifest, source, originalSha256}. Brand source and originalSha256 are null when no source-project identity has been adopted; review candidates have role hexly-campaign. Use owner/repo together as the integration key. Small/large icons are 64/512px. Each logo has id, url, width, height, format, background, role, usage and theme. URLs are absolute HTTPS CDN URLs; use the returned URLs unchanged and preserve aspect ratio with object-fit: contain. Use textContent or framework text bindings for text, not innerHTML.
 
 Logo selection:
 - Prefer icons.small for a 24–32px header/sidebar and icons.large for a larger project card. Active Hexly entries use the approved textured presentation: original family foreground colors and composition over a pale texture, with continuous corners already rendered. Do not add a CSS mask, tile or shadow. The manifest is brand.iconManifest when available; it records native dimensions, resampling and original source hashes.

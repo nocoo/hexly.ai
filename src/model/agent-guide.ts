@@ -69,7 +69,9 @@ export function agentGuide(
 			project.description.en,
 			`Project ID: ${project.id}. Catalogue state: ${project.archived ? "archived" : "active"}. This is not a product release or health assertion.`,
 			`Repository: ${project.repository}\n${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ?? "not listed"}`,
-			`Original project identity: ${assetUrl(project.logo.original)}\nOriginal SHA-256: ${project.logo.sha256}\nSource: ${project.logo.sourceUrl}`,
+			project.logo.kind === "candidate"
+				? `Hexly review candidate (not adopted by the source project): ${assetUrl(project.logo.original)}\nCandidate SHA-256: ${project.logo.sha256}\nStudy: ${project.logo.sourceUrl}`
+				: `Original project identity: ${assetUrl(project.logo.original)}\nOriginal SHA-256: ${project.logo.sha256}\nSource: ${project.logo.sourceUrl}`,
 			"Reuse the approved downloadable files. Preserve the original Logo geometry, proportions, colors and bytes. Hexly campaign styling belongs to this archive and Hexly promotional material; the product's own palette and UI remain independent.",
 		);
 		if (project.archived)

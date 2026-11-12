@@ -65,6 +65,36 @@ describe("the imported project catalogue", () => {
 		expect(projects.length).toBeGreaterThan(0);
 		expect(catalogueProblems(projects)).toEqual([]);
 	});
+	it("requires first-identity candidates to remain unadopted and match their reviewed foreground", () => {
+		if (!frogie.family) throw new Error("Missing family fixture");
+		const family = {
+			...frogie.family,
+			status: "review" as const,
+			previous: null,
+			foreground: { ...frogie.family.foreground, sha256: frogie.logo.sha256 },
+		};
+		const candidate = {
+			...frogie,
+			logo: { ...frogie.logo, kind: "candidate" as const },
+			family,
+		};
+		expect(catalogueProblems([candidate])).toEqual([]);
+		for (const invalid of [
+			{ ...candidate, family: undefined },
+			{ ...candidate, family: { ...family, status: "adopted" as const } },
+			{ ...candidate, family: { ...family, previous: frogie.family.previous } },
+			{
+				...candidate,
+				family: {
+					...family,
+					foreground: { ...family.foreground, sha256: "a".repeat(64) },
+				},
+			},
+		])
+			expect(catalogueProblems([invalid])).toContain(
+				`Invalid first-identity candidate: ${frogie.id}`,
+			);
+	});
 	it("provides a verified goal and stack for every active project", () => {
 		expect(
 			active.filter((project) => !project.overview).map(({ id }) => id),

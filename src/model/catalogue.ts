@@ -397,6 +397,13 @@ export function catalogueProblems(projects: Project[]): string[] {
 		)
 			problems.push(`Invalid source metadata: ${project.id}`);
 		if (
+			project.logo.kind === "candidate" &&
+			(project.family?.status !== "review" ||
+				project.family.previous !== null ||
+				project.family.foreground.sha256 !== project.logo.sha256)
+		)
+			problems.push(`Invalid first-identity candidate: ${project.id}`);
+		if (
 			(project.logo.fit !== undefined &&
 				!["contain", "cover"].includes(project.logo.fit)) ||
 			(project.logo.fit === "cover" &&

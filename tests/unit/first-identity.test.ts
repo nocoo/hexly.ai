@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { LogoReview } from "../../src/components/LogoReview";
+import { ProjectDetail } from "../../src/components/ProjectDetail";
 import { readProjects } from "../../src/data/read-projects";
 import type { Project } from "../../src/model/project";
 
@@ -31,6 +32,35 @@ describe("first project identities", () => {
 			expect(html).toContain('class="size-grid"');
 		},
 	);
+
+	it.each([
+		["en", "Hexly review candidate; the source project has not adopted it."],
+		["zh", "Hexly 预览候选，源项目尚未采用。"],
+	] as const)("labels an unadopted first identity in %s", (locale, note) => {
+		const candidate = {
+			...first,
+			logo: { ...first.logo, kind: "candidate" as const },
+		};
+		const html = renderToStaticMarkup(
+			createElement(ProjectDetail, {
+				projects: [candidate],
+				visible: [candidate],
+				locale,
+				state: {
+					view: "project",
+					category: "all",
+					query: "",
+					sort: "curated",
+					project: candidate.id,
+					anchor: "downloads",
+				},
+				searchRef: { current: null },
+				onChange: () => {},
+				onCopy: () => {},
+			}),
+		);
+		expect(html).toContain(note);
+	});
 
 	it("retains the old identity and source link for a redesign", () => {
 		const html = renderToStaticMarkup(

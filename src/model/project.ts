@@ -135,7 +135,7 @@ export interface Project {
 	reference: boolean;
 	archived: boolean;
 	logo: {
-		kind: "original" | "emoji";
+		kind: "original" | "emoji" | "candidate";
 		original: string;
 		thumbnail: string;
 		display: string;

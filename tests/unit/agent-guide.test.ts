@@ -109,6 +109,22 @@ describe("page-specific agent handoffs", () => {
 		}
 	});
 
+	it("distinguishes a first-identity review candidate from a source project identity", () => {
+		const original = projects.find((project) => project.id === "frogie");
+		if (!original?.family) throw new Error("Missing family fixture");
+		const candidate = {
+			...original,
+			logo: { ...original.logo, kind: "candidate" as const },
+			family: { ...original.family, status: "review" as const, previous: null },
+		};
+		const guide = agentGuide(`/projects/${candidate.id}`, [candidate]);
+		expect(guide.body).toContain(
+			"Hexly review candidate (not adopted by the source project)",
+		);
+		expect(guide.body).toContain(`Candidate SHA-256: ${candidate.logo.sha256}`);
+		expect(guide.body).not.toContain("Original project identity:");
+	});
+
 	it("reuses all five immutable endings across all templates without regeneration", () => {
 		expect(standardOutros).toMatchObject({
 			usage: "reuse-as-is",

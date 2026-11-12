@@ -208,6 +208,16 @@ describe("crawler discovery documents", () => {
 			`href="${escapeHtml(frogie.logo.sourceUrl)}"`,
 		);
 	});
+	it("labels a first-identity candidate honestly in crawler content", () => {
+		const candidate = {
+			...frogie,
+			logo: { ...frogie.logo, kind: "candidate" as const },
+		};
+		const html = pageForPath("/projects/frogie", [candidate]).bodyHtml;
+		expect(html).toContain("Download review candidate");
+		expect(html).toContain("Source adoption pending");
+		expect(html).not.toContain("Download original");
+	});
 	it("makes optional media readable to crawlers and escapes its metadata", () => {
 		const video = {
 			...videoFixture,

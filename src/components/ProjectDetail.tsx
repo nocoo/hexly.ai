@@ -483,7 +483,11 @@ export function ProjectDetail({
 							)}
 							<div className="identity-footer">
 								<p>
-									{project.logo.kind === "original" ? t.preserved : t.emojiNote}
+									{project.logo.kind === "original"
+										? t.preserved
+										: project.logo.kind === "candidate"
+											? t.candidateNote
+											: t.emojiNote}
 									<AssetLink
 										href={project.logo.sourceUrl}
 										target="_blank"
