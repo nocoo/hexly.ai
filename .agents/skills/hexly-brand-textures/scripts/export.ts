@@ -199,6 +199,9 @@ for (const row of rows) {
 			approval.ownerReviewedExactBytes,
 			approval.acceptance === "owner",
 		);
+		assert.equal(approval.inspection?.fullCanvas, true);
+		assert.equal(approval.inspection?.productionCrop, false);
+		assert.equal(approval.inspection?.repeat, false);
 		assert.equal(response.status, "succeeded");
 		assert.equal(response.outputs.length, 1);
 		assert.equal(response.outputs[0].sha256, sha(raw));
