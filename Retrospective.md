@@ -677,7 +677,7 @@ scan that reports nothing may have scanned nothing.
 Biome's YAML formatter and yamllint's `comments` rule demand opposite spacing
 before a trailing `#` comment, so the first `quality-slots.yml` failed S2 while
 satisfying S3. Workflow YAML is now excluded from Biome, because the shared CI
-standard (full SHA plus `  # v2026.13`) and yamllint agree. Two gates must not
+standard (full SHA plus a two-space `  # vX.Y.Z` tag comment) and yamllint agree. Two gates must not
 own the same file without agreeing on the rule.
 
 ## 2026-11-11: An injected failure only proves what its reason says
