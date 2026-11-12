@@ -1,0 +1,32 @@
+{
+	"project": "hexly-ai",
+	"study": "2026-11-13-01",
+	"sourceRevision": "7b9d0925ded4c5da943718698f50921ccf55af0e",
+	"references": [
+		{
+			"index": 1,
+			"path": "references/owner-reference.jpg",
+			"originalPath": "/Users/nocoo/Downloads/grok-image-e9d02219-2c05-4d42-a07f-e9641fab4c20.jpg",
+			"sha256": "9f5b61e9db102cf58433eff5cf7f1766fac7ffa7d2f63edbadc54e53e9856d2f",
+			"width": 1408,
+			"height": 1408,
+			"role": "Authoritative emblem geometry, near-frontal orientation and satin-matte relief; exclude original colors, wordmark, framing and external shadow.",
+			"provenance": "Owner-supplied reference located by exact filename in Downloads; copied byte-for-byte before generation. The original generation model is not independently verified.",
+			"authorization": "Owner requested reference-guided generation in this session; no third-party license or publication permission is inferred."
+		}
+	],
+	"colorEvidence": {
+		"value": "#bf5c3c",
+		"sourcePath": "src/styles/base.css",
+		"selector": ":root --accent",
+		"sha256": "1ddc87b75945ff9f0e0e95e3d26bd8a9aafeb6b6849f2c103e3cea87c1c86315",
+		"cataloguePath": "src/data/projects/hexly-ai.json",
+		"catalogueSha256": "6f2a2964638558c6f7c88c10685d3f2e3250fb5f26fc5714f693b8b535d4c70a"
+	},
+	"generator": {
+		"path": "artwork/logo-family/tools/generate_azure.py",
+		"sha256": "5f16ebeb5dd1cec2d8a398106181431b79101795ca464ad8fb3ef157dcec9173",
+		"model": "gpt-image-2.5-sunburst"
+	},
+	"storage": "Reference and returned image remain ignored local workshop binaries; no R2 publication is authorized by this raw-review request."
+}
