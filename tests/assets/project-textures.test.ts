@@ -213,6 +213,25 @@ describe("independent campaign textures", () => {
 		}
 	});
 
+	it("distinguishes a first-identity review candidate from an official source identity", () => {
+		const candidate = { ...fixture.officialProjectIdentity, kind: "candidate" };
+		const manifest = {
+			...fixture,
+			officialProjectIdentity: null,
+			reviewCandidate: candidate,
+		};
+		expect(textureManifestProblems(manifest)).toEqual([]);
+		for (const invalid of [
+			{ ...manifest, reviewCandidate: undefined },
+			{ ...manifest, reviewCandidate: { ...candidate, kind: "original" } },
+			{ ...manifest, reviewCandidate: { ...candidate, sha256: "invalid" } },
+			{ ...manifest, officialProjectIdentity: fixture.officialProjectIdentity },
+		])
+			expect(textureManifestProblems(invalid)).toContain(
+				"Texture must retain original file and pixel hashes",
+			);
+	});
+
 	it("rejects misattribution, unsafe paths, missing themes and fabricated acceptance", () => {
 		expect(textureManifestProblems(fixture)).toEqual([]);
 		expect(

@@ -4,6 +4,19 @@
 	"title": "Hexly independently versioned campaign texture pack",
 	"description": "Generated decoration for Hexly pages and promotional materials. Official identity hashes and colors, independent product UI, archived state and historical kits remain unchanged. Cross-field path/theme and exact-byte checks are enforced by the repository.",
 	"type": "object",
+	"oneOf": [
+		{
+			"properties": { "officialProjectIdentity": { "type": "object" } },
+			"not": { "required": ["reviewCandidate"] }
+		},
+		{
+			"properties": {
+				"officialProjectIdentity": { "type": "null" },
+				"reviewCandidate": { "type": "object" }
+			},
+			"required": ["reviewCandidate"]
+		}
+	],
 	"required": [
 		"schemaVersion",
 		"kind",
@@ -137,8 +150,9 @@
 				}
 			}
 		},
+		"reviewCandidate": { "$ref": "#/properties/officialProjectIdentity" },
 		"officialProjectIdentity": {
-			"type": "object",
+			"type": ["object", "null"],
 			"required": [
 				"path",
 				"sha256",

@@ -51,6 +51,12 @@ remain authoritative. Generated surfaces are **Hexly campaign decoration**, neve
 replacement project identities or product releases. Original file and every
 decoded RGBA pixel are regression protected. Historical Snail assets are unchanged.
 
+If a new project has no source-project Logo, a texture manifest records
+`officialProjectIdentity: null` and an exact-hash `reviewCandidate` instead. The
+candidate is Hexly campaign artwork, not a source-adopted identity. Both forms
+retain immutable file and decoded-pixel evidence; existing published manifests
+remain unchanged.
+
 Animals and birds use foliage appropriate to the actual identity's environment:
 lily pads for Frogie, grassland seed heads for Pew, mopane-like paired leaves for
 Ellie, river willow for Otter, orchard leaves for Dove. Flowers remain sparse and
