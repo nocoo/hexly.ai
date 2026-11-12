@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-12: A texture schema change touched an immutable asset
+
+While adding preview-only identities, the agent extended the existing `public/textures/schema-v1.json` in place without first checking its R2 inventory. The local inventory guard rejected the changed hash; no object was uploaded or overwritten. The original schema bytes were restored and candidate-aware manifests moved to a new schema-v2. Two unuploaded candidate exports made under the invalid schema were retained as local diagnostic artifacts and replaced with new versioned exports.
+
+Before editing public schemas or manifests, check their inventory and published hashes, then create a new schema/version rather than rewriting an immutable asset. Run the inventory guard before considering the work publishable.
+
 ## 2026-11-12: Herdr discovery without an explicit request
 
 During project onboarding, the agent inspected the Herdr agent list to check for concurrent writers even though the Herdr skill restricts its use to an explicit user request. No panes or other sessions were changed. Being inside Herdr and wanting to coordinate work are not sufficient authorization; use repository-local Git status and existing handoff records instead, and invoke Herdr only when explicitly requested.
