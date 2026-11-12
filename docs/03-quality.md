@@ -181,29 +181,23 @@ base interval, because native watchers exceeded 10,000 descriptors on macOS.
 
 ## Release
 
-`release.yml` proves the source run first: `release-source` (base-ci v2026.14) requires
-the successful `quality / Z1: Gate` check on the proven SHA, then
-`deploy-worker.yml` re-proves the run, applies D1 migrations, deploys and verifies both
-`hexly.ai` and `status.hexly.ai`.
+`release.yml` has one job: it calls `deploy-worker.yml` at base-ci v2026.15, which proves
+the source CI run, requires the successful `quality / Z1: Gate` check on the proven SHA
+(`required-quality-check` default), applies D1 migrations, deploys and verifies both
+`hexly.ai` and `status.hexly.ai`. On deploy run
+[43129450276](https://github.com/nocoo/hexly.ai/actions/runs/43129450276) the upstream
+`Resolve release source` step downloaded `base-ci@ed44600d` with
+`RELEASE_REQUIRED_QUALITY_CHECK=quality / Z1: Gate`, so the release gate is the upstream
+composite's own work; the repository no longer carries a proof job of its own.
 
-The v2026.13 defect — the deploy workflow ignoring the quality requirement because it
-pinned an older composite — is fixed upstream in v2026.14, which forwards
-`required-quality-check` (default `quality / Z1: Gate`) and `require-quality-check`.
+base-ci v2026.14 was unusable: its deploy workflows pinned the internal `release-source`
+composite to `e215ac80`, a commit that does not exist upstream, so any consumer failed at
+action resolution. v2026.15 pins `ed44600d`, which exists and enforces the quality check.
+The repository moved every reference — slot actions, deploy workflow — to v2026.15
+(`777bbe4f`), and only after observing that deploy did it delete its local proof job.
 
-The deploy step still calls `deploy-worker.yml` at v2026.13 because the v2026.14 workflow
-pins the internal `release-source` composite to `e215ac80`, a commit that does not exist
-in `nocoo/base-ci`: a probe job run fails with
-`Unable to resolve action nocoo/base-ci@e215ac80…`, while the composite at the tag SHA
-resolves and runs normally. Calling it would break every deployment before any proof ran,
-so the repository keeps the v2026.13 deploy workflow and enforces Z1 itself with the
-v2026.14 composite.
-
-Revisit the deploy pin when `nocoo/base-ci` republishes `deploy-worker.yml` with a
-resolvable internal pin: move the `uses:` line to that tag SHA and delete this repository's
-proof job once the reusable workflow enforces the check itself. Moving the pin without that
-recheck reproduces the failure the probe recorded. Manual CI dispatch also reads both
-origins without deploying; a manual dispatch that skips deployment is not deployment
-evidence.
+Manual CI dispatch also reads both origins without deploying; a manual dispatch that skips
+deployment is not deployment evidence.
 
 ## Not selected
 

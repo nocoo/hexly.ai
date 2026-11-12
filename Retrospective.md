@@ -716,3 +716,14 @@ probe on a throwaway branch proved the difference in one run: the pinned ref fai
 failed later on deliberately mismatched proof inputs. Trust the run, not the source
 reading: a forwarded input is worthless if the action it forwards to cannot be fetched,
 and the fallback stays until the upstream artifact actually executes.
+
+## 2026-11-12: Replace a broken upstream release artifact, do not patch around it
+
+base-ci v2026.14 shipped deploy workflows whose internal `release-source` pin pointed at
+a commit that does not exist, so the probe recorded earlier stayed in force and the
+repository kept its own proof job on v2026.13. v2026.15 pins a reachable composite that
+forwards `required-quality-check`, so every reference moved to that tag, the deploy ran
+through the upstream proof, and only then was the local job deleted. Record the exact
+evidence that licenses a deletion — here, the deploy log line
+`RELEASE_REQUIRED_QUALITY_CHECK=quality / Z1: Gate` from commit `ed44600d` — so the
+removal is a verified handover rather than an assumption.
