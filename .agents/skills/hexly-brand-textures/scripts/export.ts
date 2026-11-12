@@ -388,8 +388,8 @@ for (const row of rows) {
 	for (const [name, file] of files)
 		await writeFile(`${directory}/${name}`, file.bytes);
 	const manifest = {
-		$schema: "https://hexly.ai/textures/schema-v1.json",
-		schemaVersion: 1,
+		$schema: `https://hexly.ai/textures/schema-v${row.reviewCandidate ? 2 : 1}.json`,
+		schemaVersion: row.reviewCandidate ? 2 : 1,
 		kind: "hexly-project-texture",
 		project: row.id,
 		version: row.version,

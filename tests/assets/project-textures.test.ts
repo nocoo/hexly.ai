@@ -217,11 +217,14 @@ describe("independent campaign textures", () => {
 		const candidate = { ...fixture.officialProjectIdentity, kind: "candidate" };
 		const manifest = {
 			...fixture,
+			schemaVersion: 2,
 			officialProjectIdentity: null,
 			reviewCandidate: candidate,
 		};
 		expect(textureManifestProblems(manifest)).toEqual([]);
 		for (const invalid of [
+			{ ...manifest, schemaVersion: 1 },
+			{ ...manifest, officialProjectIdentity: undefined },
 			{ ...manifest, reviewCandidate: undefined },
 			{ ...manifest, reviewCandidate: { ...candidate, kind: "original" } },
 			{ ...manifest, reviewCandidate: { ...candidate, sha256: "invalid" } },

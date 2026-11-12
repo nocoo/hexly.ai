@@ -117,7 +117,7 @@ export function textureManifestProblems(value: unknown): string[] {
 	const problems: string[] = [];
 	const root = `/textures/${m.project}/v${m.version}`;
 	if (
-		m.schemaVersion !== 1 ||
+		(m.schemaVersion !== 1 && m.schemaVersion !== 2) ||
 		m.kind !== "hexly-project-texture" ||
 		!text(m.project) ||
 		!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(m.project) ||
@@ -143,8 +143,14 @@ export function textureManifestProblems(value: unknown): string[] {
 		hasOriginal ? m.officialProjectIdentity : m.reviewCandidate,
 	);
 	if (
-		(hasOriginal && m.reviewCandidate !== undefined) ||
-		(!hasOriginal && original.kind !== "candidate") ||
+		(hasOriginal &&
+			(m.schemaVersion !== 1 ||
+				m.reviewCandidate !== undefined ||
+				original.kind === "candidate")) ||
+		(!hasOriginal &&
+			(m.officialProjectIdentity !== null ||
+				m.schemaVersion !== 2 ||
+				original.kind !== "candidate")) ||
 		!text(original.path) ||
 		!/^\/(logos|brands)\//.test(original.path) ||
 		!digest(original.sha256) ||
