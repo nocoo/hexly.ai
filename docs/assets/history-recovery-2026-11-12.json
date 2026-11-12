@@ -1,0 +1,54 @@
+{
+	"observedAt": "2026-11-12T06:53:07Z",
+	"scope": "Read-only investigation and exact-byte local recovery during hexly.ai release preparation",
+	"productionWrites": false,
+	"baseline": "Pre-existing source-archive entries in the published inventory; no new onboarding media are missing locally.",
+	"recovery": {
+		"existingInventoryCopies": 30,
+		"verifiedSiblingCopies": 5,
+		"reproducedFundlyFinishingPaths": 47,
+		"reproducedChameloFinishingPaths": 4,
+		"method": "Reproduction used the accepted native PNG, recorded settings and exact frozen finishing tool; only output bytes matching the original inventory SHA-256 were restored via the asset cache. Existing files were not overwritten."
+	},
+	"remainingPaths": 8,
+	"remainingUniqueHashes": 6,
+	"matchingPublicationReceipts": 0,
+	"notes": [
+		"The Fundly 44cef6 source-archive URL returned HTTP 404 in a direct public request. A separate custom HEAD client returned 403 for its batch; those 403 responses do not establish that individual objects are absent.",
+		"These are historical source inputs and unselected native generations, not the current public project icons. Native generations cannot be recreated from their prompts while preserving their original hashes.",
+		"Find an exact-byte backup, verify SHA-256, restore missing local paths without overwriting existing files, and re-run the full history check. Do not remove historical inventory entries or weaken validation."
+	],
+	"missing": [
+		{
+			"sha256": "64db44ffb8de5a991e09cc250de0dcb328f6713357387500be77fdc595bd9624",
+			"bytes": 2122060,
+			"sources": ["artwork/logo-family/chamelo/2026-10-24-01/raw/generated.png"]
+		},
+		{
+			"sha256": "4b3bf0181f72979a21aee71cc1dd16e46c39dd7d25add12f4bc6c48ea50d2226",
+			"bytes": 1054040,
+			"sources": ["artwork/logo-family/chamelo/2026-10-24-02/input/chamelo-home-2026-10-24.png"]
+		},
+		{
+			"sha256": "2a6ff9f124ec46fb104e91e6a303ad1fe4729ebe240db028f4515c7b4670db9d",
+			"bytes": 3837216,
+			"sources": ["artwork/logo-family/chamelo/2026-10-24-02/raw/generated.png"]
+		},
+		{
+			"sha256": "0e919fed28bde12893a1cbb85f64c34ff7e8c435104e17460900fd4f52d979aa",
+			"bytes": 5026216,
+			"sources": ["artwork/logo-family/chamelo/2026-10-24-03/raw/generated.png", "artwork/logo-family/chamelo/2026-10-24-04/input/study-03-raw.png"]
+		},
+		{
+			"sha256": "25f1ad65eebe6d3c32344c46f37c09cfafa0f43a3857541717fa2dc63b3e9dd1",
+			"bytes": 5689461,
+			"sources": ["artwork/logo-family/chamelo/2026-10-24-04/raw/generated.png", "artwork/logo-family/chamelo/2026-10-24-05/input/study-04-raw.png"]
+		},
+		{
+			"sha256": "44cef636ed8ec8007adab0924da86170db94baee54356eb9be206b368e4fbe82",
+			"bytes": 1796382,
+			"sources": ["artwork/logo-family/fundly/2026-10-28-01/raw/generated.png"],
+			"publicOriginStatus": 404
+		}
+	]
+}
