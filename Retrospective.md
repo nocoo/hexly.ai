@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-12: Texture approvals omitted required inspection fields
+
+The three onboarding texture pairs were approved and exported before their review records included the existing full-canvas, no-crop and no-repeat inspection fields. The focused asset test caught all three exports. No bytes were published. The owner decisions and raw images remain unchanged; the incomplete local exports were retained as diagnostics and the packs were re-exported under new versions after recording the actual inspection.
+
+Read the current asset-test contract before freezing new packs, and run the affected texture tests before inventory or publication. Never rewrite a frozen pack merely to satisfy the test.
+
 ## 2026-11-12: A texture schema change touched an immutable asset
 
 While adding preview-only identities, the agent extended the existing `public/textures/schema-v1.json` in place without first checking its R2 inventory. The local inventory guard rejected the changed hash; no object was uploaded or overwritten. The original schema bytes were restored and candidate-aware manifests moved to a new schema-v2. Two unuploaded candidate exports made under the invalid schema were retained as local diagnostic artifacts and replaced with new versioned exports.
