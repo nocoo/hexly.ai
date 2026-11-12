@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-12: Historical recovery probing did not stop on access errors
+
+During release preparation, full-history hydration found a pre-existing missing Chamelo source archive whose public URL returned 404. A subsequent custom parallel HEAD audit used a different client and continued scheduling requests after receiving 403 responses. Those results do not prove the individual objects are absent; no remote object was written, modified or deleted. An earlier read-only recovery scan also assumed a Python 3.11 hashing helper that the machine's Python lacked, and stopped before modifying files.
+
+Use the existing bounded asset helper or perform one representative request first; stop on 401/403 instead of fanning out. Verify the runtime before choosing standard-library APIs. Restore only byte-identical assets from known local copies and keep unresolved historical archives explicit rather than weakening the history check.
+
 ## 2026-11-12: New review pages used the workshop raw URL
 
 The three local review pages linked their untouched generations through workshop-relative paths. The isolated preview loaded those files, but the complete Chromium suite rejected the links because native downloads must use the canonical `/logos/family/.../raw.png` archive. No site or material was published. The pages now use the canonical family master, raw and prompt paths; the exact-byte download journey remains a required gate.
