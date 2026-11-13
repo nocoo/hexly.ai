@@ -63,79 +63,6 @@
 	min-width: 0;
 	flex-shrink: 1;
 }
-.status-signal {
-	display: flex;
-	align-items: center;
-	gap: var(--space-24);
-	padding-right: 0;
-	color: var(--muted);
-}
-.status-signal > div:last-child {
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-8);
-	font: 9px var(--mono);
-	letter-spacing: 0.045em;
-}
-.status-signal .status-signal-label {
-	color: var(--status-color);
-	font-size: 11px;
-	letter-spacing: 0.16em;
-	margin-bottom: var(--space-4);
-}
-.status-signal-orbit {
-	position: relative;
-	width: 104px;
-	height: 104px;
-	border: 1px solid var(--line);
-	border-radius: 50%;
-	display: grid;
-	place-items: center;
-}
-.status-signal-orbit::before,
-.status-signal-orbit::after {
-	content: "";
-	position: absolute;
-	inset: 12px;
-	border: 1px solid color-mix(in srgb, var(--status-color) 19%, transparent);
-	border-radius: inherit;
-}
-.status-signal-orbit::after {
-	inset: 27px;
-	background: color-mix(in srgb, var(--status-color) 5%, transparent);
-}
-.status-signal-orbit > .icon {
-	color: var(--status-color);
-	width: 27px;
-	height: 27px;
-	z-index: 1;
-}
-.status-signal-orbit > span {
-	position: absolute;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background: var(--status-color);
-	box-shadow: 0 0 0 4px var(--page);
-}
-.status-signal-orbit > span:nth-child(1) {
-	top: 7px;
-	left: 20px;
-}
-.status-signal-orbit > span:nth-child(2) {
-	right: -3px;
-	top: 50%;
-	width: 4px;
-	height: 4px;
-	background: var(--accent);
-}
-.status-signal-orbit > span:nth-child(3) {
-	bottom: -3px;
-	left: 47px;
-	width: 4px;
-	height: 4px;
-	opacity: 0.5;
-}
 .status-overview {
 	border: 1px solid color-mix(in srgb, var(--status-color) 32%, var(--line));
 	border-radius: 16px;
@@ -794,17 +721,6 @@
 }
 
 @media (max-width: 1150px) {
-	.status-signal {
-		padding-right: 0;
-		gap: 16px;
-	}
-	.status-signal-orbit {
-		width: 85px;
-		height: 85px;
-	}
-	.status-signal-orbit > span:nth-child(3) {
-		left: 39px;
-	}
 	.status-service-main {
 		grid-template-columns: 192px minmax(0, 1fr) 128px;
 		gap: var(--space-24);

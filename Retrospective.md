@@ -1,5 +1,13 @@
 # Retrospective
 
+## 2026-11-13: Three.js integration checks exposed install and rendering assumptions
+
+The temporary Bun mirror rewrote registry fields throughout the generated lockfile. Before committing, only those resolver fields were normalized, every pre-existing package entry and integrity value was compared with HEAD, and a frozen install was verified byte-stable. The first loose URL check also matched the legitimate `https` dependency in the vendored PPTX package; parsing each package tuple's resolver slot avoids that false positive without deleting a real dependency.
+
+The initial reference survey assumed a `src/` layout and ran alongside reading the other repository's handbook. It returned documentation evidence paths despite a broad exclusion glob, so it was not a sufficient guarantee of archive exclusion. Follow-up inspection was restricted to the reference's active `apps/`, `packages/` and named design docs. Read the target handbook before searching, and scope cross-repository searches directly rather than relying on an exclusion pattern from another root.
+
+A renderer method named `useStatic` was incorrectly recognized as a React hook by the linter; it was renamed `showStatic` rather than suppressing the hook rule. Installed Three.js source also showed that `PCFSoftShadowMap` had been removed, so the supported `PCFShadowMap` is used. The first real 3D review exposed long floor shadows clipped by the canvas bounds; model self-shadowing remains, while the floor now uses a small procedural contact shadow that fades completely to transparency. Inspect projected effects as well as mesh bounds, and verify current library types/source instead of relying on remembered API names. Two focused formatting commands also grouped `.ts` and `.tsx` basenames under one extension and named nonexistent files; use explicit mixed-extension paths and `&&` between prerequisite checks. The independent full verification subsequently ran the actual repository lint and passed every lane.
+
 ## 2026-11-13: Hero extraction retained isolated background pixels
 
 The first rectangular matte pass preserved all pale material correctly but left six disconnected background pixels around the Status illustration, including a visible edge speck on a dark inspection plate. The diagnostic pass remains private; its unused serving copies were hash-checked and removed before any inventory/upload. Pass 02 removes only disconnected components below 16 pixels and verifies that the complete canvas boundary is transparent. The opaque source RGB and the solid Brand tray center remain unchanged.

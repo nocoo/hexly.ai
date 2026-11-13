@@ -7,7 +7,6 @@ import type {
 } from "@hexly/video-kit/schema";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { videoCopy } from "../data/video-copy";
-import { localMaterials } from "../model/assets";
 import type { DirectoryState } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
 import {
@@ -16,7 +15,7 @@ import {
 	videoHref,
 	videoManifest,
 } from "../model/videos";
-import { HeroArtwork } from "./HeroArtwork";
+import { HeroObject } from "./HeroObject";
 import { Icon } from "./Icon";
 import { PageHero } from "./PageHero";
 import { TemplateExamples } from "./TemplateExamples";
@@ -330,42 +329,8 @@ export function Templates({
 						}
 						description={t.description}
 						artwork={
-							<div className="hero-visual hero-scene">
-								{localMaterials() ? (
-									<>
-										<HeroArtwork page="templates" />
-										<div className="hero-scene-caption" aria-hidden="true">
-											<span>
-												{videoManifest.openings.length} {t.openings}
-											</span>
-											<span className="tiny-square" />
-											<span>
-												{videoManifest.templates.length} {t.templates}
-											</span>
-											<span className="tiny-square" />
-											<span>
-												{videoManifest.endings.length} {t.endings}
-											</span>
-										</div>
-									</>
-								) : (
-									<div className="video-intro-note" aria-hidden="true">
-										<div className="video-combination-figure">
-											<span>05</span>
-											<i>×</i>
-											<span>05</span>
-											<i>×</i>
-											<span>05</span>
-										</div>
-										<p>OPEN / CONTENT / CLOSE</p>
-										<div className="video-mini-timeline">
-											<i />
-											<i />
-											<i />
-										</div>
-										<span>LIGHT + DARK</span>
-									</div>
-								)}
+							<div className="hero-visual">
+								<HeroObject kind="templates" locale={locale} />
 							</div>
 						}
 					>

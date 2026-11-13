@@ -6,32 +6,6 @@
 	margin-right: var(--space-8);
 	isolation: isolate;
 }
-.orbit {
-	position: absolute;
-	border: 1px solid color-mix(in srgb, var(--muted) 10%, transparent);
-	border-radius: 50%;
-	left: 50%;
-	top: 48%;
-	transform: translate(-50%, -50%) rotate(-22deg);
-	width: 430px;
-	height: 270px;
-	z-index: -1;
-}
-.orbit-one {
-	background: radial-gradient(
-		ellipse at center,
-		color-mix(in srgb, #a7bc89 12%, transparent),
-		transparent 66%
-	);
-}
-.orbit-two {
-	width: 326px;
-	height: 205px;
-}
-.orbit-three {
-	width: 202px;
-	height: 129px;
-}
 .floating-logo {
 	background: none;
 	border: 0;
@@ -97,42 +71,8 @@
 	--rotation: 13deg;
 	animation-delay: 200ms;
 }
-.orbit-dot {
-	position: absolute;
-	border-radius: 50%;
-	width: 5px;
-	height: 5px;
-	background: var(--accent);
-}
-.dot-one {
-	left: 24px;
-	top: 133px;
-}
-.dot-two {
-	bottom: 78px;
-	right: 15px;
-	width: 4px;
-	height: 4px;
-	background: var(--muted);
-	opacity: 0.5;
-}
-.art-cross {
-	position: absolute;
-	font: 19px var(--mono);
-	color: var(--muted);
-	opacity: 0.4;
-}
-.cross-one {
-	top: -10px;
-	left: 130px;
-}
-.cross-two {
-	bottom: 52px;
-	right: 107px;
-	font-size: 15px;
-	color: var(--accent);
-}
 .hero-art-caption {
+	pointer-events: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;

@@ -1,10 +1,9 @@
 import { brandCopy, brandSizes } from "../data/brand-copy";
 import { agentGuide } from "../model/agent-guide";
-import { localMaterials } from "../model/assets";
 import type { Locale, Project } from "../model/project";
 import { BrandMark, BrandWordmark } from "./BrandIdentity";
 import { CopyButton } from "./CopyButton";
-import { HeroArtwork } from "./HeroArtwork";
+import { HeroObject } from "./HeroObject";
 import { PageHero } from "./PageHero";
 import "../styles/brand-page.css";
 
@@ -31,18 +30,8 @@ export function BrandPage({
 				}
 				description={t.description}
 				artwork={
-					<div className="hero-visual hero-scene hero-scene-brand">
-						<HeroArtwork page="brand" />
-						{localMaterials() ? (
-							<div className="hero-brand-lockup" aria-hidden="true">
-								<BrandMark size={160} />
-								<span className="brand-wordmark">
-									<BrandWordmark />
-								</span>
-							</div>
-						) : (
-							<BrandMark size={256} />
-						)}
+					<div className="hero-visual">
+						<HeroObject kind="brand" locale={locale} />
 					</div>
 				}
 			>

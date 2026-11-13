@@ -60,4 +60,6 @@
 
 47. [Hexly material controls, design tokens and grid alignment](42-site-design-system.md)
 
+48. [Procedural Three.js header objects, motion and resource lifecycle](43-three-hero-objects.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.

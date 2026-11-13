@@ -8,7 +8,6 @@ import {
 	useState,
 } from "react";
 import { statusCopy } from "../data/status-copy";
-import { localMaterials } from "../model/assets";
 import type { Locale, Project } from "../model/project";
 import {
 	currentStatus,
@@ -24,7 +23,7 @@ import {
 	statusSites,
 } from "../model/status";
 import { formatStatusTime } from "../model/time-zone";
-import { HeroArtwork } from "./HeroArtwork";
+import { HeroObject } from "./HeroObject";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { PageHero } from "./PageHero";
@@ -444,40 +443,8 @@ export function StatusPage({
 				}
 				description={t.description}
 				artwork={
-					<div className="hero-visual hero-scene">
-						{localMaterials() ? (
-							<>
-								<HeroArtwork page="status" />
-								<div
-									className={`hero-scene-caption hero-status-caption status-${summaryStatus}`}
-									aria-hidden="true"
-								>
-									<span className="status-dot" />
-									<span>{snapshot?.mode === "demo" ? t.demo : t.live}</span>
-									<span>{t.cadence}</span>
-									<span>{t.retention}</span>
-								</div>
-							</>
-						) : (
-							<div
-								className={`status-signal status-${summaryStatus}`}
-								aria-hidden="true"
-							>
-								<div className="status-signal-orbit">
-									<span />
-									<span />
-									<span />
-									<Icon name="activity" />
-								</div>
-								<div>
-									<span className="status-signal-label">
-										{snapshot?.mode === "demo" ? t.demo : t.live}
-									</span>
-									<span>{t.cadence}</span>
-									<span>{t.retention}</span>
-								</div>
-							</div>
-						)}
+					<div className="hero-visual">
+						<HeroObject kind="status" locale={locale} />
 					</div>
 				}
 			>
@@ -505,6 +472,12 @@ export function StatusPage({
 						</optgroup>
 					</select>
 				</div>
+				{snapshot ? (
+					<p className="hero-observation-note">
+						{snapshot.mode === "demo" ? t.demo : t.live} · {t.cadence} ·{" "}
+						{t.retention}
+					</p>
+				) : null}
 			</PageHero>
 
 			{snapshot?.mode === "demo" && (
