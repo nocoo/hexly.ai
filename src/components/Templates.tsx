@@ -15,7 +15,6 @@ import {
 	videoHref,
 	videoManifest,
 } from "../model/videos";
-import { HeroObject } from "./HeroObject";
 import { Icon } from "./Icon";
 import { PageHero } from "./PageHero";
 import { TemplateExamples } from "./TemplateExamples";
@@ -328,11 +327,7 @@ export function Templates({
 							</>
 						}
 						description={t.description}
-						artwork={
-							<div className="hero-visual">
-								<HeroObject kind="templates" locale={locale} />
-							</div>
-						}
+						artwork={<div className="hero-visual" aria-hidden="true" />}
 					>
 						<a className="hero-link" href="#outros">
 							{t.examples} ↓

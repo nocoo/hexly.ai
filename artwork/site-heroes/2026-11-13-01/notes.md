@@ -2,6 +2,8 @@
 
 ## Current selection: superseded
 
+The subsequent Three.js study was also rejected and removed. The next direction starts with one flat editorial homepage candidate in `artwork/site-heroes/2026-11-13-03/`; it remains outside the site pending raw-image approval.
+
 The owner rejected the raster placements and requested newly built Three.js objects. The runtime image component, conditional image/diagram branches and placement CSS were removed. The eight remaining local serving copies under `public/brands/hexly-ai/v1.0.1/headers/` were compared against finishing `02` and removed; all raw images, extracted masters and receipts remain here. No R2 object was uploaded or deleted. The historical approval below remains truthful to the earlier extraction request, not the current site selection.
 
 The owner approved all four exact raw images and requested extraction and local placement, retaining the homepage's original colorful project Logos and allowing a supporting overlay. The four `raw-review.json` records preserve that instruction and their exact hashes. No new image-generation call was made in this step.

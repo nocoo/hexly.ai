@@ -102,15 +102,14 @@ must remain opaque, unmasked squares.
 The shared hero keeps the homepage's split structure, headline color hierarchy
 and mobile reading order. Its desktop type caps at 96 px so the existing English
 Templates heading fits two lines, and all four desktop hero sections share a
-544 px height. The owner subsequently replaced the generated illustrations with
-four procedural Three.js objects: an armillary instrument, clapperboard, material
-swatches and signal dial. The homepage still retains its six colorful interactive
-project Logos. Motion is subtle, pausable, suspended offscreen and disabled for
-reduced motion. The rejected raster placements and their serving code are gone;
-source images and exact-byte receipts stay archived. See the
-[Three.js implementation](43-three-hero-objects.md) for renderer lifecycle,
-static SVG behavior and verification. Status observations remain independent of
-its decorative object.
+544 px height. The generated product still lifes and the subsequent
+[Three.js study](43-three-hero-objects.md) were both rejected. Neither is active.
+The homepage retains its six colorful interactive project Logos and quiet orbit
+lines. The other decorative slots remain empty while a new flat editorial
+illustration is reviewed, starting with one homepage candidate. Source images
+and exact-byte receipts stay archived; the Three.js renderer, controls and
+dependencies have been removed. Status observations remain independent of any
+decorative illustration.
 
 At narrow/tablet widths the global header gives the four main routes one full
 row and the related personal sites another, avoiding overlapping navigation.

@@ -23,7 +23,6 @@ import {
 	statusSites,
 } from "../model/status";
 import { formatStatusTime } from "../model/time-zone";
-import { HeroObject } from "./HeroObject";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { PageHero } from "./PageHero";
@@ -442,11 +441,7 @@ export function StatusPage({
 					</>
 				}
 				description={t.description}
-				artwork={
-					<div className="hero-visual">
-						<HeroObject kind="status" locale={locale} />
-					</div>
-				}
+				artwork={<div className="hero-visual" aria-hidden="true" />}
 			>
 				<div className="status-timezone">
 					<label htmlFor="status-timezone">

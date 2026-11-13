@@ -14,7 +14,6 @@ export default defineConfig({
 	use: {
 		// Exercise native tabs in the full Chromium browser's current headless mode.
 		channel: "chromium",
-		launchOptions: { args: ["--enable-unsafe-swiftshader"] },
 		baseURL: "http://127.0.0.1:27048",
 		locale: "en-US",
 		colorScheme: "light",

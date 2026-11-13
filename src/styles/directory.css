@@ -6,6 +6,32 @@
 	margin-right: var(--space-8);
 	isolation: isolate;
 }
+.orbit {
+	position: absolute;
+	border: 1px solid color-mix(in srgb, var(--muted) 10%, transparent);
+	border-radius: 50%;
+	left: 50%;
+	top: 48%;
+	transform: translate(-50%, -50%) rotate(-22deg);
+	width: 430px;
+	height: 270px;
+	z-index: -1;
+}
+.orbit-one {
+	background: radial-gradient(
+		ellipse at center,
+		color-mix(in srgb, #a7bc89 12%, transparent),
+		transparent 66%
+	);
+}
+.orbit-two {
+	width: 326px;
+	height: 205px;
+}
+.orbit-three {
+	width: 202px;
+	height: 129px;
+}
 .floating-logo {
 	background: none;
 	border: 0;

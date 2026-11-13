@@ -41,6 +41,12 @@
 	--status-color: var(--muted);
 	--status-fill: var(--status-empty);
 }
+.hero-observation-note {
+	flex-basis: 100%;
+	margin: 0;
+	font: var(--control-meta-size) / 16px var(--mono);
+	color: var(--muted);
+}
 .status-timezone {
 	display: flex;
 	align-items: center;

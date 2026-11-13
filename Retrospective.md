@@ -1,5 +1,9 @@
 # Retrospective
 
+## 2026-11-13: Technical completion did not establish the visual direction
+
+The four Three.js objects passed the runtime, accessibility and lifecycle checks, but the owner rejected the visual result. Building every page before obtaining acceptance of one representative visual expanded an unaccepted direction. Remove that implementation rather than retaining it as a hidden fallback. The next artwork pass starts with one untouched homepage image in a clearly different flat editorial style; wait for its exact-byte approval before processing or extending the direction to the other pages.
+
 ## 2026-11-13: Three.js integration checks exposed install and rendering assumptions
 
 The temporary Bun mirror rewrote registry fields throughout the generated lockfile. Before committing, only those resolver fields were normalized, every pre-existing package entry and integrity value was compared with HEAD, and a frozen install was verified byte-stable. The first loose URL check also matched the legitimate `https` dependency in the vendored PPTX package; parsing each package tuple's resolver slot avoids that false positive without deleting a real dependency.

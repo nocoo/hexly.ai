@@ -24,7 +24,6 @@ export type IconName =
 	| "sort-az"
 	| "clock"
 	| "play"
-	| "pause"
 	| "info"
 	| "files"
 	| "file-text"
@@ -69,7 +68,6 @@ const paths: Record<IconName, string> = {
 		"m3 16 4 4 4-4M7 20V4M20 8h-5M15 10V6.5a2.5 2.5 0 0 1 5 0V10M15 14h5l-5 6h5",
 	clock: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 7v5l3 2",
 	play: "m9 5 11 7-11 7V5ZM4 4v16",
-	pause: "M8 5v14M16 5v14",
 	info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7h.01",
 };
 

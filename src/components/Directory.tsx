@@ -4,7 +4,6 @@ import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import { navigationPath } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
-import { HeroObject } from "./HeroObject";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { PageHero } from "./PageHero";
@@ -52,7 +51,9 @@ export function Directory({
 				description={t.heroDescription}
 				artwork={
 					<div className="hero-art">
-						<HeroObject kind="projects" locale={locale} />
+						<span className="orbit orbit-one" aria-hidden="true" />
+						<span className="orbit orbit-two" aria-hidden="true" />
+						<span className="orbit orbit-three" aria-hidden="true" />
 						{faces.map((project, index) => (
 							<button
 								type="button"

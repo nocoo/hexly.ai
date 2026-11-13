@@ -3,7 +3,6 @@ import { agentGuide } from "../model/agent-guide";
 import type { Locale, Project } from "../model/project";
 import { BrandMark, BrandWordmark } from "./BrandIdentity";
 import { CopyButton } from "./CopyButton";
-import { HeroObject } from "./HeroObject";
 import { PageHero } from "./PageHero";
 import "../styles/brand-page.css";
 
@@ -29,11 +28,7 @@ export function BrandPage({
 					</>
 				}
 				description={t.description}
-				artwork={
-					<div className="hero-visual">
-						<HeroObject kind="brand" locale={locale} />
-					</div>
-				}
+				artwork={<div className="hero-visual" aria-hidden="true" />}
 			>
 				<nav className="brand-section-links" aria-label={t.title}>
 					<a href="#sizes">{t.sizes}</a>
