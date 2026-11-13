@@ -1,3 +1,4 @@
+import { brandCopy, brandSizes } from "../data/brand-copy";
 import { copy } from "../data/copy";
 import socialCardsJson from "../data/social-cards.json" with { type: "json" };
 
@@ -176,6 +177,7 @@ export function pageForPath(
 ): DiscoveryPage {
 	const path =
 		(legacyRoute(pathname)?.path ?? pathname).replace(/\/$/, "") || "/";
+	if (path === "/brand") return brandPage();
 	if (path === "/status") return statusPage(projects);
 	const video = /^\/templates(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
 	if (video) return videosPage(video[1]);
@@ -215,6 +217,7 @@ export function discoveryPages(projects: Project[]): DiscoveryPage[] {
 		galleryPage(projects),
 		statusPage(projects),
 		videosPage(),
+		brandPage(),
 		...videoEntries.map((entry) => videosPage(entry.id)),
 		...projects.map((project) => projectPage(project)),
 	];
@@ -249,11 +252,12 @@ Public pages welcome search and AI crawlers. JavaScript is not required to read 
 
 ## Agent guides
 
-Every catalogue, project, template and status page includes a copyable integration guide and a matching Markdown document, discoverable through an HTML alternate link.
+Every catalogue, project, template, brand and status page includes a copyable integration guide and a matching Markdown document, discoverable through an HTML alternate link.
 
 - [Catalogue guide](${siteOrigin}/agents/index.md)
 - [Identity gallery guide](${siteOrigin}/agents/logos.md)
 - [Templates and standard-outro guide](${siteOrigin}/agents/templates.md)
+- [Brand usage guide](${siteOrigin}/agents/brand.md)
 - [Status guide](${siteOrigin}/agents/status.md)
 
 Reuse the published standard outro MP4s directly across Hexly projects. They do not need to be regenerated or configured for each product. Existing Logo prompts are historical source records, not a requirement to recreate approved assets.
@@ -264,6 +268,7 @@ Each project's guide also lists its current light/dark decorative surfaces and e
 
 - [hexly.ai](${siteOrigin}/): ${homeDescription}
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
+- [Brand](${siteOrigin}/brand): The Hexly mark at actual sizes, wordmark combinations and light/dark surfaces.
 - [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
 - [Video Kit](${siteOrigin}/templates): Mix five openings, five content layouts and five endings in two Hexly themes; client previews and local video/PPTX/PDF exports.
 - [Standard outros](${siteOrigin}/templates#outros): Five ready-to-use, project-independent Hexly endings. Download and append the original MP4, or use the HTML-rendered 4K still in a deck. Light, silent; no regeneration needed.
@@ -274,6 +279,7 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 
 - [hexly.ai](${siteOrigin}/): ${copy.zh.heroDescription}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
+- [品牌](${siteOrigin}/brand): Hexly 标志的实际尺寸、字标组合及明暗背景用法。
 - [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
 - [视频模板](${siteOrigin}/templates): 五种封面、正文与片尾自由组合，均有 Hexly 明暗主题；客户端预览、本地视频与 PPTX/PDF 导出。
 - [标准片尾](${siteOrigin}/templates#outros): 五个跨项目通用的 Hexly 片尾，直接拼接 MP4 或在幻灯片中使用 HTML 渲染的 4K 高清图，无需重新生成。均为浅色、无声。
@@ -439,6 +445,36 @@ function galleryPage(projects: Project[]): DiscoveryPage {
 			description,
 			isPartOf: { "@id": `${siteOrigin}/#website` },
 			mainEntity: itemList(visible, "Active identities"),
+		},
+	};
+}
+
+function brandPage(): DiscoveryPage {
+	const t = brandCopy.en;
+	const path = "/brand";
+	const title = "Brand — hexly.ai";
+	const canonical = absoluteUrl(path);
+	const logo = assetUrl(`${identity.family.root}/transparent-512.png`);
+	return {
+		path,
+		title,
+		description: t.description,
+		canonical,
+		image: socialImage(),
+		imageAlt: "hexly.ai mark on warm paper",
+		heading: t.title,
+		bodyHtml: snapshotHtml(t.title, t.description, path, []).replace(
+			"</main>",
+			`<img src="${escapeHtml(logo)}" alt="hexly.ai mark" width="256" height="256" /><section id="sizes"><h2>${t.sizes}</h2><p>${t.sizesHint}</p><ul>${brandSizes.map((size) => `<li>${size} × ${size} px</li>`).join("")}</ul></section><section id="lockups"><h2>${t.lockups}</h2><p>${t.lockupsHint}</p><ul><li>${t.horizontal}</li><li>${t.stacked}</li><li>${t.wordmark}</li></ul></section><section id="app-icons"><h2>${t.appIcons}</h2><p>${t.appIconsHint}</p><ul><li>${t.light}: ${t.square}, ${t.rounded}</li><li>${t.dark}: ${t.square}, ${t.rounded}</li></ul></section><section id="surfaces"><h2>${t.surfaces}</h2><p>${t.surfacesHint}</p><ul><li>${t.paper}</li><li>${t.ivory}</li><li>${t.night}</li><li>${t.transparent}</li></ul></section><section id="agent-guide"><h2>${t.usage}</h2><ul>${t.rules.map((rule) => `<li>${escapeHtml(rule)}</li>`).join("")}</ul><a href="/agents/brand.md">${t.markdown}</a></section></main>`,
+		),
+		jsonLd: {
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			url: canonical,
+			name: title,
+			description: t.description,
+			isPartOf: { "@id": `${siteOrigin}/#website` },
+			mainEntity: { "@type": "Brand", name: "hexly.ai", logo },
 		},
 	};
 }
@@ -624,7 +660,7 @@ function snapshotHtml(
 	const brandHtml = project
 		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.presentationIcon ? `${project.presentationIcon.root}/rounded-512.webp` : (project.family?.foreground.display ?? project.logo.display)))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">${project.logo.kind === "candidate" ? "Download review candidate" : "Download original"}</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a>${project.logo.kind === "candidate" ? " · Source adoption pending" : ""}</p></section>`
 		: "";
-	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
+	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/brand">Brand</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
 }
 
 function replaceMeta(

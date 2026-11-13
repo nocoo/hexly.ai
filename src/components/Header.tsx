@@ -1,6 +1,7 @@
 import { copy } from "../data/copy";
 import type { Locale, Theme, View } from "../model/project";
-import { BrandMark, Icon } from "./Icon";
+import { BrandMark, BrandWordmark } from "./BrandIdentity";
+import { Icon } from "./Icon";
 import { SurfaceLinks } from "./SurfaceLinks";
 
 export function Header({
@@ -35,10 +36,7 @@ export function Header({
 						}}
 					>
 						<BrandMark />
-						<span>
-							hexly<span className="brand-dot">.</span>
-							<span className="brand-domain">ai</span>
-						</span>
+						<BrandWordmark />
 					</a>
 					<nav className="view-links" aria-label={t.views}>
 						<button
@@ -58,6 +56,15 @@ export function Header({
 						>
 							<Icon name="image" />
 							<span className="view-link-label">{t.templates}</span>
+						</button>
+						<button
+							type="button"
+							onClick={() => onView("brand")}
+							aria-pressed={view === "brand"}
+							title={t.brandPage}
+						>
+							<Icon name="folder" />
+							<span className="view-link-label">{t.brandPage}</span>
 						</button>
 						<button
 							type="button"

@@ -1,0 +1,78 @@
+export const brandSizes = [16, 24, 32, 48, 64, 96, 128, 256] as const;
+
+export const brandCopy = {
+	en: {
+		title: "Brand",
+		eyebrow: "Hexly / Visual identity",
+		description:
+			"The Hexly mark, wordmark and surfaces, from a browser tab to a full-size signature.",
+		sizes: "The mark, at every size",
+		sizesHint:
+			"Actual CSS pixels. One transparent mark, unchanged proportions and colors.",
+		lockups: "Mark + name",
+		lockupsHint:
+			"Space Grotesk, a terracotta point and a quieter domain suffix.",
+		horizontal: "Horizontal signature",
+		stacked: "Stacked signature",
+		wordmark: "Wordmark only",
+		appIcons: "App icons",
+		appIconsHint:
+			"Light and dark square artwork with Apple-style continuous corners. Deliver an unmasked square to the app platform; these are presentation previews.",
+		light: "Light",
+		dark: "Dark",
+		square: "Square artwork",
+		rounded: "Continuous corners",
+		surfaces: "On different surfaces",
+		surfacesHint:
+			"The same artwork on light and dark. Backgrounds remain separate from the mark.",
+		paper: "Paper",
+		ivory: "Ivory",
+		night: "Night",
+		transparent: "Transparency",
+		usage: "Use it with care",
+		rules: [
+			"Use the transparent mark in headers, sidebars and browser tabs. Keep its silhouette free of extra masks, shadows and glow.",
+			"Scale the whole artwork uniformly. Preserve the cream frame, beige inset and brick-red center; leave clear space around the mark.",
+			"Use the standard wordmark rather than drawing new lettering. Keep the two-tone text and terracotta point together.",
+		],
+		guide: "Copy Agent guide",
+		instructions: "Agent instructions",
+		markdown: "Read Markdown guide",
+		archive: "Identity archive",
+	},
+	zh: {
+		title: "品牌",
+		eyebrow: "Hexly / 视觉识别",
+		description: "从浏览器标签到完整署名，查看 Hexly 标志、字标与背景的搭配。",
+		sizes: "从小到大的标志",
+		sizesHint: "按实际 CSS 像素展示。同一份透明图形，保留原始比例与颜色。",
+		lockups: "图形与名字",
+		lockupsHint: "Space Grotesk 字体、陶土色句点，以及弱化的域名后缀。",
+		horizontal: "横排组合",
+		stacked: "上下组合",
+		wordmark: "独立字标",
+		appIcons: "App 图标",
+		appIconsHint:
+			"浅色、深色方形图稿与 Apple 风格连续圆角。实际交付保留不裁切的正方形，由应用平台施加最终圆角；这里展示视觉效果。",
+		light: "浅色",
+		dark: "深色",
+		square: "方形图稿",
+		rounded: "连续圆角",
+		surfaces: "不同背景上的表现",
+		surfacesHint: "明暗背景使用同一份图形，背景与标志分开保留。",
+		paper: "纸色",
+		ivory: "象牙白",
+		night: "深色",
+		transparent: "透明底",
+		usage: "使用约定",
+		rules: [
+			"页头、侧栏和浏览器标签使用透明图形，不额外套蒙版、阴影或光晕。",
+			"整体等比缩放，保留奶油色外框、米色内芯和砖红主体，并在四周留出空白。",
+			"沿用标准字标，不重新绘制字体；文字的深浅层次与陶土色句点一起使用。",
+		],
+		guide: "复制 Agent 使用说明",
+		instructions: "Agent 使用说明",
+		markdown: "阅读 Markdown 说明",
+		archive: "身份档案",
+	},
+};

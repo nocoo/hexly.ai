@@ -47,6 +47,30 @@ const shell = `<!doctype html><html><head>
 </head><body><noscript>old</noscript><div id="root"></div></body></html>`;
 
 describe("crawler discovery documents", () => {
+	it("publishes a standalone Brand page and discoverable usage guide", () => {
+		const page = pageForPath("/brand/", projects);
+		expect(page).toMatchObject({
+			path: "/brand",
+			title: "Brand — hexly.ai",
+			canonical: "https://hexly.ai/brand",
+		});
+		expect(page.jsonLd).toMatchObject({
+			"@type": "WebPage",
+			mainEntity: { "@type": "Brand", name: "hexly.ai" },
+		});
+		for (const section of [
+			"sizes",
+			"lockups",
+			"app-icons",
+			"surfaces",
+			"agent-guide",
+		])
+			expect(page.bodyHtml).toContain(`id="${section}"`);
+		expect(page.bodyHtml).toContain("256 × 256 px");
+		expect(page.bodyHtml).toContain("/agents/brand.md");
+		expect(llmsDocument(projects)).toContain("https://hexly.ai/brand");
+		expect(llmsDocument(projects)).toContain("/agents/brand.md");
+	});
 	it("includes researched goals and stack in readable HTML with escaped copy", () => {
 		const reviewed = {
 			...frogie,
@@ -78,7 +102,8 @@ describe("crawler discovery documents", () => {
 			"<loc>https://hexly.ai/projects/uptime-kuma-skill</loc>",
 		);
 		expect(xml).toContain("<loc>https://hexly.ai/status</loc>");
-		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 9);
+		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 10);
+		expect(xml).toContain("<loc>https://hexly.ai/brand</loc>");
 		expect(xml).toContain("<loc>https://hexly.ai/templates/showcase</loc>");
 		expect(xml).not.toContain("hexly.ai/videos");
 		expect(xml).not.toContain("hexly.ai/logos/");

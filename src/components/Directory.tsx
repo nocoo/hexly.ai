@@ -6,6 +6,7 @@ import { navigationPath } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
+import { PageHero } from "./PageHero";
 import { ProjectCard } from "./ProjectCard";
 import { SearchField } from "./SearchField";
 
@@ -34,48 +35,48 @@ export function Directory({
 		.slice(0, 6);
 	return (
 		<main id="main-content" className="shell directory-main">
-			<section className="hero" aria-labelledby="hero-title">
-				<div className="hero-copy">
-					<p className="eyebrow">
-						<span className="tiny-square" />
-						{t.eyebrow}
-					</p>
-					<h1 id="hero-title">
+			<PageHero
+				headingId="hero-title"
+				eyebrow={t.eyebrow}
+				title={
+					<>
 						{t.heroFirst}
 						<br />
 						<span className="outline-word">{t.heroSecond}</span>
 						<span className="headline-period">
 							{locale === "zh" ? "。" : "."}
 						</span>
-					</h1>
-					<p className="hero-description">{t.heroDescription}</p>
-				</div>
-				<div className="hero-art">
-					<div className="orbit orbit-one" />
-					<div className="orbit orbit-two" />
-					<div className="orbit orbit-three" />
-					<div className="orbit-dot dot-one" />
-					<div className="orbit-dot dot-two" />
-					<span className="art-cross cross-one">+</span>
-					<span className="art-cross cross-two">+</span>
-					{faces.map((project, index) => (
-						<button
-							type="button"
-							className={`floating-logo float-${index}`}
-							key={project.id}
-							aria-label={`${t.viewProject}: ${project.title}`}
-							onClick={() => onProject(project.id)}
-						>
-							<Logo project={project} size={index < 2 ? 104 : 80} eager />
-						</button>
-					))}
-					<span className="hero-art-caption">
-						<span />
-						{t.heroNote}
-						<span />
-					</span>
-				</div>
-			</section>
+					</>
+				}
+				description={t.heroDescription}
+				artwork={
+					<div className="hero-art">
+						<div className="orbit orbit-one" />
+						<div className="orbit orbit-two" />
+						<div className="orbit orbit-three" />
+						<div className="orbit-dot dot-one" />
+						<div className="orbit-dot dot-two" />
+						<span className="art-cross cross-one">+</span>
+						<span className="art-cross cross-two">+</span>
+						{faces.map((project, index) => (
+							<button
+								type="button"
+								className={`floating-logo float-${index}`}
+								key={project.id}
+								aria-label={`${t.viewProject}: ${project.title}`}
+								onClick={() => onProject(project.id)}
+							>
+								<Logo project={project} size={index < 2 ? 104 : 80} eager />
+							</button>
+						))}
+						<span className="hero-art-caption">
+							<span />
+							{t.heroNote}
+							<span />
+						</span>
+					</div>
+				}
+			/>
 			<section
 				className="collection"
 				id="collection"

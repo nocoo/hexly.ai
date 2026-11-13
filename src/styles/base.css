@@ -1027,6 +1027,42 @@ select.control-select:hover {
 	}
 }
 
+@media (max-width: 768px) {
+	.site-header-inner {
+		grid-template-rows: var(--site-topbar-height) var(--control-height) var(
+				--space-32
+			);
+		row-gap: var(--space-4);
+	}
+	.site-header .view-links {
+		grid-area: 2 / 1 / 3 / -1;
+		justify-self: stretch;
+		width: 100%;
+	}
+	.site-header .view-links button {
+		flex: 1;
+		min-width: 0;
+		gap: 0;
+		padding-inline: var(--space-4);
+	}
+	.site-header .view-links .icon {
+		display: none;
+	}
+	.site-header .surface-links {
+		grid-area: 3 / 1 / 4 / -1;
+		justify-self: stretch;
+		justify-content: space-between;
+		gap: var(--space-8);
+		overflow: visible;
+	}
+	.site-header .surface-links a {
+		min-height: var(--space-32);
+	}
+	.site-header .surface-links a[aria-current]::after {
+		bottom: var(--space-4);
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;

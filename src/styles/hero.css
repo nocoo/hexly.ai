@@ -1,0 +1,140 @@
+.hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+	align-items: center;
+	min-height: 544px;
+	gap: var(--space-48);
+	padding-block: var(--section-space);
+	overflow-x: clip;
+}
+.hero-copy {
+	min-width: 0;
+	padding-bottom: var(--space-4);
+}
+.hero .eyebrow {
+	margin: 0 0 var(--space-32);
+}
+.hero h1 {
+	font-size: clamp(48px, 6.6vw, 96px);
+	font-weight: 500;
+	letter-spacing: -0.085em;
+	line-height: 1.03;
+	margin: 0 0 var(--space-32);
+}
+.outline-word {
+	color: var(--headline-secondary);
+}
+.headline-period {
+	color: var(--accent);
+}
+.hero-description {
+	max-width: 480px;
+	font-size: 19px;
+	line-height: 1.65;
+	color: var(--muted);
+	margin: 0;
+	text-wrap: pretty;
+	letter-spacing: -0.035em;
+}
+.hero-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-8) var(--space-16);
+	margin-top: var(--space-24);
+}
+.hero-actions > * {
+	max-width: 100%;
+	min-width: 0;
+}
+.hero-link {
+	display: inline-flex;
+	align-items: center;
+	min-height: var(--control-height);
+	font-size: 13px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+.hero-visual {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	min-width: 0;
+	max-width: 450px;
+	height: 320px;
+	justify-self: end;
+}
+.hero-visual > .brand-mark {
+	width: min(256px, 100%);
+	height: auto;
+}
+:lang(zh) .hero h1 {
+	font-size: clamp(56px, 5.8vw, 82px);
+	letter-spacing: -0.06em;
+	line-height: 1.3;
+}
+:lang(zh) .hero-description {
+	line-height: 1.9;
+	font-size: 17px;
+}
+@media (max-width: 1150px) {
+	.hero {
+		gap: var(--space-12);
+	}
+}
+@media (max-width: 900px) {
+	.hero {
+		grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+		gap: 0;
+	}
+	.hero-description {
+		font-size: 16px;
+	}
+}
+@media (max-width: 650px) {
+	.hero {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		min-height: 0;
+		gap: 0;
+		padding-block: var(--space-32) var(--space-24);
+	}
+	.hero-copy {
+		text-align: center;
+	}
+	.hero .eyebrow {
+		justify-content: center;
+		font-size: 10px;
+		margin-bottom: var(--space-16);
+	}
+	.hero h1 {
+		font-size: clamp(48px, 14vw, 60px);
+		letter-spacing: -0.075em;
+		margin: 0 0 var(--space-20);
+	}
+	.hero-description {
+		margin-inline: auto;
+		max-width: 340px;
+		font-size: 15px;
+		line-height: 1.8;
+	}
+	.hero-actions,
+	.hero-actions > nav {
+		justify-content: center;
+	}
+	.hero-visual {
+		align-self: center;
+		width: 100%;
+		height: 256px;
+		margin-top: var(--space-16);
+	}
+	:lang(zh) .hero h1 {
+		font-size: 49px;
+		line-height: 1.2;
+	}
+	:lang(zh) .hero-description {
+		font-size: 14px;
+		line-height: 1.8;
+		max-width: 330px;
+	}
+}

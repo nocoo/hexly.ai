@@ -4,6 +4,7 @@ import { expect, test } from "./fixtures";
 for (const [width, theme, locale] of [
 	[1440, "light", "en"],
 	[768, "dark", "en"],
+	[651, "light", "en"],
 	[390, "light", "zh"],
 	[320, "dark", "zh"],
 ] as const) {
@@ -18,11 +19,18 @@ for (const [width, theme, locale] of [
 			},
 			{ theme, locale },
 		);
+		const heroLayouts: {
+			top: number;
+			height: number;
+			columns: string;
+			headingFits: boolean;
+		}[] = [];
 		for (const path of [
 			"/",
 			"/logos",
 			"/projects/pew",
 			"/templates",
+			"/brand",
 			"/templates/launch",
 			"/status",
 		]) {
@@ -36,6 +44,20 @@ for (const [width, theme, locale] of [
 				if (path.startsWith("/templates"))
 					await expect(page.locator(".videos-page")).toBeVisible();
 				await page.evaluate(() => document.fonts.ready);
+				if (["/", "/templates", "/brand", "/status"].includes(path)) {
+					const hero = page.locator(".hero");
+					await expect(hero).toBeVisible();
+					heroLayouts.push(
+						await hero.evaluate((element) => ({
+							top: element.getBoundingClientRect().top + scrollY,
+							height: element.getBoundingClientRect().height,
+							columns: getComputedStyle(element).gridTemplateColumns,
+							headingFits:
+								(element.querySelector("h1")?.scrollWidth ?? 0) <=
+								(element.querySelector("h1")?.clientWidth ?? 0) + 1,
+						})),
+					);
+				}
 				const geometry = await page.evaluate(() => {
 					const box = (element: Element) => element.getBoundingClientRect();
 					const shell = (selector: string) => {
@@ -111,6 +133,15 @@ for (const [width, theme, locale] of [
 				if (path === "/" || path === "/status")
 					expect((await scanAccessibility(page)).violations).toEqual([]);
 			});
+		}
+		expect(heroLayouts).toHaveLength(4);
+		for (const hero of heroLayouts) expect(hero.headingFits).toBe(true);
+		if (width >= 651) {
+			for (const hero of heroLayouts) {
+				expect(hero.top).toBeCloseTo(heroLayouts[0]?.top ?? 0, 1);
+				expect(hero.height).toBe(544);
+				expect(hero.columns).toBe(heroLayouts[0]?.columns);
+			}
 		}
 	});
 }

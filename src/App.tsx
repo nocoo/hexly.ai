@@ -7,6 +7,7 @@ import {
 	useRef,
 	useState,
 } from "react";
+import { BrandPage } from "./components/BrandPage";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -364,6 +365,8 @@ export function App() {
 						) : null}
 					</div>
 				</main>
+			) : state.view === "brand" ? (
+				<BrandPage locale={locale} projects={projects} />
 			) : state.view === "templates" ? (
 				<Suspense
 					fallback={

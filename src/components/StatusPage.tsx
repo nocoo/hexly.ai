@@ -25,6 +25,7 @@ import {
 import { formatStatusTime } from "../model/time-zone";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
+import { PageHero } from "./PageHero";
 import { SearchField } from "./SearchField";
 
 function percentage(value: number | null) {
@@ -429,62 +430,65 @@ export function StatusPage({
 
 	return (
 		<main id="main-content" className="shell status-page">
-			<section className="status-intro" aria-labelledby="status-title">
-				<div>
-					<p className="eyebrow">
-						<span className="tiny-square" />
-						{t.eyebrow}
-						<span className="status-eyebrow-rule" />
-					</p>
-					<h1 id="status-title">
+			<PageHero
+				className="status-intro"
+				headingId="status-title"
+				eyebrow={t.eyebrow}
+				title={
+					<>
 						{t.title}
 						<span className="headline-period">.</span>
-					</h1>
-					<p className="status-description">{t.description}</p>
-					<div className="status-timezone">
-						<label htmlFor="status-timezone">
-							<Icon name="clock" />
-							{t.timeZone}
-						</label>
-						<select
-							className="control-select status-timezone-control"
-							id="status-timezone"
-							value={timeZonePreference}
-							onChange={(event) => onTimeZone(event.target.value)}
+					</>
+				}
+				description={t.description}
+				artwork={
+					<div className="hero-visual">
+						<div
+							className={`status-signal status-${summaryStatus}`}
+							aria-hidden="true"
 						>
-							<option value="local">
-								{t.localTime} · {browserTimeZone.replaceAll("_", " ")}
-							</option>
-							<option value="UTC">UTC</option>
-							<optgroup label={t.allTimeZones}>
-								{timeZones.map((zone) => (
-									<option key={zone} value={zone}>
-										{zone.replaceAll("_", " ")}
-									</option>
-								))}
-							</optgroup>
-						</select>
+							<div className="status-signal-orbit">
+								<span />
+								<span />
+								<span />
+								<Icon name="activity" />
+							</div>
+							<div>
+								<span className="status-signal-label">
+									{snapshot?.mode === "demo" ? t.demo : t.live}
+								</span>
+								<span>{t.cadence}</span>
+								<span>{t.retention}</span>
+							</div>
+						</div>
 					</div>
+				}
+			>
+				<div className="status-timezone">
+					<label htmlFor="status-timezone">
+						<Icon name="clock" />
+						{t.timeZone}
+					</label>
+					<select
+						className="control-select status-timezone-control"
+						id="status-timezone"
+						value={timeZonePreference}
+						onChange={(event) => onTimeZone(event.target.value)}
+					>
+						<option value="local">
+							{t.localTime} · {browserTimeZone.replaceAll("_", " ")}
+						</option>
+						<option value="UTC">UTC</option>
+						<optgroup label={t.allTimeZones}>
+							{timeZones.map((zone) => (
+								<option key={zone} value={zone}>
+									{zone.replaceAll("_", " ")}
+								</option>
+							))}
+						</optgroup>
+					</select>
 				</div>
-				<div
-					className={`status-signal status-${summaryStatus}`}
-					aria-hidden="true"
-				>
-					<div className="status-signal-orbit">
-						<span />
-						<span />
-						<span />
-						<Icon name="activity" />
-					</div>
-					<div>
-						<span className="status-signal-label">
-							{snapshot?.mode === "demo" ? t.demo : t.live}
-						</span>
-						<span>{t.cadence}</span>
-						<span>{t.retention}</span>
-					</div>
-				</div>
-			</section>
+			</PageHero>
 
 			{snapshot?.mode === "demo" && (
 				<p className="status-demo">

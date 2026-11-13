@@ -1,47 +1,5 @@
-.videos-page {
+.video-detail-page {
 	padding-top: var(--space-40);
-}
-.site-identity {
-	margin-bottom: 36px;
-	padding-bottom: 40px;
-	border-bottom: 1px solid var(--line);
-}
-.site-identity h2 {
-	margin: 0 0 16px;
-	font-size: 24px;
-	font-weight: 500;
-	letter-spacing: -0.8px;
-}
-.site-identity-lockup {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 4px;
-	margin: 0;
-}
-.site-identity-logo {
-	width: clamp(192px, 24vw, 256px);
-	aspect-ratio: 1;
-}
-.site-identity-logo .brand-mark {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-}
-.site-identity-wordmark {
-	font-size: clamp(34px, 4vw, 42px);
-	letter-spacing: -0.0435em;
-	line-height: 1.2;
-}
-.video-examples-jump {
-	display: inline-flex;
-	align-items: center;
-	min-height: 44px;
-	margin-top: 12px;
-	color: var(--ink);
-	font-size: 13px;
-	text-decoration: underline;
-	text-underline-offset: 5px;
 }
 .template-examples {
 	margin-top: 64px;
@@ -131,33 +89,7 @@
 	border-radius: 50%;
 	background: #bc7252;
 }
-.video-intro {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr) 300px;
-	align-items: center;
-	gap: var(--space-80);
-	padding: var(--space-12) 0 var(--space-56);
-}
-.video-intro h1 {
-	font-size: clamp(52px, 6vw, 86px);
-	font-weight: 500;
-	line-height: 1.06;
-	letter-spacing: -0.06em;
-	margin: var(--space-24) 0;
-}
-.video-intro h1 > span {
-	color: var(--muted);
-}
-.video-intro > div > p:last-child {
-	max-width: 580px;
-	font-size: 15px;
-	line-height: 1.8;
-	color: var(--muted);
-	margin: 0;
-}
 .video-intro-note {
-	padding: var(--space-24) 0 var(--space-24) var(--space-32);
-	border-left: 1px solid var(--line);
 	color: var(--muted);
 }
 .video-combination-figure {
@@ -617,14 +549,6 @@
 	flex-shrink: 0;
 }
 @media (max-width: 1000px) {
-	.video-intro {
-		grid-template-columns: 1fr;
-		gap: 0;
-		padding-bottom: var(--space-40);
-	}
-	.video-intro-note {
-		display: none;
-	}
 	.video-library-settings {
 		gap: 12px;
 	}
@@ -643,15 +567,8 @@
 	}
 }
 @media (max-width: 600px) {
-	.videos-page {
+	.video-detail-page {
 		padding-top: var(--space-24);
-	}
-	.video-intro h1 {
-		font-size: clamp(42px, 10.5vw, 62px);
-		margin-block: 20px;
-	}
-	.video-intro > div > p:last-child {
-		font-size: 14px;
 	}
 	.video-library-bar {
 		align-items: start;

@@ -120,6 +120,16 @@ describe("single-project API gateway", () => {
 });
 
 describe("the static asset gateway", () => {
+	it("keeps the Brand page on the main site rather than the status origin", async () => {
+		const response = await worker.fetch(
+			new Request("https://status.hexly.ai/brand"),
+			env,
+		);
+		expect(response.status).toBe(302);
+		expect(response.headers.get("Location")).toBe("https://hexly.ai/brand");
+		const main = await worker.fetch(new Request("https://hexly.ai/brand"), env);
+		expect(main.status).toBe(200);
+	});
 	it("redirects legacy materials directly to R2 in production while keeping archived HTML/code and page routes", async () => {
 		const live = Object.assign(Object.create(env), {
 			STATUS_MODE: "live",

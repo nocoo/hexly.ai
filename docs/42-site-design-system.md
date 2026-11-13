@@ -39,6 +39,8 @@ immutable materials are published. No R2 upload, push or release is implied.
 - `src/styles/base.css`: existing site palette, fonts, basic controls and shell.
 - Feature styles: layout/interaction rules using the shared tokens. Component-local
   fixed spacing must remain on the same scale.
+- `src/components/BrandIdentity.tsx`: the same mark and wordmark used by the header and Brand library.
+- `src/components/PageHero.tsx` and `src/styles/hero.css`: shared homepage-derived top layout for Projects, Templates, Brand and Status.
 - `packages/video-kit/src/site.css`: browser-only host-token integration. Film
   canvas styles and frame geometry remain independent.
 - `tests/unit/design-tokens.test.ts`: static spacing and token-ownership guard.
@@ -50,11 +52,12 @@ immutable materials are published. No R2 upload, push or release is implied.
 | Role | Value |
 | --- | --- |
 | Spacing step | 4 px; 8 px is the main rhythm |
-| Spacing tokens | 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 64, 80 px |
+| Spacing tokens | 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 64, 80, 96 px |
 | Compact optical adjustment | 1–2 px only; hairlines and focus outlines are not layout spacing |
 | Page maximum | 1500 px |
 | Page gutters | 32 px desktop, 24 px at ≤1100 px, 16 px at ≤600 px |
-| Header | 80 px desktop; 64 + 56 px two-row shell at ≤1000 px |
+| Header | 80 px desktop; 64 + 56 px at ≤1000 px; 64 + 96 px at ≤768 px |
+| Page hero | Shared 1.15:1 grid and 544 px minimum desktop height; common title, description and artwork spacing |
 | Mark-to-wordmark gap | 4 px, reduced from 11 px |
 | Catalogue/card grid gutters | 24 px desktop, 16 px at ≤1100 px |
 | Card padding | 20 px desktop, 16 px at ≤1100 px |
@@ -81,6 +84,34 @@ check: the independent `zheng li.` footer's `.brand-grid` and the homepage's
 `.hero-art` canvas placement. Their optical geometry is not a UI spacing scale.
 Artwork percentage insets, line-height ratios and icon geometry are also distinct
 from layout margins/padding/gaps.
+
+## Brand page and shared headers
+
+`/brand` owns the VI specimens; Templates is again only its composition library.
+The page shows 16/24/32/48/64/96/128/256 px marks, three wordmark treatments, four
+backgrounds, readable/copyable Agent instructions and light/dark app-icon forms.
+`BrandIdentity` keeps the header and specimens on the same asset selection.
+
+App-icon rounding reuses the immutable
+`artwork/icon-texture-review/2026-09-27/ios-style-mask.svg` geometry, inlined by
+Vite. It is the existing iOS-style continuous-corner approximation (22.37% radius,
+0.6 smoothing), not a certified Apple asset. Square and masked samples are shown
+side by side without changing the transparent Logo. Native platform deliveries
+must remain opaque, unmasked squares.
+
+The shared hero keeps the homepage's split structure, headline color hierarchy
+and mobile reading order. Its desktop type caps at 96 px so the existing English
+Templates heading fits two lines, and all four desktop hero sections share a
+544 px height. Existing right-hand visuals remain usable while newly generated
+artwork awaits raw approval. The first hero batch and the single 429 follow-up
+are archived under `artwork/site-heroes/2026-11-13-{01,02}`; no unapproved output
+is wired into the site.
+
+At narrow/tablet widths the global header gives the four main routes one full
+row and the related personal sites another, avoiding overlapping navigation.
+Large actual-size specimens span both columns before their full canvas would be
+clipped. Browser regression checks include intermediate 601/640 px widths, not
+only standard desktop and phone sizes.
 
 ## Material and shape
 

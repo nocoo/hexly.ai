@@ -1,5 +1,23 @@
 # Retrospective
 
+## 2026-11-13: Moving the site mark missed a package source-path assertion
+
+Extracting the shared mark and wordmark from `Icon.tsx` into `BrandIdentity.tsx` updated runtime consumers and the focused site tests, but missed Video Kit's filesystem-based assertion against the old source path. The full index-snapshot commit gate caught it before committing. The assertion now reads the actual shared identity module; its palette, source-selection and wordmark checks remain unchanged.
+
+When moving a shared module, search source strings and filesystem reads across workspace packages as well as application imports and root tests. A focused import-based suite does not cover every provenance guard.
+
+## 2026-11-13: Brand specimens and navigation failed between standard breakpoints
+
+The new Brand page passed desktop and phone checks, but a broader local sweep found the native 256 px specimen clipped at 601 px. Four main navigation entries also overlapped related-site links around 601–640 px despite the document having no horizontal overflow. The large specimens now span both columns before the canvas stops fitting, and the header uses separate navigation rows through 768 px. A real-browser regression checks containment and two-axis navigation overlap at intermediate widths.
+
+Test just above and below layout breakpoints, and compare sibling rectangles as well as document scroll width. An overflow-hidden container can conceal a clipped specimen, while overlapping flex/grid items need not expand the page. The shared hero also needed zero-minimum fractional tracks: a fixed-width right visual otherwise squeezed the English Templates heading at 651 px. The regression now checks heading containment and equal hero tracks/heights at that intermediate width.
+
+## 2026-11-13: A four-image burst reached the provider request limit
+
+Four explicitly requested header images were submitted concurrently. Three succeeded; Templates returned a recorded HTTP 429 `rate_limit_exceeded` with no image. After all other calls completed, one deliberate follow-up reused the same prompt and references in a fresh directory and succeeded. There was no retry loop or model/provider fallback; all four outputs remain pending owner review.
+
+Start image requests at a bounded concurrency rather than assuming a four-call burst is available. Preserve failed receipts, distinguish an explicit 429 from an uncertain timeout, and schedule a remaining request separately after the burst completes. New hero request/response directories follow the same frozen-generated-record formatter exclusion as existing logo studies; never reformat completed provider receipts to satisfy a new path's lint coverage.
+
 ## 2026-11-13: Native select chrome bypassed the control treatment
 
 The material-control pass styled select backgrounds and dimensions but left the template and frame-format selects using native appearance. Their platform arrow stayed at the far edge and the rendered field did not reliably match the other controls. Project/category and time-zone fields separately carried their own arrow wrappers.

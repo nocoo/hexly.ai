@@ -12,6 +12,19 @@ const parse = (pathname: string, search = "", hash = "") =>
 	parseNavigation(pathname, search, projects, hash);
 
 describe("shareable directory navigation", () => {
+	it("opens Brand as an independent page and keeps its section anchors", () => {
+		const state = parse("/brand/", "?category=ai&q=pew&sort=az", "#surfaces");
+		expect(state).toMatchObject({
+			view: "brand",
+			category: "all",
+			query: "",
+			sort: "curated",
+			anchor: "surfaces",
+		});
+		expect(navigationPath(state)).toBe("/brand#surfaces");
+		expect(navigationPath(parse("/brand"))).toBe("/brand");
+		expect(parse("/brand", "", "#surfaces")).toEqual(state);
+	});
 	it("opens the directory by default and rejects unsupported parameters", () => {
 		expect(parse("/")).toEqual({
 			view: "directory",

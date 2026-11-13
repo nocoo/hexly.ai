@@ -28,6 +28,7 @@ export function parseNavigation(
 	const params = new URLSearchParams(search);
 	const legacy = legacyRoute(pathname);
 	const path = legacy?.path ?? pathname;
+	const brand = /^\/brand\/?$/.test(path);
 	const route = /^\/projects\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/.exec(path);
 	const video = /^\/templates(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?\/?$/.exec(path);
 	const anchor = /^#[a-z][a-z0-9-]*$/.test(hash)
@@ -44,18 +45,20 @@ export function parseNavigation(
 		category = "archive";
 	return resolveNavigation(
 		{
-			view: video
-				? "templates"
-				: /^\/status\/?$/.test(path)
-					? "status"
-					: route
-						? "project"
-						: /^\/logos\/?$/.test(path)
-							? "logos"
-							: "directory",
-			category,
-			query: params.get("q") ?? "",
-			sort: params.get("sort") === "az" ? "az" : "curated",
+			view: brand
+				? "brand"
+				: video
+					? "templates"
+					: /^\/status\/?$/.test(path)
+						? "status"
+						: route
+							? "project"
+							: /^\/logos\/?$/.test(path)
+								? "logos"
+								: "directory",
+			category: brand ? "all" : category,
+			query: brand ? "" : (params.get("q") ?? ""),
+			sort: !brand && params.get("sort") === "az" ? "az" : "curated",
 			project,
 			...(anchor ? { anchor } : {}),
 			...(video
@@ -108,6 +111,8 @@ export function resolveNavigation(
 }
 
 export function navigationPath(state: DirectoryState): string {
+	if (state.view === "brand")
+		return `/brand${state.anchor ? `#${state.anchor}` : ""}`;
 	const params = new URLSearchParams();
 	if (state.view === "templates") {
 		if (!state.video && state.videoFamily && state.videoFamily !== "templates")

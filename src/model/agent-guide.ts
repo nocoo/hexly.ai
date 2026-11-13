@@ -1,3 +1,4 @@
+import { brandCopy, brandSizes } from "../data/brand-copy";
 import examples from "../data/template-examples.json" with { type: "json" };
 import { assetUrl } from "./assets";
 import { projectTexture } from "./brand";
@@ -167,6 +168,29 @@ export function agentGuide(
 			label: "Project catalogue JSON",
 			href: `${siteOrigin}/data/projects.json`,
 		});
+	} else if (path === "/brand") {
+		title = "Hexly brand usage";
+		instructions.push(
+			...brandCopy[locale].rules,
+			`The Brand page shows the transparent mark at ${brandSizes.join(", ")} CSS pixels, horizontal and stacked signatures, a wordmark-only treatment, and paper, ivory, dark and transparent surfaces.`,
+			"The standard wordmark uses Space Grotesk: the name at weight 600, the domain suffix at weight 400, and the site's terracotta point. Keep the existing site colors and do not invent new palettes for these examples.",
+			"App-icon specimens show light and dark square artwork plus an Apple-style continuous-corner approximation. Keep actual platform deliveries square and unmasked; the app platform owns its final mask. Do not apply this presentation mask to transparent header or favicon marks.",
+			"Reuse published identity files from the catalogue and verify their recorded hashes. Local development may show a selected, unpublished candidate; a local preview does not authorize an upload or establish a public asset URL.",
+		);
+		resources.push(
+			{
+				label: "Hexly identity archive",
+				href: `${siteOrigin}/projects/hexly-ai#brand`,
+			},
+			{
+				label: "Design tokens and layout contract",
+				href: "https://github.com/nocoo/hexly.ai/blob/main/docs/42-site-design-system.md",
+			},
+			{
+				label: "Published project catalogue",
+				href: `${siteOrigin}/data/projects.json`,
+			},
+		);
 	} else if (path === "/templates" || path.startsWith("/templates/")) {
 		const template = findVideo(path.split("/")[2]);
 		title = template

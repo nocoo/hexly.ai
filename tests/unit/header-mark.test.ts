@@ -1,5 +1,5 @@
 import { afterEach, expect, it, vi } from "vitest";
-import { BrandMark } from "../../src/components/Icon";
+import { BrandMark } from "../../src/components/BrandIdentity";
 import identity from "../../src/data/projects/hexly-ai.json";
 
 const candidate = "/logos/family/hexly-ai/2026-11-13-02/02/transparent-128.png";

@@ -21,6 +21,17 @@ import {
 const projects = readProjects();
 
 describe("page-specific agent handoffs", () => {
+	it("keeps Brand instructions separate from template composition and publication", () => {
+		for (const locale of ["en", "zh"] as const) {
+			const guide = agentGuide("/brand", projects, locale);
+			expect(guide.path).toBe("/agents/brand.md");
+			expect(guide.body).toContain("Hexly brand usage");
+			expect(guide.body).toContain("Space Grotesk");
+			expect(guide.body).toContain("16, 24, 32, 48, 64, 96, 128, 256");
+			expect(guide.body).toContain("unpublished candidate");
+			expect(guide.body).not.toContain("Choose any of the five");
+		}
+	});
 	it("describes Chrome store links as installation destinations in HTML and agent handoffs", () => {
 		for (const id of ["hooky", "r2shot"]) {
 			const project = projects.find((p) => p.id === id);

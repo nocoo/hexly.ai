@@ -24,6 +24,7 @@ test("advertises page-specific agent guides in HTML and the crawler index", asyn
 	for (const [path, guide] of [
 		["/", "/agents/index.md"],
 		["/logos", "/agents/logos.md"],
+		["/brand", "/agents/brand.md"],
 		["/projects/frogie", "/agents/projects/frogie.md"],
 		["/templates/launch", "/agents/templates/launch.md"],
 		["/status", "/agents/status.md"],

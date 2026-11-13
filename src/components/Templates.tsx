@@ -16,7 +16,7 @@ import {
 	videoManifest,
 } from "../model/videos";
 import { Icon } from "./Icon";
-import { SiteIdentity } from "./SiteIdentity";
+import { PageHero } from "./PageHero";
 import { TemplateExamples } from "./TemplateExamples";
 import "../styles/videos.css";
 
@@ -180,7 +180,7 @@ export function Templates({
 	const cards = videoManifest[family];
 	if (state.video && !entry)
 		return (
-			<main className="shell videos-page" id="main-content">
+			<main className="shell videos-page video-detail-page" id="main-content">
 				<h1>{t.notFound}</h1>
 				<a
 					className="button"
@@ -197,7 +197,10 @@ export function Templates({
 			</main>
 		);
 	return (
-		<main className="shell videos-page" id="main-content">
+		<main
+			className={`shell videos-page${entry ? " video-detail-page" : ""}`}
+			id="main-content"
+		>
 			{entry ? (
 				<>
 					<a
@@ -312,43 +315,43 @@ export function Templates({
 				</>
 			) : (
 				<>
-					<SiteIdentity title={t.identity} />
-					<section className="video-intro">
-						<div>
-							<p className="eyebrow">
-								<span className="video-red-dot" />
-								{t.eyebrow}
-							</p>
-							<h1>
+					<PageHero
+						className="video-intro"
+						headingId="templates-title"
+						eyebrow={t.eyebrow}
+						title={
+							<>
 								{t.title}
 								<br />
-								<span>{t.titleEnd}</span>
-							</h1>
-							<p>
-								{t.description}
-								<br />
-								<a className="video-examples-jump" href="#outros">
-									{t.examples} ↓
-								</a>
-							</p>
-						</div>
-						<div className="video-intro-note" aria-hidden="true">
-							<div className="video-combination-figure">
-								<span>05</span>
-								<i>×</i>
-								<span>05</span>
-								<i>×</i>
-								<span>05</span>
+								<span className="outline-word">{t.titleEnd}</span>
+							</>
+						}
+						description={t.description}
+						artwork={
+							<div className="hero-visual">
+								<div className="video-intro-note" aria-hidden="true">
+									<div className="video-combination-figure">
+										<span>05</span>
+										<i>×</i>
+										<span>05</span>
+										<i>×</i>
+										<span>05</span>
+									</div>
+									<p>OPEN / CONTENT / CLOSE</p>
+									<div className="video-mini-timeline">
+										<i />
+										<i />
+										<i />
+									</div>
+									<span>LIGHT + DARK</span>
+								</div>
 							</div>
-							<p>OPEN / CONTENT / CLOSE</p>
-							<div className="video-mini-timeline">
-								<i />
-								<i />
-								<i />
-							</div>
-							<span>LIGHT + DARK</span>
-						</div>
-					</section>
+						}
+					>
+						<a className="hero-link" href="#outros">
+							{t.examples} ↓
+						</a>
+					</PageHero>
 					<div className="video-library-bar">
 						<div>
 							<h2>{t.library}</h2>

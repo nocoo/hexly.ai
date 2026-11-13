@@ -14,7 +14,7 @@ describe("the Hexly family contract", () => {
 			"utf8",
 		);
 		const icon = readFileSync(
-			new URL("../../../src/components/Icon.tsx", import.meta.url),
+			new URL("../../../src/components/BrandIdentity.tsx", import.meta.url),
 			"utf8",
 		);
 		for (const palette of Object.values(palettes))

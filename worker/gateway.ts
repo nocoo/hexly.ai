@@ -76,6 +76,7 @@ export default {
 			host === "status.hexly.ai" &&
 			(legacy ||
 				path === "/logos" ||
+				path === "/brand" ||
 				/^\/projects\/[a-z0-9-]+$/.test(path) ||
 				path === "/templates" ||
 				path.startsWith("/templates/"))
