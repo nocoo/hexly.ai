@@ -29,18 +29,19 @@ for (const [theme, options] of [
 				if (view === "gallery") {
 					const category = page.getByRole("combobox");
 					await expect(category).toHaveCSS("appearance", "none");
-					const inset = await category.locator("..").evaluate((control) => {
-						const select = control.querySelector("select");
-						const icon = control.querySelector("svg");
-						if (!select || !icon) throw new Error("Missing category control");
+					const inset = await category.evaluate((select) => {
+						const style = getComputedStyle(select);
 						return {
-							right:
-								select.getBoundingClientRect().right -
-								icon.getBoundingClientRect().right,
-							left: Number.parseFloat(getComputedStyle(select).paddingLeft),
+							arrow: style.backgroundPositionX.split(",")[0],
+							size: style.backgroundSize.split(",")[0],
+							right: Number.parseFloat(style.paddingRight),
+							left: Number.parseFloat(style.paddingLeft),
 						};
 					});
-					expect(inset.right).toBeCloseTo(inset.left, 0);
+					expect(inset.left).toBe(12);
+					expect(inset.arrow).toBe("calc(100% - 12px)");
+					expect(inset.size).toBe("16px 16px");
+					expect(inset.right).toBe(inset.left * 2 + 16);
 				}
 
 				if (view === "directory") {

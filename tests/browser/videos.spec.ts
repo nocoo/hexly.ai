@@ -321,6 +321,7 @@ test.describe("has a narrow Chinese deck, an independent dark canvas and compact
 		expect(await page.locator(".view-link-label").allTextContents()).toEqual([
 			"项目",
 			"模板",
+			"品牌",
 			"状态",
 		]);
 		await page.getByRole("button", { name: "主题：浅色；切换为深色" }).click();
