@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-13: New selected surfaces retained an old counter color
+
+The ceramic-control pass changed selected dark surfaces while a template-family counter still explicitly used the old muted text color. The complete browser suite caught a 4.06:1 contrast ratio in desktop and mobile dark views; the other 90 journeys passed. The counter now inherits the selected control's foreground rather than maintaining an independent color. No contrast rule or test was weakened.
+
+When changing control surfaces, inspect nested counters, icons and secondary labels in selected as well as idle states. Keep their foreground tied to the control unless a separately verified semantic role is needed. The first large CSS batches also matched repeated spacing declarations ambiguously; the editor rejected them without changing files. Include the owning selector in targeted replacements, re-read formatter output before matching, and validate uniqueness against the original file rather than an assumed sequential edit.
+
 ## 2026-11-13: Ad hoc browser checks mixed browser and request-client configuration
 
 The local header review opened successfully in Chromium, but its extra asset hash check first passed a relative URL to Playwright's request client without a base URL, then hit that client's separate trust store when changed to the absolute Caddy URL. Neither failure involved the site's image delivery. The check was corrected to fetch the same-origin asset inside the already trusted browser context and verify the returned bytes. No certificates, Keychain entries or TLS settings were changed.

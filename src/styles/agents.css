@@ -7,14 +7,17 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
-	min-height: 44px;
-	padding: 10px 14px;
-	border: 1px solid var(--line);
-	border-radius: 8px;
-	background: var(--surface);
-	color: var(--ink);
-	font-size: 12px;
+	gap: var(--space-8);
+	min-height: var(--control-height);
+	padding: var(--space-8) var(--space-16);
+	border: 1px solid var(--control-edge);
+	border-radius: var(--radius-control);
+	background: var(--control-face) var(--control-grain);
+	box-shadow: var(--control-relief);
+	color: var(--control-ink);
+	font-size: var(--control-font-size);
+	font-weight: var(--control-font-weight);
+	line-height: var(--control-line-height);
 	white-space: nowrap;
 }
 .copy-button:hover {
@@ -25,8 +28,8 @@
 	cursor: default;
 }
 .copy-button .icon {
-	width: 15px;
-	height: 15px;
+	width: var(--control-icon);
+	height: var(--control-icon);
 }
 .copy-failure {
 	max-width: 32ch;
@@ -44,6 +47,7 @@
 	border-color: transparent;
 	background: transparent;
 	padding-inline: 0;
+	box-shadow: none;
 }
 .template-example-links .copy-button:hover {
 	text-decoration: underline;

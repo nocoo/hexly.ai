@@ -51,10 +51,10 @@
 	color: var(--ink);
 }
 .brand-hero {
-	margin: 28px 0;
+	margin: var(--space-32) 0;
 	overflow: hidden;
 	border: 1px solid var(--line);
-	border-radius: 24px;
+	border-radius: var(--radius-panel);
 	background: var(--surface);
 }
 .brand-hero picture,
@@ -67,8 +67,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 18px;
-	padding: 18px 24px;
+	gap: var(--space-16);
+	padding: var(--space-16) var(--space-24);
 	background-image: var(--brand-texture);
 	background-size: 480px 480px;
 	font: 11px / 1.7 var(--mono);
@@ -84,8 +84,8 @@
 	)
 	.brand-kit-intro {
 	max-width: none;
-	padding: 28px 32px;
-	margin-bottom: 28px;
+	padding: var(--space-24) var(--space-32);
+	margin-bottom: var(--space-32);
 	border: 1px solid var(--line);
 	border-radius: 20px;
 	background-color: var(--surface);
@@ -106,7 +106,7 @@
 }
 .brand-kit-intro {
 	max-width: 720px;
-	padding-block: 12px 30px;
+	padding-block: var(--space-12) var(--space-32);
 }
 .brand-kit-intro > p:not(.eyebrow):not(.brand-scope-note) {
 	font-size: clamp(19px, 2.2vw, 26px);
@@ -123,7 +123,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 12px;
-	margin: 0 0 28px;
+	margin: 0 0 var(--space-32);
 	font-size: 12px;
 	line-height: 1.7;
 }
@@ -151,7 +151,7 @@
 	gap: 24px;
 	min-width: 0;
 	margin: 0;
-	padding: 28px;
+	padding: var(--space-24);
 }
 .brand-kit-specimens img {
 	width: 100%;
@@ -159,7 +159,7 @@
 }
 .brand-kit-specimens a {
 	display: block;
-	padding-block: 14px;
+	padding-block: var(--space-16);
 }
 .brand-kit-light {
 	--muted: #68705f;
@@ -184,13 +184,13 @@
 .brand-kit-assets {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 0 28px;
+	gap: 0 var(--space-24);
 }
 .brand-kit-assets > div {
 	display: flex;
 	align-items: center;
-	gap: 18px;
-	padding-block: 16px;
+	gap: var(--space-16);
+	padding-block: var(--space-16);
 	border-bottom: 1px solid var(--line);
 	font-size: 12px;
 }
@@ -198,7 +198,7 @@
 	margin-right: auto;
 }
 .brand-kit-assets small {
-	margin-left: 5px;
+	margin-left: var(--space-4);
 	color: var(--muted);
 	font: 10px var(--mono);
 }
@@ -210,7 +210,7 @@
 	color: var(--accent);
 }
 .brand-kit-downloads .download-links {
-	margin-top: 18px;
+	margin-top: var(--space-16);
 }
 .brand-kit-downloads {
 	padding-top: 40px;
@@ -244,7 +244,7 @@
 	}
 	.brand-hero figcaption {
 		align-items: flex-start;
-		padding: 14px 16px;
+		padding: var(--space-16);
 		font-size: 10px;
 	}
 	:is(
@@ -260,17 +260,17 @@
 		grid-template-columns: 1fr;
 	}
 	.brand-kit-specimens figure {
-		padding: 22px;
-		gap: 14px;
+		padding: var(--space-16);
+		gap: var(--space-16);
 	}
 	.brand-kit-specimens a {
 		padding-block: 0;
 	}
 	.brand-kit-intro {
-		padding-block: 8px 22px;
+		padding-block: var(--space-8) var(--space-24);
 	}
 	.brand-kit-provenance {
-		gap: 10px 16px;
+		gap: var(--space-8) var(--space-16);
 	}
 }
 
@@ -295,7 +295,7 @@
 .brand-texture-specimens figure {
 	margin: 0;
 	border: 1px solid var(--line);
-	border-radius: 18px;
+	border-radius: var(--radius-group);
 	overflow: hidden;
 }
 .brand-texture-specimens figure > div {

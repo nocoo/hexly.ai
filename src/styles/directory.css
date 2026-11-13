@@ -3,28 +3,25 @@
 	grid-template-columns: 1.15fr 1fr;
 	align-items: center;
 	min-height: 422px;
-	gap: 45px;
-	padding: 46px 0 42px;
+	gap: var(--space-48);
+	padding: var(--section-space) 0;
 	overflow-x: clip;
 }
 .hero-copy {
 	padding-bottom: 4px;
 }
 .hero .eyebrow {
-	margin: 0 0 31px;
+	margin: 0 0 var(--space-32);
 }
 .hero h1 {
 	font-size: clamp(70px, 7.2vw, 104px);
 	font-weight: 500;
 	letter-spacing: -0.085em;
 	line-height: 1.03;
-	margin: 0 0 31px -5px;
+	margin: 0 0 var(--space-32);
 }
 .outline-word {
-	color: #76816a;
-}
-[data-theme="dark"] .outline-word {
-	color: #a9b59c;
+	color: var(--headline-secondary);
 }
 .headline-period {
 	color: var(--accent);
@@ -43,7 +40,7 @@
 	width: 450px;
 	height: 320px;
 	justify-self: end;
-	margin-right: 10px;
+	margin-right: var(--space-8);
 	isolation: isolate;
 }
 .orbit {
@@ -178,7 +175,7 @@
 	left: 0;
 	right: 0;
 	display: flex;
-	gap: 10px;
+	gap: var(--space-8);
 	align-items: center;
 	justify-content: center;
 	font: 8px var(--mono);
@@ -192,7 +189,7 @@
 }
 .collection {
 	border-top: 1px solid var(--line);
-	padding-top: 22px;
+	padding-top: var(--space-24);
 }
 .collection-heading {
 	display: flex;
@@ -203,7 +200,7 @@
 .collection-title-row {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: var(--space-12);
 }
 .collection-title-row h2 {
 	margin: 0;
@@ -212,22 +209,25 @@
 	letter-spacing: -0.8px;
 }
 .collection-heading .search-field {
-	width: 253px;
+	width: var(--search-width);
 }
 .collection-toolbar {
-	display: flex;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
 	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 10px 15px;
-	margin-top: 12px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid var(--line);
+	gap: var(--space-16);
+	margin-block: var(--space-16);
 }
 .category-tabs {
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: var(--space-4);
+	min-width: 0;
+	max-width: 100%;
+	padding: var(--control-inset);
+	border-radius: var(--radius-group);
+	background: var(--control-well) var(--control-grain);
+	box-shadow: var(--control-recess);
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	scrollbar-width: none;
@@ -238,48 +238,57 @@
 .category-tabs button {
 	display: inline-flex;
 	align-items: center;
-	gap: 6px;
-	padding: 7px 9px;
-	min-height: 32px;
+	gap: var(--space-8);
+	padding: var(--space-8) var(--space-12);
+	min-height: var(--control-item-height);
 	background: none;
-	color: var(--muted);
-	border: 1px solid transparent;
-	border-radius: 5px;
-	font-size: 11px;
+	color: var(--control-ink);
+	border: 0;
+	border-radius: var(--radius-control);
+	font-size: var(--control-font-size);
+	font-weight: var(--control-font-weight);
+	line-height: var(--control-line-height);
 	white-space: nowrap;
 	transition:
 		background 150ms,
 		color 150ms;
 }
 .category-tabs button > span {
-	font: 9px var(--mono);
+	font: var(--control-meta-size) / 16px var(--sans);
 }
 .category-tabs button[aria-pressed="true"] {
-	background: var(--ink);
-	color: var(--page);
+	background: var(--control-selected);
+	color: var(--control-selected-ink);
+	box-shadow:
+		var(--control-relief),
+		inset 0 -2px 0 var(--accent);
 }
 .category-tabs button:not([aria-pressed="true"]):hover {
-	background: var(--hover);
-	color: var(--ink);
+	background: var(--control-hover);
+	color: var(--control-selected-ink);
 }
 .sort-toggle {
 	display: grid;
 	place-items: center;
 	flex-shrink: 0;
-	width: 36px;
-	height: 36px;
-	border: 1px solid var(--line);
-	border-radius: 6px;
-	background: transparent;
-	color: var(--muted);
+	width: var(--control-height);
+	height: var(--control-height);
+	border: 0;
+	border-radius: var(--radius-control);
+	background: var(--control-face) var(--control-grain);
+	box-shadow: var(--control-recess);
+	color: var(--control-ink);
 }
 .sort-toggle:hover {
-	background: var(--hover);
-	color: var(--ink);
+	background-color: var(--control-hover);
+	color: var(--control-selected-ink);
 }
 .sort-toggle[aria-pressed="true"] {
-	background: var(--ink);
-	color: var(--page);
+	background-color: var(--control-selected);
+	color: var(--control-selected-ink);
+	box-shadow:
+		var(--control-relief),
+		inset 0 -2px 0 var(--accent);
 }
 .sort-toggle .icon {
 	width: 18px;
@@ -297,7 +306,7 @@
 	border: 0;
 	background: transparent;
 	cursor: pointer;
-	padding: 8px 18px 8px 4px;
+	padding: var(--space-8) var(--space-20) var(--space-8) var(--space-4);
 	max-width: 130px;
 }
 .sort-control .icon {
@@ -311,13 +320,13 @@
 .project-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 14px;
+	gap: var(--grid-gap);
 }
 .project-card {
 	min-width: 0;
 	position: relative;
 	border: 1px solid color-mix(in srgb, var(--line) 88%, transparent);
-	border-radius: 16px;
+	border-radius: var(--radius-group);
 	background: color-mix(in srgb, var(--surface) 62%, transparent);
 	transition:
 		background 200ms,
@@ -336,8 +345,8 @@
 	display: grid;
 	grid-template-columns: 96px minmax(0, 1fr);
 	align-items: center;
-	gap: 16px 20px;
-	padding: 20px;
+	gap: var(--space-16) var(--space-20);
+	padding: var(--card-padding);
 	border-radius: inherit;
 }
 .card-body {
@@ -387,20 +396,21 @@
 }
 .card-external {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: var(--card-padding);
+	right: var(--card-padding);
 	display: inline-flex;
 	align-items: center;
-	gap: 5px;
-	min-height: 28px;
-	padding: 5px 7px;
+	gap: var(--space-4);
+	min-height: var(--space-28);
+	padding: var(--space-4) var(--space-8);
 	flex-shrink: 0;
-	font-size: 10px;
-	font-weight: 500;
-	color: var(--ink);
-	background: var(--surface);
-	border: 1px solid var(--line);
-	border-radius: 5px;
+	font-size: var(--control-meta-size);
+	font-weight: var(--control-font-weight);
+	line-height: 16px;
+	color: var(--control-ink);
+	background: var(--control-face);
+	border: 1px solid var(--control-edge);
+	border-radius: var(--radius-small);
 	transition:
 		background 150ms,
 		border-color 150ms;
@@ -410,13 +420,13 @@
 	height: 13px;
 }
 .card-external:hover {
-	background: var(--hover);
-	border-color: var(--muted);
+	background: var(--control-hover);
+	border-color: var(--control-edge);
 }
 .project-card h3 {
 	min-width: 0;
 	margin: 0;
-	padding-right: 78px;
+	padding-right: var(--space-80);
 	font-size: 18px;
 	font-weight: 550;
 	letter-spacing: -0.55px;
@@ -446,9 +456,9 @@
 	grid-column: 1 / -1;
 	display: flex;
 	align-items: center;
-	gap: 10px;
-	min-height: 34px;
-	padding-top: 12px;
+	gap: var(--space-8);
+	min-height: var(--space-36);
+	padding-top: var(--space-12);
 	border-top: 1px solid var(--line);
 }
 .card-category {
@@ -514,20 +524,10 @@
 	.hero h1 {
 		font-size: 80px;
 	}
-	.collection-toolbar {
-		align-items: flex-start;
-	}
-	.project-grid {
-		gap: 14px;
-	}
 	.card-main {
-		padding: 18px;
-		gap: 16px;
+		padding: var(--card-padding);
+		gap: var(--space-16);
 		grid-template-columns: 88px minmax(0, 1fr);
-	}
-	.card-external {
-		top: 18px;
-		right: 18px;
 	}
 	.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 		width: 88px;
@@ -536,11 +536,8 @@
 	.project-card h3 {
 		font-size: 17px;
 	}
-	.category-tabs {
-		gap: 2px;
-	}
 	.category-tabs button {
-		padding-inline: 7px;
+		padding-inline: var(--space-8);
 	}
 }
 
@@ -562,15 +559,6 @@
 	.hero-description {
 		font-size: 16px;
 	}
-	.collection-toolbar {
-		position: relative;
-		padding-bottom: 44px;
-	}
-	.sort-control {
-		position: absolute;
-		bottom: 7px;
-		right: 0;
-	}
 }
 
 @media (max-width: 1050px) {
@@ -585,8 +573,8 @@
 		flex-direction: column;
 		align-items: stretch;
 		gap: 0;
-		padding-top: 34px;
-		padding-bottom: 18px;
+		padding-top: var(--space-32);
+		padding-bottom: var(--space-24);
 	}
 	.hero-copy {
 		text-align: center;
@@ -594,7 +582,7 @@
 	.hero .eyebrow {
 		justify-content: center;
 		font-size: 9px;
-		margin-bottom: 18px;
+		margin-bottom: var(--space-16);
 	}
 	.hero h1 {
 		font-size: 60px;
@@ -616,7 +604,7 @@
 		transform-origin: center;
 	}
 	.collection {
-		padding-top: 18px;
+		padding-top: var(--space-24);
 	}
 	.collection-heading {
 		flex-direction: column;
@@ -625,27 +613,19 @@
 	}
 	.collection-heading .search-field {
 		width: 100%;
-		height: 43px;
 	}
 	.collection-title-row h2 {
 		font-size: 23px;
 	}
 	.collection-toolbar {
-		margin-top: 10px;
-		padding-bottom: 12px;
+		grid-template-columns: minmax(0, 1fr);
+		gap: var(--space-12);
 	}
 	.category-tabs {
-		flex-wrap: nowrap;
-		width: calc(100vw - 36px);
-		overflow-x: auto;
-		padding-bottom: 8px;
-		gap: 3px;
-		scrollbar-width: thin;
-		scrollbar-color: var(--line) transparent;
+		width: 100%;
 	}
 	.category-tabs button {
-		font-size: 10px;
-		padding: 7px 8px;
+		padding-inline: var(--space-8);
 	}
 	.result-count {
 		margin-top: 12px;
@@ -654,10 +634,6 @@
 	}
 	.project-grid {
 		grid-template-columns: minmax(0, 1fr);
-		gap: 12px;
-	}
-	.project-card {
-		border-radius: 14px;
 	}
 	.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 		width: 88px;
@@ -691,13 +667,9 @@
 		margin-block: -40px -65px;
 	}
 	.card-main {
-		padding: 14px;
-		gap: 14px;
+		padding: var(--card-padding);
+		gap: var(--space-12);
 		grid-template-columns: 80px minmax(0, 1fr);
-	}
-	.card-external {
-		top: 14px;
-		right: 14px;
 	}
 	.card-logo :is(.logo-tile, .logo-composed, .logo-cover) {
 		width: 80px;

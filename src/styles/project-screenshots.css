@@ -28,7 +28,7 @@
 .screenshot-gallery {
 	display: grid;
 	grid-template-columns: repeat(var(--screenshot-columns), minmax(0, 1fr));
-	gap: 24px;
+	gap: var(--grid-gap);
 	align-items: start;
 }
 .screenshot-gallery figure {
@@ -42,7 +42,7 @@
 	align-items: center;
 	width: 100%;
 	border: 1px solid var(--line);
-	border-radius: 14px;
+	border-radius: var(--radius-group);
 	background: var(--surface-soft);
 	overflow: hidden;
 	cursor: zoom-in;
@@ -67,8 +67,8 @@
 	bottom: 12px;
 	display: grid;
 	place-items: center;
-	width: 34px;
-	height: 34px;
+	width: var(--control-height);
+	height: var(--control-height);
 	border: 1px solid var(--line);
 	border-radius: 10px;
 	color: var(--ink);
@@ -88,7 +88,7 @@
 	display: flex;
 	align-items: baseline;
 	gap: 12px;
-	padding: 14px 2px 0;
+	padding: var(--space-16) 0 0;
 	font-size: 12px;
 	line-height: 1.7;
 	color: var(--muted);
@@ -128,7 +128,7 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	padding: 20px 26px;
+	padding: var(--space-24);
 }
 .screenshot-lightbox-heading .eyebrow {
 	margin: 0 0 4px;
@@ -168,9 +168,9 @@
 	display: grid;
 	grid-template-columns: minmax(0, 1fr);
 	align-items: center;
-	gap: 18px;
+	gap: var(--space-16);
 	min-height: 0;
-	padding-inline: 26px;
+	padding-inline: var(--space-24);
 }
 .screenshot-lightbox-stage[data-multiple="true"] {
 	grid-template-columns: 44px minmax(0, 1fr) 44px;
@@ -202,7 +202,7 @@
 }
 .screenshot-lightbox-footer {
 	min-width: 0;
-	padding: 20px 26px 16px;
+	padding: var(--space-24) var(--space-24) var(--space-16);
 }
 .screenshot-lightbox-caption {
 	display: flex;
@@ -225,7 +225,7 @@
 .screenshot-thumbnails {
 	position: relative;
 	display: flex;
-	gap: 10px;
+	gap: var(--space-8);
 	width: max-content;
 	max-width: 100%;
 	margin: 16px auto 0;
@@ -274,7 +274,7 @@
 		gap: 16px;
 		overflow-x: auto;
 		margin: -4px;
-		padding: 4px 4px 14px;
+		padding: var(--space-4) var(--space-4) var(--space-16);
 		scroll-snap-type: x mandatory;
 		scrollbar-width: thin;
 	}
@@ -293,7 +293,7 @@
 	.screenshot-gallery-heading {
 		align-items: start;
 		flex-direction: column;
-		gap: 6px;
+		gap: var(--space-8);
 	}
 	.screenshot-gallery {
 		gap: 12px;
@@ -309,11 +309,12 @@
 		border-radius: 0;
 	}
 	.screenshot-lightbox-heading {
-		padding: max(14px, env(safe-area-inset-top)) 16px 14px;
+		padding: max(var(--space-16), env(safe-area-inset-top)) var(--space-16)
+			var(--space-16);
 		gap: 12px;
 	}
 	.screenshot-lightbox-actions {
-		gap: 14px;
+		gap: var(--space-16);
 	}
 	.screenshot-lightbox-actions a {
 		font-size: 10px;

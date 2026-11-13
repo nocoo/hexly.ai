@@ -1,3 +1,5 @@
+@import "./tokens.css";
+
 @font-face {
 	font-family: "Space Grotesk Variable";
 	font-style: normal;
@@ -26,6 +28,7 @@
 	--page: #f0f0e9;
 	--ink: #30372e;
 	--muted: #68705f;
+	--headline-secondary: #76816a;
 	--accent: #bf5c3c;
 	--line: #d4d8cb;
 	--surface: #f8f8f2;
@@ -34,15 +37,6 @@
 	--shadow: #35442c;
 	--sans: "Space Grotesk Variable", "Journey CJK", "PingFang SC", sans-serif;
 	--mono: "Geist Mono Variable", "Journey CJK", "PingFang SC", monospace;
-	--site-layout-max: 1500px;
-	--site-gutter: 36px;
-	--site-topbar-height: 78px;
-	--site-subheader-height: 0px;
-	--site-topbar-offset: calc(
-		var(--site-topbar-height) +
-		var(--site-subheader-height) +
-		env(safe-area-inset-top, 0px)
-	);
 	font-family: var(--sans);
 	font-synthesis: none;
 	font-weight: 400;
@@ -57,6 +51,7 @@
 	--page: #1e2824;
 	--ink: #e6e9dc;
 	--muted: #a0aa9a;
+	--headline-secondary: #a9b59c;
 	--accent: #e79670;
 	--line: #3d4940;
 	--surface: #27332c;
@@ -173,7 +168,7 @@ a {
 	background: var(--ink);
 	color: var(--page);
 	border-radius: 6px;
-	padding: 14px 20px;
+	padding: var(--space-16) var(--space-20);
 }
 .skip-link:focus {
 	top: 14px;
@@ -190,7 +185,7 @@ a {
 	color: var(--muted);
 	display: flex;
 	align-items: center;
-	gap: 9px;
+	gap: var(--space-8);
 }
 .tiny-square {
 	display: inline-block;
@@ -220,7 +215,7 @@ a {
 	display: grid;
 	grid-template-columns: auto auto minmax(0, 1fr) auto;
 	align-items: center;
-	column-gap: 22px;
+	column-gap: var(--space-24);
 	height: calc(var(--site-topbar-height) + var(--site-subheader-height));
 }
 .brand {
@@ -228,7 +223,7 @@ a {
 	display: inline-flex;
 	align-items: center;
 	flex-shrink: 0;
-	gap: 11px;
+	gap: var(--brand-gap);
 	font-family: "Space Grotesk Variable", sans-serif;
 	font-size: 23px;
 	font-weight: 600;
@@ -246,27 +241,29 @@ a {
 .view-links {
 	display: inline-flex;
 	align-items: center;
-	gap: 3px;
+	gap: var(--space-4);
 	width: max-content;
-	padding: 3px;
-	border: 1px solid var(--line);
-	border-radius: 12px;
-	background: color-mix(in srgb, var(--surface-soft) 70%, var(--page));
+	padding: var(--control-inset);
+	border: 0;
+	border-radius: var(--radius-group);
+	background: var(--control-well) var(--control-grain);
+	box-shadow: var(--control-recess);
 }
 .view-links button {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	gap: 6px;
-	min-height: 36px;
-	padding: 0 10px;
-	border: 1px solid transparent;
-	border-radius: 8px;
+	gap: var(--space-8);
+	min-height: var(--control-item-height);
+	padding: 0 var(--space-12);
+	border: 0;
+	border-radius: var(--radius-control);
 	background: transparent;
-	color: color-mix(in srgb, var(--muted) 80%, var(--ink));
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: -0.2px;
+	color: var(--control-ink);
+	font-size: var(--control-font-size);
+	font-weight: var(--control-font-weight);
+	line-height: var(--control-line-height);
+	letter-spacing: 0;
 	white-space: nowrap;
 	transition:
 		background 160ms,
@@ -275,18 +272,20 @@ a {
 		color 160ms;
 }
 .view-links button .icon {
-	width: 15px;
-	height: 15px;
+	width: var(--control-icon);
+	height: var(--control-icon);
+	color: var(--control-icon-ink);
 }
 .view-links button:hover {
-	background: color-mix(in srgb, var(--surface) 70%, transparent);
-	color: var(--ink);
+	background: var(--control-hover);
+	color: var(--control-selected-ink);
 }
 .view-links button[aria-pressed="true"] {
-	border-color: var(--line);
-	background: var(--surface);
-	color: var(--ink);
-	box-shadow: 0 1px 3px color-mix(in srgb, var(--shadow) 10%, transparent);
+	background: var(--control-selected);
+	color: var(--control-selected-ink);
+	box-shadow:
+		var(--control-relief),
+		inset 0 -2px 0 var(--accent);
 }
 .view-links button[aria-pressed="true"] .icon {
 	color: var(--accent);
@@ -294,7 +293,7 @@ a {
 .surface-links {
 	display: flex;
 	align-items: center;
-	gap: 22px;
+	gap: var(--space-24);
 	margin-left: auto;
 }
 .site-header .surface-links {
@@ -306,7 +305,7 @@ a {
 	display: inline-flex;
 	align-items: center;
 	min-height: 44px;
-	color: var(--muted);
+	color: var(--control-muted);
 	text-decoration: none;
 	white-space: nowrap;
 	background: none;
@@ -346,20 +345,20 @@ html[lang="zh-CN"] .site-header .surface-links a {
 .preferences {
 	display: flex;
 	align-items: center;
-	gap: 2px;
-	margin-left: 4px;
-	padding-left: 18px;
+	gap: var(--space-4);
+	margin-left: var(--space-4);
+	padding-left: var(--space-16);
 	border-left: 1px solid var(--line);
 }
 .icon-toggle {
-	width: 40px;
-	height: 40px;
+	width: var(--control-height);
+	height: var(--control-height);
 	flex-shrink: 0;
 	display: grid;
 	place-items: center;
 	border: 0;
 	background: transparent;
-	color: var(--muted);
+	color: var(--control-ink);
 	transition: color 0.2s;
 }
 .icon-toggle:hover {
@@ -382,20 +381,20 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 8px;
-	width: 34px;
-	height: 34px;
+	padding: var(--space-8);
+	width: var(--control-height);
+	height: var(--control-height);
 	background: transparent;
-	color: var(--muted);
+	color: var(--control-ink);
 	border: 1px solid transparent;
-	border-radius: 8px;
+	border-radius: var(--radius-control);
 	transition:
 		background 160ms,
 		color 160ms;
 }
 .icon-button:hover {
-	background: var(--hover);
-	color: var(--ink);
+	background: var(--control-hover);
+	color: var(--control-selected-ink);
 }
 .icon-button .icon {
 	width: 17px;
@@ -403,59 +402,56 @@ html[lang="zh-CN"] .site-header .surface-links a {
 }
 .button {
 	display: inline-flex;
-	gap: 10px;
+	gap: var(--space-8);
 	align-items: center;
 	justify-content: center;
-	min-height: 43px;
-	padding: 11px 18px;
-	font-size: 12px;
+	min-height: var(--control-height);
+	padding: var(--space-8) var(--space-16);
+	font-size: var(--control-font-size);
 	border: 1px solid transparent;
-	border-radius: 7px;
-	font-weight: 500;
+	border-radius: var(--radius-control);
+	font-weight: var(--control-font-weight);
+	line-height: var(--control-line-height);
 	transition:
 		background 160ms,
 		transform 160ms,
 		box-shadow 160ms;
-}
-.button:hover {
-	transform: translateY(-1px);
 }
 .button .icon {
 	width: 16px;
 	height: 16px;
 }
 .button-primary {
-	background: var(--ink);
-	color: var(--page);
-	box-shadow:
-		0 2px 0 color-mix(in srgb, var(--shadow) 30%, transparent),
-		0 6px 12px color-mix(in srgb, var(--shadow) 8%, transparent);
+	background: var(--control-selected) var(--control-grain);
+	color: var(--control-selected-ink);
+	border-color: var(--control-edge);
+	box-shadow: var(--control-relief);
 }
 .button-primary:hover {
-	box-shadow:
-		0 3px 0 color-mix(in srgb, var(--shadow) 30%, transparent),
-		0 8px 18px color-mix(in srgb, var(--shadow) 14%, transparent);
+	background-color: var(--control-hover);
 }
 .button-secondary {
-	background: var(--surface);
-	color: var(--ink);
-	border-color: var(--line);
+	background: var(--control-face) var(--control-grain);
+	color: var(--control-ink);
+	border-color: var(--control-edge);
+	box-shadow: var(--control-relief);
 }
 .button-secondary:hover {
-	background: var(--hover);
+	background-color: var(--control-hover);
 }
 .text-button {
 	display: inline-flex;
 	align-items: center;
-	gap: 7px;
+	gap: var(--space-8);
 	border: 0;
-	padding: 10px 0;
+	padding: var(--space-12) 0;
 	background: transparent;
-	color: var(--muted);
-	font-size: 12px;
+	color: var(--control-ink);
+	font-size: var(--control-font-size);
+	line-height: var(--control-line-height);
 }
 .text-button:hover {
-	color: var(--ink);
+	color: var(--control-selected-ink);
 }
 .text-button .icon {
 	width: 14px;
@@ -553,39 +549,43 @@ html[lang="zh-CN"] .site-header .surface-links a {
 .search-field {
 	display: flex;
 	align-items: center;
-	gap: 9px;
-	border: 1px solid var(--line);
-	background: color-mix(in srgb, var(--surface) 60%, transparent);
-	padding: 0 12px;
-	height: 41px;
-	border-radius: 7px;
-	color: var(--muted);
+	gap: var(--space-8);
+	min-width: 0;
+	border: 0;
+	background: var(--control-face) var(--control-grain);
+	padding: 0 var(--space-12);
+	height: var(--control-height);
+	border-radius: var(--radius-control);
+	color: var(--control-ink);
+	box-shadow: var(--control-recess);
 	transition:
 		border-color 150ms,
 		box-shadow 150ms;
 }
 .search-field:focus-within {
-	border-color: var(--muted);
-	box-shadow: 0 0 0 3px color-mix(in srgb, var(--muted) 9%, transparent);
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
 }
 .search-field > .icon {
-	width: 15px;
-	height: 15px;
+	width: var(--control-icon);
+	height: var(--control-icon);
+	color: var(--control-icon-ink);
 }
 .search-field input {
 	width: 100%;
 	min-width: 0;
 	border: 0;
 	background: transparent;
-	color: var(--ink);
-	font-size: 12px;
+	color: var(--control-ink);
+	font-size: var(--control-font-size);
+	line-height: var(--control-line-height);
 	outline: none;
-	padding: 9px 0;
+	padding: var(--space-8) 0;
 	appearance: none;
 }
 .search-field input::placeholder {
-	color: var(--muted);
-	opacity: 0.9;
+	color: var(--control-muted);
+	opacity: 1;
 }
 .search-field input::-webkit-search-cancel-button {
 	appearance: none;
@@ -594,38 +594,39 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	display: grid;
 	place-items: center;
 	width: 20px;
-	height: 22px;
-	border: 1px solid var(--line);
+	height: var(--space-24);
+	border: 1px solid var(--control-edge);
 	border-bottom-width: 2px;
-	border-radius: 4px;
+	border-radius: var(--space-4);
 	font-family: var(--mono);
 	font-size: 11px;
 }
 .search-field button {
-	width: 23px;
-	height: 23px;
+	width: var(--space-24);
+	height: var(--space-24);
 	flex-shrink: 0;
 	background: none;
 	border: 0;
-	padding: 3px;
-	color: var(--muted);
+	padding: var(--space-4);
+	color: var(--control-muted);
 }
 .search-field button .icon {
 	width: 15px;
 	height: 15px;
 }
 .count-badge {
-	background: var(--surface-soft);
-	border: 1px solid var(--line);
-	padding: 3px 7px;
-	border-radius: 5px;
-	font: 10px var(--mono);
-	color: var(--ink);
+	background: var(--control-face);
+	border: 0;
+	box-shadow: inset 0 0 0 1px var(--control-edge);
+	padding: var(--space-4) var(--space-8);
+	border-radius: var(--radius-small);
+	font: var(--control-meta-size) / 16px var(--sans);
+	color: var(--control-ink);
 }
 .empty-state {
 	border: 1px dashed var(--line);
 	border-radius: 12px;
-	padding: 65px 24px;
+	padding: var(--space-64) var(--space-24);
 	text-align: center;
 }
 .empty-state > .icon {
@@ -644,7 +645,7 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	font-size: 13px;
 	color: var(--muted);
 	line-height: 1.8;
-	margin-bottom: 26px;
+	margin-bottom: var(--space-24);
 }
 .checkerboard {
 	background-image: conic-gradient(
@@ -739,7 +740,7 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	align-items: center;
 	justify-content: space-between;
 	gap: 20px;
-	padding-block: 18px 22px;
+	padding-block: var(--space-16) var(--space-24);
 }
 .site-footer-bottom a {
 	display: inline-flex;
@@ -814,14 +815,14 @@ html[lang="zh-CN"] .site-header .surface-links a {
 	transform: translate(-50%, 12px);
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: var(--space-8);
 	opacity: 0;
 	pointer-events: none;
 	background: var(--ink);
 	color: var(--page);
 	max-width: calc(100% - 32px);
 	border-radius: 9px;
-	padding: 13px 18px;
+	padding: var(--space-12) var(--space-16);
 	box-shadow: 0 8px 35px #0003;
 	font-size: 12px;
 	transition:
@@ -839,14 +840,11 @@ html[lang="zh-CN"] .site-header .surface-links a {
 }
 
 @media (max-width: 1100px) {
-	:root {
-		--site-gutter: 28px;
-	}
 	.site-header-inner {
-		column-gap: 22px;
+		column-gap: var(--space-24);
 	}
 	.surface-links {
-		gap: 18px;
+		gap: var(--space-16);
 	}
 	.site-footer-identity {
 		gap: 20px;
@@ -854,10 +852,6 @@ html[lang="zh-CN"] .site-header .surface-links a {
 }
 
 @media (max-width: 1000px) {
-	:root {
-		--site-topbar-height: 64px;
-		--site-subheader-height: 54px;
-	}
 	.site-header-inner {
 		grid-template-columns: minmax(0, 1fr) auto;
 		grid-template-rows:
@@ -894,9 +888,6 @@ html[lang="zh-CN"] .site-header .surface-links a {
 }
 
 @media (max-width: 768px) {
-	:root {
-		--site-gutter: 24px;
-	}
 	.site-header-inner {
 		column-gap: 16px;
 	}
@@ -904,7 +895,7 @@ html[lang="zh-CN"] .site-header .surface-links a {
 		font-size: 22px;
 	}
 	.surface-links {
-		gap: 15px;
+		gap: var(--space-16);
 	}
 	.surface-links a {
 		font-size: 11px;
@@ -925,7 +916,8 @@ html[lang="zh-CN"] .site-header .surface-links a {
 		align-items: center;
 		flex-wrap: nowrap;
 		gap: 16px;
-		padding-block: 22px max(22px, env(safe-area-inset-bottom, 0px));
+		padding-block: var(--space-24)
+			max(var(--space-24), env(safe-area-inset-bottom, 0px));
 	}
 	.site-footer-identity {
 		min-width: 0;
@@ -954,9 +946,6 @@ html[lang="zh-CN"] .site-header .surface-links a {
 }
 
 @media (max-width: 560px) {
-	:root {
-		--site-topbar-height: 60px;
-	}
 	.site-header-inner {
 		column-gap: 12px;
 	}
@@ -966,18 +955,10 @@ html[lang="zh-CN"] .site-header .surface-links a {
 		overflow-x: auto;
 		scrollbar-width: none;
 	}
-	.view-links {
-		gap: 2px;
-		padding: 2px;
-		border-radius: 9px;
-	}
 	.view-links button {
 		width: auto;
-		min-height: 36px;
 		gap: 0;
-		padding: 0 7px;
-		font-size: 11px;
-		border-radius: 6px;
+		padding: 0 var(--space-8);
 	}
 	.view-links button .icon {
 		display: none;
@@ -985,9 +966,6 @@ html[lang="zh-CN"] .site-header .surface-links a {
 }
 
 @media (max-width: 480px) {
-	:root {
-		--site-gutter: 22px;
-	}
 	.site-header .brand {
 		font-size: 21px;
 	}
@@ -1010,7 +988,7 @@ html[lang="zh-CN"] .site-header .surface-links a {
 		column-gap: 8px;
 	}
 	.site-header .surface-links {
-		gap: 7px;
+		gap: var(--space-8);
 	}
 	.site-header .surface-links a {
 		font-size: 10px;

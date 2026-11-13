@@ -37,16 +37,20 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 16px;
-	margin-bottom: 18px;
+	margin-bottom: var(--space-16, 16px);
 	flex-wrap: wrap;
 }
 .vk-format select {
-	background: var(--vk-page);
-	border: 1px solid var(--vk-line);
-	border-radius: 7px;
+	background: var(--control-face, var(--vk-page)) var(--control-grain, none);
+	border: 0;
+	border-radius: var(--radius-control, 12px);
+	box-shadow: var(--control-recess, inset 0 0 0 1px var(--vk-line));
 	min-height: 44px;
 	padding: 0 12px;
-	font-size: 12px;
+	font-size: var(--control-font-size, 13px);
+	font-weight: var(--control-font-weight, 500);
+	line-height: var(--control-line-height, 20px);
+	color: var(--control-ink, var(--vk-ink));
 }
 .vk-stage {
 	overflow: hidden;
@@ -79,16 +83,16 @@
 	display: flex;
 	align-items: center;
 	gap: 12px;
-	padding: 3px 12px;
-	background: var(--vk-surface);
-	color: var(--vk-ink);
+	padding: var(--space-4, 4px) var(--space-12, 12px);
+	background: var(--control-face, var(--vk-surface));
+	color: var(--control-ink, var(--vk-ink));
 	min-height: 52px;
 }
 .vk-controls button {
 	flex: 0 0 44px;
 	height: 44px;
 	border: 0;
-	border-radius: 4px;
+	border-radius: var(--radius-control, 12px);
 	background: none;
 	font-size: 18px;
 }
@@ -108,19 +112,19 @@
 .vk-preferences {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px 28px;
+	gap: var(--space-8, 8px) var(--space-24, 24px);
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 15px;
+	margin-top: var(--space-16, 16px);
 	font-size: 12px;
 	color: var(--vk-muted);
 }
 .vk-preferences label {
 	display: flex;
 	align-items: center;
-	gap: 9px;
+	gap: var(--space-8, 8px);
 	min-height: 44px;
-	color: var(--vk-ink);
+	color: var(--control-ink, var(--vk-ink));
 	cursor: pointer;
 }
 .vk-preferences input {
@@ -129,10 +133,10 @@
 	height: 17px;
 }
 .vk-chapters {
-	padding-top: 30px;
+	padding-top: var(--space-32, 32px);
 }
 .vk-chapters h2 {
-	margin: 0 0 19px;
+	margin: 0 0 var(--space-20, 20px);
 	font-size: 16px;
 	font-weight: 500;
 	letter-spacing: -0.4px;
@@ -146,16 +150,17 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	padding: 17px;
+	padding: var(--space-16, 16px);
 	min-width: 0;
 	text-align: left;
 	border: 1px solid var(--vk-line);
-	border-radius: 8px;
-	background: var(--vk-page);
+	border-radius: var(--radius-control, 12px);
+	background: var(--control-face, var(--vk-page)) var(--control-grain, none);
+	color: var(--control-ink, var(--vk-ink));
 }
 .vk-chapter-grid button:hover,
 .vk-chapter-grid button[aria-pressed="true"] {
-	background: var(--vk-surface);
+	background-color: var(--control-selected, var(--vk-surface));
 	border-color: var(--vk-accent);
 }
 .vk-chapter-index {
@@ -165,7 +170,7 @@
 	font:
 		11px "Geist Mono Variable",
 		monospace;
-	color: var(--vk-muted);
+	color: var(--control-muted, var(--vk-muted));
 }
 .vk-chapter-index > span {
 	font-size: 10px;
@@ -178,17 +183,17 @@
 	font:
 		11px "Geist Mono Variable",
 		monospace;
-	color: var(--vk-muted);
+	color: var(--control-muted, var(--vk-muted));
 }
 .vk-transcript {
 	border-top: 1px solid var(--vk-line);
 	margin-top: 28px;
-	padding-top: 10px;
+	padding-top: var(--space-12, 12px);
 	font-size: 14px;
 }
 .vk-transcript summary {
 	cursor: pointer;
-	padding-block: 14px;
+	padding-block: var(--space-16, 16px);
 }
 .vk-transcript li {
 	padding: 8px 0;
@@ -199,7 +204,7 @@
 }
 .vk-transcript p {
 	color: var(--vk-muted);
-	margin: 6px 0;
+	margin: var(--space-8, 8px) 0;
 }
 .vk-transcript a {
 	text-decoration: underline;
@@ -228,22 +233,29 @@
 }
 .vk-view-tabs {
 	display: flex;
-	gap: 24px;
+	gap: var(--space-4, 4px);
+	padding: var(--control-inset, 4px);
 	margin-bottom: 0;
-	border-bottom: 1px solid var(--vk-line);
+	border: 0;
+	border-radius: var(--radius-group, 16px);
+	background: var(--control-well, var(--vk-surface)) var(--control-grain, none);
+	box-shadow: var(--control-recess, inset 0 0 0 1px var(--vk-line));
 }
 .vk-view-tabs button {
-	min-height: 48px;
-	padding: 0 0 8px;
+	min-height: var(--control-item-height, 36px);
+	padding: var(--space-8, 8px) var(--space-12, 12px);
 	border: 0;
-	border-bottom: 2px solid transparent;
+	border-radius: var(--radius-control, 12px);
 	background: none;
-	font-size: 14px;
-	color: var(--vk-muted);
+	font-size: var(--control-font-size, 13px);
+	font-weight: var(--control-font-weight, 500);
+	line-height: var(--control-line-height, 20px);
+	color: var(--control-ink, var(--vk-ink));
 }
 .vk-view-tabs button[aria-pressed="true"] {
-	border-bottom-color: var(--vk-accent);
-	color: var(--vk-ink);
+	background: var(--control-selected, var(--vk-page));
+	box-shadow: inset 0 -2px 0 var(--vk-accent);
+	color: var(--control-selected-ink, var(--vk-ink));
 }
 .vk-deck-label {
 	font:
@@ -255,18 +267,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 10px;
-	padding: 4px 12px;
-	background: var(--vk-surface);
-	color: var(--vk-ink);
-	font-size: 12px;
+	gap: var(--space-8, 8px);
+	padding: var(--space-4, 4px) var(--space-12, 12px);
+	background: var(--control-face, var(--vk-surface));
+	color: var(--control-ink, var(--vk-ink));
+	font-size: var(--control-font-size, 13px);
 }
 .vk-deck-controls button {
 	min-height: 44px;
 	border: 0;
 	background: none;
 	font-size: 12px;
-	padding-inline: 10px;
+	padding-inline: var(--space-12, 12px);
 }
 .vk-deck-controls button:disabled {
 	opacity: 0.4;
@@ -284,24 +296,15 @@
 	.vk-format {
 		width: auto;
 	}
-	.vk-view-tabs {
-		gap: 15px;
-	}
-	.vk-view-tabs button {
-		font-size: 12px;
-	}
-	.vk-format select {
-		font-size: 11px;
-	}
 	.vk-format select {
 		width: 100%;
 	}
 	.vk-chapter-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 10px;
+		gap: var(--space-12, 12px);
 	}
 	.vk-controls {
-		gap: 3px;
+		gap: var(--space-4, 4px);
 		padding-inline: 4px;
 	}
 	.vk-controls output {
@@ -324,19 +327,19 @@
 		grid-auto-flow: column;
 		grid-auto-columns: 116px;
 		grid-template-columns: none;
-		gap: 10px;
+		gap: var(--space-12, 12px);
 		overflow-x: auto;
-		padding-bottom: 10px;
+		padding-bottom: var(--space-12, 12px);
 		overscroll-behavior-inline: contain;
 	}
 	.vk-chapter-grid button {
-		padding: 14px;
+		padding: var(--space-16, 16px);
 		gap: 16px;
 	}
 	.vk-chapters {
-		padding-top: 22px;
+		padding-top: var(--space-24, 24px);
 	}
 	.vk-chapters h2 {
-		margin-bottom: 14px;
+		margin-bottom: var(--space-16, 16px);
 	}
 }

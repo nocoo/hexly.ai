@@ -1,0 +1,78 @@
+:root {
+	--space-2: 2px;
+	--space-4: 4px;
+	--space-8: 8px;
+	--space-12: 12px;
+	--space-16: 16px;
+	--space-20: 20px;
+	--space-24: 24px;
+	--space-28: 28px;
+	--space-32: 32px;
+	--space-36: 36px;
+	--space-40: 40px;
+	--space-48: 48px;
+	--space-56: 56px;
+	--space-64: 64px;
+	--space-80: 80px;
+	--radius-small: 8px;
+	--radius-control: 12px;
+	--radius-group: 16px;
+	--radius-panel: 24px;
+	--control-height: 44px;
+	--control-item-height: 36px;
+	--control-icon: 16px;
+	--control-inset: var(--space-4);
+	--control-face: var(--surface);
+	--control-well: var(--surface-soft);
+	--control-edge: var(--line);
+	--control-hover: var(--hover);
+	--control-selected: var(--surface);
+	--control-ink: var(--ink);
+	--control-muted: var(--ink);
+	--control-selected-ink: var(--ink);
+	--control-icon-ink: var(--headline-secondary);
+	--control-font-size: 13px;
+	--control-font-weight: 500;
+	--control-line-height: 20px;
+	--control-meta-size: 11px;
+	--control-recess: inset 0 0 0 1px var(--control-edge);
+	--control-relief: inset 0 1px 0 var(--surface), inset 0 -1px 0 var(--line);
+	--control-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath d='M0 0h128v128H0z' filter='url(%23grain)' opacity='.008'/%3E%3C/svg%3E");
+	--site-layout-max: 1500px;
+	--site-gutter: var(--space-32);
+	--site-topbar-height: var(--space-80);
+	--site-subheader-height: 0px;
+	--site-topbar-offset: calc(
+		var(--site-topbar-height) +
+		var(--site-subheader-height) +
+		env(safe-area-inset-top, 0px)
+	);
+	--brand-gap: var(--space-4);
+	--grid-gap: var(--space-24);
+	--card-padding: var(--space-20);
+	--section-space: var(--space-48);
+	--search-width: 280px;
+}
+
+@media (max-width: 1100px) {
+	:root {
+		--site-gutter: var(--space-24);
+		--grid-gap: var(--space-16);
+		--card-padding: var(--space-16);
+	}
+}
+
+@media (max-width: 1000px) {
+	:root {
+		--site-topbar-height: var(--space-64);
+		--site-subheader-height: var(--space-56);
+	}
+}
+
+@media (max-width: 600px) {
+	:root {
+		--site-gutter: var(--space-16);
+		--section-space: var(--space-32);
+		--control-font-size: 12px;
+	}
+}

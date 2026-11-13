@@ -58,4 +58,6 @@
 
 46. [Mao, HN Today and Pi Superagent local onboarding](41-local-three-project-onboarding.md)
 
+47. [Hexly material controls, design tokens and grid alignment](42-site-design-system.md)
+
 Each project profile records its current identity, source assets, palette evidence, and notes for the future logo family.
