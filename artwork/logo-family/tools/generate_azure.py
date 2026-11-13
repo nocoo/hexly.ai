@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive one reference-guided image request through Azure OpenAI v1."""
+"""Archive one image request through Azure OpenAI v1, with optional references."""
 
 import argparse
 import base64
@@ -29,7 +29,7 @@ def timestamp():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", required=True, type=Path)
-    parser.add_argument("--image", action="append", required=True, type=Path)
+    parser.add_argument("--image", action="append", default=[], type=Path)
     parser.add_argument("--size", default="2048x2048")
     parser.add_argument("--model", default="gpt-image-2.5-sunburst", choices=[
         "gpt-image-2.5-sunburst", "gpt-image-2.5-flare", "gpt-image-2",
@@ -93,23 +93,31 @@ def main():
             "mime": mime,
         })
     parts.append(f"--{boundary}--\r\n".encode())
-    url = endpoint + "/images/edits"
+    if references:
+        url = endpoint + "/images/edits"
+        payload = b"".join(parts)
+        content_type = f"multipart/form-data; boundary={boundary}"
+    else:
+        url = endpoint + "/images/generations"
+        fields["n"] = 1
+        payload = json.dumps(fields).encode()
+        content_type = "application/json"
     write_json(request_path, {
         "startedAt": timestamp(),
         "provider": "Azure OpenAI / Foundry",
         "endpoint": url,
         "method": "POST",
-        "contentType": "multipart/form-data",
+        "contentType": content_type.split(";")[0],
         "parameters": {key: value for key, value in fields.items() if key != "prompt"},
         "promptFile": "prompt.txt",
         "promptSha256": hashlib.sha256(prompt.encode()).hexdigest(),
         "images": references,
-        "transportReference": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+        "tool": "artwork/logo-family/tools/generate_azure.py",
         "documentation": "https://developers.openai.com/api/docs/guides/image-generation",
     })
-    request = Request(url, data=b"".join(parts), method="POST", headers={
+    request = Request(url, data=payload, method="POST", headers={
         "api-key": api_key,
-        "Content-Type": f"multipart/form-data; boundary={boundary}",
+        "Content-Type": content_type,
     })
     started = time.monotonic()
     print(f"Requesting {args.model} {args.size}, high quality, {len(references)} reference images.", flush=True)
