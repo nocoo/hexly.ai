@@ -102,10 +102,16 @@ must remain opaque, unmasked squares.
 The shared hero keeps the homepage's split structure, headline color hierarchy
 and mobile reading order. Its desktop type caps at 96 px so the existing English
 Templates heading fits two lines, and all four desktop hero sections share a
-544 px height. Existing right-hand visuals remain usable while newly generated
-artwork awaits raw approval. The first hero batch and the single 429 follow-up
-are archived under `artwork/site-heroes/2026-11-13-{01,02}`; no unapproved output
-is wired into the site.
+544 px height. The four approved header images are extracted at native size and integrated into
+local-material development. The homepage retains its six colorful project Logos
+and layers the new archive case behind them. Templates uses the storyboard image,
+Brand overlays the unchanged Logo/wordmark on its tray, and Status keeps actual
+observation metadata separate from its decorative instrument. The first batch,
+single 429 follow-up and exact-byte approvals are archived under
+`artwork/site-heroes/2026-11-13-{01,02}`. Selected extraction pass `02` and the local
+review receipt are in the first batch. Published/test builds retain their valid
+existing visuals until these immutable materials are uploaded; no unapproved
+output or missing public image is wired into production.
 
 At narrow/tablet widths the global header gives the four main routes one full
 row and the related personal sites another, avoiding overlapping navigation.

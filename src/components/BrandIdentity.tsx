@@ -1,11 +1,8 @@
 import identity from "../data/projects/hexly-ai.json";
-import { assetUrl } from "../model/assets";
+import { assetUrl, localMaterials } from "../model/assets";
 
 export function BrandMark({ size = 36 }: { size?: number } = {}) {
-	const preview =
-		import.meta.env.DEV &&
-		import.meta.env.MODE === "development" &&
-		import.meta.env.VITE_LOCAL_MATERIALS === "1";
+	const preview = localMaterials();
 	const root = preview
 		? "/logos/family/hexly-ai/2026-11-13-02/02"
 		: identity.family.root;

@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-13: Hero extraction retained isolated background pixels
+
+The first rectangular matte pass preserved all pale material correctly but left six disconnected background pixels around the Status illustration, including a visible edge speck on a dark inspection plate. The diagnostic pass remains private; its unused serving copies were hash-checked and removed before any inventory/upload. Pass 02 removes only disconnected components below 16 pixels and verifies that the complete canvas boundary is transparent. The opaque source RGB and the solid Brand tray center remain unchanged.
+
+Inspect transparent artwork against both themes and verify the full canvas, not just the subject. Preserve an earlier pass rather than overwriting it, and cover isolated noise, enclosed pale material and antialiased edges with synthetic tests before integration.
+
 ## 2026-11-13: Moving the site mark missed a package source-path assertion
 
 Extracting the shared mark and wordmark from `Icon.tsx` into `BrandIdentity.tsx` updated runtime consumers and the focused site tests, but missed Video Kit's filesystem-based assertion against the old source path. The full index-snapshot commit gate caught it before committing. The assertion now reads the actual shared identity module; its palette, source-selection and wordmark checks remain unchanged.

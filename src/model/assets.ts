@@ -3,7 +3,7 @@ import routes from "../data/asset-routes.json" with { type: "json" };
 import storage from "../data/media-storage.json" with { type: "json" };
 
 const aliases: Record<string, string> = routes;
-const localMaterials = () =>
+export const localMaterials = () =>
 	import.meta.env?.DEV &&
 	import.meta.env.MODE === "development" &&
 	import.meta.env.VITE_LOCAL_MATERIALS === "1";

@@ -4,6 +4,7 @@ import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import { navigationPath } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
+import { HeroArtwork } from "./HeroArtwork";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { PageHero } from "./PageHero";
@@ -58,6 +59,7 @@ export function Directory({
 						<div className="orbit-dot dot-two" />
 						<span className="art-cross cross-one">+</span>
 						<span className="art-cross cross-two">+</span>
+						<HeroArtwork page="projects" />
 						{faces.map((project, index) => (
 							<button
 								type="button"
