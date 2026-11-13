@@ -48,7 +48,7 @@
 - All independently served material uses R2 `hexlyai` / `https://h.no.mt`. Preserve immutable Logo/brand bytes, paths, hashes, licenses and provenance; source records/SVG geometry remain in Git, binary working files hydrate from the inventory. HTML/code, APIs and discovery documents stay on the Worker. Use `assetUrl` for transport and `AssetLink` for cross-origin downloads. Production builds exclude media and enforce 20 MiB. See [migration and authorized history reduction](../docs/20-r2-assets-execution.md); the 2026-09-13 owner instruction supersedes the earlier Git/Static Assets retention rule.
 - Original project identity shapes, proportions, colors and file bytes are authoritative. Hexly paper/ink/terracotta, fonts, red points and composition apply only to Hexly project archives and Hexly-authored campaigns, videos, decks and social graphics. Independent products keep their own complete palettes, themes and UI. A campaign Hero or family study never silently replaces a product Logo.
 - For an authorized project rename, update its catalogue ID and route while preserving the numbered profile. Locate historical artwork through `family.root`; preserve archive paths, export names, original bytes and checksums. Redirect former page URLs with Static Assets `_redirects`.
-- Synchronize catalogue changes with the GitHub profile using the workflow skill `system0-github-profile` (`../workflow/agents/skills/system0-github-profile/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
+- Synchronize catalogue changes with the GitHub profile using the installed `sys1-github-profile` skill from the system repository (`system1/skills/sys1-github-profile/SKILL.md`). Keep backups, palettes, source revisions, and generated profiles consistent.
 - Preserve the current identity baseline. Logo-family studies with `gpt-image-2` live in `artwork/logo-family/`; retain raw outputs, prompts, references, and finishing versions. Choose new subjects by the product-type defaults below. Candidates require review at artwork, app-icon, sidebar, and favicon sizes before promotion.
 - Immediately show each new Image 2 result for raw-image confirmation, unless the owner explicitly delegates acceptance for a named batch. Record the exact waiver and agent inspection without claiming owner review of unseen bytes. Require an approved `raw-review.json` for those exact bytes before extraction, compositing, derivatives, or catalogue integration. For new animal and bird briefs, specify only the species, head focus, strong off-center composition, multicolor and connected flat fragments. Leave angle, gesture, colors and optional accents to the model; do not mandate external accessories, camera settings or body ratios. Every project's background needs distinct motif geometry.
 - Every finished study has static review HTML and a complete site comparison. Keep `family.status` and its separate foreground truthful to source adoption; `project.logo` remains source provenance. Presentation reference boards appear only in static HTML and Git. Background-only passes preserve exact transparent/white bytes.
@@ -137,7 +137,7 @@ Video exports require Chrome/Chromium and FFmpeg. Real PPTX/PDF contain image-ba
 
 ## 新项目接入的完整路径
 
-Use the shared `system0-github-profile` skill. A new project is complete
+Use the installed `sys1-github-profile` skill. A new project is complete
 when its source repository, GitHub profile, hexly catalogue, identity/provenance,
 project documentation, public website, and status coverage agree.
 

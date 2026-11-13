@@ -11,7 +11,7 @@ The Vite HMR server, Worker inspector and local D1 workflow remain unchanged.
 
 `https://index.dev.hexly.ai` is the directory's dedicated development domain. Vite listens on `127.0.0.1:7048`; Caddy terminates TLS using the machine's existing wildcard certificate and proxies to that port.
 
-The authoritative machine procedure is nmem `25b22d6b-1df5-4491-ae4d-269a556f6442` and the workflow repository's `system0-dev-machine-caddy` skill. Wildcard DNS already resolves `*.dev.hexly.ai` to loopback, so no hosts-file change is needed.
+The authoritative machine procedure is nmem `25b22d6b-1df5-4491-ae4d-269a556f6442` and the system repository's installed `sys0-dev-machine-caddy` skill. Wildcard DNS already resolves `*.dev.hexly.ai` to loopback, so no hosts-file change is needed.
 
 ```caddyfile
 http://index.dev.hexly.ai {

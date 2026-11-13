@@ -1,7 +1,7 @@
 # System0 quality system
 
 Twelve fixed slots, one required check. The canonical slot definitions live in the
-`system0-quality` skill (v1.3.0); this repository implements them natively in
+`sys1-quality` skill (v1.3.0); this repository implements them natively in
 [`quality-slots.yml`](../.github/workflows/quality-slots.yml) with a local `Z1: Gate`, so
 `ci.yml` only delegates and branch protection needs `quality / Z1: Gate`.
 

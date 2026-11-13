@@ -67,7 +67,7 @@ bun run video:check
 
 ## Verification
 
-System0 slots (skill `system0-quality` v1.3.0), implemented natively in
+System0 slots (skill `sys1-quality` v1.3.0), implemented natively in
 [`quality-slots.yml`](.github/workflows/quality-slots.yml) with a local `Z1: Gate`. Shared
 composites and the deploy workflow come from base-ci v2026.15 (`777bbe4f`), whose deploy
 workflow enforces `quality / Z1: Gate` itself. Status: `impl`, `na`. Canonical CI check
