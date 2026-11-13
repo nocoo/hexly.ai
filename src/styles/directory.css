@@ -294,29 +294,6 @@
 	width: 18px;
 	height: 18px;
 }
-.sort-control {
-	position: relative;
-	flex-shrink: 0;
-	color: var(--muted);
-}
-.sort-control select {
-	appearance: none;
-	font-size: 10px;
-	color: var(--muted);
-	border: 0;
-	background: transparent;
-	cursor: pointer;
-	padding: var(--space-8) var(--space-20) var(--space-8) var(--space-4);
-	max-width: 130px;
-}
-.sort-control .icon {
-	width: 12px;
-	height: 12px;
-	pointer-events: none;
-	position: absolute;
-	right: 0;
-	top: 9px;
-}
 .project-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));

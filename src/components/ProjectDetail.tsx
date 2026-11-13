@@ -169,26 +169,23 @@ export function ProjectDetail({
 					</span>
 				</span>
 				<div className="picker-controls">
-					<div className="picker-category-control">
-						<select
-							className="picker-category"
-							aria-label={t.categories}
-							value={state.category}
-							onChange={(event) =>
-								onChange({
-									category: event.target.value as Category,
-									anchor: undefined,
-								})
-							}
-						>
-							{categories.map((category) => (
-								<option key={category} value={category}>
-									{categoryLabels[locale][category]} · {counts[category]}
-								</option>
-							))}
-						</select>
-						<Icon name="chevron" />
-					</div>
+					<select
+						className="control-select picker-category"
+						aria-label={t.categories}
+						value={state.category}
+						onChange={(event) =>
+							onChange({
+								category: event.target.value as Category,
+								anchor: undefined,
+							})
+						}
+					>
+						{categories.map((category) => (
+							<option key={category} value={category}>
+								{categoryLabels[locale][category]} · {counts[category]}
+							</option>
+						))}
+					</select>
 					<SearchField
 						value={state.query}
 						onChange={(query) => onChange({ query, anchor: undefined })}

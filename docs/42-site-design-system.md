@@ -61,7 +61,13 @@ immutable materials are published. No R2 upload, push or release is implied.
 | Section rhythm | 48 px desktop, 32 px at ≤600 px |
 | Search width | 280 px desktop; fluid in narrow layouts |
 | Search/select/control height | 44 px |
+| Native select arrow | 16 px, inset 12 px from the right; 40 px text padding |
 | Segmented controls | 36 px item + 4 px inset on each side = 44 px |
+
+All native selects use `.control-select`: disable platform chrome, preserve the
+native keyboard/menu behavior, and draw the shared inset arrow over the material
+background. Project/category/time-zone selects no longer own separate arrow
+wrappers. Video Kit uses the same host arrow token and a standalone default.
 
 All pages share `.shell`; feature styles must not redefine page gutter or header
 height tokens. Search right edges align with content right edges. Category bars

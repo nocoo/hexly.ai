@@ -94,35 +94,10 @@
 	width: 13px;
 	height: 13px;
 }
-.status-timezone .sort-control {
-	position: relative;
-	inset: auto;
+.status-timezone .status-timezone-control {
 	width: 260px;
 	min-width: 0;
 	flex-shrink: 1;
-	border: 0;
-	border-radius: var(--radius-control);
-	background: var(--control-face) var(--control-grain);
-	box-shadow: var(--control-recess);
-}
-.status-timezone select {
-	width: 100%;
-	max-width: none;
-	min-height: var(--control-height);
-	padding: var(--space-8) var(--space-32) var(--space-8) var(--space-12);
-	color: var(--control-ink);
-	font:
-		var(--control-font-weight) var(--control-font-size) /
-		var(--control-line-height) var(--sans);
-	text-overflow: ellipsis;
-}
-.status-timezone .sort-control > .icon {
-	right: 10px;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.status-timezone .sort-control:hover {
-	border-color: var(--muted);
 }
 .status-signal {
 	display: flex;

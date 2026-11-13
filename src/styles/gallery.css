@@ -34,39 +34,9 @@
 	align-items: center;
 	gap: 12px;
 }
-.picker-category-control {
-	--picker-control-inset: var(--space-12);
-	position: relative;
-	min-width: 0;
+.picker-category {
 	max-width: 180px;
 	flex-shrink: 0;
-	color: var(--control-ink);
-}
-.picker-category-control > .icon {
-	position: absolute;
-	right: var(--picker-control-inset);
-	top: 50%;
-	transform: translateY(-50%);
-	width: 12px;
-	height: 12px;
-	pointer-events: none;
-}
-.picker-category {
-	appearance: none;
-	width: 100%;
-	min-width: 0;
-	max-width: 180px;
-	height: var(--control-height);
-	border: 0;
-	border-radius: var(--radius-control);
-	padding: var(--space-8) calc(var(--picker-control-inset) * 2 + 12px)
-		var(--space-8) var(--picker-control-inset);
-	background: var(--control-face) var(--control-grain);
-	box-shadow: var(--control-recess);
-	color: var(--control-ink);
-	font-size: var(--control-font-size);
-	font-weight: var(--control-font-weight);
-	line-height: var(--control-line-height);
 }
 .project-picker {
 	position: relative;
@@ -733,11 +703,8 @@
 	.picker-controls {
 		gap: 8px;
 	}
-	.picker-category-control {
-		max-width: 142px;
-	}
 	.picker-category {
-		font-size: var(--control-font-size);
+		max-width: 142px;
 	}
 	.picker-item {
 		padding: 8px;

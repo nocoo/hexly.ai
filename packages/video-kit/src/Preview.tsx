@@ -242,6 +242,7 @@ export function VideoPreview({
 				<label className="vk-format">
 					<span className="vk-sr-only">{t.format}</span>
 					<select
+						className="control-select"
 						aria-label={t.format}
 						value={format}
 						onChange={(event) => {

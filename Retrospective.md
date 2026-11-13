@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-13: Native select chrome bypassed the control treatment
+
+The material-control pass styled select backgrounds and dimensions but left the template and frame-format selects using native appearance. Their platform arrow stayed at the far edge and the rendered field did not reliably match the other controls. Project/category and time-zone fields separately carried their own arrow wrappers.
+
+Use one native select treatment with `appearance: none`, a 16 px decorative arrow inset 12 px from the right, and 40 px reserved text padding. Remove superseded wrappers and duplicate arrow rules rather than layering a second arrow over native chrome. Browser checks now cover all select locations, long project names, both themes, narrow layouts and keyboard focus; validating only dimensions and the closed field's value did not catch the rendering mismatch.
+
 ## 2026-11-13: New selected surfaces retained an old counter color
 
 The ceramic-control pass changed selected dark surfaces while a template-family counter still explicitly used the old muted text color. The complete browser suite caught a 4.06:1 contrast ratio in desktop and mobile dark views; the other 90 journeys passed. The counter now inherits the selected control's foreground rather than maintaining an independent color. No contrast rule or test was weakened.

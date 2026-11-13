@@ -108,6 +108,7 @@ export function Templates({
 			<label>
 				<span className="eyebrow">{t.project}</span>
 				<select
+					className="control-select"
 					aria-label={t.project}
 					value={selected?.id ?? "hexly-ai"}
 					onChange={(event) => {
@@ -266,6 +267,7 @@ export function Templates({
 									<span aria-hidden="true">{i === 2 ? "●" : "→"}</span>
 								</span>
 								<select
+									className="control-select"
 									aria-label={choice.label}
 									value={choice.value}
 									onChange={(event) => choice.update(event.target.value)}

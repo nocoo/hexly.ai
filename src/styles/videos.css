@@ -238,20 +238,6 @@
 	font-size: 10px;
 	margin-bottom: var(--space-8);
 }
-.video-project-chooser select {
-	width: 100%;
-	min-height: var(--control-height);
-	padding: 0 var(--space-32) 0 var(--space-12);
-	background: var(--control-face) var(--control-grain);
-	border: 0;
-	border-radius: var(--radius-control);
-	box-shadow: var(--control-recess);
-	color: var(--control-ink);
-	font-size: var(--control-font-size);
-	font-weight: var(--control-font-weight);
-	line-height: var(--control-line-height);
-	text-overflow: ellipsis;
-}
 .video-theme-switch {
 	display: inline-flex;
 	gap: var(--space-4);
@@ -561,20 +547,6 @@
 	margin-left: auto;
 	color: var(--accent);
 	font-size: 12px;
-}
-.video-composition select {
-	width: 100%;
-	min-height: var(--control-height);
-	padding: 0 var(--space-32) 0 var(--space-12);
-	border: 0;
-	border-radius: var(--radius-control);
-	background: var(--control-face) var(--control-grain);
-	box-shadow: var(--control-recess);
-	color: var(--control-ink);
-	font-size: var(--control-font-size);
-	font-weight: var(--control-font-weight);
-	line-height: var(--control-line-height);
-	letter-spacing: 0;
 }
 .video-choice-note {
 	display: block;

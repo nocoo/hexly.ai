@@ -41,12 +41,28 @@
 	flex-wrap: wrap;
 }
 .vk-format select {
-	background: var(--control-face, var(--vk-page)) var(--control-grain, none);
+	appearance: none;
+	background-color: var(--control-face, var(--vk-page));
+	background-image:
+		var(
+			--control-select-arrow,
+			url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2368705f' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E")
+		),
+		var(--control-grain, none);
+	background-repeat: no-repeat, repeat;
+	background-position:
+		right 12px center,
+		left top;
+	background-size:
+		16px 16px,
+		128px 128px;
 	border: 0;
 	border-radius: var(--radius-control, 12px);
 	box-shadow: var(--control-recess, inset 0 0 0 1px var(--vk-line));
-	min-height: 44px;
-	padding: 0 12px;
+	height: 44px;
+	min-width: 0;
+	padding: 0 40px 0 12px;
+	text-overflow: ellipsis;
 	font-size: var(--control-font-size, 13px);
 	font-weight: var(--control-font-weight, 500);
 	line-height: var(--control-line-height, 20px);

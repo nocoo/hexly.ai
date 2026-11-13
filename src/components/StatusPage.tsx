@@ -446,26 +446,24 @@ export function StatusPage({
 							<Icon name="clock" />
 							{t.timeZone}
 						</label>
-						<div className="sort-control">
-							<select
-								id="status-timezone"
-								value={timeZonePreference}
-								onChange={(event) => onTimeZone(event.target.value)}
-							>
-								<option value="local">
-									{t.localTime} · {browserTimeZone.replaceAll("_", " ")}
-								</option>
-								<option value="UTC">UTC</option>
-								<optgroup label={t.allTimeZones}>
-									{timeZones.map((zone) => (
-										<option key={zone} value={zone}>
-											{zone.replaceAll("_", " ")}
-										</option>
-									))}
-								</optgroup>
-							</select>
-							<Icon name="chevron" />
-						</div>
+						<select
+							className="control-select status-timezone-control"
+							id="status-timezone"
+							value={timeZonePreference}
+							onChange={(event) => onTimeZone(event.target.value)}
+						>
+							<option value="local">
+								{t.localTime} · {browserTimeZone.replaceAll("_", " ")}
+							</option>
+							<option value="UTC">UTC</option>
+							<optgroup label={t.allTimeZones}>
+								{timeZones.map((zone) => (
+									<option key={zone} value={zone}>
+										{zone.replaceAll("_", " ")}
+									</option>
+								))}
+							</optgroup>
+						</select>
 					</div>
 				</div>
 				<div
