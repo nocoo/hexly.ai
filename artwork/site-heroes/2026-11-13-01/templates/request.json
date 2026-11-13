@@ -1,0 +1,28 @@
+{
+	"startedAt": "2026-11-13T05:44:05.324791+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/edits",
+	"method": "POST",
+	"contentType": "multipart/form-data",
+	"parameters": {
+		"model": "gpt-image-2.5-sunburst",
+		"size": "1536x1024",
+		"quality": "high",
+		"n": "1",
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "eb8781e6f98ffd88bc8a601d5498f8d329fae829f0851668e6cc9871065e7dfa",
+	"images": [
+		{
+			"index": 1,
+			"path": "../../../logo-family/hexly-ai/2026-11-13-02/finishing/02/exports/hexly-ai-transparent-2048.png",
+			"sha256": "5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5",
+			"bytes": 2600545,
+			"mime": "image/png"
+		}
+	],
+	"transportReference": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}
