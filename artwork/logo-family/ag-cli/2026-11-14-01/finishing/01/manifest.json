@@ -1,0 +1,366 @@
+{
+	"createdAt": "2026-11-14T22:09:23.301Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "5ecd369ad5374f131f07348309a46a8c457cb201d462edfafbd55f31fce42cc8",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"sourceMode": "isolated-white",
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"matte": {
+			"minimumChannel": 248,
+			"maximumChroma": 8,
+			"backgroundRgb": [
+				255,
+				255,
+				255
+			],
+			"edgeBand": 2,
+			"interiorDistance": 4,
+			"searchRadius": 7,
+			"minimumColorAlignment": 0.98,
+			"maximumMatteEnergy": 500,
+			"minimumComponentPixels": 0,
+			"backgroundSeedsAt2048": [],
+			"calibrationNote": "Exterior-connected pure-white extraction; brass, enamel and leather are saturated, so no component deletion or protection region is needed."
+		},
+		"project": "ag-cli",
+		"series": "material",
+		"background": {
+			"base": "#dde4e8",
+			"light": "#f1f4f6",
+			"shade": "#bccad2",
+			"motif": "#5f7c93",
+			"grainAmplitude": 0.7,
+			"grainSeed": 61114001,
+			"motifOpacity": 0.17,
+			"highlightOpacity": 0.24,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Conduit runs",
+				"description": "Sparse paired pneumatic conduit lines turning at rounded corners with short flange ticks, distinct from card, bookcloth and botanical surfaces.",
+				"layers": [
+					{
+						"d": "M70 300V176Q70 128 118 128H300M96 326V192Q96 154 134 154H326M770 880H872Q914 880 914 838V740M770 906H886Q940 906 940 852V740",
+						"tone": "motif",
+						"strokeWidth": 1.7
+					},
+					{
+						"d": "M58 352h24M84 340v24M226 118v20M252 118v20M902 700h24M902 726h24M148 902h24m-12-12v24",
+						"tone": "highlight",
+						"strokeWidth": 1.3
+					}
+				]
+			}
+		},
+		"framing": {
+			"scale": 0.74,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"intentionalEdges": [],
+			"minimumClearanceAt2048": 128,
+			"note": "Uniform inset of the diagonal capsule; preserve full contours with at least 128 px rounded-outline clearance."
+		},
+		"shadows": [
+			{
+				"color": [
+					34,
+					52,
+					68
+				],
+				"opacity": 0.14,
+				"blurAt2048": 40,
+				"offsetAt2048": [
+					12,
+					24
+				]
+			},
+			{
+				"color": [
+					34,
+					52,
+					68
+				],
+				"opacity": 0.09,
+				"blurAt2048": 9,
+				"offsetAt2048": [
+					2,
+					8
+				]
+			}
+		]
+	},
+	"statistics": {
+		"backgroundPixels": 3200175,
+		"foregroundPixels": 994129,
+		"softEdgePixels": 10065,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 63,
+			"top": 546,
+			"right": 2018,
+			"bottom": 1481
+		}
+	},
+	"placement": {
+		"scale": 0.74,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 313,
+			"top": 670,
+			"right": 1760,
+			"bottom": 1362
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 287.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1905,
+			"sha256": "b64f4afa1f94e66d4b61de1b6645d85ecae84b40f62206461d3adbaec1b2d133"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 685,
+			"sha256": "c388dcafa807c018403a4abf46004eb6543d90ca0c46063fc23eb62ec5a7751b"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 3024199,
+			"sha256": "70e178f6a66681650e121a4ead1f3695f97117469ccb8300bfdec3b4611ce3f6"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 53333,
+			"sha256": "63c91c114a656a417ab7440dfb19d70d0fe119b01f9a9c2f783f608f3c3c918c"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 758,
+			"sha256": "40136fb05b17f2237de07a82366b5a4460c4c84bc3d84258aac4b72a410ea287"
+		},
+		{
+			"path": "background.png",
+			"bytes": 1656003,
+			"sha256": "3d872d9541dab1a3db44164ea8960a574bd3cca26aae2bcda1e6255db61347c8"
+		},
+		{
+			"path": "foreground-placement.png",
+			"bytes": 1718697,
+			"sha256": "2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a"
+		},
+		{
+			"path": "presentation-alpha-mask.png",
+			"bytes": 53713,
+			"sha256": "c1ae6b037036f5e8887cdd21c787fd92caed15234a4b693dcb79ea3a4f135b37"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 92672,
+			"sha256": "f7a669c185d1c8d3d4a314453311399b174600d928956dc0458bb64130558ed0"
+		},
+		{
+			"path": "shadow-2.png",
+			"bytes": 65671,
+			"sha256": "adc5be1064789454d4159240cbdc48304ab45b5e18dd4510284096fb8b13bbb1"
+		},
+		{
+			"path": "exports/ag-cli-transparent-2048.png",
+			"bytes": 1718697,
+			"sha256": "2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a"
+		},
+		{
+			"path": "exports/ag-cli-icon-2048.png",
+			"bytes": 3433624,
+			"sha256": "912c195b6a86dc1d7168a91fca314dde8bec31604fa69b92da8a8022aa1589a7"
+		},
+		{
+			"path": "exports/ag-cli-rounded-2048.png",
+			"bytes": 3368613,
+			"sha256": "d1cf9cd359119b814e4bb267965551022e58ae8669114fc8e935c05a5050c4bf"
+		},
+		{
+			"path": "exports/ag-cli-transparent-1024.png",
+			"bytes": 436130,
+			"sha256": "8bc3dba6a57bf0403dec62f1c5664049f931f22c9d405fc30465fd08f8e8b461"
+		},
+		{
+			"path": "exports/ag-cli-icon-1024.png",
+			"bytes": 745465,
+			"sha256": "c97825940cfce12f3c1efb9a63106570a2c87990894c40797d6200e707315fe4"
+		},
+		{
+			"path": "exports/ag-cli-rounded-1024.png",
+			"bytes": 749206,
+			"sha256": "7a15f45c14a66b1c0cded40ee6a0fa95d61d19b3074332ba1a57c13ef99e77c5"
+		},
+		{
+			"path": "exports/ag-cli-transparent-512.png",
+			"bytes": 114143,
+			"sha256": "905655a57cb8565025d8b6717a5963c31f67fe353369d22fd2b24b1908b24d2b"
+		},
+		{
+			"path": "exports/ag-cli-icon-512.png",
+			"bytes": 240586,
+			"sha256": "4fec64a8b7d414980327fadbd58d8c0f991a4071b2176e593bd191c2ab642635"
+		},
+		{
+			"path": "exports/ag-cli-rounded-512.png",
+			"bytes": 243197,
+			"sha256": "b882ddd158b31a57d1e776d7cc3900658360fbacc29625a6099c9fe0061b803f"
+		},
+		{
+			"path": "exports/ag-cli-transparent-256.png",
+			"bytes": 31511,
+			"sha256": "ccefe496bfa6cfb65cd057fd35104a145442a237fbe55dcb0e16d0a71228f082"
+		},
+		{
+			"path": "exports/ag-cli-icon-256.png",
+			"bytes": 46932,
+			"sha256": "a76c4cc866f33966d3bb68cc226e7b182eab5d15683ae062ea5dfcf80accacb1"
+		},
+		{
+			"path": "exports/ag-cli-rounded-256.png",
+			"bytes": 50742,
+			"sha256": "02f2b2939e4aa052c01192d456e47d77e814eb8ab4ac23f859cded8fcb13611b"
+		},
+		{
+			"path": "exports/ag-cli-transparent-128.png",
+			"bytes": 9072,
+			"sha256": "2de8bf486ddb0b6b875a37360050842264ebe7c2fad2123440d19593f92f3b72"
+		},
+		{
+			"path": "exports/ag-cli-icon-128.png",
+			"bytes": 14815,
+			"sha256": "95f03f5d07423a9389a4b509e39a0019b620b0c776b4070ea879228f62ede41b"
+		},
+		{
+			"path": "exports/ag-cli-rounded-128.png",
+			"bytes": 16622,
+			"sha256": "04d9b58aa346d70aa5b1af65aa2e2ae2c0144575c7368007d8ff26925fc95778"
+		},
+		{
+			"path": "exports/ag-cli-transparent-64.png",
+			"bytes": 2813,
+			"sha256": "2f33e5e0cbe3a401d51dbf42d22913538e6c013d4f0c5aab46131bba69be7a32"
+		},
+		{
+			"path": "exports/ag-cli-icon-64.png",
+			"bytes": 5291,
+			"sha256": "095a6688fd00e37701bf49306d5b8c6d2a02aaa1b700702c8c4d288a2def65de"
+		},
+		{
+			"path": "exports/ag-cli-rounded-64.png",
+			"bytes": 6046,
+			"sha256": "c1a6006a08fd07dd355309b3930aad40e5bda5603c5d71edc809775cb31deea7"
+		},
+		{
+			"path": "exports/ag-cli-transparent-48.png",
+			"bytes": 1819,
+			"sha256": "102899fc076e3ef332ccde396c4791b2700d39caa105039170bf8137e269502e"
+		},
+		{
+			"path": "exports/ag-cli-icon-48.png",
+			"bytes": 3378,
+			"sha256": "a459cdf04fd9bbc6be586851587d45ea8d20a58ccfbcc10f18f1e494ab7b51b2"
+		},
+		{
+			"path": "exports/ag-cli-rounded-48.png",
+			"bytes": 3911,
+			"sha256": "63d38ce28aee677af256b8fb0be83745e9ef93187def58b60249fb1dc0976d19"
+		},
+		{
+			"path": "exports/ag-cli-transparent-32.png",
+			"bytes": 1052,
+			"sha256": "49b075542f8400bc033818f5f5cefd77a99d12aa2556b9a4271508764a0b9ce3"
+		},
+		{
+			"path": "exports/ag-cli-icon-32.png",
+			"bytes": 2064,
+			"sha256": "05013105d23f16043207ba77e4596112216e7ac3b1725aa3e5a5d0a00e27bacf"
+		},
+		{
+			"path": "exports/ag-cli-rounded-32.png",
+			"bytes": 2274,
+			"sha256": "eb4be0f78a4cef14059425c79f72117c037f26e0b418521bbc820c3b43acb9fe"
+		},
+		{
+			"path": "exports/ag-cli-transparent-24.png",
+			"bytes": 723,
+			"sha256": "37719243ce5fae4cd28eaa3e87ea3eca127775d56e0c1eb478e855ded39fb156"
+		},
+		{
+			"path": "exports/ag-cli-icon-24.png",
+			"bytes": 1330,
+			"sha256": "c6d7da8e323436f57954fd15e84883c16e1e2e816f2b0519d105389897c94532"
+		},
+		{
+			"path": "exports/ag-cli-rounded-24.png",
+			"bytes": 1511,
+			"sha256": "c4ecab93d6d146b8bb8ef80f169a5ecb7aaddcdf819644c4e0a91c42e148505b"
+		},
+		{
+			"path": "exports/ag-cli-transparent-16.png",
+			"bytes": 430,
+			"sha256": "eb98edfd3d6098915e71d88089aa280554a840352d64abec87813223ec61e2bb"
+		},
+		{
+			"path": "exports/ag-cli-icon-16.png",
+			"bytes": 761,
+			"sha256": "c2d10e9fcaebe753c70f85b461dd1955bd01d485c9b2c1413891b7ff7b9a50a5"
+		},
+		{
+			"path": "exports/ag-cli-rounded-16.png",
+			"bytes": 853,
+			"sha256": "5f948021b18bd353b0669a4d0dfaeff9cd0cd013d173128fb33bfdeedc0b0d3b"
+		},
+		{
+			"path": "exports/ag-cli-white-2048.png",
+			"bytes": 1577953,
+			"sha256": "61a00fafbe63fed8a7d511ef7d0c16f6a1b08281c012534ae4dd13baaed80d97"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 414462,
+			"sha256": "e1d43fbd43cc3d69034beead47b8933a309fa946cb05de963f291801b74f3467"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 414441,
+			"sha256": "183649486635ae47c88d5123a94a77f0e431315b5c1d3b11d87715ac6f7df473"
+		}
+	]
+}
