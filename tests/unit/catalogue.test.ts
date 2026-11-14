@@ -218,13 +218,14 @@ describe("the imported project catalogue", () => {
 		expect(ids[rhino + 1]).toBe("chamelo");
 		expect(ids[rhino + 2]).toBe("dotty");
 	});
-	it("keeps Mico before the three appended tools and falls back to GitHub", () => {
+	it("keeps Mico before the four appended tools and falls back to GitHub", () => {
 		const ids = filterProjects(projects, "").map((project) => project.id);
-		expect(ids.slice(-4)).toEqual([
+		expect(ids.slice(-5)).toEqual([
 			"mico",
 			"mao",
 			"hackernews-on-this-day",
 			"pi-superagent",
+			"ag-cli",
 		]);
 		const mico = projects.find((project) => project.id === "mico");
 		if (!mico) throw new Error("Mico is required.");

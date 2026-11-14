@@ -1,0 +1,53 @@
+{
+	"date": "2026-11-15",
+	"scope": "Hexly-only local onboarding of ag-cli; source repository untouched",
+	"model": "gpt-image-2.5-flare",
+	"generationAuthorization": "The owner requested ag-cli onboarding with generated Logo and textures on 2026-11-14.",
+	"acceptanceAuthorization": "Exact-byte owner approval recorded for both light and dark outputs.",
+	"publicationAuthorization": "Owner authorized R2 upload on 2026-11-15; local review precedes publication.",
+	"projects": [
+		{
+			"id": "ag-cli",
+			"title": "ag-cli",
+			"archived": false,
+			"action": "generate",
+			"root": "/textures/ag-cli/v1.0.0",
+			"version": "1.0.0",
+			"study": "artwork/brands/ag-cli/texture-studies/2026-11-15-flare-01",
+			"officialProjectIdentity": null,
+			"reviewCandidate": {
+				"path": "/logos/originals/ag-cli-review-2026-11-14.png",
+				"sha256": "2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a",
+				"rgbaSha256": "59f3eee046b649f6351839101ffe1996a36bac324475c5f55f016ddb58109f79",
+				"source": "artwork/logo-family/ag-cli/2026-11-14-01/finishing/01",
+				"bytes": 1718697,
+				"width": 2048,
+				"height": 2048,
+				"kind": "candidate"
+			},
+			"existingKit": null,
+			"design": {
+				"identityType": "material",
+				"language": "Dispatch conduit",
+				"name": {
+					"en": "Dispatch conduit field",
+					"zh": "派发管道纸面"
+				},
+				"description": {
+					"en": "Shallow paired conduit channels, rounded elbows and small flange rings press a quiet dispatch route into matte paper.",
+					"zh": "浅浅的成对管道槽、圆弧弯头与小法兰环压在哑光纸面上，勾勒出安静的派发路径。"
+				},
+				"motif": "Pressed paired conduit channels with rounded elbows, flange rings and bolt-seat dimples over brushed micrograin.",
+				"rationale": "Relates the message-dispatch capsule identity to a physical working surface; full-square paper construction matches the family."
+			},
+			"productEvidence": {
+				"source": "src/data/projects/ag-cli.json",
+				"purpose": {
+					"en": "Let external CLI bots dispatch tasks to local Antigravity conversations, wait on events and collect structured results and artifacts.",
+					"zh": "让外部 CLI 机器人向本机 Antigravity 会话派发任务、按事件等待并回收结构化结果与产物。"
+				},
+				"inspectedRevision": "ecbb2e79835f18ad3d7448d7be6224c6b74ecc4a"
+			}
+		}
+	]
+}

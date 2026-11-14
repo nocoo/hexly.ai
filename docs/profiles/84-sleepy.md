@@ -6,7 +6,7 @@
 - Website: [https://sleepy.hexly.ai](https://sleepy.hexly.ai)
 - Website evidence: docs/sources/sleepy-2026-10-09.json
 - Category: everyday
-- Archived repository: No; [repository status evidence](../../docs/sources/sleepy-2026-10-09.json)
+- Archived repository: Yes; [repository status evidence](../../docs/sources/sleepy-2026-10-09.json)
 - English: Quiet Chinese poetry reading for parents and children
 - Chinese: 陪伴亲子阅读的安静古诗阅读器
 - Profile section: Recent Projects
@@ -122,8 +122,6 @@ Fine staggered bookcloth weave and gently fanned paper-edge arcs, authored for t
 
 Small-size observation: At 24/16px, the book silhouette and crescent remain primary cues; fine cloth and page details soften.
 
-## Further refinements
+## Archive maintenance
 
-This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply.
-
-Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.
