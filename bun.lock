@@ -32,7 +32,7 @@
       "name": "@hexly/video-kit",
       "version": "2.0.0",
       "dependencies": {
-        "@remotion/player": "4.0.539",
+        "@remotion/player": "4.0.543",
         "remotion": "4.0.539",
         "zod": "4.6.7",
       },
@@ -75,7 +75,7 @@
     "@remotion/media-utils": "4.0.539",
     "@remotion/openai-whisper": "4.0.539",
     "@remotion/paths": "4.0.539",
-    "@remotion/player": "4.0.539",
+    "@remotion/player": "4.0.543",
     "@remotion/renderer": "4.0.539",
     "@remotion/sdk": "4.0.539",
     "@remotion/streaming": "4.0.539",
@@ -352,7 +352,7 @@
 
     "@remotion/paths": ["@remotion/paths@4.0.539", "", { "dependencies": { "remotion": "4.0.539" } }, "sha512-0ea0NVGZU+9VK7A98hSYRPYRogLlOTqWiSng+FP4gCVcVwt1V3grDPeCI5KS0lgL9SNNVP3jhgNMdTMl3M3gFA=="],
 
-    "@remotion/player": ["@remotion/player@4.0.539", "", { "dependencies": { "remotion": "4.0.539" }, "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-ww8vwLgLfXD7FzOmrzO8uLMnTQWWv9LIiSmm4zQ2GRkc/9/1k6Xe708dhjMAJYo5DrQF+LHCAbh5paUuJPWGXg=="],
+    "@remotion/player": ["@remotion/player@4.0.543", "", { "dependencies": { "remotion": "4.0.543" }, "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-XokTrZDF/8L8nSLB7rWDmIXX/LFcnJcpP/7aSdl5mD6Epr1HuWsYlQlxbqZQC2ZkuZZA0b/mCUJGbam5npIhgA=="],
 
     "@remotion/renderer": ["@remotion/renderer@4.0.539", "", { "dependencies": { "@remotion/licensing": "4.0.539", "@remotion/streaming": "4.0.539", "execa": "5.1.1", "remotion": "4.0.539", "source-map": "0.8.0", "ws": "8.21.0" }, "optionalDependencies": { "@remotion/compositor-darwin-arm64": "4.0.539", "@remotion/compositor-darwin-x64": "4.0.539", "@remotion/compositor-linux-arm64-gnu": "4.0.539", "@remotion/compositor-linux-arm64-musl": "4.0.539", "@remotion/compositor-linux-x64-gnu": "4.0.539", "@remotion/compositor-linux-x64-musl": "4.0.539", "@remotion/compositor-win32-x64-msvc": "4.0.539" }, "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-vMRQm88TiMzwmUlsTgc3g1GYo2U/HznWbrFoo8rhvU3wnwTr5eHRSp3SzLxn48WISn7QyE1Odh8IB7yPy/MhtQ=="],
 
