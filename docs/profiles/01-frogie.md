@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
-- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A local-first home for your AI agents. Chat, tools, and sessions in one place.
 - Chinese: AI 智能体的本地工作台，把对话、工具与会话放在一起。
 - Profile section: Recent Projects
@@ -164,8 +164,6 @@ Deeper sage, visible tonal curves, fine grain, and soft shadows give the green c
 
 Small-size observation: At 16 px the green silhouette and open mouth lead; individual facets and musical notes merge into small color accents.
 
-## Further refinements
+## Archive maintenance
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

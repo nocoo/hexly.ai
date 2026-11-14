@@ -1,0 +1,233 @@
+{
+	"id": "ag-cli",
+	"repo": "ag-cli",
+	"title": "ag-cli",
+	"emoji": "📮",
+	"description": {
+		"en": "Dispatch tasks to local Antigravity sessions from any CLI bot",
+		"zh": "让任意 CLI 机器人把任务派发给本机 Antigravity 会话"
+	},
+	"category": "tools",
+	"website": null,
+	"websiteSource": null,
+	"repository": "https://github.com/nocoo/ag-cli",
+	"subject": "Brushed-brass pneumatic message capsule with a blue enamel band and a stitched leather pull strap",
+	"reference": false,
+	"archived": false,
+	"logo": {
+		"kind": "candidate",
+		"original": "/logos/originals/ag-cli-review-2026-11-14.png",
+		"thumbnail": "/logos/display/ag-cli-160.webp",
+		"display": "/logos/display/ag-cli-1024.webp",
+		"sourcePath": "Hexly-generated first-identity candidate; source adoption pending",
+		"sourceUrl": "/artwork/logo-family/ag-cli/2026-11-14-01/review.html",
+		"modified": false,
+		"width": 2048,
+		"height": 2048,
+		"bytes": 1718697,
+		"sha256": "2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a"
+	},
+	"theme": {},
+	"colors": {
+		"primary": "#213866",
+		"background": "#dde4e8",
+		"ink": "#011d49",
+		"palette": [
+			{
+				"color": "#213866",
+				"role": "primary",
+				"source": "Native ag-cli raw, sRGB pixel (640, 900)"
+			},
+			{
+				"color": "#dde4e8",
+				"role": "background",
+				"source": "Authored presentation background.base; not a product UI token"
+			},
+			{
+				"color": "#c0985c",
+				"role": "accent",
+				"source": "Native ag-cli raw, sRGB pixel (450, 1100)"
+			},
+			{
+				"color": "#733d23",
+				"role": "accent",
+				"source": "Native ag-cli raw, sRGB pixel (1700, 1000)"
+			}
+		]
+	},
+	"source": {
+		"profileRevision": "5099212c84f73f34853f5296c7d038a069bd0e7d",
+		"profileSection": "Recent Projects",
+		"description": "Dispatch tasks to local Antigravity sessions from any CLI bot",
+		"repositoryRevision": "ecbb2e79835f18ad3d7448d7be6224c6b74ecc4a",
+		"statusEvidence": {
+			"path": "docs/sources/onboarding-ag-cli-2026-11-15.json",
+			"sha256": "d86ee7641067080327b465094a9fd1ffe9710858252d2c53de71bcd0fbde5f8c"
+		}
+	},
+	"overview": {
+		"goal": {
+			"en": "Let external CLI bots dispatch tasks to local Antigravity conversations, wait on events and collect structured results and artifacts, with a protocol modelled on herdr-core.",
+			"zh": "让外部 CLI 机器人向本机 Antigravity 会话派发任务、按事件等待并回收结构化结果与产物，协议设计对齐 herdr-core。"
+		},
+		"techStack": [
+			{
+				"name": "TypeScript / Bun",
+				"role": {
+					"en": "CLI runtime, state machine and compiled binary",
+					"zh": "CLI 运行时、状态机与编译二进制"
+				}
+			},
+			{
+				"name": "node:sqlite",
+				"role": {
+					"en": "Read-only conversation facts and its own state database",
+					"zh": "只读会话事实与自有状态库"
+				}
+			},
+			{
+				"name": "Vitest",
+				"role": {
+					"en": "Unit, integration and end-to-end suites with 95% coverage",
+					"zh": "单元、集成与端到端测试，覆盖率 95%"
+				}
+			}
+		],
+		"verified": {
+			"date": "2026-11-15",
+			"revision": "ecbb2e79835f18ad3d7448d7be6224c6b74ecc4a",
+			"readmes": {
+				"en": "docs/README.md",
+				"zh": "docs/README.md"
+			},
+			"sources": [
+				"docs/README.md",
+				"docs/01-overview-and-architecture.md",
+				"package.json",
+				"AGENTS.md"
+			]
+		}
+	},
+	"family": {
+		"id": "2026-11-14-01",
+		"status": "review",
+		"updated": "2026-11-14",
+		"finishing": "01",
+		"root": "/logos/family/ag-cli/2026-11-14-01/01",
+		"archive": "/artwork/logo-family/ag-cli/2026-11-14-01/review.html",
+		"series": "material",
+		"model": "gpt-image-2.5-sunburst",
+		"foreground": {
+			"subject": {
+				"en": "Brushed-brass pneumatic capsule with a blue enamel band and a leather strap",
+				"zh": "带蓝色珐琅环与皮拉带的拉丝黄铜气动信筒"
+			},
+			"original": "/logos/family/ag-cli/2026-11-14-01/01/transparent.png",
+			"display": "/logos/family/ag-cli/2026-11-14-01/01/transparent-1024.webp",
+			"width": 2048,
+			"height": 2048,
+			"sha256": "2888800f1341cdd9edcfa203f8ccf4187c3e8ea91dac9bb8f7715f2c0c07102a"
+		},
+		"previous": null,
+		"direction": [
+			{
+				"aspect": "composition",
+				"title": {
+					"en": "A complete dispatch capsule",
+					"zh": "完整的派发信筒"
+				},
+				"description": {
+					"en": "One sealed capsule at a product-photography angle with its strap, inset inside the rounded presentation. Its contact shadow is independent.",
+					"zh": "一只密封信筒连同皮拉带以产品摄影角度完整呈现，整体内缩于圆角展示之内，接触阴影独立保存。"
+				}
+			},
+			{
+				"aspect": "drawing",
+				"title": {
+					"en": "Brass, enamel and leather",
+					"zh": "黄铜、珐琅与皮革"
+				},
+				"description": {
+					"en": "Brushed brass carries the identity; a narrow blue enamel band and a stitched saddle-leather strap are the crafted accents. Real thickness and machined seams keep it credible.",
+					"zh": "拉丝黄铜构成主体，窄蓝色珐琅环与缝线马鞍皮拉带是工艺点缀，真实厚度与机加工接缝保持可信。"
+				}
+			},
+			{
+				"aspect": "presentation",
+				"title": {
+					"en": "Conduit runs",
+					"zh": "管道走线"
+				},
+				"description": {
+					"en": "A cool grey-blue paper field holds sparse paired conduit lines and flange ticks. None of it enters transparent UI marks.",
+					"zh": "冷灰蓝纸面上只有稀疏的成对管道线与法兰刻线，均不进入透明界面标记。"
+				}
+			}
+		],
+		"palette": [
+			{
+				"color": "#dde4e8",
+				"role": "background",
+				"label": {
+					"en": "Designed paper",
+					"zh": "独立设计纸色"
+				},
+				"source": "artwork/logo-family/ag-cli/2026-11-14-01/presentation.json background.base"
+			},
+			{
+				"color": "#213866",
+				"role": "primary",
+				"label": {
+					"en": "Blue enamel band",
+					"zh": "蓝色珐琅环"
+				},
+				"source": "Native ag-cli raw PNG, sRGB pixel (640, 900)"
+			},
+			{
+				"color": "#c0985c",
+				"role": "accent",
+				"label": {
+					"en": "Brushed brass",
+					"zh": "拉丝黄铜"
+				},
+				"source": "Native ag-cli raw PNG, sRGB pixel (450, 1100)"
+			},
+			{
+				"color": "#733d23",
+				"role": "accent",
+				"label": {
+					"en": "Saddle leather",
+					"zh": "马鞍皮"
+				},
+				"source": "Native ag-cli raw PNG, sRGB pixel (1700, 1000)"
+			}
+		],
+		"sizeNote": {
+			"en": "The capsule silhouette and blue band remain at 32 px; the strap stitching and brushed grain recede at 16 px.",
+			"zh": "32 像素仍可辨认信筒轮廓与蓝环；16 像素时缝线与拉丝纹理减弱。"
+		}
+	},
+	"presentationIcon": {
+		"version": "1.0.0",
+		"root": "/icons/ag-cli/v1.0.0",
+		"width": 2048,
+		"height": 2048
+	},
+	"brandTexture": {
+		"root": "/textures/ag-cli/v1.0.0",
+		"version": "1.0.0",
+		"scope": "hexly-campaign",
+		"name": {
+			"en": "Dispatch conduit field",
+			"zh": "派发管道纸面"
+		},
+		"description": {
+			"en": "Shallow paired conduit channels, rounded elbows and small flange rings press a quiet dispatch route into matte paper.",
+			"zh": "浅浅的成对管道槽、圆弧弯头与小法兰环压在哑光纸面上，勾勒出安静的派发路径。"
+		},
+		"format": "webp",
+		"display": "single",
+		"model": "gpt-image-2.5-flare",
+		"surfaceOpacity": 0.45
+	}
+}

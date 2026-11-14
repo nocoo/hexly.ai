@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: No; [repository status evidence](../../docs/sources/kite-2026-09-25-publication.json)
+- Archived repository: Yes; [repository status evidence](../../docs/sources/kite-2026-09-25-publication.json)
 - English: Local Pi execution-trace collection for inspection and visualization
 - Chinese: 面向检查与可视化的本地 Pi 执行轨迹采集
 - Profile section: Recent Projects
@@ -156,8 +156,6 @@ Quiet woodland leaves occupy the left-hand negative space on warm paper. A unifo
 
 Small-size observation: Use the transparent head at 24/16px without an extra tile or mask. The head silhouette and beak remain the main cues; individual color facets soften at these sizes.
 
-## Further refinements
+## Archive maintenance
 
-Preserve the approved raster, original colors, complete silhouette, and exact generation/finishing records. Supporting textures remain separate. Published versions are immutable; generated raster artwork is not native SVG.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.

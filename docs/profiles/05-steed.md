@@ -6,7 +6,7 @@
 - Website: [https://steed.hexly.ai](https://steed.hexly.ai)
 - Website evidence: apps/web/wrangler.toml routes
 - Category: ai
-- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A shared home for AI agents, their assets, and the relationships between them.
 - Chinese: 面向多智能体的 AI 工作台，管理各个 Agent 的资源与关联。
 - Profile section: Recent Projects
@@ -161,8 +161,6 @@ Unequal long wind folds lean across a deep petrol-teal field. Fine grain and sha
 
 Small-size observation: The complete ears, mane tips, face and bird retain at least 214.5 px of protected clearance. Only natural lower/right shoulder entries cross the frame. Two native requests were made: study 01 was rejected because its bird stayed inside the mane; study 02 is selected.
 
-## Further refinements
+## Archive maintenance
 
-Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
-
-Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.
+Basic support only. Preserve archived state, existing pages, links, downloads, licenses, provenance and completed artwork. Exclude this project from bulk redesign, new brand/media generation and gap-filling unless the owner explicitly requests it by name.
