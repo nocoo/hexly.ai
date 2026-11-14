@@ -20,6 +20,8 @@
 - archive ag-cli brief and prompt before generation ([3494870](https://github.com/nocoo/hexly.ai/commit/349487056767ea9b1362136ec913d67d741ccc83))
 - archive ag-cli conduit texture brief and prompts ([41ec893](https://github.com/nocoo/hexly.ai/commit/41ec893c88925f8cc81e4929fedf1984149c165d))
 - record ag-cli light and dark raw requests ([931ac35](https://github.com/nocoo/hexly.ai/commit/931ac354d535dd7a3f322f49ff9ed29bbd29e9c4))
+- record ag-cli R2 publication receipts ([e1ff046](https://github.com/nocoo/hexly.ai/commit/e1ff046990d6f1ee2b02fac373e157e392ea1b2d))
+- sync publication receipts ([4489332](https://github.com/nocoo/hexly.ai/commit/448933274ca404a0d0f49f6abdbffa819d9586a4))
 
 ### Features
 
