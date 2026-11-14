@@ -1,5 +1,12 @@
 # Homepage editorial illustration study
 
+## Current decision: rejected; page artwork paused
+
+On 2026-11-14 the owner rejected this exact candidate and paused artwork work
+across all pages. Preserve the native image and request/response receipts. No
+processing, integration or further generation is authorized. The following brief
+records the earlier request, not an active task.
+
 ## Owner request
 
 The owner rejected the Three.js result: remove Three.js, return to generated

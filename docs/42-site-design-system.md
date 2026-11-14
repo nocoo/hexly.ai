@@ -105,10 +105,10 @@ Templates heading fits two lines, and all four desktop hero sections share a
 544 px height. The generated product still lifes and the subsequent
 [Three.js study](43-three-hero-objects.md) were both rejected. Neither is active.
 The homepage retains its six colorful interactive project Logos and quiet orbit
-lines. The other decorative slots remain empty while a new flat editorial
-illustration is reviewed, starting with one homepage candidate. Source images
-and exact-byte receipts stay archived; the Three.js renderer, controls and
-dependencies have been removed. Status observations remain independent of any
+lines. The subsequent flat editorial homepage candidate was also rejected;
+additional artwork for all pages is paused, and the other decorative slots remain
+empty. Source images and exact-byte receipts stay archived; the Three.js renderer,
+controls and dependencies have been removed. Status observations remain independent of any
 decorative illustration.
 
 At narrow/tablet widths the global header gives the four main routes one full
