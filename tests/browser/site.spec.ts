@@ -51,7 +51,7 @@ test("renders active projects with real logo previews and project destinations",
 
 	for (const [id, label, href] of [
 		["pew", "GitHub", "https://github.com/nocoo/pew"],
-		["frogie", "GitHub", "https://github.com/nocoo/frogie"],
+		["firefly", "GitHub", "https://github.com/nocoo/firefly"],
 		[
 			"hooky",
 			"Chrome",
@@ -80,8 +80,8 @@ test("renders active projects with real logo previews and project destinations",
 		"/projects/pew",
 	);
 	await expect(
-		page.locator('[data-project="frogie"] .card-main'),
-	).toHaveAttribute("href", "/projects/frogie");
+		page.locator('[data-project="firefly"] .card-main'),
+	).toHaveAttribute("href", "/projects/firefly");
 	expect(
 		await page.evaluate(
 			() => document.documentElement.scrollWidth <= innerWidth,
@@ -148,14 +148,14 @@ test.describe("remembers language and theme across reloads and searches Chinese 
 		await page.reload();
 		await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
 		await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-		await page.getByRole("searchbox", { name: "搜索项目" }).fill("本地工作台");
+		await page.getByRole("searchbox", { name: "搜索项目" }).fill("贡献图");
 		await expect(page.locator(".project-card")).toHaveCount(1);
-		await expect(page.locator(".project-card h3")).toContainText("Frogie");
+		await expect(page.locator(".project-card h3")).toContainText("Pew");
 		await page.getByRole("button", { name: "清空搜索" }).click();
 		await expect(page.locator(".project-card")).toHaveCount(active.length);
 		await expect(
-			page.getByRole("link", { name: "查看 GitHub 项目: Frogie", exact: true }),
-		).toHaveAttribute("href", "https://github.com/nocoo/frogie");
+			page.getByRole("link", { name: "查看 GitHub 项目: Pew", exact: true }),
+		).toHaveAttribute("href", "https://github.com/nocoo/pew");
 		await page.getByRole("button", { name: "主题：深色；切换为浅色" }).click();
 		await page.getByRole("button", { name: "切换为英文" }).click();
 		await page.reload();
@@ -224,7 +224,10 @@ test("groups libraries and keeps archived items marked inside live categories", 
 	);
 	await expect(
 		page.locator('[data-project="frogie"] .card-category'),
-	).toHaveText("AI & agents");
+	).toHaveText("AI & agents · Archived");
+	await expect(page.locator('[data-project="pew"] .card-category')).toHaveText(
+		"AI & agents",
+	);
 	await expect(
 		page.locator('[data-project="his-fm"] .card-category'),
 	).toHaveCount(0);

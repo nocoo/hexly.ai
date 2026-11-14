@@ -13,7 +13,7 @@ const projects = readProjects().map((project) => ({
 }));
 const ordered = filterProjects(projects, "", "all");
 const firstVisible = ordered[0];
-const afterFrogie = projects.find((project) => project.id === "pew");
+const afterPew = projects.find((project) => project.id === "firefly");
 
 test("organizes Xray without losing media, downloads or integration, and isolates tab keyboard navigation", async ({
 	page,
@@ -207,8 +207,8 @@ test("switches identity presentations and downloads the preserved original", asy
 test("uses one top project picker and preserves browser history", async ({
 	page,
 }) => {
-	if (!afterFrogie) throw new Error("Missing Pew fixture.");
-	await page.goto("/projects/frogie");
+	if (!afterPew) throw new Error("Missing Firefly fixture.");
+	await page.goto("/projects/pew");
 	await expect(
 		page.locator(".identity-pagination, .detail-breadcrumb"),
 	).toHaveCount(0);
@@ -226,34 +226,29 @@ test("uses one top project picker and preserves browser history", async ({
 	).toBeInViewport();
 	await page.locator('.project-section-nav a[href="#detail"]').click();
 	await expect(page.locator("#detail")).toBeInViewport();
-	await page.locator(".picker-item").filter({ hasText: /^Pew$/ }).click();
-	await expect(page).toHaveURL(
-		new RegExp(`/projects/${afterFrogie.id}#detail$`),
-	);
-	await expect(page.locator("#identity-title")).toContainText(
-		afterFrogie.title,
-	);
+	await page
+		.locator(".picker-item")
+		.filter({ hasText: /^Firefly$/ })
+		.click();
+	await expect(page).toHaveURL(new RegExp(`/projects/${afterPew.id}#detail$`));
+	await expect(page.locator("#identity-title")).toContainText(afterPew.title);
 	await expect(page.locator("#panel-brand")).toBeVisible();
 	expect(new URL(page.url()).hash).toBe("#detail");
 	await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
-	if (!afterFrogie.overview) throw new Error("Missing Pew overview");
+	if (!afterPew.overview) throw new Error("Missing Firefly overview");
 	await expect(page.locator(".project-overview .project-goal > p")).toHaveText(
-		afterFrogie.overview.goal.en,
+		afterPew.overview.goal.en,
 	);
 	await expect(page.locator(".project-overview .tech-name")).toHaveText(
-		afterFrogie.overview.techStack.map((item) => item.name),
+		afterPew.overview.techStack.map((item) => item.name),
 	);
 
 	await page.reload();
-	await expect(page.locator("#identity-title")).toContainText(
-		afterFrogie.title,
-	);
-	await page.locator(".picker-item").filter({ hasText: "Frogie" }).click();
-	await expect(page).toHaveURL(/\/projects\/frogie#detail$/);
+	await expect(page.locator("#identity-title")).toContainText(afterPew.title);
+	await page.locator(".picker-item").filter({ hasText: /^Pew$/ }).click();
+	await expect(page).toHaveURL(/\/projects\/pew#detail$/);
 	await page.goBack();
-	await expect(page.locator("#identity-title")).toContainText(
-		afterFrogie.title,
-	);
+	await expect(page.locator("#identity-title")).toContainText(afterPew.title);
 });
 
 test("pins the carousel and tabs, and centers edge projects across resized views", async ({
@@ -511,10 +506,13 @@ test.describe("touch project switching", () => {
 	test("opens Project Detail at page top when switching from another tab", async ({
 		page,
 	}) => {
-		await page.goto("/projects/frogie#downloads");
+		await page.goto("/projects/pew#downloads");
 		await page.locator(".identity-archive").scrollIntoViewIfNeeded();
-		await page.locator(".picker-item").filter({ hasText: /^Pew$/ }).click();
-		await expect(page).toHaveURL(/\/projects\/pew#detail$/);
+		await page
+			.locator(".picker-item")
+			.filter({ hasText: /^Firefly$/ })
+			.click();
+		await expect(page).toHaveURL(/\/projects\/firefly#detail$/);
 		await expect(
 			page.getByRole("tab", { name: "Project Detail", exact: true }),
 		).toHaveAttribute("aria-selected", "true");
