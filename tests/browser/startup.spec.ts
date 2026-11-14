@@ -200,11 +200,16 @@ test("displays content without waiting for images and fonts", async ({
 }) => {
 	await page.clock.install();
 	const media = gate();
+	let fixtureRequests = 0;
+	await page.context().route("https://h.no.mt/**", async (route) => {
+		fixtureRequests++;
+		await route.fallback();
+	});
 	await page.route("**/*", async (route) => {
 		if (["image", "font"].includes(route.request().resourceType())) {
 			await media.wait;
 		}
-		await route.continue();
+		await route.fallback();
 	});
 	try {
 		await page.goto("/", { waitUntil: "domcontentloaded" });
@@ -221,6 +226,20 @@ test("displays content without waiting for images and fonts", async ({
 		).toBe(false);
 		await page.clock.fastForward(15000);
 		await expect(page.locator("#startup-error")).not.toBeVisible();
+		expect(fixtureRequests).toBe(0);
+		media.release();
+		await expect.poll(() => fixtureRequests).toBeGreaterThan(0);
+		await expect
+			.poll(() =>
+				page
+					.locator(".hero img")
+					.first()
+					.evaluate((image) => {
+						const element = image as HTMLImageElement;
+						return element.complete && element.naturalWidth > 0;
+					}),
+			)
+			.toBe(true);
 	} finally {
 		media.release();
 		await page.unrouteAll({ behavior: "wait" });

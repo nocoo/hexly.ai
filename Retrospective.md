@@ -1,5 +1,9 @@
 # Retrospective
 
+## 2026-11-15: Push gate caught a browser route teardown race
+
+After merging the remote catalogue and version updates, pre-push rejected the delayed-image startup journey with `Route is already handled` in the shared CDN fixture. The broad page route used `continue`, which bypasses remaining route handlers, while the context-level fixture had no awaited teardown before the page closed. The media delay now uses Playwright's documented `fallback` chain. The fixture depends on the page and drains context handlers with `unrouteAll({ behavior: "wait" })` before page teardown; errors are not swallowed. The startup regression now also proves that released image requests reach the local CDN fixture and decode successfully. Ten consecutive runs of that strengthened startup test passed. The failed push did not update origin; publication still goes through the normal pre-push gate.
+
 ## 2026-11-14: A conflict-free pull still contained dependency drift
 
 The incoming dependency commits merged without text conflicts, but upgraded the main Remotion packages to `4.0.543` while leaving the remaining family overrides at `4.0.539`. Biome's CLI also advanced to `2.6.7` while its schema stayed at `2.6.6`. A new declaration-alignment test reproduced the Remotion mismatch before correction. The merge now keeps the family on the incoming core version and checks both Remotion pins and the Biome schema in L1.

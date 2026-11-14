@@ -17,7 +17,8 @@ const posters = new Set([
 /** Exercise production CDN URLs using verified local bytes; no live service dependency. */
 export const test = base.extend<{ assetFixtures: undefined }>({
 	assetFixtures: [
-		async ({ context }, use) => {
+		async ({ page }, use) => {
+			const context = page.context();
 			await context.route(`${storage.origin}/**`, async (route) => {
 				const file = assets.get(
 					new URL(route.request().url()).pathname.slice(1),
@@ -42,7 +43,11 @@ export const test = base.extend<{ assetFixtures: undefined }>({
 					},
 				});
 			});
-			await use(undefined);
+			try {
+				await use(undefined);
+			} finally {
+				await context.unrouteAll({ behavior: "wait" });
+			}
 		},
 		{ auto: true },
 	],
