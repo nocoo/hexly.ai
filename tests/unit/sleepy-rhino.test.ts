@@ -7,7 +7,7 @@ describe("sleepy and rhino onboarding", () => {
 		(id) => {
 			const project = readProjects().find((entry) => entry.id === id);
 			expect(project).toBeDefined();
-			expect(project?.archived).toBe(false);
+			expect(project?.archived).toBe(id === "sleepy");
 			expect(project?.category).toBe("everyday");
 			expect(project?.website).toBe(`https://${id}.hexly.ai`);
 			expect(project?.family?.status).toBe("adopted");

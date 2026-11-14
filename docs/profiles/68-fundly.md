@@ -42,12 +42,12 @@ Collect fund and market data for private research into Chinese funds, ETFs, stoc
 
 ## Current logo
 
-![Fundly source identity](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-160-5a81ce80d48f.webp)
+![Fundly source identity](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-v2-160-d9ecd987ca8d.webp)
 
-- Type: Original project artwork, copied without modification
+- Type: Preserved original project artwork; official identity and Hexly campaign artwork retain their separate source bytes and rights
 - Subject: Charcoal emperor penguin head holding one small coral fish
 - [Source](https://github.com/nocoo/fundly/blob/9b5a655ce0576a279a6d9b2363b8e8fe79a17aae/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/originals/fundly-family-2026-10-28-02.png)
+- [Preserved asset](https://h.no.mt/projects/fundly/identity/v1.0.0/fundly-family-2026-10-28-02-fc6ee745c751.png)
 - Original dimensions: 2048 × 2048
 - Original size: 2085886 bytes
 - SHA-256: `fc6ee745c7510fc7a8cb6ea2e1ff1bf104297f25685f58f36b43b7552ce6572b`
@@ -64,6 +64,15 @@ Collect fund and market data for private research into Chinese funds, ETFs, stoc
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
+## Current textured icons
+
+![Fundly current icon](https://h.no.mt/projects/fundly/icons/v1.1.0/rounded-160.webp)
+
+- [Native square PNG](https://h.no.mt/projects/fundly/icons/v1.1.0/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/fundly/icons/v1.1.0/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/fundly/icons/v1.1.0/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/fundly/icons/v1.1.0/favicon.ico) · [Apple touch](https://h.no.mt/projects/fundly/icons/v1.1.0/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/fundly/icons/v1.1.0/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/fundly/icons/v1.1.0/guide.md)
+- Native canvas 2048 × 2048; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
+- Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
+
 ## Current campaign texture
 
 - Coastal leaf shelter / 海岸叶荫: A plausible vegetated subantarctic penguin coast, without asserting a penguin species: broad leathery coastal megaherb leaves with shallow scalloped margins and a few substantial folded tussock blades.
@@ -73,6 +82,35 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - [Paper PNG](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-light.png) · [Night PNG](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/fundly/textures/v1.0.2/texture-dark-prompt.txt)
 - [Manifest and hashes](https://h.no.mt/projects/fundly/textures/v1.0.2/manifest.json) · [Usage/rights](https://h.no.mt/projects/fundly/textures/v1.0.2/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/fundly/v1.0.2/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
+
+## Hexly campaign brand archive
+
+- Brand version: `1.1.0`; [public archive](https://hexly.ai/projects/fundly#brand).
+- [Light lockup](https://h.no.mt/brands/fundly/v1.1.0/lockup-light.png), [dark lockup](https://h.no.mt/brands/fundly/v1.1.0/lockup-dark.png), [favicon](https://h.no.mt/brands/fundly/v1.1.0/favicon.ico).
+- [Complete usage and integration guide](https://h.no.mt/brands/fundly/v1.1.0/guide.md), [standalone specimens](https://hexly.ai/brands/fundly/v1.1.0/review.html), [all exports and SHA-256](https://h.no.mt/brands/fundly/v1.1.0/manifest.json).
+- Source adoption: recorded at `9b5a655ce0576a279a6d9b2363b8e8fe79a17aae`.
+- Official project identity and Hexly campaign interpretation are separate manifest roles. Existing artwork keeps its exact bytes, geometry and original colors. Heroes are authored wide/mobile compositions, with no new image-model calls. Hexly palettes and typography apply only to this archive and promotional materials, not product UI. Preserved imagery retains its recorded source rights; MIT covers authored support work and OFL covers the real font. See provenance.json and license.txt.
+
+
+Charcoal emperor penguin head holding one small coral fish.
+
+### Identity keeps its colors
+
+Preserve the exact project identity and the separately recorded Hexly artwork. Hexly paper, ink and terracotta belong to archive and campaign surfaces only; independent product palettes and themes stay their own.
+
+项目原标与单独记录的 Hexly 主视觉均保持形状和原色。Hexly 纸色、墨色和陶土色只用于档案及宣发画布，各产品色板与主题独立保留。
+
+### A complete composition
+
+Preserve the complete subject and its original square margins. Resize uniformly; never trim the canvas to force detail. Keep external clear space of at least 1/8 of the mark canvas height around standalone marks and lockups. Wide and mobile Heroes are separate compositions of existing artwork, with no image-model call.
+
+保留完整主体与原有方形留白，只做等比缩放，不裁图强凑细节。独立标志及字标组合四周，至少留出标志画布高度 1/8 的外部净空。宽幅与手机 Hero 分别排版，没有新图像模型调用。
+
+### A mark, not a tile
+
+Navigation 24px preferred, 16px minimum. Wordmark ≥67px wide; lockup ≥160px. Use transparent PNG/ICO at small sizes without a tile, extra red dot, shadow or rounded mask. Fine material detail softens at 16px.
+
+导航推荐 24px，最小 16px。字标宽度至少 67px，组合至少 160px。小尺寸使用透明 PNG/ICO，不加底板、红点、阴影或圆角遮罩；16px 时细小材质细节会柔化。
 
 ## Refined identity
 
@@ -127,6 +165,6 @@ Small-size observation: The charcoal-to-ivory face and the small fish stay the m
 
 ## Further refinements
 
-Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments.
+Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities.
 
-Use head portraits for large animals and optionally full-body poses for small animals. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. Preserve this reviewed composition and its archived predecessors.
+Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide. Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement. The source team integrates the exact published files and records its own adoption revision.

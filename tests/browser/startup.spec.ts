@@ -105,16 +105,16 @@ test("offers a working retry when the client script fails", async ({
 	page,
 }) => {
 	await page.route(clientScript, (route) => route.abort());
-	await page.goto("/projects/frogie?sort=az", {
+	await page.goto("/projects/pew?sort=az", {
 		waitUntil: "domcontentloaded",
 	});
 	await expect(page.locator("#startup-error")).toBeVisible();
 	await expect(page.locator("#root")).not.toBeVisible();
 	await page.unroute(clientScript);
 	await page.getByRole("button", { name: "Reload the page" }).click();
-	await expect(page.locator("#identity-title")).toContainText("Frogie");
+	await expect(page.locator("#identity-title")).toContainText("Pew");
 	await expect(page.locator(".gallery-main")).toBeVisible();
-	await expect(page).toHaveURL(/\/projects\/frogie\?sort=az$/);
+	await expect(page).toHaveURL(/\/projects\/pew\?sort=az$/);
 	await expect(page.locator("#startup-error")).not.toBeVisible();
 });
 
@@ -235,7 +235,7 @@ test.describe("without JavaScript", () => {
 			page.getByRole("heading", { name: "Small ideas A little universe." }),
 		).toBeVisible();
 		await expect(
-			page.locator("#root").getByRole("link", { name: "Frogie", exact: true }),
+			page.locator("#root").getByRole("link", { name: "Pew", exact: true }),
 		).toBeVisible();
 		await expect(page.locator("#startup-error")).not.toBeVisible();
 	});

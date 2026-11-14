@@ -1,5 +1,41 @@
 # Changelog
 
+## [1.8.3] - 2026-11-14
+
+### Maintenance
+
+- bump @remotion/bundler from 4.0.539 to 4.0.543 (#129) ([cccee11](https://github.com/nocoo/hexly.ai/commit/cccee111727c49891d1cf769c6d5ba144474bd72))
+- bump @remotion/cli from 4.0.539 to 4.0.543 (#130) ([adf1dff](https://github.com/nocoo/hexly.ai/commit/adf1dffb73382933c16c6fed87281c91b1d9b3a5))
+- bump @remotion/player from 4.0.539 to 4.0.543 (#131) ([e22ea81](https://github.com/nocoo/hexly.ai/commit/e22ea818e674bcd4ff76104feeab3549e0a95ed7))
+- bump @remotion/renderer from 4.0.539 to 4.0.543 (#132) ([29715a6](https://github.com/nocoo/hexly.ai/commit/29715a6d0a26c5cd26402586378393c172b7f58d))
+- bump @vitejs/plugin-react from 6.1.2 to 6.3.0 (#133) ([ad494c4](https://github.com/nocoo/hexly.ai/commit/ad494c4c635fe02a3571b57c317c2ed00134dba0))
+- bump remotion from 4.0.539 to 4.0.543 (#135) ([481ce64](https://github.com/nocoo/hexly.ai/commit/481ce641e69d8532b19c3f1117bed19e6ce5af57))
+- bump vite from 8.3.5 to 8.3.8 (#140) ([b2b3f12](https://github.com/nocoo/hexly.ai/commit/b2b3f124f048c9f88aaaace3de1c642f9cbdf03e))
+- bump @biomejs/biome from 2.6.6 to 2.6.7 (#146) ([83996de](https://github.com/nocoo/hexly.ai/commit/83996deee930abfa498f508b0e006cadbccd3ed5))
+- Merge pull request #148 from nocoo/chore/deps-20261114 ([7d7fe33](https://github.com/nocoo/hexly.ai/commit/7d7fe33b9cdf774bdecf60abec8c073c201ac843))
+- mark frogie, sleepy, steed and kite as archived ([3be77b8](https://github.com/nocoo/hexly.ai/commit/3be77b88e5db2e65da5b0fa99f258a0ef0591e66))
+
+### Documentation
+
+- archive ag-cli brief and prompt before generation ([3494870](https://github.com/nocoo/hexly.ai/commit/349487056767ea9b1362136ec913d67d741ccc83))
+- archive ag-cli conduit texture brief and prompts ([41ec893](https://github.com/nocoo/hexly.ai/commit/41ec893c88925f8cc81e4929fedf1984149c165d))
+- record ag-cli light and dark raw requests ([931ac35](https://github.com/nocoo/hexly.ai/commit/931ac354d535dd7a3f322f49ff9ed29bbd29e9c4))
+- record ag-cli R2 publication receipts ([e1ff046](https://github.com/nocoo/hexly.ai/commit/e1ff046990d6f1ee2b02fac373e157e392ea1b2d))
+- sync publication receipts ([4489332](https://github.com/nocoo/hexly.ai/commit/448933274ca404a0d0f49f6abdbffa819d9586a4))
+
+### Features
+
+- finish approved ag-cli capsule pass 01 ([f029c10](https://github.com/nocoo/hexly.ai/commit/f029c10dda6b77cce281ec16d9146698483e0b06))
+- onboard ag-cli with logo, textures and R2 receipts ([d357744](https://github.com/nocoo/hexly.ai/commit/d3577445b67bc2f921667e1a86b5fe08634606f1))
+
+### Tests
+
+- update active fixture from frogie to pew and firefly ([0e8ce5d](https://github.com/nocoo/hexly.ai/commit/0e8ce5dabe28286463d740c3462f2656c179f1b0))
+
+### Fixes
+
+- clean unregistered og entries and publish archived social cards ([5163bbf](https://github.com/nocoo/hexly.ai/commit/5163bbf7477717717acd5d375cb4e067fba77df0))
+
 ## [1.8.2] - 2026-11-12
 
 ### Features

@@ -34,12 +34,12 @@ Provide a local-first collaborative canvas for people and AI agents, with named 
 
 ## Current logo
 
-![Mico source identity](https://hexly.ai/logos/display/mico-160.webp)
+![Mico source identity](https://h.no.mt/projects/mico/identity/v1.0.0/mico-160-33fdc999e631.webp)
 
 - Type: Original project artwork, copied without modification
 - Subject: Candy-colored rounded-square canvas application mark
 - [Source](https://github.com/nocoo/mico/blob/8a41d3a5df8a94c4ab4dc8128d71c5b5f7540682/logo.png): `logo.png`
-- [Preserved asset](https://hexly.ai/logos/originals/mico.png)
+- [Preserved asset](https://h.no.mt/projects/mico/identity/v1.0.0/mico-012db800045e.png)
 - Original dimensions: 1440 × 1440
 - Original size: 1254051 bytes
 - SHA-256: `012db800045ef65d7715129343dd4344ca3c77ea7cbbee703f67e0615b3cc521`

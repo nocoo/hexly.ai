@@ -1,0 +1,68 @@
+{
+	"sourceMode": "isolated-white",
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"matte": {
+		"minimumChannel": 248,
+		"maximumChroma": 8,
+		"backgroundRgb": [255, 255, 255],
+		"edgeBand": 2,
+		"interiorDistance": 4,
+		"searchRadius": 7,
+		"minimumColorAlignment": 0.98,
+		"maximumMatteEnergy": 500,
+		"minimumComponentPixels": 0,
+		"backgroundSeedsAt2048": [],
+		"calibrationNote": "Exterior-connected pure-white extraction; brass, enamel and leather are saturated, so no component deletion or protection region is needed."
+	},
+	"project": "ag-cli",
+	"series": "material",
+	"background": {
+		"base": "#dde4e8",
+		"light": "#f1f4f6",
+		"shade": "#bccad2",
+		"motif": "#5f7c93",
+		"grainAmplitude": 0.7,
+		"grainSeed": 61114001,
+		"motifOpacity": 0.17,
+		"highlightOpacity": 0.24,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Conduit runs",
+			"description": "Sparse paired pneumatic conduit lines turning at rounded corners with short flange ticks, distinct from card, bookcloth and botanical surfaces.",
+			"layers": [
+				{
+					"d": "M70 300V176Q70 128 118 128H300M96 326V192Q96 154 134 154H326M770 880H872Q914 880 914 838V740M770 906H886Q940 906 940 852V740",
+					"tone": "motif",
+					"strokeWidth": 1.7
+				},
+				{
+					"d": "M58 352h24M84 340v24M226 118v20M252 118v20M902 700h24M902 726h24M148 902h24m-12-12v24",
+					"tone": "highlight",
+					"strokeWidth": 1.3
+				}
+			]
+		}
+	},
+	"framing": {
+		"scale": 0.74,
+		"offsetAt2048": [0, 0],
+		"intentionalEdges": [],
+		"minimumClearanceAt2048": 128,
+		"note": "Uniform inset of the diagonal capsule; preserve full contours with at least 128 px rounded-outline clearance."
+	},
+	"shadows": [
+		{
+			"color": [34, 52, 68],
+			"opacity": 0.14,
+			"blurAt2048": 40,
+			"offsetAt2048": [12, 24]
+		},
+		{
+			"color": [34, 52, 68],
+			"opacity": 0.09,
+			"blurAt2048": 9,
+			"offsetAt2048": [2, 8]
+		}
+	]
+}

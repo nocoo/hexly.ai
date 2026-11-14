@@ -88,28 +88,30 @@ describe("shareable directory navigation", () => {
 		).toBe("extensions");
 	});
 	it("keeps the path aligned with selection when filtering and handles empty results", () => {
-		const state = parse("/projects/frogie");
+		const state = parse("/projects/pew");
 		expect(
-			resolveNavigation({ ...state, query: "pew" }, projects).project,
-		).toBe("pew");
+			resolveNavigation({ ...state, query: "firefly" }, projects).project,
+		).toBe("firefly");
 		expect(
 			resolveNavigation({ ...state, query: "missing-project" }, projects)
 				.project,
-		).toBe("frogie");
+		).toBe("pew");
 		expect(parse("/projects/missing-project").project).toBe("missing-project");
 		expect(parseNavigation("/logos", "", []).project).toBe("frogie");
 	});
 	it("preserves legacy links while using canonical project and template routes", () => {
 		expect(navigationPath(parse("/logos/frogie"))).toBe(
-			"/projects/frogie#brand",
+			"/projects/frogie?category=archive#brand",
 		);
-		expect(navigationPath(parse("/frogie"))).toBe("/projects/frogie");
+		expect(navigationPath(parse("/frogie"))).toBe(
+			"/projects/frogie?category=archive",
+		);
 		expect(navigationPath(parse("/projects"))).toBe("/");
 		expect(navigationPath(parse("/logos/hermes-gateway-herdr"))).toBe(
 			"/projects/hermes-on-herdr?category=archive#brand",
 		);
 		expect(navigationPath(parse("/logos/frogie", "", "#overview"))).toBe(
-			"/projects/frogie#overview",
+			"/projects/frogie?category=archive#overview",
 		);
 		expect(
 			navigationPath(parse("/videos/launch", "?project=pew&mode=deck")),

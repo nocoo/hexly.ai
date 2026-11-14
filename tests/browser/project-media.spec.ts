@@ -59,8 +59,8 @@ for (const [device, options] of Object.entries({ touch })) {
 		test("carousel switching removes the previous project's screenshots", async ({
 			page,
 		}) => {
-			await page.goto("/projects/frogie");
-			for (const id of ["hooky", "r2shot", "frogie"]) {
+			await page.goto("/projects/pew");
+			for (const id of ["hooky", "r2shot", "pew"]) {
 				const project = readProjects().find((item) => item.id === id);
 				if (!project) throw new Error(`Missing project: ${id}`);
 				await page
