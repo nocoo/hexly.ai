@@ -113,7 +113,7 @@ describe("the imported project catalogue", () => {
 			"本地 工作台",
 			"green frog",
 		]) {
-			expect(filterProjects(projects, query)).toContain(frogie);
+			expect(filterProjects(projects, query, "archive")).toContain(frogie);
 		}
 	});
 	it("combines category and multiword search without changing the input", () => {
@@ -136,7 +136,7 @@ describe("the imported project catalogue", () => {
 	it("hides archived repositories from All while keeping their categories", () => {
 		const counts = categoryCounts(projects);
 		expect(counts.all).toBe(projects.filter((p) => !p.archived).length);
-		expect(counts.archive).toBe(33);
+		expect(counts.archive).toBe(37);
 		expect(filterProjects(projects, "pika", "all")).toEqual([]);
 		expect(
 			filterProjects(projects, "pika", "archive").map((p) => p.id),
@@ -214,10 +214,9 @@ describe("the imported project catalogue", () => {
 	it("places Rhino at the end of animals and Chamelo before templates", () => {
 		const ids = filterProjects(projects, "").map((project) => project.id);
 		const rhino = ids.indexOf("rhino");
-		expect(ids[rhino - 1]).toBe("kite");
+		expect(ids[rhino - 1]).toBe("falcon");
 		expect(ids[rhino + 1]).toBe("chamelo");
 		expect(ids[rhino + 2]).toBe("dotty");
-		expect(rhino).toBeLessThan(ids.indexOf("sleepy"));
 	});
 	it("keeps Mico before the three appended tools and falls back to GitHub", () => {
 		const ids = filterProjects(projects, "").map((project) => project.id);

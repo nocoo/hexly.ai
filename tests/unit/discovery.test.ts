@@ -91,7 +91,9 @@ describe("crawler discovery documents", () => {
 		expect(text).toContain("https://lizheng.dev/en/");
 		expect(text).not.toContain("[Portfolio](https://hexly.ai/)");
 		expect(text).toContain("/projects/frogie");
-		expect(text).toContain(frogie.description.zh);
+		expect(text).toContain(
+			projects.find((project) => project.id === "firefly")?.description.zh,
+		);
 		expect(text).toContain("/sitemap.xml");
 		expect(text).toContain("/data/projects.json");
 		expect(text).toContain("/api/share.json");
@@ -136,7 +138,7 @@ describe("crawler discovery documents", () => {
 		expect(home.canonical).toBe("https://hexly.ai/");
 		expect(home.heading).toBe(homeHeading);
 		expect(home.bodyHtml).toContain("<h1>");
-		expect(home.bodyHtml).toContain("Frogie");
+		expect(home.bodyHtml).toContain("Firefly");
 		expect(home.bodyHtml).toContain("https://lizheng.me/en/");
 		expect(home.jsonLd).toMatchObject({
 			"@graph": [{ "@type": "WebSite" }, { "@type": "CollectionPage" }],
