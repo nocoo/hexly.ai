@@ -1,5 +1,13 @@
 # Retrospective
 
+## 2026-11-14: A conflict-free pull still contained dependency drift
+
+The incoming dependency commits merged without text conflicts, but upgraded the main Remotion packages to `4.0.543` while leaving the remaining family overrides at `4.0.539`. Biome's CLI also advanced to `2.6.7` while its schema stayed at `2.6.6`. A new declaration-alignment test reproduced the Remotion mismatch before correction. The merge now keeps the family on the incoming core version and checks both Remotion pins and the Biome schema in L1.
+
+The company mirror returned 404 for the new tarballs; the approved Tencent mirror had the exact versions. Its temporary resolver URLs were removed without changing integrity fields, and a subsequent frozen install preserved the lockfile hash. An initial library-source lookup also assumed root-level dependencies and failed; resolve workspace-owned packages from that workspace's manifest with `createRequire` before inspecting their files. A first lockfile probe also treated the nested key `@remotion/bundler/esbuild` as a Remotion package; classify the resolved package name in the tuple, not its installation-path key, before asserting family versions.
+
+The merge sweep passed all assertions but its first L4 teardown reported `EPERM` from the process-group liveness probe. All isolated ports were released; a separate 97-test browser rerun completed without the warning. The guarded temporary state `hexly-test-ddNdVi` remains preserved because a manual read-only SQLite marker check returned `SQLITE_CANTOPEN`. Do not bypass the marker or interpret `EPERM` as an absent process. Asset hard links also caused `lsof +D` to list the existing daily-dev processes, so those were not treated as owned test children or stopped. Diagnosing that intermittent teardown is separate from the dependency merge.
+
 ## 2026-11-13: Technical completion did not establish the visual direction
 
 The four Three.js objects passed the runtime, accessibility and lifecycle checks, but the owner rejected the visual result. Building every page before obtaining acceptance of one representative visual expanded an unaccepted direction. Remove that implementation rather than retaining it as a hidden fallback. The next artwork pass starts with one untouched homepage image in a clearly different flat editorial style; wait for its exact-byte approval before processing or extending the direction to the other pages.
