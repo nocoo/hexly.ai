@@ -30,6 +30,10 @@
 
 - update active fixture from frogie to pew and firefly ([0e8ce5d](https://github.com/nocoo/hexly.ai/commit/0e8ce5dabe28286463d740c3462f2656c179f1b0))
 
+### Fixes
+
+- clean unregistered og entries and publish archived social cards ([5163bbf](https://github.com/nocoo/hexly.ai/commit/5163bbf7477717717acd5d375cb4e067fba77df0))
+
 ## [1.8.2] - 2026-11-12
 
 ### Features
