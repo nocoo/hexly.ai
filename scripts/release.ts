@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -12,9 +13,20 @@ import {
 
 const repository = "nocoo/hexly.ai";
 const options = releaseOptions(process.argv.slice(2));
+const releaseEnv = (() => {
+	const env = { ...process.env };
+	if (env.GH_CONFIG_DIR && !existsSync(env.GH_CONFIG_DIR)) {
+		delete env.GH_CONFIG_DIR;
+	}
+	return env;
+})();
 
 async function output(...command: string[]) {
-	const process = Bun.spawn(command, { stdout: "pipe", stderr: "pipe" });
+	const process = Bun.spawn(command, {
+		stdout: "pipe",
+		stderr: "pipe",
+		env: releaseEnv,
+	});
 	const [stdout, stderr, code] = await Promise.all([
 		new Response(process.stdout).text(),
 		new Response(process.stderr).text(),
@@ -28,6 +40,7 @@ async function run(...command: string[]) {
 	const code = await Bun.spawn(command, {
 		stdout: "inherit",
 		stderr: "inherit",
+		env: releaseEnv,
 	}).exited;
 	if (code !== 0) throw new Error(`${command.join(" ")} failed (${code}).`);
 }
