@@ -912,11 +912,6 @@ select.control-select optgroup {
 }
 
 @media (max-width: 1000px) {
-	.site-header {
-		background: color-mix(in srgb, var(--page) 86%, transparent);
-		-webkit-backdrop-filter: blur(16px) saturate(150%);
-		backdrop-filter: blur(16px) saturate(150%);
-	}
 	.site-header-inner {
 		grid-template-columns: minmax(0, 1fr) auto;
 		grid-template-rows: var(--site-topbar-height);
@@ -988,8 +983,8 @@ select.control-select optgroup {
 			rgba(20, 26, 22, 0.38),
 			rgba(20, 26, 22, 0.18)
 		);
-		-webkit-backdrop-filter: blur(8px) saturate(120%);
-		backdrop-filter: blur(8px) saturate(120%);
+		-webkit-backdrop-filter: blur(10px) saturate(120%);
+		backdrop-filter: blur(10px) saturate(120%);
 		transition:
 			opacity 220ms cubic-bezier(0.22, 1, 0.36, 1),
 			display 220ms allow-discrete;
@@ -1029,20 +1024,13 @@ select.control-select optgroup {
 		padding: var(--space-16);
 		border-radius: var(--radius-panel);
 		background:
-			linear-gradient(
-				165deg,
-				color-mix(in srgb, var(--surface) 90%, rgba(255, 255, 255, 0.65)),
-				color-mix(in srgb, var(--page) 86%, transparent)
-			),
+			linear-gradient(180deg, var(--surface) 0%, var(--page) 100%),
 			var(--control-grain);
-		-webkit-backdrop-filter: blur(24px) saturate(180%);
-		backdrop-filter: blur(24px) saturate(180%);
-		border: 1px solid
-			color-mix(in srgb, var(--line) 80%, rgba(255, 255, 255, 0.7));
+		border: 1px solid var(--line);
 		box-shadow:
-			0 24px 48px -12px rgba(28, 38, 26, 0.22),
-			0 8px 20px -6px rgba(28, 38, 26, 0.12),
-			inset 0 1px 0 rgba(255, 255, 255, 0.75);
+			0 24px 48px -12px rgba(28, 38, 26, 0.24),
+			0 8px 20px -6px rgba(28, 38, 26, 0.14),
+			inset 0 1px 0 rgba(255, 255, 255, 0.8);
 		opacity: 0;
 		pointer-events: none;
 		transform-origin: top right;
@@ -1054,21 +1042,13 @@ select.control-select optgroup {
 	}
 	[data-theme="dark"] .site-header-nav-drawer {
 		background:
-			linear-gradient(
-				165deg,
-				color-mix(in srgb, var(--surface) 88%, rgba(255, 255, 255, 0.06)),
-				color-mix(in srgb, var(--page) 84%, transparent)
-			),
+			linear-gradient(180deg, var(--surface) 0%, var(--page) 100%),
 			var(--control-grain);
-		border-color: color-mix(
-			in srgb,
-			var(--line) 85%,
-			rgba(255, 255, 255, 0.14)
-		);
+		border-color: var(--line);
 		box-shadow:
-			0 28px 56px -12px rgba(0, 0, 0, 0.68),
-			0 12px 24px -6px rgba(0, 0, 0, 0.46),
-			inset 0 1px 0 rgba(255, 255, 255, 0.1);
+			0 28px 56px -12px rgba(0, 0, 0, 0.72),
+			0 12px 24px -6px rgba(0, 0, 0, 0.5),
+			inset 0 1px 0 rgba(255, 255, 255, 0.08);
 	}
 	.site-header-nav-drawer[data-open="true"] {
 		display: flex;
@@ -1095,8 +1075,7 @@ select.control-select optgroup {
 		width: 100%;
 		padding: var(--space-4);
 		border-radius: var(--radius-group);
-		background: color-mix(in srgb, var(--control-well) 76%, transparent)
-			var(--control-grain);
+		background: var(--control-well) var(--control-grain);
 		box-shadow: var(--control-recess);
 	}
 	.site-header-nav-drawer .view-links button {
@@ -1154,8 +1133,8 @@ select.control-select optgroup {
 		min-height: 44px;
 		padding: 0 var(--space-12);
 		border-radius: var(--radius-control);
-		background: color-mix(in srgb, var(--control-well) 52%, transparent);
-		border: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+		background: var(--control-well);
+		border: 1px solid var(--line);
 		font-size: 12px;
 		font-weight: 500;
 		transition:
@@ -1188,8 +1167,9 @@ select.control-select optgroup {
 		opacity: 1;
 	}
 	.site-header-nav-drawer .surface-links a[aria-current] {
-		background: color-mix(in srgb, var(--accent) 12%, var(--control-selected));
-		border-color: color-mix(in srgb, var(--accent) 48%, var(--line));
+		background: var(--control-selected);
+		border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+		box-shadow: var(--control-relief);
 		color: var(--ink);
 	}
 	.site-header-nav-drawer .surface-links a[aria-current]::after {
