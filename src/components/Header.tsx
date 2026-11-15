@@ -153,7 +153,8 @@ export function Header({
 							title={menuOpen ? t.closeMenu : t.openMenu}
 							onClick={() => setMenuOpen((open) => !open)}
 						>
-							<Icon name={menuOpen ? "close" : "menu"} />
+							<Icon name="menu" className="menu-icon-bars" />
+							<Icon name="close" className="menu-icon-close" />
 						</button>
 					</div>
 				</div>

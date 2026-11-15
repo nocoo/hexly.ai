@@ -11,7 +11,11 @@ test("keeps native-size marks and navigation separate at intermediate widths", a
 	await expect(page.locator(".brand-page")).toBeVisible();
 	for (const width of [601, 640, 768, 1024, 1200, 1288]) {
 		await page.setViewportSize({ width, height: 1000 });
-		if (width <= 1000) {
+		if (
+			width <= 1000 &&
+			(await page.locator(".menu-toggle").getAttribute("aria-expanded")) !==
+				"true"
+		) {
 			await page.locator(".menu-toggle").click();
 		}
 		const geometry = await page.evaluate(() => {
@@ -46,9 +50,6 @@ test("keeps native-size marks and navigation separate at intermediate widths", a
 		expect(geometry.marks.every(Boolean), `${width}px mark containment`).toBe(
 			true,
 		);
-		if (width <= 1000) {
-			await page.locator(".menu-toggle").click();
-		}
 	}
 });
 
