@@ -1,0 +1,20 @@
+{
+	"startedAt": "2026-11-15T03:25:12.880786+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/generations",
+	"method": "POST",
+	"contentType": "application/json",
+	"parameters": {
+		"model": "gpt-image-2.5-sunburst",
+		"size": "2048x1536",
+		"quality": "high",
+		"n": 1,
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "91c84cbf6671fa45958e62c290c14fe9e4a14fb06a3ad19667fccf53f2490b36",
+	"images": [],
+	"tool": "artwork/logo-family/tools/generate_azure.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}
