@@ -3,6 +3,7 @@ import { agentGuide } from "../model/agent-guide";
 import type { Locale, Project } from "../model/project";
 import { BrandMark, BrandWordmark } from "./BrandIdentity";
 import { CopyButton } from "./CopyButton";
+import { HeroArtwork } from "./HeroArtwork";
 import { PageHero } from "./PageHero";
 import "../styles/brand-page.css";
 
@@ -33,63 +34,14 @@ export function BrandPage({
 				}
 				description={t.description}
 				artwork={
-					<div className="hero-art hero-art-brand" aria-hidden="true">
-						<span className="orbit orbit-one" />
-						<span className="orbit orbit-two" />
-						<span className="orbit orbit-three" />
-						<div className="brand-hero-specimen">
-							<svg viewBox="0 0 160 160" width="160" height="160">
-								<title>Hexly mark grid</title>
-								<line
-									x1="80"
-									y1="8"
-									x2="80"
-									y2="152"
-									className="brand-hero-guide"
-								/>
-								<line
-									x1="8"
-									y1="80"
-									x2="152"
-									y2="80"
-									className="brand-hero-guide"
-								/>
-								<rect
-									x="24"
-									y="24"
-									width="112"
-									height="112"
-									rx="26"
-									className="brand-hero-frame"
-								/>
-								<rect
-									x="42"
-									y="42"
-									width="76"
-									height="76"
-									rx="18"
-									className="brand-hero-inset"
-								/>
-								<rect
-									x="62"
-									y="62"
-									width="36"
-									height="36"
-									rx="9"
-									className="brand-hero-core"
-								/>
-							</svg>
-							<div className="brand-hero-swatches">
-								<span className="swatch-paper" />
-								<span className="swatch-ivory" />
-								<span className="swatch-terracotta" />
-							</div>
-						</div>
-						<span className="hero-art-caption">
-							<span />
-							{t.heroNote}
-							<span />
-						</span>
+					<div
+						className="hero-art hero-art-diorama hero-art-brand-diorama"
+						aria-hidden="true"
+					>
+						<HeroArtwork
+							page="brand"
+							alt="Hexly visual system paper specimen"
+						/>
 					</div>
 				}
 			>

@@ -361,7 +361,7 @@ export async function inventory() {
 		files,
 	};
 	await mkdir(dirname(inventoryPath), { recursive: true });
-	await writeFile(inventoryPath, `${JSON.stringify(document, null, 2)}\n`);
+	await writeFile(inventoryPath, `${JSON.stringify(document, null, "\t")}\n`);
 	const routes = Object.fromEntries(
 		files.flatMap((file) =>
 			[file.path, ...(file.aliases ?? [])]

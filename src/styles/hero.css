@@ -71,6 +71,40 @@
 	margin-right: var(--space-8);
 	isolation: isolate;
 }
+.hero-art-diorama {
+	position: relative;
+	width: 100%;
+	max-width: 580px;
+	height: 384px;
+	margin-right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.hero-art-diorama picture {
+	display: contents;
+}
+.hero-art-diorama .hero-candidate-backdrop {
+	position: relative;
+	inset: auto;
+	width: 100%;
+	height: auto;
+	max-height: 420px;
+	object-fit: contain;
+	object-position: right center;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 1;
+	mix-blend-mode: multiply;
+	filter: contrast(1.04);
+	mask-image: none;
+	-webkit-mask-image: none;
+}
+[data-theme="dark"] .hero-art-diorama .hero-candidate-backdrop {
+	mix-blend-mode: normal;
+	opacity: 0.94;
+	filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.5));
+}
 .orbit {
 	position: absolute;
 	border: 1px solid color-mix(in srgb, var(--muted) 10%, transparent);

@@ -4,8 +4,8 @@ import { categories, categoryCounts } from "../model/catalogue";
 import type { DirectoryState } from "../model/navigation";
 import { navigationPath } from "../model/navigation";
 import type { Locale, Project } from "../model/project";
+import { HeroArtwork } from "./HeroArtwork";
 import { Icon } from "./Icon";
-import { Logo } from "./Logo";
 import { PageHero } from "./PageHero";
 import { ProjectCard } from "./ProjectCard";
 import { SearchField } from "./SearchField";
@@ -30,9 +30,6 @@ export function Directory({
 	const t = copy[locale];
 	const counts = categoryCounts(projects);
 	const logos = state.view === "logos";
-	const faces = projects
-		.filter((project) => project.family && !project.archived)
-		.slice(0, 6);
 	return (
 		<main id="main-content" className="shell directory-main">
 			<PageHero
@@ -50,26 +47,8 @@ export function Directory({
 				}
 				description={t.heroDescription}
 				artwork={
-					<div className="hero-art">
-						<span className="orbit orbit-one" aria-hidden="true" />
-						<span className="orbit orbit-two" aria-hidden="true" />
-						<span className="orbit orbit-three" aria-hidden="true" />
-						{faces.map((project, index) => (
-							<button
-								type="button"
-								className={`floating-logo float-${index}`}
-								key={project.id}
-								aria-label={`${t.viewProject}: ${project.title}`}
-								onClick={() => onProject(project.id)}
-							>
-								<Logo project={project} size={index < 2 ? 104 : 80} eager />
-							</button>
-						))}
-						<span className="hero-art-caption">
-							<span />
-							{t.heroNote}
-							<span />
-						</span>
+					<div className="hero-art hero-art-candidate hero-art-diorama">
+						<HeroArtwork page="projects" alt="Paper diorama artwork" />
 					</div>
 				}
 			/>

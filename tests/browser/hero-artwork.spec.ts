@@ -1,6 +1,6 @@
 import { expect, test } from "./fixtures";
 
-test("removes retired hero renderers and keeps the original project links", async ({
+test("removes retired hero renderers and serves approved page artworks", async ({
 	page,
 }) => {
 	const retiredRequests: string[] = [];
@@ -19,13 +19,11 @@ test("removes retired hero renderers and keeps the original project links", asyn
 		);
 		const hero = page.locator(".hero");
 		await expect(hero).toBeVisible();
-		await expect(
-			hero.locator("canvas, [data-hero-object], .hero-artwork"),
-		).toHaveCount(0);
-		if (path !== "/") await expect(hero.locator("img")).toHaveCount(0);
+		await expect(hero.locator("canvas, [data-hero-object]")).toHaveCount(0);
+		await expect(hero.locator(".hero-candidate-backdrop")).toHaveCount(1);
 	}
-	await expect(page.locator(".floating-logo")).toHaveCount(6);
-	await page.locator(".floating-logo").first().click();
+	await page.goto("/");
+	await page.locator(".project-card").first().click();
 	await expect(page).toHaveURL(/\/projects\/[^/]+$/);
 	expect(retiredRequests).toEqual([]);
 });

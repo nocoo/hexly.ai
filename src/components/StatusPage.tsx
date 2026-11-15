@@ -23,6 +23,7 @@ import {
 	statusSites,
 } from "../model/status";
 import { formatStatusTime } from "../model/time-zone";
+import { HeroArtwork } from "./HeroArtwork";
 import { Icon } from "./Icon";
 import { Logo } from "./Logo";
 import { PageHero } from "./PageHero";
@@ -446,39 +447,14 @@ export function StatusPage({
 				}
 				description={t.description}
 				artwork={
-					<div className="hero-art hero-art-status" aria-hidden="true">
-						<span className="orbit orbit-one" />
-						<span className="orbit orbit-two" />
-						<span className="orbit orbit-three" />
-						<div className="status-hero-pulse">
-							<div className="status-hero-nodes">
-								<span className="node-good" />
-								<span className="node-good" />
-								<span className="node-accent" />
-							</div>
-							<svg viewBox="0 0 180 64" width="180" height="64">
-								<title>Network pulse</title>
-								<polyline
-									points="6,42 36,42 50,24 64,50 82,16 98,46 116,32 132,42 174,42"
-									className="status-hero-wave"
-								/>
-							</svg>
-							<div className="status-hero-bars">
-								<span />
-								<span />
-								<span />
-								<span />
-								<span />
-								<span />
-								<span />
-								<span />
-							</div>
-						</div>
-						<span className="hero-art-caption">
-							<span />
-							{t.heroNote}
-							<span />
-						</span>
+					<div
+						className="hero-art hero-art-diorama hero-art-status-diorama"
+						aria-hidden="true"
+					>
+						<HeroArtwork
+							page="status"
+							alt="Network pulse observatory paper diorama"
+						/>
 					</div>
 				}
 			>
