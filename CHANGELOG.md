@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.9.2] - 2026-11-15
+
+### Features
+
+- redesign mobile header navigation as single-row bar with drawer ([16b4bfd](https://github.com/nocoo/hexly.ai/commit/16b4bfdd45cc95fbe8c4988cc55d8460a6f1abfb))
+
+### Maintenance
+
+- replace mobile 2-row dropdown with animated slide-over panel ([30ce194](https://github.com/nocoo/hexly.ai/commit/30ce194c536c30d368c700df3c48d32c7dd09517))
+- craft glassmorphic mobile navigation panel with bidirectional animations ([8a7931e](https://github.com/nocoo/hexly.ai/commit/8a7931e307e4b37d18cd8b00f7a3de2dd4e40715))
+- make mobile navigation panel surface solid opaque ([3715549](https://github.com/nocoo/hexly.ai/commit/37155497739c9a461bb127c1afb815e9d3e9f327))
+
 ## [1.9.1] - 2026-11-15
 
 ### Maintenance
