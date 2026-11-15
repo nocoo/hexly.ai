@@ -59,7 +59,7 @@ for (const [name, options, locale, theme] of [
 ] as const) {
 	test.describe(`Brand ${name}`, () => {
 		test.use(options);
-		test("separates the identity library from templates and preserves its actual-size specimens", async ({
+		test("navigates to the identity library and preserves its actual-size specimens", async ({
 			page,
 		}) => {
 			const t = brandCopy[locale];
@@ -70,11 +70,8 @@ for (const [name, options, locale, theme] of [
 				},
 				{ locale, theme },
 			);
-			await page.goto("/templates");
-			await expect(page.locator(".video-intro")).toBeVisible();
+			await page.goto("/");
 			await expect(page.locator(".site-identity, .brand-page")).toHaveCount(0);
-			await expect(page.locator("[data-video-template]")).toHaveCount(5);
-			await expect(page.locator(".template-example")).toHaveCount(5);
 			const navigation = page.getByRole("navigation", {
 				name: copy[locale].views,
 			});
@@ -184,8 +181,7 @@ for (const [name, options, locale, theme] of [
 			await page.goBack();
 			await expect(page).toHaveURL(/\/brand$/);
 			await page.goBack();
-			await expect(page).toHaveURL(/\/templates$/);
-			await expect(page.locator(".video-intro")).toBeVisible();
+			await expect(page).toHaveURL(/\/$/);
 		});
 	});
 }

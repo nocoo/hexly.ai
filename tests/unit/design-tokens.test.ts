@@ -2,12 +2,9 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { expect, test } from "vitest";
 
-const styles = [
-	...readdirSync("src/styles")
-		.filter((name) => name.endsWith(".css"))
-		.map((name) => join("src/styles", name)),
-	"packages/video-kit/src/site.css",
-];
+const styles = readdirSync("src/styles")
+	.filter((name) => name.endsWith(".css"))
+	.map((name) => join("src/styles", name));
 
 const artworkSpacing = new Map([
 	["src/styles/base.css", new Set([".brand-grid"])],

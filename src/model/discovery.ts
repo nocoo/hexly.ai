@@ -8,13 +8,12 @@ const socialCards = socialCardsJson as {
 };
 
 import identity from "../data/projects/hexly-ai.json" with { type: "json" };
-import { agentGuide, agentGuidePath, standardOutros } from "./agent-guide";
+import { agentGuide, agentGuidePath } from "./agent-guide";
 import { assetUrl } from "./assets";
 import { filterProjects, isChromeWebStoreProject } from "./catalogue";
 import type { Locale, Project } from "./project";
 import { legacyRoute, siteOrigin } from "./routes";
 import { statusSites } from "./status";
-import { findVideo, videoEntries, videoManifest } from "./videos";
 
 export { siteOrigin } from "./routes";
 
@@ -179,8 +178,6 @@ export function pageForPath(
 		(legacyRoute(pathname)?.path ?? pathname).replace(/\/$/, "") || "/";
 	if (path === "/brand") return brandPage();
 	if (path === "/status") return statusPage(projects);
-	const video = /^\/templates(?:\/([a-z0-9]+(?:-[a-z0-9]+)*))?$/.exec(path);
-	if (video) return videosPage(video[1]);
 	if (path === "/logos") return galleryPage(projects);
 	const match = /^\/projects\/([a-z0-9]+(?:-[a-z0-9]+)*)$/.exec(path);
 	if (!match) return homePage(projects);
@@ -216,9 +213,7 @@ export function discoveryPages(projects: Project[]): DiscoveryPage[] {
 		homePage(projects),
 		galleryPage(projects),
 		statusPage(projects),
-		videosPage(),
 		brandPage(),
-		...videoEntries.map((entry) => videosPage(entry.id)),
 		...projects.map((project) => projectPage(project)),
 	];
 }
@@ -252,15 +247,12 @@ Public pages welcome search and AI crawlers. JavaScript is not required to read 
 
 ## Agent guides
 
-Every catalogue, project, template, brand and status page includes a copyable integration guide and a matching Markdown document, discoverable through an HTML alternate link.
+Every catalogue, project, brand and status page includes a copyable integration guide and a matching Markdown document, discoverable through an HTML alternate link.
 
 - [Catalogue guide](${siteOrigin}/agents/index.md)
 - [Identity gallery guide](${siteOrigin}/agents/logos.md)
-- [Templates and standard-outro guide](${siteOrigin}/agents/templates.md)
 - [Brand usage guide](${siteOrigin}/agents/brand.md)
 - [Status guide](${siteOrigin}/agents/status.md)
-
-Reuse the published standard outro MP4s directly across Hexly projects. They do not need to be regenerated or configured for each product. Existing Logo prompts are historical source records, not a requirement to recreate approved assets.
 
 Each project's guide also lists its current light/dark decorative surfaces and exact generation prompts. Catalogue \`brandTexture\` selects an independent texture version; \`brandKit.texture\` is the legacy fallback. Textures are Hexly campaign decoration and never replace or recolor official product identities. Reuse published assets instead of regenerating them.
 
@@ -270,8 +262,6 @@ Each project's guide also lists its current light/dark decorative surfaces and e
 - [Logo gallery](${siteOrigin}/logos): ${copy.en.galleryDescription}
 - [Brand](${siteOrigin}/brand): The Hexly mark at actual sizes, wordmark combinations and light/dark surfaces.
 - [Service status](${siteOrigin}/status): Live endpoint checks and seven days of history.
-- [Video Kit](${siteOrigin}/templates): Mix five openings, five content layouts and five endings in two Hexly themes; client previews and local video/PPTX/PDF exports.
-- [Standard outros](${siteOrigin}/templates#outros): Five ready-to-use, project-independent Hexly endings. Download and append the original MP4, or use the HTML-rendered 4K still in a deck. Light, silent; no regeneration needed.
 
 ${visible.map((project) => link(project, "en")).join("\n")}
 
@@ -281,8 +271,6 @@ ${visible.map((project) => link(project, "en")).join("\n")}
 - [Logo 图鉴](${siteOrigin}/logos): ${copy.zh.galleryDescription}
 - [品牌](${siteOrigin}/brand): Hexly 标志的实际尺寸、字标组合及明暗背景用法。
 - [服务状态](${siteOrigin}/status): 活跃网站的实时检查与最近七天记录。
-- [视频模板](${siteOrigin}/templates): 五种封面、正文与片尾自由组合，均有 Hexly 明暗主题；客户端预览、本地视频与 PPTX/PDF 导出。
-- [标准片尾](${siteOrigin}/templates#outros): 五个跨项目通用的 Hexly 片尾，直接拼接 MP4 或在幻灯片中使用 HTML 渲染的 4K 高清图，无需重新生成。均为浅色、无声。
 
 ${visible.map((project) => link(project, "zh")).join("\n")}
 
@@ -302,10 +290,7 @@ ${archived.map((project) => link(project, "en")).join("\n")}
 - [Crawler policy](${siteOrigin}/robots.txt)
 - [Project catalogue JSON](${siteOrigin}/data/projects.json)
 - [Share metadata API](${siteOrigin}/api/share.json)
-- [Video manifest](${siteOrigin}/templates/manifest.json)
-- [Standard outro files and provenance](${siteOrigin}/templates/outros.json)
 - [Project texture manifest schema](${siteOrigin}/textures/schema-v1.json)
-- [Legacy file index](${siteOrigin}/templates/examples.json)
 `;
 }
 
@@ -504,59 +489,6 @@ function statusPage(projects: Project[]): DiscoveryPage {
 	};
 }
 
-function videosPage(id?: string): DiscoveryPage {
-	const entry = findVideo(id);
-	const path = entry ? `/templates/${entry.id}` : "/templates";
-	const title = entry
-		? `${entry.title} — Hexly Video Kit`
-		: "Templates — hexly.ai";
-	const description =
-		entry?.description.en ??
-		"Five openings, five content layouts, five endings. Compose any Hexly project in light or dark, as a video or a deck.";
-	const canonical = absoluteUrl(path);
-	const image = socialImage();
-	const items = (entry ? [entry] : videoEntries)
-		.map(
-			(item) =>
-				`<li><a href="/templates/${item.id}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.description.en)}</li>`,
-		)
-		.join("");
-	const outros = standardOutros.outros
-		.map(
-			(example) =>
-				`<li><a href="${escapeHtml(example.video.src)}">${escapeHtml(example.video.title.en)} — MP4</a> · <a href="${escapeHtml(example.still.src)}">4K still</a></li>`,
-		)
-		.join("");
-	return {
-		path,
-		title,
-		description,
-		canonical,
-		image,
-		imageAlt: "hexly.ai mark on warm paper",
-		heading: entry?.title ?? "Templates.",
-		bodyHtml: snapshotHtml(
-			entry?.title ?? "Templates.",
-			description,
-			path,
-			[],
-		).replace(
-			"</main>",
-			`<nav><a href="/templates">All components</a></nav><ul>${items}</ul><p>Interactive Video and Deck previews. Two themes. Independent opening, content and ending selections. Export a project setup for local MP4, PowerPoint and PDF rendering.</p><section id="outros"><span id="examples"></span><h2>Standard outros</h2><p>Five ready-to-use Hexly brand endings for any project. Download and append the original clip; no setup or regeneration needed. Light, silent, six seconds, with HTML-rendered 4K stills for decks.</p><ul>${outros}</ul><a href="/templates/outros.json">Standard files and provenance</a></section><p><a href="/templates/manifest.json">Public manifest</a> · <a href="/templates/film-v2.schema.json">Project schema</a></p></main>`,
-		),
-		jsonLd: {
-			"@context": "https://schema.org",
-			"@type": entry ? "CreativeWork" : "CollectionPage",
-			url: canonical,
-			name: title,
-			description,
-			image,
-			isPartOf: { "@id": `${siteOrigin}/#website` },
-			...(entry ? { version: videoManifest.kitVersion } : {}),
-		},
-	};
-}
-
 function projectPage(project: Project): DiscoveryPage {
 	const path = `/projects/${project.id}`;
 	const canonical = absoluteUrl(path);
@@ -660,7 +592,7 @@ function snapshotHtml(
 	const brandHtml = project
 		? `<section id="brand"><h2>Brand &amp; assets</h2><img src="${escapeHtml(assetUrl(project.presentationIcon ? `${project.presentationIcon.root}/rounded-512.webp` : (project.family?.foreground.display ?? project.logo.display)))}" alt="${escapeHtml(project.title)} identity" width="512" height="512" loading="lazy" /><p><a href="${escapeHtml(assetUrl(project.logo.original))}">${project.logo.kind === "candidate" ? "Download review candidate" : "Download original"}</a> · <a href="${escapeHtml(project.logo.sourceUrl)}">Asset source</a>${project.logo.kind === "candidate" ? " · Source adoption pending" : ""}</p></section>`
 		: "";
-	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/templates">Templates</a> <a href="/brand">Brand</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
+	return `<main><h1>${escapeHtml(heading)}</h1><p>${escapeHtml(description)}</p><nav aria-label="Main navigation"><a href="/">Projects</a> <a href="/brand">Brand</a> <a href="/status">Status</a></nav><nav aria-label="Surfaces">${nav}</nav>${items}${mediaHtml}${overviewHtml}${brandHtml}</main>`;
 }
 
 function replaceMeta(

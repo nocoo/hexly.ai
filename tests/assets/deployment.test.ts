@@ -1,11 +1,9 @@
 import { readFileSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import manifest from "../../package.json";
-import { schemaDocuments } from "../../packages/video-kit/src/schema";
 import { verifyDeployment } from "../../scripts/verify-deployment";
 import identity from "../../src/data/projects/hexly-ai.json";
 import { readProjects } from "../../src/data/read-projects";
-import videos from "../../src/data/videos.json";
 import { statusTargets } from "../../src/model/status";
 
 const origin = new URL("https://deployment.example.test");
@@ -65,19 +63,6 @@ function serve(
 					headers: { "content-type": "text/css" },
 				});
 			if (path === logoPath) return new Response(logo);
-			if (path === "/templates/manifest.json") return Response.json(videos);
-			if (path === "/templates/film-v2.schema.json")
-				return Response.json(schemaDocuments()["film-v2.schema.json"]);
-			if (path === "/templates")
-				return new Response(
-					videos.templates.map((entry) => `/templates/${entry.id}`).join("\n"),
-				);
-			for (const entry of videos.templates) {
-				if (path === `/templates/${entry.id}`)
-					return new Response(
-						`<title>${entry.title} — Hexly Video Kit</title>`,
-					);
-			}
 			return new Response("Not found", { status: 404 });
 		}),
 	);
@@ -100,23 +85,8 @@ describe("production deployment verification", () => {
 				}),
 			message: "Production status target is missing: wooly",
 		},
-		{
-			path: "/templates/manifest.json",
-			response: () => Response.json({ ...videos, kitVersion: "0.0.0" }),
-			message: "Production video manifest does not match this release.",
-		},
-		{
-			path: "/templates/showcase",
-			response: () => new Response("<title>Directory</title>"),
-			message: "Video template page is missing: showcase",
-		},
-		{
-			path: "/templates/film-v2.schema.json",
-			response: () => Response.json({ properties: {} }),
-			message: "Video composition schema is missing.",
-		},
 	])(
-		"rejects incomplete published video/status assets at $path",
+		"rejects incomplete published status assets at $path",
 		async ({ path, response, message }) => {
 			serve((request) => (request === path ? response() : undefined));
 			await expect(

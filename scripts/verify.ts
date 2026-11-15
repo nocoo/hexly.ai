@@ -20,7 +20,6 @@ const commands = [
 	["bun", "run", "assets:prepare-test"],
 	["bun", "scripts/verify-assets.ts"],
 	["bun", "run", "social:check"],
-	["bun", "run", "video:check"],
 	["bun", "run", "typecheck"],
 	["bun", "run", "lint"],
 	["bun", "run", "check:isolation"],

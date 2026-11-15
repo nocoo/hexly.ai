@@ -1,12 +1,6 @@
 export type Locale = "en" | "zh";
 export type Theme = "light" | "dark";
-export type View =
-	| "directory"
-	| "logos"
-	| "project"
-	| "templates"
-	| "brand"
-	| "status";
+export type View = "directory" | "logos" | "project" | "brand" | "status";
 /** Stored product category. Archive state lives on the separate `archived` flag. */
 export type ProjectCategory =
 	| "ai"

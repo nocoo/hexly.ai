@@ -11,7 +11,7 @@ test("removes retired hero renderers and keeps the original project links", asyn
 		)
 			retiredRequests.push(request.url());
 	});
-	for (const path of ["/templates", "/brand", "/status", "/"]) {
+	for (const path of ["/brand", "/status", "/"]) {
 		await page.goto(path);
 		await expect(page.locator("html")).toHaveAttribute(
 			"data-app-ready",

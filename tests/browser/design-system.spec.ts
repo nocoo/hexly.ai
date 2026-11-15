@@ -25,15 +25,7 @@ for (const [width, theme, locale] of [
 			columns: string;
 			headingFits: boolean;
 		}[] = [];
-		for (const path of [
-			"/",
-			"/logos",
-			"/projects/pew",
-			"/templates",
-			"/brand",
-			"/templates/launch",
-			"/status",
-		]) {
+		for (const path of ["/", "/logos", "/projects/pew", "/brand", "/status"]) {
 			await test.step(path, async () => {
 				await page.goto(path);
 				await expect(page.locator("html")).toHaveAttribute(
@@ -41,10 +33,8 @@ for (const [width, theme, locale] of [
 					"true",
 				);
 				await expect(page.locator("main")).toBeVisible();
-				if (path.startsWith("/templates"))
-					await expect(page.locator(".videos-page")).toBeVisible();
 				await page.evaluate(() => document.fonts.ready);
-				if (["/", "/templates", "/brand", "/status"].includes(path)) {
+				if (["/", "/brand", "/status"].includes(path)) {
 					const hero = page.locator(".hero");
 					await expect(hero).toBeVisible();
 					heroLayouts.push(
@@ -134,7 +124,7 @@ for (const [width, theme, locale] of [
 					expect((await scanAccessibility(page)).violations).toEqual([]);
 			});
 		}
-		expect(heroLayouts).toHaveLength(4);
+		expect(heroLayouts).toHaveLength(3);
 		for (const hero of heroLayouts) expect(hero.headingFits).toBe(true);
 		if (width >= 651) {
 			for (const hero of heroLayouts) {

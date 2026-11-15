@@ -1,12 +1,4 @@
-import {
-	lazy,
-	Suspense,
-	useEffect,
-	useLayoutEffect,
-	useMemo,
-	useRef,
-	useState,
-} from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { BrandPage } from "./components/BrandPage";
 import { Directory } from "./components/Directory";
 import { Footer } from "./components/Footer";
@@ -33,12 +25,6 @@ import "./styles/gallery.css";
 import "./styles/status.css";
 import "./styles/projects.css";
 import "./styles/agents.css";
-
-const Templates = lazy(() =>
-	import("./components/Templates").then((module) => ({
-		default: module.Templates,
-	})),
-);
 
 type CatalogueState =
 	| { status: "loading" }
@@ -303,7 +289,6 @@ export function App() {
 			view: next,
 			category: "all",
 			query: "",
-			video: undefined,
 			anchor: undefined,
 		});
 		window.scrollTo({ top: 0, behavior: "instant" });
@@ -367,24 +352,6 @@ export function App() {
 				</main>
 			) : state.view === "brand" ? (
 				<BrandPage locale={locale} projects={projects} />
-			) : state.view === "templates" ? (
-				<Suspense
-					fallback={
-						<main id="main-content" className="shell">
-							<div className="empty-state" role="status">
-								{t.loading}
-							</div>
-						</main>
-					}
-				>
-					<Templates
-						key={state.videoProject ?? "hexly-ai"}
-						projects={projects}
-						state={state}
-						locale={locale}
-						onChange={change}
-					/>
-				</Suspense>
 			) : state.view === "status" ? (
 				<StatusPage
 					projects={projects}

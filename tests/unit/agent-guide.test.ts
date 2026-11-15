@@ -1,14 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
-import examples from "../../src/data/template-examples.json" with {
-	type: "json",
-};
-import {
-	agentGuide,
-	agentGuidePath,
-	outroInstructions,
-	standardOutros,
-} from "../../src/model/agent-guide";
+import { agentGuide, agentGuidePath } from "../../src/model/agent-guide";
 import { assetUrl } from "../../src/model/assets";
 import {
 	agentFiles,
@@ -89,9 +81,6 @@ describe("page-specific agent handoffs", () => {
 		expect(detail).toContain(
 			'href="/agents/projects/pew.md" title="Agent guide"',
 		);
-		expect(agentGuidePath("/templates/launch/?project=pew#outros")).toBe(
-			"/agents/templates/launch.md",
-		);
 		expect(llmsDocument(projects)).toContain("/agents/index.md");
 	});
 
@@ -136,51 +125,6 @@ describe("page-specific agent handoffs", () => {
 		expect(guide.body).not.toContain("Original project identity:");
 	});
 
-	it("reuses all five immutable endings across all templates without regeneration", () => {
-		expect(standardOutros).toMatchObject({
-			usage: "reuse-as-is",
-			projectIndependent: true,
-		});
-		expect(standardOutros.outros).toEqual(examples.examples);
-		for (const outro of standardOutros.outros) {
-			const text = outroInstructions(outro);
-			expect(text).toContain(outro.video.src);
-			expect(text).toContain(outro.video.sha256);
-			expect(text).toContain(outro.still.sha256);
-			expect(text).toContain(
-				"no project configuration or regeneration is required",
-			);
-			const page = pageForPath(`/templates/${outro.template}`, projects);
-			for (const other of standardOutros.outros)
-				expect(page.bodyHtml).toContain(other.video.src);
-			expect(page.bodyHtml).not.toContain("Finished examples");
-		}
-	});
-
-	it("copies actual composition choices while validating command arguments against the catalogue", () => {
-		const selected = agentGuide(
-			"/templates/launch?project=pew&theme=dark&opening=stack&ending=split&mode=deck",
-			projects,
-		).body;
-		expect(selected).toContain(
-			"--project pew --template launch --theme dark --opening stack --ending split --mode deck",
-		);
-		expect(selected).toContain("/templates/outros.json");
-		expect(agentGuide("/templates/launch", projects, "zh").body).toContain(
-			"--locale zh",
-		);
-		const defaults = agentGuide(
-			"/templates/missing?project=not-listed&theme=unknown&opening=unknown&ending=unknown",
-			projects,
-		).body;
-		expect(defaults).toContain(
-			"--project hexly-ai --template launch --theme light --opening signal --ending signature --mode video",
-		);
-		expect(agentGuide("/templates", projects).body).toContain(
-			"There are no published dark or intro MP4s",
-		);
-	});
-
 	it("describes monitoring semantics without inventing a live health result", () => {
 		const text = agentGuide("/status", projects).body;
 		expect(text).toContain("GET /api/status");
@@ -189,5 +133,13 @@ describe("page-specific agent handoffs", () => {
 		expect(text).toContain("UTC");
 		expect(text).toContain("login pages are never healthy");
 		expect(text).toContain("Local development uses labelled mock data");
+	});
+
+	it("builds catalogue and gallery guide paths and instructions", () => {
+		expect(agentGuidePath("/")).toBe("/agents/index.md");
+		expect(agentGuidePath("/logos?sort=az#brand")).toBe("/agents/logos.md");
+		const gallery = agentGuide("/logos", projects);
+		expect(gallery.path).toBe("/agents/logos.md");
+		expect(gallery.body).toContain("# Hexly identity gallery");
 	});
 });

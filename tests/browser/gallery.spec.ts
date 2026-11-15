@@ -60,9 +60,6 @@ test("organizes Xray without losing media, downloads or integration, and isolate
 	).toHaveAttribute("aria-selected", "true");
 	await page.getByRole("tab", { name: "Downloads & archive" }).press("End");
 	await expect(page.locator("#api .api-preview")).toBeVisible();
-	await expect(
-		page.getByRole("link", { name: "Try a template" }),
-	).toHaveAttribute("href", "/templates?project=xray");
 	await page.goBack();
 	await expect(page.locator("#panel-downloads")).toBeVisible();
 	await page.getByRole("button", { name: "Switch to Chinese" }).click();

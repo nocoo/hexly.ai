@@ -454,14 +454,13 @@ test("project tabs restore history, keep canonical metadata, and respect reduced
 		"href",
 		"https://hexly.ai/projects/frogie",
 	);
-	await page.getByRole("tab", { name: "Integration", exact: true }).click();
-	await page.getByRole("link", { name: "Try a template" }).click();
+	await page.getByRole("button", { name: "Brand", exact: true }).click();
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
 		"href",
-		"https://hexly.ai/templates",
+		"https://hexly.ai/brand",
 	);
 	await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
 		"content",
-		"https://hexly.ai/templates",
+		"https://hexly.ai/brand",
 	);
 });

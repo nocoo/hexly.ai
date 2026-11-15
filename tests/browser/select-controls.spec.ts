@@ -12,24 +12,11 @@ for (const [width, theme] of [
 			localStorage.setItem("hexly:locale", "en");
 			localStorage.setItem("hexly:theme", theme);
 		}, theme);
-		for (const path of [
-			"/templates",
-			"/templates/launch",
-			"/projects/pew",
-			"/status",
-		]) {
+		for (const path of ["/projects/pew", "/status"]) {
 			await test.step(path, async () => {
 				await page.goto(path);
 				const selects = page.locator("main select");
 				await expect(selects.first()).toBeVisible();
-				if (path.startsWith("/templates")) {
-					await page
-						.getByLabel("Your project", { exact: true })
-						.selectOption("microsoft-teams-send-as-workflow");
-					await expect(
-						page.getByLabel("Your project", { exact: true }),
-					).toHaveValue("microsoft-teams-send-as-workflow");
-				}
 				for (const select of await selects.all()) {
 					await expect(select).toHaveClass(/control-select/);
 					await expect(select).toHaveCSS("appearance", "none");

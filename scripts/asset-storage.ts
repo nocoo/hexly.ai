@@ -192,11 +192,7 @@ export function assetKey(path: string, sha256: string, project: string) {
 			);
 		return `projects/${project}/${pack[1]}/v${pack[3]}/${pack[4]}`;
 	}
-	if (
-		/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/|video-kit\/\d+\.\d+\.\d+\/)/.test(
-			path,
-		)
-	)
+	if (/^\/(?:brands\/[^/]+\/v\d+\.\d+\.\d+\/|logos\/family\/)/.test(path))
 		return path.slice(1);
 	const extension = extname(path).toLowerCase();
 	const stem = basename(path, extname(path))
@@ -236,8 +232,6 @@ export async function inventory() {
 	for (const source of filesIn("public"))
 		if (!appFiles.has(source.slice(7)))
 			sources.set(source, `/${source.slice(7)}`);
-	for (const source of filesIn("packages/video-kit/public"))
-		sources.set(source, source.slice("packages/video-kit/public".length));
 	for (const source of tracked)
 		if (binary.test(source)) sources.set(source, sources.get(source));
 	// These approved source directories also contain new, intentionally untracked originals.
@@ -344,9 +338,7 @@ export async function inventory() {
 										? `${dirname(path)}/provenance.json`
 										: path?.startsWith("/textures/")
 											? "docs/27-project-textures.md"
-											: path?.startsWith("/video-kit/")
-												? "packages/video-kit/brand-source.json"
-												: "docs/02-identity-rules.md",
+											: "docs/02-identity-rules.md",
 					},
 		);
 	}

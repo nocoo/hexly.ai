@@ -77,9 +77,7 @@ export default {
 			(legacy ||
 				path === "/logos" ||
 				path === "/brand" ||
-				/^\/projects\/[a-z0-9-]+$/.test(path) ||
-				path === "/templates" ||
-				path.startsWith("/templates/"))
+				/^\/projects\/[a-z0-9-]+$/.test(path))
 		) {
 			url.hostname = "hexly.ai";
 			url.protocol = "https:";

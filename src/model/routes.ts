@@ -10,8 +10,6 @@ export function legacyRoute(
 ): { path: string; anchor?: string } | undefined {
 	const path = pathname.replace(/\/+$/, "") || "/";
 	if (path === "/projects") return { path: "/" };
-	if (path === "/videos" || path.startsWith("/videos/"))
-		return { path: path.replace(/^\/videos/, "/templates") };
 	const logo = /^\/logos\/([a-z0-9]+(?:-[a-z0-9]+)*)$/.exec(path);
 	const slug = logo?.[1] ?? path.slice(1);
 	if (slug === "hermes-gateway-herdr")

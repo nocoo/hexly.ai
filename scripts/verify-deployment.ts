@@ -2,10 +2,8 @@ import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { setTimeout } from "node:timers/promises";
 import manifest from "../package.json";
-import { parseVideoManifest } from "../packages/video-kit/src/schema";
 import identity from "../src/data/projects/hexly-ai.json";
 import { readProjects } from "../src/data/read-projects";
-import videos from "../src/data/videos.json";
 import { parseStatusSnapshot, statusTargets } from "../src/model/status";
 
 export async function verifyDeployment(
@@ -96,41 +94,13 @@ export async function verifyDeployment(
 				"The production logo does not match the archived original.",
 			);
 		}
-		const collection = parseVideoManifest(
-			await (await get("/templates/manifest.json")).json(),
-		);
-		if (
-			JSON.stringify(collection) !== JSON.stringify(parseVideoManifest(videos))
-		)
-			throw new Error("Production video manifest does not match this release.");
-		const schema = (await (
-			await get("/templates/film-v2.schema.json")
-		).json()) as { properties?: Record<string, unknown> };
-		if (
-			!["theme", "opening", "ending"].every(
-				(key) => key in (schema.properties ?? {}),
-			)
-		)
-			throw new Error("Video composition schema is missing.");
-		const library = await (await get("/templates")).text();
-		await Promise.all(
-			collection.templates.map(async (template) => {
-				if (!library.includes(`/templates/${template.id}`))
-					throw new Error(`Video library is missing ${template.id}.`);
-				const html = await (await get(`/templates/${template.id}`)).text();
-				if (
-					!html.includes(`<title>${template.title} — Hexly Video Kit</title>`)
-				)
-					throw new Error(`Video template page is missing: ${template.id}`);
-			}),
-		);
 	}
 
 	for (let attempt = 1; attempt <= attempts; attempt++) {
 		try {
 			await checkRelease();
 			console.info(
-				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, catalogue status targets and live D1 feed, compiled assets, original logo, five video pages and composition schema.`,
+				`Verified ${origin.origin}: v${manifest.version}, revision ${revision}, document, catalogue status targets and live D1 feed, compiled assets, and original logo.`,
 			);
 			return;
 		} catch (error) {

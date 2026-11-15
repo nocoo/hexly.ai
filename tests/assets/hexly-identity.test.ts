@@ -3,7 +3,6 @@ import { readFile } from "node:fs/promises";
 import sharp from "sharp";
 import { describe, expect, it } from "vitest";
 import selected from "../../artwork/logo-family/hexly-ai/2026-11-13-02/selection.json";
-import video from "../../packages/video-kit/current-identity.json";
 import { readInventory } from "../../scripts/asset-storage";
 import identity from "../../src/data/projects/hexly-ai.json";
 
@@ -59,15 +58,6 @@ describe("adopted Hexly identity", () => {
 			}
 	});
 
-	it("ships the selected Video Kit derivative", async () => {
-		const original = await readFile(video.source);
-		expect(hash(original)).toBe(video.sha256);
-		expect(await readFile(`packages/video-kit/public${video.path}`)).toEqual(
-			original,
-		);
-		expect(video.path).toBe("/video-kit/1.2.0/hexly/mark.png");
-	});
-
 	it("requires publication receipts for every active identity delivery file", async () => {
 		const receipts = new Set(
 			(await readFile("docs/assets/publication.jsonl", "utf8"))
@@ -82,8 +72,7 @@ describe("adopted Hexly identity", () => {
 			(file) =>
 				file.source.startsWith(`public${identity.family.root}/`) ||
 				file.source.startsWith(`public${identity.presentationIcon.root}/`) ||
-				file.source === `public${identity.logo.original}` ||
-				file.source === `packages/video-kit/public${video.path}`,
+				file.source === `public${identity.logo.original}`,
 		);
 		expect(files.length).toBeGreaterThan(40);
 		for (const file of files)

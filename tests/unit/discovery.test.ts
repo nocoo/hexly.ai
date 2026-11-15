@@ -102,9 +102,8 @@ describe("crawler discovery documents", () => {
 			"<loc>https://hexly.ai/projects/uptime-kuma-skill</loc>",
 		);
 		expect(xml).toContain("<loc>https://hexly.ai/status</loc>");
-		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 10);
+		expect(xml.match(/<url>/g)?.length).toBe(projects.length + 4);
 		expect(xml).toContain("<loc>https://hexly.ai/brand</loc>");
-		expect(xml).toContain("<loc>https://hexly.ai/templates/showcase</loc>");
 		expect(xml).not.toContain("hexly.ai/videos");
 		expect(xml).not.toContain("hexly.ai/logos/");
 	});

@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { assertUnitPathAllowed } from "../tests/unit/asset-path-policy";
 
-const roots = ["tests/unit", "packages/video-kit/tests"];
+const roots = ["tests/unit"];
 
 const patterns: Array<{ re: RegExp; label: string }> = [
 	{
@@ -10,10 +10,6 @@ const patterns: Array<{ re: RegExp; label: string }> = [
 		label: "readFile on public/",
 	},
 	{ re: /sharp\([^)]*[`'"]public/, label: "sharp on public/" },
-	{
-		re: /sharp\([^)]*[`'"]packages\/video-kit\/public/,
-		label: "sharp on video-kit public",
-	},
 	{ re: /artwork\/logo-family\/[^'"`]+\/raw\//, label: "logo-family raw path" },
 ];
 

@@ -240,9 +240,6 @@ describe("the static asset gateway", () => {
 	it("moves legacy pages and manifests with their query, leaving logo files intact", async () => {
 		for (const [before, after] of [
 			["/logos/frogie?q=frog&sort=az", "/projects/frogie?q=frog&sort=az#brand"],
-			["/videos?project=pew", "/templates?project=pew"],
-			["/videos/launch?mode=deck", "/templates/launch?mode=deck"],
-			["/videos/manifest.json", "/templates/manifest.json"],
 		]) {
 			const response = await worker.fetch(
 				new Request(`https://hexly.ai${before}`),

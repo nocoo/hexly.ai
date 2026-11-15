@@ -134,5 +134,29 @@ describe("versioned brand identities", () => {
 			family: { ...project.family, series: "character" as const },
 		};
 		expect(brandSourceLabel(animal, "en")).toBe("GPT Image · Animal");
+		expect(
+			brandSourceLabel(
+				{ ...project, brandKit: { ...kit, method: undefined } },
+				"zh",
+			),
+		).toBe("原创矢量");
+		expect(
+			brandSourceLabel(
+				{
+					...project,
+					family: { ...project.family, method: "retained-original" },
+				},
+				"en",
+			),
+		).toBe("Retained original");
+		expect(
+			brandSourceLabel(
+				{
+					...project,
+					family: { ...project.family, method: "reference-adaptation" },
+				},
+				"zh",
+			),
+		).toBe("提供插画适配");
 	});
 });

@@ -6,7 +6,6 @@ import { defineConfig, type Plugin } from "vite";
 import manifest from "./package.json" with { type: "json" };
 import { projectApiAssets } from "./scripts/project-api-assets";
 import { siteAssets } from "./scripts/site-assets";
-import { videoSiteAssets } from "./scripts/video-site-assets";
 import { readProjects } from "./src/data/read-projects";
 import {
 	agentFiles,
@@ -209,7 +208,6 @@ export default defineConfig({
 		canonicalRoutes(),
 		catalogueAssets(),
 		projectApiAssets(),
-		videoSiteAssets(),
 		discoveryAssets(),
 		releaseMetadata(),
 	],

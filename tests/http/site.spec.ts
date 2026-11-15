@@ -165,16 +165,7 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	const map = await sitemap.text();
 	expect(map).toContain("<loc>https://hexly.ai/</loc>");
 	expect(map).toContain("<loc>https://hexly.ai/projects/frogie</loc>");
-	for (const path of [
-		"logos",
-		"templates",
-		"status",
-		"templates/launch",
-		"templates/essential",
-		"templates/showcase",
-		"templates/columns",
-		"templates/bento",
-	])
+	for (const path of ["logos", "status"])
 		expect(map).toContain(`<loc>https://hexly.ai/${path}</loc>`);
 	expect(map).not.toContain("https://hexly.ai/logos/");
 	expect(map).not.toContain("https://hexly.ai/videos");
@@ -247,18 +238,12 @@ test("publishes crawler documents, unique project HTML, and real icons", async (
 	}
 });
 
-test("redirects legacy pages and template metadata without touching archived logos", async ({
+test("redirects legacy pages without touching archived logos", async ({
 	request,
 }) => {
 	for (const [before, after] of [
 		["/logos/pew?q=pew", "/projects/pew?q=pew#brand"],
 		["/logos/hermes-gateway-herdr", "/projects/hermes-on-herdr#brand"],
-		["/videos?project=pew", "/templates?project=pew"],
-		[
-			"/videos/launch?project=pew&mode=deck",
-			"/templates/launch?project=pew&mode=deck",
-		],
-		["/videos/manifest.json", "/templates/manifest.json"],
 	] as const) {
 		const response = await request.get(before, { maxRedirects: 0 });
 		expect(response.status(), before).toBe(301);
@@ -268,9 +253,6 @@ test("redirects legacy pages and template metadata without touching archived log
 			before,
 		).toBe(after);
 	}
-	const oldManifest = await request.get("/videos/manifest.json");
-	expect(oldManifest.headers()["content-type"]).toContain("application/json");
-	expect((await oldManifest.json()).templates).toHaveLength(5);
 	const logo = await request.get("/logos/display/pew-64.webp", {
 		maxRedirects: 0,
 	});

@@ -416,9 +416,6 @@ jobs:
       - name: Verify share cards
         run: bun run social:check
 
-      - name: Verify Video Kit receipts
-        run: bun run video:check
-
       - name: Run asset suite
         run: bun run test:assets
 

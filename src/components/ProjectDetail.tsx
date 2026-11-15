@@ -526,29 +526,6 @@ export function ProjectDetail({
 								<h2>{t.integrationTab}</h2>
 								<p>{t.integrationDescription}</p>
 							</div>
-							<AssetLink
-								className="project-template-link"
-								href={`/templates?project=${project.id}`}
-								onClick={(event) => {
-									if (
-										event.button ||
-										event.metaKey ||
-										event.ctrlKey ||
-										event.shiftKey ||
-										event.altKey
-									)
-										return;
-									event.preventDefault();
-									onChange({
-										view: "templates",
-										video: undefined,
-										videoProject: project.id,
-									});
-								}}
-							>
-								{t.useTemplate}
-								<Icon name="arrow" />
-							</AssetLink>
 						</div>
 						{activeTab === "api" && (
 							<ProjectApi

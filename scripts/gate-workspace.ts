@@ -11,11 +11,7 @@ import { join } from "node:path";
 import process from "node:process";
 import { capture, GateFailure, runPhase } from "./gate-runtime";
 
-const manifests = [
-	"package.json",
-	"bun.lock",
-	"packages/video-kit/package.json",
-];
+const manifests = ["package.json", "bun.lock"];
 
 const material =
 	/\.(?:png|jpe?g|webp|avif|gif|ico|woff2?|ttf|otf|zip|pdf|pptx|mp3|wav|mp4|webm|mov|m4v|mkv|vtt)$/;
@@ -64,7 +60,6 @@ export function linkMaterials(repo: string, snapshot: string) {
 			"-z",
 			"--",
 			"public",
-			"packages/video-kit/public",
 			"artwork",
 			"src/fonts",
 			"docs/screenshots",

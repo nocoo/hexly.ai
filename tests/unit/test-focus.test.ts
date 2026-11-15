@@ -55,8 +55,5 @@ describe("test focus guard", () => {
 		expect(paths.every((path) => /\.(?:test|spec)\.tsx?$/.test(path))).toBe(
 			true,
 		);
-		expect(
-			paths.some((path) => path.startsWith("packages/video-kit/tests/")),
-		).toBe(true);
 	});
 });

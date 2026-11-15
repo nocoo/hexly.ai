@@ -50,15 +50,6 @@ export function Header({
 						</button>
 						<button
 							type="button"
-							onClick={() => onView("templates")}
-							aria-pressed={view === "templates"}
-							title={t.templates}
-						>
-							<Icon name="image" />
-							<span className="view-link-label">{t.templates}</span>
-						</button>
-						<button
-							type="button"
 							onClick={() => onView("brand")}
 							aria-pressed={view === "brand"}
 							title={t.brandPage}

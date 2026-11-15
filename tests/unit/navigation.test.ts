@@ -114,9 +114,6 @@ describe("shareable directory navigation", () => {
 			"/projects/frogie?category=archive#overview",
 		);
 		expect(
-			navigationPath(parse("/videos/launch", "?project=pew&mode=deck")),
-		).toBe("/templates/launch?project=pew&mode=deck");
-		expect(
 			parse("/projects/pew", "?media=invalid", "#../bad").anchor,
 		).toBeUndefined();
 		expect(navigationPath(parse("/logos", "?media=video&sort=az"))).toBe(

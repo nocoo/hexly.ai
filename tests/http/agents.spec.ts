@@ -26,7 +26,6 @@ test("advertises page-specific agent guides in HTML and the crawler index", asyn
 		["/logos", "/agents/logos.md"],
 		["/brand", "/agents/brand.md"],
 		["/projects/frogie", "/agents/projects/frogie.md"],
-		["/templates/launch", "/agents/templates/launch.md"],
 		["/status", "/agents/status.md"],
 	]) {
 		const response = await request.get(path ?? "/");
@@ -35,10 +34,9 @@ test("advertises page-specific agent guides in HTML and the crawler index", asyn
 			`<link rel="alternate" type="text/markdown" href="${guide}" title="Agent guide"`,
 		);
 	}
-	const head = await request.head("/agents/templates.md");
+	const head = await request.head("/agents/index.md");
 	expect(head.status()).toBe(200);
 	expect(await head.body()).toHaveLength(0);
 	const index = await (await request.get("/llms.txt")).text();
-	expect(index).toContain("/agents/templates.md");
-	expect(index).toContain("/templates/outros.json");
+	expect(index).toContain("/agents/index.md");
 });

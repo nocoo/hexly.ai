@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 import { readProjects } from "../../src/data/read-projects";
 import { catalogueProblems, parseCatalogue } from "../../src/model/catalogue";
 import type { Project } from "../../src/model/project";
-import { projectForVideo } from "../../src/model/videos";
 import { screenshotFixture, videoFixture } from "../fixtures/project-media";
 
 const projects = readProjects();
@@ -139,17 +138,7 @@ describe("optional project media", () => {
 			/Invalid project (media|videos|screenshots)/,
 		);
 	});
-	it("uses a project's localized screenshot across templates without requiring one", () => {
-		expect(projectForVideo(withMedia, "en").screenshot).toEqual({
-			src: screenshotFixture.src,
-			alt: screenshotFixture.alt.en,
-		});
-		expect(projectForVideo(withMedia, "zh").screenshot?.alt).toBe(
-			screenshotFixture.alt.zh,
-		);
-		expect(projectForVideo(base, "en").screenshot).toBeUndefined();
-	});
-	it("accepts uncropped portrait previews and uses the smaller asset in templates", () => {
+	it("accepts uncropped portrait previews", () => {
 		const shot = {
 			...screenshotFixture,
 			width: 900,
@@ -160,6 +149,5 @@ describe("optional project media", () => {
 		};
 		const project = { ...base, media: { screenshots: [shot] } } as Project;
 		expect(catalogueProblems([project])).toEqual([]);
-		expect(projectForVideo(project, "en").screenshot?.src).toBe(shot.preview);
 	});
 });
