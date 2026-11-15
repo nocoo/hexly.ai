@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.9.1] - 2026-11-15
+
+### Maintenance
+
+- archive four homepage hero studies ([4e73925](https://github.com/nocoo/hexly.ai/commit/4e73925a1269aca88d979cae71dd7f44be4db08a))
+- archive brand and status paper diorama studies ([8ba704d](https://github.com/nocoo/hexly.ai/commit/8ba704dfe27dff108d3b7020750b21db69854142))
+
+### Features
+
+- adopt paper diorama hero artworks for site headers ([a4c4a82](https://github.com/nocoo/hexly.ai/commit/a4c4a824ecdb70ecadab7868dcb5b2fd1bb4c0cc))
+
 ## [1.9.0] - 2026-11-15
 
 ### Maintenance
