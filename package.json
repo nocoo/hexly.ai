@@ -26,6 +26,7 @@
 		"typecheck": "bun run types && tsc --noEmit && tsc --noEmit -p tsconfig.worker.json && bun run --cwd packages/video-kit typecheck",
 		"lint": "biome check --error-on-warnings .",
 		"check:focus": "bun scripts/check-test-focus.ts",
+		"check:purity": "bun scripts/check-purity.ts",
 		"format": "biome check --write .",
 		"test": "vitest run",
 		"test:coverage": "bun scripts/check-unit-asset-access.ts && vitest run --coverage",

@@ -150,17 +150,11 @@ Small-size observation: ${family.sizeNote.en}
 		.map((color) => `| ${color.role} | \`${color.color}\` | ${color.source} |`)
 		.join("\n");
 	const overview = project.overview;
-	const snapshot = overview?.verified.snapshot;
 	const overviewEvidence = overview?.verified.revision
 		? `- [中文 README](${project.repository}/blob/main/${projectReadmePath(project, "zh")}) · [English README](${project.repository}/blob/main/${projectReadmePath(project, "en")})
 - Verified: ${overview.verified.date}; [source revision](${project.repository}/tree/${overview.verified.revision})
 - Source files: ${overview.verified.sources.map((path) => `[\`${path}\`](${project.repository}/blob/${overview.verified.revision}/${path})`).join(", ")}`
-		: overview && snapshot
-			? `- Verified: ${overview.verified.date}; [preserved local source snapshot](../../${snapshot.path})
-- Snapshot SHA-256: \`${snapshot.sha256}\`
-- Source files: ${overview.verified.sources.map((path) => `\`${path}\``).join(", ")}
-- The source repository has no inspected commit yet. README publication and immutable repository links are deferred.`
-			: "";
+		: "";
 	const overviewSection = overview
 		? `## Project goal
 
@@ -196,12 +190,12 @@ ${screenshots.map((shot) => `- ${shot.alt.en} / ${shot.alt.zh} (${shot.width} ×
 - ${isChromeWebStoreProject(project) ? "Install from Chrome Web Store" : "Website"}: ${project.website ? `[${project.website}](${project.website})` : project.category === "extensions" ? "Installable skill; navigation opens the repository." : "No current website verified; navigation opens the repository."}
 - Website evidence: ${project.websiteSource ?? "Not applicable"}
 - Category: ${project.category}
-- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${project.source.statusEvidence ? `../../${project.source.statusEvidence.path}` : snapshot ? `../../${snapshot.path}` : "../sources/repository-status-2026-09-06.json"})
+- Archived repository: ${project.archived ? "Yes" : "No"}; [repository status evidence](${project.source.statusEvidence ? `../../${project.source.statusEvidence.path}` : "../sources/repository-status-2026-09-06.json"})
 - English: ${project.description.en}
 - Chinese: ${project.description.zh}
 - Profile section: ${project.source.profileSection}
 - Profile revision: ${project.source.profileRevision ? `\`${project.source.profileRevision}\`` : "Not modified under this task's Hexly-only scope"}
-- Repository revision inspected: ${project.source.repositoryRevision ? `\`${project.source.repositoryRevision}\`` : "Initial source commit pending; see the local snapshot above"}
+- Repository revision inspected: ${project.source.repositoryRevision ? `\`${project.source.repositoryRevision}\`` : "Not recorded"}
 
 ${screenshotsSection}${overviewSection}## Current logo
 
@@ -232,7 +226,7 @@ ${iconSection}${textureSection}${kitSection}${familySection}${
 
 ${firstGeneratedIdentity ? "Preserve the approved raster, original colors, complete silhouette, and exact generation/finishing records. Supporting textures remain separate. Published versions are immutable; generated raster artwork is not native SVG." : generatedKit ? "Preserve the selected native square and wide compositions, original raster colors, transparent silhouette and one-point hierarchy. Do not crop, recolor or trace the generated animal and describe it as native SVG. Keep repeatable textures separate. Published brand versions and rejected candidates remain immutable." : collected ? "Preserve exact official Logo and family campaign bytes, original colors, source roles and historical packages. Decorative surface changes use independent texture versions; generated texture PNG/WebP files are not native SVG or new project identities." : kit ? "Preserve the original vector geometry, real Hexly tokens, outlined font and single-point hierarchy. Versioned published exports are immutable; revise into a new brand version. This commissioned scalable identity is separate from the faceted image-study workflow." : material ? "This is an owner-directed physical material or architectural identity. Preserve its physical materials, complete silhouette, selected camera and distinct tonal presentation. The animal-series drawing and accessory rules do not apply." : adapted ? "Preserve the owner-selected character illustration, its natural pose, native source resolution and documented transparent extraction. The lower jacket and forearm intentionally continue through the frame; the face, cap and raised ball remain inset." : toolWithoutStudy ? "Keep the current source mark and its provenance. For a future study, choose a recognizable physical object from the tool's actual function and follow the owner's material and composition direction. An animal or fragmented drawing is not required." : project.reference ? "This is a preferred family reference. Preserve its recognizable subject and balance of dominant color with multicolored details." : "Keep this asset as the phase-one baseline. A future family version should use a recognizable animal, one principal hue, and restrained multicolored geometric fragments."}
 
-${kit ? "Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide." : material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${kit ? " The source team integrates the exact published files and records its own adoption revision." : family ? " Preserve this reviewed composition and its archived predecessors." : snapshot ? " This entry uses the preserved local application artwork; any new study follows its own recorded review decision." : " No new logo is generated in phase one."}`
+${kit ? "Use the supplied transparent marks in app navigation and browser tabs, keeping presentation tiles separate. Preserve clear space and minimum sizes from the guide." : material || toolWithoutStudy ? "Keep the complete object uniformly inset from the actual rounded outline, with backgrounds, projected shadows and any external emission separate from the transparent foreground." : adapted ? "Keep the character’s lower frame entry, complete expressive features and a separate paper field. Never describe resampled exports as new native detail." : "Use head portraits for large animals and optionally full-body poses for small animals."} Compare artwork, app icon, sidebar, and favicon sizes in both themes before adopting a replacement.${kit ? " The source team integrates the exact published files and records its own adoption revision." : family ? " Preserve this reviewed composition and its archived predecessors." : " No new logo is generated in phase one."}`
 }
 `;
 	if (!values.project || values.project.includes(project.id))

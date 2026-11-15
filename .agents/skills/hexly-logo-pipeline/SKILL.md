@@ -23,7 +23,9 @@ Product type decides the series, never the repository name, domain or landing
 page. A CLI tool with a website stays a thing. Explicit owner art direction
 overrides the default, and every existing approved identity overrides everything.
 The catalogue keeps `family.series` at its current `material`/`character` values:
-this contract adds no data field.
+this contract adds no data field. Never copy external project source code,
+configuration files, or `.txt` code dumps into `artwork/` or `docs/sources/`
+during intake or adoption.
 
 ## Family constants
 

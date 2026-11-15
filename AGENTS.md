@@ -28,6 +28,7 @@ This file is the contract; hooks, CI and configuration enforce it. Raise weaker 
 - Keep canonical project-detail routes, redirects/discovery metadata, bilingual light/dark responsive views, keyboard behavior, browser-local time zones, preference persistence and shareable navigation aligned. Preserve all detailed gallery, screenshot, CTA and Agent-guide rules in the maintenance contract.
 - Original identity bytes, geometry, colors, licenses and provenance are authoritative. Hexly campaign styling does not redesign independent products. Exact-byte raw-image approval rules and documented product-type/model defaults remain in force. Archived projects receive basic support and are excluded from enrichment unless explicitly named.
 - Independently served materials belong to immutable R2 `hexlyai` / `https://h.no.mt` objects; code/SVG source and receipts stay in Git, working binaries hydrate from inventory. Never add movies/material binaries to Git or deployed assets, merge retired binary history back, or overwrite original/approved versions. Production assets remain below 20 MiB.
+- Keep `hexly.ai` free of external project source code, configuration files, and documentation copies (such as `package.json`, `wrangler.*`, `Package.swift`, `src/`, `worker/`, `AGENTS.md`, `README.md`, or `.txt` code dumps) under `docs/sources/` or `artwork/`. Only lightweight JSON provenance receipts and approved design/brand materials belong in those directories.
 - Shared 5/5/5 compositions live in the private Video Kit and consumers pin a published Git SHA. Project scripts/voices/scenes/films belong to consumers. Reuse the five immutable standard outros directly, preserve media receipts and concurrent handoffs, and pause if ownership of another writer's changes is unclear.
 - Keep models independent of React/browser globals, effects in App/views and routes thin. Preserve the detailed source-adoption, brand-kit, texture, release and complete-onboarding procedures linked above.
 
@@ -121,7 +122,7 @@ Daily `bun run dev` builds the target manifest, migrates/seeds local SQLite and 
 ## Operations / Release
 
 Authorized maintainers use `bun run release` from clean `main` (patch/minor/major/explicit version; `-- --dry-run` is read-only). It updates version/changelog, pushes main, waits for matching quality and Deploy jobs, verifies production, then creates the annotated tag/Release. Trusted CI triggers D1 migrations before deployment; normal publication follows that path.
-Check `https://hexly.ai` and `https://status.hexly.ai` with `bun run verify:production`; workers.dev and preview URLs remain disabled. Preserve immutable tags and the documented, completed history-reduction maps. Details: [release](docs/05-release.md), [recovery](docs/23-git-history-recovery.md), [maintenance](docs/29-project-maintenance.md).
+Check `https://hexly.ai` and `https://status.hexly.ai` with `bun run verify:production`; workers.dev and preview URLs remain disabled. Details: [release](docs/05-release.md), [maintenance](docs/29-project-maintenance.md).
 
 ## Retrospective
 

@@ -159,6 +159,11 @@ async function commit() {
 					timeout: 30,
 				},
 				{
+					label: "purity guard",
+					command: ["bun", "run", "check:purity"],
+					timeout: 30,
+				},
+				{
 					label: "types (S1)",
 					command: ["bun", "run", "typecheck"],
 					timeout: 120,
