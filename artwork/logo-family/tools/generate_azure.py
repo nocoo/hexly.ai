@@ -18,6 +18,25 @@ from urllib.request import Request, urlopen
 import uuid
 
 
+DEFAULT_CONFIG_PATH = Path.home() / ".config/system0/image-generation.json"
+
+
+def load_gpt_credentials():
+    """Load GPT Image endpoint and apiKey from ~/.config/system0/image-generation.json."""
+    override = os.environ.get("SYSTEM0_IMAGE_CONFIG", "").strip()
+    path = Path(override).expanduser() if override else DEFAULT_CONFIG_PATH
+    if not path.is_file():
+        return "", ""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return "", ""
+    gpt = data.get("gpt") if isinstance(data, dict) else None
+    if not isinstance(gpt, dict):
+        return "", ""
+    return str(gpt.get("endpoint", "")).strip().rstrip("/"), str(gpt.get("apiKey", "")).strip()
+
+
 def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent="\t") + "\n")
 
@@ -44,11 +63,13 @@ def main():
     if any(path.exists() for path in [request_path, response_path, review_path, output_path]):
         parser.error("Use a new study directory; previous requests are immutable.")
     prompt = prompt_path.read_text()
-    endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT", "").rstrip("/")
-    api_key = os.environ.get("AZURE_OPENAI_API_KEY", "")
+    endpoint, api_key = load_gpt_credentials()
     endpoint_parts = urlsplit(endpoint)
     if not api_key or not endpoint:
-        parser.error("Supply AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY through direnv.")
+        parser.error(
+            "Image generation is not supported on this machine "
+            "(missing gpt.endpoint or gpt.apiKey in ~/.config/system0/image-generation.json)."
+        )
     if endpoint_parts.scheme != "https" or not endpoint.endswith("/openai/v1"):
         parser.error("Expected the configured HTTPS Azure OpenAI v1 endpoint.")
     width, height = (int(value) for value in args.size.split("x"))

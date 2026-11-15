@@ -71,15 +71,16 @@ hashes. Reference numbering in the prompt must match the submitted order.
 
 ### 3. Generate
 
-Credentials and the endpoint contract live in the Workflow
-`agi-image-generation` skill at `../workflow/agents/skills/agi-image-generation/SKILL.md`,
-read from the hexly.ai repository root.
+Credentials and the endpoint contract live in the installed `system0`
+`image-generation-gpt` skill (`~/.agents/skills/image-generation-gpt/SKILL.md`),
+with local credentials in `~/.config/system0/image-generation.json`. If that file
+or its `gpt` credentials are absent on the current machine, image generation is
+not supported there and the helper exits with a clear failure.
 The helper is `artwork/logo-family/tools/generate_azure.py`; the current model
 policy is `gpt-image-2.5-sunburst`, passed explicitly.
 
 ```bash
-direnv exec /absolute/path/to/workflow \
-  python3 /absolute/path/to/hexly.ai/artwork/logo-family/tools/generate_azure.py \
+python3 /absolute/path/to/hexly.ai/artwork/logo-family/tools/generate_azure.py \
   --run-dir /absolute/path/to/hexly.ai/artwork/logo-family/<project>/<run> \
   --image /absolute/path/to/<liked-original>.png \
   --image /absolute/path/to/hexly.ai/artwork/logo-family/references/ref01.jpeg \

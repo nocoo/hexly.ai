@@ -79,8 +79,10 @@ construction; a correct subject in a foreign construction still reads wrong.
 
 ## Generate and retain the evidence
 
-- Read the current Workflow `agi-image-generation` skill from the repository
-  root at `../workflow/agents/skills/agi-image-generation/SKILL.md`.
+- Read the current `system0` `image-generation-gpt` skill at
+  `~/.agents/skills/image-generation-gpt/SKILL.md` (credentials live in
+  `~/.config/system0/image-generation.json`; if absent, image generation is not
+  supported on that machine).
   The owner selected **`gpt-image-2.5-flare` for decorative textures**;
   this agreement persists. Logos/primary identities use Sunburst in a separate
   task. Do not add an unnecessary Sunburst pass to an approved Flare surface.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the unchanged Workflow GPT Image helper with durable, sanitized receipts.
+"""Run the unchanged system0 GPT Image helper with durable, sanitized receipts.
 
 No automatic paid retries. Existing attempts are preserved; a new attempt must
 be selected explicitly after inspecting the failed/unknown outcome.
@@ -36,6 +36,21 @@ def save(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent="\t") + "\n")
 
 
+def load_gpt_credentials():
+    override = os.environ.get("SYSTEM0_IMAGE_CONFIG", "").strip()
+    path = Path(override).expanduser() if override else (Path.home() / ".config/system0/image-generation.json")
+    if not path.is_file():
+        return "", ""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return "", ""
+    gpt = data.get("gpt") if isinstance(data, dict) else None
+    if not isinstance(gpt, dict):
+        return "", ""
+    return str(gpt.get("endpoint", "")).strip().rstrip("/"), str(gpt.get("apiKey", "")).strip()
+
+
 def generate_one(row, theme, attempt):
     repo = Path.cwd()
     study = repo / row["study"]
@@ -49,11 +64,13 @@ def generate_one(row, theme, attempt):
               else (study / theme / "prompt.txt")).read_text()
     if not (run / "prompt.txt").exists():
         (run / "prompt.txt").write_text(prompt)
-    helper = repo.parent / "workflow/agents/skills/agi-image-generation/scripts/generate.py"
+    installed_helper = (Path.home() / ".agents/skills/image-generation-gpt/scripts/generate.py").resolve()
+    helper = installed_helper if installed_helper.is_file() else (repo.parent / "system/system0/skills/image-generation-gpt/scripts/generate.py")
     if not helper.is_file():
-        raise SystemExit("The actual Workflow helper is required; no substitute API.")
+        raise SystemExit("The actual system0 image-generation-gpt helper is required; no substitute API.")
+    system_repo = helper.parents[4]
     helper_revision = subprocess.check_output(
-        ["git", "-C", str(repo.parent / "workflow"), "log", "-1", "--format=%H", "--", "agents/skills/agi-image-generation/scripts/generate.py"],
+        ["git", "-C", str(system_repo), "log", "-1", "--format=%H", "--", "system0/skills/image-generation-gpt/scripts/generate.py"],
         text=True).strip()
     generation = runpy.run_path(str(helper))["generate_image"]
     native_open = urllib.request.urlopen
@@ -67,7 +84,7 @@ def generate_one(row, theme, attempt):
             "parameters": {k: v for k, v in payload.items() if k != "prompt"},
             "promptFile": "prompt.txt", "promptSha256": sha(payload["prompt"].encode()),
             "referenceImages": [], "attempt": attempt,
-            "helper": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+            "helper": "system0/skills/image-generation-gpt/scripts/generate.py",
             "helperRevision": helper_revision, "helperSha256": sha(helper.read_bytes()),
             "helperModified": False,
             "recorder": ".agents/skills/hexly-brand-textures/scripts/generate.py",
@@ -87,9 +104,10 @@ def generate_one(row, theme, attempt):
             except (ValueError, AttributeError):
                 detail = {}
             message = str(detail.get("message", ""))
-            for variable in ("AZURE_OPENAI_API_KEY", "AZURE_OPENAI_ENDPOINT"):
-                if os.environ.get(variable):
-                    message = message.replace(os.environ[variable], "[redacted configuration]")
+            endpoint, api_key = load_gpt_credentials()
+            for secret in (api_key, endpoint):
+                if secret:
+                    message = message.replace(secret, "[redacted configuration]")
             save(run / "response.json", {
                 "status": "http-error", "httpStatus": error.code,
                 "requestId": error.headers.get("x-request-id") or error.headers.get("apim-request-id"),
@@ -188,8 +206,12 @@ def main():
         print(json.dumps({"model": "gpt-image-2.5-flare", "projects": [r["id"] for r in rows],
                           "themes": themes, "attempt": args.attempt, "maximumRequests": len(tasks)}, indent=2))
         return
-    if not os.environ.get("AZURE_OPENAI_API_KEY") or not os.environ.get("AZURE_OPENAI_ENDPOINT"):
-        parser.error("Load Workflow credentials with direnv; never put them in arguments")
+    endpoint, api_key = load_gpt_credentials()
+    if not api_key or not endpoint:
+        parser.error(
+            "Image generation is not supported on this machine "
+            "(missing gpt.endpoint or gpt.apiKey in ~/.config/system0/image-generation.json)."
+        )
     if args.one:
         if len(rows) != 1 or len(themes) != 1:
             parser.error("One request requires one project and one theme")

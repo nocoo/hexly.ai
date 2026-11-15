@@ -80,7 +80,7 @@ not a request to redesign existing approved Logos or change their colors.
 For new GPT Image requests, the owner's 2026-09-14 model policy is
 `gpt-image-2.5-sunburst` for Logos and primary identity artwork, and
 `gpt-image-2.5-flare` for secondary decoration such as support textures. Read the
-current Workflow `agi-image-generation` skill and select the deployment explicitly;
+current `system0` `image-generation-gpt` skill and select the deployment explicitly;
 the owner has already authorized Flare for this decorative scope. Preserve the
 actual model in each receipt and all historical model records. Model choice does
 not replace the exact-byte raw-image checkpoint or imply asset publication.

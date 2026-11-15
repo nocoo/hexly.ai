@@ -43,10 +43,16 @@ class ImageRequestTests(unittest.TestCase):
                 response.read.return_value = json.dumps({
                     "data": [{"b64_json": base64.b64encode(PNG).decode()}],
                 }).encode()
+                config_path = root / "image-generation.json"
+                config_path.write_text(json.dumps({
+                    "gpt": {
+                        "endpoint": "https://example.test/openai/v1",
+                        "apiKey": "test-placeholder",
+                    },
+                }))
                 with (
                     patch.dict(os.environ, {
-                        "AZURE_OPENAI_ENDPOINT": "https://example.test/openai/v1",
-                        "AZURE_OPENAI_API_KEY": "test-placeholder",
+                        "SYSTEM0_IMAGE_CONFIG": str(config_path),
                     }),
                     patch.object(sys, "argv", argv),
                     patch.object(generate_azure, "urlopen", return_value=response) as send,
@@ -76,6 +82,22 @@ class ImageRequestTests(unittest.TestCase):
                     with self.assertRaises(SystemExit):
                         generate_azure.main()
                     send.assert_called_once()
+
+    def test_missing_credentials_exits_with_clear_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "prompt.txt").write_text("One flat illustration.\n")
+            argv = ["generate_azure.py", "--run-dir", str(root), "--size", "1024x1024"]
+            stderr = io.StringIO()
+            with (
+                patch.dict(os.environ, {"SYSTEM0_IMAGE_CONFIG": str(root / "missing.json")}),
+                patch.object(sys, "argv", argv),
+                contextlib.redirect_stderr(stderr),
+            ):
+                with self.assertRaises(SystemExit) as ctx:
+                    generate_azure.main()
+            self.assertEqual(ctx.exception.code, 2)
+            self.assertIn("not supported on this machine", stderr.getvalue())
 
 
 if __name__ == "__main__":

@@ -38,7 +38,7 @@ python3 .agents/skills/hexly-brand-textures/scripts/generate.py \
   --inventory /path/to/new-batch.json --project project-id
 
 # Within existing generation authorization; no silent model changes or retries.
-direnv exec ../workflow python3 .agents/skills/hexly-brand-textures/scripts/generate.py \
+python3 .agents/skills/hexly-brand-textures/scripts/generate.py \
   --inventory /path/to/new-batch.json --project project-id \
   --jobs 1 --interval 35 --generate
 ```
