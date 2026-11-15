@@ -1,5 +1,52 @@
 # Changelog
 
+## [1.9.0] - 2026-11-15
+
+### Maintenance
+
+- archive hexly emblem generation study ([607362f](https://github.com/nocoo/hexly.ai/commit/607362f07eeaef273421a169dda7b4511ecd5f66))
+- preserve contrast in hexly logo study ([50a2f64](https://github.com/nocoo/hexly.ai/commit/50a2f6433f202e45aab7d7a87b50e1775828a84c))
+- explore three hexly emblem directions ([6090278](https://github.com/nocoo/hexly.ai/commit/60902785de29773cdfed28fe7052ba6aa5b52d21))
+- unify control palette and spacing ([fd7da35](https://github.com/nocoo/hexly.ai/commit/fd7da3573879d57df7a98fb54f3605c0d9b26b79))
+- archive four page hero image candidates ([d0d7db9](https://github.com/nocoo/hexly.ai/commit/d0d7db982d93227e414190b133ca42ee0c51a081))
+- remove rejected threejs headers ([3a6e857](https://github.com/nocoo/hexly.ai/commit/3a6e857ed3d6cf310d22840fa8b2f8a6efd3d11e))
+- merge origin main and align dependencies ([f7bad1d](https://github.com/nocoo/hexly.ai/commit/f7bad1d9393f18507c2ecc941e18570be6daccb1))
+- merge remote catalogue updates ([c3d6961](https://github.com/nocoo/hexly.ai/commit/c3d69618bee9dabbffcdc347d1dfea83835f8768))
+- purge external project snapshots and historical bloat ([214cfae](https://github.com/nocoo/hexly.ai/commit/214cfaec4a05e40c13906287c68fa1b1abec5427))
+- remove obsolete local-snapshot references from projects and verify-assets ([7f230a6](https://github.com/nocoo/hexly.ai/commit/7f230a6a757f4cbe7f26014f1f6dd7a3915ad0cd))
+- remove templates and video-kit feature ([2e49554](https://github.com/nocoo/hexly.ai/commit/2e4955477cfed3c798eef7b842a52966b16177f3))
+
+### Features
+
+- preview extracted hexly mark locally ([dd65b3e](https://github.com/nocoo/hexly.ai/commit/dd65b3ec7231836526d261ecbf83c178167cc0cd))
+- add light and shadow to local logo preview ([ec88c0c](https://github.com/nocoo/hexly.ai/commit/ec88c0c1eef369c0c508375c88b3fb540c51d8bf))
+- add site identity to templates page ([640c70a](https://github.com/nocoo/hexly.ai/commit/640c70aad91ebcf54d6c85d6f6591d9faafd8e8d))
+- add brand library and shared page heroes ([0d9940f](https://github.com/nocoo/hexly.ai/commit/0d9940f5cad7804a615df015687ed32470ab7253))
+- layer approved artwork into local headers ([ac73287](https://github.com/nocoo/hexly.ai/commit/ac732879796079e75e76052407e4d0043db1bed7))
+- replace hero artwork with threejs objects ([5a288f5](https://github.com/nocoo/hexly.ai/commit/5a288f5c0e0490001bc65e84c606775adbb969f1))
+- add flat homepage illustration study ([2e6e3a5](https://github.com/nocoo/hexly.ai/commit/2e6e3a589b584fdcc104acfee856d50eacec250a))
+- adopt the selected two-tone hexly identity ([6b2b0e3](https://github.com/nocoo/hexly.ai/commit/6b2b0e3d5ffb20642f916468081f549727d4a133))
+- standardize brand and status heroes with placeholder artworks ([2018661](https://github.com/nocoo/hexly.ai/commit/20186614a2241af55fe5bc3991ab87798b97ad03))
+
+### Documentation
+
+- point skill references to system1 names ([f419f8a](https://github.com/nocoo/hexly.ai/commit/f419f8a54ec2f190ed54440991c262a3bbc56d98))
+- pause page artwork studies ([b8e23fa](https://github.com/nocoo/hexly.ai/commit/b8e23fa079498dbf9593bf6e19c0601e23ae1adc))
+- record hexly identity adoption revision ([2fddd1b](https://github.com/nocoo/hexly.ai/commit/2fddd1b344f9b97b0cb855dcdc9a319c79d33bf8))
+- record published hexly logo acceptance ([87073de](https://github.com/nocoo/hexly.ai/commit/87073debdbce546d1ae4bba9e0811d9a4c5d1351))
+
+### Fixes
+
+- align native select controls and arrows ([e3bd960](https://github.com/nocoo/hexly.ai/commit/e3bd960cc475273b5cb3d3c36dc0389e9799df79))
+- align select and popup menu styling with control tokens ([d588c96](https://github.com/nocoo/hexly.ai/commit/d588c96042fd305b82aadf8b828ddfe207ec80c6))
+- drop missing GH_CONFIG_DIR before invoking gh ([67d9c2a](https://github.com/nocoo/hexly.ai/commit/67d9c2a6b6f36621818e28b35bd3a4055df3794b))
+- avoid clobbering rewritten historical tags on fetch ([251bf5a](https://github.com/nocoo/hexly.ai/commit/251bf5a7d298dc34be84cb620c89d7ba1a3d008e))
+
+### Tests
+
+- update brand and select layout contracts ([9b7eaaf](https://github.com/nocoo/hexly.ai/commit/9b7eaafe58d1c10544c3f58d036b643f610ebc85))
+- drain browser routes before page teardown ([1603a54](https://github.com/nocoo/hexly.ai/commit/1603a543b5c4dbcf018dcad0db2b252892d44474))
+
 ## [1.8.3] - 2026-11-14
 
 ### Maintenance
