@@ -41,6 +41,58 @@
 	--status-color: var(--muted);
 	--status-fill: var(--status-empty);
 }
+.hero-art-status .status-hero-pulse {
+	position: absolute;
+	left: 50%;
+	top: 48%;
+	transform: translate(-50%, -50%) rotate(3deg);
+	display: grid;
+	gap: var(--space-12);
+	padding: var(--space-20);
+	border-radius: var(--radius-panel);
+	background: color-mix(in srgb, var(--surface) 92%, transparent);
+	border: 1px solid var(--line);
+	box-shadow: 0 22px 44px -26px
+		color-mix(in srgb, var(--shadow) 38%, transparent);
+}
+.status-hero-nodes {
+	display: flex;
+	align-items: center;
+	gap: var(--space-8);
+}
+.status-hero-nodes span {
+	width: var(--space-8);
+	height: var(--space-8);
+	border-radius: 50%;
+}
+.status-hero-nodes .node-good {
+	background: var(--status-good-fill);
+}
+.status-hero-nodes .node-accent {
+	background: var(--accent);
+}
+.status-hero-wave {
+	fill: none;
+	stroke: var(--status-good);
+	stroke-width: 2.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+.status-hero-bars {
+	display: grid;
+	grid-template-columns: repeat(8, minmax(0, 1fr));
+	gap: var(--space-4);
+}
+.status-hero-bars span {
+	height: var(--space-16);
+	border-radius: var(--space-4);
+	background: var(--status-good-fill);
+	opacity: 0.8;
+}
+.status-hero-bars span:nth-child(5) {
+	background: var(--accent);
+	opacity: 0.72;
+}
 .hero-observation-note {
 	flex-basis: 100%;
 	margin: 0;

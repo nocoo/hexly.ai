@@ -81,7 +81,7 @@ for (const [name, options, locale, theme] of [
 			await expect(page).toHaveURL(/\/brand$/);
 			await expect(page).toHaveTitle("Brand — hexly.ai");
 			await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-				`${t.title}.`,
+				`${t.heroFirst}${t.heroSecond}${locale === "zh" ? "。" : "."}`,
 			);
 			await expect(
 				navigation.getByRole("button", {

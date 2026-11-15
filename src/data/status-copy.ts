@@ -2,7 +2,11 @@ export const statusCopy = {
 	en: {
 		eyebrow: "THE HEXLY NETWORK",
 		title: "Service status",
-		description: "A live pulse on our little universe of tools and services.",
+		heroFirst: "Service status",
+		heroSecond: "Live pulse",
+		heroNote: "5-MINUTE HEARTBEAT",
+		description:
+			"A live pulse on our little universe of tools, apps, and public services.",
 		cadence: "CHECKED EVERY 5 MINUTES",
 		retention: "7 DAYS OF HISTORY",
 		timeZone: "Time zone",
@@ -91,7 +95,10 @@ export const statusCopy = {
 	zh: {
 		eyebrow: "HEXLY 服务网络",
 		title: "服务状态",
-		description: "看看这个小宇宙里，每个工具与服务的近况。",
+		heroFirst: "服务状态，",
+		heroSecond: "实时运行脉搏",
+		heroNote: "每 5 分钟巡检",
+		description: "实时追踪这片小宇宙里每个工具、应用与公共服务的运行近况。",
 		cadence: "每 5 分钟检查一次",
 		retention: "保留最近 7 天记录",
 		timeZone: "时区",

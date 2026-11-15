@@ -33,7 +33,9 @@ test("unmonitored projects preserve the header during clicks, Enter, and history
 		expect(await header.evaluate((node) => node.isConnected)).toBe(true);
 		await page.goBack();
 		await expect(page).toHaveURL(`${baseURL}/status`);
-		await expect(page.locator("#status-title")).toHaveText("Service status.");
+		await expect(page.locator("#status-title")).toHaveText(
+			"Service statusLive pulse.",
+		);
 		expect(await header.evaluate((node) => node.isConnected)).toBe(true);
 		expect(documents).toEqual([]);
 	}
@@ -95,7 +97,9 @@ test("unmonitored projects leave the status origin for the catalogue", async ({
 		}),
 	);
 	await page.goto("https://status.hexly.ai/");
-	await expect(page.locator("#status-title")).toHaveText("Service status.");
+	await expect(page.locator("#status-title")).toHaveText(
+		"Service statusLive pulse.",
+	);
 	await page.locator(".status-coverage summary").click();
 	const link = page.locator(".status-coverage a").first();
 	const href = await link.getAttribute("href");
@@ -171,7 +175,9 @@ test("navigates to status, filters services, and inspects hourly history and the
 		.click();
 	expect((await refreshed).status()).toBe(200);
 	await page.reload();
-	await expect(page.locator("#status-title")).toHaveText("Service status.");
+	await expect(page.locator("#status-title")).toHaveText(
+		"Service statusLive pulse.",
+	);
 });
 
 test.describe("status display time zones", () => {

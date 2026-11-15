@@ -3,7 +3,10 @@ export const brandSizes = [16, 24, 32, 48, 64, 96, 128, 256] as const;
 export const brandCopy = {
 	en: {
 		title: "Brand",
-		eyebrow: "Hexly / Visual identity",
+		eyebrow: "HEXLY VISUAL IDENTITY",
+		heroFirst: "Hexly mark",
+		heroSecond: "Visual system",
+		heroNote: "IDENTITY SPECIMEN",
 		description:
 			"The Hexly mark, wordmark and surfaces, from a browser tab to a full-size signature.",
 		sizes: "The mark, at every size",
@@ -42,7 +45,10 @@ export const brandCopy = {
 	},
 	zh: {
 		title: "品牌",
-		eyebrow: "Hexly / 视觉识别",
+		eyebrow: "HEXLY 视觉识别",
+		heroFirst: "Hexly 标志，",
+		heroSecond: "一套视觉识别",
+		heroNote: "视觉识别标本",
 		description: "从浏览器标签到完整署名，查看 Hexly 标志、字标与背景的搭配。",
 		sizes: "从小到大的标志",
 		sizesHint: "按实际 CSS 像素展示。同一份透明图形，保留原始比例与颜色。",

@@ -23,12 +23,75 @@ export function BrandPage({
 				eyebrow={t.eyebrow}
 				title={
 					<>
-						{t.title}
-						<span className="headline-period">.</span>
+						{t.heroFirst}
+						<br />
+						<span className="outline-word">{t.heroSecond}</span>
+						<span className="headline-period">
+							{locale === "zh" ? "。" : "."}
+						</span>
 					</>
 				}
 				description={t.description}
-				artwork={<div className="hero-visual" aria-hidden="true" />}
+				artwork={
+					<div className="hero-art hero-art-brand" aria-hidden="true">
+						<span className="orbit orbit-one" />
+						<span className="orbit orbit-two" />
+						<span className="orbit orbit-three" />
+						<div className="brand-hero-specimen">
+							<svg viewBox="0 0 160 160" width="160" height="160">
+								<title>Hexly mark grid</title>
+								<line
+									x1="80"
+									y1="8"
+									x2="80"
+									y2="152"
+									className="brand-hero-guide"
+								/>
+								<line
+									x1="8"
+									y1="80"
+									x2="152"
+									y2="80"
+									className="brand-hero-guide"
+								/>
+								<rect
+									x="24"
+									y="24"
+									width="112"
+									height="112"
+									rx="26"
+									className="brand-hero-frame"
+								/>
+								<rect
+									x="42"
+									y="42"
+									width="76"
+									height="76"
+									rx="18"
+									className="brand-hero-inset"
+								/>
+								<rect
+									x="62"
+									y="62"
+									width="36"
+									height="36"
+									rx="9"
+									className="brand-hero-core"
+								/>
+							</svg>
+							<div className="brand-hero-swatches">
+								<span className="swatch-paper" />
+								<span className="swatch-ivory" />
+								<span className="swatch-terracotta" />
+							</div>
+						</div>
+						<span className="hero-art-caption">
+							<span />
+							{t.heroNote}
+							<span />
+						</span>
+					</div>
+				}
 			>
 				<nav className="brand-section-links" aria-label={t.title}>
 					<a href="#sizes">{t.sizes}</a>
