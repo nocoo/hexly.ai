@@ -63,7 +63,7 @@ if (!options.dryRun) {
 		throw new Error("The origin must be nocoo/hexly.ai.");
 	}
 	await run("gh", "auth", "status");
-	await run("git", "fetch", "origin", "main", "--tags");
+	await run("git", "fetch", "origin", "main", "--no-tags");
 	await run("git", "merge-base", "--is-ancestor", "origin/main", "HEAD");
 }
 
@@ -103,7 +103,11 @@ const version = chooseVersion({
 	now: Date.now(),
 });
 const tag = `v${version}`;
-if (await output("git", "tag", "--list", tag)) {
+if (
+	(await output("git", "tag", "--list", tag)) ||
+	(!options.dryRun &&
+		(await output("git", "ls-remote", "--tags", "origin", `refs/tags/${tag}`)))
+) {
 	throw new Error(
 		`${tag} already exists; published tags are never overwritten.`,
 	);
