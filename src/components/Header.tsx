@@ -78,6 +78,12 @@ export function Header({
 						<BrandWordmark />
 					</a>
 					<div
+						className="site-header-nav-backdrop"
+						data-open={menuOpen ? "true" : "false"}
+						aria-hidden="true"
+						onClick={() => setMenuOpen(false)}
+					/>
+					<div
 						id="mobile-nav-drawer"
 						className="site-header-nav-drawer"
 						data-open={menuOpen ? "true" : "false"}
