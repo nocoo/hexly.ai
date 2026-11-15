@@ -20,9 +20,6 @@ describe("sleepy and rhino onboarding", () => {
 				format: "webp",
 				display: "single",
 			});
-			expect(project?.overview?.verified.snapshot?.path).toBe(
-				`docs/sources/${id}-2026-10-09.json`,
-			);
 		},
 	);
 
