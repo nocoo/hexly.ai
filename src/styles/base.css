@@ -567,15 +567,35 @@ select.control-select {
 		128px 128px;
 	box-shadow: var(--control-recess);
 	color: var(--control-ink);
+	font-family: var(--sans);
 	font-size: var(--control-font-size);
 	font-weight: var(--control-font-weight);
 	line-height: var(--control-line-height);
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	cursor: pointer;
+	transition:
+		background-color 150ms,
+		box-shadow 150ms;
 }
 select.control-select:hover {
 	background-color: var(--control-hover);
+}
+select.control-select:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+select.control-select option,
+select.control-select optgroup {
+	background-color: var(--control-face);
+	color: var(--control-ink);
+	font-family: var(--sans);
+	font-size: var(--control-font-size);
+	font-weight: var(--control-font-weight);
+}
+select.control-select optgroup {
+	color: var(--muted);
+	font-weight: 600;
 }
 .search-field {
 	display: flex;

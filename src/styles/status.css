@@ -50,22 +50,24 @@
 .status-timezone {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: var(--space-8);
-	color: var(--muted);
-	font: 10px var(--mono);
 }
 .status-timezone label {
 	display: inline-flex;
 	align-items: center;
 	gap: var(--space-8);
+	color: var(--muted);
+	font: var(--control-meta-size) / 16px var(--mono);
 	white-space: nowrap;
 }
 .status-timezone label .icon {
-	width: 13px;
-	height: 13px;
+	width: var(--space-16);
+	height: var(--space-16);
 }
 .status-timezone .status-timezone-control {
 	width: 260px;
+	max-width: 100%;
 	min-width: 0;
 	flex-shrink: 1;
 }
