@@ -35,10 +35,10 @@ test("serves the built document and security policy through Workers HTTP", async
 	expect(html).toContain('property="og:image"');
 	expect(html).toContain("application/ld+json");
 	expect(html).toContain(
-		`href="${assetUrl("/logos/family/hexly-ai/2026-10-18-02/01/transparent-32.png")}"`,
+		`href="${assetUrl("/logos/family/hexly-ai/2026-11-13-02/02/transparent-32.png")}"`,
 	);
 	expect(html).toContain(
-		`href="${assetUrl("/icons/hexly-ai/v1.0.2/apple-touch-icon.png")}"`,
+		`href="${assetUrl("/icons/hexly-ai/v1.0.4/apple-touch-icon.png")}"`,
 	);
 	expect(html).not.toContain("/src/main.tsx");
 });

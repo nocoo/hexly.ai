@@ -127,12 +127,13 @@ Each render uses a fresh output directory, retains `render.json` with the exact 
 
 External consumers must hydrate and copy this package's unchanged `public/video-kit/1.0.0/hexly/` font/license assets into their public root. They are indexed by path and SHA-256 in the repository's R2 inventory; Git does not need binary fonts. `brandAssetVersion` remains 1.0.0 because those bytes have not changed; `kitVersion` and schema can evolve independently. Renderer `--public-dir` accepts a prepared local asset directory. The root wrapper hydrates the selected catalogue artwork and fonts, then renders from an isolated local directory. Host websites may wrap previews in the exported `HexlyFontOrigin.Provider` with the configured CDN origin; standalone rendering defaults to local fonts.
 
-The 2026-10-18 local identity update additionally requires the exact transparent
-`public/video-kit/1.1.0/hexly/mark.png` recorded in `current-identity.json`.
+The 2026-11-15 identity adoption additionally requires the exact transparent
+`public/video-kit/1.2.0/hexly/mark.png` recorded in `current-identity.json`.
 The existing origin provider applies to both fonts and the mark; standalone
 rendering reads both from the prepared public directory. Artwork is not recolored
 between themes. Historical SVG provenance and the five published standard outro
-movies remain immutable. This source update does not publish the package or assets.
+movies remain immutable. The new mark is published through the scoped R2 receipt;
+this source update does not release a new package or regenerate existing films.
 
 ## Review and asset boundaries
 

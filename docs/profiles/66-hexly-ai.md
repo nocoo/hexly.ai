@@ -33,15 +33,15 @@ Browse bilingual project records, preserved identities, palettes, service observ
 
 ## Current logo
 
-![hexly.ai source identity](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-10-18-160-74f8959ae53f.webp)
+![hexly.ai source identity](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-11-13-02-160-5d2d33379b91.webp)
 
 - Type: Original project artwork, copied without modification
-- Subject: Six-triangle terracotta ceramic hexagon
-- [Source](https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json): `logo.png`
-- [Preserved asset](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-10-18-02-01-595c9da2186c.png)
-- Original dimensions: 1024 × 1024
-- Original size: 1175430 bytes
-- SHA-256: `595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d`
+- Subject: Two-tone cream-framed hexagonal emblem
+- [Source](https://github.com/nocoo/hexly.ai/blob/c89ba6d1534a8df5028c28087c98c82aebbf6c68/artwork/logo-family/hexly-ai/2026-11-13-02/finishing/02/manifest.json): `logo.png`
+- [Preserved asset](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-11-13-02-02-5df6368fc0d5.png)
+- Original dimensions: 2048 × 2048
+- Original size: 2600545 bytes
+- SHA-256: `5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5`
 - Locally modified source: No
 - Display derivatives: 32, 64, 160, and 1024 px WebP; contain-fit, transparent padding, no recoloring or cropping.
 
@@ -49,19 +49,19 @@ Browse bilingual project records, preserved identities, palettes, service observ
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| primary | `#d18760` | Native af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897, sRGB pixel (420, 345); artwork/logo-family/hexly-ai/2026-10-18-02/palette.json |
-| accent | `#f2dcc4` | Native af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897, sRGB pixel (510, 405); artwork/logo-family/hexly-ai/2026-10-18-02/palette.json |
-| accent | `#c76e42` | Native af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897, sRGB pixel (810, 600); artwork/logo-family/hexly-ai/2026-10-18-02/palette.json |
+| accent | `#f2e0c8` | Approved transparent master 5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5, native sRGB pixel (1700, 1000); artwork/logo-family/hexly-ai/2026-11-13-02/palette.json |
+| accent | `#eed8bc` | Approved transparent master 5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5, native sRGB pixel (600, 750); artwork/logo-family/hexly-ai/2026-11-13-02/palette.json |
+| primary | `#d2613d` | Approved transparent master 5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5, native sRGB pixel (1400, 900); artwork/logo-family/hexly-ai/2026-11-13-02/palette.json |
 
 Theme tokens take precedence. Additional colors are sampled from the preserved artwork. A transparent background means the source does not define an opaque background; the gallery's surrounding paper is not part of the project palette.
 
 ## Current textured icons
 
-![hexly.ai current icon](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/rounded-160.webp)
+![hexly.ai current icon](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/rounded-160.webp)
 
-- [Native square PNG](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/favicon.ico) · [Apple touch](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/apple-touch-icon.png)
-- [Manifest and checksums](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/hexly-ai/icons/v1.0.2/guide.md)
-- Native canvas 1024 × 1024; zero new image generation. Unchanged foreground colors over the approved light texture at 70% opacity. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
+- [Native square PNG](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/icon.png) · [Native continuous-corner PNG](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/rounded.png) · [iOS 1024 px square](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/icon-1024.png) · [Favicon ICO](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/favicon.ico) · [Apple touch](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/apple-touch-icon.png)
+- [Manifest and checksums](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/manifest.json) · [Usage, resampling and source rights](https://h.no.mt/projects/hexly-ai/icons/v1.0.4/guide.md)
+- Native canvas 2048 × 2048; zero new image generation. Exact approved native square/rounded masters; foreground RGB, background and shadows follow the study recipe without recompositing. Continuous corners are already rendered for site use; use the square master for iOS. Smaller delivery sizes are resampled from the native master.
 - Hexly presentation is adopted on this site. Source repositories retain their own recorded adoption state. Original identity archives below remain available.
 
 ## Current campaign texture
@@ -69,58 +69,58 @@ Theme tokens take precedence. Additional colors are sampled from the preserved a
 - Ceramic archive / 陶土档案: Fine ceramic grain with sparse specimen-layout impressions, leaving a quiet field for the preserved identities.
 - 细陶土颗粒与疏朗的标本排布压痕，为原始品牌留出安静底面。
 - Model: `gpt-image-2.5-flare`; independently generated light/dark full canvases, no crop or repeat.
-- Independent texture pack v1.0.1; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.4.
-- [Paper PNG](https://h.no.mt/projects/hexly-ai/textures/v1.0.1/texture-light.png) · [Night PNG](https://h.no.mt/projects/hexly-ai/textures/v1.0.1/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.1/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.1/texture-dark-prompt.txt)
-- [Manifest and hashes](https://h.no.mt/projects/hexly-ai/textures/v1.0.1/manifest.json) · [Usage/rights](https://h.no.mt/projects/hexly-ai/textures/v1.0.1/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/hexly-ai/v1.0.1/review.html)
+- Independent texture pack v1.0.2; the original identity kit and its historical surfaces remain unchanged. Text-bearing surfaces use a separate layer at opacity 0.4.
+- [Paper PNG](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-light.png) · [Night PNG](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-dark.png) · [Exact paper prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-light-prompt.txt) · [Exact night prompt](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/texture-dark-prompt.txt)
+- [Manifest and hashes](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/manifest.json) · [Usage/rights](https://h.no.mt/projects/hexly-ai/textures/v1.0.2/guide.md) · [Full-canvas specimens](https://hexly.ai/textures/hexly-ai/v1.0.2/review.html)
 - Hexly pages and promotional materials only. Preserve official Logo bytes/colors, product UI, and archived status. Reuse the files directly; no per-campaign generation is required.
 
 ## Refined identity
 
-![hexly.ai refined preview](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/icon-160.webp)
+![hexly.ai refined preview](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/icon-160.webp)
 
-- Status: Adopted in the source project; updated 2026-10-18.
-- Study `2026-10-18-02`, finishing `01`
-- Refined subject: Six-triangle terracotta ceramic hexagon
+- Status: Adopted in the source project; updated 2026-11-15.
+- Study `2026-11-13-02`, finishing `02`
+- Refined subject: Two-tone cream-framed hexagonal emblem
 - Site path: `/projects/hexly-ai#brand`; [local gallery](https://index.dev.hexly.ai/projects/hexly-ai#brand)
-- [Static review HTML](../../artwork/logo-family/hexly-ai/2026-10-18-02/review.html)
-- [Full process archive](../../artwork/logo-family/hexly-ai/2026-10-18-02)
-- [Transparent foreground](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/transparent.png); SHA-256: `595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d`
-- [Square icon](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/icon.png), [rounded icon](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/rounded.png), [white version](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/white.png)
-- [Untouched generation](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/raw.jpg), [exact prompt](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/hexly-ai/2026-10-18-02/01/manifest.json)
-- [Previous original](https://h.no.mt/shared/site/v1.0.0/hexly-ai-c69b5e7a341e.png), copied from [its immutable source](https://github.com/nocoo/hexly.ai/blob/dbdb9d8ea428ac73764503bc09916b97c8ca999e/logo.png)
-- Previous SHA-256: `c69b5e7a341eabc3de296db4d1b8dcff314f04c7652b86fd1dc217b1f42628d0`
-- Generation: built-in image tool; model unrecorded, native 1024 × 1024; transparent extraction and presentation are separate finishing steps.
-- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px. Sizes above 1024 px are explicitly recorded upscales; the native master retains its recorded resolution.
+- [Static review HTML](../../artwork/logo-family/hexly-ai/2026-11-13-02/review.html)
+- [Full process archive](../../artwork/logo-family/hexly-ai/2026-11-13-02)
+- [Transparent foreground](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/transparent.png); SHA-256: `5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5`
+- [Square icon](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/icon.png), [rounded icon](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/rounded.png), [white version](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/white.png)
+- [Untouched generation](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/raw.png), [exact prompt](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/prompt.txt), [public asset checksums](https://h.no.mt/logos/family/hexly-ai/2026-11-13-02/02/manifest.json)
+- [Previous original](https://h.no.mt/shared/site/v1.0.0/hexly-ai-family-2026-10-18-02-01-595c9da2186c.png), copied from [its immutable source](https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json)
+- Previous SHA-256: `595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d`
+- Generation: built-in image tool; model unrecorded, native 2048 × 2048; transparent extraction and presentation are separate finishing steps.
+- The finishing archive includes transparent, square, and rounded PNGs at 2048, 1024, 512, 256, 128, 64, 48, 32, 24, and 16 px.
 - Application previews use the refined square icon without extra padding, backgrounds, or circular masks. Artwork previews and downloads use its own transparent foreground, independently of the preserved source logo above.
 
 ### Refined palette
 
 | Role | Value | Evidence |
 | --- | --- | --- |
-| background | `#eee6dc` | artwork/logo-family/hexly-ai/2026-10-18-02/presentation.json background.base; not a product UI token |
-| primary | `#d18760` | Native af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897, sRGB pixel (420, 345); artwork/logo-family/hexly-ai/2026-10-18-02/palette.json |
-| accent | `#f2dcc4` | Native af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897, sRGB pixel (510, 405); artwork/logo-family/hexly-ai/2026-10-18-02/palette.json |
-| accent | `#c76e42` | Native af8321d9cf885ab474726100b53b07760e745747295a3d2007dfd5175933e897, sRGB pixel (810, 600); artwork/logo-family/hexly-ai/2026-10-18-02/palette.json |
+| background | `#ffffff` | artwork/logo-family/hexly-ai/2026-11-13-02/finishing/02/settings.json background.base |
+| accent | `#f2e0c8` | Approved transparent master 5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5, native sRGB pixel (1700, 1000); artwork/logo-family/hexly-ai/2026-11-13-02/palette.json |
+| accent | `#eed8bc` | Approved transparent master 5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5, native sRGB pixel (600, 750); artwork/logo-family/hexly-ai/2026-11-13-02/palette.json |
+| primary | `#d2613d` | Approved transparent master 5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5, native sRGB pixel (1400, 900); artwork/logo-family/hexly-ai/2026-11-13-02/palette.json |
 
-### Complete approved form
+### Approved complete silhouette
 
-Complete ceramic radial form with six warm wedges and solid cream separators.
+A rounded cream frame encloses sand-beige and brick-red inserts with deliberate open channels. Native placement and proportions are unchanged.
 
-六片暖色陶瓷与实心奶油色分隔组成完整放射形体。
+圆润奶油色外框包围米色与砖红色内片，保留开口、原始位置和比例。
 
-### Preserved physical material
+### Original material and color
 
-Continuous fired-clay shading preserves the approved object, not the previous four-triangle mark.
+The approved 2048px transparent master retains the original opaque RGB values and inspected cutout edges.
 
-连续陶瓷明暗保留已批准实物，不退回旧四三角标志。
+已批准的 2048px 透明原图保留全部不透明像素颜色与校验过的边缘。
 
-### Ceramic workshop scoring
+### Shadow-free identity
 
-Warm unglazed workboard with paired clay-scoring tracks and sparse hexagonal impression marks, relating to the ceramic directory emblem rather than product UI.
+Headers and browser marks use the transparent foreground without glow or another mask. Existing neutral square and rounded derivatives serve large and platform presentations.
 
-按物体用途设计独立浅色工作材质与柔和阴影，保留原图颜色和产品主题。
+页头与浏览器标志使用透明前景，不加光晕或额外遮罩；大图和平台展示使用已有纯底方形与圆角版本。
 
-Small-size observation: At 16/24 px the radial silhouette survives; grain and narrow channels soften.
+Small-size observation: At 16/24px the two-tone silhouette remains; fine material shading softens. The full canvas is resized without cropping.
 
 ## Further refinements
 

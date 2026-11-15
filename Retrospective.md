@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-11-15: A successful push did not adopt the selected Logo
+
+The selected two-tone Logo remained behind the development-only material flag, while the catalogue, favicon, root master, Video Kit and shared social-card badge still selected October's identity. The prior push and deployment were green but did not establish Logo adoption. The owner then explicitly authorized replacing the old identity and pushing. Remove the identity-selection branch, publish the exact approved derivatives first, and assert production-mode header/favicon paths and matching publication receipts before delivery. The share-card fingerprint must also include the actual shared header-mark bytes, not only each project's main artwork.
+
+The first platform export used an unrecognized descriptive `texture.sourceMethod` instead of the established `authored-family-background` value. It was published before the full catalogue verifier ran. Preserve that immutable v1.0.3 package and correct the active metadata in v1.0.4; never overwrite a published object to repair bookkeeping. The preserved texture pack also bound its old identity hash, so a new metadata version reuses its image and generation-receipt bytes unchanged. Run the complete catalogue/manifest verifier before publication, not only the focused image tests.
+
 ## 2026-11-15: Push gate caught a browser route teardown race
 
 After merging the remote catalogue and version updates, pre-push rejected the delayed-image startup journey with `Route is already handled` in the shared CDN fixture. The broad page route used `continue`, which bypasses remaining route handlers, while the context-level fixture had no awaited teardown before the page closed. The media delay now uses Playwright's documented `fallback` chain. The fixture depends on the page and drains context handlers with `unrouteAll({ behavior: "wait" })` before page teardown; errors are not swallowed. The startup regression now also proves that released image requests reach the local CDN fixture and decode successfully. Ten consecutive runs of that strengthened startup test passed. The failed push did not update origin; publication still goes through the normal pre-push gate.

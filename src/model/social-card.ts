@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import sharp from "sharp";
+import identity from "../data/projects/hexly-ai.json";
 import type { Project } from "./project";
 
 /** Local artwork file that a share card renders for a project. */
@@ -73,6 +74,7 @@ export async function socialCardRendererSha(): Promise<string> {
 			"scripts/create-social.ts",
 			"scripts/social.css",
 			"src/model/social-card.ts",
+			`public${identity.family.root}/transparent-64.png`,
 		].map((file) => readFile(file)),
 	);
 	return createHash("sha256").update(Buffer.concat(sources)).digest("hex");

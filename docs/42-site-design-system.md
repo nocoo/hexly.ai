@@ -27,10 +27,13 @@ Video Kit's browser controls consume host tokens while keeping standalone
 material defaults. Video compositions, frozen historical review documents,
 independent product identities and their original textures are not redesigned.
 
-The candidate is selected for the ongoing local VI work. Its material publication
-and complete source/catalogue/favicon/Video Kit identity adoption remain separate
-from this UI pass; existing production asset selection stays valid until those
-immutable materials are published. No R2 upload, push or release is implied.
+The owner authorized formal adoption and push on 2026-11-15. The selected mark is
+now the canonical source for headers, Brand specimens, catalogue identity,
+favicon, platform icons, README, current Video Kit compositions and share-card
+branding. The development-only identity branch is removed; local material mode
+changes delivery origin, not Logo selection. Immutable R2 publication and exact
+master checks are recorded in the study's `adoption.json`. Historical assets and
+published standard outro movies remain unchanged.
 
 ## Sources of truth
 

@@ -1,5 +1,9 @@
 # Local header review
 
+## Current state: formal adoption
+
+On 2026-11-15 the owner explicitly requested replacing the old Logo and pushing. The exact finishing `02` master is installed as the root and catalogue original; all application themes and modes select it. Header, Brand, favicon, platform icons v1.0.4, README, current Video Kit mark v1.2.0 and the shared site mark in all 99 share cards are aligned. Texture v1.0.2 only updates the identity binding and preserves the previous texture bytes. Platform v1.0.3 remains an inactive immutable metadata checkpoint. The current scoped R2 plan verifies 200 objects; the adoption record and publication plan identify every key. Old identities, source files and published films remain immutable. The following sections describe earlier local-only review stages, not the current publication boundary.
+
 The owner approved the exact raw image by requesting extraction and placement in the local site's upper-left Logo area. This authorizes a local header review, not a whole-site identity adoption or publication.
 
 ## Extraction

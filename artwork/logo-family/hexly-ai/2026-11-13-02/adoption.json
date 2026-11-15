@@ -1,0 +1,43 @@
+{
+	"status": "assets-published",
+	"decisionDate": "2026-11-15",
+	"decisionSource": "owner: 把新的替换旧的，再push",
+	"study": "artwork/logo-family/hexly-ai/2026-11-13-02",
+	"finishing": "02",
+	"sourceRevision": "c89ba6d1534a8df5028c28087c98c82aebbf6c68",
+	"sourceUrl": "https://github.com/nocoo/hexly.ai/blob/c89ba6d1534a8df5028c28087c98c82aebbf6c68/artwork/logo-family/hexly-ai/2026-11-13-02/finishing/02/manifest.json",
+	"master": {
+		"path": "artwork/logo-family/hexly-ai/2026-11-13-02/finishing/02/exports/hexly-ai-transparent-2048.png",
+		"sha256": "5df6368fc0d54fa4fb9e3b1c665ef548d63fcb914ff9a2d5f6b945957e0afdc5",
+		"width": 2048,
+		"height": 2048
+	},
+	"previous": {
+		"original": "/logos/originals/hexly-ai-family-2026-10-18-02-01.png",
+		"sourceUrl": "https://github.com/nocoo/hexly.ai/blob/6299f3e9274990444a932d1214ed8855082a146e/artwork/logo-family/hexly-ai/2026-10-18-02/material-metadata.json",
+		"width": 1024,
+		"height": 1024,
+		"sha256": "595c9da2186ccbd17c0779caf18ec984a5cfec56c46111dadd0c329b9f23f65d"
+	},
+	"canonicalCopy": "logo.png",
+	"familyRoot": "/logos/family/hexly-ai/2026-11-13-02/02",
+	"presentationRoot": "/icons/hexly-ai/v1.0.4",
+	"videoKit": "/video-kit/1.2.0/hexly/mark.png",
+	"inspection": {
+		"opaquePixels": 1698028,
+		"opaqueForegroundRgbUnchanged": true,
+		"nativeMasterCopiedByteForByte": true
+	},
+	"publication": "200 objects in publication-plan.json have full-byte R2 verification receipts. Platform v1.0.4 corrects the inactive v1.0.3 metadata without overwriting it; texture v1.0.2 reuses v1.0.1 pixels with the current identity binding. Git publication follows the normal gates.",
+	"verification": {
+		"command": "bun run verify",
+		"result": "passed",
+		"unitTests": 337,
+		"assetTests": 142,
+		"httpTests": 29,
+		"browserTests": 99,
+		"historyCommand": "bun scripts/verify-assets.ts --history",
+		"verifiedFinishingPasses": 138
+	},
+	"pageArtwork": "paused; not part of this identity rollout"
+}

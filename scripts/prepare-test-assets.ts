@@ -4,6 +4,7 @@ import { readProjects } from "../src/data/read-projects";
 import { digest, hydrate, pool, readInventory } from "./asset-storage";
 
 const sources = new Set([
+	"logo.png",
 	"docs/screenshots/directory-light.png",
 	"artwork/logo-family/snail/2026-09-13-01/raw/generated.png",
 	"artwork/logo-family/snail/2026-09-13-04/raw/generated.png",

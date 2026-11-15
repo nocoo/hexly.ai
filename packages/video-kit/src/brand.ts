@@ -1,6 +1,6 @@
 // Sourced from hexly.ai at e8dbbca; see brand-source.json and CREDITS.md.
 export const kitVersion = "2.0.0";
-// Brand assets are unchanged. Keep their immutable URLs independent of layout versions.
+// Font URLs stay immutable; current-identity.json selects the independent mark version.
 export const brandAssetVersion = "1.0.0";
 export const palettes = {
 	light: {
