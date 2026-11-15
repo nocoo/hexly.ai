@@ -66,13 +66,7 @@
 @media (max-width: 1000px) {
 	:root {
 		--site-topbar-height: var(--space-64);
-		--site-subheader-height: var(--space-56);
-	}
-}
-
-@media (max-width: 768px) {
-	:root {
-		--site-subheader-height: var(--space-96);
+		--site-subheader-height: 0px;
 	}
 }
 

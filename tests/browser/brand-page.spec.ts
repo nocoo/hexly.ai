@@ -11,6 +11,9 @@ test("keeps native-size marks and navigation separate at intermediate widths", a
 	await expect(page.locator(".brand-page")).toBeVisible();
 	for (const width of [601, 640, 768, 1024, 1200, 1288]) {
 		await page.setViewportSize({ width, height: 1000 });
+		if (width <= 1000) {
+			await page.locator(".menu-toggle").click();
+		}
 		const geometry = await page.evaluate(() => {
 			const nav = document
 				.querySelector(".view-links")
@@ -43,6 +46,9 @@ test("keeps native-size marks and navigation separate at intermediate widths", a
 		expect(geometry.marks.every(Boolean), `${width}px mark containment`).toBe(
 			true,
 		);
+		if (width <= 1000) {
+			await page.locator(".menu-toggle").click();
+		}
 	}
 });
 
@@ -75,6 +81,10 @@ for (const [name, options, locale, theme] of [
 			const navigation = page.getByRole("navigation", {
 				name: copy[locale].views,
 			});
+			const menuToggle = page.locator(".menu-toggle");
+			if (await menuToggle.isVisible()) {
+				await menuToggle.click();
+			}
 			await navigation
 				.getByRole("button", { name: copy[locale].brandPage, exact: true })
 				.click();
@@ -83,12 +93,18 @@ for (const [name, options, locale, theme] of [
 			await expect(page.getByRole("heading", { level: 1 })).toHaveText(
 				`${t.heroFirst}${t.heroSecond}${locale === "zh" ? "。" : "."}`,
 			);
+			if (await menuToggle.isVisible()) {
+				await menuToggle.click();
+			}
 			await expect(
 				navigation.getByRole("button", {
 					name: copy[locale].brandPage,
 					exact: true,
 				}),
 			).toHaveAttribute("aria-pressed", "true");
+			if (await menuToggle.isVisible()) {
+				await menuToggle.click();
+			}
 			await page.evaluate(() => document.fonts.ready);
 			for (const size of brandSizes) {
 				const mark = page.locator(`.brand-size[data-size="${size}"] img`);

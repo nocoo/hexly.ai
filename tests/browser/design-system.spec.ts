@@ -67,10 +67,12 @@ for (const [width, theme, locale] of [
 						...document.querySelectorAll(
 							".view-links, .search-field, .category-tabs, .collection-views, .video-theme-switch, .video-family-tabs, .status-filters, .status-period, .picker-category",
 						),
-					].map((element) => ({
-						name: element.className,
-						height: box(element).height,
-					}));
+					]
+						.filter((element) => box(element).height > 0)
+						.map((element) => ({
+							name: element.className,
+							height: box(element).height,
+						}));
 					const grids = [
 						...document.querySelectorAll(
 							".project-grid, .logo-wall, .video-template-grid",
@@ -135,3 +137,28 @@ for (const [width, theme, locale] of [
 		}
 	});
 }
+
+test("mobile header renders a 64px single row and toggles navigation drawer", async ({
+	page,
+}) => {
+	await page.setViewportSize({ width: 390, height: 844 });
+	await page.goto("/");
+
+	const header = page.locator(".site-header");
+	const menuToggle = page.locator(".menu-toggle");
+	const drawer = page.locator("#mobile-nav-drawer");
+
+	expect((await header.boundingBox())?.height).toBe(65);
+	await expect(menuToggle).toHaveAttribute("aria-expanded", "false");
+	await expect(drawer).toHaveAttribute("data-open", "false");
+
+	await menuToggle.click();
+	await expect(menuToggle).toHaveAttribute("aria-expanded", "true");
+	await expect(drawer).toHaveAttribute("data-open", "true");
+	expect((await page.locator(".view-links").boundingBox())?.height).toBe(44);
+
+	await page.keyboard.press("Escape");
+	await expect(menuToggle).toHaveAttribute("aria-expanded", "false");
+	await expect(drawer).toHaveAttribute("data-open", "false");
+	await expect(menuToggle).toBeFocused();
+});

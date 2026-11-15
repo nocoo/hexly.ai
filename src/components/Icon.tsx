@@ -27,7 +27,8 @@ export type IconName =
 	| "info"
 	| "files"
 	| "file-text"
-	| "shield-check";
+	| "shield-check"
+	| "menu";
 
 const paths: Record<IconName, string> = {
 	files:
@@ -69,6 +70,7 @@ const paths: Record<IconName, string> = {
 	clock: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 7v5l3 2",
 	play: "m9 5 11 7-11 7V5ZM4 4v16",
 	info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7h.01",
+	menu: "M4 7h16M4 12h16M4 17h16",
 };
 
 export function Icon({
