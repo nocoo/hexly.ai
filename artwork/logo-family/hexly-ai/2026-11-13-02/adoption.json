@@ -1,5 +1,5 @@
 {
-	"status": "adopted",
+	"status": "published",
 	"adoptionRevision": "8c7415840f720cc327eac1e53c7089b6dd455abf",
 	"decisionDate": "2026-11-15",
 	"decisionSource": "owner: 把新的替换旧的，再push",
@@ -39,6 +39,13 @@
 		"browserTests": 99,
 		"historyCommand": "bun scripts/verify-assets.ts --history",
 		"verifiedFinishingPasses": 138
+	},
+	"production": {
+		"revision": "ddc9bc315ba55293fe9a7a3b8e9edf7784d17b24",
+		"ci": "https://github.com/nocoo/hexly.ai/actions/runs/43658732996",
+		"deploy": "https://github.com/nocoo/hexly.ai/actions/runs/43659550457",
+		"verification": "inspection/production-adoption.json",
+		"result": "Both production origins report the deployed revision; main, Brand, project and status headers, favicons, share metadata and current Video Kit use the selected identity. Master, header and favicon CDN bytes match their exact source hashes."
 	},
 	"pageArtwork": "paused; not part of this identity rollout"
 }
