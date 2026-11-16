@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.9.3] - 2026-11-16
+
+### Features
+
+- add hexly-project-refresh project skill ([e588c66](https://github.com/nocoo/hexly.ai/commit/e588c660090191e741335d52cec7248f1f202e21))
+
+### Maintenance
+
+- refresh his.fm metadata to v2.11.28 (7c31d9bc) ([c37dee2](https://github.com/nocoo/hexly.ai/commit/c37dee2503ddcc23b2b2e240c34e4578071f895a))
+
 ## [1.9.2] - 2026-11-15
 
 ### Features
