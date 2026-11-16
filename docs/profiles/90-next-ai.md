@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: libs
-- Archived repository: No; [repository status evidence](../../docs/sources/next-ai-2026-10-18.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Multi-provider AI integration for Next.js and Vite
 - Chinese: 为 Next.js 与 Vite 提供多模型服务接入和 React 配置界面
 - Profile section: Recent Projects

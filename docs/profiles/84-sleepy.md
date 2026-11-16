@@ -6,7 +6,7 @@
 - Website: [https://sleepy.hexly.ai](https://sleepy.hexly.ai)
 - Website evidence: docs/sources/sleepy-2026-10-09.json
 - Category: everyday
-- Archived repository: Yes; [repository status evidence](../../docs/sources/sleepy-2026-10-09.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Quiet Chinese poetry reading for parents and children
 - Chinese: 陪伴亲子阅读的安静古诗阅读器
 - Profile section: Recent Projects

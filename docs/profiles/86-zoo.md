@@ -6,7 +6,7 @@
 - Website: [https://zoo.hexly.ai](https://zoo.hexly.ai)
 - Website evidence: wrangler.jsonc custom_domain; docs/sources/zoo-2026-10-10.json
 - Category: everyday
-- Archived repository: No; [repository status evidence](../../docs/sources/zoo-2026-10-10.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Chinese picture learning for young children and parents
 - Chinese: 面向幼儿与家长的中文看图认知
 - Profile section: Recent Projects

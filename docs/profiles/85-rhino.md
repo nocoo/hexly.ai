@@ -6,7 +6,7 @@
 - Website: [https://rhino.hexly.ai](https://rhino.hexly.ai)
 - Website evidence: docs/sources/rhino-2026-10-09.json
 - Category: everyday
-- Archived repository: No; [repository status evidence](../../docs/sources/rhino-2026-10-09.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Personal fitness planning and training journal
 - Chinese: 个人健身计划与训练记录
 - Profile section: Recent Projects

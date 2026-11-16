@@ -9,7 +9,7 @@
 	},
 	"category": "everyday",
 	"website": "https://his.fm",
-	"websiteSource": "README badges and site.webmanifest; https://his.fm/api/live returned status ok at revision 927170df on 2026-10-23",
+	"websiteSource": "README badges and site.webmanifest; https://his.fm/api/live returned status ok (v2.11.28) at revision 7c31d9bc on 2026-11-16",
 	"repository": "https://github.com/nocoo/his.fm",
 	"subject": "Existing application icon",
 	"reference": false,
@@ -99,7 +99,7 @@
 		"profileRevision": "c5c26acafab599bfe4b463798bd5033d5b35cad2",
 		"profileSection": "Recent Projects",
 		"description": "An AI-collaboration Chinese podcast with a versioned prompt-slot studio",
-		"repositoryRevision": "927170dfebc602ca6697dd514188c6f0c1136050"
+		"repositoryRevision": "7c31d9bcac8bb3318a193fed5614252a1d2f5395"
 	},
 	"overview": {
 		"goal": {
@@ -137,11 +137,12 @@
 			}
 		],
 		"verified": {
-			"date": "2026-10-23",
-			"revision": "927170dfebc602ca6697dd514188c6f0c1136050",
+			"date": "2026-11-16",
+			"revision": "7c31d9bcac8bb3318a193fed5614252a1d2f5395",
 			"sources": [
 				"README.md",
 				"package.json",
+				"apps/web/index.html",
 				"apps/web/src/brand/themes.ts",
 				"apps/web/public/site.webmanifest"
 			]

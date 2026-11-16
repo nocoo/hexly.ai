@@ -4,14 +4,14 @@
 
 - Repository: [nocoo/his.fm](https://github.com/nocoo/his.fm)
 - Website: [https://his.fm](https://his.fm)
-- Website evidence: README badges and site.webmanifest; https://his.fm/api/live returned status ok at revision 927170df on 2026-10-23
+- Website evidence: README badges and site.webmanifest; https://his.fm/api/live returned status ok (v2.11.28) at revision 7c31d9bc on 2026-11-16
 - Category: everyday
 - Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: An AI-collaboration Chinese podcast with a versioned prompt-slot studio
 - Chinese: 由 AI 分工协作制作的中文播客，配套可版本化的提示词工作台
 - Profile section: Recent Projects
 - Profile revision: `c5c26acafab599bfe4b463798bd5033d5b35cad2`
-- Repository revision inspected: `927170dfebc602ca6697dd514188c6f0c1136050`
+- Repository revision inspected: `7c31d9bcac8bb3318a193fed5614252a1d2f5395`
 
 ## Project goal
 
@@ -20,8 +20,8 @@ Publish a Mandarin podcast whose collecting, editing, voicing, artwork and produ
 发布一档普通话播客，采集、编辑、配音、封面与制片分别由 AI 角色承担。各角色读取可版本化的提示词槽，并通过带作用域的 Agent API 写回节目，而不是在站内一键生成。
 
 - [中文 README](https://github.com/nocoo/his.fm/blob/main/README.md) · [English README](https://github.com/nocoo/his.fm/blob/main/docs/README.en.md)
-- Verified: 2026-10-23; [source revision](https://github.com/nocoo/his.fm/tree/927170dfebc602ca6697dd514188c6f0c1136050)
-- Source files: [`README.md`](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/README.md), [`package.json`](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/package.json), [`apps/web/src/brand/themes.ts`](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/apps/web/src/brand/themes.ts), [`apps/web/public/site.webmanifest`](https://github.com/nocoo/his.fm/blob/927170dfebc602ca6697dd514188c6f0c1136050/apps/web/public/site.webmanifest)
+- Verified: 2026-11-16; [source revision](https://github.com/nocoo/his.fm/tree/7c31d9bcac8bb3318a193fed5614252a1d2f5395)
+- Source files: [`README.md`](https://github.com/nocoo/his.fm/blob/7c31d9bcac8bb3318a193fed5614252a1d2f5395/README.md), [`package.json`](https://github.com/nocoo/his.fm/blob/7c31d9bcac8bb3318a193fed5614252a1d2f5395/package.json), [`apps/web/index.html`](https://github.com/nocoo/his.fm/blob/7c31d9bcac8bb3318a193fed5614252a1d2f5395/apps/web/index.html), [`apps/web/src/brand/themes.ts`](https://github.com/nocoo/his.fm/blob/7c31d9bcac8bb3318a193fed5614252a1d2f5395/apps/web/src/brand/themes.ts), [`apps/web/public/site.webmanifest`](https://github.com/nocoo/his.fm/blob/7c31d9bcac8bb3318a193fed5614252a1d2f5395/apps/web/public/site.webmanifest)
 
 ### Tech stack
 

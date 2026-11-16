@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: libs
-- Archived repository: No; [repository status evidence](../../docs/sources/base-ci-2026-10-18.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Reusable GitHub Actions workflows for 6-dimension quality system
 - Chinese: 可复用的 GitHub Actions 质量检查与可追溯发布流程
 - Profile section: Recent Projects

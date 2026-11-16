@@ -6,7 +6,7 @@
 - Website: [https://rio.hexly.ai](https://rio.hexly.ai)
 - Website evidence: wrangler.jsonc at 371b2042f3d6e42b290956036a8b52d9dcc14659; production /api/live verified HTTP 200 JSON with no-store on 2026-09-20
 - Category: ai
-- Archived repository: No; [repository status evidence](../../docs/sources/rio-2026-09-20.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: A web voice interface for local Hermes agents, powered by GPT-Live and Cloudflare
 - Chinese: 通过 GPT-Live 与 Cloudflare 连接本地 Hermes Agent 的网页语音界面
 - Profile section: Recent Projects

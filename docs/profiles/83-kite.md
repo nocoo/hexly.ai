@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: Yes; [repository status evidence](../../docs/sources/kite-2026-09-25-publication.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Local Pi execution-trace collection for inspection and visualization
 - Chinese: 面向检查与可视化的本地 Pi 执行轨迹采集
 - Profile section: Recent Projects
@@ -19,10 +19,9 @@ Collect Pi execution traces locally through a passive extension and a separate U
 
 通过被动扩展与独立 Unix socket 采集进程，在本机收集 Pi 执行轨迹。SQLite 保存源事件、时间戳与关联信息，供检查及后续可视化使用。采集有界且不阻塞 Pi；已保存的采集器文档不代表可视化界面已经发布。
 
-- Verified: 2026-09-25; [preserved local source snapshot](../../docs/sources/kite-2026-09-25-publication.json)
-- Snapshot SHA-256: `4555fb1dea6cf019351dd76cb3f53e74615573e85f4afdba62274ab6a4c82756`
-- Source files: `AGENTS.md`, `README.md`, `package.json`, `docs/collector.md`, `src/schema.ts`, `src/cli.ts`, `src/pi-extension.ts`
-- The source repository has no inspected commit yet. README publication and immutable repository links are deferred.
+- [中文 README](https://github.com/nocoo/kite/blob/main/README.md) · [English README](https://github.com/nocoo/kite/blob/main/docs/README.en.md)
+- Verified: 2026-09-25; [source revision](https://github.com/nocoo/kite/tree/704ae3833c9bf752ae7785d9aa6faa7756fefbbf)
+- Source files: [`AGENTS.md`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/AGENTS.md), [`README.md`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/README.md), [`package.json`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/package.json), [`docs/collector.md`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/docs/collector.md), [`src/schema.ts`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/src/schema.ts), [`src/cli.ts`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/src/cli.ts), [`src/pi-extension.ts`](https://github.com/nocoo/kite/blob/704ae3833c9bf752ae7785d9aa6faa7756fefbbf/src/pi-extension.ts)
 
 ### Tech stack
 

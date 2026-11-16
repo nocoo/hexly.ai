@@ -6,7 +6,7 @@
 - Website: [https://eagle.hexly.ai](https://eagle.hexly.ai)
 - Website evidence: https://github.com/nocoo/eagle/blob/d03eb4d276ec20ead665e490eb78ce5b09d720a5/README.md
 - Category: ai
-- Archived repository: No; [repository status evidence](../../docs/sources/eagle-2026-09-19.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Evidence-led Herdr Space overview across machines
 - Chinese: 以真实证据汇总多台机器上的 Herdr Space 工作态势
 - Profile section: Recent Projects

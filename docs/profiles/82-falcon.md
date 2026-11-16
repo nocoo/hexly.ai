@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: ai
-- Archived repository: No; [repository status evidence](../../docs/sources/falcon-2026-09-25-publication.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Native macOS Jev proxy and decision observability, in development
 - Chinese: 开发中的 macOS 原生 Jev 代理与决策观察应用
 - Profile section: Recent Projects
@@ -19,10 +19,9 @@ A native macOS application in development for routing local Agent requests to Je
 
 正在开发的 macOS 原生应用，用于转发本机 Agent 的 Jev 请求并查看决策。设计将调用来源、请求上下文、返回答案与用量关联起来，在本机保留七天记录。已保存的本地源码包含 Swift 应用基础，尚不宣称已有公开应用版本。
 
-- Verified: 2026-09-25; [preserved local source snapshot](../../docs/sources/falcon-2026-09-25-publication.json)
-- Snapshot SHA-256: `38e46c69fcf327e76e1efee04746c98f6ed8d0b6f1c6cbba06efee5bcdaf11a4`
-- Source files: `AGENTS.md`, `README.md`, `Package.swift`, `docs/01-product.md`, `docs/02-architecture.md`, `Sources/Falcon/App/FalconApp.swift`, `Sources/FalconCore/Domain/Models.swift`
-- The source repository has no inspected commit yet. README publication and immutable repository links are deferred.
+- [中文 README](https://github.com/nocoo/falcon/blob/main/README.md) · [English README](https://github.com/nocoo/falcon/blob/main/docs/README.en.md)
+- Verified: 2026-09-25; [source revision](https://github.com/nocoo/falcon/tree/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc)
+- Source files: [`AGENTS.md`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/AGENTS.md), [`README.md`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/README.md), [`Package.swift`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/Package.swift), [`docs/01-product.md`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/docs/01-product.md), [`docs/02-architecture.md`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/docs/02-architecture.md), [`Sources/Falcon/App/FalconApp.swift`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/Sources/Falcon/App/FalconApp.swift), [`Sources/FalconCore/Domain/Models.swift`](https://github.com/nocoo/falcon/blob/aa0e050e0f53b09d0cbfd088ed957cb74112e3dc/Sources/FalconCore/Domain/Models.swift)
 
 ### Tech stack
 

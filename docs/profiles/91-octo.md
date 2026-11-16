@@ -6,7 +6,7 @@
 - Website: [https://octo.hexly.ai](https://octo.hexly.ai)
 - Website evidence: Deployment configuration at 0d0bcae39f7cb5fd4a22248f63bde57fed29cf01; docs/sources/octo-2026-10-18.json
 - Category: everyday
-- Archived repository: No; [repository status evidence](../../docs/sources/octo-2026-10-18.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Private API-first memory and knowledge base
 - Chinese: 以 API 为主的私人记忆与知识库
 - Profile section: Recent Projects

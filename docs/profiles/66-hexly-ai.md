@@ -6,7 +6,7 @@
 - Website: [https://hexly.ai](https://hexly.ai)
 - Website evidence: Deployment configuration at f6e54b88be56b3afa555ed4e7f897186e5528301; docs/sources/hexly-ai-2026-10-18.json
 - Category: design
-- Archived repository: No; [repository status evidence](../../docs/sources/hexly-ai-2026-10-18.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Bilingual project directory and logo gallery with original artwork and color palettes
 - Chinese: 个人项目的中英文目录、视觉档案与服务状态页
 - Profile section: Recent Projects

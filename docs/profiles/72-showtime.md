@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: No; [repository status evidence](../../docs/sources/showtime-2026-09-10.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Native macOS browser for agent-directed product demo recordings
 - Chinese: 原生 macOS 演示浏览器，由 Agent 编排网页交互并录制产品演示
 - Profile section: Recent Projects

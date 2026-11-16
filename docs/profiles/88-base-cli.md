@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: libs
-- Archived repository: No; [repository status evidence](../../docs/sources/base-cli-2026-10-18.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Shared CLI infrastructure for hexly.ai projects — config, OAuth login, auto-update, logging
 - Chinese: 为 CLI 复用配置、OAuth 登录、自动更新和日志能力
 - Profile section: Recent Projects

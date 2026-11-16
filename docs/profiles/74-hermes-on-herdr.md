@@ -6,7 +6,7 @@
 - Website: No current website verified; navigation opens the repository.
 - Website evidence: Not applicable
 - Category: tools
-- Archived repository: Yes; [repository status evidence](../../docs/sources/hermes-on-herdr-2026-09-12.json)
+- Archived repository: Yes; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Run Hermes in Herdr with optional monitoring
 - Chinese: 在 Herdr 中运行 Hermes，按需打开监控面板
 - Profile section: Recent Projects

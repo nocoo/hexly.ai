@@ -6,7 +6,7 @@
 - Website: [https://ocelot.hexly.ai](https://ocelot.hexly.ai)
 - Website evidence: README.md and wrangler.jsonc at d4db4f6472f3efde40441d6a40089cc2d1f598a0
 - Category: tools
-- Archived repository: No; [repository status evidence](../../docs/sources/ocelot-2026-09-11.json)
+- Archived repository: No; [repository status evidence](../sources/repository-status-2026-09-06.json)
 - English: Read-only Obsidian reader for public and private GitHub vaults
 - Chinese: 面向 GitHub 公开与私有知识库的只读 Obsidian 阅读器
 - Profile section: Recent Projects
