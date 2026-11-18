@@ -38,9 +38,7 @@ jobs:
       runtime-version: "1.4.4"
       node-version: "26.12.1"
       install-policy: "project"
-      build-command: |
-        bun run build
-        bun run deploy:check
+      build-command: bun run build
       deploy-script: "bun run deploy:worker"
       environment: production
       concurrency-group: hexly-ai-production

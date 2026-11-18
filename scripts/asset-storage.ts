@@ -154,16 +154,21 @@ export function filesIn(directory: string): string[] {
 		.sort();
 }
 
-export function reviewFiles(): string[] {
+export function referencedReviewFiles(): string[] {
 	const reviewPages: string[] = JSON.parse(
 		readFileSync("src/data/logo-review-pages.json", "utf8"),
 	);
 	const files = new Set([
 		"artwork/logo-family/review.css",
 		"artwork/logo-family/review.mjs",
-		...reviewPages.flatMap((page) => filesIn(dirname(page))),
+		...reviewPages,
 	]);
-	for (const page of reviewPages)
+	const queue = [...reviewPages];
+	const scanned = new Set<string>();
+	while (queue.length > 0) {
+		const page = queue.shift();
+		if (!page || scanned.has(page)) continue;
+		scanned.add(page);
 		for (const match of readFileSync(page, "utf8").matchAll(
 			/(?:href|src|data-source)="([^"]+)"/g,
 		)) {
@@ -174,9 +179,24 @@ export function reviewFiles(): string[] {
 				source.startsWith("artwork/") &&
 				existsSync(source) &&
 				statSync(source).isFile()
-			)
+			) {
 				files.add(source);
+				if (source.endsWith(".html") && !scanned.has(source))
+					queue.push(source);
+			}
 		}
+	}
+	return [...files].sort();
+}
+
+export function reviewFiles(): string[] {
+	const reviewPages: string[] = JSON.parse(
+		readFileSync("src/data/logo-review-pages.json", "utf8"),
+	);
+	const files = new Set([
+		...referencedReviewFiles(),
+		...reviewPages.flatMap((page) => filesIn(dirname(page))),
+	]);
 	return [...files].sort();
 }
 

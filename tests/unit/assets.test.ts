@@ -18,6 +18,7 @@ import {
 	verifiedBytes,
 	verifiedPublication,
 } from "../../scripts/asset-storage";
+import { reviewDocuments } from "../../scripts/site-assets";
 import { readProjects } from "../../src/data/read-projects";
 import { assetKeyForPath, assetUrl } from "../../src/model/assets";
 
@@ -500,6 +501,20 @@ describe("R2 material delivery", () => {
 		);
 		expect(assetKey("/brands/snail/v2.0.0/manifest.json", sha, "snail")).toBe(
 			"brands/snail/v2.0.0/manifest.json",
+		);
+	});
+	it("emits only referenced review documents and excludes internal artwork tooling", () => {
+		const documents = reviewDocuments();
+		expect(documents).toContain("artwork/logo-family/review.css");
+		expect(documents).toContain("artwork/logo-family/review.mjs");
+		expect(documents).toContain(
+			"artwork/logo-family/dotty/2026-09-07-01/prompt.txt",
+		);
+		expect(documents.some((file) => file.endsWith("/tool-snapshot.mjs"))).toBe(
+			false,
+		);
+		expect(documents.some((file) => file.endsWith("/settings.json"))).toBe(
+			false,
 		);
 	});
 });

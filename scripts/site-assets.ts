@@ -3,7 +3,7 @@ import { extname } from "node:path";
 import type { Plugin } from "vite";
 import storage from "../src/data/media-storage.json" with { type: "json" };
 import { assetKeyForPath, assetUrl } from "../src/model/assets";
-import { filesIn, readInventory, reviewFiles } from "./asset-storage";
+import { filesIn, readInventory, referencedReviewFiles } from "./asset-storage";
 import { mediaTypes } from "./media-r2";
 
 const applicationFiles = new Set([
@@ -18,7 +18,9 @@ export function applicationPublicFiles() {
 	);
 }
 export const reviewDocuments = () =>
-	reviewFiles().filter((file) => /\.(html|css|mjs|json|txt|md)$/.test(file));
+	referencedReviewFiles().filter((file) =>
+		/\.(html|css|mjs|json|txt|md)$/.test(file),
+	);
 const publicPath = (file: string) =>
 	file.startsWith("public/") ? file.slice(6) : `/${file}`;
 
