@@ -1,0 +1,51 @@
+{
+	"project": "workflow-sdk",
+	"series": "material",
+	"sourceMode": "isolated-white",
+	"background": {
+		"base": "#ebe8e1",
+		"light": "#f9f7f2",
+		"shade": "#d8d3c8",
+		"motif": "#96805a",
+		"grainAmplitude": 0.45,
+		"grainSeed": 20261120,
+		"motifOpacity": 0.22,
+		"highlightOpacity": 0.3,
+		"ribbonOpacity": 0.1,
+		"pattern": {
+			"name": "Dual-kernel routing bench marks",
+			"description": "A pale workshop bench with a single split-channel routing trace, dual terminal rings and a rotary detent arc.",
+			"layers": [
+				{
+					"d": "M88 188h118l48 48h64 M88 264h96l36 -28 M792 848a46 46 0 1 1 92 0a46 46 0 1 1 -92 0 M728 848h64 M884 848h56 M140 828a58 58 0 0 1 58 -58 M140 828v44",
+					"tone": "motif",
+					"strokeWidth": 1.2
+				}
+			]
+		}
+	},
+	"matte": {
+		"minimumChannel": 244,
+		"maximumChroma": 14,
+		"edgeLow": 236,
+		"edgeHigh": 252,
+		"backgroundRgb": [255, 255, 255]
+	},
+	"shadows": [
+		{
+			"color": [46, 42, 36],
+			"opacity": 0.16,
+			"blurAt2048": 42,
+			"offsetAt2048": [0, 24]
+		}
+	],
+	"cornerRadius": 0.23,
+	"exportSizes": [2048, 1024, 512, 256, 128, 64, 48, 32, 24, 16],
+	"upscaledExportSizes": [],
+	"framing": {
+		"scale": 1,
+		"offsetAt2048": [0, 0],
+		"minimumClearanceAt2048": 128,
+		"note": "Native 2048x2048 whole-object composition retained; transparent and presentation masters derived directly without upscaling."
+	}
+}

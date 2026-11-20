@@ -1,0 +1,327 @@
+{
+	"createdAt": "2026-11-20T06:01:44.568Z",
+	"pass": "01",
+	"tool": "artwork/logo-family/tools/finish_study.mjs",
+	"toolSha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88",
+	"sharp": "0.35.5",
+	"input": {
+		"path": "../../raw/generated.png",
+		"sha256": "1be0e796aa69ed40621ac3dce9591fae03aff028f27d1454486f522740bae908",
+		"width": 2048,
+		"height": 2048
+	},
+	"method": "Border-connected near-white extraction with optional recorded interior background seeds and pale-anatomy protection; recipe-specific edge alpha matting and color decontamination. No global white deletion. Whole-group placement is recorded separately.",
+	"settings": {
+		"project": "workflow-sdk",
+		"series": "material",
+		"sourceMode": "isolated-white",
+		"background": {
+			"base": "#ebe8e1",
+			"light": "#f9f7f2",
+			"shade": "#d8d3c8",
+			"motif": "#96805a",
+			"grainAmplitude": 0.45,
+			"grainSeed": 20261120,
+			"motifOpacity": 0.22,
+			"highlightOpacity": 0.3,
+			"ribbonOpacity": 0.1,
+			"pattern": {
+				"name": "Dual-kernel routing bench marks",
+				"description": "A pale workshop bench with a single split-channel routing trace, dual terminal rings and a rotary detent arc.",
+				"layers": [
+					{
+						"d": "M88 188h118l48 48h64 M88 264h96l36 -28 M792 848a46 46 0 1 1 92 0a46 46 0 1 1 -92 0 M728 848h64 M884 848h56 M140 828a58 58 0 0 1 58 -58 M140 828v44",
+						"tone": "motif",
+						"strokeWidth": 1.2
+					}
+				]
+			}
+		},
+		"matte": {
+			"minimumChannel": 244,
+			"maximumChroma": 14,
+			"edgeLow": 236,
+			"edgeHigh": 252,
+			"backgroundRgb": [
+				255,
+				255,
+				255
+			]
+		},
+		"shadows": [
+			{
+				"color": [
+					46,
+					42,
+					36
+				],
+				"opacity": 0.16,
+				"blurAt2048": 42,
+				"offsetAt2048": [
+					0,
+					24
+				]
+			}
+		],
+		"cornerRadius": 0.23,
+		"exportSizes": [
+			2048,
+			1024,
+			512,
+			256,
+			128,
+			64,
+			48,
+			32,
+			24,
+			16
+		],
+		"upscaledExportSizes": [],
+		"framing": {
+			"scale": 1,
+			"offsetAt2048": [
+				0,
+				0
+			],
+			"minimumClearanceAt2048": 128,
+			"note": "Native 2048x2048 whole-object composition retained; transparent and presentation masters derived directly without upscaling."
+		}
+	},
+	"statistics": {
+		"backgroundPixels": 2475102,
+		"foregroundPixels": 1719202,
+		"softEdgePixels": 0,
+		"removedComponents": 0,
+		"removedComponentPixels": 0,
+		"bounds": {
+			"left": 255,
+			"top": 248,
+			"right": 1791,
+			"bottom": 1804
+		}
+	},
+	"placement": {
+		"scale": 1,
+		"offsetAt2048": [
+			0,
+			0
+		],
+		"bounds": {
+			"left": 255,
+			"top": 248,
+			"right": 1791,
+			"bottom": 1804
+		},
+		"visibleAlphaThreshold": 16,
+		"minimumRoundedEdgeClearance": 243.50000000000006,
+		"clippedPixels": 0
+	},
+	"emission": [],
+	"files": [
+		{
+			"path": "settings.json",
+			"bytes": 1355,
+			"sha256": "8e1207c264360f8047acfcd7ce569b890e17d6563108c4f5eb482c930063104b"
+		},
+		{
+			"path": "raw-review.json",
+			"bytes": 361,
+			"sha256": "4544d4bf1886a504464e3bb185bdd2e991b0010e46d8ac09eed3b7c97268a347"
+		},
+		{
+			"path": "tool-snapshot.mjs",
+			"bytes": 29501,
+			"sha256": "3e68fac6f8c8f55721d15b50ca5b6eddb6ab1176f121ca341333699c7056ab88"
+		},
+		{
+			"path": "extracted-foreground.png",
+			"bytes": 4273027,
+			"sha256": "a76ec09cd81235774737c4ac42b27e9011b02f62d6099bf2fb7a5cb048b13c50"
+		},
+		{
+			"path": "alpha-mask.png",
+			"bytes": 22411,
+			"sha256": "ff0757c617ac53acee99c84d558b048268c38e674afe376f51559e769a40b98d"
+		},
+		{
+			"path": "background.svg",
+			"bytes": 638,
+			"sha256": "1c679a2f179aefcbfafd0e87104db8ea0799473c19dccd24d523504b327149c1"
+		},
+		{
+			"path": "background.png",
+			"bytes": 166142,
+			"sha256": "3f9407abdde812440b9193aab64783895390fc41a9cb945a49585d026d7d66f6"
+		},
+		{
+			"path": "shadow-1.png",
+			"bytes": 164905,
+			"sha256": "017300d47f3381f360afc8a8af0758b8d9dfa701b5831c3fdcf175438acc29bc"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-2048.png",
+			"bytes": 4273027,
+			"sha256": "a76ec09cd81235774737c4ac42b27e9011b02f62d6099bf2fb7a5cb048b13c50"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-2048.png",
+			"bytes": 4471397,
+			"sha256": "2e0e16bbc0c7b8cd9f1c34ffd9445a9b786f9be004e42c22c85ac74ac4f956d2"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-2048.png",
+			"bytes": 4477334,
+			"sha256": "8fccf1cb7f61f9236e26d18915abacabc5587f668074ae0d05453bafece2e059"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-1024.png",
+			"bytes": 1062184,
+			"sha256": "c5d35abf84ce6cf55b1d27af39deb66bbd0b2d4e82fb41a1554dbc9eed1a26dd"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-1024.png",
+			"bytes": 1145595,
+			"sha256": "f55623c15f5d73d5b7bafbcc77f2d415aad5a1535f3a40d0a44307221b6ac24e"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-1024.png",
+			"bytes": 1161488,
+			"sha256": "1bc7b29b31bcb6fb92fdcb78b0b7892a8703ba2a64d936749a9ed2c3cc248630"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-512.png",
+			"bytes": 268876,
+			"sha256": "31bf754417929829e5f2e427fa08e6cde4ea91846bfe995006108b7c1ef6b34f"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-512.png",
+			"bytes": 301460,
+			"sha256": "3c66d66a46f12ce03f2aa5df5044b337240e55e5057b8e966c2fddf4b6d9fd7e"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-512.png",
+			"bytes": 309125,
+			"sha256": "4411b38f1ea79092e7b5adf32d2ba52b0c600267853b296e51c1ba44a1215eba"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-256.png",
+			"bytes": 73418,
+			"sha256": "0128e8c48646436bdc0fa25338e9ae6717d861fac127bb9c15e12ae57d1c1ff1"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-256.png",
+			"bytes": 85145,
+			"sha256": "641728e33a5760cb854555bd812f3dc2e489b4a895a3f6c711e39a9bd50727d1"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-256.png",
+			"bytes": 89009,
+			"sha256": "827caec0b9b0d8fb9d8fd50abbb60e41c54ed90ddfe499070ab6c01612b8c0b9"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-128.png",
+			"bytes": 20968,
+			"sha256": "04e4c0897b83f292ffdb1293f41cfb832be28f1bed2a0d62f7c478b9f9ccc7dd"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-128.png",
+			"bytes": 25058,
+			"sha256": "fbb8188bdc5594e8ae2fac75b1804ce15c8f567f8eacc4e9b2b34f892ba61c20"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-128.png",
+			"bytes": 26979,
+			"sha256": "3d4cbb553993c592f81eedc1036282c28ed5ff8feecdff300604ed7000bc8624"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-64.png",
+			"bytes": 6172,
+			"sha256": "00a810e39abd8931009ecb02c1885411935824b721064c554dbb3e863d18cf4f"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-64.png",
+			"bytes": 7884,
+			"sha256": "b5468c7fadb363ee536b0eb26db5465c939f354b6135fe9625738771e464410d"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-64.png",
+			"bytes": 8680,
+			"sha256": "dbf91205bd4cf31ffb0118c9c9ec4cd36b6f6df32bdead5bbfe11e3d563d69cf"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-48.png",
+			"bytes": 3828,
+			"sha256": "7c8d132488e0d74f16dbd98d3fc6285a2511ecad5f3528c1c9e55e1bc498ce02"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-48.png",
+			"bytes": 4888,
+			"sha256": "b9f4a3bad61675fa96e0129942da9a7244377cae074bbbabf7a1c237a5daae24"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-48.png",
+			"bytes": 5447,
+			"sha256": "7214a6f416d05d397131d9ce8191f713cb5a3fad5f585a1ae2aaa6b669a8250a"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-32.png",
+			"bytes": 2049,
+			"sha256": "39d3e2a1b2fe3794d8b0ed96ea556f3ecfc60578df7553ff271f408219cf4344"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-32.png",
+			"bytes": 2673,
+			"sha256": "53562794ed57f1579ac26951b7374c5da35ac0c96dfc61f86b7c04744a7227cf"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-32.png",
+			"bytes": 2908,
+			"sha256": "d60a6d1c89cc2b71625972d2f8b930f289ecaabafb0067fb10dae2ccaee0dac7"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-24.png",
+			"bytes": 1353,
+			"sha256": "9156ba2f51c4b282319046e37baf89583c42663762d6e6a43e8d5ef7479faf60"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-24.png",
+			"bytes": 1711,
+			"sha256": "835354321ca68ab3d24c9d81c918a763c3e4beb83e7efde28398b6a4ebedc155"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-24.png",
+			"bytes": 1896,
+			"sha256": "6fc4afd038aef9a1a30e6c5257206426b4b3ae22b949023e9ed5424f7a6f2ec4"
+		},
+		{
+			"path": "exports/workflow-sdk-transparent-16.png",
+			"bytes": 768,
+			"sha256": "7b88700efd37a3df454ec6145c343b3234479cf86610ab26adaee32118c95ade"
+		},
+		{
+			"path": "exports/workflow-sdk-icon-16.png",
+			"bytes": 935,
+			"sha256": "aea4d8dc3022b788b1da102d2da9d4900eee88606c1d342191ba3d012a3fd4d2"
+		},
+		{
+			"path": "exports/workflow-sdk-rounded-16.png",
+			"bytes": 993,
+			"sha256": "c732a7d3ebe963e14aac2f88c14ba3367bc3f22bd75b31888c3af8f40a8273f2"
+		},
+		{
+			"path": "exports/workflow-sdk-white-2048.png",
+			"bytes": 3985456,
+			"sha256": "9953f29d7e5ed71e2156f38f41c2780d42d55abff20aac826ff014912a6e9b13"
+		},
+		{
+			"path": "previews/on-light-1024.png",
+			"bytes": 1004837,
+			"sha256": "731035c4c7c5a74230b66d1461b815533b3c911a9af994c765c6fb5e360386fd"
+		},
+		{
+			"path": "previews/on-dark-1024.png",
+			"bytes": 1005660,
+			"sha256": "891691782fb599fdc402a0a019c881c189123fe88194a45b98a5f479221da30b"
+		}
+	]
+}

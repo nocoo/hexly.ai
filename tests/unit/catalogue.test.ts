@@ -147,12 +147,19 @@ describe("the imported project catalogue", () => {
 		expect(
 			filterProjects(projects, "hermes", "archive").map((p) => p.id),
 		).toEqual(["rooster", "hermes-on-herdr"]);
-		expect(counts.libs).toBe(5);
+		expect(counts.libs).toBe(6);
 		expect(
 			filterProjects(projects, "", "libs")
 				.map((project) => project.id)
 				.toSorted(),
-		).toEqual(["base-ci", "base-cli", "base-mcp", "infospace", "next-ai"]);
+		).toEqual([
+			"base-ci",
+			"base-cli",
+			"base-mcp",
+			"infospace",
+			"next-ai",
+			"workflow-sdk",
+		]);
 		expect(counts.extensions).toBe(8);
 		expect(
 			filterProjects(projects, "", "extensions").map((project) => project.id),
@@ -220,12 +227,13 @@ describe("the imported project catalogue", () => {
 	});
 	it("keeps Mico before the four appended tools and falls back to GitHub", () => {
 		const ids = filterProjects(projects, "").map((project) => project.id);
-		expect(ids.slice(-5)).toEqual([
+		expect(ids.slice(-6)).toEqual([
 			"mico",
 			"mao",
 			"hackernews-on-this-day",
 			"pi-superagent",
 			"ag-cli",
+			"workflow-sdk",
 		]);
 		const mico = projects.find((project) => project.id === "mico");
 		if (!mico) throw new Error("Mico is required.");
