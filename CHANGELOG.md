@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.9.4] - 2026-11-20
+
+### Maintenance
+
+- exclude unreferenced artwork files and duplicate dry-run ([af1fb50](https://github.com/nocoo/hexly.ai/commit/af1fb50000c5210c0125cc1f8c9d93613294d111))
+
+### Features
+
+- onboard workflow-sdk with selector switch identity ([7b66b75](https://github.com/nocoo/hexly.ai/commit/7b66b75dd5f1c20ed873a09a992e1e6f8b526fe6))
+
 ## [1.9.3] - 2026-11-16
 
 ### Features
