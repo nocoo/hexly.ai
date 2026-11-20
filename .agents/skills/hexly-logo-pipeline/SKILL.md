@@ -229,7 +229,7 @@ unselected candidate.
 6. Update colors, sampled palette evidence and the project profile. Run
    `bun run assets:build`, `bun run docs:profiles` and `bun run assets:check`;
    verify historical manifests as well as active previews.
-7. Follow `system0-github-profile` for catalogue and profile synchronization. A
+7. Follow `system1-github-profile` for catalogue and profile synchronization. A
    logo-only change does not invent a profile prose edit; any profile content
    change still requires the matching site change.
 8. Make atomic Conventional Commits with explicit staged paths, never bypass

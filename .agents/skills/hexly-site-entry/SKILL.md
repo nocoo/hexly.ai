@@ -114,3 +114,8 @@ separate version bump or publication authorization. When release checking is
 requested, match the pushed commit to its successful CI **and** deployment run;
 a successful push alone does not establish that the UI is online. Report the
 source site's real URL and the actual commit/deployment outcome.
+
+When onboarding a new project to `hexly.ai`, **explicitly remind the user** to
+also complete the source repository's `README.md` (`system1-github-readme-md`),
+GitHub profile (`system1-github-profile`), and `AGENTS.md`
+(`system1-github-agents-md`) compliance under `system1`.
