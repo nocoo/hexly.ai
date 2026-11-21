@@ -19,18 +19,15 @@ function isKnownHtmlPath(path: string): boolean {
 	return /^\/(brands|textures|artwork\/logo-family|logos\/family)\//.test(path);
 }
 
-function notFoundHtmlResponse(method: string): Response {
-	const headers = {
-		"Content-Type": "text/html; charset=utf-8",
-		"Cache-Control": "no-store",
-		"X-Robots-Tag": "noindex",
-	};
-	return new Response(
-		method === "HEAD"
-			? null
-			: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Not found — hexly.ai</title></head><body><main><h1>Page not found.</h1><p><a href="/">Back to hexly.ai</a></p></main></body></html>',
-		{ status: 404, headers },
-	);
+function notFoundResponse(response: Response, method: string): Response {
+	const headers = new Headers(response.headers);
+	headers.set("Cache-Control", "no-store");
+	headers.set("X-Robots-Tag", "noindex");
+	headers.delete("ETag");
+	return new Response(method === "HEAD" ? null : response.body, {
+		status: 404,
+		headers,
+	});
 }
 
 function noindex(response: Response): Response {
@@ -176,7 +173,7 @@ export default {
 			response.headers.get("Content-Type")?.includes("text/html") &&
 			!isKnownHtmlPath(path)
 		) {
-			return notFoundHtmlResponse(request.method);
+			return notFoundResponse(response, request.method);
 		}
 		const reviewDocument =
 			/^\/(brands|textures|artwork\/logo-family)\//.test(path) &&

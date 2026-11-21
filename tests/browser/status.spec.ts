@@ -107,7 +107,7 @@ test("unmonitored projects leave the status origin for the catalogue", async ({
 		headers: { Host: "status.hexly.ai" },
 		maxRedirects: 0,
 	});
-	expect(redirect.status()).toBe(302);
+	expect(redirect.status()).toBe(301);
 	expect(redirect.headers().location).toBe(`https://hexly.ai${href}`);
 	await link.click();
 	await expect(page).toHaveURL(`https://hexly.ai${href}`);

@@ -154,7 +154,7 @@ describe("the static asset gateway", () => {
 			);
 			expect(response.status, path).toBe(404);
 			expect(response.headers.get("X-Robots-Tag")).toBe("noindex");
-			expect(await response.text()).toContain("Page not found.");
+			expect(await response.text()).toContain("<!doctype html>");
 		}
 		const head = await worker.fetch(
 			new Request("https://hexly.ai/templates?project=pew-game", {
