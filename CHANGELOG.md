@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.10.0] - 2026-11-21
+
+### Maintenance
+
+- switch image helpers to system0 image-generation-gpt ([c9cb141](https://github.com/nocoo/hexly.ai/commit/c9cb1413ff849c1aa9b1d50c50ea70b79479dceb))
+- bump base-ci to v2026.16 ([962e5e2](https://github.com/nocoo/hexly.ai/commit/962e5e205a5100d374fe5edc646a68791c5b21fe))
+
+### Documentation
+
+- defer readme/profile rules to system1 and add onboarding reminder ([e441a12](https://github.com/nocoo/hexly.ai/commit/e441a1292ff64afe223b41eed8abb65ec667a16a))
+- normalize AGENTS.md to system1 v2 standard ([667001f](https://github.com/nocoo/hexly.ai/commit/667001f50300387d495616547e785994004dc6e8))
+
+### Fixes
+
+- return 404 for unknown routes, fix relative archive links, and tighten crawler signals ([88be119](https://github.com/nocoo/hexly.ai/commit/88be119e0af3b611e284c6ccc5ec464e0ddf6376))
+
 ## [1.9.5] - 2026-11-20
 
 ### Maintenance
